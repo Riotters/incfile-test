@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://incfile.netlify.app/sitemap.xml
+Host: https://incfile.netlify.app
