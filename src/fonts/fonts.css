@@ -1,0 +1,47 @@
+@font-face {
+  font-family: Avenir;
+  font-weight: 400;
+  font-style: normal;
+  src: url("avenir/Avenir-Roman-12.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Avenir;
+  font-weight: 600;
+  font-style: normal;
+  src: url("avenir/Avenir-Heavy-05.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: MarkPro;
+  font-weight: 400;
+  font-style: normal;
+  src: url("mark-pro/MarkPro-Bold.woff2") format("woff2");
+  font-display: swap;
+}
+
+/* @font-face {
+    font-family: Avenir;
+    font-weight: 400;
+    font-style: normal;
+    src: url("avenir/Avenir-Roman-12.woff2") format("woff2");
+    font-display: swap;
+  } */
+
+/* @font-face {
+    font-family: Rubik;
+    font-weight: 400;
+    font-style: italic;
+    src: url("Rubik-Italic.woff2") format("woff2"), url("Rubik-Italic.woff")
+        format("woff");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: Rubik;
+    font-weight: 700;
+    font-style: normal;
+    src: url("Rubik-Bold.woff2") format("woff2"), url("Rubik-Bold.woff") format("woff");
+    font-display: swap;
+  } */
