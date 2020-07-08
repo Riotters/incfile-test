@@ -46,12 +46,21 @@ const TabsWrapper = styled.div`
 `
 
 const Sticky = styled.div`
-  display: ${props => (props.layout === "grid" ? "grid" : "flex")};
-  flex-direction: ${props => (props.layout !== "grid" ? "column" : "")};
-  grid-template-columns: ${props => (props.columns ? `repeat(${props.columns}, 1fr)` : "")};
+  display: flex;
+  flex-direction: column;
   grid-gap: ${props => (props.layout === "grid" ? "30px" : "")};
   position: ${props => (props.layout !== "grid" ? "sticky" : "")};
-  top: 100px; 
+  top: 100px;
+
+  @media (min-width: 768px) {
+    display: ${props => (props.layout === "grid" ? "grid" : "flex")};
+    flex-direction: ${props => (props.layout !== "grid" ? "column" : "")};
+    grid-template-columns: ${props => (props.columns ? `repeat(${Math.round(props.columns/2)}, 1fr)` : "")};
+  }
+
+  @media (min-width: 1200px) {
+    grid-template-columns: ${props => (props.columns ? `repeat(${props.columns}, 1fr)` : "")};
+  }
 `
 
 const PanelWrapper = styled.article`

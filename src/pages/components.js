@@ -28,6 +28,7 @@ import Checkbox from "../components/form/checkbox"
 import Dropdown from "../components/form/dropdown"
 import CheckText from "../components/static-check/text-only"
 import CheckBox from "../components/static-check/text-boxed"
+import Checklist from "../components/checklist/checklist"
 
 const Section = styled.div`
     width: 100%;
@@ -103,7 +104,11 @@ const GreyWrapper = styled.div`
     justify-content: center;
     align-items: center;
     background-color: ${color.grey4};
-    padding: 25px 75px;
+    padding: 15px;
+
+    @media (min-width: 768px) {
+        padding: 25px 75px;
+    }
 `;
 
 const DarkGreyWrapper = styled.div`
@@ -111,7 +116,11 @@ const DarkGreyWrapper = styled.div`
     justify-content: center;
     align-items: center;
     background-color: ${color.grey1};
-    padding: 25px 75px;
+    padding: 15px;
+
+    @media (min-width: 768px) {
+        padding: 25px 75px;
+    }
 `;
 
 const IconWrapper = styled.div`
@@ -460,6 +469,10 @@ const ComponentsPage = () => (
                     </CheckBox>
                 </GreyWrapper>
             </GridWrapper>
+            <h3>Checklist</h3>
+            <GreyWrapper>
+                <Checklist />
+            </GreyWrapper>
         </Wrapper>
     </Container>
   </Layout>

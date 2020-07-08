@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: "/incfile-test",
+  pathPrefix: `/incfile-test`,
   siteMetadata: {
     title: `What is a Nonprofit Organization? How to Start a Nonprofit`,
     description: `Learn all about nonprofit corporations, including the benefits & disadvantages, getting 501c3 status, and what's needed to get your company off the ground.`,

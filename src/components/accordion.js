@@ -40,7 +40,7 @@ const TabsWrapper = styled.div`
 
 const TabBox = styled.div`
   box-shadow: 0 24px 32px 0 rgba(236, 236, 236, 0.5);
-  margin-bottom: 7px;
+  margin-bottom: 8px;
 
   .accordion-panel {
     overflow: hidden;

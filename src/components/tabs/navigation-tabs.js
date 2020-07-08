@@ -4,14 +4,27 @@ import { Tabs, Panel, useTabState } from "@bumaga/tabs"
 import { color } from './../styles/colors'
 import { shadow } from './../styles/shadows'
 
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+`;
+
 const TabsWrapper = styled.div`
     display: flex;
     align-items: center;
     height: 48px;
+    width: 100%;
     background-color: ${color.white};
     box-shadow: ${shadow.white1};
     border-radius: 24px;
     margin-right: auto;
+    overflow: hidden;
+
+    @media(min-width: 992px) {
+      width: auto;
+    }
 
     button {
       margin-right: 4px;
@@ -22,12 +35,28 @@ const TabsWrapper = styled.div`
     }
 `;
 
+const PanelsWrapper = styled.div`
+    display: block;
+`;
+
+const Scroller = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: scroll;
+  border-radius: 24px;
+
+  &::-webkit-scrollbar, &::-webkit-scrollbar {
+    display: none;
+  }
+`;
+
 const Button = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
   height: 40px;
-  width: 280px;
+  min-width: 252px;
   background-color: ${color.white};
   border-radius: 24px;
   border: none;
@@ -67,15 +96,20 @@ const Tab = ({ children }) => {
 
 const NavigationTabs = () => (
   <Tabs>
-    <TabsWrapper>
-      <Tab>Tab 1</Tab>
-      <Tab>Tab 2</Tab>
-      <Tab>Tab 3</Tab>
-    </TabsWrapper>
-
-    <Panel><p>Panel 1</p></Panel>
-    <Panel><p>Panel 2</p></Panel>
-    <Panel><p>Panel 3</p></Panel>
+    <Wrapper>
+      <TabsWrapper>
+        <Scroller>
+          <Tab>Tab 1</Tab>
+          <Tab>Tab 2</Tab>
+          <Tab>Tab 3</Tab>
+        </Scroller>
+      </TabsWrapper>
+      <PanelsWrapper>
+        <Panel><p>Panel 1</p></Panel>
+        <Panel><p>Panel 2</p></Panel>
+        <Panel><p>Panel 3</p></Panel>
+      </PanelsWrapper>
+    </Wrapper>
   </Tabs>
 );
 

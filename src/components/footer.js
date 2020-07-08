@@ -265,7 +265,7 @@ const Footer = () => (
           </Arrow>
           <Label for="newsletter">Newsletter</Label>
           <Newsletter placeholder="Your E-mail" name="newsletter" id="newsletter" type="text" />
-          <Button arrow="yes" padding="9px 32px" right="14px">
+          <Button theme="secondary40" arrow="yes" right="14px">
             Subscribe
           </Button>
         </NewsletterWrapper>
