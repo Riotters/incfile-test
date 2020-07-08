@@ -1,13 +1,12 @@
 import React from "react"
 import styled from "styled-components"
 import { Tabs, Panel, useTabState } from "@bumaga/tabs"
-// import { motion } from "framer-motion"
-import ArrowLink from "./arrow-link"
-import OverviewSVG from "../images/overview.inline.svg"
-import WhatIsSVG from "../images/whatis.inline.svg"
-import ArrowSVG from "../images/arrow.inline.svg"
+import ArrowLink from "./../arrow-link"
+import OverviewSVG from "../../images/overview.inline.svg"
+import WhatIsSVG from "../../images/whatis.inline.svg"
+import ArrowSVG from "../../images/arrow.inline.svg"
 import { Collapse } from "react-collapse"
-import VisibilitySensor from "./VisibilitySensor"
+import VisibilitySensor from "./../VisibilitySensor"
 
 const Wrapper = styled.div`
   display: flex;
@@ -27,11 +26,7 @@ const Wrapper = styled.div`
     margin-left: auto;
 
     @media (min-width: 768px) {
-      max-width: ${props => (props.layout !== "grid" ? "55%" : "")};
-    }
-
-    @media (min-width: 1200px) {
-      max-width: ${props => (props.layout !== "grid" ? "670px" : "")};
+      max-width: ${props => (props.layout !== "grid" ? "57%" : "")};
     }
   }
 `
@@ -222,7 +217,6 @@ const AboutTabs = ({layout, columns}) => (
               </Tab>
             </Sticky>
           </TabsWrapper>
-          {/* <Panels> */}
           <Collapse isOpened={true}>
             <Panel>
               <PanelWrapper
@@ -291,7 +285,6 @@ const AboutTabs = ({layout, columns}) => (
               </PanelWrapper>
             </Panel>
           </Collapse>
-          {/* </Panels> */}
         </Tabs>
       )}
     </VisibilitySensor>

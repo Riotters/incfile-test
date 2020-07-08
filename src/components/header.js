@@ -125,10 +125,10 @@ const LoginWrapper = styled.div`
 
   a {
     &:nth-child(2) {
-      padding: 8px 24px;
+      padding: 4px 24px;
 
       @media (min-width: 1200px) {
-        padding: 12px 38px;
+        padding: 6px 38px;
       }
     }
   }
@@ -240,7 +240,7 @@ const Header = ({ siteTitle }) => {
         </Navigation>
         <LoginWrapper>
           <Login href="#">Login</Login>
-          <Button>Incoporate now</Button>
+          <Button theme="secondary40">Incoporate now</Button>
         </LoginWrapper>
       </MobileWrapper>
       <Hamburger hamburger={menu} onClick={() => showMenu(!menu)}>

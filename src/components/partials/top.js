@@ -6,13 +6,23 @@ import OvalSVG from "../../images/oval.inline.svg"
 import Button from "../button"
 import VisibilitySensor from "../VisibilitySensor"
 
+const Wrapper = styled.div`
+  padding-top: 50px;
+  position: relative;
+
+  @media (min-width: 768px) {
+    padding-top: 190px;
+    padding-bottom: 150px;
+  }
+`;
+
 const Oval = styled.div`
   width: 90%;
   max-width: 350px;
   position: absolute;
   top: 0;
   right: 0;
-  z-index: -1;
+  z-index: 0;
   overflow: hidden;
 
   @media (min-width: 768px) {
@@ -56,6 +66,18 @@ const TextContainer = styled.div`
     align-items: flex-start;
   }
 
+  h1 {
+    width: 100%;
+    max-width: 480px;
+    text-aling: center;
+    padding-bottom: 40px;
+
+    @mnedia(min-width: 768px) {
+      text-aling: left;
+      padding-bottom: 20px;
+    }
+  }
+
   p {
     max-width: 470px;
     margin-bottom: 33px;
@@ -97,8 +119,8 @@ const ButtonsContainer = styled.div`
   }
 `
 
-const Top = () => (
-  <>
+const Top = ({headline, text, imageName, imageAlt}) => (
+  <Wrapper>
     <VisibilitySensor partialVisibility once>
       {({ isVisible }) => (
         <Oval className={isVisible ? "scaleUp enter" : "scaleUp"}>
@@ -113,16 +135,15 @@ const Top = () => (
             <TextContainer
               className={isVisible ? "slideRight enter" : "slideRight"}
             >
-              <h1>Starting a nonprofit can truly help make the world better</h1>
+              <h1>
+                {headline}
+              </h1>
               <p>
-                Start for $0 + state fee. Learn how forming an LLC, an
-                S-Corporation, an C-Corporation, or a Non Profit will impact
-                both your liability and taxation.
+                {text}
               </p>
               <ButtonsContainer>
                 <Button
-                  theme="full"
-                  height="56px"
+                  theme="primary56"
                   width="200px"
                   arrow="yes"
                   padding="0"
@@ -143,11 +164,11 @@ const Top = () => (
           )}
         </VisibilitySensor>
         <ImageContainer>
-          <Image filename="MrsBulbNonprofit" alt="Mr Bulb with seedling" />
+          <Image filename={imageName} alt={imageAlt} />
         </ImageContainer>
       </Content>
     </Container>
-  </>
+  </Wrapper>
 )
 
 export default Top

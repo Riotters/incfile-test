@@ -15,6 +15,8 @@ import Footer from "./footer"
 //import Avenir600 from "../fonts/avenir/Avenir-Heavy-05.woff2"
 //import MarkPro from "../fonts/mark-pro/MarkPro-Bold.woff2"
 import "../fonts/fonts.css"
+import { color } from "./styles/colors"
+
 const GlobalStyle = createGlobalStyle`
 
 html {
@@ -54,66 +56,66 @@ body {
   box-sizing: inherit;
 }
 
-main {
-  padding-top: 50px;
-  position: relative;
-
-  @media (min-width: 768px) {
-    padding-top: 190px;
+h1, h2, h3, h4, h5, h6 {
+  &.uppercase {
+    text-transform: uppercase;
   }
 }
 
-h1 {
-  color: #1d1d1d;
-    font-family: MarkPro;
-    font-size: 40px;
-    line-height: 48px;
-    width: 100%;
-    max-width: 480px;
-    padding-bottom: 40px;
-    text-align: center;
+h1, h2, h3, h4, h5 {
+  color: ${color.black};
+}
 
-    @media (min-width: 768px) {
-      font-size: 48px;
-      line-height: 58px;
-      text-align: left;
-      padding-bottom: 20px;
-    }
+h1, h2, h3, h5, h6 {
+  font-family: MarkPro;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 48px;
+
+  @media (min-width: 768px) {
+    font-size: 48px;
+    line-height: 56px;
+  }
 }
 
 h2 {
-  color: #1D1D1D;
-  font-family: MarkPro;
   font-size: 40px;
-  line-height: 48px;
+  line-height: 1;
   text-align: center;
 }
 
 h3 {
-  color: #1D1D1D;
-  font-family: MarkPro;
   font-size: 24px;
-  line-height: 29px;
+  line-height: 1;
   width: 100%;
   max-width: 670px;
 }
 
 h4 {
-  color: #757575;
-  font-family: MarkPro;
+  font-family: Avenir;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 1;
+}
+
+h5 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+h6 {
+  color: ${color.grey2};
   font-size: 12px;
-  letter-spacing: 1px;
-  line-height: 14px;
-  opacity: 0.9;
-  padding-bottom: 24px;
-  text-transform: uppercase;
+  line-height: 1;
 }
 
 p {
   color: #757575;
-    font-family: Avenir;
-    font-size: 20px;
-    line-height: 31px;
+  font-family: Avenir;
+  font-size: 20px;
+  line-height: 31px;
 }
 
 a {

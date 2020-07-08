@@ -20,9 +20,13 @@ const Wrapper = styled.a`
   text-decoration: none;
   white-space: nowrap;
   position: relative;
-  padding: ${props => (props.padding ? props.padding : props.theme === "primary40" ? "4px 32px" : props.theme === "primary48" ? "8px 40px" : props.theme === "primary56" ? "12px 48px" : "")};
+  padding: ${props => (props.padding ? props.padding : props.theme === "primary40" || props.theme === "secondary40" ? "2px 30px" : props.theme === "primary48" || props.theme === "secondary48" ? "6px 38px" : props.theme === "primary56" || props.theme === "secondary56" ? "10px 46px" : "")};
   margin: ${props => (props.margin ? props.margin : "")};
   transition: background-color 0.3s ease, color 0.3s ease;
+
+  @media (min-width: 768px) {
+    margin: ${props => (props.marginMD ? props.marginMD : "")};
+  }
 
   &:hover {
     background-color: ${props => (props.theme === "primary40" || props.theme === "primary48" || props.theme === "primary56" ? "#fff" : "#FD8550")};
@@ -99,6 +103,7 @@ const Button = ({
   arrow,
   arrow2,
   margin,
+  marginMD,
   padding,
   right,
 }) => (
@@ -111,6 +116,7 @@ const Button = ({
     arrow2={arrow2}
     theme={theme}
     margin={margin}
+    marginMD={marginMD}
     padding={padding}
   >
     {children}
