@@ -18,6 +18,7 @@ const Done = styled.div`
     flex-direction: column;    
     position: relative;
     margin-top: 20px;
+    height: 320px;
 `
 
 class Checklist extends React.Component {

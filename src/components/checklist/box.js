@@ -18,6 +18,8 @@ const Wrapper = styled.div`
     cursor: pointer;
     margin-bottom: 8px;
     border-radius: 5px;
+    translate: top .3s ease;
+    z-index: 1;
 
     &.completed {
         color: ${color.grey2};
@@ -41,8 +43,14 @@ function ToDoBox ({ className, children, name, isCompleted, toggleClass }) {
     //     setActive(!isActive);
     // }
 
+    function getTop() {
+        const top = isCompleted ? 400 : 0;
+    
+        return top
+    }
+
     return (
-        <Wrapper className={isCompleted ? "item completed" : "item"} onClick={toggleClass}>
+        <Wrapper className={isCompleted ? "item completed" : "item"} onClick={toggleClass} style={{top: `${getTop()}px`}}>
             <Box>
                 <Checkbox isCompleted={isCompleted} className="circleCheck"/>
             </Box>
