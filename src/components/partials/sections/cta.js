@@ -1,10 +1,10 @@
 import React from "react"
 import styled from "styled-components"
-import Container from "../container"
-import Button from "../button"
-import MapSVG from "../../images/map.inline.svg"
-import OvalSVG from "../../images/oval-yellow-2.inline.svg"
-import VisibilitySensor from "../VisibilitySensor"
+import Container from "../../container"
+import Button from "../../button"
+import MapSVG from "../../../images/map.inline.svg"
+import OvalSVG from "../../../images/oval-yellow-2.inline.svg"
+import VisibilitySensor from "../../VisibilitySensor"
 
 const Wrapper = styled.div`
   width: 100%;

@@ -6,8 +6,11 @@ const Wrapper = styled.a`
   display: flex;
   align-items: center;
   text-decoration: none;
-  transition: color 0.3s ease;
-  font-weight: 600;
+  
+  span {
+    transition: color 0.3s ease;
+    font-weight: 600;
+  }
 
   &:hover {
     color: #fd8550;

@@ -1,12 +1,12 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Top from "../components/sections/top/top"
-import About from "../components/sections/about"
-import Search from "../components/sections/search"
-import Faq from "../components/sections/faq"
-import Cta from "../components/sections/cta"
-import Articles from "../components/sections/articles"
+import Top from "../components/partials/sections/top/top"
+import About from "../components/partials/sections/about"
+import Search from "../components/partials/sections/search"
+import Faq from "../components/partials/sections/faq"
+import Cta from "../components/partials/sections/cta"
+import Articles from "../components/partials/sections/articles"
 
 const IndexPage = () => (
   <Layout>

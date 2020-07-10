@@ -469,7 +469,7 @@ const ComponentsPage = () => (
                     </CheckBox>
                 </GreyWrapper>
             </GridWrapper>
-            <h3>Checklist (in progress)</h3>
+            <h3>Checklist</h3>
             <GreyWrapper>
                 <Checklist />
             </GreyWrapper>

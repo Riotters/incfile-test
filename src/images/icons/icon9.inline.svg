@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="30px" viewBox="0 0 32 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon</title>
+    <g id="Manage-your-company" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="manage-your-company@2x" transform="translate(-279.000000, -1199.000000)">
+            <g id="Providing-everything-you-need-when-you-need-it" transform="translate(0.000000, 780.000000)">
+                <g id="Modul/Icon-Box/Simple" transform="translate(255.000000, 394.000000)">
+                    <g id="Group" transform="translate(24.000000, 24.000000)">
+                        <g id="20200414_ICON_icon_0-96" transform="translate(0.000000, 2.000000)">
+                            <path d="M24.64,13.72 L15.89,20.12 L4.8,11.57 L2.29,9.64 C2.93,9.01 3.64,8.28 3.64,8.28 C3.98321043,8.12801179 4.34200863,8.01400115 4.71,7.94 C5.03861814,7.86984326 5.37399673,7.8363054 5.71,7.84 L5.79,7.84 C5.77976553,7.6568095 5.77976553,7.4731905 5.79,7.29 L5.79,3.35 L5.91,3.35 L22.44,3.15 C23.0358216,3.15 23.6070951,3.3873656 24.0274652,3.80961239 C24.4478354,4.23185917 24.6826599,4.80418432 24.6800224,5.4 L24.64,13.72 Z" id="Path" fill="#F6C4C6" fill-rule="nonzero"></path>
+                            <path d="M29.1100126,15 L29.1100126,25.43 C29.1117717,26.2091123 28.9265889,26.9772782 28.57,27.67 C27.85921,28.0380767 27.0704391,28.2300101 26.27,28.2300101 L5.7,28.2300101 C4.38809878,28.2326557 3.1290199,27.7133655 2.20042624,26.7866478 C1.27183259,25.8599301 0.749997312,24.6019039 0.75,23.29 L0.75,12.85 C0.710069729,12.2806993 0.710069729,11.7093007 0.75,11.14 L3.94,13.58 L14.8,21.91 C15.3760793,22.3483992 16.1739207,22.3483992 16.75,21.91 L27.75,13.55 L28.75,12.8 C28.9530339,13.51731 29.0738104,14.2553882 29.1100126,15 Z" id="Path" fill="#F6C4C6" fill-rule="nonzero"></path>
+                            <path d="M5.75,12.31 L5.75,3.6 C5.86066731,2.45434432 6.85024598,1.59670948 8,1.65 L24,1.65 C25.1694715,1.59278482 26.1697101,2.48188585 26.25,3.65 L26.25,12.56" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M26.27,7.91 C28.988663,7.93699381 31.1875084,10.1313971 31.2200102,12.85 L31.2200102,23.29 C31.2226735,24.602722 30.7016947,25.8623025 29.7725201,26.7896001 C28.8433454,27.7168976 27.5827139,28.2353282 26.27,28.2300407 L5.7,28.2300407 C4.38809878,28.2326557 3.1290199,27.7133655 2.20042624,26.7866478 C1.27183259,25.8599301 0.749973267,24.6019039 0.749973267,23.29 L0.749973267,12.85 C0.747438019,12.0719726 0.929054715,11.3043851 1.28,10.61 L1.28,10.55 C1.79427163,9.58090252 2.613005,8.80784955 3.61,8.35 C3.96239168,8.19247914 4.3313756,8.07507517 4.71,8 C5.03861814,7.92984326 5.37399673,7.8963054 5.71,7.9" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <polyline id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" points="1.84 9.83 6.83 13.64 15.79 20.51 24.87 13.62 29.73 9.93"></polyline>
+                            <line x1="20.32" y1="17.07" x2="29.43" y2="26.93" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></line>
+                            <line x1="11.21" y1="17.07" x2="2.45" y2="26.55" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></line>
+                            <path d="M11.79,9.05 C11.79,8.23261857 12.4526186,7.57 13.27,7.57 L13.27,7.57 C13.7622239,7.60395068 14.1919677,7.91569048 14.3770418,8.3730575 C14.5621159,8.83042452 14.4700984,9.35329566 14.14,9.72 L11.77,12.45 L14.77,12.45" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <ellipse id="Oval" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" cx="18.11" cy="10.05" rx="1.67" ry="2.4"></ellipse>
+                            <line x1="9.51" y1="0.38" x2="9.51" y2="3.32" id="Path" stroke="#1D1D1B" stroke-width="1.4" fill="#FFFFFF" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></line>
+                            <line x1="13.75" y1="0.38" x2="13.75" y2="3.32" id="Path" stroke="#1D1D1B" stroke-width="1.4" fill="#FFFFFF" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></line>
+                            <line x1="18" y1="0.38" x2="18" y2="3.32" id="Path" stroke="#1D1D1B" stroke-width="1.4" fill="#FFFFFF" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></line>
+                            <line x1="22.25" y1="0.38" x2="22.25" y2="3.32" id="Path" stroke="#1D1D1B" stroke-width="1.4" fill="#FFFFFF" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></line>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="22px" viewBox="0 0 32 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon</title>
+    <g id="Manage-your-company" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="manage-your-company@2x" transform="translate(-1110.000000, -1761.000000)">
+            <g id="Providing-everything-you-need-when-you-need-it" transform="translate(0.000000, 780.000000)">
+                <g id="Modul/Icon-Box/Simple-Copy-6" transform="translate(1086.000000, 952.000000)">
+                    <g id="Group" transform="translate(24.000000, 24.000000)">
+                        <g id="20200406_ICON_ICON-104" transform="translate(0.000000, 5.000000)">
+                            <path d="M29.6900561,7.78 L29.6900561,17.41 C29.6948218,18.4555992 29.3884978,19.4789999 28.81,20.35 C27.9455815,20.907179 26.938427,21.2023794 25.91,21.2000143 L6.09,21.2000143 C4.66140098,21.2000143 3.29145928,20.6318102 2.28222561,19.6207006 C1.27299195,18.609591 0.707344611,17.2385965 0.709943939,15.81 L0.709943939,6.19 C0.705178192,5.14440084 1.01150222,4.1210001 1.59,3.25 C2.45011007,2.69150961 3.45448272,2.39610589 4.48,2.39996199 L24.31,2.39996199 C27.281292,2.39996199 29.6900561,4.80870805 29.6900561,7.78 Z" id="Path" fill="#D5F3E8" fill-rule="nonzero"></path>
+                            <path d="M31.3,6.19 L31.3,15.81 C31.2944967,18.7845323 28.8845323,21.1944967 25.91,21.2 L6.09,21.2 C4.66140098,21.2 3.29145928,20.6318102 2.28222561,19.6207006 C1.27299195,18.609591 0.707344611,17.2385965 0.709943939,15.81 L0.709943939,6.19 C0.705178192,5.14440084 1.01150222,4.1210001 1.59,3.25 C2.57597664,1.72145232 4.27104262,0.798583066 6.09,0.799998371 L25.91,0.799998371 C28.8868148,0.799998371 31.3,3.2131852 31.3,6.19 Z" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <line x1="0.7" y1="6.19" x2="31.3" y2="6.19" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></line>
+                            <line x1="0.82" y1="10.3" x2="31.09" y2="10.3" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></line>
+                            <line x1="5.8" y1="16.1" x2="10.83" y2="16.1" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></line>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

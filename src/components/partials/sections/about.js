@@ -1,8 +1,8 @@
 import React from "react"
 import styled from "styled-components"
-import Container from "../container"
-import AboutTabs from "../about-tabs"
-import OvalSVG from "../../images/oval-blue.inline.svg"
+import Container from "../../container"
+import AboutTabs from "../../about-tabs"
+import OvalSVG from "../../../images/oval-blue.inline.svg"
 
 const Wrapper = styled.div`
   padding-top: 75px;

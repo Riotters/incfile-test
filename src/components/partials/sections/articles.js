@@ -1,12 +1,12 @@
 import React from "react"
 import styled from "styled-components"
-import Container from "../container"
+import Container from "../../container"
 import Carousel from "react-multi-carousel"
 import "react-multi-carousel/lib/styles.css"
-import Article from "../article"
-import PurpleCurveSVG from "../../images/purple-curve.inline.svg"
-import PinkCurveSVG from "../../images/pink-curve.inline.svg"
-import VisibilitySensor from "../VisibilitySensor"
+import Article from "../../article"
+import PurpleCurveSVG from "../../../images/purple-curve.inline.svg"
+import PinkCurveSVG from "../../../images/pink-curve.inline.svg"
+import VisibilitySensor from "../../VisibilitySensor"
 
 const Wrapper = styled.div`
   padding-top: 80px;

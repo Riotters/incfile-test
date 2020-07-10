@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="31px" viewBox="0 0 32 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon</title>
+    <g id="Manage-your-company" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="manage-your-company@2x" transform="translate(-695.000000, -1489.000000)">
+            <g id="Providing-everything-you-need-when-you-need-it" transform="translate(0.000000, 780.000000)">
+                <g id="Modul/Icon-Box/Simple-Copy-4" transform="translate(671.000000, 685.000000)">
+                    <g id="Group" transform="translate(24.000000, 24.000000)">
+                        <g id="20200414_ICON_icon_0-100" transform="translate(0.000000, 1.000000)">
+                            <path d="M31.13,12.39 C30.9027411,13.2086294 30.4648538,13.9533825 29.86,14.55 L15.12,29.29 L8,29.29 L1.76,23 C1.34998217,22.5917461 1.05058907,22.085875 0.89,21.53 C1.1163038,20.7190403 1.55066113,19.9813223 2.15,19.39 L5.68,15.9 L17.63,4 C18.346277,3.2081057 19.3613005,2.75214844 20.429036,2.74249759 C21.4967715,2.73314958 22.5197468,3.17097519 23.25,3.95 L30.25,10.95 C30.6576905,11.35001 30.9600162,11.8447248 31.13,12.39 Z" id="Path" fill="#E0F1FA" fill-rule="nonzero"></path>
+                            <path d="M15.12,29.29 L29.86,14.55 C30.4648538,13.9533825 30.9027411,13.2086294 31.13,12.39 C31.5488574,11.0526716 31.2079709,9.59337114 30.24,8.58 L23.24,1.58 C21.474605,0.0386663235 18.7968335,0.208258518 17.24,1.96 L5.67,13.54 L2.14,17.07 C0.926549052,18.2254215 0.446315288,19.954263 0.89,21.57 C1.05668904,22.1115448 1.35569692,22.6030176 1.76,23 L8,29.29" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <line x1="19.67" y1="24.68" x2="7.26" y2="11.96" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></line>
+                            <polyline id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" points="8.01 29.29 15.12 29.29 17.49 29.29 27.84 29.29"></polyline>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
