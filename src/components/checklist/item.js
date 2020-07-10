@@ -57,19 +57,19 @@ class Item extends React.Component{
     }
 
     getTop() {
-        const {meta, index, isCompleted} = this.props
+        const {meta, index, isCompleted, isStack} = this.props
         const prevHeight = isCompleted ? _.sumBy(meta.completed.items.slice(0, index), 'height') : _.sumBy(meta.uncompleted.items.slice(0, index), 'height')
-        const top = isCompleted ? meta.uncompleted.height + prevHeight + 80 : prevHeight;
+        const top = !isStack ? (isCompleted ? meta.uncompleted.height + prevHeight + 80 : prevHeight) : (isCompleted ? meta.uncompleted.height + 80 : prevHeight);
     
         return top
     }
 
     render() {
-        const {name, id, height, index, isCompleted, toggleClass, meta} = this.props
+        const {name, id, height, index, isCompleted, toggleClass, meta, isStack} = this.props
         let top = this.getTop()
 
         return (
-            <Wrapper className={isCompleted ? "item completed" : "item"} onClick={toggleClass} style={!isCompleted ? { top: `${top}px` } : {top: `${meta.uncompleted.height + 80}px`}} ref="item">
+            <Wrapper className={isCompleted ? "item completed" : "item"} onClick={toggleClass} style={{top: `${top}px`}} ref="item">
                 <Box>
                     <Checkbox isCompleted={isCompleted} className="circleCheck"/>
                 </Box>
