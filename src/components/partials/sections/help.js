@@ -1,69 +1,100 @@
-import React from "react"
-import styled from "styled-components"
-import Container from "../../container"
-import TextCenterLayout from "../layouts/text-center"
-import Benefit from "../../benefit"
+import React from "react";
+import styled from "styled-components";
+import Container from "../../container";
+import Image from "../../image_nobase64";
+import Button from "../../button";
+import OvalSVG from "../../../images/oval.inline.svg";
+import { color } from "../../styles/colors";
 
 const Wrapper = styled.div`
-  padding-top: 75px;
-  padding-bottom: 64px;
+  padding: 100px 0;
   position: relative;
+  background-color: #fffcf9;
+`;
 
-  @media (min-width: 768px) {
-    padding-top: 250px;
+const Iconbox = styled.div`
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+
+  svg {
+    height: 100%;
+
+    path {
+      fill: ${color.orange3};
+    }
   }
-`
+`;
 
 const Flex = styled.div`
   display: flex;
-`
+`;
 
 const Content = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: 750px;
-  padding-left: 100px;
+  justify-content: center;
+  width: 60%;
+  padding-right: 100px;
+
+  h2,
+  p {
+    max-width: 400px;
+  }
 
   h2 {
-      text-align: left;
-      max-width: 410px;
-      padding-bottom: 40px;
+    text-align: left;
+    padding-bottom: 40px;
   }
 
   p {
-      padding-bottom: 40px;
+    padding-bottom: 40px;
   }
-`
+`;
 
-const Icon = styled.div`
+const Imagebox = styled.div`
   display: flex;
   align-items: center;
   width: 100%;
-  max-width: 400px;
-`
+  max-width: 334px;
 
+  .gatsby-image-wrapper {
+    width: 100%;
+  }
+`;
 
+const Buttonsbox = styled.div`
+  display: flex;
+`;
 
 const Help = () => {
-
   return (
     <Wrapper>
-        <Container>
-            <Flex>
-                <Icon>
-                    Here will be an image some day
-                </Icon>
-                <Content>
-                    <h2>Corporate LLC Kits & Stock Certificates.</h2>
-                    <p>
-                        All Corporations are required to maintain a "corporate minute book" that holds things like the formation paperwork, licenses, resolutions and meeting minutes.
-                        It is one of the first things requested when your company is audited or being sold.
-                    </p>
-                </Content>
-            </Flex>
-        </Container>
+      <Iconbox>
+        <OvalSVG />
+      </Iconbox>
+      <Container>
+        <Flex>
+          <Content>
+            <h2>We are here to help</h2>
+            <p>We understand that questions come up every turn of your business</p>
+            <Buttonsbox>
+              <Button theme="primary56" margin="0 24px 0 0" arrow>
+                Start Now
+              </Button>
+              <Button theme="secondary56" margin="0 auto 0 0" arrow>
+                Read FAQ
+              </Button>
+            </Buttonsbox>
+          </Content>
+          <Imagebox>
+            <Image filename="lifebuoy" />
+          </Imagebox>
+        </Flex>
+      </Container>
     </Wrapper>
-  )
-}
+  );
+};
 
-export default Help
+export default Help;

@@ -1,9 +1,9 @@
-import PropTypes from "prop-types"
-import React, { useState } from "react"
-import styled from "styled-components"
-import LogoSVG from "../images/logo.inline.svg"
-import Button from "./button"
-import DropdownSVG from "../images/dropdown.inline.svg"
+import PropTypes from "prop-types";
+import React, { useState } from "react";
+import styled from "styled-components";
+import LogoSVG from "../images/logo.inline.svg";
+import Button from "./button";
+import DropdownSVG from "../images/dropdown.inline.svg";
 
 const Wrapper = styled.div`
   display: flex;
@@ -17,7 +17,7 @@ const Wrapper = styled.div`
   top: 0;
   z-index: 9999;
   border-bottom: 1px solid rgba(244, 244, 244, 0.9);
-`
+`;
 const Logo = styled.div`
   height: 24px;
   padding-right: 25px;
@@ -25,7 +25,7 @@ const Logo = styled.div`
   @media (min-width: 1200px) {
     width: 200px;
   }
-`
+`;
 
 const MobileWrapper = styled.nav`
   display: ${({ showNav }) => (showNav ? "flex" : "none")};
@@ -49,7 +49,7 @@ const MobileWrapper = styled.nav`
     flex-grow: 1;
     padding: 0;
   }
-`
+`;
 
 const Navigation = styled.nav`
   display: flex;
@@ -61,7 +61,7 @@ const Navigation = styled.nav`
     height: 100%;
     flex-grow: 1;
   }
-`
+`;
 
 const Menu = styled.ul`
   display: flex;
@@ -74,7 +74,7 @@ const Menu = styled.ul`
     flex-direction: row;
     justify-content: flex-start;
   }
-`
+`;
 
 const MenuItem = styled.li`
   display: flex;
@@ -85,7 +85,7 @@ const MenuItem = styled.li`
   @media (min-width: 992px) {
     height: 100%;
   }
-`
+`;
 
 const MenuLink = styled.a`
   display: flex;
@@ -107,7 +107,7 @@ const MenuLink = styled.a`
   &:hover {
     border-bottom: 1px solid #fd8550;
   }
-`
+`;
 
 const LoginWrapper = styled.div`
   display: flex;
@@ -132,7 +132,7 @@ const LoginWrapper = styled.div`
       }
     }
   }
-`
+`;
 
 const Login = styled.a`
   display: flex;
@@ -161,7 +161,7 @@ const Login = styled.a`
   &:hover {
     color: #fd8550;
   }
-`
+`;
 
 const Hamburger = styled.div`
   display: block;
@@ -186,8 +186,7 @@ const Hamburger = styled.div`
 
     &:nth-child(1) {
       top: ${({ hamburger }) => (hamburger ? "calc(50% - 2px)" : "0")};
-      transform: ${({ hamburger }) =>
-        hamburger ? "rotate(-135deg)" : "rotate(0)"};
+      transform: ${({ hamburger }) => (hamburger ? "rotate(-135deg)" : "rotate(0)")};
     }
 
     &:nth-child(2) {
@@ -197,14 +196,13 @@ const Hamburger = styled.div`
 
     &:nth-child(3) {
       bottom: ${({ hamburger }) => (hamburger ? "calc(50% - 2px)" : "0")};
-      transform: ${({ hamburger }) =>
-        hamburger ? "rotate(135deg)" : "rotate(0)"};
+      transform: ${({ hamburger }) => (hamburger ? "rotate(135deg)" : "rotate(0)")};
     }
   }
-`
+`;
 
 const Header = ({ siteTitle }) => {
-  const [menu, showMenu] = useState(false)
+  const [menu, showMenu] = useState(false);
 
   return (
     <Wrapper>
@@ -215,21 +213,15 @@ const Header = ({ siteTitle }) => {
         <Navigation>
           <Menu>
             <MenuItem>
-              <MenuLink href="https://www.incfile.com/start-your-company/">
-                Review Entity Type
-              </MenuLink>
+              <MenuLink href="https://www.incfile.com/start-your-company/">Review Entity Type</MenuLink>
               <DropdownSVG />
             </MenuItem>
             <MenuItem>
-              <MenuLink href="https://www.incfile.com/manage-your-company/">
-                Manage Your Company
-              </MenuLink>
+              <MenuLink href="manage-your-company">Manage Your Company</MenuLink>
               <DropdownSVG />
             </MenuItem>
             <MenuItem>
-              <MenuLink href="https://www.incfile.com/business-entity-comparison/">
-                Learning Center
-              </MenuLink>
+              <MenuLink href="https://www.incfile.com/business-entity-comparison/">Learning Center</MenuLink>
               <DropdownSVG />
             </MenuItem>
             <MenuItem>
@@ -249,15 +241,15 @@ const Header = ({ siteTitle }) => {
         <span></span>
       </Hamburger>
     </Wrapper>
-  )
-}
+  );
+};
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
-}
+};
 
 Header.defaultProps = {
   siteTitle: ``,
-}
+};
 
-export default Header
+export default Header;
