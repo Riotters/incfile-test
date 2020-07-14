@@ -37,13 +37,13 @@ const Grid = styled.div`
 const Benefits = () => {
   return (
     <Wrapper>
-      <TextCenterLayout
-        headline="Providing everything you need when you need it"
-        text="As your business grows we'll be there every step of the way to make sure that you
-            have the resources at hand to serve your companies ongoing needs."
-        headlineWidth="700"
-      />
       <Container>
+        <TextCenterLayout
+            headline="Providing everything you need when you need it"
+            text="As your business grows we'll be there every step of the way to make sure that you
+                have the resources at hand to serve your companies ongoing needs."
+            headlineWidth="700"
+        />
         <Grid>
           <Benefit
             Icon={Icon1}

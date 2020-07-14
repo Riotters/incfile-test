@@ -5,9 +5,6 @@ import ArrowLink from "../../arrow-link"
 import VisibilitySensor from "../../VisibilitySensor"
 
 const Wrapper = styled.div`
-`
-
-const Content = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,38 +29,34 @@ const Content = styled.div`
 const TextCenterLayout = ({headline, headlineWidth, text, textWidth, linkText, linkUrl}) => {
 
   return (
-    <Wrapper>
-      <Container>
-        <Content headlineWidth={headlineWidth} textWidth={textWidth}>
-            {headline && (
-                <VisibilitySensor partialVisibility once>
-                    {({ isVisible }) => (
-                    <h2 className={isVisible ? "slideUp enter" : "slideUp"}>
-                        {headline}
-                    </h2>
-                    )}
-                </VisibilitySensor>
-            )}
-            {text && (
-                <VisibilitySensor partialVisibility once>
-                    {({ isVisible }) => (
-                    <p className={isVisible ? "slideUp enter" : "slideUp"}>
-                        {text}
-                    </p>
-                    )}
-                </VisibilitySensor>
-            )}
-            {linkText && (
-                <VisibilitySensor partialVisibility once>
-                    {({ isVisible }) => (
-                    <ArrowLink href={linkUrl} className={isVisible ? "slideUp enter" : "slideUp"}>
-                        {linkText}
-                    </ArrowLink>
-                    )}
-                </VisibilitySensor>
-            )}
-        </Content>
-      </Container>
+    <Wrapper headlineWidth={headlineWidth} textWidth={textWidth}>
+        {headline && (
+            <VisibilitySensor partialVisibility once>
+                {({ isVisible }) => (
+                <h2 className={isVisible ? "slideUp enter" : "slideUp"}>
+                    {headline}
+                </h2>
+                )}
+            </VisibilitySensor>
+        )}
+        {text && (
+            <VisibilitySensor partialVisibility once>
+                {({ isVisible }) => (
+                <p className={isVisible ? "slideUp enter" : "slideUp"}>
+                    {text}
+                </p>
+                )}
+            </VisibilitySensor>
+        )}
+        {linkText && (
+            <VisibilitySensor partialVisibility once>
+                {({ isVisible }) => (
+                <ArrowLink href={linkUrl} className={isVisible ? "slideUp enter" : "slideUp"}>
+                    {linkText}
+                </ArrowLink>
+                )}
+            </VisibilitySensor>
+        )}
     </Wrapper>
   )
 }

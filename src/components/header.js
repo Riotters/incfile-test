@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import React, { useState } from "react";
+import { Link } from "gatsby";
 import styled from "styled-components";
 import LogoSVG from "../images/logo.inline.svg";
 import Button from "./button";
@@ -87,7 +88,7 @@ const MenuItem = styled.li`
   }
 `;
 
-const MenuLink = styled.a`
+const MenuLink = styled(Link)`
   display: flex;
   align-items: center;
   height: 100%;
@@ -213,19 +214,19 @@ const Header = ({ siteTitle }) => {
         <Navigation>
           <Menu>
             <MenuItem>
-              <MenuLink href="https://www.incfile.com/start-your-company/">Review Entity Type</MenuLink>
+              <MenuLink to="#">Review Entity Type</MenuLink>
               <DropdownSVG />
             </MenuItem>
             <MenuItem>
-              <MenuLink href="manage-your-company">Manage Your Company</MenuLink>
+              <MenuLink to="/manage-your-company">Manage Your Company</MenuLink>
               <DropdownSVG />
             </MenuItem>
             <MenuItem>
-              <MenuLink href="https://www.incfile.com/business-entity-comparison/">Learning Center</MenuLink>
+              <MenuLink to="#">Learning Center</MenuLink>
               <DropdownSVG />
             </MenuItem>
             <MenuItem>
-              <MenuLink href="https://www.incfile.com/about/">About</MenuLink>
+              <MenuLink to="#">About</MenuLink>
               <DropdownSVG />
             </MenuItem>
           </Menu>

@@ -6,16 +6,16 @@ import OvalSVG from "../../../images/oval.inline.svg";
 import VisibilitySensor from "../../VisibilitySensor";
 
 const Wrapper = styled.div`
-  padding-top: 50px;
+  display: flex;
+  align-items: center;
   position: relative;
-
-  @media (min-width: 768px) {
-    padding-top: 190px;
-  }
+  height: 100vh;
+  max-height: 777px;
 `;
 
 const Oval = styled.div`
   width: 90%;
+  max-height: 777px;
   max-width: 350px;
   position: absolute;
   top: 0;
@@ -36,8 +36,6 @@ const Oval = styled.div`
 
   svg {
     position: absolute;
-    top: 0;
-    left: 0;
     right: 0;
     bottom: 0;
 
@@ -84,8 +82,14 @@ const TextContainer = styled.div`
 
 const ImageContainer = styled.div`
   display: none;
-  width: 50%;
-  padding-left: 60px;
+  //width: 50%;
+  //padding-left: 60px;
+  width: 55%;
+  max-width: 950px;
+  position: absolute;
+  top: 50%;
+  right: 55%;
+  transform: translate(100%, -50%);
 
   @media (min-width: 768px) {
     display: flex;
@@ -93,7 +97,7 @@ const ImageContainer = styled.div`
 
   .gatsby-image-wrapper {
     width: 100%;
-    max-width: 400px;
+    //max-height: 500px;
 
     img {
       object-fit: contain !important;
@@ -101,7 +105,7 @@ const ImageContainer = styled.div`
   }
 `;
 
-const Top = ({ children, headline, text, imageName, imageAlt }) => (
+const Top = ({ children, imageName, imageAlt }) => (
   <Wrapper>
     <VisibilitySensor partialVisibility once>
       {({ isVisible }) => (
@@ -110,28 +114,19 @@ const Top = ({ children, headline, text, imageName, imageAlt }) => (
         </Oval>
       )}
     </VisibilitySensor>
+    <ImageContainer>
+      <Image filename={imageName} alt={imageAlt} />
+    </ImageContainer>
     <Container>
       <Content>
         <VisibilitySensor partialVisibility once>
           {({ isVisible }) => (
             <TextContainer className={isVisible ? "slideRight enter" : "slideRight"}>
-              {/* <h1>{headline}</h1>
-              <p>{text}</p>
-              <ButtonsContainer>
-                <Button theme="primary56" width="200px" arrow="yes" padding="0">
-                  Start Now
-                </Button>
-                <Button arrow2="yes" height="56px" width="200px" padding="0" margin="0 0 0 16px">
-                  How it works
-                </Button>
-              </ButtonsContainer> */}
               {children}
             </TextContainer>
           )}
         </VisibilitySensor>
-        <ImageContainer>
-          <Image filename={imageName} alt={imageAlt} />
-        </ImageContainer>
+        
       </Content>
     </Container>
   </Wrapper>

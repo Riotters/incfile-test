@@ -4,13 +4,7 @@ import Container from "../../container";
 import Image from "../../image_nobase64";
 
 const Wrapper = styled.div`
-  padding-top: 75px;
-  padding-bottom: 64px;
   position: relative;
-
-  @media (min-width: 768px) {
-    padding-top: 180px;
-  }
 `;
 
 const Flex = styled.div`
@@ -20,9 +14,13 @@ const Flex = styled.div`
 const Content = styled.div`
   display: flex;
   flex-direction: column;
+  width: 100%;
   max-width: 750px;
-  padding-left: 100px;
   padding-top: ${props => (props.paddingTop ? props.paddingTop : "0")}px;
+
+  @media(min-width: 768px) {
+    padding-left: 100px;
+  }
 
   h2, h3 {
     text-align: left;
@@ -46,10 +44,14 @@ const Sticky = styled.div`
 `;
 
 const Imagebox = styled.div`
-  display: flex;
+  display: none;
   width: 100%;
   max-width: 400px;
   position: relative;
+
+  @media(min-width: 768px) {
+    display: flex;
+  }
 
   .gatsby-image-wrapper {
     height: auto;
