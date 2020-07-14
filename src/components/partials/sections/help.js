@@ -35,8 +35,11 @@ const Content = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 60%;
-  padding-right: 100px;
+
+  @media (min-width: 768px) {
+    width: 60%;
+    padding-right: 100px;
+  }
 
   h2,
   p {
@@ -54,10 +57,14 @@ const Content = styled.div`
 `;
 
 const Imagebox = styled.div`
-  display: flex;
+  display: none;
   align-items: center;
   width: 100%;
   max-width: 334px;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
 
   .gatsby-image-wrapper {
     width: 100%;
@@ -66,6 +73,11 @@ const Imagebox = styled.div`
 
 const Buttonsbox = styled.div`
   display: flex;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
 `;
 
 const Help = () => {
@@ -80,10 +92,10 @@ const Help = () => {
             <h2>We are here to help</h2>
             <p>We understand that questions come up every turn of your business</p>
             <Buttonsbox>
-              <Button theme="primary56" margin="0 24px 0 0" arrow>
+              <Button theme="primary56" marginMD="0 24px 0 0" arrow>
                 Start Now
               </Button>
-              <Button theme="secondary56" margin="0 auto 0 0" arrow>
+              <Button theme="secondary56" margin="24px 0 0 0" marginMD="0 auto 0 0" arrow>
                 Read FAQ
               </Button>
             </Buttonsbox>

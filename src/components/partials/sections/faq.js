@@ -1,11 +1,11 @@
-import React from "react"
-import styled from "styled-components"
-import Container from "../../container"
-import TextCenterLayout from "../layouts/text-center"
+import React from "react";
+import styled from "styled-components";
+import Container from "../../container";
+import TextCenterLayout from "../blocks/text-center";
 //import Accordion from "../../accordion"
-import VisibilitySensor from "../../VisibilitySensor"
+import VisibilitySensor from "../../VisibilitySensor";
 
-const Accordion = React.lazy(() => import("../../accordion"))
+const Accordion = React.lazy(() => import("../../accordion"));
 
 const Wrapper = styled.div`
   padding-top: 75px;
@@ -15,7 +15,7 @@ const Wrapper = styled.div`
   @media (min-width: 768px) {
     padding-top: 250px;
   }
-`
+`;
 
 const Content = styled.div`
   display: flex;
@@ -27,18 +27,14 @@ const Content = styled.div`
     max-width: 610px;
     margin-bottom: 24px;
   }
-`
+`;
 
 const Faq = () => {
-  const isSSR = typeof window === "undefined"
+  const isSSR = typeof window === "undefined";
 
   return (
     <Wrapper>
-      <TextCenterLayout 
-          headline="Common questions on starting a Nonprofit Corporation" 
-          linkText="See all"
-          linkUrl="#"
-          />
+      <TextCenterLayout headline="Common questions on starting a Nonprofit Corporation" linkText="See all" linkUrl="#" />
       <Container>
         <Content>
           {!isSSR && (
@@ -49,7 +45,7 @@ const Faq = () => {
         </Content>
       </Container>
     </Wrapper>
-  )
-}
+  );
+};
 
-export default Faq
+export default Faq;

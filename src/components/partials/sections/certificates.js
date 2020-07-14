@@ -23,7 +23,10 @@ const Content = styled.div`
   display: flex;
   flex-direction: column;
   max-width: 750px;
-  padding-left: 100px;
+
+  @media (min-width: 768px) {
+    padding-left: 100px;
+  }
 
   h2 {
     text-align: left;
@@ -37,10 +40,14 @@ const Content = styled.div`
 `;
 
 const Icon = styled.div`
-  display: flex;
+  display: none;
   align-items: center;
   width: 100%;
   max-width: 400px;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
 
   .gatsby-image-wrapper {
     height: auto;
@@ -50,6 +57,11 @@ const Icon = styled.div`
 
 const Checks = styled.div`
   display: flex;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
 
   & > div {
     width: 100%;
