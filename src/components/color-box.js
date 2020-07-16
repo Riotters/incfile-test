@@ -41,7 +41,7 @@ const Wrapper = styled.div`
                     background-color: ${props => (props.dotsColor ? props.dotsColor : "")};
                     border-radius: 50%;
                     position: absolute;
-                    top: calc(50% - 2px);
+                    top: 9px;
                     left: 6px;
                 }
 

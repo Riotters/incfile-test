@@ -8,12 +8,16 @@ import styled from "styled-components";
 import Top from "../components/partials/sections/top";
 import ImageContent from "../components/partials/blocks/left-image-right-content";
 import Articles from "../components/partials/sections/articles";
-import { color } from "../components/styles/colors";
-import { shadow } from "../components/styles/shadows";
+import { color, gradient } from "../components/styles/colors";
 import Container from "../components/container";
-import LicenseSVG from "../images/icons/license.inline.svg";
+import ExistenceSVG from "../images/icons/certificate-of-existence.inline.svg";
+import AuthorizationSVG from "../images/icons/certificate-of-authorization.inline.svg";
+import StatusSVG from "../images/icons/certificate-of-status.inline.svg";
+import Help from "../components/partials/blocks/left-content-right-object"
 import Accordion from "../components/accordion";
 import Benefits from "../components/partials/sections/benefits";
+import ArrowLink from "../components/arrow-link";
+import Card from "../components/certificate-card";
 
 const faq = {
   items: [
@@ -65,21 +69,18 @@ const BusinessOwnerResponsibilities = styled.section`
     }
   }
 
-  .bluebox,
+  .yellowbox,
   .orangebox {
     margin-bottom: 48px;
-  }
-
-  .bluebox {
-    margin-top: 48px;
   }
 
   .boxes {
     display: flex;
     flex-direction: column;
+    margin-bottom: 48px;
 
     .box {
-        background-color: ${color.green3};
+        background-color: ${color.babyblue3};
         position: relative;
         padding: 35px 35px 35px 88px;
         border-radius: 5px 5px 5px 5px;
@@ -116,13 +117,17 @@ const BusinessOwnerResponsibilities = styled.section`
 `;
 
 const RequirementsByState = styled.section`
-  background-color: ${color.blue3};
-  padding-top: 148px;
-  padding-bottom: 120px;
+  background-image: ${gradient.blue3};
+  padding-top: 100px;
 
   .wrapper {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .help {
+    padding-bottom: 150px;
   }
 `;
 
@@ -135,81 +140,9 @@ const Buttonsbox = styled.div`
   }
 `;
 
-const ArrowButton = styled.a`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  max-width: 670px;
-  padding: 24px 24px 24px 40px;
-  border-radius: 5px;
-  background-color: ${color.white};
-  box-shadow: ${shadow.white1};
-  position: relative;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 900;
-  color: ${color.grey1};
-  text-decoration: none;
-  transition: transform 0.1s ease;
+const CertificateCard = <Card/>;
 
-  &:hover {
-    transform: scale(1.02);
-  }
-`;
-
-const WhatYouGet = styled.section`
-  padding-top: 88px;
-
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 8px;
-    margin-bottom: 48px;
-
-    @media (min-width: 768px) {
-      grid-template-columns: 1fr 1fr;
-    }
-
-    .box {
-      background-color: ${color.green3};
-      position: relative;
-      padding: 35px 35px 35px 88px;
-      border-radius: 5px 5px 5px 5px;
-
-      @media (min-width: 768px) {
-        &:nth-child(1) {
-          border-radius: 20px 5px 5px 5px;
-        }
-
-        &:nth-child(2) {
-          border-radius: 5px 20px 5px 5px;
-        }
-
-        &:nth-child(3) {
-          border-radius: 5px 5px 5px 20px;
-        }
-
-        &:nth-child(4) {
-          border-radius: 5px 5px 20px 5px;
-        }
-      }
-
-      svg {
-        position: absolute;
-        top: 50%;
-        left: 40px;
-        transform: translateY(-50%);
-      }
-
-      h3 {
-        padding: 0;
-      }
-    }
-  }
-`;
-
-const CertyficateOfGoodStanding = () => (
+const CertificateOfGoodStanding = () => (
   <Layout>
     <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
     <Top imageName="mrs-bulb-buildings" imageAlt="Mr Bulb and buildings">
@@ -231,15 +164,15 @@ const CertyficateOfGoodStanding = () => (
         <h3>Other names for a Certificate of Good Standing</h3>
         <div className="boxes">
           <div className="box">
-            <LicenseSVG />
+            <ExistenceSVG />
             <h4>Certificate of Existence</h4>
           </div>
           <div className="box">
-            <LicenseSVG />
+            <AuthorizationSVG />
             <h4>Certificate of Authorization</h4>
           </div>
           <div className="box">
-            <LicenseSVG />
+            <StatusSVG />
             <h4>Certificate of Status</h4>
           </div>
         </div>
@@ -252,7 +185,7 @@ const CertyficateOfGoodStanding = () => (
           In certain situations, you may be required to prove that your business exists and is in compliance with relevant laws and regulations. A Certificate of Good Standing from your state serves as this proof. A Certificate of Good Standing is often required in order to obtain a loan, renew a
           business license or to file your business taxes. There are a few key reasons why your company might need a Certificate of Good Standing. Sometimes this document is requested by:
         </p>
-        <Colorbox className="orangebox" color={color.orange3} dotsColor={color.orange1}>
+        <Colorbox className="yellowbox" color={color.yellow3} dotsColor={color.yellow1}>
           <h4>When is an Annual Report Not an Annual Report?</h4>
           <ul>
             <li>Other state governments as part of the process of applying for Foreign Qualification for your business to register to do business in states other than your home state</li>
@@ -284,8 +217,18 @@ const CertyficateOfGoodStanding = () => (
     </BusinessOwnerResponsibilities>
     <RequirementsByState>
       <Container>
-        <TextCenterLayout headline="Common questions about filing a Certificate of Good Standing" headlineWidth="700" />
         <div className="wrapper">
+          <Help className="help" headlineWidth="450" object={CertificateCard}>
+            <h2>Help to Obtain a Certificate of Good Standing</h2>
+            <h4>Save your time. We'll handle the paperwork.</h4>
+            <p>
+            If you would like to use our services to facilitate the filing of your annual report please place the order and a representative from IncFile will contact you to obtain specific information required to complete and file the annual report in your state of formation.
+            </p>
+            <ArrowLink>
+              We can handle the paperwork
+            </ArrowLink>
+          </Help>
+          <TextCenterLayout headline="Common questions about filing a Certificate of Good Standing" headlineWidth="700" />
           <Accordion faq={faq} />
         </div>
       </Container>
@@ -295,4 +238,4 @@ const CertyficateOfGoodStanding = () => (
   </Layout>
 );
 
-export default CertyficateOfGoodStanding;
+export default CertificateOfGoodStanding;

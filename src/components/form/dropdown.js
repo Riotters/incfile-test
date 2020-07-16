@@ -19,11 +19,13 @@ const Wrapper = styled.div`
             font-family: Avenir, sans-serif;
             font-size: 16px;
             line-height: 24px;
-            border: 1px solid ${color.grey3};
             border-radius: 5px;
 
             &.is-open {
-                border-radius: 5px 5px 0 0;
+               
+                .Dropdown-control {
+                    border-radius: 5px 5px 0 0;
+                }
             }
         }
 
@@ -38,6 +40,7 @@ const Wrapper = styled.div`
             padding: 12px 32px 12px 24px;
             transition: all 200ms ease;
             cursor: pointer;
+            border: 1px solid ${color.grey3};
         }
 
         &-menu {
@@ -46,9 +49,10 @@ const Wrapper = styled.div`
             max-height: 200px;
             overflow-y: auto;
             width: 100%;
-            z-index: 1000;
+            position: absolute;
             -webkit-overflow-scrolling: touch;
-            z-index: 999;
+            z-index: 1;
+            border: 1px solid ${color.grey3};
         }
 
         &-option {
@@ -95,7 +99,7 @@ class Drop extends Component {
         const defaultOption = this.state.selected;
     
         return (
-            <Wrapper>
+            <Wrapper className={this.props.className}>
                 <Dropdown options={options} onChange={this._onSelect} value={defaultOption} placeholder="Text" />
                 <DropdownSVG />
             </Wrapper>
