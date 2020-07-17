@@ -38,7 +38,7 @@ const BusinessOwnerResponsibilities = styled.section`
   }
 
   h3 {
-    &.pt72 {
+    &.pt48 {
       padding-top: 72px;
     }
   }
@@ -337,7 +337,7 @@ const BusinessLicence = () => (
         </Colorbox>
         <p className="pb32">The cost and policies governing an LLC do vary from state to state. Check out our LLC State Information resource for additional info on your state.</p>
         <ArrowLink>Incfile's Business License Search Tool</ArrowLink>
-        <h3 className="pt72">What Licenses Does My Business Need?</h3>
+        <h3 className="pt48">What Licenses Does My Business Need?</h3>
         <p>There are two categories of business licenses, namely federal and state. This is just the first step in operating legally in both your jurisdiction and in the country.</p>
         <p>The federal government often requires a license to be obtained when you have a very specialized industry or one with a high level of liability. Some examples include serving alcohol, running a fishery, opening a gun shop, or transporting live animals across state lines.</p>
         <p>
@@ -366,7 +366,7 @@ const BusinessLicence = () => (
             Do the research yourself
           </Button>
         </Buttonsbox>
-        <h3 className="pt72">How Do I Apply For A Business License?</h3>
+        <h3 className="pt48">How Do I Apply For A Business License?</h3>
         <ul className="numericlist">
           <li>
             <CircleIcon className="circleicon" circleColor={color.blue1} iconColor={color.white}>

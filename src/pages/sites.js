@@ -1,0 +1,60 @@
+import React from "react"
+import { Link } from "gatsby"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+import Container from "../components/container"
+import styled from "styled-components"
+
+const Wrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    alig-items: center;
+    padding-top: 50px;
+
+    @media (min-width: 768px) {
+        padding-top: 150px;
+    }
+
+    & > h1, h2 {
+        text-align: left;
+        margin: 35px 0 25px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #797a79;
+        font-family: Avenir;
+        transition: color 0.3s ease;
+        margin-bottom: 16px;
+
+        &:hover {
+            color: #fd8550;
+        }
+    }
+`;
+
+const ComponentsPage = () => (
+  <Layout>
+    <SEO
+      title="Components"
+      description="Incfile components presentation page."
+    />
+    <Container>
+        <Wrapper>
+            <h1>List of all sites</h1>
+            <Link to="/">Nonprofit</Link>
+            <Link to="/manage-your-company">Manage your company</Link>
+            <Link to="/manage-your-company-annual-report">Annual report</Link>
+            <Link to="/manage-your-company-business-license">Business license</Link>
+            <Link to="/manage-your-company-certificate-of-good-standing">Certificate of good standing</Link>
+            <Link to="/manage-your-company-change-of-registered-agent">Change of registered agent</Link>
+            <h2>Additional sites</h2>
+            <Link to="/components">Components</Link>
+            <Link to="/404">404</Link>
+        </Wrapper>
+    </Container>
+  </Layout>
+)
+
+export default ComponentsPage

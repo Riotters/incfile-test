@@ -17,9 +17,8 @@ const Content = styled.div`
   justify-content: center;
 
   @media (min-width: 768px) {
-    width: 60%;
-    max-width: 700px;
-    padding-right: 100px;
+    width: 52%;
+    max-width: 600px;
   }
 
   h2 {
@@ -49,7 +48,8 @@ const Objectbox = styled.div`
   align-items: center;
 
   @media (min-width: 768px) {
-    width: 40%;
+    width: 48%;
+    padding-right: 100px;
   }
 `;
 
@@ -57,12 +57,12 @@ const LeftContentRightObject = ({ children, className, object, headlineWidth, te
     
   return (
         <Wrapper className={className}>
-          <Content headlineWidth={headlineWidth} textWidth={textWidth}>
-            { children }
-          </Content>
           <Objectbox>
             { object }
           </Objectbox>
+          <Content headlineWidth={headlineWidth} textWidth={textWidth}>
+            { children }
+          </Content>
         </Wrapper>
   );
 };

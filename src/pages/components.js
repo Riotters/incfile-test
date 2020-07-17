@@ -29,6 +29,7 @@ import Dropdown from "../components/form/dropdown"
 import CheckText from "../components/static-check/text-only"
 import CheckBox from "../components/static-check/text-boxed"
 import Checklist from "../components/checklist/checklist"
+import TopImageBox from "../components/top-image-box"
 
 const Section = styled.div`
     width: 100%;
@@ -47,34 +48,34 @@ const Wrapper = styled.div`
         padding-top: 150px;
     }
 
-    h1, h2, h3, h4, h5, hs6 {
+    & > h1, h2, h3, h4, h5, hs6 {
         width: 100%;
         max-width: 600px;
     }
 
-    h1 {
+    & > h1 {
         text-align: left;
         margin: 35px 0 25px;
     }
 
-    h2 {
+    & > h2 {
         text-align: left;
         margin: 35px 0 25px;
     }
 
-    h3 {
+    & > h3 {
         margin: 25px 0 15px;
     }
 
-    h4 {
+    & > h4 {
         margin: 20px 0;
     }
 
-    h5 {
+    & > h5 {
         margin: 15px 0 0;
     }
 
-    h6 {
+    & > h6 {
         margin: 15px 0 0;
     }
 `;
@@ -431,7 +432,7 @@ const ComponentsPage = () => (
             <h4>Dropdown</h4>
             <GridWrapper columns="2">
                 <GreyWrapper>
-                    <Dropdown />
+                    <Dropdown placeholder="text" options={["option1", "option2", "option3"]}/>
                 </GreyWrapper>
             </GridWrapper>
             <h3>Static Check</h3>
@@ -472,6 +473,15 @@ const ComponentsPage = () => (
             <h3>Checklist</h3>
             <GreyWrapper>
                 <Checklist />
+            </GreyWrapper>
+            <h3>Top Image Box</h3>
+            <GreyWrapper>
+                <TopImageBox image="clock">
+                    <h4>How Long does it take to file an Annual Report?</h4>
+                    <p>
+                        The filing time is dependent on the governing state agency. Filing times vary by state it is therefore important that the report is filed well in advance of the due date in order to avoid any potential late filing fees.
+                    </p>
+                </TopImageBox>
             </GreyWrapper>
         </Wrapper>
     </Container>

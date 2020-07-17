@@ -82,13 +82,13 @@ h1 {
 
 h2 {
   font-size: 40px;
-  line-height: 1;
+  line-height: 1.2;
   text-align: center;
 }
 
 h3 {
   font-size: 24px;
-  line-height: 1;
+  line-height: 1.2;
   width: 100%;
   max-width: 670px;
 }
@@ -97,7 +97,7 @@ h4 {
   font-family: Avenir;
   font-weight: 900;
   font-size: 20px;
-  line-height: 1;
+  line-height: 1.2;
 }
 
 h5 {

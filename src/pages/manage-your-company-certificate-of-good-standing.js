@@ -18,6 +18,7 @@ import Accordion from "../components/accordion";
 import Benefits from "../components/partials/sections/benefits";
 import ArrowLink from "../components/arrow-link";
 import Card from "../components/certificate-card";
+import { states } from "../components/states"
 
 const faq = {
   items: [
@@ -54,8 +55,8 @@ const BusinessOwnerResponsibilities = styled.section`
   }
 
   h3 {
-    &.pt72 {
-      padding-top: 72px;
+    &.pt48 {
+      padding-top: 48px;
     }
   }
 
@@ -140,7 +141,13 @@ const Buttonsbox = styled.div`
   }
 `;
 
-const CertificateCard = <Card/>;
+const dropdownOneOptions = [
+  'LCC', 'Corporation', 'Nonprofit'
+];
+
+const dropdownTwoOptions = states.state.map(state => (state.name))
+
+const CertificateCard = <Card headline="Filing Your Certificate of Good Standing" price="88" dropdownOnePlaceholder="Select Entity Type" dropdownOneOptions={dropdownOneOptions} dropdownTwoPlaceholder="Select State" dropdownTwoOptions={dropdownTwoOptions} />;
 
 const CertificateOfGoodStanding = () => (
   <Layout>
@@ -150,12 +157,12 @@ const CertificateOfGoodStanding = () => (
       <p>$0 + State Fee & FREE Registered Agent.</p>
       <Buttonsbox>
         <Button href="#" theme="primary56" width="200px" arrow>
-          Order now
+          Order Now
         </Button>
       </Buttonsbox>
     </Top>
     <BusinessOwnerResponsibilities>
-      <ImageContent image="certyficate" paddingTop="60">
+      <ImageContent image="certificate" paddingTop="60">
         <h3>What is a Certificate of Good Standing?</h3>
         <p>
           A Certificate of Good Standing is an official document issued by your state’s secretary of state office to verify that your business is compliant within the state of incorporation and therefore is in “good standing.” Just like having a driver’s license or other forms of personal ID, a
@@ -180,7 +187,7 @@ const CertificateOfGoodStanding = () => (
           Also known as a Certificate of Existence, Certificate of Authorization, or a Certificate of Status, the Good Standing Certificate is a one-page document provided by the secretary of state and provides conclusive evidence of the status of your business entity. In many cases it can be valid
           up to three months.
         </p>
-        <h3 className="pt72">When do you need a Certificate of Good Standing?</h3>
+        <h3 className="pt48">When do you need a Certificate of Good Standing?</h3>
         <p>
           In certain situations, you may be required to prove that your business exists and is in compliance with relevant laws and regulations. A Certificate of Good Standing from your state serves as this proof. A Certificate of Good Standing is often required in order to obtain a loan, renew a
           business license or to file your business taxes. There are a few key reasons why your company might need a Certificate of Good Standing. Sometimes this document is requested by:
@@ -199,7 +206,7 @@ const CertificateOfGoodStanding = () => (
           Simply put, the Certificate of Good Standing helps you prove that your business exists, and that you are a law-abiding business owner who complies with the rules. It helps enhance your trustworthiness and credibility with potential partners, investors and lenders. Obtaining a Certificate
           of Good Standing is a simple but sometimes necessary step in maintaining your business’s good reputation and branching out your business operations into new areas.
         </p>
-        <h3 className="pt72">How do I get a Certificate of Good Standing?</h3>
+        <h3 className="pt48">How do I get a Certificate of Good Standing?</h3>
         <p>
           After you form your LLC or corporation, it’s important to stay up-to-date on filing your annual report, biennial report, or other required forms and compliance paperwork. To stay in good standing, your business needs to meet a few key requirements, depending on your company’s home state.
           These typically include:

@@ -15,7 +15,7 @@ const Content = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 750px;
+  max-width: 770px;
   padding-top: ${props => (props.paddingTop ? props.paddingTop : "0")}px;
 
   @media(min-width: 768px) {

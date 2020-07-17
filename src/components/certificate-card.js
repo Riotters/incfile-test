@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import Curve from "../images/purple-curve.inline.svg"
 import { color } from "./styles/colors"
 import { shadow } from "./styles/shadows"
 import Label from "./form/label"
@@ -54,20 +53,19 @@ const Wrapper = styled.div`
     }
 `
 
-const CertificateCard = ({ className }) => {
-
+const CertificateCard = ({ className, headline, price, dropdownOnePlaceholder, dropdownOneOptions, dropdownTwoPlaceholder, dropdownTwoOptions }) => {
   return (
     <Wrapper className={className}>
-        <h3>Filing Your Certificate of Good Standing</h3>
+        <h3>{headline}</h3>
         <Label className="label">
         Entity Type
-        <Dropdown className="dropdown"/>
+        <Dropdown className="dropdown" placeholder={dropdownOnePlaceholder} options={dropdownOneOptions} />
         </Label>
         <Label className="label">
             State
-        <Dropdown className="dropdown"/>
+        <Dropdown className="dropdown" placeholder={dropdownTwoPlaceholder} options={dropdownTwoOptions}/>
         </Label>
-        <span className="price">$88</span>
+        <span className="price">${price}</span>
         <span className="fee">+ $10 State Fee</span>
         <Button theme="primary56" arrow>Order now</Button>
     </Wrapper>

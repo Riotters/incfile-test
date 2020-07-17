@@ -1,13 +1,8 @@
 import React, { component, Component } from "react"
 import Dropdown from 'react-dropdown';
-//import 'react-dropdown/style.css';
 import styled from "styled-components"
 import { color } from "../styles/colors"
 import DropdownSVG from "../../images/dropdown.inline.svg"
-
-const options = [
-    'Option 1', 'Option 2', 'Option 3'
-];
 
 const Wrapper = styled.div`
     position: relative;
@@ -100,7 +95,7 @@ class Drop extends Component {
     
         return (
             <Wrapper className={this.props.className}>
-                <Dropdown options={options} onChange={this._onSelect} value={defaultOption} placeholder="Text" />
+                <Dropdown options={this.props.options} onChange={this._onSelect} value={defaultOption} placeholder={this.props.placeholder} />
                 <DropdownSVG />
             </Wrapper>
         )
