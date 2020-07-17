@@ -156,7 +156,7 @@ const CertificateOfGoodStanding = () => (
       <h1>Filing Your Certificate of Good Standing</h1>
       <p>$0 + State Fee & FREE Registered Agent.</p>
       <Buttonsbox>
-        <Button href="#" theme="primary56" width="200px" arrow>
+        <Button to="#" theme="primary56" width="200px" arrow>
           Order Now
         </Button>
       </Buttonsbox>

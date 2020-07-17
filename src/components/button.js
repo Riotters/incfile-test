@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "gatsby";
 import styled from "styled-components";
 import ArrowSVG from "../images/arrow.inline.svg";
 import Arrow2SVG from "../images/arrow2.inline.svg";
 
-const Wrapper = styled.a`
+const Wrapper = styled(Link)`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -94,8 +95,8 @@ const Arrow = styled.div`
   }
 `;
 
-const Button = ({ children, className, theme, height, width, arrow, arrow2, margin, marginMD, padding, right }) => (
-  <Wrapper href="#" className={className} height={height} width={width} arrow={arrow} arrow2={arrow2} theme={theme} margin={margin} marginMD={marginMD} padding={padding}>
+const Button = ({ children, className, to, theme, height, width, arrow, arrow2, margin, marginMD, padding, right }) => (
+  <Wrapper to="#" className={className} to={to} height={height} width={width} arrow={arrow} arrow2={arrow2} theme={theme} margin={margin} marginMD={marginMD} padding={padding}>
     {children}
     {arrow && (
       <Arrow className="arrow1" theme={theme} right={right}>

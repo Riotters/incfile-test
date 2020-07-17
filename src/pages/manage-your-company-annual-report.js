@@ -12,35 +12,10 @@ import { color, gradient } from "../components/styles/colors";
 import Container from "../components/container";
 import EnterprenourSVG from "../images/icons/enterprenour.inline.svg";
 import Help from "../components/partials/blocks/left-content-right-object"
-import Accordion from "../components/accordion";
 import Benefits from "../components/partials/sections/benefits";
-import ArrowLink from "../components/arrow-link";
 import Card from "../components/certificate-card";
 import TopImageBox from "../components/top-image-box";
 import { states } from "../components/states"
-
-const faq = {
-  items: [
-    {
-      question: "Why do I need a Certificate of Good Standing?",
-      answer:
-        "A Certificate of Good Standing is typically needed in the normal course of business by another organization (business partner, bank, lender, investor or regulatory authority) to prove that your business entity is legally registered with the state and is in good standing. The Certificate of Good Standing proves that you have paid any necessary fees and filed required paperwork to keep your business chartered, registered and in compliance with your state authorities.",
-    },
-    {
-      question: "How long is a Certificate of Good Standing valid?",
-      answer: "The validity of a certificate in terms of age is determined by the organization that has requested it. Under most circumstances a requesting organization will require that the document is not older than 30 days.",
-    },
-    {
-      question: "What will happen if my entity is not in good standing?",
-      answer:
-        "If the entity that the certificate is being requested for is not in good standing, we will contact you and provide details as to the status of the corporation or LLC and issue a full refund or provide assistance in bringing the entity back to good standing. This process is usually referred to as reinstatement.",
-    },
-    {
-      question: "How long does it take to obtain a Certificate of Good Standing?",
-      answer: "The filing time depends on the governing state agency and varies by state.",
-    },
-  ],
-};
 
 const BusinessOwnerResponsibilities = styled.section`
   position: relative;
@@ -173,7 +148,7 @@ const CertificateOfGoodStanding = () => (
       <h1>Prepare and File an Annual LLC or Corporate Report</h1>
       <p>Formal Corporate Annual Reports — Required by Your Secretary of State</p>
       <Buttonsbox>
-        <Button href="#" theme="primary56" width="200px" arrow>
+        <Button to="#" theme="primary56" width="200px" arrow>
           Get started
         </Button>
       </Buttonsbox>

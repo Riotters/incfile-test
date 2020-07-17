@@ -37,8 +37,8 @@ const Wrapper = styled.div`
 const ComponentsPage = () => (
   <Layout>
     <SEO
-      title="Components"
-      description="Incfile components presentation page."
+      title="All pages"
+      description="Incfile all pages list page."
     />
     <Container>
         <Wrapper>

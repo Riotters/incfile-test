@@ -108,7 +108,7 @@ const Certificates = () => {
                 </TextCheck>
               </div>
             </Checks>
-            <Button href="#" theme="primary56" margin="16px auto 0 0" arrow>
+            <Button to="#" theme="primary56" margin="16px auto 0 0" arrow>
               Show more
             </Button>
           </Content>

@@ -103,7 +103,7 @@ const ChangeOfRegisteredAgent = () => (
       <h1>Registered Agent Services: Change of Registered Agent</h1>
       <p>Incfile is a nationwide registered agent service provider you can trust.</p>
       <Buttonsbox>
-        <Button href="#" theme="primary56" width="200px" arrow>
+        <Button to="#" theme="primary56" width="200px" arrow>
           Order Now
         </Button>
       </Buttonsbox>
