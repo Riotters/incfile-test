@@ -12,14 +12,14 @@ import { color, gradient } from "../components/styles/colors";
 import { shadow } from "../components/styles/shadows";
 import Container from "../components/container";
 import IDCardSVG from "../images/icons/idcard.inline.svg";
-import Help from "../components/partials/blocks/left-content-right-object"
-import Accordion from "../components/accordion"
+import Help from "../components/partials/blocks/left-content-right-object";
+import Accordion from "../components/accordion";
 import Benefits from "../components/partials/sections/benefits";
 import Card from "../components/certificate-card";
 import TopImageBox from "../components/top-image-box";
 import ArrowCircleOrangeSVG from "../images/icons/arrow-circle-orange.inline.svg";
 import Image from "../components/image_nobase64";
-import CheckBlueSVG from "../images/circle-status-check-blue.inline.svg"
+import CheckBlueSVG from "../images/circle-status-check-blue.inline.svg";
 
 import ArrowLink from "../components/arrow-link";
 
@@ -140,7 +140,7 @@ const Boxes = styled.div`
     }
 
     h4 {
-        padding-bottom: 16px;
+      padding-bottom: 16px;
     }
 
     p {
@@ -179,51 +179,48 @@ const Boxes = styled.div`
   }
 `;
 
-const dropdownOneOptions = [
-  'LCC', 'Corporation', 'Nonprofit'
-];
+const dropdownOneOptions = ["LCC", "Corporation", "Nonprofit"];
 
 const FAQ = styled.div`
-    padding-top: 75px;
+  padding-top: 75px;
 
-    .wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const faqs = {
-    items: [
-        {
-        question: "How broad is my trademark protection?",
-        answer:
-            "In oculis quidem faciunt, ut labore et via procedat oratio quaerimus igitur, quid bonum esse ratione intellegi posse et molestiae non recusandae itaque negat opus esse appetendum, alterum aspernandum sentiamus alii autem, quibus ego assentior, cum a philosophis compluribus permulta dicantur, cur verear, ne ferae.",
-        },
-        {
-        question: "Can I cancel my order?",
-        answer: "The trademark will be filed within 3 business days upon receiving the desired trademark and performing a search. If it's determined after the search that the name has a low likelihood for approval, you can request a refund before the application is filed.",
-        },
-        {
-        question: "How long will it take for my trademark to be filed?",
-        answer:
-            "Trademark approval times can vary based on demand but generally fall in the window of 3-4 months. Despite the delayed approval time, you will be able to monitor the status of the trademark online as it's going through the approval process.",
-        },
-        {
-        question: "What level of support can I expect through this process?",
-        answer: "Once you have submitted your business name or logo, an attorney will conduct the initial search and discuss the results via email or phone. The attorney will then prepare the filing application and submit to the United States Patent and Trademark Office. You will be able to track the approval status and contact us with any questions you may have while awaiting for the approval.",
-        },
-    ],
+  items: [
+    {
+      question: "How broad is my trademark protection?",
+      answer:
+        "In oculis quidem faciunt, ut labore et via procedat oratio quaerimus igitur, quid bonum esse ratione intellegi posse et molestiae non recusandae itaque negat opus esse appetendum, alterum aspernandum sentiamus alii autem, quibus ego assentior, cum a philosophis compluribus permulta dicantur, cur verear, ne ferae.",
+    },
+    {
+      question: "Can I cancel my order?",
+      answer: "The trademark will be filed within 3 business days upon receiving the desired trademark and performing a search. If it's determined after the search that the name has a low likelihood for approval, you can request a refund before the application is filed.",
+    },
+    {
+      question: "How long will it take for my trademark to be filed?",
+      answer: "Trademark approval times can vary based on demand but generally fall in the window of 3-4 months. Despite the delayed approval time, you will be able to monitor the status of the trademark online as it's going through the approval process.",
+    },
+    {
+      question: "What level of support can I expect through this process?",
+      answer:
+        "Once you have submitted your business name or logo, an attorney will conduct the initial search and discuss the results via email or phone. The attorney will then prepare the filing application and submit to the United States Patent and Trademark Office. You will be able to track the approval status and contact us with any questions you may have while awaiting for the approval.",
+    },
+  ],
 };
 
 const CTA = styled.div`
-    padding-top: 75px;
+  padding-top: 75px;
 `;
-
 
 const CertificateCard = <Card headline="TAX ID / EIN" price="70" image="table" />;
 
-const ChangeOfRegisteredAgent = () => (
+const TaxIdEin = () => (
   <Layout>
     <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
     <Top imageName="mrs-bulb-tax-number" imageAlt="Mrs Bulb with numbers">
@@ -238,16 +235,14 @@ const ChangeOfRegisteredAgent = () => (
     <BusinessOwnerResponsibilities>
       <ImageContent image="envelope" paddingTop="60">
         <p>
-            The SS4 is the IRS form required to obtain an EIN (Employer Identification Number, frequently called a Tax ID number). The EIN/Tax ID number can be thought of as a Social Security Number for your business. 
-            It is usually required to open a bank account in the name of the business and to properly pay and account for any wage/payroll employees of your company. 
-            IncFile will obtain your federal EIN electronically and have it back to you via email within one business day.
+          The SS4 is the IRS form required to obtain an EIN (Employer Identification Number, frequently called a Tax ID number). The EIN/Tax ID number can be thought of as a Social Security Number for your business. It is usually required to open a bank account in the name of the business and to
+          properly pay and account for any wage/payroll employees of your company. IncFile will obtain your federal EIN electronically and have it back to you via email within one business day.
         </p>
         <Colorbox className="purplebox" theme="icon" Icon={IDCardSVG} color={color.orange3} curve curveColor={color.blue1}>
           <h4>What is an Employer Identification Number (EIN)?</h4>
           <p>
-            Also known as a “Tax ID number,” the EIN is a business federal tax ID that works like a Social Security Number for your business. Your EIN helps you file tax returns for your business, is typically required to 
-            open a business bank account under the name of your business, helps you properly pay and account for wages and payroll for your company’s employees, and otherwise helps establish credit for your business and maintain 
-            your business’s official standing as a legal business entity.
+            Also known as a “Tax ID number,” the EIN is a business federal tax ID that works like a Social Security Number for your business. Your EIN helps you file tax returns for your business, is typically required to open a business bank account under the name of your business, helps you
+            properly pay and account for wages and payroll for your company’s employees, and otherwise helps establish credit for your business and maintain your business’s official standing as a legal business entity.
           </p>
         </Colorbox>
       </ImageContent>
@@ -258,25 +253,22 @@ const ChangeOfRegisteredAgent = () => (
           <Help className="help" headlineWidth="450" object={CertificateCard}>
             <h2>Help Obtain a EIN / Tax ID Number</h2>
             <h4>Save your time. We'll handle the paperwork.</h4>
-            <p>
-                If you would like to use our services to facilitate the filing of your Tax ID / EIN please place the order and a representative from 
-                IncFile will contact you to obtain specific information required to complete and file the Tax ID / EIN in your state of formation.
-            </p>
+            <p>If you would like to use our services to facilitate the filing of your Tax ID / EIN please place the order and a representative from IncFile will contact you to obtain specific information required to complete and file the Tax ID / EIN in your state of formation.</p>
           </Help>
         </div>
       </Container>
-    </RequirementsByState>  
+    </RequirementsByState>
     <FAQ>
-        <Container>
-            <div className="wrapper">
-                <TextCenterLayout headline="Common questions about filing a Certificate of Good Standing" />
-                <Accordion faq={faqs}/>
-            </div>
-        </Container>
+      <Container>
+        <div className="wrapper">
+          <TextCenterLayout headline="Common questions about filing a Certificate of Good Standing" />
+          <Accordion faq={faqs} />
+        </div>
+      </Container>
     </FAQ>
     <Benefits />
     <Articles />
   </Layout>
 );
 
-export default ChangeOfRegisteredAgent;
+export default TaxIdEin;
