@@ -57,14 +57,18 @@ const CertificateCard = ({ className, headline, price, dropdownOnePlaceholder, d
   return (
     <Wrapper className={className}>
         <h3>{headline}</h3>
-        <Label className="label">
-        Entity Type
-        <Dropdown className="dropdown" placeholder={dropdownOnePlaceholder} options={dropdownOneOptions} />
-        </Label>
-        <Label className="label">
-            State
-        <Dropdown className="dropdown" placeholder={dropdownTwoPlaceholder} options={dropdownTwoOptions}/>
-        </Label>
+        {dropdownOnePlaceholder && (
+            <Label className="label">
+                Entity Type
+            <Dropdown className="dropdown" placeholder={dropdownOnePlaceholder} options={dropdownOneOptions} />
+            </Label>
+        )}
+        {dropdownTwoPlaceholder && (
+            <Label className="label">
+                State
+            <Dropdown className="dropdown" placeholder={dropdownTwoPlaceholder} options={dropdownTwoOptions}/>
+            </Label>
+        )}
         <span className="price">${price}</span>
         <span className="fee">+ $10 State Fee</span>
         <Button theme="primary56" arrow>Order now</Button>
