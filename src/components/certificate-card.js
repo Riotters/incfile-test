@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { color } from "./styles/colors"
 import { shadow } from "./styles/shadows"
+import Image from "./image"
 import Label from "./form/label"
 import Dropdown from "./form/dropdown"
 import Button from "./button"
@@ -22,6 +23,11 @@ const Wrapper = styled.div`
         text-align: center;
         max-width: 320px;
         margin-bottom: 32px;
+    }
+    .gatsby-image-wrapper {
+        height: 152px;
+        width: 152px;
+        margin: 0 auto 24px;
     }
 
     label {
@@ -53,10 +59,13 @@ const Wrapper = styled.div`
     }
 `
 
-const CertificateCard = ({ className, headline, price, dropdownOnePlaceholder, dropdownOneOptions, dropdownTwoPlaceholder, dropdownTwoOptions }) => {
+const CertificateCard = ({ className, headline, price, image, dropdownOnePlaceholder, dropdownOneOptions, dropdownTwoPlaceholder, dropdownTwoOptions }) => {
   return (
     <Wrapper className={className}>
         <h3>{headline}</h3>
+        {image && (
+        <Image filename="clock" />
+        )}
         {dropdownOnePlaceholder && (
             <Label className="label">
                 Entity Type

@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import Container from "../../container"
 import ArrowLink from "../../arrow-link"
 import VisibilitySensor from "../../VisibilitySensor"
 
@@ -8,7 +7,10 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+
+  h2, p, a {
+      text-align: left;
+  }
 
   h2 {
     max-width: ${props => props.headlineWidth ? props.headlineWidth : '610'}px;
@@ -17,7 +19,6 @@ const Wrapper = styled.div`
 
   p {
     max-width: ${props => props.textWidth ? props.textWidth : '750'}px;
-    text-align: center;
     margin-bottom: 24px;
   }
 

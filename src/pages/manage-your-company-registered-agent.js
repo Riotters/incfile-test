@@ -3,7 +3,8 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Button from "../components/button";
 import Colorbox from "../components/color-box";
-import TextCenterLayout from "../components/partials/blocks/text-center";
+import TextCenterLayout from "../components/partials/blocks/heading-center";
+import TextLeftLayout from "../components/partials/blocks/heading-left";
 import styled from "styled-components";
 import Top from "../components/partials/sections/top";
 import ImageContent from "../components/partials/blocks/left-image-right-content";
@@ -17,6 +18,7 @@ import Card from "../components/certificate-card";
 import TopImageBox from "../components/top-image-box";
 import { states } from "../components/states"
 import Accordion from "../components/accordion";
+import Adventages from "../components/adventages"
 
 const BusinessOwnerResponsibilities = styled.section`
   position: relative;
@@ -56,6 +58,7 @@ const BusinessOwnerResponsibilities = styled.section`
 
 const Service = styled.div`
   background-color: ${color.babyblue3};
+  padding: 64px 0;
 `;
 
 const RequirementsByState = styled.section`
@@ -89,13 +92,32 @@ const Buttonsbox = styled.div`
 `;
 
 const Imageboxes = styled.div`
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 30px;
   padding-top: 112px;
+  padding-bottom: 92px;
 
-  @media(min-width: 768px) {
-    grid-template-columns: 1fr 1fr;
+  & > h4 {
+    text-align: center;
+  }
+
+  & > p {
+    width: 100%;
+    max-width: 770px;
+    margin: 0 auto;
+    padding-bottom: 32px;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    width: 100%;
+    max-width: 970px;
+    padding: 40px 0;
+    margin: 0 auto;
+  
+    @media(min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 `;
 
@@ -108,6 +130,41 @@ const FAQ = styled.div`
     align-items: center;
   }
 `;
+
+const AdventagesBox = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  width: 100%;
+  max-width: 970px;
+  padding: 140px 0;
+  margin: 0 auto;
+`;
+
+const adventages = {
+  items: [
+    {
+      headline: "Handling all of Your Documents",
+      text: "An always-available Registered Agent who will receive state and IRS mail correspondence, documents and legal proceedings on your LLC’s or corporation’s behalf"
+    },
+    {
+      headline: "Online Dashboard",
+      text: "A digital dashboard where you can access, store and retrieve any information we’ve received for your business"
+    },
+    {
+      headline: "Tailored Notifications",
+      text: "Email and SMS notification whenever we receive documents for your business"
+    },
+    {
+      headline: "Automatic Mail Forwarding",
+      text: "Automatic mail forwarding of all legal correspondence, documentation and information directly to you."
+    },
+    {
+      headline: "First Year Free",
+      text: "The first year free ($119 a year after), when you incorporate with Incfile through any of our business packages."
+    },
+  ]
+}
 
 const faqs = {
   items: [
@@ -182,8 +239,12 @@ const RegisteredAgent = () => (
     </BusinessOwnerResponsibilities>
     <Service>
       <Container>
-        <TextCenterLayout headline="Incfile’s Resident Agent Service Includes" headlineWidth="700" />
-        <p>Boxes here</p>
+        <TextCenterLayout headline="Incfile’s Resident Agent Service Includes" headlineWidth="950" />
+        <AdventagesBox>
+          {adventages.items.map(item => (
+            <Adventages headline={item.headline} text={item.text} />
+           ))}
+        </AdventagesBox>    
         <TextCenterLayout 
         headline="Registered Agent Service" 
         text='A good Registered Agent service can help you respond quickly in the event of a lawsuit, avoid missed deadlines, 
@@ -197,34 +258,36 @@ const RegisteredAgent = () => (
     <RequirementsByState>
       <Container>
         <div className="wrapper">
-          <TextCenterLayout 
+          <TextLeftLayout 
           headline="Why Is Incfile Offering a Free Registered Agent?" 
           text="Incfile already offers free LLC and other business formation—why is a free Registered Agent, included, too? Generally brands seek to find ways to charge you more for products and services. 
           Incfile approaches things differently. Why? Because we care greatly about nurturing and supporting entrepreneurship. 
           We believe entrepreneurs are the driving force behind our economy's growth by creating clever solutions to solve the world's problems." 
-          headlineWidth="700" 
+          headlineWidth="770" 
           />
-          <h4>The Incfile package</h4>
           <Imageboxes>
-            <TopImageBox image="sign" color={color.orange3}>
-                <h4>Free business formation</h4>
-                <p>
-                  We offer forming your LLC or a corporation free of charge. We take care of the paperwork while you can focus on running your business!
-                </p>
-            </TopImageBox>
-            <TopImageBox image="cost" color={color.purple3}>
-                <h4>Free registered agent</h4>
-                <p>
-                  Incfile’s registered agent service cover all areas like filing forms to the IRS or receiving government communication.
-                </p>
-            </TopImageBox>
-          </Imageboxes>
+            <h4>The Incfile package</h4>
+            <div className="wrapper">
+              <TopImageBox image="free-business" color={color.orange3}>
+                  <h4>Free business formation</h4>
+                  <p>
+                    We offer forming your LLC or a corporation free of charge. We take care of the paperwork while you can focus on running your business!
+                  </p>
+              </TopImageBox>
+              <TopImageBox image="free-agent" color={color.purple3}>
+                  <h4>Free registered agent</h4>
+                  <p>
+                    Incfile’s registered agent service cover all areas like filing forms to the IRS or receiving government communication.
+                  </p>
+              </TopImageBox>
+            </div>
             <p>
               Our radical offerings like $0 business formation and a free Registered Agent with incorporation are a direct result of client loyalty. 
               Because we have loyal clients like you, we’re able to continue to grow our business and improve efficiencies with our technology. 
               That means we can offer the best value around. Why would we do that? Because entrepreneurship is our M.O.
             </p>
             <p>We’re entrepreneurs for entrepreneurs.</p>
+          </Imageboxes>
         </div>
       </Container>
     </RequirementsByState>

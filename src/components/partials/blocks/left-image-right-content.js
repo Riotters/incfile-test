@@ -9,18 +9,15 @@ const Wrapper = styled.div`
 
 const Flex = styled.div`
   display: flex;
+  justify-content: space-between;
 `;
 
 const Content = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 770px;
+  max-width: 670px;
   padding-top: ${props => (props.paddingTop ? props.paddingTop : "0")}px;
-
-  @media(min-width: 768px) {
-    padding-left: 100px;
-  }
 
   h2, h3 {
     text-align: left;
@@ -46,7 +43,7 @@ const Sticky = styled.div`
 const Imagebox = styled.div`
   display: none;
   width: 100%;
-  max-width: 400px;
+  max-width: 485px;
   position: relative;
 
   @media(min-width: 768px) {

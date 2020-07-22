@@ -3,7 +3,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Button from "../components/button";
 import Colorbox from "../components/color-box";
-import TextCenterLayout from "../components/partials/blocks/text-center";
+import TextCenterLayout from "../components/partials/blocks/heading-center";
 import styled from "styled-components";
 import Top from "../components/partials/sections/top";
 import ImageContent from "../components/partials/blocks/left-image-right-content";
@@ -225,7 +225,7 @@ const CTA = styled.div`
   padding-top: 75px;
 `;
 
-const CertificateCard = <Card headline="TAX ID / EIN" price="70" image="table" />;
+const CertificateCard = <Card headline="TAX ID / EIN" price="70" image="clock" />;
 
 const TaxIdEin = () => (
   <Layout>

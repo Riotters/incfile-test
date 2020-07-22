@@ -53,7 +53,7 @@ const ComponentsPage = () => (
             <Link to="/manage-your-company-tax-id-ein">EIN tax identification number</Link>
             <Link to="/manage-your-company-dissolution">Filing Articles of  Dissolution</Link>
             <Link to="/manage-your-company-foreign-qualification">Foreign Qualification</Link>
-            <Link to="/manage-your-company-registered-agent">Registered Agent (WIP)</Link>
+            <Link to="/manage-your-company-registered-agent">Registered Agent</Link>
             <h2>Additional sites</h2>
             <Link to="/components">Components</Link>
             <Link to="/404">404</Link>

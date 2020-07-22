@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Container from "../../container";
-import TextCenterLayout from "../blocks/text-center";
+import TextCenterLayout from "../blocks/heading-center";
 //import Accordion from "../../accordion"
 import VisibilitySensor from "../../VisibilitySensor";
 
