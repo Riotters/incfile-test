@@ -60,17 +60,34 @@ const PanelWrapper = styled.div`
     padding: 24px 40px 40px 80px;
   }
 
-  p {
+  h3 {
+    margin-bottom: 48px;
+  }
+
+  p, li {
     color: #4e4e4e;
-    font-family: Avenir;
-    font-size: 16px;
-    line-height: 19px;
+    font-family: Avenir, sans-serif;
     max-width: 650px;
     text-align: left;
   }
 
-  h3 {
-    margin-bottom: 48px;
+  p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  li {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  ul {
+    //list-style: none;
+    padding-left: 16px;
+
+    li {
+      padding-top: 16px;
+    }
   }
 `;
 
@@ -176,6 +193,13 @@ const Accordion = ({ faq }) => {
                   <Panel>
                     <PanelWrapper>
                       <p>{item.answer}</p>
+                      {item.list && (
+                        <ul>
+                          {item.list.map((listitem) => (
+                            <li>{listitem}</li>
+                          ))}
+                        </ul>
+                      )}
                     </PanelWrapper>
                   </Panel>
                 </TabBox>

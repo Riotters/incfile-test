@@ -123,8 +123,8 @@ const Boxes = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 120px;
-      width: 120px;
+      height: 140px;
+      width: 140px;
       margin: 0 auto 60px;
 
       .gatsby-image-wrapper {
@@ -280,7 +280,7 @@ const TrademarkNameSearch = () => (
             </div>
             <div className="box">
               <div className="icon">
-                <Image filename="select-a-package" />
+                <Image filename="trademark" />
               </div>
               <h4>We will file your trademark wih the Patent and Trademark office</h4>
               <p>The attorney will file the trademark with the US Patent and Trademark office and deliver the approved trademark documentation.</p>
@@ -292,7 +292,7 @@ const TrademarkNameSearch = () => (
             </div>
             <div className="box">
               <div className="icon">
-                <Image filename="what-you-need" />
+                <Image filename="work" />
               </div>
               <h4>We get to work</h4>
               <p>The trademark attorney will conduct a trademark search to ensure the availability, then provide the search results along with a plan of action.</p>

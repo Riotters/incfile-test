@@ -64,7 +64,7 @@ const TextContainer = styled.div`
 
   h1 {
     width: 100%;
-    max-width: 480px;
+    max-width: ${props => (props.headlineWidth ? props.headlineWidth : "480")}px;
     text-aling: center;
     padding-bottom: 40px;
 
@@ -105,7 +105,7 @@ const ImageContainer = styled.div`
   }
 `;
 
-const Top = ({ children, imageName, imageAlt }) => (
+const Top = ({ children, imageName, imageAlt, headlineWidth }) => (
   <Wrapper>
     <VisibilitySensor partialVisibility once>
       {({ isVisible }) => (
@@ -121,7 +121,7 @@ const Top = ({ children, imageName, imageAlt }) => (
       <Content>
         <VisibilitySensor partialVisibility once>
           {({ isVisible }) => (
-            <TextContainer className={isVisible ? "slideRight enter" : "slideRight"}>
+            <TextContainer className={isVisible ? "slideRight enter" : "slideRight"} headlineWidth={headlineWidth}>
               {children}
             </TextContainer>
           )}

@@ -57,12 +57,12 @@ const Benefits = () => {
             text="Required by govermental and private agencies to validate a companies status in 
                     order to facilitate specified transactions."
           />
-          <Benefit Icon={Icon3} headline="Foreign Qualification" text="Filed when you need to expand your entity to new states." />
+          <Benefit Icon={Icon7} headline="Foreign Qualification" text="Filed when you need to expand your entity to new states." />
           <Benefit Icon={Icon4} headline="Amendment" text="Filed if a company requires changes to membership, addresses or company name." />
           <Benefit Icon={Icon5} headline="Dissolution" text="Used to formally terminate the existence of an entity." />
           <Benefit Icon={Icon6} headline="Order Registered Agent" text="Order registered agent service and receive your new registered agent information immediately." />
           <Benefit
-            Icon={Icon7}
+            Icon={Icon3}
             headline="Corporate LLC Kit"
             text="The Corporate/LLC Kit is a professional binder enclosed in a matching slip case, customized 
                     with the name of your company on the spine insert. Click the icon to view the full contents."

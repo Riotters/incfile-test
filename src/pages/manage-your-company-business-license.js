@@ -15,7 +15,6 @@ import BusinessLicenseSVG from "../images/icons/business-license.inline.svg";
 import CurveSVG from "../images/orange-curve.inline.svg";
 import CircleIcon from "../components/icons/circle";
 import Container from "../components/container";
-import IconCircle from "../components/icons/circle";
 import ArrowSVG from "../images/arrow-circle.inline.svg";
 import { states } from "../components/states";
 import LicenseSVG from "../images/icons/license.inline.svg";
@@ -253,8 +252,8 @@ const Boxes = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 120px;
-      width: 120px;
+      height: 140px;
+      width: 140px;
       margin: 0 auto 60px;
 
       .gatsby-image-wrapper {
@@ -412,9 +411,9 @@ const BusinessLicence = () => (
           {states.state.map((state) => (
             <ArrowButton to={state.url}>
               {state.name}
-              <IconCircle transform="rotate(90deg)" circleColor={color.orange3} iconColor={color.orange1}>
+              <CircleIcon transform="rotate(90deg)" circleColor={color.orange3} iconColor={color.orange1}>
                 <ArrowSVG />
-              </IconCircle>
+              </CircleIcon>
             </ArrowButton>
           ))}
         </States>

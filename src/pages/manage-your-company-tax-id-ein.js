@@ -54,7 +54,7 @@ const BusinessOwnerResponsibilities = styled.section`
     }
   }
 
-  .purplebox {
+  .colorbox {
     margin-bottom: 48px;
   }
 `;
@@ -194,22 +194,29 @@ const FAQ = styled.div`
 const faqs = {
   items: [
     {
-      question: "How broad is my trademark protection?",
+      question: "Will I need an EIN in order to obtain a business account with a bank?",
+      answer: "Yes, under most circumstances business entities other than DBA's must present an EIN along with the filed Articles of Organization or Incorporation in order for an account to be opened."    
+    },
+    {
+      question: "What circumstances require me to change my EIN?",
+      answer: "If you already have an EIN, and the organization or ownership of your business changes, you may need to apply for a new number. Some of the circumstances under which a new number is required are as follows:",
+    },
+    {
+      question: "When will I receive my Federal Employer Identification Number?",
+      answer: "If it is a stand alone order for an existing entity we can obtain and email the EIN within 1 business day.",
+      list: [
+          "An existing business is purchased or inherited by an individual who will operate it as a sole proprietorship.",
+          "A sole proprietorship changes to an LLC, corporation, or partnership.",
+          "A partnership changes to an LLC, corporation, or sole proprietorship.",
+          "A corporation changes to an LLC, partnership, or sole proprietorship.",
+          "An LLC changes to a corporation, partnership, or sole proprietorship.",
+          "An individual owner dies, and the estate takes over the business.",
+        ],
+    },
+    {
+      question: "What is the SS4/EIN/Tax ID Number?",
       answer:
-        "In oculis quidem faciunt, ut labore et via procedat oratio quaerimus igitur, quid bonum esse ratione intellegi posse et molestiae non recusandae itaque negat opus esse appetendum, alterum aspernandum sentiamus alii autem, quibus ego assentior, cum a philosophis compluribus permulta dicantur, cur verear, ne ferae.",
-    },
-    {
-      question: "Can I cancel my order?",
-      answer: "The trademark will be filed within 3 business days upon receiving the desired trademark and performing a search. If it's determined after the search that the name has a low likelihood for approval, you can request a refund before the application is filed.",
-    },
-    {
-      question: "How long will it take for my trademark to be filed?",
-      answer: "Trademark approval times can vary based on demand but generally fall in the window of 3-4 months. Despite the delayed approval time, you will be able to monitor the status of the trademark online as it's going through the approval process.",
-    },
-    {
-      question: "What level of support can I expect through this process?",
-      answer:
-        "Once you have submitted your business name or logo, an attorney will conduct the initial search and discuss the results via email or phone. The attorney will then prepare the filing application and submit to the United States Patent and Trademark Office. You will be able to track the approval status and contact us with any questions you may have while awaiting for the approval.",
+        "The SS4 is the IRS form required to obtain an EIN (Employer Identification Number, frequently called a Tax ID number). The EIN/Tax ID number can be thought of as a Social Security Number for your business. It is usually required to open a bank account in the name of the business and to properly pay and account for any wage/payroll employees of your company.",
     },
   ],
 };
@@ -238,13 +245,47 @@ const TaxIdEin = () => (
           The SS4 is the IRS form required to obtain an EIN (Employer Identification Number, frequently called a Tax ID number). The EIN/Tax ID number can be thought of as a Social Security Number for your business. It is usually required to open a bank account in the name of the business and to
           properly pay and account for any wage/payroll employees of your company. IncFile will obtain your federal EIN electronically and have it back to you via email within one business day.
         </p>
-        <Colorbox className="purplebox" theme="icon" Icon={IDCardSVG} color={color.orange3} curve curveColor={color.blue1}>
+        <Colorbox className="colorbox" theme="icon" Icon={IDCardSVG} color={color.orange3} curve curveColor={color.blue1}>
           <h4>What is an Employer Identification Number (EIN)?</h4>
           <p>
             Also known as a “Tax ID number,” the EIN is a business federal tax ID that works like a Social Security Number for your business. Your EIN helps you file tax returns for your business, is typically required to open a business bank account under the name of your business, helps you
             properly pay and account for wages and payroll for your company’s employees, and otherwise helps establish credit for your business and maintain your business’s official standing as a legal business entity.
           </p>
         </Colorbox>
+        <h3>Do You Need a Federal EIN for Your Business Entity?</h3>
+        <p>
+            In general, unless your business is a sole proprietorship with no employees and no separate legal entity for your business, you need to get an EIN. 
+            Sometimes if you own an LLC and it is a single-member LLC with simple accounting, you can get by just using your personal Social Security Number for tax purposes and for receiving payments from clients. 
+            But even the simplest businesses can generally benefit from using an EIN – the EIN serves as a tax ID for your LLC or other corporate entity.
+        </p>
+        <Colorbox className="colorbox" color={color.green3} dotsColor={color.green1}>
+          <h4>The following business entities should get an EIN:</h4>
+          <ul>
+              <li>Partnerships: an EIN is required for all general partnerships and limited partnerships.</li>
+              <li>Multiple-member LLCs: This type of business entity needs an EIN regardless of whether you have employees.</li>
+              <li>Single-member LLCs: If you plan to hire employees within the next 12 months, you will need to get an EIN. And even if your single-member 
+                  LLC has no employees, and even if you can get by with using your own individual Social Security Number for tax purposes, it’s still a good idea to get an 
+                  EIN because many banks and lenders will prefer to use an EIN to do business with you.</li>
+              <li>LLC taxed as a Corporation: If your LLC chooses to be taxed as a Corporation (for example, by electing to be treated as an S-Corporation for tax purposes), you will need to get an EIN.</li>
+              <li>Sole proprietorship with employees: Even if you do not have an LLC or any other legal entity for your business and you run a simple sole proprietorship, 
+                  you still need to get an EIN if you have employees or plan to hire employees in the next 12 months.</li>
+          </ul>
+        </Colorbox>
+        <h3>Where & When You'll Use an EIN</h3>
+        <p>
+            Your EIN is necessary for several situations in running your business. 
+            You will need to use your EIN for certain tax forms, such as filing your tax returns for your business, 
+            and filling out W9 forms for clients (if you run a service business), and other forms related to managing payroll for your employees. 
+            Your EIN is also necessary to set up a business bank account and apply for business loans. 
+            The same types of reasons for needing a Social Security Number in your personal life are also the reasons to use an EIN in managing your business.
+        </p>
+        <h3>How Do You Get an EIN? Apply for an EIN Online</h3>
+        <p>
+            Business owners can get an EIN by filing IRS Form SS-4. IncFile offers a convenient service to help you apply for an EIN online to obtain your EIN number quickly and efficiently. 
+            If you're looking for a way to get an EIN, whether in Texas, Florida, Michigan or anywhere in the United States, IncFile can provide one for you in one day. Apply for an EIN online with IncFile, 
+            and we'll obtain your federal tax ID electronically and have your new EIN back to you via email within one business day.
+        </p>
+        <ArrowLink>Apply for an EIN online to obtain your EIN number quickly</ArrowLink>
       </ImageContent>
     </BusinessOwnerResponsibilities>
     <RequirementsByState>
