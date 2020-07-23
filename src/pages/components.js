@@ -21,6 +21,7 @@ import NavigationTabs from "../components/tabs/navigation-tabs"
 import AboutTabs from "../components/tabs/tabs"
 import Accordion from "../components/tabs/accordion"
 import Searchbox from "../components/searchbar"
+import InputField from "../atomic/molecules/form/input-field"
 import Label from "../components/form/label"
 import Input from "../components/form/input"
 import Radio from "../components/form/radio"
@@ -395,11 +396,7 @@ const ComponentsPage = () => (
             <h4>Input</h4>
             <GridWrapper columns="2">
                 <GreyWrapper>
-                    <Label>
-                        Label
-                        <a href="#">Link</a>
-                        <Input placeholder="Text"/>
-                    </Label>
+                    <InputField label="label" linkText="link" linkUrl="#" placeholder="text"/>
                 </GreyWrapper>
             </GridWrapper>
             <h4>Radio</h4>
