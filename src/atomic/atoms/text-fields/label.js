@@ -10,9 +10,7 @@ const Wrapper = styled.label`
 `
 
 const Label = ({ className, text }) => (
-  <Wrapper className={className}>
-      {text}
-  </Wrapper>
+  <Wrapper className={className}>{text}</Wrapper>
 )
 
 export default Label

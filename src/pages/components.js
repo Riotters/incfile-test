@@ -79,6 +79,12 @@ const Wrapper = styled.div`
     & > h6 {
         margin: 15px 0 0;
     }
+
+    .FormInput {
+        width: 100%;
+        max-width: 320px;
+        margin-right: auto;
+    }
 `;
 
 const GridWrapper = styled.div`
@@ -396,7 +402,7 @@ const ComponentsPage = () => (
             <h4>Input</h4>
             <GridWrapper columns="2">
                 <GreyWrapper>
-                    <InputField label="label" linkText="link" linkUrl="#" placeholder="text"/>
+                    <InputField className="FormInput" label="label" linkText="link" linkUrl="#" placeholder="text"/>
                 </GreyWrapper>
             </GridWrapper>
             <h4>Radio</h4>

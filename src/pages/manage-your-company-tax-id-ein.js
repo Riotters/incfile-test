@@ -1,9 +1,7 @@
 import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-//import Button from "../components/button";
 import Button from "../atomic/molecules/buttons/button";
-import Colorbox from "../components/color-box";
 import TextCenterLayout from "../components/partials/blocks/heading-center";
 import styled from "styled-components";
 import Top from "../components/partials/sections/top";
@@ -17,11 +15,8 @@ import Help from "../components/partials/blocks/left-content-right-object";
 import Accordion from "../components/accordion";
 import Benefits from "../components/partials/sections/benefits";
 import Card from "../components/certificate-card";
-import TopImageBox from "../components/top-image-box";
-import ArrowCircleOrangeSVG from "../images/icons/arrow-circle-orange.inline.svg";
-import Image from "../components/image_nobase64";
-import CheckBlueSVG from "../images/circle-status-check-blue.inline.svg";
-
+import H3Text from "../atomic/molecules/text-blocks/header-3-text";
+import H4Color from "../atomic/molecules/text-blocks/header-4-text-color";
 import ArrowLink from "../components/arrow-link";
 
 const BusinessOwnerResponsibilities = styled.section`
@@ -192,6 +187,51 @@ const FAQ = styled.div`
   }
 `;
 
+const h3Texts = {
+  items: [
+    {
+      text: "The SS4 is the IRS form required to obtain an EIN (Employer Identification Number, frequently called a Tax ID number). The EIN/Tax ID number can be thought of as a Social Security Number for your business. It is usually required to open a bank account in the name of the business and to properly pay and account for any wage/payroll employees of your company. IncFile will obtain your federal EIN electronically and have it back to you via email within one business day."
+    },
+    {
+      header: "Do You Need a Federal EIN for Your Business Entity?",
+      text: "In general, unless your business is a sole proprietorship with no employees and no separate legal entity for your business, you need to get an EIN. Sometimes if you own an LLC and it is a single-member LLC with simple accounting, you can get by just using your personal Social Security Number for tax purposes and for receiving payments from clients. But even the simplest businesses can generally benefit from using an EIN – the EIN serves as a tax ID for your LLC or other corporate entity."
+    },
+    {
+      header: "Where & When You'll Use an EIN",
+      text: `Your EIN is necessary for several situations in running your business. 
+      You will need to use your EIN for certain tax forms, such as filing your tax returns for your business, 
+      and filling out W9 forms for clients (if you run a service business), and other forms related to managing payroll for your employees. 
+      Your EIN is also necessary to set up a business bank account and apply for business loans. 
+      The same types of reasons for needing a Social Security Number in your personal life are also the reasons to use an EIN in managing your business.`
+    },
+    {
+      header: "How Do You Get an EIN? Apply for an EIN Online",
+      text: `Business owners can get an EIN by filing IRS Form SS-4. IncFile offers a convenient service to help you apply for an EIN online to obtain your EIN number quickly and efficiently. 
+      If you're looking for a way to get an EIN, whether in Texas, Florida, Michigan or anywhere in the United States, IncFile can provide one for you in one day. Apply for an EIN online with IncFile, 
+      and we'll obtain your federal tax ID electronically and have your new EIN back to you via email within one business day.`
+    },
+  ]
+}
+
+const h4ColorTexts = {
+  items: [
+    {
+      header: "What is an Employer Identification Number (EIN)?",
+      text: "Also known as a “Tax ID number,” the EIN is a business federal tax ID that works like a Social Security Number for your business. Your EIN helps you file tax returns for your business, is typically required to open a business bank account under the name of your business, helps you properly pay and account for wages and payroll for your company’s employees, and otherwise helps establish credit for your business and maintain your business’s official standing as a legal business entity."
+    },
+    {
+      header: "What is an Employer Identification Number (EIN)?",
+      list: [
+        "Partnerships: an EIN is required for all general partnerships and limited partnerships.",
+        "Multiple-member LLCs: This type of business entity needs an EIN regardless of whether you have employees.",
+        "Single-member LLCs: If you plan to hire employees within the next 12 months, you will need to get an EIN. And even if your single-member LLC has no employees, and even if you can get by with using your own individual Social Security Number for tax purposes, it’s still a good idea to get an EIN because many banks and lenders will prefer to use an EIN to do business with you.",
+        "LLC taxed as a Corporation: If your LLC chooses to be taxed as a Corporation (for example, by electing to be treated as an S-Corporation for tax purposes), you will need to get an EIN.",
+        "Sole proprietorship with employees: Even if you do not have an LLC or any other legal entity for your business and you run a simple sole proprietorship, you still need to get an EIN if you have employees or plan to hire employees in the next 12 months.",
+      ],
+    }
+  ]
+}
+
 const faqs = {
   items: [
     {
@@ -222,10 +262,6 @@ const faqs = {
   ],
 };
 
-const CTA = styled.div`
-  padding-top: 75px;
-`;
-
 const CertificateCard = <Card headline="TAX ID / EIN" price="70" image="clock" />;
 
 const TaxIdEin = () => (
@@ -242,50 +278,12 @@ const TaxIdEin = () => (
     </Top>
     <BusinessOwnerResponsibilities>
       <ImageContent image="envelope" paddingTop="60">
-        <p>
-          The SS4 is the IRS form required to obtain an EIN (Employer Identification Number, frequently called a Tax ID number). The EIN/Tax ID number can be thought of as a Social Security Number for your business. It is usually required to open a bank account in the name of the business and to
-          properly pay and account for any wage/payroll employees of your company. IncFile will obtain your federal EIN electronically and have it back to you via email within one business day.
-        </p>
-        <Colorbox className="colorbox" theme="icon" Icon={IDCardSVG} color={color.orange3} curve curveColor={color.blue1}>
-          <h4>What is an Employer Identification Number (EIN)?</h4>
-          <p>
-            Also known as a “Tax ID number,” the EIN is a business federal tax ID that works like a Social Security Number for your business. Your EIN helps you file tax returns for your business, is typically required to open a business bank account under the name of your business, helps you
-            properly pay and account for wages and payroll for your company’s employees, and otherwise helps establish credit for your business and maintain your business’s official standing as a legal business entity.
-          </p>
-        </Colorbox>
-        <h3>Do You Need a Federal EIN for Your Business Entity?</h3>
-        <p>
-            In general, unless your business is a sole proprietorship with no employees and no separate legal entity for your business, you need to get an EIN. 
-            Sometimes if you own an LLC and it is a single-member LLC with simple accounting, you can get by just using your personal Social Security Number for tax purposes and for receiving payments from clients. 
-            But even the simplest businesses can generally benefit from using an EIN – the EIN serves as a tax ID for your LLC or other corporate entity.
-        </p>
-        <Colorbox className="colorbox" color={color.green3} dotsColor={color.green1}>
-          <h4>The following business entities should get an EIN:</h4>
-          <ul>
-              <li>Partnerships: an EIN is required for all general partnerships and limited partnerships.</li>
-              <li>Multiple-member LLCs: This type of business entity needs an EIN regardless of whether you have employees.</li>
-              <li>Single-member LLCs: If you plan to hire employees within the next 12 months, you will need to get an EIN. And even if your single-member 
-                  LLC has no employees, and even if you can get by with using your own individual Social Security Number for tax purposes, it’s still a good idea to get an 
-                  EIN because many banks and lenders will prefer to use an EIN to do business with you.</li>
-              <li>LLC taxed as a Corporation: If your LLC chooses to be taxed as a Corporation (for example, by electing to be treated as an S-Corporation for tax purposes), you will need to get an EIN.</li>
-              <li>Sole proprietorship with employees: Even if you do not have an LLC or any other legal entity for your business and you run a simple sole proprietorship, 
-                  you still need to get an EIN if you have employees or plan to hire employees in the next 12 months.</li>
-          </ul>
-        </Colorbox>
-        <h3>Where & When You'll Use an EIN</h3>
-        <p>
-            Your EIN is necessary for several situations in running your business. 
-            You will need to use your EIN for certain tax forms, such as filing your tax returns for your business, 
-            and filling out W9 forms for clients (if you run a service business), and other forms related to managing payroll for your employees. 
-            Your EIN is also necessary to set up a business bank account and apply for business loans. 
-            The same types of reasons for needing a Social Security Number in your personal life are also the reasons to use an EIN in managing your business.
-        </p>
-        <h3>How Do You Get an EIN? Apply for an EIN Online</h3>
-        <p>
-            Business owners can get an EIN by filing IRS Form SS-4. IncFile offers a convenient service to help you apply for an EIN online to obtain your EIN number quickly and efficiently. 
-            If you're looking for a way to get an EIN, whether in Texas, Florida, Michigan or anywhere in the United States, IncFile can provide one for you in one day. Apply for an EIN online with IncFile, 
-            and we'll obtain your federal tax ID electronically and have your new EIN back to you via email within one business day.
-        </p>
+        <H3Text content={h3Texts.items[0]} />
+        <H4Color className="colorbox" icon={IDCardSVG} color={color.orange3} curve curveColor={color.blue1} content={h4ColorTexts.items[0]} />
+        <H3Text content={h3Texts.items[1]} />
+        <H4Color className="colorbox" color={color.green3} dotsColor={color.green1} content={h4ColorTexts.items[1]} />
+        <H3Text content={h3Texts.items[2]} />        
+        <H3Text content={h3Texts.items[3]} />
         <ArrowLink>Apply for an EIN online to obtain your EIN number quickly</ArrowLink>
       </ImageContent>
     </BusinessOwnerResponsibilities>
