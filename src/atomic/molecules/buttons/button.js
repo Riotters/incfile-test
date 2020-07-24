@@ -96,9 +96,9 @@ const Arrow = styled.div`
   }
 `;
 
-const Button = ({ children, className, to, theme, height, width, arrow, arrow2, margin, marginMD, padding, right }) => (
-  <Wrapper className={className} to={to} height={height} width={width} arrow={arrow} arrow2={arrow2} theme={theme} margin={margin} marginMD={marginMD} padding={padding}>
-    {children}
+const Button = ({ content, className, theme, height, width, arrow, arrow2, margin, marginMD, padding, right }) => (
+  <Wrapper className={className} to={content.url} height={height} width={width} arrow={arrow} arrow2={arrow2} theme={theme} margin={margin} marginMD={marginMD} padding={padding}>
+    {content.text}
     {arrow && (
       <Arrow className="arrow1" theme={theme} right={right}>
         <ArrowSVG />

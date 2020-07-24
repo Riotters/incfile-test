@@ -22,27 +22,6 @@ const Content = styled.div`
     max-width: 700px;
     padding-right: 100px;
   }
-
-  h2 {
-    max-width: ${props => (props.headlineWidth ? props.headlineWidth : "")}px;
-  }
-
-  p {
-    max-width: ${props => (props.textWidth ? props.textWidth : "")}px;
-  }
-
-  h2 {
-    text-align: left;
-    padding-bottom: 56px;
-  }
-
-  h4 {
-    padding-bottom: 24px;
-  }
-
-  p {
-    padding-bottom: 24px;
-  }
 `;
 
 const Objectbox = styled.div`
@@ -54,13 +33,13 @@ const Objectbox = styled.div`
   }
 `;
 
-const LeftContentRightObject = ({ className, object, content, headlineWidth, textWidth }) => {
+const LeftContentRightObject = ({ className, object, children, headlineWidth, textWidth }) => {
     
   return (
       <Container>
         <Wrapper className={className}>
           <Content headlineWidth={headlineWidth} textWidth={textWidth}>
-            { content }
+            { children }
           </Content>
           <Objectbox>
             { object }

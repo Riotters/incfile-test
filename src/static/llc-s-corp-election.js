@@ -1,3 +1,16 @@
+export const top = {
+  header: 
+    `Prepare and File an S Corporation Tax Election with Form 2553`,
+  text: 
+    `Reduce the Tax You Pay by Having Your LLC Treated as an S Corp for Tax Purposes`,
+  button: [
+    {
+      text: 'File your S Corp Tax Election',
+      url: 'https://www.incfile.com/s-corp-election-form?action=new&type=24',
+    }
+  ]
+}
+
 export const reducingTax = {
   header: 
     `Reducing Your Income Tax`,
@@ -5,7 +18,13 @@ export const reducingTax = {
     `The SS4 is the IRS form required to obtain an EIN (Employer Identification Number, frequently called a Tax ID number). 
     The EIN/Tax ID number can be thought of as a Social Security Number for your business. It is usually required to open a bank account in 
     the name of the business and to properly pay and account for any wage/payroll employees of your company. IncFile will 
-    obtain your federal EIN electronically and have it back to you via email within one business day.`
+    obtain your federal EIN electronically and have it back to you via email within one business day.`,
+  button: [
+    {
+      text: 'Let Incfile help you file your s corporation tax election',
+      url: 'https://www.incfile.com/s-corp-election-form',
+    }
+  ]
 }
 
 export const llcsTax = {

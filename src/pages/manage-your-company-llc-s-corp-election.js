@@ -16,8 +16,9 @@ import Accordion from "../components/accordion";
 import Benefits from "../components/partials/sections/benefits";
 import Card from "../components/certificate-card";
 import ArrowLink from "../components/arrow-link";
-import H3Text from "../atomic/molecules/text-blocks/header-3-text";
-import { reducingTax, llcsTax, howSaveMoney, taxCalculator, fairSalary, administrativeOverhead, fileForm, incfileFile, help, faq } from "../static/llc-s-corp-election"
+import H2Text from "../atomic/molecules/text-blocks/h2-text";
+import H3Text from "../atomic/molecules/text-blocks/h3-text";
+import { top, reducingTax, llcsTax, howSaveMoney, taxCalculator, fairSalary, administrativeOverhead, fileForm, incfileFile, help, faq } from "../static/llc-s-corp-election"
 
 const ReducingTax = styled.section`
   position: relative;
@@ -154,44 +155,23 @@ const CorpElection = () => (
   <Layout>
     <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
     <Top imageName="mrs-bulb-business-taxes" imageAlt="Mrs Bulb checking forms on notebook">
-      <h1>Prepare and File an S Corporation Tax Election with Form 2553</h1>
-      <p>Reduce the Tax You Pay by Having Your LLC Treated as an S Corp for Tax Purposes</p>
+      <h1>{top.header}</h1>
+      <p>{top.text}</p>
       <Buttonsbox>
-        <Button to="#" theme="primary56" arrow>
-          File your S Corp tax election
-        </Button>
+        <Button content={top.button[0]} theme="primary56" arrow />
       </Buttonsbox>
     </Top>
     <ReducingTax>
       <ImageContent image="calculator" paddingTop="60">
         <H3Text content={reducingTax} />
-        <Button to="#" theme="secondary56" arrow margin="0 auto 0 0">Let Incfile help you file your s corporation tax election</Button>
+        <Button content={reducingTax.button[0]} theme="secondary56" arrow margin="0 auto 0 0" />
       </ImageContent>
     </ReducingTax>
-    <ReducingTax>
+    <LLCsTax>
       <ContentObject headlineWidth="450" object={CertificateCard}>
-        <H3Text content={reducingTax} />
-        <Button to="#" theme="secondary56" arrow margin="0 auto 0 0">Let Incfile help you file your s corporation tax election</Button>
+        <H2Text content={llcsTax} />
       </ContentObject>
-    </ReducingTax>
-    <RequirementsByState>
-      <Container>
-        <div className="wrapper">
-          <ContentObject className="help" headlineWidth="450" object={CertificateCard}>
-            <h2>How LLCs Are Normally Taxedr</h2>
-            <p>When it comes to the amount of tax you owe the federal and state government, your income from an LLC is normally taxed similarly to that of sole proprietorship businesses. For a small, one-person LLC, this typically works as follows...</p>
-          </ContentObject>
-        </div>
-      </Container>
-    </RequirementsByState>
-    <FAQ>
-      <Container>
-        <div className="wrapper">
-          <TextCenterLayout headline="Common questions about filing a Certificate of Good Standing" />
-          <Accordion faq={faq} />
-        </div>
-      </Container>
-    </FAQ>
+    </LLCsTax>
     <Benefits />
     <Articles />
   </Layout>

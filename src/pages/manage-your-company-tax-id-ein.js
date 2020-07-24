@@ -15,8 +15,8 @@ import Help from "../components/partials/blocks/left-content-right-object";
 import Accordion from "../components/accordion";
 import Benefits from "../components/partials/sections/benefits";
 import Card from "../components/certificate-card";
-import H3Text from "../atomic/molecules/text-blocks/header-3-text";
-import H4Color from "../atomic/molecules/text-blocks/header-4-text-color";
+import H3Text from "../atomic/molecules/text-blocks/h3-text";
+import H4Color from "../atomic/molecules/text-blocks/h4-text-c";
 import ArrowLink from "../components/arrow-link";
 
 const BusinessOwnerResponsibilities = styled.section`
@@ -187,6 +187,19 @@ const FAQ = styled.div`
   }
 `;
 
+const top = {
+  header: 
+    `Federal Employer Identification Number (EIN) / Tax ID Number`,
+  text: 
+    `Understanding What, Where, When & Hows of Your Business EIN`,
+  button: [
+    {
+      text: 'Order now',
+      url: 'https://www.incfile.com/ein-form.php',
+    }
+  ]
+}
+
 const h3Texts = {
   items: [
     {
@@ -268,12 +281,10 @@ const TaxIdEin = () => (
   <Layout>
     <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
     <Top imageName="mrs-bulb-tax-number" imageAlt="Mrs Bulb with numbers">
-      <h1>Federal Employer Identification Number (EIN) / Tax ID Number</h1>
-      <p>Understanding What, Where, When & Hows of Your Business EIN</p>
+      <h1>{top.header}</h1>
+      <p>{top.text}</p>
       <Buttonsbox>
-        <Button to="#" theme="primary56" width="200px" arrow>
-          Order now
-        </Button>
+        <Button content={top.button[0]} theme="primary56" width="200px" arrow />
       </Buttonsbox>
     </Top>
     <BusinessOwnerResponsibilities>
