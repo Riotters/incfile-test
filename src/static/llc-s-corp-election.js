@@ -1,7 +1,3 @@
-import React from "react";
-import { Link } from "gatsby";
-import parse from 'html-react-parser';
-
 export const reducingTax = {
   header: 
     `Reducing Your Income Tax`,
