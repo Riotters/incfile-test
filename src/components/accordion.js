@@ -1,7 +1,9 @@
 import React from "react";
+import { Link } from "gatsby"
 import styled from "styled-components";
 import { Tabs, useTabState, usePanelState } from "@bumaga/tabs";
 import { motion } from "framer-motion";
+import { color } from "./styles/colors"
 import ArrowSVG from "../images/arrow-circle.inline.svg";
 import CurveSVG from "../images/orange-curve.inline.svg";
 import VisibilitySensor from "./VisibilitySensor";
@@ -65,7 +67,7 @@ const PanelWrapper = styled.div`
   }
 
   p, li {
-    color: #4e4e4e;
+    color: ${color.grey1};
     font-family: Avenir, sans-serif;
     max-width: 650px;
     text-align: left;
@@ -74,6 +76,13 @@ const PanelWrapper = styled.div`
   p {
     font-size: 16px;
     line-height: 24px;
+
+    a {
+      color: ${color.orange1};
+      font-size: inherit;
+      line-height: inherit;
+      text-decoration: none;
+    }
   }
 
   li {
@@ -192,7 +201,17 @@ const Accordion = ({ faq }) => {
                   </Tab>
                   <Panel>
                     <PanelWrapper>
-                      <p>{item.answer}</p>
+                      {console.log(typeof item.answer)}
+                      {typeof item.answer === 'string' ?
+                        <p>{item.answer}</p> : null
+                      }
+                      {typeof item.answer === 'object' ?
+                        <p>{item.answer.map((el, id) => (
+                        id % 2 ? <Link to={el.url}>{` ${el.text} `}</Link> : el.text
+                        ))}</p> 
+                        : null
+                      }
+                      {/* <p>{item.answer}</p> */}
                       {item.list && (
                         <ul>
                           {item.list.map((listitem) => (

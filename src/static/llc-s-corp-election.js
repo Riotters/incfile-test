@@ -1,75 +1,211 @@
-export const h3Texts = {
-  items: [
-    {
-      header: "Reducing Your Income Tax",
-      text: "The SS4 is the IRS form required to obtain an EIN (Employer Identification Number, frequently called a Tax ID number). The EIN/Tax ID number can be thought of as a Social Security Number for your business. It is usually required to open a bank account in the name of the business and to properly pay and account for any wage/payroll employees of your company. IncFile will obtain your federal EIN electronically and have it back to you via email within one business day."
-    },
-    {
-      header: "Do You Need a Federal EIN for Your Business Entity?",
-      text: "In general, unless your business is a sole proprietorship with no employees and no separate legal entity for your business, you need to get an EIN. Sometimes if you own an LLC and it is a single-member LLC with simple accounting, you can get by just using your personal Social Security Number for tax purposes and for receiving payments from clients. But even the simplest businesses can generally benefit from using an EIN – the EIN serves as a tax ID for your LLC or other corporate entity."
-    },
-    {
-      header: "Where & When You'll Use an EIN",
-      text: `Your EIN is necessary for several situations in running your business. 
-      You will need to use your EIN for certain tax forms, such as filing your tax returns for your business, 
-      and filling out W9 forms for clients (if you run a service business), and other forms related to managing payroll for your employees. 
-      Your EIN is also necessary to set up a business bank account and apply for business loans. 
-      The same types of reasons for needing a Social Security Number in your personal life are also the reasons to use an EIN in managing your business.`
-    },
-    {
-      header: "How Do You Get an EIN? Apply for an EIN Online",
-      text: `Business owners can get an EIN by filing IRS Form SS-4. IncFile offers a convenient service to help you apply for an EIN online to obtain your EIN number quickly and efficiently. 
-      If you're looking for a way to get an EIN, whether in Texas, Florida, Michigan or anywhere in the United States, IncFile can provide one for you in one day. Apply for an EIN online with IncFile, 
-      and we'll obtain your federal tax ID electronically and have your new EIN back to you via email within one business day.`
-    },
-  ]
+import React from "react";
+import { Link } from "gatsby";
+import parse from 'html-react-parser';
+
+export const reducingTax = {
+  header: 
+    `Reducing Your Income Tax`,
+  text: 
+    `The SS4 is the IRS form required to obtain an EIN (Employer Identification Number, frequently called a Tax ID number). 
+    The EIN/Tax ID number can be thought of as a Social Security Number for your business. It is usually required to open a bank account in 
+    the name of the business and to properly pay and account for any wage/payroll employees of your company. IncFile will 
+    obtain your federal EIN electronically and have it back to you via email within one business day.`
 }
 
-export const h4ColorTexts = {
-  items: [
-    {
-      header: "What is an Employer Identification Number (EIN)?",
-      text: "Also known as a “Tax ID number,” the EIN is a business federal tax ID that works like a Social Security Number for your business. Your EIN helps you file tax returns for your business, is typically required to open a business bank account under the name of your business, helps you properly pay and account for wages and payroll for your company’s employees, and otherwise helps establish credit for your business and maintain your business’s official standing as a legal business entity."
-    },
-    {
-      header: "What is an Employer Identification Number (EIN)?",
-      list: [
-        "Partnerships: an EIN is required for all general partnerships and limited partnerships.",
-        "Multiple-member LLCs: This type of business entity needs an EIN regardless of whether you have employees.",
-        "Single-member LLCs: If you plan to hire employees within the next 12 months, you will need to get an EIN. And even if your single-member LLC has no employees, and even if you can get by with using your own individual Social Security Number for tax purposes, it’s still a good idea to get an EIN because many banks and lenders will prefer to use an EIN to do business with you.",
-        "LLC taxed as a Corporation: If your LLC chooses to be taxed as a Corporation (for example, by electing to be treated as an S-Corporation for tax purposes), you will need to get an EIN.",
-        "Sole proprietorship with employees: Even if you do not have an LLC or any other legal entity for your business and you run a simple sole proprietorship, you still need to get an EIN if you have employees or plan to hire employees in the next 12 months.",
-      ],
-    }
-  ]
+export const llcsTax = {
+  header: 
+    `How LLCs Are Normally Taxed`,
+  text: 
+    `When it comes to the amount of tax you owe the federal and state government, 
+    your income from an LLC is normally taxed similarly to that of sole proprietorship businesses. 
+    For a small, one-person LLC, this typically works as follows...`,
+  list: 
+    [
+      "Your business earns revenue",
+      "You deduct any allowable business expenses",
+      "The amount remaining is your business profit, which you pay to yourself",
+      "You pay self-employment tax of around 15 percent on any profits",
+      "You pay federal tax at various income bands on any profits",
+      "You pay state tax on any profits",
+    ],
+  red:
+  `An S Corporation Tax Election reduces the amount of tax you pay in step 4, self-employment tax. It has no impact on any other taxes.`
 }
 
-export const faqs = {
+export const howSaveMoney = {
+  header: 
+    `An Example of How an LLC Filing as an
+    S Corporation Can Save Money`,
+  text: 
+    `Let's illustrate this with an example.`,
+  header2:
+    `Self-Employment Tax as an LLC`,
+  text2:
+    `Under a standard LLC tax arrangement where the income “flows through” to your 1040 tax return and business schedule C, you would pay self-employment tax on all of that $90,000. At approximately 15 percent, the tax on that money would be $13,500. You would still pay standard federal and state taxes on any earnings.`,
+  header3:
+    `Payroll Tax as an S Corporation`,
+  text3:
+    `If you choose to be taxed as an S Corporation, you could say that your salary is $50,000 and take the other $40,000 out of your business as a distribution. You would pay standard payroll tax on that $50,000 for a total of around $7,500. You would not pay any payroll or self-employment tax on the $40,000 distribution, saving you around $6,000. You would still pay standard federal and state taxes on both your salary and your distribution.`,
+  circle:
+    `120,000`,
+  text4:
+    `Your business revenue a year`,
+  profits:
+    `90,000`,
+  expenses:
+    `30,000`,
+}
+
+export const taxCalculator = {
+  header: 
+    `Check the Savings Yourself with our S Corporation Tax Calculator`,
+  text: 
+    `The S Corporation tax calculator lets you choose how much to withdraw from your business each year, 
+    and how much of it you will take as salary (with the rest being taken as a distribution). 
+    It will then show you how much money you can save in taxes.`,
+  header2:
+    `Use our S Corporation Tax Calculator to view your potential tax savings`,
+  link:
+    `Go to our S Corporation Tax Calculator`,
+  header3:
+    `What’s your estimated yearly net income for the business?`,
+  income:
+    `72,000`,
+  text3:
+    `Estimated yearly income`,
+  savings:
+    `Total Savings`,
+}
+
+export const fairSalary = {
+  header:
+    `Assigning a fair salary`,
+  text:
+    `One important part of the S Corporation Tax Election is that you must pay yourself a fair salary, which the IRS defines as “reasonable compensation.” 
+    If you do not, the IRS could audit you and levy taxes and penalties. For example, you cannot pay yourself a salary of $10,000 and take $80,000 in distributions. 
+    When it comes to setting a fair salary, look at what full-time roles similar to yours are paying someone with similar expertise and experience, and use that as a baseline. 
+    Speak with your accountant or attorney for more information.`,
+}
+
+export const administrativeOverhead = {
+  header:
+    `Administrative Overhead Of the S Corporation Election`,
+  text:
+    `Because it can reduce your tax burden by such a substantial amount, the S Corporation Tax Election is a good idea for most LLC owners. 
+    But it’s important to understand the additional overhead this might create for you, your business and your accountant.`,
+  cards: [
+    {
+      header: 
+        `Setting up monthly payroll`,
+      text: 
+        `You will need to set up a monthly payroll where you pay yourself and submit your payroll taxes`,
+    },
+    {
+      header: 
+        `Additional accounting fees`,
+      text: 
+        `Your accountant will need to file your taxes in a slightly different way, which may increase your accounting fees`,
+    },
+  ],
+  text2:
+    `This will likely be more than counterbalanced by the money you save in tax payments.`,
+}
+
+export const fileForm = {
+  header:
+    `File Form 2553, S Corporation Tax Election Yourself`,
+  text:
+    `If you want to complete the filing process yourself, here are the steps you need to follow:`,
+  list: 
+    [
+      `Go to the Internal Revenue Service website`,
+      `Find the section on S Corporation Tax Elections`,
+      `Download form 2553`,
+      `Gather the required information for form 2553 and fill it in`,
+      `Send the form back to the IRS, typically by mail or fax`,
+      `Wait for notification of acceptance of your tax election`,
+    ]
+}
+
+export const incfileFile = {
+  header:
+    `Have Incfile File on Your Behalf`,
+  text:
+    `Alternatively, Incfile can take care of your S Corporation Tax Election for you. Just order the service below and we’ll collect all the information we need. We deal with all the forms and filing on your behalf. It’s fast, simple and hassle-free.`,
+  header2:
+    `Use anytime`,
+  text2:
+    `You can take advantage of our service when you first`,
+  link:
+    `incorporate your business`,
+  text3:
+    `or at`,
+  link2:
+    `certain times`,
+  text4:
+    `after that.`,
+  button:
+    `Help me file my S Corporation tax election today!`,
+}
+
+export const help = {
+  header:
+    `Help File My LLC S Corporation Tax Election`,
+  header2:
+    `Save your time, we’ll handle the paperwork`,
+  text:
+    `We provide a complete S Corporation Tax Election service to register and file your LLC tax status with the IRS on your behalf. Just place an order and we’ll collect the right information to guide you through the process, and the IRS will notify you of your updated tax status.`,
+  button:
+    `Help me file my S Corporation tax election today!`,
+}
+
+export const faq = {
   items: [
     {
-      question: "Will I need an EIN in order to obtain a business account with a bank?",
-      answer: "Yes, under most circumstances business entities other than DBA's must present an EIN along with the filed Articles of Organization or Incorporation in order for an account to be opened."    
+      question: 
+        `Does filing form 2553 remove any LLC protections?`,
+      answer: 
+        `No. You still get the same limited liability protections as with a regular limited liability company.`    
     },
     {
-      question: "What circumstances require me to change my EIN?",
-      answer: "If you already have an EIN, and the organization or ownership of your business changes, you may need to apply for a new number. Some of the circumstances under which a new number is required are as follows:",
+      question: 
+        `How much could I save by being treated as an S Corporation for tax purposes?`,
+      answer: 
+        [
+          {
+            text: `You could save yourself thousands of dollars a year. We’ve got a`,
+          },
+          {
+            text: `handy calculator`,
+            url: `https://www.incfile.com/s-corporation-tax-calculator/`,
+          },
+          {
+            text: `that shows you exactly how much you could reduce your self-employment tax burden.`,
+          },
+        ]
     },
     {
-      question: "When will I receive my Federal Employer Identification Number?",
-      answer: "If it is a stand alone order for an existing entity we can obtain and email the EIN within 1 business day.",
-      list: [
-          "An existing business is purchased or inherited by an individual who will operate it as a sole proprietorship.",
-          "A sole proprietorship changes to an LLC, corporation, or partnership.",
-          "A partnership changes to an LLC, corporation, or sole proprietorship.",
-          "A corporation changes to an LLC, partnership, or sole proprietorship.",
-          "An LLC changes to a corporation, partnership, or sole proprietorship.",
-          "An individual owner dies, and the estate takes over the business.",
-        ],
+      question: 
+        `Do I have to file my S Corporation Tax Election at a certain time?`,
+      answer: 
+      [
+        {
+          text: `Yes. There are certain limitations on when you can file form 2553.`,
+        },
+        {
+          text: `This article`,
+          url: 'https://www.incfile.com/research-topics/c-corporation-info/what-is-the-form-2553/'
+        },
+        {
+          text: `gives you all the details you need.`,
+        },
+      ]
     },
     {
-      question: "What is the SS4/EIN/Tax ID Number?",
+      question: 
+        `Can I file an S Corporation Tax Election if there are more owners in the business?`,
       answer:
-        "The SS4 is the IRS form required to obtain an EIN (Employer Identification Number, frequently called a Tax ID number). The EIN/Tax ID number can be thought of as a Social Security Number for your business. It is usually required to open a bank account in the name of the business and to properly pay and account for any wage/payroll employees of your company.",
+        `Yes. S Corporation Tax Elections are available to most LLCs. For more information, speak to your accountant or attorney.`,
     },
   ],
 };

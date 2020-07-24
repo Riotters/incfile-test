@@ -6,21 +6,56 @@ import TextCenterLayout from "../components/partials/blocks/heading-center";
 import styled from "styled-components";
 import Top from "../components/partials/sections/top";
 import ImageContent from "../components/partials/blocks/left-image-right-content";
+import ContentObject from "../atomic/partials/left-content-right-object";
 import Articles from "../components/partials/sections/articles";
 import { color, gradient } from "../components/styles/colors";
 import { shadow } from "../components/styles/shadows";
 import Container from "../components/container";
 import IDCardSVG from "../images/icons/idcard.inline.svg";
-import Help from "../components/partials/blocks/left-content-right-object";
 import Accordion from "../components/accordion";
 import Benefits from "../components/partials/sections/benefits";
 import Card from "../components/certificate-card";
-import H3Text from "../atomic/molecules/text-blocks/header-3-text";
-import H4Color from "../atomic/molecules/text-blocks/header-4-text-color";
 import ArrowLink from "../components/arrow-link";
-import { h3Texts, h4ColorTexts, faqs } from "../static/llc-s-corp-election"
+import H3Text from "../atomic/molecules/text-blocks/header-3-text";
+import { reducingTax, llcsTax, howSaveMoney, taxCalculator, fairSalary, administrativeOverhead, fileForm, incfileFile, help, faq } from "../static/llc-s-corp-election"
 
-const BusinessOwnerResponsibilities = styled.section`
+const ReducingTax = styled.section`
+  position: relative;
+  padding-top: 75px;
+  padding-bottom: 64px;
+
+  h3,
+  p {
+    max-width: 100%;
+    padding-bottom: 24px;
+  }
+
+  h3 {
+    &.pt32 {
+      padding-top: 32px;
+    }
+
+    &.pt48 {
+      padding-top: 48px;
+    }
+  }
+
+  p {
+    &.pb32 {
+      padding-bottom: 32px;
+    }
+
+    &.pb40 {
+      padding-bottom: 40px;
+    }
+  }
+
+  .colorbox {
+    margin-bottom: 48px;
+  }
+`;
+
+const LLCsTax = styled.section`
   position: relative;
   padding-top: 75px;
   padding-bottom: 64px;
@@ -103,80 +138,7 @@ const Buttonsbox = styled.div`
   }
 `;
 
-const Boxes = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  padding-top: 72px;
-
-  @media (min-width: 768px) {
-    flex-direction: row;
-  }
-
-  .box {
-    width: 100%;
-    box-shadow: ${shadow.white1};
-    padding: 40px 48px;
-
-    .icon {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 120px;
-      width: 120px;
-      margin: 0 auto 60px;
-
-      .gatsby-image-wrapper {
-        height: 100%;
-        width: 100%;
-
-        img {
-          object-fit: contain !important;
-        }
-      }
-    }
-
-    h4 {
-      padding-bottom: 16px;
-    }
-
-    p {
-      font-size: 16px;
-      line-height: 24px;
-      color: ${color.grey1};
-    }
-  }
-
-  .circle {
-    align-self: center;
-    height: 30px;
-    width: 100%;
-    max-width: 30px;
-    position: relative;
-
-    & > span {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 96px;
-      width: 96px;
-      background-color: ${color.white};
-      box-shadow: inset ${shadow.white1};
-      box-shadow: inset 0 0 32px 0 rgba(236, 236, 236, 0.4);
-      border-radius: 50%;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) rotate(90deg);
-
-      @media (min-width: 768px) {
-        transform: translate(-50%, -50%) rotate(0);
-      }
-    }
-  }
-`;
-
-const FAQ = styled.div`
+const FAQ = styled.section`
   padding-top: 75px;
 
   .wrapper {
@@ -200,25 +162,25 @@ const CorpElection = () => (
         </Button>
       </Buttonsbox>
     </Top>
-    <BusinessOwnerResponsibilities>
-      <ImageContent image="envelope" paddingTop="60">
-        <H3Text content={h3Texts.items[0]} />
-        <H4Color className="colorbox" icon={IDCardSVG} color={color.orange3} curve curveColor={color.blue1} content={h4ColorTexts.items[0]} />
-        <H3Text content={h3Texts.items[1]} />
-        <H4Color className="colorbox" color={color.green3} dotsColor={color.green1} content={h4ColorTexts.items[1]} />
-        <H3Text content={h3Texts.items[2]} />        
-        <H3Text content={h3Texts.items[3]} />
-        <ArrowLink>Apply for an EIN online to obtain your EIN number quickly</ArrowLink>
+    <ReducingTax>
+      <ImageContent image="calculator" paddingTop="60">
+        <H3Text content={reducingTax} />
+        <Button to="#" theme="secondary56" arrow margin="0 auto 0 0">Let Incfile help you file your s corporation tax election</Button>
       </ImageContent>
-    </BusinessOwnerResponsibilities>
+    </ReducingTax>
+    <ReducingTax>
+      <ContentObject headlineWidth="450" object={CertificateCard}>
+        <H3Text content={reducingTax} />
+        <Button to="#" theme="secondary56" arrow margin="0 auto 0 0">Let Incfile help you file your s corporation tax election</Button>
+      </ContentObject>
+    </ReducingTax>
     <RequirementsByState>
       <Container>
         <div className="wrapper">
-          <Help className="help" headlineWidth="450" object={CertificateCard}>
-            <h2>Help Obtain a EIN / Tax ID Number</h2>
-            <h4>Save your time. We'll handle the paperwork.</h4>
-            <p>If you would like to use our services to facilitate the filing of your Tax ID / EIN please place the order and a representative from IncFile will contact you to obtain specific information required to complete and file the Tax ID / EIN in your state of formation.</p>
-          </Help>
+          <ContentObject className="help" headlineWidth="450" object={CertificateCard}>
+            <h2>How LLCs Are Normally Taxedr</h2>
+            <p>When it comes to the amount of tax you owe the federal and state government, your income from an LLC is normally taxed similarly to that of sole proprietorship businesses. For a small, one-person LLC, this typically works as follows...</p>
+          </ContentObject>
         </div>
       </Container>
     </RequirementsByState>
@@ -226,7 +188,7 @@ const CorpElection = () => (
       <Container>
         <div className="wrapper">
           <TextCenterLayout headline="Common questions about filing a Certificate of Good Standing" />
-          <Accordion faq={faqs} />
+          <Accordion faq={faq} />
         </div>
       </Container>
     </FAQ>

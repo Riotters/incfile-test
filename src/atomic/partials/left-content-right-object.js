@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Container from "../container"
 
 const Wrapper = styled.div`
   display: flex;
@@ -53,17 +54,19 @@ const Objectbox = styled.div`
   }
 `;
 
-const LeftContentRightObject = ({ children, className, object, headlineWidth, textWidth }) => {
+const LeftContentRightObject = ({ className, object, content, headlineWidth, textWidth }) => {
     
   return (
+      <Container>
         <Wrapper className={className}>
           <Content headlineWidth={headlineWidth} textWidth={textWidth}>
-            { children }
+            { content }
           </Content>
           <Objectbox>
             { object }
           </Objectbox>
         </Wrapper>
+      </Container>
   );
 };
 
