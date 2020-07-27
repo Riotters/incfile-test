@@ -31,6 +31,7 @@ import CheckText from "../components/static-check/text-only"
 import CheckBox from "../components/static-check/text-boxed"
 import Checklist from "../components/checklist/checklist"
 import TopImageBox from "../components/top-image-box"
+import BlogArticleCard from "../atomic/organisms/cards/blog-article-card"
 
 const Section = styled.div`
     width: 100%;
@@ -485,6 +486,10 @@ const ComponentsPage = () => (
                         The filing time is dependent on the governing state agency. Filing times vary by state it is therefore important that the report is filed well in advance of the due date in order to avoid any potential late filing fees.
                     </p>
                 </TopImageBox>
+            </GreyWrapper>
+            <h3>Article on Blog Page</h3>
+            <GreyWrapper>
+                <BlogArticleCard content="clock" />
             </GreyWrapper>
         </Wrapper>
     </Container>

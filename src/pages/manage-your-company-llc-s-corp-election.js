@@ -19,6 +19,8 @@ import ArrowLink from "../components/arrow-link";
 import H2Text from "../atomic/molecules/text-blocks/h2-text";
 import H3Text from "../atomic/molecules/text-blocks/h3-text";
 import { top, reducingTax, llcsTax, howSaveMoney, taxCalculator, fairSalary, administrativeOverhead, fileForm, incfileFile, help, faq } from "../static/llc-s-corp-election"
+import NumericBoxedList from "../atomic/organisms/lists/numeric-boxed-list";
+import CircleCheckmarkText from "../atomic/molecules/static-check/circle-checkmark-text";
 
 const ReducingTax = styled.section`
   position: relative;
@@ -60,36 +62,6 @@ const LLCsTax = styled.section`
   position: relative;
   padding-top: 75px;
   padding-bottom: 64px;
-
-  h3,
-  p {
-    max-width: 100%;
-    padding-bottom: 24px;
-  }
-
-  h3 {
-    &.pt32 {
-      padding-top: 32px;
-    }
-
-    &.pt48 {
-      padding-top: 48px;
-    }
-  }
-
-  p {
-    &.pb32 {
-      padding-bottom: 32px;
-    }
-
-    &.pb40 {
-      padding-bottom: 40px;
-    }
-  }
-
-  .colorbox {
-    margin-bottom: 48px;
-  }
 `;
 
 const RequirementsByState = styled.section`
@@ -139,17 +111,8 @@ const Buttonsbox = styled.div`
   }
 `;
 
-const FAQ = styled.section`
-  padding-top: 75px;
-
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-`;
-
-const CertificateCard = <Card headline="TAX ID / EIN" price="70" image="clock" />;
+const List = <NumericBoxedList content={llcsTax}/>;
+const NoImpact = <CircleCheckmarkText isRed content={llcsTax.red}/>;
 
 const CorpElection = () => (
   <Layout>
@@ -168,7 +131,7 @@ const CorpElection = () => (
       </ImageContent>
     </ReducingTax>
     <LLCsTax>
-      <ContentObject headlineWidth="450" object={CertificateCard}>
+      <ContentObject contentWidth="400" headlineWidth="450" object={[List, NoImpact]}>
         <H2Text content={llcsTax} />
       </ContentObject>
     </LLCsTax>

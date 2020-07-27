@@ -119,11 +119,13 @@ p {
 }
 
 a {
-  color: #5088fd;
+  color: ${color.blue1};
   font-family: Avenir;
   font-size: 20px;
   line-height: 24px;
+  text-decoration: none;
 }
+
 @media (min-width: 768px) {
   .slideUp {
     transition: opacity 1s ease-in-out, transform 1s ease-in-out;

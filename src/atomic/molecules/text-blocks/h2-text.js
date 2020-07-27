@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
     h2 {
+        text-align: left;
         padding-bottom: 96px;
     }
 

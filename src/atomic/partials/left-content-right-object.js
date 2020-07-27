@@ -18,27 +18,28 @@ const Content = styled.div`
   justify-content: center;
 
   @media (min-width: 768px) {
-    width: 60%;
-    max-width: 700px;
+    width: 100%;
+    max-width: ${props => (props.contentWidth ? parseInt(props.contentWidth) + 100 : "700")}px;
     padding-right: 100px;
   }
 `;
 
 const Objectbox = styled.div`
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 
   @media (min-width: 768px) {
-    width: 40%;
+    grow: 1;
   }
 `;
 
-const LeftContentRightObject = ({ className, object, children, headlineWidth, textWidth }) => {
+const LeftContentRightObject = ({ className, object, children, contentWidth, headlineWidth, textWidth }) => {
     
   return (
       <Container>
         <Wrapper className={className}>
-          <Content headlineWidth={headlineWidth} textWidth={textWidth}>
+          <Content contentWidth={contentWidth} headlineWidth={headlineWidth} textWidth={textWidth}>
             { children }
           </Content>
           <Objectbox>
