@@ -16,12 +16,17 @@ import TextBlockWithImage from "../../atomic/molecules/mixed-blocks/text-block-w
 import OkIcon from "../../images/icons/ok.inline.svg";
 import {color} from "../../components/styles/colors";
 import AirbnbBusinessPlan from "../../fragments/type-of-business/airbnb-1/airbnb-business-plan";
+import AirBnB1BusinessStructure from "../../fragments/type-of-business/airbnb-1/business-structure";
+import TopImageBox from "../../components/top-image-box";
+import TextCenterLayout from "../../components/partials/blocks/heading-center";
+import LeftImageRightContent from "../../components/partials/blocks/left-content-right-image";
+import BlueContainer from "../../fragments/type-of-business/airbnb-1/blue-container";
 
 const AirBnb1 = () => (
     <Layout>
         <SEO title="What is a Nonprofit Organization? How to Start a Nonprofit"
              description="Learn all about nonprofit corporations, including the benefits & disadvantages, getting 501c3 status, and what's needed to get your company off the ground."/>
-        <Top imageName="nonprofit" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
+        <Top imageName="airbnb" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
             <h1>How to Start an Airbnb</h1>
             <p>Airbnb has only been with us since 2008, but over the last few years,
                 it’s turned over half a million people into entrepreneurs.</p>
@@ -39,181 +44,134 @@ const AirBnb1 = () => (
 
         <AirBnb1Tabs/>
 
-        <BlueContainer>
-            <Container>
-
-                <TextBorderedSection>
-                    <Heading size={3}>Creating a Unique Airbnb Business</Heading>
-                    <Paragraph>
-                        When it comes to starting an Airbnb business, you want to make sure that your property
-                        and listings are unique, so you can attract customers. You can do this by highlighting certain
-                        aspects in your listings:
-                    </Paragraph>
-
-                    <TextBorderedList>
-
-                        <TextBoxed>
-                            <Paragraph>
-                                Get a professional to photograph your property, so it’s portrayed in the best way
-                            </Paragraph>
-                        </TextBoxed>
-
-                        <TextBoxed>
-                            <Paragraph>
-                                Invest in making your property look good, with a fresh coat of paint, new furniture and
-                                a deep clean
-                            </Paragraph>
-                        </TextBoxed>
-
-                        <TextBoxed>
-                            <Paragraph>
-                                Highlight anything unique about the property, like original features or unusual
-                                facilities
-                            </Paragraph>
-                        </TextBoxed>
-
-                        <TextBoxed>
-                            <Paragraph>
-                                Show how close you are to public transport, local points of interest and restaurants
-                            </Paragraph>
-                        </TextBoxed>
-
-                        <TextBoxed>
-                            <Paragraph>
-                                Maintain a listing that gets good reviews from guests and builds trust
-                            </Paragraph>
-                        </TextBoxed>
-
-                    </TextBorderedList>
-                </TextBorderedSection>
-
-                <GridSection>
-                    <TitleBox>
-                        <Heading size={3}>Validating Your Airbnb Business</Heading>
-                        <Paragraph>
-                            Getting started in an Airbnb business is easy, but becoming a success is harder.
-                            Before committing too much time, energy and money into your new Airbnb business, it’s
-                            important to test the marketplace.
-                        </Paragraph>
-                    </TitleBox>
-
-                    <GridSectionList>
-                        <TextBlockWithImage SvgImage={OkIcon} imageBackgroundColor={color.babyblue2} imageShadowColor={color.babyblue2}>
-                            <Heading size={4}>
-                                Identify your Airbnb business’s unique selling points (USPs)
-                            </Heading>
-                            <Paragraph>
-                                We’ve covered some key points on how to differentiate your listings above, but it’s
-                                important to reiterate: If you want your Airbnb business to be a success, you do need to
-                                stand out.
-                            </Paragraph>
-                        </TextBlockWithImage>
-
-                        <TextBlockWithImage SvgImage={OkIcon} imageBackgroundColor={color.green2} imageShadowColor={color.green2}>
-                            <Heading size={4}>
-                                Look at who your competitors are in the space
-                            </Heading>
-                            <Paragraph>
-                                Having competitors is a good thing as it shows there’s a market, but you want to avoid
-                                too much competition. Look at how many other hosts are providing accommodation close to
-                                your location, and see how they position their listings and prices.
-                            </Paragraph>
-                        </TextBlockWithImage>
-
-                        <TextBlockWithImage SvgImage={OkIcon} imageBackgroundColor={color.orange2} imageShadowColor={color.orange2}>
-                            <Heading size={4}>
-                                Understand your market
-                            </Heading>
-                            <Paragraph>
-                                You might want to target your listings to a particular type of guest, so if you know there’s a market, make sure your accommodation reflects what might be of value to them. For example, younger people might want vibrant nightlife and a very modern place to stay, while older people could want more peace and quiet, with natural outside space.
-                            </Paragraph>
-                        </TextBlockWithImage>
-
-                        <TextBlockWithImage SvgImage={OkIcon} imageBackgroundColor={color.purple2} imageShadowColor={color.purple2}>
-                            <Heading size={4}>
-                                Get involved with business communities and discussion groups
-                            </Heading>
-                            <Paragraph>
-                                One of the great things about Airbnb business is that there are plenty of great communities and discussion groups. Get involved in them and learn the ins and outs of your chosen market before committing.
-                            </Paragraph>
-                        </TextBlockWithImage>
-
-                    </GridSectionList>
-                </GridSection>
-
-            </Container>
-        </BlueContainer>
+        <BlueContainer />
 
         <Container>
             <AirbnbBusinessPlan />
         </Container>
 
+        <OrangeContainer>
+            <Container>
+                <AirBnB1BusinessStructure/>
+            </Container>
+        </OrangeContainer>
+
+        <GreenContainer>
+            <Container>
+                <TextCenterLayout
+                    headline="Setting Up Your Airbnb Business Operations"
+                    headlineWidth="700"
+                    text="Once you've legally created your bar or club business you’ll need to get some other things in place."
+                />
+                <Imageboxes>
+                    <TopImageBox image="state-filling-fees" color={color.yellow3}>
+                        <h4>Finance</h4>
+                        <p>
+                            You will need a separate business bank account for your Airbnb business. You might also want
+                            to consider a business credit card. Additionally, you will also need to keep careful
+                            bookkeeping records and file business and personal taxes. Here at Incfile we can even help
+                            you file your taxes
+                        </p>
+                    </TopImageBox>
+
+                    <TopImageBox image="location" color={color.red3}>
+                        <h4>Location of your Airbnb Business</h4>
+                        <p>
+                            You can almost certainly administer your Airbnb business from home. This is great as it
+                            reduces your office costs considerably. Don't forget that if you work from home, you can
+                            write off part of your utility and housing costs against your taxes.
+                        </p>
+                    </TopImageBox>
+
+                    <TopImageBox image="side" color={color.purple3}>
+                        <h4>Equipment for Your Airbnb Business</h4>
+                        <p>
+                            It’s likely that the only equipment you will need to run your Airbnb business is a computer,
+                            laptop, tablet or smartphone. Of course, you’ll also need to have supplies on hand for your
+                            properties.
+                        </p>
+                    </TopImageBox>
+
+                    <TopImageBox image="we-doubled-the-size-of-customer-service" color={color.orange3}>
+                        <h4>Employees</h4>
+                        <p>
+                            You probably don’t need to hire any employees to help run your Airbnb business, but you’ll
+                            likely want to contract with cleaners, maintenance crews or a handyman.
+                        </p>
+                    </TopImageBox>
+
+                    <TopImageBox image="software" color={color.blue3}>
+                        <h4>Software and Processes</h4>
+                        <p>
+                            The right software and processes will make running your Airbnb business much easier. See our
+                            list of the best apps and software at the end of this guide.
+                        </p>
+                    </TopImageBox>
+                </Imageboxes>
+            </Container>
+        </GreenContainer>
+
+        <OrderNow>
+            <Container>
+                <LeftImageRightContent image="after-formation" imageWidth="515" textWidth="570">
+                    <h2>The Complete "Start Your Business" Checklist</h2>
+                    <p>A Clear and Comprehensive Guide to Starting Your Business the Right Way</p>
+                    <Buttonsbox>
+                        <Button theme="primary56" marginMD="0 24px 0 0" arrow>
+                            Business Checklist
+                        </Button>
+                    </Buttonsbox>
+                </LeftImageRightContent>
+            </Container>
+        </OrderNow>
+
+        <Container style={{paddingTop: "100px", paddingBottom: "100px"}} width={750}>
+            <Heading style={4}>
+                Rules, Regulations, and Licenses for Airbnbs
+            </Heading>
+            <Paragraph big>
+                Even though you’re running an Airbnb business, you can’t escape real-world licenses, permits and regulations. You will need to explore local, state and federal licenses and permits, and we can also help out with researching your business licensing needs.
+            </Paragraph>
+            <Paragraph big>
+                It’s also very important to consider local zoning laws, ordinances and permits. Some municipalities don’t allow just anyone to set themselves up as an Airbnb host, and if you do, you could be fined. Check with your local and regional authorities what their requirements are for Airbnb hosts.
+            </Paragraph>
+        </Container>
     </Layout>
 );
 
-const GridSection = styled.div`
-    width: 100%;
-    margin-top: 110px;
+const OrderNow = styled.section`
+  background-color: ${color.orange3};
+  position: relative;
+  padding: 64px 0;
 `;
 
-const TitleBox = styled.div`
-    width: 100%;
-    margin-bottom: 120px;
-     
-    @media (min-width:750px) {
-        width: 750px;
-        margin: 0 auto 120px;
-    }
-    
-    h3{
-        color: #1d1d1d;
-        font-size: 40px;
-        text-align: left;
-        margin-bottom: 24px;
-    }
-`;
-
-const GridSectionList = styled.div`
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 100%;
-    
-    @media (min-width: 970px) {
-        width: 970px;
-        margin: 0 auto;
-    }
-`;
-
-const TextBorderedSection = styled.div`
-    width: 100%;
+const GreenContainer = styled.div`
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(242,248,243,1) 100%);
+    padding-bottom: 100px;
     padding-top: 100px;
-    
-    @media (min-width: 670px) {
-        width: 670px;
-        margin: 0 auto;
-    }
-    
-    h3{
-        color: #1d1d1d;
-        font-size: 40px;
-        text-align: center;
-        margin-bottom: 24px;
-    }
 `;
 
-const TextBorderedList = styled.div`
-    margin-top: 80px;
-    
-    >div {
-        margin-bottom: 8px;
-    }
+const Imageboxes = styled.div`
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 30px;
+  padding-top: 112px;
+  width: 100%;
+
+  @media(min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  @media (min-width: 970px) {
+    width: 970px;
+    margin: 0 auto;
+  }
 `;
 
-
-const BlueContainer = styled.div`
-    background: rgb(242,246,255);
-    background: linear-gradient(0deg, rgba(242,246,255,1) 0%, rgba(250,251,255,1) 100%);
+const OrangeContainer = styled.div`
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(254,246,237,1) 100%);
     padding-bottom: 100px;
 `;
 
