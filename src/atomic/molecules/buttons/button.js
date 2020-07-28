@@ -4,13 +4,14 @@ import styled from "styled-components";
 import { color } from "../../../components/styles/colors";
 import ArrowSVG from "../../../images/arrow.inline.svg";
 import Arrow2SVG from "../../../images/arrow2.inline.svg";
+import PropTypes from "prop-types";
 
 const Wrapper = styled(Link)`
   display: flex;
   justify-content: center;
   align-items: center;
   height: ${(props) => (props.height ? props.height : "auto")};
-  width: ${(props) => (props.width ? props.width : "auto")};
+  width: 100%;
   background-color: ${(props) => (props.theme === "primary40" || props.theme === "primary48" || props.theme === "primary56" ? color.orange1 : color.white)};
   border: 2px solid ${color.orange1};
   border-radius: 50px;
@@ -26,6 +27,10 @@ const Wrapper = styled(Link)`
   margin: ${(props) => (props.margin ? props.margin : "")};
   transition: background-color 0.3s ease, color 0.3s ease;
 
+  @media (min-width: ${(props) => (props.width)}) {
+    width: ${(props) => (props.width)}
+  }
+  
   @media (min-width: 768px) {
     margin: ${(props) => (props.marginMD ? props.marginMD : "")};
   }
@@ -111,4 +116,21 @@ const Button = ({ content, className, theme, height, width, arrow, arrow2, margi
     )}
   </Wrapper>
 );
+
 export default Button;
+
+Button.propTypes = {
+  width: PropTypes.string,
+  content: {
+    text: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired
+  }
+}
+
+Button.defaultProps = {
+  width: "auto",
+  content: {
+    text: "Start your business with us, today!",
+    url: "/"
+  }
+}
