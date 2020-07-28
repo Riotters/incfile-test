@@ -31,6 +31,7 @@ import CheckText from "../components/static-check/text-only"
 import CheckBox from "../components/static-check/text-boxed"
 import Checklist from "../components/checklist/checklist"
 import TopImageBox from "../components/top-image-box"
+import { articles } from "../static/blog";
 import BlogArticleCard from "../atomic/organisms/cards/blog-article-card"
 import OkIcon from "../images/icons/ok.inline.svg";
 import {Heading} from "../atomic/atoms/typography/heading";
@@ -515,9 +516,11 @@ const ComponentsPage = () => (
             </GreyWrapper>
 
             <h3>Article on Blog Page</h3>
-            <GreyWrapper>
-                <BlogArticleCard content="clock" />
-            </GreyWrapper>
+            <GridWrapper columns="2">
+                <GreyWrapper>
+                    <BlogArticleCard content={articles[2]} />
+                </GreyWrapper>
+            </GridWrapper>
         </Wrapper>
     </Container>
   </Layout>

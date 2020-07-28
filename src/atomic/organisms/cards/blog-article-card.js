@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { color } from "../../atoms/styles/colors";
 import Whitebox from "../../atoms/boxes/white-box";
 import BlogArticleImage from "../../molecules/image-blocks/blog-article-image";
 import HeartsCounter from "../../molecules/buttons/hearts-counter";
@@ -9,18 +8,28 @@ import BlogArticleTexts from "../../molecules/text-blocks/blog-article-texts";
 import BlogArticleFooter from "../../molecules/mixed-blocks/blog-article-footer";
 
 const Wrapper = styled.div`
+    height: 100%;
     width: 100%;
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
 `
 
 const BlogArticleCard = ({ className, content }) => {
   return (
     <Wrapper className={className}>
-        <Whitebox overflow>
-            <BlogArticleImage content={content.image}>
-                <HeartsCounter />
-            </BlogArticleImage>
-            <BlogArticleTags content={content.tags} />
-            <BlogArticleTexts content={content.texts} />
+        <Whitebox className="card" overflow>
+            <div>
+              <BlogArticleImage image={content.image}>
+                  <HeartsCounter likes={content.likes} />
+              </BlogArticleImage>
+              <BlogArticleTags content={content.tags} />
+              <BlogArticleTexts content={content.texts} />
+            </div>
             <BlogArticleFooter />
         </Whitebox>
     </Wrapper>

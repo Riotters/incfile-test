@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { color } from "../../atoms/styles/colors";
 import HeartSVG from "../../../images/icons/heart.inline.svg"
 
-const Wrapper = styled.span`
+const Wrapper = styled.button`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,11 +15,27 @@ const Wrapper = styled.span`
     font-size: 16px;
     line-height: 1;
     color: ${color.grey2};
+    border: 0;
+    cursor: pointer;
+
+    svg {
+      path {
+        transition: fill .3s ease;
+      }
+    }
+
+    &:hover {
+      svg {
+        path {
+          fill: ${color.blue1};
+        }
+      }
+    }
 `
 
-const BlogArticleHeart = ({ className }) => {
+const BlogArticleHeart = ({ className, onClick }) => {
   return (
-    <Wrapper className={className}>
+    <Wrapper className={className} onClick={onClick}>
         <HeartSVG />
     </Wrapper>
   )

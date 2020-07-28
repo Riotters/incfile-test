@@ -2,16 +2,18 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import styled from "styled-components";
-import Top from "../atomic/partials/blog-top"
-import Container from "../atomic/container"
-import ArticleCard from "../atomic/organisms/cards/blog-article-card"
-import NewsletterCard from "../atomic/organisms/cards/blog-newsletter-card"
-import Searchbar from "../atomic/organisms/forms/blog-search-articles"
-import FollowUs from "../atomic/organisms/cards/blog-follow-us"
-import { articles } from "../static/blog"
+import { color } from "../atomic/atoms/styles/colors";
+import Top from "../atomic/partials/blog-top";
+import Container from "../atomic/container";
+import ArticleCard from "../atomic/organisms/cards/blog-article-card";
+import NewsletterCard from "../atomic/organisms/cards/blog-newsletter-card";
+import Searchbar from "../atomic/organisms/forms/blog-search-articles";
+import FollowUs from "../atomic/organisms/cards/blog-follow-us";
+import { articles, followUs } from "../static/blog";
 
 const Wrapper = styled.section`
     padding: 72px 0;
+    background-color: ${color.grey5};
 `;
 
 const Content = styled.div`
@@ -51,7 +53,7 @@ const Blog = () => (
                 <Sidebar>
                     <Searchbar />
                     <NewsletterCard />
-                    <FollowUs />
+                    <FollowUs content={followUs} />
                 </Sidebar>
             </Content>
         </Container>

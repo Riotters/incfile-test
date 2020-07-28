@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Button from "../buttons/button";
-import Tag from "../../atoms/text-fields/blog-article-tag";
+import Socials from "../../molecules/lists/blog-article-socials";
 
 const Wrapper = styled.div`
     display: flex;
@@ -14,7 +14,7 @@ const BlogArticleFooter = ({ className }) => {
   return (
     <Wrapper className={className}>
         <Button theme="primary48" content="More" arrow />
-        <Tag content="aaa"/>
+        <Socials />
     </Wrapper>
   )
 }

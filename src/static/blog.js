@@ -1,6 +1,7 @@
 export const articles = [
     {
         image: "baloons",
+        likes: "0",
         tags: [
             "Business Logistics",
         ],
@@ -20,6 +21,7 @@ export const articles = [
     },
     {
         image: "newspaper",
+        likes: "0",
         tags: [
             "Business Forms",
         ],
@@ -39,6 +41,7 @@ export const articles = [
     },
     {
         image: "bike",
+        likes: "12",
         tags: [
             "Business Marketing",
         ],
@@ -58,6 +61,7 @@ export const articles = [
     },
     {
         image: "baloons",
+        likes: "51",
         tags: [
             "Annual Report",
         ],
@@ -74,5 +78,24 @@ export const articles = [
             text: "As we near the end of the year, it's time to get your tax prep for your small business in order. Here's a tax prep checklist to help you stay organized.",
           }
         ]
+    },
+]
+
+export const followUs = [
+    {
+        text: "Incfile on Facebook",
+        url: "https://www.facebook.com/incfile",
+    },
+    {
+        text: "Incfile on Twitter",
+        url: "https://twitter.com/incfile",
+    },
+    {
+        text: "Incfile on Pinterest",
+        url: "https://www.pinterest.com/incfile/",
+    },
+    {
+        text: "Incfile on Youtube",
+        url: "https://www.youtube.com/channel/UC-hfd-zO8SSMpOgLNYwLAXA",
     },
 ]

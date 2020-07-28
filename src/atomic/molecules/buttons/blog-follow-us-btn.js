@@ -10,7 +10,10 @@ const Wrapper = styled.a`
     margin-bottom: 16px;
 
     .follow-us-btn {
-        padding: 12px 12px 12px 52px;
+        display: flex;
+        align-items: center;
+        padding: 12px 12px 12px 8px;
+        transition: background-color .3s ease;
     }
 
     p {
@@ -18,14 +21,22 @@ const Wrapper = styled.a`
         line-height: 24px;
         color: ${color.black};
         text-align: left;
+        padding-left: 16px;
+    }
+
+    &:hover {
+        .follow-us-btn {
+            background-color: ${color.orange3};
+        }
     }
 `
 
-const BlogFollowUsBtn = ({ className }) => {
+const BlogFollowUsBtn = ({ className, Icon, text, url }) => {
   return (
-    <Wrapper className={className} href="#">
+    <Wrapper className={className} href={url}>
         <Bluebox className="follow-us-btn">
-            <p>aaa</p>
+            <Icon />
+            <p>{text}</p>
         </Bluebox>
     </Wrapper>
   )

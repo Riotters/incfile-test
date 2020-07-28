@@ -4,6 +4,7 @@ import { color } from "../../atoms/styles/colors";
 
 const Wrapper = styled.span`
     display: flex;
+    min-height: 120px;
     width: 100%;
 
     p {

@@ -16,10 +16,10 @@ const Wrapper = styled.span`
     color: ${color.grey2};
 `
 
-const BlogArticleNum = ({ className, content }) => {
+const BlogArticleNum = ({ className, likes }) => {
   return (
     <Wrapper className={className}>
-        {content}
+        {likes}
     </Wrapper>
   )
 }

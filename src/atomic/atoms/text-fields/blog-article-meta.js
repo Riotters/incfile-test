@@ -18,6 +18,11 @@ const Wrapper = styled.div`
 
     a {
         text-decoration: none;
+        transition: color .3s ease;
+        
+        &:hover {
+          color: ${color.orange1};
+        }
     }
 `
 
