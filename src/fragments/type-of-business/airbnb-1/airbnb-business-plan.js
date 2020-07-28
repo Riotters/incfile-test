@@ -23,32 +23,6 @@ const BusinessOwnerResponsibilities = styled.section`
     font-size: 40px;
     padding-bottom: 56px;
   }
-  
-  h3,
-  p {
-    max-width: 100%;
-    padding-bottom: 24px;
-  }
-
-  h3 {
-    &.pt32 {
-      padding-top: 32px;
-    }
-
-    &.pt48 {
-      padding-top: 48px;
-    }
-  }
-
-  p {
-    &.pb32 {
-      padding-bottom: 32px;
-    }
-
-    &.pb40 {
-      padding-bottom: 40px;
-    }
-  }
 
   .box {
     margin-bottom: 48px;
@@ -79,7 +53,7 @@ const AirbnbBusinessPlan = () => (
             revenues? How much is it costing you to buy and maintain the property? What is your profitability? How much
             money will you keep in the business to grow it? How much will you pay yourself and others?
         </Paragraph>
-        <Paragraph>
+        <Paragraph style={{paddingBottom: "50px"}}>
             Business plans do vary slightly, but they should all cover the following areas:
         </Paragraph>
 
@@ -131,7 +105,7 @@ const AirbnbBusinessPlan = () => (
             </Paragraph>
         </CountingTextBoxed>
 
-        <CountingTextBoxed number={8}>
+        <CountingTextBoxed number={9}>
             <Paragraph bottomSpace={0}>
                 Appendices
             </Paragraph>
