@@ -1,16 +1,18 @@
 import React from "react"
 import styled from "styled-components"
-import { Tabs, Panel, useTabState } from "@bumaga/tabs"
+import {Panel, Tabs, useTabState} from "@bumaga/tabs"
 // import { motion } from "framer-motion"
 import OverviewSVG from "../../../images/overview.inline.svg"
 import ArrowSVG from "../../../images/arrow.inline.svg"
-import { Collapse } from "react-collapse"
+import {Collapse} from "react-collapse"
 import VisibilitySensor from "../../../components/VisibilitySensor"
 import LightIcon from "../../../images/icons/light.inline.svg";
 import CalcIcon from "../../../images/icons/calc.inline.svg";
 import {Heading} from "../../../atomic/atoms/typography/heading";
 import {Paragraph} from "../../../atomic/atoms/typography/paragraph";
 import CkeckText from "../../../components/static-check/text-only";
+import OvalSVG from "../../../images/oval-blue.inline.svg";
+import Container from "../../../components/container";
 
 const cn = (...args) => args.filter(Boolean).join(" ");
 
@@ -204,192 +206,223 @@ const ListBox = styled.div`
     width: 50%;
 `;
 
+const Oval = styled.div`
+  height: 100%;
+  width: 100%;
+  max-height: 460px;
+  max-width: 370px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateY(40%);
+
+  svg {
+    moz-transform: scale(-1,1);
+    -o-transform: scale(-1,1);
+    -webkit-transform: scale(-1,1);
+    transform: scale(-1,1);
+`
+
 const AirBnb1Tabs = ({layout, columns}) => (
-    <Wrapper layout={layout}>
-        <VisibilitySensor partialVisibility once>
-            {({isVisible}) => (
-                <Tabs>
-                    <TabsWrapper className={isVisible ? "slideUp enter" : "slideUp"} layout={layout}>
-                        <Sticky layout={layout} columns={columns}>
-                            <Tab>
-                                <Icon>
-                                    <OverviewSVG/>
-                                </Icon>
-                                <Content>
-                                    <span>Airbnb Business</span>
-                                    <Arrow className="tabArrow">
-                                        <ArrowSVG/>
-                                    </Arrow>
-                                </Content>
-                            </Tab>
-                            <Tab>
-                                <Icon>
-                                    <LightIcon/>
-                                </Icon>
-                                <Content>
-                                    <span>Why This Industry</span>
-                                    <Arrow className="tabArrow">
-                                        <ArrowSVG/>
-                                    </Arrow>
-                                </Content>
-                            </Tab>
-                            <Tab>
-                                <Icon>
-                                    <CalcIcon/>
-                                </Icon>
-                                <Content>
-                                    <span>Is This Business For You?</span>
-                                    <Arrow className="tabArrow">
-                                        <ArrowSVG/>
-                                    </Arrow>
-                                </Content>
-                            </Tab>
-                        </Sticky>
-                    </TabsWrapper>
-                    {/* <Panels> */}
-                    <Collapse isOpened={true}>
-                        <Panel>
-                            <PanelWrapper
-                                className={
-                                    isVisible ? "slideUp enter panel1" : "slideUp panel1"
-                                }
-                                layout={layout}
-                            >
-                                <Heading size={3}>Starting an Airbnb Business</Heading>
-                                <Paragraph>
-                                    The concept of renting out space through Airbnb is relatively straightforward, but
-                                    setting yourself up for success requires a little more work.
-                                </Paragraph>
-                                <Paragraph style={{marginBottom: "50px"}}>
-                                    We don’t think that creating an Airbnb business needs to be daunting, and we’re here
-                                    to help. We’ve supported over 250,000 people to form a business and provided
-                                    answers, guidance and support to transform them into entrepreneurs. We’ll guide you
-                                    through what you need to know to start your Airbnb venture and get it off the
-                                    ground.
-                                </Paragraph>
-                                <Heading size={3}>Airbnb Business formation guide</Heading>
-                                <Paragraph>
-                                    From validating your business and doing the research to filing your paperwork and
-                                    running your business, this guide will help you out. Read on for some insight into
-                                    creating your own Airbnb business and becoming an entrepreneur. In this guide we
-                                    will cover:
-                                </Paragraph>
+    <Wrapper>
+        <Oval>
+            <OvalSVG/>
+        </Oval>
+        <Container>
+            <Wrapper layout={layout}>
+                <VisibilitySensor partialVisibility once>
+                    {({isVisible}) => (
+                        <Tabs>
+                            <TabsWrapper className={isVisible ? "slideUp enter" : "slideUp"} layout={layout}>
+                                <Sticky layout={layout} columns={columns}>
+                                    <Tab>
+                                        <Icon>
+                                            <OverviewSVG/>
+                                        </Icon>
+                                        <Content>
+                                            <span>Airbnb Business</span>
+                                            <Arrow className="tabArrow">
+                                                <ArrowSVG/>
+                                            </Arrow>
+                                        </Content>
+                                    </Tab>
+                                    <Tab>
+                                        <Icon>
+                                            <LightIcon/>
+                                        </Icon>
+                                        <Content>
+                                            <span>Why This Industry</span>
+                                            <Arrow className="tabArrow">
+                                                <ArrowSVG/>
+                                            </Arrow>
+                                        </Content>
+                                    </Tab>
+                                    <Tab>
+                                        <Icon>
+                                            <CalcIcon/>
+                                        </Icon>
+                                        <Content>
+                                            <span>Is This Business For You?</span>
+                                            <Arrow className="tabArrow">
+                                                <ArrowSVG/>
+                                            </Arrow>
+                                        </Content>
+                                    </Tab>
+                                </Sticky>
+                            </TabsWrapper>
+                            {/* <Panels> */}
+                            <Collapse isOpened={true}>
+                                <Panel>
+                                    <PanelWrapper
+                                        className={
+                                            isVisible ? "slideUp enter panel1" : "slideUp panel1"
+                                        }
+                                        layout={layout}
+                                    >
+                                        <Heading size={3}>Starting an Airbnb Business</Heading>
+                                        <Paragraph>
+                                            The concept of renting out space through Airbnb is relatively
+                                            straightforward, but
+                                            setting yourself up for success requires a little more work.
+                                        </Paragraph>
+                                        <Paragraph style={{marginBottom: "50px"}}>
+                                            We don’t think that creating an Airbnb business needs to be daunting, and
+                                            we’re here
+                                            to help. We’ve supported over 250,000 people to form a business and provided
+                                            answers, guidance and support to transform them into entrepreneurs. We’ll
+                                            guide you
+                                            through what you need to know to start your Airbnb venture and get it off
+                                            the
+                                            ground.
+                                        </Paragraph>
+                                        <Heading size={3}>Airbnb Business formation guide</Heading>
+                                        <Paragraph>
+                                            From validating your business and doing the research to filing your
+                                            paperwork and
+                                            running your business, this guide will help you out. Read on for some
+                                            insight into
+                                            creating your own Airbnb business and becoming an entrepreneur. In this
+                                            guide we
+                                            will cover:
+                                        </Paragraph>
 
-                                <ListWrapper>
-                                    <ListBox>
-                                        <CkeckText>
-                                            <Paragraph>
-                                                Statistics on why you should start an Airbnb business
-                                            </Paragraph>
-                                        </CkeckText>
-                                    </ListBox>
+                                        <ListWrapper>
+                                            <ListBox>
+                                                <CkeckText>
+                                                    <Paragraph>
+                                                        Statistics on why you should start an Airbnb business
+                                                    </Paragraph>
+                                                </CkeckText>
+                                            </ListBox>
 
-                                    <ListBox>
-                                        <CkeckText>
-                                            <Paragraph>
-                                                Choose the right business structure for your Airbnb company
-                                            </Paragraph>
-                                        </CkeckText>
-                                    </ListBox>
+                                            <ListBox>
+                                                <CkeckText>
+                                                    <Paragraph>
+                                                        Choose the right business structure for your Airbnb company
+                                                    </Paragraph>
+                                                </CkeckText>
+                                            </ListBox>
 
-                                    <ListBox>
-                                        <CkeckText>
-                                            <Paragraph>
-                                                How to find out if an Airbnb business is right for you
-                                            </Paragraph>
-                                        </CkeckText>
-                                    </ListBox>
+                                            <ListBox>
+                                                <CkeckText>
+                                                    <Paragraph>
+                                                        How to find out if an Airbnb business is right for you
+                                                    </Paragraph>
+                                                </CkeckText>
+                                            </ListBox>
 
-                                    <ListBox>
-                                        <CkeckText>
-                                            <Paragraph>
-                                                Setting up your Airbnb business including location, equipment,
-                                                employees,
-                                                taxes, finances, licenses and more
-                                            </Paragraph>
-                                        </CkeckText>
-                                    </ListBox>
+                                            <ListBox>
+                                                <CkeckText>
+                                                    <Paragraph>
+                                                        Setting up your Airbnb business including location, equipment,
+                                                        employees,
+                                                        taxes, finances, licenses and more
+                                                    </Paragraph>
+                                                </CkeckText>
+                                            </ListBox>
 
-                                    <ListBox>
-                                        <CkeckText>
-                                            <Paragraph>
-                                                Ideas for the type of Airbnb business that you could form
-                                            </Paragraph>
-                                        </CkeckText>
-                                    </ListBox>
+                                            <ListBox>
+                                                <CkeckText>
+                                                    <Paragraph>
+                                                        Ideas for the type of Airbnb business that you could form
+                                                    </Paragraph>
+                                                </CkeckText>
+                                            </ListBox>
 
-                                    <ListBox>
-                                        <CkeckText>
-                                            <Paragraph>
-                                                Where to find Airbnb business groups, forums and support
-                                            </Paragraph>
-                                        </CkeckText>
-                                    </ListBox>
+                                            <ListBox>
+                                                <CkeckText>
+                                                    <Paragraph>
+                                                        Where to find Airbnb business groups, forums and support
+                                                    </Paragraph>
+                                                </CkeckText>
+                                            </ListBox>
 
-                                    <ListBox>
-                                        <CkeckText>
-                                            <Paragraph>
-                                                Proving your Airbnb business can work
-                                            </Paragraph>
-                                        </CkeckText>
-                                    </ListBox>
+                                            <ListBox>
+                                                <CkeckText>
+                                                    <Paragraph>
+                                                        Proving your Airbnb business can work
+                                                    </Paragraph>
+                                                </CkeckText>
+                                            </ListBox>
 
-                                    <ListBox>
-                                        <CkeckText>
-                                            <Paragraph>
-                                                Useful online tools for Airbnb business owners
-                                            </Paragraph>
-                                        </CkeckText>
-                                    </ListBox>
+                                            <ListBox>
+                                                <CkeckText>
+                                                    <Paragraph>
+                                                        Useful online tools for Airbnb business owners
+                                                    </Paragraph>
+                                                </CkeckText>
+                                            </ListBox>
 
-                                    <ListBox>
-                                        <CkeckText>
-                                            <Paragraph>
-                                                Business plans for Airbnb companies
-                                            </Paragraph>
-                                        </CkeckText>
-                                    </ListBox>
-                                </ListWrapper>
+                                            <ListBox>
+                                                <CkeckText>
+                                                    <Paragraph>
+                                                        Business plans for Airbnb companies
+                                                    </Paragraph>
+                                                </CkeckText>
+                                            </ListBox>
+                                        </ListWrapper>
 
-                            </PanelWrapper>
-                        </Panel>
-                        <Panel>
-                            <PanelWrapper className="panel2" layout={layout}>
-                                <p>
-                                    Incorporating your company is not always an easy process.
-                                    Incfile is here to help you decide not only how to
-                                    incorporate, but to understand exactly which type of status to
-                                    file.
-                                </p>
-                                <p>
-                                    Many companies who incorporate are actually charities that do
-                                    not intend to make a profit, but rather donate all profits to
-                                    another organization. In this case, a charity would want to
-                                    incorporate as a nonprofit and, ultimately, apply for tax
-                                    exempt status.
-                                </p>
+                                    </PanelWrapper>
+                                </Panel>
+                                <Panel>
+                                    <PanelWrapper className="panel2" layout={layout}>
+                                        <p>
+                                            Incorporating your company is not always an easy process.
+                                            Incfile is here to help you decide not only how to
+                                            incorporate, but to understand exactly which type of status to
+                                            file.
+                                        </p>
+                                        <p>
+                                            Many companies who incorporate are actually charities that do
+                                            not intend to make a profit, but rather donate all profits to
+                                            another organization. In this case, a charity would want to
+                                            incorporate as a nonprofit and, ultimately, apply for tax
+                                            exempt status.
+                                        </p>
 
-                                <p>
-                                    By having tax exempt status, your donations can be recorded by
-                                    donors as not taxable by both the federal and state
-                                    government. This is a great incentive to be able to offer your
-                                    constituents.
-                                </p>
+                                        <p>
+                                            By having tax exempt status, your donations can be recorded by
+                                            donors as not taxable by both the federal and state
+                                            government. This is a great incentive to be able to offer your
+                                            constituents.
+                                        </p>
 
-                                <p>
-                                    People who start nonprofits are driven by passion about a
-                                    certain cause. Whatever your cause, creating a nonprofit can
-                                    make a difference. We've provided as much information as you
-                                    need to know in choosing to incorporate as a nonprofit
-                                    corporation.
-                                </p>
-                            </PanelWrapper>
-                        </Panel>
-                    </Collapse>
-                    {/* </Panels> */}
-                </Tabs>
-            )}
-        </VisibilitySensor>
+                                        <p>
+                                            People who start nonprofits are driven by passion about a
+                                            certain cause. Whatever your cause, creating a nonprofit can
+                                            make a difference. We've provided as much information as you
+                                            need to know in choosing to incorporate as a nonprofit
+                                            corporation.
+                                        </p>
+                                    </PanelWrapper>
+                                </Panel>
+                            </Collapse>
+                            {/* </Panels> */}
+                        </Tabs>
+                    )}
+                </VisibilitySensor>
+            </Wrapper>
+        </Container>
     </Wrapper>
 );
 
