@@ -5,13 +5,11 @@ import { shadow } from "../styles/shadows";
 
 const Wrapper = styled.div`
     width: 100%;
-    background-color: ${color.white};
-    box-shadow: ${shadow.white1};
+    background-color: ${color.blue3};
     border-radius: 5px;
-    overflow: ${props => (props.overflow ? "hidden" : "")};
 `
 
-const Whitebox = ({ className, children, overflow }) => {
+const Bluebox = ({ className, children, overflow }) => {
   return (
     <Wrapper className={className} overflow={overflow}>
         {children}
@@ -19,4 +17,4 @@ const Whitebox = ({ className, children, overflow }) => {
   )
 }
 
-export default Whitebox;
+export default Bluebox;

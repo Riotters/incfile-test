@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { color } from "../../atoms/styles/colors";
+import HeartSVG from "../../../images/icons/heart.inline.svg"
 
 const Wrapper = styled.span`
     display: flex;
@@ -19,7 +20,7 @@ const Wrapper = styled.span`
 const BlogArticleHeart = ({ className }) => {
   return (
     <Wrapper className={className}>
-        {"<3"}
+        <HeartSVG />
     </Wrapper>
   )
 }

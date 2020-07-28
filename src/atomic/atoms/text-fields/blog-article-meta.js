@@ -12,6 +12,10 @@ const Wrapper = styled.div`
         line-height: 24px;
     }
 
+    p {
+      color: ${color.grey2};
+    }
+
     a {
         text-decoration: none;
     }

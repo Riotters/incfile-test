@@ -7,22 +7,20 @@ import HeartsCounter from "../../molecules/buttons/hearts-counter";
 import BlogArticleTags from "../../molecules/lists/blog-article-tags";
 import BlogArticleTexts from "../../molecules/text-blocks/blog-article-texts";
 import BlogArticleFooter from "../../molecules/mixed-blocks/blog-article-footer";
-import { article } from "../../../static/blog"
 
 const Wrapper = styled.div`
     width: 100%;
-    max-width: 370px;
 `
 
-const BlogArticleCard = ({ className }) => {
+const BlogArticleCard = ({ className, content }) => {
   return (
     <Wrapper className={className}>
-        <Whitebox>
-            <BlogArticleImage>
+        <Whitebox overflow>
+            <BlogArticleImage content={content.image}>
                 <HeartsCounter />
             </BlogArticleImage>
-            <BlogArticleTags content={article.tags} />
-            <BlogArticleTexts content={article.texts} />
+            <BlogArticleTags content={content.tags} />
+            <BlogArticleTexts content={content.texts} />
             <BlogArticleFooter />
         </Whitebox>
     </Wrapper>

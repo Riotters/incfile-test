@@ -57,9 +57,9 @@ const Content = styled.div`
 const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 100%;
-  padding-top: 50px;
 
   @media (min-width: 768px) {
     width: 50%;
@@ -68,9 +68,10 @@ const TextContainer = styled.div`
 
   h1 {
     width: 100%;
-    max-width: 480px;
-    text-aling: center;
-    padding-bottom: 40px;
+    max-width: 520px;
+    font-size: 40px;
+    line-height: 48px;
+    padding-bottom: 24px;
 
     @mnedia(min-width: 768px) {
       text-aling: left;
@@ -80,12 +81,13 @@ const TextContainer = styled.div`
 
   p {
     max-width: 470px;
-    margin-bottom: 33px;
   }
 `
 
 const ImageContainer = styled.div`
   display: none;
+  justify-content: flex-end;
+  height: 400px;
   width: 50%;
   padding-left: 60px;
 
@@ -95,7 +97,7 @@ const ImageContainer = styled.div`
 
   .gatsby-image-wrapper {
     width: 100%;
-    max-width: 400px;
+    max-width: 489px;
 
     img {
       object-fit: contain !important;

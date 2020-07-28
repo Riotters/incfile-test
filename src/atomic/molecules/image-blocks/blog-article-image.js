@@ -30,10 +30,10 @@ const Counter = styled.div`
     display: flex;
 `;
 
-const BlogArticleImage = ({ className, children }) => {
+const BlogArticleImage = ({ className, content, children }) => {
   return (
     <Wrapper className={className}>
-        <Image filename="newspaper" />
+        <Image filename={content} />
         {children}
     </Wrapper>
   )
