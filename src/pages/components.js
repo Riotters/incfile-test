@@ -32,6 +32,11 @@ import CheckBox from "../components/static-check/text-boxed"
 import Checklist from "../components/checklist/checklist"
 import TopImageBox from "../components/top-image-box"
 import BlogArticleCard from "../atomic/organisms/cards/blog-article-card"
+import OkIcon from "../images/icons/ok.inline.svg";
+import {Heading} from "../atomic/atoms/typography/heading";
+import {Paragraph} from "../atomic/atoms/typography/paragraph";
+import TextBlockWithImage from "../atomic/molecules/mixed-blocks/text-block-with-absolute-image";
+import CountingTextBoxed from "../atomic/molecules/text-blocks/counting-text-boxed";
 
 const Section = styled.div`
     width: 100%;
@@ -487,6 +492,28 @@ const ComponentsPage = () => (
                     </p>
                 </TopImageBox>
             </GreyWrapper>
+
+            <h3>Text Box With Absolute Image</h3>
+            <GreyWrapper>
+                <TextBlockWithImage SvgImage={OkIcon} imageBackgroundColor="#fce7d0" imageShadowColor="#fce7d0">
+                    <Heading size={4}>
+                        Understand your market
+                    </Heading>
+                    <Paragraph>
+                        You might want to target your listings to a particular type of guest, so if you know there’s a market, make sure your accommodation reflects what might be of value to them. For example, younger people might want vibrant nightlife and a very modern place to stay, while older people could want more peace and quiet, with natural outside space.
+                    </Paragraph>
+                </TextBlockWithImage>
+            </GreyWrapper>
+
+            <h3>Counting Box</h3>
+            <GreyWrapper>
+                <CountingTextBoxed number={1}>
+                    <Paragraph bottomSpace={0}>
+                        An executive summary with the most important points from your business plan
+                    </Paragraph>
+                </CountingTextBoxed>
+            </GreyWrapper>
+
             <h3>Article on Blog Page</h3>
             <GreyWrapper>
                 <BlogArticleCard content="clock" />
