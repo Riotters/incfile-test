@@ -6,8 +6,8 @@ const Wrapper = styled.span`
     display: flex;
     justify-content: center;
     align-items: center;
-    height: ${props => props.theme === "empty" ? "5px" : "32px"};
-    width: 32px;
+    height: ${props => props.theme === "empty" ? 5 : (props.height ? props.height : 32)}px;
+    width: ${props => props.width ? props.width : 32}px;
     min-width: 32px;
     background: ${props => props.circleColor ? props.circleColor : color.grey4};
     border-radius: ${props => props.theme === "empty" ? "2.5px" : "50%"};
@@ -17,6 +17,7 @@ const Wrapper = styled.span`
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
+    padding: ${props => props.padding ? props.padding : 0}px
     border: 1px solid ${props => props.border ? props.border : "transparent"};
     pointer-events: none;
 

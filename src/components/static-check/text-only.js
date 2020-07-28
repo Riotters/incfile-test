@@ -10,7 +10,7 @@ const Wrapper = styled.div`
     p {
         font-size: 16px; 
         line-height: 24px;
-        max-width: 180px; 
+        max-width: 85%; 
         color: ${props => (props.theme === "dark" ? color.white : color.grey1)};
     }
 

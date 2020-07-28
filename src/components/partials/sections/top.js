@@ -65,17 +65,17 @@ const TextContainer = styled.div`
   h1 {
     width: 100%;
     max-width: ${props => (props.headlineWidth ? props.headlineWidth : "480")}px;
-    text-aling: center;
+    text-align: center;
     padding-bottom: 40px;
 
-    @mnedia (min-width: 768px) {
-      text-aling: left;
+    @media (min-width: 768px) {
+      text-align: left;
       padding-bottom: 20px;
     }
   }
 
   p {
-    max-width: 470px;
+    max-width: ${props => (props.headlineWidth ? props.headlineWidth : "480")}px;
     margin-bottom: 33px;
   }
 `;
