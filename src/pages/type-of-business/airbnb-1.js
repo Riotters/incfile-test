@@ -4,23 +4,12 @@ import SEO from "../../components/seo";
 import Button from "../../components/button";
 import styled from "styled-components";
 import Top from "../../components/partials/sections/top";
-import About from "../../components/partials/sections/about";
-import Search from "../../components/partials/sections/search";
-import Faq from "../../components/partials/sections/faq";
-import Cta from "../../components/partials/sections/cta";
-import Articles from "../../components/partials/sections/articles";
 import RatingRow from "../../atomic/atoms/boxes/rating-row";
 import CartBlock from "../../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../../atomic/molecules/blocks/rating-block";
-
-const Buttonsbox = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: 768px) {
-    flex-direction: row;
-  }
-`;
+import OvalSVG from "../../images/oval-blue.inline.svg";
+import Container from "../../components/container";
+import AirBnb1Tabs from "../../fragments/type-of-business/airbnb-1/airbnb-1-tabs";
 
 const AirBnb1 = () => (
     <Layout>
@@ -37,16 +26,75 @@ const AirBnb1 = () => (
             </Buttonsbox>
 
             <RatingRow>
-                <CartBlock />
-                <RatingBlock />
+                <CartBlock/>
+                <RatingBlock/>
             </RatingRow>
         </Top>
-        <About/>
-        <Search/>
-        <Faq/>
-        <Cta/>
-        <Articles/>
+
+        <Wrapper>
+            <Oval>
+                <OvalSVG/>
+            </Oval>
+            <Container>
+                <AirBnb1Tabs />
+            </Container>
+        </Wrapper>
+
     </Layout>
 );
+
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 115px;
+
+  @media (min-width: 768px) {
+    flex-direction: ${props => (props.layout !== "grid" ? "row" : "column")};
+  }
+
+  .accordion-panel {
+    overflow: hidden;
+  }
+
+  .ReactCollapse--collapse {
+    width: 100%;
+    transition: height 500ms;
+    margin-left: auto;
+
+    @media (min-width: 768px) {
+      max-width: ${props => (props.layout !== "grid" ? "55%" : "")};
+    }
+
+    @media (min-width: 1200px) {
+      max-width: ${props => (props.layout !== "grid" ? "670px" : "")};
+    }
+  }
+`
+
+const Oval = styled.div`
+  height: 100%;
+  width: 100%;
+  max-height: 460px;
+  max-width: 370px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateY(40%);
+
+  svg {
+    moz-transform: scale(-1,1);
+    -o-transform: scale(-1,1);
+    -webkit-transform: scale(-1,1);
+    transform: scale(-1,1);
+`
+
+const Buttonsbox = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+`;
 
 export default AirBnb1;
