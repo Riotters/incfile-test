@@ -11,7 +11,8 @@ import CalcIcon from "../../../images/icons/calc.inline.svg";
 import {Heading} from "../../../atomic/atoms/typography/heading";
 import {Paragraph} from "../../../atomic/atoms/typography/paragraph";
 import CkeckText from "../../../components/static-check/text-only";
-import OvalSVG from "../../../images/oval-blue.inline.svg";
+import OvalSVG from "../../../images/oval-blue-2.inline.svg";
+import OvalGreenSVG from "../../../images/oval-green.inline.svg";
 import Container from "../../../components/container";
 
 const cn = (...args) => args.filter(Boolean).join(" ");
@@ -33,6 +34,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   padding-bottom: 115px;
+  position: relative;
 
   @media (min-width: 768px) {
     flex-direction: ${props => (props.layout !== "grid" ? "row" : "column")};
@@ -209,18 +211,21 @@ const ListBox = styled.div`
 const Oval = styled.div`
   height: 100%;
   width: 100%;
-  max-height: 460px;
-  max-width: 370px;
+  max-height: 420px;
+  max-width: 420px;
   position: absolute;
   left: 0;
   top: 0;
-  transform: translateY(40%);
+`
 
-  svg {
-    moz-transform: scale(-1,1);
-    -o-transform: scale(-1,1);
-    -webkit-transform: scale(-1,1);
-    transform: scale(-1,1);
+const OvalBottom = styled.div`
+  height: 100%;
+  width: 100%;
+  max-height: 420px;
+  max-width: 420px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 `
 
 const AirBnb1Tabs = ({layout, columns}) => (
@@ -228,6 +233,9 @@ const AirBnb1Tabs = ({layout, columns}) => (
         <Oval>
             <OvalSVG/>
         </Oval>
+        <OvalBottom>
+            <OvalGreenSVG />
+        </OvalBottom>
         <Container>
             <Wrapper layout={layout}>
                 <VisibilitySensor partialVisibility once>
@@ -280,12 +288,12 @@ const AirBnb1Tabs = ({layout, columns}) => (
                                         layout={layout}
                                     >
                                         <Heading size={3}>Starting an Airbnb Business</Heading>
-                                        <Paragraph>
+                                        <Paragraph big>
                                             The concept of renting out space through Airbnb is relatively
                                             straightforward, but
                                             setting yourself up for success requires a little more work.
                                         </Paragraph>
-                                        <Paragraph style={{marginBottom: "50px"}}>
+                                        <Paragraph big style={{marginBottom: "50px"}}>
                                             We don’t think that creating an Airbnb business needs to be daunting, and
                                             we’re here
                                             to help. We’ve supported over 250,000 people to form a business and provided
@@ -296,7 +304,7 @@ const AirBnb1Tabs = ({layout, columns}) => (
                                             ground.
                                         </Paragraph>
                                         <Heading size={3}>Airbnb Business formation guide</Heading>
-                                        <Paragraph>
+                                        <Paragraph big>
                                             From validating your business and doing the research to filing your
                                             paperwork and
                                             running your business, this guide will help you out. Read on for some
@@ -309,7 +317,7 @@ const AirBnb1Tabs = ({layout, columns}) => (
                                         <ListWrapper>
                                             <ListBox>
                                                 <CkeckText>
-                                                    <Paragraph>
+                                                    <Paragraph big>
                                                         Statistics on why you should start an Airbnb business
                                                     </Paragraph>
                                                 </CkeckText>
@@ -317,7 +325,7 @@ const AirBnb1Tabs = ({layout, columns}) => (
 
                                             <ListBox>
                                                 <CkeckText>
-                                                    <Paragraph>
+                                                    <Paragraph big>
                                                         Choose the right business structure for your Airbnb company
                                                     </Paragraph>
                                                 </CkeckText>
@@ -325,7 +333,7 @@ const AirBnb1Tabs = ({layout, columns}) => (
 
                                             <ListBox>
                                                 <CkeckText>
-                                                    <Paragraph>
+                                                    <Paragraph big>
                                                         How to find out if an Airbnb business is right for you
                                                     </Paragraph>
                                                 </CkeckText>
@@ -333,7 +341,7 @@ const AirBnb1Tabs = ({layout, columns}) => (
 
                                             <ListBox>
                                                 <CkeckText>
-                                                    <Paragraph>
+                                                    <Paragraph big>
                                                         Setting up your Airbnb business including location, equipment,
                                                         employees,
                                                         taxes, finances, licenses and more
@@ -343,7 +351,7 @@ const AirBnb1Tabs = ({layout, columns}) => (
 
                                             <ListBox>
                                                 <CkeckText>
-                                                    <Paragraph>
+                                                    <Paragraph big>
                                                         Ideas for the type of Airbnb business that you could form
                                                     </Paragraph>
                                                 </CkeckText>
@@ -351,7 +359,7 @@ const AirBnb1Tabs = ({layout, columns}) => (
 
                                             <ListBox>
                                                 <CkeckText>
-                                                    <Paragraph>
+                                                    <Paragraph big>
                                                         Where to find Airbnb business groups, forums and support
                                                     </Paragraph>
                                                 </CkeckText>
@@ -359,7 +367,7 @@ const AirBnb1Tabs = ({layout, columns}) => (
 
                                             <ListBox>
                                                 <CkeckText>
-                                                    <Paragraph>
+                                                    <Paragraph big>
                                                         Proving your Airbnb business can work
                                                     </Paragraph>
                                                 </CkeckText>
@@ -367,7 +375,7 @@ const AirBnb1Tabs = ({layout, columns}) => (
 
                                             <ListBox>
                                                 <CkeckText>
-                                                    <Paragraph>
+                                                    <Paragraph big>
                                                         Useful online tools for Airbnb business owners
                                                     </Paragraph>
                                                 </CkeckText>
@@ -375,7 +383,7 @@ const AirBnb1Tabs = ({layout, columns}) => (
 
                                             <ListBox>
                                                 <CkeckText>
-                                                    <Paragraph>
+                                                    <Paragraph big>
                                                         Business plans for Airbnb companies
                                                     </Paragraph>
                                                 </CkeckText>
