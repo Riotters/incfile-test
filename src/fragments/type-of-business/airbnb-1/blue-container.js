@@ -9,6 +9,7 @@ import React from "react";
 import styled from "styled-components";
 import OvalSVG from "../../../images/oval-blue-3.inline.svg";
 import OvalBlueSVG from "../../../images/oval-blue-4.inline.svg";
+import Curve from "../../../atomic/atoms/shapes/curve";
 
 const BlueContainerWrapper = styled.div`
     background: rgb(242,246,255);
@@ -26,6 +27,7 @@ const GridSection = styled.div`
 const TitleBox = styled.div`
     width: 100%;
     margin-bottom: 120px;
+    position: relative;
      
     @media (min-width:750px) {
         width: 750px;
@@ -93,13 +95,20 @@ const OvalCenter = styled.div`
   top: 40%;
 `
 
+const AbsoluteCurve = styled.div`
+    position: absolute;
+    left: -27px;
+    top: -16px;
+    transform: rotate(-90deg);
+`;
+
 const BlueContainer = () => (
     <BlueContainerWrapper>
         <Oval>
             <OvalSVG/>
         </Oval>
         <OvalCenter>
-            <OvalBlueSVG />
+            <OvalBlueSVG/>
         </OvalCenter>
 
         <Container>
@@ -151,6 +160,9 @@ const BlueContainer = () => (
 
             <GridSection>
                 <TitleBox>
+                    <AbsoluteCurve>
+                        <Curve color={color.blue1}/>
+                    </AbsoluteCurve>
                     <Heading size={3}>Validating Your Airbnb Business</Heading>
                     <Paragraph>
                         Getting started in an Airbnb business is easy, but becoming a success is harder.
