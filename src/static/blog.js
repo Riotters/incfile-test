@@ -91,10 +91,6 @@ export const followUs = [
         url: "https://twitter.com/incfile",
     },
     {
-        text: "Incfile on Pinterest",
-        url: "https://www.pinterest.com/incfile/",
-    },
-    {
         text: "Incfile on Youtube",
         url: "https://www.youtube.com/channel/UC-hfd-zO8SSMpOgLNYwLAXA",
     },

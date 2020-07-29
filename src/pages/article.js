@@ -1,15 +1,14 @@
 import React from "react";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
 import styled from "styled-components";
 import { color } from "../atomic/atoms/styles/colors";
+import { articles, followUs } from "../static/blog";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
 import Top from "../atomic/partials/blog-top";
 import Container from "../atomic/container";
-import ArticleCard from "../atomic/organisms/cards/blog-article-card";
 import NewsletterCard from "../atomic/organisms/cards/blog-newsletter-card";
 import Searchbar from "../atomic/organisms/forms/blog-search-articles";
 import FollowUs from "../atomic/organisms/cards/blog-follow-us";
-import { articles, followUs } from "../static/blog";
 
 const Wrapper = styled.section`
     padding: 72px 0;
@@ -26,15 +25,8 @@ const Content = styled.div`
     }
 `
 
-const Articles = styled.div`
-    display: grid;
-    grid-template-columns: 100%;
-    grid-gap: 30px;
-    
-    @media(min-width: 768px) {
-        grid-template-columns: 1fr 1fr;
-        
-    }
+const Single = styled.div`
+    display: flex;
 `;
 
 const Sidebar = styled.div`
@@ -47,27 +39,35 @@ const Sidebar = styled.div`
     }
 `
 
-const Blog = () => (
+//todo components
+const Path = styled.div``;
+const ArticleCard = styled.div``;
+const Disqus = styled.div``;
+const Related = styled.div``;
+
+
+const Article = () => (
   <Layout>
     <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
     <Top headline="Where Business Begins. Your Resource to Grow." text="The Incfile Blog" imageName="business-checklist"/>
     <Wrapper>
         <Container>
             <Content>
-                <Articles>
-                    {articles.map(article => (
-                        <ArticleCard content={article}/>
-                    ))}
-                </Articles>
+                <Single>
+                    <Path />
+                    <ArticleCard />
+                    <Disqus />
+                </Single>
                 <Sidebar>
                     <Searchbar />
                     <NewsletterCard />
                     <FollowUs content={followUs} />
                 </Sidebar>
             </Content>
+            <Related />
         </Container>
     </Wrapper>
   </Layout>
 );
 
-export default Blog;
+export default Article;

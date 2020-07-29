@@ -27,14 +27,19 @@ const Wrapper = styled(Link)`
   margin: ${(props) => (props.margin ? props.margin : "")};
   transition: background-color 0.3s ease, color 0.3s ease;
 
-  @media (min-width: ${(props) => (props.width)}) {
-    width: ${(props) => (props.width)}
+  
+  @media(min-width: 576px) {
+    width: auto;
   }
   
   @media (min-width: 768px) {
     margin: ${(props) => (props.marginMD ? props.marginMD : "")};
   }
-
+  
+  @media (min-width: ${(props) => (props.width)}) {
+    width: ${(props) => (props.width)}
+  }
+  
   &:hover {
     background-color: ${(props) => (props.theme === "primary40" || props.theme === "primary48" || props.theme === "primary56" ? color.white : color.orange1)};
     color: ${(props) => (props.theme === "primary40" || props.theme === "primary48" || props.theme === "primary56" ? color.orange1 : color.white)};

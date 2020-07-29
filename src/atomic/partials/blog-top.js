@@ -8,7 +8,9 @@ import Button from "../../components/button"
 import VisibilitySensor from "../../components/VisibilitySensor"
 
 const Wrapper = styled.div`
-  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  padding-top: 80px;
   height: 480px;
   position: relative;
   background-color: ${color.blue3};

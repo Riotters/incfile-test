@@ -35,11 +35,6 @@ const BlogArticleSocials = ({ className }) => {
     <Wrapper className={className}>
         <Social>
             <a href="#">
-                <GoogleSVG />
-            </a>
-        </Social>
-        <Social>
-            <a href="#">
                 <TwitterSVG />
             </a>
         </Social>

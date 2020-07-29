@@ -1,24 +1,25 @@
 import React from "react";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-import Button from "../components/button";
-import Colorbox from "../components/color-box";
-import TextCenterLayout from "../components/partials/blocks/heading-center";
 import styled from "styled-components";
-import Top from "../components/partials/sections/top";
-import ImageContent from "../components/partials/blocks/left-image-right-content";
-import Articles from "../components/partials/sections/articles";
-import { color, gradient } from "../components/styles/colors";
-import Container from "../components/container";
-import ExistenceSVG from "../images/icons/certificate-of-existence.inline.svg";
-import AuthorizationSVG from "../images/icons/certificate-of-authorization.inline.svg";
-import StatusSVG from "../images/icons/certificate-of-status.inline.svg";
-import Help from "../components/partials/blocks/left-content-right-object"
-import Accordion from "../components/accordion";
-import Benefits from "../components/partials/sections/benefits";
-import ArrowLink from "../components/arrow-link";
-import Card from "../components/certificate-card";
-import { states } from "../components/states"
+import { color, gradient } from "../../components/styles/colors";
+import { states } from "../../components/states";
+import Layout from "../../components/layout";
+import SEO from "../../components/seo";
+import Button from "../../components/button";
+import Colorbox from "../../components/color-box";
+import TextCenterLayout from "../../components/partials/blocks/heading-center";
+import Top from "../../components/partials/sections/top";
+import ImageContent from "../../components/partials/blocks/left-image-right-content";
+import Articles from "../../components/partials/sections/articles";
+import Container from "../../components/container";
+import Help from "../../components/partials/blocks/left-content-right-object"
+import Accordion from "../../components/accordion";
+import Benefits from "../../components/partials/sections/benefits";
+import ArrowLink from "../../components/arrow-link";
+import Card from "../../components/certificate-card";
+
+import ExistenceSVG from "../../images/icons/certificate-of-existence.inline.svg";
+import AuthorizationSVG from "../../images/icons/certificate-of-authorization.inline.svg";
+import StatusSVG from "../../images/icons/certificate-of-status.inline.svg";
 
 const faq = {
   items: [

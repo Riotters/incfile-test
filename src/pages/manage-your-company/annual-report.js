@@ -1,21 +1,22 @@
 import React from "react";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-import Button from "../components/button";
-import Colorbox from "../components/color-box";
-import TextCenterLayout from "../components/partials/blocks/heading-center";
 import styled from "styled-components";
-import Top from "../components/partials/sections/top";
-import ImageContent from "../components/partials/blocks/left-image-right-content";
-import Articles from "../components/partials/sections/articles";
-import { color, gradient } from "../components/styles/colors";
-import Container from "../components/container";
-import EnterprenourSVG from "../images/icons/enterprenour.inline.svg";
-import Help from "../components/partials/blocks/left-content-right-object"
-import Benefits from "../components/partials/sections/benefits";
-import Card from "../components/certificate-card";
-import TopImageBox from "../components/top-image-box";
-import { states } from "../components/states"
+import Layout from "../../components/layout";
+import SEO from "../../components/seo";
+import { color, gradient } from "../../components/styles/colors";
+import { states } from "../../components/states"
+import Button from "../../components/button";
+import Colorbox from "../../components/color-box";
+import TextCenterLayout from "../../components/partials/blocks/heading-center";
+import Top from "../../components/partials/sections/top";
+import ImageContent from "../../components/partials/blocks/left-image-right-content";
+import Articles from "../../components/partials/sections/articles";
+import Container from "../../components/container";
+import Help from "../../components/partials/blocks/left-content-right-object"
+import Benefits from "../../components/partials/sections/benefits";
+import Card from "../../components/certificate-card";
+import TopImageBox from "../../components/top-image-box";
+
+import EnterprenourSVG from "../../images/icons/enterprenour.inline.svg";
 
 const BusinessOwnerResponsibilities = styled.section`
   position: relative;
