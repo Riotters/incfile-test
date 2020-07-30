@@ -25,19 +25,19 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-lodash`,
-    {
-      resolve: `gatsby-plugin-csp`,
-      options: {
-        mergeScriptHashes: false,
-        mergeStyleHashes: false,
-        directives: {
-          "script-src": `'self' 'unsafe-eval' 'unsafe-inline'`,
-          "style-src": `'self' 'unsafe-inline'`,
-          "img-src": `data: 'self'`,
-          "font-src": `data: 'self'`,
-        },
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-csp`,
+    //   options: {
+    //     mergeScriptHashes: false,
+    //     mergeStyleHashes: false,
+    //     directives: {
+    //       "script-src": `'self' 'unsafe-eval' 'unsafe-inline'`,
+    //       "style-src": `'self' 'unsafe-inline'`,
+    //       "img-src": `data: 'self'`,
+    //       "font-src": `data: 'self'`,
+    //     },
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
