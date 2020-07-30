@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Disqus, CommentCount } from 'gatsby-plugin-disqus'
 import { color } from "../atomic/atoms/styles/colors";
 import { articles, followUs } from "../static/blog";
 import Layout from "../components/layout";
@@ -44,7 +45,8 @@ const Sidebar = styled.div`
 `
 
 //todo components
-const Disqus = styled.div`
+
+const Disqusbox = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,34 +60,46 @@ const Disqus = styled.div`
         color: ${color.grey2};
     }
 `;
+
 const Related = styled.div``;
 
 
-const Article = () => (
-  <Layout>
-    <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
-    <Top headline="Where Business Begins. Your Resource to Grow." text="The Incfile Blog" imageName="business-checklist"/>
-    <Wrapper>
-        <Container>
-            <Content>
-                <Single>
-                    <Path />
-                    <ArticleSingle />
-                    <Disqus>
-                        <h2>Disqus</h2>
-                    </Disqus>
-                </Single>
-                <Sidebar>
-                    <Searchbar />
-                    <NewsletterCard />
-                    <FollowUs content={followUs} />
-                </Sidebar>
-            </Content>
-            <Related />
-            <Articles />
-        </Container>
-    </Wrapper>
-  </Layout>
-);
+const Article = () => {
+    let disqusConfig = {
+        //url: `${config.siteUrl+location.pathname}`,
+        url: `http://localhost:8000/article`,
+        identifier: "1",
+        title: "title",
+    }
+    return (
+        <Layout>
+            <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
+            <Top headline="Where Business Begins. Your Resource to Grow." text="The Incfile Blog" imageName="business-checklist"/>
+            <Wrapper>
+                <Container>
+                    <Content>
+                        <Single>
+                            <Path />
+                            <ArticleSingle />
+                            <Disqusbox>
+                                <h2>Disqus</h2>
+                            </Disqusbox>
+                            <CommentCount config={disqusConfig} placeholder={'...'} />
+                            /* Post Contents */
+                            <Disqus config={disqusConfig} />
+                        </Single>
+                        <Sidebar>
+                            <Searchbar />
+                            <NewsletterCard />
+                            <FollowUs content={followUs} />
+                        </Sidebar>
+                    </Content>
+                    <Related />
+                    <Articles />
+                </Container>
+            </Wrapper>
+        </Layout>
+    )
+};
 
 export default Article;

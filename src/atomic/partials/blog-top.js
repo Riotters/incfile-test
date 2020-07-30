@@ -3,7 +3,9 @@ import styled from "styled-components"
 import Image from "../../components/image_nobase64"
 import Container from "../../atomic/container"
 import { color } from "../../atomic/atoms/styles/colors"
-import OvalSVG from "../../images/oval.inline.svg"
+import OvalSVG from "../../images/icons/oval-blue-mini.inline.svg"
+import Oval2SVG from "../../images/icons/oval-blue-small.inline.svg"
+import Oval3SVG from "../../images/icons/oval-blue-medium.inline.svg"
 import VisibilitySensor from "../../components/VisibilitySensor"
 
 const Wrapper = styled.div`
@@ -20,35 +22,32 @@ const Wrapper = styled.div`
 `;
 
 const Oval = styled.div`
-  height: 90%;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  z-index: 1;
+`
+
+const Oval2 = styled.div`
   position: absolute;
   top: 0;
-  right: 0;
-  z-index: 0;
+  left: 0;
+`;
+
+const Oval3 = styled.div`
+  position: absolute;
+  bottom: 0;
+  right: 45%;
+  max-height: 381px;
+  max-width: 570pxpx;
   overflow: hidden;
-
-  @media (min-width: 768px) {
-    width: 50%;
-    max-width: 850px;
-  }
-
-  &::after {
-    content: "";
-    display: block;
-    padding-bottom: 100%;
-  }
+  transform: translateX(100%);
 
   svg {
     height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-
-    path {
-      transform: matrix(1, 0, 0, -1, -115, 777);
-    }
+    width: 100%;
   }
-`
+`;
 
 const Content = styled.div`
   display: flex;
@@ -131,6 +130,12 @@ const Top = ({headline, text, imageName, imageAlt}) => (
         </Oval>
       )}
     </VisibilitySensor>
+    <Oval2>
+      <Oval2SVG />
+    </Oval2>
+    <Oval3>
+      <Oval3SVG />
+    </Oval3>
     <Container>
       <Content>
         <VisibilitySensor partialVisibility once>

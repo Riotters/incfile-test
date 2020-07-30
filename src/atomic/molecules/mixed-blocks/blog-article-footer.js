@@ -23,10 +23,15 @@ const Wrapper = styled.div`
     }
 `
 
+const content = {
+  text: "More",
+  url: "/article"
+}
+
 const BlogArticleFooter = ({ className }) => {
   return (
     <Wrapper className={className}>
-        <Button className="more-button" theme="primary48" content="More" arrow />
+        <Button className="more-button" theme="primary48" content={content} arrow />
         <Socials />
     </Wrapper>
   )

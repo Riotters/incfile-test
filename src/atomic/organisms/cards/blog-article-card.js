@@ -17,6 +17,10 @@ const Wrapper = styled.div`
       justify-content: space-between;
       height: 100%;
     }
+
+    .tags {
+      padding: 16px 24px 8px;
+    }
 `
 
 const BlogArticleCard = ({ className, content }) => {
@@ -27,7 +31,7 @@ const BlogArticleCard = ({ className, content }) => {
               <BlogArticleImage image={content.image}>
                   <HeartsCounter likes={content.likes} />
               </BlogArticleImage>
-              <BlogArticleTags content={content.tags} />
+              <BlogArticleTags className="tags" content={content.tags} />
               <BlogArticleTexts content={content.texts} />
             </div>
             <BlogArticleFooter />
