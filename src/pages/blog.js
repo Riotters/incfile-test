@@ -39,13 +39,18 @@ const Articles = styled.div`
 
 const Sidebar = styled.div`
     width: 100%;
+`
+
+const Sticky = styled.div`
+    position: sticky;
+    top: 100px;
 
     & > div {
         &:not(:last-child) {
             margin-bottom: 30px;
         }
     }
-`
+`;
 
 const Blog = () => (
   <Layout>
@@ -60,9 +65,11 @@ const Blog = () => (
                     ))}
                 </Articles>
                 <Sidebar>
-                    <Searchbar />
-                    <NewsletterCard />
-                    <FollowUs content={followUs} />
+                    <Sticky>
+                        <Searchbar />
+                        <NewsletterCard />
+                        <FollowUs content={followUs} />
+                    </Sticky>
                 </Sidebar>
             </Content>
         </Container>

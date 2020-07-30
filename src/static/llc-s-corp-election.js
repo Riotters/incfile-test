@@ -102,7 +102,7 @@ export const fairSalary = {
     Speak with your accountant or attorney for more information.`,
 }
 
-export const administrativeOverhead = {
+export const overhead = {
   header:
     `Administrative Overhead Of the S Corporation Election`,
   text:

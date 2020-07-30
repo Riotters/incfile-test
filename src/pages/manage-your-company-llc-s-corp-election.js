@@ -18,9 +18,10 @@ import Card from "../components/certificate-card";
 import ArrowLink from "../components/arrow-link";
 import H2Text from "../atomic/molecules/text-blocks/h2-text";
 import H3Text from "../atomic/molecules/text-blocks/h3-text";
-import { top, reducingTax, llcsTax, howSaveMoney, taxCalculator, fairSalary, administrativeOverhead, fileForm, incfileFile, help, faq } from "../static/llc-s-corp-election"
+import { top, reducingTax, llcsTax, howSaveMoney, taxCalculator, fairSalary, administrativeOverhead, fileForm, incfileFile, help, faq, overhead } from "../static/llc-s-corp-election"
 import NumericBoxedList from "../atomic/organisms/lists/numeric-boxed-list";
 import CircleCheckmarkText from "../atomic/molecules/static-check/circle-checkmark-text";
+import TopImageBox from "../components/top-image-box";
 
 const ReducingTax = styled.section`
   position: relative;
@@ -64,42 +65,45 @@ const LLCsTax = styled.section`
   padding-bottom: 64px;
 `;
 
-const RequirementsByState = styled.section`
+const Example = styled.section`
+  height: 1000px;
+  position: relative;
+  padding-top: 75px;
+  padding-bottom: 64px;
+  background-image: ${gradient.orange3};
+`;
+
+const FairlSalary = styled.section`
+  height: 500px;
+  position: relative;
+  padding-top: 75px;
+  padding-bottom: 64px;
+`;
+
+
+const Overhead = styled.section`
+  height: 1000px;
+  position: relative;
+  padding-top: 75px;
+  padding-bottom: 64px;
   background-image: ${gradient.blue3};
-  padding-top: 100px;
+`;
 
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+const OverheadBoxes = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  width: 100%;
+  max-width: 970px;
+  padding: 140px 0;
+  margin: 0 auto;
+`;
 
-  .help {
-    padding-bottom: 150px;
-  }
-
-  .numericlist {
-    display: grid;
-    grid-template-columns: 270px 270px;
-    grid-gap: 30px;
-    list-style: none;
-    margin-top: 24px;
-
-    li {
-      position: relative;
-      padding-left: 52px;
-      font-family: Avenir, sans-serif;
-      font-size: 16px;
-      line-height: 24px;
-      color: ${color.grey2};
-
-      svg {
-        position: absolute;
-        top: 0;
-        left: 0;
-      }
-    }
-  }
+const FileForm = styled.section`
+  height: 1000px;
+  position: relative;
+  padding-top: 75px;
+  padding-bottom: 64px;
 `;
 
 const Buttonsbox = styled.div`
@@ -135,6 +139,32 @@ const CorpElection = () => (
         <H2Text content={llcsTax} />
       </ContentObject>
     </LLCsTax>
+    <Example>
+
+    </Example>
+    <FairlSalary>
+
+    </FairlSalary>
+    <Overhead>
+      <TextCenterLayout headline={overhead.header} text={overhead.text}/>
+      <OverheadBoxes>
+        <TopImageBox image="envelope-dollar" color={color.yellow3}>
+            <h4>Setting up monthly payroll</h4>
+            <p>
+              You will need to set up a monthly payroll where you pay yourself and submit your payroll taxes
+            </p>
+        </TopImageBox>
+        <TopImageBox image="calculator-coin" color={color.red3}>
+            <h4>Additional accounting fees</h4>
+            <p>
+              Your accountant will need to file your taxes in a slightly different way, which may increase your accounting fees
+            </p>
+        </TopImageBox>     
+      </OverheadBoxes>
+    </Overhead>
+    <FileForm>
+      <TextCenterLayout headline={fileForm.header} text={fileForm.text}/>
+    </FileForm>
     <Benefits />
     <Articles />
   </Layout>

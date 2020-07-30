@@ -4,11 +4,13 @@ import Whitebox from "../../atoms/boxes/white-box";
 import Tags from "../../molecules/lists/blog-article-tags";
 import Header from "../../molecules/text-blocks/article-header";
 import Content from "../../molecules/text-blocks/article-content";
+import Socials from "../../molecules/lists/article-socials"
 import Footer from "../../molecules/mixed-blocks/article-footer";
 
 const Wrapper = styled.div`
     height: 100%;
     width: 100%;
+    position: relative;
 
     .card {
       display: flex;
@@ -16,6 +18,7 @@ const Wrapper = styled.div`
       justify-content: space-between;
       height: 100%;
       padding: 16px;
+      overflow: unset;
 
       @media (min-width: 576px) {
         padding: 32px;  
@@ -48,6 +51,7 @@ const ArticleSingle = ({ className }) => {
                 <Header content={aaa} />
             </div>
             <Content content={aaa.content} />
+            <Socials />
             <Footer />
         </Whitebox>
     </Wrapper>

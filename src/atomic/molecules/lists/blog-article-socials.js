@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import GoogleSVG from "../../../images/icons/google32.inline.svg";
 import TwitterSVG from "../../../images/icons/twitter32.inline.svg";
 import FacebookSVG from "../../../images/icons/facebook32.inline.svg";
 import PinterestSVG from "../../../images/icons/pinterest32.inline.svg";

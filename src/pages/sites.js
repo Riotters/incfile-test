@@ -55,8 +55,8 @@ const ComponentsPage = () => (
             <Link to="/manage-your-company-foreign-qualification">Foreign Qualification</Link>
             <Link to="/manage-your-company-registered-agent">Registered Agent</Link>
             <Link to="/manage-your-company-llc-s-corp-election">S Corp Tax Election (WIP)</Link>
-            <Link to="/blog">Blog (WIP)</Link>
-            <Link to="/article">Article (WIP)</Link>
+            <Link to="/blog">Blog (no API)</Link>
+            <Link to="/article">Article (no API)</Link>
             <Link to="/type-of-business/airbnb-1">Airbnb (WIP)</Link>
             <h2>Additional sites</h2>
             <Link to="/components">Components</Link>
