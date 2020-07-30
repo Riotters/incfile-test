@@ -67,7 +67,7 @@ const Related = styled.div``;
 const Article = () => {
     let disqusConfig = {
         //url: `${config.siteUrl+location.pathname}`,
-        url: `http://localhost:8000/article`,
+        url: `https://riotters.github.io/incfile-test/article/`,
         identifier: "1",
         title: "title",
     }
