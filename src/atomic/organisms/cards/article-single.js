@@ -15,7 +15,11 @@ const Wrapper = styled.div`
       flex-direction: column;
       justify-content: space-between;
       height: 100%;
-      padding: 32px;
+      padding: 16px;
+
+      @media (min-width: 576px) {
+        padding: 32px;  
+      }
     }
 `
 const aaa = {

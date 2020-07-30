@@ -9,8 +9,12 @@ const Wrapper = styled.div`
     padding-top: 48px;
     
     .background {
-        padding: 24px 32px 32px 128px;
+        padding: 128px 16px 16px;
         position: relative;
+
+        @media (min-width: 768px) {
+            padding: 24px 32px 32px 128px;
+        }
 
         .gatsby-image-wrapper {
             height: 80px;

@@ -15,6 +15,7 @@ const Wrapper = styled.div`
   height: 480px;
   position: relative;
   background-color: ${color.blue3};
+  overflow: hidden;
 
   @media (min-width: 768px) {
     padding-top: 80px;
@@ -36,10 +37,10 @@ const Oval2 = styled.div`
 
 const Oval3 = styled.div`
   position: absolute;
-  bottom: 0;
+  bottom: -7px;
   right: 45%;
   max-height: 381px;
-  max-width: 570pxpx;
+  max-width: 570px;
   overflow: hidden;
   transform: translateX(100%);
 

@@ -32,6 +32,10 @@ const Content = styled.div`
 const Single = styled.div`
     display: flex;
     flex-direction: column;
+
+    #disqus_thread {
+        padding-top: 48px;
+    }
 `;
 
 const Sidebar = styled.div`
@@ -43,23 +47,6 @@ const Sidebar = styled.div`
         }
     }
 `
-
-//todo components
-
-const Disqusbox = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 500px;
-    border-radius: 5px;
-    background-color: ${color.grey3};
-    margin-top: 48px;
-
-    h2 {
-        color: ${color.grey2};
-    }
-`;
 
 const Related = styled.div``;
 
@@ -81,11 +68,6 @@ const Article = () => {
                         <Single>
                             <Path />
                             <ArticleSingle />
-                            <Disqusbox>
-                                <h2>Disqus</h2>
-                            </Disqusbox>
-                            <CommentCount config={disqusConfig} placeholder={'...'} />
-                            /* Post Contents */
                             <Disqus config={disqusConfig} />
                         </Single>
                         <Sidebar>
