@@ -6,7 +6,6 @@ const Wrapper = styled.div`
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    padding: 16px 24px 8px;
 
     span {
         &:not(:last-child) {

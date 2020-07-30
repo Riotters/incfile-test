@@ -9,6 +9,9 @@ import Container from "../atomic/container";
 import NewsletterCard from "../atomic/organisms/cards/blog-newsletter-card";
 import Searchbar from "../atomic/organisms/forms/blog-search-articles";
 import FollowUs from "../atomic/organisms/cards/blog-follow-us";
+import Path from "../atomic/molecules/blocks/article-path";
+import ArticleSingle from "../atomic/organisms/cards/article-single";
+import Articles from "../components/partials/sections/articles";
 
 const Wrapper = styled.section`
     padding: 72px 0;
@@ -27,6 +30,7 @@ const Content = styled.div`
 
 const Single = styled.div`
     display: flex;
+    flex-direction: column;
 `;
 
 const Sidebar = styled.div`
@@ -40,9 +44,20 @@ const Sidebar = styled.div`
 `
 
 //todo components
-const Path = styled.div``;
-const ArticleCard = styled.div``;
-const Disqus = styled.div``;
+const Disqus = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    border-radius: 5px;
+    background-color: ${color.grey3};
+    margin-top: 48px;
+
+    h2 {
+        color: ${color.grey2};
+    }
+`;
 const Related = styled.div``;
 
 
@@ -55,8 +70,10 @@ const Article = () => (
             <Content>
                 <Single>
                     <Path />
-                    <ArticleCard />
-                    <Disqus />
+                    <ArticleSingle />
+                    <Disqus>
+                        <h2>Disqus</h2>
+                    </Disqus>
                 </Single>
                 <Sidebar>
                     <Searchbar />
@@ -65,6 +82,7 @@ const Article = () => (
                 </Sidebar>
             </Content>
             <Related />
+            <Articles />
         </Container>
     </Wrapper>
   </Layout>

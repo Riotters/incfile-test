@@ -10,7 +10,7 @@ import VisibilitySensor from "../../VisibilitySensor"
 
 const Wrapper = styled.div`
   padding-top: 80px;
-  padding-bottom: 160px;
+  padding-bottom: 80px;
   position: relative;
   overflow: hidden;
 `

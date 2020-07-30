@@ -7,6 +7,7 @@ import { color, gradient } from '../components/styles/colors'
 import { shadow } from "../components/styles/shadows"
 import Button from "../components/button"
 import ArrowLink from "../components/arrow-link"
+import PathLink from "../atomic/molecules/buttons/path"
 import ArrowButton from "../components/arrow-button"
 import IconCircle from "../components/icons/circle"
 import ArrowSVG from "../images/arrow.inline.svg"
@@ -292,6 +293,10 @@ const ComponentsPage = () => (
             <h3>Text</h3>
             <FlexWrapper>
                 <ArrowLink>Learn more</ArrowLink>
+            </FlexWrapper>
+            <h3>Path</h3>
+            <FlexWrapper>
+                <PathLink to="#">Form a Business Today</PathLink>
             </FlexWrapper>
             <h3>Additional</h3>
             <FlexWrapper>

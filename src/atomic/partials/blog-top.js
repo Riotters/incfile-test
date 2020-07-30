@@ -4,7 +4,6 @@ import Image from "../../components/image_nobase64"
 import Container from "../../atomic/container"
 import { color } from "../../atomic/atoms/styles/colors"
 import OvalSVG from "../../images/oval.inline.svg"
-import Button from "../../components/button"
 import VisibilitySensor from "../../components/VisibilitySensor"
 
 const Wrapper = styled.div`

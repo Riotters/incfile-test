@@ -14,6 +14,10 @@ import Button from "./button"
 import CurveSVG from "../images/green-curve.inline.svg"
 
 const Wrapper = styled.div`
+  padding-top: 56px;
+`;
+
+const Top = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -250,9 +254,9 @@ const Social = styled.ul`
 `
 
 const Footer = () => (
-  <div>
+  <Wrapper>
     <Container>
-      <Wrapper>
+      <Top>
         <Logo>
           <LogoSVG />
         </Logo>
@@ -269,7 +273,7 @@ const Footer = () => (
             Subscribe
           </Button>
         </NewsletterWrapper>
-      </Wrapper>
+      </Top>
       <Navigation>
         <Curve>
           <CurveSVG />
@@ -450,7 +454,7 @@ const Footer = () => (
         </Social>
       </Wrapper>
     </Container>
-  </div>
+  </Wrapper>
 )
 
 export default Footer

@@ -13,7 +13,7 @@ export const articles = [
                     date: "February 25, 2020",
                     author: "Melissa Clark",
                     from: "State Information",
-                }
+                },
             ],
             text: 'One of the most difficult parts of starting a business is finding the perfect name. You need to find the right balance of functionality and appeal — letting your customers',
           }
