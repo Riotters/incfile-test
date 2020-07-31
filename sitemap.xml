@@ -14,6 +14,7 @@
 <url> <loc>https://incfile.netlify.app/incfile-test/manage-your-company/annual-report/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://incfile.netlify.app/incfile-test/manage-your-company/business-license/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://incfile.netlify.app/incfile-test/manage-your-company/certificate-of-good-standing/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://incfile.netlify.app/incfile-test/manage-your-company/corporate-llc-kit/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://incfile.netlify.app/incfile-test/manage-your-company/tax-id-ein/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://incfile.netlify.app/incfile-test/sites/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://incfile.netlify.app/incfile-test/type-of-business/airbnb-1/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
