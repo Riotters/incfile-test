@@ -142,7 +142,7 @@ export const fileForm = {
     ]
 }
 
-export const incfileFile = {
+export const behalfFile = {
   header:
     `Have Incfile File on Your Behalf`,
   text:
@@ -159,19 +159,27 @@ export const incfileFile = {
     `certain times`,
   text4:
     `after that.`,
-  button:
-    `Help me file my S Corporation tax election today!`,
+  button: {
+    text: `Help me file my S Corporation tax election today!`,
+    url: `#`,
+  }
 }
 
 export const help = {
   header:
     `Help File My LLC S Corporation Tax Election`,
-  header2:
+  saveYourTime: {
+    header:
     `Save your time, we’ll handle the paperwork`,
-  text:
-    `We provide a complete S Corporation Tax Election service to register and file your LLC tax status with the IRS on your behalf. Just place an order and we’ll collect the right information to guide you through the process, and the IRS will notify you of your updated tax status.`,
-  button:
-    `Help me file my S Corporation tax election today!`,
+    text:
+      `We provide a complete S Corporation Tax Election service to register and file your LLC tax status with the IRS on your behalf. Just place an order and we’ll collect the right information to guide you through the process, and the IRS will notify you of your updated tax status.`,
+  },
+  button: {
+    text: `Help me file my S Corporation tax election today!`,
+    url: `#`,
+  },
+  header2:
+    `Common Questions About Filing Your S Corporation Tax Election`
 }
 
 export const faq = {

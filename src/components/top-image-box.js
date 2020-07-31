@@ -11,7 +11,7 @@ const Wrapper = styled.div`
     position: relative;
     border-radius: 5px;
     background-color: ${color.white};
-    box-shadow: ${shadow.white1};
+    box-shadow: ${props => (props.noShadow ? "" : shadow.white1)};
 
     .top {
         display: flex;
@@ -32,18 +32,21 @@ const Wrapper = styled.div`
         padding: 24px 24px 16px;
     }
 
-    p {
+    p, a {
         font-size: 16px;
         line-height: 24px;
+    }
+
+    p {
         color: ${color.grey1};
         padding: 0 24px;
     }
 `
 
-const TopImageBox = ({ className, image, color, children }) => {
+const TopImageBox = ({ className, image, color, children, noShadow }) => {
 
   return (
-    <Wrapper className={className} color={color}>
+    <Wrapper className={className} color={color} noShadow={noShadow}>
         <div className="top">
             {image && (
                 <Image filename={image} />

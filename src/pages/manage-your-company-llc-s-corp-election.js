@@ -18,10 +18,11 @@ import Card from "../components/certificate-card";
 import ArrowLink from "../components/arrow-link";
 import H2Text from "../atomic/molecules/text-blocks/h2-text";
 import H3Text from "../atomic/molecules/text-blocks/h3-text";
-import { top, reducingTax, llcsTax, howSaveMoney, taxCalculator, fairSalary, administrativeOverhead, fileForm, incfileFile, help, faq, overhead } from "../static/llc-s-corp-election"
+import { top, reducingTax, llcsTax, howSaveMoney, taxCalculator, fairSalary, administrativeOverhead, fileForm, behalfFile, help, faq, overhead } from "../static/llc-s-corp-election"
 import NumericBoxedList from "../atomic/organisms/lists/numeric-boxed-list";
 import CircleCheckmarkText from "../atomic/molecules/static-check/circle-checkmark-text";
 import TopImageBox from "../components/top-image-box";
+import ContentCenter from "../atomic/partials/content-center";
 
 const ReducingTax = styled.section`
   position: relative;
@@ -51,6 +52,10 @@ const ReducingTax = styled.section`
 
     &.pb40 {
       padding-bottom: 40px;
+    }
+
+    &.pb72 {
+      padding-bottom: 72px;
     }
   }
 
@@ -82,11 +87,16 @@ const FairlSalary = styled.section`
 
 
 const Overhead = styled.section`
-  height: 1000px;
   position: relative;
   padding-top: 75px;
   padding-bottom: 64px;
   background-image: ${gradient.blue3};
+
+  .bottom-text {
+    max-width: 570px;
+    color: ${color.grey1};
+    text-align: center;
+  }
 `;
 
 const OverheadBoxes = styled.div`
@@ -100,10 +110,55 @@ const OverheadBoxes = styled.div`
 `;
 
 const FileForm = styled.section`
-  height: 1000px;
   position: relative;
   padding-top: 75px;
   padding-bottom: 64px;
+`;
+
+const BehalfFile = styled.section`
+  position: relative;
+  padding-top: 75px;
+  padding-bottom: 120px;
+
+  h2 {
+    padding-bottom: 72px;
+  }
+
+  .card {
+    margin: 56px 0 48px;    
+  }
+`;
+
+const Help = styled.section`
+  position: relative;
+  padding-top: 88px;
+  padding-bottom: 64px;
+
+  &::before {
+    content: '';
+    height: 1188px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: ${gradient.green3};
+  }
+
+  .header-1 {
+    padding-bottom: 56px;
+  }
+
+  .header-2 {
+    padding-top: 72px;
+  }
+
+  h3 {
+    padding-bottom: 24px;
+  }
+
+  p {
+    padding-bottom: 48px;
+  }
 `;
 
 const Buttonsbox = styled.div`
@@ -115,7 +170,7 @@ const Buttonsbox = styled.div`
   }
 `;
 
-const List = <NumericBoxedList content={llcsTax}/>;
+const List = <NumericBoxedList content={llcsTax.list}/>;
 const NoImpact = <CircleCheckmarkText isRed content={llcsTax.red}/>;
 
 const CorpElection = () => (
@@ -129,9 +184,9 @@ const CorpElection = () => (
       </Buttonsbox>
     </Top>
     <ReducingTax>
-      <ImageContent image="calculator" paddingTop="60">
+      <ImageContent image="cash-register" paddingTop="60">
         <H3Text content={reducingTax} />
-        <Button content={reducingTax.button[0]} theme="secondary56" arrow margin="0 auto 0 0" />
+        <Button content={reducingTax.button[0]} theme="secondary56" arrow margin="48px auto 0 0" />
       </ImageContent>
     </ReducingTax>
     <LLCsTax>
@@ -147,24 +202,57 @@ const CorpElection = () => (
     </FairlSalary>
     <Overhead>
       <TextCenterLayout headline={overhead.header} text={overhead.text}/>
-      <OverheadBoxes>
-        <TopImageBox image="envelope-dollar" color={color.yellow3}>
-            <h4>Setting up monthly payroll</h4>
-            <p>
-              You will need to set up a monthly payroll where you pay yourself and submit your payroll taxes
-            </p>
-        </TopImageBox>
-        <TopImageBox image="calculator-coin" color={color.red3}>
-            <h4>Additional accounting fees</h4>
-            <p>
-              Your accountant will need to file your taxes in a slightly different way, which may increase your accounting fees
-            </p>
-        </TopImageBox>     
-      </OverheadBoxes>
+      <ContentCenter>
+        <OverheadBoxes>
+          <TopImageBox image="envelope-dollar" color={color.yellow3}>
+              <h4>Setting up monthly payroll</h4>
+              <p>
+                You will need to set up a monthly payroll where you pay yourself and submit your payroll taxes
+              </p>
+          </TopImageBox>
+          <TopImageBox image="calculator-coin" color={color.red3}>
+              <h4>Additional accounting fees</h4>
+              <p>
+                Your accountant will need to file your taxes in a slightly different way, which may increase your accounting fees
+              </p>
+          </TopImageBox>     
+        </OverheadBoxes>
+        <p className="bottom-text">This will likely be more than counterbalanced by the money you save in tax payments.</p>
+      </ContentCenter>
     </Overhead>
     <FileForm>
       <TextCenterLayout headline={fileForm.header} text={fileForm.text}/>
+      <ContentCenter contentWidth="770">
+        <NumericBoxedList content={fileForm.list} />
+      </ContentCenter>
     </FileForm>
+    <BehalfFile>
+      <TextCenterLayout headline={behalfFile.header} text={behalfFile.text}/>
+      <ContentCenter contentWidth="470">
+        <TopImageBox className="card" image="24-hours" color={color.orange3} noShadow>
+            <h4>{behalfFile.header2}</h4>
+            <p>
+              {behalfFile.text2}
+              <a href="#"> {behalfFile.link} </a>
+              {behalfFile.text3}
+              <a href="#"> {behalfFile.link2} </a>
+              {behalfFile.text4}
+            </p>
+        </TopImageBox>
+        <Button theme="secondary56" content={behalfFile.button} arrow />
+      </ContentCenter>
+    </BehalfFile>
+    <Help>
+      <TextCenterLayout className="header-1" headline={help.header}/>
+      <ContentCenter contentWidth="770">
+        <H3Text content={help.saveYourTime} />
+        <Button theme="primary56" content={help.button} margin="0 auto" arrow />
+      </ContentCenter>
+      <TextCenterLayout className="header-2" headline={help.header2} headlineWidth="750"/>
+      <ContentCenter contentWidth="770">
+        <Accordion faq={faq} />
+      </ContentCenter>
+    </Help>
     <Benefits />
     <Articles />
   </Layout>

@@ -1,9 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import Image from "../../image_nobase64";
+import Container from "../container";
+import Image from "../atoms/image/image";
 
 const Wrapper = styled.div`
   display: flex;
+  width: 100%;
 `;
 
 const Content = styled.div`
@@ -14,11 +16,6 @@ const Content = styled.div`
   @media (min-width: 768px) {
     width: 60%;
     padding-right: 100px;
-  }
-
-  h2,
-  p {
-    max-width: ${props => (props.textWidth ? props.textWidth : "")}px;
   }
 
   h2 {
@@ -35,10 +32,10 @@ const Imagebox = styled.div`
   display: none;
   align-items: center;
   width: 100%;
-  max-width: ${props => (props.imageWidth ? props.imageWidth : "")}px;
 
   @media (min-width: 768px) {
     display: flex;
+    width: 40%;
   }
 
   .gatsby-image-wrapper {
@@ -46,16 +43,18 @@ const Imagebox = styled.div`
   }
 `;
 
-const LeftContentRightImage = ({ children, image, imageWidth, textWidth }) => {
+const LeftContentRightImage = ({ className, children, image }) => {
   return (
-        <Wrapper>
-          <Content textWidth={textWidth}>
-              { children }
-          </Content>
-          <Imagebox imageWidth={imageWidth}>
-            <Image filename={image} />
-          </Imagebox>
-        </Wrapper>
+    <Container>
+      <Wrapper className={className}>
+        <Content className="content">
+            { children }
+        </Content>
+        <Imagebox className="imagebox">
+          <Image filename={image} />
+        </Imagebox>
+      </Wrapper>
+    </Container>
   );
 };
 

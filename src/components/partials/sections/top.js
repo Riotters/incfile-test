@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { color } from "../../../atomic/atoms/styles/colors";
 import Image from "../../image_nobase64";
 import Container from "../../container";
 import OvalSVG from "../../../images/oval.inline.svg";
@@ -38,6 +39,19 @@ const Oval = styled.div`
     position: absolute;
     right: 0;
     bottom: 0;
+
+    defs {
+      radialGradient {
+        stop {
+          &:nth-child(1) {
+            stop-color: ${props => props.ovalColor === "blue" ? color.blue1 : ""}
+          }
+          &:nth-child(2) {
+            stop-color: ${props => props.ovalColor === "blue" ? color.babyblue2 : ""}
+          }
+        }
+      }
+    }
 
     path {
       transform: matrix(1, 0, 0, -1, -115, 777);
@@ -105,11 +119,11 @@ const ImageContainer = styled.div`
   }
 `;
 
-const Top = ({ children, imageName, imageAlt, headlineWidth }) => (
+const Top = ({ children, imageName, imageAlt, headlineWidth, ovalColor }) => (
   <Wrapper>
     <VisibilitySensor partialVisibility once>
       {({ isVisible }) => (
-        <Oval className={isVisible ? "scaleUp enter" : "scaleUp"}>
+        <Oval className={isVisible ? "scaleUp enter" : "scaleUp"} ovalColor={ovalColor}>
           <OvalSVG />
         </Oval>
       )}

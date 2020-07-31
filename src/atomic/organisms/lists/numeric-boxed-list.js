@@ -34,7 +34,7 @@ const Wrapper = styled.ul`
 const NumericBoxedList = ({ className, content }) => {
   return (
     <Wrapper className={className}>
-        {content.list.map((item, id) => (
+        {content.map((item, id) => (
             <Whitebox>
             <Circle>
                 {id + 1}

@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
-import ArrowLink from "../../arrow-link"
-import VisibilitySensor from "../../VisibilitySensor"
+import ArrowLink from "../atoms/links/link"
+import VisibilitySensor from "../../components/VisibilitySensor"
 
 const Wrapper = styled.div`
   display: flex;
@@ -25,10 +25,10 @@ const Wrapper = styled.div`
   }
 `
 
-const TextCenterLayout = ({headline, headlineWidth, text, textWidth, linkText, linkUrl}) => {
+const TextCenterLayout = ({className, headline, headlineWidth, text, textWidth, linkText, linkUrl}) => {
 
   return (
-    <Wrapper headlineWidth={headlineWidth} textWidth={textWidth}>
+    <Wrapper className={className} headlineWidth={headlineWidth} textWidth={textWidth}>
         {headline && (
             <VisibilitySensor partialVisibility once>
                 {({ isVisible }) => (
