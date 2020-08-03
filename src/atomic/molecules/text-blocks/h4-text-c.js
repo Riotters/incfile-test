@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Colorbox from "../../atoms/boxes/color-box";
+import Colorbox from "../../molecules/blocks/left-icon-block-colored";
 import Curve from "../../atoms/shapes/curve";
 
 const Wrapper = styled.div`

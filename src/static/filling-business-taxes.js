@@ -134,6 +134,36 @@ export const typesOfTaxes = {
       `Since tax season is right around the corner and comes swiftly when you're a busy business owner, we wanted to give you access to a CPA to get your personal and business tax returns prepared professionally. 
       If you have a Partnership, S Corporation or a C Corporation, you will have to file a business tax return regardless of whether you have any activity or not in 2016. 
       Those of you who have single-member LLCs might have a filing requirement for the business as well, but that depends on whether you had activity in 2016 and some states required some form of filing regardless of inactivity.`,
+  },
+  card: {
+    header:
+      `Learn more about taxes`,
+    inputs: [
+      {
+        label:
+          `Name`,
+        placeholder:
+          `John Smith`,
+      },
+      {
+        label:
+          `Email`,
+        placeholder:
+          `Your email address`,
+      },
+      {
+        label:
+          `Phone number`,
+        placeholder:
+          `Your phone number`,
+      },
+    ],
+    button: {
+      text:
+        `Yes, contact me to learn more`,
+      url:
+        `#`,
+    }
   }
 }
 

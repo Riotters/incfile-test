@@ -1,12 +1,16 @@
 import React from "react";
+import PropTypes from "prop-types";
 import styled from "styled-components";
 import { Link } from "gatsby";
-import ArrowSVG from "../images/arrow.inline.svg";
+import ArrowSVG from "../../../images/arrow.inline.svg";
 
 const Wrapper = styled(Link)`
   display: flex;
   align-items: center;
   text-decoration: none;
+  max-width: ${props => props.maxWidth ? `${props.maxWidth}px` : ""} !important;
+  padding-bottom: ${props => props.bottomPadding ? `${props.bottomPadding}px` : ""} !important;
+  margin-bottom: ${props => props.bottomMargin}px !important;
   
   span {
     transition: color 0.3s ease;
@@ -40,12 +44,23 @@ const Arrow = styled.div`
   }
 `
 
-const ArrowLink = ({ children, className, to }) => (
-  <Wrapper to={to} className={className}>
+const ArrowLink = ({ className, content, maxWidth, bottomPadding, bottomMargin }) => (
+  <Wrapper to={content.url} className={className} maxWidth={maxWidth} bottomPadding={bottomPadding} bottomMargin={bottomMargin}>
     <Arrow>
       <ArrowSVG />
     </Arrow>
-    <span>{children}</span>
+    <span>{content.text}</span>
   </Wrapper>
 )
+
 export default ArrowLink
+
+ArrowLink.propTypes = {
+  maxWidth: PropTypes.number,
+  bottomPadding: PropTypes.number,
+  bottomMargin: PropTypes.number
+}
+
+ArrowLink.defaultProps = {
+  bottomMargin: 32
+}

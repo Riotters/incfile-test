@@ -8,7 +8,7 @@ const StyledParagraph = styled.p`
     font-size: ${props => props.big ? '20' : '16'}px;
     line-height: ${props => props.big ? '32' : '24'}px;
     max-width: ${props => props.maxWidth ? `${props.maxWidth}px` : ""};
-    padding-bottom: ${props => props.bottomPadding}px !important;
+    padding-bottom: ${props => props.bottomPadding ? `${props.bottomPadding}px` : ""} !important;
     margin-bottom: ${props => props.bottomMargin}px !important;
     
     ${props => (props.flex &&
@@ -55,6 +55,5 @@ Paragraph.defaultProps = {
     flexJustify: false,
     flexJustifyValue: "center",
     flexAlignValue: "center",
-    bottomPadding: 24,
-    bottomMargin: 35
+    bottomMargin: 32
 }
