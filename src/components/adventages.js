@@ -1,7 +1,10 @@
 import React from "react"
 import styled from "styled-components"
-import { color } from "./styles/colors"
-import { shadow } from "./styles/shadows"
+import {color} from "./styles/colors"
+import {shadow} from "./styles/shadows"
+import {Link} from "gatsby"
+import ArrowSVG from "../images/arrow.inline.svg";
+import IconCircle from "./icons/circle";
 
 const Wrapper = styled.div`
     padding-top: 24px;
@@ -40,17 +43,28 @@ const Circle = styled.span`
     height: 48px;
     width: 48px;
     border-radius: 50%;
-    background-color: ${color.green1};
-    box-shadow: ${shadow.green1};
+    background-color: ${props => props.circleBackgroundColor};
+    box-shadow: ${props => props.circleBackgroundShadow};
     position: absolute;
     top: -24px;
     left: 40px;
+    
+    ${props => props.position && props.position === 'center' &&
+    "left: calc(50% - 24px);"
+}
+    
+    span{
+        font-family: Avenir-Heavy, sans-serif;
+        color: white;
+        font-size: 16px;
+        line-height: 24px;
+    }
     
     svg {
         height: 20px;
         width: 20px;
         fill: none;
-        stroke: ${color.white};
+        stroke: ${props => props.colorStroke};
         stroke-width: 2;
         stroke-linecap: round;
         stroke-linejoin: round;
@@ -61,20 +75,55 @@ const Circle = styled.span`
     }
 `;
 
-const Adventages = ({ className, headline, text }) => {
-  return (
-    <Wrapper className={className} headline={headline} text={text}>
-        <Box>
-            <Circle>
-                <svg viewBox="-1 0 16 12">
-                    <polyline points="2 6 4.5 9 10.5 3"></polyline>
-                </svg>
-            </Circle>
-            <h4>{headline}</h4>
-            <p>{text}</p>
-        </Box>
-    </Wrapper>
-  )
+const AdeventageLink = styled(Link)`
+      font-family: Avenir-Heavy, sans-serif;
+      margin-top: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      > span {
+        margin-left: -32px;
+      }
+`;
+
+const Adventages = ({className, headline, text, colorStroke, circleBackgroundColor, circleBackgroundShadow, circlePosition, circleText, url, urlText, style}) => {
+    return (
+        <Wrapper className={className} headline={headline} text={text} style={style}>
+            <Box>
+                <Circle position={circlePosition} circleBackgroundColor={circleBackgroundColor}
+                        circleBackgroundShadow={circleBackgroundShadow} colorStroke={colorStroke}>
+                    {!circleText &&
+                    <svg viewBox="-1 0 16 12">
+                        <polyline points="2 6 4.5 9 10.5 3"></polyline>
+                    </svg>
+                    }
+
+                    {circleText &&
+                    <span>{circleText}</span>
+                    }
+
+                </Circle>
+                <h4>{headline}</h4>
+                <p>{text}</p>
+
+                {url &&
+                <AdeventageLink to={url}>
+                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                        <ArrowSVG/>
+                    </IconCircle>
+                    {urlText}
+                </AdeventageLink>
+                }
+            </Box>
+        </Wrapper>
+    )
+}
+
+Adventages.defaultProps = {
+    colorStroke: color.white,
+    circleBackgroundColor: color.green1,
+    circleBackgroundShadow: shadow.green1
 }
 
 export default Adventages
