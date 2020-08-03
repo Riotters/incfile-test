@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 825 777" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <radialGradient id="uy860lnyla" cx="16.614%" cy="100%" r="98.9%" fx="16.614%" fy="100%" gradientTransform="matrix(.62834 -.74564 .7031 .66635 -.641 .458)">
+            <stop offset="0%" stop-color="#FFB059"/>
+            <stop offset="98.63%" stop-color="#FFE3C5"/>
+        </radialGradient>
+    </defs>
+    <path fill="url(#uy860lnyla)" fill-rule="evenodd" d="M824.2 0v777l-824-.007C25.072 343.7 384.48 0 824.2 0z" transform="matrix(1 0 0 -1 0 777)"/>
+</svg>
