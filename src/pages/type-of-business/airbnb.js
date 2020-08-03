@@ -8,21 +8,15 @@ import RatingRow from "../../atomic/atoms/boxes/rating-row";
 import CartBlock from "../../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../../atomic/molecules/blocks/rating-block";
 import AirBnb1Tabs from "../../fragments/type-of-business/airbnb-1/airbnb-1-tabs";
-import Container from "../../atomic/container";
-import {Heading} from "../../atomic/atoms/typography/heading";
-import {Paragraph} from "../../atomic/atoms/typography/paragraph";
-import {color} from "../../components/styles/colors";
 import AirbnbBusinessPlan from "../../fragments/type-of-business/airbnb-1/airbnb-business-plan";
 import AirBnB1BusinessStructure from "../../fragments/type-of-business/airbnb-1/business-structure";
-import TopImageBox from "../../components/top-image-box";
-import TextCenterLayout from "../../components/partials/blocks/heading-center";
-import LeftImageRightContent from "../../components/partials/blocks/left-content-right-image";
 import BlueContainer from "../../fragments/type-of-business/airbnb-1/blue-container";
-import OvalSVGOrange from "../../images/oval-oragen.inline.svg"
 import SettingBusiness from "../../fragments/type-of-business/airbnb-1/SettingBusiness";
 import OrderNow from "../../fragments/type-of-business/airbnb-1/order-now";
 import Regulations from "../../fragments/type-of-business/airbnb-1/regulations";
 import AirbnbTaxes from "../../fragments/type-of-business/airbnb-1/airbnb-taxes";
+import InfoCardsSection from "../../atomic/partials/info-cards-section";
+import {InfoCards} from "../../static/type-of-business/airbnb";
 
 const Airbnb = () => (
     <Layout>
@@ -60,7 +54,7 @@ const Airbnb = () => (
 
         <AirbnbTaxes />
 
-
+        <InfoCardsSection cards={InfoCards}/>
     </Layout>
 );
 
