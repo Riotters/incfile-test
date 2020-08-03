@@ -6,6 +6,32 @@ import Container from "../../container";
 import OvalSVG from "../../../images/oval.inline.svg";
 import VisibilitySensor from "../../VisibilitySensor";
 
+const switch1 = (ovalColor) => {
+  switch(ovalColor) { 
+    case "blue": {
+      return color.blue1;
+    }
+    case "orange": {
+      return color.orange1;
+    }
+    default:
+      return "";
+  };
+}
+
+const switch2 = (ovalColor) => {
+  switch(ovalColor) { 
+    case "blue": {
+      return color.babyblue2;
+    }
+    case "orange": {
+      return color.orange2;
+    }
+    default:
+      return "";
+  };
+}
+
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
@@ -44,10 +70,10 @@ const Oval = styled.div`
       radialGradient {
         stop {
           &:nth-child(1) {
-            stop-color: ${props => props.ovalColor === "blue" ? color.blue1 : ""}
+            stop-color: ${({ ovalColor }) => switch1(ovalColor)};
           }
           &:nth-child(2) {
-            stop-color: ${props => props.ovalColor === "blue" ? color.babyblue2 : ""}
+            stop-color: ${({ ovalColor }) => switch2(ovalColor)};
           }
         }
       }

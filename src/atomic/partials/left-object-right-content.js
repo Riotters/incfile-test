@@ -20,27 +20,6 @@ const Content = styled.div`
     width: 52%;
     max-width: 600px;
   }
-
-  h2 {
-    max-width: ${props => (props.headlineWidth ? props.headlineWidth : "")}px;
-  }
-
-  p {
-    max-width: ${props => (props.textWidth ? props.textWidth : "")}px;
-  }
-
-  h2 {
-    text-align: left;
-    padding-bottom: 56px;
-  }
-
-  h4 {
-    padding-bottom: 24px;
-  }
-
-  p {
-    padding-bottom: 24px;
-  }
 `;
 
 const Objectbox = styled.div`

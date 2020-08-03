@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import { gradient } from "../../atoms/styles/colors";
-import TextImage from "../../partials/left-content-right-image";
-import ContentCenter from "../../partials/content-center";
-import Button from "../../molecules/buttons/button";
-import Accordion from "../../organisms/accordion/accordion"
+import { gradient } from "../../../atoms/styles/colors";
+import TextImage from "../../../partials/left-content-right-image";
+import ContentCenter from "../../../partials/content-center";
+import Button from "../../../molecules/buttons/button";
+import Accordion from "../../../organisms/accordion/accordion"
 
 const GetFormationKit = styled.section`
   position: relative;

@@ -54,8 +54,9 @@ const ComponentsPage = () => (
             <Link to="/manage-your-company-dissolution">Filing Articles of  Dissolution</Link>
             <Link to="/manage-your-company-foreign-qualification">Foreign Qualification</Link>
             <Link to="/manage-your-company-registered-agent">Registered Agent</Link>
-            <Link to="/manage-your-company-llc-s-corp-election">S Corp Tax Election (WIP)</Link>
-            <Link to="/manage-your-company/corporate-llc-kit">Corporate LLC Kit (WIP)</Link>
+            <Link to="/manage-your-company-llc-s-corp-election">S Corp Tax Election</Link>
+            <Link to="/manage-your-company/corporate-llc-kit">Corporate LLC Kit</Link>
+            <Link to="/manage-your-company/filling-business-taxes">Filling Business Taxes (WIP)</Link>
             <Link to="/blog">Blog (no API)</Link>
             <Link to="/article">Article (no API)</Link>
             <Link to="/type-of-business/airbnb-1">Airbnb (WIP)</Link>

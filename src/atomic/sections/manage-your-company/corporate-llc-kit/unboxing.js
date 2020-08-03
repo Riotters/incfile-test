@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import HeadingCenter from "../../partials/heading-center";
-import ContentCenter from "../../partials/content-center";
-import Image from "../../atoms/image/image"
+import HeadingCenter from "../../../partials/heading-center";
+import ContentCenter from "../../../partials/content-center";
+import Image from "../../../atoms/image/image"
 
 const Unboxing = styled.section`
   position: relative;

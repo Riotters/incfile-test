@@ -8,6 +8,7 @@ const StyledParagraph = styled.p`
     font-size: ${props => props.big ? '20' : '16'}px;
     line-height: ${props => props.big ? '32' : '24'}px;
     padding-bottom: ${props => props.bottomSpace}px;
+    max-width: ${props => props.maxWidth ? `${props.maxWidth}px` : ""};
     
     ${props => (props.flex &&
         "display: flex;"
@@ -30,8 +31,8 @@ const StyledParagraph = styled.p`
     }
 `;
 
-export const Paragraph = ({children, ...rest}) => (
-    <StyledParagraph {...rest}>
+export const Paragraph = ({children, maxWidth, ...rest}) => (
+    <StyledParagraph maxWidth={maxWidth} {...rest}>
         {children}
     </StyledParagraph>
 );
@@ -42,7 +43,8 @@ Paragraph.propTypes = {
     flexJustify: PropTypes.bool,
     flexJustifyValue: PropTypes.string,
     flexAlignValue: PropTypes.string,
-    bottomSpace: PropTypes.number
+    bottomSpace: PropTypes.number,
+    maxWidth: PropTypes.number,
 }
 
 Paragraph.defaultProps = {

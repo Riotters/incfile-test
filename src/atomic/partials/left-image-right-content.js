@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import Container from "../../container";
-import Image from "../../image_nobase64";
+import Container from "../container";
+import Image from "../atoms/image/image";
 
 const Wrapper = styled.div`
   position: relative;
