@@ -4,6 +4,7 @@ import Image from "../../image_nobase64";
 import Container from "../../container";
 import OvalSVG from "../../../images/oval.inline.svg";
 import VisibilitySensor from "../../VisibilitySensor";
+import PropTypes from "prop-types";
 
 const Wrapper = styled.div`
   display: flex;
@@ -38,10 +39,6 @@ const Oval = styled.div`
     position: absolute;
     right: 0;
     bottom: 0;
-
-    path {
-      transform: matrix(1, 0, 0, -1, -115, 777);
-    }
   }
 `;
 
@@ -105,12 +102,12 @@ const ImageContainer = styled.div`
   }
 `;
 
-const Top = ({ children, imageName, imageAlt, headlineWidth }) => (
+const Top = ({ children, imageName, imageAlt, headlineWidth, OvalSVGFile}) => (
   <Wrapper>
     <VisibilitySensor partialVisibility once>
       {({ isVisible }) => (
         <Oval className={isVisible ? "scaleUp enter" : "scaleUp"}>
-          <OvalSVG />
+          <OvalSVGFile />
         </Oval>
       )}
     </VisibilitySensor>
@@ -133,3 +130,7 @@ const Top = ({ children, imageName, imageAlt, headlineWidth }) => (
 );
 
 export default Top;
+
+Top.defaultProps = {
+    OvalSVGFile: OvalSVG
+}
