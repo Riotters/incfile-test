@@ -59,7 +59,7 @@ const ComponentsPage = () => (
             <Link to="/manage-your-company/filling-business-taxes">Filling Business Taxes (WIP)</Link>
             <Link to="/blog">Blog (no API)</Link>
             <Link to="/article">Article (no API)</Link>
-            <Link to="/type-of-business/airbnb-1">Airbnb (WIP)</Link>
+            <Link to="/type-of-business/airbnb">Airbnb (WIP)</Link>
             <h2>Additional sites</h2>
             <Link to="/components">Components</Link>
             <Link to="/404">404</Link>
