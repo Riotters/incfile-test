@@ -7,7 +7,8 @@ const StyledParagraph = styled.p`
     font-family: Avenir, sans-serif;
     font-size: ${props => props.big ? '20' : '16'}px;
     line-height: ${props => props.big ? '32' : '24'}px;
-    padding-bottom: ${props => props.bottomSpace}px;
+    padding-bottom: ${props => props.bottomPadding}px !important;
+    margin-bottom: ${props => props.bottomMargin}px !important;
     
     ${props => (props.flex &&
         "display: flex;"
@@ -42,7 +43,8 @@ Paragraph.propTypes = {
     flexJustify: PropTypes.bool,
     flexJustifyValue: PropTypes.string,
     flexAlignValue: PropTypes.string,
-    bottomSpace: PropTypes.number
+    bottomPadding: PropTypes.number,
+    bottomMargin: PropTypes.number
 }
 
 Paragraph.defaultProps = {
@@ -51,5 +53,6 @@ Paragraph.defaultProps = {
     flexJustify: false,
     flexJustifyValue: "center",
     flexAlignValue: "center",
-    bottomSpace: 24
+    bottomPadding: 24,
+    bottomMargin: 35
 }
