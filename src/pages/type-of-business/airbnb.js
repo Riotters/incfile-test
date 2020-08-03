@@ -19,20 +19,24 @@ import TextCenterLayout from "../../components/partials/blocks/heading-center";
 import LeftImageRightContent from "../../components/partials/blocks/left-content-right-image";
 import BlueContainer from "../../fragments/type-of-business/airbnb-1/blue-container";
 import OvalSVGOrange from "../../images/oval-oragen.inline.svg"
+import SettingBusiness from "../../fragments/type-of-business/airbnb-1/SettingBusiness";
+import OrderNow from "../../fragments/type-of-business/airbnb-1/order-now";
+import Regulations from "../../fragments/type-of-business/airbnb-1/regulations";
+import AirbnbTaxes from "../../fragments/type-of-business/airbnb-1/airbnb-taxes";
 
 const Airbnb = () => (
     <Layout>
         <SEO title="What is a Nonprofit Organization? How to Start a Nonprofit"
              description="Learn all about nonprofit corporations, including the benefits & disadvantages, getting 501c3 status, and what's needed to get your company off the ground."/>
-        <Top OvalSVGFile={OvalSVGOrange} imageName="airbnb" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
+        <Top ovalColor="orange" imageName="airbnb" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
             <h1>How to Start an Airbnb</h1>
             <p>Airbnb has only been with us since 2008, but over the last few years,
                 it’s turned over half a million people into entrepreneurs.</p>
-            <Buttonsbox>
+            <ButtonsBox>
                 <Button theme="primary56" marginMD="0 24px 0 0" arrow>
                     Start Now
                 </Button>
-            </Buttonsbox>
+            </ButtonsBox>
 
             <RatingRow>
                 <CartBlock/>
@@ -48,139 +52,17 @@ const Airbnb = () => (
 
         <AirBnB1BusinessStructure/>
 
-        <GreenContainer>
-            <Container>
-                <TextCenterLayout
-                    headline="Setting Up Your Airbnb Business Operations"
-                    headlineWidth="700"
-                    text="Once you've legally created your bar or club business you’ll need to get some other things in place."
-                />
-                <Imageboxes>
-                    <TopImageBox image="state-filling-fees" color={color.yellow3}>
-                        <h4>Finance</h4>
-                        <p>
-                            You will need a separate business bank account for your Airbnb business. You might also want
-                            to consider a business credit card. Additionally, you will also need to keep careful
-                            bookkeeping records and file business and personal taxes. Here at Incfile we can even help
-                            you file your taxes
-                        </p>
-                    </TopImageBox>
+        <SettingBusiness />
 
-                    <TopImageBox image="location" color={color.red3}>
-                        <h4>Location of your Airbnb Business</h4>
-                        <p>
-                            You can almost certainly administer your Airbnb business from home. This is great as it
-                            reduces your office costs considerably. Don't forget that if you work from home, you can
-                            write off part of your utility and housing costs against your taxes.
-                        </p>
-                    </TopImageBox>
+        <OrderNow />
 
-                    <TopImageBox image="side" color={color.purple3}>
-                        <h4>Equipment for Your Airbnb Business</h4>
-                        <p>
-                            It’s likely that the only equipment you will need to run your Airbnb business is a computer,
-                            laptop, tablet or smartphone. Of course, you’ll also need to have supplies on hand for your
-                            properties.
-                        </p>
-                    </TopImageBox>
+        <Regulations />
 
-                    <TopImageBox image="we-doubled-the-size-of-customer-service" color={color.orange3}>
-                        <h4>Employees</h4>
-                        <p>
-                            You probably don’t need to hire any employees to help run your Airbnb business, but you’ll
-                            likely want to contract with cleaners, maintenance crews or a handyman.
-                        </p>
-                    </TopImageBox>
-
-                    <TopImageBox image="software" color={color.blue3}>
-                        <h4>Software and Processes</h4>
-                        <p>
-                            The right software and processes will make running your Airbnb business much easier. See our
-                            list of the best apps and software at the end of this guide.
-                        </p>
-                    </TopImageBox>
-                </Imageboxes>
-            </Container>
-        </GreenContainer>
-
-        <OrderNow>
-            <Container>
-                <LeftImageRightContent image="after-formation" imageWidth="515" textWidth="570">
-                    <h2>The Complete "Start Your Business" Checklist</h2>
-                    <p>A Clear and Comprehensive Guide to Starting Your Business the Right Way</p>
-                    <Buttonsbox>
-                        <Button theme="primary56" marginMD="0 24px 0 0" arrow>
-                            Business Checklist
-                        </Button>
-                    </Buttonsbox>
-                </LeftImageRightContent>
-            </Container>
-        </OrderNow>
-
-        <Container style={{paddingTop: "100px", paddingBottom: "100px"}} width={750}>
-            <Heading style={4}>
-                Rules, Regulations, and Licenses for Airbnbs
-            </Heading>
-            <Paragraph big>
-                Even though you’re running an Airbnb business, you can’t escape real-world licenses, permits and
-                regulations. You will need to explore local, state and federal licenses and permits, and we can also
-                help out with researching your business licensing needs.
-            </Paragraph>
-            <Paragraph big>
-                It’s also very important to consider local zoning laws, ordinances and permits. Some municipalities
-                don’t allow just anyone to set themselves up as an Airbnb host, and if you do, you could be fined. Check
-                with your local and regional authorities what their requirements are for Airbnb hosts.
-            </Paragraph>
-        </Container>
-
-        <BabyBlueContainer>
-            <Container>
-                <TextCenterLayout>
-                    Airbnb Taxes
-                </TextCenterLayout>
-            </Container>
-        </BabyBlueContainer>
+        <AirbnbTaxes />
     </Layout>
 );
 
-const OrderNow = styled.section`
-  background-color: ${color.orange3};
-  position: relative;
-  padding: 64px 0;
-`;
-
-const GreenContainer = styled.div`
-    background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(242,248,243,1) 100%);
-    padding-bottom: 100px;
-    padding-top: 100px;
-`;
-
-const BabyBlueContainer = styled.div`
-    background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(240,248,255,1) 100%);
-    padding-bottom: 100px;
-    padding-top: 100px;
-`;
-
-const Imageboxes = styled.div`
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 30px;
-  padding-top: 112px;
-  width: 100%;
-
-  @media(min-width: 768px) {
-    grid-template-columns: 1fr 1fr;
-  }
-  
-  @media (min-width: 970px) {
-    width: 970px;
-    margin: 0 auto;
-  }
-`;
-
-const Buttonsbox = styled.div`
+const ButtonsBox = styled.div`
   display: flex;
   flex-direction: column;
 
