@@ -18,12 +18,13 @@ import TopImageBox from "../../components/top-image-box";
 import TextCenterLayout from "../../components/partials/blocks/heading-center";
 import LeftImageRightContent from "../../components/partials/blocks/left-content-right-image";
 import BlueContainer from "../../fragments/type-of-business/airbnb-1/blue-container";
+import OvalSVGOrange from "../../images/oval-oragen.inline.svg"
 
 const Airbnb = () => (
     <Layout>
         <SEO title="What is a Nonprofit Organization? How to Start a Nonprofit"
              description="Learn all about nonprofit corporations, including the benefits & disadvantages, getting 501c3 status, and what's needed to get your company off the ground."/>
-        <Top imageName="airbnb" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
+        <Top OvalSVGFile={OvalSVGOrange} imageName="airbnb" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
             <h1>How to Start an Airbnb</h1>
             <p>Airbnb has only been with us since 2008, but over the last few years,
                 it’s turned over half a million people into entrepreneurs.</p>
@@ -45,11 +46,7 @@ const Airbnb = () => (
 
         <AirbnbBusinessPlan/>
 
-        <OrangeContainer>
-            <Container>
-                <AirBnB1BusinessStructure/>
-            </Container>
-        </OrangeContainer>
+        <AirBnB1BusinessStructure/>
 
         <GreenContainer>
             <Container>
@@ -181,12 +178,6 @@ const Imageboxes = styled.div`
     width: 970px;
     margin: 0 auto;
   }
-`;
-
-const OrangeContainer = styled.div`
-    background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(254,246,237,1) 100%);
-    padding-bottom: 100px;
 `;
 
 const Buttonsbox = styled.div`
