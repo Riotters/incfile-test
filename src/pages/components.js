@@ -39,6 +39,8 @@ import {Paragraph} from "../atomic/atoms/typography/paragraph";
 import TextBlockWithImage from "../atomic/molecules/mixed-blocks/text-block-with-absolute-image";
 import CountingTextBoxed from "../atomic/molecules/text-blocks/counting-text-boxed";
 import Adventages from "../components/adventages";
+import InfoCardsSection from "../atomic/partials/info-cards-section";
+import {InfoCards} from "../static/type-of-business/airbnb";
 
 const Section = styled.div`
     width: 100%;
@@ -527,10 +529,11 @@ const ComponentsPage = () => (
                 <h3>Adventages</h3>
                 <GreyWrapper>
                     <Adventages
-                                headline="File an Annual Report"
-                                text="Depending on the state you’re located in, you will probably have to file a report every year. This report tells the state about any major changes to your daycare business, and we can file your Annual Report on your behalf."/>
+                        headline="File an Annual Report"
+                        text="Depending on the state you’re located in, you will probably have to file a report every year. This report tells the state about any major changes to your daycare business, and we can file your Annual Report on your behalf."/>
 
-                    <Adventages style={{marginLeft: "15px"}} url="/manage-your-company/annual-report" urlText="Annual Report"
+                    <Adventages style={{marginLeft: "15px"}} url="/manage-your-company/annual-report"
+                                urlText="Annual Report"
                                 headline="File an Annual Report"
                                 circleText="1"
                                 circlePosition="center"
@@ -555,6 +558,11 @@ const ComponentsPage = () => (
                         <BlogArticleCard content={articles[2]}/>
                     </GreyWrapper>
                 </GridWrapper>
+
+                <h3>Info Cards Section</h3>
+                <GreyWrapper>
+                    <InfoCardsSection cards={InfoCards}/>
+                </GreyWrapper>
             </Wrapper>
         </Container>
     </Layout>
