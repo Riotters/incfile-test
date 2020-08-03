@@ -59,6 +59,8 @@ const Airbnb = () => (
         <Regulations />
 
         <AirbnbTaxes />
+
+
     </Layout>
 );
 
