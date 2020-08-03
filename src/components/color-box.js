@@ -17,10 +17,7 @@ const Wrapper = styled.div`
         }
     
         p {
-            font-size: 16px;
-            line-height: 24px;
             color: ${color.grey1};
-            padding-bottom: 0;
         }
 
         ul {
