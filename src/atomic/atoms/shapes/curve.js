@@ -13,10 +13,10 @@ const Wrapper = styled.div`
     }
 `;
 
-const Curve = ({ className, color }) => {
+const Curve = ({ className, color, style}) => {
 
     return (
-        <Wrapper className={className} color={color}>
+        <Wrapper className={className} color={color} style={style}>
             <Icon />
         </Wrapper>
     )

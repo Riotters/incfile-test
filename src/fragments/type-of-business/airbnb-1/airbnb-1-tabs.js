@@ -317,7 +317,7 @@ const AirBnb1Tabs = ({layout, columns}) => (
                                         <ListWrapper>
                                             <ListBox>
                                                 <CkeckText>
-                                                    <Paragraph big>
+                                                    <Paragraph big bottomMargin={0}>
                                                         Statistics on why you should start an Airbnb business
                                                     </Paragraph>
                                                 </CkeckText>
@@ -325,7 +325,7 @@ const AirBnb1Tabs = ({layout, columns}) => (
 
                                             <ListBox>
                                                 <CkeckText>
-                                                    <Paragraph big>
+                                                    <Paragraph big bottomMargin={0}>
                                                         Choose the right business structure for your Airbnb company
                                                     </Paragraph>
                                                 </CkeckText>
@@ -333,7 +333,7 @@ const AirBnb1Tabs = ({layout, columns}) => (
 
                                             <ListBox>
                                                 <CkeckText>
-                                                    <Paragraph big>
+                                                    <Paragraph big bottomMargin={0}>
                                                         How to find out if an Airbnb business is right for you
                                                     </Paragraph>
                                                 </CkeckText>
@@ -341,7 +341,7 @@ const AirBnb1Tabs = ({layout, columns}) => (
 
                                             <ListBox>
                                                 <CkeckText>
-                                                    <Paragraph big>
+                                                    <Paragraph big bottomMargin={0}>
                                                         Setting up your Airbnb business including location, equipment,
                                                         employees,
                                                         taxes, finances, licenses and more
@@ -351,7 +351,7 @@ const AirBnb1Tabs = ({layout, columns}) => (
 
                                             <ListBox>
                                                 <CkeckText>
-                                                    <Paragraph big>
+                                                    <Paragraph big bottomMargin={0}>
                                                         Ideas for the type of Airbnb business that you could form
                                                     </Paragraph>
                                                 </CkeckText>
@@ -359,7 +359,7 @@ const AirBnb1Tabs = ({layout, columns}) => (
 
                                             <ListBox>
                                                 <CkeckText>
-                                                    <Paragraph big>
+                                                    <Paragraph big bottomMargin={0}>
                                                         Where to find Airbnb business groups, forums and support
                                                     </Paragraph>
                                                 </CkeckText>
@@ -367,7 +367,7 @@ const AirBnb1Tabs = ({layout, columns}) => (
 
                                             <ListBox>
                                                 <CkeckText>
-                                                    <Paragraph big>
+                                                    <Paragraph big bottomMargin={0}>
                                                         Proving your Airbnb business can work
                                                     </Paragraph>
                                                 </CkeckText>
@@ -375,7 +375,7 @@ const AirBnb1Tabs = ({layout, columns}) => (
 
                                             <ListBox>
                                                 <CkeckText>
-                                                    <Paragraph big>
+                                                    <Paragraph big bottomMargin={0}>
                                                         Useful online tools for Airbnb business owners
                                                     </Paragraph>
                                                 </CkeckText>
@@ -383,7 +383,7 @@ const AirBnb1Tabs = ({layout, columns}) => (
 
                                             <ListBox>
                                                 <CkeckText>
-                                                    <Paragraph big>
+                                                    <Paragraph big bottomMargin={0}>
                                                         Business plans for Airbnb companies
                                                     </Paragraph>
                                                 </CkeckText>

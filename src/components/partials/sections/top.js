@@ -5,6 +5,7 @@ import Image from "../../image_nobase64";
 import Container from "../../container";
 import OvalSVG from "../../../images/oval.inline.svg";
 import VisibilitySensor from "../../VisibilitySensor";
+import PropTypes from "prop-types";
 
 const switch1 = (ovalColor) => {
   switch(ovalColor) { 
@@ -173,3 +174,7 @@ const Top = ({ children, imageName, imageAlt, headlineWidth, ovalColor }) => (
 );
 
 export default Top;
+
+Top.defaultProps = {
+    OvalSVGFile: OvalSVG
+}

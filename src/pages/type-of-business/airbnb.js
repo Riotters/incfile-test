@@ -11,9 +11,6 @@ import AirBnb1Tabs from "../../fragments/type-of-business/airbnb-1/airbnb-1-tabs
 import Container from "../../atomic/container";
 import {Heading} from "../../atomic/atoms/typography/heading";
 import {Paragraph} from "../../atomic/atoms/typography/paragraph";
-import TextBoxed from "../../atomic/molecules/text-blocks/text-boxed";
-import TextBlockWithImage from "../../atomic/molecules/mixed-blocks/text-block-with-absolute-image";
-import OkIcon from "../../images/icons/ok.inline.svg";
 import {color} from "../../components/styles/colors";
 import AirbnbBusinessPlan from "../../fragments/type-of-business/airbnb-1/airbnb-business-plan";
 import AirBnB1BusinessStructure from "../../fragments/type-of-business/airbnb-1/business-structure";
@@ -21,12 +18,13 @@ import TopImageBox from "../../components/top-image-box";
 import TextCenterLayout from "../../components/partials/blocks/heading-center";
 import LeftImageRightContent from "../../components/partials/blocks/left-content-right-image";
 import BlueContainer from "../../fragments/type-of-business/airbnb-1/blue-container";
+import OvalSVGOrange from "../../images/oval-oragen.inline.svg"
 
-const AirBnb1 = () => (
+const Airbnb = () => (
     <Layout>
         <SEO title="What is a Nonprofit Organization? How to Start a Nonprofit"
              description="Learn all about nonprofit corporations, including the benefits & disadvantages, getting 501c3 status, and what's needed to get your company off the ground."/>
-        <Top imageName="airbnb" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
+        <Top OvalSVGFile={OvalSVGOrange} imageName="airbnb" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
             <h1>How to Start an Airbnb</h1>
             <p>Airbnb has only been with us since 2008, but over the last few years,
                 it’s turned over half a million people into entrepreneurs.</p>
@@ -44,17 +42,11 @@ const AirBnb1 = () => (
 
         <AirBnb1Tabs/>
 
-        <BlueContainer />
+        <BlueContainer/>
 
-        <Container>
-            <AirbnbBusinessPlan />
-        </Container>
+        <AirbnbBusinessPlan/>
 
-        <OrangeContainer>
-            <Container>
-                <AirBnB1BusinessStructure/>
-            </Container>
-        </OrangeContainer>
+        <AirBnB1BusinessStructure/>
 
         <GreenContainer>
             <Container>
@@ -130,12 +122,24 @@ const AirBnb1 = () => (
                 Rules, Regulations, and Licenses for Airbnbs
             </Heading>
             <Paragraph big>
-                Even though you’re running an Airbnb business, you can’t escape real-world licenses, permits and regulations. You will need to explore local, state and federal licenses and permits, and we can also help out with researching your business licensing needs.
+                Even though you’re running an Airbnb business, you can’t escape real-world licenses, permits and
+                regulations. You will need to explore local, state and federal licenses and permits, and we can also
+                help out with researching your business licensing needs.
             </Paragraph>
             <Paragraph big>
-                It’s also very important to consider local zoning laws, ordinances and permits. Some municipalities don’t allow just anyone to set themselves up as an Airbnb host, and if you do, you could be fined. Check with your local and regional authorities what their requirements are for Airbnb hosts.
+                It’s also very important to consider local zoning laws, ordinances and permits. Some municipalities
+                don’t allow just anyone to set themselves up as an Airbnb host, and if you do, you could be fined. Check
+                with your local and regional authorities what their requirements are for Airbnb hosts.
             </Paragraph>
         </Container>
+
+        <BabyBlueContainer>
+            <Container>
+                <TextCenterLayout>
+                    Airbnb Taxes
+                </TextCenterLayout>
+            </Container>
+        </BabyBlueContainer>
     </Layout>
 );
 
@@ -148,6 +152,13 @@ const OrderNow = styled.section`
 const GreenContainer = styled.div`
     background: rgb(255,255,255);
     background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(242,248,243,1) 100%);
+    padding-bottom: 100px;
+    padding-top: 100px;
+`;
+
+const BabyBlueContainer = styled.div`
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(240,248,255,1) 100%);
     padding-bottom: 100px;
     padding-top: 100px;
 `;
@@ -169,12 +180,6 @@ const Imageboxes = styled.div`
   }
 `;
 
-const OrangeContainer = styled.div`
-    background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(254,246,237,1) 100%);
-    padding-bottom: 100px;
-`;
-
 const Buttonsbox = styled.div`
   display: flex;
   flex-direction: column;
@@ -184,4 +189,4 @@ const Buttonsbox = styled.div`
   }
 `;
 
-export default AirBnb1;
+export default Airbnb;

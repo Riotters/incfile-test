@@ -9,6 +9,7 @@ import React from "react";
 import styled from "styled-components";
 import OvalSVG from "../../../images/oval-blue-3.inline.svg";
 import OvalBlueSVG from "../../../images/oval-blue-4.inline.svg";
+import Curve from "../../../atomic/atoms/shapes/curve";
 
 const BlueContainerWrapper = styled.div`
     background: rgb(242,246,255);
@@ -26,6 +27,7 @@ const GridSection = styled.div`
 const TitleBox = styled.div`
     width: 100%;
     margin-bottom: 120px;
+    position: relative;
      
     @media (min-width:750px) {
         width: 750px;
@@ -93,13 +95,20 @@ const OvalCenter = styled.div`
   top: 40%;
 `
 
+const AbsoluteCurve = styled.div`
+    position: absolute;
+    left: -27px;
+    top: -16px;
+    transform: rotate(-90deg);
+`;
+
 const BlueContainer = () => (
     <BlueContainerWrapper>
         <Oval>
             <OvalSVG/>
         </Oval>
         <OvalCenter>
-            <OvalBlueSVG />
+            <OvalBlueSVG/>
         </OvalCenter>
 
         <Container>
@@ -115,33 +124,33 @@ const BlueContainer = () => (
                 <TextBorderedList>
 
                     <TextBoxed>
-                        <Paragraph bottomSpace={0}>
+                        <Paragraph bottomPadding={0} bottomMargin={0}>
                             Get a professional to photograph your property, so it’s portrayed in the best way
                         </Paragraph>
                     </TextBoxed>
 
                     <TextBoxed>
-                        <Paragraph bottomSpace={0}>
+                        <Paragraph bottomPadding={0} bottomMargin={0}>
                             Invest in making your property look good, with a fresh coat of paint, new furniture and
                             a deep clean
                         </Paragraph>
                     </TextBoxed>
 
                     <TextBoxed>
-                        <Paragraph bottomSpace={0}>
+                        <Paragraph bottomPadding={0} bottomMargin={0}>
                             Highlight anything unique about the property, like original features or unusual
                             facilities
                         </Paragraph>
                     </TextBoxed>
 
                     <TextBoxed>
-                        <Paragraph bottomSpace={0}>
+                        <Paragraph bottomPadding={0} bottomMargin={0}>
                             Show how close you are to public transport, local points of interest and restaurants
                         </Paragraph>
                     </TextBoxed>
 
                     <TextBoxed>
-                        <Paragraph bottomSpace={0}>
+                        <Paragraph bottomPadding={0} bottomMargin={0}>
                             Maintain a listing that gets good reviews from guests and builds trust
                         </Paragraph>
                     </TextBoxed>
@@ -151,6 +160,9 @@ const BlueContainer = () => (
 
             <GridSection>
                 <TitleBox>
+                    <AbsoluteCurve>
+                        <Curve color={color.blue1}/>
+                    </AbsoluteCurve>
                     <Heading size={3}>Validating Your Airbnb Business</Heading>
                     <Paragraph>
                         Getting started in an Airbnb business is easy, but becoming a success is harder.
@@ -165,7 +177,7 @@ const BlueContainer = () => (
                         <Heading size={4}>
                             Identify your Airbnb business’s unique selling points (USPs)
                         </Heading>
-                        <Paragraph>
+                        <Paragraph bottomPadding={0} bottomMargin={0}>
                             We’ve covered some key points on how to differentiate your listings above, but it’s
                             important to reiterate: If you want your Airbnb business to be a success, you do need to
                             stand out.
@@ -177,7 +189,7 @@ const BlueContainer = () => (
                         <Heading size={4}>
                             Look at who your competitors are in the space
                         </Heading>
-                        <Paragraph>
+                        <Paragraph bottomPadding={0} bottomMargin={0}>
                             Having competitors is a good thing as it shows there’s a market, but you want to avoid
                             too much competition. Look at how many other hosts are providing accommodation close to
                             your location, and see how they position their listings and prices.
@@ -189,7 +201,7 @@ const BlueContainer = () => (
                         <Heading size={4}>
                             Understand your market
                         </Heading>
-                        <Paragraph>
+                        <Paragraph bottomPadding={0} bottomMargin={0}>
                             You might want to target your listings to a particular type of guest, so if you know
                             there’s a market, make sure your accommodation reflects what might be of value to them.
                             For example, younger people might want vibrant nightlife and a very modern place to
@@ -202,7 +214,7 @@ const BlueContainer = () => (
                         <Heading size={4}>
                             Get involved with business communities and discussion groups
                         </Heading>
-                        <Paragraph>
+                        <Paragraph bottomPadding={0} bottomMargin={0}>
                             One of the great things about Airbnb business is that there are plenty of great
                             communities and discussion groups. Get involved in them and learn the ins and outs of
                             your chosen market before committing.
