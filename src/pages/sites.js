@@ -63,7 +63,6 @@ const ComponentsPage = () => (
             <h2>Additional sites</h2>
             <Link to="/components">Components</Link>
             <Link to="/404">404</Link>
-            <a></a>
         </Wrapper>
     </Container>
   </Layout>
