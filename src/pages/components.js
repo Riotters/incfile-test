@@ -527,21 +527,24 @@ const ComponentsPage = () => (
                 </GreyWrapper>
 
                 <h3>Adventages</h3>
-                <GreyWrapper>
-                    <Adventages
-                        headline="File an Annual Report"
-                        text="Depending on the state you’re located in, you will probably have to file a report every year. This report tells the state about any major changes to your daycare business, and we can file your Annual Report on your behalf."/>
-
-                    <Adventages style={{marginLeft: "15px"}} url="/manage-your-company/annual-report"
-                                urlText="Annual Report"
-                                headline="File an Annual Report"
-                                circleText="1"
-                                circlePosition="center"
-                                circleBackgroundShadow={shadow.blue1}
-                                circleBackgroundColor={color.blue1}
-                                className="center"
-                                text="Depending on the state you’re located in, you will probably have to file a report every year. This report tells the state about any major changes to your daycare business, and we can file your Annual Report on your behalf."/>
-                </GreyWrapper>
+                <GridWrapper columns="2">
+                    <GreyWrapper>
+                        <Adventages
+                            headline="File an Annual Report"
+                            text="Depending on the state you’re located in, you will probably have to file a report every year. This report tells the state about any major changes to your daycare business, and we can file your Annual Report on your behalf."/>
+                    </GreyWrapper>
+                    <GreyWrapper>
+                        <Adventages style={{marginLeft: "15px"}} url="/manage-your-company/annual-report"
+                                    urlText="Annual Report"
+                                    headline="File an Annual Report"
+                                    circleText="1"
+                                    circlePosition="center"
+                                    circleBackgroundShadow={shadow.blue1}
+                                    circleBackgroundColor={color.blue1}
+                                    className="center"
+                                    text="Depending on the state you’re located in, you will probably have to file a report every year. This report tells the state about any major changes to your daycare business, and we can file your Annual Report on your behalf."/>
+                    </GreyWrapper>
+                </GridWrapper>
 
                 <h3>Counting Box</h3>
                 <GreyWrapper>
