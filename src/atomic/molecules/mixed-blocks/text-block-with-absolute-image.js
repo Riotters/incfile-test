@@ -33,7 +33,7 @@ const TextBlockWithImage = (
         widthUnit={widthUnit}
     >
         <AbsoluteCircle>
-            <Circle circleColor={imageBackgroundColor} padding={20} height={80} width={80} paddingLeft={paddingLeft}>
+            <Circle circleColor={imageBackgroundColor} padding={0} height={80} width={80} paddingLeft={paddingLeft}>
                 <SvgImage/>
             </Circle>
         </AbsoluteCircle>

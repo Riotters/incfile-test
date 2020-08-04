@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-import Colorbox from "../../../components/color-box";
-import DominoIcon from "../../../images/icons/domino.inline.svg";
-import {color} from "../../../components/styles/colors";
-import {Heading} from "../../../atomic/atoms/typography/heading";
-import CountingTextBoxed from "../../../atomic/molecules/text-blocks/counting-text-boxed";
-import {Paragraph} from "../../../atomic/atoms/typography/paragraph";
-import Container from "../../../atomic/container";
-import OvalGreenSVG from "../../../images/oval-green.inline.svg";
-import OvalSVG from "../../../images/oval-pink.inline.svg";
+import Colorbox from "../../../../components/color-box";
+import DominoIcon from "../../../../images/icons/domino.inline.svg";
+import {color} from "../../../../components/styles/colors";
+import {Heading} from "../../../atoms/typography/heading";
+import CountingTextBoxed from "../../../molecules/text-blocks/counting-text-boxed";
+import {Paragraph} from "../../../atoms/typography/paragraph";
+import Container from "../../../container";
+import OvalGreenSVG from "../../../../images/oval-green.inline.svg";
+import OvalSVG from "../../../../images/oval-pink.inline.svg";
 
 const BusinessOwnerResponsibilities = styled.section`
   position: relative;

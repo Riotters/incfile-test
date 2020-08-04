@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Link } from "gatsby";
 import { color } from "../../atoms/styles/colors"
 import ArrowSVG from "../../../images/arrow.inline.svg";
+import PropTypes from "prop-types";
 
 const Wrapper = styled(Link)`
   display: inline-flex;
@@ -13,18 +14,18 @@ const Wrapper = styled(Link)`
     font-size: 16px;
     line-height: 24px;
     font-weight: 600;
-    color: ${color.orange1};
+    color: ${props => props.textColor};
     transition: color 0.3s ease;
   }
 
   &:hover {
     span {
-      color: ${color.blue1};
+      color: ${props => props.hoverColor};
     }
 
     svg {
       path {
-        fill: ${color.blue1};
+        fill: ${props => props.hoverColor};
       }
     }
   }
@@ -41,17 +42,33 @@ const Arrow = styled.div`
   svg {
     path {
       transition: fill 0.3s ease;
-      fill: ${color.black};
+      fill: ${props => props.arrowColor};
     }
   }
 `
 
-const PathLink = ({ children, className, to }) => (
-  <Wrapper to={to} className={className}>
+const PathLink = ({ children, className, to, textColor, arrowColor, hoverColor}) => (
+  <Wrapper to={to} className={className} textColor={textColor} hoverColor={hoverColor}>
     <span>{children}</span>
-    <Arrow>
+    <Arrow arrowColor={arrowColor}>
       <ArrowSVG />
     </Arrow>
   </Wrapper>
-)
+);
+
+PathLink.propTypes = {
+    children: PropTypes.any,
+    className: PropTypes.string,
+    to: PropTypes.string.isRequired,
+    textColor: PropTypes.string,
+    arrowColor: PropTypes.string,
+    hoverColor: PropTypes.string
+};
+
+PathLink.defaultProps = {
+    textColor: color.orange1,
+    arrowColor: color.black,
+    hoverColor: color.blue1
+};
+
 export default PathLink

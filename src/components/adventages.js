@@ -16,7 +16,7 @@ const Box = styled.div`
     align-items: center;
     height: 100%;
     width: 100%;
-    max-width: 470px;
+    max-width: ${props => props.width};
     padding: 48px 40px 40px;
     position: relative;
     background-color: ${color.white};
@@ -26,10 +26,10 @@ const Box = styled.div`
     h4 {
         width: 100%;
         line-height: 27px;
-        margin-bottom: 16px;
     }
 
     p {
+        margin-top: 16px;
         width: 100%;
         font-size: 16px;
         line-height: 24px;
@@ -87,10 +87,10 @@ const AdeventageLink = styled(Link)`
       }
 `;
 
-const Adventages = ({className, headline, text, colorStroke, circleBackgroundColor, circleBackgroundShadow, circlePosition, circleText, url, urlText, style}) => {
+const Adventages = ({className, headline, text, colorStroke, circleBackgroundColor, circleBackgroundShadow, circlePosition, circleText, url, urlText, style, width}) => {
     return (
         <Wrapper className={className} headline={headline} text={text} style={style}>
-            <Box>
+            <Box width={width}>
                 <Circle position={circlePosition} circleBackgroundColor={circleBackgroundColor}
                         circleBackgroundShadow={circleBackgroundShadow} colorStroke={colorStroke}>
                     {!circleText &&
@@ -104,8 +104,14 @@ const Adventages = ({className, headline, text, colorStroke, circleBackgroundCol
                     }
 
                 </Circle>
-                <h4>{headline}</h4>
-                <p>{text}</p>
+
+                {headline &&
+                    <h4>{headline}</h4>
+                }
+
+                {text &&
+                    <p>{text}</p>
+                }
 
                 {url &&
                 <AdeventageLink to={url}>
@@ -123,7 +129,8 @@ const Adventages = ({className, headline, text, colorStroke, circleBackgroundCol
 Adventages.defaultProps = {
     colorStroke: color.white,
     circleBackgroundColor: color.green1,
-    circleBackgroundShadow: shadow.green1
+    circleBackgroundShadow: shadow.green1,
+    width: "470px"
 }
 
 export default Adventages

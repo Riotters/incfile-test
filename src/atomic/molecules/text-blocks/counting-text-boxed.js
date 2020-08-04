@@ -16,10 +16,7 @@ const Wrapper = styled.div`
     position: relative;
     border-radius: 5px;
     margin-bottom: 8px;
-    
-    @media (min-width: 770px) {
-        width: 770px;
-    }
+  
 `
 
 const Box = styled.span`

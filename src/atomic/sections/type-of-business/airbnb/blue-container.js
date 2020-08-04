@@ -1,15 +1,15 @@
-import Container from "../../../atomic/container";
-import {Heading} from "../../../atomic/atoms/typography/heading";
-import {Paragraph} from "../../../atomic/atoms/typography/paragraph";
-import TextBoxed from "../../../atomic/molecules/text-blocks/text-boxed";
-import TextBlockWithImage from "../../../atomic/molecules/mixed-blocks/text-block-with-absolute-image";
-import OkIcon from "../../../images/icons/ok.inline.svg";
-import {color} from "../../../components/styles/colors";
+import Container from "../../../container";
+import {Heading} from "../../../atoms/typography/heading";
+import {Paragraph} from "../../../atoms/typography/paragraph";
+import TextBoxed from "../../../molecules/text-blocks/text-boxed";
+import TextBlockWithImage from "../../../molecules/mixed-blocks/text-block-with-absolute-image";
+import OkIcon from "../../../../images/icons/ok.inline.svg";
+import {color} from "../../../../components/styles/colors";
 import React from "react";
 import styled from "styled-components";
-import OvalSVG from "../../../images/oval-blue-3.inline.svg";
-import OvalBlueSVG from "../../../images/oval-blue-4.inline.svg";
-import Curve from "../../../atomic/atoms/shapes/curve";
+import OvalSVG from "../../../../images/oval-blue-3.inline.svg";
+import OvalBlueSVG from "../../../../images/oval-blue-4.inline.svg";
+import Curve from "../../../atoms/shapes/curve";
 
 const BlueContainerWrapper = styled.div`
     background: rgb(242,246,255);

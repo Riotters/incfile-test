@@ -1,8 +1,8 @@
 import React from "react";
-import {Heading} from "../../../atomic/atoms/typography/heading";
-import {Paragraph} from "../../../atomic/atoms/typography/paragraph";
-import Container from "../../../atomic/container";
-import OvalSvg from "../../../images/oval-blue-5.inline.svg";
+import {Heading} from "../../../atoms/typography/heading";
+import {Paragraph} from "../../../atoms/typography/paragraph";
+import Container from "../../../container";
+import OvalSvg from "../../../../images/oval-blue-5.inline.svg";
 import styled from "styled-components";
 
 const Regulations = () => (
