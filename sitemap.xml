@@ -19,4 +19,5 @@
 <url> <loc>https://incfile.netlify.app/incfile-test/manage-your-company/tax-id-ein/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://incfile.netlify.app/incfile-test/sites/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://incfile.netlify.app/incfile-test/type-of-business/airbnb/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://incfile.netlify.app/incfile-test/type-of-business/coach/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
