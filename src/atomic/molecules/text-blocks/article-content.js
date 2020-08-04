@@ -14,7 +14,6 @@ const Wrapper = styled.div`
 const ArticleContent= ({ className, content }) => {
   return (
     <Wrapper className={className}>
-        {console.log(content)}
         <p>{content.paragraph1}</p>
         <Image filename={content.image1} />
         <p>{content.subtitle1}</p>

@@ -30,7 +30,7 @@ import Dropdown from "../components/form/dropdown"
 import CheckText from "../components/static-check/text-only"
 import CheckBox from "../components/static-check/text-boxed"
 import Checklist from "../components/checklist/checklist"
-import TopImageBox from "../components/top-image-box"
+import TopImageBox from "../atomic/molecules/mixed-blocks/top-image-box";
 import {articles} from "../static/blog";
 import BlogArticleCard from "../atomic/organisms/cards/blog-article-card"
 import OkIcon from "../images/icons/ok.inline.svg";

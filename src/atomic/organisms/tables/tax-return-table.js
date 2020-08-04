@@ -1,40 +1,57 @@
 import React from "react";
 import styled from "styled-components";
+import Whitebox from "../../atoms/boxes/white-box"
+
 import { color } from "../../atoms/styles/colors";
-import Whitebox from "../../atoms/boxes/white-box-li";
 import Circle from "../../atoms/icons/circle";
 
-const Wrapper = styled.ul`
-    width: 100%;
-    list-style: none;
+const Wrapper = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
-    li {
-        display: flex;
-        margin-bottom: 8px;
-        padding: 24px;
+    ul {
+        margin-top: 16px;
 
-        span {
-            background-color: ${color.blue1};
-            color: ${color.white};
-            margin-right: 24px;
-        }
+        li {
 
-        p {
-            display: flex;
-            align-items: center;
-            min-height: 32px;
-            font-size: 16px;
-            line-height: 24px;
-            color: ${color.black};
-            padding: 0;
         }
     }
 `
 
 const TaxReturnTable = ({ className, content }) => {
+  let listLen = 0;
+  let list1Arr = [];
+  let list2Arr = [];
+  
+//   content.map(col => (
+//     listLen = col.list.length > listLen ? col.list.length : listLen
+//   ))
+
+//     for (var i=0; i < listLen; i++ ) {
+//         <div>
+ 
+//         </div>
+//     }
+
+
   return (
     <Wrapper className={className}>
-
+        {/* {content.map(col => (
+            <div>
+                <Whitebox>
+                    <h4>{col.header}</h4>
+                </Whitebox>
+                <ul>
+                    {col.list.map(item => (
+                        <li>
+                            <Whitebox>
+                                <p>{item}</p>
+                            </Whitebox>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+        ))} */}
     </Wrapper>
   )
 }

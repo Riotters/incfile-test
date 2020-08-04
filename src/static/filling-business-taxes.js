@@ -173,32 +173,83 @@ export const taxReturn = {
   table: [
     {
       header:
-        ``,
-      list:
-        ``,
+        `September 15 2020`,
+      list: [
+        `S Corporations`,
+        `C Corporations`,
+      ],
+    },
+    {
+      header:
+        `September 15 2020`,
+      list: [
+        `One Owner LLC`,
+        `Partnerships`,
+        `Personal 1040`,
+        `Multi- Member LLC`,
+      ],
     }
   ],
 }
 
 export const pricing = {
   header:
-  ``,
+  `Simple and affordable pricing. No hidden fees`,
   cards: [
     {
       header:
-        ``,
+        `Business tax return`,
       price:
-        ``,
+        `599`,
       text:
-        ``,
+        `$299 Zero-Income Tax Return `,
       bracket:
-        ``,
+        `(no activity to report)`,
     },
     {
-
+      header:
+        `Personal tax return`,
+      price:
+        `299`,
+      text:
+        `1040 Tax Return`,
+      bracket:
+        `($250 if you don’t have a state return)`,
     },
   ],
   text: 
-    `Eliminate the hassle of filing taxes for your LLC, S Corp, C Corp or Nonprofit. Work with a tax professional.`,
+    `15% combined discount if you have both your Business and Personal returns prepared.`,
+}
+
+export const benefits = {
+  header:
+    `What are the benefits?`,
+  cards: [
+    {
+      header:
+        `Ease the burden`,
+      text:
+        `Some tax returns can be complicated. A small-business owner who itemizes his deductions has to complete and file IRS 1040, Schedule A, Schedule C and Schedule SE, among other forms.`
+    },
+    {
+      header:
+        `Reduce Errors`,
+      text:
+        `While we are all human and not perfect, the chances of making a simple mistake on a return are reduced when you use a professional tax service.`
+    },
+    {
+      header:
+        `Professional Tax Advice`,
+      text:
+        `The tax rules are complicated. Before you can use a deduction or credit, you must qualify for it. A tax professional can help find deductions and credits for which you qualify for, and can give advice on certain tax issues.`
+    },
+    {
+      header:
+        `Avoid Adverse Consequences`,
+      text:
+        `When you sign the end of your tax return, you declare that the information is true and accurate to the best of your knowledge. 
+        If the IRS audits your return and finds errors, you could face potentially serious legal consequences. Having a professional prepare your tax return adds a little safeguard to potential liability.`
+    }
+  ]
 }
 
