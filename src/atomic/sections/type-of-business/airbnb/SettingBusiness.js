@@ -1,11 +1,11 @@
 import React from "react";
-import Container from "../../../atomic/container";
-import TextCenterLayout from "../../../components/partials/blocks/heading-center";
-import TopImageBox from "../../../components/top-image-box";
-import {color} from "../../../components/styles/colors";
+import Container from "../../../container";
+import TextCenterLayout from "../../../../components/partials/blocks/heading-center";
+import TopImageBox from "../../../../components/top-image-box";
+import {color} from "../../../../components/styles/colors";
 import styled from "styled-components";
-import Curve from "../../../images/green-curve.inline.svg";
-import GreenOval from "../../../images/oval-green-2.inline.svg";
+import Curve from "../../../../images/green-curve.inline.svg";
+import GreenOval from "../../../../images/oval-green-2.inline.svg";
 
 const SettingBusiness = () => (
     <GreenContainer>

@@ -2,18 +2,18 @@ import React from "react"
 import styled from "styled-components"
 import {Panel, Tabs, useTabState} from "@bumaga/tabs"
 // import { motion } from "framer-motion"
-import OverviewSVG from "../../../images/overview.inline.svg"
-import ArrowSVG from "../../../images/arrow.inline.svg"
+import OverviewSVG from "../../../../images/overview.inline.svg"
+import ArrowSVG from "../../../../images/arrow.inline.svg"
 import {Collapse} from "react-collapse"
-import VisibilitySensor from "../../../components/VisibilitySensor"
-import LightIcon from "../../../images/icons/light.inline.svg";
-import CalcIcon from "../../../images/icons/calc.inline.svg";
-import {Heading} from "../../../atomic/atoms/typography/heading";
-import {Paragraph} from "../../../atomic/atoms/typography/paragraph";
-import CkeckText from "../../../components/static-check/text-only";
-import OvalSVG from "../../../images/oval-blue-2.inline.svg";
-import OvalGreenSVG from "../../../images/oval-green.inline.svg";
-import Container from "../../../components/container";
+import VisibilitySensor from "../../../../components/VisibilitySensor"
+import LightIcon from "../../../../images/icons/light.inline.svg";
+import CalcIcon from "../../../../images/icons/calc.inline.svg";
+import {Heading} from "../../../atoms/typography/heading";
+import {Paragraph} from "../../../atoms/typography/paragraph";
+import CkeckText from "../../../../components/static-check/text-only";
+import OvalSVG from "../../../../images/oval-blue-2.inline.svg";
+import OvalGreenSVG from "../../../../images/oval-green.inline.svg";
+import Container from "../../../../components/container";
 
 const cn = (...args) => args.filter(Boolean).join(" ");
 

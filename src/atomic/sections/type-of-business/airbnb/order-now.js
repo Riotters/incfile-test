@@ -1,12 +1,12 @@
 import React from "react";
-import Container from "../../../atomic/container";
-import LeftImageRightContent from "../../../components/partials/blocks/left-content-right-image";
-import Button from "../../../components/button";
+import Container from "../../../container";
+import LeftImageRightContent from "../../../../components/partials/blocks/left-content-right-image";
+import Button from "../../../../components/button";
 import styled from "styled-components";
-import {color} from "../../../components/styles/colors";
-import OvalLeftSvg from "../../../images/oval-orange-3.inline.svg";
-import OvalRightSvg from "../../../images/oval-orange-4.inline.svg";
-import Curve from "../../../images/curve-orange.inline.svg";
+import {color} from "../../../../components/styles/colors";
+import OvalLeftSvg from "../../../../images/oval-orange-3.inline.svg";
+import OvalRightSvg from "../../../../images/oval-orange-4.inline.svg";
+import Curve from "../../../../images/curve-orange.inline.svg";
 
 const OrderNow = () => (
     <OrderNowWrapper>
