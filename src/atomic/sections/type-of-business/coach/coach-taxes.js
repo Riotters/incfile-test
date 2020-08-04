@@ -10,9 +10,9 @@ import Curve from "../../../atoms/shapes/curve";
 import OvalSvg from "../../../../images/oval-babyblue-1.inline.svg";
 import OvalSvgBottom from "../../../../images/oval-babyblue-2.inline.svg";
 import CurveSvg from "../../../../images/curve-babyblue-1.inline.svg";
-import {adventages} from "../../../../static/type-of-business/airbnb";
+import {adventages2} from "../../../../static/type-of-business/coach";
 
-const AirbnbTaxes = () => (
+const CoachTaxes = () => (
     <BabyBlueContainer>
 
         <Oval>
@@ -23,36 +23,29 @@ const AirbnbTaxes = () => (
         </OvalBottom>
 
         <Container>
-            <TextCenterLayout headline="Airbnb Taxes"/>
+            <TextCenterLayout headline="Taxes for Professional Coaches"/>
 
             <TextWrapper>
                 <Paragraph big>
                     <Curve color={color.babyblue1}
                            style={{position: "absolute", left: "-29px", top: "-25px", transform: "rotate(-90deg)"}}/>
-                    Even though you’re running an Airbnb business, you can’t escape real-world licenses, permits and
-                    regulations. You will need to explore local, state and federal licenses and permits, and <span
-                    className="big blue">we can also
-                    help out with researching your business licensing needs.</span>
+                    Taxes are a fact of life if you’re in business, and there are various ways you will need to file and pay them. This can include self-employment tax, state income tax and federal income tax. Depending on where and how you’re selling products and services, you may also be liable for sales and use tax.
                 </Paragraph>
                 <Paragraph big>
-                    It’s also very important to consider local zoning laws, ordinances and permits. Some
-                    municipalities don’t allow just anyone to set themselves up as an Airbnb host, and if you do, you
-                    could
-                    be fined. Check with your local and regional authorities what their requirements are for Airbnb
-                    hosts.
+                    As a rule of thumb, we recommend holding back around a third of your earnings to pay your taxes. We can also <span className="big blue">prepare and file your tax returns for you.</span>
                 </Paragraph>
             </TextWrapper>
         </Container>
 
         <Service>
             <Container>
-                <TextCenterLayout headline="Maintaining Your Airbnb Business"
-                                  text="There are certain forms and legalities you need to follow to keep your Airbnb business in good standing."/>
+                <TextCenterLayout headline="Maintaining Your Professional Coaching Organization"
+                                  text="There are certain forms and legalities you need to follow to keep your life or business coaching business in good standing."/>
                 <AdventagesBox>
                     <CurveWrapper>
                         <CurveSvg/>
                     </CurveWrapper>
-                    {adventages.items.map(item => (
+                    {adventages2.items.map(item => (
                         <Adventages style={{textAlign: "center"}} url={item.url} urlText={item.urlText}
                                     circleText={item.circleText} headline={item.headline} text={item.text}
                                     circlePosition="center" circleBackgroundColor={color.blue1}
@@ -116,4 +109,4 @@ const CurveWrapper = styled.div`
     top: 24px;
 `;
 
-export default AirbnbTaxes;
+export default CoachTaxes;

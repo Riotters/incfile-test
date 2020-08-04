@@ -90,4 +90,41 @@ export const Tools = [
         title: "SEO",
         tools: ["SemRush", "KWFinder", "Moz", "AHREFS"]
     }
-]
+];
+
+export const adventages = {
+    items: [
+        {
+            circleText: 1,
+            headline: "File an Annual Report",
+            text: "Depending on the state you’re located in, you will probably have to file a report every year. This report tells the state about any major changes to your daycare business, and we can file your Annual Report on your behalf.",
+            url: "/manage-your-company/annual-report",
+            urlText: "Annual Report"
+        },
+        {
+            circleText: 2,
+            headline: "Pay estimated taxes",
+            text: "You will be expected to pay estimated taxes on what you plan to earn in the current business year. Typically, you will need to pay estimated taxes in April, June, September and January (of the following year)."
+        },
+        {
+            circleText: 3,
+            headline: "Renew Business Permits and Licenses",
+            text: "Your federal, state, regional and city licenses and permits may need to be renewed on a regular basis, typically once a year."
+        },
+        {
+            circleText: 4,
+            headline: "File your taxes",
+            text: "You will need to file your taxes once a year."
+        },
+        {
+            circleText: 5,
+            headline: "Pay payroll and sales taxes",
+            text: "If applicable, you will need to make payroll and sales tax payments on a regular basis."
+        },
+        {
+            circleText: 6,
+            headline: "Prepare Your Taxes",
+            text: "You will need to work with your accountant to prepare all the taxes you need to pay."
+        },
+    ]
+};

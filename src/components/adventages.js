@@ -5,6 +5,7 @@ import {shadow} from "./styles/shadows"
 import {Link} from "gatsby"
 import ArrowSVG from "../images/arrow.inline.svg";
 import IconCircle from "./icons/circle";
+import Image from "../atomic/atoms/image/image";
 
 const Wrapper = styled.div`
     padding-top: 24px;
@@ -87,7 +88,7 @@ const AdeventageLink = styled(Link)`
       }
 `;
 
-const Adventages = ({className, headline, text, colorStroke, circleBackgroundColor, circleBackgroundShadow, circlePosition, circleText, url, urlText, style, width}) => {
+const Adventages = ({className, headline, text, colorStroke, circleBackgroundColor, circleBackgroundShadow, circlePosition, circleText, url, urlText, style, width, imageName}) => {
     return (
         <Wrapper className={className} headline={headline} text={text} style={style}>
             <Box width={width}>
@@ -105,6 +106,11 @@ const Adventages = ({className, headline, text, colorStroke, circleBackgroundCol
 
                 </Circle>
 
+                {imageName &&
+                    <ImageWrapper>
+                        <Image filename={imageName} />
+                    </ImageWrapper>
+                }
                 {headline &&
                     <h4>{headline}</h4>
                 }
@@ -125,6 +131,11 @@ const Adventages = ({className, headline, text, colorStroke, circleBackgroundCol
         </Wrapper>
     )
 }
+
+const ImageWrapper = styled.div`
+    width: 150px;
+    margin: 0 auto 30px;
+`;
 
 Adventages.defaultProps = {
     colorStroke: color.white,
