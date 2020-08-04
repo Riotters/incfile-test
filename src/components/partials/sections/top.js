@@ -1,36 +1,43 @@
 import React from "react";
 import styled from "styled-components";
-import { color } from "../../../atomic/atoms/styles/colors";
+import {color} from "../../../atomic/atoms/styles/colors";
 import Image from "../../image_nobase64";
 import Container from "../../container";
 import OvalSVG from "../../../images/oval.inline.svg";
 import VisibilitySensor from "../../VisibilitySensor";
-import PropTypes from "prop-types";
 
 const switch1 = (ovalColor) => {
-  switch(ovalColor) { 
-    case "blue": {
-      return color.blue1;
+    switch (ovalColor) {
+        case "blue": {
+            return color.blue1;
+        }
+        case "orange": {
+            return color.orange1;
+        }
+        case "purple": {
+            return color.purple1;
+        }
+        default:
+            return "";
     }
-    case "orange": {
-      return color.orange1;
-    }
-    default:
-      return "";
-  };
+    ;
 }
 
 const switch2 = (ovalColor) => {
-  switch(ovalColor) { 
-    case "blue": {
-      return color.babyblue2;
+    switch (ovalColor) {
+        case "blue": {
+            return color.babyblue2;
+        }
+        case "orange": {
+            return color.orange2;
+        }
+        case "purple": {
+            return color.purple2;
+        }
+        default:
+            return "";
     }
-    case "orange": {
-      return color.orange2;
-    }
-    default:
-      return "";
-  };
+    ;
 }
 
 const Wrapper = styled.div`
@@ -71,10 +78,10 @@ const Oval = styled.div`
       radialGradient {
         stop {
           &:nth-child(1) {
-            stop-color: ${({ ovalColor }) => switch1(ovalColor)};
+            stop-color: ${({ovalColor}) => switch1(ovalColor)};
           }
           &:nth-child(2) {
-            stop-color: ${({ ovalColor }) => switch2(ovalColor)};
+            stop-color: ${({ovalColor}) => switch2(ovalColor)};
           }
         }
       }
@@ -146,31 +153,32 @@ const ImageContainer = styled.div`
   }
 `;
 
-const Top = ({ children, imageName, imageAlt, headlineWidth, ovalColor }) => (
-  <Wrapper>
-    <VisibilitySensor partialVisibility once>
-      {({ isVisible }) => (
-        <Oval className={isVisible ? "scaleUp enter" : "scaleUp"} ovalColor={ovalColor}>
-          <OvalSVG />
-        </Oval>
-      )}
-    </VisibilitySensor>
-    <ImageContainer>
-      <Image filename={imageName} alt={imageAlt} />
-    </ImageContainer>
-    <Container>
-      <Content>
+const Top = ({children, imageName, imageAlt, headlineWidth, ovalColor}) => (
+    <Wrapper>
         <VisibilitySensor partialVisibility once>
-          {({ isVisible }) => (
-            <TextContainer className={isVisible ? "slideRight enter" : "slideRight"} headlineWidth={headlineWidth}>
-              {children}
-            </TextContainer>
-          )}
+            {({isVisible}) => (
+                <Oval className={isVisible ? "scaleUp enter" : "scaleUp"} ovalColor={ovalColor}>
+                    <OvalSVG/>
+                </Oval>
+            )}
         </VisibilitySensor>
-        
-      </Content>
-    </Container>
-  </Wrapper>
+        <ImageContainer>
+            <Image filename={imageName} alt={imageAlt}/>
+        </ImageContainer>
+        <Container>
+            <Content>
+                <VisibilitySensor partialVisibility once>
+                    {({isVisible}) => (
+                        <TextContainer className={isVisible ? "slideRight enter" : "slideRight"}
+                                       headlineWidth={headlineWidth}>
+                            {children}
+                        </TextContainer>
+                    )}
+                </VisibilitySensor>
+
+            </Content>
+        </Container>
+    </Wrapper>
 );
 
 export default Top;
