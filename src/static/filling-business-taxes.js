@@ -163,18 +163,42 @@ export const typesOfTaxes = {
         `Yes, contact me to learn more`,
       url:
         `#`,
-    }
-  }
+    },
+  },
 }
 
 export const taxReturn = {
-
+  header: 
+    `Tax Return Due Dates`,
+  table: [
+    {
+      header:
+        ``,
+      list:
+        ``,
+    }
+  ],
 }
 
 export const pricing = {
+  header:
+  ``,
+  cards: [
+    {
+      header:
+        ``,
+      price:
+        ``,
+      text:
+        ``,
+      bracket:
+        ``,
+    },
+    {
 
+    },
+  ],
+  text: 
+    `Eliminate the hassle of filing taxes for your LLC, S Corp, C Corp or Nonprofit. Work with a tax professional.`,
 }
 
-export const benefits = {
-
-}

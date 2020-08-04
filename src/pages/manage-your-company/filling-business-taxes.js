@@ -6,19 +6,10 @@ import styled from "styled-components";
 //sections
 import Top from "../../components/partials/sections/top";
 import TypesOfTaxes from "../../atomic/sections/manage-your-company/filling-business-taxes/types-of-taxes";
-import GetFormationKit from "../../atomic/sections/manage-your-company/corporate-llc-kit/get-formation-kit";
+import TaxReturn from "../../atomic/sections/manage-your-company/filling-business-taxes/tax-return";
 import Articles from "../../components/partials/sections/articles";
 //texts
-import { top, typesOfTaxes, getFormationKit } from "../../static/filling-business-taxes"
-
-const Buttonsbox = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: 768px) {
-    flex-direction: row;
-  }
-`;
+import { top, typesOfTaxes, taxReturn } from "../../static/filling-business-taxes";
 
 const FillingBusinessTaxes = () => (
   <Layout>
@@ -27,7 +18,8 @@ const FillingBusinessTaxes = () => (
       <h1>{top.header}</h1>
       <p>{top.text}</p>
     </Top>
-    <TypesOfTaxes content={typesOfTaxes}/>
+    <TypesOfTaxes content={typesOfTaxes} />
+    <TaxReturn content={taxReturn} />
     <Articles />
   </Layout>
 );
