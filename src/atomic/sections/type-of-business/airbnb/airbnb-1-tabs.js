@@ -14,6 +14,9 @@ import CkeckText from "../../../../components/static-check/text-only";
 import OvalSVG from "../../../../images/oval-blue-2.inline.svg";
 import OvalGreenSVG from "../../../../images/oval-green.inline.svg";
 import Container from "../../../../components/container";
+import BlueBoxWithAbsoluteText from "../../../molecules/text-blocks/blue-box-with-absolute-text";
+import Adventages from "../../../../components/adventages";
+import CountingTextBoxed from "../../../molecules/text-blocks/counting-text-boxed";
 
 const cn = (...args) => args.filter(Boolean).join(" ");
 
@@ -89,14 +92,6 @@ const PanelWrapper = styled.article`
   max-width: ${props => (props.layout !== "grid" ? "670px" : "")};
   margin-left: auto;
   padding-top: 24px;
-
-  p {
-    margin-bottom: 35px;
-
-    &:nth-child(3) {
-      margin-bottom: 24px;
-    }
-  }
 
   h3 {
     margin-bottom: 48px;
@@ -234,7 +229,7 @@ const AirBnb1Tabs = ({layout, columns}) => (
             <OvalSVG/>
         </Oval>
         <OvalBottom>
-            <OvalGreenSVG />
+            <OvalGreenSVG/>
         </OvalBottom>
         <Container>
             <Wrapper layout={layout}>
@@ -394,34 +389,230 @@ const AirBnb1Tabs = ({layout, columns}) => (
                                 </Panel>
                                 <Panel>
                                     <PanelWrapper className="panel2" layout={layout}>
-                                        <p>
-                                            Incorporating your company is not always an easy process.
-                                            Incfile is here to help you decide not only how to
-                                            incorporate, but to understand exactly which type of status to
-                                            file.
-                                        </p>
-                                        <p>
-                                            Many companies who incorporate are actually charities that do
-                                            not intend to make a profit, but rather donate all profits to
-                                            another organization. In this case, a charity would want to
-                                            incorporate as a nonprofit and, ultimately, apply for tax
-                                            exempt status.
-                                        </p>
+                                        <Heading size={2} style={{fontSize: "24px", textAlign: "left"}}>
+                                            Why You Should Start a New Airbnb Business
+                                        </Heading>
+                                        <Paragraph big style={{marginBottom: "76px"}}>
+                                            Airbnb has made it easier than ever for people to become hosts—people that
+                                            rent out property for others to stay at. Airbnb is a ready-made marketplace
+                                            for guests, with millions of listings around the world. Here are some
+                                            statistics on the power of the Airbnb industry:
+                                        </Paragraph>
 
-                                        <p>
-                                            By having tax exempt status, your donations can be recorded by
-                                            donors as not taxable by both the federal and state
-                                            government. This is a great incentive to be able to offer your
-                                            constituents.
-                                        </p>
+                                        <BlueBoxWithAbsoluteText absoluteText="150M"
+                                                                 text="There are over 150 million users on Airbnb"/>
+                                        <BlueBoxWithAbsoluteText absoluteText="$34B"
+                                                                 text="The largest market for Airbnb is in the US, with an economic impact of $34 billion"/>
+                                        <BlueBoxWithAbsoluteText absoluteText="500M"
+                                                                 text="There have been more than 500 million stays through Airbnb"/>
 
-                                        <p>
-                                            People who start nonprofits are driven by passion about a
-                                            certain cause. Whatever your cause, creating a nonprofit can
-                                            make a difference. We've provided as much information as you
-                                            need to know in choosing to incorporate as a nonprofit
-                                            corporation.
-                                        </p>
+                                        <div style={{marginBottom: "30px"}}>
+                                            <Adventages
+                                                headline="Half of Airbnb users stay in an Airbnb instead of a hotel"
+                                                width="100%"
+                                            />
+                                        </div>
+
+                                        <div style={{marginBottom: "30px"}}>
+                                            <Adventages
+                                                headline="More than two million people stay at an Airbnb on any given day"
+                                                width="100%"
+                                            />
+                                        </div>
+
+                                        <div style={{marginBottom: "30px"}}>
+                                            <Adventages
+                                                headline="Almost nine in ten reservations are for two or more people"
+                                                width="100%"
+                                            />
+                                        </div>
+
+                                        <div style={{marginBottom: "30px"}}>
+                                            <Adventages
+                                                headline="The compound growth rate since 2009 has been over 150 percent a year"
+                                                width="100%"
+                                            />
+                                        </div>
+
+                                        <div style={{marginBottom: "48px"}}>
+                                            <Adventages
+                                                headline="There has been a 45 percent increase in U.S. bookings year-to-year"
+                                                width="100%"
+                                            />
+                                        </div>
+
+                                        <Paragraph big>
+                                            This is why Airbnb businesses are so exciting — how can you be a part of
+                                            that success? We're here to help you figure that out.
+                                        </Paragraph>
+
+                                    </PanelWrapper>
+                                </Panel>
+                                <Panel>
+                                    <PanelWrapper className="panel3" layout={layout}>
+                                        <Heading size={2} style={{fontSize: "24px", textAlign: "left"}}>
+                                            Is Running an Airbnb Right for You?
+                                        </Heading>
+                                        <Paragraph big style={{marginBottom: "48px"}}>
+                                            Before deciding to start an Airbnb business, it’s important to understand
+                                            the skills and approach you’re likely to need.
+                                        </Paragraph>
+
+                                        <Heading size={2} style={{fontSize: "24px", textAlign: "left"}}>
+                                            A Day in the Life of an Airbnb Host
+                                        </Heading>
+                                        <Paragraph big style={{marginBottom: "48px"}}>
+                                            Here are some of the typical tasks you’ll be performing for your Airbnb
+                                            business on a daily basis.
+                                        </Paragraph>
+
+                                        <CountingTextBoxed number={1}>
+                                            <Paragraph bottomPadding={0} bottomMargin={0}>
+                                                Answering questions from guests and providing useful information
+                                            </Paragraph>
+                                        </CountingTextBoxed>
+
+                                        <CountingTextBoxed number={2}>
+                                            <Paragraph bottomPadding={0} bottomMargin={0}>
+                                                Arranging for cleaning and other routine tasks at your properties
+                                            </Paragraph>
+                                        </CountingTextBoxed>
+
+                                        <CountingTextBoxed number={3}>
+                                            <Paragraph bottomPadding={0} bottomMargin={0}>
+                                                Taking care of repairs and maintenance
+                                            </Paragraph>
+                                        </CountingTextBoxed>
+
+                                        <CountingTextBoxed number={4}>
+                                            <Paragraph bottomPadding={0} bottomMargin={0}>
+                                                Ensuring that bookings are up-to-date
+                                            </Paragraph>
+                                        </CountingTextBoxed>
+
+                                        <CountingTextBoxed number={5}>
+                                            <Paragraph bottomPadding={0} bottomMargin={0}>
+                                                Getting information and photos to create compelling Airbnb listings
+                                            </Paragraph>
+                                        </CountingTextBoxed>
+
+                                        <CountingTextBoxed number={6}>
+                                            <Paragraph bottomPadding={0} bottomMargin={0}>
+                                                Uploading and managing listings on the Airbnb platform
+                                            </Paragraph>
+                                        </CountingTextBoxed>
+
+                                        <CountingTextBoxed number={7}>
+                                            <Paragraph bottomPadding={0} bottomMargin={0}>
+                                                Minimizing cancellations of planned visits
+                                            </Paragraph>
+                                        </CountingTextBoxed>
+
+                                        <CountingTextBoxed number={8}>
+                                            <Paragraph bottomPadding={0} bottomMargin={0}>
+                                                Setting prices for guests to stay in your property
+                                            </Paragraph>
+                                        </CountingTextBoxed>
+
+                                        <CountingTextBoxed number={9}>
+                                            <Paragraph bottomPadding={0} bottomMargin={0}>
+                                                Responding to reviews from guests
+                                            </Paragraph>
+                                        </CountingTextBoxed>
+
+                                        <div style={{marginBottom: "76px"}}>
+                                            <CountingTextBoxed number={1}>
+                                                <Paragraph bottomPadding={0} bottomMargin={0}>
+                                                    An executive summary with the most important points from your
+                                                    business plan
+                                                </Paragraph>
+                                            </CountingTextBoxed>
+                                        </div>
+
+                                        <Heading size={2} style={{fontSize: "24px", textAlign: "left"}}>
+                                            Skills Needed by an Airbnb Business Entrepreneur
+                                        </Heading>
+                                        <Paragraph big style={{marginBottom: "48px"}}>
+                                            The following skills will be very useful in your role as an Airbnb small business owner.
+                                        </Paragraph>
+
+                                        <div style={{marginBottom: "30px"}}>
+                                            <Adventages
+                                                headline="Organizational skills to stay on top of your enquiries and bookings"
+                                                width="100%"
+                                            />
+                                        </div>
+
+                                        <div style={{marginBottom: "30px"}}>
+                                            <Adventages
+                                                headline="Interpersonal skills for managing the people that provide cleaning, maitenance and other services at your properties"
+                                                width="100%"
+                                            />
+                                        </div>
+
+                                        <div style={{marginBottom: "30px"}}>
+                                            <Adventages
+                                                headline="Planning skills to offer the amenities, supplies and services that your guests want"
+                                                width="100%"
+                                            />
+                                        </div>
+
+                                        <div style={{marginBottom: "48px"}}>
+                                            <Adventages
+                                                headline="Financial management skills so you understand the money you’re earning from rentals"
+                                                width="100%"
+                                            />
+                                        </div>
+
+                                        <Heading size={2} style={{fontSize: "24px", textAlign: "left"}}>
+                                            What Your Airbnb Guests are Looking For
+                                        </Heading>
+                                        <Paragraph big style={{marginBottom: "48px"}}>
+                                            Airbnb customers, commonly known as guests, are looking for:
+                                        </Paragraph>
+
+                                        <div style={{marginBottom: "30px"}}>
+                                            <Adventages
+                                                headline="Properties that match the listings provided by the host"
+                                                width="100%"
+                                            />
+                                        </div>
+
+                                        <div style={{marginBottom: "30px"}}>
+                                            <Adventages
+                                                headline="Properties that are safe, clean, and well-located for their needs"
+                                                width="100%"
+                                            />
+                                        </div>
+
+                                        <div style={{marginBottom: "30px"}}>
+                                            <Adventages
+                                                headline="Properties that are priced appropriately for their location, demand and the time of year"
+                                                width="100%"
+                                            />
+                                        </div>
+
+                                        <div style={{marginBottom: "30px"}}>
+                                            <Adventages
+                                                headline="Common amenities including clean sheets, toiletries, a first aid kit, etc."
+                                                width="100%"
+                                            />
+                                        </div>
+
+                                        <div style={{marginBottom: "30px"}}>
+                                            <Adventages
+                                                headline="Easy access to the property"
+                                                width="100%"
+                                            />
+                                        </div>
+
+                                        <div style={{marginBottom: "30px"}}>
+                                            <Adventages
+                                                headline="Important information like contact details, good local restaurants, transit stops, emergency service numbers, etc."
+                                                width="100%"
+                                            />
+                                        </div>
+
                                     </PanelWrapper>
                                 </Panel>
                             </Collapse>
