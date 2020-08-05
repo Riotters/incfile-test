@@ -9,6 +9,11 @@ import Image from "../atomic/atoms/image/image";
 
 const Wrapper = styled.div`
     padding-top: 24px;
+    width 100%;
+    
+     @media (min-width: 470px) {
+        max-width: 470px;
+      }
 `;
 
 const Box = styled.div`

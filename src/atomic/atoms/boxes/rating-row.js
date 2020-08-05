@@ -6,7 +6,7 @@ display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: start;
-  margin-top: 15px;
+  margin-top: 48px;
 
   @media (min-width: 768px) {
     flex-direction: row;
