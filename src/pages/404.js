@@ -6,8 +6,8 @@ import Button from "../components/button"
 
 const NotFoundPage = () => (
   <Layout>
-    <SEO title="404: Not found" />
-    <Top imageName="404">
+    <SEO title="404: Not found" description="not found"/>
+    <Top imageName="404" alt="Mr Bulb is showing 404 communique">
         <h1>Whoops, that Page is Gone</h1>
         <p>The link you clicked may be broke or the page may have been removed.</p>
         <Button to="/" theme="primary56" width="200px">Go to the home page</Button>
