@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import Buttonsbox from "../atomic/atoms/boxes/top-buttons-box";
 import Button from "../components/button";
 import Colorbox from "../components/color-box";
 import TextCenterLayout from "../components/partials/blocks/heading-center";
@@ -68,15 +69,6 @@ const RequirementsByState = styled.section`
   }
 `;
 
-const Buttonsbox = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: 768px) {
-    flex-direction: row;
-  }
-`;
-
 const Imageboxes = styled.div`
   display: grid;
   grid-template-columns: 1fr;
@@ -99,7 +91,7 @@ const CertificateCard = <Card headline="Change of Agent" price="49" dropdownOneP
 const ChangeOfRegisteredAgent = () => (
   <Layout>
     <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
-    <Top imageName="mrs-bulb-change-agent" imageAlt="Mrs Bulb and changing her agent">
+    <Top imageName="mrs-bulb-change-agent" imageAlt="Mrs Bulb is changing her agent">
       <h1>Registered Agent Services: Change of Registered Agent</h1>
       <p>Incfile is a nationwide registered agent service provider you can trust.</p>
       <Buttonsbox>

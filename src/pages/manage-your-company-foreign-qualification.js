@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import Buttonsbox from "../atomic/atoms/boxes/top-buttons-box";
 import Button from "../components/button";
 import Colorbox from "../components/color-box";
 import TextCenterLayout from "../components/partials/blocks/heading-center";
@@ -127,15 +128,6 @@ const RequirementsByState = styled.section`
         left: 0;
       }
     }
-  }
-`;
-
-const Buttonsbox = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: 768px) {
-    flex-direction: row;
   }
 `;
 
@@ -268,7 +260,7 @@ const CertificateCard = <Card headline="Dissolution" price="199" dropdownOnePlac
 const ForeignQualification = () => (
   <Layout>
     <SEO title="Foreign Qualification" description="Filling a Foreign Qualification to do Business Out of State." />
-    <Top imageName="mrs-bulb-foreign-qualification" imageAlt="Mrs Bulb with closed sign" headlineWidth="515">
+    <Top imageName="mrs-bulb-foreign-qualification" imageAlt="Mrs Bulb choosing a destination of his next business on a map of USA" headlineWidth="515">
       <h1>Filling a Foreign Qualification to do Business Out of State</h1>
       <p>From $199 + State Fee</p>
       <Buttonsbox>

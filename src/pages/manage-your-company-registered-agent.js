@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import Buttonsbox from "../atomic/atoms/boxes/top-buttons-box";
 import Button from "../components/button";
 import Colorbox from "../components/color-box";
 import TextCenterLayout from "../components/partials/blocks/heading-center";
@@ -80,15 +81,6 @@ const RequirementsByState = styled.section`
 
 const OrangeBackground = styled.div`
   background-image: ${gradient.orange3};
-`;
-
-const Buttonsbox = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: 768px) {
-    flex-direction: row;
-  }
 `;
 
 const Imageboxes = styled.div`
@@ -198,7 +190,7 @@ const faqs = {
 const RegisteredAgent = () => (
   <Layout>
     <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
-    <Top imageName="mrs-bulb-registered-agent" imageAlt="Mrs Bulb register agent service">
+    <Top imageName="mrs-bulb-registered-agent" imageAlt="Mrs Bulb register agent service holding a phone">
       <h1>Registered Agent Service</h1>
       <p>Dependable, Easy, and Free for the First Year When You Incorporate with Incfile. A nationwide Registered Agent service provider you can trust at an affordable price. Available in all U.S. states.</p>
       <Buttonsbox>

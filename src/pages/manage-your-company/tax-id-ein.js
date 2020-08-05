@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
+import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
 import Button from "../../atomic/molecules/buttons/button";
 import TextCenterLayout from "../../components/partials/blocks/heading-center";
 import styled from "styled-components";
@@ -90,15 +91,6 @@ const RequirementsByState = styled.section`
         left: 0;
       }
     }
-  }
-`;
-
-const Buttonsbox = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: 768px) {
-    flex-direction: row;
   }
 `;
 
@@ -288,7 +280,7 @@ const TaxIdEin = () => (
       </Buttonsbox>
     </Top>
     <BusinessOwnerResponsibilities>
-      <ImageContent image="envelope" paddingTop="60">
+      <ImageContent image="envelope-ein" paddingTop="60">
         <H3Text content={h3Texts.items[0]} />
         <H4Color className="colorbox" icon={IDCardSVG} color={color.orange3} curve curveColor={color.blue1} content={h4ColorTexts.items[0]} />
         <H3Text content={h3Texts.items[1]} />

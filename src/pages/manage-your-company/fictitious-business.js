@@ -5,26 +5,28 @@ import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
 import Button from "../../atomic/molecules/buttons/button";
 //sections
 import Top from "../../components/partials/sections/top";
-import Unboxnig from "../../atomic/sections/manage-your-company/corporate-llc-kit/unboxing";
-import GetFormationKit from "../../atomic/sections/manage-your-company/corporate-llc-kit/get-formation-kit";
+import About from "../../atomic/sections/manage-your-company/fictitious-business/about";
+import BusinessesChoose from "../../atomic/sections/manage-your-company/fictitious-business/businesses-choose";
+import OtherTerms from "../../atomic/sections/manage-your-company/fictitious-business/other-terms";
 import Articles from "../../components/partials/sections/articles";
 //texts
-import { top, unboxing, getFormationKit } from "../../static/corporate-llc-kit"
+import { top, about, businessesChoose, otherTerms } from "../../static/fictitious-business";
 
-const CorporateLlcKit = () => (
+const FictitiousBusiness = () => (
   <Layout>
     <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
-    <Top imageName="mrs-bulb-llc-corporate-kit" imageAlt="image alt" ovalColor="blue">
+    <Top imageName="mrs-bulb-dba" imageAlt="image alt" ovalColor="purple">
       <h1>{top.header}</h1>
       <p>{top.text}</p>
       <Buttonsbox>
         <Button content={top.button[0]} theme="primary56" arrow />
       </Buttonsbox>
     </Top>
-    <Unboxnig content={unboxing} />
-    <GetFormationKit content={getFormationKit} />
+    <About content={about} />
+    <BusinessesChoose content={businessesChoose} />
+    <OtherTerms content={otherTerms} />
     <Articles />
   </Layout>
 );
 
-export default CorporateLlcKit;
+export default FictitiousBusiness;

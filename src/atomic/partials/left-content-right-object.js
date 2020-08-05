@@ -30,7 +30,7 @@ const Objectbox = styled.div`
   justify-content: center;
 
   @media (min-width: 768px) {
-    grow: 1;
+    flex-grow: 1;
   }
 `;
 

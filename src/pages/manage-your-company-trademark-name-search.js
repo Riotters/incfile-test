@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import Buttonsbox from "../atomic/atoms/boxes/top-buttons-box";
 import Button from "../components/button";
 import Colorbox from "../components/color-box";
 import TextCenterLayout from "../components/partials/blocks/heading-center";
@@ -92,15 +93,6 @@ const RequirementsByState = styled.section`
         left: 0;
       }
     }
-  }
-`;
-
-const Buttonsbox = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: 768px) {
-    flex-direction: row;
   }
 `;
 
@@ -219,7 +211,7 @@ const CertificateCard = <Card headline="Register a Trademark" price="199" />;
 const TrademarkNameSearch = () => (
   <Layout>
     <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
-    <Top imageName="mrs-bulb-trademark" imageAlt="Mrs Bulb with trademark coins">
+    <Top imageName="mrs-bulb-trademark" imageAlt="Mr Bulb holding a certificate and tossing an orginal and a trademark sign">
       <h1>Register a Trademark</h1>
       <p>Only $199 + Federal fee</p>
       <Buttonsbox>
@@ -229,7 +221,7 @@ const TrademarkNameSearch = () => (
       </Buttonsbox>
     </Top>
     <BusinessOwnerResponsibilities>
-      <ImageContent image="shieldo" paddingTop="60">
+      <ImageContent image="shieldo" paddingTop="60" imageAlt="a shield icon with a TM sign ">
         <h3>Protect your business name with a trademark</h3>
         <p>
           Protecting your trademark can really pay dividends. Not only is it a valuable property asset, but it’s also your brand, your reputation. The reputation you have established is associated with these different brand elements - your name, logo, and tagline - and the reason why people buy from
@@ -268,7 +260,7 @@ const TrademarkNameSearch = () => (
           <Boxes>
             <div className="box">
               <div className="icon">
-                <Image filename="needs" />
+                <Image filename="needs" imageAlt="an comic speech bubble icon" />
               </div>
               <h4>Tell us what you need</h4>
               <p>Tell us what you need. A trademark attorney will follow up with you to get a better understanding of your needs and provide guidance on how the process works.</p>
@@ -280,7 +272,7 @@ const TrademarkNameSearch = () => (
             </div>
             <div className="box">
               <div className="icon">
-                <Image filename="trademark" />
+                <Image filename="trademark" imageAlt="a papersheet with a trademark icon" />
               </div>
               <h4>We will file your trademark wih the Patent and Trademark office</h4>
               <p>The attorney will file the trademark with the US Patent and Trademark office and deliver the approved trademark documentation.</p>
@@ -292,7 +284,7 @@ const TrademarkNameSearch = () => (
             </div>
             <div className="box">
               <div className="icon">
-                <Image filename="work" />
+                <Image filename="work" imageAlt="a papersheet icon with a magnifire" />
               </div>
               <h4>We get to work</h4>
               <p>The trademark attorney will conduct a trademark search to ensure the availability, then provide the search results along with a plan of action.</p>
