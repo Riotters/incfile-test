@@ -12,7 +12,7 @@ import Help from "../components/partials/sections/help";
 const ManageYourCompany = () => (
   <Layout>
     <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
-    <Top imageName="mrs-bulb-final-paper-stock" imageAlt="Mr Bulb with paper stock">
+    <Top imageName="mrs-bulb-final-paper-stock" imageAlt="Mr Bulb with a briefcase holding a sign pointing foward">
       <h1>Manage Your Company</h1>
       <p>Helping entrepreneurs form their businesses is just one of the many services we offer. As your business grows we'll be there every step of the way to make sure that you have the resources at hand to service your companies ongoing needs.</p>
       <Buttonsbox>
