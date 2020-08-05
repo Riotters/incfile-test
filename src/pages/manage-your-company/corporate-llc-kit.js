@@ -1,8 +1,8 @@
 import React from "react";
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
+import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
 import Button from "../../atomic/molecules/buttons/button";
-import styled from "styled-components";
 //sections
 import Top from "../../components/partials/sections/top";
 import Unboxnig from "../../atomic/sections/manage-your-company/corporate-llc-kit/unboxing";
@@ -10,15 +10,6 @@ import GetFormationKit from "../../atomic/sections/manage-your-company/corporate
 import Articles from "../../components/partials/sections/articles";
 //texts
 import { top, unboxing, getFormationKit } from "../../static/corporate-llc-kit"
-
-const Buttonsbox = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: 768px) {
-    flex-direction: row;
-  }
-`;
 
 const CorporateLlcKit = () => (
   <Layout>
