@@ -190,7 +190,7 @@ const faqs = {
 const RegisteredAgent = () => (
   <Layout>
     <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
-    <Top imageName="mrs-bulb-registered-agent" imageAlt="Mrs Bulb register agent service">
+    <Top imageName="mrs-bulb-registered-agent" imageAlt="Mrs Bulb register agent service holding a phone">
       <h1>Registered Agent Service</h1>
       <p>Dependable, Easy, and Free for the First Year When You Incorporate with Incfile. A nationwide Registered Agent service provider you can trust at an affordable price. Available in all U.S. states.</p>
       <Buttonsbox>
