@@ -8,7 +8,6 @@ const Benefits = styled.section`
   position: relative;
   padding-top: 75px;
   padding-bottom: 64px;
-  }
 `;
 
 const BenefitsSection = ({ className, content }) => (

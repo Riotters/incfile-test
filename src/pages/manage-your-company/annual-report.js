@@ -3,7 +3,8 @@ import styled from "styled-components";
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
 import { color, gradient } from "../../components/styles/colors";
-import { states } from "../../components/states"
+import { states } from "../../components/states";
+import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
 import Button from "../../components/button";
 import Colorbox from "../../components/color-box";
 import TextCenterLayout from "../../components/partials/blocks/heading-center";
@@ -111,15 +112,6 @@ const RequirementsByState = styled.section`
 
   .help {
     padding-bottom: 150px;
-  }
-`;
-
-const Buttonsbox = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: 768px) {
-    flex-direction: row;
   }
 `;
 

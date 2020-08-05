@@ -8,6 +8,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 
   h2 {
     max-width: ${props => props.headlineWidth ? props.headlineWidth : '610'}px;

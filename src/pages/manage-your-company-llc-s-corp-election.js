@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import Buttonsbox from "../atomic/atoms/boxes/top-buttons-box";
 import Button from "../atomic/molecules/buttons/button";
 import TextCenterLayout from "../components/partials/blocks/heading-center";
 import styled from "styled-components";
@@ -158,15 +159,6 @@ const Help = styled.section`
 
   p {
     padding-bottom: 48px;
-  }
-`;
-
-const Buttonsbox = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: 768px) {
-    flex-direction: row;
   }
 `;
 

@@ -7,6 +7,7 @@ import Whitebox from "../../atoms/boxes/white-box";
 
 const Wrapper = styled.div`
     width: 100%;
+    max-width: 470px;
     position: relative;
     
     .box {

@@ -5,12 +5,16 @@ import { color } from "../../atoms/styles/colors";
 
 const Wrapper = styled.div`
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 100%;
     grid-gap: 30px;
     width: 100%;
     max-width: 970px;
     position: relative;
     margin-top: 96px;
+
+    @media(min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+    }
 
     .card {
       display: flex;
@@ -33,19 +37,19 @@ const BenefitsCards = ({ className, content }) => {
         {/* {content.map(card => (
             <Card content={card}/>
         ))} */}
-        <Card color={color.blue3} image="clock">
+        <Card color={color.blue3} image="burden" noShadow>
           <h4>{content[0].header}</h4>
           <p>{content[0].text}</p>
         </Card>
-        <Card color={color.purple3} image="clock">
+        <Card color={color.purple3} image="reduce-errors" noShadow>
           <h4>{content[1].header}</h4>
           <p>{content[1].text}</p>
         </Card>
-        <Card color={color.green3} image="clock">
+        <Card color={color.green3} image="tax-advice" noShadow>
           <h4>{content[2].header}</h4>
           <p>{content[2].text}</p>
         </Card>
-        <Card color={color.yellow3} image="clock">
+        <Card color={color.yellow3} image="adverse-consequences" noShadow>
           <h4>{content[3].header}</h4>
           <p>{content[3].text}</p>
         </Card>

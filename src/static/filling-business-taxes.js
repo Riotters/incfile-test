@@ -170,26 +170,18 @@ export const typesOfTaxes = {
 export const taxReturn = {
   header: 
     `Tax Return Due Dates`,
-  table: [
-    {
-      header:
-        `September 15 2020`,
-      list: [
-        `S Corporations`,
-        `C Corporations`,
-      ],
-    },
-    {
-      header:
-        `September 15 2020`,
-      list: [
-        `One Owner LLC`,
-        `Partnerships`,
-        `Personal 1040`,
-        `Multi- Member LLC`,
-      ],
-    }
-  ],
+  table: {
+    headers: [
+      `September 15 2020`,
+      `September 15 2020`,
+    ],
+    rows: [
+      [`S Corporations`, `One Owner LLC`],
+      [`C Corporations`, `Partnerships`],
+      [``, `Personal 1040`],
+      [``, `Multi- Member LLC`],
+    ]
+  },
 }
 
 export const pricing = {

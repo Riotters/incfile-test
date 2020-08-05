@@ -1,17 +1,13 @@
 import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import Buttonsbox from "../atomic/atoms/boxes/top-buttons-box";
 import Button from "../components/button";
-import styled from "styled-components";
 import Top from "../components/partials/sections/top";
 import Benefits from "../components/partials/sections/benefits";
 import Certificates from "../components/partials/sections/certificates";
 import Articles from "../components/partials/sections/articles";
 import Help from "../components/partials/sections/help";
-
-const Buttonsbox = styled.div`
-  display: flex;
-`;
 
 const ManageYourCompany = () => (
   <Layout>

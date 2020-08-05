@@ -1,8 +1,8 @@
 import React from "react";
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
+import ButtonsBox from "../../atomic/atoms/boxes/top-buttons-box";
 import Button from "../../components/button";
-import styled from "styled-components";
 import Top from "../../components/partials/sections/top";
 import RatingRow from "../../atomic/atoms/boxes/rating-row";
 import CartBlock from "../../atomic/molecules/blocks/cart-block";
@@ -66,14 +66,5 @@ const Airbnb = () => (
         <Rocket />
     </Layout>
 );
-
-const ButtonsBox = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: 768px) {
-    flex-direction: row;
-  }
-`;
 
 export default Airbnb;
