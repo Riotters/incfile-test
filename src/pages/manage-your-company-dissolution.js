@@ -277,7 +277,7 @@ const CertificateCard = <Card headline="Dissolution" price="149" dropdownOnePlac
 const Dissolution = () => (
   <Layout>
     <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
-    <Top imageName="mrs-bulb-dissolution" imageAlt="Mrs Bulb with closed sign">
+    <Top imageName="mrs-bulb-dissolution" imageAlt="Mrs Bulb holding a closed sign">
       <h1>Filing Articles of Dissolution</h1>
       <p>From $199 + Federal Fee</p>
       <Buttonsbox>
