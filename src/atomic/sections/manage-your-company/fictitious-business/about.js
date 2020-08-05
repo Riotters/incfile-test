@@ -34,7 +34,7 @@ const AboutSection = ({ className, content }) => (
         <ContentCenter>
             <Diagram content={content.diagram} />
             <Paragraph maxWidth="970" style={{textAlign: "center"}}>{content.text}</Paragraph>
-            <Heading size="4" style={{textAlign: "center"}}>{content.header2}</Heading>
+            <Heading size="4" bottomMargin="48" style={{textAlign: "center"}}>{content.header2}</Heading>
             <Button theme="secondary56" content={content.button} arrow />
         </ContentCenter>
     </About>

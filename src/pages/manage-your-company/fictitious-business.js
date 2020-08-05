@@ -6,12 +6,11 @@ import Button from "../../atomic/molecules/buttons/button";
 //sections
 import Top from "../../components/partials/sections/top";
 import About from "../../atomic/sections/manage-your-company/fictitious-business/about";
-import TaxReturn from "../../atomic/sections/manage-your-company/filling-business-taxes/tax-return";
-import Pricing from "../../atomic/sections/manage-your-company/filling-business-taxes/pricing";
-import Benefits from "../../atomic/sections/manage-your-company/filling-business-taxes/benefits";
+import BusinessesChoose from "../../atomic/sections/manage-your-company/fictitious-business/businesses-choose";
+import OtherTerms from "../../atomic/sections/manage-your-company/fictitious-business/other-terms";
 import Articles from "../../components/partials/sections/articles";
 //texts
-import { top, about } from "../../static/fictitious-business";
+import { top, about, businessesChoose, otherTerms } from "../../static/fictitious-business";
 
 const FictitiousBusiness = () => (
   <Layout>
@@ -23,7 +22,9 @@ const FictitiousBusiness = () => (
         <Button content={top.button[0]} theme="primary56" arrow />
       </Buttonsbox>
     </Top>
-    <About content={about}/>
+    <About content={about} />
+    <BusinessesChoose content={businessesChoose} />
+    <OtherTerms content={otherTerms} />
     <Articles />
   </Layout>
 );
