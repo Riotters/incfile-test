@@ -91,7 +91,7 @@ const CertificateCard = <Card headline="Change of Agent" price="49" dropdownOneP
 const ChangeOfRegisteredAgent = () => (
   <Layout>
     <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
-    <Top imageName="mrs-bulb-change-agent" imageAlt="Mrs Bulb and changing her agent">
+    <Top imageName="mrs-bulb-change-agent" imageAlt="Mrs Bulb is changing her agent">
       <h1>Registered Agent Services: Change of Registered Agent</h1>
       <p>Incfile is a nationwide registered agent service provider you can trust.</p>
       <Buttonsbox>
