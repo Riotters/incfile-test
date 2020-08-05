@@ -288,7 +288,7 @@ const TaxIdEin = () => (
       </Buttonsbox>
     </Top>
     <BusinessOwnerResponsibilities>
-      <ImageContent image="envelope" paddingTop="60">
+      <ImageContent image="envelope-ein" paddingTop="60">
         <H3Text content={h3Texts.items[0]} />
         <H4Color className="colorbox" icon={IDCardSVG} color={color.orange3} curve curveColor={color.blue1} content={h4ColorTexts.items[0]} />
         <H3Text content={h3Texts.items[1]} />

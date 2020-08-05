@@ -4,13 +4,17 @@ import Card from "../../molecules/text-blocks/pricing-card";
 
 const Wrapper = styled.div`
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 30px;
+    grid-template-columns: 100%;
+    grid-gap: 30px;
     width: 100%;
     max-width: 970px;
     position: relative;
     margin-top: 92px;
     margin-bottom: 48px;
+
+    @media(min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+    }
 
     .card {
       display: flex;
