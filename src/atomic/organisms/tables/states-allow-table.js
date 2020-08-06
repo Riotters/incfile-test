@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import GridTableRow from "../../molecules/blocks/grid-table-row";
+import { color } from "../../atoms/styles/colors";
 
 const Wrapper = styled.div`
     display: flex;
@@ -22,6 +23,24 @@ const Wrapper = styled.div`
                 }
             }
         }
+    }
+
+    .row {
+        & > div {
+            &:last-child {
+                p {
+                    background-color: ${color.green3};
+                    border-radius: 20px;
+                    padding: 8px 16px;
+                }
+            }
+        }
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 24px;
+        color: ${color.black};
     }
 `
 
