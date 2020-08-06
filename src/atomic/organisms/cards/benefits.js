@@ -30,29 +30,15 @@ const Wrapper = styled.div`
     }
 `
 
+const colors = [color.blue3, color.purple3, color.green3, color.yellow3];
+const icons = ["burden", "reduce-errors", "tax-advice", "adverse-consequences"];
 
 const BenefitsCards = ({ className, content }) => {
   return (
     <Wrapper className={className} content={content}>
-        {/* {content.map(card => (
-            <Card content={card}/>
-        ))} */}
-        <Card color={color.blue3} image="burden" noShadow>
-          <h4>{content[0].header}</h4>
-          <p>{content[0].text}</p>
-        </Card>
-        <Card color={color.purple3} image="reduce-errors" noShadow>
-          <h4>{content[1].header}</h4>
-          <p>{content[1].text}</p>
-        </Card>
-        <Card color={color.green3} image="tax-advice" noShadow>
-          <h4>{content[2].header}</h4>
-          <p>{content[2].text}</p>
-        </Card>
-        <Card color={color.yellow3} image="adverse-consequences" noShadow>
-          <h4>{content[3].header}</h4>
-          <p>{content[3].text}</p>
-        </Card>
+        {content.map((card, i) => (
+            <Card content={card} color={colors[i]} image={icons[i]} noShadow/>
+        ))}
     </Wrapper>
   )
 }

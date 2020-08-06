@@ -42,6 +42,11 @@ import Adventages from "../components/adventages";
 import InfoCardsSection from "../atomic/partials/info-cards-section";
 import {InfoCards} from "../static/type-of-business/airbnb";
 
+const topimagebox = {
+    header: `How Long does it take to file an Annual Report?`,
+    text: `The filing time is dependent on the governing state agency. Filing times vary by state it is therefore important that the report is filed well in advance of the due date in order to avoid any potential late filing fees.`,
+}
+
 const Section = styled.div`
     width: 100%;
     position: relative;
@@ -501,14 +506,7 @@ const ComponentsPage = () => (
                 </GreyWrapper>
                 <h3>Top Image Box</h3>
                 <GreyWrapper>
-                    <TopImageBox image="clock">
-                        <h4>How Long does it take to file an Annual Report?</h4>
-                        <p>
-                            The filing time is dependent on the governing state agency. Filing times vary by state it is
-                            therefore important that the report is filed well in advance of the due date in order to
-                            avoid any potential late filing fees.
-                        </p>
-                    </TopImageBox>
+                    <TopImageBox image="clock" content={topimagebox}/>
                 </GreyWrapper>
 
                 <h3>Text Box With Absolute Image</h3>
