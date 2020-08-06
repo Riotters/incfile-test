@@ -54,8 +54,7 @@ const LinksContainer = styled.div`
 `;
 
 const LinkItem = styled.div`
-    margin-left: 15px;
-    margin-right: 15px;
+    margin: 0 auto;
     padding: 28px 40px 28px 40px;
     background-color: white;
     box-shadow: ${shadow.white1};
@@ -64,6 +63,11 @@ const LinkItem = styled.div`
     
     @media (min-width: 470px) {
         width: 470px;
+    }
+    
+    @media (min-width: 1000px) {
+        margin-left: 15px;
+        margin-right: 15px;
     }
 `;
 

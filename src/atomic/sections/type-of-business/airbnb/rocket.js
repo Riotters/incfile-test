@@ -133,9 +133,9 @@ const Moon = styled.div`
 const Content = styled.div`
   width: 100%;
   
-  @media (min-width: 600px) {
+  @media (min-width: 768px) {
         width: 600px; 
-        
+        margin-left: auto;
   }
 `
 
