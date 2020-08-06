@@ -27,7 +27,6 @@ const circleColors = [color.orange2, color.blue2, color.babyblue2];
 const BenefitsCards = ({ className, content }) => {
   return (
     <Wrapper className={className} content={content}>
-        {console.log(content)}
         {content.map((circle, i) => (
             <CircleIconText content={circle} Icon={circleIcons[i]} color={circleColors[i]} />
         ))}

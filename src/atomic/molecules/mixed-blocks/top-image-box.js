@@ -3,6 +3,8 @@ import styled from "styled-components"
 import { color } from "../../atoms/styles/colors"
 import { shadow } from "../../atoms/styles/shadows"
 import Image from "../../atoms/image/image"
+import { Heading } from "../../atoms/typography/heading"
+import { Paragraph } from "../../atoms/typography/paragraph"
 
 const Wrapper = styled.div`
     width: 100%;
@@ -43,17 +45,17 @@ const Wrapper = styled.div`
     }
 `
 
-const TopImageBox = ({ className, image, color, children, noShadow }) => {
-
+const TopImageBox = ({ className, image, color, content, noShadow }) => {
   return (
-    <Wrapper className={className} color={color} noShadow={noShadow}>
+      <Wrapper className={className} color={color} noShadow={noShadow}>
         <div className="top">
             {image && (
                 <Image filename={image} />
             )}   
         </div>
         <div className="content">
-            {children}
+            <Heading size="4">{content.header}</Heading>
+            <Paragraph>{content.text}</Paragraph>
         </div>
     </Wrapper>
   )

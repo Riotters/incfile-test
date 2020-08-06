@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { Paragraph } from "../../../atoms/typography/paragraph";
-import { Heading } from "../../../atoms/typography/heading";
-import { color } from "../../../atoms/styles/colors";
 import HeadingCenter from "../../../partials/heading-center";
 import ContentCenter from "../../../partials/content-center";
 import Circles from "../../../organisms/circles/other-terms-circles";

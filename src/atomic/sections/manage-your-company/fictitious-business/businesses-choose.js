@@ -3,9 +3,6 @@ import styled from "styled-components";
 import { Paragraph } from "../../../atoms/typography/paragraph";
 import { Heading } from "../../../atoms/typography/heading";
 import { color } from "../../../atoms/styles/colors";
-import HeadingCenter from "../../../partials/heading-center";
-import Button from "../../../molecules/buttons/button";
-import Diagram from "../../../organisms/diagrams/fictitious-diagram";
 import LeftContentRightObject from "../../../partials/left-content-right-object";
 import Cards from "../../../organisms/cards/busienesses-choose-cards";
 

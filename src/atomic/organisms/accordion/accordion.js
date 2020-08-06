@@ -201,7 +201,6 @@ const Accordion = ({ content }) => {
                   </Tab>
                   <Panel>
                     <PanelWrapper>
-                      {console.log(typeof item.answer)}
                       {typeof item.answer === 'string' ?
                         <p>{item.answer}</p> : null
                       }

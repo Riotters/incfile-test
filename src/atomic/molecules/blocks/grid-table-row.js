@@ -5,10 +5,13 @@ import { Heading } from "../../atoms/typography/heading";
 import { Paragraph } from "../../atoms/typography/paragraph";
 import Whitebox from "../../atoms/boxes/white-box";
 import IconCircle from "../../atoms/icons/circle";
+import CheckSVG from "../../../images/circle-status-check.inline.svg"
+import ExSVG from "../../../images/circle-status-x.inline.svg"
+
 
 const Wrapper = styled(Whitebox)`
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: ${props => props.columns ? `repeat(${props.columns}, 1fr)` : "50% 50%"};
 
     &:not(:last-child) {
         margin-bottom: 8px;
@@ -42,24 +45,30 @@ const ListItem = styled(Paragraph)`
     }
 `;
 
-const GridTableRow = ({ className, content, header, list }) => (
-    <Wrapper className={className}>
+const GridTableRow = ({ className, content, header, headerSize, list, columns }) => (
+    <Wrapper className={className} columns={columns}>
         {content.map(item => (
             <Cell>
                 {header && (
-                    <Heading size="4" bottomMargin="0">
+                    <Heading size={headerSize ? headerSize :"4"} bottomMargin="0">
                         {item}
                     </Heading>
                 )}
-                {list && item !=="" && (
+                {list && item !== "" && item !== "check-green" && item !== "check-red" && (
                     <ListItem bottomMargin="0">
                         {item}
                     </ListItem>
                 )}
-                {!header && !list && item !=="" && (
+                {!header && !list && item !== "" && item !== "check-green" && item !== "check-red" && (
                     <Paragraph bottomMargin="0">
                         {item}
                     </Paragraph>
+                )}
+                {item ==="check-green" && (
+                    <CheckSVG/>
+                )}
+                {item ==="check-red" && (
+                    <ExSVG />
                 )}
                 {item ==="" && (
                     <IconCircle theme="empty" circleColor="#E7E7E7"/>
