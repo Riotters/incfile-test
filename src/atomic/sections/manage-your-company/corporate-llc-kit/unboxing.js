@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import HeadingCenter from "../../../partials/heading-center";
 import ContentCenter from "../../../partials/content-center";
-import Image from "../../../atoms/image/image"
+import UboxingFormationKit from "../../../organisms/kit/unboxing-formation-kit"
 
 const Unboxing = styled.section`
   position: relative;
@@ -18,18 +18,13 @@ const Unboxing = styled.section`
           padding-bottom: 48px;
       }
   }
-
-  .gatsby-image-wrapper {
-    width: 100%;
-    max-width: 1050px;
-  }
 `;
 
 const UnboxingSection = ({ className, content }) => (
     <Unboxing className={className}>
         <HeadingCenter className="heading" headline={content.header} headlineWidth="770" text={content.text} />
         <ContentCenter>
-            <Image filename="corporate-llc-kit" />
+            <UboxingFormationKit content={content.boxes} />
         </ContentCenter>
     </Unboxing>
   );
