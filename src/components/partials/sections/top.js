@@ -44,7 +44,7 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   max-height: 777px;
 `;
 
@@ -58,7 +58,7 @@ const Oval = styled.div`
   z-index: -1;
   overflow: hidden;
 
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     width: 50%;
     max-width: 850px;
   }
@@ -103,28 +103,41 @@ const TextContainer = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding-top: 50px;
+  padding-top: 150px;
+  padding-bottom: 120px;
 
-  @media (min-width: 768px) {
+    @media (min-width: 992px) {
+        padding-top: 50px;
+    }
+    
+  @media (min-width: 992px) {
     width: 50%;
     align-items: flex-start;
   }
 
   h1 {
     width: 100%;
-    max-width: ${props => (props.headlineWidth ? props.headlineWidth : "480")}px;
     text-align: center;
     padding-bottom: 40px;
 
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       text-align: left;
       padding-bottom: 20px;
+    }
+    
+    @media (min-width: 1200px) {
+        max-width: ${props => (props.headlineWidth ? props.headlineWidth : "480")}px;
     }
   }
 
   p {
-    max-width: ${props => (props.headlineWidth ? props.headlineWidth : "480")}px;
     margin-bottom: 33px;
+    text-align: center;
+    
+    @media (min-width: 1200px) {
+        text-align: left;
+        max-width: ${props => (props.headlineWidth ? props.headlineWidth : "480")}px;
+    }
   }
 `;
 
@@ -139,7 +152,7 @@ const ImageContainer = styled.div`
   right: 55%;
   transform: translate(100%, -50%);
 
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     display: flex;
   }
 

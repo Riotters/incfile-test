@@ -21,7 +21,6 @@ const Wrapper = styled(Link)`
   line-height: 32px;
   text-align: center;
   text-decoration: none;
-  white-space: nowrap;
   position: relative;
   padding: ${(props) => (props.padding ? props.padding : props.theme === "primary40" || props.theme === "secondary40" ? "2px 30px" : props.theme === "primary48" || props.theme === "secondary48" ? "6px 38px" : props.theme === "primary56" || props.theme === "secondary56" ? "10px 46px" : "")};
   margin: ${(props) => (props.margin ? props.margin : "")};
@@ -33,11 +32,12 @@ const Wrapper = styled(Link)`
   }
   
   @media (min-width: 768px) {
+    white-space: nowrap;
     margin: ${(props) => (props.marginMD ? props.marginMD : "")};
   }
   
   @media (min-width: ${(props) => (props.width)}) {
-    width: ${(props) => (props.width)}
+    max-width: ${(props) => (props.width)}
   }
   
   &:hover {

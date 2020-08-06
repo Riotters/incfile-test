@@ -29,14 +29,23 @@ const BusinessOwnerResponsibilities = styled.section`
 const OrangeContainer = styled.div`
     background: rgb(255,255,255);
     background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(254,246,237,1) 100%);
-    padding-bottom: 100px;
     position: relative;
+    
+    @media (min-width: 768px) {
+        padding-bottom: 100px;
+    }
 `;
 
 const Oval = styled.div`
   position: absolute;
   left: 0;
   top: 200px;
+  
+  display: none;
+  
+  @media (min-width: 720px){
+    display: block;
+  }
 `
 
 const AirBnB1BusinessStructure = () => (

@@ -68,9 +68,13 @@ const AirbnbTaxes = () => (
 const BabyBlueContainer = styled.div`
     background: rgb(255,255,255);
     background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(240,248,255,1) 100%);
-    padding-bottom: 100px;
+    padding-bottom: 0px;
     padding-top: 100px;
     position: relative;
+    
+    @media (min-width: 1024px) {
+        padding-bottom: 100px;
+    }
 `;
 
 const TextWrapper = styled.div`
@@ -84,36 +88,59 @@ const TextWrapper = styled.div`
 `;
 
 const Service = styled.div`
-  padding: 64px 0;
+  @media (min-width: 1024px) {
+    padding: 64px 0;
+  }
 `;
 
 const AdventagesBox = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
   max-width: 970px;
-  padding: 140px 0;
+  padding: 40px 0;
   margin: 0 auto;
   position: relative;
+  
+  @media (min-width: 1024px) {
+    padding: 140px 0;
+  }
 `;
 
 const Oval = styled.div`
     position: absolute;
     right: 0;
     top: 0;
+    
+    display: none;
+  
+  @media (min-width: 1200px){
+    display: block;
+  }
 `;
 
 const OvalBottom = styled.div`
     position: absolute;
     left: 0;
     bottom: 300px;
+    
+    display: none;
+  
+  @media (min-width: 1200px){
+    display: block;
+  }
 `;
 
 const CurveWrapper = styled.div`
     position: absolute;
     right: -115px;
     top: 24px;
+    
+     display: none;
+  
+  @media (min-width: 1200px){
+    display: block;
+  }
 `;
 
 export default AirbnbTaxes;

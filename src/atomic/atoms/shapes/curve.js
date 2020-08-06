@@ -11,6 +11,7 @@ const Wrapper = styled.div`
             fill: ${props => props.color ? props.color : ""}
         }
     }
+    
 `;
 
 const Curve = ({ className, color, style}) => {

@@ -14,31 +14,32 @@ const InfoCardWithImage = ({roundTopLeft, roundTopRight, roundBottomLeft, roundB
 
 const CardWrapper = styled.div`
     box-shadow: 0 24px 32px rgba(236, 236, 236, 0.5);
-    width: 100%;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin: 0 15px 30px;
     overflow: hidden;
     background-color: white;
     min-height: 640px;
     
-    ${props => props.roundTopLeft && 
-        "border-top-left-radius: 40px;"
-    }
-    
-    ${props => props.roundTopRight &&
-    "border-top-right-radius: 40px;"
-    }
-    
-    ${props => props.roundBottomLeft &&
-        "border-bottom-left-radius: 40px;"
-    }
-    
-    ${props => props.roundBottomRight &&
-        "border-bottom-right-radius: 40px;"
-    }
-    
     @media (min-width: 370px) { 
+        margin: 0 auto 30px;
         width: 370px;
+    }
+    
+    @media (min-width: 1024px) {
+        ${props => props.roundTopLeft && 
+            "border-top-left-radius: 40px;"
+        }
+        
+        ${props => props.roundTopRight &&
+        "border-top-right-radius: 40px;"
+        }
+        
+        ${props => props.roundBottomLeft &&
+            "border-bottom-left-radius: 40px;"
+        }
+        
+        ${props => props.roundBottomRight &&
+            "border-bottom-right-radius: 40px;"
+        }
     }
 `;
 

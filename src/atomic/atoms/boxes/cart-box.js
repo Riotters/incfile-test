@@ -5,7 +5,13 @@ const RatingWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 42px;
+  margin-left: 15px;
+  margin-right: 15px;
+  
+  @media (min-width: 1024px) {
+    margin-left: 0px;
+    margin-right: 42px; 
+  }
 
   @media (min-width: 768px) {
     flex-direction: row;

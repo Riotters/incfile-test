@@ -81,9 +81,8 @@ const Service = styled.div`
 `;
 
 const AdventagesBox = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
   max-width: 970px;
   padding: 140px 0;
@@ -101,12 +100,20 @@ const OvalBottom = styled.div`
     position: absolute;
     left: 0;
     bottom: 300px;
+    
+    @media (max-width: 970px) {
+        display: none;
+    }
 `;
 
 const CurveWrapper = styled.div`
     position: absolute;
     right: -115px;
     top: 24px;
+    
+    @media (max-width: 970px) {
+        display: none;
+    }
 `;
 
 export default CoachTaxes;

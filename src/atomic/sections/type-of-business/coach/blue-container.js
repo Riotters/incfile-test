@@ -6,7 +6,6 @@ import OkIcon from "../../../../images/icons/ok.inline.svg";
 import {color} from "../../../../components/styles/colors";
 import React from "react";
 import styled from "styled-components";
-import OvalSVG from "../../../../images/oval-blue-3.inline.svg";
 import OvalBlueSVG from "../../../../images/oval-blue-4.inline.svg";
 import Curve from "../../../atoms/shapes/curve";
 
@@ -82,16 +81,10 @@ const TextBorderedList = styled.div`
     }
 `;
 
-const Oval = styled.div`
-  position: absolute;
-  left: 0;
-  top: 0;
-`
-
 const OvalCenter = styled.div`
   position: absolute;
   right: 0;
-  top: 40%;
+  top: 0;
 `
 
 const AbsoluteCurve = styled.div`
@@ -103,9 +96,6 @@ const AbsoluteCurve = styled.div`
 
 const BlueContainer = () => (
     <BlueContainerWrapper>
-        <Oval>
-            <OvalSVG/>
-        </Oval>
         <OvalCenter>
             <OvalBlueSVG/>
         </OvalCenter>

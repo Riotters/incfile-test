@@ -21,15 +21,14 @@ const InfoCardsSection = ({cards}) => (
 );
 
 const SectionWrapper = styled.div`
+    margin: 0 auto;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    
-    width: 100%;
-    
+    flex-wrap: wrap;
+        
     @media (min-width: 1170px) {
         width: 1170px;
-        margin: 0 auto;
     }
 `;
 
