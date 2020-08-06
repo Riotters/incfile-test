@@ -25,7 +25,7 @@ const Wrapper = styled(Link)`
   margin: ${(props) => (props.margin ? props.margin : "")};
   transition: background-color 0.3s ease, color 0.3s ease;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     margin: ${(props) => (props.marginMD ? props.marginMD : "")};
   }
 

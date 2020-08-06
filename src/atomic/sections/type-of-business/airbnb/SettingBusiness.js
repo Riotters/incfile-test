@@ -104,6 +104,12 @@ const GreenCurve = styled.div`
     right: -115px;
     bottom: -122px;
     width: 115px;
+    
+    display: none;
+  
+  @media (min-width: 1200px){
+    display: block;
+  }
 `;
 
 const Oval = styled.div`

@@ -36,8 +36,11 @@ const Tab = ({children}) => {
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  padding-bottom: 115px;
   position: relative;
+  
+  @media (min-width: 576px) {
+    padding-bottom: 115px;
+  }
 
   @media (min-width: 768px) {
     flex-direction: ${props => (props.layout !== "grid" ? "row" : "column")};
@@ -200,7 +203,11 @@ const ListWrapper = styled.div`
 `;
 
 const ListBox = styled.div`
-    width: 50%;
+    width: 100%;
+    
+    @media (min-width: 576px) { 
+        width: 50%; 
+    }
 `;
 
 const Oval = styled.div`
@@ -211,6 +218,12 @@ const Oval = styled.div`
   position: absolute;
   left: 0;
   top: 0;
+  
+  display: none;
+    
+    @media (min-width: 768px) {
+        display: block;
+    }
 `
 
 const OvalBottom = styled.div`
@@ -221,6 +234,12 @@ const OvalBottom = styled.div`
   position: absolute;
   right: 0;
   bottom: 0;
+  
+  display: none;
+    
+    @media (min-width: 768px) {
+        display: block;
+    }
 `
 
 const AirBnb1Tabs = ({layout, columns}) => (
@@ -312,7 +331,7 @@ const AirBnb1Tabs = ({layout, columns}) => (
                                         <ListWrapper>
                                             <ListBox>
                                                 <CkeckText>
-                                                    <Paragraph big bottomMargin={0}>
+                                                    <Paragraph big>
                                                         Statistics on why you should start an Airbnb business
                                                     </Paragraph>
                                                 </CkeckText>
@@ -320,7 +339,7 @@ const AirBnb1Tabs = ({layout, columns}) => (
 
                                             <ListBox>
                                                 <CkeckText>
-                                                    <Paragraph big bottomMargin={0}>
+                                                    <Paragraph big>
                                                         Choose the right business structure for your Airbnb company
                                                     </Paragraph>
                                                 </CkeckText>
@@ -328,7 +347,7 @@ const AirBnb1Tabs = ({layout, columns}) => (
 
                                             <ListBox>
                                                 <CkeckText>
-                                                    <Paragraph big bottomMargin={0}>
+                                                    <Paragraph big>
                                                         How to find out if an Airbnb business is right for you
                                                     </Paragraph>
                                                 </CkeckText>
@@ -336,7 +355,7 @@ const AirBnb1Tabs = ({layout, columns}) => (
 
                                             <ListBox>
                                                 <CkeckText>
-                                                    <Paragraph big bottomMargin={0}>
+                                                    <Paragraph big>
                                                         Setting up your Airbnb business including location, equipment,
                                                         employees,
                                                         taxes, finances, licenses and more
@@ -346,7 +365,7 @@ const AirBnb1Tabs = ({layout, columns}) => (
 
                                             <ListBox>
                                                 <CkeckText>
-                                                    <Paragraph big bottomMargin={0}>
+                                                    <Paragraph big>
                                                         Ideas for the type of Airbnb business that you could form
                                                     </Paragraph>
                                                 </CkeckText>
@@ -354,7 +373,7 @@ const AirBnb1Tabs = ({layout, columns}) => (
 
                                             <ListBox>
                                                 <CkeckText>
-                                                    <Paragraph big bottomMargin={0}>
+                                                    <Paragraph big>
                                                         Where to find Airbnb business groups, forums and support
                                                     </Paragraph>
                                                 </CkeckText>
@@ -362,7 +381,7 @@ const AirBnb1Tabs = ({layout, columns}) => (
 
                                             <ListBox>
                                                 <CkeckText>
-                                                    <Paragraph big bottomMargin={0}>
+                                                    <Paragraph big>
                                                         Proving your Airbnb business can work
                                                     </Paragraph>
                                                 </CkeckText>
@@ -370,7 +389,7 @@ const AirBnb1Tabs = ({layout, columns}) => (
 
                                             <ListBox>
                                                 <CkeckText>
-                                                    <Paragraph big bottomMargin={0}>
+                                                    <Paragraph big>
                                                         Useful online tools for Airbnb business owners
                                                     </Paragraph>
                                                 </CkeckText>
@@ -378,7 +397,7 @@ const AirBnb1Tabs = ({layout, columns}) => (
 
                                             <ListBox>
                                                 <CkeckText>
-                                                    <Paragraph big bottomMargin={0}>
+                                                    <Paragraph big>
                                                         Business plans for Airbnb companies
                                                     </Paragraph>
                                                 </CkeckText>

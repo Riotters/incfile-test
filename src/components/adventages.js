@@ -11,9 +11,10 @@ const Wrapper = styled.div`
     padding-top: 24px;
     width 100%;
     
-     @media (min-width: 470px) {
+    @media (min-width: 470px) {
         max-width: 470px;
-      }
+        margin: 0 auto 30px;
+    }
 `;
 
 const Box = styled.div`

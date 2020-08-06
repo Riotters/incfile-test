@@ -76,7 +76,11 @@ const TextBorderedSection = styled.div`
 `;
 
 const TextBorderedList = styled.div`
-    margin-top: 80px;
+    margin-top: 30px;
+    
+    @media (min-width: 576px) {
+        margin-top: 80px;
+    }
     
     >div {
         margin-bottom: 8px;
@@ -87,12 +91,23 @@ const Oval = styled.div`
   position: absolute;
   left: 0;
   top: 0;
+  display: none;
+  
+  @media (min-width: 720px){
+    display: block;
+  }
 `
 
 const OvalCenter = styled.div`
   position: absolute;
   right: 0;
   top: 40%;
+  
+  display: none;
+  
+  @media (min-width: 720px){
+    display: block;
+  }
 `
 
 const AbsoluteCurve = styled.div`
@@ -115,7 +130,7 @@ const BlueContainer = () => (
 
             <TextBorderedSection>
                 <Heading size={3}>Creating a Unique Airbnb Business</Heading>
-                <Paragraph>
+                <Paragraph big>
                     When it comes to starting an Airbnb business, you want to make sure that your property
                     and listings are unique, so you can attract customers. You can do this by highlighting certain
                     aspects in your listings:
@@ -164,7 +179,7 @@ const BlueContainer = () => (
                         <Curve color={color.blue1}/>
                     </AbsoluteCurve>
                     <Heading size={3}>Validating Your Airbnb Business</Heading>
-                    <Paragraph>
+                    <Paragraph big>
                         Getting started in an Airbnb business is easy, but becoming a success is harder.
                         Before committing too much time, energy and money into your new Airbnb business, it’s
                         important to test the marketplace.

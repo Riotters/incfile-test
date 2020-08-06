@@ -45,7 +45,20 @@ const TextBlock = styled.div`
     background-color: ${props => props.textBackgroundColor};
     width: 100%;
     position: relative;
-    padding: ${props => (props.paddingTop + "px " + props.paddingRight + "px " + props.paddingBottom + "px " + props.paddingLeft + "px")};
+    
+    padding-right: ${props => (props.boxShadow ? props.paddingRight : 0)}px;
+    padding-left: ${props => (props.boxShadow ? props.paddingLeft : 0)}px;
+   
+    padding-top: ${props => props.paddingTop}px;
+    padding-bottom: ${props => props.paddingBottom}px;
+
+    @media (min-width: 576px) {
+            padding-right: ${props => props.paddingRight}px;
+            padding-left: ${props => props.paddingLeft}px;
+            padding-top: ${props => props.paddingTop}px;
+            padding-bottom: ${props => props.paddingBottom}px;
+    }
+    
     ${props => (props.boxShadow &&
         "box-shadow: 0 24px 32px rgba(236, 236, 236, 0.5);"
     )}

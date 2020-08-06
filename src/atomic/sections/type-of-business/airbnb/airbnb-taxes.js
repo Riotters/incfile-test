@@ -88,9 +88,8 @@ const Service = styled.div`
 `;
 
 const AdventagesBox = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
   max-width: 970px;
   padding: 140px 0;
@@ -102,18 +101,36 @@ const Oval = styled.div`
     position: absolute;
     right: 0;
     top: 0;
+    
+    display: none;
+  
+  @media (min-width: 1200px){
+    display: block;
+  }
 `;
 
 const OvalBottom = styled.div`
     position: absolute;
     left: 0;
     bottom: 300px;
+    
+    display: none;
+  
+  @media (min-width: 1200px){
+    display: block;
+  }
 `;
 
 const CurveWrapper = styled.div`
     position: absolute;
     right: -115px;
     top: 24px;
+    
+     display: none;
+  
+  @media (min-width: 1200px){
+    display: block;
+  }
 `;
 
 export default AirbnbTaxes;

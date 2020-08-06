@@ -7,11 +7,15 @@ const Wrapper = styled.div`
     padding: 16px 16px 0 0;
     position: relative;
 
-    div {
+    > div {
         background-color: ${props => (props.color ? props.color : "")};
         border-radius: 5px 50px 50px 5px;
-        padding: ${props => (props.theme==="icon" ? "40px 40px 40px 112px" : "40px")};
+        padding: 40px;
 
+        @media (min-width: 576px) {
+            padding: ${props => (props.theme==="icon" ? "40px 40px 40px 112px" : "40px")};
+        }
+        
         h4 {
             padding-bottom: ${props => (props.theme==="icon" ? "16px" : "24px")};
         }
@@ -63,6 +67,11 @@ const Wrapper = styled.div`
         svg {
             position: absolute;
             left: 44px;
+            display: none;
+        
+            @media (min-width: 576px){
+                display: block;
+            }
         }
     }
 `

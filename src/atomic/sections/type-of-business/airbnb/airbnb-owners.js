@@ -42,11 +42,15 @@ const Wrapper = styled.div`
 `;
 
 const LinksContainer = styled.div`
-    width: 1000px;
+    width: 100%;
     margin: 100px auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    
+    @media (min-width: 1000px) {
+        width: 1000px;
+    }
 `;
 
 const LinkItem = styled.div`

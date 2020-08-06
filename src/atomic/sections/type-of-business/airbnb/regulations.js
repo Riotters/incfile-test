@@ -10,7 +10,7 @@ const Regulations = () => (
         <Oval>
             <OvalSvg />
         </Oval>
-        <Container style={{paddingTop: "100px", paddingBottom: "100px"}} width={750}>
+        <ContainerBox >
             <Heading size={4} style={{fontSize: "40px"}}>
                 Rules, Regulations, and Licenses for Airbnbs
             </Heading>
@@ -24,9 +24,18 @@ const Regulations = () => (
                 don’t allow just anyone to set themselves up as an Airbnb host, and if you do, you could be fined. Check
                 with your local and regional authorities what their requirements are for Airbnb hosts.
             </Paragraph>
-        </Container>
+        </ContainerBox>
     </Wrapper>
 );
+
+const ContainerBox = styled(Container)`
+    padding-bottom: 0px;
+    padding-top: 100px;
+    
+    @media (min-width: 576px) {
+        padding-bottom: 100px;
+    }
+`;
 
 const Wrapper = styled.div`
     position: relative;
@@ -36,5 +45,10 @@ const Oval = styled.div`
     position: absolute; 
     bottom: 0;
     left: 0;
+    display: none;
+    
+    @media (min-width: 768px) {
+        display: block;
+    }
 `;
 export default Regulations;
