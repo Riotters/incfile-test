@@ -25,15 +25,13 @@ const Conclusion = () => (
             </RocketWrapper>
             <Content>
                 <Heading size={4} style={{fontFamily: "MarkPro-Bold, sans-serif", fontSize: "40px"}}>
-                    Are You Ready to Start an Airbnb?
+                    Conclusion
                 </Heading>
                 <Paragraph big>
-                    If you have an extra room, or a whole property you want to rent out, Airbnb makes it easy. If
-                    you can create great listings, build positive reviews, understand your competitors and put
-                    together a solid business plan, you will have every chance for success
+                    Helping other people make positive changes in their life or business is an amazing service. If you can find a great niche, understand your competitors and put together a solid business plan, you will have every chance for success.
                 </Paragraph>
                 <Button theme="primary56" arrow>
-                    ds
+                    Start your Coach Business with us, today
                 </Button>
             </Content>
         </Container>
