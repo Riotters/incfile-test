@@ -295,27 +295,41 @@ const CoachTabs = ({layout, columns}) => (
                                             opportunities in this growing industry.
                                         </Paragraph>
                                         <Paragraph big style={{marginBottom: "50px"}}>
-                                            The value of life and business coaches is supported by the statistics. If you know what makes people or organizations tick, you could turn that into pragmatic steps and help people reach their potential. It’s important to set up your life or business coaching company in the right way.
+                                            The value of life and business coaches is supported by the statistics. If
+                                            you know what makes people or organizations tick, you could turn that into
+                                            pragmatic steps and help people reach their potential. It’s important to set
+                                            up your life or business coaching company in the right way.
                                         </Paragraph>
 
-                                        <Colorbox className="box" theme="icon" Icon={MegafonIcon} color={color.green3} curve
+                                        <Colorbox className="box" theme="icon" Icon={MegafonIcon} color={color.green3}
+                                                  curve
                                                   curveColor={color.green1}>
-                                            <Heading size={4}>We want to help you get your business off the ground.</Heading>
+                                            <Heading size={4}>We want to help you get your business off the
+                                                ground.</Heading>
                                             <Paragraph bottomPadding={0} bottomMargin={0}>
-                                                Since 2004, we’ve helped over 250,000 people start exciting businesses and bring their ideas to life. We’ll give you the support, guidance and advice you need to create a woman-owned business and make it into a success.
+                                                Since 2004, we’ve helped over 250,000 people start exciting businesses
+                                                and bring their ideas to life. We’ll give you the support, guidance and
+                                                advice you need to create a woman-owned business and make it into a
+                                                success.
                                             </Paragraph>
                                         </Colorbox>
 
-                                        <Heading size={3} style={{marginTop: "48px"}}>Coaching Business formation guide</Heading>
+                                        <Heading size={3} style={{marginTop: "48px"}}>Coaching Business formation
+                                            guide</Heading>
                                         <Paragraph big>
-                                            From validating your business and doing the research to filing your paperwork and running your business, this guide will help you out. Read on for some insight into creating your own life or business coaching company and becoming an entrepreneur who helps people make the best of themselves. In this guide we will cover:
+                                            From validating your business and doing the research to filing your
+                                            paperwork and running your business, this guide will help you out. Read on
+                                            for some insight into creating your own life or business coaching company
+                                            and becoming an entrepreneur who helps people make the best of themselves.
+                                            In this guide we will cover:
                                         </Paragraph>
 
                                         <ListWrapper>
                                             <ListBox>
                                                 <CkeckText>
                                                     <Paragraph big>
-                                                        Statistics on why you should start a life or executive coaching business
+                                                        Statistics on why you should start a life or executive coaching
+                                                        business
                                                     </Paragraph>
                                                 </CkeckText>
                                             </ListBox>
@@ -323,7 +337,8 @@ const CoachTabs = ({layout, columns}) => (
                                             <ListBox>
                                                 <CkeckText>
                                                     <Paragraph big>
-                                                        How to choose whether your coaching business should be an LLC or corporation
+                                                        How to choose whether your coaching business should be an LLC or
+                                                        corporation
                                                     </Paragraph>
                                                 </CkeckText>
                                             </ListBox>
@@ -347,7 +362,8 @@ const CoachTabs = ({layout, columns}) => (
                                             <ListBox>
                                                 <CkeckText>
                                                     <Paragraph big>
-                                                        Groups, forums and support for life or business coaching entrepreneurs
+                                                        Groups, forums and support for life or business coaching
+                                                        entrepreneurs
                                                     </Paragraph>
                                                 </CkeckText>
                                             </ListBox>
@@ -379,7 +395,9 @@ const CoachTabs = ({layout, columns}) => (
                                             <ListBox>
                                                 <CkeckText>
                                                     <Paragraph big>
-                                                        How to start your life or business coaching venture with information on equipment, employees, location, permits, finance, taxes and more
+                                                        How to start your life or business coaching venture with
+                                                        information on equipment, employees, location, permits, finance,
+                                                        taxes and more
                                                     </Paragraph>
                                                 </CkeckText>
                                             </ListBox>
@@ -390,25 +408,27 @@ const CoachTabs = ({layout, columns}) => (
                                 <Panel>
                                     <PanelWrapper className="panel2" layout={layout}>
                                         <Heading size={2} style={{fontSize: "24px", textAlign: "left"}}>
-                                            Why You Should Start a New Airbnb Business
+                                            Why You Should Start a New Life Coaching Business
                                         </Heading>
                                         <Paragraph big style={{marginBottom: "76px"}}>
-                                            Airbnb has made it easier than ever for people to become hosts—people that
-                                            rent out property for others to stay at. Airbnb is a ready-made marketplace
-                                            for guests, with millions of listings around the world. Here are some
-                                            statistics on the power of the Airbnb industry:
+                                            Life coaching is about helping people deal with what’s going on in their
+                                            lives and assisting them in creating a better present and future. It
+                                            involves a mix of psychology, counseling, interpersonal skills and
+                                            understanding how you can help a client realize their potential.
+                                            <br/><br/>
+                                            Here are some statistics on the power of life coaching businesses:
                                         </Paragraph>
 
-                                        <BlueBoxWithAbsoluteText absoluteText="150M"
-                                                                 text="There are over 150 million users on Airbnb"/>
-                                        <BlueBoxWithAbsoluteText absoluteText="$34B"
-                                                                 text="The largest market for Airbnb is in the US, with an economic impact of $34 billion"/>
-                                        <BlueBoxWithAbsoluteText absoluteText="500M"
-                                                                 text="There have been more than 500 million stays through Airbnb"/>
+                                        <BlueBoxWithAbsoluteText absoluteText="$10B"
+                                                                 text="Generated annual revenue in the U.S., Self-improvement as a whole is a very successful sector."/>
+                                        <BlueBoxWithAbsoluteText absoluteText="$1B"
+                                                                 text="Generated revenue of life coaching in the U.S. each year, and this is expected to grow to around $1.3 billion in 2022."/>
+                                        <BlueBoxWithAbsoluteText absoluteText="$62K"
+                                                                 text="Average yearly income for life coaches a year, and some coaches can earn over $100,000 a year."/>
 
                                         <div style={{marginBottom: "30px"}}>
                                             <Adventages
-                                                headline="Half of Airbnb users stay in an Airbnb instead of a hotel"
+                                                headline="The main areas that life coaches help with are personal improvement, family and relationships and weight loss and fitness."
                                                 width="100%"
                                             />
                                         </div>
@@ -422,155 +442,223 @@ const CoachTabs = ({layout, columns}) => (
 
                                         <div style={{marginBottom: "30px"}}>
                                             <Adventages
-                                                headline="Almost nine in ten reservations are for two or more people"
+                                                headline="Many customers for life coaching businesses are located on the East or West Coast of the U.S."
                                                 width="100%"
                                             />
                                         </div>
 
                                         <div style={{marginBottom: "30px"}}>
                                             <Adventages
-                                                headline="The compound growth rate since 2009 has been over 150 percent a year"
+                                                headline="The number of coaches in the world increased from 47,500 in 2011 to 53,300 in 2018"
                                                 width="100%"
                                             />
                                         </div>
 
                                         <div style={{marginBottom: "48px"}}>
                                             <Adventages
-                                                headline="There has been a 45 percent increase in U.S. bookings year-to-year"
+                                                headline="There are currently around 18,300 life coaches in the U.S."
                                                 width="100%"
                                             />
                                         </div>
 
-                                        <Paragraph big>
-                                            This is why Airbnb businesses are so exciting — how can you be a part of
-                                            that success? We're here to help you figure that out.
+                                        <div style={{marginBottom: "48px"}}>
+                                            <Adventages
+                                                headline="Life coaches normally have multiple clients and typically charge between $200 and $500 a month for services"
+                                                width="100%"
+                                            />
+                                        </div>
+
+                                        <Heading size={2} style={{fontSize: "24px", textAlign: "left"}}>
+                                            Why You Should Start a Business and Executive Coaching Practice
+                                        </Heading>
+                                        <Paragraph big style={{marginBottom: "76px"}}>
+                                            Business and executive coaching is very different from life coaching. When
+                                            you’re working with senior management, you need to have an excellent
+                                            understanding of business, strategy, financials, organization, culture and
+                                            the unique pressures that face executives when making major decisions.
                                         </Paragraph>
 
+                                        <BlueBoxWithAbsoluteText absoluteText="$12B"
+                                                                 text="Generated revenue of Business Coaching in the U.S. a year."/>
+                                        <BlueBoxWithAbsoluteText absoluteText="55K"
+                                                                 text="Number of business coaching organizations in the U.S. employing over 100,000 people"/>
+
+                                        <div style={{marginBottom: "30px"}}>
+                                            <Adventages
+                                                headline="The main areas that business coaches help with are executive development and financial management"
+                                                width="100%"
+                                            />
+                                        </div>
+
+                                        <div style={{marginBottom: "30px"}}>
+                                            <Adventages
+                                                headline="Studies show that there is between a 500% and 700% return on investment for money spent on business and executive coaching services"
+                                                width="100%"
+                                            />
+                                        </div>
+
+                                        <div style={{marginBottom: "48px"}}>
+                                            <Adventages
+                                                headline="Business coaching helps executives increase their productivity by over 80 percent"
+                                                width="100%"
+                                            />
+                                        </div>
+
+                                        <div style={{marginBottom: "48px"}}>
+                                            <Adventages
+                                                headline="Executive coaching delivers improvements to areas like productivity, work quality, organizational strength, customer service, working relationships, cost reductions and profitability"
+                                                width="100%"
+                                            />
+                                        </div>
+
+                                        <Paragraph big style={{marginBottom: "76px"}}>
+                                            This is why life or business coaching ventures are so exciting — how can you
+                                            be part of that success? We're here to help you figure that out.
+                                        </Paragraph>
                                     </PanelWrapper>
                                 </Panel>
                                 <Panel>
                                     <PanelWrapper className="panel3" layout={layout}>
                                         <Heading size={2} style={{fontSize: "24px", textAlign: "left"}}>
-                                            Is Running an Airbnb Right for You?
+                                            Is Professional Coaching Right for You?
                                         </Heading>
                                         <Paragraph big style={{marginBottom: "48px"}}>
-                                            Before deciding to start an Airbnb business, it’s important to understand
-                                            the skills and approach you’re likely to need.
+                                            Although it can be exciting to become a life or business coach, there will
+                                            be significant demands on you. Here are some of the things you can expect.
                                         </Paragraph>
 
                                         <Heading size={2} style={{fontSize: "24px", textAlign: "left"}}>
-                                            A Day in the Life of an Airbnb Host
+                                            A Day in the Life of a Life or Business Coach
                                         </Heading>
                                         <Paragraph big style={{marginBottom: "48px"}}>
-                                            Here are some of the typical tasks you’ll be performing for your Airbnb
-                                            business on a daily basis.
+                                            Here are some of the typical tasks you’ll be performing on a daily basis:
                                         </Paragraph>
 
                                         <CountingTextBoxed number={1}>
                                             <Paragraph bottomPadding={0} bottomMargin={0}>
-                                                Answering questions from guests and providing useful information
+                                                Marketing for new clients
                                             </Paragraph>
                                         </CountingTextBoxed>
 
                                         <CountingTextBoxed number={2}>
                                             <Paragraph bottomPadding={0} bottomMargin={0}>
-                                                Arranging for cleaning and other routine tasks at your properties
+                                                Dealing with inquiries from potential clients
                                             </Paragraph>
                                         </CountingTextBoxed>
 
                                         <CountingTextBoxed number={3}>
                                             <Paragraph bottomPadding={0} bottomMargin={0}>
-                                                Taking care of repairs and maintenance
+                                                Reading the latest research and studies in your field
                                             </Paragraph>
                                         </CountingTextBoxed>
 
                                         <CountingTextBoxed number={4}>
                                             <Paragraph bottomPadding={0} bottomMargin={0}>
-                                                Ensuring that bookings are up-to-date
+                                                Traveling to meet with clients or having them come to you
                                             </Paragraph>
                                         </CountingTextBoxed>
 
                                         <CountingTextBoxed number={5}>
                                             <Paragraph bottomPadding={0} bottomMargin={0}>
-                                                Getting information and photos to create compelling Airbnb listings
+                                                Holding coaching sessions
                                             </Paragraph>
                                         </CountingTextBoxed>
 
                                         <CountingTextBoxed number={6}>
                                             <Paragraph bottomPadding={0} bottomMargin={0}>
-                                                Uploading and managing listings on the Airbnb platform
+                                                Writing up coaching sessions
                                             </Paragraph>
                                         </CountingTextBoxed>
 
                                         <CountingTextBoxed number={7}>
                                             <Paragraph bottomPadding={0} bottomMargin={0}>
-                                                Minimizing cancellations of planned visits
+                                                Dealing with financials and administration
                                             </Paragraph>
                                         </CountingTextBoxed>
 
                                         <CountingTextBoxed number={8}>
                                             <Paragraph bottomPadding={0} bottomMargin={0}>
-                                                Setting prices for guests to stay in your property
+                                                Life coaches: Ongoing training in psychology, counseling and related
+                                                fields
                                             </Paragraph>
                                         </CountingTextBoxed>
 
                                         <CountingTextBoxed number={9}>
                                             <Paragraph bottomPadding={0} bottomMargin={0}>
-                                                Responding to reviews from guests
+                                                Life coaches: Researching specific questions or problems your clients
+                                                may have
+                                            </Paragraph>
+                                        </CountingTextBoxed>
+
+                                        <CountingTextBoxed number={10}>
+                                            <Paragraph bottomPadding={0} bottomMargin={0}>
+                                                Business coaches: Learning about the business you’re providing coaching
+                                                for, including strategy, financials and the executive team
                                             </Paragraph>
                                         </CountingTextBoxed>
 
                                         <div style={{marginBottom: "76px"}}>
-                                            <CountingTextBoxed number={1}>
+                                            <CountingTextBoxed number={11} style={{marginBottom: "76px"}}>
                                                 <Paragraph bottomPadding={0} bottomMargin={0}>
-                                                    An executive summary with the most important points from your
-                                                    business plan
+                                                    Business coaches: Research into the sector or industry of the
+                                                    business you’re providing coaching for
                                                 </Paragraph>
                                             </CountingTextBoxed>
                                         </div>
 
                                         <Heading size={2} style={{fontSize: "24px", textAlign: "left"}}>
-                                            Skills Needed by an Airbnb Business Entrepreneur
+                                            Skills Needed by a Life or Business Coach
                                         </Heading>
                                         <Paragraph big style={{marginBottom: "48px"}}>
-                                            The following skills will be very useful in your role as an Airbnb small
-                                            business owner.
+                                            The following skills will be very useful in your role as a life or business
+                                            coach:
                                         </Paragraph>
 
                                         <div style={{marginBottom: "30px"}}>
                                             <Adventages
-                                                headline="Organizational skills to stay on top of your enquiries and bookings"
+                                                headline="Excellent interpersonal and influencing skills to talk with and listen to clients"
                                                 width="100%"
                                             />
                                         </div>
 
                                         <div style={{marginBottom: "30px"}}>
                                             <Adventages
-                                                headline="Interpersonal skills for managing the people that provide cleaning, maitenance and other services at your properties"
+                                                headline="Powerful analysis and investigative skills to get to the root of an issue"
                                                 width="100%"
                                             />
                                         </div>
 
                                         <div style={{marginBottom: "30px"}}>
                                             <Adventages
-                                                headline="Planning skills to offer the amenities, supplies and services that your guests want"
+                                                headline="Good marketing skills to promote your coaching business"
                                                 width="100%"
                                             />
                                         </div>
 
                                         <div style={{marginBottom: "48px"}}>
                                             <Adventages
-                                                headline="Financial management skills so you understand the money you’re earning from rentals"
+                                                headline="Strong administration skills so you can stay on top of your schedule and finances"
+                                                width="100%"
+                                            />
+                                        </div>
+
+                                        <div style={{marginBottom: "48px"}}>
+                                            <Adventages
+                                                headline="Strong research skills so you can understand the history and context of the individuals and businesses you’re helping"
                                                 width="100%"
                                             />
                                         </div>
 
                                         <Heading size={2} style={{fontSize: "24px", textAlign: "left"}}>
-                                            What Your Airbnb Guests are Looking For
+                                            What Your Coaching Clients Are Looking For
                                         </Heading>
                                         <Paragraph big style={{marginBottom: "48px"}}>
-                                            Airbnb customers, commonly known as guests, are looking for:
+                                            Ultimately, people come to a coach because they want to improve their life or business.
                                         </Paragraph>
+
+                                        <Heading size={2} style={{fontSize: "24px", textAlign: "left"}}>
+                                            What Life Coaching Clients Want
+                                        </Heading>
 
                                         <div style={{marginBottom: "30px"}}>
                                             <Adventages
@@ -581,35 +669,67 @@ const CoachTabs = ({layout, columns}) => (
 
                                         <div style={{marginBottom: "30px"}}>
                                             <Adventages
-                                                headline="Properties that are safe, clean, and well-located for their needs"
+                                                headline="Dealing with particular issues in their past that are stopping them moving forward"
                                                 width="100%"
                                             />
                                         </div>
 
                                         <div style={{marginBottom: "30px"}}>
                                             <Adventages
-                                                headline="Properties that are priced appropriately for their location, demand and the time of year"
+                                                headline="Helping them come to terms with their existing life circumstances and challenges"
                                                 width="100%"
                                             />
                                         </div>
 
                                         <div style={{marginBottom: "30px"}}>
                                             <Adventages
-                                                headline="Common amenities including clean sheets, toiletries, a first aid kit, etc."
+                                                headline="Preparing them for the future and giving them useful tools and techniques"
                                                 width="100%"
                                             />
                                         </div>
 
                                         <div style={{marginBottom: "30px"}}>
                                             <Adventages
-                                                headline="Easy access to the property"
+                                                headline="Reassuring them about how you’ve helped previous clients"
                                                 width="100%"
                                             />
                                         </div>
 
                                         <div style={{marginBottom: "30px"}}>
                                             <Adventages
-                                                headline="Important information like contact details, good local restaurants, transit stops, emergency service numbers, etc."
+                                                headline="Reassuring them about how you’ve helped previous clients"
+                                                width="100%"
+                                            />
+                                        </div>
+
+                                        <Heading size={2} style={{fontSize: "24px", textAlign: "left"}}>
+                                            What Business Coaching Clients Want
+                                        </Heading>
+
+                                        <div style={{marginBottom: "30px"}}>
+                                            <Adventages
+                                                headline="Proven return on investment for business coaching services"
+                                                width="100%"
+                                            />
+                                        </div>
+
+                                        <div style={{marginBottom: "30px"}}>
+                                            <Adventages
+                                                headline="Demonstrated understanding of their business and sector"
+                                                width="100%"
+                                            />
+                                        </div>
+
+                                        <div style={{marginBottom: "30px"}}>
+                                            <Adventages
+                                                headline="Strong expertise in dealing with specific needs (e.g., productivity, management styles, culture or organizational change)"
+                                                width="100%"
+                                            />
+                                        </div>
+
+                                        <div style={{marginBottom: "30px"}}>
+                                            <Adventages
+                                                headline="Detailed statistics on improvements as a result of business coaching"
                                                 width="100%"
                                             />
                                         </div>

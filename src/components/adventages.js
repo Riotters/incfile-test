@@ -12,7 +12,7 @@ const Wrapper = styled.div`
     width 100%;
     
     @media (min-width: 470px) {
-        max-width: 470px;
+        max-width: ${props => (props.width ? props.width : "470px")};
         margin: 0 auto 30px;
     }
 `;
@@ -96,7 +96,7 @@ const AdeventageLink = styled(Link)`
 
 const Adventages = ({className, headline, text, colorStroke, circleBackgroundColor, circleBackgroundShadow, circlePosition, circleText, url, urlText, style, width, imageName}) => {
     return (
-        <Wrapper className={className} headline={headline} text={text} style={style}>
+        <Wrapper className={className} headline={headline} text={text} style={style} width={width}>
             <Box width={width}>
                 <Circle position={circlePosition} circleBackgroundColor={circleBackgroundColor}
                         circleBackgroundShadow={circleBackgroundShadow} colorStroke={colorStroke}>
