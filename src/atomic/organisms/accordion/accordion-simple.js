@@ -3,34 +3,15 @@ import { Link } from "gatsby";
 import styled from "styled-components";
 import { Tabs, useTabState, usePanelState } from "@bumaga/tabs";
 import { motion } from "framer-motion";
-import { color } from "./styles/colors";
-import ArrowSVG from "../images/arrow-circle.inline.svg";
-import CurveSVG from "../images/orange-curve.inline.svg";
-import VisibilitySensor from "./VisibilitySensor";
+import { color } from "../../atoms/styles/colors";
+import ArrowSVG from "../../../images/arrow-circle.inline.svg";
+import CurveSVG from "../../../images/orange-curve.inline.svg";
+import VisibilitySensor from "../../../components/VisibilitySensor";
 
 const Wrapper = styled.div`
   display: flex;
   width: 100%;
   position: relative;
-  margin-top: 80px;
-
-  @media (min-width: 768px) {
-    width: auto;
-    padding: 25px 29px 0;
-  }
-`;
-
-const Curve = styled.div`
-  height: 25px;
-  width: 25px;
-  position: absolute;
-  top: -16px;
-  left: -13px;
-
-  @media (min-width: 768px) {
-    top: 0;
-    left: 0;
-  }
 `;
 
 const TabsWrapper = styled.div`
@@ -42,7 +23,6 @@ const TabsWrapper = styled.div`
 
 const TabBox = styled.div`
   box-shadow: 0 24px 32px 0 rgba(236, 236, 236, 0.5);
-  margin-bottom: 8px;
 
   .accordion-panel {
     overflow: hidden;
@@ -174,23 +154,20 @@ const Panel = ({ children }) => {
   const isActive = usePanelState();
 
   return (
-    <motion.div className="accordion-panel" animate={isActive ? "visible" : "hidden"} transition={{ ease: "easeOut", duration: 0.3 }} variants={panel}>
+    <motion.div className="accordion-panel" animate={isActive ? "hidden" : "visible"} transition={{ ease: "easeOut", duration: 0.3 }} variants={panel}>
       {children}
     </motion.div>
   );
 };
 
-const Accordion = ({ faq }) => {
+const Accordion = ({ content }) => {
   return (
     <VisibilitySensor partialVisibility once>
       {({ isVisible }) => (
         <Wrapper className={isVisible ? "slideUp enter" : "slideUp"}>
-          <Curve>
-            <CurveSVG />
-          </Curve>
           <Tabs>
             <TabsWrapper>
-              {faq.items.map((item) => (
+              {content.items.map((item) => (
                 <TabBox>
                   <Tab>
                     <Icon>
