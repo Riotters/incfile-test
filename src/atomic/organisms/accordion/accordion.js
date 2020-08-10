@@ -179,14 +179,16 @@ const Panel = ({ children }) => {
   );
 };
 
-const Accordion = ({ content }) => {
+const Accordion = ({ content, curve }) => {
   return (
     <VisibilitySensor partialVisibility once>
       {({ isVisible }) => (
         <Wrapper className={isVisible ? "slideUp enter" : "slideUp"}>
-          <Curve>
-            <CurveSVG />
-          </Curve>
+          {curve && (
+            <Curve>
+              <CurveSVG />
+            </Curve>
+          )}
           <Tabs>
             <TabsWrapper>
               {content.items.map((item) => (

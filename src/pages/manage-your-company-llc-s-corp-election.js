@@ -8,6 +8,7 @@ import styled from "styled-components";
 import Top from "../components/partials/sections/top";
 import ImageContent from "../components/partials/blocks/left-image-right-content";
 import ContentObject from "../atomic/partials/left-content-right-object";
+import ObjectContent from "../atomic/partials/left-object-right-content";
 import Articles from "../components/partials/sections/articles";
 import { color, gradient } from "../components/styles/colors";
 import { shadow } from "../components/styles/shadows";
@@ -16,7 +17,7 @@ import IDCardSVG from "../images/icons/idcard.inline.svg";
 import Accordion from "../components/accordion";
 import Benefits from "../components/partials/sections/benefits";
 import Card from "../components/certificate-card";
-import ArrowLink from "../components/arrow-link";
+import ArrowLink from "../atomic/molecules/buttons/text";
 import H2Text from "../atomic/molecules/text-blocks/h2-text";
 import H3Text from "../atomic/molecules/text-blocks/h3-text";
 import { top, reducingTax, llcsTax, howSaveMoney, taxCalculator, fairSalary, administrativeOverhead, fileForm, behalfFile, help, faq, overhead } from "../static/llc-s-corp-election";
@@ -26,6 +27,8 @@ import TopImageBox from "../components/top-image-box";
 import ContentCenter from "../atomic/partials/content-center";
 import { Heading } from "../atomic/atoms/typography/heading";
 import { Paragraph } from "../atomic/atoms/typography/paragraph";
+import TotalSavings from "../atomic/organisms/forms/total-savings";
+import LeftContentRightImage from "../atomic/partials/left-content-right-image";
 
 const ReducingTax = styled.section`
   position: relative;
@@ -74,7 +77,6 @@ const LLCsTax = styled.section`
 `;
 
 const Example = styled.section`
-  height: 1000px;
   position: relative;
   padding-top: 75px;
   padding-bottom: 64px;
@@ -82,7 +84,6 @@ const Example = styled.section`
 `;
 
 const FairlSalary = styled.section`
-  height: 500px;
   position: relative;
   padding-top: 75px;
   padding-bottom: 64px;
@@ -161,6 +162,7 @@ const Help = styled.section`
 
 const List = <NumericBoxedList content={llcsTax.list} />;
 const NoImpact = <CircleCheckmarkText isRed content={llcsTax.red} />;
+const Savings = <TotalSavings />;
 
 const CorpElection = () => (
   <Layout>
@@ -193,8 +195,23 @@ const CorpElection = () => (
         <Heading size="3">{howSaveMoney.header3}</Heading>
         <Paragraph big>{howSaveMoney.text3}</Paragraph>
       </ContentObject>
+      <ObjectContent object={Savings}>
+        <Heading size="2" bottomMargin="80" style={{textAlign: "left"}}>{taxCalculator.header}</Heading>
+        <Paragraph big>
+          {taxCalculator.text}
+        </Paragraph>
+        <Heading size="3" bottomMargin="32">{taxCalculator.header2}</Heading>
+        <ArrowLink content={taxCalculator.link} />
+      </ObjectContent>
     </Example>
-    <FairlSalary></FairlSalary>
+    <FairlSalary>
+      <LeftContentRightImage image="weight">
+        <Heading size="2" bottomMargin="64">{fairSalary.header}</Heading>
+        <Paragraph big bottomMargin="0">
+          {fairSalary.text}
+        </Paragraph>
+      </LeftContentRightImage>
+    </FairlSalary>
     <Overhead>
       <TextCenterLayout headline={overhead.header} text={overhead.text} />
       <ContentCenter>

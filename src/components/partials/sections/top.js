@@ -54,7 +54,7 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   position: relative;
-  min-height: 100vh;
+  height: 100vh;
   max-height: 777px;
 `;
 
@@ -79,7 +79,7 @@ const Oval = styled.div`
     padding-bottom: 100%;
   }
 
-  svg {
+  & > svg {
     position: absolute;
     right: 0;
     bottom: 0;

@@ -81,7 +81,10 @@ export const taxCalculator = {
   header2:
     `Use our S Corporation Tax Calculator to view your potential tax savings`,
   link:
-    `Go to our S Corporation Tax Calculator`,
+    {
+      text: `Go to our S Corporation Tax Calculator`,
+      url: `#`,
+    },
   header3:
     `What’s your estimated yearly net income for the business?`,
   income:

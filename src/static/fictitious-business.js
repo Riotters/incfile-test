@@ -13,7 +13,7 @@ export const top = {
 
 export const about = {
     header: 
-        `What is a Ficticious Business Name?`,
+        `What is a Fictitious Business Name?`,
     diagram: {
         main:
             `Main Salon`,
@@ -67,7 +67,7 @@ export const businessesChoose = {
 
 export const otherTerms = {
     header:
-        `Other Terms for a Ficticious Business Name`,
+        `Other Terms for a Fictitious Business Name`,
     circles: [
         "Trade Name",
         "Assumed Business Name",
@@ -110,7 +110,7 @@ export const behalf = {
         },
         {
             header:
-                `Ficticious name search`,
+                `Fictitious name search`,
             text:
                 `You can easily complete a fictitious business name search to see if specific names are taken on your state authority's website.`,
         },
