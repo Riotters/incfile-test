@@ -5,7 +5,12 @@ import Image from "../atoms/image/image";
 
 const Wrapper = styled.div`
   display: flex;
+  flex-direction: column;
   width: 100%;
+
+  @media (min-width: 769px) {
+    flex-direction: row;
+  }
 `;
 
 const Content = styled.div`
@@ -13,12 +18,19 @@ const Content = styled.div`
   flex-direction: column;
   justify-content: center;
   width: 100%;
+  order: 2;
 
-  @media (min-width: 768px) {
-    width: 100%;
+  @media (min-width: 769px) {
+    width: 70%;
     padding-right: 100px;
     max-width: ${props => (props.contentWidth ? parseInt(props.contentWidth) + 100 : "700")}px;
+    order: 1;
   }
+
+  @media (min-width: 992px) {
+    width: 100%;
+  }
+
 
   h2 {
     text-align: left;
@@ -27,15 +39,26 @@ const Content = styled.div`
 
 const Imagebox = styled.div`
   display: none;
+  display: flex;
   align-items: center;
+  order: 1;
+  margin-bottom: 32px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     display: flex;
     flex-grow: 1;
+    order: 2;
+    margin-bottom: 0;
   }
 
   .gatsby-image-wrapper {
     width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+
+    @media (min-width: 769px) {
+      max-width: 100%;
+    }
   }
 `;
 

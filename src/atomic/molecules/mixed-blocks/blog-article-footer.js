@@ -10,14 +10,14 @@ const Wrapper = styled.div`
     width: 100%;
     padding: 24px 24px 32px;
 
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
       flex-direction: row;
     }
 
     .more-button {
       margin-bottom: 16px;
 
-      @media (min-width: 768px) {
+      @media (min-width: 769px) {
         margin-bottom: 0;
       } 
     }

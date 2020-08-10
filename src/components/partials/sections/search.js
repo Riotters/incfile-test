@@ -13,7 +13,7 @@ const Wrapper = styled.div`
   padding-top: 75px;
   position: relative;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     padding-top: 275px;
   }
 `
@@ -28,7 +28,7 @@ const Rocket = styled.div`
   transform: translateY(-50%);
   z-index: -1;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     display: flex;
   }
 
@@ -93,7 +93,7 @@ const Moon = styled.div`
   top: 190px;
   right: 190px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     display: block;
   }
 `
@@ -109,7 +109,7 @@ const SearchBox = styled.div`
   max-width: 570px;
   margin: 0 auto;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     margin: 0 8.333333% 0 0;
   }
 
@@ -118,7 +118,7 @@ const SearchBox = styled.div`
     text-align: center;
     margin: 0 auto 40px;
 
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
       text-align: left;
       margin: 0 0 40px;
     }

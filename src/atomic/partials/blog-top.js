@@ -17,7 +17,7 @@ const Wrapper = styled.div`
   background-color: ${color.blue3};
   overflow: hidden;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     padding-top: 80px;
   }
 `;
@@ -62,7 +62,7 @@ const TextContainer = styled.div`
   align-items: center;
   width: 100%;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     width: 50%;
     align-items: flex-start;
   }
@@ -74,7 +74,7 @@ const TextContainer = styled.div`
     line-height: 48px;
     padding-bottom: 24px;
 
-    @mnedia(min-width: 768px) {
+    @mnedia(min-width: 769px) {
       text-aling: left;
       padding-bottom: 20px;
     }
@@ -92,7 +92,7 @@ const ImageContainer = styled.div`
   width: 50%;
   padding-left: 60px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     display: flex;
   }
 

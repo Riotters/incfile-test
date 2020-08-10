@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 const Wrapper = styled.div`
+    display: none;
     width: 100%;
     max-height: ${props => props.height ? `${props.height}px` : `25px`};
     max-width: ${props => props.width ? `${props.width}px` : `29px`};
@@ -12,6 +13,10 @@ const Wrapper = styled.div`
     right: ${props => props.right ? `${props.right}px` : ``};
     bottom: ${props => props.bottom ? `${props.bottom}px` : ``};
     transform: translate(${props => props.x ? `${props.x}px` : `0`}, ${props => props.y ? `${props.y}%` : `0`});
+
+    @media (min-width: 992px) {
+        display: block;
+    }
 
     svg {
         path {

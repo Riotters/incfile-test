@@ -12,7 +12,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     flex-direction: ${props => (props.layout !== "grid" ? "row" : "column")};
   }
 
@@ -25,7 +25,7 @@ const Wrapper = styled.div`
     transition: height 500ms;
     margin-left: auto;
 
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
       max-width: ${props => (props.layout !== "grid" ? "57%" : "")};
     }
   }
@@ -36,7 +36,7 @@ const TabsWrapper = styled.div`
   flex-direction: column;
   width: 100%;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     max-width: ${props => (props.layout !== "grid" ? "40%" : "")};
   }
 
@@ -52,7 +52,7 @@ const Sticky = styled.div`
   position: ${props => (props.layout !== "grid" ? "sticky" : "")};
   top: 100px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     display: ${props => (props.layout === "grid" ? "grid" : "flex")};
     flex-direction: ${props => (props.layout !== "grid" ? "column" : "")};
     grid-template-columns: ${props => (props.columns ? `repeat(${Math.round(props.columns/2)}, 1fr)` : "")};
@@ -139,7 +139,7 @@ const Content = styled.div`
     font-size: 13px;
     white-space: nowrap;
 
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
       font-size: 16px;
     }
   }

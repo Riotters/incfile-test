@@ -100,7 +100,7 @@ const Boxes = styled.div`
   align-items: stretch;
   padding-top: 72px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     flex-direction: row;
   }
 
@@ -160,7 +160,7 @@ const Boxes = styled.div`
       left: 50%;
       transform: translate(-50%, -50%) rotate(90deg);
 
-      @media (min-width: 768px) {
+      @media (min-width: 769px) {
         transform: translate(-50%, -50%) rotate(0);
       }
     }

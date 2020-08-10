@@ -9,6 +9,11 @@ const Wrapper = styled.div`
     width: 100%;
     max-width: 970px;
     position: relative;
+    margin-top: 80px;
+
+    @media (min-width: 769px) {
+        margin-top: 0;
+    }
 `
 
 

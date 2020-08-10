@@ -20,7 +20,7 @@ const Wrapper = styled.div`
   align-items: center;
   width: 100%;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     flex-direction: row;
     height: 80px;
   }
@@ -29,7 +29,7 @@ const Logo = styled.div`
   height: 24px;
   margin-bottom: 25px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     margin-bottom: 0;
   }
 `
@@ -40,7 +40,7 @@ const NewsletterWrapper = styled.div`
   justify-content: flex-end;
   align-items: center;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     flex-direction: row;
   }
 
@@ -78,7 +78,7 @@ const Newsletter = styled.input`
   text-align: left;
   transition: border-color 0.3s ease;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -97,7 +97,7 @@ const Arrow = styled.div`
   width: 12px;
   margin: 10px 0;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     margin: 0 14px;
   }
 
@@ -108,7 +108,7 @@ const Arrow = styled.div`
       fill: #a4eed0;
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
       transform: rotate(0);
     }
   }
@@ -131,7 +131,7 @@ const Navigation = styled.nav`
     margin-top: 25px;
     min-width: 185px;
 
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
       margin-top: 0;
     }
 
@@ -221,7 +221,7 @@ const Copyright = styled.p`
   text-align: left;
   padding: 15px 0;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     padding: 0;
   }
 `
@@ -232,7 +232,7 @@ const Social = styled.ul`
   list-style: none;
   padding: 15px 0;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     padding: 0;
   }
 

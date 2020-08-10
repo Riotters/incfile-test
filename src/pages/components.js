@@ -60,7 +60,7 @@ const Wrapper = styled.div`
     alig-items: center;
     padding-top: 50px;
 
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
         padding-top: 150px;
     }
 
@@ -107,7 +107,7 @@ const GridWrapper = styled.div`
     grid-template-columns: repeat(${props => Math.round(props.columns / 2)}, 1fr);
     grid-gap: 30px;
 
-    @media(min-width: 768px) {
+    @media(min-width: 769px) {
         grid-template-columns: repeat(${props => props.columns}, 1fr);
     }
 `;
@@ -117,7 +117,7 @@ const FlexWrapper = styled.div`
     flex-direction: column;
     flex-wrap: wrap;
 
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
         flex-direction: row;
     }
 `;
@@ -129,7 +129,7 @@ const GreyWrapper = styled.div`
     background-color: ${color.grey4};
     padding: 15px;
 
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
         padding: 25px 75px;
     }
 `;
@@ -141,7 +141,7 @@ const DarkGreyWrapper = styled.div`
     background-color: ${color.grey1};
     padding: 15px;
 
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
         padding: 25px 75px;
     }
 `;

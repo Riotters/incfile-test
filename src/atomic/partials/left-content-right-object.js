@@ -7,7 +7,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   width: 100%;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     flex-direction: row;
   }
 `;
@@ -17,7 +17,7 @@ const Content = styled.div`
   flex-direction: column;
   justify-content: center;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     width: 100%;
     max-width: ${(props) => (props.contentWidth ? parseInt(props.contentWidth) + 100 : "700")}px;
     padding-right: 100px;
@@ -29,7 +29,7 @@ const Objectbox = styled.div`
   flex-direction: column;
   justify-content: center;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     flex-grow: 1;
   }
 `;

@@ -88,7 +88,7 @@ const BusinessOwnerResponsibilities = styled.section`
         padding: 35px 35px 35px 88px;
         border-radius: 5px 5px 5px 5px;
   
-        @media (min-width: 768px) {
+        @media (min-width: 769px) {
           &:nth-child(1) {
             border-radius: 20px 20px 5px 5px;
           }

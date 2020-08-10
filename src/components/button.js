@@ -68,7 +68,7 @@ const Arrow = styled.div`
   transform: translate(0, -50%);
   transition: transform 0.3s ease;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     display: flex;
   }
 

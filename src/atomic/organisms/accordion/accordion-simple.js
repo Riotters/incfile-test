@@ -38,7 +38,7 @@ const PanelWrapper = styled.div`
   padding: 15px;
   z-index: 1;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     padding: 24px 40px 40px 80px;
   }
 

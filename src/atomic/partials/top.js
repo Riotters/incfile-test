@@ -1,31 +1,74 @@
-import React from "react"
-import styled from "styled-components"
-import Image from "../../components/image_nobase64"
-import Container from "../container"
-import OvalSVG from "../../images/oval.inline.svg"
-import Button from "../../atomic/molecules/buttons/button"
-import VisibilitySensor from "../../components/VisibilitySensor"
+import React from "react";
+import styled from "styled-components";
+import { color } from "../atoms/styles/colors";
+import VisibilitySensor from "../VisibilitySensor";
+import Container from "../container";
+import Image from "../atoms/image/image";
+import OvalSVG from "../../images/oval.inline.svg";
+
+const switch1 = (ovalColor) => {
+  switch (ovalColor) {
+    case "blue": {
+      return color.blue1;
+    }
+    case "orange": {
+      return color.orange1;
+    }
+    case "purple": {
+      return color.purple1;
+    }
+    case "yellow": {
+      return color.yellow1;
+    }
+    case "sun": {
+      return "#ffb059";
+    }
+    default:
+      return "";
+  }
+};
+
+const switch2 = (ovalColor) => {
+  switch (ovalColor) {
+    case "blue": {
+      return color.babyblue2;
+    }
+    case "orange": {
+      return color.orange2;
+    }
+    case "purple": {
+      return color.purple2;
+    }
+    case "yellow": {
+      return color.yellow2;
+    }
+    case "sun": {
+      return "#ffe3c5";
+    }
+    default:
+      return "";
+  }
+};
 
 const Wrapper = styled.div`
-  padding-top: 50px;
+  display: flex;
+  align-items: center;
   position: relative;
-
-  @media (min-width: 768px) {
-    padding-top: 190px;
-    padding-bottom: 150px;
-  }
+  height: 100vh;
+  max-height: 777px;
 `;
 
 const Oval = styled.div`
   width: 90%;
+  max-height: 777px;
   max-width: 350px;
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 0;
+  z-index: -1;
   overflow: hidden;
 
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     width: 50%;
     max-width: 850px;
   }
@@ -36,139 +79,125 @@ const Oval = styled.div`
     padding-bottom: 100%;
   }
 
-  svg {
+  & > svg {
     position: absolute;
-    top: 0;
-    left: 0;
     right: 0;
     bottom: 0;
+
+    defs {
+      radialGradient {
+        stop {
+          &:nth-child(1) {
+            stop-color: ${({ ovalColor }) => switch1(ovalColor)};
+          }
+          &:nth-child(2) {
+            stop-color: ${({ ovalColor }) => switch2(ovalColor)};
+          }
+        }
+      }
+    }
 
     path {
       transform: matrix(1, 0, 0, -1, -115, 777);
     }
   }
-`
+`;
 
 const Content = styled.div`
   display: flex;
   flex-wrap: wrap;
-`
+`;
 
 const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding-top: 50px;
+  padding-top: 150px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     width: 50%;
     align-items: flex-start;
   }
 
   h1 {
     width: 100%;
-    max-width: 480px;
-    text-aling: center;
+    text-align: center;
     padding-bottom: 40px;
 
-    @mnedia(min-width: 768px) {
-      text-aling: left;
+    @media (min-width: 992px) {
+      text-align: left;
       padding-bottom: 20px;
+    }
+
+    @media (min-width: 1200px) {
+      max-width: ${(props) => (props.headlineWidth ? props.headlineWidth : "480")}px;
     }
   }
 
   p {
-    max-width: 470px;
     margin-bottom: 33px;
+    text-align: center;
+
+    @media (min-width: 1200px) {
+      text-align: left;
+      max-width: ${(props) => (props.headlineWidth ? props.headlineWidth : "480")}px;
+    }
   }
-`
+`;
 
 const ImageContainer = styled.div`
   display: none;
-  width: 50%;
-  padding-left: 60px;
+  //width: 50%;
+  //padding-left: 60px;
+  width: 55%;
+  max-width: 950px;
+  position: absolute;
+  top: 50%;
+  right: 55%;
+  transform: translate(100%, -50%);
 
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     display: flex;
   }
 
   .gatsby-image-wrapper {
     width: 100%;
-    max-width: 400px;
 
     img {
       object-fit: contain !important;
     }
   }
-`
+`;
 
-const ButtonsContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: 576px) {
-    flex-direction: row;
-  }
-
-  a {
-    @media (max-width: 576px) {
-      margin-bottom: 15px;
-      margin-left: 0;
-    }
-  }
-`
-
-const Top = ({headline, text, imageName, imageAlt}) => (
+const Top = ({ children, imageName, imageAlt, headlineWidth, ovalColor }) => (
   <Wrapper>
     <VisibilitySensor partialVisibility once>
       {({ isVisible }) => (
-        <Oval className={isVisible ? "scaleUp enter" : "scaleUp"}>
+        <Oval className={isVisible ? "scaleUp enter" : "scaleUp"} ovalColor={ovalColor}>
           <OvalSVG />
         </Oval>
       )}
     </VisibilitySensor>
+    <ImageContainer>
+      <Image filename={imageName} alt={imageAlt} />
+    </ImageContainer>
     <Container>
       <Content>
         <VisibilitySensor partialVisibility once>
           {({ isVisible }) => (
-            <TextContainer
-              className={isVisible ? "slideRight enter" : "slideRight"}
-            >
-              <h1>
-                {headline}
-              </h1>
-              <p>
-                {text}
-              </p>
-              <ButtonsContainer>
-                <Button
-                  theme="primary56"
-                  width="200px"
-                  arrow="yes"
-                  padding="0"
-                >
-                  Start Now
-                </Button>
-                <Button
-                  arrow2="yes"
-                  height="56px"
-                  width="200px"
-                  padding="0"
-                  margin="0 0 0 16px"
-                >
-                  How it works
-                </Button>
-              </ButtonsContainer>
+            <TextContainer className={isVisible ? "slideRight enter" : "slideRight"} headlineWidth={headlineWidth}>
+              {children}
             </TextContainer>
           )}
         </VisibilitySensor>
-        <ImageContainer>
-          <Image filename={imageName} alt={imageAlt} />
-        </ImageContainer>
       </Content>
     </Container>
   </Wrapper>
-)
+);
 
-export default Top
+export default Top;
+
+Top.defaultProps = {
+  OvalSVGFile: OvalSVG,
+};

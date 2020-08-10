@@ -74,7 +74,7 @@ h1 {
   font-size: 40px;
   line-height: 48px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     font-size: 48px;
     line-height: 56px;
   }
@@ -126,7 +126,7 @@ a {
   text-decoration: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .slideUp {
     transition: opacity 1s ease-in-out, transform 1s ease-in-out;
     opacity: 0;

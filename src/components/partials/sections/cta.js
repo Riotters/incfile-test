@@ -11,7 +11,7 @@ const Wrapper = styled.div`
   padding: 75px 0;
   position: relative;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     padding: 175px 0;
   }
 `

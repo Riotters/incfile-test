@@ -11,7 +11,7 @@ const Content = styled.div`
   flex-direction: column;
   justify-content: center;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     width: 60%;
     padding-right: 100px;
   }
@@ -37,7 +37,7 @@ const Imagebox = styled.div`
   width: 100%;
   max-width: ${props => (props.imageWidth ? props.imageWidth : "")}px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     display: flex;
   }
 

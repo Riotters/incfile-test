@@ -7,7 +7,7 @@ const Wrapper = styled.div`
   justify-content: center;
   width: 100%;
 
-  @media(min-width: 768px) {
+  @media(min-width: 769px) {
       flex-direction: row;
   }
 `;
@@ -17,7 +17,7 @@ const Content = styled.div`
   flex-direction: column;
   align-items: center;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     width: 100%;
     max-width: ${props => (props.contentWidth ? `${props.contentWidth}px` : "")};
   }

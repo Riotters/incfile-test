@@ -24,7 +24,7 @@ const Content = styled.div`
     grid-template-columns: 100%;
     grid-gap: 30px;
 
-    @media(min-width: 768px) {
+    @media(min-width: 769px) {
         grid-template-columns: 2fr 1fr;
     }
 `

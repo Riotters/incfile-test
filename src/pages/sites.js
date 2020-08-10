@@ -12,7 +12,7 @@ const Wrapper = styled.div`
     alig-items: center;
     padding-top: 50px;
 
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
         padding-top: 150px;
     }
 

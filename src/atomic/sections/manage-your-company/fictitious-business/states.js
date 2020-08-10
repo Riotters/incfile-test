@@ -1,9 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import HeadingCenter from "../../../partials/heading-center";
-import Button from "../../../molecules/buttons/button";
 import ContentCenter from "../../../partials/content-center";
-import BehalfCards from "../../../organisms/cards/behalf-cards";
 import Table from "../../../organisms/tables/states-allow-table";
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-pink.inline.svg";
@@ -14,6 +12,7 @@ const States = styled.section`
   position: relative;
   padding-top: 75px;
   padding-bottom: 64px;
+  overflow: hidden;
 `;
 
 const StatesSection = ({ className, content }) => (

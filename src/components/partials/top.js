@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   padding-top: 50px;
   position: relative;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     padding-top: 190px;
     padding-bottom: 150px;
   }
@@ -25,7 +25,7 @@ const Oval = styled.div`
   z-index: 0;
   overflow: hidden;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     width: 50%;
     max-width: 850px;
   }
@@ -61,7 +61,7 @@ const TextContainer = styled.div`
   width: 100%;
   padding-top: 50px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     width: 50%;
     align-items: flex-start;
   }
@@ -72,7 +72,7 @@ const TextContainer = styled.div`
     text-aling: center;
     padding-bottom: 40px;
 
-    @mnedia(min-width: 768px) {
+    @mnedia(min-width: 769px) {
       text-aling: left;
       padding-bottom: 20px;
     }
@@ -89,7 +89,7 @@ const ImageContainer = styled.div`
   width: 50%;
   padding-left: 60px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     display: flex;
   }
 
