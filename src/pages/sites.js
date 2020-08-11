@@ -62,6 +62,7 @@ const ComponentsPage = () => (
             <Link to="/article">Article (no API)</Link>
             <Link to="/type-of-business/airbnb">Airbnb (WIP)</Link>
             <Link to="/type-of-business/coach">Coach (WIP)</Link>
+            <Link to="/type-of-business/moving-company">Moving Company (WIP)</Link>
             <h2>Additional sites</h2>
             <Link to="/components">Components</Link>
             <Link to="/404">404</Link>
