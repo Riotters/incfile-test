@@ -24,7 +24,7 @@ const MovingCompanyPage = () => (
     <Layout>
         <SEO title="Moving Company"/>
 
-        <Top ovalColor="orange" imageName="moving-company" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
+        <Top ovalColor="orange" imageName="moving-company-bg" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
             <h1>How to Start a Moving Company</h1>
             <p>A residential or commercial moving business could be
                 a great way for you to start a successful company.</p>

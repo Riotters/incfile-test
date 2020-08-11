@@ -405,60 +405,49 @@ const MovingCompanyTabs = ({layout, columns}) => (
                                 <Panel>
                                     <PanelWrapper className="panel2" layout={layout}>
                                         <Heading size={2} style={{fontSize: "24px", textAlign: "left"}}>
-                                            Why You Should Start a New Airbnb Business
+                                            Why You Should Start a New Moving Business
                                         </Heading>
                                         <Paragraph big style={{marginBottom: "76px"}}>
-                                            Airbnb has made it easier than ever for people to become hosts—people that
-                                            rent out property for others to stay at. Airbnb is a ready-made marketplace
-                                            for guests, with millions of listings around the world. Here are some
-                                            statistics on the power of the Airbnb industry:
+                                            There are plenty of opportunities for moving business entrepreneurs. Here are some surprising statistics on the size and potential of the U.S. moving industry:
                                         </Paragraph>
 
-                                        <BlueBoxWithAbsoluteText absoluteText="150M"
-                                                                 text="There are over 150 million users on Airbnb"/>
-                                        <BlueBoxWithAbsoluteText absoluteText="$34B"
-                                                                 text="The largest market for Airbnb is in the US, with an economic impact of $34 billion"/>
-                                        <BlueBoxWithAbsoluteText absoluteText="500M"
-                                                                 text="There have been more than 500 million stays through Airbnb"/>
+                                        <BlueBoxWithAbsoluteText absoluteText="3M"
+                                                                 text="Number of households make interstate moves every year."/>
+                                        <BlueBoxWithAbsoluteText absoluteText="650K"
+                                                                 text="Number of moves a professional movers assist a year, the remainder are carried out by families themselves"/>
+                                        <BlueBoxWithAbsoluteText absoluteText="35M"
+                                                                 text="Americans move each year (around 15 million households)"/>
 
                                         <div style={{marginBottom: "30px"}}>
                                             <Adventages
-                                                headline="Half of Airbnb users stay in an Airbnb instead of a hotel"
+                                                headline="The moving industry is primarily made up of small businesses — almost half of all moving businesses employ fewer than five people"
                                                 width="100%"
                                             />
                                         </div>
 
                                         <div style={{marginBottom: "30px"}}>
                                             <Adventages
-                                                headline="More than two million people stay at an Airbnb on any given day"
+                                                headline="The average cost of a move is $2,300 in the same state, and $4,300 for interstate relocations"
                                                 width="100%"
                                             />
                                         </div>
 
                                         <div style={{marginBottom: "30px"}}>
                                             <Adventages
-                                                headline="Almost nine in ten reservations are for two or more people"
+                                                headline="Household goods account for nearly three-quarters of all items moved, followed by electronic office equipment"
                                                 width="100%"
                                             />
                                         </div>
 
                                         <div style={{marginBottom: "30px"}}>
                                             <Adventages
-                                                headline="The compound growth rate since 2009 has been over 150 percent a year"
-                                                width="100%"
-                                            />
-                                        </div>
-
-                                        <div style={{marginBottom: "48px"}}>
-                                            <Adventages
-                                                headline="There has been a 45 percent increase in U.S. bookings year-to-year"
+                                                headline="Almost half of all moves are housing related, 30 percent are family related and 20 percent are job-related"
                                                 width="100%"
                                             />
                                         </div>
 
                                         <Paragraph big>
-                                            This is why Airbnb businesses are so exciting — how can you be a part of
-                                            that success? We're here to help you figure that out.
+                                            This is why Airbnb businesses are so exciting — how can you be a part of that success? We're here to help you figure that out.
                                         </Paragraph>
 
                                     </PanelWrapper>
@@ -466,167 +455,138 @@ const MovingCompanyTabs = ({layout, columns}) => (
                                 <Panel>
                                     <PanelWrapper className="panel3" layout={layout}>
                                         <Heading size={2} style={{fontSize: "24px", textAlign: "left"}}>
-                                            Is Running an Airbnb Right for You?
+                                            Is a Moving Business Right for You?
                                         </Heading>
                                         <Paragraph big style={{marginBottom: "48px"}}>
-                                            Before deciding to start an Airbnb business, it’s important to understand
-                                            the skills and approach you’re likely to need.
+                                            Before deciding to start a moving business, it’s important to understand the skills and approach you’re likely to need
                                         </Paragraph>
 
                                         <Heading size={2} style={{fontSize: "24px", textAlign: "left"}}>
-                                            A Day in the Life of an Airbnb Host
+                                            A Day in the Life of a Moving Business Owner
                                         </Heading>
                                         <Paragraph big style={{marginBottom: "48px"}}>
-                                            Here are some of the typical tasks you’ll be performing for your Airbnb
-                                            business on a daily basis.
+                                            Here are some of the typical tasks you’ll be performing for your moving business on a daily basis.
                                         </Paragraph>
 
                                         <CountingTextBoxed number={1}>
                                             <Paragraph bottomPadding={0} bottomMargin={0}>
-                                                Answering questions from guests and providing useful information
+                                                Dealing with customer inquiries on moving logistics
                                             </Paragraph>
                                         </CountingTextBoxed>
 
                                         <CountingTextBoxed number={2}>
                                             <Paragraph bottomPadding={0} bottomMargin={0}>
-                                                Arranging for cleaning and other routine tasks at your properties
+                                                Providing quotes for moving based on services needed, quantity of goods and distance of move
                                             </Paragraph>
                                         </CountingTextBoxed>
 
                                         <CountingTextBoxed number={3}>
                                             <Paragraph bottomPadding={0} bottomMargin={0}>
-                                                Taking care of repairs and maintenance
+                                                Helping people to pack up their belongings for a safe move
                                             </Paragraph>
                                         </CountingTextBoxed>
 
                                         <CountingTextBoxed number={4}>
                                             <Paragraph bottomPadding={0} bottomMargin={0}>
-                                                Ensuring that bookings are up-to-date
+                                                Loading and securing goods in a moving truck
                                             </Paragraph>
                                         </CountingTextBoxed>
 
                                         <CountingTextBoxed number={5}>
                                             <Paragraph bottomPadding={0} bottomMargin={0}>
-                                                Getting information and photos to create compelling Airbnb listings
+                                                Driving a moving truck to the required destination
                                             </Paragraph>
                                         </CountingTextBoxed>
 
                                         <CountingTextBoxed number={6}>
                                             <Paragraph bottomPadding={0} bottomMargin={0}>
-                                                Uploading and managing listings on the Airbnb platform
+                                                Unloading the truck as required by the customer
                                             </Paragraph>
                                         </CountingTextBoxed>
 
                                         <CountingTextBoxed number={7}>
                                             <Paragraph bottomPadding={0} bottomMargin={0}>
-                                                Minimizing cancellations of planned visits
+                                                Arranging for maintenance and servicing of vehicles
                                             </Paragraph>
                                         </CountingTextBoxed>
 
                                         <CountingTextBoxed number={8}>
                                             <Paragraph bottomPadding={0} bottomMargin={0}>
-                                                Setting prices for guests to stay in your property
+                                                Marketing your moving business
                                             </Paragraph>
                                         </CountingTextBoxed>
 
                                         <CountingTextBoxed number={9}>
                                             <Paragraph bottomPadding={0} bottomMargin={0}>
-                                                Responding to reviews from guests
+                                                Sending out invoices, taking payments and financial management
+                                            </Paragraph>
+                                        </CountingTextBoxed>
+
+                                        <CountingTextBoxed number={10}>
+                                            <Paragraph bottomPadding={0} bottomMargin={0}>
+                                                Scheduling required moving services
                                             </Paragraph>
                                         </CountingTextBoxed>
 
                                         <div style={{marginBottom: "76px"}}>
-                                            <CountingTextBoxed number={1}>
+                                            <CountingTextBoxed number={11}>
                                                 <Paragraph bottomPadding={0} bottomMargin={0}>
-                                                    An executive summary with the most important points from your
-                                                    business plan
+                                                    Dealing with employees and assigning tasks
                                                 </Paragraph>
                                             </CountingTextBoxed>
                                         </div>
 
                                         <Heading size={2} style={{fontSize: "24px", textAlign: "left"}}>
-                                            Skills Needed by an Airbnb Business Entrepreneur
+                                            Skills Needed by a Moving Business Entrepreneur
                                         </Heading>
                                         <Paragraph big style={{marginBottom: "48px"}}>
-                                            The following skills will be very useful in your role as an Airbnb small business owner.
+                                            The following skills will be very useful in your role as a moving business owner:
                                         </Paragraph>
 
                                         <div style={{marginBottom: "30px"}}>
                                             <Adventages
-                                                headline="Organizational skills to stay on top of your enquiries and bookings"
+                                                headline="Good strength, physical fitness and coordination for moving goods and driving trucks"
                                                 width="100%"
                                             />
                                         </div>
 
                                         <div style={{marginBottom: "30px"}}>
                                             <Adventages
-                                                headline="Interpersonal skills for managing the people that provide cleaning, maitenance and other services at your properties"
+                                                headline="Strong interpersonal skills for dealing with clients, managing employees and resolving conflicts"
                                                 width="100%"
                                             />
                                         </div>
 
                                         <div style={{marginBottom: "30px"}}>
                                             <Adventages
-                                                headline="Planning skills to offer the amenities, supplies and services that your guests want"
+                                                headline="Reasonable administration skills for business management, scheduling and finances"
                                                 width="100%"
                                             />
                                         </div>
 
                                         <div style={{marginBottom: "48px"}}>
                                             <Adventages
-                                                headline="Financial management skills so you understand the money you’re earning from rentals"
+                                                headline="Estimation skills for understanding necessary services and providing accurate quotes"
+                                                width="100%"
+                                            />
+                                        </div>
+
+                                        <div style={{marginBottom: "48px"}}>
+                                            <Adventages
+                                                headline="Good marketing skills to build word of mouth and promote your moving business"
                                                 width="100%"
                                             />
                                         </div>
 
                                         <Heading size={2} style={{fontSize: "24px", textAlign: "left"}}>
-                                            What Your Airbnb Guests are Looking For
+                                            What Your Moving Customers Are Looking For
                                         </Heading>
-                                        <Paragraph big style={{marginBottom: "48px"}}>
-                                            Airbnb customers, commonly known as guests, are looking for:
+                                        <Paragraph big>
+                                            Moving is a huge hassle and overhead for almost everyone. Relocating customers want peace-of-mind, reliability and trustworthiness. Ultimately, they’re paying a fee to a moving company so that they don’t need to worry about every tiny detail of moving. They’ll want you to have a proven track record, good reviews and to be completely up-to-date with your insurance.
                                         </Paragraph>
-
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                headline="Properties that match the listings provided by the host"
-                                                width="100%"
-                                            />
-                                        </div>
-
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                headline="Properties that are safe, clean, and well-located for their needs"
-                                                width="100%"
-                                            />
-                                        </div>
-
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                headline="Properties that are priced appropriately for their location, demand and the time of year"
-                                                width="100%"
-                                            />
-                                        </div>
-
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                headline="Common amenities including clean sheets, toiletries, a first aid kit, etc."
-                                                width="100%"
-                                            />
-                                        </div>
-
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                headline="Easy access to the property"
-                                                width="100%"
-                                            />
-                                        </div>
-
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                headline="Important information like contact details, good local restaurants, transit stops, emergency service numbers, etc."
-                                                width="100%"
-                                            />
-                                        </div>
+                                        <Paragraph big style={{marginBottom: "48px"}}>
+                                            Customers may also be looking for a range of services. For example, some will want to pack goods themselves, while others are happy to pay to have their house packed by professionals. Some will want you to collect goods from every room, while others will move things to the front door. You’ll need to tweak your services to meet customer needs, do what you say you will and be accurate and timely.
+                                        </Paragraph>
 
                                     </PanelWrapper>
                                 </Panel>
