@@ -4,40 +4,28 @@ export const adventages = {
     items: [
         {
             circleText: 1,
-            imageName: "family-baby-and-pet-photography",
-            headline: "Family and Relationship Coaching",
-            text: "This type of life coaching focuses on helping clients deal with family matters and improve their interpersonal relationships. There’s likely to be a fair amount of counseling involved."
+            imageName: "franchise",
+            headline: "Start a Franchise Moving Business",
+            text: "Franchises can have several advantages for moving business owners. You’ll get help with branding, promotions and marketing, together with support and guidance on setting up your relocation company. You will need to pay a franchise fee, possibly on both a one-time and ongoing basis. You’ll also need to meet the licensing requirements of the franchisor."
         },
         {
             circleText: 2,
-            imageName: "value-nobody-gives-you-more-for-less-01",
-            headline: "Life Potential Coaching",
-            text: "People seeking out this type of coaching want to build a strong foundation to improve their future opportunities and prospects. It provides advice on realizing strengths, overcoming weaknesses and giving people the self-confidence to achieve their goals."
+            imageName: "start-a-local-moving-business",
+            headline: "Start a Local Moving Business",
+            text: "To begin with, you might want to just do small, local moves within your city and the surrounding area. This will help you resolve issues early on and will reduce the costs of buying equipment and hiring employees. You can build a name for yourself in the local market."
         },
         {
             circleText: 3,
-            imageName: "fitness-and-lifestyle-coaching",
-            headline: "Fitness and Lifestyle Coaching",
-            text: "You can help your clients change their attitude to food, nutrition, exercise and healthy living. This type of coaching requires a good understanding of exercise science, in addition to helping clients make everyday healthy choices."
+            imageName: "start-regional-or-interstate-moving-business",
+            headline: "Start a Regional or Interstate Moving Business",
+            text: "If you’ve got plenty of ambition and capital, then it might be worth starting up a slightly bigger moving business that does interstate and long distance relocation. You will probably need to buy more vehicles and hire more employees, but you can also charge higher fees."
         },
         {
             circleText: 4,
-            imageName: "we-make-it-easy-01",
-            headline: "Executive Productivity Coaching",
-            text: "Executive Productivity Coaching"
-        },
-        {
-            circleText: 5,
-            imageName: "total-revenue-from-sales",
-            headline: "Business Financial Coaching",
-            text: "This type of coaching requires a good understanding of accounting and finance, and it can be focused on various areas like profit margins, cost reduction and changing perspectives about money."
-        },
-        {
-            circleText: 6,
-            imageName: "executive-relationship-and-culture-coaching",
-            headline: "Executive Relationship and Culture Coaching",
-            text: "Another specialized type of business coaching, this focuses on strengthening interpersonal relationships, enhancing management styles and building organizational strength and culture."
-        },
+            imageName: "supply-chain-startup-business",
+            headline: "Start a Commercial Moving Business",
+            text: "It’s not just individuals that want to relocate — commercial businesses need to move too. You could start a specialized office moving company that helps move office furniture, equipment and other items. This may be a less crowded niche in your local area, but there’s also a smaller customer base, so it's important to do your research."
+        }
     ]
 }
 
@@ -84,22 +72,22 @@ export const InfoCards = [
         roundTopLeft: true,
         roundBottomLeft: true,
         imageName: "workers-compensation-insurance",
-        title: "Workers Compensation Insurance for Your Moving Business",
-        content: "Workers’ compensation insurance provides coverage for job-related illnesses, disabilities or injuries that affect employees. Regulations for this insurance vary from state to state. It typically covers areas like medical costs, loss of earnings, compensation and retraining. This is essential for a moving business as handling large, heavy and awkward items could expose your employees to risk of injury."
+        title: "Workers Compensation Insurance",
+        content: "Workers’ compensation insurance provides coverage for job-related illnesses, disabilities or injuries that affect employees. Regulations for this insurance vary from state to state. It typically covers areas like medical costs, loss of earnings, compensation and retraining."
     },
     {
         backgroundColor: color.green3,
         imageName: "workers-compensation-insurance",
-        title: "General Liability Insurance for Your Moving Business",
-        content: "This insurance protects your moving business from claims due to being sued. This may include injury to members of the public, property damage, personal liabilities, legal defense and more. It can help protect your business from financial penalties and bankruptcy. This type of insurance is essential to your moving business as you will be going into and out of homes, and moving large items invites risks. You will also need to arrange to have your clients' property insured while you’re holding or transporting it."
+        title: "General Liability Insurance",
+        content: "This insurance protects your coaching business from claims due to being sued. This may include injury to members of the public, property damage, personal liabilities, legal defense and more. It can help protect your business from financial penalties and bankruptcy."
     },
     {
         backgroundColor: color.red3,
         roundTopRight: true,
         roundBottomRight: true,
         imageName: "home-and-auto-insurance",
-        title: "Specialized Office and Auto Insurance for Your Moving Business",
-        content: "You will want commercial office and vehicle insurance to cover your assets."
+        title: "Home and Auto Insurance",
+        content: "If you are working from home on the administration of your coaching business or driving a vehicle for work, check whether your existing home and auto policies cover you for work use of your home or car. If not, you should either expand your policy so you’re covered or get dedicated business insurance."
     }
 ]
 
