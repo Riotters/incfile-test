@@ -2,12 +2,12 @@ import React from "react"
 import styled from "styled-components"
 import {Panel, Tabs, useTabState} from "@bumaga/tabs"
 // import { motion } from "framer-motion"
-import OverviewSVG from "../../../../images/overview.inline.svg"
+import OverviewSVG from "../../../../images/icons/moving-company.inline.svg"
 import ArrowSVG from "../../../../images/arrow.inline.svg"
 import {Collapse} from "react-collapse"
 import VisibilitySensor from "../../../../components/VisibilitySensor"
 import LightIcon from "../../../../images/icons/light.inline.svg";
-import CalcIcon from "../../../../images/icons/calc.inline.svg";
+import CalcIcon from "../../../../images/icons/series-is-this-business-for-you.inline.svg";
 import {Heading} from "../../../atoms/typography/heading";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import CkeckText from "../../../../components/static-check/text-only";
@@ -17,6 +17,9 @@ import Container from "../../../../components/container";
 import BlueBoxWithAbsoluteText from "../../../molecules/text-blocks/blue-box-with-absolute-text";
 import Adventages from "../../../../components/adventages";
 import CountingTextBoxed from "../../../molecules/text-blocks/counting-text-boxed";
+import MegafonIcon from "../../../../images/icons/megafon.inline.svg";
+import {color} from "../../../../components/styles/colors";
+import Colorbox from "../../../../components/color-box";
 
 const cn = (...args) => args.filter(Boolean).join(" ");
 
@@ -262,7 +265,7 @@ const MovingCompanyTabs = ({layout, columns}) => (
                                             <OverviewSVG/>
                                         </Icon>
                                         <Content>
-                                            <span>Airbnb Business</span>
+                                            <span>Moving Company</span>
                                             <Arrow className="tabArrow">
                                                 <ArrowSVG/>
                                             </Arrow>
@@ -301,38 +304,33 @@ const MovingCompanyTabs = ({layout, columns}) => (
                                         }
                                         layout={layout}
                                     >
-                                        <Heading size={3}>Starting an Airbnb Business</Heading>
+                                        <Heading size={3}>Starting a Moving Company</Heading>
                                         <Paragraph big>
-                                            The concept of renting out space through Airbnb is relatively
-                                            straightforward, but
-                                            setting yourself up for success requires a little more work.
+                                            We’ve never had more choices of where to live or work — that need for relocation means there’s plenty of opportunities for starting a reliable and trustworthy moving venture.
                                         </Paragraph>
                                         <Paragraph big style={{marginBottom: "50px"}}>
-                                            We don’t think that creating an Airbnb business needs to be daunting, and
-                                            we’re here
-                                            to help. We’ve supported over 250,000 people to form a business and provided
-                                            answers, guidance and support to transform them into entrepreneurs. We’ll
-                                            guide you
-                                            through what you need to know to start your Airbnb venture and get it off
-                                            the
-                                            ground.
+                                            You’ll need to balance demand for moving services in your local area against the costs of buying the equipment and hiring employees to help people relocate. You may also want to buy into a moving franchise, or strike out on your own and build a company from scratch. Perhaps you became interested after helping people move through a contract service like U-Haul.
                                         </Paragraph>
-                                        <Heading size={3}>Airbnb Business formation guide</Heading>
+
+                                        <Colorbox className="box" theme="icon" Icon={MegafonIcon} color={color.yellow3}
+                                                  curve
+                                                  curveColor={color.yellow1}>
+                                            <Heading size={4}>We want to help you get your business off the ground.</Heading>
+                                            <Paragraph bottomPadding={0} bottomMargin={0}>
+                                                There are lots of questions involved in starting a moving business, and we’re here to help. We’ve supported over 100,000 people to form their business and provided answers to transform them into entrepreneurs. We’ll guide you through what you need to know to start your relocation company and get it off the ground.
+                                            </Paragraph>
+                                        </Colorbox>
+
+                                        <Heading size={3} style={{marginTop: "50px"}}>Moving Business formation guide</Heading>
                                         <Paragraph big>
-                                            From validating your business and doing the research to filing your
-                                            paperwork and
-                                            running your business, this guide will help you out. Read on for some
-                                            insight into
-                                            creating your own Airbnb business and becoming an entrepreneur. In this
-                                            guide we
-                                            will cover:
-                                        </Paragraph>
+                                            From validating your business and doing the research to filing your paperwork and running your venture, this guide will help you out. We’ll talk you through the main things you need to do to get your moving company off of the ground. Read on for some insight into creating your own moving business and becoming an entrepreneur. In this guide we will cover:
+                                         </Paragraph>
 
                                         <ListWrapper>
                                             <ListBox>
                                                 <CkeckText>
                                                     <Paragraph big>
-                                                        Statistics on why you should start an Airbnb business
+                                                        Statistics on why you should start a moving company
                                                     </Paragraph>
                                                 </CkeckText>
                                             </ListBox>
@@ -340,7 +338,7 @@ const MovingCompanyTabs = ({layout, columns}) => (
                                             <ListBox>
                                                 <CkeckText>
                                                     <Paragraph big>
-                                                        Choose the right business structure for your Airbnb company
+                                                        Choosing the right business structure for your moving venture
                                                     </Paragraph>
                                                 </CkeckText>
                                             </ListBox>
@@ -348,7 +346,7 @@ const MovingCompanyTabs = ({layout, columns}) => (
                                             <ListBox>
                                                 <CkeckText>
                                                     <Paragraph big>
-                                                        How to find out if an Airbnb business is right for you
+                                                        How to find out if a moving business is right for you
                                                     </Paragraph>
                                                 </CkeckText>
                                             </ListBox>
@@ -356,9 +354,7 @@ const MovingCompanyTabs = ({layout, columns}) => (
                                             <ListBox>
                                                 <CkeckText>
                                                     <Paragraph big>
-                                                        Setting up your Airbnb business including location, equipment,
-                                                        employees,
-                                                        taxes, finances, licenses and more
+                                                        How to start your moving business with information on equipment, employees, location, permits, finances, taxes and more
                                                     </Paragraph>
                                                 </CkeckText>
                                             </ListBox>
@@ -366,7 +362,7 @@ const MovingCompanyTabs = ({layout, columns}) => (
                                             <ListBox>
                                                 <CkeckText>
                                                     <Paragraph big>
-                                                        Ideas for the type of Airbnb business that you could form
+                                                        Different types of relocation businesses
                                                     </Paragraph>
                                                 </CkeckText>
                                             </ListBox>
@@ -374,7 +370,7 @@ const MovingCompanyTabs = ({layout, columns}) => (
                                             <ListBox>
                                                 <CkeckText>
                                                     <Paragraph big>
-                                                        Where to find Airbnb business groups, forums and support
+                                                        Groups, forums and support for moving business owners
                                                     </Paragraph>
                                                 </CkeckText>
                                             </ListBox>
@@ -382,7 +378,7 @@ const MovingCompanyTabs = ({layout, columns}) => (
                                             <ListBox>
                                                 <CkeckText>
                                                     <Paragraph big>
-                                                        Proving your Airbnb business can work
+                                                        How to validate your moving business idea
                                                     </Paragraph>
                                                 </CkeckText>
                                             </ListBox>
@@ -390,7 +386,7 @@ const MovingCompanyTabs = ({layout, columns}) => (
                                             <ListBox>
                                                 <CkeckText>
                                                     <Paragraph big>
-                                                        Useful online tools for Airbnb business owners
+                                                        Useful online tools for moving business owners
                                                     </Paragraph>
                                                 </CkeckText>
                                             </ListBox>
@@ -398,7 +394,7 @@ const MovingCompanyTabs = ({layout, columns}) => (
                                             <ListBox>
                                                 <CkeckText>
                                                     <Paragraph big>
-                                                        Business plans for Airbnb companies
+                                                        Business plans for moving companies
                                                     </Paragraph>
                                                 </CkeckText>
                                             </ListBox>
