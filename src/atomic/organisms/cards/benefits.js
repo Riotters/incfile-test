@@ -12,7 +12,7 @@ const Wrapper = styled.div`
     position: relative;
     margin-top: 96px;
 
-    @media(min-width: 768px) {
+    @media(min-width: 769px) {
       grid-template-columns: 1fr 1fr;
     }
 

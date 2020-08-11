@@ -1,9 +1,9 @@
 import React from "react";
-import { Link } from "gatsby"
+import { Link } from "gatsby";
 import styled from "styled-components";
 import { Tabs, useTabState, usePanelState } from "@bumaga/tabs";
 import { motion } from "framer-motion";
-import { color } from "./styles/colors"
+import { color } from "./styles/colors";
 import ArrowSVG from "../images/arrow-circle.inline.svg";
 import CurveSVG from "../images/orange-curve.inline.svg";
 import VisibilitySensor from "./VisibilitySensor";
@@ -14,7 +14,7 @@ const Wrapper = styled.div`
   position: relative;
   margin-top: 80px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     width: auto;
     padding: 25px 29px 0;
   }
@@ -27,7 +27,7 @@ const Curve = styled.div`
   top: -16px;
   left: -13px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     top: 0;
     left: 0;
   }
@@ -58,7 +58,7 @@ const PanelWrapper = styled.div`
   padding: 15px;
   z-index: 1;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     padding: 24px 40px 40px 80px;
   }
 
@@ -66,7 +66,8 @@ const PanelWrapper = styled.div`
     margin-bottom: 48px;
   }
 
-  p, li {
+  p,
+  li {
     color: ${color.grey1};
     font-family: Avenir, sans-serif;
     max-width: 650px;
@@ -201,16 +202,8 @@ const Accordion = ({ faq }) => {
                   </Tab>
                   <Panel>
                     <PanelWrapper>
-                      {console.log(typeof item.answer)}
-                      {typeof item.answer === 'string' ?
-                        <p>{item.answer}</p> : null
-                      }
-                      {typeof item.answer === 'object' ?
-                        <p>{item.answer.map((el, id) => (
-                        id % 2 ? <Link to={el.url}>{` ${el.text} `}</Link> : el.text
-                        ))}</p> 
-                        : null
-                      }
+                      {typeof item.answer === "string" ? <p>{item.answer}</p> : null}
+                      {typeof item.answer === "object" ? <p>{item.answer.map((el, id) => (id % 2 ? <Link to={el.url}>{` ${el.text} `}</Link> : el.text))}</p> : null}
                       {/* <p>{item.answer}</p> */}
                       {item.list && (
                         <ul>

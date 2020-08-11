@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   padding-bottom: 64px;
   position: relative;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     padding-top: 180px;
   }
 `;
@@ -24,7 +24,7 @@ const Content = styled.div`
   flex-direction: column;
   max-width: 750px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     padding-left: 100px;
   }
 
@@ -45,7 +45,7 @@ const Icon = styled.div`
   width: 100%;
   max-width: 400px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     display: flex;
   }
 
@@ -59,7 +59,7 @@ const Checks = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     flex-direction: row;
   }
 

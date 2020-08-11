@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-import Container from "../container"
+import Container from "../container";
 
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
 
-  @media(min-width: 768px) {
-      flex-direction: row;
+  @media (min-width: 769px) {
+    flex-direction: row;
   }
 `;
 
@@ -17,9 +17,9 @@ const Content = styled.div`
   flex-direction: column;
   justify-content: center;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     width: 100%;
-    max-width: ${props => (props.contentWidth ? parseInt(props.contentWidth) + 100 : "700")}px;
+    max-width: ${(props) => (props.contentWidth ? parseInt(props.contentWidth) + 100 : "700")}px;
     padding-right: 100px;
   }
 `;
@@ -29,24 +29,21 @@ const Objectbox = styled.div`
   flex-direction: column;
   justify-content: center;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     flex-grow: 1;
   }
 `;
 
 const LeftContentRightObject = ({ className, object, children, contentWidth, headlineWidth, textWidth }) => {
-    
   return (
-      <Container>
-        <Wrapper className={className}>
-          <Content contentWidth={contentWidth} headlineWidth={headlineWidth} textWidth={textWidth}>
-            { children }
-          </Content>
-          <Objectbox>
-            { object }
-          </Objectbox>
-        </Wrapper>
-      </Container>
+    <Container>
+      <Wrapper className={className}>
+        <Content contentWidth={contentWidth} headlineWidth={headlineWidth} textWidth={textWidth}>
+          {children}
+        </Content>
+        <Objectbox>{object}</Objectbox>
+      </Wrapper>
+    </Container>
   );
 };
 

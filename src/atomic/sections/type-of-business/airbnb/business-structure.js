@@ -31,7 +31,7 @@ const OrangeContainer = styled.div`
     background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(254,246,237,1) 100%);
     position: relative;
     
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
         padding-bottom: 100px;
     }
 `;

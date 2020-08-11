@@ -6,9 +6,14 @@ const Wrapper = styled.div`
   position: relative;
   z-index: 1;
   width: 100%;
+  max-width: 568px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+
+  @media (min-width: 769px) {
+    max-width: 100%;
+  }
 
   @media (min-width: ${props => props.width}px) {
     max-width: ${props => props.width}px;

@@ -75,7 +75,7 @@ const Imageboxes = styled.div`
   grid-gap: 30px;
   padding-top: 112px;
 
-  @media(min-width: 768px) {
+  @media(min-width: 769px) {
     grid-template-columns: 1fr 1fr;
   }
 `;

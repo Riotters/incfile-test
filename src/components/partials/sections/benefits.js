@@ -17,7 +17,7 @@ const Wrapper = styled.div`
   padding-top: 50px;
   position: relative;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     padding-top: 105px;
   }
 `;
@@ -29,7 +29,7 @@ const Grid = styled.div`
   grid-row-gap: 56px;
   padding-top: 76px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     grid-template-columns: 1fr 1fr 1fr;
   }
 `;

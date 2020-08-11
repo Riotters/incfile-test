@@ -42,7 +42,7 @@ const Wrapper = styled.div`
     padding-bottom: 115px;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     flex-direction: ${props => (props.layout !== "grid" ? "row" : "column")};
   }
 
@@ -55,7 +55,7 @@ const Wrapper = styled.div`
     transition: height 500ms;
     margin-left: auto;
 
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
       max-width: ${props => (props.layout !== "grid" ? "55%" : "")};
     }
 
@@ -70,7 +70,7 @@ const TabsWrapper = styled.div`
   flex-direction: column;
   width: 100%;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     max-width: ${props => (props.layout !== "grid" ? "40%" : "")};
   }
 
@@ -156,7 +156,7 @@ const Content = styled.div`
     font-size: 13px;
     white-space: nowrap;
 
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
       font-size: 16px;
     }
   }
@@ -221,7 +221,7 @@ const Oval = styled.div`
   
   display: none;
     
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
         display: block;
     }
 `
@@ -237,7 +237,7 @@ const OvalBottom = styled.div`
   
   display: none;
     
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
         display: block;
     }
 `

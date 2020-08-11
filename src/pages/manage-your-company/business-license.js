@@ -123,7 +123,7 @@ const States = styled.div`
   margin-top: 50px;
   padding: 30px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -178,7 +178,7 @@ const WhatYouGet = styled.section`
     grid-gap: 8px;
     margin-bottom: 48px;
 
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
       grid-template-columns: 1fr 1fr;
     }
 
@@ -188,7 +188,7 @@ const WhatYouGet = styled.section`
       padding: 35px 35px 35px 88px;
       border-radius: 5px 5px 5px 5px;
 
-      @media (min-width: 768px) {
+      @media (min-width: 769px) {
         &:nth-child(1) {
           border-radius: 20px 5px 5px 5px;
         }
@@ -221,7 +221,7 @@ const WhatYouGet = styled.section`
 `;
 
 const ResearchPackage = styled.section`
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     padding: 72px;
   }
 `;
@@ -232,7 +232,7 @@ const Boxes = styled.div`
   align-items: center;
   padding-top: 72px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     flex-direction: row;
   }
 
@@ -287,7 +287,7 @@ const Boxes = styled.div`
       left: 50%;
       transform: translate(-50%, -50%) rotate(90deg);
 
-      @media (min-width: 768px) {
+      @media (min-width: 769px) {
         transform: translate(-50%, -50%) rotate(0);
       }
     }

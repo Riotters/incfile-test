@@ -8,6 +8,7 @@ import styled from "styled-components";
 import Top from "../components/partials/sections/top";
 import ImageContent from "../components/partials/blocks/left-image-right-content";
 import ContentObject from "../atomic/partials/left-content-right-object";
+import ObjectContent from "../atomic/partials/left-object-right-content";
 import Articles from "../components/partials/sections/articles";
 import { color, gradient } from "../components/styles/colors";
 import { shadow } from "../components/styles/shadows";
@@ -16,14 +17,18 @@ import IDCardSVG from "../images/icons/idcard.inline.svg";
 import Accordion from "../components/accordion";
 import Benefits from "../components/partials/sections/benefits";
 import Card from "../components/certificate-card";
-import ArrowLink from "../components/arrow-link";
+import ArrowLink from "../atomic/molecules/buttons/text";
 import H2Text from "../atomic/molecules/text-blocks/h2-text";
 import H3Text from "../atomic/molecules/text-blocks/h3-text";
-import { top, reducingTax, llcsTax, howSaveMoney, taxCalculator, fairSalary, administrativeOverhead, fileForm, behalfFile, help, faq, overhead } from "../static/llc-s-corp-election"
+import { top, reducingTax, llcsTax, howSaveMoney, taxCalculator, fairSalary, administrativeOverhead, fileForm, behalfFile, help, faq, overhead } from "../static/llc-s-corp-election";
 import NumericBoxedList from "../atomic/organisms/lists/numeric-boxed-list";
 import CircleCheckmarkText from "../atomic/molecules/static-check/circle-checkmark-text";
 import TopImageBox from "../components/top-image-box";
 import ContentCenter from "../atomic/partials/content-center";
+import { Heading } from "../atomic/atoms/typography/heading";
+import { Paragraph } from "../atomic/atoms/typography/paragraph";
+import TotalSavings from "../atomic/organisms/forms/total-savings";
+import LeftContentRightImage from "../atomic/partials/left-content-right-image";
 
 const ReducingTax = styled.section`
   position: relative;
@@ -72,7 +77,6 @@ const LLCsTax = styled.section`
 `;
 
 const Example = styled.section`
-  height: 1000px;
   position: relative;
   padding-top: 75px;
   padding-bottom: 64px;
@@ -80,12 +84,10 @@ const Example = styled.section`
 `;
 
 const FairlSalary = styled.section`
-  height: 500px;
   position: relative;
   padding-top: 75px;
   padding-bottom: 64px;
 `;
-
 
 const Overhead = styled.section`
   position: relative;
@@ -126,7 +128,7 @@ const BehalfFile = styled.section`
   }
 
   .card {
-    margin: 56px 0 48px;    
+    margin: 56px 0 48px;
   }
 `;
 
@@ -136,7 +138,7 @@ const Help = styled.section`
   padding-bottom: 64px;
 
   &::before {
-    content: '';
+    content: "";
     height: 1188px;
     width: 100%;
     position: absolute;
@@ -156,19 +158,16 @@ const Help = styled.section`
   h3 {
     padding-bottom: 24px;
   }
-
-  p {
-    padding-bottom: 48px;
-  }
 `;
 
-const List = <NumericBoxedList content={llcsTax.list}/>;
-const NoImpact = <CircleCheckmarkText isRed content={llcsTax.red}/>;
+const List = <NumericBoxedList content={llcsTax.list} />;
+const NoImpact = <CircleCheckmarkText isRed content={llcsTax.red} />;
+const Savings = <TotalSavings />;
 
 const CorpElection = () => (
   <Layout>
     <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
-    <Top imageName="mrs-bulb-business-taxes" imageAlt="Mrs Bulb checking forms on notebook">
+    <Top imageName="mrs-bulb-business-taxes" imageAlt="Mrs Bulb checking forms on notebook" ovalColor="sun">
       <h1>{top.header}</h1>
       <p>{top.text}</p>
       <Buttonsbox>
@@ -187,60 +186,77 @@ const CorpElection = () => (
       </ContentObject>
     </LLCsTax>
     <Example>
-
+      <TextCenterLayout headline={howSaveMoney.header} headlineWidth="770" text={howSaveMoney.text} />
+      <ContentObject object={NoImpact} contentWidth="570">
+        <Heading size="3">{howSaveMoney.header2}</Heading>
+        <Paragraph big bottomMargin="64">
+          {howSaveMoney.text2}
+        </Paragraph>
+        <Heading size="3">{howSaveMoney.header3}</Heading>
+        <Paragraph big>{howSaveMoney.text3}</Paragraph>
+      </ContentObject>
+      <ObjectContent object={Savings}>
+        <Heading size="2" bottomMargin="80" style={{textAlign: "left"}}>{taxCalculator.header}</Heading>
+        <Paragraph big>
+          {taxCalculator.text}
+        </Paragraph>
+        <Heading size="3" bottomMargin="32">{taxCalculator.header2}</Heading>
+        <ArrowLink content={taxCalculator.link} />
+      </ObjectContent>
     </Example>
     <FairlSalary>
-
+      <LeftContentRightImage image="weight">
+        <Heading size="2" bottomMargin="64">{fairSalary.header}</Heading>
+        <Paragraph big bottomMargin="0">
+          {fairSalary.text}
+        </Paragraph>
+      </LeftContentRightImage>
     </FairlSalary>
     <Overhead>
-      <TextCenterLayout headline={overhead.header} text={overhead.text}/>
+      <TextCenterLayout headline={overhead.header} text={overhead.text} />
       <ContentCenter>
         <OverheadBoxes>
           <TopImageBox image="envelope-dollar" color={color.yellow3}>
-              <h4>Setting up monthly payroll</h4>
-              <p>
-                You will need to set up a monthly payroll where you pay yourself and submit your payroll taxes
-              </p>
+            <h4>Setting up monthly payroll</h4>
+            <p>You will need to set up a monthly payroll where you pay yourself and submit your payroll taxes</p>
           </TopImageBox>
           <TopImageBox image="calculator-coin" color={color.red3}>
-              <h4>Additional accounting fees</h4>
-              <p>
-                Your accountant will need to file your taxes in a slightly different way, which may increase your accounting fees
-              </p>
-          </TopImageBox>     
+            <h4>Additional accounting fees</h4>
+            <p>Your accountant will need to file your taxes in a slightly different way, which may increase your accounting fees</p>
+          </TopImageBox>
         </OverheadBoxes>
         <p className="bottom-text">This will likely be more than counterbalanced by the money you save in tax payments.</p>
       </ContentCenter>
     </Overhead>
     <FileForm>
-      <TextCenterLayout headline={fileForm.header} text={fileForm.text}/>
+      <TextCenterLayout headline={fileForm.header} text={fileForm.text} />
       <ContentCenter contentWidth="770">
         <NumericBoxedList content={fileForm.list} />
       </ContentCenter>
     </FileForm>
     <BehalfFile>
-      <TextCenterLayout headline={behalfFile.header} text={behalfFile.text}/>
+      <TextCenterLayout headline={behalfFile.header} text={behalfFile.text} />
       <ContentCenter contentWidth="470">
         <TopImageBox className="card" image="24-hours" color={color.orange3} noShadow>
-            <h4>{behalfFile.header2}</h4>
-            <p>
-              {behalfFile.text2}
-              <a href="#"> {behalfFile.link} </a>
-              {behalfFile.text3}
-              <a href="#"> {behalfFile.link2} </a>
-              {behalfFile.text4}
-            </p>
+          <h4>{behalfFile.header2}</h4>
+          <p>
+            {behalfFile.text2}
+            <a href="#"> {behalfFile.link} </a>
+            {behalfFile.text3}
+            <a href="#"> {behalfFile.link2} </a>
+            {behalfFile.text4}
+          </p>
         </TopImageBox>
         <Button theme="secondary56" content={behalfFile.button} arrow />
       </ContentCenter>
     </BehalfFile>
     <Help>
-      <TextCenterLayout className="header-1" headline={help.header}/>
+      <TextCenterLayout className="header-1" headline={help.header} />
       <ContentCenter contentWidth="770">
         <H3Text content={help.saveYourTime} />
         <Button theme="primary56" content={help.button} margin="0 auto" arrow />
       </ContentCenter>
-      <TextCenterLayout className="header-2" headline={help.header2} headlineWidth="750"/>
+      <TextCenterLayout className="header-2" headline={help.header2} headlineWidth="750" />
       <ContentCenter contentWidth="770">
         <Accordion faq={faq} />
       </ContentCenter>

@@ -8,15 +8,31 @@ import PenSVG from "../../../images/icons/pen.inline.svg";
 
 const Wrapper = styled.div`
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     width: 100%;
     max-width: 784px;
     margin-top: 72px;
     margin-bottom: 88px;
+    
+    @media (min-width: 576px) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
     & > div {
+        margin: 0 auto 48px;
+
+        @media (min-width: 576px) {
+            margin: 0;
+        }
+
         &:last-child {
             padding: 0 32px;
+            margin: 0 auto;
+
+            @media (min-width: 576px) {
+                margin: 0;
+            }
         }
     }
 `

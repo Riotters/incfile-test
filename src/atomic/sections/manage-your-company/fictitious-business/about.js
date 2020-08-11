@@ -6,6 +6,9 @@ import HeadingCenter from "../../../partials/heading-center";
 import ContentCenter from "../../../partials/content-center";
 import Button from "../../../molecules/buttons/button";
 import Diagram from "../../../organisms/diagrams/fictitious-diagram";
+import Oval from "../../../atoms/icons/oval";
+import OvalSVG from "../../../../images/ovals/top-left-transparent-pink.inline.svg";
+
 
 const About = styled.section`
   position: relative;
@@ -30,6 +33,9 @@ const About = styled.section`
 
 const AboutSection = ({ className, content }) => (
     <About className={className}>
+        <Oval className="oval" height="570" width="570" y="-40">
+            <OvalSVG />
+        </Oval>
         <HeadingCenter className="heading" headline={content.header} headlineWidth="770" />
         <ContentCenter>
             <Diagram content={content.diagram} />

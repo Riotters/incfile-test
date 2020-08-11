@@ -51,7 +51,7 @@ const ButtonsBox = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     flex-direction: row;
   }
 `;

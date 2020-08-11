@@ -5,12 +5,16 @@ import Card from "../../molecules/mixed-blocks/top-image-box";
 
 const Wrapper = styled.div`
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 100%;
     grid-gap: 30px;
     width: 100%;
     max-width: 970px;
     padding: 140px 0;
     margin: 0 auto;
+
+    @media (min-width: 769px) {
+      grid-template-columns: 1fr 1fr;
+    }
 `
 
 const colors = [color.orange3, color.purple3];

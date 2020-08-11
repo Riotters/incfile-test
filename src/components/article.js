@@ -7,7 +7,7 @@ const Wrapper = styled.article`
   padding: 0 15px;
   margin-bottom: 8px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     height: 275px;
     margin-bottom: 0;
   }
@@ -44,7 +44,7 @@ const ImageBox = styled.div`
     }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     display: block;
   }
 `

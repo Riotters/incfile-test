@@ -1,50 +1,60 @@
 import React from "react";
 import styled from "styled-components";
-import {color} from "../../../atomic/atoms/styles/colors";
+import { color } from "../../../atomic/atoms/styles/colors";
 import Image from "../../image_nobase64";
 import Container from "../../container";
 import OvalSVG from "../../../images/oval.inline.svg";
 import VisibilitySensor from "../../VisibilitySensor";
 
 const switch1 = (ovalColor) => {
-    switch (ovalColor) {
-        case "blue": {
-            return color.blue1;
-        }
-        case "orange": {
-            return color.orange1;
-        }
-        case "purple": {
-            return color.purple1;
-        }
-        default:
-            return "";
+  switch (ovalColor) {
+    case "blue": {
+      return color.blue1;
     }
-    ;
-}
+    case "orange": {
+      return color.orange1;
+    }
+    case "purple": {
+      return color.purple1;
+    }
+    case "yellow": {
+      return color.yellow1;
+    }
+    case "sun": {
+      return "#ffb059";
+    }
+    default:
+      return "";
+  }
+};
 
 const switch2 = (ovalColor) => {
-    switch (ovalColor) {
-        case "blue": {
-            return color.babyblue2;
-        }
-        case "orange": {
-            return color.orange2;
-        }
-        case "purple": {
-            return color.purple2;
-        }
-        default:
-            return "";
+  switch (ovalColor) {
+    case "blue": {
+      return color.babyblue2;
     }
-    ;
-}
+    case "orange": {
+      return color.orange2;
+    }
+    case "purple": {
+      return color.purple2;
+    }
+    case "yellow": {
+      return color.yellow2;
+    }
+    case "sun": {
+      return "#ffe3c5";
+    }
+    default:
+      return "";
+  }
+};
 
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
   position: relative;
-  min-height: 100vh;
+  height: 100vh;
   max-height: 777px;
 `;
 
@@ -69,7 +79,7 @@ const Oval = styled.div`
     padding-bottom: 100%;
   }
 
-  svg {
+  & > svg {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -78,10 +88,10 @@ const Oval = styled.div`
       radialGradient {
         stop {
           &:nth-child(1) {
-            stop-color: ${({ovalColor}) => switch1(ovalColor)};
+            stop-color: ${({ ovalColor }) => switch1(ovalColor)};
           }
           &:nth-child(2) {
-            stop-color: ${({ovalColor}) => switch2(ovalColor)};
+            stop-color: ${({ ovalColor }) => switch2(ovalColor)};
           }
         }
       }
@@ -106,10 +116,10 @@ const TextContainer = styled.div`
   padding-top: 150px;
   padding-bottom: 120px;
 
-    @media (min-width: 992px) {
-        padding-top: 50px;
-    }
-    
+  @media (min-width: 992px) {
+    padding-top: 50px;
+  }
+
   @media (min-width: 992px) {
     width: 50%;
     align-items: flex-start;
@@ -124,19 +134,19 @@ const TextContainer = styled.div`
       text-align: left;
       padding-bottom: 20px;
     }
-    
+
     @media (min-width: 1200px) {
-        max-width: ${props => (props.headlineWidth ? props.headlineWidth : "480")}px;
+      max-width: ${(props) => (props.headlineWidth ? props.headlineWidth : "480")}px;
     }
   }
 
   p {
     margin-bottom: 33px;
     text-align: center;
-    
+
     @media (min-width: 1200px) {
-        text-align: left;
-        max-width: ${props => (props.headlineWidth ? props.headlineWidth : "480")}px;
+      text-align: left;
+      max-width: ${(props) => (props.headlineWidth ? props.headlineWidth : "480")}px;
     }
   }
 `;
@@ -166,36 +176,34 @@ const ImageContainer = styled.div`
   }
 `;
 
-const Top = ({children, imageName, imageAlt, headlineWidth, ovalColor}) => (
-    <Wrapper>
+const Top = ({ children, imageName, imageAlt, headlineWidth, ovalColor }) => (
+  <Wrapper>
+    <VisibilitySensor partialVisibility once>
+      {({ isVisible }) => (
+        <Oval className={isVisible ? "scaleUp enter" : "scaleUp"} ovalColor={ovalColor}>
+          <OvalSVG />
+        </Oval>
+      )}
+    </VisibilitySensor>
+    <ImageContainer>
+      <Image filename={imageName} alt={imageAlt} />
+    </ImageContainer>
+    <Container>
+      <Content>
         <VisibilitySensor partialVisibility once>
-            {({isVisible}) => (
-                <Oval className={isVisible ? "scaleUp enter" : "scaleUp"} ovalColor={ovalColor}>
-                    <OvalSVG/>
-                </Oval>
-            )}
+          {({ isVisible }) => (
+            <TextContainer className={isVisible ? "slideRight enter" : "slideRight"} headlineWidth={headlineWidth}>
+              {children}
+            </TextContainer>
+          )}
         </VisibilitySensor>
-        <ImageContainer>
-            <Image filename={imageName} alt={imageAlt}/>
-        </ImageContainer>
-        <Container>
-            <Content>
-                <VisibilitySensor partialVisibility once>
-                    {({isVisible}) => (
-                        <TextContainer className={isVisible ? "slideRight enter" : "slideRight"}
-                                       headlineWidth={headlineWidth}>
-                            {children}
-                        </TextContainer>
-                    )}
-                </VisibilitySensor>
-
-            </Content>
-        </Container>
-    </Wrapper>
+      </Content>
+    </Container>
+  </Wrapper>
 );
 
 export default Top;
 
 Top.defaultProps = {
-    OvalSVGFile: OvalSVG
-}
+  OvalSVGFile: OvalSVG,
+};

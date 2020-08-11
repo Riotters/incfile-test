@@ -6,8 +6,14 @@ import Bluebox from "../../atoms/boxes/blue-box";
 
 const Wrapper = styled.div`
     width: 100%;
-    max-width: 270px;
     position: relative;
+    max-width: 470px;
+    margin: 0 auto;
+    
+    @media (min-width: 769px) {
+        max-width: 270px;
+        margin: 0;
+    }
 
     .box {
         display: flex;

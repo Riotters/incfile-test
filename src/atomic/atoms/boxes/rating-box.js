@@ -7,7 +7,7 @@ const RatingWrapper = styled.div`
   align-items: center;
   margin-right: 42px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     flex-direction: row;
   }
 `;

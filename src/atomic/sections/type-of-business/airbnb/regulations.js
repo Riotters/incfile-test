@@ -50,7 +50,7 @@ const Oval = styled.div`
     left: 0;
     display: none;
     
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
         display: block;
     }
 `;

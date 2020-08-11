@@ -5,6 +5,8 @@ import HeadingCenter from "../../../partials/heading-center";
 import ContentCenter from "../../../partials/content-center";
 import NumericBoxedList from "../../../organisms/lists/numeric-boxed-list";
 import CircleCheckmarkText from "../../../molecules/static-check/circle-checkmark-text";
+import Oval from "../../../atoms/icons/oval";
+import OvalSVG from "../../../../images/ovals/top-right-transparent-blue.inline.svg";
 
 const Register = styled.section`
   position: relative;
@@ -27,6 +29,10 @@ const Register = styled.section`
 
     .list {
         padding-top: 104px;
+
+        & > div {
+            top: 80px;
+        }
     }
 
     .red {
@@ -36,9 +42,12 @@ const Register = styled.section`
 
 const RegisterSection = ({ className, content }) => (
     <Register className={className}>
+        <Oval height="720" width="720" top="0" right="0">
+            <OvalSVG />
+        </Oval>
         <HeadingCenter headline={content.header} headlineWidth="770" text={content.text} />
         <ContentCenter>
-            <NumericBoxedList className="list" content={content.list} />
+            <NumericBoxedList className="list" content={content.list} curve/>
             <CircleCheckmarkText className="red" content={content.red} isRed />
         </ContentCenter>
     </Register>

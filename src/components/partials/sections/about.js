@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   padding-top: 75px;
   position: relative;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     padding-top: 115px;
   }
 `

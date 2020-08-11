@@ -20,9 +20,14 @@ const Wrapper = styled.div`
 `;
 
 const Top = styled.div`
-    display: flex;
-    justify-content: center;
+    display: flex; 
     width: 100%;
+    margin-bottom: 16px;
+
+    @media (min-width: 769px) {
+        justify-content: center;
+        margin-bottom: 0;
+    }
 
     .box {
         background-color: ${color.blue1};
@@ -32,24 +37,35 @@ const Top = styled.div`
 `;
 
 const Mid = styled.div`
+    display: none;
     width: 75.5%;
+
+    @media (min-width: 769px) {
+        display: block;
+    }
 `;
 
 const Bot = styled.div`
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 100%;
     grid-gap: 8px;
     width: 100%;
 
+    @media (min-width: 769px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
     .sub {
-        &:nth-child(1) {
-            .box {
-                border-radius: 20px 5px 5px 20px;
+        @media (min-width: 769px) {
+            &:nth-child(1) {
+                .box {
+                    border-radius: 20px 5px 5px 20px;
+                }
             }
-        }
-        &:nth-child(4) {
-            .box {
-                border-radius: 5px 20px 20px 5px;
+            &:nth-child(4) {
+                .box {
+                    border-radius: 5px 20px 20px 5px;
+                }
             }
         }
     }

@@ -46,7 +46,7 @@ const Imagebox = styled.div`
   max-width: 485px;
   position: relative;
 
-  @media(min-width: 768px) {
+  @media(min-width: 769px) {
     display: flex;
   }
 

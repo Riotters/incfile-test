@@ -13,7 +13,7 @@ const RatingWrapper = styled.div`
     margin-right: 42px; 
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     flex-direction: row;
   }
 `;

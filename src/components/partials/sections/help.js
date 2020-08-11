@@ -36,7 +36,7 @@ const Content = styled.div`
   flex-direction: column;
   justify-content: center;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     width: 60%;
     padding-right: 100px;
   }
@@ -62,7 +62,7 @@ const Imagebox = styled.div`
   width: 100%;
   max-width: 334px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     display: flex;
   }
 
@@ -75,7 +75,7 @@ const Buttonsbox = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     flex-direction: row;
   }
 `;

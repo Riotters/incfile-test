@@ -6,6 +6,8 @@ import ContentCenter from "../../../partials/content-center";
 import { gradient } from "../../../atoms/styles/colors";
 import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";
+import Oval from "../../../atoms/icons/oval";
+import OvalSVG from "../../../../images/ovals/top-right-transparent-green.inline.svg";
 
 const Help = styled.section`
   position: relative;
@@ -30,6 +32,9 @@ const Help = styled.section`
 
 const HelpSection = ({ className, content }) => (
     <Help className={className}>
+        <Oval className="oval" height="420" width="420" top="0" right="0">
+            <OvalSVG />
+        </Oval>
         <HeadingCenter className="headline" headline={content.header} headlineWidth="770" />
         <ContentCenter>
             <Heading size="3" style={{textAlign: "center"}}>{content.header2}</Heading>

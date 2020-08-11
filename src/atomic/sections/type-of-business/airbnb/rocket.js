@@ -46,7 +46,7 @@ const Wrapper = styled.div`
   min-height: 626px;
   margin-bottom: 50px;
   
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     padding-top: 125px;
   }
 `
@@ -61,7 +61,7 @@ const RocketWrapper = styled.div`
   transform: translateY(-50%);
   z-index: -1;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     display: flex;
   }
 
@@ -125,7 +125,7 @@ const Moon = styled.div`
   top: 190px;
   right: 190px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     display: block;
   }
 `
@@ -133,7 +133,7 @@ const Moon = styled.div`
 const Content = styled.div`
   width: 100%;
   
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
         width: 600px; 
         margin-left: auto;
   }

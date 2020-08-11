@@ -3,10 +3,13 @@ import styled from "styled-components";
 import { color } from "../../atoms/styles/colors";
 import Whitebox from "../../atoms/boxes/white-box-li";
 import Circle from "../../atoms/icons/circle";
+import Curve from "../../atoms/icons/curve";
+import CurveSVG from "../../../images/curves/bottom-left-top-right.inline.svg";
 
 const Wrapper = styled.ul`
     width: 100%;
     list-style: none;
+    position: relative;
 
     li {
         display: flex;
@@ -31,9 +34,14 @@ const Wrapper = styled.ul`
     }
 `
 
-const NumericBoxedList = ({ className, content }) => {
+const NumericBoxedList = ({ className, content, curve }) => {
   return (
     <Wrapper className={className}>
+        {curve && (
+            <Curve top="-25" left="-29" color={color.blue1}>
+                <CurveSVG />
+            </Curve>
+        )}
         {content.map((item, id) => (
             <Whitebox>
             <Circle>
