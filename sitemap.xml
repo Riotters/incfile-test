@@ -3,7 +3,10 @@
 <url> <loc>https://incfile.netlify.app/incfile-test/article/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://incfile.netlify.app/incfile-test/blog/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://incfile.netlify.app/incfile-test/components/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://incfile.netlify.app/incfile-test/corporation-state-information/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://incfile.netlify.app/incfile-test/forms/fictitious-business-name/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://incfile.netlify.app/incfile-test/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://incfile.netlify.app/incfile-test/llc-state-information/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://incfile.netlify.app/incfile-test/manage-your-company-change-of-registered-agent/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://incfile.netlify.app/incfile-test/manage-your-company-dissolution/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://incfile.netlify.app/incfile-test/manage-your-company-foreign-qualification/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
