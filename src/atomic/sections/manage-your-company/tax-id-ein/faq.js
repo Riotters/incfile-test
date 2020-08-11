@@ -4,7 +4,7 @@ import HeadingCenter from "../../../partials/heading-center";
 import ContentCenter from "../../../partials/content-center";
 import Accordion from "../../../organisms/accordion/accordion";
 import Oval from "../../../atoms/icons/oval";
-import OvalSVG from "../../../../images/ovals/top-left-transparent-green2.inline.svg";
+import OvalSVG from "../../../../images/ovals/top-left-transparent-blue2.inline.svg";
 
 const Faq = styled.section`
   position: relative;
@@ -19,7 +19,7 @@ const Faq = styled.section`
 
 const FaqSection = ({ className, content }) => (
     <Faq className={className}>
-        <Oval className="oval" height="720" width="720" top="0" left="0">
+        <Oval className="oval" height="570" width="570" top="50" left="0">
             <OvalSVG />
         </Oval>
         <HeadingCenter headline={content.header} headlineWidth="640" />

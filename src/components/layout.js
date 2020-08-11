@@ -81,9 +81,14 @@ h1 {
 }
 
 h2 {
-  font-size: 40px;
-  line-height: 1.2;
+  font-size: 32px;
+  line-height: 40px;
   text-align: center;
+
+  @media (min-width: 769px) {
+    font-size: 40px;
+    line-height: 48px;
+  }
 }
 
 h3 {

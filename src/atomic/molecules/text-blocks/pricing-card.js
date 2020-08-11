@@ -24,6 +24,10 @@ const Wrapper = styled.div`
         color: ${color.orange1};
         margin-bottom: 24px;
     }
+
+    p {
+        text-align: center;
+    }
 `
 
 const PricingCard = ({ className, content }) => (

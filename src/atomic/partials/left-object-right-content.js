@@ -12,7 +12,7 @@ const Flex = styled.div`
   flex-direction: column;
   width: 100%;
 
-  @media(min-width: 769px) {
+  @media(min-width: 992px) {
       flex-direction: row;
   }
 `;
@@ -22,7 +22,7 @@ const Content = styled.div`
   flex-direction: column;
   justify-content: center;
 
-  @media (min-width: 769px) {
+  @media (min-width: 992px) {
     width: 52%;
     max-width: 600px;
   }
@@ -32,7 +32,7 @@ const Objectbox = styled.div`
   width: 100%;
   padding-right: 0;
 
-  @media (min-width: 769px) {
+  @media (min-width: 992px) {
     width: 48%;
     padding-right: 100px;
   }

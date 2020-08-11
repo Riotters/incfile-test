@@ -166,8 +166,8 @@ const Login = styled.a`
 
 const Hamburger = styled.div`
   display: block;
-  height: 25px;
-  width: 40px;
+  height: 20px;
+  width: 24px;
   position: relative;
 
   @media (min-width: 992px) {
@@ -176,8 +176,8 @@ const Hamburger = styled.div`
 
   span {
     display: block;
-    width: 40px;
-    height: 4px;
+    width: 100%;
+    height: 3px;
     border-radius: 2px;
     background-color: #1d1d1d;
     position: absolute;
@@ -191,12 +191,13 @@ const Hamburger = styled.div`
     }
 
     &:nth-child(2) {
-      top: calc(50% - 2px);
+      top: 50%;
+      transform: translateY(-50%);
       display: ${({ hamburger }) => (hamburger ? "none" : "block")};
     }
 
     &:nth-child(3) {
-      bottom: ${({ hamburger }) => (hamburger ? "calc(50% - 2px)" : "0")};
+      bottom: ${({ hamburger }) => (hamburger ? "calc(50% - 1px)" : "0")};
       transform: ${({ hamburger }) => (hamburger ? "rotate(135deg)" : "rotate(0)")};
     }
   }

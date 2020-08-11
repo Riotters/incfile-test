@@ -46,7 +46,7 @@ const Item = styled.li`
 
 const IconTextColoredList = ({ className, content, color, Icon, withOr, lightFirst }) => {
   const contentLen = content.length;
-  console.log(contentLen);
+
   return (
     <Wrapper className={className}>
             {content.map((item, id) => (

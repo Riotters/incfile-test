@@ -547,7 +547,7 @@ const ComponentsPage = () => (
                 <h3>Counting Box</h3>
                 <GreyWrapper>
                     <CountingTextBoxed number={1}>
-                        <Paragraph bottomSpace={0}>
+                        <Paragraph bottomMargin={0}>
                             An executive summary with the most important points from your business plan
                         </Paragraph>
                     </CountingTextBoxed>

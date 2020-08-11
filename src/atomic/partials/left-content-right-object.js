@@ -7,7 +7,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   width: 100%;
 
-  @media (min-width: 769px) {
+  @media (min-width: 992px) {
     flex-direction: row;
   }
 `;
@@ -17,7 +17,7 @@ const Content = styled.div`
   flex-direction: column;
   justify-content: center;
 
-  @media (min-width: 769px) {
+  @media (min-width: 992px) {
     width: 100%;
     max-width: ${(props) => (props.contentWidth ? parseInt(props.contentWidth) + 100 : "700")}px;
     padding-right: 100px;
@@ -28,9 +28,13 @@ const Objectbox = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  @media (min-width: 769px) {
+  
+  @media (min-width: 992px) {
     flex-grow: 1;
+  }
+
+  .card {
+    margin: 0 auto;
   }
 `;
 

@@ -18,16 +18,6 @@ const Content = styled.div`
   width: 100%;
   max-width: 670px;
   padding-top: ${props => (props.paddingTop ? props.paddingTop : "0")}px;
-
-  h2, h3 {
-    text-align: left;
-    max-width: 410px;
-    padding-bottom: 40px;
-  }
-
-  & > p {
-    padding-bottom: 40px;
-  }
 `;
 
 const Sticky = styled.div`

@@ -1,11 +1,19 @@
 import React from "react"
 import styled from "styled-components"
 import Circle from "./icons/rating"
-import {color} from "./styles/colors"
+import { color } from "./styles/colors"
+import { shadow } from "./styles/shadows"
 
 const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
+    padding: 32px;
+    border-radius: 5px;
+    box-shadow: ${shadow.white1};
+
+    @media (min-width: 992px) {
+        box-shadow: none;
+    }
 
     h4 {
         line-height: 24px;

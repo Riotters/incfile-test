@@ -23,6 +23,9 @@ const switch1 = (ovalColor) => {
     case "sun": {
       return "#ffb059";
     }
+    case "blackpink": {
+      return "#ffb8b8";
+    }
     default:
       return "";
   }
@@ -45,6 +48,9 @@ const switch2 = (ovalColor) => {
     case "sun": {
       return "#ffe3c5";
     }
+    case "blackpink": {
+      return "#ffdddd";
+    }
     default:
       return "";
   }
@@ -52,10 +58,17 @@ const switch2 = (ovalColor) => {
 
 const Wrapper = styled.div`
   display: flex;
+  flex-direction: column;
   align-items: center;
   position: relative;
-  height: 100vh;
-  max-height: 777px;
+  padding-top: 80px;
+  
+  @media (min-width: 992px) {
+    flex-direction: row;
+    height: 100vh;
+    max-height: 777px;
+    padding-top: 0;
+  }
 `;
 
 const Oval = styled.div`
@@ -113,11 +126,12 @@ const TextContainer = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding-top: 150px;
+  padding-top: 32px;
 
   @media (min-width: 992px) {
     width: 50%;
     align-items: flex-start;
+    padding-top: 150px;
   }
 
   h1 {
@@ -147,18 +161,16 @@ const TextContainer = styled.div`
 `;
 
 const ImageContainer = styled.div`
-  display: none;
-  //width: 50%;
-  //padding-left: 60px;
-  width: 55%;
+  display: flex;
   max-width: 950px;
-  position: absolute;
+  width: 100%;
   top: 50%;
   right: 55%;
-  transform: translate(100%, -50%);
-
+  
   @media (min-width: 992px) {
-    display: flex;
+    position: absolute;
+    width: 55%;
+    transform: translate(100%, -50%);
   }
 
   .gatsby-image-wrapper {

@@ -7,12 +7,18 @@ const Wrapper = styled.div`
   z-index: 1;
   width: 100%;
   max-width: 568px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
   margin: 0 auto;
 
   @media (min-width: 769px) {
+    max-width: 768px;
+  }
+
+  @media (min-width: 992px) {
     max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   @media (min-width: ${props => props.width}px) {

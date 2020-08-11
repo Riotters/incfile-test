@@ -10,7 +10,7 @@ const Wrapper = styled.div`
     width: 100%;
     max-width: 970px;
     position: relative;
-    margin-top: 96px;
+    margin-top: 60px;
 
     @media(min-width: 769px) {
       grid-template-columns: 1fr 1fr;
@@ -37,7 +37,7 @@ const BenefitsCards = ({ className, content }) => {
   return (
     <Wrapper className={className} content={content}>
         {content.map((card, i) => (
-            <Card content={card} color={colors[i]} image={icons[i]} noShadow/>
+            <Card content={card} color={colors[i]} image={icons[i]} />
         ))}
     </Wrapper>
   )

@@ -7,7 +7,7 @@ import { gradient } from "../../../atoms/styles/colors";
 import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";
 import Oval from "../../../atoms/icons/oval";
-import OvalSVG from "../../../../images/ovals/top-right-transparent-green.inline.svg";
+import OvalSVG from "../../../../images/ovals/top-right-transparent-green3.inline.svg";
 
 const Help = styled.section`
   position: relative;

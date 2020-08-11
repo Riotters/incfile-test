@@ -14,6 +14,8 @@ import Taxes3SVG from "../../../../images/icons/taxes3.inline.svg";
 import DocumentSVG from "../../../../images/icons/application-form.inline.svg";
 import DottedList from "../../../molecules/colored-blocks/dotted-list-inside";
 import IconTextColoredList from "../../../organisms/lists/icon-text-colored-list";
+import Oval from "../../../atoms/icons/oval";
+import OvalSVG from "../../../../images/ovals/top-left-transparent-green3.inline.svg";
 
 const TypesOfTaxes = styled.section`
   position: relative;
@@ -27,6 +29,9 @@ const TypesOfTaxes = styled.section`
 
 const TypesOfTaxesSection = ({ className, content }) => (
     <TypesOfTaxes className={className}>
+        <Oval className="oval" height="570" width="570" y="-40">
+            <OvalSVG />
+        </Oval>
         <ObjectContent object={<ContactMe content={content.card}/>}>
             <Heading size="3" bottomMargin="24">{content.header}</Heading>
             <Paragraph big bottomMargin="40">{content.text}</Paragraph>
@@ -41,9 +46,9 @@ const TypesOfTaxesSection = ({ className, content }) => (
             <Paragraph big bottomMargin="48">{content.llcTAxes.text2}</Paragraph>
             <IconTextColoredList color={color.yellow3} Icon={DocumentSVG} content={content.llcTAxes.list} />
             <Paragraph big>{content.llcTAxes.text3}</Paragraph>
-            <DottedList grid columns="3" content={content.llcTAxes.list2} color={color.blue3} bottomMargin="48" />
+            <DottedList grid columns="3" content={content.llcTAxes.list2} color={color.blue3} bottomMargin="48" curve />
             <Paragraph big>{content.llcTAxes.text4}</Paragraph>
-            <Paragraph big>{content.llcTAxes.text5}</Paragraph>
+            <Paragraph big bottomMargin="72">{content.llcTAxes.text5}</Paragraph>
             <Circle height="80" width="80" circleColor={color.green2} bottomMargin="32">
               <Taxes2SVG />
             </Circle>

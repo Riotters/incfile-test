@@ -8,6 +8,12 @@ import Button from "../../molecules/buttons/button";
 const Wrapper = styled.div`
     width: 100%;
     max-width: 400px;
+    padding-bottom: 80px;
+    margin: 0 auto;
+
+    @media (min-width: 992px) {
+        padding-bottom: 0;
+    }
 
     .box {
         padding: 64px 40px 48px;

@@ -4,11 +4,12 @@ import { color, gradient } from "../../../atoms/styles/colors";
 import HeadingCenter from "../../../partials/heading-center";
 import ContentCenter from "../../../partials/content-center";
 import TaxReturnTable from "../../../organisms/tables/tax-return-table";
+import Oval from "../../../atoms/icons/oval";
+import OvalSVG from "../../../../images/ovals/top-left-transparent-green2.inline.svg";
 
 const TaxReturn = styled.section`
   position: relative;
   padding-top: 75px;
-  padding-bottom: 64px;
 
   &:before {
     content: '';
@@ -23,6 +24,9 @@ const TaxReturn = styled.section`
 
 const TaxReturnSection = ({ className, content }) => (
     <TaxReturn className={className}>
+        <Oval className="oval" height="720" width="720" top="0" left="0">
+            <OvalSVG />
+        </Oval>
         <HeadingCenter headline={content.header} />
         <ContentCenter>
           <TaxReturnTable content={content.table} />

@@ -5,8 +5,8 @@ export const top = {
         `Required by Many States if You Want to Do Business Under a Different Name From Your Legal Business Name`,
     button: [
         {
-        text: 'File your fictitious business name today',
-        url: 'https://www.incfile.com/s-corp-election-form?action=new&type=24',
+        text: `File your fictitious business name today`,
+        url: `/forms/fictitious-business-name`,
         }
     ]
 }
@@ -34,7 +34,7 @@ export const about = {
         text:
             `Let Incfile file your ficticious business name today!`,
         url:
-            `#`,
+            `/forms/fictitious-business-name`,
     }
 }
 
@@ -119,7 +119,7 @@ export const behalf = {
         text:
             `Help me file my ficticious business name today`,
         url:
-            `#`,
+            `/forms/fictitious-business-name`,
     },
 }
 
@@ -132,9 +132,9 @@ export const protect = {
         `We also provide a complete, low-cost trademark search and registration service to make it easy to protect your assumed business or trade name.`,
     link: {
         text:
-        `Check out our  trademark search and registration service`,
+            `Check out our  trademark search and registration service`,
         url:
-        `#`,
+            `/forms/fictitious-business-name`,
     },
 }
 
@@ -218,7 +218,7 @@ export const help = {
         text:
             `Help me file my ficticious business name today`,
         url:
-            `#`,
+            `/forms/fictitious-business-name`,
     }
 }
 
@@ -247,7 +247,7 @@ export const faq = {
                         text:
                             `state-by-state guides for LLCs`,
                         url:
-                            `#`,
+                            `/llc-state-information`,
                     },
                     {
                         text:
@@ -257,7 +257,7 @@ export const faq = {
                         text:
                             `corporations`,
                         url:
-                            `#`,
+                            `/corporation-state-information`,
                     },
                 ],
             },
@@ -276,5 +276,5 @@ export const faq = {
                     If you just have a DBA without a business entity name, someone else could form an LLC or corporation with your DBA name and effectively “take” it from you.`,
             },
         ],
-}   ,
+    },
 }

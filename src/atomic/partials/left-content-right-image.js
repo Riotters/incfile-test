@@ -52,11 +52,12 @@ const Imagebox = styled.div`
   }
 
   .gatsby-image-wrapper {
-    width: 100%;
+    width: 80%;
     max-width: 350px;
     margin: 0 auto;
 
     @media (min-width: 769px) {
+      width: 100%;
       max-width: 100%;
     }
   }

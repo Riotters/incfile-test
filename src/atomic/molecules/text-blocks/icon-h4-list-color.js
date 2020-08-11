@@ -37,34 +37,55 @@ const Wrapper = styled.div`
     margin-bottom: ${props => props.bottomMargin ? `${props.bottomMargin}px` : ""};
 
     .box {
-        padding: 32px 40px 24px 88px;
+        padding: 48px 48px 48px 40px;
         border-radius: ${props => props.rounded ? "5px 50px 50px 5px" : ""};
 
-        svg {
-            position: absolute;
-            top: 24px;
-            left: 32px;
-        }
-    }
+        ul {
+            list-style: none;
 
-    p {
-        color: ${color.grey1} !important;
+            li {
+                font-family: Avenir, sans-serif;
+                font-size: 16px;
+                line-height: 24px;
+                color: ${color.grey1};
+                padding-left: 26px;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    height: 4px;
+                    width: 4px;
+                    background-color: ${({ color }) => dotColor(color)};
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 9px;
+                    left: 6px;
+                }
+
+                &:not(:last-child) {
+                    margin-bottom: 16px;
+                }
+            }
+        }
     }
 `
 
-const IconTextColorBox = ({ className, Icon, color, content, bottomMargin, rounded, curve }) => {
+const IconTextColorBox = ({ className, color, content, bottomMargin, rounded, curve }) => {
 
   return (
-    <Wrapper className={className} rounded={rounded} bottomMargin={bottomMargin}>
+    <Wrapper className={className} rounded={rounded} bottomMargin={bottomMargin} color={color}>
         {curve && 
             <Curve top="-15" right="-15" color={dotColor(color)}>
                 <CurveSVG />
             </Curve>
         }
         <Colorbox className="box" color={color}>
-            <Icon />
-            <Heading size="4" bottomMargin="8">{content.header}</Heading>
-            <Paragraph bottomMargin="0">{content.text}</Paragraph>
+            <Heading size="4" bottomMargin="24">{content.header}</Heading>
+            <ul>
+                {content.list.map(item => (
+                    <li>{item}</li>
+                ))}
+            </ul>
         </Colorbox>
     </Wrapper>
   )
