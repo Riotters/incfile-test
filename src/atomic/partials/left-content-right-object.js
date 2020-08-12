@@ -22,6 +22,10 @@ const Content = styled.div`
     max-width: ${(props) => (props.contentWidth ? parseInt(props.contentWidth) + 100 : "700")}px;
     padding-right: 100px;
   }
+
+  h2 {
+    text-align: left;
+  }
 `;
 
 const Objectbox = styled.div`
@@ -34,15 +38,19 @@ const Objectbox = styled.div`
   }
 
   .card {
-    margin: 0 auto;
+    margin: 80px auto 0;
+
+    @media (min-width: 992px) {
+      margin: 0 auto;
+    }
   }
 `;
 
-const LeftContentRightObject = ({ className, object, children, contentWidth, headlineWidth, textWidth }) => {
+const LeftContentRightObject = ({ className, object, children, contentWidth }) => {
   return (
     <Container>
       <Wrapper className={className}>
-        <Content contentWidth={contentWidth} headlineWidth={headlineWidth} textWidth={textWidth}>
+        <Content contentWidth={contentWidth}>
           {children}
         </Content>
         <Objectbox>{object}</Objectbox>

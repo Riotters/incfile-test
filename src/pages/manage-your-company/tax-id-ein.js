@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
+//Sections
 import Top from "../../atomic/partials/top";
 import About from "../../atomic/sections/manage-your-company/tax-id-ein/about";
 import Help from "../../atomic/sections/manage-your-company/tax-id-ein/help";
@@ -9,6 +10,7 @@ import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
 import Button from "../../atomic/molecules/buttons/button";
 import Articles from "../../components/partials/sections/articles";
 import Benefits from "../../atomic/sections/benefits";
+//Texts
 import { top, about, help, faq } from "../../static/manage-your-company/ein-tax-id";
 
 const TaxIdEin = () => (

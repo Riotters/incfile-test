@@ -4,7 +4,6 @@ import SEO from "../../components/seo";
 import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
 import Button from "../../atomic/molecules/buttons/button";
 //sections
-//import Top from "../../components/partials/sections/top";
 import Top from "../../atomic/partials/top";
 import About from "../../atomic/sections/manage-your-company/fictitious-business/about";
 import BusinessesChoose from "../../atomic/sections/manage-your-company/fictitious-business/businesses-choose";

@@ -5,11 +5,14 @@ import Whitebox from "../../atoms/boxes/white-box-li";
 import Circle from "../../atoms/icons/circle";
 import Curve from "../../atoms/icons/curve";
 import CurveSVG from "../../../images/curves/bottom-left-top-right.inline.svg";
+import { Heading } from "../../atoms/typography/heading";
+import { Paragraph } from "../../atoms/typography/paragraph";
 
 const Wrapper = styled.ul`
     width: 100%;
     list-style: none;
     position: relative;
+    margin-bottom: ${props => props.bottomMargin ? `${props.bottomMargin}px` : ""};
 
     li {
         display: flex;
@@ -34,9 +37,14 @@ const Wrapper = styled.ul`
     }
 `
 
-const NumericBoxedList = ({ className, content, curve }) => {
+const TextWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+`;
+
+const NumericBoxedList = ({ className, content, curve, bottomMargin }) => {
   return (
-    <Wrapper className={className}>
+    <Wrapper className={className} bottomMargin={bottomMargin}>
         {curve && (
             <Curve top="-25" left="-29" color={color.blue1}>
                 <CurveSVG />
@@ -47,7 +55,15 @@ const NumericBoxedList = ({ className, content, curve }) => {
             <Circle>
                 {id + 1}
             </Circle>
-            <p>{item}</p>
+            {item.header && (
+                <TextWrapper>
+                    <Heading size="5" bottomMargin="36">{item.header}</Heading>
+                    <Paragraph bottomMargin="0">{item.text}</Paragraph>
+                </TextWrapper>
+            )}
+            {!item.header && (
+                <Paragraph bottomMargin="0">{item}</Paragraph>
+            )}
         </Whitebox>
         ))}
     </Wrapper>

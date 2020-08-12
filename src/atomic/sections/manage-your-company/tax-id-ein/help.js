@@ -33,10 +33,6 @@ const Help = styled.section`
   p {
     color: ${color.grey2};
   }
-
-  .card {
-      margin-top: 80px;
-  }
 `;
 
 const TextWrapper = styled.div`

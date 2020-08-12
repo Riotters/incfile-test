@@ -1,37 +1,32 @@
 import React from "react";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-import Buttonsbox from "../atomic/atoms/boxes/top-buttons-box";
-import Button from "../components/button";
-import Colorbox from "../components/color-box";
-import TextCenterLayout from "../components/partials/blocks/heading-center";
+import Layout from "../../components/layout";
+import SEO from "../../components/seo";
+import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
+import Button from "../../components/button";
+import Colorbox from "../../components/color-box";
+import TextCenterLayout from "../../components/partials/blocks/heading-center";
 import styled from "styled-components";
-import Top from "../components/partials/sections/top";
-import ImageContent from "../components/partials/blocks/left-image-right-content";
-import Articles from "../components/partials/sections/articles";
-import { color, gradient } from "../components/styles/colors";
-import { shadow } from "../components/styles/shadows";
-import Container from "../components/container";
-import ShieldSVG from "../images/icons/shield.inline.svg";
-import Help from "../components/partials/blocks/left-content-right-object";
-import Accordion from "../components/accordion";
-import Benefits from "../components/partials/sections/benefits";
-import Card from "../components/certificate-card";
-import TopImageBox from "../components/top-image-box";
-import ArrowCircleOrangeSVG from "../images/icons/arrow-circle-orange.inline.svg";
-import Image from "../components/image_nobase64";
-import CheckBlueSVG from "../images/circle-status-check-blue.inline.svg";
+import Top from "../../atomic/partials/top";
+import ImageContent from "../../atomic/partials/left-image-right-content";
+import Articles from "../../components/partials/sections/articles";
+import { color, gradient } from "../../components/styles/colors";
+import { shadow } from "../../components/styles/shadows";
+import Container from "../../components/container";
+import ShieldSVG from "../../images/icons/shield.inline.svg";
+import Help from "../../components/partials/blocks/left-content-right-object";
+import Accordion from "../../components/accordion";
+import Benefits from "../../components/partials/sections/benefits";
+import Card from "../../components/certificate-card";
+import ArrowCircleOrangeSVG from "../../images/icons/arrow-circle-orange.inline.svg";
+import Image from "../../components/image_nobase64";
+import CheckBlueSVG from "../../images/circle-status-check-blue.inline.svg";
+import { Heading } from "../../atomic/atoms/typography/heading";
+import { Paragraph } from "../../atomic/atoms/typography/paragraph";
 
 const BusinessOwnerResponsibilities = styled.section`
   position: relative;
   padding-top: 75px;
   padding-bottom: 64px;
-
-  h3,
-  p {
-    max-width: 100%;
-    padding-bottom: 24px;
-  }
 
   h3 {
     &.pt32 {
@@ -222,11 +217,11 @@ const TrademarkNameSearch = () => (
     </Top>
     <BusinessOwnerResponsibilities>
       <ImageContent image="shieldo" paddingTop="60" imageAlt="a shield icon with a TM sign ">
-        <h3>Protect your business name with a trademark</h3>
-        <p>
+        <Heading size="3" bottomMargin="24">Protect your business name with a trademark</Heading>
+        <Paragraph big bottomMargin="24">
           Protecting your trademark can really pay dividends. Not only is it a valuable property asset, but it’s also your brand, your reputation. The reputation you have established is associated with these different brand elements - your name, logo, and tagline - and the reason why people buy from
           you.
-        </p>
+        </Paragraph>
         <Colorbox className="purplebox" theme="icon" Icon={ShieldSVG} color={color.orange3} curve curveColor={color.yellow1}>
           <h4>Enterpreneur 360 (2019)</h4>
           <p>It’s important to take steps to protect these company assets. Our partnered attorneys will do the research to make sure the mark isn't already taken, ensure the filing gets accepted by the government office, and provide sound legal advice throughout the entire process.</p>

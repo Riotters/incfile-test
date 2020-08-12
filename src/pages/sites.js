@@ -44,18 +44,18 @@ const ComponentsPage = () => (
         <Wrapper>
             <h1>List of all sites</h1>
             <Link to="/">Nonprofit</Link>
-            <Link to="/manage-your-company">Manage your company</Link>
-            <Link to="/manage-your-company/annual-report">Annual report</Link>
-            <Link to="/manage-your-company/business-license">Business license</Link>
-            <Link to="/manage-your-company/certificate-of-good-standing">Certificate of good standing</Link>
-            <Link to="/manage-your-company-change-of-registered-agent">Change of registered agent</Link>
-            <Link to="/manage-your-company-trademark-name-search">Trademark name search</Link>
+            <Link to="/manage-your-company">Manage your company (no details)</Link>
+            <Link to="/manage-your-company/annual-report">Annual report (no details)</Link>
+            <Link to="/manage-your-company/business-license">Business license (no details)</Link>
+            <Link to="/manage-your-company/certificate-of-good-standing">Certificate of good standing (no details)</Link>
+            <Link to="/manage-your-company-change-of-registered-agent">Change of registered agent (no details)</Link>
+            <Link to="/manage-your-company-trademark-name-search">Trademark name search (no details)</Link>
             <Link to="/manage-your-company/tax-id-ein">EIN tax identification number</Link>
-            <Link to="/manage-your-company-dissolution">Filing Articles of  Dissolution</Link>
-            <Link to="/manage-your-company-foreign-qualification">Foreign Qualification</Link>
-            <Link to="/manage-your-company-registered-agent">Registered Agent</Link>
-            <Link to="/manage-your-company-llc-s-corp-election">S Corp Tax Election</Link>
-            <Link to="/manage-your-company/corporate-llc-kit">Corporate LLC Kit</Link>
+            <Link to="/manage-your-company-dissolution">Filing Articles of  Dissolution (no details)</Link>
+            <Link to="/manage-your-company-foreign-qualification">Foreign Qualification (no details)</Link>
+            <Link to="/manage-your-company-registered-agent">Registered Agent (no details)</Link>
+            <Link to="/manage-your-company-llc-s-corp-election">S Corp Tax Election (no details)</Link>
+            <Link to="/manage-your-company/corporate-llc-kit">Corporate LLC Kit (no details)</Link>
             <Link to="/manage-your-company/filling-business-taxes">Filling Business Taxes</Link>
             <Link to="/manage-your-company/fictitious-business">Fictitious Business</Link>
             <Link to="/blog">Blog (no API)</Link>

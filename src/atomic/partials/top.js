@@ -26,6 +26,9 @@ const switch1 = (ovalColor) => {
     case "blackpink": {
       return "#ffb8b8";
     }
+    case "darkblue": {
+      return "#7891fc";
+    }
     default:
       return "";
   }
@@ -50,6 +53,9 @@ const switch2 = (ovalColor) => {
     }
     case "blackpink": {
       return "#ffdddd";
+    }
+    case "darkblue": {
+      return "#ced7ff";
     }
     default:
       return "";
