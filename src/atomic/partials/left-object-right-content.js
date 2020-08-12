@@ -26,6 +26,10 @@ const Content = styled.div`
     width: 52%;
     max-width: 600px;
   }
+
+  h2 {
+    text-align: left;
+  }
 `;
 
 const Objectbox = styled.div`

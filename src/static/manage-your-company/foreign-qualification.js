@@ -12,100 +12,164 @@ export const top = {
   }
   
   export const about = {
-    text:
-      `The SS4 is the IRS form required to obtain an EIN (Employer Identification Number, frequently called a Tax ID number). The EIN/Tax ID number can be thought of as a Social Security Number for your business. 
-      It is usually required to open a bank account in the name of the business and to properly pay and account for any wage/payroll employees of your company. 
-      IncFile will obtain your federal EIN electronically and have it back to you via email within one business day.`,
-    box: {
-      header:
-        `What is an Employer Identification Number (EIN)?`,
-      text:
-        `Also known as a “Tax ID number,” the EIN is a business federal tax ID that works like a Social Security Number for your business. 
-        Your EIN helps you file tax returns for your business, is typically required to open a business bank account under the name of your business, helps you properly pay and account for wages and payroll for your company’s employees, 
-        and otherwise helps establish credit for your business and maintain your business’s official standing as a legal business entity.`,
-    },
     header: 
-      `Do You Need a Federal EIN for Your Business Entity?`,
+        `Your business is expanding beyond your local region.`,
+    text: 
+        `Or perhaps you are an Internet business with fulfillment centers in multiple locations. This may mean you are doing business in a “foreign” state. 
+        What do you do? We have the answers to all your questions regarding what constitutes doing business in another state and how to get the proper paperwork done to be legitimate.`,
+    box: {
+        header:
+            `Enterpreneur 360 (2019)`,
+        text:
+            `Many confuse foreign qualification with the idea of operating outside the United States. This really has to do with how you perform within the borders of the United States. 
+            “Foreign,” in this case, refers to the fact that each state has operating rules that are different from one another; and, in turn, must insist on proper registration to do business in that locale.`,
+        },
     text2: 
-      `In general, unless your business is a sole proprietorship with no employees and no separate legal entity for your business, you need to get an EIN. Sometimes if you own an LLC and it is a single-member LLC with simple accounting, 
-      you can get by just using your personal Social Security Number for tax purposes and for receiving payments from clients. 
-      But even the simplest businesses can generally benefit from using an EIN – the EIN serves as a tax ID for your LLC or other corporate entity.`,
-    box2: {
-      header:
-        `The following business entities should get an EIN:`,
-      list: [
-        `Partnerships: an EIN is required for all general partnerships and limited partnerships.`,
-        `Multiple-member LLCs: This type of business entity needs an EIN regardless of whether you have employees.`,
-        `Single-member LLCs: If you plan to hire employees within the next 12 months, you will need to get an EIN. And even if your single-member LLC has no employees, 
-        and even if you can get by with using your own individual Social Security Number for tax purposes, it’s still a good idea to get an EIN because many banks and lenders will prefer to use an EIN to do business with you.`,
-        `LLC taxed as a Corporation: If your LLC chooses to be taxed as a Corporation (for example, by electing to be treated as an S-Corporation for tax purposes), you will need to get an EIN.`,
-        `Sole proprietorship with employees: Even if you do not have an LLC or any other legal entity for your business and you run a simple sole proprietorship, you still need to get an EIN if you have employees or plan to hire employees in the next 12 months.`,
-      ],
-    },
+        `Therefore, it is important that when your company is located in or operates within a state other than the place of original incorporation, 
+        you are given the proper rights to conduct business there. This actually means you need to obtain a Certificate of Authority.`,
     header2: 
-      `Where & When You'll Use an EIN`,
-    text3: 
-      `Your EIN is necessary for several situations in running your business. You will need to use your EIN for certain tax forms, such as filing your tax returns for your business, and filling out W9 forms for clients (if you run a service business), 
-      and other forms related to managing payroll for your employees. Your EIN is also necessary to set up a business bank account and apply for business loans. 
-      The same types of reasons for needing a Social Security Number in your personal life are also the reasons to use an EIN in managing your business.`,
-    header3: 
-      `How Do You Get an EIN? Apply for an EIN Online`,
-    text4: 
-      `Business owners can get an EIN by filing IRS Form SS-4. IncFile offers a convenient service to help you apply for an EIN online to obtain your EIN number quickly and efficiently. 
-      If you're looking for a way to get an EIN, whether in Texas, Florida, Michigan or anywhere in the United States, IncFile can provide one for you in one day. Apply for an EIN online with IncFile, 
-      and we'll obtain your federal tax ID electronically and have your new EIN back to you via email within one business day.`,
+        `We can take care of the details.`,
     link: {
-      text: 'Apply for an EIN online to obtain your EIN number quickly',
-      url: '#',
-    }
+        text: 'Let Incfile do the dissolution paperwork for you',
+        url: '#',
+    },
   }
 
-  export const help = {
+  export const basics = {
     header:
-      `Help Obtain a EIN / Tax ID Number`,
-    header2:
-      `Save your time. We'll handle the paperwork.`,
-    text:
-      `If you would like to use our services to facilitate the filing of your Tax ID / EIN please place the order and a representative from IncFile will contact you to obtain specific information required to complete and file the Tax ID / EIN in your state of formation.`,
-  }
-
-  export const faq = {
-    header:
-        `Common questions about filing a Certificate of Good Standing`,
+        `Foreign Qualification Basics`,
     faq: {
         items: [
             {
                 question:
-                    `Will I need an EIN in order to obtain a business account with a bank??`,
+                    `What is a ”Foreign Qualification”`,
                 answer:
-                    `Yes, under most circumstances business entities other than DBA's must present an EIN along with the filed Articles of Organization or Incorporation in order for an account to be opened.`,
+                    `A Foreign Qualification refers to the process by which you register your company to do business in another state. An LLC or corporation is considered "domestic" in the state in which is was formed, and “foreign” in any other state in which it wants to do business. 
+                    When you file a Foreign Qualification, you get a Certificate of Authority, which gives you legitimate rights to do business in the state.
+                    A Foreign Qualification must be completed in each state in which a corporation or LLC intends to conduct business.`,
             },
             {
                 question:
-                    `What circumstances require me to change my EIN?`,
+                    `How Businesses Are Classified As Foreign`,
                 answer:
-                  `If you already have an EIN, and the organization or ownership of your business changes, you may need to apply for a new number. Some of the circumstances under which a new number is required are as follows:`,
-            },
-            {
-                question:
-                    `When will I receive my Federal Employer Identification Number?`,
-                answer:
-                    `If it is a stand alone order for an existing entity we can obtain and email the EIN within 1 business day.`,
+                    `What does it mean to “do business” in a state? Let’s discuss the activities that determine you are conducting business in another state.
+                    Essentially, if your actions go beyond minor transactions in a state, such as making management decisions, you will likely be seen as a “foreign” entity that needs to register. 
+                    However, there are some simple rules that help weed out the minor from the major “doing business” stature.`,
                 list: [
-                  "An existing business is purchased or inherited by an individual who will operate it as a sole proprietorship.",
-                  "A sole proprietorship changes to an LLC, corporation, or partnership.",
-                  "A partnership changes to an LLC, corporation, or sole proprietorship.",
-                  "A corporation changes to an LLC, partnership, or sole proprietorship.",
-                  "An LLC changes to a corporation, partnership, or sole proprietorship.",
-                  "An individual owner dies, and the estate takes over the business.",
+                    `First, the company would have a physical presence in the state. This refers to the existence of an office, store or warehouse that services or solicits residents of that state in any form. 
+                    It could also refer to having employees or even bank accounts in a state.`,
+                    `Second, if your company has to pay state taxes in a particular locale, they are going to be tagged as “doing business” in a state. 
+                    Taxes are assessed when a company sells directly from a state or upholds a significant number of contracts in a state.`,
                 ],
             },
             {
                 question:
-                    `What is the SS4/EIN/Tax ID Number?`,
+                    `What is a cerificate of Authority?`,
                 answer:
-                    `The SS4 is the IRS form required to obtain an EIN (Employer Identification Number, frequently called a Tax ID number). The EIN/Tax ID number can be thought of as a Social Security Number for your business. 
-                    It is usually required to open a bank account in the name of the business and to properly pay and account for any wage/payroll employees of your company.`,
+                    [
+                        {
+                            text: `A Certificate of Authority is an official document that gives you permission to operate your business in a state other than the one in which your corporation was formed. 
+                            If a company neglects to file a Foreign Qualification and receive a Certificate of Authority, then it does not have legal standing or authority to transact business within that state.`,
+                        },
+                        {
+                            text: `Every state has different rules`,
+                            url: `https://www.incfile.com/llc-state-information/`,
+                        },
+                        {
+                            text: `regarding what constitutes transacting business. Not following the rules could affect your business's`,
+                        },
+                        {
+                            text: `Certificate of Good Standing`,
+                            url: `https://www.incfile.com/manage-your-company/certificate-of-good-standing/`,
+                        },
+                        {
+                            text: `which you need to get a business loan, renew your business license or file your business taxes. 
+                            It can be cumbersome and time consuming to file a Certificate of Authority in every state in which you want to do business, which is why Incfile has simplified the process. Simply complete our online`,
+                        },
+                        {
+                            text: `Foreign Qualification`,
+                            url: `https://www.incfile.com/cert-good-standing.php`,
+                        },
+                        {
+                            text: `form, and we’ll do the paperwork for you.`,
+                        },
+                    ],
+            },
+            {
+                question:
+                    `How The Foreign Qualification Process Works`,
+                answer:
+                    `Every process has paperwork and proper steps to follow. To give you an understanding of what we’ll be doing on your behalf, let’s review the process below:`,
+                list: [
+                    `Name Search: Your corporation’s name will be compared to the database in each state to ensure no other company is using it. Hopefully, there will be no contradiction, but if there is then you’ll be asked to operate under a fictitious or assumed name. If you'd like to conduct your own name search for your LLC, we've created How to Search & Choose Your Business Entity Name in all 50 States.`,
+                    `Registered Agent: You will need to select a registered agent in that state.`,
+                    `Certificate of Authority: Finally, you register for the right to do business in the state. This is similar to the process of incorporation and requires some paperwork and fees be submitted.`,
+                ],
+            },
+        ],
+    },
+  }
+
+  export const help = {
+    header:
+      `Help file my Foreign Qualification`,
+    header2:
+      `Save your time. We'll handle the paperwork.`,
+    text:
+      `Typical criteria include but are not limited to:`,
+    list: [
+        `Does the company has a physical presence in the state?`,
+        `Does the entity have employees working within the state?`,
+        `Does the company conduct banking within state?`,
+    ],
+    text2:
+      `Requirements to obtain or a Foreign Qualification / Certificate of Authority:`,
+    list2: [
+        `Must file appropriate state document and pay the corresponding state fee.`,
+        `Must obtain a Certificate of Good Standing from state of origin to verify status of business formation.`,
+    ],
+  }
+
+  export const faq = {
+    header:
+        `Common questions about filing your Foreign Qualification`,
+    faq: {
+        items: [
+            {
+                question:
+                    `When should I file for my Cerificate of Authority?`,
+                answer:
+                    `You must submit a registration in a state at least 20 days before conducting any business. This allows time for paperwork to be completed and the Certificate to be issued by state authorities.`,
+            },
+            {
+                question:
+                    `What do I need to provide in order to file?`,
+                answer:
+                    `Many states require a copy of your formation documents and a Certificate of Good Standing from your home (domestic) state where you incorporated. You’ll also be asked to pay fees required by each state you are seeking the right to conduct business. Keep in mind that once you “do business” in a state, you become responsible for meeting their requirements, such as the need to file annual information reports with the state.`,
+            },
+            {
+                question:
+                    `How much does it cost to file a Foreign Qualification?`,
+                answer:
+                    `The cost depends on the fee to obtain a Certificate of Good Standing and the filing fee that the inbound state assesses. Our service fee to prepare and file a Foreign Qualification is $149. To review the fee in your state click on the “order now” button and select the state and entity type.`,
+            },
+            {
+                question:
+                    `How long does it take to file a Foreign Qualification?`,
+                answer:
+                    `The filing time is dependent on the governing state agency and varies by state. Multiple steps are involved in filing, so your timely response to needed documentation is helpful. Most of the states will expedite the filing for an additional fee.`,
+            },
+            {
+                question:
+                    `How do I obtain a Certificate of Good Standing?`,
+                answer:
+                    `This document is obtained by contacting the Secretary of State. IncFile will complete this request when you file with our service. It is provided to verify that you are in compliance with tax and government requirements in that state.`,
+            },
+            {
+                question:
+                    `What will I receive when the Foreign Qualification is filed?`,
+                answer:
+                    `The governing state agency will typically return a copy of the filed articles which are then mailed to you immediately.`,
             },
         ],
     },

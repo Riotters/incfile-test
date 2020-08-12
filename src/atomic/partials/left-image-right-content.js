@@ -17,7 +17,7 @@ const Content = styled.div`
   flex-direction: column;
   width: 100%;
   max-width: 670px;
-  padding-top: ${props => (props.paddingTop ? props.paddingTop : "0")}px;
+  padding-top: ${props => (props.paddingTop ? props.paddingTop : "60")}px;
 `;
 
 const Sticky = styled.div`

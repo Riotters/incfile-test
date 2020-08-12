@@ -25,11 +25,14 @@ const Curve = styled.div`
   width: 25px;
   position: absolute;
   top: -16px;
-  left: -13px;
+  left: ${props => props.curveRight ? "" : "-13px"};
+  right: ${props => props.curveRight ? "-13px" : ""};
+  transform: ${props => props.curveRight ? "rotate(90deg)" : ""};
 
   @media (min-width: 769px) {
     top: 0;
-    left: 0;
+    left: ${props => props.curveRight ? "" : "0"};
+    right: ${props => props.curveRight ? "0" : ""};
   }
 `;
 
@@ -186,13 +189,13 @@ const Panel = ({ children }) => {
   );
 };
 
-const Accordion = ({ content, curve }) => {
+const Accordion = ({ content, curve, curveRight }) => {
   return (
     <VisibilitySensor partialVisibility once>
       {({ isVisible }) => (
         <Wrapper className={isVisible ? "slideUp enter" : "slideUp"}>
           {curve && (
-            <Curve>
+            <Curve curveRight={curveRight}>
               <CurveSVG />
             </Curve>
           )}

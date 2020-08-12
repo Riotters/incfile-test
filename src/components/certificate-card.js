@@ -59,7 +59,7 @@ const Wrapper = styled.div`
     }
 `
 
-const CertificateCard = ({ className, headline, content, image, dropdownOnePlaceholder, dropdownOneOptions, dropdownTwoPlaceholder, dropdownTwoOptions }) => {
+const CertificateCard = ({ className, headline, content, image, dropdownOnePlaceholder, dropdownOneOptions, dropdownTwoPlaceholder, dropdownTwoOptions, dropdownThreePlaceholder, dropdownThreeOptions }) => {
   return (
     <Wrapper className={className}>
         <h3>{headline}</h3>
@@ -76,6 +76,12 @@ const CertificateCard = ({ className, headline, content, image, dropdownOnePlace
             <Label className="label">
                 State
             <Dropdown className="dropdown" placeholder={dropdownTwoPlaceholder} options={dropdownTwoOptions}/>
+            </Label>
+        )}
+        {dropdownThreePlaceholder && (
+            <Label className="label">
+                State of Formation
+            <Dropdown className="dropdown" placeholder={dropdownThreePlaceholder} options={dropdownThreeOptions}/>
             </Label>
         )}
         {content && (
