@@ -29,6 +29,14 @@ const Top = styled.div`
     height: 80px;
   }
 `
+
+const Bot = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 36px 0;
+`
+
 const Logo = styled.div`
   height: 24px;
   margin-bottom: 25px;
@@ -421,7 +429,7 @@ const Footer = () => (
           </ul>
         </div>
       </Navigation>
-      <Wrapper>
+      <Bot>
         <Copyright>
           © {new Date().getFullYear()}.{` `}Incfile.com{` `}All Rights Reserved.
         </Copyright>
@@ -452,7 +460,7 @@ const Footer = () => (
             </a>
           </li>
         </Social>
-      </Wrapper>
+      </Bot>
     </Container>
   </Wrapper>
 )
