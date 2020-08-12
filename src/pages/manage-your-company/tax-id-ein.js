@@ -14,7 +14,7 @@ import { top, about, help, faq } from "../../static/manage-your-company/ein-tax-
 const TaxIdEin = () => (
   <Layout>
     <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
-    <Top imageName="mrs-bulb-tax-number" imageAlt="Mrs Bulb with numbers" ovalColor="blackpink">
+    <Top imageName="mrs-bulb-tax-number" imageAlt="Mrs Bulb with tax numbers" ovalColor="blackpink">
       <h1>{top.header}</h1>
       <p>{top.text}</p>
       <Buttonsbox>
