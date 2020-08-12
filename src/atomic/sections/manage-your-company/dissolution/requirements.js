@@ -39,8 +39,6 @@ const dropdownOneOptions = [
   
 const dropdownTwoOptions = states.state.map(state => (state.name));
 
-const CertificateCard = <Card className="card" headline="Dissolution" price="149" dropdownOnePlaceholder="Select Entity Type" dropdownOneOptions={dropdownOneOptions} dropdownTwoPlaceholder="Select State" dropdownTwoOptions={dropdownTwoOptions} />;
-
 const RequirementsSection = ({ className, content }) => (
     <Requirements className={className}>
         <Oval className="oval" height="136" width="136" top="0" left="0">
@@ -49,17 +47,16 @@ const RequirementsSection = ({ className, content }) => (
         <Oval className="oval" height="570" width="570" y="20" bottom="0" right="0">
             <Oval2SVG />
         </Oval>
-        <ContentObject className="help" headlineWidth="450" object={CertificateCard}>
+        <ContentObject className="help" headlineWidth="450" 
+            object={<Card className="card" content={content.card} headline="Dissolution" price="149" dropdownOnePlaceholder="Select Entity Type" dropdownOneOptions={dropdownOneOptions} dropdownTwoPlaceholder="Select State" dropdownTwoOptions={dropdownTwoOptions} />}
+        >
             <TextWrapper>
                 <Curve top="-15" right="160" color={color.blue1}>
                     <CurveSVG />
                 </Curve>
                 <Heading size="2" bottomMargin="56" maxWidth="460">{content.header}</Heading>
-                <Heading size="4">Requirements to file Articles of Dissolution:</Heading>
-                <Paragraph big bottomMargin="0">
-                    The company must be in good standing with the state of incorporation and cannot be in arrears of franchise taxes or annual reporting requirements. 
-                    In the event that the entity is not in good standing reinstatement would be required in order to proceed with the dissolution.
-                </Paragraph>
+                <Heading size="4">{content.header2}</Heading>
+                <Paragraph big bottomMargin="0">{content.text}</Paragraph>
             </TextWrapper>
         </ContentObject>
     </Requirements>

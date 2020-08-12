@@ -36,11 +36,22 @@ const Objectbox = styled.div`
     width: 48%;
     padding-right: 100px;
   }
+
+  .card {
+    margin: 0 auto 80px;
+
+    @media (min-width: 992px) {
+      margin: 0 auto;
+    }
+  }
 `;
 
 const Sticky = styled.div`
-  position: sticky !important;
   top: 100px;
+
+  @media (min-width: 992px) {
+    position: sticky !important;
+  }
 `;
 
 const LeftContentRightObject = ({ children, className, object, headlineWidth, textWidth }) => {

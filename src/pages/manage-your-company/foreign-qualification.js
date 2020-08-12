@@ -1,30 +1,27 @@
 import React from "react";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-import Buttonsbox from "../atomic/atoms/boxes/top-buttons-box";
-import Button from "../components/button";
-import Colorbox from "../components/color-box";
-import TextCenterLayout from "../components/partials/blocks/heading-center";
+import Layout from "../../components/layout";
+import SEO from "../../components/seo";
+import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
+import Button from "../../atomic/molecules/buttons/button";
+import Colorbox from "../../components/color-box";
+import TextCenterLayout from "../../components/partials/blocks/heading-center";
 import styled from "styled-components";
-import Top from "../components/partials/sections/top";
-import ImageContent from "../components/partials/blocks/left-image-right-content";
-import Articles from "../components/partials/sections/articles";
-import { color, gradient } from "../components/styles/colors";
-import { shadow } from "../components/styles/shadows";
-import Container from "../components/container";
-import GlobeSVG from "../images/icons/globe.inline.svg";
-import Help from "../components/partials/blocks/left-object-right-content";
-import Accordion from "../components/accordion";
-import Benefits from "../components/partials/sections/benefits";
-import Card from "../components/certificate-card";
-import TopImageBox from "../components/top-image-box";
-import ArrowCircleOrangeSVG from "../images/icons/arrow-circle-orange.inline.svg";
-import Image from "../components/image_nobase64";
-import CheckBlueSVG from "../images/circle-status-check-blue.inline.svg";
-import { states } from "../components/states"
-import CircleIcon from "../components/icons/circle";
-
-import ArrowLink from "../components/arrow-link";
+import Top from "../../atomic/partials/top";
+import ContentCenter from "../../atomic/partials/content-center";
+import ImageContent from "../../atomic/partials/left-image-right-content";
+import Articles from "../../components/partials/sections/articles";
+import { color, gradient } from "../../components/styles/colors";
+import { shadow } from "../../components/styles/shadows";
+import Container from "../../components/container";
+import GlobeSVG from "../../images/icons/globe.inline.svg";
+import Help from "../../atomic/partials/left-object-right-content";
+import Accordion from "../../components/accordion";
+import Benefits from "../../components/partials/sections/benefits";
+import Card from "../../components/certificate-card";
+import CheckBlueSVG from "../../images/circle-status-check-blue.inline.svg";
+import { states } from "../../components/states"
+import { top } from "../../static/manage-your-company/foreign-qualification"
+import ArrowLink from "../../components/arrow-link";
 
 const BusinessOwnerResponsibilities = styled.section`
   position: relative;
@@ -131,79 +128,6 @@ const RequirementsByState = styled.section`
   }
 `;
 
-const Boxes = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  padding-top: 72px;
-
-  @media (min-width: 769px) {
-    flex-direction: row;
-  }
-
-  .box {
-    width: 100%;
-    box-shadow: ${shadow.white1};
-    padding: 40px 48px;
-
-    .icon {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 120px;
-      width: 120px;
-      margin: 0 auto 60px;
-
-      .gatsby-image-wrapper {
-        height: 100%;
-        width: 100%;
-
-        img {
-          object-fit: contain !important;
-        }
-      }
-    }
-
-    h4 {
-      padding-bottom: 16px;
-    }
-
-    p {
-      font-size: 16px;
-      line-height: 24px;
-      color: ${color.grey1};
-    }
-  }
-
-  .circle {
-    align-self: center;
-    height: 30px;
-    width: 100%;
-    max-width: 30px;
-    position: relative;
-
-    & > span {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 96px;
-      width: 96px;
-      background-color: ${color.white};
-      box-shadow: inset ${shadow.white1};
-      box-shadow: inset 0 0 32px 0 rgba(236, 236, 236, 0.4);
-      border-radius: 50%;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) rotate(90deg);
-
-      @media (min-width: 769px) {
-        transform: translate(-50%, -50%) rotate(0);
-      }
-    }
-  }
-`;
-
 const Basics = styled.div`
   padding: 75px 0;
 
@@ -255,18 +179,16 @@ const dropdownOneOptions = [
   
 const dropdownTwoOptions = states.state.map(state => (state.name))
 
-const CertificateCard = <Card headline="Dissolution" price="199" dropdownOnePlaceholder="Select Entity Type" dropdownOneOptions={dropdownOneOptions} dropdownTwoPlaceholder="Select State" dropdownTwoOptions={dropdownTwoOptions} />;
+const CertificateCard = <Card className="card" headline="Dissolution" price="199" dropdownOnePlaceholder="Select Entity Type" dropdownOneOptions={dropdownOneOptions} dropdownTwoPlaceholder="Select State" dropdownTwoOptions={dropdownTwoOptions} />;
 
 const ForeignQualification = () => (
   <Layout>
     <SEO title="Foreign Qualification" description="Filling a Foreign Qualification to do Business Out of State." />
-    <Top imageName="mrs-bulb-foreign-qualification" imageAlt="Mrs Bulb choosing a destination of his next business on a map of USA" headlineWidth="515">
-      <h1>Filling a Foreign Qualification to do Business Out of State</h1>
-      <p>From $199 + State Fee</p>
+    <Top imageName="mrs-bulb-foreign-qualification" imageAlt="Mrs Bulb choosing a destination of his next business on a map of USA" headlineWidth="515" ovalColor="green">
+      <h1>{top.header}</h1>
+      <p>{top.text}</p>
       <Buttonsbox>
-        <Button to="#" theme="primary56" width="200px" arrow>
-          Order now
-        </Button>
+        <Button content={top.button[0]} theme="primary56" width="200px" arrow />
       </Buttonsbox>
     </Top>
     <BusinessOwnerResponsibilities>
@@ -292,33 +214,27 @@ const ForeignQualification = () => (
       </ImageContent>
     </BusinessOwnerResponsibilities>
     <Basics>
-      <Container>
-        <div className="wrapper">
-          <TextCenterLayout headline="Foreign Qualification Basics" />
+        <TextCenterLayout headline="Foreign Qualification Basics" />
+        <ContentCenter>
           <Accordion faq={faqs} />
-        </div>
-      </Container>
+        </ContentCenter>
     </Basics>
     <RequirementsByState>
-      <Container>
-        <div className="wrapper">
-          <Help className="help" headlineWidth="450" object={CertificateCard}>
-            <h2>Help file my Foreign Qualification</h2>
-            <h4>Save your time. We'll handle the paperwork.</h4>
-            <p>Typical criteria include but are not limited to:</p>
-            <ul>
-              <li><CheckBlueSVG />Does the company has a physical presence in the state?</li>
-              <li><CheckBlueSVG />Does the entity have employees working within the state?</li>
-              <li><CheckBlueSVG />Does the company conduct banking within state?</li>
-            </ul>
-            <p>Requirements to obtain or a Foreign Qualification / Certificate of Authority:</p>
-            <ul>
-              <li><CheckBlueSVG />Must file appropriate state document and pay the corresponding state fee.</li>
-              <li><CheckBlueSVG />Must obtain a Certificate of Good Standing from state of origin to verify status of business formation.</li>
-            </ul>
-          </Help>
-        </div>
-      </Container>
+      <Help className="help" headlineWidth="450" object={CertificateCard}>
+        <h2>Help file my Foreign Qualification</h2>
+        <h4>Save your time. We'll handle the paperwork.</h4>
+        <p>Typical criteria include but are not limited to:</p>
+        <ul className="numericlist">
+          <li><CheckBlueSVG />Does the company has a physical presence in the state?</li>
+          <li><CheckBlueSVG />Does the entity have employees working within the state?</li>
+          <li><CheckBlueSVG />Does the company conduct banking within state?</li>
+        </ul>
+        <p>Requirements to obtain or a Foreign Qualification / Certificate of Authority:</p>
+        <ul className="numericlist">
+          <li><CheckBlueSVG />Must file appropriate state document and pay the corresponding state fee.</li>
+          <li><CheckBlueSVG />Must obtain a Certificate of Good Standing from state of origin to verify status of business formation.</li>
+        </ul>
+      </Help>
     </RequirementsByState>
     <Benefits />
     <FAQ>

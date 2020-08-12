@@ -20,6 +20,9 @@ const switch1 = (ovalColor) => {
     case "yellow": {
       return color.yellow1;
     }
+    case "green": {
+      return "#97e0c7";
+    }
     case "sun": {
       return "#ffb059";
     }
@@ -47,6 +50,9 @@ const switch2 = (ovalColor) => {
     }
     case "yellow": {
       return color.yellow2;
+    }
+    case "green": {
+      return "#d5f3e8";
     }
     case "sun": {
       return "#ffe3c5";

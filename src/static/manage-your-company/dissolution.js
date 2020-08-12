@@ -71,6 +71,12 @@ export const top = {
     text:
       `The company must be in good standing with the state of incorporation and cannot be in arrears of franchise taxes or annual reporting requirements. 
       In the event that the entity is not in good standing reinstatement would be required in order to proceed with the dissolution.`,
+    card: {
+      price:
+        `149`,
+      fee:
+        `Plus State Filling Fees`,
+    }
   }
 
   export const faq = {

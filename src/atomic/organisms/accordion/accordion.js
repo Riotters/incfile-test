@@ -105,10 +105,10 @@ const Button = styled.button`
   width: 100%;
   line-height: 80px;
   color: #4e4e4e;
+  align-items: center;
   background: #fff;
   display: flex;
   cursor: pointer;
-
   position: relative;
   border-radius: 5px;
   overflow: hidden;
@@ -135,6 +135,9 @@ const Content = styled.div`
     color: #4e4e4e;
     font-family: Avenir;
     font-size: 16px;
+    text-align: left;
+    width: 100%;
+    line-height: 24px;
   }
 `;
 
@@ -144,6 +147,10 @@ const Icon = styled.div`
   justify-content: center;
   height: 80px;
   width: 80px;
+  min-height: 80px;
+  min-width: 80px;
+  max-height: 80px;
+  max-width: 80px;
   opacity: 0.75;
 
   svg {
