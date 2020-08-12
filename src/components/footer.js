@@ -32,9 +32,14 @@ const Top = styled.div`
 
 const Bot = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 36px 0;
+
+  @media (min-width: 576px) {
+    flex-direction: row;
+  }
 `
 
 const Logo = styled.div`
