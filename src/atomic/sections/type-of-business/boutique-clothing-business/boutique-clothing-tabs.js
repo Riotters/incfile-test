@@ -385,131 +385,113 @@ const BoutiqueClothingTabs = ({layout, columns}) => (
                                 <Panel>
                                     <PanelWrapper className="panel2" layout={layout}>
                                         <Heading size={2} style={{fontSize: "24px", textAlign: "left"}}>
-                                            Why You Should Start a New Life Coaching Business
+                                            Why You Should Start a New Boutique Clothing Business
                                         </Heading>
                                         <Paragraph big style={{marginBottom: "76px"}}>
-                                            Life coaching is about helping people deal with what’s going on in their
-                                            lives and assisting them in creating a better present and future. It
-                                            involves a mix of psychology, counseling, interpersonal skills and
-                                            understanding how you can help a client realize their potential.
-                                            <br/><br/>
-                                            Here are some statistics on the power of life coaching businesses:
+                                            Clothing is one of the most popular retail sectors. Here are some surprising statistics:
                                         </Paragraph>
 
-                                        <BlueBoxWithAbsoluteText absoluteText="$10B"
-                                                                 text="Generated annual revenue in the U.S., Self-improvement as a whole is a very successful sector."/>
-                                        <BlueBoxWithAbsoluteText absoluteText="$1B"
-                                                                 text="Generated revenue of life coaching in the U.S. each year, and this is expected to grow to around $1.3 billion in 2022."/>
-                                        <BlueBoxWithAbsoluteText absoluteText="$62K"
-                                                                 text="Average yearly income for life coaches a year, and some coaches can earn over $100,000 a year."/>
+                                        <BlueBoxWithAbsoluteText absoluteText="$20B"
+                                                                 text="Clothing boutiques earn over $20 billion in the U.S. every year"/>
+                                        <BlueBoxWithAbsoluteText absoluteText="150K"
+                                                                 text="There are over 150,000 boutique clothing businesses in the U.S., employing over 250,000 people"/>
+                                        <BlueBoxWithAbsoluteText absoluteText="$700K"
+                                                                 text="Worldwide revenue for online clothing is expected to rise to over $700 billion by 2022"/>
 
                                         <div style={{marginBottom: "30px"}}>
                                             <Adventages
-                                                headline="The main areas that life coaches help with are personal improvement, family and relationships and weight loss and fitness."
+                                                headline="On average, a boutique clothing business earns over $130,000 a year and employs between one and two people"
                                                 width="100%"
                                             />
                                         </div>
 
                                         <div style={{marginBottom: "30px"}}>
                                             <Adventages
-                                                headline="More than two million people stay at an Airbnb on any given day"
+                                                headline="The traditional, brick-and-mortar clothing boutique is facing challenges, so more clothing entrepreneurs are selling online"
                                                 width="100%"
                                             />
                                         </div>
 
                                         <div style={{marginBottom: "30px"}}>
                                             <Adventages
-                                                headline="Many customers for life coaching businesses are located on the East or West Coast of the U.S."
+                                                headline="Worldwide revenue for online clothing is expected to rise to over $700 billion by 2022"
                                                 width="100%"
                                             />
                                         </div>
 
                                         <div style={{marginBottom: "30px"}}>
                                             <Adventages
-                                                headline="The number of coaches in the world increased from 47,500 in 2011 to 53,300 in 2018"
+                                                headline="The average online customer spends between $280 and $300 a year on clothes"
                                                 width="100%"
                                             />
                                         </div>
 
                                         <div style={{marginBottom: "48px"}}>
                                             <Adventages
-                                                headline="There are currently around 18,300 life coaches in the U.S."
-                                                width="100%"
-                                            />
-                                        </div>
-
-                                        <div style={{marginBottom: "48px"}}>
-                                            <Adventages
-                                                headline="Life coaches normally have multiple clients and typically charge between $200 and $500 a month for services"
-                                                width="100%"
-                                            />
-                                        </div>
-
-                                        <Heading size={2} style={{fontSize: "24px", textAlign: "left"}}>
-                                            Why You Should Start a Business and Executive Coaching Practice
-                                        </Heading>
-                                        <Paragraph big style={{marginBottom: "76px"}}>
-                                            Business and executive coaching is very different from life coaching. When
-                                            you’re working with senior management, you need to have an excellent
-                                            understanding of business, strategy, financials, organization, culture and
-                                            the unique pressures that face executives when making major decisions.
-                                        </Paragraph>
-
-                                        <BlueBoxWithAbsoluteText absoluteText="$12B"
-                                                                 text="Generated revenue of Business Coaching in the U.S. a year."/>
-                                        <BlueBoxWithAbsoluteText absoluteText="55K"
-                                                                 text="Number of business coaching organizations in the U.S. employing over 100,000 people"/>
-
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                headline="The main areas that business coaches help with are executive development and financial management"
-                                                width="100%"
-                                            />
-                                        </div>
-
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                headline="Studies show that there is between a 500% and 700% return on investment for money spent on business and executive coaching services"
-                                                width="100%"
-                                            />
-                                        </div>
-
-                                        <div style={{marginBottom: "48px"}}>
-                                            <Adventages
-                                                headline="Business coaching helps executives increase their productivity by over 80 percent"
-                                                width="100%"
-                                            />
-                                        </div>
-
-                                        <div style={{marginBottom: "48px"}}>
-                                            <Adventages
-                                                headline="Executive coaching delivers improvements to areas like productivity, work quality, organizational strength, customer service, working relationships, cost reductions and profitability"
+                                                headline="Online boutique revenue is expected to grow by around 9 percent a year in the U.S."
                                                 width="100%"
                                             />
                                         </div>
 
                                         <Paragraph big style={{marginBottom: "76px"}}>
-                                            This is why life or business coaching ventures are so exciting — how can you
-                                            be part of that success? We're here to help you figure that out.
+                                            This is why Airbnb businesses are so exciting — how can you be a part of that success? We're here to help you figure that out.
                                         </Paragraph>
                                     </PanelWrapper>
                                 </Panel>
                                 <Panel>
                                     <PanelWrapper className="panel3" layout={layout}>
                                         <Heading size={2} style={{fontSize: "24px", textAlign: "left"}}>
-                                            Is Professional Coaching Right for You?
+                                            An Online Boutique vs. a Brick-and-Mortar Store
                                         </Heading>
                                         <Paragraph big style={{marginBottom: "48px"}}>
-                                            Although it can be exciting to become a life or business coach, there will
-                                            be significant demands on you. Here are some of the things you can expect.
+                                            One of the biggest questions a boutique clothing entrepreneur will need to answer is whether to start a traditional, in-person boutique, an online boutique or a combination of the two. Each of these options has advantages and challenges.
                                         </Paragraph>
 
                                         <Heading size={2} style={{fontSize: "24px", textAlign: "left"}}>
-                                            A Day in the Life of a Life or Business Coach
+                                            Starting a Traditional Brick-and-Mortar Clothing Boutique
                                         </Heading>
-                                        <Paragraph big style={{marginBottom: "48px"}}>
-                                            Here are some of the typical tasks you’ll be performing on a daily basis:
-                                        </Paragraph>
+
+                                        <div style={{marginBottom: "30px"}}>
+                                            <Adventages
+                                                headline="You get visibility on the street, so passing customers can drop into your clothing store"
+                                                width="100%"
+                                            />
+                                        </div>
+
+                                        <div style={{marginBottom: "30px"}}>
+                                            <Adventages
+                                                headline="It’s easy to browse a range of clothing quickly so customers can find something they like"
+                                                width="100%"
+                                            />
+                                        </div>
+
+                                        <div style={{marginBottom: "30px"}}>
+                                            <Adventages
+                                                headline="Customers can try on clothing right then to see how they look"
+                                                width="100%"
+                                            />
+                                        </div>
+
+                                        <div style={{marginBottom: "30px"}}>
+                                            <Adventages
+                                                headline="Returns of clothing are likely to be minimal"
+                                                width="100%"
+                                            />
+                                        </div>
+
+                                        <div style={{marginBottom: "30px"}}>
+                                            <Adventages
+                                                headline="There’s likely to be less competition, depending on where you’re located"
+                                                width="100%"
+                                            />
+                                        </div>
+
+                                        <div style={{marginBottom: "30px"}}>
+                                            <Adventages
+                                                headline="You can display clothes and create an atmosphere for your boutique to build ambiance"
+                                                width="100%"
+                                            />
+                                        </div>
 
                                         <CountingTextBoxed number={1}>
                                             <Paragraph bottomPadding={0} bottomMargin={0}>
