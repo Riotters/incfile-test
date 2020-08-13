@@ -14,7 +14,7 @@ import { top, typesOfTaxes, taxReturn, pricing, benefits } from "../../static/fi
 const FillingBusinessTaxes = () => (
   <Layout>
     <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
-    <Top imageName="mrs-bulb-filling-taxes" imageAlt="image alt" ovalColor="sun">
+    <Top imageName="mrs-bulb-filling-taxes" imageAlt="mr. bulb filling tax form" ovalColor="sun">
       <h1>{top.header}</h1>
       <p>{top.text}</p>
     </Top>
