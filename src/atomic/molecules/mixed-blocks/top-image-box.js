@@ -14,6 +14,7 @@ const Wrapper = styled.div`
     border-radius: 5px;
     background-color: ${color.white};
     box-shadow: ${props => (props.noShadow ? "" : shadow.white1)};
+    margin: 0 auto;
 
     .top {
         display: flex;

@@ -32,6 +32,9 @@ const switch1 = (ovalColor) => {
     case "darkblue": {
       return "#7891fc";
     }
+    case "lightpurple": {
+      return "#d2aafb";
+    }
     default:
       return "";
   }
@@ -62,6 +65,9 @@ const switch2 = (ovalColor) => {
     }
     case "darkblue": {
       return "#ced7ff";
+    }
+    case "lightpurple": {
+      return "#ede0fa";
     }
     default:
       return "";
