@@ -1,14 +1,10 @@
 import React from "react"
 import styled from "styled-components";
-import ArrowLink from "../atoms/links/link";
+import ArrowLink from "../molecules/buttons/text";
 import VisibilitySensor from "../../components/VisibilitySensor";
-import Container from "../container";
+import ContentCenter from "./content-center";
 
 const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   position: relative;
 
   h2 {
@@ -27,11 +23,18 @@ const Wrapper = styled.div`
   }
 `
 
+
+
 const TextCenterLayout = ({className, headline, headlineWidth, text, textWidth, linkText, linkUrl}) => {
+
+  const content = {
+    text: linkText,
+    url: linkUrl,
+  }
 
   return (
     <Wrapper className={className} headlineWidth={headlineWidth} textWidth={textWidth}>
-        <Container>
+        <ContentCenter>
           {headline && (
               <VisibilitySensor partialVisibility once>
                   {({ isVisible }) => (
@@ -50,16 +53,15 @@ const TextCenterLayout = ({className, headline, headlineWidth, text, textWidth, 
                   )}
               </VisibilitySensor>
           )}
+          { console.log(linkText) }
           {linkText && (
               <VisibilitySensor partialVisibility once>
                   {({ isVisible }) => (
-                  <ArrowLink href={linkUrl} className={isVisible ? "slideUp enter" : "slideUp"}>
-                      {linkText}
-                  </ArrowLink>
+                    <ArrowLink content={content} className={isVisible ? "slideUp enter" : "slideUp"} />
                   )}
               </VisibilitySensor>
           )}
-        </Container>
+        </ContentCenter>
     </Wrapper>
   )
 }

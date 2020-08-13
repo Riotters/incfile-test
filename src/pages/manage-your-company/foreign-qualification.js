@@ -3,6 +3,7 @@ import Layout from "../../components/layout";
 import SEO from "../../components/seo";
 import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
 import Button from "../../atomic/molecules/buttons/button";
+//Sections
 import Top from "../../atomic/partials/top";
 import About from "../../atomic/sections/manage-your-company/foreign-qualification/about";
 import Basics from "../../atomic/sections/manage-your-company/foreign-qualification/basics";
@@ -10,6 +11,7 @@ import Help from "../../atomic/sections/manage-your-company/foreign-qualificatio
 import Faq from "../../atomic/sections/manage-your-company/foreign-qualification/faq";
 import Articles from "../../components/partials/sections/articles";
 import Benefits from "../../components/partials/sections/benefits";
+//Text
 import { top, about, basics, help, faq } from "../../static/manage-your-company/foreign-qualification"
 
 const ForeignQualification = () => (

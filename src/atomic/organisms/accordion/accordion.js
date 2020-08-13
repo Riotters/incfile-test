@@ -56,13 +56,11 @@ const PanelWrapper = styled.div`
   display: flex;
   flex-direction: column;
   background: #fff;
-
-  margin-bottom: 7px;
   padding: 15px;
   z-index: 1;
 
   @media (min-width: 769px) {
-    padding: 24px 40px 40px 80px;
+    padding: 16px 40px 40px 80px;
   }
 
   h3 {
@@ -104,9 +102,8 @@ const PanelWrapper = styled.div`
 `;
 
 const Button = styled.button`
-  height: 80px;
+  min-width: 80px;
   width: 100%;
-  line-height: 80px;
   color: #4e4e4e;
   align-items: center;
   background: #fff;
@@ -132,7 +129,7 @@ const Content = styled.div`
   justify-content: space-between;
   align-items: center;
   flex-grow: 1;
-  padding-right: 40px;
+  padding: 16px 40px 16px 0;
 
   span {
     color: #4e4e4e;

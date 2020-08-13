@@ -53,7 +53,7 @@ const ComponentsPage = () => (
             <Link to="/manage-your-company/tax-id-ein">EIN tax identification number</Link>
             <Link to="/manage-your-company/dissolution">Filing Articles of  Dissolution</Link>
             <Link to="/manage-your-company/foreign-qualification">Foreign Qualification</Link>
-            <Link to="/manage-your-company-registered-agent">Registered Agent (no details)</Link>
+            <Link to="/manage-your-company/registered-agent">Registered Agent (no details)</Link>
             <Link to="/manage-your-company-llc-s-corp-election">S Corp Tax Election (no details)</Link>
             <Link to="/manage-your-company/corporate-llc-kit">Corporate LLC Kit (no details)</Link>
             <Link to="/manage-your-company/filling-business-taxes">Filling Business Taxes</Link>

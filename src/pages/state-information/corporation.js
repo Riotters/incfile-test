@@ -1,8 +1,8 @@
 import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Top from "../components/partials/sections/top";
-import Button from "../components/button"
+import Layout from "../../components/layout"
+import SEO from "../../components/seo"
+import Top from "../../components/partials/sections/top";
+import Button from "../../components/button"
 
 const CorporationStateInformationPage = () => (
   <Layout>

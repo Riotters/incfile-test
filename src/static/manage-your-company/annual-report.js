@@ -9,9 +9,9 @@ export const top = {
         url: '#',
       }
     ]
-  }
+}
   
-  export const about = {
+export const about = {
     header:
         `What is an annual report?`,
     text:
@@ -103,55 +103,36 @@ export const top = {
     },
     text10:
         `The purpose of an annual report is to keep your state informed on any changes to the details or ownership of your business — For example if the business has changed locations or has new directors or managers.`,
-  }
+}
 
-  export const help = {
+export const help = {
     header:
-      `Help Obtain a EIN / Tax ID Number`,
+      `Help File My Annual Report`,
     header2:
       `Save your time. We'll handle the paperwork.`,
     text:
-      `If you would like to use our services to facilitate the filing of your Tax ID / EIN please place the order and a representative from IncFile will contact you to obtain specific information required to complete and file the Tax ID / EIN in your state of formation.`,
-  }
+      `If you would like to use our services to facilitate the filing of your annual report please place the order and a representative from IncFile will contact you to obtain specific information required to complete and file the annual report in your state of formation.`,
+}
 
-  export const faq = {
-    header:
-        `Common questions about filing a Certificate of Good Standing`,
-    faq: {
-        items: [
-            {
-                question:
-                    `Will I need an EIN in order to obtain a business account with a bank??`,
-                answer:
-                    `Yes, under most circumstances business entities other than DBA's must present an EIN along with the filed Articles of Organization or Incorporation in order for an account to be opened.`,
-            },
-            {
-                question:
-                    `What circumstances require me to change my EIN?`,
-                answer:
-                  `If you already have an EIN, and the organization or ownership of your business changes, you may need to apply for a new number. Some of the circumstances under which a new number is required are as follows:`,
-            },
-            {
-                question:
-                    `When will I receive my Federal Employer Identification Number?`,
-                answer:
-                    `If it is a stand alone order for an existing entity we can obtain and email the EIN within 1 business day.`,
-                list: [
-                  "An existing business is purchased or inherited by an individual who will operate it as a sole proprietorship.",
-                  "A sole proprietorship changes to an LLC, corporation, or partnership.",
-                  "A partnership changes to an LLC, corporation, or sole proprietorship.",
-                  "A corporation changes to an LLC, partnership, or sole proprietorship.",
-                  "An LLC changes to a corporation, partnership, or sole proprietorship.",
-                  "An individual owner dies, and the estate takes over the business.",
-                ],
-            },
-            {
-                question:
-                    `What is the SS4/EIN/Tax ID Number?`,
-                answer:
-                    `The SS4 is the IRS form required to obtain an EIN (Employer Identification Number, frequently called a Tax ID number). The EIN/Tax ID number can be thought of as a Social Security Number for your business. 
-                    It is usually required to open a bank account in the name of the business and to properly pay and account for any wage/payroll employees of your company.`,
-            },
-        ],
-    },
+export const faq = {
+    header: 
+        `Common questions about filing an Annual Report`,
+    cards: [
+        {
+            header: `How Long does it take to file an Annual Report?`,
+            text: `The filing time is dependent on the governing state agency. Filing times vary by state it is therefore important that the report is filed well in advance of the due date in order to avoid any potential late filing fees.`,
+        },
+        {
+            header: `What happens if the Annual Report cannot be filed?`,
+            text: `In the event that the entity has been administratively revoked or otherwise dissolved or the report is not due within a close proximity to the order being placed our policy is to contact and inform the client and issue a full refund.`,
+        },
+        {
+            header: `How much does it cost to file an Annual Report?`,
+            text: `The state fee varies by state our service fee to file the report is $88. To review the fee in your state click on the “order now” button and select the state and entity type.`,
+        },
+        {
+            header: `What will I receive when the Annual Report is filed?`,
+            text: `The governing state agency will typically return a filed copy of the Annual Report which is then mailed to the client.`,
+        },
+    ]
 }

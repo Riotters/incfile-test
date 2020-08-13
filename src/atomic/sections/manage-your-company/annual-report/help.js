@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { color, gradient } from "../../../atoms/styles/colors";
 import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";
+import { states } from "../../../../components/states"
 import ContentObject from "../../../partials/left-content-right-object";
 import Card from "../../../../components/certificate-card";
 import Oval from "../../../atoms/icons/oval";
@@ -16,29 +17,27 @@ const Help = styled.section`
   padding-top: 75px;
   padding-bottom: 64px;
 
-  &::before {
-    content: '';
-    height: 2032px;
-    width: 100%;
-    background-image: ${gradient.blue3};
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
-  h2 {
-      text-align: left;
-  }
-
-  p {
-    color: ${color.grey2};
-  }
+    &::before {
+        content: '';
+        height: 2032px;
+        width: 100%;
+        background-image: ${gradient.blue3};
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 `;
 
 const TextWrapper = styled.div`
   width: 100%;
   position: relative;
 `;
+
+const dropdownOneOptions = [
+    'LCC', 'Corporation', 'Nonprofit'
+];
+  
+const dropdownTwoOptions = states.state.map(state => (state.name));
 
 const HelpSection = ({ className, content }) => (
     <Help className={className}>
@@ -48,19 +47,19 @@ const HelpSection = ({ className, content }) => (
         <Oval className="oval" height="570" width="570" y="20" bottom="0" right="0">
             <Oval2SVG />
         </Oval>
-        <ContentObject 
-            object={<Card className="card" headline="TAX ID / EIN" content={content.card} image="entity-comparison-chart" />} 
+        <ContentObject className="help" headlineWidth="450" 
+            object={<Card className="card" content={content.card} headline="Annual Report" dropdownOnePlaceholder="Select Entity Type" dropdownOneOptions={dropdownOneOptions} dropdownTwoPlaceholder="Select State" dropdownTwoOptions={dropdownTwoOptions} />}
         >
             <TextWrapper>
-                <Curve top="-5" right="110" color={color.blue1}>
+                <Curve top="-15" right="160" color={color.blue1}>
                     <CurveSVG />
                 </Curve>
-                <Heading size={2} bottomMargin="56" maxWidth="500">{content.header}</Heading>
-                <Heading size={4} bottomMargin="24">{content.header2}</Heading>
+                <Heading size="2" bottomMargin="56" maxWidth="460">{content.header}</Heading>
+                <Heading size="4">{content.header2}</Heading>
                 <Paragraph big bottomMargin="0">{content.text}</Paragraph>
             </TextWrapper>
         </ContentObject>
     </Help>
-  );
+);
   
-  export default HelpSection;
+export default HelpSection;

@@ -73,7 +73,7 @@ export const top = {
                         },
                         {
                             text: `Every state has different rules`,
-                            url: `https://www.incfile.com/llc-state-information/`,
+                            url: `/state-information/llc`,
                         },
                         {
                             text: `regarding what constitutes transacting business. Not following the rules could affect your business's`,

@@ -64,7 +64,7 @@ const CertificateCard = ({ className, headline, content, image, dropdownOnePlace
     <Wrapper className={className}>
         <h3>{headline}</h3>
         {image && (
-        <Image filename="clock" />
+        <Image filename={image} />
         )}
         {dropdownOnePlaceholder && (
             <Label className="label">

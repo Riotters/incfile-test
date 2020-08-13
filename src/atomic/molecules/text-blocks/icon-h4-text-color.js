@@ -37,13 +37,13 @@ const Wrapper = styled.div`
     margin-bottom: ${props => props.bottomMargin ? `${props.bottomMargin}px` : ""};
 
     .box {
-        padding: 32px 40px 24px 88px;
+        padding: 40px 40px 40px 112px;
         border-radius: ${props => props.rounded ? "5px 50px 50px 5px" : ""};
 
         svg {
             position: absolute;
-            top: 24px;
-            left: 32px;
+            top: 40px;
+            left: 40px;
         }
     }
 
@@ -63,7 +63,7 @@ const IconTextColorBox = ({ className, Icon, color, content, bottomMargin, round
         }
         <Colorbox className="box" color={color}>
             <Icon />
-            <Heading size="4" bottomMargin="8">{content.header}</Heading>
+            <Heading size="4" bottomMargin="16">{content.header}</Heading>
             <Paragraph bottomMargin="0">{content.text}</Paragraph>
         </Colorbox>
     </Wrapper>

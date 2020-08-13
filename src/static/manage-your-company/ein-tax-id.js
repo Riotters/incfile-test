@@ -66,7 +66,14 @@ export const top = {
     header2:
       `Save your time. We'll handle the paperwork.`,
     text:
-      `If you would like to use our services to facilitate the filing of your Tax ID / EIN please place the order and a representative from IncFile will contact you to obtain specific information required to complete and file the Tax ID / EIN in your state of formation.`,
+      `If you would like to use our services to facilitate the filing of your Tax ID / EIN please place the order and a representative from IncFile will contact you to 
+      obtain specific information required to complete and file the Tax ID / EIN in your state of formation.`,
+    card: {
+      price:
+        `70`,
+      fee:
+        `Total price`,
+    }
   }
 
   export const faq = {

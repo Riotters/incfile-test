@@ -247,7 +247,7 @@ export const faq = {
                         text:
                             `state-by-state guides for LLCs`,
                         url:
-                            `/llc-state-information`,
+                            `/state-information/llc`,
                     },
                     {
                         text:
@@ -257,7 +257,7 @@ export const faq = {
                         text:
                             `corporations`,
                         url:
-                            `/corporation-state-information`,
+                            `/state-information/corporation`,
                     },
                 ],
             },

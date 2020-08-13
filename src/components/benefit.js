@@ -9,6 +9,7 @@ const Wrapper = styled.div`
     flex-direction: column;
     padding: 32px;
     border-radius: 5px;
+    background-color: ${color.white};
     box-shadow: ${shadow.white1};
 
     @media (min-width: 992px) {
