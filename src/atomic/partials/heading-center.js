@@ -53,7 +53,6 @@ const TextCenterLayout = ({className, headline, headlineWidth, text, textWidth, 
                   )}
               </VisibilitySensor>
           )}
-          { console.log(linkText) }
           {linkText && (
               <VisibilitySensor partialVisibility once>
                   {({ isVisible }) => (

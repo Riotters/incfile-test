@@ -13,6 +13,7 @@ const Wrapper = styled.div`
     box-shadow: ${shadow.white1};
 
     @media (min-width: 992px) {
+        background-color: transparent;
         box-shadow: none;
     }
 

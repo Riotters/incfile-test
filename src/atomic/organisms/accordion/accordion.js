@@ -21,18 +21,21 @@ const Wrapper = styled.div`
 `;
 
 const Curve = styled.div`
+  display: none;
   height: 25px;
   width: 25px;
   position: absolute;
-  top: -16px;
-  left: ${props => props.curveRight ? "" : "-13px"};
-  right: ${props => props.curveRight ? "-13px" : ""};
-  transform: ${props => props.curveRight ? "rotate(90deg)" : ""};
 
   @media (min-width: 769px) {
-    top: 0;
-    left: ${props => props.curveRight ? "" : "0"};
-    right: ${props => props.curveRight ? "0" : ""};
+    display: block;
+    top: ${props => !props.curveRightBottom ? "0" : ""};
+    left: ${props => (props.curveRight || props.curveRightBottom)  ? "" : "0"};
+    right: ${props => (props.curveRight || props.curveRightBottom) ? "0" : ""};
+    bottom: ${props => props.curveRightBottom ? "-25px" : ""};
+    transform: ${props => 
+      props.curveRight ? "rotate(90deg)"
+      : props.curveRightBottom ? "rotate(180deg)"
+      : ""};
   }
 `;
 
@@ -186,13 +189,13 @@ const Panel = ({ children }) => {
   );
 };
 
-const Accordion = ({ content, curve, curveRight }) => {
+const Accordion = ({ content, curve, curveRight, curveRightBottom }) => {
   return (
     <VisibilitySensor partialVisibility once>
       {({ isVisible }) => (
         <Wrapper className={isVisible ? "slideUp enter" : "slideUp"}>
           {curve && (
-            <Curve curveRight={curveRight}>
+            <Curve curveRight={curveRight} curveRightBottom={curveRightBottom}>
               <CurveSVG />
             </Curve>
           )}
