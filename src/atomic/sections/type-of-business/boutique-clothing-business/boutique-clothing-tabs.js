@@ -16,9 +16,8 @@ import Container from "../../../../components/container";
 import BlueBoxWithAbsoluteText from "../../../molecules/text-blocks/blue-box-with-absolute-text";
 import Adventages from "../../../../components/adventages";
 import CountingTextBoxed from "../../../molecules/text-blocks/counting-text-boxed";
-import MegafonIcon from "../../../../images/icons/megafon.inline.svg";
-import {color} from "../../../../components/styles/colors";
-import Colorbox from "../../../../components/color-box";
+import {color} from "../../../atoms/styles/colors"
+import {shadow} from "../../../atoms/styles/shadows"
 
 const cn = (...args) => args.filter(Boolean).join(" ");
 
@@ -286,15 +285,26 @@ const BoutiqueClothingTabs = ({layout, columns}) => (
                                     >
                                         <Heading size={3}>Starting a Botique Clothing Business</Heading>
                                         <Paragraph big>
-                                            Rather than selling everyday garments, boutique businesses focus on specific garments, tastes, designs and customers. If you have a unique taste and can curate the perfect collection, you can certainly start a successful retail clothing business.
+                                            Rather than selling everyday garments, boutique businesses focus on specific
+                                            garments, tastes, designs and customers. If you have a unique taste and can
+                                            curate the perfect collection, you can certainly start a successful retail
+                                            clothing business.
                                         </Paragraph>
                                         <Paragraph big style={{marginBottom: "50px"}}>
-                                            The question is, just where do you start? Here at Incfile, we know the answer, and we’ve shared it with more than 100,000 people who we've helped to form their businesses. Since 2004, we’ve supported retail entrepreneurs just like you, and we’re proud to have been a part of the business revolution.
+                                            The question is, just where do you start? Here at Incfile, we know the
+                                            answer, and we’ve shared it with more than 100,000 people who we've helped
+                                            to form their businesses. Since 2004, we’ve supported retail entrepreneurs
+                                            just like you, and we’re proud to have been a part of the business
+                                            revolution.
                                         </Paragraph>
 
                                         <Heading size={3}>Botique Clothing Business formation guide</Heading>
                                         <Paragraph big>
-                                            Here is our simple guide to starting up a successful boutique clothing business. From researching the type of business you can start, through legalities of setting up your boutique and managing your operations, this guide is here to help. Read on for some insight into creating your own boutique business and becoming an entrepreneur. In this guide we will cover:
+                                            Here is our simple guide to starting up a successful boutique clothing
+                                            business. From researching the type of business you can start, through
+                                            legalities of setting up your boutique and managing your operations, this
+                                            guide is here to help. Read on for some insight into creating your own
+                                            boutique business and becoming an entrepreneur. In this guide we will cover:
                                         </Paragraph>
 
                                         <ListWrapper>
@@ -309,7 +319,8 @@ const BoutiqueClothingTabs = ({layout, columns}) => (
                                             <ListBox>
                                                 <CkeckText>
                                                     <Paragraph big>
-                                                        How to choose whether your clothing business should be an LLC or corporation
+                                                        How to choose whether your clothing business should be an LLC or
+                                                        corporation
                                                     </Paragraph>
                                                 </CkeckText>
                                             </ListBox>
@@ -325,7 +336,9 @@ const BoutiqueClothingTabs = ({layout, columns}) => (
                                             <ListBox>
                                                 <CkeckText>
                                                     <Paragraph big>
-                                                        How to start your boutique business with information on equipment, employees, location, permits, finances, taxes and more
+                                                        How to start your boutique business with information on
+                                                        equipment, employees, location, permits, finances, taxes and
+                                                        more
                                                     </Paragraph>
                                                 </CkeckText>
                                             </ListBox>
@@ -342,7 +355,8 @@ const BoutiqueClothingTabs = ({layout, columns}) => (
                                             <ListBox>
                                                 <CkeckText>
                                                     <Paragraph big>
-                                                        Ideas for the type of boutique clothing business that you could form
+                                                        Ideas for the type of boutique clothing business that you could
+                                                        form
                                                     </Paragraph>
                                                 </CkeckText>
                                             </ListBox>
@@ -388,7 +402,8 @@ const BoutiqueClothingTabs = ({layout, columns}) => (
                                             Why You Should Start a New Boutique Clothing Business
                                         </Heading>
                                         <Paragraph big style={{marginBottom: "76px"}}>
-                                            Clothing is one of the most popular retail sectors. Here are some surprising statistics:
+                                            Clothing is one of the most popular retail sectors. Here are some surprising
+                                            statistics:
                                         </Paragraph>
 
                                         <BlueBoxWithAbsoluteText absoluteText="$20B"
@@ -434,7 +449,8 @@ const BoutiqueClothingTabs = ({layout, columns}) => (
                                         </div>
 
                                         <Paragraph big style={{marginBottom: "76px"}}>
-                                            This is why Airbnb businesses are so exciting — how can you be a part of that success? We're here to help you figure that out.
+                                            This is why Airbnb businesses are so exciting — how can you be a part of
+                                            that success? We're here to help you figure that out.
                                         </Paragraph>
                                     </PanelWrapper>
                                 </Panel>
@@ -444,11 +460,18 @@ const BoutiqueClothingTabs = ({layout, columns}) => (
                                             An Online Boutique vs. a Brick-and-Mortar Store
                                         </Heading>
                                         <Paragraph big style={{marginBottom: "48px"}}>
-                                            One of the biggest questions a boutique clothing entrepreneur will need to answer is whether to start a traditional, in-person boutique, an online boutique or a combination of the two. Each of these options has advantages and challenges.
+                                            One of the biggest questions a boutique clothing entrepreneur will need to
+                                            answer is whether to start a traditional, in-person boutique, an online
+                                            boutique or a combination of the two. Each of these options has advantages
+                                            and challenges.
                                         </Paragraph>
 
                                         <Heading size={2} style={{fontSize: "24px", textAlign: "left"}}>
                                             Starting a Traditional Brick-and-Mortar Clothing Boutique
+                                        </Heading>
+
+                                        <Heading size={3} style={{fontSize: "20px", textAlign: "left"}}>
+                                            Advantages
                                         </Heading>
 
                                         <div style={{marginBottom: "30px"}}>
@@ -493,202 +516,236 @@ const BoutiqueClothingTabs = ({layout, columns}) => (
                                             />
                                         </div>
 
+                                        <Heading size={3} style={{fontSize: "20px", textAlign: "left"}}>
+                                            Disadvantages
+                                        </Heading>
+
+                                        <div style={{marginBottom: "30px"}}>
+                                            <Adventages
+                                                circleBackgroundColor={color.red1}
+                                                circleBackgroundShadow={shadow.red1}
+                                                disadventage={true}
+                                                headline="Your startup costs will be high as you will need to lease retail space and pay for fixtures, fittings and other expenses for your store"
+                                                width="100%"
+                                            />
+                                        </div>
+
+                                        <div style={{marginBottom: "30px"}}>
+                                            <Adventages
+                                                circleBackgroundColor={color.red1}
+                                                circleBackgroundShadow={shadow.red1}
+                                                disadventage={true}
+                                                headline="Ongoing bills can be high, especially for lighting and heating"
+                                                width="100%"
+                                            />
+                                        </div>
+
+                                        <div style={{marginBottom: "30px"}}>
+                                            <Adventages
+                                                circleBackgroundColor={color.red1}
+                                                circleBackgroundShadow={shadow.red1}
+                                                disadventage={true}
+                                                headline="Staff should be onsite whenever you are open, which means you’ll likely need to pay someone else if you want to take a break or vacation"
+                                                width="100%"
+                                            />
+                                        </div>
+
+                                        <div style={{marginBottom: "30px"}}>
+                                            <Adventages
+                                                circleBackgroundColor={color.red1}
+                                                circleBackgroundShadow={shadow.red1}
+                                                disadventage={true}
+                                                headline="You will need to hold garments in a variety of styles and sizes, which locks up cash flow"
+                                                width="100%"
+                                            />
+                                        </div>
+
+                                        <div style={{marginBottom: "30px"}}>
+                                            <Adventages
+                                                circleBackgroundColor={color.red1}
+                                                circleBackgroundShadow={shadow.red1}
+                                                disadventage={true}
+                                                headline="The traditional clothing boutique business in the U.S. is shrinking at a rate of around 2 percent a year"
+                                                width="100%"
+                                            />
+                                        </div>
+
+                                        <Heading size={2} style={{fontSize: "24px", textAlign: "left"}}>
+                                            Starting an Online Clothing Boutique
+                                        </Heading>
+
+                                        <Heading size={3} style={{fontSize: "20px", textAlign: "left"}}>
+                                            Advantages
+                                        </Heading>
+
+                                        <div style={{marginBottom: "30px"}}>
+                                            <Adventages
+                                                headline="Much lower startup costs, including expenses involved in setting up an ecommerce website, buying inventory and marketing"
+                                                width="100%"
+                                            />
+                                        </div>
+
+                                        <div style={{marginBottom: "30px"}}>
+                                            <Adventages
+                                                headline="Your ongoing expenses will be much lower since you can run an online boutique by yourself"
+                                                width="100%"
+                                            />
+                                        </div>
+
+                                        <div style={{marginBottom: "30px"}}>
+                                            <Adventages
+                                                headline="The online clothing boutique business is growing"
+                                                width="100%"
+                                            />
+                                        </div>
+
+                                        <Heading size={3} style={{fontSize: "20px", textAlign: "left"}}>
+                                            Disadvantages
+                                        </Heading>
+
+                                        <div style={{marginBottom: "30px"}}>
+                                            <Adventages
+                                                circleBackgroundColor={color.red1}
+                                                circleBackgroundShadow={shadow.red1}
+                                                disadventage={true}
+                                                headline="It’s more difficult for potential customers to browse items like they could in a store"
+                                                width="100%"
+                                            />
+                                        </div>
+
+                                        <div style={{marginBottom: "30px"}}>
+                                            <Adventages
+                                                circleBackgroundColor={color.red1}
+                                                circleBackgroundShadow={shadow.red1}
+                                                disadventage={true}
+                                                headline="There’s much more competition for online clothing sales, as they’re not limited by location or geography"
+                                                width="100%"
+                                            />
+                                        </div>
+
+                                        <div style={{marginBottom: "30px"}}>
+                                            <Adventages
+                                                circleBackgroundColor={color.red1}
+                                                circleBackgroundShadow={shadow.red1}
+                                                disadventage={true}
+                                                headline="Because customers can’t try clothing on before they purchase, return rates can be very high (some estimates indicate returns will be around half of what you sell!)"
+                                                width="100%"
+                                            />
+                                        </div>
+
+                                        <div style={{marginBottom: "30px"}}>
+                                            <Adventages
+                                                circleBackgroundColor={color.red1}
+                                                circleBackgroundShadow={shadow.red1}
+                                                disadventage={true}
+                                                headline="It’s much harder to distinguish yourself online than in a physical location"
+                                                width="100%"
+                                            />
+                                        </div>
+
+                                        <Paragraph big style={{marginBottom: "48px"}}>
+                                            It’s vital to decide on the approach you want to take. The advice we present
+                                            in the rest of this guide can apply to either type of clothing boutique, so
+                                            please bear in mind the type you want to start when applying it to your own
+                                            circumstances.
+                                        </Paragraph>
+
+                                        <Heading size={2} style={{fontSize: "24px", textAlign: "left"}}>
+                                            Is a Boutique Right for You?
+                                        </Heading>
+
+                                        <Paragraph big style={{marginBottom: "48px"}}>
+                                            Although it can be exciting to form a boutique clothing business, there will be significant demands on you as a small business owner. Here are some of the things you can expect.
+                                        </Paragraph>
+
+                                        <Heading size={2} style={{fontSize: "24px", textAlign: "left"}}>
+                                            A Day in the Life of a Retail Business Owner
+                                        </Heading>
+
+                                        <Paragraph big style={{marginBottom: "48px"}}>
+                                            Here are some of the typical tasks you’ll be performing for your boutique clothing business on a daily basis.
+                                        </Paragraph>
+
                                         <CountingTextBoxed number={1}>
                                             <Paragraph bottomPadding={0} bottomMargin={0}>
-                                                Marketing for new clients
+                                                Seek out new clothing and garments that would fit well with your boutique
                                             </Paragraph>
                                         </CountingTextBoxed>
 
                                         <CountingTextBoxed number={2}>
                                             <Paragraph bottomPadding={0} bottomMargin={0}>
-                                                Dealing with inquiries from potential clients
+                                                Build your brand and focus on your unique clothing styles
                                             </Paragraph>
                                         </CountingTextBoxed>
 
                                         <CountingTextBoxed number={3}>
                                             <Paragraph bottomPadding={0} bottomMargin={0}>
-                                                Reading the latest research and studies in your field
+                                                Provide advice to customers on clothes that match their personal taste
                                             </Paragraph>
                                         </CountingTextBoxed>
 
                                         <CountingTextBoxed number={4}>
                                             <Paragraph bottomPadding={0} bottomMargin={0}>
-                                                Traveling to meet with clients or having them come to you
+                                                Sell clothing to customers and deal with customer service and returns
                                             </Paragraph>
                                         </CountingTextBoxed>
 
                                         <CountingTextBoxed number={5}>
                                             <Paragraph bottomPadding={0} bottomMargin={0}>
-                                                Holding coaching sessions
+                                                Handle the marketing for your boutique clothing business
                                             </Paragraph>
                                         </CountingTextBoxed>
 
                                         <CountingTextBoxed number={6}>
                                             <Paragraph bottomPadding={0} bottomMargin={0}>
-                                                Writing up coaching sessions
+                                                Deal with clothing suppliers and distribution of your garments
                                             </Paragraph>
                                         </CountingTextBoxed>
 
                                         <CountingTextBoxed number={7}>
                                             <Paragraph bottomPadding={0} bottomMargin={0}>
-                                                Dealing with financials and administration
+                                                Handle financial and administrative management
                                             </Paragraph>
                                         </CountingTextBoxed>
-
-                                        <CountingTextBoxed number={8}>
-                                            <Paragraph bottomPadding={0} bottomMargin={0}>
-                                                Life coaches: Ongoing training in psychology, counseling and related
-                                                fields
-                                            </Paragraph>
-                                        </CountingTextBoxed>
-
-                                        <CountingTextBoxed number={9}>
-                                            <Paragraph bottomPadding={0} bottomMargin={0}>
-                                                Life coaches: Researching specific questions or problems your clients
-                                                may have
-                                            </Paragraph>
-                                        </CountingTextBoxed>
-
-                                        <CountingTextBoxed number={10}>
-                                            <Paragraph bottomPadding={0} bottomMargin={0}>
-                                                Business coaches: Learning about the business you’re providing coaching
-                                                for, including strategy, financials and the executive team
-                                            </Paragraph>
-                                        </CountingTextBoxed>
-
-                                        <div style={{marginBottom: "76px"}}>
-                                            <CountingTextBoxed number={11} style={{marginBottom: "76px"}}>
-                                                <Paragraph bottomPadding={0} bottomMargin={0}>
-                                                    Business coaches: Research into the sector or industry of the
-                                                    business you’re providing coaching for
-                                                </Paragraph>
-                                            </CountingTextBoxed>
-                                        </div>
 
                                         <Heading size={2} style={{fontSize: "24px", textAlign: "left"}}>
-                                            Skills Needed by a Life or Business Coach
+                                            Skills Needed by a Boutique Business Entrepreneur
                                         </Heading>
                                         <Paragraph big style={{marginBottom: "48px"}}>
-                                            The following skills will be very useful in your role as a life or business
-                                            coach:
+                                            The following skills will be very useful in your role as a boutique clothing small business owner.
                                         </Paragraph>
 
                                         <div style={{marginBottom: "30px"}}>
                                             <Adventages
-                                                headline="Excellent interpersonal and influencing skills to talk with and listen to clients"
+                                                headline="Ability to research new trends and tastes in the clothing marketplace and garment industry"
                                                 width="100%"
                                             />
                                         </div>
 
                                         <div style={{marginBottom: "30px"}}>
                                             <Adventages
-                                                headline="Powerful analysis and investigative skills to get to the root of an issue"
+                                                headline="A strong eye for style and branding so you can develop a unique niche for your clothes"
                                                 width="100%"
                                             />
                                         </div>
 
                                         <div style={{marginBottom: "30px"}}>
                                             <Adventages
-                                                headline="Good marketing skills to promote your coaching business"
+                                                headline="Good insight into customer tastes to help you sell clothes and manage inventory"
                                                 width="100%"
                                             />
                                         </div>
 
                                         <div style={{marginBottom: "48px"}}>
                                             <Adventages
-                                                headline="Strong administration skills so you can stay on top of your schedule and finances"
+                                                headline="Financial management acumen so you can price items appropriately and pay bills"
                                                 width="100%"
                                             />
                                         </div>
 
                                         <div style={{marginBottom: "48px"}}>
                                             <Adventages
-                                                headline="Strong research skills so you can understand the history and context of the individuals and businesses you’re helping"
-                                                width="100%"
-                                            />
-                                        </div>
-
-                                        <Heading size={2} style={{fontSize: "24px", textAlign: "left"}}>
-                                            What Your Coaching Clients Are Looking For
-                                        </Heading>
-                                        <Paragraph big style={{marginBottom: "48px"}}>
-                                            Ultimately, people come to a coach because they want to improve their life or business.
-                                        </Paragraph>
-
-                                        <Heading size={2} style={{fontSize: "24px", textAlign: "left"}}>
-                                            What Life Coaching Clients Want
-                                        </Heading>
-
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                headline="Properties that match the listings provided by the host"
-                                                width="100%"
-                                            />
-                                        </div>
-
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                headline="Dealing with particular issues in their past that are stopping them moving forward"
-                                                width="100%"
-                                            />
-                                        </div>
-
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                headline="Helping them come to terms with their existing life circumstances and challenges"
-                                                width="100%"
-                                            />
-                                        </div>
-
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                headline="Preparing them for the future and giving them useful tools and techniques"
-                                                width="100%"
-                                            />
-                                        </div>
-
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                headline="Reassuring them about how you’ve helped previous clients"
-                                                width="100%"
-                                            />
-                                        </div>
-
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                headline="Reassuring them about how you’ve helped previous clients"
-                                                width="100%"
-                                            />
-                                        </div>
-
-                                        <Heading size={2} style={{fontSize: "24px", textAlign: "left"}}>
-                                            What Business Coaching Clients Want
-                                        </Heading>
-
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                headline="Proven return on investment for business coaching services"
-                                                width="100%"
-                                            />
-                                        </div>
-
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                headline="Demonstrated understanding of their business and sector"
-                                                width="100%"
-                                            />
-                                        </div>
-
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                headline="Strong expertise in dealing with specific needs (e.g., productivity, management styles, culture or organizational change)"
-                                                width="100%"
-                                            />
-                                        </div>
-
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                headline="Detailed statistics on improvements as a result of business coaching"
+                                                headline="Excellent interpersonal skills to help you deal with and sell to customers"
                                                 width="100%"
                                             />
                                         </div>
