@@ -15,6 +15,7 @@ const UseFulTools = () => (
 
 const Wrapper = styled.section`
 padding-top: 100px;
+margin-bottom: 150px;
 `;
 
 

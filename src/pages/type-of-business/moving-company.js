@@ -17,8 +17,9 @@ import OrderNow from "../../atomic/sections/type-of-business/moving-company/orde
 import Regulations from "../../atomic/sections/type-of-business/moving-company/regulations";
 import InsuranceBusiness from "../../atomic/sections/type-of-business/moving-company/insurance-business";
 import UseFulTools from "../../atomic/sections/type-of-business/moving-company/useful-tools";
-import Conclusion from "../../atomic/sections/type-of-business/moving-company/conclusion";
+import Conclusion from "../../atomic/sections/general/conclusion";
 import BusinessOwners from "../../atomic/sections/type-of-business/moving-company/business-owners";
+import TextCenterLayout from "../../atomic/partials/heading-left";
 
 const MovingCompanyPage = () => (
     <Layout>
@@ -62,7 +63,9 @@ const MovingCompanyPage = () => (
 
         <UseFulTools />
 
-        <Conclusion />
+        <Conclusion to="/" buttonTitle="Start your Moving Business with us, today">
+            <TextCenterLayout headline="Conclusion" text="As you can see, there are some great opportunities to start a successful relocation and moving business. If you can find a great niche, understand your competitors and put together a solid business plan, you will have every chance for success." />
+        </Conclusion>
     </Layout>
 );
 
