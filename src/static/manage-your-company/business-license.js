@@ -82,15 +82,15 @@ export const about = {
         `How Do I Apply For A Business License?`,
     list: [
         {
-            text:
+            text: 
                 `You'll need to get a license for a small fee to operate a business at the address of location.`,
         },
         {
-            text:
+            text: 
                 `Next, your company will need an Assumed Name under which to register, or you can incorporate your business and use your formal name.`,
         },
         {
-            text:
+            text: 
                 `Then, if you operate from home or plan to remodel a space, for example, you'll need to obtain permits to do so. Other permits covering serving alcohol, displaying a sign on the building exterior and even parking for your business might also be a requirement. 
                 A great place to research your local zoning and operating laws is the nearest Small Business Development Center (SBDC).`,
             link: {
@@ -101,9 +101,9 @@ export const about = {
             },
         },
         {
-            text:
-            `Finally, a business must register with the state tax office and submit appropriate taxes on the schedule indicated by your secretary of state.`,
-        },
+            text: 
+                `Finally, a business must register with the state tax office and submit appropriate taxes on the schedule indicated by your secretary of state.`,
+        }
     ],
 }
 
@@ -126,6 +126,8 @@ export const whatyouget = {
       `What comes with the Business License Research Package?`,
     text:
       `To make it easier, our trusted licensing partner will provide you with a comprehensive package of all the licenses, permits and tax registrations required for your business as well as the application forms to file with the appropriate licensing authorities.`,
+    header2:
+      `What you'll get`,
     list: [
         `Licenses`,
         `Permits`,
@@ -135,4 +137,22 @@ export const whatyouget = {
     text2:
       `Your customized Business License Research Package will be emailed to you within 5 business days of your company being filed by the state. 
       Remember that operating your business without the required licenses can expose you to risks and fines from state and local governments.`,
+}
+
+export const cta = {
+    header:
+        `Incfile's Business License Research Package`,
+    text:
+        `With Incfile's Business License Research Package, you'll have everything you need to apply for your licenses and meet the requirements for your business.`,
+    button: {
+        text:
+            `Start your business with us, today!`,
+        url:
+            `#`
+    },
+}
+
+export const researchpackage = {
+    header:
+        `As part of the Business License Research Package, a licensing expert will...`,
 }

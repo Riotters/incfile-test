@@ -5,13 +5,13 @@ const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
 
-    @media (min-width: 769px) {
+    @media (min-width: ${props => props.mediaXL ? "1200px" : "769px"}) {
         flex-direction: row;
     }
 `;
 
-const TopButtonsBox = ({ children}) => (
-    <Wrapper>
+const TopButtonsBox = ({ children, mediaXL }) => (
+    <Wrapper mediaXL={mediaXL}>
         {children}
     </Wrapper>
 );

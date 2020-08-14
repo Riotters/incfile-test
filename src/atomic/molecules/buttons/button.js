@@ -35,6 +35,14 @@ const Wrapper = styled(Link)`
     white-space: nowrap;
     margin: ${(props) => (props.marginMD ? props.marginMD : "")};
   }
+
+  @media (min-width: 992px) {
+    margin: ${(props) => (props.marginLG ? props.marginLG : "")};
+  }
+
+  @media (min-width: 1200px) {
+    margin: ${(props) => (props.marginXL ? props.marginXL : "")};
+  }
   
   @media (min-width: ${(props) => (props.width)}) {
     max-width: ${(props) => (props.width)}
@@ -106,8 +114,8 @@ const Arrow = styled.div`
   }
 `;
 
-const Button = ({ content, className, theme, height, width, arrow, arrow2, margin, marginMD, padding, right }) => (
-  <Wrapper className={className} to={content.url ? content.url : content} height={height} width={width} arrow={arrow} arrow2={arrow2} theme={theme} margin={margin} marginMD={marginMD} padding={padding}>
+const Button = ({ content, className, theme, height, width, arrow, arrow2, margin, marginMD, marginLG, padding, right }) => (
+  <Wrapper className={className} to={content.url ? content.url : content} height={height} width={width} arrow={arrow} arrow2={arrow2} theme={theme} margin={margin} marginMD={marginMD} marginLG={marginLG} padding={padding}>
     {content.text ? content.text : content}
     {arrow && (
       <Arrow className="arrow1" theme={theme} right={right}>
