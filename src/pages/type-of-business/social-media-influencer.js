@@ -1,0 +1,67 @@
+import React from "react";
+import Layout from "../../components/layout";
+import Top from "../../components/partials/sections/top";
+import SEO from "../../components/seo";
+import Button from "../../components/button";
+import RatingRow from "../../atomic/atoms/boxes/rating-row";
+import CartBlock from "../../atomic/molecules/blocks/cart-block";
+import RatingBlock from "../../atomic/molecules/blocks/rating-block";
+import styled from "styled-components";
+import BlueContainer from "../../atomic/sections/type-of-business/social-media-influencer/blue-container";
+import SettingBusiness from "../../atomic/sections/type-of-business/social-media-influencer/setting-business";
+import Conclusion from "../../atomic/sections/general/conclusion";
+import PageTabs from "../../atomic/sections/type-of-business/social-media-influencer/page-tabs";
+import BusinessPlan from "../../atomic/sections/type-of-business/social-media-influencer/boutique-business-plan";
+import BusinessStructure from "../../atomic/sections/type-of-business/social-media-influencer/business-structure";
+import Taxes from "../../atomic/sections/type-of-business/social-media-influencer/taxes";
+import TextCenterLayout from "../../atomic/partials/heading-left";
+
+const SocialMediaInfluencer = () => (
+    <Layout>
+        <SEO title="How to Start a Business as a Social Media Influencer"
+             description="Learn all about nonprofit corporations, including the benefits & disadvantages, getting 501c3 status, and what's needed to get your company off the ground."/>
+
+        <Top ovalColor="green" imageName="bouthique-clothing" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
+            <h1>How to Start a Business as a Social Media Influencer</h1>
+            <p>Influencer marketing is becoming an increasingly popular way
+                to promote companies, brands, products and services.</p>
+            <ButtonsBox>
+                <Button theme="primary56" marginMD="0 24px 0 0" arrow>
+                    Start Now
+                </Button>
+            </ButtonsBox>
+
+            <RatingRow>
+                <CartBlock/>
+                <RatingBlock/>
+            </RatingRow>
+        </Top>
+
+        <PageTabs />
+
+        <SettingBusiness/>
+
+        <BlueContainer/>
+
+        <BusinessPlan/>
+
+        <BusinessStructure />
+
+        <Taxes />
+
+        <Conclusion to="/" buttonTitle="Start your Social Media Influencer Business with us, today">
+            <TextCenterLayout headline="Conclusion" text="Social media has launched the careers of many successful influencer marketers. If you can find a great niche, understand your competitors and put together a solid business plan, you will have every chance for success" />
+        </Conclusion>
+    </Layout>
+);
+
+const ButtonsBox = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 769px) {
+    flex-direction: row;
+  }
+`;
+
+export default SocialMediaInfluencer;

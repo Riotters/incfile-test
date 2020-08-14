@@ -28,7 +28,7 @@ const BoutiqueClothingBusiness = () => (
         <SEO title="How to Start a Traditional or Online Boutique Clothing Business"
              description="Learn all about nonprofit corporations, including the benefits & disadvantages, getting 501c3 status, and what's needed to get your company off the ground."/>
 
-        <Top ovalColor="purple" imageName="bouthique-clothing" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
+        <Top ovalColor="purple" imageName="social-media-influencer" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
             <h1>How to Start a Traditional or Online Boutique Clothing Business</h1>
             <p>Fashion and beautiful clothing have always been in demand,
                 and if you have an eye for style, a boutique clothing business
@@ -45,7 +45,7 @@ const BoutiqueClothingBusiness = () => (
             </RatingRow>
         </Top>
 
-        <BoutiqueClothingTabs/>
+        <BoutiqueClothingTabs />
 
         <TypeOfBusiness/>
 

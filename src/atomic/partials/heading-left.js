@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
-import ArrowLink from "../../arrow-link"
-import VisibilitySensor from "../../VisibilitySensor"
+import ArrowLink from "../molecules/buttons/button"
+import VisibilitySensor from "../VisibilitySensor"
 
 const Wrapper = styled.div`
   display: flex;
