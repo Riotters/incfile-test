@@ -6,6 +6,7 @@ import {Link} from "gatsby"
 import ArrowSVG from "../images/arrow.inline.svg";
 import IconCircle from "./icons/circle";
 import Image from "../atomic/atoms/image/image";
+import CloseIcon from "../images/icons/close.inline.svg"
 
 const Wrapper = styled.div`
     padding-top: 24px;
@@ -67,7 +68,7 @@ const Circle = styled.span`
         line-height: 24px;
     }
     
-    svg {
+    svg.modify {
         height: 20px;
         width: 20px;
         fill: none;
@@ -78,6 +79,14 @@ const Circle = styled.span`
         stroke-dasharray: 18;
         stroke-dashoffset: 0;
         transform: translate3d(0, 0, 0);
+        z-index: 1;
+    }
+    
+    svg.close {
+        height: 30px;
+        width: 30px;
+        fill: none;
+        stroke: ${props => props.colorStroke};
         z-index: 1;
     }
 `;
@@ -94,15 +103,21 @@ const AdeventageLink = styled(Link)`
       }
 `;
 
-const Adventages = ({className, headline, text, colorStroke, circleBackgroundColor, circleBackgroundShadow, circlePosition, circleText, url, urlText, style, width, imageName}) => {
+const Adventages = ({className, headline, text, colorStroke, circleBackgroundColor, circleBackgroundShadow, circlePosition, circleText, url, urlText, style, width, imageName, disadventage}) => {
     return (
         <Wrapper className={className} headline={headline} text={text} style={style} width={width}>
             <Box width={width}>
                 <Circle position={circlePosition} circleBackgroundColor={circleBackgroundColor}
                         circleBackgroundShadow={circleBackgroundShadow} colorStroke={colorStroke}>
-                    {!circleText &&
-                    <svg viewBox="-1 0 16 12">
+                    {!circleText && !disadventage &&
+                    <svg className="modify" viewBox="-1 0 16 12">
                         <polyline points="2 6 4.5 9 10.5 3"></polyline>
+                    </svg>
+                    }
+
+                    {!circleText && disadventage &&
+                    <svg className="close" viewBox="0 0 32 32">
+                        <path fill="#FFF" d="M11.78 10.263L16 14.484l4.22-4.221c.391-.39 1.024-.39 1.415 0l.102.102c.39.39.39 1.024 0 1.414L17.516 16l4.221 4.22c.39.391.39 1.024 0 1.415l-.102.102c-.39.39-1.024.39-1.414 0L16 17.516l-4.22 4.221c-.391.39-1.024.39-1.415 0l-.102-.102c-.39-.39-.39-1.024 0-1.414L14.484 16l-4.221-4.22c-.39-.391-.39-1.024 0-1.415l.102-.102c.39-.39 1.024-.39 1.414 0z"/>
                     </svg>
                     }
 
@@ -113,16 +128,16 @@ const Adventages = ({className, headline, text, colorStroke, circleBackgroundCol
                 </Circle>
 
                 {imageName &&
-                    <ImageWrapper>
-                        <Image filename={imageName} />
-                    </ImageWrapper>
+                <ImageWrapper>
+                    <Image filename={imageName}/>
+                </ImageWrapper>
                 }
                 {headline &&
-                    <h4>{headline}</h4>
+                <h4>{headline}</h4>
                 }
 
                 {text &&
-                    <p>{text}</p>
+                <p>{text}</p>
                 }
 
                 {url &&
@@ -147,7 +162,8 @@ Adventages.defaultProps = {
     colorStroke: color.white,
     circleBackgroundColor: color.green1,
     circleBackgroundShadow: shadow.green1,
-    width: "470px"
+    width: "470px",
+    disadventage: false
 }
 
 export default Adventages

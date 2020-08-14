@@ -117,10 +117,6 @@ const TextContainer = styled.div`
   padding-bottom: 120px;
 
   @media (min-width: 992px) {
-    padding-top: 50px;
-  }
-
-  @media (min-width: 992px) {
     width: 50%;
     align-items: flex-start;
   }
