@@ -15,6 +15,7 @@ const Flex = styled.div`
 const Content = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: ${props => props.contentCenter ? "center" : ""};
   width: 100%;
   max-width: 670px;
   padding-top: ${props => (props.paddingTop ? props.paddingTop : "60")}px;
@@ -46,7 +47,7 @@ const Imagebox = styled.div`
   }
 `;
 
-const Certificates = ({ children, image, paddingTop }) => {
+const Certificates = ({ children, image, paddingTop, contentCenter }) => {
   return (
     <Wrapper>
       <Container>
@@ -56,7 +57,7 @@ const Certificates = ({ children, image, paddingTop }) => {
                 <Image filename={image} />
             </Sticky>
           </Imagebox>
-          <Content paddingTop={paddingTop}>
+          <Content paddingTop={paddingTop} contentCenter={contentCenter}>
             {children}
           </Content>
         </Flex>

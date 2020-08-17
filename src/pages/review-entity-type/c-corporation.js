@@ -5,13 +5,17 @@ import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
 import Button from "../../atomic/molecules/buttons/button";
 //Sections
 import Top from "../../atomic/partials/top";
-import About from "../../atomic/sections/manage-your-company/annual-report/about"
-import Help from "../../atomic/sections/manage-your-company/annual-report/help"
-import Faq from "../../atomic/sections/manage-your-company/annual-report/faq"
-import Benefits from "../../components/partials/sections/benefits";
+import About from "../../atomic/sections/review-entity-type/c-corporation/about"
+import Adventages from "../../atomic/sections/review-entity-type/c-corporation/adventages"
+import Disdventages from "../../atomic/sections/review-entity-type/c-corporation/disadventages"
+import Differences from "../../atomic/sections/review-entity-type/c-corporation/differences"
+import Requirements from "../../atomic/sections/review-entity-type/c-corporation/requirements"
+import Rocket from "../../atomic/sections/review-entity-type/c-corporation/rocket"
+import Forming from "../../atomic/sections/review-entity-type/c-corporation/forming"
 import Articles from "../../components/partials/sections/articles";
+import Cta from "../../components/partials/sections/cta";
 //Texts
-import { top, about, help, faq } from "../../static/manage-your-company/annual-report"
+import { top, about, adventages, disadventages, differences, requirements, rocket, forming } from "../../static/review-entity-type/c-corporation"
 
 const CCorporation = () => (
   <Layout>
@@ -24,10 +28,15 @@ const CCorporation = () => (
       </Buttonsbox>
     </Top>
     <About content={about} />
-    <Help content={help} />
-    <Faq content={faq} />
-    <Benefits />
+    <Adventages content={adventages} />
+    <Disdventages content={disadventages} />
+    <Differences content={differences} />
+    <Requirements content={requirements} />
+    <Rocket content={rocket} />
+    <Forming content={forming} />
     <Articles />
+    <Cta />
+
   </Layout>
 );
 

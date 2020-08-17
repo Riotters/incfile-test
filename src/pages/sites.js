@@ -43,7 +43,7 @@ const ComponentsPage = () => (
     <Container>
         <Wrapper>
             <h1>List of all sites</h1>
-            <Link to="/">Nonprofit</Link>
+            <h2>Manage Your Company</h2>
             <Link to="/manage-your-company">Manage your company (no details)</Link>
             <Link to="/manage-your-company/annual-report">Annual report</Link>
             <Link to="/manage-your-company/business-license">Business license</Link>
@@ -58,9 +58,14 @@ const ComponentsPage = () => (
             <Link to="/manage-your-company/corporate-llc-kit">Corporate LLC Kit (no details)</Link>
             <Link to="/manage-your-company/filling-business-taxes">Filling Business Taxes</Link>
             <Link to="/manage-your-company/fictitious-business">Fictitious Business</Link>
-            <Link to="/review-entity-type/c-corporation">RET C Corporation</Link>
+            <h2>Review Entity Type</h2>
+            <Link to="/">Nonprofit</Link>
+            <Link to="/review-entity-type/c-corporation">C Corporation (no details)</Link>
+            <Link to="/review-entity-type/llc">LLC (no details)</Link>
+            <h2>Blog</h2>
             <Link to="/blog">Blog (no API)</Link>
             <Link to="/article">Article (no API)</Link>
+            <h2>Type of Business</h2>
             <Link to="/type-of-business/airbnb">Airbnb (WIP)</Link>
             <Link to="/type-of-business/coach">Coach (no details)</Link>
             <Link to="/type-of-business/moving-company">Moving Company (no details)</Link>

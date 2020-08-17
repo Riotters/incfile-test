@@ -50,8 +50,8 @@ const Wrapper = styled.span`
     pointer-events: none;
 
     @media(min-width: 576px) {
-      height: ${props => props.theme === "empty" ? 5 : (props.heightSM ? props.heightSM : 32)}px;
-      width: ${props => props.widthSM ? props.widthSM : 32}px;
+      height: ${props => props.theme === "empty" ? 5 : (props.heightSM ? props.heightSM : "")}px;
+      width: ${props => props.widthSM ? props.widthSM : ""}px;
     }
 
 
