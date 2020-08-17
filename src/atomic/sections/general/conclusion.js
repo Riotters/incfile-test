@@ -8,7 +8,7 @@ import Button from "../../molecules/buttons/button";
 const Conclusion = ({buttonTitle, children, to}) => (
     <ConclusionWrapper>
         <Oval>
-            <Image filename="oval-conclusion"/>
+            <Image filename="oval-conclusion-1"/>
         </Oval>
         <Container>
             <ImageBox>

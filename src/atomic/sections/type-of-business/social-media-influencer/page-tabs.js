@@ -18,6 +18,12 @@ import Adventages from "../../../../components/adventages";
 import CountingTextBoxed from "../../../molecules/text-blocks/counting-text-boxed";
 import {color} from "../../../atoms/styles/colors"
 import {shadow} from "../../../atoms/styles/shadows"
+import Colorbox from "../../../../components/color-box";
+import {
+    AveragePricingFollowerCount,
+    AveragePricingNiche
+} from "../../../../static/type-of-business/social-media-influencer";
+import AveragePricing from "../../../molecules/mixed-blocks/average-pricing";
 
 const cn = (...args) => args.filter(Boolean).join(" ");
 
@@ -283,26 +289,43 @@ const PageTabs = ({layout, columns}) => (
                                         }
                                         layout={layout}
                                     >
-                                        <Heading size={3} >Starting a Business as a Social Media Influencer</Heading>
+                                        <Heading size={3}>Starting a Business as a Social Media Influencer</Heading>
                                         <Paragraph big>
-                                            Social networks like Instagram and YouTube are dominated by influencers whose followers act as a built-in audience for photogenic or disruptive brands. And it’s easy to see why — in a digital media landscape that throws ads at us everywhere we go, some people turn to celebrities and social media stars for advice on what products they love.
+                                            Social networks like Instagram and YouTube are dominated by influencers
+                                            whose followers act as a built-in audience for photogenic or disruptive
+                                            brands. And it’s easy to see why — in a digital media landscape that throws
+                                            ads at us everywhere we go, some people turn to celebrities and social media
+                                            stars for advice on what products they love.
                                         </Paragraph>
                                         <Paragraph big style={{marginBottom: "50px"}}>
-                                            The question is, how can you become a social influencer and marketer and start a business based on the brands and products you share with your followers? It’s a crowded space, but for those who make it as influencer marketers, the rewards can be significant. We’ll share information on what it means to be an influencer, how you can turn that into a business, the best platforms to use and other useful advice.
+                                            The question is, how can you become a social influencer and marketer and
+                                            start a business based on the brands and products you share with your
+                                            followers? It’s a crowded space, but for those who make it as influencer
+                                            marketers, the rewards can be significant. We’ll share information on what
+                                            it means to be an influencer, how you can turn that into a business, the
+                                            best platforms to use and other useful advice.
                                         </Paragraph>
 
-                                        <Heading size={3} style={{fontSize: "20px"}}>How Social Media Influencer Marketing Works on Instagram, YouTube and Other Networks</Heading>
+                                        <Heading size={3} style={{fontSize: "20px"}}>How Social Media Influencer
+                                            Marketing Works on Instagram, YouTube and Other Networks</Heading>
                                         <Paragraph big>
-                                            Here’s how brands, influencers, social networks and end customers interact in influencer marketing.
+                                            Here’s how brands, influencers, social networks and end customers interact
+                                            in influencer marketing.
                                         </Paragraph>
 
                                         <CountingTextBoxed number={1}>
                                             <div>
                                                 <Heading size={4} style={{fontSize: "16px"}}>
-                                                    Brand or Marketing Agency Finds an Influencer With the Right Audience
+                                                    Brand or Marketing Agency Finds an Influencer With the Right
+                                                    Audience
                                                 </Heading>
                                                 <Paragraph bottomPadding={0} bottomMargin={0}>
-                                                    Once they understand audience demographics, a brand will look for influencers who have that audience. They will explore areas like follower counts, the influencer’s interests, the type of posts they create and various other factors. They will narrow influencers down to a short list and identify those most likely to connect with their desired target market.
+                                                    Once they understand audience demographics, a brand will look for
+                                                    influencers who have that audience. They will explore areas like
+                                                    follower counts, the influencer’s interests, the type of posts they
+                                                    create and various other factors. They will narrow influencers down
+                                                    to a short list and identify those most likely to connect with their
+                                                    desired target market.
                                                 </Paragraph>
                                             </div>
                                         </CountingTextBoxed>
@@ -313,7 +336,12 @@ const PageTabs = ({layout, columns}) => (
                                                     Brand Identifies a Product or Service
                                                 </Heading>
                                                 <Paragraph bottomPadding={0} bottomMargin={0}>
-                                                    Brands have certain products or services that they want to promote to audiences that are hard to reach via other means. For example, they may have a new clothing line targeted at women between the ages of 18 and 22. The brand decides which products they want to promote and defines an audience for each one, typically including age, gender, location, interests and similar demographics.
+                                                    Brands have certain products or services that they want to promote
+                                                    to audiences that are hard to reach via other means. For example,
+                                                    they may have a new clothing line targeted at women between the ages
+                                                    of 18 and 22. The brand decides which products they want to promote
+                                                    and defines an audience for each one, typically including age,
+                                                    gender, location, interests and similar demographics.
                                                 </Paragraph>
                                             </div>
                                         </CountingTextBoxed>
@@ -324,7 +352,9 @@ const PageTabs = ({layout, columns}) => (
                                                     Approach the Influencer and Arrange Terms for Sharing the Product
                                                 </Heading>
                                                 <Paragraph bottomPadding={0}>
-                                                    This is where it gets interesting. Typically, a brand or marketing agency will approach individual influencers and discuss terms for promoting their products. This will include areas like:
+                                                    This is where it gets interesting. Typically, a brand or marketing
+                                                    agency will approach individual influencers and discuss terms for
+                                                    promoting their products. This will include areas like:
                                                 </Paragraph>
 
                                                 <ListWrapper>
@@ -339,7 +369,8 @@ const PageTabs = ({layout, columns}) => (
                                                     <div>
                                                         <CkeckText>
                                                             <Paragraph big bottomMargin={16}>
-                                                                Social networks where the influencer will share their posts
+                                                                Social networks where the influencer will share their
+                                                                posts
                                                             </Paragraph>
                                                         </CkeckText>
                                                     </div>
@@ -347,7 +378,9 @@ const PageTabs = ({layout, columns}) => (
                                                     <div>
                                                         <CkeckText>
                                                             <Paragraph big bottomMargin={16}>
-                                                                Payment amounts for promoting the brand, product or service (on a per post, per purchase, campaign or other basis)
+                                                                Payment amounts for promoting the brand, product or
+                                                                service (on a per post, per purchase, campaign or other
+                                                                basis)
                                                             </Paragraph>
                                                         </CkeckText>
                                                     </div>
@@ -355,7 +388,8 @@ const PageTabs = ({layout, columns}) => (
                                                     <div>
                                                         <CkeckText>
                                                             <Paragraph big bottomMargin={16}>
-                                                                How often the influencer is expected to post on their social media accounts
+                                                                How often the influencer is expected to post on their
+                                                                social media accounts
                                                             </Paragraph>
                                                         </CkeckText>
                                                     </div>
@@ -363,7 +397,8 @@ const PageTabs = ({layout, columns}) => (
                                                     <div>
                                                         <CkeckText>
                                                             <Paragraph big bottomMargin={16}>
-                                                                Any hashtags and language that needs to be included in posts
+                                                                Any hashtags and language that needs to be included in
+                                                                posts
                                                             </Paragraph>
                                                         </CkeckText>
                                                     </div>
@@ -385,7 +420,12 @@ const PageTabs = ({layout, columns}) => (
                                                     Social Media Influencer Posts About the Brand, Product or Service
                                                 </Heading>
                                                 <Paragraph bottomPadding={0} bottomMargin={0}>
-                                                    After terms have been agreed to, the influencer will create posts to promote the brand, product or service. They might use predesigned imagery, photograph a product themselves or work with a brand or marketing agency on other types of content. Once the posts have been created, they are then shared with the audience, typically on a predefined timetable.
+                                                    After terms have been agreed to, the influencer will create posts to
+                                                    promote the brand, product or service. They might use predesigned
+                                                    imagery, photograph a product themselves or work with a brand or
+                                                    marketing agency on other types of content. Once the posts have been
+                                                    created, they are then shared with the audience, typically on a
+                                                    predefined timetable.
                                                 </Paragraph>
                                             </div>
                                         </CountingTextBoxed>
@@ -396,7 +436,12 @@ const PageTabs = ({layout, columns}) => (
                                                     Audience Interacts and Buys the Product
                                                 </Heading>
                                                 <Paragraph bottomPadding={0} bottomMargin={0}>
-                                                    The post is shared with the audience and they purchase the offering based on the influencer’s endorsement. The brand or marketing agency will track the success of their social media influencer marketing campaigns based on the revenue they generate. This helps the brand understand their return on investment and which influencers are most effective.
+                                                    The post is shared with the audience and they purchase the offering
+                                                    based on the influencer’s endorsement. The brand or marketing agency
+                                                    will track the success of their social media influencer marketing
+                                                    campaigns based on the revenue they generate. This helps the brand
+                                                    understand their return on investment and which influencers are most
+                                                    effective.
                                                 </Paragraph>
                                             </div>
                                         </CountingTextBoxed>
@@ -406,126 +451,212 @@ const PageTabs = ({layout, columns}) => (
                                 <Panel>
                                     <PanelWrapper className="panel2" layout={layout}>
                                         <Heading size={2} style={{fontSize: "24px", textAlign: "left"}}>
-                                            Why You Should Start a New Boutique Clothing Business
+                                            Statistics on the Power of the Social Media Influencer Marketing Industry
                                         </Heading>
                                         <Paragraph big style={{marginBottom: "76px"}}>
-                                            Clothing is one of the most popular retail sectors. Here are some surprising
-                                            statistics:
+                                            Social media influencer marketing has some impressive numbers to
+                                            back it up:
                                         </Paragraph>
 
-                                        <BlueBoxWithAbsoluteText absoluteText="$20B"
-                                                                 text="Clothing boutiques earn over $20 billion in the U.S. every year"/>
-                                        <BlueBoxWithAbsoluteText absoluteText="150K"
-                                                                 text="There are over 150,000 boutique clothing businesses in the U.S., employing over 250,000 people"/>
-                                        <BlueBoxWithAbsoluteText absoluteText="$700K"
-                                                                 text="Worldwide revenue for online clothing is expected to rise to over $700 billion by 2022"/>
+                                        <BlueBoxWithAbsoluteText absoluteText="1.5M"
+                                                                 text="There were over 1.5 million influencer posts on Instagram in 2017."/>
+                                        <BlueBoxWithAbsoluteText absoluteText="$2B"
+                                                                 text="Worth of influencer marketing industry in 2017, and is expected to be worth $10 billion over the next couple of years."/>
+                                        <BlueBoxWithAbsoluteText absoluteText="18-34"
+                                                                 text="Almost three-quarters of influencers on Instagram are in the 18-to-34 age range."/>
 
                                         <div style={{marginBottom: "30px"}}>
                                             <Adventages
-                                                headline="On average, a boutique clothing business earns over $130,000 a year and employs between one and two people"
+                                                headline="Even micro-influencers are being sought out by brands, as they see higher levels of engagement than traditional celebrities and other marketing channels."
                                                 width="100%"
                                             />
                                         </div>
 
                                         <div style={{marginBottom: "30px"}}>
                                             <Adventages
-                                                headline="The traditional, brick-and-mortar clothing boutique is facing challenges, so more clothing entrepreneurs are selling online"
+                                                headline="Influencer marketing generates a high return on investment for brands and marketing agencies (by as much as 600 percent)."
                                                 width="100%"
                                             />
                                         </div>
 
                                         <div style={{marginBottom: "30px"}}>
                                             <Adventages
-                                                headline="Worldwide revenue for online clothing is expected to rise to over $700 billion by 2022"
+                                                headline="Influencer marketing is the fastest growing promotional channel."
                                                 width="100%"
                                             />
                                         </div>
 
                                         <div style={{marginBottom: "30px"}}>
                                             <Adventages
-                                                headline="The average online customer spends between $280 and $300 a year on clothes"
-                                                width="100%"
-                                            />
-                                        </div>
-
-                                        <div style={{marginBottom: "48px"}}>
-                                            <Adventages
-                                                headline="Online boutique revenue is expected to grow by around 9 percent a year in the U.S."
+                                                headline="The influencer marketing industry was worth around $2 billion in 2017 and is expected to be worth $10 billion over the next couple of years."
                                                 width="100%"
                                             />
                                         </div>
 
                                         <Paragraph big style={{marginBottom: "76px"}}>
-                                            This is why Airbnb businesses are so exciting — how can you be a part of
-                                            that success? We're here to help you figure that out.
+                                            As you can see, if you’ve got the makings of an influencer marketer, the
+                                            size and growth potential of the industry could give you an amazing
+                                            opportunity.
                                         </Paragraph>
                                     </PanelWrapper>
                                 </Panel>
                                 <Panel>
                                     <PanelWrapper className="panel3" layout={layout}>
                                         <Heading size={2} style={{fontSize: "24px", textAlign: "left"}}>
-                                            An Online Boutique vs. a Brick-and-Mortar Store
+                                            What It Means to Be a Social Media Influencer on Instagram, YouTube and
+                                            Other Networks
                                         </Heading>
                                         <Paragraph big style={{marginBottom: "48px"}}>
-                                            One of the biggest questions a boutique clothing entrepreneur will need to
-                                            answer is whether to start a traditional, in-person boutique, an online
-                                            boutique or a combination of the two. Each of these options has advantages
-                                            and challenges.
+                                            If this sounds like something you want to be involved with, it’s important
+                                            to understand what brands and marketing agencies are looking for. This could
+                                            include:
                                         </Paragraph>
 
-                                        <Heading size={2} style={{fontSize: "24px", textAlign: "left"}}>
-                                            Starting a Traditional Brick-and-Mortar Clothing Boutique
-                                        </Heading>
-
-                                        <Heading size={3} style={{fontSize: "20px", textAlign: "left"}}>
-                                            Advantages
-                                        </Heading>
-
                                         <div style={{marginBottom: "30px"}}>
                                             <Adventages
-                                                headline="You get visibility on the street, so passing customers can drop into your clothing store"
+                                                headline="A large follower count (preferably 100,000 followers or more)"
                                                 width="100%"
                                             />
                                         </div>
 
                                         <div style={{marginBottom: "30px"}}>
                                             <Adventages
-                                                headline="It’s easy to browse a range of clothing quickly so customers can find something they like"
+                                                headline="An active presence across one or more social media networks, especially Instagram, Facebook and YouTube"
                                                 width="100%"
                                             />
                                         </div>
 
                                         <div style={{marginBottom: "30px"}}>
                                             <Adventages
-                                                headline="Customers can try on clothing right then to see how they look"
+                                                headline="A niche for yourself, whether that’s sharing makeup and fashion tips, reviewing the latest technology or having a strong opinion and viewpoint"
                                                 width="100%"
                                             />
                                         </div>
 
                                         <div style={{marginBottom: "30px"}}>
                                             <Adventages
-                                                headline="Returns of clothing are likely to be minimal"
+                                                headline="Plenty of interactions from your followers, including onward sharing, likes and favorites"
                                                 width="100%"
                                             />
                                         </div>
 
                                         <div style={{marginBottom: "30px"}}>
                                             <Adventages
-                                                headline="There’s likely to be less competition, depending on where you’re located"
+                                                headline="An audience that is difficult to reach through traditional marketing channels, like teens and young women"
                                                 width="100%"
                                             />
                                         </div>
 
                                         <div style={{marginBottom: "30px"}}>
                                             <Adventages
-                                                headline="You can display clothes and create an atmosphere for your boutique to build ambiance"
+                                                headline="A deep, personal connection with your fans and followers"
                                                 width="100%"
                                             />
                                         </div>
 
                                         <Heading size={3} style={{fontSize: "20px", textAlign: "left"}}>
-                                            Disadvantages
+                                            How You Will Spend Your Days as a Social Media Influencer
                                         </Heading>
+
+                                        <Paragraph big style={{marginBottom: "48px"}}>
+                                            The main area you’ll be focusing on is creating original content. Your
+                                            followers will spot when you’re just sharing generic marketing messages, so
+                                            you need to personalize all of your posts. This could involve taking videos
+                                            of you using or wearing the product, staging beautiful photography or
+                                            creating engaging descriptions and copy.
+                                        </Paragraph>
+
+                                        <Paragraph big style={{marginBottom: "48px"}}>
+                                            You’ll need to post regularly as well — not just for the offerings you’re
+                                            being paid to promote, but about other aspects of your interests and life.
+                                            This helps to keep your followers engaged and encourages more people to
+                                            become fans.
+                                        </Paragraph>
+
+                                        <Paragraph big style={{marginBottom: "48px"}}>
+                                            You will also be reporting and sharing from others in your social network
+                                            and interacting with your followers to build personal connections. You may
+                                            also be seeking out marketing deals yourself and contacting agencies and
+                                            brands to offer your services.
+                                        </Paragraph>
+
+                                        <Heading size={3} style={{fontSize: "20px", textAlign: "left"}}>
+                                            How Instagram and Other Social Media Influencers Make Money
+                                        </Heading>
+
+                                        <Paragraph big style={{marginBottom: "48px"}}>
+                                            Influencers make money because brands and agencies pay them to promote their
+                                            products or services. You may get paid in several ways based on multiple
+                                            metrics:
+                                        </Paragraph>
+
+                                        <Colorbox className="box" color={color.blue3}>
+                                            <Heading size={4}>Here’s how social media influencers make money:</Heading>
+
+                                            <ul className="display-list">
+                                                <li>
+                                                    One time for a single post
+                                                </li>
+                                                <li>
+                                                    Multiple times, for each post you make in a particular influencer
+                                                    marketing campaign
+                                                </li>
+                                                <li>
+                                                    A set amount, based on the number of interactions, likes, shares and
+                                                    other metrics on your posts
+                                                </li>
+                                                <li>
+                                                    A percentage, based on the revenue generated as a result of your
+                                                    audience buying products and services
+                                                </li>
+                                            </ul>
+
+                                        </Colorbox>
+
+                                        <Paragraph big style={{marginBottom: "48px"}}>
+                                            You should work with the brand or marketing agency to agree on payment terms
+                                            that fairly represent the effort you’re putting in and the results they
+                                            expect to see. In terms of how much you can make, Instagram broke down the
+                                            average of what influencers were charging by follower count and category.
+                                            Here’s what they found:
+                                        </Paragraph>
+
+                                        <Heading size={3} style={{fontSize: "20px", textAlign: "left"}}>
+                                            Average Pricing Based on Follower Count
+                                        </Heading>
+
+                                        <div style={{marginBottom: "30px"}}>
+                                            {AveragePricingFollowerCount.map((item, index) => {
+                                                const rowLenght = AveragePricingFollowerCount.length;
+
+                                                return (
+                                                    <AveragePricing key={index} SvgIcon={item.icon} text={item.text}
+                                                                    first={(index === 0)}
+                                                                    last={(rowLenght === index + 1)}/>
+                                                )
+                                            })}
+                                        </div>
+
+                                        <Heading size={3} style={{fontSize: "20px", textAlign: "left"}}>
+                                            Average Pricing Based on Niche
+                                        </Heading>
+
+                                        <div style={{marginBottom: "30px"}}>
+                                            {AveragePricingNiche.map((item, index) => {
+                                                const rowLenght = AveragePricingNiche.length;
+
+                                                return (
+                                                    <AveragePricing
+                                                        key={index}
+                                                        SvgIcon={item.icon}
+                                                        text={item.text}
+                                                        first={(index === 0)}
+                                                        last={(rowLenght === index + 1)}
+                                                        backgroundColor={color.orange3}
+                                                    />
+                                                )
+                                            })}
+                                        </div>
 
                                         <div style={{marginBottom: "30px"}}>
                                             <Adventages
@@ -662,7 +793,9 @@ const PageTabs = ({layout, columns}) => (
                                         </Heading>
 
                                         <Paragraph big style={{marginBottom: "48px"}}>
-                                            Although it can be exciting to form a boutique clothing business, there will be significant demands on you as a small business owner. Here are some of the things you can expect.
+                                            Although it can be exciting to form a boutique clothing business, there will
+                                            be significant demands on you as a small business owner. Here are some of
+                                            the things you can expect.
                                         </Paragraph>
 
                                         <Heading size={2} style={{fontSize: "24px", textAlign: "left"}}>
@@ -670,12 +803,14 @@ const PageTabs = ({layout, columns}) => (
                                         </Heading>
 
                                         <Paragraph big style={{marginBottom: "48px"}}>
-                                            Here are some of the typical tasks you’ll be performing for your boutique clothing business on a daily basis.
+                                            Here are some of the typical tasks you’ll be performing for your boutique
+                                            clothing business on a daily basis.
                                         </Paragraph>
 
                                         <CountingTextBoxed number={1}>
                                             <Paragraph bottomPadding={0} bottomMargin={0}>
-                                                Seek out new clothing and garments that would fit well with your boutique
+                                                Seek out new clothing and garments that would fit well with your
+                                                boutique
                                             </Paragraph>
                                         </CountingTextBoxed>
 
@@ -719,7 +854,8 @@ const PageTabs = ({layout, columns}) => (
                                             Skills Needed by a Boutique Business Entrepreneur
                                         </Heading>
                                         <Paragraph big style={{marginBottom: "48px"}}>
-                                            The following skills will be very useful in your role as a boutique clothing small business owner.
+                                            The following skills will be very useful in your role as a boutique clothing
+                                            small business owner.
                                         </Paragraph>
 
                                         <div style={{marginBottom: "30px"}}>
