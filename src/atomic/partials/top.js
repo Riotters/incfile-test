@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { color } from "../atoms/styles/colors";
 import VisibilitySensor from "../VisibilitySensor";
 import Container from "../container";
-import Image from "../atoms/image/image";
+import Image from "../atoms/image/image_nobase64";
 import OvalSVG from "../../images/oval.inline.svg";
 
 const switch1 = (ovalColor) => {
@@ -97,7 +97,6 @@ const Oval = styled.div`
   top: 0;
   right: 0;
   z-index: -1;
-  overflow: hidden;
 
   @media (min-width: 992px) {
     width: 50%;
@@ -162,7 +161,7 @@ const TextContainer = styled.div`
       padding-bottom: 20px;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 992px) {
       max-width: ${(props) => (props.headlineWidth ? props.headlineWidth : "480")}px;
     }
   }
@@ -171,7 +170,7 @@ const TextContainer = styled.div`
     margin-bottom: 33px;
     text-align: center;
 
-    @media (min-width: 1200px) {
+    @media (min-width: 992px) {
       text-align: left;
       max-width: ${(props) => (props.headlineWidth ? props.headlineWidth : "480")}px;
     }

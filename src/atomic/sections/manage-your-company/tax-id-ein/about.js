@@ -13,7 +13,6 @@ import OvalSVG from "../../../../images/ovals/top-left-transparent-green3.inline
 
 const About = styled.section`
   position: relative;
-  padding-top: 75px;
   padding-bottom: 64px;
 
   p {

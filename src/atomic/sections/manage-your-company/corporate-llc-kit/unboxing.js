@@ -6,7 +6,6 @@ import UboxingFormationKit from "../../../organisms/kit/unboxing-formation-kit"
 
 const Unboxing = styled.section`
   position: relative;
-  padding-top: 75px;
   padding-bottom: 64px;
 
   .heading {

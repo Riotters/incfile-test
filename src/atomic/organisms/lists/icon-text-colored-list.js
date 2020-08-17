@@ -40,7 +40,7 @@ const Item = styled.li`
         position: absolute;
         top: 0;
         right: 32px;
-        transform: translateY(-52px);
+        transform: translateY(calc(-50% - 4px));
     }
 `;
 

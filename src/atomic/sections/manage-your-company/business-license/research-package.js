@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { color, gradient } from "../../../atoms/styles/colors";
+import { color } from "../../../atoms/styles/colors";
 import { shadow } from "../../../atoms/styles/shadows";
 import Curve from "../../../atoms/icons/curve";
 import CurveSVG from "../../../../images/curves/top-left-bottom-right.inline.svg";

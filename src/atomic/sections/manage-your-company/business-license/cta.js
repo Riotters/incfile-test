@@ -6,10 +6,8 @@ import { Paragraph } from "../../../atoms/typography/paragraph";
 import Button from "../../../molecules/buttons/button";
 import ImageContent from "../../../partials/left-content-right-image";
 import Oval from "../../../atoms/icons/oval";
-import Curve from "../../../atoms/icons/curve";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-orange2.inline.svg";
 import Oval2SVG from "../../../../images/ovals/top-right-transparent-orange.inline.svg";
-import CurveSVG from "../../../../images/curves/top-left-bottom-right.inline.svg";
 
 const Cta = styled.section`
   position: relative;

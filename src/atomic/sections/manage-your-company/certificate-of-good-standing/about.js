@@ -14,7 +14,6 @@ import StatusSVG from "../../../../images/icons/certificate-of-status.inline.svg
 
 const About = styled.section`
   position: relative;
-  padding-top: 75px;
   padding-bottom: 64px;
 
   p {

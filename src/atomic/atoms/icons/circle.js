@@ -49,6 +49,12 @@ const Wrapper = styled.span`
     border: 1px solid ${props => props.border ? props.border : "transparent"};
     pointer-events: none;
 
+    @media(min-width: 576px) {
+      height: ${props => props.theme === "empty" ? 5 : (props.heightSM ? props.heightSM : 32)}px;
+      width: ${props => props.widthSM ? props.widthSM : 32}px;
+    }
+
+
     svg {
         transform: ${props => props.transform ? props.transform : ""};
 
@@ -64,6 +70,8 @@ const Circle = ({
     theme,
     height,
     width,
+    heightSM,
+    widthSM,
     transform,
     circleColor,
     iconColor,
@@ -76,6 +84,8 @@ const Circle = ({
       theme={theme}
       height={height}
       width={width}
+      heightSM={heightSM}
+      widthSM={widthSM}
       transform={transform}
       circleColor={circleColor}
       iconColor={iconColor}

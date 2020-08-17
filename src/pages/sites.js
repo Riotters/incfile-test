@@ -46,7 +46,7 @@ const ComponentsPage = () => (
             <Link to="/">Nonprofit</Link>
             <Link to="/manage-your-company">Manage your company (no details)</Link>
             <Link to="/manage-your-company/annual-report">Annual report</Link>
-            <Link to="/manage-your-company/business-license">Business license (no details)</Link>
+            <Link to="/manage-your-company/business-license">Business license</Link>
             <Link to="/manage-your-company/certificate-of-good-standing">Certificate of good standing</Link>
             <Link to="/manage-your-company/change-of-registered-agent">Change of registered agent</Link>
             <Link to="/manage-your-company/trademark-name-search">Trademark name search</Link>

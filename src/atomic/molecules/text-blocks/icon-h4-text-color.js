@@ -37,13 +37,22 @@ const Wrapper = styled.div`
     margin-bottom: ${props => props.bottomMargin ? `${props.bottomMargin}px` : ""};
 
     .box {
-        padding: 40px 40px 40px 112px;
+        padding: 40px;
         border-radius: ${props => props.rounded ? "5px 50px 50px 5px" : ""};
 
+        @media(min-width: 576px) {
+            padding: 40px 40px 40px 112px;
+        }
+
         svg {
+            display: none;
             position: absolute;
             top: 40px;
             left: 40px;
+
+            @media(min-width: 576px) {
+                display: block;
+            }
         }
     }
 
