@@ -14,7 +14,7 @@ const Image = props => (
               relativePath
               name
               childImageSharp {
-                fluid(maxWidth: 900) {
+                fluid(maxWidth: 1800) {
                   ...GatsbyImageSharpFluid_noBase64
                 }
               }

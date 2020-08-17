@@ -58,6 +58,7 @@ const ComponentsPage = () => (
             <Link to="/manage-your-company/corporate-llc-kit">Corporate LLC Kit (no details)</Link>
             <Link to="/manage-your-company/filling-business-taxes">Filling Business Taxes</Link>
             <Link to="/manage-your-company/fictitious-business">Fictitious Business</Link>
+            <Link to="/review-entity-type/c-corporation">RET C Corporation</Link>
             <Link to="/blog">Blog (no API)</Link>
             <Link to="/article">Article (no API)</Link>
             <Link to="/type-of-business/airbnb">Airbnb (WIP)</Link>
