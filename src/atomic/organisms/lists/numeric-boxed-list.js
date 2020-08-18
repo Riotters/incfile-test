@@ -8,6 +8,7 @@ import CurveSVG from "../../../images/curves/bottom-left-top-right.inline.svg";
 import { Heading } from "../../atoms/typography/heading";
 import { Paragraph } from "../../atoms/typography/paragraph";
 import ArrowLink from "../../molecules/buttons/text";
+import NumericBox from "../../molecules/mixed-blocks/numeric-box"
 
 const Wrapper = styled.ul`
     width: 100%;
@@ -56,25 +57,7 @@ const NumericBoxedList = ({ className, content, curve, bottomMargin }) => {
             </Curve>
         )}
         {content.map((item, id) => (
-            <Whitebox>
-                <Circle>
-                    {id + 1}
-                </Circle>
-                <TextWrapper>
-                {item.header && (
-                    <Heading size="5" bottomMargin="36">{item.header}</Heading>
-                )}
-                {item.text && (
-                    <Paragraph bottomMargin="0">{item.text}</Paragraph>
-                )}
-                {item.url && (
-                    <Link content={item.url} bottomMargin="0" />
-                )}
-                {!item.header && !item.text && !item.url && (
-                    <Paragraph bottomMargin="0">{item}</Paragraph>
-                )}
-                </TextWrapper>
-            </Whitebox>
+            <NumericBox item={item} id={id} />
         ))}
     </Wrapper>
   )

@@ -62,6 +62,8 @@ const ComponentsPage = () => (
             <Link to="/">Nonprofit</Link>
             <Link to="/review-entity-type/c-corporation">C Corporation (no details)</Link>
             <Link to="/review-entity-type/llc">LLC (no details)</Link>
+            <h2>Learning Center Entity</h2>
+            <Link to="/learning-center-entity/help-center">Help Center (WIP)</Link>
             <h2>Blog</h2>
             <Link to="/blog">Blog (no API)</Link>
             <Link to="/article">Article (no API)</Link>

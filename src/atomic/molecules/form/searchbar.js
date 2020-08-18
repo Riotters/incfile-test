@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import SearchSVG from "../../../images/search.inline.svg"
+import { shadow } from "../../atoms/styles/shadows"
 
 const Wrapper = styled.div`
   display: flex;
@@ -9,6 +10,7 @@ const Wrapper = styled.div`
   height: 80px;
   width: 100%;
   position: relative;
+  box-shadow: ${shadow.white2};
 `
 
 const Box = styled.div`
