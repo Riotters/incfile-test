@@ -51,6 +51,32 @@ const Wrapper = styled.div`
                 }
             }
         }
+        
+        ul.display-list {
+            list-style: none;
+
+            li {
+                font-family: Avenir, sans-serif;
+                font-size: 16px;
+                line-height: 24px;
+                color: #63666E;
+                padding-left: 26px;
+                position: relative;
+
+                &::before {
+                    content: '\\2022';
+                    color: ${color.blue1};
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 0px;
+                    left: 6px;
+                }
+
+                &:not(:last-child) {
+                    margin-bottom: 12px;
+                }
+            }
+        }
     }
 
     & > svg {

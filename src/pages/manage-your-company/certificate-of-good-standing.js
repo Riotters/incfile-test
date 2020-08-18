@@ -16,7 +16,7 @@ import { top, about, help, faq } from "../../static/manage-your-company/certific
 const CertificateOfGoodStanding = () => (
   <Layout>
     <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
-    <Top imageName="mrs-bulb-buildings" imageAlt="Mr Bulb and buildings" ovalColor="blue">
+    <Top imageName="mrs-bulb-buildings" imageAlt="Mr Bulb in front of registration office" ovalColor="blue">
       <h1>{top.header}</h1>
       <p>{top.text}</p>
       <Buttonsbox>
