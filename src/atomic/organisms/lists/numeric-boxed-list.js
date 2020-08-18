@@ -67,11 +67,11 @@ const NumericBoxedList = ({ className, content, curve, bottomMargin }) => {
                 {item.text && (
                     <Paragraph bottomMargin="0">{item.text}</Paragraph>
                 )}
-                {!item.header && !item.text && (
-                    <Paragraph bottomMargin="0">{item}</Paragraph>
+                {item.url && (
+                    <Link content={item.url} bottomMargin="0" />
                 )}
-                {item.link && (
-                    <Link content={item.link} bottomMargin="0" />
+                {!item.header && !item.text && !item.url && (
+                    <Paragraph bottomMargin="0">{item}</Paragraph>
                 )}
                 </TextWrapper>
             </Whitebox>

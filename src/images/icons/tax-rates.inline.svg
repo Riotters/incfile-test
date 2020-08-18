@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33">
+    <g fill="none" fill-rule="evenodd" opacity=".75" transform="translate(0 2.5)">
+        <path fill="#FCE7D0" fill-rule="nonzero" d="M29 28.17c-.814.523-1.763.794-2.73.78l-20.55-.06c-.268-.01-.535-.038-.8-.08-1.627-.261-3.02-1.307-3.726-2.796-.705-1.489-.632-3.23.196-4.654l2-3.49L8.7 8.68l3-5.12c.12-.2.262-.388.42-.56 1.152-.752 2.564-.996 3.901-.674 1.338.322 2.485 1.18 3.169 2.374l10.27 17.82c1.032 1.797.85 4.044-.46 5.65z"/>
+        <path stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M29 27.51c-.81.53-1.761.806-2.73.79l-20.55-.07c-.268-.003-.536-.026-.8-.07-1.63-.26-3.026-1.307-3.732-2.799-.706-1.492-.63-3.236.202-4.661l2-3.49L8.73 8l3-5.13c.126-.215.27-.42.43-.61C13.195.973 14.798.28 16.444.409c1.646.128 3.123 1.06 3.946 2.491l10.23 17.9c1.338 2.31.625 5.265-1.62 6.71zM19.23 12.32L13.3 21.99"/>
+        <circle cx="20.36" cy="20.44" r="1.56" stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4"/>
+        <circle cx="12.18" cy="13.34" r="1.56" stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4"/>
+    </g>
+</svg>

@@ -1,9 +1,9 @@
 import React from "react";
-import { Link } from "gatsby"
+import { Link } from "gatsby";
 import styled from "styled-components";
 import { Tabs, useTabState, usePanelState } from "@bumaga/tabs";
 import { motion } from "framer-motion";
-import { color } from "../../atoms/styles/colors"
+import { color } from "../../atoms/styles/colors";
 import ArrowSVG from "../../../images/arrow-circle.inline.svg";
 import CurveSVG from "../../../images/orange-curve.inline.svg";
 import VisibilitySensor from "../../../components/VisibilitySensor";
@@ -12,11 +12,11 @@ const Wrapper = styled.div`
   display: flex;
   width: 100%;
   position: relative;
-  margin-top: 80px;
+  margin-top: ${(props) => (props.tab ? "" : "80")};
 
   @media (min-width: 769px) {
     width: auto;
-    padding: 25px 29px 0;
+    padding: ${(props) => (props.tab ? "" : "25px 29px 0")};
   }
 `;
 
@@ -28,14 +28,11 @@ const Curve = styled.div`
 
   @media (min-width: 769px) {
     display: block;
-    top: ${props => !props.curveRightBottom ? "0" : ""};
-    left: ${props => (props.curveRight || props.curveRightBottom)  ? "" : "0"};
-    right: ${props => (props.curveRight || props.curveRightBottom) ? "0" : ""};
-    bottom: ${props => props.curveRightBottom ? "-25px" : ""};
-    transform: ${props => 
-      props.curveRight ? "rotate(90deg)"
-      : props.curveRightBottom ? "rotate(180deg)"
-      : ""};
+    top: ${(props) => (!props.curveRightBottom ? "0" : "")};
+    left: ${(props) => (props.curveRight || props.curveRightBottom ? "" : "0")};
+    right: ${(props) => (props.curveRight || props.curveRightBottom ? "0" : "")};
+    bottom: ${(props) => (props.curveRightBottom ? "-25px" : "")};
+    transform: ${(props) => (props.curveRight ? "rotate(90deg)" : props.curveRightBottom ? "rotate(180deg)" : "")};
   }
 `;
 
@@ -70,7 +67,8 @@ const PanelWrapper = styled.div`
     margin-bottom: 48px;
   }
 
-  p, li {
+  p,
+  li {
     color: ${color.grey1};
     font-family: Avenir, sans-serif;
     max-width: 650px;
@@ -189,11 +187,11 @@ const Panel = ({ children }) => {
   );
 };
 
-const Accordion = ({ content, curve, curveRight, curveRightBottom }) => {
+const Accordion = ({ content, curve, curveRight, curveRightBottom, tab }) => {
   return (
     <VisibilitySensor partialVisibility once>
       {({ isVisible }) => (
-        <Wrapper className={isVisible ? "slideUp enter" : "slideUp"}>
+        <Wrapper className={isVisible ? "slideUp enter" : "slideUp"} tab={tab}>
           {curve && (
             <Curve curveRight={curveRight} curveRightBottom={curveRightBottom}>
               <CurveSVG />
@@ -213,15 +211,8 @@ const Accordion = ({ content, curve, curveRight, curveRightBottom }) => {
                   </Tab>
                   <Panel>
                     <PanelWrapper>
-                      {typeof item.answer === 'string' ?
-                        <p>{item.answer}</p> : null
-                      }
-                      {typeof item.answer === 'object' ?
-                        <p>{item.answer.map((el, id) => (
-                        id % 2 ? <Link to={el.url}>{` ${el.text} `}</Link> : el.text
-                        ))}</p> 
-                        : null
-                      }
+                      {typeof item.answer === "string" ? <p>{item.answer}</p> : null}
+                      {typeof item.answer === "object" ? <p>{item.answer.map((el, id) => (id % 2 ? <Link to={el.url}>{` ${el.text} `}</Link> : el.text))}</p> : null}
                       {/* <p>{item.answer}</p> */}
                       {item.list && (
                         <ul>

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { gradient } from "../../../atomic/atoms/styles/colors"
 import Container from "../../container";
 import TextCenterLayout from "../blocks/heading-center";
 //import Accordion from "../../accordion"
@@ -31,6 +32,7 @@ const Wrapper = styled.div`
   padding-top: 75px;
   padding-bottom: 64px;
   position: relative;
+  background-image: ${gradient.green3};
 
   @media (min-width: 769px) {
     padding-top: 250px;

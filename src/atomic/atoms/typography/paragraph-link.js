@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { color } from "../../../components/styles/colors";
-import { Link } from "gatsby";
 
 const StyledParagraph = styled.p`
     font-family: Avenir, sans-serif;
@@ -27,14 +26,14 @@ const StyledParagraph = styled.p`
     }
 `;
 
-export const Paragraph = ({ children, maxWidth, ...rest }) => (
+export const ParagraphLink = ({ children, maxWidth, ...rest }) => (
   <StyledParagraph maxWidth={maxWidth} {...rest}>
-    {typeof children === "string" ? children : null}
-    {typeof children === "object" ? children.map((el, id) => (id % 2 ? <Link to={el.url}>{` ${el.text} `}</Link> : el.text)) : null}
+    {/* {console.log(children)}
+    {children.map((child) => console.log(child))} */}
   </StyledParagraph>
 );
 
-Paragraph.propTypes = {
+ParagraphLink.propTypes = {
   flex: PropTypes.bool,
   flexAlign: PropTypes.bool,
   flexJustify: PropTypes.bool,
@@ -45,7 +44,7 @@ Paragraph.propTypes = {
   bottomMargin: PropTypes.number,
 };
 
-Paragraph.defaultProps = {
+ParagraphLink.defaultProps = {
   flex: false,
   flexAlign: false,
   flexJustify: false,

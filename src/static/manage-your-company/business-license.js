@@ -93,7 +93,7 @@ export const about = {
             text: 
                 `Then, if you operate from home or plan to remodel a space, for example, you'll need to obtain permits to do so. Other permits covering serving alcohol, displaying a sign on the building exterior and even parking for your business might also be a requirement. 
                 A great place to research your local zoning and operating laws is the nearest Small Business Development Center (SBDC).`,
-            link: {
+            url: {
                 text:
                     `Nearest Small Business Development Center (SBDC).`,
                 url:
