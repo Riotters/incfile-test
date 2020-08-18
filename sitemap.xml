@@ -5,6 +5,9 @@
 <url> <loc>https://incfile.netlify.app/incfile-test/components/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://incfile.netlify.app/incfile-test/forms/fictitious-business-name/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://incfile.netlify.app/incfile-test/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://incfile.netlify.app/incfile-test/learning-center-entity/comparison-chart/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://incfile.netlify.app/incfile-test/learning-center-entity/help-center-article/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://incfile.netlify.app/incfile-test/learning-center-entity/help-center/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://incfile.netlify.app/incfile-test/manage-your-company-llc-s-corp-election/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://incfile.netlify.app/incfile-test/manage-your-company/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://incfile.netlify.app/incfile-test/manage-your-company/annual-report/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -28,6 +31,7 @@
 <url> <loc>https://incfile.netlify.app/incfile-test/type-of-business/airbnb/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://incfile.netlify.app/incfile-test/type-of-business/boutique-clothing-business/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://incfile.netlify.app/incfile-test/type-of-business/coach/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://incfile.netlify.app/incfile-test/type-of-business/etsy-business/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://incfile.netlify.app/incfile-test/type-of-business/moving-company/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://incfile.netlify.app/incfile-test/type-of-business/social-media-influencer/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
