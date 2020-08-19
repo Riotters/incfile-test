@@ -15,7 +15,7 @@ import { top, about, help, faq } from "../../static/manage-your-company/ein-tax-
 
 const TaxIdEin = () => (
   <Layout>
-    <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
+    <SEO title="EIN / Tax ID Number | How to Apply for a Federal EIN" description="Also known as a “Tax ID number,” the EIN is a business federal tax ID that works like a Social Security Number for your business. Learn more." />
     <Top imageName="mrs-bulb-tax-number" imageAlt="Mrs Bulb with tax numbers" ovalColor="blackpink">
       <h1>{top.header}</h1>
       <p>{top.text}</p>

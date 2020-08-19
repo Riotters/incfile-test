@@ -16,7 +16,7 @@ import { top, about, basics, help, faq } from "../../static/manage-your-company/
 
 const ForeignQualification = () => (
   <Layout>
-    <SEO title="Foreign Qualification" description="Filling a Foreign Qualification to do Business Out of State." />
+    <SEO title="File Foreign LLC Qualification | Certificate of Authority" description="To do business in another state, you may need to file a foreign qualification for a certificate of authority. Have Incfile file the paperwork for you." />
     <Top imageName="mrs-bulb-foreign-qualification" imageAlt="Mrs Bulb choosing a destination of his next business on a map of USA" headlineWidth="515" ovalColor="green">
       <h1>{top.header}</h1>
       <p>{top.text}</p>
