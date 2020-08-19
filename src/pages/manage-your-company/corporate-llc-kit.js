@@ -13,8 +13,8 @@ import { top, unboxing, getFormationKit } from "../../static/corporate-llc-kit"
 
 const CorporateLlcKit = () => (
   <Layout>
-    <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
-    <Top imageName="mrs-bulb-llc-corporate-kit" imageAlt="Mr. Bulb creating a business " ovalColor="blue">
+    <SEO title="LLC Kit | Incfile Personlized Corporate Kit | LLC Corporate Kit" description="Incfile offers your LLC or corporate kit. Learn what an LLC Kit is and how to obtain one" />
+    <Top imageName="mrs-bulb-llc-corporate-kit" imageAlt="Mr. Bulb getting LLC or corporate kit" ovalColor="blue">
       <h1>{top.header}</h1>
       <p>{top.text}</p>
       <Buttonsbox>

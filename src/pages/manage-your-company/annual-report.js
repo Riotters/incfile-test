@@ -15,7 +15,7 @@ import { top, about, help, faq } from "../../static/manage-your-company/annual-r
 
 const AnnualReport = () => (
   <Layout>
-    <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
+    <SEO title="File LLC Annual Report | Business Annual Reports | Information on Filling Annual Business Reports" description="File LLC and Corporation Annual Reports using Incfile for all your document needs." />
     <Top imageName="mrs-bulb-annual-report" imageAlt="Mrs Bulb and with checklist" ovalColor="green">
       <h1>{top.header}</h1>
       <p>{top.text}</p>

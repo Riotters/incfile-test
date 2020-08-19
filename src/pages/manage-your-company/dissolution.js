@@ -15,7 +15,7 @@ import { top, about, requirements, faq } from "../../static/manage-your-company/
 
 const Dissolution = () => (
   <Layout>
-    <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
+    <SEO title="Company Dissolution | How to Dissolve an LLC or Corporation" description="To legally close a corporation or LLC, the company must file Articles of Dissolution with the state of incorporation. Learn more." />
     <Top imageName="mrs-bulb-dissolution" imageAlt="Mrs Bulb holding a closed sign" ovalColor="darkblue">
       <h1>{top.header}</h1>
       <p>{top.text}</p>

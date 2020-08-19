@@ -27,7 +27,7 @@ import { top, about, help, howitworks, faq, cta } from "../../static/manage-your
 
 const TrademarkNameSearch = () => (
   <Layout>
-    <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
+    <SEO title="File a Trademark | Trademark Search & Registration" description="Protect your brand and reputation with a legal trademark. From trademark searches to registration, Incfile makes it easy. Learn more." />
     <Top imageName="mrs-bulb-trademark" imageAlt="Mr Bulb holding a certificate and tossing an orginal and a trademark sign" ovalColor="darkblue">
       <h1>{top.header}</h1>
       <p>{top.text}</p>
