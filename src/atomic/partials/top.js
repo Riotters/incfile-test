@@ -158,7 +158,7 @@ const TextContainer = styled.div`
 
     @media (min-width: 992px) {
       text-align: left;
-      padding-bottom: 20px;
+      padding-bottom: 24px;
     }
 
     @media (min-width: 992px) {
@@ -167,7 +167,7 @@ const TextContainer = styled.div`
   }
 
   p {
-    margin-bottom: 33px;
+    margin-bottom: 32px;
     text-align: center;
 
     @media (min-width: 992px) {

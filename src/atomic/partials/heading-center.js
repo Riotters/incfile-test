@@ -6,7 +6,8 @@ import ContentCenter from "./content-center";
 
 const Wrapper = styled.div`
   position: relative;
-
+  margin-bottom: ${props => props.bottomMargin ? `${props.bottomMargin}px` : '0'};
+  
   h2 {
     max-width: ${props => props.headlineWidth ? props.headlineWidth : '610'}px;
     margin: 0 auto 24px;
@@ -25,7 +26,7 @@ const Wrapper = styled.div`
 
 
 
-const TextCenterLayout = ({className, headline, headlineWidth, text, textWidth, linkText, linkUrl}) => {
+const TextCenterLayout = ({className, headline, headlineWidth, text, textWidth, linkText, linkUrl, bottomMargin}) => {
 
   const content = {
     text: linkText,
@@ -33,7 +34,7 @@ const TextCenterLayout = ({className, headline, headlineWidth, text, textWidth, 
   }
 
   return (
-    <Wrapper className={className} headlineWidth={headlineWidth} textWidth={textWidth}>
+    <Wrapper className={className} headlineWidth={headlineWidth} textWidth={textWidth} bottomMargin={bottomMargin}>
         <ContentCenter>
           {headline && (
               <VisibilitySensor partialVisibility once>

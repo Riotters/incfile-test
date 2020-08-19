@@ -23,6 +23,9 @@ const shadow1 = (circleColor) => {
     case color.yellow2: {
       return shadow.yellow2;
     }
+    case color.red2: {
+      return shadow.red2;
+    }
     default:
       return "";
   };
@@ -34,7 +37,8 @@ const Wrapper = styled.span`
     align-items: center;
     height: ${props => props.theme === "empty" ? 5 : (props.height ? props.height : 32)}px;
     width: ${props => props.width ? props.width : 32}px;
-    min-width: 32px;
+    min-height: ${props => props.theme === "empty" ? 5 : (props.height ? props.height : 32)}px;
+    min-width: ${props => props.width ? props.width : 32}px;
     background: ${props => props.circleColor ? props.circleColor : color.grey4};
     box-shadow: ${({ circleColor }) => shadow1(circleColor)};
     border-radius: ${props => props.theme === "empty" ? "2.5px" : "50%"};
@@ -50,8 +54,10 @@ const Wrapper = styled.span`
     pointer-events: none;
 
     @media(min-width: 576px) {
-      height: ${props => props.theme === "empty" ? 5 : (props.heightSM ? props.heightSM : "")}px;
-      width: ${props => props.widthSM ? props.widthSM : ""}px;
+      height: ${props => props.theme === "empty" ? 5 : (props.heightSM ? `${props.heightSM}px` : "")};
+      width: ${props => props.widthSM ? `${props.widthSM}px` : ""};
+      min-height: ${props => props.theme === "empty" ? 5 : (props.heightSM ? `${props.heightSM}px` : "")};
+    min-width: ${props => props.widthSM ? `${props.widthSM}px` : ""};
     }
 
 
