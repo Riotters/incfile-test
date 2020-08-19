@@ -16,11 +16,15 @@ const Content = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
 
   @media (min-width: 992px) {
-    width: 100%;
-    max-width: ${(props) => (props.contentWidth ? parseInt(props.contentWidth) + 100 : "700")}px;
     padding-right: 100px;
+    max-width: 500px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: ${(props) => (props.contentWidth ? parseInt(props.contentWidth) + 100 : "700")}px;
   }
 
   h2 {
@@ -32,7 +36,7 @@ const Objectbox = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
+
   @media (min-width: 992px) {
     flex-grow: 1;
   }
@@ -50,9 +54,7 @@ const LeftContentRightObject = ({ className, object, children, contentWidth }) =
   return (
     <Container>
       <Wrapper className={className}>
-        <Content contentWidth={contentWidth}>
-          {children}
-        </Content>
+        <Content contentWidth={contentWidth}>{children}</Content>
         <Objectbox>{object}</Objectbox>
       </Wrapper>
     </Container>

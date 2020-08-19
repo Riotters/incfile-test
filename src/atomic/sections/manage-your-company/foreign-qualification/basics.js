@@ -8,25 +8,28 @@ import OvalSVG from "../../../../images/ovals/top-left-transparent-orange.inline
 
 const Basics = styled.section`
   position: relative;
-  padding-top: 100px;
+  padding-top: 16px;
   padding-bottom: 120px;
 
-  .headline {
-      margin-bottom: 80px;
+  @media (min-width: 992px) {
+    padding-top: 96px;
   }
-  
+
+  .headline {
+    margin-bottom: 80px;
+  }
 `;
 
 const BasicsSection = ({ className, content }) => (
-    <Basics className={className}>
-        <Oval height="720" width="720" top="0" left="0">
-            <OvalSVG />
-        </Oval>
-        <HeadingCenter headline={content.header} headlineWidth="640" />
-        <ContentCenter>
-            <Accordion content={content.faq} curve curveRight />
-        </ContentCenter>
+  <Basics className={className}>
+    <Oval height="720" width="720" top="0" left="0">
+      <OvalSVG />
+    </Oval>
+    <HeadingCenter headline={content.header} headlineWidth="640" bottomMargin="24" bottomMarginLG="112" />
+    <ContentCenter>
+      <Accordion content={content.faq} curve curveRight />
+    </ContentCenter>
   </Basics>
-  );
-  
-  export default BasicsSection;
+);
+
+export default BasicsSection;
