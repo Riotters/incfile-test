@@ -18,7 +18,7 @@ const Wrapper = styled.div`
 `
 
 const colors = [color.orange3, color.red3, color.green3, color.blue3];
-const icons = ["clock", "refuse", "cost", "receive"]
+const icons = ["clock-691", "refuse", "cost", "receive"]
 
 const AnnualCards = ({ className, content }) => {
   return (

@@ -12,7 +12,7 @@ import ArrowSVG from "../../../images/arrow.inline.svg"
 const Wrapper = styled(Whitebox)`
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: ${props => (props.ellipsis || props.icon) ? "center" : ""};
     border-radius: ${props => props.icon ? "20px" : ""};
     padding: ${props => props.icon ? "16px 24px 16px 16px" : "24px 24px 24px 40px"};
 `;
@@ -20,12 +20,13 @@ const Wrapper = styled(Whitebox)`
 const TextWrapper = styled.div`
     display: flex;
     align-items: center;
+    margin-right: 32px;
 
     h4, h5 {
         display: -webkit-box;
         -webkit-box-orient: vertical;
-        -webkit-line-clamp: 1;
-        text-overflow: ellipsis;
+        -webkit-line-clamp: ${props => props.ellipsis ? "1" : ""};
+        text-overflow: ${props => props.ellipsis ? "ellipsis" : ""};
         overflow: hidden;
         color: ${props => props.icon ? color.blue1 : ""};
     }
@@ -49,10 +50,10 @@ const ImageWrapper = styled.div`
     }
 `;
 
-const BoxedButton = ({ className, content, icon, iconColor }) => {
+const BoxedButton = ({ className, content, icon, iconColor, ellipsis }) => {
   return (
-    <Wrapper className={className} icon={icon}>
-        <TextWrapper icon={icon}>
+    <Wrapper className={className} icon={icon} ellipsis={ellipsis}>
+        <TextWrapper icon={icon} ellipsis={ellipsis}>
             {icon && (
                 <ImageWrapper iconColor={iconColor}>
                     <Image filename={icon} />

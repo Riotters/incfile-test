@@ -24,6 +24,7 @@ import OvalSVG from "../../../../images/ovals/top-left-transparent-blue2.inline.
 import Oval2SVG from "../../../../images/ovals/bottom-right-transparent-blue2.inline.svg";
 import CurveSVG from "../../../../images/curves/top-left-bottom-right.inline.svg";
 import BoxedButton from "../../../molecules/buttons/boxed";
+import TabButton from "../../../molecules/tabs/tab-title.js"
 
 const Categories = styled.section`
   position: relative;
@@ -33,7 +34,7 @@ const Categories = styled.section`
 
 const colors = [color.babyblue2, color.purple2, color.green2, color.yellow2, color.orange2, color.purple2,
 color.green2, color.purple2, color.yellow2, color.red2]
-const icons = [<PaperPlaneSVG />, <SpaceShipSVG />, <PlaneSVG />, <RocketSVG />, <FlowerSVG />, <BadgeSVG />, <TaxesSVG />, <EmployerIdSVG />, <MagniferSVG />, <CameraSVG />]
+const icons = [<PaperPlaneSVG />, <SpaceShipSVG />, <PlaneSVG />, <RocketSVG />, <FlowerSVG />, <BadgeSVG />, <TaxesSVG />, <EmployerIdSVG />, <MagniferSVG />, <CameraSVG />,]
 
 const CategoriesSection = ({ className, content }) => (
     <Categories className={className}>
@@ -44,9 +45,9 @@ const CategoriesSection = ({ className, content }) => (
             <Oval2SVG />
         </Oval>
         <HeadingCenter headline={content.header} headlineWidth="700" bottomMargin="80" />
-        <CenterGrid rowGap="100">
-            {content.lists.map((list, i) => (
-                <List content={list} color={colors[i]} icon={icons[i]} />
+        <CenterGrid columns="3">
+            {content.buttons.map((button, i) => (
+                <p>{button.header}</p>
             ))}
         </CenterGrid>
     </Categories>

@@ -15,16 +15,6 @@ const Wrapper = styled.div`
     width: 100%;
 `;
 
-const IconWrapper = styled.div`
-    display: flex;
-    align-items: center;
-    margin-bottom: 48px;
-
-    span {
-        margin-right: 24px;
-    }
-`;
-
 const List = styled.div`
     display: flex;
     flex-direction: column;
@@ -37,23 +27,16 @@ const List = styled.div`
     }
 `;
 
-const BrowseByCategoryList = ({ className, content, icon, color }) => {
+const RelatedQuestionsList = ({ className, content, icon, color }) => {
   return (
     <Wrapper className={className}>
-        <IconWrapper>
-            <Circle height="80" width="80" circleColor={color}>
-                {icon}
-            </Circle>
-            <Heading size="3" bottomMargin="0">{content.header}</Heading>
-        </IconWrapper>
         <List>
             {content.buttons.map(button => (
-                <BoxedButton className="article-link" content={button} ellipsis />
+                <BoxedButton className="article-link" content={button} />
             ))}
         </List>
-        <ArrowLink content={content.link} />
     </Wrapper>
   )
 }
 
-export default BrowseByCategoryList;
+export default RelatedQuestionsList;

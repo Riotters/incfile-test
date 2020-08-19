@@ -14,7 +14,7 @@ const Wrapper = styled.div`
 
 const Content = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(${props => props.columns ? props.columns : "2"}, 1fr);
   grid-column-gap: 30px;
   grid-row-gap: ${props => props.rowGap ? props.rowGap : "30"}px;
   width: 100%;
@@ -24,12 +24,12 @@ const Content = styled.div`
   }
 `;
 
-const CategoriesGrid = ({ className, children, contentWidth, headlineWidth, textWidth, rowGap }) => {
+const CategoriesGrid = ({ className, children, contentWidth, headlineWidth, textWidth, rowGap, columns }) => {
     
   return (
       <Container>
         <Wrapper className={className}>
-          <Content contentWidth={contentWidth} headlineWidth={headlineWidth} textWidth={textWidth} rowGap={rowGap}>
+          <Content contentWidth={contentWidth} headlineWidth={headlineWidth} textWidth={textWidth} rowGap={rowGap} columns={columns}>
             { children }
           </Content>
         </Wrapper>

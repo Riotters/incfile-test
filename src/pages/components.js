@@ -506,7 +506,7 @@ const ComponentsPage = () => (
                 </GreyWrapper>
                 <h3>Top Image Box</h3>
                 <GreyWrapper>
-                    <TopImageBox image="clock" content={topimagebox}/>
+                    <TopImageBox image="clock-691" content={topimagebox}/>
                 </GreyWrapper>
 
                 <h3>Text Box With Absolute Image</h3>

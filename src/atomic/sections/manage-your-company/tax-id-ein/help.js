@@ -49,7 +49,7 @@ const HelpSection = ({ className, content }) => (
             <Oval2SVG />
         </Oval>
         <ContentObject 
-            object={<Card className="card" headline="TAX ID / EIN" content={content.card} image="entity-comparison" />} 
+            object={<Card className="card" headline="TAX ID / EIN" content={content.card} image="entity-comparison-9288" />} 
         >
             <TextWrapper>
                 <Curve top="-5" right="110" color={color.blue1}>

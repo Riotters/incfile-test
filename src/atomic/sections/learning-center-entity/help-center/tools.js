@@ -15,7 +15,7 @@ const Tools = styled.section`
 `;
 
 const colors = [color.green3, color.red3, color.red3, color.yellow3, color.babyblue3, color.orange3]
-const icons = ["corporation-state-information", "s-corp-tax-calculator-01", "entity-comparison-chart", "state-filling-fees", "ongoing-filling-requirements-02", "clock"]
+const icons = ["corporation-state-information", "s-corp-tax-calculator-01", "entity-comparison-chart", "state-filling-fees", "ongoing-filling-requirements-02", "clock-691"]
 
 const ToolsSection = ({ className, content }) => (
     <Tools className={className}>
