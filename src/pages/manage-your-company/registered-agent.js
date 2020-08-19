@@ -63,7 +63,7 @@ const adventages = {
 
 const RegisteredAgent = () => (
   <Layout>
-    <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
+    <SEO title="Registered Agent Services for LLCs, S Corps, & More" description="Get an official Registered Agent for your business. Dependable, easy, and free for the first year when you incorporate with Incfile. Learn more." />
     <Top imageName="mrs-bulb-registered-agent" imageAlt="Mrs Bulb register agent service holding a phone" ovalColor="purple">
       <h1>{top.header}</h1>
       <p>{top.text}</p>

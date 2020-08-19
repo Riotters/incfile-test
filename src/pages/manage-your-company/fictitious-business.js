@@ -20,8 +20,8 @@ import { top, about, businessesChoose, otherTerms, register, behalf, protect, st
 
 const FictitiousBusiness = () => (
   <Layout>
-    <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
-    <Top imageName="mrs-bulb-dba" imageAlt="image alt" ovalColor="purple">
+    <SEO title="DBA Filing | Create a Fictitious Business or Trade Name" description="If you want to do business with a name other than your legal business name, you might need to file an assumed business name with your state. Learn more." />
+    <Top imageName="mrs-bulb-dba" imageAlt="Mr. Bulb choosing his fictitious business name" ovalColor="purple">
       <h1>{top.header}</h1>
       <p>{top.text}</p>
       <Buttonsbox>

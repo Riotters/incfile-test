@@ -15,7 +15,7 @@ import { top, about, help, faq } from "../../static/manage-your-company/change-r
 
 const ChangeOfRegisteredAgent = () => (
   <Layout>
-    <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
+    <SEO title="Change Your Registered Agent | How to File a Change of Agent" description="Find out how to change your business's registered agent with your state, or have Incfile file the forms for you for only $0. Learn more" />
     <Top imageName="mrs-bulb-change-agent" imageAlt="Mrs Bulb is changing her agent" ovalColor="lightpurple">
       <h1>{top.header}</h1>
       <p>{top.text}</p>

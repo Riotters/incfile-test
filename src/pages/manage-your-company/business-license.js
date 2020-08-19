@@ -16,7 +16,7 @@ import { top, about, requirements, whatyouget, researchpackage, cta } from "../.
 
 const BusinessLicence = () => (
   <Layout>
-    <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
+    <SEO title="Business License Research Package - Incfile" description="As a business owner, you are responsible for making sure your business has the proper federal, state and local licenses and permits to operate legally." />
     <Top imageName="mrs-bulb-business-license" imageAlt="Mr Bulb with business license" ovalColor="darkblue">
       <h1>{top.header}</h1>
       <p>{top.text}</p>
