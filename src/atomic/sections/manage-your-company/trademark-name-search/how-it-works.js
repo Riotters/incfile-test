@@ -27,7 +27,11 @@ const Boxes = styled.div`
     width: 100%;
     background-color: ${color.white};
     box-shadow: ${shadow.white1};
-    padding: 40px 48px;
+    padding: 40px 24px;
+    
+    @media (min-width: 400px) {
+      padding: 40px 48px;
+    }
 
     .icon {
       display: flex;
@@ -71,7 +75,7 @@ const Boxes = styled.div`
       align-items: center;
       height: 96px;
       width: 96px;
-      background-color: ${color.white};
+      background-color: ${color.white};  
       box-shadow: inset ${shadow.white1};
       box-shadow: inset 0 0 32px 0 rgba(236, 236, 236, 0.4);
       border-radius: 50%;
@@ -82,6 +86,7 @@ const Boxes = styled.div`
 
       @media (min-width: 769px) {
         transform: translate(-50%, -50%) rotate(0);
+        background-image: linear-gradient(0deg,#f7f9fc 0%,#f6f8fc 100%);
       }
     }
   }
@@ -121,7 +126,7 @@ const HowItWorksSection = ({ className, content }) => (
                 </div>
                 <div className="box">
                 <div className="icon">
-                    <Image filename="work" imageAlt="a papersheet icon with a magnifire" />
+                    <Image filename="work-8320" imageAlt="a papersheet icon with a magnifire" />
                 </div>
                 <h4>We get to work</h4>
                 <p>The trademark attorney will conduct a trademark search to ensure the availability, then provide the search results along with a plan of action.</p>

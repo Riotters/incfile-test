@@ -73,7 +73,10 @@ const IconTextColorBox = ({ className, Icon, color, content, bottomMargin, round
         <Colorbox className="box" color={color}>
             <Icon />
             <Heading size="4" bottomMargin="16">{content.header}</Heading>
-            <Paragraph bottomMargin="0">{content.text}</Paragraph>
+            {console.log(content.text)}
+            {content.text && 
+                <Paragraph bottomMargin="0">{content.text}</Paragraph>
+            }
         </Colorbox>
     </Wrapper>
   )

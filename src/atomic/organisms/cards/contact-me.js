@@ -16,7 +16,11 @@ const Wrapper = styled.div`
     }
 
     .box {
-        padding: 64px 40px 48px;
+        padding: 30px 15px;
+
+        @media (min-width: 430px) {
+            padding: 64px 40px 48px;
+        }
     }
 
     h3 {

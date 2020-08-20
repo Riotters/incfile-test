@@ -31,6 +31,10 @@ const Boxes = styled.div`
         position: relative;
         padding: 35px 35px 35px 88px;
         border-radius: 5px 5px 5px 5px;
+
+        &:not(:last-child) {
+          margin-bottom: 8px;
+        }
   
         @media (min-width: 769px) {
           &:nth-child(1) {
@@ -43,10 +47,6 @@ const Boxes = styled.div`
   
           &:nth-child(3) {
             border-radius: 5px 5px 20px 20px;
-          }
-
-          &:not(:last-child) {
-              margin-bottom: 8px;
           }
         }
   

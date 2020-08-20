@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Container from "../../container";
 import Image from "../../image_nobase64";
 import Button from "../../button";
-import OvalSVG from "../../../images/oval.inline.svg";
+import OvalSVG from "../../../images/oval/top-right-to-orange1-orange3.inline.svg";
 import { color } from "../../styles/colors";
 
 const Wrapper = styled.div`

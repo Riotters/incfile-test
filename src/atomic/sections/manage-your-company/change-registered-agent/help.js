@@ -9,13 +9,13 @@ import Card from "../../../../components/certificate-card";
 import Oval from "../../../atoms/icons/oval";
 import Curve from "../../../atoms/icons/curve";
 import OvalSVG from "../../../../images/ovals/top-right-transparent-blue.inline.svg";
-import Oval2SVG from "../../../../images/ovals/bottom-left-transparent-blue3.inline.svg";
+import Oval2SVG from "../../../../images/ovals/bottom-left-transparent-blue1.inline.svg";
 import CurveSVG from "../../../../images/curves/top-left-bottom-right.inline.svg";
 
 const Help = styled.section`
   position: relative;
   padding-top: 75px;
-  padding-bottom: 64px;
+  padding-bottom: 48px;
 
     &::before {
         content: '';
@@ -54,7 +54,7 @@ const HelpSection = ({ className, content }) => (
             object={<Card className="card" headline="Change of Agent" content={content2} dropdownOnePlaceholder="Select Entity Type" dropdownOneOptions={dropdownOneOptions} dropdownTwoPlaceholder="Select State" dropdownTwoOptions={dropdownTwoOptions} />}
         >
             <TextWrapper>
-                <Curve top="-15" right="140" color={color.blue1}>
+                <Curve top="-15" right="30" rightXL="140" color={color.blue1}>
                     <CurveSVG />
                 </Curve>
                 <Heading size="2" bottomMargin="48" maxWidth="468">{content.header}</Heading>

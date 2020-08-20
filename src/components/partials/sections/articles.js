@@ -7,6 +7,8 @@ import Article from "../../article"
 import PurpleCurveSVG from "../../../images/purple-curve.inline.svg"
 import PinkCurveSVG from "../../../images/pink-curve.inline.svg"
 import VisibilitySensor from "../../VisibilitySensor"
+import Oval from "../../../atomic/atoms/icons/oval";
+import OvalSVG from "../../../images/ovals/top-right-transparent-purple2.inline.svg";
 
 const Wrapper = styled.div`
   padding-top: 80px;
@@ -117,8 +119,13 @@ const responsive = {
   },
 }
 
-const Articles = () => (
+const Articles = ({ oval }) => (
   <Wrapper>
+    {oval && (
+      <Oval height="341" width="341" top="25" right="0">
+          <OvalSVG />
+      </Oval>
+    )}
     <Container>
       <Content>
         <VisibilitySensor partialVisibility once>

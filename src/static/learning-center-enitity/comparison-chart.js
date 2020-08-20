@@ -11,20 +11,6 @@ export const about = {
     text:
       `Starting a new business is one of the most powerful and exciting things you can do. You’ve got a great idea, unique products and valuable services that you want to share with the world. 
       There’s just one small problem — where do you begin? There seems to be an almost endless list of tasks to get your business off the ground and money in the bank.`,
-    box: {
-      header:
-        `Relax, we’ve got you covered.`,
-      text:
-        `We’re experts at incorporating LLCs and corporations, and we’ve learned a thing or two about starting and running businesses. 
-        That’s why we put together this complete and easy-to-understand business checklist — to make it faster and simpler for you to get stuff done. `,
-    },
-    text2: 
-      `The majority of larger businesses in the United States are structured as C Corporations, although a C Corp could, theoretically, consist of just one person. 
-      The information below will help you decide if a C Corporation structure is right for your business.`,
-    link: {
-        text: `View our specialized guidelines`,
-        url: `/`,
-    }
 }
 
 export const help = {

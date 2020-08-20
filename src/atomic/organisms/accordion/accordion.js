@@ -117,7 +117,7 @@ const Button = styled.button`
 
   &.active {
     border-radius: 5px 5px 0 0;
-    font-weight: 600;
+    font-weight: 900;
 
     svg {
       transform: rotate(0deg);

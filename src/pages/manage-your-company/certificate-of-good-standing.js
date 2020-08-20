@@ -3,6 +3,9 @@ import Layout from "../../components/layout";
 import SEO from "../../components/seo";
 import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
 import Button from "../../atomic/molecules/buttons/button";
+import RatingRow from "../../atomic/atoms/boxes/rating-row";
+import CartBlock from "../../atomic/molecules/blocks/cart-block";
+import RatingBlock from "../../atomic/molecules/blocks/rating-block";
 //Sections
 import Top from "../../atomic/partials/top";
 import About from "../../atomic/sections/manage-your-company/certificate-of-good-standing/about"
@@ -22,6 +25,10 @@ const CertificateOfGoodStanding = () => (
       <Buttonsbox>
         <Button content={top.button[0]} theme="primary56" width="200px" arrow />
       </Buttonsbox>
+      <RatingRow>
+        <CartBlock />
+        <RatingBlock />
+      </RatingRow>
     </Top>
     <About content={about} />
     <Help content={help} />
