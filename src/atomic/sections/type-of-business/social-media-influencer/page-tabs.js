@@ -17,7 +17,6 @@ import BlueBoxWithAbsoluteText from "../../../molecules/text-blocks/blue-box-wit
 import Adventages from "../../../../components/adventages";
 import CountingTextBoxed from "../../../molecules/text-blocks/counting-text-boxed";
 import {color} from "../../../atoms/styles/colors"
-import {shadow} from "../../../atoms/styles/shadows"
 import Colorbox from "../../../../components/color-box";
 import {
     AveragePricingFollowerCount,

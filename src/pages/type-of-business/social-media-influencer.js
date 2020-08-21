@@ -21,7 +21,7 @@ const SocialMediaInfluencer = () => (
         <SEO title="How to Start a Business as a Social Media Influencer"
              description="Learn all about nonprofit corporations, including the benefits & disadvantages, getting 501c3 status, and what's needed to get your company off the ground."/>
 
-        <Top ovalColor="green" imageName="bouthique-clothing" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
+        <Top ovalColor="green" imageName="social-media-influencer" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
             <h1>How to Start a Business as a Social Media Influencer</h1>
             <p>Influencer marketing is becoming an increasingly popular way
                 to promote companies, brands, products and services.</p>
