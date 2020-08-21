@@ -162,57 +162,6 @@ const Navigation = styled.nav`
     &:last-child {
       padding-right: 0;
     }
-
-    button {
-      background-color: transparent;
-      border: 0;
-      padding: 0;
-      margin-top: 10px;
-      margin-bottom: 10px;
-
-      @media (min-width: 992px) {
-        margin-top: 0;
-        margin-bottom: 24px;
-      }
-    }
-
-    h4 {
-      color: #757575;
-      font-family: MarkPro;
-      font-size: 16px;
-      letter-spacing: 1px;
-      line-height: 14px;
-      opacity: 1;
-      text-transform: uppercase;
-      border-top: 1px solid #f4f4f4;
-      background-color: #fff;
-
-      @media (min-width: 992px) {
-        font-size: 12px;
-        letter-spacing: 1px;
-        border-top: none;
-        opacity: 0.9;
-      }
-    }
-  }
-
-  ul {
-    list-style: none;
-
-    li {
-      a {
-        text-decoration: none;
-        color: #797a79;
-        font-family: Avenir;
-        font-size: 14px;
-        line-height: 17px;
-        transition: color 0.3s ease;
-
-        &:hover {
-          color: #fd8550;
-        }
-      }
-    }
   }
 `
 
