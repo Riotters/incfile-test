@@ -222,11 +222,6 @@ const Social = styled.ul`
 `
 
 const Footer = () => {
-  const [menu, showMenu] = useState(false);
-
-  function handleClick() {
-    showMenu(!menu)
-  }
 
   return (
     <Wrapper>
@@ -254,7 +249,7 @@ const Footer = () => {
             <CurveSVG />
           </Curve>
           {footer.items.map(item => (
-            <List isOpen={menu} handleClick={handleClick} content={item}/>
+            <List content={item}/>
           ))}
         </Navigation>
         <Bot>
