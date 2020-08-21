@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 import styled from "styled-components";
 
@@ -58,27 +58,35 @@ const List = styled.ul`
     }
 `;
 
-const FooterSingle = ({ isOpen, handleClick, content }) => (
-    <>
-        {content && (
-            <FooterItem>
-                {content.header && (
-                    <button onClick={handleClick}>
-                        <h4>{content.header}</h4>
-                    </button>
-                )}
-                {content.list && (
-                    <List isOpen={isOpen}>
-                        {content.list.map(item => (
-                            <li>
-                                <Link to={item.url}>{item.text}</Link>
-                            </li>
-                        ))}
-                    </List>
-                )}
-            </FooterItem>
-        )} 
-    </> 
-)
+const FooterSingle = ({ handleClick, content }) => {
+    const [menu, showMenu] = useState(false);
+
+    function handleClick() {
+        showMenu(!menu)
+    }
+
+    return (
+        <>
+            {content && (
+                <FooterItem>
+                    {content.header && (
+                        <button onClick={handleClick}>
+                            <h4>{content.header}</h4>
+                        </button>
+                    )}
+                    {content.list && (
+                        <List isOpen={menu}>
+                            {content.list.map(item => (
+                                <li>
+                                    <Link to={item.url}>{item.text}</Link>
+                                </li>
+                            ))}
+                        </List>
+                    )}
+                </FooterItem>
+            )} 
+        </> 
+    )
+}
 
 export default FooterSingle
