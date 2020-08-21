@@ -37,6 +37,14 @@ export const footer = {
                     url: `/`,
                 },
                 {
+                    text: `Certificate Of Good Standing`,
+                    url: `/`,
+                },
+                {
+                    text: `Change Of Registered Agent`,
+                    url: `/`,
+                },
+                {
                     text: `Amendment`,
                     url: `/`,
                 },
@@ -127,6 +135,10 @@ export const footer = {
                         url: `/`,
                     },
                     {
+                        text: `LLC State Info`,
+                        url: `/`,
+                    },
+                    {
                         text: `Corpotate State Info`,
                         url: `/`,
                     },
@@ -136,5 +148,39 @@ export const footer = {
                     },
                 ]
             },
+            {
+                header: "Support",
+                list: [
+                    {
+                        text: `Contact`,
+                        url: `/`,
+                    },
+                    {
+                        text: `Affiliates`,
+                        url: `/`,
+                    },
+                    {
+                        text: `Sitemaps`,
+                        url: `/`,
+                    },
+                    {
+                        text: `Cancellation Policy`,
+                        url: `/`,
+                    },
+                    {
+                        text: `Privacy Policy`,
+                        url: `/`,
+                    },
+                    {
+                        text: `Legal Disclaimer`,
+                        url: `/`,
+                    },
+                    {
+                        text: `Glossary`,
+                        url: `/`,
+                    },
+                ]
+            },
+            
     ]
 }
