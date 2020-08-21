@@ -10,7 +10,7 @@ import Requirements from "../../atomic/sections/manage-your-company/business-lic
 import WhatYouGet from "../../atomic/sections/manage-your-company/business-license/what-you-get";
 import ResearchPackage from "../../atomic/sections/manage-your-company/business-license/research-package";
 import Cta from "../../atomic/sections/manage-your-company/business-license/cta";
-import Articles from "../../components/partials/sections/articles";
+import Articles from "../../atomic/sections/articles";
 //Texts
 import { top, about, requirements, whatyouget, researchpackage, cta } from "../../static/manage-your-company/business-license";
 

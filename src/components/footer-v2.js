@@ -1,20 +1,20 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
-import styled from "styled-components"
-import Container from "./container"
-import LogoSVG from "../images/logo.inline.svg"
-import ArrowSVG from "../images/arrow.inline.svg"
-import FacebookSVG from "../images/facebook.inline.svg"
-import TwitterSVG from "../images/twitter.inline.svg"
-import YoutubeSVG from "../images/youtube.inline.svg"
-import LinkedinSVG from "../images/linkedin.inline.svg"
-import PinterestSVG from "../images/pinterest.inline.svg"
-import Button from "./button"
-import List from "../atomic/organisms/accordion/footer-single"
-import CurveSVG from "../images/green-curve.inline.svg"
+import { Link } from "gatsby";
+import PropTypes from "prop-types";
+import React from "react";
+import styled from "styled-components";
+import Container from "../atomic/container";
+import LogoSVG from "../images/logo.inline.svg";
+import ArrowSVG from "../images/arrow.inline.svg";
+import FacebookSVG from "../images/facebook.inline.svg";
+import TwitterSVG from "../images/twitter.inline.svg";
+import YoutubeSVG from "../images/youtube.inline.svg";
+import LinkedinSVG from "../images/linkedin.inline.svg";
+import PinterestSVG from "../images/pinterest.inline.svg";
+import Button from "./button";
+import List from "../atomic/organisms/accordion/footer-single";
+import CurveSVG from "../images/green-curve.inline.svg";
 //Texts
-import { footer } from "../static/footer"
+import { footer } from "../static/footer";
 
 const Wrapper = styled.div`
   padding-top: 56px;
@@ -31,7 +31,7 @@ const Top = styled.div`
     flex-direction: row;
     height: 80px;
   }
-`
+`;
 
 const Bot = styled.div`
   display: flex;
@@ -43,7 +43,7 @@ const Bot = styled.div`
   @media (min-width: 576px) {
     flex-direction: row;
   }
-`
+`;
 
 const Logo = styled.div`
   height: 24px;
@@ -52,7 +52,7 @@ const Logo = styled.div`
   @media (min-width: 769px) {
     margin-bottom: 0;
   }
-`
+`;
 
 const NewsletterWrapper = styled.div`
   display: flex;
@@ -75,7 +75,7 @@ const NewsletterWrapper = styled.div`
       font-family: Avenir;
     }
   }
-`
+`;
 
 const Label = styled.label`
   position: absolute;
@@ -111,7 +111,7 @@ const Newsletter = styled.input`
   &:focus {
     border-color: #fd8550;
   }
-`
+`;
 
 const Arrow = styled.div`
   width: 12px;
@@ -132,7 +132,7 @@ const Arrow = styled.div`
       transform: rotate(0);
     }
   }
-`
+`;
 
 const Navigation = styled.nav`
   display: flex;
@@ -146,7 +146,7 @@ const Navigation = styled.nav`
   @media (min-width: 992px) {
     flex-direction: row;
   }
-`
+`;
 
 const Curve = styled.div`
   height: 75px;
@@ -166,7 +166,7 @@ const Curve = styled.div`
     right: -115px;
     bottom: 75px;
   }
-`
+`;
 
 const Copyright = styled.p`
   color: #4f4f4f;
@@ -180,7 +180,7 @@ const Copyright = styled.p`
   @media (min-width: 769px) {
     padding: 0;
   }
-`
+`;
 
 const Social = styled.ul`
   display: flex;
@@ -202,10 +202,9 @@ const Social = styled.ul`
       width: 100%;
     }
   }
-`
+`;
 
 const Footer = () => {
-
   return (
     <Wrapper>
       <Container>
@@ -231,8 +230,8 @@ const Footer = () => {
           <Curve>
             <CurveSVG />
           </Curve>
-          {footer.items.map(item => (
-            <List content={item}/>
+          {footer.items.map((item) => (
+            <List content={item} />
           ))}
         </Navigation>
         <Bot>
@@ -269,7 +268,7 @@ const Footer = () => {
         </Bot>
       </Container>
     </Wrapper>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

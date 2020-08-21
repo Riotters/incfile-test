@@ -8,8 +8,8 @@ import Top from "../../atomic/partials/top";
 import About from "../../atomic/sections/manage-your-company/dissolution/about";
 import Requirements from "../../atomic/sections/manage-your-company/dissolution/requirements";
 import Faq from "../../atomic/sections/manage-your-company/dissolution/faq";
-import Benefits from "../../components/partials/sections/benefits";
-import Articles from "../../components/partials/sections/articles";
+import Benefits from "../../atomic/sections/benefits";
+import Articles from "../../atomic/sections/articles";
 //Texts
 import { top, about, requirements, faq } from "../../static/manage-your-company/dissolution";
 
