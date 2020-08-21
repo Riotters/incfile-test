@@ -66,5 +66,75 @@ export const footer = {
                 },
             ]
         },
+        {
+            header: "Quick links",
+            list: [
+                {
+                    text: `Home`,
+                    url: `/`,
+                },
+                {
+                    text: `Review Enitity Types`,
+                    url: `/`,
+                },
+                {
+                    text: `Manage Your Company`,
+                    url: `/`,
+                },
+                {
+                    text: `Check Order Status`,
+                    url: `/`,
+                },
+                {
+                    text: `Learn More`,
+                    url: `/`,
+                },
+                {
+                    text: `Pricing`,
+                    url: `/`,
+                },
+                {
+                    text: `Blog`,
+                    url: `/`,
+                },
+                {
+                    text: `About`,
+                    url: `/`,
+                },
+            ]
+        },
+            {
+                header: "Resources",
+                list: [
+                    {
+                        text: `Renew Registered Agent`,
+                        url: `/`,
+                    },
+                    {
+                        text: `Filing Times`,
+                        url: `/`,
+                    },
+                    {
+                        text: `Why Choose Us`,
+                        url: `/`,
+                    },
+                    {
+                        text: `Testimonials`,
+                        url: `/`,
+                    },
+                    {
+                        text: `Entity Comparision Chart`,
+                        url: `/`,
+                    },
+                    {
+                        text: `Corpotate State Info`,
+                        url: `/`,
+                    },
+                    {
+                        text: `Corporate/LCC Kit`,
+                        url: `/`,
+                    },
+                ]
+            },
     ]
 }
