@@ -44,7 +44,7 @@ const ComponentsPage = () => (
         <Wrapper>
             <h1>List of all sites</h1>
             <h2>Manage Your Company</h2>
-            <Link to="/manage-your-company">Manage your company (no details)</Link>
+            <Link to="/manage-your-company">Manage your company</Link>
             <Link to="/manage-your-company/annual-report">Annual report</Link>
             <Link to="/manage-your-company/business-license">Business license</Link>
             <Link to="/manage-your-company/certificate-of-good-standing">Certificate of good standing</Link>

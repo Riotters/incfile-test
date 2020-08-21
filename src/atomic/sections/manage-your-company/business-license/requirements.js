@@ -84,18 +84,17 @@ const RequirementsSection = ({ className, content }) => (
             <Oval2SVG />
         </Oval>
         <HeadingCenter
-            headline="Business License and Permit Requirements by State"
-            text="Every state has different licensing needs based on the type of business you've incorporated, where it's located and the government rules in that state. 
-                We will research your business license needs for you with our Business License Research Package, but you can also do initial research yourself with the following resources:"
-            headlineWidth="700"
-            linkText="Business License Research Package"
-            linkUrl="#"
+            headline={content.header}
+            text={content.text}
+            headlineWidth="600"
+            linkText={content.link.text}
+            linkUrl={content.link.url}
         />
         <ContentCenter>
             <States>
                 <CurveSVG />
                 {states.state.map((state) => (
-                <ArrowButton to={state.url}>
+                <ArrowButton href={state.url}>
                     {state.name}
                     <CircleIcon transform="rotate(90deg)" circleColor={color.orange3} iconColor={color.orange1}>
                     <ArrowSVG />

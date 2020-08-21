@@ -113,7 +113,7 @@ export const requirements = {
     text:
         `Every state has different licensing needs based on the type of business you've incorporated, where it's located and the government rules in that state. 
         We will research your business license needs for you with our Business License Research Package, but you can also do initial research yourself with the following resources:`,
-    header: {
+    link: {
         text:
             `Business License Research Package`,
         url:
