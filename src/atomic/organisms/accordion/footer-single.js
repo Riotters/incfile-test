@@ -1,6 +1,43 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
 import styled from "styled-components";
+import DropdownSVG from "../../../images/dropdown.inline.svg";
+
+const Wrapper = styled.div`
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    min-width: 185px;
+
+    @media (min-width: 769px) {
+      margin-top: 0;
+    }
+
+    @media (min-width: 992px) {
+      padding-right: 15px;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 15px;
+        width: 15px;
+        margin-top: 10px;
+
+        @media(min-width: 992px) {
+            display: none;
+        }
+
+        svg {
+            transform: ${props => props.isOpen ? "scale(-1)" : "scale(1)"};
+        }
+    }
+`;
 
 const FooterItem = styled.div`
     button {
@@ -66,7 +103,7 @@ const FooterSingle = ({ handleClick, content }) => {
     }
 
     return (
-        <>
+        <Wrapper isOpen={menu}>
             {content && (
                 <FooterItem>
                     {content.header && (
@@ -84,8 +121,11 @@ const FooterSingle = ({ handleClick, content }) => {
                         </List>
                     )}
                 </FooterItem>
-            )} 
-        </> 
+            )}
+            <span>
+                <DropdownSVG /> 
+            </span>
+        </Wrapper> 
     )
 }
 

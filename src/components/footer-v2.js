@@ -1,6 +1,6 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React, { useState } from "react"
+import React from "react"
 import styled from "styled-components"
 import Container from "./container"
 import LogoSVG from "../images/logo.inline.svg"
@@ -145,23 +145,6 @@ const Navigation = styled.nav`
 
   @media (min-width: 992px) {
     flex-direction: row;
-  }
-
-  div {
-    margin-top: 25px;
-    min-width: 185px;
-
-    @media (min-width: 769px) {
-      margin-top: 0;
-    }
-
-    @media (min-width: 992px) {
-      padding-right: 15px;
-    }
-
-    &:last-child {
-      padding-right: 0;
-    }
   }
 `
 
