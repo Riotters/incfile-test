@@ -1,0 +1,224 @@
+import ImageContent from "../../../../components/partials/blocks/left-image-right-content";
+import React from "react";
+import styled from "styled-components";
+import {Heading} from "../../../atoms/typography/heading";
+import {Paragraph} from "../../../atoms/typography/paragraph";
+import {color} from "../../../../components/styles/colors";
+import TextBlockWithImage from "../../../molecules/mixed-blocks/text-block-with-absolute-image";
+import ArrowSVG from "../../../../images/arrow.inline.svg";
+import IconCircle from "../../../../components/icons/circle";
+import PlaneIcon from "../../../../images/icons/plane.inline.svg";
+import RockerIcon from "../../../../images/icons/rocket.inline.svg";
+import LccIcon from "../../../../images/icons/limited-liability-company-or-llc.inline.svg";
+import HandsIcon from "../../../../images/icons/hands.inline.svg";
+import Button from "../../../molecules/buttons/button";
+import Container from "../../../container";
+import OvalOrange2Svg from "../../../../images/oval-orange-2.inline.svg";
+
+const BusinessOwnerResponsibilities = styled.section`
+  position: relative;
+  padding-top: 75px;
+  padding-bottom: 64px;
+
+  .colorbox {
+    margin-bottom: 48px;
+  }
+`;
+
+const OrangeContainer = styled.div`
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(254,246,237,1) 100%);
+    padding-bottom: 100px;
+    position: relative;
+`;
+
+const Oval = styled.div`
+  position: absolute;
+  left: 0;
+  top: 200px;
+`
+
+const CoachBusinessStructure = () => (
+    <OrangeContainer>
+
+        <Oval>
+            <OvalOrange2Svg/>
+        </Oval>
+
+        <Container>
+            <BusinessOwnerResponsibilities>
+                <ImageContent image="unique-business-2" paddingTop="60">
+                    <Heading size={4} style={{fontSize: "24px"}}>
+                        Choose the Right Business Structure and Register Your Amazon Business
+                    </Heading>
+                    <Paragraph big>
+                        Now that you have all the background information for your Amazon seller business, it’s time to
+                        make it into a reality. That starts by choosing the right structure or “legal entity” for your
+                        business. In the U.S., there are four main business structures. They are:
+                    </Paragraph>
+
+                    <TextBlockWithImage
+                        SvgImage={HandsIcon}
+                        textBackgroundColor="transparent"
+                        imageBackgroundColor={color.white}
+                        imageShadowColor="#ababab"
+                        imageShadowOpacity={0.5}
+                        boxShadow={false}
+                        paddingLeft={0}
+                        style={{marginTop: "70px"}}
+                        circleShadowY={40}
+                        circleShadowBlure={80}
+                        width={100}
+                        widthUnit="%"
+                    >
+                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                                   mixed={true}>
+                            <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                <ArrowSVG/>
+                            </IconCircle>
+                            Sole Proprietorship
+                        </Paragraph>
+
+                        <Paragraph big>
+                            This is the "default" business structure and is what your business will be if you decide not
+                            to create a more formal structure. We don't recommend this type of business as it doesn't
+                            give you the legal protections you need.
+                        </Paragraph>
+                    </TextBlockWithImage>
+
+                    <TextBlockWithImage
+                        SvgImage={LccIcon}
+                        textBackgroundColor="transparent"
+                        imageBackgroundColor={color.white}
+                        imageShadowColor="#ababab"
+                        imageShadowOpacity={0.5}
+                        boxShadow={false}
+                        paddingLeft={0}
+                        style={{marginTop: "70px"}}
+                        circleShadowY={40}
+                        circleShadowBlure={80}
+                        width={100}
+                        widthUnit="%"
+                    >
+                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                                   mixed={true}>
+                            <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                <ArrowSVG/>
+                            </IconCircle>
+                            Limited Liability Company or LLC
+                        </Paragraph>
+
+                        <Paragraph big>
+                            The most common type of business entity. An LLC is fast, simple and inexpensive to setup and
+                            maintain. It protects your personal finances and assets and is a great way to start your
+                            real estate
+                        </Paragraph>
+                    </TextBlockWithImage>
+
+                    <TextBlockWithImage
+                        SvgImage={RockerIcon}
+                        textBackgroundColor="transparent"
+                        imageBackgroundColor={color.white}
+                        imageShadowColor="#ababab"
+                        imageShadowOpacity={0.5}
+                        boxShadow={false}
+                        paddingLeft={0}
+                        style={{marginTop: "70px"}}
+                        circleShadowY={40}
+                        circleShadowBlure={80}
+                        width={100}
+                        widthUnit="%"
+                    >
+                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                                   mixed={true}>
+                            <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                <ArrowSVG/>
+                            </IconCircle>
+                            Series LLC
+                        </Paragraph>
+
+                        <Paragraph big>
+                            This is a special type of LLC entity that's only available in certain states. It allows you
+                            to create "mini" LLCs, each with their own limited liability and separate assets, under the
+                            umbrella of a master LLC.
+                        </Paragraph>
+                    </TextBlockWithImage>
+
+                    <TextBlockWithImage
+                        SvgImage={PlaneIcon}
+                        textBackgroundColor="transparent"
+                        imageBackgroundColor={color.white}
+                        imageShadowColor="#ababab"
+                        imageShadowOpacity={0.5}
+                        boxShadow={false}
+                        paddingLeft={0}
+                        style={{marginTop: "70px"}}
+                        circleShadowY={40}
+                        circleShadowBlure={80}
+                        width={100}
+                        widthUnit="%"
+                    >
+                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                                   mixed={true}>
+                            <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                <ArrowSVG/>
+                            </IconCircle>
+                            S Corporation
+                        </Paragraph>
+
+                        <Paragraph big>
+                            This is a more complex type of business and isn't generally recommended for smaller
+                            organization.
+                        </Paragraph>
+                    </TextBlockWithImage>
+
+                    <TextBlockWithImage
+                        SvgImage={RockerIcon}
+                        textBackgroundColor="transparent"
+                        imageBackgroundColor={color.white}
+                        imageShadowColor="#ababab"
+                        imageShadowOpacity={0.5}
+                        boxShadow={false}
+                        paddingLeft={0}
+                        style={{marginTop: "70px"}}
+                        circleShadowY={40}
+                        circleShadowBlure={80}
+                        width={100}
+                        widthUnit="%"
+                    >
+                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                                   mixed={true}>
+                            <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                <ArrowSVG/>
+                            </IconCircle>
+                            C Corporation
+                        </Paragraph>
+
+                        <Paragraph big>
+                            These are the largest and most complex types of businesses and are far more than the average
+                            entrepreneur or business owner will need.
+                        </Paragraph>
+                    </TextBlockWithImage>
+
+                    <Paragraph big style={{paddingTop: "120px"}} mixed={true}>
+                        For more information on the advantages and disadvantages of different types of businesses,
+                        <span className="big blue">please see our in-depth guide</span>. If you've still got questions, <span className="big blue">we've answered them to help you
+                        choose the right business structure.</span>
+                    </Paragraph>
+                    <Paragraph big mixed={true}>
+                        In most cases our recommendation would be to create an LLC, We've
+                        <span className="big blue">got a complete guide to everything you need to do</span> and we can set one up for your Amazon Seller
+                        business. <span className="big blue">LLC formation dose vary from state
+                        to state</span>, but we've got you covered, wherever you are.
+                    </Paragraph>
+
+                    <Button theme="primary48" width="365px" arrow>
+                        Start your business with us, today!
+                    </Button>
+                </ImageContent>
+            </BusinessOwnerResponsibilities>
+        </Container>
+    </OrangeContainer>
+);
+
+export default CoachBusinessStructure;

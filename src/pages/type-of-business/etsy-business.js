@@ -27,6 +27,21 @@ import TalkIcon from "../../images/icons/talk-to-clients.inline.svg"
 import InvolvedIcon from "../../images/icons/get-involved-with-business-communities.inline.svg"
 import {color} from "../../components/styles/colors";
 import CountingTextBoxed from "../../atomic/molecules/text-blocks/counting-text-boxed";
+import OvalOrange2Svg from "../../images/oval-orange-2.inline.svg";
+import ImageContent from "../../components/partials/blocks/left-image-right-content";
+import HandsIcon from "../../images/icons/hands.inline.svg";
+import IconCircle from "../../components/icons/circle";
+import ArrowSVG from "../../images/arrow.inline.svg";
+import LimitedIcon from "../../images/icons/limited-liability-company-or-llc.inline.svg";
+import SeriesIcon from "../../images/icons/limited-liability-company.inline.svg";
+import PlaneIcon from "../../images/icons/plane.inline.svg";
+import RockerIcon from "../../images/icons/rocket.inline.svg";
+import SettingBusiness from "../../atomic/sections/type-of-business/etsy-business/setting-business";
+import OrderNow from "../../atomic/sections/type-of-business/etsy-business/order-now";
+import {toolsList} from "../../static/type-of-business/etsy-business";
+import HireEmployees from "../../atomic/sections/type-of-business/etsy-business/hire-employees";
+import UsefulTools from "../../atomic/partials/useful-tools";
+import Conclusion from "../../atomic/sections/general/conclusion";
 
 const EtsyBusiness = () => (
     <Layout>
@@ -282,7 +297,8 @@ const EtsyBusiness = () => (
                     </Heading>
 
                     <Paragraph big>
-                        Finally, you should put your business plan together. Business plans do vary slightly, but they should cover the following areas:
+                        Finally, you should put your business plan together. Business plans do vary slightly, but they
+                        should cover the following areas:
                     </Paragraph>
 
                     <CountingTextBoxed number={1}>
@@ -345,6 +361,204 @@ const EtsyBusiness = () => (
                 </CenterBox>
             </Container>
         </SimpleSection>
+
+        <OrangeContainer>
+
+            <Oval>
+                <OvalOrange2Svg/>
+            </Oval>
+
+            <Container>
+                <BusinessOwnerResponsibilities>
+                    <ImageContent image="unique-business-2" paddingTop="60">
+                        <Heading size={4} style={{fontSize: "24px"}}>
+                            Do I Need an LLC to Sell on Etsy?
+                        </Heading>
+                        <Paragraph big>
+                            Now that you have all the background information for your Etsy business, it’s time to
+                            legally form your business entity. Many people wonder if they should have an LLC for their
+                            Etsy business, or if you can run your Etsy shop as a sole proprietor. In most cases, our
+                            recommendation is to set up an LLC so you can separate your business and personal assets—but
+                            the right business structure for you depends on your business needs. In the U.S., there are
+                            five main business structures. They are:
+                        </Paragraph>
+
+                        <TextBlockWithImage
+                            SvgImage={HandsIcon}
+                            textBackgroundColor="transparent"
+                            imageBackgroundColor={color.white}
+                            imageShadowColor="#ababab"
+                            imageShadowOpacity={0.5}
+                            boxShadow={false}
+                            paddingLeft={0}
+                            style={{marginTop: "70px"}}
+                            circleShadowY={40}
+                            circleShadowBlure={80}
+                            width={100}
+                            widthUnit="%"
+                        >
+                            <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                                       mixed={true}>
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                Sole Proprietorship
+                            </Paragraph>
+
+                            <Paragraph big>
+                                This is the "default" business structure and is what your business will be if you decide
+                                not to create a more formal structure. We don't recommend this type of business as it
+                                doesn't give you the legal protections you need.
+                            </Paragraph>
+                        </TextBlockWithImage>
+
+                        <TextBlockWithImage
+                            SvgImage={LimitedIcon}
+                            textBackgroundColor="transparent"
+                            imageBackgroundColor={color.white}
+                            imageShadowColor="#ababab"
+                            imageShadowOpacity={0.5}
+                            boxShadow={false}
+                            paddingLeft={0}
+                            style={{marginTop: "70px"}}
+                            circleShadowY={40}
+                            circleShadowBlure={80}
+                            width={100}
+                            widthUnit="%"
+                        >
+                            <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                                       mixed={true}>
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                Limited Liability Company or LLC
+                            </Paragraph>
+
+                            <Paragraph big>
+                                The most common type of business entity. An LLC is fast, simple and inexpensive to setup
+                                and maintain. It protects your personal finances and assets and keeps them separate from
+                                those of your business.
+                            </Paragraph>
+                        </TextBlockWithImage>
+
+                        <TextBlockWithImage
+                            SvgImage={SeriesIcon}
+                            textBackgroundColor="transparent"
+                            imageBackgroundColor={color.white}
+                            imageShadowColor="#ababab"
+                            imageShadowOpacity={0.5}
+                            boxShadow={false}
+                            paddingLeft={0}
+                            style={{marginTop: "70px"}}
+                            circleShadowY={40}
+                            circleShadowBlure={80}
+                            width={100}
+                            widthUnit="%"
+                        >
+                            <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                                       mixed={true}>
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                Series LLC
+                            </Paragraph>
+
+                            <Paragraph big>
+                                This is a special type of LLC entity that's only available in certain states. It allows
+                                you to create "mini" LLCs, each with their own limited liability and separate assets,
+                                under the umbrella of a master LLC.
+                            </Paragraph>
+                        </TextBlockWithImage>
+
+                        <TextBlockWithImage
+                            SvgImage={PlaneIcon}
+                            textBackgroundColor="transparent"
+                            imageBackgroundColor={color.white}
+                            imageShadowColor="#ababab"
+                            imageShadowOpacity={0.5}
+                            boxShadow={false}
+                            paddingLeft={0}
+                            style={{marginTop: "70px"}}
+                            circleShadowY={40}
+                            circleShadowBlure={80}
+                            width={100}
+                            widthUnit="%"
+                        >
+                            <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                                       mixed={true}>
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                S Corporation
+                            </Paragraph>
+
+                            <Paragraph big>
+                                This is a more complex type of business and isn't generally recommended for smaller
+                                organization.
+                            </Paragraph>
+                        </TextBlockWithImage>
+
+                        <TextBlockWithImage
+                            SvgImage={RockerIcon}
+                            textBackgroundColor="transparent"
+                            imageBackgroundColor={color.white}
+                            imageShadowColor="#ababab"
+                            imageShadowOpacity={0.5}
+                            boxShadow={false}
+                            paddingLeft={0}
+                            style={{marginTop: "70px"}}
+                            circleShadowY={40}
+                            circleShadowBlure={80}
+                            width={100}
+                            widthUnit="%"
+                        >
+                            <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                                       mixed={true}>
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                C Corporation
+                            </Paragraph>
+
+                            <Paragraph big>
+                                These are the largest and most complex types of businesses and are far more than the
+                                average entrepreneur or business owner will need.
+                            </Paragraph>
+                        </TextBlockWithImage>
+
+                        <Paragraph big style={{paddingTop: "120px"}} mixed={true}>
+                            If you've still got questions about different types of business entities, check out our
+                            <span className="blue big">in-depth guide</span>, or hear our answers to the <span
+                            className="blue big">most common questions</span> about LLCs vs.
+                            corporations.
+                        </Paragraph>
+                        <Paragraph big mixed={true}>
+                            If you're ready to start your Etsy LLC, you can check out our <span className="blue big">LLC formation guide for your
+                            state</span>, or have Incfile take care of all the paperwork for you.
+                        </Paragraph>
+
+                        <Button theme="primary48" width="365px" arrow>
+                            Start your business with us, today!
+                        </Button>
+                    </ImageContent>
+                </BusinessOwnerResponsibilities>
+            </Container>
+        </OrangeContainer>
+
+        <SettingBusiness />
+
+        <OrderNow />
+
+        <HireEmployees />
+
+        <UsefulTools style={{paddingBottom: "200px"}} toolsList={toolsList.tools} headlineText={toolsList.headlineText} description={toolsList.description}/>
+
+        <Conclusion to="/" buttonTitle="Start your Etsy Business with us, today">
+            <Heading size={3} style={{fontSize: "40px"}}>Conclusion</Heading>
+            <Paragraph big>
+                Etsy is a very empowering marketplace. In particular it’s a great way for female entrepreneurs to get started and with the right approach and discipline, it can grow from being a side project to becoming a powerful revenue stream. Follow the advice in this Etsy guide, and you’ll be able to create an Etsy business selling beautiful and amazing crafted products to the world.
+            </Paragraph>
+        </Conclusion>
     </Layout>
 );
 
@@ -407,5 +621,28 @@ const GridSectionList = styled.div`
 const SimpleSection = styled.div`
     padding-top: 100px;
 `;
+
+const BusinessOwnerResponsibilities = styled.section`
+  position: relative;
+  padding-top: 75px;
+  padding-bottom: 64px;
+
+  .colorbox {
+    margin-bottom: 48px;
+  }
+`;
+
+const OrangeContainer = styled.div`
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(254,246,237,1) 100%);
+    padding-bottom: 100px;
+    position: relative;
+`;
+
+const Oval = styled.div`
+  position: absolute; 
+  left: 0;
+  top: 200px;
+`
 
 export default EtsyBusiness;

@@ -41,7 +41,7 @@ const TitleBox = styled.div`
     line-height: 24px;
     margin-bottom: 15px;
     text-align: center;
-    color: ${color.grey1}
+    color: ${color.grey1};
     
     @media (min-width: 1200px) {
         text-align: left;

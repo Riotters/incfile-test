@@ -23,6 +23,8 @@ import {
     AveragePricingNiche
 } from "../../../../static/type-of-business/social-media-influencer";
 import AveragePricing from "../../../molecules/mixed-blocks/average-pricing";
+import CircleWithText from "../../../molecules/blocks/circle-with-text-block";
+import TextWithBubbleCounting from "../../../molecules/mixed-blocks/text-with-bubble-counting";
 
 const cn = (...args) => args.filter(Boolean).join(" ");
 
@@ -463,6 +465,10 @@ const PageTabs = ({layout, columns}) => (
                                                                  text="Worth of influencer marketing industry in 2017, and is expected to be worth $10 billion over the next couple of years."/>
                                         <BlueBoxWithAbsoluteText absoluteText="18-34"
                                                                  text="Almost three-quarters of influencers on Instagram are in the 18-to-34 age range."/>
+
+                                        <CircleWithText textInsideCircle="70" symbol="%" textLine="Of teens trust influencers more than traditional celebrities" />
+
+                                        <TextWithBubbleCounting text="4 in 10 millennials say that their favorite influencers understand them better than their friends."/>
 
                                         <div style={{marginBottom: "30px"}}>
                                             <Adventages

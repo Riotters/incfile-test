@@ -3,12 +3,13 @@ import {useTabState} from "@bumaga/tabs";
 import styled from "styled-components";
 
 const TabHeading = ({title, filename, children, ...props}) => (
-    <TabsWrapper className={props.isVisible ? "slideUp enter" : "slideUp"} layout={props.layout}>
-        {console.log(props)}
-        <Sticky layout={props.layout} columns={props.columns}>
-            {children}
-        </Sticky>
-    </TabsWrapper>
+
+        <TabsWrapper className={props.isVisible ? "slideUp enter" : "slideUp"} layout={props.layout}>
+            {console.log(props)}
+            <Sticky layout={props.layout} columns={props.columns}>
+                {children}
+            </Sticky>
+        </TabsWrapper>
 );
 
 const TabsWrapper = styled.div`
@@ -39,3 +40,5 @@ export default TabHeading;
 TabHeading.propTypes = {};
 
 TabHeading.defaultProps = {};
+
+const cn = (...args) => args.filter(Boolean).join(" ");
