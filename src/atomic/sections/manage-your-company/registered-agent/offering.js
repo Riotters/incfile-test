@@ -1,11 +1,14 @@
 import React from "react";
 import styled from "styled-components";
+import { color } from "../../../atoms/styles/colors"
 import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";
 import ContentCenter from "../../../partials/content-center";
 import Cards from "../../../organisms/cards/registered-agent-cards";
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/bottom-right-transparent-green3.inline.svg";
+import Curve from "../../../atoms/icons/curve";
+import CurveSVG from "../../../../images/curves/top-left-bottom-right.inline.svg";
 
 const Offering = styled.section`
   position: relative;
@@ -31,6 +34,9 @@ const OfferingSection = ({ className, content }) => (
             <OvalSVG />
         </Oval>
         <ContentCenter>
+            <Curve top="-15" right="395" color={color.purple1}>
+                <CurveSVG />
+            </Curve>
             <Heading size="2" maxWidth="770" bottomMargin="80">{content.header}</Heading>
             <Paragraph big maxWidth="770" bottomMargin="104">{content.text}</Paragraph>
             <Heading size="3" maxWidth="770" bottomMargin="40">{content.header2}</Heading>

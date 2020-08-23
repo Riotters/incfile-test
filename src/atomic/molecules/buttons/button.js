@@ -26,13 +26,14 @@ const Wrapper = styled(Link)`
   margin: ${(props) => (props.margin ? props.margin : "")};
   transition: background-color 0.3s ease, color 0.3s ease;
 
-  
-  @media(min-width: 576px) {
+  @media (min-width: 576px) {
     width: auto;
-  }
-  
-  @media (min-width: 769px) {
     white-space: nowrap;
+    max-width: ${(props) => props.width};
+    margin: ${(props) => (props.marginSM ? props.marginSM : "")};
+  }
+
+  @media (min-width: 769px) {
     margin: ${(props) => (props.marginMD ? props.marginMD : "")};
   }
 
@@ -43,11 +44,11 @@ const Wrapper = styled(Link)`
   @media (min-width: 1200px) {
     margin: ${(props) => (props.marginXL ? props.marginXL : "")};
   }
-  
-  @media (min-width: ${(props) => (props.width)}) {
-    max-width: ${(props) => (props.width)}
-  }
-  
+
+  // @media (min-width: ${(props) => props.width}) {
+  //   max-width: ${(props) => props.width};
+  // }
+
   &:hover {
     background-color: ${(props) => (props.theme === "primary40" || props.theme === "primary48" || props.theme === "primary56" ? color.white : color.orange1)};
     color: ${(props) => (props.theme === "primary40" || props.theme === "primary48" || props.theme === "primary56" ? color.orange1 : color.white)};
@@ -114,8 +115,8 @@ const Arrow = styled.div`
   }
 `;
 
-const Button = ({ content, className, theme, height, width, arrow, arrow2, margin, marginMD, marginLG, padding, right }) => (
-  <Wrapper className={className} to={content.url ? content.url : content} height={height} width={width} arrow={arrow} arrow2={arrow2} theme={theme} margin={margin} marginMD={marginMD} marginLG={marginLG} padding={padding}>
+const Button = ({ content, className, theme, height, width, arrow, arrow2, margin, marginSM, marginMD, marginLG, padding, right }) => (
+  <Wrapper className={className} to={content.url ? content.url : content} height={height} width={width} arrow={arrow} arrow2={arrow2} theme={theme} margin={margin} marginSM={marginSM} marginMD={marginMD} marginLG={marginLG} padding={padding}>
     {content.text ? content.text : content}
     {arrow && (
       <Arrow className="arrow1" theme={theme} right={right}>
@@ -136,14 +137,14 @@ Button.propTypes = {
   width: PropTypes.string,
   content: {
     text: PropTypes.string.isRequired,
-    url: PropTypes.string.isRequired
-  }
-}
+    url: PropTypes.string.isRequired,
+  },
+};
 
 Button.defaultProps = {
   width: "auto",
   content: {
     text: "Start your business with us, today!",
-    url: "/"
-  }
-}
+    url: "/",
+  },
+};

@@ -80,7 +80,7 @@ const Wrapper = styled.div`
   align-items: center;
   position: relative;
   padding-top: 80px;
-  
+
   @media (min-width: 992px) {
     flex-direction: row;
     height: 100vh;
@@ -91,8 +91,6 @@ const Wrapper = styled.div`
 
 const Oval = styled.div`
   width: 90%;
-  max-height: 777px;
-  max-width: 350px;
   position: absolute;
   top: 0;
   right: 0;
@@ -100,7 +98,11 @@ const Oval = styled.div`
 
   @media (min-width: 992px) {
     width: 50%;
+  }
+
+  @media (min-width: 1200px) {
     max-width: 850px;
+    max-height: 777px;
   }
 
   &::after {
@@ -183,7 +185,7 @@ const ImageContainer = styled.div`
   width: 100%;
   top: 50%;
   right: 55%;
-  
+
   @media (min-width: 992px) {
     position: absolute;
     width: 55%;

@@ -5,13 +5,13 @@ import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
 import Button from "../../atomic/molecules/buttons/button";
 //Sections
 import Top from "../../atomic/partials/top";
-import About from "../../atomic/sections/manage-your-company/change-registered-agent/about"
-import Help from "../../atomic/sections/manage-your-company/change-registered-agent/help"
-import Faq from "../../atomic/sections/manage-your-company/change-registered-agent/faq"
-import Benefits from "../../components/partials/sections/benefits";
-import Articles from "../../components/partials/sections/articles";
+import About from "../../atomic/sections/manage-your-company/change-registered-agent/about";
+import Help from "../../atomic/sections/manage-your-company/change-registered-agent/help";
+import Faq from "../../atomic/sections/manage-your-company/change-registered-agent/faq";
+import Benefits from "../../atomic/sections/benefits";
+import Articles from "../../atomic/sections/articles";
 //Texts
-import { top, about, help, faq } from "../../static/manage-your-company/change-registered-agent"
+import { top, about, help, faq } from "../../static/manage-your-company/change-registered-agent";
 
 const ChangeOfRegisteredAgent = () => (
   <Layout>
@@ -27,7 +27,7 @@ const ChangeOfRegisteredAgent = () => (
     <Help content={help} />
     <Faq content={faq} />
     <Benefits />
-    <Articles />
+    <Articles oval />
   </Layout>
 );
 

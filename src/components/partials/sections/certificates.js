@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Container from "../../container";
+import Container from "../../../atomic/container";
 import Image from "../../image_nobase64";
 import TextCheck from "../../static-check/text-only";
 import Button from "../../button";
@@ -24,7 +24,7 @@ const Content = styled.div`
   flex-direction: column;
   max-width: 750px;
 
-  @media (min-width: 769px) {
+  @media (min-width: 992px) {
     padding-left: 100px;
   }
 
@@ -45,7 +45,7 @@ const Icon = styled.div`
   width: 100%;
   max-width: 400px;
 
-  @media (min-width: 769px) {
+  @media (min-width: 992px) {
     display: flex;
   }
 
@@ -59,7 +59,7 @@ const Checks = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media (min-width: 769px) {
+  @media (min-width: 576px) {
     flex-direction: row;
   }
 

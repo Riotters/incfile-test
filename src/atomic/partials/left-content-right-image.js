@@ -20,15 +20,14 @@ const Content = styled.div`
   width: 100%;
   order: 2;
 
-  @media (min-width: 769px) {
-    width: 70%;
+  @media (min-width: 992px) {
+    max-width: 500px;
     padding-right: 100px;
-    max-width: ${props => (props.contentWidth ? parseInt(props.contentWidth) + 100 : "700")}px;
     order: 1;
   }
-
-  @media (min-width: 992px) {
-    width: 100%;
+  
+  @media (min-width: 1200) {
+    max-width: ${props => (props.contentWidth ? parseInt(props.contentWidth) + 100 : "700")}px;
   }
 
 
@@ -39,7 +38,6 @@ const Content = styled.div`
 
 const Imagebox = styled.div`
   display: none;
-  display: flex;
   align-items: center;
   order: 1;
   margin-bottom: 32px;

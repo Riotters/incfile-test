@@ -20,10 +20,9 @@ export const about = {
     box: {
       header:
         `Enterpreneur 360 (2019)`,
-      text: [
+      text:
         `It’s important to take steps to protect these company assets. Our partnered attorneys will do the research to make sure the mark isn't already taken, 
         ensure the filing gets accepted by the government office, and provide sound legal advice throughout the entire process.`,
-      ],
     },
 }
 

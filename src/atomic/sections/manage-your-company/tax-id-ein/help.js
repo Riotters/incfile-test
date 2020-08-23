@@ -17,7 +17,7 @@ const Help = styled.section`
   padding-bottom: 64px;
 
   &::before {
-    content: '';
+    content: "";
     height: 2032px;
     width: 100%;
     background-image: ${gradient.blue3};
@@ -27,7 +27,7 @@ const Help = styled.section`
   }
 
   h2 {
-      text-align: left;
+    text-align: left;
   }
 
   p {
@@ -41,26 +41,30 @@ const TextWrapper = styled.div`
 `;
 
 const HelpSection = ({ className, content }) => (
-    <Help className={className}>
-        <Oval className="oval" height="136" width="136" top="0" left="0">
-            <OvalSVG />
-        </Oval>
-        <Oval className="oval" height="570" width="570" y="20" bottom="0" right="0">
-            <Oval2SVG />
-        </Oval>
-        <ContentObject 
-            object={<Card className="card" headline="TAX ID / EIN" content={content.card} image="entity-comparison-9288" />} 
-        >
-            <TextWrapper>
-                <Curve top="-5" right="110" color={color.blue1}>
-                    <CurveSVG />
-                </Curve>
-                <Heading size={2} bottomMargin="56" maxWidth="500">{content.header}</Heading>
-                <Heading size={4} bottomMargin="24">{content.header2}</Heading>
-                <Paragraph big bottomMargin="0">{content.text}</Paragraph>
-            </TextWrapper>
-        </ContentObject>
-    </Help>
-  );
-  
-  export default HelpSection;
+  <Help className={className}>
+    <Oval className="oval" height="136" width="136" top="0" left="0">
+      <OvalSVG />
+    </Oval>
+    <Oval className="oval" height="570" width="570" y="20" bottom="0" right="0">
+      <Oval2SVG />
+    </Oval>
+    <ContentObject object={<Card className="card" headline="TAX ID / EIN" content={content.card} image="entity-comparison-9288" />}>
+      <TextWrapper>
+        <Curve top="-15" topXL="-5" right="-20" rightXL="110" color={color.blue1}>
+          <CurveSVG />
+        </Curve>
+        <Heading size={2} bottomMargin="56" maxWidth="500">
+          {content.header}
+        </Heading>
+        <Heading size={4} bottomMargin="24">
+          {content.header2}
+        </Heading>
+        <Paragraph big bottomMargin="0">
+          {content.text}
+        </Paragraph>
+      </TextWrapper>
+    </ContentObject>
+  </Help>
+);
+
+export default HelpSection;

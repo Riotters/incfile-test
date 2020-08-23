@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { color } from "../../atoms/styles/colors";
 import Card from "../../molecules/mixed-blocks/top-image-box";
+import Container from "../../container";
 
 const Wrapper = styled.div`
     display: grid;
@@ -9,8 +10,10 @@ const Wrapper = styled.div`
     grid-gap: 30px;
     width: 100%;
     max-width: 970px;
-    padding: 140px 0;
+    padding-top: ${props => props.paddingTop ? props.paddingTop : "140"}px;
+    padding-bottom: ${props => props.paddingBottom ? props.paddingBottom : "140"}px;
     margin: 0 auto;
+    position: relative;
 
     @media (min-width: 769px) {
       grid-template-columns: 1fr 1fr;
@@ -20,13 +23,15 @@ const Wrapper = styled.div`
 const colors = [color.orange3, color.red3, color.green3, color.blue3];
 const icons = ["clock-691", "refuse", "cost", "receive"]
 
-const AnnualCards = ({ className, content }) => {
+const AnnualCards = ({ className, content, paddingTop, paddingBottom }) => {
   return (
-    <Wrapper className={className}>
-        {content.map((card, i) => (
-            <Card content={card} color={colors[i]} image={icons[i]} />
-        ))}
-    </Wrapper>
+    <Container>
+      <Wrapper className={className} paddingTop={paddingTop} paddingBottom={paddingBottom}>
+          {content.map((card, i) => (
+              <Card content={card} color={colors[i]} image={icons[i]} />
+          ))}
+      </Wrapper>
+    </Container>
   )
 }
 

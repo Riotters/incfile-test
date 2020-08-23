@@ -160,7 +160,7 @@ export const typesOfTaxes = {
     ],
     button: {
       text:
-        `Yes, contact me to learn more`,
+        `Contact me`,
       url:
         `#`,
     },

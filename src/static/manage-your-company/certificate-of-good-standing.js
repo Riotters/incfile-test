@@ -1,8 +1,8 @@
 export const top = {
     header: 
-        `Federal Employer Identification Number (EIN) / Tax ID Number`,
+        `Filing Your Certificate of Good Standing`,
     text: 
-        `Understanding What, Where, When & Hows of Your Business EIN`,
+        `$0 + State Fee & FREE Registered Agent.`,
     button: [
         {
         text: 'Order now',

@@ -3,16 +3,19 @@ import Layout from "../../components/layout";
 import SEO from "../../components/seo";
 import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
 import Button from "../../atomic/molecules/buttons/button";
+import RatingRow from "../../atomic/atoms/boxes/rating-row";
+import CartBlock from "../../atomic/molecules/blocks/cart-block";
+import RatingBlock from "../../atomic/molecules/blocks/rating-block";
 //Sections
 import Top from "../../atomic/partials/top";
 import About from "../../atomic/sections/manage-your-company/foreign-qualification/about";
 import Basics from "../../atomic/sections/manage-your-company/foreign-qualification/basics";
 import Help from "../../atomic/sections/manage-your-company/foreign-qualification/help";
 import Faq from "../../atomic/sections/manage-your-company/foreign-qualification/faq";
-import Articles from "../../components/partials/sections/articles";
-import Benefits from "../../components/partials/sections/benefits";
+import Benefits from "../../atomic/sections/benefits";
+import Articles from "../../atomic/sections/articles";
 //Text
-import { top, about, basics, help, faq } from "../../static/manage-your-company/foreign-qualification"
+import { top, about, basics, help, faq } from "../../static/manage-your-company/foreign-qualification";
 
 const ForeignQualification = () => (
   <Layout>
@@ -23,6 +26,10 @@ const ForeignQualification = () => (
       <Buttonsbox>
         <Button content={top.button[0]} theme="primary56" width="200px" arrow />
       </Buttonsbox>
+      <RatingRow>
+        <CartBlock />
+        <RatingBlock />
+      </RatingRow>
     </Top>
     <About content={about} />
     <Basics content={basics} />

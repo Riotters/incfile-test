@@ -1,11 +1,11 @@
 export const top = {
     header: 
-      `Registered Agent Service`,
+      `Registered Agent Services: Change of Registered Agent`,
     text: 
-      `Dependable, Easy, and Free for the First Year When You Incorporate with Incfile. A nationwide Registered Agent service provider you can trust at an affordable price. Available in all U.S. states.`,
+      `Incfile is a nationwide registered agent service provider you can trust.`,
     button: [
       {
-        text: 'Sign up now',
+        text: 'Order Now',
         url: '#',
       }
     ]

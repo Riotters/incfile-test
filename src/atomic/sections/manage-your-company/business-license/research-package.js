@@ -95,7 +95,7 @@ const ResearchPackageSection = ({ className, content }) => (
         <HeadingCenter headline="As part of the Business License Research Package, a licensing expert will..." headlineWidth="890" />
         <ContentCenter>
             <Boxes>
-            <Curve top="20" right="-29" color={color.blue1}>
+            <Curve top="40" right="-29" color={color.blue1}>
                 <CurveSVG />
             </Curve>
             <div className="box">

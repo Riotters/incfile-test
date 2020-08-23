@@ -20,23 +20,35 @@ const About = styled.section`
 `;
 
 const AboutSection = ({ className, content }) => (
-    <About className={className}>
-        <Oval className="oval" height="570" width="570" y="-40">
-            <OvalSVG />
-        </Oval>
-        <Oval className="oval" height="420" width="420" right="0" top="56">
-            <Oval2SVG />
-        </Oval>
-        <ImageContent image="chart">
-            <Paragraph big bottomMargin="32">{content.text}</Paragraph>
-            <IconTextColorBox color={color.orange3} Icon={IconSVG} content={content.box} bottomMargin="72" rounded curve/>
-            <Paragraph big bottomMargin="40">{content.text2}</Paragraph>
-            <Heading size={3} bottomMargin="24">{content.header}</Heading>
-            <Paragraph big bottomMargin="72">{content.text3}</Paragraph>
-            <Heading size={3} bottomMargin="24">{content.header2}</Heading>
-            <Paragraph big bottomMargin="0">{content.text4}</Paragraph>
-        </ImageContent>
-    </About>
-  );
-  
-  export default AboutSection;
+  <About className={className}>
+    <Oval className="oval" height="570" width="570" y="-40">
+      <OvalSVG />
+    </Oval>
+    <Oval className="oval" height="420" width="420" right="0" top="56">
+      <Oval2SVG />
+    </Oval>
+    <ImageContent image="chart-2377">
+      <Paragraph big bottomMargin="32">
+        {content.text}
+      </Paragraph>
+      <IconTextColorBox color={color.orange3} Icon={IconSVG} content={content.box} bottomMargin="72" rounded curve />
+      <Paragraph big bottomMargin="40">
+        {content.text2}
+      </Paragraph>
+      <Heading size={3} bottomMargin="24">
+        {content.header}
+      </Heading>
+      <Paragraph big bottomMargin="72">
+        {content.text3}
+      </Paragraph>
+      <Heading size={3} bottomMargin="24">
+        {content.header2}
+      </Heading>
+      <Paragraph big bottomMargin="0">
+        {content.text4}
+      </Paragraph>
+    </ImageContent>
+  </About>
+);
+
+export default AboutSection;
