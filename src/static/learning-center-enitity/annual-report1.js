@@ -110,33 +110,74 @@ export const faq = {
                 question:
                     `What types of businesses need to file reports?`,
                 answer:
-                    `The articles formalize the cessation of activity as an incorporated entity. They define parameters surrounding the dissolution of a company. 
-                    This could include the distribution or sale of assets, how shareholders will be compensated and responsibilities divided among management.`,
+                    `Generally, if you’re an incorporated business — a Limited Liability Company (LLC), Limited Liability Partnership (LLP), S Corporation or C Corporation — you will need to file a report.`,
             },
             {
                 question:
-                    `How much will it cost to file Articles of Dissolution?`,
+                    `Are Annual Report known as anything else?`,
                 answer:
-                  `The state fee varies by state our service fee to file Articles of Dissolution is $149. To review the fee in your state click on the “order now” button and select the state and entity type.`,
+                  `Sometimes. A report that’s filed every two years is known as a “biennial report.” Some states call Annual Report “statements of information.”`,
             },
             {
                 question:
-                    `What contingencies would prohibit me from filing a dissolution?`,
+                    `What information is included in an Annual Report?`,
                 answer:
-                    `The only stipulation that would prohibit the owners of an entity from filing a dissolution is if the company owes outstanding taxes or has annual reports outstanding. 
-                    In this event the company would need to bring the itself to good standing with the state before filing the dissolution.`,
+                    `It varies from state to state, but typically includes any changes to:`,
+                list:
+                [
+                    `The management structure of your business (like managers, members or directors)`,
+                    `The names or addresses of senior people in your business`,
+                    `Your business name or address`,
+                    `Your registered agent details`,
+                    `Main business activities`,
+                    `Share structures or amounts`,
+                    `Other authorized signatories`,
+                    `Some other areas`,
+                ]
             },
             {
                 question:
-                    `How long will it take to have the Articles of Dissolution filed?`,
+                    `What happens if I don’t file a report?`,
                 answer:
-                    `The filing time is dependent on the governing state agency and varies by state.`,
+                    `If you don’t file a report, you may have to pay a penalty fee or taxes. If you continue not to file, your business may be involuntarily dissolved, meaning it will lose its legal status (which can have serious implications).`,
             },
             {
                 question:
-                    `What will I receive when the Articles of Dissolution are filed?`,
+                    `Once I have filed my official Annual Report, do I need to produce other reports?`,
                 answer:
-                    `The governing state agency will return a copy of the filed articles which are then mailed to the client.`,
+                    `You may. Our compliance tool will tell you what the business administration entity in your state needs. Of course, you may also produce other annual or interim reports for your business shareholders, employees or other stakeholders, but that will generally be defined in your operating agreement or other corporate bylaws.`,
+            },
+            {
+                question:
+                    `Once I have filed my official Annual Report, do I need to produce other reports?`,
+                answer:
+                    ``,
+            },       {
+                question:
+                    `Once I have filed my official Annual Report, do I need to produce other reports?`,
+                answer:
+                    ``,
+            },       {
+                question:
+                    `Once I have filed my official Annual Report, do I need to produce other reports?`,
+                answer:
+                    ``,
+            },       {
+                question:
+                    `Once I have filed my official Annual Report, do I need to produce other reports?`,
+                answer:
+                    ``,
+            },       {
+                question:
+                    `Once I have filed my official Annual Report, do I need to produce other reports?`,
+                answer:
+                    ``,
+            },       {
+                question:
+                    `Once I have filed my official Annual Report, do I need to produce other reports?`,
+                answer:
+                    ``,
             },
         ],
     },
+}
