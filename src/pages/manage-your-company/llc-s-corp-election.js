@@ -26,6 +26,7 @@ import { Heading } from "../../atomic/atoms/typography/heading";
 import { Paragraph } from "../../atomic/atoms/typography/paragraph";
 import TotalSavings from "../../atomic/organisms/forms/total-savings";
 import LeftContentRightImage from "../../atomic/partials/left-content-right-image";
+import BusinessRevenue from "../../atomic/molecules/blocks/business-revenue";
 
 const LLCsTax = styled.section`
   position: relative;
@@ -120,6 +121,7 @@ const Help = styled.section`
 
 const List = <NumericBoxedList content={llcsTax.list} />;
 const NoImpact = <CircleCheckmarkText isRed content={llcsTax.red} />;
+const Revenue = <BusinessRevenue />;
 const Savings = <TotalSavings />;
 
 const CorpElection = () => (
@@ -140,7 +142,7 @@ const CorpElection = () => (
     </LLCsTax>
     <Example>
       <TextCenterLayout headline={howSaveMoney.header} headlineWidth="770" text={howSaveMoney.text} />
-      <ContentObject object={NoImpact} contentWidth="570">
+      <ContentObject object={Revenue} contentWidth="570">
         <Heading size="3">{howSaveMoney.header2}</Heading>
         <Paragraph big bottomMargin="64">
           {howSaveMoney.text2}
