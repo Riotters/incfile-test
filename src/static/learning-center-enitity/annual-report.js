@@ -27,7 +27,7 @@ export const about = {
         text: `Learn more about compilance requirements`,
         url: `/`,
     },
-},
+}
 export const nextStateFiling = {
     header2:
     `Next state filing due date for Riotters`,
@@ -55,7 +55,47 @@ export const nextStateFiling = {
                 title: `Frequency:`,
                 text: `Annualy`,
             },
+            {
+                title: `Due Date:`,
+                text: `During six-month period ending on last day of anniversary month of incorporation or qualification.`,
+            },
+            {
+                title: `Filing Fee:`,
+                text: `$25`,
+            },
+            {
+                title: `Important:`,
+                text: `The initial Statement of Information filing is due within 90 days of the entity formation date.`,
+            },
+        ],
+        header4:
+        `California Franchise Tax`,
+        table2: [
+            {
+                title: `Frequency:`,
+                text: `Annually`,
+            },
+            {
+                title: `Fee:`,
+                text: `$800 (minimum)`,
+                text: `The California Franchise Tax Board requires that all corporations registered in the State of California pay a franchise tax. For new corporations, the minimum franchise tax is $800 per year. However, Franchise Tax  is waived the 1st year for corporations but not LLCs. 
+                New corporations that incorporate in California  are exempt from the 1st year minimum tax, however the corporate owners are still responsible for paying the applicable franchise tax on any net income earned during the 1st year. Starting in the second year corporations are subject to the annual $800 minimum franchise tax rule.`,
+                text3: `(We do not assist in the filing of the Franchise Tax Report)`,
+            },
+
+        ],
+        buttons: [
+            {
+                text: `File Your Annual or Biennal Report`,
+                utl: `/`,
+            },
+            {
+                text: `Check Another Due Date`,
+                utl: `/`,
+            },
         ]
+
+        
 
         
     },
