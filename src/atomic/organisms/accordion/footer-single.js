@@ -74,19 +74,32 @@ const FooterItem = styled.div`
 const List = styled.ul`
     display: ${props => props.isOpen ? "block" : "none"};
     list-style: none;
+    margin-bottom: 32px;
 
     @media(min-width: 992px) {
         display: block;
+        margin-bottom: 0;
     }
 
     li {
+        margin-top: 16px;
+
+        @media (min-width: 992px) {
+            margin-top: 0;
+        }
+
         a {
           text-decoration: none;
           color: #797a79;
           font-family: Avenir;
-          font-size: 14px;
-          line-height: 17px;
+          font-size: 18px;
+          line-height: 24px;
           transition: color 0.3s ease;
+
+          @media (min-width: 992px) {
+            font-size: 14px;
+            line-height: 30px;
+          }
   
           &:hover {
             color: #fd8550;
@@ -103,11 +116,11 @@ const FooterSingle = ({ handleClick, content }) => {
     }
 
     return (
-        <Wrapper isOpen={menu}>
+        <Wrapper isOpen={menu} onClick={handleClick}>
             {content && (
                 <FooterItem>
                     {content.header && (
-                        <button onClick={handleClick}>
+                        <button>
                             <h4>{content.header}</h4>
                         </button>
                     )}

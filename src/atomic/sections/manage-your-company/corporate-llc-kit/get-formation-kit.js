@@ -1,10 +1,17 @@
 import React from "react";
 import styled from "styled-components";
-import { gradient } from "../../../atoms/styles/colors";
+import { color, gradient } from "../../../atoms/styles/colors";
 import TextImage from "../../../partials/left-content-right-image";
 import ContentCenter from "../../../partials/content-center";
 import Button from "../../../molecules/buttons/button";
 import Accordion from "../../../organisms/accordion/accordion"
+import { Heading } from "../../../atoms/typography/heading";
+import { Paragraph } from "../../../atoms/typography/paragraph";
+import Oval from "../../../atoms/icons/oval";
+import OvalSVG from "../../../../images/ovals/top-right-green2-transparent.inline.svg";
+import Oval2SVG from "../../../../images/ovals/top-left-transparent-green2.inline.svg";
+import Curve from "../../../atoms/icons/curve";
+import CurveSVG from "../../../../images/curves/top-left-bottom-right-big.inline.svg";
 
 const GetFormationKit = styled.section`
   position: relative;
@@ -24,9 +31,8 @@ const GetFormationKit = styled.section`
   .text-image {
     padding-bottom: 88px;
 
-    .imagebox {
-        max-width: 380px;
-        margin-left: auto;
+    svg {
+        transform: rotate(-90deg);
     }
   }
 
@@ -46,9 +52,18 @@ const GetFormationKit = styled.section`
 
 const GetFormationKitSection = ({ className, content}) => (
     <GetFormationKit className={className}>
-        <TextImage className="text-image" image="manage-your-company" imageWidth="400">
-            <h2>{content.header}</h2>
-            <p>{content.text}</p>
+        <Oval className="oval" height="420" width="420" top="0" right="0">
+            <OvalSVG />
+        </Oval>
+        <Oval className="oval" height="720" width="720" top="35" left="0">
+            <Oval2SVG />
+        </Oval>
+        <TextImage className="text-image" image="manage-your-company" contentWidth="550" contentPadding="85">
+            <Curve top="40" left="-90" color={color.green1}>
+                <CurveSVG />
+            </Curve>
+            <Heading size="2">{content.header}</Heading>
+            <Paragraph maxWidth="500">{content.text}</Paragraph>
             <Button content={content.button} theme="primary56" margin="0 auto 0 0" arrow />
         </TextImage>
         <ContentCenter className="content-center">

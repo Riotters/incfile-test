@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import Container from "../../container"
+import Container from "../../../atomic/container"
 import Carousel from "react-multi-carousel"
 import "react-multi-carousel/lib/styles.css"
 import Article from "../../article"

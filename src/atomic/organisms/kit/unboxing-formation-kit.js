@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Card from "../../molecules/mixed-blocks/top-image-box";
 import { color } from "../../atoms/styles/colors";
 import Frame from "../../molecules/mixed-blocks/unboxing-frame";
-import Image from "../../atoms/image/image";
+import Image from "../../atoms/image/image_nobase64";
 import Accordion from "../accordion/accordion-simple";
 import Whitebox from "../../atoms/boxes/white-box";
 import Line1SVG from "../../../images/icons/line1.inline.svg";
@@ -17,12 +17,17 @@ import Line7SVG from "../../../images/icons/line7.inline.svg";
 const Wrapper = styled.div`
   width: 100%;
   position: relative;
-  padding: 185px 0 148px;
+  padding: 32px 0 148px;
 
   .gatsby-image-wrapper {
+    display: none;
     width: 100%;
     max-width: 1050px;
     margin: 0 auto;
+
+    @media (min-width: 768px) {
+      display: block;
+    }
   }
 
   .frame {
@@ -59,7 +64,14 @@ const Wrapper = styled.div`
 
 const FramesBoxTop = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 100%;
+  margin-bottom: 30px;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 0;
+  }
+
   grid-gap: 30px;
 
   h4 {
@@ -69,14 +81,24 @@ const FramesBoxTop = styled.div`
 
 const FramesBoxBottom = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 100%;
   grid-gap: 30px;
   max-width: 900px;
   margin: 0 auto;
 
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
   h4 {
     text-align: center;
   }
+`;
+
+const New = styled(Whitebox)`
+  width: 100%; 
+  min-height: 80px;
+  padding: 16px;
 `;
 
 const Icons = [Line1SVG, Line2SVG, Line3SVG, Line4SVG, Line5SVG, Line6SVG, Line7SVG];
@@ -89,13 +111,19 @@ const UnboxingFormationKit = ({ className, content }) => {
         ))} */}
       <FramesBoxTop>
         {content.top.map((box, i) => (
-          <Accordion content={box} />
+          // <Accordion content={box} />
+          <New>
+            <span>{box.question}</span>
+          </New>
         ))}
       </FramesBoxTop>
       <Image filename="testing" />
       <FramesBoxBottom>
         {content.bottom.map((box, i) => (
-          <Accordion content={box} />
+          // <Accordion content={box} />
+          <New>
+            <span>{box.question}</span>
+          </New>
         ))}
       </FramesBoxBottom>
     </Wrapper>

@@ -12,6 +12,7 @@ import LinkedinSVG from "../images/linkedin.inline.svg";
 import PinterestSVG from "../images/pinterest.inline.svg";
 import Button from "./button";
 import List from "../atomic/organisms/accordion/footer-single";
+import Curve from "../atomic/atoms/icons/curve";
 import CurveSVG from "../images/green-curve.inline.svg";
 //Texts
 import { footer } from "../static/footer";
@@ -148,25 +149,25 @@ const Navigation = styled.nav`
   }
 `;
 
-const Curve = styled.div`
-  height: 75px;
-  width: 75px;
-  position: absolute;
-  bottom: 0;
-  right: 25px;
-  z-index: -1;
+// const Curve = styled.div`
+//   height: 75px;
+//   width: 75px;
+//   position: absolute;
+//   bottom: 0;
+//   right: 25px;
+//   z-index: -1;
 
-  @media (min-width: 992px) {
-    bottom: 75px;
-  }
+//   @media (min-width: 992px) {
+//     bottom: 75px;
+//   }
 
-  @media (min-width: 1440px) {
-    height: 115px;
-    width: 115px;
-    right: -115px;
-    bottom: 75px;
-  }
-`;
+//   @media (min-width: 1440px) {
+//     height: 115px;
+//     width: 115px;
+//     right: -115px;
+//     bottom: 75px;
+//   }
+// `;
 
 const Copyright = styled.p`
   color: #4f4f4f;
@@ -227,7 +228,7 @@ const Footer = () => {
           </NewsletterWrapper>
         </Top>
         <Navigation>
-          <Curve>
+          <Curve right="-30" bottom="150">
             <CurveSVG />
           </Curve>
           {footer.items.map((item) => (
