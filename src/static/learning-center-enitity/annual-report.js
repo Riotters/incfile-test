@@ -9,7 +9,7 @@ export const top = {
             url: `/`,
         },
     ],
-}
+},
 export const about = {
 
     box: {
@@ -26,12 +26,12 @@ export const about = {
     link: {
         text: `Learn more about compilance requirements`,
         url: `/`,
-    }
-}
+    },
+},
 export const nextStateFiling = {
     header2:
     `Next state filing due date for Riotters`,
-    box [
+    box: {
         header: `Mar 31, 2020`,
         text: `Statement of Information due date for Riotters`,
         details: [
@@ -45,9 +45,18 @@ export const nextStateFiling = {
                 text: `Mar 31, 2020`,
             },
             
-        ]
+        ],
         header3:
-        `What are the ongoing compliance requirements in California ?`
+        `What are the ongoing compliance requirements in California?`,
+        header4:
+        `Statement of Information`,
+        table: [
+            {
+                title: `Frequency:`,
+                text: `Annualy`,
+            },
+        ]
+
         
-    ]
-}
+    },
+},
