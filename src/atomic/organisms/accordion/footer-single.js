@@ -1,13 +1,13 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
 import styled from "styled-components";
+import { color } from "../../atoms/styles/colors"
 import DropdownSVG from "../../../images/dropdown.inline.svg";
 
 const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
     margin-top: 25px;
-    min-width: 185px;
 
     @media (min-width: 769px) {
       margin-top: 0;
@@ -54,18 +54,16 @@ const FooterItem = styled.div`
     }
 
     h4 {
-        color: #757575;
+        color: ${color.grey2};
         font-family: MarkPro;
         font-size: 16px;
         letter-spacing: 1px;
         line-height: 14px;
         text-transform: uppercase;
-        border-top: 1px solid #f4f4f4;
 
         @media (min-width: 992px) {
             font-size: 12px;
             letter-spacing: 1px;
-            border-top: none;
             opacity: 0.9;
         }
     }
@@ -90,7 +88,7 @@ const List = styled.ul`
 
         a {
           text-decoration: none;
-          color: #797a79;
+          color: ${color.grey2};
           font-family: Avenir;
           font-size: 18px;
           line-height: 24px;

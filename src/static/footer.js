@@ -1,3 +1,13 @@
+export const newsletter = {
+    text: `Newsletter sign in`,
+    bracket: `no spam`,
+    input: `Your E-mail`,
+    button: {
+        text: `Subscribe`,
+        url: `#`,
+    }
+}
+
 export const footer = {
     items: [
         {
