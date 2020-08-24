@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Circle from "../../atoms/icons/circle";
 import PropsTypes from "prop-types";
+import {shadow} from "../../atoms/styles/shadows";
 
 const TextBlockWithImage = (
     {
@@ -9,6 +10,7 @@ const TextBlockWithImage = (
         SvgImage,
         textBackgroundColor,
         imageBackgroundColor,
+        imageShadowColor,
         width,
         widthUnit,
         borderRadius,
@@ -32,7 +34,7 @@ const TextBlockWithImage = (
         style={style}
         widthUnit={widthUnit}
     >
-        <AbsoluteCircle>
+        <AbsoluteCircle imageShadowColor={imageShadowColor}>
             <Circle circleColor={imageBackgroundColor} padding={0} height={80} width={80} paddingLeft={paddingLeft}>
                 <SvgImage/>
             </Circle>
@@ -74,6 +76,7 @@ const AbsoluteCircle = styled.div`
     top: -40px;
     left: ${props => props.paddingLeft};
     border-radius: 50%;
+    box-shadow: ${props => props.imageShadowColor};
 `;
 
 export default TextBlockWithImage;
@@ -95,7 +98,7 @@ TextBlockWithImage.defaultProps = {
     widthUnit: "px",
     borderRadius: 20,
     textBackgroundColor: `white`,
-    imageShadowColor: `#e0f4fd`,
+    imageShadowColor: shadow.white2,
     imageShadowOpacity: 0.5,
     boxShadow: true,
     paddingTop: 70,

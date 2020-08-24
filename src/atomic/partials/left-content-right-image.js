@@ -22,11 +22,11 @@ const Content = styled.div`
 
   @media (min-width: 992px) {
     max-width: 500px;
-    padding-right: 100px;
+    padding-right: ${props => (props.contentPadding ? props.contentPadding : "100")}px;
     order: 1;
   }
   
-  @media (min-width: 1200) {
+  @media (min-width: 1200px) {
     max-width: ${props => (props.contentWidth ? parseInt(props.contentWidth) + 100 : "700")}px;
   }
 
@@ -61,11 +61,11 @@ const Imagebox = styled.div`
   }
 `;
 
-const LeftContentRightImage = ({ className, children, image, contentWidth }) => {
+const LeftContentRightImage = ({ className, children, image, contentWidth, contentPadding }) => {
   return (
     <Container>
       <Wrapper className={className}>
-        <Content className="content" contentWidth={contentWidth}>
+        <Content className="content" contentWidth={contentWidth} contentPadding={contentPadding}>
             { children }
         </Content>
         <Imagebox className="imagebox">

@@ -27,10 +27,10 @@ const StyledParagraph = styled.p`
     }
 `;
 
-export const Paragraph = ({ children, maxWidth, ...rest }) => (
+export const Paragraph = ({ children, maxWidth, mixed, ...rest }) => (
   <StyledParagraph maxWidth={maxWidth} {...rest}>
-    {typeof children === "string" ? children : null}
-    {typeof children === "object" ? children.map((el, id) => (id % 2 ? <Link to={el.url}>{` ${el.text} `}</Link> : el.text)) : null}
+    {(typeof children === "string" || mixed) ? children : null}
+    {(typeof children === "object" && mixed === false) ? children.map((el, id) => (id % 2 ? <Link to={el.url}>{` ${el.text} `}</Link> : el.text)) : null}
   </StyledParagraph>
 );
 
@@ -43,6 +43,7 @@ Paragraph.propTypes = {
   maxWidth: PropTypes.number,
   bottomPadding: PropTypes.number,
   bottomMargin: PropTypes.number,
+  mixed: PropTypes.bool,
 };
 
 Paragraph.defaultProps = {
@@ -52,4 +53,5 @@ Paragraph.defaultProps = {
   flexJustifyValue: "center",
   flexAlignValue: "center",
   bottomMargin: 32,
+  mixed: false
 };

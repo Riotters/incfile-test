@@ -19,76 +19,48 @@ export const unboxing = {
   boxes: {
     top: [
       {
-        items: [
-          {
-            question:
-              `Binder & Slip Case`,
-            answer:
-              `Our standard LLC incorporation or corporate kits are Handcrafted in the traditional bookbinding method and constructed with heavier materials extra durability and long life. The three-ring mechanisms with double opening and closing boosters allow pages to lie flat and turn easily.`,
-          }
-        ]
+        question:
+          `Binder & Slip Case`,
+        answer:
+          `Our standard LLC incorporation or corporate kits are Handcrafted in the traditional bookbinding method and constructed with heavier materials extra durability and long life. The three-ring mechanisms with double opening and closing boosters allow pages to lie flat and turn easily.`,
       },
       {
-        items: [
-          {
-            question:
-              `20 Member of Stock Certificates`,
-            answer:
-              `These elegantly designed numbered security certificates contain your company name and state of incorporation and are printed on the finest security paper available.`,
-          }
-        ]
+        question:
+          `20 Member of Stock Certificates`,
+        answer:
+          `These elegantly designed numbered security certificates contain your company name and state of incorporation and are printed on the finest security paper available.`,
       },
       {
-        items: [
-          {
-            question:
-              `Corporate Forms/Documents`,
-            answer:
-              `At no extra charge, your personalized binder will include printed minutes and bylaws or an operating agreement.`,
-          }
-        ]
+        question:
+          `Corporate Forms/Documents`,
+        answer:
+          `At no extra charge, your personalized binder will include printed minutes and bylaws or an operating agreement.`,
       },
       {
-        items: [
-          {
-            question:
-              `Corporate Embossing Seal`,
-            answer:
-              `Custom 1 5/8 metal die cast pocket seal embosser personalized with your company name , state of formation and date of formation.`,
-          }
-        ]
+        question:
+          `Corporate Embossing Seal`,
+        answer:
+          `Custom 1 5/8 metal die cast pocket seal embosser personalized with your company name , state of formation and date of formation.`,
       },
     ],
     bottom: [
       {
-        items: [
-          {
-            question:
-              `Personalized Business Name on Kit`,
-            answer:
-              `Each quality binder is personalized in gold with your organization name and comes with a matching slipcase.`,
-          }
-        ]
+        question:
+          `Personalized Business Name on Kit`,
+        answer:
+          `Each quality binder is personalized in gold with your organization name and comes with a matching slipcase.`,
       },
       {
-        items: [
-          {
-            question:
-              `Transfer Ledger`,
-            answer:
-              `8-page alphabetized transfer ledger.`,
-          }
-        ]
+        question:
+          `Transfer Ledger`,
+        answer:
+          `8-page alphabetized transfer ledger.`,
       },
       {
-        items: [
-          {
-            question:
-              `Index Tabs`,
-            answer:
-              `Mylar-coated, easy-to-use tabs for your Corporate or LLC Kit.`,
-          }
-        ]
+        question:
+          `Index Tabs`,
+        answer:
+          `Mylar-coated, easy-to-use tabs for your Corporate or LLC Kit.`,
       },
     ],
   }

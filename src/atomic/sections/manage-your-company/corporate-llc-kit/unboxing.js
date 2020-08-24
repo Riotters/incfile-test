@@ -6,7 +6,11 @@ import UboxingFormationKit from "../../../organisms/kit/unboxing-formation-kit"
 
 const Unboxing = styled.section`
   position: relative;
-  padding-bottom: 64px;
+  padding: 120px 0 64px;
+
+  @media (min-width: 992px) {
+      padding: 0 0 64px;
+  }
 
   .heading {
       h2 {

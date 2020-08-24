@@ -27,7 +27,7 @@ const Taxes = () => (
             <TextWrapper>
                 <Heading style={3} style={{fontSize: "40px"}}>Rules, Regulations and Taxes for Your Influencer Marketing Business</Heading>
 
-                <Paragraph big>
+                <Paragraph big mixed={true}>
                     Even though you’re running a virtual business, you can’t escape real-world licenses, permits and regulations. You will need to explore local, state and federal licenses and permits, and <span className="blue big">we can also help out with researching your business licensing needs.</span>
                 </Paragraph>
             </TextWrapper>
@@ -35,12 +35,12 @@ const Taxes = () => (
             <TextCenterLayout headline="Taxes for a Moving Business"/>
 
             <TextWrapper>
-                <Paragraph big>
+                <Paragraph big mixed={true}>
                     <Curve color={color.babyblue1}
                            style={{position: "absolute", left: "-29px", top: "-25px", transform: "rotate(-90deg)"}}/>
                     Taxes are a fact of life if you’re in business, and there are various ways you will need to file and pay them. This can include self-employment tax, state income tax and federal income tax. You will also probably be liable for sales and use tax.
                 </Paragraph>
-                <Paragraph big>
+                <Paragraph big mixed={true}>
                     As a rule of thumb, we recommend holding back around a third of your earnings to pay your taxes. We can also <span className="big blue">prepare and file your tax returns for you.</span>
                 </Paragraph>
             </TextWrapper>

@@ -23,7 +23,7 @@ const Content = styled.div`
   }
 `;
 
-const ContentCenter = ({ className, children, contentWidth, headlineWidth, textWidth }) => {
+const ContentCenter = ({ className, children, contentWidth, headlineWidth, textWidth}) => {
     
   return (
       <Container>

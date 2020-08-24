@@ -35,8 +35,8 @@ const Box = styled.span`
     width: 32px;
 `;
 
-const TextBoxed = ({ className, children, isRed }) => (
-    <Wrapper className={className} isRed={isRed}>
+const TextBoxed = ({ className, children, isRed, ...rest}) => (
+    <Wrapper className={className} isRed={isRed} {...rest}>
         <Box>
             {isRed && (
                 <ExSVG />

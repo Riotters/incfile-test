@@ -4,7 +4,7 @@ import SEO from "../../components/seo";
 import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
 import Button from "../../atomic/molecules/buttons/button";
 //sections
-import Top from "../../components/partials/sections/top";
+import Top from "../../atomic/partials/top";
 import Unboxnig from "../../atomic/sections/manage-your-company/corporate-llc-kit/unboxing";
 import GetFormationKit from "../../atomic/sections/manage-your-company/corporate-llc-kit/get-formation-kit";
 import Articles from "../../components/partials/sections/articles";

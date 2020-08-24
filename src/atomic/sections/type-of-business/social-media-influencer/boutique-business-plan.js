@@ -57,7 +57,7 @@ const BusinessPlan = () => (
                 <Heading size={4} className="title">
                     Your Social Media Influencer Business Needs a Plan
                 </Heading>
-                <Paragraph big>
+                <Paragraph big mixed={true}>
                     You need to define how you’re going to run your influencer business, market yourself, get sales, make a profit and grow. This can only come about through creating a watertight business plan. It will help you get your thinking in order and show your commitment to your influencer marketing business.
                     <br/><br/>
                     Business plans do vary slightly, but they should cover the following areas:
@@ -117,7 +117,7 @@ const BusinessPlan = () => (
                     </Paragraph>
                 </CountingTextBoxed>
 
-                <Paragraph big style={{marginTop: "50px"}}>
+                <Paragraph big style={{marginTop: "50px"}} mixed={true}>
                     We’ve got the perfect <span style={{color: color.blue1, fontWeight: "bold"}}>guide to writing your business plan.</span>
                 </Paragraph>
             </BusinessOwnerResponsibilities>

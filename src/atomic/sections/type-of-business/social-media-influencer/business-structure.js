@@ -70,7 +70,7 @@ const BusinessStructure = () => (
                         width={100}
                         widthUnit="%"
                     >
-                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}>
+                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}} mixed={true}>
                             <IconCircle circleColor="transparent" iconColor={color.blue1}>
                                 <ArrowSVG/>
                             </IconCircle>
@@ -96,7 +96,7 @@ const BusinessStructure = () => (
                         width={100}
                         widthUnit="%"
                     >
-                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}>
+                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}} mixed={true}>
                             <IconCircle circleColor="transparent" iconColor={color.blue1}>
                                 <ArrowSVG/>
                             </IconCircle>
@@ -122,7 +122,7 @@ const BusinessStructure = () => (
                         width={100}
                         widthUnit="%"
                     >
-                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}>
+                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}} mixed={true}>
                             <IconCircle circleColor="transparent" iconColor={color.blue1}>
                                 <ArrowSVG/>
                             </IconCircle>
@@ -148,7 +148,7 @@ const BusinessStructure = () => (
                         width={100}
                         widthUnit="%"
                     >
-                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}>
+                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}} mixed={true}>
                             <IconCircle circleColor="transparent" iconColor={color.blue1}>
                                 <ArrowSVG/>
                             </IconCircle>
@@ -174,7 +174,7 @@ const BusinessStructure = () => (
                         width={100}
                         widthUnit="%"
                     >
-                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}>
+                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}} mixed={true}>
                             <IconCircle circleColor="transparent" iconColor={color.blue1}>
                                 <ArrowSVG/>
                             </IconCircle>
@@ -186,12 +186,12 @@ const BusinessStructure = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <Paragraph big style={{paddingTop: "120px"}}>
+                    <Paragraph big style={{paddingTop: "120px"}} mixed={true}>
                         For more information on the advantages and disadvantages of different types of businesses, <span
                         className="blue big">please see our in-depth guide</span>. If you’ve still got questions, <span
                         className="blue big">we’ve answered them to help you choose the right business structure</span> for your boutique clothing business.
                     </Paragraph>
-                    <Paragraph big>
+                    <Paragraph big mixed={true}>
                         In most cases, our recommendation for a boutique business business would
                         be to create an LLC. We’ve <span className="blue big">got a complete guide</span> to everything
                         you need to do. <span className="blue big">LLC formation does vary from state to state</span>,

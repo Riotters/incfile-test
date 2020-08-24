@@ -1,13 +1,13 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
 import styled from "styled-components";
+import { color } from "../../atoms/styles/colors"
 import DropdownSVG from "../../../images/dropdown.inline.svg";
 
 const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
     margin-top: 25px;
-    min-width: 185px;
 
     @media (min-width: 769px) {
       margin-top: 0;
@@ -54,18 +54,16 @@ const FooterItem = styled.div`
     }
 
     h4 {
-        color: #757575;
+        color: ${color.grey2};
         font-family: MarkPro;
         font-size: 16px;
         letter-spacing: 1px;
         line-height: 14px;
         text-transform: uppercase;
-        border-top: 1px solid #f4f4f4;
 
         @media (min-width: 992px) {
             font-size: 12px;
             letter-spacing: 1px;
-            border-top: none;
             opacity: 0.9;
         }
     }
@@ -74,19 +72,32 @@ const FooterItem = styled.div`
 const List = styled.ul`
     display: ${props => props.isOpen ? "block" : "none"};
     list-style: none;
+    margin-bottom: 32px;
 
     @media(min-width: 992px) {
         display: block;
+        margin-bottom: 0;
     }
 
     li {
+        margin-top: 16px;
+
+        @media (min-width: 992px) {
+            margin-top: 0;
+        }
+
         a {
           text-decoration: none;
-          color: #797a79;
+          color: ${color.grey2};
           font-family: Avenir;
-          font-size: 14px;
-          line-height: 17px;
+          font-size: 18px;
+          line-height: 24px;
           transition: color 0.3s ease;
+
+          @media (min-width: 992px) {
+            font-size: 14px;
+            line-height: 30px;
+          }
   
           &:hover {
             color: #fd8550;
@@ -95,7 +106,7 @@ const List = styled.ul`
     }
 `;
 
-const FooterSingle = ({ handleClick, content }) => {
+const FooterSingle = ({ content }) => {
     const [menu, showMenu] = useState(false);
 
     function handleClick() {
@@ -103,11 +114,11 @@ const FooterSingle = ({ handleClick, content }) => {
     }
 
     return (
-        <Wrapper isOpen={menu}>
+        <Wrapper isOpen={menu} onClick={handleClick}>
             {content && (
                 <FooterItem>
                     {content.header && (
-                        <button onClick={handleClick}>
+                        <button>
                             <h4>{content.header}</h4>
                         </button>
                     )}
