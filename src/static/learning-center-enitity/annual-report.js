@@ -9,7 +9,7 @@ export const top = {
             url: `/`,
         },
     ],
-},
+}
 export const about = {
 
     box: {
