@@ -1,77 +1,35 @@
 import React from "react";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-import Buttonsbox from "../atomic/atoms/boxes/top-buttons-box";
-import Button from "../atomic/molecules/buttons/button";
-import TextCenterLayout from "../components/partials/blocks/heading-center";
+import Layout from "../../components/layout";
+import SEO from "../../components/seo";
+import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
+import Button from "../../atomic/molecules/buttons/button";
+import TextCenterLayout from "../../components/partials/blocks/heading-center";
 import styled from "styled-components";
-import Top from "../components/partials/sections/top";
-import ImageContent from "../components/partials/blocks/left-image-right-content";
-import ContentObject from "../atomic/partials/left-content-right-object";
-import ObjectContent from "../atomic/partials/left-object-right-content";
-import Articles from "../components/partials/sections/articles";
-import { color, gradient } from "../components/styles/colors";
-import { shadow } from "../components/styles/shadows";
-import Container from "../components/container";
-import IDCardSVG from "../images/icons/idcard.inline.svg";
-import Accordion from "../components/accordion";
-import Benefits from "../components/partials/sections/benefits";
-import Card from "../components/certificate-card";
-import ArrowLink from "../atomic/molecules/buttons/text";
-import H2Text from "../atomic/molecules/text-blocks/h2-text";
-import H3Text from "../atomic/molecules/text-blocks/h3-text";
-import { top, reducingTax, llcsTax, howSaveMoney, taxCalculator, fairSalary, administrativeOverhead, fileForm, behalfFile, help, faq, overhead } from "../static/llc-s-corp-election";
-import NumericBoxedList from "../atomic/organisms/lists/numeric-boxed-list";
-import CircleCheckmarkText from "../atomic/molecules/static-check/circle-checkmark-text";
-import TopImageBox from "../components/top-image-box";
-import ContentCenter from "../atomic/partials/content-center";
-import { Heading } from "../atomic/atoms/typography/heading";
-import { Paragraph } from "../atomic/atoms/typography/paragraph";
-import TotalSavings from "../atomic/organisms/forms/total-savings";
-import LeftContentRightImage from "../atomic/partials/left-content-right-image";
-
-const ReducingTax = styled.section`
-  position: relative;
-  padding-top: 75px;
-  padding-bottom: 64px;
-
-  h3,
-  p {
-    max-width: 100%;
-    padding-bottom: 24px;
-  }
-
-  h3 {
-    &.pt32 {
-      padding-top: 32px;
-    }
-
-    &.pt48 {
-      padding-top: 48px;
-    }
-  }
-
-  p {
-    &.pb32 {
-      padding-bottom: 32px;
-    }
-
-    &.pb40 {
-      padding-bottom: 40px;
-    }
-
-    &.pb72 {
-      padding-bottom: 72px;
-    }
-  }
-
-  .colorbox {
-    margin-bottom: 48px;
-  }
-`;
+import Top from "../../components/partials/sections/top";
+import About from "../../atomic/sections/manage-your-company/llc-s-corp-election/about";
+import ImageContent from "../../components/partials/blocks/left-image-right-content";
+import ContentObject from "../../atomic/partials/left-content-right-object";
+import ObjectContent from "../../atomic/partials/left-object-right-content";
+import Articles from "../../components/partials/sections/articles";
+import { color, gradient } from "../../components/styles/colors";
+import Accordion from "../../components/accordion";
+import Benefits from "../../components/partials/sections/benefits";
+import ArrowLink from "../../atomic/molecules/buttons/text";
+import H2Text from "../../atomic/molecules/text-blocks/h2-text";
+import H3Text from "../../atomic/molecules/text-blocks/h3-text";
+import { top, about, llcsTax, howSaveMoney, taxCalculator, fairSalary, fileForm, behalfFile, help, faq, overhead } from "../../static/llc-s-corp-election";
+import NumericBoxedList from "../../atomic/organisms/lists/numeric-boxed-list";
+import CircleCheckmarkText from "../../atomic/molecules/static-check/circle-checkmark-text";
+import TopImageBox from "../../components/top-image-box";
+import ContentCenter from "../../atomic/partials/content-center";
+import { Heading } from "../../atomic/atoms/typography/heading";
+import { Paragraph } from "../../atomic/atoms/typography/paragraph";
+import TotalSavings from "../../atomic/organisms/forms/total-savings";
+import LeftContentRightImage from "../../atomic/partials/left-content-right-image";
 
 const LLCsTax = styled.section`
   position: relative;
+
   padding-top: 75px;
   padding-bottom: 64px;
 `;
@@ -174,12 +132,7 @@ const CorpElection = () => (
         <Button content={top.button[0]} theme="primary56" arrow />
       </Buttonsbox>
     </Top>
-    <ReducingTax>
-      <ImageContent image="cash-register" paddingTop="60">
-        <H3Text content={reducingTax} />
-        <Button content={reducingTax.button[0]} theme="secondary56" arrow margin="48px auto 0 0" />
-      </ImageContent>
-    </ReducingTax>
+    <About content={about} />
     <LLCsTax>
       <ContentObject contentWidth="400" headlineWidth="450" object={[List, NoImpact]}>
         <H2Text content={llcsTax} />
@@ -196,17 +149,21 @@ const CorpElection = () => (
         <Paragraph big>{howSaveMoney.text3}</Paragraph>
       </ContentObject>
       <ObjectContent object={Savings}>
-        <Heading size="2" bottomMargin="80" style={{textAlign: "left"}}>{taxCalculator.header}</Heading>
-        <Paragraph big>
-          {taxCalculator.text}
-        </Paragraph>
-        <Heading size="3" bottomMargin="32">{taxCalculator.header2}</Heading>
+        <Heading size="2" bottomMargin="80" style={{ textAlign: "left" }}>
+          {taxCalculator.header}
+        </Heading>
+        <Paragraph big>{taxCalculator.text}</Paragraph>
+        <Heading size="3" bottomMargin="32">
+          {taxCalculator.header2}
+        </Heading>
         <ArrowLink content={taxCalculator.link} />
       </ObjectContent>
     </Example>
     <FairlSalary>
       <LeftContentRightImage image="weight">
-        <Heading size="2" bottomMargin="64">{fairSalary.header}</Heading>
+        <Heading size="2" bottomMargin="64">
+          {fairSalary.header}
+        </Heading>
         <Paragraph big bottomMargin="0">
           {fairSalary.text}
         </Paragraph>

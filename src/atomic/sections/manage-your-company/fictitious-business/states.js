@@ -13,24 +13,42 @@ const States = styled.section`
   padding-top: 75px;
   padding-bottom: 64px;
   overflow: hidden;
+
+  .content {
+    margin-top: 72px;
+    box-shadow: 0 24px 32px 0 rgba(236, 236, 236, 0.5);
+
+    @media (min-width: 769px) {
+      box-shadow: none;
+    }
+
+    & > div {
+      align-items: flex-start;
+      overflow-x: scroll;
+
+      @media (min-width: 769px) {
+        overflow-x: visible;
+      }
+    }
+  }
 `;
 
 const StatesSection = ({ className, content }) => (
-    <States className={className}>
-        <Oval className="oval" height="720" width="720" top="0" left="0">
-            <OvalSVG />
-        </Oval>
-        <Oval className="oval" height="570" width="570" top="37" right="0" opacity="0.5">
-            <Oval2SVG />
-        </Oval>
-        <Oval className="oval" height="420" width="420" top="78" left="0">
-            <Oval3SVG />
-        </Oval>
-        <HeadingCenter headline={content.header} headlineWidth="770" text={content.text} textWidth="770" />
-        <ContentCenter>
-            <Table content={content.table} />
-        </ContentCenter>
-    </States>
-  );
-  
-  export default StatesSection;
+  <States className={className}>
+    <Oval className="oval" height="720" width="720" top="0" left="0">
+      <OvalSVG />
+    </Oval>
+    <Oval className="oval" height="570" width="570" top="37" right="0" opacity="0.5">
+      <Oval2SVG />
+    </Oval>
+    <Oval className="oval" height="420" width="420" top="78" left="0">
+      <Oval3SVG />
+    </Oval>
+    <HeadingCenter headline={content.header} headlineWidth="770" text={content.text} textWidth="770" />
+    <ContentCenter className="content">
+      <Table content={content.table} />
+    </ContentCenter>
+  </States>
+);
+
+export default StatesSection;
