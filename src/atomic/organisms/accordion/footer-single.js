@@ -106,7 +106,7 @@ const List = styled.ul`
     }
 `;
 
-const FooterSingle = ({ handleClick, content }) => {
+const FooterSingle = ({ content }) => {
     const [menu, showMenu] = useState(false);
 
     function handleClick() {

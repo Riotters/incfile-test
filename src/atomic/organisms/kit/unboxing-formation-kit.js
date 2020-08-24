@@ -2,9 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import Card from "../../molecules/mixed-blocks/top-image-box";
 import { color } from "../../atoms/styles/colors";
+import { shadow } from "../../atoms/styles/shadows";
 import Frame from "../../molecules/mixed-blocks/unboxing-frame";
 import Image from "../../atoms/image/image_nobase64";
-import Accordion from "../accordion/accordion-simple";
+import IconCircle from "../../../components/icons/circle"
+import ArrowSVG from "../../../images/arrow.inline.svg"
+import AccordionSingle from "../accordion/accordion-single";
 import Whitebox from "../../atoms/boxes/white-box";
 import Line1SVG from "../../../images/icons/line1.inline.svg";
 import Line2SVG from "../../../images/icons/line2.inline.svg";
@@ -25,7 +28,7 @@ const Wrapper = styled.div`
     max-width: 1050px;
     margin: 0 auto;
 
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       display: block;
     }
   }
@@ -65,40 +68,89 @@ const Wrapper = styled.div`
 const FramesBoxTop = styled.div`
   display: grid;
   grid-template-columns: 100%;
-  margin-bottom: 30px;
-
-  @media (min-width: 768px) {
+  grid-gap: 8px;
+  margin-bottom: 8px;
+  
+  @media (min-width: 992px) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
     margin-bottom: 0;
   }
 
-  grid-gap: 30px;
-
   h4 {
     text-align: center;
+  }
+
+  & > div {
+    margin-top: auto;
   }
 `;
 
 const FramesBoxBottom = styled.div`
   display: grid;
   grid-template-columns: 100%;
-  grid-gap: 30px;
+  grid-gap: 8px;
   max-width: 900px;
   margin: 0 auto;
 
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
   }
 
   h4 {
     text-align: center;
   }
+
+  & > div {
+    margin-bottom: auto;
+  }
 `;
 
 const New = styled(Whitebox)`
   width: 100%; 
-  min-height: 80px;
-  padding: 16px;
+  position: relative;
+
+  button, .text {
+    padding: 16px 16px 16px 64px;
+  }
+  
+  button {
+    width: 100%;
+    text-align: left;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+  }
+
+  .arrow {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+  }
+
+  span {
+    font-family: Avenir, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  .text {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: ${color.white};
+    transform: translateY(100%);
+    box-shadow: ${shadow.white1};
+
+    p {
+      color: ${color.grey1};
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
 `;
 
 const Icons = [Line1SVG, Line2SVG, Line3SVG, Line4SVG, Line5SVG, Line6SVG, Line7SVG];
@@ -106,24 +158,15 @@ const Icons = [Line1SVG, Line2SVG, Line3SVG, Line4SVG, Line5SVG, Line6SVG, Line7
 const UnboxingFormationKit = ({ className, content }) => {
   return (
     <Wrapper className={className}>
-      {/* {content.map((box, i) => (
-            i < 4 ?  <Frame className="frame" content={box} Icon={Icons[i]}/> :  <Frame className="frame" content={box} Icon={Icons[i]} bottom />
-        ))} */}
       <FramesBoxTop>
         {content.top.map((box, i) => (
-          // <Accordion content={box} />
-          <New>
-            <span>{box.question}</span>
-          </New>
+          <AccordionSingle content={box} />
         ))}
       </FramesBoxTop>
       <Image filename="testing" />
       <FramesBoxBottom>
         {content.bottom.map((box, i) => (
-          // <Accordion content={box} />
-          <New>
-            <span>{box.question}</span>
-          </New>
+          <AccordionSingle content={box} />
         ))}
       </FramesBoxBottom>
     </Wrapper>
