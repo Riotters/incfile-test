@@ -1,9 +1,13 @@
 import React from "react";
+import PropTypes from "prop-types"
 import styled from "styled-components";
+
+import {color} from "../../atoms/styles/colors";
+import {shadow} from "../../atoms/styles/shadows";
 import CircleSvg from "../../../images/circle-percentage.inline.svg";
 
-const CircleWithText = ({textInsideCircle, textLine, symbol}) => (
-    <Wrapper>
+const CircleWithText = ({textInsideCircle, textLine, symbol, withBg}) => (
+    <Wrapper withBg={withBg}>
         <Circle>
             <CircleSvg/>
             <TextInside>
@@ -20,10 +24,30 @@ const CircleWithText = ({textInsideCircle, textLine, symbol}) => (
     </Wrapper>
 );
 
+CircleWithText.propTypes = {
+    withBg: PropTypes.bool,
+    textInsideCircle: PropTypes.string.isRequired,
+    textLine: PropTypes.string.isRequired,
+    symbol: PropTypes.string
+};
+
+CircleWithText.defaultProps = {
+    withBg: false
+}
+
 const Wrapper = styled.div`
     max-height: 270px;
     display: flex;
     align-items: center;
+    
+    ${props => props.withBg &&
+        "background-color:" + color.white + ";" +
+        "box-shadow:" + shadow.white1 + ";" +
+        "border-top-left-radius: 8px;" +
+        "border-top-right-radius: 20px;" +
+        "border-bottom-left-radius: 8px;" +
+        "border-bottom-right-radius: 20px;"
+    }
 `;
 
 const Circle = styled.div`
@@ -65,6 +89,9 @@ const TextBox = styled.div`
     font-family: Avenir-Heavy, sans-serif;
     font-size: 20px;
     color: #1d1d1d;
+    padding-right: 48px;
+    padding-bottom: 24px;
+    padding-top: 24px;
 `;
 
 export default CircleWithText;

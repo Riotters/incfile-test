@@ -6,16 +6,15 @@ import Button from "../../components/button";
 import RatingRow from "../../atomic/atoms/boxes/rating-row";
 import CartBlock from "../../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../../atomic/molecules/blocks/rating-block";
-import styled from "styled-components";
 import TabsSection from "../../atomic/partials/tabs";
 import TabHeading from "../../atomic/organisms/tabs/TabHeading";
 import TabTitle from "../../atomic/molecules/tabs/tab-title";
-
-import TravelIcon from "../../images/icons/travel-agency.inline.svg";
+import ConstructionIcon from "../../images/icons/construction-company.inline.svg";
+import MegafonIcon from "../../images/icons/megafon.inline.svg";
 import LightIcon from "../../images/icons/light.inline.svg";
 import CalcIcon from "../../images/icons/calc.inline.svg";
-import PanelWrapper from "../../atomic/organisms/tabs/panel";
 import CollapseWrapper from "../../atomic/organisms/tabs/collapse";
+import PanelWrapper from "../../atomic/organisms/tabs/panel";
 import {Paragraph} from "../../atomic/atoms/typography/paragraph";
 import {Heading} from "../../atomic/atoms/typography/heading";
 import Colorbox from "../../components/color-box";
@@ -24,31 +23,31 @@ import CkeckText from "../../components/static-check/text-only";
 import BlueBoxWithAbsoluteText from "../../atomic/molecules/text-blocks/blue-box-with-absolute-text";
 import CircleWithText from "../../atomic/molecules/blocks/circle-with-text-block";
 import Adventages from "../../components/adventages";
-
 import TextBoxed from "../../atomic/molecules/static-check/circle-checkmark-text-boxed";
-import TypeOfBusiness from "../../atomic/sections/type-of-business/travel-agency/type-of-business";
-import ValidatingBusinessIdea from "../../atomic/sections/type-of-business/travel-agency/validating-business";
-import BusinessPlan from "../../atomic/sections/type-of-business/travel-agency/business-plan";
-import BusinessStructure from "../../atomic/sections/type-of-business/travel-agency/business-structure";
-import SettingBusiness from "../../atomic/sections/type-of-business/travel-agency/setting-business";
-import OrderNow from "../../atomic/sections/type-of-business/travel-agency/order-now";
-import Regulations from "../../atomic/sections/type-of-business/travel-agency/regulations";
-import InsuranceBusiness from "../../atomic/sections/type-of-business/travel-agency/insurance-business";
+import TypeOfBusiness from "../../atomic/sections/type-of-business/construction-company/type-of-business";
+import ValidatingBusinessIdea from "../../atomic/sections/type-of-business/construction-company/validating-business";
+import BusinessPlan from "../../atomic/sections/type-of-business/construction-company/business-plan";
+import BusinessStructure from "../../atomic/sections/type-of-business/construction-company/business-structure";
+import SettingBusiness from "../../atomic/sections/type-of-business/construction-company/setting-business";
+import OrderNow from "../../atomic/sections/type-of-business/construction-company/order-now";
+import Regulations from "../../atomic/sections/type-of-business/construction-company/regulations";
+import InsuranceBusiness from "../../atomic/sections/type-of-business/construction-company/insurance-business";
+import Taxes from "../../atomic/sections/type-of-business/construction-company/taxes";
 import UsefulTools from "../../atomic/partials/useful-tools";
-import Conclusion from "../../atomic/sections/general/conclusion";
 import {toolsList} from "../../static/type-of-business/travel-agency";
-import Taxes from "../../atomic/sections/type-of-business/travel-agency/taxes";
+import Conclusion from "../../atomic/sections/general/conclusion";
+import styled from "styled-components";
+import ToolsAndLinks from "../../atomic/sections/type-of-business/construction-company/tools";
 
-const TravelAgency = () => (
+const ConstructionCompany = () => (
     <Layout>
         <SEO title="How to Start a Travel Agency"
              description="Everyone likes traveling — new horizons, beautiful destinations and unique experiences mean we love packing our bags and spending time away from work and home."/>
 
-        <Top ovalColor="green" imageName="travel-agency" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
-            <h1>How to Start a Travel Agency</h1>
-            <p>Everyone likes traveling — new horizons, beautiful
-                destinations and unique experiences mean we love packing
-                our bags and spending time away from work and home.</p>
+        <Top ovalColor="sun" imageName="construction-company" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
+            <h1>How to Start a Construction Company</h1>
+            <p>The need for residential, commercial or industrial property
+                is constantly growing as the population increases.</p>
             <ButtonsBox>
                 <Button theme="primary56" marginMD="0 24px 0 0" arrow>
                     Start Now
@@ -63,7 +62,7 @@ const TravelAgency = () => (
 
         <TabsSection>
             <TabHeading>
-                <TabTitle title="Travel Agency" SvgIcon={TravelIcon}/>
+                <TabTitle title="Construction Company" SvgIcon={ConstructionIcon}/>
                 <TabTitle title="Why this industry?" SvgIcon={LightIcon}/>
                 <TabTitle title="Is This Business For You?" SvgIcon={CalcIcon}/>
             </TabHeading>
@@ -71,51 +70,54 @@ const TravelAgency = () => (
             <CollapseWrapper>
                 <PanelWrapper>
                     <Paragraph big style={{marginBottom: "40px"}}>
-                        That’s why travel agents are so important: they help bring our vacation dreams to life and build
-                        memories that will stay with us forever.
+                        This means there will always be a demand for good builders who can turn an architectural plan
+                        into a beautiful structure. If you have the trade skills and the expertise, starting a
+                        construction business could be a great way
+                        to build a solid future.
                     </Paragraph>
 
                     <Heading size={3}>
-                        Even with the rise of online travel booking, many vacationers want the reassurance of a travel
-                        expert
-                        to talk them through countries, destinations, hotels, flights, tours and more.
+                        There’s plenty of room for specialty construction businesses
+                        too, so finding the right building niche will help you get a reputation for specific expertise.
                     </Heading>
 
                     <Paragraph big style={{marginBottom: "40px"}}>
-                        If you have the expertise to understand travel itineraries and match the right people with the
-                        ideal experience, then opening a travel agency could be a great business move.
+                        Since construction businesses also tend to be local, if you find an area where there’s a large
+                        demand for property, that could give you
+                        a significant boost.
                     </Paragraph>
 
-                    <Colorbox className="box" theme="icon" Icon={TravelIcon} color={color.blue3} curve
+                    <Colorbox className="box" theme="icon" Icon={MegafonIcon} color={color.green3} curve
                               curveColor={color.blue1}>
-                        <Heading size={4}>Here’s how social media influencers make money:</Heading>
+                        <Heading size={4}>We want to help you get your construction business off the ground.</Heading>
 
                         <Paragraph bottomMargin={0}>
-                            We’ve helped over 100,000 people form their business and provided answers, guidance and
-                            support to transform them into entrepreneurs. We’ll guide you through what you need to know
-                            to start your travel agency business and get it off the ground.
+                            Since 2004, we’ve helped over 100,000 people to become entrepreneurs, starting exciting
+                            businesses and bringing their ideas
+                            to life. We’ll give you the support, guidance and advice you need
+                            to create a business and make it into a success.
                         </Paragraph>
 
                     </Colorbox>
 
-                    <Paragraph big style={{marginBottom: "40px", marginTop: "48px"}}>
-                        To get you started on the right foot, here’s our simple guide on how
-                        to become a travel agent. From highlighting important facts to validating your ideas, and from
-                        choosing the right structure to managing and running your business, you’ll find the answers you
-                        need.
+                    <Heading size={3} style={{fontSize: "20px", marginTop: "48px"}}>
+                        From validating your business and doing the research to filing your paperwork and running your business, this guide will help you out.
+                    </Heading>
+
+                    <Paragraph big style={{marginBottom: "40px"}}>
+                        We’ll talk you through the main things you need to do to get your construction business off of the ground.
                     </Paragraph>
 
                     <Heading size={3} style={{fontSize: "20px"}}>
-                        Read on for some insight into creating your own travel business and becoming an entrepreneur. In
-                        this guide we will cover:
+                        Read on for some insight into creating your own construction business and becoming an entrepreneur. In this guide we will cover:
                     </Heading>
 
                     <ListWrapper>
                         <ListBox>
                             <CkeckText>
                                 <Paragraph big>
-                                    Facts and figures on the success
-                                    of travel agencies
+                                    Statistics on why you should start
+                                    a construction business
                                 </Paragraph>
                             </CkeckText>
                         </ListBox>
@@ -123,8 +125,7 @@ const TravelAgency = () => (
                         <ListBox>
                             <CkeckText>
                                 <Paragraph big>
-                                    Choose the right business structure
-                                    for your travel agency
+                                    Learning if a construction business could be right for you
                                 </Paragraph>
                             </CkeckText>
                         </ListBox>
@@ -132,7 +133,7 @@ const TravelAgency = () => (
                         <ListBox>
                             <CkeckText>
                                 <Paragraph big>
-                                    Learning if a travel agency business could be right for you
+                                    Ideas for the type of construction business that you could form
                                 </Paragraph>
                             </CkeckText>
                         </ListBox>
@@ -140,7 +141,7 @@ const TravelAgency = () => (
                         <ListBox>
                             <CkeckText>
                                 <Paragraph big>
-                                    Ideas for the type of travel agency that you could form
+                                    How to validate your construction business idea
                                 </Paragraph>
                             </CkeckText>
                         </ListBox>
@@ -148,7 +149,7 @@ const TravelAgency = () => (
                         <ListBox>
                             <CkeckText>
                                 <Paragraph big>
-                                    Groups, forums and support for travel agency owners
+                                    Business plans for construction companies
                                 </Paragraph>
                             </CkeckText>
                         </ListBox>
@@ -156,7 +157,7 @@ const TravelAgency = () => (
                         <ListBox>
                             <CkeckText>
                                 <Paragraph big>
-                                    Helpful software for travel agency business owners
+                                    Where to find construction business groups, forums and support
                                 </Paragraph>
                             </CkeckText>
                         </ListBox>
@@ -164,7 +165,7 @@ const TravelAgency = () => (
                         <ListBox>
                             <CkeckText>
                                 <Paragraph big>
-                                    Proving your travel agency can work
+                                    Helpful software for construction business owners
                                 </Paragraph>
                             </CkeckText>
                         </ListBox>
@@ -172,7 +173,8 @@ const TravelAgency = () => (
                         <ListBox>
                             <CkeckText>
                                 <Paragraph big>
-                                    Travel agency business planning
+                                    How to choose whether your construction business should
+                                    be an LLC or corporation
                                 </Paragraph>
                             </CkeckText>
                         </ListBox>
@@ -180,8 +182,8 @@ const TravelAgency = () => (
                         <ListBox>
                             <CkeckText>
                                 <Paragraph big>
-                                    How to start your travel agency, with information on equipment, employees, location,
-                                    permits, finances, taxes and more
+                                    How to start your construction business with information
+                                    on equipment, employees, location, permits, finance, taxes and more
                                 </Paragraph>
                             </CkeckText>
                         </ListBox>
@@ -192,40 +194,41 @@ const TravelAgency = () => (
 
                 <PanelWrapper>
                     <Heading size={3}>
-                        Why You Should Start a New Travel Agency
+                        Why You Should Start a New Construction Business
                     </Heading>
 
+                    <Paragraph big>
+                        You might wonder how successful construction businesses are - we’ve got the facts.
+                    </Paragraph>
+
                     <Paragraph big bottomMargin={52}>
-                        The time to take advantage is now — we’ll help you be a part of that success!
+                        This is why construction businesses are so exciting - how can you be part of that success? We're here to help you figure that out.
                     </Paragraph>
 
                     <BlueBoxWithAbsoluteText absoluteText="900B"
-                                             text="Is spent on private construction in the U.S. every year"/>
-                    <BlueBoxWithAbsoluteText absoluteText="$17B"
-                                             text="Projected revenue a year for the travel agency industry
-in the U.S. by 2020"/>
-                    <BlueBoxWithAbsoluteText absoluteText="$15BT"
-                                             text="Significant growth of annual revenue in 2015"/>
-
-                    <CircleWithText withBg={true} textInsideCircle="60" symbol="%" textLine="Of travel agents report an increase in sales year over year" />
+                                             text="How to choose whether your construction business should be an LLC or corporation"/>
+                    <BlueBoxWithAbsoluteText absoluteText="$1.2T"
+                                             text="The U.S. has one of the largest construction markets in the world, with expenditures of over $1.2 trillion"/>
+                    <BlueBoxWithAbsoluteText absoluteText="$1.4T"
+                                             text="Expected construction expenditures grow by 2021."/>
 
                     <div style={{marginBottom: "30px", marginTop: "70px"}}>
                         <Adventages
-                            headline="Travel agency profits have also doubled from around 6% of revenue to 12%"
+                            headline="The U.S. construction industry is responsible for over 4% of U.S. GDP"
                             width="100%"
                         />
                     </div>
 
                     <div style={{marginBottom: "30px"}}>
                         <Adventages
-                            headline="Just over three-quarters of travel agent business revenue comes from commission, with the remainder from service fees"
+                            headline="Currently, the majority of growth in the construction industry is in residential building"
                             width="100%"
                         />
                     </div>
 
                     <div style={{marginBottom: "30px"}}>
                         <Adventages
-                            headline="Over the last five years, the number of travel agency businesses has grown by almost 4 percent"
+                            headline="Public sector construction saw the slowest growth"
                             width="100%"
                         />
                     </div>
@@ -233,92 +236,93 @@ in the U.S. by 2020"/>
 
                 <PanelWrapper>
                     <Heading size={3}>
-                        Is a Travel Agency Business Right for You?
+                        Is a Construction Business Right for You?
                     </Heading>
 
                     <Paragraph big bottomMargin={52}>
-                        Before deciding to start a travel agency, it’s important to understand the skills and approach you’re likely to need.
+                        Although it can be exciting to form a construction business, there will
+                        be significant demands on you as a small business owner. Here are some of the things you can expect.
                     </Paragraph>
 
                     <Heading size={3}>
-                        A Day in the Life of a Travel Agent
+                        A Day in the Life of a Construction Business Owner
                     </Heading>
 
                     <Paragraph big bottomMargin={52}>
-                        Here are some of the typical tasks you’ll be performing for your travel agency business on a daily basis:
+                        Here are some of the typical tasks you’ll be performing for your construction business on a daily basis.
                     </Paragraph>
 
                     <TextBoxed style={{marginBottom: "8px"}}>
                         <Paragraph bottomMargin={0}>
-                            Dealing with inquiries through your website
+                            Working with architects and engineers to finalize plans and details
                         </Paragraph>
                     </TextBoxed>
 
                     <TextBoxed style={{marginBottom: "8px"}}>
                         <Paragraph bottomMargin={0}>
-                            Creating itineraries, destinations and activities for customers
+                            Coordinating with tradesmen and contractors on specialized services
                         </Paragraph>
                     </TextBoxed>
 
                     <TextBoxed style={{marginBottom: "8px"}}>
                         <Paragraph bottomMargin={0}>
-                            Keeping up to date with the latest offers from tour operators
+                            Project managing people, resources, materials, timings and deadlines
                         </Paragraph>
                     </TextBoxed>
 
                     <TextBoxed style={{marginBottom: "8px"}}>
                         <Paragraph bottomMargin={0}>
-                            Understanding available activities and travel options for specific locations
+                            Carrying out construction activities yourself
                         </Paragraph>
                     </TextBoxed>
 
                     <TextBoxed style={{marginBottom: "8px"}}>
                         <Paragraph bottomMargin={0}>
-                            Booking and administering travel and other vacation plans
+                            Troubleshooting issues and problems with the construction process
                         </Paragraph>
                     </TextBoxed>
 
                     <TextBoxed style={{marginBottom: "48px"}}>
                         <Paragraph bottomMargin={0}>
-                            Answering questions and providing information to customers
+                            Purchasing and managing supplies and materials
                         </Paragraph>
                     </TextBoxed>
 
                     <Heading size={3}>
-                        Skills Needed by a Travel Agent Entrepreneur
+                        Skills Needed by a Construction Business Entrepreneur
                     </Heading>
 
                     <Paragraph big bottomMargin={52}>
-                        The following skills will be very useful in your role as a travel agency small business owner:
+                        The following skills will be very useful in your role as a construction small business owner.
                     </Paragraph>
 
                     <TextBoxed style={{marginBottom: "8px"}}>
                         <Paragraph bottomMargin={0}>
-                            Amazing administration skills to stay on top of every customer’s travel plans
+                            Excellent project management skills so you can coordinate the build from beginning to end
                         </Paragraph>
                     </TextBoxed>
 
                     <TextBoxed style={{marginBottom: "8px"}}>
                         <Paragraph bottomMargin={0}>
-                            Great interpersonal skills for dealing with customers, tourism operators, airlines, hotels and more
+                            Great interpersonal skills for managing tradesmen, contractors and others
                         </Paragraph>
                     </TextBoxed>
 
                     <TextBoxed style={{marginBottom: "8px"}}>
                         <Paragraph bottomMargin={0}>
-                            The ability to take in and analyze large amounts of information to help customers make the right choice
+                            An eye for detail to ensure a high-quality outcome
                         </Paragraph>
                     </TextBoxed>
 
                     <TextBoxed style={{marginBottom: "8px"}}>
                         <Paragraph bottomMargin={0}>
-                            Understanding the vacation experience from the customer’s perspective and working to make that as good as possible
+                            Good personal construction skills
                         </Paragraph>
                     </TextBoxed>
 
                     <TextBoxed style={{marginBottom: "8px"}}>
                         <Paragraph bottomMargin={0}>
-                            Willingness to spend lots of time on travel research and destination websites finalizing details
+                            Analysis and problem-solving expertise
                         </Paragraph>
                     </TextBoxed>
 
@@ -326,25 +330,25 @@ in the U.S. by 2020"/>
             </CollapseWrapper>
         </TabsSection>
 
-        <TypeOfBusiness />
+        <TypeOfBusiness/>
 
-        <ValidatingBusinessIdea />
+        <ValidatingBusinessIdea/>
 
-        <BusinessPlan />
+        <BusinessPlan/>
 
-        <BusinessStructure />
+        <BusinessStructure/>
 
-        <SettingBusiness />
+        <SettingBusiness/>
 
-        <OrderNow />
+        <OrderNow/>
 
-        <Regulations />
+        <Regulations/>
 
-        <InsuranceBusiness />
+        <InsuranceBusiness/>
 
-        <Taxes />
+        <Taxes/>
 
-        <UsefulTools toolsList={toolsList.tools} headlineText={toolsList.headlineText} description={toolsList.description} />
+        <ToolsAndLinks />
 
         <Conclusion to="/" buttonTitle="Start your Travel Agency Business with us, today">
             <Heading size={3} style={{fontSize: "40px", marginTop: "300px"}}>
@@ -352,7 +356,9 @@ in the U.S. by 2020"/>
             </Heading>
 
             <Paragraph big>
-                The internet has lowered the barriers to finding the perfect vacation, but many people still need the experience and expertise that a great travel agent provides. Find the right niche, get your marketing right and you could see huge success as a travel agent.
+                The internet has lowered the barriers to finding the perfect vacation, but many people still need the
+                experience and expertise that a great travel agent provides. Find the right niche, get your marketing
+                right and you could see huge success as a travel agent.
             </Paragraph>
         </Conclusion>
     </Layout>
@@ -380,4 +386,4 @@ const ListBox = styled.div`
     }
 `;
 
-export default TravelAgency;
+export default ConstructionCompany;

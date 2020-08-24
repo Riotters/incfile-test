@@ -41,6 +41,7 @@ import CountingTextBoxed from "../atomic/molecules/text-blocks/counting-text-box
 import Adventages from "../components/adventages";
 import InfoCardsSection from "../atomic/partials/info-cards-section";
 import {InfoCards} from "../static/type-of-business/airbnb";
+import CircleWithText from "../atomic/molecules/blocks/circle-with-text-block";
 
 const topimagebox = {
     header: `How Long does it take to file an Annual Report?`,
@@ -563,6 +564,11 @@ const ComponentsPage = () => (
                 <h3>Info Cards Section</h3>
                 <GreyWrapper>
                     <InfoCardsSection cards={InfoCards}/>
+                </GreyWrapper>
+
+                <h3>Circle with Text Block</h3>
+                <GreyWrapper>
+                    <CircleWithText withBg={true} textInsideCircle="70" symbol="%" textLine="Of teens trust influencers more than traditional celebrities" />
                 </GreyWrapper>
             </Wrapper>
         </Container>
