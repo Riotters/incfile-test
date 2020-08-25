@@ -25,6 +25,12 @@ const BusinessesChoose = styled.section`
 const TextWrapper = styled.div`
    width: 100%;
    position: relative;
+
+   h2 {
+       @media (min-width: 992px) {
+            margin-top: 64px;
+       }
+   }
 `;
 
 const BusinessesChooseSection = ({ className, content }) => (
@@ -37,7 +43,7 @@ const BusinessesChooseSection = ({ className, content }) => (
         </Oval>
         <LeftContentRightObject contentWidth="500" object={<Cards content={content.cards} />}>
             <TextWrapper>
-                <Curve top="-5" right="65" color={color.orange1}>
+                <Curve top="50" right="65" color={color.orange1}>
                     <CurveSVG />
                 </Curve>
                 <Heading size="2" bottomMargin="64">{content.header}</Heading>
