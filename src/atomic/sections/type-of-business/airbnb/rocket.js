@@ -135,7 +135,7 @@ const Content = styled.div`
   
   @media (min-width: 769px) {
         width: 600px; 
-        margin-left: auto;
+        margin-left: 40%;
   }
 `
 
