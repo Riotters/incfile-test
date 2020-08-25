@@ -20,6 +20,7 @@ import { newsletter, footer } from "../static/footer";
 
 const Wrapper = styled.div`
   padding-top: 56px;
+  overflow: hidden;
 `;
 
 const Top = styled.div`
@@ -223,7 +224,7 @@ const Footer = () => {
           </Logo>
           <NewsletterWrapper>
             <p>
-              {newsletter.text} 
+              {newsletter.text}
               <span>({newsletter.bracket})</span>
             </p>
             <Arrow>

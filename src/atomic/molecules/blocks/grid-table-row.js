@@ -5,78 +5,67 @@ import { Heading } from "../../atoms/typography/heading";
 import { Paragraph } from "../../atoms/typography/paragraph";
 import Whitebox from "../../atoms/boxes/white-box";
 import IconCircle from "../../atoms/icons/circle";
-import CheckSVG from "../../../images/circle-status-check.inline.svg"
-import ExSVG from "../../../images/circle-status-x.inline.svg"
-
+import CheckSVG from "../../../images/circle-status-check.inline.svg";
+import ExSVG from "../../../images/circle-status-x.inline.svg";
 
 const Wrapper = styled(Whitebox)`
-    display: grid;
-    grid-template-columns: ${props => props.columns ? `repeat(${props.columns}, 1fr)` : "50% 50%"};
+  display: grid;
+  grid-template-columns: ${(props) => (props.columns ? `repeat(${props.columns}, 1fr)` : "50% 50%")};
 
-    &:not(:last-child) {
-        margin-bottom: 8px;
-    }
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
 `;
 
 const Cell = styled.div`
-    display: flex;
-    align-items: center;
-    padding: 24px;
-    
-    &:not(:last-child) {
-        border-right: 2px solid ${color.grey4};
-    }
+  display: flex;
+  align-items: center;
+  padding: 24px;
+  min-width: 160px;
+
+  @media (min-width: 769px) {
+    min-width: auto;
+  }
+
+  &:not(:last-child) {
+    border-right: 2px solid ${color.grey4};
+  }
 `;
 
 const ListItem = styled(Paragraph)`
-    color: ${color.black};
-    padding-left: 26px;
-    position: relative;
+  color: ${color.black};
+  padding-left: 26px;
+  position: relative;
 
-    &::before {
-        content: '';
-        height: 4px;
-        width: 4px;
-        background-color: ${color.purple1};
-        border-radius: 50%;
-        position: absolute;
-        top: 9px;
-        left: 6px;
-    }
+  &::before {
+    content: "";
+    height: 4px;
+    width: 4px;
+    background-color: ${color.purple1};
+    border-radius: 50%;
+    position: absolute;
+    top: 9px;
+    left: 6px;
+  }
 `;
 
 const GridTableRow = ({ className, content, header, headerSize, list, columns }) => (
-    <Wrapper className={className} columns={columns}>
-        {content.map(item => (
-            <Cell>
-                {header && (
-                    <Heading size={headerSize ? headerSize :"4"} bottomMargin="0">
-                        {item}
-                    </Heading>
-                )}
-                {list && item !== "" && item !== "check-green" && item !== "check-red" && (
-                    <ListItem bottomMargin="0">
-                        {item}
-                    </ListItem>
-                )}
-                {!header && !list && item !== "" && item !== "check-green" && item !== "check-red" && (
-                    <Paragraph bottomMargin="0">
-                        {item}
-                    </Paragraph>
-                )}
-                {item ==="check-green" && (
-                    <CheckSVG/>
-                )}
-                {item ==="check-red" && (
-                    <ExSVG />
-                )}
-                {item ==="" && (
-                    <IconCircle theme="empty" circleColor="#E7E7E7"/>
-                )}
-
-            </Cell>
-        ))}
-    </Wrapper>
+  <Wrapper className={className} columns={columns}>
+    {content.map((item) => (
+      <Cell>
+        {header && (
+          <Heading size={headerSize ? headerSize : "4"} bottomMargin="0">
+            {item}
+          </Heading>
+        )}
+        {list && item !== "" && item !== "check-green" && item !== "check-red" && <ListItem bottomMargin="0">{item}</ListItem>}
+        {!header && !list && item !== "" && item !== "check-green" && item !== "check-red" && <Paragraph bottomMargin="0">{item}</Paragraph>}
+        {item === "check-green" && <CheckSVG />}
+        {item === "check-red" && <ExSVG />}
+        {item === "" && <IconCircle theme="empty" circleColor="#E7E7E7" />}
+      </Cell>
+    ))}
+  </Wrapper>
 );
 
 export default GridTableRow;
