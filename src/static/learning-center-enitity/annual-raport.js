@@ -173,4 +173,8 @@ export const faq = {
             },
         ],
     },
+<<<<<<< HEAD:src/static/learning-center-enitity/annual-report1.js
 }
+=======
+}
+>>>>>>> f29a9b93f2bde1e2584de3ed537f3b084a590e63:src/static/learning-center-enitity/annual-raport.js
