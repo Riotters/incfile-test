@@ -7,10 +7,10 @@ import Button from "../../atomic/molecules/buttons/button";
 import Top from "../../atomic/partials/top";
 import About from "../../atomic/sections/learning-center-entity/annual-report/about"
 import NextState from "../../atomic/sections/learning-center-entity/annual-report/next-state"
-
+import Faq from "../../atomic/sections/learning-center-entity/annual-report/faq"
 import Articles from "../../components/partials/sections/articles";
 //Texts
-import { top, about, nextStateDue } from "../../static/learning-center-enitity/annual-raport"
+import { top, about, nextStateDue, faq } from "../../static/learning-center-enitity/annual-raport"
 
 const AnnualReport = () => (
   <Layout>
@@ -24,6 +24,7 @@ const AnnualReport = () => (
     </Top>
     <About content={about} />
     <NextState content={nextStateDue} />
+    <Faq content={faq} />
     <Articles />
   </Layout>
 );

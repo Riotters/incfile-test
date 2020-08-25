@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Container from "../../../atomic/container";
 import Image from "../../image_nobase64";
 import Button from "../../../atomic/molecules/buttons/button";
-import OvalSVG from "../../../images/ovals/top-right-orange1-to-orange3.inline.svg";
+import OvalSVG from "../../../images/ovals/top-right-orange3-to-transparent.inline.svg";
 import { color } from "../../styles/colors";
 
 const Wrapper = styled.div`
