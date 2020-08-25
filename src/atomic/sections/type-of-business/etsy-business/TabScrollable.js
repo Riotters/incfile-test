@@ -37,7 +37,7 @@ import {
     FinancesAccordionContent,
     MaintainingAccordionContent,
     TaxesAccordionContent
-} from "../../../../static/type-of-business/etsy-business";
+} from "../../../../static/type-of-business/tshirt-business";
 
 const ButtonList = [
     {

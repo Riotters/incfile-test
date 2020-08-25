@@ -2,11 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import Image from "../../atoms/image/image";
 
-const TextWithBubbleCounting = ({text}) => (
+const TextWithBubbleCounting = ({children}) => (
     <Wrapper>
         <Bubbles>
             <BubbleImage>
-                <Image filename="mrs-bulb-final-comp-thumb-up" />
+                <Image filename="mrs-bulb-final-comp-thumb-up-color" />
             </BubbleImage>
             <BubbleImage>
                 <Image filename="mrs-bulb-final-comp-thumb-up-copy-4" />
@@ -22,7 +22,7 @@ const TextWithBubbleCounting = ({text}) => (
             </BubbleImage>
         </Bubbles>
         <Text>
-            {text}
+            {children}
         </Text>
     </Wrapper>
 );

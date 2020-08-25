@@ -201,8 +201,8 @@ const ImageContainer = styled.div`
   }
 `;
 
-const Top = ({ children, imageName, imageAlt, headlineWidth, ovalColor }) => (
-  <Wrapper>
+const Top = ({ children, imageName, imageAlt, headlineWidth, ovalColor, ...rest }) => (
+  <Wrapper {...rest}>
     <VisibilitySensor partialVisibility once>
       {({ isVisible }) => (
         <Oval className={isVisible ? "scaleUp enter" : "scaleUp"} ovalColor={ovalColor}>

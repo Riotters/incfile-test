@@ -1,15 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types"
 import styled from "styled-components";
-
 import {color} from "../../atoms/styles/colors";
 import {shadow} from "../../atoms/styles/shadows";
 import CircleSvg from "../../../images/circle-percentage.inline.svg";
 
-const CircleWithText = ({textInsideCircle, textLine, symbol, withBg}) => (
+const CircleWithText = ({textInsideCircle, textLine, symbol, withBg, SvgChart}) => (
     <Wrapper withBg={withBg}>
         <Circle>
-            <CircleSvg/>
+            <SvgChart/>
             <TextInside>
                 <span>
                     {textInsideCircle}
@@ -32,13 +31,15 @@ CircleWithText.propTypes = {
 };
 
 CircleWithText.defaultProps = {
-    withBg: false
+    withBg: false,
+    SvgChart: CircleSvg
 }
 
 const Wrapper = styled.div`
     max-height: 270px;
     display: flex;
     align-items: center;
+    padding: 40px;
     
     ${props => props.withBg &&
         "background-color:" + color.white + ";" +

@@ -45,7 +45,7 @@ const ConstructionCompany = () => (
         <SEO title="How to Start Publishing Company"
              description="Everyone likes traveling — new horizons, beautiful destinations and unique experiences mean we love packing our bags and spending time away from work and home."/>
 
-        <Top ovalColor="sun" imageName="publishing-company" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
+        <Top ovalColor="sun" imageName="publishing-company-main" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
             <h1>How to Start Publishing Company</h1>
             <p>Everyone likes traveling — new horizons, beautiful destinations and unique experiences mean we love
                 packing our bags and spending time away from work and home.</p>

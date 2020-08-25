@@ -30,13 +30,13 @@ export const InfoCards = [
         roundBottomLeft: true,
         imageName: "workers-compensation-insurance",
         title: "Workers Compensation Insurance",
-        content: "Workers’ compensation insurance provides coverage for job-related illnesses, disabilities or injuries that affect employees. Regulations for this insurance vary from state to state. It typically covers areas like medical costs, loss of earnings, compensation and retraining. If you do not have employees, you may not need this insurance."
+        content: "Workers’ compensation insurance provides coverage for job-related illnesses, disabilities or injuries that affect employees. Regulations for this insurance vary from state to state. It typically covers areas like medical costs, loss of earnings, compensation and retraining."
     },
     {
         backgroundColor: color.green3,
         imageName: "workers-compensation-insurance",
         title: "General Liability Insurance",
-        content: "This insurance protects your daycare business from claims due to being sued. This may include injury to children or members of the public, property damage, personal liabilities, legal defense and more. It can help protect your business from financial penalties and bankruptcy. This type of insurance could be essential to your daycare business, as you will be looking after small children and will need the reassurance of a good insurance policy."
+        content: "This insurance protects your food truck business from claims due to being sued. This may include injury to members of the public, property damage, personal liabilities, legal defense and more. It can help protect your business from financial penalties and bankruptcy. This type of insurance could be essential to your food truck business since you’re always dealing with members of the public and want to ensure you’re properly covered."
     },
     {
         backgroundColor: color.red3,
@@ -44,7 +44,7 @@ export const InfoCards = [
         roundBottomRight: true,
         imageName: "home-and-auto-insurance",
         title: "Home and Auto Insurance",
-        content: "If you are working from home on the administration of your daycare business or driving a vehicle for work, check whether your existing home and auto policies cover you for work use of your home or car. If not, you should either expand your policy so you’re covered or get dedicated business insurance."
+        content: "You will need special insurance for your food truck, as standard auto insurance isn’t likely to cover it. Speak to your insurance provider and make sure you have the right type of cover."
     }
 ];
 
