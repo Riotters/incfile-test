@@ -131,88 +131,45 @@ export const faq = {
             {
                 question:
                     `What happens if I don’t file a report?`,
-                answer: 
+                answer:
                     `If you don’t file a report, you may have to pay a penalty fee or taxes. If you continue not to file, your business may be involuntarily dissolved, meaning it will lose its legal status (which can have serious implications).`,
             },
             {
                 question:
                     `Once I have filed my official Annual Report, do I need to produce other reports?`,
-                answer: [
-                    {
-                        text:
-                        `You may. Our `, 
-                    },
-                    {
-                        text:
-                        `compliance tool`,
-                        url:
-                        `/`,
-                    },
-                    {
-                        text:
-                        ` will tell you what the business administration entity in your state needs. Of course, you may also produce other annual or interim reports for your business shareholders, employees or other stakeholders, but that will generally be defined in your `,
-                    },
-                    {
-                        text:
-                        `operating agreement`,
-                        url:
-                        `/`,
-
-                    },
-                    {
-                        text:
-                        ` or other `,
-                    },
-                    {
-                        text:
-                        `corporate bylawes`,
-                        url:
-                        `/`,
-                    }
-                ]
-                },
+                answer:
+                    `You may. Our compliance tool will tell you what the business administration entity in your state needs. Of course, you may also produce other annual or interim reports for your business shareholders, employees or other stakeholders, but that will generally be defined in your operating agreement or other corporate bylaws.`,
+            },
             {
                 question:
-                    `Does every state require a report?`,
+                    `Once I have filed my official Annual Report, do I need to produce other reports?`,
                 answer:
-                    `No. Some states like Pennsylvania, Nebraska, Ohio, Oklahoma and others don’t require a report. Enter your details into our tool above, and we'll show you the specific details for your state.
-                    `,
+                    ``,
             },       {
                 question:
-                    `Does the complexity of Annual Reports vary from state to state?`,
+                    `Once I have filed my official Annual Report, do I need to produce other reports?`,
                 answer:
-                    `Yes. Some reports are straightforward and simple, while others have much more complex and stringent requirements.`,
+                    ``,
             },       {
                 question:
-                    `Do I need to file a report in each state where I do business?`,
+                    `Once I have filed my official Annual Report, do I need to produce other reports?`,
                 answer:
-                    `Yes. You will need to file a report in each state where your business is incorporated either as a domestic or foreign entity.`,
+                    ``,
             },       {
                 question:
-                    `Can you file my report on my behalf?`,
-                answer:[
-                    {
-                        text:
-                        `Yes. We have a low-cost `,
-                    },
-                    {
-                        text:
-                        `Annual Report filing service.`,
-                        url:
-                        `/`,
-                    }
-
-                ],
+                    `Once I have filed my official Annual Report, do I need to produce other reports?`,
+                answer:
+                    ``,
             },       {
                 question:
-                    `Do filing dates vary between corporations or LLCs?`,
+                    `Once I have filed my official Annual Report, do I need to produce other reports?`,
                 answer:
-                    `Not generally, but you should still check your dates in our tools.`,
+                    ``,
             },       {
                 question:
-                    `Are there other regular filing requirements?`,
+                    `Once I have filed my official Annual Report, do I need to produce other reports?`,
                 answer:
-                    `Yes. You may need to file for taxes, employees, franchise fees and other compliance requirements. These will not be covered by your Annual Report filing.`,
+                    ``,
             },
         ],
     },

@@ -23,6 +23,7 @@ const Wrapper = styled.div`
         padding: 48px 40px 40px;
         border-radius: 20px;
         position: relative;
+        margin: 0 auto;
     }
 `;
 

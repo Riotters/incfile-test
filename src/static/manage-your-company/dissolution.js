@@ -6,7 +6,7 @@ export const top = {
     button: [
       {
         text: 'Order now',
-        url: '#',
+        url: '/',
       }
     ]
   }
@@ -18,7 +18,7 @@ export const top = {
         with having a record of operation on file with the secretary of state. But, the emotional decision to dissolve your company can be tough at times, if you put your heart and sweat into building your own business.`,
     link: {
         text: 'Let Incfile do the dissolution paperwork for you',
-        url: '#',
+        url: '/',
     },
     header: 
         `How to Close an LLC or Corporation`,

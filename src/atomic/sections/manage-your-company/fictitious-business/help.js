@@ -22,10 +22,14 @@ const Help = styled.section`
     position: absolute;
     top: 0;
     left: 0;
-}
+  }
 
   .headline {
-      margin-bottom: 80px;
+    margin-bottom: 32px;
+    
+    @media (min-width: 992px) {
+        margin-bottom: 80px;
+    }
   }
   
 `;

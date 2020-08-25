@@ -27,13 +27,17 @@ const Wrapper = styled.div`
             line-height: 28px;
             margin-left: 24px;
         }
+
+        svg {
+            min-width: 32px;
+            min-height: 33px;
+        }
     }
 `
 
 const LightBlueBox = ({ className, content, Icon }) => (
     <Wrapper className={className}>
         <Bluebox className="box">
-            {console.log(Icon)}
             <Icon />
             <span>{content}</span>
         </Bluebox>

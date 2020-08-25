@@ -1,18 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import { color } from "../../../atoms/styles/colors";
-import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";
-import Buttonsbox from "../../../atoms/boxes/top-buttons-box";
-import Button from "../../../molecules/buttons/button";
 import ArrowLink from "../../../molecules/buttons/text";
 import ImageContent from "../../../partials/left-image-right-content";
 import IconSVG from "../../../../images/icons/biennal-report.inline.svg";
 import IconTextColorBox from "../../../molecules/text-blocks/icon-h4-text-color";
-import IconListColorBox from "../../../molecules/text-blocks/icon-h4-list-color";
-import NumericList from "../../../organisms/lists/numeric-boxed-list";
 import Oval from "../../../atoms/icons/oval";
-import OvalSVG from "../../../../images/ovals/top-left-transparent-blue3.inline.svg";
+import OvalSVG from "../../../../images/ovals/top-left-transparent-pink.inline.svg";
 
 const About = styled.section`
   position: relative;
