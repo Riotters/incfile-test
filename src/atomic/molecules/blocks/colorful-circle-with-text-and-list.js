@@ -63,6 +63,7 @@ const Circle = styled.div`
     position: relative;
     max-width: 170px;
     max-height: 170px;
+    margin-top: 26px;
 `
 
 const TextInside = styled.div`
@@ -106,7 +107,7 @@ const Title = styled.div`
 const Content = styled.div`
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
 `;
 
