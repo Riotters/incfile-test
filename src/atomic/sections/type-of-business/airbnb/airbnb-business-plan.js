@@ -159,7 +159,7 @@ const AirbnbBusinessPlan = () => (
                     </Paragraph>
                 </CountingTextBoxed>
 
-                <Paragraph big style={{marginTop: "50px"}}>
+                <Paragraph big style={{marginTop: "50px"}} mixed={true}>
                     We’ve got the perfect <span style={{color: color.blue1, fontWeight: "bold"}}>guide to writing your business plan.</span>
                 </Paragraph>
             </BusinessOwnerResponsibilities>
