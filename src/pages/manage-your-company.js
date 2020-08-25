@@ -4,12 +4,12 @@ import SEO from "../components/seo";
 import Buttonsbox from "../atomic/atoms/boxes/top-buttons-box";
 import Button from "../atomic/molecules/buttons/button";
 import Top from "../atomic/partials/top";
-import Benefits from "../atomic/sections/benefits";
+import Benefits from "../atomic/sections/manage-your-company/manage-your-company/benefits";
 import Certificates from "../components/partials/sections/certificates";
 import Articles from "../atomic/sections/articles";
 import Help from "../components/partials/sections/help";
 //Texts
-import { top, help } from "../static/manage-your-company";
+import { top, help, certificates } from "../static/manage-your-company";
 
 const ManageYourCompany = () => (
   <Layout>
@@ -22,7 +22,7 @@ const ManageYourCompany = () => (
       </Buttonsbox>
     </Top>
     <Benefits />
-    <Certificates />
+    <Certificates content={certificates} />
     <Help content={help} />
     <Articles oval />
   </Layout>

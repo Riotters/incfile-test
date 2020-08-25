@@ -5,8 +5,8 @@ import { color } from "../../atoms/styles/colors";
 import { shadow } from "../../atoms/styles/shadows";
 import Frame from "../../molecules/mixed-blocks/unboxing-frame";
 import Image from "../../atoms/image/image_nobase64";
-import IconCircle from "../../../components/icons/circle"
-import ArrowSVG from "../../../images/arrow.inline.svg"
+import IconCircle from "../../../components/icons/circle";
+import ArrowSVG from "../../../images/arrow.inline.svg";
 import AccordionSingle from "../accordion/accordion-single";
 import Whitebox from "../../atoms/boxes/white-box";
 import Line1SVG from "../../../images/icons/line1.inline.svg";
@@ -20,7 +20,11 @@ import Line7SVG from "../../../images/icons/line7.inline.svg";
 const Wrapper = styled.div`
   width: 100%;
   position: relative;
-  padding: 32px 0 148px;
+  padding: 32px 0 64px;
+
+  @media (min-width: 992px) {
+    padding: 32px 0 148px;
+  }
 
   .gatsby-image-wrapper {
     display: none;
@@ -70,7 +74,7 @@ const FramesBoxTop = styled.div`
   grid-template-columns: 100%;
   grid-gap: 8px;
   margin-bottom: 8px;
-  
+
   @media (min-width: 992px) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 30px;
@@ -108,13 +112,14 @@ const FramesBoxBottom = styled.div`
 `;
 
 const New = styled(Whitebox)`
-  width: 100%; 
+  width: 100%;
   position: relative;
 
-  button, .text {
+  button,
+  .text {
     padding: 16px 16px 16px 64px;
   }
-  
+
   button {
     width: 100%;
     text-align: left;
