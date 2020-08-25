@@ -28,6 +28,15 @@ export const about = {
     },
 }
 
+export const nextStateDue = {
+    header: `When is my next state filing report due?`,
+    header2: `Relax. Here's the Information You Need.`,
+    text: `We provide the details you need about when you should file your next business report. Just fill in your information, and we'll let you know when the report due.`,
+    form: {
+        header: ``,
+    },
+}
+
 export const nextStateFiling = {
     header:
     `Next state filing due date for Riotters`,

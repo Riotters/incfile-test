@@ -6,7 +6,7 @@ import { Paragraph } from "../../../atoms/typography/paragraph";
 import Buttonsbox from "../../../atoms/boxes/top-buttons-box";
 import Button from "../../../molecules/buttons/button";
 import ArrowLink from "../../../molecules/buttons/text";
-import ImageContent from "../../../partials/left-image-right-content";
+import ContentObject from "../../../partials/left-content-right-object";
 import IconSVG from "../../../../images/icons/biennal-report.inline.svg";
 import IconTextColorBox from "../../../molecules/text-blocks/icon-h4-text-color";
 import IconListColorBox from "../../../molecules/text-blocks/icon-h4-list-color";
@@ -16,6 +16,7 @@ import OvalSVG from "../../../../images/ovals/top-left-transparent-blue3.inline.
 
 const NextState = styled.section`
   position: relative;
+  padding-top: 64px;
   padding-bottom: 120px;
   background-color: ${color.orange3};
 
@@ -33,12 +34,11 @@ const NextStateSection = ({ className, content }) => (
         <Oval className="oval" height="570" width="570" y="-40">
             <OvalSVG />
         </Oval>
-        <ImageContent image="registered-agents">
-            <IconTextColorBox color={color.babyblue3} Icon={IconSVG} content={content.box} bottomMargin="48" rounded curve curveColor={color.blue1} />
+        <ContentObject object="">
+            <Heading size="2" bottomMargin="48">{content.header}</Heading>
+            <Heading size="4">{content.header2}</Heading>
             <Paragraph big bottomMargin="32">{content.text}</Paragraph>
-            <Paragraph big bottomMargin="32">{content.text2}</Paragraph>
-            <ArrowLink content={content.link} bottomMargin="72" />
-        </ImageContent>
+        </ContentObject>
     </NextState>
   );
   

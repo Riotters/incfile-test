@@ -10,7 +10,7 @@ import NextState from "../../atomic/sections/learning-center-entity/annual-repor
 
 import Articles from "../../components/partials/sections/articles";
 //Texts
-import { top, about } from "../../static/learning-center-enitity/annual-raport"
+import { top, about, nextStateDue } from "../../static/learning-center-enitity/annual-raport"
 
 const AnnualReport = () => (
   <Layout>
@@ -23,7 +23,7 @@ const AnnualReport = () => (
       </Buttonsbox>
     </Top>
     <About content={about} />
-    <NextState content={about} />
+    <NextState content={nextStateDue} />
     <Articles />
   </Layout>
 );
