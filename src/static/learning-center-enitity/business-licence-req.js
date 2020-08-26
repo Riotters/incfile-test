@@ -36,6 +36,45 @@ export const searchTool = {
 }
 export const searchResults = {
     header:
-    `Here are the licenses you will need`
+    `Here are the licenses you will need`,
+    cardResults: [
+        {
+            text:
+            `Your State`,
+            text:
+            `California`
+        },
+        {
+            text:
+            `Your Industry`,
+            text:
+            `Construction`,
+        },
+    ],
+    list: [
+        `General Contractor License`,
+        `Specialty Contractor License`,
+        `Sales Tax Registration`,
+        `Payroll Tax Registration`,
+    ], 
+    link: {
+        text:
+        `Search Again`,
+        ulr:
+        `/`
+    },
+    header:
+    `Want more 1-on-1 help?`,
+    text:
+    `Our Business License Research Package offers total peace of mind by having 
+    our licensing specialist conduct the necessary research to determine all of the licenses and permits required on a city, state, and county level specifically for your business.`,
+    button: {
+        header: 
+        `Do the research for me`,
+        ulr:
+        `/`,
+    },
+    
+
 
 } 
