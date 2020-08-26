@@ -150,6 +150,9 @@ const TextContainer = styled.div`
   @media (min-width: 992px) {
     width: 50%;
     align-items: flex-start;
+  }
+
+  @media (min-width: 1200px) {
     padding-top: 150px;
   }
 
@@ -201,8 +204,8 @@ const ImageContainer = styled.div`
   }
 `;
 
-const Top = ({ children, imageName, imageAlt, headlineWidth, ovalColor }) => (
-  <Wrapper>
+const Top = ({ children, imageName, imageAlt, headlineWidth, ovalColor, ...rest }) => (
+  <Wrapper {...rest}>
     <VisibilitySensor partialVisibility once>
       {({ isVisible }) => (
         <Oval className={isVisible ? "scaleUp enter" : "scaleUp"} ovalColor={ovalColor}>

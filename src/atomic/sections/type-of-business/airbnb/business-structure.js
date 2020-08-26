@@ -15,6 +15,7 @@ import ArrowsIcon from "../../../../images/icons/arrows.inline.svg"
 import Button from "../../../molecules/buttons/button";
 import Container from "../../../container";
 import OvalOrange2Svg from "../../../../images/oval-orange-2.inline.svg";
+import {shadow} from "../../../atoms/styles/shadows";
 
 const BusinessOwnerResponsibilities = styled.section`
   position: relative;
@@ -73,7 +74,7 @@ const AirBnB1BusinessStructure = () => (
                         SvgImage={HandsIcon}
                         textBackgroundColor="transparent"
                         imageBackgroundColor={color.white}
-                        imageShadowColor="#ababab"
+                        imageShadowColor={shadow.white2}
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
@@ -83,7 +84,7 @@ const AirBnB1BusinessStructure = () => (
                         width={100}
                         widthUnit="%"
                     >
-                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}>
+                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}} mixed={true}>
                             <IconCircle circleColor="transparent" iconColor={color.blue1}>
                                 <ArrowSVG/>
                             </IconCircle>
@@ -103,7 +104,7 @@ const AirBnB1BusinessStructure = () => (
                         SvgImage={UmbrellaIcon}
                         textBackgroundColor="transparent"
                         imageBackgroundColor={color.white}
-                        imageShadowColor="#ababab"
+                        imageShadowColor={shadow.white2}
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
@@ -113,7 +114,7 @@ const AirBnB1BusinessStructure = () => (
                         width={100}
                         widthUnit="%"
                     >
-                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}>
+                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}} mixed={true}>
                             <IconCircle circleColor="transparent" iconColor={color.blue1}>
                                 <ArrowSVG/>
                             </IconCircle>
@@ -133,7 +134,7 @@ const AirBnB1BusinessStructure = () => (
                         SvgImage={ArrowsIcon}
                         textBackgroundColor="transparent"
                         imageBackgroundColor={color.white}
-                        imageShadowColor="#ababab"
+                        imageShadowColor={shadow.white2}
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
@@ -143,7 +144,7 @@ const AirBnB1BusinessStructure = () => (
                         width={100}
                         widthUnit="%"
                     >
-                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}>
+                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}} mixed={true}>
                             <IconCircle circleColor="transparent" iconColor={color.blue1}>
                                 <ArrowSVG/>
                             </IconCircle>
@@ -161,7 +162,7 @@ const AirBnB1BusinessStructure = () => (
                         SvgImage={PlaneIcon}
                         textBackgroundColor="transparent"
                         imageBackgroundColor={color.white}
-                        imageShadowColor="#ababab"
+                        imageShadowColor={shadow.white2}
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
@@ -171,7 +172,7 @@ const AirBnB1BusinessStructure = () => (
                         width={100}
                         widthUnit="%"
                     >
-                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}>
+                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}} mixed={true}>
                             <IconCircle circleColor="transparent" iconColor={color.blue1}>
                                 <ArrowSVG/>
                             </IconCircle>
@@ -189,7 +190,7 @@ const AirBnB1BusinessStructure = () => (
                         SvgImage={RockerIcon}
                         textBackgroundColor="transparent"
                         imageBackgroundColor={color.white}
-                        imageShadowColor="#ababab"
+                        imageShadowColor={shadow.white2}
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
@@ -199,7 +200,7 @@ const AirBnB1BusinessStructure = () => (
                         width={100}
                         widthUnit="%"
                     >
-                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}>
+                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}} mixed={true}>
                             <IconCircle circleColor="transparent" iconColor={color.blue1}>
                                 <ArrowSVG/>
                             </IconCircle>
@@ -213,13 +214,13 @@ const AirBnB1BusinessStructure = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <Paragraph big style={{paddingTop: "120px"}}>
+                    <Paragraph big style={{paddingTop: "120px"}} mixed={true}>
                         For more information on the advantages and disadvantages of different types of businesses, <span
                         className="blue big">please see our in-depth guide</span>. If you’ve still got questions, <span
                         className="blue big">we’ve answered them to help you choose the right business structure</span> for
                         your daycare business.
                     </Paragraph>
-                    <Paragraph big>
+                    <Paragraph big mixed={true}>
                         In most cases, our recommendation for your daycare business would
                         be to create an LLC. We’ve <span className="blue big">got a complete guide</span> to everything
                         you need to do. <span className="blue big">LLC formation does vary from state to state</span>,

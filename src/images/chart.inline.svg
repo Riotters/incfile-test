@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="168" height="176" viewBox="0 0 168 176">
+    <defs>
+        <filter id="jpmitguqaa" width="315.3%" height="1063%" x="-105.7%" y="-341.5%" filterUnits="objectBoundingBox">
+            <feMorphology in="SourceAlpha" operator="dilate" radius="4" result="shadowSpreadOuter1"/>
+            <feOffset dy="10" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+            <feMorphology in="SourceAlpha" radius="4" result="shadowInner"/>
+            <feOffset dy="10" in="shadowInner" result="shadowInner"/>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="9"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.31372549 0 0 0 0 0.537254902 0 0 0 0 0.992156863 0 0 0 0.2 0"/>
+        </filter>
+        <path id="4l7m75d76b" d="M0 0c11.776 0 23.407 2.6 34.062 7.614"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(4 12)">
+        <circle cx="80" cy="80" r="80" stroke="#F2F6FF" stroke-width="8"/>
+        <g stroke-linecap="round" transform="translate(80)">
+            <use fill="#000" filter="url(#jpmitguqaa)" xlink:href="#4l7m75d76b"/>
+            <use stroke="#5089FD" stroke-width="8" xlink:href="#4l7m75d76b"/>
+        </g>
+    </g>
+</svg>

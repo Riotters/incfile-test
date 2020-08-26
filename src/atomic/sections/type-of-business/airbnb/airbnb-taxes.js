@@ -26,7 +26,7 @@ const AirbnbTaxes = () => (
             <TextCenterLayout headline="Airbnb Taxes"/>
 
             <TextWrapper>
-                <Paragraph big>
+                <Paragraph big mixed={true}>
                     <Curve color={color.babyblue1}
                            style={{position: "absolute", left: "-29px", top: "-25px", transform: "rotate(-90deg)"}}/>
                     Even though you’re running an Airbnb business, you can’t escape real-world licenses, permits and

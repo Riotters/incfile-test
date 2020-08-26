@@ -53,7 +53,7 @@ const ComponentsPage = () => (
         <Link to="/manage-your-company/foreign-qualification">Foreign Qualification</Link>
         <Link to="/manage-your-company/registered-agent">Registered Agent</Link>
         <Link to="/manage-your-company/llc-s-corp-election">S Corp Tax Election (no details)</Link>
-        <Link to="/manage-your-company/corporate-llc-kit">Corporate LLC Kit (no details)</Link>
+        <Link to="/manage-your-company/corporate-llc-kit">Corporate LLC Kit</Link>
         <Link to="/manage-your-company/filling-business-taxes">Filling Business Taxes</Link>
         <Link to="/manage-your-company/fictitious-business">Fictitious Business</Link>
         <h2>Review Entity Type</h2>
@@ -65,7 +65,7 @@ const ComponentsPage = () => (
         <Link to="/learning-center-entity/help-center-article">Help Center Article (WIP)</Link>
         <Link to="/learning-center-entity/comparison-chart">Comparison Chart (WIP)</Link>
         <Link to="/learning-center-entity/business-checklist">Business Checklist (WIP)</Link>
-        <Link to="/learning-center-entity/annaul-report">Business Checklist (WIP)</Link>
+        <Link to="/learning-center-entity/annual-report">Annual Report Due Date (WIP)</Link>
         <h2>Blog</h2>
         <Link to="/blog">Blog (no API)</Link>
         <Link to="/article">Article (no API)</Link>
@@ -75,6 +75,17 @@ const ComponentsPage = () => (
         <Link to="/type-of-business/moving-company">Moving Company (no details)</Link>
         <Link to="/type-of-business/boutique-clothing-business">Boutique Clothing Business (no details)</Link>
         <Link to="/type-of-business/social-media-influencer">Social Media Influencer (no details)</Link>
+        <Link to="/type-of-business/etsy-business">Etsy Business (no details)</Link>
+        <Link to="/type-of-business/amazon-business">Amazon Business (no details)</Link>
+        <Link to="/type-of-business/daycare-business">Daycare business (no details)</Link>
+        <Link to="/type-of-business/travel-agency">Travel Agency (no details)</Link>
+        <Link to="/type-of-business/construction-company">Construction Company (no details)</Link>
+        <Link to="/type-of-business/publishing-company-business">Publishing Company Business (no details)</Link>
+        <Link to="/type-of-business/tshirt-business">T-Shirt Business (no details)</Link>
+        <Link to="/type-of-business/food-truck-business">Food Truck Business (no details)</Link>
+        <Link to="/type-of-business/gym-personal-training">Gym Personal Training (no details)</Link>
+        <Link to="/type-of-business/real-estate-business">Real Estate Business (no details)</Link>
+        <Link to="/type-of-business/digital-nomad">Digital Nomad (no details)</Link>
         <h2>Additional sites</h2>
         <Link to="/components">Components</Link>
         <Link to="/404">404</Link>

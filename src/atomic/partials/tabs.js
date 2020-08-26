@@ -5,8 +5,8 @@ import Container from "../../components/container";
 import VisibilitySensor from "../../components/VisibilitySensor";
 import PropTypes from "prop-types";
 
-const TabsSection = ({layout, column, children}) => (
-    <Wrapper>
+const TabsSection = ({layout, column, children, ...rest}) => (
+    <Wrapper {...rest}>
         <Container>
             <Wrapper layout={layout}>
                 <VisibilitySensor partialVisibility once>

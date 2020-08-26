@@ -8,11 +8,18 @@ import OvalSVG from "../../../../images/ovals/top-left-transparent-green2.inline
 
 const Faq = styled.section`
   position: relative;
-  padding-top: 75px;
   padding-bottom: 64px;
+  
+  @media (min-width: 992px) {
+    padding-top: 75px;
+  }
 
   .headline {
-      margin-bottom: 80px;
+      margin-bottom: 32px;
+      
+      @media (min-width: 992px) {
+          margin-bottom: 80px;
+      }
   }
   
 `;
@@ -22,7 +29,7 @@ const FaqSection = ({ className, content }) => (
         <Oval className="oval" height="720" width="720" top="0" left="0">
             <OvalSVG />
         </Oval>
-        <HeadingCenter headline={content.header} headlineWidth="640" />
+        <HeadingCenter className="headline" headline={content.header} headlineWidth="640" />
         <ContentCenter>
             <Accordion content={content.faq} />
         </ContentCenter>

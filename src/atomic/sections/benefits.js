@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import Container from "../container";
-import TextCenterLayout from "../partials/heading-center";
 import Accordion from "../organisms/accordion/benefits-accordion";
 import ContentCenter from "../partials/content-center";
 import { Heading } from "../atoms/typography/heading";

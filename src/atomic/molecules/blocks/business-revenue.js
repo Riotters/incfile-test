@@ -4,11 +4,14 @@ import { Heading } from "../../atoms/typography/heading";
 import { Paragraph } from "../../atoms/typography/paragraph";
 import styled from "styled-components";
 import WhiteBox from "../../atoms/boxes/white-box";
+import CircleSVG from "../../../images/circle-graph.inline.svg"
 
 const Wrapper = styled(WhiteBox)`
   display: flex;
   flex-direction: column;
   padding: 80px 96px 40px;
+  max-width: 470px;
+  margin-left: auto;
 `;
 
 const Circle = styled.div`
@@ -18,6 +21,7 @@ const Circle = styled.div`
   height: 176px;
   width: 176px;
   margin: 0 auto 40px;
+  position: relative;
 
   h3 {
     width: auto;
@@ -34,6 +38,12 @@ const Circle = styled.div`
       font-weight: 400;
       color: ${color.grey2};
     }
+  }
+
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 `;
 
@@ -57,7 +67,8 @@ const Money = styled.div`
 const BusinessRevenue = () => (
   <Wrapper>
     <Circle>
-      <Heading size="3">
+      <CircleSVG />
+      <Heading size="3" bottomMargin="0">
         120,000<span>$</span>
       </Heading>
     </Circle>

@@ -25,6 +25,11 @@ const Iconbox = styled.div`
 
 const Flex = styled.div`
   display: flex;
+  justify-content: center;
+
+  @media (min-width: 992px) {
+    justify-content: flex-start;
+  }
 `;
 
 const Content = styled.div`
@@ -42,13 +47,15 @@ const Content = styled.div`
     }
   }
 
-  h2 {
-    text-align: left;
-    padding-bottom: 40px;
-  }
-
+  h2,
   p {
     padding-bottom: 40px;
+
+    text-align: center;
+
+    @media (min-width: 992px) {
+      text-align: left;
+    }
   }
 `;
 
@@ -73,6 +80,11 @@ const Buttonsbox = styled.div`
 
   @media (min-width: 576px) {
     flex-direction: row;
+    justify-content: center;
+  }
+
+  @media (min-width: 992px) {
+    justify-content: flex-start;
   }
 `;
 
@@ -88,8 +100,8 @@ const Help = ({ content }) => {
             <h2>{content.header}</h2>
             <p>{content.text}</p>
             <Buttonsbox>
-              <Button content={content.buttons[0]} theme="primary56" marginSM="0 24px 0 0" arrow />
-              <Button content={content.buttons[1]} theme="secondary56" margin="24px 0 0 0" marginSM="0 auto 0 0" arrow />
+              <Button content={content.buttons[0]} theme="primary56" marginSM="24px 24px 0 0" arrow />
+              <Button content={content.buttons[1]} theme="secondary56" margin="24px 0 0 0" arrow />
             </Buttonsbox>
           </Content>
           <Imagebox>

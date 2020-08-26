@@ -21,7 +21,9 @@ const ColorFulCircleWithTextAndList = ({CircleSVG, title, list, withBg}) => (
                 {list.map(item => (
                     <ListStyle>
                         <ColorSquare color={item.color}/>
-                        <TextBold>{item.boldText}</TextBold>
+                        {item.boldText &&
+                            <TextBold>{item.boldText}</TextBold>
+                        }
                         <Text>{item.text}</Text>
                     </ListStyle>
                 ))}
@@ -61,6 +63,7 @@ const Circle = styled.div`
     position: relative;
     max-width: 170px;
     max-height: 170px;
+    margin-top: 26px;
 `
 
 const TextInside = styled.div`
@@ -104,7 +107,7 @@ const Title = styled.div`
 const Content = styled.div`
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
 `;
 
@@ -112,7 +115,7 @@ const ListStyle = styled.div`
     margin-left: 48px;
     margin-bottom: 8px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 `;
 
 const ColorSquare = styled.div`
@@ -121,6 +124,8 @@ const ColorSquare = styled.div`
     background-color: ${props => props.color};
     border-radius: 5px;
     margin-right: 16px;
+    display: table;
+    margin-top: 5px;
 `;
 
 const TextBold = styled.span`
@@ -137,6 +142,7 @@ const Text = styled.span`
     font-family: "Avenir-Roman", sans-serif;
     font-size: 16px;
     line-height: 24px;
+    color: #63666e;
 `;
 
 export default ColorFulCircleWithTextAndList;

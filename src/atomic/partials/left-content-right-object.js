@@ -15,7 +15,7 @@ const Wrapper = styled.div`
 const Content = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: ${props => props.contentCenter ? "center" : ""};
   width: 100%;
 
   @media (min-width: 992px) {
@@ -32,10 +32,16 @@ const Content = styled.div`
   }
 `;
 
+const Sticky = styled.div`
+    display: block;
+    width: 100%;
+    position: sticky !important;
+    top: 100px;
+`;
+
 const Objectbox = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
 
   @media (min-width: 992px) {
     flex-grow: 1;
@@ -50,12 +56,16 @@ const Objectbox = styled.div`
   }
 `;
 
-const LeftContentRightObject = ({ className, object, children, contentWidth }) => {
+const LeftContentRightObject = ({ className, object, children, contentWidth, contentCenter }) => {
   return (
     <Container>
       <Wrapper className={className}>
-        <Content contentWidth={contentWidth}>{children}</Content>
-        <Objectbox>{object}</Objectbox>
+        <Content contentWidth={contentWidth} contentCenter={contentCenter}>{children}</Content>
+        <Objectbox>
+          <Sticky>
+            {object}
+          </Sticky>
+        </Objectbox>
       </Wrapper>
     </Container>
   );

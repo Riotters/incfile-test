@@ -109,33 +109,27 @@ const ValidatingBusinessIdea = () => (
                     <AbsoluteCurve>
                         <Curve color={color.blue1}/>
                     </AbsoluteCurve>
-                    <Heading size={3}>Validating Your Daycare Business Idea</Heading>
+                    <Heading size={3}>Validating Your Food Truck Business Idea</Heading>
                     <Paragraph big>
-                        The areas we’ve listed above are just starting points — there are many different types of daycare businesses. Once you’ve identified specific daycare areas you might like
-                        to go into, you need to validate your daycare business idea.
+                        These ideas are just starting points — you’ll need to do plenty of research
+                        to understand your customers and create a food truck experience they’re going
+                        to love.
                     </Paragraph>
                     <Paragraph big style={{fontWeight: "bold"}}>
-                        Remember too that every daycare business will have many competitors.
+                        It can be quite expensive to open a food truck business, with estimates
+                        of between $50,000 and $100,000 for your startup costs.
                     </Paragraph>
                     <Paragraph big>
-                        You will need to stand out and offer superior childcare to excel as a daycare business owner.
+                        Before committing too much time, energy and money into your new food truck business, it’s vital to test the marketplace.
                     </Paragraph>
                     <Paragraph big>
-                        Not every idea you have will make it through to becoming a daycare business. There are all sorts of reasons to say “yes” or “no” to specific ideas and approaches — think about what your strengths and weaknesses are so you can choose a type of daycare business that you’d be great at.
+                        Keep researching and testing until you find the right type of food truck business.
+                        It’s fine to say no to the first few ideas, so long as you settle on a niche where there’s
+                        a genuine need.
                     </Paragraph>
                 </TitleBox>
 
                 <GridSectionList>
-                    <TextBlockWithImage SvgImage={IdetifyIcon} imageBackgroundColor={color.orange2}
-                                        imageShadowColor={color.orange2}>
-                        <Heading size={4}>
-                            Identify your daycare business’s unique selling points (USPs)
-                        </Heading>
-                        <Paragraph bottomPadding={0} bottomMargin={0}>
-                            You need to find something unique to offer parents. Whether it’s specialized entertainment and activities or customized childcare services, this is going
-                            to be one of your main strengths.
-                        </Paragraph>
-                    </TextBlockWithImage>
 
                     <TextBlockWithImage SvgImage={LookIcon} imageBackgroundColor={color.red2}
                                         imageShadowColor={color.red2}>
@@ -145,6 +139,17 @@ const ValidatingBusinessIdea = () => (
                         <Paragraph bottomPadding={0} bottomMargin={0}>
                             Having competitors is a good thing as it shows there’s a market, but if there are too many, you’re likely
                             to struggle without a really good unique selling point. Remember that daycare services are very local, so you will need to be located in the right area.
+                        </Paragraph>
+                    </TextBlockWithImage>
+
+                    <TextBlockWithImage SvgImage={IdetifyIcon} imageBackgroundColor={color.orange2}
+                                        imageShadowColor={color.orange2}>
+                        <Heading size={4}>
+                            Identify your daycare business’s unique selling points (USPs)
+                        </Heading>
+                        <Paragraph bottomPadding={0} bottomMargin={0}>
+                            You need to find something unique to offer parents. Whether it’s specialized entertainment and activities or customized childcare services, this is going
+                            to be one of your main strengths.
                         </Paragraph>
                     </TextBlockWithImage>
 

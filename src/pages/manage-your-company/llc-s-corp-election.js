@@ -148,7 +148,7 @@ const CorpElection = () => (
           {howSaveMoney.text2}
         </Paragraph>
         <Heading size="3">{howSaveMoney.header3}</Heading>
-        <Paragraph big>{howSaveMoney.text3}</Paragraph>
+        <Paragraph big bottomMargin="0">{howSaveMoney.text3}</Paragraph>
       </ContentObject>
       <ObjectContent object={Savings}>
         <Heading size="2" bottomMargin="80" style={{ textAlign: "left" }}>
@@ -158,7 +158,7 @@ const CorpElection = () => (
         <Heading size="3" bottomMargin="32">
           {taxCalculator.header2}
         </Heading>
-        <ArrowLink content={taxCalculator.link} />
+        <ArrowLink content={taxCalculator.link} bottomMargin="0"/>
       </ObjectContent>
     </Example>
     <FairlSalary>
@@ -196,7 +196,7 @@ const CorpElection = () => (
     <BehalfFile>
       <TextCenterLayout headline={behalfFile.header} text={behalfFile.text} />
       <ContentCenter contentWidth="470">
-        <TopImageBox className="card" image="24-hours" color={color.orange3} noShadow>
+        <TopImageBox className="card" image="24-hours" color={color.orange3}>
           <h4>{behalfFile.header2}</h4>
           <p>
             {behalfFile.text2}

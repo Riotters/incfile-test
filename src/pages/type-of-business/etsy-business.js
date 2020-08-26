@@ -36,10 +36,10 @@ import LimitedIcon from "../../images/icons/limited-liability-company-or-llc.inl
 import SeriesIcon from "../../images/icons/limited-liability-company.inline.svg";
 import PlaneIcon from "../../images/icons/plane.inline.svg";
 import RockerIcon from "../../images/icons/rocket.inline.svg";
-import SettingBusiness from "../../atomic/sections/type-of-business/etsy-business/setting-business";
-import OrderNow from "../../atomic/sections/type-of-business/etsy-business/order-now";
-import {toolsList} from "../../static/type-of-business/etsy-business";
-import HireEmployees from "../../atomic/sections/type-of-business/etsy-business/hire-employees";
+import SettingBusiness from "../../atomic/sections/type-of-business/tshirt-business/setting-business";
+import OrderNow from "../../atomic/sections/type-of-business/tshirt-business/order-now";
+import {toolsList} from "../../static/type-of-business/tshirt-business";
+import HireEmployees from "../../atomic/sections/type-of-business/tshirt-business/hire-employees";
 import UsefulTools from "../../atomic/partials/useful-tools";
 import Conclusion from "../../atomic/sections/general/conclusion";
 

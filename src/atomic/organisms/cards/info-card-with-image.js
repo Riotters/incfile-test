@@ -17,7 +17,7 @@ const CardWrapper = styled.div`
     margin: 0 15px 30px;
     overflow: hidden;
     background-color: white;
-    min-height: 640px;
+    min-height: 708px;
     
     @media (min-width: 370px) { 
         margin: 0 auto 30px;

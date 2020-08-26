@@ -40,7 +40,7 @@ const DaycareBusiness = () => (
         <SEO title="How to Start a Daycare"
              description="Parents are increasingly having to work more jobs or longer hours to make ends meet — that means there’s never been a greater need for reliable daycare organizations that can take care of the little ones."/>
 
-        <Top ovalColor="green" imageName="daycare" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
+        <Top ovalColor="green" imageName="daycare-main" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
             <h1>How to Start a Daycare</h1>
             <p>Parents are increasingly having to work more jobs or longer hours to make ends meet — that means there’s
                 never been a greater need for reliable daycare organizations that can take care of the little ones.</p>
