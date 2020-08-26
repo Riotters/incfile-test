@@ -25,6 +25,7 @@ import Oval2SVG from "../../../../images/ovals/bottom-right-transparent-blue2.in
 import CurveSVG from "../../../../images/curves/top-left-bottom-right.inline.svg";
 import BoxedButton from "../../../molecules/buttons/boxed";
 import TabButton from "../../../molecules/tabs/tab-title.js"
+import CategoryButton from "../../../molecules/buttons/category-button";
 
 const Categories = styled.section`
   position: relative;
@@ -45,9 +46,9 @@ const CategoriesSection = ({ className, content }) => (
             <Oval2SVG />
         </Oval>
         <HeadingCenter headline={content.header} headlineWidth="700" bottomMargin="80" />
-        <CenterGrid columns="3">
+        <CenterGrid columnsLG="3">
             {content.buttons.map((button, i) => (
-                <p>{button.header}</p>
+                <CategoryButton content={button} icon={icons[i]} />
             ))}
         </CenterGrid>
     </Categories>

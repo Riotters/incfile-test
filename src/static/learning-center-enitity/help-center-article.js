@@ -6,6 +6,16 @@ export const top = {
 }
 
 export const about = {
+    links: [
+        {
+            text: `View All Topics`,
+            url: `/`,
+        },
+        {
+            text: `General`,
+            url: `/`,
+        },
+    ],
     header: 
         `Should I Assume That If I Form An LLC Or Incorporate That No One Else Can Use The Same Name?`,
     box: {

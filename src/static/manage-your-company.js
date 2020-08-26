@@ -24,3 +24,13 @@ export const help = {
     },
   ],
 };
+
+export const certificates = {
+  header: `Corporate LLC Kits & Stock Certificates.`,
+  text: `All Corporations are required to maintain a "corporate minute book" that holds things like the formation paperwork, licenses, resolutions and meeting minutes. It is one of the first things requested when your company is audited or being sold.`,
+  list: [`Slip Case and Binder`, `20 Custom Printed Stock Certificates`, `Metal Die-Cast Embossing Seal`, `Stock Transfer Ledger`, `Operating Agreement for LLCs`, `Minutes and By-Laws for Corporations`],
+  button: {
+    text: `Show more`,
+    url: `/`,
+  },
+};
