@@ -7,7 +7,7 @@ import IconCircle from "../../../components/icons/circle";
 
 const Wrapper = styled.div`
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
     width: 100%;
     padding: 24px;

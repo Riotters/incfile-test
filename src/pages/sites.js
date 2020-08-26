@@ -86,6 +86,8 @@ const ComponentsPage = () => (
           <Link to="/type-of-business/gym-personal-training">Gym Personal Training (no details)</Link>
           <Link to="/type-of-business/real-estate-business">Real Estate Business (no details)</Link>
           <Link to="/type-of-business/digital-nomad">Digital Nomad (no details)</Link>
+          <Link to="/type-of-business/beauty-salon">Beauty Salon (no details)</Link>
+          <Link to="/type-of-business/cleaning-business">Cleaning Business (no details)</Link>
         <h2>Additional sites</h2>
         <Link to="/components">Components</Link>
         <Link to="/404">404</Link>
