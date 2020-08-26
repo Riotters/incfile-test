@@ -10,14 +10,6 @@ import Links from "./links";
 const HireEmployees = () => (
     <BlueContainer>
         <Container>
-            <ContentCenter>
-                <TextCenterLayout headline="Hire Employees"
-                                  text="If you’re just running your cleaning business solo, you don’t need to worry about employees. If you are hiring people to work for you, you will need to know what to do. See our 10 tips on hiring employees."/>
-                <AccordionWithCounting content={AccordionCounting}/>
-            </ContentCenter>
-        </Container>
-
-        <Container>
             <Links />
         </Container>
     </BlueContainer>

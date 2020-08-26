@@ -10,35 +10,44 @@ import {Paragraph} from "../../../atoms/typography/paragraph";
 const Links = () => (
     <Wrapper>
         <Container>
-            <TextCenterLayout headline="Discussion Groups and Forums for Your Cleaning Business"
-                              text="There are plenty of forums and online discussion groups for cleaning businesses. Start with these"/>
+            <TextCenterLayout headline="Discussion Groups and Forums for Your Catering Business"
+                              text="There are plenty of forums and online discussion groups for catering businesses. Start with these:"/>
 
             <LinksContainer>
 
                 <LinkItem>
                     <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
-                        Entrepreneur Ridealong Subreddit
+                        Chef Talk
                     </PathLink>
                     <Paragraph style={{marginTop: "20px"}} bottomMargin={0}>
-                        A forum on the popular website reddit for entrepreneurship, with a strong focus on cleaning businesses.
+                        A sub-forum dedicated to helping chefs and catering business owners
                     </Paragraph>
                 </LinkItem>
 
                 <LinkItem>
                     <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
-                        CleaningTalk.com
+                        International Food Safety and Quality Forum
                     </PathLink>
                     <Paragraph style={{marginTop: "20px"}} bottomMargin={0}>
-                        All the discussion you could possibly want around setting up, running and growing a cleaning business.
+                        A sub-forum dedicated to helping chefs and catering business owners
                     </Paragraph>
                 </LinkItem>
 
                 <LinkItem>
                     <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
-                        Fat Cat Cleaner
+                        Kitchen Confidential subreddit
                     </PathLink>
                     <Paragraph style={{marginTop: "20px"}} bottomMargin={0}>
-                        A forum specifically for cleaning business owners and entrepreneurs.
+                        Another reddit discussion forum that lets you peek behind the scenes at food businesses
+                    </Paragraph>
+                </LinkItem>
+
+                <LinkItem>
+                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                        Food Trucks subreddit
+                    </PathLink>
+                    <Paragraph style={{marginTop: "20px"}} bottomMargin={0}>
+                        An active discussion forum on the ever-popular reddit
                     </Paragraph>
                 </LinkItem>
 
@@ -49,6 +58,7 @@ const Links = () => (
 
 const Wrapper = styled.div`
     padding-top: 100px;
+    background: linear-gradient(180deg, rgba(242,246,255,1) 0%, rgba(255,255,255,1) 100%);
 `;
 
 const LinksContainer = styled.div`

@@ -17,6 +17,9 @@ const switch1 = (ovalColor) => {
     case "purple": {
       return "#9168ff";
     }
+    case "purple-2": {
+      return "#d2aafb";
+    }
     case "yellow": {
       return color.yellow1;
     }
@@ -53,6 +56,9 @@ const switch2 = (ovalColor) => {
     }
     case "purple": {
       return "#dad2ff";
+    }
+    case "purple-2": {
+      return "#ede0fa";
     }
     case "yellow": {
       return color.yellow2;

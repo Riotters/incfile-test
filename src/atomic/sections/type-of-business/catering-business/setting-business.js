@@ -18,53 +18,69 @@ const SettingBusiness = () => (
         <Container>
             <ContentCenter>
                 <TextCenterLayout
-                    headline="Setting up Your Cleaning Business"
+                    headline="Set up & Maintain Your Catering Business"
                     headlineWidth="700"
                     textWidth="700"
-                    text="Once you've legally created your cleaning business, you’ll need to get some other things in place."
+                    text="Once you've legally created your catering business, you’ll need to get some other things in place."
                 />
             </ContentCenter>
 
             <ImageBoxes>
                 <TopImageBox image="location" color={color.red3}>
-                    <h4>Location of your workshop</h4>
+                    <h4>Business location</h4>
                     <p>
-                        Where are you going to run your business from? Will you work from home, get an office, use a shared working space or something else? You will likely run your cleaning business from home, but spend most of your working time in other locations. Alternatively, you may have a small office or commercial space where you can keep materials, provide training and work with employees.
+                        Depending on the size of your business, you will need a location with excellent kitchen facilities. It must be easily accessible, should meet the needs of your staff and clients and shouldn’t eat into your profit margins too much.
                     </p>
                 </TopImageBox>
 
-                <TopImageBox image="side-yellow" color={color.yellow3}>
-                    <h4>Equipment</h4>
+                <TopImageBox image="we-doubled-the-size-of-customer-service" color={color.orange3}>
+                    <h4>Employees</h4>
                     <p>
-                        What equipment do you need to manage your cleaning business? You will need a laptop, computer or smartphone to communicate with clients. You will also need transportation and cleaning supplies. Don’t forget equipment like vacuum cleaners, extendable dusters, steam cleaners and the like. Make sure you understand exactly what you need to spend so you can write it off against business expenses.
+                        You will need to hire employees throughout your catering business. From chefs to serving staff to assistant cooks, getting your staff balance right is essential to your success.
+                    </p>
+                </TopImageBox>
+
+                <TopImageBox image="state-filling-fees" color={color.yellow3}>
+                    <h4>Finances and Taxes</h4>
+                    <p>
+                        What kind of bank account will you get? And how will you pay your business taxes? These are all important things to consider so your catering business stays in the green. Here at Incfile, we can even help you file your taxes.
+                    </p>
+                </TopImageBox>
+
+                <TopImageBox image="permits-licences" color={color.babyblue3}>
+                    <h4>Permits and licenses</h4>
+                    <p>
+                        Running a catering business comes with certain rules, regulations and legalities you need to be aware of, especially around staff health and safety and food hygiene and preparation. Incfile can conduct a Business License Research package for you, or you can take the time to do the research yourself.
                     </p>
                 </TopImageBox>
 
                 <TopImageBox image="display-ads" color={color.purple3}>
                     <h4>Marketing</h4>
                     <p>
-                        You will probably need to build a website and have a brand and logo professionally designed. You should also look into local search advertising.
+                        Your catering business likely needs its own website, and you will also need to develop a local brand, logo and other marketing collateral. You should engage with local marketing firms who understand your immediate marketplace and can provide advice on getting your name out there.
                     </p>
                 </TopImageBox>
 
-                <TopImageBox image="organization-change-02" color={color.green3}>
-                    <h4>Process</h4>
+                <TopImageBox image="side-4" color={color.green3}>
+                    <h4>Equipment and ingredients</h4>
                     <p>
                         Think about the business processes and software that you’re going to use to run your business efficiently and effectively.
                     </p>
-
-                    <GreenCurve>
-                        <Curve/>
-                    </GreenCurve>
                 </TopImageBox>
 
-                <TopImageBox image="we-doubled-the-size-of-customer-service" color={color.orange3}>
-                    <h4>Employees</h4>
+                <TopImageBox image="software" color={color.blue3}>
+                    <h4>Software</h4>
                     <p>
-                        If you’re not doing all the cleaning yourself, you will need to hire employees to help you out. More on that below.
+                        Your catering business likely needs its own website, and you will also need to develop a local brand, logo and other marketing collateral. You should engage with local marketing firms who understand your immediate marketplace and can provide advice on getting your name out there.
                     </p>
                 </TopImageBox>
 
+                <TopImageBox image="measuring-business-success" color={color.babyblue3}>
+                    <h4>Business maintenance</h4>
+                    <p>
+                        Most states require businesses to file an Annual Report report once a year. You will also be expected to pay estimated taxes on what you plan to earn in the current business year. Four federal, state, regional and city business licenses and permits may need to be renewed on a regular basis, typically once a year.
+                    </p>
+                </TopImageBox>
             </ImageBoxes>
         </Container>
     </GreenContainer>

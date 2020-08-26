@@ -84,8 +84,8 @@ export const MaintainingAccordionContent = {
 }
 
 export const toolsList = {
-    headlineText: "Useful Online Tools for Your Cleaning Business",
-    description: "Here are some really great online tools for managing your cleaning business. They will reduce the time you spend on administration, help you to collaborate with others and free up your time to grow and manage your new venture.",
+    headlineText: "Useful Online Tools for Your Catering Business",
+    description: "Here are some really great online tools for managing your catering business. They will reduce the time you spend on administration, help you to collaborate with others and free up your time to grow and manage your new venture.",
     tools: [
         {
             title: "Project Management",
@@ -189,45 +189,33 @@ export const adventages = {
     items: [
         {
             circleText: 1,
-            imageName: "starting-a-home-business",
-            headline: "Residential",
-            text: "Cleaning people’s homes and private residences"
+            imageName: "food-truck",
+            headline: "Food Truck",
+            text: "Perhaps the most basic type of catering business, they involve setting up a mobile kitchen and providing food to the public at events, outside establishments and other gatherings."
         },
         {
             circleText: 2,
-            imageName: "commercial-office",
-            headline: "Commercial Office",
-            text: "Cleaning offices and similar work spaces"
+            imageName: "private-event-caterers",
+            headline: "Private event caterers",
+            text: "Mainly providing food for private events like weddings, christenings, wakes, and the like, these caterers primarily serve individual customers."
         },
         {
             circleText: 3,
-            imageName: "retail-construction-02",
-            headline: "Commercial Retail",
-            text: "Cleaning shops and other retail spaces"
+            imageName: "leadership-coaching",
+            headline: "Corporate event caterers",
+            text: "A popular and growing field, these types of caterers mainly serve business customers, providing food for meetings, conferences, seminars, and other company events."
         },
         {
             circleText: 4,
-            imageName: "forming-a-corporation",
-            headline: "Commercial Other",
-            text: "Other commercial areas and businesses"
+            imageName: "partnership-caterers",
+            headline: "Partnership caterers",
+            text: "These caterers go into partnership with other businesses, taking away the stress of preparing and serving food for their partners. Examples of this type of business could be partnering with pubs, clubs, and similar establishments."
         },
         {
             circleText: 5,
-            imageName: "industrial",
-            headline: "Industrial",
-            text: "Cleaning factories, warehouses and other industrial areas"
-        },
-        {
-            circleText: 6,
-            imageName: "municipal",
-            headline: "Municipal",
-            text: "Government, education and other publicly-funded facilities"
-        },
-        {
-            circleText: 7,
-            imageName: "specialist-building",
-            headline: "Specialist",
-            text: "Cleaning that requires slightly more special attention, including medical and healthcare facilities"
+            imageName: "specialist",
+            headline: "Specialist caterers",
+            text: "You can set yourself apart by providing specialized catering for different dietary needs including vegetarian/vegan, gluten-free, kosher, halal and others."
         }
     ]
 }

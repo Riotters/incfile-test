@@ -25,18 +25,32 @@ import BusinessInsuranceColoredIcon from "../../../../images/icons/business-insu
 import AgentColoredIcon from "../../../../images/icons/registered-agent-colored.inline.svg";
 import TaxesColoredIcon from "../../../../images/icons/other-taxes-colored.inline.svg";
 import MaintainingColoredIcon from "../../../../images/icons/maintaining-your-cleaning-business-colored.inline.svg"
+import StateBusinessColoredIcon from "../../../../images/icons/state-business-licenses-and-permits-colored.inline.svg";
+import FederalBusinessColoredIcon from "../../../../images/icons/federal-business-licenses-and-permits-colored.inline.svg";
+import StateBusinessIcon from "../../../../images/icons/state-business-licenses-and-permits.inline.svg";
+import FederalBusinessIcon from "../../../../images/icons/federal-business-licenses-and-permits.inline.svg";
 
 import {
     BusinessInsuranceAccordionContent,
     MaintainingAccordionContent,
     TaxesAccordionContent,
     LicensesAccordionContent
-} from "../../../../static/type-of-business/cleaning-business";
+} from "../../../../static/type-of-business/catering-business";
 
 const ButtonList = [
     {
-        title: "Business Licenses and Premits",
+        title: "Local Business Licenses",
         icon: BusinessLicensesColoredIcon,
+        tabId: "local-business"
+    },
+    {
+        title: "State Business Licenses",
+        icon: StateBusinessColoredIcon,
+        tabId: "local-business"
+    },
+    {
+        title: "Federal Business Licenses",
+        icon: FederalBusinessColoredIcon,
         tabId: "local-business"
     },
     {
@@ -100,9 +114,11 @@ const TabScrollable = ({layout, columns}) => {
                                 </TabsWrapper>
 
                                 <PanelWrapper>
-                                    <Heading size={3}>Rules, Regulations and Laws for Your Cleaning Business</Heading>
+                                    <Heading size={3}>
+                                        Rules, Regulations and Laws for Your Catering Business
+                                    </Heading>
                                     <Paragraph big mixed={true}>
-                                        Of course, along with running a business there are certain rules, regulations and legalities you need to be aware of.
+                                        Of course, along with running a business there are certain rules, regulations and legalities you need to be aware of. We can also help with researching your business licensing needs.
                                     </Paragraph>
 
                                     <TextBlockWithImage
@@ -121,14 +137,63 @@ const TabScrollable = ({layout, columns}) => {
                                     >
                                         <Paragraph big flex flexAlign={true}
                                                    style={{color: color.black, fontWeight: "bold"}} mixed={true}>
-                                            Business Licenses and Permits
+                                            Local Business Licenses and Permits
                                         </Paragraph>
 
                                         <Paragraph big>
-                                            Required licenses and permits for your cleaning business will vary depending on where you're operating and what regulations apply. In general, there are different permits required at the local, state and federal levels.
+                                            Your region, county or city may require you to have licenses or permits to operate a business. Talk to your city’s Chamber of Commerce to learn about your local licensing and permit requirements.
                                         </Paragraph>
 
-                                        <Accordion content={LicensesAccordionContent}/>
+                                    </TextBlockWithImage>
+
+                                    <TextBlockWithImage
+                                        SvgImage={StateBusinessIcon}
+                                        textBackgroundColor="transparent"
+                                        imageBackgroundColor={color.orange2}
+                                        imageShadowColor={shadow.orange2}
+                                        imageShadowOpacity={0.5}
+                                        boxShadow={false}
+                                        paddingLeft={0}
+                                        style={{marginTop: "70px"}}
+                                        circleShadowY={40}
+                                        circleShadowBlure={80}
+                                        width={100}
+                                        widthUnit="%"
+                                    >
+                                        <Paragraph big flex flexAlign={true}
+                                                   style={{color: color.black, fontWeight: "bold"}} mixed={true}>
+                                            State Business Licenses and Premits
+                                        </Paragraph>
+
+                                        <Paragraph big>
+                                            You can find all the information you need about statewide licenses and permits on your state’s Secretary of State website. You can also find those details in our state-by-state guides to company formation. Alternatively, the Small Business Administration website has a list of licenses and permits by state.
+                                        </Paragraph>
+
+                                    </TextBlockWithImage>
+
+                                    <TextBlockWithImage
+                                        SvgImage={FederalBusinessIcon}
+                                        textBackgroundColor="transparent"
+                                        imageBackgroundColor={color.orange2}
+                                        imageShadowColor={shadow.orange2}
+                                        imageShadowOpacity={0.5}
+                                        boxShadow={false}
+                                        paddingLeft={0}
+                                        style={{marginTop: "70px"}}
+                                        circleShadowY={40}
+                                        circleShadowBlure={80}
+                                        width={100}
+                                        widthUnit="%"
+                                    >
+                                        <Paragraph big flex flexAlign={true}
+                                                   style={{color: color.black, fontWeight: "bold"}} mixed={true}>
+                                            Federal Business Licenses and Premits
+                                        </Paragraph>
+
+                                        <Paragraph big>
+                                            The Small Business Administration provides details of any national or federal licenses and permits you might need.
+                                        </Paragraph>
+
                                     </TextBlockWithImage>
 
                                     <TextBlockWithImage

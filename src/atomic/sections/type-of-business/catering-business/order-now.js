@@ -50,7 +50,7 @@ const OrderNow = ({layout, columns}) => (
 );
 
 const TabScrollableWrapper = styled.div`
-background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 96%, #fef6ed);
+background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 40%, #fef6ed);
 `;
 
 const OrderNowWrapper = styled.section`
