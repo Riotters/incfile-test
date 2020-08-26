@@ -1,8 +1,8 @@
 import React, { component, Component } from "react"
 import Dropdown from 'react-dropdown';
 import styled from "styled-components"
-import { color } from "../styles/colors"
-import DropdownSVG from "../../images/dropdown.inline.svg"
+import { color } from "../../atoms/styles/colors"
+import DropdownSVG from "../../../images/dropdown.inline.svg"
 
 const Wrapper = styled.div`
     position: relative;

@@ -34,7 +34,7 @@ const Sticky = styled.div`
 const Imagebox = styled.div`
   display: none;
   width: 100%;
-  max-width: 485px;
+  max-width: ${props => props.imageWidth ? props.imageWidth : "485"}px;
   position: relative;
 
   @media(min-width: 769px) {
@@ -47,12 +47,12 @@ const Imagebox = styled.div`
   }
 `;
 
-const Certificates = ({ children, image, paddingTop, contentCenter }) => {
+const Certificates = ({ children, image, paddingTop, contentCenter, imageWidth }) => {
   return (
     <Wrapper>
       <Container>
         <Flex>
-          <Imagebox>
+          <Imagebox imageWidth={imageWidth}>
             <Sticky>
                 <Image filename={image} />
             </Sticky>
