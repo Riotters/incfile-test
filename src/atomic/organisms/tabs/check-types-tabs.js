@@ -126,7 +126,7 @@ const icons = [
 ];
 
 const colors2 = [color.yellow3, color.red3, color.blue3, color.orange3, color.green3, color.purple3, color.green3, color.orange3, color.purple3, color.babyblue3, color.red3, color.blue3, color.babyblue3, color.purple3, color.yellow3, color.yellow3, color.green3, color.red3, color.babyblue3, color.orange3, color.yellow3, color.orange3, color.green3, color.red3, color.blue3, color.purple3, color.red3, color.yellow3, color.orange3,];
-const icons2 = ["s-corp-tax-calculator-01", "entity-comparison-chart", "state-filling-fees", "ongoing-filling-requirements-02", "clock-691"];
+const icons2 = ["beer-489", "makeup-394", "waiter-5786", "tshirt472", "cleaning-345", "talk293", "tree485", "laundry-379", "camera-234", "bulding-395", "table4859", "leash-478", "alarm", "bear-485", "calliper-169", "message-596", "palm-204", "gym-238", "baloon-385", "book-436", "food-truck-46", "bed-586", "tools384", "dress-245", "truck34", "tie486", "airbnb-467", "bakery-35", "record-23"];
 
 const CheckTypesTabs = ({ content }) => (
   <Tabs>
