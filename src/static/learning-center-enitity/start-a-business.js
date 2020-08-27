@@ -205,39 +205,6 @@ export const checkType = {
     ],
   },
 };
-// export const businessStructure = {
-//   header: `Unsure which entity structure is best for your business?`,
-//   cards: [
-//     {
-//       header: `LLC`,
-//       text: `Keep personal assets separate from the company. `,
-//     },
-//     {
-//       header: `S – Corpotation`,
-//       text: `Keep personal assets separate from the company.`,
-//     },
-//     {
-//       header: `C – Corporation`,
-//       text: `Attractive to investors.`,
-//     },
-//     {
-//       header: `Non-Profit`,
-//       text: `Donations can be recordedby donors as not taxable. `,
-//     },
-//   ],
-//   button: {
-//     text: `Compare entity types`,
-//     url: `/`,
-//   },
-// };
-// export const launchBusiness = {
-//   header: `Launch your business with Incfile`,
-//   text: `No Contracts. No Surprise. Only $0 + State Fee to Launch Your Business.`,
-//   button: {
-//     text: `launch your business`,
-//     url: `/`,
-//   },
-// };
 
 export const businessStructure = {
   header: `Unsure which entity structure is best for your business?`,

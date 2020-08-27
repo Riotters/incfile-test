@@ -11,9 +11,11 @@ import Top from "../../atomic/partials/top";
 import Help from "../../atomic/sections/manage-your-company/annual-report/help";
 import About from "../../atomic/sections/learning-center-entity/start-a-business/about";
 import CheckType from "../../atomic/sections/learning-center-entity/start-a-business/check-type";
+import BusinessStructure from "../../atomic/sections/learning-center-entity/start-a-business/business-structure";
+import Rocket from "../../atomic/sections/review-entity-type/c-corporation/rocket";
 import Searchbar from "../../atomic/molecules/form/searchbar";
 //Texts
-import { top, about, checkType } from "../../static/learning-center-enitity/start-a-business";
+import { top, about, checkType, businessStructure, launchBusiness } from "../../static/learning-center-enitity/start-a-business";
 
 const HelpCenter = () => (
   <Layout>
@@ -31,6 +33,8 @@ const HelpCenter = () => (
     </Top>
     <About content={about} />
     <CheckType content={checkType} />
+    <BusinessStructure content={businessStructure} />
+    <Rocket content={launchBusiness} />
   </Layout>
 );
 
