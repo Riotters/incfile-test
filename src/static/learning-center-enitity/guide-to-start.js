@@ -3,12 +3,14 @@ export const top = {
     `So You Want to Start a Business?`,
     text:
     `We’ve Got You Covered—Everything You Need to Know to Launch Your New Venture`,
-    button: {
+    buttons: [
+    {
         text:
         `Download the complete guide`,
         url:
         `Download the complete guide`,
     },
+],
 }
 export const about = {
     header:
