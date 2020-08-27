@@ -62,13 +62,13 @@ const ComponentsPage = () => (
         <Link to="/review-entity-type/llc">LLC (no details)</Link>
         <h2>Learning Center Entity</h2>
         <Link to="/learning-center-entity/help-center">Help Center (no details)</Link>
-        <Link to="/learning-center-entity/help-center-article">Help Center Article (WIP)</Link>
+        <Link to="/learning-center-entity/help-center-article">Help Center Article (no video)</Link>
         <Link to="/learning-center-entity/comparison-chart">Comparison Chart (WIP)</Link>
         <Link to="/learning-center-entity/business-checklist">Business Checklist (WIP)</Link>
         <Link to="/learning-center-entity/annual-report">Annual Report Due Date (WIP)</Link>
         <Link to="/learning-center-entity/business-license-req">Business License Requirements (WIP)</Link>
-        <Link to="/learning-center-entity/start-a-business">Business Startup Guides (WIP)</Link>
-        <Link to="/learning-center-entity/guide-to-start">Guide to start (WIP)</Link>
+        <Link to="/learning-center-entity/start-a-business">Business Startup Guides (no details)</Link>
+        <Link to="/learning-center-entity/guide-to-start">Guide to start (no details)</Link>
         <h2>Blog</h2>
         <Link to="/blog">Blog (no API)</Link>
         <Link to="/article">Article (no API)</Link>

@@ -8,7 +8,7 @@ import ImageContent from "../../../partials/left-image-right-content";
 import IconSVG from "../../../../images/icons/rocket2.inline.svg";
 import IconTextColorBox from "../../../molecules/text-blocks/icon-h4-text-color";
 import Oval from "../../../atoms/icons/oval";
-import OvalSVG from "../../../../images/ovals/top-left-transparent-pink.inline.svg";
+import OvalSVG from "../../../../images/ovals/top-left-transparent-red3.inline.svg";
 
 const About = styled.section`
   position: relative;

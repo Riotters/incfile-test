@@ -9,10 +9,12 @@ import IconSVG from "../../../../images/icons/biennal-report.inline.svg";
 import IconTextColorBox from "../../../molecules/text-blocks/icon-h4-text-color";
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-pink.inline.svg";
+import Oval2SVG from "../../../../images/ovals/bottom-right-transparent-blue3.inline.svg";
 
 const NeedMore = styled.section`
   position: relative;
-  padding-bottom: 120px;
+  padding-top: 104px;
+  padding-bottom: 80px;
 
   p {
     color: ${color.grey2};
@@ -25,6 +27,12 @@ const NeedMore = styled.section`
 
 const NeedMoreSection = ({ className, content }) => (
   <NeedMore className={className}>
+    <Oval width="420" height="420" top="0" left="0">
+      <OvalSVG />
+    </Oval>
+    <Oval width="570" height="570" top="35" right="0">
+      <Oval2SVG />
+    </Oval>
     <HeadingCenter headline={content.header} headlineWidth="770" text={content.text} textWidth="770" linkText={content.link.text} linkUrl={content.link.url} />
   </NeedMore>
 );

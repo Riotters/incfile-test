@@ -1,42 +1,48 @@
 import React from "react";
 import styled from "styled-components";
+import { color } from "../../atoms/styles/colors";
 import Whitebox from "../../atoms/boxes/white-box-li";
 import { Heading } from "../../atoms/typography/heading";
 import { Paragraph } from "../../atoms/typography/paragraph";
 import ArrowLink from "../../molecules/buttons/text";
-import ArrowSVG from "../../../images/arrow.inline.svg"
-import BoxedButton from "../../molecules/buttons/boxed"
+import ArrowSVG from "../../../images/arrow.inline.svg";
+import BoxedButton from "../../molecules/buttons/boxed";
 import Circle from "../../atoms/icons/circle";
 import TaxesSVG from "../../../images/icons/taxes.inline.svg";
+import Curve from "../../atoms/icons/curve";
+import CurveSVG from "../../../images/curves/bottom-left-top-right.inline.svg";
 
 const Wrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
 `;
 
 const List = styled.div`
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 48px;
+  display: flex;
+  flex-direction: column;
 
-    .article-link {
-        &:not(:last-child) {
-            margin-bottom: 8px;
-        }
+  .article-link {
+    &:not(:last-child) {
+      margin-bottom: 8px;
     }
+  }
 `;
 
-const RelatedQuestionsList = ({ className, content, icon, color }) => {
+const RelatedQuestionsList = ({ className, content }) => {
   return (
     <Wrapper className={className}>
-        <List>
-            {content.buttons.map(button => (
-                <BoxedButton className="article-link" content={button} />
-            ))}
-        </List>
+      <Curve top="-25" left="-29" color={color.red1}>
+        <CurveSVG />
+      </Curve>
+      <List>
+        {content.buttons.map((button) => (
+          <BoxedButton className="article-link" content={button} />
+        ))}
+      </List>
     </Wrapper>
-  )
-}
+  );
+};
 
 export default RelatedQuestionsList;
