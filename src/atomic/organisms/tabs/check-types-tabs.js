@@ -125,7 +125,7 @@ const icons = [
   "s-corp-tax-calculator-01",
 ];
 
-const colors2 = [color.green3, color.red3, color.red3, color.yellow3, color.babyblue3, color.orange3];
+const colors2 = [color.yellow3, color.red3, color.blue3, color.orange3, color.green3, color.purple3, color.green3, color.orange3, color.purple3, color.babyblue3, color.red3, color.blue3, color.babyblue3, color.purple3, color.yellow3, color.yellow3, color.green3, color.red3, color.babyblue3, color.orange3, color.yellow3, color.orange3, color.green3, color.red3, color.blue3, color.purple3, color.red3, color.yellow3, color.orange3,];
 const icons2 = ["s-corp-tax-calculator-01", "entity-comparison-chart", "state-filling-fees", "ongoing-filling-requirements-02", "clock-691"];
 
 const CheckTypesTabs = ({ content }) => (
