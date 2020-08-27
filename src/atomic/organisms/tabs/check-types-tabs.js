@@ -109,20 +109,20 @@ const Tab = ({ children }) => {
 
 const colors = [color.yellow3, color.blue3, color.purple3, color.orange3, color.babyblue3, color.red3, color.yellow3, color.green3, color.blue3, color.red3, color.purple3, color.purple3, color.yellow3, color.orange3];
 const icons = [
-  "corporation-state-information",
-  "s-corp-tax-calculator-01",
-  "entity-comparison-chart",
-  "state-filling-fees",
-  "ongoing-filling-requirements-02",
-  "clock-691",
-  "corporation-state-information",
-  "s-corp-tax-calculator-01",
-  "entity-comparison-chart",
-  "state-filling-fees",
-  "ongoing-filling-requirements-02",
-  "clock-691",
-  "corporation-state-information",
-  "s-corp-tax-calculator-01",
+  "amazon88",
+  "computer-2346",
+  "etsy299",
+  "place038",
+  "bulb385",
+  "buy597",
+  "home294",
+  "case408",
+  "bag5",
+  "cap395 4",
+  "shop459",
+  "buttons695 2",
+  "chart3456",
+  "ok235",
 ];
 
 const colors2 = [color.yellow3, color.red3, color.blue3, color.orange3, color.green3, color.purple3, color.green3, color.orange3, color.purple3, color.babyblue3, color.red3, color.blue3, color.babyblue3, color.purple3, color.yellow3, color.yellow3, color.green3, color.red3, color.babyblue3, color.orange3, color.yellow3, color.orange3, color.green3, color.red3, color.blue3, color.purple3, color.red3, color.yellow3, color.orange3,];
