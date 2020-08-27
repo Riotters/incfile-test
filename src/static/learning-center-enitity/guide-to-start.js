@@ -149,3 +149,19 @@ export const needMore = {
         '/',
     },
 }
+export const rocket = {
+    header:
+      `Launch`,
+    header2:
+      `your business with Incfile`,
+    text:
+      `No Contracts. No Surprise.`,
+    text2:
+      `Only $0 + State Fee to Launch Your Business.`,
+    button: {
+      text: 
+        `launch your business`,
+      url:
+        `/`,  
+    }
+  }
