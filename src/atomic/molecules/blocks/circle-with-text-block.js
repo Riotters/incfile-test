@@ -39,7 +39,7 @@ const Wrapper = styled.div`
     max-height: 270px;
     display: flex;
     align-items: center;
-    padding: 40px;
+    padding: 40px 40px 40px 0;
     
     ${props => props.withBg &&
         "background-color:" + color.white + ";" +
