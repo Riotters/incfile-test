@@ -21,18 +21,10 @@ export const searchTool = {
         `Your Industy`,
     
     ],
-    button:
-    
-        {
-            header:
-            `Check Requirements`,
-            ulr:
-            `/`
-        },
-        
-
-        
-    
+    button: {
+        text: `Check Requirements`,
+        url: `/`,
+    },
 }
 export const searchResults = {
     header:
@@ -60,7 +52,7 @@ export const searchResults = {
     link: {
         text:
         `Search Again`,
-        ulr:
+        url:
         `/`
     },
     header:
@@ -69,12 +61,9 @@ export const searchResults = {
     `Our Business License Research Package offers total peace of mind by having 
     our licensing specialist conduct the necessary research to determine all of the licenses and permits required on a city, state, and county level specifically for your business.`,
     button: {
-        header: 
+        text: 
         `Do the research for me`,
-        ulr:
+        url:
         `/`,
     },
-    
-
-
 } 

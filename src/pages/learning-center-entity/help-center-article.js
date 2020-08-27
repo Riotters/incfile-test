@@ -9,8 +9,8 @@ import Help from "../../atomic/sections/manage-your-company/annual-report/help"
 import About from "../../atomic/sections/learning-center-entity/help-center-article/about"
 import Related from "../../atomic/sections/learning-center-entity/help-center-article/related"
 import Categories from "../../atomic/sections/learning-center-entity/help-center-article/categories"
-import Tools from "../../atomic/sections/learning-center-entity/help-center/tools"
 import Service from "../../atomic/sections/learning-center-entity/help-center/service"
+import Tools from "../../atomic/sections/learning-center-entity/help-center-article/tools"
 import Benefits from "../../components/partials/sections/benefits";
 import Articles from "../../components/partials/sections/articles";
 import Rocket from "../../atomic/sections/review-entity-type/c-corporation/rocket"
@@ -30,6 +30,7 @@ const HelpCenter = () => (
     <Related content={related} />
     <Categories content={categories} />
     <Service content={service} />
+    <Tools content={tools} />
     <Rocket content={rocket} />
   </Layout>
 );

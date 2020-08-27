@@ -41,10 +41,10 @@ import ToolsAndLinks from "../../atomic/sections/type-of-business/construction-c
 
 const ConstructionCompany = () => (
     <Layout>
-        <SEO title="How to Start a Travel Agency"
-             description="Everyone likes traveling — new horizons, beautiful destinations and unique experiences mean we love packing our bags and spending time away from work and home."/>
+        <SEO title="How to Start a Construction Company"
+             description="The need for residential, commercial or industrial property is constantly growing as the population increases."/>
 
-        <Top ovalColor="sun" imageName="construction-company" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
+        <Top ovalColor="sun" imageName="construction-company-main" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
             <h1>How to Start a Construction Company</h1>
             <p>The need for residential, commercial or industrial property
                 is constantly growing as the population increases.</p>

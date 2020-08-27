@@ -5,7 +5,7 @@ const RatingWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-top: 48px;
+  margin-top: ${props => props.topMargin ? props.topMargin : "48"}px;
   width: 100%;
   
   @media (min-width: 576px) {
@@ -14,8 +14,8 @@ const RatingWrapper = styled.div`
     }
 `;
 
-const RatingRow = ({children}) => (
-    <RatingWrapper>
+const RatingRow = ({children, topMargin}) => (
+    <RatingWrapper topMargin={topMargin}>
         {children}
     </RatingWrapper>
 );

@@ -44,7 +44,7 @@ const FoodTruckBusiness = () => (
         <SEO title="How to Start a Food Truck Business"
              description="Starting a food truck can be an excellent introduction to the world of running your own business."/>
 
-        <Top ovalColor="yellow" imageName="food-truck" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
+        <Top ovalColor="yellow" imageName="food-truck-main" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
             <h1>How to Start a Food Truck Business</h1>
             <p>
                 Starting a food truck can be an excellent introduction
