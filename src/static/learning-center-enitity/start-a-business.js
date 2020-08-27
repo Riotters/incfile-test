@@ -44,55 +44,7 @@ export const checkType = {
         },
         {
             header:
-            `Franchise`,
-            url:
-            `/`,
-        },
-        {
-            header:
-            `Home`,
-            url:
-            `/`,
-        },
-        {
-            header:
-            `Teen`,
-            url:
-            `/`,
-        },
-        {
-            header:
-            `Blockchain`,
-            url:
-            `/`,
-        },
-        {
-            header:
             `Digital Nomad`,
-            url:
-            `/`,
-        },
-        {
-            header:
-            `No Money`,
-            url:
-            `/`,
-        },
-        {
-            header:
-            `Side`,
-            url:
-            `/`
-        },
-        {
-            header:
-            `Summer`,
-            url:
-            `/`,
-        },
-        {
-            header:
-            `Social Media Influencer`,
             url:
             `/`,
         },
@@ -104,9 +56,33 @@ export const checkType = {
         },
         {
             header:
+            `Franchise`,
+            url:
+            `/`,
+        },
+        {
+            header:
+            `No Money`,
+            url:
+            `/`,
+        },
+        {
+            header:
             `Online`,
             url:
             `/`,
+        },
+        {
+            header:
+            `Home`,
+            url:
+            `/`,
+        },
+        {
+            header:
+            `Side`,
+            url:
+            `/`
         },
         {
             header:
@@ -116,7 +92,31 @@ export const checkType = {
         },
         {
             header:
+            `Teen`,
+            url:
+            `/`,
+        },
+        {
+            header:
+            `Summer`,
+            url:
+            `/`,
+        },
+        {
+            header:
             `Unique`,
+            url:
+            `/`,
+        },
+        {
+            header:
+            `Blockchain`,
+            url:
+            `/`,
+        },
+        {
+            header:
+            `Social Media Influencer`,
             url:
             `/`
         },
@@ -188,115 +188,7 @@ buttons: [
     },
     {
         header:
-        `T-shirt Printing`,
-        url:
-        `/`,
-    },
-    {
-        header:
-        `Landscaping`,
-        url:
-        `/`,
-    },
-    {
-        header:
-        `Real Estate`,
-        url:
-        `/`,
-    },
-    {
-        header:
-        `Brewery`,
-        url:
-        `/`,
-    },
-    {
-        header:
-        `Publishing`,
-        url:
-        `/`,
-    },
-    {
-        header:
-        `Event Planner`,
-        url:
-        `/`,
-    },
-    {
-        header:
-        `B&B`,
-        url:
-        `/`,
-    },
-    {
-        header:
-        `Moving Company`,
-        url:
-        `/`,
-    },
-    {
-        header:
-        `Bakery Business`,
-        url:
-        `/`,
-    },
-    {
-        header:
         `Beauty Salon`,
-        url:
-        `/`,
-    },
-    {
-        header:
-        `Cleaning`,
-        url:
-        `/`,
-    },
-    {
-        header:
-        `Landromat`,
-        url:
-        `/`,
-    },
-    {
-        header:
-        `Restaurant`,
-        url:
-        `/`,
-    },
-    {
-        header:
-        `Daycare`,
-        url:
-        `/`,
-    },
-    {
-        header:
-        `Travel Agency`,
-        url:
-        `/`,
-    },
-    {
-        header:
-        `Bookstore`,
-        url:
-        `/`,
-    },
-    {
-        header:
-        `Handyman`,
-        url:
-        `/`,
-    },
-    {
-        header:
-        `Life Coach`,
-        url:
-        `/`,
-    },
-    {
-        header:
-        `Record Label`,
         url:
         `/`,
     },
@@ -308,7 +200,31 @@ buttons: [
     },
     {
         header:
+        `T-shirt Printing`,
+        url:
+        `/`,
+    },
+    {
+        header:
+        `Cleaning`,
+        url:
+        `/`,
+    },
+    {
+        header:
         `Consulting`,
+        url:
+        `/`,
+    },
+    {
+        header:
+        `Landscaping`,
+        url:
+        `/`,
+    },
+    {
+        header:
+        `Laundromat`,
         url:
         `/`,
     },
@@ -320,7 +236,31 @@ buttons: [
     },
     {
         header:
+        `Real Estate`,
+        url:
+        `/`,
+    },
+    {
+        header:
+        `Restaurant`,
+        url:
+        `/`,
+    },
+    {
+        header:
         `Dog Walking`,
+        url:
+        `/`,
+    },
+    {
+        header:
+        `Brewery`,
+        url:
+        `/`,
+    },
+    {
+        header:
+        `Day Care`,
         url:
         `/`,
     },
@@ -332,7 +272,31 @@ buttons: [
     },
     {
         header:
+        `Publishing`,
+        url:
+        `/`,
+    },
+    {
+        header:
+        `Travel Agency`,
+        url:
+        `/`,
+    },
+    {
+        header:
         `Gym`,
+        url:
+        `/`,
+    },
+    {
+        header:
+        `Event Planner`,
+        url:
+        `/`,
+    },
+    {
+        header:
+        `Bookstore`,
         url:
         `/`,
     },
@@ -344,13 +308,49 @@ buttons: [
     },
     {
         header:
+        `B&B`,
+        url:
+        `/`,
+    },
+    {
+        header:
+        `Handyman`,
+        url:
+        `/`,
+    },
+    {
+        header:
         `Botique Clothing`,
         url:
         `/`,
     },
     {
         header:
+        `Moving Company`,
+        url:
+        `/`,
+    },
+    {
+        header:
+        `Life Coach`,
+        url:
+        `/`,
+    },
+    {
+        header:
         `Airbnb Business`,
+        url:
+        `/`,
+    },
+    {
+        header:
+        `Bakery Business`,
+        url:
+        `/`,
+    },
+    {
+        header:
+        `Record Label`,
         url:
         `/`,
     },
