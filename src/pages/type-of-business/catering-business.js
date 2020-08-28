@@ -18,14 +18,8 @@ import Tab3Icon from "../../images/icons/series-is-this-business-for-you.inline.
 import {Heading} from "../../atomic/atoms/typography/heading";
 import {Paragraph} from "../../atomic/atoms/typography/paragraph";
 import CkeckText from "../../components/static-check/text-only";
-import TextCenterLayout from "../../atomic/partials/heading-left";
 import Container from "../../atomic/container";
 import TextBlockWithImage from "../../atomic/molecules/mixed-blocks/text-block-with-absolute-image";
-import IdentifyIcon from "../../images/icons/identify-your-unique-selling-point.inline.svg";
-import LookIcon from "../../images/icons/look-at-who-your-competitors-are-in-the-space.inline.svg"
-import ValidateIcon from "../../images/icons/look-for-market-research.inline.svg"
-import TalkIcon from "../../images/icons/talk-to-clients.inline.svg"
-import InvolvedIcon from "../../images/icons/get-involved-with-business-communities.inline.svg"
 import {color} from "../../components/styles/colors";
 import CountingTextBoxed from "../../atomic/molecules/text-blocks/counting-text-boxed";
 import OvalOrange2Svg from "../../images/oval-orange-2.inline.svg";
@@ -48,6 +42,8 @@ import ColorFulCircleWithTextAndList from "../../atomic/molecules/blocks/colorfu
 import RingSvg from "../../images/rings.inline.svg";
 import Adventages from "../../components/adventages";
 import TypeOfBusiness from "../../atomic/sections/type-of-business/catering-business/type-of-business";
+import ContentCenter from "../../atomic/partials/content-center";
+import Links from "../../atomic/sections/type-of-business/catering-business/links";
 
 const CateringBusiness = () => (
     <Layout>
@@ -220,59 +216,52 @@ const CateringBusiness = () => (
 
                     <div style={{marginBottom: "30px"}}>
                         <Adventages
-                            headline="The number of cleaning companies is growing by around 1.7 percent each year"
+                            headline="Corporate events are some of the biggest opportunities for caterers, followed by weddings and social catering"
                             width="100%"
                         />
                     </div>
 
                     <div style={{marginBottom: "30px"}}>
                         <Adventages
-                            headline="Around 10 percent of cleaning industry revenues come from franchises."
-                            width="100%"
-                        />
-                    </div>
-
-                    <div style={{marginBottom: "48px"}}>
-                        <Adventages
-                            headline="Commercial cleaning contracts are the most reliable type of income for cleaning businesses, with office buildings accounting for nearly a third of such contracts."
+                            headline="Buffet-style catering is most popular, followed by plated meals"
                             width="100%"
                         />
                     </div>
 
                     <Paragraph big>
-                        This all points to the cleaning industry being ripe with new opportunities for focused
-                        entrepreneurs, so now might be the perfect time to dive into starting your cleaning business.
-                        Incfile is here to help you form your cleaning business and understand the ins and outs of
-                        owning a cleaning company.
+                        This makes the catering industry very attractive to aspiring entrepreneurs, but there are big
+                        challenges in opening, running and growing a successful catering business. They demand a great
+                        deal of work, so expect long hours. Add to that the need for a constantly full pipeline,
+                        challenging profit margins and seasonal variation; you will need to work hard to ensure your
+                        business is successful.
+                    </Paragraph>
+                    <Paragraph big>
+                        But for those with the discipline, focus and commitment, running a catering business can be a
+                        hugely satisfying experience for you, your staff and your patrons.
                     </Paragraph>
 
                 </PanelWrapper>
 
                 <PanelWrapper>
                     <Heading size={3}>
-                        Questions to Ask Before You Start a Cleaning Business
+                        What Your Catering Clients Are Looking For
                     </Heading>
-
-                    <Paragraph big style={{fontWeight: "bold", marginTop: "48px"}}>
-                        Is Cleaning Entrepreneurship for You?
-                    </Paragraph>
-
                     <Paragraph big>
-                        Running a cleaning business could be a good option if you:
+                        When it comes to catering, your clients want several things:
                     </Paragraph>
 
                     <div style={{marginBottom: "30px"}}>
                         <Adventages
-                            headline="Have a strong focus on customer service"
-                            text="You'll need to make sure all your employees are great at dealing with demanding clients."
+                            headline="Reliability"
+                            text="If food doesn't show up, there’s normally hell to pay! Clients will demand reliability and trustworthiness — if you can build up a reputation as a friendly, reliable caterer, expect good repeat bookings."
                             width="100%"
                         />
                     </div>
 
                     <div style={{marginBottom: "30px"}}>
                         <Adventages
-                            headline="Don’t mind staff turnover"
-                            text="Cleaning isn’t an extremely well-paid job, so there can be fairly rapid employee turnover."
+                            headline="Friendliness"
+                            text="It’s not just about the food you prepare, it’s also about how that food is served. Many clients will expect you to provide wait staff and servers, and you will need to ensure they have the right approach and attitude."
                             width="100%"
                         />
                     </div>
@@ -287,16 +276,87 @@ const CateringBusiness = () => (
 
                     <div style={{marginBottom: "30px"}}>
                         <Adventages
-                            headline="Are great at training"
-                            text="Your cleaners will need to clean to the very highest quality, so they will need excellent training and materials."
+                            headline="Value for money"
+                            text="Catering is a competitive business, and profit margins can be slim. You will need a rock-solid understanding of all your costs so you can price your services correctly."
                             width="100%"
                         />
                     </div>
 
                     <div style={{marginBottom: "30px"}}>
                         <Adventages
-                            headline="Don’t mind competition"
-                            text="The barrier to entry for cleaning businesses is very low, and there are always new entrants into the marketplace."
+                            headline="Variety"
+                            text="Many clients will look for something a little bit different. If you can provide varied foods at a reasonable price, that’s a great way to stand apart from your competitors."
+                            width="100%"
+                        />
+                    </div>
+
+                    <Heading size={3}>
+                        Questions to Ask Before You Start a Catering Business
+                    </Heading>
+
+                    <Paragraph big style={{fontWeight: "bold"}}>
+                        Is Catering Entrepreneurship for You?
+                    </Paragraph>
+
+                    <Paragraph big>
+                        Running a catering business requires resilience and good planning. You will need to combine
+                        great marketing with an interesting and accessible menu and competitive pricing. You will need
+                        to attract clients in a competitive local marketplace. Then, you must create amazing dishes,
+                        hire staff, get chefs and ensure you always have work coming in.
+                    </Paragraph>
+                    <Paragraph big>
+                        You can’t forget about the administrative side of this business either. Sourcing ingredients,
+                        sorting out disputes, working out profits and more are all required. In fact, being a cater
+                        requires one of the most well-rounded skillsets of any business you might choose to go into.
+                        Along the way, you’ll learn amazing skills, develop great people management techniques and build
+                        huge amounts of experience in creating and running a successful business.
+                    </Paragraph>
+
+                    <Paragraph big style={{fontWeight: "bold"}}>
+                        What Are the Main Skills, Expertise and Experience to Be a Successful Catering Entrepreneur?
+                    </Paragraph>
+
+                    <Paragraph big>
+                        As we mentioned above, running a catering business requires a huge and diverse range of skills.
+                        Among other areas, these skills include:
+                    </Paragraph>
+
+                    <div style={{marginBottom: "30px"}}>
+                        <Adventages
+                            headline="Hiring"
+                            text="Finding, interviewing and hiring great service industry employees for kitchen and food service work."
+                            width="100%"
+                        />
+                    </div>
+
+                    <div style={{marginBottom: "30px"}}>
+                        <Adventages
+                            headline="People management"
+                            text="Dealing with staff, coverage, issues and other people management areas."
+                            width="100%"
+                        />
+                    </div>
+
+                    <div style={{marginBottom: "30px"}}>
+                        <Adventages
+                            headline="Marketing"
+                            text="Promoting a catering business against a competitive field. Local marketing expertise is essential."
+                            width="100%"
+                        />
+                    </div>
+
+                    <div style={{marginBottom: "30px"}}>
+                        <Adventages
+                            headline="Meal design"
+                            text="Working with chefs to create innovative meals, source ingredients and create reasonable profit margins."
+                            width="100%"
+                        />
+                    </div>
+
+                    <div style={{marginBottom: "30px"}}>
+                        <Adventages
+                            headline="Kitchen creation"
+                            text="Setting up the kitchen in the first place, which includes finding equipment, furniture, fixtures and fittings."
                             width="100%"
                         />
                     </div>
@@ -304,199 +364,62 @@ const CateringBusiness = () => (
                     <div style={{marginBottom: "30px"}}>
                         <Adventages
                             headline="Operational management"
-                            text="Ensuring customers are served well and beauty treatments are provided to the standards you expect"
+                            text="Ensuring clients are treated well, orders are dealt with promptly and food is prepared to the standards you expect."
                             width="100%"
                         />
                     </div>
 
-                    <div style={{marginBottom: "30px"}}>
+                    <div style={{marginBottom: "48px"}}>
                         <Adventages
-                            headline="Enjoy dealing with people"
-                            text="Cleaning is a very people-focused business, so you will constantly be interacting with customers and employees."
+                            headline="Business administration"
+                            text="Sorting out profits, payroll, financial management, accounting and all the other areas that go into running any successful business."
                             width="100%"
                         />
                     </div>
 
+
                     <Paragraph big style={{fontWeight: "bold"}}>
-                        What Are the Main Challenges for a Cleaning Entrepreneur?
+                        Is Catering Entrepreneurship for You?
                     </Paragraph>
 
                     <Paragraph big>
-                        Aside from intense competition and employee turnover, the main challenge for a cleaning
-                        entrepreneur will be finding new customers and keeping existing ones happy. You’ll also need a
-                        rock-solid understanding of pricing and business finances — if you’re paying other people, your
-                        margins will likely be very thin.
+                        There are several major challenges for any catering business owner. These start with competition
+                        — your local area only has a certain number of clients, and you’re likely competing with a few
+                        other local businesses. Although you will build up a good reputation over time, strong marketing
+                        is essential in attracting clients to your business.
                     </Paragraph>
-
-                    <Paragraph big style={{fontWeight: "bold"}}>
-                        What Does a Day in the Life of a Cleaning Entrepreneur Look Like?
+                    <Paragraph big>
+                        Another major issue for catering owners is financial management and making a profit. The vast
+                        majority of revenues you receive from patrons will go toward food ingredient costs (27-30
+                        percent), staff salaries and wages (20-25 percent), occupancy costs (5-10 percent for utilities,
+                        rent, etc.) and other costs. After all expenses are taken into account, overall profit margins
+                        typically clock in at around 10 percent, compared to the average restaurant profit margin that
+                        runs between 2 and 6 percent.
                     </Paragraph>
 
                     <Paragraph big>
-                        On any given day you will be:
+                        Staff management also comes with is own list of challenges. From unexpected absenteeism to
+                        interpersonal conflicts, juggling staffing priorities will take up a lot of your time!
                     </Paragraph>
 
-                    <CountingTextBoxed number={1}>
-                        <Paragraph bottomMargin={0}>
-                            Scheduling appointments for cleaning
-                        </Paragraph>
-                    </CountingTextBoxed>
-
-                    <CountingTextBoxed number={2}>
-                        <Paragraph bottomMargin={0}>
-                            Negotiating contracts and setting rates
-                        </Paragraph>
-                    </CountingTextBoxed>
-
-                    <CountingTextBoxed number={3}>
-                        <Paragraph bottomMargin={0}>
-                            Dealing with employees
-                        </Paragraph>
-                    </CountingTextBoxed>
-
-                    <CountingTextBoxed number={4}>
-                        <Paragraph bottomMargin={0}>
-                            Ordering cleaning supplies
-                        </Paragraph>
-                    </CountingTextBoxed>
-
-                    <CountingTextBoxed number={5}>
-                        <Paragraph bottomMargin={0}>
-                            Planning out optimal routes
-                        </Paragraph>
-                    </CountingTextBoxed>
-
-                    <CountingTextBoxed number={6}>
-                        <Paragraph bottomMargin={0}>
-                            Developing training on cleaning and customer service
-                        </Paragraph>
-                    </CountingTextBoxed>
-
-                    <CountingTextBoxed number={7}>
-                        <Paragraph bottomMargin={0}>
-                            Collecting payments and managing finances
-                        </Paragraph>
-                    </CountingTextBoxed>
-
-                    <CountingTextBoxed number={8}>
-                        <Paragraph bottomMargin={0}>
-                            ...and much more
-                        </Paragraph>
-                    </CountingTextBoxed>
+                    <Paragraph big>
+                        No two days are the same for a catering business owner, but all those days will be long. From
+                        working out menus, training staff, marketing and administration in the mornings through
+                        delivering food and providing services, you can expect to start work before 8 a.m. and not
+                        finish until late. If you open a catering business, you need understanding family and friends
+                        because they will not be seeing much of you.
+                    </Paragraph>
                 </PanelWrapper>
             </CollapseWrapper>
         </TabsSection>
 
         <TypeOfBusiness/>
 
-        <BlueContainer>
-            <Container>
-                <CenterBox>
-                    <TextCenterLayout headline="Plan Your Cleaning Business"/>
-                    <Paragraph big>
-                        Before you start your business, there are a few key areas you need to focus on. You will need to
-                        figure out whether there’s a demand for your cleaning business services, consider potential
-                        benefits and pitfalls, understand how your business finances might look and ensure everything is
-                        in order.
-                    </Paragraph>
-
-                    <Heading size={3} style={{marginTop: "80px"}}>
-                        Do Market Research and Validate Your Cleaning Products and Services
-                    </Heading>
-
-                    <Paragraph big>
-                        Before you launch your cleaning business, you need to understand if there’s a demand for what
-                        you’re selling. That means carrying out market research and “validating” your services. Here’s
-                        how to go about it:
-                    </Paragraph>
-                </CenterBox>
-
-                <GridSectionList>
-                    <TextBlockWithImage SvgImage={IdentifyIcon} imageBackgroundColor={color.babyblue2}
-                                        imageShadowColor={color.babyblue2}>
-                        <Heading size={4}>
-                            Identify your business’s unique selling points (USPs)
-                        </Heading>
-                        <Paragraph bottomPadding={0} bottomMargin={0}>
-                            These are the areas that will set you apart from competitors and encourage customers to come
-                            to you. You might have better pricing, a higher-quality service, faster delivery or some
-                            other special feature. Green and eco-based cleaning are becoming increasingly popular, for
-                            example.
-                        </Paragraph>
-                    </TextBlockWithImage>
-
-                    <TextBlockWithImage SvgImage={LookIcon} imageBackgroundColor={color.green2}
-                                        imageShadowColor={color.green2}>
-                        <Heading size={4}>
-                            Consider who your competitors are
-                        </Heading>
-                        <Paragraph bottomPadding={0} bottomMargin={0}>
-                            Having competitors is a good thing as it shows there’s a market for your cleaning services.
-                            Low barriers to entry mean there is typically lots of competition for cleaners.
-                        </Paragraph>
-                    </TextBlockWithImage>
-
-                    <TextBlockWithImage SvgImage={InvolvedIcon} imageBackgroundColor={color.red2}
-                                        imageShadowColor={color.red2}>
-                        <Heading size={4}>
-                            Get involved with business communities and discussion groups
-                        </Heading>
-                        <Paragraph bottomPadding={0} bottomMargin={0}>
-                            Ask questions about cleaning businesses. You may even be able to find some clients there!
-                        </Paragraph>
-                    </TextBlockWithImage>
-
-                    <TextBlockWithImage SvgImage={ValidateIcon} imageBackgroundColor={color.orange2}
-                                        imageShadowColor={color.orange2}>
-                        <Heading size={4}>
-                            Look for market research reports for cleaning businesses
-                        </Heading>
-                        <Paragraph bottomPadding={0} bottomMargin={0}>
-                            Because cleaning businesses operate in a very localized market, you might want to look at
-                            your specific area. These reports don't have to just be about cleaning businesses; if you’re
-                            after commercial cleaning clients, check commercial activity in your region, for example.
-                        </Paragraph>
-                    </TextBlockWithImage>
-
-                    <TextBlockWithImage SvgImage={TalkIcon} imageBackgroundColor={color.purple2}
-                                        imageShadowColor={color.purple2}>
-                        <Heading size={4}>
-                            Talk to clients
-                        </Heading>
-                        <Paragraph bottomPadding={0} bottomMargin={0}>
-                            Speak with potential customers to understand what they want from your cleaning services.
-                            This is especially important if you’re going into a specialized area.
-                        </Paragraph>
-                    </TextBlockWithImage>
-
-                </GridSectionList>
-
-                <CenterBox>
-                    <Heading size={3}>
-                        Understand Your Cleaning Business Model and Financial Projections
-                    </Heading>
-                    <Paragraph big>
-                        All businesses need a business model, which will lay out the way you will generate sales,
-                        provide services and make money. Think about your business model now, because it’s better to
-                        have that in place so you can start acquiring customers and generating revenue from day one.
-                    </Paragraph>
-                    <Paragraph big>
-                        You will also need to look at financial projections for your cleaning business. What are your
-                        expected sales and revenues? What is your profitability? How much money will you keep in the
-                        business to grow it? How much will you pay yourself and others? If you can, try to plan your
-                        revenue out for the next month, three months, year and two years. Margins in the cleaning
-                        business are slim, so plan with that in mind.
-                    </Paragraph>
-
-                </CenterBox>
-            </Container>
-        </BlueContainer>
-
         <SimpleSection>
             <Container>
                 <CenterBox>
                     <Heading>
-                        Write a Business Plan for Your Cleaning Business
+                        Write a Business Plan for Your Catering Business
                     </Heading>
 
                     <Paragraph big>
@@ -575,10 +498,10 @@ const CateringBusiness = () => (
                 <BusinessOwnerResponsibilities>
                     <ImageContent image="unique-business-2" paddingTop="60">
                         <Heading size={4} style={{fontSize: "24px"}}>
-                            Choose the Right Business Structure and Register Your Cleaning Business
+                            Choose the Right Business Structure and Register Your Catering Business
                         </Heading>
                         <Paragraph big>
-                            Now that you have all the background information for your cleaning business, it’s time to
+                            Now that you have all the background information for your catering business, it’s time to
                             make it into a reality. That starts by choosing the right structure or “legal entity” for
                             your business. In the U.S., there are four main business structures. They are:
                         </Paragraph>
@@ -606,9 +529,9 @@ const CateringBusiness = () => (
                             </Paragraph>
 
                             <Paragraph big>
-                                This is the "default" business structure and is what your business will be if you decide
-                                not to create a more formal structure. We don't recommend this type of business as it
-                                doesn't give you the legal protections you need.
+                                This is the "default" business structure and is what your influencer business will be if
+                                you decide not to create a more formal structure. We don't recommend this type of
+                                business as it doesn't give you the legal protections you need.
                             </Paragraph>
                         </TextBlockWithImage>
 
@@ -737,21 +660,30 @@ const CateringBusiness = () => (
                             does vary from state to state, but we’ve got you covered, wherever you are.
                         </Paragraph>
 
-                        <Heading size={3}>
-                            Special Considerations for Setting up a Cleaning Business Entity
-                        </Heading>
-
-                        <Paragraph big mixed={true}>
-                            Liability protection and insurance will both be very important for a cleaning business.
-                            Although people are careful, accidents can happen, so limiting liability and having good
-                            protections in place will be essential.
-                        </Paragraph>
-
                         <Button theme="primary48" width="365px" arrow>
                             Start your business with us, today!
                         </Button>
                     </ImageContent>
                 </BusinessOwnerResponsibilities>
+
+                <ContentCenter contentWidth={769} >
+                    <Heading size={3} style={{fontSize: "40px", marginTop: "100px"}}>
+                        Special Considerations for Setting up a Cleaning Business Entity
+                    </Heading>
+
+                    <Paragraph big mixed={true}>
+                        For more information on the advantages and disadvantages of different types of businesses,
+                        please see our in-depth guide. If you’ve still got questions, we’ve answered them to help you
+                        choose the right business structure.
+                    </Paragraph>
+                    <Paragraph big mixed={true}>
+                        In almost every case, the right business entity for a caterer is going to be an LLC. It provides
+                        you with liability protection, is easy to set up and run, has low administrative overhead and
+                        can be tax advantageous. We’ve got a complete guide to everything you need to do here, and we
+                        can set one up for your catering business. LLC formation does vary from state to state, but
+                        we’ve got you covered, wherever you are.
+                    </Paragraph>
+                </ContentCenter>
             </Container>
         </OrangeContainer>
 
@@ -759,7 +691,7 @@ const CateringBusiness = () => (
 
         <OrderNow/>
 
-        <HireEmployees/>
+        <Links />
 
         <UsefulTools style={{paddingBottom: "200px"}} toolsList={toolsList.tools} headlineText={toolsList.headlineText}
                      description={toolsList.description}/>
@@ -767,13 +699,7 @@ const CateringBusiness = () => (
         <Conclusion to="/" buttonTitle="Start your Etsy Business with us, today">
             <Heading size={3} style={{fontSize: "40px"}}>Conclusion</Heading>
             <Paragraph big>
-                A cleaning business can be a very solid choice for a first-time entrepreneur. The combination of a low
-                barrier to entry, focus on strong customer service and the need for excellent interpersonal skills makes
-                it an ideal choice.
-            </Paragraph>
-            <Paragraph big>
-                Although there’s lot of competition and plenty of demanding clients, a cleaning business that's run well
-                can generate excellent revenue. When you’re ready to start up your cleaning business.
+                If you want to start a business that’s going to be a challenge but also bring a huge amount of pleasure and reward, then running a catering company could be right for you. The food you create and the trust you build will help set you apart in the minds of your clients and bring joy into people’s lives.
             </Paragraph>
         </Conclusion>
     </Layout>

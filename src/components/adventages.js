@@ -23,7 +23,7 @@ const Box = styled.div`
     flex-direction: column;
     align-items: center;
     height: 100%;
-    width: 100%;
+    width: ${props => props.width};
     max-width: ${props => props.width};
     padding: 48px 40px 40px;
     position: relative;
@@ -154,7 +154,7 @@ const Adventages = ({className, headline, text, colorStroke, circleBackgroundCol
 }
 
 const ImageWrapper = styled.div`
-    width: 150px;
+    width: 128px;
     margin: 0 auto 30px;
 `;
 

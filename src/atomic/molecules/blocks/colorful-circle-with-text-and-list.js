@@ -9,9 +9,11 @@ import {Paragraph} from "../../atoms/typography/paragraph";
 
 const ColorFulCircleWithTextAndList = ({CircleSVG, title, list, withBg}) => (
     <Wrapper withBg={withBg}>
-        <Title>
-            {title}
-        </Title>
+        {title &&
+            <Title>
+                {title}
+            </Title>
+        }
         <Content>
             <Circle>
                 <CircleSVG />
@@ -34,7 +36,7 @@ const ColorFulCircleWithTextAndList = ({CircleSVG, title, list, withBg}) => (
 
 ColorFulCircleWithTextAndList.propTypes = {
     withBg: PropTypes.bool,
-    title: PropTypes.string.isRequired,
+    title: PropTypes.string,
     list: PropTypes.array.isRequired
 };
 
