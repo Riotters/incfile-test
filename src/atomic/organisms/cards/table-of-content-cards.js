@@ -22,7 +22,7 @@ const Wrapper = styled.div`
 `;
 
 const colors = [color.blue3, color.purple3, color.orange3, color.yellow3, color.yellow4, color.purple3, color.babyblue3];
-const icons = ["24-hours", "complete-name"];
+const icons = ["rocket-939", "certificate-305", "business-taxes-8954", "bulb-gear-7881", "game-plan", "display-ads", "measuring-business-success"];
 
 const Cards = ({ className, content }) => {
   return (

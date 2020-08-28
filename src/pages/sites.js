@@ -68,7 +68,8 @@ const ComponentsPage = () => (
         <Link to="/learning-center-entity/annual-report">Annual Report Due Date (WIP)</Link>
         <Link to="/learning-center-entity/business-license-req">Business License Requirements (WIP)</Link>
         <Link to="/learning-center-entity/start-a-business">Business Startup Guides (no details)</Link>
-        <Link to="/learning-center-entity/guide-to-start">Guide to start (no details)</Link>
+        <Link to="/learning-center-entity/guide-to-start">Guide To Start (no details)</Link>
+        <Link to="/learning-center-entity/registered-agents">Registered Agents (WIP)</Link>
         <h2>Blog</h2>
         <Link to="/blog">Blog (no API)</Link>
         <Link to="/article">Article (no API)</Link>

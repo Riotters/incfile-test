@@ -2,15 +2,16 @@ import React from "react";
 import styled from "styled-components";
 import CircleIconText from "../../molecules/circles/circle-icon-text";
 import { color } from "../../atoms/styles/colors";
-import BulbSVG from "../../../images/icons/bulb.inline.svg";
-import BrushSVG from "../../../images/icons/brush.inline.svg";
-import PenSVG from "../../../images/icons/pen.inline.svg";
+import ServiceSVG from "../../../images/icons/agent-for-service-of-process.inline.svg";
+import StatuorySVG from "../../../images/icons/statuory-agent.inline.svg";
+import CommercialSVG from "../../../images/icons/commercial-registered-agent.inline.svg";
+import ResidentSVG from "../../../images/icons/resident-agent.inline.svg";
 
 const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 784px;
+    max-width: 1044px;
     margin-top: 72px;
     margin-bottom: 88px;
     
@@ -37,10 +38,10 @@ const Wrapper = styled.div`
     }
 `
 
-const circleIcons = [BulbSVG, BrushSVG, PenSVG];
-const circleColors = [color.orange2, color.blue2, color.babyblue2];
+const circleIcons = [ServiceSVG, StatuorySVG, CommercialSVG, ResidentSVG];
+const circleColors = [color.orange2, color.green2, color.purple2, color.red2];
 
-const OtherTermsCircles = ({ className, content }) => {
+const OtherNamesCircles = ({ className, content }) => {
   return (
     <Wrapper className={className}>
         {content.map((circle, i) => (
@@ -50,4 +51,4 @@ const OtherTermsCircles = ({ className, content }) => {
   )
 }
 
-export default OtherTermsCircles;
+export default OtherNamesCircles;

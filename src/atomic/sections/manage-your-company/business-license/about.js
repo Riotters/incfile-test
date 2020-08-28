@@ -32,7 +32,7 @@ const AboutSection = ({ className, content }) => (
         <Oval className="oval" height="570" width="570" y="-40">
             <OvalSVG />
         </Oval>
-        <ImageContent image="registered-agents">
+        <ImageContent image="registered-agents-about-9001">
             <Heading size={3} bottomMargin="24">{content.header}</Heading>
             <Paragraph big bottomMargin="40">{content.text}</Paragraph>
             <Paragraph big bottomMargin="40">{content.text2}</Paragraph>
