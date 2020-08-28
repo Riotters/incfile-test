@@ -19,6 +19,7 @@ const Wrapper = styled.div`
   z-index: 9999;
   border-bottom: 1px solid rgba(244, 244, 244, 0.9);
 `;
+
 const Logo = styled.div`
   height: 24px;
   padding-right: 25px;
@@ -45,7 +46,7 @@ const MobileWrapper = styled.nav`
     align-items: center;
     position: static;
     flex-direction: row;
-    height: 80px;
+    height: 79px;
     width: auto;
     flex-grow: 1;
     padding: 0;

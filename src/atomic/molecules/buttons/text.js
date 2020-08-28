@@ -8,10 +8,11 @@ const Wrapper = styled(Link)`
   display: flex;
   align-items: center;
   text-decoration: none;
-  max-width: ${props => props.maxWidth ? `${props.maxWidth}px` : ""} !important;
-  padding-bottom: ${props => props.bottomPadding ? `${props.bottomPadding}px` : ""} !important;
-  margin-bottom: ${props => props.bottomMargin}px !important;
-  
+  max-width: ${(props) => (props.maxWidth ? `${props.maxWidth}px` : "")} !important;
+  padding-bottom: ${(props) => (props.bottomPadding ? `${props.bottomPadding}px` : "")} !important;
+  margin-top: ${(props) => (props.topMargin ? `${props.topMargin}px` : "")};
+  margin-bottom: ${(props) => props.bottomMargin}px !important;
+
   span {
     transition: color 0.3s ease;
     font-weight: 600;
@@ -26,7 +27,7 @@ const Wrapper = styled(Link)`
       }
     }
   }
-`
+`;
 
 const Arrow = styled.div`
   display: flex;
@@ -42,25 +43,25 @@ const Arrow = styled.div`
       fill: #5088fd;
     }
   }
-`
+`;
 
-const ArrowLink = ({ className, content, maxWidth, bottomPadding, bottomMargin }) => (
-  <Wrapper to={content.url} className={className} maxWidth={maxWidth} bottomPadding={bottomPadding} bottomMargin={bottomMargin}>
+const ArrowLink = ({ className, content, maxWidth, bottomPadding, bottomMargin, topMargin }) => (
+  <Wrapper to={content.url} className={className} maxWidth={maxWidth} bottomPadding={bottomPadding} bottomMargin={bottomMargin} topMargin={topMargin}>
     <Arrow>
       <ArrowSVG />
     </Arrow>
     <span>{content.text}</span>
   </Wrapper>
-)
+);
 
-export default ArrowLink
+export default ArrowLink;
 
 ArrowLink.propTypes = {
   maxWidth: PropTypes.number,
   bottomPadding: PropTypes.number,
-  bottomMargin: PropTypes.number
-}
+  bottomMargin: PropTypes.number,
+};
 
 ArrowLink.defaultProps = {
-  bottomMargin: 32
-}
+  bottomMargin: 32,
+};

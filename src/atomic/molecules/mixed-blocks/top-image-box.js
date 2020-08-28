@@ -5,6 +5,7 @@ import { shadow } from "../../atoms/styles/shadows";
 import Image from "../../atoms/image/image";
 import { Heading } from "../../atoms/typography/heading";
 import { Paragraph } from "../../atoms/typography/paragraph";
+import ArrowLink from "../buttons/text";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -31,8 +32,8 @@ const Wrapper = styled.div`
     }
   }
 
-  h4 {
-    padding: 24px 24px 16px;
+  .content {
+    padding: 24px 24px 0;
   }
 
   p,
@@ -43,7 +44,6 @@ const Wrapper = styled.div`
 
   p {
     color: ${color.grey1};
-    padding: 0 24px;
   }
 `;
 
@@ -52,10 +52,11 @@ const TopImageBox = ({ className, image, color, content, noShadow }) => {
     <Wrapper className={className} color={color} noShadow={noShadow}>
       <div className="top">{image && <Image filename={image} />}</div>
       <div className="content">
-        <Heading size="4" bottomMargin="0">
+        <Heading size="4" bottomMargin="16">
           {content.header}
         </Heading>
-        <Paragraph>{content.text}</Paragraph>
+        <Paragraph bottomMargin="0">{content.text}</Paragraph>
+        {content.link && <ArrowLink content={content.link} bottomMargin="0" topMargin="24" />}
       </div>
     </Wrapper>
   );
