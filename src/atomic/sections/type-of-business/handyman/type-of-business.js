@@ -34,7 +34,7 @@ const TypeOfBusiness = () => (
                     </CurveWrapper>
                     {adventages.items.map(item => (
                         <Adventages
-                            style={{textAlign: "center"}}
+                            style={{textAlign: "left"}}
                             url={item.url}
                             urlText={item.urlText}
                             circleText={item.circleText}
@@ -47,13 +47,13 @@ const TypeOfBusiness = () => (
                         />
                     ))}
                     <AdventagesWithLongText
-                        style={{textAlign: "center"}}
+                        style={{textAlign: "left"}}
                         circleText={8}
                         title="Other Areas"
                         circlePosition="center"
                         circleBackgroundColor={color.blue1}
                         circleBackgroundShadow={shadow.blue1}
-                        imageName="franchise-2"
+                        imageName="other-areas"
                     >
                         <Paragraph mixed={true}>
                             We’ve covered some of the more popular jobs for the home handyman above, but there are plenty of other choices. These include:

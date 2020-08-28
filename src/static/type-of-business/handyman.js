@@ -189,37 +189,37 @@ export const adventages = {
     items: [
         {
             circleText: 1,
-            imageName: "food-truck",
+            imageName: "general-repairs",
             headline: "General Repairs and Maintenance",
             text: "Perfect for the all-around handyman, this type of work is mainly about repairing and maintaining. You might be repainting brickwork, fixing flooring, touching up paint or completing similar tasks. It’s certainly a good starting point if you don’t have deep, specialized experience in other areas, and it’s in high demand."
         },
         {
             circleText: 2,
-            imageName: "private-event-caterers",
+            imageName: "painting-and-decorating",
             headline: "Painting and Decorating",
             text: "From new homeowners who want to customize their space to established clients looking for a refresh, painting and decorating is a popular choice. It’s also an area that’s relatively easy to get into, as you don’t need special skills or certifications — just an eye for detail and a steady hand."
         },
         {
             circleText: 3,
-            imageName: "leadership-coaching",
+            imageName: "plumbing-and-hvac",
             headline: "Plumbing and HVAC",
             text: "Depending on the type of work you do, you may need formal tradesman qualifications to become a plumber. These types of vocations are among the best paid, and there’s certainly plenty of demand (whether you’re working on water tanks, heating, cooling, drainage, installation or something else)."
         },
         {
             circleText: 4,
-            imageName: "partnership-caterers",
+            imageName: "electrician",
             headline: "Electrician",
             text: "Another formalized tradesman vocation, electricians are also in high demand. You'll also have an advantage of specializing in areas like whole-house rewiring, lighting, data cabling, repairs and more. You'll need licensing and training to perform this work."
         },
         {
             circleText: 5,
-            imageName: "specialist",
+            imageName: "landscaping",
             headline: "Landscaping and Yard Maintenance",
             text: "A yard is just an external room, but sometimes it needs even more work! From routine maintenance like mowing, weeding, pruning and mulching to entire landscape makeovers, there are plenty of opportunities for good landscapers."
         },
         {
             circleText: 6,
-            imageName: "specialist",
+            imageName: "kitchen-cabinets-carpentry",
             headline: "Kitchens, Cabinets and Carpentry",
             text: "If you’re good with wood, then installing kitchens, building cabinets, hanging doors, putting up shelves and doing trim work could be a great choice. This also gives you plenty of options for the size of job you want to take on. Fitting out a new kitchen might take a week or more, and you could intersperse that with much smaller jobs to fill out your time."
         },
