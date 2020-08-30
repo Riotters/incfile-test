@@ -12,8 +12,8 @@ const Flex = styled.div`
   flex-direction: column;
   width: 100%;
 
-  @media(min-width: 992px) {
-      flex-direction: row;
+  @media (min-width: 992px) {
+    flex-direction: row;
   }
 `;
 
@@ -21,10 +21,10 @@ const Content = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
 
   @media (min-width: 992px) {
-    width: 52%;
-    max-width: 600px;
+    max-width: ${(props) => (props.contentWidth ? props.contentWidth : "600")}px;
   }
 
   h2 {
@@ -37,8 +37,8 @@ const Objectbox = styled.div`
   padding-right: 0;
 
   @media (min-width: 992px) {
-    width: 48%;
-    padding-right: 100px;
+    max-width: ${(props) => (props.objectWidth ? `${props.objectWidth}px` : "")};
+    padding-right: ${(props) => (props.objectPadding ? `${props.objectPadding}` : "100")}px;
   }
 
   .card {
@@ -58,19 +58,16 @@ const Sticky = styled.div`
   }
 `;
 
-const LeftContentRightObject = ({ children, className, object, headlineWidth, textWidth }) => {
-    
+const LeftContentRightObject = ({ children, className, object, objectWidth, objectPadding, contentWidth, headlineWidth, textWidth }) => {
   return (
     <Wrapper className={className}>
       <Container>
         <Flex>
-          <Objectbox>
-            <Sticky>
-              { object }
-            </Sticky>
+          <Objectbox objectWidth={objectWidth} objectPadding={objectPadding}>
+            <Sticky>{object}</Sticky>
           </Objectbox>
-          <Content headlineWidth={headlineWidth} textWidth={textWidth}>
-            { children }
+          <Content contentWidth={contentWidth} headlineWidth={headlineWidth} textWidth={textWidth}>
+            {children}
           </Content>
         </Flex>
       </Container>

@@ -5,18 +5,18 @@ import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
 import Button from "../../atomic/molecules/buttons/button";
 //Sections
 import Top from "../../atomic/partials/top";
-import Help from "../../atomic/sections/manage-your-company/annual-report/help"
-import About from "../../atomic/sections/learning-center-entity/help-center-article/about"
-import Related from "../../atomic/sections/learning-center-entity/help-center-article/related"
-import Categories from "../../atomic/sections/learning-center-entity/help-center-article/categories"
-import Service from "../../atomic/sections/learning-center-entity/help-center/service"
-import Tools from "../../atomic/sections/learning-center-entity/help-center-article/tools"
+import Help from "../../atomic/sections/manage-your-company/annual-report/help";
+import About from "../../atomic/sections/learning-center-entity/help-center-article/about";
+import Related from "../../atomic/sections/learning-center-entity/help-center-article/related";
+import Categories from "../../atomic/sections/learning-center-entity/help-center-article/categories";
+import Service from "../../atomic/sections/learning-center-entity/help-center/service";
+import Tools from "../../atomic/sections/learning-center-entity/help-center-article/tools";
 import Benefits from "../../components/partials/sections/benefits";
 import Articles from "../../components/partials/sections/articles";
-import Rocket from "../../atomic/sections/review-entity-type/c-corporation/rocket"
+import Rocket from "../../atomic/sections/review-entity-type/c-corporation/rocket";
 import Searchbar from "../../atomic/molecules/form/searchbar";
 //Texts
-import { top, about, related, faq, rocket, categories, service, tools } from "../../static/learning-center-enitity/help-center-article"
+import { top, about, related, faq, rocket, categories, service, tools } from "../../static/learning-center-entity/help-center-article";
 
 const HelpCenter = () => (
   <Layout>

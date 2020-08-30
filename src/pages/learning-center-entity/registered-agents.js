@@ -18,7 +18,7 @@ import BusinessStructure from "../../atomic/sections/learning-center-entity/star
 import Rocket from "../../atomic/sections/review-entity-type/c-corporation/rocket";
 import Searchbar from "../../atomic/molecules/form/searchbar";
 //Texts
-import { top, about, whatAgentDo, otherNames, need } from "../../static/learning-center-enitity/registered-agents";
+import { top, about, whatAgentDo, otherNames, need } from "../../static/learning-center-entity/registered-agents";
 
 const RegisteredAgents = () => (
   <Layout>

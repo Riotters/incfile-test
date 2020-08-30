@@ -15,7 +15,7 @@ import BusinessStructure from "../../atomic/sections/learning-center-entity/star
 import Rocket from "../../atomic/sections/review-entity-type/c-corporation/rocket";
 import Searchbar from "../../atomic/molecules/form/searchbar";
 //Texts
-import { top, about, checkType, businessStructure, launchBusiness } from "../../static/learning-center-enitity/start-a-business";
+import { top, about, checkType, businessStructure, launchBusiness } from "../../static/learning-center-entity/start-a-business";
 
 const HelpCenter = () => (
   <Layout>

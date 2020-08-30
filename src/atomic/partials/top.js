@@ -21,7 +21,7 @@ const switch1 = (ovalColor) => {
       return "#d2aafb";
     }
     case "yellow": {
-      return color.yellow1;
+      return "#ffc95b";
     }
     case "green": {
       return "#97e0c7";
@@ -42,7 +42,7 @@ const switch1 = (ovalColor) => {
       return "#d2aafb";
     }
     case "love": {
-      return "#fdabab"
+      return "#fdabab";
     }
     default:
       return "";
@@ -64,7 +64,7 @@ const switch2 = (ovalColor) => {
       return "#ede0fa";
     }
     case "yellow": {
-      return color.yellow2;
+      return "#fff5d4";
     }
     case "green": {
       return "#d5f3e8";
@@ -85,7 +85,7 @@ const switch2 = (ovalColor) => {
       return "#ede0fa";
     }
     case "love": {
-      return "#f9e0e0"
+      return "#f9e0e0";
     }
     default:
       return "";
@@ -166,7 +166,7 @@ const TextContainer = styled.div`
   padding-top: 32px;
 
   @media (min-width: 992px) {
-    width: 50%;
+    width: ${(props) => (props.contentWidth ? props.contentWidth : "50")}%;
     align-items: flex-start;
   }
 
@@ -195,7 +195,7 @@ const TextContainer = styled.div`
 
     @media (min-width: 992px) {
       text-align: left;
-      max-width: ${(props) => (props.headlineWidth ? props.headlineWidth : "480")}px;
+      max-width: ${(props) => (props.textWidth ? props.textWidth : props.headlineWidth ? props.headlineWidth : "480")}px;
     }
   }
 `;
@@ -222,7 +222,7 @@ const ImageContainer = styled.div`
   }
 `;
 
-const Top = ({ children, imageName, imageAlt, headlineWidth, ovalColor, ...rest }) => (
+const Top = ({ children, imageName, imageAlt, contentWidth, headlineWidth, textWidth, ovalColor, ...rest }) => (
   <Wrapper {...rest}>
     <VisibilitySensor partialVisibility once>
       {({ isVisible }) => (
@@ -238,7 +238,7 @@ const Top = ({ children, imageName, imageAlt, headlineWidth, ovalColor, ...rest 
       <Content>
         <VisibilitySensor partialVisibility once>
           {({ isVisible }) => (
-            <TextContainer className={isVisible ? "slideRight enter" : "slideRight"} headlineWidth={headlineWidth}>
+            <TextContainer className={isVisible ? "slideRight enter" : "slideRight"} contentWidth={contentWidth} headlineWidth={headlineWidth} textWidth={textWidth}>
               {children}
             </TextContainer>
           )}
