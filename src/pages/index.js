@@ -73,6 +73,7 @@ const IndexPage = () => (
         <Link to="/learning-center-entity/sales-tax-calculator">Sales Tax Calculator (WIP)</Link>
         <Link to="/learning-center-entity/state-filing-times">State Filing Times (no details)</Link>
         <Link to="/learning-center-entity/state-information-california">State Information California (WIP)</Link>
+        <Link to="/learning-center-entity/ongoing-filing-requirements">Ongoing Filing Requirements (WIP)</Link>
         <h2>Other</h2>
         <Link to="/other/form-an-llc">Form An LLC (WIP)</Link>
         <h2>Blog</h2>
