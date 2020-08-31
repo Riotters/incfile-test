@@ -53,8 +53,9 @@ const Wrapper = styled.div`
 
 const Circle = styled.div`
     position: relative;
-    max-width: 270px;
-    max-height: 270px;
+    width: 270px;
+    margin-left: 44px;
+    margin-right: 48px;
 `
 
 const TextInside = styled.div`

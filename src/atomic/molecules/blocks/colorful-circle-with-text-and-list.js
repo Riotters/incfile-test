@@ -1,16 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types"
 import styled from "styled-components";
-
 import {color} from "../../atoms/styles/colors";
 import {shadow} from "../../atoms/styles/shadows";
 import CircleSvg from "../../../images/circle-percentage.inline.svg";
 import {Paragraph} from "../../atoms/typography/paragraph";
 
-const ColorFulCircleWithTextAndList = ({CircleSVG, title, list, withBg}) => (
+const ColorFulCircleWithTextAndList = ({CircleSVG, title, list, withBg, titleWidth}) => (
     <Wrapper withBg={withBg}>
         {title &&
-            <Title>
+            <Title width={titleWidth}>
                 {title}
             </Title>
         }
@@ -102,7 +101,7 @@ const Title = styled.div`
     font-size: 20px;
     color: ${color.black};
     text-align: center;
-    max-width: 300px;
+    max-width: ${props => (props.width) ? props.width : "300px"};
     margin: 0px auto 30px;
 `;
 
