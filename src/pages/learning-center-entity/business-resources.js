@@ -10,9 +10,10 @@ import RatingBlock from "../../atomic/molecules/blocks/rating-block";
 import Top from "../../atomic/partials/top";
 import About from "../../atomic/sections/learning-center-entity/business-resources/about";
 import Resources from "../../atomic/sections/learning-center-entity/business-resources/resources";
+import FurtherResources from "../../atomic/sections/learning-center-entity/business-resources/further-resources";
 import Articles from "../../components/partials/sections/articles";
 //Texts
-import { top, about, resources } from "../../static/learning-center-entity/business-resources";
+import { top, about, resources, furtherResources } from "../../static/learning-center-entity/business-resources";
 
 const BusinessResources = () => (
   <Layout>
@@ -27,6 +28,7 @@ const BusinessResources = () => (
     </Top>
     <About content={about} />
     <Resources content={resources} />
+    <FurtherResources content={furtherResources} />
     <Articles />
   </Layout>
 );

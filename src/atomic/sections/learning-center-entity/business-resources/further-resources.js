@@ -14,11 +14,20 @@ import Oval2SVG from "../../../../images/ovals/bottom-left-transparent-blue3.inl
 import CurveSVG from "../../../../images/curves/top-left-bottom-right.inline.svg";
 import CheckBlueSVG from "../../../../images/circle-status-check-blue.inline.svg";
 
-const QuickLinks = styled.section`
+const FutherResources = styled.section`
   position: relative;
   padding-top: 75px;
   padding-bottom: 64px;
-  background-color: ${color.green3};
+
+  &::before {
+    content: '';
+    height: 2166px;
+    width: 100%;
+    background-image: ${gradient.orange3};
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 `;
 
 const Grid = styled.div`
@@ -35,8 +44,8 @@ const Grid = styled.div`
 const colors = [color.blue3, color.purple3, color.orange3, color.yellow3, color.yellow4, color.purple3, color.babyblue3];
 const icons = ["rocket-939", "certificate-305", "business-taxes-8954", "bulb-gear-7881", "game-plan", "display-ads", "measuring-business-success"];
 
-const QuickLinksSection = ({ className, content }) => (
-  <QuickLinks className={className}>
+const FutherResourcesSection = ({ className, content }) => (
+  <FutherResources className={className}>
     <HeadingCenter headline={content.header} headlineWidth="770" text={content.text} />
     <ContentCenter contentWidth="970">
       <Grid>
@@ -45,7 +54,7 @@ const QuickLinksSection = ({ className, content }) => (
         ))}
       </Grid>
     </ContentCenter>
-  </QuickLinks>
+  </FutherResources>
 );
 
-export default QuickLinksSection;
+export default FutherResourcesSection;

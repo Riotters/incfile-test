@@ -112,3 +112,90 @@ export const resources = {
         ],       
     },
 }
+
+export const furtherResources = {
+    header: `Further Business Tools and Resources`,
+    text: `These guides are a great place to start, and we’ve got plenty of other resources on the Incfile website, all created to make it easier to start and run a successful business. Here are some of the business tools you’ll find:`,
+    cards: [
+        {
+            header: `State Filing Times`,
+            text: `Sytate-by-state filing times and prices`,
+            link: {
+                text: `Learn more`,
+                url: `/`,
+            },
+        },
+        {
+            header: `State Filing Times`,
+            text: `Sytate-by-state filing times and prices`,
+            link: {
+                text: `Learn more`,
+                url: `/`,
+            },
+        },
+        {
+            header: `State Filing Times`,
+            text: `Sytate-by-state filing times and prices`,
+            link: {
+                text: `Learn more`,
+                url: `/`,
+            },
+        },
+        {
+            header: `State Filing Times`,
+            text: `Sytate-by-state filing times and prices`,
+            link: {
+                text: `Learn more`,
+                url: `/`,
+            },
+        },
+        {
+            header: `State Filing Times`,
+            text: `Sytate-by-state filing times and prices`,
+            link: {
+                text: `Learn more`,
+                url: `/`,
+            },
+        },
+        {
+            header: `State Filing Times`,
+            text: `Sytate-by-state filing times and prices`,
+            link: {
+                text: `Learn more`,
+                url: `/`,
+            },
+        },
+        {
+            header: `State Filing Times`,
+            text: `Sytate-by-state filing times and prices`,
+            link: {
+                text: `Learn more`,
+                url: `/`,
+            },
+        },
+        {
+            header: `State Filing Times`,
+            text: `Sytate-by-state filing times and prices`,
+            link: {
+                text: `Learn more`,
+                url: `/`,
+            },
+        },
+        {
+            header: `State Filing Times`,
+            text: `Sytate-by-state filing times and prices`,
+            link: {
+                text: `Learn more`,
+                url: `/`,
+            },
+        },
+        {
+            header: `State Filing Times`,
+            text: `Sytate-by-state filing times and prices`,
+            link: {
+                text: `Learn more`,
+                url: `/`,
+            },
+        },
+    ],
+}
