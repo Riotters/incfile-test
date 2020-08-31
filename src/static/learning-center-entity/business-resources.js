@@ -25,111 +25,90 @@ export const about = {
 }
 
 export const resources = {
-    tabs: [`Start a business soon`, `Form a Business Today`],
-    content: [
-        {
-            cards: [
-                {
-                    header: `aaa`,
-                    text: `aaa`,
-                    button: {
-                        text: `Download PDF`,
-                        url: `/`,
+    header: `General Tools and Resources for Creating Your Business`,
+    tabs: {
+        switchers: [`Start a business soon`, `Form a Business Today`],
+        panels: [
+            {
+                cards: [
+                    {
+                        header: `The Complete “Start Your Business Checklist”`,
+                        text: `A clear and comprehensive guide to starting your business the right way.`,
+                        button: {
+                            text: `Download PDF`,
+                            url: `/`,
+                        },
                     },
-                },
-                {
-                    header: `aaa`,
-                    text: `aaa`,
-                    button: {
-                        text: `Download PDF`,
-                        url: `/`,
+                    {
+                        header: `Different Types of Corporate Structures`,
+                        text: `Learn about the four main types of legal business entities—LLCs, S Corporations, C Corporations and nonprofits.`,
+                        button: {
+                            text: `Download PDF`,
+                            url: `/`,
+                        },
                     },
-                },
-            ],
-        },
-        {
-            cards: [
-                {
-                    header: `aaa`,
-                    text: `aaa`,
-                    button: {
-                        text: `Download PDF`,
-                        url: `/`,
+                    {
+                        header: `Why Form a Limited Liability Company?`,
+                        text: `Reasons to form one of the simplest business structures: The Limited Liability Company (LLC).`,
+                        button: {
+                            text: `Download PDF`,
+                            url: `/`,
+                        },
                     },
-                },
-            ],
-        },
-        {
-            cards: [
-                {
-                    header: `aaa`,
-                    text: `aaa`,
-                    button: {
-                        text: `Download PDF`,
-                        url: `/`,
+                    {
+                        header: `What to Do After Forming Your LLC`,
+                        text: `Once you’ve incorporated your LLC, here’s what you need to do to maximize your chances of success.`,
+                        button: {
+                            text: `Download PDF`,
+                            url: `/`,
+                        },
                     },
-                },
-            ],
-        },
-        {
-            cards: [
-                {
-                    header: `aaa`,
-                    text: `aaa`,
-                    button: {
-                        text: `Download PDF`,
-                        url: `/`,
+                    {
+                        header: `How to Start an Amazon Business`,
+                        text: `A complete guide to starting an ecommerce business so you can start selling on Amazon.`,
+                        button: {
+                            text: `Download PDF`,
+                            url: `/`,
+                        },
                     },
-                },
-            ],
-        },
-        {
-            cards: [
-                {
-                    header: `aaa`,
-                    text: `aaa`,
-                    button: {
-                        text: `Download PDF`,
-                        url: `/`,
+                    {
+                        header: `How to Start a Consulting Business`,
+                        text: `Learn about the skills, experience and expertise you need to start a consulting business.`,
+                        button: {
+                            text: `Download PDF`,
+                            url: `/`,
+                        },
                     },
-                },
-            ],
-        },
-        {
-            cards: [
-                {
-                    header: `aaa`,
-                    text: `aaa`,
-                    button: {
-                        text: `Download PDF`,
-                        url: `/`,
+                    {
+                        header: `How to Start a Nonprofit`,
+                        text: `Learn how to create a new business with Nonprofit type.`,
+                        button: {
+                            text: `Download PDF`,
+                            url: `/`,
+                        },
                     },
-                },
-            ],
-        },
-        {
-            cards: [
-                {
-                    header: `aaa`,
-                    text: `aaa`,
-                    button: {
-                        text: `Download PDF`,
-                        url: `/`,
+                    {
+                        header: `Different Types of Corporate Structures`,
+                        text: `Learn about the four main types of legal business entities—LLCs, S Corporations, C Corporations and nonprofits.`,
+                        button: {
+                            text: `Download PDF`,
+                            url: `/`,
+                        },
                     },
-                },
-            ],
-        },
-        {
-            cards: [
-                {
-                    header: `aaa`,
-                    text: `aaa`,
-                    button: {
-                        text: `Download PDF`,
-                        url: `/`,
+                ],
+            },
+            {
+                cards: [
+                    {
+                        header: `aaa`,
+                        text: `aaa`,
+                        button: {
+                            text: `Download PDF`,
+                            url: `/`,
+                        },
                     },
-                },
-            ],
-        },
-    ],
+                ],
+            },
+        ],       
+    },
 }
