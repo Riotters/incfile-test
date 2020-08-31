@@ -16,7 +16,7 @@ import Articles from "../../components/partials/sections/articles";
 import Rocket from "../../atomic/sections/review-entity-type/c-corporation/rocket";
 import Searchbar from "../../atomic/molecules/form/searchbar";
 //Texts
-import { top, about, tableOfContent, needMore } from "../../static/learning-center-enitity/guide-to-start";
+import { top, about, tableOfContent, needMore } from "../../static/learning-center-entity/guide-to-start";
 
 const GuideToStart = () => (
   <Layout>

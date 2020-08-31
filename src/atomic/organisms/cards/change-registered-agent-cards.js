@@ -23,7 +23,7 @@ const Wrapper = styled.div`
 `
 
 const colors = [color.blue3, color.green3, color.orange3, color.blue3, color.red3, color.yellow3, color.orange3, color.babyblue3];
-const icons = ["sign", "cost", "needs", "foreign", "alarm", "doors", "clock-691", "receive"]
+const icons = ["sign-932", "cost-913", "needs-947", "foreign-991", "alarm", "doors", "clock-691", "receive"]
 
 const ChangeRegisteredAgentCards = ({ className, content, paddingTop, paddingBottom }) => {
   return (

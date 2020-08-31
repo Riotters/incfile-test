@@ -19,7 +19,7 @@ const Wrapper = styled.ul`
     li {
         display: flex;
         margin-bottom: 8px;
-        padding: 24px;
+        padding: 24px 40px 24px 24px;
 
         & > span {
             background-color: ${color.blue1};

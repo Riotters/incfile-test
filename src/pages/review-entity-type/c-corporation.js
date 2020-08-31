@@ -5,17 +5,17 @@ import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
 import Button from "../../atomic/molecules/buttons/button";
 //Sections
 import Top from "../../atomic/partials/top";
-import About from "../../atomic/sections/review-entity-type/c-corporation/about"
-import Adventages from "../../atomic/sections/review-entity-type/c-corporation/adventages"
-import Disdventages from "../../atomic/sections/review-entity-type/c-corporation/disadventages"
-import Differences from "../../atomic/sections/review-entity-type/c-corporation/differences"
-import Requirements from "../../atomic/sections/review-entity-type/c-corporation/requirements"
-import Rocket from "../../atomic/sections/review-entity-type/c-corporation/rocket"
-import Forming from "../../atomic/sections/review-entity-type/c-corporation/forming"
+import About from "../../atomic/sections/review-entity-type/c-corporation/about";
+import Adventages from "../../atomic/sections/review-entity-type/c-corporation/adventages";
+import Disdventages from "../../atomic/sections/review-entity-type/c-corporation/disadventages";
+import Differences from "../../atomic/sections/review-entity-type/c-corporation/differences";
+import Requirements from "../../atomic/sections/review-entity-type/c-corporation/requirements";
+import Rocket from "../../atomic/sections/review-entity-type/c-corporation/rocket";
+import Forming from "../../atomic/sections/review-entity-type/c-corporation/forming";
 import Articles from "../../components/partials/sections/articles";
-import Cta from "../../components/partials/sections/cta";
+import Cta from "../../atomic/sections/general/cta";
 //Texts
-import { top, about, adventages, disadventages, differences, requirements, rocket, forming } from "../../static/review-entity-type/c-corporation"
+import { top, about, adventages, disadventages, differences, requirements, rocket, forming } from "../../static/review-entity-type/c-corporation";
 
 const CCorporation = () => (
   <Layout>
@@ -36,7 +36,6 @@ const CCorporation = () => (
     <Forming content={forming} />
     <Articles />
     <Cta />
-
   </Layout>
 );
 

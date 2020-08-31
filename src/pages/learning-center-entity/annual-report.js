@@ -5,12 +5,12 @@ import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
 import Button from "../../atomic/molecules/buttons/button";
 //Sections
 import Top from "../../atomic/partials/top";
-import About from "../../atomic/sections/learning-center-entity/annual-report/about"
-import NextState from "../../atomic/sections/learning-center-entity/annual-report/next-state"
-import Faq from "../../atomic/sections/learning-center-entity/annual-report/faq"
+import About from "../../atomic/sections/learning-center-entity/annual-report/about";
+import NextState from "../../atomic/sections/learning-center-entity/annual-report/next-state";
+import Faq from "../../atomic/sections/learning-center-entity/annual-report/faq";
 import Articles from "../../components/partials/sections/articles";
 //Texts
-import { top, about, nextStateDue, faq } from "../../static/learning-center-enitity/annual-raport"
+import { top, about, nextStateDue, faq } from "../../static/learning-center-entity/annual-raport";
 
 const AnnualReport = () => (
   <Layout>

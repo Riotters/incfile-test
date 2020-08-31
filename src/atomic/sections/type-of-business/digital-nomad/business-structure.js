@@ -52,7 +52,7 @@ const CoachBusinessStructure = () => (
 
         <Container>
             <BusinessOwnerResponsibilities>
-                <ImageContent image="unique-business" paddingTop="60">
+                <ImageContent image="unique-business-green" paddingTop="60">
                     <Heading size={4} style={{fontSize: "24px"}}>
                         Starting Your Digital Nomad Business
                     </Heading>

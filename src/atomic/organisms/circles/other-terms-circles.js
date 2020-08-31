@@ -40,9 +40,9 @@ const Wrapper = styled.div`
 const circleIcons = [BulbSVG, BrushSVG, PenSVG];
 const circleColors = [color.orange2, color.blue2, color.babyblue2];
 
-const BenefitsCards = ({ className, content }) => {
+const OtherTermsCircles = ({ className, content }) => {
   return (
-    <Wrapper className={className} content={content}>
+    <Wrapper className={className}>
         {content.map((circle, i) => (
             <CircleIconText content={circle} Icon={circleIcons[i]} color={circleColors[i]} />
         ))}
@@ -50,4 +50,4 @@ const BenefitsCards = ({ className, content }) => {
   )
 }
 
-export default BenefitsCards;
+export default OtherTermsCircles;

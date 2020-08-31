@@ -20,8 +20,8 @@ const Wrapper = styled.div`
     }
 `
 
-const colors = [color.orange3, color.red3, color.green3, color.blue3];
-const icons = ["clock-691", "refuse", "cost", "receive"]
+const colors = [color.orange3, color.red3, color.green3, color.babyblue3];
+const icons = ["clock-691", "refuse", "cost-913", "receive"]
 
 const AnnualCards = ({ className, content, paddingTop, paddingBottom }) => {
   return (
