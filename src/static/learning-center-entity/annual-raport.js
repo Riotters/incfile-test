@@ -27,7 +27,7 @@ export const nextStateDue = {
   header2: `Relax. Here's the Information You Need.`,
   text: `We provide the details you need about when you should file your next business report. Just fill in your information, and we'll let you know when the report due.`,
   form: {
-    header: ``,
+    header: `Please enter below information`,
   },
 };
 

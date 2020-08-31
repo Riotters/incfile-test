@@ -9,8 +9,8 @@ const Wrapper = styled.label`
     font-family: Avenir, sans-serif; 
 `
 
-const Label = ({ className, text }) => (
-  <Wrapper className={className}>{text}</Wrapper>
+const Label = ({ className, text, htmlFor }) => (
+  <Wrapper className={className} htmlFor={htmlFor}>{text}</Wrapper>
 )
 
 export default Label
