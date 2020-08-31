@@ -147,7 +147,7 @@ export const tables = {
         [`Missouri`, `10 Business days`, `3 Business day`, `$50`],
         [`Montana`, `8 Business days`, `1 Business day`, `$70`],
         [`Nebraska`, `9 Business days`, `2 Business days`, `$50`],
-        ['Nevada', `3 Weeks`, `2 Business days', $50`],
+        [`Nevada`, `3 Weeks`, `2 Business days', $50`],
         [`New Hampshire`, `15 Business days`, `5 Business days`, `$80`],
         [`New Jersey`, `5 Business days`, `1 Business day`, `$50`],
         [`New Mexico`, `5 Weeks`, `3 Weeks`, `$50`],
