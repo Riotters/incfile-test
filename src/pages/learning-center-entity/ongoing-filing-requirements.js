@@ -7,7 +7,7 @@ import Button from "../../atomic/molecules/buttons/button";
 import Top from "../../atomic/partials/top";
 import Rocket from "../../atomic/sections/review-entity-type/c-corporation/rocket";
 //Texts
-import { top } from "../../static/learning-center-entity/help-center-article";
+import { top, rocket } from "../../static/learning-center-entity/help-center-article";
 
 const OngoingFilingRequirments = () => (
   <Layout>
