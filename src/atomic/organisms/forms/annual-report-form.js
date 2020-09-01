@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Whitebox from "../../atoms/boxes/white-box"
-import Searchbar from "../../molecules/form/searchbar"
+import { color } from "../../atoms/styles/colors";
 import { Heading } from "../../atoms/typography/heading";
 import Label from "../../molecules/form/label-field-with-child";
 import Input from "../../atoms/inputs/input"
@@ -9,6 +9,8 @@ import Dropdown from "../../molecules/form/dropdown";
 import Radio from "../../molecules/form/radio";
 import Button from "../../molecules/buttons/button";
 import ArrowLink from "../../molecules/buttons/text";
+import Curve from "../../atoms/icons/curve";
+import CurveSVG from "../../../images/curves/top-left-bottom-right.inline.svg";
 
 const Wrapper = styled(Whitebox)`
     display: flex;
@@ -16,6 +18,11 @@ const Wrapper = styled(Whitebox)`
     width: 100%;
     max-width: 570px;
     padding: 40px;
+    position: relative;
+
+    svg {
+        transform: scale(-1);
+    }
 `
 
 const Grid = styled.div`
@@ -48,6 +55,9 @@ const LinkWrapper = styled.div`
 const AnnualReportForm = ({ className, content }) => {
   return (
     <Wrapper className={className}>
+        <Curve bottom="-25" left="-29" color={color.orange1}>
+            <CurveSVG />
+        </Curve>
         <Heading size="5" bottomMargin="16">{content.header}</Heading>
         <Label htmlFor="company" content={content.field} bottomMargin="24">
             <Input placeholder="Company name" />

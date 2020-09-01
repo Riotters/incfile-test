@@ -24,7 +24,7 @@ import { top, about, searchTool, help, faq, rocket, categories, service, tools }
 const BusinessLicenseReq = () => (
   <Layout>
     <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
-    <Top imageName="mrs-bulb-business-license-requirements" imageAlt="Mrs Bulb and with checklist" ovalColor="sun">
+    <Top imageName="mrs-bulb-business-license-requirements" imageAlt="Mrs Bulb and with checklist" ovalColor="sun" headlineWidth="460" textWidth="480">
       <h1>{top.header}</h1>
       <p>{top.text}</p>
       <RatingRow topMargin="0">

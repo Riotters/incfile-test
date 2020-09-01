@@ -8,14 +8,23 @@ import TextCenterLayout from "../../../../components/partials/blocks/heading-cen
 import TopImageBox from "../../../../components/top-image-box";
 import Button from "../../../molecules/buttons/button";
 import Oval from "../../../atoms/icons/oval";
-import OvalSVG from "../../../../images/ovals/top-left-transparent-blue2.inline.svg";
+import OvalSVG from "../../../../images/ovals/top-right-transparent-orange.inline.svg";
 import { Heading } from "../../../atoms/typography/heading"
 
 const SearchTool = styled.div`
     padding-bottom: 100px;
     padding-top: 100px;
     position: relative;
-    background-image: ${gradient.blue3};
+
+    &::before {
+    content: '';
+    height: 1650px;
+    width: 100%;
+    background-image: ${gradient.orange3};
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 `;
 
 
@@ -98,7 +107,7 @@ const SearchToolSection = ({ content }) => {
 
     return (
         <SearchTool>
-            <Oval heigh="720" width="720" top="0" left="0">
+            <Oval heigh="720" width="720" top="0" right="0">
                 <OvalSVG/>
             </Oval>
             <ContentCenter>
@@ -108,16 +117,15 @@ const SearchToolSection = ({ content }) => {
                     text={content.text}
                 />
                 <ImageBoxes>
-                    <TopImageBox className="box box--left" image="your-state" color={color.blue3} >
+                    <TopImageBox className="box box--left" image="forming-a-corporation" color={color.green3}>
                         <Heading size="4">{cards[0]}</Heading>
-                        <Dropdown className="dropdown" placeholder="Select" options={dropdownOptions} />
-                    </TopImageBox>
-                    <TopImageBox className="box box--right" image="forming-a-corporation" color={color.orange3}>
-                        <Heading size="4">{cards[1]}</Heading>
                         <Dropdown className="dropdown" placeholder="Select" options={dropdownOptionsTwo} />
                     </TopImageBox>
+                    <TopImageBox className="box box--right" image="your-state" color={color.blue3} >
+                        <Heading size="4">{cards[1]}</Heading>
+                        <Dropdown className="dropdown" placeholder="Select" options={dropdownOptions} />
+                    </TopImageBox>
                 </ImageBoxes>
-                <Button content={content.button} theme="primary56" arrow />
             </ContentCenter>
         </SearchTool>
     )

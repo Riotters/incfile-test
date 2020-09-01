@@ -1,6 +1,6 @@
 export const top = {
     header:
-    `Do I need a Business License?`,
+    `Do I need a\u00A0Business License?`,
     text:
     `Find out what licenses and permits you may need for 
     your new business.`,

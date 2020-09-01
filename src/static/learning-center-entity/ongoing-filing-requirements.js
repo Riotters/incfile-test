@@ -14,15 +14,41 @@ export const about = {
 };
 
 export const entityTypeAndState = {
-    header: `Choose your entity type and state`,
-    cards: [
-        {
-            header: `1. Entity Type`
-        },
-        {
-            header: `2. Your State`
-        },
-    ]
+  header: 
+  `Choose your entity type and state`,
+  text:
+  `Our Business License Search Tool helps you narrow down the requirements for your business. Just enter the relevant information below to learn the likely registrations, permits, or licenses you’ll need.`,
+  cards: [
+    `1. Entity Type`,
+    `2. Your State`,
+  ],
+}
+
+export const requirments = {
+  header: `Mandatory California Compliance Requirements`,
+  columns: [
+    {
+      header: `Filing time and price`,
+      text: `Frequency: Annually`,
+      text2: `Due Date: During six-month period ending on last day of anniversary month of incorporation or qualification.`,
+      link: {
+        text: `State Filing Times`,
+        url: `/`,
+      },
+    },
+    {
+      header: `Compliance Requirements`,
+      text: `Filing Fee: $25`,
+      text2: `Important: The initial Statement of Information filing is due within 90 days of the entity formation date.`,
+      link: {
+        text: `State Filing Prices`,
+        url: `/`,
+      },
+    },
+  ],
+  header2: `California Franchise Tax`,
+  text: `$800 payment for the LLC Franchise Tax is due by 15th day of the 4th month after your LLC is filed. The month your LLC is filed counts as Month 1, regardless if you file on the 1st of the month, the last of the month, or any day of the month, really.`,
+  text2: `This means that if you were to file your LLC on March 22nd, then you must pay the $800 fee no later than June 15th (in this example, March is Month 1, April is Month 2, May is Month 3, and June is Month 4). Then, every year after your first payment $800 LLC Franchise Tax will be due April 15th. You pay the $800 LLC Franchise Tax using Form 3522 called the LLC Tax Voucher.`,
 }
 
 export const rocket = {
@@ -39,6 +65,5 @@ export const rocket = {
         `launch your business`,
       url:
         `/`,  
-    }
-
-  
+    },
+};

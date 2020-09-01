@@ -8,6 +8,8 @@ import Form from "../../../organisms/forms/annual-report-form";
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-right-orange1-to-transparent.inline.svg";
 import Oval2SVG from "../../../../images/ovals/bottom-left-transparent-orange.inline.svg";
+import Curve from "../../../atoms/icons/curve";
+import CurveSVG from "../../../../images/curves/bottom-left-top-right-big.inline.svg";
 
 const NextState = styled.section`
   position: relative;
@@ -28,7 +30,12 @@ const NextStateSection = ({ className, content }) => {
                 <Oval2SVG />
             </Oval>
             <ContentObject object={CheckDueDate} contentWidth="500" contentCenter>
-                <Heading size="2" bottomMargin="48">{content.header}</Heading>
+                <Heading size="2" bottomMargin="48" style={{position: `relative`}}>
+                    <Curve top="-85" left="-85" color={color.orange2}>
+                        <CurveSVG />
+                    </Curve>
+                    {content.header}
+                </Heading>
                 <Heading size="4">{content.header2}</Heading>
                 <Paragraph big bottomMargin="0">{content.text}</Paragraph>
             </ContentObject>
