@@ -15,7 +15,7 @@ import { top, about, nextStateDue, faq } from "../../static/learning-center-enti
 const AnnualReport = () => (
   <Layout>
     <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
-    <Top imageName="mr-bulb-annual-report-due-date-tool" imageAlt="Mrs Bulb and with checklist" ovalColor="sun">
+    <Top imageName="mr-bulb-annual-report-due-date-tool" imageAlt="Mrs Bulb and with checklist" ovalColor="sun" headlineWidth="560">
       <h1>{top.header}</h1>
       <p>{top.text}</p>
       <Buttonsbox>

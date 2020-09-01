@@ -27,10 +27,10 @@ const NextStateSection = ({ className, content }) => {
             <Oval className="oval" height="420" width="420" bottom="0" left="0">
                 <Oval2SVG />
             </Oval>
-            <ContentObject object={CheckDueDate} contentWidth="500">
+            <ContentObject object={CheckDueDate} contentWidth="500" contentCenter>
                 <Heading size="2" bottomMargin="48">{content.header}</Heading>
                 <Heading size="4">{content.header2}</Heading>
-                <Paragraph big bottomMargin="32">{content.text}</Paragraph>
+                <Paragraph big bottomMargin="0">{content.text}</Paragraph>
             </ContentObject>
         </NextState>
     )

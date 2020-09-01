@@ -6,6 +6,7 @@ import DropdownSVG from "../../../images/dropdown.inline.svg"
 
 const Wrapper = styled.div`
     position: relative;
+    width: 100%;
 
     .Dropdown {
         &-root {

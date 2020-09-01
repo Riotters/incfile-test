@@ -6,9 +6,13 @@ import { Heading } from "../../atoms/typography/heading";
 import Label from "../../molecules/form/label-field-with-child";
 import Input from "../../atoms/inputs/input"
 import Dropdown from "../../molecules/form/dropdown";
+import Radio from "../../molecules/form/radio";
 import Button from "../../molecules/buttons/button";
+import ArrowLink from "../../molecules/buttons/text";
 
 const Wrapper = styled(Whitebox)`
+    display: flex;
+    flex-direction: column;
     width: 100%;
     max-width: 570px;
     padding: 40px;
@@ -18,9 +22,26 @@ const Grid = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 30px;
+    width: 100%;
 
     .Dropdown-root {
         min-width: 50px;
+    }
+`;
+
+const Flex = styled.div`
+    display: flex;
+    justify-content: space-between;
+`;
+
+const LinkWrapper = styled.div`
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 16px;
+
+    a {
+        font-size: 16px;
+        line-height: 24px;
     }
 `;
 
@@ -28,23 +49,29 @@ const AnnualReportForm = ({ className, content }) => {
   return (
     <Wrapper className={className}>
         <Heading size="5" bottomMargin="16">{content.header}</Heading>
-        <Label htmlFor="company" content={{label: `Company`}} bottomMargin="24">
+        <Label htmlFor="company" content={content.field} bottomMargin="24">
             <Input placeholder="Company name" />
         </Label>
-        <Label htmlFor="state" content={{label: `State of Incorporation`}} bottomMargin="16">
+        <Label htmlFor="state" content={content.field2} bottomMargin="16">
             <Dropdown options={["aaa", "bbb", "ccc"]} placeholder="Select" />
         </Label>
-        <Label htmlFor="type" content={{label: `Select Entity Type*`}} bottomMargin="16">
-            <Input />
-        </Label>
-        <Label htmlFor="date" content={{label: `Date of Formation`}}>
+        <Flex>
+            <Label htmlFor="type" content={content.field3} bottomMargin="16">
+                <Radio checked name="type" />
+                <Radio name="type" />
+            </Label>
+            <LinkWrapper>
+                <ArrowLink content={content.link} bottomMargin="0" />
+            </LinkWrapper>
+        </Flex>
+        <Label htmlFor="date" content={content.field4}>
             <Grid>
-                <Dropdown options={["aaa", "bbb", "ccc"]} placeholder="Month" />
-                <Dropdown options={["aaa", "bbb", "ccc"]} placeholder="Day" />
-                <Dropdown options={["aaa", "bbb", "ccc"]} placeholder="Year" />
+                <Dropdown options={["01", "02", "03"]} placeholder="Month" />
+                <Dropdown options={["01", "02", "03"]} placeholder="Day" />
+                <Dropdown options={["2020", "2019", "2018"]} placeholder="Year" />
             </Grid>
         </Label>
-        <Button content={content.button} theme="primary56" arrow marginSM="0 auto" />
+        <Button content={content.button} theme="primary56" arrow marginSM="32px auto 0" />
     </Wrapper>
   )
 }

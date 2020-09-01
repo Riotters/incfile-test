@@ -13,6 +13,7 @@ const Wrapper = styled.div`
     }
 
     .bottom {
+        display: flex;
         width: 100%;
     }
 `
