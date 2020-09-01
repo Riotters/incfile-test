@@ -243,4 +243,116 @@ export const quickLinks = {
       },
     },
   ],
-};
+}
+export const quickLinks = {
+  cards: [
+  
+      {
+        header:
+        `State Filing Times`,
+        text:
+        `Get started wih easy-to-follow guides, wizards, content and support documents. Help is only an email away.`,
+        link: {
+          text:
+          `Learn more`,
+          url:
+          `/`,
+        },
+        {
+        header:
+        `State Filing Times`,
+        text:
+        `Get started wih easy-to-follow guides, wizards, content and support documents. Help is only an email away.`,
+        link: {
+          text:
+          `Learn more`,
+          url:
+          `/`,
+        },
+
+      },
+    ]    
+}
+export const variants = {
+  header: 
+    `See how easy it can be to get your business incorporated`,
+  
+  link: {
+    text:
+    `Learn more`,
+    url:
+    `/`,
+  },
+  cards: [
+    {
+      color:
+      `silver`,
+      variant:
+      `the basics`,
+      price:
+      `0$`,
+      text:
+      `The Basics To Get Started:`,
+      list: [
+      `Prepare & File Articles`,
+      `FREE Registered Agent for 1st Year`,
+      `FREE Registered Agent for 1st Year`,
+      ],
+      link: {
+        text:
+        `Get Started`,
+        url:
+        `/`,
+      },
+      text:
+      `+ $75 (state fee)`,
+    },
+    {
+      color:
+      `silver`,
+      variant:
+      `most popular`,
+      price:
+      `$149`,
+      text:
+      `Everything from Silver plus:`,
+      list: [
+        `EIN / Tax ID Number (req. to open a bank account)`,
+        `Personalized Operating Agreement`,
+        `Customized LLC Kit`,
+      ],
+      link: {
+        text:
+        `Get Started`,
+        url:
+        `/`,
+      },
+      text:
+      `+ $75 (state fee)`,
+    },
+    {
+      color:
+      `platinum`,
+      variant:
+      `best value`,
+      price:
+      `$299`,
+      text:
+      `Everything from Silver & Gold plus:`,
+      list: [
+        `Expedited Filing (State completes filing faster)`,
+        `FedEx Delivery`,
+        `Contracts Library (25+ high quality documents)`,
+      ],
+      link: {
+        text:
+        `Get Started`,
+        url:
+        `/`,
+      },
+      text:
+      `+ $75 (state fee)`,
+    }
+
+  ],  
+}
