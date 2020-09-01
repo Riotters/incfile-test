@@ -8,7 +8,7 @@ import RatingBlock from "../../atomic/molecules/blocks/rating-block";
 import Top from "../../atomic/partials/top";
 import Tables from "../../atomic/sections/learning-center-entity/state-filing-times/tables";
 import Cta from "../../atomic/sections/general/cta";
-import Articles from "../../atomic/sections//articles";
+import Articles from "../../atomic/sections/articles";
 //Texts
 import { top, tables } from "../../static/learning-center-entity/state-filing-times";
 

@@ -84,7 +84,7 @@ export const disadventages = {
 };
 
 export const requirements = {
-  header: `Requirments for S Corp`,
+  header: `Requirements for S Corp`,
   text: `According to the IRS, to qualify for S Corporation status, a business must meet these requirements:`,
   list: [
     `Be a domestic corporation`,

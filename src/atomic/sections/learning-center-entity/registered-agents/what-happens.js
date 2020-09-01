@@ -10,6 +10,7 @@ import OvalSVG from "../../../../images/ovals/bottom-right-transparent-pink2.inl
 import TextCheck from "../../../molecules/text-blocks/text-check";
 import ContentLeft from "../../../partials/content-left";
 import Button from "../../../molecules/buttons/button";
+import ContentCenter from "../../../partials/content-center";
 
 const Need = styled.section`
   position: relative;
@@ -60,23 +61,15 @@ const NeedSection = ({ className, content }) => (
     <Oval className="oval" height="420" width="420" bottom="0" right="0">
       <OvalSVG />
     </Oval>
-    <ContentLeft contentWidth="738">
-      <Heading size="2">{content.header}</Heading>
-      <Paragraph big bottomMargin="64">
+    <ContentLeft>
+      <Heading size="2" maxWidth="770">
+        {content.header}
+      </Heading>
+      <Paragraph big maxWidth="770" bottomMargin="64">
         {content.text}
       </Paragraph>
-      <ul className="list">
-        {content.list.map((item) => (
-          <li>
-            <TextCheck>{item}</TextCheck>
-          </li>
-        ))}
-      </ul>
-      <Paragraph big bottomMargin="48">
-        {content.text2}
-      </Paragraph>
-      <Button content={content.button} theme="primary56" marginSM="0 auto 0 0" arrow />
     </ContentLeft>
+    <ContentCenter></ContentCenter>
   </Need>
 );
 

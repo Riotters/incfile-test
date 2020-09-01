@@ -7,7 +7,7 @@ import Button from "../../atomic/molecules/buttons/button";
 import Top from "../../atomic/partials/top";
 import About from "../../atomic/sections/learning-center-entity/state-information-california/about";
 import Rocket from "../../atomic/sections/review-entity-type/c-corporation/rocket";
-import Requirments from "../../atomic/sections/learning-center-entity/state-information-california/requirments";
+import Requirements from "../../atomic/sections/learning-center-entity/state-information-california/requirements";
 import LearnMore from "../../atomic/sections/learning-center-entity/state-information-california/learn-more";
 import QuickLinks from "../../atomic/sections/learning-center-entity/state-information-california/quick-links";
 import Cta from "../../atomic/sections/general/cta";
@@ -27,7 +27,7 @@ const StateFilingTimes = () => (
     </Top>
     <About content={about} />
     <Rocket content={launchBusiness} />
-    <Requirments content={requirements} />
+    <Requirements content={requirements} />
     <LearnMore content={learnMore} />
     <QuickLinks content={quickLinks} />
     <Cta />
