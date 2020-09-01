@@ -171,10 +171,10 @@ export const quickLinks = {
   header: `Quick links`,
   cards: [
     {
-      header: `aaa`,
-      text: `aaa`,
+      header: `State Filing Times`,
+      text: `Get started wih easy-to-follow guides, wizards, content and support documents. Help is only an email away.`,
       link: {
-        text: `aaa`,
+        text: `Learn more`,
         url: `/`,
       },
     },
@@ -244,35 +244,7 @@ export const quickLinks = {
     },
   ],
 }
-export const quickLinks = {
-  cards: [
-  
-      {
-        header:
-        `State Filing Times`,
-        text:
-        `Get started wih easy-to-follow guides, wizards, content and support documents. Help is only an email away.`,
-        link: {
-          text:
-          `Learn more`,
-          url:
-          `/`,
-        },
-        {
-        header:
-        `State Filing Times`,
-        text:
-        `Get started wih easy-to-follow guides, wizards, content and support documents. Help is only an email away.`,
-        link: {
-          text:
-          `Learn more`,
-          url:
-          `/`,
-        },
 
-      },
-    ]    
-}
 export const variants = {
   header: 
     `See how easy it can be to get your business incorporated`,
