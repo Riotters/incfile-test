@@ -113,6 +113,9 @@ const IndexPage = () => (
         <Link to="/type-of-business/photography-business">Photograpshy Business (no details)</Link>
         <Link to="/type-of-business/women-business">Women Business (no details)</Link>
         <Link to="/type-of-business/restaurant-business">Restaurant Business (no details)</Link>
+        <Link to="/type-of-business/summer-business">Summer Business (no details)</Link>
+        <Link to="/type-of-business/dog-walking">Dog Walking (no details)</Link>
+
         <h2>Additional sites</h2>
         <Link to="/components">Components</Link>
         <Link to="/404">404</Link>
