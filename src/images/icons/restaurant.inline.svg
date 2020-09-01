@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33">
+    <g fill="none" fill-rule="evenodd" transform="translate(0 5.5)">
+        <path fill="#E0F1FA" fill-rule="nonzero" d="M2.8 17.59c0-7.24 4.52-12.35 11.76-12.35 3.477 0 6.812 1.381 9.27 3.84 2.459 2.458 3.84 5.793 3.84 9.27L2.8 17.59z"/>
+        <path fill="#D5F3E8" fill-rule="nonzero" d="M17.24 2.17c0 .69-.56 2.23-1.24 2.23-.68 0-1.24-1.54-1.24-2.23 0-.685.555-1.24 1.24-1.24.685 0 1.24.555 1.24 1.24z"/>
+        <rect width="30.59" height="3.39" x=".7" y="17.67" fill="#E0F1FA" fill-rule="nonzero" rx="1.65"/>
+        <path fill="#E0F1FA" fill-rule="nonzero" d="M17.24 2.17c0 .69-.56 2.23-1.24 2.23-.68 0-1.24-1.54-1.24-2.23 0-.685.555-1.24 1.24-1.24.685 0 1.24.555 1.24 1.24z"/>
+        <rect width="30.59" height="3.39" x=".7" y="17.67" stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" rx="1.65"/>
+        <path stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M2.8 17.59c0-7.24 5.87-13.11 13.11-13.11 7.24 0 13.11 5.87 13.11 13.11M17.24 2.17c0 .69-.56 2.23-1.24 2.23-.68 0-1.24-1.54-1.24-2.23 0-.685.555-1.24 1.24-1.24.685 0 1.24.555 1.24 1.24z"/>
+    </g>
+</svg>
