@@ -120,6 +120,7 @@ const IndexPage = () => (
         <Link to="/type-of-business/bookstore">Bookstore (no details)</Link>
         <Link to="/type-of-business/bed-and-breakfast">Bed and Breakfast (no details)</Link>
         <Link to="/type-of-business/laundromat">Laundromat (no details)</Link>
+        <Link to="/type-of-business/landscaping-business">Landscaping Business (no details)</Link>
 
         <h2>Additional sites</h2>
         <Link to="/components">Components</Link>
