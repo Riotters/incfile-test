@@ -65,7 +65,7 @@ export const requirements = {
 export const whatHappens = {
   header: `What Happens If I Don’t Have a Registered Agent?`,
   text: `If you do not assign or provide details of your organization's Registered Agent to the secretary of state, you could face significant problems, including:`,
-  boxes: [
+  cards: [
     {
       header: `Legal problems`,
       text: `Being served to appear in court and not knowing about it, resulting in a default judgment in your absence and other legal problems`,

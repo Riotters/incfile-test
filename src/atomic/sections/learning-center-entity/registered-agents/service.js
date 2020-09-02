@@ -33,8 +33,8 @@ const Grid = styled.div`
   }
 `;
 
-const colors = [color.blue3, color.purple3, color.orange3, color.yellow3, color.yellow4, color.purple3, color.babyblue3];
-const icons = ["rocket-939", "certificate-305", "business-taxes-8954", "bulb-gear-7881", "game-plan", "display-ads", "measuring-business-success"];
+const colors = [color.orange3, color.red3, color.babyblue3, color.purple3];
+const icons = ["bc-11", "certificate-305", "receive", "bulb-gear-7881"];
 
 const ServiceSection = ({ className, content }) => (
   <Service className={className}>

@@ -6,15 +6,16 @@ import { Paragraph } from "../../../atoms/typography/paragraph";
 import ContentObject from "../../../partials/left-content-right-object";
 import Card from "../../../../components/certificate-card";
 import Oval from "../../../atoms/icons/oval";
-import OvalSVG from "../../../../images/ovals/bottom-right-transparent-pink2.inline.svg";
+import OvalSVG from "../../../../images/ovals/top-right-transparent-pink2.inline.svg";
 import TextCheck from "../../../molecules/text-blocks/text-check";
 import ContentLeft from "../../../partials/content-left";
 import Button from "../../../molecules/buttons/button";
 import ContentCenter from "../../../partials/content-center";
+import Cards from "../../../organisms/cards/registered-agent-disadventage-cards";
 
 const Need = styled.section`
   position: relative;
-  padding-top: 64px;
+  padding-top: 104px;
   padding-bottom: 104px;
 
   h2 {
@@ -58,18 +59,20 @@ const Need = styled.section`
 
 const NeedSection = ({ className, content }) => (
   <Need className={className}>
-    <Oval className="oval" height="420" width="420" bottom="0" right="0">
+    <Oval className="oval" height="420" width="420" top="0" right="0">
       <OvalSVG />
     </Oval>
     <ContentLeft>
       <Heading size="2" maxWidth="770">
         {content.header}
       </Heading>
-      <Paragraph big maxWidth="770" bottomMargin="64">
+      <Paragraph big maxWidth="770" bottomMargin="0">
         {content.text}
       </Paragraph>
     </ContentLeft>
-    <ContentCenter></ContentCenter>
+    <ContentCenter>
+      <Cards content={content.cards} />
+    </ContentCenter>
   </Need>
 );
 
