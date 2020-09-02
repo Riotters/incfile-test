@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { color } from "../../../atoms/styles/colors";
 import Tabs from "../../../organisms/tabs/state-information-california-tabs";
 import Oval from "../../../atoms/icons/oval";
-import OvalSVG from "../../../../images/ovals/top-left-transparent-green3.inline.svg";
+import OvalSVG from "../../../../images/ovals/top-left-transparent-blue3.inline.svg";
 
 const About = styled.section`
   position: relative;

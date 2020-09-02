@@ -5,7 +5,7 @@ import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";
 import { states } from "../../../../components/states";
 import HeadingCenter from "../../../partials/heading-center";
-import BoxedButton from "../../../molecules/buttons/boxed";
+import BoxedButton from "../../../molecules/buttons/boxed-normal-weight";
 import ContentCenter from "../../../partials/content-center";
 import Card from "../../../../components/certificate-card";
 import Oval from "../../../atoms/icons/oval";
@@ -26,6 +26,7 @@ const Grid = styled.div`
   display: grid;
   grid-template-columns: 100%;
   grid-gap: 30px;
+  width: 100%;
 
   @media (min-width: 576px) {
     grid-template-columns: 1fr 1fr;
@@ -42,7 +43,7 @@ const Grid = styled.div`
 
 const LearnMoreSection = ({ className, content }) => (
   <LearnMore className={className}>
-    <HeadingCenter headline={content.header} headlineWidth="770" text={content.text} />
+    <HeadingCenter headline={content.header} headlineWidth="670" text={content.text} bottomMargin="80" />
     <ContentCenter>
       <Grid>
         {content.buttons.map((button) => (

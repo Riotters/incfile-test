@@ -3,14 +3,15 @@ import styled from "styled-components";
 import { Tabs, Panel, useTabState } from "@bumaga/tabs";
 // import { motion } from "framer-motion"
 import Container from "../../container";
-import ArrowLink from "../../../components/arrow-link";
-import BookSVG from "../../../images/icons/book.inline.svg";
-import WrenchSVG from "../../../images/icons/wrench.inline.svg";
+import Tab1SVG from "../../../images/icons/california-corporations.inline.svg";
+import Tab2SVG from "../../../images/icons/how-to-guide.inline.svg";
+import Tab3SVG from "../../../images/icons/naming-your-corporation.inline.svg";
+import Tab4SVG from "../../../images/icons/registered-agents.inline.svg";
+import Tab5SVG from "../../../images/icons/filing-fees-requirements.inline.svg";
+import Tab6SVG from "../../../images/icons/taxes-and-fees.inline.svg";
+import Tab7SVG from "../../../images/icons/after-formation.inline.svg";
 import ArrowSVG from "../../../images/arrow.inline.svg";
 import { Collapse } from "react-collapse";
-import { color } from "../../atoms/styles/colors";
-import IconSVG from "../../../images/icons/generally-arrow.inline.svg";
-import IconTextColorBox from "../../molecules/text-blocks/icon-h4-text-color";
 import VisibilitySensor from "../../../components/VisibilitySensor";
 import { Heading } from "../../atoms/typography/heading";
 import { Paragraph } from "../../atoms/typography/paragraph";
@@ -182,7 +183,7 @@ const Tab = ({ children }) => {
   );
 };
 
-const icons = [<BookSVG />, <WrenchSVG />];
+const icons = [<Tab1SVG />, <Tab2SVG />, <Tab3SVG />, <Tab4SVG />, <Tab5SVG />, <Tab6SVG />, <Tab7SVG />];
 
 const CCorpTabs = ({ layout, columns, content }) => (
   <Container>
@@ -219,12 +220,32 @@ const CCorpTabs = ({ layout, columns, content }) => (
               </Panel>
               <Panel>
                 <PanelWrapper className="panel2" layout={layout}>
-                  <p>Incorporating your company is not always an easy process. Incfile is here to help you decide not only how to incorporate, but to understand exactly which type of status to file.</p>
-                  <p>Many companies who incorporate are actually charities that do not intend to make a profit, but rather donate all profits to another organization. In this case, a charity would want to incorporate as a nonprofit and, ultimately, apply for tax exempt status.</p>
-
-                  <p>By having tax exempt status, your donations can be recorded by donors as not taxable by both the federal and state government. This is a great incentive to be able to offer your constituents.</p>
-
-                  <p>People who start nonprofits are driven by passion about a certain cause. Whatever your cause, creating a nonprofit can make a difference. We've provided as much information as you need to know in choosing to incorporate as a nonprofit corporation.</p>
+                  <Heading size="3">{content.content[1].header}</Heading>
+                  <Paragraph big>{content.content[1].text}</Paragraph>
+                  <Paragraph big>{content.content[1].text2}</Paragraph>
+                  <Heading size="3">{content.content[1].header2}</Heading>
+                  <Paragraph big>{content.content[1].text3}</Paragraph>
+                  <Paragraph big>{content.content[1].text4}</Paragraph>
+                </PanelWrapper>
+              </Panel>
+              <Panel>
+                <PanelWrapper className="panel3" layout={layout}>
+                  <Heading size="3">{content.content[2].header}</Heading>
+                  <Paragraph big>{content.content[2].text}</Paragraph>
+                  <Paragraph big>{content.content[2].text2}</Paragraph>
+                  <Heading size="3">{content.content[2].header2}</Heading>
+                  <Paragraph big>{content.content[2].text3}</Paragraph>
+                  <Paragraph big>{content.content[2].text4}</Paragraph>
+                </PanelWrapper>
+              </Panel>
+              <Panel>
+                <PanelWrapper className="panel4" layout={layout}>
+                  <Heading size="3">{content.content[3].header}</Heading>
+                  <Paragraph big>{content.content[3].text}</Paragraph>
+                  <Paragraph big>{content.content[3].text2}</Paragraph>
+                  <Heading size="3">{content.content[3].header2}</Heading>
+                  <Paragraph big>{content.content[3].text3}</Paragraph>
+                  <Paragraph big>{content.content[3].text4}</Paragraph>
                 </PanelWrapper>
               </Panel>
             </Collapse>

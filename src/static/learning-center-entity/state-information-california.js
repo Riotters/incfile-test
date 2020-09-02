@@ -20,18 +20,414 @@ export const about = {
         header2: `What Type of California Corporation Should You Choose?`,
         text3: `Most entrepreneurs will have a choice of starting an LLC, an S Corporation or a C Corporation in California. We’ll help you select the right type of business entity, as each one is treated differently by the CA Secretary of State, the law, the IRS and other official bodies.`,
         text4: `Here’s a quick overview of each type of business entity.`,
+        header3: `aaa`,
+        text5: `aaa`,
+        header4: `aaa`,
+        text6: `aaa`,
+        link2: {
+          text: `aaa`,
+          url: `aaa`,
+        },
+        header5: `aaa`,
+        text7: `aaa`,
+        link3: {
+          text: `aaa`,
+          url: `aaa`,
+        },
+        header6: `aaa`,
+        text8: `aaa`,
+        link4: {
+          text: `aaa`,
+          url: `aaa`,
+        },
+        box: {
+          header: `aaa`,
+          text: `aaa`,
+          buttons: [
+            {
+              text: `aaa`,
+              url: `aaa`,
+            },
+            {
+              text: `aaa`,
+              url: `aaa`,
+            },
+          ],
+        },
+        header7: `aaa`,
+        text9: `aaa`,
+        header8: `aaa`,
+        text10: `aaa`,
+        link5: {
+          text: `aaa`,
+          url: `aaa`,
+        },
+        button: {
+          text: `aaa`,
+          url: `aaa`,
+        },
+        box2: {
+          header: `aaa`,
+          text: `aaa`,
+        },
+        text11: `aaa`,
+        box3: {
+          header: `aaa`,
+          list: [
+            `aaa`,
+            `aaa`,
+            `aaa`,
+          ],
+        },
+        link6: {
+          text: `aaa`,
+          url: `aaa`,
+        },
+        text12: `aaa`,
+        box4: {
+          header: `aaa`,
+          list: [
+            `aaa`,
+            `aaa`,
+            `aaa`,
+            `aaa`,
+            `aaa`,
+          ],
+        },
+        header9: `aaa`,
+        text13: `aaa`,
+        text14: `aaa`,
+        text15: `aaa`,
+        text16: `aaa`,
+        box5: {
+          header: `aaa`,
+          list: [
+            `aaa`,
+            `aaa`,
+          ],
+        },
+        link7: {
+          text: `aaa`,
+          url: `aaa`,
+        },
+        text17: `aaa`,
+        boxes: [
+          `aaa`,
+          `aaa`,
+          `aaa`,
+          `aaa`,
+        ],
+        text18: `aaa`,
+        link8: {
+          text: `aaa`,
+          url: `aaa`,
+        },
+        button2: {
+          text: `aaa`,
+          url: `aaa`,
+        },
+        text19: `aaa`,
+        cards: [
+          {
+            header: `aaa`,
+            link: {
+              text: `aaa`,
+              url: `/`,
+            }
+          },
+          {
+            header: `aaa`,
+            link: {
+              text: `aaa`,
+              url: `/`,
+            }
+          },
+        ],
+        header10: `aaa`,
+        text20: `aaa`,
+        header11: `aaa`,
+        text21: `aaa`,
+        link8: {
+          text: `aaa`,
+          url: `/`,
+        },
+        header12: `aaa`,
+        text22: `aaa`,
+        link9: {
+          text: `aaa`,
+          url: `/`,
+        },
+        header13: `aaa`,
+        text23: `aaa`,
+        link10: {
+          text: `aaa`,
+          url: `/`,
+        },
+        header14: `aaa`,
+        text24: `aaa`,
+        link11: {
+          text: `aaa`,
+          url: `/`,
+        },
+        header15: `aaa`,
+        text25: `aaa`,
+        link12: {
+          text: `aaa`,
+          url: `/`,
+        },        
       },
       {
-        header: `What Is a C Corporation?`,
-        text: `A C Corporation is one of several ways to legally recognize a business for tax, regulatory and official reasons. 
-            A C Corp is simply a way to structure ownership of a business, and contrasts with other popular business structures including Limited Liability Companies (LLCs), S Corporations, Sole Proprietorships and others.`,
-        card: {
-          header: `Generally, a C Corporation structure is better for larger businesses. `,
-          text: `This is particularly true if they intend to publicly trade shares, through having an Initial Public Offering, or IPO. 
-              A C Corporation is much more attractive to potential investors, including venture capitalists and shareholders because it allows wider ownership of the corporation.`,
+        header: `Start Your California Corporation in Six Steps`,
+        text: `aaa`,
+        text2: `aaa`,
+        buttons: [
+          {
+            text: `aaa`,
+            url: `/`,
+          },
+          {
+            text: `aaa`,
+            url: `/`,
+          },
+        ],
+        header2: `aaa`,
+        text3: `aaa`,
+        box: {
+          list: [
+            `aaa`,
+            `aaa`,
+            `aaa`,
+            `aaa`,
+          ],
         },
-        text2: `The majority of larger businesses in the United States are structured as C Corporations, although a C Corp could, theoretically, consist of just one person. 
-            The information below will help you decide if a C Corporation structure is right for your business.`,
+        text4: `aaa`,
+        link: {
+          text: `aaa`,
+          url: `/`,
+        },
+        header3: `aaa`,
+        boxes: [
+          {
+            header: `aaa`,
+            text: `aaa`,
+          },
+          {
+            header: `aaa`,
+            text: `aaa`,
+          },
+          {
+            header: `aaa`,
+            text: `aaa`,
+          },
+          {
+            header: `aaa`,
+            text: `aaa`,
+          },
+          {
+            header: `aaa`,
+            text: `aaa`,
+          },
+          {
+            header: `aaa`,
+            text: `aaa`,
+          },
+        ],
+        header4: `aaa`,
+        link2: {
+          text: `aaa`,
+          url: `/`,
+        },
+        link3: {
+          text: `aaa`,
+          url: `/`,
+        },
+        link4: {
+          text: `aaa`,
+          url: `/`,
+        },
+        header5: `aaa`,
+        text5: `aaa`,
+        header6: `aaa`,
+        text6: `aaa`,
+        text7: `aaa`,
+        header7: `aaa`,
+        text8: `aaa`,
+        header8: `aaa`,
+        text9: `aaa`,
+        buttons2: [
+          {
+            text: `aaa`,
+            url: `/`,
+          },
+          {
+            text: `aaa`,
+            url: `/`,
+          },
+        ]
+      },
+      {
+        header: `CA Name Search and Registration for Your California Corporation`,
+        text: `aaa`,
+        buttons: [
+          {
+            text: `aaa`,
+            url: `/`,
+          },
+          {
+            text: `aaa`,
+            url: `/`,
+          },
+        ],
+        header2: `aaa`,
+        text2: `aaa`,
+        text3: `aaa`,
+        link: {
+          text: `aaa`,
+          url: `/`,
+        },
+        header3: `aaa`,
+        text4: `aaa`,
+        header4: `aaa`,
+        text5: `aaa`,
+        header5: `aaa`,
+        text6: `aaa`,
+        header6: `aaa`,
+        text7: `aaa`,
+        box: [
+          `aaa`,
+          `aaa`,
+          `aaa`,
+          `aaa`,
+        ],
+        text8: `aaa`,
+        header7: `aaa`,
+        text9: `aaa`,
+        header8: `aaa`,
+        text10: `aaa`,
+        box2: [
+          `aaa`,
+          `aaa`,
+          `aaa`,
+          `aaa`,
+        ],
+        header9: `aaa`,
+        text11: `aaa`,
+        box3: [
+          `aaa`,
+          `aaa`,
+          `aaa`,
+        ],
+        link2: {
+          text: `aaa`,
+          url: `/`,
+        },
+        header10: `aaa`,
+        text12: `aaa`,
+        button: {
+          text: `aaa`,
+          url: `aaa`,
+        },
+        header11: `aaa`,
+        text13: `aaa`,
+        text14: `aaa`,
+        header12: `aaa`,
+        text15: `aaa`,
+        buttons2: [
+          {
+            text: `aaa`,
+            url: `/`,
+          },
+          {
+            text: `aaa`,
+            url: `/`,
+          },
+        ],
+      },
+      {
+        header: `Why Your California Corporation Needs a Registered Agent Service`,
+        text: `aaa`,
+        box: [
+          `aaa`,
+          `aaa`,
+          `aaa`,
+          `aaa`,
+        ],
+        text2: `aaa`,
+        buttons: [
+          {
+            text: `aaa`,
+            url: `/`,
+          },
+          {
+            text: `aaa`,
+            url: `/`,
+          },
+        ],
+        header2: `aaa`,
+        text3: `aaa`,
+        text4: `aaa`,
+        header3: `aaa`,
+        text5: `aaa`,
+        box2: [
+          `aaa`,
+          `aaa`,
+          `aaa`,
+          `aaa`,
+        ],
+        header4: `aaa`,
+        text6: `aaa`,
+        box3: [
+          `aaa`,
+          `aaa`,
+          `aaa`,
+          `aaa`,
+        ],
+        text7: `aaa`,
+        header5: `aaa`,
+        text7: `aaa`,
+        box4: [
+          `aaa`,
+          `aaa`,
+          `aaa`,
+        ],
+        header6: `aaa`,
+        text8: `aaa`,
+        text9: `aaa`,
+        box: [
+          `aaa`,
+          `aaa`,
+          `aaa`,
+          `aaa`,
+        ],
+        button: {
+          text: `aaa`,
+          url: `/`,
+        },
+        text10: `aaa`,
+        buttons2: [
+          {
+            text: `aaa`,
+            url: `/`,
+          },
+          {
+            text: `aaa`,
+            url: `/`,
+          },
+        ],
+        header7: `aaa`,
+        text11: `aaa`,
+        link: {
+          text: `aaa`,
+          url: `/`,
+        },
+        link2: {
+          text: `aaa`,
+          url: `/`,
+        },
+        link3: {
+          text: `aaa`,
+          url: `/`,
+        },
       },
     ],
   },
@@ -47,7 +443,7 @@ export const launchBusiness = {
 };
 
 export const requirements = {
-  header: ``,
+  header: `Fees and requirements in California.`,
   rows: [
     {
       box: {
@@ -142,27 +538,35 @@ export const learnMore = {
   buttons: [
     {
       header: `Business Name`,
+      url: `/`,
     },
     {
       header: `Articles of Incorporation`,
+      url: `/`,
     },
     {
       header: `Registered Agent`,
+      url: `/`,
     },
     {
       header: `Operating Agreement`,
+      url: `/`,
     },
     {
       header: `Members`,
+      url: `/`,
     },
     {
       header: `Required reports`,
+      url: `/`,
     },
     {
       header: `Taxes`,
+      url: `/`,
     },
     {
       header: `Foreign Qualifications`,
+      url: `/`,
     },
   ],
 };
