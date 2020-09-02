@@ -171,76 +171,160 @@ export const quickLinks = {
   header: `Quick links`,
   cards: [
     {
-      header: `aaa`,
-      text: `aaa`,
+      header: `State Filing Times`,
+      text: `Get started wih easy-to-follow guides, wizards, content and support documents. Help is only an email away.`,
       link: {
-        text: `aaa`,
+        text: `Learn more`,
         url: `/`,
       },
     },
     {
-      header: `aaa`,
-      text: `aaa`,
+      header: `Starting a Home Business`,
+      text: `Learn everything you need to launch your home business.`,
       link: {
-        text: `aaa`,
+        text: `Learn more`,
         url: `/`,
       },
     },
     {
-      header: `aaa`,
-      text: `aaa`,
+      header: `LLC State/Corporation State Information`,
+      text: `Learn more about LLCs/Corporation in your state.`,
       link: {
-        text: `aaa`,
+        text: `Learn more`,
         url: `/`,
       },
     },
     {
-      header: `aaa`,
-      text: `aaa`,
+      header: `Ongoing Filing Requirements`,
+      text: `Review your states ongoing filing requirements.`,
       link: {
-        text: `aaa`,
+        text: `Learn more`,
         url: `/`,
       },
     },
     {
-      header: `aaa`,
-      text: `aaa`,
+      header: `Business Plan Tips`,
+      text: `Read our guide to the 10 things your business plan needs.`,
       link: {
-        text: `aaa`,
+        text: `Learn more`,
         url: `/`,
       },
     },
     {
-      header: `aaa`,
-      text: `aaa`,
+      header: `Small Business Workshops`,
+      text: `Check out our list of free entrepreneur workshops, seminars, business training and webinars.`,
       link: {
-        text: `aaa`,
+        text: `Learn more`,
         url: `/`,
       },
     },
     {
-      header: `aaa`,
-      text: `aaa`,
+      header: `State Filing Fees`,
+      text: `Use our comparison tool to determine the processing fee fro each state.`,
       link: {
-        text: `aaa`,
+        text: `Learn more`,
         url: `/`,
       },
     },
     {
-      header: `aaa`,
-      text: `aaa`,
+      header: `S-Corp Tax Calculator`,
+      text: `Review the potential tax savings by forming an S-Corporation`,
       link: {
-        text: `aaa`,
+        text: `Learn more`,
         url: `/`,
       },
     },
     {
-      header: `aaa`,
-      text: `aaa`,
+      header: `Entity Comparison Chart`,
+      text: `Ongoing filing and compliance Review the benefits of each entity to determine which type is best for you`,
       link: {
-        text: `aaa`,
+        text: `Learn more`,
         url: `/`,
       },
     },
   ],
-};
+}
+
+export const variants = {
+  header: 
+    `See how easy it can be to get your business incorporated`,
+  
+  link: {
+    text:
+    `Learn more`,
+    url:
+    `/`,
+  },
+  cards: [
+    {
+      color:
+      `silver`,
+      variant:
+      `the basics`,
+      price:
+      `0$`,
+      text:
+      `The Basics To Get Started:`,
+      list: [
+      `Prepare & File Articles`,
+      `FREE Registered Agent for 1st Year`,
+      `FREE Registered Agent for 1st Year`,
+      ],
+      link: {
+        text:
+        `Get Started`,
+        url:
+        `/`,
+      },
+      text:
+      `+ $75 (state fee)`,
+    },
+    {
+      color:
+      `silver`,
+      variant:
+      `most popular`,
+      price:
+      `$149`,
+      text:
+      `Everything from Silver plus:`,
+      list: [
+        `EIN / Tax ID Number (req. to open a bank account)`,
+        `Personalized Operating Agreement`,
+        `Customized LLC Kit`,
+      ],
+      link: {
+        text:
+        `Get Started`,
+        url:
+        `/`,
+      },
+      text:
+      `+ $75 (state fee)`,
+    },
+    {
+      color:
+      `platinum`,
+      variant:
+      `best value`,
+      price:
+      `$299`,
+      text:
+      `Everything from Silver & Gold plus:`,
+      list: [
+        `Expedited Filing (State completes filing faster)`,
+        `FedEx Delivery`,
+        `Contracts Library (25+ high quality documents)`,
+      ],
+      link: {
+        text:
+        `Get Started`,
+        url:
+        `/`,
+      },
+      text:
+      `+ $75 (state fee)`,
+    }
+
+  ],  
+}

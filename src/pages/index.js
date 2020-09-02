@@ -34,6 +34,7 @@ const Wrapper = styled.div`
     }
   }
 `;
+
 const IndexPage = () => (
   <Layout>
     <Container>
@@ -64,16 +65,16 @@ const IndexPage = () => (
         <Link to="/learning-center-entity/help-center-article">Help Center Article (no video)</Link>
         <Link to="/learning-center-entity/comparison-chart">Comparison Chart (WIP)</Link>
         <Link to="/learning-center-entity/business-checklist">Business Checklist (WIP)</Link>
-        <Link to="/learning-center-entity/annual-report">Annual Report Due Date (WIP)</Link>
-        <Link to="/learning-center-entity/business-license-req">Business License Requirements (WIP)</Link>
+        <Link to="/learning-center-entity/annual-report">Annual Report Due Date</Link>
+        <Link to="/learning-center-entity/business-license-req">Business License Requirements (no API)</Link>
         <Link to="/learning-center-entity/start-a-business">Business Startup Guides (no details)</Link>
         <Link to="/learning-center-entity/guide-to-start">Guide To Start (no details)</Link>
-        <Link to="/learning-center-entity/registered-agents">Registered Agents (WIP)</Link>
+        <Link to="/learning-center-entity/registered-agents">Registered Agents</Link>
         <Link to="/learning-center-entity/s-corp-tax-calculator">S Corp Tax Calculator (WIP)</Link>
         <Link to="/learning-center-entity/sales-tax-calculator">Sales Tax Calculator (WIP)</Link>
         <Link to="/learning-center-entity/state-filing-times">State Filing Times (no details)</Link>
         <Link to="/learning-center-entity/state-information-california">State Information California (WIP)</Link>
-        <Link to="/learning-center-entity/ongoing-filing-requirements">Ongoing Filing Requirements (WIP)</Link>
+        <Link to="/learning-center-entity/ongoing-filing-requirements">Ongoing Filing Requirements (no details)</Link>
         <Link to="/learning-center-entity/business-resources">Business Resources (WIP)</Link>
         <h2>Other</h2>
         <Link to="/other/form-an-llc">Form An LLC (WIP)</Link>

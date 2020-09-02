@@ -12,7 +12,6 @@ import OvalSVG from "../../../../images/ovals/top-left-transparent-babyblue.inli
 
 const About = styled.section`
   position: relative;
-  padding-bottom: 104px;
 `;
 
 const AboutSection = ({ className, content }) => (
@@ -20,14 +19,12 @@ const AboutSection = ({ className, content }) => (
     <Oval className="oval" height="570" width="570" y="-40">
       <OvalSVG />
     </Oval>
-    <ImageContent image="registered-agents-about">
-      <Heading size={3} bottomMargin="48">
-        {content.header}
-      </Heading>
-      <Paragraph big bottomMargin="40">
+    <ImageContent image="registered-agents-about-8281">
+      <Heading size={3}>{content.header}</Heading>
+      <Paragraph big bottomMargin="72">
         {content.text}
       </Paragraph>
-      <IconTextColorBox color={color.blue3} Icon={IconSVG} content={content.box} bottomMargin="48" rounded curve />
+      <IconTextColorBox color={color.blue3} Icon={IconSVG} content={content.box} rounded curve />
     </ImageContent>
   </About>
 );

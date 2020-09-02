@@ -13,7 +13,7 @@ import OvalSVG from "../../../../images/ovals/top-left-transparent-blue2.inline.
 import Oval2SVG from "../../../../images/ovals/bottom-right-transparent-blue2.inline.svg";
 import CurveSVG from "../../../../images/curves/top-left-bottom-right.inline.svg";
 
-const Requirments = styled.section`
+const Requirements = styled.section`
   position: relative;
   padding-top: 75px;
   padding-bottom: 64px;
@@ -38,8 +38,8 @@ const Grid = styled.div`
   grid-gap: 30px;
 `;
 
-const RequirmentsSection = ({ className, content }) => (
-  <Requirments className={className}>
+const RequirementsSection = ({ className, content }) => (
+  <Requirements className={className}>
     <Oval className="oval" height="136" width="136" top="0" left="0">
       <OvalSVG />
     </Oval>
@@ -95,7 +95,7 @@ const RequirmentsSection = ({ className, content }) => (
         </Paragraph>
       </TextWrapper>
     </ObjectContent>
-  </Requirments>
+  </Requirements>
 );
 
-export default RequirmentsSection;
+export default RequirementsSection;

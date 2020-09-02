@@ -13,12 +13,14 @@ import About from "../../atomic/sections/learning-center-entity/registered-agent
 import WhatAgentDo from "../../atomic/sections/learning-center-entity/registered-agents/what-agent-do";
 import OtherNames from "../../atomic/sections/learning-center-entity/registered-agents/other-names";
 import Need from "../../atomic/sections/learning-center-entity/registered-agents/need";
-import CheckType from "../../atomic/sections/learning-center-entity/start-a-business/check-type";
-import BusinessStructure from "../../atomic/sections/learning-center-entity/start-a-business/business-structure";
-import Rocket from "../../atomic/sections/review-entity-type/c-corporation/rocket";
-import Searchbar from "../../atomic/molecules/form/searchbar";
+import Requirements from "../../atomic/sections/learning-center-entity/registered-agents/requirements";
+import WhatHappens from "../../atomic/sections/learning-center-entity/registered-agents/what-happens";
+import Faq from "../../atomic/sections/learning-center-entity/registered-agents/faq";
+import Service from "../../atomic/sections/learning-center-entity/registered-agents/service";
+import LearnMore from "../../atomic/sections/learning-center-entity/registered-agents/learn-more";
+import Articles from "../../atomic/sections/articles";
 //Texts
-import { top, about, whatAgentDo, otherNames, need } from "../../static/learning-center-entity/registered-agents";
+import { top, about, whatAgentDo, otherNames, need, requirements, whatHappens, faq, service, learnMore } from "../../static/learning-center-entity/registered-agents";
 
 const RegisteredAgents = () => (
   <Layout>
@@ -38,6 +40,12 @@ const RegisteredAgents = () => (
     <WhatAgentDo content={whatAgentDo} />
     <OtherNames content={otherNames} />
     <Need content={need} />
+    <Requirements content={requirements} />
+    <WhatHappens content={whatHappens} />
+    <Faq content={faq} />
+    <Service content={service} />
+    <LearnMore content={learnMore} />
+    <Articles />
   </Layout>
 );
 

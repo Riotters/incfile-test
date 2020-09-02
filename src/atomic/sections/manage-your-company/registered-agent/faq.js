@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { gradient } from "../../../atoms/styles/colors"
+import { gradient } from "../../../atoms/styles/colors";
 import HeadingCenter from "../../../partials/heading-center";
 import ContentCenter from "../../../partials/content-center";
 import Accordion from "../../../organisms/accordion/accordion";
@@ -13,36 +13,35 @@ const Faq = styled.section`
   padding-top: 75px;
 
   &::before {
-    content: '';
+    content: "";
     height: 1870px;
     width: 100%;
     background-image: ${gradient.orange3};
     position: absolute;
     top: 0;
     left: 0;
-}
+  }
 
   .headline {
     h2 {
-        margin-bottom: 0;
+      margin-bottom: 0;
     }
   }
-  
 `;
 
 const FaqSection = ({ className, content }) => (
-    <Faq className={className}>
-        <Oval className="oval" height="570" width="570" top="0" left="0">
-            <OvalSVG />
-        </Oval>
-        <Oval className="oval" height="570" width="570" bottom="0" right="0" y="142" opacity="0.6">
-            <Oval2SVG />
-        </Oval>
-        <HeadingCenter className="headline" headline={content.header} headlineWidth="640" />
-        <ContentCenter>
-            <Accordion content={content.faq} />
-        </ContentCenter>
+  <Faq className={className}>
+    <Oval className="oval" height="570" width="570" top="0" left="0">
+      <OvalSVG />
+    </Oval>
+    <Oval className="oval" height="570" width="570" bottom="0" right="0" y="142" opacity="0.6">
+      <Oval2SVG />
+    </Oval>
+    <HeadingCenter className="headline" headline={content.header} headlineWidth="640" />
+    <ContentCenter>
+      <Accordion content={content.faq} />
+    </ContentCenter>
   </Faq>
-  );
-  
-  export default FaqSection;
+);
+
+export default FaqSection;

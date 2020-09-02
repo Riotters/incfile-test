@@ -1,20 +1,21 @@
 import React from "react";
 import styled from "styled-components";
-import {color} from "../../../../components/styles/colors";
+import { color, gradient } from "../../../../components/styles/colors";
 import { states } from "../../../../components/states"
 import Dropdown from "../../../molecules/form/dropdown";
 import ContentCenter from "../../../partials/content-center";
 import TextCenterLayout from "../../../../components/partials/blocks/heading-center";
 import TopImageBox from "../../../../components/top-image-box";
 import Button from "../../../molecules/buttons/button";
-import Curve from "../../../../images/green-curve.inline.svg";
-import GreenOval from "../../../../images/oval-green-2.inline.svg";
+import Oval from "../../../atoms/icons/oval";
+import OvalSVG from "../../../../images/ovals/top-left-transparent-blue2.inline.svg";
 import { Heading } from "../../../atoms/typography/heading"
 
 const SearchTool = styled.div`
     padding-bottom: 100px;
     padding-top: 100px;
     position: relative;
+    background-image: ${gradient.blue3};
 `;
 
 
@@ -89,22 +90,16 @@ const GreenCurve = styled.div`
     width: 115px;
 `;
 
-const Oval = styled.div`
-    position: absolute;
-    right: 0;
-    top: 220px;
-`;
-
 const dropdownOptions = states.state.map(state => (state.name));
-const dropdownOptionsTwo = ["option 1", "option 2", "option 3"]
+const dropdownOptionsTwo = ["Option 1", "Option 2", "Option 3"]
 
 const SearchToolSection = ({ content }) => {
     const cards = content.cards
 
     return (
         <SearchTool>
-            <Oval>
-                <GreenOval/>
+            <Oval heigh="720" width="720" top="0" left="0">
+                <OvalSVG/>
             </Oval>
             <ContentCenter>
                 <TextCenterLayout
@@ -115,11 +110,11 @@ const SearchToolSection = ({ content }) => {
                 <ImageBoxes>
                     <TopImageBox className="box box--left" image="your-state" color={color.blue3} >
                         <Heading size="4">{cards[0]}</Heading>
-                        <Dropdown className="dropdown" placeholder="select" options={dropdownOptions} />
+                        <Dropdown className="dropdown" placeholder="Select" options={dropdownOptions} />
                     </TopImageBox>
                     <TopImageBox className="box box--right" image="forming-a-corporation" color={color.orange3}>
                         <Heading size="4">{cards[1]}</Heading>
-                        <Dropdown className="dropdown" placeholder="select" options={dropdownOptionsTwo} />
+                        <Dropdown className="dropdown" placeholder="Select" options={dropdownOptionsTwo} />
                     </TopImageBox>
                 </ImageBoxes>
                 <Button content={content.button} theme="primary56" arrow />

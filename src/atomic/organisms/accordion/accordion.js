@@ -28,11 +28,17 @@ const Curve = styled.div`
 
   @media (min-width: 769px) {
     display: block;
-    top: ${(props) => (!props.curveRightBottom ? "0" : "")};
-    left: ${(props) => (props.curveRight || props.curveRightBottom ? "" : "0")};
+    top: ${(props) => (!props.curveRightBottom && !props.curveLeftBottom ? "0" : "")};
+    left: ${(props) => (props.curveLeft || props.curveLeftBottom ? "0" : "")};
     right: ${(props) => (props.curveRight || props.curveRightBottom ? "0" : "")};
-    bottom: ${(props) => (props.curveRightBottom ? "-25px" : "")};
-    transform: ${(props) => (props.curveRight ? "rotate(90deg)" : props.curveRightBottom ? "rotate(180deg)" : "")};
+    bottom: ${(props) => (props.curveRightBottom || props.curveLeftBottom ? "-25px" : "")};
+    transform: ${(props) => (props.curveRight ? "rotate(90deg)" : props.curveRightBottom ? "sacle(-1)" : props.curveLeftBottom ? "rotate(-90deg)" : "")};
+  }
+
+  svg {
+    path {
+      fill: ${props => props.curveColor ? props.curveColor : ""};
+    }
   }
 `;
 
@@ -187,13 +193,13 @@ const Panel = ({ children }) => {
   );
 };
 
-const Accordion = ({ content, curve, curveRight, curveRightBottom, tab }) => {
+const Accordion = ({ content, curve, curveRight, curveRightBottom, curveLeft, curveLeftBottom, curveColor, tab }) => {
   return (
     <VisibilitySensor partialVisibility once>
       {({ isVisible }) => (
         <Wrapper className={isVisible ? "slideUp enter" : "slideUp"} tab={tab}>
           {curve && (
-            <Curve curveRight={curveRight} curveRightBottom={curveRightBottom}>
+            <Curve curveRight={curveRight} curveRightBottom={curveRightBottom} curveLeft={curveLeft} curveLeftBottom={curveLeftBottom} curveColor={curveColor}>
               <CurveSVG />
             </Curve>
           )}

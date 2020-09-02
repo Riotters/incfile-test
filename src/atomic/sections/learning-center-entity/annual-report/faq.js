@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { color } from "../../../atoms/styles/colors";
 import HeadingCenter from "../../../partials/heading-center";
 import ContentCenter from "../../../partials/content-center";
 import Accordion from "../../../organisms/accordion/accordion";
@@ -24,7 +25,7 @@ const FaqSection = ({ className, content }) => (
         </Oval>
         <HeadingCenter headline={content.header} headlineWidth="640" />
         <ContentCenter>
-            <Accordion content={content.faq} />
+            <Accordion content={content.faq} curve curveLeftBottom curveColor={color.blue1}/>
         </ContentCenter>
   </Faq>
   );

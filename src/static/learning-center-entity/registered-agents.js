@@ -39,7 +39,7 @@ export const otherNames = {
 export const need = {
   header: `Do I Need a Registered Agent?`,
   text: `All businesses that are formed as legal entities are required to name a Registered Agent. These types of businesses are:`,
-  list: [`Limited Liability Company (LLC)`, `Limited Liability Company (LLC)`, `C Corporation`, `Limited Partnership (LP)`, `Limited Liability Partnership (LLP)`, `Nonprofit corporation, including a corporation using a 501(c)(3)`],
+  list: [`Limited Liability Company (LLC)`, `S Corporation`, `C Corporation`, `Limited Partnership (LP)`, `Limited Liability Partnership (LLP)`, `Nonprofit corporation, including a corporation using a 501(c)(3)`],
   text2: `All of these business entities, regardless of the state they are registered in, must have a Registered Agent.`,
   button: {
     text: `Show more`,
@@ -65,7 +65,7 @@ export const requirements = {
 export const whatHappens = {
   header: `What Happens If I Don’t Have a Registered Agent?`,
   text: `If you do not assign or provide details of your organization's Registered Agent to the secretary of state, you could face significant problems, including:`,
-  boxes: [
+  cards: [
     {
       header: `Legal problems`,
       text: `Being served to appear in court and not knowing about it, resulting in a default judgment in your absence and other legal problems`,

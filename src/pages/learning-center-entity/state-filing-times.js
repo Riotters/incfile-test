@@ -8,14 +8,14 @@ import RatingBlock from "../../atomic/molecules/blocks/rating-block";
 import Top from "../../atomic/partials/top";
 import Tables from "../../atomic/sections/learning-center-entity/state-filing-times/tables";
 import Cta from "../../atomic/sections/general/cta";
-import Articles from "../../atomic/sections//articles";
+import Articles from "../../atomic/sections/articles";
 //Texts
 import { top, tables } from "../../static/learning-center-entity/state-filing-times";
 
 const StateFilingTimes = () => (
   <Layout>
     <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
-    <Top imageName="aaa" imageAlt="Mrs Bulb and with checklist" ovalColor="purple-2" textWidth="530">
+    <Top imageName="mr-bulb-state-filing-times-3289" imageAlt="Mrs Bulb and with checklist" ovalColor="purple-2" textWidth="530">
       <h1>{top.header}</h1>
       <p>{top.text}</p>
       <RatingRow topMargin="0">

@@ -20,6 +20,10 @@ const Content = styled.div`
   @media (min-width: 769px) {
     max-width: ${props => (props.contentWidth ? `${props.contentWidth}px` : "")};
   }
+
+  h2 {
+    text-align: left;
+  }
 `;
 
 const ContentLeft = ({ className, children, contentWidth, headlineWidth, textWidth}) => {

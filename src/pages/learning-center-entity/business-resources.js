@@ -8,15 +8,17 @@ import CartBlock from "../../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../../atomic/molecules/blocks/rating-block";
 //Sections
 import Top from "../../atomic/partials/top";
-import About from "../../atomic/sections/learning-center-entity/business-license-req/about";
+import About from "../../atomic/sections/learning-center-entity/business-resources/about";
+import Resources from "../../atomic/sections/learning-center-entity/business-resources/resources";
+import FurtherResources from "../../atomic/sections/learning-center-entity/business-resources/further-resources";
 import Articles from "../../components/partials/sections/articles";
 //Texts
-import { top, about } from "../../static/learning-center-entity/business-resources";
+import { top, about, resources, furtherResources } from "../../static/learning-center-entity/business-resources";
 
 const BusinessResources = () => (
   <Layout>
     <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
-    <Top imageName="mrs-bulb-business-license-requirements" imageAlt="Mrs Bulb and with checklist" ovalColor="sun">
+    <Top imageName="mr-bulb-business-downloads-tools-7829" imageAlt="Mrs Bulb and with checklist" ovalColor="purple-2" headlineWidth="550">
       <h1>{top.header}</h1>
       <p>{top.text}</p>
       <RatingRow topMargin="0">
@@ -25,6 +27,8 @@ const BusinessResources = () => (
       </RatingRow>
     </Top>
     <About content={about} />
+    <Resources content={resources} />
+    <FurtherResources content={furtherResources} />
     <Articles />
   </Layout>
 );
