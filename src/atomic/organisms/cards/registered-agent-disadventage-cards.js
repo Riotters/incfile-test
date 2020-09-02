@@ -13,11 +13,16 @@ const Wrapper = styled.div`
     margin: 0 auto;
     padding-top: 104px;
 
-    @media (min-width: 769px) {
+    @media (min-width: 992px) {
       grid-template-columns: 1fr 1fr 1fr;
     }
 
     .card {
+        & > div {
+            padding: 56px 25px 48px;
+            margin: 0 auto;
+        }
+
         h4, p {
             text-align: center;
         }
