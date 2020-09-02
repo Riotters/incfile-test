@@ -33,7 +33,7 @@ const Grid = styled.div`
 `;
 
 const colors = [color.orange3, color.green3, color.green3, color.babyblue3, color.purple3, color.blue3, color.yellow3, color.red3, color.blue3,];
-const icons = ["State Filling Times3050", "Starting a Home Business3959", "Corporation State Information3850", "Ongoing Filling Requirement2930", "Business_Plan_Tips3859", "Small Business Workshops2049", "State Filling Fees5930", "Entity_Comparison_Chart2959",];
+const icons = ["State Filling Times3050", "Starting a Home Business3959", "Corporation State Information3850", "Ongoing Filling Requirement2930", "Business_Plan_Tips3859", "Small Business Workshops2049", "State Filling Fees5930", "S-Corp Tax Calculator9404", "Entity_Comparison_Chart2959",];
 
 const QuickLinksSection = ({ className, content }) => (
   <QuickLinks className={className}>
