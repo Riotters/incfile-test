@@ -34,7 +34,7 @@ const Grid = styled.div`
 `;
 
 const colors = [color.orange3, color.red3, color.babyblue3, color.purple3];
-const icons = ["bc-11", "certificate-305", "receive", "bulb-gear-7881"];
+const icons = ["bc-11", "digital-dashboard3406", "receive", "automatic-forwarding2369"];
 
 const ServiceSection = ({ className, content }) => (
   <Service className={className}>

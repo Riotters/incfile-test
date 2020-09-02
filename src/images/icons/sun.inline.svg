@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="20200406_ICON_ICON-314">
+            <path d="M23.840013,17.36 C23.8429549,19.0855824 23.3425178,20.7745576 22.4,22.22 C21.9084699,22.721546 21.3577591,23.161443 20.76,23.53 C20.6199293,23.638418 20.4691461,23.7322387 20.31,23.81 L20.25,23.81 C17.0193393,25.5621499 13.0443313,25.1508892 10.2408228,22.7744344 C7.43731417,20.3979796 6.38060477,16.5439961 7.58,13.07 C7.64,12.9 7.7,12.73 7.77,12.56 L7.77,12.56 C7.77,12.43 7.88,12.3 7.94,12.18 C8.10095621,11.8329064 8.28816646,11.4986023 8.5,11.18 C11.0168131,8.550047 14.8815093,7.71787909 18.2576855,9.0789208 C21.6338618,10.4399625 23.8408711,13.7198238 23.83,17.36 L23.840013,17.36 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+            <path d="M24.9200368,16 C24.9244795,17.7811293 24.395035,19.5227231 23.4,21 L23.27,21.19 C23.1614025,21.3493086 23.0445775,21.5028501 22.92,21.65 C22.7573047,21.8526132 22.5837152,22.0462322 22.4,22.23 C21.9084699,22.731546 21.3577591,23.171443 20.76,23.54 C20.6199293,23.648418 20.4691461,23.7422387 20.31,23.82 L20.25,23.82 C17.017424,25.5754656 13.038349,25.163955 10.2334422,22.7841012 C7.42853535,20.4042473 6.37445612,16.5453231 7.58,13.07 C7.64,12.9 7.7,12.73 7.77,12.56 L7.77,12.56 C7.77,12.43 7.88,12.3 7.94,12.18 C8.10095621,11.8329064 8.28816646,11.4986023 8.5,11.18 C10.6329054,7.83906361 14.7163741,6.30882722 18.5196278,7.42525126 C22.3228815,8.54167531 24.9313337,12.036288 24.9200368,16 Z" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+            <line x1="16" y1="0.7" x2="16" y2="4.6" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="16" y1="27.4" x2="16" y2="31.3" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="4.6" y1="16" x2="0.7" y2="16" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="4.6" y1="16" x2="0.7" y2="16" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="31.3" y1="16" x2="27.4" y2="16" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="7.94" y1="7.94" x2="5.18" y2="5.18" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="26.83" y1="26.8" x2="24.07" y2="24.05" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="5.18" y1="26.82" x2="7.94" y2="24.06" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="24.06" y1="7.94" x2="26.82" y2="5.18" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></line>
+        </g>
+    </g>
+</svg>

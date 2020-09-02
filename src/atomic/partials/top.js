@@ -44,6 +44,9 @@ const switch1 = (ovalColor) => {
     case "love": {
       return "#fdabab";
     }
+    case "babyblue" : {
+      return "#71bef8";
+    }
     default:
       return "";
   }
@@ -86,6 +89,9 @@ const switch2 = (ovalColor) => {
     }
     case "love": {
       return "#f9e0e0";
+    }
+    case "babyblue" : {
+      return "#d2eeff";
     }
     default:
       return "";

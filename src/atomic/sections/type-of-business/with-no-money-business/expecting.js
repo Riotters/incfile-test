@@ -10,7 +10,8 @@ import {color} from "../../../../components/styles/colors";
 import React from "react";
 import styled from "styled-components";
 import OvalBlueSVG from "../../../../images/oval-blue-4.inline.svg";
-import {gradient} from "../../../atoms/styles/colors";
+import ContentCenter from "../../../partials/content-center";
+import TextCenterLayout from "../../../partials/heading-left";
 
 const ContainerWrapper = styled.div`
     background: rgb(255,255,255);
@@ -107,13 +108,31 @@ const Expecting = () => (
 
             <GridSection>
                 <TitleBox>
-                    <Heading size={3}>
-                        What to Expect When Starting
-                        a Business with Low Capital
-                    </Heading>
+                    <TextCenterLayout headline="Understanding the World of the Photography Business" />
                     <Paragraph big>
-                        As a new entrepreneur, here’s what you can expect throughout the lifecycle
-                        of starting, running and growing a business with a lack of finances!
+                        Photography is a very specialized skill; it requires people with both a keen eye and
+                        an understanding of composition, editing, framing and more to create stunning images. Add to that
+                        the need to manage others well plus a solid understanding
+                        of business principles...you'll see that freelance photographers need to be well-rounded
+                        individuals.
+                    </Paragraph>
+
+                    <Paragraph big style={{fontWeight: "bold"}}>
+                        There are dozens of different niches you can choose to pursue as a photographer.
+                    </Paragraph>
+
+                    <Paragraph big>
+                        If you can make your name in one of them, your reputation will carry you a long way. Here are some
+                        areas to consider when choosing the type of photographer you want to be.
+                    </Paragraph>
+                    <Paragraph big>
+                        When you’re deciding which route to follow, look at local competition, your skillset, demand for
+                        these services in your area and any other local factors likely to impact the amount of photography
+                        business you can win.
+                    </Paragraph>
+                    <Paragraph big>
+                        The most popular types of photography in descending order are: portrait, fine arts, events, wedding,
+                        advertising, photojournalism, nature, marketing, products and architecture.
                     </Paragraph>
                 </TitleBox>
 
@@ -136,7 +155,8 @@ const Expecting = () => (
                             is cash flow
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
-                            You will need to minimize and strictly control costs. You must manage your finances on a daily basis and quickly build up a financial buffer.
+                            You will need to minimize and strictly control costs. You must manage your finances on a
+                            daily basis and quickly build up a financial buffer.
                         </Paragraph>
                     </TextBlockWithImage>
 
@@ -146,7 +166,8 @@ const Expecting = () => (
                             There is lots (and lots) of competition
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
-                            Some of them will have money, some of them won’t. Competition is a fact of life and shows there’s
+                            Some of them will have money, some of them won’t. Competition is a fact of life and shows
+                            there’s
                             a demand for what you’re offering.
                         </Paragraph>
                     </TextBlockWithImage>
@@ -157,7 +178,9 @@ const Expecting = () => (
                             There are plenty of people out there who can help
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
-                            And they don’t all cost money! Although you can pay for professional help, taking part in online discussion groups, meetups and networking events can often get you some good advice for free.
+                            And they don’t all cost money! Although you can pay for professional help, taking part in
+                            online discussion groups, meetups and networking events can often get you some good advice
+                            for free.
                         </Paragraph>
                     </TextBlockWithImage>
 
@@ -167,7 +190,8 @@ const Expecting = () => (
                             Getting your idea and product or service fit right is essential
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
-                            Although you won’t be risking as much financially, you should always spend at least as long researching and validating your idea as you do on setting up your business.
+                            Although you won’t be risking as much financially, you should always spend at least as long
+                            researching and validating your idea as you do on setting up your business.
                         </Paragraph>
                     </TextBlockWithImage>
 
@@ -177,7 +201,8 @@ const Expecting = () => (
                             Grow organically
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
-                            Without the cash for big marketing efforts or customer pushes, you should grow organically and sustainably instead.
+                            Without the cash for big marketing efforts or customer pushes, you should grow organically
+                            and sustainably instead.
                         </Paragraph>
                     </TextBlockWithImage>
 
@@ -197,7 +222,8 @@ const Expecting = () => (
                             Expect to be stressed and anxious
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
-                            A lack of money is stressful. Until you see sustainable success, expect some sleepless nights.
+                            A lack of money is stressful. Until you see sustainable success, expect some sleepless
+                            nights.
                         </Paragraph>
                     </TextBlockWithImage>
                 </GridSectionList>

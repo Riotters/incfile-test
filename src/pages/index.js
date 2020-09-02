@@ -112,6 +112,18 @@ const IndexPage = () => (
         <Link to="/type-of-business/teen-business">Teen Business (no details)</Link>
         <Link to="/type-of-business/consulting-business">Consulting Business (no details)</Link>
         <Link to="/type-of-business/with-no-money-business">With No Money Business (no details)</Link>
+        <Link to="/type-of-business/photography-business">Photograpshy Business (no details)</Link>
+        <Link to="/type-of-business/women-business">Women Business (no details)</Link>
+        <Link to="/type-of-business/restaurant-business">Restaurant Business (no details)</Link>
+        <Link to="/type-of-business/summer-business">Summer Business (no details)</Link>
+        <Link to="/type-of-business/dog-walking">Dog Walking (no details)</Link>
+        <Link to="/type-of-business/brewery-business">Brewery Business (no details)</Link>
+        <Link to="/type-of-business/blockchain">Blockchain (no details)</Link>
+        <Link to="/type-of-business/bookstore">Bookstore (no details)</Link>
+        <Link to="/type-of-business/bed-and-breakfast">Bed and Breakfast (no details)</Link>
+        <Link to="/type-of-business/laundromat">Laundromat (no details)</Link>
+        <Link to="/type-of-business/landscaping-business">Landscaping Business (no details)</Link>
+
         <h2>Additional sites</h2>
         <Link to="/components">Components</Link>
         <Link to="/404">404</Link>
