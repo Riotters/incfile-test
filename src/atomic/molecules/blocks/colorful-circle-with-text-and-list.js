@@ -6,8 +6,8 @@ import {shadow} from "../../atoms/styles/shadows";
 import CircleSvg from "../../../images/circle-percentage.inline.svg";
 import {Paragraph} from "../../atoms/typography/paragraph";
 
-const ColorFulCircleWithTextAndList = ({CircleSVG, title, list, withBg, titleWidth}) => (
-    <Wrapper withBg={withBg}>
+const ColorFulCircleWithTextAndList = ({CircleSVG, title, list, withBg, titleWidth, ...rest}) => (
+    <Wrapper withBg={withBg} {...rest}>
         {title &&
             <Title width={titleWidth}>
                 {title}

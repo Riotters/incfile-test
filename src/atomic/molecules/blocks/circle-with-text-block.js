@@ -39,7 +39,7 @@ const Wrapper = styled.div`
     max-height: 270px;
     display: flex;
     align-items: center;
-    padding: 40px 40px 40px 0;
+    padding: 40px 40px 40px 40px;
     
     ${props => props.withBg &&
         "background-color:" + color.white + ";" +
@@ -53,9 +53,7 @@ const Wrapper = styled.div`
 
 const Circle = styled.div`
     position: relative;
-    width: 270px;
-    margin-left: 44px;
-    margin-right: 48px;
+    width: 180px;
 `
 
 const TextInside = styled.div`
@@ -94,6 +92,8 @@ const TextBox = styled.div`
     padding-right: 48px;
     padding-bottom: 24px;
     padding-top: 24px;
+    margin-left: 44px;
+    width: calc(100% - 160px);
 `;
 
 export default CircleWithText;

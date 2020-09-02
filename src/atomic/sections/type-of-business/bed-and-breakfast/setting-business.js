@@ -1,0 +1,113 @@
+import React from "react";
+import Container from "../../../container";
+import TextCenterLayout from "../../../../components/partials/blocks/heading-center";
+import TopImageBox from "../../../../components/top-image-box";
+import {color} from "../../../../components/styles/colors";
+import styled from "styled-components";
+import GreenOval from "../../../../images/oval-green-2.inline.svg";
+import {gradient} from "../../../atoms/styles/colors";
+
+const SettingBusiness = () => (
+    <WrapperContainer>
+
+        <Oval>
+            <GreenOval/>
+        </Oval>
+
+        <Container>
+            <TextCenterLayout
+                headline="Setting up Your Boutique Hotel and Business Operations"
+                headlineWidth="700"
+                text="Once you've legally created your bed and breakfast business, you’ll need to get some other things in place."
+            />
+            <ImageBoxes>
+
+                <TopImageBox image="location" color={color.red3}>
+                    <h4>Location of your Bed and Breakfast or Hotel</h4>
+                    <p>
+                        This is, by far, the most important choice you’ll make. You will need to secure a property large enough
+                        to give you all the B&B rooms you need to reliably generate revenue based on expected occupancy.
+                        Of course, you can choose to live in the property
+                        as well, which will reduce your expenses and ensure you’re on hand when needed. Choose a location that’s suited to the type of guests you want to attract. Look at other competitors in your immediate area,
+                        as you don’t want to be on each other’s doorsteps.
+                    </p>
+                </TopImageBox>
+
+                <TopImageBox image="display-ads" color={color.red3}>
+                    <h4>Marketing Your Bed and Breakfast or Hotel</h4>
+                    <p>
+                        Marketing will be a huge part of your bed and breakfast business. Naturally, you will need
+                        an awesome website, but you'll also need to get branding, newsletters, digital ads, social media accounts and other channels in place. You should also focus on review websites like TripAdvisor or Yelp.
+                        See if you can get into partnerships with travel agents and similar businesses, and market your B&B through travel portals and aggregators.
+                    </p>
+                </TopImageBox>
+
+                <TopImageBox image="software" color={color.blue3}>
+                    <h4>Software and Process</h4>
+                    <p>
+                        The right software and processes will make running your bed and breakfast business much easier. See our list of the best apps and software at the end of this guide.
+                    </p>
+                </TopImageBox>
+
+                <TopImageBox image="we-doubled-the-size-of-customer-service" color={color.orange3}>
+                    <h4>Employees</h4>
+                    <p>
+                        To begin with, you might want to do everything
+                        in your B&B yourself. Later on, you could look into hiring people for tasks like cleaning or cooking.
+                    </p>
+                </TopImageBox>
+
+                <TopImageBox image="state-filling-fees" color={color.yellow3}>
+                    <h4>Finances and Taxes</h4>
+                    <p>
+                        You will need a separate business bank account
+                        for your bed and breakfast business. You might also want to consider a business credit card. Additionally, you will also need to keep careful bookkeeping records and file business and personal taxes. Here
+                        at Incfile we can even help you file your taxes.
+                    </p>
+                </TopImageBox>
+
+            </ImageBoxes>
+        </Container>
+    </WrapperContainer>
+);
+
+const WrapperContainer = styled.div`
+    background: rgb(255,255,255);
+    background-image: ${gradient.blue3};
+    padding-bottom: 100px;
+    padding-top: 100px;
+    position: relative;
+`;
+
+
+const ImageBoxes = styled.div`
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 30px;
+  padding-top: 112px;
+  width: 100%;
+
+  @media(min-width: 769px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  @media (min-width: 970px) {
+    width: 970px;
+    margin: 0 auto;
+  }
+`;
+
+const GreenCurve = styled.div`
+    position: absolute;
+    right: -115px;
+    bottom: -122px;
+    width: 115px;
+`;
+
+const Oval = styled.div`
+    position: absolute;
+    right: 0;
+    top: 220px;
+`;
+
+export default SettingBusiness;
