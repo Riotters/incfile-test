@@ -27,17 +27,6 @@ const Wrapper = styled(Whitebox)`
   }
 `;
 
-const Grid = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 30px;
-  width: 100%;
-
-  .Dropdown-root {
-    min-width: 50px;
-  }
-`;
-
 const Flex = styled.div`
   display: flex;
   justify-content: space-between;
@@ -54,7 +43,7 @@ const LinkWrapper = styled.div`
   }
 `;
 
-const AnnualReportForm = ({ className, content }) => {
+const BusinessNameSearchForm = ({ className, content }) => {
   return (
     <Wrapper className={className}>
       <Curve className="curve-shape" bottom="-25" left="-29" color={color.orange1}>
@@ -66,28 +55,36 @@ const AnnualReportForm = ({ className, content }) => {
       <Label htmlFor="company" content={content.field} bottomMargin="24">
         <Input placeholder="Company name" />
       </Label>
-      <Label htmlFor="state" content={content.field2} bottomMargin="16">
-        <Dropdown options={["aaa", "bbb", "ccc"]} placeholder="Select" />
-      </Label>
       <Flex>
-        <Label htmlFor="type" content={content.field3} bottomMargin="16">
+        <Label htmlFor="type" content={content.field2} bottomMargin="16">
           <Radio checked name="type" />
+          <Heading size="4" bottomMargin="0">
+            LLC
+          </Heading>
           <Radio name="type" />
+          <Heading size="4" bottomMargin="0">
+            Corporation
+          </Heading>
         </Label>
         <LinkWrapper>
           <ArrowLink content={content.link} bottomMargin="0" />
         </LinkWrapper>
       </Flex>
-      <Label htmlFor="date" content={content.field4}>
-        <Grid>
-          <Dropdown options={["01", "02", "03"]} placeholder="Month" />
-          <Dropdown options={["01", "02", "03"]} placeholder="Day" />
-          <Dropdown options={["2020", "2019", "2018"]} placeholder="Year" />
-        </Grid>
+      <Label htmlFor="state" content={content.field3} bottomMargin="16">
+        <Dropdown options={["aaa", "bbb", "ccc"]} placeholder="Select" />
+      </Label>
+      <Heading size="5" bottomMargin="16">
+        {content.header2}
+      </Heading>
+      <Label htmlFor="full-name" content={content.field4}>
+        <Input placeholder="Full name" />
+      </Label>
+      <Label htmlFor="email" content={content.field5}>
+        <Input placeholder="Email" />
       </Label>
       <Button content={content.button} theme="primary56" arrow marginSM="32px auto 0" />
     </Wrapper>
   );
 };
 
-export default AnnualReportForm;
+export default BusinessNameSearchForm;

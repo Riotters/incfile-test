@@ -17,30 +17,27 @@ const NextState = styled.section`
   background-color: ${color.orange3};
 `;
 
+const NextStateSection = ({ className, content }) => (
+  <NextState className={className}>
+    <Oval className="oval" height="720" width="720" top="0" right="0">
+      <OvalSVG />
+    </Oval>
+    <Oval className="oval" height="420" width="420" bottom="0" left="0">
+      <Oval2SVG />
+    </Oval>
+    <ContentObject object={<Form content={content.form} />} contentWidth="500" contentCenter>
+      <Heading size="2" bottomMargin="48" style={{ position: `relative` }}>
+        <Curve top="-85" left="-85" color={color.orange2}>
+          <CurveSVG />
+        </Curve>
+        {content.header}
+      </Heading>
+      <Heading size="4">{content.header2}</Heading>
+      <Paragraph big bottomMargin="0">
+        {content.text}
+      </Paragraph>
+    </ContentObject>
+  </NextState>
+);
 
-const NextStateSection = ({ className, content }) => {
-    const CheckDueDate = <Form content={content.form} />
-
-    return (
-        <NextState className={className}>
-            <Oval className="oval" height="720" width="720" top="0" right="0">
-                <OvalSVG />
-            </Oval>
-            <Oval className="oval" height="420" width="420" bottom="0" left="0">
-                <Oval2SVG />
-            </Oval>
-            <ContentObject object={CheckDueDate} contentWidth="500" contentCenter>
-                <Heading size="2" bottomMargin="48" style={{position: `relative`}}>
-                    <Curve top="-85" left="-85" color={color.orange2}>
-                        <CurveSVG />
-                    </Curve>
-                    {content.header}
-                </Heading>
-                <Heading size="4">{content.header2}</Heading>
-                <Paragraph big bottomMargin="0">{content.text}</Paragraph>
-            </ContentObject>
-        </NextState>
-    )
-  };
-  
-  export default NextStateSection;
+export default NextStateSection;

@@ -8,12 +8,13 @@ import CartBlock from "../../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../../atomic/molecules/blocks/rating-block";
 //Sections
 import Top from "../../atomic/partials/top";
-import About from "../../atomic/sections/learning-center-entity/business-resources/about";
-import Resources from "../../atomic/sections/learning-center-entity/business-resources/resources";
-import FurtherResources from "../../atomic/sections/learning-center-entity/business-resources/further-resources";
+import About from "../../atomic/sections/learning-center-entity/business-name-search/about";
+import Care from "../../atomic/sections/learning-center-entity/business-name-search/care";
+import Features from "../../atomic/sections/learning-center-entity/business-name-search/features";
+import Faq from "../../atomic/sections/learning-center-entity/business-name-search/faq";
 import Articles from "../../components/partials/sections/articles";
 //Texts
-import { top, about, resources, furtherResources } from "../../static/learning-center-entity/business-search-name";
+import { top, about, care, faq, features } from "../../static/learning-center-entity/business-name-search";
 
 const BusinessNameSearch = () => (
   <Layout>
@@ -22,6 +23,10 @@ const BusinessNameSearch = () => (
       <h1>{top.header}</h1>
       <p>{top.text}</p>
     </Top>
+    <About content={about} />
+    <Care content={care} />
+    <Features content={features} />
+    <Faq content={faq} />
     <Articles />
   </Layout>
 );
