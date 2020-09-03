@@ -76,7 +76,7 @@ const IndexPage = () => (
         <Link to="/learning-center-entity/state-information-california">State Information California (WIP)</Link>
         <Link to="/learning-center-entity/ongoing-filing-requirements">Ongoing Filing Requirements (no details)</Link>
         <Link to="/learning-center-entity/business-resources">Business Resources (WIP)</Link>
-        <Link to="/learning-center-entity/business-name-search">Business Name Search (WIP)</Link>
+        <Link to="/learning-center-entity/business-name-search">Business Name Search (no details)</Link>
         <h2>Other</h2>
         <Link to="/other/form-an-llc">Form An LLC (WIP)</Link>
         <h2>Blog</h2>
