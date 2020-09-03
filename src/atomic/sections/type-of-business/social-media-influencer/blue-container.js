@@ -2,14 +2,11 @@ import Container from "../../../container";
 import {Heading} from "../../../atoms/typography/heading";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import TextBoxed from "../../../molecules/text-blocks/text-boxed";
-import TextBlockWithImage from "../../../molecules/mixed-blocks/text-block-with-absolute-image";
-import OkIcon from "../../../../images/icons/ok.inline.svg";
-import {color} from "../../../../components/styles/colors";
 import React from "react";
 import styled from "styled-components";
-import OvalSVG from "../../../../images/oval-blue-3.inline.svg";
-import OvalBlueSVG from "../../../../images/oval-blue-4.inline.svg";
+import OvalSVG from "../../../../images/ovals/top-right-transparent-blue.inline.svg";
 import Curve from "../../../atoms/shapes/curve";
+import {color} from "../../../atoms/styles/colors";
 
 const BlueContainerWrapper = styled.div`
     background: rgb(242,246,255);
@@ -18,49 +15,10 @@ const BlueContainerWrapper = styled.div`
     position: relative;
 `;
 
-
-const GridSection = styled.div`
-    width: 100%;
-    margin-top: 110px;
-`;
-
-const TitleBox = styled.div`
-    width: 100%;
-    margin-bottom: 120px;
-    position: relative;
-     
-    @media (min-width:750px) {
-        width: 750px;
-        margin: 0 auto 120px;
-    }
-    
-    h3{
-        color: #1d1d1d;
-        font-size: 40px;
-        text-align: left;
-        margin-bottom: 24px;
-    }
-`;
-
-const GridSectionList = styled.div`
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 100%;
-    
-    > div {
-        margin-bottom: 70px;
-    }
-    
-    @media (min-width: 970px) {
-        width: 970px;
-        margin: 0 auto;
-    }
-`;
-
 const TextBorderedSection = styled.div`
     width: 100%;
     padding-top: 100px;
+    position: relative;
     
     @media (min-width: 670px) {
         width: 670px;
@@ -89,22 +47,10 @@ const TextBorderedList = styled.div`
 
 const Oval = styled.div`
   position: absolute;
-  left: 0;
+  right: 0;
   top: 0;
   display: none;
-  
-  @media (min-width: 720px){
-    display: block;
-  }
-`
-
-const OvalCenter = styled.div`
-  position: absolute;
-  right: 0;
-  top: 40%;
-  
-  display: none;
-  
+  width: 570px;
   @media (min-width: 720px){
     display: block;
   }
@@ -113,7 +59,7 @@ const OvalCenter = styled.div`
 const AbsoluteCurve = styled.div`
     position: absolute;
     left: -27px;
-    top: -16px;
+    top: 82px;
     transform: rotate(-90deg);
 `;
 
@@ -122,14 +68,17 @@ const BlueContainer = () => (
         <Oval>
             <OvalSVG/>
         </Oval>
-        <OvalCenter>
-            <OvalBlueSVG/>
-        </OvalCenter>
 
         <Container>
 
             <TextBorderedSection>
-                <Heading size={3} style={{textAlign: "left"}}>The Best Platforms for Influencers — Instagram and YouTube</Heading>
+                <AbsoluteCurve>
+                    <Curve color={color.blue1}/>
+                </AbsoluteCurve>
+
+                <Heading size={3} style={{textAlign: "left"}}>
+                    The Best Platforms for Influencers — Instagram and YouTube
+                </Heading>
                 <Paragraph big>
                     The best platform for influencers, by far, is Instagram. It’s designed around beautiful images and
                     easy sharing, so it’s one of the best ways for brands to showcase their products through you.

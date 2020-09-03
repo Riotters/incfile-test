@@ -37,6 +37,11 @@ const Oval = styled.div`
   position: absolute;
   left: 0;
   top: 200px;
+  display: none;
+    
+    @media (min-width: 720px) {
+        display: block;
+    }
 `
 
 const BusinessStructure = () => (

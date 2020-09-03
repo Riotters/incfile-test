@@ -213,7 +213,7 @@ export const adventages = {
         },
         {
             circleText: 5,
-            imageName: "landscaping",
+            imageName: "landscaping-icon",
             headline: "Landscaping and Yard Maintenance",
             text: "A yard is just an external room, but sometimes it needs even more work! From routine maintenance like mowing, weeding, pruning and mulching to entire landscape makeovers, there are plenty of opportunities for good landscapers."
         },

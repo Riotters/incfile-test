@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="20200406_ICON_ICON-274" transform="translate(1.000000, 0.000000)">
+            <path d="M23.08,3.7 L20.3,26 L1.3,26 L4.75,2.71 C4.74535934,2.63674008 4.74535934,2.56325992 4.75,2.48997137 L22,2.48997137 C22.3104489,2.48774169 22.6068556,2.61919111 22.8135869,2.85080673 C23.0203182,3.08242236 23.1173781,3.39180119 23.08,3.7 L23.08,3.7 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+            <path d="M6.71,14.74 C10.18,17.05 14.92,16.18 18.11,12.74" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+            <polyline id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" points="15.39 11.97 18.81 12.2 18.59 15.66"></polyline>
+            <path d="M0.27,31.29 L0.72,28.22 L1.02,26.22 L4.46,3 C4.45535934,2.92674008 4.45535934,2.85325992 4.46,2.78 C4.73428829,1.55184308 5.83168945,0.683936465 7.09,0.699780675 L22.19,0.699780675 C22.9533122,0.702347216 23.6788329,1.03249849 24.1820215,1.60647785 C24.68521,2.18045721 24.9175703,2.94294578 24.82,3.7 L22,26.21 L21.36,31.29" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+            <polyline id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" points="1.02 26.21 20.01 26.21 22 26.21 28.98 26.21"></polyline>
+            <line x1="24.82" y1="3.69" x2="30.3" y2="31.3" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></line>
+        </g>
+    </g>
+</svg>

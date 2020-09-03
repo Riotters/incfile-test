@@ -10,8 +10,10 @@ import SEO from "../../components/seo";
 import TabHeading from "../../atomic/organisms/tabs/TabHeading";
 import TabTitle from "../../atomic/molecules/tabs/tab-title";
 import AmazonIcon from "../../images/icons/amazon-business.inline.svg";
+import SoldIcon from "../../images/icons/sold-by-amazon.inline.svg";
+import FBAIcon from "../../images/icons/amazon-fba.inline.svg";
 import LightIcon from "../../images/icons/light.inline.svg";
-import CalcIcon from "../../images/icons/calc.inline.svg";
+import CalcIcon from "../../images/icons/series-is-this-business-for-you.inline.svg";
 import CollapseWrapper from "../../atomic/organisms/tabs/collapse";
 import PanelWrapper from "../../atomic/organisms/tabs/panel";
 import {Heading} from "../../atomic/atoms/typography/heading";
@@ -31,14 +33,16 @@ import OrderNow from "../../atomic/sections/type-of-business/amazon-business/ord
 import AmazonLinks from "../../atomic/sections/type-of-business/boutique-clothing-business/links";
 import Conclusion from "../../atomic/sections/general/conclusion";
 import UsefulTools from "../../atomic/partials/useful-tools";
-import {toolsList} from "../../static/type-of-business/amazon-business";
+import {RingText, toolsList} from "../../static/type-of-business/amazon-business";
+import ColorFulCircleWithTextAndList from "../../atomic/molecules/blocks/colorful-circle-with-text-and-list";
+import CircleSvg from "../../images/rings-8.inline.svg";
 
 const AmazonBusiness = () => (
     <Layout>
         <SEO title="What is a Nonprofit Organization? How to Start a Nonprofit"
              description="Learn all about nonprofit corporations, including the benefits & disadvantages, getting 501c3 status, and what's needed to get your company off the ground."/>
 
-        <Top ovalColor="sun" imageName="airbnb" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
+        <Top ovalColor="sun" imageName="amazon-business-main" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
             <h1>How to Start an Amazon Business</h1>
             <p>Ecommerce is rapidly growing in popularity, with 80 percent
                 of Americans regularly purchasing something online. These trends
@@ -189,7 +193,7 @@ const AmazonBusiness = () => (
                         and then sell them on Amazon at a profit. There are two main kinds of Amazon businesses:
                     </Paragraph>
 
-                    <Colorbox className="box" theme="icon" Icon={AmazonIcon} color={color.orange3}
+                    <Colorbox className="box" theme="icon" Icon={SoldIcon} color={color.orange3}
                               curve
                               curveColor={color.orange2}>
                         <Heading size={4}>"Sold by Amazon" Sellers</Heading>
@@ -200,7 +204,7 @@ const AmazonBusiness = () => (
                         </Paragraph>
                     </Colorbox>
 
-                    <Colorbox className="box" theme="icon" Icon={AmazonIcon} color={color.blue3}>
+                    <Colorbox className="box" theme="icon" Icon={FBAIcon} color={color.blue3}>
                         <Heading size={4}>Key Amazon Business and Background Data and Statistics</Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
                             Why would you choose to sell through Amazon? Here are some of their astonishing statistics:
@@ -220,6 +224,8 @@ const AmazonBusiness = () => (
                                              text="Number of people shops on Amazon.com"/>
                     <BlueBoxWithAbsoluteText absoluteText="100K"
                                              text="Amazon sellers had sales of $100K or more in 2016"/>
+
+                    <ColorFulCircleWithTextAndList list={RingText.list} withBg={true} CircleSVG={CircleSvg} />
 
                     <Heading style={{marginTop: "70px"}} size={3}>Amazon sellers had sales of $100K or more in
                         2016</Heading>

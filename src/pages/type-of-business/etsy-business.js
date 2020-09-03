@@ -12,6 +12,7 @@ import TabHeading from "../../atomic/organisms/tabs/TabHeading";
 import TabTitle from "../../atomic/molecules/tabs/tab-title";
 import CollapseWrapper from "../../atomic/organisms/tabs/collapse";
 import PanelWrapper from "../../atomic/organisms/tabs/panel";
+import Tab1Icon from "../../images/icons/etsy-business.inline.svg";
 import Tab2Icon from "../../images/icons/light.inline.svg";
 import Tab3Icon from "../../images/icons/series-is-this-business-for-you.inline.svg";
 import {Heading} from "../../atomic/atoms/typography/heading";
@@ -33,15 +34,26 @@ import HandsIcon from "../../images/icons/hands.inline.svg";
 import IconCircle from "../../components/icons/circle";
 import ArrowSVG from "../../images/arrow.inline.svg";
 import LimitedIcon from "../../images/icons/limited-liability-company-or-llc.inline.svg";
-import SeriesIcon from "../../images/icons/limited-liability-company.inline.svg";
+import SeriesIcon from "../../images/icons/limited-liability-company-2.inline.svg";
 import PlaneIcon from "../../images/icons/plane.inline.svg";
 import RockerIcon from "../../images/icons/rocket.inline.svg";
-import SettingBusiness from "../../atomic/sections/type-of-business/tshirt-business/setting-business";
-import OrderNow from "../../atomic/sections/type-of-business/tshirt-business/order-now";
+import SettingBusiness from "../../atomic/sections/type-of-business/etsy-business/setting-business";
+import OrderNow from "../../atomic/sections/type-of-business/etsy-business/order-now";
 import {toolsList} from "../../static/type-of-business/tshirt-business";
-import HireEmployees from "../../atomic/sections/type-of-business/tshirt-business/hire-employees";
+import HireEmployees from "../../atomic/sections/type-of-business/etsy-business/hire-employees";
 import UsefulTools from "../../atomic/partials/useful-tools";
 import Conclusion from "../../atomic/sections/general/conclusion";
+import BlueBoxWithAbsoluteText from "../../atomic/molecules/text-blocks/blue-box-with-absolute-text";
+import ColorFulCircleWithTextAndList from "../../atomic/molecules/blocks/colorful-circle-with-text-and-list";
+import ColorfulRing2 from "../../images/rings-7.inline.svg";
+import {RingText} from "../../static/type-of-business/etsy-business";
+import Adventages from "../../components/adventages";
+import AdventagesWithLongText from "../../atomic/molecules/mixed-blocks/adventages-with-long-text";
+import TabOvalSvg from "../../images/ovals/bottom-right-transparent-green3.inline.svg";
+import TabOval2Svg from "../../images/ovals/bottom-right-transparent-babyblue2.inline.svg";
+import BusinessPlanOvalSvg from "../../images/ovals/top-left-transparent-pink.inline.svg";
+import BlueContainerOvalSvg from "../../images/ovals/top-right-transparent-blue.inline.svg";
+import Curve from "../../atomic/atoms/shapes/curve";
 
 const EtsyBusiness = () => (
     <Layout>
@@ -63,141 +75,313 @@ const EtsyBusiness = () => (
             </RatingRow>
         </Top>
 
-        <TabsSection>
-            <TabHeading>
-                <TabTitle title="Etsy Business"/>
-                <TabTitle title="Why This Industry" SvgIcon={Tab2Icon}/>
-                <TabTitle title="Is This Business For You?" SvgIcon={Tab3Icon}/>
-            </TabHeading>
+        <TabWrapper>
+            <TabOval>
+                <TabOvalSvg />
+            </TabOval>
 
-            <CollapseWrapper>
-                <PanelWrapper>
-                    <Heading size={3}>Starting an Etsy Business</Heading>
-                    <Paragraph big>
-                        What used to be the purview of craft fairs and market stands can now easily be sold online to a
-                        whole new audience.
+            <TabOval2>
+                <TabOval2Svg />
+            </TabOval2>
 
-                    </Paragraph>
-                    <Paragraph big style={{marginBottom: "50px"}}>
-                        If you want to be a successful Etsy entrepreneur, you need a strong, robust plan for your new
-                        business. There’s plenty of competition in the Etsy marketplace, so having a novel approach,
-                        creating origina designs and getting proper business discipline in place is essential.
-                    </Paragraph>
+            <TabsSection>
+                <TabHeading>
+                    <TabTitle title="Etsy Business" SvgIcon={Tab1Icon}/>
+                    <TabTitle title="Why This Industry" SvgIcon={Tab2Icon}/>
+                    <TabTitle title="Is This Business For You?" SvgIcon={Tab3Icon}/>
+                </TabHeading>
 
-                    <Heading size={3} style={{marginTop: "48px", fontSize: "20px"}}>Etsy Business formation
-                        guide</Heading>
-                    <Paragraph big>
-                        From validating your business and doing the research to filing your
-                        paperwork and running your business, this guide will help you out. Read on
-                        for some insight into creating your own life or business coaching company
-                        and becoming an entrepreneur who helps people make the best of themselves.
-                        In this guide we will cover:
-                    </Paragraph>
+                <CollapseWrapper>
+                    <PanelWrapper>
+                        <Heading size={3} style={{marginBottom: "24px"}}>Starting an Etsy Business</Heading>
+                        <Paragraph big>
+                            What used to be the purview of craft fairs and market stands can now easily be sold online
+                            to a
+                            whole new audience.
 
-                    <ListWrapper>
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Understanding the world of Etsy
+                        </Paragraph>
+                        <Paragraph big style={{marginBottom: "48px"}}>
+                            If you want to be a successful Etsy entrepreneur, you need a strong, robust plan for your
+                            new
+                            business. There’s plenty of competition in the Etsy marketplace, so having a novel approach,
+                            creating origina designs and getting proper business discipline in place is essential.
+                        </Paragraph>
+
+                        <Heading size={3} style={{marginBottom: "24px", fontSize: "20px"}}>Etsy Business formation
+                            guide</Heading>
+                        <Paragraph big>
+                            From validating your business and doing the research to filing your
+                            paperwork and running your business, this guide will help you out. Read on
+                            for some insight into creating your own life or business coaching company
+                            and becoming an entrepreneur who helps people make the best of themselves.
+                            In this guide we will cover:
+                        </Paragraph>
+
+                        <ListWrapper>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Understanding the world of Etsy
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
+
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Paying taxes for your Etsy business
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
+
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Deciding if you’re ready to start an Etsy business
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
+
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Hiring employees, managing finances and administering your Etsy business
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
+
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Planning out your Etsy business
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
+
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Locating other resources for your Etsy business
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
+
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Determining the best legal structure for your new organization
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
+
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Following various rules and regulations
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
+
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        And much more
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
+                        </ListWrapper>
+
+                        <Paragraph big>
+                            By the time you’ve read through our complete Etsy business guide, you will have all the
+                            information you need to set up and manage a thriving crafting business. Let’s get into it.
+                        </Paragraph>
+                    </PanelWrapper>
+
+                    <PanelWrapper>
+                        <Heading size={3} style={{fontWeight: "bold", fontSize: "24px", marginBottom: "64px"}}>How to
+                            Make
+                            Money on Etsy</Heading>
+                        <Paragraph big
+                                   style={{
+                                       fontWeight: "bold",
+                                       color: color.black,
+                                       fontSize: "24px",
+                                       marginBottom: "24px"
+                                   }}>
+                            Key Background Stats for Etsy Businesses
+                        </Paragraph>
+                        <Paragraph big style={{marginBottom: "76px"}}>
+                            The size and opportunity in the Etsy marketplace might surprise you:
+                        </Paragraph>
+
+                        <BlueBoxWithAbsoluteText absoluteText="1.7M"
+                                                 text="Sellers on Etsy in 2016, making on average $1,800 each"/>
+                        <BlueBoxWithAbsoluteText absoluteText="300M"
+                                                 text="People purchased goods on Etsy in 2016, spending an average of around $100 each"/>
+                        <BlueBoxWithAbsoluteText absoluteText="$3B"
+                                                 text="Worth of goods were sold through Etsy in 2016"/>
+
+                        <ColorFulCircleWithTextAndList CircleSVG={ColorfulRing2} title={RingText.title}
+                                                       list={RingText.list}
+                                                       withBg={true}/>
+
+                        <div style={{marginTop: "48px"}}>
+                            <Adventages
+                                headline="Etsy is in the top 10 most popular e-commerce websites in the U.S."
+                                width="100%"
+                            />
+                        </div>
+
+                        <Adventages
+                            headline="Nearly 55 million people use the platform"
+                            width="100%"
+                        />
+
+                        <Adventages
+                            headline="There are around 50 million products listed for sale on Etsy"
+                            width="100%"
+                        />
+
+                        <Paragraph big style={{marginTop: "18px"}}>
+                            This all points to Etsy being ripe with new opportunities for focused entrepreneurs, so now
+                            might be the perfect time to dive into starting your Etsy business. Incfile is here to help
+                            you
+                            form your Etsy business and understand the ins and outs of owning a company.
+                        </Paragraph>
+                    </PanelWrapper>
+
+                    <PanelWrapper>
+                        <Heading size={3} style={{marginBottom: "24px"}}>The Keys to Success: What Etsy Customers Want</Heading>
+                        <Paragraph big style={{marginBottom: "48px"}}>
+                            With nearly 2 million sellers and 50 million products already in the Etsy marketplace, you
+                            need
+                            to stand out from the crowd if you want your Etsy business to be a success. This means
+                            understanding what your Etsy customers want from your products. We recommend focusing on
+                            several
+                            areas:
+                        </Paragraph>
+
+                        <div style={{marginBottom: "10px"}}>
+                            <Adventages
+                                headline="Originality"
+                                text="Create beautiful, original designs that showcase your skills and talents. Use your unique creativity and flair to build a “wow” factor into the items you craft — products that your potential customers won’t be able to find anywhere else."
+                                width="100%"
+                            />
+                        </div>
+
+                        <div style={{marginBottom: "10px"}}>
+                            <Adventages
+                                headline="Affordability"
+                                text="Although customers realize they may need to pay a little more for quality, they’re still looking for a bargain. Make sure you price your products well with enough of a profit margin that you can grow your business, but keep prices low enough that you’re competitive with similar sellers."
+                                width="100%"
+                            />
+                        </div>
+
+                        <div style={{marginBottom: "10px"}}>
+                            <Adventages
+                                headline="Presentation"
+                                text="Finding the right niche to grow your business in is essential. Your niche will largely be dictated by your own crafting skills, with the most popular categories being jewelry, stickers, clothing, craft supplies, bridal goods and baby shower decorations."
+                                width="100%"
+                            />
+                        </div>
+
+                        <div style={{marginBottom: "48px"}}>
+                            <Adventages
+                                headline="Niche"
+                                text="Showcase your products in the best possible way. This means using expert photography, good lighting, great backgrounds and the right categories and keywords. Search is one of the main ways customers find items on Etsy, so ensure your descriptions are keyword rich."
+                                width="100%"
+                            />
+                        </div>
+
+                        <Paragraph big style={{marginBottom: "48px"}}>
+                            If you can combine these four areas together, you’ll have the perfect ingredients for a
+                            successful Etsy business.
+                        </Paragraph>
+
+                        <Heading size={3} style={{marginBottom: "24px"}}>
+                            Main Priorities for an Etsy Seller
+                        </Heading>
+                        <Paragraph big>
+                            With sellers earning an average of under $2,000 on Etsy in a year, it’s clear that for many
+                            people Etsy just provides some side income. If you want to make Etsy a major revenue stream
+                            for
+                            you, that needs some strong focus and a disciplined approach. Here are the challenges and
+                            advantages you need to be aware of.
+                        </Paragraph>
+
+                        <div style={{marginBottom: "10px"}}>
+                            <Adventages
+                                headline="Competition"
+                                text="Search locally, nationally or internationally. There are several in-depth market research reports available for the etsy business in the U.S. You will also want to research demographics in your proposed area — you’re looking for densely-populated areas with lots of renters or students."
+                                width="100%"
+                            />
+                        </div>
+
+                        <div style={{marginBottom: "10px"}}>
+                            <Adventages
+                                headline="Branding"
+                                text="Although your Etsy shop will be under Etsy’s own branding, you still have the opportunity to create an identity for your business. Look at what other sellers are doing and try to create a brand that stands out from the crowd. With most Etsy users being female, you will want a brand that’s friendly and approachable that speaks to their needs and life circumstances."
+                                width="100%"
+                            />
+                        </div>
+
+                        <div style={{marginBottom: "10px"}}>
+                            <AdventagesWithLongText
+                                title="Discipline"
+                                width="100%"
+                            >
+                                <Paragraph big mixed={true} style={{marginBottom: 0, paddingBottom: 0}}>
+                                    You need to think of your Etsy shop as an independent business with all the focus
+                                    that
+                                    one requires. You should have proper plans and processes in place, practice strong
+                                    financial management and have an in-depth understanding of your costs, sales prices,
+                                    revenue and profit margins. Bear in mind that there are fees you need to pay to
+                                    Etsy, as
+                                    follows:
+                                    <br/><br/>
+                                    <SpecialList>
+                                        <li>Listing fee of 20 cents per item, payable every four months</li>
+                                        <li>Commission of 3.5 percent of the selling price of each product</li>
+                                        <li>Payment processing fee of 3 percent of the item selling price plus 20
+                                            cents
+                                        </li>
+                                    </SpecialList>
                                 </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                            </AdventagesWithLongText>
+                        </div>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Paying taxes for your Etsy business
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
-
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Deciding if you’re ready to start an Etsy business
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
-
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Hiring employees, managing finances and administering your Etsy business
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
-
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Planning out your Etsy business
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
-
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Locating other resources for your Etsy business
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
-
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Determining the best legal structure for your new organization
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
-
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Following various rules and regulations
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
-
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    And much more
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
-                    </ListWrapper>
-
-                    <Paragraph big>
-                        By the time you’ve read through our complete Etsy business guide, you will have all the
-                        information you need to set up and manage a thriving crafting business. Let’s get into it.
-                    </Paragraph>
-                </PanelWrapper>
-
-                <PanelWrapper>
-                    ds2
-                </PanelWrapper>
-
-                <PanelWrapper>
-                    ds3
-                </PanelWrapper>
-            </CollapseWrapper>
-        </TabsSection>
+                        <div style={{marginBottom: "48px"}}>
+                            <Adventages
+                                headline="Marketing"
+                                text="Finally, marketing will play a key role in the success of your Etsy business. You will need to develop a strong marketing plan that combines various channels to give you the most visibility and reach. Look into advertising on Etsy itself, organic SEO, paid search marketing, social media marketing and various other digital marketing opportunities. Make sure you can track your return on marketing investment."
+                                width="100%"
+                            />
+                        </div>
+                    </PanelWrapper>
+                </CollapseWrapper>
+            </TabsSection>
+        </TabWrapper>
 
         <BlueContainer>
+            <BlueContainerOval>
+                <BlueContainerOvalSvg />
+            </BlueContainerOval>
             <Container>
                 <CenterBox>
+                    <AbsoluteCurve>
+                        <Curve color={color.blue1}/>
+                    </AbsoluteCurve>
                     <TextCenterLayout headline="Developing a Plan for Your Etsy Business"/>
                     <Paragraph big>
                         Before you start your business, there are a few key areas you need to focus on. You will need to
                         establish whether there’s a demand for your Etsy products, look at potential benefits and
                         pitfalls, understand how your business finances might look and ensure everything is in order.
                     </Paragraph>
-                    <Paragraph big>
+                    <Paragraph big style={{marginBottom: "40px"}}>
                         In short, you need a business plan — here’s how to think about your business idea.
                     </Paragraph>
 
-                    <Heading size={3}>
+                    <Heading size={3} style={{marginBottom: "24px"}}>
                         Do Market Research and Validate Your Etsy Products and Services
                     </Heading>
 
@@ -290,6 +474,12 @@ const EtsyBusiness = () => (
         </BlueContainer>
 
         <SimpleSection>
+            <BusinessPlanOval>
+                <TabOvalSvg />
+            </BusinessPlanOval>
+            <BusinessPlanOval2>
+                <BusinessPlanOvalSvg />
+            </BusinessPlanOval2>
             <Container>
                 <CenterBox>
                     <Heading>
@@ -545,18 +735,22 @@ const EtsyBusiness = () => (
             </Container>
         </OrangeContainer>
 
-        <SettingBusiness />
+        <SettingBusiness/>
 
-        <OrderNow />
+        <OrderNow/>
 
-        <HireEmployees />
+        <HireEmployees/>
 
-        <UsefulTools style={{paddingBottom: "200px"}} toolsList={toolsList.tools} headlineText={toolsList.headlineText} description={toolsList.description}/>
+        <UsefulTools style={{paddingBottom: "200px"}} toolsList={toolsList.tools} headlineText={toolsList.headlineText}
+                     description={toolsList.description}/>
 
         <Conclusion to="/" buttonTitle="Start your Etsy Business with us, today">
             <Heading size={3} style={{fontSize: "40px"}}>Conclusion</Heading>
             <Paragraph big>
-                Etsy is a very empowering marketplace. In particular it’s a great way for female entrepreneurs to get started and with the right approach and discipline, it can grow from being a side project to becoming a powerful revenue stream. Follow the advice in this Etsy guide, and you’ll be able to create an Etsy business selling beautiful and amazing crafted products to the world.
+                Etsy is a very empowering marketplace. In particular it’s a great way for female entrepreneurs to get
+                started and with the right approach and discipline, it can grow from being a side project to becoming a
+                powerful revenue stream. Follow the advice in this Etsy guide, and you’ll be able to create an Etsy
+                business selling beautiful and amazing crafted products to the world.
             </Paragraph>
         </Conclusion>
     </Layout>
@@ -594,6 +788,7 @@ const BlueContainer = styled.section`
 const CenterBox = styled.div`
     width: 100%;
     padding-bottom: 100px;
+    position: relative;
     
     @media (min-width: 670px) {
         width: 670px;
@@ -620,6 +815,7 @@ const GridSectionList = styled.div`
 
 const SimpleSection = styled.div`
     padding-top: 100px;
+    position: relative;
 `;
 
 const BusinessOwnerResponsibilities = styled.section`
@@ -644,5 +840,80 @@ const Oval = styled.div`
   left: 0;
   top: 200px;
 `
+
+const SpecialList = styled.ul`
+    list-style-type: none;
+    padding-left: 15px;
+    
+    li{
+        margin-bottom: 24px;
+        position: relative;
+        
+        &:before{
+            content: "";
+            display: block;
+            background-color: ${color.green1};
+            width: 4px;
+            height: 4px;
+            border-radius: 50px;
+            position: absolute;
+            top: 12px;
+            left: -12px;
+        }
+    }
+`;
+
+const TabWrapper = styled.section`
+    position: relative;
+`;
+
+const TabOval = styled.div`
+    position: absolute;
+    width: 420px;
+    top: 0;
+    left: 0;
+    transform: scaleX(-1);
+`;
+
+const TabOval2 = styled.div`
+    position: absolute;
+    width: 420px;
+    top: 677px;
+    right: 0;
+`;
+
+const BlueContainerOval = styled.div`
+    position: absolute;
+    width: 570px;
+    top: 0;
+    right: 0;
+`;
+
+const AbsoluteCurve = styled.div`
+    position: absolute;
+    left: -27px;
+    top: -16px;
+    transform: rotate(-90deg);
+`;
+
+const BusinessPlanOval = styled.div`
+    position: absolute;
+    width: 420px;
+    top: 0;
+    left: 0;
+    transform: scaleX(-1);
+    
+    svg{
+        transform: scaleY(-1);
+    }
+`;
+
+const BusinessPlanOval2 = styled.div`
+    position: absolute;
+    width: 720px;
+    top: 534px;
+    right: 0;
+    transform: scaleX(-1);
+`;
 
 export default EtsyBusiness;

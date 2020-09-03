@@ -28,7 +28,7 @@ const AbsoluteText = styled.div`
     font-size: 48px;
     line-height: 56px;
     font-weight: bold;
-    font-family: "MarkPro-Bold", sans-serif;
+    font-family: MarkPro, sans-serif;
 `;
 
 const Text = styled(Paragraph)`

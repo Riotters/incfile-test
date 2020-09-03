@@ -1,3 +1,5 @@
+import {color} from "../../components/styles/colors";
+
 export const BusinessInsuranceAccordionContent = {
     items: [
         {
@@ -191,6 +193,20 @@ export const toolsList = {
         {
             title: "SEO",
             tools: ["SemRush", "KWFinder", "Moz", "AHREFS"]
+        }
+    ]
+}
+
+export const RingText = {
+    title: "Statistics about Etsy businesses",
+    list: [
+        {
+            color: color.blue1,
+            text: "Over 80 percent of Etsy sellers are women"
+        },
+        {
+            color: color.yellow1,
+            text: "Over 70 percent of sales on Etsy are repeat purchases"
         }
     ]
 }

@@ -3,8 +3,11 @@ import {Heading} from "../../../atoms/typography/heading";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import TextBlockWithImage from "../../../molecules/mixed-blocks/text-block-with-absolute-image";
 import TalkIcon from "../../../../images/icons/talk-to-clients.inline.svg";
+import TakeStocks from "../../../../images/icons/take-stock-concerns.inline.svg";
 import IdetifyIcon from "../../../../images/icons/identify-your-unique-selling-point.inline.svg"
 import InvolvedIcon from "../../../../images/icons/get-involved-with-business-communities.inline.svg"
+import MarketIcon from "../../../../images/icons/understand-your-market.inline.svg";
+import LookIcon from "../../../../images/icons/look-at-who-your-competitors-are-in-the-space.inline.svg";
 import {color} from "../../../../components/styles/colors";
 import React from "react";
 import styled from "styled-components";
@@ -145,7 +148,7 @@ const ValidatingBusinessIdea = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={InvolvedIcon} imageBackgroundColor={color.babyblue2}
+                    <TextBlockWithImage SvgImage={TakeStocks} imageBackgroundColor={color.babyblue2}
                                         imageShadowColor={color.babyblue2}>
                         <Heading size={4}>
                             Take stock of your concerns
@@ -155,7 +158,7 @@ const ValidatingBusinessIdea = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={TalkIcon} imageBackgroundColor={color.orange2}
+                    <TextBlockWithImage SvgImage={LookIcon} imageBackgroundColor={color.orange2}
                                         imageShadowColor={color.orange2}>
                         <Heading size={4}>
                             Look at who your competitors are
@@ -167,7 +170,7 @@ const ValidatingBusinessIdea = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={TalkIcon} imageBackgroundColor={color.purple2}
+                    <TextBlockWithImage SvgImage={MarketIcon} imageBackgroundColor={color.purple2}
                                         imageShadowColor={color.purple2}>
                         <Heading size={4}>
                             Understand your market
@@ -189,7 +192,7 @@ const ValidatingBusinessIdea = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={TalkIcon} imageBackgroundColor={color.yellow2}
+                    <TextBlockWithImage SvgImage={InvolvedIcon} imageBackgroundColor={color.yellow2}
                                         imageShadowColor={color.yellow2}>
                         <Heading size={4}>
                             Get involved with business communities and discussion groups

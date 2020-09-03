@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="32px" viewBox="0 0 22 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Modul/Icon-Box/Color-Dotted/With-Icon-Copy" transform="translate(-5.000000, -56.000000)">
+            <g id="Group" transform="translate(0.000000, 56.000000)">
+                <g id="20200406_ICON_ICON-275" transform="translate(6.000000, 0.000000)">
+                    <path d="M17.23,8.21 C17.7718703,8.6809373 18.0851319,9.36209912 18.09,10.08 L18.09,28.62 C18.09,30.62 16.98,31.51 15.6,31.51 C15.6,31.51 1.14,31.13 1.15,30.57 L0.38,11.05 C0.38,10.12 -0.16,8.7 0.63,8.26 L7.81,4.35 C8.56,3.95 9.46,3.95 10.21,4.35 L17.23,8.21 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    <path d="M18.9099996,7.17 C19.4455227,7.6489433 19.7541585,8.33157317 19.76,9.05 L19.76,28.79 C19.76,30.1762347 18.6362347,31.3 17.25,31.3 L2.90999961,31.3 C2.7935575,31.3102279 2.6764425,31.3102279 2.56,31.3 C1.33314642,31.1179446 0.421174644,30.0702375 0.409999614,28.83 L0.409999614,9 C0.409490695,8.08173281 0.912434052,7.23709511 1.72,6.8 L8.88,2.9 C9.62769783,2.49089496 10.5323022,2.49089496 11.28,2.9 L18.45,6.81 C18.6153403,6.9138121 18.7694945,7.03445457 18.9099996,7.17 Z" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <line x1="9.76" y1="5.86" x2="9.76" y2="0.7" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></line>
+                    <path d="M3.71,19.19 C7.18,21.49 11.91,20.62 15.11,17.19" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <polyline id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" points="12.38 16.42 15.81 16.64 15.58 20.11"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

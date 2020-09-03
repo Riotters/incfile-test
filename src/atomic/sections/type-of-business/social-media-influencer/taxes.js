@@ -7,8 +7,8 @@ import Adventages from "../../../../components/adventages";
 import {color} from "../../../../components/styles/colors";
 import {shadow} from "../../../../components/styles/shadows";
 import Curve from "../../../atoms/shapes/curve";
-import OvalSvg from "../../../../images/oval-babyblue-1.inline.svg";
-import OvalSvgBottom from "../../../../images/oval-babyblue-2.inline.svg";
+import OvalSvg from "../../../../images/ovals/bottom-right-transparent-babyblue2.inline.svg";
+import OvalSvgBottom from "../../../../images/ovals/top-left-transparent-babyblue1.inline.svg";
 import CurveSvg from "../../../../images/curve-babyblue-1.inline.svg";
 import {adventages2} from "../../../../static/type-of-business/boutique-clothing-business";
 import {Heading} from "../../../atoms/typography/heading";
@@ -83,17 +83,27 @@ const AdventagesBox = styled.div`
 
 const Oval = styled.div`
     position: absolute;
-    right: 0;
-    top: 0;
+    left: 0;
+    top: 240px;
+    width: 420px;
+    transform: rotate(180deg);
+    display: none;
+    
+    @media (min-width: 720px) {
+        display: block;
+    }
 `;
 
 const OvalBottom = styled.div`
     position: absolute;
-    left: 0;
-    bottom: 300px;
+    right: 0;
+    top: 0px;
+    width: 720px;
+    transform: scaleX(-1);
+    display: none;
     
-    @media (max-width: 970px) {
-        display: none;
+    @media (min-width: 720px) {
+        display: block;
     }
 `;
 

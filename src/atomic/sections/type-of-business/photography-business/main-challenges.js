@@ -9,7 +9,9 @@ import {color} from "../../../../components/styles/colors";
 import React from "react";
 import styled from "styled-components";
 import OvalBlueSVG from "../../../../images/oval-blue-4.inline.svg";
-import {gradient} from "../../../atoms/styles/colors";
+import FinancialIcon from "../../../../images/icons/financial-managment.inline.svg";
+import RealtionshipIcon from "../../../../images/icons/relationship-icon.inline.svg";
+import SeekingIcon from "../../../../images/icons/seeking-out-work.inline.svg";
 import ContentCenter from "../../../partials/content-center";
 import TextCenterLayout from "../../../partials/heading-left";
 
@@ -129,7 +131,7 @@ const MainChallenges = () => (
 
                 <GridSectionList>
 
-                    <TextBlockWithImage SvgImage={IdetifyIcon} imageBackgroundColor={color.yellow2}
+                    <TextBlockWithImage SvgImage={FinancialIcon} imageBackgroundColor={color.yellow2}
                                         imageShadowColor={color.yellow2}>
                         <Heading size={4}>
                             Financial management
@@ -140,7 +142,7 @@ const MainChallenges = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={InvolvedIcon} imageBackgroundColor={color.blue2}
+                    <TextBlockWithImage SvgImage={RealtionshipIcon} imageBackgroundColor={color.blue2}
                                         imageShadowColor={color.blue2}>
                         <Heading size={4}>
                             Client relationship management
@@ -151,7 +153,7 @@ const MainChallenges = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={TalkIcon} imageBackgroundColor={color.purple2}
+                    <TextBlockWithImage SvgImage={SeekingIcon} imageBackgroundColor={color.purple2}
                                         imageShadowColor={color.purple2}>
                         <Heading size={4}>
                             Marketing and seeking out work
