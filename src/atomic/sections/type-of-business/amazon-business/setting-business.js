@@ -5,16 +5,16 @@ import TopImageBox from "../../../../components/top-image-box";
 import {color} from "../../../../components/styles/colors";
 import styled from "styled-components";
 import Curve from "../../../../images/green-curve.inline.svg";
-import GreenOval from "../../../../images/oval-green-2.inline.svg";
+import OvalSvg from "../../../../images/ovals/bottom-right-transparent-blue2.inline.svg";
 import ContentCenter from "../../../partials/content-center";
 import Button from "../../../../components/button";
-import ButtonsBox from "../../../atoms/boxes/top-buttons-box";
+import {gradient} from "../../../atoms/styles/colors";
 
 const SettingBusiness = () => (
     <GreenContainer>
 
         <Oval>
-            <GreenOval/>
+            <OvalSvg/>
         </Oval>
 
         <Container>
@@ -36,6 +36,9 @@ const SettingBusiness = () => (
                     <p>
                         Running an Amazon business could come with certain rules, regulations and legalities you need to be aware of. Incfile can conduct a Business License Research package for you, or you can take the time to do the research yourself.
                     </p>
+                    <AbsoluteCurve>
+                        <Curve/>
+                    </AbsoluteCurve>
                 </TopImageBox>
 
                 <TopImageBox image="state-filling-fees" color={color.yellow3}>
@@ -93,7 +96,7 @@ const SettingBusiness = () => (
 
 const GreenContainer = styled.div`
     background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(242,248,243,1) 100%);
+    background: ${gradient.blue3};
     padding-bottom: 100px;
     padding-top: 100px;
     position: relative;
@@ -128,7 +131,34 @@ const GreenCurve = styled.div`
 const Oval = styled.div`
     position: absolute;
     right: 0;
-    top: 220px;
+    top: 227px; 
+    width: 720px;
+    opacity: 0.5;
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
 `;
+
+const AbsoluteCurve = styled.div`
+    position: absolute;
+    top: -153px;
+    right: -115px;
+    width: 115px;
+    display: none;
+    transform: rotate(-90deg);
+  
+    @media (min-width: 1200px){
+        display: block;
+    }
+    
+    svg {
+        path{
+            fill: #d2e0fe;
+        }
+    }
+`;
+
 
 export default SettingBusiness;

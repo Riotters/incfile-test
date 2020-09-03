@@ -39,7 +39,7 @@ import PlaneIcon from "../../images/icons/plane.inline.svg";
 import RockerIcon from "../../images/icons/rocket.inline.svg";
 import SettingBusiness from "../../atomic/sections/type-of-business/etsy-business/setting-business";
 import OrderNow from "../../atomic/sections/type-of-business/etsy-business/order-now";
-import {toolsList} from "../../static/type-of-business/tshirt-business";
+import {toolsList} from "../../static/type-of-business/etsy-business";
 import HireEmployees from "../../atomic/sections/type-of-business/etsy-business/hire-employees";
 import UsefulTools from "../../atomic/partials/useful-tools";
 import Conclusion from "../../atomic/sections/general/conclusion";
@@ -77,11 +77,11 @@ const EtsyBusiness = () => (
 
         <TabWrapper>
             <TabOval>
-                <TabOvalSvg />
+                <TabOvalSvg/>
             </TabOval>
 
             <TabOval2>
-                <TabOval2Svg />
+                <TabOval2Svg/>
             </TabOval2>
 
             <TabsSection>
@@ -251,7 +251,8 @@ const EtsyBusiness = () => (
                     </PanelWrapper>
 
                     <PanelWrapper>
-                        <Heading size={3} style={{marginBottom: "24px"}}>The Keys to Success: What Etsy Customers Want</Heading>
+                        <Heading size={3} style={{marginBottom: "24px"}}>The Keys to Success: What Etsy Customers
+                            Want</Heading>
                         <Paragraph big style={{marginBottom: "48px"}}>
                             With nearly 2 million sellers and 50 million products already in the Etsy marketplace, you
                             need
@@ -364,7 +365,7 @@ const EtsyBusiness = () => (
 
         <BlueContainer>
             <BlueContainerOval>
-                <BlueContainerOvalSvg />
+                <BlueContainerOvalSvg/>
             </BlueContainerOval>
             <Container>
                 <CenterBox>
@@ -475,10 +476,10 @@ const EtsyBusiness = () => (
 
         <SimpleSection>
             <BusinessPlanOval>
-                <TabOvalSvg />
+                <TabOvalSvg/>
             </BusinessPlanOval>
             <BusinessPlanOval2>
-                <BusinessPlanOvalSvg />
+                <BusinessPlanOvalSvg/>
             </BusinessPlanOval2>
             <Container>
                 <CenterBox>
@@ -727,7 +728,7 @@ const EtsyBusiness = () => (
                             state</span>, or have Incfile take care of all the paperwork for you.
                         </Paragraph>
 
-                        <Button theme="primary48" width="365px" arrow>
+                        <Button theme="primary48" arrow>
                             Start your business with us, today!
                         </Button>
                     </ImageContent>
@@ -741,8 +742,14 @@ const EtsyBusiness = () => (
 
         <HireEmployees/>
 
-        <UsefulTools style={{paddingBottom: "200px"}} toolsList={toolsList.tools} headlineText={toolsList.headlineText}
-                     description={toolsList.description}/>
+        <ToolsWrapper>
+            <ToolsOval>
+                <TabOvalSvg/>
+            </ToolsOval>
+            <UsefulTools style={{paddingBottom: "200px"}} toolsList={toolsList.tools}
+                         headlineText={toolsList.headlineText}
+                         description={toolsList.description}/>
+        </ToolsWrapper>
 
         <Conclusion to="/" buttonTitle="Start your Etsy Business with us, today">
             <Heading size={3} style={{fontSize: "40px"}}>Conclusion</Heading>
@@ -839,6 +846,11 @@ const Oval = styled.div`
   position: absolute; 
   left: 0;
   top: 200px;
+  display: none;
+    
+    @media (min-width: 720px){
+        display: block; 
+    }
 `
 
 const SpecialList = styled.ul`
@@ -873,6 +885,11 @@ const TabOval = styled.div`
     top: 0;
     left: 0;
     transform: scaleX(-1);
+    display: none;
+    
+    @media (min-width: 720px){
+        display: block; 
+    }
 `;
 
 const TabOval2 = styled.div`
@@ -880,6 +897,11 @@ const TabOval2 = styled.div`
     width: 420px;
     top: 677px;
     right: 0;
+    display: none;
+    
+    @media (min-width: 720px){
+        display: block; 
+    }
 `;
 
 const BlueContainerOval = styled.div`
@@ -887,6 +909,11 @@ const BlueContainerOval = styled.div`
     width: 570px;
     top: 0;
     right: 0;
+    display: none;
+    
+    @media (min-width: 720px){
+        display: block; 
+    }
 `;
 
 const AbsoluteCurve = styled.div`
@@ -902,6 +929,11 @@ const BusinessPlanOval = styled.div`
     top: 0;
     left: 0;
     transform: scaleX(-1);
+    display: none;
+    
+    @media (min-width: 720px){
+        display: block; 
+    }
     
     svg{
         transform: scaleY(-1);
@@ -914,6 +946,32 @@ const BusinessPlanOval2 = styled.div`
     top: 534px;
     right: 0;
     transform: scaleX(-1);
+    display: none;
+    
+    @media (min-width: 720px){
+        display: block; 
+    }
+`;
+
+const ToolsOval = styled.div`
+    position: absolute;
+    width: 720px;
+    bottom: 530px;
+    right: 0;
+    z-index: -1;
+    display: none;
+    
+    @media (min-width: 720px){
+        display: block; 
+    }
+    
+    svg{
+        transform: scaleY(-1);
+    }
+`;
+
+const ToolsWrapper = styled.section`
+    position: relative;
 `;
 
 export default EtsyBusiness;

@@ -6,16 +6,18 @@ import ContentCenter from "../../../../atomic/partials/content-center";
 import TextCenterLayout from "../../../../atomic/partials/heading-left";
 import styled from "styled-components";
 import EtsyLinks from "../../../../atomic/sections/type-of-business/tshirt-business/links";
-import Curve from "../../../atoms/shapes/curve";
-import {color} from "../../../../components/styles/colors";
+import OvalSvg from "../../../../images/ovals/top-right-transparent-blue.inline.svg";
 
 const HireEmployees = () => (
     <BlueContainer>
+        <Oval>
+            <OvalSvg />
+        </Oval>
+        <Oval2>
+            <OvalSvg />
+        </Oval2>
         <Container>
             <ContentCenter>
-                <AbsoluteCurve>
-                    <Curve color={color.blue1}/>
-                </AbsoluteCurve>
                 <TextCenterLayout headline="Hire T-shirt Employees"
                                   text="If you’re just running your T-shirt business solo, you don’t need to worry about employees. If you are hiring people to work for you, you will need to know what to do. See our 10 tips on hiring employees."/>
                 <AccordionWithCounting content={AccordionCounting}/>
@@ -31,13 +33,32 @@ const HireEmployees = () => (
 const BlueContainer = styled.div`
     padding-top: 100px;
     background-image: linear-gradient(to bottom, #f2f6ff, #ffffff);
+    position: relative;
 `;
 
-const AbsoluteCurve = styled.div`
+const Oval = styled.div`
     position: absolute;
-    left: -27px;
-    top: -16px;
-    transform: rotate(-90deg);
+    right: 0px;
+    top: 0px;
+    width: 570px;
+    display: none;
+    
+    @media (min-width: 720px){
+        display: block; 
+    }
+`;
+
+const Oval2 = styled.div`
+    position: absolute;
+    left: 0px;
+    bottom: 50px;
+    width: 570px;
+    transform: scaleX(-1);
+    display: none;
+    
+    @media (min-width: 720px){
+        display: block; 
+    }
 `;
 
 export default HireEmployees;
