@@ -7,8 +7,7 @@ import {Heading} from "../../../atoms/typography/heading";
 import CountingTextBoxed from "../../../molecules/text-blocks/counting-text-boxed";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import Container from "../../../container";
-import OvalGreenSVG from "../../../../images/oval-green.inline.svg";
-import OvalSVG from "../../../../images/oval-pink.inline.svg";
+import OvalSVG from "../../../../images/ovals/top-left-transparent-blue2.inline.svg";
 import TextCenterLayout from "../../../partials/heading-center";
 
 const BusinessOwnerResponsibilities = styled.section`
@@ -41,19 +40,21 @@ const Oval = styled.div`
   position: absolute;
   left: 0;
   top: 0;
-  transform: rotate(180deg);
+  width: 420px;
 `
 
 const OvalCenter = styled.div`
   position: absolute;
   right: 0;
-  top: 38%;
+  bottom: 211px;
+  width: 720px;
+  transform: scaleX(-1);
 `
 
 const BusinessPlan = () => (
     <Wrapper>
         <Oval>
-            <OvalGreenSVG/>
+            <OvalSVG/>
         </Oval>
         <OvalCenter>
             <OvalSVG/>

@@ -34,6 +34,8 @@ import BlueBoxWithAbsoluteText from "../../atomic/molecules/text-blocks/blue-box
 import CircleWithText from "../../atomic/molecules/blocks/circle-with-text-block";
 import Adventages from "../../components/adventages";
 import TextBoxed from "../../atomic/molecules/text-blocks/text-boxed";
+import TabsOvalOneSvg from "../../images/ovals/bottom-left-transparent-orange.inline.svg";
+import TabsOvalTwoSvg from "../../images/ovals/bottom-right-transparent-green3.inline.svg";
 
 const DaycareBusiness = () => (
     <Layout>
@@ -56,250 +58,272 @@ const DaycareBusiness = () => (
             </RatingRow>
         </Top>
 
-        <TabsSection>
-            <TabHeading>
-                <TabTitle title="Daycare" SvgIcon={DaycareIcon}/>
-                <TabTitle title="Why This Industry" SvgIcon={Tab2Icon}/>
-                <TabTitle title="Is This Business For You?" SvgIcon={Tab3Icon}/>
-            </TabHeading>
+        <TabWrapper>
+            <TabOvalOne>
+                <TabsOvalTwoSvg/>
+            </TabOvalOne>
 
-            <CollapseWrapper>
-                <PanelWrapper>
-                    <Paragraph big>
-                        If you have experience looking after children, then starting a daycare business could be a great
-                        idea.
-                    </Paragraph>
-                    <Paragraph big style={{marginBottom: "50px"}}>
-                        You’ll need a combination of childcare experience, people management and administrative skills.
-                        The right daycare marketing and a solid business plan will give you a great launching pad to
-                        appeal to parents.
-                    </Paragraph>
+            <TabOvalTwo>
+                <TabsOvalOneSvg/>
+            </TabOvalTwo>
 
-                    <Colorbox className="box" theme="icon" Icon={DaycareIcon} color={color.blue3} curve
-                              curveColor={color.orange2}>
-                        <Heading size={4}>
-                            We want to help you get your daycare business
-                            off the ground.
-                        </Heading>
-                        <Paragraph bottomPadding={0} bottomMargin={0}>
-                            Since 2004, we’ve helped over 100,000 people to become entrepreneurs, starting exciting
-                            businesses and bringing their ideas
-                            to life. We’ll give you the support, guidance and advice you need
-                            to create a daycare business and make it into a success.
+            <TabsSection>
+                <TabHeading>
+                    <TabTitle title="Daycare" SvgIcon={DaycareIcon}/>
+                    <TabTitle title="Why This Industry" SvgIcon={Tab2Icon}/>
+                    <TabTitle title="Is This Business For You?" SvgIcon={Tab3Icon}/>
+                </TabHeading>
+
+                <CollapseWrapper>
+                    <PanelWrapper>
+                        <Paragraph big>
+                            If you have experience looking after children, then starting a daycare business could be a
+                            great
+                            idea.
                         </Paragraph>
-                    </Colorbox>
+                        <Paragraph big style={{marginBottom: "50px"}}>
+                            You’ll need a combination of childcare experience, people management and administrative
+                            skills.
+                            The right daycare marketing and a solid business plan will give you a great launching pad to
+                            appeal to parents.
+                        </Paragraph>
 
-                    <Paragraph big style={{marginTop: "48px"}}>
-                        From validating your childcare business and doing the research to filing your paperwork and
-                        running your business, this guide will help you out. We’ll talk you through the main things you
-                        need to do to get your daycare business off of the ground.
-                    </Paragraph>
+                        <Colorbox className="box" theme="icon" Icon={DaycareIcon} color={color.blue3} curve
+                                  curveColor={color.orange2}>
+                            <Heading size={4}>
+                                We want to help you get your daycare business
+                                off the ground.
+                            </Heading>
+                            <Paragraph bottomPadding={0} bottomMargin={0}>
+                                Since 2004, we’ve helped over 100,000 people to become entrepreneurs, starting exciting
+                                businesses and bringing their ideas
+                                to life. We’ll give you the support, guidance and advice you need
+                                to create a daycare business and make it into a success.
+                            </Paragraph>
+                        </Colorbox>
 
-                    <Paragraph big style={{fontWeight: "bold"}}>
-                        Read on for some insight into creating your own childcare organization and becoming an entrepreneur.
-                    </Paragraph>
+                        <Paragraph big style={{marginTop: "48px"}}>
+                            From validating your childcare business and doing the research to filing your paperwork and
+                            running your business, this guide will help you out. We’ll talk you through the main things
+                            you
+                            need to do to get your daycare business off of the ground.
+                        </Paragraph>
 
-                </PanelWrapper>
+                        <Paragraph big style={{fontWeight: "bold"}}>
+                            Read on for some insight into creating your own childcare organization and becoming an
+                            entrepreneur.
+                        </Paragraph>
 
-                <PanelWrapper>
-                    <Heading size={3}>
-                        Why You Should Start a New Construction Business
-                    </Heading>
-                    <Paragraph big>
-                        You might wonder how successful construction businesses are - we’ve got the facts.
-                    </Paragraph>
-                    <Paragraph big style={{marginBottom: "80px"}}>
-                        This is why construction businesses are so exciting — how can you be part of that success? We're here to help you figure that out.
-                    </Paragraph>
+                    </PanelWrapper>
 
-                    <BlueBoxWithAbsoluteText absoluteText="900B"
-                                             text="How to choose whether your construction business should be an LLC or corporation"/>
-                    <BlueBoxWithAbsoluteText absoluteText="$1.2T"
-                                             text="The U.S. has one of the largest construction markets in the world, with expenditures of over $1.2 trillion"/>
-                    <BlueBoxWithAbsoluteText absoluteText="$1.4T"
-                                             text="Expected construction expenditures grow by 2021."/>
+                    <PanelWrapper>
+                        <Heading size={3}>
+                            Why You Should Start a New Construction Business
+                        </Heading>
+                        <Paragraph big>
+                            You might wonder how successful construction businesses are - we’ve got the facts.
+                        </Paragraph>
+                        <Paragraph big style={{marginBottom: "80px"}}>
+                            This is why construction businesses are so exciting — how can you be part of that success?
+                            We're
+                            here to help you figure that out.
+                        </Paragraph>
 
-                    <CircleWithText textInsideCircle="40" symbol="%" textLine="Of customers for daycare businesses come from households with incomes ranging between $40,000 and #100,000" />
+                        <BlueBoxWithAbsoluteText absoluteText="900B"
+                                                 text="How to choose whether your construction business should be an LLC or corporation"/>
+                        <BlueBoxWithAbsoluteText absoluteText="$1.2T"
+                                                 text="The U.S. has one of the largest construction markets in the world, with expenditures of over $1.2 trillion"/>
+                        <BlueBoxWithAbsoluteText absoluteText="$1.4T"
+                                                 text="Expected construction expenditures grow by 2021."/>
 
-                    <div style={{marginBottom: "30px"}}>
+                        <CircleWithText style={{marginBottom: "48px"}} textInsideCircle="40" symbol="%"
+                                        textLine="Of customers for daycare businesses come from households with incomes ranging between $40,000 and #100,000"
+                                        withBg={true}/>
+
                         <Adventages
                             headline="The U.S. construction industry is responsible for over 4% of U.S. GDP"
                             width="100%"
                         />
-                    </div>
 
-                    <div style={{marginBottom: "30px"}}>
                         <Adventages
                             headline="Currently, the majority of growth in the construction industry is in residential building"
                             width="100%"
                         />
-                    </div>
 
-                    <div style={{marginBottom: "30px"}}>
                         <Adventages
                             headline="Public sector construction saw the slowest growth"
                             width="100%"
                         />
-                    </div>
-                </PanelWrapper>
+                    </PanelWrapper>
 
-                <PanelWrapper>
-                    <Heading size={3}>
-                        Is a Childcare Business Right for You?
-                    </Heading>
-                    <Paragraph big style={{marginBottom: "48px"}}>
-                        Although it can be exciting to form a daycare business, there will
-                        be significant demands on you as a small business owner. Here are some of the things you can expect.
-                    </Paragraph>
+                    <PanelWrapper>
+                        <Heading size={3}>
+                            Is a Childcare Business Right for You?
+                        </Heading>
+                        <Paragraph big style={{marginBottom: "48px"}}>
+                            Although it can be exciting to form a daycare business, there will
+                            be significant demands on you as a small business owner. Here are some of the things you can
+                            expect.
+                        </Paragraph>
 
-                    <Heading size={3}>
-                        A Day in the Life of a Daycare Business Owner
-                    </Heading>
-                    <Paragraph big>
-                        Here are some of the typical tasks you’ll be performing for your daycare business on a daily basis:
-                    </Paragraph>
+                        <Heading size={3}>
+                            A Day in the Life of a Daycare Business Owner
+                        </Heading>
+                        <Paragraph big>
+                            Here are some of the typical tasks you’ll be performing for your daycare business on a daily
+                            basis:
+                        </Paragraph>
 
-                    <div style={{marginBottom: "10px"}}>
-                        <TextBoxed>
-                            <Paragraph big bottomMargin={0}>
-                                Speaking with parents about their child's requirements
-                            </Paragraph>
-                        </TextBoxed>
-                    </div>
+                        <div style={{marginBottom: "10px"}}>
+                            <TextBoxed>
+                                <Paragraph big bottomMargin={0}>
+                                    Speaking with parents about their child's requirements
+                                </Paragraph>
+                            </TextBoxed>
+                        </div>
 
-                    <div style={{marginBottom: "10px"}}>
-                        <TextBoxed>
-                            <Paragraph big bottomMargin={0}>
-                                Caring for children for five or six hours a day (or more)
-                            </Paragraph>
-                        </TextBoxed>
-                    </div>
+                        <div style={{marginBottom: "10px"}}>
+                            <TextBoxed>
+                                <Paragraph big bottomMargin={0}>
+                                    Caring for children for five or six hours a day (or more)
+                                </Paragraph>
+                            </TextBoxed>
+                        </div>
 
-                    <div style={{marginBottom: "10px"}}>
-                        <TextBoxed>
-                            <Paragraph big bottomMargin={0}>
-                                Managing diapering, feeding, napping and other requirements of young children
-                            </Paragraph>
-                        </TextBoxed>
-                    </div>
+                        <div style={{marginBottom: "10px"}}>
+                            <TextBoxed>
+                                <Paragraph big bottomMargin={0}>
+                                    Managing diapering, feeding, napping and other requirements of young children
+                                </Paragraph>
+                            </TextBoxed>
+                        </div>
 
-                    <div style={{marginBottom: "10px"}}>
-                        <TextBoxed>
-                            <Paragraph big bottomMargin={0}>
-                                Thinking of new activities and entertainment
-                            </Paragraph>
-                        </TextBoxed>
-                    </div>
+                        <div style={{marginBottom: "10px"}}>
+                            <TextBoxed>
+                                <Paragraph big bottomMargin={0}>
+                                    Thinking of new activities and entertainment
+                                </Paragraph>
+                            </TextBoxed>
+                        </div>
 
-                    <div style={{marginBottom: "10px"}}>
-                        <TextBoxed>
-                            <Paragraph big bottomMargin={0}>
-                                Buying supplies and equipment
-                            </Paragraph>
-                        </TextBoxed>
-                    </div>
+                        <div style={{marginBottom: "10px"}}>
+                            <TextBoxed>
+                                <Paragraph big bottomMargin={0}>
+                                    Buying supplies and equipment
+                                </Paragraph>
+                            </TextBoxed>
+                        </div>
 
-                    <div style={{marginBottom: "10px"}}>
-                        <TextBoxed>
-                            <Paragraph big bottomMargin={0}>
-                                Dealing with minor issues
-                            </Paragraph>
-                        </TextBoxed>
-                    </div>
+                        <div style={{marginBottom: "10px"}}>
+                            <TextBoxed>
+                                <Paragraph big bottomMargin={0}>
+                                    Dealing with minor issues
+                                </Paragraph>
+                            </TextBoxed>
+                        </div>
 
-                    <div style={{marginBottom: "48px"}}>
-                        <TextBoxed>
-                            <Paragraph big bottomMargin={0}>
-                                Administering your business, including marketing and invoicing
-                            </Paragraph>
-                        </TextBoxed>
-                    </div>
+                        <div style={{marginBottom: "48px"}}>
+                            <TextBoxed>
+                                <Paragraph big bottomMargin={0}>
+                                    Administering your business, including marketing and invoicing
+                                </Paragraph>
+                            </TextBoxed>
+                        </div>
 
-                    <Heading size={3}>
-                        Skills You Will Need to Open a Daycare Business
-                    </Heading>
-                    <Paragraph big>
-                        The following skills will be very useful in your role as a daycare small business owner:
-                    </Paragraph>
+                        <Heading size={3}>
+                            Skills You Will Need to Open a Daycare Business
+                        </Heading>
+                        <Paragraph big>
+                            The following skills will be very useful in your role as a daycare small business owner:
+                        </Paragraph>
 
-                    <div style={{marginBottom: "10px"}}>
-                        <TextBoxed>
-                            <Paragraph big bottomMargin={0}>
-                                The right approach, patience and perspective to care for several children
-                                at a time
-                            </Paragraph>
-                        </TextBoxed>
-                    </div>
+                        <div style={{marginBottom: "10px"}}>
+                            <TextBoxed>
+                                <Paragraph big bottomMargin={0}>
+                                    The right approach, patience and perspective to care for several children
+                                    at a time
+                                </Paragraph>
+                            </TextBoxed>
+                        </div>
 
-                    <div style={{marginBottom: "10px"}}>
-                        <TextBoxed>
-                            <Paragraph big bottomMargin={0}>
-                                The ability to think up and carry out entertaining activities
-                            </Paragraph>
-                        </TextBoxed>
-                    </div>
+                        <div style={{marginBottom: "10px"}}>
+                            <TextBoxed>
+                                <Paragraph big bottomMargin={0}>
+                                    The ability to think up and carry out entertaining activities
+                                </Paragraph>
+                            </TextBoxed>
+                        </div>
 
-                    <div style={{marginBottom: "10px"}}>
-                        <TextBoxed>
-                            <Paragraph big bottomMargin={0}>
-                                Understanding where every child is and what they are doing at all times
-                            </Paragraph>
-                        </TextBoxed>
-                    </div>
+                        <div style={{marginBottom: "10px"}}>
+                            <TextBoxed>
+                                <Paragraph big bottomMargin={0}>
+                                    Understanding where every child is and what they are doing at all times
+                                </Paragraph>
+                            </TextBoxed>
+                        </div>
 
-                    <div style={{marginBottom: "10px"}}>
-                        <TextBoxed>
-                            <Paragraph big bottomMargin={0}>
-                                Good interpersonal skills for dealing with the various needs of parents and their children
-                            </Paragraph>
-                        </TextBoxed>
-                    </div>
+                        <div style={{marginBottom: "10px"}}>
+                            <TextBoxed>
+                                <Paragraph big bottomMargin={0}>
+                                    Good interpersonal skills for dealing with the various needs of parents and their
+                                    children
+                                </Paragraph>
+                            </TextBoxed>
+                        </div>
 
-                    <div style={{marginBottom: "48px"}}>
-                        <TextBoxed>
-                            <Paragraph big bottomMargin={0}>
-                                Great administrative skills for managing cash flow and business operations
-                            </Paragraph>
-                        </TextBoxed>
-                    </div>
+                        <div style={{marginBottom: "48px"}}>
+                            <TextBoxed>
+                                <Paragraph big bottomMargin={0}>
+                                    Great administrative skills for managing cash flow and business operations
+                                </Paragraph>
+                            </TextBoxed>
+                        </div>
 
-                    <Heading size={3}>
-                        What Your Daycare Customers Are Looking For
-                    </Heading>
-                    <Paragraph big>
-                        Your daycare customers are going to be parents who are juggling kids, work and other responsibilities. They're looking for a daycare organization they can trust to provide safe, affordable childcare to their children, while keeping them engaged and entertained. If you can meet those needs while managing the administration of your business, your daycare will thrive.
-                    </Paragraph>
+                        <Heading size={3}>
+                            What Your Daycare Customers Are Looking For
+                        </Heading>
+                        <Paragraph big>
+                            Your daycare customers are going to be parents who are juggling kids, work and other
+                            responsibilities. They're looking for a daycare organization they can trust to provide safe,
+                            affordable childcare to their children, while keeping them engaged and entertained. If you
+                            can
+                            meet those needs while managing the administration of your business, your daycare will
+                            thrive.
+                        </Paragraph>
 
-                </PanelWrapper>
-            </CollapseWrapper>
-        </TabsSection>
+                    </PanelWrapper>
+                </CollapseWrapper>
+            </TabsSection>
+        </TabWrapper>
 
-        <TypeBusiness />
+        <TypeBusiness/>
 
-        <ValidatingBusinessIdea />
+        <ValidatingBusinessIdea/>
 
-        <BusinessPlan />
+        <BusinessPlan/>
 
-        <BusinessStructure />
+        <BusinessStructure/>
 
-        <SettingBusiness />
+        <SettingBusiness/>
 
-        <OrderNow />
+        <OrderNow/>
 
-        <Regulations />
+        <Regulations/>
 
-        <InsuranceBusiness />
+        <InsuranceBusiness/>
 
-        <Taxes />
+        <Taxes/>
 
-        <ToolsAndLinks />
+        <ToolsAndLinks/>
 
         <Conclusion to="/" buttonTitle="Start your Daycare Business with us, today">
             <Heading size={3} style={{fontSize: "48px"}}>
                 Conclusion
             </Heading>
             <Paragraph big>
-                If you love kids and get along with their parents, then daycare entrepreneurship could be perfect for you. Find your niche, put together a business plan and perfect your marketing, and you’ll get on the road to success!
+                If you love kids and get along with their parents, then daycare entrepreneurship could be perfect for
+                you. Find your niche, put together a business plan and perfect your marketing, and you’ll get on the
+                road to success!
             </Paragraph>
         </Conclusion>
     </Layout>
@@ -324,6 +348,38 @@ const ListBox = styled.div`
     
     @media (min-width: 576px) { 
         width: 50%; 
+    }
+`;
+
+const TabWrapper = styled.div`
+    position: relative;
+`;
+
+const TabOvalOne = styled.div`
+    position: absolute;
+    width: 420px;
+    left: 0;
+    top: 21px;
+    display: none;
+  
+    @media (min-width: 1200px){
+       display: block;
+    }
+    svg {
+        transform: scaleX(-1);
+    }
+`;
+
+const TabOvalTwo = styled.div`
+    position: absolute;
+    width: 420px;
+    right: 0;
+    top: 674px;
+    display: none;
+    transform: scaleX(-1);
+    
+    @media (min-width: 1200px){
+       display: block;
     }
 `;
 

@@ -10,13 +10,12 @@ import {color} from "../../../../components/styles/colors";
 import React from "react";
 import styled from "styled-components";
 import OvalBlueSVG from "../../../../images/oval-blue-4.inline.svg";
-import Curve from "../../../atoms/shapes/curve";
+import Curve from "../../../../images/green-curve.inline.svg";
 
 const BlueContainerWrapper = styled.div`
     background: rgb(255,255,255);
     padding-bottom: 100px;
     position: relative;
-    padding-top: 120px;
 `;
 
 
@@ -58,42 +57,29 @@ const GridSectionList = styled.div`
     }
 `;
 
-const TextBorderedSection = styled.div`
-    width: 100%;
-    padding-top: 100px;
-    
-    @media (min-width: 670px) {
-        width: 670px;
-        margin: 0 auto;
-    }
-    
-    h3{
-        color: #1d1d1d;
-        font-size: 40px;
-        text-align: center;
-        margin-bottom: 24px;
-    }
-`;
-
-const TextBorderedList = styled.div`
-    margin-top: 80px;
-    
-    >div {
-        margin-bottom: 8px;
-    }
-`;
-
 const OvalCenter = styled.div`
   position: absolute;
   right: 0;
-  top: 0;
+  bottom: 370px;
 `
 
 const AbsoluteCurve = styled.div`
     position: absolute;
-    left: -27px;
-    top: -16px;
+    top: -153px;
+    right: -115px;
+    width: 115px;
+    display: none;
     transform: rotate(-90deg);
+  
+    @media (min-width: 1200px){
+        display: block;
+    }
+    
+    svg {
+        path{
+            fill: #d2e0fe;
+        }
+    }
 `;
 
 const ValidatingBusinessIdea = () => (
@@ -106,9 +92,6 @@ const ValidatingBusinessIdea = () => (
 
             <GridSection>
                 <TitleBox>
-                    <AbsoluteCurve>
-                        <Curve color={color.blue1}/>
-                    </AbsoluteCurve>
                     <Heading size={3}>Validating Your Food Truck Business Idea</Heading>
                     <Paragraph big>
                         These ideas are just starting points — you’ll need to do plenty of research
@@ -144,6 +127,9 @@ const ValidatingBusinessIdea = () => (
 
                     <TextBlockWithImage SvgImage={IdetifyIcon} imageBackgroundColor={color.orange2}
                                         imageShadowColor={color.orange2}>
+                        <AbsoluteCurve>
+                            <Curve/>
+                        </AbsoluteCurve>
                         <Heading size={4}>
                             Identify your daycare business’s unique selling points (USPs)
                         </Heading>

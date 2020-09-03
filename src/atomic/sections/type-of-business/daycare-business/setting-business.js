@@ -4,7 +4,6 @@ import TextCenterLayout from "../../../../components/partials/blocks/heading-cen
 import TopImageBox from "../../../../components/top-image-box";
 import {color} from "../../../../components/styles/colors";
 import styled from "styled-components";
-import Curve from "../../../../images/green-curve.inline.svg";
 import GreenOval from "../../../../images/oval-green-2.inline.svg";
 
 const SettingBusiness = () => (
@@ -13,6 +12,10 @@ const SettingBusiness = () => (
         <Oval>
             <GreenOval/>
         </Oval>
+
+        <Oval2>
+            <GreenOval/>
+        </Oval2>
 
         <Container>
             <TextCenterLayout
@@ -113,6 +116,12 @@ const GreenCurve = styled.div`
 `;
 
 const Oval = styled.div`
+    position: absolute;
+    left: 0;
+    top: 220px;
+`;
+
+const Oval2 = styled.div`
     position: absolute;
     right: 0;
     top: 220px;
