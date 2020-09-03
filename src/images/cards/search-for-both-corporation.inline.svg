@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="570px" height="392px" viewBox="0 0 570 392" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Search for both corporation</title>
+    <defs>
+        <path d="M20,0 L420,0 C447.614237,-5.07265313e-15 470,22.3857625 470,50 L470,242 C470,269.614237 447.614237,292 420,292 L5,292 C2.23857625,292 3.38176876e-16,289.761424 0,287 L0,20 C-1.3527075e-15,8.954305 8.954305,2.02906125e-15 20,0 Z" id="path-1"></path>
+        <filter x="-19.1%" y="-20.5%" width="138.3%" height="161.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="30" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="25" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.862008275   0 0 0 0 0.885968104   0 0 0 0 0.939877717  0 0 0 0.7 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.900000036">
+        <g id="Group" transform="translate(50.000000, 20.000000)">
+            <g id="Rectangle">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <rect id="Rectangle" fill="#F2F6FF" x="40" y="180" width="390" height="72" rx="20"></rect>
+            <rect id="Rectangle" fill="#D2E0FE" x="64" y="220" width="250" height="8" rx="4"></rect>
+            <rect id="Rectangle-Copy" fill="#5089FD" x="64" y="204" width="80" height="8" rx="4"></rect>
+            <text id="Entity-Type" font-family="MarkPro-Bold, Mark Pro" font-size="16" font-weight="bold" line-spacing="24" fill="#7A7A7A">
+                <tspan x="40" y="44">Entity Type</tspan>
+            </text>
+            <text id="Select-State" font-family="MarkPro-Bold, Mark Pro" font-size="16" font-weight="bold" line-spacing="24" fill="#7A7A7A">
+                <tspan x="40" y="156">Select State</tspan>
+            </text>
+            <g id="Group" transform="translate(40.000000, 68.000000)">
+                <g id="Modul/Radio-Button/Active">
+                    <circle id="Oval" fill="#F2F6FF" cx="16" cy="16" r="16"></circle>
+                    <rect id="Rectangle-Copy" fill="#6194FE" x="48" y="12" width="40" height="8" rx="4"></rect>
+                    <rect id="Rectangle-Copy-2" fill="#D2E0FE" x="168" y="12" width="87" height="8" rx="4"></rect>
+                    <circle id="Oval" fill="#FD8550" cx="16" cy="16" r="6"></circle>
+                </g>
+                <g id="Modul/Radio-Button/Active" transform="translate(120.000000, 0.000000)" fill="#F2F6FF">
+                    <circle id="Oval" cx="16" cy="16" r="16"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

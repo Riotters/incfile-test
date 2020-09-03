@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="570px" height="556px" viewBox="0 0 570 556" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Choose the form </title>
+    <defs>
+        <path d="M24,0 L420,0 C447.614237,-5.07265313e-15 470,22.3857625 470,50 L470,451 C470,453.761424 467.761424,456 465,456 L5,456 C2.23857625,456 3.22224576e-14,453.761424 0,451 L0,24 C-1.623249e-15,10.745166 10.745166,2.4348735e-15 24,0 Z" id="path-1"></path>
+        <filter x="-19.1%" y="-13.2%" width="138.3%" height="139.5%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="30" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="25" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.862008275   0 0 0 0 0.885968104   0 0 0 0 0.939877717  0 0 0 0.7 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-3" x="0" y="0" width="390" height="56" rx="28"></rect>
+        <filter x="-15.4%" y="-64.3%" width="130.8%" height="314.3%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="24" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="16" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.925490196   0 0 0 0 0.925490196   0 0 0 0 0.925490196  0 0 0 0.503059441 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Choose-the-form-" transform="translate(50.000000, 20.000000)">
+            <g id="Group-3-Copy" opacity="0.900000036">
+                <g id="Group-18">
+                    <g id="Rectangle">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <rect id="Rectangle" fill="#F2F6FF" x="40" y="62" width="390" height="72" rx="20"></rect>
+                    <rect id="Rectangle-Copy" fill="#709EFF" x="64" y="86" width="168" height="8" rx="4"></rect>
+                    <rect id="Rectangle" fill="#D2E0FE" x="64" y="102" width="120" height="8" rx="4"></rect>
+                    <text id="Your-name" font-family="MarkPro-Bold, Mark Pro" font-size="16" font-weight="bold" line-spacing="24" fill="#7A7A7A">
+                        <tspan x="40" y="46">Your name</tspan>
+                    </text>
+                    <rect id="Rectangle" fill="#F2F6FF" x="40" y="280" width="390" height="72" rx="20"></rect>
+                    <rect id="Rectangle-Copy" fill="#709EFF" x="64" y="304" width="168" height="8" rx="4"></rect>
+                    <rect id="Rectangle" fill="#D2E0FE" x="64" y="320" width="120" height="8" rx="4"></rect>
+                    <text id="Your-name" font-family="MarkPro-Bold, Mark Pro" font-size="16" font-weight="bold" line-spacing="24" fill="#7A7A7A">
+                        <tspan x="40" y="264">Your name</tspan>
+                    </text>
+                    <text id="Select-Entity-Type*" font-family="MarkPro-Bold, Mark Pro" font-size="16" font-weight="bold" line-spacing="24" fill="#7A7A7A">
+                        <tspan x="40" y="174">Select Entity Type*</tspan>
+                    </text>
+                    <circle id="Oval" fill="#F2F6FF" cx="56" cy="208" r="16"></circle>
+                    <rect id="Rectangle-Copy" fill="#6194FE" x="88" y="204" width="40" height="8" rx="4"></rect>
+                    <circle id="Oval" fill="#FD8550" cx="56" cy="208" r="6"></circle>
+                </g>
+            </g>
+            <g id="button/56" transform="translate(40.000000, 376.000000)">
+                <g id="Rectangle-Copy">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                    <use fill="#FD8550" fill-rule="evenodd" xlink:href="#path-3"></use>
+                </g>
+                <rect id="Rectangle" fill="#FEFEFF" x="128" y="24" width="90" height="8" rx="4"></rect>
+                <rect id="Rectangle" fill="#FEFEFF" x="222" y="24" width="40" height="8" rx="4"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

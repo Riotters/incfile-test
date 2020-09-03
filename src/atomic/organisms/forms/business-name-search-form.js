@@ -57,32 +57,32 @@ const BusinessNameSearchForm = ({ className, content }) => {
       </Label>
       <Flex>
         <Label htmlFor="type" content={content.field2} bottomMargin="16">
-          <Radio checked name="type" />
-          <Heading size="4" bottomMargin="0">
+          <Radio content={content.field2.radio} checked name="type" />
+          {/* <Heading size="4" bottomMargin="0">
             LLC
-          </Heading>
-          <Radio name="type" />
-          <Heading size="4" bottomMargin="0">
+          </Heading> */}
+          <Radio content={content.field2.radio2}  name="type" />
+          {/* <Heading size="4" bottomMargin="0">
             Corporation
-          </Heading>
+          </Heading> */}
         </Label>
         <LinkWrapper>
           <ArrowLink content={content.link} bottomMargin="0" />
         </LinkWrapper>
       </Flex>
-      <Label htmlFor="state" content={content.field3} bottomMargin="16">
+      <Label htmlFor="state" content={content.field3} bottomMargin="32">
         <Dropdown options={["aaa", "bbb", "ccc"]} placeholder="Select" />
       </Label>
       <Heading size="5" bottomMargin="16">
         {content.header2}
       </Heading>
-      <Label htmlFor="full-name" content={content.field4}>
+      <Label htmlFor="full-name" content={content.field4} bottomMargin="32">
         <Input placeholder="Full name" />
       </Label>
       <Label htmlFor="email" content={content.field5}>
         <Input placeholder="Email" />
       </Label>
-      <Button content={content.button} theme="primary56" arrow marginSM="32px auto 0" />
+      <Button content={content.button} theme="primary56" arrow marginSM="48px auto 0" />
     </Wrapper>
   );
 };

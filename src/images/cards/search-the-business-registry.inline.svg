@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="570px" height="394px" viewBox="0 0 570 394" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Search the business registry</title>
+    <defs>
+        <path d="M20,0 L420,0 C447.614237,-5.07265313e-15 470,22.3857625 470,50 L470,244 C470,271.614237 447.614237,294 420,294 L5,294 C2.23857625,294 3.38176876e-16,291.761424 0,289 L0,20 C-1.3527075e-15,8.954305 8.954305,2.02906125e-15 20,0 Z" id="path-1"></path>
+        <filter x="-19.1%" y="-20.4%" width="138.3%" height="161.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="30" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="25" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.862008275   0 0 0 0 0.885968104   0 0 0 0 0.939877717  0 0 0 0.7 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.900000036">
+        <g id="Group-11" transform="translate(50.000000, 20.000000)">
+            <g id="Rectangle">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <rect id="Rectangle" fill="#F2F6FF" x="40" y="190" width="390" height="72" rx="20"></rect>
+            <g id="Icon-Arrow" transform="translate(394.000000, 226.000000) scale(1, -1) translate(-394.000000, -226.000000) translate(374.000000, 206.000000)">
+                <circle id="Oval" fill="#D2E0FE" cx="20" cy="20" r="20"></circle>
+                <g id="icon/18/Arrow-Orange" transform="translate(20.000000, 20.000000) scale(1, -1) rotate(-270.000000) translate(-20.000000, -20.000000) translate(14.000000, 14.500000)" fill="#5089FD">
+                    <path d="M5.80459624,0.703179433 L5.80075,0.707 C5.40897519,1.09616022 5.40685565,1.72923315 5.79601588,2.12100795 C5.79680225,2.12179961 5.79758995,2.12258995 5.79837898,2.12337898 L8.177,4.502 L8.177,4.502 L0.998,4.502 C0.44681982,4.502 -4.54814851e-13,4.94881982 -4.54747351e-13,5.5 C-4.54679851e-13,6.05118018 0.44681982,6.498 0.998,6.498 L8.177,6.498 L8.177,6.498 L5.79837898,8.87662102 C5.40790927,9.26709073 5.40790927,9.9001672 5.79837898,10.2906369 C5.799168,10.2914259 5.79995834,10.2922136 5.80075,10.293 L5.80459624,10.2968206 C6.19581354,10.685427 6.82777221,10.6840096 7.21724243,10.2936522 L11.2953034,6.20630188 C11.6847557,5.81596243 11.6847557,5.18403757 11.2953034,4.79369812 L7.21724243,0.706347764 C6.82777221,0.315990369 6.19581354,0.31457299 5.80459624,0.703179433 Z" id="Path"></path>
+                </g>
+            </g>
+            <rect id="Rectangle-Copy" fill="#709EFF" x="64" y="214" width="190" height="8" rx="4"></rect>
+            <rect id="Rectangle" fill="#D2E0FE" x="64" y="230" width="100" height="8" rx="4"></rect>
+            <text id="Select-State" font-family="MarkPro-Bold, Mark Pro" font-size="16" font-weight="bold" line-spacing="24" fill="#7A7A7A">
+                <tspan x="40" y="174">Select State</tspan>
+            </text>
+            <rect id="Rectangle" fill="#F2F6FF" x="40" y="62" width="390" height="72" rx="20"></rect>
+            <rect id="Rectangle-Copy" fill="#709EFF" x="64" y="86" width="168" height="8" rx="4"></rect>
+            <rect id="Rectangle" fill="#D2E0FE" x="64" y="102" width="120" height="8" rx="4"></rect>
+            <text id="Entity-name*" font-family="MarkPro-Bold, Mark Pro" font-size="16" font-weight="bold" line-spacing="24" fill="#7A7A7A">
+                <tspan x="40" y="46">Entity name*</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

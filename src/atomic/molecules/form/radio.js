@@ -1,9 +1,10 @@
-import React from "react"
+import React, { useState } from "react";
 import styled from "styled-components"
 import { color } from "../../atoms/styles/colors"
+import ContentCenter from "../../partials/content-center";
 
 const Wrapper = styled.div`
-    margin-right: 16px;
+    display: flex;
     position: relative;
 `
 
@@ -33,6 +34,7 @@ const Checkmark = styled.span`
     border: 1px solid ${color.grey3};
     border-radius: 50%;
     cursor: pointer;
+    margin-right: 16px;
 
     &:before {
         content: '';
@@ -45,10 +47,24 @@ const Checkmark = styled.span`
     }
 `;
 
-const Radio = ({ className, name, id, checked }) => (
-    <Wrapper className={className}>
-        <Input id={id} type="radio" name={name} checked={checked}/>
-        <Checkmark />
-    </Wrapper>
-)
+const Text = styled.span`
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+    font-family: Avenir, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+`;
+
+const Radio = ({ className, content, name, id, checked }) => {
+    return (
+        <Wrapper className={className}>
+            <Input id={id} type="radio" name={name} checked={checked} />
+            <Checkmark />
+            {content && (
+                <Text>{content}</Text>
+            )}
+        </Wrapper>
+    )
+}
 export default Radio

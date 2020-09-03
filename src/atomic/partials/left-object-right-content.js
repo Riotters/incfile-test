@@ -11,6 +11,8 @@ const Flex = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
+  max-width: ${props => props.maxWidth ? `${props.maxWidth}px` : ""};
+  margin: 0 auto;
 
   @media (min-width: 992px) {
     flex-direction: row;
@@ -58,11 +60,11 @@ const Sticky = styled.div`
   }
 `;
 
-const LeftContentRightObject = ({ children, className, object, objectWidth, objectPadding, contentWidth, headlineWidth, textWidth }) => {
+const LeftContentRightObject = ({ children, className, maxWidth, object, objectWidth, objectPadding, contentWidth, headlineWidth, textWidth }) => {
   return (
     <Wrapper className={className}>
       <Container>
-        <Flex>
+        <Flex maxWidth={maxWidth}>
           <Objectbox objectWidth={objectWidth} objectPadding={objectPadding}>
             <Sticky>{object}</Sticky>
           </Objectbox>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="570px" height="397px" viewBox="0 0 570 397" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Quwey the most up-to date</title>
+    <defs>
+        <path d="M20,0 L465,0 C467.761424,-5.07265313e-16 470,2.23857625 470,5 L470,292 C470,294.761424 467.761424,297 465,297 L50,297 C22.3857625,297 3.38176876e-15,274.614237 0,247 L0,20 C-1.3527075e-15,8.954305 8.954305,2.02906125e-15 20,0 Z" id="path-1"></path>
+        <filter x="-19.1%" y="-20.2%" width="138.3%" height="160.6%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="30" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="25" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.862008275   0 0 0 0 0.885968104   0 0 0 0 0.939877717  0 0 0 0.7 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.900000036">
+        <g id="Group-18" transform="translate(50.000000, 20.000000)">
+            <g id="doc-copy">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+            </g>
+            <g id="Modul/Radio-Button/Active" transform="translate(40.000000, 225.000000)">
+                <circle id="Oval" fill="#F2F6FF" cx="16" cy="16" r="16"></circle>
+                <rect id="Rectangle-Copy" fill="#6194FE" x="48" y="12" width="80" height="8" rx="4"></rect>
+                <circle id="Oval" fill="#FD8550" cx="16" cy="16" r="6"></circle>
+            </g>
+            <g id="Modul/Radio-Button/Active" transform="translate(255.000000, 225.000000)">
+                <circle id="Oval" fill="#F2F6FF" cx="16" cy="16" r="16"></circle>
+                <rect id="Rectangle-Copy" fill="#D2E0FE" x="48" y="12" width="118" height="8" rx="4"></rect>
+            </g>
+            <g id="doc" transform="translate(40.000000, 40.000000)">
+                <rect id="Rectangle" fill="#F2F6FF" x="0" y="0" width="175" height="153" rx="20"></rect>
+                <rect id="Rectangle" fill="#D2E0FE" x="24" y="40" width="175" height="8" rx="4"></rect>
+                <rect id="Rectangle-Copy-6" fill="#D2E0FE" x="24" y="72" width="96" height="8" rx="4"></rect>
+                <rect id="Rectangle-Copy-7" fill="#FD8550" x="24" y="105" width="8" height="8" rx="4"></rect>
+                <rect id="Rectangle-Copy-7" fill="#D2E0FE" x="36" y="105" width="48" height="8" rx="4"></rect>
+                <rect id="Rectangle-Copy-7" fill="#FD8550" x="24" y="121" width="8" height="8" rx="4"></rect>
+                <rect id="Rectangle-Copy-7" fill="#D2E0FE" x="36" y="121" width="74" height="8" rx="4"></rect>
+                <rect id="Rectangle-Copy-8" fill="#D2E0FE" x="118" y="121" width="73" height="8" rx="4"></rect>
+                <rect id="Rectangle-Copy-5" fill="#D2E0FE" x="24" y="56" width="68" height="8" rx="4"></rect>
+                <rect id="Rectangle-Copy" fill="#5089FD" x="24" y="24" width="80" height="8" rx="4"></rect>
+            </g>
+            <g id="doc" transform="translate(231.000000, 40.000000)">
+                <rect id="Rectangle" fill="#F2F6FF" x="24" y="0" width="175" height="153" rx="20"></rect>
+                <rect id="Rectangle" fill="#D2E0FE" x="48" y="40" width="110" height="8" rx="4"></rect>
+                <rect id="Rectangle-Copy-6" fill="#D2E0FE" x="0" y="72" width="148" height="8" rx="4"></rect>
+                <rect id="Rectangle-Copy-7" fill="#FD8550" x="48" y="105" width="8" height="8" rx="4"></rect>
+                <rect id="Rectangle-Copy-7" fill="#D2E0FE" x="60" y="105" width="115" height="8" rx="4"></rect>
+                <rect id="Rectangle-Copy-7" fill="#FD8550" x="48" y="121" width="8" height="8" rx="4"></rect>
+                <rect id="Rectangle-Copy-7" fill="#D2E0FE" x="60" y="121" width="55" height="8" rx="4"></rect>
+                <rect id="Rectangle-Copy-5" fill="#D2E0FE" x="48" y="56" width="55" height="8" rx="4"></rect>
+                <rect id="Rectangle-Copy" fill="#5089FD" x="48" y="24" width="80" height="8" rx="4"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

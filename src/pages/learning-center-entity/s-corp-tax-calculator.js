@@ -7,8 +7,10 @@ import RatingBlock from "../../atomic/molecules/blocks/rating-block";
 //Sections
 import Top from "../../atomic/partials/top";
 import About from "../../atomic/sections/learning-center-entity/s-corp-tax-calculator/about";
+import Differences from "../../atomic/sections/learning-center-entity/s-corp-tax-calculator/differences";
+import Compare from "../../atomic/sections/learning-center-entity/s-corp-tax-calculator/compare";
 //Texts
-import { top, about } from "../../static/learning-center-entity/s-corp-tax-calculator";
+import { top, about, differences, compare } from "../../static/learning-center-entity/s-corp-tax-calculator";
 
 const SCorpTaxCalculator = () => (
   <Layout>
@@ -21,6 +23,8 @@ const SCorpTaxCalculator = () => (
       </RatingRow>
     </Top>
     <About content={about} />
+    <Differences content={differences} />
+    <Compare content={compare} />
   </Layout>
 );
 

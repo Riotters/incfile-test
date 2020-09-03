@@ -12,19 +12,20 @@ import OvalSVG from "../../../../images/ovals/top-left-transparent-babyblue.inli
 
 const About = styled.section`
   position: relative;
+  padding-bottom: 136px;
 `;
 
 const AboutSection = ({ className, content }) => (
   <About className={className}>
-    <Oval className="oval" height="570" width="570" y="-40">
+    <Oval className="oval" height="720" width="720" y="-40">
       <OvalSVG />
     </Oval>
     <ImageContent image="business-name-search-about-7420">
       <Heading size={3}>{content.header}</Heading>
       <Paragraph big>{content.text}</Paragraph>
-      <Paragraph big>{content.text2}</Paragraph>
+      <Paragraph big bottomMargin="56">{content.text2}</Paragraph>
       <Heading size={3}>{content.header2}</Heading>
-      <Paragraph big>{content.text3}</Paragraph>
+      <Paragraph big bottomMargin="0">{content.text3}</Paragraph>
     </ImageContent>
   </About>
 );

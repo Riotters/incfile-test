@@ -4,7 +4,7 @@ export const top = {
   buttons: [
     {
       text: `Search Business Name`,
-      utl: `/`,
+      url: `/`,
     },
   ],
 };
@@ -27,6 +27,8 @@ export const care = {
     },
     field2: {
       label: `Select Entity Type*`,
+      radio: `LLC`,
+      radio2: `Corporation`,
     },
     link: {
       text: `Not sure?`,
