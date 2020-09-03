@@ -61,6 +61,11 @@ const OvalCenter = styled.div`
   position: absolute;
   right: 0;
   bottom: 370px;
+  display: none;
+    
+    @media (min-width: 1200px){
+       display: block;
+    } 
 `
 
 const AbsoluteCurve = styled.div`

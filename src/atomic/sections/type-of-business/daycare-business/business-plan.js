@@ -41,6 +41,11 @@ const Oval = styled.div`
   left: 0;
   top: 0;
   width: 420px;
+  display: none;
+    
+    @media (min-width: 1200px){
+       display: block;
+    } 
 `
 
 const OvalCenter = styled.div`
@@ -49,6 +54,11 @@ const OvalCenter = styled.div`
   bottom: 211px;
   width: 720px;
   transform: scaleX(-1);
+  display: none;
+    
+    @media (min-width: 1200px){
+       display: block;
+    } 
 `
 
 const BusinessPlan = () => (

@@ -39,6 +39,11 @@ const Oval = styled.div`
   top: 211px;
   opacity: 0.5;
   width: 570px;
+  display: none;
+    
+    @media (min-width: 1200px){
+       display: block;
+    } 
 `
 
 const CoachBusinessStructure = () => (

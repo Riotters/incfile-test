@@ -2,7 +2,7 @@ import React from "react";
 import {Heading} from "../../../atoms/typography/heading";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import Container from "../../../container";
-import OvalSvg from "../../../../images/oval-blue-5.inline.svg";
+import OvalSvg from "../../../../images/ovals/bottom-left-transparent-blue3.inline.svg";
 import styled from "styled-components";
 
 const Regulations = () => (
@@ -10,6 +10,10 @@ const Regulations = () => (
         <Oval>
             <OvalSvg />
         </Oval>
+
+        <Oval2>
+            <OvalSvg />
+        </Oval2>
         <Container style={{paddingTop: "100px", paddingBottom: "100px"}} width={750}>
             <Heading size={4} style={{fontSize: "40px"}}>
                 Rules, Regulations and Taxes for Your Construction Business
@@ -35,7 +39,26 @@ const Wrapper = styled.div`
 
 const Oval = styled.div`
     position: absolute; 
-    bottom: 0;
+    top: 178px;
     left: 0;
+    width: 420px;
+    display: none;
+  
+    @media (min-width: 1200px){
+       display: block;
+    }
+`;
+
+const Oval2 = styled.div`
+    position: absolute; 
+    top: 226px;
+    right: 0;
+    width: 136px;
+    display: none;
+    transform: scaleX(-1);
+    
+    @media (min-width: 1200px){
+       display: block;
+    }
 `;
 export default Regulations;
