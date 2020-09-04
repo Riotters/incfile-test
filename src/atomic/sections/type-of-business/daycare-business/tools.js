@@ -7,9 +7,22 @@ import {shadow} from "../../../atoms/styles/shadows";
 import {color} from "../../../atoms/styles/colors";
 import UsefulTools from "../../../partials/useful-tools";
 import {toolsList} from "../../../../static/type-of-business/daycare-business";
-
+import OvalSvg from "../../../../images/ovals/top-right-transparent-orange.inline.svg";
+import OvalSvg2 from "../../../../images/ovals/top-right-transparent-blue2.inline.svg";
 const ToolsAndLinks = () => (
     <Wrapper>
+        <Oval>
+            <OvalSvg/>
+        </Oval>
+
+        <Oval2>
+            <OvalSvg2/>
+        </Oval2>
+
+        <Oval3>
+            <OvalSvg/>
+        </Oval3>
+
         <Container>
             <TextCenterLayout headline="Groups and Forums for Daycare Owners"
                               text="Here are some useful places where you can connect with other daycare entrepreneurs."/>
@@ -58,6 +71,7 @@ const ToolsAndLinks = () => (
 const Wrapper = styled.div`
     padding-top: 100px;
     margin-bottom: 200px;
+    position: relative;
     background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 50%, #fef6ed);
 `;
 
@@ -90,5 +104,50 @@ const LinkItem = styled.div`
         margin-right: 15px;
     }
 `;
+
+const Oval = styled.div`
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 720px;
+    display: none;
+    transform: scaleX(-1);
+    
+    @media (min-width: 1200px){
+       display: block;
+    } 
+`;
+
+const Oval2 = styled.div`
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 420px;
+    display: none;
+    
+    @media (min-width: 1200px){
+       display: block;
+    } 
+`;
+
+
+const Oval3 = styled.div`
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 420px;
+    display: none;
+    transform: scaleX(-1);
+    opacity: 0.5;
+    
+    svg{
+        transform: scaleY(-1);
+    }
+    
+    @media (min-width: 1200px){
+       display: block;
+    } 
+`;
+
 
 export default ToolsAndLinks;

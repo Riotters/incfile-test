@@ -4,8 +4,7 @@ import TextCenterLayout from "../../../../components/partials/blocks/heading-cen
 import TopImageBox from "../../../../components/top-image-box";
 import {color} from "../../../../components/styles/colors";
 import styled from "styled-components";
-import Curve from "../../../../images/green-curve.inline.svg";
-import GreenOval from "../../../../images/oval-green-2.inline.svg";
+import GreenOval from "../../../../images/ovals/top-right-transparent-green2.inline.svg";
 
 const SettingBusiness = () => (
     <GreenContainer>
@@ -13,6 +12,10 @@ const SettingBusiness = () => (
         <Oval>
             <GreenOval/>
         </Oval>
+
+        <Oval2>
+            <GreenOval/>
+        </Oval2>
 
         <Container>
             <TextCenterLayout
@@ -105,17 +108,35 @@ const ImageBoxes = styled.div`
   }
 `;
 
-const GreenCurve = styled.div`
-    position: absolute;
-    right: -115px;
-    bottom: -122px;
-    width: 115px;
-`;
-
 const Oval = styled.div`
     position: absolute;
+    left: 0;
+    top: 468px;
+    width: 570px;
+    transform: rotate(-180deg);
+    display: none;
+  
+    @media (min-width: 1200px){
+       display: block;
+    }
+`;
+
+const Oval2 = styled.div`
+    position: absolute;
     right: 0;
-    top: 220px;
+    bottom: 323px;
+    width: 570px;
+    transform: rotate(-180deg);
+    opacity: 0.5;
+    display: none;
+  
+    @media (min-width: 1200px){
+       display: block;
+    }
+    
+    svg {
+        transform: scaleX(-1);
+    }
 `;
 
 export default SettingBusiness;

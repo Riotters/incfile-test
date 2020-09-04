@@ -12,7 +12,7 @@ import OvalSVG from "../../../../images/oval-pink.inline.svg";
 
 const BusinessOwnerResponsibilities = styled.section`
   position: relative;
-  padding-top: 75px;
+  padding-top: 100px;
   padding-bottom: 64px;
   width: 100%;
   
@@ -23,7 +23,7 @@ const BusinessOwnerResponsibilities = styled.section`
 
   h4.title {
     font-size: 40px;
-    padding-bottom: 56px;
+    margin-bottom: 56px;
   }
 
   .box {

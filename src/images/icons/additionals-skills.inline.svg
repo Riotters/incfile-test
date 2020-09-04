@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="20px" viewBox="0 0 32 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(0.000000, -6.000000)">
+            <g id="20200406_ICON_ICON-190" transform="translate(0.000000, 6.000000)">
+                <path d="M23.73,6.65 L23.73,10.09 L23.57,10.09 L22,11.58 L22,11.63 L21.84,11.79 L20.45,13.14 L19.77,13.81 L19.54,14.51 C19.9665601,15.7532815 20.1465862,17.0678121 20.07,18.38 L18.51,18.05 L15.82,16.63 L11,19.19 L11.93,13.77 L8.14,10.09 L8,10.09 L8,13.09 L0.73,13.09 L4.36,8.9 L2.22,6.43 L6.29,6.43 L6.29,4.72 L8,4.72 L8,2.49 L21,2.49 C21.5522847,2.49 22,2.93771525 22,3.49 L22,5.67 C22,6.22228475 22.4477153,6.67 23,6.67 L23.73,6.65 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+                <path d="M28,8.31 C28.2590557,8.01512241 28.3216481,7.59595969 28.1600393,7.23826539 C27.9984304,6.88057109 27.6425078,6.65049648 27.25,6.65 L23.92,6.65 L23.92,13.3 L28,13.3 L26.42,11.48 C26.0941718,11.1041142 26.0941718,10.5458858 26.42,10.17 L28,8.31 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+                <polygon id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" points="8.13 10.09 7.97 10.09 7.97 9.93"></polygon>
+                <polyline id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" points="7.97 9.93 7.97 0.79 23.73 0.79 23.73 9.93 22.04 9.68"></polyline>
+                <polygon id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" points="23.73 9.93 23.73 10.09 23.57 10.09"></polygon>
+                <polygon id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" points="27.55 9.12 31.16 13.3 23.91 13.3 23.91 4.95 31.16 4.95"></polygon>
+                <polygon id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" points="7.97 4.72 7.97 13.08 0.72 13.08 4.36 8.9 2.21 6.43 0.72 4.72"></polygon>
+                <path d="M23.73,9.93 L23.57,10.09 L22,11.58 L20.49,13.1 L19.8,13.77 L19.8,13.77 L20.45,17.62 C20.5051269,17.9086674 20.388884,18.2032467 20.1514871,18.3764823 C19.9140901,18.5497179 19.5980917,18.570558 19.34,18.43 L18.54,18.01 L16.2,16.78 C15.9783215,16.6608834 15.7116785,16.6608834 15.49,16.78 L12.36,18.43 C12.0984882,18.5611781 11.7855592,18.534982 11.5494969,18.3621506 C11.3134345,18.1893193 11.1939402,17.8989197 11.24,17.61 L11.84,14.13 C11.8819554,13.8791265 11.7956277,13.6238969 11.61,13.45 L8.13,10.05 L8,9.93 L13,9.2 C13.252001,9.16729776 13.4703029,9.00921706 13.58,8.78 L15.15,5.61 C15.277779,5.34208627 15.5481747,5.17147398 15.845,5.17147398 C16.1418253,5.17147398 16.412221,5.34208627 16.54,5.61 L18.1,8.78 C18.2125119,9.00685233 18.4293675,9.16388563 18.68,9.2 L20.48,9.46 L22.03,9.68 L23.73,9.93 Z" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>

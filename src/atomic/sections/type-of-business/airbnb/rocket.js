@@ -92,7 +92,11 @@ const Oval = styled.div`
   position: absolute;
   right: 0;
   bottom: 0;
-
+    display: none;
+      
+        @media (min-width: 720px){
+           display: block;
+        }
   &::after {
     content: "";
     position: absolute;

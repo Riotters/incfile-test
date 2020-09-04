@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="168px" height="168px" viewBox="0 0 168 168" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Rings</title>
+    <g id="start-a-business/franchise-business" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="start-a-business/franchise-business_2" transform="translate(-791.000000, -1630.000000)" stroke-width="8">
+            <g id="Understanding-the-World-of-the-Franchise-Business" transform="translate(755.000000, 804.000000)">
+                <g id="Modul/Chart/Static2" transform="translate(0.000000, 790.000000)">
+                    <g id="Rings" transform="translate(40.000000, 40.000000)">
+                        <circle id="Oval" stroke="#F2F6FF" cx="80" cy="80" r="80"></circle>
+                        <path d="M80,0 C96.8943063,0 113.355006,5.34839 127.022806,15.27868 C140.690606,25.20888 150.863906,39.21118 156.084506,55.27868 C161.305206,71.34608 161.305206,88.65388 156.084506,104.72098 C150.863906,120.78898 140.690606,134.79098 127.022806,144.72098" id="Path" stroke="#5089FD" stroke-linecap="round"></path>
+                        <g id="Group" transform="translate(15.000000, 15.000000)">
+                            <circle id="Oval-Copy" stroke="#F2F6FF" cx="65" cy="65" r="65"></circle>
+                            <path d="M65,0 C78.727,0 92.101,4.34557 103.206,12.4139 C114.311,20.4822 122.577,31.8591 126.819,44.9139" id="Path" stroke="#F1A0A0" stroke-linecap="round"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

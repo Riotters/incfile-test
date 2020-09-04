@@ -48,6 +48,9 @@ import DominoIcon from "../../images/icons/domino.inline.svg";
 import Regulations from "../../atomic/sections/type-of-business/handyman/regulations";
 import InsuranceBusiness from "../../atomic/sections/type-of-business/handyman/insurance-business";
 import Taxes from "../../atomic/sections/type-of-business/handyman/taxes";
+import QuestionIcon from "../../images/icons/the-question-is-just-where-do-you-start.inline.svg";
+import TabOvalSvg from "../../images/ovals/bottom-left-transparent-blue3.inline.svg";
+import {shadow} from "../../atomic/atoms/styles/shadows";
 
 const Handyman = () => (
     <Layout>
@@ -72,343 +75,357 @@ const Handyman = () => (
             </RatingRow>
         </Top>
 
-        <TabsSection>
-            <TabHeading>
-                <TabTitle title="Handyman" SvgIcon={Tab1Icon}/>
-                <TabTitle title="Why This Industry?" SvgIcon={Tab2Icon}/>
-                <TabTitle title="Is This Business For You?" SvgIcon={Tab3Icon}/>
-            </TabHeading>
+        <TabsWrapper>
+            <TabOval>
+                <TabOvalSvg />
+            </TabOval>
+            <TabsSection>
+                <TabHeading>
+                    <TabTitle title="Handyman" SvgIcon={Tab1Icon}/>
+                    <TabTitle title="Why This Industry?" SvgIcon={Tab2Icon}/>
+                    <TabTitle title="Is This Business For You?" SvgIcon={Tab3Icon}/>
+                </TabHeading>
 
-            <CollapseWrapper>
-                <PanelWrapper>
-                    <Heading size={3}>
-                        A handyman business has several advantages over other types
-                        of business:
-                    </Heading>
+                <CollapseWrapper>
+                    <PanelWrapper>
+                        <Heading size={3}>
+                            A handyman business has several advantages over other types
+                            of business:
+                        </Heading>
 
-                    <ListWrapper>
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    It demands vocational skills that few people have
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                        <ListWrapper>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        It demands vocational skills that few people have
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    You’ll be in demand if your work
-                                    is high-quality
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        You’ll be in demand if your work
+                                        is high-quality
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Handyman services aren’t easily replaced by automation
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Handyman services aren’t easily replaced by automation
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    You can build up a strong local reputation
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        You can build up a strong local reputation
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                    </ListWrapper>
+                        </ListWrapper>
 
-                    <Paragraph big style={{fontWeight: "bold", marginTop: "48px", marginBottom: "48px"}}>
-                        Of course, you’re likely to face competition from other tradesmen, but if you find the right
-                        niche, do some research and get your marketing right, then word-of-mouth will help you build
-                        your handyman business.
-                    </Paragraph>
+                        <Paragraph big style={{fontWeight: "bold", marginTop: "48px", marginBottom: "48px", color: color.black}}>
+                            Of course, you’re likely to face competition from other tradesmen, but if you find the right
+                            niche, do some research and get your marketing right, then word-of-mouth will help you build
+                            your handyman business.
+                        </Paragraph>
 
-                    <Colorbox curveColor={color.blue1} color={color.blue3} curve theme="icon">
+                        <Colorbox curveColor={color.blue1} color={color.blue3} curve theme="icon" Icon={QuestionIcon}>
+                            <Paragraph big style={{fontWeight: "bold"}}>
+                                The question is, just where do you start?
+                            </Paragraph>
+                            <Paragraph>
+                                Here at Incfile, we know the answer, and we’ve shared it with more than 100,000 people
+                                who
+                                we've helped form their businesses. Since 2004, we’ve supported tradesmen just like you.
+                            </Paragraph>
+                            <Paragraph bottomMargin={0}>
+                                To get you started on the right foot, here’s our simple guide to starting up a
+                                successful
+                                handyman business. From highlighting important facts to validating your ideas, and from
+                                choosing the right structure to your options for managing your business, you’ll find the
+                                answers you need.
+                            </Paragraph>
+                        </Colorbox>
+
+                        <Paragraph big style={{fontWeight: "bold", marginTop: "48px", color: color.black}}>
+                            Read on for some insight into creating your own home handyman business and becoming an
+                            entrepreneur. In this guide we will cover:
+                        </Paragraph>
+
+                        <ListWrapper>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Facts and figures about the success
+                                        of handyman businesses
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
+
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        How to choose the right business structure
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
+
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        How to find out if a handyman business is right for you
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
+
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Where to find handyman business groups, forums and support
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
+
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Ideas for the type of handyman business you could form
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
+
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Helpful software for handyman business owners
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
+
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        How to validate your handyman business idea
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
+
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        How to start your handyman business with information on equipment, employees,
+                                        location, permits, finance, taxes and more
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
+
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Business plans for handyman companies
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
+                        </ListWrapper>
+
+                    </PanelWrapper>
+
+                    <PanelWrapper>
+                        <Heading size={3}>
+                            Helpful software for handyman business owners
+                        </Heading>
+
+                        <Paragraph big>
+                            How successful can you be as a handyman? Let’s dig into the facts and figures.
+                        </Paragraph>
+
+                        <BlueBoxWithAbsoluteText absoluteText="$4 Bilion"
+                                                 text="The overall revenues of handyman service franchise industry (groups of various types of tradesmen working together) a year in the U.S."/>
+
+                        <CircleWithText symbol="%" textInsideCircle="6"
+                                        textLine="Annual growth in the franchise part of a handyman business a year"
+                                        withBg={true}/>
+
+                        <div style={{marginBottom: "30px", marginTop: "48px"}}>
+                            <Adventages
+                                headline="A successful handyman could earn as much as $3,000 a week"
+                                width="100%"
+                            />
+                        </div>
+
+                        <div style={{marginBottom: "30px"}}>
+                            <Adventages
+                                headline="The most popular home handyman specializations include maintenance, plumbing, painting, flooring, landscaping and electrical"
+                                width="100%"
+                            />
+                        </div>
+                    </PanelWrapper>
+
+                    <PanelWrapper>
+                        <Heading size={3}>
+                            Is a Handyman Business Right for You?
+                        </Heading>
+                        <Paragraph big>
+                            Although it can be exciting to form a handyman business, there will
+                            be significant demands on you as a small business owner. Here are some of the things you can
+                            expect.
+                        </Paragraph>
+
                         <Paragraph big style={{fontWeight: "bold"}}>
-                            The question is, just where do you start?
+                            A Day in the Life of a Handyman
                         </Paragraph>
-                        <Paragraph>
-                            Here at Incfile, we know the answer, and we’ve shared it with more than 100,000 people who
-                            we've helped form their businesses. Since 2004, we’ve supported tradesmen just like you.
+
+                        <Paragraph big>
+                            Here are some of the typical tasks you’ll be performing for your handyman business on a
+                            daily
+                            basis:
                         </Paragraph>
-                        <Paragraph bottomMargin={0}>
-                            To get you started on the right foot, here’s our simple guide to starting up a successful
-                            handyman business. From highlighting important facts to validating your ideas, and from
-                            choosing the right structure to your options for managing your business, you’ll find the
-                            answers you need.
+
+                        <TextBoxed style={{marginBottom: "8px"}}>
+                            <Paragraph bottomMargin={0}>
+                                Deal with phone calls, emails and other contacts from potential clients
+                            </Paragraph>
+                        </TextBoxed>
+
+                        <TextBoxed style={{marginBottom: "8px"}}>
+                            <Paragraph bottomMargin={0}>
+                                Travel to job sites to assess work and estimate costs
+                            </Paragraph>
+                        </TextBoxed>
+
+                        <TextBoxed style={{marginBottom: "8px"}}>
+                            <Paragraph bottomMargin={0}>
+                                Create quotes and send them out to clients
+                            </Paragraph>
+                        </TextBoxed>
+
+                        <TextBoxed style={{marginBottom: "8px"}}>
+                            <Paragraph bottomMargin={0}>
+                                Buy materials and tools for completing jobs
+                            </Paragraph>
+                        </TextBoxed>
+
+                        <TextBoxed style={{marginBottom: "8px"}}>
+                            <Paragraph bottomMargin={0}>
+                                Travel to job sites for work
+                            </Paragraph>
+                        </TextBoxed>
+
+                        <TextBoxed style={{marginBottom: "8px"}}>
+                            <Paragraph bottomMargin={0}>
+                                Provide home handyman services to clients
+                            </Paragraph>
+                        </TextBoxed>
+
+                        <TextBoxed style={{marginBottom: "8px"}}>
+                            <Paragraph bottomMargin={0}>
+                                Market your business using local promotions, your website, social media
+                                and other means
+                            </Paragraph>
+                        </TextBoxed>
+
+                        <TextBoxed style={{marginBottom: "8px"}}>
+                            <Paragraph bottomMargin={0}>
+                                Send out invoices, take payment and manage your finances
+                            </Paragraph>
+                        </TextBoxed>
+
+                        <TextBoxed style={{marginBottom: "8px"}}>
+                            <Paragraph bottomMargin={0}>
+                                Carry out business administration
+                            </Paragraph>
+                        </TextBoxed>
+
+                        <Paragraph big style={{fontWeight: "bold", marginTop: "48px"}}>
+                            Skills Needed by a Handyman Business Entrepreneur
                         </Paragraph>
-                    </Colorbox>
 
-                    <Paragraph big style={{fontWeight: "bold", marginTop: "48px"}}>
-                        Read on for some insight into creating your own home handyman business and becoming an
-                        entrepreneur. In this guide we will cover:
-                    </Paragraph>
-
-                    <ListWrapper>
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Facts and figures about the success
-                                    of handyman businesses
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
-
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    How to choose the right business structure
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
-
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    How to find out if a handyman business is right for you
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
-
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Where to find handyman business groups, forums and support
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
-
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Ideas for the type of handyman business you could form
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
-
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Helpful software for handyman business owners
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
-
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    How to validate your handyman business idea
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
-
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    How to start your handyman business with information on equipment, employees,
-                                    location, permits, finance, taxes and more
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
-
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Business plans for handyman companies
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
-                    </ListWrapper>
-
-                </PanelWrapper>
-
-                <PanelWrapper>
-                    <Heading size={3}>
-                        Helpful software for handyman business owners
-                    </Heading>
-
-                    <Paragraph big>
-                        How successful can you be as a handyman? Let’s dig into the facts and figures.
-                    </Paragraph>
-
-                    <BlueBoxWithAbsoluteText absoluteText="$4 Bilion"
-                                             text="The overall revenues of handyman service franchise industry (groups of various types of tradesmen working together) a year in the U.S."/>
-
-                    <CircleWithText symbol="%" textInsideCircle="6"
-                                    textLine="Annual growth in the franchise part of a handyman business a year"
-                                    withBg={true}/>
-
-                    <div style={{marginBottom: "30px", marginTop: "48px"}}>
-                        <Adventages
-                            headline="A successful handyman could earn as much as $3,000 a week"
-                            width="100%"
-                        />
-                    </div>
-
-                    <div style={{marginBottom: "30px"}}>
-                        <Adventages
-                            headline="The most popular home handyman specializations include maintenance, plumbing, painting, flooring, landscaping and electrical"
-                            width="100%"
-                        />
-                    </div>
-                </PanelWrapper>
-
-                <PanelWrapper>
-                    <Heading size={3}>
-                        Is a Handyman Business Right for You?
-                    </Heading>
-                    <Paragraph big>
-                        Although it can be exciting to form a handyman business, there will
-                        be significant demands on you as a small business owner. Here are some of the things you can
-                        expect.
-                    </Paragraph>
-
-                    <Paragraph big style={{fontWeight: "bold"}}>
-                        A Day in the Life of a Handyman
-                    </Paragraph>
-
-                    <Paragraph big>
-                        Here are some of the typical tasks you’ll be performing for your handyman business on a daily
-                        basis:
-                    </Paragraph>
-
-                    <TextBoxed style={{marginBottom: "8px"}}>
-                        <Paragraph bottomMargin={0}>
-                            Deal with phone calls, emails and other contacts from potential clients
+                        <Paragraph big>
+                            The following skills will be very useful in your role as a handyman small business owner:
                         </Paragraph>
-                    </TextBoxed>
 
-                    <TextBoxed style={{marginBottom: "8px"}}>
-                        <Paragraph bottomMargin={0}>
-                            Travel to job sites to assess work and estimate costs
+                        <TextBoxed style={{marginBottom: "8px"}}>
+                            <Paragraph bottomMargin={0}>
+                                Ability to quickly understand the amount of work and materials needed
+                                to complete a job
+                            </Paragraph>
+                        </TextBoxed>
+
+                        <TextBoxed style={{marginBottom: "8px"}}>
+                            <Paragraph bottomMargin={0}>
+                                Experience with completing similar jobs in the past
+                            </Paragraph>
+                        </TextBoxed>
+
+                        <TextBoxed style={{marginBottom: "8px"}}>
+                            <Paragraph bottomMargin={0}>
+                                Good vocational skills in your chosen home handyman area (painting, landscaping,
+                                carpentry,
+                                plumbing, etc.)
+                            </Paragraph>
+                        </TextBoxed>
+
+                        <TextBoxed style={{marginBottom: "8px"}}>
+                            <Paragraph bottomMargin={0}>
+                                Excellent interpersonal skills for dealing with potential customers
+                                and existing clients
+                            </Paragraph>
+                        </TextBoxed>
+
+                        <TextBoxed style={{marginBottom: "8px"}}>
+                            <Paragraph bottomMargin={0}>
+                                Networking skills so you can connect with other tradesmen and commercial clients
+                            </Paragraph>
+                        </TextBoxed>
+
+                        <TextBoxed style={{marginBottom: "8px"}}>
+                            <Paragraph bottomMargin={0}>
+                                Strong understanding of financial management and cash flow
+                            </Paragraph>
+                        </TextBoxed>
+
+                        <TextBoxed style={{marginBottom: "8px"}}>
+                            <Paragraph bottomMargin={0}>
+                                Some skills in marketing and promotion
+                            </Paragraph>
+                        </TextBoxed>
+
+                        <TextBoxed style={{marginBottom: "8px"}}>
+                            <Paragraph bottomMargin={0}>
+                                You cannot mind dealing with pet toileting and other habits
+                            </Paragraph>
+                        </TextBoxed>
+
+                        <Paragraph big style={{fontWeight: "bold", marginTop: "48px"}}>
+                            What Your Handyman Customers Are Looking For
                         </Paragraph>
-                    </TextBoxed>
 
-                    <TextBoxed style={{marginBottom: "8px"}}>
-                        <Paragraph bottomMargin={0}>
-                            Create quotes and send them out to clients
+                        <Paragraph big>
+                            Clients who hire a home handyman want reliability, quality and value. Reliability means you
+                            turn
+                            up when you say you will and you’ll complete the job to the agreed scope, timeline and
+                            price.
+                            Quality means you’ll approach the work with a careful eye, complete it with skill and
+                            deliver
+                            a finished product that meets your customers' needs. Value means that you charge fairly for
+                            your
+                            time, you don’t add unexpected fees and that your quote is reasonable for the work you’re
+                            doing.
                         </Paragraph>
-                    </TextBoxed>
-
-                    <TextBoxed style={{marginBottom: "8px"}}>
-                        <Paragraph bottomMargin={0}>
-                            Buy materials and tools for completing jobs
+                        <Paragraph big>
+                            It’s also important to note that not every customer is looking for the lowest quote — some
+                            clients are happy to pay more for higher quality work.
                         </Paragraph>
-                    </TextBoxed>
-
-                    <TextBoxed style={{marginBottom: "8px"}}>
-                        <Paragraph bottomMargin={0}>
-                            Travel to job sites for work
-                        </Paragraph>
-                    </TextBoxed>
-
-                    <TextBoxed style={{marginBottom: "8px"}}>
-                        <Paragraph bottomMargin={0}>
-                            Provide home handyman services to clients
-                        </Paragraph>
-                    </TextBoxed>
-
-                    <TextBoxed style={{marginBottom: "8px"}}>
-                        <Paragraph bottomMargin={0}>
-                            Market your business using local promotions, your website, social media
-                            and other means
-                        </Paragraph>
-                    </TextBoxed>
-
-                    <TextBoxed style={{marginBottom: "8px"}}>
-                        <Paragraph bottomMargin={0}>
-                            Send out invoices, take payment and manage your finances
-                        </Paragraph>
-                    </TextBoxed>
-
-                    <TextBoxed style={{marginBottom: "8px"}}>
-                        <Paragraph bottomMargin={0}>
-                            Carry out business administration
-                        </Paragraph>
-                    </TextBoxed>
-
-                    <Paragraph big style={{fontWeight: "bold", marginTop: "48px"}}>
-                        Skills Needed by a Handyman Business Entrepreneur
-                    </Paragraph>
-
-                    <Paragraph big>
-                        The following skills will be very useful in your role as a handyman small business owner:
-                    </Paragraph>
-
-                    <TextBoxed style={{marginBottom: "8px"}}>
-                        <Paragraph bottomMargin={0}>
-                            Ability to quickly understand the amount of work and materials needed
-                            to complete a job
-                        </Paragraph>
-                    </TextBoxed>
-
-                    <TextBoxed style={{marginBottom: "8px"}}>
-                        <Paragraph bottomMargin={0}>
-                            Experience with completing similar jobs in the past
-                        </Paragraph>
-                    </TextBoxed>
-
-                    <TextBoxed style={{marginBottom: "8px"}}>
-                        <Paragraph bottomMargin={0}>
-                            Good vocational skills in your chosen home handyman area (painting, landscaping, carpentry,
-                            plumbing, etc.)
-                        </Paragraph>
-                    </TextBoxed>
-
-                    <TextBoxed style={{marginBottom: "8px"}}>
-                        <Paragraph bottomMargin={0}>
-                            Excellent interpersonal skills for dealing with potential customers
-                            and existing clients
-                        </Paragraph>
-                    </TextBoxed>
-
-                    <TextBoxed style={{marginBottom: "8px"}}>
-                        <Paragraph bottomMargin={0}>
-                            Networking skills so you can connect with other tradesmen and commercial clients
-                        </Paragraph>
-                    </TextBoxed>
-
-                    <TextBoxed style={{marginBottom: "8px"}}>
-                        <Paragraph bottomMargin={0}>
-                            Strong understanding of financial management and cash flow
-                        </Paragraph>
-                    </TextBoxed>
-
-                    <TextBoxed style={{marginBottom: "8px"}}>
-                        <Paragraph bottomMargin={0}>
-                            Some skills in marketing and promotion
-                        </Paragraph>
-                    </TextBoxed>
-
-                    <TextBoxed style={{marginBottom: "8px"}}>
-                        <Paragraph bottomMargin={0}>
-                            You cannot mind dealing with pet toileting and other habits
-                        </Paragraph>
-                    </TextBoxed>
-
-                    <Paragraph big style={{fontWeight: "bold", marginTop: "48px"}}>
-                        What Your Handyman Customers Are Looking For
-                    </Paragraph>
-
-                    <Paragraph big>
-                        Clients who hire a home handyman want reliability, quality and value. Reliability means you turn
-                        up when you say you will and you’ll complete the job to the agreed scope, timeline and price.
-                        Quality means you’ll approach the work with a careful eye, complete it with skill and deliver
-                        a finished product that meets your customers' needs. Value means that you charge fairly for your
-                        time, you don’t add unexpected fees and that your quote is reasonable for the work you’re doing.
-                    </Paragraph>
-                    <Paragraph big>
-                        It’s also important to note that not every customer is looking for the lowest quote — some
-                        clients are happy to pay more for higher quality work.
-                    </Paragraph>
-                </PanelWrapper>
-            </CollapseWrapper>
-        </TabsSection>
+                    </PanelWrapper>
+                </CollapseWrapper>
+            </TabsSection>
+        </TabsWrapper>
 
         <TypeOfBusiness/>
 
@@ -538,7 +555,7 @@ const Handyman = () => (
                             SvgImage={HandsIcon}
                             textBackgroundColor="transparent"
                             imageBackgroundColor={color.white}
-                            imageShadowColor="#ababab"
+                            imageShadowColor={shadow.white2}
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
@@ -568,7 +585,7 @@ const Handyman = () => (
                             SvgImage={LimitedIcon}
                             textBackgroundColor="transparent"
                             imageBackgroundColor={color.white}
-                            imageShadowColor="#ababab"
+                            imageShadowColor={shadow.white2}
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
@@ -597,7 +614,7 @@ const Handyman = () => (
                             SvgImage={SeriesIcon}
                             textBackgroundColor="transparent"
                             imageBackgroundColor={color.white}
-                            imageShadowColor="#ababab"
+                            imageShadowColor={shadow.white2}
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
@@ -626,7 +643,7 @@ const Handyman = () => (
                             SvgImage={PlaneIcon}
                             textBackgroundColor="transparent"
                             imageBackgroundColor={color.white}
-                            imageShadowColor="#ababab"
+                            imageShadowColor={shadow.white2}
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
@@ -654,7 +671,7 @@ const Handyman = () => (
                             SvgImage={RockerIcon}
                             textBackgroundColor="transparent"
                             imageBackgroundColor={color.white}
-                            imageShadowColor="#ababab"
+                            imageShadowColor={shadow.white2}
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
@@ -825,5 +842,16 @@ const OvalGreen2 = styled.div`
     transform: scaleX(-1);
   }
 `
+
+const TabsWrapper = styled.div`
+    position: relative;
+`;
+
+const TabOval = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 420px;
+`;
 
 export default Handyman;

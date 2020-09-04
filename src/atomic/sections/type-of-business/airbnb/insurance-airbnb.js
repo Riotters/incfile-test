@@ -4,9 +4,13 @@ import InfoCardsSection from "../../../partials/info-cards-section";
 import {InfoCards} from "../../../../static/type-of-business/airbnb";
 import {gradient} from "../../../atoms/styles/colors";
 import TextCenterLayout from "../../../../components/partials/blocks/heading-center";
+import OvalSVG from "../../../../images/ovals/top-right-transparent-blue.inline.svg";
 
 const InsuranceAirBnb = () => (
     <Wrapper>
+        <Oval>
+            <OvalSVG/>
+        </Oval>
         <div style={{paddingBottom: "100px"}}>
             <TextCenterLayout
                 headline="Insurance for Your Airbnb Business"
@@ -23,5 +27,18 @@ const Wrapper = styled.section`
     padding-top: 100px;
     position: relative;
 `;
+
+const Oval = styled.div`
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: none;
+  width: 570px;
+  z-index: -1;
+  
+  @media (min-width: 720px){
+    display: block;
+  }
+`
 
 export default InsuranceAirBnb;

@@ -23,14 +23,19 @@ const Box = styled.div`
     flex-direction: column;
     align-items: center;
     height: 100%;
-    width: ${props => props.width};
-    max-width: ${props => props.width};
+    width: 100%;
+    max-width: 100%;
     padding: 48px 40px 40px;
     position: relative;
     background-color: ${color.white};
     box-shadow: ${shadow.white1};
     border-radius: 20px;
 
+    @media (min-width: ${props => props.width}){
+        width: ${props => props.width};
+        max-width: ${props => props.width};
+    }
+    
     h4 {
         width: 100%;
         line-height: 27px;

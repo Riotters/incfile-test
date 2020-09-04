@@ -1,3 +1,5 @@
+import {color} from "../../components/styles/colors";
+
 export const toolsList = {
     headlineText: "Useful Online Tools for Your Amazon Business",
     description: "In addition to the specialist Amazon seller tools listed above, there are some other really great online tools for managing your Amazon seller business. They will reduce the time you spend on administration, help you to collaborate with others and free up your time to grow and manage your new venture.",
@@ -65,6 +67,41 @@ export const toolsList = {
         {
             title: "SEO",
             tools: ["SemRush", "KWFinder", "Moz", "AHREFS"]
+        }
+    ]
+}
+
+export const RingText = {
+    list: [
+        {
+            color: color.blue1,
+            boldText: "80%",
+            text: "of Amazon U.S. users purchase from the website at least once a month"
+        },
+        {
+            color: color.green1,
+            boldText: "80%",
+            text: "Nearly of Amazon sellers use “Fulfilled by Amazon”"
+        },
+        {
+            color: color.red1,
+            boldText: "77%",
+            text: "of Amazon sellers sell on multiple channels (ebay, their own ecommerce store, etc.)"
+        },
+        {
+            color: color.purple1,
+            boldText: "49%",
+            text: "of Amazon sellers sell less than $100,000 of product through Amazon a year"
+        },
+        {
+            color: color.yellow1,
+            boldText: "36%",
+            text: "sell between $100,000 and $1,000,000 of products a year through Amazon"
+        },
+        {
+            color: color.babyblue1,
+            boldText: "15%",
+            text: "sell more than $1,000,000 of products a year through Amazon"
         }
     ]
 }

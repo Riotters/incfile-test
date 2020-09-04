@@ -8,6 +8,7 @@ import TextBlockWithImage from "../../../molecules/mixed-blocks/text-block-with-
 import ArrowSVG from "../../../../images/arrow.inline.svg";
 import IconCircle from "../../../../components/icons/circle";
 import PlaneIcon from "../../../../images/icons/plane.inline.svg";
+import SeriesIcon from "../../../../images/icons/limited-liability-company.inline.svg"
 import RockerIcon from "../../../../images/icons/rocket.inline.svg";
 import LccIcon from "../../../../images/icons/limited-liability-company-or-llc.inline.svg";
 import HandsIcon from "../../../../images/icons/hands.inline.svg";
@@ -36,6 +37,11 @@ const Oval = styled.div`
   position: absolute;
   left: 0;
   top: 200px;
+  display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
 `
 
 const CoachBusinessStructure = () => (
@@ -116,7 +122,7 @@ const CoachBusinessStructure = () => (
                     </TextBlockWithImage>
 
                     <TextBlockWithImage
-                        SvgImage={RockerIcon}
+                        SvgImage={SeriesIcon}
                         textBackgroundColor="transparent"
                         imageBackgroundColor={color.white}
                         imageShadowColor="#ababab"

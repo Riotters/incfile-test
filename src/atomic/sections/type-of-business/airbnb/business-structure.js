@@ -11,7 +11,7 @@ import PlaneIcon from "../../../../images/icons/plane.inline.svg";
 import RockerIcon from "../../../../images/icons/rocket.inline.svg";
 import UmbrellaIcon from "../../../../images/icons/umbrella.inline.svg";
 import HandsIcon from "../../../../images/icons/hands.inline.svg";
-import ArrowsIcon from "../../../../images/icons/arrows.inline.svg"
+import ArrowsIcon from "../../../../images/icons/limited-liability-company-or-llc.inline.svg"
 import Button from "../../../molecules/buttons/button";
 import Container from "../../../container";
 import OvalOrange2Svg from "../../../../images/oval-orange-2.inline.svg";

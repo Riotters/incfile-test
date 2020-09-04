@@ -34,6 +34,11 @@ const Oval = styled.div`
     right: 0;
     bottom: calc(50% - 313px);
     width: 480px;
+    display: none;
+    
+    @media (min-width: 720px) {
+        display: block;
+    }
 `;
 
 const Content = styled.div`
@@ -50,6 +55,11 @@ const ImageBox = styled.div`
     top: calc(50% - 313px);
     width: 720px;
     height: 626px;
+    display: none;
+    
+    @media (min-width: 720px) {
+        display: block;
+    }
 `
 
 Conclusion.propTypes = {
