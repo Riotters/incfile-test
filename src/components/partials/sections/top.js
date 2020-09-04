@@ -60,7 +60,7 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   max-height: 777px;
 `;
 
@@ -72,7 +72,6 @@ const Oval = styled.div`
   top: 0;
   right: 0;
   z-index: -1;
-  overflow: hidden;
 
   @media (min-width: 992px) {
     width: 50%;

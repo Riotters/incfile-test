@@ -4,7 +4,7 @@ import TextCenterLayout from "../../../../components/partials/blocks/heading-cen
 import TopImageBox from "../../../../components/top-image-box";
 import {color} from "../../../../components/styles/colors";
 import styled from "styled-components";
-import GreenOval from "../../../../images/oval-green-2.inline.svg";
+import GreenOval from "../../../../images/ovals/top-left-transparent-babyblue1.inline.svg";
 
 const SettingBusiness = () => (
     <GreenContainer>
@@ -86,8 +86,14 @@ const GreenCurve = styled.div`
 
 const Oval = styled.div`
     position: absolute;
-    right: 0;
-    top: 220px;
+    left: 0;
+    top: 0px;
+    width: 720px;
+    display: none;
+  
+      @media (min-width: 720px) {
+        display: block;
+      }
 `;
 
 export default SettingBusiness;

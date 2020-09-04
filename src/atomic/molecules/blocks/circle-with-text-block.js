@@ -5,8 +5,8 @@ import {color} from "../../atoms/styles/colors";
 import {shadow} from "../../atoms/styles/shadows";
 import CircleSvg from "../../../images/circle-percentage.inline.svg";
 
-const CircleWithText = ({textInsideCircle, textLine, symbol, withBg, SvgChart}) => (
-    <Wrapper withBg={withBg}>
+const CircleWithText = ({textInsideCircle, textLine, symbol, withBg, SvgChart, ...rest}) => (
+    <Wrapper withBg={withBg} {...rest}>
         <Circle>
             <SvgChart/>
             <TextInside>

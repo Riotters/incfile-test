@@ -10,8 +10,8 @@ import CalcIcon from "../../../../images/icons/series-is-this-business-for-you.i
 import {Heading} from "../../../atoms/typography/heading";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import CkeckText from "../../../../components/static-check/text-only";
-import OvalSVG from "../../../../images/oval-blue-2.inline.svg";
-import OvalGreenSVG from "../../../../images/oval-green.inline.svg";
+import OvalSVG from "../../../../images/ovals/bottom-left-transparent-blue1.inline.svg";
+import OvalGreenSVG from "../../../../images/ovals/bottom-left-transparent-orange.inline.svg";
 import Container from "../../../../components/container";
 import BlueBoxWithAbsoluteText from "../../../molecules/text-blocks/blue-box-with-absolute-text";
 import Adventages from "../../../../components/adventages";
@@ -219,6 +219,12 @@ const Oval = styled.div`
   position: absolute;
   left: 0;
   top: 0;
+  width: 420px;
+  display: none;
+  
+  @media (min-width: 720px) {
+    display: block;
+  }
 `
 
 const OvalBottom = styled.div`
@@ -227,8 +233,18 @@ const OvalBottom = styled.div`
   max-height: 420px;
   max-width: 420px;
   position: absolute;
+  top: 667px;
   right: 0;
-  bottom: 0;
+  width: 420px;
+  display: none;
+  
+  @media (min-width: 720px) {
+    display: block;
+  }
+  
+  svg {
+    transform: scaleX(-1);
+  }
 `
 
 const PageTabs = ({layout, columns}) => (
@@ -466,37 +482,32 @@ const PageTabs = ({layout, columns}) => (
                                         <BlueBoxWithAbsoluteText absoluteText="18-34"
                                                                  text="Almost three-quarters of influencers on Instagram are in the 18-to-34 age range."/>
 
-                                        <CircleWithText textInsideCircle="70" symbol="%" textLine="Of teens trust influencers more than traditional celebrities" />
+                                        <CircleWithText textInsideCircle="70" symbol="%"
+                                                        textLine="Of teens trust influencers more than traditional celebrities"/>
 
-                                        <TextWithBubbleCounting text="4 in 10 millennials say that their favorite influencers understand them better than their friends."/>
+                                        <TextWithBubbleCounting
+                                            text="4 in 10 millennials say that their favorite influencers understand them better than their friends."/>
 
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                headline="Even micro-influencers are being sought out by brands, as they see higher levels of engagement than traditional celebrities and other marketing channels."
-                                                width="100%"
-                                            />
-                                        </div>
 
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                headline="Influencer marketing generates a high return on investment for brands and marketing agencies (by as much as 600 percent)."
-                                                width="100%"
-                                            />
-                                        </div>
+                                        <Adventages
+                                            headline="Even micro-influencers are being sought out by brands, as they see higher levels of engagement than traditional celebrities and other marketing channels."
+                                            width="100%"
+                                        />
 
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                headline="Influencer marketing is the fastest growing promotional channel."
-                                                width="100%"
-                                            />
-                                        </div>
+                                        <Adventages
+                                            headline="Influencer marketing generates a high return on investment for brands and marketing agencies (by as much as 600 percent)."
+                                            width="100%"
+                                        />
 
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                headline="The influencer marketing industry was worth around $2 billion in 2017 and is expected to be worth $10 billion over the next couple of years."
-                                                width="100%"
-                                            />
-                                        </div>
+                                        <Adventages
+                                            headline="Influencer marketing is the fastest growing promotional channel."
+                                            width="100%"
+                                        />
+
+                                        <Adventages
+                                            headline="The influencer marketing industry was worth around $2 billion in 2017 and is expected to be worth $10 billion over the next couple of years."
+                                            width="100%"
+                                        />
 
                                         <Paragraph big style={{marginBottom: "76px"}}>
                                             As you can see, if you’ve got the makings of an influencer marketer, the
@@ -507,7 +518,8 @@ const PageTabs = ({layout, columns}) => (
                                 </Panel>
                                 <Panel>
                                     <PanelWrapper className="panel3" layout={layout}>
-                                        <Heading size={2} style={{fontSize: "24px", textAlign: "left"}}>
+                                        <Heading size={3}
+                                                 style={{fontSize: "24px", textAlign: "left", marginBottom: "24px"}}>
                                             What It Means to Be a Social Media Influencer on Instagram, YouTube and
                                             Other Networks
                                         </Heading>
@@ -517,53 +529,41 @@ const PageTabs = ({layout, columns}) => (
                                             include:
                                         </Paragraph>
 
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                headline="A large follower count (preferably 100,000 followers or more)"
-                                                width="100%"
-                                            />
-                                        </div>
+                                        <Adventages
+                                            headline="A large follower count (preferably 100,000 followers or more)"
+                                            width="100%"
+                                        />
 
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                headline="An active presence across one or more social media networks, especially Instagram, Facebook and YouTube"
-                                                width="100%"
-                                            />
-                                        </div>
+                                        <Adventages
+                                            headline="An active presence across one or more social media networks, especially Instagram, Facebook and YouTube"
+                                            width="100%"
+                                        />
 
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                headline="A niche for yourself, whether that’s sharing makeup and fashion tips, reviewing the latest technology or having a strong opinion and viewpoint"
-                                                width="100%"
-                                            />
-                                        </div>
+                                        <Adventages
+                                            headline="A niche for yourself, whether that’s sharing makeup and fashion tips, reviewing the latest technology or having a strong opinion and viewpoint"
+                                            width="100%"
+                                        />
 
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                headline="Plenty of interactions from your followers, including onward sharing, likes and favorites"
-                                                width="100%"
-                                            />
-                                        </div>
+                                        <Adventages
+                                            headline="Plenty of interactions from your followers, including onward sharing, likes and favorites"
+                                            width="100%"
+                                        />
 
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                headline="An audience that is difficult to reach through traditional marketing channels, like teens and young women"
-                                                width="100%"
-                                            />
-                                        </div>
+                                        <Adventages
+                                            headline="An audience that is difficult to reach through traditional marketing channels, like teens and young women"
+                                            width="100%"
+                                        />
 
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                headline="A deep, personal connection with your fans and followers"
-                                                width="100%"
-                                            />
-                                        </div>
+                                        <Adventages
+                                            headline="A deep, personal connection with your fans and followers"
+                                            width="100%"
+                                        />
 
-                                        <Heading size={3} style={{fontSize: "20px", textAlign: "left"}}>
+                                        <Heading size={3} style={{fontSize: "20px", textAlign: "left", marginTop: "48px"}}>
                                             How You Will Spend Your Days as a Social Media Influencer
                                         </Heading>
 
-                                        <Paragraph big style={{marginBottom: "48px"}}>
+                                        <Paragraph big>
                                             The main area you’ll be focusing on is creating original content. Your
                                             followers will spot when you’re just sharing generic marketing messages, so
                                             you need to personalize all of your posts. This could involve taking videos
@@ -571,7 +571,7 @@ const PageTabs = ({layout, columns}) => (
                                             creating engaging descriptions and copy.
                                         </Paragraph>
 
-                                        <Paragraph big style={{marginBottom: "48px"}}>
+                                        <Paragraph big>
                                             You’ll need to post regularly as well — not just for the offerings you’re
                                             being paid to promote, but about other aspects of your interests and life.
                                             This helps to keep your followers engaged and encourages more people to
@@ -585,7 +585,7 @@ const PageTabs = ({layout, columns}) => (
                                             brands to offer your services.
                                         </Paragraph>
 
-                                        <Heading size={3} style={{fontSize: "20px", textAlign: "left"}}>
+                                        <Heading size={3} style={{fontSize: "20px", textAlign: "left", marginBottom: "24px"}}>
                                             How Instagram and Other Social Media Influencers Make Money
                                         </Heading>
 
@@ -618,7 +618,7 @@ const PageTabs = ({layout, columns}) => (
 
                                         </Colorbox>
 
-                                        <Paragraph big style={{marginBottom: "48px"}}>
+                                        <Paragraph big style={{marginBottom: "48px", marginTop: "48px"}}>
                                             You should work with the brand or marketing agency to agree on payment terms
                                             that fairly represent the effort you’re putting in and the results they
                                             expect to see. In terms of how much you can make, Instagram broke down the

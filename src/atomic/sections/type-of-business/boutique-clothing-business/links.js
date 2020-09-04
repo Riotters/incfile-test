@@ -5,9 +5,23 @@ import TextCenterLayout from "../../../partials/heading-center";
 import PathLink from "../../../molecules/buttons/path";
 import {shadow} from "../../../atoms/styles/shadows";
 import {color} from "../../../atoms/styles/colors";
+import OvalSvg from "../../../../images/ovals/bottom-left-transparent-orange.inline.svg";
+import OvalSvg2 from "../../../../images/ovals/bottom-left-transparent-blue3.inline.svg";
+import Curve from "../../../../images/green-curve.inline.svg";
 
 const AmazonLinks = () => (
     <Wrapper>
+        <Oval>
+            <OvalSvg />
+        </Oval>
+
+        <Oval2>
+            <OvalSvg2 />
+        </Oval2>
+
+        <Oval3>
+            <OvalSvg2 />
+        </Oval3>
         <Container>
             <TextCenterLayout headline="Social Media Groups for Your Amazon Business"
                               text="Connecting with other business owners in your industry can be incredibly helpful. Here are some of the best social media groups:"/>
@@ -24,6 +38,9 @@ const AmazonLinks = () => (
                     <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Amazon FBA Competitive Edge (Junglescout)
                     </PathLink>
+                    <AbsoluteCurve>
+                        <Curve/>
+                    </AbsoluteCurve>
                 </LinkItem>
 
                 <LinkItem>
@@ -149,6 +166,7 @@ const Wrapper = styled.div`
     padding-top: 100px;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, #f2f6ff);
     padding-bottom: 100px;
+    position: relative;
 `;
 
 const LinksContainer = styled.div`
@@ -170,6 +188,7 @@ const LinkItem = styled.div`
     box-shadow: ${shadow.white1};
     width: 100%;
     margin-bottom: 30px;
+    position: relative;
     
     @media (min-width: 470px) {
         width: 470px;
@@ -178,6 +197,64 @@ const LinkItem = styled.div`
     @media (min-width: 1000px) {
         margin-left: 15px;
         margin-right: 15px;
+    }
+`;
+
+const Oval = styled.div`
+    position: absolute;
+    top: 217px;
+    left: 0;
+    width: 720px;
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
+`;
+
+
+const Oval2 = styled.div`
+    position: absolute;
+    top: 847px;
+    right: 0;
+    width: 720px;
+    transform: rotate(-180deg);
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
+`;
+
+
+const Oval3 = styled.div`
+    position: absolute;
+    bottom: 251px;
+    left: 0;
+    width: 420px;
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
+`;
+
+const AbsoluteCurve = styled.div`
+    position: absolute;
+    top: -101px;
+    right: -115px;
+    width: 115px;
+    display: none;
+    transform: rotate(-90deg);
+  
+    @media (min-width: 1200px){
+        display: block;
+    }
+    
+    svg {
+        path{
+            fill: #fce7d0;
+        }
     }
 `;
 

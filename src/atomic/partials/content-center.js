@@ -6,6 +6,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
+  position: relative;
 
   @media(min-width: 769px) {
       flex-direction: row;

@@ -7,7 +7,7 @@ import Adventages from "../../../../components/adventages";
 import {color} from "../../../../components/styles/colors";
 import {shadow} from "../../../../components/styles/shadows";
 import {adventages} from "../../../../static/type-of-business/handyman";
-import Curve from "../../../atoms/shapes/curve";
+import Curve from "../../../../images/curve-orange.inline.svg";
 import OvalSvg from "../../../../images/ovals/top-right-transparent-blue.inline.svg";
 import OvalSvg2 from "../../../../images/ovals/top-left-transparent-blue2.inline.svg";
 import {Paragraph} from "../../../atoms/typography/paragraph";
@@ -25,12 +25,13 @@ const TypeOfBusiness = () => (
         </OvalBottom>
         <Container>
             <Service>
+
                 <TextCenterLayout headline="What Type of Home Handyman Business Should You Start?"
                                   text="When it comes to starting a handyman business, you have plenty of choices. When you want to turn your hobbies or fix-it skills into a successful business, these are some good places to start."/>
 
                 <AdventagesBox>
                     <CurveWrapper>
-                        <Curve color={color.red1}/>
+                        <Curve />
                     </CurveWrapper>
                     {adventages.items.map(item => (
                         <Adventages
@@ -90,7 +91,7 @@ const Wrapper = styled.div`
 `;
 
 const Service = styled.div`
-  padding: 64px 0;
+  padding: 64px 0 120px 0;
 `;
 
 const AdventagesBox = styled.div`
@@ -105,8 +106,20 @@ const AdventagesBox = styled.div`
 
 const CurveWrapper = styled.div`
     position: absolute;
-    right: -24px;
-    top: 0px;
+    left: -70px;
+    bottom: -70px;
+    display: none;
+    transform: rotate(-90deg);
+    
+    @media (min-width: 1200px){
+       display: block;
+    }
+    
+    svg{
+        path{
+            fill: #d2e0fe;
+        }
+    }
 `;
 
 const Oval = styled.div`

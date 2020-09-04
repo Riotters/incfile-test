@@ -36,12 +36,22 @@ const Oval = styled.div`
   left: 0;
   top: 0;
   transform: rotate(180deg);
+  display: none;
+    
+    @media (min-width: 720px) {
+        display: block;
+    }
 `
 
 const OvalCenter = styled.div`
   position: absolute;
   right: 0;
   top: 38%;
+  display: none;
+    
+    @media (min-width: 720px) {
+        display: block;
+    }
 `
 
 const BusinessPlan = () => (

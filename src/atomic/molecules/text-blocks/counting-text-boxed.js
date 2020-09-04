@@ -7,7 +7,7 @@ import IconCircle from "../../../components/icons/circle";
 
 const Wrapper = styled.div`
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
     width: 100%;
     padding: 24px;
@@ -15,7 +15,7 @@ const Wrapper = styled.div`
     box-shadow: ${shadow.white1};
     position: relative;
     border-radius: 5px;
-    margin-bottom: 8px;
+    margin-bottom: 7px;
   
 `
 

@@ -40,7 +40,7 @@ export const InfoCards = [
     },
     {
         backgroundColor: color.green3,
-        imageName: "workers-compensation-insurance",
+        imageName: "shield-icon",
         title: "General Liability Insurance",
         content: "This insurance protects your daycare business from claims due to being sued. This may include injury to children or members of the public, property damage, personal liabilities, legal defense and more. It can help protect your business from financial penalties and bankruptcy. This type of insurance could be essential to your daycare business, as you will be looking after small children and will need the reassurance of a good insurance policy."
     },

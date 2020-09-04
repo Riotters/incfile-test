@@ -14,7 +14,8 @@ import PageTabs from "../../atomic/sections/type-of-business/social-media-influe
 import BusinessPlan from "../../atomic/sections/type-of-business/social-media-influencer/boutique-business-plan";
 import BusinessStructure from "../../atomic/sections/type-of-business/social-media-influencer/business-structure";
 import Taxes from "../../atomic/sections/type-of-business/social-media-influencer/taxes";
-import TextCenterLayout from "../../atomic/partials/heading-left";
+import {Heading} from "../../atomic/atoms/typography/heading";
+import {Paragraph} from "../../atomic/atoms/typography/paragraph";
 
 const SocialMediaInfluencer = () => (
     <Layout>
@@ -37,7 +38,7 @@ const SocialMediaInfluencer = () => (
             </RatingRow>
         </Top>
 
-        <PageTabs />
+        <PageTabs/>
 
         <SettingBusiness/>
 
@@ -45,12 +46,17 @@ const SocialMediaInfluencer = () => (
 
         <BusinessPlan/>
 
-        <BusinessStructure />
+        <BusinessStructure/>
 
-        <Taxes />
+        <Taxes/>
 
         <Conclusion to="/" buttonTitle="Start your Social Media Influencer Business with us, today">
-            <TextCenterLayout headline="Conclusion" text="Social media has launched the careers of many successful influencer marketers. If you can find a great niche, understand your competitors and put together a solid business plan, you will have every chance for success" />
+            <Heading size={3} style={{fontSize: "40px"}}>Conclusion</Heading>
+            <Paragraph big>
+                Social media has launched the careers of many successful influencer marketers. If you can find a great
+                niche, understand your competitors and put together a solid business plan, you will have every chance
+                for success
+            </Paragraph>
         </Conclusion>
     </Layout>
 );

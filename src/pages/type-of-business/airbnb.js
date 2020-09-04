@@ -3,7 +3,7 @@ import Layout from "../../components/layout";
 import SEO from "../../components/seo";
 import ButtonsBox from "../../atomic/atoms/boxes/top-buttons-box";
 import Button from "../../components/button";
-import Top from "../../components/partials/sections/top";
+import Top from "../../atomic/partials/top";
 import RatingRow from "../../atomic/atoms/boxes/rating-row";
 import CartBlock from "../../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../../atomic/molecules/blocks/rating-block";
@@ -20,10 +20,10 @@ import UseFulTools from "../../atomic/sections/type-of-business/airbnb/useful-to
 import Rocket from "../../atomic/sections/type-of-business/airbnb/rocket";
 import TabsSection from "../../atomic/partials/tabs";
 import TabHeading from "../../atomic/organisms/tabs/TabHeading";
-import OverviewSVG from "../../images/overview.inline.svg"
+import OverviewSVG from "../../images/icons/airbnb.inline.svg"
 import TabTitle from "../../atomic/molecules/tabs/tab-title";
 import LightIcon from "../../images/icons/light.inline.svg";
-import CalcIcon from "../../images/icons/calc.inline.svg";
+import CalcIcon from "../../images/icons/series-is-this-business-for-you.inline.svg";
 import PanelWrapper from "../../atomic/organisms/tabs/panel";
 import CollapseWrapper from "../../atomic/organisms/tabs/collapse";
 import {Heading} from "../../atomic/atoms/typography/heading";
@@ -33,12 +33,17 @@ import styled from "styled-components";
 import BlueBoxWithAbsoluteText from "../../atomic/molecules/text-blocks/blue-box-with-absolute-text";
 import Adventages from "../../components/adventages";
 import CountingTextBoxed from "../../atomic/molecules/text-blocks/counting-text-boxed";
+import TabsOvalOneSvg from "../../images/ovals/bottom-right-transparent-babyblue2.inline.svg";
+import TabsOvalTwoSvg from "../../images/ovals/bottom-right-transparent-green3.inline.svg";
+import CircleWithText from "../../atomic/molecules/blocks/circle-with-text-block";
+import CircleSvg from "../../images/circle-percentage.inline.svg";
 
 const Airbnb = () => (
     <Layout>
         <SEO title="What is a Nonprofit Organization? How to Start a Nonprofit"
              description="Learn all about nonprofit corporations, including the benefits & disadvantages, getting 501c3 status, and what's needed to get your company off the ground."/>
-        <Top ovalColor="orange" imageName="airbnb" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
+
+        <Top ovalColor="sun" imageName="airbnb" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
             <h1>How to Start an Airbnb</h1>
             <p>Airbnb has only been with us since 2008, but over the last few years,
                 it’s turned over half a million people into entrepreneurs.</p>
@@ -54,348 +59,325 @@ const Airbnb = () => (
             </RatingRow>
         </Top>
 
-        <TabsSection>
-            <TabHeading>
-                <TabTitle title="Airbnb Business" SvgIcon={OverviewSVG}/>
-                <TabTitle title="Why This Industry" SvgIcon={LightIcon}/>
-                <TabTitle title="Is This Business For You?" SvgIcon={CalcIcon}/>
-            </TabHeading>
+        <TabsWrapper>
+            <TabOvalOne>
+                <TabsOvalOneSvg/>
+            </TabOvalOne>
 
-            <CollapseWrapper>
+            <TabOvalTwo>
+                <TabsOvalTwoSvg/>
+            </TabOvalTwo>
 
-                <PanelWrapper>
-                    <Heading size={3}>Starting an Airbnb Business</Heading>
-                    <Paragraph big>
-                        The concept of renting out space through Airbnb is relatively
-                        straightforward, but
-                        setting yourself up for success requires a little more work.
-                    </Paragraph>
-                    <Paragraph big style={{marginBottom: "50px"}}>
-                        We don’t think that creating an Airbnb business needs to be daunting, and
-                        we’re here
-                        to help. We’ve supported over 250,000 people to form a business and provided
-                        answers, guidance and support to transform them into entrepreneurs. We’ll
-                        guide you
-                        through what you need to know to start your Airbnb venture and get it off
-                        the
-                        ground.
-                    </Paragraph>
-                    <Heading size={3}>Airbnb Business formation guide</Heading>
-                    <Paragraph big>
-                        From validating your business and doing the research to filing your
-                        paperwork and
-                        running your business, this guide will help you out. Read on for some
-                        insight into
-                        creating your own Airbnb business and becoming an entrepreneur. In this
-                        guide we
-                        will cover:
-                    </Paragraph>
+            <TabsSection>
+                <TabHeading>
+                    <TabTitle title="Airbnb Business" SvgIcon={OverviewSVG}/>
+                    <TabTitle title="Why This Industry" SvgIcon={LightIcon}/>
+                    <TabTitle title="Is This Business For You?" SvgIcon={CalcIcon}/>
+                </TabHeading>
 
-                    <ListWrapper>
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Statistics on why you should start an Airbnb business
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                <CollapseWrapper>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Choose the right business structure for your Airbnb company
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                    <PanelWrapper>
+                        <Heading size={3} style={{marginBottom: "24px"}}>Starting an Airbnb Business</Heading>
+                        <Paragraph big>
+                            The concept of renting out space through Airbnb is relatively
+                            straightforward, but
+                            setting yourself up for success requires a little more work.
+                        </Paragraph>
+                        <Paragraph big style={{marginBottom: "48px"}}>
+                            We don’t think that creating an Airbnb business needs to be daunting, and
+                            we’re here
+                            to help. We’ve supported over 250,000 people to form a business and provided
+                            answers, guidance and support to transform them into entrepreneurs. We’ll
+                            guide you
+                            through what you need to know to start your Airbnb venture and get it off
+                            the
+                            ground.
+                        </Paragraph>
+                        <Heading size={3} style={{marginBottom: "24px"}}>Airbnb Business formation guide</Heading>
+                        <Paragraph big>
+                            From validating your business and doing the research to filing your
+                            paperwork and
+                            running your business, this guide will help you out. Read on for some
+                            insight into
+                            creating your own Airbnb business and becoming an entrepreneur. In this
+                            guide we
+                            will cover:
+                        </Paragraph>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    How to find out if an Airbnb business is right for you
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                        <ListWrapper>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Statistics on why you should start an Airbnb business
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Setting up your Airbnb business including location, equipment,
-                                    employees,
-                                    taxes, finances, licenses and more
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Choose the right business structure for your Airbnb company
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Ideas for the type of Airbnb business that you could form
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        How to find out if an Airbnb business is right for you
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Where to find Airbnb business groups, forums and support
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Setting up your Airbnb business including location, equipment,
+                                        employees,
+                                        taxes, finances, licenses and more
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Proving your Airbnb business can work
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Ideas for the type of Airbnb business that you could form
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Useful online tools for Airbnb business owners
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Where to find Airbnb business groups, forums and support
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Business plans for Airbnb companies
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
-                    </ListWrapper>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Proving your Airbnb business can work
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                </PanelWrapper>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Useful online tools for Airbnb business owners
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                <PanelWrapper>
-                    <Heading size={2} style={{fontSize: "24px", textAlign: "left"}}>
-                        Why You Should Start a New Airbnb Business
-                    </Heading>
-                    <Paragraph big style={{marginBottom: "76px"}}>
-                        Airbnb has made it easier than ever for people to become hosts—people that
-                        rent out property for others to stay at. Airbnb is a ready-made marketplace
-                        for guests, with millions of listings around the world. Here are some
-                        statistics on the power of the Airbnb industry:
-                    </Paragraph>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Business plans for Airbnb companies
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
+                        </ListWrapper>
 
-                    <BlueBoxWithAbsoluteText absoluteText="150M"
-                                             text="There are over 150 million users on Airbnb"/>
-                    <BlueBoxWithAbsoluteText absoluteText="$34B"
-                                             text="The largest market for Airbnb is in the US, with an economic impact of $34 billion"/>
-                    <BlueBoxWithAbsoluteText absoluteText="500M"
-                                             text="There have been more than 500 million stays through Airbnb"/>
+                    </PanelWrapper>
 
-                    <div style={{marginBottom: "30px"}}>
+                    <PanelWrapper>
+                        <Heading size={2} style={{fontSize: "24px", textAlign: "left"}}>
+                            Why You Should Start a New Airbnb Business
+                        </Heading>
+                        <Paragraph big style={{marginBottom: "76px"}}>
+                            Airbnb has made it easier than ever for people to become hosts—people that
+                            rent out property for others to stay at. Airbnb is a ready-made marketplace
+                            for guests, with millions of listings around the world. Here are some
+                            statistics on the power of the Airbnb industry:
+                        </Paragraph>
+
+                        <BlueBoxWithAbsoluteText absoluteText="150M"
+                                                 text="There are over 150 million users on Airbnb"/>
+                        <BlueBoxWithAbsoluteText absoluteText="$34B"
+                                                 text="The largest market for Airbnb is in the US, with an economic impact of $34 billion"/>
+                        <BlueBoxWithAbsoluteText absoluteText="500M"
+                                                 text="There have been more than 500 million stays through Airbnb"/>
+
+                        <CircleWithText textInsideCircle="3.7" textLine="Increase in U.S. bookings year-to-year"
+                                        withBg={true} SvgChart={CircleSvg} symbol="%" style={{marginBottom: "72px"}}/>
+
                         <Adventages
                             headline="Half of Airbnb users stay in an Airbnb instead of a hotel"
                             width="100%"
                         />
-                    </div>
 
-                    <div style={{marginBottom: "30px"}}>
                         <Adventages
                             headline="More than two million people stay at an Airbnb on any given day"
                             width="100%"
                         />
-                    </div>
 
-                    <div style={{marginBottom: "30px"}}>
                         <Adventages
                             headline="Almost nine in ten reservations are for two or more people"
                             width="100%"
                         />
-                    </div>
 
-                    <div style={{marginBottom: "30px"}}>
                         <Adventages
                             headline="The compound growth rate since 2009 has been over 150 percent a year"
                             width="100%"
                         />
-                    </div>
 
-                    <div style={{marginBottom: "48px"}}>
                         <Adventages
                             headline="There has been a 45 percent increase in U.S. bookings year-to-year"
                             width="100%"
                         />
-                    </div>
 
-                    <Paragraph big>
-                        This is why Airbnb businesses are so exciting — how can you be a part of
-                        that success? We're here to help you figure that out.
-                    </Paragraph>
-
-                </PanelWrapper>
-
-                <PanelWrapper>
-                    <Heading size={2} style={{fontSize: "24px", textAlign: "left"}}>
-                        Is Running an Airbnb Right for You?
-                    </Heading>
-                    <Paragraph big style={{marginBottom: "48px"}}>
-                        Before deciding to start an Airbnb business, it’s important to understand
-                        the skills and approach you’re likely to need.
-                    </Paragraph>
-
-                    <Heading size={2} style={{fontSize: "24px", textAlign: "left"}}>
-                        A Day in the Life of an Airbnb Host
-                    </Heading>
-                    <Paragraph big style={{marginBottom: "48px"}}>
-                        Here are some of the typical tasks you’ll be performing for your Airbnb
-                        business on a daily basis.
-                    </Paragraph>
-
-                    <CountingTextBoxed number={1}>
-                        <Paragraph bottomPadding={0} bottomMargin={0}>
-                            Answering questions from guests and providing useful information
+                        <Paragraph big style={{marginTop: "18px"}}>
+                            This is why Airbnb businesses are so exciting — how can you be a part of
+                            that success? We're here to help you figure that out.
                         </Paragraph>
-                    </CountingTextBoxed>
 
-                    <CountingTextBoxed number={2}>
-                        <Paragraph bottomPadding={0} bottomMargin={0}>
-                            Arranging for cleaning and other routine tasks at your properties
+                    </PanelWrapper>
+
+                    <PanelWrapper>
+                        <Heading size={3} style={{fontSize: "24px", marginBottom: "24px"}}>
+                            Is Running an Airbnb Right for You?
+                        </Heading>
+                        <Paragraph big style={{marginBottom: "48px"}}>
+                            Before deciding to start an Airbnb business, it’s important to understand
+                            the skills and approach you’re likely to need.
                         </Paragraph>
-                    </CountingTextBoxed>
 
-                    <CountingTextBoxed number={3}>
-                        <Paragraph bottomPadding={0} bottomMargin={0}>
-                            Taking care of repairs and maintenance
+                        <Heading size={3} style={{fontSize: "24px", marginBottom: "24px"}}>
+                            A Day in the Life of an Airbnb Host
+                        </Heading>
+                        <Paragraph big style={{marginBottom: "24px"}}>
+                            Here are some of the typical tasks you’ll be performing for your Airbnb
+                            business on a daily basis.
                         </Paragraph>
-                    </CountingTextBoxed>
 
-                    <CountingTextBoxed number={4}>
-                        <Paragraph bottomPadding={0} bottomMargin={0}>
-                            Ensuring that bookings are up-to-date
-                        </Paragraph>
-                    </CountingTextBoxed>
-
-                    <CountingTextBoxed number={5}>
-                        <Paragraph bottomPadding={0} bottomMargin={0}>
-                            Getting information and photos to create compelling Airbnb listings
-                        </Paragraph>
-                    </CountingTextBoxed>
-
-                    <CountingTextBoxed number={6}>
-                        <Paragraph bottomPadding={0} bottomMargin={0}>
-                            Uploading and managing listings on the Airbnb platform
-                        </Paragraph>
-                    </CountingTextBoxed>
-
-                    <CountingTextBoxed number={7}>
-                        <Paragraph bottomPadding={0} bottomMargin={0}>
-                            Minimizing cancellations of planned visits
-                        </Paragraph>
-                    </CountingTextBoxed>
-
-                    <CountingTextBoxed number={8}>
-                        <Paragraph bottomPadding={0} bottomMargin={0}>
-                            Setting prices for guests to stay in your property
-                        </Paragraph>
-                    </CountingTextBoxed>
-
-                    <CountingTextBoxed number={9}>
-                        <Paragraph bottomPadding={0} bottomMargin={0}>
-                            Responding to reviews from guests
-                        </Paragraph>
-                    </CountingTextBoxed>
-
-                    <div style={{marginBottom: "76px"}}>
                         <CountingTextBoxed number={1}>
                             <Paragraph bottomPadding={0} bottomMargin={0}>
-                                An executive summary with the most important points from your
-                                business plan
+                                Answering questions from guests and providing useful information
                             </Paragraph>
                         </CountingTextBoxed>
-                    </div>
 
-                    <Heading size={2} style={{fontSize: "24px", textAlign: "left"}}>
-                        Skills Needed by an Airbnb Business Entrepreneur
-                    </Heading>
-                    <Paragraph big style={{marginBottom: "48px"}}>
-                        The following skills will be very useful in your role as an Airbnb small business owner.
-                    </Paragraph>
+                        <CountingTextBoxed number={2}>
+                            <Paragraph bottomPadding={0} bottomMargin={0}>
+                                Arranging for cleaning and other routine tasks at your properties
+                            </Paragraph>
+                        </CountingTextBoxed>
 
-                    <div style={{marginBottom: "30px"}}>
+                        <CountingTextBoxed number={3}>
+                            <Paragraph bottomPadding={0} bottomMargin={0}>
+                                Taking care of repairs and maintenance
+                            </Paragraph>
+                        </CountingTextBoxed>
+
+                        <CountingTextBoxed number={4}>
+                            <Paragraph bottomPadding={0} bottomMargin={0}>
+                                Ensuring that bookings are up-to-date
+                            </Paragraph>
+                        </CountingTextBoxed>
+
+                        <CountingTextBoxed number={5}>
+                            <Paragraph bottomPadding={0} bottomMargin={0}>
+                                Getting information and photos to create compelling Airbnb listings
+                            </Paragraph>
+                        </CountingTextBoxed>
+
+                        <CountingTextBoxed number={6}>
+                            <Paragraph bottomPadding={0} bottomMargin={0}>
+                                Uploading and managing listings on the Airbnb platform
+                            </Paragraph>
+                        </CountingTextBoxed>
+
+                        <CountingTextBoxed number={7}>
+                            <Paragraph bottomPadding={0} bottomMargin={0}>
+                                Minimizing cancellations of planned visits
+                            </Paragraph>
+                        </CountingTextBoxed>
+
+                        <CountingTextBoxed number={8}>
+                            <Paragraph bottomPadding={0} bottomMargin={0}>
+                                Setting prices for guests to stay in your property
+                            </Paragraph>
+                        </CountingTextBoxed>
+
+                        <CountingTextBoxed number={9}>
+                            <Paragraph bottomPadding={0} bottomMargin={0}>
+                                Responding to reviews from guests
+                            </Paragraph>
+                        </CountingTextBoxed>
+
+                        <Heading size={3} style={{fontSize: "24px", marginTop: "41px", marginBottom: "24px"}}>
+                            Skills Needed by an Airbnb Business Entrepreneur
+                        </Heading>
+                        <Paragraph big style={{marginBottom: "48px"}}>
+                            The following skills will be very useful in your role as an Airbnb small business owner.
+                        </Paragraph>
+
                         <Adventages
                             headline="Organizational skills to stay on top of your enquiries and bookings"
                             width="100%"
                         />
-                    </div>
 
-                    <div style={{marginBottom: "30px"}}>
                         <Adventages
                             headline="Interpersonal skills for managing the people that provide cleaning, maitenance and other services at your properties"
                             width="100%"
                         />
-                    </div>
 
-                    <div style={{marginBottom: "30px"}}>
                         <Adventages
                             headline="Planning skills to offer the amenities, supplies and services that your guests want"
                             width="100%"
                         />
-                    </div>
 
-                    <div style={{marginBottom: "48px"}}>
                         <Adventages
                             headline="Financial management skills so you understand the money you’re earning from rentals"
                             width="100%"
                         />
-                    </div>
 
-                    <Heading size={2} style={{fontSize: "24px", textAlign: "left"}}>
-                        What Your Airbnb Guests are Looking For
-                    </Heading>
-                    <Paragraph big style={{marginBottom: "48px"}}>
-                        Airbnb customers, commonly known as guests, are looking for:
-                    </Paragraph>
+                        <Heading size={3}
+                                 style={{fontSize: "24px", textAlign: "left", marginBottom: "24px", marginTop: "18px"}}>
+                            What Your Airbnb Guests are Looking For
+                        </Heading>
+                        <Paragraph big style={{marginBottom: "48px"}}>
+                            Airbnb customers, commonly known as guests, are looking for:
+                        </Paragraph>
 
-                    <div style={{marginBottom: "30px"}}>
                         <Adventages
                             headline="Properties that match the listings provided by the host"
                             width="100%"
                         />
-                    </div>
 
-                    <div style={{marginBottom: "30px"}}>
                         <Adventages
                             headline="Properties that are safe, clean, and well-located for their needs"
                             width="100%"
                         />
-                    </div>
 
-                    <div style={{marginBottom: "30px"}}>
                         <Adventages
                             headline="Properties that are priced appropriately for their location, demand and the time of year"
                             width="100%"
                         />
-                    </div>
 
-                    <div style={{marginBottom: "30px"}}>
                         <Adventages
                             headline="Common amenities including clean sheets, toiletries, a first aid kit, etc."
                             width="100%"
                         />
-                    </div>
 
-                    <div style={{marginBottom: "30px"}}>
                         <Adventages
                             headline="Easy access to the property"
                             width="100%"
                         />
-                    </div>
 
-                    <div style={{marginBottom: "30px"}}>
                         <Adventages
                             headline="Important information like contact details, good local restaurants, transit stops, emergency service numbers, etc."
                             width="100%"
                         />
-                    </div>
-                </PanelWrapper>
 
-            </CollapseWrapper>
-        </TabsSection>
+                    </PanelWrapper>
+
+                </CollapseWrapper>
+            </TabsSection>
+
+        </TabsWrapper>
 
         <BlueContainer/>
 
@@ -434,4 +416,35 @@ const ListBox = styled.div`
     }
 `;
 
+const TabsWrapper = styled.section`
+    position: relative;
+    padding-top: 21px;
+`;
+
+const TabOvalOne = styled.div`
+    position: absolute;
+    width: 420px;
+    left: 0;
+    top: 21px;
+    display: none;
+  
+    @media (min-width: 720px){
+       display: block;
+    }
+    svg {
+        transform: scaleX(-1);
+    }
+`;
+
+const TabOvalTwo = styled.div`
+    position: absolute;
+    width: 420px;
+    right: 0;
+    top: 674px;
+    display: none;
+  
+    @media (min-width: 720px){
+       display: block;
+    }
+`;
 export default Airbnb;

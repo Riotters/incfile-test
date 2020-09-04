@@ -20,7 +20,7 @@ import TabsSection from "../../atomic/partials/tabs";
 import CkeckText from "../../components/static-check/text-only";
 import ColorFulCircleWithTextAndList from "../../atomic/molecules/blocks/colorful-circle-with-text-and-list";
 import {RingText} from "../../static/type-of-business/franchise-business";
-import RingSvg from "../../images/rings-2.inline.svg";
+import RingSvg from "../../images/rings-6.inline.svg";
 import AdventagesSection from "../../atomic/sections/type-of-business/franchise-business/adventages-disadventages";
 import IsItForYou from "../../atomic/sections/type-of-business/franchise-business/is-is-for-you";
 import FranchiseStructure from "../../atomic/sections/type-of-business/franchise-business/franchise-structure";

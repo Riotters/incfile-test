@@ -13,6 +13,7 @@ const Wrapper = styled.div`
     background-color: ${color.white};
     box-shadow: ${shadow.white1};
     position: relative;
+    border-radius: 5px;
 
     p {
         font-size: 16px; 

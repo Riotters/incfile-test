@@ -13,6 +13,11 @@ const Wrapper = styled.span`
     border-radius: 50%;
     overflow: hidden;
     box-shadow: ${shadow.white1};
+    
+    svg{
+        opacity: 0.5;
+        filter: grayscale(50%);
+    }
 `;
 
 const Rating = ({children, className}) => (

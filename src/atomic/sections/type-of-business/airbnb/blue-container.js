@@ -3,7 +3,10 @@ import {Heading} from "../../../atoms/typography/heading";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import TextBoxed from "../../../molecules/text-blocks/text-boxed";
 import TextBlockWithImage from "../../../molecules/mixed-blocks/text-block-with-absolute-image";
-import OkIcon from "../../../../images/icons/ok.inline.svg";
+import IdentifyIcon from "../../../../images/icons/identify-your-unique-selling-point.inline.svg";
+import LookIcon from "../../../../images/icons/look-at-who-your-competitors-are-in-the-space.inline.svg";
+import MarketIcon from "../../../../images/icons/understand-your-market.inline.svg";
+import InvolvedIcon from "../../../../images/icons/get-involved-with-business-communities.inline.svg";
 import {color} from "../../../../components/styles/colors";
 import React from "react";
 import styled from "styled-components";
@@ -76,12 +79,6 @@ const TextBorderedSection = styled.div`
 `;
 
 const TextBorderedList = styled.div`
-    margin-top: 30px;
-    
-    @media (min-width: 576px) {
-        margin-top: 80px;
-    }
-    
     >div {
         margin-bottom: 8px;
     }
@@ -130,7 +127,7 @@ const BlueContainer = () => (
 
             <TextBorderedSection>
                 <Heading size={3}>Creating a Unique Airbnb Business</Heading>
-                <Paragraph big>
+                <Paragraph big style={{marginBottom: "80px"}}>
                     When it comes to starting an Airbnb business, you want to make sure that your property
                     and listings are unique, so you can attract customers. You can do this by highlighting certain
                     aspects in your listings:
@@ -187,7 +184,7 @@ const BlueContainer = () => (
                 </TitleBox>
 
                 <GridSectionList>
-                    <TextBlockWithImage SvgImage={OkIcon} imageBackgroundColor={color.babyblue2}
+                    <TextBlockWithImage SvgImage={IdentifyIcon} imageBackgroundColor={color.babyblue2}
                                         imageShadowColor={color.babyblue2}>
                         <Heading size={4}>
                             Identify your Airbnb business’s unique selling points (USPs)
@@ -199,7 +196,7 @@ const BlueContainer = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={OkIcon} imageBackgroundColor={color.green2}
+                    <TextBlockWithImage SvgImage={LookIcon} imageBackgroundColor={color.green2}
                                         imageShadowColor={color.green2}>
                         <Heading size={4}>
                             Look at who your competitors are in the space
@@ -211,7 +208,7 @@ const BlueContainer = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={OkIcon} imageBackgroundColor={color.orange2}
+                    <TextBlockWithImage SvgImage={MarketIcon} imageBackgroundColor={color.orange2}
                                         imageShadowColor={color.orange2}>
                         <Heading size={4}>
                             Understand your market
@@ -224,7 +221,7 @@ const BlueContainer = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={OkIcon} imageBackgroundColor={color.purple2}
+                    <TextBlockWithImage SvgImage={InvolvedIcon} imageBackgroundColor={color.purple2}
                                         imageShadowColor={color.purple2}>
                         <Heading size={4}>
                             Get involved with business communities and discussion groups

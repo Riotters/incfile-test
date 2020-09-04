@@ -55,28 +55,28 @@ const AdventagesSection = () => (
                         <Panel>
                             <ImageBoxes>
 
-                                <TopImageBox image="choose-to-form-your-business-immediately-if-name-is-available-02" color={color.red3}>
+                                <TopImageBox image="not-guaranted-icon" color={color.red3}>
                                     <h4>Results are not guaranteed</h4>
                                     <p>
                                         Even with a successful franchisor behind you, results are not guaranteed. The success of your business will still be mainly down to your management skills, marketing, customer service and the dozens of other actions an entrepreneur has to take to make this business a success.
                                     </p>
                                 </TopImageBox>
 
-                                <TopImageBox image="display-ads" color={color.orange3}>
+                                <TopImageBox image="the-gig-economy" color={color.orange3}>
                                     <h4>You need to pay fees</h4>
                                     <p>
                                         You will need to pay a fee to buy a license to start a franchise, and then continue to pay an ongoing royalty or other fees to the franchisor. Initial fees can run from anywhere from $50,000 up to several million dollars depending on the type of franchise you want to open. You will then be expected to pay a percentage of your revenue to the franchisor periodically to continue operating the business.
                                     </p>
                                 </TopImageBox>
 
-                                <TopImageBox image="we-have-an-interactive-help-service-02" color={color.green3}>
+                                <TopImageBox image="entity-comparison-chart" color={color.green3}>
                                     <h4>There are rules to follow</h4>
                                     <p>
                                         Franchisors often have strict rules you will need to agree to. This could be anything from signage and staff uniforms to how you market and talk about your business. The agreements you have to sign are likely to be long and detailed.
                                     </p>
                                 </TopImageBox>
 
-                                <TopImageBox image="we-have-an-interactive-help-service-02" color={color.blue3}>
+                                <TopImageBox image="executive-relationship-and-culture-coaching" color={color.blue3}>
                                     <h4>You need to convince the franchisor</h4>
                                     <p>
                                         You do not need to take in and sell stock, meaning you don’t have money tied up in inventory

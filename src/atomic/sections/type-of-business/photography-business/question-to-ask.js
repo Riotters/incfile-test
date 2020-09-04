@@ -9,8 +9,11 @@ import {color} from "../../../../components/styles/colors";
 import React from "react";
 import styled from "styled-components";
 import OvalBlueSVG from "../../../../images/oval-blue-4.inline.svg";
-import Curve from "../../../atoms/shapes/curve";
+import SkillsIcon from "../../../../images/icons/additionals-skills.inline.svg";
 import {gradient} from "../../../atoms/styles/colors";
+import BusinessSkillsIcon from "../../../../images/icons/business-skills-icon.inline.svg";
+import EssentialIcon from "../../../../images/icons/essential-icon.inline.svg";
+import CompetitionIcon from "../../../../images/icons/competition-icon.inline.svg";
 
 const ContainerWrapper = styled.div`
     background: rgb(255,255,255);
@@ -122,7 +125,7 @@ const QuestionToAsk = () => (
 
                 <GridSectionList>
 
-                    <TextBlockWithImage SvgImage={IdetifyIcon} imageBackgroundColor={color.green2}
+                    <TextBlockWithImage SvgImage={CompetitionIcon} imageBackgroundColor={color.green2}
                                         imageShadowColor={color.green2}>
                         <Heading size={4}>
                             Competition is fierce
@@ -132,7 +135,7 @@ const QuestionToAsk = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={InvolvedIcon} imageBackgroundColor={color.babyblue2}
+                    <TextBlockWithImage SvgImage={BusinessSkillsIcon} imageBackgroundColor={color.babyblue2}
                                         imageShadowColor={color.babyblue2}>
                         <Heading size={4}>
                             You need a lot of business skills
@@ -142,7 +145,7 @@ const QuestionToAsk = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={TalkIcon} imageBackgroundColor={color.orange2}
+                    <TextBlockWithImage SvgImage={EssentialIcon} imageBackgroundColor={color.orange2}
                                         imageShadowColor={color.orange2}>
                         <Heading size={4}>
                             The hustle is essential
@@ -152,7 +155,7 @@ const QuestionToAsk = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={TalkIcon} imageBackgroundColor={color.purple2}
+                    <TextBlockWithImage SvgImage={SkillsIcon} imageBackgroundColor={color.purple2}
                                         imageShadowColor={color.purple2}>
                         <Heading size={4}>
                             Additional skills can make the difference

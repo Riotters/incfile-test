@@ -18,7 +18,7 @@ import {Paragraph} from "../../atomic/atoms/typography/paragraph";
 import TabsSection from "../../atomic/partials/tabs";
 import Colorbox from "../../components/color-box";
 import Tab1Icon from "../../images/icons/dog-walking.inline.svg";
-import MegafornIcon from "../../images/icons/megafon.inline.svg";
+import MegafornIcon from "../../images/icons/megafon-2.inline.svg";
 import {color} from "../../components/styles/colors";
 import TypeBusiness from "../../atomic/sections/type-of-business/dog-walking/type-business";
 import ValidatingBusinessIdea
@@ -39,7 +39,7 @@ import CkeckText from "../../components/static-check/text-only";
 import CircleWithText from "../../atomic/molecules/blocks/circle-with-text-block";
 import CircleSvg from "../../images/circle-graph.inline.svg";
 
-const GymPersonalTraining = () => (
+const DogWalking = () => (
     <Layout>
         <SEO title="How to Start a Dog Walking, Pet Sitting or Other Canine Business"
              description="Everyone loves their furry friends, with almost 70 percent of U.S. families (or 85 million households) owning a pet. Dogs are the most popular choice: over 60 million households are home to a canine companion."/>
@@ -425,4 +425,4 @@ const ListBox = styled.div`
     }
 `;
 
-export default GymPersonalTraining;
+export default DogWalking;
