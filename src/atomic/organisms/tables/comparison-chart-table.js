@@ -3,11 +3,14 @@ import { Link } from "gatsby";
 import styled from "styled-components";
 import { Tabs, useTabState, usePanelState } from "@bumaga/tabs";
 import { motion } from "framer-motion";
+import { shadow } from "../../atoms/styles/shadows";
 import { color } from "../../atoms/styles/colors";
 import GridTableRow from "../../molecules/blocks/grid-table-row";
 import ArrowSVG from "../../../images/arrow-circle.inline.svg";
 import CurveSVG from "../../../images/orange-curve.inline.svg";
 import VisibilitySensor from "../../../components/VisibilitySensor";
+import { Heading } from "../../atoms/typography/heading";
+import { Paragraph } from "../../atoms/typography/paragraph";
 
 const Wrapper = styled.div`
   display: flex;
@@ -50,10 +53,10 @@ const TabsWrapper = styled.div`
 `;
 
 const TabBox = styled.div`
-  box-shadow: 0 24px 32px 0 rgba(236, 236, 236, 0.5);
   margin-bottom: 8px;
 
   .accordion-panel {
+    box-shadow: ${shadow.white1};
     overflow: hidden;
   }
 `;
@@ -66,7 +69,7 @@ const PanelWrapper = styled.div`
   z-index: 1;
 
   @media (min-width: 769px) {
-    padding: 16px 40px 40px 80px;
+    padding: 32px 40px;
   }
 
   h3 {
@@ -116,10 +119,13 @@ const Button = styled.button`
   background: #fff;
   display: flex;
   cursor: pointer;
-  position: relative;
   border-radius: 5px;
-  overflow: hidden;
+  box-shadow: 0 24px 32px 0 rgba(236, 236, 236, 0.5);
   border: none;
+
+  p {
+      color: ${color.black};
+  }
 
   &.active {
     border-radius: 5px 5px 0 0;
@@ -140,15 +146,6 @@ const Content = styled.div`
 
   .row {
       box-shadow: none;
-  }
-
-  span {
-    color: #4e4e4e;
-    font-family: Avenir;
-    font-size: 16px;
-    text-align: left;
-    width: 100%;
-    line-height: 24px;
   }
 `;
 
@@ -174,17 +171,25 @@ const Separator = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 40px;
   width: 100%;
   background-color: ${color.blue3};
   margin-bottom: 8px;
-  padding: 12px;
 
   span {
       font-family: Avenir, sans-serif;
       font-weight: 900;
+      font-size: 12px;
+      line-height: 12px;
       color: ${color.blue1};
       text-transform: uppercase;
   }
+`;
+
+const Grid = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 70px;
 `;
 
 const cn = (...args) => args.filter(Boolean).join(" ");
@@ -249,8 +254,16 @@ const Accordion = ({ content, curve, curveRight, curveRightBottom, curveLeft, cu
                         <Panel>
                             <PanelWrapper>
                             {typeof item.answer === "string" ? <p>{item.answer}</p> : null}
-                            {typeof item.answer === "object" ? <p>{item.answer.map((el, id) => (id % 2 ? <Link to={el.url}>{` ${el.text} `}</Link> : el.text))}</p> : null}
-                            {/* <p>{item.answer}</p> */}
+                            {typeof item.answer === "object" ? 
+                                <Grid>
+                                    {item.answer.map((el) => 
+                                        <div>
+                                            <Heading size="5">{el.header}</Heading>
+                                            <Paragraph bottomMargin="0">{el.text}</Paragraph>
+                                        </div>
+                                    )}
+                                </Grid> 
+                             : null}
                             {item.list && (
                                 <ul>
                                 {item.list.map((listitem) => (

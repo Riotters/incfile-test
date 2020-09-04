@@ -10,7 +10,7 @@ import ExSVG from "../../../images/circle-status-x.inline.svg";
 
 const Wrapper = styled(Whitebox)`
   display: grid;
-  grid-template-columns: ${(props) => (props.columns ? `repeat(${props.columns}, 1fr)` : "50% 50%")};
+  grid-template-columns: 1fr 160px 160px 160px 160px;
 
   &:not(:last-child) {
     margin-bottom: 8px;
@@ -25,6 +25,18 @@ const Cell = styled.div`
 
   @media (min-width: 769px) {
     min-width: auto;
+  }
+
+  &:not(:first-child) {
+    max-width: 160px;
+    justify-content: center;
+
+    p {
+      font-weight: 400;
+      background-color: ${color.green3};
+      border-radius: 50px;
+      padding: 8px 26px;
+    }
   }
 
   &:not(:last-child) {
