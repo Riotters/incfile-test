@@ -13,6 +13,7 @@ import styled from "styled-components";
 import OvalBlueSVG from "../../../../images/ovals/bottom-left-transparent-blue3.inline.svg";
 import OvalRedSVG from "../../../../images/ovals/top-left-transparent-pink.inline.svg";
 import Curve from "../../../atoms/shapes/curve";
+import BigCurve from "../../../../images/curve-orange.inline.svg";
 
 const ContainerWrapper = styled.div`
     background: rgb(255,255,255);
@@ -60,28 +61,21 @@ const GridSectionList = styled.div`
     }
 `;
 
-const TextBorderedSection = styled.div`
-    width: 100%;
-    padding-top: 100px;
+const CurveWrapper = styled.div`
+    position: absolute;
+    right: -70px;
+    top: -70px;
+    display: none;
+    transform: rotate(90deg);
     
-    @media (min-width: 670px) {
-        width: 670px;
-        margin: 0 auto;
+    @media (min-width: 1200px){
+       display: block;
     }
     
-    h3{
-        color: #1d1d1d;
-        font-size: 40px;
-        text-align: center;
-        margin-bottom: 24px;
-    }
-`;
-
-const TextBorderedList = styled.div`
-    margin-top: 80px;
-    
-    >div {
-        margin-bottom: 8px;
+    svg{
+        path{
+            fill: #f5cdcd;
+        }
     }
 `;
 
@@ -169,6 +163,9 @@ const ValidatingBusinessIdea = () => (
 
                     <TextBlockWithImage SvgImage={LookIcon} imageBackgroundColor={color.babyblue2}
                                         imageShadowColor={color.babyblue2}>
+                        <CurveWrapper>
+                            <BigCurve />
+                        </CurveWrapper>
                         <Heading size={4}>
                             Look at who your competitors are in the space
                         </Heading>

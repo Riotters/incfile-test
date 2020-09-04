@@ -7,6 +7,7 @@ import {shadow} from "../../../atoms/styles/shadows";
 import {color} from "../../../atoms/styles/colors";
 import {toolsList} from "../../../../static/type-of-business/handyman";
 import UsefulTools from "../../../partials/useful-tools";
+import CurveSvg from "../../../../images/curve-babyblue-1.inline.svg";
 
 const Links = () => (
     <Wrapper>
@@ -17,6 +18,9 @@ const Links = () => (
             <LinksContainer>
 
                 <LinkItem>
+                    <CurveWrapper>
+                        <CurveSvg/>
+                    </CurveWrapper>
                     <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Contractor Talk forums
                     </PathLink>
@@ -74,6 +78,7 @@ const LinkItem = styled.div`
     box-shadow: ${shadow.white1};
     width: 100%;
     margin-bottom: 30px;
+    position: relative;
     
     @media (min-width: 470px) {
         width: 470px;
@@ -84,5 +89,23 @@ const LinkItem = styled.div`
         margin-right: 15px;
     }
 `;
+
+const CurveWrapper = styled.div`
+    position: absolute;
+    left: -115px;
+    top: -115px;;
+    transform: rotate(-90deg);
+    
+    svg{
+        path {
+            fill: #fce7d0;
+        }
+    }
+    
+    @media (max-width: 970px) {
+        display: none;
+    }
+`;
+
 
 export default Links;
