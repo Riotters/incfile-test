@@ -13,13 +13,6 @@ import {adventages2} from "../../../../static/type-of-business/food-truck-busine
 const Taxes = () => (
     <Wrapper>
 
-        <Oval>
-            <OvalSvg/>
-        </Oval>
-        <OvalBottom>
-            <OvalSvgBottom/>
-        </OvalBottom>
-
         <Service>
             <Container>
                 <TextCenterLayout headline="Maintaining Your Food Truck Business Documentation"
@@ -42,7 +35,6 @@ const Taxes = () => (
 );
 
 const Wrapper = styled.div`
-    background: rgb(255,255,255);
     padding-bottom: 0px;
     padding-top: 100px;
     position: relative;

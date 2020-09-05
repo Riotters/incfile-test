@@ -12,11 +12,11 @@ const OrderNow = () => (
     <OrderNowWrapper>
 
         <Oval>
-            <OvalLeftSvg />
+            <OvalLeftSvg/>
         </Oval>
 
         <OvalRight>
-            <OvalRightSvg />
+            <OvalRightSvg/>
         </OvalRight>
 
         <Container>
@@ -25,7 +25,7 @@ const OrderNow = () => (
 
                 <h2 style={{position: "relative"}}>
                     <CurveWrapper>
-                        <Curve />
+                        <Curve/>
                     </CurveWrapper>
 
                     The Complete "Start Your Business" Checklist
@@ -60,18 +60,33 @@ const Oval = styled.div`
     position: absolute;
     left: 0;
     top: 0;
+    display: none;
+  
+  @media (min-width: 1200px){
+    display: block;
+  }
 `;
 
 const OvalRight = styled.div`
     position: absolute;
     right: 0;
     bottom: -5px;
+    display: none;
+  
+  @media (min-width: 1200px){
+    display: block;
+  }
 `;
 
 const CurveWrapper = styled.div`
     position: absolute;
     left: -122px;
     top: -115px;
+    display: none;
+  
+  @media (min-width: 1200px){
+    display: block;
+  }
 `;
 
 export default OrderNow;

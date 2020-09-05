@@ -5,8 +5,7 @@ import {color} from "../../../../components/styles/colors";
 import CountingTextBoxed from "../../../molecules/text-blocks/counting-text-boxed";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import Container from "../../../container";
-import OvalSmallSVG from "../../../../images/oval-orange-2.inline.svg";
-import OvalSVG from "../../../../images/oval-orange-4.inline.svg";
+import OvalSVG from "../../../../images/ovals/top-left-transparent-orange2.inline.svg";
 import TextCenterLayout from "../../../partials/heading-left";
 import {gradient} from "../../../atoms/styles/colors";
 
@@ -39,19 +38,32 @@ const Wrapper = styled.section`
 const Oval = styled.div`
   position: absolute;
   left: 0;
-  top: 20%;
+  top: 222px;
+  width: 420px;
+  display: none;
+  
+  @media (min-width: 1200px) {
+    display: block;
+  }
 `
 
 const OvalCenter = styled.div`
   position: absolute;
   right: 0;
-  top: 38%;
+  bottom: 349px;
+  transform: scaleX(-1);
+  width: 720px;
+  display: none;
+  
+  @media (min-width: 1200px) {
+    display: block;
+  }
 `
 
 const BusinessPlan = () => (
     <Wrapper>
         <Oval>
-            <OvalSmallSVG/>
+            <OvalSVG/>
         </Oval>
         <OvalCenter>
             <OvalSVG/>

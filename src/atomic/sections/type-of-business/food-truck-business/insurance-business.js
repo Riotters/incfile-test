@@ -4,9 +4,16 @@ import InfoCardsSection from "../../../partials/info-cards-section";
 import {InfoCards} from "../../../../static/type-of-business/daycare-business";
 import {gradient} from "../../../atoms/styles/colors";
 import TextCenterLayout from "../../../../components/partials/blocks/heading-center";
+import OvalSvg from "../../../../images/ovals/top-right-transparent-blue2.inline.svg";
 
 const InsuranceBusiness = () => (
     <Wrapper>
+        <Oval>
+            <OvalSvg />
+        </Oval>
+        <Oval2>
+            <OvalSvg />
+        </Oval2>
         <div style={{paddingBottom: "100px"}}>
             <TextCenterLayout
                 headline="Insurance for Your Food Truck"
@@ -23,6 +30,33 @@ const Wrapper = styled.section`
     padding-top: 100px;
     position: relative;
     padding-bottom: 100px;
+`;
+
+const Oval = styled.div`
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 720px;
+    z-index: -1;
+    display: none;
+  
+  @media (min-width: 1200px){
+    display: block;
+  }
+`;
+
+const Oval2 = styled.div`
+    position: absolute;
+    left: 0px;
+    bottom: -350px;
+    width: 720px;
+    transform: rotate(180deg);
+    z-index: -1;
+    display: none;
+  
+      @media (min-width: 1200px){
+        display: block;
+      }
 `;
 
 export default InsuranceBusiness;
