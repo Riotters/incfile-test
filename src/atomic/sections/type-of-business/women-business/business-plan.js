@@ -5,8 +5,8 @@ import {color} from "../../../../components/styles/colors";
 import CountingTextBoxed from "../../../molecules/text-blocks/counting-text-boxed";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import Container from "../../../container";
-import OvalSmallSVG from "../../../../images/oval-small-babyblue.inline.svg";
-import OvalSVG from "../../../../images/oval-babyblue-1.inline.svg";
+import OvalSvg3 from "../../../../images/ovals/top-left-transparent-blue3.inline.svg";
+import OvalSvg4 from "../../../../images/ovals/top-left-transparent-blue2.inline.svg";
 import TextCenterLayout from "../../../partials/heading-left";
 
 const BusinessOwnerResponsibilities = styled.section`
@@ -39,21 +39,35 @@ const Wrapper = styled.section`
 const Oval = styled.div`
   position: absolute;
   left: 0;
-  top: 20%;
+  top: 0;
+  width: 420px;
+  display: none;
+  
+  @media (min-width: 1200px){
+    display: block;
+  }
 `
 
 const OvalCenter = styled.div`
   position: absolute;
   right: 0;
-  top: 38%;
+  bottom: 138px;
+  width: 720px;
+  transform: scaleX(-1);
+  display: none;
+  
+  @media (min-width: 1200px){
+    display: block;
+  }
 `
+
 const BusinessPlan = () => (
     <Wrapper>
         <Oval>
-            <OvalSmallSVG/>
+            <OvalSvg3/>
         </Oval>
         <OvalCenter>
-            <OvalSVG/>
+            <OvalSvg4/>
         </OvalCenter>
         <Container>
             <BusinessOwnerResponsibilities>

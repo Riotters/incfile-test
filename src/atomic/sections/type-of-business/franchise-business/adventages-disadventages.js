@@ -1,5 +1,4 @@
 import React from "react";
-import {gradient} from "../../../atoms/styles/colors";
 import Container from "../../../container";
 import TextCenterLayout from "../../../partials/heading-center";
 import {Panel, Tabs, useTabState} from "@bumaga/tabs";
@@ -7,15 +6,21 @@ import styled from "styled-components";
 import {color} from "../../../../components/styles/colors";
 import {shadow} from "../../../../components/styles/shadows";
 import TopImageBox from "../../../../components/top-image-box";
-import Curve from "../../../../images/green-curve.inline.svg";
 import {Heading} from "../../../atoms/typography/heading";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import ContentCenter from "../../../partials/content-center";
+import OvalSvg from "../../../../images/ovals/bottom-left-transparent-blue3.inline.svg";
 
 const AdventagesSection = () => (
     <SectionWrapper>
+
+        <TabOval>
+            <OvalSvg/>
+        </TabOval>
+
         <Container>
-            <TextCenterLayout headline="Advantages and Disadvantages of the Franchise Business" text="Here are the key things you need to know before deciding of franchising is right for you."/>
+            <TextCenterLayout headline="Advantages and Disadvantages of the Franchise Business"
+                              text="Here are the key things you need to know before deciding of franchising is right for you."/>
 
             <Tabs>
                 <Wrapper>
@@ -29,24 +34,30 @@ const AdventagesSection = () => (
                         <Panel>
                             <ImageBoxes>
 
-                                <TopImageBox image="choose-to-form-your-business-immediately-if-name-is-available-02" color={color.yellow3}>
+                                <TopImageBox image="choose-to-form-your-business-immediately-if-name-is-available-02"
+                                             color={color.yellow3}>
                                     <h4>Branding</h4>
                                     <p>
-                                        You get access to a business with a recognized brand, immediately setting you apart from independent businesses. Franchisors have spent time, effort and millions of dollars on building their brands and creating trust with consumers.
+                                        You get access to a business with a recognized brand, immediately setting you
+                                        apart from independent businesses. Franchisors have spent time, effort and
+                                        millions of dollars on building their brands and creating trust with consumers.
                                     </p>
                                 </TopImageBox>
 
                                 <TopImageBox image="display-ads" color={color.purple3}>
                                     <h4>Marketing</h4>
                                     <p>
-                                        Local marketing and strong branding will be essential to your success. You will likely need a website and a strong social media presence too.
+                                        Local marketing and strong branding will be essential to your success. You will
+                                        likely need a website and a strong social media presence too.
                                     </p>
                                 </TopImageBox>
 
                                 <TopImageBox image="we-have-an-interactive-help-service-02" color={color.blue3}>
                                     <h4>Support</h4>
                                     <p>
-                                        Franchisors are familiar with helping their franchisees get set up. They will provide resources, training, advice, coaching and support in creating a successful business.
+                                        Franchisors are familiar with helping their franchisees get set up. They will
+                                        provide resources, training, advice, coaching and support in creating a
+                                        successful business.
                                     </p>
                                 </TopImageBox>
 
@@ -58,28 +69,39 @@ const AdventagesSection = () => (
                                 <TopImageBox image="not-guaranted-icon" color={color.red3}>
                                     <h4>Results are not guaranteed</h4>
                                     <p>
-                                        Even with a successful franchisor behind you, results are not guaranteed. The success of your business will still be mainly down to your management skills, marketing, customer service and the dozens of other actions an entrepreneur has to take to make this business a success.
+                                        Even with a successful franchisor behind you, results are not guaranteed. The
+                                        success of your business will still be mainly down to your management skills,
+                                        marketing, customer service and the dozens of other actions an entrepreneur has
+                                        to take to make this business a success.
                                     </p>
                                 </TopImageBox>
 
                                 <TopImageBox image="the-gig-economy" color={color.orange3}>
                                     <h4>You need to pay fees</h4>
                                     <p>
-                                        You will need to pay a fee to buy a license to start a franchise, and then continue to pay an ongoing royalty or other fees to the franchisor. Initial fees can run from anywhere from $50,000 up to several million dollars depending on the type of franchise you want to open. You will then be expected to pay a percentage of your revenue to the franchisor periodically to continue operating the business.
+                                        You will need to pay a fee to buy a license to start a franchise, and then
+                                        continue to pay an ongoing royalty or other fees to the franchisor. Initial fees
+                                        can run from anywhere from $50,000 up to several million dollars depending on
+                                        the type of franchise you want to open. You will then be expected to pay a
+                                        percentage of your revenue to the franchisor periodically to continue operating
+                                        the business.
                                     </p>
                                 </TopImageBox>
 
                                 <TopImageBox image="entity-comparison-chart" color={color.green3}>
                                     <h4>There are rules to follow</h4>
                                     <p>
-                                        Franchisors often have strict rules you will need to agree to. This could be anything from signage and staff uniforms to how you market and talk about your business. The agreements you have to sign are likely to be long and detailed.
+                                        Franchisors often have strict rules you will need to agree to. This could be
+                                        anything from signage and staff uniforms to how you market and talk about your
+                                        business. The agreements you have to sign are likely to be long and detailed.
                                     </p>
                                 </TopImageBox>
 
                                 <TopImageBox image="executive-relationship-and-culture-coaching" color={color.blue3}>
                                     <h4>You need to convince the franchisor</h4>
                                     <p>
-                                        You do not need to take in and sell stock, meaning you don’t have money tied up in inventory
+                                        You do not need to take in and sell stock, meaning you don’t have money tied up
+                                        in inventory
                                     </p>
                                 </TopImageBox>
 
@@ -96,10 +118,14 @@ const AdventagesSection = () => (
                     Understand Your Franchise Market
                 </Heading>
                 <Paragraph big>
-                    The market for your franchise business depends very much on the franchisor you set up with. They will be able to provide guidance and expertise on the types of customers you should be marketing to, although you will need to carry out your own market research as well.
+                    The market for your franchise business depends very much on the franchisor you set up with. They
+                    will be able to provide guidance and expertise on the types of customers you should be marketing to,
+                    although you will need to carry out your own market research as well.
                 </Paragraph>
                 <Paragraph big>
-                    Look into the likely demand for services in your area, speak to other franchise businesses in neighboring regions and understand who your competitors are. You should also talk to your franchisor about planned advertising and partnerships.
+                    Look into the likely demand for services in your area, speak to other franchise businesses in
+                    neighboring regions and understand who your competitors are. You should also talk to your franchisor
+                    about planned advertising and partnerships.
                 </Paragraph>
             </ContentCenter>
         </Container>
@@ -108,8 +134,8 @@ const AdventagesSection = () => (
 
 const cn = (...args) => args.filter(Boolean).join(" ")
 
-const Tab = ({ children }) => {
-    const { isActive, onClick } = useTabState()
+const Tab = ({children}) => {
+    const {isActive, onClick} = useTabState()
 
     return (
         <Button
@@ -120,6 +146,19 @@ const Tab = ({ children }) => {
         </Button>
     )
 }
+
+const TabOval = styled.div`
+    position: absolute;
+    top: 443px;
+    right: 0;
+    width: 720px;
+    display: none;
+    transform: scaleX(-1);
+    
+      @media (min-width: 1200px) {
+            display: block;
+      }
+`;
 
 const ImageBoxes = styled.div`
   display: grid;
@@ -146,6 +185,7 @@ const SectionWrapper = styled.div`
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f2f6ff",endColorstr="#f2f6ff",GradientType=1);
     padding-top: 100px;
     padding-bottom: 100px;
+    position: relative;
 `;
 
 const Wrapper = styled.div`

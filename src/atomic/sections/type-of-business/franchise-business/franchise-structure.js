@@ -6,9 +6,18 @@ import Image from "../../../atoms/image/image";
 import {Link} from "gatsby";
 import Arrow from "../../../../images/arrow-circle.inline.svg";
 import {gradient} from "../../../atoms/styles/colors";
+import OvalSvg from "../../../../images/ovals/top-left-transparent-orange.inline.svg";
+import OvalSvg2 from "../../../../images/ovals/bottom-left-transparent-pink.inline.svg";
 
 const FranchiseStructure = () => (
     <Wrapper>
+        <Oval>
+            <OvalSvg />
+        </Oval>
+
+        <Oval2>
+            <OvalSvg2 />
+        </Oval2>
         <Container>
             <TextCenterLayout headline="Franchise Business Structure & Examples"
                               text="Here are some of the biggest franchise businesses in the U.S. listed by category:"/>
@@ -543,9 +552,35 @@ const FranchiseStructure = () => (
     </Wrapper>
 );
 
+const Oval = styled.div`
+    position: absolute;
+    top: 147px;
+    right: 0;
+    width: 570px;
+    display: none;
+    transform: scaleX(-1);
+    
+      @media (min-width: 1200px) {
+            display: block;
+      }
+`;
+
+const Oval2 = styled.div`
+    position: absolute;
+    top: 1023px;
+    left: 0;
+    width: 570px;
+    display: none;
+    
+      @media (min-width: 1200px) {
+            display: block;
+      }
+`;
+
 const Wrapper = styled.section`
     background-image: ${gradient.orange3};
     padding-top: 104px;
+    position: relative;
 `;
 
 const BoxWrapper = styled.div`

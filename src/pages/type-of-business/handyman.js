@@ -823,6 +823,11 @@ const Oval = styled.div`
   left: 0;
   top: 200px;
   width: 570px; 
+  display: none;
+  
+  @media (min-width: 1200px) {
+        display: block;
+  }
 `
 
 const OvalGreen = styled.div`
@@ -830,6 +835,11 @@ const OvalGreen = styled.div`
   left: 0;
   top: 60px;
   width: 420px;
+  display: none;
+  
+  @media (min-width: 1200px) {
+        display: block;
+  }
 `
 
 const OvalGreen2 = styled.div`
@@ -837,6 +847,11 @@ const OvalGreen2 = styled.div`
   right: 0;
   bottom: 377px; 
   width: 720px;
+  display: none;
+  
+  @media (min-width: 1200px) {
+        display: block;
+  }
   
   svg {
     transform: scaleX(-1);
@@ -852,6 +867,11 @@ const TabOval = styled.div`
     top: 0;
     left: 0;
     width: 420px;
+    display: none;
+  
+      @media (min-width: 1200px) {
+            display: block;
+      }
 `;
 
 export default Handyman;

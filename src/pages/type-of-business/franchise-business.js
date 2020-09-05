@@ -6,7 +6,6 @@ import Button from "../../components/button";
 import RatingRow from "../../atomic/atoms/boxes/rating-row";
 import CartBlock from "../../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../../atomic/molecules/blocks/rating-block";
-import styled from "styled-components";
 import TabHeading from "../../atomic/organisms/tabs/TabHeading";
 import TabTitle from "../../atomic/molecules/tabs/tab-title";
 import Tab1Icon from "../../images/icons/franchise-business.inline.svg";
@@ -28,6 +27,9 @@ import BusinessStructure from "../../atomic/sections/type-of-business/franchise-
 import SettingBusiness from "../../atomic/sections/type-of-business/franchise-business/setting-business";
 import ToolsAndLinks from "../../atomic/sections/type-of-business/franchise-business/tools";
 import Conclusion from "../../atomic/sections/general/conclusion";
+import TabOvalSvg from "../../images/ovals/bottom-left-transparent-blue3.inline.svg";
+import styled from "styled-components";
+import OrderNow from "../../atomic/sections/type-of-business/franchise-business/order-now";
 
 const FranchiseBusiness = () => (
     <Layout>
@@ -56,148 +58,156 @@ const FranchiseBusiness = () => (
             </RatingRow>
         </Top>
 
-        <TabsSection style={{marginTop: "75px"}}>
-            <TabHeading>
-                <TabTitle title="Franchise Business" SvgIcon={Tab1Icon}/>
-                <TabTitle title="Why This Industry?" SvgIcon={Tab2Icon}/>
-            </TabHeading>
+        <TabsWrapper>
+            <TabOval>
+                <TabOvalSvg />
+            </TabOval>
+            <TabsSection style={{marginTop: "75px"}}>
+                <TabHeading>
+                    <TabTitle title="Franchise Business" SvgIcon={Tab1Icon}/>
+                    <TabTitle title="Why This Industry?" SvgIcon={Tab2Icon}/>
+                </TabHeading>
 
-            <CollapseWrapper>
-                <PanelWrapper>
-                    <Paragraph big>
-                        A franchise can be a great opportunity for a business owner with some capital to invest in their
-                        own and their employees’ future. It gives entrepreneurs an opportunity to partner with some of
-                        the biggest brands in the U.S. and provides built-in resources, training and expertise.
-                        In exchange for a franchise fee and royalties, they will provide you with support, training,
-                        stock, expertise and marketing to launch your franchise quickly.
-                    </Paragraph>
-                    <Paragraph big style={{fontWeight: "bold"}}>
-                        In this guide we’ll explore everything you need to do to set up your franchise business and
-                        maximize your chances for success. We’ll cover:
-                    </Paragraph>
+                <CollapseWrapper>
+                    <PanelWrapper>
+                        <Paragraph big>
+                            A franchise can be a great opportunity for a business owner with some capital to invest in
+                            their
+                            own and their employees’ future. It gives entrepreneurs an opportunity to partner with some
+                            of
+                            the biggest brands in the U.S. and provides built-in resources, training and expertise.
+                            In exchange for a franchise fee and royalties, they will provide you with support, training,
+                            stock, expertise and marketing to launch your franchise quickly.
+                        </Paragraph>
+                        <Paragraph big style={{fontWeight: "bold"}}>
+                            In this guide we’ll explore everything you need to do to set up your franchise business and
+                            maximize your chances for success. We’ll cover:
+                        </Paragraph>
 
-                    <ListWrapper>
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Questions you should ask to see
-                                    if you’re ready to start a franchise business
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                        <ListWrapper>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Questions you should ask to see
+                                        if you’re ready to start a franchise business
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    How to plan out your franchise business and the best legal structure for your new
-                                    organization
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        How to plan out your franchise business and the best legal structure for your
+                                        new
+                                        organization
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    The various rules and regulations you will need to follow
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        The various rules and regulations you will need to follow
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    How to hire employees, marketing
-                                    and administration
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        How to hire employees, marketing
+                                        and administration
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    How you can understand the world of franchises
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        How you can understand the world of franchises
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Information on taxes and finances
-                                    for your franchise business
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Information on taxes and finances
+                                        for your franchise business
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Resources for your franchise business
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Resources for your franchise business
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    ... and much more
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
-                    </ListWrapper>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        ... and much more
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
+                        </ListWrapper>
 
-                    <Paragraph big>
-                        By the time you’ve read through our complete franchise business guide, you will have all the
-                        information you need to set up and manage a thriving franchise business. Let’s get into it.
-                    </Paragraph>
+                        <Paragraph big>
+                            By the time you’ve read through our complete franchise business guide, you will have all the
+                            information you need to set up and manage a thriving franchise business. Let’s get into it.
+                        </Paragraph>
 
-                </PanelWrapper>
+                    </PanelWrapper>
 
-                <PanelWrapper>
-                    <Heading size={3}>
-                        Understanding the World of the Franchise Business
-                    </Heading>
+                    <PanelWrapper>
+                        <Heading size={3}>
+                            Understanding the World of the Franchise Business
+                        </Heading>
 
-                    <Paragraph big style={{fontWeight: "bold"}}>
-                        Key Franchise Business Background Data and Statistics
-                    </Paragraph>
+                        <Paragraph big style={{fontWeight: "bold"}}>
+                            Key Franchise Business Background Data and Statistics
+                        </Paragraph>
 
-                    <Paragraph big>
-                        The size and success of franchise businesses might surprise you:
-                    </Paragraph>
+                        <Paragraph big>
+                            The size and success of franchise businesses might surprise you:
+                        </Paragraph>
 
-                    <div style={{marginBottom: "30px", marginTop: "48px"}}>
-                        <Adventages
-                            headline="Around one in seven franchise businesses are owned by U.S. military veterans."
-                            width="100%"
-                        />
-                    </div>
+                        <div style={{marginBottom: "30px", marginTop: "48px"}}>
+                            <Adventages
+                                headline="Around one in seven franchise businesses are owned by U.S. military veterans."
+                                width="100%"
+                            />
+                        </div>
 
-                    <div style={{marginBottom: "30px"}}>
-                        <Adventages
-                            headline="Franchises exist across many sectors — fast food, restaurants, convenience stores, retailers, financial advice, hotels, car rentals, service providers and many more."
-                            width="100%"
-                        />
-                    </div>
+                        <div style={{marginBottom: "30px"}}>
+                            <Adventages
+                                headline="Franchises exist across many sectors — fast food, restaurants, convenience stores, retailers, financial advice, hotels, car rentals, service providers and many more."
+                                width="100%"
+                            />
+                        </div>
 
-                    <div style={{marginBottom: "30px"}}>
-                        <Adventages
-                            headline="There are over 3,000 franchisors licensing out partnerships to entrepreneurs who can benefit from the support they provide."
-                            width="100%"
-                        />
-                    </div>
+                        <div style={{marginBottom: "30px"}}>
+                            <Adventages
+                                headline="There are over 3,000 franchisors licensing out partnerships to entrepreneurs who can benefit from the support they provide."
+                                width="100%"
+                            />
+                        </div>
 
-                    <ColorFulCircleWithTextAndList CircleSVG={RingSvg} list={RingText.list} withBg={true}/>
+                        <ColorFulCircleWithTextAndList CircleSVG={RingSvg} list={RingText.list} withBg={true}/>
 
-                    <Paragraph big style={{marginTop: "48px"}}>
-                        In other words, franchising is a significant, successful and diverse part
-                        of the U.S. economy. Franchise businesses do very well in the U.S.
-                    </Paragraph>
+                        <Paragraph big style={{marginTop: "48px"}}>
+                            In other words, franchising is a significant, successful and diverse part
+                            of the U.S. economy. Franchise businesses do very well in the U.S.
+                        </Paragraph>
 
-                </PanelWrapper>
+                    </PanelWrapper>
 
-            </CollapseWrapper>
-        </TabsSection>
+                </CollapseWrapper>
+            </TabsSection>
+        </TabsWrapper>
 
         <AdventagesSection/>
 
@@ -208,6 +218,8 @@ const FranchiseBusiness = () => (
         <BusinessStructure/>
 
         <SettingBusiness/>
+
+        <OrderNow />
 
         <ToolsAndLinks/>
 
@@ -227,25 +239,40 @@ const FranchiseBusiness = () => (
 
 
 const ButtonsBox = styled.div`
-  display: flex;
-  flex-direction: column;
+display: flex;
+flex-direction: column;
 
-  @media (min-width: 769px) {
-    flex-direction: row;
-  }
+@media (min-width: 769px) {
+flex-direction: row;
+}
 `;
 
 const ListWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
+display: flex;
+flex-wrap: wrap;
 `;
 
 const ListBox = styled.div`
-    width: 100%;
-    
-    @media (min-width: 576px) { 
-        width: 50%; 
-    }
+width: 100%;
+
+@media (min-width: 576px) {
+width: 50%;
+}
 `;
 
+const TabsWrapper = styled.div`
+    position: relative;
+`;
+
+const TabOval = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 420px;
+    display: none;
+  
+      @media (min-width: 1200px) {
+            display: block;
+      }
+`;
 export default FranchiseBusiness;

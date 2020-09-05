@@ -6,9 +6,14 @@ import Adventages from "../../../../components/adventages";
 import ContentCenter from "../../../partials/content-center";
 import {Heading} from "../../../atoms/typography/heading";
 import {Paragraph} from "../../../atoms/typography/paragraph";
+import OvalSvg from "../../../../images/ovals/bottom-left-transparent-orange.inline.svg";
 
 const IsItForYou = () => (
     <Wrapper>
+
+        <Oval>
+            <OvalSvg />
+        </Oval>
         <Container>
             <TextCenterLayout headline="Is Franchise Entrepreneurship For You?"
                               text="Franchise entrepreneurship could be for you if you:"/>
@@ -60,6 +65,7 @@ const IsItForYou = () => (
 const Wrapper = styled.section`
         padding-top: 120px;
         padding-bottom: 100px;
+        position: relative;
 `;
 
 const AdventagesWrapper = styled.div`
@@ -70,6 +76,18 @@ const AdventagesWrapper = styled.div`
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+`;
+
+const Oval = styled.div`
+    position: absolute;
+    top: 447px;
+    left: 0;
+    width: 520px;
+    display: none;
+    
+      @media (min-width: 1200px) {
+            display: block;
+      }
 `;
 
 export default IsItForYou;

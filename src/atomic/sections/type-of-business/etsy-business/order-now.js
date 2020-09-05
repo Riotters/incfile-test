@@ -22,7 +22,7 @@ const OrderNow = ({layout, columns}) => (
             </OvalRight>
             <Container>
 
-                <LeftImageRightContent image="after-formation" imageWidth="515" textWidth="570">
+                <LeftImageRightContent image="after-formation-image" imageWidth="515" textWidth="570">
 
                     <h2 style={{position: "relative"}}>
                         <CurveWrapper>

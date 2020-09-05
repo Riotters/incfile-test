@@ -2,22 +2,19 @@ import Container from "../../../container";
 import {Heading} from "../../../atoms/typography/heading";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import TextBlockWithImage from "../../../molecules/mixed-blocks/text-block-with-absolute-image";
-import TalkIcon from "../../../../images/icons/talk-to-clients.inline.svg";
-import IdetifyIcon from "../../../../images/icons/identify-your-unique-selling-point.inline.svg"
-import InvolvedIcon from "../../../../images/icons/get-involved-with-business-communities.inline.svg"
 import {color} from "../../../../components/styles/colors";
 import React from "react";
 import styled from "styled-components";
-import OvalBlueSVG from "../../../../images/oval-blue-4.inline.svg";
 import SkillsIcon from "../../../../images/icons/additionals-skills.inline.svg";
 import {gradient} from "../../../atoms/styles/colors";
 import BusinessSkillsIcon from "../../../../images/icons/business-skills-icon.inline.svg";
 import EssentialIcon from "../../../../images/icons/essential-icon.inline.svg";
 import CompetitionIcon from "../../../../images/icons/competition-icon.inline.svg";
+import OvalSvg from "../../../../images/ovals/top-right-transparent-green2.inline.svg";
 
 const ContainerWrapper = styled.div`
     background: rgb(255,255,255);
-    background-image: ${gradient.blue3};
+    background-image: ${gradient.green3};
     padding-bottom: 100px;
     position: relative;
     padding-top: 120px;
@@ -62,49 +59,25 @@ const GridSectionList = styled.div`
     }
 `;
 
-const TextBorderedSection = styled.div`
-    width: 100%;
-    padding-top: 100px;
-    
-    @media (min-width: 670px) {
-        width: 670px;
-        margin: 0 auto;
-    }
-    
-    h3{
-        color: #1d1d1d;
-        font-size: 40px;
-        text-align: center;
-        margin-bottom: 24px;
-    }
-`;
-
-const TextBorderedList = styled.div`
-    margin-top: 80px;
-    
-    >div {
-        margin-bottom: 8px;
-    }
-`;
-
-const OvalCenter = styled.div`
+const Oval = styled.div`
   position: absolute;
-  right: 0;
-  top: 0;
+  left: 0;
+  top: 466px;
+  width: 720px;
+  opacity: 0.5;
+  transform: rotate(-180deg);
+  display: none;
+  
+  @media (min-width: 1200px){
+    display: block;
+  }
 `
-
-const AbsoluteCurve = styled.div`
-    position: absolute;
-    left: -27px;
-    top: -16px;
-    transform: rotate(-90deg);
-`;
 
 const QuestionToAsk = () => (
     <ContainerWrapper>
-        <OvalCenter>
-            <OvalBlueSVG/>
-        </OvalCenter>
+        <Oval>
+            <OvalSvg />
+        </Oval>
 
         <Container>
 

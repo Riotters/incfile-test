@@ -84,6 +84,11 @@ const Oval = styled.div`
   left: 0;
   top: 286px;
   width: 420px;
+  display: none;
+  
+  @media (min-width: 1200px) {
+        display: block;
+  }
 `
 
 const OvalBig = styled.div`
@@ -94,6 +99,12 @@ const OvalBig = styled.div`
   
   svg{
     transform: scaleX(-1);
+  }
+  
+  display: none;
+  
+  @media (min-width: 1200px) {
+        display: block;
   }
 `
 

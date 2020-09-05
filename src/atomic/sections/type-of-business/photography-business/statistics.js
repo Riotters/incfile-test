@@ -10,9 +10,13 @@ import {Paragraph} from "../../../atoms/typography/paragraph";
 import Adventages from "../../../../components/adventages";
 import {shadow} from "../../../atoms/styles/shadows";
 import ContentCenter from "../../../partials/content-center";
+import OvalSvg from "../../../../images/ovals/top-right-transparent-green2.inline.svg";
 
 const Statistics = () => (
     <Wrapper>
+        <Oval>
+            <OvalSvg />
+        </Oval>
         <Container>
             <ContentCenter contentWidth={770}>
                 <TextCenterLayout headline="Key Photography Business and Background Data and Statistics" headlineWidth={770} textWidth={770} />
@@ -56,80 +60,8 @@ const Statistics = () => (
 );
 
 const Wrapper = styled.section`
-    padding-top: 104px;
-`;
-
-const BoxWrapper = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-top: 104px;
-`;
-
-const Franchise = styled(Link)`
-    display: block;
-    width: 370px;
-    border-radius: 5px;
-    box-shadow: 0 24px 32px 0 rgba(236, 236, 236, 0.5);
-    background-color: #ffffff;
-    margin-bottom: 72px;
-    transition: all 0.5s ease-in-out;
-    
-    &:hover {
-        box-shadow: 0 40px 80px 0 rgba(171, 171, 171, 0.5);
-        
-        .topContent{
-            opacity: 1;
-            filter: grayscale(0%);
-        }
-    }
-`;
-
-const TopContent = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 140px;
-    filter: grayscale(100%);
-    opacity: 0.3;
-    transition: all 0.5s ease-in-out;
-
-    > div {
-        width: ${props => props.width}px;
-        height: ${props => props.height}px;
-    }
-`;
-
-const BottomContent = styled.div`
-    margin: 0 24px;
-    border-top: 1px solid rgba(171, 171, 171, 0.5);
-    padding-top: 16px;
-    padding-bottom: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-`;
-
-const Content = styled.div``;
-
-const Title = styled.div`
-    font-weight: bold;
-    font-family: "Avenir-Heavy", sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    color: #1d1d1d;
-`;
-
-const Description = styled.div`
-    font-family: "Avenir-Roman", sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    color: #4e4e4e;
-`;
-
-const Icon = styled.div`
-    transform: rotate(90deg);
+    position: relative;
+    padding-bottom: 100px;
 `;
 
 const AdventagesWrapper = styled.div`
@@ -137,4 +69,18 @@ const AdventagesWrapper = styled.div`
     justify-content: space-between;
     flex-wrap: wrap;
 `;
+
+const Oval = styled.div`
+    position: absolute;
+    bottom: 307px;
+    right: 0;
+    width: 570px;
+    opacity: 0.5;
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
+`;
+
 export default Statistics;

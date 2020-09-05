@@ -8,7 +8,7 @@ import {color} from "../../../../components/styles/colors";
 import {shadow} from "../../../../components/styles/shadows";
 import {typeBusiness} from "../../../../static/type-of-business/teen-business";
 import Curve from "../../../atoms/shapes/curve";
-import OvalSvg from "../../../../images/oval-orange-4.inline.svg";
+import OvalSvg from "../../../../images/ovals/top-right-transparent-orange.inline.svg";
 import AdventagesWithLongText from "../../../molecules/mixed-blocks/adventages-with-long-text";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import ContentCenter from "../../../partials/content-center";
@@ -25,6 +25,14 @@ const TypeBusiness = () => (
         <Oval>
             <OvalSvg/>
         </Oval>
+
+        <Oval2>
+            <OvalSvg/>
+        </Oval2>
+
+        <Oval3>
+            <OvalSvg/>
+        </Oval3>
 
         <Container>
             <TextCenterLayout headline="The Concerns of Female Founders - Moms and Women Entrepreneurs" headlineWidth={770} textWidth={770}
@@ -262,9 +270,46 @@ const CurveWrapper = styled.div`
 const Oval = styled.div`
     position: absolute;
     right: 0;
-    top: 300px;
+    top: 774px;
+    display: none;
+    transform: scaleY(-1);
+    width: 720px;
+    
+    @media (min-width: 1200px){
+        display: block; 
+    }
 `;
 
+const Oval2 = styled.div`
+    position: absolute;
+    left: 0;
+    top: 50%;
+    display: none;
+    transform: scaleX(-1);
+    width: 570px;
+    opacity: 0.5;
+    
+    svg{
+        transform: scaleY(-1);
+    }
+    
+    @media (min-width: 1200px){
+        display: block; 
+    }
+`;
+
+const Oval3 = styled.div`
+    position: absolute;
+    right: 0;
+    bottom: 723px;
+    display: none;
+    width: 420px;
+    opacity: 0.5;
+    
+    @media (min-width: 1200px){
+        display: block; 
+    }
+`;
 
 const GridSection = styled.div`
     width: 100%;

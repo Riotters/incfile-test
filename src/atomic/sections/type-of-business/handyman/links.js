@@ -8,9 +8,17 @@ import {color} from "../../../atoms/styles/colors";
 import {toolsList} from "../../../../static/type-of-business/handyman";
 import UsefulTools from "../../../partials/useful-tools";
 import CurveSvg from "../../../../images/curve-babyblue-1.inline.svg";
+import OvalSvg from "../../../../images/ovals/top-left-transparent-pink.inline.svg";
+import OvalSvg2 from "../../../../images/ovals/bottom-left-transparent-orange.inline.svg";
 
 const Links = () => (
     <Wrapper>
+        <Oval>
+            <OvalSvg />
+        </Oval>
+        <OvalBottom>
+            <OvalSvg2 />
+        </OvalBottom>
         <Container>
             <TextCenterLayout headline="Groups and Forums for Your Handyman Business"
                               text="Here are some useful places where you can connect with other handyman entrepreneurs."/>
@@ -56,6 +64,7 @@ const Links = () => (
 
 const Wrapper = styled.div`
     padding-top: 100px;
+    position: relative;
     background: linear-gradient(180deg, #fef6ed 0%, #ffffff 100%);
 `;
 
@@ -107,5 +116,29 @@ const CurveWrapper = styled.div`
     }
 `;
 
+const OvalBottom = styled.div`
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+    display: none;
+    width: 420px;
+    
+    @media (min-width: 1200px) {
+        display: block;
+    }
+`;
+
+const Oval = styled.div`
+    position: absolute;
+    right: 0;
+    top: 879px;
+    display: none;
+    width: 720px;
+    transform: scaleX(-1);
+    
+    @media (min-width: 1200px) {
+        display: block;
+    }
+`;
 
 export default Links;

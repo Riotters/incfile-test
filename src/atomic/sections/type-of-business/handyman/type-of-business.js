@@ -127,6 +127,11 @@ const Oval = styled.div`
     right: 0;
     top: 300px;
     width: 570px;
+    display: none;
+  
+  @media (min-width: 1200px) {
+        display: block;
+  }
 `;
 
 const OvalBottom = styled.div`
@@ -134,6 +139,11 @@ const OvalBottom = styled.div`
     left: 0;
     bottom: 300px;
     width: 570px;
+    display: none;
+  
+  @media (min-width: 1200px) {
+        display: block;
+  }
 `;
 
 export default TypeOfBusiness;

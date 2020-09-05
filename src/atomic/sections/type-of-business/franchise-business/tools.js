@@ -9,6 +9,7 @@ import UsefulTools from "../../../partials/useful-tools";
 import {toolsList} from "../../../../static/type-of-business/franchise-business";
 import ContentCenter from "../../../partials/content-center";
 import {Paragraph} from "../../../atoms/typography/paragraph";
+import Curve from "../../../../images/curve-orange.inline.svg";
 
 const ToolsAndLinks = () => (
     <Wrapper>
@@ -51,6 +52,11 @@ const ToolsAndLinks = () => (
 
         <BlueContainer>
             <Container>
+
+                <CurveWrapper>
+                    <Curve />
+                </CurveWrapper>
+
                 <UsefulTools toolsList={toolsList.tools} headlineText={toolsList.headlineText}
                              description={toolsList.description}/>
             </Container>
@@ -58,9 +64,28 @@ const ToolsAndLinks = () => (
     </Wrapper>
 );
 
+const CurveWrapper = styled.div`
+    position: absolute;
+    right: 70px;
+    top: 100px;
+    transform: scaleX(-1);
+    display: none;
+    
+    svg{
+        path {
+            fill: #5089fd;
+        }
+    }
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
+`;
+
 const Wrapper = styled.div`
-    padding-top: 0px;
+    padding-top: 100px;
     margin-bottom: 200px;
+    position: relative;
 `;
 
 const LinksContainer = styled.div`

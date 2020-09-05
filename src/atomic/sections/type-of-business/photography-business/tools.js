@@ -8,11 +8,25 @@ import TextCenterLayout from "../../../partials/heading-center";
 import PathLink from "../../../molecules/buttons/path";
 import {color} from "../../../atoms/styles/colors";
 import {Paragraph} from "../../../atoms/typography/paragraph";
+import OvalSvg from "../../../../images/ovals/top-left-transparent-blue3.inline.svg";
+import OvalSvg2 from "../../../../images/ovals/bottom-left-transparent-orange.inline.svg";
 
 const ToolsAndLinks = () => (
     <Wrapper>
-
+        <Oval3>
+            <OvalSvg />
+        </Oval3>
+        <Oval4>
+            <OvalSvg2 />
+        </Oval4>
         <LinksWrapper>
+            <Oval>
+                <OvalSvg />
+            </Oval>
+            <Oval2>
+                <OvalSvg />
+            </Oval2>
+
             <Container>
                 <TextCenterLayout headline="Social Media Groups for Your Photography Business"
                                   text="Connecting with other business owners in your industry can be incredibly helpful. Here are some of the best social media groups:"/>
@@ -116,12 +130,15 @@ const ToolsAndLinks = () => (
 );
 
 const Wrapper = styled.div`
-    padding-top: 0px;
+    padding-top: 120px;
     margin-bottom: 200px;
+    position: relative;
 `;
 
 const LinksWrapper = styled.div`
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, #f2f6ff);
+    padding-bottom: 100px;
+    position: relative;
 `;
 
 const LinksContainer = styled.div`
@@ -151,6 +168,56 @@ const LinkItem = styled.div`
     @media (min-width: 1000px) {
         margin-left: 15px;
         margin-right: 15px;
+    }
+`;
+
+const Oval = styled.div`
+    position: absolute;
+    left: 0;
+    top: 246px;
+    width: 720px;
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
+`;
+
+const Oval3 = styled.div`
+    position: absolute;
+    right: 0;
+    bottom: 951px;
+    width: 720px;
+    display: none;
+    transform: scaleX(-1);
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
+`;
+
+const Oval4 = styled.div`
+    position: absolute;
+    left: 0;
+    bottom: 180px;
+    width: 420px;
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
+`;
+
+const Oval2 = styled.div`
+    position: absolute;
+    right: 0;
+    bottom: 251px;
+    width: 720px;
+    transform: rotate(180deg);
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
     }
 `;
 
