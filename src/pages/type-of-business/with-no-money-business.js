@@ -10,7 +10,6 @@ import styled from "styled-components";
 import {Paragraph} from "../../atomic/atoms/typography/paragraph";
 import {Heading} from "../../atomic/atoms/typography/heading";
 import TheArtOfBootstrapping from "../../atomic/sections/type-of-business/with-no-money-business/setting-business";
-import ToolsAndLinks from "../../atomic/sections/type-of-business/with-no-money-business/tools";
 import Conclusion from "../../atomic/sections/general/conclusion";
 import Bootstrapping from "../../atomic/sections/type-of-business/with-no-money-business/bootstrapping";
 import LackOfMoney from "../../atomic/sections/type-of-business/with-no-money-business/lack-of-money";
