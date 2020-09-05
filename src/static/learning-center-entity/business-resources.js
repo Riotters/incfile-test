@@ -119,6 +119,70 @@ export const furtherResources = {
     cards: [
         {
             header: `State Filing Times`,
+            text: `State-by-state filing times and prices`,
+            link: {
+                text: `Learn more`,
+                url: `/`,
+            },
+        },
+        {
+            header: `Filing and compliance requirements`,
+            text: `Ongoing filing and compliance requirements`,
+            link: {
+                text: `Learn more`,
+                url: `/`,
+            },
+        },
+        {
+            header: `Starting a Business`,
+            text: `How to start different types of business, including online, franchise, unique and side businesses.`,
+            link: {
+                text: `Learn more`,
+                url: `/`,
+            },
+        },
+        {
+            header: `Specific Industries`,
+            text: `How to start businesses in specific industries like landscaping, real estate, salons, publishing, life coaching and more.`,
+            link: {
+                text: `Learn more`,
+                url: `/`,
+            },
+        },
+        {
+            header: `Registered Agents`,
+            text: `Complete details on registered agents and their function.`,
+            link: {
+                text: `Learn more`,
+                url: `/`,
+            },
+        },
+        {
+            header: `Incfile Blog`,
+            text: `The Incfile blog with detailed articles on every aspect of forming and running a business.`,
+            link: {
+                text: `Learn more`,
+                url: `/`,
+            },
+        },
+        {
+            header: `Forming an LLC in Your State`,
+            text: `State-by-state filing times and prices`,
+            link: {
+                text: `Learn more`,
+                url: `/`,
+            },
+        },
+        {
+            header: `Forming a Corporation`,
+            text: `State-by-state filing times and prices`,
+            link: {
+                text: `Learn more`,
+                url: `/`,
+            },
+        },
+        {
+            header: `Business Name Search`,
             text: `Sytate-by-state filing times and prices`,
             link: {
                 text: `Learn more`,
@@ -126,72 +190,8 @@ export const furtherResources = {
             },
         },
         {
-            header: `State Filing Times`,
-            text: `Sytate-by-state filing times and prices`,
-            link: {
-                text: `Learn more`,
-                url: `/`,
-            },
-        },
-        {
-            header: `State Filing Times`,
-            text: `Sytate-by-state filing times and prices`,
-            link: {
-                text: `Learn more`,
-                url: `/`,
-            },
-        },
-        {
-            header: `State Filing Times`,
-            text: `Sytate-by-state filing times and prices`,
-            link: {
-                text: `Learn more`,
-                url: `/`,
-            },
-        },
-        {
-            header: `State Filing Times`,
-            text: `Sytate-by-state filing times and prices`,
-            link: {
-                text: `Learn more`,
-                url: `/`,
-            },
-        },
-        {
-            header: `State Filing Times`,
-            text: `Sytate-by-state filing times and prices`,
-            link: {
-                text: `Learn more`,
-                url: `/`,
-            },
-        },
-        {
-            header: `State Filing Times`,
-            text: `Sytate-by-state filing times and prices`,
-            link: {
-                text: `Learn more`,
-                url: `/`,
-            },
-        },
-        {
-            header: `State Filing Times`,
-            text: `Sytate-by-state filing times and prices`,
-            link: {
-                text: `Learn more`,
-                url: `/`,
-            },
-        },
-        {
-            header: `State Filing Times`,
-            text: `Sytate-by-state filing times and prices`,
-            link: {
-                text: `Learn more`,
-                url: `/`,
-            },
-        },
-        {
-            header: `State Filing Times`,
-            text: `Sytate-by-state filing times and prices`,
+            header: `Business Reports`,
+            text: `Understand when your business report is due and filing deadlines.`,
             link: {
                 text: `Learn more`,
                 url: `/`,

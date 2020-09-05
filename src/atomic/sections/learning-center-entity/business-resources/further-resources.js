@@ -41,7 +41,7 @@ const Grid = styled.div`
   }
 `;
 
-const colors = [color.blue3, color.purple3, color.orange3, color.yellow3, color.yellow4, color.purple3, color.babyblue3];
+const colors = [color.orange3, color.purple3, color.blu3, color.green3, color.purple4, color.yellow3, color.babyblue3, color.orange3, color.purple3, color.green3.];
 const icons = ["rocket-939", "certificate-305", "business-taxes-8954", "bulb-gear-7881", "game-plan", "display-ads", "measuring-business-success"];
 
 const FutherResourcesSection = ({ className, content }) => (

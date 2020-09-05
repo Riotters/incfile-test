@@ -6,16 +6,10 @@ import Button from "../../atomic/molecules/buttons/button";
 //Sections
 import Top from "../../atomic/partials/top";
 import About from "../../atomic/sections/learning-center-entity/comparison-chart/about";
-import Help from "../../atomic/sections/manage-your-company/annual-report/help";
-import Categories from "../../atomic/sections/learning-center-entity/help-center/categories";
-import Tools from "../../atomic/sections/learning-center-entity/help-center/tools";
-import Service from "../../atomic/sections/learning-center-entity/help-center/service";
-import Benefits from "../../components/partials/sections/benefits";
-import Articles from "../../components/partials/sections/articles";
+import BusinessStructure from "../../atomic/sections/learning-center-entity/comparison-chart/business-structure";
 import Rocket from "../../atomic/sections/review-entity-type/c-corporation/rocket";
-import Searchbar from "../../atomic/molecules/form/searchbar";
 //Texts
-import { top, about, help, faq, rocket, categories, service, tools } from "../../static/learning-center-entity/comparison-chart";
+import { top, about, rocket, businessStructure } from "../../static/learning-center-entity/comparison-chart";
 
 const ComparisonChart = () => (
   <Layout>
@@ -25,6 +19,7 @@ const ComparisonChart = () => (
       <p>{top.text}</p>
     </Top>
     <About content={about} />
+    <BusinessStructure content={businessStructure} />
     <Rocket content={rocket} />
   </Layout>
 );
