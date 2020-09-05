@@ -16,7 +16,7 @@ export const adventages = {
         },
         {
             circleText: 3,
-            imageName: "starting-a-home-business",
+            imageName: "video-and-audio-content-publisher",
             headline: "Video and Audio Content Publisher",
             text: "Other travelers may have preferences when it comes to diet, culture, religion or other aspects. A travel agent may choose to specialize in vegan or artisanal food and tours, while another may focus on all-female tour groups."
         },

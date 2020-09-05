@@ -2,12 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import {gradient} from "../../../atoms/styles/colors";
 import Container from "../../../container";
-import TextCenterLayout from "../../../partials/heading-center";
+import TextCenterLayout from "../../../partials/heading-left";
 import Adventages from "../../../../components/adventages";
 import {color} from "../../../../components/styles/colors";
 import {shadow} from "../../../../components/styles/shadows";
 import {adventages} from "../../../../static/type-of-business/construction-company";
-import Curve from "../../../atoms/shapes/curve";
 import OvalSvg from "../../../../images/oval-blue-4.inline.svg";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import ContentCenter from "../../../partials/content-center";
@@ -19,12 +18,14 @@ const TypeOfBusiness = () => (
         </Oval>
         <Container>
             <Service>
-                <TextCenterLayout headline="What Type of Construction Business Should You Start?"
-                                  text="There are several different types of construction business that you can start. Here are some of the more popular options."/>
+                <ContentCenter contentWidth={770}>
+                    <TextCenterLayout headlineWidth={770} textWidth={770}
+                                      headline="What Type of Construction Business Should You Start?"
+                                      text="There are several different types of construction business that you can start. Here are some of the more popular options."/>
 
-                <ContentCenter>
                     <Paragraph big>
-                        There are dozens of other niches including using reclaimed materials, industrial construction, commercial construction, constructing vacation rentals and much more.
+                        There are dozens of other niches including using reclaimed materials, industrial construction,
+                        commercial construction, constructing vacation rentals and much more.
                     </Paragraph>
                 </ContentCenter>
 
@@ -80,6 +81,11 @@ const Oval = styled.div`
     position: absolute;
     right: 0;
     top: 300px;
+    display: none;
+  
+      @media (min-width: 1200px){
+        display: block;
+      }
 `;
 
 export default TypeOfBusiness;

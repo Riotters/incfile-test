@@ -31,7 +31,7 @@ import AgentColoredIcon from "../../../../images/icons/registered-agent-colored.
 import TaxesColoredIcon from "../../../../images/icons/other-taxes-colored.inline.svg";
 import MaintainingColoredIcon from "../../../../images/icons/maintaining-your-cleaning-business-colored.inline.svg"
 import CalcColoredIcon from "../../../../images/icons/finances-and-your-business-colored.inline.svg";
-
+import OvalSvg from "../../../../images/ovals/top-right-transparent-blue2.inline.svg";
 import {
     BusinessInsuranceAccordionContent,
     FinancesAccordionContent,

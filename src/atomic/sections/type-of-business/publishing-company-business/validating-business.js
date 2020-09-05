@@ -25,7 +25,6 @@ const ContainerWrapper = styled.div`
 
 const GridSection = styled.div`
     width: 100%;
-    margin-top: 110px;
 `;
 
 const TitleBox = styled.div`
@@ -65,6 +64,11 @@ const OvalCenter = styled.div`
   position: absolute;
   right: 0;
   top: 38%;
+  display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
 `
 
 const AbsoluteCurve = styled.div`

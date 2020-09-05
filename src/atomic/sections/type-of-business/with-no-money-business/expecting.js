@@ -9,22 +9,28 @@ import InvolvedIcon from "../../../../images/icons/get-involved-with-business-co
 import {color} from "../../../../components/styles/colors";
 import React from "react";
 import styled from "styled-components";
-import OvalBlueSVG from "../../../../images/oval-blue-4.inline.svg";
-import ContentCenter from "../../../partials/content-center";
-import TextCenterLayout from "../../../partials/heading-left";
+import OvalBlueSVG from "../../../../images/ovals/top-right-transparent-blue3.inline.svg";
+import TextCenterLayout from "../../../partials/heading-center";
+import BoltIcon from "../../../../images/icons/expect-to-be-stressed-and-anxious.inline.svg";
+import BookIcon from "../../../../images/icons/grow-organically.inline.svg";
+import LearnIcon from "../../../../images/icons/learn-from-your-mistakes.inline.svg";
+import BallsIcon from "../../../../images/icons/there-will-always-be-too-much-to-do-and-too-little-money.inline.svg";
+import HeartIcon from "../../../../images/icons/there-are-plenty-of-people-out-there-who-can-help.inline.svg";
+import CompetitionIcon from "../../../../images/icons/theres-lots-and-lots-of-competition.inline.svg";
+import BombIcon from "../../../../images/icons/the-biggest-issue-you-will-have-is-cash-flow.inline.svg";
+import PaperIcon from "../../../../images/icons/prepare-and-file-the-articles-of-incorporation.inline.svg";
 
 const ContainerWrapper = styled.div`
     background: rgb(255,255,255);
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, #f2f6ff);
     padding-bottom: 100px;
     position: relative;
-    padding-top: 120px;
+    padding-top: 100px;
 `;
 
 
 const GridSection = styled.div`
     width: 100%;
-    margin-top: 110px;
 `;
 
 const TitleBox = styled.div`
@@ -60,35 +66,16 @@ const GridSectionList = styled.div`
     }
 `;
 
-const TextBorderedSection = styled.div`
-    width: 100%;
-    padding-top: 100px;
-    
-    @media (min-width: 670px) {
-        width: 670px;
-        margin: 0 auto;
-    }
-    
-    h3{
-        color: #1d1d1d;
-        font-size: 40px;
-        text-align: center;
-        margin-bottom: 24px;
-    }
-`;
-
-const TextBorderedList = styled.div`
-    margin-top: 80px;
-    
-    >div {
-        margin-bottom: 8px;
-    }
-`;
-
 const OvalCenter = styled.div`
   position: absolute;
   right: 0;
-  top: 0;
+  top: 599px;
+  width: 570px;
+  display: none;
+  
+  @media (min-width: 1200px){
+    display: block;
+  }
 `
 
 const AbsoluteCurve = styled.div`
@@ -108,37 +95,12 @@ const Expecting = () => (
 
             <GridSection>
                 <TitleBox>
-                    <TextCenterLayout headline="Understanding the World of the Photography Business" />
-                    <Paragraph big>
-                        Photography is a very specialized skill; it requires people with both a keen eye and
-                        an understanding of composition, editing, framing and more to create stunning images. Add to that
-                        the need to manage others well plus a solid understanding
-                        of business principles...you'll see that freelance photographers need to be well-rounded
-                        individuals.
-                    </Paragraph>
-
-                    <Paragraph big style={{fontWeight: "bold"}}>
-                        There are dozens of different niches you can choose to pursue as a photographer.
-                    </Paragraph>
-
-                    <Paragraph big>
-                        If you can make your name in one of them, your reputation will carry you a long way. Here are some
-                        areas to consider when choosing the type of photographer you want to be.
-                    </Paragraph>
-                    <Paragraph big>
-                        When you’re deciding which route to follow, look at local competition, your skillset, demand for
-                        these services in your area and any other local factors likely to impact the amount of photography
-                        business you can win.
-                    </Paragraph>
-                    <Paragraph big>
-                        The most popular types of photography in descending order are: portrait, fine arts, events, wedding,
-                        advertising, photojournalism, nature, marketing, products and architecture.
-                    </Paragraph>
+                    <TextCenterLayout headline="What to Expect When Starting a Business with Low Capital" text="As a new entrepreneur, here’s what you can expect throughout the lifecycle of starting, running and growing a business with a lack of finances!"/>
                 </TitleBox>
 
                 <GridSectionList>
 
-                    <TextBlockWithImage SvgImage={IdetifyIcon} imageBackgroundColor={color.purple2}
+                    <TextBlockWithImage SvgImage={BallsIcon} imageBackgroundColor={color.purple2}
                                         imageShadowColor={color.purple2}>
                         <Heading size={4}>
                             There will always be too much to do and too little money
@@ -148,8 +110,8 @@ const Expecting = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={LookIcon} imageBackgroundColor={color.babyblue2}
-                                        imageShadowColor={color.babyblue2}>
+                    <TextBlockWithImage SvgImage={BombIcon} imageBackgroundColor={color.yellow2}
+                                        imageShadowColor={color.yellow2}>
                         <Heading size={4}>
                             The biggest issue you will have
                             is cash flow
@@ -160,8 +122,8 @@ const Expecting = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={TalkIcon} imageBackgroundColor={color.purple2}
-                                        imageShadowColor={color.purple2}>
+                    <TextBlockWithImage SvgImage={CompetitionIcon} imageBackgroundColor={color.babyblue2}
+                                        imageShadowColor={color.babyblue2}>
                         <Heading size={4}>
                             There is lots (and lots) of competition
                         </Heading>
@@ -172,8 +134,8 @@ const Expecting = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={InvolvedIcon} imageBackgroundColor={color.orange2}
-                                        imageShadowColor={color.orange2}>
+                    <TextBlockWithImage SvgImage={HeartIcon} imageBackgroundColor={color.red2}
+                                        imageShadowColor={color.red2}>
                         <Heading size={4}>
                             There are plenty of people out there who can help
                         </Heading>
@@ -184,8 +146,8 @@ const Expecting = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={InvolvedIcon} imageBackgroundColor={color.orange2}
-                                        imageShadowColor={color.orange2}>
+                    <TextBlockWithImage SvgImage={PaperIcon} imageBackgroundColor={color.blue2}
+                                        imageShadowColor={color.blue2}>
                         <Heading size={4}>
                             Getting your idea and product or service fit right is essential
                         </Heading>
@@ -195,8 +157,8 @@ const Expecting = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={InvolvedIcon} imageBackgroundColor={color.orange2}
-                                        imageShadowColor={color.orange2}>
+                    <TextBlockWithImage SvgImage={BookIcon} imageBackgroundColor={color.purple2}
+                                        imageShadowColor={color.purple2}>
                         <Heading size={4}>
                             Grow organically
                         </Heading>
@@ -206,7 +168,7 @@ const Expecting = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={InvolvedIcon} imageBackgroundColor={color.orange2}
+                    <TextBlockWithImage SvgImage={LearnIcon} imageBackgroundColor={color.orange2}
                                         imageShadowColor={color.orange2}>
                         <Heading size={4}>
                             Learn from your mistakes
@@ -216,8 +178,8 @@ const Expecting = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={InvolvedIcon} imageBackgroundColor={color.orange2}
-                                        imageShadowColor={color.orange2}>
+                    <TextBlockWithImage SvgImage={BoltIcon} imageBackgroundColor={color.green2}
+                                        imageShadowColor={color.green2}>
                         <Heading size={4}>
                             Expect to be stressed and anxious
                         </Heading>

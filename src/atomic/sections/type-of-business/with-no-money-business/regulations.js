@@ -7,9 +7,6 @@ import styled from "styled-components";
 
 const Regulations = () => (
     <Wrapper>
-        <Oval>
-            <OvalSvg/>
-        </Oval>
         <Container style={{paddingTop: "100px", paddingBottom: "100px"}} width={750}>
             <Heading size={4} style={{fontSize: "40px"}}>
                 Rules, Regulations and Taxes

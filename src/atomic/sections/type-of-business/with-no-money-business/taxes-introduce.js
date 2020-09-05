@@ -2,14 +2,19 @@ import Container from "../../../container";
 import {Heading} from "../../../atoms/typography/heading";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import TextBlockWithImage from "../../../molecules/mixed-blocks/text-block-with-absolute-image";
-import TalkIcon from "../../../../images/icons/talk-to-clients.inline.svg";
-import IdetifyIcon from "../../../../images/icons/identify-your-unique-selling-point.inline.svg"
-import LookIcon from "../../../../images/icons/look-at-who-your-competitors-are-in-the-space.inline.svg"
-import InvolvedIcon from "../../../../images/icons/get-involved-with-business-communities.inline.svg"
+import Icon1 from "../../../../images/icons/with-no-money-icon1.inline.svg";
+import Icon2 from "../../../../images/icons/with-no-money-icon2.inline.svg";
+import Icon3 from "../../../../images/icons/with-no-money-icon3.inline.svg";
+import Icon4 from "../../../../images/icons/with-no-money-icon4.inline.svg";
+import Icon5 from "../../../../images/icons/with-no-money-icon5.inline.svg";
+import Icon6 from "../../../../images/icons/with-no-money-icon6.inline.svg";
+import Icon7 from "../../../../images/icons/with-no-money-icon7.inline.svg";
+import Icon8 from "../../../../images/icons/with-no-money-icon8.inline.svg";
+
 import {color} from "../../../../components/styles/colors";
 import React from "react";
 import styled from "styled-components";
-import OvalBlueSVG from "../../../../images/oval-blue-4.inline.svg";
+import OvalSvg from "../../../../images/ovals/bottom-left-transparent-green2.inline.svg";
 import {gradient} from "../../../atoms/styles/colors";
 
 const ContainerWrapper = styled.div`
@@ -23,12 +28,12 @@ const ContainerWrapper = styled.div`
 
 const GridSection = styled.div`
     width: 100%;
-    margin-top: 110px;
 `;
 
 const TitleBox = styled.div`
     width: 100%;
     position: relative;
+    text-align: center;
      
     @media (min-width:750px) {
         width: 750px;
@@ -38,8 +43,8 @@ const TitleBox = styled.div`
     h3{
         color: #1d1d1d;
         font-size: 40px;
-        text-align: left;
-        margin-bottom: 24px;
+        text-align: center;
+        margin: 0 auto 24px;
     }
 `;
 
@@ -87,7 +92,15 @@ const TextBorderedList = styled.div`
 const OvalCenter = styled.div`
   position: absolute;
   right: 0;
-  top: 0;
+  top: 730px;
+  width: 570px;
+  transform: scaleX(-1);
+  opacity: 0.5;
+  display: none;
+  
+  @media (min-width: 1200px) {
+    display: block;
+  }
 `
 
 const AbsoluteCurve = styled.div`
@@ -100,7 +113,7 @@ const AbsoluteCurve = styled.div`
 const TaxesIntroduce = () => (
     <ContainerWrapper>
         <OvalCenter>
-            <OvalBlueSVG/>
+            <OvalSvg/>
         </OvalCenter>
 
         <Container>
@@ -117,7 +130,7 @@ const TaxesIntroduce = () => (
 
                 <GridSectionList>
 
-                    <TextBlockWithImage SvgImage={IdetifyIcon} imageBackgroundColor={color.purple2}
+                    <TextBlockWithImage SvgImage={Icon1} imageBackgroundColor={color.purple2}
                                         imageShadowColor={color.purple2}>
                         <Heading size={4}>
                             File with the IRS
@@ -128,7 +141,7 @@ const TaxesIntroduce = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={LookIcon} imageBackgroundColor={color.green2}
+                    <TextBlockWithImage SvgImage={Icon2} imageBackgroundColor={color.green2}
                                         imageShadowColor={color.green2}>
                         <Heading size={4}>
                             Payroll tax
@@ -139,7 +152,7 @@ const TaxesIntroduce = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={TalkIcon} imageBackgroundColor={color.yellow2}
+                    <TextBlockWithImage SvgImage={Icon3} imageBackgroundColor={color.yellow2}
                                         imageShadowColor={color.yellow2}>
                         <Heading size={4}>
                             Sales tax
@@ -149,7 +162,7 @@ const TaxesIntroduce = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={InvolvedIcon} imageBackgroundColor={color.babyblue2}
+                    <TextBlockWithImage SvgImage={Icon4} imageBackgroundColor={color.babyblue2}
                                         imageShadowColor={color.babyblue2}>
                         <Heading size={4}>
                             State tax
@@ -160,7 +173,7 @@ const TaxesIntroduce = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={InvolvedIcon} imageBackgroundColor={color.orange2}
+                    <TextBlockWithImage SvgImage={Icon5} imageBackgroundColor={color.orange2}
                                         imageShadowColor={color.orange2}>
                         <Heading size={4}>
                             Federal income tax
@@ -170,7 +183,7 @@ const TaxesIntroduce = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={InvolvedIcon} imageBackgroundColor={color.red2}
+                    <TextBlockWithImage SvgImage={Icon6} imageBackgroundColor={color.red2}
                                         imageShadowColor={color.red2}>
                         <Heading size={4}>
                             Corporation tax
@@ -180,7 +193,7 @@ const TaxesIntroduce = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={InvolvedIcon} imageBackgroundColor={color.blue2}
+                    <TextBlockWithImage SvgImage={Icon7} imageBackgroundColor={color.blue2}
                                         imageShadowColor={color.blue2}>
                         <Heading size={4}>
                             Self-employment tax
@@ -190,7 +203,7 @@ const TaxesIntroduce = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={InvolvedIcon} imageBackgroundColor={color.orange2}
+                    <TextBlockWithImage SvgImage={Icon8} imageBackgroundColor={color.orange2}
                                         imageShadowColor={color.orange2}>
                         <Heading size={4}>
                             Other taxes

@@ -47,16 +47,6 @@ const Wrapper = styled.div`
     position: relative;
 `;
 
-const TextWrapper = styled.div`
-    width: 100%;
-    position: relative;
-    
-    @media (min-width: 750px) {
-        width: 750px;
-        margin: 48px auto 100px;
-    }
-`;
-
 const Service = styled.div`
   padding: 64px 0;
 `;
@@ -69,12 +59,6 @@ const AdventagesBox = styled.div`
   padding: 140px 0;
   margin: 0 auto;
   position: relative;
-`;
-
-const Oval = styled.div`
-    position: absolute;
-    right: 0;
-    top: 0;
 `;
 
 const OvalBottom = styled.div`
@@ -99,6 +83,12 @@ const CurveWrapper = styled.div`
     
     @media (max-width: 970px) {
         display: none;
+    }
+    
+    svg{
+        path{
+            fill: #d2e0fe;
+        }
     }
 `;
 
