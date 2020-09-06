@@ -14,7 +14,7 @@ import HandsIcon from "../../../../images/icons/hands.inline.svg";
 import ArrowsIcon from "../../../../images/icons/arrows.inline.svg"
 import Button from "../../../molecules/buttons/button";
 import Container from "../../../container";
-import OvalGreen3 from "../../../../images/oval-green-3.inline.svg";
+import OvalGreen3 from "../../../../images/ovals/bottom-left-transparent-blue3.inline.svg";
 import {shadow} from "../../../atoms/styles/shadows";
 
 const BusinessOwnerResponsibilities = styled.section`
@@ -36,7 +36,13 @@ const OrangeContainer = styled.div`
 const Oval = styled.div`
   position: absolute;
   left: 0;
-  top: 200px;
+  top: 100px;
+  width: 720px;
+  display: none;
+    
+  @media (min-width: 420px) {
+    display: block;
+  }
 `
 
 const BusinessStructure = () => (
@@ -91,7 +97,7 @@ const BusinessStructure = () => (
                         SvgImage={UmbrellaIcon}
                         textBackgroundColor="transparent"
                         imageBackgroundColor={color.white}
-                        imageShadowColor="#ababab"
+                        imageShadowColor={shadow.white2}
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
@@ -120,7 +126,7 @@ const BusinessStructure = () => (
                         SvgImage={ArrowsIcon}
                         textBackgroundColor="transparent"
                         imageBackgroundColor={color.white}
-                        imageShadowColor="#ababab"
+                        imageShadowColor={shadow.white2}
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
@@ -149,7 +155,7 @@ const BusinessStructure = () => (
                         SvgImage={PlaneIcon}
                         textBackgroundColor="transparent"
                         imageBackgroundColor={color.white}
-                        imageShadowColor="#ababab"
+                        imageShadowColor={shadow.white2}
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
@@ -177,7 +183,7 @@ const BusinessStructure = () => (
                         SvgImage={RockerIcon}
                         textBackgroundColor="transparent"
                         imageBackgroundColor={color.white}
-                        imageShadowColor="#ababab"
+                        imageShadowColor={shadow.white2}
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}

@@ -11,8 +11,6 @@ import {color} from "../../../../components/styles/colors";
 import React from "react";
 import styled from "styled-components";
 import OvalSVG from "../../../../images/ovals/bottom-left-transparent-orange.inline.svg";
-import OvalRedSVG from "../../../../images/ovals/top-left-transparent-pink.inline.svg";
-import Curve from "../../../atoms/shapes/curve";
 
 const ContainerWrapper = styled.div`
     background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 30%, #fef6ed);
@@ -95,7 +93,8 @@ const OvalBig = styled.div`
   position: absolute;
   right: 0;
   top: calc(50% - 360px);
-  width: 720px;
+  width: 420px;
+  transform: scaleY(-1);
   
   svg{
     transform: scaleX(-1);
@@ -116,7 +115,7 @@ const ValidatingBusinessIdea = () => (
         </Oval>
 
         <OvalBig>
-            <OvalRedSVG/>
+            <OvalSVG/>
         </OvalBig>
 
         <Container>

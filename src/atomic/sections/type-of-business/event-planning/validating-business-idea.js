@@ -9,7 +9,6 @@ import MarketIcon from "../../../../images/icons/understand-your-market.inline.s
 import {color} from "../../../../components/styles/colors";
 import React from "react";
 import styled from "styled-components";
-import OvalBlueSVG from "../../../../images/oval-blue-4.inline.svg";
 import Curve from "../../../atoms/shapes/curve";
 import {gradient} from "../../../atoms/styles/colors";
 
@@ -100,10 +99,6 @@ const AbsoluteCurve = styled.div`
 
 const ValidatingBusinessIdea = () => (
     <ContainerWrapper>
-        <OvalCenter>
-            <OvalBlueSVG/>
-        </OvalCenter>
-
         <Container>
 
             <GridSection>

@@ -23,7 +23,6 @@ import TextBlockWithImage from "../../atomic/molecules/mixed-blocks/text-block-w
 import {color} from "../../components/styles/colors";
 import CountingTextBoxed from "../../atomic/molecules/text-blocks/counting-text-boxed";
 import OvalBlueSmallSvg from "../../images/ovals/bottom-left-transparent-blue3.inline.svg";
-import OvalBlueSvg from "../../images/ovals/top-left-transparent-blue3.inline.svg";
 import OvalGreenSvg from "../../images/ovals/top-left-transparent-green3.inline.svg";
 import OvalPinkSvg from "../../images/ovals/top-left-transparent-pink.inline.svg";
 import ImageContent from "../../components/partials/blocks/left-image-right-content";
@@ -39,15 +38,10 @@ import OrderNow from "../../atomic/sections/type-of-business/bar-nightclub/order
 import Conclusion from "../../atomic/sections/general/conclusion";
 import BlueBoxWithAbsoluteText from "../../atomic/molecules/text-blocks/blue-box-with-absolute-text";
 import Adventages from "../../components/adventages";
-import TypeOfBusiness from "../../atomic/sections/type-of-business/bar-nightclub/type-of-business";
-import ContentCenter from "../../atomic/partials/content-center";
 import Links from "../../atomic/sections/type-of-business/bar-nightclub/links";
 import Colorbox from "../../components/color-box";
 import TextBoxed from "../../atomic/molecules/static-check/circle-checkmark-text-boxed";
 import ValidatingBusinessIdea from "../../atomic/sections/type-of-business/bar-nightclub/validating-business";
-import DominoIcon from "../../images/icons/domino.inline.svg";
-import Regulations from "../../atomic/sections/type-of-business/bar-nightclub/regulations";
-import InsuranceBusiness from "../../atomic/sections/type-of-business/bar-nightclub/insurance-business";
 import Taxes from "../../atomic/sections/type-of-business/bar-nightclub/taxes";
 import ColorFulCircleWithTextAndList from "../../atomic/molecules/blocks/colorful-circle-with-text-and-list";
 import {RingText} from "../../static/type-of-business/bar-nightclub";
@@ -55,6 +49,9 @@ import Circles from "../../images/rings-4.inline.svg";
 import {shadow} from "../../atomic/atoms/styles/shadows";
 import TabScrollable from "../../atomic/sections/type-of-business/bar-nightclub/TabScrollable";
 import HireEmployees from "../../atomic/sections/type-of-business/bar-nightclub/hire-employees";
+import StarIcon from "../../images/icons/if-youre-interested-in-starting-a-bar-club.inline.svg";
+import OvalSvg from "../../images/ovals/bottom-left-transparent-orange.inline.svg";
+import {gradient} from "../../atomic/atoms/styles/colors";
 
 const BarNightclub = () => (
     <Layout>
@@ -92,7 +89,7 @@ const BarNightclub = () => (
 
                 <CollapseWrapper>
                     <PanelWrapper>
-                        <Colorbox color={color.blue3} theme="icon" curve curveColor={color.blue1}>
+                        <Colorbox color={color.blue3} theme="icon" curve curveColor={color.blue1} Icon={StarIcon}>
                             <Paragraph big style={{fontWeight: "bold"}}>
                                 If you’re interested in starting a bar, club or other business that serves alcohol,
                                 there’s plenty to do.
@@ -508,10 +505,10 @@ const BarNightclub = () => (
 
         <SimpleSection>
             <OvalGreen>
-                <OvalGreenSvg/>
+                <OvalSvg/>
             </OvalGreen>
             <OvalGreen2>
-                <OvalGreenSvg/>
+                <OvalSvg/>
             </OvalGreen2>
             <Container>
                 <CenterBox>
@@ -832,7 +829,7 @@ const CenterBox = styled.div`
 const SimpleSection = styled.div`
     padding-top: 100px;
     position: relative;
-     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 30%, #f2f8f3);
+    background-image: ${gradient.orange3};
 `;
 
 const BusinessOwnerResponsibilities = styled.section`
@@ -856,6 +853,11 @@ const Oval = styled.div`
   left: 0;
   top: 200px;
   width: 570px; 
+  display: none;
+  
+  @media (min-width: 720px){
+    display: block;
+  }
 `
 
 const OvalTabs = styled.div`
@@ -863,23 +865,41 @@ const OvalTabs = styled.div`
   left: 0;
   top: 0;
   width: 420px; 
+  display: none;
+  
+  @media (min-width: 720px){
+    display: block;
+  }
 `;
 
 const OvalGreen = styled.div`
   position: absolute; 
   left: 0;
-  top: 60px;
+  top: -210px;
   width: 420px;
+  display: none;
+  transform: scaleY(-1);
+  
+  @media (min-width: 720px){
+    display: block;
+  }
 `
 
 const OvalGreen2 = styled.div`
   position: absolute; 
   right: 0;
   bottom: 377px; 
+  transform: scaleY(-1);
   width: 720px;
   
   svg {
     transform: scaleX(-1);
+  }
+  
+  display: none;
+  
+  @media (min-width: 720px){
+    display: block;
   }
 `
 

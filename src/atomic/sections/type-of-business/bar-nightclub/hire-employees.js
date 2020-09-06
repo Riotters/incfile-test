@@ -131,6 +131,11 @@ const Oval = styled.div`
     right: 0;
     bottom: 527px;
     opacity: 0.5;
+     display: none;
+  
+  @media (min-width: 720px){
+    display: block;
+  }
 `;
 
 export default HireEmployees;

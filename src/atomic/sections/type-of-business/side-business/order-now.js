@@ -62,18 +62,33 @@ const Oval = styled.div`
     position: absolute;
     left: 0;
     top: 0;
+    display: block;
+  
+  @media (min-width: 1200px){
+    display: block;
+  }
 `;
 
 const OvalRight = styled.div`
     position: absolute;
     right: 0;
     bottom: -5px;
+    display: block;
+  
+  @media (min-width: 1200px){
+    display: block;
+  }
 `;
 
 const CurveWrapper = styled.div`
     position: absolute;
     left: -122px;
     top: -115px;
+    display: block;
+  
+  @media (min-width: 1200px){
+    display: block;
+  }
 `;
 
 const ListWrapper = styled.div`

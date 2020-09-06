@@ -7,9 +7,13 @@ import {shadow} from "../../../atoms/styles/shadows";
 import {color} from "../../../atoms/styles/colors";
 import UsefulTools from "../../../partials/useful-tools";
 import {toolsList} from "../../../../static/type-of-business/unique-business";
+import OvalSvg from "../../../../images/ovals/bottom-right-transparent-babyblue2.inline.svg";
 
 const ToolsAndLinks = () => (
     <Wrapper>
+        <Oval>
+            <OvalSvg />
+        </Oval>
         <Container>
             <UsefulTools toolsList={toolsList.tools} headlineText={toolsList.headlineText} description={toolsList.description} />
         </Container>
@@ -19,36 +23,18 @@ const ToolsAndLinks = () => (
 const Wrapper = styled.div`
     padding-top: 0px;
     margin-bottom: 200px;
+    position: relative;
 `;
 
-const LinksContainer = styled.div`
-    width: 100%;
-    margin: 100px auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+const Oval = styled.div`
+    position: absolute;
+    left: 0;
+    top: 521px;
+    display: none;
+    transform: scaleX(-1);
     
-    @media (min-width: 1000px) {
-        width: 1000px;
+    @media (min-width: 420px) {
+        display: block;
     }
 `;
-
-const LinkItem = styled.div`
-    margin: 0 auto;
-    padding: 28px 40px 28px 40px;
-    background-color: white;
-    box-shadow: ${shadow.white1};
-    width: 100%;
-    margin-bottom: 30px;
-    
-    @media (min-width: 470px) {
-        width: 470px;
-    }
-    
-    @media (min-width: 1000px) {
-        margin-left: 15px;
-        margin-right: 15px;
-    }
-`;
-
 export default ToolsAndLinks;

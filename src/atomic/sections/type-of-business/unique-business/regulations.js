@@ -40,5 +40,11 @@ const Oval = styled.div`
     svg {
         transform: scaleX(-1);
     }
+    
+    display: none;
+    
+    @media (min-width: 420px) {
+        display: block;
+    }
 `;
 export default Regulations;

@@ -4,12 +4,20 @@ import Container from "../../../container";
 import TextCenterLayout from "../../../partials/heading-center";
 import PathLink from "../../../molecules/buttons/path";
 import {shadow} from "../../../atoms/styles/shadows";
-import {color} from "../../../atoms/styles/colors";
+import {color, gradient} from "../../../atoms/styles/colors";
 import UsefulTools from "../../../partials/useful-tools";
 import {toolsList} from "../../../../static/type-of-business/event-planning";
+import OvalSvg from "../../../../images/ovals/bottom-left-transparent-orange.inline.svg";
+import OvalSvg2 from "../../../../images/ovals/top-left-transparent-red3.inline.svg";
 
 const ToolsAndLinks = () => (
     <Wrapper>
+        <Oval>
+            <OvalSvg />
+        </Oval>
+        <Oval2>
+            <OvalSvg2 />
+        </Oval2>
         <Container>
             <TextCenterLayout headline="Groups and Forums for Party or Event Planners"
                               text="Here are some useful places where you can connect with other party or event planning entrepreneurs."/>
@@ -57,8 +65,10 @@ const ToolsAndLinks = () => (
 );
 
 const Wrapper = styled.div`
-    padding-top: 0px;
+    padding-top: 100px;
     margin-bottom: 200px;
+    position: relative;
+    background-image: ${gradient.orange3};
 `;
 
 const LinksContainer = styled.div`
@@ -88,6 +98,31 @@ const LinkItem = styled.div`
     @media (min-width: 1000px) {
         margin-left: 15px;
         margin-right: 15px;
+    }
+`;
+
+const Oval = styled.div`
+    position: absolute;
+    left: 0;
+    bottom: 501px;
+    width: 420px;
+     display: none;
+    
+    @media (min-width: 720px){
+        display: block; 
+    }
+`;
+
+const Oval2 = styled.div`
+    position: absolute;
+    right: 0;
+    top: 800px;
+    width: 720px;
+    transform: scaleX(-1);
+     display: none;
+    
+    @media (min-width: 720px){
+        display: block; 
     }
 `;
 
