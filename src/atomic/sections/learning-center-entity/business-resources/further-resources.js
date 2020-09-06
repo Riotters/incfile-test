@@ -20,14 +20,14 @@ const FutherResources = styled.section`
   padding-bottom: 64px;
 
   &::before {
-    content: '';
+    content: "";
     height: 2166px;
     width: 100%;
     background-image: ${gradient.orange3};
     position: absolute;
     top: 0;
     left: 0;
-}
+  }
 `;
 
 const Grid = styled.div`
