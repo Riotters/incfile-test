@@ -1,18 +1,30 @@
 import React from "react";
 import styled from "styled-components";
-import GreenOval from "../../../../images/oval-green-2.inline.svg";
+import OvalSvg from "../../../../images/ovals/top-left-transparent-blue2.inline.svg";
 import Container from "../../../container";
 import TextCenterLayout from "../../../partials/heading-left";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import {gradient} from "../../../atoms/styles/colors";
 import UpWorkLogo from "../../../../images/Upwork-logo.inline.svg";
+import DesignLogo from "../../../../images/99-designs-logo.inline.svg";
+import AirBnbLogo from "../../../../images/airbnb-full-logo.inline.svg";
+import FiverrLogo from "../../../../images/fiverr-logo.inline.svg";
+import FreelancerLogo from "../../../../images/freelancer-logo.inline.svg";
+import LyftLogo from "../../../../images/lyft-logo.inline.svg";
+import TaskRabbitLogo from "../../../../images/taskrabbit-logo.inline.svg";
+import ToptalLogo from "../../../../images/toptal-logo.inline.svg";
+import UberLogo from "../../../../images/uber-12-logo.inline.svg";
 import {shadow} from "../../../atoms/styles/shadows";
 
 const JobsAnywhere = () => (
     <Wrapper>
         <Oval>
-            <GreenOval/>
+            <OvalSvg/>
         </Oval>
+
+        <Oval2>
+            <OvalSvg/>
+        </Oval2>
 
         <Container style={{paddingTop: "100px", paddingBottom: "100px"}} width={750}>
             <TextCenterLayout headline="Jobs You Can Do From Anywhere" headlineWidth={750}/>
@@ -44,35 +56,35 @@ const JobsAnywhere = () => (
             </LogoBox>
 
             <LogoBox>
-                <UpWorkLogo />
+                <FiverrLogo />
             </LogoBox>
 
             <LogoBox>
-                <UpWorkLogo />
+                <AirBnbLogo />
             </LogoBox>
 
             <LogoBox>
-                <UpWorkLogo />
+                <FreelancerLogo />
             </LogoBox>
 
             <LogoBox>
-                <UpWorkLogo />
+                <DesignLogo />
             </LogoBox>
 
             <LogoBox>
-                <UpWorkLogo />
+                <UberLogo />
             </LogoBox>
 
             <LogoBox>
-                <UpWorkLogo />
+                <ToptalLogo />
             </LogoBox>
 
             <LogoBox>
-                <UpWorkLogo />
+                <LyftLogo />
             </LogoBox>
 
             <LogoBox>
-                <UpWorkLogo />
+                <TaskRabbitLogo />
             </LogoBox>
 
         </LogosContainer>
@@ -93,12 +105,32 @@ const JobsAnywhere = () => (
 
 const Wrapper = styled.div`
     background-image: ${gradient.blue3};
+    position: relative;
+`;
+
+const Oval = styled.div`
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 570px;
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
 `;
 
 const Oval = styled.div`
     position: absolute;
     right: 0;
-    top: 220px;
+    top: 599px;
+    width: 720px;
+    transform: scaleX(-1);
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
 `;
 
 const LogosContainer = styled.div`
