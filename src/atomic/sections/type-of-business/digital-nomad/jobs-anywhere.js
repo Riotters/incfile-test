@@ -120,11 +120,12 @@ const Oval = styled.div`
     }
 `;
 
-const Oval = styled.div`
+const Oval2 = styled.div`
     position: absolute;
     right: 0;
     top: 599px;
     width: 720px;
+    z-index: -1;
     transform: scaleX(-1);
     display: none;
     
