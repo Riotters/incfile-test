@@ -8,7 +8,8 @@ import {color} from "../../../../components/styles/colors";
 import {shadow} from "../../../../components/styles/shadows";
 import {adventages} from "../../../../static/type-of-business/catering-business";
 import Curve from "../../../atoms/shapes/curve";
-import OvalSvg from "../../../../images/oval-orange-4.inline.svg";
+import OvalSvg from "../../../../images/ovals/top-right-transparent-blue.inline.svg";
+import OvalSvg2 from "../../../../images/ovals/bottom-left-transparent-blue3.inline.svg";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import ContentCenter from "../../../partials/content-center";
 import {Heading} from "../../../atoms/typography/heading";
@@ -18,6 +19,9 @@ const TypeOfBusiness = () => (
         <Oval>
             <OvalSvg/>
         </Oval>
+        <Oval2>
+            <OvalSvg2/>
+        </Oval2>
         <Container>
             <Service>
                 <TextCenterLayout headline="Different Types of Catering Businesses"
@@ -68,7 +72,7 @@ const TypeOfBusiness = () => (
 
 const Wrapper = styled.div`
     background: rgba(255,255,255,1);
-    background-image: ${gradient.orange3}; 
+    background-image: ${gradient.blue3}; 
     padding-top: 100px;
     position: relative;
 `;
@@ -91,12 +95,35 @@ const CurveWrapper = styled.div`
     position: absolute;
     right: -24px;
     top: 0px;
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
 `;
 
 const Oval = styled.div`
     position: absolute;
     right: 0;
-    top: 300px;
+    top: 287px;
+    width: 720px;
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
+`;
+
+const Oval2 = styled.div`
+    position: absolute;
+    left: 0;
+    bottom: 600px;
+    width: 420px;
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
 `;
 
 export default TypeOfBusiness;

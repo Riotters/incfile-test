@@ -4,8 +4,7 @@ import TextCenterLayout from "../../../partials/heading-left";
 import TopImageBox from "../../../../components/top-image-box";
 import {color} from "../../../../components/styles/colors";
 import styled from "styled-components";
-import Curve from "../../../../images/green-curve.inline.svg";
-import GreenOval from "../../../../images/oval-green-2.inline.svg";
+import GreenOval from "../../../../images/ovals/top-right-transparent-green2.inline.svg";
 import ContentCenter from "../../../partials/content-center";
 
 const SettingBusiness = () => (
@@ -123,6 +122,12 @@ const Oval = styled.div`
     position: absolute;
     right: 0;
     top: 220px;
+    width: 720px;
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
 `;
 
 export default SettingBusiness;
