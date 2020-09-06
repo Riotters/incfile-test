@@ -7,9 +7,17 @@ import {shadow} from "../../../atoms/styles/shadows";
 import {color} from "../../../atoms/styles/colors";
 import UsefulTools from "../../../partials/useful-tools";
 import {toolsList} from "../../../../static/type-of-business/food-truck-business";
+import OvalSvg from "../../../../images/ovals/top-right-transparent-blue2.inline.svg";
+import OvalSvg2 from "../../../../images/ovals/bottom-left-transparent-orange.inline.svg";
 
 const ToolsAndLinks = () => (
     <Wrapper>
+        <Oval>
+            <OvalSvg />
+        </Oval>
+        <Oval2>
+            <OvalSvg2 />
+        </Oval2>
         <Container>
             <TextCenterLayout headline="Groups and Forums for Food Truck Entrepreneurs"
                               text="Here are some useful places where you can connect with other food truck entrepreneurs."/>
@@ -52,6 +60,7 @@ const ToolsAndLinks = () => (
 const Wrapper = styled.div`
     padding-top: 0px;
     margin-bottom: 200px;
+    position: relative;
 `;
 
 const LinksContainer = styled.div`
@@ -83,5 +92,30 @@ const LinkItem = styled.div`
         margin-right: 15px;
     }
 `;
+
+const Oval = styled.div`
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 720px;
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
+`;
+
+const Oval2 = styled.div`
+    position: absolute;
+    bottom: 38px;
+    left: 0;
+    width: 420px;
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
+`;
+
 
 export default ToolsAndLinks;

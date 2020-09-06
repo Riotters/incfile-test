@@ -7,6 +7,7 @@ import OvalLeftSvg from "../../../../images/oval-orange-3.inline.svg";
 import OvalRightSvg from "../../../../images/oval-orange-4.inline.svg";
 import Curve from "../../../../images/curve-orange.inline.svg";
 import TabScrollable from "./TabScrollable";
+import OvalSvg from "../../../../images/ovals/top-right-transparent-blue2.inline.svg";
 
 const OrderNow = ({layout, columns}) => (
     <>
@@ -42,6 +43,9 @@ const OrderNow = ({layout, columns}) => (
             </Container>
         </OrderNowWrapper>
         <TabScrollableWrapper>
+            <Oval2>
+                <OvalSvg />
+            </Oval2>
             <Container>
                 <TabScrollable/>
             </Container>
@@ -50,13 +54,14 @@ const OrderNow = ({layout, columns}) => (
 );
 
 const TabScrollableWrapper = styled.div`
-background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 96%, #fef6ed);
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 96%, #fef6ed);
+    position: relative;
 `;
 
 const OrderNowWrapper = styled.section`
     background-color: #fef6ed;
-  position: relative;
-  padding: 64px 0;
+    position: relative;
+    padding: 64px 0;
 `;
 
 const ButtonsBox = styled.div`
@@ -72,31 +77,46 @@ const Oval = styled.div`
     position: absolute;
     left: 0;
     top: 0;
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
 `;
 
 const OvalRight = styled.div`
     position: absolute;
     right: 0;
     bottom: -5px;
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
 `;
 
 const CurveWrapper = styled.div`
     position: absolute;
     left: -122px;
     top: -115px;
-`;
-
-const ListWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-`;
-
-const ListBox = styled.div`
-    width: 100%;
+    display: none;
     
-    @media (min-width: 576px) { 
-        width: 50%; 
+    @media (min-width: 1200px){
+        display: block;
     }
 `;
+
+const Oval2 = styled.div`
+    position: absolute;
+    right: 0;
+    bottom: 1231px;
+    width: 570px;
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
+`;
+
 
 export default OrderNow;

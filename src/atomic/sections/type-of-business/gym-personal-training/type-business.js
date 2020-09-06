@@ -127,6 +127,11 @@ const CurveWrapper = styled.div`
     position: absolute;
     right: -24px;
     top: 0px;
+    display: none;
+  
+    @media (min-width: 1200px) {
+        display: block;
+    }
 `;
 
 const Oval = styled.div`
@@ -137,6 +142,12 @@ const Oval = styled.div`
     svg {
         transform: scaleX(-1);
     }
+    
+    display: none;
+  
+    @media (min-width: 1200px) {
+        display: block;
+    }
 `;
 
 const OvalBottomWrapper = styled.div`
@@ -144,6 +155,11 @@ const OvalBottomWrapper = styled.div`
     left: 0;
     bottom: 15%; 
     width: 420px;
+    display: none;
+  
+    @media (min-width: 1200px) {
+        display: block;
+    }
 `;
 
 export default TypeBusiness;

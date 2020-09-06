@@ -5,8 +5,7 @@ import {Heading} from "../../../atoms/typography/heading";
 import CountingTextBoxed from "../../../molecules/text-blocks/counting-text-boxed";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import Container from "../../../container";
-import Oval1 from "../../../../images/oval-green-3.inline.svg";
-import OvalSVG from "../../../../images/oval-green-3.inline.svg";
+import OvalSvg from "../../../../images/ovals/top-right-transparent-green2.inline.svg";
 
 const Wrapper = styled.div`
     position: relative;
@@ -38,26 +37,36 @@ const Oval = styled.div`
   position: absolute;
   left: 0;
   top: 0;
- 
+  width: 420px;
+  transform: scaleX(-1);
+  display: none;
+  
+  @media (min-width: 1200px){
+    display: block;
+  }
 `
 
 const OvalCenter = styled.div`
   position: absolute;
   right: 0;
-  top: 30%;
+  bottom: 364px;
+  width: 720px;
+  display: none;
   
-  svg {
-    transform: scaleX(-1);
+  display: none;
+  
+  @media (min-width: 1200px){
+    display: block;
   }
 `
 
 const BusinessPlan = () => (
     <Wrapper style={{position: "relative"}}>
         <Oval>
-            <Oval1/>
+            <OvalSvg/>
         </Oval>
         <OvalCenter>
-            <OvalSVG/>
+            <OvalSvg/>
         </OvalCenter>
         <Container>
             <BusinessOwnerResponsibilities>

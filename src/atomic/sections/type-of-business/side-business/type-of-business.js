@@ -11,6 +11,7 @@ import OvalSvg from "../../../../images/ovals/top-right-transparent-blue.inline.
 import OvalSvg2 from "../../../../images/ovals/top-left-transparent-blue2.inline.svg";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import AdventagesWithLongText from "../../../molecules/mixed-blocks/adventages-with-long-text";
+import {gradient} from "../../../atoms/styles/colors";
 
 const TypeOfBusiness = () => (
     <Wrapper>
@@ -48,7 +49,7 @@ const TypeOfBusiness = () => (
 
 const Wrapper = styled.div`
     background: rgba(255,255,255,1);
-    background-color: ${color.blue3}; 
+    background-image: ${gradient.blue3}; 
     padding-top: 100px;
     position: relative;
 `;
@@ -85,6 +86,12 @@ const OvalBottom = styled.div`
     left: 0;
     bottom: 300px;
     width: 570px;
+    transform: scaleY(-1);
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
 `;
 
 export default TypeOfBusiness;

@@ -16,6 +16,7 @@ import Button from "../../../molecules/buttons/button";
 import Container from "../../../container";
 import OvalGreen3 from "../../../../images/oval-green-3.inline.svg";
 import {shadow} from "../../../atoms/styles/shadows";
+import OvalSvg from "../../../../images/ovals/top-right-transparent-green3.inline.svg";
 
 const BusinessOwnerResponsibilities = styled.section`
   position: relative;
@@ -36,14 +37,21 @@ const WrapperContainer = styled.div`
 const Oval = styled.div`
   position: absolute;
   left: 0;
-  top: 200px;
+  top: 211px;
+  width: 570px;
+  display: none;
+  transform: scaleX(-1);
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
 `
 
 const CoachBusinessStructure = () => (
     <WrapperContainer>
 
         <Oval>
-            <OvalGreen3/>
+            <OvalSvg/>
         </Oval>
 
         <Container>

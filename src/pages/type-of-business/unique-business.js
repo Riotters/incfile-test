@@ -13,7 +13,7 @@ import {Heading} from "../../atomic/atoms/typography/heading";
 import {Paragraph} from "../../atomic/atoms/typography/paragraph";
 import Colorbox from "../../components/color-box";
 import {color} from "../../atomic/atoms/styles/colors";
-import MegafonIcon from "../../images/icons/megafon.inline.svg";
+import MegafonIcon from "../../images/icons/the-question-is-just-where-do-you-start.inline.svg";
 import TypeBusiness from "../../atomic/sections/type-of-business/unique-business/type-business";
 import ValidatingBusinessIdea from "../../atomic/sections/type-of-business/unique-business/validating-business-idea";
 import BusinessPlan from "../../atomic/sections/type-of-business/unique-business/business-plan";
@@ -24,6 +24,7 @@ import Regulations from "../../atomic/sections/type-of-business/unique-business/
 import Taxes from "../../atomic/sections/type-of-business/unique-business/taxes";
 import ToolsAndLinks from "../../atomic/sections/type-of-business/unique-business/tools";
 import Conclusion from "../../atomic/sections/general/conclusion";
+import OvalSvg from "../../images/ovals/bottom-left-transparent-pink1.inline.svg";
 
 const UniqueBusiness = () => (
     <Layout>
@@ -52,6 +53,9 @@ const UniqueBusiness = () => (
         </Top>
 
         <SimpleContainer>
+            <Oval>
+                <OvalSvg />
+            </Oval>
             <Container>
                 <ImageContent image="business-startup-guides" paddingTop="60">
                     <Heading size={3} style={{marginBottom: 0, maxWidth: "100%"}}>
@@ -120,6 +124,20 @@ const ButtonsBox = styled.div`
   }
 `;
 
-const SimpleContainer = styled.section``;
+const Oval = styled.div`
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 420px;
+    display: none;
+    
+    @media (min-width: 420px) {
+        display: block;
+    }
+`;
+
+const SimpleContainer = styled.section`
+    position: relative;
+`;
 
 export default UniqueBusiness;

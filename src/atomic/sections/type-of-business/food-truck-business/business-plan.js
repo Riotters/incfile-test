@@ -39,13 +39,23 @@ const Wrapper = styled.section`
 const Oval = styled.div`
   position: absolute;
   left: 0;
-  top: 20%;
+  top: 222px;
+  display: none;
+  
+  @media (min-width: 1200px){
+    display: block;
+  }
 `
 
 const OvalCenter = styled.div`
   position: absolute;
   right: 0;
-  top: 38%;
+  bottom: 450px;
+  display: none;
+  
+  @media (min-width: 1200px){
+    display: block;
+  }
 `
 
 const BusinessPlan = () => (

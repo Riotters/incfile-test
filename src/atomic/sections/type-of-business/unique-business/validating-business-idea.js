@@ -4,13 +4,12 @@ import {Paragraph} from "../../../atoms/typography/paragraph";
 import TextBlockWithImage from "../../../molecules/mixed-blocks/text-block-with-absolute-image";
 import OkIcon from "../../../../images/icons/ok.inline.svg";
 import IdetifyIcon from "../../../../images/icons/identify-your-unique-selling-point.inline.svg"
-import LookIcon from "../../../../images/icons/look-at-who-your-competitors-are-in-the-space.inline.svg"
 import MarketIcon from "../../../../images/icons/understand-your-market.inline.svg"
 import {color, gradient} from "../../../atoms/styles/colors";
 import React from "react";
 import styled from "styled-components";
 import OvalSVG from "../../../../images/ovals/bottom-left-transparent-orange.inline.svg";
-import Curve from "../../../atoms/shapes/curve";
+import MountainsIcon from "../../../../images/icons/and-dont-assume-just-because-you-have-a-great-idea.inline.svg";
 import InvolvedIcon from "../../../../images/icons/get-involved-with-business-communities.inline.svg";
 import Colorbox from "../../../../components/color-box";
 
@@ -68,6 +67,11 @@ const OvalCenter = styled.div`
   svg {
     transform: scaleX(-1);
   }
+  display: none;
+    
+    @media (min-width: 420px) {
+        display: block;
+    }
 `
 
 const OvalBottom = styled.div`
@@ -75,6 +79,11 @@ const OvalBottom = styled.div`
   left: 0;
   bottom: 80px;
   width: 570px;
+  display: none;
+    
+    @media (min-width: 420px) {
+        display: block;
+    }
 `
 
 const AbsoluteCurve = styled.div`
@@ -105,8 +114,8 @@ const ValidatingBusinessIdea = () => (
                         exactly what type of unique business you want to run by conducting your own research.
                     </Paragraph>
 
-                    <Colorbox theme="icon" curve curveColor={color.orange1} color={color.orange3}>
-                        <Paragraph style={{fontWeight: "bold", fontSize: "20px"}} >
+                    <Colorbox theme="icon" curve curveColor={color.orange1} color={color.orange3} Icon={MountainsIcon}>
+                        <Paragraph style={{fontWeight: "bold", fontSize: "20px", color: color.black}} >
                             And don’t assume that just because you have a great idea, it will be easy to turn that into revenue.
                         </Paragraph>
                         <Paragraph bottomMargin={0}>

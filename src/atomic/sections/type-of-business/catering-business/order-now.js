@@ -72,30 +72,32 @@ const Oval = styled.div`
     position: absolute;
     left: 0;
     top: 0;
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
 `;
 
 const OvalRight = styled.div`
     position: absolute;
     right: 0;
     bottom: -5px;
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
 `;
 
 const CurveWrapper = styled.div`
     position: absolute;
     left: -122px;
     top: -115px;
-`;
-
-const ListWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-`;
-
-const ListBox = styled.div`
-    width: 100%;
+    display: none;
     
-    @media (min-width: 576px) { 
-        width: 50%; 
+    @media (min-width: 1200px){
+        display: block;
     }
 `;
 

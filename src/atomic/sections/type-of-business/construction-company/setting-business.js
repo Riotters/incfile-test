@@ -4,7 +4,7 @@ import TextCenterLayout from "../../../../components/partials/blocks/heading-cen
 import TopImageBox from "../../../../components/top-image-box";
 import {color} from "../../../../components/styles/colors";
 import styled from "styled-components";
-import OvalSvg from "../../../../images/oval-blue-5.inline.svg";
+import OvalSvg from "../../../../images/ovals/bottom-left-transparent-blue1.inline.svg";
 
 const SettingBusiness = () => (
     <WrapperContainer>
@@ -12,6 +12,9 @@ const SettingBusiness = () => (
         <Oval>
             <OvalSvg/>
         </Oval>
+        <Oval2>
+            <OvalSvg/>
+        </Oval2>
 
         <Container>
             <TextCenterLayout
@@ -117,10 +120,28 @@ const Oval = styled.div`
     position: absolute;
     right: 0;
     top: 50%;
+    width: 420px;
     
     svg {
         transform: scaleX(-1);
     }
+     display: none;
+  
+  @media (min-width: 1200px){
+    display: block;
+  }
+`;
+
+const Oval2 = styled.div`
+    position: absolute;
+    left: 0;
+    top: 394px;
+    width: 570px;
+     display: none;
+  
+  @media (min-width: 1200px){
+    display: block;
+  }
 `;
 
 export default SettingBusiness;

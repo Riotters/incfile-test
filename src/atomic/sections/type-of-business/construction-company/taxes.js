@@ -2,22 +2,19 @@ import React from "react";
 import styled from "styled-components";
 import Container from "../../../container";
 import TextCenterLayout from "../../../../components/partials/blocks/heading-center";
-import {Paragraph} from "../../../atoms/typography/paragraph";
 import Adventages from "../../../../components/adventages";
 import {color} from "../../../../components/styles/colors";
 import {shadow} from "../../../../components/styles/shadows";
-import Curve from "../../../atoms/shapes/curve";
-import OvalSvg from "../../../../images/oval-babyblue-1.inline.svg";
-import OvalSvgBottom from "../../../../images/oval-babyblue-2.inline.svg";
+import OvalSvgBottom from "../../../../images/ovals/top-right-transparent-yellow.inline.svg";
 import CurveSvg from "../../../../images/curve-babyblue-1.inline.svg";
 import {adventages2} from "../../../../static/type-of-business/daycare-business";
 
 const Taxes = () => (
     <Wrapper>
 
-        <OvalBottom>
+        <Oval>
             <OvalSvgBottom/>
-        </OvalBottom>
+        </Oval>
 
         <Service>
             <Container>
@@ -74,23 +71,25 @@ const AdventagesBox = styled.div`
 const Oval = styled.div`
     position: absolute;
     right: 0;
-    top: 0;
-`;
-
-const OvalBottom = styled.div`
-    position: absolute;
-    left: 0;
-    bottom: 300px;
-    
-    @media (max-width: 970px) {
-        display: none;
-    }
+    top: 400px;
+    width: 720px;
+    display: none;
+  
+      @media (min-width: 1200px){
+        display: block;
+      }
 `;
 
 const CurveWrapper = styled.div`
     position: absolute;
     right: -115px;
     top: 24px;
+    
+    svg{
+        path{
+            fill: #d2e0fe;
+        }
+    }
     
     @media (max-width: 970px) {
         display: none;

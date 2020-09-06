@@ -21,7 +21,7 @@ import TextBlockWithImage from "../../atomic/molecules/mixed-blocks/text-block-w
 import {color} from "../../components/styles/colors";
 import CountingTextBoxed from "../../atomic/molecules/text-blocks/counting-text-boxed";
 import OvalBlueSvg from "../../images/ovals/top-left-transparent-blue3.inline.svg";
-import OvalGreenSvg from "../../images/ovals/top-left-transparent-green3.inline.svg";
+import OvalGreenSvg from "../../images/ovals/top-left-transparent-blue3.inline.svg";
 import ImageContent from "../../components/partials/blocks/left-image-right-content";
 import HandsIcon from "../../images/icons/hands.inline.svg";
 import IconCircle from "../../components/icons/circle";
@@ -42,14 +42,18 @@ import Regulations from "../../atomic/sections/type-of-business/side-business/re
 import Taxes from "../../atomic/sections/type-of-business/side-business/taxes";
 import Image from "../../atomic/atoms/image/image";
 import {gradient} from "../../atomic/atoms/styles/colors";
+import HandIcon from "../../images/icons/if-you-dont-know-how-to-start-a-side-business.inline.svg";
+import OvalSvg from "../../images/ovals/top-right-transparent-yellow.inline.svg";
+import OvalSvg2 from "../../images/ovals/top-left-transparent-orange2.inline.svg";
+import {shadow} from "../../atomic/atoms/styles/shadows";
 
 const SideBusiness = () => (
     <Layout>
         <SEO title="How to Start a Side Business"
              description="Starting a side business is a great way to dip your toe into the waters of entrepreneurship. You can create and manage a side business alongside your normal job, so you’re reducing your risk and have a fallback position if the side business doesn’t work out."/>
 
-        <Top ovalColor="blue" imageName="side-business-main" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
-            <h1>How to Start a Side Business</h1> 
+        <Top ovalColor="babyblue" imageName="side-business-main" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
+            <h1>How to Start a Side Business</h1>
             <p>
                 Starting a side business is a great way to dip your toe into
                 the waters of entrepreneurship. You can create and manage
@@ -69,139 +73,148 @@ const SideBusiness = () => (
             </RatingRow>
         </Top>
 
-        <TabsSection>
-            <TabHeading>
-                <TabTitle title="Side Business" SvgIcon={Tab1Icon}/>
-                <TabTitle title="Why This Industry?" SvgIcon={Tab2Icon}/>
-            </TabHeading>
+        <TabsWrapper>
+            <TabOval>
+                <OvalSvg />
+            </TabOval>
+            <TabsSection>
+                <TabHeading>
+                    <TabTitle title="Side Business" SvgIcon={Tab1Icon}/>
+                    <TabTitle title="Why This Industry?" SvgIcon={Tab2Icon}/>
+                </TabHeading>
 
-            <CollapseWrapper>
-                <PanelWrapper>
-                    <Paragraph big>
-                        Of course, if the side business does work out and starts to grow, you can make an informed
-                        decision as to whether you want to focus on it full-time.
-                    </Paragraph>
-                    <Paragraph big>
-                        Until then, you’ll be able to work on your side business part-time at your own pace. You’ll
-                        still learn a great deal about starting and running
-                        a business, which will be incredibly valuable when you take your side business to the next level
-                        (or start up another new business).
-                    </Paragraph>
-
-                    <Colorbox curveColor={color.blue1} color={color.babyblue3} curve theme="icon">
-                        <Paragraph big style={{fontWeight: "bold"}}>
-                            If you don’t know how to start a side business, we’re here to help.
+                <CollapseWrapper>
+                    <PanelWrapper>
+                        <Paragraph big>
+                            Of course, if the side business does work out and starts to grow, you can make an informed
+                            decision as to whether you want to focus on it full-time.
                         </Paragraph>
-                        <Paragraph bottomMargin={0}>
-                            We’ve supported over 250,000 people to form their business and provided answers to transform
-                            them into entrepreneurs. We’ll guide you through what you need to know to create your side
-                            business and get it off the ground.
+                        <Paragraph big>
+                            Until then, you’ll be able to work on your side business part-time at your own pace. You’ll
+                            still learn a great deal about starting and running
+                            a business, which will be incredibly valuable when you take your side business to the next
+                            level
+                            (or start up another new business).
                         </Paragraph>
-                    </Colorbox>
 
-                    <Paragraph big style={{marginTop: "48px"}}>
-                        From validating your business and doing the research to filing your paperwork and running your
-                        business, this guide will help you out.
-                    </Paragraph>
+                        <Colorbox curveColor={color.blue1} color={color.babyblue3} curve theme="icon" Icon={HandIcon}>
+                            <Paragraph big style={{fontWeight: "bold"}}>
+                                If you don’t know how to start a side business, we’re here to help.
+                            </Paragraph>
+                            <Paragraph bottomMargin={0}>
+                                We’ve supported over 250,000 people to form their business and provided answers to
+                                transform
+                                them into entrepreneurs. We’ll guide you through what you need to know to create your
+                                side
+                                business and get it off the ground.
+                            </Paragraph>
+                        </Colorbox>
 
-                    <Paragraph big>
-                        Read on for some insight into creating your own side business and becoming an entrepreneur.
-                    </Paragraph>
+                        <Paragraph big style={{marginTop: "48px"}}>
+                            From validating your business and doing the research to filing your paperwork and running
+                            your
+                            business, this guide will help you out.
+                        </Paragraph>
 
-                </PanelWrapper>
+                        <Paragraph big>
+                            Read on for some insight into creating your own side business and becoming an entrepreneur.
+                        </Paragraph>
 
-                <PanelWrapper>
-                    <Heading size={3}>
-                        Helpful software for handyman business owners
-                    </Heading>
+                    </PanelWrapper>
 
-                    <Paragraph big>
-                        How successful can you be as a handyman? Let’s dig into the facts and figures.
-                    </Paragraph>
+                    <PanelWrapper>
+                        <Heading size={3}>
+                            Helpful software for handyman business owners
+                        </Heading>
 
-                    <BubblesWrapper>
-                        <Bubbles>
-                            <BubbleImage>
-                                <Image filename="mrs-bulb-final-comp-thumb-up-color"/>
-                            </BubbleImage>
-                            <BubbleImage>
-                                <Image filename="mrs-bulb-final-comp-thumb-up-color"/>
-                            </BubbleImage>
-                            <BubbleImage>
-                                <Image filename="mrs-bulb-final-comp-thumb-up-color"/>
-                            </BubbleImage>
-                            <BubbleImage>
-                                <Image filename="mrs-bulb-final-comp-thumb-up-color"/>
-                            </BubbleImage>
-                            <BubbleImage>
-                                <Image filename="mrs-bulb-final-comp-thumb-up-color"/>
-                            </BubbleImage>
-                            <BubbleImage>
-                                <Image filename="mrs-bulb-final-comp-thumb-up-color"/>
-                            </BubbleImage>
-                            <BubbleImage>
-                                <Image filename="mrs-bulb-final-comp-thumb-up-copy-4"/>
-                            </BubbleImage>
-                            <BubbleImage>
-                                <Image filename="mrs-bulb-final-comp-thumb-up-copy-4"/>
-                            </BubbleImage>
-                            <BubbleImage>
-                                <Image filename="mrs-bulb-final-comp-thumb-up-copy-4"/>
-                            </BubbleImage>
-                            <BubbleImage>
-                                <Image filename="mrs-bulb-final-comp-thumb-up-copy-4"/>
-                            </BubbleImage>
-                        </Bubbles>
-                        <Text>
-                            Around 6 in 10 people who run a side business have
-                            a full-time job already
-                        </Text>
-                    </BubblesWrapper>
+                        <Paragraph big>
+                            How successful can you be as a handyman? Let’s dig into the facts and figures.
+                        </Paragraph>
 
-                    <div style={{marginBottom: "30px", marginTop: "48px"}}>
-                        <Adventages
-                            headline="Around a quarter of Americans have some sort of side business (almost 60 million people)"
-                            width="100%"
-                        />
-                    </div>
+                        <BubblesWrapper>
+                            <Bubbles>
+                                <BubbleImage>
+                                    <Image filename="mrs-bulb-final-comp-thumb-up-color"/>
+                                </BubbleImage>
+                                <BubbleImage>
+                                    <Image filename="mrs-bulb-final-comp-thumb-up-color"/>
+                                </BubbleImage>
+                                <BubbleImage>
+                                    <Image filename="mrs-bulb-final-comp-thumb-up-color"/>
+                                </BubbleImage>
+                                <BubbleImage>
+                                    <Image filename="mrs-bulb-final-comp-thumb-up-color"/>
+                                </BubbleImage>
+                                <BubbleImage>
+                                    <Image filename="mrs-bulb-final-comp-thumb-up-color"/>
+                                </BubbleImage>
+                                <BubbleImage>
+                                    <Image filename="mrs-bulb-final-comp-thumb-up-color"/>
+                                </BubbleImage>
+                                <BubbleImage>
+                                    <Image filename="mrs-bulb-final-comp-thumb-up-copy-4"/>
+                                </BubbleImage>
+                                <BubbleImage>
+                                    <Image filename="mrs-bulb-final-comp-thumb-up-copy-4"/>
+                                </BubbleImage>
+                                <BubbleImage>
+                                    <Image filename="mrs-bulb-final-comp-thumb-up-copy-4"/>
+                                </BubbleImage>
+                                <BubbleImage>
+                                    <Image filename="mrs-bulb-final-comp-thumb-up-copy-4"/>
+                                </BubbleImage>
+                            </Bubbles>
+                            <Text>
+                                Around 6 in 10 people who run a side business have
+                                a full-time job already
+                            </Text>
+                        </BubblesWrapper>
 
-                    <div style={{marginBottom: "30px"}}>
-                        <Adventages
-                            headline="The main reason for starting a side business is to boost finances, with two-thirds of side business owners saying that was their main motivation"
-                            width="100%"
-                        />
-                    </div>
+                        <div style={{marginBottom: "30px", marginTop: "48px"}}>
+                            <Adventages
+                                headline="Around a quarter of Americans have some sort of side business (almost 60 million people)"
+                                width="100%"
+                            />
+                        </div>
 
-                    <div style={{marginBottom: "30px"}}>
-                        <Adventages
-                            headline="Just over half of side business owners said they could see their side business become a full-time career"
-                            width="100%"
-                        />
-                    </div>
+                        <div style={{marginBottom: "30px"}}>
+                            <Adventages
+                                headline="The main reason for starting a side business is to boost finances, with two-thirds of side business owners saying that was their main motivation"
+                                width="100%"
+                            />
+                        </div>
 
-                    <div style={{marginBottom: "30px"}}>
-                        <Adventages
-                            headline="Around six in 10 people who run a side business have a full-time job already Half of side business owners devote 10 or more hours a week to their side business"
-                            width="100%"
-                        />
-                    </div>
+                        <div style={{marginBottom: "30px"}}>
+                            <Adventages
+                                headline="Just over half of side business owners said they could see their side business become a full-time career"
+                                width="100%"
+                            />
+                        </div>
 
-                    <div style={{marginBottom: "30px"}}>
-                        <Adventages
-                            headline="A quarter of side business entrepreneurs are using the business to make a lifestyle change or pursue their passion"
-                            width="100%"
-                        />
-                    </div>
+                        <div style={{marginBottom: "30px"}}>
+                            <Adventages
+                                headline="Around six in 10 people who run a side business have a full-time job already Half of side business owners devote 10 or more hours a week to their side business"
+                                width="100%"
+                            />
+                        </div>
 
-                    <Paragraph big>
-                        If you want to find out whether a side business is right for you, the time
-                        to start is now. We're here to help you figure out how to do that.
-                    </Paragraph>
+                        <div style={{marginBottom: "30px"}}>
+                            <Adventages
+                                headline="A quarter of side business entrepreneurs are using the business to make a lifestyle change or pursue their passion"
+                                width="100%"
+                            />
+                        </div>
 
-                </PanelWrapper>
+                        <Paragraph big>
+                            If you want to find out whether a side business is right for you, the time
+                            to start is now. We're here to help you figure out how to do that.
+                        </Paragraph>
 
-            </CollapseWrapper>
-        </TabsSection>
+                    </PanelWrapper>
+
+                </CollapseWrapper>
+            </TabsSection>
+        </TabsWrapper>
 
         <TypeOfBusiness/>
 
@@ -211,9 +224,6 @@ const SideBusiness = () => (
             <OvalGreen>
                 <OvalGreenSvg/>
             </OvalGreen>
-            <OvalGreen2>
-                <OvalGreenSvg/>
-            </OvalGreen2>
             <Container>
                 <CenterBox>
                     <Heading>
@@ -294,7 +304,7 @@ const SideBusiness = () => (
         <OrangeContainer>
 
             <Oval>
-                <OvalBlueSvg/>
+                <OvalSvg2/>
             </Oval>
 
             <Container>
@@ -313,7 +323,7 @@ const SideBusiness = () => (
                             SvgImage={HandsIcon}
                             textBackgroundColor="transparent"
                             imageBackgroundColor={color.white}
-                            imageShadowColor="#ababab"
+                            imageShadowColor={shadow.white2}
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
@@ -342,7 +352,7 @@ const SideBusiness = () => (
                             SvgImage={LimitedIcon}
                             textBackgroundColor="transparent"
                             imageBackgroundColor={color.white}
-                            imageShadowColor="#ababab"
+                            imageShadowColor={shadow.white2}
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
@@ -371,7 +381,7 @@ const SideBusiness = () => (
                             SvgImage={SeriesIcon}
                             textBackgroundColor="transparent"
                             imageBackgroundColor={color.white}
-                            imageShadowColor="#ababab"
+                            imageShadowColor={shadow.white2}
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
@@ -400,7 +410,7 @@ const SideBusiness = () => (
                             SvgImage={PlaneIcon}
                             textBackgroundColor="transparent"
                             imageBackgroundColor={color.white}
-                            imageShadowColor="#ababab"
+                            imageShadowColor={shadow.white2}
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
@@ -428,7 +438,7 @@ const SideBusiness = () => (
                             SvgImage={RockerIcon}
                             textBackgroundColor="transparent"
                             imageBackgroundColor={color.white}
-                            imageShadowColor="#ababab"
+                            imageShadowColor={shadow.white2}
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
@@ -538,7 +548,6 @@ const CenterBox = styled.div`
 const SimpleSection = styled.div`
     padding-top: 100px;
     position: relative;
-     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 30%, #f2f8f3);
 `;
 
 const BusinessOwnerResponsibilities = styled.section`
@@ -563,6 +572,28 @@ const Oval = styled.div`
   left: 0;
   top: 200px;
   width: 570px; 
+  display: block;
+  
+  @media (min-width: 1200px){
+    display: block;
+  }
+`
+
+const TabOval = styled.div`
+  position: absolute; 
+  left: 0;
+  top: 0;
+  width: 420px; 
+  transform: scaleX(-1);
+  
+  svg{
+    transform: scaleY(-1);
+  }
+  display: block;
+  
+  @media (min-width: 1200px){
+    display: block;
+  }
 `
 
 const OvalGreen = styled.div`
@@ -570,6 +601,11 @@ const OvalGreen = styled.div`
   left: 0;
   top: 60px;
   width: 420px;
+  display: block;
+  
+  @media (min-width: 1200px){
+    display: block;
+  }
 `
 
 const OvalGreen2 = styled.div`
@@ -620,5 +656,9 @@ const BubbleImage = styled.div`
         height: 110px;
     }
 `
+
+const TabsWrapper = styled.div`
+    position: relative;
+`;
 
 export default SideBusiness;

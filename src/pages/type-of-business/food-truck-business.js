@@ -38,6 +38,7 @@ import CircleWithText from "../../atomic/molecules/blocks/circle-with-text-block
 import Adventages from "../../components/adventages";
 import TextBoxed from "../../atomic/molecules/text-blocks/text-boxed";
 import CkeckText from "../../components/static-check/text-only";
+import OvalSvg from "../../images/ovals/bottom-left-transparent-blue3.inline.svg";
 
 const FoodTruckBusiness = () => (
     <Layout>
@@ -62,7 +63,11 @@ const FoodTruckBusiness = () => (
             </RatingRow>
         </Top>
 
-        <TabsSection>
+        <TabsWrapper>
+            <Oval>
+                <OvalSvg />
+            </Oval>
+            <TabsSection>
             <TabHeading>
                 <TabTitle title="Food Truck" SvgIcon={FoodTruckIcon}/>
                 <TabTitle title="Why This Industry" SvgIcon={Tab2Icon}/>
@@ -77,8 +82,8 @@ const FoodTruckBusiness = () => (
                         making a profit, you’ll need to get up to speed quickly.
                     </Paragraph>
 
-                    <Colorbox className="box" theme="icon" Icon={MegafornIcon} color={color.blue3} curve
-                              curveColor={color.orange2}>
+                    <Colorbox className="box" theme="icon" Icon={MegafornIcon} color={color.green3} curve
+                              curveColor={color.green1}>
                         <Heading size={4}>
                             We know it can be daunting to start a food truck business, and we’re here to help.
                         </Heading>
@@ -426,6 +431,7 @@ const FoodTruckBusiness = () => (
                 </PanelWrapper>
             </CollapseWrapper>
         </TabsSection>
+        </TabsWrapper>
 
         <TypeBusiness/>
 
@@ -482,5 +488,23 @@ const ListBox = styled.div`
         width: 50%; 
     }
 `;
+
+const TabsWrapper = styled.section`
+    position: relative;
+`;
+
+
+const Oval = styled.div`
+    width: 570px;
+    left: 0;
+    top: 0px;
+    position absolute;
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
+`;
+
 
 export default FoodTruckBusiness;

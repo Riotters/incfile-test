@@ -21,7 +21,7 @@ const Rocket = () => (
         </Moon>
         <Container>
             <RocketWrapper>
-                <Image filename="rocket" alt="rocket lunch"/>
+                <Image filename="rocket-2x" alt="rocket lunch"/>
             </RocketWrapper>
             <Content>
                 <Heading size={4} style={{fontFamily: "MarkPro-Bold, sans-serif", fontSize: "40px"}}>

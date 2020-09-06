@@ -5,8 +5,7 @@ import {color} from "../../../../components/styles/colors";
 import CountingTextBoxed from "../../../molecules/text-blocks/counting-text-boxed";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import Container from "../../../container";
-import OvalSmallSVG from "../../../../images/oval-small-babyblue.inline.svg";
-import OvalSVG from "../../../../images/oval-babyblue-1.inline.svg";
+import OvalSVG from "../../../../images/ovals/top-left-transparent-orange2.inline.svg";
 import TextCenterLayout from "../../../partials/heading-left";
 
 const BusinessOwnerResponsibilities = styled.section`
@@ -39,18 +38,31 @@ const Wrapper = styled.section`
 const Oval = styled.div`
   position: absolute;
   left: 0;
-  top: 20%;
+  top: 300px;
+  width: 420px;
+  display: none;
+  
+  @media (min-width: 1200px){
+    display: block;
+  }
 `
 
 const OvalCenter = styled.div`
   position: absolute;
   right: 0;
-  top: 38%;
+  bottom: 206px;
+  width: 720px;
+  transform: scaleX(-1);
+  display: none;
+  
+  @media (min-width: 1200px){
+    display: block;
+  }
 `
 const BusinessPlan = () => (
     <Wrapper>
         <Oval>
-            <OvalSmallSVG/>
+            <OvalSVG/>
         </Oval>
         <OvalCenter>
             <OvalSVG/>
@@ -60,14 +72,14 @@ const BusinessPlan = () => (
                 <TextCenterLayout headline="A Business Model for a Bootstrapped Business"
                                   text="All businesses need a business model, which represents the way you will generate sales, provide services and make money. Think about your business model now, because it’s better to have that in place so you can start acquiring customers and generating revenue from day one. This is particularly important when you’re bootstrapping; creating revenue almost immediately is critical."/>
 
-                <Paragraph big style={{fontWeight: "bold"}}>
+                <Paragraph big style={{fontWeight: "bold", marginTop: "48px", marginBottom: "24px", color: color.black}}>
                     You will also need to look at financial projections for your business.
                 </Paragraph>
-                <Paragraph big>
+                <Paragraph big style={{marginBottom: "48px"}}>
                     What are your expected sales and revenues? What is your profitability? How much money will you keep in the business to grow it? How much will you pay yourself and others? If you can, try to plan your revenue out for the next month, three months, year and two years. Work hard to minimize expenses and maximize profits.
                 </Paragraph>
 
-                <Paragraph big style={{fontWeight: "bold"}}>
+                <Paragraph big style={{fontWeight: "bold", marginBottom: "24px", color: color.black}}>
                     Write a Business Plan for Your Business
                 </Paragraph>
                 <Paragraph big>

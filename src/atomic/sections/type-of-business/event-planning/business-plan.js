@@ -5,10 +5,9 @@ import {color} from "../../../../components/styles/colors";
 import CountingTextBoxed from "../../../molecules/text-blocks/counting-text-boxed";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import Container from "../../../container";
-import OvalSmallSVG from "../../../../images/oval-small-babyblue.inline.svg";
-import OvalSVG from "../../../../images/oval-babyblue-1.inline.svg";
+import OvalSmallSVG from "../../../../images/ovals/top-left-transparent-red3.inline.svg";
+import OvalSVG from "../../../../images/ovals/top-left-transparent-pink.inline.svg";
 import TextCenterLayout from "../../../partials/heading-left";
-import {gradient} from "../../../atoms/styles/colors";
 import BoxIcon from "../../../../images/icons/why-you-need-a-business-plan.inline.svg";
 import {Heading} from "../../../atoms/typography/heading";
 import Colorbox from "../../../../components/color-box";
@@ -42,13 +41,26 @@ const Wrapper = styled.section`
 const Oval = styled.div`
   position: absolute;
   left: 0;
-  top: 20%;
+  top: 0;
+  width: 420px;
+  display: none;
+    
+    @media (min-width: 720px){
+        display: block; 
+    }
 `
 
 const OvalCenter = styled.div`
   position: absolute;
   right: 0;
-  top: 38%;
+  bottom: 389px;
+  width: 720px;
+  transform: scaleX(-1);
+  display: none;
+    
+    @media (min-width: 720px){
+        display: block; 
+    }
 `
 
 const BusinessPlan = () => (

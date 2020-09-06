@@ -35,6 +35,7 @@ import InsuranceBusiness from "../../atomic/sections/type-of-business/event-plan
 import Taxes from "../../atomic/sections/type-of-business/event-planning/taxes";
 import ToolsAndLinks from "../../atomic/sections/type-of-business/event-planning/tools";
 import Conclusion from "../../atomic/sections/general/conclusion";
+import OvalSvg from "../../images/ovals/bottom-left-transparent-pink.inline.svg";
 
 const EventPlanning = () => (
     <Layout>
@@ -62,7 +63,11 @@ const EventPlanning = () => (
             </RatingRow>
         </Top>
 
-        <TabsSection>
+        <TabsWrapper>
+            <TabsOval>
+                <OvalSvg />
+            </TabsOval>
+            <TabsSection>
             <TabHeading>
                 <TabTitle title="Event Planning" SvgIcon={Tab1Icon}/>
                 <TabTitle title="Why This Industry" SvgIcon={Tab2Icon}/>
@@ -398,6 +403,7 @@ const EventPlanning = () => (
                 </PanelWrapper>
             </CollapseWrapper>
         </TabsSection>
+        </TabsWrapper>
 
         <TypeBusiness/>
 
@@ -453,6 +459,23 @@ const ListBox = styled.div`
     @media (min-width: 576px) { 
         width: 50%; 
     }
+`;
+
+const TabsWrapper = styled.div`
+    position: relative;
+`;
+
+const TabsOval = styled.div`
+position: absolute;
+    width: 420px;
+    top: 0;
+    left: 0;
+    display: none;
+    
+    @media (min-width: 720px){
+        display: block; 
+    }
+   
 `;
 
 export default EventPlanning;

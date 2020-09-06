@@ -38,7 +38,12 @@ const Wrapper = styled.div`
 
 const Oval = styled.div`
     position: absolute; 
-    bottom: 0;
+    top: 168px;
     left: 0;
+    display: none;
+  
+  @media (min-width: 1200px){
+    display: block;
+  }
 `;
 export default Regulations;

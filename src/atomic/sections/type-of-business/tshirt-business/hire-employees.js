@@ -6,9 +6,13 @@ import ContentCenter from "../../../../atomic/partials/content-center";
 import TextCenterLayout from "../../../../atomic/partials/heading-left";
 import styled from "styled-components";
 import EtsyLinks from "../../../../atomic/sections/type-of-business/tshirt-business/links";
+import OvalSvg from "../../../../images/ovals/top-right-transparent-blue.inline.svg";
 
 const HireEmployees = () => (
     <BlueContainer>
+        <Oval>
+            <OvalSvg />
+        </Oval>
         <Container>
             <ContentCenter>
                 <TextCenterLayout headline="Hire Employees for Your Etsy Business"
@@ -26,6 +30,18 @@ const HireEmployees = () => (
 const BlueContainer = styled.div`
     padding-top: 100px;
     background-image: linear-gradient(to bottom, #f2f6ff, #ffffff);
+    position: relative;
 `;
 
+const Oval = styled.div`
+    width: 570px;
+    right: 0;
+    top: 0px;
+    position absolute;
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
+`;
 export default HireEmployees;

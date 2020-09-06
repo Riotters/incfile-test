@@ -193,13 +193,12 @@ const Oval = styled.div`
     svg {
         transform: scaleX(-1);
     }
-`;
-
-const OvalBottomWrapper = styled.div`
-    position: absolute;
-    left: 0;
-    bottom: 15%; 
-    width: 420px;
+    
+    display: none;
+    
+    @media (min-width: 420px) {
+        display: block;
+    }
 `;
 
 export default TypeBusiness;
