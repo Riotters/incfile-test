@@ -47,6 +47,14 @@ import BlueBoxWithAbsoluteText from "../../atomic/molecules/text-blocks/blue-box
 import ColorFulCircleWithTextAndList from "../../atomic/molecules/blocks/colorful-circle-with-text-and-list";
 import ColorfulRing2 from "../../images/rings.inline.svg";
 import styled from "styled-components";
+import OvalSvg from "../../images/ovals/top-right-transparent-yellow.inline.svg";
+import OvalSvg2 from "../../images/ovals/bottom-right-transparent-pink2.inline.svg";
+import OvalSvg3 from "../../images/ovals/top-right-transparent-blue.inline.svg";
+import OvalSvg4 from "../../images/ovals/bottom-right-transparent-green3.inline.svg";
+import OvalSvg5 from "../../images/ovals/top-right-transparent-pink2.inline.svg";
+import OvalSvg6 from "../../images/ovals/top-left-transparent-orange2.inline.svg";
+import OvalSvg7 from "../../images/ovals/top-right-transparent-green3.inline.svg";
+import {shadow} from "../../atomic/atoms/styles/shadows";
 
 const LandscapingBusiness = () => (
     <Layout>
@@ -72,7 +80,14 @@ const LandscapingBusiness = () => (
             </RatingRow>
         </Top>
 
-        <TabsSection>
+        <TabsWrapper>
+            <TabsOval>
+                <OvalSvg />
+            </TabsOval>
+            <TabsOval2>
+                <OvalSvg2 />
+            </TabsOval2>
+            <TabsSection>
             <TabHeading>
                 <TabTitle title="Laundromat Business" SvgIcon={Tab1Icon}/>
                 <TabTitle title="Why This Industry" SvgIcon={Tab2Icon}/>
@@ -405,8 +420,12 @@ const LandscapingBusiness = () => (
 
             </CollapseWrapper>
         </TabsSection>
+        </TabsWrapper>
 
         <BlueContainer>
+            <Oval3>
+                <OvalSvg3 />
+            </Oval3>
             <Container>
                 <CenterBox>
                     <TextCenterLayout headline="Plan Your Laundromat Business"/>
@@ -421,8 +440,8 @@ const LandscapingBusiness = () => (
                     </Paragraph>
                 </CenterBox>
 
-                <CenterBox style={{marginTop: "80px"}}>
-                    <Paragraph big style={{fontWeight: "bold"}}>
+                <CenterBox>
+                    <Paragraph big style={{fontWeight: "bold", color: color.black}}>
                         Do Market Research and Validate Your Laundromat Products and Services
                     </Paragraph>
                     <Paragraph big>
@@ -515,6 +534,14 @@ const LandscapingBusiness = () => (
         </BlueContainer>
 
         <SimpleSection>
+
+            <Oval>
+                <OvalSvg4 />
+            </Oval>
+            <Oval4>
+                <OvalSvg5 />
+            </Oval4>
+
             <Container>
                 <CenterBox>
                     <Heading>
@@ -589,10 +616,9 @@ const LandscapingBusiness = () => (
 
         <OrangeContainer>
 
-            <Oval>
-                <OvalOrange2Svg/>
-            </Oval>
-
+            <Oval6>
+                <OvalSvg6 />
+            </Oval6>
             <Container>
                 <BusinessOwnerResponsibilities>
                     <ImageContent image="unique-business-2" paddingTop="60">
@@ -609,7 +635,7 @@ const LandscapingBusiness = () => (
                             SvgImage={HandsIcon}
                             textBackgroundColor="transparent"
                             imageBackgroundColor={color.white}
-                            imageShadowColor="#ababab"
+                            imageShadowColor={shadow.white2}
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
@@ -638,7 +664,7 @@ const LandscapingBusiness = () => (
                             SvgImage={LimitedIcon}
                             textBackgroundColor="transparent"
                             imageBackgroundColor={color.white}
-                            imageShadowColor="#ababab"
+                            imageShadowColor={shadow.white2}
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
@@ -667,7 +693,7 @@ const LandscapingBusiness = () => (
                             SvgImage={SeriesIcon}
                             textBackgroundColor="transparent"
                             imageBackgroundColor={color.white}
-                            imageShadowColor="#ababab"
+                            imageShadowColor={shadow.white2}
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
@@ -696,7 +722,7 @@ const LandscapingBusiness = () => (
                             SvgImage={PlaneIcon}
                             textBackgroundColor="transparent"
                             imageBackgroundColor={color.white}
-                            imageShadowColor="#ababab"
+                            imageShadowColor={shadow.white2}
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
@@ -724,7 +750,7 @@ const LandscapingBusiness = () => (
                             SvgImage={RockerIcon}
                             textBackgroundColor="transparent"
                             imageBackgroundColor={color.white}
-                            imageShadowColor="#ababab"
+                            imageShadowColor={shadow.white2}
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
@@ -773,8 +799,13 @@ const LandscapingBusiness = () => (
 
         <HireEmployees/>
 
-        <UsefulTools style={{paddingBottom: "200px"}} toolsList={toolsList.tools} headlineText={toolsList.headlineText}
+        <ToolsWrapper>
+            <Oval7>
+                <OvalSvg7 />
+            </Oval7>
+            <UsefulTools style={{paddingBottom: "200px"}} toolsList={toolsList.tools} headlineText={toolsList.headlineText}
                      description={toolsList.description}/>
+        </ToolsWrapper>
 
         <Conclusion to="/" buttonTitle="Start your Laundromat Business with us, today">
             <Heading size={3} style={{fontSize: "40px"}}>Conclusion</Heading>
@@ -808,63 +839,153 @@ width: 50%;
 `;
 
 const BlueContainer = styled.section`
-background: ${color.blue3};
-padding-top: 100px;
-position: relative;
+    background: ${color.blue3};
+    padding-top: 100px;
+    position: relative;
 `;
 
 const CenterBox = styled.div`
-width: 100%;
-padding-bottom: 64px;
-
-@media (min-width: 670px) {
-width: 670px;
-margin: 0 auto;
-}
+    width: 100%;
+    padding-bottom: 80px;
+    
+    @media (min-width: 670px) {
+        width: 670px;
+        margin: 0 auto;
+    }
 `;
 
 const GridSectionList = styled.div`
-display: flex;
-justify-content: space-around;
-flex-wrap: wrap;
-width: 100%;
-margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 100px;
+    
+    > div {
+        margin-bottom: 70px;
+    }
 
-> div {
-margin-bottom: 70px;
-}
-
-@media (min-width: 970px) {
-width: 970px;
-margin: 100px auto 0;
-}
+    @media (min-width: 970px) {
+        width: 970px;
+        margin: 100px auto 0;
+    }
 `;
 
 const SimpleSection = styled.div`
-padding-top: 100px;
+    padding-top: 100px;
+    position: relative;
 `;
 
 const BusinessOwnerResponsibilities = styled.section`
-position: relative;
-padding-top: 75px;
-padding-bottom: 64px;
-
-.colorbox {
-margin-bottom: 48px;
-}
+    position: relative;
+    padding-top: 75px;
+    padding-bottom: 64px;
+    
+    .colorbox {
+        margin-bottom: 48px;
+    }
 `;
 
 const OrangeContainer = styled.div`
-background: rgb(255,255,255);
-background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(254,246,237,1) 100%);
-padding-bottom: 100px;
-position: relative;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(254,246,237,1) 100%);
+    padding-bottom: 100px;
+    position: relative;
 `;
 
 const Oval = styled.div`
-position: absolute;
-left: 0;
-top: 200px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 420px;
+    transform: rotate(180deg);
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
 `
+
+const TabsWrapper = styled.div`
+    position: relative;
+`;
+
+const TabsOval = styled.div`
+    position: absolute;
+    width: 420px;
+    top: 0px;
+    left: 0;
+    transform: rotate(180deg);
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
+`;
+
+const TabsOval2 = styled.div`
+    position: absolute;
+    width: 420px;
+    top: 436px;
+    right: 0;
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
+`;
+
+const Oval3 = styled.div`
+    position: absolute;
+    width: 570px;
+    top: 0;
+    right: 0;
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
+`;
+
+const Oval4 = styled.div`
+    position: absolute;
+    width: 720px;
+    bottom: 100px;
+    right: 0;
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
+`;
+
+const Oval6 = styled.div`
+    position: absolute;
+    width: 570px;
+    top: 211px;
+    left: 0;
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
+`;
+
+const ToolsWrapper = styled.div`
+    position: relative;
+`;
+
+const Oval7 = styled.div`
+    position: absolute;
+    width: 720px;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
+`;
 
 export default LandscapingBusiness;

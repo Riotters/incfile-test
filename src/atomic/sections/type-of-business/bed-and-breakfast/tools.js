@@ -38,7 +38,7 @@ const ToolsAndLinks = () => (
 );
 
 const Wrapper = styled.div`
-    padding-top: 0px;
+    padding-top: 100px;
     background-image: ${gradient.orange3};
     margin-bottom: 200px;
 `;

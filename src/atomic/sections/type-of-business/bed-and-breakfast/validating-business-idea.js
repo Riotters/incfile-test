@@ -9,7 +9,7 @@ import MarketIcon from "../../../../images/icons/understand-your-market.inline.s
 import {color} from "../../../../components/styles/colors";
 import React from "react";
 import styled from "styled-components";
-import OvalBlueSVG from "../../../../images/oval-blue-4.inline.svg";
+import OvalBlueSVG from "../../../../images/ovals/top-right-transparent-green3.inline.svg";
 import Curve from "../../../atoms/shapes/curve";
 
 const BlueContainerWrapper = styled.div`
@@ -85,8 +85,15 @@ const TextBorderedList = styled.div`
 
 const OvalCenter = styled.div`
   position: absolute;
-  right: 0;
+  left: 0;
   top: 0;
+  width: 420px;
+  transform: scaleX(-1);
+  display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
 `
 
 const AbsoluteCurve = styled.div`
@@ -94,6 +101,11 @@ const AbsoluteCurve = styled.div`
     left: -27px;
     top: -16px;
     transform: rotate(-90deg);
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
 `;
 
 const ValidatingBusinessIdea = () => (
