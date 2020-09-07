@@ -12,8 +12,7 @@ import styled from "styled-components";
 import OvalBlueSVG from "../../../../images/oval-blue-4.inline.svg";
 import Curve from "../../../atoms/shapes/curve";
 import {gradient} from "../../../atoms/styles/colors";
-import ContentCenter from "../../../partials/content-center";
-import TextCenterLayout from "../../../partials/heading-left";
+import OvalSvg from "../../../../images/ovals/top-right-transparent-orange.inline.svg"
 
 const BlueContainerWrapper = styled.div`
     background: rgb(255,255,255);
@@ -91,6 +90,12 @@ const OvalCenter = styled.div`
   position: absolute;
   right: 0;
   top: 0;
+  width: 720px;
+  display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
 `
 
 const AbsoluteCurve = styled.div`
@@ -103,7 +108,7 @@ const AbsoluteCurve = styled.div`
 const ValidatingBusinessIdea = () => (
     <BlueContainerWrapper>
         <OvalCenter>
-            <OvalBlueSVG/>
+            <OvalSvg/>
         </OvalCenter>
 
         <Container>

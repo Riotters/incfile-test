@@ -7,8 +7,7 @@ import Adventages from "../../../../components/adventages";
 import {color} from "../../../../components/styles/colors";
 import {shadow} from "../../../../components/styles/shadows";
 import {typeBusiness} from "../../../../static/type-of-business/teen-business";
-import Curve from "../../../atoms/shapes/curve";
-import OvalSvg from "../../../../images/oval-orange-4.inline.svg";
+import OvalSvg from "../../../../images/ovals/top-right-transparent-blue.inline.svg";
 import AdventagesWithLongText from "../../../molecules/mixed-blocks/adventages-with-long-text";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 
@@ -17,15 +16,16 @@ const TypeBusiness = () => (
         <Oval>
             <OvalSvg/>
         </Oval>
+
+        <Oval2>
+            <OvalSvg/>
+        </Oval2>
         <Container>
             <Service>
                 <TextCenterLayout headline="Business Ideas for Teens, Kids and Students"
                                   text="There are several different types of teen businesses that you can start. Here are some of the more popular options:"/>
 
                 <AdventagesBox>
-                    <CurveWrapper>
-                        <Curve color={color.orange1}/>
-                    </CurveWrapper>
                     {typeBusiness.items.map(item => (
                         <Adventages
                             style={{textAlign: "center"}}
@@ -42,12 +42,12 @@ const TypeBusiness = () => (
                     ))}
                     <AdventagesWithLongText
                         style={{textAlign: "left"}}
-                        circleText={7}
+                        circleText={8}
                         title="Other teen business ideas include:"
                         circlePosition="center"
                         circleBackgroundColor={color.blue1}
                         circleBackgroundShadow={shadow.blue1}
-                        imageName="online-shop-icon"
+                        imageName="no-money-icon"
                     >
                         <Paragraph mixed={true}>
                             This is perhaps the biggest sector of all, and you have plenty of choices when it comes to
@@ -78,7 +78,7 @@ const TypeBusiness = () => (
     </Wrapper>
 );
 
-const Wrapper = styled.div`
+const Wrapper = styled.div` 
     background: rgba(255,255,255,1);
     background-image: ${gradient.blue3}; 
     padding-top: 100px;
@@ -99,16 +99,29 @@ const AdventagesBox = styled.div`
  
 `;
 
-const CurveWrapper = styled.div`
-    position: absolute;
-    right: -24px;
-    top: 0px;
+const Oval = styled.div`
+      position: absolute; 
+      right: 0;
+      top: 539px;
+      width: 570px;
+      display: block;
+      
+      @media (min-width: 1200px){
+        display: block;
+      }
 `;
 
-const Oval = styled.div`
-    position: absolute;
-    right: 0;
-    top: 300px;
+const Oval2 = styled.div`
+      position: absolute; 
+      left: 0;
+      bottom: 720px;
+      width: 720px;
+      transform: rotate(180deg);
+      display: block;
+      
+      @media (min-width: 1200px){
+        display: block;
+      }
 `;
 
 export default TypeBusiness;

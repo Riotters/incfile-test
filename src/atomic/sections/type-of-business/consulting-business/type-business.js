@@ -8,15 +8,17 @@ import {color} from "../../../../components/styles/colors";
 import {shadow} from "../../../../components/styles/shadows";
 import {typeBusiness} from "../../../../static/type-of-business/consulting-business";
 import Curve from "../../../atoms/shapes/curve";
-import OvalSvg from "../../../../images/oval-orange-4.inline.svg";
-import AdventagesWithLongText from "../../../molecules/mixed-blocks/adventages-with-long-text";
-import {Paragraph} from "../../../atoms/typography/paragraph";
+import OvalSvg from "../../../../images/ovals/top-right-transparent-blue2.inline.svg";
+import OvalSvg2 from "../../../../images/ovals/bottom-left-transparent-blue1.inline.svg";
 
 const TypeBusiness = () => (
     <Wrapper>
         <Oval>
             <OvalSvg/>
         </Oval>
+        <Oval2>
+            <OvalSvg2/>
+        </Oval2>
         <Container>
             <Service>
                 <TextCenterLayout headline="Types of Consulting Business"
@@ -76,7 +78,25 @@ const CurveWrapper = styled.div`
 const Oval = styled.div`
     position: absolute;
     right: 0;
-    top: 300px;
+    top: 287px;
+    width: 720px;
+    display: none;
+    
+    @media (min-width: 1200px) {
+        display: block;
+    }
+`;
+
+const Oval2 = styled.div`
+    position: absolute;
+    left: 0;
+    top: calc(50% - 210px);
+    width: 420px;
+    display: none;
+    
+    @media (min-width: 1200px) {
+        display: block;
+    }
 `;
 
 export default TypeBusiness;

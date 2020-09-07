@@ -10,7 +10,7 @@ export const InfoCards = [
     },
     {
         backgroundColor: color.green3,
-        imageName: "workers-compensation-insurance",
+        imageName: "shield-icon",
         title: "General Liability Insurance for Your Bookstore",
         content: "This insurance protects your bookstore business from claims due to being sued. This may include injury to members of the public, property damage, personal liabilities, legal defense and more. It can help protect your business from financial penalties and bankruptcy. This type of insurance could be essential to your bookstore business, since you have customers on the premises and will want to be insured against possible injuries."
     },

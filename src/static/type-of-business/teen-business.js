@@ -28,25 +28,25 @@ export const typeBusiness = {
         },
         {
             circleText: 5,
-            imageName: "specialized-parties",
+            imageName: "provide-babysitting-services",
             headline: "Provide Babysitting Services",
             text: "Babysitting is a popular job for teenagers, and if you develop a good reputation, your services could be in high demand (and command higher rates)."
         },
         {
             circleText: 6,
-            imageName: "start-blogging-and-writing",
+            imageName: "holiday-decorating",
             headline: "Holiday Decorating",
             text: "Offer to help neighbors with decorating their home around Halloween, Christmas and other holidays."
         },
         {
             circleText: 7,
-            imageName: "start-blogging-and-writing",
+            imageName: "yard-work-and-chores",
             headline: "Yard Work and Chores",
             text: "Many people want help with their yards and gardens. You could mow lawns, weed, water plants or trim hedges, for example."
         },
         {
             circleText: 7,
-            imageName: "start-blogging-and-writing",
+            imageName: "run-errands-do-chores-and-complete-odd-jobs",
             headline: "Run Errands, Do Chores and Complete Odd Jobs",
             text: "There are plenty of other business ideas for teens like assembling furniture, running errands or helping people to move into or out of their homes."
         }
