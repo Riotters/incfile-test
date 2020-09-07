@@ -63,7 +63,7 @@ const ImageWrapper = styled.div`
     min-height: 88px;
     min-width: 88px;
     border-radius: 15px;
-    padding: 16px;
+    padding: ${props => props.iconPadding ? `${props.iconPadding}px` : `16px`};
     margin-right: 32px;
   }
 
@@ -72,13 +72,13 @@ const ImageWrapper = styled.div`
   }
 `;
 
-const BoxedButton = ({ className, content, icon, iconColor, ellipsis }) => {
+const BoxedButton = ({ className, content, icon, iconColor, iconPadding, ellipsis }) => {
   return (
     <Wrapper to={content.url} className={className} icon={icon} ellipsis={ellipsis}>
       <Whitebox className="box">
         <TextWrapper icon={icon} ellipsis={ellipsis}>
           {icon && (
-            <ImageWrapper iconColor={iconColor}>
+            <ImageWrapper iconColor={iconColor} iconPadding={iconPadding}>
               <Image filename={icon} />
             </ImageWrapper>
           )}

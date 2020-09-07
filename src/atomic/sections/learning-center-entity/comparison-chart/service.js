@@ -64,6 +64,11 @@ const PlayButton = styled.button`
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
   }
 
   &:hover {
@@ -90,7 +95,9 @@ const ServiceSection = ({ className, content }) => (
         </Curve>
         <Image filename="newspaper-433445" />
         <PlayButton>
-          <PlayerSVG />
+          <span>
+            <PlayerSVG />
+          </span>
         </PlayButton>
       </Video>
     </ContentCenter>

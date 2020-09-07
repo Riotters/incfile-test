@@ -87,57 +87,60 @@ export const about = {
         ],
       },
       {
-        header: `CA Name Search and Registration for Your California Corporation`,
-        text: `aaa`,
-        buttons: [
-          {
-            text: `aaa`,
-            url: `/`,
-          },
-          {
-            text: `aaa`,
-            url: `/`,
-          },
-        ],
-        header2: `aaa`,
-        text2: `aaa`,
-        text3: `aaa`,
-        link: {
-          text: `aaa`,
-          url: `/`,
+        header: `The C Corporation`,
+        text: `A C Corp, also known as a C Corporation, is a type of business entity that is formed and regulated on a state level. It is created by filing “Articles of Incorporation” with the secretary of state within the state of incorporation. It is the most formal type of company and a corporate structure. The policies and cost of creating a C Corp vary from state to state. Factors affecting whether you would want to create a C Corp include:`,
+        box: {
+          header: `Factors affecting whether you would want to create a C Corp include:`,
+          list: [
+            `A C Corp has limited liability, so the investors and owners of a C Corp are not generally liable for business debts and other liabilities.`,
+            `Ownership of a C Corp is determined by who owns stock in the company.`,
+            `A C Corporation must issue stock.`,
+            `A C Corporation must hold an Annual General Meeting.`,
+            `The ownership of a C Corp can be fluid and transferred, depending on who holds stock at a particular moment in time.`,
+            `Stocks in a C Corp can be bought and sold on a public stock market if the C Corp holds an “Initial Public Offering (IPO)” where it makes it stocks available to the public.`,
+            `A C Corp is required to have a board of directors.`,
+            `A C Corp can raise more finances by issuing stock.`,
+            `A C Corp is required to meet numerous rules and regulations.`,
+            `Money earned by a C Corp may be subject to “double taxation.”`,
+          ],
         },
-        header3: `aaa`,
-        text4: `aaa`,
-        header4: `aaa`,
-        text5: `aaa`,
-        header5: `aaa`,
-        text6: `aaa`,
-        header6: `aaa`,
-        text7: `aaa`,
+        header2: `How Taxes Work In A C Corp`,
+        text2: `Unlike the the Limited Liability Company and the S Corporation, a corporation is required to file a corporate tax return and pay corporation taxes on any profits. When those taxes are paid to shareholders as dividends, they will also be subjected to taxation on that individual’s tax return. This is known as “double taxation.”`,
+        header3: `C-Corporation Tax Rates`,
+        text3: `C-Corporation tax rates are as follows:`,
+        table: {
+          rows: [
+            [`Profit up to $50,000`, `15%`],
+            [`$50,000 - $75,000`, `25%`],
+            [`$75,000 - $100,000`, `34%`],
+            [`$100,000 - $335,000`, `39%`],
+            [`$335,000 - $10,000,000`, `34%`],
+            [`$10,000,000 - $15,000,000`, `35%`],
+            [`$15,000,000 - $18,333,333`, `38%`],
+            [`More than $18,333,333 — 35%`, `35%`],
+          ],
+        },
       },
       {
-        header: `Why Your California Corporation Needs a Registered Agent Service`,
-        text: `aaa`,
-        box: [`aaa`, `aaa`, `aaa`, `aaa`],
-        text2: `aaa`,
-        buttons: [
-          {
-            text: `aaa`,
-            url: `/`,
-          },
-          {
-            text: `aaa`,
-            url: `/`,
-          },
-        ],
-        header2: `aaa`,
-        text3: `aaa`,
-        text4: `aaa`,
-        header3: `aaa`,
-        text5: `aaa`,
-        box2: [`aaa`, `aaa`, `aaa`, `aaa`],
-        header4: `aaa`,
-        text6: `aaa`,
+        header: `The Nonprofit Corporation`,
+        text: `A Nonprofit Corporation is a type of corporation that donates any revenues generated to achieve a specific goal that is of public benefit. Nonprofit corporations are allowed to create profits, however those profits must be used to preserve the existence and expansion of the corporation.`,
+        text2: `In the United States, a nonprofit corporation is formed by filing articles of incorporation in the state in which it will operate. Incorporating the nonprofit creates a legal entity and enables the organization to be treated as a corporation by law, granting it the same rights and privileges afforded to for-profit corporations.`,
+        header2: `How Taxes Work In A Nonprofit`,
+        text3: `Unlike the the Limited Liability Company and the S Corporation, a corporation is required to file a corporate tax return and pay corporation taxes on any profits. When those taxes are paid to shareholders as dividends, they will also be subjected to taxation on that individual’s tax return. This is known as “double taxation.”`,
+        table: {
+          rows: [
+            [`Fedaral tax`, ``, `check-red`],
+            [`Sales tax`, ``, `check-red`],
+            [`Property tax`, ``, `check-red`],
+            [`Payroll tax`, `check-green`, ``],
+            [`Taxes on income unrelated to the main purpose`, `check-green`, ``],
+          ],
+        },
+      },
+      {
+        header: `A Note on Sole Proprietorships and Partnerships`,
+        text: `Before closing, a word on sole-proprietorships and partnerships: although these may not be “formal” business entities, some people may choose to complete work as a sole proprietor or partner. In these cases, there’s generally no separate business entity — the business and the proprietor (or partnership) are effectively one and the same. This means all income, expenses and other financial matters would be reported on an individual’s personal tax return, and they’d pay tax accordingly. It also means there’s no separation for areas like personal liability.`,
+        text2: `We always recommend setting up a formal business entity — it keeps everything neater, removes personal liability for your business, and may have several tax advantages. Incorporate your business today using Incfile's three easy steps to online business formation.`,
       },
     ],
   },
@@ -366,6 +369,33 @@ export const businessStructure = {
   },
 };
 
+export const entityType = {
+  header:
+      `Get started with the right type of business entity`,
+  buttons: [
+      {
+          header: `LLC`,
+          url: `/`,
+      },
+      {
+          header: `S-Corporation`,
+          url: `/`,
+      },
+      {
+          header: `Nonprofit`,
+          url: `/`,
+      },
+      {
+          header: `C-Corporation`,
+          url: `/`,
+      },
+  ],
+  button: {
+    text: `Get started`,
+    url: `/`,
+  }
+}
+
 export const rocket = {
   header: `Launch`,
   header2: `your business with Incfile`,
@@ -377,7 +407,34 @@ export const rocket = {
   },
 };
 
+export const guide = {
+  header: `Download Our Guide to Different Types of Corporations & Business Entities.`,
+  text: `Learn about the difference between LLCs, S Corporations, C Corporations and Non Profits`,
+  form: {
+    header: `Please enter the information below`,
+    field: {
+      label: `Email`,
+    },
+    field2: {
+      label: `First Name`,
+    },
+    field3: {
+      label: `Last Name`,
+    },
+    field4: {
+      label: `Phone Number`,
+    },
+    field5: {
+      label: `I want to…`,
+    },
+    button: {
+      text: `Download Now`,
+      url: `/`,
+    },
+  },
+}
+
 export const service = {
-  header: `aaa`,
-  text: `aaa`,
+  header: `How our service works`,
+  text: `Take a moment to view our instructional video and see how easy it can be to get your business incorporated.`,
 };
