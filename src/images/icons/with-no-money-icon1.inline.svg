@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="33px" viewBox="0 0 32 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="20200406_ICON_ICON-300" transform="translate(0.000000, 1.000000)">
+            <path d="M30.2000114,17.37 C30.2038687,20.5338548 29.2216674,23.6202739 27.39,26.2 C21.9744571,32.1722024 12.8523009,32.9134604 6.54358235,27.8939607 C0.234863819,22.874461 -1.09259745,13.8190183 3.51,7.2 C7.73296816,2.47529578 14.4327152,0.845136239 20.3542939,3.101504 C26.2758726,5.35787177 30.1919608,11.033106 30.2000114,17.37 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+            <path d="M31.29,16 C31.0778851,24.2948878 24.2925994,30.9088798 15.995,30.9088798 C7.69740062,30.9088798 0.912114942,24.2948878 0.7,16 C0.557881838,10.4423802 3.44161035,5.2450126 8.23236018,2.42436529 C13.02311,-0.396282013 18.96689,-0.396282013 23.7576398,2.42436529 C28.5483896,5.2450126 31.4321182,10.4423802 31.29,16 Z" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+            <circle id="Oval" fill="#1D1D1B" fill-rule="nonzero" cx="16" cy="26.2" r="1"></circle>
+            <line x1="16" y1="6.52" x2="16" y2="21.1" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></line>
+        </g>
+    </g>
+</svg>

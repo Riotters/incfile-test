@@ -7,9 +7,20 @@ import {shadow} from "../../../atoms/styles/shadows";
 import {color, gradient} from "../../../atoms/styles/colors";
 import UsefulTools from "../../../partials/useful-tools";
 import {toolsList} from "../../../../static/type-of-business/bed-and-breakfast";
+import OvalSvg from "../../../../images/ovals/top-left-transparent-orange2.inline.svg";
+import OvalSvg2 from "../../../../images/ovals/top-right-transparent-yellow.inline.svg";
 
 const ToolsAndLinks = () => (
     <Wrapper>
+        <Oval>
+            <OvalSvg />
+        </Oval>
+        <Oval2>
+            <OvalSvg2 />
+        </Oval2>
+        <Oval3>
+            <OvalSvg />
+        </Oval3>
         <Container>
             <TextCenterLayout headline="Groups and Forums for Hotel Owners"
                               text="Here are some useful places where you can connect with other bed and breakfast entrepreneurs."/>
@@ -38,9 +49,10 @@ const ToolsAndLinks = () => (
 );
 
 const Wrapper = styled.div`
-    padding-top: 0px;
+    padding-top: 100px;
     background-image: ${gradient.orange3};
     margin-bottom: 200px;
+    position: relative;
 `;
 
 const LinksContainer = styled.div`
@@ -70,6 +82,43 @@ const LinkItem = styled.div`
     @media (min-width: 1000px) {
         margin-left: 15px;
         margin-right: 15px;
+    }
+`;
+
+const Oval = styled.div`
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 720px;
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
+`;
+
+const Oval2 = styled.div`
+    position: absolute; 
+    top: calc(50% - 210px);
+    right: 0;
+    width: 420px;
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
+`;
+
+const Oval3 = styled.div`
+    position: absolute; 
+    bottom: 0;
+    left: 0;
+    width: 420px;
+    transform: scaleY(-1);
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
     }
 `;
 

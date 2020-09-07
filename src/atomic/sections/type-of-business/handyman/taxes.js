@@ -71,6 +71,11 @@ const Oval = styled.div`
     position: absolute;
     right: 0;
     top: 0;
+    display: none;
+  
+  @media (min-width: 1200px) {
+        display: block;
+  }
 `;
 
 const OvalBottom = styled.div`

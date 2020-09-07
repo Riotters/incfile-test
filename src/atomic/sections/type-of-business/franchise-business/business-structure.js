@@ -14,7 +14,7 @@ import HandsIcon from "../../../../images/icons/hands.inline.svg";
 import ArrowsIcon from "../../../../images/icons/arrows.inline.svg"
 import Button from "../../../molecules/buttons/button";
 import Container from "../../../container";
-import OvalGreen3 from "../../../../images/oval-green-3.inline.svg";
+import OvalSvg from "../../../../images/ovals/top-left-transparent-blue3.inline.svg";
 import {shadow} from "../../../atoms/styles/shadows";
 
 const BusinessOwnerResponsibilities = styled.section`
@@ -38,13 +38,19 @@ const Oval = styled.div`
   position: absolute;
   left: 0;
   top: 200px;
+  width: 570px;
+  display: none;
+  
+  @media (min-width: 1200px){
+    display: block;
+  }
 `
 
 const BusinessStructure = () => (
     <OrangeContainer>
 
         <Oval>
-            <OvalGreen3 />
+            <OvalSvg />
         </Oval>
 
         <Container>

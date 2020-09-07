@@ -10,12 +10,12 @@ import InvolvedIcon from "../../../../images/icons/get-involved-with-business-co
 import {color} from "../../../../components/styles/colors";
 import React from "react";
 import styled from "styled-components";
-import OvalBlueSVG from "../../../../images/ovals/bottom-left-transparent-blue3.inline.svg";
+import OvalBlueSVG from "../../../../images/ovals/top-left-transparent-green2.inline.svg";
 import OvalRedSVG from "../../../../images/ovals/top-left-transparent-pink.inline.svg";
 import Curve from "../../../atoms/shapes/curve";
 import {gradient} from "../../../atoms/styles/colors";
-import DominoIcon from "../../../../images/icons/domino.inline.svg";
 import Colorbox from "../../../../components/color-box";
+import BateryIcon from "../../../../images/icons/another-important-area-to-think-about-how-much-time-effort-and-energy.inline.svg";
 
 const ContainerWrapper = styled.div`
     background: rgb(255,255,255);
@@ -28,7 +28,6 @@ const ContainerWrapper = styled.div`
 
 const GridSection = styled.div`
     width: 100%;
-    margin-top: 110px;
 `;
 
 const TitleBox = styled.div`
@@ -94,6 +93,11 @@ const Oval = styled.div`
   left: 0;
   top: 286px;
   width: 420px;
+  display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
 `
 
 const OvalBig = styled.div`
@@ -105,6 +109,11 @@ const OvalBig = styled.div`
   svg{
     transform: scaleX(-1);
   }
+  display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
 `
 
 const AbsoluteCurve = styled.div`
@@ -112,6 +121,11 @@ const AbsoluteCurve = styled.div`
     left: -27px;
     top: -16px;
     transform: rotate(-90deg);
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
 `;
 
 const ValidatingBusinessIdea = () => (
@@ -146,7 +160,7 @@ const ValidatingBusinessIdea = () => (
                         to find products you can sell successfully.
                     </Paragraph>
 
-                    <Colorbox curveColor={color.orange1} color={color.orange3} curve theme="icon" Icon={DominoIcon}>
+                    <Colorbox curveColor={color.orange1} color={color.orange3} curve theme="icon" Icon={BateryIcon}>
                         <Paragraph big style={{fontWeight: "bold"}}>
                             Another important area to think about is how much time, effort and energy you have to put
                             into your side business.

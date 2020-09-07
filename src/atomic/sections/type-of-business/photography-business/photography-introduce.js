@@ -4,10 +4,11 @@ import styled from "styled-components";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import Container from "../../../container";
 import CkeckText from "../../../../components/static-check/text-only";
+import OvalSvg from "../../../../images/ovals/bottom-left-transparent-blue3.inline.svg";
 
 const BusinessOwnerResponsibilities = styled.section`
   position: relative;
-  padding-top: 75px;
+  margin-top: 75px;
   padding-bottom: 64px;
 
   .colorbox {
@@ -21,8 +22,23 @@ const WrapperContainer = styled.div`
     position: relative;
 `;
 
+const Oval = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 420px;
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
+`;
+
 const PhotographyIntroduce = () => (
     <WrapperContainer>
+        <Oval>
+            <OvalSvg />
+        </Oval>
         <Container>
             <BusinessOwnerResponsibilities>
                 <ImageContent image="photography-business-boxes" paddingTop="60">

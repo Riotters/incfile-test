@@ -15,7 +15,7 @@ import Icon2 from "../../../../images/icons/look-at-who-your-competitors-are-in-
 import Icon3 from "../../../../images/icons/understand-your-market.inline.svg"
 import Icon4 from "../../../../images/icons/talk-to-clients.inline.svg"
 import Icon5 from "../../../../images/icons/get-involved-with-business-communities.inline.svg"
-import OvalBlueSVG from "../../../../images/oval-blue-4.inline.svg";
+import OvalBlueSVG from "../../../../images/ovals/top-left-transparent-orange.inline.svg";
 
 const ContainerWrapper = styled.div`
     background-color: white;
@@ -63,35 +63,17 @@ const GridSectionList = styled.div`
     }
 `;
 
-const TextBorderedSection = styled.div`
-    width: 100%;
-    padding-top: 100px;
-    
-    @media (min-width: 670px) {
-        width: 670px;
-        margin: 0 auto;
-    }
-    
-    h3{
-        color: #1d1d1d;
-        font-size: 40px;
-        text-align: center;
-        margin-bottom: 24px;
-    }
-`;
-
-const TextBorderedList = styled.div`
-    margin-top: 80px;
-    
-    >div {
-        margin-bottom: 8px;
-    }
-`;
-
 const OvalCenter = styled.div`
   position: absolute;
   right: 0;
-  top: 0;
+  top: 500px;
+  width: 570px;
+  transform: scaleX(-1);
+  display: none;
+  
+  @media (min-width: 1200px){
+    display: block;
+  }
 `
 
 const AbsoluteCurve = styled.div`

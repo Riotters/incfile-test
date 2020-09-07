@@ -20,7 +20,6 @@ import {color} from "../../components/styles/colors";
 import {Heading} from "../../atomic/atoms/typography/heading";
 import BlueBoxWithAbsoluteText from "../../atomic/molecules/text-blocks/blue-box-with-absolute-text";
 import Adventages from "../../components/adventages";
-import TextBoxed from "../../atomic/molecules/text-blocks/text-boxed";
 import TabsSection from "../../atomic/partials/tabs";
 import TypeBusiness from "../../atomic/sections/type-of-business/online-business/type-business";
 import ValidatingBusinessIdea from "../../atomic/sections/type-of-business/online-business/validating-business-idea";
@@ -34,6 +33,7 @@ import ToolsAndLinks from "../../atomic/sections/type-of-business/online-busines
 import Conclusion from "../../atomic/sections/general/conclusion";
 import CircleWithText from "../../atomic/molecules/blocks/circle-with-text-block";
 import CircleRing from "../../images/circle-graph.inline.svg";
+import OvalSvg from "../../images/ovals/bottom-left-transparent-orange.inline.svg";
 
 const OnlineBusiness = () => (
     <Layout>
@@ -62,95 +62,108 @@ const OnlineBusiness = () => (
             </RatingRow>
         </Top>
 
-        <TabsSection>
-            <TabHeading>
-                <TabTitle title="Online business" SvgIcon={Tab1Icon}/>
-                <TabTitle title="Why This Industry?" SvgIcon={Tab2Icon}/>
-            </TabHeading>
+        <TabsWrapper>
+            <Oval>
+                <OvalSvg />
+            </Oval>
+            <TabsSection>
+                <TabHeading>
+                    <TabTitle title="Online business" SvgIcon={Tab1Icon}/>
+                    <TabTitle title="Why This Industry?" SvgIcon={Tab2Icon}/>
+                </TabHeading>
 
-            <CollapseWrapper>
-                <PanelWrapper>
-                    <Paragraph big>
-                        But turning your idea into a successful business is about much more than launching a website,
-                        writing a couple of blog posts and using social media. Just like traditional businesses,
-                        business success online requires hard work and dealing with rapidly changing tools and
-                        processes. The low barrier to entry in owning an online business means that competition is
-                        intense; if you want to be a success, you need to plan carefully and execute well.
-                    </Paragraph>
-
-                    <Colorbox className="box" theme="icon" Icon={MegafornIcon} color={color.purple3} curve
-                              curveColor={color.purple1}>
-                        <Heading size={4}>
-                            The question is, just where do you start?
-                        </Heading>
-                        <Paragraph bottomPadding={0} bottomMargin={0}>
-                            Here at Incfile, we know the answer, and we’ve shared it with more 100,000 people who we've
-                            helped in forming their business. Since 2004, we’ve supported online entrepreneurs just like
-                            you to get into business online, and we’re proud to have been a part of the internet
-                            business revolution.
+                <CollapseWrapper>
+                    <PanelWrapper>
+                        <Paragraph big>
+                            But turning your idea into a successful business is about much more than launching a
+                            website,
+                            writing a couple of blog posts and using social media. Just like traditional businesses,
+                            business success online requires hard work and dealing with rapidly changing tools and
+                            processes. The low barrier to entry in owning an online business means that competition is
+                            intense; if you want to be a success, you need to plan carefully and execute well.
                         </Paragraph>
-                    </Colorbox>
 
-                    <Paragraph big style={{marginTop: "48px"}}>
-                        Here is our simple guide to starting up a successful online business. From exploring the types
-                        of business you can go into through validation and research, to the legalities of setting up
-                        your business and the realities of your day to day operations, this guide is here to help.
-                    </Paragraph>
-                    <Paragraph big style={{marginTop: "48px"}}>
-                        Read on for some insight into creating your own online business and becoming an internet
-                        entrepreneur.
-                    </Paragraph>
+                        <Colorbox className="box" theme="icon" Icon={MegafornIcon} color={color.purple3} curve
+                                  curveColor={color.purple1}>
+                            <Heading size={4}>
+                                The question is, just where do you start?
+                            </Heading>
+                            <Paragraph bottomPadding={0} bottomMargin={0}>
+                                Here at Incfile, we know the answer, and we’ve shared it with more 100,000 people who
+                                we've
+                                helped in forming their business. Since 2004, we’ve supported online entrepreneurs just
+                                like
+                                you to get into business online, and we’re proud to have been a part of the internet
+                                business revolution.
+                            </Paragraph>
+                        </Colorbox>
 
-                </PanelWrapper>
+                        <Paragraph big style={{marginTop: "48px"}}>
+                            Here is our simple guide to starting up a successful online business. From exploring the
+                            types
+                            of business you can go into through validation and research, to the legalities of setting up
+                            your business and the realities of your day to day operations, this guide is here to help.
+                        </Paragraph>
+                        <Paragraph big style={{marginTop: "48px"}}>
+                            Read on for some insight into creating your own online business and becoming an internet
+                            entrepreneur.
+                        </Paragraph>
 
-                <PanelWrapper>
-                    <Heading size={3}>
-                        Why You Should Start a New Online Business
-                    </Heading>
-                    <Paragraph big style={{marginBottom: "52px"}}>
-                        The internet has opened up new frontiers, created amazing technologies and helped us connect
-                        with others around the globe. It’s made everything more accessible, allowing us to easily
-                        research and compare ideas, products, services and more. Entrepreneurs who can take advantage of
-                        these trends can do extremely well — here are some statistics on the power of online businesses
-                        in the U.S.:
-                    </Paragraph>
+                    </PanelWrapper>
 
-                    <BlueBoxWithAbsoluteText absoluteText="$300B"
-                                             text="Spent on online in the U.S. every year"/>
-                    <BlueBoxWithAbsoluteText absoluteText="$100K"
-                                             text="Fifth of full-time independent workers earnings a year."/>
+                    <PanelWrapper>
+                        <Heading size={3}>
+                            Why You Should Start a New Online Business
+                        </Heading>
+                        <Paragraph big style={{marginBottom: "52px"}}>
+                            The internet has opened up new frontiers, created amazing technologies and helped us connect
+                            with others around the globe. It’s made everything more accessible, allowing us to easily
+                            research and compare ideas, products, services and more. Entrepreneurs who can take
+                            advantage of
+                            these trends can do extremely well — here are some statistics on the power of online
+                            businesses
+                            in the U.S.:
+                        </Paragraph>
 
-                    <CircleWithText textInsideCircle="70" textLine="Of U.S. entrepreneurs start their business from home - an ideal for online business." withBg={true} symbol="%" SvgChart={CircleRing}/>
+                        <BlueBoxWithAbsoluteText absoluteText="$300B"
+                                                 text="Spent on online in the U.S. every year"/>
+                        <BlueBoxWithAbsoluteText absoluteText="$100K"
+                                                 text="Fifth of full-time independent workers earnings a year."/>
 
-                    <div style={{marginBottom: "30px", marginTop: "48px"}}>
-                        <Adventages
-                            headline="Online retail is expected to grow by between 8% and 12% year-on-year, compared to just4% for traditional retail"
-                            width="100%"
-                        />
-                    </div>
+                        <CircleWithText textInsideCircle="70"
+                                        textLine="Of U.S. entrepreneurs start their business from home - an ideal for online business."
+                                        withBg={true} symbol="%" SvgChart={CircleRing}/>
 
-                    <div style={{marginBottom: "30px"}}>
-                        <Adventages
-                            headline="Over a third of Americans are now involved in the 'gig economy', providing independent, freelance and contract work through on-demand services"
-                            width="100%"
-                        />
-                    </div>
+                        <div style={{marginBottom: "30px", marginTop: "48px"}}>
+                            <Adventages
+                                headline="Online retail is expected to grow by between 8% and 12% year-on-year, compared to just4% for traditional retail"
+                                width="100%"
+                            />
+                        </div>
 
-                    <div style={{marginBottom: "48px"}}>
-                        <Adventages
-                            headline="Online businesses are typically less expensive to start than traditional businesses"
-                            width="100%"
-                        />
-                    </div>
+                        <div style={{marginBottom: "30px"}}>
+                            <Adventages
+                                headline="Over a third of Americans are now involved in the 'gig economy', providing independent, freelance and contract work through on-demand services"
+                                width="100%"
+                            />
+                        </div>
 
-                    <Paragraph big>
-                        This is why online businesses are so exciting — how can you be part
-                        of that success? We're here to help you figure that out.
-                    </Paragraph>
-                </PanelWrapper>
+                        <div style={{marginBottom: "48px"}}>
+                            <Adventages
+                                headline="Online businesses are typically less expensive to start than traditional businesses"
+                                width="100%"
+                            />
+                        </div>
 
-            </CollapseWrapper>
-        </TabsSection>
+                        <Paragraph big>
+                            This is why online businesses are so exciting — how can you be part
+                            of that success? We're here to help you figure that out.
+                        </Paragraph>
+                    </PanelWrapper>
+
+                </CollapseWrapper>
+            </TabsSection>
+        </TabsWrapper>
 
         <TypeBusiness/>
 
@@ -176,7 +189,8 @@ const OnlineBusiness = () => (
             </Heading>
             <Paragraph big>
                 The internet has made online entrepreneurship available
-                to everyone. If you can find a great niche, understand your competitors and put together a solid business plan, you will have every chance for success
+                to everyone. If you can find a great niche, understand your competitors and put together a solid
+                business plan, you will have every chance for success
             </Paragraph>
         </Conclusion>
     </Layout>
@@ -191,16 +205,19 @@ const ButtonsBox = styled.div`
   }
 `;
 
-const ListWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
+const TabsWrapper = styled.div`
+  position: relative;
 `;
 
-const ListBox = styled.div`
-    width: 100%;
+const Oval = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 420px;
+    display: none;
     
-    @media (min-width: 576px) { 
-        width: 50%; 
+    @media (min-width: 1200px){
+        display: block;
     }
 `;
 

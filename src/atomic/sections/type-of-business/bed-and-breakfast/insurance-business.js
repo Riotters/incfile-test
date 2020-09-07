@@ -4,9 +4,13 @@ import InfoCardsSection from "../../../partials/info-cards-section";
 import {InfoCards} from "../../../../static/type-of-business/bed-and-breakfast";
 import {gradient} from "../../../atoms/styles/colors";
 import TextCenterLayout from "../../../../components/partials/blocks/heading-center";
+import OvalSvg from "../../../../images/ovals/top-right-transparent-blue2.inline.svg";
 
 const InsuranceBusiness = () => (
     <Wrapper>
+        <Oval>
+            <OvalSvg />
+        </Oval>
         <div style={{paddingBottom: "100px"}}>
             <TextCenterLayout
                 headline="Insurance for Your Bed and Breakfast or Hotel Business"
@@ -23,6 +27,18 @@ const Wrapper = styled.section`
     padding-top: 100px;
     position: relative;
     padding-bottom: 100px;
+`;
+
+const Oval = styled.div`
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 420px;
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
 `;
 
 export default InsuranceBusiness;

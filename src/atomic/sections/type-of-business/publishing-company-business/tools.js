@@ -9,13 +9,20 @@ import {gradient} from "../../../atoms/styles/colors";
 import UsefulTools from "../../../partials/useful-tools";
 import {toolsList} from "../../../../static/type-of-business/publishing-company-business";
 import Curve from "../../../atoms/shapes/curve"
-import BabyBlueOval from "../../../../images/oval-green-3.inline.svg";
+import OvalSvg from "../../../../images/ovals/top-left-transparent-green3.inline.svg";
+import OvalSvg2 from "../../../../images/ovals/bottom-left-transparent-orange.inline.svg";
 
 const ToolsAndLinks = () => (
     <Wrapper>
         <Oval>
-            <BabyBlueOval />
+            <OvalSvg />
         </Oval>
+        <Oval2>
+            <OvalSvg />
+        </Oval2>
+        <Oval3>
+            <OvalSvg2 />
+        </Oval3>
         <Container>
             <TextCenterLayout headline="Groups and Forums for Your Publishing Company"
                               text="Here are some useful places where you can connect with other publishing entrepreneurs:"/>
@@ -100,6 +107,37 @@ const Oval = styled.div`
     position: absolute;
     top: 0;
     left: 0;
+    width: 720px;
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
+`;
+
+const Oval2 = styled.div`
+    position: absolute;
+    bottom: 626px;
+    right: 0;
+    width: 420px;
+    transform: scaleX(-1);
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
+`;
+
+const Oval3 = styled.div`
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 420px;
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
 `;
 
 export default ToolsAndLinks;

@@ -14,9 +14,12 @@ import { top, about, rocket, businessStructure } from "../../static/learning-cen
 const ComparisonChart = () => (
   <Layout>
     <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
-    <Top imageName="mr-bulb-entity-comparison-chart" imageAlt="Mrs Bulb and with checklist" ovalColor="darkblue">
+    <Top imageName="mr-bulb-business-entity-comparison-9338" imageAlt="Mrs Bulb and with checklist" ovalColor="sun">
       <h1>{top.header}</h1>
       <p>{top.text}</p>
+      <Buttonsbox>
+        <Button content={top.buttons[0]} theme="primary56" arrow />
+      </Buttonsbox>
     </Top>
     <About content={about} />
     <BusinessStructure content={businessStructure} />

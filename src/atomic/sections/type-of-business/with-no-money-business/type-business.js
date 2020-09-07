@@ -5,7 +5,7 @@ import Container from "../../../container";
 import TextCenterLayout from "../../../partials/heading-center";
 import {color} from "../../../../components/styles/colors";
 import {shadow} from "../../../../components/styles/shadows";
-import OvalSvg from "../../../../images/oval-orange-4.inline.svg";
+import OvalSvg from "../../../../images/ovals/top-right-transparent-blue2.inline.svg";
 import AdventagesWithLongText from "../../../molecules/mixed-blocks/adventages-with-long-text";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 
@@ -14,6 +14,10 @@ const TypeBusiness = () => (
         <Oval>
             <OvalSvg/>
         </Oval>
+        <Oval2>
+            <OvalSvg/>
+        </Oval2>
+
         <Container>
             <Service>
                 <TextCenterLayout headline="Low or No Cost Business Ideas"
@@ -147,8 +151,27 @@ const CurveWrapper = styled.div`
 
 const Oval = styled.div`
     position: absolute;
+    left: 0;
+    top: 412px;
+    width: 420px;
+    transform: rotate(180deg);
+    display: block;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
+`;
+
+const Oval2 = styled.div`
+    position: absolute;
     right: 0;
-    top: 300px;
+    bottom: 173px;
+    width: 570px;
+    display: block;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
 `;
 
 export default TypeBusiness;

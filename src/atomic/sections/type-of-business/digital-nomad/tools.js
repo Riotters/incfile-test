@@ -7,11 +7,20 @@ import {shadow} from "../../../atoms/styles/shadows";
 import {color, gradient} from "../../../atoms/styles/colors";
 import UsefulTools from "../../../partials/useful-tools";
 import {toolsList} from "../../../../static/type-of-business/digital-nomad";
+import OvalSvg from "../../../../images/ovals/top-left-transparent-blue2.inline.svg";
+import OvalSvg2 from "../../../../images/ovals/top-right-transparent-green3.inline.svg";
 
 const ToolsAndLinks = () => (
     <Wrapper>
 
         <LinksWrapper>
+            <Oval>
+                <OvalSvg />
+            </Oval>
+            <Oval2>
+                <OvalSvg />
+            </Oval2>
+
             <Container>
                 <TextCenterLayout headline="Social Media Groups for Your Digital Nomad Business"
                                   text="Connecting with other business owners in your industry can be incredibly helpful. Here are some of the best social media groups:"/>
@@ -128,12 +137,21 @@ const ToolsAndLinks = () => (
 
         </LinksWrapper>
 
-        <Container>
-            <UsefulTools toolsList={toolsList.tools} headlineText={toolsList.headlineText}
-                         description={toolsList.description}/>
-        </Container>
+        <ToolsWrapper>
+            <Oval3>
+                <OvalSvg2 />
+            </Oval3>
+            <Container>
+                <UsefulTools toolsList={toolsList.tools} headlineText={toolsList.headlineText}
+                             description={toolsList.description}/>
+            </Container>
+        </ToolsWrapper>
     </Wrapper>
 );
+
+const ToolsWrapper = styled.div`
+    position: relative;
+`;
 
 const Wrapper = styled.div`
     margin-bottom: 200px;
@@ -142,6 +160,7 @@ const Wrapper = styled.div`
 const LinksWrapper = styled.div`
     padding-top: 100px;
     padding-bottom: 30px;
+    position: relative;
     background-image: linear-gradient(to top, #f2f6ff, #ffffff);
 `;
 
@@ -172,6 +191,43 @@ const LinkItem = styled.div`
     @media (min-width: 1000px) {
         margin-left: 15px;
         margin-right: 15px;
+    }
+`;
+
+const Oval = styled.div`
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 570px;
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
+`;
+
+const Oval2 = styled.div`
+    position: absolute;
+    bottom: 556px;
+    right: 0;
+    transform: scaleX(-1);
+    width: 420px;
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
+`;
+
+const Oval3 = styled.div`
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 720px;
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
     }
 `;
 

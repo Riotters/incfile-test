@@ -9,8 +9,7 @@ import Top from "../../atomic/partials/top";
 import styled from "styled-components";
 import {Paragraph} from "../../atomic/atoms/typography/paragraph";
 import {Heading} from "../../atomic/atoms/typography/heading";
-import TheArtOfBootstrapping from "../../atomic/sections/type-of-business/with-no-money-business/setting-business";
-import ToolsAndLinks from "../../atomic/sections/type-of-business/with-no-money-business/tools";
+import TheArtOfBootstrapping from "../../atomic/sections/type-of-business/with-no-money-business/the-art-of-bootstrapping";
 import Conclusion from "../../atomic/sections/general/conclusion";
 import Bootstrapping from "../../atomic/sections/type-of-business/with-no-money-business/bootstrapping";
 import LackOfMoney from "../../atomic/sections/type-of-business/with-no-money-business/lack-of-money";
@@ -30,7 +29,7 @@ const WithNoMoneyBusiness = () => (
         <SEO title="How to Start a Business with Little or No Money"
              description="There’s something very powerful about the idea of starting a business, but what can you do if money is a major obstacle? Many businesses require significant capital expenditure, and if you don’t have the funds to begin your venture, that will be an issue. All is not lost though - with some creative thinking and a slightly different approach, you can “bootstrap” your business with very little cash."/>
 
-        <Top ovalColor="yellow" imageName="with-no-money-business-main" imageAlt="Mr Bulb with seedling"
+        <Top ovalColor="babyblue" imageName="with-no-money-business-main" imageAlt="Mr Bulb with seedling"
              headlineWidth={700}>
             <h1>How to Start a Business with Little or No Money</h1>
             <p>

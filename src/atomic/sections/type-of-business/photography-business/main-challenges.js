@@ -2,13 +2,10 @@ import Container from "../../../container";
 import {Heading} from "../../../atoms/typography/heading";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import TextBlockWithImage from "../../../molecules/mixed-blocks/text-block-with-absolute-image";
-import TalkIcon from "../../../../images/icons/talk-to-clients.inline.svg";
-import IdetifyIcon from "../../../../images/icons/identify-your-unique-selling-point.inline.svg"
-import InvolvedIcon from "../../../../images/icons/get-involved-with-business-communities.inline.svg"
 import {color} from "../../../../components/styles/colors";
 import React from "react";
 import styled from "styled-components";
-import OvalBlueSVG from "../../../../images/oval-blue-4.inline.svg";
+import OvalBlueSVG from "../../../../images/ovals/bottom-left-transparent-blue3.inline.svg";
 import FinancialIcon from "../../../../images/icons/financial-managment.inline.svg";
 import RealtionshipIcon from "../../../../images/icons/relationship-icon.inline.svg";
 import SeekingIcon from "../../../../images/icons/seeking-out-work.inline.svg";
@@ -62,35 +59,16 @@ const GridSectionList = styled.div`
     }
 `;
 
-const TextBorderedSection = styled.div`
-    width: 100%;
-    padding-top: 100px;
-    
-    @media (min-width: 670px) {
-        width: 670px;
-        margin: 0 auto;
-    }
-    
-    h3{
-        color: #1d1d1d;
-        font-size: 40px;
-        text-align: center;
-        margin-bottom: 24px;
-    }
-`;
-
-const TextBorderedList = styled.div`
-    margin-top: 80px;
-    
-    >div {
-        margin-bottom: 8px;
-    }
-`;
-
 const OvalCenter = styled.div`
   position: absolute;
-  right: 0;
-  top: 0;
+  left: 0;
+  top: 598px;
+  width: 570px;
+  display: none;
+  
+  @media (min-width: 1200px){
+    display: block;
+  }
 `
 
 const AbsoluteCurve = styled.div`

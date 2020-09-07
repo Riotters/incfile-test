@@ -112,6 +112,11 @@ const Oval = styled.div`
     left: 0;
     top: 394px;
     width: 570px;
+    display: none;
+    
+    @media (min-width: 420px) {
+        display: block;
+    }
 `;
 
 export default SettingBusiness;

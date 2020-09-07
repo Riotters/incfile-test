@@ -41,6 +41,11 @@ const Oval = styled.div`
   position: absolute;
   left: 0;
   top: 200px;
+  display: none;
+  
+  @media (min-width: 1200px) {
+    display: block;
+  }
 `
 
 const CoachBusinessStructure = () => (
@@ -90,7 +95,7 @@ const CoachBusinessStructure = () => (
                         SvgImage={LLCSVG}
                         textBackgroundColor="transparent"
                         imageBackgroundColor={color.white}
-                        imageShadowColor="#ababab"
+                        imageShadowColor={shadow.white2}
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
@@ -116,7 +121,7 @@ const CoachBusinessStructure = () => (
                         SvgImage={LimitedIcon}
                         textBackgroundColor="transparent"
                         imageBackgroundColor={color.white}
-                        imageShadowColor="#ababab"
+                        imageShadowColor={shadow.white2}
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
@@ -142,7 +147,7 @@ const CoachBusinessStructure = () => (
                         SvgImage={PlaneIcon}
                         textBackgroundColor="transparent"
                         imageBackgroundColor={color.white}
-                        imageShadowColor="#ababab"
+                        imageShadowColor={shadow.white2}
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
@@ -168,7 +173,7 @@ const CoachBusinessStructure = () => (
                         SvgImage={RockerIcon}
                         textBackgroundColor="transparent"
                         imageBackgroundColor={color.white}
-                        imageShadowColor="#ababab"
+                        imageShadowColor={shadow.white2}
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}

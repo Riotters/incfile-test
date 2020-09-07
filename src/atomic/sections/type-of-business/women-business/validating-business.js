@@ -11,7 +11,7 @@ import LookIcon from "../../../../images/icons/look-at-who-your-competitors-are-
 import {color} from "../../../../components/styles/colors";
 import React from "react";
 import styled from "styled-components";
-import OvalBlueSVG from "../../../../images/oval-blue-4.inline.svg";
+import OvalBlueSVG from "../../../../images/ovals/bottom-left-transparent-blue3.inline.svg";
 import Curve from "../../../atoms/shapes/curve";
 import {gradient} from "../../../atoms/styles/colors";
 
@@ -62,35 +62,29 @@ const GridSectionList = styled.div`
     }
 `;
 
-const TextBorderedSection = styled.div`
-    width: 100%;
-    padding-top: 100px;
-    
-    @media (min-width: 670px) {
-        width: 670px;
-        margin: 0 auto;
-    }
-    
-    h3{
-        color: #1d1d1d;
-        font-size: 40px;
-        text-align: center;
-        margin-bottom: 24px;
-    }
-`;
-
-const TextBorderedList = styled.div`
-    margin-top: 80px;
-    
-    >div {
-        margin-bottom: 8px;
-    }
-`;
-
 const OvalCenter = styled.div`
   position: absolute;
+  left: 0;
+  top: 500px;
+  width: 420px;
+  display: none;
+  
+  @media (min-width: 1200px){
+    display: block;
+  }
+`
+
+const Oval2 = styled.div`
+  position: absolute;
   right: 0;
-  top: 0;
+  top: 839px;
+  width: 720px;
+  transform: scaleX(-1);
+  display: none;
+  
+  @media (min-width: 1200px){
+    display: block;
+  }
 `
 
 const AbsoluteCurve = styled.div`
@@ -105,6 +99,10 @@ const ValidatingBusinessIdea = () => (
         <OvalCenter>
             <OvalBlueSVG/>
         </OvalCenter>
+
+        <Oval2>
+            <OvalBlueSVG/>
+        </Oval2>
 
         <Container>
 

@@ -5,8 +5,7 @@ import {color} from "../../../../components/styles/colors";
 import CountingTextBoxed from "../../../molecules/text-blocks/counting-text-boxed";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import Container from "../../../container";
-import OvalSmallSVG from "../../../../images/oval-small-babyblue.inline.svg";
-import OvalSVG from "../../../../images/oval-babyblue-1.inline.svg";
+import OvalSvg from "../../../../images/ovals/top-left-transparent-orange2.inline.svg";
 import TextCenterLayout from "../../../partials/heading-left";
 
 const BusinessOwnerResponsibilities = styled.section`
@@ -38,7 +37,13 @@ const Wrapper = styled.section`
 const Oval = styled.div`
   position: absolute;
   left: 0;
-  top: 20%;
+  bottom: 466px;
+  width: 570px;
+  display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
 `
 
 const OvalCenter = styled.div`
@@ -49,11 +54,8 @@ const OvalCenter = styled.div`
 const BusinessPlan = () => (
     <Wrapper>
         <Oval>
-            <OvalSmallSVG/>
+            <OvalSvg/>
         </Oval>
-        <OvalCenter>
-            <OvalSVG/>
-        </OvalCenter>
         <Container>
             <BusinessOwnerResponsibilities>
                 <TextCenterLayout headline="Your Online Business Needs a Plan"

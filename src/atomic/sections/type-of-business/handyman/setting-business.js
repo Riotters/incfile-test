@@ -116,6 +116,11 @@ const GreenCurve = styled.div`
     right: -115px;
     bottom: -122px;
     width: 115px;
+    display: none;
+  
+  @media (min-width: 1200px) {
+        display: block;
+  }
 `;
 
 const Oval = styled.div`
@@ -135,10 +140,11 @@ const Oval2 = styled.div`
     left: 0;
     bottom: 342px;
     width: 570px;
-    
-    @media (min-width: 1200px) {
+    display: none;
+  
+  @media (min-width: 1200px) {
         display: block;
-    }
+  }
 `;
 
 export default SettingBusiness;

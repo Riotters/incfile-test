@@ -6,9 +6,14 @@ import PathLink from "../../../molecules/buttons/path";
 import {shadow} from "../../../atoms/styles/shadows";
 import {color} from "../../../atoms/styles/colors";
 import {Paragraph} from "../../../atoms/typography/paragraph";
+import OvalSvg from "../../../../images/ovals/top-left-transparent-blue2.inline.svg";
 
 const Links = () => (
     <Wrapper>
+        <Oval>
+            <OvalSvg />
+        </Oval>
+
         <Container>
             <TextCenterLayout headline="Discussion Groups and Forums for Your Catering Business"
                               text="There are plenty of forums and online discussion groups for catering businesses. Start with these:"/>
@@ -58,6 +63,7 @@ const Links = () => (
 
 const Wrapper = styled.div`
     padding-top: 100px;
+    position: relative;
     background: linear-gradient(180deg, rgba(242,246,255,1) 0%, rgba(255,255,255,1) 100%);
 `;
 
@@ -65,6 +71,7 @@ const LinksContainer = styled.div`
     width: 100%;
     margin: 100px auto;
     display: flex;
+    position: relative;
     justify-content: space-between;
     flex-wrap: wrap;
     
@@ -88,6 +95,18 @@ const LinkItem = styled.div`
     @media (min-width: 1000px) {
         margin-left: 15px;
         margin-right: 15px;
+    }
+`;
+
+const Oval = styled.div`
+    top: 80px;
+    left: 0;
+    position: absolute;
+    width: 570px;
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
     }
 `;
 

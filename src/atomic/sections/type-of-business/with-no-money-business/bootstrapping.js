@@ -22,7 +22,6 @@ import CkeckText from "../../../../components/static-check/text-only";
 
 const BusinessOwnerResponsibilities = styled.section`
   position: relative;
-  padding-top: 75px;
   padding-bottom: 64px;
 
   .colorbox {
@@ -41,7 +40,7 @@ const Bootstrapping = () => (
         <Container>
             <BusinessOwnerResponsibilities>
                 <ImageContent image="with-no-money-business-1" paddingTop="60">
-                    <Paragraph big>
+                    <Paragraph big style={{paddingBottom: 0}}>
                         Bootstrapping is the discipline of starting a business with very little upfront cash. It means you don’t typically take out loans or investments
                         or get VC funding. Instead, you rely on limited personal savings and revenue created by your business to grow it. Bootstrapping has created many successful businesses — Dell, HP, Apple and Microsoft all started with very little cash, and now they are some of the biggest companies
                         in the world.
@@ -58,7 +57,7 @@ const Bootstrapping = () => (
                         </Paragraph>
                     </Colorbox>
 
-                    <Paragraph big style={{paddingTop: "120px"}} mixed={true}>
+                    <Paragraph big style={{paddingTop: "48px"}} mixed={true}>
                         Read on to find out exactly where to start, what to do next and what questions you should ask to give your new, bootstrapped business the best chance of success. We’ll cover:
                     </Paragraph>
 

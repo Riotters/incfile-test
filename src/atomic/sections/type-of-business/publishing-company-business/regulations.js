@@ -2,7 +2,8 @@ import React from "react";
 import {Heading} from "../../../atoms/typography/heading";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import Container from "../../../container";
-import OvalSvg from "../../../../images/oval-blue-5.inline.svg";
+import OvalSvg from "../../../../images/ovals/bottom-left-transparent-pink.inline.svg";
+import OvalSvg2 from "../../../../images/ovals/bottom-left-transparent-orange.inline.svg";
 import styled from "styled-components";
 
 const Regulations = () => (
@@ -10,6 +11,9 @@ const Regulations = () => (
         <Oval>
             <OvalSvg/>
         </Oval>
+        <Oval2>
+            <OvalSvg2 />
+        </Oval2>
         <Container style={{paddingTop: "100px", paddingBottom: "100px"}} width={750}>
             <Heading size={4} style={{fontSize: "40px"}}>
                 Rules, Regulations and Taxes
@@ -39,7 +43,17 @@ const Wrapper = styled.div`
 
 const Oval = styled.div`
     position: absolute; 
-    bottom: 0;
+    top: 200px;
     left: 0;
+    width: 420px;
 `;
+
+const Oval2 = styled.div`
+    position: absolute; 
+    top: 226px;
+    right: 0;
+    width: 136px;
+    transform: scaleX(-1);
+`;
+
 export default Regulations;

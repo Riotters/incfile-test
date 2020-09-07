@@ -8,13 +8,16 @@ import {color} from "../../../../components/styles/colors";
 import {shadow} from "../../../../components/styles/shadows";
 import {typeBusiness} from "../../../../static/type-of-business/food-truck-business";
 import Curve from "../../../atoms/shapes/curve";
-import OvalSvg from "../../../../images/oval-orange-4.inline.svg";
+import OvalSvg from "../../../../images/ovals/top-right-transparent-orange.inline.svg";
 
 const TypeBusiness = () => (
     <Wrapper>
         <Oval>
             <OvalSvg/>
         </Oval>
+        <Oval2>
+            <OvalSvg/>
+        </Oval2>
         <Container>
             <Service>
                 <TextCenterLayout headline="What Type of Food Truck Business Should You Start?"
@@ -46,7 +49,7 @@ const TypeBusiness = () => (
 
 const Wrapper = styled.div`
     background: rgba(255,255,255,1);
-    background-image: ${gradient.orange3}; 
+    background-color: ${color.orange3}; 
     padding-top: 100px;
     position: relative;
 `;
@@ -74,7 +77,26 @@ const CurveWrapper = styled.div`
 const Oval = styled.div`
     position: absolute;
     right: 0;
-    top: 300px;
+    top: 353px;
+    width: 720px;
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
+`;
+
+const Oval2 = styled.div`
+    position: absolute;
+    left: 0;
+    bottom: 29px;
+    width: 570px;
+    transform: rotate(180deg);
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
 `;
 
 export default TypeBusiness;
