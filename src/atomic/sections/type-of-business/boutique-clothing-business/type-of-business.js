@@ -8,13 +8,16 @@ import {color} from "../../../../components/styles/colors";
 import {shadow} from "../../../../components/styles/shadows";
 import {adventages} from "../../../../static/type-of-business/boutique-clothing-business";
 import Curve from "../../../atoms/shapes/curve";
-import OvalSvg from "../../../../images/oval-orange-4.inline.svg";
+import OvalSvg from "../../../../images/ovals/top-right-transparent-orange.inline.svg";
 
 const TypeOfBusiness = () => (
     <Wrapper>
         <Oval>
             <OvalSvg/>
         </Oval>
+        <Oval2>
+            <OvalSvg/>
+        </Oval2>
         <Container>
             <Service>
                 <TextCenterLayout headline="What Type of Boutique Clothing Business Should You Start?"
@@ -74,7 +77,24 @@ const CurveWrapper = styled.div`
 const Oval = styled.div`
     position: absolute;
     right: 0;
-    top: 300px;
+    top: 287px;
+    width: 100%;
+    
+    @media (min-width: 720px){
+        width: 720px;
+    }
 `;
 
+const Oval2 = styled.div`
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: rotate(180deg);
+    opacity: 0.5;
+    width: 100%;
+    
+    @media (min-width: 420px){
+        width: 420px;
+    }
+`;
 export default TypeOfBusiness;

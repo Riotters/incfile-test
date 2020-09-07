@@ -26,7 +26,7 @@ const BoxWrapper = styled.div`
     background-color: white;
     box-shadow: ${shadow.white1};
     border-radius: 15px;
-    margin: 0 15px 15px;
+    margin-bottom: 15px;
     
     @media (min-width: 1200px) {
         flex-direction: row;

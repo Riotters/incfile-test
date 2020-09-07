@@ -25,6 +25,16 @@ const StyledParagraph = styled.p`
     span.blue {
         color: ${color.blue1}
     }
+    
+    a{
+      color: ${color.blue1};
+      font-family: Avenir-Heavy, sans-serif;
+      transition: all 0.3s ease-in-out;
+      
+      &:hover{
+        color: ${color.orange1};
+      }
+    }
 `;
 
 export const Paragraph = ({ children, maxWidth, mixed, ...rest }) => (

@@ -6,7 +6,7 @@ import VisibilitySensor from "../../components/VisibilitySensor";
 import PropTypes from "prop-types";
 
 const TabsSection = ({layout, column, children, oval, ...rest}) => (
-    <Wrapper {...rest}>
+    <MainWrapper {...rest}>
         <Container>
             <Wrapper layout={layout}>
                 <VisibilitySensor partialVisibility once>
@@ -24,13 +24,16 @@ const TabsSection = ({layout, column, children, oval, ...rest}) => (
                 </VisibilitySensor>
             </Wrapper>
         </Container>
-    </Wrapper>
+    </MainWrapper>
 );
+
+const MainWrapper = styled.div`
+    padding-bottom: 100px;
+`;
 
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  padding-bottom: 115px;
   position: relative;
 
   @media (min-width: 769px) {

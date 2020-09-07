@@ -10,6 +10,7 @@ import {typeBusiness} from "../../../../static/type-of-business/consulting-busin
 import Curve from "../../../atoms/shapes/curve";
 import OvalSvg from "../../../../images/ovals/top-right-transparent-blue2.inline.svg";
 import OvalSvg2 from "../../../../images/ovals/bottom-left-transparent-blue1.inline.svg";
+import CurveFile from "../../../../images/curves/bottom-left-top-right-reverse-big.inline.svg";
 
 const TypeBusiness = () => (
     <Wrapper>
@@ -19,11 +20,16 @@ const TypeBusiness = () => (
         <Oval2>
             <OvalSvg2/>
         </Oval2>
+
+        <AbsoluteCurve>
+            <CurveFile />
+        </AbsoluteCurve>
+
+        <TextCenterLayout headline="Types of Consulting Business"
+                          text="Consulting is the practice of giving expert advice to others, normally in business, financial or technical areas. Clearly that’s a broad definition, so let’s narrow it down a little. Common types of consulting include:"/>
+
         <Container>
             <Service>
-                <TextCenterLayout headline="Types of Consulting Business"
-                                  text="Consulting is the practice of giving expert advice to others, normally in business, financial or technical areas. Clearly that’s a broad definition, so let’s narrow it down a little. Common types of consulting include:"/>
-
                 <AdventagesBox>
                     <CurveWrapper>
                         <Curve color={color.orange1}/>
@@ -56,7 +62,7 @@ const Wrapper = styled.div`
 `;
 
 const Service = styled.div`
-  padding: 64px 0;
+    padding: 0px 0px 64px 0
 `;
 
 const AdventagesBox = styled.div`
@@ -64,7 +70,7 @@ const AdventagesBox = styled.div`
   flex-wrap: wrap;
   width: 100%;
   max-width: 970px;
-  margin: 140px auto 0;
+  margin: 128px auto 0;
   position: relative;
  
 `;
@@ -79,23 +85,33 @@ const Oval = styled.div`
     position: absolute;
     right: 0;
     top: 287px;
-    width: 720px;
-    display: none;
+    width: 100%;
     
-    @media (min-width: 1200px) {
-        display: block;
+    @media (min-width: 720px) {
+        width: 720px;
     }
 `;
 
 const Oval2 = styled.div`
-    position: absolute;
+    position: absolute; 
     left: 0;
     top: calc(50% - 210px);
-    width: 420px;
-    display: none;
+    width: 100%;
     
-    @media (min-width: 1200px) {
-        display: block;
+    @media (min-width: 420px) {
+        width: 420px;
+    }
+`;
+
+const AbsoluteCurve = styled.div`
+    bottom: 197px;
+    right: 250px;
+    position: absolute;
+    
+    svg{
+        path{
+            fill: #d2e0fe;
+        }
     }
 `;
 

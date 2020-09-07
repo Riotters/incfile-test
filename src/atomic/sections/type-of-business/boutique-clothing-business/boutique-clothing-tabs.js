@@ -10,14 +10,16 @@ import CalcIcon from "../../../../images/icons/series-is-this-business-for-you.i
 import {Heading} from "../../../atoms/typography/heading";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import CkeckText from "../../../../components/static-check/text-only";
-import OvalSVG from "../../../../images/oval-blue-2.inline.svg";
-import OvalGreenSVG from "../../../../images/oval-green.inline.svg";
+import OvalSVG from "../../../../images/ovals/bottom-left-transparent-blue3.inline.svg";
+import OvalGreenSVG from "../../../../images/ovals/bottom-left-transparent-orange.inline.svg";
 import Container from "../../../../components/container";
 import BlueBoxWithAbsoluteText from "../../../molecules/text-blocks/blue-box-with-absolute-text";
 import Adventages from "../../../../components/adventages";
 import CountingTextBoxed from "../../../molecules/text-blocks/counting-text-boxed";
 import {color} from "../../../atoms/styles/colors"
 import {shadow} from "../../../atoms/styles/shadows"
+import CircleWithText from "../../../molecules/blocks/circle-with-text-block";
+import CircleIcon from "../../../../images/circle-percentage.inline.svg";
 
 const cn = (...args) => args.filter(Boolean).join(" ");
 
@@ -205,23 +207,26 @@ const ListBox = styled.div`
 `;
 
 const Oval = styled.div`
-  height: 100%;
   width: 100%;
-  max-height: 420px;
-  max-width: 420px;
   position: absolute;
   left: 0;
   top: 0;
+  
+  @media (min-width: 420px){
+    width: 420px;
+  }
 `
 
 const OvalBottom = styled.div`
-  height: 100%;
   width: 100%;
-  max-height: 420px;
-  max-width: 420px;
   position: absolute;
   right: 0;
-  bottom: 0;
+  top: 677px;
+  transform: scaleX(-1);
+  
+  @media (min-width: 420px){
+    width: 420px;
+  }
 `
 
 const BoutiqueClothingTabs = ({layout, columns}) => (
@@ -290,7 +295,7 @@ const BoutiqueClothingTabs = ({layout, columns}) => (
                                             curate the perfect collection, you can certainly start a successful retail
                                             clothing business.
                                         </Paragraph>
-                                        <Paragraph big style={{marginBottom: "50px"}}>
+                                        <Paragraph big style={{marginBottom: "48px"}}>
                                             The question is, just where do you start? Here at Incfile, we know the
                                             answer, and we’ve shared it with more than 100,000 people who we've helped
                                             to form their businesses. Since 2004, we’ve supported retail entrepreneurs
@@ -413,42 +418,35 @@ const BoutiqueClothingTabs = ({layout, columns}) => (
                                         <BlueBoxWithAbsoluteText absoluteText="$700K"
                                                                  text="Worldwide revenue for online clothing is expected to rise to over $700 billion by 2022"/>
 
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                headline="On average, a boutique clothing business earns over $130,000 a year and employs between one and two people"
-                                                width="100%"
-                                            />
-                                        </div>
+                                        <CircleWithText style={{marginBottom: "48px"}} textInsideCircle="9" textLine="Expected revenue growth of Online boutique a year in the U.S." withBg={true} SvgChart={CircleIcon}
+                                                        symbol="%"/>
 
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                headline="The traditional, brick-and-mortar clothing boutique is facing challenges, so more clothing entrepreneurs are selling online"
-                                                width="100%"
-                                            />
-                                        </div>
+                                        <Adventages
+                                            headline="On average, a boutique clothing business earns over $130,000 a year and employs between one and two people"
+                                            width="100%"
+                                        />
 
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                headline="Worldwide revenue for online clothing is expected to rise to over $700 billion by 2022"
-                                                width="100%"
-                                            />
-                                        </div>
+                                        <Adventages
+                                            headline="The traditional, brick-and-mortar clothing boutique is facing challenges, so more clothing entrepreneurs are selling online"
+                                            width="100%"
+                                        />
 
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                headline="The average online customer spends between $280 and $300 a year on clothes"
-                                                width="100%"
-                                            />
-                                        </div>
+                                        <Adventages
+                                            headline="Worldwide revenue for online clothing is expected to rise to over $700 billion by 2022"
+                                            width="100%"
+                                        />
 
-                                        <div style={{marginBottom: "48px"}}>
-                                            <Adventages
-                                                headline="Online boutique revenue is expected to grow by around 9 percent a year in the U.S."
-                                                width="100%"
-                                            />
-                                        </div>
+                                        <Adventages
+                                            headline="The average online customer spends between $280 and $300 a year on clothes"
+                                            width="100%"
+                                        />
 
-                                        <Paragraph big style={{marginBottom: "76px"}}>
+                                        <Adventages
+                                            headline="Online boutique revenue is expected to grow by around 9 percent a year in the U.S."
+                                            width="100%"
+                                        />
+
+                                        <Paragraph big style={{marginTop: "76px"}}>
                                             This is why Airbnb businesses are so exciting — how can you be a part of
                                             that success? We're here to help you figure that out.
                                         </Paragraph>
@@ -655,7 +653,9 @@ const BoutiqueClothingTabs = ({layout, columns}) => (
                                         </Heading>
 
                                         <Paragraph big style={{marginBottom: "48px"}}>
-                                            Although it can be exciting to form a boutique clothing business, there will be significant demands on you as a small business owner. Here are some of the things you can expect.
+                                            Although it can be exciting to form a boutique clothing business, there will
+                                            be significant demands on you as a small business owner. Here are some of
+                                            the things you can expect.
                                         </Paragraph>
 
                                         <Heading size={2} style={{fontSize: "24px", textAlign: "left"}}>
@@ -663,12 +663,14 @@ const BoutiqueClothingTabs = ({layout, columns}) => (
                                         </Heading>
 
                                         <Paragraph big style={{marginBottom: "48px"}}>
-                                            Here are some of the typical tasks you’ll be performing for your boutique clothing business on a daily basis.
+                                            Here are some of the typical tasks you’ll be performing for your boutique
+                                            clothing business on a daily basis.
                                         </Paragraph>
 
                                         <CountingTextBoxed number={1}>
                                             <Paragraph bottomPadding={0} bottomMargin={0}>
-                                                Seek out new clothing and garments that would fit well with your boutique
+                                                Seek out new clothing and garments that would fit well with your
+                                                boutique
                                             </Paragraph>
                                         </CountingTextBoxed>
 
@@ -712,7 +714,8 @@ const BoutiqueClothingTabs = ({layout, columns}) => (
                                             Skills Needed by a Boutique Business Entrepreneur
                                         </Heading>
                                         <Paragraph big style={{marginBottom: "48px"}}>
-                                            The following skills will be very useful in your role as a boutique clothing small business owner.
+                                            The following skills will be very useful in your role as a boutique clothing
+                                            small business owner.
                                         </Paragraph>
 
                                         <div style={{marginBottom: "30px"}}>

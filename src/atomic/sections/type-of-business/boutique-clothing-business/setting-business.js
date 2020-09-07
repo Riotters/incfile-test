@@ -4,8 +4,7 @@ import TextCenterLayout from "../../../../components/partials/blocks/heading-cen
 import TopImageBox from "../../../../components/top-image-box";
 import {color} from "../../../../components/styles/colors";
 import styled from "styled-components";
-import Curve from "../../../../images/green-curve.inline.svg";
-import GreenOval from "../../../../images/oval-green-2.inline.svg";
+import GreenOval from "../../../../images/ovals/top-right-transparent-green2.inline.svg";
 
 const SettingBusiness = () => (
     <GreenContainer>
@@ -14,12 +13,13 @@ const SettingBusiness = () => (
             <GreenOval/>
         </Oval>
 
+        <TextCenterLayout
+            headline="Setting up Your Life or Business Coaching Operations"
+            headlineWidth="700"
+            text="Once you've legally created your coaching business, you’ll need to get some other things in place."
+        />
+
         <Container>
-            <TextCenterLayout
-                headline="Setting up Your Life or Business Coaching Operations"
-                headlineWidth="700"
-                text="Once you've legally created your coaching business, you’ll need to get some other things in place."
-            />
             <ImageBoxes>
                 <TopImageBox image="location" color={color.red3}>
                     <h4>Location of Your Boutique</h4>
@@ -126,6 +126,11 @@ const Oval = styled.div`
     position: absolute;
     right: 0;
     top: 220px;
+    width: 100%;
+    
+    @media (min-width: 720px){
+        width: 720px;
+    }
 `;
 
 export default SettingBusiness;
