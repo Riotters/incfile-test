@@ -10,7 +10,7 @@ import ExSVG from "../../../images/circle-status-x.inline.svg";
 
 const Wrapper = styled(Whitebox)`
   display: grid;
-  grid-template-columns: ${(props) => (props.columns ? `repeat(${props.columns}, 1fr)` : "1fr 160px 160px 160px 160px;")};
+  grid-template-columns: ${props => props.columns && props.columns.length === 1 ? `repeat(${props.columns}, 1fr)` : props.columns ? props.columns : "1fr 160px 160px 160px 160px;"};
 
   &:not(:last-child) {
     margin-bottom: 8px;
@@ -51,6 +51,9 @@ const ListItem = styled(Paragraph)`
 
 const GridTableRow = ({ className, content, header, headerSize, list, columns }) => (
   <Wrapper className={className} columns={columns}>
+    {columns && 
+      console.log(columns.length)
+    }
     {content.map((item) => (
       <Cell>
         {header && (

@@ -6,11 +6,9 @@ import Container from "../../container";
 import { color } from "../../atoms/styles/colors";
 import Tab1SVG from "../../../images/icons/limited-liability-company.inline.svg";
 import Tab2SVG from "../../../images/icons/s-corporation-or-c-corporation.inline.svg";
-import Tab3SVG from "../../../images/icons/naming-your-corporation.inline.svg";
-import Tab4SVG from "../../../images/icons/registered-agents.inline.svg";
-import Tab5SVG from "../../../images/icons/filing-fees-requirements.inline.svg";
-import Tab6SVG from "../../../images/icons/taxes-and-fees.inline.svg";
-import Tab7SVG from "../../../images/icons/after-formation.inline.svg";
+import Tab3SVG from "../../../images/icons/rocket.inline.svg";
+import Tab4SVG from "../../../images/icons/heart-flower.inline.svg";
+import Tab5SVG from "../../../images/icons/sole-propriotership.inline.svg";
 import ArrowSVG from "../../../images/arrow.inline.svg";
 import LLCLimitedSVG from "../../../images/icons/llc-limited-liability-protection.inline.svg";
 import LLCTaxesSVG from "../../../images/icons/llc-taxes-and-tax-returns.inline.svg";
@@ -20,6 +18,8 @@ import { Heading } from "../../atoms/typography/heading";
 import { Paragraph } from "../../atoms/typography/paragraph";
 import IconListColorBox from "../../molecules/text-blocks/icon-h4-list-color";
 import Circle from "../../atoms/icons/circle";
+import Table from "../tables/the-c-corp-table";
+import Table2 from "../tables/the-nonprofit-corp-table";
 
 const Wrapper = styled.div`
   display: flex;
@@ -188,7 +188,7 @@ const Tab = ({ children }) => {
   );
 };
 
-const icons = [<Tab1SVG />, <Tab2SVG />, <Tab3SVG />, <Tab4SVG />, <Tab5SVG />, <Tab6SVG />, <Tab7SVG />];
+const icons = [<Tab1SVG />, <Tab2SVG />, <Tab3SVG />, <Tab4SVG />, <Tab5SVG />];
 
 const CCorpTabs = ({ layout, columns, content }) => (
   <Container>
@@ -276,21 +276,30 @@ const CCorpTabs = ({ layout, columns, content }) => (
               <Panel>
                 <PanelWrapper className="panel3" layout={layout}>
                   <Heading size="3">{content.content[2].header}</Heading>
-                  <Paragraph big>{content.content[2].text}</Paragraph>
-                  <Paragraph big>{content.content[2].text2}</Paragraph>
+                  <Paragraph big bottomMargin="40">{content.content[2].text}</Paragraph>
+                  <IconListColorBox color={color.yellow3} content={content.content[2].box} bottomMargin="48" rounded />
                   <Heading size="3">{content.content[2].header2}</Heading>
-                  <Paragraph big>{content.content[2].text3}</Paragraph>
-                  <Paragraph big>{content.content[2].text4}</Paragraph>
+                  <Paragraph big bottomMargin="48">{content.content[2].text2}</Paragraph>
+                  <Heading size="3">{content.content[2].header3}</Heading>
+                  <Paragraph big bottomMargin="24">{content.content[2].text3}</Paragraph>
+                  <Table content={content.content[2].table} />
                 </PanelWrapper>
               </Panel>
               <Panel>
                 <PanelWrapper className="panel4" layout={layout}>
                   <Heading size="3">{content.content[3].header}</Heading>
                   <Paragraph big>{content.content[3].text}</Paragraph>
-                  <Paragraph big>{content.content[3].text2}</Paragraph>
+                  <Paragraph big bottomMargin="48">{content.content[3].text2}</Paragraph>
                   <Heading size="3">{content.content[3].header2}</Heading>
-                  <Paragraph big>{content.content[3].text3}</Paragraph>
-                  <Paragraph big>{content.content[3].text4}</Paragraph>
+                  <Paragraph big bottomMargin="24">{content.content[3].text3}</Paragraph>
+                  <Table2 content={content.content[3].table} />
+                </PanelWrapper>
+              </Panel>
+              <Panel>
+                <PanelWrapper className="panel4" layout={layout}>
+                  <Heading size="3">{content.content[4].header}</Heading>
+                  <Paragraph big>{content.content[4].text}</Paragraph>
+                  <Paragraph big bottomMargin="0">{content.content[4].text2}</Paragraph>
                 </PanelWrapper>
               </Panel>
             </Collapse>

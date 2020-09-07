@@ -7,9 +7,12 @@ import Button from "../../atomic/molecules/buttons/button";
 import Top from "../../atomic/partials/top";
 import About from "../../atomic/sections/learning-center-entity/comparison-chart/about";
 import BusinessStructure from "../../atomic/sections/learning-center-entity/comparison-chart/business-structure";
+import EntityType from "../../atomic/sections/learning-center-entity/comparison-chart/entity-type";
 import Rocket from "../../atomic/sections/review-entity-type/c-corporation/rocket";
+import Guide from "../../atomic/sections/learning-center-entity/comparison-chart/guide";
+import Service from "../../atomic/sections/learning-center-entity/comparison-chart/service";
 //Texts
-import { top, about, rocket, businessStructure } from "../../static/learning-center-entity/comparison-chart";
+import { top, about, businessStructure, entityType, rocket, guide, service } from "../../static/learning-center-entity/comparison-chart";
 
 const ComparisonChart = () => (
   <Layout>
@@ -23,7 +26,10 @@ const ComparisonChart = () => (
     </Top>
     <About content={about} />
     <BusinessStructure content={businessStructure} />
+    <EntityType content={entityType} />
     <Rocket content={rocket} />
+    <Guide content={guide} />
+    <Service content={service} />
   </Layout>
 );
 
