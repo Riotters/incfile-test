@@ -5,8 +5,8 @@ import TextCenterLayout from "../../../../components/partials/blocks/heading-cen
 import Adventages from "../../../../components/adventages";
 import {color} from "../../../../components/styles/colors";
 import {shadow} from "../../../../components/styles/shadows";
-import OvalSvg from "../../../../images/oval-babyblue-1.inline.svg";
-import OvalSvgBottom from "../../../../images/oval-babyblue-2.inline.svg";
+import OvalSvg from "../../../../images/ovals/top-left-transparent-red3.inline.svg";
+import OvalSvgBottom from "../../../../images/ovals/top-left-transparent-orange.inline.svg";
 import CurveSvg from "../../../../images/curve-babyblue-1.inline.svg";
 import {adventages2} from "../../../../static/type-of-business/teen-business";
 
@@ -74,17 +74,26 @@ const AdventagesBox = styled.div`
 
 const Oval = styled.div`
     position: absolute;
-    right: 0;
+    left: 0;
     top: 0;
+    width: 570px;
+    display: block;
+      
+    @media (min-width: 1200px){
+       display: block;
+    }
 `;
 
 const OvalBottom = styled.div`
     position: absolute;
-    left: 0;
-    bottom: 300px;
-    
-    @media (max-width: 970px) {
-        display: none;
+    right: 0;
+    bottom: 225px;
+    transform: scaleX(-1);
+    width: 420px;
+    display: block;
+      
+    @media (min-width: 1200px){
+       display: block;
     }
 `;
 

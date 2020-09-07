@@ -4,7 +4,8 @@ import TextCenterLayout from "../../../../components/partials/blocks/heading-cen
 import TopImageBox from "../../../../components/top-image-box";
 import {color} from "../../../../components/styles/colors";
 import styled from "styled-components";
-import GreenOval from "../../../../images/oval-green-2.inline.svg";
+import GreenOval from "../../../../images/ovals/bottom-right-transparent-blue2.inline.svg";
+import {gradient} from "../../../atoms/styles/colors";
 
 const SettingBusiness = () => (
     <GreenContainer>
@@ -63,7 +64,7 @@ const SettingBusiness = () => (
 
 const GreenContainer = styled.div`
     background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(242,248,243,1) 100%);
+    background-image: ${gradient.blue3};
     padding-bottom: 100px;
     padding-top: 100px;
     position: relative;
@@ -97,7 +98,13 @@ const GreenCurve = styled.div`
 const Oval = styled.div`
     position: absolute;
     right: 0;
-    top: 220px;
+    top: 429px;
+    width: 570px;
+    display: block;
+      
+    @media (min-width: 1200px){
+       display: block;
+    }
 `;
 
 export default SettingBusiness;

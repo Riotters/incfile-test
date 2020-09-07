@@ -8,13 +8,13 @@ import InvolvedIcon from "../../../../images/icons/get-involved-with-business-co
 import {color} from "../../../../components/styles/colors";
 import React from "react";
 import styled from "styled-components";
-import OvalBlueSVG from "../../../../images/oval-blue-4.inline.svg";
+import OvalSvg from "../../../../images/ovals/top-left-transparent-red3.inline.svg";
 import Curve from "../../../atoms/shapes/curve";
 import {gradient} from "../../../atoms/styles/colors";
 
 const ContainerWrapper = styled.div`
     background: rgb(255,255,255);
-    background-image: ${gradient.orange3};
+    background-image: ${gradient.green3};
     padding-bottom: 100px;
     position: relative;
     padding-top: 120px;
@@ -87,7 +87,14 @@ const TextBorderedList = styled.div`
 const OvalCenter = styled.div`
   position: absolute;
   right: 0;
-  top: 0;
+  bottom: 160px;
+  width: 720px;
+  transform: scaleX(-1);
+  display: block;
+      
+  @media (min-width: 1200px){
+        display: block;
+  }
 `
 
 const AbsoluteCurve = styled.div`
@@ -100,7 +107,7 @@ const AbsoluteCurve = styled.div`
 const ValidatingBusinessIdea = () => (
     <ContainerWrapper>
         <OvalCenter>
-            <OvalBlueSVG/>
+            <OvalSvg/>
         </OvalCenter>
 
         <Container>
