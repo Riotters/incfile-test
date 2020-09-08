@@ -169,6 +169,7 @@ const Counting = styled.div`
     color: white;
     border-radius: 100px;
     width: 30px;
+    min-width:30px;
     height: 30px;
     margin-left: 30px;
     margin-right: 30px;
@@ -201,7 +202,7 @@ const Panel = ({ children }) => {
     );
 };
 
-const AccordionWithCounting = ({ content, curve, curveRight, curveRightBottom, tab }) => {
+const AccordionWithCounting = ({ content, curve, curveRight, curveRightBottom, tab, color }) => {
     return (
         <VisibilitySensor partialVisibility once>
             {({ isVisible }) => (
@@ -236,6 +237,8 @@ const AccordionWithCounting = ({ content, curve, curveRight, curveRightBottom, t
                                                     ))}
                                                 </ul>
                                             )}
+
+                                            {item.textAfterList && (<p style={{ marginTop: 48 + "px" }}>{item.textAfterList}</p>)}
                                         </PanelWrapper>
                                     </Panel>
                                 </TabBox>

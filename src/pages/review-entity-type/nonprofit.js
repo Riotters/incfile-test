@@ -17,14 +17,14 @@ const IndexPage = () => (
   <Layout>
     <SEO title="What is a Nonprofit Organization? How to Start a Nonprofit" description="Learn all about nonprofit corporations, including the benefits & disadvantages, getting 501c3 status, and what's needed to get your company off the ground." />
     <Top imageName="mr-bulb-nonprofit-7282" imageAlt="Mr Bulb with seedling" ovalColor="yellow">
-      <h1>Starting a nonprofit can truly help make the world better</h1>
-      <p>Start for $0 + state fee. Learn how forming an LLC, an S-Corporation, an C-Corporation, or a Non Profit will impact both your liability and taxation.</p>
+      <h1>{top.header}</h1>
+      <p>{top.text}</p>
       <Buttonsbox>
         <Button content={top.button[0]} theme="primary56" width="200px" arrow />
         <Button content={top.button[1]} theme="secondary56" width="200px" arrow2 margin="16px 0 0 0" marginMD="0 0 0 16px" />
       </Buttonsbox>
     </Top>
-    <About />
+    <About content={about} />
     <Search />
     <Faq content={faq} />
     <Cta />
