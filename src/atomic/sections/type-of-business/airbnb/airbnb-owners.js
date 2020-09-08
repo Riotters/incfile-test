@@ -58,7 +58,7 @@ const LinksContainer = styled.div`
     justify-content: space-between;
     flex-wrap: wrap;
     
-    @media (min-width: 1000px) {
+    @media (min-width: 1100px) {
         width: 1000px;
     }
 `;
@@ -72,13 +72,10 @@ const LinkItem = styled.div`
     margin-bottom: 30px;
     position: relative;
     
-    @media (min-width: 470px) {
-        width: 470px;
-    }
-    
-    @media (min-width: 1000px) {
+    @media (min-width: 1100px) {
         margin-left: 15px;
         margin-right: 15px;
+        width: 470px;
     }
 `;
 
@@ -87,17 +84,21 @@ const AbsoluteCurve = styled.div`
     right: -25px;
     top: -25px;
     transform: rotate(0deg);
+    display: none;
+    
+    @media (min-width: 1100px){
+        display: block;
+    }
 `;
 
 const Oval = styled.div`
     position: absolute;
     top: 0;
     left: 0;
-    width: 420px;
-    display: none;
+    width: 100%;
   
-    @media (min-width: 720px){
-       display: block;
+    @media (min-width: 420px){
+       width: 420px;
     }
 `;
 
