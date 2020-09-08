@@ -1,31 +1,40 @@
 import React from "react";
 import AccordionWithCounting from "../../../../atomic/organisms/accordion/accordion-with-counting";
-import {AccordionCounting} from "../../../../static/type-of-business/tshirt-business";
+import {AccordionCounting} from "../../../../static/type-of-business/etsy-business";
 import Container from "../../../../atomic/container";
 import ContentCenter from "../../../../atomic/partials/content-center";
 import TextCenterLayout from "../../../../atomic/partials/heading-left";
 import styled from "styled-components";
-import EtsyLinks from "../../../../atomic/sections/type-of-business/tshirt-business/links";
+import EtsyLinks from "../../../../atomic/sections/type-of-business/etsy-business/links";
 import OvalSvg from "../../../../images/ovals/top-right-transparent-blue.inline.svg";
+import {Paragraph} from "../../../atoms/typography/paragraph";
+import {Link} from "gatsby";
 
 const HireEmployees = () => (
     <BlueContainer>
         <Oval>
-            <OvalSvg />
+            <OvalSvg/>
         </Oval>
         <Oval2>
-            <OvalSvg />
+            <OvalSvg/>
         </Oval2>
         <Container>
-            <ContentCenter>
-                <TextCenterLayout headline="Hire T-shirt Employees"
-                                  text="If you’re just running your T-shirt business solo, you don’t need to worry about employees. If you are hiring people to work for you, you will need to know what to do. See our 10 tips on hiring employees."/>
+            <ContentCenter contentWidth={770}>
+                <div>
+                    <TextCenterLayout headline="Hire Employees for Your Etsy Business" headlineWidth={770}/>
+
+                    <Paragraph big mixed={true}>
+                        If you’re just running your Etsy business solo, you don’t need to worry about employees. If you
+                        are hiring people to work for you, you will need to know what to do. See <Link to="/">our 10
+                        tips on hiring employees.</Link>
+                    </Paragraph>
+                </div>
                 <AccordionWithCounting content={AccordionCounting}/>
             </ContentCenter>
         </Container>
 
         <Container>
-            <EtsyLinks />
+            <EtsyLinks/>
         </Container>
     </BlueContainer>
 );
