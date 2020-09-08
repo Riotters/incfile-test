@@ -63,7 +63,7 @@ const LinksContainer = styled.div`
     justify-content: space-between;
     flex-wrap: wrap;
     
-    @media (min-width: 1000px) {
+    @media (min-width: 1100px) {
         width: 1000px;
     }
 `;
@@ -75,14 +75,12 @@ const LinkItem = styled.div`
     box-shadow: ${shadow.white1};
     width: 100%;
     margin-bottom: 30px;
+    position: relative;
     
-    @media (min-width: 470px) {
-        width: 470px;
-    }
-    
-    @media (min-width: 1000px) {
+    @media (min-width: 1100px) {
         margin-left: 15px;
         margin-right: 15px;
+        width: 470px;
     }
 `;
 

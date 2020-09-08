@@ -387,7 +387,7 @@ const Wrapper = styled.div`
   padding-bottom: 115px;
   position: relative;
 
-  @media (min-width: 769px) {
+  @media (min-width: 992px) {
     flex-direction: ${props => (props.layout !== "grid" ? "row" : "column")};
   }
 
@@ -400,7 +400,7 @@ const Wrapper = styled.div`
     transition: height 500ms;
     margin-left: auto;
 
-    @media (min-width: 769px) {
+    @media (min-width: 992px) {
       max-width: ${props => (props.layout !== "grid" ? "55%" : "")};
     }
 
@@ -416,7 +416,7 @@ const TabsWrapper = styled.div`
   width: 100%;
   position: relative;
 
-  @media (min-width: 769px) {
+  @media (min-width: 992px) {
     max-width: ${props => (props.layout !== "grid" ? "40%" : "")};
   }
 
@@ -444,6 +444,10 @@ const PanelWrapper = styled.article`
 
   h3 {
     margin-bottom: 48px;
+  }
+  
+  @media (min-width: 992px){
+    padding-left: 30px;
   }
 `
 

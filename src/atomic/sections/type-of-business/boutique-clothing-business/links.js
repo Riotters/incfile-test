@@ -29,13 +29,13 @@ const AmazonLinks = () => (
             <LinksContainer>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.facebook.com/groups/190482421294295/243189902690213/?notif_t=group_activity" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Amazon FBA Rockstars
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.facebook.com/groups/673668379421814/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Amazon FBA Competitive Edge (Junglescout)
                     </PathLink>
                     <AbsoluteCurve>
@@ -44,31 +44,31 @@ const AmazonLinks = () => (
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.facebook.com/groups/720303524721628/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         FBA Masters
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.facebook.com/groups/TAS.Private.Group/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         The Amazing Seller
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.facebook.com/groups/amazon.sellers.group/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Amazon Seller Group
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.linkedin.com/groups/8487171/profile" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Amazon professional Seller Central
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.linkedin.com/groups/8345666/profile" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         eCommerce SMBs
                     </PathLink>
                 </LinkItem>
@@ -83,37 +83,37 @@ const AmazonLinks = () => (
             <LinksContainer>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://sellercentral.amazon.com/forums/index.jspa" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Seller Central — Amazon’s dedicated seller forums
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.ampmpodcast.com/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         AM/PM Podcast from Amazon seller Manny Coats
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="http://community.daxdeegan.com/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Dax’s Amazon Community
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://forums.digitalpoint.com/forums/ecommerce.115/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Digital Point eCommerce forums
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://community.amztracker.com/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         AMZTracker forums
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.warriorforum.com/tags/fba.html" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Warrior Forums — Fulfillment by Amazon
                     </PathLink>
                 </LinkItem>
@@ -128,31 +128,31 @@ const AmazonLinks = () => (
             <LinksContainer>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="http://thesellersconference.com/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         The Sellers’ Conference
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.prospershow.com/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Prosper Show
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://internetretailingexpo.com/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Internet Retailing Expo
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.retailx.com/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         IRCE
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://sellerssummit.com/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Seller Summit
                     </PathLink>
                 </LinkItem>
