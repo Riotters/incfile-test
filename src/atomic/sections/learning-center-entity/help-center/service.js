@@ -64,6 +64,11 @@ const PlayButton = styled.button`
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
   }
 
   &:hover {
@@ -76,13 +81,13 @@ const ServiceSection = ({ className, content }) => (
     <Oval className="oval" height="652" width="652" bottom="5" left="0">
       <OvalSVG />
     </Oval>
-    <Oval className="oval" height="300" width="300" top="48" left="50" x="100">
+    <Oval className="oval" height="300" width="300" top="48" left="50" x="122">
       <Oval2SVG />
     </Oval>
     <Curve bottom="270" left="80" color={color.purple2}>
       <Curve2SVG />
     </Curve>
-    <HeadingCenter headline={content.header} textWidth="770" text={content.text} bottomMargin="80" />
+    <HeadingCenter headline={content.header} textWidth="770" text={content.text} bottomMargin="48" bottomMarginLG="80" />
     <ContentCenter>
       <Video>
         <Curve top="-25" right="-29" color={color.purple1}>
@@ -90,7 +95,9 @@ const ServiceSection = ({ className, content }) => (
         </Curve>
         <Image filename="newspaper-433445" />
         <PlayButton>
-          <PlayerSVG />
+          <span>
+            <PlayerSVG />
+          </span>
         </PlayButton>
       </Video>
     </ContentCenter>

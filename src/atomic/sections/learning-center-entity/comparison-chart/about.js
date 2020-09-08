@@ -8,7 +8,13 @@ import Oval2SVG from "../../../../images/ovals/bottom-right-transparent-babyblue
 
 const About = styled.section`
   position: relative;
-  padding-bottom: 64px;
+  padding-top: 104px;
+  padding-bottom: 0;
+
+  @media (min-width: 992px) {
+    padding-top: 0;
+    padding-bottom: 64px;
+  }
 
   p {
     color: ${color.grey2};

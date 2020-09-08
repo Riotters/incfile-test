@@ -18,7 +18,7 @@ const BusinessStructureSection = ({ className, content }) => (
     <Oval width="570" height="570" top="38" right="0">
       <OvalSVG />
     </Oval>
-    <HeadingCenter headline={content.header} headlineWidth="770" bottomMargin="65" />
+    <HeadingCenter headline={content.header} headlineWidth="770" bottomMargin="24" bottomMarginLG="65" />
     <ContentCenter>
       <Table content={content.faq} curve curveRight curveColor={color.blue1}/>
     </ContentCenter>
