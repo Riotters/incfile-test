@@ -29,6 +29,7 @@ import ColorFulCircleWithTextAndList from "../../atomic/molecules/blocks/colorfu
 import Rings from "../../images/rings.inline.svg";
 import {RingText} from "../../static/type-of-business/consulting-business";
 import OvalSvg from "../../images/ovals/bottom-left-transparent-blue3.inline.svg";
+import {color} from "../../atomic/atoms/styles/colors";
 
 const ConsultingBusiness = () => (
     <Layout>
@@ -46,9 +47,7 @@ const ConsultingBusiness = () => (
                 using thousands of varied skills and techniques.
             </p>
             <ButtonsBox>
-                <Button theme="primary56" marginMD="0 24px 0 0" arrow>
-                    Start Now
-                </Button>
+                <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{text: "Start Now", url: "/"}} />
             </ButtonsBox>
 
             <RatingRow>
@@ -70,7 +69,7 @@ const ConsultingBusiness = () => (
 
                 <CollapseWrapper>
                     <PanelWrapper>
-                        <Paragraph big>
+                        <Paragraph big style={{marginBottom: "48px"}}>
                             Other businesses hire consulting experts because they want to “buy in” expert opinions,
                             ideas
                             and resources that don’t exist in their organization already. If you have a proven track
@@ -81,7 +80,7 @@ const ConsultingBusiness = () => (
                             organization without them having to hire expert staff on a permanent or long-term basis.
                         </Paragraph>
 
-                        <Paragraph big style={{marginTop: "48px"}}>
+                        <Paragraph big>
                             Due to the expertise offered by consultants, the rates charged are normally high. So a
                             consulting business is a great business to start if you want to make a great income and not
                             work
@@ -150,7 +149,7 @@ const ConsultingBusiness = () => (
                             </ListBox>
                         </ListWrapper>
 
-                        <Paragraph big style={{fontWeight: "bold", marginTop: "48px"}}>
+                        <Paragraph big style={{fontWeight: "bold", marginTop: "48px", color: color.black}}>
                             By the time you’ve read through our complete consulting business guide, you will have all
                             the
                             information you need to set up and manage a thriving consulting business. Let’s get into it.
@@ -202,7 +201,7 @@ const ConsultingBusiness = () => (
                         <Heading size={3}>
                             Questions to Ask Before You Start a Consulting Business
                         </Heading>
-                        <Paragraph big style={{marginBottom: "48px", fontWeight: "bold"}}>
+                        <Paragraph big style={{marginBottom: "24px", fontWeight: "bold", color: color.black}}>
                             Is Consulting Entrepreneurship For You?
                         </Paragraph>
                         <Paragraph big>
@@ -216,14 +215,14 @@ const ConsultingBusiness = () => (
                             make
                             changes.
                         </Paragraph>
-                        <Paragraph big>
+                        <Paragraph big style={{marginBottom: "48px"}}>
                             Being a consultant is all about “demonstrating your value.” Businesses will be expecting
                             excellent results for the fees they are paying, so it’s all about delivering in accordance
                             with
                             those expectations.
                         </Paragraph>
 
-                        <Paragraph big style={{marginBottom: "48px", fontWeight: "bold"}}>
+                        <Paragraph big style={{marginBottom: "24px", fontWeight: "bold", color: color.black}}>
                             What Are the Main Skills, Expertise and Experience to Be a Successful Consulting
                             Entrepreneur?
                         </Paragraph>
@@ -281,7 +280,7 @@ const ConsultingBusiness = () => (
                             />
                         </div>
 
-                        <Paragraph big style={{marginBottom: "48px", fontWeight: "bold"}}>
+                        <Paragraph big style={{marginBottom: "24px", fontWeight: "bold", color: color.black}}>
                             What Are the Main Skills, Expertise and Experience to Be a Successful Consulting
                             Entrepreneur?
                         </Paragraph>
@@ -363,17 +362,17 @@ const ListBox = styled.div`
 
 const TabsWrapper = styled.section`
     position: relative;
+    margin-top: 100px;
 `;
 
 const Oval = styled.div`
     position: absolute;
     left: 0;
     top: 0;
-    width: 420px;
-    display: none;
+    width: 100%;
     
-    @media (min-width: 1200px) {
-        display: block;
+    @media (min-width: 420px) {
+        width: 420px;
     }
 `;
 

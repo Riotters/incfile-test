@@ -14,7 +14,7 @@ const UsefulTools = ({toolsList, headlineText, description, ...rest}) => (
 );
 
 const Wrapper = styled.section`
-padding-top: 100px;
+    padding-top: 100px;
 `;
 
 UsefulTools.propTypes = {

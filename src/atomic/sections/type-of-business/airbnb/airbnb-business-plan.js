@@ -7,17 +7,17 @@ import {Heading} from "../../../atoms/typography/heading";
 import CountingTextBoxed from "../../../molecules/text-blocks/counting-text-boxed";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import Container from "../../../container";
-import OvalGreenSVG from "../../../../images/oval-green.inline.svg";
-import OvalSVG from "../../../../images/oval-pink.inline.svg";
+import OvalGreenSVG from "../../../../images/ovals/bottom-right-transparent-green3.inline.svg";
+import OvalSVG from "../../../../images/ovals/top-left-transparent-pink.inline.svg";
 
 const BusinessOwnerResponsibilities = styled.section`
   position: relative;
   padding-top: 100px;
   padding-bottom: 64px;
   width: 100%;
-  
+  max-width: 770px;
+      
   @media (min-width: 770px) {
-    width: 770px;
     margin: 0 auto;
   }
 
@@ -36,11 +36,10 @@ const Oval = styled.div`
   left: 0;
   top: 0;
   transform: rotate(180deg);
-  
-  display: none;
+  width: 100%;
   
   @media (min-width: 720px){
-    display: block;
+    width: 720px
   }
 `
 
@@ -48,11 +47,10 @@ const OvalCenter = styled.div`
   position: absolute;
   right: 0;
   top: 38%;
-  
-  display: none;
+  width: 100%;
   
   @media (min-width: 720px){
-    display: block;
+    width: 720px;
   }
 `
 

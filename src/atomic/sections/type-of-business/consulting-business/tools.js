@@ -6,11 +6,19 @@ import UsefulTools from "../../../partials/useful-tools";
 import {toolsList} from "../../../../static/type-of-business/consulting-business";
 import TextCenterLayout from "../../../partials/heading-center";
 import PathLink from "../../../molecules/buttons/path";
-import {color} from "../../../atoms/styles/colors";
+import {color, gradient} from "../../../atoms/styles/colors";
 import {Paragraph} from "../../../atoms/typography/paragraph";
+import OvalSvg from "../../../../images/ovals/bottom-left-transparent-orange.inline.svg";
+import OvalSvg2 from "../../../../images/ovals/top-right-transparent-yellow.inline.svg";
 
 const ToolsAndLinks = () => (
     <Wrapper>
+        <Oval>
+            <OvalSvg />
+        </Oval>
+        <Oval2>
+            <OvalSvg2 />
+        </Oval2>
         <Container>
             <TextCenterLayout headline="Social Media Groups for Your Consulting Business"
                               text="Connecting with other business owners in your industry can be incredibly helpful. Here are some of the best social media groups:"/>
@@ -90,8 +98,10 @@ const ToolsAndLinks = () => (
 );
 
 const Wrapper = styled.div`
-    padding-top: 0px;
+    padding-top: 100px;
     margin-bottom: 200px;
+    position: relative;
+    background-image: ${gradient.orange3};
 `;
 
 const LinksContainer = styled.div`
@@ -124,4 +134,29 @@ const LinkItem = styled.div`
     }
 `;
 
+const Oval = styled.div`
+    position: absolute;
+    right: 0;
+    top: 524px;
+    transform: scaleX(-1);
+    width: 100%;
+    display: none;
+    
+    @media (min-width: 570px) {
+        width: 570px;
+    }
+`;
+
+const Oval2 = styled.div`
+    position: absolute;
+    left: 0;
+    bottom: 425px;
+    transform: rotate(180deg);
+    width: 100%;
+    display: none;
+    
+    @media (min-width: 720px) {
+        width: 720px;
+    }
+`;
 export default ToolsAndLinks;

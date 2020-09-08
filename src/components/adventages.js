@@ -32,7 +32,6 @@ const Box = styled.div`
     border-radius: 20px;
 
     @media (min-width: ${props => props.width}){
-        width: ${props => props.width};
         max-width: ${props => props.width};
     }
     
