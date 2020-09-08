@@ -81,7 +81,7 @@ const ServiceSection = ({ className, content }) => (
     <Oval className="oval" height="652" width="652" bottom="5" left="0">
       <OvalSVG />
     </Oval>
-    <Oval className="oval" height="300" width="300" top="48" left="50" x="100">
+    <Oval className="oval" height="300" width="300" top="48" left="50" x="122">
       <Oval2SVG />
     </Oval>
     <Curve bottom="270" left="80" color={color.purple2}>
@@ -93,7 +93,7 @@ const ServiceSection = ({ className, content }) => (
         <Curve top="-25" right="-29" color={color.purple1}>
           <CurveSVG />
         </Curve>
-        <Image filename="newspaper-433445" />
+        <Image filename="comparison-chart-video-3611" />
         <PlayButton>
           <span>
             <PlayerSVG />

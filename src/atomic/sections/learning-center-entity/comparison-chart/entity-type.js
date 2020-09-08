@@ -23,7 +23,7 @@ const EntityTypeSection = ({ className, content }) => (
             <OvalSVG />
         </Oval>
         <HeadingCenter headline={content.header} headlineWidth="700" bottomMargin="80" />
-        <CenterGrid contentWidth="970" columnsSM="1" columnsMD="2">
+        <CenterGrid contentWidth="970" columnsSM="1" columnsMD="2" curve>
             {content.buttons.map((button, i) => (
                 <BoxedButton content={button} icon={icons[i]} iconColor={colors[i]} iconPadding="12" />
             ))}

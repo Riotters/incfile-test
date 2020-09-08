@@ -17,10 +17,12 @@ const Wrapper = styled.div`
   flex-direction: column;
   width: 100%;
   position: relative;
+  overflow-x: scroll;
   margin-top: ${(props) => (props.tab ? "" : "80")};
 
   @media (min-width: 769px) {
     padding: ${(props) => (props.tab ? "" : "25px 29px 0")};
+    overflow-x: auto;
   }
 `;
 
@@ -245,7 +247,7 @@ const Accordion = ({ content, curve, curveRight, curveRightBottom, curveLeft, cu
               <CurveSVG />
             </Curve>
           )}
-          <GridTableRow className="head" content={content.headers} header headerSize="5" />
+          <GridTableRow className="head" content={content.headers} header headerSize="5" columns="minmax(368px, 1fr) 160px 160px 160px 160px" />
           <Tabs>
             <TabsWrapper>
               {content.items.map((item) => (
@@ -260,7 +262,7 @@ const Accordion = ({ content, curve, curveRight, curveRightBottom, curveLeft, cu
                       <ArrowSVG />
                     </Icon>
                     <Content>
-                      <GridTableRow className="row" content={item.row} />
+                      <GridTableRow className="row" content={item.row} columns="minmax(288px, 1fr) 160px 160px 160px 160px" />
                     </Content>
                   </Tab>
                   <Panel>
