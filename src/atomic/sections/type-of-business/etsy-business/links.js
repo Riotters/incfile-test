@@ -25,7 +25,7 @@ const EtsyLinks = () => (
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.facebook.com/groups/EtsySellersUnited/about/" target="_BLANK" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Etsy Sellers United (Facebook)
                     </PathLink>
                     <Paragraph style={{marginTop: "20px"}} bottomMargin={0}>
@@ -34,14 +34,14 @@ const EtsyLinks = () => (
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.facebook.com/groups/EtsySellersandBuyers/about/" target="_BLANK" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Etsy Sellers and Buyers! (Facebook)
                     </PathLink>
                     <Paragraph style={{marginTop: "20px"}} bottomMargin={0}>A place for Etsy sellers to showcase their items and Etsy buyers to share the items they love</Paragraph>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.reddit.com/r/Etsy/" target="_BLANK" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Etsy Subreddit (Reddit)
                     </PathLink>
                     <Paragraph style={{marginTop: "20px"}} bottomMargin={0}>A discussion group for all things Etsy</Paragraph>

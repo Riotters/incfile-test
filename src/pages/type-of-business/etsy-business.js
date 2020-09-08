@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
 import Top from "../../atomic/partials/top";
-import Button from "../../components/button";
+import Button from "../../atomic/molecules/buttons/button";
 import RatingRow from "../../atomic/atoms/boxes/rating-row";
 import CartBlock from "../../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../../atomic/molecules/blocks/rating-block";
@@ -39,14 +39,13 @@ import PlaneIcon from "../../images/icons/plane.inline.svg";
 import RockerIcon from "../../images/icons/rocket.inline.svg";
 import SettingBusiness from "../../atomic/sections/type-of-business/etsy-business/setting-business";
 import OrderNow from "../../atomic/sections/type-of-business/etsy-business/order-now";
-import {toolsList} from "../../static/type-of-business/etsy-business";
+import {RingText, toolsList} from "../../static/type-of-business/etsy-business";
 import HireEmployees from "../../atomic/sections/type-of-business/etsy-business/hire-employees";
 import UsefulTools from "../../atomic/partials/useful-tools";
 import Conclusion from "../../atomic/sections/general/conclusion";
 import BlueBoxWithAbsoluteText from "../../atomic/molecules/text-blocks/blue-box-with-absolute-text";
 import ColorFulCircleWithTextAndList from "../../atomic/molecules/blocks/colorful-circle-with-text-and-list";
 import ColorfulRing2 from "../../images/rings-7.inline.svg";
-import {RingText} from "../../static/type-of-business/etsy-business";
 import Adventages from "../../components/adventages";
 import AdventagesWithLongText from "../../atomic/molecules/mixed-blocks/adventages-with-long-text";
 import TabOvalSvg from "../../images/ovals/bottom-right-transparent-green3.inline.svg";
@@ -54,6 +53,8 @@ import TabOval2Svg from "../../images/ovals/bottom-right-transparent-babyblue2.i
 import BusinessPlanOvalSvg from "../../images/ovals/top-left-transparent-pink.inline.svg";
 import BlueContainerOvalSvg from "../../images/ovals/top-right-transparent-blue.inline.svg";
 import Curve from "../../atomic/atoms/shapes/curve";
+import {Link} from "gatsby";
+import {shadow} from "../../atomic/atoms/styles/shadows";
 
 const EtsyBusiness = () => (
     <Layout>
@@ -201,15 +202,15 @@ const EtsyBusiness = () => (
                         <Heading size={3} style={{fontWeight: "bold", fontSize: "24px", marginBottom: "64px"}}>How to
                             Make
                             Money on Etsy</Heading>
-                        <Paragraph big
-                                   style={{
-                                       fontWeight: "bold",
-                                       color: color.black,
-                                       fontSize: "24px",
-                                       marginBottom: "24px"
-                                   }}>
+                        <Heading big
+                                 style={{
+                                     fontWeight: "bold",
+                                     color: color.black,
+                                     fontSize: "24px",
+                                     marginBottom: "24px"
+                                 }}>
                             Key Background Stats for Etsy Businesses
-                        </Paragraph>
+                        </Heading>
                         <Paragraph big style={{marginBottom: "76px"}}>
                             The size and opportunity in the Etsy marketplace might surprise you:
                         </Paragraph>
@@ -547,7 +548,7 @@ const EtsyBusiness = () => (
                     </CountingTextBoxed>
 
                     <Paragraph big mixed={true} style={{marginTop: "50px"}}>
-                        We’ve got the perfect <span style={{color: color.blue1, fontWeight: "bold"}}>guide to writing your business plan.</span>
+                        We’ve got the perfect <Link to="/">guide to writing your business plan.</Link>
                     </Paragraph>
                 </CenterBox>
             </Container>
@@ -578,7 +579,7 @@ const EtsyBusiness = () => (
                             SvgImage={HandsIcon}
                             textBackgroundColor="transparent"
                             imageBackgroundColor={color.white}
-                            imageShadowColor="#ababab"
+                            imageShadowColor={shadow.white2}
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
@@ -588,12 +589,14 @@ const EtsyBusiness = () => (
                             width={100}
                             widthUnit="%"
                         >
-                            <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                        mixed={true}>
-                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                    <ArrowSVG/>
-                                </IconCircle>
-                                Sole Proprietorship
+                                <FlexLink to="/">
+                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                        <ArrowSVG/>
+                                    </IconCircle>
+                                    Sole Proprietorship
+                                </FlexLink>
                             </Paragraph>
 
                             <Paragraph big>
@@ -607,7 +610,7 @@ const EtsyBusiness = () => (
                             SvgImage={LimitedIcon}
                             textBackgroundColor="transparent"
                             imageBackgroundColor={color.white}
-                            imageShadowColor="#ababab"
+                            imageShadowColor={shadow.white2}
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
@@ -617,12 +620,14 @@ const EtsyBusiness = () => (
                             width={100}
                             widthUnit="%"
                         >
-                            <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                        mixed={true}>
-                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                    <ArrowSVG/>
-                                </IconCircle>
-                                Limited Liability Company or LLC
+                                <FlexLink to="/">
+                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                        <ArrowSVG/>
+                                    </IconCircle>
+                                    Limited Liability Company or LLC
+                                </FlexLink>
                             </Paragraph>
 
                             <Paragraph big>
@@ -636,7 +641,7 @@ const EtsyBusiness = () => (
                             SvgImage={SeriesIcon}
                             textBackgroundColor="transparent"
                             imageBackgroundColor={color.white}
-                            imageShadowColor="#ababab"
+                            imageShadowColor={shadow.white2}
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
@@ -646,12 +651,14 @@ const EtsyBusiness = () => (
                             width={100}
                             widthUnit="%"
                         >
-                            <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                        mixed={true}>
-                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                    <ArrowSVG/>
-                                </IconCircle>
-                                Series LLC
+                                <FlexLink to="/">
+                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                        <ArrowSVG/>
+                                    </IconCircle>
+                                    Series LLC
+                                </FlexLink>
                             </Paragraph>
 
                             <Paragraph big>
@@ -665,7 +672,7 @@ const EtsyBusiness = () => (
                             SvgImage={PlaneIcon}
                             textBackgroundColor="transparent"
                             imageBackgroundColor={color.white}
-                            imageShadowColor="#ababab"
+                            imageShadowColor={shadow.white2}
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
@@ -675,12 +682,14 @@ const EtsyBusiness = () => (
                             width={100}
                             widthUnit="%"
                         >
-                            <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                        mixed={true}>
-                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                    <ArrowSVG/>
-                                </IconCircle>
-                                S Corporation
+                                <FlexLink to="/">
+                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                        <ArrowSVG/>
+                                    </IconCircle>
+                                    S Corporation
+                                </FlexLink>
                             </Paragraph>
 
                             <Paragraph big>
@@ -693,7 +702,7 @@ const EtsyBusiness = () => (
                             SvgImage={RockerIcon}
                             textBackgroundColor="transparent"
                             imageBackgroundColor={color.white}
-                            imageShadowColor="#ababab"
+                            imageShadowColor={shadow.white2}
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
@@ -703,12 +712,14 @@ const EtsyBusiness = () => (
                             width={100}
                             widthUnit="%"
                         >
-                            <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                        mixed={true}>
-                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                    <ArrowSVG/>
-                                </IconCircle>
-                                C Corporation
+                                <FlexLink to="/">
+                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                        <ArrowSVG/>
+                                    </IconCircle>
+                                    C Corporation
+                                </FlexLink>
                             </Paragraph>
 
                             <Paragraph big>
@@ -719,16 +730,16 @@ const EtsyBusiness = () => (
 
                         <Paragraph big style={{paddingTop: "120px"}} mixed={true}>
                             If you've still got questions about different types of business entities, check out our
-                            <span className="blue big">in-depth guide</span>, or hear our answers to the <span
-                            className="blue big">most common questions</span> about LLCs vs.
+                            <Link to="/">in-depth guide</Link>, or hear our answers to the <Link
+                            to="/">most common questions</Link> about LLCs vs.
                             corporations.
                         </Paragraph>
                         <Paragraph big mixed={true}>
-                            If you're ready to start your Etsy LLC, you can check out our <span className="blue big">LLC formation guide for your
-                            state</span>, or have Incfile take care of all the paperwork for you.
+                            If you're ready to start your Etsy LLC, you can check out our <Link to="/">LLC formation guide for your
+                            state</Link>, or have Incfile take care of all the paperwork for you.
                         </Paragraph>
 
-                        <Button theme="primary48" arrow>
+                        <Button theme="primary48" arrow width="365px" content={{url: "/", text: "Start your business with us, today!"}}>
                             Start your business with us, today!
                         </Button>
                     </ImageContent>
@@ -972,6 +983,12 @@ const ToolsOval = styled.div`
 
 const ToolsWrapper = styled.section`
     position: relative;
+`;
+
+const FlexLink = styled(Link)`
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 `;
 
 export default EtsyBusiness;
