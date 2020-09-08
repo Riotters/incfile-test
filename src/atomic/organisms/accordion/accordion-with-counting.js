@@ -202,7 +202,7 @@ const Panel = ({ children }) => {
     );
 };
 
-const AccordionWithCounting = ({ content, curve, curveRight, curveRightBottom, tab, color }) => {
+const AccordionWithCounting = ({ content, curve, curveRight, curveRightBottom, tab}) => {
     return (
         <VisibilitySensor partialVisibility once>
             {({ isVisible }) => (
