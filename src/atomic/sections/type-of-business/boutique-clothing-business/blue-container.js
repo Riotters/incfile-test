@@ -27,10 +27,10 @@ const GridSection = styled.div`
 
 const TitleBox = styled.div`
     width: 100%;
+    max-width: 750px;
     position: relative;
      
     @media (min-width:750px) {
-        width: 750px;
         margin: 0 auto;
     }
     
@@ -52,7 +52,7 @@ const GridSectionList = styled.div`
         margin-bottom: 70px;
     }
     
-    @media (min-width: 970px) {
+    @media (min-width: 1024px) {
         width: 970px;
         margin: 120px auto 0;
     }
@@ -90,7 +90,7 @@ const BlueContainer = () => (
                         <Curve color={color.blue1}/>
                     </AbsoluteCurve>
                     <Heading size={3}>Validating Your Boutique Business Idea</Heading>
-                    <Paragraph>
+                    <Paragraph big>
                         Remember, the ideas above are just a starting point, You can define and tweak exactly what type of boutique clothing business you want to run by conducting your own research. Before committing too much time, energy and money into your new retail clothing store, it’s important to test the marketplace.
                     </Paragraph>
                 </TitleBox>

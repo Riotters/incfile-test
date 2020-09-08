@@ -105,11 +105,11 @@ const ImageBoxes = styled.div`
   padding-top: 112px;
   width: 100%;
 
-  @media(min-width: 769px) {
+  @media(min-width: 1024px) {
     grid-template-columns: 1fr 1fr;
   }
   
-  @media (min-width: 970px) {
+  @media (min-width: 1024px) {
     width: 970px;
     margin: 0 auto;
   }

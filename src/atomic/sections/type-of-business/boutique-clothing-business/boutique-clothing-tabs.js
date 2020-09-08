@@ -418,7 +418,9 @@ const BoutiqueClothingTabs = ({layout, columns}) => (
                                         <BlueBoxWithAbsoluteText absoluteText="$700K"
                                                                  text="Worldwide revenue for online clothing is expected to rise to over $700 billion by 2022"/>
 
-                                        <CircleWithText style={{marginBottom: "48px"}} textInsideCircle="9" textLine="Expected revenue growth of Online boutique a year in the U.S." withBg={true} SvgChart={CircleIcon}
+                                        <CircleWithText style={{marginBottom: "48px"}} textInsideCircle="9"
+                                                        textLine="Expected revenue growth of Online boutique a year in the U.S."
+                                                        withBg={true} SvgChart={CircleIcon}
                                                         symbol="%"/>
 
                                         <Adventages
@@ -464,182 +466,165 @@ const BoutiqueClothingTabs = ({layout, columns}) => (
                                             and challenges.
                                         </Paragraph>
 
-                                        <Heading size={2} style={{fontSize: "24px", textAlign: "left"}}>
+                                        <Heading size={3} style={{
+                                            fontSize: "20px",
+                                            textAlign: "left",
+                                            fontFamily: "Avenir-Heavy"
+                                        }}>
                                             Starting a Traditional Brick-and-Mortar Clothing Boutique
                                         </Heading>
 
-                                        <Heading size={3} style={{fontSize: "20px", textAlign: "left"}}>
+                                        <Heading size={3} style={{
+                                            fontSize: "20px",
+                                            textAlign: "left",
+                                            fontFamily: "Avenir-Heavy"
+                                        }}>
                                             Advantages
                                         </Heading>
 
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                headline="You get visibility on the street, so passing customers can drop into your clothing store"
-                                                width="100%"
-                                            />
-                                        </div>
+                                        <Adventages
+                                            headline="You get visibility on the street, so passing customers can drop into your clothing store"
+                                            width="100%"
+                                        />
 
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                headline="It’s easy to browse a range of clothing quickly so customers can find something they like"
-                                                width="100%"
-                                            />
-                                        </div>
+                                        <Adventages
+                                            headline="It’s easy to browse a range of clothing quickly so customers can find something they like"
+                                            width="100%"
+                                        />
 
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                headline="Customers can try on clothing right then to see how they look"
-                                                width="100%"
-                                            />
-                                        </div>
+                                        <Adventages
+                                            headline="Customers can try on clothing right then to see how they look"
+                                            width="100%"
+                                        />
 
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                headline="Returns of clothing are likely to be minimal"
-                                                width="100%"
-                                            />
-                                        </div>
+                                        <Adventages
+                                            headline="Returns of clothing are likely to be minimal"
+                                            width="100%"
+                                        />
 
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                headline="There’s likely to be less competition, depending on where you’re located"
-                                                width="100%"
-                                            />
-                                        </div>
+                                        <Adventages
+                                            headline="There’s likely to be less competition, depending on where you’re located"
+                                            width="100%"
+                                        />
 
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                headline="You can display clothes and create an atmosphere for your boutique to build ambiance"
-                                                width="100%"
-                                            />
-                                        </div>
+                                        <Adventages
+                                            headline="You can display clothes and create an atmosphere for your boutique to build ambiance"
+                                            width="100%"
+                                        />
 
-                                        <Heading size={3} style={{fontSize: "20px", textAlign: "left"}}>
+                                        <Heading size={3} style={{
+                                            fontSize: "20px",
+                                            textAlign: "left",
+                                            fontFamily: "Avenir-Heavy",
+                                            marginTop: "48px"
+                                        }}>
                                             Disadvantages
                                         </Heading>
 
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                circleBackgroundColor={color.red1}
-                                                circleBackgroundShadow={shadow.red1}
-                                                disadventage={true}
-                                                headline="Your startup costs will be high as you will need to lease retail space and pay for fixtures, fittings and other expenses for your store"
-                                                width="100%"
-                                            />
-                                        </div>
+                                        <Adventages
+                                            circleBackgroundColor={color.red1}
+                                            circleBackgroundShadow={shadow.red1}
+                                            disadventage={true}
+                                            headline="Your startup costs will be high as you will need to lease retail space and pay for fixtures, fittings and other expenses for your store"
+                                            width="100%"
+                                        />
 
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                circleBackgroundColor={color.red1}
-                                                circleBackgroundShadow={shadow.red1}
-                                                disadventage={true}
-                                                headline="Ongoing bills can be high, especially for lighting and heating"
-                                                width="100%"
-                                            />
-                                        </div>
+                                        <Adventages
+                                            circleBackgroundColor={color.red1}
+                                            circleBackgroundShadow={shadow.red1}
+                                            disadventage={true}
+                                            headline="Ongoing bills can be high, especially for lighting and heating"
+                                            width="100%"
+                                        />
 
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                circleBackgroundColor={color.red1}
-                                                circleBackgroundShadow={shadow.red1}
-                                                disadventage={true}
-                                                headline="Staff should be onsite whenever you are open, which means you’ll likely need to pay someone else if you want to take a break or vacation"
-                                                width="100%"
-                                            />
-                                        </div>
+                                        <Adventages
+                                            circleBackgroundColor={color.red1}
+                                            circleBackgroundShadow={shadow.red1}
+                                            disadventage={true}
+                                            headline="Staff should be onsite whenever you are open, which means you’ll likely need to pay someone else if you want to take a break or vacation"
+                                            width="100%"
+                                        />
 
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                circleBackgroundColor={color.red1}
-                                                circleBackgroundShadow={shadow.red1}
-                                                disadventage={true}
-                                                headline="You will need to hold garments in a variety of styles and sizes, which locks up cash flow"
-                                                width="100%"
-                                            />
-                                        </div>
+                                        <Adventages
+                                            circleBackgroundColor={color.red1}
+                                            circleBackgroundShadow={shadow.red1}
+                                            disadventage={true}
+                                            headline="You will need to hold garments in a variety of styles and sizes, which locks up cash flow"
+                                            width="100%"
+                                        />
 
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                circleBackgroundColor={color.red1}
-                                                circleBackgroundShadow={shadow.red1}
-                                                disadventage={true}
-                                                headline="The traditional clothing boutique business in the U.S. is shrinking at a rate of around 2 percent a year"
-                                                width="100%"
-                                            />
-                                        </div>
+                                        <Adventages
+                                            circleBackgroundColor={color.red1}
+                                            circleBackgroundShadow={shadow.red1}
+                                            disadventage={true}
+                                            headline="The traditional clothing boutique business in the U.S. is shrinking at a rate of around 2 percent a year"
+                                            width="100%"
+                                        />
 
                                         <Heading size={2} style={{fontSize: "24px", textAlign: "left"}}>
                                             Starting an Online Clothing Boutique
                                         </Heading>
 
-                                        <Heading size={3} style={{fontSize: "20px", textAlign: "left"}}>
+                                        <Heading size={3} style={{
+                                            fontSize: "20px",
+                                            textAlign: "left",
+                                            fontFamily: "Avenir-Heavy",
+                                            marginTop: "48px"
+                                        }}>
                                             Advantages
                                         </Heading>
 
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                headline="Much lower startup costs, including expenses involved in setting up an ecommerce website, buying inventory and marketing"
-                                                width="100%"
-                                            />
-                                        </div>
+                                        <Adventages
+                                            headline="Much lower startup costs, including expenses involved in setting up an ecommerce website, buying inventory and marketing"
+                                            width="100%"
+                                        />
 
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                headline="Your ongoing expenses will be much lower since you can run an online boutique by yourself"
-                                                width="100%"
-                                            />
-                                        </div>
+                                        <Adventages
+                                            headline="Your ongoing expenses will be much lower since you can run an online boutique by yourself"
+                                            width="100%"
+                                        />
 
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                headline="The online clothing boutique business is growing"
-                                                width="100%"
-                                            />
-                                        </div>
+                                        <Adventages
+                                            headline="The online clothing boutique business is growing"
+                                            width="100%"
+                                        />
 
-                                        <Heading size={3} style={{fontSize: "20px", textAlign: "left"}}>
+                                        <Heading size={3}
+                                                 style={{fontSize: "20px", textAlign: "left", marginTop: "48px"}}>
                                             Disadvantages
                                         </Heading>
 
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                circleBackgroundColor={color.red1}
-                                                circleBackgroundShadow={shadow.red1}
-                                                disadventage={true}
-                                                headline="It’s more difficult for potential customers to browse items like they could in a store"
-                                                width="100%"
-                                            />
-                                        </div>
+                                        <Adventages
+                                            circleBackgroundColor={color.red1}
+                                            circleBackgroundShadow={shadow.red1}
+                                            disadventage={true}
+                                            headline="It’s more difficult for potential customers to browse items like they could in a store"
+                                            width="100%"
+                                        />
 
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                circleBackgroundColor={color.red1}
-                                                circleBackgroundShadow={shadow.red1}
-                                                disadventage={true}
-                                                headline="There’s much more competition for online clothing sales, as they’re not limited by location or geography"
-                                                width="100%"
-                                            />
-                                        </div>
+                                        <Adventages
+                                            circleBackgroundColor={color.red1}
+                                            circleBackgroundShadow={shadow.red1}
+                                            disadventage={true}
+                                            headline="There’s much more competition for online clothing sales, as they’re not limited by location or geography"
+                                            width="100%"
+                                        />
 
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                circleBackgroundColor={color.red1}
-                                                circleBackgroundShadow={shadow.red1}
-                                                disadventage={true}
-                                                headline="Because customers can’t try clothing on before they purchase, return rates can be very high (some estimates indicate returns will be around half of what you sell!)"
-                                                width="100%"
-                                            />
-                                        </div>
+                                        <Adventages
+                                            circleBackgroundColor={color.red1}
+                                            circleBackgroundShadow={shadow.red1}
+                                            disadventage={true}
+                                            headline="Because customers can’t try clothing on before they purchase, return rates can be very high (some estimates indicate returns will be around half of what you sell!)"
+                                            width="100%"
+                                        />
 
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                circleBackgroundColor={color.red1}
-                                                circleBackgroundShadow={shadow.red1}
-                                                disadventage={true}
-                                                headline="It’s much harder to distinguish yourself online than in a physical location"
-                                                width="100%"
-                                            />
-                                        </div>
+                                        <Adventages
+                                            circleBackgroundColor={color.red1}
+                                            circleBackgroundShadow={shadow.red1}
+                                            disadventage={true}
+                                            headline="It’s much harder to distinguish yourself online than in a physical location"
+                                            width="100%"
+                                        />
 
                                         <Paragraph big style={{marginBottom: "48px"}}>
                                             It’s vital to decide on the approach you want to take. The advice we present
@@ -658,11 +643,15 @@ const BoutiqueClothingTabs = ({layout, columns}) => (
                                             the things you can expect.
                                         </Paragraph>
 
-                                        <Heading size={2} style={{fontSize: "24px", textAlign: "left"}}>
+                                        <Heading size={3} style={{
+                                            fontSize: "20px",
+                                            textAlign: "left",
+                                            fontFamily: "Avenir-Heavy"
+                                        }}>
                                             A Day in the Life of a Retail Business Owner
                                         </Heading>
 
-                                        <Paragraph big style={{marginBottom: "48px"}}>
+                                        <Paragraph big style={{marginBottom: "24px"}}>
                                             Here are some of the typical tasks you’ll be performing for your boutique
                                             clothing business on a daily basis.
                                         </Paragraph>
@@ -710,7 +699,13 @@ const BoutiqueClothingTabs = ({layout, columns}) => (
                                             </Paragraph>
                                         </CountingTextBoxed>
 
-                                        <Heading size={2} style={{fontSize: "24px", textAlign: "left"}}>
+                                        <Heading size={3} style={{
+                                            fontSize: "20px",
+                                            textAlign: "left",
+                                            fontFamily: "Avenir-Heavy",
+                                            marginTop: "48px",
+                                            color: color.black
+                                        }}>
                                             Skills Needed by a Boutique Business Entrepreneur
                                         </Heading>
                                         <Paragraph big style={{marginBottom: "48px"}}>
@@ -718,40 +713,30 @@ const BoutiqueClothingTabs = ({layout, columns}) => (
                                             small business owner.
                                         </Paragraph>
 
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                headline="Ability to research new trends and tastes in the clothing marketplace and garment industry"
-                                                width="100%"
-                                            />
-                                        </div>
+                                        <Adventages
+                                            headline="Ability to research new trends and tastes in the clothing marketplace and garment industry"
+                                            width="100%"
+                                        />
 
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                headline="A strong eye for style and branding so you can develop a unique niche for your clothes"
-                                                width="100%"
-                                            />
-                                        </div>
+                                        <Adventages
+                                            headline="A strong eye for style and branding so you can develop a unique niche for your clothes"
+                                            width="100%"
+                                        />
 
-                                        <div style={{marginBottom: "30px"}}>
-                                            <Adventages
-                                                headline="Good insight into customer tastes to help you sell clothes and manage inventory"
-                                                width="100%"
-                                            />
-                                        </div>
+                                        <Adventages
+                                            headline="Good insight into customer tastes to help you sell clothes and manage inventory"
+                                            width="100%"
+                                        />
 
-                                        <div style={{marginBottom: "48px"}}>
-                                            <Adventages
-                                                headline="Financial management acumen so you can price items appropriately and pay bills"
-                                                width="100%"
-                                            />
-                                        </div>
+                                        <Adventages
+                                            headline="Financial management acumen so you can price items appropriately and pay bills"
+                                            width="100%"
+                                        />
 
-                                        <div style={{marginBottom: "48px"}}>
-                                            <Adventages
-                                                headline="Excellent interpersonal skills to help you deal with and sell to customers"
-                                                width="100%"
-                                            />
-                                        </div>
+                                        <Adventages
+                                            headline="Excellent interpersonal skills to help you deal with and sell to customers"
+                                            width="100%"
+                                        />
 
                                     </PanelWrapper>
                                 </Panel>

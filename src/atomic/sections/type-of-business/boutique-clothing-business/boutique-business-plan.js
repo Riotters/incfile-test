@@ -12,15 +12,12 @@ const BusinessOwnerResponsibilities = styled.section`
   position: relative;
   padding-top: 75px;
   padding-bottom: 64px;
+  margin: 0 auto;
   width: 100%;
+  max-width: 770px;
   
-  @media (min-width: 770px) {
-    width: 770px;
-    margin: 0 auto;
-  }
-
   h4.title {
-    font-size: 40px;
+    font-size: 40px; 
     padding-bottom: 56px;
   }
 

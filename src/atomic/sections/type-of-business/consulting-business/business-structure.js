@@ -79,15 +79,15 @@ const BusinessStructure = () => <OrangeContainer>
                     width={100}
                     widthUnit="%"
                 >
-                    <Link to="/">
-                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
-                                   mixed={true}>
+                    <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
+                               mixed={true}>
+                        <FlexLink to="/">
                             <IconCircle circleColor="transparent" iconColor={color.blue1}>
                                 <ArrowSVG/>
                             </IconCircle>
                             Sole Proprietorship
-                        </Paragraph>
-                    </Link>
+                        </FlexLink>
+                    </Paragraph>
 
                     <Paragraph big>
                         This is the "default" business structure and is what your business will be if you decide not
@@ -139,15 +139,15 @@ const BusinessStructure = () => <OrangeContainer>
                     width={100}
                     widthUnit="%"
                 >
-                    <Link to="/">
-                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
-                                   mixed={true}>
+                    <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
+                               mixed={true}>
+                        <FlexLink to="/">
                             <IconCircle circleColor="transparent" iconColor={color.blue1}>
                                 <ArrowSVG/>
                             </IconCircle>
                             Series LLC
-                        </Paragraph>
-                    </Link>
+                        </FlexLink>
+                    </Paragraph>
 
                     <Paragraph big>
                         This is a special type of LLC entity that's only available in certain states. It allows you
@@ -170,15 +170,15 @@ const BusinessStructure = () => <OrangeContainer>
                     width={100}
                     widthUnit="%"
                 >
-                    <Link to="/">
-                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
-                                   mixed={true}>
+                    <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
+                               mixed={true}>
+                        <FlexLink to="/">
                             <IconCircle circleColor="transparent" iconColor={color.blue1}>
                                 <ArrowSVG/>
                             </IconCircle>
                             S Corporation
-                        </Paragraph>
-                    </Link>
+                        </FlexLink>
+                    </Paragraph>
 
                     <Paragraph big>
                         This is a more complex type of business and isn't generally recommended for smaller
@@ -200,15 +200,15 @@ const BusinessStructure = () => <OrangeContainer>
                     width={100}
                     widthUnit="%"
                 >
-                    <Link to="/">
-                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
-                                   mixed={true}>
+                    <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
+                               mixed={true}>
+                        <FlexLink to="/">
                             <IconCircle circleColor="transparent" iconColor={color.blue1}>
                                 <ArrowSVG/>
                             </IconCircle>
                             C Corporation
-                        </Paragraph>
-                    </Link>
+                        </FlexLink>
+                    </Paragraph>
 
                     <Paragraph big>
                         These are the largest and most complex types of businesses and are far more than the average
@@ -228,8 +228,10 @@ const BusinessStructure = () => <OrangeContainer>
                     answered them to help you choose the right business structure.</Link>
                 </Paragraph>
                 <Paragraph big mixed={true}>
-                    We’ve <Link to="/">got a complete guide to everything you need to do to set up an LLC</Link>, and we can start one
-                    for your consulting business today. <Link to="/">LLC formation does vary from state to state</Link>, but we’ve got
+                    We’ve <Link to="/">got a complete guide to everything you need to do to set up an LLC</Link>, and we
+                    can start one
+                    for your consulting business today. <Link to="/">LLC formation does vary from state to state</Link>,
+                    but we’ve got
                     you covered, wherever you are.
                 </Paragraph>
 
@@ -240,5 +242,11 @@ const BusinessStructure = () => <OrangeContainer>
         </BusinessOwnerResponsibilities>
     </Container>
 </OrangeContainer>;
+
+const FlexLink = styled(Link)`
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+`;
 
 export default BusinessStructure;

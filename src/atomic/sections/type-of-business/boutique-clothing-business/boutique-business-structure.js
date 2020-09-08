@@ -168,7 +168,7 @@ const BoutiqueBusinessStructure = () => (
                         widthUnit="%"
                     >
                         <Paragraph big style={{color: color.blue1, fontWeight: "bold"}} mixed={true}>
-                            <FlexLink to="">
+                            <FlexLink to="/">
                                 <IconCircle circleColor="transparent" iconColor={color.blue1}>
                                     <ArrowSVG/>
                                 </IconCircle>

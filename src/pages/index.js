@@ -86,8 +86,8 @@ const IndexPage = () => (
         <Link to="/type-of-business/airbnb">Airbnb (WIP)</Link>
         <Link to="/type-of-business/coach">Coach (no details)</Link>
         <Link to="/type-of-business/moving-company">Moving Company (no details)</Link>
-        <Link to="/type-of-business/boutique-clothing-business">Boutique Clothing Business (no details)</Link>
-        <Link to="/type-of-business/social-media-influencer">Social Media Influencer (no details)</Link>
+        <Link to="/type-of-business/boutique-clothing-business">Boutique Clothing Business</Link>
+        <Link to="/type-of-business/social-media-influencer">Social Media Influencer</Link>
         <Link to="/type-of-business/etsy-business">Etsy Business (no details)</Link>
         <Link to="/type-of-business/amazon-business">Amazon Business (no details)</Link>
         <Link to="/type-of-business/daycare-business">Daycare business (no details)</Link>
@@ -110,7 +110,7 @@ const IndexPage = () => (
         <Link to="/type-of-business/event-planning">Event Planning (no details)</Link>
         <Link to="/type-of-business/online-business">Online Business (no details)</Link>
         <Link to="/type-of-business/teen-business">Teen Business (no details)</Link>
-        <Link to="/type-of-business/consulting-business">Consulting Business (no details)</Link>
+        <Link to="/type-of-business/consulting-business">Consulting Business</Link>
         <Link to="/type-of-business/with-no-money-business">With No Money Business (no details)</Link>
         <Link to="/type-of-business/photography-business">Photograpshy Business (no details)</Link>
         <Link to="/type-of-business/women-business">Women Business (no details)</Link>

@@ -70,14 +70,15 @@ const BabyBlueContainer = styled.div`
     padding-bottom: 100px;
     padding-top: 100px;
     position: relative;
+    overflow: hidden;
 `;
 
 const TextWrapper = styled.div`
     width: 100%;
+    max-width 750px;
     position: relative;
     
     @media (min-width: 750px) {
-        width: 750px;
         margin: 48px auto 100px;
     }
 `;
@@ -109,7 +110,7 @@ const Oval = styled.div`
 
 const OvalBottom = styled.div`
     position: absolute;
-    left: 0;
+    right: 0;
     bottom: 300px;
     width: 100%;
     

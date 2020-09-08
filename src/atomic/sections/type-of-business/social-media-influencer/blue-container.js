@@ -17,11 +17,11 @@ const BlueContainerWrapper = styled.div`
 
 const TextBorderedSection = styled.div`
     width: 100%;
+    max-width: 670px;
     padding-top: 100px;
     position: relative;
     
     @media (min-width: 670px) {
-        width: 670px;
         margin: 0 auto;
     }
     

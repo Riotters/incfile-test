@@ -6,12 +6,15 @@ import Image from "./image"
 
 const Wrapper = styled.div`
     width: 100%;
-    max-width: 470px;
     padding: 16px 16px 40px;
     position: relative;
     border-radius: 5px;
     background-color: ${color.white};
     box-shadow: ${props => (props.noShadow ? "" : shadow.white1)};
+    
+    @media (min-width: 1024px){
+        width: 470px;
+    }
 
     .top {
         display: flex;

@@ -36,14 +36,19 @@ const Oval = styled.div`
     width: 480px;
     display: none;
     
-    @media (min-width: 720px) {
+    @media (min-width: 1130px) {
         display: block;
     }
 `;
 
 const Content = styled.div`
-    margin-left: auto;
+    margin: 0 auto;
+    width: 100%;
     max-width: 600px;
+    
+    @media (min-width: 1130px){
+        margin: 0 0 0px auto;
+    }
 `
 
 const TextBox = styled.div`
@@ -57,7 +62,7 @@ const ImageBox = styled.div`
     height: 626px;
     display: none;
     
-    @media (min-width: 720px) {
+    @media (min-width: 1130px) {
         display: block;
     }
 `

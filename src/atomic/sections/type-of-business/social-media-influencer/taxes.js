@@ -3,15 +3,12 @@ import styled from "styled-components";
 import Container from "../../../container";
 import TextCenterLayout from "../../../../components/partials/blocks/heading-center";
 import {Paragraph} from "../../../atoms/typography/paragraph";
-import Adventages from "../../../../components/adventages";
 import {color} from "../../../../components/styles/colors";
-import {shadow} from "../../../../components/styles/shadows";
 import Curve from "../../../atoms/shapes/curve";
 import OvalSvg from "../../../../images/ovals/bottom-right-transparent-babyblue2.inline.svg";
 import OvalSvgBottom from "../../../../images/ovals/top-left-transparent-babyblue1.inline.svg";
-import CurveSvg from "../../../../images/curve-babyblue-1.inline.svg";
-import {adventages2} from "../../../../static/type-of-business/boutique-clothing-business";
 import {Heading} from "../../../atoms/typography/heading";
+import {Link} from "gatsby";
 
 const Taxes = () => (
     <BabyBlueContainer>
@@ -25,10 +22,13 @@ const Taxes = () => (
 
         <Container>
             <TextWrapper>
-                <Heading style={3} style={{fontSize: "40px"}}>Rules, Regulations and Taxes for Your Influencer Marketing Business</Heading>
+                <Heading style={3} style={{fontSize: "40px"}}>Rules, Regulations and Taxes for Your Influencer Marketing
+                    Business</Heading>
 
                 <Paragraph big mixed={true}>
-                    Even though you’re running a virtual business, you can’t escape real-world licenses, permits and regulations. You will need to explore local, state and federal licenses and permits, and <span className="blue big">we can also help out with researching your business licensing needs.</span>
+                    Even though you’re running a virtual business, you can’t escape real-world licenses, permits and
+                    regulations. You will need to explore local, state and federal licenses and permits, and <Link
+                    to="/">we can also help out with researching your business licensing needs.</Link>
                 </Paragraph>
             </TextWrapper>
 
@@ -38,10 +38,13 @@ const Taxes = () => (
                 <Paragraph big mixed={true}>
                     <Curve color={color.babyblue1}
                            style={{position: "absolute", left: "-29px", top: "-25px", transform: "rotate(-90deg)"}}/>
-                    Taxes are a fact of life if you’re in business, and there are various ways you will need to file and pay them. This can include self-employment tax, state income tax and federal income tax. You will also probably be liable for sales and use tax.
+                    Taxes are a fact of life if you’re in business, and there are various ways you will need to file and
+                    pay them. This can include self-employment tax, state income tax and federal income tax. You will
+                    also probably be liable for sales and use tax.
                 </Paragraph>
                 <Paragraph big mixed={true}>
-                    As a rule of thumb, we recommend holding back around a third of your earnings to pay your taxes. We can also <span className="big blue">prepare and file your tax returns for you.</span>
+                    As a rule of thumb, we recommend holding back around a third of your earnings to pay your taxes. We
+                    can also <Link to="/">prepare and file your tax returns for you.</Link>
                 </Paragraph>
             </TextWrapper>
         </Container>
@@ -59,10 +62,10 @@ const BabyBlueContainer = styled.div`
 
 const TextWrapper = styled.div`
     width: 100%;
+    max-width: 750px;
     position: relative;
     
     @media (min-width: 750px) {
-        width: 750px;
         margin: 48px auto 100px;
     }
 `;
