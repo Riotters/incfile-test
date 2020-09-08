@@ -61,14 +61,14 @@ const IndexPage = () => (
         <Link to="/review-entity-type/s-corporation">S Corporation (no details)</Link>
         <Link to="/review-entity-type/llc">LLC (no details)</Link>
         <h2>Learning Center Entity</h2>
-        <Link to="/learning-center-entity/help-center">Help Center (no details)</Link>
+        <Link to="/learning-center-entity/help-center">Help Center</Link>
         <Link to="/learning-center-entity/help-center-article">Help Center Article (no video)</Link>
-        <Link to="/learning-center-entity/comparison-chart">Comparison Chart (WIP)</Link>
+        <Link to="/learning-center-entity/comparison-chart">Comparison Chart (no video)</Link>
         <Link to="/learning-center-entity/business-checklist">Business Checklist (WIP)</Link>
         <Link to="/learning-center-entity/annual-report">Annual Report Due Date</Link>
         <Link to="/learning-center-entity/business-license-req">Business License Requirements (no API)</Link>
         <Link to="/learning-center-entity/start-a-business">Business Startup Guides (no details)</Link>
-        <Link to="/learning-center-entity/guide-to-start">Guide To Start (no details)</Link>
+        <Link to="/learning-center-entity/guide-to-start">Guide To Start</Link>
         <Link to="/learning-center-entity/registered-agents">Registered Agents</Link>
         <Link to="/learning-center-entity/s-corp-tax-calculator">S Corp Tax Calculator (WIP)</Link>
         <Link to="/learning-center-entity/sales-tax-calculator">Sales Tax Calculator (WIP)</Link>
@@ -123,7 +123,6 @@ const IndexPage = () => (
         <Link to="/type-of-business/bed-and-breakfast">Bed and Breakfast (no details)</Link>
         <Link to="/type-of-business/laundromat">Laundromat (no details)</Link>
         <Link to="/type-of-business/landscaping-business">Landscaping Business (no details)</Link>
-
         <h2>Additional sites</h2>
         <Link to="/components">Components</Link>
         <Link to="/404">404</Link>

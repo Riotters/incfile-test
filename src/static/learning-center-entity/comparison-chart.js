@@ -3,7 +3,7 @@ export const top = {
   text: `Learn about the difference between LLCs, S Corporations, C Corporations and Non Profits`,
   buttons: [
     {
-      text: `Download Guide to Corporate Structures`,
+      text: `Download Guide`,
       url: `/`,
     },
   ],

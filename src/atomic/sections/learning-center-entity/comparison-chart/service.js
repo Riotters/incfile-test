@@ -87,7 +87,7 @@ const ServiceSection = ({ className, content }) => (
     <Curve bottom="270" left="80" color={color.purple2}>
       <Curve2SVG />
     </Curve>
-    <HeadingCenter headline={content.header} textWidth="770" text={content.text} bottomMargin="80" />
+    <HeadingCenter headline={content.header} textWidth="770" text={content.text} bottomMargin="48" bottomMarginLG="80" />
     <ContentCenter>
       <Video>
         <Curve top="-25" right="-29" color={color.purple1}>

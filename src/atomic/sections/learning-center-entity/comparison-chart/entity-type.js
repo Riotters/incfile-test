@@ -22,14 +22,14 @@ const EntityTypeSection = ({ className, content }) => (
         <Oval className="oval" height="570" width="570" top="0" left="0">
             <OvalSVG />
         </Oval>
-        <HeadingCenter headline={content.header} headlineWidth="700" bottomMargin="80" />
+        <HeadingCenter headline={content.header} headlineWidth="700" bottomMargin="48" bottomMarginLG="80" />
         <CenterGrid contentWidth="970" columnsSM="1" columnsMD="2" curve>
             {content.buttons.map((button, i) => (
                 <BoxedButton content={button} icon={icons[i]} iconColor={colors[i]} iconPadding="12" />
             ))}
         </CenterGrid>
         <ContentCenter>
-            <Button content={content.button} theme="primary56" maring="80px 0 0" marginSM="80px auto 0" arrow />
+            <Button content={content.button} theme="primary56" margin="48px 0 0" marginSM="80px auto 0" arrow />
         </ContentCenter>
     </EntityType>
 );
