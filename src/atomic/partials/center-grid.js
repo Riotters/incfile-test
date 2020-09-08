@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import Container from "../container";
+import Curve from "../atoms/icons/curve";
+import CurveSVG from "../../images/curves/bottom-left-top-right.inline.svg";
+import { color } from "../atoms/styles/colors";
 
 const Wrapper = styled.div`
   display: flex;
@@ -19,6 +22,7 @@ const Content = styled.div`
   grid-column-gap: 30px;
   grid-row-gap: ${(props) => (props.rowGap ? props.rowGap : "30")}px;
   width: 100%;
+  position: relative;
 
   @media (min-width: 576px) {
     grid-template-columns: repeat(${(props) => (props.columnsSM ? props.columnsSM : "2")}, 1fr);
@@ -34,11 +38,16 @@ const Content = styled.div`
   }
 `;
 
-const CategoriesGrid = ({ className, children, contentWidth, headlineWidth, textWidth, rowGap, columns, columnsSM, columnsMD, columnsLG }) => {
+const CategoriesGrid = ({ className, children, contentWidth, headlineWidth, textWidth, rowGap, columns, columnsSM, columnsMD, columnsLG, curve }) => {
   return (
     <Container>
       <Wrapper className={className}>
         <Content contentWidth={contentWidth} headlineWidth={headlineWidth} textWidth={textWidth} rowGap={rowGap} columns={columns} columnsSM={columnsSM} columnsMD={columnsMD} columnsLG={columnsLG}>
+          {curve && (
+            <Curve className="curve-shape" top="-25" left="-29" color={color.orange1}>
+              <CurveSVG />
+            </Curve>
+          )}
           {children}
         </Content>
       </Wrapper>

@@ -427,6 +427,11 @@ export const guide = {
     field5: {
       label: `I want to…`,
     },
+    dropdown: [
+      `Start a Business Soon`,
+      `Form a Business Now`,
+      `Grow a Business`,
+    ],
     button: {
       text: `Download Now`,
       url: `/`,

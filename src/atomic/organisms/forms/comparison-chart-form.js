@@ -6,9 +6,7 @@ import { Heading } from "../../atoms/typography/heading";
 import Label from "../../molecules/form/label-field-with-child";
 import Input from "../../atoms/inputs/input";
 import Dropdown from "../../molecules/form/dropdown";
-import Radio from "../../molecules/form/radio";
 import Button from "../../molecules/buttons/button";
-import ArrowLink from "../../molecules/buttons/text";
 import Curve from "../../atoms/icons/curve";
 import CurveSVG from "../../../images/curves/top-left-bottom-right.inline.svg";
 
@@ -46,7 +44,7 @@ const LinkWrapper = styled.div`
 const BusinessNameSearchForm = ({ className, content }) => {
   return (
     <Wrapper className={className}>
-      <Curve className="curve-shape" bottom="-25" left="-29" color={color.orange1}>
+      <Curve className="curve-shape" bottom="-25" left="-29" color={color.blue1}>
         <CurveSVG />
       </Curve>
       <Heading size="5" bottomMargin="16">
@@ -65,7 +63,7 @@ const BusinessNameSearchForm = ({ className, content }) => {
         <Input name="phone" id="phone"/>
       </Label>
       <Label htmlFor="file" content={content.field5} bottomMargin="32">
-        <Dropdown name="file" id="file" options={["aaa", "bbb", "ccc"]} placeholder="Select" />
+        <Dropdown name="file" id="file" options={content.dropdown} placeholder="Please select" />
       </Label>
       <Button content={content.button} theme="primary56" arrow marginSM="0 auto" />
     </Wrapper>
