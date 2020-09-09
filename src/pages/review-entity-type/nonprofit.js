@@ -11,7 +11,7 @@ import Faq from "../../atomic/sections/review-entity-type/nonprofit/faq";
 import Cta from "../../atomic/sections/general/cta";
 import Articles from "../../components/partials/sections/articles";
 //Texts
-import { top, about, adventages, disadventages, differences, requirements, rocket, faq } from "../../static/review-entity-type/nonprofit";
+import { top, about, adventages, disadventages, differences, requirements, rocket, faq, cta } from "../../static/review-entity-type/nonprofit";
 
 const IndexPage = () => (
   <Layout>
@@ -20,14 +20,14 @@ const IndexPage = () => (
       <h1>{top.header}</h1>
       <p>{top.text}</p>
       <Buttonsbox>
-        <Button content={top.button[0]} theme="primary56" width="200px" arrow />
+        <Button content={{ text: top.button[0].text, url: `https://www.incfile.com/form-order-now.php?entityType=Nonprofit` }} theme="primary56" width="200px" arrow />
         <Button content={top.button[1]} theme="secondary56" width="200px" arrow2 margin="16px 0 0 0" marginMD="0 0 0 16px" />
       </Buttonsbox>
     </Top>
     <About content={about} />
     <Search />
     <Faq content={faq} />
-    <Cta />
+    <Cta cta={cta} />
     <Articles />
   </Layout>
 );

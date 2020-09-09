@@ -171,15 +171,23 @@ export const differences = {
 };
 
 export const rocket = {
-	header: `Launch`,
+	header: `Launch Your Business`,
 	header2: `your business with Incfile`,
 	text: `No Contracts. No Surprise.`,
 	text2: `Only $0 + State Fee to Launch Your Business.`,
 	button: {
-		text: `launch your business`,
-		url: `/`,
+		text: `Start Now`,
+		url: `https://www.incfile.com/form-order-now.php?entityType=Nonprofit`,
 	},
 };
+
+export const cta = {
+  header: `Launch Your Business Only $0 + State Fee.`,
+  button: {
+    text: `See Detailed Pricing`,
+    url: `https://www.incfile.com/form-order-now.php?entityType=Nonprofit`,
+  }
+}
 
 export const faq = {
 	header: `Common questions on starting a Nonprofit Corporation`,

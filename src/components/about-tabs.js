@@ -314,7 +314,7 @@ const AboutTabs = ({layout, columns, content}) => (
             <Panel>
               <PanelWrapper className="panel2" layout={layout}>
                 <h3>{content.content[7].header}</h3>
-                <AcccordionCounting content={content.content[7]} tab/>
+                <AcccordionCounting content={content.content[7]} listColor={{ item: `grey6`, dot: `orange1` }} tab/>
               </PanelWrapper>
             </Panel>
 

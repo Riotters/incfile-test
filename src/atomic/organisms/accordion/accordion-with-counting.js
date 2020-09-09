@@ -92,14 +92,46 @@ const PanelWrapper = styled.div`
     line-height: 19px;
   }
 
-  ul {
-    //list-style: none;
-    padding-left: 16px;
+  // ul {
+  //   //list-style: none;
+  //   padding-left: 16px;
 
-    li {
-      padding-top: 16px;
+  //   li {
+  //     padding-top: 16px;
+  //   }
+  // }
+`;
+
+const ListItems = styled.div`
+ul {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    font-family: Avenir, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: ${(props) => (props.listColor ? `${color[props.listColor.item]}` : `${color.grey1}`)};
+    padding-left: 26px;
+    padding-top:0;
+    position: relative;
+
+    &::before {
+      content: "";
+      height: 4px;
+      width: 4px;
+      background-color: ${(props) => (props.listColor ? `${color[props.listColor.dot]}` : `${color.grey1}`)};
+      border-radius: 50%;
+      position: absolute;
+      top: 9px;
+      left: 6px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
     }
   }
+}
 `;
 
 const Button = styled.button`
@@ -202,7 +234,7 @@ const Panel = ({ children }) => {
     );
 };
 
-const AccordionWithCounting = ({ content, curve, curveRight, curveRightBottom, tab}) => {
+const AccordionWithCounting = ({ content, curve, curveRight, curveRightBottom, tab, listColor}) => {
     return (
         <VisibilitySensor partialVisibility once>
             {({ isVisible }) => (
@@ -231,14 +263,16 @@ const AccordionWithCounting = ({ content, curve, curveRight, curveRightBottom, t
                                             {typeof item.answer === "object" ? <p>{item.answer.map((el, id) => (id % 2 ? <Link to={el.url}>{` ${el.text} `}</Link> : el.text))}</p> : null}
                                             {/* <p>{item.answer}</p> */}
                                             {item.list && (
+                                              <ListItems listColor={listColor}>
                                                 <ul>
                                                     {item.list.map((listitem) => (
                                                         <li>{listitem}</li>
                                                     ))}
                                                 </ul>
+                                              </ListItems>
                                             )}
 
-                                            {item.textAfterList && (<p style={{ marginTop: 48 + "px" }}>{item.textAfterList}</p>)}
+                                            {item.textAfterList && (<p style={{ marginTop: 26 + "px" }}>{item.textAfterList}</p>)}
                                         </PanelWrapper>
                                     </Panel>
                                 </TabBox>

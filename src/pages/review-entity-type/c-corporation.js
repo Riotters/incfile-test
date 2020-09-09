@@ -15,7 +15,7 @@ import Forming from "../../atomic/sections/review-entity-type/c-corporation/form
 import Articles from "../../components/partials/sections/articles";
 import Cta from "../../atomic/sections/general/cta";
 //Texts
-import { top, about, adventages, disadventages, differences, requirements, rocket, forming } from "../../static/review-entity-type/c-corporation";
+import { top, about, adventages, disadventages, differences, requirements, rocket, cta, forming } from "../../static/review-entity-type/c-corporation";
 
 const CCorporation = () => (
   <Layout>
@@ -24,7 +24,7 @@ const CCorporation = () => (
       <h1>{top.header}</h1>
       <p>{top.text}</p>
       <Buttonsbox>
-        <Button content={top.button[0]} theme="primary56" width="200px" arrow />
+        <Button content={top.button[0]} theme="primary56" arrow />
       </Buttonsbox>
     </Top>
     <About content={about} />
@@ -35,7 +35,7 @@ const CCorporation = () => (
     <Rocket content={rocket} />
     <Forming content={forming} />
     <Articles />
-    <Cta />
+    <Cta cta={cta} />
   </Layout>
 );
 
