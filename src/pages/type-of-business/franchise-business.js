@@ -30,6 +30,7 @@ import Conclusion from "../../atomic/sections/general/conclusion";
 import TabOvalSvg from "../../images/ovals/bottom-left-transparent-blue3.inline.svg";
 import styled from "styled-components";
 import OrderNow from "../../atomic/sections/type-of-business/franchise-business/order-now";
+import {color} from "../../atomic/atoms/styles/colors";
 
 const FranchiseBusiness = () => (
     <Layout>
@@ -60,7 +61,7 @@ const FranchiseBusiness = () => (
 
         <TabsWrapper>
             <TabOval>
-                <TabOvalSvg />
+                <TabOvalSvg/>
             </TabOval>
             <TabsSection style={{marginTop: "75px"}}>
                 <TabHeading>
@@ -79,7 +80,7 @@ const FranchiseBusiness = () => (
                             In exchange for a franchise fee and royalties, they will provide you with support, training,
                             stock, expertise and marketing to launch your franchise quickly.
                         </Paragraph>
-                        <Paragraph big style={{fontWeight: "bold"}}>
+                        <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
                             In this guide we’ll explore everything you need to do to set up your franchise business and
                             maximize your chances for success. We’ll cover:
                         </Paragraph>
@@ -167,34 +168,28 @@ const FranchiseBusiness = () => (
                             Understanding the World of the Franchise Business
                         </Heading>
 
-                        <Paragraph big style={{fontWeight: "bold"}}>
+                        <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
                             Key Franchise Business Background Data and Statistics
                         </Paragraph>
 
-                        <Paragraph big>
+                        <Paragraph big style={{marginBottom: "48px"}}>
                             The size and success of franchise businesses might surprise you:
                         </Paragraph>
 
-                        <div style={{marginBottom: "30px", marginTop: "48px"}}>
-                            <Adventages
-                                headline="Around one in seven franchise businesses are owned by U.S. military veterans."
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Around one in seven franchise businesses are owned by U.S. military veterans."
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Franchises exist across many sectors — fast food, restaurants, convenience stores, retailers, financial advice, hotels, car rentals, service providers and many more."
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Franchises exist across many sectors — fast food, restaurants, convenience stores, retailers, financial advice, hotels, car rentals, service providers and many more."
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="There are over 3,000 franchisors licensing out partnerships to entrepreneurs who can benefit from the support they provide."
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="There are over 3,000 franchisors licensing out partnerships to entrepreneurs who can benefit from the support they provide."
+                            width="100%"
+                        />
 
                         <ColorFulCircleWithTextAndList CircleSVG={RingSvg} list={RingText.list} withBg={true}/>
 
@@ -219,7 +214,7 @@ const FranchiseBusiness = () => (
 
         <SettingBusiness/>
 
-        <OrderNow />
+        <OrderNow/>
 
         <ToolsAndLinks/>
 
@@ -268,11 +263,10 @@ const TabOval = styled.div`
     position: absolute;
     top: 0;
     left: 0;
-    width: 420px;
-    display: none;
+    width: 100%;
   
-      @media (min-width: 1200px) {
-            display: block;
+      @media (min-width: 420px) {
+            width: 420px;
       }
 `;
 export default FranchiseBusiness;

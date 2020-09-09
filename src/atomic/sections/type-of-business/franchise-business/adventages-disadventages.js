@@ -18,10 +18,11 @@ const AdventagesSection = () => (
             <OvalSvg/>
         </TabOval>
 
-        <Container>
-            <TextCenterLayout headline="Advantages and Disadvantages of the Franchise Business"
-                              text="Here are the key things you need to know before deciding of franchising is right for you."/>
+        <TextCenterLayout headline="Advantages and Disadvantages of the Franchise Business"
+                          text="Here are the key things you need to know before deciding of franchising is right for you."
+                          headlineWidth={770} textWidth={770}/>
 
+        <Container>
             <Tabs>
                 <Wrapper>
                     <TabsWrapper>
@@ -112,23 +113,21 @@ const AdventagesSection = () => (
             </Tabs>
         </Container>
 
-        <Container>
-            <ContentCenter contentWidth={770}>
-                <Heading size={3} style={{fontSize: "40px", marginTop: "100px"}} maxWidth={770}>
-                    Understand Your Franchise Market
-                </Heading>
-                <Paragraph big>
-                    The market for your franchise business depends very much on the franchisor you set up with. They
-                    will be able to provide guidance and expertise on the types of customers you should be marketing to,
-                    although you will need to carry out your own market research as well.
-                </Paragraph>
-                <Paragraph big>
-                    Look into the likely demand for services in your area, speak to other franchise businesses in
-                    neighboring regions and understand who your competitors are. You should also talk to your franchisor
-                    about planned advertising and partnerships.
-                </Paragraph>
-            </ContentCenter>
-        </Container>
+        <ContentCenter contentWidth={770}>
+            <Heading size={3} style={{fontSize: "40px", marginTop: "100px"}} maxWidth={770}>
+                Understand Your Franchise Market
+            </Heading>
+            <Paragraph big>
+                The market for your franchise business depends very much on the franchisor you set up with. They
+                will be able to provide guidance and expertise on the types of customers you should be marketing to,
+                although you will need to carry out your own market research as well.
+            </Paragraph>
+            <Paragraph big>
+                Look into the likely demand for services in your area, speak to other franchise businesses in
+                neighboring regions and understand who your competitors are. You should also talk to your franchisor
+                about planned advertising and partnerships.
+            </Paragraph>
+        </ContentCenter>
     </SectionWrapper>
 );
 
@@ -151,12 +150,11 @@ const TabOval = styled.div`
     position: absolute;
     top: 443px;
     right: 0;
-    width: 720px;
-    display: none;
+    width: 100%;
     transform: scaleX(-1);
     
-      @media (min-width: 1200px) {
-            display: block;
+      @media (min-width: 720px) {
+            width: 720px;
       }
 `;
 
@@ -166,13 +164,13 @@ const ImageBoxes = styled.div`
   grid-gap: 30px;
   padding-top: 112px;
   width: 100%;
-
+  max-width: 970px;
+  
   @media(min-width: 769px) {
     grid-template-columns: 1fr 1fr;
   }
   
   @media (min-width: 970px) {
-    width: 970px;
     margin: 0 auto;
   }
 `;
@@ -222,7 +220,8 @@ const TabsWrapper = styled.div`
 
 const PanelsWrapper = styled.div`
     display: block;
-    width: 980px;
+    width: 100%;
+    max-width: 980px;
     margin: 0 auto;
 `;
 

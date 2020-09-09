@@ -9,7 +9,7 @@ import MarketIcon from "../../../../images/icons/understand-your-market.inline.s
 import {color} from "../../../../components/styles/colors";
 import React from "react";
 import styled from "styled-components";
-import OvalBlueSVG from "../../../../images/oval-blue-4.inline.svg";
+import OvalBlueSVG from "../../../../images/ovals/top-right-transparent-blue2.inline.svg";
 import Curve from "../../../../images/green-curve.inline.svg";
 
 const BlueContainerWrapper = styled.div`
@@ -26,10 +26,10 @@ const GridSection = styled.div`
 
 const TitleBox = styled.div`
     width: 100%;
+    max-width: 750px;
     position: relative;
      
     @media (min-width:750px) {
-        width: 750px;
         margin: 0 auto;
     }
     
@@ -51,7 +51,7 @@ const GridSectionList = styled.div`
         margin-bottom: 70px;
     }
     
-    @media (min-width: 970px) {
+    @media (min-width: 1024px) {
         width: 970px;
         margin: 120px auto 0;
     }
@@ -61,10 +61,10 @@ const OvalCenter = styled.div`
   position: absolute;
   right: 0;
   bottom: 370px;
-  display: none;
+  width: 100%;
     
-    @media (min-width: 1200px){
-       display: block;
+    @media (min-width: 570px){
+       width: 570px;
     } 
 `
 

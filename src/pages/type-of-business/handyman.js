@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
 import Top from "../../atomic/partials/top";
-import Button from "../../components/button";
+import Button from "../../atomic/molecules/buttons/button";
 import RatingRow from "../../atomic/atoms/boxes/rating-row";
 import CartBlock from "../../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../../atomic/molecules/blocks/rating-block";
@@ -51,6 +51,7 @@ import Taxes from "../../atomic/sections/type-of-business/handyman/taxes";
 import QuestionIcon from "../../images/icons/the-question-is-just-where-do-you-start.inline.svg";
 import TabOvalSvg from "../../images/ovals/bottom-left-transparent-blue3.inline.svg";
 import {shadow} from "../../atomic/atoms/styles/shadows";
+import {Link} from "gatsby";
 
 const Handyman = () => (
     <Layout>
@@ -64,9 +65,7 @@ const Handyman = () => (
                 then running a home handyman business could be right for you.
             </p>
             <ButtonsBox>
-                <Button theme="primary56" marginMD="0 24px 0 0" arrow>
-                    Start Now
-                </Button>
+                <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{url: "/", text: "Start Now"}} />
             </ButtonsBox>
 
             <RatingRow>
@@ -77,7 +76,7 @@ const Handyman = () => (
 
         <TabsWrapper>
             <TabOval>
-                <TabOvalSvg />
+                <TabOvalSvg/>
             </TabOval>
             <TabsSection>
                 <TabHeading>
@@ -129,7 +128,12 @@ const Handyman = () => (
 
                         </ListWrapper>
 
-                        <Paragraph big style={{fontWeight: "bold", marginTop: "48px", marginBottom: "48px", color: color.black}}>
+                        <Paragraph big style={{
+                            fontFamily: "Avenir-Heavy",
+                            marginTop: "48px",
+                            marginBottom: "48px",
+                            color: color.black
+                        }}>
                             Of course, you’re likely to face competition from other tradesmen, but if you find the right
                             niche, do some research and get your marketing right, then word-of-mouth will help you build
                             your handyman business.
@@ -153,7 +157,7 @@ const Handyman = () => (
                             </Paragraph>
                         </Colorbox>
 
-                        <Paragraph big style={{fontWeight: "bold", marginTop: "48px", color: color.black}}>
+                        <Paragraph big style={{fontFamily: "Avenir-Heavy", marginTop: "48px", color: color.black}}>
                             Read on for some insight into creating your own home handyman business and becoming an
                             entrepreneur. In this guide we will cover:
                         </Paragraph>
@@ -527,7 +531,7 @@ const Handyman = () => (
                     </CountingTextBoxed>
 
                     <Paragraph big mixed={true} style={{marginTop: "50px"}}>
-                        We’ve got the perfect <span style={{color: color.blue1, fontWeight: "bold"}}>guide to writing your business plan.</span>
+                        We’ve got the perfect <Link to="/">guide to writing your business plan.</Link>
                     </Paragraph>
                 </CenterBox>
             </Container>
@@ -565,12 +569,14 @@ const Handyman = () => (
                             width={100}
                             widthUnit="%"
                         >
-                            <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                        mixed={true}>
-                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                    <ArrowSVG/>
-                                </IconCircle>
-                                Sole Proprietorship
+                                <FlexLink to="/">
+                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                        <ArrowSVG/>
+                                    </IconCircle>
+                                    Sole Proprietorship
+                                </FlexLink>
                             </Paragraph>
 
                             <Paragraph big>
@@ -595,12 +601,14 @@ const Handyman = () => (
                             width={100}
                             widthUnit="%"
                         >
-                            <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                        mixed={true}>
-                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                    <ArrowSVG/>
-                                </IconCircle>
-                                Partnership
+                                <FlexLink to="/">
+                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                        <ArrowSVG/>
+                                    </IconCircle>
+                                    Partnership
+                                </FlexLink>
                             </Paragraph>
 
                             <Paragraph big>
@@ -624,12 +632,14 @@ const Handyman = () => (
                             width={100}
                             widthUnit="%"
                         >
-                            <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                        mixed={true}>
-                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                    <ArrowSVG/>
-                                </IconCircle>
-                                Limited Liability Company or LLC
+                                <FlexLink to="/">
+                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                        <ArrowSVG/>
+                                    </IconCircle>
+                                    Limited Liability Company or LLC
+                                </FlexLink>
                             </Paragraph>
 
                             <Paragraph big>
@@ -653,12 +663,14 @@ const Handyman = () => (
                             width={100}
                             widthUnit="%"
                         >
-                            <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                        mixed={true}>
-                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                    <ArrowSVG/>
-                                </IconCircle>
-                                S Corporation
+                                <FlexLink to="/">
+                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                        <ArrowSVG/>
+                                    </IconCircle>
+                                    S Corporation
+                                </FlexLink>
                             </Paragraph>
 
                             <Paragraph big>
@@ -681,12 +693,14 @@ const Handyman = () => (
                             width={100}
                             widthUnit="%"
                         >
-                            <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                        mixed={true}>
-                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                    <ArrowSVG/>
-                                </IconCircle>
-                                C Corporation
+                                <FlexLink to="/">
+                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                        <ArrowSVG/>
+                                    </IconCircle>
+                                    C Corporation
+                                </FlexLink>
                             </Paragraph>
 
                             <Paragraph big>
@@ -697,39 +711,19 @@ const Handyman = () => (
 
                         <Paragraph big style={{paddingTop: "120px"}} mixed={true}>
                             For more information on the advantages and disadvantages of different types of businesses,
-                            please see our in-depth guide. If you’ve still got questions, we’ve answered them to help
-                            you choose the right business structure for your handyman business.
+                            <Link to="/">please see our in-depth guide</Link>. If you’ve still got questions, <Link to="/">we’ve answered them to help
+                            you choose the right business structure</Link> for your handyman business.
                         </Paragraph>
                         <Paragraph big mixed={true}>
                             In most cases, our recommendation for your handyman business would be to create an LLC.
-                            We’ve got a complete guide to everything you need to do. LLC formation does vary from state
-                            to state, but we’ve got you covered, wherever you are.
+                            We’ve <Link to="/">got a complete guide</Link> to everything you need to do. <Link to="/">LLC formation does vary from state
+                            to state</Link>, but we’ve got you covered, wherever you are.
                         </Paragraph>
 
-                        <Button theme="primary48" width="365px" arrow>
-                            Start your business with us, today!
-                        </Button>
+                        <Button theme="primary48" width="365px" arrow content={{url: "/", text: "Start your business with us, today!"}} />
                     </ImageContent>
                 </BusinessOwnerResponsibilities>
 
-                <ContentCenter contentWidth={769}>
-                    <Heading size={3} style={{fontSize: "40px", marginTop: "100px"}}>
-                        Special Considerations for Setting up a Cleaning Business Entity
-                    </Heading>
-
-                    <Paragraph big mixed={true}>
-                        For more information on the advantages and disadvantages of different types of businesses,
-                        please see our in-depth guide. If you’ve still got questions, we’ve answered them to help you
-                        choose the right business structure.
-                    </Paragraph>
-                    <Paragraph big mixed={true}>
-                        In almost every case, the right business entity for a caterer is going to be an LLC. It provides
-                        you with liability protection, is easy to set up and run, has low administrative overhead and
-                        can be tax advantageous. We’ve got a complete guide to everything you need to do here, and we
-                        can set one up for your catering business. LLC formation does vary from state to state, but
-                        we’ve got you covered, wherever you are.
-                    </Paragraph>
-                </ContentCenter>
             </Container>
         </WhiteContainer>
 
@@ -779,19 +773,12 @@ const ListBox = styled.div`
     }
 `;
 
-const BlueContainer = styled.section`
-    background: rgb(242,246,255);
-    background: linear-gradient(0deg, rgba(242,246,255,1) 0%, rgba(250,251,255,1) 100%);
-    padding-top: 100px;
-    position: relative;
-`;
-
 const CenterBox = styled.div`
     width: 100%;
+    max-width: 670px;
     padding-bottom: 100px;
     
     @media (min-width: 670px) {
-        width: 670px;
         margin: 0 auto;
     }
 `;
@@ -822,11 +809,10 @@ const Oval = styled.div`
   position: absolute; 
   left: 0;
   top: 200px;
-  width: 570px; 
-  display: none;
+  width: 100%; 
   
-  @media (min-width: 1200px) {
-        display: block;
+  @media (min-width: 570px) {
+        width: 570px;
   }
 `
 
@@ -834,11 +820,10 @@ const OvalGreen = styled.div`
   position: absolute; 
   left: 0;
   top: 60px;
-  width: 420px;
-  display: none;
+  width: 100%;
   
-  @media (min-width: 1200px) {
-        display: block;
+  @media (min-width: 420px) {
+        width: 420px;
   }
 `
 
@@ -846,11 +831,10 @@ const OvalGreen2 = styled.div`
   position: absolute; 
   right: 0;
   bottom: 377px; 
-  width: 720px;
-  display: none;
+  width: 100%;
   
-  @media (min-width: 1200px) {
-        display: block;
+  @media (min-width: 720px) {
+        width: 720px;
   }
   
   svg {
@@ -860,18 +844,24 @@ const OvalGreen2 = styled.div`
 
 const TabsWrapper = styled.div`
     position: relative;
+    margin-top: 100px;
 `;
 
 const TabOval = styled.div`
     position: absolute;
     top: 0;
     left: 0;
-    width: 420px;
-    display: none;
-  
-      @media (min-width: 1200px) {
-            display: block;
-      }
+    width: 100%;
+ 
+    @media (min-width: 420px) {
+        width: 420px;
+    }
+`;
+
+const FlexLink = styled(Link)`
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 `;
 
 export default Handyman;

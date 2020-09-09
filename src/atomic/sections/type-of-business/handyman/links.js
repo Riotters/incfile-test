@@ -29,25 +29,25 @@ const Links = () => (
                     <CurveWrapper>
                         <CurveSvg/>
                     </CurveWrapper>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.contractortalk.com/forum.php" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Contractor Talk forums
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.diychatroom.com/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         DIY Chatroom and home improvement forums
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.construct-ed.com/contractor-forums/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         CONSTRUCT-ED contractor forums
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://forums.jlconline.com/forums/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Journal of Light Construction forums
                     </PathLink>
                 </LinkItem>
@@ -75,7 +75,7 @@ const LinksContainer = styled.div`
     justify-content: space-between;
     flex-wrap: wrap;
     
-    @media (min-width: 1000px) {
+    @media (min-width: 1100px) {
         width: 1000px;
     }
 `;
@@ -89,13 +89,10 @@ const LinkItem = styled.div`
     margin-bottom: 30px;
     position: relative;
     
-    @media (min-width: 470px) {
-        width: 470px;
-    }
-    
-    @media (min-width: 1000px) {
+    @media (min-width: 1100px) {
         margin-left: 15px;
         margin-right: 15px;
+        width: 470px;
     }
 `;
 
@@ -120,11 +117,10 @@ const OvalBottom = styled.div`
     position: absolute;
     left: 0;
     bottom: 100px;
-    display: none;
-    width: 420px;
+    width: 100%;
     
-    @media (min-width: 1200px) {
-        display: block;
+    @media (min-width: 420px) {
+        width: 420px;
     }
 `;
 
@@ -132,12 +128,11 @@ const Oval = styled.div`
     position: absolute;
     right: 0;
     top: 879px;
-    display: none;
-    width: 720px;
+    width: 100%;
     transform: scaleX(-1);
     
-    @media (min-width: 1200px) {
-        display: block;
+    @media (min-width: 720px) {
+        width: 720px;
     }
 `;
 

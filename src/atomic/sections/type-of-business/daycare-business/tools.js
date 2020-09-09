@@ -30,31 +30,31 @@ const ToolsAndLinks = () => (
             <LinksContainer>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://daycare.com" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Daycare.com Forum
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.infantandtoddlerforum.org/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Infant and Toddler Forum
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.facebook.com/Daycare-Providers-Networking-Group-192651797531950/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Facebook Daycare Providers Networking Group
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.facebook.com/Home-Daycare-Providers-314058115271/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Facebook Home Daycare Providers
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.facebook.com/groups/daycareproviders/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Facebook Daycare Providers
                     </PathLink>
                 </LinkItem>
@@ -82,7 +82,7 @@ const LinksContainer = styled.div`
     justify-content: space-between;
     flex-wrap: wrap;
     
-    @media (min-width: 1000px) {
+    @media (min-width: 1100px) {
         width: 1000px;
     }
 `;
@@ -94,14 +94,12 @@ const LinkItem = styled.div`
     box-shadow: ${shadow.white1};
     width: 100%;
     margin-bottom: 30px;
+    position: relative;
     
-    @media (min-width: 470px) {
-        width: 470px;
-    }
-    
-    @media (min-width: 1000px) {
+    @media (min-width: 1100px) {
         margin-left: 15px;
         margin-right: 15px;
+        width: 470px;
     }
 `;
 
@@ -109,12 +107,11 @@ const Oval = styled.div`
     position: absolute;
     left: 0;
     top: 0;
-    width: 720px;
-    display: none;
+    width: 100%;
     transform: scaleX(-1);
     
-    @media (min-width: 1200px){
-       display: block;
+    @media (min-width: 720px){
+       width: 720px;
     } 
 `;
 
@@ -122,11 +119,10 @@ const Oval2 = styled.div`
     position: absolute;
     right: 0;
     top: 50%;
-    width: 420px;
-    display: none;
+    width: 100%;
     
-    @media (min-width: 1200px){
-       display: block;
+    @media (min-width: 420px){
+       width: 420px;
     } 
 `;
 
@@ -135,8 +131,7 @@ const Oval3 = styled.div`
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 420px;
-    display: none;
+    width: 100%;
     transform: scaleX(-1);
     opacity: 0.5;
     
@@ -144,8 +139,8 @@ const Oval3 = styled.div`
         transform: scaleY(-1);
     }
     
-    @media (min-width: 1200px){
-       display: block;
+    @media (min-width: 420px){
+       width: 420px;
     } 
 `;
 

@@ -18,10 +18,14 @@ const FranchiseStructure = () => (
         <Oval2>
             <OvalSvg2 />
         </Oval2>
-        <Container>
-            <TextCenterLayout headline="Franchise Business Structure & Examples"
-                              text="Here are some of the biggest franchise businesses in the U.S. listed by category:"/>
 
+        <Oval3>
+            <OvalSvg2 />
+        </Oval3>
+        <TextCenterLayout headline="Franchise Business Structure & Examples"
+                          text="Here are some of the biggest franchise businesses in the U.S. listed by category:" textWidth={770} headlineWidth={770}/>
+
+        <Container>
             <BoxWrapper>
                 <Franchise to="/">
                     <TopContent width={51} height={45} className="topContent">
@@ -556,12 +560,11 @@ const Oval = styled.div`
     position: absolute;
     top: 147px;
     right: 0;
-    width: 570px;
-    display: none;
+    width: 100%;
     transform: scaleX(-1);
     
-      @media (min-width: 1200px) {
-            display: block;
+      @media (min-width: 570px) {
+            width: 570px;
       }
 `;
 
@@ -569,11 +572,22 @@ const Oval2 = styled.div`
     position: absolute;
     top: 1023px;
     left: 0;
-    width: 570px;
-    display: none;
+    width: 100%;
     
-      @media (min-width: 1200px) {
-            display: block;
+      @media (min-width: 570px) {
+            width: 570px;
+      }
+`;
+
+const Oval3 = styled.div`
+    position: absolute;
+    bottom: 670px;
+    right: 0;
+    transform: rotate(180deg);
+    width: 100%;
+    
+      @media (min-width: 570px) {
+            width: 570px;
       }
 `;
 
@@ -586,18 +600,26 @@ const Wrapper = styled.section`
 const BoxWrapper = styled.div`
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-top: 104px;
+    
+    @media (min-width: 1170px){
+        justify-content: space-between;
+    }
 `;
 
 const Franchise = styled(Link)`
     display: block;
-    width: 370px;
+    width: 100%;
     border-radius: 5px;
     box-shadow: 0 24px 32px 0 rgba(236, 236, 236, 0.5);
     background-color: #ffffff;
     margin-bottom: 72px;
     transition: all 0.5s ease-in-out;
+    
+    @media (min-width: 992px){
+        width: 370px;
+    }
     
     &:hover {
         box-shadow: 0 40px 80px 0 rgba(171, 171, 171, 0.5);

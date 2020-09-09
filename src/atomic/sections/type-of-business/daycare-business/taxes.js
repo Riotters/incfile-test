@@ -42,6 +42,7 @@ const Wrapper = styled.div`
     padding-bottom: 0px;
     padding-top: 100px;
     position: relative;
+    overflow: hidden;
 `;
 
 const TextWrapper = styled.div`
@@ -72,12 +73,12 @@ const Oval = styled.div`
     position: absolute;
     right: 0;
     top: 343px;
-    width: 720px;
+    width: 100%;
     opacity: 0.5;
     display: none;
   
-    @media (min-width: 1200px){
-       display: block;
+    @media (min-width: 720px){
+       width: 720px;
     } 
 `;
 

@@ -110,6 +110,11 @@ const Content = styled.div`
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    flex-direction: column;
+    
+    @media (min-width: 576px){
+       flex-direction: row; 
+    }
 `;
 
 const ListStyle = styled.div`

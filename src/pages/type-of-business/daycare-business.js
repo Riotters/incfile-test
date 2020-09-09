@@ -335,48 +335,23 @@ const ButtonsBox = styled.div`
   }
 `;
 
-const ListWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-`;
-
-const ListBox = styled.div`
-    width: 100%;
-    
-    @media (min-width: 576px) { 
-        width: 50%; 
-    }
-`;
-
 const TabWrapper = styled.div`
     position: relative;
+    margin-top: 100px;
 `;
 
 const TabOvalOne = styled.div`
     position: absolute;
-    width: 420px;
+    width: 100%;
     left: 0;
     top: 21px;
-    display: none;
   
-    @media (min-width: 1200px){
-       display: block;
+    @media (min-width: 420px){
+       width: 420px;
     }
+    
     svg {
         transform: scaleX(-1);
-    }
-`;
-
-const TabOvalTwo = styled.div`
-    position: absolute;
-    width: 420px;
-    right: 0;
-    top: 674px;
-    display: none;
-    transform: scaleX(-1);
-    
-    @media (min-width: 1200px){
-       display: block;
     }
 `;
 

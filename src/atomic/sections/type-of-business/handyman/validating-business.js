@@ -25,15 +25,15 @@ const ContainerWrapper = styled.div`
 
 const GridSection = styled.div`
     width: 100%;
-    margin-top: 110px;
 `;
 
 const TitleBox = styled.div`
     width: 100%;
+    max-width: 750px;
     position: relative;
+    padding-bottom: 80px;
      
     @media (min-width:750px) {
-        width: 750px;
         margin: 0 auto;
     }
     
@@ -55,7 +55,7 @@ const GridSectionList = styled.div`
         margin-bottom: 70px;
     }
     
-    @media (min-width: 970px) {
+    @media (min-width: 1024px) {
         width: 970px;
         margin: 120px auto 0;
     }
@@ -83,11 +83,10 @@ const Oval = styled.div`
   position: absolute;
   left: 0;
   top: 286px;
-  width: 420px;
-  display: none;
+  width: 100%;
   
-  @media (min-width: 1200px) {
-        display: block;
+  @media (min-width: 420px) {
+        width: 420px;
   }
 `
 
@@ -95,7 +94,7 @@ const OvalBig = styled.div`
   position: absolute;
   right: 0;
   top: calc(50% - 360px);
-  width: 720px;
+  width: 100%;
   
   svg{
     transform: scaleX(-1);
@@ -103,8 +102,8 @@ const OvalBig = styled.div`
   
   display: none;
   
-  @media (min-width: 1200px) {
-        display: block;
+  @media (min-width: 720px) {
+        width: 720px;
   }
 `
 
@@ -142,7 +141,7 @@ const ValidatingBusinessIdea = () => (
                         business stand out.
                     </Paragraph>
 
-                    <Paragraph big style={{fontWeight: "bold", marginTop: "48px"}}>
+                    <Paragraph big style={{fontFamily: "Avenir-Heavy", marginTop: "48px", color: color.black}}>
                         These are all great starting points for a home handyman, but you will need to build on them to
                         make the business your own. It’s your unique skills and approach that will really help your
                         business stand out.
@@ -219,14 +218,6 @@ const ValidatingBusinessIdea = () => (
 
                 </GridSectionList>
             </GridSection>
-
-            <TitleBox>
-                <Paragraph big>
-                    Not every idea you have will make it through to becoming a moving business. There are all sorts of
-                    reasons to say “yes” or “no” to specific businesses, so think about what your strengths and
-                    weaknesses are so you can choose a type of relocation business you’d be great at.
-                </Paragraph>
-            </TitleBox>
 
         </Container>
     </ContainerWrapper>

@@ -8,7 +8,7 @@ import {color} from "../../../../components/styles/colors";
 import {shadow} from "../../../../components/styles/shadows";
 import {typeBusiness} from "../../../../static/type-of-business/daycare-business";
 import Curve from "../../../atoms/shapes/curve";
-import OvalSvg from "../../../../images/oval-orange-4.inline.svg";
+import OvalSvg from "../../../../images/ovals/top-right-transparent-orange.inline.svg";
 
 const TypeBusiness = () => (
     <Wrapper>
@@ -79,10 +79,10 @@ const Oval = styled.div`
     position: absolute;
     right: 0;
     top: 279px;
-    display: none;
+    width: 100%;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 720px){
+        width: 720px;
     }
 `;
 
@@ -91,10 +91,10 @@ const Oval2 = styled.div`
     left: 0;
     bottom: 0;
     transform: rotate(180deg);
-    display: none;
+    width: 100%;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 570px){
+        width: 570px;
     }
 `;
 
