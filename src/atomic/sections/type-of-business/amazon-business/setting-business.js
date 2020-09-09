@@ -131,7 +131,7 @@ const ImageBoxes = styled.div`
     grid-template-columns: 1fr 1fr;
   }
   
-  @media (min-width: 970px) {
+  @media (min-width: 1024px) {
     width: 970px;
     margin: 0 auto;
   }
