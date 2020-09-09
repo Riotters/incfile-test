@@ -16,7 +16,7 @@ export const typeBusiness = {
         },
         {
             circleText: 3,
-            imageName: "franchise",
+            imageName: "franchise-purple",
             headline: "Franchise Daycare Businesses",
             text: "Some large daycare businesses have franchise opportunities. In these circumstances, you pay a franchise fee but get brand recognition, support and advice on how to set up and manage your daycare business."
         }

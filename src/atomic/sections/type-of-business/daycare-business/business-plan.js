@@ -12,7 +12,7 @@ import TextCenterLayout from "../../../partials/heading-center";
 
 const BusinessOwnerResponsibilities = styled.section`
   position: relative;
-  padding-top: 75px;
+  padding-top: 100px;
   padding-bottom: 64px;
   width: 100%;
   
@@ -72,7 +72,7 @@ const BusinessPlan = () => (
         <Container>
             <BusinessOwnerResponsibilities>
                 <TextCenterLayout headline="Your Daycare Business Plan" text="You might think your daycare business doesn’t need a business plan, but you’d be wrong. You will need to clearly understand and capture how you’re going to run your daycare business, market yourself, get sales, make a profit and grow. This can only come about through creating a watertight daycare business plan." />
-                <Paragraph big>
+                <Paragraph big style={{marginBottom: "80px", textAlign: "center"}}>
                     Business plans do vary slightly, but they should all cover the following areas:
                 </Paragraph>
 

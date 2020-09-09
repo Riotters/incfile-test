@@ -98,22 +98,22 @@ const ValidatingBusinessIdea = () => (
             <GridSection>
                 <TitleBox>
                     <Heading size={3}>Validating Your Food Truck Business Idea</Heading>
-                    <Paragraph big>
-                        These ideas are just starting points — you’ll need to do plenty of research
-                        to understand your customers and create a food truck experience they’re going
-                        to love.
+                    <Paragraph big style={{marginBottom: "40px"}}>
+                        The areas we’ve listed above are just starting points — there are many different types of
+                        daycare businesses. Once you’ve identified specific daycare areas you might like
+                        to go into, you need to validate your daycare business idea.
                     </Paragraph>
-                    <Paragraph big style={{fontWeight: "bold"}}>
-                        It can be quite expensive to open a food truck business, with estimates
-                        of between $50,000 and $100,000 for your startup costs.
-                    </Paragraph>
-                    <Paragraph big>
-                        Before committing too much time, energy and money into your new food truck business, it’s vital to test the marketplace.
+                    <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
+                        Remember too that every daycare business will have many competitors.
                     </Paragraph>
                     <Paragraph big>
-                        Keep researching and testing until you find the right type of food truck business.
-                        It’s fine to say no to the first few ideas, so long as you settle on a niche where there’s
-                        a genuine need.
+                        You will need to stand out and offer superior childcare to excel as a daycare business owner.
+                    </Paragraph>
+                    <Paragraph big>
+                        Not every idea you have will make it through to becoming a daycare business. There are all sorts
+                        of reasons to say “yes” or “no” to specific ideas and approaches — think about what your
+                        strengths and weaknesses are so you can choose a type of daycare business that you’d be great
+                        at.
                     </Paragraph>
                 </TitleBox>
 
@@ -125,8 +125,10 @@ const ValidatingBusinessIdea = () => (
                             Look at who your childcare competitors are in the space
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
-                            Having competitors is a good thing as it shows there’s a market, but if there are too many, you’re likely
-                            to struggle without a really good unique selling point. Remember that daycare services are very local, so you will need to be located in the right area.
+                            Having competitors is a good thing as it shows there’s a market, but if there are too many,
+                            you’re likely
+                            to struggle without a really good unique selling point. Remember that daycare services are
+                            very local, so you will need to be located in the right area.
                         </Paragraph>
                     </TextBlockWithImage>
 
@@ -139,7 +141,8 @@ const ValidatingBusinessIdea = () => (
                             Identify your daycare business’s unique selling points (USPs)
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
-                            You need to find something unique to offer parents. Whether it’s specialized entertainment and activities or customized childcare services, this is going
+                            You need to find something unique to offer parents. Whether it’s specialized entertainment
+                            and activities or customized childcare services, this is going
                             to be one of your main strengths.
                         </Paragraph>
                     </TextBlockWithImage>
@@ -150,7 +153,9 @@ const ValidatingBusinessIdea = () => (
                             Understand your market
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
-                            Clearly identify exactly who your daycare customers are likely to be, where they hang out and how you’re going to reach them. This will be essential to your marketing and communications (especially word-of-mouth recommendations).
+                            Clearly identify exactly who your daycare customers are likely to be, where they hang out
+                            and how you’re going to reach them. This will be essential to your marketing and
+                            communications (especially word-of-mouth recommendations).
                         </Paragraph>
                     </TextBlockWithImage>
 
@@ -160,7 +165,8 @@ const ValidatingBusinessIdea = () => (
                             Talk to parents
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
-                            Speak with parents to understand what they want from your childcare business. Validate your ideas and approach by asking if they would consider placing their child with you.
+                            Speak with parents to understand what they want from your childcare business. Validate your
+                            ideas and approach by asking if they would consider placing their child with you.
                         </Paragraph>
                     </TextBlockWithImage>
 

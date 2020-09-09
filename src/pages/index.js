@@ -89,7 +89,7 @@ const IndexPage = () => (
         <Link to="/type-of-business/boutique-clothing-business">Boutique Clothing Business</Link>
         <Link to="/type-of-business/social-media-influencer">Social Media Influencer</Link>
         <Link to="/type-of-business/etsy-business">Etsy Business (no details)</Link>
-        <Link to="/type-of-business/amazon-business">Amazon Business (no details)</Link>
+        <Link to="/type-of-business/amazon-business">Amazon Business</Link>
         <Link to="/type-of-business/daycare-business">Daycare business (no details)</Link>
         <Link to="/type-of-business/travel-agency">Travel Agency (no details)</Link>
         <Link to="/type-of-business/construction-company">Construction Company (no details)</Link>

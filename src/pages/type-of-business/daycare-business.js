@@ -18,6 +18,7 @@ import {Paragraph} from "../../atomic/atoms/typography/paragraph";
 import TabsSection from "../../atomic/partials/tabs";
 import Colorbox from "../../components/color-box";
 import DaycareIcon from "../../images/icons/daycare.inline.svg";
+import MegafonIcon from "../../images/icons/we-want-to-help-you-get-your-daycare-business-of-the-ground.inline.svg";
 import {color} from "../../components/styles/colors";
 import TypeBusiness from "../../atomic/sections/type-of-business/daycare-business/type-business";
 import ValidatingBusinessIdea from "../../atomic/sections/type-of-business/daycare-business/validating-business-idea";
@@ -63,10 +64,6 @@ const DaycareBusiness = () => (
                 <TabsOvalTwoSvg/>
             </TabOvalOne>
 
-            <TabOvalTwo>
-                <TabsOvalOneSvg/>
-            </TabOvalTwo>
-
             <TabsSection>
                 <TabHeading>
                     <TabTitle title="Daycare" SvgIcon={DaycareIcon}/>
@@ -88,8 +85,8 @@ const DaycareBusiness = () => (
                             appeal to parents.
                         </Paragraph>
 
-                        <Colorbox className="box" theme="icon" Icon={DaycareIcon} color={color.blue3} curve
-                                  curveColor={color.orange2}>
+                        <Colorbox className="box" theme="icon" Icon={MegafonIcon} color={color.blue3} curve
+                                  curveColor={color.blue1}>
                             <Heading size={4}>
                                 We want to help you get your daycare business
                                 off the ground.
@@ -102,14 +99,14 @@ const DaycareBusiness = () => (
                             </Paragraph>
                         </Colorbox>
 
-                        <Paragraph big style={{marginTop: "48px"}}>
+                        <Paragraph big style={{marginTop: "48px", marginBottom: "48px"}}>
                             From validating your childcare business and doing the research to filing your paperwork and
                             running your business, this guide will help you out. We’ll talk you through the main things
                             you
                             need to do to get your daycare business off of the ground.
                         </Paragraph>
 
-                        <Paragraph big style={{fontWeight: "bold"}}>
+                        <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
                             Read on for some insight into creating your own childcare organization and becoming an
                             entrepreneur.
                         </Paragraph>
