@@ -13,7 +13,7 @@ import ContentCenter from "../../../partials/content-center";
 
 const Grants = () => (
     <Wrapper>
-        <Container>
+
             <ContentCenter contentWidth={770}>
                 <TextCenterLayout headline="Small Business Grants for Women" headlineWidth={770} textWidth={770}
                                   text="Before we get into business ideas for moms and other women, we want to point out some funding options available to you. Around a quarter of women seek funding for their business, and around a third of those are successful in obtaining it."/>
@@ -45,12 +45,11 @@ const Grants = () => (
 
                 </AdventagesWrapper>
             </ContentCenter>
-        </Container>
+
+        <TextCenterLayout headline="Here are some places you can apply for funding for your woman-owned business:"
+                          text="Note that the organizations listed provide grants specifically for women. There are many other grants available to both male and female business founders."/>
 
         <Container>
-            <TextCenterLayout headline="Here are some places you can apply for funding for your woman-owned business:"
-                              text="Note that the organizations listed provide grants specifically for women. There are many other grants available to both male and female business founders."/>
-
             <BoxWrapper>
                 <Franchise to="/">
                     <TopContent width={129} height={33} className="topContent">
@@ -212,18 +211,26 @@ const Wrapper = styled.section`
 const BoxWrapper = styled.div`
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-top: 104px;
+    
+    @media (min-width: 1170px){
+        justify-content: space-between;
+    }
 `;
 
 const Franchise = styled(Link)`
     display: block;
-    width: 370px;
+    width: 100%;
     border-radius: 5px;
     box-shadow: 0 24px 32px 0 rgba(236, 236, 236, 0.5);
     background-color: #ffffff;
     margin-bottom: 72px;
     transition: all 0.5s ease-in-out;
+    
+    @media (min-width: 992px){
+        width: 370px;
+    }
     
     &:hover {
         box-shadow: 0 40px 80px 0 rgba(171, 171, 171, 0.5);

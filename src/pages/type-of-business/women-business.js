@@ -204,13 +204,12 @@ const TabsWrapper = styled.section`
 
 const TabOvalOne = styled.div`
     position: absolute;
-    width: 420px;
+    width: 100%;
     left: 0;
     top: 21px;
-    display: none;
   
-    @media (min-width: 720px){
-       display: block;
+    @media (min-width: 420px){
+       width: 420px;
     }
 `;
 

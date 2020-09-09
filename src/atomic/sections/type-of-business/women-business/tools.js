@@ -31,11 +31,10 @@ const Oval = styled.div`
     position: absolute;
     right: 0;
     top: 339px;
-    width: 720px;
-    display: none;
+    width: 100%;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 720px){
+        width: 720px;
     }
 `;
 
@@ -43,11 +42,10 @@ const Oval2 = styled.div`
     position: absolute;
     left: 0;
     bottom: 226px;
-    width: 420px;
-    display: none;
+    width: 100%;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 420px){
+        width: 420px;
     }
 `;
 export default ToolsAndLinks;
