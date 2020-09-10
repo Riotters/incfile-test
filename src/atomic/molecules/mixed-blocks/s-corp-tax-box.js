@@ -5,7 +5,8 @@ import { shadow } from "../../atoms/styles/shadows";
 import Image from "../../atoms/image/image";
 import { Heading } from "../../atoms/typography/heading";
 import { Paragraph } from "../../atoms/typography/paragraph";
-import ArrowLink from "../buttons/text";
+import Curve from "../../atoms/icons/curve";
+import CurveSVG from "../../../images/curves/bottom-left-top-right.inline.svg";
 
 const Wrapper = styled.div`
     display: flex;
@@ -42,9 +43,16 @@ const ColorBox = styled.div`
     }
 `;
 
-const SCorpTaxBox = ({ className, image, color, content }) => {
+const colorBlue = color.blue1;
+
+const SCorpTaxBox = ({ className, image, color, content, curve }) => {
   return (
     <Wrapper className={className}>
+        {curve && (
+            <Curve top="-25" left="-29" color={colorBlue}>
+                <CurveSVG />
+            </Curve>
+        )}
         <ImageWrapper>
             <Image filename={image} />
         </ImageWrapper>

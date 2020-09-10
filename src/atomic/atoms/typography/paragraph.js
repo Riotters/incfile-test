@@ -40,7 +40,7 @@ const StyledParagraph = styled.p`
 export const Paragraph = ({ children, maxWidth, mixed, ...rest }) => (
   <StyledParagraph maxWidth={maxWidth} {...rest}>
     {(typeof children === "string" || mixed) ? children : null}
-    {(typeof children === "object" && mixed === false) ? children.map((el, id) => (id % 2 ? <Link to={el.url}>{` ${el.text} `}</Link> : el.text)) : null}
+    {(typeof children === "object" && mixed === false) ? children.map(el => (el.url ? <Link to={el.url}>{` ${el.text} `}</Link> : el.text)) : null}
   </StyledParagraph>
 );
 

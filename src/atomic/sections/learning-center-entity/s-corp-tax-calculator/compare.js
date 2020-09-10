@@ -7,9 +7,12 @@ import ArrowLink from "../../../molecules/buttons/text";
 import ImageContent from "../../../partials/left-image-right-content";
 import IconSVG from "../../../../images/icons/reduce-arrow.inline.svg";
 import BoxedButton from "../../../molecules/buttons/boxed";
-import IconTextColorBox from "../../../molecules/text-blocks/icon-h4-text-color";
+import IconListColorBox from "../../../molecules/text-blocks/icon-h4-list-color";
+import Circle from "../../../atoms/icons/circle";
+import ResonableSalarySVG from "../../../../images/icons/resonable-salary-and-compensation.inline.svg";
+import LLCDeclaringSVG from "../../../../images/icons/declaring-an-llc-should-be-taxed-as-an-s-corp.inline.svg";
 import Oval from "../../../atoms/icons/oval";
-import OvalSVG from "../../../../images/ovals/top-left-transparent-red3.inline.svg";
+import OvalSVG from "../../../../images/ovals/top-left-transparent-babyblue1.inline.svg";
 
 const About = styled.section`
   position: relative;
@@ -36,7 +39,7 @@ const About = styled.section`
 
 const AboutSection = ({ className, content }) => (
   <About className={className}>
-    <Oval className="oval" height="570" width="570" y="-40">
+    <Oval className="oval" height="720" width="720" y="-35">
       <OvalSVG />
     </Oval>
     <ImageContent image="llc-as-tax-crop-about-6724">
@@ -46,24 +49,30 @@ const AboutSection = ({ className, content }) => (
       <Paragraph big bottomMargin="48">
         {content.text}
       </Paragraph>
-      <Paragraph big bottomMargin="0">
+      <IconListColorBox color={color.orange3} content={content.box} bottomMargin="72" rounded />
+      <Heading size="3">
+        {content.header2}
+      </Heading>
+      <Paragraph big bottomMargin="72">
         {content.text2}
       </Paragraph>
-      <IconTextColorBox color={color.green3} Icon={IconSVG} content={content.box} bottomMargin="48" rounded curve />
-      <Heading size="3" bottomMargin="32">
-        {content.header2}
+      <Circle height="80" width="80" circleColor={color.green2} bottomMargin="32">
+        <ResonableSalarySVG />
+      </Circle>
+      <Heading size="3">
+        {content.header3}
       </Heading>
       <Paragraph big bottomMargin="48">
         {content.text3}
       </Paragraph>
+      <Circle height="80" width="80" circleColor={color.purple2} bottomMargin="32">
+        <LLCDeclaringSVG />
+      </Circle>
+      <Heading size="3">
+        {content.header4}
+      </Heading>
       <Paragraph big bottomMargin="0">
         {content.text4}
-      </Paragraph>
-      <Heading size="3" bottomMargin="32">
-        {content.header3}
-      </Heading>
-      <Paragraph big bottomMargin="48">
-        {content.text5}
       </Paragraph>
     </ImageContent>
   </About>
