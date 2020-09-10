@@ -14,27 +14,29 @@ import OvalSvg2 from "../../../../images/ovals/bottom-left-transparent-orange.in
 const ToolsAndLinks = () => (
     <Wrapper>
         <Oval3>
-            <OvalSvg />
+            <OvalSvg/>
         </Oval3>
         <Oval4>
-            <OvalSvg2 />
+            <OvalSvg2/>
         </Oval4>
         <LinksWrapper>
             <Oval>
-                <OvalSvg />
+                <OvalSvg/>
             </Oval>
             <Oval2>
-                <OvalSvg />
+                <OvalSvg/>
             </Oval2>
 
-            <Container>
-                <TextCenterLayout headline="Social Media Groups for Your Photography Business"
-                                  text="Connecting with other business owners in your industry can be incredibly helpful. Here are some of the best social media groups:"/>
+            <TextCenterLayout headlineWidth={770} textWidth={770}
+                              headline="Social Media Groups for Your Photography Business"
+                              text="Connecting with other business owners in your industry can be incredibly helpful. Here are some of the best social media groups:"/>
 
+            <Container>
                 <LinksContainer>
 
                     <LinkItem>
-                        <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                        <PathLink to="https://www.facebook.com/pg/shootandsharephotos/about/?ref=page_internal"
+                                  textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                             Shoot and Share
                         </PathLink>
                         <Paragraph style={{marginTop: "20px"}} bottomMargin={0}>
@@ -44,7 +46,8 @@ const ToolsAndLinks = () => (
                     </LinkItem>
 
                     <LinkItem>
-                        <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                        <PathLink to="https://www.facebook.com/groups/pshopandlightroom/" textColor={color.blue1}
+                                  hoverColor={color.orange1} arrowColor={color.blue1}>
                             Photoshop and Lightroom
                         </PathLink>
                         <Paragraph style={{marginTop: "20px"}} bottomMargin={0}>
@@ -54,7 +57,8 @@ const ToolsAndLinks = () => (
                     </LinkItem>
 
                     <LinkItem>
-                        <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                        <PathLink to="https://www.facebook.com/groups/profitographers/" textColor={color.blue1}
+                                  hoverColor={color.orange1} arrowColor={color.blue1}>
                             Photographer Entrepreneur
                         </PathLink>
                         <Paragraph style={{marginTop: "20px"}} bottomMargin={0}>
@@ -65,7 +69,8 @@ const ToolsAndLinks = () => (
                     </LinkItem>
 
                     <LinkItem>
-                        <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                        <PathLink to="https://www.facebook.com/groups/724881957642789/" textColor={color.blue1}
+                                  hoverColor={color.orange1} arrowColor={color.blue1}>
                             The Art of the Second Shot
                         </PathLink>
                         <Paragraph style={{marginTop: "20px"}} bottomMargin={0}>
@@ -75,7 +80,8 @@ const ToolsAndLinks = () => (
                     </LinkItem>
 
                     <LinkItem>
-                        <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                        <PathLink to="https://www.linkedin.com/groups/144538/profile" textColor={color.blue1}
+                                  hoverColor={color.orange1} arrowColor={color.blue1}>
                             Photo Marketing Association International Forum
                         </PathLink>
                         <Paragraph style={{marginTop: "20px"}} bottomMargin={0}>
@@ -85,7 +91,8 @@ const ToolsAndLinks = () => (
                     </LinkItem>
 
                     <LinkItem>
-                        <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                        <PathLink to="https://www.linkedin.com/groups/93379/profile" textColor={color.blue1}
+                                  hoverColor={color.orange1} arrowColor={color.blue1}>
                             Professional Photographers of America
                         </PathLink>
                         <Paragraph style={{marginTop: "20px"}} bottomMargin={0}>
@@ -95,25 +102,31 @@ const ToolsAndLinks = () => (
                     </LinkItem>
 
                 </LinksContainer>
+            </Container>
 
-                <TextCenterLayout headline="Discussion Groups and Forums for Your Photography Business" />
+            <TextCenterLayout headline="Discussion Groups and Forums for Your Photography Business"
+                              headlineWidth={770}/>
 
+            <Container>
                 <LinksContainer>
 
                     <LinkItem>
-                        <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                        <PathLink to="https://www.thephotoforum.com/" textColor={color.blue1} hoverColor={color.orange1}
+                                  arrowColor={color.blue1}>
                             The Photo Forum
                         </PathLink>
                     </LinkItem>
 
                     <LinkItem>
-                        <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                        <PathLink to="https://www.photography-forum.org/" textColor={color.blue1}
+                                  hoverColor={color.orange1} arrowColor={color.blue1}>
                             Photography Forum
                         </PathLink>
                     </LinkItem>
 
                     <LinkItem>
-                        <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                        <PathLink to="https://www.photo.net/discuss/" textColor={color.blue1} hoverColor={color.orange1}
+                                  arrowColor={color.blue1}>
                             Photo.net Forum
                         </PathLink>
                     </LinkItem>
@@ -148,7 +161,7 @@ const LinksContainer = styled.div`
     justify-content: space-between;
     flex-wrap: wrap;
     
-    @media (min-width: 1000px) {
+    @media (min-width: 1100px) {
         width: 1000px;
     }
 `;
@@ -165,7 +178,7 @@ const LinkItem = styled.div`
         width: 470px;
     }
     
-    @media (min-width: 1000px) {
+    @media (min-width: 1100px) {
         margin-left: 15px;
         margin-right: 15px;
     }
@@ -175,11 +188,10 @@ const Oval = styled.div`
     position: absolute;
     left: 0;
     top: 246px;
-    width: 720px;
-    display: none;
+    width: 100%;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 720px){
+        width: 720px;
     }
 `;
 
@@ -187,12 +199,11 @@ const Oval3 = styled.div`
     position: absolute;
     right: 0;
     bottom: 951px;
-    width: 720px;
-    display: none;
+    width: 100%;
     transform: scaleX(-1);
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 720px){
+        width: 720px;
     }
 `;
 
@@ -200,11 +211,10 @@ const Oval4 = styled.div`
     position: absolute;
     left: 0;
     bottom: 180px;
-    width: 420px;
-    display: none;
+    width: 100%;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 420px){
+        width: 420px;
     }
 `;
 
@@ -212,12 +222,11 @@ const Oval2 = styled.div`
     position: absolute;
     right: 0;
     bottom: 251px;
-    width: 720px;
+    width: 100%;
     transform: rotate(180deg);
-    display: none;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 720px){
+        width: 720px;
     }
 `;
 

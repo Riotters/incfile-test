@@ -34,12 +34,11 @@ const Oval = styled.div`
     position: absolute; 
     top: 142px;
     right: 0;
-    width: 570px;
+    width: 100%;
     z-index: -1;
-    display: none;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 570px){
+        width: 570px;
     }
 `;
 export default InsuranceBusiness;

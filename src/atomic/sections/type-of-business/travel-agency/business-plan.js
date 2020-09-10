@@ -6,6 +6,7 @@ import CountingTextBoxed from "../../../molecules/text-blocks/counting-text-boxe
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import Container from "../../../container";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-orange2.inline.svg";
+import {Link} from "gatsby";
 
 const Wrapper = styled.div`
     position: relative;
@@ -17,9 +18,10 @@ const BusinessOwnerResponsibilities = styled.section`
   padding-top: 75px;
   padding-bottom: 64px;
   width: 100%;
+  max-width: 770px;
   
   @media (min-width: 770px) {
-    width: 770px;
+    
     margin: 0 auto;
   }
 
@@ -37,11 +39,10 @@ const Oval = styled.div`
   position: absolute;
   left: 0;
   top: 71px;
-  width: 420px;
-  display: none;
+  width: 100%;
   
-  @media (min-width: 1200px){
-    display: block;
+  @media (min-width: 420px){
+    width: 420px;
   }
 `
 
@@ -49,12 +50,11 @@ const OvalCenter = styled.div`
   position: absolute;
   right: 0;
   bottom: 361px;
-  width: 720px;
+  width: 100%;
   transform: scaleX(-1);
-  display: none;
   
-  @media (min-width: 1200px){
-    display: block;
+  @media (min-width: 720px){
+    width: 720px;
   }
 `
 
@@ -147,7 +147,7 @@ const BusinessPlan = () => (
                 </CountingTextBoxed>
 
                 <Paragraph big style={{marginTop: "50px"}} mixed={true}>
-                    We’ve got the perfect <span style={{color: color.blue1, fontWeight: "bold"}}>guide to writing your business plan.</span>
+                    We’ve got the perfect <Link to="/">guide to writing your business plan.</Link>
                 </Paragraph>
             </BusinessOwnerResponsibilities>
         </Container>

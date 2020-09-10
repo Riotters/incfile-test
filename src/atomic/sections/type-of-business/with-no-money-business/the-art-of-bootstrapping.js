@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "../../../container";
-import TextCenterLayout from "../../../../components/partials/blocks/heading-center";
+import TextCenterLayout from "../../../partials/heading-center";
 import TopImageBox from "../../../../components/top-image-box";
 import {color} from "../../../../components/styles/colors";
 import styled from "styled-components";
@@ -13,12 +13,13 @@ const TheArtOfBootstrapping = () => (
             <OvalSvg />
         </Oval>
 
+        <TextCenterLayout
+            headline="The Art of Bootstrapping"
+            headlineWidth="700"
+            text="If you’re going to bootstrap your business, you’ll need to learn the art of the hustle. Here are some tips for making your money go further, keeping costs down and generating that all-important revenue."
+        />
+
         <Container>
-            <TextCenterLayout
-                headline="The Art of Bootstrapping"
-                headlineWidth="700"
-                text="If you’re going to bootstrap your business, you’ll need to learn the art of the hustle. Here are some tips for making your money go further, keeping costs down and generating that all-important revenue."
-            />
             <ImageBoxes>
 
                 <TopImageBox image="additional-accounting-fees" color={color.red3}>
@@ -101,13 +102,14 @@ const ImageBoxes = styled.div`
   grid-gap: 30px;
   padding-top: 112px;
   width: 100%;
-
+  max-width: 970px;
+  
   @media(min-width: 769px) {
     grid-template-columns: 1fr 1fr;
   }
   
   @media (min-width: 970px) {
-    width: 970px;
+    
     margin: 0 auto;
   }
 `;
@@ -123,11 +125,10 @@ const Oval = styled.div`
     position: absolute;
     left: 0;
     top: 668px;
-    width: 570px;
-    display: none;
+    width: 100%;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 570px){
+        width: 570px;
     }
 `;
 

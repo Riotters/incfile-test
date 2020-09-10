@@ -23,15 +23,15 @@ const ContainerWrapper = styled.div`
 
 const GridSection = styled.div`
     width: 100%;
-    margin-top: 110px;
 `;
 
 const TitleBox = styled.div`
     width: 100%;
     position: relative;
-     
+    max-width: 750px;
+    padding-bottom: 80px;
+    
     @media (min-width:750px) {
-        width: 750px;
         margin: 0 auto;
     }
     
@@ -48,13 +48,13 @@ const GridSectionList = styled.div`
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
+    max-width: 970px;
     
     > div {
         margin-bottom: 70px;
     }
     
     @media (min-width: 970px) {
-        width: 970px;
         margin: 120px auto 0;
     }
 `;
@@ -63,13 +63,12 @@ const Oval = styled.div`
   position: absolute;
   left: 0;
   top: 466px;
-  width: 720px;
+  width: 100%;
   opacity: 0.5;
   transform: rotate(-180deg);
-  display: none;
   
-  @media (min-width: 1200px){
-    display: block;
+  @media (min-width: 720px){
+    width: 720px;
   }
 `
 

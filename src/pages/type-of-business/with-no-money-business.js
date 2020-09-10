@@ -41,9 +41,7 @@ const WithNoMoneyBusiness = () => (
                 you can “bootstrap” your business with very little cash.
             </p>
             <ButtonsBox>
-                <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{text: "Start Now", url: "/"}}>
-                    Start Now
-                </Button>
+                <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{text: "Start Now", url: "/"}} />
             </ButtonsBox>
 
             <RatingRow>
@@ -96,19 +94,6 @@ const ButtonsBox = styled.div`
   @media (min-width: 769px) {
     flex-direction: row;
   }
-`;
-
-const ListWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-`;
-
-const ListBox = styled.div`
-    width: 100%;
-    
-    @media (min-width: 576px) { 
-        width: 50%; 
-    }
 `;
 
 export default WithNoMoneyBusiness;

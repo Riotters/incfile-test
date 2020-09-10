@@ -86,11 +86,10 @@ const Oval = styled.div`
     position: absolute;
     right: 0;
     top: 353px;
-    width: 720px;
-    display: none;
+    width: 100%;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 720px){
+        width: 720px;
     }
 `;
 
@@ -98,12 +97,11 @@ const Oval2 = styled.div`
     position: absolute;
     left: 0;
     bottom: 51px;
-    width: 570px;
+    width: 100%;
     transform: rotate(180deg);
-    display: none;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 570px){
+        width: 570px;
     }
 `;
 

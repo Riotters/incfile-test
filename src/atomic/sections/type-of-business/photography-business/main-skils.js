@@ -68,13 +68,13 @@ const ImageBoxes = styled.div`
   grid-gap: 30px;
   padding-top: 112px;
   width: 100%;
-
+  max-width: 970px;
+  
   @media(min-width: 769px) {
     grid-template-columns: 1fr 1fr;
   }
   
   @media (min-width: 970px) {
-    width: 970px;
     margin: 0 auto;
   }
 `;
@@ -91,11 +91,10 @@ const Oval = styled.div`
     right: 0;
     bottom: 0;
     opacity: 0.5;
-    width: 720px;
-    display: none;
+    width: 100%;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 720px){
+        width: 720px;
     }
 `;
 

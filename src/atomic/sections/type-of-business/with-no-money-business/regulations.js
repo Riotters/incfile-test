@@ -2,8 +2,8 @@ import React from "react";
 import {Heading} from "../../../atoms/typography/heading";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import Container from "../../../container";
-import OvalSvg from "../../../../images/oval-blue-5.inline.svg";
 import styled from "styled-components";
+import {Link} from "gatsby";
 
 const Regulations = () => (
     <Wrapper>
@@ -12,12 +12,14 @@ const Regulations = () => (
                 Rules, Regulations and Taxes
                 for Your Business
             </Heading>
-            <Paragraph big>
-                Of course, along with running a business there are certain rules, regulations and legalities you need to be aware of. You will need to explore local, state and federal licenses and permits, and we can also help out with your licensing needs.
+            <Paragraph big mixed={true}>
+                Of course, along with running a business there are certain rules, regulations and legalities you need to
+                be aware of. You will need to explore local, state and federal licenses and permits, and <Link to="/">we can also
+                help out with your licensing needs</Link>.
             </Paragraph>
             <Paragraph big>
                 As a rule of thumb, we recommend keeping back around a third of your earnings
-                to pay your taxes. We can prepare and file your tax returns for you.
+                to pay your taxes. We can <Link to="/">prepare and file your tax returns for you</Link>.
             </Paragraph>
         </Container>
     </Wrapper>

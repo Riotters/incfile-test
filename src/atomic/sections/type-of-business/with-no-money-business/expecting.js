@@ -2,10 +2,6 @@ import Container from "../../../container";
 import {Heading} from "../../../atoms/typography/heading";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import TextBlockWithImage from "../../../molecules/mixed-blocks/text-block-with-absolute-image";
-import TalkIcon from "../../../../images/icons/talk-to-clients.inline.svg";
-import IdetifyIcon from "../../../../images/icons/identify-your-unique-selling-point.inline.svg"
-import LookIcon from "../../../../images/icons/look-at-who-your-competitors-are-in-the-space.inline.svg"
-import InvolvedIcon from "../../../../images/icons/get-involved-with-business-communities.inline.svg"
 import {color} from "../../../../components/styles/colors";
 import React from "react";
 import styled from "styled-components";
@@ -36,9 +32,11 @@ const GridSection = styled.div`
 const TitleBox = styled.div`
     width: 100%;
     position: relative;
-     
+    max-width: 750px;
+    padding-bottom: 80px;
+    
     @media (min-width:750px) {
-        width: 750px;
+        
         margin: 0 auto;
     }
     
@@ -55,13 +53,14 @@ const GridSectionList = styled.div`
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
+    max-width: 970px;
     
     > div {
         margin-bottom: 70px;
     }
     
     @media (min-width: 970px) {
-        width: 970px;
+        
         margin: 120px auto 0;
     }
 `;
@@ -70,11 +69,10 @@ const OvalCenter = styled.div`
   position: absolute;
   right: 0;
   top: 599px;
-  width: 570px;
-  display: none;
+  width: 100%;
   
-  @media (min-width: 1200px){
-    display: block;
+  @media (min-width: 570px){
+    width: 570px;
   }
 `
 
@@ -91,13 +89,14 @@ const Expecting = () => (
             <OvalBlueSVG/>
         </OvalCenter>
 
+        <TitleBox>
+            <TextCenterLayout headline="What to Expect When Starting a Business with Low Capital"
+                              text="As a new entrepreneur, here’s what you can expect throughout the lifecycle of starting, running and growing a business with a lack of finances!"/>
+        </TitleBox>
+
         <Container>
 
             <GridSection>
-                <TitleBox>
-                    <TextCenterLayout headline="What to Expect When Starting a Business with Low Capital" text="As a new entrepreneur, here’s what you can expect throughout the lifecycle of starting, running and growing a business with a lack of finances!"/>
-                </TitleBox>
-
                 <GridSectionList>
 
                     <TextBlockWithImage SvgImage={BallsIcon} imageBackgroundColor={color.purple2}

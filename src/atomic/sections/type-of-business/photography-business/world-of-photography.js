@@ -1,6 +1,6 @@
 import Container from "../../../container";
 import {Paragraph} from "../../../atoms/typography/paragraph";
-import {color} from "../../../../components/styles/colors";
+import {color} from "../../../atoms/styles/colors";
 import React from "react";
 import styled from "styled-components";
 import OvalSvg from "../../../../images/ovals/top-right-transparent-orange.inline.svg";
@@ -26,9 +26,9 @@ const GridSection = styled.div`
 const TitleBox = styled.div`
     width: 100%;
     position: relative;
-     
+    max-width: 750px;
+    
     @media (min-width:750px) {
-        width: 750px;
         margin: 0 auto;
     }
     
@@ -44,11 +44,10 @@ const OvalCenter = styled.div`
   position: absolute;
   right: 0;
   top: 721px;
-  width: 720px;
-  display: none;
+  width: 100%;
   
-  @media (min-width: 1200px){
-    display: block;
+  @media (min-width: 720px){
+    width: 720px;
   }
 `
 
@@ -56,11 +55,10 @@ const OvalCenter2 = styled.div`
   position: absolute;
   left: 0;
   top: 50%;
-  width: 420px;
-  display: none;
+  width: 100%;
   
-  @media (min-width: 1200px){
-    display: block;
+  @media (min-width: 420px){
+    width: 420px;
   }
 `
 
@@ -95,7 +93,7 @@ const WorldOfPhotography = () => (
                         individuals.
                     </Paragraph>
 
-                    <Paragraph big style={{fontWeight: "bold"}}>
+                    <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
                         There are dozens of different niches you can choose to pursue as a photographer.
                     </Paragraph>
 
