@@ -33,12 +33,11 @@ const Oval = styled.div`
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 420px;
+    width: 100%;
     z-index: -1;
-    display: none;
   
-    @media (min-width: 1200px) {
-        display: block;
+    @media (min-width: 420px) {
+        width: 420px;
     }
 `;
 

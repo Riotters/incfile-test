@@ -27,9 +27,10 @@ const GridSection = styled.div`
 const TitleBox = styled.div`
     width: 100%;
     position: relative;
-     
+    max-width: 750px;
+    padding-bottom: 80px;
+    
     @media (min-width:750px) {
-        width: 750px;
         margin: 0 auto;
     }
     
@@ -46,13 +47,13 @@ const GridSectionList = styled.div`
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
+    max-width: 970px;
     
     > div {
         margin-bottom: 70px;
     }
     
     @media (min-width: 970px) {
-        width: 970px;
         margin: 120px auto 0;
     }
 `;
@@ -61,11 +62,10 @@ const OvalCenter = styled.div`
   position: absolute;
   left: 0;
   top: 471px;
-  width: 420px;
-  display: none;
+  width: 100%;
   
-  @media (min-width: 1200px) {
-    display: block;
+  @media (min-width: 420px) {
+    width: 420px;
   }
 `
 
@@ -73,12 +73,11 @@ const OvalCenter2 = styled.div`
   position: absolute;
   right: 0;
   bottom: 196px;
-  width: 420px;
+  width: 100%;
   transform: scaleX(-1);
-  display: none;
   
-  @media (min-width: 1200px) {
-    display: block;
+  @media (min-width: 420px) {
+    width: 420px;
   }
 `
 
@@ -113,7 +112,7 @@ const ValidatingBusinessIdea = () => (
                         of gym, fitness or personal training business you want to run through conducting your own
                         research.
                     </Paragraph>
-                    <Paragraph big style={{fontWeight: "bold"}}>
+                    <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
                         Not every idea you have will make it through to becoming a gym, fitness or personal training
                         business.
                     </Paragraph>

@@ -66,7 +66,7 @@ const GymPersonalTraining = () => (
 
         <TabsWrapper>
             <Oval>
-                <OvalSvg />
+                <OvalSvg/>
             </Oval>
             <TabsSection style={{marginTop: "100px"}}>
                 <TabHeading>
@@ -105,7 +105,7 @@ const GymPersonalTraining = () => (
                             to do to get your fitness business off of the ground.
                         </Paragraph>
 
-                        <Paragraph big style={{fontWeight: "bold"}}>
+                        <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
                             Read on for some insight into creating your own gym, fitness center
                             or personal training business and becoming an entrepreneur. In this guide we will cover:
                         </Paragraph>
@@ -213,19 +213,17 @@ const GymPersonalTraining = () => (
                             </Paragraph>
                         </TextWithBubbleCounting>
 
-                        <div style={{marginBottom: "30px", marginTop: "80px"}}>
+                        <div style={{marginTop: "80px"}}>
                             <Adventages
                                 headline="Boutique studios providing specialized fitness and well-being services are becoming increasingly popular"
                                 width="100%"
                             />
                         </div>
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Boutique studios providing specialized fitness and well-being services are becoming increasingly popular"
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Boutique studios providing specialized fitness and well-being services are becoming increasingly popular"
+                            width="100%"
+                        />
 
                     </PanelWrapper>
 
@@ -312,15 +310,13 @@ const GymPersonalTraining = () => (
                             </TextBoxed>
                         </div>
 
-                        <div style={{marginBottom: "48px"}}>
-                            <TextBoxed>
-                                <Paragraph big bottomMargin={0}>
-                                    Promoting and marketing your gym
-                                </Paragraph>
-                            </TextBoxed>
-                        </div>
+                        <TextBoxed>
+                            <Paragraph big bottomMargin={0}>
+                                Promoting and marketing your gym
+                            </Paragraph>
+                        </TextBoxed>
 
-                        <Heading size={3}>
+                        <Heading size={3} style={{marginTop: "48px"}}>
                             Skills Needed by a Fitness Entrepreneur
                         </Heading>
                         <Paragraph big>
@@ -376,15 +372,13 @@ const GymPersonalTraining = () => (
                             </TextBoxed>
                         </div>
 
-                        <div style={{marginBottom: "48px"}}>
-                            <TextBoxed>
-                                <Paragraph big bottomMargin={0}>
-                                    Marketing your fitness products and services based on member needs
-                                </Paragraph>
-                            </TextBoxed>
-                        </div>
+                        <TextBoxed>
+                            <Paragraph big bottomMargin={0}>
+                                Marketing your fitness products and services based on member needs
+                            </Paragraph>
+                        </TextBoxed>
 
-                        <Heading size={3}>
+                        <Heading size={3} style={{marginTio: "48px"}}>
                             What Your Gym Members Are Looking For
                         </Heading>
                         <Paragraph big>
@@ -419,15 +413,13 @@ const GymPersonalTraining = () => (
                             </TextBoxed>
                         </div>
 
-                        <div style={{marginBottom: "48px"}}>
-                            <TextBoxed>
-                                <Paragraph big bottomMargin={0}>
-                                    Some may need help to maintain a general level of fitness and stay in shape.
-                                </Paragraph>
-                            </TextBoxed>
-                        </div>
-
-                        <Paragraph big>
+                        <TextBoxed>
+                            <Paragraph big bottomMargin={0}>
+                                Some may need help to maintain a general level of fitness and stay in shape.
+                            </Paragraph>
+                        </TextBoxed>
+                        
+                        <Paragraph big style={{marginTop: "48px"}}>
                             The key is to meet the various needs of each type of member. They will want a place they can
                             go where they trust the trainers, have access to the latest equipment and are able to
                             achieve their personal goals.
@@ -475,11 +467,10 @@ const Oval = styled.div`
     position: absolute;
     top: 0;
     left: 0;
-    width: 570px;
-    display: none;
+    width: 100%;
   
-    @media (min-width: 1200px) {
-        display: block;
+    @media (min-width: 570px) {
+        width: 570px;
     }
 `;
 
