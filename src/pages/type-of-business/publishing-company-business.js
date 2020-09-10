@@ -226,29 +226,24 @@ const ConstructionCompany = () => (
                         <BlueBoxWithAbsoluteText absoluteText="$2.7B"
                                                  text="Approximate numbers of?books sold every year"/>
 
-                        <ColorFulCircleWithTextAndList CircleSVG={ColorfulRing} title={RingText.title}
+                        <ColorFulCircleWithTextAndList style={{marginTop: "70px"}} CircleSVG={ColorfulRing}
+                                                       title={RingText.title}
                                                        list={RingText.list} withBg={true}/>
 
-                        <div style={{marginBottom: "30px", marginTop: "70px"}}>
-                            <Adventages
-                                headline="Physical and online retail each account for about half of the book publishing market"
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Physical and online retail each account for about half of the book publishing market"
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Adult nonfiction is the fastest-growing area, with a 5 percent annual increase"
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Adult nonfiction is the fastest-growing area, with a 5 percent annual increase"
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Downloaded audio content is the fastest growing of publisher products"
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Downloaded audio content is the fastest growing of publisher products"
+                            width="100%"
+                        />
                     </PanelWrapper>
 
                     <PanelWrapper>
@@ -467,11 +462,10 @@ const Oval = styled.div`
     position: absolute;
     top: 0;
     left: 0;
-    width: 570px;
-    display: none;
+    width: 100%;
   
-    @media (min-width: 1200px) {
-         display: block;
+    @media (min-width: 570px) {
+         width: 570px;
     }
 `;
 

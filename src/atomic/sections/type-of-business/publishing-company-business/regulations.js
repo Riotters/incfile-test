@@ -5,6 +5,7 @@ import Container from "../../../container";
 import OvalSvg from "../../../../images/ovals/bottom-left-transparent-pink.inline.svg";
 import OvalSvg2 from "../../../../images/ovals/bottom-left-transparent-orange.inline.svg";
 import styled from "styled-components";
+import {Link} from "gatsby";
 
 const Regulations = () => (
     <Wrapper>
@@ -22,7 +23,7 @@ const Regulations = () => (
             <Paragraph big mixed={true}>
                 Even though you may be running a digital and virtual publishing business, you can’t escape real-world
                 licenses, permits and regulations. You will need to explore local, state and federal licenses and
-                permits, and <span className="big blue">we can also help out with researching your business licensing needs.</span>
+                permits, and <Link to="/">we can also help out with researching your business licensing needs.</Link>
             </Paragraph>
             <Paragraph big mixed={true}>
                 Taxes are a fact of life if you’re in business, and there are various ways you will need to file and pay
@@ -31,7 +32,7 @@ const Regulations = () => (
             </Paragraph>
             <Paragraph big mixed={true}>
                 As a rule of thumb, we recommend holding back around a third of your earnings
-                to pay your taxes. We can also <span className="big blue">prepare and file your tax returns for you.</span>
+                to pay your taxes. We can also <Link to="/">prepare and file your tax returns for you.</Link>
             </Paragraph>
         </Container>
     </Wrapper>
@@ -45,15 +46,23 @@ const Oval = styled.div`
     position: absolute; 
     top: 200px;
     left: 0;
-    width: 420px;
+    width: 100%;
+    
+    @media (min-width: 420px){
+        width: 420px;
+    }
 `;
 
 const Oval2 = styled.div`
     position: absolute; 
     top: 226px;
     right: 0;
-    width: 136px;
+    width: 100%;
     transform: scaleX(-1);
+    
+    @media (min-width: 136px){
+        width: 136px;
+    }
 `;
 
 export default Regulations;
