@@ -40,6 +40,10 @@ const IndexPage = () => (
     <Container>
       <Wrapper>
         <h1>List of all sites</h1>
+
+        <h2>LLC States Information</h2>
+        <Link to="/texas-llc">Texas LLC</Link>
+
         <h2>Manage Your Company</h2>
         <Link to="/manage-your-company">Manage your company</Link>
         <Link to="/manage-your-company/annual-report">Annual report</Link>
