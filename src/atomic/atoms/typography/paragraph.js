@@ -11,6 +11,7 @@ const StyledParagraph = styled.p`
     max-width: ${(props) => (props.maxWidth ? `${props.maxWidth}px` : "")};
     padding-bottom: ${(props) => (props.bottomPadding ? `${props.bottomPadding}px` : "")};
     margin-bottom: ${(props) => props.bottomMargin}px;
+    margin-top: ${(props) => props.topMargin}px;
     
     ${(props) => props.flex && "display: flex;"}
         
@@ -59,6 +60,7 @@ Paragraph.propTypes = {
   maxWidth: PropTypes.number,
   bottomPadding: PropTypes.number,
   bottomMargin: PropTypes.number,
+  topMargin: PropTypes.number,
   mixed: PropTypes.bool,
 };
 

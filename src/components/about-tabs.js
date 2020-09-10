@@ -1,11 +1,24 @@
 import React from "react"
 import styled from "styled-components"
 import { Tabs, Panel, useTabState } from "@bumaga/tabs"
+import { Link } from "gatsby";
 // import { motion } from "framer-motion"
 import ArrowLink from "./arrow-link"
+import ContentButton from "../atomic/molecules/buttons/button";
 import OverviewSVG from "../images/overview.inline.svg"
 import WhatIsSVG from "../images/whatis.inline.svg"
+import IsRightForYourSVG from "../images/icons/is-right-for-you.inline.svg"
+import ProsAndConsSVG from "../images/icons/pros-cos-nonprofit.inline.svg"
+import TypeOfEntitySVG from "../images/icons/types-of-entity.inline.svg"
+import HeartStatusSVG from "../images/icons/heart-status.inline.svg"
+import QuestionSVG from "../images/icons/question.inline.svg"
 import ArrowSVG from "../images/arrow.inline.svg"
+import { color } from "./styles/colors"
+import IconListColorBox from "../atomic/molecules/text-blocks/icon-h4-list-color"
+import AcccordionCounting from '../atomic/organisms/accordion/accordion-with-counting'
+import NumericBoxedList from '../atomic/organisms/lists/numeric-boxed-list'
+import { Heading } from "../atomic/atoms/typography/heading"
+import { Paragraph } from "../atomic/atoms/typography/paragraph"
 import { Collapse } from "react-collapse"
 import VisibilitySensor from "./VisibilitySensor"
 
@@ -190,36 +203,28 @@ const Tab = ({ children }) => {
     </Button>
   )
 }
+const icons = [<OverviewSVG/>, <WhatIsSVG/>, <IsRightForYourSVG/>, <ProsAndConsSVG/>, <TypeOfEntitySVG/>, <HeartStatusSVG/>, <QuestionSVG/>]
 
-const AboutTabs = ({layout, columns}) => (
+const AboutTabs = ({layout, columns, content}) => (
   <Wrapper layout={layout}>
     <VisibilitySensor partialVisibility once>
       {({ isVisible }) => (
         <Tabs>
           <TabsWrapper className={isVisible ? "slideUp enter" : "slideUp"} layout={layout}>
             <Sticky layout={layout} columns={columns}>
-              <Tab>
+              {content.panels.map((panel, i) => (
+                <Tab>
                 <Icon>
-                  <OverviewSVG />
+                  {icons[i]}
                 </Icon>
                 <Content>
-                  <span>Overview</span>
+                  <span>{panel}</span>
                   <Arrow className="tabArrow">
                     <ArrowSVG />
                   </Arrow>
                 </Content>
               </Tab>
-              <Tab>
-                <Icon>
-                  <WhatIsSVG />
-                </Icon>
-                <Content>
-                  <span>What Is a Nonprofit?</span>
-                  <Arrow className="tabArrow">
-                    <ArrowSVG />
-                  </Arrow>
-                </Content>
-              </Tab>
+              ))}
             </Sticky>
           </TabsWrapper>
           {/* <Panels> */}
@@ -231,65 +236,68 @@ const AboutTabs = ({layout, columns}) => (
                 }
                 layout={layout}
               >
-                <p>
-                  Incorporating your company is not always an easy process.
-                  Incfile is here to help you decide not only how to
-                  incorporate, but to understand exactly which type of status to
-                  file.
-                </p>
-                <p>
-                  Many companies who incorporate are actually charities that do
-                  not intend to make a profit, but rather donate all profits to
-                  another organization. In this case, a charity would want to
-                  incorporate as a nonprofit and, ultimately, apply for tax
-                  exempt status. By having tax exempt status, your donations can
-                  be recorded by donors as not taxable by both the federal and
-                  state government. This is a great incentive to be able to
-                  offer your constituents.
-                </p>
-                <p>
-                  People who start nonprofits are driven by passion about a
-                  certain cause. Whatever your cause, creating a nonprofit can
-                  make a difference. We've provided as much information as you
-                  need to know in choosing to incorporate as a nonprofit
-                  corporation.
-                </p>
-                <h3>Save Time and Money. We'll Handle The Paperwork.</h3>
+                <Paragraph big>{content.content[0].text1}</Paragraph>
+                <Paragraph big>{content.content[0].text2}</Paragraph>
+                <Paragraph big>{content.content[0].text3}</Paragraph>
+                <Heading size={3}>Save Time and Money. We'll Handle The Paperwork.</Heading>
                 <ArrowLink>Form your Nonprofit Corporation today</ArrowLink>
               </PanelWrapper>
             </Panel>
+
             <Panel>
               <PanelWrapper className="panel2" layout={layout}>
-                <p>
-                  Incorporating your company is not always an easy process.
-                  Incfile is here to help you decide not only how to
-                  incorporate, but to understand exactly which type of status to
-                  file.
-                </p>
-                <p>
-                  Many companies who incorporate are actually charities that do
-                  not intend to make a profit, but rather donate all profits to
-                  another organization. In this case, a charity would want to
-                  incorporate as a nonprofit and, ultimately, apply for tax
-                  exempt status.
-                </p>
-
-                <p>
-                  By having tax exempt status, your donations can be recorded by
-                  donors as not taxable by both the federal and state
-                  government. This is a great incentive to be able to offer your
-                  constituents.
-                </p>
-
-                <p>
-                  People who start nonprofits are driven by passion about a
-                  certain cause. Whatever your cause, creating a nonprofit can
-                  make a difference. We've provided as much information as you
-                  need to know in choosing to incorporate as a nonprofit
-                  corporation.
-                </p>
+                <Heading size={3}>{content.content[1].header}</Heading>
+                <Paragraph big>{content.content[1].text1}</Paragraph>
+                <Paragraph big>{content.content[1].text2}</Paragraph>
+                <Paragraph big>{content.content[1].text3}</Paragraph>
               </PanelWrapper>
             </Panel>
+
+            <Panel>
+              <PanelWrapper className="panel2" layout={layout}>
+                <Heading size={3}>{content.content[2].header}</Heading>
+                <Paragraph big>{content.content[2].text}</Paragraph>
+                <IconListColorBox color={color.blue3} content={content.content[2].box} rounded curve curveColor={color.blue1}/>
+              </PanelWrapper>
+            </Panel>
+
+            <Panel>
+              <PanelWrapper className="panel2" layout={layout}>
+                <Heading size={3}>{content.content[3].header}</Heading>
+                <Paragraph big>{content.content[3].text1}</Paragraph>
+                <Paragraph big>{content.content[3].text2}</Paragraph>
+                <Paragraph big>{content.content[3].text3}</Paragraph>
+                <Heading size={3}>Don't get stuck, let us help you navigate the process.</Heading>
+                <ArrowLink>Form your Nonprofit Corporation today!</ArrowLink>
+              </PanelWrapper>
+            </Panel>
+
+            <Panel>
+              <PanelWrapper className="panel2" layout={layout}>
+                <Heading size={3}>{content.content[4].header}</Heading>
+                <Paragraph big>{content.content[4].text}</Paragraph>
+                <AcccordionCounting content={content.content[4]} tab/>
+                <Paragraph big topMargin={24}>{content.content[4].text2}</Paragraph>
+                <ContentButton content={{text: `Download Our Start a Nonprofit Guide`, url: `#`}} theme="primary56" margin="0 auto 0 0" arrow />
+              </PanelWrapper>
+            </Panel>
+
+            <Panel>
+              <PanelWrapper className="panel2" layout={layout}>
+                <Heading size={3}>{content.content[5].header}</Heading>
+                <Paragraph big>{content.content[5].text}</Paragraph>
+                <NumericBoxedList content={content.content[5].items}/>
+              <Paragraph big topMargin={24} mixed={true}>All other steps associated with Incorporation apply to the creation of a nonprofit organization, such as paying fees, registering for business locally and <Link to="https://www.incfile.com/manage-your-company/tax-id-ein/">applying for your EIN.</Link></Paragraph>
+              </PanelWrapper>
+            </Panel>
+
+            <Panel>
+              <PanelWrapper className="panel2" layout={layout}>
+                <h3>{content.content[6].header}</h3>
+                <AcccordionCounting content={content.content[6]} listColor={{ item: `grey2`, dot: `orange1` }} tab/>
+              </PanelWrapper>
+            </Panel>
+
           </Collapse>
           {/* </Panels> */}
         </Tabs>

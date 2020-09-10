@@ -1,9 +1,9 @@
 export const top = {
-  header: `Registered Agent Service`,
-  text: `Dependable, Easy, and Free for the First Year When You Incorporate with Incfile. A nationwide Registered Agent service provider you can trust at an affordable price. Available in all U.S. states.`,
+  header: `Is a C Corporation Right For Your Business?`,
+  text: `What you need to know about forming a C Corporation`,
   button: [
     {
-      text: "Sign up now",
+      text: "Form Your C Corp Now",
       url: "/",
     },
   ],
@@ -159,6 +159,14 @@ export const rocket = {
     url: `/`,
   },
 };
+
+export const cta = {
+  header: `Launch Your Business Only $0 + State Fee.`,
+  button: {
+    text: `See Detailed Pricing`,
+    url: `/`,
+  }
+}
 
 export const forming = {
   header: `Forming a C Corporation`,
