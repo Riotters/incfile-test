@@ -8,7 +8,7 @@ import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";
 import Card from "../../../molecules/mixed-blocks/s-corp-tax-box";
 import Oval from "../../../atoms/icons/oval";
-import OvalSVG from "../../../../images/ovals/top-right-transparent-green2.inline.svg";
+import OvalSVG from "../../../../images/ovals/top-right-transparent-blue.inline.svg";
 
 const Differences = styled.section`
   position: relative;
@@ -43,14 +43,14 @@ const colors = [color.babyblue3, color.green3];
 
 const DifferencesSection = ({ className, content }) => (
   <Differences className={className}>
-    <Oval className="oval" height="720" width="720" top="11" right="0">
+    <Oval className="oval" height="570" width="570" top="0" right="0">
       <OvalSVG />
     </Oval>
-    <HeadingCenter headline={content.header} linkText={content.link.text} linkUrl={content.link.url} bottomMargin="56" />
+    <HeadingCenter headline={content.header} headlineWidth="770" linkText={content.link.text} linkUrl={content.link.url} bottomMargin="56" />
     <ContentCenter contentWidth="970">
       <Grid>
         {content.cards.map((card, i) => (
-          <Card content={card} image={images[i]} color={colors[i]} />
+          <Card content={card} image={images[i]} color={colors[i]} curve={i === 0 ? true : false} />
         ))}
       </Grid>
     </ContentCenter>
