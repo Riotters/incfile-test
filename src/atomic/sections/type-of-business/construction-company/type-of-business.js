@@ -7,7 +7,7 @@ import Adventages from "../../../../components/adventages";
 import {color} from "../../../../components/styles/colors";
 import {shadow} from "../../../../components/styles/shadows";
 import {adventages} from "../../../../static/type-of-business/construction-company";
-import OvalSvg from "../../../../images/oval-blue-4.inline.svg";
+import OvalSvg from "../../../../images/ovals/top-right-transparent-blue.inline.svg";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import ContentCenter from "../../../partials/content-center";
 
@@ -81,10 +81,10 @@ const Oval = styled.div`
     position: absolute;
     right: 0;
     top: 300px;
-    display: none;
-  
-      @media (min-width: 1200px){
-        display: block;
+    width: 100%;
+      
+      @media (min-width: 720px){
+        width: 720px;
       }
 `;
 

@@ -25,15 +25,14 @@ const ContainerWrapper = styled.div`
 
 const GridSection = styled.div`
     width: 100%;
-    margin-top: 110px;
 `;
 
 const TitleBox = styled.div`
     width: 100%;
     position: relative;
-     
+     max-width: 750px;
     @media (min-width:750px) {
-        width: 750px;
+        
         margin: 0 auto;
     }
     
@@ -50,13 +49,14 @@ const GridSectionList = styled.div`
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
+    max-width: 970px;
     
     > div {
         margin-bottom: 70px;
     }
     
     @media (min-width: 970px) {
-        width: 970px;
+        
         margin: 120px auto 0;
     }
 `;
@@ -65,11 +65,10 @@ const OvalCenter = styled.div`
   position: absolute;
   left: 0;
   top: 570px;
-  width: 420px;
-  display: none;
+  width: 100%;
   
-  @media (min-width: 1200px){
-    display: block;
+  @media (min-width: 420px){
+    width: 420px;
   }
 `
 
@@ -103,7 +102,7 @@ const ValidatingBusinessIdea = () => (
                         it’s going to work in the real world.
                     </Paragraph>
 
-                    <Paragraph big style={{fontWeight: "bold"}}>
+                    <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
                         Before committing too much time, energy and money into your new construction business, it’s
                         important to test the marketplace.
                     </Paragraph>
