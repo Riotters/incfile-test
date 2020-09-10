@@ -423,13 +423,12 @@ const TabsWrapper = styled.section`
 
 const TabOvalOne = styled.div`
     position: absolute;
-    width: 420px;
+    width: 100%;
     left: 0;
     top: 21px;
-    display: none;
   
-    @media (min-width: 720px){
-       display: block;
+    @media (min-width: 420px){
+       width: 420px;
     }
     svg {
         transform: scaleX(-1);
@@ -438,13 +437,12 @@ const TabOvalOne = styled.div`
 
 const TabOvalTwo = styled.div`
     position: absolute;
-    width: 420px;
+    width: 100%;
     right: 0;
     top: 674px;
-    display: none;
   
-    @media (min-width: 720px){
-       display: block;
+    @media (min-width: 420px){
+       width: 420px;
     }
 `;
 export default Airbnb;

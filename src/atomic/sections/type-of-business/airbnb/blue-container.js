@@ -24,7 +24,6 @@ const BlueContainerWrapper = styled.div`
 
 const GridSection = styled.div`
     width: 100%;
-    margin-top: 110px;
 `;
 
 const TitleBox = styled.div`
@@ -33,7 +32,7 @@ const TitleBox = styled.div`
     margin-bottom: 120px;
     position: relative;
      
-    @media (min-width:750px) {
+    @media (min-width: 750px) {
         margin: 0 auto 120px;
     }
     
