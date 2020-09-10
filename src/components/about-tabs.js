@@ -203,7 +203,6 @@ const Tab = ({ children }) => {
     </Button>
   )
 }
-
 const icons = [<OverviewSVG/>, <WhatIsSVG/>, <IsRightForYourSVG/>, <ProsAndConsSVG/>, <TypeOfEntitySVG/>, <HeartStatusSVG/>, <QuestionSVG/>]
 
 const AboutTabs = ({layout, columns, content}) => (
@@ -278,7 +277,7 @@ const AboutTabs = ({layout, columns, content}) => (
                 <Heading size={3}>{content.content[4].header}</Heading>
                 <Paragraph big>{content.content[4].text}</Paragraph>
                 <AcccordionCounting content={content.content[4]} tab/>
-                <Paragraph big topMargin={24}>Political parties are also eligible for tax exempt status, but do not fall under the standard nonprofit category.</Paragraph>
+                <Paragraph big topMargin={24}>{content.content[4].text2}</Paragraph>
                 <ContentButton content={{text: `Download Our Start a Nonprofit Guide`, url: `#`}} theme="primary56" margin="0 auto 0 0" arrow />
               </PanelWrapper>
             </Panel>

@@ -96,7 +96,8 @@ export const about = {
 						question: `Trade and Professional Organizations`,
 						answer: `People in the same organization can benefit from the activities of this type of non-profit. They are funded primarily through membership dues.`
 					},
-				]
+				],
+				text2: `Political parties are also eligible for tax exempt status, but do not fall under the standard nonprofit category.`,
 			},
 			{
 				header: `How to Achieve 501c3 Status`,
