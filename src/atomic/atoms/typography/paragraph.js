@@ -28,7 +28,13 @@ const StyledParagraph = styled.p`
     
     a{
       color: ${color.blue1};
-      font-family: Avenir-Heavy, sans-serif;
+      font-size: ${(props) => (props.big ? "20" : "16")}px;
+      line-height: ${(props) => (props.big ? "32" : "24")}px;
+      
+      ${props => props.big && 
+        "font-family: Avenir-Heavy, sans-serif;"
+      }
+
       transition: all 0.3s ease-in-out;
       
       &:hover{

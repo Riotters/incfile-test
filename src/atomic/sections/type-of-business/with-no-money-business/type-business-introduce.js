@@ -8,7 +8,7 @@ import CkeckText from "../../../../components/static-check/text-only";
 
 const BusinessOwnerResponsibilities = styled.section`
   position: relative;
-  padding-top: 75px;
+  padding-top: 100px;
   padding-bottom: 64px;
 
   .colorbox {

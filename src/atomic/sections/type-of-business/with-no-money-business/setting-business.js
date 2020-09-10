@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "../../../container";
-import TextCenterLayout from "../../../../components/partials/blocks/heading-center";
+import TextCenterLayout from "../../../partials/heading-center";
 import TopImageBox from "../../../../components/top-image-box";
 import {color} from "../../../../components/styles/colors";
 import styled from "styled-components";
@@ -14,12 +14,14 @@ const SettingBusiness = () => (
             <GreenOval/>
         </Oval>
 
+        <TextCenterLayout
+            headline="Setting Up Your Business and Business Operations"
+            headlineWidth="700"
+            text="Once you've legally created your business, you’ll need to get some other things in place."
+        />
+
         <Container>
-            <TextCenterLayout
-                headline="Setting Up Your Business and Business Operations"
-                headlineWidth="700"
-                text="Once you've legally created your business, you’ll need to get some other things in place."
-            />
+
             <ImageBoxes>
 
                 <TopImageBox image="location" color={color.red3}>
@@ -70,13 +72,14 @@ const ImageBoxes = styled.div`
   grid-gap: 30px;
   padding-top: 112px;
   width: 100%;
-
+  max-width: 970px;
+  
   @media(min-width: 769px) {
     grid-template-columns: 1fr 1fr;
   }
   
   @media (min-width: 970px) {
-    width: 970px;
+    
     margin: 0 auto;
   }
 `;
@@ -85,12 +88,12 @@ const Oval = styled.div`
     position: absolute;
     right: 0;
     top: 174px;
-    width: 570px;
+    width: 100%;
     opacity: 0.5;
-    display: none;
+    z-index: -1;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 570px){
+        width: 570px;
     }
 `;
 

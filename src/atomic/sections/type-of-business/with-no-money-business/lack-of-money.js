@@ -48,11 +48,10 @@ const Oval = styled.div`
     position: absolute; 
     bottom: 53px;
     left: 0;
-    width: 420px;
-    display: none;
+    width: 100%;
     
     @media (min-width: 420px) {
-        display: block;
+        width: 420px;
     }
 `;
 export default LackOfMoney;
