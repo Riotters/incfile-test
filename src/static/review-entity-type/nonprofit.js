@@ -27,11 +27,29 @@ export const about = {
 		content: [
 			{
 				header: `Overview`,
-				text: ``,
+				text1: `Incorporating your company is not always an easy process.
+				Incfile is here to help you decide not only how to
+				incorporate, but to understand exactly which type of status to
+				file.`,
+				text2: `Many companies who incorporate are actually charities that do
+				not intend to make a profit, but rather donate all profits to
+				another organization. In this case, a charity would want to
+				incorporate as a nonprofit and, ultimately, apply for tax
+				exempt status. By having tax exempt status, your donations can
+				be recorded by donors as not taxable by both the federal and
+				state government. This is a great incentive to be able to
+				offer your constituents.`,
+				text3: `People who start nonprofits are driven by passion about a
+				certain cause. Whatever your cause, creating a nonprofit can
+				make a difference. We've provided as much information as you
+				need to know in choosing to incorporate as a nonprofit
+				corporation.`,
 			},
 			{
-				header: `What Is a Nonprofit?`,
-				text: ``,
+				header: `What Is a Nonprofit Corporation?`,
+				text1: `A nonprofit corporation is an organization whose purpose is something other than making a profit. A nonprofit donates its revenue to achieve a specific goal that benefits the public, instead of distributing it to shareholders. There are over 1.5 million nonprofit organizations registered in the US.`,
+				text2: `Being a nonprofit does not mean the organization won’t make a profit. Nonprofits can make money, but all of the money must go back into the organization by paying employee salaries, administrative expenses and other overhead costs. No one person or group owns a nonprofit. Assets from a nonprofit can be sold, but it benefits the whole organization rather than individuals.`,
+				text3: `While anyone can incorporate as a nonprofit, only those who pass the stringent standards set forth by the government can achieve tax exempt, or 501c3, status. The process of creating incorporation papers is just the first step in becoming a completely recognized nonprofit organization. We discuss the steps to becoming a nonprofit further into this page.`,
 			},
 			{
 				header: `Who Is a Nonprofit Corporation Right For?`,
@@ -49,12 +67,10 @@ export const about = {
 				},
 			},
 			{
-				header: `What Is a Nonprofit?`,
-				text: ``,
-			},
-			{
 				header: `Advantages and Disadvantages of Starting a Nonprofit`,
-				text: ``,
+				text1: `There are many advantages to becoming a nonprofit. Tax exemption is a major advantage of becoming a 501c3 classified nonprofit. Once an organization is tax-exempt, any charitable donations made by individuals are tax-deductible. A nonprofit can also receive discounts on postage and advertising rates which makes for more efficient operation.`,
+				text2: `Another advantage is legal protection, as the founders and members are generally not held personally responsible for a nonprofit’s debts. The legal advantage is available without 501c3 status, as is the benefits that become available for employees, such as health and retirement plans. Furthermore, a nonprofit corporation that formalizes their existence improve the chances for longevity and success because the mission and vision must be clear and achievable.`,
+				text3: `There are few disadvantages of becoming a nonprofit. Nonprofits cost money and time to start. Once a nonprofit is started, you must keep excellent records and make sure to file all paperwork yearly. This can be resolved by hiring the proper professionals to handle such details. Since nonprofits are there to serve the public, they are also under greater public scrutiny.`,
 			},
 			{
 				header: `Types of Nonprofit Companies`,
@@ -85,6 +101,7 @@ export const about = {
 			{
 				header: `How to Achieve 501c3 Status`,
 				text: `Corporations may file for federal tax exempt status, also known as 501c3 by the IRS, if they are incorporated as a nonprofit corporation or trust. They must meet and maintain certain stringent criteria to be considered free from paying taxes. These include:`,
+				text2: ``,
 				items: [
 					{
 						text: `For most states, you must name a Board of Directors to manage the high-level decisions of the non-profit corporation. These must be individuals and not corporations.`
@@ -177,7 +194,7 @@ export const rocket = {
 	text2: `Only $0 + State Fee to Launch Your Business.`,
 	button: {
 		text: `Start Now`,
-		url: `https://www.incfile.com/form-order-now.php?entityType=Nonprofit`,
+		url: `/`,
 	},
 };
 
@@ -185,7 +202,7 @@ export const cta = {
   header: `Launch Your Business Only $0 + State Fee.`,
   button: {
     text: `See Detailed Pricing`,
-    url: `https://www.incfile.com/form-order-now.php?entityType=Nonprofit`,
+    url: `/`,
   }
 }
 

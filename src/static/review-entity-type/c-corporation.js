@@ -4,7 +4,7 @@ export const top = {
   button: [
     {
       text: "Form Your C Corp Now",
-      url: "https://www.incfile.com/form-order-now.php?entityType=CCorporation",
+      url: "/",
     },
   ],
 };
@@ -164,7 +164,7 @@ export const cta = {
   header: `Launch Your Business Only $0 + State Fee.`,
   button: {
     text: `See Detailed Pricing`,
-    url: `https://www.incfile.com/form-order-now.php?entityType=CCorporation`,
+    url: `/`,
   }
 }
 

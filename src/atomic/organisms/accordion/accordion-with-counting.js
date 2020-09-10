@@ -102,11 +102,10 @@ const PanelWrapper = styled.div`
   // }
 `;
 
-const ListItems = styled.div`
-ul {
+const ListItems = styled.ul`
   list-style: none;
   padding-left: 0;
-
+  
   li {
     font-family: Avenir, sans-serif;
     font-size: 16px;
@@ -130,9 +129,7 @@ ul {
     &:not(:last-child) {
       margin-bottom: 16px;
     }
-  }
-}
-`;
+  }`;
 
 const Button = styled.button`
   min-width: 80px;
@@ -264,11 +261,9 @@ const AccordionWithCounting = ({ content, curve, curveRight, curveRightBottom, t
                                             {/* <p>{item.answer}</p> */}
                                             {item.list && (
                                               <ListItems listColor={listColor}>
-                                                <ul>
-                                                    {item.list.map((listitem) => (
-                                                        <li>{listitem}</li>
-                                                    ))}
-                                                </ul>
+                                                {item.list.map((listitem) => (
+                                                  <li>{listitem}</li>
+                                                ))}
                                               </ListItems>
                                             )}
 

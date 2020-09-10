@@ -109,7 +109,7 @@ const Cta = ({cta}) => (
           {({ isVisible }) => <p className={isVisible ? "slideUp enter" : "slideUp"}>$0 + State Fee & FREE Registered Agent for 1st year.</p>}
         </VisibilitySensor>
         <VisibilitySensor partialVisibility once>
-          {({ isVisible }) => <Button className={isVisible ? "slideUp enter" : "slideUp"} content={{ text: `${cta.button.text || `Start Now`}`, url: `${cta.button.url || `#`}` }} theme="primary56" arrow marginSM="0 auto" />}
+          {({ isVisible }) => <Button className={isVisible ? "slideUp enter" : "slideUp"} content={{ text: `${cta.button.text || `Start Now`}`, url: `${cta.button.url || `/`}` }} theme="primary56" arrow marginSM="0 auto" />}
         </VisibilitySensor>
       </Content>
     </Container>

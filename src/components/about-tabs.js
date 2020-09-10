@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { Tabs, Panel, useTabState } from "@bumaga/tabs"
+import { Link } from "gatsby";
 // import { motion } from "framer-motion"
 import ArrowLink from "./arrow-link"
 import ContentButton from "../atomic/molecules/buttons/button";
@@ -16,6 +17,8 @@ import { color } from "./styles/colors"
 import IconListColorBox from "../atomic/molecules/text-blocks/icon-h4-list-color"
 import AcccordionCounting from '../atomic/organisms/accordion/accordion-with-counting'
 import NumericBoxedList from '../atomic/organisms/lists/numeric-boxed-list'
+import { Heading } from "../atomic/atoms/typography/heading"
+import { Paragraph } from "../atomic/atoms/typography/paragraph"
 import { Collapse } from "react-collapse"
 import VisibilitySensor from "./VisibilitySensor"
 
@@ -234,87 +237,65 @@ const AboutTabs = ({layout, columns, content}) => (
                 }
                 layout={layout}
               >
-                <p>
-                  Incorporating your company is not always an easy process.
-                  Incfile is here to help you decide not only how to
-                  incorporate, but to understand exactly which type of status to
-                  file.
-                </p>
-                <p>
-                  Many companies who incorporate are actually charities that do
-                  not intend to make a profit, but rather donate all profits to
-                  another organization. In this case, a charity would want to
-                  incorporate as a nonprofit and, ultimately, apply for tax
-                  exempt status. By having tax exempt status, your donations can
-                  be recorded by donors as not taxable by both the federal and
-                  state government. This is a great incentive to be able to
-                  offer your constituents.
-                </p>
-                <p>
-                  People who start nonprofits are driven by passion about a
-                  certain cause. Whatever your cause, creating a nonprofit can
-                  make a difference. We've provided as much information as you
-                  need to know in choosing to incorporate as a nonprofit
-                  corporation.
-                </p>
-                <h3>Save Time and Money. We'll Handle The Paperwork.</h3>
+                <Paragraph big>{content.content[0].text1}</Paragraph>
+                <Paragraph big>{content.content[0].text2}</Paragraph>
+                <Paragraph big>{content.content[0].text3}</Paragraph>
+                <Heading size={3}>Save Time and Money. We'll Handle The Paperwork.</Heading>
                 <ArrowLink>Form your Nonprofit Corporation today</ArrowLink>
-              </PanelWrapper>
-            </Panel>
-            <Panel>
-              <PanelWrapper className="panel2" layout={layout}>
-                <h3>What Is a Nonprofit Corporation?</h3>
-                <p>A nonprofit corporation is an organization whose purpose is something other than making a profit. A nonprofit donates its revenue to achieve a specific goal that benefits the public, instead of distributing it to shareholders. There are over 1.5 million nonprofit organizations registered in the US.</p>
-                
-                <p>Being a nonprofit does not mean the organization won’t make a profit. Nonprofits can make money, but all of the money must go back into the organization by paying employee salaries, administrative expenses and other overhead costs. No one person or group owns a nonprofit. Assets from a nonprofit can be sold, but it benefits the whole organization rather than individuals.</p>
-                <p>While anyone can incorporate as a nonprofit, only those who pass the stringent standards set forth by the government can achieve tax exempt, or 501c3, status. The process of creating incorporation papers is just the first step in becoming a completely recognized nonprofit organization. We discuss the steps to becoming a nonprofit further into this page.</p>
               </PanelWrapper>
             </Panel>
 
             <Panel>
               <PanelWrapper className="panel2" layout={layout}>
-                <h3>{content.content[2].header}</h3>
-                <p>{content.content[2].text}</p>
+                <Heading size={3}>{content.content[1].header}</Heading>
+                <Paragraph big>{content.content[1].text1}</Paragraph>
+                <Paragraph big>{content.content[1].text2}</Paragraph>
+                <Paragraph big>{content.content[1].text3}</Paragraph>
+              </PanelWrapper>
+            </Panel>
+
+            <Panel>
+              <PanelWrapper className="panel2" layout={layout}>
+                <Heading size={3}>{content.content[2].header}</Heading>
+                <Paragraph big>{content.content[2].text}</Paragraph>
                 <IconListColorBox color={color.blue3} content={content.content[2].box} rounded curve curveColor={color.blue1}/>
               </PanelWrapper>
             </Panel>
 
             <Panel>
               <PanelWrapper className="panel2" layout={layout}>
-                <h3>Advantages and Disadvantages of Starting a Nonprofit</h3>
-                <p>There are many advantages to becoming a nonprofit. Tax exemption is a major advantage of becoming a 501c3 classified nonprofit. Once an organization is tax-exempt, any charitable donations made by individuals are tax-deductible. A nonprofit can also receive discounts on postage and advertising rates which makes for more efficient operation.</p>
-                <p>Another advantage is legal protection, as the founders and members are generally not held personally responsible for a nonprofit’s debts. The legal advantage is available without 501c3 status, as is the benefits that become available for employees, such as health and retirement plans. Furthermore, a nonprofit corporation that formalizes their existence improve the chances for longevity and success because the mission and vision must be clear and achievable.</p>
-                <p>There are few disadvantages of becoming a nonprofit. Nonprofits cost money and time to start. Once a nonprofit is started, you must keep excellent records and make sure to file all paperwork yearly. This can be resolved by hiring the proper professionals to handle such details. Since nonprofits are there to serve the public, they are also under greater public scrutiny.</p>
-                <h3>Don't get stuck, let us help you navigate the process.</h3>
+                <Heading size={3}>{content.content[3].header}</Heading>
+                <Paragraph big>{content.content[3].text1}</Paragraph>
+                <Paragraph big>{content.content[3].text2}</Paragraph>
+                <Paragraph big>{content.content[3].text3}</Paragraph>
+                <Heading size={3}>Don't get stuck, let us help you navigate the process.</Heading>
                 <ArrowLink>Form your Nonprofit Corporation today!</ArrowLink>
               </PanelWrapper>
             </Panel>
 
             <Panel>
               <PanelWrapper className="panel2" layout={layout}>
-                <h3>{content.content[5].header}</h3>
-                <p>{content.content[5].text}</p>
-                <AcccordionCounting content={content.content[5]} tab/>
-                <p style={{ marginTop: 48 + "px" }}>Political parties are also eligible for tax exempt status, but do not fall under the standard nonprofit category.</p>
+                <Heading size={3}>{content.content[4].header}</Heading>
+                <Paragraph big>{content.content[4].text}</Paragraph>
+                <AcccordionCounting content={content.content[4]} tab/>
+                <Paragraph big topMargin={24}>Political parties are also eligible for tax exempt status, but do not fall under the standard nonprofit category.</Paragraph>
                 <ContentButton content={{text: `Download Our Start a Nonprofit Guide`, url: `#`}} theme="primary56" margin="0 auto 0 0" arrow />
               </PanelWrapper>
             </Panel>
 
             <Panel>
               <PanelWrapper className="panel2" layout={layout}>
-                <h3>{content.content[6].header}</h3>
-                <p>{content.content[6].text}</p>
-
-                <NumericBoxedList content={content.content[6].items}/>
-
-                <p style={{ marginTop: 48 + "px" }}>All other steps associated with Incorporation apply to the creation of a nonprofit organization, such as paying fees, registering for business locally and <a href="https://www.incfile.com/manage-your-company/tax-id-ein/">applying for your EIN.</a></p>
+                <Heading size={3}>{content.content[5].header}</Heading>
+                <Paragraph big>{content.content[5].text}</Paragraph>
+                <NumericBoxedList content={content.content[5].items}/>
+              <Paragraph big topMargin={24} mixed={true}>All other steps associated with Incorporation apply to the creation of a nonprofit organization, such as paying fees, registering for business locally and <Link to="https://www.incfile.com/manage-your-company/tax-id-ein/">applying for your EIN.</Link></Paragraph>
               </PanelWrapper>
             </Panel>
 
             <Panel>
               <PanelWrapper className="panel2" layout={layout}>
-                <h3>{content.content[7].header}</h3>
-                <AcccordionCounting content={content.content[7]} listColor={{ item: `grey6`, dot: `orange1` }} tab/>
+                <h3>{content.content[6].header}</h3>
+                <AcccordionCounting content={content.content[6]} listColor={{ item: `grey2`, dot: `orange1` }} tab/>
               </PanelWrapper>
             </Panel>
 

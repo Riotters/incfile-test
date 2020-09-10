@@ -20,7 +20,7 @@ const IndexPage = () => (
       <h1>{top.header}</h1>
       <p>{top.text}</p>
       <Buttonsbox>
-        <Button content={{ text: top.button[0].text, url: `https://www.incfile.com/form-order-now.php?entityType=Nonprofit` }} theme="primary56" width="200px" arrow />
+        <Button content={{ text: top.button[0].text, url: `/` }} theme="primary56" width="200px" arrow />
         <Button content={top.button[1]} theme="secondary56" width="200px" arrow2 margin="16px 0 0 0" marginMD="0 0 0 16px" />
       </Buttonsbox>
     </Top>
