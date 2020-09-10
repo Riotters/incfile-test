@@ -85,9 +85,7 @@ const TravelAgency = () => (
 
                         <Heading size={3}>
                             Even with the rise of online travel booking, many vacationers want the reassurance of a
-                            travel
-                            expert
-                            to talk them through countries, destinations, hotels, flights, tours and more.
+                            travel expert to talk them through countries, destinations, hotels, flights, tours and more.
                         </Heading>
 
                         <Paragraph big style={{marginBottom: "40px"}}>
@@ -222,29 +220,23 @@ in the U.S. by 2020"/>
                         <BlueBoxWithAbsoluteText absoluteText="$15BT"
                                                  text="Significant growth of annual revenue in 2015"/>
 
-                        <CircleWithText withBg={true} textInsideCircle="60" symbol="%"
+                        <CircleWithText style={{marginBottom: "48px"}} withBg={true} textInsideCircle="60" symbol="%"
                                         textLine="Of travel agents report an increase in sales year over year"/>
 
-                        <div style={{marginBottom: "30px", marginTop: "70px"}}>
-                            <Adventages
-                                headline="Travel agency profits have also doubled from around 6% of revenue to 12%"
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Travel agency profits have also doubled from around 6% of revenue to 12%"
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Just over three-quarters of travel agent business revenue comes from commission, with the remainder from service fees"
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Just over three-quarters of travel agent business revenue comes from commission, with the remainder from service fees"
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Over the last five years, the number of travel agency businesses has grown by almost 4 percent"
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Over the last five years, the number of travel agency businesses has grown by almost 4 percent"
+                            width="100%"
+                        />
                     </PanelWrapper>
 
                     <PanelWrapper>
@@ -370,17 +362,17 @@ in the U.S. by 2020"/>
 
         <ToolsWrapper>
             <OvalTools>
-                <OvalSvg />
+                <OvalSvg/>
             </OvalTools>
             <OvalTools2>
-                <OvalSvg2 />
+                <OvalSvg2/>
             </OvalTools2>
             <UsefulTools toolsList={toolsList.tools} headlineText={toolsList.headlineText}
                          description={toolsList.description}/>
         </ToolsWrapper>
 
         <Conclusion to="/" buttonTitle="Start your Travel Agency Business with us, today">
-            <Heading size={3} style={{fontSize: "40px", marginTop: "300px"}}>
+            <Heading size={3} style={{fontSize: "40px"}}>
                 Conclusion
             </Heading>
 
@@ -421,44 +413,42 @@ const TabsWrapper = styled.div`
 
 const Oval = styled.div`
     position: absolute;
-    width: 420px;
+    width: 100%;
     left: 0;
     top: 0px;
-    display: none;
   
-    @media (min-width: 720px){
-       display: block;
+    @media (min-width: 420px){
+       width: 420px;
     }
 `;
 
 const ToolsWrapper = styled.div`
     position: relative;
+    margin-bottom: 300px;
 `;
 
 const OvalTools = styled.div`
-    width: 420px;
+    width: 100%;
     right: 0;
     top: calc(50% - 210px);
     position absolute;
     z-index: -1;
     transform: rotate(180deg);
-    display: none;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 420px){
+        width: 420px;
     }
 `;
 
 const OvalTools2 = styled.div`
-    width: 420px;
+    width: 100%;
     left: 0;
     bottom: 0;
     position absolute;
     z-index: -1;
-    display: none;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 420px){
+        width: 420px;
     }
 `;
 

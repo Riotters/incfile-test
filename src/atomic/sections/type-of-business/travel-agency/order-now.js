@@ -51,7 +51,7 @@ const ButtonsBox = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     flex-direction: row;
   }
 `;
@@ -62,7 +62,7 @@ const Oval = styled.div`
     top: 0;
     display: none;
     
-    @media (min-width: 1200px){
+    @media (min-width: 769px) {
         display: block;
     }
 `;
@@ -73,7 +73,7 @@ const OvalRight = styled.div`
     bottom: -5px;
     display: none;
     
-    @media (min-width: 1200px){
+    @media (min-width: 769px) {
         display: block;
     }
 `;
@@ -84,7 +84,7 @@ const CurveWrapper = styled.div`
     top: -115px;
     display: none;
     
-    @media (min-width: 1200px){
+    @media (min-width: 769px) {
         display: block;
     }
 `;

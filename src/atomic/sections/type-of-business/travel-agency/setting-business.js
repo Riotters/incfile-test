@@ -5,6 +5,7 @@ import TopImageBox from "../../../../components/top-image-box";
 import {color} from "../../../../components/styles/colors";
 import styled from "styled-components";
 import OvalSvg from "../../../../images/ovals/bottom-right-transparent-blue3.inline.svg";
+import {Link} from "gatsby";
 
 const SettingBusiness = () => (
     <WrapperContainer>
@@ -40,7 +41,7 @@ const SettingBusiness = () => (
                         You will need a separate business bank account
                         for your travel agency business. You might also want to consider a business credit card.
                         Additionally, you will also need to keep careful bookkeeping records and file business and
-                        personal taxes. Here at Incfile we can even help you file your taxes.
+                        personal taxes. Here at Incfile <Link to="/">we can even help you file your taxes</Link>.
                     </p>
                 </TopImageBox>
 
@@ -103,13 +104,14 @@ const ImageBoxes = styled.div`
   grid-gap: 30px;
   padding-top: 112px;
   width: 100%;
-
+  max-width: 970px;
+  
   @media(min-width: 769px) {
     grid-template-columns: 1fr 1fr;
   }
   
   @media (min-width: 970px) {
-    width: 970px;
+    
     margin: 0 auto;
   }
 `;
@@ -125,12 +127,11 @@ const Oval = styled.div`
     position: absolute;
     left: 0;
     top: 394px;
-    width: 570px;
+    width: 100%;
     transform: scaleX(-1);
-    display: none;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 570px){
+        width: 570px;
     }
 `;
 
@@ -138,11 +139,10 @@ const Oval2 = styled.div`
     position: absolute;
     right: 0;
     bottom: 351px;
-    width: 420px;
-    display: none;
+    width: 100%;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 420px){
+        width: 420px;
     }
 `;
 
