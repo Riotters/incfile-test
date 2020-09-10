@@ -32,7 +32,7 @@ const TextWrapper = styled.div`
     -webkit-line-clamp: ${(props) => (props.ellipsis ? "1" : "")};
     text-overflow: ${(props) => (props.ellipsis ? "ellipsis" : "")};
     overflow: hidden;
-    color: ${(props) => (props.icon ? color.blue1 : "")};
+    color: ${(props) => (props.icon ? color.blue1 : props.textColor ? props.textColor : "")};
   }
 
   h4 {
@@ -63,7 +63,7 @@ const ImageWrapper = styled.div`
     min-height: 88px;
     min-width: 88px;
     border-radius: 15px;
-    padding: ${props => props.iconPadding ? `${props.iconPadding}px` : `16px`};
+    padding: ${(props) => (props.iconPadding ? `${props.iconPadding}px` : `16px`)};
     margin-right: 32px;
   }
 
@@ -72,11 +72,11 @@ const ImageWrapper = styled.div`
   }
 `;
 
-const BoxedButton = ({ className, content, icon, iconColor, iconPadding, ellipsis }) => {
+const BoxedButton = ({ className, content, textColor, icon, iconColor, iconPadding, ellipsis }) => {
   return (
     <Wrapper to={content.url} className={className} icon={icon} ellipsis={ellipsis}>
       <Whitebox className="box">
-        <TextWrapper icon={icon} ellipsis={ellipsis}>
+        <TextWrapper textColor={textColor} icon={icon} ellipsis={ellipsis}>
           {icon && (
             <ImageWrapper iconColor={iconColor} iconPadding={iconPadding}>
               <Image filename={icon} />
