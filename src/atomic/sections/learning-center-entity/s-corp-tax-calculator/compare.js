@@ -49,8 +49,6 @@ const AboutSection = ({ className, content }) => (
       <Paragraph big bottomMargin="0">
         {content.text2}
       </Paragraph>
-      <BoxedButton className="boxed-button boxed-button--1" content={content.button} ellipsis />
-      <BoxedButton className="boxed-button boxed-button--2" content={content.button2} ellipsis />
       <IconTextColorBox color={color.green3} Icon={IconSVG} content={content.box} bottomMargin="48" rounded curve />
       <Heading size="3" bottomMargin="32">
         {content.header2}

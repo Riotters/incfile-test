@@ -28,9 +28,14 @@ const Differences = styled.section`
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 100%;
   grid-gap: 30px;
   width: 100%;
+  padding-bottom: 72px;
+
+  @media (min-width: 992px) {
+    grid-template-columns: 1fr 1fr;
+  }
 `;
 
 const images = [`cert-llc-232`, `cert-s-433`];
@@ -41,21 +46,17 @@ const DifferencesSection = ({ className, content }) => (
     <Oval className="oval" height="720" width="720" top="11" right="0">
       <OvalSVG />
     </Oval>
-    <HeadingCenter headline={content.header} linkText={content.link.text} linkUrl={content.link.url} />
+    <HeadingCenter headline={content.header} linkText={content.link.text} linkUrl={content.link.url} bottomMargin="56" />
     <ContentCenter contentWidth="970">
-        <Grid>
-            {content.cards.map((card, i) => (
-                <Card content={card} image={images[i]} color={colors[i]} />
-            ))}
-        </Grid>
+      <Grid>
+        {content.cards.map((card, i) => (
+          <Card content={card} image={images[i]} color={colors[i]} />
+        ))}
+      </Grid>
     </ContentCenter>
     <ContentLeft contentWidth="770">
-      <Heading size="3">
-        {content.header2}
-      </Heading>
-      <Paragraph big>
-        {content.text}
-      </Paragraph>
+      <Heading size="3">{content.header2}</Heading>
+      <Paragraph big>{content.text}</Paragraph>
     </ContentLeft>
   </Differences>
 );
