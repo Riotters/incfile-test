@@ -31,6 +31,7 @@ import CountingTextBoxed from "../../atomic/molecules/text-blocks/counting-text-
 import Rocket from "../../atomic/sections/type-of-business/real-estate-business/rocket";
 import OvalTabsSvg from "../../images/ovals/bottom-left-transparent-pink.inline.svg";
 import OvalTabsSvg2 from "../../images/ovals/bottom-left-transparent-orange.inline.svg";
+import {color} from "../../atomic/atoms/styles/colors";
 
 const RealEstateBusiness = () => (
     <Layout>
@@ -59,10 +60,10 @@ const RealEstateBusiness = () => (
 
         <TabsWrapper>
             <TabsOval>
-                <OvalTabsSvg />
+                <OvalTabsSvg/>
             </TabsOval>
             <TabsOval2>
-                <OvalTabsSvg2 />
+                <OvalTabsSvg2/>
             </TabsOval2>
             <TabsSection style={{marginTop: "100px"}}>
                 <TabHeading>
@@ -86,7 +87,7 @@ const RealEstateBusiness = () => (
                             families and businesses. What’s not to love?
                         </Paragraph>
 
-                        <Paragraph big style={{fontWeight: "bold"}}>
+                        <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
                             Real Estate business formation guide
                         </Paragraph>
 
@@ -179,7 +180,7 @@ const RealEstateBusiness = () => (
                             Let’s start by exploring the world of real estate and understanding what the opportunities
                             are.
                         </Paragraph>
-                        <Paragraph big style={{marginBottom: "80px", fontWeight: "bold"}}>
+                        <Paragraph big style={{marginBottom: "80px", fontFamily: "Avenir-Heavy", color: color.black}}>
                             Background Data & Stats about the Real Estate Industry
                         </Paragraph>
 
@@ -192,36 +193,28 @@ const RealEstateBusiness = () => (
                         <BlueBoxWithAbsoluteText absoluteText="10.6%"
                                                  text="Average yearly return from residential and diversified property investments."/>
 
-                        <ColorFulCircleWithTextAndList list={RingText.list} title={RingText.title} CircleSVG={SvgChart}
+                        <ColorFulCircleWithTextAndList style={{marginBottom: "80px"}} list={RingText.list} title={RingText.title} CircleSVG={SvgChart}
                                                        withBg={true}/>
 
-                        <div style={{marginBottom: "30px", marginTop: "80px"}}>
                             <Adventages
                                 headline="The real estate industry has been growing by 9 percent year on year over the last five years."
                                 width="100%"
                             />
-                        </div>
 
-                        <div style={{marginBottom: "30px"}}>
                             <Adventages
                                 headline="The sale and rental of residential property accounts for around 72 percent of real estate business income in the U.S."
                                 width="100%"
                             />
-                        </div>
 
-                        <div style={{marginBottom: "30px"}}>
                             <Adventages
                                 headline="High corporate profits are increasing opportunities in commercial and industrial real estate."
                                 width="100%"
                             />
-                        </div>
 
-                        <div style={{marginBottom: "30px"}}>
                             <Adventages
                                 headline="Revenues in the real estate business market are expected to continue to grow over the next few years."
                                 width="100%"
                             />
-                        </div>
 
                         <Paragraph big>
                             This all points to the real estate investment world being ripe with new opportunities for
@@ -235,7 +228,7 @@ const RealEstateBusiness = () => (
                             There are two main ways you can take advantage of real estate business opportunities.
                         </Paragraph>
 
-                        <Paragraph big style={{fontWeight: "bold"}}>
+                        <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
                             How to Invest in Real Estate
                         </Paragraph>
 
@@ -258,53 +251,42 @@ const RealEstateBusiness = () => (
                             specific part of the industry where your business could be most successful.
                         </Paragraph>
 
-                        <div style={{marginBottom: "30px"}}>
                             <Adventages
                                 headline="Real estate property development"
                                 text="Building or upgrading existing residential or commercial property to resell at a profit."
                                 width="100%"
                             />
-                        </div>
 
-                        <div style={{marginBottom: "30px"}}>
                             <Adventages
                                 headline="Leasing and rental of residential property"
                                 text="Developing or enhancing residential property and arranging for rental as a rental agency or individual landlord."
                                 width="100%"
                             />
-                        </div>
 
-                        <div style={{marginBottom: "30px"}}>
                             <Adventages
                                 headline="Sale and purchase of commercial or industrial property"
                                 text="Working with other businesses to locate and arrange for transactions on property for profit-making purposes"
                                 width="100%"
                             />
-                        </div>
 
-                        <div style={{marginBottom: "30px"}}>
                             <Adventages
                                 headline="Leasing and rental of commercial or industrial property"
                                 text="Developing or enhancing business property and arranging for rental as a rental agency or individual landlord."
                                 width="100%"
                             />
-                        </div>
 
-                        <div style={{marginBottom: "30px"}}>
                             <Adventages
                                 headline="Real estate development for resale"
                                 text="Investing in commercial or residential property and making income when you sell the property."
                                 width="100%"
                             />
-                        </div>
 
-                        <div style={{marginBottom: "30px"}}>
                             <Adventages
                                 headline="Real estate property management services"
                                 text="Real estate property management services"
                                 width="100%"
                             />
-                        </div>
+
 
                         <Paragraph big>
                             Once you know the type of real estate business you want to run, you need to identify the
@@ -339,37 +321,29 @@ const RealEstateBusiness = () => (
                             investment business you run.
                         </Paragraph>
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Provide a complete package"
-                                text="Keep everything as simple as possible for your clients, whether they are buying a developed property, renting from you or something else."
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Provide a complete package"
+                            text="Keep everything as simple as possible for your clients, whether they are buying a developed property, renting from you or something else."
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Be proactive in your communications"
-                                text="Buying and renting property is very stressful for most people, so active communication from you will give them peace of mind."
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Be proactive in your communications"
+                            text="Buying and renting property is very stressful for most people, so active communication from you will give them peace of mind."
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Deliver exceptional value"
-                                text="Clients are looking for quality, accuracy, speed and reassurance when it comes to dealing with property."
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Deliver exceptional value"
+                            text="Clients are looking for quality, accuracy, speed and reassurance when it comes to dealing with property."
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Show additional benefits"
-                                text="Clients will likely have plenty of choices when it comes to deciding where to buy or rent. Make sure you clearly explain the benefits of the property and the services you provide."
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Show additional benefits"
+                            text="Clients will likely have plenty of choices when it comes to deciding where to buy or rent. Make sure you clearly explain the benefits of the property and the services you provide."
+                            width="100%"
+                        />
 
                         <Paragraph big>
                             If you can get these in place and explain your unique selling points, you'll have a good
@@ -382,7 +356,7 @@ const RealEstateBusiness = () => (
                         <Heading size={3}>
                             Questions to Ask Before You Get into Real Estate
                         </Heading>
-                        <Paragraph big style={{marginTop: "48px", fontWeight: "bold"}}>
+                        <Paragraph big style={{marginTop: "48px", fontFamily: "Avenir-Heavy", color: color.black}}>
                             Is Real Estate Entrepreneurship for You?
                         </Paragraph>
 
@@ -400,46 +374,38 @@ const RealEstateBusiness = () => (
                             you have to be prepared for your income to arrive all at once, or sometimes not at all.
                         </Paragraph>
 
-                        <Paragraph big style={{marginTop: "48px", fontWeight: "bold"}}>
+                        <Paragraph big style={{marginTop: "48px", fontFamily: "Avenir-Heavy", color: color.black}}>
                             What Skills do You Need to be a Successful Real Estate Investor?
                         </Paragraph>
                         <Paragraph big>
                             If you want to be successful in the world of real estate, here's what you need.
                         </Paragraph>
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Excellent interpersonal skills"
-                                text="You will need to deal with contractors, local authorities, clients and buyers all the time. Great interpersonal skills and the ability to handle people well are essential."
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Excellent interpersonal skills"
+                            text="You will need to deal with contractors, local authorities, clients and buyers all the time. Great interpersonal skills and the ability to handle people well are essential."
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Powerful time and task management"
-                                text="You will likely be juggling multiple opportunities together with managing your business. You must have a good way to manage your time, tasks and appointments."
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Powerful time and task management"
+                            text="You will likely be juggling multiple opportunities together with managing your business. You must have a good way to manage your time, tasks and appointments."
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Strong talent for negotiation"
-                                text="Negotiating real estate finances and pricing is an art. You need to have great deal-making and negotiation skills and understand exactly what the client wants to get out of the real estate transaction."
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Strong talent for negotiation"
+                            text="Negotiating real estate finances and pricing is an art. You need to have great deal-making and negotiation skills and understand exactly what the client wants to get out of the real estate transaction."
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Range of background skills and experience"
-                                text="You will want an excellent knowledge of your local market, strong relationships with mortgage providers (and other real estate support professionals) and an understanding of the legal nuances of buying and selling."
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Range of background skills and experience"
+                            text="You will want an excellent knowledge of your local market, strong relationships with mortgage providers (and other real estate support professionals) and an understanding of the legal nuances of buying and selling."
+                            width="100%"
+                        />
 
-                        <Paragraph big style={{marginTop: "48px", fontWeight: "bold"}}>
+                        <Paragraph big style={{marginTop: "48px", fontFamily: "Avenir-Heavy", color: color.black}}>
                             What Are the Main Challenges for a Real Estate Business?
                         </Paragraph>
                         <Paragraph big>
@@ -570,11 +536,10 @@ const TabsOval = styled.div`
     position: absolute;
     top: 0;
     left: 0;
-    width: 420px;
-    display: none;
+    width: 100%;
   
-    @media (min-width: 1200px) {
-        display: block;
+    @media (min-width: 420px) {
+        width: 420px;
     }
 `;
 
@@ -582,12 +547,11 @@ const TabsOval2 = styled.div`
     position: absolute;
     top: 0;
     left: 0;
-    width: 420px;
+    width: 100%;
     transform: scaleX(-1);
-    display: none;
   
-    @media (min-width: 1200px) {
-        display: block;
+    @media (min-width: 420px) {
+        width: 420px;
     }
 `;
 
