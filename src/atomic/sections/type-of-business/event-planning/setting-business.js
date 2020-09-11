@@ -5,6 +5,7 @@ import TopImageBox from "../../../../components/top-image-box";
 import {color} from "../../../../components/styles/colors";
 import styled from "styled-components";
 import GreenOval from "../../../../images/ovals/bottom-left-transparent-green2.inline.svg";
+import {Link} from "gatsby";
 
 const SettingBusiness = () => (
     <GreenContainer>
@@ -15,13 +16,14 @@ const SettingBusiness = () => (
         <Oval2>
             <GreenOval/>
         </Oval2>
+        <TextCenterLayout
+            headline="Setting up Your Event Planning Business Operations"
+            headlineWidth={770}
+            textWidth={770}
+            text="Once you've legally created your planning business, you’ll need to get some other things in place."
+        />
 
         <Container>
-            <TextCenterLayout
-                headline="Setting up Your Event Planning Business Operations"
-                headlineWidth="700"
-                text="Once you've legally created your planning business, you’ll need to get some other things in place."
-            />
             <ImageBoxes>
 
                 <TopImageBox image="display-ads" color={color.purple3}>
@@ -53,7 +55,7 @@ const SettingBusiness = () => (
                         for your party planning business. You might also want
                         to consider a business credit card. Additionally, you will need to keep careful bookkeeping
                         records and file business and personal taxes. Here at Incfile
-                        we can even help you file your taxes.
+                        <Link to="/">we can even help you file your taxes</Link>.
                     </p>
                 </TopImageBox>
 
@@ -114,13 +116,13 @@ const ImageBoxes = styled.div`
   grid-gap: 30px;
   padding-top: 112px;
   width: 100%;
-
+  max-width: 970px;
+  
   @media(min-width: 769px) {
     grid-template-columns: 1fr 1fr;
   }
   
   @media (min-width: 970px) {
-    width: 970px;
     margin: 0 auto;
   }
 `;
@@ -136,12 +138,11 @@ const Oval = styled.div`
     position: absolute;
     right: 0;
     top: 266px;
-    width: 570px;
+    width: 100%;
     transform: scaleX(-1);
-     display: none;
     
-    @media (min-width: 720px){
-        display: block; 
+    @media (min-width: 570px){
+        width: 570px; 
     }
 `;
 
@@ -149,11 +150,10 @@ const Oval2 = styled.div`
     position: absolute;
     left: 0;
     bottom: 272px;
-    width: 570px;
-     display: none;
+    width: 100%;
     
-    @media (min-width: 720px){
-        display: block; 
+    @media (min-width: 570px){
+        width: 570px; 
     }
 `;
 
