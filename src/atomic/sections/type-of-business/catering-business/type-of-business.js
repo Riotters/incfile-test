@@ -22,10 +22,11 @@ const TypeOfBusiness = () => (
         <Oval2>
             <OvalSvg2/>
         </Oval2>
+        <TextCenterLayout headlineWidth={770} textWidth={770} headline="Different Types of Catering Businesses"
+                          text="There are several different ways to set up and run a catering business. These include:"/>
+
         <Container>
             <Service>
-                <TextCenterLayout headline="Different Types of Catering Businesses"
-                                  text="There are several different ways to set up and run a catering business. These include:"/>
 
                 <AdventagesBox>
                     <CurveWrapper>
@@ -86,7 +87,7 @@ const AdventagesBox = styled.div`
   flex-wrap: wrap;
   width: 100%;
   max-width: 970px;
-  margin: 140px auto 0;
+  margin: 0 auto 140px;
   position: relative;
  
 `;
@@ -106,11 +107,10 @@ const Oval = styled.div`
     position: absolute;
     right: 0;
     top: 287px;
-    width: 720px;
-    display: none;
+    width: 100%;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 720px){
+        width: 720px;
     }
 `;
 
@@ -118,11 +118,10 @@ const Oval2 = styled.div`
     position: absolute;
     left: 0;
     bottom: 600px;
-    width: 420px;
-    display: none;
+    width: 100%;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 420px){
+        width: 420px;
     }
 `;
 

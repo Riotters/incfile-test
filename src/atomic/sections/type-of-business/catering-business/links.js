@@ -21,7 +21,7 @@ const Links = () => (
             <LinksContainer>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://cheftalk.com/forums/professional-catering.27/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Chef Talk
                     </PathLink>
                     <Paragraph style={{marginTop: "20px"}} bottomMargin={0}>
@@ -30,7 +30,7 @@ const Links = () => (
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.ifsqn.com/forum/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         International Food Safety and Quality Forum
                     </PathLink>
                     <Paragraph style={{marginTop: "20px"}} bottomMargin={0}>
@@ -39,7 +39,7 @@ const Links = () => (
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.reddit.com/r/KitchenConfidential/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Kitchen Confidential subreddit
                     </PathLink>
                     <Paragraph style={{marginTop: "20px"}} bottomMargin={0}>
@@ -48,7 +48,7 @@ const Links = () => (
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.reddit.com/r/foodtrucks/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Food Trucks subreddit
                     </PathLink>
                     <Paragraph style={{marginTop: "20px"}} bottomMargin={0}>
@@ -56,6 +56,14 @@ const Links = () => (
                     </Paragraph>
                 </LinkItem>
 
+                <LinkItem>
+                    <PathLink to="https://www.tapatalk.com/groups/mobilecatering/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                        Tapatalk
+                    </PathLink>
+                    <Paragraph style={{marginTop: "20px"}} bottomMargin={0}>
+                        A forum for mobile caterers and food concession businesses
+                    </Paragraph>
+                </LinkItem>
             </LinksContainer>
         </Container>
     </Wrapper>
@@ -75,7 +83,7 @@ const LinksContainer = styled.div`
     justify-content: space-between;
     flex-wrap: wrap;
     
-    @media (min-width: 1000px) {
+    @media (min-width: 1100px) {
         width: 1000px;
     }
 `;
@@ -92,7 +100,7 @@ const LinkItem = styled.div`
         width: 470px;
     }
     
-    @media (min-width: 1000px) {
+    @media (min-width: 1100px) {
         margin-left: 15px;
         margin-right: 15px;
     }
@@ -102,11 +110,10 @@ const Oval = styled.div`
     top: 80px;
     left: 0;
     position: absolute;
-    width: 570px;
-    display: none;
+    width: 100%;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 570px){
+        width: 570px;
     }
 `;
 

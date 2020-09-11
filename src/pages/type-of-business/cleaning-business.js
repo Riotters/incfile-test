@@ -1,9 +1,10 @@
 import React from "react";
+import {Link} from "gatsby";
 import styled from "styled-components";
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
 import Top from "../../atomic/partials/top";
-import Button from "../../components/button";
+import Button from "../../atomic/molecules/buttons/button";
 import RatingRow from "../../atomic/atoms/boxes/rating-row";
 import CartBlock from "../../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../../atomic/molecules/blocks/rating-block";
@@ -62,7 +63,7 @@ const CleaningBusiness = () => (
         <SEO title="How to Start a Cleaning Business"
              description="Starting a cleaning business can be an ideal way to begin your journey as an entrepreneur. Although they may seem simple, cleaning businesses have a lot going for them."/>
 
-        <Top ovalColor="sun-2" imageName="cleaning-business-main" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
+        <Top ovalColor="green" imageName="cleaning-business-main" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
             <h1>How to Start a Cleaning Business</h1>
             <p>
                 Starting a cleaning business can be an ideal way to begin your
@@ -112,7 +113,7 @@ const CleaningBusiness = () => (
                             finding skilled workers and developing an excellent brand.
                         </Paragraph>
 
-                        <Paragraph big style={{fontWeight: "bold", marginTop: "48px"}}>
+                        <Paragraph big style={{fontFamily: "Avenir-Heavy", marginTop: "48px", color: color.black}}>
                             Cleaning business formation guide
                         </Paragraph>
 
@@ -218,7 +219,7 @@ const CleaningBusiness = () => (
                             Understanding the World of a Cleaning Business
                         </Heading>
 
-                        <Paragraph big style={{fontWeight: "bold", marginTop: "48px"}}>
+                        <Paragraph big style={{fontFamily: "Avenir-Heavy", marginTop: "48px", color: color.black}}>
                             Key Cleaning Business and Background Data and Statistics
                         </Paragraph>
 
@@ -233,36 +234,29 @@ const CleaningBusiness = () => (
                         <BlueBoxWithAbsoluteText absoluteText="4 - 6%"
                                                  text="Revenue increase by year, while job growth is expected to increase by 0.6 percent a year"/>
 
-                        <ColorFulCircleWithTextAndList list={RingText.list} title={RingText.title} CircleSVG={RingSvg}
+                        <ColorFulCircleWithTextAndList style={{marginBottom: "48px"}} list={RingText.list}
+                                                       title={RingText.title} CircleSVG={RingSvg}
                                                        withBg={true}/>
 
-                        <div style={{marginBottom: "30px", marginTop: "48px"}}>
-                            <Adventages
-                                headline="The commercial office and retail sectors generate the majority of revenue, followed by education and healthcare."
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="The commercial office and retail sectors generate the majority of revenue, followed by education and healthcare."
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="The number of cleaning companies is growing by around 1.7 percent each year"
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="The number of cleaning companies is growing by around 1.7 percent each year"
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Around 10 percent of cleaning industry revenues come from franchises."
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Around 10 percent of cleaning industry revenues come from franchises."
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "48px"}}>
-                            <Adventages
-                                headline="Commercial cleaning contracts are the most reliable type of income for cleaning businesses, with office buildings accounting for nearly a third of such contracts."
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Commercial cleaning contracts are the most reliable type of income for cleaning businesses, with office buildings accounting for nearly a third of such contracts."
+                            width="100%"
+                        />
 
                         <Paragraph big>
                             This all points to the cleaning industry being ripe with new opportunities for focused
@@ -278,7 +272,7 @@ const CleaningBusiness = () => (
                             Questions to Ask Before You Start a Cleaning Business
                         </Heading>
 
-                        <Paragraph big style={{fontWeight: "bold", marginTop: "48px"}}>
+                        <Paragraph big style={{fontFamily: "Avenir-Heavy", marginTop: "48px", color: color.black}}>
                             Is Cleaning Entrepreneurship for You?
                         </Paragraph>
 
@@ -286,63 +280,49 @@ const CleaningBusiness = () => (
                             Running a cleaning business could be a good option if you:
                         </Paragraph>
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Have a strong focus on customer service"
-                                text="You'll need to make sure all your employees are great at dealing with demanding clients."
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Have a strong focus on customer service"
+                            text="You'll need to make sure all your employees are great at dealing with demanding clients."
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Don’t mind staff turnover"
-                                text="Cleaning isn’t an extremely well-paid job, so there can be fairly rapid employee turnover."
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Don’t mind staff turnover"
+                            text="Cleaning isn’t an extremely well-paid job, so there can be fairly rapid employee turnover."
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Marketing"
-                                text="Promoting your beauty salon business against a competitive field; local marketing expertise is essential"
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Marketing"
+                            text="Promoting your beauty salon business against a competitive field; local marketing expertise is essential"
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Are great at training"
-                                text="Your cleaners will need to clean to the very highest quality, so they will need excellent training and materials."
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Are great at training"
+                            text="Your cleaners will need to clean to the very highest quality, so they will need excellent training and materials."
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Don’t mind competition"
-                                text="The barrier to entry for cleaning businesses is very low, and there are always new entrants into the marketplace."
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Don’t mind competition"
+                            text="The barrier to entry for cleaning businesses is very low, and there are always new entrants into the marketplace."
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Operational management"
-                                text="Ensuring customers are served well and beauty treatments are provided to the standards you expect"
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Operational management"
+                            text="Ensuring customers are served well and beauty treatments are provided to the standards you expect"
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Enjoy dealing with people"
-                                text="Cleaning is a very people-focused business, so you will constantly be interacting with customers and employees."
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Enjoy dealing with people"
+                            text="Cleaning is a very people-focused business, so you will constantly be interacting with customers and employees."
+                            width="100%"
+                        />
 
-                        <Paragraph big style={{fontWeight: "bold"}}>
+                        <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
                             What Are the Main Challenges for a Cleaning Entrepreneur?
                         </Paragraph>
 
@@ -353,7 +333,7 @@ const CleaningBusiness = () => (
                             your margins will likely be very thin.
                         </Paragraph>
 
-                        <Paragraph big style={{fontWeight: "bold"}}>
+                        <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
                             What Does a Day in the Life of a Cleaning Entrepreneur Look Like?
                         </Paragraph>
 
@@ -595,7 +575,7 @@ const CleaningBusiness = () => (
                     </CountingTextBoxed>
 
                     <Paragraph big mixed={true} style={{marginTop: "50px"}}>
-                        We’ve got the perfect <span style={{color: color.blue1, fontWeight: "bold"}}>guide to writing your business plan.</span>
+                        We’ve got the perfect <Link to="/">guide to writing your business plan.</Link>
                     </Paragraph>
                 </CenterBox>
             </Container>
@@ -636,12 +616,14 @@ const CleaningBusiness = () => (
                             width={100}
                             widthUnit="%"
                         >
-                            <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                        mixed={true}>
-                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                    <ArrowSVG/>
-                                </IconCircle>
-                                Sole Proprietorship
+                                <FlexLink to="/">
+                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                        <ArrowSVG/>
+                                    </IconCircle>
+                                    Sole Proprietorship
+                                </FlexLink>
                             </Paragraph>
 
                             <Paragraph big>
@@ -665,12 +647,14 @@ const CleaningBusiness = () => (
                             width={100}
                             widthUnit="%"
                         >
-                            <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                        mixed={true}>
-                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                    <ArrowSVG/>
-                                </IconCircle>
-                                Limited Liability Company or LLC
+                                <FlexLink to="/">
+                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                        <ArrowSVG/>
+                                    </IconCircle>
+                                    Limited Liability Company or LLC
+                                </FlexLink>
                             </Paragraph>
 
                             <Paragraph big>
@@ -694,12 +678,14 @@ const CleaningBusiness = () => (
                             width={100}
                             widthUnit="%"
                         >
-                            <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                        mixed={true}>
-                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                    <ArrowSVG/>
-                                </IconCircle>
-                                Series LLC
+                                <FlexLink to="/">
+                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                        <ArrowSVG/>
+                                    </IconCircle>
+                                    Series LLC
+                                </FlexLink>
                             </Paragraph>
 
                             <Paragraph big>
@@ -723,12 +709,14 @@ const CleaningBusiness = () => (
                             width={100}
                             widthUnit="%"
                         >
-                            <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                        mixed={true}>
-                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                    <ArrowSVG/>
-                                </IconCircle>
-                                S Corporation
+                                <FlexLink to="/">
+                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                        <ArrowSVG/>
+                                    </IconCircle>
+                                    S Corporation
+                                </FlexLink>
                             </Paragraph>
 
                             <Paragraph big>
@@ -751,12 +739,14 @@ const CleaningBusiness = () => (
                             width={100}
                             widthUnit="%"
                         >
-                            <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                        mixed={true}>
-                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                    <ArrowSVG/>
-                                </IconCircle>
-                                C Corporation
+                                <FlexLink to="/">
+                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                        <ArrowSVG/>
+                                    </IconCircle>
+                                    C Corporation
+                                </FlexLink>
                             </Paragraph>
 
                             <Paragraph big>
@@ -767,13 +757,13 @@ const CleaningBusiness = () => (
 
                         <Paragraph big style={{paddingTop: "120px"}} mixed={true}>
                             For more information on the advantages and disadvantages of different types of businesses,
-                            please see our in-depth guide on business entities. If you still have questions, we’ve
-                            answered them to help you choose the right business structure.
+                            please <Link to="/">see our in-depth guide</Link> on business entities. If you still have questions, <Link to="/">we’ve
+                            answered them to help you choose the right business structure</Link>.
                         </Paragraph>
                         <Paragraph big mixed={true}>
-                            In most cases our recommendation would be to create an LLC. We have a complete guide to
-                            everything you need to do, and we can set one up for your T-shirt business. LLC formation
-                            does vary from state to state, but we’ve got you covered, wherever you are.
+                            In most cases our recommendation would be to create an LLC. We have a <Link to="/">complete guide to
+                            everything you need to do</Link>, and we can set one up for your T-shirt business. <Link to="/">LLC formation
+                            does vary from state to state</Link>, but we’ve got you covered, wherever you are.
                         </Paragraph>
 
                         <Heading size={3}>
@@ -786,9 +776,8 @@ const CleaningBusiness = () => (
                             protections in place will be essential.
                         </Paragraph>
 
-                        <Button theme="primary48" width="365px" arrow>
-                            Start your business with us, today!
-                        </Button>
+                        <Button theme="primary48" width="365px" arrow content={{url: "/", text: "Start your business with us, today!"}} />
+
                     </ImageContent>
                 </BusinessOwnerResponsibilities>
             </Container>
@@ -802,7 +791,7 @@ const CleaningBusiness = () => (
 
         <ToolsWrapper>
             <Oval6>
-                <OvalSvg6 />
+                <OvalSvg6/>
             </Oval6>
             <UsefulTools style={{paddingBottom: "200px"}} toolsList={toolsList.tools}
                          headlineText={toolsList.headlineText}
@@ -860,9 +849,9 @@ const BlueContainer = styled.section`
 const CenterBox = styled.div`
     width: 100%;
     padding-bottom: 100px;
+    max-width: 670px;
     
     @media (min-width: 670px) {
-        width: 670px;
         margin: 0 auto;
     }
 `;
@@ -873,13 +862,13 @@ const GridSectionList = styled.div`
     flex-wrap: wrap;
     width: 100%;
     margin-top: 100px;
+    max-width: 970px;
     
     > div {
         margin-bottom: 70px;
     }
     
     @media (min-width: 970px) {
-        width: 970px;
         margin: 100px auto 0;
     }
 `;
@@ -924,89 +913,89 @@ const TabsWrapper = styled.section`
 
 const TabsOval = styled.div`
     position: absolute;
-    width: 420px;
+    width: 100%;
     top: 0;
     left: 0;
     transform: scaleX(-1);
-    display: none;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 420px){
+        width: 420px;
     }
 `;
 
 const TabsOval2 = styled.div`
     position: absolute;
-    width: 420px;
+    width: 100%;
     top: 436px;
     right: 0;
-    display: none;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 420px){
+        width: 420px;
     }
 `;
 
 const Oval2 = styled.div`
     position: absolute;
-    width: 570px;
+    width: 100%;
     top: 0;
     right: 0;
-    display: none;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 570px){
+        width: 570px;
     }
 `;
 
 const Oval3 = styled.div`
     position: absolute;
-    width: 420px;
+    width: 100%;
     top: 0;
     left: 0;
-    display: none;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 420px){
+        width: 420px;
     }
 `;
 
 const Oval4 = styled.div`
     position: absolute;
-    width: 720px;
+    width: 100%;
     bottom: 100px;
     right: 0;
     transform: scaleX(-1);
-    display: none;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 720px){
+        width: 720px;
     }
 `;
 
 const Oval5 = styled.div`
     position: absolute;
-    width: 570px;
+    width: 100%;
     bottom: 368px;
     right: 0;
     transform: scaleX(-1);
-    display: none;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 570px){
+        width: 570px;
     }
 `;
 
 const Oval6 = styled.div`
     position: absolute;
-    width: 720px;
+    width: 100%;
     top: 0px;
     right: 0;
     z-index: -1;
-    display: none;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 720px){
+        width: 720px;
     }
 `;
+
+const FlexLink = styled(Link)`
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+`;
+
 export default CleaningBusiness;

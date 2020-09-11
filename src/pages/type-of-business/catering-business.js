@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
 import Top from "../../atomic/partials/top";
-import Button from "../../components/button";
+import Button from "../../atomic/molecules/buttons/button";
 import RatingRow from "../../atomic/atoms/boxes/rating-row";
 import CartBlock from "../../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../../atomic/molecules/blocks/rating-block";
@@ -49,6 +49,7 @@ import OvalSvg2 from "../../images/ovals/top-left-transparent-green3.inline.svg"
 import OvalSvg3 from "../../images/ovals/top-left-transparent-pink.inline.svg";
 import {shadow} from "../../atomic/atoms/styles/shadows";
 import OvalSvg4 from "../../images/ovals/top-right-transparent-green3.inline.svg";
+import {Link} from "gatsby";
 
 const CateringBusiness = () => (
     <Layout>
@@ -103,7 +104,7 @@ const CateringBusiness = () => (
                             a restaurant.
                         </Paragraph>
 
-                        <Paragraph big style={{fontWeight: "bold", marginTop: "48px"}}>
+                        <Paragraph big style={{fontFamily: "Avenir-Heavy", marginTop: "48px", color: color.black}}>
                             Catering Business formation guide
                         </Paragraph>
 
@@ -224,29 +225,24 @@ const CateringBusiness = () => (
                         <BlueBoxWithAbsoluteText absoluteText="260K"
                                                  text="Caterers employ people, or just over two per catering business"/>
 
-                        <ColorFulCircleWithTextAndList list={RingText.list} title={RingText.title} CircleSVG={RingSvg}
+                        <ColorFulCircleWithTextAndList style={{marginBottom: "48px"}} list={RingText.list}
+                                                       title={RingText.title} CircleSVG={RingSvg}
                                                        withBg={true}/>
 
-                        <div style={{marginBottom: "30px", marginTop: "48px"}}>
-                            <Adventages
-                                headline="The market is growing by 1.3 percent a year"
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="The market is growing by 1.3 percent a year"
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Corporate events are some of the biggest opportunities for caterers, followed by weddings and social catering"
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Corporate events are some of the biggest opportunities for caterers, followed by weddings and social catering"
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Buffet-style catering is most popular, followed by plated meals"
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Buffet-style catering is most popular, followed by plated meals"
+                            width="100%"
+                        />
 
                         <Paragraph big>
                             This makes the catering industry very attractive to aspiring entrepreneurs, but there are
@@ -273,51 +269,41 @@ const CateringBusiness = () => (
                             When it comes to catering, your clients want several things:
                         </Paragraph>
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Reliability"
-                                text="If food doesn't show up, there’s normally hell to pay! Clients will demand reliability and trustworthiness — if you can build up a reputation as a friendly, reliable caterer, expect good repeat bookings."
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Reliability"
+                            text="If food doesn't show up, there’s normally hell to pay! Clients will demand reliability and trustworthiness — if you can build up a reputation as a friendly, reliable caterer, expect good repeat bookings."
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Friendliness"
-                                text="It’s not just about the food you prepare, it’s also about how that food is served. Many clients will expect you to provide wait staff and servers, and you will need to ensure they have the right approach and attitude."
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Friendliness"
+                            text="It’s not just about the food you prepare, it’s also about how that food is served. Many clients will expect you to provide wait staff and servers, and you will need to ensure they have the right approach and attitude."
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Marketing"
-                                text="Promoting your beauty salon business against a competitive field; local marketing expertise is essential"
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Marketing"
+                            text="Promoting your beauty salon business against a competitive field; local marketing expertise is essential"
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Value for money"
-                                text="Catering is a competitive business, and profit margins can be slim. You will need a rock-solid understanding of all your costs so you can price your services correctly."
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Value for money"
+                            text="Catering is a competitive business, and profit margins can be slim. You will need a rock-solid understanding of all your costs so you can price your services correctly."
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Variety"
-                                text="Many clients will look for something a little bit different. If you can provide varied foods at a reasonable price, that’s a great way to stand apart from your competitors."
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Variety"
+                            text="Many clients will look for something a little bit different. If you can provide varied foods at a reasonable price, that’s a great way to stand apart from your competitors."
+                            width="100%"
+                        />
 
                         <Heading size={3}>
                             Questions to Ask Before You Start a Catering Business
                         </Heading>
 
-                        <Paragraph big style={{fontWeight: "bold"}}>
+                        <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
                             Is Catering Entrepreneurship for You?
                         </Paragraph>
 
@@ -338,7 +324,7 @@ const CateringBusiness = () => (
                             huge amounts of experience in creating and running a successful business.
                         </Paragraph>
 
-                        <Paragraph big style={{fontWeight: "bold"}}>
+                        <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
                             What Are the Main Skills, Expertise and Experience to Be a Successful Catering Entrepreneur?
                         </Paragraph>
 
@@ -348,21 +334,17 @@ const CateringBusiness = () => (
                             Among other areas, these skills include:
                         </Paragraph>
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Hiring"
-                                text="Finding, interviewing and hiring great service industry employees for kitchen and food service work."
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Hiring"
+                            text="Finding, interviewing and hiring great service industry employees for kitchen and food service work."
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="People management"
-                                text="Dealing with staff, coverage, issues and other people management areas."
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="People management"
+                            text="Dealing with staff, coverage, issues and other people management areas."
+                            width="100%"
+                        />
 
                         <div style={{marginBottom: "30px"}}>
                             <Adventages
@@ -372,40 +354,31 @@ const CateringBusiness = () => (
                             />
                         </div>
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Meal design"
-                                text="Working with chefs to create innovative meals, source ingredients and create reasonable profit margins."
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Meal design"
+                            text="Working with chefs to create innovative meals, source ingredients and create reasonable profit margins."
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Kitchen creation"
-                                text="Setting up the kitchen in the first place, which includes finding equipment, furniture, fixtures and fittings."
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Kitchen creation"
+                            text="Setting up the kitchen in the first place, which includes finding equipment, furniture, fixtures and fittings."
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Operational management"
-                                text="Ensuring clients are treated well, orders are dealt with promptly and food is prepared to the standards you expect."
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Operational management"
+                            text="Ensuring clients are treated well, orders are dealt with promptly and food is prepared to the standards you expect."
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "48px"}}>
-                            <Adventages
-                                headline="Business administration"
-                                text="Sorting out profits, payroll, financial management, accounting and all the other areas that go into running any successful business."
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Business administration"
+                            text="Sorting out profits, payroll, financial management, accounting and all the other areas that go into running any successful business."
+                            width="100%"
+                        />
 
-
-                        <Paragraph big style={{fontWeight: "bold"}}>
+                        <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
                             Is Catering Entrepreneurship for You?
                         </Paragraph>
 
@@ -525,7 +498,7 @@ const CateringBusiness = () => (
                     </CountingTextBoxed>
 
                     <Paragraph big mixed={true} style={{marginTop: "50px"}}>
-                        We’ve got the perfect <span style={{color: color.blue1, fontWeight: "bold"}}>guide to writing your business plan.</span>
+                        We’ve got the perfect <Link to="/">guide to writing your business plan.</Link>
                     </Paragraph>
                 </CenterBox>
             </Container>
@@ -571,12 +544,14 @@ const CateringBusiness = () => (
                             width={100}
                             widthUnit="%"
                         >
-                            <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                        mixed={true}>
-                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                    <ArrowSVG/>
-                                </IconCircle>
-                                Sole Proprietorship
+                                <FlexLink to="/">
+                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                        <ArrowSVG/>
+                                    </IconCircle>
+                                    Sole Proprietorship
+                                </FlexLink>
                             </Paragraph>
 
                             <Paragraph big>
@@ -600,12 +575,14 @@ const CateringBusiness = () => (
                             width={100}
                             widthUnit="%"
                         >
-                            <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                        mixed={true}>
-                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                    <ArrowSVG/>
-                                </IconCircle>
-                                Limited Liability Company or LLC
+                                <FlexLink to="/">
+                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                        <ArrowSVG/>
+                                    </IconCircle>
+                                    Limited Liability Company or LLC
+                                </FlexLink>
                             </Paragraph>
 
                             <Paragraph big>
@@ -629,12 +606,14 @@ const CateringBusiness = () => (
                             width={100}
                             widthUnit="%"
                         >
-                            <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                        mixed={true}>
-                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                    <ArrowSVG/>
-                                </IconCircle>
-                                Series LLC
+                                <FlexLink to="/">
+                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                        <ArrowSVG/>
+                                    </IconCircle>
+                                    Series LLC
+                                </FlexLink>
                             </Paragraph>
 
                             <Paragraph big>
@@ -658,12 +637,14 @@ const CateringBusiness = () => (
                             width={100}
                             widthUnit="%"
                         >
-                            <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                        mixed={true}>
-                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                    <ArrowSVG/>
-                                </IconCircle>
-                                S Corporation
+                                <FlexLink to="/">
+                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                        <ArrowSVG/>
+                                    </IconCircle>
+                                    S Corporation
+                                </FlexLink>
                             </Paragraph>
 
                             <Paragraph big>
@@ -686,12 +667,14 @@ const CateringBusiness = () => (
                             width={100}
                             widthUnit="%"
                         >
-                            <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                        mixed={true}>
-                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                    <ArrowSVG/>
-                                </IconCircle>
-                                C Corporation
+                                <FlexLink to="/">
+                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                        <ArrowSVG/>
+                                    </IconCircle>
+                                    C Corporation
+                                </FlexLink>
                             </Paragraph>
 
                             <Paragraph big>
@@ -702,18 +685,21 @@ const CateringBusiness = () => (
 
                         <Paragraph big style={{paddingTop: "120px"}} mixed={true}>
                             For more information on the advantages and disadvantages of different types of businesses,
-                            please see our in-depth guide on business entities. If you still have questions, we’ve
-                            answered them to help you choose the right business structure.
+                            please <Link to="/">see our in-depth guide</Link> on business entities. If you still have
+                            questions, <Link to="/">we’ve
+                            answered them to help you choose the right business structure</Link>.
                         </Paragraph>
                         <Paragraph big mixed={true}>
-                            In most cases our recommendation would be to create an LLC. We have a complete guide to
-                            everything you need to do, and we can set one up for your T-shirt business. LLC formation
-                            does vary from state to state, but we’ve got you covered, wherever you are.
+                            In most cases our recommendation would be to create an LLC. We have a <Link to="/">complete
+                            guide to
+                            everything you need to do</Link>, and we can set one up for your T-shirt business. <Link
+                            to="/">LLC formation
+                            does vary from state to state</Link>, but we’ve got you covered, wherever you are.
                         </Paragraph>
 
-                        <Button theme="primary48" width="365px" arrow>
-                            Start your business with us, today!
-                        </Button>
+                        <Button theme="primary48" width="365px" arrow
+                                content={{url: "/", text: "Start your business with us, today!"}}/>
+
                     </ImageContent>
                 </BusinessOwnerResponsibilities>
 
@@ -754,12 +740,14 @@ const CateringBusiness = () => (
             <Oval6>
                 <OvalSvg4/>
             </Oval6>
-            <UsefulTools style={{paddingBottom: "200px"}} toolsList={toolsList.tools}
-                         headlineText={toolsList.headlineText}
-                         description={toolsList.description}/>
+            <Container>
+                <UsefulTools style={{paddingBottom: "200px"}} toolsList={toolsList.tools}
+                             headlineText={toolsList.headlineText}
+                             description={toolsList.description}/>
+            </Container>
         </ToolsWrapper>
 
-        <Conclusion to="/" buttonTitle="Start your Etsy Business with us, today">
+        <Conclusion to="/" buttonTitle="Start your Catering Business with us, today">
             <Heading size={3} style={{fontSize: "40px"}}>Conclusion</Heading>
             <Paragraph big>
                 If you want to start a business that’s going to be a challenge but also bring a huge amount of pleasure
@@ -792,37 +780,13 @@ const ListBox = styled.div`
     }
 `;
 
-const BlueContainer = styled.section`
-    background: rgb(242,246,255);
-    background: linear-gradient(0deg, rgba(242,246,255,1) 0%, rgba(250,251,255,1) 100%);
-    padding-top: 100px;
-    position: relative;
-`;
-
 const CenterBox = styled.div`
     width: 100%;
     padding-bottom: 100px;
+    max-width: 670px;
     
     @media (min-width: 670px) {
-        width: 670px;
         margin: 0 auto;
-    }
-`;
-
-const GridSectionList = styled.div`
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 100%;
-    margin-top: 100px;
-    
-    > div {
-        margin-bottom: 70px;
-    }
-    
-    @media (min-width: 970px) {
-        width: 970px;
-        margin: 100px auto 0;
     }
 `;
 
@@ -852,11 +816,10 @@ const Oval = styled.div`
   position: absolute; 
   left: 0;
   top: 200px;
-  width: 570px;
-  display: none;
+  width: 100%;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 570px){
+        width: 570px;
     }
 `
 
@@ -866,75 +829,69 @@ const TabsWrapper = styled.div`
 
 const OvalTabs = styled.div`
     position: absolute;
-    width: 420px;
+    width: 100%;
     top: 0px;
     left: 0;
-    display: none;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 420px){
+        width: 420px;
     }
 `;
 
 const OvalTabs2 = styled.div`
     position: absolute;
-    width: 420px;
+    width: 100%;
     bottom: 36px;
     right: 0;
-    display: none;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 420px){
+        width: 420px;
     }
 `;
 
 const Oval2 = styled.div`
     position: absolute;
-    width: 720px;
+    width: 100%;
     top: 0;
     left: 0;
-    display: none;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 720px){
+        width: 720px;
     }
 `;
 
 const Oval3 = styled.div`
     position: absolute;
-    width: 720px;
+    width: 100%;
     bottom: 100px;
     right: 0;
     transform: scaleX(-1);
-    display: none;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 720px){
+        width: 720px;
     }
 `;
 
 const Oval4 = styled.div`
     position: absolute;
-    width: 420px;
+    width: 100%;
     bottom: 210px;
     left: 0;
-    display: none;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 420px){
+        width: 420px;
     }
 `;
 
 const Oval5 = styled.div`
     position: absolute;
-    width: 720px;
+    width: 100%;
     bottom: 164px;
     right: 0;
     transform: scaleX(-1);
-    display: none;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 720px){
+        width: 720px;
     }
 `;
 
@@ -944,14 +901,20 @@ const ToolsWrapper = styled.div`
 
 const Oval6 = styled.div`
     position: absolute;
-    width: 720px;
+    width: 100%;
     top: 0;
     right: 0;
     z-index: -1;
-    display: none;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 720px){
+        width: 720px;
     }
 `;
+
+const FlexLink = styled(Link)`
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+`;
+
 export default CateringBusiness;

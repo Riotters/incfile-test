@@ -79,6 +79,7 @@ const GreenContainer = styled.div`
     padding-bottom: 100px;
     padding-top: 100px;
     position: relative;
+    overflow: hidden;
 `;
 
 
@@ -88,13 +89,13 @@ const ImageBoxes = styled.div`
   grid-gap: 30px;
   padding-top: 112px;
   width: 100%;
-
+  max-width: 970px;
+  
   @media(min-width: 769px) {
     grid-template-columns: 1fr 1fr;
   }
   
   @media (min-width: 970px) {
-    width: 970px;
     margin: 0 auto;
   }
 `;
@@ -110,11 +111,10 @@ const Oval = styled.div`
     position: absolute;
     left: 0;
     top: 0;
-    width: 720px;
-    display: none;
+    width: 100%;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 720px){
+        width: 720px;
     }
 `;
 
@@ -122,12 +122,11 @@ const Oval2 = styled.div`
     position: absolute;
     right: 0;
     top: 220px;
-    width: 720px;
+    width: 100%;
     transform: scaleX(-1);
-    display: none;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 720px){
+        width: 720px;
     }
 `;
 export default SettingBusiness;
