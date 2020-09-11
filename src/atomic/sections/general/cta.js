@@ -103,7 +103,7 @@ const Cta = ({cta}) => (
           <MapSVG />
         </Map>
         <VisibilitySensor partialVisibility once>
-          {({ isVisible }) => <h2 className={isVisible ? "slideUp enter" : "slideUp"}>{cta ? cta.header : "Choose the right and&nbsp;start your business"}</h2>}
+          {({ isVisible }) => <h2 className={isVisible ? "slideUp enter" : "slideUp"}>{cta ? cta.header : "Choose the right and\u00A0start your business"}</h2>}
         </VisibilitySensor>
         <VisibilitySensor partialVisibility once>
           {({ isVisible }) => <p className={isVisible ? "slideUp enter" : "slideUp"}>$0 + State Fee & FREE Registered Agent for 1st year.</p>}
