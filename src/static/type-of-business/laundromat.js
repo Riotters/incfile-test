@@ -384,24 +384,103 @@ export const FinancesAccordionContent = {
     items: [
         {
             question: "Get a Business Bank Account",
+            answer: [
+                {
+                    text: `You must keep your business and personal finances separate. It will make your administration and financial management easier, plus it’s a legal requirement for protecting your assets. Talk to your bank about`
+                },
+                {
+                    text: `setting up a business account`,
+                    url: `/`
+                },
+                {
+                    text: `for your T-shirt company.`
+                }
+            ]
         },
         {
             question: "Get a Certified Public Accountant (CPA)",
+            answer: "A CPA is essential to running your business successfully. In addition to advising on taxes, preparing and filing your tax return and keeping taxes to a minimum, they can also provide financial advice. They will be able to instruct you on expenses, profitability, good financial management, estimated taxes and more."
         },
         {
-            question: "Make Sure You Have Savings in Place"
+            question: "Make Sure You Have Savings in Place",
+            answer: "There’s nothing as stressful as relying on your new business to give you enough money to pay the bills. Your T-shirt business probably won’t be successful right away. That's why it’s essential to have savings in place so you can meet your living expenses until your business brings in decent revenue. We recommend having between three and six months’ worth of expenses saved up — the more the better."
         },
         {
-            question: "Get Financing for Your Business"
+            question: "Get Financing for Your Business",
+            answer: [
+                {
+                    text: `In some cases you may need to get financing to start your T-shirt business. Your best option is probably to go to your bank and ask for a loan. If you decide to do this, you must have a solid business plan, revenue and finance projections and a plan to pay back any money you borrow. The`
+                },
+                {
+                    text: `Small Business Administration also lists financing`,
+                    url: `/`
+                },
+                {
+                    text: `you may be eligible for.`
+                }
+            ]
         },
         {
-            question: "Set up Merchant Accounts to Accept Debit and Credit Cards"
+            question: `Set up Merchant Accounts to Accept Debit and Credit Cards`,
+            answer: `If you want to take debit and credit card payments, you have a few options. You can use integrated services like Square, PayPal, Stripe, etc., or you can create your own merchant accounts. You will need to use one of these options if you want to accept cards. If you set up a store on Shopify, you can also use their integrated payments system.`
         },
         {
-            question: "Get Accounting Software"
+            question: "Consider Applying for a Business Credit Card",
+            answer: [
+                {
+                    text: `Business credit cards are a great way to build business credit, collect travel perks and cash rewards and provide peace of mind in case there's a business expense or bill you can't cover with cash. We’ve teamed up with Capital One® Spark Business®! Together, we want to help you put thousands of dollars back into your business. With the Spark® Cash credit card, you’ll earn unlimited 2 percent cash back on every purchase — plus, a one-time $500 cash bonus once you spend $4,500 on purchases within three months of account opening.`
+                },
+                {
+                    text: `Learn more today.`,
+                    url: `/`
+                }
+            ]
         },
         {
-            question: "Consider Applying for a Business Credit Card"
+            question: "Get Accounting Software",
+            answer: [
+                {
+                    text: `Bookkeeping and accounting software is essential for keeping track of your T-shirt business finances. Good financial management is vital to your peace of mind and online accounting software will give you the insight you need. There are plenty of options to choose from, with some popular ones being:`
+                },
+                {
+                    text: `QuickBooks,`,
+                    url: `/`
+                },
+                ,
+                {
+                    text: `FreshBooks,`,
+                    url: `/`
+                },
+                ,
+                {
+                    text: `FreeAgent,`,
+                    url: `/`
+                },
+                ,
+                {
+                    text: `ZipBooks,`,
+                    url: `/`
+                },
+                ,
+                {
+                    text: `Wave Accounting,`,
+                    url: `/`
+                },
+                ,
+                {
+                    text: `Xero,`,
+                    url: `/`
+                },
+                ,
+                {
+                    text: `and`
+                },
+                ,
+                {
+                    text: `Bench.`,
+                    url: `/`
+                }
+            ]
         }
     ]
 }
