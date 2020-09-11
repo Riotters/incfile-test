@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
-import {color} from "../../../../components/styles/colors";
+import {Link} from "gatsby";
 import CountingTextBoxed from "../../../molecules/text-blocks/counting-text-boxed";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import Container from "../../../container";
@@ -13,9 +12,9 @@ const BusinessOwnerResponsibilities = styled.section`
   padding-top: 75px;
   padding-bottom: 64px;
   width: 100%;
+  max-width: 770px;
   
   @media (min-width: 770px) {
-    width: 770px;
     margin: 0 auto;
   }
 
@@ -38,15 +37,14 @@ const Oval = styled.div`
   position: absolute;
   right: 0;
   bottom: 20%;
-  width: 720px;
+  width: 100%;
   
   svg {
     transform: scaleX(-1);
   }
-  display: none;
     
-    @media (min-width: 420px) {
-        display: block;
+    @media (min-width: 720px) {
+        width: 720px;
     }
 `
 
@@ -122,7 +120,7 @@ const BusinessPlan = () => (
                 </CountingTextBoxed>
 
                 <Paragraph big style={{marginTop: "50px"}} mixed={true}>
-                    We’ve got the perfect <span style={{color: color.blue1, fontWeight: "bold"}}>guide to writing your business plan.</span>
+                    We’ve got the perfect <Link to="/">guide to writing your business plan.</Link>
                 </Paragraph>
             </BusinessOwnerResponsibilities>
         </Container>

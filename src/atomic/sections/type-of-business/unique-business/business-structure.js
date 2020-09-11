@@ -16,6 +16,7 @@ import Button from "../../../molecules/buttons/button";
 import Container from "../../../container";
 import OvalGreen3 from "../../../../images/ovals/bottom-left-transparent-blue3.inline.svg";
 import {shadow} from "../../../atoms/styles/shadows";
+import {Link} from "gatsby";
 
 const BusinessOwnerResponsibilities = styled.section`
   position: relative;
@@ -37,13 +38,18 @@ const Oval = styled.div`
   position: absolute;
   left: 0;
   top: 100px;
-  width: 720px;
-  display: none;
+  width: 100%;
     
-  @media (min-width: 420px) {
-    display: block;
+  @media (min-width: 720px) {
+    width: 720px;
   }
 `
+
+const FlexLink = styled(Link)`
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+`;
 
 const BusinessStructure = () => (
     <OrangeContainer>
@@ -78,12 +84,14 @@ const BusinessStructure = () => (
                         width={100}
                         widthUnit="%"
                     >
-                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                    mixed={true}>
-                            <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                <ArrowSVG/>
-                            </IconCircle>
-                            Sole Proprietorship
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                Sole Proprietorship
+                            </FlexLink>
                         </Paragraph>
 
                         <Paragraph big>
@@ -107,12 +115,14 @@ const BusinessStructure = () => (
                         width={100}
                         widthUnit="%"
                     >
-                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                    mixed={true}>
-                            <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                <ArrowSVG/>
-                            </IconCircle>
-                            Partnership
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                Partnership
+                            </FlexLink>
                         </Paragraph>
 
                         <Paragraph big>
@@ -136,12 +146,14 @@ const BusinessStructure = () => (
                         width={100}
                         widthUnit="%"
                     >
-                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                    mixed={true}>
-                            <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                <ArrowSVG/>
-                            </IconCircle>
-                            Limited Liability Company or LLC
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                Limited Liability Company or LLC
+                            </FlexLink>
                         </Paragraph>
 
                         <Paragraph big>
@@ -165,12 +177,14 @@ const BusinessStructure = () => (
                         width={100}
                         widthUnit="%"
                     >
-                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                    mixed={true}>
-                            <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                <ArrowSVG/>
-                            </IconCircle>
-                            S Corporation
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                S Corporation
+                            </FlexLink>
                         </Paragraph>
 
                         <Paragraph big>
@@ -195,10 +209,12 @@ const BusinessStructure = () => (
                     >
                         <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
                                    mixed={true}>
-                            <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                <ArrowSVG/>
-                            </IconCircle>
-                            C Corporation
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                C Corporation
+                            </FlexLink>
                         </Paragraph>
 
                         <Paragraph big>
@@ -209,8 +225,9 @@ const BusinessStructure = () => (
 
                     <Paragraph big style={{paddingTop: "120px"}} mixed={true}>
                         For more information on the advantages and disadvantages of different types of businesses,
-                        please see our in-depth guide. If you’ve still got questions, we’ve answered them to help you
-                        choose the right business structure.
+                        please <Link to="/">see our in-depth guide</Link>. If you’ve still got questions, <Link to="/">we’ve
+                        answered them to help you
+                        choose the right business structure</Link>.
                     </Paragraph>
                     <Paragraph big mixed={true}>
                         In most cases our recommendation would be to create an LLC - they are quick to create, easy to
@@ -218,14 +235,12 @@ const BusinessStructure = () => (
                         help you get taken more seriously by photography clients.
                     </Paragraph>
                     <Paragraph big mixed={true}>
-                        We’ve got a complete guide to everything you need to do, and we can even start setting up an LLC
-                        for your photography business today. LLC formation does vary from state to state, but we’ve got
+                        We’ve got a <Link to="/">complete guide to everything you need to do</Link>, and we can even start setting up an LLC
+                        for your photography business today. <Link to="/">LLC formation does vary from state to state</Link>, but we’ve got
                         you covered, wherever you are.
                     </Paragraph>
 
-                    <Button theme="primary48" width="365px" arrow>
-                        Start your business with us, today!
-                    </Button>
+                    <Button theme="primary48" width="365px" arrow content={{url: "/", text: "Start your business with us, today!"}} />
                 </ImageContent>
             </BusinessOwnerResponsibilities>
         </Container>
