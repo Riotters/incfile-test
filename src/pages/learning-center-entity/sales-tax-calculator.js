@@ -6,9 +6,11 @@ import CartBlock from "../../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../../atomic/molecules/blocks/rating-block";
 //Sections
 import Top from "../../atomic/partials/top";
+import About from "../../atomic/sections/learning-center-entity/sales-tax-calculator/about";
 import Calculator from "../../atomic/sections/learning-center-entity/sales-tax-calculator/calculator";
+import TaxRates from "../../atomic/sections/learning-center-entity/sales-tax-calculator/tax-rates";
 //Texts
-import { top, calculator } from "../../static/learning-center-entity/sales-tax-calculator";
+import { top, about, calculator, taxRates } from "../../static/learning-center-entity/sales-tax-calculator";
 
 const SalesTaxCalculator = () => (
   <Layout>
@@ -21,7 +23,9 @@ const SalesTaxCalculator = () => (
         <RatingBlock />
       </RatingRow>
     </Top>
+    <About content={about} />
     <Calculator content={calculator} />
+    <TaxRates content={taxRates} />
   </Layout>
 );
 

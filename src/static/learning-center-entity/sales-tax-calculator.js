@@ -17,10 +17,29 @@ export const calculator = {
     url: `/`,
   },
 };
-export const additionaltax = {
+
+export const taxRates = {
   header:
   `Additional tax rates for a few of the top cities in California`,
   text:
   `Note: You may also need to add municipality and/or city rates depending on your location.`,
+  circles: [
+    { 
+      text: `CA State`, 
+      tax: `6.00%`,
+    },
+    { 
+      text: `Los Angeles County`, 
+      tax: `0.25%`,
+    },
+    { 
+      text: `Los Angeles`, 
+      tax: `0.00%`,
+    },
+    { 
+      text: `District(s)`, 
+      tax: `3.25%`,
+    },
+  ]
 };
 
