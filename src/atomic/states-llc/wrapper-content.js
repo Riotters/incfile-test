@@ -31,13 +31,14 @@ const Oval = styled.div`
     transform: scale(-1,1);
 `
 
-const WrapperContent = ({content}) => (
+const WrapperContent = ({children}) => (
   <Wrapper>
     <Oval>
       <OvalSVG />
     </Oval>
     <Container>
-      <TabContent content={content} />
+      {/* <TabContent content={content} /> */}
+      {children}
     </Container>
   </Wrapper>
 )

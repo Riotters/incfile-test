@@ -11,7 +11,7 @@ const StyledParagraph = styled.p`
     max-width: ${(props) => (props.maxWidth ? `${props.maxWidth}px` : "")};
     padding-bottom: ${(props) => (props.bottomPadding ? `${props.bottomPadding}px` : "")};
     margin-bottom: ${(props) => props.bottomMargin}px;
-    margin-top: ${(props) => (props.topMargin ? `${props.topMargin}px` : "auto")};
+    margin-top: ${(props) => (props.topMargin ? `${props.topMargin}px` : "")};
     
     ${(props) => props.flex && "display: flex;"}
         

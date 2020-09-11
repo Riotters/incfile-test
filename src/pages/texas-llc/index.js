@@ -1,34 +1,53 @@
-import React from 'react';
-import Layout from '../../components/layout';
-import SEO from '../../components/seo';
+import React from 'react'
+import Layout from '../../components/layout'
+import SEO from '../../components/seo'
+import styled from 'styled-components'
 
 // Components
-import LinearBgHeader from '../../atomic/states-llc/linear-bg-header';
-import HomeHeader from '../../atomic/states-llc/home-header';
-import { color } from '../../components/styles/colors';
-import WrapperContent from '../../atomic/states-llc/wrapper-content';
-import Rocket from "../../atomic/sections/review-entity-type/c-corporation/rocket";
+import { color } from '../../components/styles/colors'
+import LinearBgHeader from '../../atomic/states-llc/linear-bg-header'
+import HomeHeader from '../../atomic/states-llc/home-header'
+import WrapperContent from '../../atomic/states-llc/wrapper-content'
+import LeftTabPages from '../../atomic/states-llc/left-tab-pages'
+import MainPageContent from '../../atomic/states-llc/page-content'
+import Rocket from "../../atomic/sections/review-entity-type/c-corporation/rocket"
 
 // Content
-import { HomePageContent } from "../../static/states-llc/texas/home";
-import { tabPages, rocket } from "../../static/states-llc/texas/general";
+import { HomePageContent } from "../../static/states-llc/texas/home"
+import { tabPages, rocket } from "../../static/states-llc/texas/general"
 
-const TexasLLCIndex = () => (
-  <Layout>
-    <SEO
-      title="LLCs in Texas | Guide to Forming an LLC in Texas"
-      description="Ready to form your Texas LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more."
-    />
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
 
-    <LinearBgHeader>
-      <HomeHeader content={HomePageContent.header}/>
-    </LinearBgHeader>
+  @media (min-width: 769px) {
+    flex-direction: ${props => (props.layout !== "grid" ? "row" : "column")};
+  }
+`
 
-    <WrapperContent content={{ tabs: tabPages.pages, content: HomePageContent.content }} />
+function TexasLLCIndex() {
+  return (
+    <Layout>
+      <SEO
+        title="LLCs in Texas | Guide to Forming an LLC in Texas"
+        description="Ready to form your Texas LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more."
+      />
+
+      <LinearBgHeader>
+        <HomeHeader content={HomePageContent.header} />
+      </LinearBgHeader>
+
+      <WrapperContent>
+        <Wrapper>
+          <LeftTabPages content={tabPages} />
+          <MainPageContent content={HomePageContent.content}/>
+        </Wrapper>
+      </WrapperContent>
     
-    <Rocket content={rocket} />
+      <Rocket content={rocket} />
 
-  </Layout>
-);
+    </Layout>
+  )
+}
 
 export default TexasLLCIndex;
