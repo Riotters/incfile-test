@@ -6,9 +6,12 @@ import SEO from '../../components/seo';
 import LinearBgHeader from '../../atomic/states-llc/linear-bg-header';
 import HomeHeader from '../../atomic/states-llc/home-header';
 import { color } from '../../components/styles/colors';
+import WrapperContent from '../../atomic/states-llc/wrapper-content';
+import Rocket from "../../atomic/sections/review-entity-type/c-corporation/rocket";
 
 // Content
-import { texasPage } from "../../static/states-llc/texas";
+import { HomePageContent } from "../../static/states-llc/texas/home";
+import { tabPages, rocket } from "../../static/states-llc/texas/general";
 
 const TexasLLCIndex = () => (
   <Layout>
@@ -18,8 +21,12 @@ const TexasLLCIndex = () => (
     />
 
     <LinearBgHeader>
-      <HomeHeader content={texasPage.home}/>
+      <HomeHeader content={HomePageContent.header}/>
     </LinearBgHeader>
+
+    <WrapperContent content={{ tabs: tabPages.pages, content: HomePageContent.content }} />
+    
+    <Rocket content={rocket} />
 
   </Layout>
 );

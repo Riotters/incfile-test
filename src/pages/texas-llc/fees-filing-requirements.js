@@ -10,25 +10,28 @@ import WrapperContent from '../../atomic/states-llc/wrapper-content';
 import Rocket from "../../atomic/sections/review-entity-type/c-corporation/rocket";
 
 // Content
-import { businessTaxesPageContent } from "../../static/states-llc/texas/business-taxes";
+import { filingFeeAndRequirementContent } from "../../static/states-llc/texas/filingFeeAndRequirement";
 import { tabPages, rocket } from "../../static/states-llc/texas/general";
 
-const TexasBusinessTaxes = () => (
+const filingFeeAndRequirementPage = () => (
   <Layout>
     <SEO
-      title="Texas Business & Sales Taxes | Incfile.com"
-      description="Do you have an Texas LLC? Learn about the required federal, state, and sales taxes you might need to pay. Read more."
+      title="Filing Requirements & Fees for Texas LLCs | Incfile.com"
+      description="Make sense of the required forms, fees, and filing procedures for your Texas LLC with Incfile's easy-to-use guide. Read more."
     />
 
+    {/*Header Section*/}
     <LinearBgHeader>
-      <ContentHeader content={businessTaxesPageContent.header}/>
+      <ContentHeader content={filingFeeAndRequirementContent.header}/>
     </LinearBgHeader>
 
+    {/** Content section*/}
     <WrapperContent content={{ tabs: tabPages.pages, content: "" }} />
     
+    {/**Rocket section */}
     <Rocket content={rocket} />
 
   </Layout>
 );
 
-export default TexasBusinessTaxes;
+export default filingFeeAndRequirementPage;

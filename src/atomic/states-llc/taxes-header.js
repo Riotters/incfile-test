@@ -18,6 +18,7 @@ const Content = styled.div`
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  text-align:center;
   padding: 100px 0 76px 0;
   max-width: 670px;
   margin: 0 auto;
@@ -64,10 +65,10 @@ const AbsoluteCurve = styled.div`
 const TaxesHeader = ({content}) => (
   <Container>
       <Content>
-        <Heading size={1} bottomMargin="24">{content.header.title}</Heading>
-        <Paragraph big flex mixed={true} bottomMargin="55" style={{ textAlign: `center` }}>{parse(content.header.subline)}</Paragraph>
+        <Heading size={1} bottomMargin="24">{content.title}</Heading>
+        <Paragraph big flex mixed={true} bottomMargin="55" style={{ textAlign: `center` }}>{parse(content.subline)}</Paragraph>
         <WrappBox>
-          {content.header.boxes.map((box) => (
+          {content.boxes.map((box) => (
             <Colorbox color={color.white} className="box">
               <AbsoluteCurve>
                 <ShapeCurve color={color.blue1}/>

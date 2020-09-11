@@ -66,9 +66,9 @@ const HomeHeader = ({content}) => (
         <CurveSVG />
       </Curve>
       <Content>
-        <Heading size={1} bottomMargin="80">{content.header.title}</Heading>
+        <Heading size={1} bottomMargin="80">{content.title}</Heading>
           <WrappBox>
-            {content.header.boxes.map((box) => (
+            {content.boxes.map((box) => (
               <Colorbox color={color.white} className="box">
                 <Heading size={4}>{parse(box.title)}</Heading>
                 <Paragraph>{box.desc}</Paragraph>
