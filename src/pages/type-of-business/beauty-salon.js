@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
 import Top from "../../atomic/partials/top";
-import Button from "../../components/button";
+import Button from "../../atomic/molecules/buttons/button";
 import RatingRow from "../../atomic/atoms/boxes/rating-row";
 import CartBlock from "../../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../../atomic/molecules/blocks/rating-block";
@@ -26,9 +26,8 @@ import LookIcon from "../../images/icons/look-at-who-your-competitors-are-in-the
 import ValidateIcon from "../../images/icons/look-for-market-research.inline.svg"
 import TalkIcon from "../../images/icons/talk-to-clients.inline.svg"
 import InvolvedIcon from "../../images/icons/get-involved-with-business-communities.inline.svg"
-import {color} from "../../components/styles/colors";
 import CountingTextBoxed from "../../atomic/molecules/text-blocks/counting-text-boxed";
-import OvalOrange2Svg from "../../images/oval-orange-2.inline.svg";
+import OvalOrange2Svg from "../../images/ovals/top-left-transparent-orange2.inline.svg";
 import ImageContent from "../../components/partials/blocks/left-image-right-content";
 import HandsIcon from "../../images/icons/hands.inline.svg";
 import IconCircle from "../../components/icons/circle";
@@ -52,9 +51,11 @@ import TabOvalSvg from "../../images/ovals/bottom-left-transparent-pink.inline.s
 import TabOvalSvg2 from "../../images/ovals/bottom-right-transparent-babyblue2.inline.svg";
 import OvalSvg2 from "../../images/ovals/top-right-transparent-blue.inline.svg";
 import OvalSvg3 from "../../images/ovals/top-left-transparent-green3.inline.svg";
-import OvalSvg4 from "../../images/ovals/top-left-transparent-pink.inline.svg";
 import OvalSvg5 from "../../images/ovals/top-left-transparent-green3.inline.svg";
+import OvalSvg4 from "../../images/ovals/top-left-transparent-pink.inline.svg";
 import {shadow} from "../../atomic/atoms/styles/shadows";
+import {color} from "../../atomic/atoms/styles/colors";
+import {Link} from "gatsby";
 
 const BeautySalon = () => (
     <Layout>
@@ -209,7 +210,7 @@ const BeautySalon = () => (
                             Understanding the World of the Beauty Salon Business
                         </Heading>
 
-                        <Paragraph big style={{fontWeight: "bold", marginTop: "48px"}}>
+                        <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black, marginTop: "48px"}}>
                             Key Beauty Salon Business and Background Data and Statistics
                         </Paragraph>
 
@@ -225,36 +226,29 @@ const BeautySalon = () => (
                         <BlueBoxWithAbsoluteText absoluteText="2.8%"
                                                  text="Revenue increase by year, while job growth is expected to increase by 0.6 percent a year"/>
 
-                        <ColorFulCircleWithTextAndList list={RingText.list} title={RingText.title} CircleSVG={RingSvg}
+                        <ColorFulCircleWithTextAndList style={{marginBottom: "48px"}} list={RingText.list}
+                                                       title={RingText.title} CircleSVG={RingSvg}
                                                        withBg={true}/>
 
-                        <div style={{marginBottom: "30px", marginTop: "48px"}}>
-                            <Adventages
-                                headline="The biggest expenses for beauty salons are employee compensation, real estate and rental, manufacturing and professional and business services."
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="The biggest expenses for beauty salons are employee compensation, real estate and rental, manufacturing and professional and business services."
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="There are nearly 270,000 beauty salons, hairdressers and barber shops in the U.S."
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="There are nearly 270,000 beauty salons, hairdressers and barber shops in the U.S."
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Wages paid to workers are typically low, with many earning around $22,000-$25,000 a year."
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Wages paid to workers are typically low, with many earning around $22,000-$25,000 a year."
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "48px"}}>
-                            <Adventages
-                                headline="The industry is very fragmented, with the largest 50 salon chains only contributing 15 percent to overall revenue"
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="The industry is very fragmented, with the largest 50 salon chains only contributing 15 percent to overall revenue"
+                            width="100%"
+                        />
 
                         <Paragraph big>
                             This all points to the beauty salon industry being ripe with new opportunities for focused
@@ -264,7 +258,7 @@ const BeautySalon = () => (
                             outs of owning a beauty salon company.
                         </Paragraph>
 
-                        <Paragraph big style={{fontWeight: "bold"}}>
+                        <Paragraph big style={{fontWeight: "Avenir-Heavy", color: color.black}}>
                             What Your Beauty Salon Customers Are Looking for
                         </Paragraph>
 
@@ -310,63 +304,49 @@ const BeautySalon = () => (
                             owner. These skills should include:
                         </Paragraph>
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Hiring"
-                                text="Finding, interviewing and hiring great beauty salon employees who can provide awesome beauty treatments and hairstyling services"
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Hiring"
+                            text="Finding, interviewing and hiring great beauty salon employees who can provide awesome beauty treatments and hairstyling services"
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="People management"
-                                text="Dealing with staff schedules, coverage, internal issues and other people management areas"
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="People management"
+                            text="Dealing with staff schedules, coverage, internal issues and other people management areas"
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Marketing"
-                                text="Promoting your beauty salon business against a competitive field; local marketing expertise is essential"
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Marketing"
+                            text="Promoting your beauty salon business against a competitive field; local marketing expertise is essential"
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Treatment design and pricing"
-                                text="Working with employees to create luxurious treatments with good profit margins"
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Treatment design and pricing"
+                            text="Working with employees to create luxurious treatments with good profit margins"
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Salon creation"
-                                text="Setting up the salon in the first place, which includes finding equipment, furniture, fixtures and fittings"
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Salon creation"
+                            text="Setting up the salon in the first place, which includes finding equipment, furniture, fixtures and fittings"
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Operational management"
-                                text="Ensuring customers are served well and beauty treatments are provided to the standards you expect"
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Operational management"
+                            text="Ensuring customers are served well and beauty treatments are provided to the standards you expect"
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Business administration"
-                                text="Sorting out profits, payroll, financial management, accounting and all the other areas that go into running any successful business"
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Business administration"
+                            text="Sorting out profits, payroll, financial management, accounting and all the other areas that go into running any successful business"
+                            width="100%"
+                        />
 
-                        <Paragraph big style={{fontWeight: "bold"}}>
+                        <Paragraph big style={{fontWeight: "Avenir-Heavy", color: color.black}}>
                             What Are the Main Challenges for a Beauty Salon Entrepreneur?
                         </Paragraph>
 
@@ -564,7 +544,7 @@ const BeautySalon = () => (
                     </CountingTextBoxed>
 
                     <Paragraph big mixed={true} style={{marginTop: "50px"}}>
-                        We’ve got the perfect <span style={{color: color.blue1, fontWeight: "bold"}}>guide to writing your business plan.</span>
+                        We’ve got the perfect <Link to="/">guide to writing your business plan.</Link>
                     </Paragraph>
                 </CenterBox>
             </Container>
@@ -602,12 +582,14 @@ const BeautySalon = () => (
                             width={100}
                             widthUnit="%"
                         >
-                            <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                        mixed={true}>
-                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                    <ArrowSVG/>
-                                </IconCircle>
-                                Sole Proprietorship
+                                <FlexLink to="/">
+                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                        <ArrowSVG/>
+                                    </IconCircle>
+                                    Sole Proprietorship
+                                </FlexLink>
                             </Paragraph>
 
                             <Paragraph big>
@@ -631,12 +613,14 @@ const BeautySalon = () => (
                             width={100}
                             widthUnit="%"
                         >
-                            <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                        mixed={true}>
-                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                    <ArrowSVG/>
-                                </IconCircle>
-                                Limited Liability Company or LLC
+                                <FlexLink to="/">
+                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                        <ArrowSVG/>
+                                    </IconCircle>
+                                    Limited Liability Company or LLC
+                                </FlexLink>
                             </Paragraph>
 
                             <Paragraph big>
@@ -660,12 +644,14 @@ const BeautySalon = () => (
                             width={100}
                             widthUnit="%"
                         >
-                            <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                        mixed={true}>
-                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                    <ArrowSVG/>
-                                </IconCircle>
-                                Series LLC
+                                <FlexLink to="/">
+                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                        <ArrowSVG/>
+                                    </IconCircle>
+                                    Series LLC
+                                </FlexLink>
                             </Paragraph>
 
                             <Paragraph big>
@@ -689,12 +675,14 @@ const BeautySalon = () => (
                             width={100}
                             widthUnit="%"
                         >
-                            <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                        mixed={true}>
-                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                    <ArrowSVG/>
-                                </IconCircle>
-                                S Corporation
+                                <FlexLink to="/">
+                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                        <ArrowSVG/>
+                                    </IconCircle>
+                                    S Corporation
+                                </FlexLink>
                             </Paragraph>
 
                             <Paragraph big>
@@ -717,12 +705,14 @@ const BeautySalon = () => (
                             width={100}
                             widthUnit="%"
                         >
-                            <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                        mixed={true}>
-                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                    <ArrowSVG/>
-                                </IconCircle>
-                                C Corporation
+                                <FlexLink to="/">
+                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                        <ArrowSVG/>
+                                    </IconCircle>
+                                    C Corporation
+                                </FlexLink>
                             </Paragraph>
 
                             <Paragraph big>
@@ -733,18 +723,19 @@ const BeautySalon = () => (
 
                         <Paragraph big style={{paddingTop: "120px"}} mixed={true}>
                             If you've still got questions about different types of business entities, check out our
-                            <span className="blue big">in-depth guide</span>, or hear our answers to the <span
-                            className="blue big">most common questions</span> about LLCs vs.
+                            <Link to="/">in-depth guide</Link>, or hear our answers to the <Link
+                            to="/">most common questions</Link> about LLCs vs.
                             corporations.
                         </Paragraph>
                         <Paragraph big mixed={true}>
-                            If you're ready to start your Etsy LLC, you can check out our <span className="blue big">LLC formation guide for your
-                            state</span>, or have Incfile take care of all the paperwork for you.
+                            If you're ready to start your Etsy LLC, you can check out our <Link to="/">LLC formation
+                            guide for your
+                            state</Link>, or have Incfile take care of all the paperwork for you.
                         </Paragraph>
 
-                        <Button theme="primary48" width="365px" arrow>
-                            Start your business with us, today!
-                        </Button>
+                        <Button theme="primary48" width="365px" arrow
+                                content={{url: "/", text: "Start your business with us, today!"}}/>
+
                     </ImageContent>
                 </BusinessOwnerResponsibilities>
             </Container>
@@ -758,7 +749,7 @@ const BeautySalon = () => (
 
         <ToolsWrapper>
             <Oval5>
-                <OvalSvg5 />
+                <OvalSvg5/>
             </Oval5>
             <UsefulTools style={{paddingBottom: "200px"}} toolsList={toolsList.tools}
                          headlineText={toolsList.headlineText}
@@ -807,14 +798,14 @@ const BlueContainer = styled.section`
     background: linear-gradient(0deg, rgba(242,246,255,1) 0%, rgba(250,251,255,1) 100%);
     padding-top: 100px;
     position: relative;
+    padding-bottom: 80px;
 `;
 
 const CenterBox = styled.div`
     width: 100%;
-    padding-bottom: 100px;
+    max-width: 670px;
     
     @media (min-width: 670px) {
-        width: 670px;
         margin: 0 auto;
     }
 `;
@@ -825,13 +816,13 @@ const GridSectionList = styled.div`
     flex-wrap: wrap;
     width: 100%;
     margin-top: 100px;
+    max-width: 970px;
     
     > div {
         margin-bottom: 70px;
     }
     
     @media (min-width: 970px) {
-        width: 970px;
         margin: 100px auto 0;
     }
 `;
@@ -843,8 +834,7 @@ const SimpleSection = styled.div`
 
 const BusinessOwnerResponsibilities = styled.section`
   position: relative;
-  padding-top: 75px;
-  padding-bottom: 64px;
+  padding-top: 100px;
 
   .colorbox {
     margin-bottom: 48px;
@@ -862,26 +852,26 @@ const Oval = styled.div`
   position: absolute; 
   left: 0;
   top: 200px;
-   display: none;
+  width: 100%;
   
-  @media (min-width: 720px){
-    display: block;
+  @media (min-width: 570px){
+    width: 570px;
   }
 `
 
 const TabsWrapper = styled.div`
     position: relative;
+    padding-top: 100px;
 `;
 
 const TabsOval = styled.div`
   position: absolute; 
   left: 0;
   top: 0;
-  width: 420px;
-  display: none;
+  width: 100%;
   
-  @media (min-width: 720px){
-    display: block;
+  @media (min-width: 420px){
+    width: 420px;
   }
 `
 
@@ -889,11 +879,10 @@ const TabsOval2 = styled.div`
   position: absolute; 
   right: 0;
   top: 436px;
-  width: 420px;
-  display: none;
+  width: 100%;
   
-  @media (min-width: 720px){
-    display: block;
+  @media (min-width: 420px){
+    width: 420px;
   }
 `
 
@@ -901,11 +890,10 @@ const Oval2 = styled.div`
   position: absolute; 
   right: 0;
   top: 0;
-  width: 570px;
-  display: none;
+  width: 100%;
   
-  @media (min-width: 720px){
-    display: block;
+  @media (min-width: 570px){
+    width: 570px;
   }
 `
 
@@ -913,11 +901,10 @@ const Oval3 = styled.div`
   position: absolute; 
   left: 0;
   top: 0;
-  width: 420px;
-  display: none;
+  width: 100%;
   
-  @media (min-width: 720px){
-    display: block;
+  @media (min-width: 420px){
+    width: 420px;
   }
 `
 
@@ -925,12 +912,11 @@ const Oval4 = styled.div`
   position: absolute; 
   right: 0;
   bottom: 100px;
-  width: 720px;
+  width: 100%;
   transform: scaleX(-1);
-  display: none;
   
   @media (min-width: 720px){
-    display: block;
+    width: 720px;
   }
 `
 
@@ -938,12 +924,18 @@ const Oval5 = styled.div`
   position: absolute; 
   left: 0;
   top: 0;
-  width: 720px;
+  width: 100%;
   z-index: -1;
-  display: none;
   
   @media (min-width: 720px){
-    display: block;
+    width: 720px;
   }
-`
+`;
+
+const FlexLink = styled(Link)`
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+`;
+
 export default BeautySalon;

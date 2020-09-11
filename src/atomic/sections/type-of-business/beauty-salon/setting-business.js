@@ -7,6 +7,7 @@ import styled from "styled-components";
 import Curve from "../../../../images/green-curve.inline.svg";
 import GreenOval from "../../../../images/ovals/top-left-transparent-green2.inline.svg";
 import ContentCenter from "../../../partials/content-center";
+import {Link} from "gatsby";
 
 const SettingBusiness = () => (
     <GreenContainer>
@@ -43,7 +44,7 @@ const SettingBusiness = () => (
                 <TopImageBox image="measuring-business-success" color={color.babyblue3}>
                     <h4>Business maintenance</h4>
                     <p>
-                        Most states require businesses to file an Annual Report once a year. You will also be expected to pay estimated taxes on what you plan to earn in the current business year. Your federal, state, regional and city business licenses and permits may need to be renewed on a regular basis, typically once a year.
+                        Most states require businesses to file an <Link to="/">Annual Report</Link> once a year. You will also be expected to pay estimated taxes on what you plan to earn in the current business year. Your federal, state, regional and city <Link to="/">business licenses and permits</Link> may need to be renewed on a regular basis, typically once a year.
                     </p>
                 </TopImageBox>
 
@@ -61,6 +62,14 @@ const SettingBusiness = () => (
                     </p>
                 </TopImageBox>
 
+                <TopImageBox image="state-filling-fees" color={color.yellow3}>
+                    <h4>Finances and taxes</h4>
+                    <p>
+                        What kind of bank account will you get? Do you need a <Link to="/">business credit card</Link>? How will you pay your business taxes? These are important questions to consider so your beauty salon business stays in the green. Here at Incfile, we can even <Link to="/">help you file your taxes</Link>.
+                    </p>
+                </TopImageBox>
+
+
                 <TopImageBox image="side-4" color={color.green3}>
                     <h4>Equipment</h4>
                     <p>
@@ -72,7 +81,7 @@ const SettingBusiness = () => (
                 </TopImageBox>
 
                 <TopImageBox image="location" color={color.red3}>
-                    <h4>Location of your workshop</h4>
+                    <h4>Location of your business</h4>
                     <p>
                         A great location is essential. You will want to be in an area with lots of foot traffic and accessibility, preferably around other businesses who are targeting the same type of clientele as you.
                     </p>
@@ -88,6 +97,7 @@ const GreenContainer = styled.div`
     padding-bottom: 100px;
     padding-top: 100px;
     position: relative;
+    overflow: hidden;
 `;
 
 
@@ -97,13 +107,13 @@ const ImageBoxes = styled.div`
   grid-gap: 30px;
   padding-top: 112px;
   width: 100%;
-
+  max-width: 970px;
+  
   @media(min-width: 769px) {
     grid-template-columns: 1fr 1fr;
   }
   
   @media (min-width: 970px) {
-    width: 970px;
     margin: 0 auto;
   }
 `;
@@ -124,24 +134,11 @@ const Oval = styled.div`
     position: absolute;
     left: 0;
     top: 0;
-    width: 720px;
-    display: none;
+    width: 100%;
   
       @media (min-width: 720px){
-        display: block;
+        width: 720px;
       }
 `;
 
-const Oval2 = styled.div`
-    position: absolute;
-    right: 0;
-    top: 220px;
-    width: 720px;
-    transform: scaleX(-1);
-    display: none;
-  
-      @media (min-width: 720px){
-        display: block;
-      }
-`;
 export default SettingBusiness;
