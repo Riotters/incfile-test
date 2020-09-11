@@ -446,7 +446,7 @@ const PanelWrapper = styled.article`
     margin-bottom: 48px;
   }
   
-  @media (min-width: 992px){
+  @media (min-width: 768px){
     padding-left: 30px;
   }
 `

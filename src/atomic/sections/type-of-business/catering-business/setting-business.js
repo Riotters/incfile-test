@@ -6,6 +6,7 @@ import {color} from "../../../../components/styles/colors";
 import styled from "styled-components";
 import GreenOval from "../../../../images/ovals/top-right-transparent-green2.inline.svg";
 import ContentCenter from "../../../partials/content-center";
+import {Link} from "gatsby";
 
 const SettingBusiness = () => (
     <GreenContainer>
@@ -14,16 +15,17 @@ const SettingBusiness = () => (
             <GreenOval/>
         </Oval>
 
-        <Container>
-            <ContentCenter>
-                <TextCenterLayout
-                    headline="Set up & Maintain Your Catering Business"
-                    headlineWidth="700"
-                    textWidth="700"
-                    text="Once you've legally created your catering business, you’ll need to get some other things in place."
-                />
-            </ContentCenter>
+        <ContentCenter contentWidth={770}>
+            <TextCenterLayout
+                headline="Set up & Maintain Your Catering Business"
+                headlineWidth={770}
+                textWidth={770}
+                text="Once you've legally created your catering business, you’ll need to get some other things in place."
+            />
+        </ContentCenter>
 
+
+        <Container>
             <ImageBoxes>
                 <TopImageBox image="location" color={color.red3}>
                     <h4>Business location</h4>
@@ -42,14 +44,14 @@ const SettingBusiness = () => (
                 <TopImageBox image="state-filling-fees" color={color.yellow3}>
                     <h4>Finances and Taxes</h4>
                     <p>
-                        What kind of bank account will you get? And how will you pay your business taxes? These are all important things to consider so your catering business stays in the green. Here at Incfile, we can even help you file your taxes.
+                        What kind of bank account will you get? And how will you pay your business taxes? These are all important things to consider so your catering business stays in the green. Here at Incfile, we can even <Link to="/">help you file your taxes</Link>.
                     </p>
                 </TopImageBox>
 
                 <TopImageBox image="permits-licences" color={color.babyblue3}>
                     <h4>Permits and licenses</h4>
                     <p>
-                        Running a catering business comes with certain rules, regulations and legalities you need to be aware of, especially around staff health and safety and food hygiene and preparation. Incfile can conduct a Business License Research package for you, or you can take the time to do the research yourself.
+                        Running a catering business comes with certain rules, regulations and legalities you need to be aware of, especially around staff health and safety and food hygiene and preparation. Incfile can conduct a <Link to="/">Business License Research</Link> package for you, or you can take the time to do the research yourself.
                     </p>
                 </TopImageBox>
 
@@ -77,7 +79,7 @@ const SettingBusiness = () => (
                 <TopImageBox image="measuring-business-success" color={color.babyblue3}>
                     <h4>Business maintenance</h4>
                     <p>
-                        Most states require businesses to file an Annual Report report once a year. You will also be expected to pay estimated taxes on what you plan to earn in the current business year. Four federal, state, regional and city business licenses and permits may need to be renewed on a regular basis, typically once a year.
+                        Most states require businesses to file an <Link to="/">Annual Report</Link> report once a year. You will also be expected to pay estimated taxes on what you plan to earn in the current business year. Four federal, state, regional and city <Link to="/">business licenses and permits</Link> may need to be renewed on a regular basis, typically once a year.
                     </p>
                 </TopImageBox>
             </ImageBoxes>
@@ -100,13 +102,13 @@ const ImageBoxes = styled.div`
   grid-gap: 30px;
   padding-top: 112px;
   width: 100%;
-
+  max-width: 970px;
+  
   @media(min-width: 769px) {
     grid-template-columns: 1fr 1fr;
   }
   
   @media (min-width: 970px) {
-    width: 970px;
     margin: 0 auto;
   }
 `;
@@ -122,11 +124,11 @@ const Oval = styled.div`
     position: absolute;
     right: 0;
     top: 220px;
-    width: 720px;
+    width: 100%;
     display: none;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 720px){
+        width: 720px;
     }
 `;
 

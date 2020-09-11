@@ -420,6 +420,10 @@ const PanelWrapper = styled.article`
   h3 {
     margin-bottom: 48px;
   }
+  
+  @media (min-width: 768px){
+    padding-left: 30px;
+  }
 `
 
 const ButtonBox = styled.button`
