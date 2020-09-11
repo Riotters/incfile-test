@@ -37,6 +37,7 @@ import ToolsAndLinks from "../../atomic/sections/type-of-business/event-planning
 import Conclusion from "../../atomic/sections/general/conclusion";
 import OvalSvg from "../../images/ovals/bottom-left-transparent-pink.inline.svg";
 import FireworksIcon from "../../images/icons/you-will-also-need-to-look-at-financial-projections-for-your-party-or-event-planning-business.inline.svg";
+import {Link} from "gatsby";
 
 const EventPlanning = () => (
     <Layout>
@@ -476,7 +477,6 @@ position: absolute;
     @media (min-width: 420px){
         width: 420px; 
     }
-   
 `;
 
 export default EventPlanning;

@@ -7,7 +7,7 @@ import {shadow} from "../../../atoms/styles/shadows";
 import {color} from "../../../atoms/styles/colors";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 
-const EtsyLinks = () => (
+const Links = () => (
     <Wrapper>
         <Container>
             <TextCenterLayout headline="Social Media and Discussion Groups for Your Laundromat Business"
@@ -16,7 +16,7 @@ const EtsyLinks = () => (
             <LinksContainer>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.facebook.com/groups/laundromatowners/?ref=br_rs" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Laundromat Owners (Facebook)
                     </PathLink>
                     <Paragraph style={{marginTop: "20px"}} bottomMargin={0}>
@@ -25,7 +25,7 @@ const EtsyLinks = () => (
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://community.coinlaundry.org/home" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Coin Laundry Association Open Forum
                     </PathLink>
                     <Paragraph style={{marginTop: "20px"}} bottomMargin={0}>
@@ -34,7 +34,7 @@ const EtsyLinks = () => (
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="http://www.thelaundryforum.com/forums/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         The Laundry Forum
                     </PathLink>
                     <Paragraph style={{marginTop: "20px"}} bottomMargin={0}>
@@ -43,7 +43,7 @@ const EtsyLinks = () => (
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="http://www.coinwash.com/mb/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Coinwash.com Forum
                     </PathLink>
                     <Paragraph style={{marginTop: "20px"}} bottomMargin={0}>
@@ -90,4 +90,4 @@ const LinkItem = styled.div`
     }
 `;
 
-export default EtsyLinks;
+export default Links;

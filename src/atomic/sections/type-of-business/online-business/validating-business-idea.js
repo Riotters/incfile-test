@@ -24,15 +24,14 @@ const ContainerWrapper = styled.div`
 
 const GridSection = styled.div`
     width: 100%;
-    margin-top: 110px;
 `;
 
 const TitleBox = styled.div`
     width: 100%;
     position: relative;
-     
+    max-width: 750px;
+    
     @media (min-width:750px) {
-        width: 750px;
         margin: 0 auto;
     }
     
@@ -49,13 +48,13 @@ const GridSectionList = styled.div`
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
+    max-width: 970px;
     
     > div {
         margin-bottom: 70px;
     }
     
     @media (min-width: 970px) {
-        width: 970px;
         margin: 120px auto 0;
     }
 `;
@@ -64,11 +63,10 @@ const OvalCenter = styled.div`
   position: absolute;
   left: 0;
   top: 282px;
-  width: 570px;
-  display: none;
+  width: 100%;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 570px){
+        width: 570px;
     }
 `
 
@@ -77,11 +75,10 @@ const OvalCenter2 = styled.div`
   right: 0;
   bottom: 286px;
   transform: rotate(180deg);
-  width: 570px;
-  display: none;
+  width: 100%;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 570px){
+        width: 570px;
     }
 `
 
@@ -120,7 +117,7 @@ const ValidatingBusinessIdea = () => (
                         understand all about product marketing, profit margins, working with suppliers and getting
                         customers?
                     </Paragraph>
-                    <Paragraph big style={{fontWeight: "bold"}}>
+                    <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
                         Don’t assume that just because it’s online, it’s easy.
                     </Paragraph>
                     <Paragraph big>

@@ -120,11 +120,10 @@ const Oval = styled.div`
     position: absolute;
     right: 0;
     top: 319px;
-    width: 720px;
-    display: none;
+    width: 100%;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 720px){
+        width: 720px;
     }
 `;
 
@@ -133,11 +132,10 @@ const Oval2 = styled.div`
     position: absolute;
     left: 0;
     top: calc(50% - 210px);
-    width: 420px;
-    display: none;
+    width: 100%;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 420px){
+        width: 420px;
     }
 `;
 
@@ -145,12 +143,11 @@ const Oval3 = styled.div`
     position: absolute;
     right: 0;
     bottom: 138px;
-    width: 720px;
+    width: 100%;
     transform: scaleX(-1);
-    display: none;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 720px){
+        width: 720px;
     }
 `;
 
