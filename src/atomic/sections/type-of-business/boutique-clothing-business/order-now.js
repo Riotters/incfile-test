@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "../../../container";
 import LeftImageRightContent from "../../../../components/partials/blocks/left-content-right-image";
-import Button from "../../../../components/button";
+import Button from "../../../molecules/buttons/button";
 import styled from "styled-components";
 import {color} from "../../../../components/styles/colors";
 import OvalLeftSvg from "../../../../images/ovals/top-left-transparent-orange2.inline.svg";
@@ -32,9 +32,8 @@ const OrderNow = () => (
                 </h2>
                 <p>A Clear and Comprehensive Guide to Starting Your Business the Right Way</p>
                 <ButtonsBox>
-                    <Button theme="primary56" marginMD="0 24px 0 0" arrow>
-                        Business Checklist
-                    </Button>
+                    <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{url: "/learning-center-entity/business-checklist/", text: "Business Checklist"}}/>
+
                 </ButtonsBox>
             </LeftImageRightContent>
         </Container>
