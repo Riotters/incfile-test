@@ -2,10 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import CircleIconText from "../../molecules/circles/circle-icon-text";
 import { color } from "../../atoms/styles/colors";
-import ServiceSVG from "../../../images/icons/agent-for-service-of-process.inline.svg";
-import StatuorySVG from "../../../images/icons/statuory-agent.inline.svg";
-import CommercialSVG from "../../../images/icons/commercial-registered-agent.inline.svg";
-import ResidentSVG from "../../../images/icons/resident-agent.inline.svg";
+import CountySVG from "../../../images/icons/los-angeles-county.inline.svg";
+import StateSVG from "../../../images/icons/ca-state.inline.svg";
+import CitySVG from "../../../images/icons/los-angeles.inline.svg";
+import DistrictsSVG from "../../../images/icons/districts.inline.svg";
 
 const Wrapper = styled.div`
     display: flex;
@@ -38,7 +38,7 @@ const Wrapper = styled.div`
     }
 `
 
-const circleIcons = [ServiceSVG, StatuorySVG, CommercialSVG, ResidentSVG];
+const circleIcons = [StateSVG, CountySVG, CitySVG, DistrictsSVG];
 const circleColors = [color.green2, color.orange2, color.blue2, color.red2];
 
 const OtherNamesCircles = ({ className, content }) => {

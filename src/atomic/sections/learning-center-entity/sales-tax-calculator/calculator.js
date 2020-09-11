@@ -55,7 +55,7 @@ const ImageBoxes = styled.div`
             border-radius: 5px;
 
             @media (min-width: 769px) {
-                border-radius: 50px 5px 5px 5px;
+                border-radius: 35px 5px 5px 5px;
             }
         }
     }
@@ -71,7 +71,7 @@ const ImageBoxes = styled.div`
             border-radius: 5px;
 
             @media (min-width: 769px) {
-                border-radius: 5px 50px 5px 5px;
+                border-radius: 5px 35px 5px 5px;
             }
         }
     }

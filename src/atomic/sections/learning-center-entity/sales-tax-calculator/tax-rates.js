@@ -5,7 +5,7 @@ import HeadingCenter from "../../../partials/heading-center";
 import ContentCenter from "../../../partials/content-center";
 import Circles from "../../../organisms/circles/tax-rates-circles";
 import Oval from "../../../atoms/icons/oval";
-import OvalSVG from "../../../../images/ovals/top-right-transparent-orange.inline.svg";
+import OvalSVG from "../../../../images/ovals/top-right-transparent-orange3.inline.svg";
 
 const TaxRates = styled.section`
   position: relative;
@@ -14,10 +14,10 @@ const TaxRates = styled.section`
 
 const TaxRatesSection = ({ className, content }) => (
   <TaxRates className={className}>
-    <Oval className="oval" height="570" width="570" top="2" right="0">
+    <Oval className="oval" height="720" width="720" top="2" right="0">
       <OvalSVG />
     </Oval>
-    <HeadingCenter className="heading" headline={content.header} headlineWidth="570" text={content.text} textWidth="620" />
+    <HeadingCenter className="heading" headline={content.header} headlineWidth="770" text={content.text} textWidth="770" />
     <ContentCenter>
       <Circles content={content.circles} />
     </ContentCenter>

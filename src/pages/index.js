@@ -71,7 +71,7 @@ const IndexPage = () => (
         <Link to="/learning-center-entity/guide-to-start">Guide To Start</Link>
         <Link to="/learning-center-entity/registered-agents">Registered Agents</Link>
         <Link to="/learning-center-entity/s-corp-tax-calculator">S Corp Tax Calculator (WIP)</Link>
-        <Link to="/learning-center-entity/sales-tax-calculator">Sales Tax Calculator (WIP)</Link>
+        <Link to="/learning-center-entity/sales-tax-calculator">Sales Tax Calculator</Link>
         <Link to="/learning-center-entity/state-filing-times">State Filing Times (no details)</Link>
         <Link to="/learning-center-entity/state-information-california">State Information California (WIP)</Link>
         <Link to="/learning-center-entity/ongoing-filing-requirements">Ongoing Filing Requirements (no details)</Link>

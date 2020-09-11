@@ -103,13 +103,13 @@ const Cta = ({cta}) => (
           <MapSVG />
         </Map>
         <VisibilitySensor partialVisibility once>
-          {({ isVisible }) => <h2 className={isVisible ? "slideUp enter" : "slideUp"}>{cta.header || "Choose the right and&nbsp;start your business"}</h2>}
+          {({ isVisible }) => <h2 className={isVisible ? "slideUp enter" : "slideUp"}>{cta ? cta.header : "Choose the right and&nbsp;start your business"}</h2>}
         </VisibilitySensor>
         <VisibilitySensor partialVisibility once>
           {({ isVisible }) => <p className={isVisible ? "slideUp enter" : "slideUp"}>$0 + State Fee & FREE Registered Agent for 1st year.</p>}
         </VisibilitySensor>
         <VisibilitySensor partialVisibility once>
-          {({ isVisible }) => <Button className={isVisible ? "slideUp enter" : "slideUp"} content={{ text: `${cta.button.text || `Start Now`}`, url: `${cta.button.url || `/`}` }} theme="primary56" arrow marginSM="0 auto" />}
+          {({ isVisible }) => <Button className={isVisible ? "slideUp enter" : "slideUp"} content={{ text: `${cta ? cta.button.text : `Start Now`}`, url: `${cta ? cta.button.url : `/`}` }} theme="primary56" arrow marginSM="0 auto" />}
         </VisibilitySensor>
       </Content>
     </Container>
