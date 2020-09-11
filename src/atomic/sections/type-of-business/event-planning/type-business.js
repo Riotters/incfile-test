@@ -78,11 +78,10 @@ const Oval = styled.div`
     position: absolute;
     right: 0;
     top: 300px;
-    width: 570px;
-    display: none;
+    width: 100%;
     
-    @media (min-width: 720px){
-        display: block; 
+    @media (min-width: 570px){
+        width: 570px; 
     }
 `;
 
@@ -90,16 +89,15 @@ const Oval2 = styled.div`
     position: absolute;
     left: 0;
     bottom: 577px;
-    width: 720px;
+    width: 100%;
     transform: scaleX(-1);
-    display: none;
     
     svg{
         transform: scaleY(-1);
     }
     
     @media (min-width: 720px){
-        display: block; 
+        width: 720px; 
     }
 `;
 export default TypeBusiness;

@@ -40,11 +40,10 @@ const Oval = styled.div`
     position: absolute; 
     top: 341px;
     left: 0;
-    width: 570px;
-    display: block;
+    width: 100%;
   
-  @media (min-width: 1200px){
-    display: block;
+  @media (min-width: 570px){
+    width: 570px;
   }
 `;
 export default Regulations;

@@ -23,14 +23,13 @@ const Wrapper = styled.div`
 `;
 
 const Oval = styled.div`
-    width: 720px;
+    width: 100%;
     position: absolute;
     right: 0;
     bottom: 549px;
-    display: none;
   
     @media (min-width: 720px){
-      display: block;
+      width: 720px;
     }
 `;
 

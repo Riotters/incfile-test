@@ -36,6 +36,8 @@ import Taxes from "../../atomic/sections/type-of-business/event-planning/taxes";
 import ToolsAndLinks from "../../atomic/sections/type-of-business/event-planning/tools";
 import Conclusion from "../../atomic/sections/general/conclusion";
 import OvalSvg from "../../images/ovals/bottom-left-transparent-pink.inline.svg";
+import FireworksIcon from "../../images/icons/you-will-also-need-to-look-at-financial-projections-for-your-party-or-event-planning-business.inline.svg";
+import {Link} from "gatsby";
 
 const EventPlanning = () => (
     <Layout>
@@ -86,7 +88,7 @@ const EventPlanning = () => (
                         abilities.
                     </Paragraph>
 
-                    <Colorbox className="box" theme="icon" Icon={MegafornIcon} color={color.purple3} curve
+                    <Colorbox className="box" theme="icon" Icon={FireworksIcon} color={color.purple3} curve
                               curveColor={color.purple1}>
                         <Heading size={4}>
                             We want to help you get your party or event planning business off the ground.
@@ -104,7 +106,7 @@ const EventPlanning = () => (
                         </Paragraph>
                     </Colorbox>
 
-                    <Paragraph big style={{marginTop: "48px", fontWeight: "bold"}}>
+                    <Paragraph big style={{marginTop: "48px", fontFamily: "Avenir-Heavy", color: color.black}}>
                         Read on for some insight into creating your own planning business and becoming an entrepreneur.
                         In this guide we will cover:
                     </Paragraph>
@@ -463,19 +465,18 @@ const ListBox = styled.div`
 
 const TabsWrapper = styled.div`
     position: relative;
+    padding-top: 100px;
 `;
 
 const TabsOval = styled.div`
 position: absolute;
-    width: 420px;
+    width: 100%;
     top: 0;
     left: 0;
-    display: none;
     
-    @media (min-width: 720px){
-        display: block; 
+    @media (min-width: 420px){
+        width: 420px; 
     }
-   
 `;
 
 export default EventPlanning;

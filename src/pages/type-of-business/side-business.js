@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
 import Top from "../../atomic/partials/top";
-import Button from "../../components/button";
+import Button from "../../atomic/molecules/buttons/button";
 import RatingRow from "../../atomic/atoms/boxes/rating-row";
 import CartBlock from "../../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../../atomic/molecules/blocks/rating-block";
@@ -20,7 +20,6 @@ import Container from "../../atomic/container";
 import TextBlockWithImage from "../../atomic/molecules/mixed-blocks/text-block-with-absolute-image";
 import {color} from "../../components/styles/colors";
 import CountingTextBoxed from "../../atomic/molecules/text-blocks/counting-text-boxed";
-import OvalBlueSvg from "../../images/ovals/top-left-transparent-blue3.inline.svg";
 import OvalGreenSvg from "../../images/ovals/top-left-transparent-blue3.inline.svg";
 import ImageContent from "../../components/partials/blocks/left-image-right-content";
 import HandsIcon from "../../images/icons/hands.inline.svg";
@@ -46,6 +45,7 @@ import HandIcon from "../../images/icons/if-you-dont-know-how-to-start-a-side-bu
 import OvalSvg from "../../images/ovals/top-right-transparent-yellow.inline.svg";
 import OvalSvg2 from "../../images/ovals/top-left-transparent-orange2.inline.svg";
 import {shadow} from "../../atomic/atoms/styles/shadows";
+import {Link} from "gatsby";
 
 const SideBusiness = () => (
     <Layout>
@@ -62,9 +62,7 @@ const SideBusiness = () => (
                 doesn’t work out.
             </p>
             <ButtonsBox>
-                <Button theme="primary56" marginMD="0 24px 0 0" arrow>
-                    Start Now
-                </Button>
+                <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{url: "/", text: "Start Now"}}/>
             </ButtonsBox>
 
             <RatingRow>
@@ -75,7 +73,7 @@ const SideBusiness = () => (
 
         <TabsWrapper>
             <TabOval>
-                <OvalSvg />
+                <OvalSvg/>
             </TabOval>
             <TabsSection>
                 <TabHeading>
@@ -295,7 +293,7 @@ const SideBusiness = () => (
                     </CountingTextBoxed>
 
                     <Paragraph big mixed={true} style={{marginTop: "50px"}}>
-                        We’ve got the perfect <span style={{color: color.blue1, fontWeight: "bold"}}>guide to writing your business plan.</span>
+                        We’ve got the perfect <Link to="/">guide to writing your business plan.</Link>
                     </Paragraph>
                 </CenterBox>
             </Container>
@@ -333,12 +331,14 @@ const SideBusiness = () => (
                             width={100}
                             widthUnit="%"
                         >
-                            <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                        mixed={true}>
-                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                    <ArrowSVG/>
-                                </IconCircle>
-                                Sole Proprietorship
+                                <FlexLink to="/">
+                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                        <ArrowSVG/>
+                                    </IconCircle>
+                                    Sole Proprietorship
+                                </FlexLink>
                             </Paragraph>
 
                             <Paragraph big>
@@ -362,12 +362,14 @@ const SideBusiness = () => (
                             width={100}
                             widthUnit="%"
                         >
-                            <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                        mixed={true}>
-                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                    <ArrowSVG/>
-                                </IconCircle>
-                                Partnership
+                                <FlexLink to="/">
+                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                        <ArrowSVG/>
+                                    </IconCircle>
+                                    Partnership
+                                </FlexLink>
                             </Paragraph>
 
                             <Paragraph big>
@@ -391,12 +393,14 @@ const SideBusiness = () => (
                             width={100}
                             widthUnit="%"
                         >
-                            <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                        mixed={true}>
-                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                    <ArrowSVG/>
-                                </IconCircle>
-                                Limited Liability Company or LLC
+                                <FlexLink to="/">
+                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                        <ArrowSVG/>
+                                    </IconCircle>
+                                    Limited Liability Company or LLC
+                                </FlexLink>
                             </Paragraph>
 
                             <Paragraph big>
@@ -420,12 +424,14 @@ const SideBusiness = () => (
                             width={100}
                             widthUnit="%"
                         >
-                            <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                        mixed={true}>
-                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                    <ArrowSVG/>
-                                </IconCircle>
-                                S Corporation
+                                <FlexLink to="/">
+                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                        <ArrowSVG/>
+                                    </IconCircle>
+                                    S Corporation
+                                </FlexLink>
                             </Paragraph>
 
                             <Paragraph big>
@@ -448,12 +454,14 @@ const SideBusiness = () => (
                             width={100}
                             widthUnit="%"
                         >
-                            <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                        mixed={true}>
-                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                    <ArrowSVG/>
-                                </IconCircle>
-                                C Corporation
+                                <FlexLink to="/">
+                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                        <ArrowSVG/>
+                                    </IconCircle>
+                                    C Corporation
+                                </FlexLink>
                             </Paragraph>
 
                             <Paragraph big>
@@ -464,20 +472,20 @@ const SideBusiness = () => (
                         </TextBlockWithImage>
 
                         <Paragraph big style={{paddingTop: "120px"}} mixed={true}>
-                            Our in-depth guide covers more of the advantages and disadvantages
+                            Our <Link to="/">in-depth guide</Link> covers more of the advantages and disadvantages
                             of different types of business entities, and you’ve still got questions, you can read our
-                            answers to frequently asked questions on choosing the right business structure..
+                            answers to frequently asked questions on <Link to="/">choosing the right business structure</Link>.
                         </Paragraph>
                         <Paragraph big mixed={true}>
                             In most cases, our recommendation for a side business would be to create an LLC. See our
-                            complete guide to creating an LLC to learn everything you need to do, or and have Incfile
+                            <Link to="/">complete guide to creating an LLC</Link> to learn everything you need to do, or and have Incfile
                             register your business for you.
                             No matter what state you’re in, we’ve got you covered.
                         </Paragraph>
 
-                        <Button theme="primary48" width="365px" arrow>
-                            Start your business with us, today!
-                        </Button>
+                        <Button theme="primary48" width="365px" arrow
+                                content={{url: "/", text: "Start your business with us, today!"}}/>
+
                     </ImageContent>
                 </BusinessOwnerResponsibilities>
             </Container>
@@ -493,7 +501,7 @@ const SideBusiness = () => (
 
         <Links/>
 
-        <Conclusion to="/" buttonTitle="Start your Etsy Business with us, today">
+        <Conclusion to="/" buttonTitle="Start your Side Business with us, today">
             <Heading size={3} style={{fontSize: "40px"}}>Conclusion</Heading>
             <Paragraph big>
                 If you’re after a straightforward, easy-to-understand, in-demand business and have the money to invest
@@ -515,32 +523,12 @@ const ButtonsBox = styled.div`
   }
 `;
 
-const ListWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-`;
-
-const ListBox = styled.div`
-    width: 100%;
-    
-    @media (min-width: 576px) { 
-        width: 50%; 
-    }
-`;
-
-const BlueContainer = styled.section`
-    background: rgb(242,246,255);
-    background: linear-gradient(0deg, rgba(242,246,255,1) 0%, rgba(250,251,255,1) 100%);
-    padding-top: 100px;
-    position: relative;
-`;
-
 const CenterBox = styled.div`
     width: 100%;
     padding-bottom: 100px;
+    max-width: 670px;
     
     @media (min-width: 670px) {
-        width: 670px;
         margin: 0 auto;
     }
 `;
@@ -563,7 +551,7 @@ const BusinessOwnerResponsibilities = styled.section`
 const OrangeContainer = styled.div`
     background: rgb(255,255,255);
     background-image: ${gradient.orange3};
-    padding-bottom: 100px;
+    padding-bottom: 60px;
     position: relative;
 `;
 
@@ -571,11 +559,10 @@ const Oval = styled.div`
   position: absolute; 
   left: 0;
   top: 200px;
-  width: 570px; 
-  display: block;
+  width: 100%; 
   
-  @media (min-width: 1200px){
-    display: block;
+  @media (min-width: 570px){
+    width: 570px;
   }
 `
 
@@ -583,16 +570,15 @@ const TabOval = styled.div`
   position: absolute; 
   left: 0;
   top: 0;
-  width: 420px; 
+  width: 100%; 
   transform: scaleX(-1);
   
   svg{
     transform: scaleY(-1);
   }
-  display: block;
   
-  @media (min-width: 1200px){
-    display: block;
+  @media (min-width: 420px){
+    width: 420px;
   }
 `
 
@@ -600,22 +586,10 @@ const OvalGreen = styled.div`
   position: absolute; 
   left: 0;
   top: 60px;
-  width: 420px;
-  display: block;
+  width: 100%;
   
-  @media (min-width: 1200px){
-    display: block;
-  }
-`
-
-const OvalGreen2 = styled.div`
-  position: absolute; 
-  right: 0;
-  bottom: 377px; 
-  width: 720px;
-  
-  svg {
-    transform: scaleX(-1);
+  @media (min-width: 420px){
+    width: 420px;
   }
 `
 
@@ -659,6 +633,13 @@ const BubbleImage = styled.div`
 
 const TabsWrapper = styled.div`
     position: relative;
+    padding-top: 100px;
+`;
+
+const FlexLink = styled(Link)`
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 `;
 
 export default SideBusiness;

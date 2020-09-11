@@ -25,31 +25,31 @@ const ToolsAndLinks = () => (
             <LinksContainer>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.facebook.com/groups/1189572621083821/?ref=br_rs" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Facebook — Event Planners Club
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.facebook.com/groups/5570471382/?ref=br_rs" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Facebook — Event Planners Forum
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="http://classic.party411.com/cgi-bin/yabb/YaBB.cgi?board=professionals" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Party411 Party Planning Forum
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.facebook.com/groups/eventplannersgather/?ref=br_rs" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Facebook — Event Planners Gather
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.facebook.com/groups/eventplannerssociety/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Facebook — Event Planning Blueprint:
                         Community Forum For Event Planners
                     </PathLink>
@@ -78,7 +78,7 @@ const LinksContainer = styled.div`
     justify-content: space-between;
     flex-wrap: wrap;
     
-    @media (min-width: 1000px) {
+    @media (min-width: 1100px) {
         width: 1000px;
     }
 `;
@@ -95,7 +95,7 @@ const LinkItem = styled.div`
         width: 470px;
     }
     
-    @media (min-width: 1000px) {
+    @media (min-width: 1100px) {
         margin-left: 15px;
         margin-right: 15px;
     }
@@ -105,11 +105,10 @@ const Oval = styled.div`
     position: absolute;
     left: 0;
     bottom: 501px;
-    width: 420px;
-     display: none;
+    width: 100%;
     
-    @media (min-width: 720px){
-        display: block; 
+    @media (min-width: 420px){
+        width: 420px; 
     }
 `;
 
@@ -117,12 +116,11 @@ const Oval2 = styled.div`
     position: absolute;
     right: 0;
     top: 800px;
-    width: 720px;
+    width: 100%;
     transform: scaleX(-1);
-     display: none;
     
     @media (min-width: 720px){
-        display: block; 
+        width: 720px; 
     }
 `;
 

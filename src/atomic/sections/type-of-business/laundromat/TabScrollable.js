@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import styled from "styled-components";
+import {Link} from "gatsby";
 
 import {color} from "../../../atoms/styles/colors";
 import {shadow} from "../../../atoms/styles/shadows";
@@ -37,7 +38,7 @@ import {
     FinancesAccordionContent,
     MaintainingAccordionContent,
     TaxesAccordionContent
-} from "../../../../static/type-of-business/landscaping-business";
+} from "../../../../static/type-of-business/laundromat";
 
 const ButtonList = [
     {
@@ -174,7 +175,7 @@ const TabScrollable = ({layout, columns}) => {
                                         <Paragraph big mixed={true}>
                                             You can find all the information you need about statewide licenses and
                                             permits on your state’s Secretary of State website. You can also find those
-                                            details in our <span className="big blue">state-by-state guides to company formation.</span> Alternatively,
+                                            details in our <Link to="/">state-by-state guides to company formation.</Link> Alternatively,
                                             the Small Business Administration website has a list of licenses and permits
                                             by state.
                                         </Paragraph>
@@ -325,7 +326,7 @@ const TabScrollable = ({layout, columns}) => {
 
                                         <Paragraph big mixed={true} style={{marginTop: "50px"}}>
                                             As a rule of thumb, we recommend keeping back around a third of your
-                                            earnings to pay your taxes. We can even <span className="big blue">prepare and file your tax returns for you</span>.
+                                            earnings to pay your taxes. We can even <Link to="/">prepare and file your tax returns for you</Link>.
                                         </Paragraph>
                                     </TextBlockWithImage>
 
@@ -429,6 +430,10 @@ const PanelWrapper = styled.article`
 
   h3 {
     margin-bottom: 48px;
+  }
+  
+  @media (min-width: 768px){
+    padding-left: 30px;
   }
 `
 

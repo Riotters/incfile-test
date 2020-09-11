@@ -28,7 +28,7 @@ export const typeBusiness = {
         },
         {
             circleText: 5,
-            imageName: "specialized-parties",
+            imageName: "convention-planning-icon",
             headline: "Convention Planning",
             text: "You can also explore starting a business that helps to plan conventions. These are typically ticketed, public events themed around specific interests and hobbies."
         },
