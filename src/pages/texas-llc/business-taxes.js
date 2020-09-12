@@ -31,7 +31,7 @@ const TexasBusinessTaxes = () => (
       description="Do you have an Texas LLC? Learn about the required federal, state, and sales taxes you might need to pay. Read more."
     />
 
-    <LinearBgHeader mageMapName="tx-map-2x">
+    <LinearBgHeader imageMapName="tx-map-2x">
         <ContentHeader content={businessTaxesPageContent.header} />
     </LinearBgHeader>
 

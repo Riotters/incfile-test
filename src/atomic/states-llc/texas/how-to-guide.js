@@ -20,6 +20,12 @@ import { Paragraph } from "../../atoms/typography/paragraph"
 import TextCheck from "../../../components/static-check/text-only";
 import EmbedVideo from '../embed-video'
 import BoxedButton from "../../molecules/buttons/boxed"
+import BoxCTA from '../box-cta';
+
+// Bg box CTA
+import BgBoxBusinessNameSearchTool from '../../../images/icons/states/business-name-search-tool.inline.png'
+import BgBoxHandlePaperWorks from '../../../images/icons/states/handle-paperwork.inline.png'
+import BgBoxPersonalOA from '../../../images/icons/states/personal-oa.inline.png'
 
 const Wrapper = styled.div``
 
@@ -133,7 +139,8 @@ const HowToGuide = ({content}) => (
 		widthUnit="%">
 			<Heading size={3}>{content.mainSteps.step1.heading1}</Heading>
 			<Paragraph big mixed={true}>{parse(content.mainSteps.step1.text1)}</Paragraph>
-			<Paragraph big mixed={true}>{parse(content.mainSteps.step1.text2)}</Paragraph>
+            <Paragraph big mixed={true}>{parse(content.mainSteps.step1.text2)}</Paragraph>
+            <BoxCTA bgColor={color.purple3} bgImage={BgBoxBusinessNameSearchTool} content={content.mainSteps.step1.cta} />
     </TextBlockWithNumberCounting>
 
     <TextBlockWithNumberCounting
@@ -202,7 +209,49 @@ const HowToGuide = ({content}) => (
 			<IconListColorBox color={color.blue3} content={content.mainSteps.step4.lists} rounded />
 			<Button content={content.mainSteps.step4.dowload_205_button} theme="secondary56" arrow width="240px" margin="16px 0 0 0" marginMD="42px 0 42px 0" />
 			<Paragraph big mixed={true}>{parse(content.mainSteps.step4.text2)}</Paragraph>
-			<Paragraph big mixed={true}>{parse(content.mainSteps.step4.text3)}</Paragraph>	
+            <Paragraph big mixed={true}>{parse(content.mainSteps.step4.text3)}</Paragraph>	
+            <BoxCTA bgColor={color.orange3} bgImage={BgBoxHandlePaperWorks} content={content.mainSteps.step4.cta} />
+    </TextBlockWithNumberCounting>
+
+    <TextBlockWithNumberCounting
+		numberCounting="5"
+		borderRadius="0"
+		boxShadow={false}
+		textBackgroundColor="transparent"
+		imageBackgroundColor={color.white}
+		imageShadowColor={shadow.white2}
+		imageShadowOpacity={0.5}
+		boxShadow={false}
+		paddingLeft={0}
+		style={{marginTop: "70px"}}
+		circleShadowY={40}
+		circleShadowBlure={80}
+		width={100}
+		widthUnit="%">
+      		<Heading size={3}>{content.mainSteps.step5.heading1}</Heading>
+			<Paragraph big mixed={true}>{parse(content.mainSteps.step5.text1)}</Paragraph>
+    </TextBlockWithNumberCounting>
+
+    <TextBlockWithNumberCounting
+		numberCounting="6"
+		borderRadius="0"
+		boxShadow={false}
+		textBackgroundColor="transparent"
+		imageBackgroundColor={color.white}
+		imageShadowColor={shadow.white2}
+		imageShadowOpacity={0.5}
+		boxShadow={false}
+		paddingLeft={0}
+		style={{marginTop: "70px"}}
+		circleShadowY={40}
+		circleShadowBlure={80}
+		width={100}
+		widthUnit="%">
+      		<Heading size={3}>{content.mainSteps.step6.heading1}</Heading>
+			<Paragraph big mixed={true}>{parse(content.mainSteps.step6.text1)}</Paragraph>
+            <Paragraph big mixed={true}>{parse(content.mainSteps.step6.text2)}</Paragraph>
+            <Button content={content.mainSteps.step6.button1} theme="secondary56" arrow width="450px" margin="16px 0 0 0" marginMD="42px 0 42px 0" />
+            <BoxCTA bgColor={color.orange3} bgImage={BgBoxPersonalOA} content={content.mainSteps.step6.cta} />
     </TextBlockWithNumberCounting>
   
   </Wrapper>

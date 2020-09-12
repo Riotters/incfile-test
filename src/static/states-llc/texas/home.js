@@ -49,7 +49,15 @@ export const HomePageContent = {
         step1: {
             heading1: `Complete a Texas LLC Search and Choose a Unique Business Name`,
             text1: `You will need a distinctive and original name for your Texas LLC that’s not used by any other business in TX. If you’re having trouble coming up with a name, try out Incfile’s <a href="/business-name-generator/">Business Name Generator</a> to brainstorm ideas. There are also a few naming rules you’ll need to follow, which you can read about in detail on our section on <a href="/texas-llc/texas-business-names/">Texas LLC Business Names.</a>`,
-            text2: `Once you’ve chosen a name, you’ll need to make sure it’s available in Texas. To find out if another company is using your chosen business name, use Incfile’s fast and easy name search tool below. Alternatively, you can carry out a Texas business entity name search on the TX Secretary of State website.`
+            text2: `Once you’ve chosen a name, you’ll need to make sure it’s available in Texas. To find out if another company is using your chosen business name, use Incfile’s fast and easy name search tool below. Alternatively, you can carry out a Texas business entity name search on the TX Secretary of State website.`,
+            cta: {
+                title: `Incfile’s Business <br>Name Search Tool`,
+                subtitle: `We’ll search the Texas Secretary <br>of State registry for you.`,
+                button: {
+                    text: `Check Availability`,
+                    url: `/`,
+                }
+            }
         },
         step2: {
             heading1: `Provide an Official Business Address for Your TX LLC`,
@@ -93,6 +101,35 @@ export const HomePageContent = {
             text2: `You can file your Texas LLC Certificate of Formation online with the Texas <a href="https://direct.sos.state.tx.us/acct/acct-login.asp">SOSDirect</a> filing system, mail in a form to the Office of the Secretary of State, or have Incfile do it on your behalf. The state of Texas charges a $300 fee to file and start an LLC.`,
 
             text3: `You only need to file your Certificate of Formation once, but every year after you will also need to file an annual report for your LLC. This is also something Incfile can remind you to do / do for you if you choose to have us handle the paperwork.`,
+            cta: {
+                title: `Have Incfile Handle <br>all the Paperwork`,
+                subtitle: `for You for $0 + the Texas State fee`,
+                button: {
+                    text: `Form Your LLC Now For Free`,
+                    url: `/`,
+                }
+            }
+        },
+        step5: {
+            heading1: `Get an Employer Identification Number (EIN) From the Internal Revenue Service`,
+            text1: `You will need an EIN to identify your business to the IRS. You use this number when filing and paying taxes or when submitting payroll information and payments for your employees. An EIN number is also required to open a business bank account. You can obtain one directly from the IRS, or Incfile can get one for you as part of the Texas LLC business formation process.`,
+        },
+        step6: {
+            heading1: `Create a Texas LLC Operating Agreement`,
+            text1: `An operating agreement is a kind of “instruction manual” that outlines how you will run your business. It includes how decisions are made, how the business is divided amongst members, and what happens if a member leaves the company.`,
+            text2: `Many states require that a company have an operating agreement in place—it isn’t legally required in Texas, but it’s a good idea to have one nonetheless.`,
+            button1: {
+                text: `Learn More About Operating Agreemets Here`,
+                url: `/`
+            },
+            cta: {
+                title: `Receive a personalized <br>operating agreement`,
+                subtitle: `when you select Incfle’s Gold package`,
+                button: {
+                    text: `Form Your LLC Now`,
+                    url: `/`,
+                }
+            }
         },
     },
   },

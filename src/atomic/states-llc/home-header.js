@@ -32,7 +32,7 @@ const WrappBox = styled.div`
   display: flex;
   flex-flow: row wrap;
   gap: 30px;
-  max-width: 970px;
+  max-width: 1024px;
   margin: 0 auto;
 
   .box{

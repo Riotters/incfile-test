@@ -46,7 +46,7 @@ const WrappBox = styled.div`
     text-align: center;
 
     @media screen and (min-width:769px) {
-      width: 670px;
+      width: 750px;
     }
 
     h4{
