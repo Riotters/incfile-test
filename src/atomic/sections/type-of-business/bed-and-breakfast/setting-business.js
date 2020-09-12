@@ -6,6 +6,7 @@ import {color} from "../../../../components/styles/colors";
 import styled from "styled-components";
 import GreenOval from "../../../../images/ovals/top-right-transparent-babyblue2.inline.svg";
 import {gradient} from "../../../atoms/styles/colors";
+import {Link} from "gatsby";
 
 const SettingBusiness = () => (
     <WrapperContainer>
@@ -65,7 +66,7 @@ const SettingBusiness = () => (
                     <p>
                         You will need a separate business bank account
                         for your bed and breakfast business. You might also want to consider a business credit card. Additionally, you will also need to keep careful bookkeeping records and file business and personal taxes. Here
-                        at Incfile we can even help you file your taxes.
+                        at Incfile <Link to="/">we can even help you file your taxes</Link>.
                     </p>
                 </TopImageBox>
 

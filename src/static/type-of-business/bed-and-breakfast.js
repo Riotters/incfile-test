@@ -167,7 +167,7 @@ export const typeBusiness = {
         {
             circleText: 6,
             imageName: "airbnb-logo",
-            headline: "College or University Town Rooms",
+            headline: "Airbnb",
             text: "Airbnb is another great way to make a living as a boutique hotel, especially if you only have one or two rooms available."
         }
     ]

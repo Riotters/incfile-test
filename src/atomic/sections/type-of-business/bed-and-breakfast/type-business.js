@@ -7,9 +7,8 @@ import {color} from "../../../../components/styles/colors";
 import {shadow} from "../../../../components/styles/shadows";
 import {typeBusiness} from "../../../../static/type-of-business/bed-and-breakfast";
 import Curve from "../../../atoms/shapes/curve";
-import OvalSvg from "../../../../images/oval-blue-3.inline.svg";
+import OvalSvg from "../../../../images/ovals/top-left-transparent-blue2.inline.svg";
 import OvalBottom from "../../../../images/ovals/bottom-left-transparent-blue1.inline.svg";
-import {Paragraph} from "../../../atoms/typography/paragraph";
 import {gradient} from "../../../atoms/styles/colors";
 
 const TypeBusiness = () => (
@@ -21,10 +20,12 @@ const TypeBusiness = () => (
         <OvalBottomWrapper>
             <OvalBottom/>
         </OvalBottomWrapper>
+
+        <TextCenterLayout headlineWidth={770} textWidth={770} headline="What Type of Bed and Breakfast Business Should You Start?"
+                          text="If you want to start a successful bed and breakfast business, it’s important to know what your options are. Here are some of the more popular business ideas:"/>
+
         <Container>
             <Service>
-                <TextCenterLayout headline="What Type of Bed and Breakfast Business Should You Start?"
-                                  text="If you want to start a successful bed and breakfast business, it’s important to know what your options are. Here are some of the more popular business ideas:"/>
 
                 <AdventagesBox>
                     <CurveWrapper>
@@ -51,32 +52,6 @@ const TypeBusiness = () => (
     </Wrapper>
 );
 
-const Title = styled.div`
-    display: block;
-    width: 100%;
-    
-    h3{
-        font-size: 40px;
-        text-align: left;
-    }
-`;
-
-const ListParagraph = styled(Paragraph)`
-    ul{
-        li{
-            list-style-type: none;
-            padding-bottom: 24px;
-            
-            &:before{
-                content: "\u2022";
-                color: ${color.blue1}; 
-                display: inline-block; 
-                padding-right: 15px;
-                font-size: 12px;
-            }
-        }
-    }
-`;
 
 const Wrapper = styled.div`
     background-image: ${gradient.blue3}; 
@@ -85,7 +60,7 @@ const Wrapper = styled.div`
 `;
 
 const Service = styled.div`
-  padding: 64px 0;
+  padding-top: 64px;
 `;
 
 const AdventagesBox = styled.div`
@@ -93,7 +68,7 @@ const AdventagesBox = styled.div`
   flex-wrap: wrap;
   width: 100%;
   max-width: 970px;
-  margin: 140px auto 0;
+  margin: 72px auto 0;
   position: relative;
  
 `;
@@ -113,15 +88,14 @@ const Oval = styled.div`
     position: absolute;
     right: 0;
     top: 300px;
+    width: 100%;
     
     svg {
         transform: scaleX(-1);
     }
     
-    display: none;
-    
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 720px){
+        width: 720px;
     }
 `;
 
@@ -129,11 +103,10 @@ const OvalBottomWrapper = styled.div`
     position: absolute;
     left: 0;
     bottom: 15%; 
-    width: 420px;
-    display: none;
+    width: 100%;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 420px){
+        width: 420px;
     }
 `;
 
