@@ -7,11 +7,12 @@ import ContentCenter from "../../../partials/content-center";
 import TextCenterLayout from "../../../../components/partials/blocks/heading-center";
 import TopImageBox from "../../../../components/top-image-box";
 import Button from "../../../molecules/buttons/button";
-import Curve from "../../../../images/green-curve.inline.svg";
-import GreenOval from "../../../../images/oval-green-2.inline.svg";
+import Oval from "../../../atoms/icons/oval";
+import OvalSVG from "../../../../images/ovals/top-left-transparent-blue2.inline.svg";
 import { Heading } from "../../../atoms/typography/heading";
 
 const Calculator = styled.div`
+  background-color: ${color.blue3};
   padding-bottom: 100px;
   padding-top: 100px;
   position: relative;
@@ -54,7 +55,7 @@ const ImageBoxes = styled.div`
             border-radius: 5px;
 
             @media (min-width: 769px) {
-                border-radius: 50px 5px 5px 5px;
+                border-radius: 35px 5px 5px 5px;
             }
         }
     }
@@ -70,7 +71,7 @@ const ImageBoxes = styled.div`
             border-radius: 5px;
 
             @media (min-width: 769px) {
-                border-radius: 5px 50px 5px 5px;
+                border-radius: 5px 35px 5px 5px;
             }
         }
     }
@@ -81,19 +82,6 @@ const ImageBoxes = styled.div`
       margin: 0 auto;
 `;
 
-const GreenCurve = styled.div`
-  position: absolute;
-  right: -115px;
-  bottom: -122px;
-  width: 115px;
-`;
-
-const Oval = styled.div`
-  position: absolute;
-  right: 0;
-  top: 220px;
-`;
-
 const dropdownOptions = states.state.map((state) => state.name);
 const dropdownOptionsTwo = ["option 1", "option 2", "option 3"];
 
@@ -102,8 +90,8 @@ const CalculatorSection = ({ content }) => {
 
   return (
     <Calculator>
-      <Oval>
-        <GreenOval />
+      <Oval height="570" width="570" top="0" left="0">
+        <OvalSVG />
       </Oval>
       <ContentCenter>
         <TextCenterLayout headline={content.header} headlineWidth="700" text={content.text} />
