@@ -11,40 +11,43 @@ import WrapperContent from '../../atomic/states-llc/wrapper-content'
 import LeftTabPages from '../../atomic/states-llc/left-tab-pages'
 import MainPageContent from '../../atomic/states-llc/page-content'
 import Rocket from "../../atomic/sections/review-entity-type/c-corporation/rocket"
+import HowToGuide from '../../atomic/states-llc/texas/how-to-guide'
 
 // Content
 import { HomePageContent } from "../../static/states-llc/texas/home"
 import { tabPages, rocket } from "../../static/states-llc/texas/general"
 
 const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 
-  @media (min-width: 769px) {
-    flex-direction: ${props => (props.layout !== "grid" ? "row" : "column")};
-  }
+    @media (min-width: 769px) {
+        flex-direction: ${props => (props.layout !== "grid" ? "row" : "column")};
+    }
 `
 
 function TexasLLCIndex() {
   return (
     <Layout>
-      <SEO
-        title="LLCs in Texas | Guide to Forming an LLC in Texas"
-        description="Ready to form your Texas LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more."
-      />
+        <SEO
+            title="LLCs in Texas | Guide to Forming an LLC in Texas"
+            description="Ready to form your Texas LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more."
+        />
 
-      <LinearBgHeader>
-        <HomeHeader content={HomePageContent.header} />
-      </LinearBgHeader>
+        <LinearBgHeader imageMapName="tx-map-2x">
+            <HomeHeader content={HomePageContent.header} />
+        </LinearBgHeader>
 
-      <WrapperContent>
-        <Wrapper>
-          <LeftTabPages content={tabPages} />
-          <MainPageContent content={HomePageContent.content}/>
-        </Wrapper>
-      </WrapperContent>
-    
-      <Rocket content={rocket} />
+        <WrapperContent>
+            <Wrapper>
+                <LeftTabPages content={tabPages} />
+                <MainPageContent>
+                    <HowToGuide content={HomePageContent.content} />
+                </MainPageContent>
+            </Wrapper>
+        </WrapperContent>
+        
+        <Rocket content={rocket} />
 
     </Layout>
   )

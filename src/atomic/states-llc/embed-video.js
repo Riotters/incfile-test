@@ -15,8 +15,8 @@ const Wrapper = styled.div`
   }
 `
 
-const EmbedVideo = ({children}) => (
-  <Wrapper>
+const EmbedVideo = ({children, style}) => (
+  <Wrapper style={style}>
     {children}
   </Wrapper>
 )

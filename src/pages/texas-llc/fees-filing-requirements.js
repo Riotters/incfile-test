@@ -1,17 +1,28 @@
 import React from 'react';
 import Layout from '../../components/layout';
 import SEO from '../../components/seo';
+import styled from 'styled-components'
 
 // Components
 import LinearBgHeader from '../../atomic/states-llc/linear-bg-header';
 import ContentHeader from '../../atomic/states-llc/taxes-header';
-import { color } from '../../components/styles/colors';
-import WrapperContent from '../../atomic/states-llc/wrapper-content';
+import WrapperContent from '../../atomic/states-llc/wrapper-content'
+import LeftTabPages from '../../atomic/states-llc/left-tab-pages'
+import MainPageContent from '../../atomic/states-llc/page-content'
 import Rocket from "../../atomic/sections/review-entity-type/c-corporation/rocket";
 
 // Content
 import { filingFeeAndRequirementContent } from "../../static/states-llc/texas/filingFeeAndRequirement";
 import { tabPages, rocket } from "../../static/states-llc/texas/general";
+
+const Wrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 769px) {
+        flex-direction: ${props => (props.layout !== "grid" ? "row" : "column")};
+    }
+`
 
 const filingFeeAndRequirementPage = () => (
   <Layout>
@@ -20,15 +31,17 @@ const filingFeeAndRequirementPage = () => (
       description="Make sense of the required forms, fees, and filing procedures for your Texas LLC with Incfile's easy-to-use guide. Read more."
     />
 
-    {/*Header Section*/}
-    <LinearBgHeader>
-      <ContentHeader content={filingFeeAndRequirementContent.header}/>
+    <LinearBgHeader  position="to top" imageMapName="tx-map-2x">
+        <ContentHeader content={filingFeeAndRequirementContent.header} />
     </LinearBgHeader>
 
-    {/** Content section*/}
-    <WrapperContent content={{ tabs: tabPages.pages, content: "" }} />
+    <WrapperContent>
+        <Wrapper>
+        <LeftTabPages content={tabPages} />
+        <MainPageContent>asdasd</MainPageContent>
+        </Wrapper>
+    </WrapperContent>
     
-    {/**Rocket section */}
     <Rocket content={rocket} />
 
   </Layout>
