@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import styled from "styled-components";
+import {Link} from "gatsby";
 
 import {color} from "../../../atoms/styles/colors";
 import {shadow} from "../../../atoms/styles/shadows";
@@ -26,15 +27,15 @@ import AgentColoredIcon from "../../../../images/icons/registered-agent-colored.
 import TaxesColoredIcon from "../../../../images/icons/other-taxes-colored.inline.svg";
 import MaintainingColoredIcon from "../../../../images/icons/maintaining-your-cleaning-business-colored.inline.svg"
 import StateBusinessColoredIcon from "../../../../images/icons/state-business-licenses-and-permits-colored.inline.svg";
-import FederalBusinessColoredIcon from "../../../../images/icons/federal-business-licenses-and-permits-colored.inline.svg";
+import FederalBusinessColoredIcon
+    from "../../../../images/icons/federal-business-licenses-and-permits-colored.inline.svg";
 import StateBusinessIcon from "../../../../images/icons/state-business-licenses-and-permits.inline.svg";
 import FederalBusinessIcon from "../../../../images/icons/federal-business-licenses-and-permits.inline.svg";
 
 import {
     BusinessInsuranceAccordionContent,
     MaintainingAccordionContent,
-    TaxesAccordionContent,
-    LicensesAccordionContent
+    TaxesAccordionContent
 } from "../../../../static/type-of-business/catering-business";
 
 const ButtonList = [
@@ -118,7 +119,9 @@ const TabScrollable = ({layout, columns}) => {
                                         Rules, Regulations and Laws for Your Catering Business
                                     </Heading>
                                     <Paragraph big mixed={true}>
-                                        Of course, along with running a business there are certain rules, regulations and legalities you need to be aware of. We can also help with researching your business licensing needs.
+                                        Of course, along with running a business there are certain rules, regulations
+                                        and legalities you need to be aware of. <Link to="/">We can also help with researching your
+                                        business licensing needs</Link>.
                                     </Paragraph>
 
                                     <TextBlockWithImage
@@ -141,7 +144,9 @@ const TabScrollable = ({layout, columns}) => {
                                         </Paragraph>
 
                                         <Paragraph big>
-                                            Your region, county or city may require you to have licenses or permits to operate a business. Talk to your city’s Chamber of Commerce to learn about your local licensing and permit requirements.
+                                            Your region, county or city may require you to have licenses or permits to
+                                            operate a business. Talk to your city’s Chamber of Commerce to learn about
+                                            your local licensing and permit requirements.
                                         </Paragraph>
 
                                     </TextBlockWithImage>
@@ -165,8 +170,12 @@ const TabScrollable = ({layout, columns}) => {
                                             State Business Licenses and Premits
                                         </Paragraph>
 
-                                        <Paragraph big>
-                                            You can find all the information you need about statewide licenses and permits on your state’s Secretary of State website. You can also find those details in our state-by-state guides to company formation. Alternatively, the Small Business Administration website has a list of licenses and permits by state.
+                                        <Paragraph big mixed={true}>
+                                            You can find all the information you need about statewide licenses and
+                                            permits on your state’s Secretary of State website. You can also find those
+                                            details in our <Link to="/">state-by-state guides to company formation</Link>. Alternatively,
+                                            the Small Business Administration website has a list of licenses and permits
+                                            by state.
                                         </Paragraph>
 
                                     </TextBlockWithImage>
@@ -190,8 +199,9 @@ const TabScrollable = ({layout, columns}) => {
                                             Federal Business Licenses and Premits
                                         </Paragraph>
 
-                                        <Paragraph big>
-                                            The Small Business Administration provides details of any national or federal licenses and permits you might need.
+                                        <Paragraph big mixed={true}>
+                                            The Small Business Administration provides <Link to="/">details of any national or
+                                            federal licenses and permits</Link> you might need.
                                         </Paragraph>
 
                                     </TextBlockWithImage>
@@ -216,7 +226,8 @@ const TabScrollable = ({layout, columns}) => {
                                         </Paragraph>
 
                                         <Paragraph big>
-                                            Your cleaning business must have comprehensive business insurance. There are various types to consider.
+                                            Your cleaning business must have comprehensive business insurance. There are
+                                            various types to consider.
                                         </Paragraph>
 
                                         <Accordion content={BusinessInsuranceAccordionContent}/>
@@ -242,13 +253,19 @@ const TabScrollable = ({layout, columns}) => {
                                         </Paragraph>
 
                                         <Paragraph big mixed={true}>
-                                            All businesses need to have a Registered Agent. These are individuals or other businesses that can accept legal documents on behalf of your landscaping company.
+                                            All businesses need to have a <Link to="/">Registered Agent</Link>. These are individuals or
+                                            other businesses that can accept legal documents on behalf of your
+                                            landscaping company.
                                         </Paragraph>
                                         <Paragraph big>
-                                            Although you can act as your own registered agent, we recommend using a professional service. It ensures there will always be someone available to receive important legal documentation on your behalf and also removes your name and address from the public record.
+                                            Although you can act as your own registered agent, we recommend using a
+                                            professional service. It ensures there will always be someone available to
+                                            receive important legal documentation on your behalf and also removes your
+                                            name and address from the public record.
                                         </Paragraph>
                                         <Paragraph big mixed={true}>
-                                            When you incorporate through us, we provide a complete Registered Agent service free for the first year.
+                                            When you <Link to="/">incorporate through us</Link>, we provide a complete Registered Agent
+                                            service free for the first year.
                                         </Paragraph>
                                     </TextBlockWithImage>
 
@@ -272,13 +289,16 @@ const TabScrollable = ({layout, columns}) => {
                                         </Paragraph>
 
                                         <Paragraph big>
-                                            Taxes are a fact of life. If you’re in business, there are various ways you will need to file and pay them.
+                                            Taxes are a fact of life. If you’re in business, there are various ways you
+                                            will need to file and pay them.
                                         </Paragraph>
 
                                         <Accordion content={TaxesAccordionContent}/>
 
                                         <Paragraph big mixed={true}>
-                                            As a rule of thumb, we recommend keeping back around a third of your earnings to pay your taxes. We can even prepare and file your tax returns for you.
+                                            As a rule of thumb, we recommend keeping back around a third of your
+                                            earnings to pay your taxes. We can even prepare and file your tax returns
+                                            for you.
                                         </Paragraph>
                                     </TextBlockWithImage>
 
@@ -302,14 +322,15 @@ const TabScrollable = ({layout, columns}) => {
                                         </Paragraph>
 
                                         <Paragraph big>
-                                            There are certain forms and legalities you need to follow to keep your cleaning business in good standing.
+                                            There are certain forms and legalities you need to follow to keep your
+                                            cleaning business in good standing.
                                         </Paragraph>
 
                                         <Accordion content={MaintainingAccordionContent}/>
 
                                         <Paragraph big mixed={true} style={{marginTop: "50px"}}>
                                             As a rule of thumb, we recommend keeping back around a third of your
-                                            earnings to pay your taxes. We can even <span className="big blue">prepare and file your tax returns for you</span>.
+                                            earnings to pay your taxes. We can even <Link to="/">prepare and file your tax returns for you</Link>.
                                         </Paragraph>
                                     </TextBlockWithImage>
 
@@ -329,7 +350,7 @@ const Wrapper = styled.div`
   padding-bottom: 115px;
   position: relative;
 
-  @media (min-width: 769px) {
+  @media (min-width: 992px) {
     flex-direction: ${props => (props.layout !== "grid" ? "row" : "column")};
   }
 
@@ -342,7 +363,7 @@ const Wrapper = styled.div`
     transition: height 500ms;
     margin-left: auto;
 
-    @media (min-width: 769px) {
+    @media (min-width: 992px) {
       max-width: ${props => (props.layout !== "grid" ? "55%" : "")};
     }
 
@@ -358,7 +379,7 @@ const TabsWrapper = styled.div`
   width: 100%;
   position: relative;
 
-  @media (min-width: 769px) {
+  @media (min-width: 992px) {
     max-width: ${props => (props.layout !== "grid" ? "40%" : "")};
   }
 
@@ -386,6 +407,10 @@ const PanelWrapper = styled.article`
 
   h3 {
     margin-bottom: 48px;
+  }
+  
+  @media (min-width: 768px){
+    padding-left: 30px;
   }
 `
 

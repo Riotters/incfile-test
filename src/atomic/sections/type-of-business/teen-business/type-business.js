@@ -20,10 +20,11 @@ const TypeBusiness = () => (
         <Oval2>
             <OvalSvg/>
         </Oval2>
+        <TextCenterLayout headlineWidth={770} textWidth={770} headline="Business Ideas for Teens, Kids and Students"
+                          text="There are several different types of teen businesses that you can start. Here are some of the more popular options:"/>
+
         <Container>
             <Service>
-                <TextCenterLayout headline="Business Ideas for Teens, Kids and Students"
-                                  text="There are several different types of teen businesses that you can start. Here are some of the more popular options:"/>
 
                 <AdventagesBox>
                     {typeBusiness.items.map(item => (
@@ -94,7 +95,7 @@ const AdventagesBox = styled.div`
   flex-wrap: wrap;
   width: 100%;
   max-width: 970px;
-  margin: 140px auto 0;
+  margin: 0 auto 80px;
   position: relative;
  
 `;
@@ -103,11 +104,10 @@ const Oval = styled.div`
       position: absolute; 
       right: 0;
       top: 539px;
-      width: 570px;
-      display: block;
+      width: 100%;
       
-      @media (min-width: 1200px){
-        display: block;
+      @media (min-width: 570px){
+        width: 570px;
       }
 `;
 
@@ -115,12 +115,11 @@ const Oval2 = styled.div`
       position: absolute; 
       left: 0;
       bottom: 720px;
-      width: 720px;
+      width: 100%;
       transform: rotate(180deg);
-      display: block;
       
-      @media (min-width: 1200px){
-        display: block;
+      @media (min-width: 720px){
+        width: 720px;
       }
 `;
 

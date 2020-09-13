@@ -7,8 +7,7 @@ import {color} from "../../../../components/styles/colors";
 import {shadow} from "../../../../components/styles/shadows";
 import {typeBusiness} from "../../../../static/type-of-business/dog-walking";
 import Curve from "../../../atoms/shapes/curve";
-import OvalSvg from "../../../../images/oval-blue-3.inline.svg";
-import OvalBottom from "../../../../images/ovals/bottom-left-transparent-blue1.inline.svg";
+import OvalSvg from "../../../../images/ovals/top-right-transparent-orange.inline.svg";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import {gradient} from "../../../atoms/styles/colors";
 
@@ -18,18 +17,12 @@ const TypeBusiness = () => (
             <OvalSvg/>
         </Oval>
 
-        <OvalBottomWrapper>
-            <OvalBottom/>
-        </OvalBottomWrapper>
         <Container>
             <Service>
                 <TextCenterLayout headline="What Type of Dog Walking or Pet Sitting Business Should You Start?"
                                   text="There are several different types of dog-related business you can start."/>
 
                 <AdventagesBox>
-                    <CurveWrapper>
-                        <Curve color={color.orange1}/>
-                    </CurveWrapper>
                     {typeBusiness.items.map(item => (
                         <Adventages
                             style={{textAlign: "center"}}
@@ -108,17 +101,11 @@ const Oval = styled.div`
     position: absolute;
     right: 0;
     top: 300px;
+    width: 100%;
     
-    svg {
-        transform: scaleX(-1);
+    @media (min-width: 720px){
+        width: 720px;
     }
-`;
-
-const OvalBottomWrapper = styled.div`
-    position: absolute;
-    left: 0;
-    bottom: 15%; 
-    width: 420px;
 `;
 
 export default TypeBusiness;

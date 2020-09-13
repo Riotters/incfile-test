@@ -27,6 +27,8 @@ import Chart from "../../images/chart.inline.svg";
 import CkeckText from "../../components/static-check/text-only";
 import BlueBoxWithAbsoluteText from "../../atomic/molecules/text-blocks/blue-box-with-absolute-text";
 import CircleWithText from "../../atomic/molecules/blocks/circle-with-text-block";
+import {color} from "../../atomic/atoms/styles/colors";
+import TabOvalSvg from "../../images/ovals/bottom-left-transparent-blue3.inline.svg";
 
 const RestaurantBusiness = () => (
     <Layout>
@@ -37,7 +39,7 @@ const RestaurantBusiness = () => (
             <h1>How to Start a Restaurant Business</h1>
             <p>
                 There are very few businesses that customers love more than a great restaurant -a place that brings
-                together friends and family to share delicious food andconversation has a special place in the heart of
+                together friends and family to share delicious food and conversation has a special place in the heart of
                 many patrons.
             </p>
             <ButtonsBox>
@@ -52,7 +54,11 @@ const RestaurantBusiness = () => (
             </RatingRow>
         </Top>
 
-        <TabsSection>
+        <TabsWrapper>
+            <TabOval>
+                <TabOvalSvg />
+            </TabOval>
+            <TabsSection>
             <TabHeading>
                 <TabTitle title="Restaurant" SvgIcon={Tab1Icon}/>
                 <TabTitle title="Is This Business For You" SvgIcon={Tab2Icon}/>
@@ -60,7 +66,7 @@ const RestaurantBusiness = () => (
 
             <CollapseWrapper>
                 <PanelWrapper>
-                    <Paragraph big>
+                    <Paragraph big style={{marginBottom: "48px"}}>
                         If you want to help create that type of magic and loyalty, then starting
                         up a restaurant could be a great idea. Don’t be fooled, though. Running
                         a successful restaurant can be a big challenge, and you’ll have to learn
@@ -68,7 +74,7 @@ const RestaurantBusiness = () => (
                         starting a restaurant business.
                     </Paragraph>
 
-                    <Paragraph big style={{fontWeight: "bold"}}>
+                    <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
                         Whatever your idea for a restaurant, turning that vision into a place that creates amazing
                         cuisine and delights your customers is doable with the right approach. In this guide we’ll
                         cover:
@@ -144,7 +150,7 @@ const RestaurantBusiness = () => (
                         </ListBox>
                     </ListWrapper>
 
-                    <Paragraph big>
+                    <Paragraph big stule={{marginTop: "48px"}}>
                         By the time you’ve read our complete restaurant business guide, you will have all the
                         information you need to set up and manage a thriving restaurant business. Let’s get into it.
                     </Paragraph>
@@ -173,30 +179,24 @@ const RestaurantBusiness = () => (
                     <BlueBoxWithAbsoluteText absoluteText="$600B"
                                              text="Spent in restaurants every year"/>
 
-                    <CircleWithText textInsideCircle="5"
+                    <CircleWithText style={{marginBottom: "48px"}} textInsideCircle="5"
                                     textLine="Typical sales growth of the restaurant industry every year" withBg={true}
                                     SvgChart={Chart} symbol="%"/>
 
-                    <div style={{marginBottom: "30px", marginTop: "48px"}}>
-                        <Adventages
-                            headline="There are over 1 million restaurants in the U.S."
-                            width="100%"
-                        />
-                    </div>
+                    <Adventages
+                        headline="There are over 1 million restaurants in the U.S."
+                        width="100%"
+                    />
 
-                    <div style={{marginBottom: "30px"}}>
-                        <Adventages
-                            headline="Nearly 40,000 new restaurants open in the U.S. every year"
-                            width="100%"
-                        />
-                    </div>
+                    <Adventages
+                        headline="Nearly 40,000 new restaurants open in the U.S. every year"
+                        width="100%"
+                    />
 
-                    <div style={{marginBottom: "48px"}}>
-                        <Adventages
-                            headline="Three quarters of these are independent restaurants, not chains"
-                            width="100%"
-                        />
-                    </div>
+                    <Adventages
+                        headline="Three quarters of these are independent restaurants, not chains"
+                        width="100%"
+                    />
 
                     <Paragraph big>
                         These statistics make the restaurant industry very attractive to aspiring entrepreneurs, but
@@ -212,6 +212,7 @@ const RestaurantBusiness = () => (
 
             </CollapseWrapper>
         </TabsSection>
+        </TabsWrapper>
 
         <TypeBusiness/>
 
@@ -262,42 +263,20 @@ const ListBox = styled.div`
     }
 `;
 
-const BubblesWrapper = styled.div`
+const TabsWrapper = styled.section`
+    position: relative;
+`;
+
+const TabOval = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    background-color: white;
-    box-shadow: 0 24px 32px 0 rgba(236, 236, 236, 0.5);
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    padding: 30px;
-    margin-bottom: 50px;
-`;
-
-const Bubbles = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
-`;
-
-const Text = styled.div`
-    text-align: center;
-    font-family: Avenir-Heavy, sans-serif;
-    font-size: 20px;
-    color: #1d1d1d;
-    max-width: 500px;
-    margin: 0 auto;
-`;
-
-const BubbleImage = styled.div`
-    width: 20%;
-    margin-bottom: 40px;
-    
-    > div{
-        width: 74px;
-        margin: 0 auto;
-        height: 110px;
+  
+    @media (min-width: 420px) {
+        width: 420px;
     }
 `;
+
 
 export default RestaurantBusiness;

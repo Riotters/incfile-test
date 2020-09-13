@@ -30,15 +30,14 @@ const Wrapper = styled.section`
 `;
 
 const Oval = styled.div`
-    width: 420px;
+    width: 100%;
     position: absolute;
     top: 0;
     right: 0;
-    display: none;
   
-  @media (min-width: 1200px){
-    display: block;
-  }
+    @media (min-width: 420px){
+        width: 420px;
+    }
 `;
 
 export default InsuranceBusiness;

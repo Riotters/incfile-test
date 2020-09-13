@@ -4,15 +4,17 @@ import TextCenterLayout from "../../../../components/partials/blocks/heading-cen
 import TopImageBox from "../../../../components/top-image-box";
 import {color} from "../../../../components/styles/colors";
 import styled from "styled-components";
-import GreenOval from "../../../../images/oval-green-2.inline.svg";
+import OvalSvg from "../../../../images/ovals/bottom-right-transparent-blue3.inline.svg";
 
 const SettingBusiness = () => (
     <GreenContainer>
 
         <Oval>
-            <GreenOval/>
+            <OvalSvg/>
         </Oval>
-
+        <Oval2>
+            <OvalSvg/>
+        </Oval2>
         <Container>
             <TextCenterLayout
                 headline="How to Move Your Business to the Blockchain"
@@ -21,7 +23,7 @@ const SettingBusiness = () => (
             />
             <ImageBoxes>
 
-                <TopImageBox image="what-you-need" color={color.blue3}>
+                <TopImageBox image="ongoing-filling-requirements" color={color.blue3}>
                     <h4>Decide on Exactly What Parts of Your Business, Information, and Technology You Want to Use the
                         Blockchain For</h4>
                     <p>
@@ -119,7 +121,24 @@ const GreenCurve = styled.div`
 const Oval = styled.div`
     position: absolute;
     right: 0;
-    top: 220px;
+    top: 394px;
+    width: 100%;
+    
+    @media (min-width: 720px){
+        width: 720px;
+    }
+`;
+
+const Oval2 = styled.div`
+    position: absolute;
+    left: 0;
+    bottom: 184px;
+    width: 100%;
+    transform: rotate(180deg);
+    
+    @media (min-width: 570px){
+        width: 570px;
+    }
 `;
 
 export default SettingBusiness;

@@ -1,11 +1,10 @@
 import React from "react";
 import AccordionWithCounting from "../../../../atomic/organisms/accordion/accordion-with-counting";
-import {AccordionCounting} from "../../../../static/type-of-business/tshirt-business";
+import {HiringAccordionContent} from "../../../../static/type-of-business/tshirt-business";
 import Container from "../../../../atomic/container";
 import ContentCenter from "../../../../atomic/partials/content-center";
 import TextCenterLayout from "../../../../atomic/partials/heading-left";
 import styled from "styled-components";
-import EtsyLinks from "../../../../atomic/sections/type-of-business/tshirt-business/links";
 import OvalSvg from "../../../../images/ovals/top-right-transparent-blue.inline.svg";
 
 const HireEmployees = () => (
@@ -17,12 +16,8 @@ const HireEmployees = () => (
             <ContentCenter>
                 <TextCenterLayout headline="Hire Employees for Your Etsy Business"
                                   text="If you’re just running your Etsy business solo, you don’t need to worry about employees. If you are hiring people to work for you, you will need to know what to do. See our 10 tips on hiring employees."/>
-                <AccordionWithCounting content={AccordionCounting}/>
+                <AccordionWithCounting content={HiringAccordionContent}/>
             </ContentCenter>
-        </Container>
-
-        <Container>
-            <EtsyLinks />
         </Container>
     </BlueContainer>
 );

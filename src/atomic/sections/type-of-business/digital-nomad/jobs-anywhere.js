@@ -15,6 +15,7 @@ import TaskRabbitLogo from "../../../../images/taskrabbit-logo.inline.svg";
 import ToptalLogo from "../../../../images/toptal-logo.inline.svg";
 import UberLogo from "../../../../images/uber-12-logo.inline.svg";
 import {shadow} from "../../../atoms/styles/shadows";
+import {Link} from "gatsby";
 
 const JobsAnywhere = () => (
     <Wrapper>
@@ -46,58 +47,66 @@ const JobsAnywhere = () => (
                 media marketing and more.
             </Paragraph>
             <Paragraph big>
-                If you're stuck for inspiration, here's a list of more than 500 ideas for a digital nomad business.
+                If you're stuck for inspiration, here's a <Link to="/">list of more than 500 ideas for a digital nomad business</Link>.
             </Paragraph>
         </Container>
 
         <LogosContainer>
             <LogoBox>
-                <UpWorkLogo />
+                <UpWorkLogo/>
             </LogoBox>
 
             <LogoBox>
-                <FiverrLogo />
+                <FiverrLogo/>
             </LogoBox>
 
             <LogoBox>
-                <AirBnbLogo />
+                <AirBnbLogo/>
             </LogoBox>
 
             <LogoBox>
-                <FreelancerLogo />
+                <FreelancerLogo/>
             </LogoBox>
 
             <LogoBox>
-                <DesignLogo />
+                <DesignLogo/>
             </LogoBox>
 
             <LogoBox>
-                <UberLogo />
+                <UberLogo/>
             </LogoBox>
 
             <LogoBox>
-                <ToptalLogo />
+                <ToptalLogo/>
             </LogoBox>
 
             <LogoBox>
-                <LyftLogo />
+                <LyftLogo/>
             </LogoBox>
 
             <LogoBox>
-                <TaskRabbitLogo />
+                <TaskRabbitLogo/>
             </LogoBox>
 
         </LogosContainer>
 
         <Container style={{paddingTop: "80px", paddingBottom: "100px"}} width={750}>
             <Paragraph big style={{paddingTop: "0px"}}>
-                There are also plenty of marketplaces where you can offer freelance services as a digital nomad — some of the most popular are UpWork, Freelancer, Fiverr, 99 Designs and Toptal. Big gig economy marketplaces like AirBnB, Uber, Lyft and Taskrabbit can also provide plenty of opportunities. Just because you are offering services through another business marketplace doesn't mean you're not a business in your own right.
+                There are also plenty of marketplaces where you can offer freelance services as a digital nomad — some
+                of the most popular are <Link to="/">UpWork</Link>, <Link to="/">Freelancer</Link>, <Link to="/">Fiverr</Link>, <Link to="/">99 Designs</Link> and <Link to="/">Toptal</Link>. Big gig economy marketplaces
+                like <Link to="/">AirBnB</Link>, <Link to="/">Uber</Link>, <Link to="/">Lyft</Link> and <Link to="/">Taskrabbit</Link> can also provide plenty of opportunities. Just because you are
+                offering services through another business marketplace doesn't mean you're not a business in your own
+                right.
             </Paragraph>
             <Paragraph big>
-                Finally, becoming a digital nomad comes with its own set of challenges. You must be extremely focused and very flexible, roll with internet delays and be comfortable with living and working in an isolating environment.
+                Finally, becoming a digital nomad comes with its own set of challenges. You must be extremely focused
+                and very flexible, roll with internet delays and be comfortable with living and working in an isolating
+                environment.
             </Paragraph>
             <Paragraph big>
-                You can also find additional guidance in understanding if a digital nomad business is right for you. If this blog post, we'll help you analyze if your digital nomad business iead is a good one, conduct market research and build a business plan.
+                You can also find <Link to="/">additional guidance in understanding if a digital nomad business is right for you</Link>. If
+                this blog post, we'll help you analyze if your digital nomad business iead is a good one, conduct market
+                research and build a business plan.
             </Paragraph>
         </Container>
     </Wrapper>
@@ -112,11 +121,10 @@ const Oval = styled.div`
     position: absolute;
     left: 0;
     top: 0;
-    width: 570px;
-    display: none;
+    width: 100%;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 570px){
+        width: 570px;
     }
 `;
 
@@ -124,13 +132,12 @@ const Oval2 = styled.div`
     position: absolute;
     right: 0;
     top: 599px;
-    width: 720px;
+    width: 100%;
     z-index: -1;
     transform: scaleX(-1);
-    display: none;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 720px){
+        width: 720px;
     }
 `;
 
@@ -139,11 +146,15 @@ const LogosContainer = styled.div`
     padding-left: 15px;
     padding-right: 15px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
+    max-width: 1230px;
+    
+    @media (min-width: 1140px){
+        justify-content: space-between;
+    }
     
     @media (min-width: 1230px) {
-        width: 1230px;
         margin: 0 auto;
     }
 `;
@@ -155,8 +166,12 @@ const LogoBox = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 370px;
+    width: 100%;
     margin-bottom: 30px;
+    
+    @media (min-width: 768px){
+        width: 370px;
+    }
 `;
 
 export default JobsAnywhere;

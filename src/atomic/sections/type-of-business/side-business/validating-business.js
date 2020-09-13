@@ -20,7 +20,6 @@ import BateryIcon from "../../../../images/icons/another-important-area-to-think
 const ContainerWrapper = styled.div`
     background: rgb(255,255,255);
     background-image: ${gradient.green3};
-    padding-bottom: 100px;
     position: relative;
     padding-top: 120px;
 `;
@@ -33,9 +32,9 @@ const GridSection = styled.div`
 const TitleBox = styled.div`
     width: 100%;
     position: relative;
-     
+    max-width: 750px;
+    
     @media (min-width:750px) {
-        width: 750px;
         margin: 0 auto;
     }
     
@@ -52,39 +51,13 @@ const GridSectionList = styled.div`
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
-    
+    max-width: 970px;
     > div {
         margin-bottom: 70px;
     }
     
     @media (min-width: 970px) {
-        width: 970px;
         margin: 120px auto 0;
-    }
-`;
-
-const TextBorderedSection = styled.div`
-    width: 100%;
-    padding-top: 100px;
-    
-    @media (min-width: 670px) {
-        width: 670px;
-        margin: 0 auto;
-    }
-    
-    h3{
-        color: #1d1d1d;
-        font-size: 40px;
-        text-align: center;
-        margin-bottom: 24px;
-    }
-`;
-
-const TextBorderedList = styled.div`
-    margin-top: 80px;
-    
-    >div {
-        margin-bottom: 8px;
     }
 `;
 
@@ -92,11 +65,10 @@ const Oval = styled.div`
   position: absolute;
   left: 0;
   top: 286px;
-  width: 420px;
-  display: none;
+  width: 100%;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 420px){
+        width: 420px;
     }
 `
 
@@ -104,15 +76,14 @@ const OvalBig = styled.div`
   position: absolute;
   right: 0;
   top: calc(50% - 360px);
-  width: 720px;
+  width: 100%;
   
   svg{
     transform: scaleX(-1);
   }
-  display: none;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 720px){
+        width: 720px;
     }
 `
 
@@ -153,7 +124,7 @@ const ValidatingBusinessIdea = () => (
                         of side business you want to run through conducting your own research.
                     </Paragraph>
 
-                    <Paragraph big style={{fontWeight: "bold", marginTop: "48px"}}>
+                    <Paragraph big>
                         You will need the right skills to run a successful side business, and you’ll need to work those
                         out before launching your new venture. For example, you need good creative skills to become a
                         freelancer, and you’ll need to do plenty of marketplace research

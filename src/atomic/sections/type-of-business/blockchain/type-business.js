@@ -8,18 +8,20 @@ import {color} from "../../../../components/styles/colors";
 import {shadow} from "../../../../components/styles/shadows";
 import {typeBusiness} from "../../../../static/type-of-business/blockchain";
 import Curve from "../../../atoms/shapes/curve";
-import OvalSvg from "../../../../images/oval-orange-4.inline.svg";
+import OvalSvg from "../../../../images/ovals/top-right-transparent-orange.inline.svg";
 
 const TypeBusiness = () => (
     <Wrapper>
         <Oval>
             <OvalSvg/>
         </Oval>
+        <Oval2>
+            <OvalSvg/>
+        </Oval2>
+        <TextCenterLayout textWidth={770} headlineWidth={770} headline="Business Industries Ideally Suited to Blockchain Applications"
+                          text="If you’re in one of the following sectors, there’s a good chance you’ll get value out of a blockchain application. Here are some ideas of how blockchain can be used in these industries:"/>
         <Container>
             <Service>
-                <TextCenterLayout headline="Business Industries Ideally Suited to Blockchain Applications"
-                                  text="If you’re in one of the following sectors, there’s a good chance you’ll get value out of a blockchain application. Here are some ideas of how blockchain can be used in these industries:"/>
-
                 <AdventagesBox>
                     <CurveWrapper>
                         <Curve color={color.orange1}/>
@@ -73,7 +75,24 @@ const CurveWrapper = styled.div`
 const Oval = styled.div`
     position: absolute;
     right: 0;
-    top: 300px;
+    top: 421px;
+    width: 100%;
+    
+    @media (min-width: 570px){
+        width: 570px;
+    }
+`;
+
+const Oval2 = styled.div`
+    position: absolute;
+    left: 0;
+    bottom: 189px;
+    width: 100%;
+    transform: rotate(180deg);
+    
+    @media (min-width: 420px){
+        width: 420px;
+    }
 `;
 
 export default TypeBusiness;

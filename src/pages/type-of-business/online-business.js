@@ -207,17 +207,17 @@ const ButtonsBox = styled.div`
 
 const TabsWrapper = styled.div`
   position: relative;
+  padding-top: 100px;
 `;
 
 const Oval = styled.div`
     position: absolute;
     top: 0;
     left: 0;
-    width: 420px;
-    display: none;
+    width: 100%;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 420px){
+        width: 420px;
     }
 `;
 

@@ -30,6 +30,7 @@ import RingSvg from "../../images/rings-3.inline.svg"
 import JobsAnywhere from "../../atomic/sections/type-of-business/digital-nomad/jobs-anywhere";
 import OvalSvg from "../../images/ovals/bottom-right-transparent-babyblue2.inline.svg";
 import OvalSvg2 from "../../images/ovals/bottom-right-transparent-green3.inline.svg";
+import {color} from "../../atomic/atoms/styles/colors";
 
 const GymPersonalTraining = () => (
     <Layout>
@@ -57,10 +58,10 @@ const GymPersonalTraining = () => (
 
         <TabsWrapper>
             <Oval>
-                <OvalSvg />
+                <OvalSvg/>
             </Oval>
             <Oval2>
-                <OvalSvg2 />
+                <OvalSvg2/>
             </Oval2>
             <TabsSection style={{marginTop: "100px"}}>
                 <TabHeading>
@@ -92,7 +93,7 @@ const GymPersonalTraining = () => (
                             entrepreneur.
                         </Paragraph>
 
-                        <Paragraph big style={{marginTop: "48px", fontWeight: "bold"}}>
+                        <Paragraph big style={{marginTop: "48px", fontFamily: "Avenir-Heavy", color: color.black}}>
                             Digital Nomad business formation guide
                         </Paragraph>
 
@@ -204,52 +205,40 @@ const GymPersonalTraining = () => (
                             For example, a digital nomad business might be:
                         </Paragraph>
 
-                        <div style={{marginBottom: "30px", marginTop: "80px"}}>
-                            <Adventages
-                                headline="Boutique studios providing specialized fitness and well-being services are becoming increasingly popular"
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Boutique studios providing specialized fitness and well-being services are becoming increasingly popular"
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Dropshipping business"
-                                text="Where you provide a storefront for people to purchase from you. They make the purchase and your supplier sends it to them directly."
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Dropshipping business"
+                            text="Where you provide a storefront for people to purchase from you. They make the purchase and your supplier sends it to them directly."
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Software as a Service (SaaS) company"
-                                text="You provide an online application that your customers pay a monthly subscription to use."
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Software as a Service (SaaS) company"
+                            text="You provide an online application that your customers pay a monthly subscription to use."
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Affiliate Marketing Website"
-                                text="Where you provide expert advice and reviews of products. If people click your links to buy the products from a retailer, you get a percentage of the order as revenue"
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Affiliate Marketing Website"
+                            text="Where you provide expert advice and reviews of products. If people click your links to buy the products from a retailer, you get a percentage of the order as revenue"
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Information Product"
-                                text="Like an ebook, online course or other resource that customers pay for."
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Information Product"
+                            text="Like an ebook, online course or other resource that customers pay for."
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Freelance Service"
-                                text="Like copywriting, web design or graphic design."
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Freelance Service"
+                            text="Like copywriting, web design or graphic design."
+                            width="100%"
+                        />
 
                         <Paragraph big>
                             In fact, the only requirement to being a digital nomad is the ability to work remotely from
@@ -275,7 +264,7 @@ const GymPersonalTraining = () => (
                         <Heading size={3}>
                             Questions to Ask Before Becoming a Digital Nomad
                         </Heading>
-                        <Paragraph big style={{fontWeight: "bold"}}>
+                        <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
                             Is Digital Nomad Entrepreneurship For You?
                         </Paragraph>
 
@@ -286,7 +275,7 @@ const GymPersonalTraining = () => (
                             satisfaction of creating a business that helps others be successful.
                         </Paragraph>
 
-                        <Paragraph big style={{marginTop: "48px", fontWeight: "bold"}}>
+                        <Paragraph big style={{marginTop: "48px", fontFamily: "Avenir-Heavy", color: color.black}}>
                             What Are the Main Skills, Expertise and Experience to be a Successful Digital Nomad
                             Entrepreneur?
                         </Paragraph>
@@ -294,53 +283,41 @@ const GymPersonalTraining = () => (
                             If you want to be successful as a digital nomad, here are the main skills you need to have:
                         </Paragraph>
 
-                        <div style={{marginBottom: "30px"}}>
                             <Adventages
                                 headline="Excellent interpersonal skills"
                                 text="You will need to deal with contractors, local authorities, clients and buyers all the time. Great interpersonal skills and the ability to handle people well are essential."
                                 width="100%"
                             />
-                        </div>
 
-                        <div style={{marginBottom: "30px"}}>
                             <Adventages
                                 headline="Excellent communication skills"
                                 text="You need the ability to over-communicate to your clients and keep them happy over email, phone or chat."
                                 width="100%"
                             />
-                        </div>
 
-                        <div style={{marginBottom: "30px"}}>
                             <Adventages
                                 headline="Customer relationship nurturer"
                                 text="Keeping clients and customers happy is vital to long-term success."
                                 width="100%"
                             />
-                        </div>
 
-                        <div style={{marginBottom: "30px"}}>
                             <Adventages
                                 headline="Ability to work from anywhere"
                                 text="You have to be comfortable with working from the local coffeeshop, the beach, your AirBNB room or somewhere else."
                                 width="100%"
                             />
-                        </div>
 
-                        <div style={{marginBottom: "30px"}}>
                             <Adventages
                                 headline="Financial flexibility"
                                 text="Staying on top of finances and ensuring you have enough coming in crucial to your peace-of-mind."
                                 width="100%"
                             />
-                        </div>
 
-                        <div style={{marginBottom: "30px"}}>
                             <Adventages
                                 headline="Dealing with change"
                                 text="Client needs can change fast. Marketplaces evolve. You travel. The ability to deal with changing circumstances is critical."
                                 width="100%"
                             />
-                        </div>
                     </PanelWrapper>
                 </CollapseWrapper>
             </TabsSection>
@@ -378,11 +355,10 @@ const Oval = styled.div`
     top: 0;
     left: 0;
     transform: scaleX(-1);
-    width: 420px;
-    display: none;
+    width: 100%;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 420px){
+        width: 420px;
     }
 `;
 
@@ -390,11 +366,10 @@ const Oval2 = styled.div`
     position: absolute;
     top: 436px;
     right: 0;
-    width: 420px;
-    display: none;
+    width: 100%;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 420px){
+        width: 420px;
     }
 `;
 

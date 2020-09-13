@@ -116,19 +116,15 @@ const TeenBusiness = () => (
                             facts:
                         </Paragraph>
 
-                        <div style={{marginBottom: "30px", marginTop: "48px"}}>
-                            <Adventages
-                                headline="Around a quarter of teenagers work in some capacity"
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Around a quarter of teenagers work in some capacity"
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "30px", marginTop: "48px"}}>
-                            <Adventages
-                                headline="Around a quarter of teenagers work in some capacity"
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Around a quarter of teenagers work in some capacity"
+                            width="100%"
+                        />
 
                         <BubblesWrapper>
                             <Bubbles>
@@ -219,19 +215,6 @@ const ButtonsBox = styled.div`
   }
 `;
 
-const ListWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-`;
-
-const ListBox = styled.div`
-    width: 100%;
-    
-    @media (min-width: 576px) { 
-        width: 50%; 
-    }
-`;
-
 const BubblesWrapper = styled.div`
     width: 100%;
     background-color: white;
@@ -279,12 +262,11 @@ const Oval = styled.div`
       position: absolute; 
       left: 0;
       top: 0;
-      width: 420px;
+      width: 100%;
       transform: scaleX(-1);
-      display: block;
       
-      @media (min-width: 1200px){
-        display: block;
+      @media (min-width: 420px){
+        width: 420px;
       }
 `;
 

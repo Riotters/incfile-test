@@ -6,6 +6,7 @@ import {color} from "../../../../components/styles/colors";
 import styled from "styled-components";
 import GreenOval from "../../../../images/ovals/top-left-transparent-green2.inline.svg";
 import {gradient} from "../../../atoms/styles/colors";
+import {Link} from "gatsby";
 
 const SettingBusiness = () => (
     <WrapperContainer>
@@ -30,9 +31,9 @@ const SettingBusiness = () => (
                     <h4>Permits & Licenses</h4>
                     <p>
                         Running a real estate business comes with certain rules, regulations and legalities you need to
-                        be aware of. Incfile can conduct a Business License Research package for you, or you can take
-                        the time to do the research yourself. Check out our blog post on real estate business legalities
-                        to follow for more information.
+                        be aware of. Incfile can conduct a <Link to="/">Business License Research</Link> package for you, or you can take
+                        the time to do the research yourself. Check out our <Link to="/">blog post on real estate business legalities
+                        to follow for more information</Link>.
                     </p>
                 </TopImageBox>
 
@@ -83,7 +84,7 @@ const SettingBusiness = () => (
                 <TopImageBox image="we-doubled-the-size-of-customer-service" color={color.orange3}>
                     <h4>Employees</h4>
                     <p>
-                        Do you need to hire employees to help you out? Read our 10 must-know tips for hiring for your business.
+                        Do you need to hire employees to help you out? <Link to="/">Read our 10 must-know tips for hiring for your business</Link>.
                     </p>
                 </TopImageBox>
 
@@ -107,13 +108,13 @@ const ImageBoxes = styled.div`
   grid-gap: 30px;
   padding-top: 112px;
   width: 100%;
-
+  max-width: 970px;
+  
   @media(min-width: 769px) {
     grid-template-columns: 1fr 1fr;
   }
   
   @media (min-width: 970px) {
-    width: 970px;
     margin: 0 auto;
   }
 `;
@@ -129,11 +130,10 @@ const Oval = styled.div`
     position: absolute;
     left: 0;
     top: 0;
-    width 720px;
-    display: none;
+    width: 100%;
   
-    @media (min-width: 1200px) {
-       display: block;
+    @media (min-width: 720px) {
+       width: 720px;
     }
 `;
 
@@ -141,12 +141,11 @@ const Oval2 = styled.div`
     position: absolute;
     right: 0;
     top: 220px;
-    width 720px;
+    width: 100%;
     transform: scaleX(-1);
-    display: none;
   
-    @media (min-width: 1200px) {
-       display: block;
+    @media (min-width: 720px) {
+       width: 720px;
     }
 `;
 

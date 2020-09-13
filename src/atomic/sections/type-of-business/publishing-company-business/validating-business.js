@@ -13,7 +13,7 @@ import Icon1 from "../../../../images/icons/identify-your-unique-selling-point.i
 import Icon2 from "../../../../images/icons/look-at-who-your-competitors-are-in-the-space.inline.svg"
 import Icon3 from "../../../../images/icons/understand-your-market.inline.svg"
 import Icon4 from "../../../../images/icons/get-involved-with-business-communities.inline.svg"
-import OvalBlueSVG from "../../../../images/oval-orange-4.inline.svg";
+import OvalBlueSVG from "../../../../images/ovals/top-right-transparent-orange.inline.svg";
 
 const ContainerWrapper = styled.div`
     background-color: white;
@@ -30,9 +30,9 @@ const GridSection = styled.div`
 const TitleBox = styled.div`
     width: 100%;
     position: relative;
-     
+    max-width: 750px;
+    
     @media (min-width:750px) {
-        width: 750px;
         margin: 0 auto;
     }
     
@@ -49,13 +49,13 @@ const GridSectionList = styled.div`
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
+    max-width: 970px;
     
     > div {
         margin-bottom: 70px;
     }
     
     @media (min-width: 970px) {
-        width: 970px;
         margin: 120px auto 0;
     }
 `;
@@ -64,10 +64,10 @@ const OvalCenter = styled.div`
   position: absolute;
   right: 0;
   top: 38%;
-  display: none;
+  width: 100%;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 720px){
+        width: 720px;
     }
 `
 

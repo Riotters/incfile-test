@@ -10,7 +10,7 @@ export const InfoCards = [
     },
     {
         backgroundColor: color.green3,
-        imageName: "workers-compensation-insurance",
+        imageName: "shield-icon",
         title: "General Liability Insurance",
         content: "This insurance protects your boutique hotel business from claims due to being sued. This may include injury to members of the public, property damage, personal liabilities, legal defense and more. It can help protect your business from financial penalties and bankruptcy. This type of insurance could be essential to your bed and breakfast business since you’ll regularly have guests on the premises."
     },
@@ -167,7 +167,7 @@ export const typeBusiness = {
         {
             circleText: 6,
             imageName: "airbnb-logo",
-            headline: "College or University Town Rooms",
+            headline: "Airbnb",
             text: "Airbnb is another great way to make a living as a boutique hotel, especially if you only have one or two rooms available."
         }
     ]

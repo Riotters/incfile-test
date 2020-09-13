@@ -42,20 +42,11 @@ const Wrapper = styled.div`
     padding-bottom: 0px;
     padding-top: 100px;
     position: relative;
-`;
-
-const TextWrapper = styled.div`
-    width: 100%;
-    position: relative;
-    
-    @media (min-width: 750px) {
-        width: 750px;
-        margin: 48px auto 100px;
-    }
+    overflow: hidden;
 `;
 
 const Service = styled.div`
-  padding: 64px 0;
+  padding-top: 64px;
 `;
 
 const AdventagesBox = styled.div`
@@ -72,11 +63,10 @@ const Oval = styled.div`
     position: absolute;
     left: 0;
     top: 353px;
-    width: 570px;
-     display: none;
+    width: 100%;
     
-    @media (min-width: 720px){
-        display: block; 
+    @media (min-width: 570px){
+        width: 570px; 
     }
 `;
 

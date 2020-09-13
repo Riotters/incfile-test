@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
 import Top from "../../atomic/partials/top";
-import Button from "../../components/button";
+import Button from "../../atomic/molecules/buttons/button";
 import RatingRow from "../../atomic/atoms/boxes/rating-row";
 import CartBlock from "../../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../../atomic/molecules/blocks/rating-block";
@@ -104,7 +104,7 @@ const UniqueBusiness = () => (
 
         <ToolsAndLinks />
 
-        <Conclusion to="/" buttonTitle="Start your Daycare Business with us, today">
+        <Conclusion to="/" buttonTitle="Start your Unique Business with us, today">
             <Heading size={3} style={{fontSize: "48px"}}>
                 Conclusion
             </Heading>
@@ -128,11 +128,10 @@ const Oval = styled.div`
     position: absolute; 
     top: 0;
     left: 0;
-    width: 420px;
-    display: none;
+    width: 100%;
     
     @media (min-width: 420px) {
-        display: block;
+        width: 420px;
     }
 `;
 

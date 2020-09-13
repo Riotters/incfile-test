@@ -2,13 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import Container from "../../../container";
 import TextCenterLayout from "../../../../components/partials/blocks/heading-center";
-import {Paragraph} from "../../../atoms/typography/paragraph";
 import Adventages from "../../../../components/adventages";
 import {color} from "../../../../components/styles/colors";
 import {shadow} from "../../../../components/styles/shadows";
-import Curve from "../../../atoms/shapes/curve";
-import OvalSvg from "../../../../images/oval-babyblue-1.inline.svg";
-import OvalSvgBottom from "../../../../images/blue-oval-3.inline.svg";
+import OvalSvgBottom from "../../../../images/ovals/bottom-left-transparent-blue3.inline.svg";
 import CurveSvg from "../../../../images/curve-babyblue-1.inline.svg";
 import {adventages2} from "../../../../static/type-of-business/publishing-company-business";
 
@@ -45,6 +42,7 @@ const Wrapper = styled.div`
     padding-bottom: 0px;
     padding-top: 100px;
     position: relative;
+    overflow: hidden;
 `;
 
 const Service = styled.div`
@@ -66,13 +64,14 @@ const OvalBottom = styled.div`
     left: 0;
     bottom: 300px;
     opacity: 0.5;
+    width: 100%;
     
     svg {
         transform: scaleY(-1);
     }
     
-    @media (max-width: 970px) {
-        display: none;
+    @media (min-width: 720px) {
+        width: 720px;
     }
 `;
 

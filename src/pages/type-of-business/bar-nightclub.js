@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
 import Top from "../../atomic/partials/top";
-import Button from "../../components/button";
+import Button from "../../atomic/molecules/buttons/button";
 import RatingRow from "../../atomic/atoms/boxes/rating-row";
 import CartBlock from "../../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../../atomic/molecules/blocks/rating-block";
@@ -23,7 +23,6 @@ import TextBlockWithImage from "../../atomic/molecules/mixed-blocks/text-block-w
 import {color} from "../../components/styles/colors";
 import CountingTextBoxed from "../../atomic/molecules/text-blocks/counting-text-boxed";
 import OvalBlueSmallSvg from "../../images/ovals/bottom-left-transparent-blue3.inline.svg";
-import OvalGreenSvg from "../../images/ovals/top-left-transparent-green3.inline.svg";
 import OvalPinkSvg from "../../images/ovals/top-left-transparent-pink.inline.svg";
 import ImageContent from "../../components/partials/blocks/left-image-right-content";
 import HandsIcon from "../../images/icons/hands.inline.svg";
@@ -52,6 +51,7 @@ import HireEmployees from "../../atomic/sections/type-of-business/bar-nightclub/
 import StarIcon from "../../images/icons/if-youre-interested-in-starting-a-bar-club.inline.svg";
 import OvalSvg from "../../images/ovals/bottom-left-transparent-orange.inline.svg";
 import {gradient} from "../../atomic/atoms/styles/colors";
+import {Link} from "gatsby";
 
 const BarNightclub = () => (
     <Layout>
@@ -256,7 +256,7 @@ const BarNightclub = () => (
                             an establishment like this.
                         </Paragraph>
 
-                        <Paragraph big style={{fontWeight: "bold"}}>
+                        <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
                             Understand Your Local Market Opportunity & Customers
                         </Paragraph>
                         <Paragraph big>
@@ -266,7 +266,7 @@ const BarNightclub = () => (
                             with bars or clubs, so choosing the right location will be vital to your success.
                         </Paragraph>
 
-                        <Paragraph big style={{fontWeight: "bold"}}>
+                        <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
                             What Kind of Bar or Club Should You Open?
                         </Paragraph>
                         <Paragraph big>
@@ -364,7 +364,7 @@ const BarNightclub = () => (
                             The Challenges of Running a Bar or Club
                         </Heading>
 
-                        <Paragraph big style={{fontWeight: "bold"}}>
+                        <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
                             Is Being a Bar or Club Owner Right for You?
                         </Paragraph>
                         <Paragraph big>
@@ -388,10 +388,12 @@ const BarNightclub = () => (
 
                         <Colorbox color={color.blue3} theme="icon" curve curveColor={color.blue1}>
                             <Paragraph big style={{fontWeight: "bold"}}>
-                                There are strict rules, regulations and compliance on serving alcohol that are different from state to state.
+                                There are strict rules, regulations and compliance on serving alcohol that are different
+                                from state to state.
                             </Paragraph>
                             <Paragraph bottomMargin={0}>
-                                One of the main issues new bar owners will face is getting the right licenses to serve alcohol and food. The type, cost and availability
+                                One of the main issues new bar owners will face is getting the right licenses to serve
+                                alcohol and food. The type, cost and availability
                                 of alcohol licenses vary widely; you may also need a specialized entertainment license.
                             </Paragraph>
                         </Colorbox>
@@ -402,7 +404,7 @@ const BarNightclub = () => (
                             well-managed, that competition may not last for long.
                         </Paragraph>
 
-                        <Paragraph big style={{fontWeight: "bold"}}>
+                        <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
                             Skills Needed to Be a Successful Bar or Club Owner
                         </Paragraph>
 
@@ -487,13 +489,20 @@ const BarNightclub = () => (
                             </div>
                         </TextBoxed>
 
-                        <Paragraph big style={{fontWeight: "bold", marginTop: "32px", textAlign: "right"}}>
+                        <Paragraph big style={{
+                            fontFamily: "Avenir-Heavy",
+                            color: color.black,
+                            marginTop: "32px",
+                            textAlign: "right"
+                        }}>
                             ...and many more
                         </Paragraph>
 
                         <Paragraph big>
-                            You will be working long hours, often up early in the morning and staying past closing time. No two days will be quite the same, although many
-                            of those days are likely to be tiring! You will need to deal with a high staff turnover and be able to spot good servers and bartenders who will work well with your patrons.
+                            You will be working long hours, often up early in the morning and staying past closing time.
+                            No two days will be quite the same, although many
+                            of those days are likely to be tiring! You will need to deal with a high staff turnover and
+                            be able to spot good servers and bartenders who will work well with your patrons.
                         </Paragraph>
 
                     </PanelWrapper>
@@ -516,10 +525,15 @@ const BarNightclub = () => (
                         Understand Your Bar or Club Business Model and Financial Projections
                     </Heading>
                     <Paragraph big>
-                        All businesses need a business model, which details the way you will generate sales, provide services and make money. Think about your business model now, because it’s better to have that in place so you can start acquiring customers and generating revenue from day one.
+                        All businesses need a business model, which details the way you will generate sales, provide
+                        services and make money. Think about your business model now, because it’s better to have that
+                        in place so you can start acquiring customers and generating revenue from day one.
                     </Paragraph>
                     <Paragraph big>
-                        You will also need to look at financial projections for your bar or club business. What are your expected sales and revenues? What is your profitability? How much money will you keep in the business to grow it? How much will you pay yourself and others? If you can, try to plan your revenue out for the next month, three months, year and two years.
+                        You will also need to look at financial projections for your bar or club business. What are your
+                        expected sales and revenues? What is your profitability? How much money will you keep in the
+                        business to grow it? How much will you pay yourself and others? If you can, try to plan your
+                        revenue out for the next month, three months, year and two years.
                     </Paragraph>
                 </CenterBox>
                 <CenterBox>
@@ -528,7 +542,8 @@ const BarNightclub = () => (
                     </Heading>
 
                     <Paragraph big>
-                        Finally, you should put your business plan together. Business plans do vary slightly, but they should cover the following areas:
+                        Finally, you should put your business plan together. Business plans do vary slightly, but they
+                        should cover the following areas:
                     </Paragraph>
 
                     <CountingTextBoxed number={1}>
@@ -586,7 +601,7 @@ const BarNightclub = () => (
                     </CountingTextBoxed>
 
                     <Paragraph big mixed={true} style={{marginTop: "50px"}}>
-                        We’ve got the perfect <span style={{color: color.blue1, fontWeight: "bold"}}>guide to writing your business plan.</span>
+                        We’ve got the perfect <Link to="/">guide to writing your business plan.</Link>
                     </Paragraph>
                 </CenterBox>
             </Container>
@@ -605,7 +620,9 @@ const BarNightclub = () => (
                             Choose the Right Business Structure and Register Your Bar or Club Business
                         </Heading>
                         <Paragraph big>
-                            Now that you have all the background information for your bar or club business, it’s time to make it into a reality. That starts by choosing the right structure or “legal entity” for your business. In the US, there are four main business structures. They are:
+                            Now that you have all the background information for your bar or club business, it’s time to
+                            make it into a reality. That starts by choosing the right structure or “legal entity” for
+                            your business. In the US, there are four main business structures. They are:
                         </Paragraph>
 
                         <TextBlockWithImage
@@ -622,17 +639,20 @@ const BarNightclub = () => (
                             width={100}
                             widthUnit="%"
                         >
-                            <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                        mixed={true}>
-                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                    <ArrowSVG/>
-                                </IconCircle>
-                                Sole Proprietorship
+                                <FlexLink to="/">
+                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                        <ArrowSVG/>
+                                    </IconCircle>
+                                    Sole Proprietorship
+                                </FlexLink>
                             </Paragraph>
 
                             <Paragraph big>
                                 This is the "default" business structure and is what your business will
-                                be if you decide not to create a more formal structure. We don't recommend this type of business as it doesn't give you the legal protections you need.
+                                be if you decide not to create a more formal structure. We don't recommend this type of
+                                business as it doesn't give you the legal protections you need.
                             </Paragraph>
                         </TextBlockWithImage>
 
@@ -650,12 +670,14 @@ const BarNightclub = () => (
                             width={100}
                             widthUnit="%"
                         >
-                            <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                        mixed={true}>
-                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                    <ArrowSVG/>
-                                </IconCircle>
-                                Limited Liability Company or LLC
+                                <FlexLink to="/">
+                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                        <ArrowSVG/>
+                                    </IconCircle>
+                                    Limited Liability Company or LLC
+                                </FlexLink>
                             </Paragraph>
 
                             <Paragraph big>
@@ -679,17 +701,20 @@ const BarNightclub = () => (
                             width={100}
                             widthUnit="%"
                         >
-                            <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                        mixed={true}>
-                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                    <ArrowSVG/>
-                                </IconCircle>
-                                Series LLC
+                                <FlexLink to="/">
+                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                        <ArrowSVG/>
+                                    </IconCircle>
+                                    Series LLC
+                                </FlexLink>
                             </Paragraph>
 
                             <Paragraph big>
                                 This is a special type of LLC entity that's only available in certain states.
-                                It allows you to create "mini" LLCs, each with their own limited liability and separate assets, under the umbrella of a master LLC.
+                                It allows you to create "mini" LLCs, each with their own limited liability and separate
+                                assets, under the umbrella of a master LLC.
                             </Paragraph>
                         </TextBlockWithImage>
 
@@ -709,14 +734,17 @@ const BarNightclub = () => (
                         >
                             <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
                                        mixed={true}>
-                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                    <ArrowSVG/>
-                                </IconCircle>
-                                S Corporation
+                                <FlexLink to="/">
+                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                        <ArrowSVG/>
+                                    </IconCircle>
+                                    S Corporation
+                                </FlexLink>
                             </Paragraph>
 
                             <Paragraph big>
-                                This is a more complex type of business and isn't generally recommended for smaller organization.
+                                This is a more complex type of business and isn't generally recommended for smaller
+                                organization.
                             </Paragraph>
                         </TextBlockWithImage>
 
@@ -736,28 +764,38 @@ const BarNightclub = () => (
                         >
                             <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
                                        mixed={true}>
-                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                    <ArrowSVG/>
-                                </IconCircle>
-                                C Corporation
+                                <FlexLink to="/">
+                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                        <ArrowSVG/>
+                                    </IconCircle>
+                                    C Corporation
+                                </FlexLink>
                             </Paragraph>
 
                             <Paragraph big>
-                                These are the largest and most complex types of businesses and are far more than the average entrepreneur or business owner will need.
+                                These are the largest and most complex types of businesses and are far more than the
+                                average entrepreneur or business owner will need.
                             </Paragraph>
                         </TextBlockWithImage>
 
                         <Paragraph big style={{paddingTop: "120px"}} mixed={true}>
-                            For more information on the advantages and disadvantages of different types of businesses, please see our in-depth guide. If you’ve still got questions, we’ve answered them to help you choose the right business structure.
+                            For more information on the advantages and disadvantages of different types of businesses,
+                            please <Link to="/">see our in-depth guide</Link>. If you’ve still got questions, <Link
+                            to="/">we’ve answered them to help
+                            you choose the right business structure</Link>.
                         </Paragraph>
                         <Paragraph big mixed={true}>
-                            In most cases our recommendation would be to create an LLC. We’ve got a complete guide to everything you need to do and we can set one up for your bar or club business. LLC formation does vary from state
-                            to state, but we’ve got you covered, wherever you are.
+                            In most cases our recommendation would be to create an LLC. We’ve got a <Link to="/">complete
+                            guide to
+                            everything you need to do</Link> and we can set one up for your bar or club business. <Link
+                            to="/">LLC formation
+                            does vary from state
+                            to state</Link>, but we’ve got you covered, wherever you are.
                         </Paragraph>
 
-                        <Button theme="primary48" width="365px" arrow>
-                            Start your business with us, today!
-                        </Button>
+                        <Button theme="primary48" width="365px" arrow
+                                content={{url: "/", text: "Start your business with us, today!"}}/>
+
                     </ImageContent>
                 </BusinessOwnerResponsibilities>
             </Container>
@@ -767,140 +805,137 @@ const BarNightclub = () => (
 
         <OrderNow/>
 
-        <TabScrollable />
+        <TabScrollable/>
 
         <Taxes/>
 
-        <HireEmployees />
+        <HireEmployees/>
 
         <Links/>
 
-        <Conclusion to="/" buttonTitle="Start your Etsy Business with us, today">
+        <Conclusion to="/" buttonTitle="Start your bar business with us, today">
             <Heading size={3} style={{fontSize: "40px"}}>Conclusion</Heading>
             <Paragraph big>
-                Although there are many challenges in running a bar or club business, they can still be an excellent way to generate revenue and create a great place for your patrons and employees. Find the perfect location, create the right type of bar, hire excellent people and share your establishment's uniqueness to really stand out.
+                Although there are many challenges in running a bar or club business, they can still be an excellent way
+                to generate revenue and create a great place for your patrons and employees. Find the perfect location,
+                create the right type of bar, hire excellent people and share your establishment's uniqueness to really
+                stand out.
             </Paragraph>
             <Paragraph big>
-                When you’re ready to start your bar or club business, we’re here to help.
+                When you’re ready to start your bar or club business, <Link to="/">we’re here to help</Link>.
             </Paragraph>
         </Conclusion>
     </Layout>
 );
 
 const ButtonsBox = styled.div`
-  display: flex;
-  flex-direction: column;
+display: flex;
+flex-direction: column;
 
-  @media (min-width: 769px) {
-    flex-direction: row;
-  }
+@media (min-width: 769px) {
+    flex - direction: row;
+}
 `;
 
 const ListWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
+display: flex;
+flex-wrap: wrap;
 `;
 
 const ListBox = styled.div`
-    width: 100%;
-    
-    @media (min-width: 576px) { 
-        width: 50%; 
-    }
-`;
+width: 100%;
 
-const BlueContainer = styled.section`
-    background: rgb(242,246,255);
-    background: linear-gradient(0deg, rgba(242,246,255,1) 0%, rgba(250,251,255,1) 100%);
-    padding-top: 100px;
-    position: relative;
+@media (min-width: 576px) {
+    width: 50%;
+}
 `;
 
 const CenterBox = styled.div`
-    width: 100%;
-    padding-bottom: 100px;
-    
-    @media (min-width: 670px) {
-        width: 670px;
-        margin: 0 auto;
-    }
+width: 100%;
+padding-bottom: 100px;
+max-width: 670px;
+
+@media (min-width: 670px) {
+    margin: 0 auto;
+}
 `;
 
 const SimpleSection = styled.div`
-    padding-top: 100px;
-    position: relative;
-    background-image: ${gradient.orange3};
+padding-top: 100px;
+position: relative;
+background-image: ${gradient.orange3};
 `;
 
 const BusinessOwnerResponsibilities = styled.section`
-  position: relative;
-  padding-top: 75px;
-  padding-bottom: 64px;
+position: relative;
+padding-top: 75px;
+padding-bottom: 64px;
 
-  .colorbox {
-    margin-bottom: 48px;
-  }
+.colorbox {
+    margin - bottom: 48px;
+}
 `;
 
 const WhiteContainer = styled.div`
-    background: rgb(255,255,255);
-    padding-bottom: 100px;
-    position: relative;
+background: rgb(255,255,255);
+padding-bottom: 100px;
+position: relative;
 `;
 
 const Oval = styled.div`
-  position: absolute; 
-  left: 0;
-  top: 200px;
-  width: 570px; 
-  display: none;
-  
-  @media (min-width: 720px){
-    display: block;
-  }
+position: absolute;
+left: 0;
+top: 200px;
+width: 100%;
+
+@media (min-width: 570px){
+    width: 570px;
+}
 `
 
 const OvalTabs = styled.div`
-  position: absolute; 
-  left: 0;
-  top: 0;
-  width: 420px; 
-  display: none;
-  
-  @media (min-width: 720px){
-    display: block;
-  }
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+
+@media (min-width: 420px){
+    width: 420px;
+}
 `;
 
 const OvalGreen = styled.div`
-  position: absolute; 
-  left: 0;
-  top: -210px;
-  width: 420px;
-  display: none;
-  transform: scaleY(-1);
-  
-  @media (min-width: 720px){
-    display: block;
-  }
+position: absolute;
+left: 0;
+top: -210px;
+width: 100%;
+transform: scaleY(-1);
+
+@media (min-width: 420px){
+    width: 420px;
+}
 `
 
 const OvalGreen2 = styled.div`
-  position: absolute; 
-  right: 0;
-  bottom: 377px; 
-  transform: scaleY(-1);
-  width: 720px;
-  
-  svg {
+position: absolute;
+right: 0;
+bottom: 377px;
+transform: scaleY(-1);
+width: 100%;
+
+svg {
     transform: scaleX(-1);
-  }
-  
-  display: none;
-  
-  @media (min-width: 720px){
-    display: block;
-  }
+}
+
+@media (min-width: 720px){
+    width: 720px;
+}
 `
+
+const FlexLink = styled(Link)`
+display: flex;
+align-items: center;
+justify-content: flex-start;
+`;
 
 export default BarNightclub;

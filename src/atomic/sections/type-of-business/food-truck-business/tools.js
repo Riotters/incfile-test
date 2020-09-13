@@ -25,25 +25,25 @@ const ToolsAndLinks = () => (
             <LinksContainer>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.reddit.com/r/foodtrucks/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Reddit — Food Trucks subreddit
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.reddit.com/r/EntrepreneurRideAlong/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Reddit — Entrepreneur Ride Along
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://roadfood.com/forums/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Road Food Forums
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="http://streetvendorforum.com/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Street Vendor Forums
                     </PathLink>
                 </LinkItem>
@@ -70,7 +70,7 @@ const LinksContainer = styled.div`
     justify-content: space-between;
     flex-wrap: wrap;
     
-    @media (min-width: 1000px) {
+    @media (min-width: 1100px) {
         width: 1000px;
     }
 `;
@@ -87,7 +87,7 @@ const LinkItem = styled.div`
         width: 470px;
     }
     
-    @media (min-width: 1000px) {
+    @media (min-width: 1100px) {
         margin-left: 15px;
         margin-right: 15px;
     }
@@ -97,11 +97,10 @@ const Oval = styled.div`
     position: absolute;
     top: 0;
     right: 0;
-    width: 720px;
-    display: none;
+    width: 100%;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 720px){
+        width: 720px;
     }
 `;
 
@@ -109,11 +108,10 @@ const Oval2 = styled.div`
     position: absolute;
     bottom: 38px;
     left: 0;
-    width: 420px;
-    display: none;
+    width: 100%;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 420px){
+        width: 420px;
     }
 `;
 

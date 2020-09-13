@@ -4,15 +4,15 @@
     "reportVersion": 2,
     "event": "Allocation failed - JavaScript heap out of memory",
     "trigger": "FatalError",
-    "filename": "report.20200906.152541.25453.0.001.json",
-    "dumpEventTime": "2020-09-06T15:25:41Z",
-    "dumpEventTimeStamp": "1599398741392",
-    "processId": 25453,
+    "filename": "report.20200913.143237.57012.0.001.json",
+    "dumpEventTime": "2020-09-13T14:32:37Z",
+    "dumpEventTimeStamp": "1600000357490",
+    "processId": 57012,
     "threadId": null,
     "cwd": "/Users/denniskruk/Sites/incfile-test",
     "commandLine": [
       "node",
-      "/Users/denniskruk/Sites/incfile-test/.cache/tmp-25447-jGdCcAvIRblV",
+      "/Users/denniskruk/Sites/incfile-test/.cache/tmp-57004-b6PmNuI0K9RZ",
       "--inspect=9229"
     ],
     "nodejsVersion": "v12.16.3",
@@ -51,109 +51,109 @@
       {
         "model": "Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz",
         "speed": 2200,
-        "user": 22088080,
+        "user": 36940100,
         "nice": 0,
-        "sys": 8591950,
-        "idle": 90830470,
+        "sys": 25447510,
+        "idle": 128017130,
         "irq": 0
       },
       {
         "model": "Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz",
         "speed": 2200,
-        "user": 1622490,
+        "user": 2739990,
         "nice": 0,
-        "sys": 1046740,
-        "idle": 118839070,
+        "sys": 1147740,
+        "idle": 186509090,
         "irq": 0
       },
       {
         "model": "Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz",
         "speed": 2200,
-        "user": 19548520,
+        "user": 32644830,
         "nice": 0,
-        "sys": 5412310,
-        "idle": 96547820,
+        "sys": 18763900,
+        "idle": 138989270,
         "irq": 0
       },
       {
         "model": "Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz",
         "speed": 2200,
-        "user": 1499670,
+        "user": 2640090,
         "nice": 0,
-        "sys": 872780,
-        "idle": 119135800,
+        "sys": 995290,
+        "idle": 186761290,
         "irq": 0
       },
       {
         "model": "Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz",
         "speed": 2200,
-        "user": 15744730,
+        "user": 27646350,
         "nice": 0,
-        "sys": 4323740,
-        "idle": 101440090,
+        "sys": 15024050,
+        "idle": 147727340,
         "irq": 0
       },
       {
         "model": "Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz",
         "speed": 2200,
-        "user": 1482990,
+        "user": 2671930,
         "nice": 0,
-        "sys": 751020,
-        "idle": 119274210,
+        "sys": 888130,
+        "idle": 186836480,
         "irq": 0
       },
       {
         "model": "Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz",
         "speed": 2200,
-        "user": 13882570,
+        "user": 24663570,
         "nice": 0,
-        "sys": 3500220,
-        "idle": 104125700,
+        "sys": 11261510,
+        "idle": 154472410,
         "irq": 0
       },
       {
         "model": "Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz",
         "speed": 2200,
-        "user": 1479320,
+        "user": 2741330,
         "nice": 0,
-        "sys": 644360,
-        "idle": 119384490,
+        "sys": 784430,
+        "idle": 186870640,
         "irq": 0
       },
       {
         "model": "Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz",
         "speed": 2200,
-        "user": 12626360,
+        "user": 22297330,
         "nice": 0,
-        "sys": 2963480,
-        "idle": 105918580,
+        "sys": 9162540,
+        "idle": 158937350,
         "irq": 0
       },
       {
         "model": "Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz",
         "speed": 2200,
-        "user": 1444290,
+        "user": 2727260,
         "nice": 0,
-        "sys": 557160,
-        "idle": 119506690,
+        "sys": 701190,
+        "idle": 186967800,
         "irq": 0
       },
       {
         "model": "Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz",
         "speed": 2200,
-        "user": 10817720,
+        "user": 19171130,
         "nice": 0,
-        "sys": 2321960,
-        "idle": 108368660,
+        "sys": 6719040,
+        "idle": 164506790,
         "irq": 0
       },
       {
         "model": "Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz",
         "speed": 2200,
-        "user": 1423920,
+        "user": 2743990,
         "nice": 0,
-        "sys": 481350,
-        "idle": 119602820,
+        "sys": 639780,
+        "idle": 187012330,
         "irq": 0
       }
     ],
@@ -197,7 +197,7 @@
         "name": "en0",
         "internal": false,
         "mac": "f0:18:98:66:84:63",
-        "address": "fe80::1892:248a:1cf:438d",
+        "address": "fe80::1083:3fa:9e08:23fe",
         "netmask": "ffff:ffff:ffff:ffff::",
         "family": "IPv6",
         "scopeid": 15
@@ -213,8 +213,8 @@
       {
         "name": "awdl0",
         "internal": false,
-        "mac": "8a:ad:99:09:ad:72",
-        "address": "fe80::88ad:99ff:fe09:ad72",
+        "mac": "c2:a0:9c:71:1b:c8",
+        "address": "fe80::c0a0:9cff:fe71:1bc8",
         "netmask": "ffff:ffff:ffff:ffff::",
         "family": "IPv6",
         "scopeid": 17
@@ -222,8 +222,8 @@
       {
         "name": "llw0",
         "internal": false,
-        "mac": "8a:ad:99:09:ad:72",
-        "address": "fe80::88ad:99ff:fe09:ad72",
+        "mac": "c2:a0:9c:71:1b:c8",
+        "address": "fe80::c0a0:9cff:fe71:1bc8",
         "netmask": "ffff:ffff:ffff:ffff::",
         "family": "IPv6",
         "scopeid": 18
@@ -232,7 +232,7 @@
         "name": "utun0",
         "internal": false,
         "mac": "00:00:00:00:00:00",
-        "address": "fe80::ecc9:7793:22b5:d5cf",
+        "address": "fe80::6579:2469:9ef0:582",
         "netmask": "ffff:ffff:ffff:ffff::",
         "family": "IPv6",
         "scopeid": 19
@@ -241,7 +241,7 @@
         "name": "utun1",
         "internal": false,
         "mac": "00:00:00:00:00:00",
-        "address": "fe80::e3d2:514d:8368:88d5",
+        "address": "fe80::ce9d:1fee:71c:d6b8",
         "netmask": "ffff:ffff:ffff:ffff::",
         "family": "IPv6",
         "scopeid": 20
@@ -250,7 +250,7 @@
         "name": "utun2",
         "internal": false,
         "mac": "00:00:00:00:00:00",
-        "address": "fe80::615:236e:e744:432c",
+        "address": "fe80::b610:3d42:2c7a:25a0",
         "netmask": "ffff:ffff:ffff:ffff::",
         "family": "IPv6",
         "scopeid": 21
@@ -259,7 +259,7 @@
         "name": "utun3",
         "internal": false,
         "mac": "00:00:00:00:00:00",
-        "address": "fe80::1abc:3145:6422:4fc5",
+        "address": "fe80::9144:ae65:d701:c38c",
         "netmask": "ffff:ffff:ffff:ffff::",
         "family": "IPv6",
         "scopeid": 22
@@ -328,10 +328,10 @@
     }
   ],
   "javascriptHeap": {
-    "totalMemory": 2151833600,
-    "totalCommittedMemory": 2150329072,
-    "usedMemory": 2136080296,
-    "availableMemory": 48076608,
+    "totalMemory": 2165129216,
+    "totalCommittedMemory": 2163279232,
+    "usedMemory": 2152604584,
+    "availableMemory": 35101728,
     "memoryLimit": 2197815296,
     "heapSpaces": {
       "read_only_space": {
@@ -349,31 +349,31 @@
         "available": 1047456
       },
       "old_space": {
-        "memorySize": 769269760,
-        "committedMemory": 769144824,
-        "capacity": 756517504,
-        "used": 756517504,
+        "memorySize": 755113984,
+        "committedMemory": 754893512,
+        "capacity": 745888648,
+        "used": 745888648,
         "available": 0
       },
       "code_space": {
-        "memorySize": 6197248,
-        "committedMemory": 6095616,
-        "capacity": 5363936,
-        "used": 5363936,
-        "available": 0
+        "memorySize": 6459392,
+        "committedMemory": 6107840,
+        "capacity": 5633632,
+        "used": 5312896,
+        "available": 320736
       },
       "map_space": {
         "memorySize": 15208448,
         "committedMemory": 15207000,
-        "capacity": 14860080,
-        "used": 14860080,
+        "capacity": 14860960,
+        "used": 14860960,
         "available": 0
       },
       "large_object_space": {
-        "memorySize": 1358577664,
-        "committedMemory": 1358577664,
-        "capacity": 1358141232,
-        "used": 1358141232,
+        "memorySize": 1385766912,
+        "committedMemory": 1385766912,
+        "capacity": 1385344536,
+        "used": 1385344536,
         "available": 0
       },
       "code_large_object_space": {
@@ -393,13 +393,13 @@
     }
   },
   "resourceUsage": {
-    "userCpuSeconds": 5229.24,
-    "kernelCpuSeconds": 313.237,
-    "cpuConsumptionPercent": 12.8838,
-    "maxRss": 1593143459840,
+    "userCpuSeconds": 6825.84,
+    "kernelCpuSeconds": 421.487,
+    "cpuConsumptionPercent": 17.568,
+    "maxRss": 1524784693248,
     "pageFaults": {
-      "IORequired": 573,
-      "IONotRequired": 69099415
+      "IORequired": 1930,
+      "IONotRequired": 79687303
     },
     "fsActivity": {
       "reads": 0,
@@ -418,14 +418,14 @@
     "LOGIN_SHELL": "1",
     "PATH": "/usr/local/opt/php@7.2/sbin:/usr/local/opt/php@7.2/bin:/Users/denniskruk/.nvm/versions/node/v12.16.3/bin:/usr/local/sbin:/usr/local/opt/php@7.2/sbin:/usr/local/opt/php@7.2/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/denniskruk/Sites/incfile-test/node_modules/.bin",
     "USER": "denniskruk",
-    "SSH_AUTH_SOCK": "/private/tmp/com.apple.launchd.OlHFZnaoNW/Listeners",
+    "SSH_AUTH_SOCK": "/private/tmp/com.apple.launchd.7xpaCxJfi7/Listeners",
     "TMPDIR": "/var/folders/8q/lq7g89r126x_y3wnl5hnllt80000gn/T/",
     "SHELL": "/bin/zsh",
     "LOGNAME": "denniskruk",
     "XPC_SERVICE_NAME": "0",
     "LC_CTYPE": "pl_PL.UTF-8",
     "XPC_FLAGS": "0x0",
-    "DISPLAY": "/private/tmp/com.apple.launchd.94UmA8LS7F/org.macosforge.xquartz:0",
+    "DISPLAY": "/private/tmp/com.apple.launchd.GJ6s1gs7lu/org.macosforge.xquartz:0",
     "TERM": "xterm-256color",
     "TERMINAL_EMULATOR": "JetBrains-JediTerm",
     "SHLVL": "1",

@@ -60,7 +60,7 @@ const ConstructionCompany = () => (
 
         <TabsWrapper>
             <Oval>
-                <OvalSvg />
+                <OvalSvg/>
             </Oval>
             <TabsSection>
                 <TabHeading>
@@ -222,26 +222,22 @@ const ConstructionCompany = () => (
                         <BlueBoxWithAbsoluteText absoluteText="$1.4T"
                                                  text="Expected construction expenditures grow by 2021."/>
 
-                        <div style={{marginBottom: "30px", marginTop: "70px"}}>
+                        <div style={{marginTop: "70px"}}>
                             <Adventages
                                 headline="The U.S. construction industry is responsible for over 4% of U.S. GDP"
                                 width="100%"
                             />
                         </div>
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Currently, the majority of growth in the construction industry is in residential building"
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Currently, the majority of growth in the construction industry is in residential building"
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Public sector construction saw the slowest growth"
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Public sector construction saw the slowest growth"
+                            width="100%"
+                        />
                     </PanelWrapper>
 
                     <PanelWrapper>
@@ -371,9 +367,7 @@ const ConstructionCompany = () => (
             </Heading>
 
             <Paragraph big>
-                The internet has lowered the barriers to finding the perfect vacation, but many people still need the
-                experience and expertise that a great travel agent provides. Find the right niche, get your marketing
-                right and you could see huge success as a travel agent.
+                If you have the right expertise and hands-on skills, a construction company is a great way to build a thriving business. Identify your niche, create a rock solid construction business plan and get the right marketing in place and you could be the next great home builder!
             </Paragraph>
         </Conclusion>
     </Layout>
@@ -409,12 +403,11 @@ const Oval = styled.div`
     position: absolute;
     left: 0;
     top: 0;
-    width: 420px;
+    width: 100%;
     z-index: -1;
-    display: none;
     
-    @media (min-width: 1200px) {
-        display: block;
+    @media (min-width: 420px) {
+        width: 420px;
     }
 `;
 

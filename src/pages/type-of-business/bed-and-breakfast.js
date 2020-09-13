@@ -46,7 +46,8 @@ const BedAndBreakfast = () => (
         <SEO title="How to Start a Bed and Breakfast or Hotel Business"
              description="A bookstore is one of the most enduring and traditional types of business you could open. Despite this, there have been plenty of challenges to the bookstore model over the last few years, with the increase in ecommerce, the rise of Amazon and the move toward ebooks."/>
 
-        <Top ovalColor="purple" imageName="bed-and-breakfast-main" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
+        <Top ovalColor="purple-2" imageName="bed-and-breakfast-main" imageAlt="Mr Bulb with seedling"
+             headlineWidth={700}>
             <h1>How to Start a Bed and Breakfast or Hotel Business</h1>
             <p>
                 What could be better than creating the perfect location and
@@ -68,7 +69,7 @@ const BedAndBreakfast = () => (
 
         <TabsWrapper>
             <TabsOval>
-                <TabsOvalSvg />
+                <TabsOvalSvg/>
             </TabsOval>
             <TabsSection style={{marginTop: "100px"}}>
                 <TabHeading>
@@ -103,18 +104,18 @@ const BedAndBreakfast = () => (
                             </Paragraph>
                         </Colorbox>
 
-                        <Paragraph big style={{marginTop: "48px", fontWeight: "bold"}}>
+                        <Paragraph big style={{marginTop: "72px", marginBottom: "24px", fontFamily: "Avenir-Heavy", color: color.black}}>
                             To get you off on the right foot, here’s our simple guide to starting
                             up a successful bed and breakfast business.
                         </Paragraph>
 
-                        <Paragraph big>
+                        <Paragraph big style={{marginBottom: "72px"}}>
                             From highlighting important facts to validating your ideas, and from choosing the right
                             structure to your options for managing and running your business, you’ll find the answers
                             you need.
                         </Paragraph>
 
-                        <Paragraph big style={{marginTop: "48px", fontWeight: "bold"}}>
+                        <Paragraph big style={{marginBottom: "48px", fontFamily: "Avenir-Heavy", color: color.black}}>
                             Read on for some insight into creating your own bed and breakfast business and becoming an
                             entrepreneur. In this guide we will cover:
                         </Paragraph>
@@ -226,36 +227,29 @@ const BedAndBreakfast = () => (
                         <BlueBoxWithAbsoluteText absoluteText="$3B"
                                                  text="Revenue of the industry per year as a whole"/>
 
-                        <CircleWithText textInsideCircle="44" textLine="Average occupancy rate of B&Bs in the U.S."
+                        <CircleWithText styles={{marginBottom: "80px"}} textInsideCircle="44"
+                                        textLine="Average occupancy rate of B&Bs in the U.S."
                                         SvgChart={CircleSvg} withBg={true} symbol="%"/>
 
-                        <div style={{marginBottom: "30px", marginTop: "80px"}}>
-                            <Adventages
-                                headline="The average daily rate for a room is around $150"
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="The average daily rate for a room is around $150"
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Most B&Bs have between four and eleven rooms, with six being the average"
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Most B&Bs have between four and eleven rooms, with six being the average"
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="The most popular locations for bed and breakfasts (in descending order) are small villages, rural locations and urban vacation spots"
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="The most popular locations for bed and breakfasts (in descending order) are small villages, rural locations and urban vacation spots"
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Almost three-quarters of boutique hotel owners are couples, and 80 percent of all B&B owners live on the premises of their lodging"
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Almost three-quarters of boutique hotel owners are couples, and 80 percent of all B&B owners live on the premises of their lodging"
+                            width="100%"
+                        />
 
                     </PanelWrapper>
 
@@ -500,12 +494,11 @@ const TabsOval = styled.div`
     position: absolute;
     left: 0;
     top: 0;
-    width: 420px;
+    width: 100%;
     transform: scaleY(-1);
-    display: none;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 420px){
+        width: 420px;
     }
 `;
 export default BedAndBreakfast;

@@ -5,8 +5,9 @@ import {Heading} from "../../../atoms/typography/heading";
 import CountingTextBoxed from "../../../molecules/text-blocks/counting-text-boxed";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import Container from "../../../container";
-import OvalOrange1 from "../../../../images/oval-orange-2.inline.svg";
-import OvalSVG from "../../../../images/oval-orange-4.inline.svg";
+import OvalOrange1 from "../../../../images/ovals/top-right-transparent-orange.inline.svg";
+import OvalSVG from "../../../../images/ovals/top-left-transparent-orange2.inline.svg";
+import {Link} from "gatsby";
 
 const Wrapper = styled.div`
     position: relative;
@@ -18,9 +19,9 @@ const BusinessOwnerResponsibilities = styled.section`
   padding-top: 75px;
   padding-bottom: 64px;
   width: 100%;
+  max-width: 770px;
   
   @media (min-width: 770px) {
-    width: 770px;
     margin: 0 auto;
   }
 
@@ -38,9 +39,15 @@ const Oval = styled.div`
   position: absolute;
   left: 0;
   top: 50%;
+  width: 100%;
+  transform: scaleX(-1);
   
   svg{
     transform: scaleY(-1);
+  }
+  
+  @media (min-width: 720px){
+    width: 720px;
   }
 `
 
@@ -48,6 +55,12 @@ const OvalCenter = styled.div`
   position: absolute;
   right: 0;
   top: 0;
+  width: 100%;
+  transform: scaleX(-1);
+  
+  @media (min-width: 570px){
+    width: 570px;
+  }
 `
 
 const BusinessPlan = () => (
@@ -139,7 +152,7 @@ const BusinessPlan = () => (
                 </CountingTextBoxed>
 
                 <Paragraph big style={{marginTop: "50px"}} mixed={true}>
-                    We’ve got the perfect <span style={{color: color.blue1, fontWeight: "bold"}}>guide to writing your business plan.</span>
+                    We’ve got the perfect <Link to="/">guide to writing your business plan.</Link>
                 </Paragraph>
             </BusinessOwnerResponsibilities>
         </Container>

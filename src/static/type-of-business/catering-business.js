@@ -1,15 +1,44 @@
-import {color} from "../../components/styles/colors";
+import {color} from "../../atomic/atoms/styles/colors";
 
 export const LicensesAccordionContent = {
     items: [
         {
-            question: "Local"
+            question: "Local",
+            answer: `Your region, county or city may require you to have licenses or permits to operate a business. Talk to your city’s Chamber of Commerce to learn about your local licensing and permit requirements.`
         },
         {
-            question: "State"
+            question: "State",
+            answer: [
+                {
+                    text: `You can find all the information you need on statewide licenses and permits on the website for your Secretary of State. You can find all those details in our`
+                },
+                {
+                    text: `state-by-state guides to company formation`,
+                    url: `/`
+                },
+                {
+                    text: `Alternatively, the Small Business Administration website has a`
+                },
+                {
+                    text: `list of licenses and permits by state`,
+                    url: `/`
+                }
+            ]
         },
         {
-            question: "Federal"
+            question: "Federal",
+            answer: [
+                {
+                    text: `The Small Business Administration provides`
+                },
+                {
+                    text: `details of any national or federal licenses and permits`,
+                    url: `/`
+                },
+                {
+                    text: `you might need.`
+                }
+            ]
         }
     ]
 }
@@ -17,13 +46,28 @@ export const LicensesAccordionContent = {
 export const BusinessInsuranceAccordionContent = {
     items: [
         {
-            question: "Workers compensation insurance"
+            question: "Workers compensation insurance",
+            answer: [
+                {
+                    text: `Workers’ compensation insurance`,
+                    url: ``
+                },
+                {
+                    text: `provides coverage for job-related illnesses, disabilities or injuries that affect employees. Regulations for this insurance vary from state to state. It typically covers areas like medical costs, loss of earnings, compensation and retraining.`
+                }
+            ]
         },
         {
-            question: "General Liability Insurance"
+            question: "General Liability Insurance",
+            answer: `This insurance protects your business from claims due to being sued. This may include injury to members of the public, property damage, personal liabilities, legal defense and more. It can help protect your business from financial penalties and bankruptcy.`
         },
         {
-            question: "Home and Auto Insurance"
+            question: "Professional Liability/Indemnity Insurance",
+            answer: `If you provide professional services, professional liability insurance can protect you from malpractice allegations and other issues as a result of providing work.`
+        },
+        {
+            question: "Home and Auto Insurance",
+            answer: `If you are working from home or driving a vehicle for work, check whether your existing home and auto policies cover you for work use of your home or car. If not, you should either expand your policy so you’re covered or get dedicated business insurance.`
         }
     ]
 }
@@ -31,29 +75,36 @@ export const BusinessInsuranceAccordionContent = {
 export const TaxesAccordionContent = {
     items: [
         {
-            question: "File with the IRS"
+            question: "File with the IRS",
+            answer: `Let the IRS know you are setting up a business.`
         },
         {
             question: "Payroll tax",
+            answer: `If you pay employees, you will be liable for payroll tax.`
         },
         {
-            question: "Self-employment tax"
+            question: "Self-employment tax",
+            answer: `Unlike employees, the earnings from your beauty salon business will be taxed under a self-employment tax (FICA and Medicaid). This is just over 15 percent of your earnings.`
         },
         {
             question: "State tax",
             answer: "Most states have a state income tax. If yours does, you will be taxed on your earnings as normal. To register for state tax, see your Secretary of State website."
         },
         {
-            question: "Corporation tax"
+            question: "Federal income tax",
+            answer: `You will need to pay income tax on any profits or earnings you take from your beauty salon business. In most cases, profits from the business will “flow through” to your individual tax return and you will be taxed there.`
         },
         {
-            question: "Payroll tax"
+            question: "Sales tax",
+            answer: `If you’re selling locally, you may also be liable for collecting and paying sales tax. To register for sales tax, see your Secretary of State website.`
         },
         {
-            question: "File with the IRS"
+            question: "Corporate tax",
+            answer: `If you incorporate as a C Corporation, you will also need to pay corporation tax — you will be taxed both on your profits as a business and when you extract earnings from your company. This “double taxation” is one of the reasons we normally recommend LLCs as a good business structure, since they avoid this.`
         },
         {
-            question: "Other taxes"
+            question: "Other taxes",
+            answer: `In certain circumstances you may need to pay some other types of taxes. Talk to your accountant to find out what else you may be liable for.`
         }
     ]
 }
@@ -62,23 +113,35 @@ export const MaintainingAccordionContent = {
     items: [
         {
             question: "File an Annual Report",
-            answer: "Most states require businesses to file a report once a year. This report has details of any major changes to who owns a business and other significant impacts on a business’s legal status. We can file your Annual Report on your behalf"
+            answer: [
+                {
+                    text: `Most states require all businesses to file a report once a year. This report has details of any major changes to who owns a business and other major impacts on a business’ legal status.`
+                },
+                {
+                    text: `We can file your Annual Report on your behalf.`,
+                    url: `/`
+                }
+            ]
         },
         {
             question: "Pay estimated taxes",
-            answer: "You will need to pay income tax on any profits or earnings you take from your Etsy business. In most cases, profits from the business will “flow through” to your individual tax return and you will be taxed there."
+            answer: "You will be expected to pay estimated taxes on what you plan to earn in the current business year. Typically, you will need to pay estimated taxes in April, June, September and January (of the following year)."
         },
         {
-            question: "Renew Business Permits and Licenses"
+            question: "Renew Business Permits and Licenses",
+            answer: `Your federal, state, regional and city licenses and permits may need to be renewed on a regular basis, typically once a year.`
         },
         {
-            question: "File your taxes"
+            question: "File your taxes",
+            answer: `You will need to file your taxes once a year.`
         },
         {
-            question: "Pay Payroll and Sales Taxes"
+            question: "Pay Payroll and Sales Taxes",
+            answer: `If applicable, you will need to make payroll and sales tax payments on a regular basis.`
         },
         {
-            question: "Prepare Your Taxes"
+            question: "Prepare Your Taxes",
+            answer: `You will need to work with your accountant to prepare all the taxes you need to pay.`
         }
     ]
 }

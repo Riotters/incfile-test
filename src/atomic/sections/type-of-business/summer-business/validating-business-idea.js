@@ -8,30 +8,30 @@ import MarketIcon from "../../../../images/icons/understand-your-market.inline.s
 import {color} from "../../../../components/styles/colors";
 import React from "react";
 import styled from "styled-components";
-import OvalBlueSVG from "../../../../images/oval-blue-4.inline.svg";
+import OvalSvg from "../../../../images/ovals/bottom-left-transparent-blue3.inline.svg";
+import OvalSvg2 from "../../../../images/ovals/bottom-right-transparent-blue3.inline.svg";
 import Curve from "../../../atoms/shapes/curve";
 import {gradient} from "../../../atoms/styles/colors";
 
 const ContainerWrapper = styled.div`
     background: rgb(255,255,255);
-    background-image: ${gradient.orange3};
+    background-image: ${gradient.blue3};
     padding-bottom: 100px;
     position: relative;
-    padding-top: 120px;
+    padding-top: 120px; 
 `;
 
 
 const GridSection = styled.div`
     width: 100%;
-    margin-top: 110px;
 `;
 
 const TitleBox = styled.div`
     width: 100%;
     position: relative;
-     
+    max-width: 750px;
+    
     @media (min-width:750px) {
-        width: 750px;
         margin: 0 auto;
     }
     
@@ -48,46 +48,37 @@ const GridSectionList = styled.div`
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
+    max-width: 970px;
     
     > div {
         margin-bottom: 70px;
     }
     
     @media (min-width: 970px) {
-        width: 970px;
         margin: 120px auto 0;
     }
 `;
 
-const TextBorderedSection = styled.div`
-    width: 100%;
-    padding-top: 100px;
-    
-    @media (min-width: 670px) {
-        width: 670px;
-        margin: 0 auto;
-    }
-    
-    h3{
-        color: #1d1d1d;
-        font-size: 40px;
-        text-align: center;
-        margin-bottom: 24px;
-    }
-`;
+const Oval = styled.div`
+  position: absolute;
+  left: 0;
+  top: 378px;
+  width: 100%;
+  
+  @media (min-width: 420px){
+    width: 420px;
+  }
+`
 
-const TextBorderedList = styled.div`
-    margin-top: 80px;
-    
-    >div {
-        margin-bottom: 8px;
-    }
-`;
-
-const OvalCenter = styled.div`
+const Oval2 = styled.div`
   position: absolute;
   right: 0;
-  top: 0;
+  bottom: 111px;
+  width: 100%;
+  
+  @media (min-width: 720px){
+    width: 720px;
+  }
 `
 
 const AbsoluteCurve = styled.div`
@@ -99,10 +90,12 @@ const AbsoluteCurve = styled.div`
 
 const ValidatingBusinessIdea = () => (
     <ContainerWrapper>
-        <OvalCenter>
-            <OvalBlueSVG/>
-        </OvalCenter>
-
+        <Oval>
+            <OvalSvg/>
+        </Oval>
+        <Oval2>
+            <OvalSvg2/>
+        </Oval2>
         <Container>
 
             <GridSection>
@@ -122,7 +115,7 @@ const ValidatingBusinessIdea = () => (
                         to say “yes” or “no” to specific businesses, so think about what your strengths and weaknesses
                         are so you can choose a business you’d be great at.
                     </Paragraph>
-                    <Paragraph big style={{fontWeight: "bold"}}>
+                    <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
                         Don’t assume that just because you have a summer business, running it and making money will be
                         easy.
                     </Paragraph>

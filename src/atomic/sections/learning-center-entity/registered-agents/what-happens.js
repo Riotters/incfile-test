@@ -13,7 +13,7 @@ import Button from "../../../molecules/buttons/button";
 import ContentCenter from "../../../partials/content-center";
 import Cards from "../../../organisms/cards/registered-agent-disadventage-cards";
 
-const Need = styled.section`
+const WhatHappens = styled.section`
   position: relative;
   padding-top: 104px;
   padding-bottom: 104px;
@@ -57,8 +57,8 @@ const Need = styled.section`
   }
 `;
 
-const NeedSection = ({ className, content }) => (
-  <Need className={className}>
+const WhatHappensSection = ({ className, content }) => (
+  <WhatHappens className={className}>
     <Oval className="oval" height="420" width="420" top="0" right="0">
       <OvalSVG />
     </Oval>
@@ -73,7 +73,7 @@ const NeedSection = ({ className, content }) => (
     <ContentCenter>
       <Cards content={content.cards} />
     </ContentCenter>
-  </Need>
+  </WhatHappens>
 );
 
-export default NeedSection;
+export default WhatHappensSection;

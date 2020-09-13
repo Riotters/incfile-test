@@ -21,11 +21,10 @@ const TypeOfBusiness = () => (
         <OvalBottom>
             <OvalSvg2/>
         </OvalBottom>
+        <TextCenterLayout headlineWidth={770} textWidth={770} headline="What Type of Side Business Should You Start?"
+                          text="Ideally, you want a side business to be relatively hassle-free. If you’re running a side business on top of another job, the less time you spend on setting up the business (and the more time you spend earning money) the better. Here are some good opportunities to achieve this:"/>
         <Container>
             <Service>
-                <TextCenterLayout headline="What Type of Side Business Should You Start?"
-                                  text="Ideally, you want a side business to be relatively hassle-free. If you’re running a side business on top of another job, the less time you spend on setting up the business (and the more time you spend earning money) the better. Here are some good opportunities to achieve this:"/>
-
                 <AdventagesBox>
                     {adventages.items.map(item => (
                         <Adventages
@@ -55,7 +54,7 @@ const Wrapper = styled.div`
 `;
 
 const Service = styled.div`
-  padding: 64px 0;
+  padding-top: 64px;
 `;
 
 const AdventagesBox = styled.div`
@@ -63,34 +62,31 @@ const AdventagesBox = styled.div`
   flex-wrap: wrap;
   width: 100%;
   max-width: 970px;
-  margin: 140px auto 0;
+  margin: 0 auto 100px;
   position: relative;
  
-`;
-
-const CurveWrapper = styled.div`
-    position: absolute;
-    right: -24px;
-    top: 0px;
 `;
 
 const Oval = styled.div`
     position: absolute;
     right: 0;
     top: 300px;
-    width: 570px;
+    width: 100%;
+    
+    @media (min-width: 570px){
+        width: 570px;
+    }
 `;
 
 const OvalBottom = styled.div`
     position: absolute;
     left: 0;
     bottom: 300px;
-    width: 570px;
+    width: 100%;
     transform: scaleY(-1);
-    display: none;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 570px){
+        width: 570px;
     }
 `;
 

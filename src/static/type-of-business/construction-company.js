@@ -22,7 +22,7 @@ export const adventages = {
         },
         {
             circleText: 4,
-            imageName: "starting-a-home-business",
+            imageName: "retail-construction",
             headline: "Retail Construction",
             text: "The retail space is becoming more challenging as traditional stores try to compete with ecommerce websites. A construction business with retail and commercial expertise can create spaces where shoppers love to spend money."
         }
