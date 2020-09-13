@@ -1,12 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-
+import {Link} from "gatsby";
 import {color} from "../../../../components/styles/colors";
 import CountingTextBoxed from "../../../molecules/text-blocks/counting-text-boxed";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import Container from "../../../container";
-import OvalSmallSVG from "../../../../images/oval-orange-2.inline.svg";
-import OvalSVG from "../../../../images/oval-orange-4.inline.svg";
+import OvalSvg from "../../../../images/ovals/top-left-transparent-blue3.inline.svg";
 import TextCenterLayout from "../../../partials/heading-left";
 import {gradient} from "../../../atoms/styles/colors";
 
@@ -15,9 +14,9 @@ const BusinessOwnerResponsibilities = styled.section`
   padding-top: 75px;
   padding-bottom: 64px;
   width: 100%;
+  max-width: 770px;
   
   @media (min-width: 770px) {
-    width: 770px;
     margin: 0 auto;
   }
 
@@ -39,22 +38,33 @@ const Wrapper = styled.section`
 const Oval = styled.div`
   position: absolute;
   left: 0;
-  top: 20%;
+  top: 239px;
+  width: 100%;
+  
+  @media (min-width: 420px){
+    width: 420px;
+  }
 `
 
 const OvalCenter = styled.div`
   position: absolute;
   right: 0;
-  top: 38%;
+  bottom: 239px;
+  width: 100%;
+  transform: scaleX(-1);
+  
+  @media (min-width: 720px){
+    width: 720px;
+  }
 `
 
 const BusinessPlan = () => (
     <Wrapper>
         <Oval>
-            <OvalSmallSVG/>
+            <OvalSvg/>
         </Oval>
         <OvalCenter>
-            <OvalSVG/>
+            <OvalSvg/>
         </OvalCenter>
         <Container>
             <BusinessOwnerResponsibilities>
@@ -62,11 +72,11 @@ const BusinessPlan = () => (
                 <Paragraph big>
                     You might think that your dog-related business doesn’t need a plan, but you’ll find that a solid business model will help you become a success. A business plan will help you define how you’re going to run your dog walking or pet sitting business, market yourself, get sales, make a profit and grow.
                 </Paragraph>
-                <Paragraph big>
+                <Paragraph big style={{marginBottom: "48px"}}>
                     You need to establish your canine business plan and model now, which is how you will generate sales, provide services and make money. It’s best to get your plans in place now so you can start acquiring customers and generating revenue from day one.
                 </Paragraph>
 
-                <Paragraph big style={{fontWeight: "bold"}}>
+                <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
                     Think about and predict financial projections for your dog walking
                     or pet sitting business.
                 </Paragraph>
@@ -133,7 +143,7 @@ const BusinessPlan = () => (
                 </CountingTextBoxed>
 
                 <Paragraph big style={{marginTop: "50px"}} mixed={true}>
-                    We’ve got the perfect <span style={{color: color.blue1, fontWeight: "bold"}}>guide to writing your business plan.</span>
+                    We’ve got the perfect <Link to="/">guide to writing your business plan.</Link>
                 </Paragraph>
             </BusinessOwnerResponsibilities>
         </Container>

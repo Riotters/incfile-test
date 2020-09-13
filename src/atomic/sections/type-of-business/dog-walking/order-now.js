@@ -1,11 +1,11 @@
 import React from "react";
 import Container from "../../../container";
 import LeftImageRightContent from "../../../../components/partials/blocks/left-content-right-image";
-import Button from "../../../../components/button";
+import Button from "../../../molecules/buttons/button";
 import styled from "styled-components";
 import {color} from "../../../../components/styles/colors";
-import OvalLeftSvg from "../../../../images/oval-orange-3.inline.svg";
-import OvalRightSvg from "../../../../images/oval-orange-4.inline.svg";
+import OvalLeftSvg from "../../../../images/ovals/top-left-transparent-orange2.inline.svg";
+import OvalRightSvg from "../../../../images/ovals/top-left-transparent-orange.inline.svg";
 import Curve from "../../../../images/curve-orange.inline.svg";
 
 const OrderNow = () => (
@@ -32,9 +32,7 @@ const OrderNow = () => (
                 </h2>
                 <p>A Clear and Comprehensive Guide to Starting Your Business the Right Way</p>
                 <ButtonsBox>
-                    <Button theme="primary56" marginMD="0 24px 0 0" arrow>
-                        Business Checklist
-                    </Button>
+                    <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{url: "/learning-center-entity/business-checklist/", text: "Business Checklist"}}/>
                 </ButtonsBox>
             </LeftImageRightContent>
         </Container>
@@ -60,18 +58,29 @@ const Oval = styled.div`
     position: absolute;
     left: 0;
     top: 0;
+    width: 100%;
+    
+    @media (min-width: 420px){
+        width: 420px;
+    }
 `;
 
 const OvalRight = styled.div`
     position: absolute;
     right: 0;
-    bottom: -5px;
+    bottom: 0px;
+    transform: scaleX(-1);
+    width: 100%;
+    
+    @media (min-width: 409px){
+        width: 409px;
+    }
 `;
 
 const CurveWrapper = styled.div`
     position: absolute;
-    left: -122px;
-    top: -115px;
+    left: -85px;
+    top: -85px;
 `;
 
 export default OrderNow;
