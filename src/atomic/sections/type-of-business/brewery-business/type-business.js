@@ -7,8 +7,7 @@ import {color} from "../../../../components/styles/colors";
 import {shadow} from "../../../../components/styles/shadows";
 import {typeBusiness} from "../../../../static/type-of-business/brewery-business";
 import Curve from "../../../atoms/shapes/curve";
-import OvalSvg from "../../../../images/oval-blue-3.inline.svg";
-import OvalBottom from "../../../../images/ovals/bottom-left-transparent-blue1.inline.svg";
+import OvalSvg from "../../../../images/ovals/top-right-transparent-orange.inline.svg";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import {gradient} from "../../../atoms/styles/colors";
 
@@ -18,9 +17,6 @@ const TypeBusiness = () => (
             <OvalSvg/>
         </Oval>
 
-        <OvalBottomWrapper>
-            <OvalBottom/>
-        </OvalBottomWrapper>
         <Container>
             <Service>
                 <TextCenterLayout headline="What Type of Brewery Should You Start?"
@@ -51,33 +47,6 @@ const TypeBusiness = () => (
     </Wrapper>
 );
 
-const Title = styled.div`
-    display: block;
-    width: 100%;
-    
-    h3{
-        font-size: 40px;
-        text-align: left;
-    }
-`;
-
-const ListParagraph = styled(Paragraph)`
-    ul{
-        li{
-            list-style-type: none;
-            padding-bottom: 24px;
-            
-            &:before{
-                content: "\u2022";
-                color: ${color.blue1}; 
-                display: inline-block; 
-                padding-right: 15px;
-                font-size: 12px;
-            }
-        }
-    }
-`;
-
 const Wrapper = styled.div`
     background-image: ${gradient.orange3}; 
     padding-top: 100px;
@@ -107,18 +76,12 @@ const CurveWrapper = styled.div`
 const Oval = styled.div`
     position: absolute;
     right: 0;
-    top: 300px;
+    top: 287px;
+    width: 100%;
     
-    svg {
-        transform: scaleX(-1);
+    @media (min-width: 720px){
+        width: 720px;
     }
-`;
-
-const OvalBottomWrapper = styled.div`
-    position: absolute;
-    left: 0;
-    bottom: 15%; 
-    width: 420px;
 `;
 
 export default TypeBusiness;

@@ -4,8 +4,7 @@ import TextCenterLayout from "../../../partials/heading-left";
 import TopImageBox from "../../../../components/top-image-box";
 import {color} from "../../../../components/styles/colors";
 import styled from "styled-components";
-import Curve from "../../../../images/green-curve.inline.svg";
-import GreenOval from "../../../../images/oval-green-2.inline.svg";
+import GreenOval from "../../../../images/ovals/top-right-transparent-green2.inline.svg";
 import ContentCenter from "../../../partials/content-center";
 import {gradient} from "../../../atoms/styles/colors";
 
@@ -30,21 +29,25 @@ const SettingBusiness = () => (
                 <TopImageBox image="location" color={color.red3}>
                     <h4>Location of Your Business</h4>
                     <p>
-                        Where are you going to run your business from? Will you work from home, get an office or something else? At the very least, you will need space to store equipment, consumables and stock.
+                        Where are you going to run your business from? Will you work from home, get an office or
+                        something else? At the very least, you will need space to store equipment, consumables and
+                        stock.
                     </p>
                 </TopImageBox>
 
                 <TopImageBox image="display-ads" color={color.purple3}>
                     <h4>Marketing</h4>
                     <p>
-                        You will probably need to build a website, and you will definitely need excellent local marketing expertise.
+                        You will probably need to build a website, and you will definitely need excellent local
+                        marketing expertise.
                     </p>
                 </TopImageBox>
 
                 <TopImageBox image="we-doubled-the-size-of-customer-service" color={color.orange3}>
                     <h4>Employees</h4>
                     <p>
-                        It’s unlikely that you will need to hire employees in the early days of your business. Instead, you might work with freelance designers, marketers and similar.
+                        It’s unlikely that you will need to hire employees in the early days of your business. Instead,
+                        you might work with freelance designers, marketers and similar.
                     </p>
                 </TopImageBox>
 
@@ -58,21 +61,29 @@ const SettingBusiness = () => (
                 <TopImageBox image="measuring-business-success" color={color.babyblue3}>
                     <h4>Business maintenance</h4>
                     <p>
-                        Most states require businesses to file an Annual Report once a year. You will also be expected to pay estimated taxes on what you plan to earn in the current business year. Your federal, state, regional and city business licenses and permits may need to be renewed on a regular basis, typically once a year.
+                        Most states require businesses to file an Annual Report once a year. You will also be expected
+                        to pay estimated taxes on what you plan to earn in the current business year. Your federal,
+                        state, regional and city business licenses and permits may need to be renewed on a regular
+                        basis, typically once a year.
                     </p>
                 </TopImageBox>
 
                 <TopImageBox image="state-filling-fees" color={color.yellow3}>
                     <h4>Finances and taxes</h4>
                     <p>
-                        What kind of bank account will you get? Do you need a business credit card? How will you pay your business taxes? These are important questions to consider so your landscaping business stays in the green. Here at Incfile, we can even help you file your taxes.
+                        What kind of bank account will you get? Do you need a business credit card? How will you pay
+                        your business taxes? These are important questions to consider so your landscaping business
+                        stays in the green. Here at Incfile, we can even help you file your taxes.
                     </p>
                 </TopImageBox>
 
                 <TopImageBox image="side-yellow" color={color.yellow3}>
                     <h4>Equipment</h4>
                     <p>
-                        What equipment do you need to manage your landscaping business? Depending on the types of services you offer you will need tools like lawnmowers, weed whackers and trimmers. You may also require construction tools, especially if you are doing design and installation. Make sure you understand exactly what you need to spend so you can write it off against business expenses.
+                        What equipment do you need to manage your landscaping business? Depending on the types of
+                        services you offer you will need tools like lawnmowers, weed whackers and trimmers. You may also
+                        require construction tools, especially if you are doing design and installation. Make sure you
+                        understand exactly what you need to spend so you can write it off against business expenses.
                     </p>
                 </TopImageBox>
             </ImageBoxes>
@@ -95,13 +106,13 @@ const ImageBoxes = styled.div`
   grid-gap: 30px;
   padding-top: 112px;
   width: 100%;
-
+  max-width: 970px;
+  
   @media(min-width: 769px) {
     grid-template-columns: 1fr 1fr;
   }
   
   @media (min-width: 970px) {
-    width: 970px;
     margin: 0 auto;
   }
 `;
@@ -117,6 +128,11 @@ const Oval = styled.div`
     position: absolute;
     right: 0;
     top: 220px;
+    width: 100%;
+    
+    @media (min-width: 720px){
+        width 720px;
+    }
 `;
 
 export default SettingBusiness;
