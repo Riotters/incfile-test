@@ -73,11 +73,7 @@ export const about = {
         text11: `aaa`,
         box3: {
           header: `aaa`,
-          list: [
-            `aaa`,
-            `aaa`,
-            `aaa`,
-          ],
+          list: [`aaa`, `aaa`, `aaa`],
         },
         link6: {
           text: `aaa`,
@@ -86,13 +82,7 @@ export const about = {
         text12: `aaa`,
         box4: {
           header: `aaa`,
-          list: [
-            `aaa`,
-            `aaa`,
-            `aaa`,
-            `aaa`,
-            `aaa`,
-          ],
+          list: [`aaa`, `aaa`, `aaa`, `aaa`, `aaa`],
         },
         header9: `aaa`,
         text13: `aaa`,
@@ -101,22 +91,14 @@ export const about = {
         text16: `aaa`,
         box5: {
           header: `aaa`,
-          list: [
-            `aaa`,
-            `aaa`,
-          ],
+          list: [`aaa`, `aaa`],
         },
         link7: {
           text: `aaa`,
           url: `aaa`,
         },
         text17: `aaa`,
-        boxes: [
-          `aaa`,
-          `aaa`,
-          `aaa`,
-          `aaa`,
-        ],
+        boxes: [`aaa`, `aaa`, `aaa`, `aaa`],
         text18: `aaa`,
         link8: {
           text: `aaa`,
@@ -133,14 +115,14 @@ export const about = {
             link: {
               text: `aaa`,
               url: `/`,
-            }
+            },
           },
           {
             header: `aaa`,
             link: {
               text: `aaa`,
               url: `/`,
-            }
+            },
           },
         ],
         header10: `aaa`,
@@ -174,7 +156,7 @@ export const about = {
         link12: {
           text: `aaa`,
           url: `/`,
-        },        
+        },
       },
       {
         header: `Start Your California Corporation in Six Steps`,
@@ -193,12 +175,7 @@ export const about = {
         header2: `aaa`,
         text3: `aaa`,
         box: {
-          list: [
-            `aaa`,
-            `aaa`,
-            `aaa`,
-            `aaa`,
-          ],
+          list: [`aaa`, `aaa`, `aaa`, `aaa`],
         },
         text4: `aaa`,
         link: {
@@ -263,7 +240,7 @@ export const about = {
             text: `aaa`,
             url: `/`,
           },
-        ]
+        ],
       },
       {
         header: `CA Name Search and Registration for Your California Corporation`,
@@ -293,30 +270,16 @@ export const about = {
         text6: `aaa`,
         header6: `aaa`,
         text7: `aaa`,
-        box: [
-          `aaa`,
-          `aaa`,
-          `aaa`,
-          `aaa`,
-        ],
+        box: [`aaa`, `aaa`, `aaa`, `aaa`],
         text8: `aaa`,
         header7: `aaa`,
         text9: `aaa`,
         header8: `aaa`,
         text10: `aaa`,
-        box2: [
-          `aaa`,
-          `aaa`,
-          `aaa`,
-          `aaa`,
-        ],
+        box2: [`aaa`, `aaa`, `aaa`, `aaa`],
         header9: `aaa`,
         text11: `aaa`,
-        box3: [
-          `aaa`,
-          `aaa`,
-          `aaa`,
-        ],
+        box3: [`aaa`, `aaa`, `aaa`],
         link2: {
           text: `aaa`,
           url: `/`,
@@ -346,12 +309,7 @@ export const about = {
       {
         header: `Why Your California Corporation Needs a Registered Agent Service`,
         text: `aaa`,
-        box: [
-          `aaa`,
-          `aaa`,
-          `aaa`,
-          `aaa`,
-        ],
+        box: [`aaa`, `aaa`, `aaa`, `aaa`],
         text2: `aaa`,
         buttons: [
           {
@@ -368,37 +326,18 @@ export const about = {
         text4: `aaa`,
         header3: `aaa`,
         text5: `aaa`,
-        box2: [
-          `aaa`,
-          `aaa`,
-          `aaa`,
-          `aaa`,
-        ],
+        box2: [`aaa`, `aaa`, `aaa`, `aaa`],
         header4: `aaa`,
         text6: `aaa`,
-        box3: [
-          `aaa`,
-          `aaa`,
-          `aaa`,
-          `aaa`,
-        ],
+        box3: [`aaa`, `aaa`, `aaa`, `aaa`],
         text7: `aaa`,
         header5: `aaa`,
         text7: `aaa`,
-        box4: [
-          `aaa`,
-          `aaa`,
-          `aaa`,
-        ],
+        box4: [`aaa`, `aaa`, `aaa`],
         header6: `aaa`,
         text8: `aaa`,
         text9: `aaa`,
-        box: [
-          `aaa`,
-          `aaa`,
-          `aaa`,
-          `aaa`,
-        ],
+        box: [`aaa`, `aaa`, `aaa`, `aaa`],
         button: {
           text: `aaa`,
           url: `/`,
@@ -647,88 +586,59 @@ export const quickLinks = {
       },
     },
   ],
-}
+};
 
 export const variants = {
-  header: 
-    `See how easy it can be to get your business incorporated`,
-  
+  header: `See how easy it can be to get your business incorporated`,
+
   link: {
-    text:
-    `Learn more`,
-    url:
-    `/`,
+    text: `Learn more`,
+    url: `/`,
   },
   cards: [
     {
-      color:
-      `silver`,
-      variant:
-      `the basics`,
-      price:
-      `0$`,
-      text:
-      `The Basics To Get Started:`,
-      list: [
-      `Prepare & File Articles`,
-      `FREE Registered Agent for 1st Year`,
-      `FREE Registered Agent for 1st Year`,
-      ],
-      link: {
-        text:
-        `Get Started`,
-        url:
-        `/`,
+      color: `silver`,
+      variant: `the basics`,
+      price: `0$`,
+      text: `The Basics To Get Started:`,
+      list: [`Prepare & File Articles`, `FREE Registered Agent for 1st Year`, `FREE Registered Agent for 1st Year`],
+      button: {
+        text: `Get Started`,
+        url: `/`,
       },
-      text:
-      `+ $75 (state fee)`,
+      fee: `+ $75 (state fee)`,
     },
     {
-      color:
-      `silver`,
-      variant:
-      `most popular`,
-      price:
-      `$149`,
-      text:
-      `Everything from Silver plus:`,
-      list: [
-        `EIN / Tax ID Number (req. to open a bank account)`,
-        `Personalized Operating Agreement`,
-        `Customized LLC Kit`,
-      ],
-      link: {
-        text:
-        `Get Started`,
-        url:
-        `/`,
+      color: `silver`,
+      variant: `most popular`,
+      price: `$149`,
+      text: `Everything from Silver plus:`,
+      list: [`EIN / Tax ID Number (req. to open a bank account)`, `Personalized Operating Agreement`, `Customized LLC Kit`],
+      button: {
+        text: `Get Started`,
+        url: `/`,
       },
-      text:
-      `+ $75 (state fee)`,
+      fee: `+ $75 (state fee)`,
     },
     {
-      color:
-      `platinum`,
-      variant:
-      `best value`,
-      price:
-      `$299`,
-      text:
-      `Everything from Silver & Gold plus:`,
-      list: [
-        `Expedited Filing (State completes filing faster)`,
-        `FedEx Delivery`,
-        `Contracts Library (25+ high quality documents)`,
-      ],
-      link: {
-        text:
-        `Get Started`,
-        url:
-        `/`,
+      color: `platinum`,
+      variant: `best value`,
+      price: `$299`,
+      text: `Everything from Silver & Gold plus:`,
+      list: [`Expedited Filing (State completes filing faster)`, `FedEx Delivery`, `Contracts Library (25+ high quality documents)`],
+      button: {
+        text: `Get Started`,
+        url: `/`,
       },
-      text:
-      `+ $75 (state fee)`,
-    }
+      fee: `+ $75 (state fee)`,
+    },
+  ],
+};
 
-  ],  
-}
+export const subscription = {
+  header: `Subscribe now to learn more about Corporation and starting a business`,
+  button: {
+    text: `Subscribe Now`,
+    url: `/`,
+  },
+};

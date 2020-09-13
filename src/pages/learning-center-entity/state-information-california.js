@@ -10,10 +10,11 @@ import Rocket from "../../atomic/sections/review-entity-type/c-corporation/rocke
 import Requirements from "../../atomic/sections/learning-center-entity/state-information-california/requirements";
 import LearnMore from "../../atomic/sections/learning-center-entity/state-information-california/learn-more";
 import QuickLinks from "../../atomic/sections/learning-center-entity/state-information-california/quick-links";
-import Cta from "../../atomic/sections/general/cta";
+import Variants from "../../atomic/sections/learning-center-entity/state-information-california/variants";
+import Subscription from "../../atomic/sections/learning-center-entity/state-information-california/subscription";
 import Articles from "../../atomic/sections/articles";
 //Texts
-import { top, about, launchBusiness, requirements, learnMore, quickLinks } from "../../static/learning-center-entity/state-information-california";
+import { top, about, launchBusiness, requirements, learnMore, quickLinks, variants, subscription } from "../../static/learning-center-entity/state-information-california";
 
 const StateFilingTimes = () => (
   <Layout>
@@ -30,7 +31,8 @@ const StateFilingTimes = () => (
     <Requirements content={requirements} />
     <LearnMore content={learnMore} />
     <QuickLinks content={quickLinks} />
-    <Cta />
+    <Variants content={variants} />
+    <Subscription content={subscription} />
     <Articles />
   </Layout>
 );
