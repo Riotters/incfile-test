@@ -6,10 +6,10 @@ import {color} from "../../../../components/styles/colors";
 import Colorbox from "../../../../components/color-box";
 import Container from "../../../container";
 import SunIcon from "../../../../images/icons/sun.inline.svg";
+import OvalSvg from "../../../../images/ovals/bottom-right-transparent-pink2.inline.svg";
 
 const BusinessOwnerResponsibilities = styled.section`
   position: relative;
-  padding-top: 75px;
   padding-bottom: 64px;
 
   .colorbox {
@@ -21,10 +21,26 @@ const WrapperContainer = styled.div`
     background: rgb(255,255,255);
     padding-bottom: 100px;
     position: relative;
+    margin-top: 100px;
+`;
+
+const Oval = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: scaleX(-1);
+    
+    @media (min-width: 420px) {
+        width: 420px;
+    }
 `;
 
 const Bootstrapping = () => (
     <WrapperContainer>
+        <Oval>
+            <OvalSvg />
+        </Oval>
         <Container>
             <BusinessOwnerResponsibilities>
                 <ImageContent image="summer-books" paddingTop="60">
@@ -58,18 +74,5 @@ const Bootstrapping = () => (
         </Container>
     </WrapperContainer>
 );
-
-const ListWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-`;
-
-const ListBox = styled.div`
-    width: 100%;
-    
-    @media (min-width: 576px) { 
-        width: 50%; 
-    }
-`;
 
 export default Bootstrapping;

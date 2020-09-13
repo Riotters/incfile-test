@@ -5,7 +5,8 @@ import Container from "../../../container";
 import TextCenterLayout from "../../../partials/heading-center";
 import {color} from "../../../../components/styles/colors";
 import {shadow} from "../../../../components/styles/shadows";
-import OvalSvg from "../../../../images/oval-orange-4.inline.svg";
+import OvalSvg from "../../../../images/ovals/top-right-transparent-orange.inline.svg";
+import OvalSvg2 from "../../../../images/ovals/bottom-left-transparent-orange.inline.svg";
 import AdventagesWithLongText from "../../../molecules/mixed-blocks/adventages-with-long-text";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 
@@ -14,6 +15,9 @@ const SummerBusinessIdea = () => (
         <Oval>
             <OvalSvg/>
         </Oval>
+        <Oval2>
+            <OvalSvg2 />
+        </Oval2>
         <Container>
             <Service>
                 <TextCenterLayout headline="Summer Business Ideas - What Type of Business Should You Start?"
@@ -144,16 +148,26 @@ const AdventagesBox = styled.div`
  
 `;
 
-const CurveWrapper = styled.div`
-    position: absolute;
-    right: -24px;
-    top: 0px;
-`;
-
 const Oval = styled.div`
     position: absolute;
     right: 0;
     top: 300px;
+    width: 100%;
+    
+    @media (min-width: 720px){
+        width: 720px;
+    }
+`;
+
+const Oval2 = styled.div`
+    position: absolute;
+    left: 0;
+    bottom: 627px;
+    width: 100%;
+    
+    @media (min-width: 420px){
+        width: 420px;
+    }
 `;
 
 export default SummerBusinessIdea;
