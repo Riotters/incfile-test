@@ -13,12 +13,12 @@ const Wrapper = styled.div`
     width: 100%;
     min-height:300px;
     padding: 40px;
-	background: ${(props) => (props.bgColor ? props.bgColor : `${color.white}`)} url(${(props) => props.bgImage}) center center no-repeat;
+	background: ${(props) => (props.bgColor ? props.bgColor : `${color.white}`)} url(${(props) => props.bgImage}) center right no-repeat;
 	background-size: contain;
 
     .title{
         font-family: MarkPro;
-        font-size: 40px;
+        font-size: clamp(1.5rem, 5vw, 2.2rem);
         font-weight: bold;
         font-stretch: normal;
         font-style: normal;

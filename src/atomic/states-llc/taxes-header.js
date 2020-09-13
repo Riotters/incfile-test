@@ -12,6 +12,7 @@ import { Heading } from "../atoms/typography/heading"
 import { Paragraph } from "../atoms/typography/paragraph"
 import ShapeCurve from "../atoms/shapes/curve";
 import Colorbox from '../atoms/boxes/color-box';
+import AbsoluteShapeCurveElement from '../elements/absolute-shape-curve-e'
 
 const Content = styled.div`
   display: flex;
@@ -55,13 +56,6 @@ const WrappBox = styled.div`
   }
 `
 
-const AbsoluteCurve = styled.div`
-    position: absolute;
-    left: -27px;
-    top: -16px;
-    transform: rotate(-90deg);
-`;
-
 const TaxesHeader = ({content}) => (
   <Container>
       <Content>
@@ -70,9 +64,9 @@ const TaxesHeader = ({content}) => (
         <WrappBox>
           {content.boxes.map((box) => (
             <Colorbox color={color.white} className="box">
-              <AbsoluteCurve>
-                <ShapeCurve color={color.blue1}/>
-              </AbsoluteCurve>
+              <AbsoluteShapeCurveElement left="-27px" top="-16px" rotate={-90}>
+                <ShapeCurve color={color.purple1}/>
+              </AbsoluteShapeCurveElement>
               <Heading size={4}>{parse(box.title)}</Heading>
               <Paragraph flex mixed={true}>{parse(box.desc)}</Paragraph>
               <Button arrow content={box.button} theme="primary56" width="240"></Button>
