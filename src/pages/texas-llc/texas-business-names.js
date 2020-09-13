@@ -10,6 +10,7 @@ import WrapperContent from '../../atomic/states-llc/wrapper-content'
 import LeftTabPages from '../../atomic/states-llc/left-tab-pages'
 import MainPageContent from '../../atomic/states-llc/page-content'
 import Rocket from "../../atomic/sections/review-entity-type/c-corporation/rocket";
+import BusinessNames from '../../atomic/states-llc/texas/business-names';
 
 // Content
 import { businessNamesContent } from "../../static/states-llc/texas/business-names";
@@ -37,8 +38,10 @@ const TexasBusinessNames = () => (
 
         <WrapperContent>
             <Wrapper>
-            <LeftTabPages content={tabPages} />
-            <MainPageContent>asdasd</MainPageContent>
+                <LeftTabPages content={tabPages} />
+                <MainPageContent>
+                    <BusinessNames content={businessNamesContent.content} />
+                </MainPageContent>
             </Wrapper>
         </WrapperContent>
         
