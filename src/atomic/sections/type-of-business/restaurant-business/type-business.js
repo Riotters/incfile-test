@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import {gradient} from "../../../atoms/styles/colors";
 import Container from "../../../container";
 import TextCenterLayout from "../../../partials/heading-left";
 import Adventages from "../../../../components/adventages";
@@ -8,7 +7,8 @@ import {color} from "../../../../components/styles/colors";
 import {shadow} from "../../../../components/styles/shadows";
 import {typeBusiness} from "../../../../static/type-of-business/restaurant-business";
 import Curve from "../../../atoms/shapes/curve";
-import OvalSvg from "../../../../images/oval-orange-4.inline.svg";
+import OvalSvg from "../../../../images/ovals/top-right-transparent-orange.inline.svg";
+import OvalSvg2 from "../../../../images/ovals/bottom-left-transparent-orange.inline.svg";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import ContentCenter from "../../../partials/content-center";
 
@@ -17,24 +17,26 @@ const TypeBusiness = () => (
         <Oval>
             <OvalSvg/>
         </Oval>
-
+        <Oval2>
+            <OvalSvg2/>
+        </Oval2>
         <Container>
             <ContentCenter contentWidth={770}>
                 <div>
                     <TextCenterLayout headline="Is Restaurant Entrepreneurship for You?" headlineWidth={770}/>
 
-                    <Paragraph big>
+                    <Paragraph big style={{marginBottom: "48px"}}>
                         Running restaurants requires resilience. You will need to combine a taste for the interesting
                         and unusual with great marketing and local presence. You will need
                         to attract patrons in a very competitive local marketplace. Then, you must create amazing
                         dishes, hire staff, acquire great chefs and create atmosphere and ambiance.
                     </Paragraph>
 
-                    <Paragraph big style={{fontWeight: "bold", textAlign: "left"}}>
+                    <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black, textAlign: "left", marginBottom: "24px"}}>
                         You can’t forget about the administrative side either.
                     </Paragraph>
 
-                    <Paragraph big>
+                    <Paragraph big style={{marginBottom: 0}}>
                         Sourcing ingredients, sorting out disputes, working out profits and more are all required. In
                         fact, running a restaurant requires one of the most well-rounded skill sets of any business you
                         might choose to go into. Along the way, you’ll learn amazing skills, develop great people
@@ -47,7 +49,7 @@ const TypeBusiness = () => (
         <Container>
             <Service>
                 <ContentCenter contentWidth={770}>
-                    <TextCenterLayout headlineWidth={770} headline="Business Ideas for Teens, Kids and Students"
+                    <TextCenterLayout headlineWidth={770} headline="What Are the Main Skills, Expertise and Experience Needed to Be a Successful Restaurant Entrepreneur?"
                                       text="As we mentioned above, running a restaurant requires a huge and diverse range of skills. Among other areas, skills include:"/>
                 </ContentCenter>
                 <AdventagesBox>
@@ -78,14 +80,14 @@ const TypeBusiness = () => (
                     <TextCenterLayout headline="What Are the Main Challenges for a Restaurant Entrepreneur?"
                                       headlineWidth={770}/>
 
-                    <Paragraph big>
+                    <Paragraph big style={{marginBottom: "48px"}}>
                         There are several major challenges for any restaurant owner. These start with competition — your
                         local area only has a certain footfall, and you’re likely competing with dozens of other local
                         eateries. Although you will build up a good reputation over time, strong marketing is essential
                         in attracting patrons to your business from the start.
                     </Paragraph>
 
-                    <Paragraph big style={{fontWeight: "bold", textAlign: "left"}}>
+                    <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black, textAlign: "left", marginBottom: "24px"}}>
                         Another major issue for restaurant owners is financial management
                         and making a profit.
                     </Paragraph>
@@ -147,7 +149,23 @@ const CurveWrapper = styled.div`
 const Oval = styled.div`
     position: absolute;
     right: 0;
-    top: 300px;
+    top: 1056px;
+    width: 100%;
+    
+    @media (min-width: 570px){
+        width: 570px;
+    }
+`;
+
+const Oval2 = styled.div`
+    position: absolute;
+    left: 0;
+    top: 1800px;
+    width: 100%;
+    
+    @media (min-width: 420px){
+        width: 420px;
+    }
 `;
 
 export default TypeBusiness;

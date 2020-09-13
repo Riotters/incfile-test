@@ -9,18 +9,30 @@ import PathLink from "../../../molecules/buttons/path";
 import {color} from "../../../atoms/styles/colors";
 import Curve from "../../../atoms/shapes/curve";
 import {Paragraph} from "../../../atoms/typography/paragraph";
+import LinkOvalSvg from "../../../../images/ovals/top-left-transparent-blue3.inline.svg";
+import LinkOvalSvg2 from "../../../../images/ovals/bottom-right-transparent-blue3.inline.svg";
+import ToolsOvalSvg from "../../../../images/ovals/top-right-transparent-blue2.inline.svg";
+import ToolsOvalSvg2 from "../../../../images/ovals/bottom-left-transparent-orange.inline.svg";
 
 const ToolsAndLinks = () => (
     <Wrapper>
         <LinksWrapper>
-            <Container>
-                <TextCenterLayout headline="Discussion Groups and Forums for Your Restaurant Business"
-                                  text="There are plenty of forums and online discussion groups for restaurant businesses. Start with these:"/>
+            <LinkOval>
+                <LinkOvalSvg/>
+            </LinkOval>
 
+            <LinkOval2>
+                <LinkOvalSvg2/>
+            </LinkOval2>
+
+            <TextCenterLayout headline="Discussion Groups and Forums for Your Restaurant Business"
+                              text="There are plenty of forums and online discussion groups for restaurant businesses. Start with these:"/>
+
+            <Container>
                 <LinksContainer>
 
                     <LinkItem>
-                        <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                        <PathLink to="https://www.reddit.com/r/restaurateur/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                             Restaurateur subreddit
                         </PathLink>
                         <Paragraph style={{marginBottom: 0}}>
@@ -32,7 +44,7 @@ const ToolsAndLinks = () => (
                         <CurveWrapper>
                             <Curve color={color.orange1}/>
                         </CurveWrapper>
-                        <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                        <PathLink to="http://www.topix.com/forum/business/restaurant-management" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                             Restaurant Management Forum
                         </PathLink>
                         <Paragraph style={{marginBottom: 0}}>
@@ -41,7 +53,7 @@ const ToolsAndLinks = () => (
                     </LinkItem>
 
                     <LinkItem>
-                        <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                        <PathLink to="https://www.restaurantowner.com/public/Restaurant-Discussion-Forum.cfm" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                             Restaurant Owners
                         </PathLink>
                         <Paragraph style={{marginBottom: 0}}>
@@ -62,31 +74,31 @@ const ToolsAndLinks = () => (
                 <LinksContainer>
 
                     <LinkItem>
-                        <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                        <PathLink to="https://restaurantleadership.com/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                             The Restaurant Leadership Conference
                         </PathLink>
                     </LinkItem>
 
                     <LinkItem>
-                        <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                        <PathLink to="https://www.restaurant.org/events" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                             The National Restaurant Association
                         </PathLink>
                     </LinkItem>
 
                     <LinkItem>
-                        <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                        <PathLink to="https://www.nrn.com/news/restaurant-trends-watch-2020" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                             MUFSO Restaurant News
                         </PathLink>
                     </LinkItem>
 
                     <LinkItem>
-                        <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                        <PathLink to="https://fastcasualsummit.com/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                             The Fast Casual Summit
                         </PathLink>
                     </LinkItem>
 
                     <LinkItem>
-                        <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                        <PathLink to="https://www.internationalrestaurantny.com/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                             The International Restaurant and Foodservice
                             Show
                         </PathLink>
@@ -95,26 +107,39 @@ const ToolsAndLinks = () => (
             </Container>
 
         </LinksWrapper>
-        <Container>
+
+        <ToolsWrapper>
+            <ToolsOval>
+                <ToolsOvalSvg />
+            </ToolsOval>
+            <ToolsOval2>
+                <ToolsOvalSvg2 />
+            </ToolsOval2>
             <UsefulTools toolsList={toolsList.tools} headlineText={toolsList.headlineText}
                          description={toolsList.description}/>
-        </Container>
+        </ToolsWrapper>
     </Wrapper>
 );
+
+const ToolsWrapper = styled.div`
+    position: relative;
+    overflow: hidden;
+`;
 
 const Wrapper = styled.div`
     padding-top: 100px;
     margin-bottom: 200px;
+    overflow: hidden;
 `;
 
 const LinksContainer = styled.div`
     width: 100%;
-    margin: 100px auto;
+    margin: 100px auto; 
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     
-    @media (min-width: 1000px) {
+    @media (min-width: 1100px) {
         width: 1000px;
     }
 `;
@@ -131,7 +156,7 @@ const LinkItem = styled.div`
         width: 470px;
     }
     
-    @media (min-width: 1000px) {
+    @media (min-width: 1100px) {
         margin-left: 15px;
         margin-right: 15px;
     }
@@ -146,6 +171,51 @@ const CurveWrapper = styled.div`
 const LinksWrapper = styled.div`
      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, #f2f6ff);
      padding-bottom: 100px;
+     position: relative;
+`;
+
+const LinkOval = styled.div`
+    position: absolute;
+    left: 0;
+    top: 246px; 
+    width: 100%;
+    
+    @media (min-width: 720px){
+        width: 720px;
+    }
+`;
+
+const LinkOval2 = styled.div`
+    position: absolute;
+    right: 0;
+    bottom: 179px; 
+    width: 100%;
+    
+    @media (min-width: 570px){
+        width: 570px;
+    }
+`;
+
+const ToolsOval = styled.div`
+    position: absolute;
+    right: 0;
+    top: 596px; 
+    width: 100%;
+    
+    @media (min-width: 720px){
+        width: 720px;
+    }
+`;
+
+const ToolsOval2 = styled.div`
+    position: absolute;
+    left: 0;
+    bottom: 180px; 
+    width: 100%;
+    
+    @media (min-width: 420px){
+        width: 420px;
+    }
 `;
 
 export default ToolsAndLinks;
