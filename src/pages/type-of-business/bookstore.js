@@ -538,11 +538,10 @@ const Oval = styled.div`
     position: absolute;
     left: 0;
     top: 0;
-    width: 420px;
-    display: none;
+    width: 100%;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 420px){
+        width: 420px;
     }
 `;
 

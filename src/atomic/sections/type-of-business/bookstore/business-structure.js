@@ -16,6 +16,7 @@ import Button from "../../../molecules/buttons/button";
 import Container from "../../../container";
 import OvalSvg from "../../../../images/ovals/top-left-transparent-orange2.inline.svg";
 import {shadow} from "../../../atoms/styles/shadows";
+import {Link} from "gatsby";
 
 const BusinessOwnerResponsibilities = styled.section`
   position: relative;
@@ -37,15 +38,20 @@ const Oval = styled.div`
   position: absolute;
   left: 0;
   top: 0;
-  width: 420px;
-  display: none;
+  width: 100%;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 420px){
+        width: 420px;
     }
-`
+`;
 
-const CoachBusinessStructure = () => (
+const FlexLink = styled(Link)`
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+`;
+
+const BusinessStructure = () => (
     <OrangeContainer>
 
         <Oval>
@@ -79,12 +85,14 @@ const CoachBusinessStructure = () => (
                         width={100}
                         widthUnit="%"
                     >
-                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                    mixed={true}>
-                            <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                <ArrowSVG/>
-                            </IconCircle>
-                            Sole Proprietorship
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                Sole Proprietorship
+                            </FlexLink>
                         </Paragraph>
 
                         <Paragraph big>
@@ -108,12 +116,14 @@ const CoachBusinessStructure = () => (
                         width={100}
                         widthUnit="%"
                     >
-                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                    mixed={true}>
-                            <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                <ArrowSVG/>
-                            </IconCircle>
-                            Partnership
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                Partnership
+                            </FlexLink>
                         </Paragraph>
 
                         <Paragraph big>
@@ -138,12 +148,14 @@ const CoachBusinessStructure = () => (
                         width={100}
                         widthUnit="%"
                     >
-                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                    mixed={true}>
-                            <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                <ArrowSVG/>
-                            </IconCircle>
-                            Limited Liability Company or LLC
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                Limited Liability Company or LLC
+                            </FlexLink>
                         </Paragraph>
 
                         <Paragraph big>
@@ -167,12 +179,14 @@ const CoachBusinessStructure = () => (
                         width={100}
                         widthUnit="%"
                     >
-                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                    mixed={true}>
-                            <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                <ArrowSVG/>
-                            </IconCircle>
-                            S Corporation
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                S Corporation
+                            </FlexLink>
                         </Paragraph>
 
                         <Paragraph big>
@@ -195,12 +209,14 @@ const CoachBusinessStructure = () => (
                         width={100}
                         widthUnit="%"
                     >
-                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                    mixed={true}>
-                            <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                <ArrowSVG/>
-                            </IconCircle>
-                            C Corporation
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                C Corporation
+                            </FlexLink>
                         </Paragraph>
 
                         <Paragraph big>
@@ -212,22 +228,24 @@ const CoachBusinessStructure = () => (
 
                     <Paragraph big style={{paddingTop: "120px"}} mixed={true}>
                         For more information on the advantages and disadvantages of different types of businesses,
-                        please see our in-depth guide. If you’ve still got questions, we’ve answered them to help you
-                        choose the right business structure for your bookstore business.
+                        please <Link to="/">see our in-depth guide</Link>. If you’ve still got questions, <Link to="/">we’ve
+                        answered them to help you
+                        choose the right business structure for your bookstore business</Link>.
                     </Paragraph>
                     <Paragraph big mixed={true}>
                         In most cases, our recommendation for your bookstore business would
-                        be to create an LLC. We’ve got a complete guide to everything you need to do. LLC formation does
-                        vary from state to state, but we’ve got you covered, wherever you are.
+                        be to create an LLC. We’ve <Link to="/">got a complete guide to everything you need to
+                        do</Link>. <Link to="/">LLC formation does
+                        vary from state to state</Link>, but we’ve got you covered, wherever you are.
                     </Paragraph>
 
-                    <Button theme="primary48" width="365px" arrow>
-                        Start your business with us, today!
-                    </Button>
+                    <Button theme="primary48" width="365px" arrow
+                            content={{url: "/", text: "Start your business with us, today!"}}/>
+
                 </ImageContent>
             </BusinessOwnerResponsibilities>
         </Container>
     </OrangeContainer>
 );
 
-export default CoachBusinessStructure;
+export default BusinessStructure;

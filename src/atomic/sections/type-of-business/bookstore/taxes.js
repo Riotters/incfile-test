@@ -44,16 +44,6 @@ const Wrapper = styled.div`
     position: relative;
 `;
 
-const TextWrapper = styled.div`
-    width: 100%;
-    position: relative;
-    
-    @media (min-width: 750px) {
-        width: 750px;
-        margin: 48px auto 100px;
-    }
-`;
-
 const Service = styled.div`
   padding: 64px 0;
 `;
@@ -72,11 +62,10 @@ const Oval = styled.div`
     position: absolute;
     right: 0;
     top: 343px;
-    width: 720px;
-    display: none;
+    width: 100%;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 720px){
+        width: 720px;
     }
 `;
 
