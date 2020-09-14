@@ -599,7 +599,7 @@ export const variants = {
     {
       color: `silver`,
       variant: `the basics`,
-      price: `0$`,
+      price: `0`,
       text: `The Basics To Get Started:`,
       list: [`Prepare & File Articles`, `FREE Registered Agent for 1st Year`, `FREE Registered Agent for 1st Year`],
       button: {
@@ -611,7 +611,7 @@ export const variants = {
     {
       color: `silver`,
       variant: `most popular`,
-      price: `$149`,
+      price: `149`,
       text: `Everything from Silver plus:`,
       list: [`EIN / Tax ID Number (req. to open a bank account)`, `Personalized Operating Agreement`, `Customized LLC Kit`],
       button: {
@@ -623,7 +623,7 @@ export const variants = {
     {
       color: `platinum`,
       variant: `best value`,
-      price: `$299`,
+      price: `299`,
       text: `Everything from Silver & Gold plus:`,
       list: [`Expedited Filing (State completes filing faster)`, `FedEx Delivery`, `Contracts Library (25+ high quality documents)`],
       button: {
