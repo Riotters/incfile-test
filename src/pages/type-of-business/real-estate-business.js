@@ -545,8 +545,8 @@ const TabsOval = styled.div`
 
 const TabsOval2 = styled.div`
     position: absolute;
-    top: 0;
-    left: 0;
+    bottom: 112px;
+    right: 0;
     width: 100%;
     transform: scaleX(-1);
   
