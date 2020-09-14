@@ -15,28 +15,52 @@ const Link = styled(ArrowLink)`
     margin-top: 24px;
 `;
 
-const NumericBox = ({ className, id, item }) => {
-  return (
-    <Whitebox className={className}>
-        <Circle>
-            {id + 1}
-        </Circle>
-        <TextWrapper>
-        {item.header && (
-            <Heading size="5" bottomMargin="36">{item.header}</Heading>
-        )}
-        {item.text && (
-            <Paragraph bottomMargin="0">{item.text}</Paragraph>
-        )}
-        {item.url && (
-            <Link content={item.url} bottomMargin="0" />
-        )}
-        {!item.header && !item.text && !item.url && (
-            <Paragraph bottomMargin="0">{item}</Paragraph>
-        )}
-        </TextWrapper>
-    </Whitebox>
-  )
-}
+const Flex = styled.li`
+    display: flex;
+`;
+
+const NumericBox = ({ className, id, item, noBox }) => (
+     !noBox ? (
+         <Whitebox className={className}>
+            <Circle>
+                {id + 1}
+            </Circle>
+            <TextWrapper>
+            {item.header && (
+                <Heading size="5" bottomMargin="36">{item.header}</Heading>
+            )}
+            {item.text && (
+                <Paragraph bottomMargin="0">{item.text}</Paragraph>
+            )}
+            {item.url && (
+                <Link content={item.url} bottomMargin="0" />
+            )}
+            {!item.header && !item.text && !item.url && (
+                <Paragraph bottomMargin="0">{item}</Paragraph>
+            )}
+            </TextWrapper>
+        </Whitebox>
+     ) : (
+        <Flex className={className}>
+            <Circle>
+                {id + 1}
+            </Circle>
+            <TextWrapper>
+            {item.header && (
+                <Heading size="5" bottomMargin="36">{item.header}</Heading>
+            )}
+            {item.text && (
+                <Paragraph bottomMargin="0">{item.text}</Paragraph>
+            )}
+            {item.url && (
+                <Link content={item.url} bottomMargin="0" />
+            )}
+            {!item.header && !item.text && !item.url && (
+                <Paragraph bottomMargin="0">{item}</Paragraph>
+            )}
+            </TextWrapper>
+        </Flex>
+     )
+)
 
 export default NumericBox;

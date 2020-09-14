@@ -8,19 +8,21 @@ import CartBlock from "../../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../../atomic/molecules/blocks/rating-block";
 //Sections
 import Top from "../../atomic/partials/top";
-import Perks from "../../atomic/sections/other/form-an-llc/perks";
+import About from "../../atomic/sections/other/start-an-llc/about";
+import State from "../../atomic/sections/other/start-an-llc/state";
+import Service from "../../atomic/sections/other/start-an-llc/service";
+import Variants from "../../atomic/sections/other/start-an-llc/variants";
 import Trust from "../../atomic/sections/other/form-an-llc/trust";
 import Steps from "../../atomic/sections/other/form-an-llc/steps";
 import Differences from "../../atomic/sections/other/form-an-llc/differences";
-import Variants from "../../atomic/sections/other/form-an-llc/variants";
 import Articles from "../../atomic/sections/articles";
 //Texts
-import { top, perks, trust, steps, differences, variants } from "../../static/other/form-an-llc";
+import { top, about, state, service, variants } from "../../static/other/start-an-llc";
 
-const FormAnLLC = () => (
+const StartAnLLC = () => (
   <Layout>
     <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
-    <Top imageName="mrs-bulb-form-an-llc-8929" imageAlt="Mrs Bulb and with checklist" ovalColor="sun" headlineWidth="550">
+    <Top imageName="aaa" imageAlt="Mrs Bulb and with checklist" ovalColor="purple" headlineWidth="550">
       <h1>{top.header}</h1>
       <Buttonsbox>
         <Button content={top.button[0]} theme="primary56" width="200px" arrow />
@@ -30,13 +32,11 @@ const FormAnLLC = () => (
         <RatingBlock />
       </RatingRow>
     </Top>
-    <Perks content={perks} />
-    <Trust content={trust} />
-    <Steps content={steps} />
-    <Differences content={differences} />
+    <About content={about} />
+    <State content={state} />
+    <Service content={service} />
     <Variants content={variants} />
-    <Articles />
   </Layout>
 );
 
-export default FormAnLLC;
+export default StartAnLLC;

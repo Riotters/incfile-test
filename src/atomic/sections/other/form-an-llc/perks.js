@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import HeadingCenter from "../../partials/heading-center"
-import ContentCenter from "../../partials/content-center";
-import NumericList from "../../organisms/lists/numeric-boxed-list";
-import Oval from "../../atoms/icons/oval";
-import OvalSVG from "../../../images/ovals/top-right-transparent-blue.inline.svg";
+import HeadingCenter from "../../../partials/heading-center"
+import ContentCenter from "../../../partials/content-center";
+import NumericList from "../../../organisms/lists/numeric-boxed-list";
+import Oval from "../../../atoms/icons/oval";
+import OvalSVG from "../../../../images/ovals/top-right-transparent-blue.inline.svg";
 
 const Perks = styled.div`
     padding-top: 75px;

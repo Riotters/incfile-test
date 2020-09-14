@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import { color } from "../../atoms/styles/colors"
-import HeadingCenter from "../../partials/heading-center"
-import ContentCenter from "../../partials/content-center";
-import TopImageBox from "../../../components/top-image-box";
-import { Heading } from "../../atoms/typography/heading";
-import { Paragraph } from "../../atoms/typography/paragraph";
-import Oval from "../../atoms/icons/oval";
-import OvalSVG from "../../../images/ovals/top-right-transparent-blue.inline.svg";
+import { color } from "../../../atoms/styles/colors"
+import HeadingCenter from "../../../partials/heading-center"
+import ContentCenter from "../../../partials/content-center";
+import TopImageBox from "../../../../components/top-image-box";
+import { Heading } from "../../../atoms/typography/heading";
+import { Paragraph } from "../../../atoms/typography/paragraph";
+import Oval from "../../../atoms/icons/oval";
+import OvalSVG from "../../../../images/ovals/top-right-transparent-blue.inline.svg";
 
 const Trust = styled.div`
     padding-top: 75px;
@@ -87,15 +87,15 @@ const TrustSection = ({ className, content }) => (
             headline={content.header}
             headlineWidth="770"
         />
-        <ContentCenter contentWidth="770">
-        <ImageBoxes>
-            {content.cards.map((card, i) => (
-                <TopImageBox className="box" image={icons[i]} color={colors[i]}>
-                    <Heading size="4">{card.header}</Heading>
-                    <Paragraph>{card.text}</Paragraph>
-                </TopImageBox>
-            ))}
-        </ImageBoxes>
+        <ContentCenter>
+            <ImageBoxes>
+                {content.cards.map((card, i) => (
+                    <TopImageBox className="box" image={icons[i]} color={colors[i]}>
+                        <Heading size="4">{card.header}</Heading>
+                        <Paragraph>{card.text}</Paragraph>
+                    </TopImageBox>
+                ))}
+            </ImageBoxes>
         </ContentCenter>
     </Trust>
 );

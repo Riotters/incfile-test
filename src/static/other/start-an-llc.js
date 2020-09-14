@@ -1,81 +1,58 @@
 export const top = {
-  header: `Form an LLC with value, speed and ease`,
+  header: `How to Start an LLC`,
+  text: `The Ws of Forming an LLC: Who, What, Where, When & Why`,
   button: [
     {
-      text: "Start My LLC",
+      text: "Form my LLC",
       url: "/",
     },
   ],
 };
 
-export const perks = {
-  header: `Perks Included When You Create`,
-  list: [`Answer a faw easy questions in 5 minutes or less`, `We prepare and file your articles directly with the Secretary of State`, `Receive your filed documents in the mail`],
-}
+export const about = {
+  tabs: {
+    panels: [`aaa`, `aaa`, `aaa`, `aaa`, `aaa`],
+    content: [
+      {
+          header: `aaa`,
+          text: `aaa`,
+      },
+      {
+          header: `aaa`,
+          text: `aaa`,
+      },
+      {
+          header: `aaa`,
+          text: `aaa`,
+      },
+      {
+          header: `aaa`,
+          text: `aaa`,
+      },
+      {
+          header: `aaa`,
+          text: `aaa`,
+      },
+    ],
+  },
+};
 
-export const trust = {
+export const state = {
   header: `aaa`,
-  cards: [
-    {
-      header: `aaa`,
-      text: `aaa`,
-    },
-    {
-      header: `aaa`,
-      text: `aaa`,
-    },
-    {
-      header: `aaa`,
-      text: `aaa`,
-    },
-  ]
-}
-
-export const steps = {
-  header: `aaa`,
-  list: [`aaa`, `aaa`, `aaa`],
-  button: {
-    text: `aaa`,
-    url: `/`,
+  card: {
+    header: `aaa`,
   },
 }
 
-export const differences = {
-  header: `aaa`,
-  text: `aaa`,
-  cards: [
-    {
-      header: `aaa`,
-      header2: `aaa`,
-      text: `aaa`,
-      header3: `aaa`,
-      text2: `aaa`,
-      header4: `aaa`,
-      text3: `aaa`,
-      link: {
-        text: `aaa`,
-        url: `/`,
-      }
-    },
-    {
-      header: `aaa`,
-      header2: `aaa`,
-      text: `aaa`,
-      header3: `aaa`,
-      text2: `aaa`,
-      header4: `aaa`,
-      text3: `aaa`,
-      link: {
-        text: `aaa`,
-        url: `/`,
-      }
-    },
-  ]
+export const service = {
+  header:
+      `How our service works`,
+  text:
+      `Take a moment to view our instructional video and see how easy it can be to get your business incorporated.`,
 }
 
 export const variants = {
-  header: `Ready to lunch`,
-  text: `Our flexible pricing options make it easy to get started`,
+  header: `Select the package that works best for you`,
   cards: [
     {
       variant: ``,
@@ -120,4 +97,44 @@ export const variants = {
       list: [`Business Contract Templates`, `Expedited Filing`, `FedEx Delivery`, `Domain Name + Business Email`],
     },
   ],
+};
+
+export const faq = {
+  items: [
+    {
+      question: `aaa`,
+      answer: `aaa.`,
+    },
+    {
+      question: `aaa`,
+      answer: `aaa.`,
+    },
+    {
+      question: `aaa`,
+      answer: `aaa.`,
+    },
+    {
+      question: `aaa`,
+      answer: `aaa.`,
+    },
+    {
+      question: `aaa`,
+      answer: `aaa.`,
+    },
+    {
+      question: `aaa`,
+      answer: `aaa.`,
+    },
+  ]
+}
+
+export const rocket = {
+  header: `Launch`,
+  header2: `your business with Incfile`,
+  text: `No Contracts. No Surprise.`,
+  text2: `Only $0 + State Fee to Launch Your Business.`,
+  button: {
+    text: `Start Now`,
+    url: `/`,
+  },
 };
