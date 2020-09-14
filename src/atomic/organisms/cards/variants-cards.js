@@ -30,7 +30,7 @@ const Wrapper = styled.div`
   }
 `;
 
-const colors = [color.white, color.blue3, color.blue1];
+const colors = [color.white, color.blue3, color.blue2];
 
 const PricingCards = ({ className, content }) => {
   return (

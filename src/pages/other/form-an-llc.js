@@ -6,10 +6,12 @@ import Button from "../../atomic/molecules/buttons/button";
 import RatingRow from "../../atomic/atoms/boxes/rating-row";
 import CartBlock from "../../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../../atomic/molecules/blocks/rating-block";
+import Perks from "../../atomic/sections/other/perks";
+import Trust from "../../atomic/sections/other/trust";
 //Sections
 import Top from "../../atomic/partials/top";
 //Texts
-import { top } from "../../static/other/form-an-llc";
+import { top, perks, trust } from "../../static/other/form-an-llc";
 
 const FormAnLLC = () => (
   <Layout>
@@ -24,6 +26,8 @@ const FormAnLLC = () => (
         <RatingBlock />
       </RatingRow>
     </Top>
+    <Perks content={perks} />
+    <Trust content={trust} />
   </Layout>
 );
 

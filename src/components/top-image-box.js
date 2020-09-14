@@ -13,7 +13,8 @@ const Wrapper = styled.div`
     box-shadow: ${props => (props.noShadow ? "" : shadow.white1)};
     
     @media (min-width: 1024px){
-        width: 470px;
+        width: 100%;
+        max-width: 470px;
     }
 
     .top {
