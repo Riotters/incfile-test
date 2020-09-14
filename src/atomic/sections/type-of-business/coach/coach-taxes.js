@@ -7,10 +7,11 @@ import Adventages from "../../../../components/adventages";
 import {color} from "../../../../components/styles/colors";
 import {shadow} from "../../../../components/styles/shadows";
 import Curve from "../../../atoms/shapes/curve";
-import OvalSvg from "../../../../images/oval-babyblue-1.inline.svg";
-import OvalSvgBottom from "../../../../images/oval-babyblue-2.inline.svg";
+import OvalSvg from "../../../../images/ovals/top-right-transparent-babyblue1.inline.svg";
+import OvalSvgBottom from "../../../../images/ovals/top-left-transparent-babyblue1.inline.svg";
 import CurveSvg from "../../../../images/curve-babyblue-1.inline.svg";
 import {adventages2} from "../../../../static/type-of-business/coach";
+import {Link} from "gatsby";
 
 const CoachTaxes = () => (
     <BabyBlueContainer>
@@ -22,17 +23,17 @@ const CoachTaxes = () => (
             <OvalSvgBottom/>
         </OvalBottom>
 
-        <Container>
-            <TextCenterLayout headline="Taxes for Professional Coaches"/>
+        <TextCenterLayout headlineWidth={770} headline="Taxes for Professional Coaches"/>
 
+        <Container>
             <TextWrapper>
                 <Paragraph big>
                     <Curve color={color.babyblue1}
                            style={{position: "absolute", left: "-29px", top: "-25px", transform: "rotate(-90deg)"}}/>
                     Taxes are a fact of life if you’re in business, and there are various ways you will need to file and pay them. This can include self-employment tax, state income tax and federal income tax. Depending on where and how you’re selling products and services, you may also be liable for sales and use tax.
                 </Paragraph>
-                <Paragraph big>
-                    As a rule of thumb, we recommend holding back around a third of your earnings to pay your taxes. We can also <span className="big blue">prepare and file your tax returns for you.</span>
+                <Paragraph big mixed>
+                    As a rule of thumb, we recommend holding back around a third of your earnings to pay your taxes. We can also <Link to="/">prepare and file your tax returns for you.</Link>
                 </Paragraph>
             </TextWrapper>
         </Container>
@@ -64,14 +65,15 @@ const BabyBlueContainer = styled.div`
     padding-bottom: 100px;
     padding-top: 100px;
     position: relative;
+    overflow: hidden;
 `;
 
 const TextWrapper = styled.div`
     width: 100%;
     position: relative;
+    max-width: 750px;
     
     @media (min-width: 750px) {
-        width: 750px;
         margin: 48px auto 100px;
     }
 `;
@@ -94,15 +96,21 @@ const Oval = styled.div`
     position: absolute;
     right: 0;
     top: 0;
+    width: 100%;
+    
+    @media (min-width: 720px){
+        width: 720px;
+    }
 `;
 
 const OvalBottom = styled.div`
     position: absolute;
     left: 0;
     bottom: 300px;
+    width: 100%;
     
-    @media (max-width: 970px) {
-        display: none;
+    @media (min-width: 720px){
+        width: 720px;
     }
 `;
 
