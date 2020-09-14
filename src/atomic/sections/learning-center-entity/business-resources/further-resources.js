@@ -42,7 +42,7 @@ const Grid = styled.div`
 `;
 
 const colors = [color.orange3, color.purple3, color.blu3, color.green3, color.purple4, color.yellow3, color.babyblue3, color.orange3, color.purple3, color.green3.];
-const icons = ["rocket-939", "certificate-305", "business-taxes-8954", "bulb-gear-7881", "game-plan", "display-ads", "measuring-business-success"];
+const icons = ["clock-691", "purpletick-2942", "rocket-939", "green-chart-4824", "purple-id-3067", "start-blogging-and-writing", "blue-usa-3865",""];
 
 const FutherResourcesSection = ({ className, content }) => (
   <FutherResources className={className}>
