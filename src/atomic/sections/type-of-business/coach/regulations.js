@@ -2,8 +2,9 @@ import React from "react";
 import {Heading} from "../../../atoms/typography/heading";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import Container from "../../../container";
-import OvalSvg from "../../../../images/oval-blue-5.inline.svg";
+import OvalSvg from "../../../../images/ovals/bottom-left-transparent-blue3.inline.svg";
 import styled from "styled-components";
+import {Link} from "gatsby";
 
 const Regulations = () => (
     <Wrapper>
@@ -14,9 +15,9 @@ const Regulations = () => (
             <Heading size={4} style={{fontSize: "40px"}}>
                 Rules, Regulations and Taxes for Your Coaching Business
             </Heading>
-            <Paragraph big>
-                You will need to explore local, state and federal licenses and permits, and <span
-                className="blue big">we can also help out with researching your business licensing needs.</span>
+            <Paragraph big mixed>
+                You will need to explore local, state and federal licenses and permits, and <Link
+                to="/">we can also help out with researching your business licensing needs.</Link>
             </Paragraph>
         </Container>
     </Wrapper>
@@ -30,5 +31,10 @@ const Oval = styled.div`
     position: absolute; 
     bottom: 0;
     left: 0;
+    width: 100%:
+    
+    @media (min-width: 136px){
+        width: 136px;
+    }
 `;
 export default Regulations;

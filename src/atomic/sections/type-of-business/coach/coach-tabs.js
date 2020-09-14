@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 import {Panel, Tabs, useTabState} from "@bumaga/tabs"
-// import { motion } from "framer-motion"
 import OverviewSVG from "../../../../images/icons/coaching-business.inline.svg"
 import ArrowSVG from "../../../../images/arrow.inline.svg"
 import {Collapse} from "react-collapse"
@@ -11,8 +10,8 @@ import CalcIcon from "../../../../images/icons/series-is-this-business-for-you.i
 import {Heading} from "../../../atoms/typography/heading";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import CkeckText from "../../../../components/static-check/text-only";
-import OvalSVG from "../../../../images/oval-blue-2.inline.svg";
-import OvalGreenSVG from "../../../../images/oval-green.inline.svg";
+import OvalSVG from "../../../../images/ovals/bottom-right-transparent-babyblue3.inline.svg";
+import OvalGreenSVG from "../../../../images/ovals/bottom-left-transparent-orange.inline.svg";
 import Container from "../../../../components/container";
 import BlueBoxWithAbsoluteText from "../../../molecules/text-blocks/blue-box-with-absolute-text";
 import Adventages from "../../../../components/adventages";
@@ -207,23 +206,27 @@ const ListBox = styled.div`
 `;
 
 const Oval = styled.div`
-  height: 100%;
   width: 100%;
-  max-height: 420px;
-  max-width: 420px;
   position: absolute;
   left: 0;
   top: 0;
+  transform: scaleX(-1);
+  
+  @media (min-width: 420px){
+    width: 420px;
+  }
 `
 
 const OvalBottom = styled.div`
-  height: 100%;
   width: 100%;
-  max-height: 420px;
-  max-width: 420px;
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: 112px;
+  transform: scaleX(-1);
+  
+  @media (min-width: 420px){
+    width: 420px;
+  }
 `
 
 const CoachTabs = ({layout, columns}) => (

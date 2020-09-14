@@ -1,23 +1,21 @@
 import React from "react";
 import styled from "styled-components";
-import Colorbox from "../../../../components/color-box";
-import DominoIcon from "../../../../images/icons/domino.inline.svg";
-import {color} from "../../../../components/styles/colors";
+import {Link} from "gatsby";
 import {Heading} from "../../../atoms/typography/heading";
 import CountingTextBoxed from "../../../molecules/text-blocks/counting-text-boxed";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import Container from "../../../container";
-import OvalGreenSVG from "../../../../images/oval-green.inline.svg";
-import OvalSVG from "../../../../images/oval-pink.inline.svg";
+import OvalGreenSVG from "../../../../images/ovals/bottom-right-transparent-green3.inline.svg";
+import OvalSVG from "../../../../images/ovals/top-left-transparent-red3.inline.svg";
 
 const BusinessOwnerResponsibilities = styled.section`
   position: relative;
   padding-top: 75px;
   padding-bottom: 64px;
   width: 100%;
+  max-width: 770px;
   
   @media (min-width: 770px) {
-    width: 770px;
     margin: 0 auto;
   }
 
@@ -36,12 +34,23 @@ const Oval = styled.div`
   left: 0;
   top: 0;
   transform: rotate(180deg);
+  width: 100%;
+  
+  @media (min-width: 420px){
+    width: 420px;
+  }
 `
 
 const OvalCenter = styled.div`
   position: absolute;
   right: 0;
-  top: 38%;
+  bottom: 223px;
+  width: 100%;
+  transform: scaleX(-1);
+  
+  @media (min-width: 720px){
+    width: 720px;
+  }
 `
 
 const CoachBusinessPlan = () => (
@@ -128,8 +137,8 @@ const CoachBusinessPlan = () => (
                     </Paragraph>
                 </CountingTextBoxed>
 
-                <Paragraph big style={{marginTop: "50px"}}>
-                    We’ve got the perfect <span style={{color: color.blue1, fontWeight: "bold"}}>guide to writing your business plan.</span>
+                <Paragraph big style={{marginTop: "50px"}} mixed>
+                    We’ve got the perfect <Link to="/">guide to writing your business plan.</Link>
                 </Paragraph>
             </BusinessOwnerResponsibilities>
         </Container>
