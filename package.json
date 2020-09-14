@@ -26,7 +26,7 @@
     "gatsby-plugin-svgr-svgo": "^1.0.12",
     "gatsby-source-filesystem": "^2.3.23",
     "gatsby-transformer-sharp": "^2.5.12",
-    "html-react-parser": "^0.13.0",
+    "html-react-parser": "^0.14.0",
     "lodash": "^4.17.19",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",

@@ -10,7 +10,7 @@ const Wrapper = styled.div`
     border-radius: 5px;
     overflow: ${props => (props.overflow ? "hidden" : "")};
     padding: ${props => (props.padding ? props.padding : "")};
-    margin-bottom: ${props => (props.bottomMG ? props.bottomMG : "")};
+    margin-bottom: ${props => (props.bottomMargin ? props.bottomMargin : "")};
 
     @media screen and (min-width: 769px) {
         ${props => (props.flex ? "display: flex;" : "")}

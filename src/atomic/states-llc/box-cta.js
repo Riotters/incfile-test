@@ -41,11 +41,13 @@ const Content = styled.div`
 	}
 `
 
-const BoxCTA = ({content, bgColor, bgImage}) => (
+const BoxCTA = ({content, bgColor, bgImage, ...rest}) => (
 	<Wrapper bgColor={bgColor} bgImage={bgImage}>
 		<Content>
-			<div className="title">{parse(content.title)}</div>
-			<Paragraph mixed={true}>{parse(content.subtitle)}</Paragraph>
+			<div className="title" {...rest}>{parse(content.title)}</div>
+			{content.subtitle && 
+				<Paragraph mixed={true}>{parse(content.subtitle)}</Paragraph>
+			}
 			<Button className="btn-cta" content={content.button} theme="primary56" arrow width="auto" margin="16px 0 0 0" marginMD="16px 0 0 0"/>
 		</Content>
 	</Wrapper>

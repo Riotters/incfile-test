@@ -48,9 +48,9 @@ const Link = styled(ArrowLink)`
     margin-top: 24px;
 `;
 
-const NumericBoxedList = ({ className, content, curve, bottomMargin }) => {
+const NumericBoxedList = ({ className, content, curve, bottomMargin, ...rest }) => {
   return (
-    <Wrapper className={className} bottomMargin={bottomMargin}>
+    <Wrapper className={className} bottomMargin={bottomMargin} {...rest}>
         {curve && (
             <Curve top="-25" left="-29" color={color.blue1}>
                 <CurveSVG />

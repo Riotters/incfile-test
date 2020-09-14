@@ -1,4 +1,9 @@
-import BgBoxBusinessNameIdea from '../../../images/icons/states/business-name-idea.inline.png'
+import { color } from '../../../components/styles/colors';
+
+import BgBoxBusinessNameIdea from '../../../images/icons/states/business-name-idea.inline.png';
+import BgBoxBusinessNameSearchTool from '../../../images/icons/states/business-name-search-tool.inline.png';
+import BgBoxDBAName from '../../../images/icons/states/dba-name-01.png';
+import BgBoxIncorporationPaperWork from '../../../images/icons/states/incorporation-paperwork-01.png';
 
 export const businessNamesContent = {
     header: {
@@ -144,7 +149,7 @@ export const businessNamesContent = {
         },
         {
             type: `box-cta`, 
-            color: `#faf2f8`,
+            color: color.purple3,
             bgImage: [BgBoxBusinessNameIdea],
             content: {
                 title: `Need help coming up with business name ideas?`,
@@ -154,6 +159,146 @@ export const businessNamesContent = {
                     url: `/business-name-generator/`
                 }
             }
-        }
+        },
+        // Business name search
+        {
+            type: `heading`,
+            size: 3,
+            content: `Texas Business Entity Searches`,
+        },
+        {
+            type: `paragraph`,
+            content: `Once you have an idea what business name you’d like to use, you’ll need to complete a “Texas business entity search.” Incfile offers a fast, simple and convenient tool to look up your proposed business name. The Texas Comptroller also has a tool that lets you search the register of TX LLCs and corporations to see if someone already has your desired business name.`,
+        },
+        {
+            type: `iconListColorBox`,
+            boxColor: color.orange3,  
+            content: {
+                header: `The Texas Secretary of State search tool lets you enter details and search for your TX LLC by the following fields:`,
+                list: [
+                    `Tax ID`,
+                    `Entity Name`,
+                    `File Number`,
+                ]
+            }
+        },
+        {
+            type: `paragraph`,
+            styles: { marginTop: `42px`},
+            content: `If the business name is already used, that means it’s not available and you won’t be able to register it. Try searching for a different business name instead.`,
+        },
+        {
+            type: `box-cta`, 
+            color: color.purple3,
+            styles: { fontSize: `clamp(1.5rem, 5vw, 1.2rem)` },
+            bgImage: [BgBoxBusinessNameSearchTool],
+            content: {
+                title: `Find out if your preferred business name is available in Texas with Incfile’s free tool.`,
+                button: {
+                    text: `Check Your Texas LLC Name`,
+                    url: `/business-name-generator/`
+                }
+            }
+        },
+        // Assumed Name
+        {
+            type: `heading`,
+            size: 3,
+            content: `DBA / Assumed Names for Texas LLCs`,
+        },
+        {
+            type: `paragraph`,
+            content: `You might choose to do business under a different name from your legal LLC name. In Texas, doing business under a different name is known as an “Assumed Name.” You might choose to use a different name from your TX formal LLC name for a variety of reasons.`,
+        },
+        {
+            type: `paragraph`,
+            content: `For example, your LLC might be called Texas Alternative Power Holding Company LLC and you have a chain called Home Solar Energy Systems. You should file an assumed name to let the Texas Secretary of State know. In Texas, you do that through an “Assumed Name Certificate” form or you can have Incfile do it on your behalf through our Assumed Business Name service.`,
+        },
+        {
+            type: `box-cta`, 
+            color: color.orange3,
+            styles: { fontSize: `clamp(1.5rem, 5vw, 1.2rem)` },
+            bgImage: [BgBoxDBAName],
+            content: {
+                title: `Register and manage an assumed name or DBA name through our easy-to-use service.`,
+                button: {
+                    text: `Icfile’s Assumed Name Service`,
+                    url: `/fictitious-business-or-trade-name/`
+                }
+            }
+        },
+        // Register Your Business Name With the Texas Secretary of State
+        {
+            type: `heading`,
+            size: 3,
+            content: `Register Your Business Name With the Texas Secretary of State`,
+        },
+        {
+            type: `paragraph`,
+            content: `Once you’ve searched for your Texas business name, checked availability, followed the naming rules and decided whether you need an assumed business name, you can register your TX LLC name. There are a couple of ways to do this.`,
+        },
+        {
+            type: `numberBoxList`,
+            styles: {marginBottom: `55px` },
+            content: [
+                {
+                    text: `If you don’t want to form your Texas LLC right now, you can reserve the business name with the Texas Secretary of State. You will need to complete a Name Reservation form and file it with the TX SOS. You do not need to reserve a name if you are forming your business right away.`,
+                    button: {
+                        text: `Texas SOS LLC Name Reservation Form`,
+                        theme: `secondary56`,
+                        width: `385px`,
+                        url: `/`,
+                    }
+                },
+                `If you’re ready to start your Texas LLC, you can formally file your Certificate of Formation with the Texas Secretary of State, or have Incfile do it for you.`,
+            ],
+        },
+        {
+            type: `box-cta`, 
+            color: color.blue3,
+            styles: { fontSize: `clamp(1rem, 5vw, 1.5rem)`},
+            bgImage: [BgBoxIncorporationPaperWork],
+            content: {
+                title: `Incfile can handle all your incorporation paperwork with the State of Texas for you—and we’ll do it for free!`,
+                subtitle: `Incorporate in Texas for $0 + State Fee ($300)`,
+                button: {
+                    text: `Start Your LLC Now`,
+                    url: `/`
+                }
+            }
+        },
+        // Faqs section
+        {
+            type: `heading`,
+            size: 3,
+            content: `FAQs About Naming Your Texas LLC`,
+        },
+        {
+            type: `paragraph`,
+            content: `You’ll find plenty more insight and guidance on the other pages of this guide, including:`,
+        },
+        {
+            type: `accordion`,
+            content: {
+                items: [
+                    {
+                        question: `How Do I Search for My Texas LLC Business Name?`,
+                        answer: `Just go to the business name search tool and enter your proposed business name. You can search the register of the Texas Secretary of State, which will tell you if there are any TX corporations or LLCs with that name.`,
+                    },
+                    {
+                        question: `Are There Any Rules on Naming My Texas LLC?`,
+                        answer: `Yes. Most LLCs will be bound by general rules (applicable to all LLCs) and specific rules (applicable in the state of Texas). We’ve detailed these rules above.`,
+                    },
+                    {
+                        question: `Can I Do Business Under a Different Name Than My LLC Name in Texas?`,
+                        answer: `Yes. Known as “assumed names,” “fictitious names,” “doing business as names” or “trade names,” you can choose to conduct business under a different name. Details are above.`,
+                    },
+                    {
+                        question: `Can I Reserve a Name for My Texas LLC?`,
+                        answer: `Yes. The Texas Secretary of State allows you to reserve a name if you don’t want to start your business immediately. Details are above. If you are ready to start your business now, you do not need to reserve a name.`,
+                    },
+                ]
+            }
+        },
     ],
 };

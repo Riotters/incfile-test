@@ -234,7 +234,7 @@ const HowToGuide = ({ content }) => {
 
                 <Heading size={4} style={{ marginTop: `40px` }}>{parse(content.mainSteps.step4.annualReport[0].title)}</Heading>
                 {content.mainSteps.step4.annualReport[0].items.map(item => (
-                    <Whitebox flex padding="24px" bottomMG="8px">
+                    <Whitebox flex padding="24px" bottomMargin="8px">
                         <Paragraph mixed={true} bottomMargin={0} style={{ fontWeight: `bold`, minWidth: `300px` }}>{item.text1}</Paragraph>
                         <Paragraph mixed={true} bottomMargin={0}>{parse(item.text2)}</Paragraph>
                     </Whitebox>
@@ -242,7 +242,7 @@ const HowToGuide = ({ content }) => {
 
                 <Heading size={4} style={{ marginTop: `40px` }}>{parse(content.mainSteps.step4.annualReport[1].title)}</Heading>
                 {content.mainSteps.step4.annualReport[1].items.map(item => (
-                    <Whitebox flex padding="24px" bottomMG="8px">
+                    <Whitebox flex padding="24px" bottomMargin="8px">
                         <Paragraph mixed={true} bottomMargin={0} style={{ fontWeight: `bold`, minWidth: `300px` }}>{item.text1}</Paragraph>
                         <Paragraph mixed={true} bottomMargin={0}>{parse(item.text2)}</Paragraph>
                     </Whitebox>

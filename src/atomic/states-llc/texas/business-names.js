@@ -21,6 +21,7 @@ import TextCheck from "../../../components/static-check/text-only";
 import NumericBoxedList from '../../organisms/lists/numeric-boxed-list'
 import IconListColorBox from "../../molecules/text-blocks/icon-h4-list-color"
 import AcccordionCounting from '../tab-acccordion-with-counting';
+import Accordion from "../../organisms/accordion/accordion";
 import TextBlockWithNumberCounting from "../../molecules/mixed-blocks/text-block-with-absolute-number";
 import RelativeElement from '../../elements/relative-e';
 import AbsoluteShapeCurveElement from '../../elements/absolute-shape-curve-e'
@@ -114,7 +115,11 @@ const BusinessNames = ({ content }) => {
                     }
 
                     {item.type === 'numberBoxList' && 
-                        <NumericBoxedList content={item.content}/>
+                        <NumericBoxedList content={item.content} style={item.styles}/>
+                    }
+
+                    {item.type === 'iconListColorBox' && 
+                        <IconListColorBox color={item.boxColor} content={item.content} rounded />
                     }
 
                     {item.type === 'textBoxWithCheckIcon' && item.content.map(i => (
@@ -126,8 +131,12 @@ const BusinessNames = ({ content }) => {
                     ))}
 
                     {item.type === 'box-cta' && 
-                        <BoxCTA bgColor={item.color} bgImage={item.bgImage[0]} content={item.content} />
+                        <BoxCTA bgColor={item.color} bgImage={item.bgImage[0]} style={item.styles} content={item.content} />
                     }
+
+                    {item.type === 'accordion' && (
+                        <Accordion content={item.content} tab/>
+                    )}
                 </div>
             ))}
 
