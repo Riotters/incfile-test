@@ -34,7 +34,7 @@ const Box = styled.div`
     height: 100%;
     width: 100%;
     max-width: 100%;
-    padding: 48px 40px 40px;
+    padding: 56px 40px 40px;
     position: relative;
     background-color: ${color.white};
     box-shadow: ${shadow.white1};
