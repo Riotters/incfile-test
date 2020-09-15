@@ -605,8 +605,18 @@ export const variants = {
         text: `Get the Silver package`,
         url: `/`,
       },
-      packageFee: `0`,
-      stateFee: `100`,
+      fees: [
+        {
+          helpmark: `helpmark`,
+          text: `Package fee`,
+          price: `0`,
+        },
+        {
+          helpmark: `helpmark`,
+          text: `State fee`,
+          price: `100`,
+        },
+      ],
       include: `The sliver services includes:`,
       list: [`Prepare & Filing the Articles of Organization`, `Unlimited Name Searches`, `FREE Registered Agent for a year!`],
     },
@@ -619,8 +629,18 @@ export const variants = {
         text: `Get the Gold package`,
         url: `/`,
       },
-      packageFee: `149`,
-      stateFee: `100`,
+      fees: [
+        {
+          helpmark: `helpmark`,
+          text: `Package fee`,
+          price: `149`,
+        },
+        {
+          helpmark: `helpmark`,
+          text: `State fee`,
+          price: `100`,
+        },
+      ],
       include: `The sliver package, and:`,
       list: [`EIN Business Tax Number`, `IRS Form 2553`, `Operating Agreement`, `Banking Resolution`, `Express Shipping`, `Lifetime Company Alerts`, `Online Access Dashboard`, `Unlimited Phone & Email Support`, `Business Banking Account`, `Business Tax Consultation`],
     },
@@ -633,8 +653,18 @@ export const variants = {
         text: `Get the Platinum package`,
         url: `/`,
       },
-      packageFee: `299`,
-      stateFee: `100`,
+      fees: [
+        {
+          helpmark: `helpmark`,
+          text: `Package fee`,
+          price: `299`,
+        },
+        {
+          helpmark: `helpmark`,
+          text: `State fee`,
+          price: `100`,
+        },
+      ],
       include: `The gold package, and:`,
       list: [`Business Contract Templates`, `Expedited Filing`, `FedEx Delivery`, `Domain Name + Business Email`],
     },

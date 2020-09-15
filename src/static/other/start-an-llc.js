@@ -52,7 +52,12 @@ export const service = {
 }
 
 export const variants = {
-  header: `Select the package that works best for you`,
+  header: `See how easy it can be to get your business incorporated`,
+
+  link: {
+    text: `Learn more`,
+    url: `/`,
+  },
   cards: [
     {
       variant: ``,
@@ -63,8 +68,18 @@ export const variants = {
         text: `Get the Silver package`,
         url: `/`,
       },
-      packageFee: `0`,
-      stateFee: `100`,
+      fees: [
+        {
+          helpmark: `helpmark`,
+          text: `Package fee`,
+          price: `0`,
+        },
+        {
+          helpmark: `helpmark`,
+          text: `State fee`,
+          price: `100`,
+        },
+      ],
       include: `The sliver services includes:`,
       list: [`Prepare & Filing the Articles of Organization`, `Unlimited Name Searches`, `FREE Registered Agent for a year!`],
     },
@@ -77,8 +92,18 @@ export const variants = {
         text: `Get the Gold package`,
         url: `/`,
       },
-      packageFee: `149`,
-      stateFee: `100`,
+      fees: [
+        {
+          helpmark: `helpmark`,
+          text: `Package fee`,
+          price: `149`,
+        },
+        {
+          helpmark: `helpmark`,
+          text: `State fee`,
+          price: `100`,
+        },
+      ],
       include: `The sliver package, and:`,
       list: [`EIN Business Tax Number`, `IRS Form 2553`, `Operating Agreement`, `Banking Resolution`, `Express Shipping`, `Lifetime Company Alerts`, `Online Access Dashboard`, `Unlimited Phone & Email Support`, `Business Banking Account`, `Business Tax Consultation`],
     },
@@ -91,8 +116,18 @@ export const variants = {
         text: `Get the Platinum package`,
         url: `/`,
       },
-      packageFee: `299`,
-      stateFee: `100`,
+      fees: [
+        {
+          helpmark: `helpmark`,
+          text: `Package fee`,
+          price: `299`,
+        },
+        {
+          helpmark: `helpmark`,
+          text: `State fee`,
+          price: `100`,
+        },
+      ],
       include: `The gold package, and:`,
       list: [`Business Contract Templates`, `Expedited Filing`, `FedEx Delivery`, `Domain Name + Business Email`],
     },
@@ -100,32 +135,35 @@ export const variants = {
 };
 
 export const faq = {
-  items: [
-    {
-      question: `aaa`,
-      answer: `aaa.`,
-    },
-    {
-      question: `aaa`,
-      answer: `aaa.`,
-    },
-    {
-      question: `aaa`,
-      answer: `aaa.`,
-    },
-    {
-      question: `aaa`,
-      answer: `aaa.`,
-    },
-    {
-      question: `aaa`,
-      answer: `aaa.`,
-    },
-    {
-      question: `aaa`,
-      answer: `aaa.`,
-    },
-  ]
+  header: `Common questions about Business Formation Kit`,
+  faq: {
+    items: [
+      {
+        question: `aaa`,
+        answer: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut nulla id elit condimentum finibus. Proin nibh metus, suscipit quis auctor non, vehicula nec nibh. Etiam sed fermentum est, eget condimentum sem. Mauris at neque sed nulla hendrerit fringilla. Nunc in auctor nulla. Donec ac bibendum nunc. Nulla nec auctor mauris. Etiam imperdiet sodales metus, vel pellentesque odio ultricies sit amet. Fusce tincidunt finibus scelerisque. Duis feugiat nec sapien eget imperdiet. Suspendisse commodo consectetur magna, nec placerat mauris lobortis sit amet.`,
+      },
+      {
+        question: `aaa`,
+        answer: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut nulla id elit condimentum finibus. Proin nibh metus, suscipit quis auctor non, vehicula nec nibh. Etiam sed fermentum est, eget condimentum sem. Mauris at neque sed nulla hendrerit fringilla. Nunc in auctor nulla. Donec ac bibendum nunc. Nulla nec auctor mauris. Etiam imperdiet sodales metus, vel pellentesque odio ultricies sit amet. Fusce tincidunt finibus scelerisque. Duis feugiat nec sapien eget imperdiet. Suspendisse commodo consectetur magna, nec placerat mauris lobortis sit amet.`,
+      },
+      {
+        question: `aaa`,
+        answer: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut nulla id elit condimentum finibus. Proin nibh metus, suscipit quis auctor non, vehicula nec nibh. Etiam sed fermentum est, eget condimentum sem. Mauris at neque sed nulla hendrerit fringilla. Nunc in auctor nulla. Donec ac bibendum nunc. Nulla nec auctor mauris. Etiam imperdiet sodales metus, vel pellentesque odio ultricies sit amet. Fusce tincidunt finibus scelerisque. Duis feugiat nec sapien eget imperdiet. Suspendisse commodo consectetur magna, nec placerat mauris lobortis sit amet.`,
+      },
+      {
+        question: `aaa`,
+        answer: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut nulla id elit condimentum finibus. Proin nibh metus, suscipit quis auctor non, vehicula nec nibh. Etiam sed fermentum est, eget condimentum sem. Mauris at neque sed nulla hendrerit fringilla. Nunc in auctor nulla. Donec ac bibendum nunc. Nulla nec auctor mauris. Etiam imperdiet sodales metus, vel pellentesque odio ultricies sit amet. Fusce tincidunt finibus scelerisque. Duis feugiat nec sapien eget imperdiet. Suspendisse commodo consectetur magna, nec placerat mauris lobortis sit amet.`,
+      },
+      {
+        question: `aaa`,
+        answer: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut nulla id elit condimentum finibus. Proin nibh metus, suscipit quis auctor non, vehicula nec nibh. Etiam sed fermentum est, eget condimentum sem. Mauris at neque sed nulla hendrerit fringilla. Nunc in auctor nulla. Donec ac bibendum nunc. Nulla nec auctor mauris. Etiam imperdiet sodales metus, vel pellentesque odio ultricies sit amet. Fusce tincidunt finibus scelerisque. Duis feugiat nec sapien eget imperdiet. Suspendisse commodo consectetur magna, nec placerat mauris lobortis sit amet.`,
+      },
+      {
+        question: `aaa`,
+        answer: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut nulla id elit condimentum finibus. Proin nibh metus, suscipit quis auctor non, vehicula nec nibh. Etiam sed fermentum est, eget condimentum sem. Mauris at neque sed nulla hendrerit fringilla. Nunc in auctor nulla. Donec ac bibendum nunc. Nulla nec auctor mauris. Etiam imperdiet sodales metus, vel pellentesque odio ultricies sit amet. Fusce tincidunt finibus scelerisque. Duis feugiat nec sapien eget imperdiet. Suspendisse commodo consectetur magna, nec placerat mauris lobortis sit amet.`,
+      },
+    ]
+  }
 }
 
 export const rocket = {
