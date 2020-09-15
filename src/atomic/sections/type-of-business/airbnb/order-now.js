@@ -21,7 +21,7 @@ const OrderNow = () => (
 
         <Container>
 
-            <LeftImageRightContent image="after-formation-image" imageWidth="515" textWidth="570">
+            <LeftImageRightContent image="after-formation-image" imageWidth="600" textWidth="570">
 
                 <h2 style={{position: "relative"}}>
                     <CurveWrapper>
@@ -44,7 +44,6 @@ const OrderNow = () => (
 const OrderNowWrapper = styled.section`
   background-color: ${color.orange3};
   position: relative;
-  padding: 64px 0;
 `;
 
 const ButtonsBox = styled.div`

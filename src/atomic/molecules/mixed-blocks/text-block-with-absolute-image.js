@@ -33,6 +33,13 @@ const TextBlock = styled.div`
             padding-bottom: ${(props) => props.paddingBottom}px;
     }
     
+    @media(min-width: 1024px){
+      .containerMargin{
+        margin-right: 15px;
+        margin-left: 15px;
+      }
+    }
+    
     ${(props) => props.boxShadow && "box-shadow: 0 24px 32px rgba(236, 236, 236, 0.5);"}
     border-radius: ${(props) => props.borderRadius}px;
     
