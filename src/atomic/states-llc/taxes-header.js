@@ -62,7 +62,7 @@ const TaxesHeader = ({content}) => (
     <Content>
       <VisibilitySensor partialVisibility once>
         {({ isVisible }) => (
-          <div className={isVisible ? "scaleUp enter" : "scaleUp"}>
+          <div className={isVisible ? "slideUp enter" : "slideUp"}>
           <Heading size={1} bottomMargin="24">{content.title}</Heading>
           <Paragraph big flex mixed={true} bottomMargin="55" style={{ textAlign: `center` }}>{parse(content.subline)}</Paragraph>
           </div>
