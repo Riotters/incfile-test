@@ -12,18 +12,17 @@ import About from "../../atomic/sections/other/start-an-llc/about";
 import State from "../../atomic/sections/other/start-an-llc/state";
 import Service from "../../atomic/sections/other/start-an-llc/service";
 import Variants from "../../atomic/sections/other/start-an-llc/variants";
-import Trust from "../../atomic/sections/other/form-an-llc/trust";
-import Steps from "../../atomic/sections/other/form-an-llc/steps";
-import Differences from "../../atomic/sections/other/form-an-llc/differences";
-import Articles from "../../atomic/sections/articles";
+import Faq from "../../atomic/sections/other/start-an-llc/faq";
+import Rocket from "../../atomic/sections/review-entity-type/c-corporation/rocket";
 //Texts
-import { top, about, state, service, variants } from "../../static/other/start-an-llc";
+import { top, about, state, service, variants, faq, rocket } from "../../static/other/start-an-llc";
 
 const StartAnLLC = () => (
   <Layout>
     <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
-    <Top imageName="aaa" imageAlt="Mrs Bulb and with checklist" ovalColor="purple" headlineWidth="550">
+    <Top imageName="mrs-bulb-start-an-llc-4300" imageAlt="Mrs Bulb and with checklist" ovalColor="sun" headlineWidth="550" textWidth="430">
       <h1>{top.header}</h1>
+      <p>{top.text}</p>
       <Buttonsbox>
         <Button content={top.button[0]} theme="primary56" width="200px" arrow />
       </Buttonsbox>
@@ -36,6 +35,8 @@ const StartAnLLC = () => (
     <State content={state} />
     <Service content={service} />
     <Variants content={variants} />
+    <Faq content={faq} />
+    <Rocket content={rocket} />
   </Layout>
 );
 
