@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import { Link } from "gatsby";
 import parse from 'html-react-parser';
+import VisibilitySensor from "../VisibilitySensor";
 
 // components
 import Container from '../container';
@@ -58,9 +59,16 @@ const WrappBox = styled.div`
 
 const TaxesHeader = ({content}) => (
   <Container>
-      <Content>
-        <Heading size={1} bottomMargin="24">{content.title}</Heading>
-        <Paragraph big flex mixed={true} bottomMargin="55" style={{ textAlign: `center` }}>{parse(content.subline)}</Paragraph>
+    <Content>
+      <VisibilitySensor partialVisibility once>
+        {({ isVisible }) => (
+          <div className={isVisible ? "scaleUp enter" : "scaleUp"}>
+          <Heading size={1} bottomMargin="24">{content.title}</Heading>
+          <Paragraph big flex mixed={true} bottomMargin="55" style={{ textAlign: `center` }}>{parse(content.subline)}</Paragraph>
+          </div>
+      )}
+    </VisibilitySensor>
+        
         <WrappBox>
           {content.boxes.map((box) => (
             <Colorbox color={color.white} className="box">

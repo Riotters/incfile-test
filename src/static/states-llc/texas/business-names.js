@@ -1,9 +1,10 @@
 import { color } from '../../../components/styles/colors';
 
-import BgBoxBusinessNameIdea from '../../../images/icons/states/business-name-idea.inline.png';
-import BgBoxBusinessNameSearchTool from '../../../images/icons/states/business-name-search-tool.inline.png';
 import BgBoxDBAName from '../../../images/icons/states/dba-name-01.png';
+import BgBoxTrademark from '../../../images/icons/states/trademark-01.png';
+import BgBoxBusinessNameIdea from '../../../images/icons/states/business-name-idea.inline.png';
 import BgBoxIncorporationPaperWork from '../../../images/icons/states/incorporation-paperwork-01.png';
+import BgBoxBusinessNameSearchTool from '../../../images/icons/states/business-name-search-tool.inline.png';
 
 export const businessNamesContent = {
     header: {
@@ -298,6 +299,30 @@ export const businessNamesContent = {
                         answer: `Yes. The Texas Secretary of State allows you to reserve a name if you don’t want to start your business immediately. Details are above. If you are ready to start your business now, you do not need to reserve a name.`,
                     },
                 ]
+            }
+        },
+        // Trademark section
+        {
+            type: `heading`,
+            size: 3,
+            content: `Trademarks and Service Marks`,
+        },
+        {
+            type: `paragraph`,
+            content: `You must be careful that your Texas LLC name does not infringe on the trademark or service mark of another business. The easiest way to make sure your proposed business name does not infringe is to carry out a trademark search through Incfile. If it doesn’t infringe, you can even register it as a trademark yourself.`,
+        },
+        {
+            type: `box-cta`, 
+            color: color.blue3,
+            styles: { fontSize: `clamp(1rem, 5vw, 1.5rem)`},
+            bgImage: [BgBoxTrademark],
+            content: {
+                title: `Make sure your business is starting off on the right foot when it comes to intellectual property.`,
+                subtitle: `Have Incfile run a trademark search for you.`,
+                button: {
+                    text: `Incfile’s Trademark & Registration Service`,
+                    url: `/trademark-name-search/`,
+                }
             }
         },
     ],

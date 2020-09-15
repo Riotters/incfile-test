@@ -9,6 +9,7 @@ import LinearBgHeader from '../../atomic/states-llc/linear-bg-header';
 import WrapperContent from '../../atomic/states-llc/wrapper-content'
 import LeftTabPages from '../../atomic/states-llc/left-tab-pages'
 import MainPageContent from '../../atomic/states-llc/page-content'
+import RegisteredAgentSection from '../../atomic/states-llc/texas/registered-agents'
 import Rocket from "../../atomic/sections/review-entity-type/c-corporation/rocket";
 
 // Content
@@ -37,7 +38,9 @@ const RegisteredAgentTexas = () => (
         <WrapperContent>
             <Wrapper>
             <LeftTabPages content={tabPages} />
-            <MainPageContent>asdasd</MainPageContent>
+                <MainPageContent>
+                <RegisteredAgentSection content={agentPageContent.content} />
+            </MainPageContent>
             </Wrapper>
         </WrapperContent>
         

@@ -61,26 +61,6 @@ const ListFlex = styled.div`
   }
 `;
 
-const WrapperLink = styled(Link)`
-  margin-bottom: 8px;
-
-  .box {
-    display: flex;
-    align-items: flex-started;
-    border-radius: 5px;
-    padding: 24px;
-
-    .circle{
-      transform: rotate(90deg);
-      margin-right: 24px;
-    }
-
-    p{
-      margin-bottom: 0;
-    }
-  }
-`;
-
 const BoxButtonLinks = styled.div`
 	.article-link:not(:last-child) {
 		display: block;
@@ -120,14 +100,14 @@ const HowToGuide = ({ content }) => {
             </EmbedVideo>
 
             {content.mainSteps.navSteps.map(step => (
-                <WrapperLink href={`/`}>
-                    <Whitebox className="box">
-                        <Circle circleColor={color.orange3} iconColor={color.orange1} className="circle">
+                <Link href={`/`}>
+                    <Whitebox bottomMargin="8px" padding="24px" flex>
+                        <Circle circleColor={color.orange3} iconColor={color.orange1} rightMargin="24" transform="rotate(90deg)" className="circle">
                             <ArrowSVG />
                         </Circle>
-                        <Paragraph mixed={true}>{parse(step)}</Paragraph>
+                        <Paragraph mixed={true} bottomMargin="0">{parse(step)}</Paragraph>
                     </Whitebox>
-                </WrapperLink>
+                </Link>
             ))}
 
             <TextBlockWithNumberCounting
@@ -140,7 +120,7 @@ const HowToGuide = ({ content }) => {
                 imageShadowOpacity={0.5}
                 boxShadow={false}
                 paddingLeft={0}
-                style={{ marginTop: "70px" }}
+                style={{ marginTop: "100px" }}
                 circleShadowY={40}
                 circleShadowBlure={80}
                 width={100}
@@ -223,7 +203,7 @@ const HowToGuide = ({ content }) => {
                         <ShapeCurve color={color.purple1} />
                     </AbsoluteShapeCurveElement>
                     {content.mainSteps.step4.certificate_info.map(item => (
-                        <Whitebox flex padding="24px" bottomMG="8px">
+                        <Whitebox flex padding="24px" bottomMargin="8px">
                             <Paragraph mixed={true} bottomMargin={0} style={{ fontWeight: `bold`, minWidth: `300px` }}>{item.text1}</Paragraph>
                             <Paragraph mixed={true} bottomMargin={0}>{parse(item.text2)}</Paragraph>
                         </Whitebox>

@@ -11,10 +11,10 @@ const Wrapper = styled.div`
     overflow: ${props => (props.overflow ? "hidden" : "")};
     padding: ${props => (props.padding ? props.padding : "")};
     margin-bottom: ${props => (props.bottomMargin ? props.bottomMargin : "")};
-
-    @media screen and (min-width: 769px) {
-        ${props => (props.flex ? "display: flex;" : "")}
-        ${props => (props.column ? "flex-direction: column;" : "flex-direction: row;")}
+    ${props => (props.flex ? "display: flex;" : "")}
+    
+    @media screen and (min-width: 769px) {   
+        ${props => ((props.column && props.flex) ? "flex-direction: column;" : "flex-direction: row;")}
     }
 `
 

@@ -15,6 +15,7 @@ const Wrapper = styled.a`
     span {
         transition: color 0.3s ease;
         font-weight: 600;
+        font-size: ${props => (props.fontSize ? props.fontSize : "initial")};
     }
 
     &:hover {
@@ -29,19 +30,19 @@ const Wrapper = styled.a`
 `
 
 const Arrow = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 12px;
-  width: 12px;
-  margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 12px;
+    width: 12px;
+    margin-right: 10px;
 
-  svg {
-    path {
-      transition: fill 0.3s ease;
-      fill: #5088fd;
+    svg {
+        path {
+        transition: fill 0.3s ease;
+        fill: #5088fd;
+        }
     }
-  }
 `
 
 const ArrowLink = ({ children, className, url, ...rest }) => (
