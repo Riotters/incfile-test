@@ -18,7 +18,7 @@ const Wrapper = styled.div`
 
     .title{
         font-family: MarkPro;
-        font-size: clamp(1.5rem, 5vw, 2.2rem);
+        font-size: clamp(1.5rem, 5vw, 2rem);
         font-weight: bold;
         font-stretch: normal;
         font-style: normal;
