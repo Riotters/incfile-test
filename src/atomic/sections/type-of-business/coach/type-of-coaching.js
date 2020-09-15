@@ -8,17 +8,23 @@ import {color} from "../../../../components/styles/colors";
 import {shadow} from "../../../../components/styles/shadows";
 import {adventages} from "../../../../static/type-of-business/coach";
 import Curve from "../../../atoms/shapes/curve";
-import OvalSvg from "../../../../images/oval-orange-4.inline.svg";
+import OvalSvg from "../../../../images/ovals/top-right-transparent-orange.inline.svg";
 
 const TypeOfCoaching = () => (
     <Wrapper>
         <Oval>
             <OvalSvg/>
         </Oval>
+
+        <Oval2>
+            <OvalSvg/>
+        </Oval2>
+
+        <TextCenterLayout headline="What Type of Professional Coaching Business Should You Start?"
+                          text="There are several different types of life or business coaches. Here are some of the more popular options:"/>
+
         <Container>
             <Service>
-                <TextCenterLayout headline="What Type of Professional Coaching Business Should You Start?"
-                                  text="There are several different types of life or business coaches. Here are some of the more popular options:"/>
 
                 <AdventagesBox>
                     <CurveWrapper>
@@ -75,6 +81,23 @@ const Oval = styled.div`
     position: absolute;
     right: 0;
     top: 300px;
+    width: 100%;
+    
+    @media (min-width: 720px){
+        width: 720px;
+    }
+`;
+
+const Oval2 = styled.div`
+    position: absolute;
+    left: 0;
+    bottom: 263px;
+    width: 100%;
+    transform: rotate(180deg);
+    
+    @media (min-width: 420px){
+        width: 420px;
+    }
 `;
 
 export default TypeOfCoaching;

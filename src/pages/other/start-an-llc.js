@@ -8,20 +8,21 @@ import CartBlock from "../../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../../atomic/molecules/blocks/rating-block";
 //Sections
 import Top from "../../atomic/partials/top";
-import Perks from "../../atomic/sections/other/form-an-llc/perks";
-import Trust from "../../atomic/sections/other/form-an-llc/trust";
-import Steps from "../../atomic/sections/other/form-an-llc/steps";
-import Differences from "../../atomic/sections/other/form-an-llc/differences";
-import Variants from "../../atomic/sections/other/form-an-llc/variants";
-import Articles from "../../atomic/sections/articles";
+import About from "../../atomic/sections/other/start-an-llc/about";
+import State from "../../atomic/sections/other/start-an-llc/state";
+import Service from "../../atomic/sections/other/start-an-llc/service";
+import Variants from "../../atomic/sections/other/start-an-llc/variants";
+import Faq from "../../atomic/sections/other/start-an-llc/faq";
+import Rocket from "../../atomic/sections/review-entity-type/c-corporation/rocket";
 //Texts
-import { top, perks, trust, steps, differences, variants } from "../../static/other/form-an-llc";
+import { top, about, state, service, variants, faq, rocket } from "../../static/other/start-an-llc";
 
-const FormAnLLC = () => (
+const StartAnLLC = () => (
   <Layout>
     <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
-    <Top imageName="mrs-bulb-form-an-llc-8929" imageAlt="Mrs Bulb and with checklist" ovalColor="sun" headlineWidth="550">
+    <Top imageName="mrs-bulb-start-an-llc-4300" imageAlt="Mrs Bulb and with checklist" ovalColor="sun" headlineWidth="550" textWidth="430">
       <h1>{top.header}</h1>
+      <p>{top.text}</p>
       <Buttonsbox>
         <Button content={top.button[0]} theme="primary56" width="200px" arrow />
       </Buttonsbox>
@@ -30,13 +31,13 @@ const FormAnLLC = () => (
         <RatingBlock />
       </RatingRow>
     </Top>
-    <Perks content={perks} />
-    <Trust content={trust} />
-    <Steps content={steps} />
-    <Differences content={differences} />
+    <About content={about} />
+    <State content={state} />
+    <Service content={service} />
     <Variants content={variants} />
-    <Articles />
+    <Faq content={faq} />
+    <Rocket content={rocket} />
   </Layout>
 );
 
-export default FormAnLLC;
+export default StartAnLLC;

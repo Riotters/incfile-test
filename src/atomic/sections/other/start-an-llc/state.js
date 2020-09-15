@@ -11,24 +11,19 @@ import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-blue2.inline.svg";
 import { Heading } from "../../../atoms/typography/heading";
 
-const Calculator = styled.div`
-  background-color: ${color.blue3};
+const State = styled.div`
+  background-color: ${color.green3};
   padding-bottom: 100px;
   padding-top: 100px;
   position: relative;
 `;
 
 const ImageBoxes = styled.div`
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 30px;
+  display: flex;
+  justify-content: center;
   padding-top: 80px;
   padding-bottom: 48px;
   width: 100%;
-
-  @media(min-width: 769px) {
-    grid-template-columns: 1fr 1fr;
-  }
   
   @media (min-width: 970px) {
     width: 970px;
@@ -37,43 +32,24 @@ const ImageBoxes = styled.div`
 
   .box {
       padding: 16px 16px 56px;
+      border-radius: 5px;
+
+      @media (min-width: 769px) {
+          border-radius: 50px;
+      }
+      
+  
+      .top {
+          border-radius: 5px;
+
+          @media (min-width: 769px) {
+              border-radius: 35px 35px 5px 5px;
+          }
+      }
 
     h4 {
         text-align: center;
         padding: 24px 0 0;
-    }
-
-    &--left {
-        border-radius: 5px;
-
-        @media (min-width: 769px) {
-            border-radius: 50px 5px 5px 50px;
-        }
-        
-    
-        .top {
-            border-radius: 5px;
-
-            @media (min-width: 769px) {
-                border-radius: 35px 5px 5px 5px;
-            }
-        }
-    }
-
-    &--right {
-        border-radius: 5px;
-
-        @media (min-width: 769px) {
-            border-radius: 5px 50px 50px 5px;
-        }
-    
-        .top {
-            border-radius: 5px;
-
-            @media (min-width: 769px) {
-                border-radius: 5px 35px 5px 5px;
-            }
-        }
     }
   }
 
@@ -84,32 +60,25 @@ const ImageBoxes = styled.div`
 `;
 
 const dropdownOptions = states.state.map((state) => state.name);
-const dropdownOptionsTwo = ["option 1", "option 2", "option 3"];
 
-const CalculatorSection = ({ content }) => {
-  const cards = content.cards;
-
+const StateSection = ({ content }) => {
   return (
-    <Calculator>
+    <State>
       <Oval height="570" width="570" top="0" left="0">
         <OvalSVG />
       </Oval>
       <ContentCenter>
-        <TextCenterLayout headline={content.header} headlineWidth="700" text={content.text} />
+        <TextCenterLayout headline={content.header} headlineWidth="700" />
         <ImageBoxes>
           <TopImageBox className="box box--left" image="your-state" color={color.blue3}>
-            <Heading size="4">{cards[0]}</Heading>
+            <Heading size="4">{content.card.header}</Heading>
             <Dropdown className="dropdown" placeholder="select" options={dropdownOptions} />
-          </TopImageBox>
-          <TopImageBox className="box box--right" image="forming-a-corporation" color={color.orange3}>
-            <Heading size="4">{cards[1]}</Heading>
-            <Dropdown className="dropdown" placeholder="select" options={dropdownOptionsTwo} />
           </TopImageBox>
         </ImageBoxes>
         <Button content={content.button} theme="primary56" arrow />
       </ContentCenter>
-    </Calculator>
+    </State>
   );
 };
 
-export default CalculatorSection;
+export default StateSection;

@@ -224,7 +224,7 @@ const RestaurantBusiness = () => (
 
         <ToolsAndLinks/>
 
-        <Conclusion to="/" buttonTitle="Start your Teen Business with us, today">
+        <Conclusion to="/" buttonTitle="Start your Restaurant Business with us, today">
             <Heading size={3} style={{fontSize: "48px"}}>
                 Conclusion
             </Heading>

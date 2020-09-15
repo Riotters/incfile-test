@@ -1,13 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { color } from "../../atoms/styles/colors";
-import Whitebox from "../../atoms/boxes/white-box-li";
-import Circle from "../../atoms/icons/circle";
 import Curve from "../../atoms/icons/curve";
 import CurveSVG from "../../../images/curves/bottom-left-top-right.inline.svg";
-import { Heading } from "../../atoms/typography/heading";
-import { Paragraph } from "../../atoms/typography/paragraph";
-import ArrowLink from "../../molecules/buttons/text";
 import NumericBox from "../../molecules/mixed-blocks/numeric-box"
 
 const Wrapper = styled.ul`
@@ -18,8 +13,8 @@ const Wrapper = styled.ul`
 
     li {
         display: flex;
-        margin-bottom: 8px;
-        padding: 24px 40px 24px 24px;
+        margin-bottom: ${props => !props.noBox ? "8px" : "24px"};
+        padding: ${props => !props.noBox ? "24px 40px 24px 24px" : ""};
 
         & > span {
             background-color: ${color.blue1};
@@ -33,31 +28,22 @@ const Wrapper = styled.ul`
             min-height: 32px;
             font-size: 16px;
             line-height: 24px;
-            color: ${color.black};
+            color: ${props => !props.noBox ? color.black : ""};
             padding: 0;
         }
     }
 `
 
-const TextWrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-`;
-
-const Link = styled(ArrowLink)`
-    margin-top: 24px;
-`;
-
-const NumericBoxedList = ({ className, content, curve, bottomMargin, ...rest }) => {
+const NumericBoxedList = ({ className, content, noBox, curve, bottomMargin, ...rest }) => {
   return (
-    <Wrapper className={className} bottomMargin={bottomMargin} {...rest}>
+    <Wrapper className={className} bottomMargin={bottomMargin} noBox={noBox} {...rest}>
         {curve && (
             <Curve top="-25" left="-29" color={color.blue1}>
                 <CurveSVG />
             </Curve>
         )}
         {content.map((item, id) => (
-            <NumericBox item={item} id={id} />
+            <NumericBox item={item} id={id} noBox={noBox} />
         ))}
     </Wrapper>
   )

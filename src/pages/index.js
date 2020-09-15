@@ -83,6 +83,7 @@ const IndexPage = () => (
         <Link to="/learning-center-entity/business-name-search">Business Name Search (no details)</Link>
         <h2>Other</h2>
         <Link to="/other/form-an-llc">Form An LLC (WIP)</Link>
+        <Link to="/other/start-an-llc">Start An LLC (WIP)</Link>
         <h2>Blog</h2>
         <Link to="/blog">Blog (no API)</Link>
         <Link to="/article">Article (no API)</Link>

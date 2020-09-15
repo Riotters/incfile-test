@@ -15,20 +15,20 @@ const BlueContainerWrapper = styled.div`
     padding-bottom: 100px;
     position: relative;
     padding-top: 120px;
+    overflow: hidden;
 `;
 
 
 const GridSection = styled.div`
     width: 100%;
-    margin-top: 110px;
 `;
 
 const TitleBox = styled.div`
     width: 100%;
     position: relative;
-     
+    max-width: 750px;
+    
     @media (min-width:750px) {
-        width: 750px;
         margin: 0 auto;
     }
     
@@ -45,39 +45,14 @@ const GridSectionList = styled.div`
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
+    max-width: 970px;
     
     > div {
         margin-bottom: 70px;
     }
     
     @media (min-width: 970px) {
-        width: 970px;
         margin: 120px auto 0;
-    }
-`;
-
-const TextBorderedSection = styled.div`
-    width: 100%;
-    padding-top: 100px;
-    
-    @media (min-width: 670px) {
-        width: 670px;
-        margin: 0 auto;
-    }
-    
-    h3{
-        color: #1d1d1d;
-        font-size: 40px;
-        text-align: center;
-        margin-bottom: 24px;
-    }
-`;
-
-const TextBorderedList = styled.div`
-    margin-top: 80px;
-    
-    >div {
-        margin-bottom: 8px;
     }
 `;
 
@@ -85,6 +60,11 @@ const OvalCenter = styled.div`
   position: absolute;
   right: 0;
   top: 0;
+  width: 100%;
+  
+  @media (min-width: 570px){
+    width: 570px;
+  }
 `
 
 const AbsoluteCurve = styled.div`
