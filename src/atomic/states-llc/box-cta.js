@@ -33,7 +33,7 @@ const Content = styled.div`
 	width: 100%;
 
 	@media screen and (min-width:769px) {
-		max-width:460px;
+		max-width:400px;
 	}
 
 	.btn-cta{
