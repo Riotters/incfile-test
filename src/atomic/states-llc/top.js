@@ -61,7 +61,10 @@ const Wrapper = styled.div`
     display: flex;
     align-items: center;
     position: relative;
-    overflow: hidden;
+    
+    @media screen and (max-width:1440px) {
+        overflow: hidden;
+    }
 `;
 
 const IconMap = styled.div`
