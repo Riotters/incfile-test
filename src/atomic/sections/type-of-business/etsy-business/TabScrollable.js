@@ -137,7 +137,7 @@ const TabScrollable = ({layout, columns}) => {
                             permit and licensing needs beyond the basic licenses we cover below.
                         </Paragraph>
 
-                        <VisibilitySensor scrollCheck={true}>
+                        <VisibilitySensor partialVisibility minTopValue={0}>
                             {({isVisible}) => {
                                 if (isVisible) {
                                     handleClick(0);
@@ -152,7 +152,7 @@ const TabScrollable = ({layout, columns}) => {
                                             imageShadowOpacity={0.5}
                                             boxShadow={false}
                                             paddingLeft={0}
-                                            style={{marginTop: "70px"}}
+                                            style={{marginTop: "140px"}}
                                             circleShadowY={40}
                                             circleShadowBlure={80}
                                             width={100}
@@ -178,7 +178,7 @@ const TabScrollable = ({layout, columns}) => {
                             }}
                         </VisibilitySensor>
 
-                        <VisibilitySensor scrollCheck={true} minTopValue={100}>
+                        <VisibilitySensor partialVisibility minTopValue={200}>
                             {({isVisible}) => {
                                 if (isVisible) {
                                     handleClick(1);
@@ -193,7 +193,7 @@ const TabScrollable = ({layout, columns}) => {
                                             imageShadowOpacity={0.5}
                                             boxShadow={false}
                                             paddingLeft={0}
-                                            style={{marginTop: "70px"}}
+                                            style={{marginTop: "140px"}}
                                             circleShadowY={40}
                                             circleShadowBlure={80}
                                             width={100}
@@ -220,7 +220,7 @@ const TabScrollable = ({layout, columns}) => {
                             }}
                         </VisibilitySensor>
 
-                        <VisibilitySensor scrollCheck={true} minTopValue={100}>
+                        <VisibilitySensor partialVisibility minTopValue={200}>
                             {({isVisible}) => {
                                 if (isVisible) {
                                     handleClick(2);
@@ -235,7 +235,7 @@ const TabScrollable = ({layout, columns}) => {
                                             imageShadowOpacity={0.5}
                                             boxShadow={false}
                                             paddingLeft={0}
-                                            style={{marginTop: "70px"}}
+                                            style={{marginTop: "140px"}}
                                             circleShadowY={40}
                                             circleShadowBlure={80}
                                             width={100}
@@ -256,7 +256,7 @@ const TabScrollable = ({layout, columns}) => {
                             }}
                         </VisibilitySensor>
 
-                        <VisibilitySensor scrollCheck={true} minTopValue={100}>
+                        <VisibilitySensor partialVisibility minTopValue={600}>
                             {({isVisible}) => {
                                 if (isVisible) {
                                     handleClick(3);
@@ -271,7 +271,7 @@ const TabScrollable = ({layout, columns}) => {
                                             imageShadowOpacity={0.5}
                                             boxShadow={false}
                                             paddingLeft={0}
-                                            style={{marginTop: "70px"}}
+                                            style={{marginTop: "140px"}}
                                             circleShadowY={40}
                                             circleShadowBlure={80}
                                             width={100}
@@ -294,7 +294,7 @@ const TabScrollable = ({layout, columns}) => {
                             }}
                         </VisibilitySensor>
 
-                        <VisibilitySensor scrollCheck={true}>
+                        <VisibilitySensor partialVisibility minTopValue={140}>
                             {({isVisible}) => {
                                 if (isVisible) {
                                     handleClick(4);
@@ -309,7 +309,7 @@ const TabScrollable = ({layout, columns}) => {
                                             imageShadowOpacity={0.5}
                                             boxShadow={false}
                                             paddingLeft={0}
-                                            style={{marginTop: "70px"}}
+                                            style={{marginTop: "140px"}}
                                             circleShadowY={40}
                                             circleShadowBlure={80}
                                             width={100}
@@ -345,7 +345,7 @@ const TabScrollable = ({layout, columns}) => {
                             }}
                         </VisibilitySensor>
 
-                        <VisibilitySensor partialVisibility scrollCheck={true}>
+                        <VisibilitySensor partialVisibility minTopValue={300}>
                             {({isVisible}) => {
                                 if (isVisible) {
                                     handleClick(5);
@@ -360,7 +360,7 @@ const TabScrollable = ({layout, columns}) => {
                                             imageShadowOpacity={0.5}
                                             boxShadow={false}
                                             paddingLeft={0}
-                                            style={{marginTop: "70px"}}
+                                            style={{marginTop: "140px"}}
                                             circleShadowY={40}
                                             circleShadowBlure={80}
                                             width={100}
@@ -391,7 +391,7 @@ const TabScrollable = ({layout, columns}) => {
                             }}
                         </VisibilitySensor>
 
-                        <VisibilitySensor partialVisibility scrollCheck={true}>
+                        <VisibilitySensor partialVisibility minTopValue={300}>
                             {({isVisible}) => {
                                 if (isVisible) {
                                     handleClick(6);
@@ -406,7 +406,7 @@ const TabScrollable = ({layout, columns}) => {
                                             imageShadowOpacity={0.5}
                                             boxShadow={false}
                                             paddingLeft={0}
-                                            style={{marginTop: "70px"}}
+                                            style={{marginTop: "140px"}}
                                             circleShadowY={40}
                                             circleShadowBlure={80}
                                             width={100}
@@ -437,7 +437,7 @@ const TabScrollable = ({layout, columns}) => {
                             }}
                         </VisibilitySensor>
 
-                        <VisibilitySensor partialVisibility scrollCheck={true}>
+                        <VisibilitySensor partialVisibility minTopValue={300}>
                             {({isVisible}) => {
                                 if (isVisible) {
                                     handleClick(7);
@@ -452,7 +452,7 @@ const TabScrollable = ({layout, columns}) => {
                                             imageShadowOpacity={0.5}
                                             boxShadow={false}
                                             paddingLeft={0}
-                                            style={{marginTop: "70px"}}
+                                            style={{marginTop: "140px"}}
                                             circleShadowY={40}
                                             circleShadowBlure={80}
                                             width={100}
