@@ -36,7 +36,6 @@ html,
 body {
   min-height: 100%;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 * {

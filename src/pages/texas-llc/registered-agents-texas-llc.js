@@ -38,7 +38,7 @@ const RegisteredAgentTexas = () => (
         <WrapperContent>
             <Wrapper>
             <LeftTabPages content={tabPages} />
-                <MainPageContent>
+            <MainPageContent>
                 <RegisteredAgentSection content={agentPageContent.content} />
             </MainPageContent>
             </Wrapper>

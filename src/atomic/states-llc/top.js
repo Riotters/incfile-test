@@ -58,10 +58,10 @@ const switch2 = (ovalColor) => {
 };
 
 const Wrapper = styled.div`
-  display: flex;
-  align-items: center;
-  position: relative;
-  max-height: 777px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
 `;
 
 const IconMap = styled.div`
