@@ -80,6 +80,9 @@ const IndexPage = () => (
         <h2>Other</h2>
         <Link to="/other/form-an-llc">Form An LLC (WIP)</Link>
         <Link to="/other/start-an-llc">Start An LLC (WIP)</Link>
+        <Link to="/other/general-research-topics">General Research Topics (WIP)</Link>
+        <Link to="/404">404</Link>
+        <Link to="/503">503</Link>
         <h2>Blog</h2>
         <Link to="/blog">Blog (no API)</Link>
         <Link to="/article">Article (no API)</Link>
@@ -126,7 +129,6 @@ const IndexPage = () => (
         <Link to="/type-of-business/landscaping-business">Landscaping Business (no details)</Link>
         <h2>Additional sites</h2>
         <Link to="/components">Components</Link>
-        <Link to="/404">404</Link>
       </Wrapper>
     </Container>
   </Layout>

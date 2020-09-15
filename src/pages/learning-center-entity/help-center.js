@@ -14,7 +14,7 @@ import { top, about, help, faq, rocket, categories, service, tools } from "../..
 const HelpCenter = () => (
   <Layout>
     <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
-    <Top imageName="mrs-bulb-question" imageAlt="Mrs Bulb and with checklist" ovalColor="darkblue">
+    <Top imageName="mrs-bulb-question-7726" imageAlt="Mrs Bulb and with checklist" ovalColor="darkblue">
       <h1>{top.header}</h1>
       <p>{top.text}</p>
       <Searchbar />
