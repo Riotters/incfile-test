@@ -27,8 +27,8 @@ const SectionWrapper = styled.div`
     justify-content: space-between;
     flex-wrap: wrap;
         
-    @media (min-width: 1170px) {
-        width: 1170px;
+    @media (min-width: 1200px) {
+        width: 1200px;
     }
 `;
 
