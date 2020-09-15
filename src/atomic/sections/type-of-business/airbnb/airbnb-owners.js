@@ -13,10 +13,11 @@ const AirBnbOwners = () => (
         <Oval>
             <OvalSvg />
         </Oval>
-        <Container>
-            <TextCenterLayout headline="Groups and Forums for Airbnb Owners"
-                              text="Here are some useful places where you can connect with other Airbnb entrepreneurs."/>
 
+        <TextCenterLayout textWidth={770} headlineWidth={770} headline="Groups and Forums for Airbnb Owners"
+                          text="Here are some useful places where you can connect with other Airbnb entrepreneurs."/>
+
+        <Container>
             <LinksContainer>
 
                 <LinkItem>

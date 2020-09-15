@@ -1,7 +1,7 @@
 import React from "react";
 import {Tabs} from "@bumaga/tabs";
 import styled from "styled-components";
-import Container from "../../components/container";
+import Container from "../../atomic/container";
 import VisibilitySensor from "../../components/VisibilitySensor";
 import PropTypes from "prop-types";
 

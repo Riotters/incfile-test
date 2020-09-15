@@ -16,7 +16,7 @@ const Wrapper = styled.div`
     background-color: ${color.blue3};
     padding: 40px;
     position: relative;
-    border-radius: 30px;
+    border-radius: 5px 30px 30px 5px;
     margin-bottom: 44px;
 `;
 

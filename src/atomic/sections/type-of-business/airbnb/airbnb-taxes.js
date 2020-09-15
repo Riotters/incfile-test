@@ -22,9 +22,9 @@ const AirbnbTaxes = () => (
             <OvalSvgBottom/>
         </OvalBottom>
 
-        <Container>
-            <TextCenterLayout headline="Airbnb Taxes"/>
+        <TextCenterLayout headline="Airbnb Taxes" headlineWidth={770}/>
 
+        <Container>
             <TextWrapper>
                 <Paragraph big mixed={true}>
                     <Curve color={color.babyblue1}
@@ -45,15 +45,15 @@ const AirbnbTaxes = () => (
         </Container>
 
         <Service>
+            <TextCenterLayout headlineWidth={770} textWidth={770} headline="Maintaining Your Airbnb Business"
+                              text="There are certain forms and legalities you need to follow to keep your Airbnb business in good standing."/>
             <Container>
-                <TextCenterLayout headline="Maintaining Your Airbnb Business"
-                                  text="There are certain forms and legalities you need to follow to keep your Airbnb business in good standing."/>
                 <AdventagesBox>
                     <CurveWrapper>
                         <CurveSvg/>
                     </CurveWrapper>
                     {adventages.items.map(item => (
-                        <Adventages style={{textAlign: "center"}} url={item.url} urlText={item.urlText}
+                        <Adventages className="containerMargin" style={{textAlign: "center"}} url={item.url} urlText={item.urlText}
                                     circleText={item.circleText} headline={item.headline} text={item.text}
                                     circlePosition="center" circleBackgroundColor={color.blue1}
                                     circleBackgroundShadow={shadow.blue1}/>
@@ -97,7 +97,7 @@ const AdventagesBox = styled.div`
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 970px;
+  max-width: 1000px;
   padding: 40px 0;
   margin: 0 auto;
   position: relative;

@@ -6,6 +6,10 @@ import { color } from "./styles/colors"
 const Wrapper = styled.div`
     padding: 16px 16px 0 0;
     position: relative;
+    
+    ${props => props.maxWidth &&
+        "max-width: " + props.maxWidth +"px;"
+    }
 
     > div {
         background-color: ${props => (props.color ? props.color : "")};
@@ -102,10 +106,10 @@ const Wrapper = styled.div`
     }
 `
 
-const Colorbox = ({ className, theme, Icon, color, dotsColor, children, curve, curveColor }) => {
+const Colorbox = ({ className, theme, Icon, color, dotsColor, children, curve, curveColor, maxWidth }) => {
 
   return (
-    <Wrapper className={className} theme={theme} color={color} dotsColor={dotsColor} curveColor={curveColor}>
+    <Wrapper maxWidth={maxWidth} className={className} theme={theme} color={color} dotsColor={dotsColor} curveColor={curveColor}>
         {curve && (
             <Curve />
         )}

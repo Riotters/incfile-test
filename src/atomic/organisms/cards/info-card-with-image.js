@@ -24,8 +24,8 @@ const CardWrapper = styled.div`
         width: 300px;
     }
     
-    @media (min-width: 1110px) { 
-        margin: 0 auto 30px;
+    @media (min-width: 1200px) { 
+        margin: 0 15px 30px;
         width: 370px;
         min-height: 708px;
     }

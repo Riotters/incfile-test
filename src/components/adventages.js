@@ -11,10 +11,19 @@ import CloseIcon from "../images/icons/close.inline.svg"
 const Wrapper = styled.div`
     padding-top: 24px;
     width 100%;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
     
     @media (min-width: 470px) {
         max-width: ${props => (props.width ? props.width : "470px")};
-        margin: 0 auto 30px;
+    }
+    
+    @media(min-width: 1060px){
+      &.containerMargin{
+         margin-left: 15px;
+         margin-right: 15px;
+      }
     }
 `;
 
@@ -25,7 +34,7 @@ const Box = styled.div`
     height: 100%;
     width: 100%;
     max-width: 100%;
-    padding: 48px 40px 40px;
+    padding: 56px 40px 40px;
     position: relative;
     background-color: ${color.white};
     box-shadow: ${shadow.white1};
