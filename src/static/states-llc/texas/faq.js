@@ -6,6 +6,8 @@ import BgBoxBusinessNameIdea from '../../../images/icons/states/business-name-id
 import BgBoxIncorporationPaperWork from '../../../images/icons/states/incorporation-paperwork-01.png';
 import MrsLeftThumUp from '../../../images/icons/states/mrs-bulb-thumb-up-left-color-01.png';
 import SCN from '../../../images/search-for-name-7560.png';
+import LightingOrange from '../../../images/lighting-orange-01.png';
+import BgBoxTrust from '../../../images/trust-01.png';
 
 export const faqContent = {
     header: {
@@ -15,7 +17,8 @@ export const faqContent = {
     content: [
         {
             type: `heading`,
-            size: 3,
+            styles: {marginTop: `0`},
+            size: 2,
             content: `How Do I Decide What the Best Legal Structure Is for My Business?`,
         },
         {
@@ -24,7 +27,7 @@ export const faqContent = {
         },
         {
             type: `heading`,
-            size: 3,
+            size: 2,
             content: `What Do I Need to Start a Business in Texas?`,
         },
         {
@@ -52,7 +55,7 @@ export const faqContent = {
         // How Do I Register a Company in Texas?
         {
             type: `heading`,
-            size: 3,
+            size: 2,
             content: `How Do I Register a Company in Texas?`,
         },
         {
@@ -79,7 +82,7 @@ export const faqContent = {
 
         {
             type: `heading`,
-            size: 3,
+            size: 2,
             content: `How Much Does It Cost to Form a Texas LLC?`,
         },
         {
@@ -89,7 +92,7 @@ export const faqContent = {
 
         {
             type: `heading`,
-            size: 3,
+            size: 2,
             content: `How Long Does It Take to Form an LLC in Texas?`,
         },
         {
@@ -99,7 +102,7 @@ export const faqContent = {
 
         {
             type: `heading`,
-            size: 3,
+            size: 2,
             content: `How Do I Perform a Texas Business Search?`,
         },
         {
@@ -118,6 +121,90 @@ export const faqContent = {
                     text: `Free Busineee name Search`,
                     url: `/`
                 }
+            }
+        },
+        {
+            type: `iconListColorBox`,
+            boxColor: color.blue3,
+            styles: {margin: `56px 0`},
+            content: {
+                header: `There are a few ways to register your Texas LLC name.`,
+                list: [
+                    `If you’re creating a new business and your business name is unique in Texas and meets state naming rules, you simply include it in your Certificate of Formation.`,
+                    `If you want to change the legal name of your business, file Form 424 - Certificate of Amendment with the Secretary of State.`,
+                    `If you just want to do business under a different name, file Form 503 - Assumed Name Certificate with the Texas Secretary of State, or <a href="/fictitious-business-or-trade-name/">we can do that on your behalf.</a>`
+                ],
+            },
+        },
+        {
+            type: `box-cta`, 
+            color: color.yellow3,
+            styles: { fontSize: `25px`},
+            bgImage: [LightingOrange],
+            content: {
+                title: `Trying to come up with a creative business name?`,
+                subtitle: `Try Incfile’s Business Name Generator to brainstorm ideas.`,
+                button: {
+                    text: `Business Name Generator`,
+                    url: `/business-name-generator/`
+                }
+            }
+        },
+
+        {
+            type: `paragraph`,
+            styles: {marginTop: `42px`},
+            content: `If you want to prevent people from using your business name across the U.S., you can file a trademark for the name. <a href="/trademark-name-search/">We can help</a>`,
+        },
+
+        {
+            type: `heading`,
+            size: 2,
+            content: `What are Texas Articles of Incorporation?`,
+        },
+        {
+            type: `paragraph`,
+            content: `In other states, the formal documents that you file to start a corporation or LLC might be known as “Articles of Incorporation.” In Texas, this document is called a Certificate of Formation, and it performs the same functions as the Articles of Incorporation.`,
+        },
+
+        {
+            type: `heading`,
+            size: 2,
+            content: `Does Texas Have Series LLCs?`,
+        },
+        {
+            type: `paragraph`,
+            content: `Yes, you can <a href="https://www.incfile.com/blog/post/series-llc-in-texas/">start a Series LLC in Texas</a>. This is a special type of LLC where you create one “overall” business and then have individual, series LLCs within it, each counted as separate legal entities.`,
+        },
+
+        {
+            type: `heading`,
+            size: 2,
+            content: `Do I Need a Registered Agent for My Texas LLC?`,
+        },
+        {
+            type: `paragraph`,
+            content: `Yes, all legal business entities in Texas, including LLCs, must have a Registered Agent at all times. Here at Incfile, we provide a free Texas Registered Agent service for the first year if you file through us.`,
+        },
+        {
+            type: `box-cta`, 
+            color: color.green3,
+            styles: { fontSize: `22px`},
+            bgImage: [BgBoxTrust],
+            content: {
+                title: `Have Incfile act as your registered agent for only $119 a year, or get your first year free when you incorporate your business through us.`,
+                arrayButtons: [
+                    {
+                        text: `Registered Agennt Service`,
+                        theme: `primary56`,
+                        url: `/business-name-generator/`
+                    },
+                    {
+                        text: `Incorporate Your Texas LLC Now`,
+                        theme: `secondary56`,
+                        url: `/business-name-generator/`
+                    }
+                ]
             }
         },
     ],

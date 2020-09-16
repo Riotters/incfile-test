@@ -7,11 +7,6 @@ const Wrapper = styled.article`
   flex-grow: 1;
   max-width: ${props => (props.layout !== "grid" ? "670px" : "")};
   margin-left: auto;
-  padding-top: 24px;
-
-  // p {
-  //   margin: 0 0 24px 0;
-  // }
 `
 
 const PageContent = ({children, content}) => (

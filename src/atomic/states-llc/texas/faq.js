@@ -27,7 +27,21 @@ import RelativeElement from '../../elements/relative-e';
 import AbsoluteShapeCurveElement from '../../elements/absolute-shape-curve-e'
 import TextBoxed from "../../molecules/static-check/circle-checkmark-text-boxed";
 
-const Wrapper = styled.div``
+const Wrapper = styled.div`
+    h2, h3{
+        text-align: left;
+    }
+    h2{
+        font-size: 24px;
+        line-height: 30px;
+        margin-top: 55px;
+
+        @media screen and (min-width: 769px) {
+            font-size: 24px;
+            line-height: 30px;
+        }
+    }
+`
 
 const ListFlex = styled.div`
   display: flex;
@@ -91,7 +105,7 @@ const FaqSection = ({ content }) => {
             {content.map((item, i) => (
                 <div>
                     {item.type === 'heading' && 
-                        <Heading size={item.size} style={{ marginTop: `42px`, textAlign: `left` }}>{item.content}</Heading>
+                        <Heading size={item.size} style={item.styles}>{item.content}</Heading>
                     }
                                         
                     {item.type === 'paragraph' && 
@@ -119,7 +133,7 @@ const FaqSection = ({ content }) => {
                     }
 
                     {item.type === 'iconListColorBox' && 
-                        <IconListColorBox color={item.boxColor} content={item.content} rounded />
+                        <IconListColorBox color={item.boxColor} style={item.styles} content={item.content} rounded />
                     }
 
                     {item.type === 'textBoxWithCheckIcon' && item.content.map(i => (

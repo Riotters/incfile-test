@@ -48,7 +48,14 @@ const BoxCTA = ({content, bgColor, bgImage, ...rest}) => (
 			{content.subtitle && 
 				<Paragraph mixed={true}>{parse(content.subtitle)}</Paragraph>
 			}
-			<Button className="btn-cta" content={content.button} theme="primary56" arrow width="auto" margin="16px 0 0 0" marginMD="16px 0 0 0"/>
+			
+			{content.button && (
+				<Button className="btn-cta" content={content.button} theme="primary56" arrow width="auto" margin="16px 0 0 0" marginMD="16px 0 0 0"/>
+			)}
+
+			{content.arrayButtons && content.arrayButtons.map(button => (
+				<Button className="btn-cta" content={content.button} theme={button.theme} arrow width="auto" margin="16px 0 0 0" marginMD="16px 0 0 0"/>
+			))}
 		</Content>
 	</Wrapper>
 )
