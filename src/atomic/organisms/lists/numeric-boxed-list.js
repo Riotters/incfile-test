@@ -34,9 +34,9 @@ const Wrapper = styled.ul`
     }
 `
 
-const NumericBoxedList = ({ className, content, noBox, curve, bottomMargin }) => {
+const NumericBoxedList = ({ className, content, noBox, curve, bottomMargin, ...rest }) => {
   return (
-    <Wrapper className={className} bottomMargin={bottomMargin} noBox={noBox}>
+    <Wrapper className={className} bottomMargin={bottomMargin} noBox={noBox} {...rest}>
         {curve && (
             <Curve top="-25" left="-29" color={color.blue1}>
                 <CurveSVG />

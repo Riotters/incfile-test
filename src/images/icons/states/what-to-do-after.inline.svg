@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33">
+    <g fill="none" fill-rule="evenodd" opacity=".75">
+        <g>
+            <g transform="translate(-24 -23) translate(24 23.5)">
+                <circle cx="15.36" cy="16.32" r="1" fill="#E4232A" fill-rule="nonzero"/>
+                <path fill="#E0F1FA" fill-rule="nonzero" d="M28.95 18.09c0 2.28-.54 4.43-1.51 6.33-.01.01-.01.01-.01.02-2.53 3.72-6.79 6.17-11.63 6.17-7.74 0-14.03-6.28-14.03-14.03 0-2.29.55-4.45 1.53-6.36 2.52-3.72 6.78-6.16 11.61-6.16 7.76 0 14.04 6.28 14.04 14.03z"/>
+                <path stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M29.84 16.67c0 2.9-.88 5.6-2.4 7.84-.01.01-.01.01-.01.02-2.53 3.72-6.79 6.17-11.63 6.17-7.74 0-14.03-6.28-14.03-14.03 0-2.29.55-4.45 1.53-6.36 2.31-4.55 7.04-7.67 12.5-7.67 7.75 0 14.04 6.28 14.04 14.03zM4.58 30.19L6.22 27.83M27.03 30.19L25.39 27.83"/>
+                <path stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M3.75 9.33L1.87 7.58C.39 6.21.31 3.9 1.68 2.43l.52-.56C3.57.4 5.88.31 7.35 1.68l1.88 1.75M28.25 9.33l1.88-1.75c1.47-1.37 1.56-3.68.19-5.15l-.52-.56C28.43.4 26.12.31 24.65 1.68l-1.88 1.75"/>
+                <path fill="#FFF" fill-rule="nonzero" stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M27.13 16.09l-1.29 1.27-1.65 1.62-2.93 2.87v-3.89l-11.51.2c-1.05.02-1.92-.81-1.96-1.85v-.07h0c-.05-1.09.81-2 1.9-2.01l11.03-.18.54-.01v-3.69l2.93 2.88 2.94 2.86z"/>
+                <path stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M15.36 26.11L15.36 27.82M15.36 4.37L15.36 6.07M5.34 16.09L3.64 16.09M15.36 26.11L15.36 27.82M15.36 4.37L15.36 6.07"/>
+            </g>
+        </g>
+    </g>
+</svg>

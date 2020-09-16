@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import parse from 'html-react-parser';
 import Colorbox from "../../atoms/boxes/color-box";
 import { Heading } from "../../atoms/typography/heading";
 import { Paragraph } from "../../atoms/typography/paragraph";
@@ -65,14 +66,18 @@ const Wrapper = styled.div`
         &:not(:last-child) {
           margin-bottom: 16px;
         }
+
+        a{
+          font-size: inherit;
+        }
       }
     }
   }
 `;
 
-const IconTextColorBox = ({ className, color, content, bottomMargin, rounded, curve }) => {
+const IconTextColorBox = ({ className, color, content, bottomMargin, rounded, curve, ...rest }) => {
   return (
-    <Wrapper className={className} rounded={rounded} bottomMargin={bottomMargin} color={color}>
+    <Wrapper className={className} rounded={rounded} bottomMargin={bottomMargin} color={color} {...rest}>
       {curve && (
         <Curve top="-15" right="-15" color={dotColor(color)}>
           <CurveSVG />
@@ -84,7 +89,7 @@ const IconTextColorBox = ({ className, color, content, bottomMargin, rounded, cu
         </Heading>
         <ul>
           {content.list.map((item) => (
-            <li>{item}</li>
+            <li>{parse(item)}</li>
           ))}
         </ul>
       </Colorbox>

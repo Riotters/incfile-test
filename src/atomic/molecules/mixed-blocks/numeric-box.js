@@ -5,6 +5,7 @@ import Circle from "../../atoms/icons/circle";
 import { Heading } from "../../atoms/typography/heading";
 import { Paragraph } from "../../atoms/typography/paragraph";
 import ArrowLink from "../../molecules/buttons/text";
+import Button from "../../molecules/buttons/button";
 
 const TextWrapper = styled.div`
     display: flex;
@@ -38,6 +39,11 @@ const NumericBox = ({ className, id, item, noBox }) => (
             {!item.header && !item.text && !item.url && (
                 <Paragraph bottomMargin="0">{item}</Paragraph>
             )}
+                
+            {item.button && (
+                <Button content={item.button} theme={item.button.theme} arrow width={item.button.width ?? `350px`} margin="16px 0 0 0" marginMD="32px 0 0 0" />
+            )}
+                
             </TextWrapper>
         </Whitebox>
      ) : (
@@ -57,6 +63,10 @@ const NumericBox = ({ className, id, item, noBox }) => (
             )}
             {!item.header && !item.text && !item.url && (
                 <Paragraph bottomMargin="0">{item}</Paragraph>
+            )}
+                    
+            {item.button && (
+                <Button content={item.button} theme={item.button.theme} arrow width={item.button.width ?? `350px`} margin="16px 0 0 0" marginMD="32px 0 0 0" />
             )}
             </TextWrapper>
         </Flex>
