@@ -104,7 +104,7 @@ const AdventagesBox = styled.div`
   position: relative;
   
   @media (min-width: 1024px) {
-    padding: 140px 0;
+    padding: 140px 0 0;
   }
 `;
 

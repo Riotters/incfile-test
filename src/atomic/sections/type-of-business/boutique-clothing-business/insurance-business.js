@@ -3,13 +3,15 @@ import styled from "styled-components";
 import InfoCardsSection from "../../../partials/info-cards-section";
 import {InfoCards} from "../../../../static/type-of-business/boutique-clothing-business";
 import {gradient} from "../../../atoms/styles/colors";
-import TextCenterLayout from "../../../../components/partials/blocks/heading-center";
+import TextCenterLayout from "../../../partials/heading-center";
 
 const InsuranceBusiness = () => (
     <Wrapper>
         <div style={{paddingBottom: "100px"}}>
             <TextCenterLayout
                 headline="Insurance for Your Boutique Clothing Business"
+                headlineWidth={770}
+                textWidth={770}
                 text="Most boutique clothing businesses should have comprehensive business insurance. There are various types."
             />
         </div>
