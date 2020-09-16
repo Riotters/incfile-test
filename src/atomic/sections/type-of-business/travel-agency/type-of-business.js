@@ -20,10 +20,12 @@ const TypeOfBusiness = () => (
         <Oval2>
             <OvalSvg/>
         </Oval2>
+
+        <TextCenterLayout headlineWidth={770} textWidth={770} headline="What Type of Daycare Should You Start?"
+                          text="There are several different types of daycare business that you can start. You will also want to decide if you want to be a work-from-home travel agent, or if you have other options for where to locate your business."/>
+
         <Container>
             <Service>
-                <TextCenterLayout headline="What Type of Daycare Should You Start?"
-                                  text="There are several different types of daycare business that you can start. You will also want to decide if you want to be a work-from-home travel agent, or if you have other options for where to locate your business."/>
 
                 <ContentCenter>
                     <Paragraph big>
@@ -47,6 +49,7 @@ const TypeOfBusiness = () => (
                             circleBackgroundColor={color.blue1}
                             circleBackgroundShadow={shadow.blue1}
                             imageName={item.imageName}
+                            className="containerMargin"
                         />
                     ))}
                 </AdventagesBox>
@@ -70,10 +73,10 @@ const AdventagesBox = styled.div`
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 970px;
-  margin: 140px auto 0;
-  position: relative;
- 
+  max-width: 1000px;
+  margin: 72px auto 0;
+  position: relative; 
+\`;
 `;
 
 const CurveWrapper = styled.div`

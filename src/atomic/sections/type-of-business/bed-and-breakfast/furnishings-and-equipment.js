@@ -1,9 +1,10 @@
 import React from "react";
+import {color} from "../../../atoms/styles/colors";
 import ImageContent from "../../../../components/partials/blocks/left-image-right-content";
 import {Heading} from "../../../atoms/typography/heading";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import styled from "styled-components";
-import Container from "../../../../components/container";
+import Container from "../../../container";
 import CkeckText from "../../../../components/static-check/text-only";
 import OvalSvg from "../../../../images/ovals/bottom-right-transparent-babyblue2.inline.svg";
 
@@ -18,15 +19,21 @@ const FurnishingsAndEquipment = () => (
                     <Heading size={4} style={{fontSize: "24px"}}>
                         Furnishings and Equipment for Your Bed and Breakfast
                     </Heading>
-                    <Paragraph big>
+                    <Paragraph big style={{marginBottom: "96px"}}>
                         You will need extensive equipment, furniture, fixtures and fittings for your B&B. This will
                         include:
                     </Paragraph>
 
                     <Paragraph big
-                               style={{fontWeight: "bold", marginBottom: "48px", paddingBottom: 0, marginTop: "56px"}}>
+                               style={{
+                                   fontFamily: "Avenir-Heavy",
+                                   color: color.black,
+                                   marginBottom: "48px",
+                                   paddingBottom: 0
+                               }}>
                         For each room:
                     </Paragraph>
+
                     <ListWrapper>
                         <ListBox>
                             <CkeckText>
@@ -87,8 +94,14 @@ const FurnishingsAndEquipment = () => (
                     </ListWrapper>
 
                     <Paragraph big
-                               style={{fontWeight: "bold", marginBottom: "48px", paddingBottom: 0, marginTop: "56px"}}>
-                        For each room:
+                               style={{
+                                   fontFamily: "Avenir-Heavy",
+                                   color: color.black,
+                                   marginBottom: "48px",
+                                   paddingBottom: 0,
+                                   marginTop: "24px"
+                               }}>
+                        For the kitchen and dining area:
                     </Paragraph>
                     <ListWrapper>
                         <ListBox>
@@ -125,7 +138,13 @@ const FurnishingsAndEquipment = () => (
                     </ListWrapper>
 
                     <Paragraph big
-                               style={{fontWeight: "bold", marginBottom: "48px", paddingBottom: 0, marginTop: "56px"}}>
+                               style={{
+                                   fontFamily: "Avenir-Heavy",
+                                   color: color.black,
+                                   marginBottom: "48px",
+                                   paddingBottom: 0,
+                                   marginTop: "24px"
+                               }}>
                         For common areas:
                     </Paragraph>
                     <ListWrapper>

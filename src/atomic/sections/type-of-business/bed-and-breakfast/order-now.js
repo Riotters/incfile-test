@@ -1,11 +1,11 @@
 import React from "react";
 import Container from "../../../container";
 import LeftImageRightContent from "../../../../components/partials/blocks/left-content-right-image";
-import Button from "../../../molecules/buttons/button";
+import Button from "../../../../components/button";
 import styled from "styled-components";
 import {color} from "../../../../components/styles/colors";
-import OvalLeftSvg from "../../../../images/ovals/top-left-transparent-orange2.inline.svg";
-import OvalRightSvg from "../../../../images/ovals/top-left-transparent-orange.inline.svg";
+import OvalLeftSvg from "../../../../images/oval-orange-3.inline.svg";
+import OvalRightSvg from "../../../../images/oval-orange-4.inline.svg";
 import Curve from "../../../../images/curve-orange.inline.svg";
 
 const OrderNow = () => (
@@ -21,7 +21,7 @@ const OrderNow = () => (
 
         <Container>
 
-            <LeftImageRightContent image="after-formation-image" imageWidth="515" textWidth="570">
+            <LeftImageRightContent image="after-formation-image" imageWidth="600" textWidth="570">
 
                 <h2 style={{position: "relative"}}>
                     <CurveWrapper>
@@ -32,7 +32,9 @@ const OrderNow = () => (
                 </h2>
                 <p>A Clear and Comprehensive Guide to Starting Your Business the Right Way</p>
                 <ButtonsBox>
-                    <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{url: "/learning-center-entity/business-checklist/", text: "Business Checklist"}}/>
+                    <Button theme="primary56" marginMD="0 24px 0 0" arrow>
+                        Business Checklist
+                    </Button>
                 </ButtonsBox>
             </LeftImageRightContent>
         </Container>
@@ -42,7 +44,13 @@ const OrderNow = () => (
 const OrderNowWrapper = styled.section`
   background-color: ${color.orange3};
   position: relative;
-  padding: 64px 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  
+  @media (min-width: 992px){
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 `;
 
 const ButtonsBox = styled.div`
@@ -58,29 +66,33 @@ const Oval = styled.div`
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
+    display: none;
     
-    @media (min-width: 420px){
-        width: 420px;
+    @media (min-width: 769px) {
+        display: block;
     }
 `;
 
 const OvalRight = styled.div`
     position: absolute;
     right: 0;
-    bottom: 0px;
-    transform: scaleX(-1);
-    width: 100%;
+    bottom: -5px;
+    display: none;
     
-    @media (min-width: 409px){
-        width: 409px;
+    @media (min-width: 769px) {
+        display: block;
     }
 `;
 
 const CurveWrapper = styled.div`
     position: absolute;
-    left: -85px;
-    top: -85px;
+    left: -122px;
+    top: -115px;
+    display: none;
+    
+    @media (min-width: 992px) {
+        display: block;
+    }
 `;
 
 export default OrderNow;

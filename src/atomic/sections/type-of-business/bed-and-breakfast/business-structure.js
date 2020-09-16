@@ -81,7 +81,7 @@ const BusinessStructure = () => (
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
-                        style={{marginTop: "70px"}}
+                        style={{marginTop: "40px"}}
                         circleShadowY={40}
                         circleShadowBlure={80}
                         width={100}
@@ -113,7 +113,7 @@ const BusinessStructure = () => (
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
-                        style={{marginTop: "70px"}}
+                        style={{marginTop: "40px"}}
                         circleShadowY={40}
                         circleShadowBlure={80}
                         width={100}
@@ -144,7 +144,7 @@ const BusinessStructure = () => (
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
-                        style={{marginTop: "70px"}}
+                        style={{marginTop: "40px"}}
                         circleShadowY={40}
                         circleShadowBlure={80}
                         width={100}
@@ -175,7 +175,7 @@ const BusinessStructure = () => (
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
-                        style={{marginTop: "70px"}}
+                        style={{marginTop: "40px"}}
                         circleShadowY={40}
                         circleShadowBlure={80}
                         width={100}
@@ -205,7 +205,7 @@ const BusinessStructure = () => (
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
-                        style={{marginTop: "70px"}}
+                        style={{marginTop: "40px"}}
                         circleShadowY={40}
                         circleShadowBlure={80}
                         width={100}
@@ -227,13 +227,13 @@ const BusinessStructure = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <Paragraph big style={{paddingTop: "120px"}} mixed={true}>
+                    <Paragraph big style={{paddingTop: "48px", paddingBottom: 0}} mixed={true}>
                         For more information on the advantages and disadvantages of different types of businesses,
                         please see <Link to="/">our in-depth guide</Link>. If you’ve still got questions, we’ve
                         answered them to help you
                         <Link to="/">choose the right business structure for your bed and breakfast business</Link>.
                     </Paragraph>
-                    <Paragraph big mixed={true}>
+                    <Paragraph big mixed={true} style={{marginBottom: "48px", paddingBottom: 0}}>
                         In most cases, our recommendation for your bed and breakfast business would be to create an LLC.
                         We’ve got a <Link to="/">complete guide to everything you need to do</Link>. <Link to="/">LLC
                         formation does vary from state to

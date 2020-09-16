@@ -25,7 +25,7 @@ const TypeBusiness = () => (
             <CurveFile />
         </AbsoluteCurve>
 
-        <TextCenterLayout headline="Types of Consulting Business"
+        <TextCenterLayout headlineWidth={770} textWidth={770} headline="Types of Consulting Business"
                           text="Consulting is the practice of giving expert advice to others, normally in business, financial or technical areas. Clearly that’s a broad definition, so let’s narrow it down a little. Common types of consulting include:"/>
 
         <Container>
@@ -46,6 +46,7 @@ const TypeBusiness = () => (
                             circleBackgroundColor={color.blue1}
                             circleBackgroundShadow={shadow.blue1}
                             imageName={item.imageName}
+                            className="containerMargin"
                         />
                     ))}
                 </AdventagesBox>
@@ -69,10 +70,9 @@ const AdventagesBox = styled.div`
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 970px;
-  margin: 128px auto 0;
-  position: relative;
- 
+  max-width: 1000px;
+  margin: 72px auto 0;
+  position: relative; 
 `;
 
 const CurveWrapper = styled.div`

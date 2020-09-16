@@ -21,7 +21,7 @@ const OrderNow = () => (
 
         <Container>
 
-            <LeftImageRightContent image="after-formation-image" imageWidth="515" textWidth="570">
+            <LeftImageRightContent image="after-formation-image" imageWidth="600" textWidth="570">
 
                 <h2 style={{position: "relative"}}>
                     <CurveWrapper>
@@ -44,7 +44,13 @@ const OrderNow = () => (
 const OrderNowWrapper = styled.section`
   background-color: ${color.orange3};
   position: relative;
-  padding: 64px 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  
+  @media (min-width: 992px){
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 `;
 
 const ButtonsBox = styled.div`
@@ -62,7 +68,7 @@ const Oval = styled.div`
     top: 0;
     display: none;
     
-    @media (min-width: 1200px){
+    @media (min-width: 769px) {
         display: block;
     }
 `;
@@ -73,7 +79,7 @@ const OvalRight = styled.div`
     bottom: -5px;
     display: none;
     
-    @media (min-width: 1200px){
+    @media (min-width: 769px) {
         display: block;
     }
 `;
@@ -84,7 +90,7 @@ const CurveWrapper = styled.div`
     top: -115px;
     display: none;
     
-    @media (min-width: 1200px){
+    @media (min-width: 992px) {
         display: block;
     }
 `;

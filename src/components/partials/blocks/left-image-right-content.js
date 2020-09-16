@@ -52,7 +52,7 @@ const Imagebox = styled.div`
 
   .gatsby-image-wrapper {
     height: auto;
-    width: 100%;
+    width: calc(100% - 45px);
   }
 `;
 

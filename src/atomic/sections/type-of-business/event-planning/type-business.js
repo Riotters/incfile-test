@@ -18,10 +18,12 @@ const TypeBusiness = () => (
         <Oval2>
             <OvalSvg/>
         </Oval2>
+
+        <TextCenterLayout headlineWidth={770} textWidth={770} headline="Becoming an Event Planner and the Type of Planning Business You Should Start"
+                          text="You have plenty of choices for starting a party or event planning business, and the best choice depends on your skills, network and existing competition in your local area. We definitely recommend focusing on a specific niche rather than trying to become a general event planner. When you specialize in one area, it’s easier to focus your marketing, networking, administration and other skills on delivering to the needs of that niche."/>
+
         <Container>
             <Service>
-                <TextCenterLayout headline="Becoming an Event Planner and the Type of Planning Business You Should Start"
-                                  text="You have plenty of choices for starting a party or event planning business, and the best choice depends on your skills, network and existing competition in your local area. We definitely recommend focusing on a specific niche rather than trying to become a general event planner. When you specialize in one area, it’s easier to focus your marketing, networking, administration and other skills on delivering to the needs of that niche."/>
 
                 <AdventagesBox>
                     <CurveWrapper>
@@ -39,6 +41,7 @@ const TypeBusiness = () => (
                             circleBackgroundColor={color.blue1}
                             circleBackgroundShadow={shadow.blue1}
                             imageName={item.imageName}
+                            className="containerMargin"
                         />
                     ))}
                 </AdventagesBox>
@@ -62,10 +65,9 @@ const AdventagesBox = styled.div`
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 970px;
-  margin: 140px auto 0;
-  position: relative;
- 
+  max-width: 1000px;
+  margin: 72px auto 0;
+  position: relative; 
 `;
 
 const CurveWrapper = styled.div`

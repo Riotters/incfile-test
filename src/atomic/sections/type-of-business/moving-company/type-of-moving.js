@@ -15,10 +15,12 @@ const TypeOfMoving = () => (
         <Oval>
             <OvalSvg/>
         </Oval>
+
+        <TextCenterLayout headlineWidth={770} textWidth={770} headline="What Type of Moving Business Should You Start?"
+                          text="There are several different types of moving business that you can start. Here are some of the more popular options:"/>
+
         <Container>
             <Service>
-                <TextCenterLayout headline="What Type of Moving Business Should You Start?"
-                                  text="There are several different types of moving business that you can start. Here are some of the more popular options:"/>
 
                 <AdventagesBox>
                     <CurveWrapper>
@@ -36,6 +38,7 @@ const TypeOfMoving = () => (
                             circleBackgroundColor={color.blue1}
                             circleBackgroundShadow={shadow.blue1}
                             imageName={item.imageName}
+                            className="containerMargin"
                         />
                     ))}
                 </AdventagesBox>
@@ -59,10 +62,9 @@ const AdventagesBox = styled.div`
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 970px;
-  margin: 140px auto 0;
-  position: relative;
- 
+  max-width: 1000px;
+  margin: 72px auto 0;
+  position: relative; 
 `;
 
 const CurveWrapper = styled.div`

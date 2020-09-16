@@ -21,11 +21,11 @@ const TypeOfBusiness = () => (
         <Oval2>
             <OvalSvg2/>
         </Oval2>
+        <TextCenterLayout headlineWidth={770} textWidth={770} headline="What Type of Cleaning Business Do You Want to Run?"
+                          text="One of the first things you’ll need to decide on is the type of cleaning business you want to run. You have a few different options:"/>
+
         <Container>
             <Service>
-                <TextCenterLayout headline="What Type of Cleaning Business Do You Want to Run?"
-                                  text="One of the first things you’ll need to decide on is the type of cleaning business you want to run. You have a few different options:"/>
-
                 <AdventagesBox>
                     <CurveWrapper>
                         <Curve color={color.red1}/>
@@ -42,6 +42,7 @@ const TypeOfBusiness = () => (
                             circleBackgroundColor={color.blue1}
                             circleBackgroundShadow={shadow.blue1}
                             imageName={item.imageName}
+                            className="containerMargin"
                         />
                     ))}
                 </AdventagesBox>
@@ -89,10 +90,9 @@ const AdventagesBox = styled.div`
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 970px;
-  margin: 140px auto 0;
-  position: relative;
- 
+  max-width: 1000px;
+  margin: 72px auto 0;
+  position: relative; 
 `;
 
 const CurveWrapper = styled.div`

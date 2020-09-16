@@ -18,7 +18,7 @@ import {Heading} from "../../atomic/atoms/typography/heading";
 import {Paragraph} from "../../atomic/atoms/typography/paragraph";
 import TabsSection from "../../atomic/partials/tabs";
 import Colorbox from "../../components/color-box";
-import MegafornIcon from "../../images/icons/megafon.inline.svg";
+import QuestionIcon from "../../images/icons/the-question-is-just-where-do-you-start.inline.svg";
 import {color} from "../../components/styles/colors";
 import TypeBusiness from "../../atomic/sections/type-of-business/bed-and-breakfast/type-business";
 import ValidatingBusinessIdea from "../../atomic/sections/type-of-business/bed-and-breakfast/validating-business-idea";
@@ -91,8 +91,8 @@ const BedAndBreakfast = () => (
                             efficient as possible and market yourself to the right vacationers.
                         </Paragraph>
 
-                        <Colorbox className="box" theme="icon" Icon={MegafornIcon} color={color.green3} curve
-                                  curveColor={color.orange2}>
+                        <Colorbox className="box" theme="icon" Icon={QuestionIcon} color={color.green3} curve
+                                  curveColor={color.blue1}>
                             <Heading size={4}>
                                 The question is, just where do you start?
                             </Heading>

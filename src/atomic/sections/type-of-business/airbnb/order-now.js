@@ -44,6 +44,13 @@ const OrderNow = () => (
 const OrderNowWrapper = styled.section`
   background-color: ${color.orange3};
   position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  
+  @media (min-width: 992px){
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 `;
 
 const ButtonsBox = styled.div`
@@ -83,7 +90,7 @@ const CurveWrapper = styled.div`
     top: -115px;
     display: none;
     
-    @media (min-width: 769px) {
+    @media (min-width: 992px) {
         display: block;
     }
 `;

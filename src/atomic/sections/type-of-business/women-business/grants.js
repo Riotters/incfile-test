@@ -14,39 +14,40 @@ import ContentCenter from "../../../partials/content-center";
 const Grants = () => (
     <Wrapper>
 
-            <ContentCenter contentWidth={770}>
-                <TextCenterLayout headline="Small Business Grants for Women" headlineWidth={770} textWidth={770}
-                                  text="Before we get into business ideas for moms and other women, we want to point out some funding options available to you. Around a quarter of women seek funding for their business, and around a third of those are successful in obtaining it."/>
+        <ContentCenter contentWidth={770}>
+            <TextCenterLayout headline="Small Business Grants for Women" headlineWidth={770} textWidth={770}
+                              text="Before we get into business ideas for moms and other women, we want to point out some funding options available to you. Around a quarter of women seek funding for their business, and around a third of those are successful in obtaining it."/>
 
-                <Paragraph big>
-                    When you’re applying for funding, remember:
-                </Paragraph>
-            </ContentCenter>
+            <Paragraph big>
+                When you’re applying for funding, remember:
+            </Paragraph>
+        </ContentCenter>
 
-            <ContentCenter contentWidth={970}>
-                <AdventagesWrapper>
-                    <Adventages
-                        text="Nearly two-thirds of female entrepreneurs say their business is their main source of income"
-                        width="470px" circleBackgroundColor={color.blue1} circleBackgroundShadow={shadow.blue1}
-                        circleText={1}
-                    />
+        <ContentCenter contentWidth={970}>
+            <AdventagesWrapper>
+                <Adventages
+                    text="Nearly two-thirds of female entrepreneurs say their business is their main source of income"
+                    width="470px" circleBackgroundColor={color.blue1} circleBackgroundShadow={shadow.blue1}
+                    circleText={1}
+                />
 
-                    <Adventages
-                        text="Show the real benefits of your business in terms of local improvement, social good, generating revenue, employing others."
-                        width="470px" circleBackgroundColor={color.blue1} circleBackgroundShadow={shadow.blue1}
-                        circleText={2}
-                    />
+                <Adventages
+                    text="Show the real benefits of your business in terms of local improvement, social good, generating revenue, employing others."
+                    width="470px" circleBackgroundColor={color.blue1} circleBackgroundShadow={shadow.blue1}
+                    circleText={2}
+                />
 
-                    <Adventages
-                        text="Show that you have a strong business plan, you’ve completed your research and you know your market"
-                        width="470px" circleBackgroundColor={color.blue1} circleBackgroundShadow={shadow.blue1}
-                        circleText={3}
-                    />
+                <Adventages
+                    text="Show that you have a strong business plan, you’ve completed your research and you know your market"
+                    width="470px" circleBackgroundColor={color.blue1} circleBackgroundShadow={shadow.blue1}
+                    circleText={3}
+                />
 
-                </AdventagesWrapper>
-            </ContentCenter>
+            </AdventagesWrapper>
+        </ContentCenter>
 
-        <TextCenterLayout headline="Here are some places you can apply for funding for your woman-owned business:"
+        <TextCenterLayout headlineWidth={770} textWidth={770}
+                          headline="Here are some places you can apply for funding for your woman-owned business:"
                           text="Note that the organizations listed provide grants specifically for women. There are many other grants available to both male and female business founders."/>
 
         <Container>
@@ -293,5 +294,6 @@ const AdventagesWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 56px;
 `;
 export default Grants;

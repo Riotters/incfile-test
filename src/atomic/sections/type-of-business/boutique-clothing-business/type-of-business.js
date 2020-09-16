@@ -18,10 +18,11 @@ const TypeOfBusiness = () => (
         <Oval2>
             <OvalSvg/>
         </Oval2>
+        <TextCenterLayout headlineWidth={770} textWidth={770} headline="What Type of Boutique Clothing Business Should You Start?"
+                          text="You have plenty of options for the type of boutique business you could start. We’ve already explored the main differences between online and traditional retail clothing businesses, so let’s expand things a bit."/>
+
         <Container>
             <Service>
-                <TextCenterLayout headline="What Type of Boutique Clothing Business Should You Start?"
-                                  text="You have plenty of options for the type of boutique business you could start. We’ve already explored the main differences between online and traditional retail clothing businesses, so let’s expand things a bit."/>
 
                 <AdventagesBox>
                     <CurveWrapper>
@@ -39,6 +40,7 @@ const TypeOfBusiness = () => (
                             circleBackgroundColor={color.blue1}
                             circleBackgroundShadow={shadow.blue1}
                             imageName={item.imageName}
+                            className="containerMargin"
                         />
                     ))}
                 </AdventagesBox>
@@ -62,10 +64,9 @@ const AdventagesBox = styled.div`
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 970px;
-  margin: 140px auto 0;
+  max-width: 1000px;
+  margin: 72px auto 0;
   position: relative;
- 
 `;
 
 const CurveWrapper = styled.div`

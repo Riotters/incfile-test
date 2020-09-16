@@ -44,6 +44,7 @@ const TypeBusiness = () => (
                             circleBackgroundColor={color.blue1}
                             circleBackgroundShadow={shadow.blue1}
                             imageName={item.imageName}
+                            className="containerMargin"
                         />
                     ))}
                 </AdventagesBox>
@@ -119,10 +120,9 @@ const AdventagesBox = styled.div`
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 970px;
-  margin: 0 auto 80px;
+  max-width: 1000px;
+  margin: 72px auto 0;
   position: relative;
- 
 `;
 
 const CurveWrapper = styled.div`

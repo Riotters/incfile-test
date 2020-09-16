@@ -19,10 +19,12 @@ const TypeBusiness = () => (
         <Oval2>
             <OvalSvg/>
         </Oval2>
+
+        <TextCenterLayout textWidth={770} headlineWidth={770} headline="What Type of Daycare Should You Start?"
+                          text="There are several different types of daycare business that you can start. Here are some of the more popular options:"/>
+
         <Container>
             <Service>
-                <TextCenterLayout headline="What Type of Daycare Should You Start?"
-                                  text="There are several different types of daycare business that you can start. Here are some of the more popular options:"/>
 
                 <AdventagesBox>
                     <CurveWrapper>
@@ -40,6 +42,7 @@ const TypeBusiness = () => (
                             circleBackgroundColor={color.blue1}
                             circleBackgroundShadow={shadow.blue1}
                             imageName={item.imageName}
+                            className="containerMargin"
                         />
                     ))}
                 </AdventagesBox>
@@ -63,9 +66,9 @@ const AdventagesBox = styled.div`
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 970px;
-  margin: 140px auto 0;
-  position: relative;
+  max-width: 1000px;
+  margin: 72px auto 0;
+  position: relative; 
  
 `;
 

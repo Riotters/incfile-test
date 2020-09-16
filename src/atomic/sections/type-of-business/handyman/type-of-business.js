@@ -20,12 +20,12 @@ const TypeOfBusiness = () => (
         <OvalBottom>
             <OvalSvg2/>
         </OvalBottom>
+
+        <TextCenterLayout headlineWidth={770} textWidth={770} headline="What Type of Home Handyman Business Should You Start?"
+                          text="When it comes to starting a handyman business, you have plenty of choices. When you want to turn your hobbies or fix-it skills into a successful business, these are some good places to start."/>
+
         <Container>
             <Service>
-
-                <TextCenterLayout headline="What Type of Home Handyman Business Should You Start?"
-                                  text="When it comes to starting a handyman business, you have plenty of choices. When you want to turn your hobbies or fix-it skills into a successful business, these are some good places to start."/>
-
                 <AdventagesBox>
                     <CurveWrapper>
                         <Curve/>
@@ -42,6 +42,7 @@ const TypeOfBusiness = () => (
                             circleBackgroundColor={color.blue1}
                             circleBackgroundShadow={shadow.blue1}
                             imageName={item.imageName}
+                            className="containerMargin"
                         />
                     ))}
                     <AdventagesWithLongText
@@ -96,10 +97,9 @@ const AdventagesBox = styled.div`
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 970px;
-  margin: 140px auto 0;
-  position: relative;
- 
+  max-width: 1000px;
+  margin: 72px auto 0;
+  position: relative; 
 `;
 
 const CurveWrapper = styled.div`

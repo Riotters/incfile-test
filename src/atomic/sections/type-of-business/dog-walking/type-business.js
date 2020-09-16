@@ -6,7 +6,6 @@ import Adventages from "../../../../components/adventages";
 import {color} from "../../../../components/styles/colors";
 import {shadow} from "../../../../components/styles/shadows";
 import {typeBusiness} from "../../../../static/type-of-business/dog-walking";
-import Curve from "../../../atoms/shapes/curve";
 import OvalSvg from "../../../../images/ovals/top-right-transparent-orange.inline.svg";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import {gradient} from "../../../atoms/styles/colors";
@@ -17,11 +16,12 @@ const TypeBusiness = () => (
             <OvalSvg/>
         </Oval>
 
+        <TextCenterLayout headlineWidth={770} textWidth={770}
+                          headline="What Type of Dog Walking or Pet Sitting Business Should You Start?"
+                          text="There are several different types of dog-related business you can start."/>
+
         <Container>
             <Service>
-                <TextCenterLayout headline="What Type of Dog Walking or Pet Sitting Business Should You Start?"
-                                  text="There are several different types of dog-related business you can start."/>
-
                 <AdventagesBox>
                     {typeBusiness.items.map(item => (
                         <Adventages
@@ -35,6 +35,7 @@ const TypeBusiness = () => (
                             circleBackgroundColor={color.blue1}
                             circleBackgroundShadow={shadow.blue1}
                             imageName={item.imageName}
+                            className="containerMargin"
                         />
                     ))}
                 </AdventagesBox>
@@ -85,10 +86,9 @@ const AdventagesBox = styled.div`
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 970px;
-  margin: 140px auto 0;
-  position: relative;
- 
+  max-width: 1000px;
+  margin: 72px auto 0;
+  position: relative; 
 `;
 
 const CurveWrapper = styled.div`

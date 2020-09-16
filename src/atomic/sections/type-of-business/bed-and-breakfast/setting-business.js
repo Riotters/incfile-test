@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "../../../container";
-import TextCenterLayout from "../../../../components/partials/blocks/heading-center";
+import TextCenterLayout from "../../../partials/heading-center";
 import TopImageBox from "../../../../components/top-image-box";
 import {color} from "../../../../components/styles/colors";
 import styled from "styled-components";
@@ -18,12 +18,13 @@ const SettingBusiness = () => (
             <GreenOval/>
         </Oval2>
 
+        <TextCenterLayout
+            headline="Setting up Your Boutique Hotel and Business Operations"
+            headlineWidth={700}
+            text="Once you've legally created your bed and breakfast business, you’ll need to get some other things in place."
+        />
+
         <Container>
-            <TextCenterLayout
-                headline="Setting up Your Boutique Hotel and Business Operations"
-                headlineWidth="700"
-                text="Once you've legally created your bed and breakfast business, you’ll need to get some other things in place."
-            />
             <ImageBoxes>
 
                 <TopImageBox image="location" color={color.red3}>
@@ -90,13 +91,13 @@ const ImageBoxes = styled.div`
   grid-gap: 30px;
   padding-top: 112px;
   width: 100%;
-
+  max-width: 970px;
+  
   @media(min-width: 769px) {
     grid-template-columns: 1fr 1fr;
   }
   
   @media (min-width: 970px) {
-    width: 970px;
     margin: 0 auto;
   }
 `;
@@ -113,11 +114,10 @@ const Oval = styled.div`
     left: 0;
     top: 394px;
     transform: rotate(180deg);
-    width: 570px;
-    display: none;
+    width: 100%;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 570px){
+        width: 570px;
     }
 `;
 
@@ -125,12 +125,11 @@ const Oval2 = styled.div`
     position: absolute;
     right: 0;
     bottom: 555px;
-    width: 420px;
+    width: 100%;
     transform: scaleY(-1);
-    display: none;
     
-    @media (min-width: 1200px){
-        display: block;
+    @media (min-width: 420px){
+        width: 420px;
     }
 `;
 
