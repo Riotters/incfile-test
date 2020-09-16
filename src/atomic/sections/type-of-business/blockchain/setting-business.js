@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "../../../container";
-import TextCenterLayout from "../../../../components/partials/blocks/heading-center";
+import TextCenterLayout from "../../../partials/heading-center";
 import TopImageBox from "../../../../components/top-image-box";
 import {color} from "../../../../components/styles/colors";
 import styled from "styled-components";
@@ -15,12 +15,15 @@ const SettingBusiness = () => (
         <Oval2>
             <OvalSvg/>
         </Oval2>
+
+        <TextCenterLayout
+            headline="How to Move Your Business to the Blockchain"
+            headlineWidth={770}
+            textWidth={770}
+            text="If you do decide to become a blockchain startup and develop software and applications on a blockchain framework, there are a few steps you’ll need to follow."
+        />
+
         <Container>
-            <TextCenterLayout
-                headline="How to Move Your Business to the Blockchain"
-                headlineWidth="700"
-                text="If you do decide to become a blockchain startup and develop software and applications on a blockchain framework, there are a few steps you’ll need to follow."
-            />
             <ImageBoxes>
 
                 <TopImageBox image="ongoing-filling-requirements" color={color.blue3}>
@@ -100,13 +103,13 @@ const ImageBoxes = styled.div`
   grid-gap: 30px;
   padding-top: 112px;
   width: 100%;
-
+  max-width: 970px;
+  
   @media(min-width: 769px) {
     grid-template-columns: 1fr 1fr;
   }
   
   @media (min-width: 970px) {
-    width: 970px;
     margin: 0 auto;
   }
 `;

@@ -16,15 +16,16 @@ const SettingBusiness = () => (
             <GreenOval/>
         </Oval>
 
+        <ContentCenter>
+            <TextCenterLayout
+                headline="Set up Your Beauty Salon Business"
+                headlineWidth={770}
+                textWidth={770}
+                text="Once you've legally created your beauty salon business, you’ll need to get some other things in place."
+            />
+        </ContentCenter>
+
         <Container>
-            <ContentCenter>
-                <TextCenterLayout
-                    headline="Set up Your Beauty Salon Business"
-                    headlineWidth="700"
-                    textWidth="700"
-                    text="Once you've legally created your beauty salon business, you’ll need to get some other things in place."
-                />
-            </ContentCenter>
 
             <ImageBoxes>
                 <TopImageBox image="display-ads" color={color.purple3}>

@@ -15,15 +15,16 @@ const SettingBusiness = () => (
             <OvalSvg/>
         </Oval>
 
+        <ContentCenter contentWidth={770}>
+            <TextCenterLayout
+                headline="Setting Up Your Drinking Establishment"
+                headlineWidth={770}
+                textWidth={770}
+                text="Once you've legally created your bar or club business you’ll need to get some other things in place."
+            />
+        </ContentCenter>
+
         <Container>
-            <ContentCenter>
-                <TextCenterLayout
-                    headline="Setting Up Your Drinking Establishment"
-                    headlineWidth="700"
-                    textWidth="700"
-                    text="Once you've legally created your bar or club business you’ll need to get some other things in place."
-                />
-            </ContentCenter>
 
             <ImageBoxes>
                 <TopImageBox image="location" color={color.red3}>
@@ -82,7 +83,6 @@ const ImageBoxes = styled.div`
   }
   
   @media (min-width: 970px) {
-    
     margin: 0 auto;
   }
 `;

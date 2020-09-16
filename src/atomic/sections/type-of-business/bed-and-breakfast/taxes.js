@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Container from "../../../container";
-import TextCenterLayout from "../../../../components/partials/blocks/heading-center";
+import TextCenterLayout from "../../../partials/heading-center";
 import Adventages from "../../../../components/adventages";
 import {color} from "../../../../components/styles/colors";
 import {shadow} from "../../../../components/styles/shadows";
@@ -17,9 +17,10 @@ const Taxes = () => (
         </Oval>
 
         <Service>
+            <TextCenterLayout headlineWidth={770} textWidth={770} headline="Maintaining Your Bed and Breakfast Business"
+                              text="There are certain forms and legalities you need to follow to keep your bed and breakfast business in good standing."/>
+
             <Container>
-                <TextCenterLayout headline="Maintaining Your Bed and Breakfast Business"
-                                  text="There are certain forms and legalities you need to follow to keep your bed and breakfast business in good standing."/>
                 <AdventagesBox>
                     <CurveWrapper>
                         <CurveSvg/>
