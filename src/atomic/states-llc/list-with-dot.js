@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { color } from "../atoms/styles/colors";
-
+import parse from 'html-react-parser'
 
 const dotColor = (circleColor) => {
   switch (circleColor) {
@@ -31,6 +31,8 @@ const dotColor = (circleColor) => {
 const Wrapper = styled.ul`
     position: relative;
     list-style: none;
+    margin-bottom: 24px;
+    padding-left: 0 !important;
 
     li {
         font-family: Avenir, sans-serif;
@@ -38,6 +40,7 @@ const Wrapper = styled.ul`
         line-height: 24px;
         color: ${color.grey1};
         padding-left: 26px;
+        padding-top: 0 !important;
         position: relative;
 
         &::before {
@@ -61,7 +64,7 @@ const ListWithDot = ({ className, color, content }) => {
   return (
     <Wrapper className={className} color={color}>
         {content.map((item) => (
-            <li>{item}</li>
+            <li>{parse(item)}</li>
         ))}
     </Wrapper>
   );

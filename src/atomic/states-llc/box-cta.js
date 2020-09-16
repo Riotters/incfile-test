@@ -15,6 +15,7 @@ const Wrapper = styled.div`
     padding: 40px;
 	background: ${(props) => (props.bgColor ? props.bgColor : `${color.white}`)} url(${(props) => props.bgImage}) center right no-repeat;
 	background-size: contain;
+	margin: ${props => (props.margin ? props.margin : "55px 0")};
 
     .title{
         font-family: MarkPro;

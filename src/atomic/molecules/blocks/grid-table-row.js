@@ -22,6 +22,7 @@ const Cell = styled.div`
   align-items: center;
   padding: 24px;
   min-width: 160px;
+  ${props => (props.textCenter ? "justify-content: center" : "")};
 
   @media (min-width: 769px) {
     min-width: auto;
@@ -49,13 +50,13 @@ const ListItem = styled(Paragraph)`
   }
 `;
 
-const GridTableRow = ({ className, content, header, headerSize, list, columns }) => (
+const GridTableRow = ({ className, content, header, headerSize, list, columns, textCenter }) => (
   <Wrapper className={className} columns={columns}>
     {columns && 
       console.log(columns.length)
     }
     {content.map((item) => (
-      <Cell>
+      <Cell textCenter={textCenter}>
         {header && (
           <Heading size={headerSize ? headerSize : "4"} bottomMargin="0">
             {item}
