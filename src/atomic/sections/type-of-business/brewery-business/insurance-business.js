@@ -3,7 +3,7 @@ import styled from "styled-components";
 import InfoCardsSection from "../../../partials/info-cards-section";
 import {InfoCards} from "../../../../static/type-of-business/brewery-business";
 import {gradient} from "../../../atoms/styles/colors";
-import TextCenterLayout from "../../../../components/partials/blocks/heading-center";
+import TextCenterLayout from "../../../partials/heading-center";
 import OvalSvg from "../../../../images/ovals/top-right-transparent-blue2.inline.svg";
 
 const InsuranceBusiness = () => (
@@ -14,6 +14,8 @@ const InsuranceBusiness = () => (
         <div style={{paddingBottom: "100px"}}>
             <TextCenterLayout
                 headline="Insurance for Your Brewery Business"
+                headlineWidth={770}
+                textWidth={770}
                 text="Most brewery businesses should have comprehensive business insurance. There are various types."
             />
         </div>

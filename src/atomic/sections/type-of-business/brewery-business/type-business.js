@@ -3,12 +3,11 @@ import styled from "styled-components";
 import Container from "../../../container";
 import TextCenterLayout from "../../../partials/heading-center";
 import Adventages from "../../../../components/adventages";
-import {color} from "../../../../components/styles/colors";
-import {shadow} from "../../../../components/styles/shadows";
+import {color} from "../../../atoms/styles/colors";
+import {shadow} from "../../../atoms/styles/shadows";
 import {typeBusiness} from "../../../../static/type-of-business/brewery-business";
 import Curve from "../../../atoms/shapes/curve";
 import OvalSvg from "../../../../images/ovals/top-right-transparent-orange.inline.svg";
-import {Paragraph} from "../../../atoms/typography/paragraph";
 import {gradient} from "../../../atoms/styles/colors";
 
 const TypeBusiness = () => (
@@ -17,10 +16,11 @@ const TypeBusiness = () => (
             <OvalSvg/>
         </Oval>
 
+        <TextCenterLayout headlineWidth={770} textWidth={770} headline="What Type of Brewery Should You Start?"
+                          text="If you want to start a successful brewery business, it’s important to know what your options are. Here are some of the more popular business ideas."/>
+
         <Container>
             <Service>
-                <TextCenterLayout headline="What Type of Brewery Should You Start?"
-                                  text="If you want to start a successful brewery business, it’s important to know what your options are. Here are some of the more popular business ideas."/>
 
                 <AdventagesBox>
                     <CurveWrapper>
@@ -65,7 +65,6 @@ const AdventagesBox = styled.div`
   max-width: 1000px;
   margin: 72px auto 0;
   position: relative; 
- 
 `;
 
 const CurveWrapper = styled.div`

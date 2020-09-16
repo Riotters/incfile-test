@@ -46,13 +46,13 @@ const GridSectionList = styled.div`
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
-    max-width: 970px;
+    max-width: 1000px;
     
     > div {
         margin-bottom: 70px;
     }
     
-    @media (min-width: 970px) {
+    @media (min-width: 1024px) {
         margin: 120px auto 0;
     }
 `;
@@ -103,7 +103,6 @@ const ValidatingBusinessIdea = () => (
             <OvalSvg />
         </Oval>
         <Container>
-
             <GridSection>
                 <TitleBox>
                     <AbsoluteCurve>
@@ -125,7 +124,7 @@ const ValidatingBusinessIdea = () => (
 
                 <GridSectionList>
 
-                    <TextBlockWithImage SvgImage={IdetifyIcon} imageBackgroundColor={color.babyblue2}
+                    <TextBlockWithImage className="containerMargin" SvgImage={IdetifyIcon} imageBackgroundColor={color.babyblue2}
                                         imageShadowColor={color.babyblue2}>
                         <Heading size={4}>
                             Identify your brewery business’ unique selling points (USPs)
@@ -138,7 +137,7 @@ const ValidatingBusinessIdea = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={LookIcon} imageBackgroundColor={color.red2}
+                    <TextBlockWithImage className="containerMargin" SvgImage={LookIcon} imageBackgroundColor={color.red2}
                                         imageShadowColor={color.red2}>
                         <Heading size={4}>
                             Look at who your competitors are in the space
@@ -150,7 +149,7 @@ const ValidatingBusinessIdea = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={InvolvedIcon} imageBackgroundColor={color.green2}
+                    <TextBlockWithImage className="containerMargin" SvgImage={InvolvedIcon} imageBackgroundColor={color.green2}
                                         imageShadowColor={color.green2}>
                         <Heading size={4}>
                             Get involved with business communities and discussion groups
@@ -164,47 +163,48 @@ const ValidatingBusinessIdea = () => (
 
                 </GridSectionList>
             </GridSection>
-
-            <ContentCenter contentWidth={770}>
-                <div>
-                    <Heading size={3} maxWidth="100%" style={{fontSize: "40px"}}>
-                        Startup Costs for a Brewery
-                    </Heading>
-                    <Paragraph big>
-                        Compared to many other small businesses, microbreweries have high startup costs.
-                        A combination of a large building to brew in, the sophisticated equipment needed and special
-                        ingredients like hops, barley and malt all means a high initial capital expenditure. If you have
-                        a bar, brewpub or cafe as well, you can expect those costs
-                        to increase significantly. Here’s a (very) rough guide to what you can expect to pay:
-                    </Paragraph>
-                    <Paragraph big mixed={true}>
-                        <SpecialList>
-                            <li>
-                                Brewing equipment could cost anything between $100,000 and $1,000,000
-                            </li>
-                            <li>
-                                The lease or rent on your location varies widely between cities and lots, so inquire
-                                with local property owners
-                            </li>
-                            <li>
-                                Preparing your brewery and brewpub is also expensive — you will likely need special
-                                flooring
-                                for the brewery that could run to thousands of dollars, you may need to get special
-                                electrics and water lines put in and you will need to pay for construction, decoration
-                                and fixtures for your brewpub
-                            </li>
-                            <li>
-                                Overall, starting a brewery could cost you anywhere from $250,000 to $2.5 million or
-                                more depending on your desires, ambition and ability to negotiate
-                            </li>
-                            <li>
-                                You will need to pay alcohol tax and licenses and permits to brew and serve alcohol
-                            </li>
-                        </SpecialList>
-                    </Paragraph>
-                </div>
-            </ContentCenter>
         </Container>
+
+        <ContentCenter contentWidth={770}>
+            <div>
+                <Heading size={3} maxWidth="100%" style={{fontSize: "40px"}}>
+                    Startup Costs for a Brewery
+                </Heading>
+                <Paragraph big>
+                    Compared to many other small businesses, microbreweries have high startup costs.
+                    A combination of a large building to brew in, the sophisticated equipment needed and special
+                    ingredients like hops, barley and malt all means a high initial capital expenditure. If you have
+                    a bar, brewpub or cafe as well, you can expect those costs
+                    to increase significantly. Here’s a (very) rough guide to what you can expect to pay:
+                </Paragraph>
+                <Paragraph big mixed={true}>
+                    <SpecialList>
+                        <li>
+                            Brewing equipment could cost anything between $100,000 and $1,000,000
+                        </li>
+                        <li>
+                            The lease or rent on your location varies widely between cities and lots, so inquire
+                            with local property owners
+                        </li>
+                        <li>
+                            Preparing your brewery and brewpub is also expensive — you will likely need special
+                            flooring
+                            for the brewery that could run to thousands of dollars, you may need to get special
+                            electrics and water lines put in and you will need to pay for construction, decoration
+                            and fixtures for your brewpub
+                        </li>
+                        <li>
+                            Overall, starting a brewery could cost you anywhere from $250,000 to $2.5 million or
+                            more depending on your desires, ambition and ability to negotiate
+                        </li>
+                        <li>
+                            You will need to pay alcohol tax and licenses and permits to brew and serve alcohol
+                        </li>
+                    </SpecialList>
+                </Paragraph>
+            </div>
+        </ContentCenter>
+
     </BlueContainerWrapper>
 );
 
