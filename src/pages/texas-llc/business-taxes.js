@@ -9,6 +9,7 @@ import ContentHeader from '../../atomic/states-llc/taxes-header';
 import WrapperContent from '../../atomic/states-llc/wrapper-content'
 import LeftTabPages from '../../atomic/states-llc/left-tab-pages'
 import MainPageContent from '../../atomic/states-llc/page-content'
+import BusinessTaxesSection from '../../atomic/states-llc/texas/business-taxes'
 import Rocket from "../../atomic/sections/review-entity-type/c-corporation/rocket";
 
 // Content
@@ -37,8 +38,10 @@ const TexasBusinessTaxes = () => (
 
     <WrapperContent>
         <Wrapper>
-        <LeftTabPages content={tabPages} />
-        <MainPageContent>asdasd</MainPageContent>
+            <LeftTabPages content={tabPages} />
+            <MainPageContent>
+                <BusinessTaxesSection content={businessTaxesPageContent.content}/>
+            </MainPageContent>
         </Wrapper>
     </WrapperContent>
     

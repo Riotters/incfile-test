@@ -6,10 +6,11 @@ import styled from 'styled-components'
 // Components
 import LinearBgHeader from '../../atomic/states-llc/linear-bg-header';
 import ContentHeader from '../../atomic/states-llc/taxes-header';
-import WrapperContent from '../../atomic/states-llc/wrapper-content'
-import LeftTabPages from '../../atomic/states-llc/left-tab-pages'
-import MainPageContent from '../../atomic/states-llc/page-content'
+import WrapperContent from '../../atomic/states-llc/wrapper-content';
+import LeftTabPages from '../../atomic/states-llc/left-tab-pages';
+import MainPageContent from '../../atomic/states-llc/page-content';
 import Rocket from "../../atomic/sections/review-entity-type/c-corporation/rocket";
+import FeeFilingRequirementSection from '../../atomic/states-llc/texas/fee-filing-requirement';
 
 // Content
 import { filingFeeAndRequirementContent } from "../../static/states-llc/texas/filingFeeAndRequirement";
@@ -37,8 +38,10 @@ const filingFeeAndRequirementPage = () => (
 
     <WrapperContent>
         <Wrapper>
-        <LeftTabPages content={tabPages} />
-        <MainPageContent>asdasd</MainPageContent>
+            <LeftTabPages content={tabPages} />
+            <MainPageContent>
+                <FeeFilingRequirementSection content={filingFeeAndRequirementContent.content} />
+            </MainPageContent>
         </Wrapper>
     </WrapperContent>
     

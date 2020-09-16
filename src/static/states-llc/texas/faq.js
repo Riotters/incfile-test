@@ -1,13 +1,10 @@
 import { color } from '../../../components/styles/colors';
 
-import BgBoxDBAName from '../../../images/icons/states/dba-name-01.png';
-import BgBoxTrademark from '../../../images/icons/states/trademark-01.png';
-import BgBoxBusinessNameIdea from '../../../images/icons/states/business-name-idea.inline.png';
-import BgBoxIncorporationPaperWork from '../../../images/icons/states/incorporation-paperwork-01.png';
 import MrsLeftThumUp from '../../../images/icons/states/mrs-bulb-thumb-up-left-color-01.png';
 import SCN from '../../../images/search-for-name-7560.png';
 import LightingOrange from '../../../images/lighting-orange-01.png';
 import BgBoxTrust from '../../../images/trust-01.png';
+import BgBoxChangeOfAgent from '../../../images/change-of-agent-01.png';
 
 export const faqContent = {
     header: {
@@ -205,6 +202,155 @@ export const faqContent = {
                         url: `/business-name-generator/`
                     }
                 ]
+            }
+        },
+
+        {
+            type: `heading`,
+            size: 2,
+            content: `How Do I Change a Registered Agent in Texas? (Form 401)`,
+        },
+        {
+            type: `paragraph`,
+            content: `You change your Texas registered agent or office by filing Texas Form 401 with the TX Secretary of State. Here at Incfile, we provide a free Texas Registered Agent service for the first year if you file through us. If you’ve been using a different registered agent and want to switch to us, we’ll file Form 401 on your behalf.`,
+        },
+        {
+            type: `box-cta`, 
+            color: color.blue3,
+            styles: { fontSize: `22px`},
+            bgImage: [BgBoxChangeOfAgent],
+            content: {
+                title: `Need to change your registered agent? Have Incfile file the paperwork for you.`,
+                button: {
+                    text: `Change Of Registred Agent Service`,
+                    url: `/business-name-generator/`
+                },
+            }
+        },
+
+        {
+            type: `heading`,
+            size: 2,
+            content: `How Do I Perform a Texas Registered Agent Search?`,
+        },
+        {
+            type: `paragraph`,
+            content: `You can find the Registered Agent for a specific <a href="https://mycpa.cpa.state.tx.us/coa/Index.html">Texas business by searching the Texas Comptroller of Public Accounts website</a>. Once you’ve searched, select “Details” and you’ll see the Registered Agent name.`,
+        },
+
+        {
+            type: `heading`,
+            size: 2,
+            content: `What Texas Business Taxes Do I Need to Pay?`,
+        },
+        {
+            type: `paragraph`,
+            content: `As an LLC, any business profits you earn will be reported on your personal 1040 filing and reported and taxed as “pass-through” income.`,
+        },
+        {
+            type: `iconListColorBox`,
+            boxColor: color.green3,
+            styles: {margin: `56px 0`},
+            content: {
+                header: `You will typically need to pay:`,
+                list: [
+                    `Self-employment or payroll tax on all business profits`,
+                    `Federal income tax on profits after you meet your tax-free allowance`,
+                    `Sales tax for selling taxable products and services`,
+                ],
+            },
+        },
+        {
+            type: `paragraph`,
+            content: `Note that unlike many other states, Texas does not have a state income tax.`,
+        },
+
+        {
+            type: `heading`,
+            size: 2,
+            content: `What Businesses Need to Pay Texas Sales Tax?`,
+        },
+        {
+            type: `paragraph`,
+            content: `Texas charges a 6.25 percent state sales and use tax on all retail sales, leases and rentals of most goods. You will also need to pay sales tax if you provide a taxable service. You can <a href="https://comptroller.texas.gov/taxes/publications/96-259.php">find a full list of taxable services here.</a>`,
+        },
+
+        {
+            type: `heading`,
+            size: 2,
+            content: `How Do I Get a Texas Sales Tax ID?`,
+        },
+        {
+            type: `paragraph`,
+            content: `You will need to file a Texas State Sales Tax Application with the Texas comptroller. You can <a href="https://comptroller.texas.gov/taxes/permit/">complete this process online.</a>`,
+        },
+
+        {
+            type: `heading`,
+            size: 2,
+            content: `How Do I Calculate Texas Sales Tax?`,
+        },
+        {
+            type: `paragraph`,
+            content: `The base rate for Texas sales tax is 6.25 percent, and there may be additional sales tax depending on your region, county or city. Once you know your overall sales tax amount, calculate the value of all your taxable products and services. Then, multiply that by your sales tax rate to understand how much you will need to pay.`,
+        },
+
+        {
+            type: `heading`,
+            size: 2,
+            content: `When is Texas Sales Tax Due?`,
+        },
+        {
+            type: `paragraph`,
+            content: `Once your LLC’s business’s sales tax application has been approved, you will receive a letter with instructions on how often you must file a sales tax return and pay sales taxes. Returns and payments may be due monthly, quarterly, or annually.`,
+        },
+
+        {
+            type: `heading`,
+            size: 2,
+            content: `What Do I Need to Know About Texas Franchise Tax?`,
+        },
+        {
+            type: `paragraph`,
+            content: `Some businesses will need to pay a franchise tax in Texas.`,
+        },
+        {
+            type: `iconListColorBox`,
+            boxColor: color.blue3,
+            styles: {margin: `56px 0`},
+            content: {
+                //header: `You will typically need to pay:`,
+                list: [
+                    `Typically, if your business has margins of less than $1,180,000 (for 2020 and 2021) a year, you will not need to pay franchise tax.`,
+                    `If your margin is higher than this, you will pay a franchise tax of between 0.375 and 0.75 percent.`,
+                    `You can find more franchise tax details on the <a href="https://comptroller.texas.gov/taxes/franchise/">Texas comptroller website.</a>`,
+                ],
+            },
+        },
+
+        {
+            type: `heading`,
+            size: 2,
+            content: `Do I Need a License to Do Business in Texas?`,
+        },
+        {
+            type: `paragraph`,
+            content: `The types of business licenses you need will vary depending on your type of business, your industry, your location and various other factors. We can <a href="/business-license-research-package/">research the types of business licenses</a> you might need for you.`,
+        },
+
+        {
+            type: `heading`,
+            styles: {marginTop: `56px`},
+            size: 3,
+            content: `We hope you’ve found this Texas LLC FAQ useful. If you’ve used our services and have a question that isn’t answered here, let us know and we’d be happy to help.`,
+        },
+        {
+            type: `button`,
+            width: `200px`,
+            theme: `secondary56`,
+            content: {
+                text: `Ask a question`,
+                url: `/contact/`
             }
         },
     ],

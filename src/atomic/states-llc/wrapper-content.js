@@ -23,12 +23,20 @@ const Oval = styled.div`
     transform: translateY(40%);
     transform: rotate(-460deg);
 
+    @media screen and (min-width:1550px) {
+        max-height: 600px;
+        max-width: 600px;
+        left: 50px;
+        top: 110px;
+    }
+
     svg {
         moz-transform: scale(-1,1);
         -o-transform: scale(-1,1);
         -webkit-transform: scale(-1,1);
         transform: scale(-1,1);
     }
+
 `
 
 const WrapperContent = ({children}) => (

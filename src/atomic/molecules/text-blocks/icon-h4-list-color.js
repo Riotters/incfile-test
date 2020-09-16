@@ -84,9 +84,10 @@ const IconTextColorBox = ({ className, color, content, bottomMargin, rounded, cu
         </Curve>
       )}
       <Colorbox className="box" color={color}>
-        <Heading size="4" bottomMargin="24">
-          {content.header}
-        </Heading>
+        {content.header && (
+            <Heading size="4" bottomMargin="24">{content.header}</Heading>
+        )}
+          
         <ul>
           {content.list.map((item) => (
             <li>{parse(item)}</li>
