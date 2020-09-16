@@ -3,8 +3,6 @@ import styled from "styled-components"
 import { Link } from "gatsby";
 
 // Components
-import ArrowLink from "../../components/arrow-link"
-import ContentButton from "../molecules/buttons/button";
 import HowToGuideSVG from "../../images/icons/states/how-to-guide.inline.svg"
 import BusinessNamesSVG from "../../images/icons/states/naming-your-business.inline.svg"
 import RASVG from "../../images/icons/states/registered-agent.inline.svg"
@@ -13,13 +11,6 @@ import BusinessTaxesSVG from "../../images/icons/states/business-taxes.inline.sv
 import FaqSVG from "../../images/icons/states/faq.inline.svg"
 import WhatDoNextSVG from "../../images/icons/states/what-to-do-after.inline.svg"
 import ArrowSVG from "../../images/arrow.inline.svg"
-import { color } from "../../components/styles/colors"
-import IconListColorBox from "../molecules/text-blocks/icon-h4-list-color"
-import AcccordionCounting from '../organisms/accordion/accordion-with-counting'
-import NumericBoxedList from '../organisms/lists/numeric-boxed-list'
-import { Heading } from "../atoms/typography/heading"
-import { Paragraph } from "../atoms/typography/paragraph"
-import VisibilitySensor from "../VisibilitySensor"
 
 const TabsWrapper = styled.div`
   display: flex;
