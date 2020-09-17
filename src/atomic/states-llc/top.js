@@ -61,22 +61,15 @@ const Wrapper = styled.div`
     display: flex;
     align-items: center;
     position: relative;
-    
-    @media screen and (max-width:1440px) {
-        overflow: hidden;
-    }
 `;
 
 const IconMap = styled.div`
-    width: 660px;
+    width: 550px;
     position: absolute;
-    top: -35px;
+    top: 100px;
     right: 75px;
     z-index: -1;
-
-    @media screen and (min-width: 1450px) {
-        width: 730px;
-    }
+    transform: scale(.9);
 
     &::after {
         content: "";
@@ -136,26 +129,27 @@ const TextContainer = styled.div`
 
 const ImageContainer = styled.div`
     display: none;
-    width: 55%;
+    width: 70%;
     max-width: 950px;
     position: absolute;
     top: 5%;
-    right: -12%;
-    transform: translate(-12%,0);
+    right: -20%;
+    -ms-transform: translate(-12%,0);
+    transform: translate(0,0);
 
     @media (min-width: 992px) {
         display: flex;
     }
 
-    @media screen and (min-width: 1450px) {
-        width: ${(props) => (props.imageWidthLG ? props.imageWidthLG : "48")}%;
+    @media screen and (min-width: 1550px) {
+        width: ${(props) => (props.imageWidthLG ? props.imageWidthLG : "65")}%;
         top: 15px;
         right: ${(props) => (props.imageOffsetRightLG ? props.imageOffsetRightLG : "-15")}%;
     }
     .gatsby-image-wrapper {
         width: 100%;  
         img {
-        object-fit: contain !important;
+            object-fit: contain !important;
         }
     }
 `;
@@ -166,13 +160,9 @@ const arrayMap = {
 
 const Top = ({ children, imageName, imageAlt, headlineWidth, imageWidthLG, imageOffsetRightLG, stateName }) => (
     <Wrapper>
-    <VisibilitySensor partialVisibility once>
-      {({ isVisible }) => (
-        <IconMap className={isVisible ? "scaleUp enter" : "scaleUp"}>
+        <IconMap>
             {arrayMap[stateName]}
         </IconMap>
-      )}
-    </VisibilitySensor>
     
     <Container>
       <Content>

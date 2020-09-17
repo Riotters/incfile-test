@@ -36,8 +36,6 @@ const AfterFormingLLC = () => (
             imageName="typewriter-01.inline"
             imageAlt="Frequently question"
             headlineWidth={500} stateName="TX"
-            imageWidthLG={40}
-            imageOffsetRightLG={0}
         >
             <h1>{pageContent.top.title}</h1>
             <Buttonsbox>
