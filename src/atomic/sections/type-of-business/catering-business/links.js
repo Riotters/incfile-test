@@ -14,10 +14,10 @@ const Links = () => (
             <OvalSvg />
         </Oval>
 
-        <Container>
-            <TextCenterLayout headline="Discussion Groups and Forums for Your Catering Business"
-                              text="There are plenty of forums and online discussion groups for catering businesses. Start with these:"/>
+        <TextCenterLayout headlineWidth={770} textWidth={770} headline="Discussion Groups and Forums for Your Catering Business"
+                          text="There are plenty of forums and online discussion groups for catering businesses. Start with these:"/>
 
+        <Container>
             <LinksContainer>
 
                 <LinkItem>

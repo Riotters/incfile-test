@@ -538,7 +538,7 @@ const CateringBusiness = () => (
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
-                            style={{marginTop: "70px"}}
+                            style={{marginTop: "40px"}}
                             circleShadowY={40}
                             circleShadowBlure={80}
                             width={100}
@@ -569,7 +569,7 @@ const CateringBusiness = () => (
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
-                            style={{marginTop: "70px"}}
+                            style={{marginTop: "40px"}}
                             circleShadowY={40}
                             circleShadowBlure={80}
                             width={100}
@@ -600,7 +600,7 @@ const CateringBusiness = () => (
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
-                            style={{marginTop: "70px"}}
+                            style={{marginTop: "40px"}}
                             circleShadowY={40}
                             circleShadowBlure={80}
                             width={100}
@@ -631,7 +631,7 @@ const CateringBusiness = () => (
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
-                            style={{marginTop: "70px"}}
+                            style={{marginTop: "40px"}}
                             circleShadowY={40}
                             circleShadowBlure={80}
                             width={100}
@@ -661,7 +661,7 @@ const CateringBusiness = () => (
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
-                            style={{marginTop: "70px"}}
+                            style={{marginTop: "40px"}}
                             circleShadowY={40}
                             circleShadowBlure={80}
                             width={100}
@@ -683,13 +683,13 @@ const CateringBusiness = () => (
                             </Paragraph>
                         </TextBlockWithImage>
 
-                        <Paragraph big style={{paddingTop: "120px"}} mixed={true}>
+                        <Paragraph big style={{paddingTop: "48px", paddingBottom: 0}} mixed={true}>
                             For more information on the advantages and disadvantages of different types of businesses,
                             please <Link to="/">see our in-depth guide</Link> on business entities. If you still have
                             questions, <Link to="/">we’ve
                             answered them to help you choose the right business structure</Link>.
                         </Paragraph>
-                        <Paragraph big mixed={true}>
+                        <Paragraph big style={{paddingTop: "48px", paddingBottom: 0}} mixed={true}>
                             In most cases our recommendation would be to create an LLC. We have a <Link to="/">complete
                             guide to
                             everything you need to do</Link>, and we can set one up for your T-shirt business. <Link
@@ -703,31 +703,32 @@ const CateringBusiness = () => (
                     </ImageContent>
                 </BusinessOwnerResponsibilities>
 
-                <ContentCenter contentWidth={770}>
-                    <div>
-                        <Heading size={3} style={{fontSize: "40px", marginTop: "100px", textAlign: "left"}}>
-                            Special Considerations for Setting up a Cleaning Business Entity
-                        </Heading>
-
-                        <Paragraph big mixed={true}>
-                            For more information on the advantages and disadvantages of different types of businesses,
-                            please see our in-depth guide. If you’ve still got questions, we’ve answered them to help
-                            you
-                            choose the right business structure.
-                        </Paragraph>
-                        <Paragraph big mixed={true}>
-                            In almost every case, the right business entity for a caterer is going to be an LLC. It
-                            provides
-                            you with liability protection, is easy to set up and run, has low administrative overhead
-                            and
-                            can be tax advantageous. We’ve got a complete guide to everything you need to do here, and
-                            we
-                            can set one up for your catering business. LLC formation does vary from state to state, but
-                            we’ve got you covered, wherever you are.
-                        </Paragraph>
-                    </div>
-                </ContentCenter>
             </Container>
+            
+            <ContentCenter contentWidth={770}>
+                <div>
+                    <Heading size={3} style={{fontSize: "40px", marginTop: "100px", textAlign: "left"}}>
+                        Special Considerations for Setting up a Cleaning Business Entity
+                    </Heading>
+
+                    <Paragraph big mixed={true}>
+                        For more information on the advantages and disadvantages of different types of businesses,
+                        please see our in-depth guide. If you’ve still got questions, we’ve answered them to help
+                        you
+                        choose the right business structure.
+                    </Paragraph>
+                    <Paragraph big mixed={true}>
+                        In almost every case, the right business entity for a caterer is going to be an LLC. It
+                        provides
+                        you with liability protection, is easy to set up and run, has low administrative overhead
+                        and
+                        can be tax advantageous. We’ve got a complete guide to everything you need to do here, and
+                        we
+                        can set one up for your catering business. LLC formation does vary from state to state, but
+                        we’ve got you covered, wherever you are.
+                    </Paragraph>
+                </div>
+            </ContentCenter>
         </OrangeContainer>
 
         <SettingBusiness/>

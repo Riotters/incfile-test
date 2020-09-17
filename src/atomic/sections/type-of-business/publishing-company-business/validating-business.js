@@ -94,7 +94,7 @@ const ValidatingBusinessIdea = () => (
                         to validate your publishing business idea.
                     </Paragraph>
 
-                    <Paragraph big style={{fontWeight: "bold"}}>
+                    <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
                         Getting started in a publishing business is easy, but becoming
                         a success is harder.
                     </Paragraph>
@@ -108,7 +108,7 @@ const ValidatingBusinessIdea = () => (
                 </TitleBox>
 
                 <GridSectionList>
-                    <TextBlockWithImage SvgImage={Icon1} imageBackgroundColor={color.orange2}
+                    <TextBlockWithImage className="containerMargin" SvgImage={Icon1} imageBackgroundColor={color.orange2}
                                         imageShadowColor={color.orange2}>
                         <Heading size={4}>
                             Identify your publishing business’ unique selling points (USPs)
@@ -118,7 +118,7 @@ const ValidatingBusinessIdea = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={Icon3} imageBackgroundColor={color.yellow2}
+                    <TextBlockWithImage className="containerMargin" SvgImage={Icon3} imageBackgroundColor={color.yellow2}
                                         imageShadowColor={color.yellow2}>
                         <Heading size={4}>
                             Understand your construction market
@@ -130,7 +130,7 @@ const ValidatingBusinessIdea = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={Icon2} imageBackgroundColor={color.purple2}
+                    <TextBlockWithImage className="containerMargin" SvgImage={Icon2} imageBackgroundColor={color.purple2}
                                         imageShadowColor={color.purple2}>
                         <Heading size={4}>
                             Look at who your construction competitors are in the space
@@ -141,7 +141,7 @@ const ValidatingBusinessIdea = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={Icon4} imageBackgroundColor={color.babyblue2}
+                    <TextBlockWithImage className="containerMargin" SvgImage={Icon4} imageBackgroundColor={color.babyblue2}
                                         imageShadowColor={color.babyblue2}>
                         <Heading size={4}>
                             Get involved with business communities and discussion groups

@@ -1,6 +1,7 @@
-import ImageContent from "../../../../components/partials/blocks/left-image-right-content";
 import React from "react";
+import {Link} from "gatsby";
 import styled from "styled-components";
+import ImageContent from "../../../../components/partials/blocks/left-image-right-content";
 import {Heading} from "../../../atoms/typography/heading";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import {color} from "../../../../components/styles/colors";
@@ -15,6 +16,7 @@ import ArrowsIcon from "../../../../images/icons/arrows.inline.svg"
 import Button from "../../../molecules/buttons/button";
 import Container from "../../../container";
 import OvalOrange2Svg from "../../../../images/oval-orange-2.inline.svg";
+import {shadow} from "../../../atoms/styles/shadows";
 
 const BusinessOwnerResponsibilities = styled.section`
   position: relative;
@@ -62,11 +64,11 @@ const MovingBusinessStructure = () => (
                         SvgImage={HandsIcon}
                         textBackgroundColor="transparent"
                         imageBackgroundColor={color.white}
-                        imageShadowColor="#ababab"
+                        imageShadowColor={shadow.white2}
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
-                        style={{marginTop: "70px"}}
+                        style={{marginTop: "40px"}}
                         circleShadowY={40}
                         circleShadowBlure={80}
                         width={100}
@@ -90,11 +92,11 @@ const MovingBusinessStructure = () => (
                         SvgImage={UmbrellaIcon}
                         textBackgroundColor="transparent"
                         imageBackgroundColor={color.white}
-                        imageShadowColor="#ababab"
+                        imageShadowColor={shadow.white2}
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
-                        style={{marginTop: "70px"}}
+                        style={{marginTop: "40px"}}
                         circleShadowY={40}
                         circleShadowBlure={80}
                         width={100}
@@ -118,11 +120,11 @@ const MovingBusinessStructure = () => (
                         SvgImage={ArrowsIcon}
                         textBackgroundColor="transparent"
                         imageBackgroundColor={color.white}
-                        imageShadowColor="#ababab"
+                        imageShadowColor={shadow.white2}
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
-                        style={{marginTop: "70px"}}
+                        style={{marginTop: "40px"}}
                         circleShadowY={40}
                         circleShadowBlure={80}
                         width={100}
@@ -146,11 +148,11 @@ const MovingBusinessStructure = () => (
                         SvgImage={PlaneIcon}
                         textBackgroundColor="transparent"
                         imageBackgroundColor={color.white}
-                        imageShadowColor="#ababab"
+                        imageShadowColor={shadow.white2}
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
-                        style={{marginTop: "70px"}}
+                        style={{marginTop: "40px"}}
                         circleShadowY={40}
                         circleShadowBlure={80}
                         width={100}
@@ -173,11 +175,11 @@ const MovingBusinessStructure = () => (
                         SvgImage={RockerIcon}
                         textBackgroundColor="transparent"
                         imageBackgroundColor={color.white}
-                        imageShadowColor="#ababab"
+                        imageShadowColor={shadow.white2}
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
-                        style={{marginTop: "70px"}}
+                        style={{marginTop: "40px"}}
                         circleShadowY={40}
                         circleShadowBlure={80}
                         width={100}
@@ -196,23 +198,22 @@ const MovingBusinessStructure = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <Paragraph big style={{paddingTop: "120px"}}>
+                    <Paragraph big style={{paddingTop: "48px", paddingBottom: 0}} mixed={true}>
                         For more information on the advantages and disadvantages of different types of businesses,
-                        <span className="blue big">please see our in-depth guide.</span> If you’ve still got
-                        questions, <span className="blue big">we’ve answered them to help you
-                        choose the right business structure</span> for your moving business.
+                        <Link to="/">please see our in-depth guide.</Link> If you’ve still got
+                        questions, <Link to="/">we’ve answered them to help you
+                        choose the right business structure</Link> for your moving business.
                     </Paragraph>
-                    <Paragraph big>
+                    <Paragraph big style={{paddingTop: "48px", paddingBottom: 0}} mixed={true}>
                         In most cases, our recommendation for your moving business would be to create an LLC.
-                        We’ve <span className="blue big">got
-                        a complete guide</span> to everything you need to do. <span className="blue big">LLC formation does vary from state to state</span>,
+                        We’ve <Link to="/">got
+                        a complete guide</Link> to everything you need to do. <Link to="/">LLC formation does vary from state to state</Link>,
                         but
                         we’ve got you covered, wherever you are.
                     </Paragraph>
 
-                    <Button theme="primary48" width="365px" arrow>
-                        Start your business with us, today!
-                    </Button>
+                    <Button theme="primary48" width="365px" arrow content={{url: "/", text: "Start your business with us, today!"}} />
+
                 </ImageContent>
             </BusinessOwnerResponsibilities>
         </Container>

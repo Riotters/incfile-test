@@ -19,15 +19,16 @@ const SettingBusiness = () => (
             <GreenOval/>
         </Oval2>
 
+        <ContentCenter contentWidth={770}>
+            <TextCenterLayout
+                headline="The Next Steps: Running a T-Shirt Business"
+                headlineWidth={770}
+                textWidth={770}
+                text="Once you've legally created your T-shirt business, you’ll need to get some other things in place."
+            />
+        </ContentCenter>
+
         <Container>
-            <ContentCenter>
-                <TextCenterLayout
-                    headline="The Next Steps: Running a T-Shirt Business"
-                    headlineWidth="700"
-                    textWidth="700"
-                    text="Once you've legally created your T-shirt business, you’ll need to get some other things in place."
-                />
-            </ContentCenter>
 
             <ImageBoxes>
                 <TopImageBox image="location" color={color.red3}>

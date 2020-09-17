@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Container from "../../../container";
-import TextCenterLayout from "../../../../components/partials/blocks/heading-center";
+import TextCenterLayout from "../../../partials/heading-center";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import {color} from "../../../../components/styles/colors";
 import Curve from "../../../atoms/shapes/curve";
@@ -31,9 +31,11 @@ const Taxes = () => (
                     to="/">we can also help out with researching your business licensing needs.</Link>
                 </Paragraph>
             </TextWrapper>
+        </Container>
 
-            <TextCenterLayout headline="Taxes for a Moving Business"/>
+        <TextCenterLayout headlineWidth={770} headline="Taxes for a Moving Business"/>
 
+        <Container>
             <TextWrapper>
                 <Paragraph big mixed={true}>
                     <Curve color={color.babyblue1}
@@ -68,20 +70,6 @@ const TextWrapper = styled.div`
     @media (min-width: 750px) {
         margin: 48px auto 100px;
     }
-`;
-
-const Service = styled.div`
-  padding: 64px 0;
-`;
-
-const AdventagesBox = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  max-width: 970px;
-  padding: 140px 0;
-  margin: 0 auto;
-  position: relative;
 `;
 
 const Oval = styled.div`

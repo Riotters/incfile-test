@@ -133,7 +133,7 @@ const ValidatingBusinessIdea = () => (
 
                 <GridSectionList>
 
-                    <TextBlockWithImage SvgImage={IdetifyIcon} imageBackgroundColor={color.babyblue2}
+                    <TextBlockWithImage className="containerMargin" SvgImage={IdetifyIcon} imageBackgroundColor={color.babyblue2}
                                         imageShadowColor={color.babyblue2}>
                         <Heading size={4}>
                             Identify your unique selling points (USPs)
@@ -145,7 +145,7 @@ const ValidatingBusinessIdea = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={TalkIcon} imageBackgroundColor={color.red2}
+                    <TextBlockWithImage className="containerMargin" SvgImage={TalkIcon} imageBackgroundColor={color.red2}
                                         imageShadowColor={color.red2}>
                         <Heading size={4}>
                             Talk to clients
@@ -156,7 +156,7 @@ const ValidatingBusinessIdea = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={MarketIcon} imageBackgroundColor={color.purple2}
+                    <TextBlockWithImage className="containerMargin" SvgImage={MarketIcon} imageBackgroundColor={color.purple2}
                                         imageShadowColor={color.purple2}>
                         <Heading size={4}>
                             Understand your market

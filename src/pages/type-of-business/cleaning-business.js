@@ -421,7 +421,7 @@ const CleaningBusiness = () => (
                 </CenterBox>
 
                 <GridSectionList>
-                    <TextBlockWithImage SvgImage={IdentifyIcon} imageBackgroundColor={color.babyblue2}
+                    <TextBlockWithImage className="containerMargin" SvgImage={IdentifyIcon} imageBackgroundColor={color.babyblue2}
                                         imageShadowColor={color.babyblue2}>
                         <Heading size={4}>
                             Identify your business’s unique selling points (USPs)
@@ -434,7 +434,7 @@ const CleaningBusiness = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={LookIcon} imageBackgroundColor={color.green2}
+                    <TextBlockWithImage className="containerMargin" SvgImage={LookIcon} imageBackgroundColor={color.green2}
                                         imageShadowColor={color.green2}>
                         <Heading size={4}>
                             Consider who your competitors are
@@ -445,7 +445,7 @@ const CleaningBusiness = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={InvolvedIcon} imageBackgroundColor={color.red2}
+                    <TextBlockWithImage className="containerMargin" SvgImage={InvolvedIcon} imageBackgroundColor={color.red2}
                                         imageShadowColor={color.red2}>
                         <Heading size={4}>
                             Get involved with business communities and discussion groups
@@ -455,7 +455,7 @@ const CleaningBusiness = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={ValidateIcon} imageBackgroundColor={color.orange2}
+                    <TextBlockWithImage className="containerMargin" SvgImage={ValidateIcon} imageBackgroundColor={color.orange2}
                                         imageShadowColor={color.orange2}>
                         <Heading size={4}>
                             Look for market research reports for cleaning businesses
@@ -467,7 +467,7 @@ const CleaningBusiness = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={TalkIcon} imageBackgroundColor={color.purple2}
+                    <TextBlockWithImage className="containerMargin" SvgImage={TalkIcon} imageBackgroundColor={color.purple2}
                                         imageShadowColor={color.purple2}>
                         <Heading size={4}>
                             Talk to clients
@@ -610,7 +610,7 @@ const CleaningBusiness = () => (
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
-                            style={{marginTop: "70px"}}
+                            style={{marginTop: "40px"}}
                             circleShadowY={40}
                             circleShadowBlure={80}
                             width={100}
@@ -641,7 +641,7 @@ const CleaningBusiness = () => (
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
-                            style={{marginTop: "70px"}}
+                            style={{marginTop: "40px"}}
                             circleShadowY={40}
                             circleShadowBlure={80}
                             width={100}
@@ -672,7 +672,7 @@ const CleaningBusiness = () => (
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
-                            style={{marginTop: "70px"}}
+                            style={{marginTop: "40px"}}
                             circleShadowY={40}
                             circleShadowBlure={80}
                             width={100}
@@ -703,7 +703,7 @@ const CleaningBusiness = () => (
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
-                            style={{marginTop: "70px"}}
+                            style={{marginTop: "40px"}}
                             circleShadowY={40}
                             circleShadowBlure={80}
                             width={100}
@@ -733,7 +733,7 @@ const CleaningBusiness = () => (
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
-                            style={{marginTop: "70px"}}
+                            style={{marginTop: "40px"}}
                             circleShadowY={40}
                             circleShadowBlure={80}
                             width={100}
@@ -755,18 +755,18 @@ const CleaningBusiness = () => (
                             </Paragraph>
                         </TextBlockWithImage>
 
-                        <Paragraph big style={{paddingTop: "120px"}} mixed={true}>
+                        <Paragraph big mixed={true} style={{marginBottom: "48px", paddingBottom: 0}}>
                             For more information on the advantages and disadvantages of different types of businesses,
                             please <Link to="/">see our in-depth guide</Link> on business entities. If you still have questions, <Link to="/">we’ve
                             answered them to help you choose the right business structure</Link>.
                         </Paragraph>
-                        <Paragraph big mixed={true}>
+                        <Paragraph big mixed={true} style={{marginBottom: "56px", paddingBottom: 0}}>
                             In most cases our recommendation would be to create an LLC. We have a <Link to="/">complete guide to
                             everything you need to do</Link>, and we can set one up for your T-shirt business. <Link to="/">LLC formation
                             does vary from state to state</Link>, but we’ve got you covered, wherever you are.
                         </Paragraph>
 
-                        <Heading size={3}>
+                        <Heading size={3} style={{marginBottom: "48px", paddingBottom: 0}}>
                             Special Considerations for Setting up a Cleaning Business Entity
                         </Heading>
 
@@ -861,15 +861,14 @@ const GridSectionList = styled.div`
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
-    margin-top: 100px;
-    max-width: 970px;
+    max-width: 1000px;
     
     > div {
         margin-bottom: 70px;
     }
     
-    @media (min-width: 970px) {
-        margin: 100px auto 0;
+    @media (min-width: 1024px) {
+        margin: 120px auto 0;
     }
 `;
 

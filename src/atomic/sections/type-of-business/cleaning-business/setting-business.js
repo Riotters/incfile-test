@@ -18,16 +18,17 @@ const SettingBusiness = () => (
             <GreenOval/>
         </Oval2>
 
-        <Container>
-            <ContentCenter>
-                <TextCenterLayout
-                    headline="Setting up Your Cleaning Business"
-                    headlineWidth="700"
-                    textWidth="700"
-                    text="Once you've legally created your cleaning business, you’ll need to get some other things in place."
-                />
-            </ContentCenter>
+        <ContentCenter contentWidth={770}>
+            <TextCenterLayout
+                headline="Setting up Your Cleaning Business"
+                headlineWidth={770}
+                textWidth={770}
+                text="Once you've legally created your cleaning business, you’ll need to get some other things in place."
+            />
+        </ContentCenter>
 
+
+        <Container>
             <ImageBoxes>
                 <TopImageBox image="location" color={color.red3}>
                     <h4>Location of your workshop</h4>

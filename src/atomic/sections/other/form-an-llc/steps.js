@@ -75,7 +75,6 @@ const PlayButton = styled.button`
   }
 `;
 
-
 const StepsSection = ({ className, content }) => (
   <Steps className={className}>
     <Oval className="oval" height="720" width="720" top="0" right="0">
@@ -84,17 +83,23 @@ const StepsSection = ({ className, content }) => (
     <Oval className="oval" height="420" width="420" bottom="0" left="0">
       <Oval2SVG />
     </Oval>
-    <ContentObject object={<Video>
-        <Curve top="-25" right="-29" color={color.purple1}>
-          <CurveSVG />
-        </Curve>
-        <Image filename="comparison-chart-video-3611" />
-        <PlayButton>
-          <span>
-            <PlayerSVG />
-          </span>
-        </PlayButton>
-      </Video>} contentWidth="500" contentCenter>
+    <ContentObject
+      object={
+        <Video>
+          <Curve top="-25" right="-29" color={color.purple1}>
+            <CurveSVG />
+          </Curve>
+          <Image filename="comparison-chart-video-3611" />
+          <PlayButton>
+            <span>
+              <PlayerSVG />
+            </span>
+          </PlayButton>
+        </Video>
+      }
+      contentWidth="500"
+      contentCenter
+    >
       <Heading size="2" bottomMargin="48" style={{ position: `relative` }}>
         {content.header}
       </Heading>

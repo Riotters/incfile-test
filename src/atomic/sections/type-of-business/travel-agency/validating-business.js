@@ -107,7 +107,7 @@ const ValidatingBusinessIdea = () => (
                 </TitleBox>
 
                 <GridSectionList>
-                    <TextBlockWithImage SvgImage={Icon1} imageBackgroundColor={color.yellow2}
+                    <TextBlockWithImage className="containerMargin" SvgImage={Icon1} imageBackgroundColor={color.yellow2}
                                         imageShadowColor={color.yellow2}>
                         <Heading size={4}>
                             Identify your travel agency business’s unique selling points (USPs)
@@ -119,7 +119,7 @@ const ValidatingBusinessIdea = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={Icon2} imageBackgroundColor={color.blue2}
+                    <TextBlockWithImage className="containerMargin" SvgImage={Icon2} imageBackgroundColor={color.blue2}
                                         imageShadowColor={color.blue2}>
                         <Heading size={4}>
                             Look at who your travel competitors
@@ -133,7 +133,7 @@ const ValidatingBusinessIdea = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={Icon3} imageBackgroundColor={color.babyblue2}
+                    <TextBlockWithImage className="containerMargin" SvgImage={Icon3} imageBackgroundColor={color.babyblue2}
                                         imageShadowColor={color.babyblue2}>
                         <Heading size={4}>
                             Understand your travel and tourism market
@@ -145,7 +145,7 @@ const ValidatingBusinessIdea = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={Icon4} imageBackgroundColor={color.green2}
+                    <TextBlockWithImage className="containerMargin" SvgImage={Icon4} imageBackgroundColor={color.green2}
                                         imageShadowColor={color.green2}>
                         <Heading size={4}>
                             Talk to clients
@@ -156,7 +156,7 @@ const ValidatingBusinessIdea = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={Icon5} imageBackgroundColor={color.orange2}
+                    <TextBlockWithImage className="containerMargin" SvgImage={Icon5} imageBackgroundColor={color.orange2}
                                         imageShadowColor={color.orange2}>
                         <Heading size={4}>
                             Get involved with business communities and discussion groups

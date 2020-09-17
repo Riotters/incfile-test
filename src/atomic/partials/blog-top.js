@@ -1,12 +1,12 @@
-import React from "react"
-import styled from "styled-components"
-import Image from "../../components/image_nobase64"
-import Container from "../../atomic/container"
-import { color } from "../../atomic/atoms/styles/colors"
-import OvalSVG from "../../images/icons/oval-blue-mini.inline.svg"
-import Oval2SVG from "../../images/icons/oval-blue-small.inline.svg"
-import Oval3SVG from "../../images/icons/oval-blue-medium.inline.svg"
-import VisibilitySensor from "../../components/VisibilitySensor"
+import React from "react";
+import styled from "styled-components";
+import Image from "../../components/image_nobase64";
+import Container from "../../atomic/container";
+import { color } from "../../atomic/atoms/styles/colors";
+import OvalSVG from "../../images/icons/oval-blue-mini.inline.svg";
+import Oval2SVG from "../../images/icons/oval-blue-small.inline.svg";
+import Oval3SVG from "../../images/icons/oval-blue-medium.inline.svg";
+import VisibilitySensor from "../../components/VisibilitySensor";
 
 const Wrapper = styled.div`
   display: flex;
@@ -27,7 +27,7 @@ const Oval = styled.div`
   top: 80px;
   right: 0;
   z-index: 1;
-`
+`;
 
 const Oval2 = styled.div`
   position: absolute;
@@ -53,7 +53,7 @@ const Oval3 = styled.div`
 const Content = styled.div`
   display: flex;
   flex-wrap: wrap;
-`
+`;
 
 const TextContainer = styled.div`
   display: flex;
@@ -74,7 +74,7 @@ const TextContainer = styled.div`
     line-height: 48px;
     padding-bottom: 24px;
 
-    @mnedia(min-width: 769px) {
+    @media (min-width: 769px) {
       text-aling: left;
       padding-bottom: 20px;
     }
@@ -83,7 +83,7 @@ const TextContainer = styled.div`
   p {
     max-width: 470px;
   }
-`
+`;
 
 const ImageContainer = styled.div`
   display: none;
@@ -104,25 +104,9 @@ const ImageContainer = styled.div`
       object-fit: contain !important;
     }
   }
-`
+`;
 
-const ButtonsContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: 576px) {
-    flex-direction: row;
-  }
-
-  a {
-    @media (max-width: 576px) {
-      margin-bottom: 15px;
-      margin-left: 0;
-    }
-  }
-`
-
-const Top = ({headline, text, imageName, imageAlt}) => (
+const Top = ({ headline, text, imageName, imageAlt }) => (
   <Wrapper>
     <VisibilitySensor partialVisibility once>
       {({ isVisible }) => (
@@ -141,15 +125,9 @@ const Top = ({headline, text, imageName, imageAlt}) => (
       <Content>
         <VisibilitySensor partialVisibility once>
           {({ isVisible }) => (
-            <TextContainer
-              className={isVisible ? "slideRight enter" : "slideRight"}
-            >
-              <h1>
-                {headline}
-              </h1>
-              <p>
-                {text}
-              </p>
+            <TextContainer className={isVisible ? "slideRight enter" : "slideRight"}>
+              <h1>{headline}</h1>
+              <p>{text}</p>
             </TextContainer>
           )}
         </VisibilitySensor>
@@ -159,6 +137,6 @@ const Top = ({headline, text, imageName, imageAlt}) => (
       </Content>
     </Container>
   </Wrapper>
-)
+);
 
-export default Top
+export default Top;

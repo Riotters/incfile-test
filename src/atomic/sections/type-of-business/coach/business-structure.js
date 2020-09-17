@@ -79,7 +79,7 @@ const CoachBusinessStructure = () => (
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
-                        style={{marginTop: "70px"}}
+                        style={{marginTop: "40px"}}
                         circleShadowY={40}
                         circleShadowBlure={80}
                         width={100}
@@ -109,7 +109,7 @@ const CoachBusinessStructure = () => (
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
-                        style={{marginTop: "70px"}}
+                        style={{marginTop: "40px"}}
                         circleShadowY={40}
                         circleShadowBlure={80}
                         width={100}
@@ -139,7 +139,7 @@ const CoachBusinessStructure = () => (
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
-                        style={{marginTop: "70px"}}
+                        style={{marginTop: "40px"}}
                         circleShadowY={40}
                         circleShadowBlure={80}
                         width={100}
@@ -169,7 +169,7 @@ const CoachBusinessStructure = () => (
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
-                        style={{marginTop: "70px"}}
+                        style={{marginTop: "40px"}}
                         circleShadowY={40}
                         circleShadowBlure={80}
                         width={100}
@@ -198,7 +198,7 @@ const CoachBusinessStructure = () => (
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
-                        style={{marginTop: "70px"}}
+                        style={{marginTop: "40px"}}
                         circleShadowY={40}
                         circleShadowBlure={80}
                         width={100}
@@ -219,13 +219,13 @@ const CoachBusinessStructure = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <Paragraph big style={{paddingTop: "120px"}} mixed>
+                    <Paragraph big style={{paddingTop: "48px", paddingBottom: 0}} mixed={true}>
                         For more information on the advantages and disadvantages of different types of businesses, <Link
                         to="/">please see our in-depth guide</Link>. If you’ve still got questions, <Link
                         to="/">we’ve answered them to help you choose the right business structure</Link> for
                         your coaching business.
                     </Paragraph>
-                    <Paragraph big mixed>
+                    <Paragraph big style={{paddingTop: "48px", paddingBottom: 0}} mixed={true}>
                         In most cases, our recommendation for a boutique business business would
                         be to create an LLC. We’ve <Link to="/">got a complete guide</Link> to everything
                         you need to do. <Link to="/">LLC formation does vary from state to state</Link>,

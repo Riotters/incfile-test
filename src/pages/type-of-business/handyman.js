@@ -563,7 +563,7 @@ const Handyman = () => (
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
-                            style={{marginTop: "70px"}}
+                            style={{marginTop: "40px"}}
                             circleShadowY={40}
                             circleShadowBlure={80}
                             width={100}
@@ -595,7 +595,7 @@ const Handyman = () => (
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
-                            style={{marginTop: "70px"}}
+                            style={{marginTop: "40px"}}
                             circleShadowY={40}
                             circleShadowBlure={80}
                             width={100}
@@ -626,7 +626,7 @@ const Handyman = () => (
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
-                            style={{marginTop: "70px"}}
+                            style={{marginTop: "40px"}}
                             circleShadowY={40}
                             circleShadowBlure={80}
                             width={100}
@@ -657,7 +657,7 @@ const Handyman = () => (
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
-                            style={{marginTop: "70px"}}
+                            style={{marginTop: "40px"}}
                             circleShadowY={40}
                             circleShadowBlure={80}
                             width={100}
@@ -687,7 +687,7 @@ const Handyman = () => (
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
-                            style={{marginTop: "70px"}}
+                            style={{marginTop: "40px"}}
                             circleShadowY={40}
                             circleShadowBlure={80}
                             width={100}
@@ -709,12 +709,12 @@ const Handyman = () => (
                             </Paragraph>
                         </TextBlockWithImage>
 
-                        <Paragraph big style={{paddingTop: "120px"}} mixed={true}>
+                        <Paragraph big style={{paddingTop: "48px", paddingBottom: 0}} mixed={true}>
                             For more information on the advantages and disadvantages of different types of businesses,
                             <Link to="/">please see our in-depth guide</Link>. If you’ve still got questions, <Link to="/">we’ve answered them to help
                             you choose the right business structure</Link> for your handyman business.
                         </Paragraph>
-                        <Paragraph big mixed={true}>
+                        <Paragraph big style={{paddingTop: "48px", paddingBottom: 0}} mixed={true}>
                             In most cases, our recommendation for your handyman business would be to create an LLC.
                             We’ve <Link to="/">got a complete guide</Link> to everything you need to do. <Link to="/">LLC formation does vary from state
                             to state</Link>, but we’ve got you covered, wherever you are.
@@ -739,7 +739,7 @@ const Handyman = () => (
 
         <Links/>
 
-        <Conclusion to="/" buttonTitle="Start your Etsy Business with us, today">
+        <Conclusion to="/" buttonTitle="Start your Handyman Business with us, today">
             <Heading size={3} style={{fontSize: "40px"}}>Conclusion</Heading>
             <Paragraph big>
                 With the right attitude, skills and approach, you can build a very successful home handyman business.

@@ -1,10 +1,10 @@
-import React from "react"
-import styled from "styled-components"
-import Image from "../image_nobase64"
-import Container from "../container"
-import OvalSVG from "../../images/oval.inline.svg"
-import Button from "../button"
-import VisibilitySensor from "../VisibilitySensor"
+import React from "react";
+import styled from "styled-components";
+import Image from "../image_nobase64";
+import Container from "../container";
+import OvalSVG from "../../images/oval.inline.svg";
+import Button from "../button";
+import VisibilitySensor from "../VisibilitySensor";
 
 const Wrapper = styled.div`
   padding-top: 50px;
@@ -47,12 +47,12 @@ const Oval = styled.div`
       transform: matrix(1, 0, 0, -1, -115, 777);
     }
   }
-`
+`;
 
 const Content = styled.div`
   display: flex;
   flex-wrap: wrap;
-`
+`;
 
 const TextContainer = styled.div`
   display: flex;
@@ -72,7 +72,7 @@ const TextContainer = styled.div`
     text-aling: center;
     padding-bottom: 40px;
 
-    @mnedia(min-width: 769px) {
+    @mnedia (min-width: 769px) {
       text-aling: left;
       padding-bottom: 20px;
     }
@@ -82,7 +82,7 @@ const TextContainer = styled.div`
     max-width: 470px;
     margin-bottom: 33px;
   }
-`
+`;
 
 const ImageContainer = styled.div`
   display: none;
@@ -101,7 +101,7 @@ const ImageContainer = styled.div`
       object-fit: contain !important;
     }
   }
-`
+`;
 
 const ButtonsContainer = styled.div`
   display: flex;
@@ -117,9 +117,9 @@ const ButtonsContainer = styled.div`
       margin-left: 0;
     }
   }
-`
+`;
 
-const Top = ({headline, text, imageName, imageAlt}) => (
+const Top = ({ headline, text, imageName, imageAlt }) => (
   <Wrapper>
     <VisibilitySensor partialVisibility once>
       {({ isVisible }) => (
@@ -132,31 +132,14 @@ const Top = ({headline, text, imageName, imageAlt}) => (
       <Content>
         <VisibilitySensor partialVisibility once>
           {({ isVisible }) => (
-            <TextContainer
-              className={isVisible ? "slideRight enter" : "slideRight"}
-            >
-              <h1>
-                {headline}
-              </h1>
-              <p>
-                {text}
-              </p>
+            <TextContainer className={isVisible ? "slideRight enter" : "slideRight"}>
+              <h1>{headline}</h1>
+              <p>{text}</p>
               <ButtonsContainer>
-                <Button
-                  theme="primary56"
-                  width="200px"
-                  arrow="yes"
-                  padding="0"
-                >
+                <Button theme="primary56" width="200px" arrow="yes" padding="0">
                   Start Now
                 </Button>
-                <Button
-                  arrow2="yes"
-                  height="56px"
-                  width="200px"
-                  padding="0"
-                  margin="0 0 0 16px"
-                >
+                <Button arrow2="yes" height="56px" width="200px" padding="0" margin="0 0 0 16px">
                   How it works
                 </Button>
               </ButtonsContainer>
@@ -169,6 +152,6 @@ const Top = ({headline, text, imageName, imageAlt}) => (
       </Content>
     </Container>
   </Wrapper>
-)
+);
 
-export default Top
+export default Top;

@@ -85,6 +85,8 @@ const IndexPage = () => (
         <Link to="/other/form-an-llc">Form An LLC (WIP)</Link>
         <Link to="/other/start-an-llc">Start An LLC (WIP)</Link>
         <Link to="/other/general-research-topics">General Research Topics (WIP)</Link>
+        <Link to="/other/incfile-coupon-promo-code">Incfile Coupon Promo Code (WIP)</Link>
+        <Link to="/other/new-york-entity-search">New York Entity Search (WIP)</Link>
         <Link to="/404">404</Link>
         <Link to="/503">503</Link>
         <h2>Blog</h2>

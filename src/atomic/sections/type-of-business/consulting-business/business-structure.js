@@ -73,7 +73,7 @@ const BusinessStructure = () => <OrangeContainer>
                     imageShadowOpacity={0.5}
                     boxShadow={false}
                     paddingLeft={0}
-                    style={{marginTop: "70px"}}
+                    style={{marginTop: "40px"}}
                     circleShadowY={40}
                     circleShadowBlure={80}
                     width={100}
@@ -104,7 +104,7 @@ const BusinessStructure = () => <OrangeContainer>
                     imageShadowOpacity={0.5}
                     boxShadow={false}
                     paddingLeft={0}
-                    style={{marginTop: "70px"}}
+                    style={{marginTop: "40px"}}
                     circleShadowY={40}
                     circleShadowBlure={80}
                     width={100}
@@ -133,7 +133,7 @@ const BusinessStructure = () => <OrangeContainer>
                     imageShadowOpacity={0.5}
                     boxShadow={false}
                     paddingLeft={0}
-                    style={{marginTop: "70px"}}
+                    style={{marginTop: "40px"}}
                     circleShadowY={40}
                     circleShadowBlure={80}
                     width={100}
@@ -164,7 +164,7 @@ const BusinessStructure = () => <OrangeContainer>
                     imageShadowOpacity={0.5}
                     boxShadow={false}
                     paddingLeft={0}
-                    style={{marginTop: "70px"}}
+                    style={{marginTop: "40px"}}
                     circleShadowY={40}
                     circleShadowBlure={80}
                     width={100}
@@ -194,7 +194,7 @@ const BusinessStructure = () => <OrangeContainer>
                     imageShadowOpacity={0.5}
                     boxShadow={false}
                     paddingLeft={0}
-                    style={{marginTop: "70px"}}
+                    style={{marginTop: "40px"}}
                     circleShadowY={40}
                     circleShadowBlure={80}
                     width={100}
@@ -216,18 +216,18 @@ const BusinessStructure = () => <OrangeContainer>
                     </Paragraph>
                 </TextBlockWithImage>
 
-                <Paragraph big style={{paddingTop: "120px"}} mixed={true}>
+                <Paragraph big style={{paddingTop: "48px", paddingBottom: 0}} mixed={true}>
                     For most smaller consultant businesses, an LLC is the ideal business setup. It provides you with
                     liability protection, is simple to administer and has some tax advantages over other business
                     types. Additionally, if another consulting firm ever subcontracts to you (which does happen),
                     they will definitely expect you to have a formal legal structure in place.
                 </Paragraph>
-                <Paragraph big mixed={true}>
+                <Paragraph big style={{paddingTop: "48px", paddingBottom: 0}} mixed={true}>
                     For more information on the advantages and disadvantages of different types of businesses, <Link
                     to="/">please see our in-depth guide</Link>. If you’ve still got questions, <Link to="/">we’ve
                     answered them to help you choose the right business structure.</Link>
                 </Paragraph>
-                <Paragraph big mixed={true}>
+                <Paragraph big style={{paddingTop: "48px", paddingBottom: 0}} mixed={true}>
                     We’ve <Link to="/">got a complete guide to everything you need to do to set up an LLC</Link>, and we
                     can start one
                     for your consulting business today. <Link to="/">LLC formation does vary from state to state</Link>,

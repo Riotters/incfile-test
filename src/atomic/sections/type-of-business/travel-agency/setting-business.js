@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "../../../container";
-import TextCenterLayout from "../../../../components/partials/blocks/heading-center";
+import TextCenterLayout from "../../../partials/heading-center";
 import TopImageBox from "../../../../components/top-image-box";
 import {color} from "../../../../components/styles/colors";
 import styled from "styled-components";
@@ -18,12 +18,15 @@ const SettingBusiness = () => (
             <OvalSvg/>
         </Oval2>
 
+        <TextCenterLayout
+            headline="Setting up Your Travel Agency Business Operations"
+            headlineWidth={770}
+            textWidth={770}
+            text="Once you've legally created your travel agency business, you’ll need to get some other things in place."
+        />
+
         <Container>
-            <TextCenterLayout
-                headline="Setting up Your Travel Agency Business Operations"
-                headlineWidth="700"
-                text="Once you've legally created your travel agency business, you’ll need to get some other things in place."
-            />
+
             <ImageBoxes>
                 <TopImageBox image="location" color={color.red3}>
                     <h4>Location of Your Travel Agency</h4>
@@ -111,7 +114,6 @@ const ImageBoxes = styled.div`
   }
   
   @media (min-width: 970px) {
-    
     margin: 0 auto;
   }
 `;

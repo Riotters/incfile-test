@@ -16,19 +16,20 @@ const TypeOfBusiness = () => (
         <Oval>
             <OvalSvg/>
         </Oval>
-        <Container>
-            <Service>
-                <ContentCenter contentWidth={770}>
-                    <TextCenterLayout headlineWidth={770} textWidth={770}
-                                      headline="What Type of Construction Business Should You Start?"
-                                      text="There are several different types of construction business that you can start. Here are some of the more popular options."/>
 
-                    <Paragraph big>
-                        There are dozens of other niches including using reclaimed materials, industrial construction,
-                        commercial construction, constructing vacation rentals and much more.
-                    </Paragraph>
-                </ContentCenter>
+        <Service>
+            <ContentCenter contentWidth={770}>
+                <TextCenterLayout headlineWidth={770} textWidth={770}
+                                  headline="What Type of Construction Business Should You Start?"
+                                  text="There are several different types of construction business that you can start. Here are some of the more popular options."/>
 
+                <Paragraph big>
+                    There are dozens of other niches including using reclaimed materials, industrial construction,
+                    commercial construction, constructing vacation rentals and much more.
+                </Paragraph>
+            </ContentCenter>
+
+            <Container>
                 <AdventagesBox>
                     {adventages.items.map(item => (
                         <Adventages
@@ -46,8 +47,9 @@ const TypeOfBusiness = () => (
                         />
                     ))}
                 </AdventagesBox>
-            </Service>
-        </Container>
+            </Container>
+        </Service>
+
     </Wrapper>
 );
 
@@ -68,7 +70,7 @@ const AdventagesBox = styled.div`
   width: 100%;
   max-width: 1000px;
   margin: 72px auto 0;
-  position: relative; 
+  position: relative;
 `;
 
 const CurveWrapper = styled.div`

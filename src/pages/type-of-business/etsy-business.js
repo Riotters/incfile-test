@@ -583,7 +583,7 @@ const EtsyBusiness = () => (
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
-                            style={{marginTop: "70px"}}
+                            style={{marginTop: "40px"}}
                             circleShadowY={40}
                             circleShadowBlure={80}
                             width={100}
@@ -614,7 +614,7 @@ const EtsyBusiness = () => (
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
-                            style={{marginTop: "70px"}}
+                            style={{marginTop: "40px"}}
                             circleShadowY={40}
                             circleShadowBlure={80}
                             width={100}
@@ -645,7 +645,7 @@ const EtsyBusiness = () => (
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
-                            style={{marginTop: "70px"}}
+                            style={{marginTop: "40px"}}
                             circleShadowY={40}
                             circleShadowBlure={80}
                             width={100}
@@ -676,7 +676,7 @@ const EtsyBusiness = () => (
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
-                            style={{marginTop: "70px"}}
+                            style={{marginTop: "40px"}}
                             circleShadowY={40}
                             circleShadowBlure={80}
                             width={100}
@@ -706,7 +706,7 @@ const EtsyBusiness = () => (
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
-                            style={{marginTop: "70px"}}
+                            style={{marginTop: "40px"}}
                             circleShadowY={40}
                             circleShadowBlure={80}
                             width={100}
@@ -728,13 +728,13 @@ const EtsyBusiness = () => (
                             </Paragraph>
                         </TextBlockWithImage>
 
-                        <Paragraph big style={{paddingTop: "120px"}} mixed={true}>
+                        <Paragraph big style={{paddingTop: "48px", paddingBottom: 0}} mixed={true}>
                             If you've still got questions about different types of business entities, check out our
                             <Link to="/">in-depth guide</Link>, or hear our answers to the <Link
                             to="/">most common questions</Link> about LLCs vs.
                             corporations.
                         </Paragraph>
-                        <Paragraph big mixed={true}>
+                        <Paragraph big style={{paddingTop: "48px", paddingBottom: 0}} mixed={true}>
                             If you're ready to start your Etsy LLC, you can check out our <Link to="/">LLC formation guide for your
                             state</Link>, or have Incfile take care of all the paperwork for you.
                         </Paragraph>

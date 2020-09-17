@@ -45,39 +45,14 @@ const GridSectionList = styled.div`
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
+    max-width: 970px;
     
     > div {
         margin-bottom: 70px;
     }
     
     @media (min-width: 970px) {
-        width: 970px;
         margin: 120px auto 0;
-    }
-`;
-
-const TextBorderedSection = styled.div`
-    width: 100%;
-    padding-top: 100px;
-    
-    @media (min-width: 670px) {
-        width: 670px;
-        margin: 0 auto;
-    }
-    
-    h3{
-        color: #1d1d1d;
-        font-size: 40px;
-        text-align: center;
-        margin-bottom: 24px;
-    }
-`;
-
-const TextBorderedList = styled.div`
-    margin-top: 80px;
-    
-    >div {
-        margin-bottom: 8px;
     }
 `;
 
@@ -114,7 +89,7 @@ const ValidatingBusinessIdea = () => (
                 </TitleBox>
 
                 <GridSectionList>
-                    <TextBlockWithImage SvgImage={OkIcon} imageBackgroundColor={color.babyblue2}
+                    <TextBlockWithImage className="containerMargin" SvgImage={OkIcon} imageBackgroundColor={color.babyblue2}
                                         imageShadowColor={color.babyblue2}>
                         <Heading size={4}>
                             Identify your moving business’ unique selling points (USPs)
@@ -124,7 +99,7 @@ const ValidatingBusinessIdea = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={OkIcon} imageBackgroundColor={color.green2}
+                    <TextBlockWithImage className="containerMargin" SvgImage={OkIcon} imageBackgroundColor={color.green2}
                                         imageShadowColor={color.green2}>
                         <Heading size={4}>
                             Look at who your competitors are in
@@ -135,7 +110,7 @@ const ValidatingBusinessIdea = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={OkIcon} imageBackgroundColor={color.orange2}
+                    <TextBlockWithImage className="containerMargin" SvgImage={OkIcon} imageBackgroundColor={color.orange2}
                                         imageShadowColor={color.orange2}>
                         <Heading size={4}>
                             Understand your market
@@ -145,7 +120,7 @@ const ValidatingBusinessIdea = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={OkIcon} imageBackgroundColor={color.purple2}
+                    <TextBlockWithImage className="containerMargin" SvgImage={OkIcon} imageBackgroundColor={color.purple2}
                                         imageShadowColor={color.purple2}>
                         <Heading size={4}>
                             Talk to clients
@@ -155,7 +130,7 @@ const ValidatingBusinessIdea = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={OkIcon} imageBackgroundColor={color.red2}
+                    <TextBlockWithImage className="containerMargin" SvgImage={OkIcon} imageBackgroundColor={color.red2}
                                         imageShadowColor={color.purple2}>
                         <Heading size={4}>
                             Get involved with business communities and discussion groups

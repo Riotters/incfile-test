@@ -73,7 +73,7 @@ const BusinessStructure = () => (
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
-                        style={{marginTop: "70px"}}
+                        style={{marginTop: "40px"}}
                         circleShadowY={40}
                         circleShadowBlure={80}
                         width={100}
@@ -104,7 +104,7 @@ const BusinessStructure = () => (
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
-                        style={{marginTop: "70px"}}
+                        style={{marginTop: "40px"}}
                         circleShadowY={40}
                         circleShadowBlure={80}
                         width={100}
@@ -135,7 +135,7 @@ const BusinessStructure = () => (
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
-                        style={{marginTop: "70px"}}
+                        style={{marginTop: "40px"}}
                         circleShadowY={40}
                         circleShadowBlure={80}
                         width={100}
@@ -166,7 +166,7 @@ const BusinessStructure = () => (
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
-                        style={{marginTop: "70px"}}
+                        style={{marginTop: "40px"}}
                         circleShadowY={40}
                         circleShadowBlure={80}
                         width={100}
@@ -196,7 +196,7 @@ const BusinessStructure = () => (
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
-                        style={{marginTop: "70px"}}
+                        style={{marginTop: "40px"}}
                         circleShadowY={40}
                         circleShadowBlure={80}
                         width={100}
@@ -218,12 +218,12 @@ const BusinessStructure = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <Paragraph big style={{paddingTop: "120px"}} mixed={true}>
+                    <Paragraph big style={{paddingTop: "48px", paddingBottom: 0}} mixed={true}>
                         For more information on the advantages and disadvantages of different types of businesses,
                         please <Link to="/">see our in-depth guide</Link>. If you’ve still got questions, <Link to="/">we’ve answered them to help you
                         choose the right business structure</Link>.
                     </Paragraph>
-                    <Paragraph big mixed={true}>
+                    <Paragraph big style={{paddingTop: "48px", paddingBottom: 0}} mixed={true}>
                         In almost every case, the right business entity for a restaurant is going
                         to be an LLC. It provides you with liability protection, is easy to set up and run, has low
                         administrative overhead and can be tax advantageous. We’ve <Link to="/">got a complete guide</Link> to everything

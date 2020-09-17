@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "../../../container";
-import TextCenterLayout from "../../../../components/partials/blocks/heading-center";
+import TextCenterLayout from "../../../partials/heading-center";
 import TopImageBox from "../../../../components/top-image-box";
 import {color} from "../../../../components/styles/colors";
 import styled from "styled-components";
@@ -13,12 +13,15 @@ const SettingBusiness = () => (
             <GreenOval/>
         </Oval>
 
+        <TextCenterLayout
+            headline="Setting up Your Teen Business and Business Operations"
+            headlineWidth={770}
+            textWidth={770}
+            text="Once you've legally created your teen business, you’ll need to get some other things in place."
+        />
+
         <Container>
-            <TextCenterLayout
-                headline="Setting up Your Teen Business and Business Operations"
-                headlineWidth="700"
-                text="Once you've legally created your teen business, you’ll need to get some other things in place."
-            />
+
             <ImageBoxes>
 
                 <TopImageBox image="display-ads" color={color.purple3}>
@@ -96,22 +99,15 @@ const ImageBoxes = styled.div`
   grid-gap: 30px;
   padding-top: 112px;
   width: 100%;
-
+  max-width: 970px;
+  
   @media(min-width: 769px) {
     grid-template-columns: 1fr 1fr;
   }
   
   @media (min-width: 970px) {
-    width: 970px;
     margin: 0 auto;
   }
-`;
-
-const GreenCurve = styled.div`
-    position: absolute;
-    right: -115px;
-    bottom: -122px;
-    width: 115px;
 `;
 
 const Oval = styled.div`

@@ -21,6 +21,7 @@ const SettingBusiness = () => (
         <TextCenterLayout
             headline="Setting up Your Boutique Hotel and Business Operations"
             headlineWidth={700}
+            textWidth={770}
             text="Once you've legally created your bed and breakfast business, you’ll need to get some other things in place."
         />
 

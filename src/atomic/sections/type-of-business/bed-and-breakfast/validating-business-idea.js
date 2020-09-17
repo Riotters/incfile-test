@@ -44,7 +44,7 @@ const TitleBox = styled.div`
 `;
 
 const GridSectionList = styled.div`
-    display: flex;
+  display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
@@ -55,7 +55,7 @@ const GridSectionList = styled.div`
     }
     
     @media (min-width: 1024px) {
-        margin: 0px auto;
+        margin: 120px auto 0;
     }
 `;
 

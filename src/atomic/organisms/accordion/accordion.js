@@ -2,12 +2,12 @@ import React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import parse from 'html-react-parser';
+import parse from "html-react-parser";
 import { Tabs, useTabState, usePanelState } from "@bumaga/tabs";
 
-import ListWithDot from '../../states-llc/list-with-dot';
+import ListWithDot from "../../states-llc/list-with-dot";
 import { color } from "../../atoms/styles/colors";
-import ArrowLink from '../../../components/arrow-link';
+import ArrowLink from "../../../components/arrow-link";
 import { Paragraph } from "../../atoms/typography/paragraph";
 import ArrowSVG from "../../../images/arrow-circle.inline.svg";
 import CurveSVG from "../../../images/orange-curve.inline.svg";
@@ -42,7 +42,7 @@ const Curve = styled.div`
 
   svg {
     path {
-      fill: ${props => props.curveColor ? props.curveColor : ""};
+      fill: ${(props) => (props.curveColor ? props.curveColor : "")};
     }
   }
 `;
@@ -212,51 +212,51 @@ const Accordion = ({ content, curve, curveRight, curveRightBottom, curveLeft, cu
             <TabsWrapper>
               {content.items.map((item) => (
                 <TabBox>
-                    <Tab>
-                        <Icon>
-                            <ArrowSVG />
-                        </Icon>
-                        <Content>
-                            <span>{item.question}</span>
-                        </Content>
-                    </Tab>
+                  <Tab>
+                    <Icon>
+                      <ArrowSVG />
+                    </Icon>
+                    <Content>
+                      <span>{item.question}</span>
+                    </Content>
+                  </Tab>
                   <Panel>
-                        <PanelWrapper>
-                            {typeof item.answer === "string" ? <p>{parse(item.answer)}</p> : null}
-                            {typeof item.answer === "object" ? <p>{item.answer.map(el => (el.url ? <Link to={el.url}>{` ${parse(el.text)} `}</Link> : el.text))}</p> : null}
-                            
-                            {item.list && (
-                                <ul>
-                                    {item.list.map((listitem) => (
-                                        <li>{parse(listitem)}</li>
-                                    ))}
-                                </ul>
-                            )}
-                      
-                            {item.answer2 && item.answer2.map((e, i) => (
-                                <div>                                                                    
-                                    {e.type === 'paragraph' && 
-                                        <Paragraph mixed={true}>{parse(e.content)}</Paragraph>
-                                    }
+                    <PanelWrapper>
+                      {typeof item.answer === "string" ? <p>{parse(item.answer)}</p> : null}
+                      {typeof item.answer === "object" ? <p>{item.answer.map((el) => (el.url ? <Link to={el.url}>{` ${parse(el.text)} `}</Link> : el.text))}</p> : null}
 
-                                    {e.type === 'arrow-links' && e.content.map(link => (
-                                        <ArrowLink url={link.url} style={link.style}>{link.text}</ArrowLink>
-                                    ))}
+                      {item.list && (
+                        <ul>
+                          {item.list.map((listitem) => (
+                            <li>{parse(listitem)}</li>
+                          ))}
+                        </ul>
+                      )}
 
-                                    {e.type === 'list-dot-without-bg' &&
-                                        <ListWithDot color={e.color} content={e.content} />
-                                    }
+                      {item.answer2 &&
+                        item.answer2.map((e, i) => (
+                          <div>
+                            {e.type === "paragraph" && <Paragraph mixed={true}>{parse(e.content)}</Paragraph>}
 
-                                    {e.type === 'button' && 
-                                        <Button content={e.content} theme={e.theme} arrow width="350px" margin="16px 0 0 0" marginMD="42px 0 42px 0" />
-                                    }
-                                </div>
-                            ))}      
-                      
-                            {item.arrowLink && (
-                                <ArrowLink url={item.arrowLink.url} style={item.arrowLink.styles}>{item.arrowLink.text}</ArrowLink>
-                            )}  
-                        </PanelWrapper>
+                            {e.type === "arrow-links" &&
+                              e.content.map((link) => (
+                                <ArrowLink url={link.url} style={link.style}>
+                                  {link.text}
+                                </ArrowLink>
+                              ))}
+
+                            {e.type === "list-dot-without-bg" && <ListWithDot color={e.color} content={e.content} />}
+
+                            {e.type === "button" && <Button content={e.content} theme={e.theme} arrow width="350px" margin="16px 0 0 0" marginMD="42px 0 42px 0" />}
+                          </div>
+                        ))}
+
+                      {item.arrowLink && (
+                        <ArrowLink url={item.arrowLink.url} style={item.arrowLink.styles}>
+                          {item.arrowLink.text}
+                        </ArrowLink>
+                      )}
+                    </PanelWrapper>
                   </Panel>
                 </TabBox>
               ))}
