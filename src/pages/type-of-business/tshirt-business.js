@@ -360,7 +360,7 @@ const TshirtBusiness = () => (
             </Oval2>
             <Container>
                 <CenterBox>
-                    <TextCenterLayout headline="A Plan for Starting Your T-Shirt Business"/>
+                    <TextCenterLayout headlineWidth={770} headline="A Plan for Starting Your T-Shirt Business"/>
                     <Paragraph big>
                         Before you start your business, there are a few key areas you need to focus on. You will need to
                         establish whether there’s a demand for your T-shirt business services, look at potential
@@ -387,7 +387,7 @@ const TshirtBusiness = () => (
                 </CenterBox>
 
                 <GridSectionList>
-                    <TextBlockWithImage SvgImage={IdentifyIcon} imageBackgroundColor={color.babyblue2}
+                    <TextBlockWithImage className="containerMargin" SvgImage={IdentifyIcon} imageBackgroundColor={color.babyblue2}
                                         imageShadowColor={color.babyblue2}>
                         <Heading size={4}>
                             Identify your business’s unique selling points (USPs)
@@ -399,7 +399,7 @@ const TshirtBusiness = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={LookIcon} imageBackgroundColor={color.green2}
+                    <TextBlockWithImage className="containerMargin" SvgImage={LookIcon} imageBackgroundColor={color.green2}
                                         imageShadowColor={color.green2}>
                         <Heading size={4}>
                             Look at who your competitors are in the space
@@ -410,7 +410,7 @@ const TshirtBusiness = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={ValidateIcon} imageBackgroundColor={color.orange2}
+                    <TextBlockWithImage className="containerMargin" SvgImage={ValidateIcon} imageBackgroundColor={color.orange2}
                                         imageShadowColor={color.orange2}>
                         <Heading size={4}>
                             Validate your products and services
@@ -420,7 +420,7 @@ const TshirtBusiness = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={TalkIcon} imageBackgroundColor={color.purple2}
+                    <TextBlockWithImage className="containerMargin" SvgImage={TalkIcon} imageBackgroundColor={color.purple2}
                                         imageShadowColor={color.purple2}>
                         <Heading size={4}>
                             Talk to clients
@@ -430,7 +430,7 @@ const TshirtBusiness = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={InvolvedIcon} imageBackgroundColor={color.red2}
+                    <TextBlockWithImage className="containerMargin" SvgImage={InvolvedIcon} imageBackgroundColor={color.red2}
                                         imageShadowColor={color.red2}>
                         <Heading size={4}>
                             See if there are any market research reports for T-shirt businesses
@@ -441,7 +441,7 @@ const TshirtBusiness = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={MarketIcon} imageBackgroundColor={color.yellow2}
+                    <TextBlockWithImage className="containerMargin" SvgImage={MarketIcon} imageBackgroundColor={color.yellow2}
                                         imageShadowColor={color.yellow2}>
                         <Heading size={4}>
                             See if there are any market research reports for T-shirt businesses
@@ -581,7 +581,7 @@ const TshirtBusiness = () => (
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
-                            style={{marginTop: "70px"}}
+                            style={{marginTop: "40px"}}
                             circleShadowY={40}
                             circleShadowBlure={80}
                             width={100}
@@ -612,7 +612,7 @@ const TshirtBusiness = () => (
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
-                            style={{marginTop: "70px"}}
+                            style={{marginTop: "40px"}}
                             circleShadowY={40}
                             circleShadowBlure={80}
                             width={100}
@@ -643,7 +643,7 @@ const TshirtBusiness = () => (
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
-                            style={{marginTop: "70px"}}
+                            style={{marginTop: "40px"}}
                             circleShadowY={40}
                             circleShadowBlure={80}
                             width={100}
@@ -674,7 +674,7 @@ const TshirtBusiness = () => (
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
-                            style={{marginTop: "70px"}}
+                            style={{marginTop: "40px"}}
                             circleShadowY={40}
                             circleShadowBlure={80}
                             width={100}
@@ -704,7 +704,7 @@ const TshirtBusiness = () => (
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
-                            style={{marginTop: "70px"}}
+                            style={{marginTop: "40px"}}
                             circleShadowY={40}
                             circleShadowBlure={80}
                             width={100}
@@ -726,12 +726,12 @@ const TshirtBusiness = () => (
                             </Paragraph>
                         </TextBlockWithImage>
 
-                        <Paragraph big style={{paddingTop: "120px"}} mixed={true}>
+                        <Paragraph big style={{paddingTop: "48px", paddingBottom: 0}} mixed={true}>
                             For more information on the advantages and disadvantages of different types of businesses,
                             please <Link to="/">see our in-depth guide</Link> on business entities. If you still have questions, <Link to="/">we’ve
                             answered them to help you choose the right business structure</Link>.
                         </Paragraph>
-                        <Paragraph big mixed={true}>
+                        <Paragraph big style={{paddingTop: "48px", paddingBottom: 0}} mixed={true}>
                             In most cases our recommendation would be to create an LLC. We have a <Link to="/">complete guide to
                             everything you need to do</Link>, and we can set one up for your T-shirt business. <Link to="/">LLC formation
                             does vary from state to state</Link>, but we’ve got you covered, wherever you are.

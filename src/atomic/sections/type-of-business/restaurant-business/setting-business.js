@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "../../../container";
-import TextCenterLayout from "../../../../components/partials/blocks/heading-center";
+import TextCenterLayout from "../../../partials/heading-center";
 import TopImageBox from "../../../../components/top-image-box";
 import {color} from "../../../../components/styles/colors";
 import styled from "styled-components";
@@ -14,12 +14,15 @@ const SettingBusiness = () => (
             <GreenOval/>
         </Oval>
 
+        <TextCenterLayout
+            headline="Set up & Maintain Your Restaurant Business"
+            headlineWidth={770}
+            textWidth={770}
+            text="Once you've legally created your restaurant business, you’ll need to get some other things in place."
+        />
+
         <Container>
-            <TextCenterLayout
-                headline="Set up & Maintain Your Restaurant Business"
-                headlineWidth="700"
-                text="Once you've legally created your restaurant business, you’ll need to get some other things in place."
-            />
+
             <ImageBoxes>
 
                 <TopImageBox image="location" color={color.red3}>

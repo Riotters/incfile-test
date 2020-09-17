@@ -74,7 +74,7 @@ const BusinessStructure = () => (
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
-                        style={{marginTop: "70px"}}
+                        style={{marginTop: "40px"}}
                         circleShadowY={40}
                         circleShadowBlure={80}
                         width={100}
@@ -105,7 +105,7 @@ const BusinessStructure = () => (
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
-                        style={{marginTop: "70px"}}
+                        style={{marginTop: "40px"}}
                         circleShadowY={40}
                         circleShadowBlure={80}
                         width={100}
@@ -136,7 +136,7 @@ const BusinessStructure = () => (
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
-                        style={{marginTop: "70px"}}
+                        style={{marginTop: "40px"}}
                         circleShadowY={40}
                         circleShadowBlure={80}
                         width={100}
@@ -167,7 +167,7 @@ const BusinessStructure = () => (
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
-                        style={{marginTop: "70px"}}
+                        style={{marginTop: "40px"}}
                         circleShadowY={40}
                         circleShadowBlure={80}
                         width={100}
@@ -197,7 +197,7 @@ const BusinessStructure = () => (
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
-                        style={{marginTop: "70px"}}
+                        style={{marginTop: "40px"}}
                         circleShadowY={40}
                         circleShadowBlure={80}
                         width={100}
@@ -219,12 +219,12 @@ const BusinessStructure = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <Paragraph big style={{paddingTop: "120px"}} mixed={true}>
+                    <Paragraph big style={{paddingTop: "48px", paddingBottom: 0}} mixed={true}>
                         For more information on the advantages and disadvantages of different types of businesses,
                         please <Link to="/">see our in-depth guide</Link>. If you’ve still got questions, <Link to="/">we’ve answered them to help you
                         choose the right business structure</Link>.
                     </Paragraph>
-                    <Paragraph big mixed={true}>
+                    <Paragraph big style={{paddingTop: "48px", paddingBottom: 0}} mixed={true}>
                         In most cases our recommendation would be to create an LLC. We’ve <Link to="/">got
                         a complete guide to everything you need to do</Link> and we can set one up for your business. <Link to="/">LLC
                         formation does vary from state to state</Link>, but we’ve got you covered, wherever you are.

@@ -325,7 +325,7 @@ const SideBusiness = () => (
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
-                            style={{marginTop: "70px"}}
+                            style={{marginTop: "40px"}}
                             circleShadowY={40}
                             circleShadowBlure={80}
                             width={100}
@@ -356,7 +356,7 @@ const SideBusiness = () => (
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
-                            style={{marginTop: "70px"}}
+                            style={{marginTop: "40px"}}
                             circleShadowY={40}
                             circleShadowBlure={80}
                             width={100}
@@ -387,7 +387,7 @@ const SideBusiness = () => (
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
-                            style={{marginTop: "70px"}}
+                            style={{marginTop: "40px"}}
                             circleShadowY={40}
                             circleShadowBlure={80}
                             width={100}
@@ -418,7 +418,7 @@ const SideBusiness = () => (
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
-                            style={{marginTop: "70px"}}
+                            style={{marginTop: "40px"}}
                             circleShadowY={40}
                             circleShadowBlure={80}
                             width={100}
@@ -448,7 +448,7 @@ const SideBusiness = () => (
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
-                            style={{marginTop: "70px"}}
+                            style={{marginTop: "40px"}}
                             circleShadowY={40}
                             circleShadowBlure={80}
                             width={100}
@@ -471,12 +471,12 @@ const SideBusiness = () => (
                             </Paragraph>
                         </TextBlockWithImage>
 
-                        <Paragraph big style={{paddingTop: "120px"}} mixed={true}>
+                        <Paragraph big style={{paddingTop: "48px", paddingBottom: 0}} mixed={true}>
                             Our <Link to="/">in-depth guide</Link> covers more of the advantages and disadvantages
                             of different types of business entities, and you’ve still got questions, you can read our
                             answers to frequently asked questions on <Link to="/">choosing the right business structure</Link>.
                         </Paragraph>
-                        <Paragraph big mixed={true}>
+                        <Paragraph big style={{paddingTop: "48px", paddingBottom: 0}} mixed={true}>
                             In most cases, our recommendation for a side business would be to create an LLC. See our
                             <Link to="/">complete guide to creating an LLC</Link> to learn everything you need to do, or and have Incfile
                             register your business for you.

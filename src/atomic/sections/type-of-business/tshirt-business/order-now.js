@@ -8,6 +8,7 @@ import OvalRightSvg from "../../../../images/ovals/top-left-transparent-orange.i
 import Curve from "../../../../images/curve-orange.inline.svg";
 import TabScrollable from "./TabScrollable";
 import OvalSvg from "../../../../images/ovals/top-right-transparent-blue2.inline.svg";
+import {color} from "../../../atoms/styles/colors";
 
 const OrderNow = ({layout, columns}) => (
     <>
@@ -58,9 +59,15 @@ const TabScrollableWrapper = styled.div`
 `;
 
 const OrderNowWrapper = styled.section`
-    background-color: #fef6ed;
-    position: relative;
-    padding: 64px 0;
+        background-color: ${color.orange3};
+      position: relative;
+      padding-top: 64px;
+      padding-bottom: 64px;
+      
+      @media (min-width: 992px){
+        padding-top: 0;
+        padding-bottom: 0;
+      }
 `;
 
 const ButtonsBox = styled.div`

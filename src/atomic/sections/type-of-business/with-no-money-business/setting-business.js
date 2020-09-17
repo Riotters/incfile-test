@@ -16,7 +16,8 @@ const SettingBusiness = () => (
 
         <TextCenterLayout
             headline="Setting Up Your Business and Business Operations"
-            headlineWidth="700"
+            headlineWidth={770}
+            textWidth={770}
             text="Once you've legally created your business, you’ll need to get some other things in place."
         />
 
@@ -78,8 +79,7 @@ const ImageBoxes = styled.div`
     grid-template-columns: 1fr 1fr;
   }
   
-  @media (min-width: 970px) {
-    
+  @media (min-width: 970px) { 
     margin: 0 auto;
   }
 `;
