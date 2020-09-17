@@ -139,7 +139,7 @@ const LeftTabPages = ({ layout, columns, content }) => (
       {content.pages.map((page, i) => (
         <Link
           to={page.path}
-          //className={window.location.pathname === page.path ? 'active' : ''}
+          activeClassName="active"
         >
           <Icon> {icons[i]} </Icon>
           <Content>

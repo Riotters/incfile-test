@@ -97,41 +97,41 @@ const Content = styled.div`
 `;
 
 const TextContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  padding-top: 230px;
-
-  @media (min-width: 992px) {
-    width: 60%;
-    align-items: flex-start;
-  }
-
-  h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    text-align: center;
-    padding-bottom: 40px;
+    padding-top: 230px;
 
     @media (min-width: 992px) {
-      text-align: left;
-      padding-bottom: 20px;
+        width: 60%;
+        align-items: flex-start;
     }
 
-    @media (min-width: 1200px) {
-      max-width: ${(props) => (props.headlineWidth ? props.headlineWidth : "480")}px;
-    }
-  }
+    h1 {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 40px;
 
-  p {
-    margin-bottom: 33px;
-    text-align: center;
+        @media (min-width: 992px) {
+        text-align: left;
+        padding-bottom: 20px;
+        }
 
-    @media (min-width: 1200px) {
-      text-align: left;
-      max-width: ${(props) => (props.headlineWidth ? props.headlineWidth : "480")}px;
+        @media (min-width: 1200px) {
+            max-width: ${(props) => (props.headlineWidth ? props.headlineWidth : "480")}px;
+        }
     }
-  }
+
+    p {
+        margin-bottom: 33px;
+        text-align: center;
+
+        @media (min-width: 1200px) {
+        text-align: left;
+        max-width: ${(props) => (props.headlineWidth ? props.headlineWidth : "480")}px;
+        }
+    }
 `;
 
 const ImageContainer = styled.div`
@@ -148,12 +148,12 @@ const ImageContainer = styled.div`
     }
 
     @media screen and (min-width: 1450px) {
-        width: 48%;
+        width: ${(props) => (props.imageWidthLG ? props.imageWidthLG : "48")}%;
         top: 15px;
-        right: -5%;
+        right: ${(props) => (props.imageOffsetRightLG ? props.imageOffsetRightLG : "-15")}%;
     }
     .gatsby-image-wrapper {
-        width: 100%;
+        width: 100%;  
         img {
         object-fit: contain !important;
         }
@@ -164,7 +164,7 @@ const arrayMap = {
     TX: <TXMap />,
 };
 
-const Top = ({ children, imageName, imageAlt, headlineWidth, stateName }) => (
+const Top = ({ children, imageName, imageAlt, headlineWidth, imageWidthLG, imageOffsetRightLG, stateName }) => (
     <Wrapper>
     <VisibilitySensor partialVisibility once>
       {({ isVisible }) => (
@@ -173,9 +173,7 @@ const Top = ({ children, imageName, imageAlt, headlineWidth, stateName }) => (
         </IconMap>
       )}
     </VisibilitySensor>
-    <ImageContainer>
-      <Image filename={imageName} alt={imageAlt} />
-    </ImageContainer>
+    
     <Container>
       <Content>
         <VisibilitySensor partialVisibility once>
@@ -185,6 +183,10 @@ const Top = ({ children, imageName, imageAlt, headlineWidth, stateName }) => (
             </TextContainer>
           )}
         </VisibilitySensor>
+
+        <ImageContainer imageWidthLG={imageWidthLG} imageOffsetRightLG={imageOffsetRightLG}>
+          <Image filename={imageName} alt={imageAlt} />
+        </ImageContainer>
       </Content>
     </Container>
   </Wrapper>
