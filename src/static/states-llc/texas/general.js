@@ -26,7 +26,7 @@ export const tabPages = {
     },
     {
       name: `What To Do Next?`,
-      path: `/after-forming-llc/`,
+      path: `/other/after-forming-llc/`,
     },
   ]
 };

@@ -61,22 +61,15 @@ const Wrapper = styled.div`
     display: flex;
     align-items: center;
     position: relative;
-    
-    @media screen and (max-width:1440px) {
-        overflow: hidden;
-    }
 `;
 
 const IconMap = styled.div`
-    width: 660px;
+    width: 550px;
     position: absolute;
-    top: -35px;
+    top: 100px;
     right: 75px;
     z-index: -1;
-
-    @media screen and (min-width: 1450px) {
-        width: 730px;
-    }
+    transform: scale(.9);
 
     &::after {
         content: "";
@@ -97,65 +90,66 @@ const Content = styled.div`
 `;
 
 const TextContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  padding-top: 230px;
-
-  @media (min-width: 992px) {
-    width: 60%;
-    align-items: flex-start;
-  }
-
-  h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    text-align: center;
-    padding-bottom: 40px;
+    padding-top: 230px;
 
     @media (min-width: 992px) {
-      text-align: left;
-      padding-bottom: 20px;
+        width: 60%;
+        align-items: flex-start;
     }
 
-    @media (min-width: 1200px) {
-      max-width: ${(props) => (props.headlineWidth ? props.headlineWidth : "480")}px;
-    }
-  }
+    h1 {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 40px;
 
-  p {
-    margin-bottom: 33px;
-    text-align: center;
+        @media (min-width: 992px) {
+        text-align: left;
+        padding-bottom: 20px;
+        }
 
-    @media (min-width: 1200px) {
-      text-align: left;
-      max-width: ${(props) => (props.headlineWidth ? props.headlineWidth : "480")}px;
+        @media (min-width: 1200px) {
+            max-width: ${(props) => (props.headlineWidth ? props.headlineWidth : "480")}px;
+        }
     }
-  }
+
+    p {
+        margin-bottom: 33px;
+        text-align: center;
+
+        @media (min-width: 1200px) {
+        text-align: left;
+        max-width: ${(props) => (props.headlineWidth ? props.headlineWidth : "480")}px;
+        }
+    }
 `;
 
 const ImageContainer = styled.div`
     display: none;
-    width: 55%;
+    width: 70%;
     max-width: 950px;
     position: absolute;
     top: 5%;
-    right: -12%;
-    transform: translate(-12%,0);
+    right: -20%;
+    -ms-transform: translate(-12%,0);
+    transform: translate(0,0);
 
     @media (min-width: 992px) {
         display: flex;
     }
 
-    @media screen and (min-width: 1450px) {
-        width: 48%;
+    @media screen and (min-width: 1550px) {
+        width: ${(props) => (props.imageWidthLG ? props.imageWidthLG : "65")}%;
         top: 15px;
-        right: -5%;
+        right: ${(props) => (props.imageOffsetRightLG ? props.imageOffsetRightLG : "-15")}%;
     }
     .gatsby-image-wrapper {
-        width: 100%;
+        width: 100%;  
         img {
-        object-fit: contain !important;
+            object-fit: contain !important;
         }
     }
 `;
@@ -164,18 +158,12 @@ const arrayMap = {
     TX: <TXMap />,
 };
 
-const Top = ({ children, imageName, imageAlt, headlineWidth, stateName }) => (
+const Top = ({ children, imageName, imageAlt, headlineWidth, imageWidthLG, imageOffsetRightLG, stateName }) => (
     <Wrapper>
-    <VisibilitySensor partialVisibility once>
-      {({ isVisible }) => (
-        <IconMap className={isVisible ? "scaleUp enter" : "scaleUp"}>
+        <IconMap>
             {arrayMap[stateName]}
         </IconMap>
-      )}
-    </VisibilitySensor>
-    <ImageContainer>
-      <Image filename={imageName} alt={imageAlt} />
-    </ImageContainer>
+    
     <Container>
       <Content>
         <VisibilitySensor partialVisibility once>
@@ -185,6 +173,10 @@ const Top = ({ children, imageName, imageAlt, headlineWidth, stateName }) => (
             </TextContainer>
           )}
         </VisibilitySensor>
+
+        <ImageContainer imageWidthLG={imageWidthLG} imageOffsetRightLG={imageOffsetRightLG}>
+          <Image filename={imageName} alt={imageAlt} />
+        </ImageContainer>
       </Content>
     </Container>
   </Wrapper>
