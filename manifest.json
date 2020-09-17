@@ -1,4 +1,22 @@
 {
   "main.js": "render-page.js",
-  "main.js.map": "render-page.js.map"
+  "main.js.map": "render-page.js.map",
+  "static/box-cta-ar-01.png": "static/box-cta-ar-01-020a4dcbce2020973aa1464ae0761aee.png",
+  "static/box-cta-gsd-01.png": "static/box-cta-gsd-01-0be8a4a2317fa83927e002bb5bacd8fa.png",
+  "static/box-cta-llc-oa-01.png": "static/box-cta-llc-oa-01-f85d503db6ff3178cc6ca69ed5f122ac.png",
+  "static/box-cta-trade-name-01.png": "static/box-cta-trade-name-01-1833decdccc44f376c862df13b8bb735.png",
+  "static/business-name-idea.inline.png": "static/business-name-idea.inline-1975c6fee76cb1fadca0d6a1ed3d3aa6.png",
+  "static/business-name-search-tool.inline.png": "static/business-name-search-tool.inline-08f851685961849f07ed82e0d8e4d506.png",
+  "static/change-of-agent-01.png": "static/change-of-agent-01-347485ef7a54c2ef1b2bf3f083404326.png",
+  "static/dba-name-01.png": "static/dba-name-01-39ac1ae1c0fb0762b5fcfae5c013e49e.png",
+  "static/get-help-taxes-01.png": "static/get-help-taxes-01-6699caf9d51bedc51feb63603fca8392.png",
+  "static/handle-paperwork.inline.png": "static/handle-paperwork.inline-debd191bec0e5849b479a4c8b4609bd5.png",
+  "static/incorporation-paperwork-01.png": "static/incorporation-paperwork-01-cad72250d3404c4a1973a2cb86fd1fa6.png",
+  "static/lighting-orange-01.png": "static/lighting-orange-01-519eaa659a616a2e10e3b328d53eaf2e.png",
+  "static/mrs-bulb-thumb-up-left-color-01.png": "static/mrs-bulb-thumb-up-left-color-01-4cb548002a5c51ce9a6054381810a56d.png",
+  "static/personal-oa.inline.png": "static/personal-oa.inline-82e3e3d48cd7091ca6ca678dbbe9628a.png",
+  "static/search-for-name-7560.png": "static/search-for-name-7560-58b6bd68c6942ed7dad47c0d7af0e993.png",
+  "static/trademark-01.png": "static/trademark-01-29bc5144a1cdf960a40e9a74a1a8846a.png",
+  "static/treating-llc-as-an-scorp-01.png": "static/treating-llc-as-an-scorp-01-7cf11947a34ea949a7cf068fb3cfd4fb.png",
+  "static/trust-01.png": "static/trust-01-1261f29c79214e045e6d786ed7c284c7.png"
 }

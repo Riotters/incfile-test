@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url> <loc>https://incfile.netlify.app/incfile-test/503/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://incfile.netlify.app/incfile-test/article/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://incfile.netlify.app/incfile-test/blog/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://incfile.netlify.app/incfile-test/components/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -36,6 +37,9 @@
 <url> <loc>https://incfile.netlify.app/incfile-test/manage-your-company/tax-id-ein/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://incfile.netlify.app/incfile-test/manage-your-company/trademark-name-search/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://incfile.netlify.app/incfile-test/other/form-an-llc/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://incfile.netlify.app/incfile-test/other/general-research-topics/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://incfile.netlify.app/incfile-test/other/incfile-coupon-promo-code/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://incfile.netlify.app/incfile-test/other/new-york-entity-search/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://incfile.netlify.app/incfile-test/other/start-an-llc/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://incfile.netlify.app/incfile-test/review-entity-type/c-corporation/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://incfile.netlify.app/incfile-test/review-entity-type/llc/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -43,6 +47,12 @@
 <url> <loc>https://incfile.netlify.app/incfile-test/review-entity-type/s-corporation/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://incfile.netlify.app/incfile-test/state-information/corporation/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://incfile.netlify.app/incfile-test/state-information/llc/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://incfile.netlify.app/incfile-test/texas-llc/business-taxes/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://incfile.netlify.app/incfile-test/texas-llc/faq/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://incfile.netlify.app/incfile-test/texas-llc/fees-filing-requirements/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://incfile.netlify.app/incfile-test/texas-llc/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://incfile.netlify.app/incfile-test/texas-llc/registered-agents-texas-llc/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://incfile.netlify.app/incfile-test/texas-llc/texas-business-names/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://incfile.netlify.app/incfile-test/type-of-business/airbnb/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://incfile.netlify.app/incfile-test/type-of-business/amazon-business/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://incfile.netlify.app/incfile-test/type-of-business/bar-nightclub/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
