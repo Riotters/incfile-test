@@ -49,14 +49,13 @@ const ListFlex = styled.div`
 
   & > div {
     width: 100%;
-    max-width: calc(50% - 30px);
 
     @media (min-width: 769px) {
-        max-width: 100%;
+        max-width: calc(50% - 30px);
     }
 
     p{
-      width:100%;
+      max-width:100%;
     }
   }
 `;
