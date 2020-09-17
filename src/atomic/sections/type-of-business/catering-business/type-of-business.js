@@ -22,6 +22,7 @@ const TypeOfBusiness = () => (
         <Oval2>
             <OvalSvg2/>
         </Oval2>
+
         <TextCenterLayout headlineWidth={770} textWidth={770} headline="Different Types of Catering Businesses"
                           text="There are several different ways to set up and run a catering business. These include:"/>
 

@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "../../../container";
-import TextCenterLayout from "../../../../components/partials/blocks/heading-center";
+import TextCenterLayout from "../../../partials/heading-center";
 import TopImageBox from "../../../../components/top-image-box";
 import {color} from "../../../../components/styles/colors";
 import styled from "styled-components";
@@ -19,12 +19,14 @@ const SettingBusiness = () => (
             <GreenOval/>
         </Oval2>
 
+        <TextCenterLayout
+            headline="Running a Business as a Working Nomad"
+            headlineWidth={770}
+            textWidth={770}
+            text="Once you've legally created your digital nomad business you'll need to get some other things in place."
+        />
+
         <Container>
-            <TextCenterLayout
-                headline="Running a Business as a Working Nomad"
-                headlineWidth="700"
-                text="Once you've legally created your digital nomad business you'll need to get some other things in place."
-            />
             <ImageBoxes>
 
                 <TopImageBox image="state-filling-fees" color={color.yellow3}>
@@ -123,7 +125,6 @@ const ImageBoxes = styled.div`
   }
   
   @media (min-width: 970px) {
- 
     margin: 0 auto;
   }
 `;
