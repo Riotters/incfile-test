@@ -1,25 +1,25 @@
-import React from "react"
-import styled from "styled-components"
+import React from "react";
+import styled from "styled-components";
 import { Link } from "gatsby";
 
 // Components
-import ArrowLink from "../../components/arrow-link"
+import ArrowLink from "../../components/arrow-link";
 import ContentButton from "../molecules/buttons/button";
-import HowToGuideSVG from "../../images/icons/states/how-to-guide.inline.svg"
-import BusinessNamesSVG from "../../images/icons/states/naming-your-business.inline.svg"
-import RASVG from "../../images/icons/states/registered-agent.inline.svg"
-import FilingFeeSVG from "../../images/icons/states/filing-fees-requirements.inline.svg"
-import BusinessTaxesSVG from "../../images/icons/states/business-taxes.inline.svg"
-import FaqSVG from "../../images/icons/states/faq.inline.svg"
-import WhatDoNextSVG from "../../images/icons/states/what-to-do-after.inline.svg"
-import ArrowSVG from "../../images/arrow.inline.svg"
-import { color } from "../../components/styles/colors"
-import IconListColorBox from "../molecules/text-blocks/icon-h4-list-color"
-import AcccordionCounting from '../organisms/accordion/accordion-with-counting'
-import NumericBoxedList from '../organisms/lists/numeric-boxed-list'
-import { Heading } from "../atoms/typography/heading"
-import { Paragraph } from "../atoms/typography/paragraph"
-import VisibilitySensor from "../VisibilitySensor"
+import HowToGuideSVG from "../../images/icons/states/how-to-guide.inline.svg";
+import BusinessNamesSVG from "../../images/icons/states/naming-your-business.inline.svg";
+import RASVG from "../../images/icons/states/registered-agent.inline.svg";
+import FilingFeeSVG from "../../images/icons/states/filing-fees-requirements.inline.svg";
+import BusinessTaxesSVG from "../../images/icons/states/business-taxes.inline.svg";
+import FaqSVG from "../../images/icons/states/faq.inline.svg";
+import WhatDoNextSVG from "../../images/icons/states/what-to-do-after.inline.svg";
+import ArrowSVG from "../../images/arrow.inline.svg";
+import { color } from "../../components/styles/colors";
+import IconListColorBox from "../molecules/text-blocks/icon-h4-list-color";
+import AcccordionCounting from "../organisms/accordion/accordion-with-counting";
+import NumericBoxedList from "../organisms/lists/numeric-boxed-list";
+import { Heading } from "../atoms/typography/heading";
+import { Paragraph } from "../atoms/typography/paragraph";
+import VisibilitySensor from "../VisibilitySensor";
 
 const TabsWrapper = styled.div`
   display: flex;
@@ -27,14 +27,14 @@ const TabsWrapper = styled.div`
   width: 100%;
 
   @media (min-width: 769px) {
-    max-width: ${props => (props.layout !== "grid" ? "40%" : "")};
+    max-width: ${(props) => (props.layout !== "grid" ? "40%" : "")};
   }
 
   @media (min-width: 1200px) {
-    max-width: ${props => (props.layout !== "grid" ? "370px" : "")};
+    max-width: ${(props) => (props.layout !== "grid" ? "370px" : "")};
   }
 
-  a{
+  a {
     height: 78px;
     line-height: 78px;
     color: #4e4e4e;
@@ -61,16 +61,16 @@ const TabsWrapper = styled.div`
       }
     }
   }
-`
+`;
 
 const Sticky = styled.div`
-  display: ${props => (props.layout === "grid" ? "grid" : "flex")};
-  flex-direction: ${props => (props.layout !== "grid" ? "column" : "")};
-  grid-template-columns: ${props => (props.columns ? `repeat(${props.columns}, 1fr)` : "")};
-  grid-gap: ${props => (props.layout === "grid" ? "30px" : "")};
-  position: ${props => (props.layout !== "grid" ? "sticky" : "")};
-  top: 100px; 
-`
+  display: ${(props) => (props.layout === "grid" ? "grid" : "flex")};
+  flex-direction: ${(props) => (props.layout !== "grid" ? "column" : "")};
+  grid-template-columns: ${(props) => (props.columns ? `repeat(${props.columns}, 1fr)` : "")};
+  grid-gap: ${(props) => (props.layout === "grid" ? "30px" : "")};
+  position: ${(props) => (props.layout !== "grid" ? "sticky" : "")};
+  top: 100px;
+`;
 
 const Icon = styled.div`
   display: flex;
@@ -83,7 +83,7 @@ const Icon = styled.div`
   @media (min-width: 992px) {
     width: 80px;
   }
-`
+`;
 
 const Content = styled.div`
   display: flex;
@@ -122,7 +122,7 @@ const Content = styled.div`
       transform: translateX(0);
     }
   }
-`
+`;
 
 const Arrow = styled.div`
   display: flex;
@@ -138,15 +138,18 @@ const Arrow = styled.div`
       fill: #5088fd;
     }
   }
-`
+`;
 
-const icons = [<HowToGuideSVG />, <BusinessNamesSVG />, <RASVG />, <FilingFeeSVG />, <BusinessTaxesSVG />, <FaqSVG />, <WhatDoNextSVG />]
+const icons = [<HowToGuideSVG />, <BusinessNamesSVG />, <RASVG />, <FilingFeeSVG />, <BusinessTaxesSVG />, <FaqSVG />, <WhatDoNextSVG />];
 
-const LeftTabPages = ({layout, columns, content}) => (
+const LeftTabPages = ({ layout, columns, content }) => (
   <TabsWrapper layout={layout}>
     <Sticky layout={layout} columns={columns}>
       {content.pages.map((page, i) => (
-        <Link to={page.path} className={window.location.pathname === page.path ? 'active' : ''}>
+        <Link
+          to={page.path}
+          //className={window.location.pathname === page.path ? 'active' : ''}
+        >
           <Icon> {icons[i]} </Icon>
           <Content>
             <span>{page.name}</span>
@@ -158,5 +161,5 @@ const LeftTabPages = ({layout, columns, content}) => (
       ))}
     </Sticky>
   </TabsWrapper>
-)
+);
 export default LeftTabPages;
