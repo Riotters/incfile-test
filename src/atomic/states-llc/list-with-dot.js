@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { color } from "../atoms/styles/colors";
-import parse from 'html-react-parser'
+import parse from 'html-react-parser';
 
 const dotColor = (circleColor) => {
   switch (circleColor) {

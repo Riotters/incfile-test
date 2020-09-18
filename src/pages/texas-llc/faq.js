@@ -1,18 +1,18 @@
 import React from 'react';
 import Layout from '../../components/layout';
 import SEO from '../../components/seo';
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 // Components
-import Top from '../../atomic/states-llc/top'
-import RatingRow from "../../atomic/atoms/boxes/rating-row"
-import CartBlock from "../../atomic/molecules/blocks/cart-block"
-import RatingBlock from "../../atomic/molecules/blocks/rating-block"
-import LeftTabPages from '../../atomic/states-llc/left-tab-pages'
-import MainPageContent from '../../atomic/states-llc/page-content'
-import WrapperContent from '../../atomic/states-llc/wrapper-content'
-import FaqSection from '../../atomic/states-llc/texas/faq'
-import Rocket from "../../atomic/sections/review-entity-type/c-corporation/rocket"
+import Top from '../../atomic/states-llc/top';
+import RatingRow from "../../atomic/atoms/boxes/rating-row";
+import CartBlock from "../../atomic/molecules/blocks/cart-block";
+import RatingBlock from "../../atomic/molecules/blocks/rating-block";
+import LeftTabPages from '../../atomic/states-llc/left-tab-pages';
+import MainPageContent from '../../atomic/states-llc/page-content';
+import WrapperContent from '../../atomic/states-llc/wrapper-content';
+import FaqSection from '../../atomic/states-llc/texas/faq';
+import Rocket from "../../atomic/sections/review-entity-type/c-corporation/rocket";
 
 // Content
 import { tabPages, rocket } from "../../static/states-llc/texas/general";
@@ -44,16 +44,16 @@ const TexasFaq = () => (
             </RatingRow>
         </Top>
 
-    <WrapperContent>
-        <Wrapper>
-            <LeftTabPages content={tabPages} />
-            <MainPageContent>
-                <FaqSection content={faqContent.content} />
-            </MainPageContent>
-        </Wrapper>
-    </WrapperContent>
-    
-    <Rocket content={rocket} />
+        <WrapperContent>
+            <Wrapper>
+                <LeftTabPages content={tabPages} />
+                <MainPageContent>
+                    <FaqSection content={faqContent.content} />
+                </MainPageContent>
+            </Wrapper>
+        </WrapperContent>
+        
+        <Rocket content={rocket} />
 
   </Layout>
 );

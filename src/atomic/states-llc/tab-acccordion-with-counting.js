@@ -2,16 +2,16 @@ import React from "react";
 import { Link } from "gatsby";
 import parse from 'html-react-parser';
 import styled from "styled-components";
-import { Tabs, useTabState, usePanelState } from "@bumaga/tabs";
 import { motion } from "framer-motion";
+import { Tabs, useTabState, usePanelState } from "@bumaga/tabs";
 
-import { color } from "../atoms/styles/colors";
-import ArrowSVG from "../../images/arrow-circle.inline.svg";
-import CurveSVG from "../../images/orange-curve.inline.svg";
 import ListWithDot from './list-with-dot';
-import VisibilitySensor from "../../components/VisibilitySensor";
+import { color } from "../atoms/styles/colors";
 import ArrowLink from "../../components/arrow-link"
 import { Paragraph } from "../atoms/typography/paragraph"
+import ArrowSVG from "../../images/arrow-circle.inline.svg";
+import CurveSVG from "../../images/orange-curve.inline.svg";
+import VisibilitySensor from "../../components/VisibilitySensor";
 
 const Wrapper = styled.div`
   display: flex;
