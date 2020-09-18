@@ -1,11 +1,10 @@
 import React from "react"
 import { Link } from "gatsby";
-import styled from "styled-components"
-import parse from 'html-react-parser'
+import styled from "styled-components";
+import parse from 'html-react-parser';
 
 // Components
 import BoxCTA from '../box-cta';
-import EmbedVideo from '../embed-video';
 import Circle from "../../atoms/icons/circle";
 import Whitebox from "../../atoms/boxes/white-box";
 import {shadow} from "../../atoms/styles/shadows";
@@ -16,6 +15,7 @@ import ArrowLink from "../../../components/arrow-link";
 import { Heading } from "../../atoms/typography/heading";
 import RelativeElement from '../../elements/relative-e';
 import ArrowSVG from "../../../images/arrow.inline.svg";
+import LightBoxVideo from '../../../components/LightBox';
 import { color } from "../../../components/styles/colors";
 import { Paragraph } from "../../atoms/typography/paragraph";
 import TextCheck from "../../../components/static-check/text-only";
@@ -87,27 +87,22 @@ const HowToGuide = ({ content }) => {
 
             {/* Main Steps */}
             <Heading size={3} bottomMargin="40" style={{ marginTop: `48px` }}>{content.mainSteps.heading3}</Heading>
-            <EmbedVideo style={{ marginBottom: `55px` }}>
-                <iframe width="720" height="350"
-                    src="https://www.youtube.com/embed/wGAzGRmy6m8?rel=0"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
-            </EmbedVideo>
+
+            <LightBoxVideo thumbnailVideo="comparison-chart-video-3611" videoID="wGAzGRmy6m8" />
 
             {content.mainSteps.navSteps.map(step => (
-                <Link href={`/`}>
+                <Link to="/#" onClick={e => handleMenuStepClick(step.blockID, e)}>
                     <Whitebox bottomMargin="8px" padding="24px" flex>
                         <Circle circleColor={color.orange3} iconColor={color.orange1} rightMargin="24" transform="rotate(90deg)" className="circle">
                             <ArrowSVG />
                         </Circle>
-                        <Paragraph mixed={true} bottomMargin="0">{parse(step)}</Paragraph>
+                        <Paragraph mixed={true} bottomMargin="0">{parse(step.text)}</Paragraph>
                     </Whitebox>
                 </Link>
             ))}
 
             <TextBlockWithNumberCounting
+                blockId="step1"
                 numberCounting="1"
                 borderRadius="0"
                 boxShadow={false}
@@ -129,6 +124,7 @@ const HowToGuide = ({ content }) => {
             </TextBlockWithNumberCounting>
 
             <TextBlockWithNumberCounting
+                blockId="step2"
                 numberCounting="2"
                 borderRadius="0"
                 boxShadow={false}
@@ -148,6 +144,7 @@ const HowToGuide = ({ content }) => {
             </TextBlockWithNumberCounting>
 		
             <TextBlockWithNumberCounting
+                blockId="step3"
                 numberCounting="3"
                 borderRadius="0"
                 boxShadow={false}
@@ -175,6 +172,7 @@ const HowToGuide = ({ content }) => {
             </TextBlockWithNumberCounting>
 		
             <TextBlockWithNumberCounting
+                blockId="step4"
                 numberCounting="4"
                 borderRadius="0"
                 boxShadow={false}
@@ -228,6 +226,7 @@ const HowToGuide = ({ content }) => {
             </TextBlockWithNumberCounting>
 
             <TextBlockWithNumberCounting
+                blockId="step5"
                 numberCounting="5"
                 borderRadius="0"
                 boxShadow={false}
@@ -247,6 +246,7 @@ const HowToGuide = ({ content }) => {
             </TextBlockWithNumberCounting>
 
             <TextBlockWithNumberCounting
+                blockId="step6"
                 numberCounting="6"
                 borderRadius="0"
                 boxShadow={false}
@@ -296,4 +296,11 @@ const HowToGuide = ({ content }) => {
     )
 }
 
-export default HowToGuide
+export default HowToGuide;
+
+export function handleMenuStepClick(l, e) {
+    e.preventDefault();
+
+    const el = document.getElementById(l);
+    el.scrollIntoView({ behavior: 'smooth', block: 'start'});
+}

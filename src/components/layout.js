@@ -196,10 +196,15 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <GlobalStyle />
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <main>{children}</main>
-      <Footer />
+        <GlobalStyle />
+        <Header siteTitle={data.site.siteMetadata.title} />
+        <main>{children}</main>
+        <Footer />
+        
+          {/** Use this element to append the lightbox video outside of main wrapper 
+           * So that it should be overlay entire of page
+          */}
+        <div id="portal-lightbox"></div>
     </>
   )
 }
