@@ -24,7 +24,7 @@ const FaqSection = ({ className, content }) => (
     </Oval>
     <HeadingCenter headline={content.header} headlineWidth="640" />
     <ContentCenter>
-      <Accordion content={content} curve curveLeftBottom curveColor={color.blue1} />
+      <Accordion content={content} curve curveRightBottom curveColor={color.orange1} />
     </ContentCenter>
   </Faq>
 );
