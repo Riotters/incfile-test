@@ -32,7 +32,7 @@ import BusinessStructure from "../../atomic/sections/type-of-business/publishing
 import SettingBusiness from "../../atomic/sections/type-of-business/publishing-company-business/setting-business";
 import OrderNow from "../../atomic/sections/type-of-business/publishing-company-business/order-now";
 import Regulations from "../../atomic/sections/type-of-business/publishing-company-business/regulations";
-import InsuranceBusiness from "../../atomic/sections/type-of-business/publishing-company-business/insurance-business";
+import InsuranceBusinessSection from "../../atomic/sections/type-of-business/publishing-company-business/insurance-business";
 import Taxes from "../../atomic/sections/type-of-business/publishing-company-business/taxes";
 import Conclusion from "../../atomic/sections/general/conclusion";
 import styled from "styled-components";
@@ -411,7 +411,7 @@ const ConstructionCompany = () => (
 
         <Regulations/>
 
-        <InsuranceBusiness/>
+        <InsuranceBusinessSection/>
 
         <Taxes/>
 

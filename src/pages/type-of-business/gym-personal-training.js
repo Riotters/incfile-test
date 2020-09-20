@@ -28,7 +28,7 @@ import BusinessStructure from "../../atomic/sections/type-of-business/gym-person
 import SettingBusiness from "../../atomic/sections/type-of-business/gym-personal-training/setting-business";
 import OrderNow from "../../atomic/sections/type-of-business/gym-personal-training/order-now";
 import Regulations from "../../atomic/sections/type-of-business/gym-personal-training/regulations";
-import InsuranceBusiness from "../../atomic/sections/type-of-business/gym-personal-training/insurance-business";
+import InsuranceBusinessSection from "../../atomic/sections/type-of-business/gym-personal-training/insurance-business";
 import Taxes from "../../atomic/sections/type-of-business/gym-personal-training/taxes";
 import ToolsAndLinks from "../../atomic/sections/type-of-business/gym-personal-training/tools";
 import Conclusion from "../../atomic/sections/general/conclusion";
@@ -444,7 +444,7 @@ const GymPersonalTraining = () => (
 
         <Regulations/>
 
-        <InsuranceBusiness/>
+        <InsuranceBusinessSection/>
 
         <Taxes/>
 

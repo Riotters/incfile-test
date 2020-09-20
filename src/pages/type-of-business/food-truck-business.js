@@ -29,7 +29,7 @@ import BusinessStructure from "../../atomic/sections/type-of-business/food-truck
 import SettingBusiness from "../../atomic/sections/type-of-business/food-truck-business/setting-business";
 import OrderNow from "../../atomic/sections/type-of-business/food-truck-business/order-now";
 import Regulations from "../../atomic/sections/type-of-business/food-truck-business/regulations";
-import InsuranceBusiness from "../../atomic/sections/type-of-business/food-truck-business/insurance-business";
+import InsuranceBusinessSection from "../../atomic/sections/type-of-business/food-truck-business/insurance-business";
 import Taxes from "../../atomic/sections/type-of-business/food-truck-business/taxes";
 import ToolsAndLinks from "../../atomic/sections/type-of-business/food-truck-business/tools";
 import Conclusion from "../../atomic/sections/general/conclusion";
@@ -457,7 +457,7 @@ const FoodTruckBusiness = () => (
 
         <Regulations/>
 
-        <InsuranceBusiness/>
+        <InsuranceBusinessSection/>
 
         <Taxes/>
 
