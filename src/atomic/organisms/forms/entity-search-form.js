@@ -38,10 +38,10 @@ const Grid = styled.div`
   }
 `;
 
-const EntitySearchForm = ({ className, content }) => {
+const EntitySearchForm = ({ className, content, curveColor }) => {
   return (
     <Wrapper className={className}>
-      <Curve className="curve-shape" bottom="-25" right="-29" color={color.babyblue1}>
+      <Curve className="curve-shape" bottom="-25" right="-29" color={curveColor ? curveColor : color.babyblue1}>
         <CurveSVG />
       </Curve>
       <Heading size="5" bottomMargin="16">

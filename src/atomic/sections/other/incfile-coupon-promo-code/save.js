@@ -4,6 +4,7 @@ import { gradient } from "../../../atoms/styles/colors";
 import HeadingCenter from "../../../partials/heading-center";
 import ContentCenter from "../../../partials/content-center";
 import { Paragraph } from "../../../atoms/typography/paragraph";
+import Table from "../../../organisms/tables/coupon-promo-code-table";
 
 const Save = styled.div`
   padding-top: 75px;
@@ -29,7 +30,7 @@ const SaveSection = ({ className, content }) => (
       <Paragraph big bottomMargin="56">
         {content.text2}
       </Paragraph>
-      <h2 style={{ marginBottom: "56px" }}>table</h2>
+      <Table content={content.table} />
       <Paragraph big>{content.text3}</Paragraph>
       <Paragraph big bottomMargin="0">
         {content.text4}

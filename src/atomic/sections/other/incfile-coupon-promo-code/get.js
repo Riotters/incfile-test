@@ -12,6 +12,10 @@ const Get = styled.div`
   padding-top: 75px;
   padding-bottom: 64px;
   position: relative;
+
+  h3 {
+    max-width: 770px;
+  }
 `;
 
 const GetSection = ({ className, content }) => (
@@ -22,7 +26,9 @@ const GetSection = ({ className, content }) => (
     <HeadingCenter headline={content.header} headlineWidth="770" />
     <ContentCenter contentWidth="770">
       <Paragraph big>{content.text}</Paragraph>
-      <Heading size="3">{content.header}</Heading>
+      <Heading size="3" bottomMargin="64">
+        {content.header}
+      </Heading>
     </ContentCenter>
     <ContentCenter contentWidth="970">
       <NumericList content={content.list} bottomMargin="0" />

@@ -9,7 +9,9 @@ const Wrapper = styled.div`
   width: 100%;
   max-width: 970px;
   position: relative;
+  margin-bottom: 56px;
 
+  .table-header,
   .table-row {
     @media (min-width: 769px) {
       grid-template-columns: 1fr 144px 144px;
@@ -29,15 +31,29 @@ const Wrapper = styled.div`
       &:nth-child(2),
       &:nth-child(3) {
         justify-content: center;
+
+        p {
+          font-weight: 400;
+          background-color: ${color.green3};
+          border-radius: 50px;
+          padding: 8px 26px;
+        }
       }
+    }
+  }
+
+  .table-header {
+    h4 {
+      font-size: 16px;
     }
   }
 `;
 
 const TaxReturnTable = ({ className, content }) => (
   <Wrapper className={className}>
+    <GridTableRow className="table-header" content={content.headers} header />
     {content.rows.map((row) => (
-      <GridTableRow className="table-row" content={row} columns="2fr 1fr 1f" />
+      <GridTableRow className="table-row" content={row} />
     ))}
   </Wrapper>
 );

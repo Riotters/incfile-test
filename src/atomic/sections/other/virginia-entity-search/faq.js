@@ -5,7 +5,7 @@ import HeadingCenter from "../../../partials/heading-center";
 import ContentCenter from "../../../partials/content-center";
 import Accordion from "../../../organisms/accordion/accordion";
 import Oval from "../../../atoms/icons/oval";
-import OvalSVG from "../../../../images/ovals/top-left-transparent-green3.inline.svg";
+import OvalSVG from "../../../../images/ovals/top-left-transparent-blue3.inline.svg";
 
 const Faq = styled.section`
   position: relative;
