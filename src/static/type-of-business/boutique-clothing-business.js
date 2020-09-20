@@ -66,30 +66,34 @@ export const adventages2 = {
     ]
 };
 
-export const InfoCards = [
-    {
-        backgroundColor: color.babyblue3,
-        roundTopLeft: true,
-        roundBottomLeft: true,
-        imageName: "workers-compensation-insurance",
-        title: "Workers Compensation Insurance for Your Moving Business",
-        content: "Workers’ compensation insurance provides coverage for job-related illnesses, disabilities or injuries that affect employees. Regulations for this insurance vary from state to state. It typically covers areas like medical costs, loss of earnings, compensation and retraining."
-    },
-    {
-        backgroundColor: color.green3,
-        imageName: "shield-icon",
-        title: "General Liability Insurance for Your Moving Business",
-        content: "This insurance protects your boutique clothing business from claims due to being sued. This may include injury to members of the public, property damage, personal liabilities, legal defense and more. It can help protect your business from financial penalties and bankruptcy. This type of insurance could be essential to your boutique clothing business if you run a physical store, since you'll have customers on your premises."
-    },
-    {
-        backgroundColor: color.red3,
-        roundTopRight: true,
-        roundBottomRight: true,
-        imageName: "home-and-auto-insurance",
-        title: "Specialized Office and Auto Insurance for Your Moving Business",
-        content: "If you are working from home on the administration of your boutique clothing business or driving a vehicle for work, check whether your existing home and auto policies cover you for work use of your home or car. If not, you should either expand your policy so you’re covered or get dedicated business insurance."
-    }
-]
+export const InfoCards = {
+    title: `Insurance for Your Boutique Clothing Business`,
+    description: `Most boutique clothing businesses should have comprehensive business insurance. There are various types.`,
+    items: [
+        {
+            backgroundColor: color.babyblue3,
+            roundTopLeft: true,
+            roundBottomLeft: true,
+            imageName: "workers-compensation-insurance",
+            title: "Workers Compensation Insurance for Your Moving Business",
+            content: "Workers’ compensation insurance provides coverage for job-related illnesses, disabilities or injuries that affect employees. Regulations for this insurance vary from state to state. It typically covers areas like medical costs, loss of earnings, compensation and retraining."
+        },
+        {
+            backgroundColor: color.green3,
+            imageName: "shield-icon",
+            title: "General Liability Insurance for Your Moving Business",
+            content: "This insurance protects your boutique clothing business from claims due to being sued. This may include injury to members of the public, property damage, personal liabilities, legal defense and more. It can help protect your business from financial penalties and bankruptcy. This type of insurance could be essential to your boutique clothing business if you run a physical store, since you'll have customers on your premises."
+        },
+        {
+            backgroundColor: color.red3,
+            roundTopRight: true,
+            roundBottomRight: true,
+            imageName: "home-and-auto-insurance",
+            title: "Specialized Office and Auto Insurance for Your Moving Business",
+            content: "If you are working from home on the administration of your boutique clothing business or driving a vehicle for work, check whether your existing home and auto policies cover you for work use of your home or car. If not, you should either expand your policy so you’re covered or get dedicated business insurance."
+        }
+    ]
+};
 
 export const Tools = [
     {

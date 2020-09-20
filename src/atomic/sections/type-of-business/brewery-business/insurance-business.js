@@ -1,36 +1,16 @@
 import React from "react";
 import styled from "styled-components";
-import InfoCardsSection from "../../../partials/info-cards-section";
 import {InfoCards} from "../../../../static/type-of-business/brewery-business";
-import {gradient} from "../../../atoms/styles/colors";
-import TextCenterLayout from "../../../partials/heading-center";
-import OvalSvg from "../../../../images/ovals/top-right-transparent-blue2.inline.svg";
+import OvalSVG from "../../../../images/ovals/top-right-transparent-blue.inline.svg";
+import InsuranceBusiness from "../../general/insurance-business";
 
-const InsuranceBusiness = () => (
-    <Wrapper>
+const InsuranceBusinessSection = () => (
+    <InsuranceBusiness title={InfoCards.title} description={InfoCards.description} InfoCards={InfoCards.items}>
         <Oval>
-            <OvalSvg />
+            <OvalSVG/>
         </Oval>
-        <div style={{paddingBottom: "100px"}}>
-            <TextCenterLayout
-                headline="Insurance for Your Brewery Business"
-                headlineWidth={770}
-                textWidth={770}
-                text="Most brewery businesses should have comprehensive business insurance. There are various types."
-            />
-        </div>
-        <InfoCardsSection cards={InfoCards}/>
-    </Wrapper>
+    </InsuranceBusiness>
 );
-
-const Wrapper = styled.section`
-    background: rgb(255,255,255);
-    background: ${gradient.blue3};
-    padding-top: 100px;
-    position: relative;
-    padding-bottom: 100px;
-`;
-
 const Oval = styled.div`
     position: absolute;
     bottom: -175px;
@@ -44,4 +24,4 @@ const Oval = styled.div`
     }
 `;
 
-export default InsuranceBusiness;
+export default InsuranceBusinessSection;
