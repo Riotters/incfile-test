@@ -34,7 +34,7 @@ import BusinessStructure from "../../atomic/sections/type-of-business/travel-age
 import SettingBusiness from "../../atomic/sections/type-of-business/travel-agency/setting-business";
 import OrderNow from "../../atomic/sections/type-of-business/travel-agency/order-now";
 import Regulations from "../../atomic/sections/type-of-business/travel-agency/regulations";
-import InsuranceBusiness from "../../atomic/sections/type-of-business/travel-agency/insurance-business";
+import InsuranceBusinessSection from "../../atomic/sections/type-of-business/travel-agency/insurance-business";
 import UsefulTools from "../../atomic/partials/useful-tools";
 import Conclusion from "../../atomic/sections/general/conclusion";
 import {toolsList} from "../../static/type-of-business/travel-agency";
@@ -356,7 +356,7 @@ in the U.S. by 2020"/>
 
         <Regulations/>
 
-        <InsuranceBusiness/>
+        <InsuranceBusinessSection/>
 
         <Taxes/>
 

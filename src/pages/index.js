@@ -44,6 +44,9 @@ const IndexPage = () => (
         <h2>LLC States Information</h2>
         <Link to="/texas-llc/">Texas LLC</Link>
 
+        <h2>Forms</h2>
+        <Link to="/forms/ficitious-business-name">Ficitious Business Name (WIP)</Link>
+
         <h2>Manage Your Company</h2>
         <Link to="/manage-your-company">Manage your company</Link>
         <Link to="/manage-your-company/annual-report">Annual report</Link>

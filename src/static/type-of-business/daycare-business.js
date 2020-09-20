@@ -23,30 +23,34 @@ export const typeBusiness = {
     ]
 }
 
-export const InfoCards = [
-    {
-        backgroundColor: color.babyblue3,
-        roundTopLeft: true,
-        roundBottomLeft: true,
-        imageName: "workers-compensation-insurance",
-        title: "Workers Compensation Insurance",
-        content: "Workers’ compensation insurance provides coverage for job-related illnesses, disabilities or injuries that affect employees. Regulations for this insurance vary from state to state. It typically covers areas like medical costs, loss of earnings, compensation and retraining."
-    },
-    {
-        backgroundColor: color.green3,
-        imageName: "shield-icon",
-        title: "General Liability Insurance",
-        content: "This insurance protects your food truck business from claims due to being sued. This may include injury to members of the public, property damage, personal liabilities, legal defense and more. It can help protect your business from financial penalties and bankruptcy. This type of insurance could be essential to your food truck business since you’re always dealing with members of the public and want to ensure you’re properly covered."
-    },
-    {
-        backgroundColor: color.red3,
-        roundTopRight: true,
-        roundBottomRight: true,
-        imageName: "home-and-auto-insurance",
-        title: "Home and Auto Insurance",
-        content: "You will need special insurance for your food truck, as standard auto insurance isn’t likely to cover it. Speak to your insurance provider and make sure you have the right type of cover."
-    }
-];
+export const InfoCards = {
+    title: `Insurance for Your Daycare Business`,
+    description: `Most daycare businesses should have comprehensive business insurance. There are various types.`,
+    items: [
+        {
+            backgroundColor: color.babyblue3,
+            roundTopLeft: true,
+            roundBottomLeft: true,
+            imageName: "workers-compensation-insurance",
+            title: "Workers Compensation Insurance",
+            content: "Workers’ compensation insurance provides coverage for job-related illnesses, disabilities or injuries that affect employees. Regulations for this insurance vary from state to state. It typically covers areas like medical costs, loss of earnings, compensation and retraining."
+        },
+        {
+            backgroundColor: color.green3,
+            imageName: "shield-icon",
+            title: "General Liability Insurance",
+            content: "This insurance protects your food truck business from claims due to being sued. This may include injury to members of the public, property damage, personal liabilities, legal defense and more. It can help protect your business from financial penalties and bankruptcy. This type of insurance could be essential to your food truck business since you’re always dealing with members of the public and want to ensure you’re properly covered."
+        },
+        {
+            backgroundColor: color.red3,
+            roundTopRight: true,
+            roundBottomRight: true,
+            imageName: "home-and-auto-insurance",
+            title: "Home and Auto Insurance",
+            content: "You will need special insurance for your food truck, as standard auto insurance isn’t likely to cover it. Speak to your insurance provider and make sure you have the right type of cover."
+        }
+    ]
+};
 
 export const adventages2 = {
     items: [

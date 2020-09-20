@@ -51,7 +51,7 @@ const FlexLink = styled(Link)`
     justify-content: flex-start;
 `;
 
-const CoachBusinessStructure = () => (
+const BusinessStructure = () => (
     <OrangeContainer>
 
         <Oval>
@@ -244,4 +244,4 @@ const CoachBusinessStructure = () => (
     </OrangeContainer>
 );
 
-export default CoachBusinessStructure;
+export default BusinessStructure;

@@ -12,7 +12,7 @@ import SettingBusiness from "../../atomic/sections/type-of-business/boutique-clo
 import OrderNow from "../../atomic/sections/type-of-business/boutique-clothing-business/order-now";
 import Regulations from "../../atomic/sections/type-of-business/boutique-clothing-business/regulations";
 import BoutiqueTaxes from "../../atomic/sections/type-of-business/boutique-clothing-business/boutique-taxes";
-import InsuranceBusiness from "../../atomic/sections/type-of-business/boutique-clothing-business/insurance-business";
+import InsuranceBusinessSection from "../../atomic/sections/type-of-business/boutique-clothing-business/insurance-business";
 import UseFulTools from "../../atomic/sections/type-of-business/boutique-clothing-business/useful-tools";
 import Conclusion from "../../atomic/sections/general/conclusion";
 import BoutiqueClothingTabs
@@ -65,7 +65,7 @@ const BoutiqueClothingBusiness = () => (
 
         <BoutiqueTaxes/>
 
-        <InsuranceBusiness/>
+        <InsuranceBusinessSection/>
 
         <UseFulTools/>
 

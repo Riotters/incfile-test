@@ -1,8 +1,10 @@
-import React, { component, Component } from "react"
+import React, {Component} from "react"
 import Dropdown from 'react-dropdown';
 import styled from "styled-components"
-import { color } from "../../atoms/styles/colors"
+import {color} from "../../atoms/styles/colors"
 import DropdownSVG from "../../../images/dropdown.inline.svg"
+import Label from "../../atoms/text-fields/label";
+import Link from "../../atoms/links/link";
 
 const Wrapper = styled.div`
     position: relative;
@@ -76,10 +78,21 @@ const Wrapper = styled.div`
         transform: translateY(-50%);
         pointer-events: none;
     }
+    
+    .top {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .bottom {
+        width: 100%;
+        position: relative;
+    }
 `;
 
 class Drop extends Component {
-    constructor (props) {
+    constructor(props) {
         super(props)
         this.state = {
             selected: ''
@@ -87,17 +100,28 @@ class Drop extends Component {
         this._onSelect = this._onSelect.bind(this)
     }
 
-    _onSelect (option) {
+    _onSelect(option) {
         this.setState({selected: option})
     }
 
-    render () {
+    render() {
         const defaultOption = this.state.selected;
-    
+
         return (
             <Wrapper className={this.props.className}>
-                <Dropdown options={this.props.options} onChange={this._onSelect} value={defaultOption} placeholder={this.props.placeholder} />
-                <DropdownSVG />
+                <div className="top">
+                    {this.props.label && (
+                        <Label text={this.props.label}/>
+                    )}
+                    {this.props.linkText && (
+                        <Link linkUrl={this.props.linkUrl} linkText={this.props.linkText}/>
+                    )}
+                </div>
+                <div className="bottom">
+                    <Dropdown options={this.props.options} onChange={this._onSelect} value={defaultOption}
+                              placeholder={this.props.placeholder}/>
+                    <DropdownSVG/>
+                </div>
             </Wrapper>
         )
     }

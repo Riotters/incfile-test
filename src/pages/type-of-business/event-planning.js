@@ -31,7 +31,7 @@ import BusinessStructure from "../../atomic/sections/type-of-business/event-plan
 import SettingBusiness from "../../atomic/sections/type-of-business/event-planning/setting-business";
 import OrderNow from "../../atomic/sections/type-of-business/event-planning/order-now";
 import Regulations from "../../atomic/sections/type-of-business/event-planning/regulations";
-import InsuranceBusiness from "../../atomic/sections/type-of-business/event-planning/insurance-business";
+import InsuranceBusinessSection from "../../atomic/sections/type-of-business/event-planning/insurance-business";
 import Taxes from "../../atomic/sections/type-of-business/event-planning/taxes";
 import ToolsAndLinks from "../../atomic/sections/type-of-business/event-planning/tools";
 import Conclusion from "../../atomic/sections/general/conclusion";
@@ -421,7 +421,7 @@ const EventPlanning = () => (
 
         <Regulations/>
 
-        <InsuranceBusiness/>
+        <InsuranceBusinessSection/>
 
         <Taxes/>
 
