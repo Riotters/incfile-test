@@ -21,11 +21,13 @@ const TypeOfBusiness = () => (
         <Oval2>
             <OvalSvg2/>
         </Oval2>
-        <TextCenterLayout headlineWidth={770} textWidth={770} headline="What Type of Cleaning Business Do You Want to Run?"
+        <TextCenterLayout headlineWidth={770} textWidth={770}
+                          headline="What Type of Cleaning Business Do You Want to Run?"
                           text="One of the first things you’ll need to decide on is the type of cleaning business you want to run. You have a few different options:"/>
 
-        <Container>
-            <Service>
+        <Service>
+            <Container>
+
                 <AdventagesBox>
                     <CurveWrapper>
                         <Curve color={color.red1}/>
@@ -42,19 +44,20 @@ const TypeOfBusiness = () => (
                             circleBackgroundColor={color.blue1}
                             circleBackgroundShadow={shadow.blue1}
                             imageName={item.imageName}
-                            className="containerMargin"
+                            width="100%"
                         />
                     ))}
                 </AdventagesBox>
+            </Container>
 
+            <ContentCenter contentWidth={700}>
+                <Paragraph big style={{marginBottom: "70px"}}>
+                    You can go even more detailed than this and focus on narrower areas of cleaning. This might include:
+                </Paragraph>
+            </ContentCenter>
+
+            <Container>
                 <AdventagesBox>
-
-                    <ContentCenter contentWidth={700}>
-                        <Paragraph big style={{marginBottom: "70px"}}>
-                            You can go even more detailed than this and focus on narrower areas of cleaning. This might include:
-                        </Paragraph>
-                    </ContentCenter>
-
                     {adventages2.items.map(item => (
                         <Adventages
                             style={{textAlign: "center"}}
@@ -67,11 +70,12 @@ const TypeOfBusiness = () => (
                             circleBackgroundColor={color.blue1}
                             circleBackgroundShadow={shadow.blue1}
                             imageName={item.imageName}
+                            width="100%"
                         />
                     ))}
                 </AdventagesBox>
-            </Service>
-        </Container>
+            </Container>
+        </Service>
     </Wrapper>
 );
 
@@ -87,12 +91,15 @@ const Service = styled.div`
 `;
 
 const AdventagesBox = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  max-width: 1000px;
-  margin: 72px auto 0;
-  position: relative; 
+  display: grid;
+  grid-template-columns: 100%;
+  justify-content: center;
+  column-gap: 30px;
+  row-gap: 20px;
+    
+  @media (min-width: 992px){
+      grid-template-columns: 470px 470px;
+  }
 `;
 
 const CurveWrapper = styled.div`

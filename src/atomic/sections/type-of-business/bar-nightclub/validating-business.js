@@ -41,18 +41,15 @@ const TitleBox = styled.div`
 `;
 
 const GridSectionList = styled.div`
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 100%;
-    max-width: 1000px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 100%;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 70px;
     
-    > div {
-        margin-bottom: 70px;
-    }
-    
-    @media (min-width: 1024px) {
-        margin: 120px auto 0;
+    @media (min-width: 992px){
+        grid-template-columns: 470px 470px;
     }
 `;
 
@@ -120,7 +117,7 @@ const ValidatingBusinessIdea = () => (
 
                 <GridSectionList>
 
-                    <TextBlockWithImage className="containerMargin" SvgImage={MarketIcon} imageBackgroundColor={color.green2}
+                    <TextBlockWithImage width={100} widthUnit="%" className="containerMargin" SvgImage={MarketIcon} imageBackgroundColor={color.green2}
                                         imageShadowColor={color.green2}>
                         <Heading size={4}>
                             Find market research reports for bar or club businesses
@@ -130,7 +127,7 @@ const ValidatingBusinessIdea = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage className="containerMargin" SvgImage={LookIcon} imageBackgroundColor={color.babyblue2}
+                    <TextBlockWithImage width={100} widthUnit="%" className="containerMargin" SvgImage={LookIcon} imageBackgroundColor={color.babyblue2}
                                         imageShadowColor={color.babyblue2}>
                         <Heading size={4}>
                             Check out your competitors in the space
@@ -140,7 +137,7 @@ const ValidatingBusinessIdea = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage className="containerMargin" SvgImage={TalkIcon} imageBackgroundColor={color.orange2}
+                    <TextBlockWithImage width={100} widthUnit="%" className="containerMargin" SvgImage={TalkIcon} imageBackgroundColor={color.orange2}
                                         imageShadowColor={color.orange2}>
                         <Heading size={4}>
                             Talk to patrons
@@ -150,7 +147,7 @@ const ValidatingBusinessIdea = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage className="containerMargin" SvgImage={IdetifyIcon} imageBackgroundColor={color.purple2}
+                    <TextBlockWithImage width={100} widthUnit="%" className="containerMargin" SvgImage={IdetifyIcon} imageBackgroundColor={color.purple2}
                                         imageShadowColor={color.purple2}>
                         <Heading size={4}>
                             Identify your business’s unique selling points (USPs)
@@ -162,7 +159,7 @@ const ValidatingBusinessIdea = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage className="containerMargin" SvgImage={InvolvedIcon} imageBackgroundColor={color.red2}
+                    <TextBlockWithImage width={100} widthUnit="%" className="containerMargin" SvgImage={InvolvedIcon} imageBackgroundColor={color.red2}
                                         imageShadowColor={color.purple2}>
                         <Heading size={4}>
                             Get involved with business communities and discussion groups

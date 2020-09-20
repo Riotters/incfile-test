@@ -15,7 +15,7 @@ import Curve from "../../../atoms/shapes/curve";
 
 const BlueContainerWrapper = styled.div`
     background: rgb(255,255,255);
-    padding-bottom: 30px;
+    padding-bottom: 100px;
     position: relative;
     padding-top: 120px;
 `;
@@ -44,18 +44,15 @@ const TitleBox = styled.div`
 `;
 
 const GridSectionList = styled.div`
-  display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 100%;
-    max-width: 1000px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 100%;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 70px;
     
-    > div {
-        margin-bottom: 70px;
-    }
-    
-    @media (min-width: 1024px) {
-        margin: 120px auto 0;
+    @media (min-width: 992px){
+        grid-template-columns: 470px 470px;
     }
 `;
 
@@ -112,7 +109,7 @@ const ValidatingBusinessIdea = () => (
 
                 <GridSectionList>
 
-                    <TextBlockWithImage className="containerMargin" SvgImage={IdetifyIcon} imageBackgroundColor={color.yellow2}
+                    <TextBlockWithImage width={100} widthUnit="%" className="containerMargin" SvgImage={IdetifyIcon} imageBackgroundColor={color.yellow2}
                                         imageShadowColor={color.yellow2}>
                         <Heading size={4}>
                             Identify your B&B business’ unique selling points (USPs)
@@ -122,7 +119,7 @@ const ValidatingBusinessIdea = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage className="containerMargin" SvgImage={LookIcon} imageBackgroundColor={color.green2}
+                    <TextBlockWithImage width={100} widthUnit="%" className="containerMargin" SvgImage={LookIcon} imageBackgroundColor={color.green2}
                                         imageShadowColor={color.green2}>
                         <Heading size={4}>
                             Look at who your competitors are in the space
@@ -133,7 +130,7 @@ const ValidatingBusinessIdea = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage className="containerMargin" SvgImage={MarketIcon} imageBackgroundColor={color.purple2}
+                    <TextBlockWithImage width={100} widthUnit="%" className="containerMargin" SvgImage={MarketIcon} imageBackgroundColor={color.purple2}
                                         imageShadowColor={color.purple2}>
                         <Heading size={4}>
                             Understand your market
@@ -143,7 +140,7 @@ const ValidatingBusinessIdea = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage className="containerMargin" SvgImage={TalkIcon} imageBackgroundColor={color.orange2}
+                    <TextBlockWithImage width={100} widthUnit="%" className="containerMargin" SvgImage={TalkIcon} imageBackgroundColor={color.orange2}
                                         imageShadowColor={color.orange2}>
                         <Heading size={4}>
                             Talk to guests
@@ -153,7 +150,7 @@ const ValidatingBusinessIdea = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage className="containerMargin" SvgImage={InvolvedIcon} imageBackgroundColor={color.babyblue2}
+                    <TextBlockWithImage width={100} widthUnit="%" className="containerMargin" SvgImage={InvolvedIcon} imageBackgroundColor={color.babyblue2}
                                         imageShadowColor={color.babyblue2}>
                         <Heading size={4}>
                             Get involved with business communities and discussion groups
