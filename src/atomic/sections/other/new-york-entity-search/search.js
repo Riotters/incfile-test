@@ -4,30 +4,27 @@ import { color } from "../../../atoms/styles/colors";
 import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";
 import ContentObject from "../../../partials/left-content-right-object";
-import Form from "../../../organisms/forms/annual-report-form";
+import Form from "../../../organisms/forms/entity-search-form";
 import Oval from "../../../atoms/icons/oval";
-import OvalSVG from "../../../../images/ovals/top-right-orange1-to-transparent.inline.svg";
-import Oval2SVG from "../../../../images/ovals/bottom-left-transparent-orange.inline.svg";
+import OvalSVG from "../../../../images/ovals/bottom-right-transparent-babyblue2.inline.svg";
 import Curve from "../../../atoms/icons/curve";
 import CurveSVG from "../../../../images/curves/bottom-left-top-right-big.inline.svg";
 
 const Search = styled.section`
   position: relative;
   padding: 108px 0;
-  background-color: ${color.orange3};
+  background-color: ${color.babyblue3};
+  overflow: hidden;
 `;
 
 const SearchSection = ({ className, content }) => (
   <Search className={className}>
-    <Oval className="oval" height="720" width="720" top="0" right="0">
+    <Oval className="oval" height="420" width="420" bottom="0" right="0" y="30">
       <OvalSVG />
-    </Oval>
-    <Oval className="oval" height="420" width="420" bottom="0" left="0">
-      <Oval2SVG />
     </Oval>
     <ContentObject object={<Form content={content.form} />} contentWidth="500" contentCenter>
       <Heading size="2" bottomMargin="48" style={{ position: `relative` }}>
-        <Curve top="-85" left="-85" color={color.orange2}>
+        <Curve top="-85" left="-85" color={color.babyblue2}>
           <CurveSVG />
         </Curve>
         {content.header}

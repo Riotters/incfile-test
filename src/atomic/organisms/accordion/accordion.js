@@ -37,7 +37,7 @@ const Curve = styled.div`
     left: ${(props) => (props.curveLeft || props.curveLeftBottom ? "0" : "")};
     right: ${(props) => (props.curveRight || props.curveRightBottom ? "0" : "")};
     bottom: ${(props) => (props.curveRightBottom || props.curveLeftBottom ? "-25px" : "")};
-    transform: ${(props) => (props.curveRight ? "rotate(90deg)" : props.curveRightBottom ? "sacle(-1)" : props.curveLeftBottom ? "rotate(-90deg)" : "")};
+    transform: ${(props) => (props.curveRight ? "rotate(90deg)" : props.curveRightBottom ? "scale(-1)" : props.curveLeftBottom ? "rotate(-90deg)" : "")};
   }
 
   svg {

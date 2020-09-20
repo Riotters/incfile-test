@@ -5,19 +5,14 @@ import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";
 import Container from "../../../container";
 import ContentCenter from "../../../partials/content-center";
-import Cards from "../../../organisms/cards/registered-agent-adventages";
+import Cards from "../../../organisms/cards/entity-search-adventages";
 import Oval from "../../../atoms/icons/oval";
-import OvalSVG from "../../../../images/ovals/top-right-transparent-blue.inline.svg";
+import OvalSVG from "../../../../images/ovals/top-right-transparent-orange3.inline.svg";
 
 const Adventages = styled.section`
   position: relative;
-  background-color: ${color.blue3};
   padding-top: 104px;
   padding-bottom: 112px;
-
-  h2 {
-    text-align: left;
-  }
 `;
 
 const AdventagesSection = ({ className, content }) => (

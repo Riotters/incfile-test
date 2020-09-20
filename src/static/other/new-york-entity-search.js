@@ -24,25 +24,30 @@ export const search = {
   header2: `aaa`,
   text: `aaa`,
   form: {
-    header: `Please enter below information`,
+    header: `Please enter the business name information`,
     field: {
-      label: `Company`,
+      label: `First Name*`,
     },
     field2: {
-      label: `State of Incorporation`,
+      label: `Entity Type`,
+      link: {
+        text: `Not sure?`,
+        url: `/`,
+      },
+      options: [`LLC`, `Corporation`],
     },
+    header2: `Let us know where we can let you know if your business name is available`,
     field3: {
-      label: `Select Entity Type*`,
-    },
-    link: {
-      text: `Not sure?`,
-      url: `/`,
+      label: `First Name*`,
     },
     field4: {
-      label: `Date of Formation`,
+      label: `Last Name*`,
+    },
+    field5: {
+      label: `Email*`,
     },
     button: {
-      text: `Check Due Date Now`,
+      text: `Download Now`,
       url: `/`,
     },
   },
@@ -57,7 +62,13 @@ export const newRules = {
 export const specificRules = {
   header: `aaa`,
   text: `aaa`,
-  list: [`aaa`, `aaa`, `aaa`, `aaa`],
+  list: [
+    `You must obtain consent from the appropriate licensing body or agency 
+  to use terms in your corporation name related to licensed professions or businesses`,
+    `You cannot use any language considered obscene, derogatory or that states or implies any unlawful activity`,
+    `You cannot use any language considered obscene, derogatory or that states or implies any unlawful activity`,
+    `Prohibited words include: attorney, board of trade, chamber of commerce, community, cooperation, cooperative, corporation, incorporated, partnership, redevelopment, state police, state trooper, tenant relocation, urban development, urban relocation`,
+  ],
 };
 
 export const startBusiness = {
