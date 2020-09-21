@@ -48,9 +48,8 @@ const OrderNow = ({layout, columns}) => (
                 <OvalRight2Svg/>
             </OvalRight2>
 
-            <Container>
-                <TabScrollable/>
-            </Container>
+            <TabScrollable/>
+
         </TabScrollableWrapper>
     </>
 );

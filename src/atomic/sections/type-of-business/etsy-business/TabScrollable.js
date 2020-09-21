@@ -11,7 +11,7 @@ import TextBlockWithImage from "../../../molecules/mixed-blocks/text-block-with-
 
 import Accordion from "../../../organisms/accordion/accordion";
 
-import Container from "../../../../components/container";
+import Container from "../../../container"; 
 import VisibilitySensor from "../../../../components/VisibilitySensor";
 
 import BusinessLicenseIcon from "../../../../images/icons/business-licenses-and-permits.inline.svg";
