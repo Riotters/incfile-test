@@ -57,6 +57,7 @@ const Wrapper = styled.div`
     background-color: ${color.orange3}; 
     padding-top: 100px;
     position: relative;
+    overflow: hidden;
 `;
 
 const Service = styled.div`

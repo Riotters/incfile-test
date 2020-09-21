@@ -1,8 +1,8 @@
 import React from "react";
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
-import Top from "../../components/partials/sections/top";
-import Button from "../../components/button";
+import Top from "../../atomic/partials/top";
+import Button from "../../atomic/molecules/buttons/button";
 import RatingRow from "../../atomic/atoms/boxes/rating-row";
 import CartBlock from "../../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../../atomic/molecules/blocks/rating-block";
@@ -47,9 +47,7 @@ const ConstructionCompany = () => (
             <p>The need for residential, commercial or industrial property
                 is constantly growing as the population increases.</p>
             <ButtonsBox>
-                <Button theme="primary56" marginMD="0 24px 0 0" arrow>
-                    Start Now
-                </Button>
+                <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{url: "/", text: "Start Now"}} />
             </ButtonsBox>
 
             <RatingRow>
@@ -367,7 +365,9 @@ const ConstructionCompany = () => (
             </Heading>
 
             <Paragraph big>
-                If you have the right expertise and hands-on skills, a construction company is a great way to build a thriving business. Identify your niche, create a rock solid construction business plan and get the right marketing in place and you could be the next great home builder!
+                If you have the right expertise and hands-on skills, a construction company is a great way to build a
+                thriving business. Identify your niche, create a rock solid construction business plan and get the right
+                marketing in place and you could be the next great home builder!
             </Paragraph>
         </Conclusion>
     </Layout>
@@ -396,7 +396,11 @@ const ListBox = styled.div`
 `;
 
 const TabsWrapper = styled.div`
-    position: relative;
+  margin-top: 120px;
+  position: relative;
+  @media (min-width: 992px){
+      margin-top: 21px;
+  }
 `;
 
 const Oval = styled.div`

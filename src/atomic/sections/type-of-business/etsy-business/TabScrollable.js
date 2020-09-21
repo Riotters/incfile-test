@@ -649,15 +649,6 @@ const Arrow = styled.div`
   }
 `
 
-const ListWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-`;
-
-const ListBox = styled.div`
-    width: 50%;
-`;
-
 const StickyContainer = styled.div`
     position: relative;
     height: 100%;

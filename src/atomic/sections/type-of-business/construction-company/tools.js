@@ -14,13 +14,13 @@ import OvalSvg from "../../../../images/ovals/bottom-left-transparent-orange.inl
 const ToolsAndLinks = () => (
     <Wrapper>
         <Oval>
-            <BabyBlueOval />
+            <BabyBlueOval/>
         </Oval>
         <Oval2>
-            <BabyBlueOval />
+            <BabyBlueOval/>
         </Oval2>
         <Oval3>
-            <OvalSvg />
+            <OvalSvg/>
         </Oval3>
         <Container>
             <TextCenterLayout headline="Groups and Forums for Your Construction Business"
@@ -29,7 +29,8 @@ const ToolsAndLinks = () => (
             <LinksContainer>
 
                 <LinkItem>
-                    <PathLink to="https://www.contractortalk.com/forum.php" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.contractortalk.com/forum.php" textColor={color.blue1}
+                              hoverColor={color.orange1} arrowColor={color.blue1}>
                         Contractor Talk forums
                     </PathLink>
                 </LinkItem>
@@ -38,13 +39,15 @@ const ToolsAndLinks = () => (
                     <CurveWrapper>
                         <Curve color={color.orange1}/>
                     </CurveWrapper>
-                    <PathLink to="https://forums.jlconline.com/forums/forum" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://forums.jlconline.com/forums/forum" textColor={color.blue1}
+                              hoverColor={color.orange1} arrowColor={color.blue1}>
                         Journal of Light Construction forum
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="https://www.facebook.com/AGCofA/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.facebook.com/AGCofA/" textColor={color.blue1} hoverColor={color.orange1}
+                              arrowColor={color.blue1}>
                         Facebook Associated General Constructors of America
                     </PathLink>
                 </LinkItem>
@@ -52,9 +55,8 @@ const ToolsAndLinks = () => (
             </LinksContainer>
         </Container>
 
-        <Container>
-            <UsefulTools toolsList={toolsList.tools} headlineText={toolsList.headlineText} description={toolsList.description} />
-        </Container>
+        <UsefulTools toolsList={toolsList.tools} headlineText={toolsList.headlineText}
+                     description={toolsList.description}/>
     </Wrapper>
 );
 

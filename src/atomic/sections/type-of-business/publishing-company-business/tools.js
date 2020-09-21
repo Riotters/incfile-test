@@ -4,8 +4,7 @@ import Container from "../../../container";
 import TextCenterLayout from "../../../partials/heading-center";
 import PathLink from "../../../molecules/buttons/path";
 import {shadow} from "../../../atoms/styles/shadows";
-import {color} from "../../../atoms/styles/colors";
-import {gradient} from "../../../atoms/styles/colors";
+import {color, gradient} from "../../../atoms/styles/colors";
 import UsefulTools from "../../../partials/useful-tools";
 import {toolsList} from "../../../../static/type-of-business/publishing-company-business";
 import Curve from "../../../atoms/shapes/curve"
@@ -15,13 +14,13 @@ import OvalSvg2 from "../../../../images/ovals/bottom-left-transparent-orange.in
 const ToolsAndLinks = () => (
     <Wrapper>
         <Oval>
-            <OvalSvg />
+            <OvalSvg/>
         </Oval>
         <Oval2>
-            <OvalSvg />
+            <OvalSvg/>
         </Oval2>
         <Oval3>
-            <OvalSvg2 />
+            <OvalSvg2/>
         </Oval3>
         <Container>
             <TextCenterLayout headline="Groups and Forums for Your Publishing Company"
@@ -30,7 +29,8 @@ const ToolsAndLinks = () => (
             <LinksContainer>
 
                 <LinkItem>
-                    <PathLink to="International Digital Publishing Forum" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="International Digital Publishing Forum" textColor={color.blue1}
+                              hoverColor={color.orange1} arrowColor={color.blue1}>
                         International Digital Publishing Forum
                     </PathLink>
                 </LinkItem>
@@ -39,13 +39,15 @@ const ToolsAndLinks = () => (
                     <CurveWrapper>
                         <Curve color={color.orange1}/>
                     </CurveWrapper>
-                    <PathLink to="https://www.stateofdigitalpublishing.com/slack-community/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.stateofdigitalpublishing.com/slack-community/" textColor={color.blue1}
+                              hoverColor={color.orange1} arrowColor={color.blue1}>
                         State of Digital Publishing Slack discussion group
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="https://www.ukaop.org/groups" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.ukaop.org/groups" textColor={color.blue1} hoverColor={color.orange1}
+                              arrowColor={color.blue1}>
                         Advocate for Quality Original Digital Content
                     </PathLink>
                 </LinkItem>
@@ -53,9 +55,8 @@ const ToolsAndLinks = () => (
             </LinksContainer>
         </Container>
 
-        <Container>
-            <UsefulTools toolsList={toolsList.tools} headlineText={toolsList.headlineText} description={toolsList.description} />
-        </Container>
+        <UsefulTools toolsList={toolsList.tools} headlineText={toolsList.headlineText}
+                     description={toolsList.description}/>
     </Wrapper>
 );
 
