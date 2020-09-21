@@ -26,6 +26,7 @@ const Conclusion = ({buttonTitle, children, to}) => (
 
 const ConclusionWrapper = styled.section`
     position: relative;
+    margin-top: 76px;
     margin-bottom: 150px;
 `;
 

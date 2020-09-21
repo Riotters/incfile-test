@@ -4,7 +4,7 @@ export const adventages = {
     items: [
         {
             circleText: 1,
-            imageName: "franchise",
+            imageName: "franchise-purple",
             headline: "Start a Franchise Moving Business",
             text: "Franchises can have several advantages for moving business owners. You’ll get help with branding, promotions and marketing, together with support and guidance on setting up your relocation company. You will need to pay a franchise fee, possibly on both a one-time and ongoing basis. You’ll also need to meet the licensing requirements of the franchisor."
         },

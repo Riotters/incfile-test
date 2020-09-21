@@ -11,8 +11,8 @@ import CalcIcon from "../../../../images/icons/series-is-this-business-for-you.i
 import {Heading} from "../../../atoms/typography/heading";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import CkeckText from "../../../../components/static-check/text-only";
-import OvalSVG from "../../../../images/oval-blue-2.inline.svg";
-import OvalGreenSVG from "../../../../images/oval-green.inline.svg";
+import OvalSVG from "../../../../images/ovals/bottom-left-transparent-blue1.inline.svg";
+import OvalGreenSVG from "../../../../images/ovals/bottom-right-transparent-green3.inline.svg";
 import Container from "../../../../components/container";
 import BlueBoxWithAbsoluteText from "../../../molecules/text-blocks/blue-box-with-absolute-text";
 import Adventages from "../../../../components/adventages";
@@ -35,6 +35,14 @@ const Tab = ({children}) => {
         </ButtonBox>
     )
 };
+
+const WrapperMain = styled.div`
+  margin-top: 120px;
+  position: relative;
+  @media (min-width: 992px){
+      margin-top: 21px;
+  }
+`;
 
 const Wrapper = styled.div`
   display: flex;
@@ -214,39 +222,29 @@ const ListBox = styled.div`
 `;
 
 const Oval = styled.div`
-  height: 100%;
   width: 100%;
-  max-height: 420px;
-  max-width: 420px;
   position: absolute;
   left: 0;
   top: 0;
   
-  display: none;
-    
-    @media (min-width: 768px) {
-        display: block;
-    }
+  @media (min-width: 420px) {
+      width: 420px;
+  }
 `
 
 const OvalBottom = styled.div`
-  height: 100%;
   width: 100%;
-  max-height: 420px;
-  max-width: 420px;
   position: absolute;
   right: 0;
   bottom: 0;
-  
-  display: none;
     
-    @media (min-width: 768px) {
-        display: block;
+    @media (min-width: 420px) {
+        display: 420px;
     }
 `
 
 const MovingCompanyTabs = ({layout, columns}) => (
-    <Wrapper>
+    <WrapperMain>
         <Oval>
             <OvalSVG/>
         </Oval>
@@ -306,25 +304,41 @@ const MovingCompanyTabs = ({layout, columns}) => (
                                     >
                                         <Heading size={3}>Starting a Moving Company</Heading>
                                         <Paragraph big>
-                                            We’ve never had more choices of where to live or work — that need for relocation means there’s plenty of opportunities for starting a reliable and trustworthy moving venture.
+                                            We’ve never had more choices of where to live or work — that need for
+                                            relocation means there’s plenty of opportunities for starting a reliable and
+                                            trustworthy moving venture.
                                         </Paragraph>
                                         <Paragraph big style={{marginBottom: "50px"}}>
-                                            You’ll need to balance demand for moving services in your local area against the costs of buying the equipment and hiring employees to help people relocate. You may also want to buy into a moving franchise, or strike out on your own and build a company from scratch. Perhaps you became interested after helping people move through a contract service like U-Haul.
+                                            You’ll need to balance demand for moving services in your local area against
+                                            the costs of buying the equipment and hiring employees to help people
+                                            relocate. You may also want to buy into a moving franchise, or strike out on
+                                            your own and build a company from scratch. Perhaps you became interested
+                                            after helping people move through a contract service like U-Haul.
                                         </Paragraph>
 
                                         <Colorbox className="box" theme="icon" Icon={MegafonIcon} color={color.yellow3}
                                                   curve
                                                   curveColor={color.yellow1}>
-                                            <Heading size={4}>We want to help you get your business off the ground.</Heading>
+                                            <Heading size={4}>We want to help you get your business off the
+                                                ground.</Heading>
                                             <Paragraph bottomPadding={0} bottomMargin={0}>
-                                                There are lots of questions involved in starting a moving business, and we’re here to help. We’ve supported over 100,000 people to form their business and provided answers to transform them into entrepreneurs. We’ll guide you through what you need to know to start your relocation company and get it off the ground.
+                                                There are lots of questions involved in starting a moving business, and
+                                                we’re here to help. We’ve supported over 100,000 people to form their
+                                                business and provided answers to transform them into entrepreneurs.
+                                                We’ll guide you through what you need to know to start your relocation
+                                                company and get it off the ground.
                                             </Paragraph>
                                         </Colorbox>
 
-                                        <Heading size={3} style={{marginTop: "50px"}}>Moving Business formation guide</Heading>
+                                        <Heading size={3} style={{marginTop: "50px"}}>Moving Business formation
+                                            guide</Heading>
                                         <Paragraph big>
-                                            From validating your business and doing the research to filing your paperwork and running your venture, this guide will help you out. We’ll talk you through the main things you need to do to get your moving company off of the ground. Read on for some insight into creating your own moving business and becoming an entrepreneur. In this guide we will cover:
-                                         </Paragraph>
+                                            From validating your business and doing the research to filing your
+                                            paperwork and running your venture, this guide will help you out. We’ll talk
+                                            you through the main things you need to do to get your moving company off of
+                                            the ground. Read on for some insight into creating your own moving business
+                                            and becoming an entrepreneur. In this guide we will cover:
+                                        </Paragraph>
 
                                         <ListWrapper>
                                             <ListBox>
@@ -354,7 +368,8 @@ const MovingCompanyTabs = ({layout, columns}) => (
                                             <ListBox>
                                                 <CkeckText>
                                                     <Paragraph big>
-                                                        How to start your moving business with information on equipment, employees, location, permits, finances, taxes and more
+                                                        How to start your moving business with information on equipment,
+                                                        employees, location, permits, finances, taxes and more
                                                     </Paragraph>
                                                 </CkeckText>
                                             </ListBox>
@@ -408,7 +423,9 @@ const MovingCompanyTabs = ({layout, columns}) => (
                                             Why You Should Start a New Moving Business
                                         </Heading>
                                         <Paragraph big style={{marginBottom: "76px"}}>
-                                            There are plenty of opportunities for moving business entrepreneurs. Here are some surprising statistics on the size and potential of the U.S. moving industry:
+                                            There are plenty of opportunities for moving business entrepreneurs. Here
+                                            are some surprising statistics on the size and potential of the U.S. moving
+                                            industry:
                                         </Paragraph>
 
                                         <BlueBoxWithAbsoluteText absoluteText="3M"
@@ -447,7 +464,8 @@ const MovingCompanyTabs = ({layout, columns}) => (
                                         </div>
 
                                         <Paragraph big>
-                                            This is why Airbnb businesses are so exciting — how can you be a part of that success? We're here to help you figure that out.
+                                            This is why Airbnb businesses are so exciting — how can you be a part of
+                                            that success? We're here to help you figure that out.
                                         </Paragraph>
 
                                     </PanelWrapper>
@@ -458,14 +476,16 @@ const MovingCompanyTabs = ({layout, columns}) => (
                                             Is a Moving Business Right for You?
                                         </Heading>
                                         <Paragraph big style={{marginBottom: "48px"}}>
-                                            Before deciding to start a moving business, it’s important to understand the skills and approach you’re likely to need
+                                            Before deciding to start a moving business, it’s important to understand the
+                                            skills and approach you’re likely to need
                                         </Paragraph>
 
                                         <Heading size={2} style={{fontSize: "24px", textAlign: "left"}}>
                                             A Day in the Life of a Moving Business Owner
                                         </Heading>
                                         <Paragraph big style={{marginBottom: "48px"}}>
-                                            Here are some of the typical tasks you’ll be performing for your moving business on a daily basis.
+                                            Here are some of the typical tasks you’ll be performing for your moving
+                                            business on a daily basis.
                                         </Paragraph>
 
                                         <CountingTextBoxed number={1}>
@@ -476,7 +496,8 @@ const MovingCompanyTabs = ({layout, columns}) => (
 
                                         <CountingTextBoxed number={2}>
                                             <Paragraph bottomPadding={0} bottomMargin={0}>
-                                                Providing quotes for moving based on services needed, quantity of goods and distance of move
+                                                Providing quotes for moving based on services needed, quantity of goods
+                                                and distance of move
                                             </Paragraph>
                                         </CountingTextBoxed>
 
@@ -540,7 +561,8 @@ const MovingCompanyTabs = ({layout, columns}) => (
                                             Skills Needed by a Moving Business Entrepreneur
                                         </Heading>
                                         <Paragraph big style={{marginBottom: "48px"}}>
-                                            The following skills will be very useful in your role as a moving business owner:
+                                            The following skills will be very useful in your role as a moving business
+                                            owner:
                                         </Paragraph>
 
                                         <div style={{marginBottom: "30px"}}>
@@ -582,10 +604,19 @@ const MovingCompanyTabs = ({layout, columns}) => (
                                             What Your Moving Customers Are Looking For
                                         </Heading>
                                         <Paragraph big>
-                                            Moving is a huge hassle and overhead for almost everyone. Relocating customers want peace-of-mind, reliability and trustworthiness. Ultimately, they’re paying a fee to a moving company so that they don’t need to worry about every tiny detail of moving. They’ll want you to have a proven track record, good reviews and to be completely up-to-date with your insurance.
+                                            Moving is a huge hassle and overhead for almost everyone. Relocating
+                                            customers want peace-of-mind, reliability and trustworthiness. Ultimately,
+                                            they’re paying a fee to a moving company so that they don’t need to worry
+                                            about every tiny detail of moving. They’ll want you to have a proven track
+                                            record, good reviews and to be completely up-to-date with your insurance.
                                         </Paragraph>
                                         <Paragraph big style={{marginBottom: "48px"}}>
-                                            Customers may also be looking for a range of services. For example, some will want to pack goods themselves, while others are happy to pay to have their house packed by professionals. Some will want you to collect goods from every room, while others will move things to the front door. You’ll need to tweak your services to meet customer needs, do what you say you will and be accurate and timely.
+                                            Customers may also be looking for a range of services. For example, some
+                                            will want to pack goods themselves, while others are happy to pay to have
+                                            their house packed by professionals. Some will want you to collect goods
+                                            from every room, while others will move things to the front door. You’ll
+                                            need to tweak your services to meet customer needs, do what you say you will
+                                            and be accurate and timely.
                                         </Paragraph>
 
                                     </PanelWrapper>
@@ -597,7 +628,7 @@ const MovingCompanyTabs = ({layout, columns}) => (
                 </VisibilitySensor>
             </Wrapper>
         </Container>
-    </Wrapper>
+    </WrapperMain>
 );
 
 export default MovingCompanyTabs;

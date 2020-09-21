@@ -2,7 +2,7 @@ import React from "react";
 import {Heading} from "../../../atoms/typography/heading";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import Container from "../../../container";
-import OvalSvg from "../../../../images/oval-blue-5.inline.svg";
+import OvalSvg from "../../../../images/ovals/bottom-left-transparent-blue3.inline.svg";
 import styled from "styled-components";
 
 const Regulations = () => (
@@ -14,7 +14,7 @@ const Regulations = () => (
             <Heading size={4} style={{fontSize: "40px"}}>
                 Rules, Regulations and Taxes for Your Moving Business
             </Heading>
-            <Paragraph big>
+            <Paragraph big mixed>
                 You can’t escape real-world licenses, permits and regulations. You will need to explore local, state and federal licenses and permits, and <span
                 className="blue big">we can also help out with researching your business licensing needs.</span>
             </Paragraph>
@@ -30,5 +30,10 @@ const Oval = styled.div`
     position: absolute; 
     bottom: 0;
     left: 0;
+    width: 100%;
+    
+    @media (min-width: 136px){
+        width: 136px;
+    }
 `;
 export default Regulations;

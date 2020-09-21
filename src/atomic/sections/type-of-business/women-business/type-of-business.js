@@ -37,77 +37,81 @@ const TypeBusiness = () => (
                           text="Finally, you may want a business that helps you stay active in your industry, keeping you up-to-date with the latest skills and thinking."/>
 
 
-            <ContentCenter contentWidth={770}>
-                <Paragraph big>
-                    The pressures on women are unique, especially if you’re a mom. When you’re deciding on the right
-                    business idea, it’s important to take these areas into account.
-                </Paragraph>
-            </ContentCenter>
+        <ContentCenter contentWidth={770}>
+            <Paragraph big>
+                The pressures on women are unique, especially if you’re a mom. When you’re deciding on the right
+                business idea, it’s important to take these areas into account.
+            </Paragraph>
+        </ContentCenter>
 
-            <ContentCenter>
-                <GridSection>
-                    <GridSectionList>
-                        <TextBlockWithImage className="containerMargin" SvgImage={Icon1} imageBackgroundColor={color.purple2}
-                                            imageShadowColor={color.purple2}>
-                            <Heading size={4}>
-                                A business that fits with your schedule
-                            </Heading>
-                            <Paragraph bottomPadding={0} bottomMargin={0}>
-                                If you have kids, you’ll want a business you can organize around childcare needs, school
-                                runs and the endless chores that children create.
-                            </Paragraph>
-                        </TextBlockWithImage>
+        <ContentCenter>
+            <GridSection>
+                <GridSectionList>
+                    <TextBlockWithImage width={100} widthUnit="%" SvgImage={Icon1}
+                                        imageBackgroundColor={color.purple2}
+                                        imageShadowColor={color.purple2}>
+                        <Heading size={4}>
+                            A business that fits with your schedule
+                        </Heading>
+                        <Paragraph bottomPadding={0} bottomMargin={0}>
+                            If you have kids, you’ll want a business you can organize around childcare needs, school
+                            runs and the endless chores that children create.
+                        </Paragraph>
+                    </TextBlockWithImage>
 
-                        <TextBlockWithImage className="containerMargin" SvgImage={Icon2} imageBackgroundColor={color.orange2}
-                                            imageShadowColor={color.orange2}>
-                            <Heading size={4}>
-                                A business that doesn’t cost much
-                                to start up
-                            </Heading>
-                            <Paragraph bottomPadding={0} bottomMargin={0}>
-                                You don’t want too much risk in your business, so that means limiting both up-front and
-                                ongoing costs
-                                as much as possible.
-                            </Paragraph>
-                        </TextBlockWithImage>
+                    <TextBlockWithImage width={100} widthUnit="%" SvgImage={Icon2}
+                                        imageBackgroundColor={color.orange2}
+                                        imageShadowColor={color.orange2}>
+                        <Heading size={4}>
+                            A business that doesn’t cost much
+                            to start up
+                        </Heading>
+                        <Paragraph bottomPadding={0} bottomMargin={0}>
+                            You don’t want too much risk in your business, so that means limiting both up-front and
+                            ongoing costs
+                            as much as possible.
+                        </Paragraph>
+                    </TextBlockWithImage>
 
-                        <TextBlockWithImage className="containerMargin" SvgImage={Icon3} imageBackgroundColor={color.yellow2}
-                                            imageShadowColor={color.yellow2}>
-                            <Heading size={4}>
-                                A business that gives you freedom
-                            </Heading>
-                            <Paragraph bottomPadding={0} bottomMargin={0}>
-                                Independent female entrepreneurs want to retain and expand on their freedom, which is
-                                why it can be useful to run a business that gives you independence.
-                            </Paragraph>
-                        </TextBlockWithImage>
+                    <TextBlockWithImage width={100} widthUnit="%" SvgImage={Icon3}
+                                        imageBackgroundColor={color.yellow2}
+                                        imageShadowColor={color.yellow2}>
+                        <Heading size={4}>
+                            A business that gives you freedom
+                        </Heading>
+                        <Paragraph bottomPadding={0} bottomMargin={0}>
+                            Independent female entrepreneurs want to retain and expand on their freedom, which is
+                            why it can be useful to run a business that gives you independence.
+                        </Paragraph>
+                    </TextBlockWithImage>
 
-                        <TextBlockWithImage className="containerMargin" SvgImage={Icon4} imageBackgroundColor={color.babyblue2}
-                                            imageShadowColor={color.babyblue2}>
-                            <Heading size={4}>
-                                A business that gives you flexibility
-                            </Heading>
-                            <Paragraph bottomPadding={0} bottomMargin={0}>
-                                Even if you don’t have a set schedule, flexibility
-                                is vital, so choose a business that supports it.
-                            </Paragraph>
-                        </TextBlockWithImage>
+                    <TextBlockWithImage width={100} widthUnit="%" SvgImage={Icon4}
+                                        imageBackgroundColor={color.babyblue2}
+                                        imageShadowColor={color.babyblue2}>
+                        <Heading size={4}>
+                            A business that gives you flexibility
+                        </Heading>
+                        <Paragraph bottomPadding={0} bottomMargin={0}>
+                            Even if you don’t have a set schedule, flexibility
+                            is vital, so choose a business that supports it.
+                        </Paragraph>
+                    </TextBlockWithImage>
 
-                        <TextBlockWithImage className="containerMargin" SvgImage={Icon5} imageBackgroundColor={color.red2}
-                                            imageShadowColor={color.red2}>
-                            <Heading size={4}>
-                                A business that fits around
-                                caregiving needs
-                            </Heading>
-                            <Paragraph bottomPadding={0} bottomMargin={0}>
-                                Many women have care commitments to elders and other loved ones, so ideally you'll want
-                                a business that integrates with those needs as well.
-                            </Paragraph>
-                        </TextBlockWithImage>
+                    <TextBlockWithImage width={100} widthUnit="%" SvgImage={Icon5} imageBackgroundColor={color.red2}
+                                        imageShadowColor={color.red2}>
+                        <Heading size={4}>
+                            A business that fits around
+                            caregiving needs
+                        </Heading>
+                        <Paragraph bottomPadding={0} bottomMargin={0}>
+                            Many women have care commitments to elders and other loved ones, so ideally you'll want
+                            a business that integrates with those needs as well.
+                        </Paragraph>
+                    </TextBlockWithImage>
 
-                    </GridSectionList>
-                </GridSection>
-            </ContentCenter>
+                </GridSectionList>
+            </GridSection>
+        </ContentCenter>
 
         <TextCenterLayout textWidth={770} headlineWidth={770} headline="Business Ideas for Women and Moms"
                           text="Whether you’re looking for a home-based business idea perfect for moms, a small business idea, or a unique startup, there are plenty of ideas out there. Let’s get into some good ideas for your woman-owned business."/>
@@ -126,7 +130,7 @@ const TypeBusiness = () => (
                         circleBackgroundColor={color.blue1}
                         circleBackgroundShadow={shadow.blue1}
                         imageName="start-blogging-and-writing"
-                        className="containerMargin"
+                        width="100%"
                     >
                         <Paragraph mixed={true}>
                             You can complete blogging and writing at your own pace. These businesses are low-effort to
@@ -144,7 +148,7 @@ const TypeBusiness = () => (
                         circleBackgroundColor={color.blue1}
                         circleBackgroundShadow={shadow.blue1}
                         imageName="freelancing-from-home"
-                        className="containerMargin"
+                        width="100%"
                     >
                         <Paragraph mixed={true}>
                             The road to being a full-time freelancer can be difficult but rewarding. If you have a
@@ -162,7 +166,7 @@ const TypeBusiness = () => (
                         circleBackgroundColor={color.blue1}
                         circleBackgroundShadow={shadow.blue1}
                         imageName="online-shop-icon"
-                        className="containerMargin"
+                        width="100%"
                     >
                         <Paragraph mixed={true}>
                             If you’d rather sell products than services, a third-party marketplace like Amazon or eBay
@@ -180,7 +184,7 @@ const TypeBusiness = () => (
                         circleBackgroundColor={color.blue1}
                         circleBackgroundShadow={shadow.blue1}
                         imageName="business-licence-search-copy-5"
-                        className="containerMargin"
+                        width="100%"
                     >
                         <Paragraph mixed={true}>
                             If you have artistic talent, you can even sell products that you make yourself. You can do
@@ -199,7 +203,7 @@ const TypeBusiness = () => (
                         circleBackgroundColor={color.blue1}
                         circleBackgroundShadow={shadow.blue1}
                         imageName="red-home"
-                        className="containerMargin"
+                        width="100%"
                     >
                         <Paragraph mixed={true}>
                             Home-based businesses aren’t just about selling products and skills, you can also provide
@@ -216,7 +220,7 @@ const TypeBusiness = () => (
                         circleBackgroundColor={color.blue1}
                         circleBackgroundShadow={shadow.blue1}
                         imageName="leadership-coaching-2"
-                        className="containerMargin"
+                        width="100%"
                     >
                         <Paragraph mixed={true}>
                             If you’ve got some skill at helping others, tutoring and coaching are in demand. You’ll need
@@ -234,7 +238,7 @@ const TypeBusiness = () => (
                         circleBackgroundColor={color.blue1}
                         circleBackgroundShadow={shadow.blue1}
                         imageName="provide-childcare-services"
-                        className="containerMargin"
+                        width="100%"
                     >
                         <Paragraph mixed={true}>
                             With the right certifications, you can offer childcare, nursery or babysitting services from
@@ -250,7 +254,7 @@ const TypeBusiness = () => (
                         circleBackgroundColor={color.blue1}
                         circleBackgroundShadow={shadow.blue1}
                         imageName="purple-home"
-                        className="containerMargin"
+                        width="100%"
                     >
                         <Paragraph mixed={true}>
                             If you have professional qualifications, they can be a great basis for a home-based business
@@ -357,18 +361,15 @@ const TitleBox = styled.div`
 `;
 
 const GridSectionList = styled.div`
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 100%;
-    max-width: 1000px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 100%;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 70px;
     
-    > div {
-        margin-bottom: 70px;
-    }
-    
-    @media (min-width: 1024px) {
-        margin: 120px auto 0;
+    @media (min-width: 992px){
+        grid-template-columns: 470px 470px;
     }
 `;
 

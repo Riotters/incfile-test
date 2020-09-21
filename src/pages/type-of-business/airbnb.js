@@ -418,7 +418,11 @@ const ListBox = styled.div`
 
 const TabsWrapper = styled.section`
     position: relative;
-    padding-top: 21px;
+    margin-top: 120px;
+    
+    @media (min-width: 992px){
+        margin-top: 21px;
+    }
 `;
 
 const TabOvalOne = styled.div`

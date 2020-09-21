@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../../components/layout";
-import Top from "../../components/partials/sections/top";
+import Top from "../../atomic/partials/top";
 import SEO from "../../components/seo";
 import Button from "../../components/button";
 import RatingRow from "../../atomic/atoms/boxes/rating-row";

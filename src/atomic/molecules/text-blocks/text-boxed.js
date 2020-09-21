@@ -40,7 +40,9 @@ const TextBoxed = ({ className, children, isRed }) => (
                 <CheckSVG />
             )}
         </Box>
-        {children}
+        <div style={{paddingTop: "5px"}}>
+            {children}
+        </div>
     </Wrapper>
 )
 

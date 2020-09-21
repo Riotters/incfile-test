@@ -32,7 +32,7 @@ const SummerBusinessIdea = () => (
                         circleBackgroundColor={color.blue1}
                         circleBackgroundShadow={shadow.blue1}
                         imageName="use-an-incfile-network-atorney-blue"
-                        className="containerMargin"
+                        width="100%"
                     >
                         <Paragraph mixed={true}>
                             With kids being out of school, they and their parents may be looking for extra practice for
@@ -48,7 +48,7 @@ const SummerBusinessIdea = () => (
                         circleBackgroundColor={color.blue1}
                         circleBackgroundShadow={shadow.blue1}
                         imageName="provide-babysitting-services"
-                        className="containerMargin"
+                        width="100%"
                     >
                         <Paragraph mixed={true}>
                             Because kids can’t go to school or daycare in the summer months, some parents might want
@@ -64,7 +64,7 @@ const SummerBusinessIdea = () => (
                         circleBackgroundColor={color.blue1}
                         circleBackgroundShadow={shadow.blue1}
                         imageName="yard-work-and-chores-02"
-                        className="containerMargin"
+                        width="100%"
                     >
                         <Paragraph mixed={true}>
                             Summer is a busy time in the yard or garden, yet many people take longer vacations away from
@@ -81,7 +81,7 @@ const SummerBusinessIdea = () => (
                         circleBackgroundColor={color.blue1}
                         circleBackgroundShadow={shadow.blue1}
                         imageName="local-tour-guide"
-                        className="containerMargin"
+                        width="100%"
                     >
                         <Paragraph mixed={true}>
                             If you know your city or the surrounding region well, you could set up a business providing
@@ -98,7 +98,7 @@ const SummerBusinessIdea = () => (
                         circleBackgroundColor={color.blue1}
                         circleBackgroundShadow={shadow.blue1}
                         imageName="vacation-planing-and-local-agent"
-                        className="containerMargin"
+                        width="100%"
                     >
                         <Paragraph mixed={true}>
                             Vacation and itinerary planning can take up an enormous amount of time. You can reduce this
@@ -115,7 +115,7 @@ const SummerBusinessIdea = () => (
                         circleBackgroundColor={color.blue1}
                         circleBackgroundShadow={shadow.blue1}
                         imageName="airbnb-logo"
-                        className="containerMargin"
+                        width="100%"
                     >
                         <Paragraph mixed={true}>
                             Airbnb’s are becoming increasingly popular - if you have a property that you can fully or
@@ -132,7 +132,7 @@ const SummerBusinessIdea = () => (
                         circleBackgroundColor={color.blue1}
                         circleBackgroundShadow={shadow.blue1}
                         imageName="activity-and-summer-camp-coordinator"
-                        className="containerMargin"
+                        width="100%"
                     >
                         <Paragraph mixed={true}>
                             Kids are looking for something fun to do over the summer season. Enriching activities or
@@ -159,7 +159,7 @@ const Service = styled.div`
 `;
 
 const AdventagesBox = styled.div`
-  display: grid;
+    display: grid;
     grid-gap: 10px;
     grid-template-columns: 100%;
     justify-content: center;

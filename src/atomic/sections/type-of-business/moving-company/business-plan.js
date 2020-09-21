@@ -5,8 +5,8 @@ import {Heading} from "../../../atoms/typography/heading";
 import CountingTextBoxed from "../../../molecules/text-blocks/counting-text-boxed";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import Container from "../../../container";
-import OvalGreenSVG from "../../../../images/oval-green.inline.svg";
-import OvalSVG from "../../../../images/oval-pink.inline.svg";
+import OvalGreenSVG from "../../../../images/ovals/bottom-right-transparent-green1.inline.svg";
+import OvalSVG from "../../../../images/ovals/top-right-transparent-pink2.inline.svg";
 
 const BusinessOwnerResponsibilities = styled.section`
   position: relative;
@@ -34,12 +34,22 @@ const Oval = styled.div`
   left: 0;
   top: 0;
   transform: rotate(180deg);
+  width: 100%;
+  
+  @media (min-width: 420px){
+    width: 420px;
+  }
 `
 
 const OvalCenter = styled.div`
   position: absolute;
   right: 0;
   top: 38%;
+  width: 100%;
+  
+  @media (min-width: 720px){
+    width: 720px;
+  }
 `
 
 const MovingBusinessPlan = () => (

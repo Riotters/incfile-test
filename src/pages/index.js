@@ -101,8 +101,8 @@ const IndexPage = () => (
         <Link to="/article">Article (no API)</Link>
         <h2>Type of Business</h2>
         <Link to="/type-of-business/airbnb">Airbnb</Link>
-        <Link to="/type-of-business/coach">Coach (no details)</Link>
-        <Link to="/type-of-business/moving-company">Moving Company (no details)</Link>
+        <Link to="/type-of-business/coach">Coach</Link>
+        <Link to="/type-of-business/moving-company">Moving Company</Link>
         <Link to="/type-of-business/boutique-clothing-business">Boutique Clothing Business</Link>
         <Link to="/type-of-business/social-media-influencer">Social Media Influencer</Link>
         <Link to="/type-of-business/etsy-business">Etsy Business</Link>

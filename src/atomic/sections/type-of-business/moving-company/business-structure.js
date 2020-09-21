@@ -15,7 +15,7 @@ import HandsIcon from "../../../../images/icons/hands.inline.svg";
 import ArrowsIcon from "../../../../images/icons/arrows.inline.svg"
 import Button from "../../../molecules/buttons/button";
 import Container from "../../../container";
-import OvalOrange2Svg from "../../../../images/oval-orange-2.inline.svg";
+import OvalOrange2Svg from "../../../../images/ovals/top-left-transparent-orange.inline.svg";
 import {shadow} from "../../../atoms/styles/shadows";
 
 const BusinessOwnerResponsibilities = styled.section`
@@ -39,7 +39,18 @@ const Oval = styled.div`
   position: absolute;
   left: 0;
   top: 200px;
+  width: 100%;
+  
+  @media (min-width: 570px){
+    width: 570px;
+  }
 `
+
+const FlexLink = styled(Link)`
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+`;
 
 const MovingBusinessStructure = () => (
     <OrangeContainer>
@@ -74,11 +85,13 @@ const MovingBusinessStructure = () => (
                         width={100}
                         widthUnit="%"
                     >
-                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}>
-                            <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                <ArrowSVG/>
-                            </IconCircle>
-                            Sole Proprietorship
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}} mixed>
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                Sole Proprietorship
+                            </FlexLink>
                         </Paragraph>
 
                         <Paragraph big>
@@ -102,11 +115,13 @@ const MovingBusinessStructure = () => (
                         width={100}
                         widthUnit="%"
                     >
-                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}>
-                            <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                <ArrowSVG/>
-                            </IconCircle>
-                            Partnership
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}} mixed>
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                Partnership
+                            </FlexLink>
                         </Paragraph>
 
                         <Paragraph big>
@@ -130,11 +145,13 @@ const MovingBusinessStructure = () => (
                         width={100}
                         widthUnit="%"
                     >
-                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}>
-                            <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                <ArrowSVG/>
-                            </IconCircle>
-                            Limited Liability Company or LLC
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}} mixed>
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                Limited Liability Company or LLC
+                            </FlexLink>
                         </Paragraph>
 
                         <Paragraph big>
@@ -158,11 +175,13 @@ const MovingBusinessStructure = () => (
                         width={100}
                         widthUnit="%"
                     >
-                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}>
-                            <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                <ArrowSVG/>
-                            </IconCircle>
-                            S Corporation
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}} mixed>
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                S Corporation
+                            </FlexLink>
                         </Paragraph>
 
                         <Paragraph big>
@@ -185,11 +204,13 @@ const MovingBusinessStructure = () => (
                         width={100}
                         widthUnit="%"
                     >
-                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}>
-                            <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                <ArrowSVG/>
-                            </IconCircle>
-                            C Corporation
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}} mixed>
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                C Corporation
+                            </FlexLink>
                         </Paragraph>
 
                         <Paragraph big>
@@ -207,12 +228,14 @@ const MovingBusinessStructure = () => (
                     <Paragraph big style={{paddingTop: "48px", paddingBottom: 0}} mixed={true}>
                         In most cases, our recommendation for your moving business would be to create an LLC.
                         We’ve <Link to="/">got
-                        a complete guide</Link> to everything you need to do. <Link to="/">LLC formation does vary from state to state</Link>,
+                        a complete guide</Link> to everything you need to do. <Link to="/">LLC formation does vary from
+                        state to state</Link>,
                         but
                         we’ve got you covered, wherever you are.
                     </Paragraph>
 
-                    <Button theme="primary48" width="365px" arrow content={{url: "/", text: "Start your business with us, today!"}} />
+                    <Button theme="primary48" width="365px" arrow
+                            content={{url: "/", text: "Start your business with us, today!"}}/>
 
                 </ImageContent>
             </BusinessOwnerResponsibilities>

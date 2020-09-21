@@ -3,17 +3,20 @@ import TextCenterLayout from "../../../components/partials/blocks/heading-center
 import InfoCardsSection from "../../partials/info-cards-section";
 import styled from "styled-components";
 import {gradient} from "../../atoms/styles/colors";
+import Container from "../../container";
 
 const InsuranceBusiness = ({children, title, description, InfoCards}) => (
     <Wrapper>
         {children}
-        <div style={{paddingBottom: "100px"}}>
-            <TextCenterLayout
-                headline={title}
-                text={description}
-            />
-        </div>
-        <InfoCardsSection cards={InfoCards}/>
+        <Container>
+            <div style={{paddingBottom: "100px"}}>
+                <TextCenterLayout
+                    headline={title}
+                    text={description}
+                />
+            </div>
+            <InfoCardsSection cards={InfoCards}/>
+        </Container>
     </Wrapper>
 );
 

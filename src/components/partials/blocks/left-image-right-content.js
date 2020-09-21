@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Container from "../../container";
+import Container from "../../../atomic/container";
 import Image from "../../image_nobase64";
 
 const Wrapper = styled.div`

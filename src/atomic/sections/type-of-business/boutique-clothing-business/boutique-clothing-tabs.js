@@ -12,7 +12,7 @@ import {Paragraph} from "../../../atoms/typography/paragraph";
 import CkeckText from "../../../../components/static-check/text-only";
 import OvalSVG from "../../../../images/ovals/bottom-left-transparent-blue3.inline.svg";
 import OvalGreenSVG from "../../../../images/ovals/bottom-left-transparent-orange.inline.svg";
-import Container from "../../../../components/container";
+import Container from "../../../container";
 import BlueBoxWithAbsoluteText from "../../../molecules/text-blocks/blue-box-with-absolute-text";
 import Adventages from "../../../../components/adventages";
 import CountingTextBoxed from "../../../molecules/text-blocks/counting-text-boxed";
@@ -35,6 +35,14 @@ const Tab = ({children}) => {
         </ButtonBox>
     )
 };
+
+const WrapperMain = styled.div`
+  margin-top: 120px;
+  position: relative;
+  @media (min-width: 992px){
+      margin-top: 40px;
+  }
+`;
 
 const Wrapper = styled.div`
   display: flex;
@@ -230,7 +238,7 @@ const OvalBottom = styled.div`
 `
 
 const BoutiqueClothingTabs = ({layout, columns}) => (
-    <Wrapper>
+    <WrapperMain>
         <Oval>
             <OvalSVG/>
         </Oval>
@@ -747,7 +755,7 @@ const BoutiqueClothingTabs = ({layout, columns}) => (
                 </VisibilitySensor>
             </Wrapper>
         </Container>
-    </Wrapper>
+    </WrapperMain>
 );
 
 export default BoutiqueClothingTabs;

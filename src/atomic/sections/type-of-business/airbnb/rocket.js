@@ -24,7 +24,7 @@ const Rocket = () => (
                 <Image filename="rocket-2x" alt="rocket lunch"/>
             </RocketWrapper>
             <Content>
-                <Heading size={4} style={{fontFamily: "MarkPro-Bold, sans-serif", fontSize: "40px"}}>
+                <Heading size={4} style={{fontFamily: "MarkPro, sans-serif", fontSize: "40px"}}>
                     Are You Ready to Start an Airbnb?
                 </Heading>
                 <Paragraph big>
