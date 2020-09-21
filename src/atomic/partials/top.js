@@ -208,7 +208,7 @@ const TextContainer = styled.div`
 
 const ImageContainer = styled.div`
   display: flex;
-  max-width: 950px;
+  max-width: ${props => props.imageWidth ? `${props.imageWidth}px` : "950px"};
   width: 100%;
   top: 50%;
   right: 55%;
@@ -228,7 +228,7 @@ const ImageContainer = styled.div`
   }
 `;
 
-const Top = ({ children, imageName, imageAlt, contentWidth, headlineWidth, textWidth, ovalColor, ...rest }) => (
+const Top = ({ children, imageName, imageAlt, imageWidth, contentWidth, headlineWidth, textWidth, ovalColor, ...rest }) => (
   <Wrapper {...rest}>
     <VisibilitySensor partialVisibility once>
       {({ isVisible }) => (
@@ -237,7 +237,7 @@ const Top = ({ children, imageName, imageAlt, contentWidth, headlineWidth, textW
         </Oval>
       )}
     </VisibilitySensor>
-    <ImageContainer>
+    <ImageContainer imageWidth={imageWidth}>
       <Image filename={imageName} alt={imageAlt} />
     </ImageContainer>
     <Container>
