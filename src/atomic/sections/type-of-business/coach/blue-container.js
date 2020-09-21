@@ -2,7 +2,10 @@ import Container from "../../../container";
 import {Heading} from "../../../atoms/typography/heading";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import TextBlockWithImage from "../../../molecules/mixed-blocks/text-block-with-absolute-image";
-import OkIcon from "../../../../images/icons/ok.inline.svg";
+import Icon1 from "../../../../images/icons/identify-your-unique-selling-point.inline.svg";
+import Icon2 from "../../../../images/icons/look-at-who-your-competitors-are-in-the-space.inline.svg"
+import Icon3 from "../../../../images/icons/understand-your-market.inline.svg"
+import Icon4 from "../../../../images/icons/talk-to-clients.inline.svg"
 import {color} from "../../../../components/styles/colors";
 import React from "react";
 import styled from "styled-components";
@@ -99,7 +102,7 @@ const BlueContainer = () => (
                 </TitleBox>
 
                 <GridSectionList>
-                    <TextBlockWithImage className="containerMargin" SvgImage={OkIcon} imageBackgroundColor={color.babyblue2}
+                    <TextBlockWithImage className="containerMargin" SvgImage={Icon1} imageBackgroundColor={color.babyblue2}
                                         imageShadowColor={color.babyblue2}>
                         <Heading size={4}>
                             Identify your coaching business’ unique selling points (USPs)
@@ -111,7 +114,7 @@ const BlueContainer = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage className="containerMargin" SvgImage={OkIcon} imageBackgroundColor={color.green2}
+                    <TextBlockWithImage className="containerMargin" SvgImage={Icon2} imageBackgroundColor={color.green2}
                                         imageShadowColor={color.green2}>
                         <Heading size={4}>
                             Look at who your competitors are in
@@ -123,7 +126,7 @@ const BlueContainer = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage className="containerMargin" SvgImage={OkIcon} imageBackgroundColor={color.orange2}
+                    <TextBlockWithImage className="containerMargin" SvgImage={Icon3} imageBackgroundColor={color.orange2}
                                         imageShadowColor={color.orange2}>
                         <Heading size={4}>
                             Understand your market
@@ -134,7 +137,7 @@ const BlueContainer = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage className="containerMargin" SvgImage={OkIcon} imageBackgroundColor={color.purple2}
+                    <TextBlockWithImage className="containerMargin" SvgImage={Icon4} imageBackgroundColor={color.purple2}
                                         imageShadowColor={color.purple2}>
                         <Heading size={4}>
                             Talk to clients
