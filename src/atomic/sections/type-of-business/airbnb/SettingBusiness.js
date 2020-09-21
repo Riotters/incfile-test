@@ -2,7 +2,7 @@ import React from "react";
 import Container from "../../../container";
 import TextCenterLayout from "../../../partials/heading-center";
 import TopImageBox from "../../../../components/top-image-box";
-import {color} from "../../../../components/styles/colors";
+import {color} from "../../../atoms/styles/colors";
 import styled from "styled-components";
 import Curve from "../../../../images/green-curve.inline.svg";
 import GreenOval from "../../../../images/ovals/top-left-transparent-green2.inline.svg";
@@ -60,7 +60,7 @@ const SettingBusiness = () => (
                     </p>
 
                     <GreenCurve>
-                        <Curve/>
+                        <Curve />
                     </GreenCurve>
                 </TopImageBox>
 
@@ -110,9 +110,15 @@ const GreenCurve = styled.div`
     
     display: none;
   
-  @media (min-width: 1200px){
-    display: block;
-  }
+    @media (min-width: 1200px){
+        display: block;
+    }
+    
+    svg{
+        path{
+            fill: ${color.green2};
+        }
+    }
 `;
 
 const Oval = styled.div`
