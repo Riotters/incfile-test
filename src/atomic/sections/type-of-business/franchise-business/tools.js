@@ -13,22 +13,22 @@ import Curve from "../../../../images/curve-orange.inline.svg";
 
 const ToolsAndLinks = () => (
     <Wrapper>
+        <ContentCenter contentWidth={770}>
+            <div>
+                <TextCenterLayout headline="Franchise Business Resources"
+                                  text="The best place to start looking for your franchise business resources is with the franchisor itself. They will have devoted considerable time and effort to providing you with the resources, guidance and support you need to succeed."/>
+
+                <Paragraph big>
+                    See if they have an internet or intranet site where you can meet up with other franchisees to
+                    discuss business initiatives, issues and best practice.
+                </Paragraph>
+                <Paragraph big>
+                    Here are some other franchising groups and communities.
+                </Paragraph>
+            </div>
+        </ContentCenter>
+
         <Container>
-            <ContentCenter contentWidth={770}>
-                <div>
-                    <TextCenterLayout headline="Franchise Business Resources"
-                                      text="The best place to start looking for your franchise business resources is with the franchisor itself. They will have devoted considerable time and effort to providing you with the resources, guidance and support you need to succeed."/>
-
-                    <Paragraph big>
-                        See if they have an internet or intranet site where you can meet up with other franchisees to
-                        discuss business initiatives, issues and best practice.
-                    </Paragraph>
-                    <Paragraph big>
-                        Here are some other franchising groups and communities.
-                    </Paragraph>
-                </div>
-            </ContentCenter>
-
             <LinksContainer>
 
                 <LinkItem>
@@ -55,15 +55,14 @@ const ToolsAndLinks = () => (
         </Container>
 
         <BlueContainer>
-            <Container>
 
-                <CurveWrapper>
-                    <Curve/>
-                </CurveWrapper>
+            <CurveWrapper>
+                <Curve/>
+            </CurveWrapper>
 
-                <UsefulTools toolsList={toolsList.tools} headlineText={toolsList.headlineText}
-                             description={toolsList.description}/>
-            </Container>
+            <UsefulTools toolsList={toolsList.tools} headlineText={toolsList.headlineText}
+                         description={toolsList.description}/>
+
         </BlueContainer>
     </Wrapper>
 );
@@ -124,6 +123,7 @@ const LinkItem = styled.div`
 
 const BlueContainer = styled.div`
     background-image: ${gradient.blue3};
+    position: relative;
 `;
 
 export default ToolsAndLinks;
