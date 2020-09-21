@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Container from "../../../container";
 import {toolsList} from "../../../../static/type-of-business/bar-nightclub";
 import UsefulTools from "../../../partials/useful-tools";
 import OvalSvg from "../../../../images/ovals/bottom-left-transparent-orange.inline.svg";
@@ -8,12 +7,12 @@ import OvalSvg from "../../../../images/ovals/bottom-left-transparent-orange.inl
 const Links = () => (
     <Wrapper>
         <Oval>
-            <OvalSvg />
+            <OvalSvg/>
         </Oval>
-        <Container>
-            <UsefulTools style={{paddingBottom: "200px"}} toolsList={toolsList.tools} headlineText={toolsList.headlineText}
-                         description={toolsList.description}/>
-        </Container>
+
+        <UsefulTools style={{paddingBottom: "200px"}} toolsList={toolsList.tools} headlineText={toolsList.headlineText}
+                     description={toolsList.description}/>
+
     </Wrapper>
 );
 

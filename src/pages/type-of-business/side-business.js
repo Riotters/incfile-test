@@ -305,190 +305,191 @@ const SideBusiness = () => (
                 <OvalSvg2/>
             </Oval>
 
-            <Container>
-                <BusinessOwnerResponsibilities>
-                    <ImageContent image="unique-business-2" paddingTop="60">
-                        <Heading size={4} style={{fontSize: "24px"}}>
-                            Choose the Right Business Structure and Register Your Side Business
-                        </Heading>
+            <BusinessOwnerResponsibilities>
+                <ImageContent image="unique-business-2" paddingTop="60">
+                    <Heading size={4} style={{fontSize: "24px"}}>
+                        Choose the Right Business Structure and Register Your Side Business
+                    </Heading>
+                    <Paragraph big>
+                        There are five main business structures you can have in the U.S., and it’s important to
+                        choose the right one. We’ve shared your options below.
+                        They are:
+                    </Paragraph>
+
+                    <TextBlockWithImage
+                        SvgImage={HandsIcon}
+                        textBackgroundColor="transparent"
+                        imageBackgroundColor={color.white}
+                        imageShadowColor={shadow.white2}
+                        imageShadowOpacity={0.5}
+                        boxShadow={false}
+                        paddingLeft={0}
+                        style={{marginTop: "40px"}}
+                        circleShadowY={40}
+                        circleShadowBlure={80}
+                        width={100}
+                        widthUnit="%"
+                    >
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
+                                   mixed={true}>
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                Sole Proprietorship
+                            </FlexLink>
+                        </Paragraph>
+
                         <Paragraph big>
-                            There are five main business structures you can have in the U.S., and it’s important to
-                            choose the right one. We’ve shared your options below.
-                            They are:
+                            This is the "default" business structure and is what your side business will be if you
+                            decide not to create a more formal structure. We don't recommend this type of business
+                            as it doesn't give you the legal protections you need.
+                        </Paragraph>
+                    </TextBlockWithImage>
+
+                    <TextBlockWithImage
+                        SvgImage={LimitedIcon}
+                        textBackgroundColor="transparent"
+                        imageBackgroundColor={color.white}
+                        imageShadowColor={shadow.white2}
+                        imageShadowOpacity={0.5}
+                        boxShadow={false}
+                        paddingLeft={0}
+                        style={{marginTop: "40px"}}
+                        circleShadowY={40}
+                        circleShadowBlure={80}
+                        width={100}
+                        widthUnit="%"
+                    >
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
+                                   mixed={true}>
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                Partnership
+                            </FlexLink>
                         </Paragraph>
 
-                        <TextBlockWithImage
-                            SvgImage={HandsIcon}
-                            textBackgroundColor="transparent"
-                            imageBackgroundColor={color.white}
-                            imageShadowColor={shadow.white2}
-                            imageShadowOpacity={0.5}
-                            boxShadow={false}
-                            paddingLeft={0}
-                            style={{marginTop: "40px"}}
-                            circleShadowY={40}
-                            circleShadowBlure={80}
-                            width={100}
-                            widthUnit="%"
-                        >
-                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
-                                       mixed={true}>
-                                <FlexLink to="/">
-                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                        <ArrowSVG/>
-                                    </IconCircle>
-                                    Sole Proprietorship
-                                </FlexLink>
-                            </Paragraph>
-
-                            <Paragraph big>
-                                This is the "default" business structure and is what your side business will be if you
-                                decide not to create a more formal structure. We don't recommend this type of business
-                                as it doesn't give you the legal protections you need.
-                            </Paragraph>
-                        </TextBlockWithImage>
-
-                        <TextBlockWithImage
-                            SvgImage={LimitedIcon}
-                            textBackgroundColor="transparent"
-                            imageBackgroundColor={color.white}
-                            imageShadowColor={shadow.white2}
-                            imageShadowOpacity={0.5}
-                            boxShadow={false}
-                            paddingLeft={0}
-                            style={{marginTop: "40px"}}
-                            circleShadowY={40}
-                            circleShadowBlure={80}
-                            width={100}
-                            widthUnit="%"
-                        >
-                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
-                                       mixed={true}>
-                                <FlexLink to="/">
-                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                        <ArrowSVG/>
-                                    </IconCircle>
-                                    Partnership
-                                </FlexLink>
-                            </Paragraph>
-
-                            <Paragraph big>
-                                This is a type of business that is formed when two or more people work together without
-                                creating a more formal business entity. Like a sole proprietorship, it may not give you
-                                all the protections your side business may need.
-                            </Paragraph>
-                        </TextBlockWithImage>
-
-                        <TextBlockWithImage
-                            SvgImage={SeriesIcon}
-                            textBackgroundColor="transparent"
-                            imageBackgroundColor={color.white}
-                            imageShadowColor={shadow.white2}
-                            imageShadowOpacity={0.5}
-                            boxShadow={false}
-                            paddingLeft={0}
-                            style={{marginTop: "40px"}}
-                            circleShadowY={40}
-                            circleShadowBlure={80}
-                            width={100}
-                            widthUnit="%"
-                        >
-                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
-                                       mixed={true}>
-                                <FlexLink to="/">
-                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                        <ArrowSVG/>
-                                    </IconCircle>
-                                    Limited Liability Company or LLC
-                                </FlexLink>
-                            </Paragraph>
-
-                            <Paragraph big>
-                                The most common type of business entity, an LLC is fast, simple and inexpensive to set
-                                up and maintain. It protects your personal finances and assets and is a great way to
-                                start your side business.
-                            </Paragraph>
-                        </TextBlockWithImage>
-
-                        <TextBlockWithImage
-                            SvgImage={PlaneIcon}
-                            textBackgroundColor="transparent"
-                            imageBackgroundColor={color.white}
-                            imageShadowColor={shadow.white2}
-                            imageShadowOpacity={0.5}
-                            boxShadow={false}
-                            paddingLeft={0}
-                            style={{marginTop: "40px"}}
-                            circleShadowY={40}
-                            circleShadowBlure={80}
-                            width={100}
-                            widthUnit="%"
-                        >
-                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
-                                       mixed={true}>
-                                <FlexLink to="/">
-                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                        <ArrowSVG/>
-                                    </IconCircle>
-                                    S Corporation
-                                </FlexLink>
-                            </Paragraph>
-
-                            <Paragraph big>
-                                This is a more complex type of business and isn't generally recommended for smaller
-                                organization.
-                            </Paragraph>
-                        </TextBlockWithImage>
-
-                        <TextBlockWithImage
-                            SvgImage={RockerIcon}
-                            textBackgroundColor="transparent"
-                            imageBackgroundColor={color.white}
-                            imageShadowColor={shadow.white2}
-                            imageShadowOpacity={0.5}
-                            boxShadow={false}
-                            paddingLeft={0}
-                            style={{marginTop: "40px"}}
-                            circleShadowY={40}
-                            circleShadowBlure={80}
-                            width={100}
-                            widthUnit="%"
-                        >
-                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
-                                       mixed={true}>
-                                <FlexLink to="/">
-                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                        <ArrowSVG/>
-                                    </IconCircle>
-                                    C Corporation
-                                </FlexLink>
-                            </Paragraph>
-
-                            <Paragraph big>
-                                These are the largest and most complex types of businesses and are far more than the
-                                average entrepreneur or business owner will need.
-
-                            </Paragraph>
-                        </TextBlockWithImage>
-
-                        <Paragraph big style={{paddingTop: "48px", paddingBottom: 0}} mixed={true}>
-                            Our <Link to="/">in-depth guide</Link> covers more of the advantages and disadvantages
-                            of different types of business entities, and you’ve still got questions, you can read our
-                            answers to frequently asked questions on <Link to="/">choosing the right business structure</Link>.
+                        <Paragraph big>
+                            This is a type of business that is formed when two or more people work together without
+                            creating a more formal business entity. Like a sole proprietorship, it may not give you
+                            all the protections your side business may need.
                         </Paragraph>
-                        <Paragraph big style={{paddingTop: "48px", paddingBottom: 0}} mixed={true}>
-                            In most cases, our recommendation for a side business would be to create an LLC. See our
-                            <Link to="/">complete guide to creating an LLC</Link> to learn everything you need to do, or and have Incfile
-                            register your business for you.
-                            No matter what state you’re in, we’ve got you covered.
+                    </TextBlockWithImage>
+
+                    <TextBlockWithImage
+                        SvgImage={SeriesIcon}
+                        textBackgroundColor="transparent"
+                        imageBackgroundColor={color.white}
+                        imageShadowColor={shadow.white2}
+                        imageShadowOpacity={0.5}
+                        boxShadow={false}
+                        paddingLeft={0}
+                        style={{marginTop: "40px"}}
+                        circleShadowY={40}
+                        circleShadowBlure={80}
+                        width={100}
+                        widthUnit="%"
+                    >
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
+                                   mixed={true}>
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                Limited Liability Company or LLC
+                            </FlexLink>
                         </Paragraph>
 
-                        <Button theme="primary48" width="365px" arrow
-                                content={{url: "/", text: "Start your business with us, today!"}}/>
+                        <Paragraph big>
+                            The most common type of business entity, an LLC is fast, simple and inexpensive to set
+                            up and maintain. It protects your personal finances and assets and is a great way to
+                            start your side business.
+                        </Paragraph>
+                    </TextBlockWithImage>
 
-                    </ImageContent>
-                </BusinessOwnerResponsibilities>
-            </Container>
+                    <TextBlockWithImage
+                        SvgImage={PlaneIcon}
+                        textBackgroundColor="transparent"
+                        imageBackgroundColor={color.white}
+                        imageShadowColor={shadow.white2}
+                        imageShadowOpacity={0.5}
+                        boxShadow={false}
+                        paddingLeft={0}
+                        style={{marginTop: "40px"}}
+                        circleShadowY={40}
+                        circleShadowBlure={80}
+                        width={100}
+                        widthUnit="%"
+                    >
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
+                                   mixed={true}>
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                S Corporation
+                            </FlexLink>
+                        </Paragraph>
+
+                        <Paragraph big>
+                            This is a more complex type of business and isn't generally recommended for smaller
+                            organization.
+                        </Paragraph>
+                    </TextBlockWithImage>
+
+                    <TextBlockWithImage
+                        SvgImage={RockerIcon}
+                        textBackgroundColor="transparent"
+                        imageBackgroundColor={color.white}
+                        imageShadowColor={shadow.white2}
+                        imageShadowOpacity={0.5}
+                        boxShadow={false}
+                        paddingLeft={0}
+                        style={{marginTop: "40px"}}
+                        circleShadowY={40}
+                        circleShadowBlure={80}
+                        width={100}
+                        widthUnit="%"
+                    >
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
+                                   mixed={true}>
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                C Corporation
+                            </FlexLink>
+                        </Paragraph>
+
+                        <Paragraph big>
+                            These are the largest and most complex types of businesses and are far more than the
+                            average entrepreneur or business owner will need.
+
+                        </Paragraph>
+                    </TextBlockWithImage>
+
+                    <Paragraph big style={{paddingTop: "48px", paddingBottom: 0}} mixed={true}>
+                        Our <Link to="/">in-depth guide</Link> covers more of the advantages and disadvantages
+                        of different types of business entities, and you’ve still got questions, you can read our
+                        answers to frequently asked questions on <Link to="/">choosing the right business
+                        structure</Link>.
+                    </Paragraph>
+                    <Paragraph big style={{paddingTop: "48px", paddingBottom: 0}} mixed={true}>
+                        In most cases, our recommendation for a side business would be to create an LLC. See our
+                        <Link to="/">complete guide to creating an LLC</Link> to learn everything you need to do, or and
+                        have Incfile
+                        register your business for you.
+                        No matter what state you’re in, we’ve got you covered.
+                    </Paragraph>
+
+                    <Button theme="primary48" width="365px" arrow
+                            content={{url: "/", text: "Start your business with us, today!"}}/>
+
+                </ImageContent>
+            </BusinessOwnerResponsibilities>
+
         </OrangeContainer>
 
         <SettingBusiness/>
@@ -632,8 +633,11 @@ const BubbleImage = styled.div`
 `
 
 const TabsWrapper = styled.div`
-    position: relative;
-    padding-top: 100px;
+  margin-top: 120px;
+  position: relative;
+  @media (min-width: 992px){
+      margin-top: 21px;
+  }
 `;
 
 const FlexLink = styled(Link)`

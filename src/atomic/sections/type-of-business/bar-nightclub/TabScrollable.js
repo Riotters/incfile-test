@@ -3,8 +3,7 @@ import styled from "styled-components";
 import {Heading} from "../../../atoms/typography/heading";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import {color} from "../../../atoms/styles/colors";
-import Container from "../../../../components/container";
-import VisibilitySensor from "../../../../components/VisibilitySensor";
+import Container from "../../../container";
 import ArrowSVG from "../../../../images/arrow.inline.svg";
 import BusinessLicensesColoredIcon from "../../../../images/icons/business-licenses-and-permits-colored.inline.svg";
 import BusinessInsuranceColoredIcon from "../../../../images/icons/business-insurance-colored.inline.svg";
@@ -13,6 +12,7 @@ import CountingTextBoxed from "../../../molecules/text-blocks/counting-text-boxe
 import CkeckText from "../../../../components/static-check/text-only";
 import TextBoxed from "../../../molecules/static-check/circle-checkmark-text-boxed";
 import {Link} from "gatsby";
+import VisibilitySensor from "../../../../components/VisibilitySensor";
 
 const ButtonList = [
     {
@@ -35,363 +35,432 @@ const ButtonList = [
 const TabScrollable = ({layout, columns}) => {
     const [isActive, setActive] = useState(0);
 
-    const handleClick = (index) => {
+    const handleClick = (index, elementId) => {
         setActive(index);
+        let element = document.getElementById(elementId);
+
+        if (null !== element) {
+            element.scrollIntoView({behavior: 'smooth', block: "start"});
+        }
     };
 
     return (
         <Wrapper>
             <Container>
                 <Wrapper layout={layout}>
-                    <VisibilitySensor partialVisibility once>
-                        {({isVisible}) => (
-                            <>
-                                <TabsWrapper className={isVisible ? "slideUp enter" : "slideUp"} layout={layout}>
-                                    <StickyContainer>
-                                        <Sticky layout={layout} columns={columns}>
-                                            {ButtonList.map((item, index) => {
-                                                return (
-                                                    <Tab key={index}
-                                                         onClick={() => handleClick(index)}
-                                                         className={`accordian-tab${isActive === index ? " active" : ""}`}>
-                                                        <Icon>
-                                                            <item.icon/>
-                                                        </Icon>
-                                                        <Content>
-                                                            <span>{item.title}</span>
-                                                            <Arrow className="tabArrow">
-                                                                <ArrowSVG/>
-                                                            </Arrow>
-                                                        </Content>
-                                                    </Tab>
-                                                );
-                                            })}
-                                        </Sticky>
-                                    </StickyContainer>
-                                </TabsWrapper>
+                    <TabsWrapper className="slideUp enter" layout={layout}>
+                        <StickyContainer>
+                            <Sticky layout={layout} columns={columns}>
+                                {ButtonList.map((item, index) => {
+                                    return (
+                                        <Tab key={index}
+                                             onClick={() => handleClick(index, item.tabId)}
+                                             className={`accordian-tab${(isActive === index) ? " active" : ""}`}>
+                                            <Icon>
+                                                <item.icon/>
+                                            </Icon>
+                                            <Content>
+                                                <span>{item.title}</span>
+                                                <Arrow className="tabArrow">
+                                                    <ArrowSVG/>
+                                                </Arrow>
+                                            </Content>
+                                        </Tab>
+                                    );
+                                })}
+                            </Sticky>
+                        </StickyContainer>
+                    </TabsWrapper>
 
-                                <PanelWrapper>
-                                    <Heading size={3}>Rules, Regulations and Laws for Bars and Clubs</Heading>
-                                    <Paragraph big mixed={true}>
-                                        Of course, along with running a business there are many rules, regulations and
-                                        legalities you need to be aware of.
-                                    </Paragraph>
-                                    <Paragraph big mixed={true}
-                                               style={{fontFamily: "Avenir-Heavy", color: color.black}}>
-                                        Liquor Licenses, Business Licenses and Permits
-                                    </Paragraph>
-                                    <Paragraph big mixed={true}>
-                                        Required licenses and permits for your bar or club business will vary depending
-                                        on where you're operating and what regulations apply.
-                                        In general, there are different permits required at the local, state and federal
-                                        levels.
-                                    </Paragraph>
+                    <PanelWrapper>
+                        <Heading size={3}>Rules, Regulations and Laws for Bars and Clubs</Heading>
+                        <Paragraph big mixed={true}>
+                            Of course, along with running a business there are many rules, regulations and
+                            legalities you need to be aware of.
+                        </Paragraph>
 
-                                    <CountingTextBoxed number={1}>
-                                        <div>
-                                            <Paragraph big style={{
-                                                fontFamily: "Avenir-Heavy",
-                                                color: color.black,
-                                                marginBottom: 0
-                                            }}>
-                                                Local
-                                            </Paragraph>
-                                            <Paragraph bottomMargin={0}>
-                                                Your region, county or city may require you to have licenses or permits
-                                                to operate a business. Talk to your city’s Chamber of Commerce to learn
-                                                about your local licensing and permit requirements. In particular, you
-                                                will need to understand the laws around serving alcohol and opening
-                                                hours.
-                                            </Paragraph>
-                                        </div>
-                                    </CountingTextBoxed>
+                        <VisibilitySensor partialVisibility minTopValue={0}>
+                            {({isVisible}) => {
+                                if (isVisible) {
+                                    handleClick(0);
+                                }
+                                return (
+                                    <div id={ButtonList[0].tabId}>
+                                        <Paragraph big mixed={true}
+                                                   style={{fontFamily: "Avenir-Heavy", color: color.black, marginTop: "140px"}}>
+                                            Liquor Licenses, Business Licenses and Permits
+                                        </Paragraph>
+                                        <Paragraph big mixed={true}>
+                                            Required licenses and permits for your bar or club business will vary
+                                            depending
+                                            on where you're operating and what regulations apply.
+                                            In general, there are different permits required at the local, state and
+                                            federal
+                                            levels.
+                                        </Paragraph>
 
-                                    <CountingTextBoxed number={2}>
-                                        <div>
-                                            <Paragraph big style={{
-                                                fontFamily: "Avenir-Heavy",
-                                                color: color.black,
-                                                marginBottom: 0
-                                            }}>
-                                                State
-                                            </Paragraph>
-                                            <Paragraph bottomMargin={0} mixed>
-                                                You can find all the information you need on statewide licenses and
-                                                permits
-                                                on the website for your Secretary of State. You can find all those
-                                                details
-                                                in our <Link to="/">state-by-state guides to company formation</Link>.
-                                                Alternatively, the
-                                                Small
-                                                Business Administration website has a <Link to="/">list of licenses and
-                                                permits by
-                                                state</Link>.
-                                            </Paragraph>
-                                        </div>
-                                    </CountingTextBoxed>
-
-                                    <CountingTextBoxed number={3}>
-                                        <div>
-                                            <Paragraph big style={{
-                                                fontFamily: "Avenir-Heavy",
-                                                color: color.black,
-                                                marginBottom: 0
-                                            }}>
-                                                Federal
-                                            </Paragraph>
-                                            <Paragraph bottomMargin={0} mixed>
-                                                The Small Business Administration provides <Link to="/">details of any
-                                                national
-                                                or federal licenses and permits</Link> you might need.
-                                            </Paragraph>
-                                        </div>
-                                    </CountingTextBoxed>
-
-                                    <Paragraph big style={{
-                                        fontFamily: "Avenir-Heavy",
-                                        color: color.black,
-                                        marginTop: "48px",
-                                        marginBottom: 0
-                                    }}>
-                                        When researching your licensing requirements, pay very careful attention to the
-                                        following areas:
-                                    </Paragraph>
-
-                                    <ListWrapper style={{marginTop: "48px"}}>
-                                        <ListBox>
-                                            <CkeckText>
-                                                <Paragraph big>
-                                                    Licenses to serve beer, wine or spirits for consumption on the
-                                                    premises
+                                        <CountingTextBoxed number={1}>
+                                            <div>
+                                                <Paragraph big style={{
+                                                    fontFamily: "Avenir-Heavy",
+                                                    color: color.black,
+                                                    marginBottom: 0
+                                                }}>
+                                                    Local
                                                 </Paragraph>
-                                            </CkeckText>
-                                        </ListBox>
-
-                                        <ListBox>
-                                            <CkeckText>
-                                                <Paragraph big>
-                                                    Detailed records of all liquor, wine and beer received from
-                                                    suppliers
+                                                <Paragraph bottomMargin={0}>
+                                                    Your region, county or city may require you to have licenses or
+                                                    permits
+                                                    to operate a business. Talk to your city’s Chamber of Commerce to
+                                                    learn
+                                                    about your local licensing and permit requirements. In particular,
+                                                    you
+                                                    will need to understand the laws around serving alcohol and opening
+                                                    hours.
                                                 </Paragraph>
-                                            </CkeckText>
-                                        </ListBox>
+                                            </div>
+                                        </CountingTextBoxed>
 
-                                        <ListBox>
-                                            <CkeckText>
-                                                <Paragraph big>
-                                                    Licenses to prepare and serve food
+                                        <CountingTextBoxed number={2}>
+                                            <div>
+                                                <Paragraph big style={{
+                                                    fontFamily: "Avenir-Heavy",
+                                                    color: color.black,
+                                                    marginBottom: 0
+                                                }}>
+                                                    State
                                                 </Paragraph>
-                                            </CkeckText>
-                                        </ListBox>
-
-                                        <ListBox>
-                                            <CkeckText>
-                                                <Paragraph big>
-                                                    Zoning requirements for opening a bar or club
+                                                <Paragraph bottomMargin={0} mixed>
+                                                    You can find all the information you need on statewide licenses and
+                                                    permits
+                                                    on the website for your Secretary of State. You can find all those
+                                                    details
+                                                    in our <Link to="/">state-by-state guides to company
+                                                    formation</Link>.
+                                                    Alternatively, the
+                                                    Small
+                                                    Business Administration website has a <Link to="/">list of licenses
+                                                    and
+                                                    permits by
+                                                    state</Link>.
                                                 </Paragraph>
-                                            </CkeckText>
-                                        </ListBox>
+                                            </div>
+                                        </CountingTextBoxed>
 
-                                        <ListBox>
-                                            <CkeckText>
-                                                <Paragraph big>
-                                                    Dealing with are the Alcohol and Tobacco Tax and Trade Bureau (TTB)
-                                                    and your local Department of Alcoholic Beverage Control (ABC agency)
+                                        <CountingTextBoxed number={3}>
+                                            <div>
+                                                <Paragraph big style={{
+                                                    fontFamily: "Avenir-Heavy",
+                                                    color: color.black,
+                                                    marginBottom: 0
+                                                }}>
+                                                    Federal
                                                 </Paragraph>
-                                            </CkeckText>
-                                        </ListBox>
-
-                                        <ListBox>
-                                            <CkeckText>
-                                                <Paragraph big>
-                                                    Licenses that regulate renovations, entertainment, advertising and
-                                                    personnel
+                                                <Paragraph bottomMargin={0} mixed>
+                                                    The Small Business Administration provides <Link to="/">details of
+                                                    any
+                                                    national
+                                                    or federal licenses and permits</Link> you might need.
                                                 </Paragraph>
-                                            </CkeckText>
-                                        </ListBox>
-                                    </ListWrapper>
+                                            </div>
+                                        </CountingTextBoxed>
 
-                                    <Heading size={3} style={{marginTop: "120px", marginBottom: "24px"}}>
-                                        Business Insurance
-                                    </Heading>
-                                    <Paragraph big mixed={true}>
-                                        Most bar or club businesses should have comprehensive business insurance. There
-                                        are different types.
-                                    </Paragraph>
+                                        <Paragraph big style={{
+                                            fontFamily: "Avenir-Heavy",
+                                            color: color.black,
+                                            marginTop: "48px",
+                                            marginBottom: 0
+                                        }}>
+                                            When researching your licensing requirements, pay very careful attention to
+                                            the
+                                            following areas:
+                                        </Paragraph>
 
-                                    <CountingTextBoxed number={1}>
-                                        <div>
-                                            <Paragraph big style={{
-                                                fontFamily: "Avenir-Heavy",
-                                                color: color.black,
-                                                marginBottom: 0
-                                            }}>
-                                                Workers compensation insurance
-                                            </Paragraph>
-                                            <Paragraph bottomMargin={0} mixed>
-                                                <Link to="/">This insurance</Link> provides coverage for job-related illnesses, disabilities
-                                                or injuries that affect employees. Regulations for this insurance vary
-                                                from state to state. It typically covers areas like medical costs, loss
-                                                of earnings, compensation and retraining.
-                                            </Paragraph>
-                                        </div>
-                                    </CountingTextBoxed>
-                                    <CountingTextBoxed number={2}>
-                                        <div>
-                                            <Paragraph big style={{
-                                                fontFamily: "Avenir-Heavy",
-                                                color: color.black,
-                                                marginBottom: 0
-                                            }}>
-                                                General liability insurance
-                                            </Paragraph>
-                                            <Paragraph bottomMargin={0}>
-                                                This insurance protects your business from claims due to being sued and
-                                                other legalities. This may include injury to members of the public,
-                                                property damage, personal liabilities, legal defense and more. It can
-                                                help protect your business from financial penalties and bankruptcy; this
-                                                will be vital as you will be serving patrons on your premises.
-                                            </Paragraph>
-                                        </div>
-                                    </CountingTextBoxed>
+                                        <ListWrapper style={{marginTop: "48px"}}>
+                                            <ListBox>
+                                                <CkeckText>
+                                                    <Paragraph big>
+                                                        Licenses to serve beer, wine or spirits for consumption on the
+                                                        premises
+                                                    </Paragraph>
+                                                </CkeckText>
+                                            </ListBox>
 
-                                    <Heading size={3} style={{marginTop: "120px", marginBottom: "24px"}}>Registered
-                                        Agents</Heading>
-                                    <Paragraph big mixed={true}>
-                                        All businesses need to have a Registered Agent. These are individuals
-                                        or other businesses who can accept legal documents on behalf of your bar or club
-                                        company.
-                                    </Paragraph>
+                                            <ListBox>
+                                                <CkeckText>
+                                                    <Paragraph big>
+                                                        Detailed records of all liquor, wine and beer received from
+                                                        suppliers
+                                                    </Paragraph>
+                                                </CkeckText>
+                                            </ListBox>
 
-                                    <Paragraph big mixed={true}>
-                                        Although you can act as your own <Link to="/">Registered Agent</Link>, we recommend using a
-                                        professional service. It ensures there will always be someone available to
-                                        receive important legal documentation on your behalf and also removes your name
-                                        and address from the public record.
-                                    </Paragraph>
+                                            <ListBox>
+                                                <CkeckText>
+                                                    <Paragraph big>
+                                                        Licenses to prepare and serve food
+                                                    </Paragraph>
+                                                </CkeckText>
+                                            </ListBox>
 
-                                    <Paragraph big mixed={true}>
-                                        When you <Link to="/">incorporate through us</Link>, we provide a <Link to="/">complete Registered Agent service</Link>
-                                        free for the first year.
-                                    </Paragraph>
+                                            <ListBox>
+                                                <CkeckText>
+                                                    <Paragraph big>
+                                                        Zoning requirements for opening a bar or club
+                                                    </Paragraph>
+                                                </CkeckText>
+                                            </ListBox>
 
-                                    <Paragraph big mixed={true} style={{fontFamily: "Avenir-Heavy", color: color.black}}>
-                                        Business Taxes for Bars and Clubs
-                                    </Paragraph>
-                                    <Paragraph big mixed={true}>
-                                        Taxes are a fact of life, and if you’re in business there are various ways you
-                                        will need to file and pay them.
-                                    </Paragraph>
+                                            <ListBox>
+                                                <CkeckText>
+                                                    <Paragraph big>
+                                                        Dealing with are the Alcohol and Tobacco Tax and Trade Bureau
+                                                        (TTB)
+                                                        and your local Department of Alcoholic Beverage Control (ABC
+                                                        agency)
+                                                    </Paragraph>
+                                                </CkeckText>
+                                            </ListBox>
 
-                                    <TextBoxed style={{marginBottom: "8px"}}>
-                                        <div>
-                                            <Paragraph style={{fontWeight: "bold", marginBottom: 0}}>
-                                                File with the IRS
-                                            </Paragraph>
-                                            <Paragraph style={{marginBottom: 0}}>
-                                                Let the IRS know you are setting up a business.
-                                            </Paragraph>
-                                        </div>
-                                    </TextBoxed>
+                                            <ListBox>
+                                                <CkeckText>
+                                                    <Paragraph big>
+                                                        Licenses that regulate renovations, entertainment, advertising
+                                                        and
+                                                        personnel
+                                                    </Paragraph>
+                                                </CkeckText>
+                                            </ListBox>
+                                        </ListWrapper>
+                                    </div>
+                                )
+                            }}
+                        </VisibilitySensor>
 
-                                    <TextBoxed style={{marginBottom: "8px"}}>
-                                        <div>
-                                            <Paragraph style={{fontWeight: "bold", marginBottom: 0}}>
-                                                Payroll tax
-                                            </Paragraph>
-                                            <Paragraph style={{marginBottom: 0}}>
-                                                If you pay employees, you will be liable for payroll tax.
-                                            </Paragraph>
-                                        </div>
-                                    </TextBoxed>
+                        <VisibilitySensor partialVisibility minTopValue={0}>
+                            {({isVisible}) => {
+                                if (isVisible) {
+                                    handleClick(1);
+                                }
+                                return (
+                                    <div id={ButtonList[1].tabId}>
+                                        <Heading size={3} style={{marginTop: "140px", marginBottom: "24px"}}>
+                                            Business Insurance
+                                        </Heading>
+                                        <Paragraph big mixed={true}>
+                                            Most bar or club businesses should have comprehensive business insurance.
+                                            There
+                                            are different types.
+                                        </Paragraph>
 
-                                    <TextBoxed style={{marginBottom: "8px"}}>
-                                        <div>
-                                            <Paragraph style={{fontWeight: "bold", marginBottom: 0}}>
-                                                Self-employment tax
-                                            </Paragraph>
-                                            <Paragraph style={{marginBottom: 0}}>
-                                                Unlike employees, the earnings from your business will be taxed under a
-                                                self-employment tax (FICA and Medicaid). This is just over 15 percent of
-                                                your earnings.
-                                            </Paragraph>
-                                        </div>
-                                    </TextBoxed>
+                                        <CountingTextBoxed number={1}>
+                                            <div>
+                                                <Paragraph big style={{
+                                                    fontFamily: "Avenir-Heavy",
+                                                    color: color.black,
+                                                    marginBottom: 0
+                                                }}>
+                                                    Workers compensation insurance
+                                                </Paragraph>
+                                                <Paragraph bottomMargin={0} mixed>
+                                                    <Link to="/">This insurance</Link> provides coverage for job-related
+                                                    illnesses,
+                                                    disabilities
+                                                    or injuries that affect employees. Regulations for this insurance
+                                                    vary
+                                                    from state to state. It typically covers areas like medical costs,
+                                                    loss
+                                                    of earnings, compensation and retraining.
+                                                </Paragraph>
+                                            </div>
+                                        </CountingTextBoxed>
+                                        <CountingTextBoxed number={2}>
+                                            <div>
+                                                <Paragraph big style={{
+                                                    fontFamily: "Avenir-Heavy",
+                                                    color: color.black,
+                                                    marginBottom: 0
+                                                }}>
+                                                    General liability insurance
+                                                </Paragraph>
+                                                <Paragraph bottomMargin={0}>
+                                                    This insurance protects your business from claims due to being sued
+                                                    and
+                                                    other legalities. This may include injury to members of the public,
+                                                    property damage, personal liabilities, legal defense and more. It
+                                                    can
+                                                    help protect your business from financial penalties and bankruptcy;
+                                                    this
+                                                    will be vital as you will be serving patrons on your premises.
+                                                </Paragraph>
+                                            </div>
+                                        </CountingTextBoxed>
+                                    </div>
+                                )
+                            }}
+                        </VisibilitySensor>
 
-                                    <TextBoxed style={{marginBottom: "8px"}}>
-                                        <div>
-                                            <Paragraph style={{fontWeight: "bold", marginBottom: 0}}>
-                                                State tax
-                                            </Paragraph>
-                                            <Paragraph style={{marginBottom: 0}}>
-                                                Most states do have a state income tax. If yours does, you will be taxed
-                                                on your earnings as normal. To register for state tax, see your
-                                                Secretary of State website.
-                                            </Paragraph>
-                                        </div>
-                                    </TextBoxed>
+                        <VisibilitySensor partialVisibility minTopValue={0}>
+                            {({isVisible}) => {
+                                if (isVisible) {
+                                    handleClick(2);
+                                }
+                                return (
+                                    <div id={ButtonList[2].tabId}>
+                                        <Heading size={3} style={{marginTop: "140px", marginBottom: "24px"}}>Registered
+                                            Agents</Heading>
+                                        <Paragraph big mixed={true}>
+                                            All businesses need to have a Registered Agent. These are individuals
+                                            or other businesses who can accept legal documents on behalf of your bar or
+                                            club
+                                            company.
+                                        </Paragraph>
 
-                                    <TextBoxed style={{marginBottom: "8px"}}>
-                                        <div>
-                                            <Paragraph style={{fontWeight: "bold", marginBottom: 0}}>
-                                                Federal income tax
-                                            </Paragraph>
-                                            <Paragraph style={{marginBottom: 0}}>
-                                                You will need to pay income tax on any profits or earnings you take from
-                                                your business. In most cases, profits from the business will “flow
-                                                through” to your individual tax return and you will be taxed there.
-                                            </Paragraph>
-                                        </div>
-                                    </TextBoxed>
+                                        <Paragraph big mixed={true}>
+                                            Although you can act as your own <Link to="/">Registered Agent</Link>, we
+                                            recommend using a
+                                            professional service. It ensures there will always be someone available to
+                                            receive important legal documentation on your behalf and also removes your
+                                            name
+                                            and address from the public record.
+                                        </Paragraph>
 
-                                    <TextBoxed style={{marginBottom: "8px"}}>
-                                        <div>
-                                            <Paragraph style={{fontWeight: "bold", marginBottom: 0}}>
-                                                Sales tax
-                                            </Paragraph>
-                                            <Paragraph style={{marginBottom: 0}}>
-                                                If you’re selling locally, you may also be liable for collecting and
-                                                paying sales tax. To register for sales tax, see your Secretary of State
-                                                website.
-                                            </Paragraph>
-                                        </div>
-                                    </TextBoxed>
+                                        <Paragraph big mixed={true}>
+                                            When you <Link to="/">incorporate through us</Link>, we provide a <Link
+                                            to="/">complete
+                                            Registered Agent service</Link>
+                                            free for the first year.
+                                        </Paragraph>
 
-                                    <TextBoxed style={{marginBottom: "8px"}}>
-                                        <div>
-                                            <Paragraph style={{fontWeight: "bold", marginBottom: 0}}>
-                                                Corporation tax
-                                            </Paragraph>
-                                            <Paragraph style={{marginBottom: 0}}>
-                                                If you incorporate as a C Corporation, you will also need to pay
-                                                corporation tax — you will be taxed both on your profits as a business
-                                                and when you extract earnings from your company. This “double taxation”
-                                                is one of the reasons we normally recommend LLCs as a good business
-                                                structure, since they avoid this.
-                                            </Paragraph>
-                                        </div>
-                                    </TextBoxed>
+                                        <Paragraph big mixed={true}
+                                                   style={{fontFamily: "Avenir-Heavy", color: color.black}}>
+                                            Business Taxes for Bars and Clubs
+                                        </Paragraph>
+                                        <Paragraph big mixed={true}>
+                                            Taxes are a fact of life, and if you’re in business there are various ways
+                                            you
+                                            will need to file and pay them.
+                                        </Paragraph>
 
-                                    <TextBoxed style={{marginBottom: "8px"}}>
-                                        <div>
-                                            <Paragraph style={{fontWeight: "bold", marginBottom: 0}}>
-                                                Other taxes
-                                            </Paragraph>
-                                            <Paragraph style={{marginBottom: 0}}>
-                                                In certain circumstances you may need to pay some other types of taxes.
-                                                Talk to your accountant to find out what else you may be liable for.
-                                            </Paragraph>
-                                        </div>
-                                    </TextBoxed>
+                                        <TextBoxed style={{marginBottom: "8px"}}>
+                                            <div>
+                                                <Paragraph style={{fontWeight: "bold", marginBottom: 0}}>
+                                                    File with the IRS
+                                                </Paragraph>
+                                                <Paragraph style={{marginBottom: 0}}>
+                                                    Let the IRS know you are setting up a business.
+                                                </Paragraph>
+                                            </div>
+                                        </TextBoxed>
 
-                                    <Paragraph big style={{marginTop: "48px"}}>
-                                        As a rule of thumb, we recommend keeping back around a third of your earnings to
-                                        pay your taxes. We can <Link to="/">prepare and file your tax returns for you</Link>.
-                                    </Paragraph>
-                                </PanelWrapper>
-                            </>
-                        )}
-                    </VisibilitySensor>
+                                        <TextBoxed style={{marginBottom: "8px"}}>
+                                            <div>
+                                                <Paragraph style={{fontWeight: "bold", marginBottom: 0}}>
+                                                    Payroll tax
+                                                </Paragraph>
+                                                <Paragraph style={{marginBottom: 0}}>
+                                                    If you pay employees, you will be liable for payroll tax.
+                                                </Paragraph>
+                                            </div>
+                                        </TextBoxed>
+
+                                        <TextBoxed style={{marginBottom: "8px"}}>
+                                            <div>
+                                                <Paragraph style={{fontWeight: "bold", marginBottom: 0}}>
+                                                    Self-employment tax
+                                                </Paragraph>
+                                                <Paragraph style={{marginBottom: 0}}>
+                                                    Unlike employees, the earnings from your business will be taxed
+                                                    under a
+                                                    self-employment tax (FICA and Medicaid). This is just over 15
+                                                    percent of
+                                                    your earnings.
+                                                </Paragraph>
+                                            </div>
+                                        </TextBoxed>
+
+                                        <TextBoxed style={{marginBottom: "8px"}}>
+                                            <div>
+                                                <Paragraph style={{fontWeight: "bold", marginBottom: 0}}>
+                                                    State tax
+                                                </Paragraph>
+                                                <Paragraph style={{marginBottom: 0}}>
+                                                    Most states do have a state income tax. If yours does, you will be
+                                                    taxed
+                                                    on your earnings as normal. To register for state tax, see your
+                                                    Secretary of State website.
+                                                </Paragraph>
+                                            </div>
+                                        </TextBoxed>
+
+                                        <TextBoxed style={{marginBottom: "8px"}}>
+                                            <div>
+                                                <Paragraph style={{fontWeight: "bold", marginBottom: 0}}>
+                                                    Federal income tax
+                                                </Paragraph>
+                                                <Paragraph style={{marginBottom: 0}}>
+                                                    You will need to pay income tax on any profits or earnings you take
+                                                    from
+                                                    your business. In most cases, profits from the business will “flow
+                                                    through” to your individual tax return and you will be taxed there.
+                                                </Paragraph>
+                                            </div>
+                                        </TextBoxed>
+
+                                        <TextBoxed style={{marginBottom: "8px"}}>
+                                            <div>
+                                                <Paragraph style={{fontWeight: "bold", marginBottom: 0}}>
+                                                    Sales tax
+                                                </Paragraph>
+                                                <Paragraph style={{marginBottom: 0}}>
+                                                    If you’re selling locally, you may also be liable for collecting and
+                                                    paying sales tax. To register for sales tax, see your Secretary of
+                                                    State
+                                                    website.
+                                                </Paragraph>
+                                            </div>
+                                        </TextBoxed>
+
+                                        <TextBoxed style={{marginBottom: "8px"}}>
+                                            <div>
+                                                <Paragraph style={{fontWeight: "bold", marginBottom: 0}}>
+                                                    Corporation tax
+                                                </Paragraph>
+                                                <Paragraph style={{marginBottom: 0}}>
+                                                    If you incorporate as a C Corporation, you will also need to pay
+                                                    corporation tax — you will be taxed both on your profits as a
+                                                    business
+                                                    and when you extract earnings from your company. This “double
+                                                    taxation”
+                                                    is one of the reasons we normally recommend LLCs as a good business
+                                                    structure, since they avoid this.
+                                                </Paragraph>
+                                            </div>
+                                        </TextBoxed>
+
+                                        <TextBoxed style={{marginBottom: "8px"}}>
+                                            <div>
+                                                <Paragraph style={{fontWeight: "bold", marginBottom: 0}}>
+                                                    Other taxes
+                                                </Paragraph>
+                                                <Paragraph style={{marginBottom: 0}}>
+                                                    In certain circumstances you may need to pay some other types of
+                                                    taxes.
+                                                    Talk to your accountant to find out what else you may be liable for.
+                                                </Paragraph>
+                                            </div>
+                                        </TextBoxed>
+                                    </div>
+                                )
+                            }}
+                        </VisibilitySensor>
+
+                        <Paragraph big style={{marginTop: "48px"}}>
+                            As a rule of thumb, we recommend keeping back around a third of your earnings to
+                            pay your taxes. We can <Link to="/">prepare and file your tax returns for you</Link>.
+                        </Paragraph>
+                    </PanelWrapper>
+
                 </Wrapper>
             </Container>
         </Wrapper>
@@ -401,7 +470,7 @@ const TabScrollable = ({layout, columns}) => {
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  padding-bottom: 115px;
+  padding-bottom: 76px;
   position: relative;
   padding-top: 100px;
 
