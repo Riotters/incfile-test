@@ -2,8 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import {InfoCards} from "../../../../static/type-of-business/travel-agency";
 import OvalSVG from "../../../../images/ovals/top-right-transparent-blue.inline.svg";
+import InsuranceBusiness from "../../general/insurance-business";
 
-const InsuranceBusiness = () => (
+const InsuranceBusinessSection = () => (
     <InsuranceBusiness title={InfoCards.title} description={InfoCards.description} InfoCards={InfoCards.items}>
         <Oval>
             <OvalSVG/>
@@ -12,7 +13,7 @@ const InsuranceBusiness = () => (
 );
 
 const Oval = styled.div`
-    position: absolute; 
+    position: absolute;  
     top: 142px;
     right: 0;
     width: 100%;
@@ -22,4 +23,4 @@ const Oval = styled.div`
         width: 570px;
     }
 `;
-export default InsuranceBusiness;
+export default InsuranceBusinessSection;

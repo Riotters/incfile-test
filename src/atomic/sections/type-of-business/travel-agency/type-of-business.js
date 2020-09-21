@@ -24,15 +24,16 @@ const TypeOfBusiness = () => (
         <TextCenterLayout headlineWidth={770} textWidth={770} headline="What Type of Daycare Should You Start?"
                           text="There are several different types of daycare business that you can start. You will also want to decide if you want to be a work-from-home travel agent, or if you have other options for where to locate your business."/>
 
-        <Container>
-            <Service>
 
-                <ContentCenter>
-                    <Paragraph big>
-                        Here are some of the most popular options:
-                    </Paragraph>
-                </ContentCenter>
+        <Service>
 
+            <ContentCenter>
+                <Paragraph big>
+                    Here are some of the most popular options:
+                </Paragraph>
+            </ContentCenter>
+
+            <Container>
                 <AdventagesBox>
                     <CurveWrapper>
                         <Curve color={color.orange1}/>
@@ -53,8 +54,9 @@ const TypeOfBusiness = () => (
                         />
                     ))}
                 </AdventagesBox>
-            </Service>
-        </Container>
+            </Container>
+        </Service>
+
     </Wrapper>
 );
 

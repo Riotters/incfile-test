@@ -41,8 +41,7 @@ const Tab = ({children}) => {
 
 TabTitle.propTypes = {
     title: PropTypes.string.isRequired,
-    arrow: PropTypes.bool,
-    SvgIcon: PropTypes.object.isRequired
+    arrow: PropTypes.bool
 };
 
 TabTitle.defaultProps = {
