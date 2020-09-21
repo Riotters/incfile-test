@@ -13,38 +13,39 @@ import OvalSvg2 from "../../../../images/ovals/top-right-transparent-yellow.inli
 const ToolsAndLinks = () => (
     <Wrapper>
         <Oval>
-            <OvalSvg />
+            <OvalSvg/>
         </Oval>
         <Oval2>
-            <OvalSvg2 />
+            <OvalSvg2/>
         </Oval2>
         <Oval3>
-            <OvalSvg />
+            <OvalSvg/>
         </Oval3>
-        <Container>
-            <TextCenterLayout headline="Groups and Forums for Hotel Owners"
-                              text="Here are some useful places where you can connect with other bed and breakfast entrepreneurs."/>
+        <TextCenterLayout headlineWidth={770} textWidth={770} headline="Groups and Forums for Hotel Owners"
+                          text="Here are some useful places where you can connect with other bed and breakfast entrepreneurs."/>
 
+        <Container>
             <LinksContainer>
 
                 <LinkItem>
-                    <PathLink to="http://www.innspiring.com/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="http://www.innspiring.com/" textColor={color.blue1} hoverColor={color.orange1}
+                              arrowColor={color.blue1}>
                         Innspiring forums
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="https://www.facebook.com/managersforum/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.facebook.com/managersforum/" textColor={color.blue1}
+                              hoverColor={color.orange1} arrowColor={color.blue1}>
                         Hotel Owners and Managers Facebook Group
                     </PathLink>
                 </LinkItem>
 
             </LinksContainer>
         </Container>
-        
-        <Container>
-            <UsefulTools toolsList={toolsList.tools} headlineText={toolsList.headlineText} description={toolsList.description} />
-        </Container>
+
+        <UsefulTools toolsList={toolsList.tools} headlineText={toolsList.headlineText}
+                     description={toolsList.description}/>
     </Wrapper>
 );
 

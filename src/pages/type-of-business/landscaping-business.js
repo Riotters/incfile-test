@@ -74,9 +74,8 @@ const LandscapingBusiness = () => (
                 with a great opportunity
             </p>
             <ButtonsBox>
-                <Button theme="primary56" marginMD="0 24px 0 0" arrow>
-                    Start Now
-                </Button>
+                <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{url: "/", text: "Start Now"}}/>
+
             </ButtonsBox>
 
             <RatingRow>
@@ -460,7 +459,7 @@ const LandscapingBusiness = () => (
             </Oval2>
             <Container>
                 <CenterBox>
-                    <TextCenterLayout headline="Plan Your Landscaping Business"/>
+                    <TextCenterLayout headlineWidth={770} headline="Plan Your Landscaping Business"/>
                     <Paragraph big>
                         Before you start your business, there are a few key areas you need to focus on. You will need to
                         establish whether there’s a demand for your landscaping business services, look at potential
@@ -481,7 +480,8 @@ const LandscapingBusiness = () => (
                 </CenterBox>
 
                 <GridSectionList>
-                    <TextBlockWithImage width={100} widthUnit="%" SvgImage={IdentifyIcon} imageBackgroundColor={color.babyblue2}
+                    <TextBlockWithImage width={100} widthUnit="%" SvgImage={IdentifyIcon}
+                                        imageBackgroundColor={color.babyblue2}
                                         imageShadowColor={color.babyblue2}>
                         <Heading size={4}>
                             Identify your business’s unique selling points (USPs)
@@ -494,7 +494,8 @@ const LandscapingBusiness = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage width={100} widthUnit="%" SvgImage={LookIcon} imageBackgroundColor={color.green2}
+                    <TextBlockWithImage width={100} widthUnit="%" SvgImage={LookIcon}
+                                        imageBackgroundColor={color.green2}
                                         imageShadowColor={color.green2}>
                         <Heading size={4}>
                             Look at who your competitors are in
@@ -507,7 +508,8 @@ const LandscapingBusiness = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage width={100} widthUnit="%" SvgImage={MarketIcon} imageBackgroundColor={color.orange2}
+                    <TextBlockWithImage width={100} widthUnit="%" SvgImage={MarketIcon}
+                                        imageBackgroundColor={color.orange2}
                                         imageShadowColor={color.orange2}>
                         <Heading size={4}>
                             Do market research
@@ -517,7 +519,8 @@ const LandscapingBusiness = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage width={100} widthUnit="%" SvgImage={TalkIcon} imageBackgroundColor={color.purple2}
+                    <TextBlockWithImage width={100} widthUnit="%" SvgImage={TalkIcon}
+                                        imageBackgroundColor={color.purple2}
                                         imageShadowColor={color.purple2}>
                         <Heading size={4}>
                             Talk to clients
@@ -528,7 +531,8 @@ const LandscapingBusiness = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage width={100} widthUnit="%" SvgImage={InvolvedIcon} imageBackgroundColor={color.red2}
+                    <TextBlockWithImage width={100} widthUnit="%" SvgImage={InvolvedIcon}
+                                        imageBackgroundColor={color.red2}
                                         imageShadowColor={color.red2}>
                         <Heading size={4}>
                             Get involved with business communities and discussion groups
@@ -650,201 +654,208 @@ const LandscapingBusiness = () => (
                 <OvalOrange2Svg/>
             </Oval>
 
-            <Container>
-                <BusinessOwnerResponsibilities>
-                    <ImageContent image="unique-business-2" paddingTop="60">
-                        <Heading size={4} style={{fontSize: "24px"}}>
-                            Choose the Right Business Structure and Register Your Landscaping Business
-                        </Heading>
+            <BusinessOwnerResponsibilities>
+                <ImageContent image="unique-business-2" paddingTop="60">
+                    <Heading size={4} style={{fontSize: "24px"}}>
+                        Choose the Right Business Structure and Register Your Landscaping Business
+                    </Heading>
+                    <Paragraph big>
+                        Now that you have all the background information for your landscaping business, it’s time to
+                        make it into a reality. Starts by choosing the right structure or “legal entity” for your
+                        business. In the U.S., there are five main business structures. They are:
+                    </Paragraph>
+
+                    <TextBlockWithImage
+                        SvgImage={HandsIcon}
+                        textBackgroundColor="transparent"
+                        imageBackgroundColor={color.white}
+                        imageShadowColor={shadow.white2}
+                        imageShadowOpacity={0.5}
+                        boxShadow={false}
+                        paddingLeft={0}
+                        style={{marginTop: "40px"}}
+                        circleShadowY={40}
+                        circleShadowBlure={80}
+                        width={100}
+                        widthUnit="%"
+                    >
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
+                                   mixed={true}>
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                Sole Proprietorship
+                            </FlexLink>
+                        </Paragraph>
+
                         <Paragraph big>
-                            Now that you have all the background information for your landscaping business, it’s time to
-                            make it into a reality. Starts by choosing the right structure or “legal entity” for your
-                            business. In the U.S., there are five main business structures. They are:
+                            This is the "default" business structure and is what your influencer business will be if
+                            you decide not to create a more formal structure. We don't recommend this type of
+                            business as it doesn't give you the legal protections you need.
+                        </Paragraph>
+                    </TextBlockWithImage>
+
+                    <TextBlockWithImage
+                        SvgImage={LimitedIcon}
+                        textBackgroundColor="transparent"
+                        imageBackgroundColor={color.white}
+                        imageShadowColor={shadow.white2}
+                        imageShadowOpacity={0.5}
+                        boxShadow={false}
+                        paddingLeft={0}
+                        style={{marginTop: "40px"}}
+                        circleShadowY={40}
+                        circleShadowBlure={80}
+                        width={100}
+                        widthUnit="%"
+                    >
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
+                                   mixed={true}>
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                Limited Liability Company or LLC
+                            </FlexLink>
                         </Paragraph>
 
-                        <TextBlockWithImage
-                            SvgImage={HandsIcon}
-                            textBackgroundColor="transparent"
-                            imageBackgroundColor={color.white}
-                            imageShadowColor={shadow.white2}
-                            imageShadowOpacity={0.5}
-                            boxShadow={false}
-                            paddingLeft={0}
-                            style={{marginTop: "40px"}}
-                            circleShadowY={40}
-                            circleShadowBlure={80}
-                            width={100}
-                            widthUnit="%"
-                        >
-                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
-                                       mixed={true}>
-                                <FlexLink to="/">
-                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                        <ArrowSVG/>
-                                    </IconCircle>
-                                    Sole Proprietorship
-                                </FlexLink>
-                            </Paragraph>
-
-                            <Paragraph big>
-                                This is the "default" business structure and is what your influencer business will be if
-                                you decide not to create a more formal structure. We don't recommend this type of
-                                business as it doesn't give you the legal protections you need.
-                            </Paragraph>
-                        </TextBlockWithImage>
-
-                        <TextBlockWithImage
-                            SvgImage={LimitedIcon}
-                            textBackgroundColor="transparent"
-                            imageBackgroundColor={color.white}
-                            imageShadowColor={shadow.white2}
-                            imageShadowOpacity={0.5}
-                            boxShadow={false}
-                            paddingLeft={0}
-                            style={{marginTop: "40px"}}
-                            circleShadowY={40}
-                            circleShadowBlure={80}
-                            width={100}
-                            widthUnit="%"
-                        >
-                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
-                                       mixed={true}>
-                                <FlexLink to="/">
-                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                        <ArrowSVG/>
-                                    </IconCircle>
-                                    Limited Liability Company or LLC
-                                </FlexLink>
-                            </Paragraph>
-
-                            <Paragraph big>
-                                The most common type of business entity. An LLC is fast, simple and inexpensive to setup
-                                and maintain. It protects your personal finances and assets and is a great way to start
-                                your real estate
-                            </Paragraph>
-                        </TextBlockWithImage>
-
-                        <TextBlockWithImage
-                            SvgImage={SeriesIcon}
-                            textBackgroundColor="transparent"
-                            imageBackgroundColor={color.white}
-                            imageShadowColor={shadow.white2}
-                            imageShadowOpacity={0.5}
-                            boxShadow={false}
-                            paddingLeft={0}
-                            style={{marginTop: "40px"}}
-                            circleShadowY={40}
-                            circleShadowBlure={80}
-                            width={100}
-                            widthUnit="%"
-                        >
-                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
-                                       mixed={true}>
-                                <FlexLink to="/">
-                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                        <ArrowSVG/>
-                                    </IconCircle>
-                                    Series LLC
-                                </FlexLink>
-                            </Paragraph>
-
-                            <Paragraph big>
-                                This is a special type of LLC entity that's only available in certain states. It allows
-                                you to create "mini" LLCs, each with their own limited liability and separate assets,
-                                under the umbrella of a master LLC.
-                            </Paragraph>
-                        </TextBlockWithImage>
-
-                        <TextBlockWithImage
-                            SvgImage={PlaneIcon}
-                            textBackgroundColor="transparent"
-                            imageBackgroundColor={color.white}
-                            imageShadowColor={shadow.white2}
-                            imageShadowOpacity={0.5}
-                            boxShadow={false}
-                            paddingLeft={0}
-                            style={{marginTop: "40px"}}
-                            circleShadowY={40}
-                            circleShadowBlure={80}
-                            width={100}
-                            widthUnit="%"
-                        >
-                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
-                                       mixed={true}>
-                                <FlexLink to="/">
-                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                        <ArrowSVG/>
-                                    </IconCircle>
-                                    S Corporation
-                                </FlexLink>
-                            </Paragraph>
-
-                            <Paragraph big>
-                                This is a more complex type of business and isn't generally recommended for smaller
-                                organization.
-                            </Paragraph>
-                        </TextBlockWithImage>
-
-                        <TextBlockWithImage
-                            SvgImage={RockerIcon}
-                            textBackgroundColor="transparent"
-                            imageBackgroundColor={color.white}
-                            imageShadowColor={shadow.white2}
-                            imageShadowOpacity={0.5}
-                            boxShadow={false}
-                            paddingLeft={0}
-                            style={{marginTop: "40px"}}
-                            circleShadowY={40}
-                            circleShadowBlure={80}
-                            width={100}
-                            widthUnit="%"
-                        >
-                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
-                                       mixed={true}>
-                                <FlexLink to="/">
-                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                        <ArrowSVG/>
-                                    </IconCircle>
-                                    C Corporation
-                                </FlexLink>
-                            </Paragraph>
-
-                            <Paragraph big>
-                                These are the largest and most complex types of businesses and are far more than the
-                                average entrepreneur or business owner will need.
-                            </Paragraph>
-                        </TextBlockWithImage>
-
-                        <Paragraph big style={{paddingTop: "48px", paddingBottom: 0}} mixed={true}>
-                            For more information on the advantages and disadvantages of different types of businesses,
-                            please <Link to="/">see our in-depth guide</Link>. If you’ve still got questions, <Link to="/">we’ve answered them to help
-                            you choose the right business structure for your boutique clothing business</Link>.
-                        </Paragraph>
-                        <Paragraph big style={{paddingTop: "48px", paddingBottom: 0}} mixed={true}>
-                            In most cases, our recommendation for a boutique business would be to create an LLC. We’ve
-                            <Link to="/">got a complete guide</Link> to everything you need to do. <Link to="/">LLC formation does vary from state to
-                            state</Link>, but we’ve got you covered, wherever you are.
-                        </Paragraph>
-
-                        <Paragraph big style={{fontFamily: "Avenir-Heavy", marginTop: "48px", color: color.black, paddingBottom: 0}}>
-                            Special Considerations for Setting up a Landscaping Business Entity
-                        </Paragraph>
                         <Paragraph big>
-                            For more information on the advantages and disadvantages of different types of businesses,
-                            please see our in-depth guide on business entities. If you still have questions, we’ve
-                            answered them to help you choose the right business structure.
+                            The most common type of business entity. An LLC is fast, simple and inexpensive to setup
+                            and maintain. It protects your personal finances and assets and is a great way to start
+                            your real estate
                         </Paragraph>
-                        <Paragraph big>
-                            In most cases our recommendation would be to create an LLC. We have a complete guide to
-                            everything you need to do, and we can set one up for your landscaping business. LLC
-                            formation
-                            does vary from state to state, but we’ve got you covered, wherever you are.
-                        </Paragraph>
-                        <Button theme="primary48" width="365px" arrow content={{url: "/", text: " Start your business with us, today!"}} />
+                    </TextBlockWithImage>
 
-                    </ImageContent>
-                </BusinessOwnerResponsibilities>
-            </Container>
+                    <TextBlockWithImage
+                        SvgImage={SeriesIcon}
+                        textBackgroundColor="transparent"
+                        imageBackgroundColor={color.white}
+                        imageShadowColor={shadow.white2}
+                        imageShadowOpacity={0.5}
+                        boxShadow={false}
+                        paddingLeft={0}
+                        style={{marginTop: "40px"}}
+                        circleShadowY={40}
+                        circleShadowBlure={80}
+                        width={100}
+                        widthUnit="%"
+                    >
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
+                                   mixed={true}>
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                Series LLC
+                            </FlexLink>
+                        </Paragraph>
+
+                        <Paragraph big>
+                            This is a special type of LLC entity that's only available in certain states. It allows
+                            you to create "mini" LLCs, each with their own limited liability and separate assets,
+                            under the umbrella of a master LLC.
+                        </Paragraph>
+                    </TextBlockWithImage>
+
+                    <TextBlockWithImage
+                        SvgImage={PlaneIcon}
+                        textBackgroundColor="transparent"
+                        imageBackgroundColor={color.white}
+                        imageShadowColor={shadow.white2}
+                        imageShadowOpacity={0.5}
+                        boxShadow={false}
+                        paddingLeft={0}
+                        style={{marginTop: "40px"}}
+                        circleShadowY={40}
+                        circleShadowBlure={80}
+                        width={100}
+                        widthUnit="%"
+                    >
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
+                                   mixed={true}>
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                S Corporation
+                            </FlexLink>
+                        </Paragraph>
+
+                        <Paragraph big>
+                            This is a more complex type of business and isn't generally recommended for smaller
+                            organization.
+                        </Paragraph>
+                    </TextBlockWithImage>
+
+                    <TextBlockWithImage
+                        SvgImage={RockerIcon}
+                        textBackgroundColor="transparent"
+                        imageBackgroundColor={color.white}
+                        imageShadowColor={shadow.white2}
+                        imageShadowOpacity={0.5}
+                        boxShadow={false}
+                        paddingLeft={0}
+                        style={{marginTop: "40px"}}
+                        circleShadowY={40}
+                        circleShadowBlure={80}
+                        width={100}
+                        widthUnit="%"
+                    >
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
+                                   mixed={true}>
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                C Corporation
+                            </FlexLink>
+                        </Paragraph>
+
+                        <Paragraph big>
+                            These are the largest and most complex types of businesses and are far more than the
+                            average entrepreneur or business owner will need.
+                        </Paragraph>
+                    </TextBlockWithImage>
+
+                    <Paragraph big style={{paddingTop: "48px", paddingBottom: 0}} mixed={true}>
+                        For more information on the advantages and disadvantages of different types of businesses,
+                        please <Link to="/">see our in-depth guide</Link>. If you’ve still got questions, <Link to="/">we’ve
+                        answered them to help
+                        you choose the right business structure for your boutique clothing business</Link>.
+                    </Paragraph>
+                    <Paragraph big style={{paddingTop: "48px", paddingBottom: 0}} mixed={true}>
+                        In most cases, our recommendation for a boutique business would be to create an LLC. We’ve
+                        <Link to="/">got a complete guide</Link> to everything you need to do. <Link to="/">LLC
+                        formation does vary from state to
+                        state</Link>, but we’ve got you covered, wherever you are.
+                    </Paragraph>
+
+                    <Paragraph big style={{
+                        fontFamily: "Avenir-Heavy",
+                        marginTop: "48px",
+                        color: color.black,
+                        paddingBottom: 0
+                    }}>
+                        Special Considerations for Setting up a Landscaping Business Entity
+                    </Paragraph>
+                    <Paragraph big>
+                        For more information on the advantages and disadvantages of different types of businesses,
+                        please see our in-depth guide on business entities. If you still have questions, we’ve
+                        answered them to help you choose the right business structure.
+                    </Paragraph>
+                    <Paragraph big>
+                        In most cases our recommendation would be to create an LLC. We have a complete guide to
+                        everything you need to do, and we can set one up for your landscaping business. LLC
+                        formation
+                        does vary from state to state, but we’ve got you covered, wherever you are.
+                    </Paragraph>
+                    <Button theme="primary48" width="365px" arrow
+                            content={{url: "/", text: " Start your business with us, today!"}}/>
+
+                </ImageContent>
+            </BusinessOwnerResponsibilities>
+
         </OrangeContainer>
 
         <SettingBusiness/>
@@ -899,9 +910,9 @@ const BlueContainer = styled.section`
 const CenterBox = styled.div`
     width: 100%;
     padding-bottom: 48px;
-    max-width: 670px;
+    max-width: 770px;
     
-    @media (min-width: 670px) {
+    @media (min-width: 770px) {
     margin: 0 auto;
     }
 `;
@@ -913,6 +924,12 @@ const GridSectionList = styled.div`
     justify-content: center;
     column-gap: 30px;
     row-gap: 70px;
+    margin-top: 76px;
+    margin-bottom 76px; 
+    
+    @media (min-width: 490px){
+        grid-template-columns: 470px;
+    }
     
     @media (min-width: 992px){
         grid-template-columns: 470px 470px;
@@ -953,7 +970,11 @@ const Oval = styled.div`
 `
 
 const TabsWrapper = styled.div`
-    position: relative;
+    margin-top: 120px;
+  position: relative;
+  @media (min-width: 992px){
+      margin-top: 21px;
+  }
 `;
 
 const TabsOval = styled.div`

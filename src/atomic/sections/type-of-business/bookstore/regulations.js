@@ -16,7 +16,7 @@ const Regulations = () => (
                 Rules, Regulations and Taxes
                 for Your Bookstore
             </Heading>
-            <Paragraph big>
+            <Paragraph big mixed>
                 Your bookstore business will need to be compliant with licenses, permits and regulations. You will need
                 to explore local, state and federal licenses and permits, and <Link to="/">we can also help out with researching your
                 business licensing needs</Link>.
@@ -26,7 +26,7 @@ const Regulations = () => (
                 them. This can include self-employment tax, state income tax and federal income tax. It’s also likely
                 that your book sales will be subject to sales and use tax.
             </Paragraph>
-            <Paragraph big>
+            <Paragraph big mixed>
                 As a rule of thumb, we recommend holding back around a third of your earnings
                 to pay your taxes. We can also <Link to="/">prepare and file your tax returns for you</Link>.
             </Paragraph>
