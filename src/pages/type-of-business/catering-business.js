@@ -63,9 +63,7 @@ const CateringBusiness = () => (
                 is a great way to make a living.
             </p>
             <ButtonsBox>
-                <Button theme="primary56" marginMD="0 24px 0 0" arrow>
-                    Start Now
-                </Button>
+                <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{url: "/", text: "Start Now"}}/>
             </ButtonsBox>
 
             <RatingRow>
@@ -518,193 +516,190 @@ const CateringBusiness = () => (
                 <OvalOrange2Svg/>
             </Oval5>
 
-            <Container>
-                <BusinessOwnerResponsibilities>
-                    <ImageContent image="unique-business-2" paddingTop="60">
-                        <Heading size={4} style={{fontSize: "24px"}}>
-                            Choose the Right Business Structure and Register Your Catering Business
-                        </Heading>
+            <BusinessOwnerResponsibilities>
+                <ImageContent image="unique-business-2" paddingTop="60">
+                    <Heading size={4} style={{fontSize: "24px"}}>
+                        Choose the Right Business Structure and Register Your Catering Business
+                    </Heading>
+                    <Paragraph big>
+                        Now that you have all the background information for your catering business, it’s time to
+                        make it into a reality. That starts by choosing the right structure or “legal entity” for
+                        your business. In the U.S., there are four main business structures. They are:
+                    </Paragraph>
+
+                    <TextBlockWithImage
+                        SvgImage={HandsIcon}
+                        textBackgroundColor="transparent"
+                        imageBackgroundColor={color.white}
+                        imageShadowColor={shadow.white2}
+                        imageShadowOpacity={0.5}
+                        boxShadow={false}
+                        paddingLeft={0}
+                        style={{marginTop: "40px"}}
+                        circleShadowY={40}
+                        circleShadowBlure={80}
+                        width={100}
+                        widthUnit="%"
+                    >
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
+                                   mixed={true}>
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                Sole Proprietorship
+                            </FlexLink>
+                        </Paragraph>
+
                         <Paragraph big>
-                            Now that you have all the background information for your catering business, it’s time to
-                            make it into a reality. That starts by choosing the right structure or “legal entity” for
-                            your business. In the U.S., there are four main business structures. They are:
+                            This is the "default" business structure and is what your influencer business will be if
+                            you decide not to create a more formal structure. We don't recommend this type of
+                            business as it doesn't give you the legal protections you need.
+                        </Paragraph>
+                    </TextBlockWithImage>
+
+                    <TextBlockWithImage
+                        SvgImage={LimitedIcon}
+                        textBackgroundColor="transparent"
+                        imageBackgroundColor={color.white}
+                        imageShadowColor={shadow.white2}
+                        imageShadowOpacity={0.5}
+                        boxShadow={false}
+                        paddingLeft={0}
+                        style={{marginTop: "40px"}}
+                        circleShadowY={40}
+                        circleShadowBlure={80}
+                        width={100}
+                        widthUnit="%"
+                    >
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
+                                   mixed={true}>
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                Limited Liability Company or LLC
+                            </FlexLink>
                         </Paragraph>
 
-                        <TextBlockWithImage
-                            SvgImage={HandsIcon}
-                            textBackgroundColor="transparent"
-                            imageBackgroundColor={color.white}
-                            imageShadowColor={shadow.white2}
-                            imageShadowOpacity={0.5}
-                            boxShadow={false}
-                            paddingLeft={0}
-                            style={{marginTop: "40px"}}
-                            circleShadowY={40}
-                            circleShadowBlure={80}
-                            width={100}
-                            widthUnit="%"
-                        >
-                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
-                                       mixed={true}>
-                                <FlexLink to="/">
-                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                        <ArrowSVG/>
-                                    </IconCircle>
-                                    Sole Proprietorship
-                                </FlexLink>
-                            </Paragraph>
-
-                            <Paragraph big>
-                                This is the "default" business structure and is what your influencer business will be if
-                                you decide not to create a more formal structure. We don't recommend this type of
-                                business as it doesn't give you the legal protections you need.
-                            </Paragraph>
-                        </TextBlockWithImage>
-
-                        <TextBlockWithImage
-                            SvgImage={LimitedIcon}
-                            textBackgroundColor="transparent"
-                            imageBackgroundColor={color.white}
-                            imageShadowColor={shadow.white2}
-                            imageShadowOpacity={0.5}
-                            boxShadow={false}
-                            paddingLeft={0}
-                            style={{marginTop: "40px"}}
-                            circleShadowY={40}
-                            circleShadowBlure={80}
-                            width={100}
-                            widthUnit="%"
-                        >
-                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
-                                       mixed={true}>
-                                <FlexLink to="/">
-                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                        <ArrowSVG/>
-                                    </IconCircle>
-                                    Limited Liability Company or LLC
-                                </FlexLink>
-                            </Paragraph>
-
-                            <Paragraph big>
-                                The most common type of business entity. An LLC is fast, simple and inexpensive to setup
-                                and maintain. It protects your personal finances and assets and is a great way to start
-                                your real estate
-                            </Paragraph>
-                        </TextBlockWithImage>
-
-                        <TextBlockWithImage
-                            SvgImage={SeriesIcon}
-                            textBackgroundColor="transparent"
-                            imageBackgroundColor={color.white}
-                            imageShadowColor={shadow.white2}
-                            imageShadowOpacity={0.5}
-                            boxShadow={false}
-                            paddingLeft={0}
-                            style={{marginTop: "40px"}}
-                            circleShadowY={40}
-                            circleShadowBlure={80}
-                            width={100}
-                            widthUnit="%"
-                        >
-                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
-                                       mixed={true}>
-                                <FlexLink to="/">
-                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                        <ArrowSVG/>
-                                    </IconCircle>
-                                    Series LLC
-                                </FlexLink>
-                            </Paragraph>
-
-                            <Paragraph big>
-                                This is a special type of LLC entity that's only available in certain states. It allows
-                                you to create "mini" LLCs, each with their own limited liability and separate assets,
-                                under the umbrella of a master LLC.
-                            </Paragraph>
-                        </TextBlockWithImage>
-
-                        <TextBlockWithImage
-                            SvgImage={PlaneIcon}
-                            textBackgroundColor="transparent"
-                            imageBackgroundColor={color.white}
-                            imageShadowColor={shadow.white2}
-                            imageShadowOpacity={0.5}
-                            boxShadow={false}
-                            paddingLeft={0}
-                            style={{marginTop: "40px"}}
-                            circleShadowY={40}
-                            circleShadowBlure={80}
-                            width={100}
-                            widthUnit="%"
-                        >
-                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
-                                       mixed={true}>
-                                <FlexLink to="/">
-                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                        <ArrowSVG/>
-                                    </IconCircle>
-                                    S Corporation
-                                </FlexLink>
-                            </Paragraph>
-
-                            <Paragraph big>
-                                This is a more complex type of business and isn't generally recommended for smaller
-                                organization.
-                            </Paragraph>
-                        </TextBlockWithImage>
-
-                        <TextBlockWithImage
-                            SvgImage={RockerIcon}
-                            textBackgroundColor="transparent"
-                            imageBackgroundColor={color.white}
-                            imageShadowColor={shadow.white2}
-                            imageShadowOpacity={0.5}
-                            boxShadow={false}
-                            paddingLeft={0}
-                            style={{marginTop: "40px"}}
-                            circleShadowY={40}
-                            circleShadowBlure={80}
-                            width={100}
-                            widthUnit="%"
-                        >
-                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
-                                       mixed={true}>
-                                <FlexLink to="/">
-                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                        <ArrowSVG/>
-                                    </IconCircle>
-                                    C Corporation
-                                </FlexLink>
-                            </Paragraph>
-
-                            <Paragraph big>
-                                These are the largest and most complex types of businesses and are far more than the
-                                average entrepreneur or business owner will need.
-                            </Paragraph>
-                        </TextBlockWithImage>
-
-                        <Paragraph big style={{paddingTop: "48px", paddingBottom: 0}} mixed={true}>
-                            For more information on the advantages and disadvantages of different types of businesses,
-                            please <Link to="/">see our in-depth guide</Link> on business entities. If you still have
-                            questions, <Link to="/">we’ve
-                            answered them to help you choose the right business structure</Link>.
+                        <Paragraph big>
+                            The most common type of business entity. An LLC is fast, simple and inexpensive to setup
+                            and maintain. It protects your personal finances and assets and is a great way to start
+                            your real estate
                         </Paragraph>
-                        <Paragraph big style={{paddingTop: "48px", paddingBottom: 0}} mixed={true}>
-                            In most cases our recommendation would be to create an LLC. We have a <Link to="/">complete
-                            guide to
-                            everything you need to do</Link>, and we can set one up for your T-shirt business. <Link
-                            to="/">LLC formation
-                            does vary from state to state</Link>, but we’ve got you covered, wherever you are.
+                    </TextBlockWithImage>
+
+                    <TextBlockWithImage
+                        SvgImage={SeriesIcon}
+                        textBackgroundColor="transparent"
+                        imageBackgroundColor={color.white}
+                        imageShadowColor={shadow.white2}
+                        imageShadowOpacity={0.5}
+                        boxShadow={false}
+                        paddingLeft={0}
+                        style={{marginTop: "40px"}}
+                        circleShadowY={40}
+                        circleShadowBlure={80}
+                        width={100}
+                        widthUnit="%"
+                    >
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
+                                   mixed={true}>
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                Series LLC
+                            </FlexLink>
                         </Paragraph>
 
-                        <Button theme="primary48" width="365px" arrow
-                                content={{url: "/", text: "Start your business with us, today!"}}/>
+                        <Paragraph big>
+                            This is a special type of LLC entity that's only available in certain states. It allows
+                            you to create "mini" LLCs, each with their own limited liability and separate assets,
+                            under the umbrella of a master LLC.
+                        </Paragraph>
+                    </TextBlockWithImage>
 
-                    </ImageContent>
-                </BusinessOwnerResponsibilities>
+                    <TextBlockWithImage
+                        SvgImage={PlaneIcon}
+                        textBackgroundColor="transparent"
+                        imageBackgroundColor={color.white}
+                        imageShadowColor={shadow.white2}
+                        imageShadowOpacity={0.5}
+                        boxShadow={false}
+                        paddingLeft={0}
+                        style={{marginTop: "40px"}}
+                        circleShadowY={40}
+                        circleShadowBlure={80}
+                        width={100}
+                        widthUnit="%"
+                    >
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
+                                   mixed={true}>
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                S Corporation
+                            </FlexLink>
+                        </Paragraph>
 
-            </Container>
-            
+                        <Paragraph big>
+                            This is a more complex type of business and isn't generally recommended for smaller
+                            organization.
+                        </Paragraph>
+                    </TextBlockWithImage>
+
+                    <TextBlockWithImage
+                        SvgImage={RockerIcon}
+                        textBackgroundColor="transparent"
+                        imageBackgroundColor={color.white}
+                        imageShadowColor={shadow.white2}
+                        imageShadowOpacity={0.5}
+                        boxShadow={false}
+                        paddingLeft={0}
+                        style={{marginTop: "40px"}}
+                        circleShadowY={40}
+                        circleShadowBlure={80}
+                        width={100}
+                        widthUnit="%"
+                    >
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
+                                   mixed={true}>
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                C Corporation
+                            </FlexLink>
+                        </Paragraph>
+
+                        <Paragraph big>
+                            These are the largest and most complex types of businesses and are far more than the
+                            average entrepreneur or business owner will need.
+                        </Paragraph>
+                    </TextBlockWithImage>
+
+                    <Paragraph big style={{paddingTop: "48px", paddingBottom: 0}} mixed={true}>
+                        For more information on the advantages and disadvantages of different types of businesses,
+                        please <Link to="/">see our in-depth guide</Link> on business entities. If you still have
+                        questions, <Link to="/">we’ve
+                        answered them to help you choose the right business structure</Link>.
+                    </Paragraph>
+                    <Paragraph big style={{paddingTop: "48px", paddingBottom: 0}} mixed={true}>
+                        In most cases our recommendation would be to create an LLC. We have a <Link to="/">complete
+                        guide to
+                        everything you need to do</Link>, and we can set one up for your T-shirt business. <Link
+                        to="/">LLC formation
+                        does vary from state to state</Link>, but we’ve got you covered, wherever you are.
+                    </Paragraph>
+
+                    <Button theme="primary48" width="365px" arrow
+                            content={{url: "/", text: "Start your business with us, today!"}}/>
+
+                </ImageContent>
+            </BusinessOwnerResponsibilities>
+
             <ContentCenter contentWidth={770}>
                 <div>
                     <Heading size={3} style={{fontSize: "40px", marginTop: "100px", textAlign: "left"}}>
@@ -741,11 +736,11 @@ const CateringBusiness = () => (
             <Oval6>
                 <OvalSvg4/>
             </Oval6>
-            <Container>
-                <UsefulTools style={{paddingBottom: "200px"}} toolsList={toolsList.tools}
-                             headlineText={toolsList.headlineText}
-                             description={toolsList.description}/>
-            </Container>
+
+            <UsefulTools style={{paddingBottom: "200px"}} toolsList={toolsList.tools}
+                         headlineText={toolsList.headlineText}
+                         description={toolsList.description}/>
+
         </ToolsWrapper>
 
         <Conclusion to="/" buttonTitle="Start your Catering Business with us, today">
@@ -825,7 +820,11 @@ const Oval = styled.div`
 `
 
 const TabsWrapper = styled.div`
-    position: relative;
+  margin-top: 120px;
+  position: relative;
+  @media (min-width: 992px){
+      margin-top: 21px;
+  }
 `;
 
 const OvalTabs = styled.div`

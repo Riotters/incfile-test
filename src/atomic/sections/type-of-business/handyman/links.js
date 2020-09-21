@@ -14,40 +14,44 @@ import OvalSvg2 from "../../../../images/ovals/bottom-left-transparent-orange.in
 const Links = () => (
     <Wrapper>
         <Oval>
-            <OvalSvg />
+            <OvalSvg/>
         </Oval>
         <OvalBottom>
-            <OvalSvg2 />
+            <OvalSvg2/>
         </OvalBottom>
-        <Container>
-            <TextCenterLayout headline="Groups and Forums for Your Handyman Business"
-                              text="Here are some useful places where you can connect with other handyman entrepreneurs."/>
+        <TextCenterLayout headlineWidth={770} textWidth={770} headline="Groups and Forums for Your Handyman Business"
+                          text="Here are some useful places where you can connect with other handyman entrepreneurs."/>
 
+        <Container>
             <LinksContainer>
 
                 <LinkItem>
                     <CurveWrapper>
                         <CurveSvg/>
                     </CurveWrapper>
-                    <PathLink to="https://www.contractortalk.com/forum.php" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.contractortalk.com/forum.php" textColor={color.blue1}
+                              hoverColor={color.orange1} arrowColor={color.blue1}>
                         Contractor Talk forums
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="https://www.diychatroom.com/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.diychatroom.com/" textColor={color.blue1} hoverColor={color.orange1}
+                              arrowColor={color.blue1}>
                         DIY Chatroom and home improvement forums
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="https://www.construct-ed.com/contractor-forums/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.construct-ed.com/contractor-forums/" textColor={color.blue1}
+                              hoverColor={color.orange1} arrowColor={color.blue1}>
                         CONSTRUCT-ED contractor forums
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="https://forums.jlconline.com/forums/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://forums.jlconline.com/forums/" textColor={color.blue1}
+                              hoverColor={color.orange1} arrowColor={color.blue1}>
                         Journal of Light Construction forums
                     </PathLink>
                 </LinkItem>
@@ -55,10 +59,8 @@ const Links = () => (
             </LinksContainer>
         </Container>
 
-        <Container>
-            <UsefulTools style={{paddingBottom: "200px"}} toolsList={toolsList.tools} headlineText={toolsList.headlineText}
-                         description={toolsList.description}/>
-        </Container>
+        <UsefulTools style={{paddingBottom: "200px"}} toolsList={toolsList.tools} headlineText={toolsList.headlineText}
+                     description={toolsList.description}/>
     </Wrapper>
 );
 

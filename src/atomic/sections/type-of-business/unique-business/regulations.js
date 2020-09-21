@@ -15,7 +15,7 @@ const Regulations = () => (
             <Heading size={4} style={{fontSize: "40px"}}>
                 Rules, Regulations and Taxes for Your Unique Business
             </Heading>
-            <Paragraph big>
+            <Paragraph big mixed>
                 It doesn’t matter how unique your business is, you can’t escape real-world licenses, permits and
                 regulations. You will need to explore local, state and federal licenses and permits, and <Link to="/">we can also
                 help out with researching your business licensing needs</Link>.
@@ -25,7 +25,7 @@ const Regulations = () => (
                 them. This can include self-employment tax, state income tax and federal income tax. Depending on where
                 and how you’re selling products and services, you may also be liable for sales and use tax.
             </Paragraph>
-            <Paragraph big>
+            <Paragraph big mixed>
                 As a rule of thumb, we recommend holding back around a third of your earnings to pay your taxes. We can
                 also <Link to="/">prepare and file your tax returns for you</Link>.
             </Paragraph>

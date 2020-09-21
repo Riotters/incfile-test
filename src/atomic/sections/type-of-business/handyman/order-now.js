@@ -90,6 +90,11 @@ const CurveWrapper = styled.div`
     position: absolute;
     left: -85px;
     top: -85px;
+    
+    @media (max-width: 992px){
+        display: none;
+    }
 `;
+
 
 export default OrderNow;

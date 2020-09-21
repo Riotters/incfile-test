@@ -542,191 +542,189 @@ const Handyman = () => (
                 <OvalBlueSvg/>
             </Oval>
 
-            <Container>
-                <BusinessOwnerResponsibilities>
-                    <ImageContent image="unique-business-green" paddingTop="60">
-                        <Heading size={4} style={{fontSize: "24px"}}>
-                            Choose the Right Business Structure and Register Your Handyman Business
-                        </Heading>
+            <BusinessOwnerResponsibilities>
+                <ImageContent image="unique-business-green" paddingTop="60">
+                    <Heading size={4} style={{fontSize: "24px"}}>
+                        Choose the Right Business Structure and Register Your Handyman Business
+                    </Heading>
+                    <Paragraph big>
+                        There are five main business structures you can have in the U.S., and it’s important to
+                        choose the right one. We’ve shared your options below.
+                        They are:
+                    </Paragraph>
+
+                    <TextBlockWithImage
+                        SvgImage={HandsIcon}
+                        textBackgroundColor="transparent"
+                        imageBackgroundColor={color.white}
+                        imageShadowColor={shadow.white2}
+                        imageShadowOpacity={0.5}
+                        boxShadow={false}
+                        paddingLeft={0}
+                        style={{marginTop: "40px"}}
+                        circleShadowY={40}
+                        circleShadowBlure={80}
+                        width={100}
+                        widthUnit="%"
+                    >
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
+                                   mixed={true}>
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                Sole Proprietorship
+                            </FlexLink>
+                        </Paragraph>
+
                         <Paragraph big>
-                            There are five main business structures you can have in the U.S., and it’s important to
-                            choose the right one. We’ve shared your options below.
-                            They are:
+                            This is the "default" business structure and is what your handyman business will be if
+                            you decide not to create a more formal structure.
+                            We don't recommend this type of business as it doesn't give you the legal protections
+                            you need.
+                        </Paragraph>
+                    </TextBlockWithImage>
+
+                    <TextBlockWithImage
+                        SvgImage={LimitedIcon}
+                        textBackgroundColor="transparent"
+                        imageBackgroundColor={color.white}
+                        imageShadowColor={shadow.white2}
+                        imageShadowOpacity={0.5}
+                        boxShadow={false}
+                        paddingLeft={0}
+                        style={{marginTop: "40px"}}
+                        circleShadowY={40}
+                        circleShadowBlure={80}
+                        width={100}
+                        widthUnit="%"
+                    >
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
+                                   mixed={true}>
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                Partnership
+                            </FlexLink>
                         </Paragraph>
 
-                        <TextBlockWithImage
-                            SvgImage={HandsIcon}
-                            textBackgroundColor="transparent"
-                            imageBackgroundColor={color.white}
-                            imageShadowColor={shadow.white2}
-                            imageShadowOpacity={0.5}
-                            boxShadow={false}
-                            paddingLeft={0}
-                            style={{marginTop: "40px"}}
-                            circleShadowY={40}
-                            circleShadowBlure={80}
-                            width={100}
-                            widthUnit="%"
-                        >
-                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
-                                       mixed={true}>
-                                <FlexLink to="/">
-                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                        <ArrowSVG/>
-                                    </IconCircle>
-                                    Sole Proprietorship
-                                </FlexLink>
-                            </Paragraph>
-
-                            <Paragraph big>
-                                This is the "default" business structure and is what your handyman business will be if
-                                you decide not to create a more formal structure.
-                                We don't recommend this type of business as it doesn't give you the legal protections
-                                you need.
-                            </Paragraph>
-                        </TextBlockWithImage>
-
-                        <TextBlockWithImage
-                            SvgImage={LimitedIcon}
-                            textBackgroundColor="transparent"
-                            imageBackgroundColor={color.white}
-                            imageShadowColor={shadow.white2}
-                            imageShadowOpacity={0.5}
-                            boxShadow={false}
-                            paddingLeft={0}
-                            style={{marginTop: "40px"}}
-                            circleShadowY={40}
-                            circleShadowBlure={80}
-                            width={100}
-                            widthUnit="%"
-                        >
-                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
-                                       mixed={true}>
-                                <FlexLink to="/">
-                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                        <ArrowSVG/>
-                                    </IconCircle>
-                                    Partnership
-                                </FlexLink>
-                            </Paragraph>
-
-                            <Paragraph big>
-                                This is a type of business that is formed when two or more people work together without
-                                creating a more formal business entity. Like a sole proprietorship, it may not give you
-                                all the protections your handyman business may need.
-                            </Paragraph>
-                        </TextBlockWithImage>
-
-                        <TextBlockWithImage
-                            SvgImage={SeriesIcon}
-                            textBackgroundColor="transparent"
-                            imageBackgroundColor={color.white}
-                            imageShadowColor={shadow.white2}
-                            imageShadowOpacity={0.5}
-                            boxShadow={false}
-                            paddingLeft={0}
-                            style={{marginTop: "40px"}}
-                            circleShadowY={40}
-                            circleShadowBlure={80}
-                            width={100}
-                            widthUnit="%"
-                        >
-                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
-                                       mixed={true}>
-                                <FlexLink to="/">
-                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                        <ArrowSVG/>
-                                    </IconCircle>
-                                    Limited Liability Company or LLC
-                                </FlexLink>
-                            </Paragraph>
-
-                            <Paragraph big>
-                                The Limited Liability Company (LLC) is ideal for most handyman businesses. An LLC is
-                                easy and inexpensive to set up, and it has the least administrative requirements of any
-                                formal business entity.
-                            </Paragraph>
-                        </TextBlockWithImage>
-
-                        <TextBlockWithImage
-                            SvgImage={PlaneIcon}
-                            textBackgroundColor="transparent"
-                            imageBackgroundColor={color.white}
-                            imageShadowColor={shadow.white2}
-                            imageShadowOpacity={0.5}
-                            boxShadow={false}
-                            paddingLeft={0}
-                            style={{marginTop: "40px"}}
-                            circleShadowY={40}
-                            circleShadowBlure={80}
-                            width={100}
-                            widthUnit="%"
-                        >
-                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
-                                       mixed={true}>
-                                <FlexLink to="/">
-                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                        <ArrowSVG/>
-                                    </IconCircle>
-                                    S Corporation
-                                </FlexLink>
-                            </Paragraph>
-
-                            <Paragraph big>
-                                This is a more complex type of business and isn't generally recommended for smaller
-                                organizations, like a handyman business.
-                            </Paragraph>
-                        </TextBlockWithImage>
-
-                        <TextBlockWithImage
-                            SvgImage={RockerIcon}
-                            textBackgroundColor="transparent"
-                            imageBackgroundColor={color.white}
-                            imageShadowColor={shadow.white2}
-                            imageShadowOpacity={0.5}
-                            boxShadow={false}
-                            paddingLeft={0}
-                            style={{marginTop: "40px"}}
-                            circleShadowY={40}
-                            circleShadowBlure={80}
-                            width={100}
-                            widthUnit="%"
-                        >
-                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
-                                       mixed={true}>
-                                <FlexLink to="/">
-                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                        <ArrowSVG/>
-                                    </IconCircle>
-                                    C Corporation
-                                </FlexLink>
-                            </Paragraph>
-
-                            <Paragraph big>
-                                These are the largest and most complex types of businesses and are typically far more
-                                than the average entrepreneur or handyman business owner will need.
-                            </Paragraph>
-                        </TextBlockWithImage>
-
-                        <Paragraph big style={{paddingTop: "48px", paddingBottom: 0}} mixed={true}>
-                            For more information on the advantages and disadvantages of different types of businesses,
-                            <Link to="/">please see our in-depth guide</Link>. If you’ve still got questions, <Link
-                            to="/">we’ve answered them to help
-                            you choose the right business structure</Link> for your handyman business.
+                        <Paragraph big>
+                            This is a type of business that is formed when two or more people work together without
+                            creating a more formal business entity. Like a sole proprietorship, it may not give you
+                            all the protections your handyman business may need.
                         </Paragraph>
-                        <Paragraph big style={{paddingTop: "48px", paddingBottom: 0}} mixed={true}>
-                            In most cases, our recommendation for your handyman business would be to create an LLC.
-                            We’ve <Link to="/">got a complete guide</Link> to everything you need to do. <Link to="/">LLC
-                            formation does vary from state
-                            to state</Link>, but we’ve got you covered, wherever you are.
+                    </TextBlockWithImage>
+
+                    <TextBlockWithImage
+                        SvgImage={SeriesIcon}
+                        textBackgroundColor="transparent"
+                        imageBackgroundColor={color.white}
+                        imageShadowColor={shadow.white2}
+                        imageShadowOpacity={0.5}
+                        boxShadow={false}
+                        paddingLeft={0}
+                        style={{marginTop: "40px"}}
+                        circleShadowY={40}
+                        circleShadowBlure={80}
+                        width={100}
+                        widthUnit="%"
+                    >
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
+                                   mixed={true}>
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                Limited Liability Company or LLC
+                            </FlexLink>
                         </Paragraph>
 
-                        <Button theme="primary48" width="365px" arrow
-                                content={{url: "/", text: "Start your business with us, today!"}}/>
-                    </ImageContent>
-                </BusinessOwnerResponsibilities>
+                        <Paragraph big>
+                            The Limited Liability Company (LLC) is ideal for most handyman businesses. An LLC is
+                            easy and inexpensive to set up, and it has the least administrative requirements of any
+                            formal business entity.
+                        </Paragraph>
+                    </TextBlockWithImage>
 
-            </Container>
+                    <TextBlockWithImage
+                        SvgImage={PlaneIcon}
+                        textBackgroundColor="transparent"
+                        imageBackgroundColor={color.white}
+                        imageShadowColor={shadow.white2}
+                        imageShadowOpacity={0.5}
+                        boxShadow={false}
+                        paddingLeft={0}
+                        style={{marginTop: "40px"}}
+                        circleShadowY={40}
+                        circleShadowBlure={80}
+                        width={100}
+                        widthUnit="%"
+                    >
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
+                                   mixed={true}>
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                S Corporation
+                            </FlexLink>
+                        </Paragraph>
+
+                        <Paragraph big>
+                            This is a more complex type of business and isn't generally recommended for smaller
+                            organizations, like a handyman business.
+                        </Paragraph>
+                    </TextBlockWithImage>
+
+                    <TextBlockWithImage
+                        SvgImage={RockerIcon}
+                        textBackgroundColor="transparent"
+                        imageBackgroundColor={color.white}
+                        imageShadowColor={shadow.white2}
+                        imageShadowOpacity={0.5}
+                        boxShadow={false}
+                        paddingLeft={0}
+                        style={{marginTop: "40px"}}
+                        circleShadowY={40}
+                        circleShadowBlure={80}
+                        width={100}
+                        widthUnit="%"
+                    >
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
+                                   mixed={true}>
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                C Corporation
+                            </FlexLink>
+                        </Paragraph>
+
+                        <Paragraph big>
+                            These are the largest and most complex types of businesses and are typically far more
+                            than the average entrepreneur or handyman business owner will need.
+                        </Paragraph>
+                    </TextBlockWithImage>
+
+                    <Paragraph big style={{paddingTop: "48px", paddingBottom: 0}} mixed={true}>
+                        For more information on the advantages and disadvantages of different types of businesses,
+                        <Link to="/">please see our in-depth guide</Link>. If you’ve still got questions, <Link
+                        to="/">we’ve answered them to help
+                        you choose the right business structure</Link> for your handyman business.
+                    </Paragraph>
+                    <Paragraph big style={{paddingTop: "48px", paddingBottom: 0}} mixed={true}>
+                        In most cases, our recommendation for your handyman business would be to create an LLC.
+                        We’ve <Link to="/">got a complete guide</Link> to everything you need to do. <Link to="/">LLC
+                        formation does vary from state
+                        to state</Link>, but we’ve got you covered, wherever you are.
+                    </Paragraph>
+
+                    <Button theme="primary48" width="365px" arrow
+                            content={{url: "/", text: "Start your business with us, today!"}}/>
+                </ImageContent>
+            </BusinessOwnerResponsibilities>
+
         </WhiteContainer>
 
         <SettingBusiness/>
@@ -845,8 +843,11 @@ const OvalGreen2 = styled.div`
 `
 
 const TabsWrapper = styled.div`
-    position: relative;
-    margin-top: 100px;
+    margin-top: 120px;
+  position: relative;
+  @media (min-width: 992px){
+      margin-top: 21px;
+  }
 `;
 
 const TabOval = styled.div`

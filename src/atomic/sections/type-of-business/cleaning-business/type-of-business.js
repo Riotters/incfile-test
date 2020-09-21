@@ -50,7 +50,7 @@ const TypeOfBusiness = () => (
                 </AdventagesBox>
             </Container>
 
-            <ContentCenter contentWidth={700}>
+            <ContentCenter contentWidth={770}>
                 <Paragraph big style={{marginBottom: "70px"}}>
                     You can go even more detailed than this and focus on narrower areas of cleaning. This might include:
                 </Paragraph>
@@ -84,6 +84,7 @@ const Wrapper = styled.div`
     background-image: ${gradient.orange3}; 
     padding-top: 100px;
     position: relative;
+    overflow: hidden;
 `;
 
 const Service = styled.div`
@@ -97,9 +98,13 @@ const AdventagesBox = styled.div`
   column-gap: 30px;
   row-gap: 20px;
     
-  @media (min-width: 992px){
-      grid-template-columns: 470px 470px;
-  }
+  @media (min-width: 490px){
+        grid-template-columns: 470px;
+    }
+    
+    @media (min-width: 992px){
+        grid-template-columns: 470px 470px;
+    }
 `;
 
 const CurveWrapper = styled.div`
