@@ -35,6 +35,14 @@ const Tab = ({children}) => {
     )
 };
 
+const WrapperMain = styled.div`
+  margin-top: 120px;
+  position: relative;
+  @media (min-width: 992px){
+      margin-top: 21px;
+  }
+`;
+
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -230,7 +238,7 @@ const OvalBottom = styled.div`
 `
 
 const CoachTabs = ({layout, columns}) => (
-    <Wrapper>
+    <WrapperMain>
         <Oval>
             <OvalSVG/>
         </Oval>
@@ -746,7 +754,7 @@ const CoachTabs = ({layout, columns}) => (
                 </VisibilitySensor>
             </Wrapper>
         </Container>
-    </Wrapper>
+    </WrapperMain>
 );
 
 export default CoachTabs;
