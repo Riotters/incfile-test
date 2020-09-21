@@ -25,7 +25,7 @@ const ToolsAndLinks = () => (
                 <LinkOvalSvg2/>
             </LinkOval2>
 
-            <TextCenterLayout headline="Discussion Groups and Forums for Your Restaurant Business"
+            <TextCenterLayout headlineWidth={770} textWidth={770} headline="Discussion Groups and Forums for Your Restaurant Business"
                               text="There are plenty of forums and online discussion groups for restaurant businesses. Start with these:"/>
 
             <Container>
@@ -67,9 +67,10 @@ const ToolsAndLinks = () => (
                 </LinksContainer>
             </Container>
 
+            <TextCenterLayout headlineWidth={770} textWidth={770} headline="Conferences for Your Restaurant Business"
+                              text="Of course, there are also regular conferences for restaurant businesses:"/>
+
             <Container>
-                <TextCenterLayout headline="Conferences for Your Restaurant Business"
-                                  text="Of course, there are also regular conferences for restaurant businesses:"/>
 
                 <LinksContainer>
 

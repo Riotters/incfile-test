@@ -137,6 +137,7 @@ const Wrapper = styled.div`
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fef6ed",endColorstr="#fef6ed",GradientType=1);
     padding-top: 100px;
     position: relative;
+    overflow: hidden;
 `;
 
 const Service = styled.div`
@@ -150,6 +151,10 @@ const AdventagesBox = styled.div`
     justify-content: center;
     column-gap: 30px;
     row-gap: 20px;
+    
+    @media (min-width: 490px){
+        grid-template-columns: 470px;
+    }
     
     @media (min-width: 992px){
         grid-template-columns: 470px 470px;

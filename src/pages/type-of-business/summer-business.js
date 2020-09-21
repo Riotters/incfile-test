@@ -36,9 +36,7 @@ const SummerBusiness = () => (
                 and everyone wants to enjoy the sunshine.
             </p>
             <ButtonsBox>
-                <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{text: "Start Now", url: "/"}}>
-                    Start Now
-                </Button>
+                <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{url: "/", text: "Start Now"}} />
             </ButtonsBox>
 
             <RatingRow>
