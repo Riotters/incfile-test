@@ -38,12 +38,30 @@ export const HomePageContent = {
         mainSteps: {
             heading3: `Forming Your Texas LLC Yourself: 6 Main Steps`,
             navSteps: [
-                `<b>Step 1</b> - Complete a Texas LLC Search and Choose a Unique Business Name`,
-                `<b>Step 2</b> - Provide an Official Business Address for Your TX LLC`,
-                `<b>Step 3</b> - Assign a Texas Registered Agent`,
-                `<b>Step 4</b> - File Your Certificate of Formation (Form 205) With the Texas Secretary of State`,
-                `<b>Step 5</b> - Get an Employer Identification Number (EIN) From the Internal Revenue Service`,
-                `<b>Step 6</b> - Create a Texas LLC Operating Agreement`,
+                {
+                    text: `<b>Step 1</b> - Complete a Texas LLC Search and Choose a Unique Business Name`,
+                    blockID: `step1`,
+                },
+                {
+                    text: `<b>Step 2</b> - Provide an Official Business Address for Your TX LLC`,
+                    blockID: `step2`,
+                },
+                {
+                    text: `<b>Step 3</b> - Assign a Texas Registered Agent`,
+                    blockID: `step3`,
+                },
+                {
+                    text: `<b>Step 4</b> - File Your Certificate of Formation (Form 205) With the Texas Secretary of State`,
+                    blockID: `step4`,
+                },
+                {
+                    text: `<b>Step 5</b> - Get an Employer Identification Number (EIN) From the Internal Revenue Service`,
+                    blockID: `step5`,
+                },
+                {
+                    text: `<b>Step 6</b> - Create a Texas LLC Operating Agreement`,
+                    blockID: `step6`,
+                },
             ],
             step1: {
                 heading1: `Complete a Texas LLC Search and Choose a Unique Business Name`,
