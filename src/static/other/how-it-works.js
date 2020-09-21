@@ -14,13 +14,10 @@ export const top = {
             header: `aaa`,
             text: `aaa`,
         },
-<<<<<<< Updated upstream
         {
             header: `aaa`,
             text: `aaa`,
         },
-=======
->>>>>>> Stashed changes
     ],
     cards: [
         {
@@ -95,7 +92,6 @@ export const top = {
           include: `The gold package, and:`,
           list: [`Business Contract Templates`, `Expedited Filing`, `FedEx Delivery`, `Domain Name + Business Email`],
         },
-<<<<<<< Updated upstream
     ],
 };
   
@@ -144,32 +140,3 @@ export const info = {
         url: `/`,
     }
 }
-=======
-      ],
-  };
-  
-  export const get = {
-    header: `aaa`,
-    text: `aaa`,
-    header2: `aaa`,
-    list: [`aaa`, `aaa`, `aaa`, `aaa`, `aaa`],
-  };
-  
-  export const incorporating = {
-    header: `aaa`,
-    text: `aaa`,
-    text2: `aaa`,
-    header2: `aaa`,
-    links: [
-      {
-        text: `aaa`,
-        url: `/`,
-      },
-      {
-        text: `aaa`,
-        url: `/`,
-      },
-    ],
-  };
-  
->>>>>>> Stashed changes
