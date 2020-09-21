@@ -29,30 +29,34 @@ export const adventages = {
     ]
 }
 
-export const InfoCards = [
-    {
-        backgroundColor: color.babyblue3,
-        roundTopLeft: true,
-        roundBottomLeft: true,
-        imageName: "workers-compensation-insurance",
-        title: "Workers Compensation Insurance for Your Construction Business",
-        content: "Workers’ compensation insurance provides coverage for job-related illnesses, disabilities or injuries that affect employees, which can be more common than usual for a construction business. Regulations for this insurance vary from state to state. It typically covers areas like medical costs, loss of earnings, compensation and retraining."
-    },
-    {
-        backgroundColor: color.green3,
-        imageName: "shield-insurance",
-        title: "General Liability Insurance for Your Construction Business",
-        content: "This insurance protects your travel agency from claims due to being sued. This may include injury to members of the public, property damage, personal liabilities, legal defense and more. It can help protect your travel agency business from financial penalties and bankruptcy."
-    },
-    {
-        backgroundColor: color.red3,
-        roundTopRight: true,
-        roundBottomRight: true,
-        imageName: "home-and-auto-insurance",
-        title: "Home and Auto Insurance for Your Construction Business",
-        content: "If you are working from home on the administration of your travel agency or driving a vehicle for work, check whether your existing home and auto policies cover you for work use of your home or car. If not, you should either expand your policy so you’re covered or get dedicated business insurance."
-    }
-]
+export const InfoCards = {
+    title: `Insurance for Your Construction Business`,
+    description: `Most construction businesses should have comprehensive business insurance. There are various types.`,
+    items: [
+        {
+            backgroundColor: color.babyblue3,
+            roundTopLeft: true,
+            roundBottomLeft: true,
+            imageName: "workers-compensation-insurance",
+            title: "Workers Compensation Insurance for Your Construction Business",
+            content: "Workers’ compensation insurance provides coverage for job-related illnesses, disabilities or injuries that affect employees, which can be more common than usual for a construction business. Regulations for this insurance vary from state to state. It typically covers areas like medical costs, loss of earnings, compensation and retraining."
+        },
+        {
+            backgroundColor: color.green3,
+            imageName: "shield-insurance",
+            title: "General Liability Insurance for Your Construction Business",
+            content: "This insurance protects your travel agency from claims due to being sued. This may include injury to members of the public, property damage, personal liabilities, legal defense and more. It can help protect your travel agency business from financial penalties and bankruptcy."
+        },
+        {
+            backgroundColor: color.red3,
+            roundTopRight: true,
+            roundBottomRight: true,
+            imageName: "home-and-auto-insurance",
+            title: "Home and Auto Insurance for Your Construction Business",
+            content: "If you are working from home on the administration of your travel agency or driving a vehicle for work, check whether your existing home and auto policies cover you for work use of your home or car. If not, you should either expand your policy so you’re covered or get dedicated business insurance."
+        }
+    ]
+};
 
 export const adventages2 = {
     items: [

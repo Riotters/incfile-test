@@ -16,7 +16,7 @@ import SettingBusiness from "../../atomic/sections/type-of-business/coach/settin
 import OrderNow from "../../atomic/sections/type-of-business/coach/order-now";
 import Regulations from "../../atomic/sections/type-of-business/coach/regulations";
 import CoachTaxes from "../../atomic/sections/type-of-business/coach/coach-taxes";
-import InsuranceBusiness from "../../atomic/sections/type-of-business/coach/insurance-business";
+import InsuranceBusinessSection from "../../atomic/sections/type-of-business/coach/insurance-business";
 import UseFulTools from "../../atomic/sections/type-of-business/coach/useful-tools";
 import Conclusion from "../../atomic/sections/general/conclusion";
 import {Heading} from "../../atomic/atoms/typography/heading";
@@ -61,7 +61,7 @@ const Coach = () => (
 
         <CoachTaxes/>
 
-        <InsuranceBusiness/>
+        <InsuranceBusinessSection/>
 
         <UseFulTools/>
 

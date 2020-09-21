@@ -1,36 +1,19 @@
 import React from "react";
 import styled from "styled-components";
-import InfoCardsSection from "../../../partials/info-cards-section";
-import {InfoCards} from "../../../../static/type-of-business/daycare-business";
-import {gradient} from "../../../atoms/styles/colors";
-import TextCenterLayout from "../../../../components/partials/blocks/heading-center";
+import {InfoCards} from "../../../../static/type-of-business/food-truck-business";
 import OvalSvg from "../../../../images/ovals/top-right-transparent-blue2.inline.svg";
+import InsuranceBusiness from "../../general/insurance-business";
 
-const InsuranceBusiness = () => (
-    <Wrapper>
+const InsuranceBusinessSection = () => (
+    <InsuranceBusiness title={InfoCards.title} description={InfoCards.description} InfoCards={InfoCards.items}>
         <Oval>
-            <OvalSvg />
+            <OvalSvg/>
         </Oval>
         <Oval2>
-            <OvalSvg />
+            <OvalSvg/>
         </Oval2>
-        <div style={{paddingBottom: "100px"}}>
-            <TextCenterLayout
-                headline="Insurance for Your Food Truck"
-                text="Most food truck businesses should have comprehensive business insurance. There are various types."
-            />
-        </div>
-        <InfoCardsSection cards={InfoCards}/>
-    </Wrapper>
+    </InsuranceBusiness>
 );
-
-const Wrapper = styled.section`
-    background: rgb(255,255,255);
-    background: ${gradient.blue3};
-    padding-top: 100px;
-    position: relative;
-    padding-bottom: 100px;
-`;
 
 const Oval = styled.div`
     position: absolute;
@@ -57,4 +40,4 @@ const Oval2 = styled.div`
       }
 `;
 
-export default InsuranceBusiness;
+export default InsuranceBusinessSection;

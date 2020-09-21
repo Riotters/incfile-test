@@ -27,7 +27,7 @@ import BusinessStructure from "../../atomic/sections/type-of-business/daycare-bu
 import SettingBusiness from "../../atomic/sections/type-of-business/daycare-business/setting-business";
 import OrderNow from "../../atomic/sections/type-of-business/daycare-business/order-now";
 import Regulations from "../../atomic/sections/type-of-business/daycare-business/regulations";
-import InsuranceBusiness from "../../atomic/sections/type-of-business/daycare-business/insurance-business";
+import InsuranceBusinessSection from "../../atomic/sections/type-of-business/daycare-business/insurance-business";
 import Taxes from "../../atomic/sections/type-of-business/daycare-business/taxes";
 import ToolsAndLinks from "../../atomic/sections/type-of-business/daycare-business/tools";
 import Conclusion from "../../atomic/sections/general/conclusion";
@@ -35,7 +35,6 @@ import BlueBoxWithAbsoluteText from "../../atomic/molecules/text-blocks/blue-box
 import CircleWithText from "../../atomic/molecules/blocks/circle-with-text-block";
 import Adventages from "../../components/adventages";
 import TextBoxed from "../../atomic/molecules/text-blocks/text-boxed";
-import TabsOvalOneSvg from "../../images/ovals/bottom-left-transparent-orange.inline.svg";
 import TabsOvalTwoSvg from "../../images/ovals/bottom-right-transparent-green3.inline.svg";
 
 const DaycareBusiness = () => (
@@ -307,7 +306,7 @@ const DaycareBusiness = () => (
 
         <Regulations/>
 
-        <InsuranceBusiness/>
+        <InsuranceBusinessSection/>
 
         <Taxes/>
 

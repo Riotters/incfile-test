@@ -421,7 +421,7 @@ const CleaningBusiness = () => (
                 </CenterBox>
 
                 <GridSectionList>
-                    <TextBlockWithImage className="containerMargin" SvgImage={IdentifyIcon} imageBackgroundColor={color.babyblue2}
+                    <TextBlockWithImage width="100%" widthUnit="%" SvgImage={IdentifyIcon} imageBackgroundColor={color.babyblue2}
                                         imageShadowColor={color.babyblue2}>
                         <Heading size={4}>
                             Identify your business’s unique selling points (USPs)
@@ -434,7 +434,7 @@ const CleaningBusiness = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage className="containerMargin" SvgImage={LookIcon} imageBackgroundColor={color.green2}
+                    <TextBlockWithImage width="100%" widthUnit="%" SvgImage={LookIcon} imageBackgroundColor={color.green2}
                                         imageShadowColor={color.green2}>
                         <Heading size={4}>
                             Consider who your competitors are
@@ -445,7 +445,7 @@ const CleaningBusiness = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage className="containerMargin" SvgImage={InvolvedIcon} imageBackgroundColor={color.red2}
+                    <TextBlockWithImage width="100%" widthUnit="%" SvgImage={InvolvedIcon} imageBackgroundColor={color.red2}
                                         imageShadowColor={color.red2}>
                         <Heading size={4}>
                             Get involved with business communities and discussion groups
@@ -455,7 +455,7 @@ const CleaningBusiness = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage className="containerMargin" SvgImage={ValidateIcon} imageBackgroundColor={color.orange2}
+                    <TextBlockWithImage width="100%" widthUnit="%" SvgImage={ValidateIcon} imageBackgroundColor={color.orange2}
                                         imageShadowColor={color.orange2}>
                         <Heading size={4}>
                             Look for market research reports for cleaning businesses
@@ -467,7 +467,7 @@ const CleaningBusiness = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage className="containerMargin" SvgImage={TalkIcon} imageBackgroundColor={color.purple2}
+                    <TextBlockWithImage width="100%" widthUnit="%" SvgImage={TalkIcon} imageBackgroundColor={color.purple2}
                                         imageShadowColor={color.purple2}>
                         <Heading size={4}>
                             Talk to clients
@@ -481,7 +481,7 @@ const CleaningBusiness = () => (
                 </GridSectionList>
 
                 <CenterBox>
-                    <Heading size={3}>
+                    <Heading size={3} style={{marginTop: "70px"}}>
                         Understand Your Cleaning Business Model and Financial Projections
                     </Heading>
                     <Paragraph big>
@@ -857,18 +857,15 @@ const CenterBox = styled.div`
 `;
 
 const GridSectionList = styled.div`
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 100%;
-    max-width: 1000px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 100%;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 70px;
     
-    > div {
-        margin-bottom: 70px;
-    }
-    
-    @media (min-width: 1024px) {
-        margin: 120px auto 0;
+    @media (min-width: 992px){
+        grid-template-columns: 470px 470px;
     }
 `;
 

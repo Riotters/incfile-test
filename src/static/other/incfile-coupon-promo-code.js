@@ -8,7 +8,7 @@ export const save = {
   text: `aaa`,
   text2: `aaa`,
   table: {
-    headers: [``, `Incfile`, `LegalZoom`],
+    headers: [null, `Incfile`, `LegalZoom`],
     rows: [
       [`Business incorporation service`, `$49`, `$149`],
       [`Registered Agent included in the price`, `check-green`, `check-red`],

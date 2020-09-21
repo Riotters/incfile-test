@@ -17,7 +17,7 @@ const PerksSection = ({ className, content }) => (
     <Oval className="oval" height="570" width="570" top="0" right="0">
       <OvalSVG />
     </Oval>
-    <HeadingCenter headline={content.header} headlineWidth="770" />
+    <HeadingCenter headline={content.header} headlineWidth="770" bottomMargin="80" />
     <ContentCenter contentWidth="770">
       <NumericList content={content.list} bottomMargin="0" />
     </ContentCenter>

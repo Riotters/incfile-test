@@ -27,7 +27,7 @@ import BusinessStructure from "../../atomic/sections/type-of-business/dog-walkin
 import SettingBusiness from "../../atomic/sections/type-of-business/dog-walking/setting-business";
 import OrderNow from "../../atomic/sections/type-of-business/dog-walking/order-now";
 import Regulations from "../../atomic/sections/type-of-business/dog-walking/regulations";
-import InsuranceBusiness from "../../atomic/sections/type-of-business/dog-walking/insurance-business";
+import InsuranceBusinessSection from "../../atomic/sections/type-of-business/dog-walking/insurance-business";
 import Taxes from "../../atomic/sections/type-of-business/dog-walking/taxes";
 import ToolsAndLinks from "../../atomic/sections/type-of-business/dog-walking/tools";
 import Conclusion from "../../atomic/sections/general/conclusion";
@@ -423,7 +423,7 @@ const DogWalking = () => (
 
         <Regulations/>
 
-        <InsuranceBusiness/>
+        <InsuranceBusinessSection/>
 
         <Taxes/>
 

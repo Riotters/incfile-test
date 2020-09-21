@@ -27,7 +27,7 @@ import BusinessStructure from "../../atomic/sections/type-of-business/bed-and-br
 import SettingBusiness from "../../atomic/sections/type-of-business/bed-and-breakfast/setting-business";
 import OrderNow from "../../atomic/sections/type-of-business/bed-and-breakfast/order-now";
 import Regulations from "../../atomic/sections/type-of-business/bed-and-breakfast/regulations";
-import InsuranceBusiness from "../../atomic/sections/type-of-business/bed-and-breakfast/insurance-business";
+import InsuranceBusinessSection from "../../atomic/sections/type-of-business/bed-and-breakfast/insurance-business";
 import Taxes from "../../atomic/sections/type-of-business/bed-and-breakfast/taxes";
 import ToolsAndLinks from "../../atomic/sections/type-of-business/bed-and-breakfast/tools";
 import Conclusion from "../../atomic/sections/general/conclusion";
@@ -445,7 +445,7 @@ const BedAndBreakfast = () => (
 
         <Regulations/>
 
-        <InsuranceBusiness/>
+        <InsuranceBusinessSection/>
 
         <Taxes/>
 

@@ -16,7 +16,7 @@ const Wrapper = styled.div`
     }
 `
 
-const InputField = ({ className, label, linkUrl, linkText, placeholder }) => (
+const InputField = ({ className, label, linkUrl, linkText, placeholder, name, isRequired}) => (
     <Wrapper className={className}>
         <div className="top">
             {label && (
@@ -27,7 +27,7 @@ const InputField = ({ className, label, linkUrl, linkText, placeholder }) => (
             )}
         </div>
         <div className="bottom">
-            <Input placeholder={placeholder} />
+            <Input placeholder={placeholder} name={name} {...isRequired ? "required" : ""}/>
         </div>
     </Wrapper>
 )

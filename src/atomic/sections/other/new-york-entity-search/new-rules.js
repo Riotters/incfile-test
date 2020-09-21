@@ -1,9 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { color } from "../../../atoms/styles/colors";
-import { Heading } from "../../../atoms/typography/heading";
-import { Paragraph } from "../../../atoms/typography/paragraph";
-import Container from "../../../container";
+import HeadingCenter from "../../../partials/heading-center";
 import ContentCenter from "../../../partials/content-center";
 import Cards from "../../../organisms/cards/entity-search-adventages";
 import Oval from "../../../atoms/icons/oval";
@@ -20,10 +17,7 @@ const AdventagesSection = ({ className, content }) => (
     <Oval height="720" width="720" top="0" right="0">
       <OvalSVG />
     </Oval>
-    <Container>
-      <Heading size="2">{content.header}</Heading>
-      <Paragraph big>{content.text}</Paragraph>
-    </Container>
+    <HeadingCenter headline={content.header} headlineWidth="770" text={content.text} textWidth="770" />
     <ContentCenter>
       <Cards content={content.cards} />
     </ContentCenter>
