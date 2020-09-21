@@ -239,7 +239,7 @@ const OvalBottom = styled.div`
   bottom: 0;
     
     @media (min-width: 420px) {
-        display: 420px;
+        width: 420px;
     }
 `
 
