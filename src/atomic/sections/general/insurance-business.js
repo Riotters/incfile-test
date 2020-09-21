@@ -7,8 +7,8 @@ import Container from "../../container";
 
 const InsuranceBusiness = ({children, title, description, InfoCards}) => (
     <Wrapper>
+        {children}
         <Container>
-            {children}
             <div style={{paddingBottom: "100px"}}>
                 <TextCenterLayout
                     headline={title}

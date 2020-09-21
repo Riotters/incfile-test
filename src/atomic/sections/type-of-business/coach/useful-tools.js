@@ -5,19 +5,23 @@ import ToolsList from "../../../organisms/lists/tools-list";
 import {Tools} from "../../../../static/type-of-business/coach";
 import OvalSvg from "../../../../images/ovals/top-left-transparent-pink.inline.svg";
 import OvalSvg2 from "../../../../images/ovals/top-right-transparent-green3.inline.svg";
+import Container from "../../../container";
 
 const UseFulTools = () => (
     <Wrapper>
         <Oval>
-            <OvalSvg />
+            <OvalSvg/>
         </Oval>
         <Oval2>
-            <OvalSvg2 />
+            <OvalSvg2/>
         </Oval2>
         <TextCenterLayout headline="Useful Online Tools for Professional Coaches"
                           text="Here are some really great online tools for managing your life or business coaching business. They will reduce the time you spend on administration, help you to collaborate with others and free up your time to grow and manage your new venture."/>
 
-        <ToolsList tools={Tools}/>
+        <Container>
+            <ToolsList tools={Tools}/>
+        </Container>
+
     </Wrapper>
 );
 
