@@ -50,6 +50,10 @@ const GridSectionList = styled.div`
     margin-top: 76px;
     margin-bottom 76px; 
     
+    @media (min-width: 490px){
+        grid-template-columns: 470px;
+    }
+    
     @media (min-width: 992px){
         grid-template-columns: 470px 470px;
     }
