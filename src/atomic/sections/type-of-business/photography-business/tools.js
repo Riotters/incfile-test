@@ -134,11 +134,10 @@ const ToolsAndLinks = () => (
                 </LinksContainer>
             </Container>
         </LinksWrapper>
+        
+        <UsefulTools toolsList={toolsList.tools} headlineText={toolsList.headlineText}
+                     description={toolsList.description}/>
 
-        <Container>
-            <UsefulTools toolsList={toolsList.tools} headlineText={toolsList.headlineText}
-                         description={toolsList.description}/>
-        </Container>
     </Wrapper>
 );
 

@@ -19,7 +19,7 @@ const TypeBusiness = () => (
             <OvalSvg/>
         </Oval2>
 
-        <TextCenterLayout headline="Low or No Cost Business Ideas"
+        <TextCenterLayout headlineWidth={770} textWidth={770} headline="Low or No Cost Business Ideas"
                           text="Here are some great examples of business ideas with low investment. There are many other great lists with ideas for low cost startup businesses"/>
 
         <Container>
@@ -147,6 +147,10 @@ const AdventagesBox = styled.div`
     justify-content: center;
     column-gap: 30px;
     row-gap: 20px;
+    
+    @media (min-width: 490px){
+        grid-template-columns: 470px;
+    }
     
     @media (min-width: 992px){
         grid-template-columns: 470px 470px;
