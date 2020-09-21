@@ -335,8 +335,11 @@ const ButtonsBox = styled.div`
 `;
 
 const TabWrapper = styled.div`
-    position: relative;
-    margin-top: 100px;
+    margin-top: 120px;
+  position: relative;
+  @media (min-width: 992px){
+      margin-top: 21px;
+  }
 `;
 
 const TabOvalOne = styled.div`

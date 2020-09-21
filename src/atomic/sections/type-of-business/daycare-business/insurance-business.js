@@ -16,8 +16,7 @@ const Oval = styled.div`
     position: absolute; 
     top: 0;
     right: 0;
-    width: 100%;
-    transform: rotate(-180deg);
+    width: 100%; 
     
     @media (min-width: 420px){
        width: 420px;

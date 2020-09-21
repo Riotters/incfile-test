@@ -2,7 +2,7 @@ import Container from "../../../container";
 import {Heading} from "../../../atoms/typography/heading";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import TextBlockWithImage from "../../../molecules/mixed-blocks/text-block-with-absolute-image";
-import OkIcon from "../../../../images/icons/ok.inline.svg";
+import OkIcon from "../../../../images/icons/talk-to-clients.inline.svg";
 import IdetifyIcon from "../../../../images/icons/identify-your-unique-selling-point.inline.svg"
 import LookIcon from "../../../../images/icons/look-at-who-your-competitors-are-in-the-space.inline.svg"
 import MarketIcon from "../../../../images/icons/understand-your-market.inline.svg"
@@ -48,6 +48,12 @@ const GridSectionList = styled.div`
     justify-content: center;
     column-gap: 30px;
     row-gap: 70px;
+    margin-top: 76px;
+    margin-bottom 76px;
+    
+    @media (min-width: 490px){
+        grid-template-columns: 470px;
+    }
     
     @media (min-width: 992px){
         grid-template-columns: 470px 470px;
