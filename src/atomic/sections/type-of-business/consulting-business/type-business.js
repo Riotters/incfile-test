@@ -74,6 +74,10 @@ const AdventagesBox = styled.div`
     column-gap: 30px;
     row-gap: 20px;
     
+    @media (min-width: 490px){
+        grid-template-columns: 470px;
+    }
+    
     @media (min-width: 992px){
         grid-template-columns: 470px 470px;
     }

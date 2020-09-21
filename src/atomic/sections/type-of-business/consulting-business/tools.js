@@ -14,15 +14,16 @@ import OvalSvg2 from "../../../../images/ovals/top-right-transparent-yellow.inli
 const ToolsAndLinks = () => (
     <Wrapper>
         <Oval>
-            <OvalSvg />
+            <OvalSvg/>
         </Oval>
         <Oval2>
-            <OvalSvg2 />
+            <OvalSvg2/>
         </Oval2>
-        <Container>
-            <TextCenterLayout headline="Social Media Groups for Your Consulting Business"
-                              text="Connecting with other business owners in your industry can be incredibly helpful. Here are some of the best social media groups:"/>
+        <TextCenterLayout headlineWidth={770} textWidth={770}
+                          headline="Social Media Groups for Your Consulting Business"
+                          text="Connecting with other business owners in your industry can be incredibly helpful. Here are some of the best social media groups:"/>
 
+        <Container>
             <LinksContainer>
 
                 <LinkItem>
@@ -40,7 +41,8 @@ const ToolsAndLinks = () => (
                         Strategy Consulting Network
                     </PathLink>
                     <Paragraph>
-                        The second largest network of consultants on LinkedIn with over 250,000 members. The group group is for everyone who is currently working as a Strategy Consultant or who aspires to become one.
+                        The second largest network of consultants on LinkedIn with over 250,000 members. The group group
+                        is for everyone who is currently working as a Strategy Consultant or who aspires to become one.
                     </Paragraph>
                 </LinkItem>
 
@@ -65,9 +67,11 @@ const ToolsAndLinks = () => (
             </LinksContainer>
         </Container>
 
+        <TextCenterLayout headlineWidth={770} textWidth={770}
+                          headline="Discussion Groups and Forums for Your Consulting Business"
+                          text="There are plenty of forums and online discussion groups for consulting businesses. Start with these:"/>
+
         <Container>
-            <TextCenterLayout headline="Discussion Groups and Forums for Your Consulting Business"
-                              text="There are plenty of forums and online discussion groups for consulting businesses. Start with these:"/>
 
             <LinksContainer>
 
@@ -76,7 +80,8 @@ const ToolsAndLinks = () => (
                         Wall Street Oasis
                     </PathLink>
                     <Paragraph>
-                        The largest and most active LinkedIn group for business consultants with over 400,000 members. It also has several location based and industry specific subgroups.
+                        The largest and most active LinkedIn group for business consultants with over 400,000 members.
+                        It also has several location based and industry specific subgroups.
                     </Paragraph>
                 </LinkItem>
 
@@ -91,9 +96,9 @@ const ToolsAndLinks = () => (
             </LinksContainer>
         </Container>
 
-        <Container>
-            <UsefulTools toolsList={toolsList.tools} headlineText={toolsList.headlineText} description={toolsList.description} />
-        </Container>
+        <UsefulTools toolsList={toolsList.tools} headlineText={toolsList.headlineText}
+                     description={toolsList.description}/>
+
     </Wrapper>
 );
 

@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Container from "../../../container";
 import OvalSvg from "../../../../images/ovals/top-right-transparent-orange.inline.svg";
 import OvalSvg2 from "../../../../images/ovals/top-left-transparent-red3.inline.svg";
 import UsefulTools from "../../../partials/useful-tools";
@@ -9,14 +8,15 @@ import {toolsList} from "../../../../static/type-of-business/online-business";
 const ToolsAndLinks = () => (
     <Wrapper>
         <Oval>
-            <OvalSvg />
+            <OvalSvg/>
         </Oval>
         <Oval2>
-            <OvalSvg2 />
+            <OvalSvg2/>
         </Oval2>
-        <Container>
-            <UsefulTools toolsList={toolsList.tools} headlineText={toolsList.headlineText} description={toolsList.description} />
-        </Container>
+
+        <UsefulTools toolsList={toolsList.tools} headlineText={toolsList.headlineText}
+                     description={toolsList.description}/>
+
     </Wrapper>
 );
 
@@ -37,7 +37,7 @@ const Oval = styled.div`
     }
 `;
 
-const Oval2= styled.div` 
+const Oval2 = styled.div` 
     position: absolute;
     left: 0;
     bottom: 181px;
