@@ -94,6 +94,7 @@ const IndexPage = () => (
         <Link to="/other/virginia-entity-search">Virginia Entity Search (WIP)</Link>
         <Link to="/other/new-jersey-entity-search">New Jersey Entity Search (WIP)</Link>
         <Link to="/other/daleware-entity-search">Daleware Entity Search (WIP)</Link>
+        <Link to="/other/how-it-works">How It Works (WIP)</Link>
         <Link to="/404">404</Link>
         <Link to="/503">503</Link>
         <h2>Blog</h2>

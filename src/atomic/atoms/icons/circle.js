@@ -5,6 +5,9 @@ import { shadow } from "../styles/shadows"
 
 const shadow1 = (circleColor) => {
   switch(circleColor) { 
+    case color.blue1: {
+      return shadow.blue1;
+    }
     case color.blue2: {
       return shadow.blue2;
     }

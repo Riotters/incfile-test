@@ -1,17 +1,17 @@
 import React from "react";
 import styled from "styled-components";
-import { color } from "../../../atoms/styles/colors";
-import { Heading } from "../../../atoms/typography/heading";
-import ContentObject from "../../../partials/left-content-right-object";
+
 import Oval from "../../../atoms/icons/oval";
+import Curve from "../../../atoms/icons/curve";
+import { color } from "../../../atoms/styles/colors";
+import Button from "../../../molecules/buttons/button";
+import { Heading } from "../../../atoms/typography/heading";
+import LightBoxVideo from '../../../../components/LightBox';
+import NumericList from "../../../organisms/lists/numeric-boxed-list";
+import ContentObject from "../../../partials/left-content-right-object";
 import OvalSVG from "../../../../images/ovals/top-right-orange1-to-transparent.inline.svg";
 import Oval2SVG from "../../../../images/ovals/bottom-left-transparent-orange.inline.svg";
-import Curve from "../../../atoms/icons/curve";
 import CurveSVG from "../../../../images/curves/bottom-left-top-right-big.inline.svg";
-import NumericList from "../../../organisms/lists/numeric-boxed-list";
-import Button from "../../../molecules/buttons/button";
-import Image from "../../../atoms/image/image_nobase64";
-import PlayerSVG from "../../../../images/icons/player.inline.svg";
 
 const Steps = styled.section`
   position: relative;
@@ -89,12 +89,7 @@ const StepsSection = ({ className, content }) => (
           <Curve top="-25" right="-29" color={color.purple1}>
             <CurveSVG />
           </Curve>
-          <Image filename="comparison-chart-video-3611" />
-          <PlayButton>
-            <span>
-              <PlayerSVG />
-            </span>
-          </PlayButton>
+          <LightBoxVideo thumbnailVideo="comparison-chart-video-3611" videoID="R_oIgzYh7NU" />
         </Video>
       }
       contentWidth="500"

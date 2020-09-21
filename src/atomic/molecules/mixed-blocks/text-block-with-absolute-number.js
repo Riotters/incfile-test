@@ -4,8 +4,8 @@ import Circle from "../../atoms/icons/circle";
 import PropsTypes from "prop-types";
 import { shadow } from "../../atoms/styles/shadows";
 
-const TextBlockWithNumberCounting = ({ children, numberCounting, textBackgroundColor, imageBackgroundColor, imageShadowColor, width, widthUnit, borderRadius, boxShadow, paddingTop, paddingBottom, paddingLeft, paddingRight, style }) => (
-  <TextBlock textBackgroundColor={textBackgroundColor} borderRadius={borderRadius} width={width} boxShadow={boxShadow} paddingTop={paddingTop} paddingBottom={paddingBottom} paddingLeft={paddingLeft} paddingRight={paddingRight} style={style} widthUnit={widthUnit}>
+const TextBlockWithNumberCounting = ({ children, numberCounting, textBackgroundColor, imageBackgroundColor, imageShadowColor, width, widthUnit, borderRadius, boxShadow, paddingTop, paddingBottom, paddingLeft, paddingRight, blockId, style }) => (
+  <TextBlock id={blockId} textBackgroundColor={textBackgroundColor} borderRadius={borderRadius} width={width} boxShadow={boxShadow} paddingTop={paddingTop} paddingBottom={paddingBottom} paddingLeft={paddingLeft} paddingRight={paddingRight} style={style} widthUnit={widthUnit}>
     <AbsoluteCircle imageShadowColor={imageShadowColor}>
       <Circle circleColor={imageBackgroundColor} padding={0} height={80} width={80} paddingLeft={paddingLeft}>
         <NumberSpan>{numberCounting}</NumberSpan>
