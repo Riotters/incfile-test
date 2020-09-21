@@ -2,7 +2,6 @@ import Container from "../../../container";
 import {Heading} from "../../../atoms/typography/heading";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import TextBlockWithImage from "../../../molecules/mixed-blocks/text-block-with-absolute-image";
-import OkIcon from "../../../../images/icons/ok.inline.svg";
 import IdentifyIcon from "../../../../images/icons/identify-your-unique-selling-point.inline.svg";
 import LookIcon from "../../../../images/icons/look-at-who-your-competitors-are-in-the-space.inline.svg";
 import MarketIcon from "../../../../images/icons/understand-your-market.inline.svg";
@@ -11,7 +10,7 @@ import InvolvedIcon from "../../../../images/icons/get-involved-with-business-co
 import {color} from "../../../../components/styles/colors";
 import React from "react";
 import styled from "styled-components";
-import OvalBlueSVG from "../../../../images/oval-blue-4.inline.svg";
+import OvalBlueSVG from "../../../../images/ovals/top-right-transparent-blue2.inline.svg";
 import Curve from "../../../atoms/shapes/curve";
 
 const BlueContainerWrapper = styled.div`
@@ -67,6 +66,11 @@ const OvalCenter = styled.div`
   position: absolute;
   right: 0;
   top: 0;
+  width: 100%;
+  
+  @media (min-width: 570px){
+    width: 570px;
+  }
 `
 
 const AbsoluteCurve = styled.div`

@@ -65,10 +65,6 @@ const BusinessOperations = () => (
                     <p>
                         The right software and processes will make running your moving business much easier. See our list of the best apps and software at the end of this guide.
                     </p>
-
-                    <GreenCurve>
-                        <Curve/>
-                    </GreenCurve>
                 </TopImageBox>
             </ImageBoxes>
         </Container>
@@ -99,13 +95,6 @@ const ImageBoxes = styled.div`
   @media (min-width: 970px) {
     margin: 0 auto;
   }
-`;
-
-const GreenCurve = styled.div`
-    position: absolute;
-    right: -115px;
-    bottom: -122px;
-    width: 115px;
 `;
 
 const Oval = styled.div`
