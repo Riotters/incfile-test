@@ -14,17 +14,16 @@ import ContentCenter from "../../../partials/content-center";
 const Grants = () => (
     <Wrapper>
 
-        <ContentCenter contentWidth={770}>
-            <TextCenterLayout headline="Small Business Grants for Women" headlineWidth={770} textWidth={770}
-                              text="Before we get into business ideas for moms and other women, we want to point out some funding options available to you. Around a quarter of women seek funding for their business, and around a third of those are successful in obtaining it."/>
+        <TextCenterLayout headline="Small Business Grants for Women" headlineWidth={770} textWidth={770}
+                          text="Before we get into business ideas for moms and other women, we want to point out some funding options available to you. Around a quarter of women seek funding for their business, and around a third of those are successful in obtaining it."/>
 
+        <ContentCenter contentWidth={770}>
             <Paragraph big>
                 When you’re applying for funding, remember:
             </Paragraph>
         </ContentCenter>
 
-        <ContentCenter contentWidth={970}>
-            <AdventagesWrapper>
+        <AdventagesWrapper>
                 <Adventages
                     text="Nearly two-thirds of female entrepreneurs say their business is their main source of income"
                     width="470px" circleBackgroundColor={color.blue1} circleBackgroundShadow={shadow.blue1}
@@ -44,7 +43,7 @@ const Grants = () => (
                 />
 
             </AdventagesWrapper>
-        </ContentCenter>
+
 
         <TextCenterLayout headlineWidth={770} textWidth={770}
                           headline="Here are some places you can apply for funding for your woman-owned business:"
@@ -210,13 +209,25 @@ const Wrapper = styled.section`
 `;
 
 const BoxWrapper = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding-top: 104px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 100%;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 72px;
+    margin-top: 76px;
+    margin-bottom 76px; 
     
-    @media (min-width: 1170px){
-        justify-content: space-between;
+    @media (min-width: 390px){
+        grid-template-columns: 370px;
+    }
+    
+    @media (min-width: 768px){
+        grid-template-columns: 370px 370px;
+    }
+    
+    @media (min-width: 1200px){
+        grid-template-columns: 370px 370px 370px;
     }
 `;
 
@@ -226,12 +237,8 @@ const Franchise = styled(Link)`
     border-radius: 5px;
     box-shadow: 0 24px 32px 0 rgba(236, 236, 236, 0.5);
     background-color: #ffffff;
-    margin-bottom: 72px;
+    margin-bottom: 0px;
     transition: all 0.5s ease-in-out;
-    
-    @media (min-width: 992px){
-        width: 370px;
-    }
     
     &:hover {
         box-shadow: 0 40px 80px 0 rgba(171, 171, 171, 0.5);
@@ -291,9 +298,21 @@ const Icon = styled.div`
 `;
 
 const AdventagesWrapper = styled.div`
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: 56px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 100%;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 20px;
+    margin-top: 76px;
+    margin-bottom 76px; 
+    
+    @media (min-width: 490px){
+        grid-template-columns: 470px;
+    }
+    
+    @media (min-width: 992px){
+        grid-template-columns: 470px 470px;
+    }
 `;
 export default Grants;
