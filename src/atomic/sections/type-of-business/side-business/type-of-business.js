@@ -59,12 +59,16 @@ const Service = styled.div`
 `;
 
 const AdventagesBox = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  max-width: 1000px;
-  margin: 72px auto 0;
-  position: relative; 
+  display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 100%;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 20px;
+    
+    @media (min-width: 992px){
+        grid-template-columns: 470px 470px;
+    }
 `;
 
 const Oval = styled.div`

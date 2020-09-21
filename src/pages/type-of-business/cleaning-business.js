@@ -421,7 +421,7 @@ const CleaningBusiness = () => (
                 </CenterBox>
 
                 <GridSectionList>
-                    <TextBlockWithImage width="100%" widthUnit="%" SvgImage={IdentifyIcon} imageBackgroundColor={color.babyblue2}
+                    <TextBlockWithImage width="100" widthUnit="%" SvgImage={IdentifyIcon} imageBackgroundColor={color.babyblue2}
                                         imageShadowColor={color.babyblue2}>
                         <Heading size={4}>
                             Identify your business’s unique selling points (USPs)
@@ -434,7 +434,7 @@ const CleaningBusiness = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage width="100%" widthUnit="%" SvgImage={LookIcon} imageBackgroundColor={color.green2}
+                    <TextBlockWithImage width="100" widthUnit="%" SvgImage={LookIcon} imageBackgroundColor={color.green2}
                                         imageShadowColor={color.green2}>
                         <Heading size={4}>
                             Consider who your competitors are
@@ -445,7 +445,7 @@ const CleaningBusiness = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage width="100%" widthUnit="%" SvgImage={InvolvedIcon} imageBackgroundColor={color.red2}
+                    <TextBlockWithImage width="100" widthUnit="%" SvgImage={InvolvedIcon} imageBackgroundColor={color.red2}
                                         imageShadowColor={color.red2}>
                         <Heading size={4}>
                             Get involved with business communities and discussion groups
@@ -455,7 +455,7 @@ const CleaningBusiness = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage width="100%" widthUnit="%" SvgImage={ValidateIcon} imageBackgroundColor={color.orange2}
+                    <TextBlockWithImage width="100" widthUnit="%" SvgImage={ValidateIcon} imageBackgroundColor={color.orange2}
                                         imageShadowColor={color.orange2}>
                         <Heading size={4}>
                             Look for market research reports for cleaning businesses
@@ -467,7 +467,7 @@ const CleaningBusiness = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage width="100%" widthUnit="%" SvgImage={TalkIcon} imageBackgroundColor={color.purple2}
+                    <TextBlockWithImage width="100" widthUnit="%" SvgImage={TalkIcon} imageBackgroundColor={color.purple2}
                                         imageShadowColor={color.purple2}>
                         <Heading size={4}>
                             Talk to clients

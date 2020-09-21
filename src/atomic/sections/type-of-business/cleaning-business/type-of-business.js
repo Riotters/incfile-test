@@ -106,6 +106,10 @@ const CurveWrapper = styled.div`
     position: absolute;
     right: -24px;
     top: 0px;
+    
+    @media (max-width: 650px){
+        display: none;
+    }
 `;
 
 const Oval = styled.div`

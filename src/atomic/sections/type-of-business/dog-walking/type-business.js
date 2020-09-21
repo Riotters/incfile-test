@@ -35,7 +35,7 @@ const TypeBusiness = () => (
                             circleBackgroundColor={color.blue1}
                             circleBackgroundShadow={shadow.blue1}
                             imageName={item.imageName}
-                            className="containerMargin"
+                            width="100%"
                         />
                     ))}
                 </AdventagesBox>
@@ -44,33 +44,6 @@ const TypeBusiness = () => (
         </Container>
     </Wrapper>
 );
-
-const Title = styled.div`
-    display: block;
-    width: 100%;
-    
-    h3{
-        font-size: 40px;
-        text-align: left;
-    }
-`;
-
-const ListParagraph = styled(Paragraph)`
-    ul{
-        li{
-            list-style-type: none;
-            padding-bottom: 24px;
-            
-            &:before{
-                content: "\u2022";
-                color: ${color.blue1}; 
-                display: inline-block; 
-                padding-right: 15px;
-                font-size: 12px;
-            }
-        }
-    }
-`;
 
 const Wrapper = styled.div`
     background-image: ${gradient.orange3}; 
@@ -83,18 +56,16 @@ const Service = styled.div`
 `;
 
 const AdventagesBox = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  max-width: 1000px;
-  margin: 72px auto 0;
-  position: relative; 
-`;
-
-const CurveWrapper = styled.div`
-    position: absolute;
-    right: -24px;
-    top: 0px;
+  display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 100%;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 20px;
+    
+    @media (min-width: 992px){
+        grid-template-columns: 470px 470px;
+    }
 `;
 
 const Oval = styled.div`
