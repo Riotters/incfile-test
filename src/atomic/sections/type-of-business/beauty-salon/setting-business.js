@@ -16,7 +16,7 @@ const SettingBusiness = () => (
             <GreenOval/>
         </Oval>
 
-        <ContentCenter>
+        <ContentCenter contentWidth={770}>
             <TextCenterLayout
                 headline="Set up Your Beauty Salon Business"
                 headlineWidth={770}

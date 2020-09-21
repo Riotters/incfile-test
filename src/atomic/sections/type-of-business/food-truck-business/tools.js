@@ -13,10 +13,10 @@ import OvalSvg2 from "../../../../images/ovals/bottom-left-transparent-orange.in
 const ToolsAndLinks = () => (
     <Wrapper>
         <Oval>
-            <OvalSvg />
+            <OvalSvg/>
         </Oval>
         <Oval2>
-            <OvalSvg2 />
+            <OvalSvg2/>
         </Oval2>
         <Container>
             <TextCenterLayout headline="Groups and Forums for Food Truck Entrepreneurs"
@@ -25,35 +25,39 @@ const ToolsAndLinks = () => (
             <LinksContainer>
 
                 <LinkItem>
-                    <PathLink to="https://www.reddit.com/r/foodtrucks/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.reddit.com/r/foodtrucks/" textColor={color.blue1}
+                              hoverColor={color.orange1} arrowColor={color.blue1}>
                         Reddit — Food Trucks subreddit
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="https://www.reddit.com/r/EntrepreneurRideAlong/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.reddit.com/r/EntrepreneurRideAlong/" textColor={color.blue1}
+                              hoverColor={color.orange1} arrowColor={color.blue1}>
                         Reddit — Entrepreneur Ride Along
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="https://roadfood.com/forums/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://roadfood.com/forums/" textColor={color.blue1} hoverColor={color.orange1}
+                              arrowColor={color.blue1}>
                         Road Food Forums
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="http://streetvendorforum.com/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="http://streetvendorforum.com/" textColor={color.blue1} hoverColor={color.orange1}
+                              arrowColor={color.blue1}>
                         Street Vendor Forums
                     </PathLink>
                 </LinkItem>
 
             </LinksContainer>
         </Container>
-        
-        <Container>
-            <UsefulTools toolsList={toolsList.tools} headlineText={toolsList.headlineText} description={toolsList.description} />
-        </Container>
+
+        <UsefulTools toolsList={toolsList.tools} headlineText={toolsList.headlineText}
+                     description={toolsList.description}/>
+
     </Wrapper>
 );
 

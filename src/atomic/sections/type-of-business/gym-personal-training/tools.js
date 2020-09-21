@@ -13,31 +13,34 @@ import OvalSvg2 from "../../../../images/ovals/bottom-left-transparent-orange.in
 const ToolsAndLinks = () => (
     <Wrapper>
         <Oval>
-            <OvalSvg />
+            <OvalSvg/>
         </Oval>
         <Oval2>
-            <OvalSvg2 />
+            <OvalSvg2/>
         </Oval2>
-        <Container>
-            <TextCenterLayout headline="Groups and Forums for Fitness Business Owners"
-                              text="Here are some useful places where you can connect with other gym, fitness or personal training entrepreneurs."/>
+        <TextCenterLayout headline="Groups and Forums for Fitness Business Owners"
+                          text="Here are some useful places where you can connect with other gym, fitness or personal training entrepreneurs."/>
 
+        <Container>
             <LinksContainer>
 
                 <LinkItem>
-                    <PathLink to="https://www.ideafit.com/fit-pro-forum/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.ideafit.com/fit-pro-forum/" textColor={color.blue1}
+                              hoverColor={color.orange1} arrowColor={color.blue1}>
                         Idea Health and Fitness Forums
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="https://bodyspace.bodybuilding.com/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://bodyspace.bodybuilding.com/" textColor={color.blue1}
+                              hoverColor={color.orange1} arrowColor={color.blue1}>
                         BodySpace Bodybuilding Forums
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="https://www.shapefit.com/forum/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.shapefit.com/forum/" textColor={color.blue1} hoverColor={color.orange1}
+                              arrowColor={color.blue1}>
                         Facebook ShapeFit Forums
                     </PathLink>
                 </LinkItem>
@@ -45,9 +48,9 @@ const ToolsAndLinks = () => (
             </LinksContainer>
         </Container>
         
-        <Container>
-            <UsefulTools toolsList={toolsList.tools} headlineText={toolsList.headlineText} description={toolsList.description} />
-        </Container>
+        <UsefulTools toolsList={toolsList.tools} headlineText={toolsList.headlineText}
+                     description={toolsList.description}/>
+
     </Wrapper>
 );
 
