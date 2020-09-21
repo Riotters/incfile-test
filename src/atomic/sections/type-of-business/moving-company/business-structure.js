@@ -15,7 +15,7 @@ import HandsIcon from "../../../../images/icons/hands.inline.svg";
 import ArrowsIcon from "../../../../images/icons/arrows.inline.svg"
 import Button from "../../../molecules/buttons/button";
 import Container from "../../../container";
-import OvalOrange2Svg from "../../../../images/oval-orange-2.inline.svg";
+import OvalOrange2Svg from "../../../../images/ovals/top-left-transparent-orange.inline.svg";
 import {shadow} from "../../../atoms/styles/shadows";
 
 const BusinessOwnerResponsibilities = styled.section`
@@ -39,6 +39,11 @@ const Oval = styled.div`
   position: absolute;
   left: 0;
   top: 200px;
+  width: 100%;
+  
+  @media (min-width: 570px){
+    width: 570px;
+  }
 `
 
 const FlexLink = styled(Link)`
