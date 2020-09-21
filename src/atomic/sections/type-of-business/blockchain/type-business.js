@@ -51,6 +51,7 @@ const Wrapper = styled.div`
     background-color: ${color.orange3};
     padding-top: 100px;
     position: relative;
+    overflow: hidden;
 `;
 
 const Service = styled.div`
@@ -62,7 +63,11 @@ const AdventagesBox = styled.div`
   grid-template-columns: 100%;
   justify-content: center;
   column-gap: 30px;
-  row-gap: 70px;
+  row-gap: 20px;
+    
+    @media (min-width: 490px){
+        grid-template-columns: 470px;
+    }
     
   @media (min-width: 992px){
       grid-template-columns: 470px 470px;

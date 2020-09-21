@@ -39,7 +39,7 @@ const Rocket = () => (
 );
 
 const Wrapper = styled.div`
-  padding-top: 75px;
+  padding-top: 160px;
   position: relative;
   min-height: 626px;
   margin-bottom: 50px;

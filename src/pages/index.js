@@ -134,13 +134,13 @@ const IndexPage = () => (
         <Link to="/type-of-business/women-business">Women Business</Link>
         <Link to="/type-of-business/restaurant-business">Restaurant Business</Link>
         <Link to="/type-of-business/summer-business">Summer Business</Link>
-        <Link to="/type-of-business/dog-walking">Dog Walking (no details)</Link>
-        <Link to="/type-of-business/brewery-business">Brewery Business (no details)</Link>
-        <Link to="/type-of-business/blockchain">Blockchain (no details)</Link>
+        <Link to="/type-of-business/dog-walking">Dog Walking</Link>
+        <Link to="/type-of-business/brewery-business">Brewery Business</Link>
+        <Link to="/type-of-business/blockchain">Blockchain</Link>
         <Link to="/type-of-business/bookstore">Bookstore</Link>
         <Link to="/type-of-business/bed-and-breakfast">Bed and Breakfast</Link>
         <Link to="/type-of-business/laundromat">Laundromat</Link>
-        <Link to="/type-of-business/landscaping-business">Landscaping Business (no details)</Link>
+        <Link to="/type-of-business/landscaping-business">Landscaping Business</Link>
         <h2>Additional sites</h2>
         <Link to="/components">Components</Link>
       </Wrapper>
