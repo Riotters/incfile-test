@@ -36,7 +36,7 @@ const TypeBusiness = () => (
                         circleBackgroundColor={color.blue1}
                         circleBackgroundShadow={shadow.blue1}
                         imageName="star-01"
-                        className="containerMargin"
+                        width="100%"
                     >
                         <Paragraph>
                             We’ve all got skills we could turn into business ideas, and it’s time to harness them into
@@ -58,7 +58,7 @@ const TypeBusiness = () => (
                         circleBackgroundColor={color.blue1}
                         circleBackgroundShadow={shadow.blue1}
                         imageName="business-licence-search-copy-5"
-                        className="containerMargin"
+                        width="100%"
                     >
                         <Paragraph>
                             Similar to how you explored your skills, start thinking about the things that inspire you —
@@ -77,7 +77,7 @@ const TypeBusiness = () => (
                         circleBackgroundColor={color.blue1}
                         circleBackgroundShadow={shadow.blue1}
                         imageName="decide-what-really-matters-to-you"
-                        className="containerMargin"
+                        width="100%"
                     >
                         <Paragraph>
                             The most successful businesses happen because the founder has a great idea that they care
@@ -99,7 +99,7 @@ const TypeBusiness = () => (
                         circleBackgroundColor={color.blue1}
                         circleBackgroundShadow={shadow.blue1}
                         imageName="no-money"
-                        className="containerMargin"
+                        width="100%"
                     >
                         <Paragraph>
                             The most successful businesses happen because the founder has a great idea that they care

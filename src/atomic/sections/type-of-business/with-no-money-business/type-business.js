@@ -33,6 +33,7 @@ const TypeBusiness = () => (
                         circleBackgroundColor={color.blue1}
                         circleBackgroundShadow={shadow.blue1}
                         imageName="with-no-money-business-2"
+                        width="100%"
                     >
                         <Paragraph mixed={true}>
                             You can sell your creative services. If you’re a painter, illustrator, writer or designer,
@@ -52,6 +53,7 @@ const TypeBusiness = () => (
                         circleBackgroundColor={color.blue1}
                         circleBackgroundShadow={shadow.blue1}
                         imageName="yard-work-and-chores"
+                        width="100%"
                     >
                         <Paragraph mixed={true}>
                             People always need help around their homes, and they’re happy to pay for it. You could try dog walking, with-no-money, yard work, babysitting, landscaping and more. You’ll only need to put a little money out for basic supplies; if you're great at your job, you’ll soon have repeat clients. If you have a trade you’re trained in, you can leverage that into a business too. You could become an interior designer, carpenter, builder, plumber, electrician or another type
@@ -67,6 +69,7 @@ const TypeBusiness = () => (
                         circleBackgroundColor={color.blue1}
                         circleBackgroundShadow={shadow.blue1}
                         imageName="online-shop-icon"
+                        width="100%"
                     >
                         <Paragraph mixed={true}>
                             While most retail requires you to buy stock and inventory up front, you still have a couple of options for getting into ecommerce. <Link to="/">Dropshipping</Link> allows you to sell products that are shipped directly from manufacturers to end customers - you don’t pay until the order is made. You can also get into <Link to="/">affiliate marketing</Link>, where you send people to another website to purchase something and get a commission on any sales you refer.
@@ -81,6 +84,7 @@ const TypeBusiness = () => (
                         circleBackgroundColor={color.blue1}
                         circleBackgroundShadow={shadow.blue1}
                         imageName="using-your-knowledge-02"
+                        width="100%"
                     >
                         <Paragraph mixed={true}>
                             You may have other types of knowledge you can turn into a small business. Perhaps you know how to code and develop, or you can design and build websites. You might be a social media expert or a great blogger. You could look into tutoring and teaching. The internet has lowered the barriers to starting knowledge-based businesses, and they are a great place to start if you're low on capital.
@@ -95,6 +99,7 @@ const TypeBusiness = () => (
                         circleBackgroundColor={color.blue1}
                         circleBackgroundShadow={shadow.blue1}
                         imageName="talk-to-incorporation-specialist-not-a-salesperson-01"
+                        width="100%"
                     >
                         <Paragraph mixed={true}>
                             If you have insight, expertise and experience that’s useful to others, you could get work as a consultant.
@@ -110,6 +115,7 @@ const TypeBusiness = () => (
                         circleBackgroundColor={color.blue1}
                         circleBackgroundShadow={shadow.blue1}
                         imageName="the-gig-economy"
+                        width="100%"
                     >
                         <Paragraph mixed={true}>
                             The gig economy also provides plenty of opportunity for starting a small business without much capital.

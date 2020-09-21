@@ -43,18 +43,15 @@ const TitleBox = styled.div`
 `;
 
 const GridSectionList = styled.div`
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 100%;
-    max-width: 970px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 100%;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 70px;
     
-    > div {
-        margin-bottom: 70px;
-    }
-    
-    @media (min-width: 970px) {
-        margin: 120px auto 0;
+    @media (min-width: 992px){
+        grid-template-columns: 470px 470px;
     }
 `;
 
@@ -118,7 +115,7 @@ const ValidatingBusinessIdea = () => (
 
                 <GridSectionList>
 
-                    <TextBlockWithImage className="containerMargin" SvgImage={IdetifyIcon} imageBackgroundColor={color.green2}
+                    <TextBlockWithImage width={100} widthUnit="%" SvgImage={IdetifyIcon} imageBackgroundColor={color.green2}
                                         imageShadowColor={color.green2}>
                         <Heading size={4}>
                             Here are some further tips
@@ -130,7 +127,7 @@ const ValidatingBusinessIdea = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage className="containerMargin" SvgImage={InvolvedIcon} imageBackgroundColor={color.babyblue2}
+                    <TextBlockWithImage width={100} widthUnit="%" SvgImage={InvolvedIcon} imageBackgroundColor={color.babyblue2}
                                         imageShadowColor={color.babyblue2}>
                         <Heading size={4}>
                             Understand your market
@@ -143,7 +140,7 @@ const ValidatingBusinessIdea = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage className="containerMargin" SvgImage={TalkIcon} imageBackgroundColor={color.orange2}
+                    <TextBlockWithImage width={100} widthUnit="%" SvgImage={TalkIcon} imageBackgroundColor={color.orange2}
                                         imageShadowColor={color.orange2}>
                         <Heading size={4}>
                             Talk to clients

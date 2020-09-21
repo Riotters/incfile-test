@@ -39,7 +39,7 @@ const TypeBusiness = () => (
                             circleBackgroundColor={color.blue1}
                             circleBackgroundShadow={shadow.blue1}
                             imageName={item.imageName}
-                            className="containerMargin"
+                            width="100%"
                         />
                     ))}
                     <AdventagesWithLongText
@@ -50,6 +50,7 @@ const TypeBusiness = () => (
                         circleBackgroundColor={color.blue1}
                         circleBackgroundShadow={shadow.blue1}
                         imageName="no-money-icon"
+                        width="100%"
                     >
                         <Paragraph mixed={true}>
                             This is perhaps the biggest sector of all, and you have plenty of choices when it comes to

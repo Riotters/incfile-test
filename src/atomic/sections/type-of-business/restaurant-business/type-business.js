@@ -76,7 +76,7 @@ const TypeBusiness = () => (
                             circleBackgroundColor={color.blue1}
                             circleBackgroundShadow={shadow.blue1}
                             imageName={item.imageName}
-                            className="containerMargin"
+                            width="100%"
                         />
                     ))}
                 </AdventagesBox>
