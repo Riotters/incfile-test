@@ -30,13 +30,31 @@ const Steps = styled.section`
   }
 `;
 
+const Box = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  span {
+    font-size: 24px;
+    line-height: 1;
+  }
+`;
+
 const StepsSection = ({ className, content }) => (
   <Steps className={className}>
     <HeadingCenter headline={content.header} text={content.text} headlineWidth="700" bottomMargin="80" />
     <ContentCenter contentWidth="770">
-      <Circle height="80" width="80" circleColor={color.blue1} iconColor={color.white} bottomMargin="32">1</Circle>
-      <Heading size="3" bottomMargin="24">{content.list[0].header}</Heading>
-      <Paragraph big>{content.list[0].text}</Paragraph>
+      <Box>
+        <Circle height="64" width="64" circleColor={color.blue1} iconColor={color.white} bottomMargin="32">1</Circle>
+        <Heading size="3" bottomMargin="24">{content.list[0].header}</Heading>
+        <Paragraph big>{content.list[0].text}</Paragraph>
+      </Box>
+      <Box>
+        <Circle height="64" width="64" circleColor={color.blue1} iconColor={color.white} bottomMargin="32">2</Circle>
+        <Heading size="3" bottomMargin="24">{content.list[1].header}</Heading>
+        <Paragraph big>{content.list[1].text}</Paragraph>
+      </Box>
     </ContentCenter>
   </Steps>
 );
