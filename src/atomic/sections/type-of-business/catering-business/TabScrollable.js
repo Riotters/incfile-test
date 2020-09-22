@@ -280,7 +280,7 @@ const TabScrollable = ({layout, columns}) => {
                                                 various types to consider.
                                             </Paragraph>
 
-                                            <Accordion content={BusinessInsuranceAccordionContent}/>
+                                            <Accordion tab content={BusinessInsuranceAccordionContent}/>
                                         </TextBlockWithImage>
                                     </div>
                                 )
@@ -372,9 +372,9 @@ const TabScrollable = ({layout, columns}) => {
                                                 will need to file and pay them.
                                             </Paragraph>
 
-                                            <Accordion content={TaxesAccordionContent}/>
+                                            <Accordion tab content={TaxesAccordionContent}/>
 
-                                            <Paragraph big mixed={true}>
+                                            <Paragraph big mixed={true} style={{marginTop: "48px"}}>
                                                 As a rule of thumb, we recommend keeping back around a third of your
                                                 earnings to pay your taxes. We can even prepare and file your tax
                                                 returns
@@ -417,9 +417,9 @@ const TabScrollable = ({layout, columns}) => {
                                                 cleaning business in good standing.
                                             </Paragraph>
 
-                                            <Accordion content={MaintainingAccordionContent}/>
+                                            <Accordion tab content={MaintainingAccordionContent}/>
 
-                                            <Paragraph big mixed={true} style={{marginTop: "50px"}}>
+                                            <Paragraph big mixed={true} style={{marginTop: "48px"}}>
                                                 As a rule of thumb, we recommend keeping back around a third of your
                                                 earnings to pay your taxes. We can even <Link to="/">prepare and file
                                                 your tax returns

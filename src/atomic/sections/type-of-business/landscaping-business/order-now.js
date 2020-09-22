@@ -14,11 +14,11 @@ const OrderNow = ({layout, columns}) => (
         <OrderNowWrapper>
 
             <Oval>
-                <OvalLeftSvg />
+                <OvalLeftSvg/>
             </Oval>
 
             <OvalRight>
-                <OvalRightSvg />
+                <OvalRightSvg/>
             </OvalRight>
 
             <Container>
@@ -27,22 +27,23 @@ const OrderNow = ({layout, columns}) => (
 
                     <h2 style={{position: "relative"}}>
                         <CurveWrapper>
-                            <Curve />
+                            <Curve/>
                         </CurveWrapper>
 
                         The Complete "Start Your Business" Checklist
                     </h2>
                     <p>A Clear and Comprehensive Guide to Starting Your Business the Right Way</p>
                     <ButtonsBox>
-                        <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{url: "/learning-center-entity/business-checklist/", text: "Business Checklist"}}/>
+                        <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{
+                            url: "/learning-center-entity/business-checklist/",
+                            text: "Business Checklist"
+                        }}/>
                     </ButtonsBox>
                 </LeftImageRightContent>
             </Container>
         </OrderNowWrapper>
         <TabScrollableWrapper>
-            <Container>
-                <TabScrollable/>
-            </Container>
+            <TabScrollable/>
         </TabScrollableWrapper>
     </>
 );
