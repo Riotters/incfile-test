@@ -89,6 +89,7 @@ const Circle = ({
     bottomMargin,
     rightMargin,
     padding,
+    ...rest
   }) => (
     <Wrapper
       className={className}
@@ -104,6 +105,7 @@ const Circle = ({
       bottomMargin={bottomMargin}
       rightMargin={rightMargin}
       padding={padding}
+      {...rest}
     >
         {children}
     </Wrapper>
