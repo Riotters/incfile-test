@@ -136,7 +136,7 @@ const Fee = styled.div`
 `;
 
 const PricingCard = ({ className, content, image, ...rest }) => (
-  <Wrapper className={className} content={content} {...rest}>
+  <Wrapper className={className} {...rest}>
     {content.variant && (
       <Box>
         <span>{content.variant}</span>

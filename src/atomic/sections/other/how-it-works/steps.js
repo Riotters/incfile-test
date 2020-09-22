@@ -7,6 +7,7 @@ import HeadingCenter from "../../../partials/heading-center";
 import ContentCenter from "../../../partials/content-center";
 import Circle from "../../../atoms/icons/circle";
 import VariantsCards from "../../../organisms/cards/variants-cards.js";
+import BlockSVG from "../../../../images/blocks.inline.svg";
 import List from "../../../organisms/lists/related-questions-list";
 import Oval from "../../../atoms/icons/oval";
 import Curve from "../../../atoms/icons/curve";
@@ -51,6 +52,17 @@ const Box = styled.div`
   }
 `;
 
+const ImageWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  svg {
+    width: 100%;
+  }
+`;
+
 const StepsSection = ({ className, content }) => (
   <Steps className={className}>
     <HeadingCenter headline={content.header} text={content.text} headlineWidth="700" bottomMargin="80" />
@@ -71,6 +83,9 @@ const StepsSection = ({ className, content }) => (
         <Heading size="3" bottomMargin="24">{content.list[2].header}</Heading>
         <Paragraph big bottomMargin="0">{content.list[2].text}</Paragraph>
       </Box>
+      <ImageWrapper>
+        <BlockSVG />
+      </ImageWrapper>
     </ContentCenter>
   </Steps>
 );

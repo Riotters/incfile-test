@@ -35,7 +35,7 @@ const images = ["paper-plane-7719", "plane-7291", "rocket-7993"];
 
 const PricingCards = ({ className, content, bottomMargin }) => {
   return (
-    <Wrapper className={className} content={content} bottomMargin={bottomMargin}>
+    <Wrapper className={className} bottomMargin={bottomMargin}>
       {content.map((card, i) => (
         <Card content={card} border={i === 0 ? true : false} color={colors[i]} image={images[i]} />
       ))}
