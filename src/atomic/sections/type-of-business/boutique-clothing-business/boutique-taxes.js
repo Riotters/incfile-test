@@ -102,7 +102,7 @@ const AdventagesBox = styled.div`
     }
     
     @media (min-width: 992px){
-        grid-template-columns: 470px 470px;
+        grid-template-columns: 470px 470px; 
     }
 `;
 
@@ -130,10 +130,10 @@ const OvalBottom = styled.div`
 
 const CurveWrapper = styled.div`
     position: absolute;
-    right: -115px;
-    top: 24px;
+    right: -15px;
+    top: -85px;
     
-    @media (max-width: 970px) {
+    @media (max-width: 1200px) {
         display: none;
     }
 `;

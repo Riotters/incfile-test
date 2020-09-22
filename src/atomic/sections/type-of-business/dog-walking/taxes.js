@@ -91,8 +91,9 @@ const Oval = styled.div`
 
 const CurveWrapper = styled.div`
     position: absolute;
-    right: -115px;
-    top: 24px;
+    right: -15px;
+    top: -85px;
+    
     
     svg{
         path {

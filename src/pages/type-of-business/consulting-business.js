@@ -325,7 +325,7 @@ const ConsultingBusiness = () => (
 
         <ToolsAndLinks/>
 
-        <Conclusion to="/" buttonTitle="Start your Event Planning Business with us, today">
+        <Conclusion to="/" buttonTitle="Start your Consulting Business with us, today">
             <Heading size={3} style={{fontSize: "48px"}}>
                 Conclusion
             </Heading>

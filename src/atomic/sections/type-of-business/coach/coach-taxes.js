@@ -127,8 +127,8 @@ const OvalBottom = styled.div`
 
 const CurveWrapper = styled.div`
     position: absolute;
-    right: -115px;
-    top: 24px;
+    right: -15px;
+    top: -85px;
     
     @media (max-width: 970px) {
         display: none;
