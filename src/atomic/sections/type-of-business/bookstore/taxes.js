@@ -50,7 +50,7 @@ const Service = styled.div`
 `;
 
 const AdventagesBox = styled.div`
-  display: grid;
+    display: grid;
     grid-gap: 10px;
     grid-template-columns: 100%;
     justify-content: center;

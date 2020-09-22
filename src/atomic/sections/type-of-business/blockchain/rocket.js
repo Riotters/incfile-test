@@ -24,7 +24,7 @@ const Rocket = () => (
                 <Image filename="rocket-2x" alt="rocket lunch"/>
             </RocketWrapper>
             <Content>
-                <Heading size={4} style={{fontFamily: "MarkPro-Bold, sans-serif", fontSize: "40px"}}>
+                <Heading size={4} style={{fontFamily: "MarkPro, sans-serif", fontSize: "40px"}}>
                     Launch
                     your business with Incfile
                 </Heading>
@@ -32,7 +32,7 @@ const Rocket = () => (
                     No Contracts. No Surprise. <br/>
                     Only $0 + State Fee to Launch Your Business.
                 </Paragraph>
-                <Button theme="primary56" arrow width="410px" content={{url: "/", text: "Start your Airbnb Business with us, today!"}} />
+                <Button theme="primary48" arrow width="max-content" content={{url: "/", text: "Start your Blockchain Business with us, today!"}} />
             </Content>
         </Container>
     </Wrapper>

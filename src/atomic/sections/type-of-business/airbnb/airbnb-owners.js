@@ -53,14 +53,21 @@ const Wrapper = styled.div`
 `;
 
 const LinksContainer = styled.div`
-    width: 100%;
-    margin: 100px auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 100%;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 30px;
+    margin-top: 76px;
+    margin-bottom 76px; 
     
-    @media (min-width: 1100px) {
-        width: 1000px;
+    @media (min-width: 490px){
+        grid-template-columns: 470px;
+    }
+    
+    @media (min-width: 992px){
+        grid-template-columns: 470px 470px;
     }
 `;
 
@@ -70,14 +77,7 @@ const LinkItem = styled.div`
     background-color: white;
     box-shadow: ${shadow.white1};
     width: 100%;
-    margin-bottom: 30px;
     position: relative;
-    
-    @media (min-width: 1100px) {
-        margin-left: 15px;
-        margin-right: 15px;
-        width: 470px;
-    }
 `;
 
 const AbsoluteCurve = styled.div`

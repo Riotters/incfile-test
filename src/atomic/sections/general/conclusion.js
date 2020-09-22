@@ -18,7 +18,7 @@ const Conclusion = ({buttonTitle, children, to}) => (
                 <TextBox>
                     {children}
                 </TextBox>
-                <Button arrow theme="primary40" content={{text: buttonTitle, url: to}} width="420px"/>
+                <Button arrow theme="primary48" content={{text: buttonTitle, url: to}} width="max-content"/>
             </Content>
         </Container>
     </ConclusionWrapper>

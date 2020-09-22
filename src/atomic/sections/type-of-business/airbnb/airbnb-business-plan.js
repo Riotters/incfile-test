@@ -48,6 +48,7 @@ const OvalCenter = styled.div`
   right: 0;
   top: 38%;
   width: 100%;
+  transform: scaleX(-1);
   
   @media (min-width: 720px){
     width: 720px;
