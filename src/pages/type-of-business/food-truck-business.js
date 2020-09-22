@@ -461,7 +461,7 @@ const FoodTruckBusiness = () => (
 
         <ToolsAndLinks/>
 
-        <Conclusion to="/" buttonTitle="Start your Daycare Business with us, today">
+        <Conclusion to="/" buttonTitle="Start your Foodtrack Business with us, today">
             <Heading size={3} style={{fontSize: "48px"}}>
                 Conclusion
             </Heading>
