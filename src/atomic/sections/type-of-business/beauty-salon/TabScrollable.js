@@ -285,7 +285,7 @@ const TabScrollable = ({layout, columns}) => {
                                                 various types.
                                             </Paragraph>
 
-                                            <Accordion content={BusinessInsuranceAccordionContent}/>
+                                            <Accordion tab content={BusinessInsuranceAccordionContent}/>
                                         </TextBlockWithImage>
                                     </div>
                                 )
@@ -377,9 +377,9 @@ const TabScrollable = ({layout, columns}) => {
                                                 file and pay them.
                                             </Paragraph>
 
-                                            <Accordion content={TaxesAccordionContent}/>
+                                            <Accordion tab content={TaxesAccordionContent}/>
 
-                                            <Paragraph big mixed={true}>
+                                            <Paragraph big mixed={true} style={{marginTop: "48px"}}>
                                                 As a rule of thumb, we recommend keeping back around a third of your
                                                 earnings to pay
                                                 your taxes. We can even <Link to="/">prepare and file your tax returns
@@ -423,9 +423,9 @@ const TabScrollable = ({layout, columns}) => {
                                                 business in good standing.
                                             </Paragraph>
 
-                                            <Accordion content={MaintainingAccordionContent}/>
+                                            <Accordion tab content={MaintainingAccordionContent}/>
 
-                                            <Paragraph big mixed={true} style={{marginTop: "50px"}}>
+                                            <Paragraph big mixed={true} style={{marginTop: "48px"}}>
                                                 As a rule of thumb, we recommend keeping back around a third of your
                                                 earnings to pay your taxes. We can even <span className="big blue">prepare and file your tax returns for you</span>.
                                             </Paragraph>
@@ -467,7 +467,7 @@ const TabScrollable = ({layout, columns}) => {
                                                 financially healthy.
                                             </Paragraph>
 
-                                            <Accordion content={FinancesAccordionContent}/>
+                                            <Accordion tab content={FinancesAccordionContent}/>
 
                                         </TextBlockWithImage>
                                     </div>
