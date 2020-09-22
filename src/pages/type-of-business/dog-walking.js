@@ -428,7 +428,7 @@ const DogWalking = () => (
 
         <ToolsAndLinks/>
 
-        <Conclusion to="/" buttonTitle="Start your Daycare Business with us, today">
+        <Conclusion to="/" buttonTitle="Start your Dog Walking Business with us, today">
             <Heading size={3} style={{fontSize: "48px"}}>
                 Conclusion
             </Heading>

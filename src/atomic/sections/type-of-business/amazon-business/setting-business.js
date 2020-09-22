@@ -159,8 +159,8 @@ const Oval = styled.div`
 
 const AbsoluteCurve = styled.div`
     position: absolute;
-    top: -153px;
-    right: -115px;
+    top: -105px;
+    right: -105px;
     width: 115px;
     display: none;
     transform: rotate(-90deg);

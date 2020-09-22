@@ -767,7 +767,7 @@ const TshirtBusiness = () => (
                          description={toolsList.description}/>
         </ToolsWrapper>
 
-        <Conclusion to="/" buttonTitle="Start your Etsy Business with us, today">
+        <Conclusion to="/" buttonTitle="Start your Tshirt Business with us, today">
             <Heading size={3} style={{fontSize: "40px"}}>Conclusion</Heading>
             <Paragraph big>
                 Starting a T-shirt business is a great way to get exposure to the fast-moving worlds of e-commerce and

@@ -359,7 +359,7 @@ const ConstructionCompany = () => (
 
         <ToolsAndLinks/>
 
-        <Conclusion to="/" buttonTitle="Start your Travel Agency Business with us, today">
+        <Conclusion to="/" buttonTitle="Start your Construction Company with us, today">
             <Heading size={3} style={{fontSize: "40px", marginTop: "300px"}}>
                 Conclusion
             </Heading>

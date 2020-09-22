@@ -804,7 +804,7 @@ const CleaningBusiness = () => (
                          description={toolsList.description}/>
         </ToolsWrapper>
 
-        <Conclusion to="/" buttonTitle="Start your Etsy Business with us, today">
+        <Conclusion to="/" buttonTitle="Start your Cleaning Business with us, today">
             <Heading size={3} style={{fontSize: "40px"}}>Conclusion</Heading>
             <Paragraph big>
                 A cleaning business can be a very solid choice for a first-time entrepreneur. The combination of a low

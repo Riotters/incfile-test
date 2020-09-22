@@ -758,7 +758,7 @@ const BeautySalon = () => (
                          description={toolsList.description}/>
         </ToolsWrapper>
 
-        <Conclusion to="/" buttonTitle="Start your Etsy Business with us, today">
+        <Conclusion to="/" buttonTitle="Start your Beauty Salon Business with us, today">
             <Heading size={3} style={{fontSize: "40px"}}>Conclusion</Heading>
             <Paragraph big>
                 As you can see, starting a beauty salon can be a great way to grow a thriving business. A strong focus
