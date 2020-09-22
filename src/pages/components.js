@@ -563,7 +563,7 @@ const ComponentsPage = () => (
 
                 <h3>Info Cards Section</h3>
                 <GreyWrapper>
-                    <InfoCardsSection cards={InfoCards}/>
+                    <InfoCardsSection cards={InfoCards.items}/>
                 </GreyWrapper>
 
                 <h3>Circle with Text Block</h3>
