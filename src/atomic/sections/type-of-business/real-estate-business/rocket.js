@@ -95,6 +95,10 @@ const Curve = styled.div`
   position: absolute;
   right: 0;
   bottom: 150px;
+  
+  @media (max-width: 1200px){
+    display: none;
+  }
 `
 
 const Moon = styled.div`

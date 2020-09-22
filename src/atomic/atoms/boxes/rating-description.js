@@ -8,6 +8,11 @@ const Wrapper = styled.span`
   line-height: 20px;
   text-align: left;
   margin-left: 12px;
+  margin-top: 16px;
+  
+  @media (min-width: 768px){
+    margin-top: 0;
+  }
 `;
 
 const RatingDescription = ({children, className}) => (

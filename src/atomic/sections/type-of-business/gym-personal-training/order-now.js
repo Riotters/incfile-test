@@ -89,7 +89,7 @@ const CurveWrapper = styled.div`
     top: -85px;
     display: none;
     
-    @media (min-width: 992px){
+    @media (min-width: 1200px){
         display: block;
     }
 `;

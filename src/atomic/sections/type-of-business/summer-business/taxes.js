@@ -94,7 +94,7 @@ const CurveWrapper = styled.div`
             fill: #d2e0fe;
         }
     }
-    @media (max-width: 970px) {
+    @media (max-width: 1200px) {
         display: none;
     }
 `;

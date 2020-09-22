@@ -112,7 +112,7 @@ const CurveWrapper = styled.div`
     right: -24px;
     top: 0px;
     
-    @media (max-width: 650px){
+    @media (max-width: 1200px){
         display: none;
     }
 `;
