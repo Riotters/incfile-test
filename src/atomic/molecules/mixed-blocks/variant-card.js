@@ -6,7 +6,8 @@ import { Paragraph } from "../../atoms/typography/paragraph";
 import Whitebox from "../../atoms/boxes/white-box";
 import TextCheck from "../../molecules/text-blocks/text-check";
 import Button from "../buttons/button";
-import HelpMarkSVG from "../../../images/icons/help-mark.inline.svg"
+import HelpMarkSVG from "../../../images/icons/help-mark.inline.svg";
+import Image from "../../atoms/image/image_nobase64";
 
 const Wrapper = styled.div`
   display: flex;
@@ -134,7 +135,7 @@ const Fee = styled.div`
   }
 `;
 
-const PricingCard = ({ className, content, ...rest }) => (
+const PricingCard = ({ className, content, image, ...rest }) => (
   <Wrapper className={className} content={content} {...rest}>
     {content.variant && (
       <Box>
@@ -143,7 +144,9 @@ const PricingCard = ({ className, content, ...rest }) => (
     )}
     <Heading size="4" marginBottom="16">{content.header}</Heading>
     <Paragraph bottomMargin="8">{content.text}</Paragraph>
-    <ImageWrapper />
+    <ImageWrapper>
+      <Image filename={image} />
+    </ImageWrapper>
     <Price>${content.price}</Price>
     <Button theme="primary48" content={content.button} margin="0 0 32px 0" arrow />
     <ul style={{marginBottom: "48px"}}>
