@@ -65,7 +65,7 @@ const SummerBusiness = () => (
 
         <ToolsAndLinks />
 
-        <Conclusion to="/" buttonTitle="Start your No Money Business with us, today">
+        <Conclusion to="/" buttonTitle="Start your Summer Business with us, today">
             <Heading size={3} style={{fontSize: "48px"}}>
                 Conclusion
             </Heading>
