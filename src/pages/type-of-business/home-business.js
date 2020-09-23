@@ -107,39 +107,35 @@ const HomeBusiness = () => (
 
                     <PanelWrapper>
                         <Heading size={3}>
-                            Why You Should Start a New Construction Business
+                            Why You Should Start a Business from Home
                         </Heading>
 
-                        <Paragraph big>
-                            You might wonder how successful construction businesses are - we’ve got the facts.
+                        <Paragraph big style={{marginBottom: "52px"}}>
+                            You’re probably wondering whether a home-based business is for you.
+                            If so, we’ve got some surprising statistics that suggest it’s a growing and lucrative type of business to run:
                         </Paragraph>
 
-                        <Paragraph big bottomMargin={52}>
-                            This is why construction businesses are so exciting - how can you be part of that success?
-                            We're here to help you figure that out.
-                        </Paragraph>
+                        <BlueBoxWithAbsoluteText absoluteText="400M"
+                                                 text="Businesses in the U.S. that were started from home"/>
+                        <BlueBoxWithAbsoluteText absoluteText="$400B"
+                                                 text="Total revenue of the 40M businesses per year"/>
+                        <BlueBoxWithAbsoluteText absoluteText="100K"
+                                                 text="A fifth of home-based businesses make over a year"/>
 
-                        <BlueBoxWithAbsoluteText absoluteText="900B"
-                                                 text="How to choose whether your construction business should be an LLC or corporation"/>
-                        <BlueBoxWithAbsoluteText absoluteText="$1.2T"
-                                                 text="The U.S. has one of the largest construction markets in the world, with expenditures of over $1.2 trillion"/>
-                        <BlueBoxWithAbsoluteText absoluteText="$1.4T"
-                                                 text="Expected construction expenditures grow by 2021."/>
-
-                        <div style={{marginTop: "70px"}}>
+                        <div style={{marginTop: "28px"}}>
                             <Adventages
-                                headline="The U.S. construction industry is responsible for over 4% of U.S. GDP"
+                                headline="Nearly three-quarters of home-based businesses are still operating after three years, compared with only a third of traditional businesses"
                                 width="100%"
                             />
                         </div>
 
                         <Adventages
-                            headline="Currently, the majority of growth in the construction industry is in residential building"
+                            headline="Almost half of home-based businesses are started for less than $5,000"
                             width="100%"
                         />
 
                         <Adventages
-                            headline="Public sector construction saw the slowest growth"
+                            headline="Women start more home-based businesses than men"
                             width="100%"
                         />
                     </PanelWrapper>
