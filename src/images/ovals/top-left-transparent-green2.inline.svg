@@ -1,9 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 720 720">
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 570 570">
     <defs>
-        <linearGradient id="cokq26thva" x1="100%" x2="100%" y1="95.674%" y2="0%">
+        <linearGradient id="bi1vcfu7la" x1="100%" x2="100%" y1="95.674%" y2="0%">
             <stop offset="0%" stop-color="#FFF" stop-opacity="0"/>
-            <stop offset="100%" stop-color="#d5f3e8"/>
+            <stop offset="100%" stop-color="#D5F3E8"/>
         </linearGradient>
     </defs>
-    <path fill="url(#cokq26thva)" fill-rule="evenodd" d="M720 0v720H0C0 322.355 322.355 0 720 0z" transform="rotate(180 360 360)"/>
+    <g fill="none" fill-rule="evenodd" opacity=".5">
+        <g fill="url(#bi1vcfu7la)" transform="translate(0 -6238)">
+            <g>
+                <g>
+                    <path d="M570 0v570H0C0 255.198 255.198 0 570 0z" transform="translate(-1 6238) translate(1) rotate(180 285 285)"/>
+                </g>
+            </g>
+        </g>
+    </g>
 </svg>

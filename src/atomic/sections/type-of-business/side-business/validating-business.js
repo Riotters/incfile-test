@@ -10,7 +10,7 @@ import InvolvedIcon from "../../../../images/icons/get-involved-with-business-co
 import {color} from "../../../../components/styles/colors";
 import React from "react";
 import styled from "styled-components";
-import OvalBlueSVG from "../../../../images/ovals/top-left-transparent-green2.inline.svg";
+import OvalBlueSVG from "../../../../images/ovals/top-left-transparent-green1.inline.svg";
 import OvalRedSVG from "../../../../images/ovals/top-left-transparent-pink.inline.svg";
 import Curve from "../../../atoms/shapes/curve";
 import {gradient} from "../../../atoms/styles/colors";

@@ -5,7 +5,7 @@ import TopImageBox from "../../../../components/top-image-box";
 import {color} from "../../../../components/styles/colors";
 import styled from "styled-components";
 import Curve from "../../../../images/green-curve.inline.svg";
-import GreenOval from "../../../../images/ovals/top-left-transparent-green2.inline.svg";
+import GreenOval from "../../../../images/ovals/top-left-transparent-green1.inline.svg";
 import ContentCenter from "../../../partials/content-center";
 import {Link} from "gatsby";
 

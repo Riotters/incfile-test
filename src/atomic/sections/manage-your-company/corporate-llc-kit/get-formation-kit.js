@@ -9,7 +9,7 @@ import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-right-green2-transparent.inline.svg";
-import Oval2SVG from "../../../../images/ovals/top-left-transparent-green2.inline.svg";
+import Oval2SVG from "../../../../images/ovals/top-left-transparent-green1.inline.svg";
 import Curve from "../../../atoms/icons/curve";
 import CurveSVG from "../../../../images/curves/top-left-bottom-right-big.inline.svg";
 

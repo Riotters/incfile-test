@@ -13,7 +13,7 @@ import UmbrellaIcon from "../../../../images/icons/umbrella.inline.svg";
 import HandsIcon from "../../../../images/icons/hands.inline.svg";
 import ArrowsIcon from "../../../../images/icons/arrows.inline.svg"
 import Button from "../../../molecules/buttons/button";
-import OvalGreen3 from "../../../../images/ovals/top-left-transparent-green2.inline.svg";
+import OvalGreen3 from "../../../../images/ovals/top-left-transparent-green1.inline.svg";
 import {shadow} from "../../../atoms/styles/shadows";
 import {Link} from "gatsby";
 

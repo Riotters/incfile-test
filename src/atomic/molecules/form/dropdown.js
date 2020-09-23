@@ -13,6 +13,7 @@ const Wrapper = styled.div`
     .Dropdown {
         &-root {
             position: relative;
+            width: 100%;
             min-width: 227px;
             font-family: Avenir, sans-serif;
             font-size: 16px;
