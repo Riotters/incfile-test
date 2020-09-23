@@ -6,17 +6,17 @@ import TalkIcon from "../../../../images/icons/talk-to-clients.inline.svg";
 import IdetifyIcon from "../../../../images/icons/identify-your-unique-selling-point.inline.svg"
 import LookIcon from "../../../../images/icons/look-at-who-your-competitors-are-in-the-space.inline.svg"
 import MarketIcon from "../../../../images/icons/understand-your-market.inline.svg"
-import InvolvedIcon from "../../../../images/icons/get-involved-with-business-communities.inline.svg";
 import {color} from "../../../../components/styles/colors";
 import React from "react";
 import styled from "styled-components";
-import OvalBlueSVG from "../../../../images/ovals/bottom-left-transparent-blue3.inline.svg";
-import OvalRedSVG from "../../../../images/ovals/top-left-transparent-pink.inline.svg";
 import Curve from "../../../atoms/shapes/curve";
 import BigCurve from "../../../../images/curve-orange.inline.svg";
+import {gradient} from "../../../atoms/styles/colors";
+import Colorbox from "../../../../components/color-box";
+import StarIcon from "../../../../images/icons/star-with-base.inline.svg";
 
 const ContainerWrapper = styled.div`
-    background: rgb(255,255,255);
+    background-image: ${gradient.orange3};
     padding-bottom: 100px;
     position: relative;
     padding-top: 120px;
@@ -82,32 +82,6 @@ const CurveWrapper = styled.div`
     }
 `;
 
-const Oval = styled.div`
-  position: absolute;
-  left: 0;
-  top: 286px;
-  width: 100%;
-  
-  @media (min-width: 420px) {
-        width: 420px;
-  }
-`
-
-const OvalBig = styled.div`
-  position: absolute;
-  right: 0;
-  top: calc(50% - 360px);
-  width: 100%;
-  
-  svg{
-    transform: scaleX(-1);
-  }
-  
-  @media (min-width: 720px) {
-        width: 720px;
-  }
-`
-
 const AbsoluteCurve = styled.div`
     position: absolute;
     left: -27px;
@@ -117,13 +91,6 @@ const AbsoluteCurve = styled.div`
 
 const ValidatingBusinessIdea = () => (
     <ContainerWrapper>
-        <Oval>
-            <OvalBlueSVG/>
-        </Oval>
-
-        <OvalBig>
-            <OvalRedSVG/>
-        </OvalBig>
 
         <Container>
 
@@ -133,29 +100,51 @@ const ValidatingBusinessIdea = () => (
                         <Curve color={color.blue1}/>
                     </AbsoluteCurve>
                     <Heading size={3}>
-                        Validating Your Handyman
-                        Business Idea
+                        Validating Your Home-Based Business Idea
                     </Heading>
                     <Paragraph big>
-                        These are all great starting points for a home handyman, but you will need to build on them to
-                        make the business your own. It’s your unique skills and approach that will really help your
-                        business stand out.
-                    </Paragraph>
-
-                    <Paragraph big style={{fontFamily: "Avenir-Heavy", marginTop: "48px", color: color.black}}>
-                        These are all great starting points for a home handyman, but you will need to build on them to
-                        make the business your own. It’s your unique skills and approach that will really help your
-                        business stand out.
+                        The above home business ideas are all great starting points, but you’ll need to build on them to
+                        make the business your own. You have unique skills and insight you can use to create a
+                        home-based business that will really stand out.
                     </Paragraph>
 
                     <Paragraph big>
-                        Before committing too much time, energy and money into your new handyman business, it’s
-                        important to test the marketplace.
+                        Start by determining whether you have the right skillset. For example, if you’re selling
+                        products from home, have you identified the right niche and marketplace? If you’re providing
+                        home-based services, is there a demand for those services in your area?
                     </Paragraph>
+
+                    <Colorbox curveColor={color.green1} color={color.green3} curve theme="icon" Icon={StarIcon}
+                              maxWidth={670}>
+                        <Paragraph big style={{fontWeight: "bold"}}>
+                            Another important area to think about is how much time, effort and energy you have to put
+                            into your side business.
+                        </Paragraph>
+                        <Paragraph bottomMargin={0}>
+                            You need to commit to any venture in order to make it successful. And every side business
+                            will have dozens or hundreds of competitors, sometimes from full-time entrepreneurs.
+                        </Paragraph>
+                    </Colorbox>
+
+                    <Paragraph big style={{marginTop: "48px", marginBottom: "48px"}}>
+                        Getting started in a home-based business is easy, but becoming a success is harder. Before
+                        committing too much time, energy and money into your new home-based business, it’s important to
+                        test the marketplace and validate your ideas.
+                    </Paragraph>
+
+                    <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
+                        The thing to learn here is that it’s okay to say “no” to your first, second or third home-based
+                        business ideas.
+                    </Paragraph>
+
                     <Paragraph big>
-                        Not every idea you have will make it to becoming a handyman business. There are all sorts of
-                        reasons to say “yes” or “no” to specific businesses, so think about what your strengths and
-                        weaknesses are so you can choose a handyman business you’d be great at.
+                        Very few entrepreneurs get it right first time. In fact, getting it wrong is often a badge of
+                        honor!
+                    </Paragraph>
+
+                    <Paragraph big>
+                        Still, you don’t want to waste too much time, energy or money on the wrong initiatives, so ask
+                        and answer these questions honestly to find the right way forward.
                     </Paragraph>
                 </TitleBox>
 
@@ -164,12 +153,11 @@ const ValidatingBusinessIdea = () => (
                                         imageBackgroundColor={color.green2}
                                         imageShadowColor={color.green2}>
                         <Heading size={4}>
-                            Identify your handyman business’ unique selling points (USPs)
+                            Identify your home-based business’s unique selling points (USPs)
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
-                            What do you bring to your clients that they can’t easily get elsewhere? Do you specialize in
-                            particular skills, or do you serve specific types of customers? Finding your unique selling
-                            points — what you do better than anyone else — is a great way to stand out.
+                            Whether you’re competing on features, price, quality, speed or something else, your USPs set
+                            you apart from competitors and encourage customers to come to you.
                         </Paragraph>
                     </TextBlockWithImage>
 
@@ -183,10 +171,9 @@ const ValidatingBusinessIdea = () => (
                             Look at who your competitors are in the space
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
-                            Establish how much competition you’re likely to have from other tradesmen and handymen in
-                            your area. Some competition is fine, as it shows there’s demand for your services, but too
-                            much competition can make it hard to build up a client base. That’s why we recommend going
-                            niche and finding one or two areas you can really excel in.
+                            Having competitors is a good thing as it shows there’s a market — but if there are too many,
+                            you’re likely
+                            to struggle without a really good unique selling point.
                         </Paragraph>
                     </TextBlockWithImage>
 
@@ -197,11 +184,9 @@ const ValidatingBusinessIdea = () => (
                             Understand your market
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
-                            You need to understand exactly who you’re going
-                            to be providing handyman services to. Will it mainly be new homeowners, seniors, people in a
-                            particular locale, commercial building owners, businesses
-                            or something else? This will be essential to your marketing, communications, and finding
-                            clients.
+                            Clearly identify exactly who your customers are likely to be, where they hang out and how
+                            you’re going to reach them. This will be essential to your marketing, communications, sales
+                            and customer support.
                         </Paragraph>
                     </TextBlockWithImage>
 
@@ -212,21 +197,8 @@ const ValidatingBusinessIdea = () => (
                             Talk to clients
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
-                            Speak with potential customers to understand what they want from your handyman services, and
-                            validate this by asking if they would commit to spending real money on them.
-                        </Paragraph>
-                    </TextBlockWithImage>
-
-                    <TextBlockWithImage width={100} widthUnit="%" SvgImage={InvolvedIcon}
-                                        imageBackgroundColor={color.red2}
-                                        imageShadowColor={color.purple2}>
-                        <Heading size={4}>
-                            Get involved with business communities and discussion groups
-                        </Heading>
-                        <Paragraph bottomPadding={0} bottomMargin={0}>
-                            One of the great things about the handyman industry is that there are some awesome
-                            communities and discussion groups. Get involved in them and learn the ins and outs of your
-                            chosen market before committing.
+                            Speak with potential customers to understand what they want from your products and services,
+                            and validate this by asking if they would commit to spending real money on them.
                         </Paragraph>
                     </TextBlockWithImage>
 
