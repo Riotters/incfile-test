@@ -143,6 +143,7 @@ const IndexPage = () => (
         <Link to="/type-of-business/bed-and-breakfast">Bed and Breakfast</Link>
         <Link to="/type-of-business/laundromat">Laundromat</Link>
         <Link to="/type-of-business/landscaping-business">Landscaping Business</Link>
+        <Link to="/type-of-business/home-business">Home Business</Link>
         <h2>Additional sites</h2>
         <Link to="/components">Components</Link>
       </Wrapper>
