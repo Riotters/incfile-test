@@ -11,12 +11,12 @@ import Next from "../../atomic/sections/other/how-it-works/next";
 import Essentials from "../../atomic/sections/other/how-it-works/essentials";
 import Info from "../../atomic/sections/other/how-it-works/info";
 //Texts
-import { top, steps, next, essentials, info } from "../../static/other/how-it-works";
+import { top, steps, next, essentials, info } from "../../static/other/free-llc";
 
 const GeneralResearchTopics = () => (
   <Layout>
     <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
-    <Top imageName="mr-bulb-how-it-works-2002" imageAlt="Mrs Bulb and with checklist" ovalColor="purple-2" headlineWidth="500" textWidth="800">
+    <Top imageName="mr-bulb-how-it-works-2002" imageAlt="Mrs Bulb and with checklist" ovalColor="blue" headlineWidth="500" textWidth="800">
       <h1>{top.header}</h1>
       <p>{top.text}</p>
       <RatingRow topMargin="0">

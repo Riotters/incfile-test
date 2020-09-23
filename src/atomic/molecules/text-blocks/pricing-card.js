@@ -31,7 +31,7 @@ const Wrapper = styled.div`
 `
 
 const PricingCard = ({ className, content }) => (
-    <Wrapper className={className} content={content}>
+    <Wrapper className={className}>
         <Whitebox className="box">
             <Heading size="4" bottomMargin="32">{content.header}</Heading>
             <span>${content.price}</span>
