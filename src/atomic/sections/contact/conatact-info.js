@@ -7,6 +7,7 @@ import Image from '../../atoms/image/image_nobase64';
 import Oval from "../../atoms/icons/oval";
 import { color } from '../../../components/styles/colors';
 import OvalSVG from "../../../images/ovals/top-right-transparent-orange.inline.svg";
+import OvalSVG2 from "../../../images/ovals/top-left-transparent-orange2.inline.svg";
 import ShapeCurve from "../../atoms/shapes/curve";
 import RelativeElement from '../../elements/relative-e';
 import AbsoluteShapCure from '../../elements/absolute-shape-curve-e';
@@ -67,6 +68,12 @@ const ContactInfo = ({ className, content, isNewSale }) => (
         <Oval className="oval" height="420" width="420" top="0" right="0" y="0">
             <OvalSVG />
         </Oval>
+
+        {isNewSale && (
+            <Oval className="oval" height="420" width="420" top="0" left="0" y="0">
+                <OvalSVG2 />
+            </Oval>
+        )}
 
         <HeadingCenter
             className="heading"

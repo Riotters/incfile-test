@@ -7,6 +7,7 @@ import Oval from "../../atoms/icons/oval";
 import { color } from '../../../components/styles/colors';
 import OvalSVG from "../../../images/ovals/bottom-left-transparent-orange3.inline.svg";
 import OvalSVG2 from "../../../images/ovals/top-right-transparent-babyblue1.inline.svg";
+import OvalSVG3 from "../../../images/ovals/top-left-transparent-babyblue1.inline.svg";
 import ShapeCurve from "../../atoms/shapes/curve";
 import RelativeElement from '../../elements/relative-e';
 import AbsoluteShapCure from '../../elements/absolute-shape-curve-e';
@@ -46,13 +47,23 @@ const AlignCenter = styled.div`
 
 const SupportForm = ({ className, content, isNewSale }) => (
     <Wrapper className={className}>
-        <Oval className="oval" height="136" width="136" top="20" left="0" y="-78">
-            <OvalSVG />
-        </Oval>
+        {!isNewSale && (
+            <>
+                <Oval className="oval" height="136" width="136" top="20" left="0" y="-78">
+                    <OvalSVG />
+                </Oval>
 
-        <Oval className="oval" height="420" width="420" top="20" right="0" y="-65">
-            <OvalSVG2 />
+                <Oval className="oval" height="420" width="420" top="20" right="0" y="-65">
+                    <OvalSVG2 />
+                </Oval>
+            </>
+        )}
+
+        {isNewSale && (
+            <Oval className="oval" height="420" width="420" top="40" left="0" y="-65">
+            <OvalSVG3 />
         </Oval>
+        )}
 
         <HeadingCenter
             className="heading"
