@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import HeadingCenter from "../../../partials/heading-center";
-import ContentCenter from "../../../partials/content-center";
+import ContentLeft from "../../../partials/content-left";
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-blue3.inline.svg";
 import Oval2SVG from "../../../../images/ovals/top-right-transparent-blue3.inline.svg";
@@ -66,17 +66,17 @@ const ListingsSection = ({ className, content }) => (
       <OvalSVG />
     </Oval>
     <HeadingCenter headline={content.header} headlineWidth="770" bottomMargin="32" />
-    <ContentCenter>
-      <Paragraph big maxWidth="770">
+    <ContentLeft contentWidth="770">
+      <Paragraph big>
         {content.text}
       </Paragraph>
-      <Paragraph big maxWidth="770">
+      <Paragraph big>
         {content.text2}
       </Paragraph>
-      <Paragraph big maxWidth="770" bottomMargin="64">
+      <Paragraph big bottomMargin="64">
         {content.text3}
       </Paragraph>
-    </ContentCenter>
+    </ContentLeft>
     {content.regions.map((region) => (
       <Region>
         <Container>
