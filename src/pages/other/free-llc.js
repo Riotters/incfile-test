@@ -10,9 +10,6 @@ import Fee from "../../atomic/sections/other/free-llc/fee";
 import Start from "../../atomic/sections/other/free-llc/start";
 import Industry from "../../atomic/sections/other/free-llc/industry";
 import Catch from "../../atomic/sections/other/free-llc/catch";
-import Next from "../../atomic/sections/other/how-it-works/next";
-import Essentials from "../../atomic/sections/other/how-it-works/essentials";
-import Info from "../../atomic/sections/other/how-it-works/info";
 //Texts
 import { top, fee, start, industry, isCatch } from "../../static/other/free-llc";
 

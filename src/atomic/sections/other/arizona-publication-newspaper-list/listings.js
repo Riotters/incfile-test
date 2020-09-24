@@ -33,9 +33,21 @@ const Region = styled.div`
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 100%;
   grid-gap: 30px;
   width: 100%;
+
+  @media(min-width: 769px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media(min-width: 992px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media(min-width: 1200px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 `;
 
 const Box = styled(Whitebox)`
