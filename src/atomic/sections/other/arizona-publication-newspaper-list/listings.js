@@ -3,15 +3,17 @@ import styled from "styled-components";
 import HeadingCenter from "../../../partials/heading-center";
 import ContentCenter from "../../../partials/content-center";
 import Oval from "../../../atoms/icons/oval";
-import OvalSVG from "../../../../images/ovals/bottom-left-transparent-green3.inline.svg";
+import OvalSVG from "../../../../images/ovals/top-left-transparent-blue3.inline.svg";
 import { Paragraph } from "../../../atoms/typography/paragraph";
 import { Heading } from "../../../atoms/typography/heading";
 import Whitebox from "../../../atoms/boxes/white-box";
+import Container from "../../../container";
 
 const Listings = styled.section`
   position: relative;
-  padding-top: 75px;
+  padding-top: 56px;
   padding-bottom: 64px;
+  background-image: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(242,246,255,1) 50%, rgba(255,255,255,1) 100%);
 
   .headline {
     margin-bottom: 80px;
@@ -19,12 +21,15 @@ const Listings = styled.section`
 `;
 
 const Region = styled.div`
+  width: 100%;
+  position: relative;
+  padding-bottom: 48px;
+`;
+
+const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  position: relative;
-  margin-bottom: 48px;
 
   h3 {
     text-align: center;
@@ -56,10 +61,10 @@ const Box = styled(Whitebox)`
 
 const ListingsSection = ({ className, content }) => (
   <Listings className={className}>
-    <Oval className="oval" height="570" width="570" top="10" left="0">
+    <Oval className="oval" height="720" width="720" top="5" left="0">
       <OvalSVG />
     </Oval>
-    <HeadingCenter headline={content.header} headlineWidth="770" />
+    <HeadingCenter headline={content.header} headlineWidth="770" bottomMargin="32" />
     <ContentCenter>
       <Paragraph big maxWidth="770">
         {content.text}
@@ -67,27 +72,31 @@ const ListingsSection = ({ className, content }) => (
       <Paragraph big maxWidth="770">
         {content.text2}
       </Paragraph>
-      <Paragraph big maxWidth="770">
+      <Paragraph big maxWidth="770" bottomMargin="64">
         {content.text3}
       </Paragraph>
-      {content.regions.map((region) => (
-        <Region>
-          <Heading size="3" bottomMargin="48">
-            {region.header}
-          </Heading>
-          <Grid>
-            {region.newspapers.map((newspaper) => (
-              <Box>
-                <Heading size="4" bottomMargin="16">
-                  {newspaper.header}
-                </Heading>
-                <Paragraph bottomMargin="0">{newspaper.text}</Paragraph>
-              </Box>
-            ))}
-          </Grid>
-        </Region>
-      ))}
     </ContentCenter>
+    {content.regions.map((region) => (
+      <Region>
+        <Container>
+          <Wrapper>
+            <Heading size="3" bottomMargin="48">
+              {region.header}
+            </Heading>
+            <Grid>
+              {region.newspapers.map((newspaper) => (
+                <Box>
+                  <Heading size="4" bottomMargin="16">
+                    {newspaper.header}
+                  </Heading>
+                  <Paragraph bottomMargin="0">{newspaper.text}</Paragraph>
+                </Box>
+              ))}
+            </Grid>
+          </Wrapper>
+        </Container>
+      </Region>
+    ))}
   </Listings>
 );
 
