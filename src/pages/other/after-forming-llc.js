@@ -1,64 +1,31 @@
-import React from 'react';
+import React from "react";
 import Layout from "../../components/layout";
-import styled from 'styled-components';
 import SEO from "../../components/seo";
-
-import Top from '../../atomic/states-llc/top';
-import Button from "../../atomic/molecules/buttons/button";
 import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
-import RatingRow from "../../atomic/atoms/boxes/rating-row";
-import CartBlock from "../../atomic/molecules/blocks/cart-block";
-import RatingBlock from "../../atomic/molecules/blocks/rating-block";
-import Rocket from "../../atomic/sections/review-entity-type/c-corporation/rocket";
-import LeftTabPages from '../../atomic/states-llc/left-tab-pages';
-import MainPageContent from '../../atomic/states-llc/page-content';
-import WrapperContent from '../../atomic/states-llc/wrapper-content';
-import AfterFormingLLCSection from '../../atomic/sections/other/after-forming-llc';
+import Button from "../../atomic/molecules/buttons/button";
+//Sections
+import Top from "../../atomic/partials/top";
+import About from "../../atomic/sections/other/after-forming-llc/about";
+import Guide from "../../atomic/sections/other/after-forming-llc/guide";
+import Articles from "../../atomic/sections/articles";
+//Texts
+import { top, about, guide } from "../../static/other/form-an-llc";
 
-// content
-import { tabPages, rocket } from "../../static/states-llc/texas/general";
-import { pageContent } from "../../static/other/after-forming-llc";
-
-const Wrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-
-    @media (min-width: 769px) {
-        flex-direction: ${props => (props.layout !== "grid" ? "row" : "column")};
-    }
-`
-
-const AfterFormingLLC = () => (
-    <Layout>
-        <SEO title={pageContent.seo.title} description={pageContent.seo.desc} />
-
-        <Top
-            imageName="typewriter-01.inline"
-            imageAlt="Frequently question"
-            headlineWidth={500} stateName="TX"
-        >
-            <h1>{pageContent.top.title}</h1>
-            <Buttonsbox>
-            <Button content={pageContent.top.button} width="500px" theme="primary56" arrow />
-            </Buttonsbox>
-            <RatingRow topMargin="48">
-                <CartBlock />
-                <RatingBlock />
-            </RatingRow>
-        </Top>
-
-        <WrapperContent>
-            <Wrapper>
-                <LeftTabPages content={tabPages} />
-                <MainPageContent>
-                    <AfterFormingLLCSection content={pageContent.content} />
-                </MainPageContent>
-            </Wrapper>
-        </WrapperContent>
-
-        <Rocket content={rocket} />
-
-    </Layout>
+const AfterForming = () => (
+  <Layout>
+    <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
+    <Top imageName="mr-bulb-compass-3979
+    " imageAlt="Mrs Bulb and with checklist" ovalColor="sun" headlineWidth="550">
+      <h1>{top.header}</h1>
+      <p>{top.text}</p>
+      <Buttonsbox>
+        <Button content={top.button[0]} theme="primary56" arrow />
+      </Buttonsbox>
+    </Top>
+    <About content={about} />
+    <Guide content={guide} />
+    <Articles />
+  </Layout>
 );
 
-export default AfterFormingLLC;
+export default AfterForming;

@@ -4,27 +4,18 @@ import { color, gradient } from "../../../../components/styles/colors";
 import { states } from "../../../../components/states";
 import Dropdown from "../../../molecules/form/dropdown";
 import ContentCenter from "../../../partials/content-center";
-import TextCenterLayout from "../../../../components/partials/blocks/heading-center";
+import HeadingCenter from "../../../partials/heading-center";
 import TopImageBox from "../../../../components/top-image-box";
 import Button from "../../../molecules/buttons/button";
 import Oval from "../../../atoms/icons/oval";
-import OvalSVG from "../../../../images/ovals/top-right-transparent-orange.inline.svg";
+import OvalSVG from "../../../../images/ovals/top-left-transparent-babyblue.inline.svg";
 import { Heading } from "../../../atoms/typography/heading";
+import { Paragraph } from "../../../atoms/typography/paragraph";
 
-const SearchTool = styled.div`
+const Fee = styled.div`
   padding-bottom: 100px;
   padding-top: 100px;
   position: relative;
-
-  &::before {
-    content: "";
-    height: 1650px;
-    width: 100%;
-    background-image: ${gradient.orange3};
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
 `;
 
 const ImageBoxes = styled.div`
@@ -94,16 +85,18 @@ const ImageBoxes = styled.div`
 const dropdownOptions = states.state.map((state) => state.name);
 const dropdownOptionsTwo = ["Option 1", "Option 2", "Option 3"];
 
-const SearchToolSection = ({ content }) => {
+const FeeSection = ({ content }) => {
   const cards = content.cards;
 
   return (
-    <SearchTool>
-      <Oval heigh="720" width="720" top="0" right="0">
+    <Fee>
+      <Oval heigh="720" width="720" top="0" left="0" y="-20">
         <OvalSVG />
       </Oval>
+      <HeadingCenter headline={content.header} headlineWidth="770" bottomMargin="80" />
       <ContentCenter>
-        <TextCenterLayout headline={content.header} headlineWidth="700" text={content.text} />
+        <Paragraph>{content.text}</Paragraph>
+        <Paragraph>{content.text2}</Paragraph>
         <ImageBoxes>
           <TopImageBox className="box box--left" image="lcsn-4343" color={color.green3}>
             <Heading size="4">{cards[0]}</Heading>
@@ -114,9 +107,10 @@ const SearchToolSection = ({ content }) => {
             <Dropdown className="dropdown" placeholder="Select" options={dropdownOptions} />
           </TopImageBox>
         </ImageBoxes>
+        <Button content={content.button} theme="primary56" arrow />
       </ContentCenter>
-    </SearchTool>
+    </Fee>
   );
 };
 
-export default SearchToolSection;
+export default FeeSection;
