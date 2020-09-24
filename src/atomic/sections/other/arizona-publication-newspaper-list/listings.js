@@ -4,6 +4,7 @@ import HeadingCenter from "../../../partials/heading-center";
 import ContentCenter from "../../../partials/content-center";
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-blue3.inline.svg";
+import Oval2SVG from "../../../../images/ovals/top-right-transparent-blue3.inline.svg";
 import { Paragraph } from "../../../atoms/typography/paragraph";
 import { Heading } from "../../../atoms/typography/heading";
 import Whitebox from "../../../atoms/boxes/white-box";
