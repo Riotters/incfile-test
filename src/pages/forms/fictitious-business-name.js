@@ -9,9 +9,11 @@ import ContactIcon from "../../images/icons/contact-information.inline.svg";
 import CompanyIcon from "../../images/icons/company-information.inline.svg";
 import FormControl from "../../atomic/molecules/form/form-control";
 import InputField from "../../atomic/molecules/form/input-field";
-import Drop from "../../atomic/molecules/form/dropdown";
+import Drop from "../../atomic/molecules/form/dropdown2";
 import {Heading} from "../../atomic/atoms/typography/heading";
-import Row from "../../atomic/molecules/helpers/row";
+import FormContent from "../../atomic/molecules/form/form-content";
+import FormTextBlock from "../../atomic/molecules/form/form-text-block";
+import LockIcon from "../../images/icons/lock.inline.svg";
 
 const EntityTypeOptions = [
     {value: 1, label: "one"},
@@ -41,71 +43,90 @@ const FictitiousBusinessNamePage = () => (
                 <FlexContent>
                     <LeftColumn>
                         <FormSection icon={ContactIcon} title="Contact Information">
-                            <FormControl column={2}>
-                                <InputField label="First Name *" isRequired={true}/>
-                            </FormControl>
+                            <FormContent>
+                                <FormControl span={3}>
+                                    <InputField label="First Name *" isRequired={true}/>
+                                </FormControl>
 
-                            <FormControl column={2}>
-                                <InputField label="Last Name *" isRequired={true}/>
-                            </FormControl>
+                                <FormControl span={3}>
+                                    <InputField label="Last Name *" isRequired={true}/>
+                                </FormControl>
 
-                            <FormControl column={2}>
-                                <InputField label="Email *" isRequired={true}/>
-                            </FormControl>
+                                <FormControl span={3}>
+                                    <InputField label="Email *" isRequired={true}/>
+                                </FormControl>
 
-                            <FormControl column={2}>
-                                <InputField label="Phone"/>
-                            </FormControl>
+                                <FormControl span={3}>
+                                    <InputField label="Phone"/>
+                                </FormControl>
+                            </FormContent>
                         </FormSection>
 
                         <FormSection icon={CompanyIcon} title="Company Information">
 
-                            <Row>
-                                <FormControl column={3}>
+                            <FormContent>
+                                <FormControl span={2}>
                                     <Drop label="Entity Type *" options={EntityTypeOptions}
                                           placeholder="Select Entity Type"/>
                                 </FormControl>
 
-                                <FormControl column={3}>
+                                <FormControl span={2}>
                                     <Drop label="State of Formation *" options={StateFormationOptions}
                                           placeholder="Select Entity Type"/>
                                 </FormControl>
 
-                                <FormControl column={3}>
+                                <FormControl span={2}>
                                     <Drop label="State of Service *" options={ServiceOptions}
                                           placeholder="Select Entity Type"/>
                                 </FormControl>
+                            </FormContent>
 
-                            </Row>
-
-                            <Heading size={3}
-                                     style={{fontSize: "16px", lineHeight: "19px", marginTop: "40px", marginBottom: 0}}>Company
-                                Address</Heading>
-
-                            <Row>
-                                <FormControl column={2}>
-                                    <InputField label="Phone"/>
+                            <FormContent paddingTop={0}>
+                                <FormControl span={6}>
+                                    <Heading size={3}
+                                             style={{
+                                                 fontSize: "16px",
+                                                 lineHeight: "19px",
+                                                 marginTop: "10px",
+                                                 marginBottom: 0
+                                             }}>
+                                        Company Address
+                                    </Heading>
                                 </FormControl>
 
-                                <FormControl column={2}>
-                                    <InputField label="Phone"/>
-                                </FormControl>
-                            </Row>
-
-                            <Row>
-                                <FormControl column={2}>
-                                    <InputField label="Phone"/>
+                                <FormControl span={3}>
+                                    <InputField label="Street Address *" isRequired/>
                                 </FormControl>
 
-                                <FormControl column={4}>
-                                    <InputField label="Phone"/>
+                                <FormControl span={3}>
+                                    <InputField label="Address (Count) *" isRequired/>
+                                </FormControl>
+                            </FormContent>
+
+                            <FormContent>
+                                <FormControl span={3}>
+                                    <InputField label="City *" isRequired/>
                                 </FormControl>
 
-                                <FormControl column={4}>
-                                    <InputField label="Phone"/>
+                                <FormControl span={3}>
+                                    <FormContent columns={5} paddingTop={0} paddingLeft={0} paddingRight={0}>
+                                        <FormControl span={3}>
+                                            <InputField label="State *" isRequired/>
+                                        </FormControl>
+
+                                        <FormControl span={2}>
+                                            <InputField label="ZIP Code *" isRequired/>
+                                        </FormControl>
+                                    </FormContent>
                                 </FormControl>
-                            </Row>
+                            </FormContent>
                         </FormSection>
+
+                        <FormTextBlock
+                            title="Safe & Secure"
+                            text="Your information and data is safe and secure. Our servers are located in secure data centers and our website uses SSL modern encryption for all sensitive data. Our servers are also backed up hourly ensuring your data is never lost."
+                            Icon={LockIcon}
+                        />
 
                     </LeftColumn>
 
