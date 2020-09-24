@@ -3,11 +3,10 @@ export const top = {
 };
 
 export const listings = {
-  header: `aaa`,
-  text: `aaa`,
-  text2: `aaa`,
-  text3: `aaa`,
-  header2: `aaa`,
+  header: `Newspaper Listings`,
+  text: `You need to define how you’re going to run your boutique clothing business, market yourself, get sales, make a profit and grow. This can only come about through creating a watertight retail clothing business plan. It will help you get your thinking in order and show your commitment to your business.`,
+  text2: `You will also need to look at financial projections for your boutique clothing business. What are your expected sales and revenues? What is your profitability? How much money will you keep in the business to grow it? How much will you pay yourself and others?`,
+  text3: `Business plans do vary slightly, but they should all cover the following areas:`,
   regions: [
     {
       header: `Apache`,
