@@ -396,30 +396,5 @@ export const listings = {
         },
       ],
     },
-    {
-      header: `aaa`,
-      newspapers: [
-        {
-          header: `aaa`,
-          text: `aaa`,
-        },
-        {
-          header: `aaa`,
-          text: `aaa`,
-        },
-        {
-          header: `aaa`,
-          text: `aaa`,
-        },
-        {
-          header: `aaa`,
-          text: `aaa`,
-        },
-        {
-          header: `aaa`,
-          text: `aaa`,
-        },
-      ],
-    },
   ],
 };
