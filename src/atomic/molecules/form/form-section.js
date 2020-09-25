@@ -6,9 +6,7 @@ import HeaderForm from "./header-form";
 const FormSection = ({children, title, icon}) => (
     <Wrapper>
         <HeaderForm title={title} Icon={icon} />
-        <FormContent>
-            {children}
-        </FormContent>
+        {children}
     </Wrapper>
 );
 
@@ -18,18 +16,12 @@ const Wrapper = styled.div`
     border-radius: 5px;
     box-shadow: 0 24px 32px 0 rgba(236, 236, 236, 0.5);
     margin-bottom: 32px;
-`;
-
-const FormContent = styled.div`
-    padding: 0 32px 32px 32px;
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-between;
+    padding-bottom: 32px;
 `;
 
 FormSection.propTypes = {
     title: PropTypes.string.isRequired,
-    icon: PropTypes.object.isRequired
+    icon: PropTypes.object.isRequired,
 }
 
 export default FormSection;

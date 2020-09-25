@@ -107,7 +107,7 @@ const Wrapper = styled.div`
 
   @media (min-width: 992px) {
     flex-direction: row;
-    height: 100vh;
+    height: ${(props) => (props.heightSM ? props.heightSM : "100vh")};
     max-height: 777px;
     padding-top: 0;
   }
