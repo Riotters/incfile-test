@@ -11,7 +11,7 @@ const SummaryList = ({list}) => (
                 if (isNaN(item.price)) {
                     item.price = 0;
                 }
-                
+
                 return (
                     <ListPosition>
                         <Description>{item.description}</Description>
