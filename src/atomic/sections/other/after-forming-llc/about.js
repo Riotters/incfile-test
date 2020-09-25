@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { color } from "../../../atoms/styles/colors";
-import Tabs from "../../../organisms/tabs/comparison-chart-tabs";
+import Tabs from "../../../organisms/tabs/after-forming-llc-tabs";
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-pink.inline.svg";
 import Oval2SVG from "../../../../images/ovals/bottom-right-transparent-babyblue3.inline.svg";

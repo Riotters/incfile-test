@@ -1,7 +1,7 @@
 export const top = {
     header: `What to Do After Forming Your LLC`,
     text: `$0 + State Fee & FREE Registered Agent.`,
-    buttons: [
+    button: [
       {
         text: `Download out "What to do after formation" guide`,
         url: `/`,

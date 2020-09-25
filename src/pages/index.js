@@ -93,7 +93,7 @@ const IndexPage = () => (
         <Link to="/other/new-york-entity-search">New York Entity Search (WIP)</Link>
         <Link to="/other/virginia-entity-search">Virginia Entity Search (WIP)</Link>
         <Link to="/other/new-jersey-entity-search">New Jersey Entity Search (WIP)</Link>
-        <Link to="/other/daleware-entity-search">Daleware Entity Search (WIP)</Link>
+        <Link to="/other/delaware-entity-search">Daleware Entity Search (WIP)</Link>
         <Link to="/other/how-it-works">How It Works (WIP)</Link>
         <Link to="/other/free-llc">Free LLC (WIP)</Link>
         <Link to="/other/arizona-publication-newspaper-list">Arizona Publication Newspaper List (WIP)</Link>

@@ -3,23 +3,16 @@ import styled from "styled-components";
 import { Tabs, Panel, useTabState } from "@bumaga/tabs";
 // import { motion } from "framer-motion"
 import Container from "../../container";
-import { color } from "../../atoms/styles/colors";
-import Tab1SVG from "../../../images/icons/limited-liability-company.inline.svg";
-import Tab2SVG from "../../../images/icons/s-corporation-or-c-corporation.inline.svg";
-import Tab3SVG from "../../../images/icons/rocket.inline.svg";
-import Tab4SVG from "../../../images/icons/heart-flower.inline.svg";
-import Tab5SVG from "../../../images/icons/sole-propriotership.inline.svg";
+import Tab1SVG from "../../../images/icons/llc-filing-requirements.inline.svg";
+import Tab2SVG from "../../../images/icons/business-name-trademark.inline.svg";
+import Tab3SVG from "../../../images/icons/finances-and-accounting.inline.svg";
+import Tab4SVG from "../../../images/icons/set-up-business-operations.inline.svg";
+import Tab5SVG from "../../../images/icons/choose-business-tools.inline.svg";
 import ArrowSVG from "../../../images/arrow.inline.svg";
-import LLCLimitedSVG from "../../../images/icons/llc-limited-liability-protection.inline.svg";
-import LLCTaxesSVG from "../../../images/icons/llc-taxes-and-tax-returns.inline.svg";
 import { Collapse } from "react-collapse";
 import VisibilitySensor from "../../../components/VisibilitySensor";
 import { Heading } from "../../atoms/typography/heading";
 import { Paragraph } from "../../atoms/typography/paragraph";
-import IconListColorBox from "../../molecules/text-blocks/icon-h4-list-color";
-import Circle from "../../atoms/icons/circle";
-import Table from "../tables/the-c-corp-table";
-import Table2 from "../tables/the-nonprofit-corp-table";
 
 const Wrapper = styled.div`
   display: flex;
@@ -222,35 +215,29 @@ const CCorpTabs = ({ layout, columns, content }) => (
                 </PanelWrapper>
               </Panel>
               <Panel>
-                <PanelWrapper className={isVisible ? "slideUp enter panel1" : "slideUp panel1"} layout={layout}>
-                  <Heading size="3">{content.content[0].header}</Heading>
-                  <Paragraph big bottomMargin="48">
-                    {content.content[0].text}
+                <PanelWrapper className="panel2" layout={layout}>
+                  <Heading size="3">{content.content[1].header}</Heading>
+                  <Paragraph big bottomMargin="40">
+                    {content.content[1].text}
                   </Paragraph>
                 </PanelWrapper>
               </Panel>
               <Panel>
-                <PanelWrapper className={isVisible ? "slideUp enter panel1" : "slideUp panel1"} layout={layout}>
-                  <Heading size="3">{content.content[0].header}</Heading>
-                  <Paragraph big bottomMargin="48">
-                    {content.content[0].text}
-                  </Paragraph>
+                <PanelWrapper className="panel3" layout={layout}>
+                  <Heading size="3">{content.content[2].header}</Heading>
+                  <Paragraph big bottomMargin="40">{content.content[2].text}</Paragraph>
                 </PanelWrapper>
               </Panel>
               <Panel>
-                <PanelWrapper className={isVisible ? "slideUp enter panel1" : "slideUp panel1"} layout={layout}>
-                  <Heading size="3">{content.content[0].header}</Heading>
-                  <Paragraph big bottomMargin="48">
-                    {content.content[0].text}
-                  </Paragraph>
+                <PanelWrapper className="panel4" layout={layout}>
+                  <Heading size="3">{content.content[3].header}</Heading>
+                  <Paragraph big>{content.content[3].text}</Paragraph>
                 </PanelWrapper>
               </Panel>
               <Panel>
-                <PanelWrapper className={isVisible ? "slideUp enter panel1" : "slideUp panel1"} layout={layout}>
-                  <Heading size="3">{content.content[0].header}</Heading>
-                  <Paragraph big bottomMargin="48">
-                    {content.content[0].text}
-                  </Paragraph>
+                <PanelWrapper className="panel4" layout={layout}>
+                  <Heading size="3">{content.content[4].header}</Heading>
+                  <Paragraph big>{content.content[4].text}</Paragraph>
                 </PanelWrapper>
               </Panel>
             </Collapse>

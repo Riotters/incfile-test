@@ -5,11 +5,11 @@ import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
 import Button from "../../atomic/molecules/buttons/button";
 //Sections
 import Top from "../../atomic/partials/top";
-import About from "../../atomic/sections/other/daleware-entity-search/about";
-import Search from "../../atomic/sections/other/daleware-entity-search/search";
-import Faq from "../../atomic/sections/other/daleware-entity-search/faq";
+import About from "../../atomic/sections/other/delaware-entity-search/about";
+import Search from "../../atomic/sections/other/delaware-entity-search/search";
+import Faq from "../../atomic/sections/other/delaware-entity-search/faq";
 //Texts
-import { top, about, search, faq } from "../../static/other/daleware-entity-search";
+import { top, about, search, faq } from "../../static/other/delaware-entity-search";
 
 const GeneralResearchTopics = () => (
   <Layout>
