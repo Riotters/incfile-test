@@ -44,8 +44,12 @@ const IndexPage = () => (
         <h2>LLC States Information</h2>
         <Link to="/texas-llc/">Texas LLC</Link>
 
+        <h2>Contact Pages</h2>
+        <Link to="/contact/existing-clients/">Existing clients</Link>
+        <Link to="/contact/new-sales/">New Sales</Link>
+
         <h2>Forms</h2>
-        <Link to="/forms/ficitious-business-name">Ficitious Business Name (WIP)</Link>
+        <Link to="/forms/fictitious-business-name">Fictitious Business Name (WIP)</Link>
 
         <h2>Manage Your Company</h2>
         <Link to="/manage-your-company">Manage your company</Link>
@@ -96,6 +100,7 @@ const IndexPage = () => (
         <Link to="/other/delaware-entity-search">Daleware Entity Search (WIP)</Link>
         <Link to="/other/how-it-works">How It Works (WIP)</Link>
         <Link to="/other/free-llc">Free LLC (WIP)</Link>
+        <Link to="/other/incfile-reviews/">Customer Service Reviews</Link>
         <Link to="/other/arizona-publication-newspaper-list">Arizona Publication Newspaper List (WIP)</Link>
         <Link to="/other/after-forming-llc">After Forming LLC (WIP)</Link>
         <Link to="/404">404</Link>

@@ -10,63 +10,63 @@ export const top = {
 
 export const perks = {
   header: `Perks Included When You Create`,
-  list: [`Answer a faw easy questions in 5 minutes or less`, `We prepare and file your articles directly with the Secretary of State`, `Receive your filed documents in the mail`],
+  list: [`Answer a faw easy questions in 5 minutes or less`, `We prepare and file your articles directly with the Secretary of State`, `Receive your filed documents in the mail.`],
 }
 
 export const trust = {
-  header: `aaa`,
+  header: `Over 250,000 businesses have trusted us too!`,
   cards: [
     {
-      header: `aaa`,
-      text: `aaa`,
+      header: `Over 250,000 Company Formations`,
+      text: `For more than a decade, we've become pretty good at helping people launch their businesses.`,
     },
     {
-      header: `aaa`,
-      text: `aaa`,
+      header: `Lifetime Customer Support`,
+      text: `Our incorporation specialists are always here to help answer questions about your entity.`,
     },
     {
-      header: `aaa`,
-      text: `aaa`,
+      header: `Competetive Pricing`,
+      text: `We offer the morst competitive pricing on the Internet.`,
     },
   ]
 }
 
 export const steps = {
-  header: `aaa`,
-  list: [`aaa`, `aaa`, `aaa`],
+  header: `Start Your Business in 3 Easy Steps`,
+  list: [`Our packages start at $0 plus state filing fees.`, `All orders are filed using next business day processing.`, `Form you LLC in 3 easy steps in 5 minutes or less.`],
   button: {
-    text: `aaa`,
+    text: `Start my LLC`,
     url: `/`,
   },
 }
 
 export const differences = {
-  header: `aaa`,
-  text: `aaa`,
+  header: `What's the difference between an LLC and a Corporation?`,
+  text: `Not sure if a Corporation or an LLC is right for you? Read the comparison below to review the fundamental differences.`,
   cards: [
     {
-      header: `aaa`,
-      header2: `aaa`,
-      text: `aaa`,
-      header3: `aaa`,
-      text2: `aaa`,
-      header4: `aaa`,
-      text3: `aaa`,
+      header: `LLC`,
+      header2: `Ongoing File Requirements`,
+      text: `Unlike the corporation the LLC is not required to hold meetings annually or maintain bylaws furthermore ownership is expressed by the % each member owns unlike the corporation where ownership is represented by shares of stock.`,
+      header3: `Most Versatile`,
+      text2: `The LLC is the most versatile of all entity types as members can elect receive the same tax treatment of an S or C Corporation. The ease of management, limited liability and ability to designate corporate tax treatment make the LLC our most favored entity type.`,
+      header4: `Pass through Tax Entity`,
+      text3: `Any profits or losses on the business will pass through directly to the member's personal tax return and are treated as personal income and taxed on an individual level.`,
       link: {
-        text: `aaa`,
+        text: `Learn more about LLC`,
         url: `/`,
       }
     },
     {
-      header: `aaa`,
-      header2: `aaa`,
-      text: `aaa`,
-      header3: `aaa`,
-      text2: `aaa`,
-      header4: `aaa`,
-      text3: `aaa`,
+      header: `Corporation`,
+      header2: `Plan to raise money from investors`,
+      text: `The stricter formalities give investors the knowledge they desire about how your company is run.`,
+      header3: `Plan to go public in the future`,
+      text2: `If you are planning to raise capital or to take the company public in the future the corporation is structured for that purpose.`,
+      header4: `Subject to double taxation`,
+      text3: `The corporation itself pays taxes, and any dividends paid to the shareholders are treated as personal income and are subject to additional taxation at the individual level.`,
       link: {
-        text: `aaa`,
+        text: `Learn more about Corporation`,
         url: `/`,
       }
     },

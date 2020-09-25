@@ -7,6 +7,7 @@ const Wrapper = styled.div`
     ${props => props.right && `right: ${props.right};`}
     ${props => props.top && `top: ${props.top};`}
     ${props => props.left && `left: ${props.left};`}
+    ${props => props.bottom && `bottom: ${props.bottom};`}
 `
 
 const AbsoluteShapeCurveElement = ({children, ...rest}) => (

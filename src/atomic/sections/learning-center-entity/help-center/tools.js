@@ -12,13 +12,14 @@ const Tools = styled.section`
   padding-top: 104px;
   padding-bottom: 120px;
   background-color: ${color.blue3};
+  background-image: linear-gradient(${(props) => (props.bgLinear ? props.bgLinear : "")});
 `;
 
 const colors = [color.green3, color.red3, color.red3, color.yellow3, color.babyblue3, color.orange3]
 const icons = ["corporation-state-information", "s-corp-tax-calculator-01", "entity-comparison-chart", "state-filling-fees", "ongoing-filling-requirements-02", "clock-691"]
 
-const ToolsSection = ({ className, content }) => (
-    <Tools className={className}>
+const ToolsSection = ({ className, content, bgLinear }) => (
+    <Tools className={className} bgLinear={bgLinear}>
         <Oval className="oval" height="720" width="720" top="0" right="0">
             <OvalSVG />
         </Oval>
