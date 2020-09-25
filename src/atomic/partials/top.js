@@ -177,7 +177,7 @@ const TextContainer = styled.div`
   }
 
   @media (min-width: 1200px) {
-    padding-top: 150px;
+    padding-top: ${(props) => (props.contentPaddingTop ? props.contentPaddingTop : "150")}px;
   }
 
   h1 {
@@ -217,6 +217,10 @@ const ImageContainer = styled.div`
     position: absolute;
     width: 55%;
     transform: translate(100%, -50%);
+
+    ${props => (props.imagePositionRight &&
+        `right: ${ props.imagePositionRight };`
+    )}
   }
 
   .gatsby-image-wrapper {
@@ -228,7 +232,7 @@ const ImageContainer = styled.div`
   }
 `;
 
-const Top = ({ children, imageName, imageAlt, imageWidth, contentWidth, headlineWidth, textWidth, ovalColor, ...rest }) => (
+const Top = ({ children, imageName, imageAlt, imageWidth, imagePositionRight, contentWidth, headlineWidth, textWidth, ovalColor, ...rest }) => (
   <Wrapper {...rest}>
     <VisibilitySensor partialVisibility once>
       {({ isVisible }) => (
@@ -237,14 +241,14 @@ const Top = ({ children, imageName, imageAlt, imageWidth, contentWidth, headline
         </Oval>
       )}
     </VisibilitySensor>
-    <ImageContainer imageWidth={imageWidth}>
+    <ImageContainer imageWidth={imageWidth} imagePositionRight={imagePositionRight}>
       <Image filename={imageName} alt={imageAlt} />
     </ImageContainer>
     <Container>
       <Content>
         <VisibilitySensor partialVisibility once>
           {({ isVisible }) => (
-            <TextContainer className={isVisible ? "slideRight enter" : "slideRight"} contentWidth={contentWidth} headlineWidth={headlineWidth} textWidth={textWidth}>
+            <TextContainer className={isVisible ? "slideRight enter" : "slideRight"} contentWidth={contentWidth} headlineWidth={headlineWidth} textWidth={textWidth} {...rest}>
               {children}
             </TextContainer>
           )}

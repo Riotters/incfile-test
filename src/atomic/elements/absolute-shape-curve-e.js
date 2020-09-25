@@ -8,6 +8,12 @@ const Wrapper = styled.div`
     ${props => props.top && `top: ${props.top};`}
     ${props => props.left && `left: ${props.left};`}
     ${props => props.bottom && `bottom: ${props.bottom};`}
+
+    @media screen and (max-width:560px) {
+        ${props => (props.hiddenXS && 
+           `display: none;`
+        )}
+    }
 `
 
 const AbsoluteShapeCurveElement = ({children, ...rest}) => (
