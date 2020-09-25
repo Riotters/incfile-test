@@ -26,8 +26,12 @@ const Wrapper = styled.section`
 
 const GridContent = styled.div`
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    column-gap: 30px;
+    grid-template-columns: 1fr;
+    
+    @media (min-width: 768px){
+        grid-template-columns: 2fr 1fr;
+        column-gap: 30px; 
+    }
 `;
 
 export default FormLayout;

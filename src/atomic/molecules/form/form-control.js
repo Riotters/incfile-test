@@ -10,8 +10,11 @@ const FormControl = ({children, span}) => (
 
 const Wrapper = styled.div`
     width: 100%;
-    ${({row}) => row && `grid-row: ${row}`}
-    ${({span}) => span && `grid-column: span ${span}`}
+    
+    @media(min-width: 992px){
+        ${({row}) => row && `grid-row: ${row}`}
+        ${({span}) => span && `grid-column: span ${span}`}
+    }
 `;
 
 FormControl.propTypes = {

@@ -15,11 +15,14 @@ const Wrapper = styled.div`
     padding-right: ${props => props.paddingRight}px;
     padding-bottom: ${props => props.paddingBottom}px;
     display: grid;
-    column-gap: 30px;
     row-gap: 30px;
     justify-content: center;
-    grid-template-columns: repeat(${props => props.columns}, 1fr);
-    grid-template-rows: [row] auto [row] auto [row];
+    grid-template-columns: 1fr;
+
+    @media (min-width: 992px){
+        grid-template-columns: repeat(${props => props.columns}, 1fr);
+        column-gap: 30px;
+    }
 `;
 
 FormContent.propTypes = {
