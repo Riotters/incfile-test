@@ -29,9 +29,9 @@ const GuideSection = ({ className, content }) => (
         </Oval>
         <ImageContent image="after-formation-cta-7994" imageWidth="515">
             <Heading size="2">
-            <Curve top="-20" left="-95" color={color.orange2} rotate="-10">
-                <CurveSVG />
-            </Curve>
+                <Curve top="-20" left="-95" color={color.orange2} rotate="-10">
+                    <CurveSVG />
+                </Curve>
                 {content.header}
             </Heading>
             <Paragraph big>{content.text}</Paragraph>
