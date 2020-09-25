@@ -49,7 +49,10 @@ const IndexPage = () => (
         <Link to="/contact/new-sales/">New Sales</Link>
 
         <h2>Forms</h2>
-        <Link to="/forms/fictitious-business-name">Fictitious Business Name (WIP)</Link>
+        <Link to="/forms/fictitious-business-name">Assumed Business Name</Link>
+        <Link to="/forms/amendment">Articles of Amendment</Link>
+        <Link to="/forms/cert-good-standing">Certificate of Good Standing</Link>
+        <Link to="/forms/dissolution">Articles of Dissolution</Link>
 
         <h2>Manage Your Company</h2>
         <Link to="/manage-your-company">Manage your company</Link>
