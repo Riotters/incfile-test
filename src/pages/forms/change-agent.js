@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useState} from "react"
 import Layout from "../../components/layout";
 import SEO from "../../components/seo"
 import FormSection from "../../atomic/molecules/form/form-section";
@@ -22,6 +22,8 @@ import SummaryOrder from "../../atomic/molecules/form/summary/summary-order";
 import SummaryBar from "../../atomic/molecules/form/summary/summary-bar";
 import SummaryList from "../../atomic/molecules/form/summary/summary-list";
 import SummaryTextBlock from "../../atomic/molecules/form/summary/summary-text-block";
+import TabForm from "../../atomic/molecules/form/tabs-form/tab-form";
+import FormTabContent from "../../atomic/molecules/form/tabs-form/form-tab-content";
 
 const EntityTypeOptions = [
     {value: 1, label: "one"},
@@ -49,135 +51,220 @@ const summaryList = [
     {description: "Processing Fee"},
 ]
 
-const FictitiousBusinessNamePage = () => (
-    <Layout>
-        <SEO title="WIP Page" description="wip page"/>
+const buttonsArray = [
+    {
+        title: "Individual",
+        description: "The registered agent will be an individual.",
+        id: "individual",
+        name: "registered-agent",
+        value: "individual"
+    },
+    {
+        title: "Company",
+        description: "The registered agent will be a company.",
+        id: "company",
+        name: "registered-agent",
+        value: "company"
+    }
+]
 
-        <FormLayout formTitle="Change of Registered Agent">
+const FictitiousBusinessNamePage = () => {
 
-            <LeftColumn>
-                <FormSection icon={ContactIcon} title="Contact Information">
-                    <FormContent>
-                        <FormControl span={3}>
-                            <InputField label="First Name *" isRequired={true}/>
-                        </FormControl>
+    const [value, setValue] = useState("individual");
 
-                        <FormControl span={3}>
-                            <InputField label="Last Name *" isRequired={true}/>
-                        </FormControl>
+    const handleChange = (e) => {
+        setValue(e);
+    };
 
-                        <FormControl span={3}>
-                            <InputField label="Email *" isRequired={true}/>
-                        </FormControl>
+    return (
+        <Layout>
+            <SEO title="WIP Page" description="wip page"/>
 
-                        <FormControl span={3}>
-                            <InputField label="Phone"/>
-                        </FormControl>
-                    </FormContent>
-                </FormSection>
+            <FormLayout formTitle="Change of Registered Agent">
 
-                <FormSection icon={CompanyIcon} title="Company Information">
+                <LeftColumn>
+                    <FormSection icon={ContactIcon} title="Contact Information">
+                        <FormContent>
+                            <FormControl span={3}>
+                                <InputField label="First Name *" isRequired={true}/>
+                            </FormControl>
 
-                    <FormContent>
-                        <FormControl span={2}>
-                            <Drop label="Entity Type *" options={EntityTypeOptions}
-                                  placeholder="Select Entity Type"/>
-                        </FormControl>
+                            <FormControl span={3}>
+                                <InputField label="Last Name *" isRequired={true}/>
+                            </FormControl>
 
-                        <FormControl span={2}>
-                            <Drop label="State of Formation *" options={StateFormationOptions}
-                                  placeholder="Select Entity Type"/>
-                        </FormControl>
+                            <FormControl span={3}>
+                                <InputField label="Email *" isRequired={true}/>
+                            </FormControl>
 
-                        <FormControl span={2}>
-                            <Drop label="State of Service *" options={ServiceOptions}
-                                  placeholder="Select Entity Type"/>
-                        </FormControl>
-                    </FormContent>
+                            <FormControl span={3}>
+                                <InputField label="Phone"/>
+                            </FormControl>
+                        </FormContent>
+                    </FormSection>
 
-                    <FormContent>
-                        <FormControl span={6}>
-                            <Heading size={3}
-                                     style={{
-                                         fontSize: "16px",
-                                         lineHeight: "19px",
-                                         marginTop: "10px",
-                                         marginBottom: 0
-                                     }}>
-                                Company Address
-                            </Heading>
-                        </FormControl>
+                    <FormSection icon={CompanyIcon} title="Company Information">
 
-                        <FormControl span={3}>
-                            <InputField label="Street Address *" isRequired/>
-                        </FormControl>
+                        <FormContent>
+                            <FormControl span={2}>
+                                <Drop label="Entity Type *" options={EntityTypeOptions}
+                                      placeholder="Select Entity Type"/>
+                            </FormControl>
 
-                        <FormControl span={3}>
-                            <InputField label="Address (Count) *" isRequired/>
-                        </FormControl>
-                    </FormContent>
+                            <FormControl span={2}>
+                                <Drop label="State of Formation *" options={StateFormationOptions}
+                                      placeholder="Select Entity Type"/>
+                            </FormControl>
 
-                    <FormContent>
-                        <FormControl span={3}>
-                            <InputField label="City *" isRequired/>
-                        </FormControl>
+                            <FormControl span={2}>
+                                <Drop label="State of Service *" options={ServiceOptions}
+                                      placeholder="Select Entity Type"/>
+                            </FormControl>
+                        </FormContent>
 
-                        <FormControl span={3}>
-                            <FormContent columns={5} paddingTop={0} paddingLeft={0} paddingRight={0}>
+                        <FormContent>
+                            <FormControl span={6}>
+                                <Heading size={3}
+                                         style={{
+                                             fontSize: "16px",
+                                             lineHeight: "19px",
+                                             marginTop: "10px",
+                                             marginBottom: 0
+                                         }}>
+                                    Company Address
+                                </Heading>
+                            </FormControl>
+
+                            <FormControl span={3}>
+                                <InputField label="Street Address *" isRequired/>
+                            </FormControl>
+
+                            <FormControl span={3}>
+                                <InputField label="Address (Count) *" isRequired/>
+                            </FormControl>
+                        </FormContent>
+
+                        <FormContent>
+                            <FormControl span={3}>
+                                <InputField label="City *" isRequired/>
+                            </FormControl>
+
+                            <FormControl span={3}>
+                                <FormContent columns={5} paddingTop={0} paddingLeft={0} paddingRight={0}>
+                                    <FormControl span={3}>
+                                        <Drop label="State *" options={StateOptions}
+                                              placeholder="Select State"/>
+                                    </FormControl>
+
+                                    <FormControl span={2}>
+                                        <InputField label="ZIP Code *" isRequired/>
+                                    </FormControl>
+                                </FormContent>
+                            </FormControl>
+                        </FormContent>
+                    </FormSection>
+
+                    <FormSection icon={ContactIcon} title="Provide name & address of newly appointed Registered Agent">
+                        <TabForm onClick={handleChange} value={value} buttons={buttonsArray}/>
+
+                        <FormTabContent activeValue={value} identifier="individual" arrowPosition="left">
+                            <FormContent>
                                 <FormControl span={3}>
-                                    <Drop label="State *" options={StateOptions}
-                                          placeholder="Select State"/>
+                                    <InputField label="Agent First Name *" isRequired={true}/>
                                 </FormControl>
 
-                                <FormControl span={2}>
-                                    <InputField label="ZIP Code *" isRequired/>
+                                <FormControl span={3}>
+                                    <InputField label="Agent Last Name *" isRequired={true}/>
                                 </FormControl>
+
+                                <FormControl span={3}>
+                                    <InputField label="Agent Street *" isRequired={true}/>
+                                </FormControl>
+
+                                <FormControl span={3}>
+                                    <InputField label="Address (Count) *" isRequired={true}/>
+                                </FormControl>
+
+                                <FormControl span={3}>
+                                    <InputField label="City *" isRequired={true}/>
+                                </FormControl>
+
+                                <FormControl span={3}>
+                                    <FormContent columns={5} paddingTop={0} paddingLeft={0} paddingRight={0}>
+                                        <FormControl span={3}>
+                                            <Drop label="State *" options={StateOptions}
+                                                  placeholder="Select State"/>
+                                        </FormControl>
+
+                                        <FormControl span={2}>
+                                            <InputField label="ZIP Code *" isRequired/>
+                                        </FormControl>
+                                    </FormContent>
+                                </FormControl>
+
                             </FormContent>
-                        </FormControl>
-                    </FormContent>
-                </FormSection>
+                        </FormTabContent>
 
-                <FormSection icon={ContactIcon} title="Provide name & address of newly appointed Registered Agent">
-                    <FormContent>
-                        <FormControl span={3}>
-                            <InputField label="First Name *" isRequired={true}/>
-                        </FormControl>
+                        <FormTabContent activeValue={value} identifier="company" arrowPosition="right">
+                            <FormContent>
+                                <FormControl span={6}>
+                                    <InputField label="Company Name *" isRequired={true}/>
+                                </FormControl>
 
-                        <FormControl span={3}>
-                            <InputField label="Last Name *" isRequired={true}/>
-                        </FormControl>
+                                <FormControl span={3}>
+                                    <InputField label="Agent Street *" isRequired={true}/>
+                                </FormControl>
 
-                        <FormControl span={3}>
-                            <InputField label="Email *" isRequired={true}/>
-                        </FormControl>
+                                <FormControl span={3}>
+                                    <InputField label="Address (Count) *" isRequired={true}/>
+                                </FormControl>
 
-                        <FormControl span={3}>
-                            <InputField label="Phone"/>
-                        </FormControl>
-                    </FormContent>
-                </FormSection>
+                                <FormControl span={3}>
+                                    <InputField label="City *" isRequired={true}/>
+                                </FormControl>
 
-                <FormTextBlock
-                    title="Safe & Secure"
-                    text="Your information and data is safe and secure. Our servers are located in secure data centers and our website uses SSL modern encryption for all sensitive data. Our servers are also backed up hourly ensuring your data is never lost."
-                    Icon={LockIcon}
-                />
-            </LeftColumn>
+                                <FormControl span={3}>
+                                    <FormContent columns={5} paddingTop={0} paddingLeft={0} paddingRight={0}>
+                                        <FormControl span={3}>
+                                            <Drop label="State *" options={StateOptions}
+                                                  placeholder="Select State"/>
+                                        </FormControl>
 
-            <RightColumn>
-                <Summary>
-                    <SummaryOrder orderSum={99}/>
-                    <SummaryBar barPercentage={50}/>
-                    <SummaryList list={summaryList}/>
-                    <SummaryTextBlock Icon={CheckIcon} text="Trusted by over 250,000 business owners to maintain their state's business compliance obligations." title="Maintain business compliance" />
-                    <SummaryTextBlock Icon={BenefitsIcon} text="This is a fully deductible business expense." title="Tax savings benefit" />
-                </Summary>
-            </RightColumn>
+                                        <FormControl span={2}>
+                                            <InputField label="ZIP Code *" isRequired/>
+                                        </FormControl>
+                                    </FormContent>
+                                </FormControl>
 
-            <SubmitSection/>
-        </FormLayout>
+                            </FormContent>
+                        </FormTabContent>
+                    </FormSection>
 
-    </Layout>
-)
+                    <FormTextBlock
+                        title="Safe & Secure"
+                        text="Your information and data is safe and secure. Our servers are located in secure data centers and our website uses SSL modern encryption for all sensitive data. Our servers are also backed up hourly ensuring your data is never lost."
+                        Icon={LockIcon}
+                    />
+                </LeftColumn>
+
+                <RightColumn>
+                    <Summary>
+                        <SummaryOrder orderSum={99}/>
+                        <SummaryBar barPercentage={50}/>
+                        <SummaryList list={summaryList}/>
+                        <SummaryTextBlock Icon={CheckIcon}
+                                          text="Trusted by over 250,000 business owners to maintain their state's business compliance obligations."
+                                          title="Maintain business compliance"/>
+                        <SummaryTextBlock Icon={BenefitsIcon} text="This is a fully deductible business expense."
+                                          title="Tax savings benefit"/>
+                    </Summary>
+                </RightColumn>
+
+                <SubmitSection/>
+            </FormLayout>
+
+        </Layout>
+    )
+}
 
 export default FictitiousBusinessNamePage
