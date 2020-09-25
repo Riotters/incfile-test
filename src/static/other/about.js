@@ -63,17 +63,20 @@ export const ourProcess = {
         {
             icon: `determine-all-business-licenses`,
             header: `Select Entity Type & State of Formation`,
-            text: `Select an entity type and the preferred state of incorporation.`
+            text: `Select an entity type and the preferred state of incorporation.`,
+            hasCircle: true,
         },
         {
             icon: `select-a-package`,
             header: `Select A Package`,
-            text: `Choose the package that is most suitable for your business needs.`
+            text: `Choose the package that is most suitable for your business needs.`,
+            hasCircle: true,
         },
         {
             icon: `needs-947`,
             header: `Tell Us About Your Business`,
-            text: `Complete the online order form and provide information about your business.`
+            text: `Complete the online order form and provide information about your business.`,
+            hasCircle: false,
         }
     ]
 }
