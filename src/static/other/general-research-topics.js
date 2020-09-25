@@ -4,74 +4,74 @@ export const top = {
 };
 
 export const general = {
-    header: `Common questions about Business Formation Kit`,
+    header: `General`,
     link: {
-        text: `General`,
+        text: `View All Topics`,
         url: `/`,
     },
     buttons: [
         {
-            header: `aaa`,
+            header: `What paperwork is required in order to open a business checking account?`,
             url: `/`,
         },
         {
-            header: `aaa`,
+            header: `Does the designator "LLC" or "Inc." always need to be included in your companies name?`,
             url: `/`,
         },
         {
-            header: `aaa`,
+            header: `Does Incfile have a Discount or Coupon Code?`,
             url: `/`,
         },
         {
-            header: `aaa`,
+            header: `Which entity offers the best tax advantages?`,
             url: `/`,
         },
         {
-            header: `aaa`,
+            header: `What is the main function of the Registered Agent?`,
             url: `/`,
         },
         {
-            header: `aaa`,
+            header: `What steps do I need to take to ensure that my entity remains compliant?`,
             url: `/`,
         },
         {
-            header: `aaa`,
+            header: `Which entity type should I choose?`,
             url: `/`,
         },
         {
-            header: `aaa`,
+            header: `What is an LLC (Limited Liability Company)?`,
             url: `/`,
         },
         {
-            header: `aaa`,
+            header: `LLC and Corporation Ongoing Compliance Requirements`,
             url: `/`,
         },
         {
-            header: `aaa`,
+            header: `What is a Nonprofit Corporation?`,
             url: `/`,
         },
         {
-            header: `aaa`,
+            header: `Should I assume that if I form an LLC or incorporate that no one else can use the same name?`,
             url: `/`,
         },
         {
-            header: `aaa`,
+            header: `Does Forming an LLC (Limited Liability Company) or Corporation Require an Attorney?`,
             url: `/`,
         },
         {
-            header: `aaa`,
+            header: `In Which State Should I Form my LLC or Corporation?`,
             url: `/`,
         },
         {
-            header: `aaa`,
+            header: `What is a Publication Requirement?`,
             url: `/`,
         },
         {
-            header: `aaa`,
+            header: `What is a Corporate Seal?`,
             url: `/`,
         },
         {
-            header: `aaa`,
+            header: `What is the Customized Corporate/LLC Kit?`,
             url: `/`,
         },
     ],

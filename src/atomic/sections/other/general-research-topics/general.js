@@ -19,7 +19,7 @@ const General = styled.section`
 
 const GeneralSection = ({ className, content }) => (
   <General className={className}>
-    <HeadingCenter headline={content.header} text={content.text} headlineWidth="700" bottomMargin="80" />
+    <HeadingCenter headline={content.header} linkText={content.link.text} linkUrl={content.link.linkUrl} headlineWidth="700" bottomMargin="80" />
     <ContentCenter contentWidth="770">
       <List content={content} />
     </ContentCenter>
