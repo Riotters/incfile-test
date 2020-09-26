@@ -23,6 +23,8 @@ import SummaryBar from "../../atomic/molecules/form/summary/summary-bar";
 import SummaryList from "../../atomic/molecules/form/summary/summary-list";
 import SummaryTextBlock from "../../atomic/molecules/form/summary/summary-text-block";
 import DateField from "../../atomic/molecules/form/date-field";
+import Radio from "../../atomic/molecules/form/radio";
+import InputFieldWrapper from "../../atomic/molecules/form/label-field-with-child";
 
 const EntityTypeOptions = [
     {value: 1, label: "one"},
@@ -151,13 +153,10 @@ const SCorpElectionForm = () => {
                             </FormControl>
 
                             <FormControl span={3}>
-                                <DateField
-                                    label="Date of Formation *"
-                                    placeholder="MM/DD/YYYY"
-                                    selected={date}
-                                    onChange={handleDateChange}
-                                    isRequired
-                                />
+                                <InputFieldWrapper content={{label: "Has The IRS Issued And EIN For This Entity? *"}} contentMarginTop="15px">
+                                    <Radio name="issued-and-ein" content="Yes" id="ein-yes" value={1}/>
+                                    <Radio name="issued-and-ein" content="No" id="ein-no" value={0}/>
+                                </InputFieldWrapper>
                             </FormControl>
                         </FormContent>
                     </FormSection>

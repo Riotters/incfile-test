@@ -15,11 +15,15 @@ const Wrapper = styled.div`
   .bottom {
     display: flex;
     width: 100%;
+    
+    ${props => props.contentMarginTop &&
+        "margin-top:" + props.contentMarginTop
+    }
   }
 `;
 
-const InputField = ({ className, children, content, htmlFor, bottomMargin }) => (
-  <Wrapper className={className} bottomMargin={bottomMargin}>
+const InputField = ({ className, children, content, htmlFor, bottomMargin, contentMarginTop}) => (
+  <Wrapper className={className} bottomMargin={bottomMargin} contentMarginTop={contentMarginTop}>
     <div className="top">
       {content.label && <Label text={content.label} htmlFor={htmlFor} />}
       {content.link && <Link linkUrl={content.link.url} linkText={content.link.text} bottomMargin="0" />}
