@@ -20,6 +20,8 @@ const DateField = ({className, label, linkUrl, linkText, placeholder, name, isRe
             <DatePicker
                 placeholderText={placeholder}
                 name={name}
+                showYearDropdown
+                showMonthDropdown
                 selected={selected}
                 onChange={onChange}
                 {...isRequired ? "required" : ""}
