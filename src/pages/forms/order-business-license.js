@@ -139,7 +139,7 @@ const OrderBusinessLicenseForm = () => (
 
                         <FormControl span={6}>
                             <InputFieldWrapper content={{label: "Type of Business/Purpose *"}}>
-                                <Textarea name="type-business-textarea" />
+                                <Textarea name="type-business-textarea" rows={5}/>
                             </InputFieldWrapper>
                         </FormControl>
                     </FormContent>

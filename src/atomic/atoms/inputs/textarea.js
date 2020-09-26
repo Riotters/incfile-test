@@ -27,7 +27,7 @@ const Wrapper = styled.textarea`
     }
 `
 
-const Textarea = ({ className, placeholder, name}) => (
-    <Wrapper className={className} placeholder={placeholder} name={name}/>
+const Textarea = ({ className, placeholder, name, rows}) => (
+    <Wrapper className={className} placeholder={placeholder} name={name} rows={rows}/>
 )
 export default Textarea
