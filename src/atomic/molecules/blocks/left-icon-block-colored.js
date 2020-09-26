@@ -4,8 +4,9 @@ import { color } from "../../atoms/styles/colors";
 
 const Wrapper = styled.div`
     background-color: ${props => (props.color ? props.color : "")};
-    border-radius: 5px 50px 50px 5px;
-    padding: ${props => (props.Icon ? "40px 40px 40px 112px" : "40px")};
+    ${props => props.hasBorderRadius && "border-radius:" + props.borderRadiusValue + ";"}
+    padding: ${props => (props.Icon ? props.paddingValue : "40px")};
+    position: relative;
 
     h4 {
         padding-bottom: ${props => (props.Icon ? "16px" : "24px")};
@@ -48,13 +49,14 @@ const Wrapper = styled.div`
 
     svg {
         position: absolute;
-        left: 44px;
+        left: ${props => props.iconLeftPosition};
+        top: ${props => props.iconTopPosition};
     }
 `
 
-const Colorbox = ({ className, color, Icon, dotsColor, content }) => {
+const Colorbox = ({ className, color, Icon, dotsColor, content, hasBorderRadius, borderRadiusValue, paddingValue, iconLeftPosition, iconTopPosition}) => {
   return (
-    <Wrapper className={className} color={color} Icon={Icon} dotsColor={dotsColor}>
+    <Wrapper className={className} color={color} Icon={Icon} dotsColor={dotsColor} iconLeftPosition={iconLeftPosition} iconTopPosition={iconTopPosition} paddingValue={paddingValue} hasBorderRadius={hasBorderRadius} borderRadiusValue={borderRadiusValue}>
         {Icon && (
                 <Icon />
             )}   
@@ -73,6 +75,14 @@ const Colorbox = ({ className, color, Icon, dotsColor, content }) => {
         )}
     </Wrapper>
   )
+}
+
+Colorbox.defaultProps = {
+  hasBorderRadius: true,
+  borderRadiusValue: "5px 50px 50px 5px",
+  paddingValue: "40px 40px 40px 112px",
+  iconTopPosition: "inherit",
+  iconLeftPosition: "44px"
 }
 
 export default Colorbox
