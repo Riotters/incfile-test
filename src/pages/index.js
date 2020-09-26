@@ -55,6 +55,7 @@ const IndexPage = () => (
         <Link to="/forms/dissolution">Articles of Dissolution</Link>
         <Link to="/forms/change-agent">Change of Registered Agent</Link>
         <Link to="/forms/trademark">Trademark Form</Link>
+        <Link to="/forms/s-corp-election-form">S Corporation Tax Election with Form 2553</Link>
 
         <h2>Manage Your Company</h2>
         <Link to="/manage-your-company">Manage your company</Link>
