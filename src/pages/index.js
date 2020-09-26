@@ -95,7 +95,7 @@ const IndexPage = () => (
         <Link to="/learning-center-entity/business-name-search">Business Name Search (no details)</Link>
         <h2>Other</h2>
         <Link to="/other/form-an-llc">Form An LLC (WIP)</Link>
-        <Link to="/other/form-your-corporation">Form Your Corporation (WIP)</Link>
+        <Link to="/other/form-your-corporation">Form Your Corporation</Link>
         <Link to="/other/start-an-llc">Start An LLC (WIP)</Link>
         <Link to="/other/general-research-topics">General Research Topics (WIP)</Link>
         <Link to="/other/incfile-coupon-promo-code">Incfile Coupon Promo Code (WIP)</Link>

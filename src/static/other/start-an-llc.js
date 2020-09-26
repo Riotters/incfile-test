@@ -14,36 +14,36 @@ export const about = {
     panels: [`Starting your LLC`, `Who Can Start an LLC?`, `Where to Start Your LLC?`, `When to Form an LLC`, `Responsibilities for an LLC`],
     content: [
       {
-          header: `Starting your Limited Liability Company`,
-          text: `If you want to start a business, forming a Limited Liability Company — or LLC — could be a great choice. LLCs are designed to be simple and inexpensive to setup, and are easy to run. They have many of the advantages of larger businesses and corporations without all of the rules, regulations and legal compliance commonly found with other business entities. LLCs are registered with the government in your state.`,
-          header2: `Advantages of an LLC`,
-          text2: `LLCs have many benefits for businesses, especially small businesses and startups.`,
-          list: [
-            {
-              header: `LLCs are quick and easy`,
-              text:`the paperwork involved in setting up an LLC is simple to complete, and you can complete the whole process, fast.`,
-            },
-            {
-              header: `An LLC limits your “personal liability”`,
-              text:`that means any liabilities your business has (debts, obligations and other liabilities) belong to it alone. Typically, even as the business owner, you will not be liable for your LLC's obligations.`,
-            },
-            {
-              header: `LLCs are easy to maintain`,
-              text:`you don’t need to hold annual general meetings, assign boards of directors or meet particularly onerous rules and regulations.`,
-            },
-            {
-              header: `Flexibility and control over the LLC`,
-              text:`LLCs are easy to manage — you can add and amend members and make other changes without too much paperwork.`,
-            },
-            {
-              header: `LLC taxes are simple`,
-              text:`any income earned by your LLC “flows through” to your personal tax return and is taxed as normal. Members report any profits or losses from the LLC on their personal tax returns. This can keep your accounting costs down.`,
-            },
-            {
-              header: `You won’t be “double taxed”`,
-              text:`some corporations have to pay tax on their profits and then individuals pay tax again when they receive stock dividends. LLC members are not subject to this double taxation.`,
-            },
-          ],
+        header: `Starting your Limited Liability Company`,
+        text: `If you want to start a business, forming a Limited Liability Company — or LLC — could be a great choice. LLCs are designed to be simple and inexpensive to setup, and are easy to run. They have many of the advantages of larger businesses and corporations without all of the rules, regulations and legal compliance commonly found with other business entities. LLCs are registered with the government in your state.`,
+        header2: `Advantages of an LLC`,
+        text2: `LLCs have many benefits for businesses, especially small businesses and startups.`,
+        list: [
+          {
+            header: `LLCs are quick and easy`,
+            text: `the paperwork involved in setting up an LLC is simple to complete, and you can complete the whole process, fast.`,
+          },
+          {
+            header: `An LLC limits your “personal liability”`,
+            text: `that means any liabilities your business has (debts, obligations and other liabilities) belong to it alone. Typically, even as the business owner, you will not be liable for your LLC's obligations.`,
+          },
+          {
+            header: `LLCs are easy to maintain`,
+            text: `you don’t need to hold annual general meetings, assign boards of directors or meet particularly onerous rules and regulations.`,
+          },
+          {
+            header: `Flexibility and control over the LLC`,
+            text: `LLCs are easy to manage — you can add and amend members and make other changes without too much paperwork.`,
+          },
+          {
+            header: `LLC taxes are simple`,
+            text: `any income earned by your LLC “flows through” to your personal tax return and is taxed as normal. Members report any profits or losses from the LLC on their personal tax returns. This can keep your accounting costs down.`,
+          },
+          {
+            header: `You won’t be “double taxed”`,
+            text: `some corporations have to pay tax on their profits and then individuals pay tax again when they receive stock dividends. LLC members are not subject to this double taxation.`,
+          },
+        ],
         header3: `Creating an LLC: How to Set Up Your New LLC Business`,
         text3: `There are six easy steps you need to take when setting up an LLC:`,
         list: [
@@ -119,20 +119,20 @@ export const about = {
         text4: `IncFile provides a cost effective service to help you create your LLC. We guide you through the process and handle most of the administrative steps, such as filing the articles of organization, on your behalf. Our basic package also provides a free registered agent service for the first year. If you're looking for help to start an LLC, our comprehensive online formation services provide outstanding value. `,
       },
       {
-          header: `Who Can Start an LLC?`,
-          text: `xyz`,
+        header: `Who Can Start an LLC?`,
+        text: `xyz`,
       },
       {
-          header: `Where to Start Your LLC?`,
-          text: `xyz`,
+        header: `Where to Start Your LLC?`,
+        text: `xyz`,
       },
       {
-          header: `When to Form an LLC`,
-          text: `xyz`,
+        header: `When to Form an LLC`,
+        text: `xyz`,
       },
       {
-          header: `Ongoing Responsibilities for an LLC`,
-          text: `xyz`,
+        header: `Ongoing Responsibilities for an LLC`,
+        text: `xyz`,
       },
     ],
   },
@@ -146,15 +146,13 @@ export const state = {
   button: {
     text: `Calculate my sales tax`,
     url: `/`,
-   },
-}
+  },
+};
 
 export const service = {
-  header:
-      `How our service works`,
-  text:
-      `Take a moment to view our instructional video and see how easy it can be to get your business incorporated.`,
-}
+  header: `How our service works`,
+  text: `Take a moment to view our instructional video and see how easy it can be to get your business incorporated.`,
+};
 
 export const variants = {
   header: `Select the package that works best for you`,
@@ -265,11 +263,11 @@ export const faq = {
       {
         question: `Can another business entity be a member of an LLC?`,
         answer: `In the majority of states, The members of an LLC can be individuals, corporations, or other LLCs. These members of the LLC can be out of state residents or even foreign nationals. Furthermore there is no limit to the amount of members that an LLC can have.`,
-      //answer2: `The flexibility of an LLC in contrast to an S Corporation is stark considering the S corporations are limited to 75 shareholders who must either be United States citizens or Lawful Permanent Residents.`
+        //answer2: `The flexibility of an LLC in contrast to an S Corporation is stark considering the S corporations are limited to 75 shareholders who must either be United States citizens or Lawful Permanent Residents.`
       },
-    ]
-  }
-}
+    ],
+  },
+};
 
 export const rocket = {
   header: `Launch`,
