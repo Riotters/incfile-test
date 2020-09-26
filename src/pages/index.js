@@ -53,6 +53,8 @@ const IndexPage = () => (
         <Link to="/forms/amendment">Articles of Amendment</Link>
         <Link to="/forms/cert-good-standing">Certificate of Good Standing</Link>
         <Link to="/forms/dissolution">Articles of Dissolution</Link>
+        <Link to="/forms/change-agent">Change of Registered Agent</Link>
+        <Link to="/forms/trademark">Trademark Form</Link>
 
         <h2>Manage Your Company</h2>
         <Link to="/manage-your-company">Manage your company</Link>

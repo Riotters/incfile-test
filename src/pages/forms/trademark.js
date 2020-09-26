@@ -49,11 +49,11 @@ const summaryList = [
     {description: "Processing Fee"},
 ]
 
-const AmendmentForm = () => (
+const TrademarkForm = () => (
     <Layout>
-        <SEO title="WIP Page" description="wip page"/>
+        <SEO title="Trademark Form" description="wip page"/>
 
-        <FormLayout formTitle="Articles of Amendment">
+        <FormLayout formTitle="Please complete information below to place an order for a Trademark.">
 
             <LeftColumn>
                 <FormSection icon={ContactIcon} title="Contact Information">
@@ -79,20 +79,16 @@ const AmendmentForm = () => (
                 <FormSection icon={CompanyIcon} title="Company Information">
 
                     <FormContent>
-                        <FormControl span={2}>
+                        <FormControl span={3}>
                             <Drop label="Entity Type *" options={EntityTypeOptions}
                                   placeholder="Select Entity Type"/>
                         </FormControl>
 
-                        <FormControl span={2}>
+                        <FormControl span={3}>
                             <Drop label="State of Formation *" options={StateFormationOptions}
-                                  placeholder="Select Entity Type"/>
+                                  placeholder="Select State"/>
                         </FormControl>
 
-                        <FormControl span={2}>
-                            <Drop label="State of Service *" options={ServiceOptions}
-                                  placeholder="Select Entity Type"/>
-                        </FormControl>
                     </FormContent>
 
                     <FormContent>
@@ -160,4 +156,4 @@ const AmendmentForm = () => (
     </Layout>
 )
 
-export default AmendmentForm
+export default TrademarkForm

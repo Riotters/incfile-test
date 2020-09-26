@@ -49,7 +49,7 @@ const summaryList = [
     {description: "Processing Fee"},
 ]
 
-const FictitiousBusinessNamePage = () => (
+const CertGoodStandingForm = () => (
     <Layout>
         <SEO title="WIP Page" description="wip page"/>
 
@@ -160,4 +160,4 @@ const FictitiousBusinessNamePage = () => (
     </Layout>
 )
 
-export default FictitiousBusinessNamePage
+export default CertGoodStandingForm
