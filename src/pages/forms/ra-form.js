@@ -13,6 +13,7 @@ import FormTextBlock from "../../atomic/molecules/form/form-text-block";
 import LockIcon from "../../images/icons/lock.inline.svg";
 import CheckIcon from "../../images/icons/check-circle-white.inline.svg";
 import BenefitsIcon from "../../images/icons/business-taxes-white.inline.svg";
+import GoalIcon from "../../images/icons/goal.inline.svg";
 import SubmitSection from "../../atomic/molecules/form/submit-section";
 import FormLayout from "../../atomic/molecules/form/form-layout";
 import LeftColumn from "../../atomic/molecules/form/form-left-column";
@@ -22,6 +23,11 @@ import SummaryOrder from "../../atomic/molecules/form/summary/summary-order";
 import SummaryBar from "../../atomic/molecules/form/summary/summary-bar";
 import SummaryList from "../../atomic/molecules/form/summary/summary-list";
 import SummaryTextBlock from "../../atomic/molecules/form/summary/summary-text-block";
+import Label from "../../atomic/atoms/text-fields/label";
+import Radio from "../../atomic/molecules/form/radio";
+import InputFieldWrapper from "../../atomic/molecules/form/label-field-with-child";
+import Colorbox from "../../atomic/molecules/blocks/left-icon-block-colored";
+import {color} from "../../atomic/atoms/styles/colors";
 
 const EntityTypeOptions = [
     {value: 1, label: "one"},
@@ -38,22 +44,17 @@ const ServiceOptions = [
     {value: 1, label: "two"}
 ];
 
-const StateOptions = [
-    {value: 1, label: "one"},
-    {value: 1, label: "two"}
-];
-
 const summaryList = [
     {description: "Start Fee", price: 23},
     {description: "Processing Fee", price: 76},
     {description: "Processing Fee"},
 ]
 
-const AmendmentForm = () => (
+const RegisteredAgentServiceForm = () => (
     <Layout>
-        <SEO title="WIP Page" description="wip page"/>
+        <SEO title="Registered Agent Service" description="Registered Agent Service"/>
 
-        <FormLayout formTitle="Articles of Amendment">
+        <FormLayout formTitle="Registered Agent Service">
 
             <LeftColumn>
                 <FormSection icon={ContactIcon} title="Contact Information">
@@ -86,12 +87,12 @@ const AmendmentForm = () => (
 
                         <FormControl span={2}>
                             <Drop label="State of Formation *" options={StateFormationOptions}
-                                  placeholder="Select Entity Type"/>
+                                  placeholder="Select state"/>
                         </FormControl>
 
                         <FormControl span={2}>
                             <Drop label="State of Service *" options={ServiceOptions}
-                                  placeholder="Select Entity Type"/>
+                                  placeholder="Select state"/>
                         </FormControl>
                     </FormContent>
 
@@ -125,8 +126,7 @@ const AmendmentForm = () => (
                         <FormControl span={3}>
                             <FormContent columns={5} paddingTop={0} paddingLeft={0} paddingRight={0}>
                                 <FormControl span={3}>
-                                    <Drop label="State *" options={StateOptions}
-                                          placeholder="Select State"/>
+                                    <InputField label="State *" isRequired/>
                                 </FormControl>
 
                                 <FormControl span={2}>
@@ -134,6 +134,32 @@ const AmendmentForm = () => (
                                 </FormControl>
                             </FormContent>
                         </FormControl>
+                    </FormContent>
+                </FormSection>
+
+                <FormSection icon={ContactIcon} title="Change of Agent">
+                    <FormContent>
+                        <FormControl span={6}>
+                            <Label
+                                fontSize="16px"
+                                text="Would you like us to facilitate the transfer of Registered Agent service from your current provider to us?"/>
+                        </FormControl>
+
+                        <FormControl span={6}>
+                            <InputFieldWrapper>
+                                <Radio name="change-agent-radio" content="Yes" id="change-agent-yes" value={1}/>
+                                <Radio name="change-agent-radio" content="No" id="change-agent-no" value={0}/>
+                            </InputFieldWrapper>
+                        </FormControl>
+
+                        <FormControl span={6}>
+                            <Label fontSize="16px" text="Select No, if entity has not been filled."/>
+                        </FormControl>
+
+                        <FormControl span={6}>
+                            <Colorbox paddingValue="24px 32px 24px 88px" iconLeftPosition="32px" iconTopPosition="calc(50% - 16px)" Icon={GoalIcon} borderRadiusValue="5px" color={color.yellow3} content={{text: "If you change your registered agent without notifying the secretary of state, penalties can include license revocation, fines, and you right enter into legal contracts could be revoked."}}/>
+                        </FormControl>
+
                     </FormContent>
                 </FormSection>
 
@@ -149,8 +175,11 @@ const AmendmentForm = () => (
                     <SummaryOrder orderSum={99}/>
                     <SummaryBar barPercentage={50}/>
                     <SummaryList list={summaryList}/>
-                    <SummaryTextBlock Icon={CheckIcon} text="Trusted by over 250,000 business owners to maintain their state's business compliance obligations." title="Maintain business compliance" />
-                    <SummaryTextBlock Icon={BenefitsIcon} text="This is a fully deductible business expense." title="Tax savings benefit" />
+                    <SummaryTextBlock Icon={CheckIcon}
+                                      text="Trusted by over 250,000 business owners to maintain their state's business compliance obligations."
+                                      title="Maintain business compliance"/>
+                    <SummaryTextBlock Icon={BenefitsIcon} text="This is a fully deductible business expense."
+                                      title="Tax savings benefit"/>
                 </Summary>
             </RightColumn>
 
@@ -160,4 +189,4 @@ const AmendmentForm = () => (
     </Layout>
 )
 
-export default AmendmentForm
+export default RegisteredAgentServiceForm;

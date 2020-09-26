@@ -54,12 +54,13 @@ const Text = styled.span`
     font-family: Avenir, sans-serif;
     font-size: 16px;
     line-height: 24px;
+    color: #7a7a7a;
 `;
 
-const Radio = ({ className, content, name, id, checked }) => {
+const Radio = ({ className, content, name, id, checked, value}) => {
     return (
         <Wrapper className={className}>
-            <Input id={id} type="radio" name={name} checked={checked} />
+            <Input id={id} type="radio" name={name} checked={checked} value={value}/>
             <Checkmark />
             {content && (
                 <Text>{content}</Text>

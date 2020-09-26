@@ -22,6 +22,8 @@ import SummaryOrder from "../../atomic/molecules/form/summary/summary-order";
 import SummaryBar from "../../atomic/molecules/form/summary/summary-bar";
 import SummaryList from "../../atomic/molecules/form/summary/summary-list";
 import SummaryTextBlock from "../../atomic/molecules/form/summary/summary-text-block";
+import InputFieldWrapper from "../../atomic/molecules/form/label-field-with-child";
+import Textarea from "../../atomic/atoms/inputs/textarea";
 
 const EntityTypeOptions = [
     {value: 1, label: "one"},
@@ -49,11 +51,11 @@ const summaryList = [
     {description: "Processing Fee"},
 ]
 
-const AmendmentForm = () => (
+const OrderBusinessLicenseForm = () => (
     <Layout>
         <SEO title="WIP Page" description="wip page"/>
 
-        <FormLayout formTitle="Articles of Amendment">
+        <FormLayout formTitle="Business License Research Package">
 
             <LeftColumn>
                 <FormSection icon={ContactIcon} title="Contact Information">
@@ -134,6 +136,12 @@ const AmendmentForm = () => (
                                 </FormControl>
                             </FormContent>
                         </FormControl>
+
+                        <FormControl span={6}>
+                            <InputFieldWrapper content={{label: "Type of Business/Purpose *"}}>
+                                <Textarea name="type-business-textarea" rows={5}/>
+                            </InputFieldWrapper>
+                        </FormControl>
                     </FormContent>
                 </FormSection>
 
@@ -160,4 +168,4 @@ const AmendmentForm = () => (
     </Layout>
 )
 
-export default AmendmentForm
+export default OrderBusinessLicenseForm;

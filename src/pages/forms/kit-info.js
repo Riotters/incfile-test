@@ -1,6 +1,6 @@
-import React, {useState} from "react"
+import React, {useState} from "react";
 import Layout from "../../components/layout";
-import SEO from "../../components/seo"
+import SEO from "../../components/seo";
 import FormSection from "../../atomic/molecules/form/form-section";
 import ContactIcon from "../../images/icons/registered-agent-form.inline.svg";
 import CompanyIcon from "../../images/icons/building-form.inline.svg";
@@ -22,8 +22,7 @@ import SummaryOrder from "../../atomic/molecules/form/summary/summary-order";
 import SummaryBar from "../../atomic/molecules/form/summary/summary-bar";
 import SummaryList from "../../atomic/molecules/form/summary/summary-list";
 import SummaryTextBlock from "../../atomic/molecules/form/summary/summary-text-block";
-import TabForm from "../../atomic/molecules/form/tabs-form/tab-form";
-import FormTabContent from "../../atomic/molecules/form/tabs-form/form-tab-content";
+import DateField from "../../atomic/molecules/form/date-field";
 
 const EntityTypeOptions = [
     {value: 1, label: "one"},
@@ -51,36 +50,19 @@ const summaryList = [
     {description: "Processing Fee"},
 ]
 
-const buttonsArray = [
-    {
-        title: "Individual",
-        description: "The registered agent will be an individual.",
-        id: "individual",
-        name: "registered-agent",
-        value: "individual"
-    },
-    {
-        title: "Company",
-        description: "The registered agent will be a company.",
-        id: "company",
-        name: "registered-agent",
-        value: "company"
+const KitInfoForm = () => {
+
+    const [date, setDate] = useState(new Date());
+
+    const handleDateChange = (date) => {
+        setDate(date);
     }
-]
-
-const ChangeAgentForm = () => {
-
-    const [value, setValue] = useState("individual");
-
-    const handleChange = (e) => {
-        setValue(e);
-    };
 
     return (
         <Layout>
-            <SEO title="WIP Page" description="wip page"/>
+            <SEO title="Corporate / LLC Kit" description="wip page"/>
 
-            <FormLayout formTitle="Change of Registered Agent">
+            <FormLayout formTitle="Certificate of Good Standing">
 
                 <LeftColumn>
                     <FormSection icon={ContactIcon} title="Contact Information">
@@ -106,20 +88,16 @@ const ChangeAgentForm = () => {
                     <FormSection icon={CompanyIcon} title="Company Information">
 
                         <FormContent>
-                            <FormControl span={2}>
+                            <FormControl span={3}>
                                 <Drop label="Entity Type *" options={EntityTypeOptions}
                                       placeholder="Select Entity Type"/>
                             </FormControl>
 
-                            <FormControl span={2}>
+                            <FormControl span={3}>
                                 <Drop label="State of Formation *" options={StateFormationOptions}
-                                      placeholder="Select Entity Type"/>
+                                      placeholder="Select State"/>
                             </FormControl>
 
-                            <FormControl span={2}>
-                                <Drop label="State of Service *" options={ServiceOptions}
-                                      placeholder="Select Entity Type"/>
-                            </FormControl>
                         </FormContent>
 
                         <FormContent>
@@ -161,83 +139,17 @@ const ChangeAgentForm = () => {
                                     </FormControl>
                                 </FormContent>
                             </FormControl>
+
+                            <FormControl span={3}>
+                                <DateField
+                                    label="Date of Formation *"
+                                    placeholder="MM/DD/YYYY"
+                                    selected={date}
+                                    onChange={handleDateChange}
+                                    isRequired
+                                />
+                            </FormControl>
                         </FormContent>
-                    </FormSection>
-
-                    <FormSection icon={ContactIcon} title="Provide name & address of newly appointed Registered Agent">
-                        <TabForm onClick={handleChange} value={value} buttons={buttonsArray}/>
-
-                        <FormTabContent activeValue={value} identifier="individual" arrowPosition="left">
-                            <FormContent>
-                                <FormControl span={3}>
-                                    <InputField label="Agent First Name *" isRequired={true}/>
-                                </FormControl>
-
-                                <FormControl span={3}>
-                                    <InputField label="Agent Last Name *" isRequired={true}/>
-                                </FormControl>
-
-                                <FormControl span={3}>
-                                    <InputField label="Agent Street *" isRequired={true}/>
-                                </FormControl>
-
-                                <FormControl span={3}>
-                                    <InputField label="Address (Count) *" isRequired={true}/>
-                                </FormControl>
-
-                                <FormControl span={3}>
-                                    <InputField label="City *" isRequired={true}/>
-                                </FormControl>
-
-                                <FormControl span={3}>
-                                    <FormContent columns={5} paddingTop={0} paddingLeft={0} paddingRight={0}>
-                                        <FormControl span={3}>
-                                            <Drop label="State *" options={StateOptions}
-                                                  placeholder="Select State"/>
-                                        </FormControl>
-
-                                        <FormControl span={2}>
-                                            <InputField label="ZIP Code *" isRequired/>
-                                        </FormControl>
-                                    </FormContent>
-                                </FormControl>
-
-                            </FormContent>
-                        </FormTabContent>
-
-                        <FormTabContent activeValue={value} identifier="company" arrowPosition="right">
-                            <FormContent>
-                                <FormControl span={6}>
-                                    <InputField label="Company Name *" isRequired={true}/>
-                                </FormControl>
-
-                                <FormControl span={3}>
-                                    <InputField label="Agent Street *" isRequired={true}/>
-                                </FormControl>
-
-                                <FormControl span={3}>
-                                    <InputField label="Address (Count) *" isRequired={true}/>
-                                </FormControl>
-
-                                <FormControl span={3}>
-                                    <InputField label="City *" isRequired={true}/>
-                                </FormControl>
-
-                                <FormControl span={3}>
-                                    <FormContent columns={5} paddingTop={0} paddingLeft={0} paddingRight={0}>
-                                        <FormControl span={3}>
-                                            <Drop label="State *" options={StateOptions}
-                                                  placeholder="Select State"/>
-                                        </FormControl>
-
-                                        <FormControl span={2}>
-                                            <InputField label="ZIP Code *" isRequired/>
-                                        </FormControl>
-                                    </FormContent>
-                                </FormControl>
-
-                            </FormContent>
-                        </FormTabContent>
                     </FormSection>
 
                     <FormTextBlock
@@ -267,4 +179,4 @@ const ChangeAgentForm = () => {
     )
 }
 
-export default ChangeAgentForm
+export default KitInfoForm;
