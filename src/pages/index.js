@@ -48,6 +48,10 @@ const IndexPage = () => (
         <Link to="/contact/existing-clients/">Existing clients</Link>
         <Link to="/contact/new-sales/">New Sales</Link>
 
+        <h2>About</h2>
+        <Link to="/other/why-choose-incfile">Why Choose Incfile</Link>
+        <Link to="/other/about/">About us</Link>
+
         <h2>Forms</h2>
         <Link to="/forms/fictitious-business-name">Assumed Business Name</Link>
         <Link to="/forms/amendment">Articles of Amendment</Link>
