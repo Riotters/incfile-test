@@ -13,6 +13,16 @@ import { Collapse } from "react-collapse";
 import VisibilitySensor from "../../../components/VisibilitySensor";
 import { Heading } from "../../atoms/typography/heading";
 import { Paragraph } from "../../atoms/typography/paragraph";
+import IconListColorBox from "../../molecules/text-blocks/icon-h4-list-color";
+import { color } from "../../atoms/styles/colors";
+import ToolsList from "../../organisms/lists/tools-list";
+import Circle from "../../atoms/icons/circle";
+import BusinessWebsiteSVG from "../../../images/icons/build-a-business-website.inline.svg";
+import PhoneSystemSVG from "../../../images/icons/choose-virtual-phone-system.inline.svg";
+import BusinessLogoSVG from "../../../images/icons/design-a-business-logo.inline.svg";
+import GetBusinessSVG from "../../../images/icons/get-business-cards-created.inline.svg";
+import Button from "../../molecules/buttons/button";
+import Whitebox from "../../atoms/boxes/white-box";
 
 const Wrapper = styled.div`
   display: flex;
@@ -70,10 +80,14 @@ const PanelWrapper = styled.article`
   flex-grow: 1;
   max-width: ${(props) => (props.layout !== "grid" ? "670px" : "")};
   margin-left: auto;
-  padding-top: 24px;
+  padding-top: 40px;
+
+  @media (min-width: 769px) {
+    padding-top: 0;
+  }
 `;
 
-const Button = styled.button`
+const TabButton = styled.button`
   height: 78px;
   line-height: 78px;
   color: #4e4e4e;
@@ -169,15 +183,54 @@ const Arrow = styled.div`
   }
 `;
 
+const BoxesWrapper = styled.div`
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap: 8px;
+  margin-bottom: 56px;
+`;
+
+const Box = styled(Whitebox)`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px 40px 24px 24px;
+
+  @media (min-width: 992px) {
+    flex-direction: row;
+  }
+
+  div {
+    p {
+      color: ${color.black};
+    }
+
+    &:first-child {
+      flex-grow: 1;
+      min-width: 180px;
+      padding-bottom: 16px;
+
+      @media (min-width: 992px) {
+        padding-bottom: 0;
+        padding-right: 16px;
+      }
+    }
+
+    &:last-child {
+      max-width: 330px;
+    }
+  }
+`;
+
 const cn = (...args) => args.filter(Boolean).join(" ");
 
 const Tab = ({ children }) => {
   const { isActive, onClick } = useTabState();
 
   return (
-    <Button className={cn("accordion-tab", isActive && "active")} onClick={onClick}>
+    <TabButton className={cn("accordion-tab", isActive && "active")} onClick={onClick}>
       {children}
-    </Button>
+    </TabButton>
   );
 };
 
@@ -208,36 +261,135 @@ const CCorpTabs = ({ layout, columns, content }) => (
             <Collapse isOpened={true}>
               <Panel>
                 <PanelWrapper className={isVisible ? "slideUp enter panel1" : "slideUp panel1"} layout={layout}>
-                  <Heading size="3">{content.content[0].header}</Heading>
                   <Paragraph big bottomMargin="48">
                     {content.content[0].text}
+                  </Paragraph>
+                  <Heading size="3">{content.content[0].header}</Heading>
+                  <Paragraph big bottomMargin="0">
+                    {content.content[0].text2}
                   </Paragraph>
                 </PanelWrapper>
               </Panel>
               <Panel>
                 <PanelWrapper className="panel2" layout={layout}>
                   <Heading size="3">{content.content[1].header}</Heading>
+                  <Paragraph big>{content.content[1].text}</Paragraph>
                   <Paragraph big bottomMargin="40">
-                    {content.content[1].text}
+                    {content.content[1].text2}
                   </Paragraph>
+                  <IconListColorBox color={color.green3} content={content.content[1].box} rounded />
                 </PanelWrapper>
               </Panel>
               <Panel>
                 <PanelWrapper className="panel3" layout={layout}>
                   <Heading size="3">{content.content[2].header}</Heading>
-                  <Paragraph big bottomMargin="40">{content.content[2].text}</Paragraph>
+                  <Paragraph big bottomMargin="48">
+                    {content.content[2].text}
+                  </Paragraph>
+                  <Heading size="4">{content.content[2].header2}</Heading>
+                  <Paragraph big bottomMargin="40">
+                    {content.content[2].text2}
+                  </Paragraph>
+                  <Button theme="primary56" content={content.content[2].button} arrow margin="0 0 80px" marginSM="0 auto 80px 0" />
+                  <Heading size="3" bottomMargin="32">
+                    {content.content[2].header3}
+                  </Heading>
+                  <BoxesWrapper>
+                    {content.content[2].table.map((item) => (
+                      <Box>
+                        <div>
+                          <Heading size="5" bottomMargin="0">
+                            {item.header}
+                          </Heading>
+                        </div>
+                        <div>
+                          <Paragraph bottomMargin="0">{item.text}</Paragraph>
+                        </div>
+                      </Box>
+                    ))}
+                  </BoxesWrapper>
+                  <Circle height="80" width="80" circleColor={color.babyblue2} bottomMargin="32">
+                    <BusinessWebsiteSVG />
+                  </Circle>
+                  <Heading size="4">{content.content[2].header4}</Heading>
+                  <Paragraph big>{content.content[2].text3}</Paragraph>
+                  <Circle height="80" width="80" circleColor={color.yellow2} bottomMargin="32">
+                    <BusinessWebsiteSVG />
+                  </Circle>
+                  <Heading size="4">{content.content[2].header5}</Heading>
+                  <Paragraph big bottomMargin="48">
+                    {content.content[2].text4}
+                  </Paragraph>
+                  <Circle height="80" width="80" circleColor={color.orange2} bottomMargin="32">
+                    <BusinessWebsiteSVG />
+                  </Circle>
+                  <Heading size="4">{content.content[2].header6}</Heading>
+                  <Paragraph big>{content.content[2].text5}</Paragraph>
+                  <Paragraph big>{content.content[2].text6}</Paragraph>
+                  <Paragraph big>{content.content[2].text7}</Paragraph>
+                  <Paragraph big>{content.content[2].text8}</Paragraph>
+                  <Paragraph big>{content.content[2].text9}</Paragraph>
+                  <Paragraph big bottomMargin="48">
+                    {content.content[2].text10}
+                  </Paragraph>
+                  <Circle height="80" width="80" circleColor={color.purple2} bottomMargin="32">
+                    <BusinessWebsiteSVG />
+                  </Circle>
+                  <Heading size="4">{content.content[2].header7}</Heading>
+                  <Paragraph big bottomMargin="48">
+                    {content.content[2].text11}
+                  </Paragraph>
+                  <Circle height="80" width="80" circleColor={color.blue2} bottomMargin="32">
+                    <BusinessWebsiteSVG />
+                  </Circle>
+                  <Heading size="4">{content.content[2].header8}</Heading>
+                  <Paragraph big bottomMargin="0">
+                    {content.content[2].text12}
+                  </Paragraph>
                 </PanelWrapper>
               </Panel>
               <Panel>
                 <PanelWrapper className="panel4" layout={layout}>
-                  <Heading size="3">{content.content[3].header}</Heading>
-                  <Paragraph big>{content.content[3].text}</Paragraph>
+                  <Heading size="3" bottomMargin="40">
+                    {content.content[3].header}
+                  </Heading>
+                  <Circle height="80" width="80" circleColor={color.orange2} bottomMargin="32">
+                    <BusinessWebsiteSVG />
+                  </Circle>
+                  <Heading size="4">{content.content[3].header2}</Heading>
+                  <Paragraph big bottomMargin="48">
+                    {content.content[3].text}
+                  </Paragraph>
+                  <Circle height="80" width="80" circleColor={color.purple2} bottomMargin="32">
+                    <PhoneSystemSVG />
+                  </Circle>
+                  <Heading size="4">{content.content[3].header3}</Heading>
+                  <Paragraph big bottomMargin="48">
+                    {content.content[3].text2}
+                  </Paragraph>
+                  <Circle height="80" width="80" circleColor={color.babyblue2} bottomMargin="32">
+                    <BusinessLogoSVG />
+                  </Circle>
+                  <Heading size="4">{content.content[3].header4}</Heading>
+                  <Paragraph big bottomMargin="48">
+                    {content.content[3].text3}
+                  </Paragraph>
+                  <Circle height="80" width="80" circleColor={color.green2} bottomMargin="32">
+                    <GetBusinessSVG />
+                  </Circle>
+                  <Heading size="4">{content.content[3].header5}</Heading>
+                  <Paragraph big bottomMargin="0">
+                    {content.content[3].text4}
+                  </Paragraph>
                 </PanelWrapper>
               </Panel>
               <Panel>
                 <PanelWrapper className="panel4" layout={layout}>
                   <Heading size="3">{content.content[4].header}</Heading>
-                  <Paragraph big>{content.content[4].text}</Paragraph>
+                  <Paragraph big bottomMargin="40">
+                    {content.content[4].text}
+                  </Paragraph>
+                  <ToolsList tools={content.content[4].toolsList.tools} tab />
                 </PanelWrapper>
               </Panel>
             </Collapse>

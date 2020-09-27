@@ -102,7 +102,7 @@ const IndexPage = () => (
         <Link to="/learning-center-entity/business-name-search">Business Name Search (no details)</Link>
         <h2>Other</h2>
         <Link to="/other/form-an-llc">Form An LLC (WIP)</Link>
-        <Link to="/other/form-your-corporation">Form Your Corporation (WIP)</Link>
+        <Link to="/other/form-your-corporation">Form Your Corporation</Link>
         <Link to="/other/start-an-llc">Start An LLC (WIP)</Link>
         <Link to="/other/general-research-topics">General Research Topics (WIP)</Link>
         <Link to="/other/incfile-coupon-promo-code">Incfile Coupon Promo Code (WIP)</Link>
@@ -114,7 +114,7 @@ const IndexPage = () => (
         <Link to="/other/free-llc">Free LLC (WIP)</Link>
         <Link to="/other/incfile-reviews/">Customer Service Reviews</Link>
         <Link to="/other/arizona-publication-newspaper-list">Arizona Publication Newspaper List (WIP)</Link>
-        <Link to="/other/after-forming-llc">After Forming LLC (WIP)</Link>
+        <Link to="/other/after-forming-llc">After Forming LLC</Link>
         <Link to="/404">404</Link>
         <Link to="/503">503</Link>
         <h2>Blog</h2>

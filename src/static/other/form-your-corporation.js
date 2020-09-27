@@ -17,31 +17,31 @@ export const opinions = {
   header: `What our customers are saying`,
   customers: [
     {
-      photo: `MartinG-7329`,
+      photo: `mattweik`,
       name: `Martin G`,
       city: `Los Angeles, CA`,
       text: `This is my third time working with Incfile. Great service. Professional and prompt. Will continue to do business with them.`,
     },
     {
-      photo: `MartinG-7329`,
+      photo: `mattweik`,
       name: `Martin G`,
       city: `Los Angeles, CA`,
       text: `This is my third time working with Incfile. Great service. Professional and prompt. Will continue to do business with them.`,
     },
     {
-      photo: `MartinG-7329`,
+      photo: `mattweik`,
       name: `Martin G`,
       city: `Los Angeles, CA`,
       text: `This is my third time working with Incfile. Great service. Professional and prompt. Will continue to do business with them.`,
     },
     {
-      photo: `MartinG-7329`,
+      photo: `mattweik`,
       name: `Martin G`,
       city: `Los Angeles, CA`,
       text: `This is my third time working with Incfile. Great service. Professional and prompt. Will continue to do business with them.`,
     },
     {
-      photo: `MartinG-7329`,
+      photo: `mattweik`,
       name: `Martin G`,
       city: `Los Angeles, CA`,
       text: `This is my third time working with Incfile. Great service. Professional and prompt. Will continue to do business with them.`,

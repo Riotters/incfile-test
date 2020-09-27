@@ -16,7 +16,7 @@ import { top, creating, opinions } from "../../static/other/form-your-corporatio
 const FormAnLLC = () => (
   <Layout>
     <SEO title="Form Your Corporation" description="aaa" />
-    <Top imageName="mr-bulb-form-your-corporation-4492" imageAlt="aaa" ovalColor="sun" headlineWidth="550">
+    <Top imageName="mr-bulb-form-your-corporation-4492" imageAlt="aaa" ovalColor="sun" headlineWidth="450">
       <h1>{top.header}</h1>
       <Buttonsbox>
         <Button content={top.button[0]} theme="primary56" width="200px" arrow />
