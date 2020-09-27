@@ -38,7 +38,7 @@ import Oval from "../../atomic/atoms/icons/oval";
 const VirtualMailBoxes = () => (
     <Layout>
         <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
-        <Top imageName="mr-contact-new-sales-9845" imageAlt="Mrs Bulb New Sales" ovalColor="purple-2" headlineWidth="500" textWidth="800">
+        <Top imageName="mr-contact-new-sales-9845" imageAlt="Mrs Bulb New Sales" ovalColor="blue" headlineWidth="500" textWidth="800">
             <h1>{top.header}</h1>
             <p>{top.text}</p>
             <Buttonsbox>
