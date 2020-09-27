@@ -14,6 +14,11 @@ const HowItWorks = styled.section`
   position: relative;
   background-color: ${color.orange3};
   padding: 100px 0 120px;
+  
+  .oval:not(.small) {
+        max-width: 100%;
+        overflow: hidden;
+    }
 `;
 
 const Boxes = styled.div`

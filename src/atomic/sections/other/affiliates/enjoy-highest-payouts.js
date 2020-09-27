@@ -11,6 +11,11 @@ import Button from "../../../../atomic/molecules/buttons/button";
 const Section = styled.section`
   position: relative;
   padding: 100px 0 120px;
+  
+  .oval:not(.small) {
+        max-width: 100%;
+        overflow: hidden;
+    }
 `;
 
 const EnjoyHighestPayouts = ({ className, content }) => (
