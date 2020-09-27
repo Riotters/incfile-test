@@ -1,8 +1,6 @@
 import React from "react";
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
-import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
-import Button from "../../atomic/molecules/buttons/button";
 
 //Sections
 import Top from '../../atomic/sections/other/reviews/top';

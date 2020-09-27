@@ -2,8 +2,8 @@ import React, {Component, Fragment, useState} from 'react';
 import styled from 'styled-components';
 import parse from 'html-react-parser';
 import { Link } from 'gatsby';
-import { color } from '../../../../components/styles/colors';
 
+import { color } from '../../../../components/styles/colors';
 import Container from '../../../container';
 import Image from '../../../atoms/image/image_nobase64';
 import Oval from "../../../atoms/icons/oval";
@@ -16,8 +16,6 @@ import AbsoluteShapCure from '../../../elements/absolute-shape-curve-e';
 import Whitebox from "../../../atoms/boxes/white-box";
 import { Paragraph } from "../../../atoms/typography/paragraph";
 import Drop from '../../../../components/form/dropdown';
-
-
 
 const Wrapper = styled.div`
     position: relative;
@@ -142,10 +140,10 @@ const ListReviews = ({ content }) => {
     const formatDate = (date) => {
         const myDate = new Date(date);
         const newDate = new Intl.DateTimeFormat('en-US', {
-        year: "numeric",
-        month: "short",
-        day: "numeric"
-        }).format(myDate);
+            year: "numeric",
+            month: "short",
+            day: "numeric"
+            }).format(myDate);
 
         return newDate;
     }
