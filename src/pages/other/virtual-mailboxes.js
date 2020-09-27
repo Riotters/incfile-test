@@ -70,7 +70,7 @@ const VirtualMailBoxes = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={WWWAccess} style={{"grid-row": "1/3"}}
+                    <TextBlockWithImage SvgImage={WWWAccess}
                                         imageBackgroundColor={moreInfo.items[1].backgroundColor}
                                         imageShadowColor={moreInfo.items[1].shadowColor}
                                         width={100}
@@ -99,7 +99,7 @@ const VirtualMailBoxes = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={Notification} style={{"grid-row": "2/4"}}
+                    <TextBlockWithImage SvgImage={Notification}
                                         imageBackgroundColor={moreInfo.items[3].backgroundColor}
                                         imageShadowColor={moreInfo.items[3].shadowColor}
                                         width={100}
@@ -127,7 +127,7 @@ const VirtualMailBoxes = () => (
                 </StepsGridContainer>
             </ContentCenter>
 
-            <Oval className="oval" height="136" width="136" bottom="3.9" right="0">
+            <Oval className="oval small" height="136" width="136" bottom="3.9" right="0">
                 <OvalSVG2 />
             </Oval>
         </InnerSection>
@@ -139,7 +139,6 @@ const StepsGridContainer = styled.div`
     grid-template-columns: 1fr;
     grid-gap: 1em;
     align-items: center;
-    margin-top: 110px;
 
     @media screen and (max-width: 769px) {
         display: block;
@@ -158,13 +157,10 @@ const StepsGridContainer = styled.div`
         @media screen and (min-width: 769px) {
             padding: 72px 40px 40px;
             width: 470px;
+            margin-top: 70px;
 
             &:nth-child(even) {
                 grid-column: 2;
-            }
-            
-            &:nth-child(odd) {
-                margin-top: 70px;
             }
         }
         
@@ -178,7 +174,7 @@ const InnerSection = styled.div`
     position: relative;
     margin-bottom: 100px;
     
-    .oval {
+    .oval:not(.small) {
         max-width: 100%;
         overflow: hidden;
     }
