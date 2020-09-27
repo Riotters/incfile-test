@@ -41,7 +41,7 @@ const ArizonaStreetAddrVirtualMXAdvantages = ({ className, content }) => (
                 </Paragraph>
 
                 <CardsWrapper>
-                    <Curve top="-15" left="-115" color={color.blue1}>
+                    <Curve top="30" left="-115" color={color.blue1}>
                         <CurveSVG />
                     </Curve>
                     <Cards content={content.cards} />
