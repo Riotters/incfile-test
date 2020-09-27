@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import styled from 'styled-components';
-import parse from 'html-react-parser';
 
 import { Heading } from '../../../atoms/typography/heading';
 import { Paragraph } from '../../../atoms/typography/paragraph';
@@ -15,8 +14,6 @@ import ShapeCurve from "../../../atoms/shapes/curve";
 import CurveSVG from "../../../../images/green-curve.inline.svg";
 import RelativeElement from '../../../elements/relative-e';
 import AbsoluteShapCure from '../../../elements/absolute-shape-curve-e';
-import Button from '../../../../components/button';
-import { shadow } from "../../../atoms/styles/shadows";
 import Card from "../../../molecules/mixed-blocks/top-image-box";
 
 const Wrapper = styled.div`
@@ -66,7 +63,7 @@ const ToolLists = styled.div`
 
 const CustomerComplaint = ({ content }) => (
     <Wrapper>
-        <Oval className="oval" height="420" width="420" top="0" left="0" y="0">
+        <Oval className="oval" height="520" width="520" top="0" left="0" y="0">
             <OvalSVG />
         </Oval>
 
@@ -102,7 +99,7 @@ const CustomerComplaint = ({ content }) => (
             
             <ToolLists>
                 {content.tools.map(item => (
-                    <div>
+                    <Fragment>
                         {
                             !item.curve
                             ? <Card className="card__item" content={{ header: item.title, text: item.desc, link: { url: item.link, text: `Learn more` } }} color={item.color} image={item.image} />
@@ -113,7 +110,7 @@ const CustomerComplaint = ({ content }) => (
                                 <Card className="card__item" content={{ header: item.title, text: item.desc, link: { url: item.link, text: `Learn more` } }} color={item.color} image={item.image} />
                             </RelativeElement>
                         }
-                    </div>
+                    </Fragment>
                 ))}
         
             </ToolLists>
