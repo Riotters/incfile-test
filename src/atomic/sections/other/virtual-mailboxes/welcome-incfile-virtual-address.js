@@ -11,6 +11,11 @@ import IconTextColorBox from "../../../molecules/text-blocks/icon-h4-text-color"
 const Section = styled.section`
   position: relative;
   padding-bottom: 120px;
+  
+  .oval {
+     max-width: 100%;
+     overflow: hidden;
+  }
 
   p {
     color: ${color.grey2};

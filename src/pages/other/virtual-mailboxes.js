@@ -141,6 +141,10 @@ const StepsGridContainer = styled.div`
     align-items: center;
     margin-top: 110px;
 
+    @media screen and (max-width: 769px) {
+        display: block;
+    }
+
     @media screen and (min-width: 850px) {
         grid-template-columns: repeat(auto-fit, minmax(470px, 1fr));
     }
@@ -163,12 +167,21 @@ const StepsGridContainer = styled.div`
                 margin-top: 70px;
             }
         }
+        
+        @media screen and (max-width: 769px) {
+            margin-top: 70px;
+        }
     }
 `;
 
 const InnerSection = styled.div`
     position: relative;
     margin-bottom: 100px;
+    
+    .oval {
+        max-width: 100%;
+        overflow: hidden;
+    }
 `;
 
 export default VirtualMailBoxes;
