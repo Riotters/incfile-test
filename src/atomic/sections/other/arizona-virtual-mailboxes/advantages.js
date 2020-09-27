@@ -48,7 +48,7 @@ const ArizonaStreetAddrVirtualMXAdvantages = ({ className, content }) => (
                 </CardsWrapper>
             </ContentObject>
 
-            <Oval className="oval" height="570" width="570" top="24.7" left="0">
+            <Oval className="oval" height="570" width="570" top="0" left="0">
                 <OvalSVG />
             </Oval>
         </InnerSection>

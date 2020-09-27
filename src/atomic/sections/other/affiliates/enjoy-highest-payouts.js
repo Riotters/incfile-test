@@ -45,7 +45,7 @@ const GridContainer = styled.div`
     grid-template-columns: 50% 50%;
     grid-gap: 30px;
     
-    padding-top: 104px;
+    padding-top: 72px;
     
     & + .sign-up-btn {
         align-self: center;

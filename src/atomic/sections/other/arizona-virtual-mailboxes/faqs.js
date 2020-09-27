@@ -9,7 +9,7 @@ import OvalSVG from "../../../../images/ovals/top-right-transparent-reverse-gree
 
 const Faq = styled.section`
   position: relative;
-  padding: 100px 0;
+  padding: 100px 0 120px;
 `;
 
 const FaqSection = ({ className, content }) => (
