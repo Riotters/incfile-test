@@ -7,6 +7,7 @@ import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-right-blue3-transparent.inline.svg";
 import OvalSVG2 from "../../../../images/ovals/top-left-transparent-orange3-big.inline.svg";
 import LeftContentRightObject from "../../../partials/left-content-right-object";
+import AmendmentForm from "../../../organisms/forms/virtual-mailboxes-form";
 
 const AdvantagesSection = styled.section`
   position: relative;
@@ -16,12 +17,11 @@ const AdvantagesSection = styled.section`
 `;
 
 const ServiceAvailableSection = ({ className, content }) => (
-    // TODO: Add Amendment form to the object prop of LCRO
     <AdvantagesSection className={className}>
         <Oval className="oval" height="420" width="420" top="0" right="0">
             <OvalSVG />
         </Oval>
-        <LeftContentRightObject contentWidth={1170}>
+        <LeftContentRightObject contentWidth={550} object={<AmendmentForm content={content.form}/>}>
             <Heading size={2}>{content.header}</Heading>
             <Paragraph>{content.text}</Paragraph>
         </LeftContentRightObject>

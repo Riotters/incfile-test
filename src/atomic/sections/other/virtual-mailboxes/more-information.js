@@ -25,7 +25,7 @@ const GridSectionList = styled.div`
 
 const AdvantagesSection = styled.section`
   position: relative;
-  padding: 120px 0;
+  padding: 100px 0 104px;
   overflow: hidden;
 `;
 

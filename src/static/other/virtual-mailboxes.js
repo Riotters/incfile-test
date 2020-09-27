@@ -66,7 +66,12 @@ export const availability = {
     form: {
         header: "Amendment",
         field: {
-            label: "State"
+            label: "State",
+            options: "Select style",
+        },
+        button: {
+            text: "Order now",
+            url: "/"
         }
     }
 }

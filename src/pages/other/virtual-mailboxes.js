@@ -75,7 +75,7 @@ const VirtualMailBoxes = () => (
                                         imageShadowColor={moreInfo.items[1].shadowColor}
                                         width={100}
                                         widthUnit="%">
-                        <Curve top="-40" right="-40" color={color.babyblue1}>
+                        <Curve top="-29" right="-29" color={color.babyblue1}>
                             <CurveSVG />
                         </Curve>
                         <Heading size={4}>
@@ -137,7 +137,7 @@ const VirtualMailBoxes = () => (
 const StepsGridContainer = styled.div`
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 1em;
+    grid-gap: 70px 30px;
     align-items: center;
 
     @media screen and (max-width: 769px) {
@@ -153,11 +153,11 @@ const StepsGridContainer = styled.div`
         align-items: flex-start;
         flex-direction: column;
         text-align: left;
+        height: 100%;
 
         @media screen and (min-width: 769px) {
             padding: 72px 40px 40px;
             width: 470px;
-            margin-top: 70px;
 
             &:nth-child(even) {
                 grid-column: 2;

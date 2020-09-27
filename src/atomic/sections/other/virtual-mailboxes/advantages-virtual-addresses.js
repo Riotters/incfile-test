@@ -26,7 +26,7 @@ const AdvantagesSection = styled.section`
 const Improvement = styled.div`
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 1em;
+    grid-gap: 30px;
     align-items: center;
     margin-top: 110px;
 
@@ -87,7 +87,7 @@ const SearchSection = ({ className, content }) => (
                 </Paragraph>
 
                 <CardsWrapper>
-                    <Curve top="-85" left="-85" color={color.yellow1}>
+                    <Curve top="-15" left="-115" color={color.orange2}>
                         <CurveSVG />
                     </Curve>
                     <Cards content={content.cards} />
@@ -104,7 +104,7 @@ const SearchSection = ({ className, content }) => (
                 <OvalSVG2 />
             </Oval>
             <ContentObject contentWidth="970" contentCenter>
-                <Heading size="2">{content.header2}</Heading>
+                <Heading size="2" bottomMargin="62">{content.header2}</Heading>
 
                 <Paragraph big bottomMargin="0">
                     {content.text2}
@@ -124,7 +124,7 @@ const SearchSection = ({ className, content }) => (
                                 )}
                             </Whitebox>
                         ))}
-                        <Curve botom="-25" right="-35" color={color.yellow1}>
+                        <Curve botom="-25" right="-35" color={color.orange2}>
                             <CurveSVG2 />
                         </Curve>
                     </Improvement>

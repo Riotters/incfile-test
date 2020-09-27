@@ -7,6 +7,7 @@ import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-left-bottom-transparent-purple2.inline.svg";
 import IconSVG from "../../../../images/icons/megafon.inline.svg";
 import IconTextColorBox from "../../../molecules/text-blocks/icon-h4-text-color";
+import {Heading} from "../../../atoms/typography/heading";
 
 const Section = styled.section`
   position: relative;
@@ -33,8 +34,8 @@ const VirtualAddressSection = ({ className, content }) => (
         </Oval>
         <ImageContent image="virtual-mailbox-service-5488">
             <Paragraph big>{content.text}</Paragraph>
-            <Paragraph big>{content.text2}</Paragraph>
-            <IconTextColorBox color={color.blue3} Icon={IconSVG} content={content.box} rounded curve curveColor={color.blue1} />
+            <Heading size={4}>{content.text2}</Heading>
+            <IconTextColorBox color={color.blue3} Icon={IconSVG} content={content.box} rounded curve curveColor={color.green1} />
         </ImageContent>
     </Section>
 );
