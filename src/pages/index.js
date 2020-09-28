@@ -109,8 +109,8 @@ const IndexPage = () => (
         <Link to="/other/start-an-llc">Start An LLC (no details)</Link>
         <Link to="/other/general-research-topics">General Research Topics (WIP)</Link>
         <Link to="/other/incfile-coupon-promo-code">Incfile Coupon Promo Code (WIP)</Link>
-        <Link to="/other/new-york-entity-search">New York Entity Search (WIP)</Link>
-        <Link to="/other/virginia-entity-search">Virginia Entity Search (WIP)</Link>
+        <Link to="/other/new-york-entity-search">New York Entity Search</Link>
+        <Link to="/other/virginia-entity-search">Virginia Entity Search</Link>
         <Link to="/other/new-jersey-entity-search">New Jersey Entity Search</Link>
         <Link to="/other/delaware-entity-search">Daleware Entity Search</Link>
         <Link to="/other/how-it-works">How It Works (WIP)</Link>
