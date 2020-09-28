@@ -54,7 +54,7 @@ const RegisteredAgentServiceForm = () => (
     <Layout>
         <SEO title="Registered Agent Service" description="Registered Agent Service"/>
 
-        <FormLayout formTitle="Registered Agent Service">
+        <FormLayout formTitle="Registered Agent Service" hasInfoBox infoBoxText="Every state requires a corporation or an LLC to have a Registered Agent (sometimes called a resident agent, statutory agent, or agent for service of process). The Registered Agent address is the address that will be used by the state for any official legal and tax correspondence.">
 
             <LeftColumn>
                 <FormSection icon={ContactIcon} title="Contact Information">

@@ -51,9 +51,10 @@ const summaryList = [
 
 const CertGoodStandingForm = () => (
     <Layout>
-        <SEO title="WIP Page" description="wip page"/>
+        <SEO title="Certificate of Good Standing" description="Certificate of Good Standing"/>
 
-        <FormLayout formTitle="Certificate of Good Standing">
+        <FormLayout formTitle="Certificate of Good Standing" hasInfoBox infoBoxText="A Certificate of Good Standing is an official document issued by your state’s secretary of state office to verify that your business is compliant within the state of incorporation and therefore is in “good standing.” Just like having a driver’s license or other forms of personal ID, a Certificate of Good Standing proves that your LLC or corporation is officially registered and authorized to operate in your home state.
+    <br/>Also known as a Certificate of Existence, Certificate of Authorization, or a Certificate of Status, the Good Standing Certificate is a one-page document provided by the secretary of state and provides conclusive evidence of the status of your business entity. In many cases it can be valid up to three months.">
 
             <LeftColumn>
                 <FormSection icon={ContactIcon} title="Contact Information">

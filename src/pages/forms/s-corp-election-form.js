@@ -62,9 +62,9 @@ const SCorpElectionForm = () => {
 
     return (
         <Layout>
-            <SEO title="Corporate / LLC Kit" description="wip page"/>
+            <SEO title="S Corporation Tax Election with Form 2553" description="S Corporation Tax Election with Form 2553"/>
 
-            <FormLayout formTitle="S Corporation Tax Election with Form 2553">
+            <FormLayout formTitle="S Corporation Tax Election with Form 2553" hasInfoBox infoBoxText="This tax election tells the Internal Revenue Service to tax your LLC business as an S Corporation, which could reduce the amount of income on which you need to pay self-employment tax (including Social Security, Medicare and FICA). This can substantially reduce your tax bill with only a slight increase in administrative overhead for you and your accountant.">
 
                 <LeftColumn>
                     <FormSection icon={ContactIcon} title="Contact Information">
