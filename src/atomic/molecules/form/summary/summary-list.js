@@ -32,7 +32,6 @@ const SummaryList = ({list}) => (
 function TotalSum(items) {
     let total = 0;
 
-    console.log(items);
     if (items.length > 0) {
         items.map(item => {
 

@@ -9,13 +9,12 @@ import About from "../../atomic/sections/other/after-forming-llc/about";
 import Guide from "../../atomic/sections/other/after-forming-llc/guide";
 import Articles from "../../atomic/sections/articles";
 //Texts
-import { top, about, guide } from "../../static/other/form-an-llc";
+import { top, about, guide } from "../../static/other/after-forming-llc";
 
 const AfterForming = () => (
   <Layout>
     <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
-    <Top imageName="mr-bulb-compass-3979
-    " imageAlt="Mrs Bulb and with checklist" ovalColor="sun" headlineWidth="550">
+    <Top imageName="mr-bulb-compass-3979" imageAlt="Mrs Bulb and with checklist" ovalColor="sun" headlineWidth="550">
       <h1>{top.header}</h1>
       <p>{top.text}</p>
       <Buttonsbox>

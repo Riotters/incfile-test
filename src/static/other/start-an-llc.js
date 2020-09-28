@@ -14,125 +14,173 @@ export const about = {
     panels: [`Starting your LLC`, `Who Can Start an LLC?`, `Where to Start Your LLC?`, `When to Form an LLC`, `Responsibilities for an LLC`],
     content: [
       {
-          header: `Starting your Limited Liability Company`,
-          text: `If you want to start a business, forming a Limited Liability Company — or LLC — could be a great choice. LLCs are designed to be simple and inexpensive to setup, and are easy to run. They have many of the advantages of larger businesses and corporations without all of the rules, regulations and legal compliance commonly found with other business entities. LLCs are registered with the government in your state.`,
-          header2: `Advantages of an LLC`,
-          text2: `LLCs have many benefits for businesses, especially small businesses and startups.`,
-          list: [
+        header: `Starting your Limited Liability Company`,
+        text: `If you want to start a business, forming a Limited Liability Company — or LLC — could be a great choice. LLCs are designed to be simple and inexpensive to setup, and are easy to run. They have many of the advantages of larger businesses and corporations without all of the rules, regulations and legal compliance commonly found with other business entities. LLCs are registered with the government in your state.`,
+        header2: `Advantages of an LLC`,
+        text2: `LLCs have many benefits for businesses, especially small businesses and startups.`,
+        list: {
+          items: [
             {
-              header: `LLCs are quick and easy`,
-              text:`the paperwork involved in setting up an LLC is simple to complete, and you can complete the whole process, fast.`,
+              question: `LLCs are quick and easy`,
+              answer: `The paperwork involved in setting up an LLC is simple to complete, and you can complete the whole process, fast.`,
             },
             {
-              header: `An LLC limits your “personal liability”`,
-              text:`that means any liabilities your business has (debts, obligations and other liabilities) belong to it alone. Typically, even as the business owner, you will not be liable for your LLC's obligations.`,
+              question: `An LLC limits your “personal liability”`,
+              answer: `That means any liabilities your business has (debts, obligations and other liabilities) belong to it alone. Typically, even as the business owner, you will not be liable for your LLC's obligations.`,
             },
             {
-              header: `LLCs are easy to maintain`,
-              text:`you don’t need to hold annual general meetings, assign boards of directors or meet particularly onerous rules and regulations.`,
+              question: `LLCs are easy to maintain`,
+              answer: `You don’t need to hold annual general meetings, assign boards of directors or meet particularly onerous rules and regulations.`,
             },
             {
-              header: `Flexibility and control over the LLC`,
-              text:`LLCs are easy to manage — you can add and amend members and make other changes without too much paperwork.`,
+              question: `Flexibility and control over the LLC`,
+              answer: `LLCs are easy to manage — you can add and amend members and make other changes without too much paperwork.`,
             },
             {
-              header: `LLC taxes are simple`,
-              text:`any income earned by your LLC “flows through” to your personal tax return and is taxed as normal. Members report any profits or losses from the LLC on their personal tax returns. This can keep your accounting costs down.`,
+              question: `LLC taxes are simple`,
+              answer: `Any income earned by your LLC “flows through” to your personal tax return and is taxed as normal. Members report any profits or losses from the LLC on their personal tax returns. This can keep your accounting costs down.`,
             },
             {
-              header: `You won’t be “double taxed”`,
-              text:`some corporations have to pay tax on their profits and then individuals pay tax again when they receive stock dividends. LLC members are not subject to this double taxation.`,
+              question: `You won’t be “double taxed”`,
+              answer: `Some corporations have to pay tax on their profits and then individuals pay tax again when they receive stock dividends. LLC members are not subject to this double taxation.`,
             },
           ],
+        },
         header3: `Creating an LLC: How to Set Up Your New LLC Business`,
         text3: `There are six easy steps you need to take when setting up an LLC:`,
-        list: [
-          {
-            header: `Name Your LLC`,
-            text: `First, you’ll need to create an original name for your new business. This should be something distinctive that wouldn’t be confused with the name of another business or LLC. You will need to include a “designator” in the name of your business to show it’s an LLC.`,
-            text2: `This is normally through including a suffix of “LLC” or “Limited Company.” For example: Blue Widget Manufacturing, LLC or Bob Baker and Sons, Limited Company.`,
-            text3: [
-              {
-                text: `If you're looking for help with searching for your LLC name to see if it's taken, we've put together`,
-              },
-              {
-                text: `How to Search & Choose Your Business Entity Name in all 50 States.`,
-                url: `/`,
-              },
-            ],
-          },
-          {
-            header: `Provide the Address for Your New LLC`,
-            text: `Each LLC will need to have a designated business address. If you’re running a company from home, this can be the same as your home address. If you’re renting office space, it can be where your office is located. If you have multiple locations, it would be the address where your “head office” is. This will vary as some states will permit a PO Box.`,
-          },
-          {
-            header: `Assign a Registered Agent for Your LLC`,
-            text: [
-              {
-                text: `Every LLC must have a`,
-              },
-              {
-                text: `registered agent.`,
-                url: `/`,
-              },
-              {
-                text: `For small LLCs, this is generally the same person as the managing director or owner.`,
-              },
-            ],
-            text2: `For small LLCs, this is generally the same person as the managing director or owner. The member — or owner — of an LLC can also serve as the registered agent, but some members will prefer to assign those responsibilities to another individual or company. The registered agent is simply the person who receives official legal and tax correspondence.`,
-            text3: [
-              {
-                text: `All of our online`,
-              },
-              {
-                text: `business formation packages`,
-                url: `/`,
-              },
-              {
-                text: `include a “registered agent” service free for the first year and $119 per year thereafter.`,
-              },
-            ],
-          },
-          {
-            header: `Provide the Names and Addresses of LLC Members`,
-            text: `The LLC members are typically the people who own and run the business. They are also the ones who can take profits out of the business to pay themselves. Most states require you to list the names and addresses of all members when you register the LLC. You can register these addresses as street addresses or P.O. boxes.`,
-          },
-          {
-            header: `State the Purpose of Your LLC`,
-            text: `Some states require you to explain the purpose of your company. This does not limit you to engaging solely in that type of business — It's fine to expand into new areas later on.`,
-          },
-          {
-            header: `File the Articles of Organization`,
-            text: `Once you've gathered all the information together for your LLC, you’ll need to file formal documents with your state agency. We can do this on your behalf.`,
-            text2: [
-              {
-                text: `For more information on the steps you need to follow when starting your LLC, see Incfile's Help Center post on`,
-              },
-              {
-                text: `steps to starting a Limited Liability Company (LLC).`,
-                url: `/`,
-              },
-            ],
-          },
-        ],
+        list2: {
+          items: [
+            {
+              count: 1,
+              question: `Name Your LLC`,
+              answer: `First, you’ll need to create an original name for your new business. This should be something distinctive that wouldn’t be confused with the name of another business or LLC. You will need to include a “designator” in the name of your business to show it’s an LLC.`,
+              text: `This is normally through including a suffix of “LLC” or “Limited Company.” For example: Blue Widget Manufacturing, LLC or Bob Baker and Sons, Limited Company.`,
+              text2: [
+                {
+                  text: `If you're looking for help with searching for your LLC name to see if it's taken, we've put together`,
+                },
+                {
+                  text: `How to Search & Choose Your Business Entity Name in all 50 States.`,
+                  url: `/`,
+                },
+              ],
+            },
+            {
+              count: 2,
+              question: `Provide the Address for Your New LLC`,
+              answer: `Each LLC will need to have a designated business address. If you’re running a company from home, this can be the same as your home address. If you’re renting office space, it can be where your office is located. If you have multiple locations, it would be the address where your “head office” is. This will vary as some states will permit a PO Box.`,
+            },
+            {
+              count: 3,
+              question: `Assign a Registered Agent for Your LLC`,
+              answer: [
+                {
+                  text: `Every LLC must have a`,
+                },
+                {
+                  text: `registered agent.`,
+                  url: `/`,
+                },
+                {
+                  text: `For small LLCs, this is generally the same person as the managing director or owner.`,
+                },
+              ],
+              text: `For small LLCs, this is generally the same person as the managing director or owner. The member — or owner — of an LLC can also serve as the registered agent, but some members will prefer to assign those responsibilities to another individual or company. The registered agent is simply the person who receives official legal and tax correspondence.`,
+              text2: [
+                {
+                  text: `All of our online`,
+                },
+                {
+                  text: `business formation packages`,
+                  url: `/`,
+                },
+                {
+                  text: `include a “registered agent” service free for the first year and $119 per year thereafter.`,
+                },
+              ],
+            },
+            {
+              count: 4,
+              question: `Provide the Names and Addresses of LLC Members`,
+              answer: `The LLC members are typically the people who own and run the business. They are also the ones who can take profits out of the business to pay themselves. Most states require you to list the names and addresses of all members when you register the LLC. You can register these addresses as street addresses or P.O. boxes.`,
+            },
+            {
+              count: 5,
+              question: `State the Purpose of Your LLC`,
+              answer: `Some states require you to explain the purpose of your company. This does not limit you to engaging solely in that type of business — It's fine to expand into new areas later on.`,
+            },
+            {
+              count: 6,
+              question: `File the Articles of Organization`,
+              answer: `Once you've gathered all the information together for your LLC, you’ll need to file formal documents with your state agency. We can do this on your behalf.`,
+              text: [
+                {
+                  text: `For more information on the steps you need to follow when starting your LLC, see Incfile's Help Center post on`,
+                },
+                {
+                  text: `steps to starting a Limited Liability Company (LLC).`,
+                  url: `/`,
+                },
+              ],
+            },
+          ],
+        },
         header4: `How to Create an LLC without Breaking the Bank`,
         text4: `IncFile provides a cost effective service to help you create your LLC. We guide you through the process and handle most of the administrative steps, such as filing the articles of organization, on your behalf. Our basic package also provides a free registered agent service for the first year. If you're looking for help to start an LLC, our comprehensive online formation services provide outstanding value. `,
       },
       {
-          header: `Who Can Start an LLC?`,
-          text: `xyz`,
+        header: `Who Can Start an LLC?`,
+        text: `Most people in good legal standing are able to form an LLC. You should consider creating an LLC if you want to limit your personal liability and personal exposure. Forming an LLC protects your personal assets from any claims or debts your business has against it.`,
+        text2: `It’s important to note that not all businesses can operate as LLCs. For example, businesses dealing with banking or insurance are typically prevented from forming as an LLC. There are also restrictions from state to state, for example California prevents some types of professionals from starting LLCs. To learn more about the specific regulations in your state when starting your LLC, check out Incfile's complete LLC state information.`,
+        link: {
+          text: `Learn more about LLC state information`,
+          url: `/`,
+        },
       },
       {
-          header: `Where to Start Your LLC?`,
-          text: `xyz`,
+        header: `Where to Start Your LLC?`,
+        text: `Generally speaking, if you plan to conduct business in your home state, it makes sense to form your LLC there. Although there can be some advantages to forming an LLC in Delaware, Nevada or other “business friendly” states, in most cases those benefits won’t apply to your LLC.`,
+        boxes: [`Texas`, `Delaware`, `Nevada`, `Florida`],
+        link: {
+          text: `See more business-friendly states`,
+          url: `/`,
+        },
       },
       {
-          header: `When to Form an LLC`,
-          text: `xyz`,
+        header: `When to Form an LLC`,
+        text: `The best time to form an LLC is right now. When it comes to starting a business, you will have dozens of things on your mind as a new entrepreneur. Taking a few minutes right now to make sure you form your business properly will give you peace of mind, and let you get on with growing into a thriving company.`,
       },
       {
-          header: `Ongoing Responsibilities for an LLC`,
-          text: `xyz`,
+        header: `Ongoing Responsibilities for an LLC`,
+        text: `Once your LLC is formed, you will have ongoing responsibilities you need to carry out. These include:`,
+        box: {
+          header: `Incfile’s Trademark Service Benefits`,
+          list: [
+            [
+              {
+                text: `Filing an`,
+              },
+              {
+                text: `annual report`,
+                url: `/`,
+              },
+              {
+                text: `with your state’s Secretary of State.`,
+              },
+            ],
+            [
+              {
+                text: `Reporting income earned (or lost) by your LLC on your personal tax return. Each member of an LLC will need to do this. If you're interested in how to save even more tax money by filing as an S Corporation, check out our`,
+              },
+              {
+                text: `S\u00A0Corporation Tax Calculator.`,
+                url: `/`,
+              },
+            ],
+            `Providing business reports as needed to other LLC members (this is not a legal; requirement, just best practice.)`,
+          ],
+        },
+        text2: `You will also want to explore other common areas when starting a new business such as understanding any rules and regulations pertaining to your industry and getting appropriate insurance in place.`,
       },
     ],
   },
@@ -146,15 +194,137 @@ export const state = {
   button: {
     text: `Calculate my sales tax`,
     url: `/`,
-   },
-}
+  },
+  header2: `Statement of Information`,
+  table: {
+    rows: [
+      [
+        {
+          type: `header`,
+          text: `State Fee`,
+        },
+        {
+          type: `boxed`,
+          text: `$75`,
+        },
+      ],
+      [
+        {
+          type: `header`,
+          text: `State Filing Time`,
+        },
+        {
+          type: `text`,
+          text: `30 Business Days`,
+        },
+      ],
+      [
+        {
+          type: `header`,
+          text: `Expedited Filing Time`,
+        },
+        {
+          type: `text`,
+          text: `11 Business Days`,
+        },
+      ],
+    ],
+  },
+  header3: `California Compliance Requirements`,
+  header4: `Statement of Information`,
+  table2: {
+    rows: [
+      [
+        {
+          type: `header`,
+          text: `Frequency`,
+        },
+        {
+          type: `text`,
+          text: `Biennially`,
+        },
+      ],
+      [
+        {
+          type: `header`,
+          text: `Due Date:`,
+        },
+        {
+          type: `text`,
+          text: `During six-month period ending on last day of anniversary month of incorporation or qualification.`,
+        },
+      ],
+      [
+        {
+          type: `header`,
+          text: `Filing Fee:`,
+        },
+        {
+          type: `boxed`,
+          text: `$20`,
+        },
+      ],
+      [
+        {
+          type: `header`,
+          text: `Important:`,
+        },
+        {
+          type: `text`,
+          text: `The initial Statement of Information filing is due within 90 days of the entity formation date.`,
+        },
+      ],
+    ],
+  },
+  header5: `California Franchise Tax`,
+  table3: {
+    rows: [
+      [
+        {
+          type: `header`,
+          text: `Frequency:`,
+        },
+        {
+          type: `text`,
+          text: `Annually`,
+        },
+      ],
+      [
+        {
+          type: `header`,
+          text: `Fee:`,
+        },
+        {
+          type: `array`,
+          text: [
+            {
+              type: `boxed`,
+              text: `$800 (minimum)`,
+            },
+            {
+              type: `text`,
+              text: `The California Franchise Tax Board requires that all corporations registered in the State of California pay a franchise tax. For new corporations, the minimum franchise tax is $800 per year. However, Franchise Tax  is waived the 1st year for corporations but not LLCs. 
+              New corporations that incorporate in California  are exempt from the 1st year minimum tax, however the corporate owners are still responsible for paying the applicable franchise tax on any net income earned during the 1st year. Starting in the second year corporations are subject to the annual $800 minimum franchise tax rule.`,
+            },
+            {
+              type: `header`,
+              text: `(We do not assist in the filing of the Franchise Tax Report)`,
+            },
+          ],
+        },
+      ],
+    ],
+  },
+  button2: {
+    text: `Check for another state`,
+    url: `/`,
+  },
+};
 
 export const service = {
-  header:
-      `How our service works`,
-  text:
-      `Take a moment to view our instructional video and see how easy it can be to get your business incorporated.`,
-}
+  header: `How our service works`,
+  text: `Take a moment to view our instructional video and see how easy it can be to get your business incorporated.`,
+};
 
 export const variants = {
   header: `Select the package that works best for you`,
@@ -265,11 +435,11 @@ export const faq = {
       {
         question: `Can another business entity be a member of an LLC?`,
         answer: `In the majority of states, The members of an LLC can be individuals, corporations, or other LLCs. These members of the LLC can be out of state residents or even foreign nationals. Furthermore there is no limit to the amount of members that an LLC can have.`,
-        text: `The flexibility of an LLC in contrast to an S Corporation is stark considering the S corporations are limited to 75 shareholders who must either be United States citizens or Lawful Permanent Residents.`
+        text: `The flexibility of an LLC in contrast to an S Corporation is stark considering the S corporations are limited to 75 shareholders who must either be United States citizens or Lawful Permanent Residents.`,
       },
-    ]
-  }
-}
+    ],
+  },
+};
 
 export const rocket = {
   header: `Launch`,

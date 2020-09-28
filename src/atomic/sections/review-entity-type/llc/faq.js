@@ -31,7 +31,7 @@ const FaqSection = ({ className, content }) => (
     </Oval>
     <HeadingCenter headline={content.header} headlineWidth="770" />
     <ContentCenter>
-      <Accordion content={content.faq} curve />
+      <Accordion content={content.faq} curve curveLeft />
       <Button content={content.button} theme="primary56" arrow margin="72px auto 40px" />
       <Paragraph big maxWidth="770" style={{ textAlign: "center" }}>
         {content.text}

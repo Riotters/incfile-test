@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <g>
+                            <path fill="#FFF" fill-rule="nonzero" d="M24.05 6.15L21 6c-.976-.046-1.861-.585-2.35-1.43-.113-.178-.203-.37-.27-.57-.323-.974-1.165-1.685-2.18-1.84h-14c-.4.068-.788.196-1.15.38C.82 2.992.703 3.493.71 4v20.6c.123 1.978 1.81 3.491 3.79 3.4h5.64c.341.53.93.851 1.56.85h14.15c.01-.096.01-.194 0-.29V7.98c-.025-.988-.812-1.788-1.8-1.83zM23.64 14H13.07V8.93c.005-.344.286-.62.63-.62H23c.342 0 .62.278.62.62l.02 5.07z" transform="translate(-279 -967) translate(0 161) translate(255 783) translate(24 23.5) translate(2 2)"/>
+                            <path stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M20.27 4.32c0-1.87-.7-3.42-2.47-3.73h-14c-1.187.181-2.212.927-2.75 2h0C.827 3.027.71 3.51.71 4v20.6c.123 1.978 1.81 3.491 3.79 3.4h5.64" transform="translate(-279 -967) translate(0 161) translate(255 783) translate(24 23.5) translate(2 2)"/>
+                            <path stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M27.52 6.46v20.58c.002.861-.584 1.613-1.42 1.82H11.74c-.647.013-1.254-.313-1.6-.86-.196-.297-.304-.644-.31-1V6.43c-.015-.136-.015-.274 0-.41.193-.86.96-1.467 1.84-1.46h13.9c.515-.022 1.016.17 1.385.529.37.36.574.856.565 1.371h0z" transform="translate(-279 -967) translate(0 161) translate(255 783) translate(24 23.5) translate(2 2)"/>
+                            <path fill="#FFF" fill-rule="nonzero" stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M13.5 20.79L16.35 20.79M13.5 24.64L16.35 24.64M13.5 17.37L16.35 17.37M20.28 20.79L23.13 20.79M20.28 24.64L23.13 24.64M20.28 17.37L23.13 17.37" transform="translate(-279 -967) translate(0 161) translate(255 783) translate(24 23.5) translate(2 2)"/>
+                            <path stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M13.7 8.31H23c.348 0 .63.282.63.63V14H13.07V8.93c.005-.344.286-.62.63-.62h0z" transform="translate(-279 -967) translate(0 161) translate(255 783) translate(24 23.5) translate(2 2)"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

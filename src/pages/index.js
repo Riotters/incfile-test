@@ -48,8 +48,20 @@ const IndexPage = () => (
         <Link to="/contact/existing-clients/">Existing clients</Link>
         <Link to="/contact/new-sales/">New Sales</Link>
 
+        <h2>About</h2>
+        <Link to="/other/why-choose-incfile">Why Choose Incfile</Link>
+        <Link to="/other/about/">About us</Link>
+
         <h2>Forms</h2>
-        <Link to="/forms/fictitious-business-name">Fictitious Business Name (WIP)</Link>
+        <Link to="/forms/fictitious-business-name">Assumed Business Name</Link>
+        <Link to="/forms/amendment">Articles of Amendment</Link>
+        <Link to="/forms/cert-good-standing">Certificate of Good Standing</Link>
+        <Link to="/forms/dissolution">Articles of Dissolution</Link>
+        <Link to="/forms/change-agent">Change of Registered Agent</Link>
+        <Link to="/forms/trademark">Trademark Form</Link>
+        <Link to="/forms/s-corp-election-form">S Corporation Tax Election with Form 2553</Link>
+        <Link to="/forms/order-business-license">Business License Research Package</Link>
+        <Link to="/forms/ra-form">Registered Agent Service</Link>
 
         <h2>Manage Your Company</h2>
         <Link to="/manage-your-company">Manage your company</Link>
@@ -90,19 +102,19 @@ const IndexPage = () => (
         <Link to="/learning-center-entity/business-name-search">Business Name Search (no details)</Link>
         <h2>Other</h2>
         <Link to="/other/form-an-llc">Form An LLC (WIP)</Link>
-        <Link to="/other/form-your-corporation">Form Your Corporation (WIP)</Link>
-        <Link to="/other/start-an-llc">Start An LLC (WIP)</Link>
+        <Link to="/other/form-your-corporation">Form Your Corporation</Link>
+        <Link to="/other/start-an-llc">Start An LLC (no details)</Link>
         <Link to="/other/general-research-topics">General Research Topics (WIP)</Link>
         <Link to="/other/incfile-coupon-promo-code">Incfile Coupon Promo Code (WIP)</Link>
         <Link to="/other/new-york-entity-search">New York Entity Search (WIP)</Link>
         <Link to="/other/virginia-entity-search">Virginia Entity Search (WIP)</Link>
         <Link to="/other/new-jersey-entity-search">New Jersey Entity Search (WIP)</Link>
-        <Link to="/other/daleware-entity-search">Daleware Entity Search (WIP)</Link>
+        <Link to="/other/delaware-entity-search">Daleware Entity Search (WIP)</Link>
         <Link to="/other/how-it-works">How It Works (WIP)</Link>
         <Link to="/other/free-llc">Free LLC (WIP)</Link>
         <Link to="/other/incfile-reviews/">Customer Service Reviews</Link>
         <Link to="/other/arizona-publication-newspaper-list">Arizona Publication Newspaper List (WIP)</Link>
-        <Link to="/other/after-forming-llc">After Forming LLC (WIP)</Link>
+        <Link to="/other/after-forming-llc">After Forming LLC</Link>
         <Link to="/404">404</Link>
         <Link to="/503">503</Link>
         <h2>Blog</h2>

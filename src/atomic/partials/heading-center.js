@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import parse from 'html-react-parser';
 import ArrowLink from "../molecules/buttons/text";
 import VisibilitySensor from "../../components/VisibilitySensor";
 import ContentCenter from "./content-center";
@@ -39,7 +40,7 @@ const TextCenterLayout = ({ className, headline, headlineWidth, text, textWidth,
       <ContentCenter>
         {headline && (
           <VisibilitySensor partialVisibility once>
-            {({ isVisible }) => <h2 className={isVisible ? "slideUp enter" : "slideUp"}>{headline}</h2>}
+            {({ isVisible }) => <h2 className={isVisible ? "slideUp enter" : "slideUp"}>{parse(headline)}</h2>}
           </VisibilitySensor>
         )}
         {text && (
