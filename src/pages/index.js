@@ -78,15 +78,17 @@ const IndexPage = () => (
         <Link to="/manage-your-company/corporate-llc-kit">Corporate LLC Kit</Link>
         <Link to="/manage-your-company/filling-business-taxes">Filling Business Taxes</Link>
         <Link to="/manage-your-company/fictitious-business">Fictitious Business</Link>
+        
         <h2>Review Entity Type</h2>
         <Link to="/review-entity-type/nonprofit">Nonprofit (WIP)</Link>
         <Link to="/review-entity-type/c-corporation">C Corporation (no details)</Link>
         <Link to="/review-entity-type/s-corporation">S Corporation (no details)</Link>
         <Link to="/review-entity-type/llc">LLC (no details)</Link>
+
         <h2>Learning Center Entity</h2>
         <Link to="/learning-center-entity/help-center">Help Center</Link>
-        <Link to="/learning-center-entity/help-center-article">Help Center Article (no video)</Link>
-        <Link to="/learning-center-entity/comparison-chart">Comparison Chart (no video)</Link>
+        <Link to="/learning-center-entity/help-center-article">Help Center Article</Link>
+        <Link to="/learning-center-entity/comparison-chart">Comparison Chart</Link>
         <Link to="/learning-center-entity/business-checklist">Business Checklist (WIP)</Link>
         <Link to="/learning-center-entity/annual-report">Annual Report Due Date</Link>
         <Link to="/learning-center-entity/business-license-req">Business License Requirements (no API)</Link>
@@ -100,6 +102,7 @@ const IndexPage = () => (
         <Link to="/learning-center-entity/ongoing-filing-requirements">Ongoing Filing Requirements (no details)</Link>
         <Link to="/learning-center-entity/business-resources">Business Resources (WIP)</Link>
         <Link to="/learning-center-entity/business-name-search">Business Name Search (no details)</Link>
+
         <h2>Other</h2>
         <Link to="/other/form-an-llc">Form An LLC (WIP)</Link>
         <Link to="/other/form-your-corporation">Form Your Corporation</Link>
@@ -117,9 +120,11 @@ const IndexPage = () => (
         <Link to="/other/after-forming-llc">After Forming LLC</Link>
         <Link to="/404">404</Link>
         <Link to="/503">503</Link>
+
         <h2>Blog</h2>
         <Link to="/blog">Blog (no API)</Link>
         <Link to="/article">Article (no API)</Link>
+
         <h2>Type of Business</h2>
         <Link to="/type-of-business/airbnb">Airbnb</Link>
         <Link to="/type-of-business/coach">Coach</Link>
@@ -162,6 +167,7 @@ const IndexPage = () => (
         <Link to="/type-of-business/laundromat">Laundromat</Link>
         <Link to="/type-of-business/landscaping-business">Landscaping Business</Link>
         <Link to="/type-of-business/home-business">Home Business</Link>
+        
         <h2>Additional sites</h2>
         <Link to="/components">Components</Link>
       </Wrapper>

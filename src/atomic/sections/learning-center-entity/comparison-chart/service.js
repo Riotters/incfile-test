@@ -12,6 +12,7 @@ import PlayerSVG from "../../../../images/icons/player.inline.svg";
 import Curve from "../../../atoms/icons/curve";
 import CurveSVG from "../../../../images/curves/top-left-bottom-right.inline.svg";
 import Curve2SVG from "../../../../images/curves/bottom-left-top-right-reverse-big.inline.svg";
+import LightBoxVideo from "../../../../components/LightBox";
 
 const Service = styled.section`
   position: relative;
@@ -89,7 +90,7 @@ const ServiceSection = ({ className, content }) => (
     </Curve>
     <HeadingCenter headline={content.header} textWidth="770" text={content.text} bottomMargin="48" bottomMarginLG="80" />
     <ContentCenter>
-      <Video>
+      {/* <Video>
         <Curve top="-25" right="-29" color={color.purple1}>
           <CurveSVG />
         </Curve>
@@ -99,7 +100,8 @@ const ServiceSection = ({ className, content }) => (
             <PlayerSVG />
           </span>
         </PlayButton>
-      </Video>
+      </Video> */}
+      <LightBoxVideo thumbnailVideo="comparison-chart-video-3611" videoID="R_oIgzYh7NU" />
     </ContentCenter>
   </Service>
 );
