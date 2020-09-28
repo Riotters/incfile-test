@@ -27,7 +27,7 @@ const GetSection = ({ className, content }) => (
     <ContentCenter contentWidth="770">
       <Paragraph big>{content.text}</Paragraph>
       <Heading size="3" bottomMargin="64">
-        {content.header}
+        {content.header2}
       </Heading>
     </ContentCenter>
     <ContentCenter contentWidth="970">
