@@ -17,8 +17,14 @@ const Wrapper = styled(Whitebox)`
   flex-direction: column;
   width: 100%;
   max-width: 570px;
-  padding: 40px;
+  padding: 24px;
   position: relative;
+  margin: 48px auto 0;
+
+  @media(min-width: 992px) {
+    margin: 0;
+    padding: 40px;
+  }
 
   .curve-shape {
     svg {
@@ -29,9 +35,13 @@ const Wrapper = styled(Whitebox)`
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 30px;
+  grid-template-columns: 100%;
   width: 100%;
+  
+  @media(min-width: 769px) {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+  }
 
   .Dropdown-root {
     min-width: 50px;
@@ -59,17 +69,17 @@ const EntitySearchForm = ({ className, content, curveColor }) => {
         {content.header2}
       </Heading>
       <Grid>
-        <Label htmlFor="name2" content={content.field3} bottomMargin="16">
+        <Label htmlFor="name2" content={content.field3} bottomMargin="32" bottomMarginMD="16">
           <Input name="name2" id="name2" />
         </Label>
-        <Label htmlFor="surname" content={content.field4} bottomMargin="16">
+        <Label htmlFor="surname" content={content.field4} bottomMargin="32" bottomMarginMD="16">
           <Input name="surname" id="surname" />
         </Label>
       </Grid>
       <Label htmlFor="mail" content={content.field5} bottomMargin="0">
         <Input name="mail" id="mail" />
       </Label>
-      <Button content={content.button} theme="primary56" arrow marginSM="32px auto 0" />
+      <Button content={content.button} theme="primary56" arrow margin="32px 0 0" marginSM="32px auto 0" />
     </Wrapper>
   );
 };

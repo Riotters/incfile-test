@@ -111,8 +111,8 @@ const IndexPage = () => (
         <Link to="/other/incfile-coupon-promo-code">Incfile Coupon Promo Code (WIP)</Link>
         <Link to="/other/new-york-entity-search">New York Entity Search (WIP)</Link>
         <Link to="/other/virginia-entity-search">Virginia Entity Search (WIP)</Link>
-        <Link to="/other/new-jersey-entity-search">New Jersey Entity Search (WIP)</Link>
-        <Link to="/other/delaware-entity-search">Daleware Entity Search (WIP)</Link>
+        <Link to="/other/new-jersey-entity-search">New Jersey Entity Search</Link>
+        <Link to="/other/delaware-entity-search">Daleware Entity Search</Link>
         <Link to="/other/how-it-works">How It Works (WIP)</Link>
         <Link to="/other/free-llc">Free LLC (WIP)</Link>
         <Link to="/other/incfile-reviews/">Customer Service Reviews</Link>
@@ -167,7 +167,7 @@ const IndexPage = () => (
         <Link to="/type-of-business/laundromat">Laundromat</Link>
         <Link to="/type-of-business/landscaping-business">Landscaping Business</Link>
         <Link to="/type-of-business/home-business">Home Business</Link>
-        
+
         <h2>Additional sites</h2>
         <Link to="/components">Components</Link>
       </Wrapper>

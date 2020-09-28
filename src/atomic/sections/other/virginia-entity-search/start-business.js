@@ -14,8 +14,8 @@ import Button from "../../../molecules/buttons/button";
 
 const Protect = styled.section`
   position: relative;
-  padding-top: 75px;
-  padding-bottom: 64px;
+  padding-top: 120px;
+  padding-bottom: 120px;
   background-color: ${color.orange3};
   overflow: hidden;
 `;
@@ -35,18 +35,18 @@ const ProtectSection = ({ className, content }) => (
     <Oval height="550" width="550" bottom="0" right="0" y="2" x="20">
       <OvalSVG2 />
     </Oval>
-    <ContentImage image="protecting-your-business-name" contentWidth="670">
+    <ContentImage image="mr-bulb-review-entity-type-5755" contentWidth="570">
       <TextWrapper>
-        <Curve top="-115" left="-115" color={color.orange2}>
+        <Curve top="-64" left="-96" color={color.orange2}>
           <CurveSVG />
         </Curve>
-        <Heading size="2" bottomMargin="56" maxWidth="515">
+        <Heading size="2" maxWidth="400">
           {content.header}
         </Heading>
-        <Paragraph big bottomMargin="24">
+        <Paragraph big maxWidth="530">
           {content.text}
         </Paragraph>
-        <Button content={content.button} theme="primary56" arrow margin="32px 0 0" marginSM="32px auto 0 0" />
+        <Button content={content.button} theme="primary56" arrow margin="0" marginSM="0 auto 0 0" />
       </TextWrapper>
     </ContentImage>
   </Protect>
