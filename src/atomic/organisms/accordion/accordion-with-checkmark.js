@@ -9,6 +9,7 @@ import parse from "html-react-parser";
 import ArrowSVG from "../../../images/arrow-circle.inline.svg";
 import CurveSVG from "../../../images/orange-curve.inline.svg";
 import VisibilitySensor from "../../../components/VisibilitySensor";
+import CheckmarkSVG from "../../../images/circle-status-check.inline.svg";
 
 const Wrapper = styled.div`
   display: flex;
@@ -193,14 +194,8 @@ const Icon = styled.div`
   }
 `;
 
-const Counting = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  background-color: ${color.blue1};
-  color: white;
-  border-radius: 100px;
+const Checkmark = styled.div`
+  border-radius: 50%;
   width: 30px;
   min-width: 30px;
   height: 30px;
@@ -251,7 +246,9 @@ const AccordionWithCounting = ({ content, curve, curveRight, curveRightBottom, t
                 <TabBox>
                   <Tab>
                     <Content>
-                      <Counting>{item.count}</Counting>
+                      <Checkmark>
+                        <CheckmarkSVG />
+                      </Checkmark>
                       <span>{item.question}</span>
                     </Content>
                     <Icon>
