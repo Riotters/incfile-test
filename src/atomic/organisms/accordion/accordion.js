@@ -17,7 +17,7 @@ const Wrapper = styled.div`
   display: flex;
   width: 100%;
   position: relative;
-  margin-top: ${(props) => (props.tab ? "" : "80")};
+  margin-top: ${(props) => (props.tab ? "" : "80px")};
 
   @media (min-width: 769px) {
     width: auto;
@@ -223,7 +223,7 @@ const Accordion = ({ content, curve, curveRight, curveRightBottom, curveLeft, cu
                   <Panel>
                     <PanelWrapper>
                       {typeof item.answer === "string" ? <Paragraph bottomMargin="0">{parse(item.answer)}</Paragraph> : null}
-                      {typeof item.answer === "object" ? <Paragraph bottomMargin="0">{item.answer.map((el) => (el.url ? <Link to={el.url}>{` ${parse(el.text)} `}</Link> : el.text))}</Paragraph>: null}
+                      {typeof item.answer === "object" ? <Paragraph bottomMargin="0" mixed>{item.answer.map((el) => (el.url ? <Link to={el.url}>{` ${parse(el.text)} `}</Link> : el.text))}</Paragraph> : null}
 
                       {item.list && (
                         <ul>
@@ -233,8 +233,16 @@ const Accordion = ({ content, curve, curveRight, curveRightBottom, curveLeft, cu
                         </ul>
                       )}
 
-                      {typeof item.text === "string" ? <Paragraph topMargin="32" bottomMargin="0">{parse(item.answer)}</Paragraph> : null}
-                      {typeof item.text === "object" ? <Paragraph topMargin="32" bottomMargin="0">{item.answer.map((el) => (el.url ? <Link to={el.url}>{` ${parse(el.text)} `}</Link> : el.text))}</Paragraph> : null}
+                      {typeof item.text === "string" ? (
+                        <Paragraph topMargin="32" bottomMargin="0">
+                          {parse(item.text)}
+                        </Paragraph>
+                      ) : null}
+                      {typeof item.text === "object" ? (
+                        <Paragraph topMargin="32" bottomMargin="0" mixed>
+                          {item.text.map((el) => (el.url ? <Link to={el.url}>{` ${parse(el.text)} `}</Link> : el.text))}
+                        </Paragraph>
+                      ) : null}
 
                       {item.answer2 &&
                         item.answer2.map((e, i) => (
@@ -259,7 +267,6 @@ const Accordion = ({ content, curve, curveRight, curveRightBottom, curveLeft, cu
                           {item.arrowLink.text}
                         </ArrowLink>
                       )}
-
                     </PanelWrapper>
                   </Panel>
                 </TabBox>

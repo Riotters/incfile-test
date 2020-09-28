@@ -66,7 +66,7 @@ export const faq = {
       'Delaware has low costs to register and provide ongoing filing requirements',
       'Delaware has strong privacy protections',
       ],
-      //answer2: 'As a result, half of all publicly-traded corporations and two-thirds of Fortune 500 companies are incorporated in Delaware.'
+      text: 'As a result, half of all publicly-traded corporations and two-thirds of Fortune 500 companies are incorporated in Delaware.'
     },
     {
       question: `What should I consider when deciding on a Delaware business name?`,

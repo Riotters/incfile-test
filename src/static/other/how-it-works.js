@@ -141,7 +141,7 @@ export const next = {
             count: 4,
             question: `Deliver Filed Documents in Your Custom Dashboard`,
             answer: 'The filed articles along with any additional services and documents are accessible from your custom business dashboard. You’ll receive notification once they’re ready. All set!',
-            //answer2: 'But wait — your business dashboard is not just a dashboard to access your incorporation documents. We’ve worked hard to leverage our technology team to build a useful, one-stop place for all your business needs. You can easily manage and find what you need along your business journey. We offer a suite of startup services to support businesses after formation and for the lifetime of their business, including access to more than 150 business contracts; lifetime company alerts; business formation kit; preparation and filing of taxes, including IRS Form 2553; banking resolution; statement and resignation of the incorporator; online order status tracking; express shipping.',
+            text: 'But wait — your business dashboard is not just a dashboard to access your incorporation documents. We’ve worked hard to leverage our technology team to build a useful, one-stop place for all your business needs. You can easily manage and find what you need along your business journey. We offer a suite of startup services to support businesses after formation and for the lifetime of their business, including access to more than 150 business contracts; lifetime company alerts; business formation kit; preparation and filing of taxes, including IRS Form 2553; banking resolution; statement and resignation of the incorporator; online order status tracking; express shipping.',
           },
           {
             count: 5,

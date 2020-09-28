@@ -29,7 +29,7 @@ const AboutSection = ({ className, content }) => (
       <OvalSVG />
     </Oval>
     <ImageContent image="state-entity-search-9829">
-      <Heading size="3">{content.text}</Heading>
+      <Heading size="3">{content.header}</Heading>
       <Paragraph big>{content.text}</Paragraph>
       <IconTextColorBox color={color.babyblue3} Icon={IconSVG} content={content.box} bottomMargin="48" rounded curve curveColor={color.green1} />
       <Paragraph big>{content.text2}</Paragraph>

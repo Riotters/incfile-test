@@ -17,7 +17,7 @@ import { top, about, search, newRules, specificRules, startBusiness, faq } from 
 const GeneralResearchTopics = () => (
   <Layout>
     <SEO title="New Jersey Entity Search" description="aaa" />
-    <Top imageName="mrs-bulb-state-ilustrations-9948" imageAlt="Mrs Bulb and with checklist" ovalColor="love" headlineWidth="560" textWidth="500">
+    <Top imageName="mr-bulb-corporation-california-8302" imageAlt="Mrs Bulb and with checklist" ovalColor="love" headlineWidth="560" textWidth="500">
       <h1>{top.header}</h1>
       <p>{top.text}</p>
       <Buttonsbox>

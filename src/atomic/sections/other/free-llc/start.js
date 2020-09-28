@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { color, gradient } from "../../../atoms/styles/colors";
 import { Paragraph } from "../../../atoms/typography/paragraph";
 import HeadingCenter from "../../../partials/heading-center";
+import ContentLeft from "../../../partials/content-left";
 import ContentCenter from "../../../partials/content-center";
 import CenterGrid from "../../../partials/center-grid";
 import Oval from "../../../atoms/icons/oval";
@@ -25,8 +26,8 @@ const Start = styled.section`
   }
 `;
 
-const colors = [color.green3, color.red3, color.red3, color.yellow3, color.babyblue3, color.orange3];
-const icons = ["corporation-state-information", "s-corp-tax-calculator-01", "entity-comparison-chart", "state-filling-fees", "ongoing-filling-requirements-02", "clock-691"];
+const colors = [color.orange3, color.red3, color.blue3, color.purple3, color.yellow3, color.babyblue3];
+const icons = ["bc-19", "tax-id", "entity-comparison-chart", "state-filling-fees", "ongoing-filling-requirements-02", "receive"];
 
 const StartSection = ({ className, content }) => (
   <Start className={className}>
@@ -34,19 +35,19 @@ const StartSection = ({ className, content }) => (
       <OvalSVG />
     </Oval>
     <HeadingCenter headline={content.header} headlineWidth="700" text={content.text} bottomMargin="80" />
-    <ContentCenter contentWidth="770">
+    <ContentLeft contentWidth="770">
       <Paragraph>{content.text2}</Paragraph>
-      <Paragraph>{content.text3}</Paragraph>
-    </ContentCenter>
+      <Paragraph bottomMargin="80">{content.text3}</Paragraph>
+    </ContentLeft>
     <CenterGrid columnsSM="1" columnsMD="2">
       {content.buttons.map((button, i) => (
         <BoxedButton content={button} icon={icons[i]} iconColor={colors[i]} />
       ))}
     </CenterGrid>
-    <ContentCenter contentWidth="770">
-      <Paragraph>{content.text4}</Paragraph>
-      <Paragraph>{content.text5}</Paragraph>
-    </ContentCenter>
+    <ContentLeft contentWidth="770">
+      <Paragraph topMargin="80">{content.text4}</Paragraph>
+      <Paragraph bottomMargin="0">{content.text5}</Paragraph>
+    </ContentLeft>
   </Start>
 );
 

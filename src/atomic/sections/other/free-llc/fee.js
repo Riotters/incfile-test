@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { color, gradient } from "../../../../components/styles/colors";
 import { states } from "../../../../components/states";
 import Dropdown from "../../../molecules/form/dropdown";
+import ContentLeft from "../../../partials/content-left";
 import ContentCenter from "../../../partials/content-center";
 import HeadingCenter from "../../../partials/heading-center";
 import TopImageBox from "../../../../components/top-image-box";
@@ -11,6 +11,9 @@ import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-babyblue.inline.svg";
 import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";
+import Curve from "../../../atoms/icons/curve";
+import CurveSVG from "../../../../images/curves/top-left-bottom-right-big.inline.svg";
+import { color } from "../../../atoms/styles/colors"
 
 const Fee = styled.div`
   padding-bottom: 100px;
@@ -22,9 +25,10 @@ const ImageBoxes = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 30px;
-  padding-top: 80px;
+  margin-top: 80px;
   padding-bottom: 48px;
   width: 100%;
+  position: relative;
 
   @media(min-width: 769px) {
     grid-template-columns: 1fr 1fr;
@@ -32,7 +36,8 @@ const ImageBoxes = styled.div`
   
   @media (min-width: 970px) {
     width: 970px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .box {
@@ -94,10 +99,15 @@ const FeeSection = ({ content }) => {
         <OvalSVG />
       </Oval>
       <HeadingCenter headline={content.header} headlineWidth="770" bottomMargin="80" />
-      <ContentCenter>
+      <ContentLeft contentWidth="770">
         <Paragraph>{content.text}</Paragraph>
         <Paragraph>{content.text2}</Paragraph>
+      </ContentLeft>
+      <ContentCenter contentWidth="970">
         <ImageBoxes>
+          <Curve top="-95" right="-15" color={color.purple2}>
+            <CurveSVG />
+          </Curve>
           <TopImageBox className="box box--left" image="lcsn-4343" color={color.green3}>
             <Heading size="4">{cards[0]}</Heading>
             <Dropdown className="dropdown" placeholder="Select" options={dropdownOptionsTwo} />

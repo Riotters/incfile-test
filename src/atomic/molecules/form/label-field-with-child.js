@@ -6,6 +6,10 @@ import Link from "../../atoms/links/link";
 const Wrapper = styled.div`
   margin-bottom: ${(props) => (props.bottomMargin ? `${props.bottomMargin}px` : "")};
 
+  @media (min-width: 769px){
+    margin-bottom: ${(props) => (props.bottomMarginMD ? `${props.bottomMarginMD}px` : "")};
+  }
+
   .top {
     display: flex;
     justify-content: space-between;
@@ -22,8 +26,8 @@ const Wrapper = styled.div`
   }
 `;
 
-const InputField = ({ className, children, content, htmlFor, bottomMargin, contentMarginTop}) => (
-  <Wrapper className={className} bottomMargin={bottomMargin} contentMarginTop={contentMarginTop}>
+const InputField = ({ className, children, content, htmlFor, bottomMargin, bottomMarginMD, contentMarginTop}) => (
+  <Wrapper className={className} bottomMargin={bottomMargin} bottomMarginMD={bottomMarginMD} contentMarginTop={contentMarginTop}>
       {content &&
           <div className="top">
               {content.label && <Label text={content.label} htmlFor={htmlFor} />}
