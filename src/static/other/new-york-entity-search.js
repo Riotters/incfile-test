@@ -161,18 +161,18 @@ export const faq = {
     {
       question: `What’s the Best Way to Stop My New York Business Name From Being Used by Someone Else?`,
       answer: `The easiest way to protect your New York business name is to incorporate your business in New York, generally as a Limited Liability Company (LLC) or a corporation. We can help you do that — just choose “Incorporate Now” above to get started.`,
-      //answer2: [
-      //{
-        //text: `If you want extra protection, you could consider`,
-      //},
-      //{
-        //text: `registering your New York business name as a trademark.`,
-        //url: `/`,
-      //},
-      //{
-        //text: `Note that filing a fictitious or “doing business as" (DBA) name in New York will not be sufficient to protect it.`,
-      //},
-    //],
+      text: [
+        {
+          text: `If you want extra protection, you could consider`,
+        },
+        {
+          text: `registering your New York business name as a trademark.`,
+          url: `/`,
+        },
+        {
+          text: `Note that filing a fictitious or “doing business as" (DBA) name in New York will not be sufficient to protect it.`,
+        },
+      ],
     },
     {
       question: `What Organization Registers and Manages Business Names in New York?`,
