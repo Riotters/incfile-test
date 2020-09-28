@@ -265,7 +265,7 @@ export const faq = {
       {
         question: `Can another business entity be a member of an LLC?`,
         answer: `In the majority of states, The members of an LLC can be individuals, corporations, or other LLCs. These members of the LLC can be out of state residents or even foreign nationals. Furthermore there is no limit to the amount of members that an LLC can have.`,
-      //answer2: `The flexibility of an LLC in contrast to an S Corporation is stark considering the S corporations are limited to 75 shareholders who must either be United States citizens or Lawful Permanent Residents.`
+        text: `The flexibility of an LLC in contrast to an S Corporation is stark considering the S corporations are limited to 75 shareholders who must either be United States citizens or Lawful Permanent Residents.`
       },
     ]
   }
