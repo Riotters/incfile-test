@@ -2,12 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Top from "../../../../atomic/partials/top";
+import Searchbar from "./search-bar";
 
 const Wrapper = styled.div`
     position: relative;
 `
 
-const TopSection = () => {
+const TopSection = ({ content }) => {
     return (
         <Wrapper>
             <Top imageName="mrs-bulb-question-7726"
@@ -16,10 +17,10 @@ const TopSection = () => {
                 headlineWidth="400"
                 textWidth="800"
                 contentWidth="800"
-                contentPaddingTop="0"
-            >
-                <h1>Business Name Generator</h1>
-                <p>Generate a short, brandable business name using artificial intelligence</p>
+                contentPaddingTop="0">
+                <h1>{content.header}</h1>
+                <p>{content.text}</p>
+                <Searchbar />
             </Top>
         </Wrapper>
     )

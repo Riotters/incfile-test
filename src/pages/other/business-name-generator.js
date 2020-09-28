@@ -5,12 +5,14 @@ import TopSection from '../../atomic/sections/other/business-name-generator/top'
 import UniqueSection from '../../atomic/sections/other/business-name-generator/unique';
 import WhyBrandNameSection from '../../atomic/sections/other/business-name-generator/why-brand-name';
 
+// text
+import { seo, top, whyBrandName } from '../../static/other/business-name-generator';
 
 const BusinessNameGenerator = () => (
     <Layout>
-        <SEO />
-        <TopSection />
-        <WhyBrandNameSection />
+        <SEO title={seo.title} description={seo.desc} />
+        <TopSection content={top} />
+        <WhyBrandNameSection content={whyBrandName} />
         <UniqueSection />        
     </Layout>
 );
