@@ -81,35 +81,104 @@ export const faq = {
   items: [
     {
       question: `What else should I know before I start my LLC or Corporation?`,
-      answer: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum tellus ut maximus congue. In vestibulum tristique mi, at malesuada mauris volutpat at. Sed urna purus, mattis ut eleifend id, pulvinar eu massa. Morbi eget dui mi. Suspendisse rhoncus nisi quis arcu ultricies scelerisque. Vestibulum lobortis ut urna sit amet consequat. Nunc urna leo, lobortis eget eros at, lobortis bibendum erat.`,
+      answer: [
+        {
+          text: `We’ve put together comprehensive guides on how to start an LLC or corporation in New Jersey, including information on busines formation, annual reports, registered agents, and New Jersey business taxes. See the`,
+        },
+        {
+          text: `NJ LLC`,
+          url: `/`,
+        },
+        {
+          text: `or`,
+        },
+        {
+          text: `NJ Corporation`,
+          url: `/`,
+        },
+        {
+          text: `guides for more information.`,
+        },
+      ],
     },
     {
       question: `How Do I Search for My New Jersey LLC or Corporation Business Name?`,
-      answer: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum tellus ut maximus congue. In vestibulum tristique mi, at malesuada mauris volutpat at. Sed urna purus, mattis ut eleifend id, pulvinar eu massa. Morbi eget dui mi. Suspendisse rhoncus nisi quis arcu ultricies scelerisque. Vestibulum lobortis ut urna sit amet consequat. Nunc urna leo, lobortis eget eros at, lobortis bibendum erat.`,
+      answer: `Just use the New Jersey Business Name Search Tool above and enter your proposed NJ LLC or corporation name. We’ll search the business name database of the New Jersey Division of Revenue and Enterprise Services and tell you if there are any matches.`,
     },
     {
       question: `What Are the Rules on Naming My New Jersey Business Entity?`,
-      answer: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum tellus ut maximus congue. In vestibulum tristique mi, at malesuada mauris volutpat at. Sed urna purus, mattis ut eleifend id, pulvinar eu massa. Morbi eget dui mi. Suspendisse rhoncus nisi quis arcu ultricies scelerisque. Vestibulum lobortis ut urna sit amet consequat. Nunc urna leo, lobortis eget eros at, lobortis bibendum erat.`,
+      answer: `New Jersey business entities do have to follow some general and specific naming rules. We’ve covered the main ones above.`,
     },
     {
       question: `I Want to Carry Out Business Under a Different Business Name in New Jersey — Is That Possible?`,
-      answer: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum tellus ut maximus congue. In vestibulum tristique mi, at malesuada mauris volutpat at. Sed urna purus, mattis ut eleifend id, pulvinar eu massa. Morbi eget dui mi. Suspendisse rhoncus nisi quis arcu ultricies scelerisque. Vestibulum lobortis ut urna sit amet consequat. Nunc urna leo, lobortis eget eros at, lobortis bibendum erat.`,
+      answer: [
+        {
+          text: `You can normally choose to conduct business under a different name in New Jersey. This can be known as an “assumed name”, “fictitious name,” “doing business as name” or “trade name.” We can file your`,
+        },
+        {
+          text: `NJ Fictitious Business Name`,
+          url: `/`,
+        },
+        {
+          text: `with the New Jersey Division of Revenue and Enterprise Services on your behalf.`,
+        },
+      ],
     },
     {
       question: `I Need to Change the Name of My New Jersey Business Entity — Can You Help?`,
-      answer: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum tellus ut maximus congue. In vestibulum tristique mi, at malesuada mauris volutpat at. Sed urna purus, mattis ut eleifend id, pulvinar eu massa. Morbi eget dui mi. Suspendisse rhoncus nisi quis arcu ultricies scelerisque. Vestibulum lobortis ut urna sit amet consequat. Nunc urna leo, lobortis eget eros at, lobortis bibendum erat.`,
+      answer: [
+        {
+          text: `You can change your New Jersey legal business entity name by filing an amendment to your Articles of Incorporation or Articles of Organization. We can`,
+        },
+        {
+          text: `file an amendment on your behalf,`,
+          url: `/`,
+        },
+        {
+          text: `including changing the name of your New Jersey corporation or LLC.`,
+        },
+      ],
     },
     {
       question: `What Do I Need to Think About When Deciding on a New Jersey Business Name?`,
-      answer: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum tellus ut maximus congue. In vestibulum tristique mi, at malesuada mauris volutpat at. Sed urna purus, mattis ut eleifend id, pulvinar eu massa. Morbi eget dui mi. Suspendisse rhoncus nisi quis arcu ultricies scelerisque. Vestibulum lobortis ut urna sit amet consequat. Nunc urna leo, lobortis eget eros at, lobortis bibendum erat.`,
+      answer: [
+        {
+          text: `The perfect New Jersey business name can be elusive. We have a`,
+        },
+        {
+          text: `complete guide to choosing the right NJ business name`,
+          url: `/`,
+        },
+        {
+          text: `— you'll want to choose a name that will:`,
+        },
+      ],
+      list: [
+        `Matter to business customers`,
+        `Help people remember your company`,
+        `Tell people what your business does`,
+        `Be unique among New Jersey business entities`,
+      ],
     },
     {
       question: `How Do I Protect My New Jersey Business Name?`,
-      answer: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum tellus ut maximus congue. In vestibulum tristique mi, at malesuada mauris volutpat at. Sed urna purus, mattis ut eleifend id, pulvinar eu massa. Morbi eget dui mi. Suspendisse rhoncus nisi quis arcu ultricies scelerisque. Vestibulum lobortis ut urna sit amet consequat. Nunc urna leo, lobortis eget eros at, lobortis bibendum erat.`,
+      answer: `The easiest way to protect your New Jersey business name is to incorporate your business in New Jersey, generally as a Limited Liability Company (LLC) or a corporation. We can help you do that — just choose “Incorporate Now” above to get started.`,
+      text: [
+        {
+          text: `If you want extra protection, you could consider`,
+        },
+        {
+          text: `registering your New Jersey business name as a trademark.`,
+          url: `/`,
+        },
+        {
+          text: `Note that filing a fictitious or “doing business as" (DBA) name in New Jersey will not be sufficient to protect it.`,
+        },
+      ],
     },
     {
       question: `What Organization Registers and Manages Business Names in New Jersey?`,
-      answer: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum tellus ut maximus congue. In vestibulum tristique mi, at malesuada mauris volutpat at. Sed urna purus, mattis ut eleifend id, pulvinar eu massa. Morbi eget dui mi. Suspendisse rhoncus nisi quis arcu ultricies scelerisque. Vestibulum lobortis ut urna sit amet consequat. Nunc urna leo, lobortis eget eros at, lobortis bibendum erat.`,
+      answer: `Businesses are incorporated in New Jersey via the Division of Revenue and Enterprise Services. They manage the New Jersey company register, and it is their business name database that we will search on your behalf.`,
     },
   ],
 };
