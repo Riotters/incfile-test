@@ -9,6 +9,7 @@ import IconSVG from "../../../images/icons/no-pass-sign.inline.svg";
 import IconTextColorBox from "../../molecules/text-blocks/icon-h4-text-color";
 import Oval from "../../atoms/icons/oval";
 import OvalSVG from "../../../images/ovals/top-left-transparent-blue3.inline.svg";
+import Path from "../../molecules/blocks/research-topics-path";
 
 const About = styled.section`
   position: relative;

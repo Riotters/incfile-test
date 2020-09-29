@@ -10,6 +10,7 @@ import IconListColorBox from "../../molecules/text-blocks/icon-h4-list-color";
 import Oval from "../../atoms/icons/oval";
 import OvalSVG from "../../../images/ovals/top-left-transparent-blue3.inline.svg";
 import NumericList from "../../organisms/lists/numeric-boxed-list";
+import Path from "../../molecules/blocks/research-topics-path";
 
 const About = styled.section`
   position: relative;
