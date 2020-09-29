@@ -18,6 +18,7 @@ const Wrapper = styled.div`
     row-gap: 30px;
     justify-content: center;
     grid-template-columns: 1fr;
+    position: relative;
 
     @media (min-width: 992px){
         grid-template-columns: repeat(${props => props.columns}, 1fr);

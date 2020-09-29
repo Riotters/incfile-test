@@ -23,6 +23,10 @@ import SummaryBar from "../../atomic/molecules/form/summary/summary-bar";
 import SummaryList from "../../atomic/molecules/form/summary/summary-list";
 import SummaryTextBlock from "../../atomic/molecules/form/summary/summary-text-block";
 import DateField from "../../atomic/molecules/form/date-field";
+import Label from "../../atomic/atoms/text-fields/label";
+import Checkbox from "../../atomic/atoms/controls/checkbox";
+import Radio from "../../atomic/molecules/form/radio";
+import InputFieldWrapper from "../../atomic/molecules/form/label-field-with-child";
 
 const EntityTypeOptions = [
     {value: 1, label: "one"},
@@ -50,13 +54,61 @@ const summaryList = [
     {description: "Processing Fee"},
 ]
 
+const radioDescription = [
+    {
+        radioName: "name-of-principal-radio",
+        radioId: "name-of-principal-radio-accommodations",
+        title: "Accommodations",
+        description: [
+            {
+                content: `The accommodations category includes all types of accommodations such as:`,
+                list: [
+                    "Hotels",
+                    "Motels",
+                    "Casino hotels",
+                    "Boarding houses",
+                    "Bed and breakfast inns"
+                ]
+            }
+        ]
+    },
+    {
+        radioName: "name-of-principal-radio",
+        radioId: "name-of-principal-radio-finance",
+        title: "Finance",
+        description: [
+            {
+                content: `The accommodations category includes all types of accommodations such as:`,
+                list: [
+                    "Hotels",
+                    "Motels",
+                    "Casino hotels",
+                    "Boarding houses",
+                    "Bed and breakfast inns"
+                ],
+                marginBottom: 24
+            },
+            {
+                content: `The accommodations category includes all types of accommodations such as:`,
+                list: [
+                    "Hotels",
+                    "Motels",
+                    "Casino hotels",
+                    "Boarding houses",
+                    "Bed and breakfast inns"
+                ]
+            }
+        ]
+    }
+]
+
 const EinForm = () => {
 
     const [date, setDate] = useState(new Date());
-
-    const handleDateChange = (date) => {
-        setDate(date);
-    }
+    const [firstName, setFirstName] = useState("");
+    const [lastName, setLastName] = useState("");
+    const [copyData, setCopyData] = useState(true);
+    const [radioCheck, setRadioCheck] = useState("");
 
     return (
         <Layout>
@@ -70,11 +122,11 @@ const EinForm = () => {
                     <FormSection icon={ContactIcon} title="Contact Information">
                         <FormContent>
                             <FormControl span={3}>
-                                <InputField label="First Name *" isRequired={true}/>
+                                <InputField label="First Name *" isRequired={true} value={firstName} onChange={e => setFirstName(e.target.value)}/>
                             </FormControl>
 
                             <FormControl span={3}>
-                                <InputField label="Last Name *" isRequired={true}/>
+                                <InputField label="Last Name *" isRequired={true} value={lastName} onChange={e => setLastName(e.target.value)}/>
                             </FormControl>
 
                             <FormControl span={3}>
@@ -147,10 +199,77 @@ const EinForm = () => {
                                     label="Date of Formation *"
                                     placeholder="MM/DD/YYYY"
                                     selected={date}
-                                    onChange={handleDateChange}
+                                    onChange={e => setDate(e.target.value)}
                                     isRequired
                                 />
                             </FormControl>
+                        </FormContent>
+                    </FormSection>
+
+                    <FormSection icon={ContactIcon} title="SS4 Questions">
+                        <FormContent>
+                            <FormControl span={6}>
+                                <Label
+                                    fontSize="16px"
+                                    text="Please answer these questions so that we may prepare the SS4 Form to obtain an EIN (Employer Identification Number, frequently called a Tax ID number)."/>
+                            </FormControl>
+
+                            <FormControl span={6}>
+                                <Checkbox name="copy-data" id="copy-data" checked={copyData} onClick={e =>setCopyData(!copyData)} label="(Check here to use Contact Name)"/>
+                            </FormControl>
+
+                            <FormControl span={6}>
+                                <Heading size={3}
+                                         style={{
+                                             fontSize: "16px",
+                                             lineHeight: "19px",
+                                             marginTop: "10px",
+                                             marginBottom: 0
+                                         }}>
+                                    Name Of Principal Officer Or Owner
+                                </Heading>
+                            </FormControl>
+
+                            <FormControl span={3}>
+                                <InputField label="First Name *" isRequired={true} value={copyData ? firstName : ""}/>
+                            </FormControl>
+
+                            <FormControl span={3}>
+                                <InputField label="Last Name *" isRequired={true} value={copyData ? lastName : ""}/>
+                            </FormControl>
+
+                            <FormControl span={3}>
+                                <InputField label="Social Security Number of above named person? *" isRequired={true}/>
+                            </FormControl>
+                        </FormContent>
+                    </FormSection>
+
+                    <FormSection icon={ContactIcon} title="Principal Business Activity">
+                        <FormContent>
+                            <FormControl span={6}>
+                                <Label
+                                    fontSize="16px"
+                                    text="Please choose the category that best describes your business. Click on a given category to review an expanded definition."/>
+                            </FormControl>
+
+                            <FormControl span={6}>
+                                <Heading size={3}
+                                         style={{
+                                             fontSize: "16px",
+                                             lineHeight: "19px",
+                                             marginTop: "10px",
+                                             marginBottom: 0
+                                         }}>
+                                    Name Of Principal Officer Or Owner
+                                </Heading>
+                            </FormControl>
+
+                            {radioDescription.map(item => (
+                                <FormControl span={3}>
+                                    <Radio name={item.radioName} content={item.title} description={item.description} id={item.radioId} value={1} checked={radioCheck} onClick={e => setRadioCheck(e.target.id)}/>
+                                </FormControl>
+                            ))}
+
                         </FormContent>
                     </FormSection>
 
