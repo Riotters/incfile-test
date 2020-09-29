@@ -20,7 +20,7 @@ const TopSection = ({ content }) => {
                 contentPaddingTop="0">
                 <h1>{content.header}</h1>
                 <p>{content.text}</p>
-                <Searchbar />
+                <Searchbar typeSubmit="newPage" />
             </Top>
         </Wrapper>
     )

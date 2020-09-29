@@ -5,7 +5,6 @@ const Wrapper = styled.div`
     position: relative;
     margin: ${props => (props.margin ? props.margin : 0)};
     padding: ${props => (props.padding ? props.padding : 0)};
-    width: 100%;
     ${props => props.maxWidth && `max-width: ${props.maxWidth};`}
 `
 

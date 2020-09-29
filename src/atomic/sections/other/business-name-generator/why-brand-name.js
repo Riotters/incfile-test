@@ -12,6 +12,7 @@ import OvalSVG from "../../../../images/ovals/top-left-transparent-blue3.inline.
 import { Paragraph } from '../../../atoms/typography/paragraph';
 import ShapeCurve from "../../../atoms/shapes/curve";
 import AbsoluteShapCure from '../../../elements/absolute-shape-curve-e';
+import VisibilitySensor from '../../../../components/VisibilitySensor';
 
 const Wrapper = styled.div`
     position: relative;
@@ -140,11 +141,15 @@ const WhyBrandNameSection = ({ content }) => {
                     ))}
                 </Boxes>
 
-                <TextLeftLayout>
-                    <Heading size={2}>{content.header}</Heading>
-                    <Paragraph big mixed={true}>{content.text1}</Paragraph>
-                    <Paragraph big mixed={true}>{content.text2}</Paragraph>
-                </TextLeftLayout>
+                <VisibilitySensor partialVisibility once>
+                    {({ isVisible }) => (
+                        <TextLeftLayout className={isVisible ? "slideRight enter" : "slideRight"}>
+                            <Heading size={2}>{content.header}</Heading>
+                            <Paragraph big mixed={true}>{content.text1}</Paragraph>
+                            <Paragraph big mixed={true}>{content.text2}</Paragraph>
+                        </TextLeftLayout>
+                    )}
+                </VisibilitySensor>
 
             </ContentCenter>
         </Wrapper>

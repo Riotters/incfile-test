@@ -39,7 +39,7 @@ const Wrapper = styled.div`
 `
 
 
-const CheckAvailabilityName = () => (
+const CheckAvailabilityName = ({ location }) => (
     <Layout>
         <SEO title={seo.title} description={seo.desc} />
         
@@ -69,7 +69,7 @@ const CheckAvailabilityName = () => (
                         <AbsoluteShapCure rotate={90} right="70" bottom="-25">
                             <ShapeCurve color={color.blue} />
                         </AbsoluteShapCure>
-                        <FormSection content={formCheck.form} />
+                        <FormSection content={formCheck.form} propEntityName={location.state.entityName} />
                     </RelativeElement>
                 </ContentCenter>
             </Container>

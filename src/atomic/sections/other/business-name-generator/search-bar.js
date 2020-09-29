@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { navigate } from "gatsby";
 import styled from "styled-components";
 import SearchSVG from "../../../../images/search.inline.svg";
 import { color } from "../../../atoms/styles/colors";
@@ -16,7 +17,7 @@ const Wrapper = styled.div`
   box-shadow: ${shadow.white2};
 `
 
-const Box = styled.div`
+const Box = styled.form`
   display: flex;
   align-items: center;
   height: 80px;
@@ -70,15 +71,30 @@ const SearchButton = styled.button`
     }
 `
 
-const Searchbar = ({ ...rest}) => {
+const Searchbar = ({ typeSubmit, ...rest }) => {
+    const [keyword, setKeyWord] = useState('');
+    
+    const handleForm = e => {
+        e.preventDefault();
+        
+        if (!keyword) {
+            return;
+        }
+
+        if (typeSubmit !== 'itself') {
+            navigate('/other/business-name-generator-result', { state: { keyword } });
+        }
+        return;
+    }
     return (
         <Wrapper {...rest}>
-            <Box>
+            <Box onSubmit={(e) => handleForm(e)}>
                 <Label for="search">searchbar</Label>
                 <Input
                     name="search"
                     id="search"
                     type="text"
+                    onChange={e => setKeyWord(e.target.value)}
                     placeholder="Create New Name" />
                 <SearchButton>
                     <Icon>

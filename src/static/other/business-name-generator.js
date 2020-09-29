@@ -50,13 +50,13 @@ export const formCheck = {
         },
         field2: {
           label: `Entity Type`,
-          options: [`LLC`, `Corporation`],
+          options: [`LLC`, `CCorporation`, `SCorporation`, 'Nonprofit'],
         },
         field3: {
             label: `Entity State`,
             link: {
               text: `Not sure?`,
-              url: `/`,
+              url: `/learning-center-entity/comparison-chart`,
             },
             options: [`Alabama`, `Arizona`],
           },

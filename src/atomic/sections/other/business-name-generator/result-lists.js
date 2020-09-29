@@ -1,18 +1,9 @@
 import React, {Fragment, useState} from 'react';
 import styled from 'styled-components';
-import Link from 'gatsby-link';
-import { color } from "../../../atoms/styles/colors"
-import { shadow } from "../../../atoms/styles/shadows"
-import ContentCenter from "../../../partials/content-center"
-import Image from "../../../atoms/image/image"
-import ArrowCircleOrangeSVG from "../../../../images/icons/arrow-circle-orange.inline.svg"
-import { Heading } from "../../../atoms/typography/heading"
-import Oval from "../../../atoms/icons/oval";
-import OvalSVG from "../../../../images/ovals/top-left-transparent-blue3.inline.svg";
-import { Paragraph } from '../../../atoms/typography/paragraph';
-import ShapeCurve from "../../../atoms/shapes/curve";
-import AbsoluteShapCure from '../../../elements/absolute-shape-curve-e';
+import { Link } from 'gatsby';
 
+import { shadow } from "../../../atoms/styles/shadows"
+import { Paragraph } from '../../../atoms/typography/paragraph';
 import GridTwoColsSVG from '../../../../images/icons/grid-2-cols.inline.svg';
 import GridThreeColsSVG from '../../../../images/icons/grid-3-cols.inline.svg';
 import ArrowLeft from '../../../../images/arrow-circle.inline.svg';
@@ -137,7 +128,7 @@ const arrayColor = [
     }
 ];
 
-const ResultSection = ({ content }) => {
+const ResultSection = ({ content, keyword }) => {
     const [display, setDisplay] = useState('threeCol');
 
     const handleDisplayOption = option => {
@@ -147,7 +138,7 @@ const ResultSection = ({ content }) => {
     return (
         <Wrapper>
             <Paragraph big mixed={true} style={{ textAlign: `center`, fontWeight: `bold` }} bottomMargin={30} topMargin={80}>
-            {content.results.length} business name results with keyword "apple"
+            {content.results.length} business name results with keyword "{keyword}"
             </Paragraph>
 
             <DisplayOption>
@@ -161,7 +152,7 @@ const ResultSection = ({ content }) => {
                     {content.results.map(item => (
                         <ResultItem className="result__item" colorProperies={arrayColor[Math.floor(Math.random() * arrayColor.length)]}>
                             <Paragraph>{item}</Paragraph>
-                            <Link to="/" className="result__item-btn-action">
+                            <Link state={{ entityName: item }} to="/other/check-availability-name/" className="result__item-btn-action">
                                 <span>Search Name Availability</span>
                                 <span>{item}</span>
                                 <span className="arrow">

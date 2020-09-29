@@ -1,15 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import Whitebox from "../../../atoms/boxes/white-box";
-import { color } from "../../../atoms/styles/colors";
 import { Heading } from "../../../atoms/typography/heading";
 import Label from "../../../molecules/form/label-field-with-child";
 import Input from "../../../atoms/inputs/input";
 import Dropdown from "../../../molecules/form/dropdown";
 import Button from "../../../molecules/buttons/button";
-import ArrowLink from "../../../molecules/buttons/text";
-import Curve from "../../../atoms/icons/curve";
-import CurveSVG from "../../../../images/curves/bottom-left-top-right.inline.svg";
 
 const Wrapper = styled(Whitebox)`
   display: flex;
@@ -37,14 +33,14 @@ const Grid = styled.div`
   }
 `;
 
-const CheckNameForm = ({ content }) => {
+const CheckNameForm = ({ content, propEntityName }) => {
   return (
     <Wrapper>
         <Heading size="5" bottomMargin="16">
             {content.header1}
         </Heading>
         <Label htmlFor="entity_name" content={content.field1} bottomMargin="16">
-            <Input name="entity_name" id="entity_name" />
+            <Input name="entity_name" id="entity_name" value={propEntityName} />
         </Label>
         <Grid>
             <Label htmlFor="state" content={content.field2} bottomMargin="32">

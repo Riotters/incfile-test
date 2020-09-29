@@ -38,7 +38,7 @@ const Wrapper = styled.div`
 `
 
 
-const BusinessNameGeneratorResult = () => (
+const BusinessNameGeneratorResult = ({ location }) => (
     <Layout>
         <SEO title={seo.title} description={seo.desc} />
         
@@ -60,14 +60,14 @@ const BusinessNameGeneratorResult = () => (
                 </Link>
 
                 <ContentCenter>
-                    <RelativeElement maxWidth="670px" margin="60px 0 0 0">
+                    <RelativeElement maxWidth="670px" margin="60px 0 0 0" style={{ width: `100%` }}>
                         <AbsoluteShapCure rotate={0} right="-30px" top="0">
                             <ShapeCurve color={color.orange1} />
                         </AbsoluteShapCure>
-                        <Searchbar contentWidth="auto" />
+                        <Searchbar contentWidth="auto" typeSubmit="itself" />
                     </RelativeElement>
 
-                    <ResultSection content={resultLists} />
+                    <ResultSection content={resultLists} keyword={location.state.keyword} />
 
                 </ContentCenter>
             </Container>
