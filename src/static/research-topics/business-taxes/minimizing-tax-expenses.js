@@ -2,11 +2,11 @@ export const about = {
     links: [
         {
             text: `View All Topics`,
-            url: `/`,
+            url: `/help-center/`,
         },
         {
             text: `Business Taxes`,
-            url: `/`,
+            url: `/research-topics/business-taxes`,
         },
     ],
     header: `Minimizing tax expenses`,
@@ -90,32 +90,62 @@ export const about = {
         ],
     },
     text12: `Note that some of these expenses will need to be taken as “depreciation” over multi-year periods. Speak to your accountant for details of how to show these deductions.`,
-
-    header20: `Related Articles`,
-    links2: [
+    header8: `Take Advantage of Business Tax Credits`,
+    text13: `The IRS provides incentives to businesses through tax credits. These credits do change from year to year, both in terms of availability and how much you can claim.`,
+    list7: {
+        header: `Some examples of credits include:`,
+        list: [
+            `Providing work opportunities`,
+            `Research and development`,
+            `Low-income housing`,
+            `Disabled access`,
+            `Electric vehicles`,
+            `Renewable electricity`,
+        ],
+    },
+    text14: `Tax credits are complex, so speak to a tax professional to find out what you can claim.`,
+    header9: `Understand and Write Off Bad Debts`,
+    text15: `If you have invoices that have gone unpaid, and you use accrual accounting, you can deduct the cost of those bad debts from your business earnings.`,
+    text16: [
         {
-            text: `How to Get a Seller’s Permit`,
-            url: `/`,
-        },
-        {
-            text: `Minimizing tax expenses`,
-            url: `/`,
-        },
-        {
-            text: `Which entity offers the best tax advantages?`,
-            url: `/`,
-        },
-        {
-            text: `How is an S Corporation Taxed?`,
-            url: `/`,
-        },
-        {
-            text: `Is "Nonprofit" the Same as "Tax-Exempt"`,
-            url: `/`,
-        },
-        {
-            text: `How is a C Corporation Taxed?`,
+            text: `Freelance Taxes: How Much to Budget When You’re Self-Employed`,
             url: `/`,
         },
     ],
-  }
+    header10: `Deduct Interest on Business Loans`,
+    text17: `If you take out a loan for your business, you can normally deduct any interest on your repayments as an expense against business taxes, although there are some limitations.`,
+    header11: `Don’t Forget Professional, Legal and Accounting Fees`,
+    text18: `Professional services that you use for your business are deductible. For example, if you use a bookkeeper to stay on top of business transactions, or an attorney for your contracts, you can expense those fees. `,
+    header12: `Specialist Business Insurance Is Deductible`,
+    text19: `Many businesses have extra insurance in place, whether that’s general liability, professional indemnity or something else. The premiums you pay for business insurance are tax-deductible.`,
+    header13: `Remember to Talk to Your Accountant or Tax Preparer`,
+    text20: `Every business circumstance is unique, and there may be situations where some of these deductions don’t apply, or where you could claim additional expenses. That’s why it’s always important to see a qualified account or tax professional and get their advice on your business affairs.`,
+    text21: `Incfile provides a Business Tax service that makes it easy for you to prepare and file your business taxes.`,
+    header14: `Related Articles`,
+    links2: [
+        {
+            text: `How to Get a Seller’s Permit`,
+            url: `/research-topics/business-taxes/sellers-permit`,
+        },
+        {
+            text: `Minimizing tax expenses`,
+            url: `/research-topics/business-taxes/minimizing-tax-expenses`,
+        },
+        {
+            text: `Which entity offers the best tax advantages?`,
+            url: `/research-topics/business-taxes/which-entity-offers-the-best-tax-advantages`,
+        },
+        {
+            text: `How is an S Corporation Taxed?`,
+            url: `/research-topics/business-taxes/how-is-an-s-corporation-taxed/`,
+        },
+        {
+            text: `Is “Nonprofit” the Same as “Tax-Exempt”?`,
+            url: `/research-topics/business-taxes/is-nonprofit-the-same-as-tax-exempt/`,
+        },
+        {
+            text: `How is a C Corporation Taxed?`,
+            url: `/research-topics/business-taxes/how-is-a-c-corporation-taxed/`,
+        },
+      ],
+    }

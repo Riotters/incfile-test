@@ -2,11 +2,11 @@ export const about = {
   links: [
       {
           text: `View All Topics`,
-          url: `/`,
+          url: `/help-center`,
       },
       {
           text: `Business Taxes`,
-          url: `/`,
+          url: `/research-topics/business-taxes`,
       },
   ],
   header: 
