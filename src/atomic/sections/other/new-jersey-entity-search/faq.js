@@ -19,7 +19,7 @@ const Faq = styled.section`
 
 const FaqSection = ({ className, content }) => (
   <Faq className={className}>
-    <Oval className="oval" height="570" width="570" top="10" left="0">
+    <Oval className="oval" height="570" width="570" top="25" left="0">
       <OvalSVG />
     </Oval>
     <HeadingCenter headline={content.header} headlineWidth="640" />
