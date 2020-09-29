@@ -28,6 +28,7 @@ const DisplayOption = styled.div`
     justify-content: flex-end;
     gap: 15px;
     margin-bottom: 32px;
+    font-family: 'Avenir', san-serif;
 
     .display_option_icon{
         width: 18px;
