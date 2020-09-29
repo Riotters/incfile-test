@@ -76,11 +76,11 @@ const Wrapper = styled.div`
   }
 `;
 
-const IconTextColorBox = ({ className, color, content, bottomMargin, rounded, curve, ...rest }) => {
+const IconTextColorBox = ({ className, color, content, bottomMargin, rounded, curve, curveColor, ...rest }) => {
   return (
     <Wrapper className={className} rounded={rounded} bottomMargin={bottomMargin} color={color} {...rest}>
       {curve && (
-        <Curve top="-15" right="-15" color={dotColor(color)}>
+        <Curve top="-15" right="-15" color={curveColor ? curveColor : dotColor(color)}>
           <CurveSVG />
         </Curve>
       )}
