@@ -41,6 +41,8 @@ const AboutSection = ({ className, content }) => (
       <Heading size={3} bottomMargin="48">
         {content.header}
       </Heading>
+      <NumericList content={content.list} bottomMargin="24" />
+      <IconListColorBox content={content.list3} color={color.blue3} rounded bottomMargin="24" />
       <IconTextColorBox content={content.box} Icon={IconSVG} bottomMargin="48"/>
       <Paragraph big bottomMargin="40">
         {content.text}

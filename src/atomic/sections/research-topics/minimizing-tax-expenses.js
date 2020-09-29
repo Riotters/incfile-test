@@ -40,11 +40,14 @@ const AboutSection = ({ className, content }) => (
       <Heading size={3} bottomMargin="48">
         {content.header}
       </Heading>
+      <Heading size={3} bottomMargin="48">
+        {content.header2}
+      </Heading>
       <Paragraph big bottomMargin="40">
         {content.text}
       </Paragraph>
       <Heading size={4} bottomMargin="24">
-        {content.header2}
+        {content.header3}
       </Heading>
       <Paragraph big bottomMargin="40">
         {content.text2}
@@ -58,6 +61,46 @@ const AboutSection = ({ className, content }) => (
       </Paragraph>
       <NumericList content={content.list2} bottomMargin="24" />
       <IconListColorBox content={content.list3} color={color.blue3} rounded bottomMargin="24" />
+      <Paragraph big bottomMargin="40">
+        {content.text5}
+      </Paragraph>
+      <Heading size={4} bottomMargin="24">
+        {content.header4}
+      </Heading>
+      <IconListColorBox content={content.list4} color={color.blue3} rounded bottomMargin="24" />
+      <Paragraph big bottomMargin="40">
+        {content.text6}
+      </Paragraph>
+      <Paragraph big bottomMargin="40">
+        {content.text7}
+      </Paragraph>
+      <Heading size={4} bottomMargin="24">
+        {content.header5}
+      </Heading>
+      <IconListColorBox content={content.list5} color={color.blue3} rounded bottomMargin="24" />
+      <Heading size={4} bottomMargin="24">
+        {content.header6}
+      </Heading>
+      <Paragraph big bottomMargin="40">
+        {content.text8}
+      </Paragraph>
+      <Paragraph big bottomMargin="40">
+        {content.text9}
+      </Paragraph>
+      <Paragraph big bottomMargin="40">
+        {content.text10}
+      </Paragraph>
+      <Heading size={4} bottomMargin="24">
+        {content.header7}
+      </Heading>
+      <Paragraph big bottomMargin="40">
+        {content.text11}
+      </Paragraph>
+      <IconListColorBox content={content.list6} color={color.blue3} rounded bottomMargin="24" />
+      <Paragraph big bottomMargin="40">
+        {content.text12}
+      </Paragraph>
+
       <Heading size={3} bottomMargin="48">
         {content.header20}
       </Heading>
