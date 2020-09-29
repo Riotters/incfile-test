@@ -5,7 +5,7 @@ export const about = {
           url: `/`,
       },
       {
-          text: `General`,
+          text: `Business Taxes`,
           url: `/`,
       },
   ],
