@@ -123,8 +123,8 @@ const IndexPage = () => (
 
         <h2>Research Topics</h2>
         <Link to="/research-topics/business-taxes">Business taxes</Link>
-        <Link to="/research-topics/is-nonprofit-the-same-as-tax-exempt">Is nonprofit the same as tax exempt?</Link>
-        <Link to="/research-topics/minimizing-tax-expenses">Minimizing tax expenses</Link>
+        <Link to="/research-topics/business-taxes/is-nonprofit-the-same-as-tax-exempt">Is nonprofit the same as tax exempt?</Link>
+        <Link to="/research-topics/business-taxes/minimizing-tax-expenses">Minimizing tax expenses</Link>
 
         <h2>Blog</h2>
         <Link to="/blog">Blog (no API)</Link>

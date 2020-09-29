@@ -23,12 +23,9 @@ const AboutSection = ({ className, content }) => (
     </Oval>
     <ImageContent image="web-address-search">
       <Path content={content.links} />
-      <Heading size={3} bottomMargin="0">
+      <Heading size={3} bottomMargin="24">
         {content.header}
       </Heading>
-      <Paragraph big bottomMargin="40">
-        {content.text}
-      </Paragraph>
       {content.links2.map(link => (
         <ArrowLink content={link} />
       ))}
