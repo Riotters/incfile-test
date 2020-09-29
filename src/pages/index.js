@@ -116,7 +116,7 @@ const IndexPage = () => (
         <Link to="/other/how-it-works">How It Works (WIP)</Link>
         <Link to="/other/free-llc">Free LLC (WIP)</Link>
         <Link to="/other/incfile-reviews/">Customer Service Reviews</Link>
-        <Link to="/other/arizona-publication-newspaper-list">Arizona Publication Newspaper List (WIP)</Link>
+        <Link to="/other/arizona-publication-newspaper-list">Arizona Publication Newspaper List</Link>
         <Link to="/other/after-forming-llc">After Forming LLC</Link>
         <Link to="/404">404</Link>
         <Link to="/503">503</Link>
