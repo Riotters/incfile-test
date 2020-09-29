@@ -6,9 +6,10 @@ import { Paragraph } from "../../../atoms/typography/paragraph";
 import ArrowLink from "../../../molecules/buttons/text";
 import ImageContent from "../../../partials/left-image-right-content";
 import IconSVG from "../../../../images/icons/no-pass-sign.inline.svg";
-import IconTextColorBox from "../../../molecules/text-blocks/icon-h4-text-color";
+import IconListColorBox from "../../../molecules/text-blocks/icon-h4-text-color";
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-blue3.inline.svg";
+import NumericList from "../../../organisms/lists/numeric-boxed-list";
 import Path from "../../../molecules/blocks/research-topics-path";
 
 const About = styled.section`
@@ -26,9 +27,11 @@ const AboutSection = ({ className, content }) => (
       <Heading size={3} bottomMargin="32">
         {content.header}
       </Heading>
-      <IconTextColorBox content={content.box} Icon={IconSVG} rounded curve curveColor={color.orange2} bottomMargin="48"/>
-      <Heading size={4} bottomMargin="24">
+      <Heading size={3} bottomMargin="32">
         {content.header2}
+      </Heading>
+      <Heading size={4} bottomMargin="32">
+        {content.header20}
       </Heading>
       {content.links2.map(link => (
         <ArrowLink content={link} />
