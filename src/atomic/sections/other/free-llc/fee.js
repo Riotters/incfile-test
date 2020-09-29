@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { states } from "../../../../components/states";
+//import { states } from "../../../../components/states";
+import { states } from "../../../../static/states";
 import Dropdown from "../../../molecules/form/dropdown";
 import ContentLeft from "../../../partials/content-left";
 import ContentCenter from "../../../partials/content-center";
@@ -14,6 +15,7 @@ import { Paragraph } from "../../../atoms/typography/paragraph";
 import Curve from "../../../atoms/icons/curve";
 import CurveSVG from "../../../../images/curves/top-left-bottom-right-big.inline.svg";
 import { color } from "../../../atoms/styles/colors"
+import { entities } from "../../../../static/entities";
 
 const Fee = styled.div`
   padding-bottom: 100px;
@@ -87,9 +89,6 @@ const ImageBoxes = styled.div`
       margin: 0 auto;
 `;
 
-const dropdownOptions = states.state.map((state) => state.name);
-const dropdownOptionsTwo = ["Option 1", "Option 2", "Option 3"];
-
 const FeeSection = ({ content }) => {
   const cards = content.cards;
 
@@ -110,11 +109,11 @@ const FeeSection = ({ content }) => {
           </Curve>
           <TopImageBox className="box box--left" image="lcsn-4343" color={color.green3}>
             <Heading size="4">{cards[0]}</Heading>
-            <Dropdown className="dropdown" placeholder="Select" options={dropdownOptionsTwo} />
+            <Dropdown className="dropdown" placeholder="Select" options={entities.map((entity) => entity)} />
           </TopImageBox>
           <TopImageBox className="box box--right" image="your-state" color={color.blue3}>
             <Heading size="4">{cards[1]}</Heading>
-            <Dropdown className="dropdown" placeholder="Select" options={dropdownOptions} />
+            <Dropdown className="dropdown" placeholder="Select" options={states.map((state) => state.name)} />
           </TopImageBox>
         </ImageBoxes>
         <Button content={content.button} theme="primary56" arrow />

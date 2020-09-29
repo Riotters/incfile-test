@@ -215,4 +215,4 @@ export const states = [
         name: "Wyoming",
         url: "https://www.wyomingbusiness.org/content/licensing-and-permitting"
     },
-],
+]

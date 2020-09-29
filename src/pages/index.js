@@ -114,12 +114,18 @@ const IndexPage = () => (
         <Link to="/other/new-jersey-entity-search">New Jersey Entity Search</Link>
         <Link to="/other/delaware-entity-search">Daleware Entity Search</Link>
         <Link to="/other/how-it-works">How It Works (WIP)</Link>
-        <Link to="/other/free-llc">Free LLC (WIP)</Link>
+        <Link to="/other/free-llc">Free LLC</Link>
         <Link to="/other/incfile-reviews/">Customer Service Reviews</Link>
-        <Link to="/other/arizona-publication-newspaper-list">Arizona Publication Newspaper List (WIP)</Link>
+        <Link to="/other/arizona-publication-newspaper-list">Arizona Publication Newspaper List</Link>
         <Link to="/other/after-forming-llc">After Forming LLC</Link>
         <Link to="/404">404</Link>
         <Link to="/503">503</Link>
+
+        <h2>Research Topics</h2>
+        <Link to="/research-topics/business-taxes">Business taxes</Link>
+        <Link to="/research-topics/business-taxes/is-nonprofit-the-same-as-tax-exempt">Is nonprofit the same as tax exempt?</Link>
+        <Link to="/research-topics/business-taxes/minimizing-tax-expenses">Minimizing tax expenses</Link>
+        <Link to="/research-topics/business-taxes/sellers-permit">How to Get a Seller's Permit</Link>
 
         <h2>Blog</h2>
         <Link to="/blog">Blog (no API)</Link>

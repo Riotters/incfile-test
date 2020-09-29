@@ -27,7 +27,7 @@ const Start = styled.section`
 `;
 
 const colors = [color.orange3, color.red3, color.blue3, color.purple3, color.yellow3, color.babyblue3];
-const icons = ["bc-19", "tax-id", "entity-comparison-chart", "state-filling-fees", "ongoing-filling-requirements-02", "receive"];
+const icons = ["fictitious-business-name-7188", "tax-id", "trademark", "business-licence-search-4730", "certificate-of-good-standing-6366", "receive"];
 
 const StartSection = ({ className, content }) => (
   <Start className={className}>
