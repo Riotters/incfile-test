@@ -47,14 +47,14 @@ const AboutSection = ({ className, content }) => (
         {content.text4}
       </Paragraph>
       <NumericList content={content.list2} bottomMargin="48" />
-      <IconListColorBox content={content.list3} color={color.babyblue3} rounded curve bottomMargin="16" />
+      <IconListColorBox content={content.list3} color={color.orange3} rounded curve curveColor={color.babyblue2} bottomMargin="16" />
       <Paragraph big bottomMargin="48">
         {content.text5}
       </Paragraph>
       <Heading size={4} bottomMargin="24">
         {content.header4}
       </Heading>
-      <IconListColorBox content={content.list4} color={color.babyblue3} rounded bottomMargin="32" />
+      <IconListColorBox content={content.list4} color={color.yellow3} rounded bottomMargin="32" />
       <Paragraph big bottomMargin="16">
         {content.text6}
       </Paragraph>
@@ -67,7 +67,7 @@ const AboutSection = ({ className, content }) => (
       <Paragraph big bottomMargin="24">
         {content.text8}
       </Paragraph>
-      <IconListColorBox content={content.list5} color={color.orange3} rounded bottomMargin="48" />
+      <IconListColorBox content={content.list5} color={color.green3} rounded curve curveColor={color.orange2} bottomMargin="48" />
       <Heading size={4} bottomMargin="24">
         {content.header6}
       </Heading>
@@ -86,7 +86,7 @@ const AboutSection = ({ className, content }) => (
       <Paragraph big bottomMargin="24">
         {content.text12}
       </Paragraph>
-      <IconListColorBox content={content.list6} color={color.babyblue3} rounded bottomMargin="32" />
+      <IconListColorBox content={content.list6} color={color.purple3} rounded bottomMargin="32" />
       <Paragraph big bottomMargin="48">
         {content.text13}
       </Paragraph>
@@ -96,7 +96,7 @@ const AboutSection = ({ className, content }) => (
       <Paragraph big bottomMargin="24">
         {content.text14}
       </Paragraph>
-      <IconListColorBox content={content.list7} color={color.babyblue3} rounded bottomMargin="24" />
+      <IconListColorBox content={content.list7} color={color.babyblue3} rounded curve curveColor={color.green2} bottomMargin="24" />
       <Paragraph big bottomMargin="48">
         {content.text15}
       </Paragraph>
