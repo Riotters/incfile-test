@@ -17,27 +17,13 @@ const About = styled.section`
   padding-bottom: 104px;
 `;
 
-const LinksBox = styled.div`
-  display: flex;
-
-  a {
-    &:not(:first-child) {
-      margin-left: 16px;
-    }
-  }
-`;
-
 const AboutSection = ({ className, content }) => (
   <About className={className}>
     <Oval className="oval" height="570" width="570" y="-40">
       <OvalSVG />
     </Oval>
     <ImageContent image="web-address-search">
-      <LinksBox>
-        {content.links.map((link) => (
-          <ArrowLink content={link} />
-        ))}
-      </LinksBox>
+      <Path content={content.links} />
       <Heading size={3} bottomMargin="48">
         {content.header}
       </Heading>
