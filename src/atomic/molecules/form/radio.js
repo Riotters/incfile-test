@@ -1,9 +1,8 @@
-import React, {useState, useEffect, createRef} from "react";
+import React, {createRef, useEffect} from "react";
 import styled from "styled-components"
-import { color } from "../../atoms/styles/colors"
+import {color} from "../../atoms/styles/colors"
 import {Paragraph} from "../../atoms/typography/paragraph";
 import parse from "html-react-parser";
-import {Link} from "gatsby";
 
 const Wrapper = styled.div`
     display: flex;
@@ -81,71 +80,87 @@ const AbsoluteWrapper = styled.div`
         border-left: 1px solid #fd8550;
         top: -11px;
     }
+    
+    ul{
+        margin-left: 28px;
+        margin-top: 12px;
+    }
 `;
 
-const Radio = ({ className, content, name, id, checked, value, description, onClick}) => {
+const Radio = ({className, content, name, id, checked, value, description, onClick}) => {
 
     const radioRef = createRef();
 
     useEffect(() => {
-        if(description && checked === id) {
+        if (checked === id) {
             const targetElement = document.getElementById("descriptionInsideRadio-" + id);
             const closestWrapper = targetElement.closest("." + Wrapper.styledComponentId);
             const parentElement = targetElement.closest(`div[class^="form-content__Wrapper-"]`);
             const parentStyle = getComputedStyle(parentElement);
+            const currentArrow = targetElement.querySelector(`[class="arrowInsideRadioButton"]`);
             const allRadioWrapper = parentElement.querySelectorAll(`[class^="radio__Wrapper-"]`);
             const allRadioDescriptionWrapper = parentElement.querySelectorAll(`[id^="descriptionInsideRadio-"]`);
-            const currentArrow = targetElement.querySelector(`[class="arrowInsideRadioButton"]`);
+
 
             handleTabs();
             window.addEventListener('resize', handleTabs);
 
-            function handleTabs(){
-                for(let i = 0; i < allRadioWrapper.length; i++){
+            function handleTabs() {
+                hideAllElements();
+
+                if (description) {
+                    currentArrow.style.left = (closestWrapper.offsetLeft + (closestWrapper.offsetWidth / 3)) + "px"
+                    targetElement.style.top = (closestWrapper.offsetTop + closestWrapper.offsetHeight + 20) + "px";
+                    targetElement.style.left = parseInt(parentStyle.paddingLeft) + "px";
+                    targetElement.style.visibility = "visible";
+                    targetElement.style.width = (parentElement.offsetWidth - parseInt(parentStyle.paddingLeft) - parseInt(parentStyle.paddingRight)) + "px";
+                    closestWrapper.style.marginBottom = targetElement.offsetHeight + 20 + "px";
+                }
+            }
+
+            function hideAllElements() {
+                for (let i = 0; i < allRadioWrapper.length; i++) {
                     allRadioWrapper[i].style.marginBottom = 0;
                 }
 
-                for(let i = 0; i < allRadioDescriptionWrapper.length; i++){
+                for (let i = 0; i < allRadioDescriptionWrapper.length; i++) {
                     allRadioDescriptionWrapper[i].style.visibility = "hidden";
                 }
-
-                currentArrow.style.left = (closestWrapper.offsetLeft + (closestWrapper.offsetWidth/3)) + "px"
-                targetElement.style.top = (closestWrapper.offsetTop + closestWrapper.offsetHeight + 20) + "px";
-                targetElement.style.left = parseInt(parentStyle.paddingLeft) + "px";
-                targetElement.style.visibility = "visible";
-                targetElement.style.width = (parentElement.offsetWidth - parseInt(parentStyle.paddingLeft) - parseInt(parentStyle.paddingRight)) + "px";
-                closestWrapper.style.marginBottom = targetElement.offsetHeight + 20 + "px";
             }
-
         }
     });
 
     return (
         <Wrapper className={className}>
-            <Input id={id} type="radio" name={name} checked={(onClick) ? checked === id : checked} value={value} onClick={onClick} ref={radioRef}/>
-            <Checkmark />
+            <Input id={id} type="radio" name={name} checked={(onClick) ? checked === id : checked} value={value}
+                   onClick={onClick} ref={radioRef}/>
+            <Checkmark/>
             {content && (
                 <Text>{content}</Text>
             )}
-            {description &&
-                <AbsoluteWrapper id={"descriptionInsideRadio-" + id}>
+
+            <AbsoluteWrapper id={"descriptionInsideRadio-" + id}>
+                {description &&
+                <>
                     <span className="arrowInsideRadioButton"/>
                     {description.map((el) => (
                         <div style={{marginBottom: (el.marginBottom ?? 0)}}>
                             {el.content &&
-                                <Paragraph bottomMargin={0}>{el.content}</Paragraph>
+                            <Paragraph bottomMargin={0}>{el.content}</Paragraph>
                             }
                             {el.list &&
-                                <ul>
-                                    {el.list.map((listitem) => (
-                                        <li>{parse(listitem)}</li>
-                                    ))}
-                                </ul>
+                            <ul>
+                                {el.list.map((listitem) => (
+                                    <li>{parse(listitem)}</li>
+                                ))}
+                            </ul>
                             }
                         </div>
                     ))}
-                </AbsoluteWrapper>
-            }
+                </>
+                }
+            </AbsoluteWrapper>
+
         </Wrapper>
     )
 }

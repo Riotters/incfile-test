@@ -54,54 +54,6 @@ const summaryList = [
     {description: "Processing Fee"},
 ]
 
-const radioDescription = [
-    {
-        radioName: "name-of-principal-radio",
-        radioId: "name-of-principal-radio-accommodations",
-        title: "Accommodations",
-        description: [
-            {
-                content: `The accommodations category includes all types of accommodations such as:`,
-                list: [
-                    "Hotels",
-                    "Motels",
-                    "Casino hotels",
-                    "Boarding houses",
-                    "Bed and breakfast inns"
-                ]
-            }
-        ]
-    },
-    {
-        radioName: "name-of-principal-radio",
-        radioId: "name-of-principal-radio-finance",
-        title: "Finance",
-        description: [
-            {
-                content: `The accommodations category includes all types of accommodations such as:`,
-                list: [
-                    "Hotels",
-                    "Motels",
-                    "Casino hotels",
-                    "Boarding houses",
-                    "Bed and breakfast inns"
-                ],
-                marginBottom: 24
-            },
-            {
-                content: `The accommodations category includes all types of accommodations such as:`,
-                list: [
-                    "Hotels",
-                    "Motels",
-                    "Casino hotels",
-                    "Boarding houses",
-                    "Bed and breakfast inns"
-                ]
-            }
-        ]
-    }
-]
-
 const EinForm = () => {
 
     const [date, setDate] = useState(new Date());
@@ -266,7 +218,7 @@ const EinForm = () => {
 
                             {radioDescription.map(item => (
                                 <FormControl span={3}>
-                                    <Radio name={item.radioName} content={item.title} description={item.description} id={item.radioId} value={1} checked={radioCheck} onClick={e => setRadioCheck(e.target.id)}/>
+                                    <Radio name={item.radioName} content={item.title} description={item.description} id={item.radioId} value={item.value} checked={radioCheck} onClick={e => setRadioCheck(e.target.id)}/>
                                 </FormControl>
                             ))}
 
@@ -299,5 +251,272 @@ const EinForm = () => {
         </Layout>
     )
 }
+
+const radioDescription = [
+    {
+        radioName: "name-of-principal-radio",
+        radioId: "name-of-principal-radio-accommodations",
+        title: "Accommodations",
+        description: [
+            {
+                content: `The accommodations category includes all types of accommodations such as:`,
+                list: [
+                    "Hotels",
+                    "Motels",
+                    "Casino hotels",
+                    "Boarding houses",
+                    "Bed and breakfast inns"
+                ]
+            }
+        ]
+    },
+    {
+        radioName: "name-of-principal-radio",
+        radioId: "name-of-principal-radio-finance",
+        title: "Finance",
+        description: [
+            {
+                content: `The finance category includes establishments engaged in financial transactions involving the creation, liquidation, or change of ownership of financial assets. Examples include companies involved in:`,
+                list: [
+                    "Banking",
+                    "Sales financing",
+                    "Issuance of credit cards."
+                ],
+                marginBottom: 24
+            },
+            {
+                content: `Also included are:`,
+                list: [
+                    "Mortgage companies and mortgage brokers",
+                    "Securities brokers",
+                    "Firms offering investment advice",
+                    "Firms offering trust administration",
+                    "Funds and trusts set up for the purpose of collecting and distributing money."
+                ]
+            }
+        ]
+    },
+    {
+        radioName: "name-of-principal-radio",
+        radioId: "name-of-principal-radio-health-care",
+        title: "Health Care",
+        description: [
+            {
+                content: `The health care category includes:`,
+                list: [
+                    "Doctors",
+                    "Mental health specialists",
+                    "Hospitals",
+                    "Outpatient care centers",
+                    "Residential care facilities",
+                    "Mental health and substance abuse treatment centers."
+                ]
+            }
+        ]
+    },
+    {
+        radioName: "name-of-principal-radio",
+        radioId: "name-of-principal-radio-manufacturing",
+        title: "Manufacturing",
+        value: "manufacturing",
+        description: [
+            {
+                content: `The manufacturing category covers businesses engaged in the mechanical, physical, or chemical transformation of materials, substances, or components into any type of new product.`,
+                marginBottom: 24
+            },
+            {
+                content: `Examples include:`,
+                list: [
+                    "Contractors who manufacture products for others",
+                    "Candy stores that manufacture candy on the premises",
+                    "Bakeries that bake or prepare their products on the premises."
+                ],
+                marginBottom: 24
+            },
+        ]
+    },
+    {
+        radioName: "name-of-principal-radio",
+        radioId: "name-of-principal-radio-rental-leasing",
+        title: "Rental & Leasing",
+        value: "rental",
+        description: [
+            {
+                content: `The rental and leasing category includes the rental and leasing of:`,
+                list: [
+                    "Automobiles",
+                    "Consumer goods (videos, formal wear)",
+                    "Commercial goods (aircraft, office machinery)",
+                    "Industrial goods (construction equipment, tractors) and any other type of equipment",
+                    "Mini storage units."
+                ],
+                marginBottom: 24
+            },
+            {
+                content: `Any type of general rental center is included in this category. However, the rental and leasing of property should be included in the Real Estate category. Real Estate Investment Trusts (REITs) should be included in the Finance category.`
+            },
+        ]
+    },
+    {
+        radioName: "name-of-principal-radio",
+        radioId: "name-of-principal-radio-social-assistance",
+        title: "Social Assistance",
+        value: "social-assistance",
+        description: [
+            {
+                content: `The social assistance category includes:`,
+                list: [
+                    "Those providing social assistance services for children and youth",
+                    "Those providing services for the elderly and disabled",
+                    "Community food, housing, and relief services",
+                    "Child day care centers."
+                ]
+            }
+        ]
+    },
+    {
+        radioName: "name-of-principal-radio",
+        radioId: "name-of-principal-radio-warehousing",
+        title: "Warehousing",
+        value: "warehousing",
+        description: [
+            {
+                content: `The warehousing category includes all industries that:`
+            },
+            {
+                content: `Operate warehousing or storage facilities for general merchandise, refrigerated goods, or other warehouse products Provide facilities to store goods, but do not sell the goods they handle.`
+            }
+        ]
+    },
+    {
+        radioName: "name-of-principal-radio",
+        radioId: "name-of-principal-radio-construction",
+        title: "Construction",
+        value: "construction",
+        description: [
+            {
+                content: `The construction category includes the building of:`,
+                list: [
+                    `Residential structures (houses, apartments)`,
+                    `Industrial structures (factories, mills)`,
+                    `Commercial and institutional structures (airports, malls).`,
+                    `It also includes additions, alterations, maintenance, and repair of these structures.`
+                ],
+                marginBottom: 24
+            },
+            {
+                content: `The Construction category also includes specialty trade and remodeling contractors, including those involved in:`,
+                list: [
+                    `Heavy construction (road, utility lines)`,
+                    `Land subdivision`,
+                    `Site preparation activity.`
+                ]
+            }
+        ]
+    },
+    {
+        radioName: "name-of-principal-radio",
+        radioId: "name-of-principal-radio-food-service",
+        title: "Food Service",
+        value: "food-service",
+        description: [
+            {
+                content: `The food services category includes all types of food services such as:`,
+                list: [
+                    `Restaurants`,
+                    `Fast-food restaurants`,
+                    `Delis`,
+                    `Ice cream shops`,
+                    `Bars`,
+                    `Coffee shops`,
+                    `Mobile food services and caterers.`
+                ]
+            }
+        ]
+    },
+    {
+        radioName: "name-of-principal-radio",
+        radioId: "name-of-principal-radio-insurance",
+        title: "Insurance",
+        value: "insurance",
+        description: [
+            {
+                content: `The insurance category includes insurance companies and brokers.`
+            }
+        ]
+    },
+    {
+        radioName: "name-of-principal-radio",
+        radioId: "name-of-principal-radio-real-estate",
+        title: "Real Estate",
+        value: "real-estate",
+        description: [
+            {
+                content: `The real estate category covers those engaged in the rental and leasing of all types of real estate, such as commercial, residential, and industrial properties.`
+            },
+            {
+                content: `Also included are:`,
+                list: [
+                    `Real estate agents who rent or sell property for others`,
+                    `Property managers`,
+                    `Real estate listing and appraisal offices.`
+                ]
+            }
+        ]
+    },
+    {
+        radioName: "name-of-principal-radio",
+        radioId: "name-of-principal-radio-retail",
+        title: "Retail",
+        value: "retail",
+        description: [
+            {
+                content: `The retail category includes any type of business selling items directly to the general public. The sale of these items can be done from a storefront, over the internet, by direct sales (catalogue, mail-order), or door-to-door. Also included are individuals who sell goods on internet auction sites.`
+            },
+        ]
+    },
+    {
+        radioName: "name-of-principal-radio",
+        radioId: "name-of-principal-radio-transportation",
+        title: "Transportation",
+        value: "transportation",
+        description: [
+            {
+                content: `The transportation category includes all industries that specialize in moving passengers or any type of cargo from one location to another. All modes of transportation are found here, such as air, rail, water, trucking, and passenger transportation. Also included are support activities for transportation (motor vehicle towing services, port and harbor operations); and those that provide courier, messenger, and delivery services.`
+            },
+        ]
+    },
+    {
+        radioName: "name-of-principal-radio",
+        radioId: "name-of-principal-radio-wholesale",
+        title: "Wholesale",
+        value: "wholesale",
+        description: [
+            {
+                content: `The wholesale category includes those that sell or arrange the purchase or sale of:`,
+                list: [
+                    `Goods for resale`,
+                    `Capital or durable non-consumer goods`,
+                    `Raw and intermediate materials and supplies used in production.`,
+                    `These businesses are typically known as distributors, jobbers, importers, and exporters.`
+                ],
+                marginBottom: 24
+            },
+            {
+                content: `Also included are:`,
+                list: [
+                    `Wholesale agents and brokers that distribute or arrange for the distribution of any type of goods for a commission or fee Manufacturers' sales representatives`,
+                    `Business-to-business electronic markets.`
+                ]
+            }
+        ]
+    },
+    {
+        radioName: "name-of-principal-radio",
+        radioId: "name-of-principal-radio-other",
+        title: "Other",
+        value: "other"
+    },
+]
 
 export default EinForm;
