@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { navigate } from "gatsby";
 import styled from "styled-components";
 import SearchSVG from "../../../../images/search.inline.svg";
@@ -73,11 +73,13 @@ const SearchButton = styled.button`
 
 const Searchbar = ({ typeSubmit, ...rest }) => {
     const [keyword, setKeyWord] = useState('');
-    
+    const searchInput = useRef(null);
+
     const handleForm = e => {
         e.preventDefault();
         
         if (!keyword) {
+            searchInput.current.focus();
             return;
         }
 
@@ -94,6 +96,7 @@ const Searchbar = ({ typeSubmit, ...rest }) => {
                     name="search"
                     id="search"
                     type="text"
+                    ref={searchInput}
                     onChange={e => setKeyWord(e.target.value)}
                     placeholder="Create New Name" />
                 <SearchButton>

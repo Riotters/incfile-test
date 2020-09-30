@@ -149,8 +149,8 @@ const ResultSection = ({ content, keyword }) => {
 
             <Grid display={display}>
                 <Fragment>
-                    {content.results.map(item => (
-                        <ResultItem className="result__item" colorProperies={arrayColor[Math.floor(Math.random() * arrayColor.length)]}>
+                    {content.results.map((item, index) => (
+                        <ResultItem key={index} className="result__item" colorProperies={arrayColor[Math.floor(Math.random() * arrayColor.length)]}>
                             <Paragraph>{item}</Paragraph>
                             <Link state={{ entityName: item }} to="/other/check-availability-name/" className="result__item-btn-action">
                                 <span>Search Name Availability</span>
