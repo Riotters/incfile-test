@@ -62,6 +62,7 @@ const IndexPage = () => (
         <Link to="/forms/s-corp-election-form">S Corporation Tax Election with Form 2553</Link>
         <Link to="/forms/order-business-license">Business License Research Package</Link>
         <Link to="/forms/ra-form">Registered Agent Service</Link>
+        <Link to="/forms/ein-form">Federal Employer Identification Number (EIN) / Tax ID Number</Link>
 
         <h2>Manage Your Company</h2>
         <Link to="/manage-your-company">Manage your company</Link>
