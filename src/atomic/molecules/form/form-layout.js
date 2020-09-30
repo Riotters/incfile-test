@@ -3,10 +3,10 @@ import FormPageTitle from "./form-page-title";
 import Container from "../../container";
 import styled from "styled-components";
 
-const FormLayout = ({children, formTitle}) => (
+const FormLayout = ({children, formTitle, hasInfoBox, infoBoxText}) => (
     <Wrapper>
         <Container>
-            <FormPageTitle title={formTitle}/>
+            <FormPageTitle title={formTitle} hasInfoBox={hasInfoBox} infoBoxText={infoBoxText}/>
         </Container>
 
         <Container>

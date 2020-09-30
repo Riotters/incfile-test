@@ -62,6 +62,7 @@ const IndexPage = () => (
         <Link to="/forms/s-corp-election-form">S Corporation Tax Election with Form 2553</Link>
         <Link to="/forms/order-business-license">Business License Research Package</Link>
         <Link to="/forms/ra-form">Registered Agent Service</Link>
+        <Link to="/forms/ein-form">Federal Employer Identification Number (EIN) / Tax ID Number</Link>
 
         <h2>Manage Your Company</h2>
         <Link to="/manage-your-company">Manage your company</Link>
@@ -78,7 +79,7 @@ const IndexPage = () => (
         <Link to="/manage-your-company/corporate-llc-kit">Corporate LLC Kit</Link>
         <Link to="/manage-your-company/filling-business-taxes">Filling Business Taxes</Link>
         <Link to="/manage-your-company/fictitious-business">Fictitious Business</Link>
-        
+
         <h2>Review Entity Type</h2>
         <Link to="/review-entity-type/nonprofit">Nonprofit (WIP)</Link>
         <Link to="/review-entity-type/c-corporation">C Corporation (no details)</Link>
@@ -107,8 +108,8 @@ const IndexPage = () => (
         <Link to="/other/form-an-llc">Form An LLC (WIP)</Link>
         <Link to="/other/form-your-corporation">Form Your Corporation</Link>
         <Link to="/other/start-an-llc">Start An LLC (no details)</Link>
-        <Link to="/other/general-research-topics">General Research Topics (WIP)</Link>
-        <Link to="/other/incfile-coupon-promo-code">Incfile Coupon Promo Code (WIP)</Link>
+        <Link to="/other/general-research-topics">General Research Topics</Link>
+        <Link to="/other/incfile-coupon-promo-code">Incfile Coupon Promo Code</Link>
         <Link to="/other/new-york-entity-search">New York Entity Search</Link>
         <Link to="/other/virginia-entity-search">Virginia Entity Search</Link>
         <Link to="/other/new-jersey-entity-search">New Jersey Entity Search</Link>

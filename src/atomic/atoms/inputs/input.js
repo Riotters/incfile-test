@@ -27,7 +27,8 @@ const Wrapper = styled.input`
     }
 `
 
-const Input = ({ className, placeholder, value }) => (
-  <Wrapper className={className} value={value} placeholder={placeholder} />
+const Input = ({ className, placeholder, required, value, onChange}) => (
+    <Wrapper className={className} placeholder={placeholder} required={required} value={value} onChange={onChange}/>
 )
-export default Input
+
+export default Input;

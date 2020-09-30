@@ -62,7 +62,8 @@ const KitInfoForm = () => {
         <Layout>
             <SEO title="Corporate / LLC Kit" description="wip page"/>
 
-            <FormLayout formTitle="Certificate of Good Standing">
+            <FormLayout formTitle="Certificate of Good Standing" hasInfoBox infoBoxText="Your official state documents will be delivered in a high quality and professional kit with
+your company name stamped along the spine of the book.">
 
                 <LeftColumn>
                     <FormSection icon={ContactIcon} title="Contact Information">

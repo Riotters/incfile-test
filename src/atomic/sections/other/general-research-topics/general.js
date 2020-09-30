@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { color } from "../../../atoms/styles/colors";
 import HeadingCenter from "../../../partials/heading-center";
 import ContentCenter from "../../../partials/content-center";
-import List from "../../../organisms/lists/related-questions-list";
+import List from "../../../organisms/lists/general-questions-list";
 import Oval from "../../../atoms/icons/oval";
 import Curve from "../../../atoms/icons/curve";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-blue2.inline.svg";
