@@ -124,10 +124,14 @@ const IndexPage = () => (
 
         <h2>Research Topics</h2>
         <Link to="/research-topics/business-taxes">Business taxes</Link>
-        <Link to="/research-topics/business-taxes/is-nonprofit-the-same-as-tax-exempt">Is nonprofit the same as tax exempt?</Link>
-        <Link to="/research-topics/business-taxes/minimizing-tax-expenses">Minimizing tax expenses</Link>
         <Link to="/research-topics/business-taxes/sellers-permit">How to Get a Seller's Permit?</Link>
-        <Link to="/research-topics/business-taxes/sellers-permit">Which entity offers the best tax advantages?</Link>
+        <Link to="/research-topics/business-taxes/minimizing-tax-expenses">Minimizing tax expenses</Link>
+        <Link to="/research-topics/business-taxes/which-entity-offers-the-best-tax-advantages">Which entity offers the best tax advantages?</Link>
+        <Link to="/research-topics/business-taxes/how-is-an-s-corporation-taxed">How is an S Corporation Taxed?</Link>
+        <Link to="/research-topics/business-taxes/is-nonprofit-the-same-as-tax-exempt">Is nonprofit the same as tax exempt?</Link>
+        <Link to="/research-topics/business-taxes/how-is-a-c-corporation-taxed">How is a C Corporation Taxed?</Link>
+        <Link to="/research-topics/c-corporation-info">C-Corporation</Link>
+        <Link to="/research-topics/c-corporation-info/what-is-a-corporate-seal">What is a Corporate Seal?</Link>
 
         <h2>Blog</h2>
         <Link to="/blog">Blog (no API)</Link>
