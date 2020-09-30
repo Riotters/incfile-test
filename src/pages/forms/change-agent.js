@@ -78,7 +78,7 @@ const ChangeAgentForm = () => {
 
     return (
         <Layout>
-            <SEO title="WIP Page" description="wip page"/>
+            <SEO title="Change of Registered Agent" description="Change of Registered Agent"/>
 
             <FormLayout formTitle="Change of Registered Agent">
 
