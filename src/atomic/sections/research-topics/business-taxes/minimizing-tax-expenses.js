@@ -11,6 +11,7 @@ import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-blue3.inline.svg";
 import NumericList from "../../../organisms/lists/numeric-boxed-list";
 import Path from "../../../molecules/blocks/research-topics-path";
+import Button from "../../../molecules/buttons/button"
 
 const About = styled.section`
   position: relative;
@@ -125,9 +126,10 @@ const AboutSection = ({ className, content }) => (
       <Paragraph big bottomMargin="24">
         {content.text21}
       </Paragraph>
-      <Paragraph big bottomMargin="48">
+      <Paragraph big bottomMargin="24">
         {content.text22}
       </Paragraph>
+      <Button content={content.button} theme="primary56" arrow bottomMargin="48" />
       <Heading size={3} bottomMargin="32">
         {content.header14}
       </Heading>

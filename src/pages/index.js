@@ -132,6 +132,7 @@ const IndexPage = () => (
         <Link to="/research-topics/business-taxes/how-is-a-c-corporation-taxed">How is a C Corporation Taxed?</Link>
         <Link to="/research-topics/c-corporation-info">C-Corporation</Link>
         <Link to="/research-topics/c-corporation-info/what-is-a-corporate-seal">What is a Corporate Seal?</Link>
+        <Link to="/research-topics/c-corporation-info/which-entity-offers-the-best-tax-advantages">Which entity offers the best tax advantages?</Link>
 
         <h2>Blog</h2>
         <Link to="/blog">Blog (no API)</Link>

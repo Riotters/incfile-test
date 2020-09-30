@@ -114,6 +114,10 @@ export const about = {
     header13: `Remember to Talk to Your Accountant or Tax Preparer`,
     text21: `Every business circumstance is unique, and there may be situations where some of these deductions don’t apply, or where you could claim additional expenses. That’s why it’s always important to see a qualified account or tax professional and get their advice on your business affairs.`,
     text22: `Incfile provides a Business Tax service that makes it easy for you to prepare and file your business taxes.`,
+    button: {
+        text: `Try IncFile's Business Tax Service`,
+        url: `/`,
+    },
     header14: `Related Articles`,
     links2: [
         {
