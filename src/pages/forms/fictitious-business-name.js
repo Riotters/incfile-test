@@ -46,9 +46,12 @@ const summaryList = [
 
 const FictitiousBusinessNamePage = () => (
     <Layout>
-        <SEO title="WIP Page" description="wip page"/>
+        <SEO title="Assumed Business Name" description="Assumed Business Name"/>
 
-        <FormLayout formTitle="Assumed Business Name">
+        <FormLayout formTitle="Assumed Business Name" hasInfoBox infoBoxText="A “Fictitious Business Name” (FBN) is a name you
+    choose to do business under that can be different from the official legal name of your LLC or corporation. Fictitious business names normally need to be filed with the
+    Secretary of State or other entity that governs business formation in your state. If your business operates in multiple states, you'll likely need to file a fictitious name
+    in any state where you have a presence.">
 
             <LeftColumn>
                 <FormSection icon={ContactIcon} title="Contact Information">
@@ -143,8 +146,11 @@ const FictitiousBusinessNamePage = () => (
                     <SummaryOrder orderSum={99}/>
                     <SummaryBar barPercentage={50}/>
                     <SummaryList list={summaryList}/>
-                    <SummaryTextBlock Icon={CheckIcon} text="Trusted by over 250,000 business owners to maintain their state's business compliance obligations." title="Maintain business compliance" />
-                    <SummaryTextBlock Icon={BenefitsIcon} text="This is a fully deductible business expense." title="Tax savings benefit" />
+                    <SummaryTextBlock Icon={CheckIcon}
+                                      text="Trusted by over 250,000 business owners to maintain their state's business compliance obligations."
+                                      title="Maintain business compliance"/>
+                    <SummaryTextBlock Icon={BenefitsIcon} text="This is a fully deductible business expense."
+                                      title="Tax savings benefit"/>
                 </Summary>
             </RightColumn>
 

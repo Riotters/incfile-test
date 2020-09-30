@@ -4,6 +4,9 @@ import { color } from "../styles/colors"
 
 const Wrapper = styled.div`
     margin-right: 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 `
 
 const Input = styled.input`
@@ -43,14 +46,27 @@ const Checkmark = styled.span`
     }
 `;
 
-const Checkbox = ({ className, name, id, checked }) => (
-    <Wrapper className={className}>
+const Label = styled.div`
+    margin-left: 16px;
+    font-family: Avenir-Roman;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7a7a7a;
+`;
+
+const Checkbox = ({ className, name, id, checked, onClick, label}) => (
+    <Wrapper className={className} onClick={() => onClick(checked)}>
         <Input id={id} type="checkbox" name={name} checked={checked}/>
         <Checkmark>
             <svg viewBox="-1 0 16 12">
                 <polyline points="2 6 4.5 9 10.5 3"></polyline>
             </svg>
         </Checkmark>
+        {label &&
+            <Label>
+                {label}
+            </Label>
+        }
     </Wrapper>
 )
 export default Checkbox
