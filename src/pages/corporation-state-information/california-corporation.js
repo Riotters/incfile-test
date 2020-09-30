@@ -16,7 +16,7 @@ import Articles from "../../atomic/sections/articles";
 //Texts
 import { top, about, launchBusiness, requirements, learnMore, quickLinks, variants, subscription } from "../../static/learning-center-entity/state-information-california";
 
-const StateFilingTimes = () => (
+const StateInformation = () => (
   <Layout>
     <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
     <Top imageName="mr-bulb-corporation-california-8302" imageAlt="Mrs Bulb and with checklist" ovalColor="purple-2" textWidth="530">
@@ -37,4 +37,4 @@ const StateFilingTimes = () => (
   </Layout>
 );
 
-export default StateFilingTimes;
+export default StateInformation;

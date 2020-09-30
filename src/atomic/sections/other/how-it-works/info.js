@@ -21,9 +21,13 @@ const Info = styled.section`
 
 const Grid = styled.div`
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 100%;
     width: 100%;
     grid-gap: 30px;
+
+    @media (min-width: 769px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 `;
 
 const icons = [<CalculatorSVG />, <CalendarSVG />, <DocumentSVG />]
@@ -33,7 +37,7 @@ const InfoSection = ({ className, content }) => (
         <Oval className="oval" height="570" width="570" top="0" left="0">
             <OvalSVG />
         </Oval>
-        <HeadingCenter className="heading" headline={content.header} headlineWidth="770" text={content.text} bottomMargin="40" />
+        <HeadingCenter className="heading" headline={content.header} headlineWidth="770" text={content.text} textWidth="770" bottomMargin="40" />
         <ContentCenter>
             <Grid>
                 {content.boxes.map((box, i) => (

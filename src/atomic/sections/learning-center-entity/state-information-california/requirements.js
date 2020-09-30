@@ -64,7 +64,7 @@ const RequirementsSection = ({ className, content }) => (
         </TextWrapper>
       </Grid>
     </ObjectContent>
-    <ObjectContent className="row row--2" headlineWidth="450" object={<ColorBox content={content.rows[1].box} color={color.orange3} icon={<TaxesSVG />} radius="5px 50px 100px 5px" curve curveRight />} objectWidth="400" objectPadding="130" contentWidth="900">
+    {/* <ObjectContent className="row row--2" headlineWidth="450" object={<ColorBox content={content.rows[1].box} color={color.orange3} icon={<TaxesSVG />} radius="5px 50px 100px 5px" curve curveRight />} objectWidth="400" objectPadding="130" contentWidth="900">
       <TextWrapper>
         <Heading size="3">{content.rows[1].content.header}</Heading>
         <Paragraph big>{content.rows[1].content.text}</Paragraph>
@@ -91,7 +91,7 @@ const RequirementsSection = ({ className, content }) => (
           {content.rows[2].content.text2}
         </Paragraph>
       </TextWrapper>
-    </ObjectContent>
+    </ObjectContent> */}
   </Requirements>
 );
 
