@@ -20,6 +20,7 @@ const Wrapper = styled.div`
 `
 
 const TextLeftLayout = styled.div`
+    position: relative;
     padding: 250px 0 100px 0;
     width: 100%;
     max-width: 700px;
@@ -27,6 +28,19 @@ const TextLeftLayout = styled.div`
 
     h2, p{
         text-align: left;    
+    }
+
+    .gatsby-image-wrapper{
+        position: absolute;
+        display: none;
+
+        @media screen and (min-width: 769px) {
+            display: block;
+            width: 350px;
+            bottom: 0;
+            right: 100px;
+            transform: translate(135%, 16%);
+        }
     }
 `
 
@@ -147,6 +161,8 @@ const WhyBrandNameSection = ({ content }) => {
                             <Heading size={2}>{content.header}</Heading>
                             <Paragraph big mixed={true}>{content.text1}</Paragraph>
                             <Paragraph big mixed={true}>{content.text2}</Paragraph>
+
+                            <Image filename="group-4583" alt="" />
                         </TextLeftLayout>
                     )}
                 </VisibilitySensor>
