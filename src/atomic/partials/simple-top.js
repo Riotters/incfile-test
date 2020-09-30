@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import ContentCenter from "../partials/content-center";
 import { color } from "../../atomic/atoms/styles/colors";
-import OvalSVG from "../../images/icons/oval-blue-mini.inline.svg";
+import OvalSVG from "../../images/ovals/top-right-transparent-dark-blue.inline.svg";
 import VisibilitySensor from "../../components/VisibilitySensor";
 
 const Wrapper = styled.div`

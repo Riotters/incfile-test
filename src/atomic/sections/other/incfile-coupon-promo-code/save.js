@@ -7,8 +7,8 @@ import { Paragraph } from "../../../atoms/typography/paragraph";
 import Table from "../../../organisms/tables/coupon-promo-code-table";
 
 const Save = styled.div`
-  padding-top: 75px;
-  padding-bottom: 64px;
+  padding-top: 104px;
+  padding-bottom: 0;
   position: relative;
 
   &::before {
