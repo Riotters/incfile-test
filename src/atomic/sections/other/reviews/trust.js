@@ -1,21 +1,10 @@
-import React, {Component, Fragment, useState} from 'react';
+import React from 'react';
 import styled from 'styled-components';
-import parse from 'html-react-parser';
-import { Link } from 'gatsby';
-import { color } from '../../../../components/styles/colors';
 
-import Container from '../../../container';
-import HeadingCenter from "../../../partials/heading-center";
 import ContentCenter from "../../../partials/content-center";
-import Image from '../../../atoms/image/image_nobase64';
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/bottom-left-transparent-orange.inline.svg";
 import MapSVG from "../../../../images/map.inline.svg";
-import Whitebox from "../../../atoms/boxes/white-box";
-import Circle from "../../../atoms/icons/circle";
-import ArrowSVG from "../../../../images/arrow.inline.svg";
-import { Heading } from "../../../atoms/typography/heading";
-import { Paragraph } from "../../../atoms/typography/paragraph";
 import Buttonsbox from "../../../atoms/boxes/top-buttons-box";
 import Button from "../../../molecules/buttons/button";
 import TextCenterLayout from '../../../partials/heading-center';
