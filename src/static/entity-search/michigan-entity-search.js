@@ -86,7 +86,7 @@ export const top = {
   };
   
   export const faq = {
-    header: `Michigan Business Searches — Your Questions, Answered`,
+    header: `Common Questions About Michigan Business Searches`,
     items: [
       {
         question: `How Do I Search for My Michigan LLC or Corporation Business Name?`,

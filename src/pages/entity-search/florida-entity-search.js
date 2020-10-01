@@ -5,16 +5,18 @@ import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
 import Button from "../../atomic/molecules/buttons/button";
 //Sections
 import Top from "../../atomic/partials/top";
-import About from "../../atomic/sections/entity-search/delaware-entity-search/about";
-import Search from "../../atomic/sections/entity-search/delaware-entity-search/search";
-import Faq from "../../atomic/sections/entity-search/delaware-entity-search/faq";
+import About from "../../atomic/sections/entity-search/florida-entity-search/about";
+import Search from "../../atomic/sections/entity-search/florida-entity-search/search";
+import NewRules from "../../atomic/sections/entity-search/florida-entity-search/new-rules";
+import StartBusiness from "../../atomic/sections/entity-search/florida-entity-search/start-business";
+import Faq from "../../atomic/sections/entity-search/florida-entity-search/faq";
 //Texts
-import { top, about, search, faq } from "../../static/entity-search/delaware-entity-search";
+import { top, about, search, newRules, startBusiness, faq } from "../../static/entity-search/florida-entity-search";
 
 const GeneralResearchTopics = () => (
   <Layout>
-    <SEO title="Daleware Entity Search" description="aaa" />
-    <Top imageName="mrs-bulb-state-ilustrations-3893" imageAlt="Mrs Bulb and with checklist" ovalColor="green" headlineWidth="700" textWidth="520">
+    <SEO title="Florida Entity Search" description="aaa" />
+    <Top imageName="mrs-bulb-state-ilustrations-9948" imageAlt="Mrs Bulb and with checklist" ovalColor="sun" headlineWidth="700" textWidth="400">
       <h1>{top.header}</h1>
       <p>{top.text}</p>
       <Buttonsbox>
@@ -23,6 +25,8 @@ const GeneralResearchTopics = () => (
     </Top>
     <About content={about} />
     <Search content={search} />
+    <NewRules content={newRules} />
+    <StartBusiness content={startBusiness} />
     <Faq content={faq} />
   </Layout>
 );
