@@ -111,6 +111,10 @@ const IndexPage = () => (
         <Link to="/entity-search/virginia-entity-search">Virginia Entity Search</Link>
         <Link to="/entity-search/new-jersey-entity-search">New Jersey Entity Search</Link>
         <Link to="/entity-search/delaware-entity-search">Daleware Entity Search</Link>
+        <Link to="/entity-search/michigan-entity-search">Michigan Entity Search</Link>
+        <Link to="/entity-search/florida-entity-search">Florida Entity Search</Link>
+        <Link to="/entity-search/georgia-entity-search">Georgia Entity Search</Link>
+        <Link to="/entity-search/texas-entity-search">Texas Entity Search</Link>
 
         <h2>Other</h2>
         <Link to="/other/form-an-llc">Form An LLC (WIP)</Link>
@@ -123,6 +127,7 @@ const IndexPage = () => (
         <Link to="/other/incfile-reviews/">Customer Service Reviews</Link>
         <Link to="/other/arizona-publication-newspaper-list">Arizona Publication Newspaper List</Link>
         <Link to="/other/after-forming-llc">After Forming LLC</Link>
+        <Link to="/other/business-name-generator">Business Name Generator</Link>
         <Link to="/404">404</Link>
         <Link to="/503">503</Link>
 

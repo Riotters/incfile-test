@@ -45,7 +45,7 @@ const TextCenterLayout = ({ className, headline, headlineWidth, text, textWidth,
         )}
         {text && (
           <VisibilitySensor partialVisibility once>
-            {({ isVisible }) => <p className={isVisible ? "slideUp enter" : "slideUp"}>{text}</p>}
+            {({ isVisible }) => <p className={isVisible ? "slideUp enter" : "slideUp"}>{parse(text)}</p>}
           </VisibilitySensor>
         )}
         {linkText && (
