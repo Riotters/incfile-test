@@ -7,6 +7,9 @@ import ContentCenter from "../../../partials/content-center";
 import ShapeCurve2 from "../../../../images/curve-babyblue-1.inline.svg";
 import PlusSVG from "../../../../images/plus-red.inline.svg"
 import MinusSVG from "../../../../images/minus-red.inline.svg"
+import DashedLineSVG from '../../../../images/dashed-line.inline.svg';
+import DashedLineLeftSVG from '../../../../images/dashed-line-rectangle-left.inline.svg';
+import DashedLineRightSVG from '../../../../images/dashed-line-rectangle-right.inline.svg';
 import { Heading } from "../../../atoms/typography/heading";
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/medium-571.inline.svg";
@@ -44,6 +47,7 @@ const Diagram = styled.div`
     max-width: 960px;
 
     .grid__top{
+        position: relative;
         display: grid;
         grid-template-columns: 1fr;
         justify-content: center;
@@ -73,14 +77,14 @@ const Diagram = styled.div`
         }
     }
 
-    .group__circle{
+    .group__middle{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 80px;
         justify-content: space-between;
         align-items: center;
         max-width: 980px;
-        margin: 75px auto;
+        margin: 75px 0 90px auto;
         justify-items: center;
 
         @media screen and (min-width: 769px) {
@@ -103,20 +107,37 @@ const Diagram = styled.div`
                 }
             }
 
-            & > span {
+            span {
                 z-index: 99;
                 position: absolute;
                 width: 42px;
-                height: 1px;
-                border: 1px dashed #5089fd;
                 top: 50%;
                 left: -50%;
                 transform: translate(-150%, -50%);
             }
+
+            &:first-child{
+                & > span{
+                    display: block;
+                    top: -50%;
+                    left: 50%;
+                    transform: translate(-65%, -50%) rotate(-90deg);
+
+                    &:last-child{
+                        top: auto;
+                        bottom: -85%;
+                    }
+
+                    @media screen and (min-width: 769px) {
+                        display: none;
+                    }
+                }
+            }
         }
     }
 
-    .group__oval{
+    .group__bottom{
+        position: relative;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 56px;
@@ -124,7 +145,7 @@ const Diagram = styled.div`
         align-items: center;
         max-width: 860px;
         margin: 0 auto;
-        grid-gap: 3.5rem;
+        grid-gap: 4rem;
         justify-items: center;
 
         @media screen and (min-width: 769px) {
@@ -150,11 +171,9 @@ const Diagram = styled.div`
                 z-index: 99;
                 position: absolute;
                 width: 25px;
-                height: 1px;
-                border: 1px dashed #5089fd;
                 top: -50%;
                 left: 50%;
-                transform: translate(-50%, -50%) rotate(-90deg);
+                transform: translate(-65%, -50%) rotate(-90deg);
 
                 @media screen and (min-width: 769px) {
                     width: 42px;
@@ -163,6 +182,25 @@ const Diagram = styled.div`
                     transform: translate(-50%,-50%) rotate(0deg);
                 }
             }
+        }
+    }
+
+    .float-dashed-line{
+        position: absolute;
+        display: none;
+
+        @media screen and (min-width: 990px) {
+            display: block;
+        }
+
+        &.right{
+            top: 40px;
+            right: -75px;
+        }
+
+        &.left{
+            bottom: 15px;
+            left: -155px;
         }
     }
 `
@@ -232,19 +270,28 @@ const UniqueSection = ({ content }) => {
                                 <MinusSVG />
                             </Circle>
                         </div>
+                        <div className="float-dashed-line right">
+                            <DashedLineRightSVG/>
+                        </div>    
                     </Whitebox>
-                    <div className="group__circle">
-                        <div className="item"></div>
-                        <div className="item"><span></span></div>
-                        <div className="item"><span></span></div>
-                        <div className="item"><span></span></div>
+                    <div className="group__middle">
+                        <div className="item">
+                            <span><DashedLineSVG /></span>
+                            <span><DashedLineSVG /></span>
+                        </div>
+                        <div className="item"><span><DashedLineSVG /></span></div>
+                        <div className="item"><span><DashedLineSVG /></span></div>
+                        <div className="item"><span><DashedLineSVG /></span></div>
                     </div>
 
-                    <div className="group__oval">
+                    <div className="group__bottom">
+                        <div className="float-dashed-line left">
+                            <DashedLineLeftSVG/>
+                        </div>    
                         <div className="item">Exvault</div>
-                        <div className="item">AlyCrypt<span></span></div>
-                        <div className="item">Zelcrypt<span></span></div>
-                        <div className="item">Rocrypt<span></span></div>
+                        <div className="item">AlyCrypt<span><DashedLineSVG /></span></div>
+                        <div className="item">Zelcrypt<span><DashedLineSVG /></span></div>
+                        <div className="item">Rocrypt<span><DashedLineSVG /></span></div>
                     </div>
                 </Diagram>
 
