@@ -137,6 +137,18 @@ const IndexPage = () => (
         <Link to="/research-topics/c-corporation-info">C-Corporation</Link>
         <Link to="/research-topics/c-corporation-info/what-is-a-corporate-seal">What is a Corporate Seal?</Link>
         <Link to="/research-topics/c-corporation-info/which-entity-offers-the-best-tax-advantages">Which entity offers the best tax advantages?</Link>
+        <Link to="/research-topics/c-corporation-info/the-benefits-of-filing-a-c-corporation">The benefits of filing a C-corporation</Link>
+        <Link to="/research-topics/c-corporation-info/llcs-vs-c-corporation-which-is-best-for-your-business">LLCs vs C-Corporation: Which Is Best for Your Business?</Link>
+        <Link to="/research-topics/c-corporation-info/how-is-a-corporation-managed">How is a Corporation Managed?</Link>
+        <Link to="/research-topics/c-corporation-info/how-is-a-c-corporation-taxed">How is a C Corporation Taxed?</Link>
+        <Link to="/research-topics/c-corporation-info/am-i-required-to-hold-corporate-meetings">Am I Required to Hold Corporate Meetings?</Link>
+        <Link to="/research-topics/c-corporation-info/how-many-shares-of-stock-will-my-corporation-need">How Many Shares of Stock will my Corporation Need?</Link>
+        <Link to="/research-topics/c-corporation-info/what-are-bylaws">What are Bylaws?</Link>
+        <Link to="/research-topics/c-corporation-info/what-is-stock-par-value">What is Stock Par Value?</Link>
+        <Link to="/research-topics/c-corporation-info/what-is-the-form-2553">What is the Form 2553?</Link>
+        <Link to="/research-topics/c-corporation-info/what-are-the-differences-between-officers-directors-and-shareholders">What are the Differences Between Officers, Directors and Shareholders?</Link>
+        <Link to="/research-topics/c-corporation-info/are-non-u-s-residents-allowed-to-own-a-corporation-or-llc">Are Non-U.S. Residents Allowed to Own a Corporation or LLC?</Link>
+        <Link to="/research-topics/c-corporation-info/does-forming-an-llc-limited-liability-company-or-corporation-require-an-attorney">Does Forming an LLC (Limited Liability Company) or Corporation Require an Attorney?</Link>
 
         <h2>Blog</h2>
         <Link to="/blog">Blog (no API)</Link>

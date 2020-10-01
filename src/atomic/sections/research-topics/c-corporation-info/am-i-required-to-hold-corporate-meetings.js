@@ -33,35 +33,12 @@ const AboutSection = ({ className, content }) => (
       <Paragraph big bottomMargin="24">
         {content.text}
       </Paragraph>
-      <Paragraph big bottomMargin="24">
+      <Paragraph big bottomMargin="16">
         {content.text2}
       </Paragraph>
-      <Paragraph big bottomMargin="24">
-        {content.text3}
-      </Paragraph>
-      <Paragraph big bottomMargin="24">
-        {content.text4}
-      </Paragraph>
-      <IconListColorBox content={content.list} color={color.purple3} curve curveColor={color.green2} rounded bottomMargin="24" />
-      <Paragraph big bottomMargin="24">
-        {content.text5}
-      </Paragraph>
-      <IconListColorBox content={content.list2} color={color.orange3} curve curveColor={color.babyblue2} rounded bottomMargin="24" />
-      <Paragraph big bottomMargin="48">
-        {content.text6}
-      </Paragraph>
+      <IconListColorBox content={content.list} color={color.red2} curve curveColor={color.green2} rounded bottomMargin="48" />
       <Heading size={3} bottomMargin="32">
         {content.header3}
-      </Heading>
-      <Paragraph big bottomMargin="24">
-        {content.text7}
-      </Paragraph>
-      <IconListColorBox content={content.list3} color={color.babyblue3} curve curveColor={color.red2} rounded bottomMargin="24" />
-      <Paragraph big bottomMargin="48">
-        {content.text8}
-      </Paragraph>
-      <Heading size={3} bottomMargin="32">
-        {content.header4}
       </Heading>
       {content.links2.map(link => (
         <ArrowLink content={link} />
