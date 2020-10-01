@@ -222,7 +222,7 @@ const Accordion = ({ content, curve, curveRight, curveRightBottom, curveLeft, cu
                   </Tab>
                   <Panel>
                     <PanelWrapper>
-                      {typeof item.answer === "string" ? <Paragraph bottomMargin="0">{parse(item.answer)}</Paragraph> : null}
+                      {typeof item.answer === "string" ? <Paragraph bottomMargin="0" mixed>{parse(item.answer)}</Paragraph> : null}
                       {typeof item.answer === "object" ? <Paragraph bottomMargin="0" mixed>{item.answer.map((el) => (el.url ? <Link to={el.url}>{` ${parse(el.text)} `}</Link> : el.text))}</Paragraph> : null}
 
                       {item.list && (
@@ -234,7 +234,7 @@ const Accordion = ({ content, curve, curveRight, curveRightBottom, curveLeft, cu
                       )}
 
                       {typeof item.text === "string" ? (
-                        <Paragraph topMargin="32" bottomMargin="0">
+                        <Paragraph topMargin="32" bottomMargin="0" mixed>
                           {parse(item.text)}
                         </Paragraph>
                       ) : null}
