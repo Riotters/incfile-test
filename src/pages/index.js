@@ -99,10 +99,18 @@ const IndexPage = () => (
         <Link to="/learning-center-entity/s-corp-tax-calculator">S Corp Tax Calculator (WIP)</Link>
         <Link to="/learning-center-entity/sales-tax-calculator">Sales Tax Calculator</Link>
         <Link to="/learning-center-entity/state-filing-times">State Filing Times (no details)</Link>
-        <Link to="/learning-center-entity/state-information-california">State Information California (WIP)</Link>
         <Link to="/learning-center-entity/ongoing-filing-requirements">Ongoing Filing Requirements (no details)</Link>
         <Link to="/learning-center-entity/business-resources">Business Resources (WIP)</Link>
         <Link to="/learning-center-entity/business-name-search">Business Name Search (no details)</Link>
+
+        <h2>Corporation State Information</h2>
+        <Link to="/corporation-state-information/california-corporation">California Corporation (WIP)</Link>
+
+        <h2>Search your name availability</h2>
+        <Link to="/entity-search/new-york-entity-search">New York Entity Search</Link>
+        <Link to="/entity-search/virginia-entity-search">Virginia Entity Search</Link>
+        <Link to="/entity-search/new-jersey-entity-search">New Jersey Entity Search</Link>
+        <Link to="/entity-search/delaware-entity-search">Daleware Entity Search</Link>
 
         <h2>Other</h2>
         <Link to="/other/form-an-llc">Form An LLC (WIP)</Link>
@@ -110,11 +118,7 @@ const IndexPage = () => (
         <Link to="/other/start-an-llc">Start An LLC (no details)</Link>
         <Link to="/other/general-research-topics">General Research Topics</Link>
         <Link to="/other/incfile-coupon-promo-code">Incfile Coupon Promo Code</Link>
-        <Link to="/other/new-york-entity-search">New York Entity Search</Link>
-        <Link to="/other/virginia-entity-search">Virginia Entity Search</Link>
-        <Link to="/other/new-jersey-entity-search">New Jersey Entity Search</Link>
-        <Link to="/other/delaware-entity-search">Daleware Entity Search</Link>
-        <Link to="/other/how-it-works">How It Works (WIP)</Link>
+        <Link to="/other/how-it-works">How It Works</Link>
         <Link to="/other/free-llc">Free LLC</Link>
         <Link to="/other/incfile-reviews/">Customer Service Reviews</Link>
         <Link to="/other/arizona-publication-newspaper-list">Arizona Publication Newspaper List</Link>

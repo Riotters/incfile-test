@@ -5,14 +5,14 @@ import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
 import Button from "../../atomic/molecules/buttons/button";
 //Sections
 import Top from "../../atomic/partials/top";
-import About from "../../atomic/sections/other/new-york-entity-search/about";
-import Search from "../../atomic/sections/other/new-york-entity-search/search";
-import NewRules from "../../atomic/sections/other/new-york-entity-search/new-rules";
-import SpecificRules from "../../atomic/sections/other/new-york-entity-search/specific-rules";
-import StartBusiness from "../../atomic/sections/other/new-york-entity-search/start-business";
-import Faq from "../../atomic/sections/other/new-york-entity-search/faq";
+import About from "../../atomic/sections/entity-search/new-york-entity-search/about";
+import Search from "../../atomic/sections/entity-search/new-york-entity-search/search";
+import NewRules from "../../atomic/sections/entity-search/new-york-entity-search/new-rules";
+import SpecificRules from "../../atomic/sections/entity-search/new-york-entity-search/specific-rules";
+import StartBusiness from "../../atomic/sections/entity-search/new-york-entity-search/start-business";
+import Faq from "../../atomic/sections/entity-search/new-york-entity-search/faq";
 //Texts
-import { top, about, search, newRules, specificRules, startBusiness, faq } from "../../static/other/new-york-entity-search";
+import { top, about, search, newRules, specificRules, startBusiness, faq } from "../../static/entity-search/new-york-entity-search";
 
 const GeneralResearchTopics = () => (
   <Layout>

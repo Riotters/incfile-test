@@ -28,10 +28,14 @@ const ImageWrapper = styled.div`
 
 const Grid = styled.div`
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 100%;
     width: 100%;
     max-width: 670px;
     grid-gap: 8px;
+
+    @media (min-width: 769px) {
+        grid-template-columns: 1fr 1fr;
+    }
 `;
 
 const ColorBox = styled.div`
@@ -41,20 +45,22 @@ const ColorBox = styled.div`
     padding: 35px 35px 35px 88px;
     position: relative;
 
-    &:first-child {
-        border-radius: 15px 5px 5px 5px;
-    }
-
-    &:nth-child(2) {
-        border-radius: 5px 15px 5px 5px;
-    }
-
-    &:nth-last-child(2) {
-        border-radius: 5px 5px 5px 15px;
-    }
-
-    &:last-child {
-        border-radius: 5px 5px 15px 5px;
+    @media (min-width: 769px) {
+        &:first-child {
+            border-radius: 15px 5px 5px 5px;
+        }
+    
+        &:nth-child(2) {
+            border-radius: 5px 15px 5px 5px;
+        }
+    
+        &:nth-last-child(2) {
+            border-radius: 5px 5px 5px 15px;
+        }
+    
+        &:last-child {
+            border-radius: 5px 5px 15px 5px;
+        }
     }
 `;
 
