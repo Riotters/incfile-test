@@ -61,7 +61,7 @@ const LeftCol = styled.div`
 
 const RightCol = styled.div`
     position: relative;
-    background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 36%, #fef6ed);
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 46%, #fef6ed);
     display: none;
     overflow: hidden;
 
@@ -101,7 +101,7 @@ const DashboardLogin = () => (
                     <OvalSVG />
                 </Oval>
 
-                <Oval className="oval" height="620" width="620" bottom="0" right="-30" y="-10">
+                <Oval className="oval" height="720" width="720" bottom="0" right="-30" y="-5">
                     <OvalSVG2 />
                 </Oval>
                 
