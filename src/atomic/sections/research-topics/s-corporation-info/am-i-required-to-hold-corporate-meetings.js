@@ -11,7 +11,6 @@ import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-blue3.inline.svg";
 import NumericList from "../../../organisms/lists/numeric-boxed-list";
 import Path from "../../../molecules/blocks/research-topics-path";
-import parse from "html-react-parser"
 
 const About = styled.section`
   position: relative;
@@ -31,9 +30,13 @@ const AboutSection = ({ className, content }) => (
       <Heading size={3} bottomMargin="32">
         {content.header2}
       </Heading>
-      <Paragraph big bottomMargin="48" mixed>
-        {parse(content.text)}
+      <Paragraph big bottomMargin="24">
+        {content.text}
       </Paragraph>
+      <Paragraph big bottomMargin="16">
+        {content.text2}
+      </Paragraph>
+      <IconListColorBox content={content.list} color={color.red2} curve curveColor={color.green2} rounded bottomMargin="48" />
       <Heading size={3} bottomMargin="32">
         {content.header3}
       </Heading>

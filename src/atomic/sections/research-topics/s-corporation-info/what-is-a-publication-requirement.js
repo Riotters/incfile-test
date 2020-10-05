@@ -28,7 +28,7 @@ const AboutSection = ({ className, content }) => (
       <Heading size={4} bottomMargin="48">
         {content.header}
       </Heading>
-      <Heading size={3} bottomMargin="32">
+      <Heading size={3} bottomMargin="24">
         {content.header2}
       </Heading>
       <Paragraph big bottomMargin="48" mixed>

@@ -28,11 +28,23 @@ const AboutSection = ({ className, content }) => (
       <Heading size={4} bottomMargin="48">
         {content.header}
       </Heading>
-      <Heading size={3} bottomMargin="32">
+      <Heading size={3} bottomMargin="24">
         {content.header2}
       </Heading>
-      <Paragraph big bottomMargin="48" mixed>
+      <Paragraph big bottomMargin="16" mixed>
         {parse(content.text)}
+      </Paragraph>
+      <Paragraph big bottomMargin="16">
+        {content.text2}
+      </Paragraph>
+      <Paragraph big bottomMargin="16">
+        {content.text3}
+      </Paragraph>
+      <Paragraph big bottomMargin="16" mixed>
+        {parse(content.text4)}
+      </Paragraph>
+      <Paragraph big bottomMargin="48">
+        {content.text5}
       </Paragraph>
       <Heading size={3} bottomMargin="32">
         {content.header3}

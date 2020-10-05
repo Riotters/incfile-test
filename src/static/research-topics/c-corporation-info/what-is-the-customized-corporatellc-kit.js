@@ -9,11 +9,11 @@ export const about = {
             url: `/research-topics/c-corporation-info`,
         },
     ],
-    header: `What is a Publication Requirement?`,
-    header2: `What is a Publication Requirement?`,
-    text: `A Publication Requirement is a compliance mandate that requires the creation and ownership of an LLC to publish an announcement in local newspapers upon being filed. Upon completion of this requirement an affidavit is typically filed with the state to inform them that the publication requirement has been satisfied. Currently the states which require thus are Pennsylvania (corporations only), Georgia (corporations only),
-        <a href="/other/arizona-publication-newspaper-list" target="_blank">Arizona (corporations and LLCs),</a>
-        Nebraska (corporations and LLCs), and New York (LLCs only). At this time IncFile does not provide this service.`,
+    header: `What is the Customized Corporate/LLC Kit?`,
+    header2: `What is the Customized Corporate/LLC Kit?`,
+    text: `The
+        <a href="/manage-your-company/corporate-llc-kit" target="_blank">Corporate/LLC Kit</a>
+        is a professional binder enclosed in a matching slip case, customized with the name of your company on the spine insert. The LLC kit comes with a metal die-cast corporate embossing seal with its own carrying pouch, customized with the name of your company and the date and state of formation. It has a set of 6 Mylar Reinforced Index Tabs, 25 custom printed stock or membership certificates with 25 full page stubs. It also comes with a variety of corporate forms on CD-Rom. The kit can be added to your order of our standard formation service, and it is included with the Premium Package.`,
     header3: `Related Articles`,
     links2: [
         {
