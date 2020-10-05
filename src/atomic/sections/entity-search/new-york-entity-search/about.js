@@ -13,14 +13,6 @@ import { Heading } from "../../../atoms/typography/heading";
 const About = styled.section`
   position: relative;
   padding-bottom: 120px;
-
-  p {
-    color: ${color.grey2};
-  }
-
-  ul {
-    margin-bottom: 0;
-  }
 `;
 
 const AboutSection = ({ className, content }) => (

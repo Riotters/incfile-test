@@ -156,19 +156,23 @@ const PricingCard = ({ className, content, image, ...rest }) => (
         </li>
       ))}
     </ul>
-    <Package>
-      <span>
-        {content.include}
-      </span>
-    </Package>
+      {content.include && (
+          <Package>
+              <span>
+                {content.include}
+              </span>
+          </Package>
+      )}
     <ul className="list">
-      {content.list.map((item) => (
+      {content.list && content.list.map((item) => (
         <li>
           <TextCheck>{item}</TextCheck>
         </li>
       ))}
     </ul>
-    <Paragraph bottomMargin="6">{content.fee}</Paragraph>
+      {content.fee && (
+          <Paragraph bottomMargin="6">{content.fee}</Paragraph>
+      )}
   </Wrapper>
 );
 

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="720" viewBox="0 0 720 720">
+    <defs>
+        <linearGradient id="jpw3flq60a" x1="100%" x2="100%" y1="95.674%" y2="0%">
+            <stop offset="0%" stop-color="#FFF" stop-opacity="0"/>
+            <stop offset="100%" stop-color="#F2F6FF"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g fill="url(#jpw3flq60a)" transform="translate(-958 -3461)">
+            <g>
+                <g>
+                    <path d="M720 0v720H0C0 322.355 322.355 0 720 0z" transform="translate(3 2846) rotate(-180 837.5 667.5) rotate(180 360 360)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
