@@ -9,16 +9,9 @@ export const about = {
       url: `/research-topics/s-corporation-info`,
     },
   ],
-  header: `Who Will Typically Elect the S Corporation Status?`,
-  header2: `Who Will Typically Elect the S Corporation Status?`,
-  list: {
-    header: `Typically entrepreneurs will select the S-Corporation as the entity of choice for the following reasons:`,
-    list: [
-      `The S-Corporation combines the advantages of the sole proprietorship, the partnership, the LLC and the corporation into one entity.`,
-      `Unlike sole proprietors and the partners in a partnership the shareholders of the S-Corporation are granted the same level of limited liability and personal asset protection as are the shareholders of a corporation.`,
-      `The S-Corporation allows shareholders to avoid the “double taxation” levied on shareholders of C-Corporations that is because all of the income or losses in a S-Corporation are reported only once on the personal income tax returns of the S-Corporation’s shareholders.`,
-    ],
-  },
+  header: `Does Forming an LLC (Limited Liability Company) or Corporation Require an Attorney?`,
+  header2: `Does Forming an LLC (Limited Liability Company) or Corporation Require an Attorney?`,
+  text: `No, it does not. An attorney is not a legal requirement to form a Limited Liability Company. While we always recommend consulting the appropriate legal and accounting specialists, we can take care of the filings for you and save you the attorney fees.`,
   header3: `Related Articles`,
   links2: [
     {

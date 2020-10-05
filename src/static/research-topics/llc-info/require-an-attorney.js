@@ -9,9 +9,9 @@ export const about = {
       url: `/research-topics/llc-info`,
     },
   ],
-  header: `Are Non-U.S. Residents Allowed to Own a Corporation or LLC?`,
-  header2: `Are Non-U.S. Residents Allowed to Own a Corporation or LLC?`,
-  text: `There are no citizenship or residence requirements for ownership of a C Corporation or an LLC. The S Corporation however does not allow nonresident aliens to be shareholders (owner), but any US citizen or resident alien may be a shareholder (owner). You would, of course, require an in state street address for the state to forward official legal and tax correspondence including service of process, known as the registered agent address, but neither residency nor citizenship is required for ownership of a C Corporation or an LLC.`,
+  header: `Does Forming an LLC (Limited Liability Company) or Corporation Require an Attorney?`,
+  header2: `Does Forming an LLC (Limited Liability Company) or Corporation Require an Attorney?`,
+  text: `No, it does not. An attorney is not a legal requirement to form a Limited Liability Company. While we always recommend consulting the appropriate legal and accounting specialists, we can take care of the filings for you and save you the attorney fees.`,
   header3: `Related Articles`,
   links2: [
     {
