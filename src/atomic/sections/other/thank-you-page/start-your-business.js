@@ -19,6 +19,14 @@ const Wrapper = styled.div`
     background: ${color.orange3};
     position: relative;
     
+    .oval {
+        overflow: hidden;
+    }
+    
+    @media screen and (max-width: 556px) {
+        padding: 50px 0 0;
+    }
+    
     .section-content {
         position: relative;
     }
@@ -41,18 +49,16 @@ const StartYourBusinessSection = ({ className, content }) => (
         <Oval className="oval" width="409" height="549" bottom="0" right="0">
             <TopRightOval2SVG />
         </Oval>
-        <Container>
-            <LeftContentRightImage image={content.image} className="section-content" contentWidth={520}>
-                <Curve top="25" left="-115" color={color.orange2}>
-                    <CurveSVG />
-                </Curve>
-                <Heading size={2} bottomMargin={24}>{content.header}</Heading>
-                <Paragraph bottomMargin={32}>{content.text}</Paragraph>
-                <Buttonsbox>
-                    <Button theme="primary56" arrow content={content.button}/>
-                </Buttonsbox>
-            </LeftContentRightImage>
-        </Container>
+        <LeftContentRightImage image={content.image} className="section-content" contentWidth={520}>
+            <Curve top="25" left="-115" color={color.orange2}>
+                <CurveSVG />
+            </Curve>
+            <Heading size={2} bottomMargin={24}>{content.header}</Heading>
+            <Paragraph big bottomMargin={32}>{content.text}</Paragraph>
+            <Buttonsbox>
+                <Button theme="primary56" arrow content={content.button}/>
+            </Buttonsbox>
+        </LeftContentRightImage>
     </Wrapper>
 );
 

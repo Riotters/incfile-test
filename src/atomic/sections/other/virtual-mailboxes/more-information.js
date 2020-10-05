@@ -33,7 +33,7 @@ const VirtualMailboxesMoreInfo = ({ className, content }) => (
     <AdvantagesSection className={className}>
         <ContentCenter>
             <Heading size={2}>{content.header}</Heading>
-            <Paragraph>{content.text}</Paragraph>
+            <Paragraph big>{content.text}</Paragraph>
         </ContentCenter>
     </AdvantagesSection>
 );

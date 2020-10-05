@@ -67,8 +67,10 @@ function hidePopup(e) {
 }
 
 function hidePopupFromWrapper(e) {
-    let card = e?.target;
+    let card = e?.target.parentNode;
 
+    console.clear();
+    console.log(card, e?.target);
     card.className = card.className.replace(" visible", "");
 }
 

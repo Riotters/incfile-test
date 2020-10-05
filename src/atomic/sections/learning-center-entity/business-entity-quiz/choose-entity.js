@@ -73,7 +73,7 @@ const ChooseEntitySection = ({ className, content }) => (
         <Container>
             <ContentCenter contentWidth={970} className="main-top-content">
                 <Heading size={2} bottomMargin={24} maxWidth={770}>{content.header}</Heading>
-                <Paragraph bottomMargin={80} maxWidth={770}>{content.text}</Paragraph>
+                <Paragraph big bottomMargin={80} maxWidth={770}>{content.text}</Paragraph>
 
                 <GridContainer>
                     <Curve top="-105" left="-105" color={color.purple2}>
@@ -100,7 +100,7 @@ const ChooseEntitySection = ({ className, content }) => (
         <Container style={{"padding-top": "26px"}}>
             <LeftContentRightImage image={content.image} contentWidth={1150} contentPadding="29px">
                 <Heading size={2} bottomMargin={24} maxWidth={520}>{content.header2}</Heading>
-                <Paragraph bottomMargin={32} maxWidth={530}>{content.text2}</Paragraph>
+                <Paragraph big bottomMargin={32} maxWidth={530}>{content.text2}</Paragraph>
                 <Buttonsbox>
                     <Button content={content.button} theme="primary56" arrow />
                 </Buttonsbox>

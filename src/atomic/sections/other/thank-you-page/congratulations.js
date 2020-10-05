@@ -28,6 +28,10 @@ const Wrapper = styled.div`
     .anchor {
         position: relative;
     }
+    
+    .oval {
+        overflow: hidden;
+    }
 `;
 
 const GridContainer = styled.div`
@@ -71,11 +75,14 @@ const ImageWrapper2 = styled.div`
     ${props => ("left: " + props.left + "px") ?? ""};
     ${props => ("right: " + props.right + "px") ?? ""};
     ${props => ("bottom: " + props.bottom + "px") ?? ""};
+    
+    @media screen and (max-width: 558px) {
+        display: none;
+    }
 `;
 
 const CongratulationsSection = ({ className, content }) => (
     <Wrapper>
-        <Container>
             <ContentCenter contentWidth={770} className="anchor">
                 <div className="anchor">
                     <Heading size={1} bottomMargin={24} maxWidth={770}>{content.header}</Heading>
@@ -83,8 +90,8 @@ const CongratulationsSection = ({ className, content }) => (
                         <Image filename="single-checkmark-green-5062" />
                     </ImageWrapper2>
                 </div>
-                <Paragraph bottomMargin={0}>{content.text}</Paragraph>
-                <Paragraph bottomMargin={32}>{content.text2}</Paragraph>
+                <Paragraph big bottomMargin={0}>{content.text}</Paragraph>
+                <Paragraph big bottomMargin={32}>{content.text2}</Paragraph>
                 <Button content={content.button} theme="primary56" arrow />
 
                 <ImageWrapper2 top="-67" left="-30" width="442">
@@ -112,7 +119,6 @@ const CongratulationsSection = ({ className, content }) => (
                 </GridContainer>
 
             </ContentCenter>
-        </Container>
     </Wrapper>
 );
 

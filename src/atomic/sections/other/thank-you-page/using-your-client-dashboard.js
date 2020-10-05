@@ -31,6 +31,10 @@ const Wrapper = styled.div`
         padding-top: 100px;
         position: relative;
     }
+    
+    .oval {
+        overflow: hidden;
+    }
 `;
 
 const GridContainer = styled.div`
@@ -38,6 +42,10 @@ const GridContainer = styled.div`
     grid-template-columns: auto 50%;
     
     grid-gap: 70px 30px;
+    
+    @media screen and (max-width: 768px) {
+        grid-template-columns: auto;
+    }
 `;
 
 const UsingYourClientDashboardSection = ({ className, content }) => (
@@ -48,10 +56,9 @@ const UsingYourClientDashboardSection = ({ className, content }) => (
         <Oval className="oval" height="720" width="720" bottom="18" left="0">
             <BottomLeftOvalSVG />
         </Oval>
-        <Container>
             <ContentCenter contentWidth={770}>
                 <Heading size={2} bottomMargin={24} maxWidth={770}>{content.header}</Heading>
-                <Paragraph bottomMargin={120} maxWidth={770}>{content.text}</Paragraph>
+                <Paragraph big bottomMargin={120} maxWidth={770}>{content.text}</Paragraph>
             </ContentCenter>
             <ContentCenter contentWidth={970} className="dashboard">
                 <GridContainer>
@@ -133,7 +140,6 @@ const UsingYourClientDashboardSection = ({ className, content }) => (
                 <Heading size={2} bottomMargin={57}>{content.header2}</Heading>
                 <Accordion content={content.faq} curveColor={color.orange1} curveRight={true} curve />
             </ContentCenter>
-        </Container>
     </Wrapper>
 );
 
