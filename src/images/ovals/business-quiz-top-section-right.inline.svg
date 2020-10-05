@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="822" height="743" viewBox="0 0 822 743">
+    <defs>
+        <linearGradient id="c5vc5hvlua" x1="100%" x2="100%" y1="95.674%" y2="0%">
+            <stop offset="0%" stop-color="#FFF" stop-opacity="0"/>
+            <stop offset="100%" stop-color="#F2F6FF"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g fill="url(#c5vc5hvlua)" transform="translate(-858 -34)">
+            <g>
+                <path d="M824 0v777l-824-.007C24.872 343.7 384.28 0 824 0z" transform="translate(856) matrix(1 0 0 -1 0 777)"/>
+            </g>
+        </g>
+    </g>
+</svg>
