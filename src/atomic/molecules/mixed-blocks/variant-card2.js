@@ -9,6 +9,8 @@ import Button from "../buttons/button";
 import HelpMarkSVG from "../../../images/icons/help-mark.inline.svg";
 import Image from "../../atoms/image/image_nobase64";
 
+import SaveFlagSVG from "../../../images/icons/flag-backdrop.inline.svg";
+
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -135,20 +137,53 @@ const Fee = styled.div`
   }
 `;
 
-const PricingCard = ({ className, content, image, ...rest }) => (
+const SaveWrapper = styled.div`
+    top: 0;
+    right: 65px;
+    position: absolute;
+    
+    svg {
+        position: absolute;
+        top: 0;
+        left: -5px;
+        z-index: 0;
+    }
+    
+    p {
+        position: absolute;
+        top: 8px;
+        left: 7px;
+        line-height: 10px;
+        font-size: 10px;
+        text-align: center; 
+        color: ${color.white};
+    }
+`;
+
+const PricingCard = ({ className, content, image, fullInfo, ...rest }) => (
   <Wrapper className={className} {...rest}>
     {content.variant && (
       <Box>
         <span>{content.variant}</span>
       </Box>
     )}
+      {content.savings && (
+          <SaveWrapper>
+              <div style={{position: "relative"}}>
+                  <SaveFlagSVG />
+                  <Paragraph>
+                      {content.savings}
+                  </Paragraph>
+              </div>
+          </SaveWrapper>
+      )}
     <Heading size="4" marginBottom="16">{content.header}</Heading>
     <Paragraph bottomMargin="8">{content.text}</Paragraph>
     <ImageWrapper>
       <Image filename={image} />
     </ImageWrapper>
     <Price>${content.price}</Price>
-    <Button theme="primary48" content={content.button} margin="0 0 32px 0" wrap arrow />
+    <Button theme="primary48" content={content.button} margin="0 0 32px 0" arrow />
     <ul style={{marginBottom: "48px"}}>
       {content.fees.map((fee) => (
         <li>
@@ -156,7 +191,7 @@ const PricingCard = ({ className, content, image, ...rest }) => (
         </li>
       ))}
     </ul>
-      {content.include && (
+      {(fullInfo === true && content.include) && (
           <Package>
               <span>
                 {content.include}
@@ -164,7 +199,7 @@ const PricingCard = ({ className, content, image, ...rest }) => (
           </Package>
       )}
     <ul className="list">
-      {content.list && content.list.map((item) => (
+      {(fullInfo === true && content.list) && content.list.map((item) => (
         <li>
           <TextCheck>{item}</TextCheck>
         </li>

@@ -79,6 +79,7 @@ const IndexPage = () => (
         <Link to="/manage-your-company/corporate-llc-kit">Corporate LLC Kit</Link>
         <Link to="/manage-your-company/filling-business-taxes">Filling Business Taxes</Link>
         <Link to="/manage-your-company/fictitious-business">Fictitious Business</Link>
+        <Link to="/manage-your-company/home-page-v3">Home Page v3</Link>
 
         <h2>Review Entity Type</h2>
         <Link to="/review-entity-type/nonprofit">Nonprofit (WIP)</Link>
@@ -128,6 +129,10 @@ const IndexPage = () => (
         <Link to="/other/arizona-publication-newspaper-list">Arizona Publication Newspaper List</Link>
         <Link to="/other/after-forming-llc">After Forming LLC</Link>
         <Link to="/other/business-name-generator">Business Name Generator</Link>
+        <Link to="/other/virtual-mailboxes">Virtual Mailboxes</Link>
+        <Link to="/other/arizona-virtual-mailboxes">Arizona Virtual Mailboxes</Link>
+        <Link to="/other/affiliates">Affiliates</Link>
+        <Link to="/other/incorporation">Incorporation</Link>
         <Link to="/404">404</Link>
         <Link to="/503">503</Link>
 

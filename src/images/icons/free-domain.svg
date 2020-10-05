@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <g>
+                            <path fill="#FAEFC8" d="M28.57 17.07L24.81 17c-.827-.027-1.607-.394-2.154-1.015-.547-.621-.814-1.44-.736-2.265 0-.42.07-.8.07-1.06.002-.411-.021-.822-.07-1.23-.626-5.683-5.422-9.989-11.14-10-.505-.002-1.01.031-1.51.1-1.907.24-3.721.962-5.27 2.1C1.56 6.182.457 9.731 1.023 13.217c.566 3.486 2.734 6.504 5.857 8.153l.53.21V27c0 1.68 1 4 2.67 4H29c.1 0 .56-1 .65-1 .048-.145.072-.297.07-.45l.08-11.25c.008-.329-.119-.646-.351-.879-.233-.232-.55-.36-.879-.351z" transform="translate(-271 -4025) translate(3 2846) translate(253 696) translate(0 467) translate(16 16)"/>
+                            <path stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M22.72 15.15c.315-1.037.473-2.116.47-3.2C23.187 5.864 18.344.883 12.26.71h-.62C8.68.782 5.871 2.027 3.83 4.17h0C1.384 6.717.278 10.265.842 13.751c.564 3.486 2.734 6.504 5.858 8.149l.53.22" transform="translate(-271 -4025) translate(3 2846) translate(253 696) translate(0 467) translate(16 16)"/>
+                            <path stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M7.52 19.54c-.06-.14-.6-1.16-.66-1.31-.696-2.02-1.034-4.144-1-6.28C5.82 5.74 8.57.71 12 .71c3.43 0 6.14 5 6.14 11.24 0 1.17-.1 2.337-.3 3.49M.69 11.95L23.19 11.95" transform="translate(-271 -4025) translate(3 2846) translate(253 696) translate(0 467) translate(16 16)"/>
+                            <path stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M31.3 19.29v8.15c0 1.434-.797 2.749-2.07 3.41-.553.297-1.172.452-1.8.45h-16c-2.132 0-3.86-1.728-3.86-3.86v-8.15c-.005-.623.143-1.237.43-1.79.669-1.269 1.986-2.062 3.42-2.06h16c1.025-.005 2.01.398 2.739 1.12.728.722 1.138 1.705 1.141 2.73z" transform="translate(-271 -4025) translate(3 2846) translate(253 696) translate(0 467) translate(16 16)"/>
+                            <path stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M30.2 17l-9.7 7.36c-.694.528-1.656.528-2.35 0l-9.7-7.43M23.19 22.48L29.92 29.76M15.19 22.59L8.74 29.56" transform="translate(-271 -4025) translate(3 2846) translate(253 696) translate(0 467) translate(16 16)"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
