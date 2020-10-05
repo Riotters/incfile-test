@@ -38,12 +38,10 @@ export const about = {
             `Cleaning services`,
         ],
     },
-    text5: [
-        {
+    link: {
             text: `Your Tax Preparation Checklist`,
             url: `/`,
         },
-    ],
     header4: `Include Other Work-from-Home Expenses`,
     list4: {
         header: `You can also claim other expenses if you work from home, including:`,
@@ -54,12 +52,10 @@ export const about = {
         ],
     },
     text6: `Note that you cannot write off telephone costs for the first landline into your home, but you can deduct the cost of additional lines used for business.`,
-    text7: [
-        {
+    link2: {
         text: `Best and Worst States for Small Business Taxes`,
         url: `/`,
         },
-    ],
     header5: `Minimize Business Taxes by Using a Vehicle for Work`,
     text8: `If you use a vehicle for business, you can deduct expenses.`,
     list5: {
@@ -72,12 +68,10 @@ export const about = {
     header6: `Write Off Part of Your Business Taxes by Funding Retirement Accounts`,
     text9: `Retirement accounts are a great way to defer your income and get a tax deduction. You can use an Individual Retirement Account (IRA) to defer up to $5,500 in income, although you will pay tax when you withdraw money from the account on retirement. Note that if you also have a separate 401(k) provided by your business, you can only earn up to a certain amount before you lose this deduction. Additionally, you can’t deduct contributions made to a Roth plan, either as an individual or as part of a 401(k).`,
     text10: `If you do have a 401(k) provided by your business, such as a SEP or SIMPLE plan, you can deduct contributions made to the IRA portion of the plan. These plans also have higher contribution and deductible limits than Individual Retirement Accounts.`,
-    text11: [
-        {
+    link3: {
             text: `How to Set Your New Business Up for Tax Success`,
             url: `/`,
         },
-    ],
     header7: `Deduct the Costs of Business Equipment, Furniture, Technology and Other Assets`,
     text12: `If you buy equipment, furniture, hardware, software, sundries or other assets for business use, you can deduct them from your earnings.`,
     list6: {
@@ -107,12 +101,10 @@ export const about = {
     text15: `Tax credits are complex, so speak to a tax professional to find out what you can claim.`,
     header9: `Understand and Write Off Bad Debts`,
     text16: `If you have invoices that have gone unpaid, and you use accrual accounting, you can deduct the cost of those bad debts from your business earnings.`,
-    text17: [
-        {
+    link4: {
             text: `Freelance Taxes: How Much to Budget When You’re Self-Employed`,
             url: `/`,
         },
-    ],
     header10: `Deduct Interest on Business Loans`,
     text18: `If you take out a loan for your business, you can normally deduct any interest on your repayments as an expense against business taxes, although there are some limitations.`,
     header11: `Don’t Forget Professional, Legal and Accounting Fees`,
@@ -122,6 +114,10 @@ export const about = {
     header13: `Remember to Talk to Your Accountant or Tax Preparer`,
     text21: `Every business circumstance is unique, and there may be situations where some of these deductions don’t apply, or where you could claim additional expenses. That’s why it’s always important to see a qualified account or tax professional and get their advice on your business affairs.`,
     text22: `Incfile provides a Business Tax service that makes it easy for you to prepare and file your business taxes.`,
+    button: {
+        text: `Try IncFile's Business Tax Service`,
+        url: `/`,
+    },
     header14: `Related Articles`,
     links2: [
         {
