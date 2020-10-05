@@ -55,6 +55,7 @@ const IndexPage = () => (
         <h2>Forms</h2>
         <Link to="/forms/fictitious-business-name">Assumed Business Name</Link>
         <Link to="/forms/amendment">Articles of Amendment</Link>
+        <Link to="/forms/annual-report">Annual Report</Link>
         <Link to="/forms/cert-good-standing">Certificate of Good Standing</Link>
         <Link to="/forms/dissolution">Articles of Dissolution</Link>
         <Link to="/forms/change-agent">Change of Registered Agent</Link>
@@ -63,6 +64,7 @@ const IndexPage = () => (
         <Link to="/forms/order-business-license">Business License Research Package</Link>
         <Link to="/forms/ra-form">Registered Agent Service</Link>
         <Link to="/forms/ein-form">Federal Employer Identification Number (EIN) / Tax ID Number</Link>
+        <Link to="/forms/kit-info">Corporate / LLC Kit</Link>
 
         <h2>Manage Your Company</h2>
         <Link to="/manage-your-company">Manage your company</Link>
