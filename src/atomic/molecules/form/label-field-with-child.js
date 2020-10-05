@@ -6,6 +6,10 @@ import Link from "../../atoms/links/link";
 const Wrapper = styled.div`
   margin-bottom: ${(props) => (props.bottomMargin ? `${props.bottomMargin}px` : "")};
 
+  @media (min-width: 769px){
+    margin-bottom: ${(props) => (props.bottomMarginMD ? `${props.bottomMarginMD}px` : "")};
+  }
+
   .top {
     display: flex;
     justify-content: space-between;
@@ -15,15 +19,22 @@ const Wrapper = styled.div`
   .bottom {
     display: flex;
     width: 100%;
+    
+    ${props => props.contentMarginTop &&
+        "margin-top:" + props.contentMarginTop
+    }
   }
 `;
 
-const InputField = ({ className, children, content, htmlFor, bottomMargin }) => (
-  <Wrapper className={className} bottomMargin={bottomMargin}>
-    <div className="top">
-      {content.label && <Label text={content.label} htmlFor={htmlFor} />}
-      {content.link && <Link linkUrl={content.link.url} linkText={content.link.text} bottomMargin="0" />}
-    </div>
+const InputField = ({ className, children, content, htmlFor, bottomMargin, bottomMarginMD, contentMarginTop}) => (
+  <Wrapper className={className} bottomMargin={bottomMargin} bottomMarginMD={bottomMarginMD} contentMarginTop={contentMarginTop}>
+      {content &&
+          <div className="top">
+              {content.label && <Label text={content.label} htmlFor={htmlFor} />}
+              {content.link && <Link linkUrl={content.link.url} linkText={content.link.text} bottomMargin="0" />}
+          </div>
+      }
+
     <div className="bottom">{children}</div>
   </Wrapper>
 );

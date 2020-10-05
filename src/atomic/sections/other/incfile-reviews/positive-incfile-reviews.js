@@ -1,11 +1,11 @@
-import React from 'react';
-import styled from 'styled-components';
-import parse from 'html-react-parser';
+import React from "react";
+import styled from "styled-components";
+import parse from "html-react-parser";
 import { Tabs, Panel, useTabState } from "@bumaga/tabs";
 
-import { Paragraph } from '../../../atoms/typography/paragraph';
+import { Paragraph } from "../../../atoms/typography/paragraph";
 import Oval from "../../../atoms/icons/oval";
-import { color } from '../../../../components/styles/colors';
+import { color } from "../../../../components/styles/colors";
 import { shadow } from "../../../atoms/styles/shadows";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-blue3.inline.svg";
 import OvalSVG2 from "../../../../images/ovals/top-right-transparent-babyblue2.inline.svg";
@@ -14,16 +14,16 @@ import ContentCenter from "../../../partials/content-center";
 import RatingRow from "../../../atoms/boxes/rating-row";
 import CartBlock from "../../../molecules/blocks/cart-block";
 import RatingBlock from "../../../molecules/blocks/rating-block";
-import SlideReviews from './slide-reviews';
-import { positiveReview} from '../../../../static/other/incfile-reviews';
+import SlideReviews from "./slide-reviews";
+import { positiveReview } from "../../../../static/other/incfile-reviews";
 
 const Wrapper = styled.div`
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    padding: 150px 0 0 0;
-    text-align: center;
-`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 150px 0 0 0;
+  text-align: center;
+`;
 
 const TabsWrapper = styled.div`
   display: flex;
@@ -37,7 +37,7 @@ const TabsWrapper = styled.div`
   overflow: hidden;
 
   @media screen and (min-width: 769px) {
-      max-width: 560px;
+    max-width: 560px;
   }
 
   button {
@@ -109,52 +109,51 @@ const Tab = ({ children }) => {
 };
 
 const PositiveIncfileReviews = () => (
-    <Wrapper>
-        <Oval className="oval" height="720" width="720" top="8" left="0" y="0">
-            <OvalSVG />
-        </Oval>
+  <Wrapper>
+    <Oval className="oval" height="720" width="720" top="8" left="0" y="0">
+      <OvalSVG />
+    </Oval>
 
-        <Oval className="oval" height="420" width="420" bottom="15" right="0" y="0">
-            <OvalSVG2 />
-        </Oval>
+    <Oval className="oval" height="420" width="420" bottom="15" right="0" y="0">
+      <OvalSVG2 />
+    </Oval>
 
-            <HeadingCenter
-                className="heading"
-                headline={positiveReview.header}
-                headlineWidth="770"
-                text={positiveReview.text1}
-            /> 
+    <HeadingCenter className="heading" headline={positiveReview.header} headlineWidth="770" text={positiveReview.text1} />
 
-            <ContentCenter contentWidth="920">
-                <Tabs>
-                    <TabsWrapper>
-                        <Scroller>
-                            <Tab>Facebook</Tab>
-                            <Tab>Shopper Review</Tab>
-                        </Scroller>
-                    </TabsWrapper>
-                    <PanelsWrapper>
-                        <Panel>
-                            <Paragraph big mixed={true}>{parse(positiveReview.facebook.text1)}</Paragraph>   
-                            <SlideReviews content={positiveReview.facebook.reviews} />
-                        </Panel>
+    <ContentCenter contentWidth="920">
+      <Tabs>
+        <TabsWrapper>
+          <Scroller>
+            <Tab>Facebook</Tab>
+            <Tab>Shopper Review</Tab>
+          </Scroller>
+        </TabsWrapper>
+        <PanelsWrapper>
+          <Panel>
+            <Paragraph big mixed={true}>
+              {parse(positiveReview.facebook.text1)}
+            </Paragraph>
+            <SlideReviews content={positiveReview.facebook.reviews} />
+          </Panel>
 
-                        <Panel>
-                        <Paragraph big mixed={true}>{parse(positiveReview.shopper.text1)}</Paragraph>
-                            <SlideReviews content={positiveReview.shopper.reviews} />
-                        </Panel>
-                    </PanelsWrapper>
-                </Tabs>
+          <Panel>
+            <Paragraph big mixed={true}>
+              {parse(positiveReview.shopper.text1)}
+            </Paragraph>
+            <SlideReviews content={positiveReview.shopper.reviews} />
+          </Panel>
+        </PanelsWrapper>
+      </Tabs>
 
-                <RatingRow>
-                <CartBlock />
-                <RatingBlock />
-                </RatingRow>
-                <Paragraph big mixed={true} topMargin="30">
-                {parse(positiveReview.text2)}
-                </Paragraph>
-            </ContentCenter>
-    </Wrapper>   
-)
+      <RatingRow>
+        <CartBlock />
+        <RatingBlock />
+      </RatingRow>
+      <Paragraph big mixed={true} topMargin="30">
+        {parse(positiveReview.text2)}
+      </Paragraph>
+    </ContentCenter>
+  </Wrapper>
+);
 
 export default PositiveIncfileReviews;

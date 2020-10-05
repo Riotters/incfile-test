@@ -9,17 +9,24 @@ import Tab2SVG from "../../../images/icons/s-corporation-or-c-corporation.inline
 import Tab3SVG from "../../../images/icons/rocket.inline.svg";
 import Tab4SVG from "../../../images/icons/heart-flower.inline.svg";
 import Tab5SVG from "../../../images/icons/sole-propriotership.inline.svg";
+import TexasSVG from "../../../images/icons/texas.inline.svg";
+import DelawareSVG from "../../../images/icons/delaware.inline.svg";
+import NevadaSVG from "../../../images/icons/nevada.inline.svg";
+import FloridaSVG from "../../../images/icons/florida.inline.svg";
 import ArrowSVG from "../../../images/arrow.inline.svg";
 import LLCLimitedSVG from "../../../images/icons/llc-limited-liability-protection.inline.svg";
 import LLCTaxesSVG from "../../../images/icons/llc-taxes-and-tax-returns.inline.svg";
 import { Collapse } from "react-collapse";
 import VisibilitySensor from "../../../components/VisibilitySensor";
+import ArrowLink from "../../molecules/buttons/text";
 import { Heading } from "../../atoms/typography/heading";
 import { Paragraph } from "../../atoms/typography/paragraph";
 import IconListColorBox from "../../molecules/text-blocks/icon-h4-list-color";
 import Circle from "../../atoms/icons/circle";
 import Table from "../tables/the-c-corp-table";
 import Table2 from "../tables/the-nonprofit-corp-table";
+import AccordionWithCheckmark from "../accordion/accordion-with-checkmark";
+import AccordionWithCounting from "../accordion/accordion-with-counting";
 
 const Wrapper = styled.div`
   display: flex;
@@ -176,6 +183,63 @@ const Arrow = styled.div`
   }
 `;
 
+const Grid = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  max-width: 670px;
+  grid-gap: 8px;
+  margin-bottom: 32px;
+`;
+
+const ColorBox = styled.div`
+  display: flex;
+  background-color: ${color.orange3};
+  border-radius: 5px;
+  padding: 35px 35px 35px 88px;
+  position: relative;
+
+  &:first-child {
+    border-radius: 15px 5px 5px 5px;
+  }
+
+  &:nth-child(2) {
+    border-radius: 5px 15px 5px 5px;
+  }
+
+  &:nth-last-child(2) {
+    border-radius: 5px 5px 5px 15px;
+  }
+
+  &:last-child {
+    border-radius: 5px 5px 15px 5px;
+  }
+`;
+
+const ColorboxIcon = styled.span`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  transform: translateY(-50%);
+`;
+
+const Text = styled.span`
+  display: inline;
+  font-family: Avenir, sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: ${color.black};
+`;
+
 const cn = (...args) => args.filter(Boolean).join(" ");
 
 const Tab = ({ children }) => {
@@ -189,6 +253,7 @@ const Tab = ({ children }) => {
 };
 
 const icons = [<Tab4SVG />, <Tab4SVG />, <Tab4SVG />, <Tab4SVG />, <Tab4SVG />];
+const iconsState = [<TexasSVG />, <DelawareSVG />, <NevadaSVG />, <FloridaSVG />];
 
 const CCorpTabs = ({ layout, columns, content }) => (
   <Container>
@@ -219,20 +284,47 @@ const CCorpTabs = ({ layout, columns, content }) => (
                   <Paragraph big bottomMargin="48">
                     {content.content[0].text}
                   </Paragraph>
+                  <Heading size="3">{content.content[0].header2}</Heading>
+                  <Paragraph big bottomMargin="48">
+                    {content.content[0].text2}
+                  </Paragraph>
+                  <AccordionWithCheckmark content={content.content[0].list} tab bottomMargin="40" />
+                  <Heading size="3">{content.content[0].header3}</Heading>
+                  <Paragraph big bottomMargin="48">
+                    {content.content[0].text3}
+                  </Paragraph>
+                  <AccordionWithCounting content={content.content[0].list2} tab bottomMargin="40" />
+                  <Heading size="3">{content.content[0].header4}</Heading>
+                  <Paragraph big bottomMargin="0">
+                    {content.content[0].text4}
+                  </Paragraph>
                 </PanelWrapper>
               </Panel>
               <Panel>
                 <PanelWrapper className="panel2" layout={layout}>
                   <Heading size="3">{content.content[1].header}</Heading>
-                  <Paragraph big bottomMargin="40">
-                    {content.content[1].text}
+                  <Paragraph big>{content.content[1].text}</Paragraph>
+                  <Paragraph big bottomMargin="24">
+                    {content.content[1].text2}
                   </Paragraph>
+                  <ArrowLink content={content.content[1].link} />
                 </PanelWrapper>
               </Panel>
               <Panel>
                 <PanelWrapper className="panel3" layout={layout}>
                   <Heading size="3">{content.content[2].header}</Heading>
-                  <Paragraph big bottomMargin="40">{content.content[2].text}</Paragraph>
+                  <Paragraph big bottomMargin="56">
+                    {content.content[2].text}
+                  </Paragraph>
+                  <Grid>
+                    {content.content[2].boxes.map((box, i) => (
+                      <ColorBox>
+                        <ColorboxIcon>{iconsState[i]}</ColorboxIcon>
+                        <Text>{box}</Text>
+                      </ColorBox>
+                    ))}
+                  </Grid>
+                  <ArrowLink content={content.content[2].link} />
                 </PanelWrapper>
               </Panel>
               <Panel>
@@ -245,6 +337,8 @@ const CCorpTabs = ({ layout, columns, content }) => (
                 <PanelWrapper className="panel4" layout={layout}>
                   <Heading size="3">{content.content[4].header}</Heading>
                   <Paragraph big>{content.content[4].text}</Paragraph>
+                  <IconListColorBox color={color.blue3} content={content.content[4].box} rounded bottomMargin="48" />
+                  <Paragraph big>{content.content[4].text2}</Paragraph>
                 </PanelWrapper>
               </Panel>
             </Collapse>

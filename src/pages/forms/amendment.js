@@ -49,11 +49,11 @@ const summaryList = [
     {description: "Processing Fee"},
 ]
 
-const FictitiousBusinessNamePage = () => (
+const AmendmentForm = () => (
     <Layout>
-        <SEO title="WIP Page" description="wip page"/>
+        <SEO title="Articles of Amendment" description="Articles of Amendment"/>
 
-        <FormLayout formTitle="Articles of Amendment">
+        <FormLayout formTitle="Articles of Amendment" hasInfoBox infoBoxText="As time passes and businesses evolve, you may find that you are in a situation where your business name no longer fits the services you provide or perhaps the leadership team of your company is undergoing changes. Any major event that alters the information on your Articles of Incorporation or Articles of Organization needs to be reported to your secretary of state by filing an Articles of Amendment form.">
 
             <LeftColumn>
                 <FormSection icon={ContactIcon} title="Contact Information">
@@ -160,4 +160,4 @@ const FictitiousBusinessNamePage = () => (
     </Layout>
 )
 
-export default FictitiousBusinessNamePage
+export default AmendmentForm

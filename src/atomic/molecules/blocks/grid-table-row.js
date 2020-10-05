@@ -28,9 +28,13 @@ const Cell = styled.div`
     min-width: auto;
   }
 
+  ${(props) =>
+    !props.noSeparator &&
+    `
   &:not(:last-child) {
     border-right: 2px solid ${color.grey4};
   }
+  `};
 `;
 
 const ListItem = styled(Paragraph)`
@@ -50,11 +54,11 @@ const ListItem = styled(Paragraph)`
   }
 `;
 
-const GridTableRow = ({ className, content, header, headerSize, list, columns, textCenter }) => (
+const GridTableRow = ({ className, content, header, headerSize, list, columns, textCenter, noSeparator }) => (
   <Wrapper className={className} columns={columns}>
     {columns && console.log(columns.length)}
     {content.map((item) => (
-      <Cell textCenter={textCenter}>
+      <Cell textCenter={textCenter} noSeparator={noSeparator}>
         {header && (
           <Heading size={headerSize ? headerSize : "4"} bottomMargin="0">
             {item}

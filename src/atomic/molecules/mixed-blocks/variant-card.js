@@ -148,7 +148,7 @@ const PricingCard = ({ className, content, image, ...rest }) => (
       <Image filename={image} />
     </ImageWrapper>
     <Price>${content.price}</Price>
-    <Button theme="primary48" content={content.button} margin="0 0 32px 0" arrow />
+    <Button theme="primary48" content={content.button} margin="0 0 32px 0" wrap arrow />
     <ul style={{marginBottom: "48px"}}>
       {content.fees.map((fee) => (
         <li>
