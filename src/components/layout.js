@@ -16,6 +16,7 @@ import Footer from "./footer-v2"
 //import MarkPro from "../fonts/mark-pro/MarkPro-Bold.woff2"
 import "../fonts/fonts.css"
 import { color } from "./styles/colors"
+import HeaderAlt from "./header-v2";
 
 const GlobalStyle = createGlobalStyle`
 
@@ -183,7 +184,8 @@ a {
 }
 `
 
-const Layout = ({ children }) => {
+
+const Layout = ({ children, isDashboardPage, header }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -197,9 +199,14 @@ const Layout = ({ children }) => {
   return (
     <>
         <GlobalStyle />
-        <Header siteTitle={data.site.siteMetadata.title} />
+        {header === "v2" && !isDashboardPage && (
+            <HeaderAlt siteTitle={data.site.siteMetadata.title} />
+        )}
+        {header == null && !isDashboardPage && (
+            <Header siteTitle={data.site.siteMetadata.title} />
+        )}
         <main>{children}</main>
-        <Footer />
+        {!isDashboardPage && <Footer />}
         
           {/** Use this element to append the lightbox video outside of main wrapper 
            * So that it should be overlay entire of page
@@ -207,10 +214,14 @@ const Layout = ({ children }) => {
         <div id="portal-lightbox"></div>
     </>
   )
-}
+};
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-}
+};
+
+Layout.defaultProps = {
+    header: null,
+};
 
 export default Layout

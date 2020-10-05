@@ -115,8 +115,8 @@ const Arrow = styled.div`
   }
 `;
 
-const Button = ({ content, className, theme, height, width, arrow, arrow2, margin, marginSM, marginMD, marginLG, padding, right, wrap }) => (
-  <Wrapper className={className} to={content.url ? content.url : content} height={height} width={width} arrow={arrow} arrow2={arrow2} theme={theme} margin={margin} marginSM={marginSM} marginMD={marginMD} marginLG={marginLG} padding={padding} wrap={wrap}>
+const Button = ({ content, id, className, theme, height, width, arrow, arrow2, margin, marginSM, marginMD, marginLG, padding, right, wrap, onClick }) => (
+  <Wrapper id={id} className={className} to={content.url ? content.url : content} height={height} width={width} arrow={arrow} arrow2={arrow2} theme={theme} margin={margin} marginSM={marginSM} marginMD={marginMD} marginLG={marginLG} padding={padding} wrap={wrap} onClick={onClick}>
     {content.text ? content.text : content}
     {arrow && (
       <Arrow className="arrow1" theme={theme} right={right}>

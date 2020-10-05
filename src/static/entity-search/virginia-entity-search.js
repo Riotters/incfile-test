@@ -48,7 +48,7 @@ export const search = {
       label: `Email*`,
     },
     button: {
-      text: `Download Now`,
+      text: `Check Name Availability`,
       url: `/`,
     },
   },
