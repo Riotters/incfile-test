@@ -46,6 +46,7 @@ import CompareTable from "../components/compare-table/compare-table";
 import {CompareStateFilingTimes} from "../static/compare-state-filing-times";
 import StatesTable from "../components/states-table/states-table";
 import {WhichStatesAreFast} from "../static/which-states-are-fast";
+import StatesMap from "../components/states-map/states-map";
 
 const topimagebox = {
     header: `How Long does it take to file an Annual Report?`,
@@ -586,6 +587,12 @@ const ComponentsPage = () => (
             <Wrapper>
                 <h3>Which States Are Fast?</h3>
                 <StatesTable entries={WhichStatesAreFast}/>
+            </Wrapper>
+        </Container>
+        <Container>
+            <Wrapper>
+                <h3>Want to learn more about LLCs in your state?</h3>
+                <StatesMap/>
             </Wrapper>
         </Container>
     </Layout>
