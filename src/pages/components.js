@@ -42,6 +42,10 @@ import Adventages from "../components/adventages";
 import InfoCardsSection from "../atomic/partials/info-cards-section";
 import {InfoCards} from "../static/type-of-business/airbnb";
 import CircleWithText from "../atomic/molecules/blocks/circle-with-text-block";
+import CompareTable from "../components/compare-table/compare-table";
+import {CompareStateFilingTimes} from "../static/compare-state-filing-times";
+import StatesTable from "../components/states-table/states-table";
+import {WhichStatesAreFast} from "../static/which-states-are-fast";
 
 const topimagebox = {
     header: `How Long does it take to file an Annual Report?`,
@@ -570,6 +574,18 @@ const ComponentsPage = () => (
                 <GreyWrapper>
                     <CircleWithText withBg={true} textInsideCircle="70" symbol="%" textLine="Of teens trust influencers more than traditional celebrities" />
                 </GreyWrapper>
+            </Wrapper>
+        </Container>
+        <Container>
+            <Wrapper>
+                <h3>Easily Compare State Filing Times</h3>
+                <CompareTable headers={CompareStateFilingTimes.headers} entries={CompareStateFilingTimes.entries}/>
+            </Wrapper>
+        </Container>
+        <Container>
+            <Wrapper>
+                <h3>Which States Are Fast?</h3>
+                <StatesTable entries={WhichStatesAreFast}/>
             </Wrapper>
         </Container>
     </Layout>

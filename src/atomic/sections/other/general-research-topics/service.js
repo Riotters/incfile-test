@@ -12,11 +12,12 @@ import PlayerSVG from "../../../../images/icons/player.inline.svg";
 import Curve from "../../../atoms/icons/curve";
 import CurveSVG from "../../../../images/curves/top-left-bottom-right.inline.svg";
 import Curve2SVG from "../../../../images/curves/bottom-left-top-right-reverse-big.inline.svg";
+import LightBoxVideo from "../../../../components/LightBox";
 
 const Service = styled.section`
   position: relative;
-  padding-top: 104px;
-  padding-bottom: 120px;
+  padding-top: 80px;
+  padding-bottom: 220px;
   overflow: hidden;
 `;
 
@@ -78,18 +79,18 @@ const PlayButton = styled.button`
 
 const ServiceSection = ({ className, content }) => (
   <Service className={className}>
-    <Oval className="oval" height="652" width="652" bottom="5" left="0">
+    <Oval className="oval" height="652" width="652" top="55" left="0" y="-50">
       <OvalSVG />
     </Oval>
-    <Oval className="oval" height="300" width="300" top="48" left="50" x="122">
+    <Oval className="oval" height="300" width="300" top="44" left="48" x="122">
       <Oval2SVG />
     </Oval>
-    <Curve bottom="270" left="80" color={color.purple2}>
+    <Curve bottom="375" left="80" color={color.purple2}>
       <Curve2SVG />
     </Curve>
-    <HeadingCenter headline={content.header} textWidth="770" text={content.text} bottomMargin="48" bottomMarginLG="80" />
+    <HeadingCenter headline={content.header} textWidth="770" text={content.text} linkText={content.link.text} linkUrl={content.link.url} bottomMargin="48" bottomMarginLG="80" />
     <ContentCenter>
-      <Video>
+      {/* <Video>
         <Curve top="-25" right="-29" color={color.purple1}>
           <CurveSVG />
         </Curve>
@@ -99,7 +100,8 @@ const ServiceSection = ({ className, content }) => (
             <PlayerSVG />
           </span>
         </PlayButton>
-      </Video>
+      </Video> */}
+      <LightBoxVideo thumbnailVideo="comparison-chart-video-3611" videoID="R_oIgzYh7NU" />
     </ContentCenter>
   </Service>
 );

@@ -4,7 +4,6 @@ import PropTypes from "prop-types"
 
 const Wrapper = styled.div`
   position: relative;
-  z-index: 1;
   width: 100%;
   max-width: 568px;
   padding-left: 30px;

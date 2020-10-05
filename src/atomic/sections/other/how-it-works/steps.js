@@ -11,15 +11,16 @@ import BlockSVG from "../../../../images/blocks.inline.svg";
 import List from "../../../organisms/lists/related-questions-list";
 import Oval from "../../../atoms/icons/oval";
 import Curve from "../../../atoms/icons/curve";
-import OvalSVG from "../../../../images/ovals/top-left-transparent-blue2.inline.svg";
-import Oval2SVG from "../../../../images/ovals/bottom-right-transparent-blue2.inline.svg";
+import OvalSVG from "../../../../images/ovals/top-right-transparent-blue2.inline.svg";
+import Oval2SVG from "../../../../images/ovals/top-left-transparent-blue2.inline.svg";
+import Oval3SVG from "../../../../images/ovals/top-left-transparent-green3.inline.svg";
 import CurveSVG from "../../../../images/curves/top-left-bottom-right.inline.svg";
 
 const Steps = styled.section`
   position: relative;
   margin-top: 15px;
   padding-top: 104px;
-  padding-bottom: 104px;
+  padding-bottom: 0;
   
   &::before {
     content: "";
@@ -65,6 +66,15 @@ const ImageWrapper = styled.div`
 
 const StepsSection = ({ className, content }) => (
   <Steps className={className}>
+    <Oval className="oval" height="720" width="720" top="13" right="0">
+        <OvalSVG />
+    </Oval>
+    <Oval className="oval" height="570" width="570" top="0" left="0">
+        <Oval2SVG />
+    </Oval>
+    <Oval className="oval" height="420" width="420" bottom="5" left="0">
+        <Oval3SVG />
+    </Oval>
     <HeadingCenter headline={content.header} text={content.text} headlineWidth="700" bottomMargin="80" />
     <ContentCenter>
       <Box bottomMargin="120">

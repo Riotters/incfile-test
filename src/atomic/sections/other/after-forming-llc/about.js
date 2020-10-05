@@ -26,9 +26,6 @@ const AboutSection = ({ className, content }) => (
     <Oval className="oval" height="570" width="570" y="-40">
       <OvalSVG />
     </Oval>
-    <Oval className="oval" height="420" width="420" top="38" right="0">
-      <Oval2SVG />
-    </Oval>
     <Tabs content={content.tabs} />
   </About>
 );

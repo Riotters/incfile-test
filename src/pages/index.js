@@ -48,11 +48,21 @@ const IndexPage = () => (
         <Link to="/contact/existing-clients/">Existing clients</Link>
         <Link to="/contact/new-sales/">New Sales</Link>
 
+        <h2>About</h2>
+        <Link to="/other/why-choose-incfile">Why Choose Incfile</Link>
+        <Link to="/other/about/">About us</Link>
+
         <h2>Forms</h2>
         <Link to="/forms/fictitious-business-name">Assumed Business Name</Link>
         <Link to="/forms/amendment">Articles of Amendment</Link>
         <Link to="/forms/cert-good-standing">Certificate of Good Standing</Link>
         <Link to="/forms/dissolution">Articles of Dissolution</Link>
+        <Link to="/forms/change-agent">Change of Registered Agent</Link>
+        <Link to="/forms/trademark">Trademark Form</Link>
+        <Link to="/forms/s-corp-election-form">S Corporation Tax Election with Form 2553</Link>
+        <Link to="/forms/order-business-license">Business License Research Package</Link>
+        <Link to="/forms/ra-form">Registered Agent Service</Link>
+        <Link to="/forms/ein-form">Federal Employer Identification Number (EIN) / Tax ID Number</Link>
 
         <h2>Manage Your Company</h2>
         <Link to="/manage-your-company">Manage your company</Link>
@@ -70,15 +80,17 @@ const IndexPage = () => (
         <Link to="/manage-your-company/filling-business-taxes">Filling Business Taxes</Link>
         <Link to="/manage-your-company/fictitious-business">Fictitious Business</Link>
         <Link to="/manage-your-company/home-page-v3">Home Page v3</Link>
+
         <h2>Review Entity Type</h2>
         <Link to="/review-entity-type/nonprofit">Nonprofit (WIP)</Link>
         <Link to="/review-entity-type/c-corporation">C Corporation (no details)</Link>
         <Link to="/review-entity-type/s-corporation">S Corporation (no details)</Link>
         <Link to="/review-entity-type/llc">LLC (no details)</Link>
+
         <h2>Learning Center Entity</h2>
         <Link to="/learning-center-entity/help-center">Help Center</Link>
-        <Link to="/learning-center-entity/help-center-article">Help Center Article (no video)</Link>
-        <Link to="/learning-center-entity/comparison-chart">Comparison Chart (no video)</Link>
+        <Link to="/learning-center-entity/help-center-article">Help Center Article</Link>
+        <Link to="/learning-center-entity/comparison-chart">Comparison Chart</Link>
         <Link to="/learning-center-entity/business-checklist">Business Checklist (WIP)</Link>
         <Link to="/learning-center-entity/annual-report">Annual Report Due Date</Link>
         <Link to="/learning-center-entity/business-license-req">Business License Requirements (no API)</Link>
@@ -88,34 +100,70 @@ const IndexPage = () => (
         <Link to="/learning-center-entity/s-corp-tax-calculator">S Corp Tax Calculator (WIP)</Link>
         <Link to="/learning-center-entity/sales-tax-calculator">Sales Tax Calculator</Link>
         <Link to="/learning-center-entity/state-filing-times">State Filing Times (no details)</Link>
-        <Link to="/learning-center-entity/state-information-california">State Information California (WIP)</Link>
         <Link to="/learning-center-entity/ongoing-filing-requirements">Ongoing Filing Requirements (no details)</Link>
         <Link to="/learning-center-entity/business-resources">Business Resources (WIP)</Link>
         <Link to="/learning-center-entity/business-name-search">Business Name Search (no details)</Link>
+
+        <h2>Corporation State Information</h2>
+        <Link to="/corporation-state-information/california-corporation">California Corporation (WIP)</Link>
+
+        <h2>Search your name availability</h2>
+        <Link to="/entity-search/new-york-entity-search">New York Entity Search</Link>
+        <Link to="/entity-search/virginia-entity-search">Virginia Entity Search</Link>
+        <Link to="/entity-search/new-jersey-entity-search">New Jersey Entity Search</Link>
+        <Link to="/entity-search/delaware-entity-search">Daleware Entity Search</Link>
+        <Link to="/entity-search/michigan-entity-search">Michigan Entity Search</Link>
+        <Link to="/entity-search/florida-entity-search">Florida Entity Search</Link>
+        <Link to="/entity-search/georgia-entity-search">Georgia Entity Search</Link>
+        <Link to="/entity-search/texas-entity-search">Texas Entity Search</Link>
+
         <h2>Other</h2>
         <Link to="/other/form-an-llc">Form An LLC (WIP)</Link>
-        <Link to="/other/form-your-corporation">Form Your Corporation (WIP)</Link>
-        <Link to="/other/start-an-llc">Start An LLC (WIP)</Link>
-        <Link to="/other/general-research-topics">General Research Topics (WIP)</Link>
-        <Link to="/other/incfile-coupon-promo-code">Incfile Coupon Promo Code (WIP)</Link>
-        <Link to="/other/new-york-entity-search">New York Entity Search (WIP)</Link>
-        <Link to="/other/virginia-entity-search">Virginia Entity Search (WIP)</Link>
-        <Link to="/other/new-jersey-entity-search">New Jersey Entity Search (WIP)</Link>
-        <Link to="/other/delaware-entity-search">Daleware Entity Search (WIP)</Link>
-        <Link to="/other/how-it-works">How It Works (WIP)</Link>
-        <Link to="/other/free-llc">Free LLC (WIP)</Link>
+        <Link to="/other/form-your-corporation">Form Your Corporation</Link>
+        <Link to="/other/start-an-llc">Start An LLC (no details)</Link>
+        <Link to="/other/general-research-topics">General Research Topics</Link>
+        <Link to="/other/incfile-coupon-promo-code">Incfile Coupon Promo Code</Link>
+        <Link to="/other/how-it-works">How It Works</Link>
+        <Link to="/other/free-llc">Free LLC</Link>
         <Link to="/other/incfile-reviews/">Customer Service Reviews</Link>
-        <Link to="/other/arizona-publication-newspaper-list">Arizona Publication Newspaper List (WIP)</Link>
-        <Link to="/other/after-forming-llc">After Forming LLC (WIP)</Link>
+        <Link to="/other/arizona-publication-newspaper-list">Arizona Publication Newspaper List</Link>
+        <Link to="/other/after-forming-llc">After Forming LLC</Link>
+        <Link to="/other/business-name-generator">Business Name Generator</Link>
         <Link to="/other/virtual-mailboxes">Virtual Mailboxes</Link>
         <Link to="/other/arizona-virtual-mailboxes">Arizona Virtual Mailboxes</Link>
         <Link to="/other/affiliates">Affiliates</Link>
         <Link to="/other/incorporation">Incorporation</Link>
         <Link to="/404">404</Link>
         <Link to="/503">503</Link>
+
+        <h2>Research Topics</h2>
+        <Link to="/research-topics/business-taxes">Business taxes</Link>
+        <Link to="/research-topics/business-taxes/sellers-permit">How to Get a Seller's Permit?</Link>
+        <Link to="/research-topics/business-taxes/minimizing-tax-expenses">Minimizing tax expenses</Link>
+        <Link to="/research-topics/business-taxes/which-entity-offers-the-best-tax-advantages">Which entity offers the best tax advantages?</Link>
+        <Link to="/research-topics/business-taxes/how-is-an-s-corporation-taxed">How is an S Corporation Taxed?</Link>
+        <Link to="/research-topics/business-taxes/is-nonprofit-the-same-as-tax-exempt">Is nonprofit the same as tax exempt?</Link>
+        <Link to="/research-topics/business-taxes/how-is-a-c-corporation-taxed">How is a C Corporation Taxed?</Link>
+        <Link to="/research-topics/c-corporation-info">C-Corporation</Link>
+        <Link to="/research-topics/c-corporation-info/what-is-a-corporate-seal">What is a Corporate Seal?</Link>
+        <Link to="/research-topics/c-corporation-info/which-entity-offers-the-best-tax-advantages">Which entity offers the best tax advantages?</Link>
+        <Link to="/research-topics/c-corporation-info/the-benefits-of-filing-a-c-corporation">The benefits of filing a C-corporation</Link>
+        <Link to="/research-topics/c-corporation-info/llcs-vs-c-corporation-which-is-best-for-your-business">LLCs vs C-Corporation: Which Is Best for Your Business?</Link>
+        <Link to="/research-topics/c-corporation-info/how-is-a-corporation-managed">How is a Corporation Managed?</Link>
+        <Link to="/research-topics/c-corporation-info/how-is-a-c-corporation-taxed">How is a C Corporation Taxed?</Link>
+        <Link to="/research-topics/c-corporation-info/am-i-required-to-hold-corporate-meetings">Am I Required to Hold Corporate Meetings?</Link>
+        <Link to="/research-topics/c-corporation-info/how-many-shares-of-stock-will-my-corporation-need">How Many Shares of Stock will my Corporation Need?</Link>
+        <Link to="/research-topics/c-corporation-info/what-are-bylaws">What are Bylaws?</Link>
+        <Link to="/research-topics/c-corporation-info/what-is-stock-par-value">What is Stock Par Value?</Link>
+        <Link to="/research-topics/c-corporation-info/what-is-the-form-2553">What is the Form 2553?</Link>
+        <Link to="/research-topics/c-corporation-info/what-are-the-differences-between-officers-directors-and-shareholders">What are the Differences Between Officers, Directors and Shareholders?</Link>
+        <Link to="/research-topics/c-corporation-info/are-non-u-s-residents-allowed-to-own-a-corporation-or-llc">Are Non-U.S. Residents Allowed to Own a Corporation or LLC?</Link>
+        <Link to="/research-topics/c-corporation-info/does-forming-an-llc-limited-liability-company-or-corporation-require-an-attorney">Does Forming an LLC (Limited Liability Company) or Corporation Require an Attorney?</Link>
+
         <h2>Blog</h2>
         <Link to="/blog">Blog (no API)</Link>
         <Link to="/article">Article (no API)</Link>
+
         <h2>Type of Business</h2>
         <Link to="/type-of-business/airbnb">Airbnb</Link>
         <Link to="/type-of-business/coach">Coach</Link>
@@ -158,6 +206,7 @@ const IndexPage = () => (
         <Link to="/type-of-business/laundromat">Laundromat</Link>
         <Link to="/type-of-business/landscaping-business">Landscaping Business</Link>
         <Link to="/type-of-business/home-business">Home Business</Link>
+
         <h2>Additional sites</h2>
         <Link to="/components">Components</Link>
       </Wrapper>

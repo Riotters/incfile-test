@@ -18,17 +18,17 @@ const Wrapper = styled(Link)`
   color: ${(props) => (props.theme === "primary40" || props.theme === "primary48" || props.theme === "primary56" ? color.white : color.orange1)};
   font-family: MarkPro;
   font-size: 16px;
-  line-height: 32px;
+  line-height: 24px;
   text-align: center;
   text-decoration: none;
   position: relative;
-  padding: ${(props) => (props.padding ? props.padding : props.theme === "primary40" || props.theme === "secondary40" ? "2px 30px" : props.theme === "primary48" || props.theme === "secondary48" ? "6px 38px" : props.theme === "primary56" || props.theme === "secondary56" ? "10px 46px" : "")};
+  padding: ${(props) => (props.padding ? props.padding : props.theme === "primary40" || props.theme === "secondary40" ? "6px 30px" : props.theme === "primary48" || props.theme === "secondary48" ? "10px 38px" : props.theme === "primary56" || props.theme === "secondary56" ? "14px 46px" : "")};
   margin: ${(props) => (props.margin ? props.margin : "")};
   transition: background-color 0.3s ease, color 0.3s ease;
 
   @media (min-width: 576px) {
     width: auto;
-    white-space: nowrap;
+    white-space: ${(props) => (props.wrap ? "" : "nowrap")};
     max-width: ${(props) => props.width};
     margin: ${(props) => (props.marginSM ? props.marginSM : "")};
   }
@@ -115,8 +115,8 @@ const Arrow = styled.div`
   }
 `;
 
-const Button = ({ content, className, theme, height, width, arrow, arrow2, margin, marginSM, marginMD, marginLG, padding, right }) => (
-  <Wrapper className={className} to={content.url ? content.url : content} height={height} width={width} arrow={arrow} arrow2={arrow2} theme={theme} margin={margin} marginSM={marginSM} marginMD={marginMD} marginLG={marginLG} padding={padding}>
+const Button = ({ content, id, className, theme, height, width, arrow, arrow2, margin, marginSM, marginMD, marginLG, padding, right, wrap, onClick }) => (
+  <Wrapper id={id} className={className} to={content.url ? content.url : content} height={height} width={width} arrow={arrow} arrow2={arrow2} theme={theme} margin={margin} marginSM={marginSM} marginMD={marginMD} marginLG={marginLG} padding={padding} wrap={wrap} onClick={onClick}>
     {content.text ? content.text : content}
     {arrow && (
       <Arrow className="arrow1" theme={theme} right={right}>

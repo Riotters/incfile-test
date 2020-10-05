@@ -49,11 +49,11 @@ const summaryList = [
     {description: "Processing Fee"},
 ]
 
-const FictitiousBusinessNamePage = () => (
+const DissolutionForm = () => (
     <Layout>
-        <SEO title="WIP Page" description="wip page"/>
+        <SEO title="Articles of Dissolution" description="Articles of Dissolution"/>
 
-        <FormLayout formTitle="Articles of Dissolution">
+        <FormLayout formTitle="Articles of Dissolution" hasInfoBox infoBoxText="In order to properly close a corporation or LLC that is no longer transacting business, the company must file Articles of Dissolution with the state of incorporation.">
 
             <LeftColumn>
                 <FormSection icon={ContactIcon} title="Contact Information">
@@ -160,4 +160,4 @@ const FictitiousBusinessNamePage = () => (
     </Layout>
 )
 
-export default FictitiousBusinessNamePage
+export default DissolutionForm
