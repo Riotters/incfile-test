@@ -36,6 +36,7 @@ const TextLeftLayout = styled.div`
 
         @media screen and (min-width: 769px) {
             display: block;
+            position: absolute !important; 
             width: 350px;
             bottom: 0;
             right: 100px;
