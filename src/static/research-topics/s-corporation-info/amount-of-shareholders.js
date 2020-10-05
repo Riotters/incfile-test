@@ -9,16 +9,9 @@ export const about = {
       url: `/research-topics/s-corporation-info`,
     },
   ],
-  header: `Who Will Typically Elect the S Corporation Status?`,
-  header2: `Who Will Typically Elect the S Corporation Status?`,
-  list: {
-    header: `Typically entrepreneurs will select the S-Corporation as the entity of choice for the following reasons:`,
-    list: [
-      `The S-Corporation combines the advantages of the sole proprietorship, the partnership, the LLC and the corporation into one entity.`,
-      `Unlike sole proprietors and the partners in a partnership the shareholders of the S-Corporation are granted the same level of limited liability and personal asset protection as are the shareholders of a corporation.`,
-      `The S-Corporation allows shareholders to avoid the “double taxation” levied on shareholders of C-Corporations that is because all of the income or losses in a S-Corporation are reported only once on the personal income tax returns of the S-Corporation’s shareholders.`,
-    ],
-  },
+  header: `Is there a limit to the amount of shareholders an S Corporation can have?`,
+  header2: `Is there a limit to the amount of shareholders an S Corporation can have?`,
+  text: `An S Corporation formed before 2004 was limited to 75 shareholders however the limit of shareholders for any S Corporation formed after 2004 was increased to 100 shareholders.`,
   header3: `Related Articles`,
   links2: [
     {
@@ -31,7 +24,7 @@ export const about = {
     },
     {
       text: `Which entity offers the best tax advantages?`,
-      url: `/research-topics/s-corporation-info/which-entity-offers-the-best-tax-advantages/`,
+      url: `/research-topics/s-corporation-info/tax-advantages/`,
     },
     {
       text: `The Advantages of Forming an S Corporation`,
@@ -55,15 +48,15 @@ export const about = {
     },
     {
       text: `Who Will Typically Elect the S Corporation Status?`,
-      url: `/research-topics/s-corporation-info/who-will-typically-elect-the-s-corporation-status/`,
+      url: `/research-topics/s-corporation-info/s-corporation-status/`,
     },
     {
       text: `Is there a limit to the amount of shareholders an S Corporation can have?`,
-      url: `/research-topics/s-corporation-info/is-there-a-limit-to-the-amount-of-shareholders-an-s-corporation-can-have/`,
+      url: `/research-topics/s-corporation-info/amount-of-shareholders/`,
     },
     {
       text: `Can a foreign resident be a shareholder in an S Corporation?`,
-      url: `/research-topics/s-corporation-info/can-a-foreign-resident-be-a-shareholder-in-an-s-corporation/`,
+      url: `/research-topics/s-corporation-info/foreign-resident-shareholder/`,
     },
     {
       text: `How is a Corporation Managed?`,
@@ -75,7 +68,7 @@ export const about = {
     },
     {
       text: `How Many Shares of Stock will my Corporation Need?`,
-      url: `/research-topics/s-corporation-info/how-many-shares-of-stock-will-my-corporation-need/`,
+      url: `/research-topics/s-corporation-info/corporation-need/`,
     },
     {
       text: `What are Bylaws?`,
@@ -91,7 +84,7 @@ export const about = {
     },
     {
       text: `What are the Differences Between Officers, Directors and Shareholders?`,
-      url: `/research-topics/s-corporation-info/what-are-the-differences-between-officers-directors-and-shareholders/`,
+      url: `/research-topics/s-corporation-info/directors-and-shareholders/`,
     },
     {
       text: `Does Forming an LLC (Limited Liability Company) or Corporation Require an Attorney?`,

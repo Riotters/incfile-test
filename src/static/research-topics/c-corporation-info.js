@@ -13,7 +13,7 @@ export const about = {
     },
     {
       text: `Which entity offers the best tax advantages?`,
-      url: `/research-topics/c-corporation-info/which-entity-offers-the-best-tax-advantages/`,
+      url: `/research-topics/c-corporation-info/tax-advantages/`,
     },
     {
       text: `The benefits of filing a C-corporation`,
@@ -37,7 +37,7 @@ export const about = {
     },
     {
       text: `How Many Shares of Stock will my Corporation Need?`,
-      url: `/research-topics/c-corporation-info/how-many-shares-of-stock-will-my-corporation-need/`,
+      url: `/research-topics/c-corporation-info/corporation-need/`,
     },
     {
       text: `What are Bylaws?`,
@@ -53,11 +53,11 @@ export const about = {
     },
     {
       text: `What are the Differences Between Officers, Directors and Shareholders?`,
-      url: `/research-topics/c-corporation-info/what-are-the-differences-between-officers-directors-and-shareholders/`,
+      url: `/research-topics/c-corporation-info/directors-and-shareholders/`,
     },
     {
       text: `Are Non-U.S. Residents Allowed to Own a Corporation or LLC?`,
-      url: `/research-topics/c-corporation-info/are-non-u-s-residents-allowed-to-own-a-corporation-or-llc/`,
+      url: `/research-topics/c-corporation-info/own-a-corporation-or-llc/`,
     },
     {
       text: `Does Forming an LLC (Limited Liability Company) or Corporation Require an Attorney?`,

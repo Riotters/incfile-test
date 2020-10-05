@@ -32,7 +32,7 @@ export const about = {
     },
     {
       text: `Which entity offers the best tax advantages?`,
-      url: `/research-topics/s-corporation-info/which-entity-offers-the-best-tax-advantages/`,
+      url: `/research-topics/s-corporation-info/tax-advantages/`,
     },
     {
       text: `The Advantages of Forming an S Corporation`,
@@ -56,15 +56,15 @@ export const about = {
     },
     {
       text: `Who Will Typically Elect the S Corporation Status?`,
-      url: `/research-topics/s-corporation-info/who-will-typically-elect-the-s-corporation-status/`,
+      url: `/research-topics/s-corporation-info/s-corporation-status/`,
     },
     {
       text: `Is there a limit to the amount of shareholders an S Corporation can have?`,
-      url: `/research-topics/s-corporation-info/is-there-a-limit-to-the-amount-of-shareholders-an-s-corporation-can-have/`,
+      url: `/research-topics/s-corporation-info/amount-of-shareholders/`,
     },
     {
       text: `Can a foreign resident be a shareholder in an S Corporation?`,
-      url: `/research-topics/s-corporation-info/can-a-foreign-resident-be-a-shareholder-in-an-s-corporation/`,
+      url: `/research-topics/s-corporation-info/foreign-resident-shareholder/`,
     },
     {
       text: `How is a Corporation Managed?`,
@@ -76,7 +76,7 @@ export const about = {
     },
     {
       text: `How Many Shares of Stock will my Corporation Need?`,
-      url: `/research-topics/s-corporation-info/how-many-shares-of-stock-will-my-corporation-need/`,
+      url: `/research-topics/s-corporation-info/corporation-need/`,
     },
     {
       text: `What are Bylaws?`,
@@ -92,7 +92,7 @@ export const about = {
     },
     {
       text: `What are the Differences Between Officers, Directors and Shareholders?`,
-      url: `/research-topics/s-corporation-info/what-are-the-differences-between-officers-directors-and-shareholders/`,
+      url: `/research-topics/s-corporation-info/directors-and-shareholders/`,
     },
     {
       text: `Does Forming an LLC (Limited Liability Company) or Corporation Require an Attorney?`,

@@ -5,7 +5,7 @@ import Buttonsbox from "../../../atomic/atoms/boxes/top-buttons-box";
 import Button from "../../../atomic/molecules/buttons/button";
 //Sections
 import Top from "../../../atomic/partials/top";
-import About from "../../../atomic/sections/research-topics/llc-info/are-non-u-s-residents-allowed-to-own-a-corporation-or-llc";
+import About from "../../../atomic/sections/research-topics/s-corporation-info/foreign-resident-shareholder";
 import Related from "../../../atomic/sections/learning-center-entity/help-center-article/related";
 import Categories from "../../../atomic/sections/learning-center-entity/help-center-article/categories";
 import Service from "../../../atomic/sections/learning-center-entity/help-center/service";
@@ -16,7 +16,7 @@ import Rocket from "../../../atomic/sections/review-entity-type/c-corporation/ro
 import Searchbar from "../../../atomic/molecules/form/searchbar";
 //Texts
 import { top, related, rocket, categories, service, tools } from "../../../static/learning-center-entity/help-center-article";
-import { about } from "../../../static/research-topics/llc-info/are-non-u-s-residents-allowed-to-own-a-corporation-or-llc";
+import { about } from "../../../static/research-topics/s-corporation-info/foreign-resident-shareholder";
 
 const HelpCenter = () => (
   <Layout>

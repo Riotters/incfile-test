@@ -9,9 +9,9 @@ export const about = {
       url: `/research-topics/c-corporation-info`,
     },
   ],
-  header: `Are Non-U.S. Residents Allowed to Own a Corporation or LLC?`,
-  header2: `Are Non-U.S. Residents Allowed to Own a Corporation or LLC?`,
-  text: `There are no citizenship or residence requirements for ownership of a C Corporation or an LLC. The S Corporation however does not allow nonresident aliens to be shareholders (owner), but any US citizen or resident alien may be a shareholder (owner). You would, of course, require an in state street address for the state to forward official legal and tax correspondence including service of process, known as the registered agent address, but neither residency nor citizenship is required for ownership of a C Corporation or an LLC.`,
+  header: `How Many Shares of Stock will my Corporation Need?`,
+  header2: `How Many Shares of Stock will my Corporation Need?`,
+  text: `The number of initial shares your corporation is authorized to distribute is specified in the Articles of Incorporation. The actual number is more or less arbitrary, at your discretion. IncFile uses a default number of 1500 shares (this is due to the fact that 1500 is easily divisible by 2, 3, 4, 5, 6), with a par value of one cent (if your state requires par value, otherwise no par value will be assigned). Some states charge more to form a corporation with a high number of shares and/or high par value.`,
   header3: `Related Articles`,
   links2: [
     {
@@ -20,7 +20,7 @@ export const about = {
     },
     {
       text: `Which entity offers the best tax advantages?`,
-      url: `/research-topics/c-corporation-info/which-entity-offers-the-best-tax-advantages/`,
+      url: `/research-topics/c-corporation-info/tax-advantages/`,
     },
     {
       text: `The benefits of filing a C-corporation`,
@@ -44,7 +44,7 @@ export const about = {
     },
     {
       text: `How Many Shares of Stock will my Corporation Need?`,
-      url: `/research-topics/c-corporation-info/how-many-shares-of-stock-will-my-corporation-need/`,
+      url: `/research-topics/c-corporation-info/corporation-need/`,
     },
     {
       text: `What are Bylaws?`,
@@ -60,11 +60,11 @@ export const about = {
     },
     {
       text: `What are the Differences Between Officers, Directors and Shareholders?`,
-      url: `/research-topics/c-corporation-info/what-are-the-differences-between-officers-directors-and-shareholders/`,
+      url: `/research-topics/c-corporation-info/directors-and-shareholders/`,
     },
     {
       text: `Are Non-U.S. Residents Allowed to Own a Corporation or LLC?`,
-      url: `/research-topics/c-corporation-info/are-non-u-s-residents-allowed-to-own-a-corporation-or-llc/`,
+      url: `/research-topics/c-corporation-info/own-a-corporation-or-llc/`,
     },
     {
       text: `Does Forming an LLC (Limited Liability Company) or Corporation Require an Attorney?`,

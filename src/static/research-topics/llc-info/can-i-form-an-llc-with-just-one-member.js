@@ -32,7 +32,7 @@ export const about = {
     },
     {
       text: `Which entity offers the best tax advantages?`,
-      url: `/research-topics/llc-info/which-entity-offers-the-best-tax-advantages`,
+      url: `/research-topics/llc-info/tax-advantages`,
     },
     {
       text: `Which entity type should I choose?`,
@@ -84,7 +84,7 @@ export const about = {
     },
     {
       text: `Are Non-U.S. Residents Allowed to Own a Corporation or LLC?`,
-      url: `/research-topics/llc-info/are-non-u-s-residents-allowed-to-own-a-corporation-or-llc`,
+      url: `/research-topics/llc-info/own-a-corporation-or-llc`,
     },
     {
       text: `Does Forming an LLC (Limited Liability Company) or Corporation Require an Attorney?`,

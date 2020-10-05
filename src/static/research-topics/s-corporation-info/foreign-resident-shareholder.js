@@ -9,9 +9,9 @@ export const about = {
       url: `/research-topics/s-corporation-info`,
     },
   ],
-  header: `What are the Differences Between Officers, Directors and Shareholders?`,
-  header2: `What are the Differences Between Officers, Directors and Shareholders?`,
-  text: `A corporation consists of all three: officers, directors and shareholders. Shareholders are the owners of the corporation and elect the directors. Directors guide and are involved in the fundamental decisions of the corporation on behalf of the shareholders. Officers are selected by the directors and run the day-to-day operations of the corporation. These do not need to be separate people. Any person can fill all three positions. In small businesses, one person can be the only shareholder, the only director, and the only officer.`,
+  header: `Can a foreign resident be a shareholder in an S Corporation?`,
+  header2: `Can a foreign resident be a shareholder in an S Corporation?`,
+  text: `In order to be eligible to be a shareholder of an S-Corporation the individual would need to be classified as a “Resident Alien”. A “Resident Alien” has the legal capacity to work and pay taxes in the United States and therefore should possess a Social Security Number (SSN) or a Individual Taxpayer Identification Number (ITIN).`,
   header3: `Related Articles`,
   links2: [
     {
@@ -24,7 +24,7 @@ export const about = {
     },
     {
       text: `Which entity offers the best tax advantages?`,
-      url: `/research-topics/s-corporation-info/which-entity-offers-the-best-tax-advantages/`,
+      url: `/research-topics/s-corporation-info/tax-advantages/`,
     },
     {
       text: `The Advantages of Forming an S Corporation`,
@@ -48,15 +48,15 @@ export const about = {
     },
     {
       text: `Who Will Typically Elect the S Corporation Status?`,
-      url: `/research-topics/s-corporation-info/who-will-typically-elect-the-s-corporation-status/`,
+      url: `/research-topics/s-corporation-info/s-corporation-status/`,
     },
     {
       text: `Is there a limit to the amount of shareholders an S Corporation can have?`,
-      url: `/research-topics/s-corporation-info/is-there-a-limit-to-the-amount-of-shareholders-an-s-corporation-can-have/`,
+      url: `/research-topics/s-corporation-info/amount-of-shareholders/`,
     },
     {
       text: `Can a foreign resident be a shareholder in an S Corporation?`,
-      url: `/research-topics/s-corporation-info/can-a-foreign-resident-be-a-shareholder-in-an-s-corporation/`,
+      url: `/research-topics/s-corporation-info/foreign-resident-shareholder/`,
     },
     {
       text: `How is a Corporation Managed?`,
@@ -68,7 +68,7 @@ export const about = {
     },
     {
       text: `How Many Shares of Stock will my Corporation Need?`,
-      url: `/research-topics/s-corporation-info/how-many-shares-of-stock-will-my-corporation-need/`,
+      url: `/research-topics/s-corporation-info/corporation-need/`,
     },
     {
       text: `What are Bylaws?`,
@@ -84,7 +84,7 @@ export const about = {
     },
     {
       text: `What are the Differences Between Officers, Directors and Shareholders?`,
-      url: `/research-topics/s-corporation-info/what-are-the-differences-between-officers-directors-and-shareholders/`,
+      url: `/research-topics/s-corporation-info/directors-and-shareholders/`,
     },
     {
       text: `Does Forming an LLC (Limited Liability Company) or Corporation Require an Attorney?`,

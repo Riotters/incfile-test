@@ -5,7 +5,7 @@ import Buttonsbox from "../../../atomic/atoms/boxes/top-buttons-box";
 import Button from "../../../atomic/molecules/buttons/button";
 //Sections
 import Top from "../../../atomic/partials/top";
-import About from "../../../atomic/sections/research-topics/business-taxes/which-entity-offers-the-best-tax-advantages";
+import About from "../../../atomic/sections/research-topics/c-corporation-info/directors-and-shareholders";
 import Related from "../../../atomic/sections/learning-center-entity/help-center-article/related";
 import Categories from "../../../atomic/sections/learning-center-entity/help-center-article/categories";
 import Service from "../../../atomic/sections/learning-center-entity/help-center/service";
@@ -16,7 +16,7 @@ import Rocket from "../../../atomic/sections/review-entity-type/c-corporation/ro
 import Searchbar from "../../../atomic/molecules/form/searchbar";
 //Texts
 import { top, related, rocket, categories, service, tools } from "../../../static/learning-center-entity/help-center-article";
-import { about } from "../../../static/research-topics/business-taxes/which-entity-offers-the-best-tax-advantages";
+import { about } from "../../../static/research-topics/c-corporation-info/directors-and-shareholders";
 
 const HelpCenter = () => (
   <Layout>
