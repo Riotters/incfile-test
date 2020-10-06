@@ -38,39 +38,46 @@ const Wrapper = styled.div`
   }
 `;
 
-const CheckAvailabilityName = ({ location }) => (
-  <Layout>
-    <SEO title={seo.title} description={seo.desc} />
+const CheckAvailabilityName = ({ location }) => {
+  let entityName = '';
 
-    <Wrapper>
-      <Oval className="oval" height="570" width="570" bottom="0" left="0" y="-50">
-        <OvalSVG />
-      </Oval>
+  if (typeof window !== `undefined`) {
+    entityName = location.state.entityName;
+  }
+  return (
+    <Layout>
+      <SEO title={seo.title} description={seo.desc} />
 
-      <Oval className="oval" height="570" width="570" top="0" right="0" y="30">
-        <OvalSVG2 />
-      </Oval>
+      <Wrapper>
+        <Oval className="oval" height="570" width="570" bottom="0" left="0" y="-50">
+          <OvalSVG />
+        </Oval>
 
-      <Container>
-        <Link to="/other/business-name-generator" className="back-link">
-          <span>
-            <ArrowLeft />
-          </span>
-          Back
-        </Link>
+        <Oval className="oval" height="570" width="570" top="0" right="0" y="30">
+          <OvalSVG2 />
+        </Oval>
 
-        <ContentCenter>
-          <HeadingCenter headline={formCheck.header} text={formCheck.text} />
-          <RelativeElement maxWidth="670px" margin="60px 0 0 0">
-            <AbsoluteShapCure rotate={90} right="70" bottom="-25">
-              <ShapeCurve color={color.blue} />
-            </AbsoluteShapCure>
-            {/* <FormSection content={formCheck.form} propEntityName={location.state.entityName} /> */}
-          </RelativeElement>
-        </ContentCenter>
-      </Container>
-    </Wrapper>
-  </Layout>
-);
+        <Container>
+          <Link to="/other/business-name-generator" className="back-link">
+            <span>
+              <ArrowLeft />
+            </span>
+            Back
+          </Link>
+
+          <ContentCenter>
+            <HeadingCenter headline={formCheck.header} text={formCheck.text} />
+            <RelativeElement maxWidth="670px" margin="60px 0 0 0">
+              <AbsoluteShapCure rotate={90} right="70" bottom="-25">
+                <ShapeCurve color={color.blue} />
+              </AbsoluteShapCure>
+              <FormSection content={formCheck.form} propEntityName={entityName} />
+            </RelativeElement>
+          </ContentCenter>
+        </Container>
+      </Wrapper>
+    </Layout>
+  )
+};
 
 export default CheckAvailabilityName;
