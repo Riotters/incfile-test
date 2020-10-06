@@ -12,10 +12,13 @@ import TrustedSection from "../../atomic/sections/other/incorporate/trusted";
 function getURLParams() {
     let paramBag = { };
 
-    window.location.search.substr(1).split("&").forEach((item) => {
-        let paramKeyValuePair = item.split("=");
-        paramBag[paramKeyValuePair[0]] = paramKeyValuePair[1];
-    });
+    if(typeof window !== "undefined") {
+
+        window.location.search.substr(1).split("&").forEach((item) => {
+            let paramKeyValuePair = item.split("=");
+            paramBag[paramKeyValuePair[0]] = paramKeyValuePair[1];
+        });
+    }
 
     return paramBag;
 }
@@ -23,7 +26,6 @@ function getURLParams() {
 class RegistrationPage extends React.Component {
     constructor(props) {
         super(props);
-
         let searchQuery = getURLParams();
 
         this.state = {
