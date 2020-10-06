@@ -1,7 +1,6 @@
 import React from "react";
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
-//Sections
 import HeaderSection from "../../atomic/sections/other/incorporate/header";
 import {top, trusted, variants} from "../../static/other/incorporate";
 import PacketsSection from "../../atomic/sections/other/incorporate/packets";

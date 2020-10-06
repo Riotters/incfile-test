@@ -63,6 +63,8 @@ const IndexPage = () => (
         <Link to="/forms/order-business-license">Business License Research Package</Link>
         <Link to="/forms/ra-form">Registered Agent Service</Link>
         <Link to="/forms/ein-form">Federal Employer Identification Number (EIN) / Tax ID Number</Link>
+        <Link to="/forms/kit-info">Corporate / LLC Kit</Link>
+        <Link to="/forms/annual-report">Annual Report</Link>
 
         <h2>Manage Your Company</h2>
         <Link to="/manage-your-company">Manage your company</Link>
@@ -151,6 +153,8 @@ const IndexPage = () => (
         <Link to="/other/how-it-works">How It Works</Link>
         <Link to="/other/free-llc">Free LLC</Link>
         <Link to="/other/incfile-reviews/">Customer Service Reviews</Link>
+        <Link to="/other/reviews/">Testimonials</Link>
+        <Link to="/other/dashboard">Dashboard Login</Link>
         <Link to="/other/arizona-publication-newspaper-list">Arizona Publication Newspaper List</Link>
         <Link to="/other/after-forming-llc">After Forming LLC</Link>
         <Link to="/other/business-name-generator">Business Name Generator</Link>
@@ -163,25 +167,49 @@ const IndexPage = () => (
         <Link to="/research-topics/business-taxes">Business taxes</Link>
         <Link to="/research-topics/business-taxes/sellers-permit">How to Get a Seller's Permit?</Link>
         <Link to="/research-topics/business-taxes/minimizing-tax-expenses">Minimizing tax expenses</Link>
-        <Link to="/research-topics/business-taxes/which-entity-offers-the-best-tax-advantages">Which entity offers the best tax advantages?</Link>
+        <Link to="/research-topics/business-taxes/tax-advantages">Which entity offers the best tax advantages?</Link>
         <Link to="/research-topics/business-taxes/how-is-an-s-corporation-taxed">How is an S Corporation Taxed?</Link>
         <Link to="/research-topics/business-taxes/is-nonprofit-the-same-as-tax-exempt">Is nonprofit the same as tax exempt?</Link>
         <Link to="/research-topics/business-taxes/how-is-a-c-corporation-taxed">How is a C Corporation Taxed?</Link>
         <Link to="/research-topics/c-corporation-info">C-Corporation</Link>
         <Link to="/research-topics/c-corporation-info/what-is-a-corporate-seal">What is a Corporate Seal?</Link>
-        <Link to="/research-topics/c-corporation-info/which-entity-offers-the-best-tax-advantages">Which entity offers the best tax advantages?</Link>
+        <Link to="/research-topics/c-corporation-info/tax-advantages">Which entity offers the best tax advantages?</Link>
         <Link to="/research-topics/c-corporation-info/the-benefits-of-filing-a-c-corporation">The benefits of filing a C-corporation</Link>
         <Link to="/research-topics/c-corporation-info/llcs-vs-c-corporation-which-is-best-for-your-business">LLCs vs C-Corporation: Which Is Best for Your Business?</Link>
         <Link to="/research-topics/c-corporation-info/how-is-a-corporation-managed">How is a Corporation Managed?</Link>
         <Link to="/research-topics/c-corporation-info/how-is-a-c-corporation-taxed">How is a C Corporation Taxed?</Link>
         <Link to="/research-topics/c-corporation-info/am-i-required-to-hold-corporate-meetings">Am I Required to Hold Corporate Meetings?</Link>
-        <Link to="/research-topics/c-corporation-info/how-many-shares-of-stock-will-my-corporation-need">How Many Shares of Stock will my Corporation Need?</Link>
+        <Link to="/research-topics/c-corporation-info/corporation-need">How Many Shares of Stock will my Corporation Need?</Link>
         <Link to="/research-topics/c-corporation-info/what-are-bylaws">What are Bylaws?</Link>
         <Link to="/research-topics/c-corporation-info/what-is-stock-par-value">What is Stock Par Value?</Link>
         <Link to="/research-topics/c-corporation-info/what-is-the-form-2553">What is the Form 2553?</Link>
-        <Link to="/research-topics/c-corporation-info/what-are-the-differences-between-officers-directors-and-shareholders">What are the Differences Between Officers, Directors and Shareholders?</Link>
-        <Link to="/research-topics/c-corporation-info/are-non-u-s-residents-allowed-to-own-a-corporation-or-llc">Are Non-U.S. Residents Allowed to Own a Corporation or LLC?</Link>
-        <Link to="/research-topics/c-corporation-info/does-forming-an-llc-limited-liability-company-or-corporation-require-an-attorney">Does Forming an LLC (Limited Liability Company) or Corporation Require an Attorney?</Link>
+        <Link to="/research-topics/c-corporation-info/directors-and-shareholders">What are the Differences Between Officers, Directors and Shareholders?</Link>
+        <Link to="/research-topics/c-corporation-info/own-a-corporation-or-llc">Are Non-U.S. Residents Allowed to Own a Corporation or LLC?</Link>
+        <Link to="/research-topics/c-corporation-info/require-an-attorney">Does Forming an LLC (Limited Liability Company) or Corporation Require an Attorney?</Link>
+        <Link to="/research-topics/c-corporation-info/what-is-a-publication-requirement">What is a Publication Requirement?</Link>
+        <Link to="/research-topics/c-corporation-info/what-is-the-customized-corporatellc-kit">What is the Customized Corporate/LLC Kit?</Link>
+        <Link to="/research-topics/s-corporation-info">S-Corporation</Link>
+        <Link to="/research-topics/s-corporation-info/am-i-required-to-hold-corporate-meetings">Am I Required to Hold Corporate Meetings?</Link>
+        <Link to="/research-topics/s-corporation-info/foreign-resident-shareholder">Can a foreign resident be a shareholder in an S Corporation?</Link>
+        <Link to="/research-topics/s-corporation-info/require-an-attorney">Does Forming an LLC (Limited Liability Company) or Corporation Require an Attorney?</Link>
+        <Link to="/research-topics/s-corporation-info/how-is-a-corporation-managed">How is a Corporation Managed?</Link>
+        <Link to="/research-topics/s-corporation-info/how-is-an-s-corporation-taxed">How is an S Corporation Taxed?</Link>
+        <Link to="/research-topics/s-corporation-info/amount-of-shareholders">Is there a limit to the amount of shareholders an S Corporation can have?</Link>
+        <Link to="/research-topics/s-corporation-info/llc-vs-s-corporation">LLC vs. S Corporation</Link>
+        <Link to="/research-topics/s-corporation-info/the-advantages-of-forming-an-s-corporation">The Advantages of Forming an S Corporation</Link>
+        <Link to="/research-topics/s-corporation-info/what-are-bylaws">What are Bylaws?</Link>
+        <Link to="/research-topics/s-corporation-info/what-are-the-advantages-of-an-s-corporation">What are the Advantages of an S Corporation?</Link>
+        <Link to="/research-topics/s-corporation-info/directors-and-shareholders">What are the Differences Between Officers, Directors and Shareholders?</Link>
+        <Link to="/research-topics/s-corporation-info/what-are-the-disadvantages-of-an-s-corporation">What are the Disadvantages of an S Corporation?</Link>
+        <Link to="/research-topics/s-corporation-info/what-is-a-publication-requirement">What is a Publication Requirement?</Link>
+        <Link to="/research-topics/s-corporation-info/what-is-the-customized-corporatellc-kit">What is the Customized Corporate/LLC Kit?</Link>
+        <Link to="/research-topics/s-corporation-info/s-corporation-status">Who Will Typically Elect the S Corporation Status?</Link>
+        <Link to="/research-topics/s-corporation-info/s-corp-distribution">How to Take a Distribution from an S Corp</Link>
+        <Link to="/research-topics/llc-info">LLC</Link>
+        <Link to="/research-topics/llc-info/own-a-corporation-or-llc">Are Non-U.S. Residents Allowed to Own a Corporation or LLC?</Link>
+        <Link to="/research-topics/llc-info/can-another-business-entity-be-a-member-of-an-llc">Can another business entity be a member of an LLC?</Link>
+        <Link to="/research-topics/llc-info/can-i-form-an-llc-with-just-one-member">Can I Form an LLC with just one Member?</Link>
+        <Link to="/research-topics/llc-info/require-an-attorney">Does Forming an LLC (Limited Liability Company) or Corporation Require an Attorney?</Link>
 
         <h2>Blog</h2>
         <Link to="/blog">Blog (no API)</Link>

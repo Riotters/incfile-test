@@ -87,7 +87,7 @@ const AboutSection = ({ className, content }) => (
         {content.text9}
       </Paragraph>
       <IconListColorBox content={content.list} color={color.purple3} curve curveColor={color.orange2} rounded bottomMargin="32" />
-      <Button content={content.button} theme="primary56" arrow bottomMargin="32" />
+      <Button content={content.button} theme="primary56" arrow margin="0 auto 32px 0" />
       <Paragraph big bottomMargin="48">
         {content.text10}
       </Paragraph>

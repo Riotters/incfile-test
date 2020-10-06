@@ -184,7 +184,8 @@ a {
 }
 `
 
-const Layout = ({ children, header }) => {
+
+const Layout = ({ children, isDashboardPage, header }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -198,14 +199,14 @@ const Layout = ({ children, header }) => {
   return (
     <>
         <GlobalStyle />
-        {header === "v2" && (
+        {header === "v2" && !isDashboardPage && (
             <HeaderAlt siteTitle={data.site.siteMetadata.title} />
         )}
-        {header == null && (
+        {header == null && !isDashboardPage && (
             <Header siteTitle={data.site.siteMetadata.title} />
         )}
         <main>{children}</main>
-        <Footer />
+        {!isDashboardPage && <Footer />}
         
           {/** Use this element to append the lightbox video outside of main wrapper 
            * So that it should be overlay entire of page
