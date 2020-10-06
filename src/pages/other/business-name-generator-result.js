@@ -36,40 +36,45 @@ const Wrapper = styled.div`
   }
 `;
 
-const BusinessNameGeneratorResult = ({ location }) => (
-  <Layout>
-    <SEO title={seo.title} description={seo.desc} />
+const BusinessNameGeneratorResult = ({ location }) => {
+    let keyword = '';
 
-    <Wrapper>
-      <Oval className="oval" height="570" width="570" top="0" left="0" y="35">
-        <OvalSVG />
-      </Oval>
+    if (typeof window !== `undefined`) {
+        keyword = location.state.keyword;
+    }
 
-      <Oval className="oval" height="570" width="570" bottom="0" right="0" y="-30">
-        <OvalSVG2 />
-      </Oval>
+    return (
+        <Layout>
+            <SEO title={seo.title} description={seo.desc} />
 
-      <Container>
-        <Link to="/other/business-name-generator" className="back-link">
-          <span>
-            <ArrowLeft />
-          </span>
-          Back
-        </Link>
+            <Wrapper>
+                <Oval className="oval" height="570" width="570" top="0" left="0" y="35">
+                    <OvalSVG />
+                </Oval>
 
-        <ContentCenter>
-          <RelativeElement maxWidth="670px" margin="60px 0 0 0" style={{ width: `100%` }}>
-            <AbsoluteShapCure rotate={0} right="-30px" top="0">
-              <ShapeCurve color={color.orange1} />
-            </AbsoluteShapCure>
-            <Searchbar contentWidth="auto" typeSubmit="itself" />
-          </RelativeElement>
+                <Oval className="oval" height="570" width="570" bottom="0" right="0" y="-30">
+                    <OvalSVG2 />
+                </Oval>
 
-          {/* <ResultSection content={resultLists} keyword={location.state.keyword} /> */}
-        </ContentCenter>
-      </Container>
-    </Wrapper>
-  </Layout>
-);
+                <Container>
+                    <Link to="/other/business-name-generator" className="back-link">
+                        <span><ArrowLeft /></span>Back
+                    </Link>
+
+                    <ContentCenter>
+                        <RelativeElement maxWidth="670px" margin="60px 0 0 0" style={{ width: `100%` }}>
+                            <AbsoluteShapCure rotate={0} right="-30px" top="0">
+                                <ShapeCurve color={color.orange1} />
+                            </AbsoluteShapCure>
+                            <Searchbar contentWidth="auto" typeSubmit="itself" />
+                        </RelativeElement>
+
+                        <ResultSection content={resultLists} keyword={keyword} />
+                    </ContentCenter>
+                </Container>
+            </Wrapper>
+        </Layout>
+    );
+};
 
 export default BusinessNameGeneratorResult;
