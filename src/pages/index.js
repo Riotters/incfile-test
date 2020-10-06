@@ -190,6 +190,9 @@ const IndexPage = () => (
         <Link to="/research-topics/llc-info/llc-taxed-as-an-s-corp">Can a Limited Liability Company (LLC) be taxed as an S Corporation?</Link>
         <Link to="/research-topics/llc-info/llc-without-listing-members">Can an LLC be formed without listing the member on the articles of organization?</Link>
         <Link to="/research-topics/llc-info/llc-for-your-entity">Is an LLC the best fit for your entity?</Link>
+        <Link to="/research-topics/llc-info/llc-vs-c-corporation">LLC vs. C Corporation</Link>
+        <Link to="/research-topics/llc-info/llcs-vs-c-corporation">LLCs vs C-Corporation: Which Is Best for Your Business?</Link>
+        <Link to="/research-topics/llc-info/starting-llc-by-steps">Steps to starting a Limited Liability Company (LLC)</Link>
 
         <h2>Blog</h2>
         <Link to="/blog">Blog (no API)</Link>
