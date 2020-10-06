@@ -23,7 +23,7 @@ const ServiceAvailableSection = ({ className, content }) => (
         </Oval>
         <LeftContentRightObject contentWidth={550} object={<AmendmentForm content={content.form}/>}>
             <Heading size={2}>{content.header}</Heading>
-            <Paragraph>{content.text}</Paragraph>
+            <Paragraph big>{content.text}</Paragraph>
         </LeftContentRightObject>
     </AdvantagesSection>
 );

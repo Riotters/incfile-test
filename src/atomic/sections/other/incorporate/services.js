@@ -3,8 +3,6 @@ import styled from "styled-components";
 import ContentCenter from "../../../partials/content-center";
 import {Heading} from "../../../atoms/typography/heading";
 import GenericTable from "../../../organisms/tables/generic-table";
-import PacketsSection from "./packets";
-import Container from "../../../container";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import BenefitsSection from "./benefits-section";
 import {color} from "../../../atoms/styles/colors";
@@ -99,7 +97,7 @@ const ServicesSection = ({ className, content, settings, variants }) => {
             </Oval>
             <ContentCenter>
                 <Heading size={2}>{content.header}</Heading>
-                <Paragraph className="section-description" maxWidth={770} bottomMargin={84}>{content.text}</Paragraph>
+                <Paragraph big className="section-description" maxWidth={770} bottomMargin={84}>{content.text}</Paragraph>
                 <BenefitsSection content={content.benefits} />
                 <Separator bottomMargin={24} />
 

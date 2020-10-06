@@ -108,7 +108,7 @@ const HeaderSection = ({ content, initialState, eventHandlers }) => {
             </div>
             <ContentCenter>
                     <Heading size={1}>{content.header}</Heading>
-                    <Paragraph bottomMargin={64}>{content.text}</Paragraph>
+                    <Paragraph big bottomMargin={64}>{content.text}</Paragraph>
 
                     <FlexContainer Width="1070">
                         <Dropdown className="dropdown" badge={content.form.dropdown.badge} selected={getOptionLabel(content.form.dropdown.options, initialState.entity)} options={content.form.dropdown.options} onSelect={eventHandlers.entityChange} label={content.form.dropdown.label} placeholder={content.form.dropdown.placeholder} />

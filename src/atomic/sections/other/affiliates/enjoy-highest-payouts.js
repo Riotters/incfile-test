@@ -26,7 +26,7 @@ const EnjoyHighestPayouts = ({ className, content }) => (
         <ContentCenter>
             <Heading size="2" maxWidth="770" bottomMargin="24">{content.header}</Heading>
 
-            <Paragraph>{content.text}</Paragraph>
+            <Paragraph big>{content.text}</Paragraph>
 
             <GridContainer>
                 {

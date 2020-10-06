@@ -60,7 +60,7 @@ const TopSection = ({ className, content }) => (
                     </ImageWrapper>
                 </Heading>
                 <RelativeWrapper>
-                    <Paragraph bottomMargin={32}>
+                    <Paragraph big bottomMargin={32}>
                         {content.text}
                     </Paragraph>
                     <ImageWrapper bottom="-136px" right="-236px" width="201px" height="128px">

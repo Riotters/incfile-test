@@ -118,7 +118,7 @@ const TrustedSection = ({ className, content }) => {
             </Oval>
             <ContentCenter>
                 <Heading size={2} maxWidth={770}>{content.header}</Heading>
-                <Paragraph className="section-description" maxWidth={770} bottomMargin={80}>{content.text}</Paragraph>
+                <Paragraph big className="section-description" maxWidth={770} bottomMargin={80}>{content.text}</Paragraph>
                 <CardsWrapper>
                     <Improvement>
                         {content.cards.map(item => (
