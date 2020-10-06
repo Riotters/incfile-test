@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react"
+import React, {useState} from "react"
 import Layout from "../../components/layout";
 import SEO from "../../components/seo"
 import FormSection from "../../atomic/molecules/form/form-section";
@@ -25,6 +25,8 @@ import SummaryTextBlock from "../../atomic/molecules/form/summary/summary-text-b
 import Colorbox from "../../atomic/molecules/blocks/left-icon-block-colored";
 import GoalIcon from "../../images/icons/goal.inline.svg";
 import {color} from "../../atomic/atoms/styles/colors";
+import Input from "../../atomic/atoms/inputs/input";
+import {Paragraph} from "../../atomic/atoms/typography/paragraph";
 import CompanyNameInfoBox from "../../atomic/molecules/form/company-name-info-box";
 
 const EntityTypeOptions = [
@@ -38,10 +40,10 @@ const ServiceOptions = [
         value: `Alaska`,
         label: "Alaska",
         prefix: "AL",
-        prices: [
-            {startFee: 233},
-            {processingFee: 32}
-        ]
+        prices: {
+            startFee: 233,
+            processingFee: 32
+        }
     },
     {
         value: `Arizona`,
@@ -87,45 +89,24 @@ const StateFormationOptions = [
 ];
 
 const summaryList = [
-    {id: "startFee", description: "Start Fee", price: 23},
-    {id: "processingFee", description: "Processing Fee", price: 76}
+    {description: "Start Fee", price: 23},
+    {description: "Processing Fee", price: 76},
+    {description: "Processing Fee"},
 ]
 
-const AnnulaReport = () => {
+const ForeignQual = () => {
     const [serviceOption, setServiceOption] = useState(null);
     const [entityType, setEntityType] = useState(null);
     const [stateFormation, setStateFormation] = useState(null);
     const [designator, setDesignator] = useState(null);
     const [companyName, setCompanyName] = useState(null);
 
-    /*
-    const [summary, setSummary] = useState(summaryList);
-
-    useEffect(() => {
-        let newSummary;
-        let currentService;
-
-        if (serviceOption !== null) {
-            newSummary = [...summary];
-            currentService = ServiceOptions.find((element) => {
-                return element.value === serviceOption.value;
-            });
-
-            if (currentService.hasOwnProperty('prices')) {
-                currentService.prices.map((item) => {
-                    newSummary[]
-                });
-            }
-        }
-    });
-    */
-
     const getCurrentDesignators = (option) => {
         let formation = StateFormationOptions.find((element) => {
             return element.value === option
         });
 
-        if (formation.designators) {
+        if(formation.designators) {
             return formation.designators;
         }
 
@@ -134,9 +115,9 @@ const AnnulaReport = () => {
 
     return (
         <Layout>
-            <SEO title="Annual Report" description="Annual Report"/>
+            <SEO title="Foreign Qualification / Certificate of Authority" description="Foreign Qualification / Certificate of Authority"/>
 
-            <FormLayout formTitle="Annual Report">
+            <FormLayout formTitle="Foreign Qualification / Certificate of Authority" hasInfoBox infoBoxText="A Foreign Qualification refers to the process by which you register your company to do business in another state. An LLC or corporation is considered “domestic” in the state in which is was formed, and “foreign” in any other state in which it wants to do business. When you file a Foreign Qualification, you get a Certificate of Authority, which gives you legitimate rights to do business in the state. A Foreign Qualification must be completed in each state in which a corporation or LLC intends to conduct business.">
 
                 <LeftColumn>
                     <FormSection icon={ContactIcon} title="Contact Information">
@@ -162,12 +143,6 @@ const AnnulaReport = () => {
                     <FormSection icon={CompanyIcon} title="Company Information">
 
                         <FormContent>
-                            <FormControl span={6}>
-                                <Colorbox paddingValue="24px 32px 24px 88px" iconLeftPosition="32px"
-                                          iconTopPosition="calc(50% - 16px)" Icon={GoalIcon} borderRadiusValue="5px"
-                                          color={color.yellow3}
-                                          content={{text: "The state of formation is where the company was formed, while the state of service would only be applicable if you are conducting business in a different state. In most cases the state of formation and state of service will be the same."}}/>
-                            </FormControl>
 
                             <FormControl span={2}>
                                 <Drop label="Entity Type *" options={EntityTypeOptions}
@@ -187,8 +162,7 @@ const AnnulaReport = () => {
                             {serviceOption && stateFormation && entityType &&
                             <>
                                 <FormControl span={4}>
-                                    <InputField label="Company Name *" isRequired={true}
-                                                onChange={e => setCompanyName(e.target.value)}/>
+                                    <InputField label="Company Name *" isRequired={true} onChange={e => setCompanyName(e.target.value)}/>
                                 </FormControl>
 
                                 <FormControl span={2}>
@@ -275,4 +249,4 @@ const AnnulaReport = () => {
     )
 }
 
-export default AnnulaReport;
+export default ForeignQual;
