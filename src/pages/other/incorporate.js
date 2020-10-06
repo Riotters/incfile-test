@@ -91,7 +91,7 @@ class RegistrationPage extends React.Component {
                 {(services != null) && (
                     <ServicesSection content={services} settings={tableSettings} variants={priceVariants} />
                 )}
-                {services && (
+                {(services != null) && (
                     <TrustedSection content={trusted} />
                 )}
             </Layout>
