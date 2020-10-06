@@ -164,7 +164,7 @@ export const faq = {
         },
         {
           text: `This article`,
-          url: "https://www.incfile.com/research-topics/c-corporation-info/what-is-the-form-2553/",
+          url: "https://www.incfile.com/research-topics/c-corporation-info/form-2553/",
         },
         {
           text: `gives you all the details you need.`,

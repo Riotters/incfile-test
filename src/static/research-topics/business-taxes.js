@@ -21,15 +21,15 @@ export const about = {
     },
     {
       text: `How is an S Corporation Taxed?`,
-      url: `/research-topics/business-taxes/how-is-an-s-corporation-taxed/`,
+      url: `/research-topics/business-taxes/s-corp-taxing/`,
     },
     {
       text: `Is “Nonprofit” the Same as “Tax-Exempt”?`,
-      url: `/research-topics/business-taxes/is-nonprofit-the-same-as-tax-exempt/`,
+      url: `/research-topics/business-taxes/nonprofit-tax-exempt/`,
     },
     {
       text: `How is a C Corporation Taxed?`,
-      url: `/research-topics/business-taxes/how-is-a-c-corporation-taxed/`,
+      url: `/research-topics/business-taxes/c-corp-taxing/`,
     },
   ],
 };

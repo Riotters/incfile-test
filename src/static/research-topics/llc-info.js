@@ -13,7 +13,7 @@ export const about = {
     },
     {
       text: `Can another business entity be a member of an LLC?`,
-      url: `/research-topics/llc-info/can-another-business-entity-be-a-member-of-an-llc`,
+      url: `/research-topics/llc-info/llc-business-entity-member`,
     },
     {
       text: `Why it’s important for the members on an LLC to have an operating agreement in place?`,
@@ -21,7 +21,7 @@ export const about = {
     },
     {
       text: `Can a Limited Liability Company (LLC) be taxed as an S Corporation?`,
-      url: `/research-topics/llc-info/can-a-limited-liability-company-llc-be-taxed-as-an-s-corporation`,
+      url: `/research-topics/llc-info/llc-taxed-as-an-s-corp`,
     },
     {
       text: `Which entity offers the best tax advantages?`,
@@ -33,7 +33,7 @@ export const about = {
     },
     {
       text: `Is an LLC the best fit for your entity?`,
-      url: `/research-topics/llc-info/is-an-llc-the-best-fit-for-your-entity`,
+      url: `/research-topics/llc-info/llc-for-your-entity`,
     },
     {
       text: `LLC vs. S Corporation`,
@@ -57,11 +57,11 @@ export const about = {
     },
     {
       text: `Can I Form an LLC with just one Member?`,
-      url: `/research-topics/llc-info/can-i-form-an-llc-with-just-one-member`,
+      url: `/research-topics/llc-info/forming-llc-with-one-member`,
     },
     {
       text: `LLCs vs C-Corporation: Which Is Best for Your Business?`,
-      url: `/research-topics/llc-info/llcs-vs-c-corporation-which-is-best-for-your-business`,
+      url: `/research-topics/llc-info/llcs-vs-c-corporation`,
     },
     {
       text: `Steps to starting a Limited Liability Company (LLC)`,
@@ -73,7 +73,7 @@ export const about = {
     },
     {
       text: `Can an LLC be formed without listing the member on the articles of organization?`,
-      url: `/research-topics/llc-info/can-an-llc-or-formed-without-listing-the-members-on-on-the-articles-of-organization`,
+      url: `/research-topics/llc-info/llc-without-listing-members`,
     },
     {
       text: `Are Non-U.S. Residents Allowed to Own a Corporation or LLC?`,
@@ -85,11 +85,11 @@ export const about = {
     },
     {
       text: `What is a Publication Requirement?`,
-      url: `/research-topics/llc-info/what-is-a-publication-requirement`,
+      url: `/research-topics/llc-info/publication-requirement`,
     },
     {
       text: `What is the Customized Corporate/LLC Kit?`,
-      url: `/research-topics/llc-info/what-is-the-customized-corporatellc-kit`,
+      url: `/research-topics/llc-info/customized-corp-llc-kit`,
     },
   ],
 };
