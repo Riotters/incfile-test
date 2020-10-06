@@ -48,7 +48,7 @@ const RequirementsSection = ({ className, content, settings }) => {
 
             <ContentCenter>
                 <Heading maxWidth={770} size={2}>{content.header}</Heading>
-                <Paragraph className="section-description" maxWidth={770} bottomMargin={56}>{content.text}</Paragraph>
+                <Paragraph big className="section-description" maxWidth={770} bottomMargin={56}>{content.text}</Paragraph>
                 <GenericTable className="blue3 headers-start left" content={content.table} style={{ "margin-bottom": "56px" }} settings={settings} />
 
                 <Heading size={3} bottomMargin={40}>{content.header2}</Heading>

@@ -6,6 +6,7 @@ import LogoSVG from "../images/logo.inline.svg";
 import PhoneSVG from "../images/icons/phone-orange.inline.svg";
 import StarSVG from "../images/icons/star-yellow.inline.svg";
 import Image from "../atomic/atoms/image/image";
+import {color} from "../atomic/atoms/styles/colors";
 
 const Wrapper = styled.div`
   display: flex;
@@ -223,6 +224,7 @@ const ItemRow = styled.div`
     flex-direction: row;
     align-items: ${props => props.align ?? "flex-start"};
     justify-content: ${props => props.justify ?? "space-between"};
+    ${props => props.color ? ("color: " + props.color) : ""};
     
     & > svg {
         margin-right: 8px;
@@ -249,9 +251,9 @@ const HeaderAlt = ({ siteTitle }) => {
           <Menu>
               <MenuItem>
                   <MenuLink to="#">
-                      <ItemRow>
+                      <ItemRow color={color.orange1}>
                           <PhoneSVG/>
-                          855.829.9090
+                          <strong>855.829.9090</strong>
                       </ItemRow>
                   </MenuLink>
               </MenuItem>
