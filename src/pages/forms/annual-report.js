@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useState} from "react"
 import Layout from "../../components/layout";
 import SEO from "../../components/seo"
 import FormSection from "../../atomic/molecules/form/form-section";
@@ -22,10 +22,17 @@ import SummaryOrder from "../../atomic/molecules/form/summary/summary-order";
 import SummaryBar from "../../atomic/molecules/form/summary/summary-bar";
 import SummaryList from "../../atomic/molecules/form/summary/summary-list";
 import SummaryTextBlock from "../../atomic/molecules/form/summary/summary-text-block";
+import Colorbox from "../../atomic/molecules/blocks/left-icon-block-colored";
+import GoalIcon from "../../images/icons/goal.inline.svg";
+import {color} from "../../atomic/atoms/styles/colors";
+import Input from "../../atomic/atoms/inputs/input";
+import {Paragraph} from "../../atomic/atoms/typography/paragraph";
+import CompanyNameInfoBox from "../../atomic/molecules/form/company-name-info-box";
 
 const EntityTypeOptions = [
-    {value: 1, label: "one"},
-    {value: 1, label: "two"}
+    {value: "LLC", label: "LLC"},
+    {value: "Corporation", label: "Corporation"},
+    {value: "NonProfit", label: "NonProfit"}
 ];
 
 const ServiceOptions = [
@@ -87,117 +94,167 @@ const summaryList = [
     {description: "Processing Fee"},
 ]
 
-const AnnulaReport = () => (
-    <Layout>
-        <SEO title="Annual Report" description="Annual Report"/>
+const AnnulaReport = () => {
+    const [serviceOption, setServiceOption] = useState(null);
+    const [entityType, setEntityType] = useState(null);
+    const [stateFormation, setStateFormation] = useState(null);
+    const [designator, setDesignator] = useState(null);
+    const [companyName, setCompanyName] = useState(null);
 
-        <FormLayout formTitle="Annual Report">
+    const getCurrentDesignators = (option) => {
+        let formation = StateFormationOptions.find((element) => {
+            return element.value === option
+        });
 
-            <LeftColumn>
-                <FormSection icon={ContactIcon} title="Contact Information">
-                    <FormContent>
-                        <FormControl span={3}>
-                            <InputField label="First Name *" isRequired={true}/>
-                        </FormControl>
+        if(formation.designators) {
+            return formation.designators;
+        }
 
-                        <FormControl span={3}>
-                            <InputField label="Last Name *" isRequired={true}/>
-                        </FormControl>
+        return null;
+    };
+    console.log(companyName);
+    console.log(designator);
+    console.log(stateFormation);
+    return (
+        <Layout>
+            <SEO title="Annual Report" description="Annual Report"/>
 
-                        <FormControl span={3}>
-                            <InputField label="Email *" isRequired={true}/>
-                        </FormControl>
+            <FormLayout formTitle="Annual Report">
 
-                        <FormControl span={3}>
-                            <InputField label="Phone"/>
-                        </FormControl>
-                    </FormContent>
-                </FormSection>
+                <LeftColumn>
+                    <FormSection icon={ContactIcon} title="Contact Information">
+                        <FormContent>
+                            <FormControl span={3}>
+                                <InputField label="First Name *" isRequired={true}/>
+                            </FormControl>
 
-                <FormSection icon={CompanyIcon} title="Company Information">
+                            <FormControl span={3}>
+                                <InputField label="Last Name *" isRequired={true}/>
+                            </FormControl>
 
-                    <FormContent>
-                        <FormControl span={2}>
-                            <Drop label="Entity Type *" options={EntityTypeOptions}
-                                  placeholder="Select Entity Type"/>
-                        </FormControl>
+                            <FormControl span={3}>
+                                <InputField label="Email *" isRequired={true}/>
+                            </FormControl>
 
-                        <FormControl span={2}>
-                            <Drop label="State of Formation *" options={StateFormationOptions}
-                                  placeholder="Select Entity Type"/>
-                        </FormControl>
+                            <FormControl span={3}>
+                                <InputField label="Phone"/>
+                            </FormControl>
+                        </FormContent>
+                    </FormSection>
 
-                        <FormControl span={2}>
-                            <Drop label="State of Service *" options={ServiceOptions}
-                                  placeholder="Select Entity Type"/>
-                        </FormControl>
-                    </FormContent>
+                    <FormSection icon={CompanyIcon} title="Company Information">
 
-                    <FormContent>
-                        <FormControl span={6}>
-                            <Heading size={3}
-                                     style={{
-                                         fontSize: "16px",
-                                         lineHeight: "19px",
-                                         marginTop: "10px",
-                                         marginBottom: 0
-                                     }}>
-                                Company Address
-                            </Heading>
-                        </FormControl>
+                        <FormContent>
+                            <FormControl span={6}>
+                                <Colorbox paddingValue="24px 32px 24px 88px" iconLeftPosition="32px"
+                                          iconTopPosition="calc(50% - 16px)" Icon={GoalIcon} borderRadiusValue="5px"
+                                          color={color.yellow3}
+                                          content={{text: "The state of formation is where the company was formed, while the state of service would only be applicable if you are conducting business in a different state. In most cases the state of formation and state of service will be the same."}}/>
+                            </FormControl>
 
-                        <FormControl span={3}>
-                            <InputField label="Street Address *" isRequired/>
-                        </FormControl>
+                            <FormControl span={2}>
+                                <Drop label="Entity Type *" options={EntityTypeOptions}
+                                      placeholder="Select Entity Type" onToggleSelect={setEntityType}/>
+                            </FormControl>
 
-                        <FormControl span={3}>
-                            <InputField label="Address (Count) *" isRequired/>
-                        </FormControl>
-                    </FormContent>
+                            <FormControl span={2}>
+                                <Drop label="State of Formation *" options={StateFormationOptions}
+                                      placeholder="Select Entity Type" onToggleSelect={setStateFormation}/>
+                            </FormControl>
 
-                    <FormContent>
-                        <FormControl span={3}>
-                            <InputField label="City *" isRequired/>
-                        </FormControl>
+                            <FormControl span={2}>
+                                <Drop label="State of Service *" options={ServiceOptions}
+                                      placeholder="Select Entity Type" onToggleSelect={setServiceOption}/>
+                            </FormControl>
 
-                        <FormControl span={3}>
-                            <FormContent columns={5} paddingTop={0} paddingLeft={0} paddingRight={0}>
-                                <FormControl span={3}>
-                                    <InputField label="State *" isRequired/>
-                                </FormControl>
+                            {serviceOption && stateFormation && entityType &&
+                               <>
+                                   <FormControl span={4}>
+                                       <InputField label="Company Name *" isRequired={true} onChange={e => setCompanyName(e.target.value)}/>
+                                   </FormControl>
 
-                                <FormControl span={2}>
-                                    <InputField label="ZIP Code *" isRequired/>
-                                </FormControl>
-                            </FormContent>
-                        </FormControl>
-                    </FormContent>
-                </FormSection>
+                                   <FormControl span={2}>
+                                       <Drop label="Designator *" options={getCurrentDesignators(stateFormation.value)}
+                                             placeholder="Select Designator" onToggleSelect={setDesignator}/>
+                                   </FormControl>
+                               </>
+                            }
 
-                <FormTextBlock
-                    title="Safe & Secure"
-                    text="Your information and data is safe and secure. Our servers are located in secure data centers and our website uses SSL modern encryption for all sensitive data. Our servers are also backed up hourly ensuring your data is never lost."
-                    Icon={LockIcon}
-                />
-            </LeftColumn>
+                            {companyName && designator &&
+                                <>
+                                    <FormControl span={6}>
+                                        <CompanyNameInfoBox companyName={companyName} designator={designator.label}/>
+                                    </FormControl>
+                                </>
+                            }
+                        </FormContent>
 
-            <RightColumn>
-                <Summary>
-                    <SummaryOrder orderSum={99}/>
-                    <SummaryBar barPercentage={50}/>
-                    <SummaryList list={summaryList}/>
-                    <SummaryTextBlock Icon={CheckIcon}
-                                      text="Trusted by over 250,000 business owners to maintain their state's business compliance obligations."
-                                      title="Maintain business compliance"/>
-                    <SummaryTextBlock Icon={BenefitsIcon} text="This is a fully deductible business expense."
-                                      title="Tax savings benefit"/>
-                </Summary>
-            </RightColumn>
+                        <FormContent>
+                            <FormControl span={6}>
+                                <Heading size={3}
+                                         style={{
+                                             fontSize: "16px",
+                                             lineHeight: "19px",
+                                             marginTop: "10px",
+                                             marginBottom: 0
+                                         }}>
+                                    Company Address
+                                </Heading>
+                            </FormControl>
 
-            <SubmitSection/>
-        </FormLayout>
+                            <FormControl span={3}>
+                                <InputField label="Street Address *" isRequired/>
+                            </FormControl>
 
-    </Layout>
-)
+                            <FormControl span={3}>
+                                <InputField label="Address (Count) *" isRequired/>
+                            </FormControl>
+                        </FormContent>
+
+                        <FormContent>
+                            <FormControl span={3}>
+                                <InputField label="City *" isRequired/>
+                            </FormControl>
+
+                            <FormControl span={3}>
+                                <FormContent columns={5} paddingTop={0} paddingLeft={0} paddingRight={0}>
+                                    <FormControl span={3}>
+                                        <InputField label="State *" isRequired/>
+                                    </FormControl>
+
+                                    <FormControl span={2}>
+                                        <InputField label="ZIP Code *" isRequired/>
+                                    </FormControl>
+                                </FormContent>
+                            </FormControl>
+                        </FormContent>
+                    </FormSection>
+
+                    <FormTextBlock
+                        title="Safe & Secure"
+                        text="Your information and data is safe and secure. Our servers are located in secure data centers and our website uses SSL modern encryption for all sensitive data. Our servers are also backed up hourly ensuring your data is never lost."
+                        Icon={LockIcon}
+                    />
+                </LeftColumn>
+
+                <RightColumn>
+                    <Summary>
+                        <SummaryOrder orderSum={99}/>
+                        <SummaryBar barPercentage={50}/>
+                        <SummaryList list={summaryList}/>
+                        <SummaryTextBlock Icon={CheckIcon}
+                                          text="Trusted by over 250,000 business owners to maintain their state's business compliance obligations."
+                                          title="Maintain business compliance"/>
+                        <SummaryTextBlock Icon={BenefitsIcon} text="This is a fully deductible business expense."
+                                          title="Tax savings benefit"/>
+                    </Summary>
+                </RightColumn>
+
+                <SubmitSection/>
+            </FormLayout>
+
+        </Layout>
+    )
+}
 
 export default AnnulaReport;
