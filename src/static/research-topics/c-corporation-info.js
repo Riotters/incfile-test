@@ -9,7 +9,7 @@ export const about = {
   links2: [
     {
       text: `What is a Corporate Seal?`,
-      url: `/research-topics/c-corporation-info/what-is-a-corporate-seal/`,
+      url: `/research-topics/c-corporation-info/corp-seal/`,
     },
     {
       text: `Which entity offers the best tax advantages?`,
@@ -17,23 +17,23 @@ export const about = {
     },
     {
       text: `The benefits of filing a C-corporation`,
-      url: `/research-topics/c-corporation-info/the-benefits-of-filing-a-c-corporation/`,
+      url: `/research-topics/c-corporation-info/filing-a-c-corporation/`,
     },
     {
       text: `LLCs vs C-Corporation: Which Is Best for Your Business?`,
-      url: `/research-topics/c-corporation-info/llcs-vs-c-corporation-which-is-best-for-your-business/`,
+      url: `/research-topics/c-corporation-info/llcs-vs-c-corporation/`,
     },
     {
       text: `How is a Corporation Managed?`,
-      url: `/research-topics/c-corporation-info/how-is-a-corporation-managed/`,
+      url: `/research-topics/c-corporation-info/corp-managing/`,
     },
     {
       text: `How is a C Corporation Taxed?`,
-      url: `/research-topics/c-corporation-info/how-is-a-c-corporation-taxed/`,
+      url: `/research-topics/c-corporation-info/c-corp-taxing/`,
     },
     {
       text: `Am I Required to Hold Corporate Meetings?`,
-      url: `/research-topics/c-corporation-info/am-i-required-to-hold-corporate-meetings/`,
+      url: `/research-topics/c-corporation-info/corporate-meetings/`,
     },
     {
       text: `How Many Shares of Stock will my Corporation Need?`,
@@ -45,11 +45,11 @@ export const about = {
     },
     {
       text: `What is Stock Par Value?`,
-      url: `/research-topics/c-corporation-info/what-is-stock-par-value/`,
+      url: `/research-topics/c-corporation-info/stock-par-value/`,
     },
     {
       text: `What is the Form 2553?`,
-      url: `/research-topics/c-corporation-info/what-is-the-form-2553/`,
+      url: `/research-topics/c-corporation-info/form-2553/`,
     },
     {
       text: `What are the Differences Between Officers, Directors and Shareholders?`,
@@ -65,11 +65,11 @@ export const about = {
     },
     {
       text: `What is a Publication Requirement?`,
-      url: `/research-topics/c-corporation-info/what-is-a-publication-requirement/`,
+      url: `/research-topics/c-corporation-info/publication-requirement/`,
     },
     {
       text: `What is the Customized Corporate/LLC Kit?`,
-      url: `/research-topics/c-corporation-info/what-is-the-customized-corporatellc-kit/`,
+      url: `/research-topics/c-corporation-info/customized-corp-llc-kit/`,
     },
   ],
 };

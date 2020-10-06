@@ -27,7 +27,7 @@ export const about = {
     },
     {
       text: `What is a Corporate Seal?`,
-      url: `/research-topics/s-corporation-info/what-is-a-corporate-seal/`,
+      url: `/research-topics/s-corporation-info/corp-seal/`,
     },
     {
       text: `Which entity offers the best tax advantages?`,
@@ -35,23 +35,23 @@ export const about = {
     },
     {
       text: `The Advantages of Forming an S Corporation`,
-      url: `/research-topics/s-corporation-info/the-advantages-of-forming-an-s-corporation/`,
+      url: `/research-topics/s-corporation-info/s-corp-form-advantages/`,
     },
     {
       text: `LLC vs. S Corporation`,
-      url: `/research-topics/c-corporation-info/how-is-a-corporation-managed/`,
+      url: `/research-topics/c-corporation-info/corp-managing/`,
     },
     {
       text: `What are the Advantages of an S Corporation?`,
-      url: `/research-topics/s-corporation-info/what-are-the-advantages-of-an-s-corporation/`,
+      url: `/research-topics/s-corporation-info/s-corp-advantages/`,
     },
     {
       text: `What are the Disadvantages of an S Corporation?`,
-      url: `/research-topics/s-corporation-info/what-are-the-disadvantages-of-an-s-corporation/`,
+      url: `/research-topics/s-corporation-info/s-corp-disadvantages/`,
     },
     {
       text: `How is an S Corporation Taxed?`,
-      url: `/research-topics/s-corporation-info/how-is-an-s-corporation-taxed/`,
+      url: `/research-topics/s-corporation-info/s-corp-taxing/`,
     },
     {
       text: `Who Will Typically Elect the S Corporation Status?`,
@@ -67,11 +67,11 @@ export const about = {
     },
     {
       text: `How is a Corporation Managed?`,
-      url: `/research-topics/s-corporation-info/how-is-a-corporation-managed/`,
+      url: `/research-topics/s-corporation-info/corp-managing/`,
     },
     {
       text: `Am I Required to Hold Corporate Meetings?`,
-      url: `/research-topics/s-corporation-info/am-i-required-to-hold-corporate-meetings/`,
+      url: `/research-topics/s-corporation-info/corporate-meetings/`,
     },
     {
       text: `How Many Shares of Stock will my Corporation Need?`,
@@ -83,11 +83,11 @@ export const about = {
     },
     {
       text: `What is Stock Par Value?`,
-      url: `/research-topics/s-corporation-info/what-is-stock-par-value/`,
+      url: `/research-topics/s-corporation-info/stock-par-value/`,
     },
     {
       text: `What is the Form 2553?`,
-      url: `/research-topics/s-corporation-info/what-is-the-form-2553/`,
+      url: `/research-topics/s-corporation-info/form-2553/`,
     },
     {
       text: `What are the Differences Between Officers, Directors and Shareholders?`,
@@ -99,11 +99,11 @@ export const about = {
     },
     {
       text: `What is a Publication Requirement?`,
-      url: `/research-topics/s-corporation-info/what-is-a-publication-requirement/`,
+      url: `/research-topics/s-corporation-info/publication-requirement/`,
     },
     {
       text: `What is the Customized Corporate/LLC Kit?`,
-      url: `/research-topics/s-corporation-info/what-is-the-customized-corporatellc-kit/`,
+      url: `/research-topics/s-corporation-info/customized-corp-llc-kit/`,
     },
   ],
 };
