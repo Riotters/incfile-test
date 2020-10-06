@@ -6,12 +6,12 @@ import SEO from "../../components/seo";
 import Top from "../../atomic/partials/top";
 import Button from "../../atomic/molecules/buttons/button";
 import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
-import VirtualMailbox from "../../atomic/sections/other/virtual-mailboxes/welcome-incfile-virtual-address";
-import AdvantagesSection from "../../atomic/sections/other/virtual-mailboxes/advantages-virtual-addresses";
+import VirtualMailbox from "../../atomic/sections/learning-center-entity/virtual-mailboxes/welcome-incfile-virtual-address";
+import AdvantagesSection from "../../atomic/sections/learning-center-entity/virtual-mailboxes/advantages-virtual-addresses";
 
-import {top, mailboxes, advantages, availability, moreInfo} from "../../static/other/virtual-mailboxes";
-import ServiceAvailableSection from "../../atomic/sections/other/virtual-mailboxes/virtual-service-available-states";
-import VirtualMailboxesMoreInfo from "../../atomic/sections/other/virtual-mailboxes/more-information";
+import {top, mailboxes, advantages, availability, moreInfo} from "../../static/learning-center-entity/virtual-mailboxes";
+import ServiceAvailableSection from "../../atomic/sections/learning-center-entity/virtual-mailboxes/virtual-service-available-states";
+import VirtualMailboxesMoreInfo from "../../atomic/sections/learning-center-entity/virtual-mailboxes/more-information";
 
 import CCTVIcon from "../../images/icons/complete-mail-scanning-of-all-correspondence.inline.svg";
 import WWWAccess from "../../images/icons/worldwide-access-with-web.inline.svg";

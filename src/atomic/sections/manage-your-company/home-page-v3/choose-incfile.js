@@ -18,6 +18,12 @@ const Section = styled.section`
 
 const Anchor = styled.div`
     position: relative;
+    
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 `;
 
 const ImageWrapper = styled.div`
@@ -30,7 +36,8 @@ const ImageWrapper = styled.div`
     ${props => ("bottom: " + props.bottom + "px") ?? ""};
     
     @media screen and (max-width: 768px) {
-        display: none;
+        display: block;
+        position: static;
     }
 `;
 

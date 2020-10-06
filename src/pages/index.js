@@ -104,6 +104,31 @@ const IndexPage = () => (
         <Link to="/learning-center-entity/business-resources">Business Resources (WIP)</Link>
         <Link to="/learning-center-entity/business-name-search">Business Name Search (no details)</Link>
 
+        <Link to="/learning-center-entity/virtual-mailboxes">Virtual Mailboxes</Link>
+
+        <Link to="/learning-center-entity/arizona-virtual-mailboxes">Arizona Virtual Mailboxes</Link>
+        <Link to="/learning-center-entity/california-virtual-mailboxes">California Virtual Mailboxes</Link>
+        <Link to="/learning-center-entity/colorado-virtual-mailboxes">Colorado Virtual Mailboxes</Link>
+        <Link to="/learning-center-entity/delaware-virtual-mailboxes">Delaware Virtual Mailboxes</Link>
+        <Link to="/learning-center-entity/florida-virtual-mailboxes">Florida Virtual Mailboxes</Link>
+        <Link to="/learning-center-entity/georgia-virtual-mailboxes">Georgia Virtual Mailboxes</Link>
+        <Link to="/learning-center-entity/illinois-virtual-mailboxes">Illinois Virtual Mailboxes</Link>
+        <Link to="/learning-center-entity/massachusetts-virtual-mailboxes">Massachusetts Virtual Mailboxes</Link>
+        <Link to="/learning-center-entity/nevada-virtual-mailboxes">Nevada Virtual Mailboxes</Link>
+        <Link to="/learning-center-entity/new-york-virtual-mailboxes">New York Virtual Mailboxes</Link>
+        <Link to="/learning-center-entity/new-mexico-virtual-mailboxes">New Mexico Virtual Mailboxes</Link>
+        <Link to="/learning-center-entity/new-jersey-virtual-mailboxes">New Jersey Virtual Mailboxes</Link>
+        <Link to="/learning-center-entity/north-carolina-virtual-mailboxes">North Carolina Virtual Mailboxes</Link>
+        <Link to="/learning-center-entity/ohio-virtual-mailboxes">Ohio Virtual Mailboxes</Link>
+        <Link to="/learning-center-entity/south-carolina-virtual-mailboxes">South Carolina Virtual Mailboxes</Link>
+        <Link to="/learning-center-entity/oregon-virtual-mailboxes">Oregon Virtual Mailboxes</Link>
+        <Link to="/learning-center-entity/south-dakota-virtual-mailboxes">South Dakota Virtual Mailboxes</Link>
+        <Link to="/learning-center-entity/texas-virtual-mailboxes">Texas Virtual Mailboxes</Link>
+        <Link to="/learning-center-entity/pennsylvania-virtual-mailboxes">Pennsylvania Virtual Mailboxes</Link>
+        <Link to="/learning-center-entity/utah-virtual-mailboxes">Utah Virtual Mailboxes</Link>
+        <Link to="/learning-center-entity/virginia-virtual-mailboxes">Virginia Virtual Mailboxes</Link>
+        <Link to="/learning-center-entity/washington-virtual-mailboxes">Washington Virtual Mailboxes</Link>
+
         <h2>Corporation State Information</h2>
         <Link to="/corporation-state-information/california-corporation">California Corporation (WIP)</Link>
 
@@ -129,8 +154,6 @@ const IndexPage = () => (
         <Link to="/other/arizona-publication-newspaper-list">Arizona Publication Newspaper List</Link>
         <Link to="/other/after-forming-llc">After Forming LLC</Link>
         <Link to="/other/business-name-generator">Business Name Generator</Link>
-        <Link to="/other/virtual-mailboxes">Virtual Mailboxes</Link>
-        <Link to="/other/arizona-virtual-mailboxes">Arizona Virtual Mailboxes</Link>
         <Link to="/other/affiliates">Affiliates</Link>
         <Link to="/other/incorporation">Incorporation</Link>
         <Link to="/404">404</Link>
