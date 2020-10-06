@@ -71,8 +71,8 @@ const AnnualReportForm = ({ className, content }) => {
       </Label>
       <Flex>
         <Label htmlFor="type" content={content.field3} bottomMargin="16">
-          <Radio checked name="type" />
-          <Radio name="type" />
+          <Radio checked name="type" content="Yes" id="ar-yes" value={1} />
+          <Radio name="type" content="No" id="ar-no" value={0} />
         </Label>
         <LinkWrapper>
           <ArrowLink content={content.link} bottomMargin="0" />

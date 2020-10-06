@@ -156,6 +156,10 @@ const Diagram = styled.div`
             display: flex;
             align-items: center;
             justify-content: center;
+            font-family: Avenir, sans-serif;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 900;
             position: relative;
             background-color: ${color.orange2};
             width: 124px;

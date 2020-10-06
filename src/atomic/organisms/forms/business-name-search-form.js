@@ -57,11 +57,11 @@ const BusinessNameSearchForm = ({ className, content }) => {
       </Label>
       <Flex>
         <Label htmlFor="type" content={content.field2} bottomMargin="16">
-          <Radio content={content.field2.radio} checked name="type" />
+          <Radio content={content.field2.radio} checked name="type" id="bns-llc" value={1} />
           {/* <Heading size="4" bottomMargin="0">
             LLC
           </Heading> */}
-          <Radio content={content.field2.radio2}  name="type" />
+          <Radio content={content.field2.radio2} name="type" id="bns-corp" value={0} />
           {/* <Heading size="4" bottomMargin="0">
             Corporation
           </Heading> */}

@@ -6,7 +6,6 @@ import { Heading } from "../../atoms/typography/heading";
 import Label from "../../molecules/form/label-field-with-child";
 import Input from "../../atoms/inputs/input";
 import Dropdown from "../../molecules/form/dropdown";
-import Radio from "../../molecules/form/radio";
 import Button from "../../molecules/buttons/button";
 import ArrowLink from "../../molecules/buttons/text";
 import Curve from "../../atoms/icons/curve";

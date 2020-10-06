@@ -105,6 +105,7 @@ const IndexPage = () => (
         <Link to="/learning-center-entity/ongoing-filing-requirements">Ongoing Filing Requirements (no details)</Link>
         <Link to="/learning-center-entity/business-resources">Business Resources (WIP)</Link>
         <Link to="/learning-center-entity/business-name-search">Business Name Search (no details)</Link>
+        <Link to="/learning-center-entity/business-entity-quiz">Business Entity Quiz</Link>
 
         <h2>Corporation State Information</h2>
         <Link to="/corporation-state-information/california-corporation">California Corporation (WIP)</Link>
@@ -136,7 +137,8 @@ const IndexPage = () => (
         <Link to="/other/virtual-mailboxes">Virtual Mailboxes</Link>
         <Link to="/other/arizona-virtual-mailboxes">Arizona Virtual Mailboxes</Link>
         <Link to="/other/affiliates">Affiliates</Link>
-        <Link to="/other/incorporation">Incorporation</Link>
+        <Link to="/other/incorporate">Incorporate now</Link>
+        <Link to="/other/thank-you-page/">Thank You Page</Link>
         <Link to="/404">404</Link>
         <Link to="/503">503</Link>
 
