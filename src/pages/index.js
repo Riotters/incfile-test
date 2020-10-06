@@ -64,6 +64,7 @@ const IndexPage = () => (
         <Link to="/forms/ra-form">Registered Agent Service</Link>
         <Link to="/forms/ein-form">Federal Employer Identification Number (EIN) / Tax ID Number</Link>
         <Link to="/forms/annual-report">Annual Report</Link>
+        <Link to="/forms/foreign-qual">Foreign Qualification</Link>
 
         <h2>Manage Your Company</h2>
         <Link to="/manage-your-company">Manage your company</Link>
