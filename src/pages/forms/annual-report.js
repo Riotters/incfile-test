@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, {useEffect, useState} from "react"
 import Layout from "../../components/layout";
 import SEO from "../../components/seo"
 import FormSection from "../../atomic/molecules/form/form-section";
@@ -25,8 +25,6 @@ import SummaryTextBlock from "../../atomic/molecules/form/summary/summary-text-b
 import Colorbox from "../../atomic/molecules/blocks/left-icon-block-colored";
 import GoalIcon from "../../images/icons/goal.inline.svg";
 import {color} from "../../atomic/atoms/styles/colors";
-import Input from "../../atomic/atoms/inputs/input";
-import {Paragraph} from "../../atomic/atoms/typography/paragraph";
 import CompanyNameInfoBox from "../../atomic/molecules/form/company-name-info-box";
 
 const EntityTypeOptions = [
@@ -40,10 +38,10 @@ const ServiceOptions = [
         value: `Alaska`,
         label: "Alaska",
         prefix: "AL",
-        prices: {
-            startFee: 233,
-            processingFee: 32
-        }
+        prices: [
+            {startFee: 233},
+            {processingFee: 32}
+        ]
     },
     {
         value: `Arizona`,
@@ -89,9 +87,8 @@ const StateFormationOptions = [
 ];
 
 const summaryList = [
-    {description: "Start Fee", price: 23},
-    {description: "Processing Fee", price: 76},
-    {description: "Processing Fee"},
+    {id: "startFee", description: "Start Fee", price: 23},
+    {id: "processingFee", description: "Processing Fee", price: 76}
 ]
 
 const AnnulaReport = () => {
@@ -101,12 +98,34 @@ const AnnulaReport = () => {
     const [designator, setDesignator] = useState(null);
     const [companyName, setCompanyName] = useState(null);
 
+    /*
+    const [summary, setSummary] = useState(summaryList);
+
+    useEffect(() => {
+        let newSummary;
+        let currentService;
+
+        if (serviceOption !== null) {
+            newSummary = [...summary];
+            currentService = ServiceOptions.find((element) => {
+                return element.value === serviceOption.value;
+            });
+
+            if (currentService.hasOwnProperty('prices')) {
+                currentService.prices.map((item) => {
+                    newSummary[]
+                });
+            }
+        }
+    });
+    */
+
     const getCurrentDesignators = (option) => {
         let formation = StateFormationOptions.find((element) => {
             return element.value === option
         });
 
-        if(formation.designators) {
+        if (formation.designators) {
             return formation.designators;
         }
 
@@ -166,24 +185,25 @@ const AnnulaReport = () => {
                             </FormControl>
 
                             {serviceOption && stateFormation && entityType &&
-                               <>
-                                   <FormControl span={4}>
-                                       <InputField label="Company Name *" isRequired={true} onChange={e => setCompanyName(e.target.value)}/>
-                                   </FormControl>
+                            <>
+                                <FormControl span={4}>
+                                    <InputField label="Company Name *" isRequired={true}
+                                                onChange={e => setCompanyName(e.target.value)}/>
+                                </FormControl>
 
-                                   <FormControl span={2}>
-                                       <Drop label="Designator *" options={getCurrentDesignators(stateFormation.value)}
-                                             placeholder="Select Designator" onToggleSelect={setDesignator}/>
-                                   </FormControl>
-                               </>
+                                <FormControl span={2}>
+                                    <Drop label="Designator *" options={getCurrentDesignators(stateFormation.value)}
+                                          placeholder="Select Designator" onToggleSelect={setDesignator}/>
+                                </FormControl>
+                            </>
                             }
 
                             {companyName && designator &&
-                                <>
-                                    <FormControl span={6}>
-                                        <CompanyNameInfoBox companyName={companyName} designator={designator.label}/>
-                                    </FormControl>
-                                </>
+                            <>
+                                <FormControl span={6}>
+                                    <CompanyNameInfoBox companyName={companyName} designator={designator.label}/>
+                                </FormControl>
+                            </>
                             }
                         </FormContent>
 
