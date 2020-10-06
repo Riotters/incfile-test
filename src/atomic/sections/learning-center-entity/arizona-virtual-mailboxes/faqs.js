@@ -17,10 +17,10 @@ const FaqSection = ({ className, content }) => (
         <Oval className="oval" height="420" width="420" top="0" right="0">
             <OvalSVG />
         </Oval>
-        <HeadingCenter headline={content.header} headlineWidth="770" bottomMargin={104} />
+        <HeadingCenter headline={content.header} headlineWidth="770" bottomMargin={80} />
 
         <ContentCenter>
-            <Accordion content={content.faq} curve curveTopLeft curveLeft="-30" curveColor={color.orange1}/>
+            <Accordion content={content.faq} tab curve curveTopLeft curveLeft="-30" curveColor={color.orange1}/>
         </ContentCenter>
     </Faq>
 );

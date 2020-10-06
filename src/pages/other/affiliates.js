@@ -13,6 +13,12 @@ import HowItWorksSection from "../../atomic/sections/other/affiliates/how-it-wor
 import EnjoyHighestPayouts from "../../atomic/sections/other/affiliates/enjoy-highest-payouts";
 import Oval from "../../atomic/atoms/icons/oval";
 
+const Wrapper = styled.div`
+    .oval {
+        z-index: -1;
+    }
+`;
+
 const VirtualMailBoxes = () => (
     <Layout>
         <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
@@ -23,9 +29,11 @@ const VirtualMailBoxes = () => (
                 <Button content={top.button[0]} theme="primary56" arrow />
             </Buttonsbox>
         </Top>
-        <Oval className="oval" height="420" width="420" top="0" left="0" y={125}>
-            <OvalSVG />
-        </Oval>
+        <Wrapper>
+            <Oval className="oval" height="420" width="420" top="0" left="0" y={125}>
+                <OvalSVG />
+            </Oval>
+        </Wrapper>
         <HowItWorksSection content={affiliates} />
         <EnjoyHighestPayouts content={payouts} />
     </Layout>

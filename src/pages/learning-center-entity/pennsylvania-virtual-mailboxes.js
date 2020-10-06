@@ -7,9 +7,9 @@ import Top from "../../atomic/partials/top";
 import Button from "../../atomic/molecules/buttons/button";
 import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
 
-import {advantages, faqs, top} from "../../static/other/arizona-virtual-mailboxes";
-import ArizonaStreetAddrVirtualMXAdvantages from "../../atomic/sections/other/arizona-virtual-mailboxes/advantages";
-import FaqSection from "../../atomic/sections/other/arizona-virtual-mailboxes/faqs";
+import {advantages, faqs, top} from "../../static/learning-center-entity/pennsylvania-virtual-mailboxes";
+import ArizonaStreetAddrVirtualMXAdvantages from "../../atomic/sections/learning-center-entity/arizona-virtual-mailboxes/advantages";
+import FaqSection from "../../atomic/sections/learning-center-entity/arizona-virtual-mailboxes/faqs";
 
 const VirtualMailBoxes = () => (
     <Layout>

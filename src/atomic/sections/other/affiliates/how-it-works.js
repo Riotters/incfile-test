@@ -9,6 +9,8 @@ import { Heading } from "../../../atoms/typography/heading"
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-right-transparent-orange3-2.inline.svg";
 import {Paragraph} from "../../../atoms/typography/paragraph";
+import Curve from "../../../../atomic/atoms/icons/curve";
+import CurveSVG from "../../../../images/curves/bottom-left-top-right.inline.svg";
 
 const HowItWorks = styled.section`
   position: relative;
@@ -16,8 +18,11 @@ const HowItWorks = styled.section`
   padding: 100px 0 120px;
   
   .oval:not(.small) {
-        max-width: 100%;
         overflow: hidden;
+    }
+    
+    .curve-how-it-works {
+        transform: rotate(-90deg);
     }
 `;
 
@@ -36,6 +41,7 @@ const Boxes = styled.div`
     background-color: ${color.white};
     box-shadow: ${shadow.white1};
     padding: 40px 24px;
+    text-align: center;
     
     @media (min-width: 400px) {
       padding: 40px 48px;
@@ -45,9 +51,9 @@ const Boxes = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 140px;
-      width: 140px;
-      margin: 0 auto 60px;
+      height: 160px;
+      width: 160px;
+      margin: 0 auto 27px;
 
       .gatsby-image-wrapper {
         height: 100%;
@@ -83,7 +89,7 @@ const Boxes = styled.div`
       align-items: center;
       height: 96px;
       width: 96px;
-      background-color: ${color.white};  
+      background-color: ${color.orange3};  
       box-shadow: inset ${shadow.white1};
       box-shadow: inset 0 0 32px 0 rgba(236, 236, 236, 0.4);
       border-radius: 50%;
@@ -94,7 +100,6 @@ const Boxes = styled.div`
 
       @media (min-width: 769px) {
         transform: translate(-50%, -50%) rotate(0);
-        background-image: linear-gradient(0deg,#f7f9fc 0%,#f6f8fc 100%);
       }
     }
   }
@@ -106,14 +111,16 @@ const HowItWorksSection = ({ className, content }) => (
             <OvalSVG />
         </Oval>
         <ContentCenter>
+            <Curve top="-71" right="390" color={color.orange2} className="curve-how-it-works">
+                <CurveSVG />
+            </Curve>
             <Heading size="2" maxWidth="770" bottomMargin="24">{content.header}</Heading>
-
             <Paragraph big>{content.text}</Paragraph>
 
             <Boxes>
                 <div className="box">
                     <div className="icon">
-                        <Image filename="sign-up-7749" imageAlt="Sign up" />
+                        <Image filename="sign-up-2265" imageAlt="Sign up" />
                     </div>
                     <h4>Sign up</h4>
                     <p>Fill in our short online application.</p>
@@ -125,7 +132,7 @@ const HowItWorksSection = ({ className, content }) => (
                 </div>
                 <div className="box">
                     <div className="icon">
-                        <Image filename="display-ads" imageAlt="Display ads" />
+                        <Image filename="display-ads-5492" imageAlt="Display ads" />
                     </div>
                     <h4>Display ads</h4>
                     <p>Link to Incfile from your website.</p>
@@ -137,7 +144,7 @@ const HowItWorksSection = ({ className, content }) => (
                 </div>
                 <div className="box">
                     <div className="icon">
-                        <Image filename="get-paid-0492" imageAlt="Get paid" />
+                        <Image filename="get-paid-9581" imageAlt="Get paid" />
                     </div>
                     <h4>Get paid</h4>
                     <p>Make $50 when customers you refer form an LLC or Corporation.</p>

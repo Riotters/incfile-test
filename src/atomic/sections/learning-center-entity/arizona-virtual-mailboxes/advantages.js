@@ -15,7 +15,12 @@ const AdvantagesSection = styled.section`
   padding: 100px 0;
   background-color: ${color.blue3};
   overflow: hidden;
+  
+  .section-content {
+    z-index: 1;
+  }
 `;
+
 const CardsWrapper = styled.div`
     position: relative;
     padding-top: 48px;
@@ -23,18 +28,22 @@ const CardsWrapper = styled.div`
     & > div[class*='entity-search'] {
         padding-bottom: 0;
     }
-`
+`;
 
 const InnerSection = styled.div`
     width: 100%;
     height: auto;
-    position: relative
-`
+    position: relative;
+    
+    .oval {
+        z-index: 0;
+    }
+`;
 
 const ArizonaStreetAddrVirtualMXAdvantages = ({ className, content }) => (
     <AdvantagesSection className={className}>
         <InnerSection>
-            <ContentObject contentWidth="970" contentCenter>
+            <ContentObject contentWidth="970" contentCenter className="section-content">
                 <Heading size="2">{content.header}</Heading>
                 <Paragraph big bottomMargin="0">
                     {content.text}

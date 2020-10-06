@@ -44,14 +44,12 @@ const Content = styled.div`
 
 const IncludedInAll = ({ className, content }) => (
     <Wrapper>
-        <Container>
-            <ContentCenter contentWidth={1140} className="section-content">
-                <Heading size={2} maxWidth={770} bottomMargin={104}>{content.header}</Heading>
+        <ContentCenter contentWidth={1140} className="section-content">
+            <Heading size={2} maxWidth={770} bottomMargin={104}>{content.header}</Heading>
 
-                <BenefitsSection content={content.benefits}/>
-                <Button content={content.button} margin="56px 0 0 0" arrow theme="primary56" />
-            </ContentCenter>
-        </Container>
+            <BenefitsSection content={content.benefits}/>
+            <Button content={content.button} margin="56px 0 0 0" arrow theme="primary56" />
+        </ContentCenter>
     </Wrapper>
 );
 
