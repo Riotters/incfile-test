@@ -101,7 +101,9 @@ class Drop extends Component {
     }
 
     _onSelect(option) {
-        this.setState({selected: option})
+        this.setState({selected: option});
+        const {onToggleSelect} = this.props;
+        onToggleSelect(option);
     }
 
     render() {
