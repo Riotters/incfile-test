@@ -42,6 +42,7 @@ const IndexPage = () => (
         <h1>List of all sites</h1>
 
         <h2>LLC States Information</h2>
+        <Link to="/llc-state-information">LLC State Information</Link>
         <Link to="/texas-llc/">Texas LLC</Link>
 
         <h2>Contact Pages</h2>

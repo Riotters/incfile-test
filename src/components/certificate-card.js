@@ -1,102 +1,96 @@
-import React from "react"
-import styled from "styled-components"
-import { color } from "./styles/colors"
-import { shadow } from "./styles/shadows"
-import Image from "./image"
-import Label from "./form/label"
-import Dropdown from "./form/dropdown"
-import Button from "./button"
+import React from "react";
+import styled from "styled-components";
+import { color } from "./styles/colors";
+import { shadow } from "./styles/shadows";
+import Image from "./image";
+import Label from "./form/label";
+import Dropdown from "./form/dropdown";
+import Button from "../atomic/molecules/buttons/button";
 
 const Wrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 470px;
+  padding: 64px 40px 48px;
+  position: relative;
+  background-color: ${color.white};
+  box-shadow: ${shadow.white1};
+  border-radius: 5px;
+
+  h3 {
+    text-align: center;
+    max-width: 320px;
+    margin-bottom: 32px;
+  }
+  .gatsby-image-wrapper {
+    height: 152px;
+    width: 152px;
+    margin: 0 auto 24px;
+  }
+
+  label {
     width: 100%;
-    max-width: 470px;
-    padding: 64px 40px 48px;
-    position: relative;
-    background-color: ${color.white};
-    box-shadow: ${shadow.white1};
-    border-radius: 5px;
+  }
 
-    h3 {
-        text-align: center;
-        max-width: 320px;
-        margin-bottom: 32px;
-    }
-    .gatsby-image-wrapper {
-        height: 152px;
-        width: 152px;
-        margin: 0 auto 24px;
-    }
+  .label {
+    margin-bottom: 24px;
+  }
 
-    label {
-        width: 100%;
-    }
+  .dropdown {
+    width: 100%;
+  }
 
-    .label {
-        margin-bottom: 24px;
-    }
+  .price {
+    font-family: MarkPro, sans-serif;
+    font-size: 48px;
+    line-height: 56px;
+    color: ${color.black};
+    margin-bottom: 8px;
+  }
 
-    .dropdown {
-        width: 100%;
-    }
-
-    .price {
-        font-family: MarkPro, sans-serif;
-        font-size: 48px;
-        line-height: 56px;
-        color: ${color.black};
-        margin-bottom: 8px;
-    }
-
-    .fee {
-        font-family: Avenir, sans-serif;
-        font-size: 16px;
-        line-height: 24px;
-        color: ${color.grey2};
-        margin-bottom: 40px;
-    }
-`
+  .fee {
+    font-family: Avenir, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: ${color.grey2};
+    margin-bottom: 40px;
+  }
+`;
 
 const CertificateCard = ({ className, headline, content, image, dropdownOnePlaceholder, dropdownOneOptions, dropdownTwoPlaceholder, dropdownTwoOptions, dropdownThreePlaceholder, dropdownThreeOptions }) => {
   return (
     <Wrapper className={className}>
-        <h3>{headline}</h3>
-        {image && (
-        <Image filename={image} />
-        )}
-        {dropdownOnePlaceholder && (
-            <Label className="label">
-                Entity Type
-            <Dropdown className="dropdown" placeholder={dropdownOnePlaceholder} options={dropdownOneOptions} />
-            </Label>
-        )}
-        {dropdownTwoPlaceholder && (
-            <Label className="label">
-                State
-            <Dropdown className="dropdown" placeholder={dropdownTwoPlaceholder} options={dropdownTwoOptions}/>
-            </Label>
-        )}
-        {dropdownThreePlaceholder && (
-            <Label className="label">
-                State of Formation
-            <Dropdown className="dropdown" placeholder={dropdownThreePlaceholder} options={dropdownThreeOptions}/>
-            </Label>
-        )}
-        {content && (
-            <>
-                {content.price && (
-                    <span className="price">${content.price}</span>
-                )}
-                {content.fee && (
-                    <span className="fee">{content.fee}</span>
-                )}
-            </>
-        )}
-        <Button theme="primary56" arrow>Order now</Button>
+      <h3>{headline}</h3>
+      {image && <Image filename={image} />}
+      {dropdownOnePlaceholder && (
+        <Label className="label">
+          Entity Type
+          <Dropdown className="dropdown" placeholder={dropdownOnePlaceholder} options={dropdownOneOptions} />
+        </Label>
+      )}
+      {dropdownTwoPlaceholder && (
+        <Label className="label">
+          State
+          <Dropdown className="dropdown" placeholder={dropdownTwoPlaceholder} options={dropdownTwoOptions} />
+        </Label>
+      )}
+      {dropdownThreePlaceholder && (
+        <Label className="label">
+          State of Formation
+          <Dropdown className="dropdown" placeholder={dropdownThreePlaceholder} options={dropdownThreeOptions} />
+        </Label>
+      )}
+      {content && (
+        <>
+          {content.price && <span className="price">${content.price}</span>}
+          {content.fee && <span className="fee">{content.fee}</span>}
+        </>
+      )}
+      <Button content={content.button} theme="primary56" arrow />
     </Wrapper>
-  )
-}
+  );
+};
 
-export default CertificateCard
+export default CertificateCard;
