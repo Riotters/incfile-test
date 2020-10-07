@@ -1,20 +1,22 @@
 import React from "react";
+import PropTypes from "prop-types";
 import styled from "styled-components";
 import { Link } from "gatsby";
-import { color } from "../../atoms/styles/colors";
+import { color } from "../styles/colors";
 
 const Wrapper = styled(Link)`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: avenir, sans-serif;
+  font-family: Avenir, sans-serif;
   font-size: 16px;
+  font-weight: 600;
   line-height: 24px;
+  text-align: center;
   background-color: ${color.blue3};
-  border-radius: 16px;
+  border-radius: 20px;
   color: ${color.blue1};
-  padding: 4px 12px;
-  margin-bottom: 8px;
+  padding: 8px 12px;
   transition: background-color 0.3s ease, color 0.3s ease;
 
   &:hover {
@@ -23,12 +25,10 @@ const Wrapper = styled(Link)`
   }
 `;
 
-const BlogArticleTag = ({ className, content }) => {
-  return (
-    <Wrapper className={className} to="#">
-      {content}
-    </Wrapper>
-  );
-};
+const BlueboxLink = ({ className, content, ...rest }) => (
+  <Wrapper className={className} to={content.url} {...rest}>
+    {content.name}
+  </Wrapper>
+);
 
-export default BlogArticleTag;
+export default BlueboxLink;

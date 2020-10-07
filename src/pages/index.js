@@ -134,6 +134,7 @@ const IndexPage = () => (
         <Link to="/learning-center-entity/washington-virtual-mailboxes">Washington Virtual Mailboxes</Link>
 
         <h2>Corporation State Information</h2>
+        <Link to="/corporation-state-information">Corporation State Information</Link>
         <Link to="/corporation-state-information/california-corporation">California Corporation (WIP)</Link>
 
         <h2>Search your name availability</h2>
