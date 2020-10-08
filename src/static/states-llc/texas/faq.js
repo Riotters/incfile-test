@@ -39,7 +39,7 @@ export const faqContent = {
                 list: [
                     `<a href="https://www.incfile.com/blog/post/perform-market-research-assess-demand-before-you-start-business/">Research your target market</a> to make sure there’s a demand for the products and services you provide.`,
                     `<a href="https://www.incfile.com/blog/post/keys-successful-business-plan/">Create a comprehensive business plan</a> that defines the most important aspects of your Texas business.`,
-                    `<a href="https://www.incfile.com/research-topics/llc-info/the-llc-operating-agreement/">Write an Operating Agreement</a> that covers how you will run your LLC.`,
+                    `<a href="https://www.incfile.com/research-topics/llc-info/llc-operating-agreement/">Write an Operating Agreement</a> that covers how you will run your LLC.`,
                 ]
             },
         },
