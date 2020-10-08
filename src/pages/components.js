@@ -47,6 +47,8 @@ import {CompareStateFilingTimes} from "../static/compare-state-filing-times";
 import StatesTable from "../components/states-table/states-table";
 import {WhichStatesAreFast} from "../static/which-states-are-fast";
 import StatesMap from "../components/states-map/states-map";
+import Reviews from "../components/reviews/reviews";
+import {ReviewsData} from "../static/reviews-data";
 
 const topimagebox = {
     header: `How Long does it take to file an Annual Report?`,
@@ -595,6 +597,14 @@ const ComponentsPage = () => (
                 <StatesMap/>
             </Wrapper>
         </Container>
+
+        <Container>
+            <Wrapper>
+                <h3>Incfile.com Reviews</h3>
+            </Wrapper>
+        </Container>
+        <Reviews reviews={ReviewsData}/>
+
     </Layout>
 )
 
