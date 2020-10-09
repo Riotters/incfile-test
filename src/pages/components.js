@@ -49,6 +49,7 @@ import {WhichStatesAreFast} from "../static/which-states-are-fast";
 import StatesMap from "../components/states-map/states-map";
 import Reviews from "../components/reviews/reviews";
 import {ReviewsData} from "../static/reviews-data";
+import AmountSlider from "../components/amount-slider/amount-slider";
 
 const topimagebox = {
     header: `How Long does it take to file an Annual Report?`,
@@ -597,14 +598,18 @@ const ComponentsPage = () => (
                 <StatesMap/>
             </Wrapper>
         </Container>
-
         <Container>
             <Wrapper>
                 <h3>Incfile.com Reviews</h3>
             </Wrapper>
         </Container>
         <Reviews reviews={ReviewsData}/>
-
+        <Container>
+            <Wrapper style={{width: '435px'}}>
+                <h3>Amount slider</h3>
+                <AmountSlider initValue={72000} maxValue={100000} description="Estimated yearly income" onChange={() => {}}/>
+            </Wrapper>
+        </Container>
     </Layout>
 )
 

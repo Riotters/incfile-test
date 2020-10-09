@@ -13,7 +13,7 @@ import Service from "../../atomic/sections/learning-center-entity/help-center/se
 import Tools from "../../atomic/sections/learning-center-entity/help-center-article/tools";
 import Benefits from "../../components/partials/sections/benefits";
 import Articles from "../../components/partials/sections/articles";
-import Rocket from "../../atomic/sections/review-entity-type/c-corporation/rocket";
+import Rocket from "../../atomic/sections/review-entity-types/c-corporation/rocket";
 import Searchbar from "../../atomic/molecules/form/searchbar";
 //Texts
 import { top, about, related, faq, rocket, categories, service, tools } from "../../static/learning-center-entity/help-center-article";

@@ -9,7 +9,7 @@ import Top from "../../atomic/partials/top";
 import General from "../../atomic/sections/other/general-research-topics/general";
 import Service from "../../atomic/sections/other/general-research-topics/service";
 import Tools from "../../atomic/sections/other/general-research-topics/tools";
-import Rocket from "../../atomic/sections/review-entity-type/c-corporation/rocket";
+import Rocket from "../../atomic/sections/review-entity-types/c-corporation/rocket";
 //Texts
 import { top, general, service, tools, rocket } from "../../static/other/general-research-topics";
 

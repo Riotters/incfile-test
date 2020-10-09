@@ -5,8 +5,8 @@ import {Heading} from "../../atoms/typography/heading";
 import Icon from "../../../images/icons/question-orange.inline.svg"
 import {shadow} from "../../atoms/styles/shadows";
 
-const FormPageTitle = ({ title, hasInfoBox, infoBoxText }) => (
-    <Header>
+const FormPageTitle = ({ title, hasInfoBox, infoBoxText, ...rest}) => (
+    <Header {...rest}>
         <Heading size={2} style={{fontSize: "24px", lineHeight: "29px", textAlign: "left", marginBottom: 0}}>{title}</Heading>
         {hasInfoBox &&
             <InfoBox>

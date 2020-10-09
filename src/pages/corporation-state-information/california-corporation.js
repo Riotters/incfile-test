@@ -6,7 +6,7 @@ import Button from "../../atomic/molecules/buttons/button";
 //Sections
 import Top from "../../atomic/partials/top";
 import About from "../../atomic/sections/learning-center-entity/state-information-california/about";
-import Rocket from "../../atomic/sections/review-entity-type/c-corporation/rocket";
+import Rocket from "../../atomic/sections/review-entity-types/c-corporation/rocket";
 import Requirements from "../../atomic/sections/learning-center-entity/state-information-california/requirements";
 import LearnMore from "../../atomic/sections/learning-center-entity/state-information-california/learn-more";
 import QuickLinks from "../../atomic/sections/learning-center-entity/state-information-california/quick-links";

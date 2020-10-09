@@ -21,7 +21,7 @@ const Wrapper = styled.div`
   margin-top: ${(props) => (props.tab ? "" : "80")};
 
   @media (min-width: 769px) {
-    padding: ${(props) => (props.tab ? "" : "25px 29px 0")};
+    padding: ${(props) => (props.tab ? "" : "25px 29px 40px")};
     overflow-x: auto;
   }
 `;

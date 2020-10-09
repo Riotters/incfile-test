@@ -175,7 +175,7 @@ export const states = {
     },
     {
       name: "Texas",
-      url: "texas-llc",
+      url: "/texas-llc",
     },
     {
       name: "Utah",

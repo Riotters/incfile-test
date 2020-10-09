@@ -54,12 +54,12 @@ const Wrapper = styled.div`
     }
 `
 
-const Colorbox = ({ className, color, Icon, dotsColor, content, hasBorderRadius, borderRadiusValue, paddingValue, iconLeftPosition, iconTopPosition}) => {
+const Colorbox = ({ className, color, Icon, dotsColor, content, hasBorderRadius, borderRadiusValue, paddingValue, iconLeftPosition, iconTopPosition, style}) => {
   return (
-    <Wrapper className={className} color={color} Icon={Icon} dotsColor={dotsColor} iconLeftPosition={iconLeftPosition} iconTopPosition={iconTopPosition} paddingValue={paddingValue} hasBorderRadius={hasBorderRadius} borderRadiusValue={borderRadiusValue}>
+    <Wrapper style={style} className={className} color={color} Icon={Icon} dotsColor={dotsColor} iconLeftPosition={iconLeftPosition} iconTopPosition={iconTopPosition} paddingValue={paddingValue} hasBorderRadius={hasBorderRadius} borderRadiusValue={borderRadiusValue}>
         {Icon && (
                 <Icon />
-            )}   
+            )}
         {content.header && (
             <h4>{content.header}</h4>
         )}

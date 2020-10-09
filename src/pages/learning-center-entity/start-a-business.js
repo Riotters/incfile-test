@@ -12,7 +12,7 @@ import Help from "../../atomic/sections/manage-your-company/annual-report/help";
 import About from "../../atomic/sections/learning-center-entity/start-a-business/about";
 import CheckType from "../../atomic/sections/learning-center-entity/start-a-business/check-type";
 import BusinessStructure from "../../atomic/sections/learning-center-entity/start-a-business/business-structure";
-import Rocket from "../../atomic/sections/review-entity-type/c-corporation/rocket";
+import Rocket from "../../atomic/sections/review-entity-types/c-corporation/rocket";
 import Searchbar from "../../atomic/molecules/form/searchbar";
 //Texts
 import { top, about, checkType, businessStructure, launchBusiness } from "../../static/learning-center-entity/start-a-business";

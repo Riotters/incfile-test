@@ -13,7 +13,7 @@ import State from "../../atomic/sections/other/start-an-llc/state";
 import Service from "../../atomic/sections/other/start-an-llc/service";
 import Variants from "../../atomic/sections/other/start-an-llc/variants";
 import Faq from "../../atomic/sections/other/start-an-llc/faq";
-import Rocket from "../../atomic/sections/review-entity-type/c-corporation/rocket";
+import Rocket from "../../atomic/sections/review-entity-types/c-corporation/rocket";
 //Texts
 import { top, about, state, service, variants, faq, rocket } from "../../static/other/start-an-llc";
 

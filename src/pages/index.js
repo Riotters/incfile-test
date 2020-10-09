@@ -43,7 +43,22 @@ const IndexPage = () => (
 
         <h2>LLC States Information</h2>
         <Link to="/llc-state-information">LLC State Information</Link>
+        <Link to="/llc-state-information/arizona-llc/">Arizona LLC ?</Link>
+        <Link to="/llc-state-information/california-llc/">California LLC</Link>
+        <Link to="/llc-state-information/florida-llc/">Florida LLC</Link>
+        <Link to="/llc-state-information/georgia-llc/">Georgia LLC</Link>
+        <Link to="/llc-state-information/illinois-llc/">Illinois LLC</Link>
+        <Link to="/llc-state-information/louisiana-llc/">Louisiana LLC ?</Link>
+        <Link to="/llc-state-information/maryland-llc/">Maryland LLC ?</Link>
+        <Link to="/llc-state-information/massachusetts-llc/">Massachusetts LLC ?</Link>
+        <Link to="/llc-state-information/michigan-llc/">Michigan LLC ?</Link>
+        <Link to="/llc-state-information/new-york-llc/">New York LLC</Link>
+        <Link to="/llc-state-information/north-carolina-llc/">North Carolina LLC ?</Link>
+        <Link to="/llc-state-information/ohio-llc/">Ohio LLC ?</Link>
+        <Link to="/llc-state-information/pennsylvania-llc/">Pennsylvania LLC ?</Link>
+        <Link to="/llc-state-information/tennessee-llc/">Tennessee LLC ?</Link>
         <Link to="/texas-llc/">Texas LLC</Link>
+        <Link to="/llc-state-information/virginia-llc/">Virginia LLC ?</Link>
 
         <h2>Contact Pages</h2>
         <Link to="/contact/existing-clients/">Existing clients</Link>
@@ -71,6 +86,7 @@ const IndexPage = () => (
         <h2>Manage Your Company</h2>
         <Link to="/manage-your-company">Manage your company</Link>
         <Link to="/manage-your-company/annual-report">Annual report</Link>
+        <Link to="/manage-your-company/amendment">Amendment</Link>
         <Link to="/manage-your-company/business-license">Business license</Link>
         <Link to="/manage-your-company/certificate-of-good-standing">Certificate of good standing</Link>
         <Link to="/manage-your-company/change-of-registered-agent">Change of registered agent</Link>
@@ -84,18 +100,20 @@ const IndexPage = () => (
         <Link to="/manage-your-company/filling-business-taxes">Filling Business Taxes</Link>
         <Link to="/manage-your-company/fictitious-business">Fictitious Business</Link>
         <Link to="/manage-your-company/home-page-v3">Home Page v3</Link>
+        <Link to="/manage-your-company/compare-state-filling-time">Compare State Filling Time</Link>
 
-        <h2>Review Entity Type</h2>
-        <Link to="/review-entity-type/nonprofit">Nonprofit (WIP)</Link>
-        <Link to="/review-entity-type/c-corporation">C Corporation (no details)</Link>
-        <Link to="/review-entity-type/s-corporation">S Corporation (no details)</Link>
-        <Link to="/review-entity-type/llc">LLC (no details)</Link>
+        <h2>Review Entity Types</h2>
+        <Link to="/start-your-company">Start Your Company</Link>
+        <Link to="/review-entity-types/nonprofit">Nonprofit (WIP)</Link>
+        <Link to="/review-entity-types/c-corporation">C Corporation (no details)</Link>
+        <Link to="/review-entity-types/s-corporation">S Corporation (no details)</Link>
+        <Link to="/review-entity-types/llc">LLC (no details)</Link>
 
         <h2>Learning Center Entity</h2>
         <Link to="/learning-center-entity/help-center">Help Center</Link>
         <Link to="/learning-center-entity/help-center-article">Help Center Article</Link>
         <Link to="/learning-center-entity/comparison-chart">Comparison Chart</Link>
-        <Link to="/learning-center-entity/business-checklist">Business Checklist (WIP)</Link>
+        <Link to="/business-checklist">Business Checklist (WIP)</Link>
         <Link to="/learning-center-entity/annual-report">Annual Report Due Date</Link>
         <Link to="/learning-center-entity/business-license-req">Business License Requirements (no API)</Link>
         <Link to="/learning-center-entity/start-a-business">Business Startup Guides (no details)</Link>
@@ -134,6 +152,7 @@ const IndexPage = () => (
         <Link to="/learning-center-entity/virginia-virtual-mailboxes">Virginia Virtual Mailboxes</Link>
         <Link to="/learning-center-entity/washington-virtual-mailboxes">Washington Virtual Mailboxes</Link>
 
+        <Link to="/learning-center-entity/alaska-corporation">Alaska Corporation</Link>
         <h2>Corporation State Information</h2>
         <Link to="/corporation-state-information">Corporation State Information</Link>
         <Link to="/corporation-state-information/california-corporation">California Corporation (WIP)</Link>
@@ -210,6 +229,9 @@ const IndexPage = () => (
         <Link to="/research-topics/s-corporation-info/customized-corp-llc-kit">What is the Customized Corporate/LLC Kit?</Link>
         <Link to="/research-topics/s-corporation-info/s-corporation-status">Who Will Typically Elect the S Corporation Status?</Link>
         <Link to="/research-topics/s-corporation-info/s-corp-distribution">How to Take a Distribution from an S Corp</Link>
+        <Link to="/research-topics/s-corporation-info/corporation-need">How Many Shares of Stock will my Corporation Need?</Link>
+        <Link to="/research-topics/s-corporation-info/corp-seal">What is a Corporate Seal?</Link>
+        <Link to="/research-topics/s-corporation-info/tax-advantages">Which entity offers the best tax advantages?</Link>
         <Link to="/research-topics/llc-info">LLC</Link>
         <Link to="/research-topics/llc-info/own-a-corporation-or-llc">Are Non-U.S. Residents Allowed to Own a Corporation or LLC?</Link>
         <Link to="/research-topics/llc-info/llc-business-entity-member">Can another business entity be a member of an LLC?</Link>
@@ -221,6 +243,50 @@ const IndexPage = () => (
         <Link to="/research-topics/llc-info/llc-vs-c-corporation">LLC vs. C Corporation</Link>
         <Link to="/research-topics/llc-info/llcs-vs-c-corporation">LLCs vs C-Corporation: Which Is Best for Your Business?</Link>
         <Link to="/research-topics/llc-info/starting-llc-by-steps">Steps to starting a Limited Liability Company (LLC)</Link>
+        <Link to="/research-topics/llc-info/forming-llc-benefits">The Benefits of Forming an LLC</Link>
+        <Link to="/research-topics/llc-info/llc-operating-agreement">The LLC Operating Agreement</Link>
+        <Link to="/research-topics/llc-info/llc-meaning">What Does LLC Mean?</Link>
+        <Link to="/research-topics/llc-info/publication-requirement">What is a Publication Requirement?</Link>
+        <Link to="/research-topics/llc-info/what-is-an-llc">What is an LLC (Limited Liability Company)?</Link>
+        <Link to="/research-topics/llc-info/customized-corp-llc-kit">What is the Customized Corporate/LLC Kit?</Link>
+        <Link to="/research-topics/llc-info/changing-llc-name">What is the process involved in changing the name of an LLC?</Link>
+        <Link to="/research-topics/llc-info/tax-advantages">Which entity offers the best tax advantages?</Link>
+        <Link to="/research-topics/llc-info/choosing-entity-type">Which entity type should I choose?</Link>
+        <Link to="/research-topics/llc-info/llc-members-operating-agreement">Why it’s important for the members on an LLC to have an operating agreement in place?</Link>
+        <Link to="/research-topics/ein-info">Employer Identification Number (EIN)</Link>
+        <Link to="/research-topics/ein-info/identification-number">Employer Identification Number</Link>
+        <Link to="/research-topics/nonprofit-info">Nonprofit</Link>
+        <Link to="/research-topics/nonprofit-info/what-is-a-nonprofit">What is a Nonprofit Corporation?</Link>
+        <Link to="/research-topics/nonprofit-info/corporate-meetings">Am I Required to Hold Corporate Meetings?</Link>
+        <Link to="/research-topics/nonprofit-info/profit-from-nonprofit">Can a Nonprofit Corporation Make a Profit?</Link>
+        <Link to="/research-topics/nonprofit-info/require-an-attorney">Does Forming an LLC (Limited Liability Company) or Corporation Require an Attorney?</Link>
+        <Link to="/research-topics/nonprofit-info/forming-nonprofit-corp">Forming a Nonprofit Corporation</Link>
+        <Link to="/research-topics/nonprofit-info/nonprofit-corp-name">How do I Choose a Name for my Nonprofit Corporation?</Link>
+        <Link to="/research-topics/nonprofit-info/corp-managing">How is a Corporation Managed?</Link>
+        <Link to="/research-topics/nonprofit-info/directors-and-officers-in-nonprofit">How many Directors or Officers are Nonprofit Corporations required to have?</Link>
+        <Link to="/research-topics/nonprofit-info/nonprofit-tax-exempt">Is “Nonprofit” the Same as “Tax-Exempt”?</Link>
+        <Link to="/research-topics/nonprofit-info/nonprofit-compensation">May a Nonprofit Corporation Pay Compensation to its Officers, Directors and/or Employees?</Link>
+        <Link to="/research-topics/nonprofit-info/not-for-profit-vs-nonprofit">Not-for-Profit and Nonprofit: What’s the Difference?</Link>
+        <Link to="/research-topics/nonprofit-info/what-are-bylaws">What are Bylaws?</Link>
+        <Link to="/research-topics/nonprofit-info/directors-and-shareholders">What are the Differences Between Officers, Directors and Shareholders?</Link>
+        <Link to="/research-topics/nonprofit-info/customized-corp-llc-kit">What is the Customized Corporate/LLC Kit?</Link>
+        <Link to="/research-topics/nonprofit-info/non-profit-by-steps">What Steps Need to be Taken to Form a Nonprofit Corporation?</Link>
+        <Link to="/research-topics/nonprofit-info/where-to-form-nonprofit">Where Should I Form my Nonprofit Corporation?</Link>
+        <Link to="/research-topics/general-research">General</Link>
+        <Link to="/research-topics/general-research/require-an-attorney">Does Forming an LLC (Limited Liability Company) or Corporation Require an Attorney?</Link>
+        <Link to="/research-topics/general-research/incfile-discount-coupon">Does Incfile have a Discount or Coupon Code?</Link>
+        <Link to="/research-topics/general-research/llc-inc-designator-companies-name">Does the designator “LLC” or “Inc.” always need to be included in your companies name?</Link>
+        <Link to="/research-topics/general-research/how-to-get-trademark">How to Get a Trademark: A Complete Guide</Link>
+        <Link to="/research-topics/general-research/forming-llc-or-corp">In Which State Should I Form my LLC or Corporation?</Link>
+        <Link to="/research-topics/general-research/llc-and-corporation-requirements">LLC and Corporation Ongoing Compliance Requirements</Link>
+        <Link to="/research-topics/general-research/llc-incorporate-name">Should I assume that if I form an LLC or incorporate that no one else can use the same name?</Link>
+        <Link to="/research-topics/general-research/corp-seal">What is a Corporate Seal?</Link>
+        <Link to="/research-topics/general-research/what-is-a-nonprofit">What is a Nonprofit Corporation?</Link>
+        <Link to="/research-topics/general-research/publication-requirement">What is a Publication Requirement?</Link>
+        <Link to="/research-topics/general-research/what-is-an-llc">What is an LLC (Limited Liability Company)?</Link>
+        <Link to="/research-topics/general-research/customized-corp-llc-kit">What is the Customized Corporate/LLC Kit?</Link>
+        <Link to="/research-topics/general-research/registered-agent-function">What is the main function of the Registered Agent?</Link>
+        <Link to="/research-topics/general-research/required-business-account-paperwork">What Do I Need to Open a Business Bank Account?</Link>
 
         <h2>Blog</h2>
         <Link to="/blog">Blog (no API)</Link>

@@ -8,7 +8,7 @@ import Top from "../../atomic/partials/top";
 import About from "../../atomic/sections/learning-center-entity/comparison-chart/about";
 import BusinessStructure from "../../atomic/sections/learning-center-entity/comparison-chart/business-structure";
 import EntityType from "../../atomic/sections/learning-center-entity/comparison-chart/entity-type";
-import Rocket from "../../atomic/sections/review-entity-type/c-corporation/rocket";
+import Rocket from "../../atomic/sections/review-entity-types/c-corporation/rocket";
 import Guide from "../../atomic/sections/learning-center-entity/comparison-chart/guide";
 import Service from "../../atomic/sections/learning-center-entity/comparison-chart/service";
 //Texts

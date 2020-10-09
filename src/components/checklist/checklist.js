@@ -3,6 +3,10 @@ import styled from "styled-components"
 import Item from "./item"
 import _ from 'lodash'
 import ShowUncompleted from './show-uncompleted'
+import { shadow } from "../styles/shadows"
+
+const description = 'In oculis quidem faciunt, ut labore et via procedat oratio quaerimus igitur, quid bonum esse ratione intellegi posse et molestiae non recusandae itaque negat opus esse appetendum, alterum aspernandum sentiamus alii autem, quibus ego assentior, cum a philosophis compluribus permulta dicantur, cur verear, ne ferae.';
+const baseHeight = 80;
 
 const Wrapper = styled.div`
     display: flex;
@@ -14,13 +18,15 @@ const Wrapper = styled.div`
 const Undone = styled.div`
     display: flex;
     flex-direction: column;
+    transition: all 0.5s;
 `
 
 const Separator = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 670px;
+    padding-top: 32px;
+    transition: all 0.5s;
 `
 
 const Done = styled.div`
@@ -28,7 +34,23 @@ const Done = styled.div`
     flex-direction: column;    
     position: relative;
     margin-top: 20px;
+    transition: all 0.5s;
 `
+
+const ShadowCard = styled.div`
+    width: calc(100% - ${props => props.index * 16}px);
+    height: ${baseHeight}px;
+    position: absolute;
+    top: ${props => props.index * 8}px;
+    left: ${props => props.index * 8}px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: ${shadow.white1};
+    
+    &:last-child {
+        box-shadow: none;
+    }
+`;
 
 class Checklist extends React.Component {
     constructor(props) {
@@ -43,11 +65,12 @@ class Checklist extends React.Component {
                 height: 60
             },
             items: [
-                {id: 1, name: 'Lorem ipsum 1', isCompleted: false, height: 80},
-                {id: 2, name: 'Lorem ipsum 2', isCompleted: false, height: 80},
-                {id: 3, name: 'Lorem ipsum 3', isCompleted: false, height: 80},
-                {id: 4, name: 'Lorem ipsum 4', isCompleted: false, height: 80},
-            ]
+                {id: 1, name: 'Lorem ipsum 1', isCompleted: false, height: baseHeight, description},
+                {id: 2, name: 'Lorem ipsum 2', isCompleted: false, height: baseHeight, description},
+                {id: 3, name: 'Lorem ipsum 3', isCompleted: false, height: baseHeight, description},
+                {id: 4, name: 'Lorem ipsum 4', isCompleted: false, height: baseHeight, description},
+            ],
+            shadowCards: 0
         }
     }
 
@@ -58,7 +81,7 @@ class Checklist extends React.Component {
         return {
             completed: {
                 items: completed,
-                height: completed.length > 0 ? _.sumBy(completed, 'height') : 0,
+                height: this.state.stack ? baseHeight + 20 : completed.length > 0 ? _.sumBy(completed, 'height') : 0,
                 length: completed.length
             },
             uncompleted: {
@@ -68,41 +91,50 @@ class Checklist extends React.Component {
         }
     }
 
+    calcShadowCardsCount(stacked, completedCount) {
+        return stacked ? Math.max(Math.min(completedCount - 1, 2), 0) : 0
+    }
+
     toggleClass(id) {
         const { items } = this.state
         const updatedItems = items.map(item => ({...item, isCompleted: item.id === id ? !item.isCompleted : item.isCompleted}))
-        this.setState({items: updatedItems})
+        const completed = updatedItems.filter(item => item.isCompleted);
+        this.setState({
+            items: updatedItems,
+            shadowCards: this.calcShadowCardsCount(this.state.stack, completed.length)
+        })
     }
 
-    stackItems(meta) {
-        //const updatedItems = this.state.items.map(item => ({...item, isCompleted: item.id === id ? !item.isCompleted : item.isCompleted}))
-        //console.log(updatedItems);
+    stackItems(stacked) {
         const { items } = this.state
-        const completed = items.filter(item => item.isCompleted)
+        const completed = items.filter(item => item.isCompleted);
         this.setState(prevState => ({
-            stack: !prevState.stack
+            stack: stacked,
+            shadowCards: this.calcShadowCardsCount(stacked, completed.length)
         }))
-        if (completed.length > 0) {
-            console.log("wieksze od 0") 
-            console.log(meta.completed.length)
-            console.log(completed[0])
-        //} else if (completed.length > 3) {
+    }
 
-        } else {
-            console.log("0") 
-        }
+    handleChangeItemHeight = (id, height) => {
+        const { items } = this.state
+        const updatedItems = items.map(item => ({...item, height: item.id === id ? height : item.height}))
+        this.setState({items: updatedItems})
     }
 
     render() {
         const meta = this.getMeta()
-        
         let uInd = 0, cInd = 0
-
         const items = this.state.items.map((item, index) => (
-            <Item id={item.id} index={item.isCompleted ? cInd++ : uInd++} meta={meta} height={item.height} name={item.name} isCompleted={item.isCompleted} toggleClass={() => this.toggleClass(item.id)} isStack={this.state.stack}/>
+            <Item id={item.id}
+                  index={item.isCompleted ? cInd++ : uInd++}
+                  meta={meta}
+                  initHeight={baseHeight}
+                  name={item.name}
+                  isCompleted={item.isCompleted}
+                  toggleClass={() => this.toggleClass(item.id)}
+                  isStack={this.state.stack}
+                  description={item.description}
+                  onChangeHeight={this.handleChangeItemHeight}/>
         ))
-
-        //const itemCountText = this.getItemCountText()
 
         return (
             <Wrapper>
@@ -111,10 +143,10 @@ class Checklist extends React.Component {
                 </Undone>
                 <Separator>
                     <h4>Done</h4>
-                    <ShowUncompleted stackItems={() => this.stackItems(meta)}>showLess</ShowUncompleted>
+                    <ShowUncompleted stackItems={this.stackItems}>showLess</ShowUncompleted>
                 </Separator>
                 <Done style={{height: `${meta.completed.height}px`}}>
-
+                    {Array.from({length: this.state.shadowCards}, (_, i) => i + 1).reverse().map(index => <ShadowCard {...{index}}/>)}
                 </Done>
             </Wrapper>
         )

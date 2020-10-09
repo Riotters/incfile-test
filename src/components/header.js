@@ -216,7 +216,7 @@ const Header = ({ siteTitle }) => {
         <Navigation>
           <Menu>
             <MenuItem>
-              <MenuLink to="#">Review Entity Type</MenuLink>
+              <MenuLink to="#">Review Entity Types</MenuLink>
               <DropdownSVG />
             </MenuItem>
             <MenuItem>
