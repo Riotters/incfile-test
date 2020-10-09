@@ -98,7 +98,7 @@ const Scale = styled.div`
     }
 `;
 
-const AmountSlider = ({initValue, maxValue, description, onChange}) => {
+const AmountSlider = ({initValue, maxValue, description, onChange, step}) => {
     let [value, setValue] = useState(initValue);
     let formatter = new Intl.NumberFormat('en-US', {
         style: 'currency',
@@ -117,7 +117,7 @@ const AmountSlider = ({initValue, maxValue, description, onChange}) => {
             <Amount>{amount}</Amount>
             <Description>{description}</Description>
             <Slider percent={Math.round(value / maxValue * 100)}>
-                <input type="range" min="0" max={maxValue} value={value} className="range" onChange={handleChange}/>
+                <input type="range" min="0" max={maxValue} value={value} className="range" step={step || 1000} onChange={handleChange}/>
                 <Scale>
                     <Divider/>
                     <Divider/>
