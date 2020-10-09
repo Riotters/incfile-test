@@ -86,6 +86,7 @@ const IndexPage = () => (
         <h2>Manage Your Company</h2>
         <Link to="/manage-your-company">Manage your company</Link>
         <Link to="/manage-your-company/annual-report">Annual report</Link>
+        <Link to="/manage-your-company/amendment">Amendment</Link>
         <Link to="/manage-your-company/business-license">Business license</Link>
         <Link to="/manage-your-company/certificate-of-good-standing">Certificate of good standing</Link>
         <Link to="/manage-your-company/change-of-registered-agent">Change of registered agent</Link>

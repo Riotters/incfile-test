@@ -33,8 +33,8 @@ const Wrapper = styled.div`
   }
 `;
 
-const Curve = ({ children, className, width, height, top, topXL, left, leftXL, right, rightXL, bottom, bottomXL, y, x, rotate, opacity, color }) => (
-  <Wrapper className={className} height={height} width={width} top={top} topXL={topXL} left={left} leftXL={leftXL} right={right} rightXL={rightXL} bottom={bottom} bottomXL={bottomXL} y={y} x={x} rotate={rotate} opacity={opacity} color={color}>
+const Curve = ({ children, className, width, height, top, topXL, left, leftXL, right, rightXL, bottom, bottomXL, y, x, rotate, opacity, color, ...rest }) => (
+  <Wrapper className={className} height={height} width={width} top={top} topXL={topXL} left={left} leftXL={leftXL} right={right} rightXL={rightXL} bottom={bottom} bottomXL={bottomXL} y={y} x={x} rotate={rotate} opacity={opacity} color={color} {...rest}>
     {children}
   </Wrapper>
 );
