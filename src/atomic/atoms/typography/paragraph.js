@@ -42,6 +42,10 @@ const StyledParagraph = styled.p`
         color: ${color.orange1};
       }
     }
+    
+    &.text-left{
+      text-align: left !important;
+    }
 `;
 
 export const Paragraph = ({ children, maxWidth, mixed, ...rest }) => (

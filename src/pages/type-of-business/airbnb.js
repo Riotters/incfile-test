@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
 import ButtonsBox from "../../atomic/atoms/boxes/top-buttons-box";
-import Button from "../../components/button";
+import Button from "../../atomic/molecules/buttons/button";
 import Top from "../../atomic/partials/top";
 import RatingRow from "../../atomic/atoms/boxes/rating-row";
 import CartBlock from "../../atomic/molecules/blocks/cart-block";
@@ -48,9 +48,7 @@ const Airbnb = () => (
             <p>Airbnb has only been with us since 2008, but over the last few years,
                 it’s turned over half a million people into entrepreneurs.</p>
             <ButtonsBox>
-                <Button theme="primary56" marginMD="0 24px 0 0" arrow>
-                    Start Now
-                </Button>
+                <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{text: `Start Now`, url: `/`}} />
             </ButtonsBox>
 
             <RatingRow>
