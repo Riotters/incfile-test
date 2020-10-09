@@ -9,8 +9,8 @@ export const about = {
         url: `/research-topics/nonprofit-info`,
       },
     ],
-    header: `How do I Choose a Name for my Nonprofit Corporation?`,
-    text: `You should choose a name that represents the purpose of your nonprofit corporation. If you incorporate through IncFile, we will request a first and second name choice for your nonprofit and complete a name availability search to assure that your name is available and not deceptively similar to any other legal entity. Further, you must choose a name that clearly indicates that your nonprofit is incorporated, by including the words “Corporation”, “Incorporated”, “Corp.”, or “Inc.” in your name.`,
+    header: `Where Should I Form my Nonprofit Corporation?`,
+    text: `You are not required to form your nonprofit in the state where it will be physically located. However, practical matters in choosing a location to incorporate should be taken into consideration, such as the state fees and the taxation laws governing that state. If your nonprofit corporation will have only a few officers or directors and most of the activities will take place in one state, it is advisable to incorporate in that state. The disadvantages of not incorporating in your home state include the requirement of having to qualify to do business in a foreign state, being subjected to taxes in both your state of incorporation and the state in which you conduct business, and being susceptible to a law suit in your state of incorporation as well as the state in which you conduct business.`,
     header2: `Related Articles`,
     links2: [
         {

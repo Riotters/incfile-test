@@ -9,9 +9,8 @@ import IconSVG from "../../../../images/icons/no-pass-sign.inline.svg";
 import IconListColorBox from "../../../molecules/text-blocks/icon-h4-list-color";
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-blue3.inline.svg";
-import NumericList from "../../../organisms/lists/numeric-boxed-list";
 import Path from "../../../molecules/blocks/research-topics-path";
-import Button from "../../../molecules/buttons/button"
+import parse from "html-react-parser"
 
 const About = styled.section`
   position: relative;
@@ -24,75 +23,64 @@ const AboutSection = ({ className, content }) => (
       <OvalSVG />
     </Oval>
     <ImageContent image="web-address-search">
-      <Path content={content.links} />
-      <Heading size={4} bottomMargin="48">
+    <Path content={content.links} />
+      <Heading size={3} bottomMargin="32">
         {content.header}
       </Heading>
-      <Heading size={3} bottomMargin="32">
-        {content.header2}
-      </Heading>
-      <Paragraph big bottomMargin="48">
+      <Paragraph big bottomMargin="16">
         {content.text}
       </Paragraph>
-      <Heading size={3} bottomMargin="24">
-        {content.header3}
-      </Heading>
-      <IconListColorBox content={content.list} color={color.orange3} curve curveColor={color.purple2} rounded bottomMargin="48" />
-      <Heading size={3} bottomMargin="24">
-        {content.header4}
-      </Heading>
-      <Paragraph big bottomMargin="48">
+      <Paragraph big bottomMargin="16">
         {content.text2}
       </Paragraph>
-      <Heading size={3} bottomMargin="24">
-        {content.header5}
-      </Heading>
       <Paragraph big bottomMargin="48">
         {content.text3}
       </Paragraph>
       <Heading size={3} bottomMargin="24">
-        {content.header6}
+        {content.header2}
       </Heading>
-      <Paragraph big bottomMargin="48">
+      <Paragraph big bottomMargin="16">
         {content.text4}
       </Paragraph>
-      <Heading size={3} bottomMargin="24">
-        {content.header7}
-      </Heading>
-      <Paragraph big bottomMargin="48">
-        {content.text5}
+      <Paragraph big bottomMargin="16" mixed>
+        {parse(content.text5)}
       </Paragraph>
-      <Heading size={3} bottomMargin="24">
-        {content.header8}
-      </Heading>
-      <Paragraph big bottomMargin="48">
+      <Paragraph big bottomMargin="16">
         {content.text6}
       </Paragraph>
-      <Heading size={3} bottomMargin="24">
-        {content.header9}
-      </Heading>
-      <Paragraph big bottomMargin="48">
+      <Paragraph big bottomMargin="16">
         {content.text7}
       </Paragraph>
-      <Heading size={3} bottomMargin="24">
-        {content.header10}
-      </Heading>
-      <Paragraph big bottomMargin="48">
+      <Paragraph big bottomMargin="16">
         {content.text8}
       </Paragraph>
-      <Heading size={3} bottomMargin="24">
-        {content.header11}
-      </Heading>
       <Paragraph big bottomMargin="16">
         {content.text9}
       </Paragraph>
-      <IconListColorBox content={content.list2} color={color.purple3} curve curveColor={color.orange2} rounded bottomMargin="32" />
-      <Button content={content.button} theme="primary56" arrow margin="0 auto 32px 0" />
-      <Paragraph big bottomMargin="48">
+      <Paragraph big bottomMargin="16">
         {content.text10}
       </Paragraph>
+      <Paragraph big bottomMargin="16">
+        {content.text11}
+      </Paragraph>
+      <Paragraph big bottomMargin="48">
+        {content.text12}
+      </Paragraph>
       <Heading size={3} bottomMargin="24">
-        {content.header12}
+        {content.header3}
+      </Heading>
+      <Paragraph big bottomMargin="16">
+        {content.text13}
+      </Paragraph>
+      <Paragraph big bottomMargin="16">
+        {content.text14}
+      </Paragraph>
+      <Paragraph big bottomMargin="16">
+        {content.text15}
+      </Paragraph>
+      <IconListColorBox content={content.list} color={color.green2} rounded bottomMargin="48" />
+      <Heading size={4} bottomMargin="24">
+        {content.header4}
       </Heading>
       {content.links2.map(link => (
         <ArrowLink content={link} />

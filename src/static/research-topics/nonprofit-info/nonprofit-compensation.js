@@ -9,8 +9,8 @@ export const about = {
         url: `/research-topics/nonprofit-info`,
       },
     ],
-    header: `How do I Choose a Name for my Nonprofit Corporation?`,
-    text: `You should choose a name that represents the purpose of your nonprofit corporation. If you incorporate through IncFile, we will request a first and second name choice for your nonprofit and complete a name availability search to assure that your name is available and not deceptively similar to any other legal entity. Further, you must choose a name that clearly indicates that your nonprofit is incorporated, by including the words “Corporation”, “Incorporated”, “Corp.”, or “Inc.” in your name.`,
+    header: `May a Nonprofit Corporation Pay Compensation to its Officers, Directors and/or Employees?`,
+    text: `Yes, a Nonprofit Corporation may pay a reasonable salary to its officers, directors and/or employees for services rendered to the Nonprofit Corporation and associated to its exempt purpose.`,
     header2: `Related Articles`,
     links2: [
         {

@@ -9,8 +9,8 @@ export const about = {
         url: `/research-topics/nonprofit-info`,
       },
     ],
-    header: `How do I Choose a Name for my Nonprofit Corporation?`,
-    text: `You should choose a name that represents the purpose of your nonprofit corporation. If you incorporate through IncFile, we will request a first and second name choice for your nonprofit and complete a name availability search to assure that your name is available and not deceptively similar to any other legal entity. Further, you must choose a name that clearly indicates that your nonprofit is incorporated, by including the words “Corporation”, “Incorporated”, “Corp.”, or “Inc.” in your name.`,
+    header: `What Steps Need to be Taken to Form a Nonprofit Corporation?`,
+    text: `You must incorporate the nonprofit organization in your particular state, which consists of filing your organization’s articles of incorporation with the state. It is important that your organizing documents contain the required language and specific clauses, such as a detailed exempt purpose statement, to ensure that your nonprofit will meet the requirements to qualify for Federal 501(c)(3) tax-exempt status. If you choose to incorporate your nonprofit through IncFile, you only need to complete the online order form. IncFile will prepare and file your organizing documents.`,
     header2: `Related Articles`,
     links2: [
         {

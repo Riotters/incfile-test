@@ -255,6 +255,7 @@ const IndexPage = () => (
         <Link to="/research-topics/ein-info">Employer Identification Number (EIN)</Link>
         <Link to="/research-topics/ein-info/identification-number">Employer Identification Number</Link>
         <Link to="/research-topics/nonprofit-info">Nonprofit</Link>
+        <Link to="/research-topics/nonprofit-info/what-is-a-nonprofit">What is a Nonprofit Corporation?</Link>
         <Link to="/research-topics/nonprofit-info/corporate-meetings">Am I Required to Hold Corporate Meetings?</Link>
         <Link to="/research-topics/nonprofit-info/profit-from-nonprofit">Can a Nonprofit Corporation Make a Profit?</Link>
         <Link to="/research-topics/nonprofit-info/require-an-attorney">Does Forming an LLC (Limited Liability Company) or Corporation Require an Attorney?</Link>
@@ -263,6 +264,28 @@ const IndexPage = () => (
         <Link to="/research-topics/nonprofit-info/corp-managing">How is a Corporation Managed?</Link>
         <Link to="/research-topics/nonprofit-info/directors-and-officers-in-nonprofit">How many Directors or Officers are Nonprofit Corporations required to have?</Link>
         <Link to="/research-topics/nonprofit-info/nonprofit-tax-exempt">Is “Nonprofit” the Same as “Tax-Exempt”?</Link>
+        <Link to="/research-topics/nonprofit-info/nonprofit-compensation">May a Nonprofit Corporation Pay Compensation to its Officers, Directors and/or Employees?</Link>
+        <Link to="/research-topics/nonprofit-info/not-for-profit-vs-nonprofit">Not-for-Profit and Nonprofit: What’s the Difference?</Link>
+        <Link to="/research-topics/nonprofit-info/what-are-bylaws">What are Bylaws?</Link>
+        <Link to="/research-topics/nonprofit-info/directors-and-shareholders">What are the Differences Between Officers, Directors and Shareholders?</Link>
+        <Link to="/research-topics/nonprofit-info/customized-corp-llc-kit">What is the Customized Corporate/LLC Kit?</Link>
+        <Link to="/research-topics/nonprofit-info/non-profit-by-steps">What Steps Need to be Taken to Form a Nonprofit Corporation?</Link>
+        <Link to="/research-topics/nonprofit-info/where-to-form-nonprofit">Where Should I Form my Nonprofit Corporation?</Link>
+        <Link to="/research-topics/general-research">General</Link>
+        <Link to="/research-topics/general-research/require-an-attorney">Does Forming an LLC (Limited Liability Company) or Corporation Require an Attorney?</Link>
+        <Link to="/research-topics/general-research/incfile-discount-coupon">Does Incfile have a Discount or Coupon Code?</Link>
+        <Link to="/research-topics/general-research/llc-inc-designator-companies-name">Does the designator “LLC” or “Inc.” always need to be included in your companies name?</Link>
+        <Link to="/research-topics/general-research/how-to-get-trademark">How to Get a Trademark: A Complete Guide</Link>
+        <Link to="/research-topics/general-research/forming-llc-or-corp">In Which State Should I Form my LLC or Corporation?</Link>
+        <Link to="/research-topics/general-research/llc-and-corporation-requirements">LLC and Corporation Ongoing Compliance Requirements</Link>
+        <Link to="/research-topics/general-research/llc-incorporate-name">Should I assume that if I form an LLC or incorporate that no one else can use the same name?</Link>
+        <Link to="/research-topics/general-research/corp-seal">What is a Corporate Seal?</Link>
+        <Link to="/research-topics/general-research/what-is-a-nonprofit">What is a Nonprofit Corporation?</Link>
+        <Link to="/research-topics/general-research/publication-requirement">What is a Publication Requirement?</Link>
+        <Link to="/research-topics/general-research/what-is-an-llc">What is an LLC (Limited Liability Company)?</Link>
+        <Link to="/research-topics/general-research/customized-corp-llc-kit">What is the Customized Corporate/LLC Kit?</Link>
+        <Link to="/research-topics/general-research/registered-agent-function">What is the main function of the Registered Agent?</Link>
+        <Link to="/research-topics/general-research/required-business-account-paperwork">What Do I Need to Open a Business Bank Account?</Link>
 
         <h2>Blog</h2>
         <Link to="/blog">Blog (no API)</Link>
