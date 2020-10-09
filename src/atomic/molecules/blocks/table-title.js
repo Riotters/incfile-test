@@ -4,19 +4,20 @@ import styled from "styled-components";
 import {Heading} from "../../atoms/typography/heading";
 import Icon from "../../../images/icons/question-orange.inline.svg"
 import {shadow} from "../../atoms/styles/shadows";
+import {color} from "../../atoms/styles/colors";
 
-const FormPageTitle = ({ title, hasInfoBox, infoBoxText, ...rest}) => (
+const TitleWithInfoBox = ({ title, hasInfoBox, infoBoxText, questionMarkColor, ...rest}) => (
     <Header {...rest}>
         <Heading size={2} style={{fontSize: "24px", lineHeight: "29px", textAlign: "left", marginBottom: 0}}>{title}</Heading>
         {hasInfoBox &&
-            <InfoBox>
-                <InfoIcon>
-                    <Icon />
-                </InfoIcon>
-                <InfoBoxContent className="info-content">
-                    {infoBoxText}
-                </InfoBoxContent>
-            </InfoBox>
+        <InfoBox>
+            <InfoIcon>
+                <Icon />
+            </InfoIcon>
+            <InfoBoxContent className="info-content">
+                {infoBoxText}
+            </InfoBoxContent>
+        </InfoBox>
         }
     </Header>
 );
@@ -49,6 +50,12 @@ const InfoBox = styled.div`
 const InfoIcon = styled.div`
     width: 16px;
     height: 20px;
+    
+    svg {
+        g{
+            fill: ${props => props.questionMarkColor ?? color.orange1}
+        }
+    }
 `;
 
 const InfoBoxContent = styled.div`
@@ -80,8 +87,8 @@ const InfoBoxContent = styled.div`
     }
 `;
 
-FormPageTitle.propTypes = {
+TitleWithInfoBox.propTypes = {
     title: PropTypes.string.isRequired
 }
 
-export default FormPageTitle;
+export default TitleWithInfoBox;
