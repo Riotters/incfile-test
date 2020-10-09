@@ -5,7 +5,7 @@ import HeadingCenter from "../../../partials/heading-center";
 import ContentCenter from "../../../partials/content-center";
 import TaxReturnTable from "../../../organisms/tables/tax-return-table";
 import Oval from "../../../atoms/icons/oval";
-import OvalSVG from "../../../../images/ovals/top-left-transparent-green2.inline.svg";
+import OvalSVG from "../../../../images/ovals/top-left-transparent-green1.inline.svg";
 
 const TaxReturn = styled.section`
   position: relative;

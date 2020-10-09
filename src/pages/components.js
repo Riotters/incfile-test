@@ -42,6 +42,12 @@ import Adventages from "../components/adventages";
 import InfoCardsSection from "../atomic/partials/info-cards-section";
 import {InfoCards} from "../static/type-of-business/airbnb";
 import CircleWithText from "../atomic/molecules/blocks/circle-with-text-block";
+import CompareTable from "../components/compare-table/compare-table";
+import {CompareStateFilingTimes} from "../static/compare-state-filing-times";
+import StatesTable from "../components/states-table/states-table";
+import {WhichStatesAreFast} from "../static/which-states-are-fast";
+import StatesMap from "../components/states-map/states-map";
+import AmountSlider from "../components/amount-slider/amount-slider";
 
 const topimagebox = {
     header: `How Long does it take to file an Annual Report?`,
@@ -563,13 +569,37 @@ const ComponentsPage = () => (
 
                 <h3>Info Cards Section</h3>
                 <GreyWrapper>
-                    <InfoCardsSection cards={InfoCards}/>
+                    <InfoCardsSection cards={InfoCards.items}/>
                 </GreyWrapper>
 
                 <h3>Circle with Text Block</h3>
                 <GreyWrapper>
                     <CircleWithText withBg={true} textInsideCircle="70" symbol="%" textLine="Of teens trust influencers more than traditional celebrities" />
                 </GreyWrapper>
+            </Wrapper>
+        </Container>
+        <Container>
+            <Wrapper>
+                <h3>Easily Compare State Filing Times</h3>
+                <CompareTable headers={CompareStateFilingTimes.headers} entries={CompareStateFilingTimes.entries}/>
+            </Wrapper>
+        </Container>
+        <Container>
+            <Wrapper>
+                <h3>Which States Are Fast?</h3>
+                <StatesTable entries={WhichStatesAreFast}/>
+            </Wrapper>
+        </Container>
+        <Container>
+            <Wrapper>
+                <h3>Want to learn more about LLCs in your state?</h3>
+                <StatesMap/>
+            </Wrapper>
+        </Container>
+        <Container>
+            <Wrapper style={{width: '435px'}}>
+                <h3>Amount slider</h3>
+                <AmountSlider initValue={72000} maxValue={100000} description="Estimated yearly income" onChange={() => {}}/>
             </Wrapper>
         </Container>
     </Layout>

@@ -50,36 +50,21 @@ const TitleBox = styled.div`
 `;
 
 const GridSectionList = styled.div`
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 100%;
-    max-width: 970px;
-    > div {
-        margin-bottom: 70px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 100%;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 70px;
+    margin-top: 76px;
+    margin-bottom 76px; 
+    
+    @media (min-width: 490px){
+        grid-template-columns: 470px;
     }
     
-    @media (min-width: 970px) {
-        
-        margin: 120px auto 0;
-    }
-`;
-
-const TextBorderedSection = styled.div`
-    width: 100%;
-    padding-top: 100px;
-    max-width: 670px;
-    
-    @media (min-width: 670px) {
-        
-        margin: 0 auto;
-    }
-    
-    h3{
-        color: #1d1d1d;
-        font-size: 40px;
-        text-align: center;
-        margin-bottom: 24px;
+    @media (min-width: 992px){
+        grid-template-columns: 470px 470px;
     }
 `;
 
@@ -123,7 +108,7 @@ const TaxesIntroduce = () => (
 
                 <GridSectionList>
 
-                    <TextBlockWithImage SvgImage={Icon1} imageBackgroundColor={color.purple2}
+                    <TextBlockWithImage width={100} widthUnit="%" SvgImage={Icon1} imageBackgroundColor={color.purple2}
                                         imageShadowColor={color.purple2}>
                         <Heading size={4}>
                             File with the IRS
@@ -134,7 +119,7 @@ const TaxesIntroduce = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={Icon2} imageBackgroundColor={color.green2}
+                    <TextBlockWithImage width={100} widthUnit="%" SvgImage={Icon2} imageBackgroundColor={color.green2}
                                         imageShadowColor={color.green2}>
                         <Heading size={4}>
                             Payroll tax
@@ -145,7 +130,7 @@ const TaxesIntroduce = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={Icon3} imageBackgroundColor={color.yellow2}
+                    <TextBlockWithImage width={100} widthUnit="%" SvgImage={Icon3} imageBackgroundColor={color.yellow2}
                                         imageShadowColor={color.yellow2}>
                         <Heading size={4}>
                             Sales tax
@@ -155,7 +140,7 @@ const TaxesIntroduce = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={Icon4} imageBackgroundColor={color.babyblue2}
+                    <TextBlockWithImage width={100} widthUnit="%" SvgImage={Icon4} imageBackgroundColor={color.babyblue2}
                                         imageShadowColor={color.babyblue2}>
                         <Heading size={4}>
                             State tax
@@ -166,7 +151,7 @@ const TaxesIntroduce = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={Icon5} imageBackgroundColor={color.orange2}
+                    <TextBlockWithImage width={100} widthUnit="%" SvgImage={Icon5} imageBackgroundColor={color.orange2}
                                         imageShadowColor={color.orange2}>
                         <Heading size={4}>
                             Federal income tax
@@ -176,7 +161,7 @@ const TaxesIntroduce = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={Icon6} imageBackgroundColor={color.red2}
+                    <TextBlockWithImage width={100} widthUnit="%" SvgImage={Icon6} imageBackgroundColor={color.red2}
                                         imageShadowColor={color.red2}>
                         <Heading size={4}>
                             Corporation tax
@@ -186,7 +171,7 @@ const TaxesIntroduce = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={Icon7} imageBackgroundColor={color.blue2}
+                    <TextBlockWithImage width={100} widthUnit="%" SvgImage={Icon7} imageBackgroundColor={color.blue2}
                                         imageShadowColor={color.blue2}>
                         <Heading size={4}>
                             Self-employment tax
@@ -196,7 +181,7 @@ const TaxesIntroduce = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={Icon8} imageBackgroundColor={color.orange2}
+                    <TextBlockWithImage width={100} widthUnit="%" SvgImage={Icon8} imageBackgroundColor={color.orange2}
                                         imageShadowColor={color.orange2}>
                         <Heading size={4}>
                             Other taxes

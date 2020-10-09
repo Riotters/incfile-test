@@ -17,15 +17,16 @@ const Taxes = () => (
         </Oval>
 
         <Service>
+            <TextCenterLayout headlineWidth={770} textWidth={770} headline="Maintaining Your Side Business"
+                              text="There are certain forms and legalities you need to follow to keep your side business in good standing."/>
+
             <Container>
-                <TextCenterLayout headline="Maintaining Your Side Business"
-                                  text="There are certain forms and legalities you need to follow to keep your side business in good standing."/>
-                <AdventagesBox>
+                 <AdventagesBox>
                     <CurveWrapper>
                         <CurveSvg/>
                     </CurveWrapper>
                     {adventages2.items.map(item => (
-                        <Adventages style={{textAlign: "center"}} url={item.url} urlText={item.urlText}
+                        <Adventages className="containerMargin" style={{textAlign: "center"}} url={item.url} urlText={item.urlText}
                                     circleText={item.circleText} headline={item.headline} text={item.text}
                                     circlePosition="center" circleBackgroundColor={color.blue1}
                                     circleBackgroundShadow={shadow.blue1}/>
@@ -48,13 +49,22 @@ const Service = styled.div`
 `;
 
 const AdventagesBox = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  max-width: 970px;
-  padding: 140px 0;
-  margin: 0 auto;
-  position: relative;
+  display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 100%;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 20px;
+    margin-top: 76px;
+    margin-bottom 76px; 
+    
+    @media (min-width: 490px){
+        grid-template-columns: 470px;
+    }
+    
+    @media (min-width: 992px){
+        grid-template-columns: 470px 470px;
+    }
 `;
 
 const Oval = styled.div`
@@ -71,10 +81,10 @@ const Oval = styled.div`
 
 const CurveWrapper = styled.div`
     position: absolute;
-    right: -115px;
-    top: 24px;
+    right: -15px;
+    top: -85px;
     
-    @media (max-width: 970px) {
+    @media (max-width: 1200px) {
         display: none;
     }
 `;

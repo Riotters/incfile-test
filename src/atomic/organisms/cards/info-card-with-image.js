@@ -14,21 +14,11 @@ const InfoCardWithImage = ({roundTopLeft, roundTopRight, roundBottomLeft, roundB
 
 const CardWrapper = styled.div`
     box-shadow: 0 24px 32px rgba(236, 236, 236, 0.5);
-    margin: 0 15px 30px;
+    margin-bottom: 30px;
     overflow: hidden;
     background-color: white;
     width: 100%;
-    
-    @media (min-width: 992px) { 
-        margin: 0 auto 30px;
-        width: 300px;
-    }
-    
-    @media (min-width: 1110px) { 
-        margin: 0 auto 30px;
-        width: 370px;
-        min-height: 708px;
-    }
+    justify-self: center;
     
     @media (min-width: 1024px) {
         ${props => props.roundTopLeft && 

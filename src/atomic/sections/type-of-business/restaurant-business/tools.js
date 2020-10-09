@@ -25,7 +25,7 @@ const ToolsAndLinks = () => (
                 <LinkOvalSvg2/>
             </LinkOval2>
 
-            <TextCenterLayout headline="Discussion Groups and Forums for Your Restaurant Business"
+            <TextCenterLayout headlineWidth={770} textWidth={770} headline="Discussion Groups and Forums for Your Restaurant Business"
                               text="There are plenty of forums and online discussion groups for restaurant businesses. Start with these:"/>
 
             <Container>
@@ -67,9 +67,10 @@ const ToolsAndLinks = () => (
                 </LinksContainer>
             </Container>
 
+            <TextCenterLayout headlineWidth={770} textWidth={770} headline="Conferences for Your Restaurant Business"
+                              text="Of course, there are also regular conferences for restaurant businesses:"/>
+
             <Container>
-                <TextCenterLayout headline="Conferences for Your Restaurant Business"
-                                  text="Of course, there are also regular conferences for restaurant businesses:"/>
 
                 <LinksContainer>
 
@@ -133,14 +134,21 @@ const Wrapper = styled.div`
 `;
 
 const LinksContainer = styled.div`
-    width: 100%;
-    margin: 100px auto; 
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 100%;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 30px;
+    margin-top: 76px;
+    margin-bottom 76px; 
     
-    @media (min-width: 1100px) {
-        width: 1000px;
+    @media (min-width: 490px){
+        grid-template-columns: 470px;
+    }
+    
+    @media (min-width: 992px){
+        grid-template-columns: 470px 470px;
     }
 `;
 
@@ -150,16 +158,6 @@ const LinkItem = styled.div`
     background-color: white;
     box-shadow: ${shadow.white1};
     width: 100%;
-    margin-bottom: 30px;
-    
-    @media (min-width: 470px) {
-        width: 470px;
-    }
-    
-    @media (min-width: 1100px) {
-        margin-left: 15px;
-        margin-right: 15px;
-    }
 `;
 
 const CurveWrapper = styled.div`

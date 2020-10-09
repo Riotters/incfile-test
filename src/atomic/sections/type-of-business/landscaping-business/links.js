@@ -9,9 +9,10 @@ import {Paragraph} from "../../../atoms/typography/paragraph";
 
 const EtsyLinks = () => (
     <Wrapper>
+        <TextCenterLayout headlineWidth={770} textWidth={770} headline="Social Media and Discussion Groups for Your Landscaping Business"
+                          text="Connecting with other business owners in your industry can be incredibly helpful. Here are some of the best social media and discussion groups:"/>
+
         <Container>
-            <TextCenterLayout headline="Social Media and Discussion Groups for Your Landscaping Business"
-                              text="Connecting with other business owners in your industry can be incredibly helpful. Here are some of the best social media and discussion groups:"/>
 
             <LinksContainer>
 

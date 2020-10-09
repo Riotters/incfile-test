@@ -4,6 +4,7 @@ import {Paragraph} from "../../../atoms/typography/paragraph";
 import Container from "../../../container";
 import OvalSvg from "../../../../images/oval-blue-5.inline.svg";
 import styled from "styled-components";
+import {Link} from "gatsby";
 
 const Regulations = () => (
     <Wrapper>
@@ -12,10 +13,10 @@ const Regulations = () => (
         </Oval>
         <Container style={{paddingTop: "100px", paddingBottom: "100px"}} width={750}>
             <Heading size={4} style={{fontSize: "40px"}}>
-                Rules, Regulations and Taxes for Your Construction Business
+                Rules, Regulations, and Licenses for Airbnbs
             </Heading>
             <Paragraph big mixed={true}>
-                Even though you’re running an Airbnb business, you can’t escape real-world licenses, permits and regulations. You will need to explore local, state and federal licenses and permits, and we can also help out with researching your business licensing needs.
+                Even though you’re running an Airbnb business, you can’t escape real-world licenses, permits and regulations. You will need to explore local, state and federal licenses and permits, and <Link to="/">we can also help out with researching your business licensing needs</Link>.
             </Paragraph>
             <Paragraph big mixed={true}>
                 It’s also very important to consider local zoning laws, ordinances and permits. Some municipalities don’t allow just anyone to set themselves up as an Airbnb host, and if you do, you could be fined. Check with your local and regional authorities what their requirements are for Airbnb hosts.

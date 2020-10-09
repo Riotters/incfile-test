@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
-import Button from "../../components/button";
+import Button from "../../atomic/molecules/buttons/button";
 import RatingRow from "../../atomic/atoms/boxes/rating-row";
 import CartBlock from "../../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../../atomic/molecules/blocks/rating-block";
@@ -27,7 +27,7 @@ import BusinessStructure from "../../atomic/sections/type-of-business/bookstore/
 import SettingBusiness from "../../atomic/sections/type-of-business/bookstore/setting-business";
 import OrderNow from "../../atomic/sections/type-of-business/bookstore/order-now";
 import Regulations from "../../atomic/sections/type-of-business/bookstore/regulations";
-import InsuranceBusiness from "../../atomic/sections/type-of-business/bookstore/insurance-business";
+import InsuranceBusinessSection from "../../atomic/sections/type-of-business/bookstore/insurance-business";
 import Taxes from "../../atomic/sections/type-of-business/bookstore/taxes";
 import ToolsAndLinks from "../../atomic/sections/type-of-business/bookstore/tools";
 import Conclusion from "../../atomic/sections/general/conclusion";
@@ -51,9 +51,8 @@ const GymPersonalTraining = () => (
                 the rise of Amazon and the move toward ebooks.
             </p>
             <ButtonsBox>
-                <Button theme="primary56" marginMD="0 24px 0 0" arrow>
-                    Start Now
-                </Button>
+                <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{url: "/", text: "Start Now"}} />
+
             </ButtonsBox>
 
             <RatingRow>
@@ -488,7 +487,7 @@ const GymPersonalTraining = () => (
 
         <Regulations/>
 
-        <InsuranceBusiness/>
+        <InsuranceBusinessSection/>
 
         <Taxes/>
 
@@ -531,7 +530,11 @@ const ListBox = styled.div`
 `;
 
 const TabsWrapper = styled.div`
-    position: relative;
+    margin-top: 120px;
+  position: relative;
+  @media (min-width: 992px){
+      margin-top: 21px;
+  }
 `;
 
 const Oval = styled.div`

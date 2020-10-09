@@ -2,7 +2,10 @@ import Container from "../../../container";
 import {Heading} from "../../../atoms/typography/heading";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import TextBlockWithImage from "../../../molecules/mixed-blocks/text-block-with-absolute-image";
-import OkIcon from "../../../../images/icons/ok.inline.svg";
+import Icon1 from "../../../../images/icons/identify-your-unique-selling-point.inline.svg";
+import Icon2 from "../../../../images/icons/look-at-who-your-competitors-are-in-the-space.inline.svg"
+import Icon3 from "../../../../images/icons/understand-your-market.inline.svg"
+import Icon4 from "../../../../images/icons/talk-to-clients.inline.svg"
 import {color} from "../../../../components/styles/colors";
 import React from "react";
 import styled from "styled-components";
@@ -41,18 +44,21 @@ const TitleBox = styled.div`
 `;
 
 const GridSectionList = styled.div`
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 100%;
-    max-width: 970px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 100%;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 70px;
+    margin-top: 76px;
+    margin-bottom 76px; 
     
-    > div {
-        margin-bottom: 70px;
+    @media (min-width: 490px){
+        grid-template-columns: 470px;
     }
     
-    @media (min-width: 970px) {
-        margin: 120px auto 0;
+    @media (min-width: 992px){
+        grid-template-columns: 470px 470px;
     }
 `;
 
@@ -96,7 +102,7 @@ const BlueContainer = () => (
                 </TitleBox>
 
                 <GridSectionList>
-                    <TextBlockWithImage SvgImage={OkIcon} imageBackgroundColor={color.babyblue2}
+                    <TextBlockWithImage width={100} widthUnit="%" SvgImage={Icon1} imageBackgroundColor={color.babyblue2}
                                         imageShadowColor={color.babyblue2}>
                         <Heading size={4}>
                             Identify your coaching business’ unique selling points (USPs)
@@ -108,7 +114,7 @@ const BlueContainer = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={OkIcon} imageBackgroundColor={color.green2}
+                    <TextBlockWithImage width={100} widthUnit="%" SvgImage={Icon2} imageBackgroundColor={color.green2}
                                         imageShadowColor={color.green2}>
                         <Heading size={4}>
                             Look at who your competitors are in
@@ -120,7 +126,7 @@ const BlueContainer = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={OkIcon} imageBackgroundColor={color.orange2}
+                    <TextBlockWithImage width={100} widthUnit="%" SvgImage={Icon3} imageBackgroundColor={color.orange2}
                                         imageShadowColor={color.orange2}>
                         <Heading size={4}>
                             Understand your market
@@ -131,7 +137,7 @@ const BlueContainer = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={OkIcon} imageBackgroundColor={color.purple2}
+                    <TextBlockWithImage width={100} widthUnit="%" SvgImage={Icon4} imageBackgroundColor={color.purple2}
                                         imageShadowColor={color.purple2}>
                         <Heading size={4}>
                             Talk to clients

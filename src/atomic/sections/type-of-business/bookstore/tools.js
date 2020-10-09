@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Container from "../../../container";
-import {shadow} from "../../../atoms/styles/shadows";
-import {color, gradient} from "../../../atoms/styles/colors";
+import {gradient} from "../../../atoms/styles/colors";
 import UsefulTools from "../../../partials/useful-tools";
 import {toolsList} from "../../../../static/type-of-business/bookstore";
 import OvalSvg from "../../../../images/ovals/top-right-transparent-yellow.inline.svg";
@@ -11,14 +9,15 @@ import OvalSvg2 from "../../../../images/ovals/bottom-left-transparent-orange.in
 const ToolsAndLinks = () => (
     <Wrapper>
         <Oval>
-            <OvalSvg />
+            <OvalSvg/>
         </Oval>
         <Oval2>
-            <OvalSvg2 />
+            <OvalSvg2/>
         </Oval2>
-        <Container>
-            <UsefulTools toolsList={toolsList.tools} headlineText={toolsList.headlineText} description={toolsList.description} />
-        </Container>
+
+        <UsefulTools toolsList={toolsList.tools} headlineText={toolsList.headlineText}
+                     description={toolsList.description}/>
+
     </Wrapper>
 );
 

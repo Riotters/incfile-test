@@ -142,20 +142,25 @@ const Oval2 = styled.div`
 `;
 
 const LogosContainer = styled.div`
-    width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    max-width: 1230px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 100%;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 30px;
+    margin-top: 76px;
+    margin-bottom 76px; 
     
-    @media (min-width: 1140px){
-        justify-content: space-between;
+    @media (min-width: 390px){
+        grid-template-columns: 370px;
     }
     
-    @media (min-width: 1230px) {
-        margin: 0 auto;
+    @media (min-width: 768px){
+        grid-template-columns: 370px 370px;
+    }
+    
+    @media (min-width: 1200px){
+        grid-template-columns: 370px 370px 370px;
     }
 `;
 
@@ -167,7 +172,6 @@ const LogoBox = styled.div`
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-bottom: 30px;
     
     @media (min-width: 768px){
         width: 370px;

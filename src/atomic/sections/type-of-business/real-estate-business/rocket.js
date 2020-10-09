@@ -24,15 +24,13 @@ const Rocket = () => (
                 <Image filename="rocket-2x" alt="rocket lunch"/>
             </RocketWrapper>
             <Content>
-                <Heading size={4} style={{fontFamily: "MarkPro-Bold, sans-serif", fontSize: "40px"}}>
+                <Heading size={4} style={{fontFamily: "MarkPro, sans-serif", fontSize: "40px"}}>
                     Ready to Get into Real Estate?
                 </Heading>
                 <Paragraph big>
                     There you have it — our complete guide to starting a successful real estate business. We hope this has given you all the information you need to think about, plan, start and manage a successful venture. Remember, we can help you with creating and maintaining your real estate business
                 </Paragraph>
-                <Button theme="primary56" arrow>
-                    When you’re ready you can start here
-                </Button>
+                <Button theme="primary48" arrow width="max-content" content={{url: "/", text: "Start your Real Estate Business with us, today!"}} />
             </Content>
         </Container>
     </Wrapper>
@@ -97,6 +95,10 @@ const Curve = styled.div`
   position: absolute;
   right: 0;
   bottom: 150px;
+  
+  @media (max-width: 1200px){
+    display: none;
+  }
 `
 
 const Moon = styled.div`

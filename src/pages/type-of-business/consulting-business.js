@@ -325,7 +325,7 @@ const ConsultingBusiness = () => (
 
         <ToolsAndLinks/>
 
-        <Conclusion to="/" buttonTitle="Start your Event Planning Business with us, today">
+        <Conclusion to="/" buttonTitle="Start your Consulting Business with us, today">
             <Heading size={3} style={{fontSize: "48px"}}>
                 Conclusion
             </Heading>
@@ -361,8 +361,11 @@ const ListBox = styled.div`
 `;
 
 const TabsWrapper = styled.section`
-    position: relative;
-    margin-top: 100px;
+  margin-top: 120px;
+  position: relative;
+  @media (min-width: 992px){
+      margin-top: 21px;
+  }
 `;
 
 const Oval = styled.div`

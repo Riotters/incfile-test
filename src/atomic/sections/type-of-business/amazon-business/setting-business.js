@@ -126,13 +126,13 @@ const ImageBoxes = styled.div`
   padding-top: 112px;
   width: 100%;
   padding-bottom: 80px;
-
+  max-width: 970px;
+  
   @media(min-width: 769px) {
     grid-template-columns: 1fr 1fr;
   }
   
-  @media (min-width: 1024px) {
-    width: 970px;
+  @media (min-width: 970px) {
     margin: 0 auto;
   }
 `;
@@ -159,8 +159,8 @@ const Oval = styled.div`
 
 const AbsoluteCurve = styled.div`
     position: absolute;
-    top: -153px;
-    right: -115px;
+    top: -105px;
+    right: -105px;
     width: 115px;
     display: none;
     transform: rotate(-90deg);

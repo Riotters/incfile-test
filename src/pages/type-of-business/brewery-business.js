@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
-import Button from "../../components/button";
+import Button from "../../atomic/molecules/buttons/button";
 import RatingRow from "../../atomic/atoms/boxes/rating-row";
 import CartBlock from "../../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../../atomic/molecules/blocks/rating-block";
@@ -27,7 +27,7 @@ import BusinessStructure from "../../atomic/sections/type-of-business/brewery-bu
 import SettingBusiness from "../../atomic/sections/type-of-business/brewery-business/setting-business";
 import OrderNow from "../../atomic/sections/type-of-business/brewery-business/order-now";
 import Regulations from "../../atomic/sections/type-of-business/brewery-business/regulations";
-import InsuranceBusiness from "../../atomic/sections/type-of-business/brewery-business/insurance-business";
+import InsuranceBusinessSection from "../../atomic/sections/type-of-business/brewery-business/insurance-business";
 import Taxes from "../../atomic/sections/type-of-business/brewery-business/taxes";
 import ToolsAndLinks from "../../atomic/sections/type-of-business/brewery-business/tools";
 import Conclusion from "../../atomic/sections/general/conclusion";
@@ -53,9 +53,7 @@ const GymPersonalTraining = () => (
                 all sorts of additional benefits like a bar, food, music and more.
             </p>
             <ButtonsBox>
-                <Button theme="primary56" marginMD="0 24px 0 0" arrow>
-                    Start Now
-                </Button>
+                <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{url: "/", text: "Start Now"}} />
             </ButtonsBox>
 
             <RatingRow>
@@ -481,7 +479,7 @@ const GymPersonalTraining = () => (
 
         <Regulations/>
 
-        <InsuranceBusiness/>
+        <InsuranceBusinessSection/>
 
         <Taxes/>
 
@@ -523,8 +521,11 @@ const ListBox = styled.div`
 `;
 
 const TabsWrapper = styled.div`
-    margin-top: 100px;
-    position: relative;
+    margin-top: 120px;
+  position: relative;
+  @media (min-width: 992px){
+      margin-top: 21px;
+  }
 `;
 
 const TabsOval = styled.div`

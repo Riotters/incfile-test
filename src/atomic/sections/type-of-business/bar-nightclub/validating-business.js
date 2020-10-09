@@ -7,7 +7,7 @@ import IdetifyIcon from "../../../../images/icons/identify-your-unique-selling-p
 import LookIcon from "../../../../images/icons/look-at-who-your-competitors-are-in-the-space.inline.svg"
 import MarketIcon from "../../../../images/icons/look-for-market-research.inline.svg"
 import InvolvedIcon from "../../../../images/icons/get-involved-with-business-communities.inline.svg";
-import {color} from "../../../../components/styles/colors";
+import {color} from "../../../atoms/styles/colors";
 import React from "react";
 import styled from "styled-components";
 import OvalSVG from "../../../../images/ovals/bottom-left-transparent-orange.inline.svg";
@@ -18,7 +18,6 @@ const ContainerWrapper = styled.div`
     position: relative;
     padding-top: 120px;
 `;
-
 
 const GridSection = styled.div`
     width: 100%;
@@ -42,18 +41,21 @@ const TitleBox = styled.div`
 `;
 
 const GridSectionList = styled.div`
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 100%;
-    max-width: 970px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 100%;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 70px;
+    margin-top: 76px;
+    margin-bottom 76px; 
     
-    > div {
-        margin-bottom: 70px;
+    @media (min-width: 490px){
+        grid-template-columns: 470px;
     }
     
-    @media (min-width: 970px) {
-        margin: 120px auto 0;
+    @media (min-width: 992px){
+        grid-template-columns: 470px 470px;
     }
 `;
 
@@ -109,7 +111,7 @@ const ValidatingBusinessIdea = () => (
                         In short, you need a business plan — here’s how to think about your business idea.
                     </Paragraph>
 
-                    <Heading size={3} style={{fontWeight: "bold", marginTop: "100px", fontSize: "40px"}}>
+                    <Heading size={3} style={{fontFamily: "Avenir-Heavy", color: color.black, marginTop: "100px", fontSize: "40px"}}>
                         Do Market Research and Validate Your Bar or Club Products and Services
                     </Heading>
 
@@ -121,7 +123,7 @@ const ValidatingBusinessIdea = () => (
 
                 <GridSectionList>
 
-                    <TextBlockWithImage SvgImage={MarketIcon} imageBackgroundColor={color.green2}
+                    <TextBlockWithImage width={100} widthUnit="%" className="containerMargin" SvgImage={MarketIcon} imageBackgroundColor={color.green2}
                                         imageShadowColor={color.green2}>
                         <Heading size={4}>
                             Find market research reports for bar or club businesses
@@ -131,7 +133,7 @@ const ValidatingBusinessIdea = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={LookIcon} imageBackgroundColor={color.babyblue2}
+                    <TextBlockWithImage width={100} widthUnit="%" className="containerMargin" SvgImage={LookIcon} imageBackgroundColor={color.babyblue2}
                                         imageShadowColor={color.babyblue2}>
                         <Heading size={4}>
                             Check out your competitors in the space
@@ -141,7 +143,7 @@ const ValidatingBusinessIdea = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={TalkIcon} imageBackgroundColor={color.orange2}
+                    <TextBlockWithImage width={100} widthUnit="%" className="containerMargin" SvgImage={TalkIcon} imageBackgroundColor={color.orange2}
                                         imageShadowColor={color.orange2}>
                         <Heading size={4}>
                             Talk to patrons
@@ -151,7 +153,7 @@ const ValidatingBusinessIdea = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={IdetifyIcon} imageBackgroundColor={color.purple2}
+                    <TextBlockWithImage width={100} widthUnit="%" className="containerMargin" SvgImage={IdetifyIcon} imageBackgroundColor={color.purple2}
                                         imageShadowColor={color.purple2}>
                         <Heading size={4}>
                             Identify your business’s unique selling points (USPs)
@@ -163,7 +165,7 @@ const ValidatingBusinessIdea = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={InvolvedIcon} imageBackgroundColor={color.red2}
+                    <TextBlockWithImage width={100} widthUnit="%" className="containerMargin" SvgImage={InvolvedIcon} imageBackgroundColor={color.red2}
                                         imageShadowColor={color.purple2}>
                         <Heading size={4}>
                             Get involved with business communities and discussion groups

@@ -21,14 +21,18 @@ const InfoCardsSection = ({cards}) => (
 );
 
 const SectionWrapper = styled.div`
-    margin: 0 auto;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    justify-content: center;
+    align-content: center;
         
-    @media (min-width: 1170px) {
-        width: 1170px;
+    @media (min-width: 992px) {
+        grid-template-columns: 300px 300px 300px;
+        grid-gap: 30px;
+        grid-auto-flow: column;
+    }
+    
+    @media (min-width: 1200px) { 
+        grid-template-columns: 370px 370px 370px;
     }
 `;
 

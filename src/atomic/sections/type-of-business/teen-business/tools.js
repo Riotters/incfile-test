@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Container from "../../../container";
 import UsefulTools from "../../../partials/useful-tools";
 import {toolsList} from "../../../../static/type-of-business/teen-business";
 import {gradient} from "../../../atoms/styles/colors";
@@ -15,10 +14,10 @@ const ToolsAndLinks = () => (
         <Oval2>
             <OvalSvg2/>
         </Oval2>
-        <Container>
-            <UsefulTools toolsList={toolsList.tools} headlineText={toolsList.headlineText}
-                         description={toolsList.description}/>
-        </Container>
+
+        <UsefulTools toolsList={toolsList.tools} headlineText={toolsList.headlineText}
+                     description={toolsList.description}/>
+
     </Wrapper>
 );
 

@@ -79,7 +79,7 @@ const TextInside = styled.div`
 const Symbol = styled.div`
     position: absolute;
     top: 0;
-    right: -16px;
+    right: -20px;
     font-size: 18px;
     line-height: 32px;
     color: #7a7a7a;

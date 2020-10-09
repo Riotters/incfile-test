@@ -24,7 +24,7 @@ const Rocket = () => (
                 <Image filename="rocket-2x" alt="rocket lunch"/>
             </RocketWrapper>
             <Content>
-                <Heading size={4} style={{fontFamily: "MarkPro-Bold, sans-serif", fontSize: "40px"}}>
+                <Heading size={4} style={{fontFamily: "MarkPro, sans-serif", fontSize: "40px"}}>
                     Are You Ready to Start an Airbnb?
                 </Heading>
                 <Paragraph big>
@@ -32,7 +32,7 @@ const Rocket = () => (
                     you can create great listings, build positive reviews, understand your competitors and put
                     together a solid business plan, you will have every chance for success
                 </Paragraph>
-                <Button theme="primary56" arrow width="410px" content={{url: "/", text: "Start your Airbnb Business with us, today!"}} />
+                <Button theme="primary48" arrow width="410px" content={{url: "/", text: "Start your Airbnb Business with us, today!"}} />
             </Content>
         </Container>
     </Wrapper>
@@ -97,6 +97,10 @@ const Curve = styled.div`
   position: absolute;
   right: 0;
   bottom: 150px;
+  
+  @media (max-width: 1200px){
+    display: none;
+  }
 `
 
 const Moon = styled.div`

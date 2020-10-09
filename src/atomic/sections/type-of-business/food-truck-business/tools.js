@@ -13,10 +13,10 @@ import OvalSvg2 from "../../../../images/ovals/bottom-left-transparent-orange.in
 const ToolsAndLinks = () => (
     <Wrapper>
         <Oval>
-            <OvalSvg />
+            <OvalSvg/>
         </Oval>
         <Oval2>
-            <OvalSvg2 />
+            <OvalSvg2/>
         </Oval2>
         <Container>
             <TextCenterLayout headline="Groups and Forums for Food Truck Entrepreneurs"
@@ -25,35 +25,39 @@ const ToolsAndLinks = () => (
             <LinksContainer>
 
                 <LinkItem>
-                    <PathLink to="https://www.reddit.com/r/foodtrucks/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.reddit.com/r/foodtrucks/" textColor={color.blue1}
+                              hoverColor={color.orange1} arrowColor={color.blue1}>
                         Reddit — Food Trucks subreddit
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="https://www.reddit.com/r/EntrepreneurRideAlong/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.reddit.com/r/EntrepreneurRideAlong/" textColor={color.blue1}
+                              hoverColor={color.orange1} arrowColor={color.blue1}>
                         Reddit — Entrepreneur Ride Along
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="https://roadfood.com/forums/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://roadfood.com/forums/" textColor={color.blue1} hoverColor={color.orange1}
+                              arrowColor={color.blue1}>
                         Road Food Forums
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="http://streetvendorforum.com/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="http://streetvendorforum.com/" textColor={color.blue1} hoverColor={color.orange1}
+                              arrowColor={color.blue1}>
                         Street Vendor Forums
                     </PathLink>
                 </LinkItem>
 
             </LinksContainer>
         </Container>
-        
-        <Container>
-            <UsefulTools toolsList={toolsList.tools} headlineText={toolsList.headlineText} description={toolsList.description} />
-        </Container>
+
+        <UsefulTools toolsList={toolsList.tools} headlineText={toolsList.headlineText}
+                     description={toolsList.description}/>
+
     </Wrapper>
 );
 
@@ -64,14 +68,21 @@ const Wrapper = styled.div`
 `;
 
 const LinksContainer = styled.div`
-    width: 100%;
-    margin: 100px auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 100%;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 30px;
+    margin-top: 76px;
+    margin-bottom 76px; 
     
-    @media (min-width: 1100px) {
-        width: 1000px;
+    @media (min-width: 490px){
+        grid-template-columns: 470px;
+    }
+    
+    @media (min-width: 992px){
+        grid-template-columns: 470px 470px;
     }
 `;
 
@@ -81,16 +92,6 @@ const LinkItem = styled.div`
     background-color: white;
     box-shadow: ${shadow.white1};
     width: 100%;
-    margin-bottom: 30px;
-    
-    @media (min-width: 470px) {
-        width: 470px;
-    }
-    
-    @media (min-width: 1100px) {
-        margin-left: 15px;
-        margin-right: 15px;
-    }
 `;
 
 const Oval = styled.div`

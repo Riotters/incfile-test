@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useState} from "react"
 import styled from "styled-components"
 import { color } from "../styles/colors"
 import ArrowSVG from "../../images/arrow.inline.svg"
@@ -44,12 +44,19 @@ const Arrow = styled.div`
   }
 `
 
-const ShowUncompleted = ({ children, className, stackItems }) => (
-  <Wrapper className={className} onClick={stackItems}>
-    <Arrow>
-      <ArrowSVG />
-    </Arrow>
-    showLess
-  </Wrapper>
-)
+const ShowUncompleted = ({ className, stackItems }) => {
+    let [stacked, setStacked] = useState(false);
+    return (
+        <Wrapper className={className} onClick={() => {
+            var newValue = !stacked;
+            stackItems(newValue);
+            setStacked(newValue);
+        }}>
+            <Arrow>
+                <ArrowSVG/>
+            </Arrow>
+            {stacked ? 'Show More' : 'Show Less'}
+        </Wrapper>
+    )
+}
 export default ShowUncompleted

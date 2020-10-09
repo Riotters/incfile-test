@@ -19,7 +19,11 @@ const BusinessOwnerResponsibilities = styled.section`
 const WrapperContainer = styled.div`
     background: rgb(255,255,255);
     padding-bottom: 100px;
-    position: relative;
+    margin-top: 120px;
+  position: relative;
+  @media (min-width: 992px){
+      margin-top: 21px;
+  }
 `;
 
 const Oval = styled.div`

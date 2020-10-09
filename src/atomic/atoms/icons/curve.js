@@ -26,14 +26,15 @@ const Wrapper = styled.div`
   }
 
   svg {
+    ${props => props.rotate && `transform: rotate(${props.rotate}deg)`}; 
     path {
       fill: ${(props) => (props.color ? props.color : ``)};
     }
   }
 `;
 
-const Curve = ({ children, className, width, height, top, topXL, left, leftXL, right, rightXL, bottom, bottomXL, y, x, opacity, color }) => (
-  <Wrapper className={className} height={height} width={width} top={top} topXL={topXL} left={left} leftXL={leftXL} right={right} rightXL={rightXL} bottom={bottom} bottomXL={bottomXL} y={y} x={x} opacity={opacity} color={color}>
+const Curve = ({ children, className, width, height, top, topXL, left, leftXL, right, rightXL, bottom, bottomXL, y, x, rotate, opacity, color }) => (
+  <Wrapper className={className} height={height} width={width} top={top} topXL={topXL} left={left} leftXL={leftXL} right={right} rightXL={rightXL} bottom={bottom} bottomXL={bottomXL} y={y} x={x} rotate={rotate} opacity={opacity} color={color}>
     {children}
   </Wrapper>
 );

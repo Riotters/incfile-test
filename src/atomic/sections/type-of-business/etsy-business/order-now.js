@@ -8,6 +8,7 @@ import OvalRightSvg from "../../../../images/oval-orange-4.inline.svg";
 import OvalRight2Svg from "../../../../images/ovals/top-left-transparent-blue2.inline.svg";
 import Curve from "../../../../images/curve-orange.inline.svg";
 import TabScrollable from "./TabScrollable";
+import {color} from "../../../atoms/styles/colors";
 
 const OrderNow = ({layout, columns}) => (
     <>
@@ -47,9 +48,8 @@ const OrderNow = ({layout, columns}) => (
                 <OvalRight2Svg/>
             </OvalRight2>
 
-            <Container>
-                <TabScrollable/>
-            </Container>
+            <TabScrollable/>
+
         </TabScrollableWrapper>
     </>
 );
@@ -60,9 +60,15 @@ const TabScrollableWrapper = styled.div`
 `;
 
 const OrderNowWrapper = styled.section`
-      background-color: #fef6ed;
-      position: relative;
-      padding: 64px 0;
+  background-color: ${color.orange3};
+  position: relative;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  
+  @media (min-width: 992px){
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 `;
 
 const ButtonsBox = styled.div`
@@ -113,19 +119,6 @@ const CurveWrapper = styled.div`
     position: absolute;
     left: -122px;
     top: -115px;
-`;
-
-const ListWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-`;
-
-const ListBox = styled.div`
-    width: 100%;
-    
-    @media (min-width: 576px) { 
-        width: 50%; 
-    }
 `;
 
 export default OrderNow;

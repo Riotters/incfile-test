@@ -1,11 +1,10 @@
 import React from "react";
 import Container from "../../../container";
-import TextCenterLayout from "../../../../components/partials/blocks/heading-center";
+import TextCenterLayout from "../../../partials/heading-center";
 import TopImageBox from "../../../../components/top-image-box";
 import {color} from "../../../../components/styles/colors";
 import styled from "styled-components";
-import Curve from "../../../../images/green-curve.inline.svg";
-import GreenOval from "../../../../images/oval-green-2.inline.svg";
+import GreenOval from "../../../../images/ovals/top-right-transparent-green2.inline.svg";
 
 const BusinessOperations = () => (
     <GreenContainer>
@@ -14,12 +13,15 @@ const BusinessOperations = () => (
             <GreenOval/>
         </Oval>
 
+        <TextCenterLayout
+            headline="Setting up Your Moving Business and Business Operations"
+            headlineWidth={770}
+            textWidth={770}
+            text="Once you've legally created your moving business, you’ll need to get some other things in place."
+        />
+
         <Container>
-            <TextCenterLayout
-                headline="Setting up Your Moving Business and Business Operations"
-                headlineWidth="700"
-                text="Once you've legally created your moving business, you’ll need to get some other things in place."
-            />
+
             <ImageBoxes>
                 <TopImageBox image="display-ads" color={color.purple3}>
                     <h4>Marketing Your Moving Business</h4>
@@ -62,10 +64,6 @@ const BusinessOperations = () => (
                     <p>
                         The right software and processes will make running your moving business much easier. See our list of the best apps and software at the end of this guide.
                     </p>
-
-                    <GreenCurve>
-                        <Curve/>
-                    </GreenCurve>
                 </TopImageBox>
             </ImageBoxes>
         </Container>
@@ -87,28 +85,26 @@ const ImageBoxes = styled.div`
   grid-gap: 30px;
   padding-top: 112px;
   width: 100%;
-
+  max-width: 970px;
+  
   @media(min-width: 768px) {
     grid-template-columns: 1fr 1fr;
   }
   
   @media (min-width: 970px) {
-    width: 970px;
     margin: 0 auto;
   }
-`;
-
-const GreenCurve = styled.div`
-    position: absolute;
-    right: -115px;
-    bottom: -122px;
-    width: 115px;
 `;
 
 const Oval = styled.div`
     position: absolute;
     right: 0;
     top: 220px;
+    width: 100%;
+    
+    @media (min-width: 720px){
+        width 720px;
+    }
 `;
 
 export default BusinessOperations;

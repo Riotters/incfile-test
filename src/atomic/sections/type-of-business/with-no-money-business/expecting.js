@@ -49,19 +49,21 @@ const TitleBox = styled.div`
 `;
 
 const GridSectionList = styled.div`
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 100%;
-    max-width: 970px;
+     display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 100%;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 70px;
+    margin-top: 76px;
+    margin-bottom 76px; 
     
-    > div {
-        margin-bottom: 70px;
+    @media (min-width: 490px){
+        grid-template-columns: 470px;
     }
     
-    @media (min-width: 970px) {
-        
-        margin: 120px auto 0;
+    @media (min-width: 992px){
+        grid-template-columns: 470px 470px;
     }
 `;
 
@@ -99,7 +101,7 @@ const Expecting = () => (
             <GridSection>
                 <GridSectionList>
 
-                    <TextBlockWithImage SvgImage={BallsIcon} imageBackgroundColor={color.purple2}
+                    <TextBlockWithImage width={100} widthUnit="%" SvgImage={BallsIcon} imageBackgroundColor={color.purple2}
                                         imageShadowColor={color.purple2}>
                         <Heading size={4}>
                             There will always be too much to do and too little money
@@ -109,7 +111,7 @@ const Expecting = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={BombIcon} imageBackgroundColor={color.yellow2}
+                    <TextBlockWithImage width={100} widthUnit="%" SvgImage={BombIcon} imageBackgroundColor={color.yellow2}
                                         imageShadowColor={color.yellow2}>
                         <Heading size={4}>
                             The biggest issue you will have
@@ -121,7 +123,7 @@ const Expecting = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={CompetitionIcon} imageBackgroundColor={color.babyblue2}
+                    <TextBlockWithImage width={100} widthUnit="%" SvgImage={CompetitionIcon} imageBackgroundColor={color.babyblue2}
                                         imageShadowColor={color.babyblue2}>
                         <Heading size={4}>
                             There is lots (and lots) of competition
@@ -133,7 +135,7 @@ const Expecting = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={HeartIcon} imageBackgroundColor={color.red2}
+                    <TextBlockWithImage width={100} widthUnit="%" SvgImage={HeartIcon} imageBackgroundColor={color.red2}
                                         imageShadowColor={color.red2}>
                         <Heading size={4}>
                             There are plenty of people out there who can help
@@ -145,7 +147,7 @@ const Expecting = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={PaperIcon} imageBackgroundColor={color.blue2}
+                    <TextBlockWithImage width={100} widthUnit="%" SvgImage={PaperIcon} imageBackgroundColor={color.blue2}
                                         imageShadowColor={color.blue2}>
                         <Heading size={4}>
                             Getting your idea and product or service fit right is essential
@@ -156,7 +158,7 @@ const Expecting = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={BookIcon} imageBackgroundColor={color.purple2}
+                    <TextBlockWithImage width={100} widthUnit="%" SvgImage={BookIcon} imageBackgroundColor={color.purple2}
                                         imageShadowColor={color.purple2}>
                         <Heading size={4}>
                             Grow organically
@@ -167,7 +169,7 @@ const Expecting = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={LearnIcon} imageBackgroundColor={color.orange2}
+                    <TextBlockWithImage width={100} widthUnit="%" SvgImage={LearnIcon} imageBackgroundColor={color.orange2}
                                         imageShadowColor={color.orange2}>
                         <Heading size={4}>
                             Learn from your mistakes
@@ -177,7 +179,7 @@ const Expecting = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={BoltIcon} imageBackgroundColor={color.green2}
+                    <TextBlockWithImage width={100} widthUnit="%" SvgImage={BoltIcon} imageBackgroundColor={color.green2}
                                         imageShadowColor={color.green2}>
                         <Heading size={4}>
                             Expect to be stressed and anxious

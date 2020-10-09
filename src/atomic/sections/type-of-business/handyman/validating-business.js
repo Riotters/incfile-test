@@ -46,18 +46,21 @@ const TitleBox = styled.div`
 `;
 
 const GridSectionList = styled.div`
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 100%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 100%;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 70px;
+    margin-top: 76px;
+    margin-bottom 76px; 
     
-    > div {
-        margin-bottom: 70px;
+    @media (min-width: 490px){
+        grid-template-columns: 470px;
     }
     
-    @media (min-width: 1024px) {
-        width: 970px;
-        margin: 120px auto 0;
+    @media (min-width: 992px){
+        grid-template-columns: 470px 470px;
     }
 `;
 
@@ -99,8 +102,6 @@ const OvalBig = styled.div`
   svg{
     transform: scaleX(-1);
   }
-  
-  display: none;
   
   @media (min-width: 720px) {
         width: 720px;
@@ -159,7 +160,8 @@ const ValidatingBusinessIdea = () => (
                 </TitleBox>
 
                 <GridSectionList>
-                    <TextBlockWithImage SvgImage={IdetifyIcon} imageBackgroundColor={color.green2}
+                    <TextBlockWithImage width={100} widthUnit="%" SvgImage={IdetifyIcon}
+                                        imageBackgroundColor={color.green2}
                                         imageShadowColor={color.green2}>
                         <Heading size={4}>
                             Identify your handyman business’ unique selling points (USPs)
@@ -171,48 +173,60 @@ const ValidatingBusinessIdea = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={LookIcon} imageBackgroundColor={color.babyblue2}
+                    <TextBlockWithImage width={100} widthUnit="%" SvgImage={LookIcon}
+                                        imageBackgroundColor={color.babyblue2}
                                         imageShadowColor={color.babyblue2}>
                         <CurveWrapper>
-                            <BigCurve />
+                            <BigCurve/>
                         </CurveWrapper>
                         <Heading size={4}>
                             Look at who your competitors are in the space
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
-                            Establish how much competition you’re likely to have from other tradesmen and handymen in your area. Some competition is fine, as it shows there’s demand for your services, but too much competition can make it hard to build up a client base. That’s why we recommend going niche and finding one or two areas you can really excel in.
+                            Establish how much competition you’re likely to have from other tradesmen and handymen in
+                            your area. Some competition is fine, as it shows there’s demand for your services, but too
+                            much competition can make it hard to build up a client base. That’s why we recommend going
+                            niche and finding one or two areas you can really excel in.
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={MarketIcon} imageBackgroundColor={color.orange2}
+                    <TextBlockWithImage width={100} widthUnit="%" SvgImage={MarketIcon}
+                                        imageBackgroundColor={color.orange2}
                                         imageShadowColor={color.orange2}>
                         <Heading size={4}>
                             Understand your market
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
                             You need to understand exactly who you’re going
-                            to be providing handyman services to. Will it mainly be new homeowners, seniors, people in a particular locale, commercial building owners, businesses
-                            or something else? This will be essential to your marketing, communications, and finding clients.
+                            to be providing handyman services to. Will it mainly be new homeowners, seniors, people in a
+                            particular locale, commercial building owners, businesses
+                            or something else? This will be essential to your marketing, communications, and finding
+                            clients.
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={TalkIcon} imageBackgroundColor={color.purple2}
+                    <TextBlockWithImage width={100} widthUnit="%" SvgImage={TalkIcon}
+                                        imageBackgroundColor={color.purple2}
                                         imageShadowColor={color.purple2}>
                         <Heading size={4}>
                             Talk to clients
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
-                            Speak with potential customers to understand what they want from your handyman services, and validate this by asking if they would commit to spending real money on them.
+                            Speak with potential customers to understand what they want from your handyman services, and
+                            validate this by asking if they would commit to spending real money on them.
                         </Paragraph>
                     </TextBlockWithImage>
 
-                    <TextBlockWithImage SvgImage={InvolvedIcon} imageBackgroundColor={color.red2}
+                    <TextBlockWithImage width={100} widthUnit="%" SvgImage={InvolvedIcon}
+                                        imageBackgroundColor={color.red2}
                                         imageShadowColor={color.purple2}>
                         <Heading size={4}>
                             Get involved with business communities and discussion groups
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
-                            One of the great things about the handyman industry is that there are some awesome communities and discussion groups. Get involved in them and learn the ins and outs of your chosen market before committing.
+                            One of the great things about the handyman industry is that there are some awesome
+                            communities and discussion groups. Get involved in them and learn the ins and outs of your
+                            chosen market before committing.
                         </Paragraph>
                     </TextBlockWithImage>
 

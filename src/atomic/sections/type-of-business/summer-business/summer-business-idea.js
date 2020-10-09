@@ -16,12 +16,12 @@ const SummerBusinessIdea = () => (
             <OvalSvg/>
         </Oval>
         <Oval2>
-            <OvalSvg2 />
+            <OvalSvg2/>
         </Oval2>
-        <Container>
-            <Service>
-                <TextCenterLayout headline="Summer Business Ideas - What Type of Business Should You Start?"
-                                  text="Some businesses are especially well-suited to being run on a seasonal basis. Here are some great ideas:"/>
+        <Service>
+            <TextCenterLayout headlineWidth={770} textWidth={770} headline="Summer Business Ideas - What Type of Business Should You Start?"
+                              text="Some businesses are especially well-suited to being run on a seasonal basis. Here are some great ideas:"/>
+            <Container>
 
                 <AdventagesBox>
                     <AdventagesWithLongText
@@ -32,9 +32,11 @@ const SummerBusinessIdea = () => (
                         circleBackgroundColor={color.blue1}
                         circleBackgroundShadow={shadow.blue1}
                         imageName="use-an-incfile-network-atorney-blue"
+                        width="100%"
                     >
                         <Paragraph mixed={true}>
-                            With kids being out of school, they and their parents may be looking for extra practice for sports, hobbies or academics. You can take advantage by offering private lessons.
+                            With kids being out of school, they and their parents may be looking for extra practice for
+                            sports, hobbies or academics. You can take advantage by offering private lessons.
                         </Paragraph>
                     </AdventagesWithLongText>
 
@@ -46,9 +48,11 @@ const SummerBusinessIdea = () => (
                         circleBackgroundColor={color.blue1}
                         circleBackgroundShadow={shadow.blue1}
                         imageName="provide-babysitting-services"
+                        width="100%"
                     >
                         <Paragraph mixed={true}>
-                            Because kids can’t go to school or daycare in the summer months, some parents might want additional help looking after their children.
+                            Because kids can’t go to school or daycare in the summer months, some parents might want
+                            additional help looking after their children.
                         </Paragraph>
                     </AdventagesWithLongText>
 
@@ -60,9 +64,12 @@ const SummerBusinessIdea = () => (
                         circleBackgroundColor={color.blue1}
                         circleBackgroundShadow={shadow.blue1}
                         imageName="yard-work-and-chores-02"
+                        width="100%"
                     >
                         <Paragraph mixed={true}>
-                            Summer is a busy time in the yard or garden, yet many people take longer vacations away from home. Think about offering weeding services, mowing lawns, watering plants or caring for animals.
+                            Summer is a busy time in the yard or garden, yet many people take longer vacations away from
+                            home. Think about offering weeding services, mowing lawns, watering plants or caring for
+                            animals.
                         </Paragraph>
                     </AdventagesWithLongText>
 
@@ -74,9 +81,12 @@ const SummerBusinessIdea = () => (
                         circleBackgroundColor={color.blue1}
                         circleBackgroundShadow={shadow.blue1}
                         imageName="local-tour-guide"
+                        width="100%"
                     >
                         <Paragraph mixed={true}>
-                            If you know your city or the surrounding region well, you could set up a business providing interesting tours to visitors. You can even theme tours around unique local features or customs.
+                            If you know your city or the surrounding region well, you could set up a business providing
+                            interesting tours to visitors. You can even theme tours around unique local features or
+                            customs.
                         </Paragraph>
                     </AdventagesWithLongText>
 
@@ -88,9 +98,12 @@ const SummerBusinessIdea = () => (
                         circleBackgroundColor={color.blue1}
                         circleBackgroundShadow={shadow.blue1}
                         imageName="vacation-planing-and-local-agent"
+                        width="100%"
                     >
                         <Paragraph mixed={true}>
-                            Vacation and itinerary planning can take up an enormous amount of time. You can reduce this stress and hassle for other travelers by providing booking, administration and other tourism services.
+                            Vacation and itinerary planning can take up an enormous amount of time. You can reduce this
+                            stress and hassle for other travelers by providing booking, administration and other tourism
+                            services.
                         </Paragraph>
                     </AdventagesWithLongText>
 
@@ -102,9 +115,12 @@ const SummerBusinessIdea = () => (
                         circleBackgroundColor={color.blue1}
                         circleBackgroundShadow={shadow.blue1}
                         imageName="airbnb-logo"
+                        width="100%"
                     >
                         <Paragraph mixed={true}>
-                            Airbnb’s are becoming increasingly popular - if you have a property that you can fully or partially rent out, summer is going to be one of the busiest times. Alternatively, you could also rent out a vacation home yourself or through a property management company.
+                            Airbnb’s are becoming increasingly popular - if you have a property that you can fully or
+                            partially rent out, summer is going to be one of the busiest times. Alternatively, you could
+                            also rent out a vacation home yourself or through a property management company.
                         </Paragraph>
                     </AdventagesWithLongText>
 
@@ -116,14 +132,18 @@ const SummerBusinessIdea = () => (
                         circleBackgroundColor={color.blue1}
                         circleBackgroundShadow={shadow.blue1}
                         imageName="activity-and-summer-camp-coordinator"
+                        width="100%"
                     >
                         <Paragraph mixed={true}>
-                            Kids are looking for something fun to do over the summer season. Enriching activities or summer camp experiences can be very attractive to parents and children - you may be surprised at the rates you can command, especially if you're a trained educator.
+                            Kids are looking for something fun to do over the summer season. Enriching activities or
+                            summer camp experiences can be very attractive to parents and children - you may be
+                            surprised at the rates you can command, especially if you're a trained educator.
                         </Paragraph>
                     </AdventagesWithLongText>
                 </AdventagesBox>
-            </Service>
-        </Container>
+            </Container>
+
+        </Service>
     </Wrapper>
 );
 
@@ -139,13 +159,20 @@ const Service = styled.div`
 `;
 
 const AdventagesBox = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  max-width: 970px;
-  margin: 140px auto 0;
-  position: relative;
- 
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 100%;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 20px;
+    
+    @media (min-width: 490px){
+        grid-template-columns: 470px;
+    }
+    
+    @media (min-width: 992px){
+        grid-template-columns: 470px 470px;
+    }
 `;
 
 const Oval = styled.div`

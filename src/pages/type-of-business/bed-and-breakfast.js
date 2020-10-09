@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
-import Button from "../../components/button";
+import Button from "../../atomic/molecules/buttons/button";
 import RatingRow from "../../atomic/atoms/boxes/rating-row";
 import CartBlock from "../../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../../atomic/molecules/blocks/rating-block";
@@ -18,7 +18,7 @@ import {Heading} from "../../atomic/atoms/typography/heading";
 import {Paragraph} from "../../atomic/atoms/typography/paragraph";
 import TabsSection from "../../atomic/partials/tabs";
 import Colorbox from "../../components/color-box";
-import MegafornIcon from "../../images/icons/megafon.inline.svg";
+import QuestionIcon from "../../images/icons/the-question-is-just-where-do-you-start.inline.svg";
 import {color} from "../../components/styles/colors";
 import TypeBusiness from "../../atomic/sections/type-of-business/bed-and-breakfast/type-business";
 import ValidatingBusinessIdea from "../../atomic/sections/type-of-business/bed-and-breakfast/validating-business-idea";
@@ -27,7 +27,7 @@ import BusinessStructure from "../../atomic/sections/type-of-business/bed-and-br
 import SettingBusiness from "../../atomic/sections/type-of-business/bed-and-breakfast/setting-business";
 import OrderNow from "../../atomic/sections/type-of-business/bed-and-breakfast/order-now";
 import Regulations from "../../atomic/sections/type-of-business/bed-and-breakfast/regulations";
-import InsuranceBusiness from "../../atomic/sections/type-of-business/bed-and-breakfast/insurance-business";
+import InsuranceBusinessSection from "../../atomic/sections/type-of-business/bed-and-breakfast/insurance-business";
 import Taxes from "../../atomic/sections/type-of-business/bed-and-breakfast/taxes";
 import ToolsAndLinks from "../../atomic/sections/type-of-business/bed-and-breakfast/tools";
 import Conclusion from "../../atomic/sections/general/conclusion";
@@ -56,9 +56,8 @@ const BedAndBreakfast = () => (
                 for travelers and a sustainable income for yourself.
             </p>
             <ButtonsBox>
-                <Button theme="primary56" marginMD="0 24px 0 0" arrow>
-                    Start Now
-                </Button>
+                <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{url: "/", text: "Start Now"}} />
+
             </ButtonsBox>
 
             <RatingRow>
@@ -91,8 +90,8 @@ const BedAndBreakfast = () => (
                             efficient as possible and market yourself to the right vacationers.
                         </Paragraph>
 
-                        <Colorbox className="box" theme="icon" Icon={MegafornIcon} color={color.green3} curve
-                                  curveColor={color.orange2}>
+                        <Colorbox className="box" theme="icon" Icon={QuestionIcon} color={color.green3} curve
+                                  curveColor={color.blue1}>
                             <Heading size={4}>
                                 The question is, just where do you start?
                             </Heading>
@@ -445,7 +444,7 @@ const BedAndBreakfast = () => (
 
         <Regulations/>
 
-        <InsuranceBusiness/>
+        <InsuranceBusinessSection/>
 
         <Taxes/>
 
@@ -487,7 +486,11 @@ const ListBox = styled.div`
 `;
 
 const TabsWrapper = styled.section`
-    position: relative;
+    margin-top: 120px;
+  position: relative;
+  @media (min-width: 992px){
+      margin-top: 21px;
+  }
 `;
 
 const TabsOval = styled.div`

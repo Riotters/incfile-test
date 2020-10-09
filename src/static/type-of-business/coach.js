@@ -78,30 +78,34 @@ export const adventages2 = {
     ]
 };
 
-export const InfoCards = [
-    {
-        backgroundColor: color.babyblue3,
-        roundTopLeft: true,
-        roundBottomLeft: true,
-        imageName: "workers-compensation-insurance",
-        title: "Workers Compensation Insurance for Your Moving Business",
-        content: "Workers’ compensation insurance provides coverage for job-related illnesses, disabilities or injuries that affect employees. Regulations for this insurance vary from state to state. It typically covers areas like medical costs, loss of earnings, compensation and retraining. This is essential for a moving business as handling large, heavy and awkward items could expose your employees to risk of injury."
-    },
-    {
-        backgroundColor: color.green3,
-        imageName: "shield-icon",
-        title: "General Liability Insurance for Your Moving Business",
-        content: "This insurance protects your moving business from claims due to being sued. This may include injury to members of the public, property damage, personal liabilities, legal defense and more. It can help protect your business from financial penalties and bankruptcy. This type of insurance is essential to your moving business as you will be going into and out of homes, and moving large items invites risks. You will also need to arrange to have your clients' property insured while you’re holding or transporting it."
-    },
-    {
-        backgroundColor: color.red3,
-        roundTopRight: true,
-        roundBottomRight: true,
-        imageName: "home-and-auto-insurance",
-        title: "Specialized Office and Auto Insurance for Your Moving Business",
-        content: "You will want commercial office and vehicle insurance to cover your assets."
-    }
-]
+export const InfoCards = {
+    title: `Insurance for Your Professional Coaching Organization`,
+    description: `Most life or business coaching organizations should have comprehensive business insurance. There are various types.`,
+    items: [
+        {
+            backgroundColor: color.babyblue3,
+            roundTopLeft: true,
+            roundBottomLeft: true,
+            imageName: "workers-compensation-insurance",
+            title: "Workers Compensation Insurance for Your Moving Business",
+            content: "Workers’ compensation insurance provides coverage for job-related illnesses, disabilities or injuries that affect employees. Regulations for this insurance vary from state to state. It typically covers areas like medical costs, loss of earnings, compensation and retraining. This is essential for a moving business as handling large, heavy and awkward items could expose your employees to risk of injury."
+        },
+        {
+            backgroundColor: color.green3,
+            imageName: "shield-icon",
+            title: "General Liability Insurance for Your Moving Business",
+            content: "This insurance protects your moving business from claims due to being sued. This may include injury to members of the public, property damage, personal liabilities, legal defense and more. It can help protect your business from financial penalties and bankruptcy. This type of insurance is essential to your moving business as you will be going into and out of homes, and moving large items invites risks. You will also need to arrange to have your clients' property insured while you’re holding or transporting it."
+        },
+        {
+            backgroundColor: color.red3,
+            roundTopRight: true,
+            roundBottomRight: true,
+            imageName: "home-and-auto-insurance",
+            title: "Specialized Office and Auto Insurance for Your Moving Business",
+            content: "You will want commercial office and vehicle insurance to cover your assets."
+        }
+    ]
+};
 
 export const Tools = [
     {

@@ -19,7 +19,7 @@ const Wrapper = styled.div`
 
 const PricingCards = ({ className, content }) => {
   return (
-    <Wrapper className={className} content={content}>
+    <Wrapper className={className}>
         {content.map(card => (
             <Adventages content={card}/>
         ))}

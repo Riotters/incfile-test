@@ -66,13 +66,22 @@ const Wrapper = styled.section`
 `;
 
 const AdventagesWrapper = styled.div`
-        margin: 0 auto;
-        padding-top: 120px;
-        padding-bottom: 100px;
-        max-width: 980px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 100%;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 0px;
+    margin-top: 76px;
+    margin-bottom 76px; 
+    
+    @media (min-width: 490px){
+        grid-template-columns: 470px;
+    }
+    
+    @media (min-width: 992px){
+        grid-template-columns: 470px 470px; 
+    }
 `;
 
 const Oval = styled.div`

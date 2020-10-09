@@ -36,6 +36,7 @@ const TypeBusiness = () => (
                         circleBackgroundColor={color.blue1}
                         circleBackgroundShadow={shadow.blue1}
                         imageName="star-01"
+                        width="100%"
                     >
                         <Paragraph>
                             We’ve all got skills we could turn into business ideas, and it’s time to harness them into
@@ -57,6 +58,7 @@ const TypeBusiness = () => (
                         circleBackgroundColor={color.blue1}
                         circleBackgroundShadow={shadow.blue1}
                         imageName="business-licence-search-copy-5"
+                        width="100%"
                     >
                         <Paragraph>
                             Similar to how you explored your skills, start thinking about the things that inspire you —
@@ -75,6 +77,7 @@ const TypeBusiness = () => (
                         circleBackgroundColor={color.blue1}
                         circleBackgroundShadow={shadow.blue1}
                         imageName="decide-what-really-matters-to-you"
+                        width="100%"
                     >
                         <Paragraph>
                             The most successful businesses happen because the founder has a great idea that they care
@@ -96,6 +99,7 @@ const TypeBusiness = () => (
                         circleBackgroundColor={color.blue1}
                         circleBackgroundShadow={shadow.blue1}
                         imageName="no-money"
+                        width="100%"
                     >
                         <Paragraph>
                             The most successful businesses happen because the founder has a great idea that they care
@@ -137,6 +141,7 @@ const Wrapper = styled.div`
     background-image: ${gradient.blue3}; 
     padding-top: 100px;
     position: relative;
+    overflow: hidden;
 `;
 
 const Service = styled.div`
@@ -144,13 +149,20 @@ const Service = styled.div`
 `;
 
 const AdventagesBox = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  max-width: 970px;
-  margin: 140px auto 0;
-  position: relative;
- 
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 100%;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 20px;
+    
+    @media (min-width: 490px){
+        grid-template-columns: 470px;
+    }
+    
+    @media (min-width: 992px){
+        grid-template-columns: 470px 470px;
+    }
 `;
 
 const CurveWrapper = styled.div`

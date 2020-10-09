@@ -4,18 +4,21 @@ import TextCenterLayout from "../../../partials/heading-center";
 import ToolsList from "../../../organisms/lists/tools-list";
 import {Tools} from "../../../../static/type-of-business/airbnb";
 import OvalSvg from "../../../../images/ovals/top-right-transparent-green2.inline.svg";
+import Container from "../../../container";
 
 const UseFulTools = () => (
     <Wrapper>
         <Oval>
-            <OvalSvg />
+            <OvalSvg/>
         </Oval>
         <Padding>
             <TextCenterLayout headline="Useful Online Tools for Your Airbnb Business"
                               text="The right software and apps will make it much easier to run your Airbnb business. Here are our recommendations for some of the best tools out there to make business operations a breeze."/>
         </Padding>
 
-        <ToolsList tools={Tools}/>
+        <Container>
+            <ToolsList tools={Tools}/>
+        </Container>
     </Wrapper>
 );
 

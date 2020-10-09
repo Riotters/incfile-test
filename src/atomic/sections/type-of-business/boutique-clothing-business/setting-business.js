@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "../../../container";
-import TextCenterLayout from "../../../../components/partials/blocks/heading-center";
+import TextCenterLayout from "../../../partials/heading-center";
 import TopImageBox from "../../../../components/top-image-box";
 import {color} from "../../../../components/styles/colors";
 import styled from "styled-components";
@@ -15,7 +15,8 @@ const SettingBusiness = () => (
 
         <TextCenterLayout
             headline="Setting up Your Life or Business Coaching Operations"
-            headlineWidth="700"
+            headlineWidth={770}
+            textWidth={770}
             text="Once you've legally created your coaching business, you’ll need to get some other things in place."
         />
 
@@ -104,13 +105,13 @@ const ImageBoxes = styled.div`
   grid-gap: 30px;
   padding-top: 112px;
   width: 100%;
-
+  max-width: 970px;
+  
   @media(min-width: 1024px) {
     grid-template-columns: 1fr 1fr;
   }
   
-  @media (min-width: 1024px) {
-    width: 970px;
+  @media (min-width: 970px) {
     margin: 0 auto;
   }
 `;

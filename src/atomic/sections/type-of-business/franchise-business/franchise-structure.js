@@ -598,13 +598,25 @@ const Wrapper = styled.section`
 `;
 
 const BoxWrapper = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding-top: 104px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 100%;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 72px;
+    margin-top: 76px;
+    margin-bottom 76px; 
     
-    @media (min-width: 1170px){
-        justify-content: space-between;
+    @media (min-width: 390px){
+        grid-template-columns: 370px;
+    }
+    
+    @media (min-width: 768px){
+        grid-template-columns: 370px 370px;
+    }
+    
+    @media (min-width: 1200px){
+        grid-template-columns: 370px 370px 370px;
     }
 `;
 
@@ -614,12 +626,8 @@ const Franchise = styled(Link)`
     border-radius: 5px;
     box-shadow: 0 24px 32px 0 rgba(236, 236, 236, 0.5);
     background-color: #ffffff;
-    margin-bottom: 72px;
+    margin-bottom: 0px;
     transition: all 0.5s ease-in-out;
-    
-    @media (min-width: 992px){
-        width: 370px;
-    }
     
     &:hover {
         box-shadow: 0 40px 80px 0 rgba(171, 171, 171, 0.5);

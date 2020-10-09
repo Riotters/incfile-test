@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "../../../container";
-import TextCenterLayout from "../../../../components/partials/blocks/heading-center";
+import TextCenterLayout from "../../../partials/heading-center";
 import TopImageBox from "../../../../components/top-image-box";
 import {color} from "../../../../components/styles/colors";
 import styled from "styled-components";
@@ -19,12 +19,14 @@ const SettingBusiness = () => (
             <OvalSvg />
         </Oval2>
 
+        <TextCenterLayout
+            headline="Setting Up Business Operations"
+            headlineWidth={770}
+            textWidth={770}
+            text="Once you've legally created your gym, fitness or personal training business, you’ll need to get some other things in place."
+        />
+
         <Container>
-            <TextCenterLayout
-                headline="Setting Up Business Operations"
-                headlineWidth="700"
-                text="Once you've legally created your gym, fitness or personal training business, you’ll need to get some other things in place."
-            />
             <ImageBoxes>
 
                 <TopImageBox image="location" color={color.babyblue3}>
@@ -128,13 +130,13 @@ const ImageBoxes = styled.div`
   grid-gap: 30px;
   padding-top: 112px;
   width: 100%;
-
+  max-width: 970px;
+  
   @media(min-width: 769px) {
     grid-template-columns: 1fr 1fr;
   }
   
   @media (min-width: 970px) {
-    width: 970px;
     margin: 0 auto;
   }
 `;

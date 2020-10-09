@@ -4,7 +4,7 @@ import TextCenterLayout from "../../../partials/heading-left";
 import TopImageBox from "../../../../components/top-image-box";
 import {color} from "../../../../components/styles/colors";
 import styled from "styled-components";
-import GreenOval from "../../../../images/ovals/top-left-transparent-green2.inline.svg";
+import GreenOval from "../../../../images/ovals/top-left-transparent-green1.inline.svg";
 import ContentCenter from "../../../partials/content-center";
 import {Link} from "gatsby";
 
@@ -19,15 +19,16 @@ const SettingBusiness = () => (
             <GreenOval/>
         </Oval2>
 
+        <ContentCenter contentWidth={770}>
+            <TextCenterLayout
+                headline="The Next Steps: Running a T-Shirt Business"
+                headlineWidth={770}
+                textWidth={770}
+                text="Once you've legally created your T-shirt business, you’ll need to get some other things in place."
+            />
+        </ContentCenter>
+
         <Container>
-            <ContentCenter>
-                <TextCenterLayout
-                    headline="The Next Steps: Running a T-Shirt Business"
-                    headlineWidth="700"
-                    textWidth="700"
-                    text="Once you've legally created your T-shirt business, you’ll need to get some other things in place."
-                />
-            </ContentCenter>
 
             <ImageBoxes>
                 <TopImageBox image="location" color={color.red3}>

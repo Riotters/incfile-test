@@ -5,7 +5,7 @@ import TopImageBox from "../../../../components/top-image-box";
 import {color} from "../../../../components/styles/colors";
 import styled from "styled-components";
 import Curve from "../../../../images/green-curve.inline.svg";
-import GreenOval from "../../../../images/ovals/top-left-transparent-green2.inline.svg";
+import GreenOval from "../../../../images/ovals/top-left-transparent-green1.inline.svg";
 import ContentCenter from "../../../partials/content-center";
 
 const SettingBusiness = () => (
@@ -19,20 +19,21 @@ const SettingBusiness = () => (
             <GreenOval/>
         </OvalRight>
 
-        <Container>
-            <ContentCenter>
-                <TextCenterLayout
-                    headline="Setting up Your Life or Business Coaching Operations"
-                    headlineWidth="700"
-                    textWidth="700"
-                    text="Once you've legally created your Etsy business, you’ll need to get some other things in place. The most obvious first step is to create your Etsy seller account at etsy.com. Etsy will walk you through creating a seller profile, adding your products, and creating store policies, like those for returns and exchanges and customer service. You'll want to have attractive product photos and descriptive listings to help people find your products."
-                />
-                <TextCenterLayout
-                    textWidth="700"
-                    text="There are other logistical matters you'll need to consider in order to get your Etsy shop up and running. These include:"
-                />
-            </ContentCenter>
+        <ContentCenter>
+            <TextCenterLayout
+                headline="Setting up Your Life or Business Coaching Operations"
+                headlineWidth={770}
+                textWidth={770}
+                text="Once you've legally created your Etsy business, you’ll need to get some other things in place. The most obvious first step is to create your Etsy seller account at etsy.com. Etsy will walk you through creating a seller profile, adding your products, and creating store policies, like those for returns and exchanges and customer service. You'll want to have attractive product photos and descriptive listings to help people find your products."
+            />
+            <TextCenterLayout
+                textWidth={770}
+                text="There are other logistical matters you'll need to consider in order to get your Etsy shop up and running. These include:"
+            />
+        </ContentCenter>
 
+
+        <Container>
             <ImageBoxes>
                 <TopImageBox image="location" color={color.red3}>
                     <h4>Location of your workshop</h4>
@@ -152,13 +153,13 @@ const ImageBoxes = styled.div`
   grid-gap: 30px;
   padding-top: 112px;
   width: 100%;
-
+  max-width: 970px;
+  
   @media(min-width: 769px) {
     grid-template-columns: 1fr 1fr;
   }
   
   @media (min-width: 970px) {
-    width: 970px;
     margin: 0 auto;
   }
 `;

@@ -1,11 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import {gradient} from "../../../atoms/styles/colors";
+import {color, gradient} from "../../../atoms/styles/colors";
 import Container from "../../../container";
 import TextCenterLayout from "../../../partials/heading-center";
 import Adventages from "../../../../components/adventages";
-import {color} from "../../../../components/styles/colors";
-import {shadow} from "../../../../components/styles/shadows";
+import {shadow} from "../../../atoms/styles/shadows";
 import {adventages} from "../../../../static/type-of-business/publishing-company-business";
 import OvalSvg from "../../../../images/ovals/top-left-transparent-orange.inline.svg";
 import {Paragraph} from "../../../atoms/typography/paragraph";
@@ -20,17 +19,17 @@ const TypeOfBusiness = () => (
         <Oval2>
             <OvalSvg/>
         </Oval2>
-        <Container>
-            <Service>
-                <TextCenterLayout headline="What Type of Daycare Should You Start?"
-                                  text="There are several different types of daycare business that you can start. You will also want to decide if you want to be a work-from-home travel agent, or if you have other options for where to locate your business."/>
 
-                <ContentCenter>
-                    <Paragraph big>
-                        Here are some of the more popular options:
-                    </Paragraph>
-                </ContentCenter>
+        <TextCenterLayout headlineWidth={770} textWidth={770} headline="What Type of Daycare Should You Start?"
+                          text="There are several different types of daycare business that you can start. You will also want to decide if you want to be a work-from-home travel agent, or if you have other options for where to locate your business."/>
 
+        <Service>
+            <ContentCenter>
+                <Paragraph big>
+                    Here are some of the more popular options:
+                </Paragraph>
+            </ContentCenter>
+            <Container>
                 <AdventagesBox>
                     {adventages.items.map(item => (
                         <Adventages
@@ -44,11 +43,13 @@ const TypeOfBusiness = () => (
                             circleBackgroundColor={color.blue1}
                             circleBackgroundShadow={shadow.blue1}
                             imageName={item.imageName}
+                            width="100%"
                         />
                     ))}
                 </AdventagesBox>
-            </Service>
-        </Container>
+            </Container>
+        </Service>
+
     </Wrapper>
 );
 
@@ -64,19 +65,26 @@ const Service = styled.div`
 `;
 
 const AdventagesBox = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  max-width: 970px;
-  margin: 140px auto 0;
-  position: relative;
- 
+  display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 100%;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 20px;
+    
+    @media (min-width: 992px){
+        grid-template-columns: 470px 470px;
+    }
 `;
 
 const CurveWrapper = styled.div`
     position: absolute;
     right: -24px;
     top: 0px;
+    
+    @media (max-width: 1200px){
+        display: none;
+    }
 `;
 
 const Oval = styled.div`

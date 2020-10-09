@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <g>
+                            <g transform="translate(-421 -659) translate(357 311) translate(0 324) translate(40) translate(24 24) translate(3)">
+                                <path fill="#FFF" fill-rule="nonzero" d="M23.5 6.91c.456.074.791.468.79.93v6.92c-.015 4.102-1.3 8.099-3.68 11.44L13 31.3l-6.06-4.39C2.338 23.187-.067 17.387.55 11.5V5.8c.09-.09.78-.3.94-.4.172-.027.342-.064.51-.11.824-.194 1.576-.617 2.17-1.22.503-.491.883-1.094 1.11-1.76h13.35c.537.006.994.392 1.09.92.38 1.889 1.881 3.35 3.78 3.68z"/>
+                                <path stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M25.89 5.52v8c-.001 5.51-2.543 10.713-6.89 14.1l-.3.24-3.58 2.79c-1.087.851-2.613.851-3.7 0l-4.16-3.11C2.77 24.195.12 18.929.11 13.33V5.52c.206.015.414.015.62 0 .186-.021.37-.058.55-.11.845-.217 1.613-.664 2.22-1.29.513-.512.903-1.135 1.14-1.82v-.09C4.917 1.31 5.749.698 6.69.7h12.58c.903-.006 1.708.566 2 1.42.14.456.348.888.62 1.28.895 1.33 2.396 2.126 4 2.12zM7.74 8.04L7.74 12.47M7.74 17.4L7.74 21.83M12.24 17.4L12.24 21.83"/>
+                                <rect width="3.32" height="5.25" x="11.47" y="7.57" stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" rx="1.61"/>
+                                <rect width="3.32" height="5.25" x="16.66" y="16.99" stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" rx="1.61"/>
+                                <path stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M19.23 8.04L19.23 12.47"/>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -10,7 +10,7 @@ import ExSVG from "../../../images/circle-status-x.inline.svg";
 
 const Wrapper = styled(Whitebox)`
   display: grid;
-  grid-template-columns: ${props => props.columns && props.columns.length === 1 ? `repeat(${props.columns}, 1fr)` : props.columns ? props.columns : "1fr 160px 160px 160px 160px;"};
+  grid-template-columns: ${(props) => (props.columns && props.columns.length === 1 ? `repeat(${props.columns}, 1fr)` : props.columns ? props.columns : "1fr 160px 160px 160px 160px;")};
 
   &:not(:last-child) {
     margin-bottom: 8px;
@@ -22,14 +22,19 @@ const Cell = styled.div`
   align-items: center;
   padding: 24px;
   min-width: 160px;
+  ${(props) => (props.textCenter ? "justify-content: center" : "")};
 
   @media (min-width: 769px) {
     min-width: auto;
   }
 
+  ${(props) =>
+    !props.noSeparator &&
+    `
   &:not(:last-child) {
     border-right: 2px solid ${color.grey4};
   }
+  `};
 `;
 
 const ListItem = styled(Paragraph)`
@@ -49,13 +54,11 @@ const ListItem = styled(Paragraph)`
   }
 `;
 
-const GridTableRow = ({ className, content, header, headerSize, list, columns }) => (
+const GridTableRow = ({ className, content, header, headerSize, list, columns, textCenter, noSeparator }) => (
   <Wrapper className={className} columns={columns}>
-    {columns && 
-      console.log(columns.length)
-    }
+    {columns && console.log(columns.length)}
     {content.map((item) => (
-      <Cell>
+      <Cell textCenter={textCenter} noSeparator={noSeparator}>
         {header && (
           <Heading size={headerSize ? headerSize : "4"} bottomMargin="0">
             {item}

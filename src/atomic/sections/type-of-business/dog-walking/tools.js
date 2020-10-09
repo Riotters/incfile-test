@@ -13,31 +13,36 @@ import OvalSvg2 from "../../../../images/ovals/bottom-left-transparent-orange.in
 const ToolsAndLinks = () => (
     <Wrapper>
         <Oval>
-            <OvalSvg />
+            <OvalSvg/>
         </Oval>
         <Oval2>
-            <OvalSvg2 />
+            <OvalSvg2/>
         </Oval2>
+        <TextCenterLayout headlineWidth={770} textWidth={770}
+                          headline="Groups and Forums for Your Dog Walking or Pet Sitting Business"
+                          text="Here are some useful places where you can connect with other dog walking or pet sitting entrepreneurs:"/>
+
         <Container>
-            <TextCenterLayout headline="Groups and Forums for Your Dog Walking or Pet Sitting Business"
-                              text="Here are some useful places where you can connect with other dog walking or pet sitting entrepreneurs:"/>
 
             <LinksContainer>
 
                 <LinkItem>
-                    <PathLink to="https://petsits.com/articles/pet-sitting-forums" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://petsits.com/articles/pet-sitting-forums" textColor={color.blue1}
+                              hoverColor={color.orange1} arrowColor={color.blue1}>
                         Professional United Pet Sitters Forums
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="https://www.doggieresidence.com/community/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.doggieresidence.com/community/" textColor={color.blue1}
+                              hoverColor={color.orange1} arrowColor={color.blue1}>
                         Doggie Residence
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="https://petsitters.org/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://petsitters.org/" textColor={color.blue1} hoverColor={color.orange1}
+                              arrowColor={color.blue1}>
                         National Association of Professional Pet Sitters
                         (Membership Required)
                     </PathLink>
@@ -45,10 +50,10 @@ const ToolsAndLinks = () => (
 
             </LinksContainer>
         </Container>
-        
-        <Container>
-            <UsefulTools toolsList={toolsList.tools} headlineText={toolsList.headlineText} description={toolsList.description} />
-        </Container>
+
+        <UsefulTools toolsList={toolsList.tools} headlineText={toolsList.headlineText}
+                     description={toolsList.description}/>
+
     </Wrapper>
 );
 
@@ -60,14 +65,21 @@ const Wrapper = styled.div`
 `;
 
 const LinksContainer = styled.div`
-    width: 100%;
-    margin: 100px auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 100%;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 30px;
+    margin-top: 76px;
+    margin-bottom 76px; 
     
-    @media (min-width: 1100px) {
-        width: 1000px;
+    @media (min-width: 490px){
+        grid-template-columns: 470px;
+    }
+    
+    @media (min-width: 992px){
+        grid-template-columns: 470px 470px;
     }
 `;
 
@@ -77,16 +89,6 @@ const LinkItem = styled.div`
     background-color: white;
     box-shadow: ${shadow.white1};
     width: 100%;
-    margin-bottom: 30px;
-    
-    @media (min-width: 470px) {
-        width: 470px;
-    }
-    
-    @media (min-width: 1100px) {
-        margin-left: 15px;
-        margin-right: 15px;
-    }
 `;
 
 const Oval = styled.div`

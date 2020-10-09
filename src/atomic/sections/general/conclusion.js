@@ -18,7 +18,7 @@ const Conclusion = ({buttonTitle, children, to}) => (
                 <TextBox>
                     {children}
                 </TextBox>
-                <Button arrow theme="primary40" content={{text: buttonTitle, url: to}} />
+                <Button arrow theme="primary48" content={{text: buttonTitle, url: to}} width="max-content"/>
             </Content>
         </Container>
     </ConclusionWrapper>
@@ -26,6 +26,7 @@ const Conclusion = ({buttonTitle, children, to}) => (
 
 const ConclusionWrapper = styled.section`
     position: relative;
+    margin-top: 76px;
     margin-bottom: 150px;
 `;
 

@@ -8,6 +8,7 @@ import OvalRightSvg from "../../../../images/ovals/top-left-transparent-orange.i
 import Curve from "../../../../images/curve-orange.inline.svg";
 import TabScrollable from "./TabScrollable";
 import OvalSvg from "../../../../images/ovals/top-right-transparent-blue2.inline.svg";
+import {color} from "../../../atoms/styles/colors";
 
 const OrderNow = ({layout, columns}) => (
     <>
@@ -34,7 +35,10 @@ const OrderNow = ({layout, columns}) => (
                     </h2>
                     <p>A Clear and Comprehensive Guide to Starting Your Business the Right Way</p>
                     <ButtonsBox>
-                        <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{url: "/learning-center-entity/business-checklist/", text: "Business Checklist"}}/>
+                        <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{
+                            url: "/learning-center-entity/business-checklist/",
+                            text: "Business Checklist"
+                        }}/>
 
                     </ButtonsBox>
                 </LeftImageRightContent>
@@ -43,11 +47,11 @@ const OrderNow = ({layout, columns}) => (
         </OrderNowWrapper>
         <TabScrollableWrapper>
             <Oval2>
-                <OvalSvg />
+                <OvalSvg/>
             </Oval2>
-            <Container>
-                <TabScrollable/>
-            </Container>
+
+            <TabScrollable/>
+
         </TabScrollableWrapper>
     </>
 );
@@ -58,9 +62,15 @@ const TabScrollableWrapper = styled.div`
 `;
 
 const OrderNowWrapper = styled.section`
-    background-color: #fef6ed;
-    position: relative;
-    padding: 64px 0;
+        background-color: ${color.orange3};
+      position: relative;
+      padding-top: 64px;
+      padding-bottom: 64px;
+      
+      @media (min-width: 992px){
+        padding-top: 0;
+        padding-bottom: 0;
+      }
 `;
 
 const ButtonsBox = styled.div`
@@ -99,7 +109,12 @@ const CurveWrapper = styled.div`
     position: absolute;
     left: -85px;
     top: -85px;
+    
+    @media (max-width: 992px){
+        display: none;
+    }
 `;
+
 
 const Oval2 = styled.div`
     position: absolute;

@@ -1,45 +1,26 @@
 import React from "react";
 import styled from "styled-components";
-import InfoCardsSection from "../../../partials/info-cards-section";
 import {InfoCards} from "../../../../static/type-of-business/daycare-business";
-import {gradient} from "../../../atoms/styles/colors";
-import TextCenterLayout from "../../../../components/partials/blocks/heading-center";
-import OvalSvg from "../../../../images/ovals/bottom-left-transparent-blue3.inline.svg";
+import OvalSVG from "../../../../images/ovals/top-right-transparent-blue.inline.svg";
+import InsuranceBusiness from "../../general/insurance-business";
 
-const InsuranceBusiness = () => (
-    <Wrapper>
+const InsuranceBusinessSection = () => (
+    <InsuranceBusiness title={InfoCards.title} description={InfoCards.description} InfoCards={InfoCards.items}>
         <Oval>
-            <OvalSvg />
+            <OvalSVG/>
         </Oval>
-
-        <div style={{paddingBottom: "100px"}}>
-            <TextCenterLayout
-                headline="Insurance for Your Professional Coaching Organization"
-                text="Most life or business coaching organizations should have comprehensive business insurance. There are various types."
-            />
-        </div>
-        <InfoCardsSection cards={InfoCards}/>
-    </Wrapper>
+    </InsuranceBusiness>
 );
-
-const Wrapper = styled.section`
-    background: rgb(255,255,255);
-    background: ${gradient.blue3};
-    padding-top: 100px;
-    position: relative;
-    padding-bottom: 100px;
-`;
 
 const Oval = styled.div`
     position: absolute; 
     top: 0;
     right: 0;
-    width: 100%;
-    transform: rotate(-180deg);
+    width: 100%; 
     
     @media (min-width: 420px){
        width: 420px;
     }
 `;
 
-export default InsuranceBusiness;
+export default InsuranceBusinessSection;

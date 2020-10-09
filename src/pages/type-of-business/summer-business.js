@@ -36,9 +36,7 @@ const SummerBusiness = () => (
                 and everyone wants to enjoy the sunshine.
             </p>
             <ButtonsBox>
-                <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{text: "Start Now", url: "/"}}>
-                    Start Now
-                </Button>
+                <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{url: "/", text: "Start Now"}} />
             </ButtonsBox>
 
             <RatingRow>
@@ -67,7 +65,7 @@ const SummerBusiness = () => (
 
         <ToolsAndLinks />
 
-        <Conclusion to="/" buttonTitle="Start your No Money Business with us, today">
+        <Conclusion to="/" buttonTitle="Start your Summer Business with us, today">
             <Heading size={3} style={{fontSize: "48px"}}>
                 Conclusion
             </Heading>

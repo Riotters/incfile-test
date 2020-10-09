@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
-import Top from "../../components/partials/sections/top";
+import Top from "../../atomic/partials/top";
 import Button from "../../components/button";
 import RatingRow from "../../atomic/atoms/boxes/rating-row";
 import CartBlock from "../../atomic/molecules/blocks/cart-block";
@@ -15,7 +15,7 @@ import MovingBusinessStructure from "../../atomic/sections/type-of-business/movi
 import BusinessOperations from "../../atomic/sections/type-of-business/moving-company/business-operations";
 import OrderNow from "../../atomic/sections/type-of-business/moving-company/order-now";
 import Regulations from "../../atomic/sections/type-of-business/moving-company/regulations";
-import InsuranceBusiness from "../../atomic/sections/type-of-business/moving-company/insurance-business";
+import InsuranceBusinessSection from "../../atomic/sections/type-of-business/moving-company/insurance-business";
 import UseFulTools from "../../atomic/sections/type-of-business/moving-company/useful-tools";
 import Conclusion from "../../atomic/sections/general/conclusion";
 import BusinessOwners from "../../atomic/sections/type-of-business/moving-company/business-owners";
@@ -57,7 +57,7 @@ const MovingCompanyPage = () => (
 
         <Regulations />
 
-        <InsuranceBusiness />
+        <InsuranceBusinessSection />
 
         <BusinessOwners />
 

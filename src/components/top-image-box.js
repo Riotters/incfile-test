@@ -11,12 +11,14 @@ const Wrapper = styled.div`
     border-radius: 5px;
     background-color: ${color.white};
     box-shadow: ${props => (props.noShadow ? "" : shadow.white1)};
+    max-width: 470px;
+    justify-self: center;
     
     @media (min-width: 1024px){
-        width: 470px;
+        width: 100%;
     }
 
-    .top {
+    & > .top {
         display: flex;
         justify-content: center;
         align-items: center;

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Container from "../../../container";
-import TextCenterLayout from "../../../../components/partials/blocks/heading-center";
+import TextCenterLayout from "../../../partials/heading-center";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import Adventages from "../../../../components/adventages";
 import {color} from "../../../../components/styles/colors";
@@ -22,9 +22,9 @@ const AirbnbTaxes = () => (
             <OvalSvgBottom/>
         </OvalBottom>
 
-        <Container>
-            <TextCenterLayout headline="Airbnb Taxes"/>
+        <TextCenterLayout headline="Airbnb Taxes" headlineWidth={770}/>
 
+        <Container>
             <TextWrapper>
                 <Paragraph big mixed={true}>
                     <Curve color={color.babyblue1}
@@ -45,15 +45,16 @@ const AirbnbTaxes = () => (
         </Container>
 
         <Service>
+            <TextCenterLayout headlineWidth={770} textWidth={770} headline="Maintaining Your Airbnb Business"
+                              text="There are certain forms and legalities you need to follow to keep your Airbnb business in good standing."/>
+
             <Container>
-                <TextCenterLayout headline="Maintaining Your Airbnb Business"
-                                  text="There are certain forms and legalities you need to follow to keep your Airbnb business in good standing."/>
                 <AdventagesBox>
                     <CurveWrapper>
                         <CurveSvg/>
                     </CurveWrapper>
                     {adventages.items.map(item => (
-                        <Adventages style={{textAlign: "center"}} url={item.url} urlText={item.urlText}
+                        <Adventages className="containerMargin" style={{textAlign: "center"}} url={item.url} urlText={item.urlText}
                                     circleText={item.circleText} headline={item.headline} text={item.text}
                                     circlePosition="center" circleBackgroundColor={color.blue1}
                                     circleBackgroundShadow={shadow.blue1}/>
@@ -94,17 +95,22 @@ const Service = styled.div`
 `;
 
 const AdventagesBox = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  max-width: 970px;
-  padding: 40px 0;
-  margin: 0 auto;
-  position: relative;
-  
-  @media (min-width: 1024px) {
-    padding: 140px 0;
-  }
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 100%;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 20px;
+    margin-top: 76px;
+    margin-bottom 76px; 
+    
+    @media (min-width: 490px){
+        grid-template-columns: 470px;
+    }
+    
+    @media (min-width: 992px){
+        grid-template-columns: 470px 470px;
+    }
 `;
 
 const Oval = styled.div`
@@ -133,14 +139,14 @@ const OvalBottom = styled.div`
 
 const CurveWrapper = styled.div`
     position: absolute;
-    right: -115px;
-    top: 24px;
+    right: -15px;
+    top: -85px;
     
      display: none;
   
-  @media (min-width: 1200px){
-    display: block;
-  }
+      @media (min-width: 1200px){
+        display: block;
+      }
 `;
 
 export default AirbnbTaxes;

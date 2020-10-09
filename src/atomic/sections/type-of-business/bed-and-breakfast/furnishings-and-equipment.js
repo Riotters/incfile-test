@@ -1,9 +1,9 @@
 import React from "react";
+import {color} from "../../../atoms/styles/colors";
 import ImageContent from "../../../../components/partials/blocks/left-image-right-content";
 import {Heading} from "../../../atoms/typography/heading";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import styled from "styled-components";
-import Container from "../../../../components/container";
 import CkeckText from "../../../../components/static-check/text-only";
 import OvalSvg from "../../../../images/ovals/bottom-right-transparent-babyblue2.inline.svg";
 
@@ -12,183 +12,201 @@ const FurnishingsAndEquipment = () => (
         <Oval>
             <OvalSvg/>
         </Oval>
-        <Container>
-            <BusinessOwnerResponsibilities>
-                <ImageContent image="bed-and-breakfast-bed-icon" paddingTop="60">
-                    <Heading size={4} style={{fontSize: "24px"}}>
-                        Furnishings and Equipment for Your Bed and Breakfast
-                    </Heading>
-                    <Paragraph big>
-                        You will need extensive equipment, furniture, fixtures and fittings for your B&B. This will
-                        include:
-                    </Paragraph>
 
-                    <Paragraph big
-                               style={{fontWeight: "bold", marginBottom: "48px", paddingBottom: 0, marginTop: "56px"}}>
-                        For each room:
-                    </Paragraph>
-                    <ListWrapper>
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    En-suite bathroom with a shower and/or a good tub
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+        <BusinessOwnerResponsibilities>
+            <ImageContent image="bed-and-breakfast-bed-icon" paddingTop="60">
+                <Heading size={4} style={{fontSize: "24px"}}>
+                    Furnishings and Equipment for Your Bed and Breakfast
+                </Heading>
+                <Paragraph big style={{marginBottom: "96px"}}>
+                    You will need extensive equipment, furniture, fixtures and fittings for your B&B. This will
+                    include:
+                </Paragraph>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Furniture including chairs and a desk or table
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                <Paragraph big
+                           style={{
+                               fontFamily: "Avenir-Heavy",
+                               color: color.black,
+                               marginBottom: "48px",
+                               paddingBottom: 0
+                           }}>
+                    For each room:
+                </Paragraph>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Bed and comfortable mattress
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                <ListWrapper>
+                    <ListBox>
+                        <CkeckText>
+                            <Paragraph big>
+                                En-suite bathroom with a shower and/or a good tub
+                            </Paragraph>
+                        </CkeckText>
+                    </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Internet access
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                    <ListBox>
+                        <CkeckText>
+                            <Paragraph big>
+                                Furniture including chairs and a desk or table
+                            </Paragraph>
+                        </CkeckText>
+                    </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Television
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                    <ListBox>
+                        <CkeckText>
+                            <Paragraph big>
+                                Bed and comfortable mattress
+                            </Paragraph>
+                        </CkeckText>
+                    </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Luxury bed linens and robes
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                    <ListBox>
+                        <CkeckText>
+                            <Paragraph big>
+                                Internet access
+                            </Paragraph>
+                        </CkeckText>
+                    </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    High-quality carpets and window treatments
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                    <ListBox>
+                        <CkeckText>
+                            <Paragraph big>
+                                Television
+                            </Paragraph>
+                        </CkeckText>
+                    </ListBox>
 
-                    </ListWrapper>
+                    <ListBox>
+                        <CkeckText>
+                            <Paragraph big>
+                                Luxury bed linens and robes
+                            </Paragraph>
+                        </CkeckText>
+                    </ListBox>
 
-                    <Paragraph big
-                               style={{fontWeight: "bold", marginBottom: "48px", paddingBottom: 0, marginTop: "56px"}}>
-                        For each room:
-                    </Paragraph>
-                    <ListWrapper>
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Stove and cooking equipment to allow for preparation of multiple breakfasts
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                    <ListBox>
+                        <CkeckText>
+                            <Paragraph big>
+                                High-quality carpets and window treatments
+                            </Paragraph>
+                        </CkeckText>
+                    </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Tables, chairs, tablecloths and place settings
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                </ListWrapper>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Enough refrigeration and storage space for all cooking ingredients
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                <Paragraph big
+                           style={{
+                               fontFamily: "Avenir-Heavy",
+                               color: color.black,
+                               marginBottom: "48px",
+                               paddingBottom: 0,
+                               marginTop: "24px"
+                           }}>
+                    For the kitchen and dining area:
+                </Paragraph>
+                <ListWrapper>
+                    <ListBox>
+                        <CkeckText>
+                            <Paragraph big>
+                                Stove and cooking equipment to allow for preparation of multiple breakfasts
+                            </Paragraph>
+                        </CkeckText>
+                    </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Cutlery and dinnerware for everyone
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
-                    </ListWrapper>
+                    <ListBox>
+                        <CkeckText>
+                            <Paragraph big>
+                                Tables, chairs, tablecloths and place settings
+                            </Paragraph>
+                        </CkeckText>
+                    </ListBox>
 
-                    <Paragraph big
-                               style={{fontWeight: "bold", marginBottom: "48px", paddingBottom: 0, marginTop: "56px"}}>
-                        For common areas:
-                    </Paragraph>
-                    <ListWrapper>
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Television, music and other media
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                    <ListBox>
+                        <CkeckText>
+                            <Paragraph big>
+                                Enough refrigeration and storage space for all cooking ingredients
+                            </Paragraph>
+                        </CkeckText>
+                    </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Finger foods and snacks
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                    <ListBox>
+                        <CkeckText>
+                            <Paragraph big>
+                                Cutlery and dinnerware for everyone
+                            </Paragraph>
+                        </CkeckText>
+                    </ListBox>
+                </ListWrapper>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Television, music and other media
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                <Paragraph big
+                           style={{
+                               fontFamily: "Avenir-Heavy",
+                               color: color.black,
+                               marginBottom: "48px",
+                               paddingBottom: 0,
+                               marginTop: "24px"
+                           }}>
+                    For common areas:
+                </Paragraph>
+                <ListWrapper>
+                    <ListBox>
+                        <CkeckText>
+                            <Paragraph big>
+                                Television, music and other media
+                            </Paragraph>
+                        </CkeckText>
+                    </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Hot and cold beverages
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                    <ListBox>
+                        <CkeckText>
+                            <Paragraph big>
+                                Finger foods and snacks
+                            </Paragraph>
+                        </CkeckText>
+                    </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Telephone
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                    <ListBox>
+                        <CkeckText>
+                            <Paragraph big>
+                                Television, music and other media
+                            </Paragraph>
+                        </CkeckText>
+                    </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Fresh fruit and flowers
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                    <ListBox>
+                        <CkeckText>
+                            <Paragraph big>
+                                Hot and cold beverages
+                            </Paragraph>
+                        </CkeckText>
+                    </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Information on tourist attractions, destinations and restaurants
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                    <ListBox>
+                        <CkeckText>
+                            <Paragraph big>
+                                Telephone
+                            </Paragraph>
+                        </CkeckText>
+                    </ListBox>
 
-                    </ListWrapper>
-                </ImageContent>
-            </BusinessOwnerResponsibilities>
-        </Container>
+                    <ListBox>
+                        <CkeckText>
+                            <Paragraph big>
+                                Fresh fruit and flowers
+                            </Paragraph>
+                        </CkeckText>
+                    </ListBox>
+
+                    <ListBox>
+                        <CkeckText>
+                            <Paragraph big>
+                                Information on tourist attractions, destinations and restaurants
+                            </Paragraph>
+                        </CkeckText>
+                    </ListBox>
+
+                </ListWrapper>
+            </ImageContent>
+        </BusinessOwnerResponsibilities>
+
     </Wrapper>
 );
 

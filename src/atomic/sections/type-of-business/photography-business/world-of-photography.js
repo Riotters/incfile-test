@@ -63,13 +63,22 @@ const OvalCenter2 = styled.div`
 `
 
 const AdventagesBox = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  max-width: 970px;
-  margin: 140px auto 0;
-  position: relative;
- 
+  display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 100%;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 70px;
+    margin-top: 76px;
+    margin-bottom 76px; 
+    
+    @media (min-width: 490px){
+        grid-template-columns: 470px;
+    }
+    
+    @media (min-width: 992px){
+        grid-template-columns: 470px 470px;
+    }
 `;
 
 const WorldOfPhotography = () => (
@@ -122,6 +131,7 @@ const WorldOfPhotography = () => (
                         circleBackgroundColor={color.blue1}
                         circleBackgroundShadow={shadow.blue1}
                         imageName="fashion-photography"
+                        width="100%"
                     >
                         <Paragraph mixed={true}>
                             Shooting clothes and models in a variety
@@ -137,6 +147,7 @@ const WorldOfPhotography = () => (
                         circleBackgroundColor={color.blue1}
                         circleBackgroundShadow={shadow.blue1}
                         imageName="landscape-photography-01"
+                        width="100%"
                     >
                         <Paragraph mixed={true}>
                             Wide-angle lenses, beautiful contrasts and perfect framing means landscape photographers produce stunning shots of natural vistas.
@@ -151,6 +162,7 @@ const WorldOfPhotography = () => (
                         circleBackgroundColor={color.blue1}
                         circleBackgroundShadow={shadow.blue1}
                         imageName="family-baby-and-pet-photography"
+                        width="100%"
                     >
                         <Paragraph mixed={true}>
                             Whether it’s individual portraits and headshots
@@ -166,6 +178,7 @@ const WorldOfPhotography = () => (
                         circleBackgroundColor={color.blue1}
                         circleBackgroundShadow={shadow.blue1}
                         imageName="keep-your-real-adress-private"
+                        width="100%"
                     >
                         <Paragraph mixed={true}>
                             Photographers can partner with real estate agents and property developers to help showcase homes in the best possible light.
@@ -180,6 +193,7 @@ const WorldOfPhotography = () => (
                         circleBackgroundColor={color.blue1}
                         circleBackgroundShadow={shadow.blue1}
                         imageName="event-an-concert-photographer"
+                        width="100%"
                     >
                         <Paragraph mixed={true}>
                             For those who love the adrenaline rush and atmosphere of a live event, these photographers bring the vibrancy of music and entertainment out in their images.
@@ -194,6 +208,7 @@ const WorldOfPhotography = () => (
                         circleBackgroundColor={color.blue1}
                         circleBackgroundShadow={shadow.blue1}
                         imageName="aerial-photography"
+                        width="100%"
                     >
                         <Paragraph mixed={true}>
                             With the rise of drones as great vehicles
@@ -210,6 +225,7 @@ const WorldOfPhotography = () => (
                         circleBackgroundColor={color.blue1}
                         circleBackgroundShadow={shadow.blue1}
                         imageName="meal-design"
+                        width="100%"
                     >
                         <Paragraph mixed={true}>
                             In great demand by brands, restaurants and advertisers, food photographers use a variety
@@ -225,6 +241,7 @@ const WorldOfPhotography = () => (
                         circleBackgroundColor={color.blue1}
                         circleBackgroundShadow={shadow.blue1}
                         imageName="marketing-and-advertising-photographer"
+                        width="100%"
                     >
                         <Paragraph mixed={true}>
                             These photographers capture the images that grace magazines, websites and TV screens.
@@ -239,6 +256,7 @@ const WorldOfPhotography = () => (
                         circleBackgroundColor={color.blue1}
                         circleBackgroundShadow={shadow.blue1}
                         imageName="stock-photographer"
+                        width="100%"
                     >
                         <Paragraph mixed={true}>
                             With the huge rise in website owners and others using stock photos, there’s an enormous demand for images that capture specific moments in life and work.
@@ -253,6 +271,7 @@ const WorldOfPhotography = () => (
                         circleBackgroundColor={color.blue1}
                         circleBackgroundShadow={shadow.blue1}
                         imageName="wedding-planning"
+                        width="100%"
                     >
                         <Paragraph mixed={true}>
                             Perhaps the most popular and in-demand type

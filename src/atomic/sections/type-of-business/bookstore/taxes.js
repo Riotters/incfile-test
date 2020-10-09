@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import Container from "../../../container";
-import TextCenterLayout from "../../../../components/partials/blocks/heading-center";
+import TextCenterLayout from "../../../partials/heading-center";
 import Adventages from "../../../../components/adventages";
-import {color} from "../../../../components/styles/colors";
-import {shadow} from "../../../../components/styles/shadows";
+import {color} from "../../../atoms/styles/colors";
+import {shadow} from "../../../atoms/styles/shadows";
 import OvalSvg from "../../../../images/ovals/top-left-transparent-red3.inline.svg";
 import CurveSvg from "../../../../images/curve-babyblue-1.inline.svg";
 import {adventages2} from "../../../../static/type-of-business/bookstore";
@@ -16,10 +16,11 @@ const Taxes = () => (
             <OvalSvg/>
         </Oval>
 
+        <TextCenterLayout headlineWidth={770} textWidth={770} headline="Maintaining Your Bookstore Business"
+                          text="There are certain forms and legalities you need to follow to keep your bookstore business in good standing."/>
+
         <Service>
             <Container>
-                <TextCenterLayout headline="Maintaining Your Bookstore Business"
-                                  text="There are certain forms and legalities you need to follow to keep your bookstore business in good standing."/>
                 <AdventagesBox>
                     <CurveWrapper>
                         <CurveSvg/>
@@ -49,13 +50,22 @@ const Service = styled.div`
 `;
 
 const AdventagesBox = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  max-width: 970px;
-  padding: 140px 0;
-  margin: 0 auto;
-  position: relative;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 100%;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 70px;
+    margin-top: 76px;
+    margin-bottom 76px; 
+    
+    @media (min-width: 490px){
+        grid-template-columns: 470px;
+    }
+    
+    @media (min-width: 992px){
+        grid-template-columns: 470px 470px;
+    }
 `;
 
 const Oval = styled.div`
@@ -80,7 +90,7 @@ const CurveWrapper = styled.div`
         }
     }
     
-    @media (max-width: 970px) {
+    @media (max-width: 1200px) {
         display: none;
     }
 `;

@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
-import Button from "../../components/button";
+import Button from "../../atomic/molecules/buttons/button";
 import RatingRow from "../../atomic/atoms/boxes/rating-row";
 import CartBlock from "../../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../../atomic/molecules/blocks/rating-block";
@@ -29,7 +29,7 @@ import BusinessStructure from "../../atomic/sections/type-of-business/food-truck
 import SettingBusiness from "../../atomic/sections/type-of-business/food-truck-business/setting-business";
 import OrderNow from "../../atomic/sections/type-of-business/food-truck-business/order-now";
 import Regulations from "../../atomic/sections/type-of-business/food-truck-business/regulations";
-import InsuranceBusiness from "../../atomic/sections/type-of-business/food-truck-business/insurance-business";
+import InsuranceBusinessSection from "../../atomic/sections/type-of-business/food-truck-business/insurance-business";
 import Taxes from "../../atomic/sections/type-of-business/food-truck-business/taxes";
 import ToolsAndLinks from "../../atomic/sections/type-of-business/food-truck-business/tools";
 import Conclusion from "../../atomic/sections/general/conclusion";
@@ -52,9 +52,7 @@ const FoodTruckBusiness = () => (
                 to the world of running your own business.
             </p>
             <ButtonsBox>
-                <Button theme="primary56" marginMD="0 24px 0 0" arrow>
-                    Start Now
-                </Button>
+                <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{url: "/", text: "Start Now"}} />
             </ButtonsBox>
 
             <RatingRow>
@@ -457,13 +455,13 @@ const FoodTruckBusiness = () => (
 
         <Regulations/>
 
-        <InsuranceBusiness/>
+        <InsuranceBusinessSection/>
 
         <Taxes/>
 
         <ToolsAndLinks/>
 
-        <Conclusion to="/" buttonTitle="Start your Daycare Business with us, today">
+        <Conclusion to="/" buttonTitle="Start your Foodtrack Business with us, today">
             <Heading size={3} style={{fontSize: "48px"}}>
                 Conclusion
             </Heading>
@@ -500,8 +498,11 @@ const ListBox = styled.div`
 `;
 
 const TabsWrapper = styled.section`
-    position: relative;
-    padding-top: 100px;
+  margin-top: 120px;
+  position: relative;
+  @media (min-width: 992px){
+      margin-top: 21px;
+  }
 `;
 
 

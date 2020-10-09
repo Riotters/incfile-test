@@ -1,9 +1,14 @@
 import React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
-import { Tabs, useTabState, usePanelState } from "@bumaga/tabs";
 import { motion } from "framer-motion";
+import parse from "html-react-parser";
+import { Tabs, useTabState, usePanelState } from "@bumaga/tabs";
+
+import ListWithDot from "../../states-llc/list-with-dot";
 import { color } from "../../atoms/styles/colors";
+import ArrowLink from "../../../components/arrow-link";
+import { Paragraph } from "../../atoms/typography/paragraph";
 import ArrowSVG from "../../../images/arrow-circle.inline.svg";
 import CurveSVG from "../../../images/orange-curve.inline.svg";
 import VisibilitySensor from "../../../components/VisibilitySensor";
@@ -12,7 +17,7 @@ const Wrapper = styled.div`
   display: flex;
   width: 100%;
   position: relative;
-  margin-top: ${(props) => (props.tab ? "" : "80")};
+  margin-top: ${(props) => (props.tab ? "" : "80px")};
 
   @media (min-width: 769px) {
     width: auto;
@@ -32,12 +37,12 @@ const Curve = styled.div`
     left: ${(props) => (props.curveLeft || props.curveLeftBottom ? "0" : "")};
     right: ${(props) => (props.curveRight || props.curveRightBottom ? "0" : "")};
     bottom: ${(props) => (props.curveRightBottom || props.curveLeftBottom ? "-25px" : "")};
-    transform: ${(props) => (props.curveRight ? "rotate(90deg)" : props.curveRightBottom ? "sacle(-1)" : props.curveLeftBottom ? "rotate(-90deg)" : "")};
+    transform: ${(props) => (props.curveRight ? "rotate(90deg)" : props.curveRightBottom ? "scale(-1)" : props.curveLeftBottom ? "rotate(-90deg)" : "")};
   }
 
   svg {
     path {
-      fill: ${props => props.curveColor ? props.curveColor : ""};
+      fill: ${(props) => (props.curveColor ? props.curveColor : "")};
     }
   }
 `;
@@ -217,15 +222,50 @@ const Accordion = ({ content, curve, curveRight, curveRightBottom, curveLeft, cu
                   </Tab>
                   <Panel>
                     <PanelWrapper>
-                      {typeof item.answer === "string" ? <p>{item.answer}</p> : null}
-                      {typeof item.answer === "object" ? <p>{item.answer.map(el => (el.url ? <Link to={el.url}>{` ${el.text} `}</Link> : el.text))}</p> : null}
-                      {/* <p>{item.answer}</p> */}
+                      {typeof item.answer === "string" ? <Paragraph bottomMargin="0" mixed>{parse(item.answer)}</Paragraph> : null}
+                      {typeof item.answer === "object" ? <Paragraph bottomMargin="0" mixed>{item.answer.map((el) => (el.url ? <Link to={el.url}>{` ${parse(el.text)} `}</Link> : el.text))}</Paragraph> : null}
+
                       {item.list && (
                         <ul>
                           {item.list.map((listitem) => (
-                            <li>{listitem}</li>
+                            <li>{parse(listitem)}</li>
                           ))}
                         </ul>
+                      )}
+
+                      {typeof item.text === "string" ? (
+                        <Paragraph topMargin="32" bottomMargin="0" mixed>
+                          {parse(item.text)}
+                        </Paragraph>
+                      ) : null}
+                      {typeof item.text === "object" ? (
+                        <Paragraph topMargin="32" bottomMargin="0" mixed>
+                          {item.text.map((el) => (el.url ? <Link to={el.url}>{` ${parse(el.text)} `}</Link> : el.text))}
+                        </Paragraph>
+                      ) : null}
+
+                      {item.answer2 &&
+                        item.answer2.map((e, i) => (
+                          <div>
+                            {e.type === "paragraph" && <Paragraph mixed={true}>{parse(e.content)}</Paragraph>}
+
+                            {e.type === "arrow-links" &&
+                              e.content.map((link) => (
+                                <ArrowLink url={link.url} style={link.style}>
+                                  {link.text}
+                                </ArrowLink>
+                              ))}
+
+                            {e.type === "list-dot-without-bg" && <ListWithDot color={e.color} content={e.content} />}
+
+                            {e.type === "button" && <Button content={e.content} theme={e.theme} arrow width="350px" margin="16px 0 0 0" marginMD="42px 0 42px 0" />}
+                          </div>
+                        ))}
+
+                      {item.arrowLink && (
+                        <ArrowLink url={item.arrowLink.url} style={item.arrowLink.styles}>
+                          {item.arrowLink.text}
+                        </ArrowLink>
                       )}
                     </PanelWrapper>
                   </Panel>

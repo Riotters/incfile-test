@@ -16,19 +16,20 @@ const TypeOfBusiness = () => (
         <Oval>
             <OvalSvg/>
         </Oval>
-        <Container>
-            <Service>
-                <ContentCenter contentWidth={770}>
-                    <TextCenterLayout headlineWidth={770} textWidth={770}
-                                      headline="What Type of Construction Business Should You Start?"
-                                      text="There are several different types of construction business that you can start. Here are some of the more popular options."/>
 
-                    <Paragraph big>
-                        There are dozens of other niches including using reclaimed materials, industrial construction,
-                        commercial construction, constructing vacation rentals and much more.
-                    </Paragraph>
-                </ContentCenter>
+        <Service>
+            <ContentCenter contentWidth={770}>
+                <TextCenterLayout headlineWidth={770} textWidth={770}
+                                  headline="What Type of Construction Business Should You Start?"
+                                  text="There are several different types of construction business that you can start. Here are some of the more popular options."/>
 
+                <Paragraph big>
+                    There are dozens of other niches including using reclaimed materials, industrial construction,
+                    commercial construction, constructing vacation rentals and much more.
+                </Paragraph>
+            </ContentCenter>
+
+            <Container>
                 <AdventagesBox>
                     {adventages.items.map(item => (
                         <Adventages
@@ -42,11 +43,13 @@ const TypeOfBusiness = () => (
                             circleBackgroundColor={color.blue1}
                             circleBackgroundShadow={shadow.blue1}
                             imageName={item.imageName}
+                            width="100%"
                         />
                     ))}
                 </AdventagesBox>
-            </Service>
-        </Container>
+            </Container>
+        </Service>
+
     </Wrapper>
 );
 
@@ -62,19 +65,26 @@ const Service = styled.div`
 `;
 
 const AdventagesBox = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  max-width: 970px;
-  margin: 140px auto 0;
-  position: relative;
- 
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 100%;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 20px;
+    
+    @media (min-width: 992px){
+        grid-template-columns: 470px 470px;
+    } 
 `;
 
 const CurveWrapper = styled.div`
     position: absolute;
     right: -24px;
     top: 0px;
+    
+    @media (max-width: 1200px){
+        display: none;
+    }
 `;
 
 const Oval = styled.div`

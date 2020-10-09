@@ -14,13 +14,13 @@ import OvalSvg from "../../../../images/ovals/bottom-left-transparent-orange.inl
 const ToolsAndLinks = () => (
     <Wrapper>
         <Oval>
-            <BabyBlueOval />
+            <BabyBlueOval/>
         </Oval>
         <Oval2>
-            <BabyBlueOval />
+            <BabyBlueOval/>
         </Oval2>
         <Oval3>
-            <OvalSvg />
+            <OvalSvg/>
         </Oval3>
         <Container>
             <TextCenterLayout headline="Groups and Forums for Your Construction Business"
@@ -29,7 +29,8 @@ const ToolsAndLinks = () => (
             <LinksContainer>
 
                 <LinkItem>
-                    <PathLink to="https://www.contractortalk.com/forum.php" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.contractortalk.com/forum.php" textColor={color.blue1}
+                              hoverColor={color.orange1} arrowColor={color.blue1}>
                         Contractor Talk forums
                     </PathLink>
                 </LinkItem>
@@ -38,13 +39,15 @@ const ToolsAndLinks = () => (
                     <CurveWrapper>
                         <Curve color={color.orange1}/>
                     </CurveWrapper>
-                    <PathLink to="https://forums.jlconline.com/forums/forum" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://forums.jlconline.com/forums/forum" textColor={color.blue1}
+                              hoverColor={color.orange1} arrowColor={color.blue1}>
                         Journal of Light Construction forum
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="https://www.facebook.com/AGCofA/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.facebook.com/AGCofA/" textColor={color.blue1} hoverColor={color.orange1}
+                              arrowColor={color.blue1}>
                         Facebook Associated General Constructors of America
                     </PathLink>
                 </LinkItem>
@@ -52,9 +55,8 @@ const ToolsAndLinks = () => (
             </LinksContainer>
         </Container>
 
-        <Container>
-            <UsefulTools toolsList={toolsList.tools} headlineText={toolsList.headlineText} description={toolsList.description} />
-        </Container>
+        <UsefulTools toolsList={toolsList.tools} headlineText={toolsList.headlineText}
+                     description={toolsList.description}/>
     </Wrapper>
 );
 
@@ -66,14 +68,21 @@ const Wrapper = styled.div`
 `;
 
 const LinksContainer = styled.div`
-    width: 100%;
-    margin: 100px auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 100%;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 30px;
+    margin-top: 76px;
+    margin-bottom 76px; 
     
-    @media (min-width: 1100px) {
-        width: 1000px;
+    @media (min-width: 490px){
+        grid-template-columns: 470px;
+    }
+    
+    @media (min-width: 992px){
+        grid-template-columns: 470px 470px;
     }
 `;
 
@@ -83,17 +92,7 @@ const LinkItem = styled.div`
     background-color: white;
     box-shadow: ${shadow.white1};
     width: 100%;
-    margin-bottom: 30px;
     position: relative;
-    
-    @media (min-width: 470px) {
-        width: 470px;
-    }
-    
-    @media (min-width: 1100px) {
-        margin-left: 15px;
-        margin-right: 15px;
-    }
 `;
 
 const CurveWrapper = styled.div`

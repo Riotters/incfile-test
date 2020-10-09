@@ -35,7 +35,7 @@ const icons = ["burden", "reduce-errors", "tax-advice", "adverse-consequences"];
 
 const BenefitsCards = ({ className, content }) => {
   return (
-    <Wrapper className={className} content={content}>
+    <Wrapper className={className}>
         {content.map((card, i) => (
             <Card content={card} color={colors[i]} image={icons[i]} />
         ))}

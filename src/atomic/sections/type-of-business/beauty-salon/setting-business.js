@@ -5,7 +5,7 @@ import TopImageBox from "../../../../components/top-image-box";
 import {color} from "../../../../components/styles/colors";
 import styled from "styled-components";
 import Curve from "../../../../images/green-curve.inline.svg";
-import GreenOval from "../../../../images/ovals/top-left-transparent-green2.inline.svg";
+import GreenOval from "../../../../images/ovals/top-left-transparent-green1.inline.svg";
 import ContentCenter from "../../../partials/content-center";
 import {Link} from "gatsby";
 
@@ -16,15 +16,16 @@ const SettingBusiness = () => (
             <GreenOval/>
         </Oval>
 
+        <ContentCenter contentWidth={770}>
+            <TextCenterLayout
+                headline="Set up Your Beauty Salon Business"
+                headlineWidth={770}
+                textWidth={770}
+                text="Once you've legally created your beauty salon business, you’ll need to get some other things in place."
+            />
+        </ContentCenter>
+
         <Container>
-            <ContentCenter>
-                <TextCenterLayout
-                    headline="Set up Your Beauty Salon Business"
-                    headlineWidth="700"
-                    textWidth="700"
-                    text="Once you've legally created your beauty salon business, you’ll need to get some other things in place."
-                />
-            </ContentCenter>
 
             <ImageBoxes>
                 <TopImageBox image="display-ads" color={color.purple3}>

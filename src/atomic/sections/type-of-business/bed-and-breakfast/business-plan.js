@@ -7,6 +7,7 @@ import Container from "../../../container";
 import OvalSVG from "../../../../images/ovals/top-right-transparent-green3.inline.svg";
 import TextCenterLayout from "../../../partials/heading-left";
 import {gradient} from "../../../atoms/styles/colors";
+import {color} from "../../../atoms/styles/colors";
 
 const BusinessOwnerResponsibilities = styled.section`
   position: relative;
@@ -80,13 +81,13 @@ const BusinessPlan = () => (
                     It will help you get your thinking in order and show your commitment to your boutique hotel.
 
                 </Paragraph>
-                <Paragraph big>
+                <Paragraph big style={{marginBottom: "48px"}}>
                     You will also need to look at financial projections for your bed and breakfast business. What are
                     your expected sales and revenues? What is your profitability? How much money will you keep in the
                     business to grow it? How much will you pay yourself and others?
                 </Paragraph>
 
-                <Paragraph big style={{fontWeight: "bold"}}>
+                <Paragraph big style={{fontFamily: "MarkPro", color: color.black}}>
                     If you can, try to plan your revenue for the next month, three months, year and two years
                 </Paragraph>
 

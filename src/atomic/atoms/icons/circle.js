@@ -5,6 +5,9 @@ import { shadow } from "../styles/shadows"
 
 const shadow1 = (circleColor) => {
   switch(circleColor) { 
+    case color.blue1: {
+      return shadow.blue1;
+    }
     case color.blue2: {
       return shadow.blue2;
     }
@@ -50,6 +53,7 @@ const Wrapper = styled.span`
     line-height: 24px;
     padding-bottom: ${props => props.padding ? `${props.padding}px` : ""};
     margin-bottom: ${props => props.bottomMargin ? `${props.bottomMargin}px` : ""};
+    margin-right: ${props => props.rightMargin ? `${props.rightMargin}px` : ""};
     border: 1px solid ${props => props.border ? props.border : "transparent"};
     pointer-events: none;
 
@@ -57,7 +61,7 @@ const Wrapper = styled.span`
       height: ${props => props.theme === "empty" ? 5 : (props.heightSM ? `${props.heightSM}px` : "")};
       width: ${props => props.widthSM ? `${props.widthSM}px` : ""};
       min-height: ${props => props.theme === "empty" ? 5 : (props.heightSM ? `${props.heightSM}px` : "")};
-    min-width: ${props => props.widthSM ? `${props.widthSM}px` : ""};
+      min-width: ${props => props.widthSM ? `${props.widthSM}px` : ""};
     }
 
 
@@ -83,7 +87,9 @@ const Circle = ({
     iconColor,
     border,
     bottomMargin,
+    rightMargin,
     padding,
+    ...rest
   }) => (
     <Wrapper
       className={className}
@@ -97,7 +103,9 @@ const Circle = ({
       iconColor={iconColor}
       border={border}
       bottomMargin={bottomMargin}
+      rightMargin={rightMargin}
       padding={padding}
+      {...rest}
     >
         {children}
     </Wrapper>

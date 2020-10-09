@@ -8,17 +8,19 @@ import {color} from "../../../../components/styles/colors";
 import {shadow} from "../../../../components/styles/shadows";
 import {adventages} from "../../../../static/type-of-business/moving-company";
 import Curve from "../../../atoms/shapes/curve";
-import OvalSvg from "../../../../images/oval-orange-4.inline.svg";
+import OvalSvg from "../../../../images/ovals/top-right-transparent-orange.inline.svg";
 
 const TypeOfMoving = () => (
     <Wrapper>
         <Oval>
             <OvalSvg/>
         </Oval>
+
+        <TextCenterLayout headlineWidth={770} textWidth={770} headline="What Type of Moving Business Should You Start?"
+                          text="There are several different types of moving business that you can start. Here are some of the more popular options:"/>
+
         <Container>
             <Service>
-                <TextCenterLayout headline="What Type of Moving Business Should You Start?"
-                                  text="There are several different types of moving business that you can start. Here are some of the more popular options:"/>
 
                 <AdventagesBox>
                     <CurveWrapper>
@@ -36,6 +38,7 @@ const TypeOfMoving = () => (
                             circleBackgroundColor={color.blue1}
                             circleBackgroundShadow={shadow.blue1}
                             imageName={item.imageName}
+                            width="100%"
                         />
                     ))}
                 </AdventagesBox>
@@ -56,13 +59,20 @@ const Service = styled.div`
 `;
 
 const AdventagesBox = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  max-width: 970px;
-  margin: 140px auto 0;
-  position: relative;
- 
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 100%;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 20px;
+    
+    @media (min-width: 490px){
+        grid-template-columns: 470px;
+    }
+    
+    @media (min-width: 992px){
+        grid-template-columns: 470px 470px;
+    }
 `;
 
 const CurveWrapper = styled.div`
@@ -75,6 +85,11 @@ const Oval = styled.div`
     position: absolute;
     right: 0;
     top: 300px;
+    width: 100%;
+    
+    @media (min-width: 570px){
+        width: 570px;
+    }
 `;
 
 export default TypeOfMoving;

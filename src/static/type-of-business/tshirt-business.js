@@ -207,6 +207,7 @@ export const FinancesAccordionContent = {
 export const HiringAccordionContent = {
     items: [
         {
+            count: 1,
             question: "Get an Employer Identification Number (EIN)",
             answer: [
                 {
@@ -219,26 +220,32 @@ export const HiringAccordionContent = {
             ]
         },
         {
+            count: 2,
             question: "Make Sure Your Employees Can Work in the U.S.",
             answer: `Your employees must be legally able to work here. Carry out background checks and ensure they have all necessary legal documentation.`
         },
         {
+            count: 3,
             question: "Report Employees as “New Hires”",
             answer: `In most cases you will need to report the hiring of employees to your state.`
         },
         {
+            count: 4,
             question: "Withhold Income and Payroll Taxes",
             answer: `You will need to calculate and keep back income tax so you can pay the appropriate bodies. You will also need to pay the employer portion of the payroll tax.`
         },
         {
+            count: 5,
             question: "Get worker's compensation insurance in place",
             answer: `As listed above, you will need to make sure you have proper workers’ compensation insurance to cover injuries, illness, medical costs and the like.`
         },
         {
+            count: 6,
             question: "Pay Employees on a Regular Basis",
             answer: `You will need to run payroll and compensate your employees on a regular frequency. Your state may mandate how often employees need to be paid.`
         },
         {
+            count: 7,
             question: "Learn About Legal Requirements and Responsibilities to Employees",
             answer: `You do have certain responsibilities and requirements for hiring employees. In addition to getting a proper employment contract in place with them, you have a duty to provide them with a safe working environment, proper training, regular pay and certain other criteria. OSHA covers your health and safety requirements, while the U.S. Department of Labor provides information on other responsibilities.`
         }

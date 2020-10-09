@@ -18,7 +18,7 @@ const Wrapper = styled.div`
     p {
         font-size: 16px; 
         line-height: 24px;
-        color: ${color.grey1};
+        color: ${color.black};
     }
 `
 
@@ -40,7 +40,9 @@ const TextBoxed = ({ className, children, isRed }) => (
                 <CheckSVG />
             )}
         </Box>
-        {children}
+        <div style={{paddingTop: "5px"}}>
+            {children}
+        </div>
     </Wrapper>
 )
 

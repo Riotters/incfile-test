@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
 import Top from "../../components/partials/sections/top";
-import Button from "../../components/button";
+import Button from "../../atomic/molecules/buttons/button";
 import RatingRow from "../../atomic/atoms/boxes/rating-row";
 import CartBlock from "../../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../../atomic/molecules/blocks/rating-block";
@@ -34,7 +34,7 @@ import BusinessStructure from "../../atomic/sections/type-of-business/travel-age
 import SettingBusiness from "../../atomic/sections/type-of-business/travel-agency/setting-business";
 import OrderNow from "../../atomic/sections/type-of-business/travel-agency/order-now";
 import Regulations from "../../atomic/sections/type-of-business/travel-agency/regulations";
-import InsuranceBusiness from "../../atomic/sections/type-of-business/travel-agency/insurance-business";
+import InsuranceBusinessSection from "../../atomic/sections/type-of-business/travel-agency/insurance-business";
 import UsefulTools from "../../atomic/partials/useful-tools";
 import Conclusion from "../../atomic/sections/general/conclusion";
 import {toolsList} from "../../static/type-of-business/travel-agency";
@@ -53,9 +53,7 @@ const TravelAgency = () => (
                 destinations and unique experiences mean we love packing
                 our bags and spending time away from work and home.</p>
             <ButtonsBox>
-                <Button theme="primary56" marginMD="0 24px 0 0" arrow>
-                    Start Now
-                </Button>
+                <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{url: "/", text: "Start Now"}} />
             </ButtonsBox>
 
             <RatingRow>
@@ -356,7 +354,7 @@ in the U.S. by 2020"/>
 
         <Regulations/>
 
-        <InsuranceBusiness/>
+        <InsuranceBusinessSection/>
 
         <Taxes/>
 
@@ -408,7 +406,11 @@ const ListBox = styled.div`
 `;
 
 const TabsWrapper = styled.div`
-    position: relative;
+  margin-top: 120px;
+  position: relative;
+  @media (min-width: 992px){
+      margin-top: 21px;
+  }
 `;
 
 const Oval = styled.div`

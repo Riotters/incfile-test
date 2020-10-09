@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
-import Button from "../../components/button";
+import Button from "../../atomic/molecules/buttons/button";
 import RatingRow from "../../atomic/atoms/boxes/rating-row";
 import CartBlock from "../../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../../atomic/molecules/blocks/rating-block";
@@ -27,7 +27,7 @@ import BusinessStructure from "../../atomic/sections/type-of-business/dog-walkin
 import SettingBusiness from "../../atomic/sections/type-of-business/dog-walking/setting-business";
 import OrderNow from "../../atomic/sections/type-of-business/dog-walking/order-now";
 import Regulations from "../../atomic/sections/type-of-business/dog-walking/regulations";
-import InsuranceBusiness from "../../atomic/sections/type-of-business/dog-walking/insurance-business";
+import InsuranceBusinessSection from "../../atomic/sections/type-of-business/dog-walking/insurance-business";
 import Taxes from "../../atomic/sections/type-of-business/dog-walking/taxes";
 import ToolsAndLinks from "../../atomic/sections/type-of-business/dog-walking/tools";
 import Conclusion from "../../atomic/sections/general/conclusion";
@@ -52,9 +52,8 @@ const DogWalking = () => (
                 are home to a canine companion.
             </p>
             <ButtonsBox>
-                <Button theme="primary56" marginMD="0 24px 0 0" arrow>
-                    Start Now
-                </Button>
+                <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{url: "/", text: "Start Now"}} />
+
             </ButtonsBox>
 
             <RatingRow>
@@ -423,13 +422,13 @@ const DogWalking = () => (
 
         <Regulations/>
 
-        <InsuranceBusiness/>
+        <InsuranceBusinessSection/>
 
         <Taxes/>
 
         <ToolsAndLinks/>
 
-        <Conclusion to="/" buttonTitle="Start your Daycare Business with us, today">
+        <Conclusion to="/" buttonTitle="Start your Dog Walking Business with us, today">
             <Heading size={3} style={{fontSize: "48px"}}>
                 Conclusion
             </Heading>
@@ -465,8 +464,11 @@ const ListBox = styled.div`
 `;
 
 const TabsWrapper = styled.div`
-    position: relative;
-    padding-top: 100px;
+    margin-top: 120px;
+  position: relative;
+  @media (min-width: 992px){
+      margin-top: 21px;
+  }
 `;
 
 const TabsOval = styled.div`

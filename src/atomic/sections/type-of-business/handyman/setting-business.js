@@ -19,15 +19,16 @@ const SettingBusiness = () => (
             <OvalSvg2/>
         </Oval2>
 
+        <ContentCenter contentWidth={770}>
+            <TextCenterLayout
+                headline="Setting up Your Handyman Business Operations"
+                headlineWidth={770}
+                textWidth={770}
+                text="Once you've legally created your handyman business, you’ll need to get some other things in place."
+            />
+        </ContentCenter>
+
         <Container>
-            <ContentCenter>
-                <TextCenterLayout
-                    headline="Setting up Your Handyman Business Operations"
-                    headlineWidth="700"
-                    textWidth="700"
-                    text="Once you've legally created your handyman business, you’ll need to get some other things in place."
-                />
-            </ContentCenter>
 
             <ImageBoxes>
                 <TopImageBox image="location" color={color.red3}>
@@ -122,13 +123,13 @@ const ImageBoxes = styled.div`
   grid-gap: 30px;
   padding-top: 112px;
   width: 100%;
-
+  max-width: 970px;
+  
   @media(min-width: 1024px) {
     grid-template-columns: 1fr 1fr;
   }
   
   @media (min-width: 1024px) {
-    width: 970px;
     margin: 0 auto;
   }
 `;

@@ -15,7 +15,8 @@ const TheArtOfBootstrapping = () => (
 
         <TextCenterLayout
             headline="The Art of Bootstrapping"
-            headlineWidth="700"
+            headlineWidth={770}
+            textWidth={770}
             text="If you’re going to bootstrap your business, you’ll need to learn the art of the hustle. Here are some tips for making your money go further, keeping costs down and generating that all-important revenue."
         />
 

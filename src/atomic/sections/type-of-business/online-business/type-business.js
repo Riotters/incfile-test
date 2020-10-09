@@ -4,8 +4,8 @@ import {gradient} from "../../../atoms/styles/colors";
 import Container from "../../../container";
 import TextCenterLayout from "../../../partials/heading-center";
 import Adventages from "../../../../components/adventages";
-import {color} from "../../../../components/styles/colors";
-import {shadow} from "../../../../components/styles/shadows";
+import {color} from "../../../atoms/styles/colors";
+import {shadow} from "../../../atoms/styles/shadows";
 import {typeBusiness} from "../../../../static/type-of-business/online-business";
 import Curve from "../../../atoms/shapes/curve";
 import OvalSvg from "../../../../images/ovals/top-right-transparent-blue.inline.svg";
@@ -25,10 +25,12 @@ const TypeBusiness = () => (
         <Oval3>
             <OvalSvg3/>
         </Oval3>
+
+        <TextCenterLayout headlineWidth={770} textWidth={770} headline="What Type of Online Business Should You Start?"
+                          text="When it comes to starting an online business, you have plenty of choices. Here are the main areas where online businesses can be successful:"/>
+
         <Container>
             <Service>
-                <TextCenterLayout headline="What Type of Online Business Should You Start?"
-                                  text="When it comes to starting an online business, you have plenty of choices. Here are the main areas where online businesses can be successful:"/>
 
                 <AdventagesBox>
                     <CurveWrapper>
@@ -46,6 +48,7 @@ const TypeBusiness = () => (
                             circleBackgroundColor={color.blue1}
                             circleBackgroundShadow={shadow.blue1}
                             imageName={item.imageName}
+                            width="100%"
                         />
                     ))}
                     <AdventagesWithLongText
@@ -101,13 +104,20 @@ const Service = styled.div`
 `;
 
 const AdventagesBox = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  max-width: 970px;
-  margin: 140px auto 0;
-  position: relative;
- 
+  display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 100%;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 20px;
+    
+    @media (min-width: 490px){
+        grid-template-columns: 470px;
+    }
+    
+    @media (min-width: 992px){
+        grid-template-columns: 470px 470px;
+    }
 `;
 
 const CurveWrapper = styled.div`

@@ -1,11 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+import parse from "html-react-parser";
 import Colorbox from "../../atoms/boxes/color-box";
 import { Heading } from "../../atoms/typography/heading";
 import { Paragraph } from "../../atoms/typography/paragraph";
 import { color } from "../../atoms/styles/colors";
 import Curve from "../../atoms/icons/curve";
 import CurveSVG from "../../../images/curves/top-left-bottom-right.inline.svg";
+import { Link } from "gatsby";
 
 const dotColor = (circleColor) => {
   switch (circleColor) {
@@ -65,28 +67,31 @@ const Wrapper = styled.div`
         &:not(:last-child) {
           margin-bottom: 16px;
         }
+
+        a {
+          font-size: inherit;
+        }
       }
     }
   }
 `;
 
-const IconTextColorBox = ({ className, color, content, bottomMargin, rounded, curve }) => {
+const IconTextColorBox = ({ className, color, content, bottomMargin, rounded, curve, curveColor, ...rest }) => {
   return (
-    <Wrapper className={className} rounded={rounded} bottomMargin={bottomMargin} color={color}>
+    <Wrapper className={className} rounded={rounded} bottomMargin={bottomMargin} color={color} {...rest}>
       {curve && (
-        <Curve top="-15" right="-15" color={dotColor(color)}>
+        <Curve top="-15" right="-15" color={curveColor ? curveColor : dotColor(color)}>
           <CurveSVG />
         </Curve>
       )}
       <Colorbox className="box" color={color}>
-        <Heading size="4" bottomMargin="24">
-          {content.header}
-        </Heading>
-        <ul>
-          {content.list.map((item) => (
-            <li>{item}</li>
-          ))}
-        </ul>
+        {content.header && (
+          <Heading size="4" bottomMargin="24">
+            {parse(content.header)}
+          </Heading>
+        )}
+
+        <ul>{content.list.map((item) => (typeof item === "string" ? <li>{parse(item)}</li> : <li>{item.map((el) => (el.url ? <Link to={el.url}>{` ${el.text} `}</Link> : el.text))}</li>))}</ul>
       </Colorbox>
     </Wrapper>
   );

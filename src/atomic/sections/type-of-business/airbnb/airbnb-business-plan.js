@@ -38,8 +38,8 @@ const Oval = styled.div`
   transform: rotate(180deg);
   width: 100%;
   
-  @media (min-width: 720px){
-    width: 720px
+  @media (min-width: 420px){
+    width: 420px
   }
 `
 
@@ -48,6 +48,7 @@ const OvalCenter = styled.div`
   right: 0;
   top: 38%;
   width: 100%;
+  transform: scaleX(-1);
   
   @media (min-width: 720px){
     width: 720px;
@@ -74,7 +75,7 @@ const AirbnbBusinessPlan = () => (
                     through Airbnb, and they’re paying, you don’t need a business plan, right? Wrong.
                 </Paragraph>
                 <Colorbox className="box" theme="icon" Icon={DominoIcon} color={color.yellow3} curve
-                          curveColor={color.yellow1}>
+                          curveColor={color.yellow1} maxWidth={670}>
                     <Heading size={4}>Why You Need a Business Plan?</Heading>
                     <Paragraph bottomPadding={0} bottomMargin={0}>
                         You need to define how you’re going to run your Airbnb business, market your property,

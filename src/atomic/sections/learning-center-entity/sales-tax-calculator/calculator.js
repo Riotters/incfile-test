@@ -80,6 +80,7 @@ const ImageBoxes = styled.div`
   .dropdown {
       max-width: 304px;
       margin: 0 auto;
+  }
 `;
 
 const dropdownOptions = states.state.map((state) => state.name);

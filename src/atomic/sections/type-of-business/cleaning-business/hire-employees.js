@@ -31,9 +31,7 @@ const HireEmployees = () => (
             <AccordionWithCounting content={AccordionCounting}/>
         </ContentCenter>
 
-        <Container>
-            <Links />
-        </Container>
+        <Links />
     </BlueContainer>
 );
 

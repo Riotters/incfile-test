@@ -34,17 +34,19 @@ const OrderNow = ({layout, columns}) => (
                     </h2>
                     <p>A Clear and Comprehensive Guide to Starting Your Business the Right Way</p>
                     <ButtonsBox>
-                        <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{url: "/learning-center-entity/business-checklist/", text: "Business Checklist"}}/>
+                        <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{
+                            url: "/learning-center-entity/business-checklist/",
+                            text: "Business Checklist"
+                        }}/>
 
                     </ButtonsBox>
                 </LeftImageRightContent>
 
             </Container>
         </OrderNowWrapper>
+
         <TabScrollableWrapper>
-            <Container>
-                <TabScrollable/>
-            </Container>
+            <TabScrollable/>
         </TabScrollableWrapper>
     </>
 );
@@ -95,6 +97,11 @@ const CurveWrapper = styled.div`
     position: absolute;
     left: -85px;
     top: -85px;
+    
+    @media (max-width: 992px){
+        display: none;
+    }
 `;
+
 
 export default OrderNow;

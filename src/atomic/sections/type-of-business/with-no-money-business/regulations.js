@@ -17,7 +17,7 @@ const Regulations = () => (
                 be aware of. You will need to explore local, state and federal licenses and permits, and <Link to="/">we can also
                 help out with your licensing needs</Link>.
             </Paragraph>
-            <Paragraph big>
+            <Paragraph big mixed>
                 As a rule of thumb, we recommend keeping back around a third of your earnings
                 to pay your taxes. We can <Link to="/">prepare and file your tax returns for you</Link>.
             </Paragraph>

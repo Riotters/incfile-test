@@ -18,10 +18,12 @@ const TypeBusiness = () => (
         <Oval2>
             <OvalSvg/>
         </Oval2>
+
+        <TextCenterLayout headlineWidth={770} textWidth={770} headline="Becoming an Event Planner and the Type of Planning Business You Should Start"
+                          text="You have plenty of choices for starting a party or event planning business, and the best choice depends on your skills, network and existing competition in your local area. We definitely recommend focusing on a specific niche rather than trying to become a general event planner. When you specialize in one area, it’s easier to focus your marketing, networking, administration and other skills on delivering to the needs of that niche."/>
+
         <Container>
             <Service>
-                <TextCenterLayout headline="Becoming an Event Planner and the Type of Planning Business You Should Start"
-                                  text="You have plenty of choices for starting a party or event planning business, and the best choice depends on your skills, network and existing competition in your local area. We definitely recommend focusing on a specific niche rather than trying to become a general event planner. When you specialize in one area, it’s easier to focus your marketing, networking, administration and other skills on delivering to the needs of that niche."/>
 
                 <AdventagesBox>
                     <CurveWrapper>
@@ -39,6 +41,7 @@ const TypeBusiness = () => (
                             circleBackgroundColor={color.blue1}
                             circleBackgroundShadow={shadow.blue1}
                             imageName={item.imageName}
+                            width="100%"
                         />
                     ))}
                 </AdventagesBox>
@@ -52,6 +55,7 @@ const Wrapper = styled.div`
     background-image: ${gradient.blue3}; 
     padding-top: 100px;
     position: relative;
+    overflow: hidden;
 `;
 
 const Service = styled.div`
@@ -59,19 +63,30 @@ const Service = styled.div`
 `;
 
 const AdventagesBox = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  max-width: 970px;
-  margin: 140px auto 0;
-  position: relative;
- 
+  display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 100%;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 20px;
+    
+    @media (min-width: 490px){
+        grid-template-columns: 470px;
+    }
+    
+    @media (min-width: 992px){
+        grid-template-columns: 470px 470px;
+    }
 `;
 
 const CurveWrapper = styled.div`
     position: absolute;
     right: -24px;
     top: 0px;
+    
+    @media (max-width: 1200px){
+        display: none;
+    }
 `;
 
 const Oval = styled.div`

@@ -7,17 +7,18 @@ import OvalLeftSvg from "../../../../images/ovals/top-left-transparent-orange2.i
 import OvalRightSvg from "../../../../images/ovals/top-left-transparent-orange.inline.svg";
 import Curve from "../../../../images/curve-orange.inline.svg";
 import TabScrollable from "./TabScrollable";
+import {color} from "../../../atoms/styles/colors";
 
 const OrderNow = ({layout, columns}) => (
     <>
         <OrderNowWrapper>
 
             <Oval>
-                <OvalLeftSvg />
+                <OvalLeftSvg/>
             </Oval>
 
             <OvalRight>
-                <OvalRightSvg />
+                <OvalRightSvg/>
             </OvalRight>
 
             <Container>
@@ -26,22 +27,23 @@ const OrderNow = ({layout, columns}) => (
 
                     <h2 style={{position: "relative"}}>
                         <CurveWrapper>
-                            <Curve />
+                            <Curve/>
                         </CurveWrapper>
 
                         The Complete "Start Your Business" Checklist
                     </h2>
                     <p>A Clear and Comprehensive Guide to Starting Your Business the Right Way</p>
                     <ButtonsBox>
-                        <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{url: "/learning-center-entity/business-checklist/", text: "Business Checklist"}}/>
+                        <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{
+                            url: "/learning-center-entity/business-checklist/",
+                            text: "Business Checklist"
+                        }}/>
                     </ButtonsBox>
                 </LeftImageRightContent>
             </Container>
         </OrderNowWrapper>
         <TabScrollableWrapper>
-            <Container>
-                <TabScrollable/>
-            </Container>
+            <TabScrollable/>
         </TabScrollableWrapper>
     </>
 );
@@ -51,9 +53,15 @@ background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 96%, #fef6ed);
 `;
 
 const OrderNowWrapper = styled.section`
-    background-color: #fef6ed;
+  background-color: ${color.orange3};
   position: relative;
-  padding: 64px 0;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  
+  @media (min-width: 992px){
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 `;
 
 const ButtonsBox = styled.div`
@@ -92,6 +100,10 @@ const CurveWrapper = styled.div`
     position: absolute;
     left: -85px;
     top: -85px;
+    
+    @media (max-width: 1200px){
+        display: none;
+    }
 `;
 
 export default OrderNow;

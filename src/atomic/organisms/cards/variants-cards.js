@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   width: 100%;
   position: relative;
   margin-top: 80px;
-  margin-bottom: 48px;
+  margin-bottom: ${props => props.bottomMargin ? `${props.bottomMargin}px` : "48px"};
 
   @media (min-width: 769px) {
     grid-template-columns: 1fr 1fr 1fr;
@@ -30,13 +30,14 @@ const Wrapper = styled.div`
   }
 `;
 
-const colors = [color.white, color.blue3, color.blue1];
+const colors = [color.white, "#f8faff", "#f2f6ff"];
+const images = ["paper-plane-7719", "plane-7291", "rocket-7993"];
 
-const PricingCards = ({ className, content }) => {
+const PricingCards = ({ className, content, bottomMargin }) => {
   return (
-    <Wrapper className={className} content={content}>
+    <Wrapper className={className} bottomMargin={bottomMargin}>
       {content.map((card, i) => (
-        <Card content={card} border={i === 0 ? true : false} color={colors[i]} />
+        <Card content={card} border={i === 0 ? true : false} color={colors[i]} image={images[i]} />
       ))}
     </Wrapper>
   );

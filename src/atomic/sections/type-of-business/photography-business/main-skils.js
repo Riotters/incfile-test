@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "../../../container";
-import TextCenterLayout from "../../../../components/partials/blocks/heading-center";
+import TextCenterLayout from "../../../partials/heading-center";
 import TopImageBox from "../../../../components/top-image-box";
 import {color} from "../../../../components/styles/colors";
 import styled from "styled-components";
@@ -13,12 +13,15 @@ const MainSkils = () => (
             <OvalSvg />
         </Oval>
 
+        <TextCenterLayout
+            headline="What Are the Main Skills, Expertise and Experience to be a Successful Photography Entrepreneur?"
+            headlineWidth={770}
+            textWidth={770}
+            text="If you want to be a successful photographer, the main skills and experience you will need are:"
+        />
+
         <Container>
-            <TextCenterLayout
-                headline="What Are the Main Skills, Expertise and Experience to be a Successful Photography Entrepreneur?"
-                headlineWidth="700"
-                text="If you want to be a successful photographer, the main skills and experience you will need are:"
-            />
+
             <ImageBoxes>
                 <TopImageBox image="display-ads" color={color.purple3}>
                     <h4>Marketing skills</h4>

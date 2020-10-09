@@ -1,8 +1,8 @@
 import React from "react";
 import Layout from "../../components/layout";
-import Top from "../../components/partials/sections/top";
+import Top from "../../atomic/partials/top";
 import SEO from "../../components/seo";
-import Button from "../../components/button";
+import Button from "../../atomic/molecules/buttons/button";
 import RatingRow from "../../atomic/atoms/boxes/rating-row";
 import CartBlock from "../../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../../atomic/molecules/blocks/rating-block";
@@ -27,9 +27,7 @@ const SocialMediaInfluencer = () => (
             <p>Influencer marketing is becoming an increasingly popular way
                 to promote companies, brands, products and services.</p>
             <ButtonsBox>
-                <Button theme="primary56" marginMD="0 24px 0 0" arrow>
-                    Start Now
-                </Button>
+                <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{url: "/", text: "Start Now"}}/>
             </ButtonsBox>
 
             <RatingRow>

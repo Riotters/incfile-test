@@ -1,11 +1,11 @@
 import React from "react";
 import Container from "../../../container";
-import TextCenterLayout from "../../../../components/partials/blocks/heading-center";
+import TextCenterLayout from "../../../partials/heading-center";
 import TopImageBox from "../../../../components/top-image-box";
-import {color} from "../../../../components/styles/colors";
+import {color} from "../../../atoms/styles/colors";
 import styled from "styled-components";
 import Curve from "../../../../images/green-curve.inline.svg";
-import GreenOval from "../../../../images/ovals/top-left-transparent-green2.inline.svg";
+import GreenOval from "../../../../images/ovals/top-left-transparent-green1.inline.svg";
 
 const SettingBusiness = () => (
     <GreenContainer>
@@ -14,12 +14,15 @@ const SettingBusiness = () => (
             <GreenOval/>
         </Oval>
 
+        <TextCenterLayout
+            headline="Setting Up Your Airbnb Business Operations"
+            headlineWidth={770}
+            textWidth={770}
+            text="Once you've legally created your bar or club business you’ll need to get some other things in place."
+        />
+
         <Container>
-            <TextCenterLayout
-                headline="Setting Up Your Airbnb Business Operations"
-                headlineWidth="700"
-                text="Once you've legally created your bar or club business you’ll need to get some other things in place."
-            />
+
             <ImageBoxes>
                 <TopImageBox image="state-filling-fees" color={color.yellow3}>
                     <h4>Finance</h4>
@@ -57,7 +60,7 @@ const SettingBusiness = () => (
                     </p>
 
                     <GreenCurve>
-                        <Curve/>
+                        <Curve />
                     </GreenCurve>
                 </TopImageBox>
 
@@ -88,13 +91,13 @@ const ImageBoxes = styled.div`
   grid-gap: 30px;
   padding-top: 112px;
   width: 100%;
-
+  max-width: 970px;
+  
   @media(min-width: 1024px) {
     grid-template-columns: 1fr 1fr;
   }
   
-  @media (min-width: 1024px) {
-    width: 970px;
+  @media (min-width: 970px) {
     margin: 0 auto;
   }
 `;
@@ -107,9 +110,15 @@ const GreenCurve = styled.div`
     
     display: none;
   
-  @media (min-width: 1200px){
-    display: block;
-  }
+    @media (min-width: 1200px){
+        display: block;
+    }
+    
+    svg{
+        path{
+            fill: ${color.green2};
+        }
+    }
 `;
 
 const Oval = styled.div`

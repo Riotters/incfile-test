@@ -107,7 +107,7 @@ const Wrapper = styled.div`
 
   @media (min-width: 992px) {
     flex-direction: row;
-    height: 100vh;
+    height: ${(props) => (props.heightSM ? props.heightSM : "100vh")};
     max-height: 777px;
     padding-top: 0;
   }
@@ -177,7 +177,7 @@ const TextContainer = styled.div`
   }
 
   @media (min-width: 1200px) {
-    padding-top: 150px;
+    padding-top: ${(props) => (props.contentPaddingTop ? props.contentPaddingTop : "150")}px;
   }
 
   h1 {
@@ -208,7 +208,7 @@ const TextContainer = styled.div`
 
 const ImageContainer = styled.div`
   display: flex;
-  max-width: 950px;
+  max-width: ${props => props.imageWidth ? `${props.imageWidth}px` : "950px"};
   width: 100%;
   top: 50%;
   right: 55%;
@@ -217,6 +217,10 @@ const ImageContainer = styled.div`
     position: absolute;
     width: 55%;
     transform: translate(100%, -50%);
+
+    ${props => (props.imagePositionRight &&
+        `right: ${ props.imagePositionRight };`
+    )}
   }
 
   .gatsby-image-wrapper {
@@ -228,7 +232,7 @@ const ImageContainer = styled.div`
   }
 `;
 
-const Top = ({ children, imageName, imageAlt, contentWidth, headlineWidth, textWidth, ovalColor, ...rest }) => (
+const Top = ({ children, imageName, imageAlt, imageWidth, imagePositionRight, contentWidth, headlineWidth, textWidth, ovalColor, ...rest }) => (
   <Wrapper {...rest}>
     <VisibilitySensor partialVisibility once>
       {({ isVisible }) => (
@@ -237,14 +241,14 @@ const Top = ({ children, imageName, imageAlt, contentWidth, headlineWidth, textW
         </Oval>
       )}
     </VisibilitySensor>
-    <ImageContainer>
+    <ImageContainer imageWidth={imageWidth} imagePositionRight={imagePositionRight}>
       <Image filename={imageName} alt={imageAlt} />
     </ImageContainer>
     <Container>
       <Content>
         <VisibilitySensor partialVisibility once>
           {({ isVisible }) => (
-            <TextContainer className={isVisible ? "slideRight enter" : "slideRight"} contentWidth={contentWidth} headlineWidth={headlineWidth} textWidth={textWidth}>
+            <TextContainer className={isVisible ? "slideRight enter" : "slideRight"} contentWidth={contentWidth} headlineWidth={headlineWidth} textWidth={textWidth} {...rest}>
               {children}
             </TextContainer>
           )}
