@@ -2,10 +2,13 @@ import React, {useState} from "react";
 import styled from "styled-components";
 import MinusIcon from "./minus-icon";
 import Badge from "./badge";
+import {Paragraph} from "../../atomic/atoms/typography/paragraph";
+import {Link} from "@reach/router";
 
 const Table = styled.div`
     display: flex;
     flex-direction: column;
+    ${props => props.width ? ("width: " + props.width + ";") : ""}
 `;
 
 const TableRow = styled.div`
@@ -75,7 +78,14 @@ const StatesListCol = styled.div`
     padding-left: 80px;
 `;
 
-const CompareTable = ({headers, entries}) => {
+const StyledP = styled.p`
+    text-align: left;
+    margin-top: ${props => props.marginTop ?? "32px"};
+    margin-bottom: ${props => props.marginBottom ?? "100px"};
+    align-self: flex-start;
+`;
+
+const CompareTable = ({headers, entries, width}) => {
     let [statesListOpen, setStateListOpen] = useState(false);
     let [statesList, setStateList] = useState(entries);
     let statesInColumn = Math.ceil(statesList.length / 4);
@@ -89,7 +99,7 @@ const CompareTable = ({headers, entries}) => {
     };
     return (
         <>
-            <Table>
+            <Table width={width}>
                 <TableRow>
                     {headers.map((header, index) => (
                         <>
@@ -131,11 +141,11 @@ const CompareTable = ({headers, entries}) => {
                 </StatesList>}
                 <TableRow>
                     <TableCell>
-                        <Button onClick={() => setStateListOpen(!statesListOpen)}>{statesListOpen ? 'Close the states list' : 'Close the states list'}</Button>
+                        <Button onClick={() => setStateListOpen(!statesListOpen)}>{statesListOpen ? 'Close the states list' : 'Open the states list'}</Button>
                     </TableCell>
                 </TableRow>
             </Table>
-            <p>See full list of filing times for every state.</p>
+            <StyledP>See {<Link to="/">full list</Link>} of filing times for every state.</StyledP>
         </>
     );
 };

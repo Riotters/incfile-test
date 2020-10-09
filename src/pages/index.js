@@ -99,6 +99,7 @@ const IndexPage = () => (
         <Link to="/manage-your-company/filling-business-taxes">Filling Business Taxes</Link>
         <Link to="/manage-your-company/fictitious-business">Fictitious Business</Link>
         <Link to="/manage-your-company/home-page-v3">Home Page v3</Link>
+        <Link to="/manage-your-company/compare-state-filling-time">Compare State Filling Time</Link>
 
         <h2>Review Entity Types</h2>
         <Link to="/start-your-company">Start Your Company</Link>

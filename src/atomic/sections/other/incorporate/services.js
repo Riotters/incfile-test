@@ -14,6 +14,7 @@ import OvalSVG2 from "../../../../images/ovals/top-left-transparent-blue3.inline
 import Curve from "../../../../atomic/atoms/icons/curve";
 import CurveSVG from "../../../../images/curves/top-right-babyblue1.inline.svg";
 import Oval from "../../../../atomic/atoms/icons/oval";
+import { Tabs } from "@bumaga/tabs";
 
 const Wrapper = styled.div`
   display: flex;
@@ -101,9 +102,11 @@ const ServicesSection = ({ className, content, settings, variants }) => {
                 <BenefitsSection content={content.benefits} />
                 <Separator bottomMargin={24} />
 
-                { content.items.map((service) => (
-                    <SingleService settings={settings} service={service} style={service.style} />)
-                )}
+                <Tabs>
+                    { content.items.map((service) => (
+                        <SingleService settings={settings} service={service} style={service.style} />)
+                    )}
+                </Tabs>
 
                 <div style={{position: "relative"}}>
                     <Curve top="90" left="-35" color={color.purple1} className="curve-left">
