@@ -34,12 +34,11 @@ const Oval = styled.div`
     position: absolute; 
     top: 0;
     right: 0;
-    width: 420px;
-    display: none;
+    width: 100%;
     transform: rotate(-180deg);
     
-    @media (min-width: 1200px){
-       display: block;
+    @media (min-width: 420px){
+       width: 420px;
     }
 `;
 

@@ -2,7 +2,7 @@ import React from "react";
 import {Heading} from "../../../atoms/typography/heading";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import Container from "../../../container";
-import OvalSvg from "../../../../images/ovals/bottom-right-transparent-green3.inline.svg";
+import OvalSvg from "../../../../images/ovals/bottom-left-transparent-orange.inline.svg";
 import styled from "styled-components";
 import {color} from "../../../atoms/styles/colors";
 
@@ -15,13 +15,13 @@ const LackOfMoney = () => (
             <Heading size={4} style={{fontSize: "40px"}}>
                 Rules, Regulations and Taxes for Your Unique Business
             </Heading>
-            <Paragraph big>
+            <Paragraph big style={{marginBottom: "48px"}}>
                 Starting a business is one of the most powerful things you can do. It’s an opportunity to create unique
                 products and services, bring your ideas to life and create something truly valuable for your customers,
                 employees, suppliers and peers.
             </Paragraph>
 
-            <Paragraph big style={{fontWeight: "bold"}}>
+            <Paragraph big style={{fontWeight: "bold", color: color.black, marginBottom: "24px"}}>
                 A lack of money doesn’t stop you doing any of those things.
             </Paragraph>
             <Paragraph big>
@@ -46,12 +46,12 @@ const Wrapper = styled.div`
 
 const Oval = styled.div`
     position: absolute; 
-    top: 139px;
+    bottom: 53px;
     left: 0;
-    width: 420px;
+    width: 100%;
     
-    svg {
-        transform: scaleX(-1);
+    @media (min-width: 420px) {
+        width: 420px;
     }
 `;
 export default LackOfMoney;

@@ -8,7 +8,8 @@ import {color} from "../../../../components/styles/colors";
 import {shadow} from "../../../../components/styles/shadows";
 import {adventages} from "../../../../static/type-of-business/catering-business";
 import Curve from "../../../atoms/shapes/curve";
-import OvalSvg from "../../../../images/oval-orange-4.inline.svg";
+import OvalSvg from "../../../../images/ovals/top-right-transparent-blue.inline.svg";
+import OvalSvg2 from "../../../../images/ovals/bottom-left-transparent-blue3.inline.svg";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import ContentCenter from "../../../partials/content-center";
 import {Heading} from "../../../atoms/typography/heading";
@@ -18,10 +19,14 @@ const TypeOfBusiness = () => (
         <Oval>
             <OvalSvg/>
         </Oval>
+        <Oval2>
+            <OvalSvg2/>
+        </Oval2>
+        <TextCenterLayout headlineWidth={770} textWidth={770} headline="Different Types of Catering Businesses"
+                          text="There are several different ways to set up and run a catering business. These include:"/>
+
         <Container>
             <Service>
-                <TextCenterLayout headline="Different Types of Catering Businesses"
-                                  text="There are several different ways to set up and run a catering business. These include:"/>
 
                 <AdventagesBox>
                     <CurveWrapper>
@@ -68,7 +73,7 @@ const TypeOfBusiness = () => (
 
 const Wrapper = styled.div`
     background: rgba(255,255,255,1);
-    background-image: ${gradient.orange3}; 
+    background-image: ${gradient.blue3}; 
     padding-top: 100px;
     position: relative;
 `;
@@ -82,7 +87,7 @@ const AdventagesBox = styled.div`
   flex-wrap: wrap;
   width: 100%;
   max-width: 970px;
-  margin: 140px auto 0;
+  margin: 0 auto 140px;
   position: relative;
  
 `;
@@ -91,12 +96,33 @@ const CurveWrapper = styled.div`
     position: absolute;
     right: -24px;
     top: 0px;
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
 `;
 
 const Oval = styled.div`
     position: absolute;
     right: 0;
-    top: 300px;
+    top: 287px;
+    width: 100%;
+    
+    @media (min-width: 720px){
+        width: 720px;
+    }
+`;
+
+const Oval2 = styled.div`
+    position: absolute;
+    left: 0;
+    bottom: 600px;
+    width: 100%;
+    
+    @media (min-width: 420px){
+        width: 420px;
+    }
 `;
 
 export default TypeOfBusiness;

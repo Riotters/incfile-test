@@ -21,7 +21,6 @@ import Colorbox from "../../components/color-box";
 import {color} from "../../atomic/atoms/styles/colors";
 import CkeckText from "../../components/static-check/text-only";
 import BlueBoxWithAbsoluteText from "../../atomic/molecules/text-blocks/blue-box-with-absolute-text";
-import CircleWithText from "../../atomic/molecules/blocks/circle-with-text-block";
 import Adventages from "../../components/adventages";
 import TextBoxed from "../../atomic/molecules/static-check/circle-checkmark-text-boxed";
 import TypeOfBusiness from "../../atomic/sections/type-of-business/construction-company/type-of-business";
@@ -33,11 +32,10 @@ import OrderNow from "../../atomic/sections/type-of-business/construction-compan
 import Regulations from "../../atomic/sections/type-of-business/construction-company/regulations";
 import InsuranceBusiness from "../../atomic/sections/type-of-business/construction-company/insurance-business";
 import Taxes from "../../atomic/sections/type-of-business/construction-company/taxes";
-import UsefulTools from "../../atomic/partials/useful-tools";
-import {toolsList} from "../../static/type-of-business/travel-agency";
 import Conclusion from "../../atomic/sections/general/conclusion";
 import styled from "styled-components";
 import ToolsAndLinks from "../../atomic/sections/type-of-business/construction-company/tools";
+import OvalSvg from "../../images/ovals/bottom-left-transparent-orange.inline.svg";
 
 const ConstructionCompany = () => (
     <Layout>
@@ -60,275 +58,288 @@ const ConstructionCompany = () => (
             </RatingRow>
         </Top>
 
-        <TabsSection>
-            <TabHeading>
-                <TabTitle title="Construction Company" SvgIcon={ConstructionIcon}/>
-                <TabTitle title="Why this industry?" SvgIcon={LightIcon}/>
-                <TabTitle title="Is This Business For You?" SvgIcon={CalcIcon}/>
-            </TabHeading>
+        <TabsWrapper>
+            <Oval>
+                <OvalSvg/>
+            </Oval>
+            <TabsSection>
+                <TabHeading>
+                    <TabTitle title="Construction Company" SvgIcon={ConstructionIcon}/>
+                    <TabTitle title="Why this industry?" SvgIcon={LightIcon}/>
+                    <TabTitle title="Is This Business For You?" SvgIcon={CalcIcon}/>
+                </TabHeading>
 
-            <CollapseWrapper>
-                <PanelWrapper>
-                    <Paragraph big style={{marginBottom: "40px"}}>
-                        This means there will always be a demand for good builders who can turn an architectural plan
-                        into a beautiful structure. If you have the trade skills and the expertise, starting a
-                        construction business could be a great way
-                        to build a solid future.
-                    </Paragraph>
-
-                    <Heading size={3}>
-                        There’s plenty of room for specialty construction businesses
-                        too, so finding the right building niche will help you get a reputation for specific expertise.
-                    </Heading>
-
-                    <Paragraph big style={{marginBottom: "40px"}}>
-                        Since construction businesses also tend to be local, if you find an area where there’s a large
-                        demand for property, that could give you
-                        a significant boost.
-                    </Paragraph>
-
-                    <Colorbox className="box" theme="icon" Icon={MegafonIcon} color={color.green3} curve
-                              curveColor={color.blue1}>
-                        <Heading size={4}>We want to help you get your construction business off the ground.</Heading>
-
-                        <Paragraph bottomMargin={0}>
-                            Since 2004, we’ve helped over 100,000 people to become entrepreneurs, starting exciting
-                            businesses and bringing their ideas
-                            to life. We’ll give you the support, guidance and advice you need
-                            to create a business and make it into a success.
+                <CollapseWrapper>
+                    <PanelWrapper>
+                        <Paragraph big style={{marginBottom: "40px"}}>
+                            This means there will always be a demand for good builders who can turn an architectural
+                            plan
+                            into a beautiful structure. If you have the trade skills and the expertise, starting a
+                            construction business could be a great way
+                            to build a solid future.
                         </Paragraph>
 
-                    </Colorbox>
+                        <Heading size={3}>
+                            There’s plenty of room for specialty construction businesses
+                            too, so finding the right building niche will help you get a reputation for specific
+                            expertise.
+                        </Heading>
 
-                    <Heading size={3} style={{fontSize: "20px", marginTop: "48px"}}>
-                        From validating your business and doing the research to filing your paperwork and running your business, this guide will help you out.
-                    </Heading>
+                        <Paragraph big style={{marginBottom: "40px"}}>
+                            Since construction businesses also tend to be local, if you find an area where there’s a
+                            large
+                            demand for property, that could give you
+                            a significant boost.
+                        </Paragraph>
 
-                    <Paragraph big style={{marginBottom: "40px"}}>
-                        We’ll talk you through the main things you need to do to get your construction business off of the ground.
-                    </Paragraph>
+                        <Colorbox className="box" theme="icon" Icon={MegafonIcon} color={color.green3} curve
+                                  curveColor={color.blue1}>
+                            <Heading size={4}>We want to help you get your construction business off the
+                                ground.</Heading>
 
-                    <Heading size={3} style={{fontSize: "20px"}}>
-                        Read on for some insight into creating your own construction business and becoming an entrepreneur. In this guide we will cover:
-                    </Heading>
+                            <Paragraph bottomMargin={0}>
+                                Since 2004, we’ve helped over 100,000 people to become entrepreneurs, starting exciting
+                                businesses and bringing their ideas
+                                to life. We’ll give you the support, guidance and advice you need
+                                to create a business and make it into a success.
+                            </Paragraph>
 
-                    <ListWrapper>
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Statistics on why you should start
-                                    a construction business
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                        </Colorbox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Learning if a construction business could be right for you
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                        <Heading size={3} style={{fontSize: "20px", marginTop: "48px"}}>
+                            From validating your business and doing the research to filing your paperwork and running
+                            your business, this guide will help you out.
+                        </Heading>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Ideas for the type of construction business that you could form
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                        <Paragraph big style={{marginBottom: "40px"}}>
+                            We’ll talk you through the main things you need to do to get your construction business off
+                            of the ground.
+                        </Paragraph>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    How to validate your construction business idea
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                        <Heading size={3} style={{fontSize: "20px"}}>
+                            Read on for some insight into creating your own construction business and becoming an
+                            entrepreneur. In this guide we will cover:
+                        </Heading>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Business plans for construction companies
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                        <ListWrapper>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Statistics on why you should start
+                                        a construction business
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Where to find construction business groups, forums and support
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Learning if a construction business could be right for you
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Helpful software for construction business owners
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Ideas for the type of construction business that you could form
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    How to choose whether your construction business should
-                                    be an LLC or corporation
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        How to validate your construction business idea
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    How to start your construction business with information
-                                    on equipment, employees, location, permits, finance, taxes and more
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Business plans for construction companies
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                    </ListWrapper>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Where to find construction business groups, forums and support
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                </PanelWrapper>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Helpful software for construction business owners
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                <PanelWrapper>
-                    <Heading size={3}>
-                        Why You Should Start a New Construction Business
-                    </Heading>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        How to choose whether your construction business should
+                                        be an LLC or corporation
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                    <Paragraph big>
-                        You might wonder how successful construction businesses are - we’ve got the facts.
-                    </Paragraph>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        How to start your construction business with information
+                                        on equipment, employees, location, permits, finance, taxes and more
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                    <Paragraph big bottomMargin={52}>
-                        This is why construction businesses are so exciting - how can you be part of that success? We're here to help you figure that out.
-                    </Paragraph>
+                        </ListWrapper>
 
-                    <BlueBoxWithAbsoluteText absoluteText="900B"
-                                             text="How to choose whether your construction business should be an LLC or corporation"/>
-                    <BlueBoxWithAbsoluteText absoluteText="$1.2T"
-                                             text="The U.S. has one of the largest construction markets in the world, with expenditures of over $1.2 trillion"/>
-                    <BlueBoxWithAbsoluteText absoluteText="$1.4T"
-                                             text="Expected construction expenditures grow by 2021."/>
+                    </PanelWrapper>
 
-                    <div style={{marginBottom: "30px", marginTop: "70px"}}>
-                        <Adventages
-                            headline="The U.S. construction industry is responsible for over 4% of U.S. GDP"
-                            width="100%"
-                        />
-                    </div>
+                    <PanelWrapper>
+                        <Heading size={3}>
+                            Why You Should Start a New Construction Business
+                        </Heading>
 
-                    <div style={{marginBottom: "30px"}}>
+                        <Paragraph big>
+                            You might wonder how successful construction businesses are - we’ve got the facts.
+                        </Paragraph>
+
+                        <Paragraph big bottomMargin={52}>
+                            This is why construction businesses are so exciting - how can you be part of that success?
+                            We're here to help you figure that out.
+                        </Paragraph>
+
+                        <BlueBoxWithAbsoluteText absoluteText="900B"
+                                                 text="How to choose whether your construction business should be an LLC or corporation"/>
+                        <BlueBoxWithAbsoluteText absoluteText="$1.2T"
+                                                 text="The U.S. has one of the largest construction markets in the world, with expenditures of over $1.2 trillion"/>
+                        <BlueBoxWithAbsoluteText absoluteText="$1.4T"
+                                                 text="Expected construction expenditures grow by 2021."/>
+
+                        <div style={{marginTop: "70px"}}>
+                            <Adventages
+                                headline="The U.S. construction industry is responsible for over 4% of U.S. GDP"
+                                width="100%"
+                            />
+                        </div>
+
                         <Adventages
                             headline="Currently, the majority of growth in the construction industry is in residential building"
                             width="100%"
                         />
-                    </div>
 
-                    <div style={{marginBottom: "30px"}}>
                         <Adventages
                             headline="Public sector construction saw the slowest growth"
                             width="100%"
                         />
-                    </div>
-                </PanelWrapper>
+                    </PanelWrapper>
 
-                <PanelWrapper>
-                    <Heading size={3}>
-                        Is a Construction Business Right for You?
-                    </Heading>
+                    <PanelWrapper>
+                        <Heading size={3}>
+                            Is a Construction Business Right for You?
+                        </Heading>
 
-                    <Paragraph big bottomMargin={52}>
-                        Although it can be exciting to form a construction business, there will
-                        be significant demands on you as a small business owner. Here are some of the things you can expect.
-                    </Paragraph>
-
-                    <Heading size={3}>
-                        A Day in the Life of a Construction Business Owner
-                    </Heading>
-
-                    <Paragraph big bottomMargin={52}>
-                        Here are some of the typical tasks you’ll be performing for your construction business on a daily basis.
-                    </Paragraph>
-
-                    <TextBoxed style={{marginBottom: "8px"}}>
-                        <Paragraph bottomMargin={0}>
-                            Working with architects and engineers to finalize plans and details
+                        <Paragraph big bottomMargin={52}>
+                            Although it can be exciting to form a construction business, there will
+                            be significant demands on you as a small business owner. Here are some of the things you can
+                            expect.
                         </Paragraph>
-                    </TextBoxed>
 
-                    <TextBoxed style={{marginBottom: "8px"}}>
-                        <Paragraph bottomMargin={0}>
-                            Coordinating with tradesmen and contractors on specialized services
+                        <Heading size={3}>
+                            A Day in the Life of a Construction Business Owner
+                        </Heading>
+
+                        <Paragraph big bottomMargin={52}>
+                            Here are some of the typical tasks you’ll be performing for your construction business on a
+                            daily basis.
                         </Paragraph>
-                    </TextBoxed>
 
-                    <TextBoxed style={{marginBottom: "8px"}}>
-                        <Paragraph bottomMargin={0}>
-                            Project managing people, resources, materials, timings and deadlines
+                        <TextBoxed style={{marginBottom: "8px"}}>
+                            <Paragraph bottomMargin={0}>
+                                Working with architects and engineers to finalize plans and details
+                            </Paragraph>
+                        </TextBoxed>
+
+                        <TextBoxed style={{marginBottom: "8px"}}>
+                            <Paragraph bottomMargin={0}>
+                                Coordinating with tradesmen and contractors on specialized services
+                            </Paragraph>
+                        </TextBoxed>
+
+                        <TextBoxed style={{marginBottom: "8px"}}>
+                            <Paragraph bottomMargin={0}>
+                                Project managing people, resources, materials, timings and deadlines
+                            </Paragraph>
+                        </TextBoxed>
+
+                        <TextBoxed style={{marginBottom: "8px"}}>
+                            <Paragraph bottomMargin={0}>
+                                Carrying out construction activities yourself
+                            </Paragraph>
+                        </TextBoxed>
+
+                        <TextBoxed style={{marginBottom: "8px"}}>
+                            <Paragraph bottomMargin={0}>
+                                Troubleshooting issues and problems with the construction process
+                            </Paragraph>
+                        </TextBoxed>
+
+                        <TextBoxed style={{marginBottom: "48px"}}>
+                            <Paragraph bottomMargin={0}>
+                                Purchasing and managing supplies and materials
+                            </Paragraph>
+                        </TextBoxed>
+
+                        <Heading size={3}>
+                            Skills Needed by a Construction Business Entrepreneur
+                        </Heading>
+
+                        <Paragraph big bottomMargin={52}>
+                            The following skills will be very useful in your role as a construction small business
+                            owner.
                         </Paragraph>
-                    </TextBoxed>
 
-                    <TextBoxed style={{marginBottom: "8px"}}>
-                        <Paragraph bottomMargin={0}>
-                            Carrying out construction activities yourself
-                        </Paragraph>
-                    </TextBoxed>
+                        <TextBoxed style={{marginBottom: "8px"}}>
+                            <Paragraph bottomMargin={0}>
+                                Excellent project management skills so you can coordinate the build from beginning to
+                                end
+                            </Paragraph>
+                        </TextBoxed>
 
-                    <TextBoxed style={{marginBottom: "8px"}}>
-                        <Paragraph bottomMargin={0}>
-                            Troubleshooting issues and problems with the construction process
-                        </Paragraph>
-                    </TextBoxed>
+                        <TextBoxed style={{marginBottom: "8px"}}>
+                            <Paragraph bottomMargin={0}>
+                                Great interpersonal skills for managing tradesmen, contractors and others
+                            </Paragraph>
+                        </TextBoxed>
 
-                    <TextBoxed style={{marginBottom: "48px"}}>
-                        <Paragraph bottomMargin={0}>
-                            Purchasing and managing supplies and materials
-                        </Paragraph>
-                    </TextBoxed>
+                        <TextBoxed style={{marginBottom: "8px"}}>
+                            <Paragraph bottomMargin={0}>
+                                An eye for detail to ensure a high-quality outcome
+                            </Paragraph>
+                        </TextBoxed>
 
-                    <Heading size={3}>
-                        Skills Needed by a Construction Business Entrepreneur
-                    </Heading>
+                        <TextBoxed style={{marginBottom: "8px"}}>
+                            <Paragraph bottomMargin={0}>
+                                Good personal construction skills
+                            </Paragraph>
+                        </TextBoxed>
 
-                    <Paragraph big bottomMargin={52}>
-                        The following skills will be very useful in your role as a construction small business owner.
-                    </Paragraph>
+                        <TextBoxed style={{marginBottom: "8px"}}>
+                            <Paragraph bottomMargin={0}>
+                                Analysis and problem-solving expertise
+                            </Paragraph>
+                        </TextBoxed>
 
-                    <TextBoxed style={{marginBottom: "8px"}}>
-                        <Paragraph bottomMargin={0}>
-                            Excellent project management skills so you can coordinate the build from beginning to end
-                        </Paragraph>
-                    </TextBoxed>
-
-                    <TextBoxed style={{marginBottom: "8px"}}>
-                        <Paragraph bottomMargin={0}>
-                            Great interpersonal skills for managing tradesmen, contractors and others
-                        </Paragraph>
-                    </TextBoxed>
-
-                    <TextBoxed style={{marginBottom: "8px"}}>
-                        <Paragraph bottomMargin={0}>
-                            An eye for detail to ensure a high-quality outcome
-                        </Paragraph>
-                    </TextBoxed>
-
-                    <TextBoxed style={{marginBottom: "8px"}}>
-                        <Paragraph bottomMargin={0}>
-                            Good personal construction skills
-                        </Paragraph>
-                    </TextBoxed>
-
-                    <TextBoxed style={{marginBottom: "8px"}}>
-                        <Paragraph bottomMargin={0}>
-                            Analysis and problem-solving expertise
-                        </Paragraph>
-                    </TextBoxed>
-
-                </PanelWrapper>
-            </CollapseWrapper>
-        </TabsSection>
+                    </PanelWrapper>
+                </CollapseWrapper>
+            </TabsSection>
+        </TabsWrapper>
 
         <TypeOfBusiness/>
 
@@ -348,7 +359,7 @@ const ConstructionCompany = () => (
 
         <Taxes/>
 
-        <ToolsAndLinks />
+        <ToolsAndLinks/>
 
         <Conclusion to="/" buttonTitle="Start your Travel Agency Business with us, today">
             <Heading size={3} style={{fontSize: "40px", marginTop: "300px"}}>
@@ -356,9 +367,7 @@ const ConstructionCompany = () => (
             </Heading>
 
             <Paragraph big>
-                The internet has lowered the barriers to finding the perfect vacation, but many people still need the
-                experience and expertise that a great travel agent provides. Find the right niche, get your marketing
-                right and you could see huge success as a travel agent.
+                If you have the right expertise and hands-on skills, a construction company is a great way to build a thriving business. Identify your niche, create a rock solid construction business plan and get the right marketing in place and you could be the next great home builder!
             </Paragraph>
         </Conclusion>
     </Layout>
@@ -383,6 +392,22 @@ const ListBox = styled.div`
     
     @media (min-width: 576px) { 
         width: 50%; 
+    }
+`;
+
+const TabsWrapper = styled.div`
+    position: relative;
+`;
+
+const Oval = styled.div`
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    
+    @media (min-width: 420px) {
+        width: 420px;
     }
 `;
 

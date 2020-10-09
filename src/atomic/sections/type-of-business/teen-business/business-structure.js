@@ -14,9 +14,10 @@ import HandsIcon from "../../../../images/icons/hands.inline.svg";
 import ArrowsIcon from "../../../../images/icons/arrows.inline.svg"
 import Button from "../../../molecules/buttons/button";
 import Container from "../../../container";
-import OvalGreen3 from "../../../../images/oval-green-3.inline.svg";
+import OvalGreen3 from "../../../../images/ovals/top-left-transparent-orange.inline.svg";
 import {shadow} from "../../../atoms/styles/shadows";
 import {gradient} from "../../../atoms/styles/colors";
+import {Link} from "gatsby";
 
 const BusinessOwnerResponsibilities = styled.section`
   position: relative;
@@ -38,14 +39,19 @@ const OrangeContainer = styled.div`
 const Oval = styled.div`
   position: absolute;
   left: 0;
-  top: 200px;
+  top: 120px;
+  width: 100%;
+      
+      @media (min-width: 570px){
+        width: 570px;
+      }
 `
 
 const BusinessStructure = () => (
     <OrangeContainer>
 
         <Oval>
-            <OvalGreen3 />
+            <OvalGreen3/>
         </Oval>
 
         <Container>
@@ -55,7 +61,8 @@ const BusinessStructure = () => (
                         Choose the Right Business Structure and Register Your Teen Business
                     </Heading>
                     <Paragraph big>
-                        There are five main business structures you can have in the U.S., and it’s important to choose the right one. We’ve shared your options below.
+                        There are five main business structures you can have in the U.S., and it’s important to choose
+                        the right one. We’ve shared your options below.
                         They are:
                     </Paragraph>
 
@@ -73,15 +80,21 @@ const BusinessStructure = () => (
                         width={100}
                         widthUnit="%"
                     >
-                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}} mixed={true}>
-                            <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                <ArrowSVG/>
-                            </IconCircle>
-                            Sole Proprietorship
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
+                                   mixed={true}>
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                Sole Proprietorship
+                            </FlexLink>
                         </Paragraph>
 
                         <Paragraph big>
-                            This is the "default" business structure and is what your teen business will be if you decide not to create a more formal structure. If you’ve just got a very small venture that’s only earning a few dollars, this business structure is fine — as long as you understand that it doesn’t provide any legal protections against liability.
+                            This is the "default" business structure and is what your teen business will be if you
+                            decide not to create a more formal structure. If you’ve just got a very small venture that’s
+                            only earning a few dollars, this business structure is fine — as long as you understand that
+                            it doesn’t provide any legal protections against liability.
                         </Paragraph>
                     </TextBlockWithImage>
 
@@ -89,7 +102,7 @@ const BusinessStructure = () => (
                         SvgImage={UmbrellaIcon}
                         textBackgroundColor="transparent"
                         imageBackgroundColor={color.white}
-                        imageShadowColor="#ababab"
+                        imageShadowColor={shadow.white2}
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
@@ -99,15 +112,21 @@ const BusinessStructure = () => (
                         width={100}
                         widthUnit="%"
                     >
-                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}} mixed={true}>
-                            <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                <ArrowSVG/>
-                            </IconCircle>
-                            Partnership
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
+                                   mixed={true}>
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                Partnership
+                            </FlexLink>
                         </Paragraph>
 
                         <Paragraph big>
-                            This is a type of business that is formed when two or more people work together without creating a more formal business entity. Like a sole proprietorship, it may not give you all the protections your teen business needs. Also, it may be difficult to get a long-term commitment from another teenager or young person to form a partnership with you.
+                            This is a type of business that is formed when two or more people work together without
+                            creating a more formal business entity. Like a sole proprietorship, it may not give you all
+                            the protections your teen business needs. Also, it may be difficult to get a long-term
+                            commitment from another teenager or young person to form a partnership with you.
                         </Paragraph>
                     </TextBlockWithImage>
 
@@ -115,7 +134,7 @@ const BusinessStructure = () => (
                         SvgImage={ArrowsIcon}
                         textBackgroundColor="transparent"
                         imageBackgroundColor={color.white}
-                        imageShadowColor="#ababab"
+                        imageShadowColor={shadow.white2}
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
@@ -125,15 +144,20 @@ const BusinessStructure = () => (
                         width={100}
                         widthUnit="%"
                     >
-                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}} mixed={true}>
-                            <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                <ArrowSVG/>
-                            </IconCircle>
-                            Limited Liability Company or LLC
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
+                                   mixed={true}>
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                Limited Liability Company or LLC
+                            </FlexLink>
                         </Paragraph>
 
                         <Paragraph big>
-                            The most common type of business entity, an LLC is fast, simple and inexpensive to set up and maintain. It protects your personal finances and assets — if you’re serious about your teen business and want to see it grow, this is an ideal choice.
+                            The most common type of business entity, an LLC is fast, simple and inexpensive to set up
+                            and maintain. It protects your personal finances and assets — if you’re serious about your
+                            teen business and want to see it grow, this is an ideal choice.
                         </Paragraph>
                     </TextBlockWithImage>
 
@@ -141,7 +165,7 @@ const BusinessStructure = () => (
                         SvgImage={PlaneIcon}
                         textBackgroundColor="transparent"
                         imageBackgroundColor={color.white}
-                        imageShadowColor="#ababab"
+                        imageShadowColor={shadow.white2}
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
@@ -151,15 +175,19 @@ const BusinessStructure = () => (
                         width={100}
                         widthUnit="%"
                     >
-                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}} mixed={true}>
-                            <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                <ArrowSVG/>
-                            </IconCircle>
-                            S Corporation
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
+                                   mixed={true}>
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                S Corporation
+                            </FlexLink>
                         </Paragraph>
 
                         <Paragraph big>
-                            This is a more complex type of business and isn't generally recommended for smaller organizations, like a teen business.
+                            This is a more complex type of business and isn't generally recommended for smaller
+                            organizations, like a teen business.
                         </Paragraph>
                     </TextBlockWithImage>
 
@@ -167,7 +195,7 @@ const BusinessStructure = () => (
                         SvgImage={RockerIcon}
                         textBackgroundColor="transparent"
                         imageBackgroundColor={color.white}
-                        imageShadowColor="#ababab"
+                        imageShadowColor={shadow.white2}
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
@@ -177,32 +205,51 @@ const BusinessStructure = () => (
                         width={100}
                         widthUnit="%"
                     >
-                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}} mixed={true}>
-                            <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                <ArrowSVG/>
-                            </IconCircle>
-                            C Corporation
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
+                                   mixed={true}>
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                C Corporation
+                            </FlexLink>
                         </Paragraph>
 
                         <Paragraph big>
-                            These are the largest and most complex types of businesses and are typically far more than the average teen entrepreneur will need.
+                            These are the largest and most complex types of businesses and are typically far more than
+                            the average teen entrepreneur will need.
                         </Paragraph>
                     </TextBlockWithImage>
 
                     <Paragraph big style={{paddingTop: "120px"}} mixed={true}>
-                        For more information on the advantages and disadvantages of different types of businesses, please see our in-depth guide. If you’ve still got questions, we’ve answered them to help you choose the right business structure.
+                        For more information on the advantages and disadvantages of different types of businesses,
+                        please <Link to="/">see our in-depth guide</Link>. If you’ve still got questions, <Link to="/">we’ve
+                        answered them to help you
+                        choose the right business structure</Link>.
                     </Paragraph>
                     <Paragraph big mixed={true}>
-                        In some cases, our recommendation for a teen business would be to create an LLC. We’ve got a complete guide to everything you need to do, and we can even set one up for your business. LLC formation does vary from state to state, but we’ve got you covered, wherever you are.
+                        In some cases, our recommendation for a teen business would be to create an LLC. We’ve <Link
+                        to="/">got a
+                        complete guide to everything you need to do</Link>, and we can even set one up for your
+                        business. <Link
+                        to="/">LLC
+                        formation does vary from state to state</Link>, but we’ve got you covered, wherever you are.
                     </Paragraph>
 
-                    <Button theme="primary48" width="365px" arrow>
-                        Start your business with us, today!
-                    </Button>
+                    <Button theme="primary48" width="365px" arrow
+                            content={{url: "/", text: "Start your business with us, today!"}}/>
+
                 </ImageContent>
             </BusinessOwnerResponsibilities>
         </Container>
     </OrangeContainer>
 );
+
+const FlexLink = styled(Link)`
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+`;
+
 
 export default BusinessStructure;

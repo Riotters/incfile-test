@@ -4,8 +4,9 @@ import TextCenterLayout from "../../../../components/partials/blocks/heading-cen
 import TopImageBox from "../../../../components/top-image-box";
 import {color} from "../../../../components/styles/colors";
 import styled from "styled-components";
-import GreenOval from "../../../../images/oval-green-2.inline.svg";
+import GreenOval from "../../../../images/ovals/top-left-transparent-green2.inline.svg";
 import {gradient} from "../../../atoms/styles/colors";
+import {Link} from "gatsby";
 
 const SettingBusiness = () => (
     <WrapperContainer>
@@ -13,6 +14,10 @@ const SettingBusiness = () => (
         <Oval>
             <GreenOval/>
         </Oval>
+
+        <Oval2>
+            <GreenOval/>
+        </Oval2>
 
         <Container>
             <TextCenterLayout
@@ -64,9 +69,9 @@ const SettingBusiness = () => (
                 <TopImageBox image="measuring-business-success" color={color.babyblue3}>
                     <h4>Business Maintenance</h4>
                     <p>
-                        Most states require businesses to file an Annual Report report once a year. You will also be
+                        Most states require businesses to file an <Link to="/">Annual Report</Link> report once a year. You will also be
                         expected to pay estimated taxes on what you plan to earn in the current business year. And, your
-                        federal, state, regional and city business licenses and permits may need to be renewed on a
+                        federal, state, regional and city <Link to="/">business licenses and permits</Link> may need to be renewed on a
                         regular basis, typically once a year.
                     </p>
                 </TopImageBox>
@@ -111,13 +116,14 @@ const ImageBoxes = styled.div`
   grid-gap: 30px;
   padding-top: 112px;
   width: 100%;
-
+  max-width: 970px;
+  
   @media(min-width: 769px) {
     grid-template-columns: 1fr 1fr;
   }
   
   @media (min-width: 970px) {
-    width: 970px;
+ 
     margin: 0 auto;
   }
 `;
@@ -131,8 +137,24 @@ const GreenCurve = styled.div`
 
 const Oval = styled.div`
     position: absolute;
-    right: 0;
-    top: 220px;
+    left: 0;
+    top:0px;
+    width: 100%;
+    
+    @media (min-width: 720px){
+        width: 720px;
+    }
 `;
 
+const Oval2 = styled.div`
+    position: absolute;
+    right: 0;
+    top: 220px;
+    width: 100%;
+    transform: scaleX(-1);
+    
+    @media (min-width: 720px){
+        width: 720px;
+    }
+`;
 export default SettingBusiness;

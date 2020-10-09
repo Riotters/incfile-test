@@ -15,6 +15,8 @@ import HandsIcon from "../../../../images/icons/hands.inline.svg";
 import Button from "../../../molecules/buttons/button";
 import Container from "../../../container";
 import OvalOrange2Svg from "../../../../images/oval-orange-2.inline.svg";
+import {Link} from "gatsby";
+import {shadow} from "../../../atoms/styles/shadows";
 
 const BusinessOwnerResponsibilities = styled.section`
   position: relative;
@@ -67,7 +69,7 @@ const CoachBusinessStructure = () => (
                         SvgImage={HandsIcon}
                         textBackgroundColor="transparent"
                         imageBackgroundColor={color.white}
-                        imageShadowColor="#ababab"
+                        imageShadowColor={shadow.white2}
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
@@ -77,12 +79,14 @@ const CoachBusinessStructure = () => (
                         width={100}
                         widthUnit="%"
                     >
-                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                    mixed={true}>
-                            <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                <ArrowSVG/>
-                            </IconCircle>
-                            Sole Proprietorship
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                Sole Proprietorship
+                            </FlexLink>
                         </Paragraph>
 
                         <Paragraph big>
@@ -96,7 +100,7 @@ const CoachBusinessStructure = () => (
                         SvgImage={LccIcon}
                         textBackgroundColor="transparent"
                         imageBackgroundColor={color.white}
-                        imageShadowColor="#ababab"
+                        imageShadowColor={shadow.white2}
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
@@ -106,12 +110,14 @@ const CoachBusinessStructure = () => (
                         width={100}
                         widthUnit="%"
                     >
-                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                    mixed={true}>
+                            <FlexLink to="/">
                             <IconCircle circleColor="transparent" iconColor={color.blue1}>
                                 <ArrowSVG/>
                             </IconCircle>
                             Limited Liability Company or LLC
+                            </FlexLink>
                         </Paragraph>
 
                         <Paragraph big>
@@ -125,7 +131,7 @@ const CoachBusinessStructure = () => (
                         SvgImage={SeriesIcon}
                         textBackgroundColor="transparent"
                         imageBackgroundColor={color.white}
-                        imageShadowColor="#ababab"
+                        imageShadowColor={shadow.white2}
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
@@ -135,12 +141,14 @@ const CoachBusinessStructure = () => (
                         width={100}
                         widthUnit="%"
                     >
-                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                    mixed={true}>
+                            <FlexLink to="/">
                             <IconCircle circleColor="transparent" iconColor={color.blue1}>
                                 <ArrowSVG/>
                             </IconCircle>
                             Series LLC
+                            </FlexLink>
                         </Paragraph>
 
                         <Paragraph big>
@@ -154,7 +162,7 @@ const CoachBusinessStructure = () => (
                         SvgImage={PlaneIcon}
                         textBackgroundColor="transparent"
                         imageBackgroundColor={color.white}
-                        imageShadowColor="#ababab"
+                        imageShadowColor={shadow.white2}
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
@@ -164,12 +172,14 @@ const CoachBusinessStructure = () => (
                         width={100}
                         widthUnit="%"
                     >
-                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                    mixed={true}>
+                            <FlexLink to="/">
                             <IconCircle circleColor="transparent" iconColor={color.blue1}>
                                 <ArrowSVG/>
                             </IconCircle>
                             S Corporation
+                            </FlexLink>
                         </Paragraph>
 
                         <Paragraph big>
@@ -182,7 +192,7 @@ const CoachBusinessStructure = () => (
                         SvgImage={RockerIcon}
                         textBackgroundColor="transparent"
                         imageBackgroundColor={color.white}
-                        imageShadowColor="#ababab"
+                        imageShadowColor={shadow.white2}
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
@@ -192,12 +202,14 @@ const CoachBusinessStructure = () => (
                         width={100}
                         widthUnit="%"
                     >
-                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                    mixed={true}>
+                            <FlexLink to="/">
                             <IconCircle circleColor="transparent" iconColor={color.blue1}>
                                 <ArrowSVG/>
                             </IconCircle>
                             C Corporation
+                            </FlexLink>
                         </Paragraph>
 
                         <Paragraph big>
@@ -208,14 +220,16 @@ const CoachBusinessStructure = () => (
 
                     <Paragraph big style={{paddingTop: "120px"}} mixed={true}>
                         For more information on the advantages and disadvantages of different types of businesses,
-                        <span className="big blue">please see our in-depth guide</span>. If you've still got questions, <span className="big blue">we've answered them to help you
-                        choose the right business structure.</span>
+                        <Link to="/">please see our in-depth guide</Link>. If you've still got
+                        questions, <Link to="/">we've answered them to help you
+                        choose the right business structure.</Link>
                     </Paragraph>
                     <Paragraph big mixed={true}>
                         In most cases our recommendation would be to create an LLC, We've
-                        <span className="big blue">got a complete guide to everything you need to do</span> and we can set one up for your Amazon Seller
-                        business. <span className="big blue">LLC formation dose vary from state
-                        to state</span>, but we've got you covered, wherever you are.
+                        <Link to="/">got a complete guide to everything you need to do</Link> and we can
+                        set one up for your Amazon Seller
+                        business. <Link to="/">LLC formation dose vary from state
+                        to state</Link>, but we've got you covered, wherever you are.
                     </Paragraph>
 
                     <Button theme="primary48" width="365px" arrow>
@@ -226,5 +240,13 @@ const CoachBusinessStructure = () => (
         </Container>
     </OrangeContainer>
 );
+
+
+const FlexLink = styled(Link)`
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+`;
+
 
 export default CoachBusinessStructure;

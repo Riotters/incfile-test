@@ -4,9 +4,13 @@ import InfoCardsSection from "../../../partials/info-cards-section";
 import {InfoCards} from "../../../../static/type-of-business/publishing-company-business";
 import {gradient} from "../../../atoms/styles/colors";
 import TextCenterLayout from "../../../../components/partials/blocks/heading-center";
+import OvalSvg from "../../../../images/ovals/top-right-transparent-blue.inline.svg";
 
 const InsuranceBusiness = () => (
     <Wrapper>
+        <Oval>
+            <OvalSvg />
+        </Oval>
         <div style={{paddingBottom: "100px"}}>
             <TextCenterLayout
                 headline="Insurance for Publishing Houses"
@@ -25,4 +29,15 @@ const Wrapper = styled.section`
     position: relative;
 `;
 
+const Oval = styled.div`
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    
+    @media (min-width: 570px){
+        width: 570px;
+    }
+`;
 export default InsuranceBusiness;

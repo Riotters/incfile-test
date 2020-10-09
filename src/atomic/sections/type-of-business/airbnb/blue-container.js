@@ -10,8 +10,8 @@ import InvolvedIcon from "../../../../images/icons/get-involved-with-business-co
 import {color} from "../../../../components/styles/colors";
 import React from "react";
 import styled from "styled-components";
-import OvalSVG from "../../../../images/oval-blue-3.inline.svg";
-import OvalBlueSVG from "../../../../images/oval-blue-4.inline.svg";
+import OvalSVG from "../../../../images/ovals/top-left-transparent-blue2.inline.svg";
+import OvalBlueSVG from "../../../../images/ovals/top-right-transparent-blue2.inline.svg";
 import Curve from "../../../atoms/shapes/curve";
 
 const BlueContainerWrapper = styled.div`
@@ -24,16 +24,15 @@ const BlueContainerWrapper = styled.div`
 
 const GridSection = styled.div`
     width: 100%;
-    margin-top: 110px;
 `;
 
 const TitleBox = styled.div`
     width: 100%;
+    max-width: 750px;
     margin-bottom: 120px;
     position: relative;
      
-    @media (min-width:750px) {
-        width: 750px;
+    @media (min-width: 750px) {
         margin: 0 auto 120px;
     }
     
@@ -55,18 +54,18 @@ const GridSectionList = styled.div`
         margin-bottom: 70px;
     }
     
-    @media (min-width: 970px) {
+    @media (min-width: 1024px) {
         width: 970px;
-        margin: 0 auto;
+        margin: 120px auto 0;
     }
 `;
 
 const TextBorderedSection = styled.div`
     width: 100%;
+    max-width: 670px;
     padding-top: 100px;
     
     @media (min-width: 670px) {
-        width: 670px;
         margin: 0 auto;
     }
     
@@ -88,10 +87,10 @@ const Oval = styled.div`
   position: absolute;
   left: 0;
   top: 0;
-  display: none;
+  width: 100%;
   
   @media (min-width: 720px){
-    display: block;
+    width: 720px;
   }
 `
 
@@ -99,11 +98,10 @@ const OvalCenter = styled.div`
   position: absolute;
   right: 0;
   top: 40%;
-  
-  display: none;
+  width: 100%;
   
   @media (min-width: 720px){
-    display: block;
+    width: 720px;
   }
 `
 

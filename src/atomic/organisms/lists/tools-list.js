@@ -14,7 +14,7 @@ const ToolsList = ({tools}) => (
 const ToolsWrapper = styled.div`
     width: 100%;
     
-    @media (min-width: 830px) {
+    @media (min-width: 1000px) {
         width: 830px;
         margin: 100px auto;
     }

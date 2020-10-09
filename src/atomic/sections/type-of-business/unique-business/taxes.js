@@ -5,8 +5,7 @@ import TextCenterLayout from "../../../../components/partials/blocks/heading-cen
 import Adventages from "../../../../components/adventages";
 import {color, gradient} from "../../../atoms/styles/colors";
 import {shadow} from "../../../atoms/styles/shadows";
-import OvalSvg from "../../../../images/oval-babyblue-1.inline.svg";
-import OvalSvgBottom from "../../../../images/oval-babyblue-2.inline.svg";
+import OvalSvg from "../../../../images/ovals/top-right-transparent-babyblue1.inline.svg";
 import CurveSvg from "../../../../images/curve-babyblue-1.inline.svg";
 import {adventages2} from "../../../../static/type-of-business/unique-business";
 
@@ -43,6 +42,7 @@ const Wrapper = styled.div`
     padding-bottom: 0px;
     padding-top: 100px;
     position: relative;
+    overflow: hidden;
 `;
 
 const TextWrapper = styled.div`
@@ -73,9 +73,14 @@ const Oval = styled.div`
     position: absolute;
     right: 0;
     top: 291px;
+    width: 100%;
     
     svg{
         transform: scaleY(-1);
+    }
+    
+    @media (min-width: 720px) {
+        width: 720px;
     }
 `;
 

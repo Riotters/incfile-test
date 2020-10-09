@@ -6,27 +6,21 @@ import Button from "../../../molecules/buttons/button";
 import ContentCenter from "../../../partials/content-center";
 import Table from "../../../organisms/tables/comparison-chart-table";
 import Oval from "../../../atoms/icons/oval";
-import OvalSVG from "../../../../images/ovals/top-right-transparent-green2.inline.svg";
+import OvalSVG from "../../../../images/ovals/bottom-right-transparent-green1.inline.svg";
 
 const BusinessStructure = styled.section`
   position: relative;
   padding-top: 104px;
-  padding-bottom: 24px;
-  background-color: ${color.green3};
-
-  ul {
-    margin-bottom: 0;
-  }
 `;
 
 const BusinessStructureSection = ({ className, content }) => (
   <BusinessStructure className={className}>
-    <Oval width="720" height="720" top="0" right="0">
+    <Oval width="570" height="570" top="38" right="0">
       <OvalSVG />
     </Oval>
-    <HeadingCenter headline={content.header} headlineWidth="770" />
+    <HeadingCenter headline={content.header} headlineWidth="770" bottomMargin="24" bottomMarginLG="65" />
     <ContentCenter>
-      <Table content={content.faq} />
+      <Table content={content.faq} curve curveRight curveColor={color.blue1}/>
     </ContentCenter>
   </BusinessStructure>
 );

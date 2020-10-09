@@ -5,20 +5,25 @@ import Container from "../../../container";
 import TextCenterLayout from "../../../partials/heading-center";
 import {color} from "../../../../components/styles/colors";
 import {shadow} from "../../../../components/styles/shadows";
-import OvalSvg from "../../../../images/oval-orange-4.inline.svg";
+import OvalSvg from "../../../../images/ovals/top-right-transparent-blue2.inline.svg";
 import AdventagesWithLongText from "../../../molecules/mixed-blocks/adventages-with-long-text";
 import {Paragraph} from "../../../atoms/typography/paragraph";
+import {Link} from "gatsby";
 
 const TypeBusiness = () => (
     <Wrapper>
         <Oval>
             <OvalSvg/>
         </Oval>
+        <Oval2>
+            <OvalSvg/>
+        </Oval2>
+
+        <TextCenterLayout headline="Low or No Cost Business Ideas"
+                          text="Here are some great examples of business ideas with low investment. There are many other great lists with ideas for low cost startup businesses"/>
+
         <Container>
             <Service>
-                <TextCenterLayout headline="Low or No Cost Business Ideas"
-                                  text="Here are some great examples of business ideas with low investment. There are many other great lists with ideas for low cost startup businesses"/>
-
                 <AdventagesBox>
                     <AdventagesWithLongText
                         style={{textAlign: "left"}}
@@ -34,8 +39,8 @@ const TypeBusiness = () => (
                             you can make money providing products and services to individuals and businesses. Whether
                             you work on a freelance basis
                             or you sell products, neither needs much capital to set up. You can sell crafted items
-                            through portals like Etsy, sell freelance services through Upwork or Fiverr or sell your
-                            designs through print-on-demand services like Cafepress or Zazzle.
+                            through portals like <Link to="/">Etsy</Link>, sell freelance services through <Link to="/">Upwork</Link> or <Link to="/">Fiverr</Link> or sell your
+                            designs through print-on-demand services like<Link to="/">Cafepress</Link> or <Link to="/">Zazzle</Link>.
                         </Paragraph>
                     </AdventagesWithLongText>
 
@@ -64,7 +69,7 @@ const TypeBusiness = () => (
                         imageName="online-shop-icon"
                     >
                         <Paragraph mixed={true}>
-                            While most retail requires you to buy stock and inventory up front, you still have a couple of options for getting into ecommerce. Dropshipping allows you to sell products that are shipped directly from manufacturers to end customers - you don’t pay until the order is made. You can also get into affiliate marketing, where you send people to another website to purchase something and get a commission on any sales you refer.
+                            While most retail requires you to buy stock and inventory up front, you still have a couple of options for getting into ecommerce. <Link to="/">Dropshipping</Link> allows you to sell products that are shipped directly from manufacturers to end customers - you don’t pay until the order is made. You can also get into <Link to="/">affiliate marketing</Link>, where you send people to another website to purchase something and get a commission on any sales you refer.
                         </Paragraph>
                     </AdventagesWithLongText>
 
@@ -108,8 +113,8 @@ const TypeBusiness = () => (
                     >
                         <Paragraph mixed={true}>
                             The gig economy also provides plenty of opportunity for starting a small business without much capital.
-                            If you have a spare room, you can rent it through Airbnb. If you want to drive, there’s Lyft or Uber.
-                            For local tasks, you can try out TaskRabbit or set yourself up as a personal concierge.
+                            If you have a spare room, you can rent it through <Link to="/">Airbnb</Link>. If you want to drive, there’s <Link to="/">Lyft</Link> or <Link to="/">Uber</Link>.
+                            For local tasks, you can try out <Link to="/">TaskRabbit</Link> or set yourself up as a personal concierge.
                         </Paragraph>
                     </AdventagesWithLongText>
                 </AdventagesBox>
@@ -134,7 +139,7 @@ const AdventagesBox = styled.div`
   flex-wrap: wrap;
   width: 100%;
   max-width: 970px;
-  margin: 140px auto 0;
+  margin: 0px auto 140px;
   position: relative;
  
 `;
@@ -147,8 +152,25 @@ const CurveWrapper = styled.div`
 
 const Oval = styled.div`
     position: absolute;
+    left: 0;
+    top: 412px;
+    width: 100%;
+    transform: rotate(180deg);
+    
+    @media (min-width: 420px){
+        width: 420px;
+    }
+`;
+
+const Oval2 = styled.div`
+    position: absolute;
     right: 0;
-    top: 300px;
+    bottom: 173px;
+    width: 100%;
+    
+    @media (min-width: 570px){
+        width: 570px;
+    }
 `;
 
 export default TypeBusiness;

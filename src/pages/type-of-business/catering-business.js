@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
 import Top from "../../atomic/partials/top";
-import Button from "../../components/button";
+import Button from "../../atomic/molecules/buttons/button";
 import RatingRow from "../../atomic/atoms/boxes/rating-row";
 import CartBlock from "../../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../../atomic/molecules/blocks/rating-block";
@@ -22,7 +22,7 @@ import Container from "../../atomic/container";
 import TextBlockWithImage from "../../atomic/molecules/mixed-blocks/text-block-with-absolute-image";
 import {color} from "../../components/styles/colors";
 import CountingTextBoxed from "../../atomic/molecules/text-blocks/counting-text-boxed";
-import OvalOrange2Svg from "../../images/oval-orange-2.inline.svg";
+import OvalOrange2Svg from "../../images/ovals/top-left-transparent-orange2.inline.svg";
 import ImageContent from "../../components/partials/blocks/left-image-right-content";
 import HandsIcon from "../../images/icons/hands.inline.svg";
 import IconCircle from "../../components/icons/circle";
@@ -34,7 +34,6 @@ import RockerIcon from "../../images/icons/rocket.inline.svg";
 import SettingBusiness from "../../atomic/sections/type-of-business/catering-business/setting-business";
 import OrderNow from "../../atomic/sections/type-of-business/catering-business/order-now";
 import {RingText, toolsList} from "../../static/type-of-business/catering-business";
-import HireEmployees from "../../atomic/sections/type-of-business/catering-business/hire-employees";
 import UsefulTools from "../../atomic/partials/useful-tools";
 import Conclusion from "../../atomic/sections/general/conclusion";
 import BlueBoxWithAbsoluteText from "../../atomic/molecules/text-blocks/blue-box-with-absolute-text";
@@ -44,6 +43,13 @@ import Adventages from "../../components/adventages";
 import TypeOfBusiness from "../../atomic/sections/type-of-business/catering-business/type-of-business";
 import ContentCenter from "../../atomic/partials/content-center";
 import Links from "../../atomic/sections/type-of-business/catering-business/links";
+import OvalTabSvg from "../../images/ovals/bottom-left-transparent-pink.inline.svg";
+import OvalTabSvg2 from "../../images/ovals/bottom-right-transparent-green3.inline.svg";
+import OvalSvg2 from "../../images/ovals/top-left-transparent-green3.inline.svg";
+import OvalSvg3 from "../../images/ovals/top-left-transparent-pink.inline.svg";
+import {shadow} from "../../atomic/atoms/styles/shadows";
+import OvalSvg4 from "../../images/ovals/top-right-transparent-green3.inline.svg";
+import {Link} from "gatsby";
 
 const CateringBusiness = () => (
     <Layout>
@@ -68,354 +74,364 @@ const CateringBusiness = () => (
             </RatingRow>
         </Top>
 
-        <TabsSection>
-            <TabHeading>
-                <TabTitle title="Catering Business" SvgIcon={Tab1Icon}/>
-                <TabTitle title="Why This Industry" SvgIcon={Tab2Icon}/>
-                <TabTitle title="Is This Business For You?" SvgIcon={Tab3Icon}/>
-            </TabHeading>
+        <TabsWrapper>
+            <OvalTabs>
+                <OvalTabSvg/>
+            </OvalTabs>
+            <OvalTabs2>
+                <OvalTabSvg2/>
+            </OvalTabs2>
+            <TabsSection>
+                <TabHeading>
+                    <TabTitle title="Catering Business" SvgIcon={Tab1Icon}/>
+                    <TabTitle title="Why This Industry" SvgIcon={Tab2Icon}/>
+                    <TabTitle title="Is This Business For You?" SvgIcon={Tab3Icon}/>
+                </TabHeading>
 
-            <CollapseWrapper>
-                <PanelWrapper>
-                    <Heading size={3}>Starting a Catering Business</Heading>
-                    <Paragraph big>
-                        When it comes to food-based businesses, you have a few choices — you could go into business as a
-                        restaurateur or start a catering business.
-                    </Paragraph>
-                    <Paragraph big>
-                        A catering business can be a great choice if you don’t want the expense of running a restaurant.
-                        You can still earn good margins on the meals you produce without having the overhead of running
-                        a restaurant.
-                    </Paragraph>
+                <CollapseWrapper>
+                    <PanelWrapper>
+                        <Heading size={3}>Starting a Catering Business</Heading>
+                        <Paragraph big>
+                            When it comes to food-based businesses, you have a few choices — you could go into business
+                            as a
+                            restaurateur or start a catering business.
+                        </Paragraph>
+                        <Paragraph big>
+                            A catering business can be a great choice if you don’t want the expense of running a
+                            restaurant.
+                            You can still earn good margins on the meals you produce without having the overhead of
+                            running
+                            a restaurant.
+                        </Paragraph>
 
-                    <Paragraph big style={{fontWeight: "bold", marginTop: "48px"}}>
-                        Catering Business formation guide
-                    </Paragraph>
+                        <Paragraph big style={{fontFamily: "Avenir-Heavy", marginTop: "48px", color: color.black}}>
+                            Catering Business formation guide
+                        </Paragraph>
 
-                    <Paragraph big>
-                        Running a successful catering business can be a big challenge. Whatever your idea for doing
-                        business as a caterer, turning that vision into a company that creates amazing cuisine and
-                        delights your customers is doable, so long as you take the right approach. In this guide we’ll
-                        cover:
-                    </Paragraph>
+                        <Paragraph big>
+                            Running a successful catering business can be a big challenge. Whatever your idea for doing
+                            business as a caterer, turning that vision into a company that creates amazing cuisine and
+                            delights your customers is doable, so long as you take the right approach. In this guide
+                            we’ll
+                            cover:
+                        </Paragraph>
 
-                    <ListWrapper>
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Understanding the world of catering
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                        <ListWrapper>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Understanding the world of catering
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Paying taxes for your catering business
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Paying taxes for your catering business
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Deciding if you’re ready to start a catering business
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Deciding if you’re ready to start a catering business
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Hiring employees, managing finances and administering your catering business
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Hiring employees, managing finances and administering your catering business
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Planning out your catering business
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Planning out your catering business
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Locating other resources for your catering business
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Locating other resources for your catering business
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Determining the best legal structure for your new organization
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Determining the best legal structure for your new organization
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Following various rules and regulations
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Following various rules and regulations
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    And much more
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
-                    </ListWrapper>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        And much more
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
+                        </ListWrapper>
 
-                    <Paragraph big>
-                        By the time you've read through our complete digital nomad business guide, you will have all the
-                        information you need to set up and manage a thriving venture. Let's get into it.
-                    </Paragraph>
-                </PanelWrapper>
+                        <Paragraph big>
+                            By the time you've read through our complete digital nomad business guide, you will have all
+                            the
+                            information you need to set up and manage a thriving venture. Let's get into it.
+                        </Paragraph>
+                    </PanelWrapper>
 
-                <PanelWrapper>
-                    <Heading size={3}>
-                        Understanding the World of the Catering Business
-                    </Heading>
+                    <PanelWrapper>
+                        <Heading size={3}>
+                            Understanding the World of the Catering Business
+                        </Heading>
 
-                    <Paragraph big>
-                        Caterers exist to provide food for major events, parties and functions. They exist to take the
-                        stress out of preparing, cooking and serving food. Good catering businesses can expect repeat
-                        bookings, and lucky business owners will get long-term agreements to provide food on a regular
-                        basis.
-                    </Paragraph>
-                    <Paragraph big>
-                        Caterers and other food establishments are big business in the U.S. Here are some surprising
-                        statistics about their popularity.
-                    </Paragraph>
+                        <Paragraph big>
+                            Caterers exist to provide food for major events, parties and functions. They exist to take
+                            the
+                            stress out of preparing, cooking and serving food. Good catering businesses can expect
+                            repeat
+                            bookings, and lucky business owners will get long-term agreements to provide food on a
+                            regular
+                            basis.
+                        </Paragraph>
+                        <Paragraph big>
+                            Caterers and other food establishments are big business in the U.S. Here are some surprising
+                            statistics about their popularity.
+                        </Paragraph>
 
-                    <BlueBoxWithAbsoluteText absoluteText="$8.6B"
-                                             text="Sales of social caterers in 2017, up from $7.7 billion in 2015"/>
-                    <BlueBoxWithAbsoluteText absoluteText="$12B"
-                                             text="Total revenue for catering businesses in 2017"/>
-                    <BlueBoxWithAbsoluteText absoluteText="120K"
-                                             text="Catering businesses in the U.S."/>
-                    <BlueBoxWithAbsoluteText absoluteText="260K"
-                                             text="Caterers employ people, or just over two per catering business"/>
+                        <BlueBoxWithAbsoluteText absoluteText="$8.6B"
+                                                 text="Sales of social caterers in 2017, up from $7.7 billion in 2015"/>
+                        <BlueBoxWithAbsoluteText absoluteText="$12B"
+                                                 text="Total revenue for catering businesses in 2017"/>
+                        <BlueBoxWithAbsoluteText absoluteText="120K"
+                                                 text="Catering businesses in the U.S."/>
+                        <BlueBoxWithAbsoluteText absoluteText="260K"
+                                                 text="Caterers employ people, or just over two per catering business"/>
 
-                    <ColorFulCircleWithTextAndList list={RingText.list} title={RingText.title} CircleSVG={RingSvg}
-                                                   withBg={true}/>
+                        <ColorFulCircleWithTextAndList style={{marginBottom: "48px"}} list={RingText.list}
+                                                       title={RingText.title} CircleSVG={RingSvg}
+                                                       withBg={true}/>
 
-                    <div style={{marginBottom: "30px", marginTop: "48px"}}>
                         <Adventages
                             headline="The market is growing by 1.3 percent a year"
                             width="100%"
                         />
-                    </div>
 
-                    <div style={{marginBottom: "30px"}}>
                         <Adventages
                             headline="Corporate events are some of the biggest opportunities for caterers, followed by weddings and social catering"
                             width="100%"
                         />
-                    </div>
 
-                    <div style={{marginBottom: "30px"}}>
                         <Adventages
                             headline="Buffet-style catering is most popular, followed by plated meals"
                             width="100%"
                         />
-                    </div>
 
-                    <Paragraph big>
-                        This makes the catering industry very attractive to aspiring entrepreneurs, but there are big
-                        challenges in opening, running and growing a successful catering business. They demand a great
-                        deal of work, so expect long hours. Add to that the need for a constantly full pipeline,
-                        challenging profit margins and seasonal variation; you will need to work hard to ensure your
-                        business is successful.
-                    </Paragraph>
-                    <Paragraph big>
-                        But for those with the discipline, focus and commitment, running a catering business can be a
-                        hugely satisfying experience for you, your staff and your patrons.
-                    </Paragraph>
+                        <Paragraph big>
+                            This makes the catering industry very attractive to aspiring entrepreneurs, but there are
+                            big
+                            challenges in opening, running and growing a successful catering business. They demand a
+                            great
+                            deal of work, so expect long hours. Add to that the need for a constantly full pipeline,
+                            challenging profit margins and seasonal variation; you will need to work hard to ensure your
+                            business is successful.
+                        </Paragraph>
+                        <Paragraph big>
+                            But for those with the discipline, focus and commitment, running a catering business can be
+                            a
+                            hugely satisfying experience for you, your staff and your patrons.
+                        </Paragraph>
 
-                </PanelWrapper>
+                    </PanelWrapper>
 
-                <PanelWrapper>
-                    <Heading size={3}>
-                        What Your Catering Clients Are Looking For
-                    </Heading>
-                    <Paragraph big>
-                        When it comes to catering, your clients want several things:
-                    </Paragraph>
+                    <PanelWrapper>
+                        <Heading size={3}>
+                            What Your Catering Clients Are Looking For
+                        </Heading>
+                        <Paragraph big>
+                            When it comes to catering, your clients want several things:
+                        </Paragraph>
 
-                    <div style={{marginBottom: "30px"}}>
                         <Adventages
                             headline="Reliability"
                             text="If food doesn't show up, there’s normally hell to pay! Clients will demand reliability and trustworthiness — if you can build up a reputation as a friendly, reliable caterer, expect good repeat bookings."
                             width="100%"
                         />
-                    </div>
 
-                    <div style={{marginBottom: "30px"}}>
                         <Adventages
                             headline="Friendliness"
                             text="It’s not just about the food you prepare, it’s also about how that food is served. Many clients will expect you to provide wait staff and servers, and you will need to ensure they have the right approach and attitude."
                             width="100%"
                         />
-                    </div>
 
-                    <div style={{marginBottom: "30px"}}>
                         <Adventages
                             headline="Marketing"
                             text="Promoting your beauty salon business against a competitive field; local marketing expertise is essential"
                             width="100%"
                         />
-                    </div>
 
-                    <div style={{marginBottom: "30px"}}>
                         <Adventages
                             headline="Value for money"
                             text="Catering is a competitive business, and profit margins can be slim. You will need a rock-solid understanding of all your costs so you can price your services correctly."
                             width="100%"
                         />
-                    </div>
 
-                    <div style={{marginBottom: "30px"}}>
                         <Adventages
                             headline="Variety"
                             text="Many clients will look for something a little bit different. If you can provide varied foods at a reasonable price, that’s a great way to stand apart from your competitors."
                             width="100%"
                         />
-                    </div>
 
-                    <Heading size={3}>
-                        Questions to Ask Before You Start a Catering Business
-                    </Heading>
+                        <Heading size={3}>
+                            Questions to Ask Before You Start a Catering Business
+                        </Heading>
 
-                    <Paragraph big style={{fontWeight: "bold"}}>
-                        Is Catering Entrepreneurship for You?
-                    </Paragraph>
+                        <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
+                            Is Catering Entrepreneurship for You?
+                        </Paragraph>
 
-                    <Paragraph big>
-                        Running a catering business requires resilience and good planning. You will need to combine
-                        great marketing with an interesting and accessible menu and competitive pricing. You will need
-                        to attract clients in a competitive local marketplace. Then, you must create amazing dishes,
-                        hire staff, get chefs and ensure you always have work coming in.
-                    </Paragraph>
-                    <Paragraph big>
-                        You can’t forget about the administrative side of this business either. Sourcing ingredients,
-                        sorting out disputes, working out profits and more are all required. In fact, being a cater
-                        requires one of the most well-rounded skillsets of any business you might choose to go into.
-                        Along the way, you’ll learn amazing skills, develop great people management techniques and build
-                        huge amounts of experience in creating and running a successful business.
-                    </Paragraph>
+                        <Paragraph big>
+                            Running a catering business requires resilience and good planning. You will need to combine
+                            great marketing with an interesting and accessible menu and competitive pricing. You will
+                            need
+                            to attract clients in a competitive local marketplace. Then, you must create amazing dishes,
+                            hire staff, get chefs and ensure you always have work coming in.
+                        </Paragraph>
+                        <Paragraph big>
+                            You can’t forget about the administrative side of this business either. Sourcing
+                            ingredients,
+                            sorting out disputes, working out profits and more are all required. In fact, being a cater
+                            requires one of the most well-rounded skillsets of any business you might choose to go into.
+                            Along the way, you’ll learn amazing skills, develop great people management techniques and
+                            build
+                            huge amounts of experience in creating and running a successful business.
+                        </Paragraph>
 
-                    <Paragraph big style={{fontWeight: "bold"}}>
-                        What Are the Main Skills, Expertise and Experience to Be a Successful Catering Entrepreneur?
-                    </Paragraph>
+                        <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
+                            What Are the Main Skills, Expertise and Experience to Be a Successful Catering Entrepreneur?
+                        </Paragraph>
 
-                    <Paragraph big>
-                        As we mentioned above, running a catering business requires a huge and diverse range of skills.
-                        Among other areas, these skills include:
-                    </Paragraph>
+                        <Paragraph big>
+                            As we mentioned above, running a catering business requires a huge and diverse range of
+                            skills.
+                            Among other areas, these skills include:
+                        </Paragraph>
 
-                    <div style={{marginBottom: "30px"}}>
                         <Adventages
                             headline="Hiring"
                             text="Finding, interviewing and hiring great service industry employees for kitchen and food service work."
                             width="100%"
                         />
-                    </div>
 
-                    <div style={{marginBottom: "30px"}}>
                         <Adventages
                             headline="People management"
                             text="Dealing with staff, coverage, issues and other people management areas."
                             width="100%"
                         />
-                    </div>
 
-                    <div style={{marginBottom: "30px"}}>
-                        <Adventages
-                            headline="Marketing"
-                            text="Promoting a catering business against a competitive field. Local marketing expertise is essential."
-                            width="100%"
-                        />
-                    </div>
+                        <div style={{marginBottom: "30px"}}>
+                            <Adventages
+                                headline="Marketing"
+                                text="Promoting a catering business against a competitive field. Local marketing expertise is essential."
+                                width="100%"
+                            />
+                        </div>
 
-                    <div style={{marginBottom: "30px"}}>
                         <Adventages
                             headline="Meal design"
                             text="Working with chefs to create innovative meals, source ingredients and create reasonable profit margins."
                             width="100%"
                         />
-                    </div>
 
-                    <div style={{marginBottom: "30px"}}>
                         <Adventages
                             headline="Kitchen creation"
                             text="Setting up the kitchen in the first place, which includes finding equipment, furniture, fixtures and fittings."
                             width="100%"
                         />
-                    </div>
 
-                    <div style={{marginBottom: "30px"}}>
                         <Adventages
                             headline="Operational management"
                             text="Ensuring clients are treated well, orders are dealt with promptly and food is prepared to the standards you expect."
                             width="100%"
                         />
-                    </div>
 
-                    <div style={{marginBottom: "48px"}}>
                         <Adventages
                             headline="Business administration"
                             text="Sorting out profits, payroll, financial management, accounting and all the other areas that go into running any successful business."
                             width="100%"
                         />
-                    </div>
 
+                        <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
+                            Is Catering Entrepreneurship for You?
+                        </Paragraph>
 
-                    <Paragraph big style={{fontWeight: "bold"}}>
-                        Is Catering Entrepreneurship for You?
-                    </Paragraph>
+                        <Paragraph big>
+                            There are several major challenges for any catering business owner. These start with
+                            competition
+                            — your local area only has a certain number of clients, and you’re likely competing with a
+                            few
+                            other local businesses. Although you will build up a good reputation over time, strong
+                            marketing
+                            is essential in attracting clients to your business.
+                        </Paragraph>
+                        <Paragraph big>
+                            Another major issue for catering owners is financial management and making a profit. The
+                            vast
+                            majority of revenues you receive from patrons will go toward food ingredient costs (27-30
+                            percent), staff salaries and wages (20-25 percent), occupancy costs (5-10 percent for
+                            utilities,
+                            rent, etc.) and other costs. After all expenses are taken into account, overall profit
+                            margins
+                            typically clock in at around 10 percent, compared to the average restaurant profit margin
+                            that
+                            runs between 2 and 6 percent.
+                        </Paragraph>
 
-                    <Paragraph big>
-                        There are several major challenges for any catering business owner. These start with competition
-                        — your local area only has a certain number of clients, and you’re likely competing with a few
-                        other local businesses. Although you will build up a good reputation over time, strong marketing
-                        is essential in attracting clients to your business.
-                    </Paragraph>
-                    <Paragraph big>
-                        Another major issue for catering owners is financial management and making a profit. The vast
-                        majority of revenues you receive from patrons will go toward food ingredient costs (27-30
-                        percent), staff salaries and wages (20-25 percent), occupancy costs (5-10 percent for utilities,
-                        rent, etc.) and other costs. After all expenses are taken into account, overall profit margins
-                        typically clock in at around 10 percent, compared to the average restaurant profit margin that
-                        runs between 2 and 6 percent.
-                    </Paragraph>
+                        <Paragraph big>
+                            Staff management also comes with is own list of challenges. From unexpected absenteeism to
+                            interpersonal conflicts, juggling staffing priorities will take up a lot of your time!
+                        </Paragraph>
 
-                    <Paragraph big>
-                        Staff management also comes with is own list of challenges. From unexpected absenteeism to
-                        interpersonal conflicts, juggling staffing priorities will take up a lot of your time!
-                    </Paragraph>
-
-                    <Paragraph big>
-                        No two days are the same for a catering business owner, but all those days will be long. From
-                        working out menus, training staff, marketing and administration in the mornings through
-                        delivering food and providing services, you can expect to start work before 8 a.m. and not
-                        finish until late. If you open a catering business, you need understanding family and friends
-                        because they will not be seeing much of you.
-                    </Paragraph>
-                </PanelWrapper>
-            </CollapseWrapper>
-        </TabsSection>
+                        <Paragraph big>
+                            No two days are the same for a catering business owner, but all those days will be long.
+                            From
+                            working out menus, training staff, marketing and administration in the mornings through
+                            delivering food and providing services, you can expect to start work before 8 a.m. and not
+                            finish until late. If you open a catering business, you need understanding family and
+                            friends
+                            because they will not be seeing much of you.
+                        </Paragraph>
+                    </PanelWrapper>
+                </CollapseWrapper>
+            </TabsSection>
+        </TabsWrapper>
 
         <TypeOfBusiness/>
 
         <SimpleSection>
+            <Oval2>
+                <OvalSvg2/>
+            </Oval2>
+            <Oval3>
+                <OvalSvg3/>
+            </Oval3>
             <Container>
                 <CenterBox>
                     <Heading>
@@ -482,7 +498,7 @@ const CateringBusiness = () => (
                     </CountingTextBoxed>
 
                     <Paragraph big mixed={true} style={{marginTop: "50px"}}>
-                        We’ve got the perfect <span style={{color: color.blue1, fontWeight: "bold"}}>guide to writing your business plan.</span>
+                        We’ve got the perfect <Link to="/">guide to writing your business plan.</Link>
                     </Paragraph>
                 </CenterBox>
             </Container>
@@ -493,6 +509,14 @@ const CateringBusiness = () => (
             <Oval>
                 <OvalOrange2Svg/>
             </Oval>
+
+            <Oval4>
+                <OvalOrange2Svg/>
+            </Oval4>
+
+            <Oval5>
+                <OvalOrange2Svg/>
+            </Oval5>
 
             <Container>
                 <BusinessOwnerResponsibilities>
@@ -510,7 +534,7 @@ const CateringBusiness = () => (
                             SvgImage={HandsIcon}
                             textBackgroundColor="transparent"
                             imageBackgroundColor={color.white}
-                            imageShadowColor="#ababab"
+                            imageShadowColor={shadow.white2}
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
@@ -520,12 +544,14 @@ const CateringBusiness = () => (
                             width={100}
                             widthUnit="%"
                         >
-                            <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                        mixed={true}>
-                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                    <ArrowSVG/>
-                                </IconCircle>
-                                Sole Proprietorship
+                                <FlexLink to="/">
+                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                        <ArrowSVG/>
+                                    </IconCircle>
+                                    Sole Proprietorship
+                                </FlexLink>
                             </Paragraph>
 
                             <Paragraph big>
@@ -539,7 +565,7 @@ const CateringBusiness = () => (
                             SvgImage={LimitedIcon}
                             textBackgroundColor="transparent"
                             imageBackgroundColor={color.white}
-                            imageShadowColor="#ababab"
+                            imageShadowColor={shadow.white2}
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
@@ -549,12 +575,14 @@ const CateringBusiness = () => (
                             width={100}
                             widthUnit="%"
                         >
-                            <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                        mixed={true}>
-                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                    <ArrowSVG/>
-                                </IconCircle>
-                                Limited Liability Company or LLC
+                                <FlexLink to="/">
+                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                        <ArrowSVG/>
+                                    </IconCircle>
+                                    Limited Liability Company or LLC
+                                </FlexLink>
                             </Paragraph>
 
                             <Paragraph big>
@@ -568,7 +596,7 @@ const CateringBusiness = () => (
                             SvgImage={SeriesIcon}
                             textBackgroundColor="transparent"
                             imageBackgroundColor={color.white}
-                            imageShadowColor="#ababab"
+                            imageShadowColor={shadow.white2}
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
@@ -578,12 +606,14 @@ const CateringBusiness = () => (
                             width={100}
                             widthUnit="%"
                         >
-                            <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                        mixed={true}>
-                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                    <ArrowSVG/>
-                                </IconCircle>
-                                Series LLC
+                                <FlexLink to="/">
+                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                        <ArrowSVG/>
+                                    </IconCircle>
+                                    Series LLC
+                                </FlexLink>
                             </Paragraph>
 
                             <Paragraph big>
@@ -597,7 +627,7 @@ const CateringBusiness = () => (
                             SvgImage={PlaneIcon}
                             textBackgroundColor="transparent"
                             imageBackgroundColor={color.white}
-                            imageShadowColor="#ababab"
+                            imageShadowColor={shadow.white2}
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
@@ -607,12 +637,14 @@ const CateringBusiness = () => (
                             width={100}
                             widthUnit="%"
                         >
-                            <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                        mixed={true}>
-                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                    <ArrowSVG/>
-                                </IconCircle>
-                                S Corporation
+                                <FlexLink to="/">
+                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                        <ArrowSVG/>
+                                    </IconCircle>
+                                    S Corporation
+                                </FlexLink>
                             </Paragraph>
 
                             <Paragraph big>
@@ -625,7 +657,7 @@ const CateringBusiness = () => (
                             SvgImage={RockerIcon}
                             textBackgroundColor="transparent"
                             imageBackgroundColor={color.white}
-                            imageShadowColor="#ababab"
+                            imageShadowColor={shadow.white2}
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
@@ -635,12 +667,14 @@ const CateringBusiness = () => (
                             width={100}
                             widthUnit="%"
                         >
-                            <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                        mixed={true}>
-                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                    <ArrowSVG/>
-                                </IconCircle>
-                                C Corporation
+                                <FlexLink to="/">
+                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                        <ArrowSVG/>
+                                    </IconCircle>
+                                    C Corporation
+                                </FlexLink>
                             </Paragraph>
 
                             <Paragraph big>
@@ -651,38 +685,47 @@ const CateringBusiness = () => (
 
                         <Paragraph big style={{paddingTop: "120px"}} mixed={true}>
                             For more information on the advantages and disadvantages of different types of businesses,
-                            please see our in-depth guide on business entities. If you still have questions, we’ve
-                            answered them to help you choose the right business structure.
+                            please <Link to="/">see our in-depth guide</Link> on business entities. If you still have
+                            questions, <Link to="/">we’ve
+                            answered them to help you choose the right business structure</Link>.
                         </Paragraph>
                         <Paragraph big mixed={true}>
-                            In most cases our recommendation would be to create an LLC. We have a complete guide to
-                            everything you need to do, and we can set one up for your T-shirt business. LLC formation
-                            does vary from state to state, but we’ve got you covered, wherever you are.
+                            In most cases our recommendation would be to create an LLC. We have a <Link to="/">complete
+                            guide to
+                            everything you need to do</Link>, and we can set one up for your T-shirt business. <Link
+                            to="/">LLC formation
+                            does vary from state to state</Link>, but we’ve got you covered, wherever you are.
                         </Paragraph>
 
-                        <Button theme="primary48" width="365px" arrow>
-                            Start your business with us, today!
-                        </Button>
+                        <Button theme="primary48" width="365px" arrow
+                                content={{url: "/", text: "Start your business with us, today!"}}/>
+
                     </ImageContent>
                 </BusinessOwnerResponsibilities>
 
-                <ContentCenter contentWidth={769} >
-                    <Heading size={3} style={{fontSize: "40px", marginTop: "100px"}}>
-                        Special Considerations for Setting up a Cleaning Business Entity
-                    </Heading>
+                <ContentCenter contentWidth={770}>
+                    <div>
+                        <Heading size={3} style={{fontSize: "40px", marginTop: "100px", textAlign: "left"}}>
+                            Special Considerations for Setting up a Cleaning Business Entity
+                        </Heading>
 
-                    <Paragraph big mixed={true}>
-                        For more information on the advantages and disadvantages of different types of businesses,
-                        please see our in-depth guide. If you’ve still got questions, we’ve answered them to help you
-                        choose the right business structure.
-                    </Paragraph>
-                    <Paragraph big mixed={true}>
-                        In almost every case, the right business entity for a caterer is going to be an LLC. It provides
-                        you with liability protection, is easy to set up and run, has low administrative overhead and
-                        can be tax advantageous. We’ve got a complete guide to everything you need to do here, and we
-                        can set one up for your catering business. LLC formation does vary from state to state, but
-                        we’ve got you covered, wherever you are.
-                    </Paragraph>
+                        <Paragraph big mixed={true}>
+                            For more information on the advantages and disadvantages of different types of businesses,
+                            please see our in-depth guide. If you’ve still got questions, we’ve answered them to help
+                            you
+                            choose the right business structure.
+                        </Paragraph>
+                        <Paragraph big mixed={true}>
+                            In almost every case, the right business entity for a caterer is going to be an LLC. It
+                            provides
+                            you with liability protection, is easy to set up and run, has low administrative overhead
+                            and
+                            can be tax advantageous. We’ve got a complete guide to everything you need to do here, and
+                            we
+                            can set one up for your catering business. LLC formation does vary from state to state, but
+                            we’ve got you covered, wherever you are.
+                        </Paragraph>
+                    </div>
                 </ContentCenter>
             </Container>
         </OrangeContainer>
@@ -691,15 +734,25 @@ const CateringBusiness = () => (
 
         <OrderNow/>
 
-        <Links />
+        <Links/>
 
-        <UsefulTools style={{paddingBottom: "200px"}} toolsList={toolsList.tools} headlineText={toolsList.headlineText}
-                     description={toolsList.description}/>
+        <ToolsWrapper>
+            <Oval6>
+                <OvalSvg4/>
+            </Oval6>
+            <Container>
+                <UsefulTools style={{paddingBottom: "200px"}} toolsList={toolsList.tools}
+                             headlineText={toolsList.headlineText}
+                             description={toolsList.description}/>
+            </Container>
+        </ToolsWrapper>
 
-        <Conclusion to="/" buttonTitle="Start your Etsy Business with us, today">
+        <Conclusion to="/" buttonTitle="Start your Catering Business with us, today">
             <Heading size={3} style={{fontSize: "40px"}}>Conclusion</Heading>
             <Paragraph big>
-                If you want to start a business that’s going to be a challenge but also bring a huge amount of pleasure and reward, then running a catering company could be right for you. The food you create and the trust you build will help set you apart in the minds of your clients and bring joy into people’s lives.
+                If you want to start a business that’s going to be a challenge but also bring a huge amount of pleasure
+                and reward, then running a catering company could be right for you. The food you create and the trust
+                you build will help set you apart in the minds of your clients and bring joy into people’s lives.
             </Paragraph>
         </Conclusion>
     </Layout>
@@ -727,42 +780,19 @@ const ListBox = styled.div`
     }
 `;
 
-const BlueContainer = styled.section`
-    background: rgb(242,246,255);
-    background: linear-gradient(0deg, rgba(242,246,255,1) 0%, rgba(250,251,255,1) 100%);
-    padding-top: 100px;
-    position: relative;
-`;
-
 const CenterBox = styled.div`
     width: 100%;
     padding-bottom: 100px;
+    max-width: 670px;
     
     @media (min-width: 670px) {
-        width: 670px;
         margin: 0 auto;
-    }
-`;
-
-const GridSectionList = styled.div`
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 100%;
-    margin-top: 100px;
-    
-    > div {
-        margin-bottom: 70px;
-    }
-    
-    @media (min-width: 970px) {
-        width: 970px;
-        margin: 100px auto 0;
     }
 `;
 
 const SimpleSection = styled.div`
     padding-top: 100px;
+    position: relative;
 `;
 
 const BusinessOwnerResponsibilities = styled.section`
@@ -786,6 +816,105 @@ const Oval = styled.div`
   position: absolute; 
   left: 0;
   top: 200px;
+  width: 100%;
+    
+    @media (min-width: 570px){
+        width: 570px;
+    }
 `
+
+const TabsWrapper = styled.div`
+    position: relative;
+`;
+
+const OvalTabs = styled.div`
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0;
+    
+    @media (min-width: 420px){
+        width: 420px;
+    }
+`;
+
+const OvalTabs2 = styled.div`
+    position: absolute;
+    width: 100%;
+    bottom: 36px;
+    right: 0;
+    
+    @media (min-width: 420px){
+        width: 420px;
+    }
+`;
+
+const Oval2 = styled.div`
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    
+    @media (min-width: 720px){
+        width: 720px;
+    }
+`;
+
+const Oval3 = styled.div`
+    position: absolute;
+    width: 100%;
+    bottom: 100px;
+    right: 0;
+    transform: scaleX(-1);
+    
+    @media (min-width: 720px){
+        width: 720px;
+    }
+`;
+
+const Oval4 = styled.div`
+    position: absolute;
+    width: 100%;
+    bottom: 210px;
+    left: 0;
+    
+    @media (min-width: 420px){
+        width: 420px;
+    }
+`;
+
+const Oval5 = styled.div`
+    position: absolute;
+    width: 100%;
+    bottom: 164px;
+    right: 0;
+    transform: scaleX(-1);
+    
+    @media (min-width: 720px){
+        width: 720px;
+    }
+`;
+
+const ToolsWrapper = styled.div`
+    position: relative;
+`;
+
+const Oval6 = styled.div`
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    
+    @media (min-width: 720px){
+        width: 720px;
+    }
+`;
+
+const FlexLink = styled(Link)`
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+`;
 
 export default CateringBusiness;

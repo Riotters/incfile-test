@@ -17,11 +17,17 @@ const CardWrapper = styled.div`
     margin: 0 15px 30px;
     overflow: hidden;
     background-color: white;
-    min-height: 708px;
+    width: 100%;
     
-    @media (min-width: 370px) { 
+    @media (min-width: 992px) { 
+        margin: 0 auto 30px;
+        width: 300px;
+    }
+    
+    @media (min-width: 1110px) { 
         margin: 0 auto 30px;
         width: 370px;
+        min-height: 708px;
     }
     
     @media (min-width: 1024px) {

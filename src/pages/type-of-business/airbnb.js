@@ -43,7 +43,7 @@ const Airbnb = () => (
         <SEO title="What is a Nonprofit Organization? How to Start a Nonprofit"
              description="Learn all about nonprofit corporations, including the benefits & disadvantages, getting 501c3 status, and what's needed to get your company off the ground."/>
 
-        <Top ovalColor="sun" imageName="airbnb" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
+        <Top ovalColor="sun" imageName="airbnb-main" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
             <h1>How to Start an Airbnb</h1>
             <p>Airbnb has only been with us since 2008, but over the last few years,
                 it’s turned over half a million people into entrepreneurs.</p>
@@ -423,13 +423,12 @@ const TabsWrapper = styled.section`
 
 const TabOvalOne = styled.div`
     position: absolute;
-    width: 420px;
+    width: 100%;
     left: 0;
     top: 21px;
-    display: none;
   
-    @media (min-width: 720px){
-       display: block;
+    @media (min-width: 420px){
+       width: 420px;
     }
     svg {
         transform: scaleX(-1);
@@ -438,13 +437,12 @@ const TabOvalOne = styled.div`
 
 const TabOvalTwo = styled.div`
     position: absolute;
-    width: 420px;
+    width: 100%;
     right: 0;
     top: 674px;
-    display: none;
   
-    @media (min-width: 720px){
-       display: block;
+    @media (min-width: 420px){
+       width: 420px;
     }
 `;
 export default Airbnb;

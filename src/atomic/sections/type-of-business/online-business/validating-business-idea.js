@@ -9,7 +9,7 @@ import InvolvedIcon from "../../../../images/icons/get-involved-with-business-co
 import {color} from "../../../../components/styles/colors";
 import React from "react";
 import styled from "styled-components";
-import OvalBlueSVG from "../../../../images/oval-blue-4.inline.svg";
+import OvalSvg from "../../../../images/ovals/bottom-left-transparent-orange.inline.svg";
 import Curve from "../../../atoms/shapes/curve";
 import {gradient} from "../../../atoms/styles/colors";
 
@@ -24,15 +24,14 @@ const ContainerWrapper = styled.div`
 
 const GridSection = styled.div`
     width: 100%;
-    margin-top: 110px;
 `;
 
 const TitleBox = styled.div`
     width: 100%;
     position: relative;
-     
+    max-width: 750px;
+    
     @media (min-width:750px) {
-        width: 750px;
         margin: 0 auto;
     }
     
@@ -49,46 +48,38 @@ const GridSectionList = styled.div`
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
+    max-width: 970px;
     
     > div {
         margin-bottom: 70px;
     }
     
     @media (min-width: 970px) {
-        width: 970px;
         margin: 120px auto 0;
-    }
-`;
-
-const TextBorderedSection = styled.div`
-    width: 100%;
-    padding-top: 100px;
-    
-    @media (min-width: 670px) {
-        width: 670px;
-        margin: 0 auto;
-    }
-    
-    h3{
-        color: #1d1d1d;
-        font-size: 40px;
-        text-align: center;
-        margin-bottom: 24px;
-    }
-`;
-
-const TextBorderedList = styled.div`
-    margin-top: 80px;
-    
-    >div {
-        margin-bottom: 8px;
     }
 `;
 
 const OvalCenter = styled.div`
   position: absolute;
+  left: 0;
+  top: 282px;
+  width: 100%;
+    
+    @media (min-width: 570px){
+        width: 570px;
+    }
+`
+
+const OvalCenter2 = styled.div`
+  position: absolute;
   right: 0;
-  top: 0;
+  bottom: 286px;
+  transform: rotate(180deg);
+  width: 100%;
+    
+    @media (min-width: 570px){
+        width: 570px;
+    }
 `
 
 const AbsoluteCurve = styled.div`
@@ -101,15 +92,18 @@ const AbsoluteCurve = styled.div`
 const ValidatingBusinessIdea = () => (
     <ContainerWrapper>
         <OvalCenter>
-            <OvalBlueSVG/>
+            <OvalSvg/>
         </OvalCenter>
+        <OvalCenter2>
+            <OvalSvg/>
+        </OvalCenter2>
 
         <Container>
 
             <GridSection>
                 <TitleBox>
                     <AbsoluteCurve>
-                        <Curve color={color.blue1}/>
+                        <Curve color={color.orange1}/>
                     </AbsoluteCurve>
                     <Heading size={3}>Validating Your Online Business Idea</Heading>
                     <Paragraph big>
@@ -123,7 +117,7 @@ const ValidatingBusinessIdea = () => (
                         understand all about product marketing, profit margins, working with suppliers and getting
                         customers?
                     </Paragraph>
-                    <Paragraph big style={{fontWeight: "bold"}}>
+                    <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
                         Don’t assume that just because it’s online, it’s easy.
                     </Paragraph>
                     <Paragraph big>

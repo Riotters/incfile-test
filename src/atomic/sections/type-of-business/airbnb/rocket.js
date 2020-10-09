@@ -21,7 +21,7 @@ const Rocket = () => (
         </Moon>
         <Container>
             <RocketWrapper>
-                <Image filename="rocket" alt="rocket lunch"/>
+                <Image filename="rocket-2x" alt="rocket lunch"/>
             </RocketWrapper>
             <Content>
                 <Heading size={4} style={{fontFamily: "MarkPro-Bold, sans-serif", fontSize: "40px"}}>
@@ -32,9 +32,7 @@ const Rocket = () => (
                     you can create great listings, build positive reviews, understand your competitors and put
                     together a solid business plan, you will have every chance for success
                 </Paragraph>
-                <Button theme="primary56" arrow>
-                    ds
-                </Button>
+                <Button theme="primary56" arrow width="410px" content={{url: "/", text: "Start your Airbnb Business with us, today!"}} />
             </Content>
         </Container>
     </Wrapper>
@@ -52,36 +50,16 @@ const Wrapper = styled.div`
 `
 
 const RocketWrapper = styled.div`
-  display: none;
-  width: 50%;
-  max-width: 755px;
-  position: absolute;
-  top: 50%;
-  left: -150px;
-  transform: translateY(-50%);
-  z-index: -1;
-
-  @media (min-width: 769px) {
-    display: flex;
-  }
-
-  &::after {
-    content: "";
-    display: block;
-    padding-top: 100%;
-  }
-
-  .gatsby-image-wrapper {
-    position: absolute !important;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-
-    img {
-      object-fit: contain !important;
+  position absolute;
+    left: -15%;
+    top: calc(50% - 313px);
+    width: 720px;
+    height: 626px;
+    display: none;
+    
+    @media (min-width: 1130px) {
+        display: block;
     }
-  }
 `
 
 const Oval = styled.div`
@@ -135,12 +113,13 @@ const Moon = styled.div`
 `
 
 const Content = styled.div`
-  width: 100%;
-  
-  @media (min-width: 769px) {
-        width: 600px; 
-        margin-left: 40%;
-  }
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+    
+    @media (min-width: 1130px){
+        margin: 0 0 0px auto;
+    }
 `
 
 export default Rocket;

@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import {gradient} from "../../../atoms/styles/colors";
 import Container from "../../../container";
 import TextCenterLayout from "../../../partials/heading-center";
 import Adventages from "../../../../components/adventages";
@@ -8,17 +7,25 @@ import {color} from "../../../../components/styles/colors";
 import {shadow} from "../../../../components/styles/shadows";
 import {typeBusiness} from "../../../../static/type-of-business/food-truck-business";
 import Curve from "../../../atoms/shapes/curve";
-import OvalSvg from "../../../../images/oval-orange-4.inline.svg";
+import OvalSvg from "../../../../images/ovals/top-right-transparent-orange.inline.svg";
 
 const TypeBusiness = () => (
     <Wrapper>
         <Oval>
             <OvalSvg/>
         </Oval>
+        <Oval2>
+            <OvalSvg/>
+        </Oval2>
+        <TextCenterLayout
+            headlineWidth={770}
+            textWidth={770}
+            headline="What Type of Food Truck Business Should You Start?"
+            text="When it comes to starting a food truck business, you have plenty of choices. Here are the main areas where food truck businesses can be successful:"
+        />
+
         <Container>
             <Service>
-                <TextCenterLayout headline="What Type of Food Truck Business Should You Start?"
-                                  text="When it comes to starting a food truck business, you have plenty of choices. Here are the main areas where food truck businesses can be successful:"/>
 
                 <AdventagesBox>
                     <CurveWrapper>
@@ -46,7 +53,7 @@ const TypeBusiness = () => (
 
 const Wrapper = styled.div`
     background: rgba(255,255,255,1);
-    background-image: ${gradient.orange3}; 
+    background-color: ${color.orange3}; 
     padding-top: 100px;
     position: relative;
 `;
@@ -60,7 +67,7 @@ const AdventagesBox = styled.div`
   flex-wrap: wrap;
   width: 100%;
   max-width: 970px;
-  margin: 140px auto 0;
+  margin: 0 auto 80px;
   position: relative;
  
 `;
@@ -74,7 +81,24 @@ const CurveWrapper = styled.div`
 const Oval = styled.div`
     position: absolute;
     right: 0;
-    top: 300px;
+    top: 353px;
+    width: 100%;
+    
+    @media (min-width: 720px){
+        width: 720px;
+    }
+`;
+
+const Oval2 = styled.div`
+    position: absolute;
+    left: 0;
+    bottom: 29px;
+    width: 100%;
+    transform: rotate(180deg);
+    
+    @media (min-width: 570px){
+        width: 570px;
+    }
 `;
 
 export default TypeBusiness;

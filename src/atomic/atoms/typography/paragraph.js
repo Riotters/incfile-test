@@ -11,6 +11,7 @@ const StyledParagraph = styled.p`
     max-width: ${(props) => (props.maxWidth ? `${props.maxWidth}px` : "")};
     padding-bottom: ${(props) => (props.bottomPadding ? `${props.bottomPadding}px` : "")};
     margin-bottom: ${(props) => props.bottomMargin}px;
+    margin-top: ${(props) => props.topMargin}px;
     
     ${(props) => props.flex && "display: flex;"}
         
@@ -25,12 +26,28 @@ const StyledParagraph = styled.p`
     span.blue {
         color: ${color.blue1}
     }
+    
+    a{
+      color: ${color.blue1};
+      font-size: ${(props) => (props.big ? "20" : "16")}px;
+      line-height: ${(props) => (props.big ? "32" : "24")}px;
+      
+      ${props => props.big && 
+        "font-family: Avenir-Heavy, sans-serif;"
+      }
+
+      transition: all 0.3s ease-in-out;
+      
+      &:hover{
+        color: ${color.orange1};
+      }
+    }
 `;
 
 export const Paragraph = ({ children, maxWidth, mixed, ...rest }) => (
   <StyledParagraph maxWidth={maxWidth} {...rest}>
     {(typeof children === "string" || mixed) ? children : null}
-    {(typeof children === "object" && mixed === false) ? children.map((el, id) => (id % 2 ? <Link to={el.url}>{` ${el.text} `}</Link> : el.text)) : null}
+    {(typeof children === "object" && mixed === false) ? children.map(el => (el.url ? <Link to={el.url}>{` ${el.text} `}</Link> : el.text)) : null}
   </StyledParagraph>
 );
 
@@ -43,6 +60,7 @@ Paragraph.propTypes = {
   maxWidth: PropTypes.number,
   bottomPadding: PropTypes.number,
   bottomMargin: PropTypes.number,
+  topMargin: PropTypes.number,
   mixed: PropTypes.bool,
 };
 

@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import styled from "styled-components";
 import {Heading} from "../../../atoms/typography/heading";
 import {Paragraph} from "../../../atoms/typography/paragraph";
-
+import {color} from "../../../atoms/styles/colors";
 import Container from "../../../../components/container";
 import VisibilitySensor from "../../../../components/VisibilitySensor";
 import ArrowSVG from "../../../../images/arrow.inline.svg";
@@ -12,6 +12,7 @@ import AgentColoredIcon from "../../../../images/icons/registered-agent-colored.
 import CountingTextBoxed from "../../../molecules/text-blocks/counting-text-boxed";
 import CkeckText from "../../../../components/static-check/text-only";
 import TextBoxed from "../../../molecules/static-check/circle-checkmark-text-boxed";
+import {Link} from "gatsby";
 
 const ButtonList = [
     {
@@ -75,7 +76,8 @@ const TabScrollable = ({layout, columns}) => {
                                         Of course, along with running a business there are many rules, regulations and
                                         legalities you need to be aware of.
                                     </Paragraph>
-                                    <Paragraph big mixed={true} style={{fontWeight: "bold"}}>
+                                    <Paragraph big mixed={true}
+                                               style={{fontFamily: "Avenir-Heavy", color: color.black}}>
                                         Liquor Licenses, Business Licenses and Permits
                                     </Paragraph>
                                     <Paragraph big mixed={true}>
@@ -87,52 +89,70 @@ const TabScrollable = ({layout, columns}) => {
 
                                     <CountingTextBoxed number={1}>
                                         <div>
-                                            <Paragraph big style={{fontWeight: "bold", marginBottom: 0}}>
+                                            <Paragraph big style={{
+                                                fontFamily: "Avenir-Heavy",
+                                                color: color.black,
+                                                marginBottom: 0
+                                            }}>
                                                 Local
                                             </Paragraph>
                                             <Paragraph bottomMargin={0}>
                                                 Your region, county or city may require you to have licenses or permits
-                                                to
-                                                operate a business. Talk to your city’s Chamber of Commerce to learn
-                                                about
-                                                your local licensing and permit requirements. In particular, you will
-                                                need
-                                                to understand the laws around serving alcohol and opening hours.
+                                                to operate a business. Talk to your city’s Chamber of Commerce to learn
+                                                about your local licensing and permit requirements. In particular, you
+                                                will need to understand the laws around serving alcohol and opening
+                                                hours.
                                             </Paragraph>
                                         </div>
                                     </CountingTextBoxed>
 
                                     <CountingTextBoxed number={2}>
                                         <div>
-                                            <Paragraph big style={{fontWeight: "bold", marginBottom: 0}}>
+                                            <Paragraph big style={{
+                                                fontFamily: "Avenir-Heavy",
+                                                color: color.black,
+                                                marginBottom: 0
+                                            }}>
                                                 State
                                             </Paragraph>
-                                            <Paragraph bottomMargin={0}>
+                                            <Paragraph bottomMargin={0} mixed>
                                                 You can find all the information you need on statewide licenses and
                                                 permits
                                                 on the website for your Secretary of State. You can find all those
                                                 details
-                                                in our state-by-state guides to company formation. Alternatively, the
+                                                in our <Link to="/">state-by-state guides to company formation</Link>.
+                                                Alternatively, the
                                                 Small
-                                                Business Administration website has a list of licenses and permits by
-                                                state.
+                                                Business Administration website has a <Link to="/">list of licenses and
+                                                permits by
+                                                state</Link>.
                                             </Paragraph>
                                         </div>
                                     </CountingTextBoxed>
 
                                     <CountingTextBoxed number={3}>
                                         <div>
-                                            <Paragraph big style={{fontWeight: "bold", marginBottom: 0}}>
+                                            <Paragraph big style={{
+                                                fontFamily: "Avenir-Heavy",
+                                                color: color.black,
+                                                marginBottom: 0
+                                            }}>
                                                 Federal
                                             </Paragraph>
-                                            <Paragraph bottomMargin={0}>
-                                                The Small Business Administration provides details of any national
-                                                or federal licenses and permits you might need.
+                                            <Paragraph bottomMargin={0} mixed>
+                                                The Small Business Administration provides <Link to="/">details of any
+                                                national
+                                                or federal licenses and permits</Link> you might need.
                                             </Paragraph>
                                         </div>
                                     </CountingTextBoxed>
 
-                                    <Paragraph big style={{fontWeight: "bold", marginTop: "48px", marginBottom: 0}}>
+                                    <Paragraph big style={{
+                                        fontFamily: "Avenir-Heavy",
+                                        color: color.black,
+                                        marginTop: "48px",
+                                        marginBottom: 0
+                                    }}>
                                         When researching your licensing requirements, pay very careful attention to the
                                         following areas:
                                     </Paragraph>
@@ -191,8 +211,9 @@ const TabScrollable = ({layout, columns}) => {
                                         </ListBox>
                                     </ListWrapper>
 
-                                    <Heading size={3} style={{marginTop: "120px", marginBottom: "24px"}}>Business
-                                        Insurance</Heading>
+                                    <Heading size={3} style={{marginTop: "120px", marginBottom: "24px"}}>
+                                        Business Insurance
+                                    </Heading>
                                     <Paragraph big mixed={true}>
                                         Most bar or club businesses should have comprehensive business insurance. There
                                         are different types.
@@ -200,11 +221,15 @@ const TabScrollable = ({layout, columns}) => {
 
                                     <CountingTextBoxed number={1}>
                                         <div>
-                                            <Paragraph big style={{fontWeight: "bold", marginBottom: 0}}>
+                                            <Paragraph big style={{
+                                                fontFamily: "Avenir-Heavy",
+                                                color: color.black,
+                                                marginBottom: 0
+                                            }}>
                                                 Workers compensation insurance
                                             </Paragraph>
-                                            <Paragraph bottomMargin={0}>
-                                                This insurance provides coverage for job-related illnesses, disabilities
+                                            <Paragraph bottomMargin={0} mixed>
+                                                <Link to="/">This insurance</Link> provides coverage for job-related illnesses, disabilities
                                                 or injuries that affect employees. Regulations for this insurance vary
                                                 from state to state. It typically covers areas like medical costs, loss
                                                 of earnings, compensation and retraining.
@@ -213,7 +238,11 @@ const TabScrollable = ({layout, columns}) => {
                                     </CountingTextBoxed>
                                     <CountingTextBoxed number={2}>
                                         <div>
-                                            <Paragraph big style={{fontWeight: "bold", marginBottom: 0}}>
+                                            <Paragraph big style={{
+                                                fontFamily: "Avenir-Heavy",
+                                                color: color.black,
+                                                marginBottom: 0
+                                            }}>
                                                 General liability insurance
                                             </Paragraph>
                                             <Paragraph bottomMargin={0}>
@@ -235,18 +264,18 @@ const TabScrollable = ({layout, columns}) => {
                                     </Paragraph>
 
                                     <Paragraph big mixed={true}>
-                                        Although you can act as your own Registered Agent, we recommend using a
+                                        Although you can act as your own <Link to="/">Registered Agent</Link>, we recommend using a
                                         professional service. It ensures there will always be someone available to
                                         receive important legal documentation on your behalf and also removes your name
                                         and address from the public record.
                                     </Paragraph>
 
                                     <Paragraph big mixed={true}>
-                                        When you incorporate through us, we provide a complete Registered Agent service
+                                        When you <Link to="/">incorporate through us</Link>, we provide a <Link to="/">complete Registered Agent service</Link>
                                         free for the first year.
                                     </Paragraph>
 
-                                    <Paragraph big mixed={true} style={{fontWeight: "bold"}}>
+                                    <Paragraph big mixed={true} style={{fontFamily: "Avenir-Heavy", color: color.black}}>
                                         Business Taxes for Bars and Clubs
                                     </Paragraph>
                                     <Paragraph big mixed={true}>
@@ -357,7 +386,7 @@ const TabScrollable = ({layout, columns}) => {
 
                                     <Paragraph big style={{marginTop: "48px"}}>
                                         As a rule of thumb, we recommend keeping back around a third of your earnings to
-                                        pay your taxes. We can prepare and file your tax returns for you.
+                                        pay your taxes. We can <Link to="/">prepare and file your tax returns for you</Link>.
                                     </Paragraph>
                                 </PanelWrapper>
                             </>
@@ -433,6 +462,10 @@ const PanelWrapper = styled.article`
 
   h3 {
     margin-bottom: 48px;
+  }
+  
+  @media (min-width: 768px){
+    padding-left: 30px;
   }
 `
 
@@ -538,7 +571,11 @@ const ListWrapper = styled.div`
 `;
 
 const ListBox = styled.div`
-    width: 50%;
+    width: 100%;
+    
+    @media (min-width: 587px){
+        width: 50%;
+    }
 `;
 
 const StickyContainer = styled.div`

@@ -14,11 +14,11 @@ import HandsIcon from "../../../../images/icons/hands.inline.svg";
 import LLCIcon from "../../../../images/icons/limited-liability-company.inline.svg"
 import Button from "../../../molecules/buttons/button";
 import Container from "../../../container";
-import OvalGreen3 from "../../../../images/oval-green-3.inline.svg";
+import OvalSvg from "../../../../images/ovals/top-left-transparent-orange.inline.svg";
 import {shadow} from "../../../atoms/styles/shadows";
 import {gradient} from "../../../atoms/styles/colors";
-import Colorbox from "../../../../components/color-box";
 import RegisteredAgentIcon from "../../../../images/icons/registered-agent-service.inline.svg";
+import {Link} from "gatsby";
 
 const BusinessOwnerResponsibilities = styled.section`
   position: relative;
@@ -40,15 +40,44 @@ const OrangeContainer = styled.div`
 const Oval = styled.div`
   position: absolute;
   left: 0;
-  top: 200px;
+  top: 211px;
+  width: 100%;
+    
+  @media (min-width: 570px){
+        width: 570px;
+  }
 `
+
+const Oval2 = styled.div`
+  position: absolute;
+  right: 0;
+  top: calc(50% - 285px);
+  width: 100%;
+  transform: scaleX(-1);
+    
+  @media (min-width: 570px){
+        width: 570px;
+  }
+`
+
+const FlexLink = styled(Link)`
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+`;
+
 
 const CoachBusinessStructure = () => (
     <OrangeContainer>
 
         <Oval>
-            <OvalGreen3/>
+            <OvalSvg/>
         </Oval>
+
+        <Oval2>
+            <OvalSvg/>
+        </Oval2>
+
 
         <Container>
             <BusinessOwnerResponsibilities>
@@ -76,12 +105,14 @@ const CoachBusinessStructure = () => (
                         width={100}
                         widthUnit="%"
                     >
-                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                    mixed={true}>
-                            <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                <ArrowSVG/>
-                            </IconCircle>
-                            Sole Proprietorship
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                Sole Proprietorship
+                            </FlexLink>
                         </Paragraph>
 
                         <Paragraph big>
@@ -95,7 +126,7 @@ const CoachBusinessStructure = () => (
                         SvgImage={LimitedIcon}
                         textBackgroundColor="transparent"
                         imageBackgroundColor={color.white}
-                        imageShadowColor="#ababab"
+                        imageShadowColor={shadow.white2}
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
@@ -105,12 +136,14 @@ const CoachBusinessStructure = () => (
                         width={100}
                         widthUnit="%"
                     >
-                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                    mixed={true}>
-                            <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                <ArrowSVG/>
-                            </IconCircle>
-                            Limited Liability Company or LLC
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                Limited Liability Company or LLC
+                            </FlexLink>
                         </Paragraph>
 
                         <Paragraph big>
@@ -124,7 +157,7 @@ const CoachBusinessStructure = () => (
                         SvgImage={LLCIcon}
                         textBackgroundColor="transparent"
                         imageBackgroundColor={color.white}
-                        imageShadowColor="#ababab"
+                        imageShadowColor={shadow.white2}
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
@@ -134,12 +167,14 @@ const CoachBusinessStructure = () => (
                         width={100}
                         widthUnit="%"
                     >
-                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                    mixed={true}>
-                            <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                <ArrowSVG/>
-                            </IconCircle>
-                            Series LLC
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                Series LLC
+                            </FlexLink>
                         </Paragraph>
 
                         <Paragraph big>
@@ -153,7 +188,7 @@ const CoachBusinessStructure = () => (
                         SvgImage={PlaneIcon}
                         textBackgroundColor="transparent"
                         imageBackgroundColor={color.white}
-                        imageShadowColor="#ababab"
+                        imageShadowColor={shadow.white2}
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
@@ -163,12 +198,14 @@ const CoachBusinessStructure = () => (
                         width={100}
                         widthUnit="%"
                     >
-                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                    mixed={true}>
-                            <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                <ArrowSVG/>
-                            </IconCircle>
-                            S Corporation
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                S Corporation
+                            </FlexLink>
                         </Paragraph>
 
                         <Paragraph big>
@@ -181,7 +218,7 @@ const CoachBusinessStructure = () => (
                         SvgImage={RockerIcon}
                         textBackgroundColor="transparent"
                         imageBackgroundColor={color.white}
-                        imageShadowColor="#ababab"
+                        imageShadowColor={shadow.white2}
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
@@ -191,12 +228,14 @@ const CoachBusinessStructure = () => (
                         width={100}
                         widthUnit="%"
                     >
-                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                    mixed={true}>
-                            <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                <ArrowSVG/>
-                            </IconCircle>
-                            C Corporation
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                C Corporation
+                            </FlexLink>
                         </Paragraph>
 
                         <Paragraph big>
@@ -210,34 +249,49 @@ const CoachBusinessStructure = () => (
                     </Heading>
 
                     <Paragraph big style={{marginBottom: 0}}>
-                        As a digital nomad, you will have some unique circumstances for how you're going to setup your business. To start with, we recommend an LLC — the combination of a low administrative overhead and liability protection are great for your peace-of-mind. Secondly, you will probably want to take advantage of our Registered Agent service - it means there will always be someone available to receive official documents, even if you're out of the country.
+                        As a digital nomad, you will have some unique circumstances for how you're going to setup your
+                        business. To start with, we recommend an LLC — the combination of a low administrative overhead
+                        and liability protection are great for your peace-of-mind. Secondly, you will probably want to
+                        take advantage of our <Link to="/">Registered Agent service</Link> - it means there will always
+                        be someone available
+                        to receive official documents, even if you're out of the country.
                     </Paragraph>
 
                     <SpecialBox radiusTop>
                         <Icon>
-                            <RegisteredAgentIcon />
+                            <RegisteredAgentIcon/>
                         </Icon>
                         <Text>
                             <Heading size={3} style={{marginBottom: 0, paddingBottom: "8px"}}>Choose an LLC</Heading>
-                            <Paragraph style={{paddingBottom: 0, marginBottom: 0}}>Limited Liability Company is the perfect choice for a Digital Nomad</Paragraph>
+                            <Paragraph style={{paddingBottom: 0, marginBottom: 0}}>Limited Liability Company is the
+                                perfect choice for a Digital Nomad</Paragraph>
                         </Text>
                     </SpecialBox>
 
                     <SpecialBox radiusBottom>
                         <Icon>
-                            <RegisteredAgentIcon />
+                            <RegisteredAgentIcon/>
                         </Icon>
                         <Text>
-                            <Heading size={3} style={{marginBottom: 0, paddingBottom: "8px"}}>Registered Agent service</Heading>
-                            <Paragraph style={{paddingBottom: 0, marginBottom: 0}}>Use Incfile’s Registered Agent service so that there’s always someone available to receive official documents, even if you're out of the country</Paragraph>
+                            <Heading size={3} style={{marginBottom: 0, paddingBottom: "8px"}}>Registered Agent
+                                service</Heading>
+                            <Paragraph style={{paddingBottom: 0, marginBottom: 0}}>Use Incfile’s Registered Agent
+                                service so that there’s always someone available to receive official documents, even if
+                                you're out of the country</Paragraph>
                         </Text>
                     </SpecialBox>
 
                     <Paragraph big style={{marginTop: "48px"}}>
-                        Next, you have more choice than most entrepreneurs on which state to from your LLC in. If you're going to be in your home state and running your LLC from there for any period, that's the best place to base it. If not, you can choose to form your LLC almost anywhere. In those cases, forming it in a business-friendly state like Delaware could be a great idea.
+                        Next, you have more choice than most entrepreneurs on which state to from your LLC in. If you're
+                        going to be in your home state and running your LLC from there for any period, that's the best
+                        place to base it. If not, you can choose to form your LLC almost anywhere. In those cases,
+                        forming it in a business-friendly state like Delaware could be a great idea.
                     </Paragraph>
                     <Paragraph big>
-                        Finally, think about the addresses you're going to use in the U.S. for your company. Could you use a parent or relative's house? Do you want to receive documents other than official legal documents (that would go to your registered agent) there? Answering these questions ahead of time will make setting up your digital nomad business much easier.
+                        Finally, think about the addresses you're going to use in the U.S. for your company. Could you
+                        use a parent or relative's house? Do you want to receive documents other than official legal
+                        documents (that would go to your registered agent) there? Answering these questions ahead of
+                        time will make setting up your digital nomad business much easier.
                     </Paragraph>
 
                     <Heading size={3} style={{maxWidth: "100%"}} bottomMargin={0}>
@@ -245,23 +299,28 @@ const CoachBusinessStructure = () => (
                     </Heading>
 
                     <Paragraph big bottomMargin={0} style={{paddingBottom: 0}}>
-                        As a real estate investment entrepreneur, the standard or series LLC is very likely the best option for you. They do not have a lot of administrative overhead and still provide you with good liability protection.
+                        As a real estate investment entrepreneur, the standard or series LLC is very likely the best
+                        option for you. They do not have a lot of administrative overhead and still provide you with
+                        good liability protection.
                     </Paragraph>
 
                     <Paragraph big style={{paddingTop: "120px"}} mixed={true}>
                         For more information on the advantages and disadvantages of different types of businesses,
-                        please see our in-depth guide on business entities. If you still have questions, we’ve answered
-                        them to help you choose the right business structure.
+                        please <Link to="/">see our in-depth guide</Link> on business entities. If you still have
+                        questions, <Link to="/">we’ve answered
+                        them to help you choose the right business structure</Link>.
                     </Paragraph>
                     <Paragraph big mixed={true}>
-                        In most cases our recommendation would be to create an LLC. We have a complete guide to
-                        everything you need to do, and we can set one up for your T-shirt business. LLC formation does
-                        vary from state to state, but we’ve got you covered, wherever you are.
+                        In most cases our recommendation would be to create an LLC. We have a <Link to="/">complete
+                        guide to
+                        everything you need to do</Link>, and we can set one up for your T-shirt business. <Link to="/">LLC
+                        formation does
+                        vary from state to state</Link>, but we’ve got you covered, wherever you are.
                     </Paragraph>
 
-                    <Button theme="primary48" width="365px" arrow>
-                        Start your business with us, today!
-                    </Button>
+                    <Button theme="primary48" width="365px" arrow
+                            content={{url: "/", text: "Start your business with us, today!"}}/>
+
                 </ImageContent>
             </BusinessOwnerResponsibilities>
         </Container>
@@ -278,14 +337,14 @@ const SpecialBox = styled.div`
     justify-content: flex-start;
     
     ${props => props.radiusTop &&
-        "border-top-left-radius: 30px;" +
-        "border-top-right-radius: 30px;"
-    }
+    "border-top-left-radius: 30px;" +
+    "border-top-right-radius: 30px;"
+}
     
     ${props => props.radiusBottom &&
-        "border-bottom-left-radius: 30px;" +
-        "border-bottom-right-radius: 30px;"
-    }
+    "border-bottom-left-radius: 30px;" +
+    "border-bottom-right-radius: 30px;"
+}
 `;
 
 const Icon = styled.div`

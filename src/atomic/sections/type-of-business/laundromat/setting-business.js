@@ -4,10 +4,10 @@ import TextCenterLayout from "../../../partials/heading-left";
 import TopImageBox from "../../../../components/top-image-box";
 import {color} from "../../../../components/styles/colors";
 import styled from "styled-components";
-import Curve from "../../../../images/green-curve.inline.svg";
-import GreenOval from "../../../../images/oval-green-2.inline.svg";
+import GreenOval from "../../../../images/ovals/top-left-transparent-green2.inline.svg";
 import ContentCenter from "../../../partials/content-center";
 import {gradient} from "../../../atoms/styles/colors";
+import {Link} from "gatsby";
 
 const SettingBusiness = () => (
     <GreenContainer>
@@ -15,6 +15,9 @@ const SettingBusiness = () => (
         <Oval>
             <GreenOval/>
         </Oval>
+        <Oval2>
+            <GreenOval/>
+        </Oval2>
 
         <Container>
             <ContentCenter>
@@ -58,7 +61,7 @@ const SettingBusiness = () => (
                 <TopImageBox image="state-filling-fees" color={color.yellow3}>
                     <h4>Finances and taxes</h4>
                     <p>
-                        What kind of bank account will you get? Do you need a business credit card? How will you pay your business taxes? These are important questions to consider so your laundromat business stays in the green. Here at Incfile, we can even help you file your taxes.
+                        What kind of bank account will you get? Do you need a business credit card? How will you pay your business taxes? These are important questions to consider so your laundromat business stays in the green. Here at Incfile, <Link to="/">we can even help you file your taxes</Link>.
                     </p>
                 </TopImageBox>
 
@@ -102,28 +105,39 @@ const ImageBoxes = styled.div`
   grid-gap: 30px;
   padding-top: 112px;
   width: 100%;
-
+  max-width: 970px;
+  
   @media(min-width: 769px) {
     grid-template-columns: 1fr 1fr;
   }
   
   @media (min-width: 970px) {
-    width: 970px;
     margin: 0 auto;
   }
 `;
 
-const GreenCurve = styled.div`
+const Oval = styled.div`
     position: absolute;
-    right: -115px;
-    bottom: -122px;
-    width: 115px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    
+    @media (min-width: 720px){
+        width: 720px;
+    }
 `;
 
-const Oval = styled.div`
+const Oval2 = styled.div`
     position: absolute;
     right: 0;
     top: 220px;
+    width: 100%;
+    transform: scaleX(-1);
+    
+    @media (min-width: 720px){
+        width: 720px;
+    }
 `;
+
 
 export default SettingBusiness;

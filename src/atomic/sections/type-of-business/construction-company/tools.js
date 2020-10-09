@@ -8,13 +8,20 @@ import {color} from "../../../atoms/styles/colors";
 import UsefulTools from "../../../partials/useful-tools";
 import {toolsList} from "../../../../static/type-of-business/construction-company";
 import Curve from "../../../atoms/shapes/curve"
-import BabyBlueOval from "../../../../images/oval-babyblue-2.inline.svg";
+import BabyBlueOval from "../../../../images/ovals/top-left-transparent-babyblue.inline.svg";
+import OvalSvg from "../../../../images/ovals/bottom-left-transparent-orange.inline.svg";
 
 const ToolsAndLinks = () => (
     <Wrapper>
         <Oval>
             <BabyBlueOval />
         </Oval>
+        <Oval2>
+            <BabyBlueOval />
+        </Oval2>
+        <Oval3>
+            <OvalSvg />
+        </Oval3>
         <Container>
             <TextCenterLayout headline="Groups and Forums for Your Construction Business"
                               text="Here are some useful places where you can connect with other construction entrepreneurs."/>
@@ -22,7 +29,7 @@ const ToolsAndLinks = () => (
             <LinksContainer>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.contractortalk.com/forum.php" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Contractor Talk forums
                     </PathLink>
                 </LinkItem>
@@ -31,13 +38,13 @@ const ToolsAndLinks = () => (
                     <CurveWrapper>
                         <Curve color={color.orange1}/>
                     </CurveWrapper>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://forums.jlconline.com/forums/forum" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Journal of Light Construction forum
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.facebook.com/AGCofA/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Facebook Associated General Constructors of America
                     </PathLink>
                 </LinkItem>
@@ -65,7 +72,7 @@ const LinksContainer = styled.div`
     justify-content: space-between;
     flex-wrap: wrap;
     
-    @media (min-width: 1000px) {
+    @media (min-width: 1100px) {
         width: 1000px;
     }
 `;
@@ -83,7 +90,7 @@ const LinkItem = styled.div`
         width: 470px;
     }
     
-    @media (min-width: 1000px) {
+    @media (min-width: 1100px) {
         margin-left: 15px;
         margin-right: 15px;
     }
@@ -99,6 +106,33 @@ const Oval = styled.div`
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    
+    @media (min-width: 720px){
+        width: 720px;
+    }
 `;
 
+const Oval2 = styled.div`
+    position: absolute;
+    top: calc(50% - 210px);
+    right: 0;
+    width: 100%;
+    transform: scaleX(-1);
+    
+    @media (min-width: 420px){
+        width: 420px;
+    }
+`;
+
+const Oval3 = styled.div`
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    
+    @media (min-width: 420px){
+        width: 420px;
+    }
+`;
 export default ToolsAndLinks;

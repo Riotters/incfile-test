@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import styled from "styled-components";
+import {Link} from "gatsby";
 
 import {color} from "../../../atoms/styles/colors";
 import {shadow} from "../../../atoms/styles/shadows";
@@ -37,7 +38,7 @@ import {
     FinancesAccordionContent,
     MaintainingAccordionContent,
     TaxesAccordionContent
-} from "../../../../static/type-of-business/tshirt-business";
+} from "../../../../static/type-of-business/etsy-business";
 
 const ButtonList = [
     {
@@ -124,8 +125,8 @@ const TabScrollable = ({layout, columns}) => {
                                     <Heading size={3}>Rules, Regulations and Laws for Your Etsy Business</Heading>
                                     <Paragraph big mixed={true}>
                                         Of course, along with running a business there are certain rules, regulations
-                                        and legalities you need to be aware of. <span className="big blue">We can also help with researching your
-                                        business licensing needs.</span> Most Etsy businesses will not have any
+                                        and legalities you need to be aware of. <Link to="/">We can also help with researching your
+                                        business licensing needs.</Link> Most Etsy businesses will not have any
                                         significant
                                         permit and licensing needs beyond the basic licenses we cover below.
                                     </Paragraph>
@@ -182,7 +183,7 @@ const TabScrollable = ({layout, columns}) => {
                                         <Paragraph big mixed={true}>
                                             You can find all the information you need about statewide licenses and
                                             permits on your state’s Secretary of State website. You can also find those
-                                            details in our <span className="big blue">state-by-state guides to company formation.</span> Alternatively,
+                                            details in our <Link to="/">state-by-state guides to company formation.</Link> Alternatively,
                                             the Small Business Administration website has a list of licenses and permits
                                             by state.
                                         </Paragraph>
@@ -260,8 +261,8 @@ const TabScrollable = ({layout, columns}) => {
                                         </Paragraph>
 
                                         <Paragraph big mixed={true}>
-                                            All businesses need to have a <span
-                                            className="big blue">Registered Agent</span>. These are individuals or
+                                            All businesses need to have a <Link
+                                            to="/">Registered Agent</Link>. These are individuals or
                                             other businesses that can accept legal documents on behalf of your
                                             landscaping company.
                                         </Paragraph>
@@ -272,7 +273,7 @@ const TabScrollable = ({layout, columns}) => {
                                             name and address from the public record.
                                         </Paragraph>
                                         <Paragraph big mixed={true}>
-                                            When you <span className="big blue">incorporate through us</span>, we
+                                            When you <Link to="/">incorporate through us</Link>, we
                                             provide a complete Registered Agent
                                             service free for the first year.
                                         </Paragraph>
@@ -306,7 +307,7 @@ const TabScrollable = ({layout, columns}) => {
 
                                         <Paragraph big mixed={true}>
                                             As a rule of thumb, we recommend keeping back around a third of your
-                                            earnings to pay your taxes. We can even <span className="big blue">prepare and file your tax returns for you</span>.
+                                            earnings to pay your taxes. We can even <Link to="/">prepare and file your tax returns for you</Link>.
                                         </Paragraph>
                                     </TextBlockWithImage>
 
@@ -338,7 +339,7 @@ const TabScrollable = ({layout, columns}) => {
 
                                         <Paragraph big mixed={true} style={{marginTop: "50px"}}>
                                             As a rule of thumb, we recommend keeping back around a third of your
-                                            earnings to pay your taxes. We can even <span className="big blue">prepare and file your tax returns for you</span>.
+                                            earnings to pay your taxes. We can even <Link to="/">prepare and file your tax returns for you</Link>.
                                         </Paragraph>
                                     </TextBlockWithImage>
 
@@ -386,7 +387,7 @@ const Wrapper = styled.div`
   padding-bottom: 115px;
   position: relative;
 
-  @media (min-width: 769px) {
+  @media (min-width: 992px) {
     flex-direction: ${props => (props.layout !== "grid" ? "row" : "column")};
   }
 
@@ -399,7 +400,7 @@ const Wrapper = styled.div`
     transition: height 500ms;
     margin-left: auto;
 
-    @media (min-width: 769px) {
+    @media (min-width: 992px) {
       max-width: ${props => (props.layout !== "grid" ? "55%" : "")};
     }
 
@@ -415,7 +416,7 @@ const TabsWrapper = styled.div`
   width: 100%;
   position: relative;
 
-  @media (min-width: 769px) {
+  @media (min-width: 992px) {
     max-width: ${props => (props.layout !== "grid" ? "40%" : "")};
   }
 
@@ -443,6 +444,10 @@ const PanelWrapper = styled.article`
 
   h3 {
     margin-bottom: 48px;
+  }
+  
+  @media (min-width: 768px){
+    padding-left: 30px;
   }
 `
 

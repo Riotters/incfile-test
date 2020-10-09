@@ -21,7 +21,7 @@ import Regulations from "../../atomic/sections/type-of-business/summer-business/
 import Taxes from "../../atomic/sections/type-of-business/summer-business/taxes";
 import ToolsAndLinks from "../../atomic/sections/type-of-business/summer-business/tools";
 
-const WithNoMoneyBusiness = () => (
+const SummerBusiness = () => (
     <Layout>
         <SEO title="How to Start a Summer Business"
              description="If you’re not ready to jump into running your own business full time, a summer business could be ideal. These types of ventures are seasonal and designed around the warmer times of the year,when tourists travel and everyone wants to enjoy the sunshine."/>
@@ -100,4 +100,4 @@ const ListBox = styled.div`
     }
 `;
 
-export default WithNoMoneyBusiness;
+export default SummerBusiness;

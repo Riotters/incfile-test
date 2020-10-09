@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
 import Top from "../../atomic/partials/top";
-import Button from "../../components/button";
+import Button from "../../atomic/molecules/buttons/button";
 import RatingRow from "../../atomic/atoms/boxes/rating-row";
 import CartBlock from "../../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../../atomic/molecules/blocks/rating-block";
@@ -26,9 +26,8 @@ import LookIcon from "../../images/icons/look-at-who-your-competitors-are-in-the
 import ValidateIcon from "../../images/icons/look-for-market-research.inline.svg"
 import TalkIcon from "../../images/icons/talk-to-clients.inline.svg"
 import InvolvedIcon from "../../images/icons/get-involved-with-business-communities.inline.svg"
-import {color} from "../../components/styles/colors";
 import CountingTextBoxed from "../../atomic/molecules/text-blocks/counting-text-boxed";
-import OvalOrange2Svg from "../../images/oval-orange-2.inline.svg";
+import OvalOrange2Svg from "../../images/ovals/top-left-transparent-orange2.inline.svg";
 import ImageContent from "../../components/partials/blocks/left-image-right-content";
 import HandsIcon from "../../images/icons/hands.inline.svg";
 import IconCircle from "../../components/icons/circle";
@@ -47,8 +46,16 @@ import BlueBoxWithAbsoluteText from "../../atomic/molecules/text-blocks/blue-box
 import ColorFulCircleWithTextAndList from "../../atomic/molecules/blocks/colorful-circle-with-text-and-list";
 import RingSvg from "../../images/rings-2.inline.svg";
 import Adventages from "../../components/adventages";
-import RegisteredAgentIcon from "../../images/icons/registered-agent-service.inline.svg";
 import ListBoxWithIcon from "../../atomic/molecules/lists/list-box-with-icon";
+import TabOvalSvg from "../../images/ovals/bottom-left-transparent-pink.inline.svg";
+import TabOvalSvg2 from "../../images/ovals/bottom-right-transparent-babyblue2.inline.svg";
+import OvalSvg2 from "../../images/ovals/top-right-transparent-blue.inline.svg";
+import OvalSvg3 from "../../images/ovals/top-left-transparent-green3.inline.svg";
+import OvalSvg5 from "../../images/ovals/top-left-transparent-green3.inline.svg";
+import OvalSvg4 from "../../images/ovals/top-left-transparent-pink.inline.svg";
+import {shadow} from "../../atomic/atoms/styles/shadows";
+import {color} from "../../atomic/atoms/styles/colors";
+import {Link} from "gatsby";
 
 const BeautySalon = () => (
     <Layout>
@@ -74,287 +81,297 @@ const BeautySalon = () => (
             </RatingRow>
         </Top>
 
-        <TabsSection>
-            <TabHeading>
-                <TabTitle title="Beauty Salon" SvgIcon={Tab1Icon}/>
-                <TabTitle title="Why This Industry" SvgIcon={Tab2Icon}/>
-                <TabTitle title="Is This Business For You?" SvgIcon={Tab3Icon}/>
-            </TabHeading>
+        <TabsWrapper>
+            <TabsOval>
+                <TabOvalSvg/>
+            </TabsOval>
+            <TabsOval2>
+                <TabOvalSvg2/>
+            </TabsOval2>
+            <TabsSection>
+                <TabHeading>
+                    <TabTitle title="Beauty Salon" SvgIcon={Tab1Icon}/>
+                    <TabTitle title="Why This Industry" SvgIcon={Tab2Icon}/>
+                    <TabTitle title="Is This Business For You?" SvgIcon={Tab3Icon}/>
+                </TabHeading>
 
-            <CollapseWrapper>
-                <PanelWrapper>
-                    <Heading size={3}>Starting a Beauty Salon business</Heading>
-                    <Paragraph big>
-                        To begin with, it’s largely immune to the trend toward ecommerce since beauty salons provide
-                        hyper-localized personalized services. Secondly, if you provide great service, you will quickly
-                        develop an excellent reputation that will lead to repeat bookings.
-                    </Paragraph>
-                    <Paragraph big>
-                        Finally, there’s a trend toward buying “experiences” rather than “products,” and the beauty
-                        salon fits very neatly into this newway of thinking and purchasing. All that said, starting up a
-                        beauty salon business can be tricky. There may be local competition, and you'llneed to invest in
-                        finding skilled workers and developing an excellent brand.
-                    </Paragraph>
+                <CollapseWrapper>
+                    <PanelWrapper>
+                        <Heading size={3}>Starting a Beauty Salon business</Heading>
+                        <Paragraph big>
+                            To begin with, it’s largely immune to the trend toward ecommerce since beauty salons provide
+                            hyper-localized personalized services. Secondly, if you provide great service, you will
+                            quickly
+                            develop an excellent reputation that will lead to repeat bookings.
+                        </Paragraph>
+                        <Paragraph big>
+                            Finally, there’s a trend toward buying “experiences” rather than “products,” and the beauty
+                            salon fits very neatly into this newway of thinking and purchasing. All that said, starting
+                            up a
+                            beauty salon business can be tricky. There may be local competition, and you'llneed to
+                            invest in
+                            finding skilled workers and developing an excellent brand.
+                        </Paragraph>
 
-                    <Paragraph big style={{fontWeight: "bold", marginTop: "48px"}}>
-                        Beauty Salon business formation guide
-                    </Paragraph>
+                        <Paragraph big style={{fontWeight: "bold", marginTop: "48px", color: color.black}}>
+                            Beauty Salon business formation guide
+                        </Paragraph>
 
-                    <Paragraph big>
-                        In this guide we’ll explore everything you need to do to set up your beauty salon business and
-                        maximize your chances for success. We’ll cover:
-                    </Paragraph>
+                        <Paragraph big>
+                            In this guide we’ll explore everything you need to do to set up your beauty salon business
+                            and
+                            maximize your chances for success. We’ll cover:
+                        </Paragraph>
 
-                    <ListWrapper>
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Understanding the world of a beauty salon
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                        <ListWrapper>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Understanding the world of a beauty salon
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Paying taxes for your beauty salon business
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Paying taxes for your beauty salon business
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Deciding if you’re ready to start a beauty salon business
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Deciding if you’re ready to start a beauty salon business
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Hiring employees, managing finances and administering your beauty salon business
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Hiring employees, managing finances and administering your beauty salon business
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Deciding if you’re ready to start a beauty salon business
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Deciding if you’re ready to start a beauty salon business
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Locating other resources for your beauty salon business
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Locating other resources for your beauty salon business
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Determining the best legal structure for your new organization
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Determining the best legal structure for your new organization
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Following various rules and regulations
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Following various rules and regulations
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    And much more
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
-                    </ListWrapper>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        And much more
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
+                        </ListWrapper>
 
-                    <Paragraph big>
-                        By the time you’ve read through our complete beauty salon business guide, you will have all the
-                        information you need to set up and manage a thriving beauty salon business. Let’s get into it.
-                    </Paragraph>
-                </PanelWrapper>
+                        <Paragraph big>
+                            By the time you’ve read through our complete beauty salon business guide, you will have all
+                            the
+                            information you need to set up and manage a thriving beauty salon business. Let’s get into
+                            it.
+                        </Paragraph>
+                    </PanelWrapper>
 
-                <PanelWrapper>
-                    <Heading size={3}>
-                        Understanding the World of the Beauty Salon Business
-                    </Heading>
+                    <PanelWrapper>
+                        <Heading size={3}>
+                            Understanding the World of the Beauty Salon Business
+                        </Heading>
 
-                    <Paragraph big style={{fontWeight: "bold", marginTop: "48px"}}>
-                        Key Beauty Salon Business and Background Data and Statistics
-                    </Paragraph>
+                        <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black, marginTop: "48px"}}>
+                            Key Beauty Salon Business and Background Data and Statistics
+                        </Paragraph>
 
-                    <Paragraph big>
-                        It’s important to understand the opportunities in the online T-shirt printing and ecommerce
-                        space. Here are the key facts you need to know:
-                    </Paragraph>
+                        <Paragraph big>
+                            It’s important to understand the opportunities in the online T-shirt printing and ecommerce
+                            space. Here are the key facts you need to know:
+                        </Paragraph>
 
-                    <BlueBoxWithAbsoluteText absoluteText="$57B"
-                                             text="Consumers spent in the hair and nail salon industry in 2016"/>
-                    <BlueBoxWithAbsoluteText absoluteText="700K"
-                                             text="People employed in the industry across the U.S."/>
-                    <BlueBoxWithAbsoluteText absoluteText="2.8%"
-                                             text="Revenue increase by year, while job growth is expected to increase by 0.6 percent a year"/>
+                        <BlueBoxWithAbsoluteText absoluteText="$57B"
+                                                 text="Consumers spent in the hair and nail salon industry in 2016"/>
+                        <BlueBoxWithAbsoluteText absoluteText="700K"
+                                                 text="People employed in the industry across the U.S."/>
+                        <BlueBoxWithAbsoluteText absoluteText="2.8%"
+                                                 text="Revenue increase by year, while job growth is expected to increase by 0.6 percent a year"/>
 
-                    <ColorFulCircleWithTextAndList list={RingText.list} title={RingText.title} CircleSVG={RingSvg}
-                                                   withBg={true}/>
+                        <ColorFulCircleWithTextAndList style={{marginBottom: "48px"}} list={RingText.list}
+                                                       title={RingText.title} CircleSVG={RingSvg}
+                                                       withBg={true}/>
 
-                    <div style={{marginBottom: "30px", marginTop: "48px"}}>
                         <Adventages
                             headline="The biggest expenses for beauty salons are employee compensation, real estate and rental, manufacturing and professional and business services."
                             width="100%"
                         />
-                    </div>
 
-                    <div style={{marginBottom: "30px"}}>
                         <Adventages
                             headline="There are nearly 270,000 beauty salons, hairdressers and barber shops in the U.S."
                             width="100%"
                         />
-                    </div>
 
-                    <div style={{marginBottom: "30px"}}>
                         <Adventages
                             headline="Wages paid to workers are typically low, with many earning around $22,000-$25,000 a year."
                             width="100%"
                         />
-                    </div>
 
-                    <div style={{marginBottom: "48px"}}>
                         <Adventages
                             headline="The industry is very fragmented, with the largest 50 salon chains only contributing 15 percent to overall revenue"
                             width="100%"
                         />
-                    </div>
 
-                    <Paragraph big>
-                        This all points to the beauty salon industry being ripe with new opportunities for focused
-                        entrepreneurs, so now might be the perfect time to dive into starting your beauty salon
-                        business. Incfile is here to help you form your beauty salon business and understand the ins and
-                        outs of owning a beauty salon company.
-                    </Paragraph>
+                        <Paragraph big>
+                            This all points to the beauty salon industry being ripe with new opportunities for focused
+                            entrepreneurs, so now might be the perfect time to dive into starting your beauty salon
+                            business. Incfile is here to help you form your beauty salon business and understand the ins
+                            and
+                            outs of owning a beauty salon company.
+                        </Paragraph>
 
-                    <Paragraph big style={{fontWeight: "bold"}}>
-                        What Your Beauty Salon Customers Are Looking for
-                    </Paragraph>
+                        <Paragraph big style={{fontWeight: "Avenir-Heavy", color: color.black}}>
+                            What Your Beauty Salon Customers Are Looking for
+                        </Paragraph>
 
-                    <Paragraph big>
-                        If you want to run a successful beauty salon, you need to build your entire suite of services
-                        around customer needs. When it comes to offering beauty and hairdressing services, that means
-                        providing a great range of services at an extraordinarily high quality combined with reasonable
-                        pricing.
-                    </Paragraph>
-                    <Paragraph big>
-                        Your beauty salon will rely on word-of-mouth marketing, so you want to help customers become an
-                        advocate for your business. You can do this by offering personalized service and ensuring your
-                        staff provides extensive beauty treatments that leave your customers feeling pampered and
-                        wonderful.
-                    </Paragraph>
-                    <Paragraph big>
-                        When it comes to providing beauty treatments, you will want to ensure you’re providing the right
-                        niche of services. You have plenty of options:
-                    </Paragraph>
+                        <Paragraph big>
+                            If you want to run a successful beauty salon, you need to build your entire suite of
+                            services
+                            around customer needs. When it comes to offering beauty and hairdressing services, that
+                            means
+                            providing a great range of services at an extraordinarily high quality combined with
+                            reasonable
+                            pricing.
+                        </Paragraph>
+                        <Paragraph big>
+                            Your beauty salon will rely on word-of-mouth marketing, so you want to help customers become
+                            an
+                            advocate for your business. You can do this by offering personalized service and ensuring
+                            your
+                            staff provides extensive beauty treatments that leave your customers feeling pampered and
+                            wonderful.
+                        </Paragraph>
+                        <Paragraph big>
+                            When it comes to providing beauty treatments, you will want to ensure you’re providing the
+                            right
+                            niche of services. You have plenty of options:
+                        </Paragraph>
 
-                    <ListBoxWithIcon title="Hairstyling and hairdressing" radiusTop backgroundColor={color.green3}/>
-                    <ListBoxWithIcon title="Hair removal and hot wax treatments" backgroundColor={color.green3}/>
-                    <ListBoxWithIcon title="Manicures and pedicures" backgroundColor={color.green3}/>
-                    <ListBoxWithIcon title="Massage" backgroundColor={color.green3}/>
-                    <ListBoxWithIcon title="Tanning" backgroundColor={color.green3}/>
-                    <ListBoxWithIcon title="Facials and skin care" backgroundColor={color.green3} radiusBottom/>
+                        <ListBoxWithIcon title="Hairstyling and hairdressing" radiusTop backgroundColor={color.green3}/>
+                        <ListBoxWithIcon title="Hair removal and hot wax treatments" backgroundColor={color.green3}/>
+                        <ListBoxWithIcon title="Manicures and pedicures" backgroundColor={color.green3}/>
+                        <ListBoxWithIcon title="Massage" backgroundColor={color.green3}/>
+                        <ListBoxWithIcon title="Tanning" backgroundColor={color.green3}/>
+                        <ListBoxWithIcon title="Facials and skin care" backgroundColor={color.green3} radiusBottom/>
 
-                </PanelWrapper>
+                    </PanelWrapper>
 
-                <PanelWrapper>
-                    <Heading size={3}>
-                        What Are the Main Skills, Expertise and Experience Needed to be a Successful Beauty Salon Entrepreneur?
-                    </Heading>
-                    <Paragraph big>
-                        When it comes to skill sets, you need wide-ranging expertise to be a successful beauty salon owner. These skills should include:
-                    </Paragraph>
+                    <PanelWrapper>
+                        <Heading size={3}>
+                            What Are the Main Skills, Expertise and Experience Needed to be a Successful Beauty Salon
+                            Entrepreneur?
+                        </Heading>
+                        <Paragraph big>
+                            When it comes to skill sets, you need wide-ranging expertise to be a successful beauty salon
+                            owner. These skills should include:
+                        </Paragraph>
 
-                    <div style={{marginBottom: "30px"}}>
                         <Adventages
                             headline="Hiring"
                             text="Finding, interviewing and hiring great beauty salon employees who can provide awesome beauty treatments and hairstyling services"
                             width="100%"
                         />
-                    </div>
 
-                    <div style={{marginBottom: "30px"}}>
                         <Adventages
                             headline="People management"
                             text="Dealing with staff schedules, coverage, internal issues and other people management areas"
                             width="100%"
                         />
-                    </div>
 
-                    <div style={{marginBottom: "30px"}}>
                         <Adventages
                             headline="Marketing"
                             text="Promoting your beauty salon business against a competitive field; local marketing expertise is essential"
                             width="100%"
                         />
-                    </div>
 
-                    <div style={{marginBottom: "30px"}}>
                         <Adventages
                             headline="Treatment design and pricing"
                             text="Working with employees to create luxurious treatments with good profit margins"
                             width="100%"
                         />
-                    </div>
 
-                    <div style={{marginBottom: "30px"}}>
                         <Adventages
                             headline="Salon creation"
                             text="Setting up the salon in the first place, which includes finding equipment, furniture, fixtures and fittings"
                             width="100%"
                         />
-                    </div>
 
-                    <div style={{marginBottom: "30px"}}>
                         <Adventages
                             headline="Operational management"
                             text="Ensuring customers are served well and beauty treatments are provided to the standards you expect"
                             width="100%"
                         />
-                    </div>
 
-                    <div style={{marginBottom: "30px"}}>
                         <Adventages
                             headline="Business administration"
                             text="Sorting out profits, payroll, financial management, accounting and all the other areas that go into running any successful business"
                             width="100%"
                         />
-                    </div>
 
-                    <Paragraph big style={{fontWeight: "bold"}}>
-                        What Are the Main Challenges for a Beauty Salon Entrepreneur?
-                    </Paragraph>
+                        <Paragraph big style={{fontWeight: "Avenir-Heavy", color: color.black}}>
+                            What Are the Main Challenges for a Beauty Salon Entrepreneur?
+                        </Paragraph>
 
-                    <Paragraph big>
-                        Your main challenges will be finding the best beauty treatment therapists, local marketing and creating good profit margins for your business. You will also need to focus on creating extraordinary customer experiences so your customers become advocates for your salon.
-                    </Paragraph>
-                </PanelWrapper>
-            </CollapseWrapper>
-        </TabsSection>
+                        <Paragraph big>
+                            Your main challenges will be finding the best beauty treatment therapists, local marketing
+                            and creating good profit margins for your business. You will also need to focus on creating
+                            extraordinary customer experiences so your customers become advocates for your salon.
+                        </Paragraph>
+                    </PanelWrapper>
+                </CollapseWrapper>
+            </TabsSection>
+        </TabsWrapper>
 
         <BlueContainer>
+            <Oval2>
+                <OvalSvg2/>
+            </Oval2>
             <Container>
                 <CenterBox>
                     <TextCenterLayout headline="Plan Your Beauty Salon Business"/>
                     <Paragraph big>
-                        Before you start your business, there are a few key areas you need to focus on. You will need to establish whether there’s a demand for your beauty salon services, look at potential benefits and pitfalls, understand how your business finances might look and ensure everything is in order.
+                        Before you start your business, there are a few key areas you need to focus on. You will need to
+                        establish whether there’s a demand for your beauty salon services, look at potential benefits
+                        and pitfalls, understand how your business finances might look and ensure everything is in
+                        order.
                     </Paragraph>
                     <Paragraph big>
                         In short, you need a business plan — here’s how to think about your business idea.
@@ -365,7 +382,9 @@ const BeautySalon = () => (
                     </Heading>
 
                     <Paragraph big>
-                        Before you launch your beauty salon business, you need to understand if there’s a demand for what you’re selling. That means carrying out market research and “validating” your products and services. Here’s how to go about it:
+                        Before you launch your beauty salon business, you need to understand if there’s a demand for
+                        what you’re selling. That means carrying out market research and “validating” your products and
+                        services. Here’s how to go about it:
                     </Paragraph>
                 </CenterBox>
 
@@ -376,7 +395,9 @@ const BeautySalon = () => (
                             Identify your business’s unique selling points (USPs)
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
-                            These are the areas that will set you apart from competitors and encourage customers to come to you. You might have better pricing, a higher-quality service, a loyalty plan or some other special feature.
+                            These are the areas that will set you apart from competitors and encourage customers to come
+                            to you. You might have better pricing, a higher-quality service, a loyalty plan or some
+                            other special feature.
                         </Paragraph>
                     </TextBlockWithImage>
 
@@ -386,7 +407,8 @@ const BeautySalon = () => (
                             Look at who your competitors are in the space
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
-                            Having competitors is a good thing as it shows there’s a market. Make a note of all local competitors, their pricing and the beauty treatment services they provide.
+                            Having competitors is a good thing as it shows there’s a market. Make a note of all local
+                            competitors, their pricing and the beauty treatment services they provide.
                         </Paragraph>
                     </TextBlockWithImage>
 
@@ -396,7 +418,8 @@ const BeautySalon = () => (
                             Get involved with business communities and discussion groups
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
-                            Ask questions about beauty salon businesses. You can find links to some excellent discussion groups later in the article.
+                            Ask questions about beauty salon businesses. You can find links to some excellent discussion
+                            groups later in the article.
                         </Paragraph>
                     </TextBlockWithImage>
 
@@ -406,7 +429,8 @@ const BeautySalon = () => (
                             Talk to clients
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
-                            Speak with potential customers to understand what they want from your beauty salon products and services. See if there is a specific demand for niche treatments.
+                            Speak with potential customers to understand what they want from your beauty salon products
+                            and services. See if there is a specific demand for niche treatments.
                         </Paragraph>
                     </TextBlockWithImage>
 
@@ -416,7 +440,8 @@ const BeautySalon = () => (
                             See if there are any market research reports for beauty salon businesses
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
-                            Search locally, nationally or internationally. Explore statewide and national trends to identify growing treatment areas.
+                            Search locally, nationally or internationally. Explore statewide and national trends to
+                            identify growing treatment areas.
                         </Paragraph>
                     </TextBlockWithImage>
 
@@ -427,13 +452,19 @@ const BeautySalon = () => (
                         Understand Your Beauty Salon Business Model and Financial Projections
                     </Heading>
                     <Paragraph big>
-                        All businesses need a business model, which is how you will generate sales, provide services and make money. Think about your business model now, because it’s better to have that in place so you can start acquiring customers and generating revenue from day one.
+                        All businesses need a business model, which is how you will generate sales, provide services and
+                        make money. Think about your business model now, because it’s better to have that in place so
+                        you can start acquiring customers and generating revenue from day one.
                     </Paragraph>
                     <Paragraph big>
-                        You will also need to look at financial projections for your beauty salon business. What are your expected sales and revenues? What is your profitability? How much money will you keep in the business to grow it? How much will you pay yourself and others? If you can, try to plan your revenue for the next month, three months, year and two years.
+                        You will also need to look at financial projections for your beauty salon business. What are
+                        your expected sales and revenues? What is your profitability? How much money will you keep in
+                        the business to grow it? How much will you pay yourself and others? If you can, try to plan your
+                        revenue for the next month, three months, year and two years.
                     </Paragraph>
                     <Paragraph big>
-                        You might start by just offering one or two high-demand beauty treatments and then expanding later as you build your reputation and clientele.
+                        You might start by just offering one or two high-demand beauty treatments and then expanding
+                        later as you build your reputation and clientele.
                     </Paragraph>
 
                 </CenterBox>
@@ -441,6 +472,12 @@ const BeautySalon = () => (
         </BlueContainer>
 
         <SimpleSection>
+            <Oval3>
+                <OvalSvg3/>
+            </Oval3>
+            <Oval4>
+                <OvalSvg4/>
+            </Oval4>
             <Container>
                 <CenterBox>
                     <Heading>
@@ -448,7 +485,8 @@ const BeautySalon = () => (
                     </Heading>
 
                     <Paragraph big>
-                        Finally, you should put your business plan together. Business plans do vary slightly, but they should cover the following areas:
+                        Finally, you should put your business plan together. Business plans do vary slightly, but they
+                        should cover the following areas:
                     </Paragraph>
 
                     <CountingTextBoxed number={1}>
@@ -506,7 +544,7 @@ const BeautySalon = () => (
                     </CountingTextBoxed>
 
                     <Paragraph big mixed={true} style={{marginTop: "50px"}}>
-                        We’ve got the perfect <span style={{color: color.blue1, fontWeight: "bold"}}>guide to writing your business plan.</span>
+                        We’ve got the perfect <Link to="/">guide to writing your business plan.</Link>
                     </Paragraph>
                 </CenterBox>
             </Container>
@@ -525,14 +563,16 @@ const BeautySalon = () => (
                             Choose the Right Business Structure and Register Your Beauty Salon Business
                         </Heading>
                         <Paragraph big>
-                            Now that you have all the background information for your beauty salon business, it’s time to make it into a reality. Starts by choosing the right structure or “legal entity” for your business. In the U.S., there are five main business structures. They are:
+                            Now that you have all the background information for your beauty salon business, it’s time
+                            to make it into a reality. Starts by choosing the right structure or “legal entity” for your
+                            business. In the U.S., there are five main business structures. They are:
                         </Paragraph>
 
                         <TextBlockWithImage
                             SvgImage={HandsIcon}
                             textBackgroundColor="transparent"
                             imageBackgroundColor={color.white}
-                            imageShadowColor="#ababab"
+                            imageShadowColor={shadow.white2}
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
@@ -542,16 +582,20 @@ const BeautySalon = () => (
                             width={100}
                             widthUnit="%"
                         >
-                            <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                        mixed={true}>
-                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                    <ArrowSVG/>
-                                </IconCircle>
-                                Sole Proprietorship
+                                <FlexLink to="/">
+                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                        <ArrowSVG/>
+                                    </IconCircle>
+                                    Sole Proprietorship
+                                </FlexLink>
                             </Paragraph>
 
                             <Paragraph big>
-                                This is the "default" business structure and is what your business will be if you decide not to create a more formal structure. We don't recommend this type of business as it doesn't give you the legal protections you need.
+                                This is the "default" business structure and is what your business will be if you decide
+                                not to create a more formal structure. We don't recommend this type of business as it
+                                doesn't give you the legal protections you need.
                             </Paragraph>
                         </TextBlockWithImage>
 
@@ -559,7 +603,7 @@ const BeautySalon = () => (
                             SvgImage={LimitedIcon}
                             textBackgroundColor="transparent"
                             imageBackgroundColor={color.white}
-                            imageShadowColor="#ababab"
+                            imageShadowColor={shadow.white2}
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
@@ -569,16 +613,20 @@ const BeautySalon = () => (
                             width={100}
                             widthUnit="%"
                         >
-                            <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                        mixed={true}>
-                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                    <ArrowSVG/>
-                                </IconCircle>
-                                Limited Liability Company or LLC
+                                <FlexLink to="/">
+                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                        <ArrowSVG/>
+                                    </IconCircle>
+                                    Limited Liability Company or LLC
+                                </FlexLink>
                             </Paragraph>
 
                             <Paragraph big>
-                                The most common type of business entity. An LLC is fast, simple and inexpensive to setup and maintain. It protects your personal finances and assets and is a great way to start your real estate
+                                The most common type of business entity. An LLC is fast, simple and inexpensive to setup
+                                and maintain. It protects your personal finances and assets and is a great way to start
+                                your real estate
                             </Paragraph>
                         </TextBlockWithImage>
 
@@ -586,7 +634,7 @@ const BeautySalon = () => (
                             SvgImage={SeriesIcon}
                             textBackgroundColor="transparent"
                             imageBackgroundColor={color.white}
-                            imageShadowColor="#ababab"
+                            imageShadowColor={shadow.white2}
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
@@ -596,16 +644,20 @@ const BeautySalon = () => (
                             width={100}
                             widthUnit="%"
                         >
-                            <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                        mixed={true}>
-                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                    <ArrowSVG/>
-                                </IconCircle>
-                                Series LLC
+                                <FlexLink to="/">
+                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                        <ArrowSVG/>
+                                    </IconCircle>
+                                    Series LLC
+                                </FlexLink>
                             </Paragraph>
 
                             <Paragraph big>
-                                This is a special type of LLC entity that's only available in certain states. It allows you to create "mini" LLCs, each with their own limited liability and separate assets, under the umbrella of a master LLC.
+                                This is a special type of LLC entity that's only available in certain states. It allows
+                                you to create "mini" LLCs, each with their own limited liability and separate assets,
+                                under the umbrella of a master LLC.
                             </Paragraph>
                         </TextBlockWithImage>
 
@@ -613,7 +665,7 @@ const BeautySalon = () => (
                             SvgImage={PlaneIcon}
                             textBackgroundColor="transparent"
                             imageBackgroundColor={color.white}
-                            imageShadowColor="#ababab"
+                            imageShadowColor={shadow.white2}
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
@@ -623,12 +675,14 @@ const BeautySalon = () => (
                             width={100}
                             widthUnit="%"
                         >
-                            <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                        mixed={true}>
-                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                    <ArrowSVG/>
-                                </IconCircle>
-                                S Corporation
+                                <FlexLink to="/">
+                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                        <ArrowSVG/>
+                                    </IconCircle>
+                                    S Corporation
+                                </FlexLink>
                             </Paragraph>
 
                             <Paragraph big>
@@ -641,7 +695,7 @@ const BeautySalon = () => (
                             SvgImage={RockerIcon}
                             textBackgroundColor="transparent"
                             imageBackgroundColor={color.white}
-                            imageShadowColor="#ababab"
+                            imageShadowColor={shadow.white2}
                             imageShadowOpacity={0.5}
                             boxShadow={false}
                             paddingLeft={0}
@@ -651,12 +705,14 @@ const BeautySalon = () => (
                             width={100}
                             widthUnit="%"
                         >
-                            <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                            <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                        mixed={true}>
-                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                    <ArrowSVG/>
-                                </IconCircle>
-                                C Corporation
+                                <FlexLink to="/">
+                                    <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                        <ArrowSVG/>
+                                    </IconCircle>
+                                    C Corporation
+                                </FlexLink>
                             </Paragraph>
 
                             <Paragraph big>
@@ -667,18 +723,19 @@ const BeautySalon = () => (
 
                         <Paragraph big style={{paddingTop: "120px"}} mixed={true}>
                             If you've still got questions about different types of business entities, check out our
-                            <span className="blue big">in-depth guide</span>, or hear our answers to the <span
-                            className="blue big">most common questions</span> about LLCs vs.
+                            <Link to="/">in-depth guide</Link>, or hear our answers to the <Link
+                            to="/">most common questions</Link> about LLCs vs.
                             corporations.
                         </Paragraph>
                         <Paragraph big mixed={true}>
-                            If you're ready to start your Etsy LLC, you can check out our <span className="blue big">LLC formation guide for your
-                            state</span>, or have Incfile take care of all the paperwork for you.
+                            If you're ready to start your Etsy LLC, you can check out our <Link to="/">LLC formation
+                            guide for your
+                            state</Link>, or have Incfile take care of all the paperwork for you.
                         </Paragraph>
 
-                        <Button theme="primary48" width="365px" arrow>
-                            Start your business with us, today!
-                        </Button>
+                        <Button theme="primary48" width="365px" arrow
+                                content={{url: "/", text: "Start your business with us, today!"}}/>
+
                     </ImageContent>
                 </BusinessOwnerResponsibilities>
             </Container>
@@ -690,13 +747,21 @@ const BeautySalon = () => (
 
         <HireEmployees/>
 
-        <UsefulTools style={{paddingBottom: "200px"}} toolsList={toolsList.tools} headlineText={toolsList.headlineText}
-                     description={toolsList.description}/>
+        <ToolsWrapper>
+            <Oval5>
+                <OvalSvg5/>
+            </Oval5>
+            <UsefulTools style={{paddingBottom: "200px"}} toolsList={toolsList.tools}
+                         headlineText={toolsList.headlineText}
+                         description={toolsList.description}/>
+        </ToolsWrapper>
 
         <Conclusion to="/" buttonTitle="Start your Etsy Business with us, today">
             <Heading size={3} style={{fontSize: "40px"}}>Conclusion</Heading>
             <Paragraph big>
-                As you can see, starting a beauty salon can be a great way to grow a thriving business. A strong focus on the best treatments, understanding your clientele and local marketing will position you for success. Good luck!
+                As you can see, starting a beauty salon can be a great way to grow a thriving business. A strong focus
+                on the best treatments, understanding your clientele and local marketing will position you for success.
+                Good luck!
             </Paragraph>
         </Conclusion>
     </Layout>
@@ -724,19 +789,23 @@ const ListBox = styled.div`
     }
 `;
 
+const ToolsWrapper = styled.div`
+    position: relative;
+`;
+
 const BlueContainer = styled.section`
     background: rgb(242,246,255);
     background: linear-gradient(0deg, rgba(242,246,255,1) 0%, rgba(250,251,255,1) 100%);
     padding-top: 100px;
     position: relative;
+    padding-bottom: 80px;
 `;
 
 const CenterBox = styled.div`
     width: 100%;
-    padding-bottom: 100px;
+    max-width: 670px;
     
     @media (min-width: 670px) {
-        width: 670px;
         margin: 0 auto;
     }
 `;
@@ -747,25 +816,25 @@ const GridSectionList = styled.div`
     flex-wrap: wrap;
     width: 100%;
     margin-top: 100px;
+    max-width: 970px;
     
     > div {
         margin-bottom: 70px;
     }
     
     @media (min-width: 970px) {
-        width: 970px;
         margin: 100px auto 0;
     }
 `;
 
 const SimpleSection = styled.div`
     padding-top: 100px;
+    position: relative;
 `;
 
 const BusinessOwnerResponsibilities = styled.section`
   position: relative;
-  padding-top: 75px;
-  padding-bottom: 64px;
+  padding-top: 100px;
 
   .colorbox {
     margin-bottom: 48px;
@@ -783,6 +852,90 @@ const Oval = styled.div`
   position: absolute; 
   left: 0;
   top: 200px;
+  width: 100%;
+  
+  @media (min-width: 570px){
+    width: 570px;
+  }
 `
+
+const TabsWrapper = styled.div`
+    position: relative;
+    padding-top: 100px;
+`;
+
+const TabsOval = styled.div`
+  position: absolute; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  
+  @media (min-width: 420px){
+    width: 420px;
+  }
+`
+
+const TabsOval2 = styled.div`
+  position: absolute; 
+  right: 0;
+  top: 436px;
+  width: 100%;
+  
+  @media (min-width: 420px){
+    width: 420px;
+  }
+`
+
+const Oval2 = styled.div`
+  position: absolute; 
+  right: 0;
+  top: 0;
+  width: 100%;
+  
+  @media (min-width: 570px){
+    width: 570px;
+  }
+`
+
+const Oval3 = styled.div`
+  position: absolute; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  
+  @media (min-width: 420px){
+    width: 420px;
+  }
+`
+
+const Oval4 = styled.div`
+  position: absolute; 
+  right: 0;
+  bottom: 100px;
+  width: 100%;
+  transform: scaleX(-1);
+  
+  @media (min-width: 720px){
+    width: 720px;
+  }
+`
+
+const Oval5 = styled.div`
+  position: absolute; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+  
+  @media (min-width: 720px){
+    width: 720px;
+  }
+`;
+
+const FlexLink = styled(Link)`
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+`;
 
 export default BeautySalon;

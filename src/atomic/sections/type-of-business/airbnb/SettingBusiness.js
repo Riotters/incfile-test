@@ -5,7 +5,7 @@ import TopImageBox from "../../../../components/top-image-box";
 import {color} from "../../../../components/styles/colors";
 import styled from "styled-components";
 import Curve from "../../../../images/green-curve.inline.svg";
-import GreenOval from "../../../../images/oval-green-2.inline.svg";
+import GreenOval from "../../../../images/ovals/top-left-transparent-green2.inline.svg";
 
 const SettingBusiness = () => (
     <GreenContainer>
@@ -89,11 +89,11 @@ const ImageBoxes = styled.div`
   padding-top: 112px;
   width: 100%;
 
-  @media(min-width: 769px) {
+  @media(min-width: 1024px) {
     grid-template-columns: 1fr 1fr;
   }
   
-  @media (min-width: 970px) {
+  @media (min-width: 1024px) {
     width: 970px;
     margin: 0 auto;
   }
@@ -116,6 +116,12 @@ const Oval = styled.div`
     position: absolute;
     right: 0;
     top: 220px;
+    transform: scaleX(-1);
+    width: 100%;
+    
+    @media (min-width: 720px){
+        width: 720px;
+    }
 `;
 
 export default SettingBusiness;

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="33px" viewBox="0 0 32 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="20200406_ICON_ICON-304" transform="translate(0.000000, 1.000000)">
+            <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" x="1.04" y="21.92" width="28.79" height="9.54" rx="1.1"></rect>
+            <path d="M14.44,2.68 L14.44,2.68 C9.9,2.68 7.22,5.86 6.25,10.1 L23.73,11.67 L23.73,10 C22.6953965,5.7073782 18.8555411,2.68178706 14.44,2.68 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+            <path d="M29.81,18.38 L29.81,18.64 L29.81,20.99 C29.81,21.35 28.92,21.65 28.75,21.92 C28.5967051,22.1558827 28.3824776,22.3459233 28.13,22.47 C27.88,22.62 27.44,22.21 27.13,22.21 L26.56,22.21 L3.05,22.41 C2.7739901,22.4137262 2.50064452,22.3556403 2.25,22.24 C1.71117257,21.9825166 1.37988546,21.4264275 1.41,20.83 L1.41,19 L2.41,18.35 L5.32,16.51 L6.2,16.03 L6,10.12 L24.18,10.12 L24.18,14 C24.18,15.69 27.27,16.92 28.81,17.63 L27.72,18.39 L29.81,18.38 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+            <line x1="17.93" y1="10.16" x2="18.52" y2="9.91" id="Path"></line>
+            <path d="M0.7,19.49 L0.7,29.81 C0.814768551,30.7268301 1.6408205,31.3841188 2.56,31.29 L29.43,31.29 C30.3512573,31.384424 31.1802654,30.7283107 31.3,29.81 L31.3,19.65" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M6.7,9.31 C7.69654128,4.97590478 11.5528138,1.90332633 16,1.89998669 L16,1.89998669 C20.4075382,1.89268801 24.2488344,4.89963818 25.3,9.18" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M15.49,11.76 L0.8,18.07 C0.726527125,18.0971772 0.683536654,18.1735558 0.698422613,18.2504666 C0.713308571,18.3273774 0.781692768,18.3821996 0.86,18.3800639 L31.12,18.3800639 C31.20087,18.3747246 31.2682428,18.3160563 31.2845851,18.2366793 C31.3009275,18.1573023 31.2622091,18.0767917 31.19,18.04 L16.19,11.76 C15.9667053,11.6632043 15.7132947,11.6632043 15.49,11.76 L15.49,11.76 Z" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M0.7,18.38 L31.3,18.38 L31.3,20.18 C31.3,21.1409755 30.5209755,21.92 29.56,21.92 L2.44,21.92 C1.47902454,21.92 0.7,21.1409755 0.7,20.18 L0.7,18.38 Z" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+            <line x1="16" y1="1.9" x2="16" y2="0.61" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="9.92" y1="24.56" x2="9.92" y2="28.33" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="16" y1="24.56" x2="16" y2="28.33" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="22.08" y1="24.56" x2="22.08" y2="28.33" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></line>
+            <path d="M6.25,15.27 L6.25,10.1 C6.25,9.68413802 6.58417402,9.34547187 7,9.34 L25,9.34 C25.4197364,9.34 25.76,9.68026359 25.76,10.1 L25.76,15.54" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+    </g>
+</svg>

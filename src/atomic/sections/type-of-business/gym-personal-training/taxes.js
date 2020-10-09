@@ -5,8 +5,7 @@ import TextCenterLayout from "../../../../components/partials/blocks/heading-cen
 import Adventages from "../../../../components/adventages";
 import {color} from "../../../../components/styles/colors";
 import {shadow} from "../../../../components/styles/shadows";
-import OvalSvg from "../../../../images/oval-babyblue-1.inline.svg";
-import OvalSvgBottom from "../../../../images/oval-babyblue-2.inline.svg";
+import OvalSvg from "../../../../images/ovals/top-left-transparent-blue3.inline.svg";
 import CurveSvg from "../../../../images/curve-babyblue-1.inline.svg";
 import {adventages2} from "../../../../static/type-of-business/gym-personal-training";
 
@@ -16,9 +15,6 @@ const Taxes = () => (
         <Oval>
             <OvalSvg/>
         </Oval>
-        <OvalBottom>
-            <OvalSvgBottom/>
-        </OvalBottom>
 
         <Service>
             <Container>
@@ -46,16 +42,7 @@ const Wrapper = styled.div`
     padding-bottom: 0px;
     padding-top: 100px;
     position: relative;
-`;
-
-const TextWrapper = styled.div`
-    width: 100%;
-    position: relative;
-    
-    @media (min-width: 750px) {
-        width: 750px;
-        margin: 48px auto 100px;
-    }
+    overflow: hidden;
 `;
 
 const Service = styled.div`
@@ -74,17 +61,12 @@ const AdventagesBox = styled.div`
 
 const Oval = styled.div`
     position: absolute;
-    right: 0;
-    top: 0;
-`;
-
-const OvalBottom = styled.div`
-    position: absolute;
     left: 0;
-    bottom: 300px;
-    
-    @media (max-width: 970px) {
-        display: none;
+    top: 265px;
+    width: 100%;
+  
+    @media (min-width: 720px) {
+        width: 720px;
     }
 `;
 

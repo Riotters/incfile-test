@@ -4,7 +4,8 @@ import TextCenterLayout from "../../../../components/partials/blocks/heading-cen
 import TopImageBox from "../../../../components/top-image-box";
 import {color} from "../../../../components/styles/colors";
 import styled from "styled-components";
-import GreenOval from "../../../../images/oval-green-2.inline.svg";
+import GreenOval from "../../../../images/ovals/bottom-left-transparent-green2.inline.svg";
+import {Link} from "gatsby";
 
 const SettingBusiness = () => (
     <GreenContainer>
@@ -12,6 +13,9 @@ const SettingBusiness = () => (
         <Oval>
             <GreenOval/>
         </Oval>
+        <Oval2>
+            <GreenOval/>
+        </Oval2>
 
         <Container>
             <TextCenterLayout
@@ -37,8 +41,8 @@ const SettingBusiness = () => (
                         You will need a separate business bank account
                         for your food truck business. You might also want
                         to consider a business credit card. Additionally, you will also need to keep careful bookkeeping
-                        records and file business and personal taxes. Here at Incfile we can even help you file your
-                        taxes.
+                        records and file business and personal taxes. Here at Incfile <Link to="/">we can even help you file your
+                        taxes</Link>.
                     </p>
                 </TopImageBox>
 
@@ -106,13 +110,13 @@ const ImageBoxes = styled.div`
   grid-gap: 30px;
   padding-top: 112px;
   width: 100%;
-
+  max-width: 970px;
+  
   @media(min-width: 769px) {
     grid-template-columns: 1fr 1fr;
   }
   
   @media (min-width: 970px) {
-    width: 970px;
     margin: 0 auto;
   }
 `;
@@ -126,8 +130,25 @@ const GreenCurve = styled.div`
 
 const Oval = styled.div`
     position: absolute;
+    left: 0;
+    top: 394px;
+    width: 100%;
+  
+  @media (min-width: 570px){
+    width: 570px;
+  }
+`;
+
+const Oval2 = styled.div`
+    position: absolute;
     right: 0;
-    top: 220px;
+    bottom: 447px;
+    width: 100%;
+    transform: scaleX(-1);
+  
+  @media (min-width: 570px){
+    width: 570px;
+  }
 `;
 
 export default SettingBusiness;

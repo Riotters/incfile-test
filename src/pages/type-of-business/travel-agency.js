@@ -12,6 +12,8 @@ import TabHeading from "../../atomic/organisms/tabs/TabHeading";
 import TabTitle from "../../atomic/molecules/tabs/tab-title";
 
 import TravelIcon from "../../images/icons/travel-agency.inline.svg";
+import TravelIconColorBox
+    from "../../images/icons/we-know-it-can-be-daunting-to-start-your-own-travel-agency.inline.svg";
 import LightIcon from "../../images/icons/light.inline.svg";
 import CalcIcon from "../../images/icons/calc.inline.svg";
 import PanelWrapper from "../../atomic/organisms/tabs/panel";
@@ -24,7 +26,6 @@ import CkeckText from "../../components/static-check/text-only";
 import BlueBoxWithAbsoluteText from "../../atomic/molecules/text-blocks/blue-box-with-absolute-text";
 import CircleWithText from "../../atomic/molecules/blocks/circle-with-text-block";
 import Adventages from "../../components/adventages";
-
 import TextBoxed from "../../atomic/molecules/static-check/circle-checkmark-text-boxed";
 import TypeOfBusiness from "../../atomic/sections/type-of-business/travel-agency/type-of-business";
 import ValidatingBusinessIdea from "../../atomic/sections/type-of-business/travel-agency/validating-business";
@@ -38,6 +39,8 @@ import UsefulTools from "../../atomic/partials/useful-tools";
 import Conclusion from "../../atomic/sections/general/conclusion";
 import {toolsList} from "../../static/type-of-business/travel-agency";
 import Taxes from "../../atomic/sections/type-of-business/travel-agency/taxes";
+import OvalSvg from "../../images/ovals/bottom-left-transparent-blue3.inline.svg";
+import OvalSvg2 from "../../images/ovals/bottom-left-transparent-orange.inline.svg";
 
 const TravelAgency = () => (
     <Layout>
@@ -61,298 +64,322 @@ const TravelAgency = () => (
             </RatingRow>
         </Top>
 
-        <TabsSection>
-            <TabHeading>
-                <TabTitle title="Travel Agency" SvgIcon={TravelIcon}/>
-                <TabTitle title="Why this industry?" SvgIcon={LightIcon}/>
-                <TabTitle title="Is This Business For You?" SvgIcon={CalcIcon}/>
-            </TabHeading>
+        <TabsWrapper>
+            <Oval>
+                <OvalSvg/>
+            </Oval>
+            <TabsSection>
+                <TabHeading>
+                    <TabTitle title="Travel Agency" SvgIcon={TravelIcon}/>
+                    <TabTitle title="Why this industry?" SvgIcon={LightIcon}/>
+                    <TabTitle title="Is This Business For You?" SvgIcon={CalcIcon}/>
+                </TabHeading>
 
-            <CollapseWrapper>
-                <PanelWrapper>
-                    <Paragraph big style={{marginBottom: "40px"}}>
-                        That’s why travel agents are so important: they help bring our vacation dreams to life and build
-                        memories that will stay with us forever.
-                    </Paragraph>
-
-                    <Heading size={3}>
-                        Even with the rise of online travel booking, many vacationers want the reassurance of a travel
-                        expert
-                        to talk them through countries, destinations, hotels, flights, tours and more.
-                    </Heading>
-
-                    <Paragraph big style={{marginBottom: "40px"}}>
-                        If you have the expertise to understand travel itineraries and match the right people with the
-                        ideal experience, then opening a travel agency could be a great business move.
-                    </Paragraph>
-
-                    <Colorbox className="box" theme="icon" Icon={TravelIcon} color={color.blue3} curve
-                              curveColor={color.blue1}>
-                        <Heading size={4}>Here’s how social media influencers make money:</Heading>
-
-                        <Paragraph bottomMargin={0}>
-                            We’ve helped over 100,000 people form their business and provided answers, guidance and
-                            support to transform them into entrepreneurs. We’ll guide you through what you need to know
-                            to start your travel agency business and get it off the ground.
+                <CollapseWrapper>
+                    <PanelWrapper>
+                        <Paragraph big style={{marginBottom: "40px"}}>
+                            That’s why travel agents are so important: they help bring our vacation dreams to life and
+                            build
+                            memories that will stay with us forever.
                         </Paragraph>
 
-                    </Colorbox>
+                        <Heading size={3}>
+                            Even with the rise of online travel booking, many vacationers want the reassurance of a
+                            travel expert to talk them through countries, destinations, hotels, flights, tours and more.
+                        </Heading>
 
-                    <Paragraph big style={{marginBottom: "40px", marginTop: "48px"}}>
-                        To get you started on the right foot, here’s our simple guide on how
-                        to become a travel agent. From highlighting important facts to validating your ideas, and from
-                        choosing the right structure to managing and running your business, you’ll find the answers you
-                        need.
-                    </Paragraph>
+                        <Paragraph big style={{marginBottom: "40px"}}>
+                            If you have the expertise to understand travel itineraries and match the right people with
+                            the
+                            ideal experience, then opening a travel agency could be a great business move.
+                        </Paragraph>
 
-                    <Heading size={3} style={{fontSize: "20px"}}>
-                        Read on for some insight into creating your own travel business and becoming an entrepreneur. In
-                        this guide we will cover:
-                    </Heading>
+                        <Colorbox className="box" theme="icon" Icon={TravelIconColorBox} color={color.blue3} curve
+                                  curveColor={color.blue1}>
+                            <Heading size={4}>Here’s how social media influencers make money:</Heading>
 
-                    <ListWrapper>
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Facts and figures on the success
-                                    of travel agencies
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                            <Paragraph bottomMargin={0}>
+                                We’ve helped over 100,000 people form their business and provided answers, guidance and
+                                support to transform them into entrepreneurs. We’ll guide you through what you need to
+                                know
+                                to start your travel agency business and get it off the ground.
+                            </Paragraph>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Choose the right business structure
-                                    for your travel agency
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                        </Colorbox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Learning if a travel agency business could be right for you
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                        <Paragraph big style={{marginBottom: "40px", marginTop: "48px"}}>
+                            To get you started on the right foot, here’s our simple guide on how
+                            to become a travel agent. From highlighting important facts to validating your ideas, and
+                            from
+                            choosing the right structure to managing and running your business, you’ll find the answers
+                            you
+                            need.
+                        </Paragraph>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Ideas for the type of travel agency that you could form
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                        <Heading size={3} style={{fontSize: "20px"}}>
+                            Read on for some insight into creating your own travel business and becoming an
+                            entrepreneur. In
+                            this guide we will cover:
+                        </Heading>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Groups, forums and support for travel agency owners
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                        <ListWrapper>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Facts and figures on the success
+                                        of travel agencies
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Helpful software for travel agency business owners
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Choose the right business structure
+                                        for your travel agency
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Proving your travel agency can work
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Learning if a travel agency business could be right for you
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    Travel agency business planning
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Ideas for the type of travel agency that you could form
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                        <ListBox>
-                            <CkeckText>
-                                <Paragraph big>
-                                    How to start your travel agency, with information on equipment, employees, location,
-                                    permits, finances, taxes and more
-                                </Paragraph>
-                            </CkeckText>
-                        </ListBox>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Groups, forums and support for travel agency owners
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                    </ListWrapper>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Helpful software for travel agency business owners
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                </PanelWrapper>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Proving your travel agency can work
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                <PanelWrapper>
-                    <Heading size={3}>
-                        Why You Should Start a New Travel Agency
-                    </Heading>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        Travel agency business planning
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                    <Paragraph big bottomMargin={52}>
-                        The time to take advantage is now — we’ll help you be a part of that success!
-                    </Paragraph>
+                            <ListBox>
+                                <CkeckText>
+                                    <Paragraph big>
+                                        How to start your travel agency, with information on equipment, employees,
+                                        location,
+                                        permits, finances, taxes and more
+                                    </Paragraph>
+                                </CkeckText>
+                            </ListBox>
 
-                    <BlueBoxWithAbsoluteText absoluteText="900B"
-                                             text="Is spent on private construction in the U.S. every year"/>
-                    <BlueBoxWithAbsoluteText absoluteText="$17B"
-                                             text="Projected revenue a year for the travel agency industry
+                        </ListWrapper>
+
+                    </PanelWrapper>
+
+                    <PanelWrapper>
+                        <Heading size={3}>
+                            Why You Should Start a New Travel Agency
+                        </Heading>
+
+                        <Paragraph big bottomMargin={52}>
+                            The time to take advantage is now — we’ll help you be a part of that success!
+                        </Paragraph>
+
+                        <BlueBoxWithAbsoluteText absoluteText="900B"
+                                                 text="Is spent on private construction in the U.S. every year"/>
+                        <BlueBoxWithAbsoluteText absoluteText="$17B"
+                                                 text="Projected revenue a year for the travel agency industry
 in the U.S. by 2020"/>
-                    <BlueBoxWithAbsoluteText absoluteText="$15BT"
-                                             text="Significant growth of annual revenue in 2015"/>
+                        <BlueBoxWithAbsoluteText absoluteText="$15BT"
+                                                 text="Significant growth of annual revenue in 2015"/>
 
-                    <CircleWithText withBg={true} textInsideCircle="60" symbol="%" textLine="Of travel agents report an increase in sales year over year" />
+                        <CircleWithText style={{marginBottom: "48px"}} withBg={true} textInsideCircle="60" symbol="%"
+                                        textLine="Of travel agents report an increase in sales year over year"/>
 
-                    <div style={{marginBottom: "30px", marginTop: "70px"}}>
                         <Adventages
                             headline="Travel agency profits have also doubled from around 6% of revenue to 12%"
                             width="100%"
                         />
-                    </div>
 
-                    <div style={{marginBottom: "30px"}}>
                         <Adventages
                             headline="Just over three-quarters of travel agent business revenue comes from commission, with the remainder from service fees"
                             width="100%"
                         />
-                    </div>
 
-                    <div style={{marginBottom: "30px"}}>
                         <Adventages
                             headline="Over the last five years, the number of travel agency businesses has grown by almost 4 percent"
                             width="100%"
                         />
-                    </div>
-                </PanelWrapper>
+                    </PanelWrapper>
 
-                <PanelWrapper>
-                    <Heading size={3}>
-                        Is a Travel Agency Business Right for You?
-                    </Heading>
+                    <PanelWrapper>
+                        <Heading size={3}>
+                            Is a Travel Agency Business Right for You?
+                        </Heading>
 
-                    <Paragraph big bottomMargin={52}>
-                        Before deciding to start a travel agency, it’s important to understand the skills and approach you’re likely to need.
-                    </Paragraph>
-
-                    <Heading size={3}>
-                        A Day in the Life of a Travel Agent
-                    </Heading>
-
-                    <Paragraph big bottomMargin={52}>
-                        Here are some of the typical tasks you’ll be performing for your travel agency business on a daily basis:
-                    </Paragraph>
-
-                    <TextBoxed style={{marginBottom: "8px"}}>
-                        <Paragraph bottomMargin={0}>
-                            Dealing with inquiries through your website
+                        <Paragraph big bottomMargin={52}>
+                            Before deciding to start a travel agency, it’s important to understand the skills and
+                            approach you’re likely to need.
                         </Paragraph>
-                    </TextBoxed>
 
-                    <TextBoxed style={{marginBottom: "8px"}}>
-                        <Paragraph bottomMargin={0}>
-                            Creating itineraries, destinations and activities for customers
+                        <Heading size={3}>
+                            A Day in the Life of a Travel Agent
+                        </Heading>
+
+                        <Paragraph big bottomMargin={52}>
+                            Here are some of the typical tasks you’ll be performing for your travel agency business on a
+                            daily basis:
                         </Paragraph>
-                    </TextBoxed>
 
-                    <TextBoxed style={{marginBottom: "8px"}}>
-                        <Paragraph bottomMargin={0}>
-                            Keeping up to date with the latest offers from tour operators
+                        <TextBoxed style={{marginBottom: "8px"}}>
+                            <Paragraph bottomMargin={0}>
+                                Dealing with inquiries through your website
+                            </Paragraph>
+                        </TextBoxed>
+
+                        <TextBoxed style={{marginBottom: "8px"}}>
+                            <Paragraph bottomMargin={0}>
+                                Creating itineraries, destinations and activities for customers
+                            </Paragraph>
+                        </TextBoxed>
+
+                        <TextBoxed style={{marginBottom: "8px"}}>
+                            <Paragraph bottomMargin={0}>
+                                Keeping up to date with the latest offers from tour operators
+                            </Paragraph>
+                        </TextBoxed>
+
+                        <TextBoxed style={{marginBottom: "8px"}}>
+                            <Paragraph bottomMargin={0}>
+                                Understanding available activities and travel options for specific locations
+                            </Paragraph>
+                        </TextBoxed>
+
+                        <TextBoxed style={{marginBottom: "8px"}}>
+                            <Paragraph bottomMargin={0}>
+                                Booking and administering travel and other vacation plans
+                            </Paragraph>
+                        </TextBoxed>
+
+                        <TextBoxed style={{marginBottom: "48px"}}>
+                            <Paragraph bottomMargin={0}>
+                                Answering questions and providing information to customers
+                            </Paragraph>
+                        </TextBoxed>
+
+                        <Heading size={3}>
+                            Skills Needed by a Travel Agent Entrepreneur
+                        </Heading>
+
+                        <Paragraph big bottomMargin={52}>
+                            The following skills will be very useful in your role as a travel agency small business
+                            owner:
                         </Paragraph>
-                    </TextBoxed>
 
-                    <TextBoxed style={{marginBottom: "8px"}}>
-                        <Paragraph bottomMargin={0}>
-                            Understanding available activities and travel options for specific locations
-                        </Paragraph>
-                    </TextBoxed>
+                        <TextBoxed style={{marginBottom: "8px"}}>
+                            <Paragraph bottomMargin={0}>
+                                Amazing administration skills to stay on top of every customer’s travel plans
+                            </Paragraph>
+                        </TextBoxed>
 
-                    <TextBoxed style={{marginBottom: "8px"}}>
-                        <Paragraph bottomMargin={0}>
-                            Booking and administering travel and other vacation plans
-                        </Paragraph>
-                    </TextBoxed>
+                        <TextBoxed style={{marginBottom: "8px"}}>
+                            <Paragraph bottomMargin={0}>
+                                Great interpersonal skills for dealing with customers, tourism operators, airlines,
+                                hotels and more
+                            </Paragraph>
+                        </TextBoxed>
 
-                    <TextBoxed style={{marginBottom: "48px"}}>
-                        <Paragraph bottomMargin={0}>
-                            Answering questions and providing information to customers
-                        </Paragraph>
-                    </TextBoxed>
+                        <TextBoxed style={{marginBottom: "8px"}}>
+                            <Paragraph bottomMargin={0}>
+                                The ability to take in and analyze large amounts of information to help customers make
+                                the right choice
+                            </Paragraph>
+                        </TextBoxed>
 
-                    <Heading size={3}>
-                        Skills Needed by a Travel Agent Entrepreneur
-                    </Heading>
+                        <TextBoxed style={{marginBottom: "8px"}}>
+                            <Paragraph bottomMargin={0}>
+                                Understanding the vacation experience from the customer’s perspective and working to
+                                make that as good as possible
+                            </Paragraph>
+                        </TextBoxed>
 
-                    <Paragraph big bottomMargin={52}>
-                        The following skills will be very useful in your role as a travel agency small business owner:
-                    </Paragraph>
+                        <TextBoxed style={{marginBottom: "8px"}}>
+                            <Paragraph bottomMargin={0}>
+                                Willingness to spend lots of time on travel research and destination websites finalizing
+                                details
+                            </Paragraph>
+                        </TextBoxed>
 
-                    <TextBoxed style={{marginBottom: "8px"}}>
-                        <Paragraph bottomMargin={0}>
-                            Amazing administration skills to stay on top of every customer’s travel plans
-                        </Paragraph>
-                    </TextBoxed>
+                    </PanelWrapper>
+                </CollapseWrapper>
+            </TabsSection>
+        </TabsWrapper>
 
-                    <TextBoxed style={{marginBottom: "8px"}}>
-                        <Paragraph bottomMargin={0}>
-                            Great interpersonal skills for dealing with customers, tourism operators, airlines, hotels and more
-                        </Paragraph>
-                    </TextBoxed>
+        <TypeOfBusiness/>
 
-                    <TextBoxed style={{marginBottom: "8px"}}>
-                        <Paragraph bottomMargin={0}>
-                            The ability to take in and analyze large amounts of information to help customers make the right choice
-                        </Paragraph>
-                    </TextBoxed>
+        <ValidatingBusinessIdea/>
 
-                    <TextBoxed style={{marginBottom: "8px"}}>
-                        <Paragraph bottomMargin={0}>
-                            Understanding the vacation experience from the customer’s perspective and working to make that as good as possible
-                        </Paragraph>
-                    </TextBoxed>
+        <BusinessPlan/>
 
-                    <TextBoxed style={{marginBottom: "8px"}}>
-                        <Paragraph bottomMargin={0}>
-                            Willingness to spend lots of time on travel research and destination websites finalizing details
-                        </Paragraph>
-                    </TextBoxed>
+        <BusinessStructure/>
 
-                </PanelWrapper>
-            </CollapseWrapper>
-        </TabsSection>
+        <SettingBusiness/>
 
-        <TypeOfBusiness />
+        <OrderNow/>
 
-        <ValidatingBusinessIdea />
+        <Regulations/>
 
-        <BusinessPlan />
+        <InsuranceBusiness/>
 
-        <BusinessStructure />
+        <Taxes/>
 
-        <SettingBusiness />
-
-        <OrderNow />
-
-        <Regulations />
-
-        <InsuranceBusiness />
-
-        <Taxes />
-
-        <UsefulTools toolsList={toolsList.tools} headlineText={toolsList.headlineText} description={toolsList.description} />
+        <ToolsWrapper>
+            <OvalTools>
+                <OvalSvg/>
+            </OvalTools>
+            <OvalTools2>
+                <OvalSvg2/>
+            </OvalTools2>
+            <UsefulTools toolsList={toolsList.tools} headlineText={toolsList.headlineText}
+                         description={toolsList.description}/>
+        </ToolsWrapper>
 
         <Conclusion to="/" buttonTitle="Start your Travel Agency Business with us, today">
-            <Heading size={3} style={{fontSize: "40px", marginTop: "300px"}}>
+            <Heading size={3} style={{fontSize: "40px"}}>
                 Conclusion
             </Heading>
 
             <Paragraph big>
-                The internet has lowered the barriers to finding the perfect vacation, but many people still need the experience and expertise that a great travel agent provides. Find the right niche, get your marketing right and you could see huge success as a travel agent.
+                The internet has lowered the barriers to finding the perfect vacation, but many people still need the
+                experience and expertise that a great travel agent provides. Find the right niche, get your marketing
+                right and you could see huge success as a travel agent.
             </Paragraph>
         </Conclusion>
     </Layout>
@@ -377,6 +404,51 @@ const ListBox = styled.div`
     
     @media (min-width: 576px) { 
         width: 50%; 
+    }
+`;
+
+const TabsWrapper = styled.div`
+    position: relative;
+`;
+
+const Oval = styled.div`
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0px;
+  
+    @media (min-width: 420px){
+       width: 420px;
+    }
+`;
+
+const ToolsWrapper = styled.div`
+    position: relative;
+    margin-bottom: 300px;
+`;
+
+const OvalTools = styled.div`
+    width: 100%;
+    right: 0;
+    top: calc(50% - 210px);
+    position absolute;
+    z-index: -1;
+    transform: rotate(180deg);
+    
+    @media (min-width: 420px){
+        width: 420px;
+    }
+`;
+
+const OvalTools2 = styled.div`
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    position absolute;
+    z-index: -1;
+    
+    @media (min-width: 420px){
+        width: 420px;
     }
 `;
 

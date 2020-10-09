@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import {gradient} from "../../../atoms/styles/colors";
 import Container from "../../../container";
 import TextCenterLayout from "../../../partials/heading-center";
 import Adventages from "../../../../components/adventages";
@@ -11,8 +10,6 @@ import Curve from "../../../../images/curve-orange.inline.svg";
 import OvalSvg from "../../../../images/ovals/top-right-transparent-blue.inline.svg";
 import OvalSvg2 from "../../../../images/ovals/top-left-transparent-blue2.inline.svg";
 import {Paragraph} from "../../../atoms/typography/paragraph";
-import ContentCenter from "../../../partials/content-center";
-import {Heading} from "../../../atoms/typography/heading";
 import AdventagesWithLongText from "../../../molecules/mixed-blocks/adventages-with-long-text";
 
 const TypeOfBusiness = () => (
@@ -31,7 +28,7 @@ const TypeOfBusiness = () => (
 
                 <AdventagesBox>
                     <CurveWrapper>
-                        <Curve />
+                        <Curve/>
                     </CurveWrapper>
                     {adventages.items.map(item => (
                         <Adventages
@@ -57,7 +54,8 @@ const TypeOfBusiness = () => (
                         imageName="other-areas"
                     >
                         <Paragraph mixed={true}>
-                            We’ve covered some of the more popular jobs for the home handyman above, but there are plenty of other choices. These include:
+                            We’ve covered some of the more popular jobs for the home handyman above, but there are
+                            plenty of other choices. These include:
 
                             <ul style={{paddingLeft: "20px", marginTop: "15px"}}>
                                 <li>
@@ -126,14 +124,22 @@ const Oval = styled.div`
     position: absolute;
     right: 0;
     top: 300px;
-    width: 570px;
+    width: 100%;
+  
+  @media (min-width: 570px) {
+        width: 570px;
+  }
 `;
 
 const OvalBottom = styled.div`
     position: absolute;
     left: 0;
     bottom: 300px;
-    width: 570px;
+    width: 100%;
+  
+  @media (min-width: 570px) {
+        width: 570px;
+  }
 `;
 
 export default TypeOfBusiness;

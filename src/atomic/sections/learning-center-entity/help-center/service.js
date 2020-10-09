@@ -17,6 +17,7 @@ const Service = styled.section`
   position: relative;
   padding-top: 104px;
   padding-bottom: 120px;
+  overflow: hidden;
 `;
 
 const Video = styled.div`
@@ -43,9 +44,6 @@ const Video = styled.div`
 `;
 
 const PlayButton = styled.button`
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 80px;
   height: 80px;
   background-color: ${color.orange1};
@@ -58,6 +56,21 @@ const PlayButton = styled.button`
   transition: transform 0.3s ease;
   cursor: pointer;
 
+  span {
+    display: block;
+    height: 21px;
+    width: 21px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
   &:hover {
     transform: translate(-50%, -50%) scale(1.05);
   }
@@ -68,13 +81,13 @@ const ServiceSection = ({ className, content }) => (
     <Oval className="oval" height="652" width="652" bottom="5" left="0">
       <OvalSVG />
     </Oval>
-    <Oval className="oval" height="300" width="300" top="48" right="10">
+    <Oval className="oval" height="300" width="300" top="48" left="50" x="122">
       <Oval2SVG />
     </Oval>
     <Curve bottom="270" left="80" color={color.purple2}>
       <Curve2SVG />
     </Curve>
-    <HeadingCenter headline={content.header} textWidth="770" text={content.text} bottomMargin="80" />
+    <HeadingCenter headline={content.header} textWidth="770" text={content.text} bottomMargin="48" bottomMarginLG="80" />
     <ContentCenter>
       <Video>
         <Curve top="-25" right="-29" color={color.purple1}>
@@ -82,7 +95,9 @@ const ServiceSection = ({ className, content }) => (
         </Curve>
         <Image filename="newspaper-433445" />
         <PlayButton>
-          <PlayerSVG />
+          <span>
+            <PlayerSVG />
+          </span>
         </PlayButton>
       </Video>
     </ContentCenter>

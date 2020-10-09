@@ -14,7 +14,9 @@ import HandsIcon from "../../../../images/icons/hands.inline.svg";
 import ArrowsIcon from "../../../../images/icons/arrows.inline.svg"
 import Button from "../../../molecules/buttons/button";
 import Container from "../../../container";
-import OvalOrange2Svg from "../../../../images/oval-orange-2.inline.svg";
+import OvalOrange2Svg from "../../../../images/ovals/top-left-transparent-orange.inline.svg";
+import {shadow} from "../../../atoms/styles/shadows";
+import {Link} from "gatsby";
 
 const BusinessOwnerResponsibilities = styled.section`
   position: relative;
@@ -35,7 +37,12 @@ const WrapperContainer = styled.div`
 const Oval = styled.div`
   position: absolute;
   left: 0;
-  top: 200px;
+  top: 100px;
+  width: 100%;
+  
+  @media (min-width: 570px){
+    width: 570px;
+  }
 `
 
 const BusinessStructure = () => (
@@ -61,7 +68,7 @@ const BusinessStructure = () => (
                         SvgImage={HandsIcon}
                         textBackgroundColor="transparent"
                         imageBackgroundColor={color.white}
-                        imageShadowColor="#ababab"
+                        imageShadowColor={shadow.white2}
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
@@ -71,12 +78,14 @@ const BusinessStructure = () => (
                         width={100}
                         widthUnit="%"
                     >
-                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                    mixed={true}>
-                            <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                <ArrowSVG/>
-                            </IconCircle>
-                            Sole Proprietorship
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                Sole Proprietorship
+                            </FlexLink>
                         </Paragraph>
 
                         <Paragraph big>
@@ -91,7 +100,7 @@ const BusinessStructure = () => (
                         SvgImage={UmbrellaIcon}
                         textBackgroundColor="transparent"
                         imageBackgroundColor={color.white}
-                        imageShadowColor="#ababab"
+                        imageShadowColor={shadow.white2}
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
@@ -101,12 +110,14 @@ const BusinessStructure = () => (
                         width={100}
                         widthUnit="%"
                     >
-                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                    mixed={true}>
-                            <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                <ArrowSVG/>
-                            </IconCircle>
-                            Partnership
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                Partnership
+                            </FlexLink>
                         </Paragraph>
 
                         <Paragraph big>
@@ -121,7 +132,7 @@ const BusinessStructure = () => (
                         SvgImage={ArrowsIcon}
                         textBackgroundColor="transparent"
                         imageBackgroundColor={color.white}
-                        imageShadowColor="#ababab"
+                        imageShadowColor={shadow.white2}
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
@@ -131,12 +142,14 @@ const BusinessStructure = () => (
                         width={100}
                         widthUnit="%"
                     >
-                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                    mixed={true}>
-                            <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                <ArrowSVG/>
-                            </IconCircle>
-                            Limited Liability Company or LLC
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                Limited Liability Company or LLC
+                            </FlexLink>
                         </Paragraph>
 
                         <Paragraph big>
@@ -150,7 +163,7 @@ const BusinessStructure = () => (
                         SvgImage={PlaneIcon}
                         textBackgroundColor="transparent"
                         imageBackgroundColor={color.white}
-                        imageShadowColor="#ababab"
+                        imageShadowColor={shadow.white2}
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
@@ -160,12 +173,14 @@ const BusinessStructure = () => (
                         width={100}
                         widthUnit="%"
                     >
-                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                    mixed={true}>
-                            <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                <ArrowSVG/>
-                            </IconCircle>
-                            S Corporation
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                S Corporation
+                            </FlexLink>
                         </Paragraph>
 
                         <Paragraph big>
@@ -178,7 +193,7 @@ const BusinessStructure = () => (
                         SvgImage={RockerIcon}
                         textBackgroundColor="transparent"
                         imageBackgroundColor={color.white}
-                        imageShadowColor="#ababab"
+                        imageShadowColor={shadow.white2}
                         imageShadowOpacity={0.5}
                         boxShadow={false}
                         paddingLeft={0}
@@ -188,12 +203,14 @@ const BusinessStructure = () => (
                         width={100}
                         widthUnit="%"
                     >
-                        <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
+                        <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                    mixed={true}>
-                            <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                                <ArrowSVG/>
-                            </IconCircle>
-                            C Corporation
+                            <FlexLink to="/">
+                                <IconCircle circleColor="transparent" iconColor={color.blue1}>
+                                    <ArrowSVG/>
+                                </IconCircle>
+                                C Corporation
+                            </FlexLink>
                         </Paragraph>
 
                         <Paragraph big>
@@ -204,22 +221,30 @@ const BusinessStructure = () => (
 
                     <Paragraph big style={{paddingTop: "120px"}} mixed={true}>
                         For more information on the advantages and disadvantages of different types of businesses,
-                        <span className="big blue">please see our in-depth guide</span>. If you’ve still got questions, <span className="big blue">we’ve answered them to help you
-                        choose the right business structure</span> for your travel agency business.
+                        <Link to="/">please see our in-depth guide</Link>. If you’ve still got
+                        questions, <Link className="big blue">we’ve answered them to help you
+                        choose the right business structure</Link> for your travel agency business.
                     </Paragraph>
                     <Paragraph big mixed={true}>
                         In most cases, our recommendation for your travel agency business would be to create an LLC.
-                        We’ve <span className="big blue">got a complete guide</span> to everything you need to do. <span className="big blue">LLC formation does vary from state to
-                        state</span>, but we’ve got you covered, wherever you are.
+                        We’ve <Link to="/">got a complete guide</Link> to everything you need to do. <Link
+                        to="/">LLC formation does vary from state to
+                        state</Link>, but we’ve got you covered, wherever you are.
                     </Paragraph>
 
-                    <Button theme="primary48" width="365px" arrow>
-                        Start your business with us, today!
-                    </Button>
+                    <Button theme="primary48" width="365px" arrow
+                            content={{url: "/", text: "Start your business with us, today!"}}/>
+
                 </ImageContent>
             </BusinessOwnerResponsibilities>
         </Container>
     </WrapperContainer>
 );
+
+const FlexLink = styled(Link)`
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+`;
 
 export default BusinessStructure;

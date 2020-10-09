@@ -4,7 +4,7 @@ export const typeBusiness = {
     items: [
         {
             circleText: 1,
-            imageName: "general-gym-and-fitness-ceter",
+            imageName: "dog-walking-business",
             headline: "Dog Walking Business",
             text: "This is probably the easiest type of canine-related business to get started with. You will need the skills listed above, some equipment, a car to get where you’re going and not too much else. A love of the great outdoors and awareness of what’s happening around you will be essential, as will dog relationship expertise."
         },
@@ -40,7 +40,7 @@ export const InfoCards = [
     },
     {
         backgroundColor: color.green3,
-        imageName: "workers-compensation-insurance",
+        imageName: "shield-icon",
         title: "General Liability Insurance for Your Dog Walking or Pet Sitting Business",
         content: "This insurance protects your dog walking or pet sitting business from claims due to being sued. This may include injury to members of the public, property damage, personal liabilities, legal defense and more. It can help protect your business from financial penalties and bankruptcy. This type of insurance could be essential to your dog-related business as you are dealing with unpredictable animals and in some cases may have members of the public coming to your place of work."
     },

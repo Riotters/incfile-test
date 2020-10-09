@@ -9,7 +9,8 @@ import MarketIcon from "../../../../images/icons/understand-your-market.inline.s
 import {color} from "../../../../components/styles/colors";
 import React from "react";
 import styled from "styled-components";
-import OvalBlueSVG from "../../../../images/oval-blue-4.inline.svg";
+import OvalSvg from "../../../../images/ovals/bottom-left-transparent-orange.inline.svg";
+import OvalSvg2 from "../../../../images/ovals/top-right-transparent-yellow.inline.svg";
 import Curve from "../../../atoms/shapes/curve";
 
 const BlueContainerWrapper = styled.div`
@@ -22,15 +23,14 @@ const BlueContainerWrapper = styled.div`
 
 const GridSection = styled.div`
     width: 100%;
-    margin-top: 110px;
 `;
 
 const TitleBox = styled.div`
     width: 100%;
     position: relative;
-     
+    max-width: 750px;
+    
     @media (min-width:750px) {
-        width: 750px;
         margin: 0 auto;
     }
     
@@ -47,46 +47,38 @@ const GridSectionList = styled.div`
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
+    max-width: 970px;
     
     > div {
         margin-bottom: 70px;
     }
     
     @media (min-width: 970px) {
-        width: 970px;
         margin: 120px auto 0;
-    }
-`;
-
-const TextBorderedSection = styled.div`
-    width: 100%;
-    padding-top: 100px;
-    
-    @media (min-width: 670px) {
-        width: 670px;
-        margin: 0 auto;
-    }
-    
-    h3{
-        color: #1d1d1d;
-        font-size: 40px;
-        text-align: center;
-        margin-bottom: 24px;
-    }
-`;
-
-const TextBorderedList = styled.div`
-    margin-top: 80px;
-    
-    >div {
-        margin-bottom: 8px;
     }
 `;
 
 const OvalCenter = styled.div`
   position: absolute;
+  left: 0;
+  top: 120px;
+  width: 100%;
+  
+  @media (min-width: 420px){
+    width: 420px;
+  }
+`
+
+const OvalCenter2 = styled.div`
+  position: absolute;
   right: 0;
-  top: 0;
+  bottom: 392px;
+  width: 100%;
+  transform: scaleY(-1);
+  
+  @media (min-width: 420px){
+    width: 420px;
+  }
 `
 
 const AbsoluteCurve = styled.div`
@@ -99,8 +91,11 @@ const AbsoluteCurve = styled.div`
 const ValidatingBusinessIdea = () => (
     <BlueContainerWrapper>
         <OvalCenter>
-            <OvalBlueSVG/>
+            <OvalSvg/>
         </OvalCenter>
+        <OvalCenter2>
+            <OvalSvg2/>
+        </OvalCenter2>
 
         <Container>
 
@@ -172,7 +167,7 @@ const ValidatingBusinessIdea = () => (
                     <TextBlockWithImage SvgImage={TalkIcon} imageBackgroundColor={color.orange2}
                                         imageShadowColor={color.orange2}>
                         <Heading size={4}>
-                            Talk to possible members
+                            Talk to clients
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
                             Speak with potential customers to understand what they want from your dog business, and validate this by asking if they would commit to spending real money on them.

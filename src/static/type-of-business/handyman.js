@@ -84,8 +84,8 @@ export const MaintainingAccordionContent = {
 }
 
 export const toolsList = {
-    headlineText: "Useful Online Tools for Your Brewery Business",
-    description: "Here are some really great online tools for managing your brewery business. They will reduce the time you spend on administration, help you to collaborate with others and free up your time to grow and manage your new venture.",
+    headlineText: "Useful Online Tools for Your Handyman Business",
+    description: "Here are some really great online tools for managing your handyman business. They will reduce the time you spend on administration, help you to collaborate with others and free up your time to grow and manage your new venture.",
     tools: [
         {
             title: "Project Management",
@@ -150,6 +150,10 @@ export const toolsList = {
         {
             title: "SEO",
             tools: ["SemRush", "KWFinder", "Moz", "AHREFS"]
+        },
+        {
+            title: "Hiring",
+            tools: ["ZipRecruiter"]
         }
     ]
 }
@@ -278,7 +282,7 @@ export const InfoCards = [
     },
     {
         backgroundColor: color.green3,
-        imageName: "workers-compensation-insurance",
+        imageName: "shield-icon",
         title: "General Liability Insurance",
         content: "This insurance protects your handyman business from claims due to being sued. This may include injury to members of the public, property damage, personal liabilities, legal defense and more. It can help protect your business from financial penalties and bankruptcy. This type of insurance could be essential to your handyman business, since you’ll regularly be in people’s homes and you’ll be working with materials and tools that could be dangerous to others."
     },

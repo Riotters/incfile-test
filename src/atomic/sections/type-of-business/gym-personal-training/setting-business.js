@@ -4,15 +4,20 @@ import TextCenterLayout from "../../../../components/partials/blocks/heading-cen
 import TopImageBox from "../../../../components/top-image-box";
 import {color} from "../../../../components/styles/colors";
 import styled from "styled-components";
-import GreenOval from "../../../../images/oval-green-2.inline.svg";
+import OvalSvg from "../../../../images/ovals/bottom-left-transparent-blue3.inline.svg";
 import {gradient} from "../../../atoms/styles/colors";
+import {Link} from "gatsby";
 
 const SettingBusiness = () => (
     <WrapperContainer>
 
         <Oval>
-            <GreenOval/>
+            <OvalSvg />
         </Oval>
+
+        <Oval2>
+            <OvalSvg />
+        </Oval2>
 
         <Container>
             <TextCenterLayout
@@ -88,7 +93,7 @@ const SettingBusiness = () => (
                         You will need a separate business bank account
                         for your gym or personal training business. You might also want to consider a business credit
                         card. Additionally, you will need to keep careful bookkeeping records and file business and
-                        personal taxes. Here at Incfile we can even help you file your taxes.
+                        personal taxes. Here at Incfile <Link to="/">we can even help you file your taxes</Link>.
                     </p>
                 </TopImageBox>
 
@@ -143,8 +148,27 @@ const GreenCurve = styled.div`
 
 const Oval = styled.div`
     position: absolute;
-    right: 0;
-    top: 220px;
+    left: 0;
+    top: 394px;
+    width: 100%;
+  
+    @media (min-width: 570px) {
+        width: 570px;
+    }
 `;
+
+
+const Oval2 = styled.div`
+    position: absolute;
+    right: 0;
+    top: calc(50% - 210px);
+    width: 100%;
+    transform: scaleX(-1);
+  
+    @media (min-width: 420px) {
+        width: 420px;
+    }
+`;
+
 
 export default SettingBusiness;

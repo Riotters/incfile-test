@@ -16,7 +16,7 @@ const Links = () => (
             <LinksContainer>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.reddit.com/r/EntrepreneurRideAlong/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Entrepreneur Ridealong Subreddit
                     </PathLink>
                     <Paragraph style={{marginTop: "20px"}} bottomMargin={0}>
@@ -25,7 +25,7 @@ const Links = () => (
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.cleaningtalk.com/forum.php" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         CleaningTalk.com
                     </PathLink>
                     <Paragraph style={{marginTop: "20px"}} bottomMargin={0}>
@@ -34,7 +34,7 @@ const Links = () => (
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://phoenixwaterdamage.com/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Fat Cat Cleaner
                     </PathLink>
                     <Paragraph style={{marginTop: "20px"}} bottomMargin={0}>
@@ -58,7 +58,7 @@ const LinksContainer = styled.div`
     justify-content: space-between;
     flex-wrap: wrap;
     
-    @media (min-width: 1000px) {
+    @media (min-width: 1100px) {
         width: 1000px;
     }
 `;
@@ -75,7 +75,7 @@ const LinkItem = styled.div`
         width: 470px;
     }
     
-    @media (min-width: 1000px) {
+    @media (min-width: 1100px) {
         margin-left: 15px;
         margin-right: 15px;
     }

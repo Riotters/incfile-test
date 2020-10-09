@@ -2,7 +2,7 @@ import React from "react";
 import {Heading} from "../../../atoms/typography/heading";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import Container from "../../../container";
-import OvalSvg from "../../../../images/oval-blue-5.inline.svg";
+import OvalSvg from "../../../../images/ovals/top-left-transparent-red3.inline.svg";
 import styled from "styled-components";
 
 const Regulations = () => (
@@ -38,7 +38,12 @@ const Wrapper = styled.div`
 
 const Oval = styled.div`
     position: absolute; 
-    bottom: 0;
+    top: 341px;
     left: 0;
+    width: 100%;
+  
+  @media (min-width: 570px){
+    width: 570px;
+  }
 `;
 export default Regulations;

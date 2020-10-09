@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="33px" viewBox="0 0 25 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(-4.000000, 0.000000)">
+            <g id="20200406_ICON_ICON-307" transform="translate(5.000000, 0.000000)">
+                <path d="M18.85,2.45 L4.56,2.45 C4.55036519,2.52970991 4.55036519,2.61029009 4.56,2.69 L4.56,8.82 L0.27,8.82 C0.207042833,8.81023806 0.142957167,8.81023806 0.08,8.82 L0.08,29.51 C0.08,30.6145695 0.9754305,31.51 2.08,31.51 L16,31.51 L16,25.28 L20.47,25.28 C20.55,25.28 20.7,25.2 20.7,25.16 L20.7,4.31 C20.7,3.28664297 19.8733422,2.45550192 18.85,2.45 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+                <path d="M22.4700447,2.7 L22.4700447,23.29 C22.476769,24.3106474 21.7139008,25.1726454 20.7,25.29 L6.53,25.29 C5.4254305,25.29 4.53,24.3945695 4.53,23.29 L4.53,2.7 C4.52036519,2.62029009 4.52036519,2.53970991 4.53,2.46 C4.65670713,1.45404215 5.5161249,0.702051596 6.53,0.709937577 L20.53,0.709937577 C21.6071994,0.742319369 22.4650963,1.62232698 22.4700447,2.7 Z" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M4.54,6.91999935 L2.07,6.91999935 C0.995932924,6.91914042 0.112962353,7.76679216 0.07,8.84 L0.07,29.51 C0.07,30.6145695 0.9654305,31.51 2.07,31.51 L16,31.51 C16.1064178,31.5203051 16.2135822,31.5203051 16.32,31.51 C17.2981156,31.3515432 18.012752,30.5007856 18.000168,29.51 L18.000168,25.28" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+                <line x1="16.34" y1="9.5" x2="11.81" y2="16.89" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></line>
+                <circle id="Oval" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" cx="17.2" cy="15.7" r="1.19"></circle>
+                <circle id="Oval" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" cx="10.95" cy="10.28" r="1.19"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

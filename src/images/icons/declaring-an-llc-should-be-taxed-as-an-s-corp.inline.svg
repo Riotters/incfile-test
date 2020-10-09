@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <g fill="none" fill-rule="evenodd" transform="translate(5)">
+        <path fill="#FFF" fill-rule="nonzero" d="M19.61 5.65v23.47c.005.528-.108 1.05-.33 1.53-.494.233-1.034.353-1.58.35H4.86c-1.02.005-2-.396-2.725-1.114C1.411 29.167 1.003 28.19 1 27.17V4.23c.001-.528.114-1.049.33-1.53.496-.225 1.035-.341 1.58-.34H16.3c.9-.098 1.798.216 2.44.855.643.638.963 1.534.87 2.435z"/>
+        <path stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M5.01 20.28L16.86 20.28M13.23 7.63L8.63 15.08"/>
+        <ellipse cx="14.11" cy="13.88" stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" rx="1.21" ry="1.2"/>
+        <ellipse cx="7.76" cy="8.42" stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" rx="1.21" ry="1.2"/>
+        <rect width="20.39" height="30.74" x=".8" y=".7" stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" rx="4.83"/>
+        <ellipse cx="15.45" cy="27.31" stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" rx="1.86" ry="1.84"/>
+    </g>
+</svg>

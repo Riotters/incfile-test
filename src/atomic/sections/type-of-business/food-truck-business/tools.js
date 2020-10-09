@@ -7,9 +7,17 @@ import {shadow} from "../../../atoms/styles/shadows";
 import {color} from "../../../atoms/styles/colors";
 import UsefulTools from "../../../partials/useful-tools";
 import {toolsList} from "../../../../static/type-of-business/food-truck-business";
+import OvalSvg from "../../../../images/ovals/top-right-transparent-blue2.inline.svg";
+import OvalSvg2 from "../../../../images/ovals/bottom-left-transparent-orange.inline.svg";
 
 const ToolsAndLinks = () => (
     <Wrapper>
+        <Oval>
+            <OvalSvg />
+        </Oval>
+        <Oval2>
+            <OvalSvg2 />
+        </Oval2>
         <Container>
             <TextCenterLayout headline="Groups and Forums for Food Truck Entrepreneurs"
                               text="Here are some useful places where you can connect with other food truck entrepreneurs."/>
@@ -17,25 +25,25 @@ const ToolsAndLinks = () => (
             <LinksContainer>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.reddit.com/r/foodtrucks/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Reddit — Food Trucks subreddit
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.reddit.com/r/EntrepreneurRideAlong/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Reddit — Entrepreneur Ride Along
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://roadfood.com/forums/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Road Food Forums
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="http://streetvendorforum.com/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Street Vendor Forums
                     </PathLink>
                 </LinkItem>
@@ -52,6 +60,7 @@ const ToolsAndLinks = () => (
 const Wrapper = styled.div`
     padding-top: 0px;
     margin-bottom: 200px;
+    position: relative;
 `;
 
 const LinksContainer = styled.div`
@@ -61,7 +70,7 @@ const LinksContainer = styled.div`
     justify-content: space-between;
     flex-wrap: wrap;
     
-    @media (min-width: 1000px) {
+    @media (min-width: 1100px) {
         width: 1000px;
     }
 `;
@@ -78,10 +87,33 @@ const LinkItem = styled.div`
         width: 470px;
     }
     
-    @media (min-width: 1000px) {
+    @media (min-width: 1100px) {
         margin-left: 15px;
         margin-right: 15px;
     }
 `;
+
+const Oval = styled.div`
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    
+    @media (min-width: 720px){
+        width: 720px;
+    }
+`;
+
+const Oval2 = styled.div`
+    position: absolute;
+    bottom: 38px;
+    left: 0;
+    width: 100%;
+    
+    @media (min-width: 420px){
+        width: 420px;
+    }
+`;
+
 
 export default ToolsAndLinks;

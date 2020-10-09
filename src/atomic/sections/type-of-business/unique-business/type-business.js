@@ -5,13 +5,11 @@ import TextCenterLayout from "../../../partials/heading-center";
 import {color} from "../../../../components/styles/colors";
 import {shadow} from "../../../../components/styles/shadows";
 import Curve from "../../../atoms/shapes/curve";
-import OvalSvg from "../../../../images/oval-blue-3.inline.svg";
-import OvalBottom from "../../../../images/ovals/bottom-left-transparent-blue1.inline.svg";
+import OvalSvg from "../../../../images/ovals/top-left-transparent-blue2.inline.svg";
 import {Paragraph} from "../../../atoms/typography/paragraph";
-import ContentCenter from "../../../partials/content-center";
-import {Heading} from "../../../atoms/typography/heading";
 import AdventagesWithLongText from "../../../molecules/mixed-blocks/adventages-with-long-text";
 import {gradient} from "../../../atoms/styles/colors";
+import {Link} from "gatsby";
 
 const TypeBusiness = () => (
     <Wrapper>
@@ -19,11 +17,12 @@ const TypeBusiness = () => (
             <OvalSvg/>
         </Oval>
 
+        <TextCenterLayout headlineWidth={770} textWidth={770}
+                          headline="What Type of Fitness-Based Business Should You Start?"
+                          text="There are lots of different options for the type of fitness business you can start. We’ve provided several suggestions below."/>
+
         <Container>
             <Service>
-                <TextCenterLayout headline="What Type of Fitness-Based Business Should You Start?"
-                                  text="There are lots of different options for the type of fitness business you can start. We’ve provided several suggestions below."/>
-
                 <AdventagesBox>
                     <CurveWrapper>
                         <Curve color={color.orange1}/>
@@ -121,7 +120,9 @@ const TypeBusiness = () => (
                         </Paragraph>
 
                         <Paragraph>
-                            You can continue to expand into your other skill and interest areas too. Once you have a collection of ideas, it’s time to start validating them to see if they would work as a business.
+                            You can continue to expand into your other skill and interest areas too. Once you have a
+                            collection of ideas, it’s time to start validating them to see if they would work as a
+                            business.
                         </Paragraph>
 
                     </AdventagesWithLongText>
@@ -131,33 +132,6 @@ const TypeBusiness = () => (
         </Container>
     </Wrapper>
 );
-
-const Title = styled.div`
-    display: block;
-    width: 100%;
-    
-    h3{
-        font-size: 40px;
-        text-align: left;
-    }
-`;
-
-const ListParagraph = styled(Paragraph)`
-    ul{
-        li{
-            list-style-type: none;
-            padding-bottom: 24px;
-            
-            &:before{
-                content: "\u2022";
-                color: ${color.blue1}; 
-                display: inline-block; 
-                padding-right: 15px;
-                font-size: 12px;
-            }
-        }
-    }
-`;
 
 const Wrapper = styled.div`
     background-image: ${gradient.blue3}; 
@@ -189,17 +163,15 @@ const Oval = styled.div`
     position: absolute;
     right: 0;
     top: 300px;
+    width: 100%;
     
     svg {
         transform: scaleX(-1);
     }
-`;
-
-const OvalBottomWrapper = styled.div`
-    position: absolute;
-    left: 0;
-    bottom: 15%; 
-    width: 420px;
+    
+    @media (min-width: 720px) {
+        width: 720px;
+    }
 `;
 
 export default TypeBusiness;

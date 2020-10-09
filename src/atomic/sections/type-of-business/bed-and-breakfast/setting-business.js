@@ -4,8 +4,9 @@ import TextCenterLayout from "../../../../components/partials/blocks/heading-cen
 import TopImageBox from "../../../../components/top-image-box";
 import {color} from "../../../../components/styles/colors";
 import styled from "styled-components";
-import GreenOval from "../../../../images/oval-green-2.inline.svg";
+import GreenOval from "../../../../images/ovals/top-right-transparent-babyblue2.inline.svg";
 import {gradient} from "../../../atoms/styles/colors";
+import {Link} from "gatsby";
 
 const SettingBusiness = () => (
     <WrapperContainer>
@@ -13,6 +14,9 @@ const SettingBusiness = () => (
         <Oval>
             <GreenOval/>
         </Oval>
+        <Oval2>
+            <GreenOval/>
+        </Oval2>
 
         <Container>
             <TextCenterLayout
@@ -62,7 +66,7 @@ const SettingBusiness = () => (
                     <p>
                         You will need a separate business bank account
                         for your bed and breakfast business. You might also want to consider a business credit card. Additionally, you will also need to keep careful bookkeeping records and file business and personal taxes. Here
-                        at Incfile we can even help you file your taxes.
+                        at Incfile <Link to="/">we can even help you file your taxes</Link>.
                     </p>
                 </TopImageBox>
 
@@ -73,7 +77,7 @@ const SettingBusiness = () => (
 
 const WrapperContainer = styled.div`
     background: rgb(255,255,255);
-    background-image: ${gradient.blue3};
+    background-image: ${gradient.babyblue3};
     padding-bottom: 100px;
     padding-top: 100px;
     position: relative;
@@ -106,8 +110,29 @@ const GreenCurve = styled.div`
 
 const Oval = styled.div`
     position: absolute;
-    right: 0;
-    top: 220px;
+    left: 0;
+    top: 394px;
+    transform: rotate(180deg);
+    width: 570px;
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
 `;
+
+const Oval2 = styled.div`
+    position: absolute;
+    right: 0;
+    bottom: 555px;
+    width: 420px;
+    transform: scaleY(-1);
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
+`;
+
 
 export default SettingBusiness;

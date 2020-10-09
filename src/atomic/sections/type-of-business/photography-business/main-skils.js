@@ -4,13 +4,13 @@ import TextCenterLayout from "../../../../components/partials/blocks/heading-cen
 import TopImageBox from "../../../../components/top-image-box";
 import {color} from "../../../../components/styles/colors";
 import styled from "styled-components";
-import OvalSvg from "../../../../images/oval-blue-5.inline.svg";
+import OvalSvg from "../../../../images/ovals/top-right-transparent-green2.inline.svg";
 
 const MainSkils = () => (
     <WrapperContainer>
 
         <Oval>
-            <OvalSvg/>
+            <OvalSvg />
         </Oval>
 
         <Container>
@@ -68,13 +68,13 @@ const ImageBoxes = styled.div`
   grid-gap: 30px;
   padding-top: 112px;
   width: 100%;
-
+  max-width: 970px;
+  
   @media(min-width: 769px) {
     grid-template-columns: 1fr 1fr;
   }
   
   @media (min-width: 970px) {
-    width: 970px;
     margin: 0 auto;
   }
 `;
@@ -89,10 +89,12 @@ const GreenCurve = styled.div`
 const Oval = styled.div`
     position: absolute;
     right: 0;
-    top: 50%;
+    bottom: 0;
+    opacity: 0.5;
+    width: 100%;
     
-    svg {
-        transform: scaleX(-1);
+    @media (min-width: 720px){
+        width: 720px;
     }
 `;
 

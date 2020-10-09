@@ -12,7 +12,7 @@ const TaxReturn = styled.section`
   padding-top: 75px;
 
   &:before {
-    content: '';
+    content: "";
     height: 1900px;
     width: 100%;
     position: absolute;
@@ -23,15 +23,15 @@ const TaxReturn = styled.section`
 `;
 
 const TaxReturnSection = ({ className, content }) => (
-    <TaxReturn className={className}>
-        <Oval className="oval" height="720" width="720" top="0" left="0">
-            <OvalSVG />
-        </Oval>
-        <HeadingCenter headline={content.header} />
-        <ContentCenter>
-          <TaxReturnTable content={content.table} />
-        </ContentCenter>
-    </TaxReturn>
-  );
-  
-  export default TaxReturnSection;
+  <TaxReturn className={className}>
+    <Oval className="oval" height="720" width="720" top="0" left="0">
+      <OvalSVG />
+    </Oval>
+    <HeadingCenter headline={content.header} />
+    <ContentCenter>
+      <TaxReturnTable content={content.table} />
+    </ContentCenter>
+  </TaxReturn>
+);
+
+export default TaxReturnSection;

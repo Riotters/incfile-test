@@ -218,7 +218,7 @@ const Accordion = ({ content, curve, curveRight, curveRightBottom, curveLeft, cu
                   <Panel>
                     <PanelWrapper>
                       {typeof item.answer === "string" ? <p>{item.answer}</p> : null}
-                      {typeof item.answer === "object" ? <p>{item.answer.map((el, id) => (id % 2 ? <Link to={el.url}>{` ${el.text} `}</Link> : el.text))}</p> : null}
+                      {typeof item.answer === "object" ? <p>{item.answer.map(el => (el.url ? <Link to={el.url}>{` ${el.text} `}</Link> : el.text))}</p> : null}
                       {/* <p>{item.answer}</p> */}
                       {item.list && (
                         <ul>

@@ -4,8 +4,9 @@ import TextCenterLayout from "../../../../components/partials/blocks/heading-cen
 import TopImageBox from "../../../../components/top-image-box";
 import {color} from "../../../../components/styles/colors";
 import styled from "styled-components";
-import GreenOval from "../../../../images/oval-green-2.inline.svg";
+import GreenOval from "../../../../images/ovals/bottom-left-transparent-orange.inline.svg";
 import {gradient} from "../../../atoms/styles/colors";
+import {Link} from "gatsby";
 
 const SettingBusiness = () => (
     <GreenContainer>
@@ -34,8 +35,8 @@ const SettingBusiness = () => (
                 <TopImageBox image="side-yellow" color={color.yellow3}>
                     <h4>Business maintenance</h4>
                     <p>
-                        Most states require businesses to file an Annual Report report once a year. You will also be expected to pay estimated taxes on what you plan to earn
-                        in the current business year. Your federal, state, regional and city business licenses and permits may need to be renewed on a regular basis, typically
+                        Most states require businesses to file an <Link to="/">Annual Report</Link> report once a year. You will also be expected to pay estimated taxes on what you plan to earn
+                        in the current business year. Your federal, state, regional and city <Link to="/">business licenses and permits</Link> may need to be renewed on a regular basis, typically
                         once a year.
                     </p>
                 </TopImageBox>
@@ -43,7 +44,7 @@ const SettingBusiness = () => (
                 <TopImageBox image="display-ads" color={color.purple3}>
                     <h4>Finances and taxes</h4>
                     <p>
-                        You will need to create a business bank account and set up bookkeeping systems so you can properly capture your cashflows and pay the appropriate amount of tax. Here at Incfile we can even help you file your taxes.
+                        You will need to create a business bank account and set up bookkeeping systems so you can properly capture your cashflows and pay the appropriate amount of tax. Here at Incfile we can even <Link to="/">help you file your taxes</Link>.
                     </p>
                 </TopImageBox>
 
@@ -79,7 +80,7 @@ const SettingBusiness = () => (
                 <TopImageBox image="permits-licences" color={color.blue3}>
                     <h4>Permits and licenses</h4>
                     <p>
-                        Running a photography business comes with certain rules, regulations and legalities you need to be aware of. Incfile can conduct a Business License Research package for you, or you can take the time to do the research yourself.
+                        Running a photography business comes with certain rules, regulations and legalities you need to be aware of. Incfile can conduct a <Link to="/">Business License Research</Link> package for you, or you can take the time to do the research yourself.
                     </p>
                 </TopImageBox>
             </ImageBoxes>
@@ -102,13 +103,13 @@ const ImageBoxes = styled.div`
   grid-gap: 30px;
   padding-top: 112px;
   width: 100%;
-
+  max-width: 970px;
+  
   @media(min-width: 769px) {
     grid-template-columns: 1fr 1fr;
   }
   
   @media (min-width: 970px) {
-    width: 970px;
     margin: 0 auto;
   }
 `;
@@ -122,8 +123,13 @@ const GreenCurve = styled.div`
 
 const Oval = styled.div`
     position: absolute;
-    right: 0;
-    top: 220px;
+    left: 0;
+    top: calc(50% - 360px);
+    width: 100%;
+    
+    @media (min-width: 720px){
+        width: 720px;
+    }
 `;
 
 export default SettingBusiness;

@@ -8,7 +8,7 @@ import {color} from "../../../../components/styles/colors";
 import {shadow} from "../../../../components/styles/shadows";
 import {typeBusiness} from "../../../../static/type-of-business/teen-business";
 import Curve from "../../../atoms/shapes/curve";
-import OvalSvg from "../../../../images/oval-orange-4.inline.svg";
+import OvalSvg from "../../../../images/ovals/top-right-transparent-orange.inline.svg";
 import AdventagesWithLongText from "../../../molecules/mixed-blocks/adventages-with-long-text";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import ContentCenter from "../../../partials/content-center";
@@ -25,6 +25,14 @@ const TypeBusiness = () => (
         <Oval>
             <OvalSvg/>
         </Oval>
+
+        <Oval2>
+            <OvalSvg/>
+        </Oval2>
+
+        <Oval3>
+            <OvalSvg/>
+        </Oval3>
 
         <Container>
             <TextCenterLayout headline="The Concerns of Female Founders - Moms and Women Entrepreneurs" headlineWidth={770} textWidth={770}
@@ -262,21 +270,54 @@ const CurveWrapper = styled.div`
 const Oval = styled.div`
     position: absolute;
     right: 0;
-    top: 300px;
+    top: 774px;
+    transform: scaleY(-1);
+    width: 100%;
+    
+    @media (min-width: 720px){
+        width: 720px; 
+    }
 `;
 
+const Oval2 = styled.div`
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: scaleX(-1);
+    width: 100%;
+    opacity: 0.5;
+    
+    svg{
+        transform: scaleY(-1);
+    }
+    
+    @media (min-width: 570px){
+        width: 570px; 
+    }
+`;
+
+const Oval3 = styled.div`
+    position: absolute;
+    right: 0;
+    bottom: 723px;
+    width: 100%;
+    opacity: 0.5;
+    
+    @media (min-width: 420px){
+        width: 420px; 
+    }
+`;
 
 const GridSection = styled.div`
     width: 100%;
-    margin-top: 110px;
 `;
 
 const TitleBox = styled.div`
     width: 100%;
     position: relative;
-     
+    max-width: 750px;
+
     @media (min-width:750px) {
-        width: 750px;
         margin: 0 auto;
     }
     
@@ -293,13 +334,13 @@ const GridSectionList = styled.div`
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
+    max-width: 970px;
     
     > div {
         margin-bottom: 70px;
     }
     
     @media (min-width: 970px) {
-        width: 970px;
         margin: 120px auto 0;
     }
 `;

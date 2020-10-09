@@ -51,9 +51,9 @@ const TaxReturnTable = ({ className, content }) => {
 
   return (
     <Wrapper className={className}>
-      <GridTableRow className="head" content={content.headers} header headerSize="5" columns={columnsNo} />
+      <GridTableRow className="head" content={content.headers} header headerSize="5" columns="1fr 1fr 1fr 1fr" />
       {content.rows.map((row) => (
-        <GridTableRow className="row" content={row} columns={columnsNo} />
+        <GridTableRow className="row" content={row} columns="1fr 1fr 1fr 1fr" />
       ))}
     </Wrapper>
   );

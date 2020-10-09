@@ -15,7 +15,7 @@ import Icon2 from "../../../../images/icons/look-at-who-your-competitors-are-in-
 import Icon3 from "../../../../images/icons/understand-your-market.inline.svg"
 import Icon4 from "../../../../images/icons/talk-to-clients.inline.svg"
 import Icon5 from "../../../../images/icons/get-involved-with-business-communities.inline.svg"
-import OvalBlueSVG from "../../../../images/oval-blue-4.inline.svg";
+import OvalBlueSVG from "../../../../images/ovals/top-left-transparent-orange.inline.svg";
 
 const ContainerWrapper = styled.div`
     background-color: white;
@@ -27,15 +27,15 @@ const ContainerWrapper = styled.div`
 
 const GridSection = styled.div`
     width: 100%;
-    margin-top: 110px;
 `;
 
 const TitleBox = styled.div`
     width: 100%;
     position: relative;
-     
+    max-width: 750px;
+    
     @media (min-width:750px) {
-        width: 750px;
+        
         margin: 0 auto;
     }
     
@@ -52,46 +52,28 @@ const GridSectionList = styled.div`
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
+    max-width: 970px;
     
     > div {
         margin-bottom: 70px;
     }
     
     @media (min-width: 970px) {
-        width: 970px;
+       
         margin: 120px auto 0;
-    }
-`;
-
-const TextBorderedSection = styled.div`
-    width: 100%;
-    padding-top: 100px;
-    
-    @media (min-width: 670px) {
-        width: 670px;
-        margin: 0 auto;
-    }
-    
-    h3{
-        color: #1d1d1d;
-        font-size: 40px;
-        text-align: center;
-        margin-bottom: 24px;
-    }
-`;
-
-const TextBorderedList = styled.div`
-    margin-top: 80px;
-    
-    >div {
-        margin-bottom: 8px;
     }
 `;
 
 const OvalCenter = styled.div`
   position: absolute;
   right: 0;
-  top: 0;
+  top: 500px;
+  width: 100%;
+  transform: scaleX(-1);
+  
+  @media (min-width: 570px){
+    width: 570px;
+  }
 `
 
 const AbsoluteCurve = styled.div`

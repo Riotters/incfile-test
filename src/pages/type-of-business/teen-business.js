@@ -31,6 +31,7 @@ import Taxes from "../../atomic/sections/type-of-business/teen-business/taxes";
 import ToolsAndLinks from "../../atomic/sections/type-of-business/teen-business/tools";
 import Conclusion from "../../atomic/sections/general/conclusion";
 import Image from "../../atomic/atoms/image/image";
+import OvalSvg from "../../images/ovals/bottom-right-transparent-green3.inline.svg";
 
 const TeenBusiness = () => (
     <Layout>
@@ -59,112 +60,120 @@ const TeenBusiness = () => (
             </RatingRow>
         </Top>
 
-        <TabsSection>
-            <TabHeading>
-                <TabTitle title="Teen Business" SvgIcon={Tab1Icon}/>
-                <TabTitle title="Why This Industry?" SvgIcon={Tab2Icon}/>
-            </TabHeading>
+        <TabsWrapper>
+            <Oval>
+                <OvalSvg/>
+            </Oval>
+            <TabsSection>
+                <TabHeading>
+                    <TabTitle title="Teen Business" SvgIcon={Tab1Icon}/>
+                    <TabTitle title="Why This Industry?" SvgIcon={Tab2Icon}/>
+                </TabHeading>
 
-            <CollapseWrapper>
-                <PanelWrapper>
-                    <Paragraph big>
-                        If you’re too young to form a business yourself, your parents may be able to help. If your state
-                        does allow teenagers to register their own company, why not stand out from the crowd and boost
-                        your business to the next level?
-                    </Paragraph>
-
-                    <Colorbox className="box" theme="icon" Icon={MegafornIcon} color={color.purple3} curve
-                              curveColor={color.purple1}>
-                        <Heading size={4}>
-                            We know it can be daunting to start a teen business, and we’re here to help.
-                        </Heading>
-                        <Paragraph bottomPadding={0} bottomMargin={0}>
-                            We’ve helped over 250,000 people form their business and provided answers, guidance and
-                            support to transform them into entrepreneurs.
+                <CollapseWrapper>
+                    <PanelWrapper>
+                        <Paragraph big>
+                            If you’re too young to form a business yourself, your parents may be able to help. If your
+                            state
+                            does allow teenagers to register their own company, why not stand out from the crowd and
+                            boost
+                            your business to the next level?
                         </Paragraph>
-                    </Colorbox>
 
-                    <Paragraph big style={{marginTop: "48px"}}>
-                        Here is our simple guide to starting up a successful teen business. We’ll share some business
-                        ideas that are suitable for kids, teens and students, and let you know how to get your business
-                        off the ground. From exploring the types of business you can start to the legalities of setting
-                        up your business and the realities of your day-to-day operations, this guide is here to help.
-                    </Paragraph>
-                    <Paragraph big>
-                        Read on for some insight into creating your own teen business and becoming an entrepreneur.
-                    </Paragraph>
+                        <Colorbox className="box" theme="icon" Icon={MegafornIcon} color={color.green3} curve
+                                  curveColor={color.green1}>
+                            <Heading size={4}>
+                                We know it can be daunting to start a teen business, and we’re here to help.
+                            </Heading>
+                            <Paragraph bottomPadding={0} bottomMargin={0}>
+                                We’ve helped over 250,000 people form their business and provided answers, guidance and
+                                support to transform them into entrepreneurs.
+                            </Paragraph>
+                        </Colorbox>
 
-                </PanelWrapper>
+                        <Paragraph big style={{marginTop: "48px"}}>
+                            Here is our simple guide to starting up a successful teen business. We’ll share some
+                            business
+                            ideas that are suitable for kids, teens and students, and let you know how to get your
+                            business
+                            off the ground. From exploring the types of business you can start to the legalities of
+                            setting
+                            up your business and the realities of your day-to-day operations, this guide is here to
+                            help.
+                        </Paragraph>
+                        <Paragraph big>
+                            Read on for some insight into creating your own teen business and becoming an entrepreneur.
+                        </Paragraph>
 
-                <PanelWrapper>
-                    <Heading size={3}>
-                        Why You Should Become a Teen Entrepreneur
-                    </Heading>
-                    <Paragraph big style={{marginBottom: "52px"}}>
-                        You might be surprised at the number of teen businesses out there. Here are some interesting
-                        facts:
-                    </Paragraph>
+                    </PanelWrapper>
 
-                    <div style={{marginBottom: "30px", marginTop: "48px"}}>
+                    <PanelWrapper>
+                        <Heading size={3}>
+                            Why You Should Become a Teen Entrepreneur
+                        </Heading>
+                        <Paragraph big style={{marginBottom: "52px"}}>
+                            You might be surprised at the number of teen businesses out there. Here are some interesting
+                            facts:
+                        </Paragraph>
+
                         <Adventages
                             headline="Around a quarter of teenagers work in some capacity"
                             width="100%"
                         />
-                    </div>
 
-                    <div style={{marginBottom: "30px", marginTop: "48px"}}>
                         <Adventages
                             headline="Around a quarter of teenagers work in some capacity"
                             width="100%"
                         />
-                    </div>
 
-                    <BubblesWrapper>
-                        <Bubbles>
-                            <BubbleImage>
-                                <Image filename="mrs-bulb-final-comp-thumb-up-color"/>
-                            </BubbleImage>
-                            <BubbleImage>
-                                <Image filename="mrs-bulb-final-comp-thumb-up-color"/>
-                            </BubbleImage>
-                            <BubbleImage>
-                                <Image filename="mrs-bulb-final-comp-thumb-up-color"/>
-                            </BubbleImage>
-                            <BubbleImage>
-                                <Image filename="mrs-bulb-final-comp-thumb-up-color"/>
-                            </BubbleImage>
-                            <BubbleImage>
-                                <Image filename="mrs-bulb-final-comp-thumb-up-color"/>
-                            </BubbleImage>
-                            <BubbleImage>
-                                <Image filename="mrs-bulb-final-comp-thumb-up-color"/>
-                            </BubbleImage>
-                            <BubbleImage>
-                                <Image filename="mrs-bulb-final-comp-thumb-up-copy-4"/>
-                            </BubbleImage>
-                            <BubbleImage>
-                                <Image filename="mrs-bulb-final-comp-thumb-up-copy-4"/>
-                            </BubbleImage>
-                            <BubbleImage>
-                                <Image filename="mrs-bulb-final-comp-thumb-up-copy-4"/>
-                            </BubbleImage>
-                            <BubbleImage>
-                                <Image filename="mrs-bulb-final-comp-thumb-up-copy-4"/>
-                            </BubbleImage>
-                        </Bubbles>
-                        <Text>
-                            8 out of 10 teens want to work for themselves
-                        </Text>
-                    </BubblesWrapper>
+                        <BubblesWrapper>
+                            <Bubbles>
+                                <BubbleImage>
+                                    <Image filename="mrs-bulb-final-comp-thumb-up-color"/>
+                                </BubbleImage>
+                                <BubbleImage>
+                                    <Image filename="mrs-bulb-final-comp-thumb-up-color"/>
+                                </BubbleImage>
+                                <BubbleImage>
+                                    <Image filename="mrs-bulb-final-comp-thumb-up-color"/>
+                                </BubbleImage>
+                                <BubbleImage>
+                                    <Image filename="mrs-bulb-final-comp-thumb-up-color"/>
+                                </BubbleImage>
+                                <BubbleImage>
+                                    <Image filename="mrs-bulb-final-comp-thumb-up-color"/>
+                                </BubbleImage>
+                                <BubbleImage>
+                                    <Image filename="mrs-bulb-final-comp-thumb-up-color"/>
+                                </BubbleImage>
+                                <BubbleImage>
+                                    <Image filename="mrs-bulb-final-comp-thumb-up-copy-4"/>
+                                </BubbleImage>
+                                <BubbleImage>
+                                    <Image filename="mrs-bulb-final-comp-thumb-up-copy-4"/>
+                                </BubbleImage>
+                                <BubbleImage>
+                                    <Image filename="mrs-bulb-final-comp-thumb-up-copy-4"/>
+                                </BubbleImage>
+                                <BubbleImage>
+                                    <Image filename="mrs-bulb-final-comp-thumb-up-copy-4"/>
+                                </BubbleImage>
+                            </Bubbles>
+                            <Text>
+                                8 out of 10 teens want to work for themselves
+                            </Text>
+                        </BubblesWrapper>
 
-                    <Paragraph big>
-                        This is why teen businesses are so exciting. So how can you be part of that success? We're here
-                        to help you figure that out.
-                    </Paragraph>
-                </PanelWrapper>
+                        <Paragraph big>
+                            This is why teen businesses are so exciting. So how can you be part of that success? We're
+                            here
+                            to help you figure that out.
+                        </Paragraph>
+                    </PanelWrapper>
 
-            </CollapseWrapper>
-        </TabsSection>
+                </CollapseWrapper>
+            </TabsSection>
+        </TabsWrapper>
 
         <TypeBusiness/>
 
@@ -190,7 +199,8 @@ const TeenBusiness = () => (
             </Heading>
             <Paragraph big>
                 The internet has made teen entrepreneurship available
-                to everyone. If you can find a great idea, build a niche, develop your reputation and put together a solid business plan, you will have every chance for success.
+                to everyone. If you can find a great idea, build a niche, develop your reputation and put together a
+                solid business plan, you will have every chance for success.
             </Paragraph>
         </Conclusion>
     </Layout>
@@ -203,19 +213,6 @@ const ButtonsBox = styled.div`
   @media (min-width: 769px) {
     flex-direction: row;
   }
-`;
-
-const ListWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-`;
-
-const ListBox = styled.div`
-    width: 100%;
-    
-    @media (min-width: 576px) { 
-        width: 50%; 
-    }
 `;
 
 const BubblesWrapper = styled.div`
@@ -254,6 +251,23 @@ const BubbleImage = styled.div`
         margin: 0 auto;
         height: 110px;
     }
+`;
+
+const TabsWrapper = styled.section`
+    position: relative;
+    margin-top: 75px;
+`;
+
+const Oval = styled.div`
+      position: absolute; 
+      left: 0;
+      top: 0;
+      width: 100%;
+      transform: scaleX(-1);
+      
+      @media (min-width: 420px){
+        width: 420px;
+      }
 `;
 
 export default TeenBusiness;

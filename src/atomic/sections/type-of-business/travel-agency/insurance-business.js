@@ -4,9 +4,14 @@ import InfoCardsSection from "../../../partials/info-cards-section";
 import {InfoCards} from "../../../../static/type-of-business/travel-agency";
 import {gradient} from "../../../atoms/styles/colors";
 import TextCenterLayout from "../../../../components/partials/blocks/heading-center";
+import OvalSvg from "../../../../images/ovals/top-right-transparent-blue2.inline.svg";
 
 const InsuranceBusiness = () => (
     <Wrapper>
+        <Oval>
+            <OvalSvg />
+        </Oval>
+
         <div style={{paddingBottom: "100px"}}>
             <TextCenterLayout
                 headline="Insurance for Your Travel Agency"
@@ -25,4 +30,15 @@ const Wrapper = styled.section`
     position: relative;
 `;
 
+const Oval = styled.div`
+    position: absolute; 
+    top: 142px;
+    right: 0;
+    width: 100%;
+    z-index: -1;
+    
+    @media (min-width: 570px){
+        width: 570px;
+    }
+`;
 export default InsuranceBusiness;

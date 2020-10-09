@@ -1,25 +1,20 @@
 import React from "react";
 import styled from "styled-components";
-import Colorbox from "../../../../components/color-box";
-import DominoIcon from "../../../../images/icons/domino.inline.svg";
-import {color} from "../../../../components/styles/colors";
 import {Heading} from "../../../atoms/typography/heading";
 import CountingTextBoxed from "../../../molecules/text-blocks/counting-text-boxed";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import Container from "../../../container";
 import OvalGreenSVG from "../../../../images/oval-green.inline.svg";
 import OvalSVG from "../../../../images/oval-pink.inline.svg";
+import  {Link} from "gatsby";
 
 const BusinessOwnerResponsibilities = styled.section`
   position: relative;
   padding-top: 75px;
   padding-bottom: 64px;
   width: 100%;
-  
-  @media (min-width: 770px) {
-    width: 770px;
-    margin: 0 auto;
-  }
+  margin: 0 auto;
+  max-width: 770px;
 
   h4.title {
     font-size: 40px;
@@ -68,7 +63,10 @@ const BusinessPlan = () => (
                     Your Social Media Influencer Business Needs a Plan
                 </Heading>
                 <Paragraph big mixed={true}>
-                    You need to define how you’re going to run your influencer business, market yourself, get sales, make a profit and grow. This can only come about through creating a watertight business plan. It will help you get your thinking in order and show your commitment to your influencer marketing business.
+                    You need to define how you’re going to run your influencer business, market yourself, get sales,
+                    make a profit and grow. This can only come about through creating a watertight business plan. It
+                    will help you get your thinking in order and show your commitment to your influencer marketing
+                    business.
                     <br/><br/>
                     Business plans do vary slightly, but they should cover the following areas:
                 </Paragraph>
@@ -128,7 +126,7 @@ const BusinessPlan = () => (
                 </CountingTextBoxed>
 
                 <Paragraph big style={{marginTop: "50px"}} mixed={true}>
-                    We’ve got the perfect <span style={{color: color.blue1, fontWeight: "bold"}}>guide to writing your business plan.</span>
+                    We’ve got the perfect <Link to="/">guide to writing your business plan.</Link>
                 </Paragraph>
             </BusinessOwnerResponsibilities>
         </Container>

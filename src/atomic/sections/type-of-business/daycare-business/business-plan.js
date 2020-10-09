@@ -1,23 +1,20 @@
 import React from "react";
 import styled from "styled-components";
-import Colorbox from "../../../../components/color-box";
-import DominoIcon from "../../../../images/icons/domino.inline.svg";
-import {color} from "../../../../components/styles/colors";
-import {Heading} from "../../../atoms/typography/heading";
 import CountingTextBoxed from "../../../molecules/text-blocks/counting-text-boxed";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import Container from "../../../container";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-blue2.inline.svg";
 import TextCenterLayout from "../../../partials/heading-center";
+import {Link} from "gatsby";
 
 const BusinessOwnerResponsibilities = styled.section`
   position: relative;
-  padding-top: 75px;
+  padding-top: 100px;
   padding-bottom: 64px;
   width: 100%;
+  max-width: 770px;
   
   @media (min-width: 770px) {
-    width: 770px;
     margin: 0 auto;
   }
 
@@ -40,11 +37,11 @@ const Oval = styled.div`
   position: absolute;
   left: 0;
   top: 0;
-  width: 420px;
+  width: 100%;
   display: none;
     
-    @media (min-width: 1200px){
-       display: block;
+    @media (min-width: 420px){
+       width: 420px;
     } 
 `
 
@@ -52,12 +49,11 @@ const OvalCenter = styled.div`
   position: absolute;
   right: 0;
   bottom: 211px;
-  width: 720px;
+  width: 100%;
   transform: scaleX(-1);
-  display: none;
     
-    @media (min-width: 1200px){
-       display: block;
+    @media (min-width: 720px){
+       width: 720px;
     } 
 `
 
@@ -71,8 +67,9 @@ const BusinessPlan = () => (
         </OvalCenter>
         <Container>
             <BusinessOwnerResponsibilities>
-                <TextCenterLayout headline="Your Daycare Business Plan" text="You might think your daycare business doesn’t need a business plan, but you’d be wrong. You will need to clearly understand and capture how you’re going to run your daycare business, market yourself, get sales, make a profit and grow. This can only come about through creating a watertight daycare business plan." />
-                <Paragraph big>
+                <TextCenterLayout headline="Your Daycare Business Plan"
+                                  text="You might think your daycare business doesn’t need a business plan, but you’d be wrong. You will need to clearly understand and capture how you’re going to run your daycare business, market yourself, get sales, make a profit and grow. This can only come about through creating a watertight daycare business plan."/>
+                <Paragraph big style={{marginBottom: "80px", textAlign: "center"}}>
                     Business plans do vary slightly, but they should all cover the following areas:
                 </Paragraph>
 
@@ -84,7 +81,8 @@ const BusinessPlan = () => (
 
                 <CountingTextBoxed number={2}>
                     <Paragraph bottomPadding={0} bottomMargin={0}>
-                        Your goals and what you hope to achieve with your daycare business, including your unique childcare approach
+                        Your goals and what you hope to achieve with your daycare business, including your unique
+                        childcare approach
                     </Paragraph>
                 </CountingTextBoxed>
 
@@ -131,7 +129,7 @@ const BusinessPlan = () => (
                 </CountingTextBoxed>
 
                 <Paragraph big style={{marginTop: "50px"}} mixed={true}>
-                    We’ve got the perfect <span style={{color: color.blue1, fontWeight: "bold"}}>guide to writing your business plan.</span>
+                    We’ve got the perfect <Link to="/">guide to writing your business plan.</Link>
                 </Paragraph>
             </BusinessOwnerResponsibilities>
         </Container>

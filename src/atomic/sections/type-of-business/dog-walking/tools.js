@@ -4,12 +4,20 @@ import Container from "../../../container";
 import TextCenterLayout from "../../../partials/heading-center";
 import PathLink from "../../../molecules/buttons/path";
 import {shadow} from "../../../atoms/styles/shadows";
-import {color} from "../../../atoms/styles/colors";
+import {color, gradient} from "../../../atoms/styles/colors";
 import UsefulTools from "../../../partials/useful-tools";
 import {toolsList} from "../../../../static/type-of-business/dog-walking";
+import OvalSvg from "../../../../images/ovals/top-right-transparent-blue2.inline.svg";
+import OvalSvg2 from "../../../../images/ovals/bottom-left-transparent-orange.inline.svg";
 
 const ToolsAndLinks = () => (
     <Wrapper>
+        <Oval>
+            <OvalSvg />
+        </Oval>
+        <Oval2>
+            <OvalSvg2 />
+        </Oval2>
         <Container>
             <TextCenterLayout headline="Groups and Forums for Your Dog Walking or Pet Sitting Business"
                               text="Here are some useful places where you can connect with other dog walking or pet sitting entrepreneurs:"/>
@@ -17,19 +25,19 @@ const ToolsAndLinks = () => (
             <LinksContainer>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
-                        CONSTRUCT-ED contractor forums
+                    <PathLink to="https://petsits.com/articles/pet-sitting-forums" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                        Professional United Pet Sitters Forums
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.doggieresidence.com/community/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Doggie Residence
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://petsitters.org/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         National Association of Professional Pet Sitters
                         (Membership Required)
                     </PathLink>
@@ -45,8 +53,10 @@ const ToolsAndLinks = () => (
 );
 
 const Wrapper = styled.div`
-    padding-top: 0px;
+    padding-top: 100px;
     margin-bottom: 200px;
+    position: relative;
+    background-image: ${gradient.blue3};
 `;
 
 const LinksContainer = styled.div`
@@ -56,7 +66,7 @@ const LinksContainer = styled.div`
     justify-content: space-between;
     flex-wrap: wrap;
     
-    @media (min-width: 1000px) {
+    @media (min-width: 1100px) {
         width: 1000px;
     }
 `;
@@ -73,10 +83,31 @@ const LinkItem = styled.div`
         width: 470px;
     }
     
-    @media (min-width: 1000px) {
+    @media (min-width: 1100px) {
         margin-left: 15px;
         margin-right: 15px;
     }
 `;
 
+const Oval = styled.div`
+    position: absolute;
+    right: 0;
+    top: calc(50% - 360px);
+    width: 100%;
+    
+    @media (min-width: 720px){
+        width: 720px;
+    }
+`;
+
+const Oval2 = styled.div`
+    position: absolute;
+    left: 0;
+    bottom: 181px;
+    width: 100%;
+    
+    @media (min-width: 420px){
+        width: 420px;
+    }
+`;
 export default ToolsAndLinks;

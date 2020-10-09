@@ -5,7 +5,7 @@ import TopImageBox from "../../../../components/top-image-box";
 import {color} from "../../../../components/styles/colors";
 import styled from "styled-components";
 import Curve from "../../../../images/green-curve.inline.svg";
-import GreenOval from "../../../../images/oval-green-2.inline.svg";
+import GreenOval from "../../../../images/ovals/top-right-transparent-green2.inline.svg";
 
 const SettingBusiness = () => (
     <GreenContainer>
@@ -17,7 +17,7 @@ const SettingBusiness = () => (
         <Container>
             <TextCenterLayout
                 headline="Setting up Your Life or Business Coaching Operations"
-                headlineWidth="700"
+                headlineWidth={770}
                 text="Once you've legally created your coaching business, you’ll need to get some other things in place."
             />
             <ImageBoxes>
@@ -85,6 +85,7 @@ const GreenContainer = styled.div`
     padding-bottom: 100px;
     padding-top: 100px;
     position: relative;
+    overflow: hidden;
 `;
 
 
@@ -94,13 +95,13 @@ const ImageBoxes = styled.div`
   grid-gap: 30px;
   padding-top: 112px;
   width: 100%;
-
+  max-width: 970px;
+  
   @media(min-width: 769px) {
     grid-template-columns: 1fr 1fr;
   }
   
   @media (min-width: 970px) {
-    width: 970px;
     margin: 0 auto;
   }
 `;
@@ -116,6 +117,11 @@ const Oval = styled.div`
     position: absolute;
     right: 0;
     top: 220px;
+    width: 100%;
+    
+    @media (min-width: 570px){
+        width: 570px;
+    }
 `;
 
 export default SettingBusiness;

@@ -8,7 +8,7 @@ import {color} from "../../../../components/styles/colors";
 import {shadow} from "../../../../components/styles/shadows";
 import {adventages} from "../../../../static/type-of-business/travel-agency";
 import Curve from "../../../atoms/shapes/curve";
-import OvalSvg from "../../../../images/oval-orange-4.inline.svg";
+import OvalSvg from "../../../../images/ovals/top-right-transparent-green3.inline.svg";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import ContentCenter from "../../../partials/content-center";
 
@@ -17,6 +17,9 @@ const TypeOfBusiness = () => (
         <Oval>
             <OvalSvg/>
         </Oval>
+        <Oval2>
+            <OvalSvg/>
+        </Oval2>
         <Container>
             <Service>
                 <TextCenterLayout headline="What Type of Daycare Should You Start?"
@@ -54,7 +57,7 @@ const TypeOfBusiness = () => (
 
 const Wrapper = styled.div`
     background: rgba(255,255,255,1);
-    background-image: ${gradient.orange3}; 
+    background-image: ${gradient.green3}; 
     padding-top: 100px;
     position: relative;
 `;
@@ -82,7 +85,24 @@ const CurveWrapper = styled.div`
 const Oval = styled.div`
     position: absolute;
     right: 0;
-    top: 300px;
+    top: 353px;
+    width: 100%;
+    
+    @media (min-width: 720px){
+        width: 720px;
+    }
+`;
+
+const Oval2 = styled.div`
+    position: absolute;
+    left: 0;
+    bottom: 51px;
+    width: 100%;
+    transform: rotate(180deg);
+    
+    @media (min-width: 570px){
+        width: 570px;
+    }
 `;
 
 export default TypeOfBusiness;

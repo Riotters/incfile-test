@@ -1,55 +1,53 @@
 import React from "react";
 import styled from "styled-components";
-import Container from "../../../container";
-import TextCenterLayout from "../../../partials/heading-center";
-import PathLink from "../../../molecules/buttons/path";
-import {shadow} from "../../../atoms/styles/shadows";
-import {color} from "../../../atoms/styles/colors";
 import {toolsList} from "../../../../static/type-of-business/side-business";
 import UsefulTools from "../../../partials/useful-tools";
+import OvalSvg from "../../../../images/ovals/bottom-left-transparent-orange.inline.svg";
 
 const Links = () => (
     <Wrapper>
-        <Container>
-            <UsefulTools style={{paddingBottom: "200px"}} toolsList={toolsList.tools} headlineText={toolsList.headlineText}
-                         description={toolsList.description}/>
-        </Container>
+        <Oval>
+            <OvalSvg/>
+        </Oval>
+        <Oval2>
+            <OvalSvg/>
+        </Oval2>
+
+        <UsefulTools style={{paddingBottom: "200px"}} toolsList={toolsList.tools}
+                     headlineText={toolsList.headlineText}
+                     description={toolsList.description}/>
     </Wrapper>
 );
 
 const Wrapper = styled.div`
-    padding-top: 100px;
+    position: relative;
     background: linear-gradient(180deg, #fef6ed 0%, #ffffff 100%);
 `;
 
-const LinksContainer = styled.div`
+const Oval = styled.div`
+    position: absolute;
+    right: 0;
+    top: 279px;
     width: 100%;
-    margin: 100px auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    transform: scaleX(-1);
     
-    @media (min-width: 1000px) {
-        width: 1000px;
+    svg {
+        transform: scaleY(-1);
     }
+  
+  @media (min-width: 720px){
+    width: 720px;
+  }
 `;
 
-const LinkItem = styled.div`
-    margin: 0 auto;
-    padding: 28px 40px 28px 40px;
-    background-color: white;
-    box-shadow: ${shadow.white1};
+const Oval2 = styled.div`
+    position: absolute;
+    left: 0;
+    bottom: 201px;
     width: 100%;
-    margin-bottom: 30px;
-    
-    @media (min-width: 470px) {
-        width: 470px;
-    }
-    
-    @media (min-width: 1000px) {
-        margin-left: 15px;
-        margin-right: 15px;
-    }
+  
+  @media (min-width: 420px){
+    width: 420px;
+  }
 `;
-
 export default Links;

@@ -4,7 +4,7 @@ export const typeBusiness = {
     items: [
         {
             circleText: 1,
-            imageName: "general-gym-and-fitness-ceter",
+            imageName: "microbrewery-icon",
             headline: "Microbrewery Only",
             text: "A microbrewery by itself doesn’t have an attached bar or brewpub. Instead, they supply beer to other bars, pubs or breweries as guest taps. Later on, they may also sell prepackaged bottles and cans through retail outlets."
         },
@@ -52,7 +52,7 @@ export const InfoCards = [
     },
     {
         backgroundColor: color.green3,
-        imageName: "workers-compensation-insurance",
+        imageName: "shield-icon",
         title: "General Liability Insurance for Your Brewery Business",
         content: "This insurance protects your brewery business from claims due to being sued. This may include injury to members of the public, property damage, personal liabilities, legal defense and more. It can help protect your business from financial penalties and bankruptcy."
     },

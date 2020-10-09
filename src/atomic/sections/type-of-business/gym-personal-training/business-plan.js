@@ -1,12 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-
+import {Link} from "gatsby";
 import {color} from "../../../../components/styles/colors";
 import CountingTextBoxed from "../../../molecules/text-blocks/counting-text-boxed";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import Container from "../../../container";
-import OvalSmallSVG from "../../../../images/oval-orange-2.inline.svg";
-import OvalSVG from "../../../../images/oval-orange-4.inline.svg";
+import OvalSVG from "../../../../images/ovals/top-left-transparent-orange2.inline.svg";
 import TextCenterLayout from "../../../partials/heading-left";
 import {gradient} from "../../../atoms/styles/colors";
 
@@ -15,9 +14,9 @@ const BusinessOwnerResponsibilities = styled.section`
   padding-top: 75px;
   padding-bottom: 64px;
   width: 100%;
+  max-width: 770px;
   
   @media (min-width: 770px) {
-    width: 770px;
     margin: 0 auto;
   }
 
@@ -39,19 +38,30 @@ const Wrapper = styled.section`
 const Oval = styled.div`
   position: absolute;
   left: 0;
-  top: 20%;
+  top: 222px;
+  width: 100%;
+  
+  @media (min-width: 420px) {
+    width: 420px;
+  }
 `
 
 const OvalCenter = styled.div`
   position: absolute;
   right: 0;
-  top: 38%;
+  bottom: 349px;
+  transform: scaleX(-1);
+  width: 100%;
+  
+  @media (min-width: 720px) {
+    width: 720px;
+  }
 `
 
 const BusinessPlan = () => (
     <Wrapper>
         <Oval>
-            <OvalSmallSVG/>
+            <OvalSVG/>
         </Oval>
         <OvalCenter>
             <OvalSVG/>
@@ -64,7 +74,7 @@ const BusinessPlan = () => (
                     a watertight business plan. It will help you get your thinking in order and show your commitment to your fitness or personal training business.
                 </Paragraph>
 
-                <Paragraph big style={{fontWeight: "bold"}}>
+                <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
                     You will also need to look carefully at financial projections for your fitness business.
                 </Paragraph>
 
@@ -130,7 +140,7 @@ const BusinessPlan = () => (
                 </CountingTextBoxed>
 
                 <Paragraph big style={{marginTop: "50px"}} mixed={true}>
-                    We’ve got the perfect <span style={{color: color.blue1, fontWeight: "bold"}}>guide to writing your business plan.</span>
+                    We’ve got the perfect <Link to="/">guide to writing your business plan.</Link>
                 </Paragraph>
             </BusinessOwnerResponsibilities>
         </Container>

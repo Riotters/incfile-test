@@ -7,7 +7,7 @@ import {color} from "../../../../components/styles/colors";
 import {shadow} from "../../../../components/styles/shadows";
 import {typeBusiness} from "../../../../static/type-of-business/gym-personal-training";
 import Curve from "../../../atoms/shapes/curve";
-import OvalSvg from "../../../../images/oval-blue-3.inline.svg";
+import OvalSvg from "../../../../images/ovals/top-left-transparent-blue2.inline.svg";
 import OvalBottom from "../../../../images/ovals/bottom-left-transparent-blue1.inline.svg";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import ContentCenter from "../../../partials/content-center";
@@ -22,11 +22,12 @@ const TypeBusiness = () => (
         <OvalBottomWrapper>
             <OvalBottom/>
         </OvalBottomWrapper>
+        <TextCenterLayout headlineWidth={770} textWidth={770}
+                          headline="What Type of Fitness-Based Business Should You Start?"
+                          text="There are lots of different options for the type of fitness business you can start. We’ve provided several suggestions below."/>
+
         <Container>
             <Service>
-                <TextCenterLayout headline="What Type of Fitness-Based Business Should You Start?"
-                                  text="There are lots of different options for the type of fitness business you can start. We’ve provided several suggestions below."/>
-
                 <AdventagesBox>
                     <CurveWrapper>
                         <Curve color={color.orange1}/>
@@ -47,32 +48,33 @@ const TypeBusiness = () => (
                     ))}
                 </AdventagesBox>
             </Service>
-
-            <ContentCenter contentWidth={770}>
-                <Title>
-                    <Heading size={3}>
-                        Personal Training
-                    </Heading>
-                </Title>
-
-                <Paragraph big>
-                    If you don’t want the considerable expense of opening a gym, you might decide
-                    to go down the personal trainer route. You have several good options:
-                </Paragraph>
-
-                <ListParagraph big mixed={true}>
-                    <ul>
-                        <li>Provide one-on-one training with individual clients to help them meet fitness goals</li>
-                        <li>Instruct specialized classes like aerobics, Zumba, Pilates or spinning</li>
-                        <li>Get the blood pumping with circuit training or high-intensity interval training</li>
-                    </ul>
-                </ListParagraph>
-
-                <Paragraph big style={{paddingBottom: "48px"}}>
-                    You’ll need the right skills and experience — and if you don’t want to go it alone, there are plenty of franchise opportunities available to personal trainers.
-                </Paragraph>
-            </ContentCenter>
         </Container>
+
+        <ContentCenter contentWidth={770}>
+            <Title>
+                <Heading size={3}>
+                    Personal Training
+                </Heading>
+            </Title>
+
+            <Paragraph big>
+                If you don’t want the considerable expense of opening a gym, you might decide
+                to go down the personal trainer route. You have several good options:
+            </Paragraph>
+
+            <ListParagraph big mixed={true}>
+                <ul>
+                    <li>Provide one-on-one training with individual clients to help them meet fitness goals</li>
+                    <li>Instruct specialized classes like aerobics, Zumba, Pilates or spinning</li>
+                    <li>Get the blood pumping with circuit training or high-intensity interval training</li>
+                </ul>
+            </ListParagraph>
+
+            <Paragraph big style={{paddingBottom: "48px"}}>
+                You’ll need the right skills and experience — and if you don’t want to go it alone, there are plenty
+                of franchise opportunities available to personal trainers.
+            </Paragraph>
+        </ContentCenter>
     </Wrapper>
 );
 
@@ -118,7 +120,7 @@ const AdventagesBox = styled.div`
   flex-wrap: wrap;
   width: 100%;
   max-width: 970px;
-  margin: 140px auto 0;
+  margin: 0 auto 80px;
   position: relative;
  
 `;
@@ -127,15 +129,25 @@ const CurveWrapper = styled.div`
     position: absolute;
     right: -24px;
     top: 0px;
+    display: none;
+  
+    @media (min-width: 1200px) {
+        display: block;
+    }
 `;
 
 const Oval = styled.div`
     position: absolute;
     right: 0;
     top: 300px;
+    width: 100%;
     
     svg {
         transform: scaleX(-1);
+    }
+  
+    @media (min-width: 720px) {
+        width: 720px;
     }
 `;
 
@@ -143,7 +155,11 @@ const OvalBottomWrapper = styled.div`
     position: absolute;
     left: 0;
     bottom: 15%; 
-    width: 420px;
+    width: 100%;
+  
+    @media (min-width: 420px) {
+        width: 420px;
+    }
 `;
 
 export default TypeBusiness;

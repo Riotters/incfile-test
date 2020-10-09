@@ -3,21 +3,26 @@ import { Link } from "gatsby";
 import styled from "styled-components";
 import { Tabs, useTabState, usePanelState } from "@bumaga/tabs";
 import { motion } from "framer-motion";
+import { shadow } from "../../atoms/styles/shadows";
 import { color } from "../../atoms/styles/colors";
 import GridTableRow from "../../molecules/blocks/grid-table-row";
 import ArrowSVG from "../../../images/arrow-circle.inline.svg";
 import CurveSVG from "../../../images/orange-curve.inline.svg";
 import VisibilitySensor from "../../../components/VisibilitySensor";
+import { Heading } from "../../atoms/typography/heading";
+import { Paragraph } from "../../atoms/typography/paragraph";
 
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
   position: relative;
+  overflow-x: scroll;
   margin-top: ${(props) => (props.tab ? "" : "80")};
 
   @media (min-width: 769px) {
     padding: ${(props) => (props.tab ? "" : "25px 29px 0")};
+    overflow-x: auto;
   }
 `;
 
@@ -38,7 +43,7 @@ const Curve = styled.div`
 
   svg {
     path {
-      fill: ${props => props.curveColor ? props.curveColor : ""};
+      fill: ${(props) => (props.curveColor ? props.curveColor : "")};
     }
   }
 `;
@@ -50,10 +55,10 @@ const TabsWrapper = styled.div`
 `;
 
 const TabBox = styled.div`
-  box-shadow: 0 24px 32px 0 rgba(236, 236, 236, 0.5);
   margin-bottom: 8px;
 
   .accordion-panel {
+    box-shadow: ${shadow.white1};
     overflow: hidden;
   }
 `;
@@ -66,7 +71,7 @@ const PanelWrapper = styled.div`
   z-index: 1;
 
   @media (min-width: 769px) {
-    padding: 16px 40px 40px 80px;
+    padding: 32px 40px;
   }
 
   h3 {
@@ -116,10 +121,13 @@ const Button = styled.button`
   background: #fff;
   display: flex;
   cursor: pointer;
-  position: relative;
   border-radius: 5px;
-  overflow: hidden;
+  box-shadow: 0 24px 32px 0 rgba(236, 236, 236, 0.5);
   border: none;
+
+  p {
+    color: ${color.black};
+  }
 
   &.active {
     border-radius: 5px 5px 0 0;
@@ -139,16 +147,21 @@ const Content = styled.div`
   flex-grow: 1;
 
   .row {
-      box-shadow: none;
-  }
+    box-shadow: none;
 
-  span {
-    color: #4e4e4e;
-    font-family: Avenir;
-    font-size: 16px;
-    text-align: left;
-    width: 100%;
-    line-height: 24px;
+    & > div {
+      &:not(:first-child) {
+        max-width: 160px;
+        justify-content: center;
+
+        p {
+          font-weight: 400;
+          background-color: ${color.green3};
+          border-radius: 50px;
+          padding: 8px 26px;
+        }
+      }
+    }
   }
 `;
 
@@ -174,17 +187,25 @@ const Separator = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 40px;
   width: 100%;
   background-color: ${color.blue3};
   margin-bottom: 8px;
-  padding: 12px;
 
   span {
-      font-family: Avenir, sans-serif;
-      font-weight: 900;
-      color: ${color.blue1};
-      text-transform: uppercase;
+    font-family: Avenir, sans-serif;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 12px;
+    color: ${color.blue1};
+    text-transform: uppercase;
   }
+`;
+
+const Grid = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 70px;
 `;
 
 const cn = (...args) => args.filter(Boolean).join(" ");
@@ -215,58 +236,64 @@ const Panel = ({ children }) => {
 };
 
 const Accordion = ({ content, curve, curveRight, curveRightBottom, curveLeft, curveLeftBottom, curveColor, tab }) => {
-    const columnsNo = content.headers.length;
+  const columnsNo = content.headers.length;
 
-    return (
-        <VisibilitySensor partialVisibility once>
-        {({ isVisible }) => (
-            <Wrapper className={isVisible ? "slideUp enter" : "slideUp"} tab={tab}>
-                {curve && (
-                    <Curve curveRight={curveRight} curveRightBottom={curveRightBottom} curveLeft={curveLeft} curveLeftBottom={curveLeftBottom} curveColor={curveColor}>
-                    <CurveSVG />
-                    </Curve>
-                )}
-                <GridTableRow className="head" content={content.headers} header headerSize="5" columns={columnsNo} />
-                <Tabs>
-                    <TabsWrapper>
-                    {content.items.map((item) => (
-                        <TabBox>
-                            {item.separator && (
-                                <Separator>
-                                    <span>
-                                        {item.separator}
-                                    </span>
-                                </Separator>
-                            )}
-                        <Tab>
-                            <Icon>
-                            <ArrowSVG />
-                            </Icon>
-                            <Content>
-                                <GridTableRow className="row" content={item.row} columns={columnsNo} />
-                            </Content>
-                        </Tab>
-                        <Panel>
-                            <PanelWrapper>
-                            {typeof item.answer === "string" ? <p>{item.answer}</p> : null}
-                            {typeof item.answer === "object" ? <p>{item.answer.map((el, id) => (id % 2 ? <Link to={el.url}>{` ${el.text} `}</Link> : el.text))}</p> : null}
-                            {/* <p>{item.answer}</p> */}
-                            {item.list && (
-                                <ul>
-                                {item.list.map((listitem) => (
-                                    <li>{listitem}</li>
-                                ))}
-                                </ul>
-                            )}
-                            </PanelWrapper>
-                        </Panel>
-                        </TabBox>
-                    ))}
-                    </TabsWrapper>
-                </Tabs>
-            </Wrapper>
-        )}
-        </VisibilitySensor>
-    );
+  return (
+    <VisibilitySensor partialVisibility once>
+      {({ isVisible }) => (
+        <Wrapper className={isVisible ? "slideUp enter" : "slideUp"} tab={tab}>
+          {curve && (
+            <Curve curveRight={curveRight} curveRightBottom={curveRightBottom} curveLeft={curveLeft} curveLeftBottom={curveLeftBottom} curveColor={curveColor}>
+              <CurveSVG />
+            </Curve>
+          )}
+          <GridTableRow className="head" content={content.headers} header headerSize="5" columns="minmax(368px, 1fr) 160px 160px 160px 160px" />
+          <Tabs>
+            <TabsWrapper>
+              {content.items.map((item) => (
+                <TabBox>
+                  {item.separator && (
+                    <Separator>
+                      <span>{item.separator}</span>
+                    </Separator>
+                  )}
+                  <Tab>
+                    <Icon>
+                      <ArrowSVG />
+                    </Icon>
+                    <Content>
+                      <GridTableRow className="row" content={item.row} columns="minmax(288px, 1fr) 160px 160px 160px 160px" />
+                    </Content>
+                  </Tab>
+                  <Panel>
+                    <PanelWrapper>
+                      {typeof item.answer === "string" ? <p>{item.answer}</p> : null}
+                      {typeof item.answer === "object" ? (
+                        <Grid>
+                          {item.answer.map((el) => (
+                            <div>
+                              <Heading size="5">{el.header}</Heading>
+                              <Paragraph bottomMargin="0">{el.text}</Paragraph>
+                            </div>
+                          ))}
+                        </Grid>
+                      ) : null}
+                      {item.list && (
+                        <ul>
+                          {item.list.map((listitem) => (
+                            <li>{listitem}</li>
+                          ))}
+                        </ul>
+                      )}
+                    </PanelWrapper>
+                  </Panel>
+                </TabBox>
+              ))}
+            </TabsWrapper>
+          </Tabs>
+        </Wrapper>
+      )}
+    </VisibilitySensor>
+  );
 };
 export default Accordion;

@@ -6,6 +6,7 @@ import {color} from "../../../../components/styles/colors";
 import styled from "styled-components";
 import Curve from "../../../../images/green-curve.inline.svg";
 import OvalSvg from "../../../../images/ovals/bottom-right-transparent-blue2.inline.svg";
+import OvalSvg2 from "../../../../images/ovals/bottom-right-transparent-babyblue2.inline.svg";
 import ContentCenter from "../../../partials/content-center";
 
 const SettingBusiness = () => (
@@ -14,6 +15,9 @@ const SettingBusiness = () => (
         <Oval>
             <OvalSvg/>
         </Oval>
+        <Oval2>
+            <OvalSvg2 />
+        </Oval2>
 
         <Container>
             <ContentCenter>
@@ -95,18 +99,27 @@ const ImageBoxes = styled.div`
   }
 `;
 
-const GreenCurve = styled.div`
-    position: absolute;
-    right: -115px;
-    bottom: -122px;
-    width: 115px;
-`;
-
 const Oval = styled.div`
     position: absolute;
     right: 0;
     top: 266px;
+    width: 100%;
+  
+  @media (min-width: 570px){
     width: 570px;
+  }
+`;
+
+const Oval2 = styled.div`
+    position: absolute;
+    left: 0;
+    bottom: 55px;
+    width: 100%;
+    transform: scaleX(-1);
+  
+  @media (min-width: 570px){
+    width: 570px;
+  }
 `;
 
 export default SettingBusiness;

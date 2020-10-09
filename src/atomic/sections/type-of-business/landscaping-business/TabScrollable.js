@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import styled from "styled-components";
+import {Link} from "gatsby";
 
 import {color} from "../../../atoms/styles/colors";
 import {shadow} from "../../../atoms/styles/shadows";
@@ -175,7 +176,7 @@ const TabScrollable = ({layout, columns}) => {
                                         <Paragraph big mixed={true}>
                                             You can find all the information you need about statewide licenses and
                                             permits on your state’s Secretary of State website. You can also find those
-                                            details in our <span className="big blue">state-by-state guides to company formation.</span> Alternatively,
+                                            details in our <Link to="/">state-by-state guides to company formation.</Link> Alternatively,
                                             the Small Business Administration website has a list of licenses and permits
                                             by state.
                                         </Paragraph>
@@ -201,8 +202,8 @@ const TabScrollable = ({layout, columns}) => {
                                         </Paragraph>
 
                                         <Paragraph big>
-                                            The Small Business Administration provides details of any national or
-                                            federal licenses and permits you might need.
+                                            The Small Business Administration provides <Link to="/">details of any national or
+                                            federal licenses and permits</Link> you might need.
                                         </Paragraph>
                                     </TextBlockWithImage>
 
@@ -253,7 +254,7 @@ const TabScrollable = ({layout, columns}) => {
                                         </Paragraph>
 
                                         <Paragraph big mixed={true}>
-                                            All businesses need to have a Registered Agent. These are individuals or
+                                            All businesses need to have a <Link to="/">Registered Agent</Link>. These are individuals or
                                             other businesses that can accept legal documents on behalf of your
                                             landscaping company.
                                         </Paragraph>
@@ -264,7 +265,7 @@ const TabScrollable = ({layout, columns}) => {
                                             name and address from the public record.
                                         </Paragraph>
                                         <Paragraph big mixed={true}>
-                                            When you incorporate through us, we provide a complete Registered Agent
+                                            When you <Link to="/">incorporate through us</Link>, we provide a complete Registered Agent
                                             service free for the first year.
                                         </Paragraph>
                                     </TextBlockWithImage>
@@ -295,7 +296,7 @@ const TabScrollable = ({layout, columns}) => {
                                         <Accordion content={TaxesAccordionContent}/>
 
                                         <Paragraph big mixed={true}>
-                                            As a rule of thumb, we recommend keeping back around a third of your earnings to pay your taxes. We can even prepare and file your tax returns for you.
+                                            As a rule of thumb, we recommend keeping back around a third of your earnings to pay your taxes. We can even <Link to="/">prepare and file your tax returns for you</Link>.
                                         </Paragraph>
                                     </TextBlockWithImage>
 
@@ -430,6 +431,10 @@ const PanelWrapper = styled.article`
 
   h3 {
     margin-bottom: 48px;
+  }
+  
+  @media (min-width: 768px){
+    padding-left: 30px;
   }
 `
 

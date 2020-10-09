@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <g>
+                            <g transform="translate(-779 -2098) translate(0 602) translate(755 168) translate(0 1304) translate(24 24) translate(0 1)">
+                                <path fill="#FFF" fill-rule="nonzero" d="M23.93 18.36c0 .41.08 7.19.08 7.19-2.66 1.17-7.88.07-8.73-.78l.07-7.57c.757-.197 1.538-.291 2.32-.28 2 0 6.26.76 6.26 1.44z"/>
+                                <path fill="#FFF" fill-rule="nonzero" d="M29.79 24.73v3.6c-3.7 1.62-7.47.28-8.65-.9l.13-3.93c1.14-.314 2.317-.482 3.5-.5 2.75 0 5.02.78 5.02 1.73zM15.79 4.42v19.17c-.003.43-.095.856-.27 1.25-.402.184-.838.28-1.28.28H3.84C2.115 25.12.716 23.725.71 22V3.27C.717 2.831.815 2.398 1 2c.402-.183.839-.275 1.28-.27H13.1c.736-.084 1.47.172 1.994.696s.78 1.258.696 1.994z"/>
+                                <path stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M4.26 10.7L13.86 10.7M4.26 6.78L13.86 6.78M15.54 24.8c-.405.185-.845.281-1.29.28H3.84C2.127 25.086.727 23.713.7 22V3.23C.714 2.804.816 2.385 1 2 1.486.86 2.601.118 3.84.11h10.41c.83-.003 1.627.325 2.216.91.589.585.921 1.38.924 2.21v13.15M11.38 13.12L6.74 20.71"/>
+                                <circle cx="11.94" cy="19.79" r="1.41" stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4"/>
+                                <circle cx="6.32" cy="14.55" r="1.41" stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4"/>
+                                <ellipse cx="20.64" cy="17.7" stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" rx="5.06" ry="1.72"/>
+                                <path stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M25.69 20.89c0 .95-2.26 1.72-5.05 1.72s-5.06-.77-5.06-1.72M25.69 17.95L25.69 21.49M15.58 17.7L15.58 24.8M20.64 25.8c-2.79 0-5.06-.77-5.06-1.72"/>
+                                <ellipse cx="26.18" cy="23.67" stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" rx="5.06" ry="1.72"/>
+                                <path stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M31.23 27c0 1-2.26 1.73-5.05 1.73S21.12 28 21.12 27M31.23 24.08L31.23 27.01M21.12 24.08L21.12 27.01"/>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

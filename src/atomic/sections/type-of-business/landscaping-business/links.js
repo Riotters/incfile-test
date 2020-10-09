@@ -16,7 +16,7 @@ const EtsyLinks = () => (
             <LinksContainer>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.lawnsite.com/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Lawnsite
                     </PathLink>
                     <Paragraph style={{marginTop: "20px"}} bottomMargin={0}>
@@ -25,7 +25,7 @@ const EtsyLinks = () => (
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="http://www.groundtradesxchange.com/forums/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Ground Trades Xchange
                     </PathLink>
                     <Paragraph style={{marginTop: "20px"}} bottomMargin={0}>
@@ -34,7 +34,7 @@ const EtsyLinks = () => (
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.lawnserviceforum.com/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Lawn Service Forum
                     </PathLink>
                     <Paragraph style={{marginTop: "20px"}} bottomMargin={0}>
@@ -43,7 +43,7 @@ const EtsyLinks = () => (
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="http://www.gopherforum.com/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Gopher Lawn Care Business Forum
                     </PathLink>
                     <Paragraph style={{marginTop: "20px"}} bottomMargin={0}>
@@ -52,7 +52,7 @@ const EtsyLinks = () => (
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="http://lawncare.forumsmotion.com/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Lawncare & Landscaping Forum
                     </PathLink>
                     <Paragraph style={{marginTop: "20px"}} bottomMargin={0}>
@@ -61,7 +61,7 @@ const EtsyLinks = () => (
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="http://www.contractortalk.com/f7/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Contractor Talk — Landscaping
                     </PathLink>
                     <Paragraph style={{marginTop: "20px"}} bottomMargin={0}>
@@ -84,7 +84,7 @@ const LinksContainer = styled.div`
     justify-content: space-between;
     flex-wrap: wrap;
     
-    @media (min-width: 1000px) {
+    @media (min-width: 1100px) {
         width: 1000px;
     }
 `;
@@ -93,7 +93,7 @@ const LinkItem = styled.div`
     margin: 0 auto;
     padding: 28px 40px 28px 40px;
     background-color: white;
-    box-shadow: ${shadow.white1};
+    box-shadow: ${shadow.white1}; 
     width: 100%;
     margin-bottom: 30px;
     
@@ -101,7 +101,7 @@ const LinkItem = styled.div`
         width: 470px;
     }
     
-    @media (min-width: 1000px) {
+    @media (min-width: 1100px) {
         margin-left: 15px;
         margin-right: 15px;
     }

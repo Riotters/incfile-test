@@ -33,6 +33,7 @@ import Grants from "../../atomic/sections/type-of-business/women-business/grants
 import BlueBoxWithAbsoluteText from "../../atomic/molecules/text-blocks/blue-box-with-absolute-text";
 import CircleWithText from "../../atomic/molecules/blocks/circle-with-text-block";
 import Chart from "../../images/icons/circle-2.inline.svg";
+import TabsOvalOneSvg from "../../images/ovals/bottom-left-transparent-orange.inline.svg";
 
 const TeenBusiness = () => (
     <Layout>
@@ -59,97 +60,109 @@ const TeenBusiness = () => (
             </RatingRow>
         </Top>
 
-        <TabsSection>
-            <TabHeading>
-                <TabTitle title="Business for women" SvgIcon={Tab1Icon}/>
-                <TabTitle title="Why This Industry?" SvgIcon={Tab2Icon}/>
-            </TabHeading>
+        <TabsWrapper>
 
-            <CollapseWrapper>
-                <PanelWrapper>
-                    <Paragraph big>
-                        Although starting a new business or running a business on the side can take a fair amount of
-                        time and effort, the rewards could be more than worth it.
-                    </Paragraph>
-                    <Paragraph big>
-                        Of course, as a woman, you know the trick is to have a business that integrates with your life,
-                        while still giving you the time you need to meet your commitments. There are many types of
-                        businesses a female entrepreneur can start to test the waters — and if you like one of them, you
-                        can grow it into providing a substantial part- or full-time income.
-                    </Paragraph>
+            <TabOvalOne>
+                <TabsOvalOneSvg/>
+            </TabOvalOne>
 
-                    <Colorbox className="box" theme="icon" Icon={StarIcon} color={color.purple3} curve
-                              curveColor={color.purple1}>
-                        <Heading size={4}>
-                            We want to help you get your business
-                            off the ground.
-                        </Heading>
-                        <Paragraph bottomPadding={0} bottomMargin={0}>
-                            Since 2004, we’ve helped over 250,000 people start exciting businesses and bring their ideas
-                            to life. We’ll give you the support, guidance and advice you need to create a woman-owned
-                            business and make it into a success.
+            <TabsSection>
+                <TabHeading>
+                    <TabTitle title="Business for women" SvgIcon={Tab1Icon}/>
+                    <TabTitle title="Why This Industry?" SvgIcon={Tab2Icon}/>
+                </TabHeading>
+
+                <CollapseWrapper>
+                    <PanelWrapper>
+                        <Paragraph big>
+                            Although starting a new business or running a business on the side can take a fair amount of
+                            time and effort, the rewards could be more than worth it.
                         </Paragraph>
-                    </Colorbox>
+                        <Paragraph big>
+                            Of course, as a woman, you know the trick is to have a business that integrates with your
+                            life,
+                            while still giving you the time you need to meet your commitments. There are many types of
+                            businesses a female entrepreneur can start to test the waters — and if you like one of them,
+                            you
+                            can grow it into providing a substantial part- or full-time income.
+                        </Paragraph>
 
-                    <Paragraph big style={{marginTop: "48px"}}>
-                        Here is our simple guide to finding the right ideas, researching and creating a successful
-                        business. Whether you’re a stay-at-home mom
-                        or an independent business woman, this guide is here to help you.
-                    </Paragraph>
+                        <Colorbox className="box" theme="icon" Icon={StarIcon} color={color.purple3} curve
+                                  curveColor={color.purple1}>
+                            <Heading size={4}>
+                                We want to help you get your business
+                                off the ground.
+                            </Heading>
+                            <Paragraph bottomPadding={0} bottomMargin={0}>
+                                Since 2004, we’ve helped over 250,000 people start exciting businesses and bring their
+                                ideas
+                                to life. We’ll give you the support, guidance and advice you need to create a
+                                woman-owned
+                                business and make it into a success.
+                            </Paragraph>
+                        </Colorbox>
 
-                </PanelWrapper>
+                        <Paragraph big style={{marginTop: "48px"}}>
+                            Here is our simple guide to finding the right ideas, researching and creating a successful
+                            business. Whether you’re a stay-at-home mom
+                            or an independent business woman, this guide is here to help you.
+                        </Paragraph>
 
-                <PanelWrapper>
-                    <Heading size={3}>
-                        Why You Should Start a New Woman-Owned Business
-                    </Heading>
-                    <Paragraph big style={{marginBottom: "52px"}}>
-                        Some of the best inspiration comes from learning about the successes
-                        of other women who have started businesses. Here are some statistics about how successful you
-                        could be:
-                    </Paragraph>
+                    </PanelWrapper>
 
-                    <BlueBoxWithAbsoluteText absoluteText="12M"
-                                             text="Businesses in the U.S. are owned by women"/>
-                    <BlueBoxWithAbsoluteText absoluteText="$2.5T"
-                                             text="Generated sales a year of women entrepreneurs as majority or joint business owners"/>
-                    <BlueBoxWithAbsoluteText absoluteText="$1M"
-                                             text="Sales a year or more by nearly one in 20 firms owned by women"/>
+                    <PanelWrapper>
+                        <Heading size={3}>
+                            Why You Should Start a New Woman-Owned Business
+                        </Heading>
+                        <Paragraph big style={{marginBottom: "52px"}}>
+                            Some of the best inspiration comes from learning about the successes
+                            of other women who have started businesses. Here are some statistics about how successful
+                            you
+                            could be:
+                        </Paragraph>
 
-                    <CircleWithText textInsideCircle="40"
-                                    textLine="Of privately - held businesses are owned by women" withBg={true}
-                                    SvgChart={Chart} symbol="%"/>
+                        <BlueBoxWithAbsoluteText absoluteText="12M"
+                                                 text="Businesses in the U.S. are owned by women"/>
+                        <BlueBoxWithAbsoluteText absoluteText="$2.5T"
+                                                 text="Generated sales a year of women entrepreneurs as majority or joint business owners"/>
+                        <BlueBoxWithAbsoluteText absoluteText="$1M"
+                                                 text="Sales a year or more by nearly one in 20 firms owned by women"/>
+
+                        <CircleWithText textInsideCircle="40"
+                                        textLine="Of privately - held businesses are owned by women" withBg={true}
+                                        SvgChart={Chart} symbol="%"/>
 
 
-                    <div style={{marginBottom: "30px", marginTop: "48px"}}>
-                        <Adventages
-                            headline="Over the last 10 years, the number of women-owned businesses has grown by 45 percent (five times faster than the national average)"
-                            width="100%"
-                        />
-                    </div>
+                        <div style={{marginBottom: "30px", marginTop: "48px"}}>
+                            <Adventages
+                                headline="Over the last 10 years, the number of women-owned businesses has grown by 45 percent (five times faster than the national average)"
+                                width="100%"
+                            />
+                        </div>
 
-                    <div style={{marginBottom: "30px"}}>
-                        <Adventages
-                            headline="Nearly two-thirds of female entrepreneurs say their business is their main source of income"
-                            width="100%"
-                        />
-                    </div>
+                        <div style={{marginBottom: "30px"}}>
+                            <Adventages
+                                headline="Nearly two-thirds of female entrepreneurs say their business is their main source of income"
+                                width="100%"
+                            />
+                        </div>
 
-                    <div style={{marginBottom: "48px"}}>
-                        <Adventages
-                            headline="Women are more likely to start service businesses, especially around healthcare and education"
-                            width="100%"
-                        />
-                    </div>
+                        <div style={{marginBottom: "48px"}}>
+                            <Adventages
+                                headline="Women are more likely to start service businesses, especially around healthcare and education"
+                                width="100%"
+                            />
+                        </div>
 
-                    <Paragraph big>
-                        This is why businesses started by female entrepreneurs are so exciting -
-                        so how can you be part of that success? We're here to help you figure that out.
-                    </Paragraph>
-                </PanelWrapper>
+                        <Paragraph big>
+                            This is why businesses started by female entrepreneurs are so exciting -
+                            so how can you be part of that success? We're here to help you figure that out.
+                        </Paragraph>
+                    </PanelWrapper>
 
-            </CollapseWrapper>
-        </TabsSection>
+                </CollapseWrapper>
+            </TabsSection>
+        </TabsWrapper>
 
         <Grants/>
 
@@ -184,6 +197,22 @@ const TeenBusiness = () => (
     </Layout>
 );
 
+const TabsWrapper = styled.section`
+    position: relative;
+    padding-top: 21px;
+`;
+
+const TabOvalOne = styled.div`
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 21px;
+  
+    @media (min-width: 420px){
+       width: 420px;
+    }
+`;
+
 const ButtonsBox = styled.div`
   display: flex;
   flex-direction: column;
@@ -191,57 +220,6 @@ const ButtonsBox = styled.div`
   @media (min-width: 769px) {
     flex-direction: row;
   }
-`;
-
-const ListWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-`;
-
-const ListBox = styled.div`
-    width: 100%;
-    
-    @media (min-width: 576px) { 
-        width: 50%; 
-    }
-`;
-
-const BubblesWrapper = styled.div`
-    width: 100%;
-    background-color: white;
-    box-shadow: 0 24px 32px 0 rgba(236, 236, 236, 0.5);
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    padding: 30px;
-    margin-bottom: 50px;
-`;
-
-const Bubbles = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
-`;
-
-const Text = styled.div`
-    text-align: center;
-    font-family: Avenir-Heavy, sans-serif;
-    font-size: 20px;
-    color: #1d1d1d;
-    max-width: 500px;
-    margin: 0 auto;
-`;
-
-const BubbleImage = styled.div`
-    width: 20%;
-    margin-bottom: 40px;
-    
-    > div{
-        width: 74px;
-        margin: 0 auto;
-        height: 110px;
-    }
 `;
 
 export default TeenBusiness;

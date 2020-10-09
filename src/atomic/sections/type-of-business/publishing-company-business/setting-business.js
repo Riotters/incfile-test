@@ -4,7 +4,10 @@ import TextCenterLayout from "../../../../components/partials/blocks/heading-cen
 import TopImageBox from "../../../../components/top-image-box";
 import {color} from "../../../../components/styles/colors";
 import styled from "styled-components";
-import OvalSvg from "../../../../images/oval-blue-5.inline.svg";
+import OvalSvg from "../../../../images/ovals/bottom-left-transparent-orange.inline.svg";
+import OvalSvg2 from "../../../../images/ovals/bottom-right-transparent-pink2.inline.svg";
+import {gradient} from "../../../atoms/styles/colors";
+import {Link} from "gatsby";
 
 const SettingBusiness = () => (
     <WrapperContainer>
@@ -12,6 +15,9 @@ const SettingBusiness = () => (
         <Oval>
             <OvalSvg/>
         </Oval>
+        <Oval2>
+            <OvalSvg2/>
+        </Oval2>
 
         <Container>
             <TextCenterLayout
@@ -27,7 +33,7 @@ const SettingBusiness = () => (
                     <p>
                         You will need a separate business bank account
                         for your publishing business. You might also want
-                        to consider a business credit card. Additionally, you will also need to keep careful bookkeeping records and file business and personal taxes. Here at Incfile we can even help you file your taxes.
+                        to consider a business credit card. Additionally, you will also need to keep careful bookkeeping records and file business and personal taxes. Here at Incfile <Link to="/">we can even help you file your taxes</Link>.
                     </p>
                 </TopImageBox>
 
@@ -76,7 +82,7 @@ const SettingBusiness = () => (
 
 const WrapperContainer = styled.div`
     background: rgb(255,255,255);
-    background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 50%, #f2f6ff);
+    background-image: ${gradient.orange3};
     padding-bottom: 100px;
     padding-top: 100px;
     position: relative;
@@ -89,13 +95,13 @@ const ImageBoxes = styled.div`
   grid-gap: 30px;
   padding-top: 112px;
   width: 100%;
-
+  max-width: 970px;
+  
   @media(min-width: 769px) {
     grid-template-columns: 1fr 1fr;
   }
   
   @media (min-width: 970px) {
-    width: 970px;
     margin: 0 auto;
   }
 `;
@@ -109,12 +115,25 @@ const GreenCurve = styled.div`
 
 const Oval = styled.div`
     position: absolute;
-    right: 0;
-    top: 50%;
+    left: 0;
+    top: 485px;
+    width: 100%;
     
-    svg {
-        transform: scaleX(-1);
+    @media (min-width: 570px){
+        width: 570px;
     }
 `;
+
+const Oval2 = styled.div`
+    position: absolute;
+    right: 0;
+    bottom: 303px;
+    width: 100%;
+    
+    @media (min-width: 420px){
+        width: 420px;
+    }
+`;
+
 
 export default SettingBusiness;

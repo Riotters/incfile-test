@@ -79,10 +79,10 @@ const BabyBlueContainer = styled.div`
 
 const TextWrapper = styled.div`
     width: 100%;
+    max-width: 750px;
     position: relative;
     
     @media (min-width: 750px) {
-        width: 750px;
         margin: 48px auto 100px;
     }
 `;

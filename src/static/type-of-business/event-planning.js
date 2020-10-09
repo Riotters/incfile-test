@@ -28,7 +28,7 @@ export const typeBusiness = {
         },
         {
             circleText: 5,
-            imageName: "specialized-parties",
+            imageName: "convention-planning-icon",
             headline: "Convention Planning",
             text: "You can also explore starting a business that helps to plan conventions. These are typically ticketed, public events themed around specific interests and hobbies."
         },
@@ -52,7 +52,7 @@ export const InfoCards = [
     },
     {
         backgroundColor: color.green3,
-        imageName: "workers-compensation-insurance",
+        imageName: "shield-icon",
         title: "General Liability Insurance as a Party Planner",
         content: "This insurance protects your planning business from claims due to being sued. This may include injury to members of the public, property damage, personal liabilities, legal defense and more. It can help protect your business from financial penalties and bankruptcy. This type of insurance could be essential to your party or event planning business as members of the public, business employees and others will be attending events. Make sure you understand the insurance coverage of the locations and vendors that you use as well."
     },

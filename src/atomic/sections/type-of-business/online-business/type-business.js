@@ -8,7 +8,9 @@ import {color} from "../../../../components/styles/colors";
 import {shadow} from "../../../../components/styles/shadows";
 import {typeBusiness} from "../../../../static/type-of-business/online-business";
 import Curve from "../../../atoms/shapes/curve";
-import OvalSvg from "../../../../images/oval-orange-4.inline.svg";
+import OvalSvg from "../../../../images/ovals/top-right-transparent-blue.inline.svg";
+import OvalSvg2 from "../../../../images/ovals/bottom-left-transparent-blue3.inline.svg";
+import OvalSvg3 from "../../../../images/ovals/bottom-left-transparent-orange.inline.svg";
 import AdventagesWithLongText from "../../../molecules/mixed-blocks/adventages-with-long-text";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 
@@ -17,6 +19,12 @@ const TypeBusiness = () => (
         <Oval>
             <OvalSvg/>
         </Oval>
+        <Oval2>
+            <OvalSvg2/>
+        </Oval2>
+        <Oval3>
+            <OvalSvg3/>
+        </Oval3>
         <Container>
             <Service>
                 <TextCenterLayout headline="What Type of Online Business Should You Start?"
@@ -111,7 +119,36 @@ const CurveWrapper = styled.div`
 const Oval = styled.div`
     position: absolute;
     right: 0;
-    top: 300px;
+    top: 319px;
+    width: 100%;
+    
+    @media (min-width: 720px){
+        width: 720px;
+    }
+`;
+
+
+const Oval2 = styled.div`
+    position: absolute;
+    left: 0;
+    top: calc(50% - 210px);
+    width: 100%;
+    
+    @media (min-width: 420px){
+        width: 420px;
+    }
+`;
+
+const Oval3 = styled.div`
+    position: absolute;
+    right: 0;
+    bottom: 138px;
+    width: 100%;
+    transform: scaleX(-1);
+    
+    @media (min-width: 720px){
+        width: 720px;
+    }
 `;
 
 export default TypeBusiness;

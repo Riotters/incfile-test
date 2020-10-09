@@ -9,7 +9,7 @@ import MarketIcon from "../../../../images/icons/understand-your-market.inline.s
 import {color} from "../../../../components/styles/colors";
 import React from "react";
 import styled from "styled-components";
-import OvalBlueSVG from "../../../../images/oval-blue-4.inline.svg";
+import OvalBlueSVG from "../../../../images/ovals/top-right-transparent-green3.inline.svg";
 import Curve from "../../../atoms/shapes/curve";
 
 const BlueContainerWrapper = styled.div`
@@ -22,15 +22,15 @@ const BlueContainerWrapper = styled.div`
 
 const GridSection = styled.div`
     width: 100%;
-    margin-top: 110px;
 `;
 
 const TitleBox = styled.div`
     width: 100%;
     position: relative;
-     
+    max-width: 750px;
+    padding-bottom: 72px;
+    
     @media (min-width:750px) {
-        width: 750px;
         margin: 0 auto;
     }
     
@@ -47,46 +47,27 @@ const GridSectionList = styled.div`
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
+    max-width: 970px;
     
     > div {
         margin-bottom: 70px;
     }
     
     @media (min-width: 970px) {
-        width: 970px;
-        margin: 120px auto 0;
-    }
-`;
-
-const TextBorderedSection = styled.div`
-    width: 100%;
-    padding-top: 100px;
-    
-    @media (min-width: 670px) {
-        width: 670px;
-        margin: 0 auto;
-    }
-    
-    h3{
-        color: #1d1d1d;
-        font-size: 40px;
-        text-align: center;
-        margin-bottom: 24px;
-    }
-`;
-
-const TextBorderedList = styled.div`
-    margin-top: 80px;
-    
-    >div {
-        margin-bottom: 8px;
+        margin: 0px auto 80px;
     }
 `;
 
 const OvalCenter = styled.div`
   position: absolute;
-  right: 0;
+  left: 0;
   top: 0;
+  width: 100%;
+  transform: scaleX(-1);
+    
+    @media (min-width: 420px){
+        width: 420px;
+    }
 `
 
 const AbsoluteCurve = styled.div`
@@ -94,6 +75,11 @@ const AbsoluteCurve = styled.div`
     left: -27px;
     top: -16px;
     transform: rotate(-90deg);
+    display: none;
+    
+    @media (min-width: 1200px){
+        display: block;
+    }
 `;
 
 const ValidatingBusinessIdea = () => (

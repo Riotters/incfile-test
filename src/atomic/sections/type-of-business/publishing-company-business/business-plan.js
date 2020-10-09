@@ -5,8 +5,8 @@ import {Heading} from "../../../atoms/typography/heading";
 import CountingTextBoxed from "../../../molecules/text-blocks/counting-text-boxed";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import Container from "../../../container";
-import Oval1 from "../../../../images/oval-green-3.inline.svg";
-import OvalSVG from "../../../../images/oval-green-3.inline.svg";
+import OvalSvg from "../../../../images/ovals/top-right-transparent-green2.inline.svg";
+import {Link} from "gatsby";
 
 const Wrapper = styled.div`
     position: relative;
@@ -18,10 +18,10 @@ const BusinessOwnerResponsibilities = styled.section`
   padding-top: 75px;
   padding-bottom: 64px;
   width: 100%;
+  max-width: 770px;
   
   @media (min-width: 770px) {
-    width: 770px;
-    margin: 0 auto;
+     margin: 0 auto;
   }
 
   h4.title {
@@ -38,26 +38,32 @@ const Oval = styled.div`
   position: absolute;
   left: 0;
   top: 0;
- 
+  width: 100%;
+  transform: scaleX(-1);
+  
+  @media (min-width: 420px){
+    width: 420px;
+  }
 `
 
 const OvalCenter = styled.div`
   position: absolute;
   right: 0;
-  top: 30%;
+  bottom: 364px;
+  width: 100%;
   
-  svg {
-    transform: scaleX(-1);
+  @media (min-width: 720px){
+    width: 720px;
   }
 `
 
 const BusinessPlan = () => (
     <Wrapper style={{position: "relative"}}>
         <Oval>
-            <Oval1/>
+            <OvalSvg/>
         </Oval>
         <OvalCenter>
-            <OvalSVG/>
+            <OvalSvg/>
         </OvalCenter>
         <Container>
             <BusinessOwnerResponsibilities>
@@ -141,7 +147,7 @@ const BusinessPlan = () => (
                 </CountingTextBoxed>
 
                 <Paragraph big style={{marginTop: "50px"}} mixed={true}>
-                    We’ve got the perfect <span style={{color: color.blue1, fontWeight: "bold"}}>guide to writing your business plan.</span>
+                    We’ve got the perfect <Link to="/">guide to writing your business plan.</Link>
                 </Paragraph>
             </BusinessOwnerResponsibilities>
         </Container>

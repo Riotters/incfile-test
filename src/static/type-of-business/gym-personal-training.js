@@ -40,7 +40,7 @@ export const InfoCards = [
     },
     {
         backgroundColor: color.green3,
-        imageName: "workers-compensation-insurance",
+        imageName: "shield-icon",
         title: "General Liability Insurance for Your Fitness-Based Business",
         content: "This insurance protects your gym or personal training business from claims due to being sued. This may include injury to members of the public, property damage, personal liabilities, legal defense and more. It can help protect your business from financial penalties and bankruptcy. This type of insurance is especially important to gyms and personal trainers — since you’ll be putting clients and members through physical training, you will need to make sure your insurance covers potential injuries."
     },

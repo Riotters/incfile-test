@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="32px" viewBox="0 0 28 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(-2.000000, 0.000000)">
+            <g id="20200406_ICON_ICON-306" transform="translate(3.000000, 0.000000)">
+                <path d="M23.06,7.27 L21.06,7.27 C20.0327504,7.27 19.2,6.43724963 19.2,5.41 L19.2,3.67 C19.2000227,3.0056213 18.664356,2.46549073 18,2.46 L2.67,2.46 C1.51409607,2.46 0.575504304,3.39410918 0.57,4.55 L0.57,31.3 L24.2,31.3 L24.2,8.41 C24.2,8.1076532 24.0798932,7.81768974 23.8661017,7.60389827 C23.6523103,7.3901068 23.3623468,7.27 23.06,7.27 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+                <path d="M21.0000227,2.93 L21.0000227,31.3 L0.57,31.3 L0.57,2.93 C0.571290745,2.77207715 0.588037264,2.61465987 0.62,2.46 C0.837801399,1.43648728 1.74357757,0.706022633 2.79,0.709983837 L18.79,0.709983837 C19.3778652,0.709983837 19.9415081,0.944204812 20.3562522,1.36082554 C20.7709962,1.77744627 21.00266,2.34214084 21.0000227,2.93 Z" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+                <line x1="4.71" y1="5.8" x2="9.08" y2="5.8" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></line>
+                <line x1="12.32" y1="5.8" x2="16.7" y2="5.8" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></line>
+                <line x1="4.71" y1="12.63" x2="9.08" y2="12.63" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></line>
+                <line x1="12.32" y1="12.63" x2="16.7" y2="12.63" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></line>
+                <line x1="4.71" y1="19.46" x2="9.08" y2="19.46" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></line>
+                <line x1="12.32" y1="19.46" x2="16.7" y2="19.46" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></line>
+                <path d="M26.0600005,7.89 L26.0600005,31.3 L21,31.3 L21,5.75 L24,5.75 C25.150535,5.79304046 26.0608048,6.73866056 26.0600005,7.89 L26.0600005,7.89 Z" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+                <line x1="23.49" y1="9.47" x2="23.49" y2="13.81" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></line>
+                <rect id="Rectangle" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" x="5.67" y="26.2" width="10.2" height="5.1"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
