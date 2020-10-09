@@ -11,7 +11,9 @@ import {
     packets,
     questions,
     service,
-    top
+    top,
+    articlesOfIncorporation,
+    corporationName
 } from "../../static/learning-center-entity/alaska-corporation";
 import CartBlock from "../../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../../atomic/molecules/blocks/rating-block";
@@ -48,9 +50,10 @@ import TitleWithInfoBox from "../../atomic/molecules/blocks/table-title";
 import PacketsSection from "../../atomic/sections/learning-center-entity/alaska-corporation/packets";
 import Accordion from "../../atomic/organisms/accordion/accordion";
 import Adventages from "../../components/adventages";
-import {shadow} from "../../components/styles/shadows";
 import Container from "../../atomic/container";
 import Rocket from "../../atomic/sections/learning-center-entity/alaska-corporation/rocket";
+import Colorbox from "../../atomic/molecules/blocks/left-icon-block-colored";
+import CorporationNameIcon from "../../images/icons/icon-learning-center-color-business-name-trademark.inline.svg";
 
 const AlaskaCorporation = () => (
     <Layout>
@@ -89,9 +92,44 @@ const AlaskaCorporation = () => (
 
                 <CollapseWrapper>
 
-                    <PanelWrapper>Todo</PanelWrapper>
-                    <PanelWrapper>Todo</PanelWrapper>
-                    <PanelWrapper>Todo</PanelWrapper>
+                    <PanelWrapper>
+                        <Heading size={3} style={{marginBottom: "24px"}}>Choosing a Corporation Name</Heading>
+                        <Paragraph big>
+                            Your new Alaska corporation‘s name cannot be the same as or deceptively similar to the name of any other Alaska business entity registered or reserved with the state. It also is not permitted to be the same as any non-registered business name that has been established in common law by usage over a long period of time. The name must contain (at the end) the words “incorporated,” “corporation,” “limited,” or “company,” or an abbreviation of one of those terms.
+                        </Paragraph>
+                        <Paragraph big style={{marginBottom: "56px"}}>
+                            The name may not include language that states or implies that the corporation is organized for some purpose other than stated in its articles of incorporation, or that it is a municipality (city, borough, or village). However, the name is allowed to contain the name of a municipality.
+                        </Paragraph>
+
+                        <Colorbox color={color.orange3} content={corporationName} dotsColor={color.orange1} Icon={CorporationNameIcon}/>
+                    </PanelWrapper>
+                    <PanelWrapper>
+                        <Heading size={3} style={{marginBottom: "24px"}}>Articles of Incorporation</Heading>
+                        <Paragraph big>
+                            So that your Alaska corporation can actually start doing business in the state, you must file articles of incorporation with the Division of Banking, Securities, and Corporations in the Alaska Department of Commerce, Community, and Economic Development (DCCED). The filing fee is $250, which includes a $100 biennial license fee that will be an ongoing requirement.
+                        </Paragraph>
+                        <Paragraph big>
+                            Your new LLC’s articles of incorporation must be signed by at least one person, called an incorporator, who must be at least 18 years old and a natural person (not a business entity). They must sign the articles and deliver them to the DCCED.
+                        </Paragraph>
+
+                        <Colorbox color={color.blue3} content={articlesOfIncorporation.box1} dotsColor={color.blue1} style={{marginBottom: "65px"}}/>
+
+                        <Colorbox color={color.orange3} content={articlesOfIncorporation.box2} dotsColor={color.orange1} style={{marginBottom: "48px"}}/>
+
+                        <Paragraph big>
+                            If the initial articles do not name directors for the corporation, the incorporators may elect directors or amend the bylaws.
+                        </Paragraph>
+                    </PanelWrapper>
+                    <PanelWrapper>
+                        <Heading size={3} style={{marginBottom: "24px"}}>Registered Agent and Office</Heading>
+                        <Paragraph big>
+                            Alaska corporations must have a registered agent in the state-a person
+                            or office designated to receive official state administrative and legal correspondence. The
+                            agent must be either an adult who is a resident
+                            of Alaska whose business office is the same as the registered office,
+                            or it may be a corporation whose business office is the same as the registered office.
+                        </Paragraph>
+                    </PanelWrapper>
                     <PanelWrapper>
                         <Heading size={3} style={{marginBottom: "24px"}}>Bylaws</Heading>
                         <Paragraph big>
@@ -150,9 +188,90 @@ const AlaskaCorporation = () => (
                             at a specified later date.
                         </Paragraph>
                     </PanelWrapper>
-                    <PanelWrapper>Todo</PanelWrapper>
-                    <PanelWrapper>Todo</PanelWrapper>
-                    <PanelWrapper>Todo</PanelWrapper>
+                    <PanelWrapper>
+                        <Heading size={3} style={{marginBottom: "24px"}}>Directors</Heading>
+                        <Paragraph big>
+                            The board of directors has the responsibility of making the corporation’s major decisions.
+                            There must be at least one director; the number should be specified in the bylaws unless it
+                            is already set forth in the articles of incorporation. If no number is specified in either
+                            document, the “default” number will be three. A change in the number of directors must be
+                            approved by a majority of the board, but such a change cannot shorten the term of any
+                            currently-serving director.
+                        </Paragraph>
+                        <Paragraph big>
+                            Titles and duties of the corporation’s officers must be either listed in the bylaws or
+                            determined by the board of directors. Any two or more offices may be held by the same
+                            person, except the offices of president and secretary. When all of the issued and
+                            outstanding stock of the corporation is owned by one person, the person may hold all or any
+                            combination of offices.
+                        </Paragraph>
+                    </PanelWrapper>
+                    <PanelWrapper>
+                        <Heading size={3} style={{marginBottom: "24px"}}>Requirement Reports</Heading>
+                        <Paragraph big style={{marginBottom: "48px"}}>
+                            Each Alaska corporation must file a biennial (every two years) report with the state before
+                            January 2 of each filing year, along with a $100 biennial license fee. The first report must
+                            be within six months of organization, but does not require the $100 fee because it is
+                            included in the $250 fee at the time of incorporation.
+                        </Paragraph>
+
+                        <Paragraph big style={{marginBottom: "24px", fontFamily: "Avenir-Heavy", color: "#1e1e1e"}}>The
+                            report must include:</Paragraph>
+                        <TextBoxed style={{marginBottom: "8px"}}>
+                            <Paragraph bottomMargin={0}>
+                                What authority directors have, how many there are, and how long they serve
+                            </Paragraph>
+                        </TextBoxed>
+                        <TextBoxed style={{marginBottom: "8px"}}>
+                            <Paragraph bottomMargin={0}>
+                                The name and address of its registered agent and registered office
+                            </Paragraph>
+                        </TextBoxed>
+                        <TextBoxed style={{marginBottom: "8px"}}>
+                            <Paragraph bottomMargin={0}>
+                                The principal corporate address for foreign corporations
+                            </Paragraph>
+                        </TextBoxed>
+                        <TextBoxed style={{marginBottom: "8px"}}>
+                            <Paragraph bottomMargin={0}>
+                                The nature of the corporation’s business
+                            </Paragraph>
+                        </TextBoxed>
+                        <TextBoxed style={{marginBottom: "8px"}}>
+                            <Paragraph bottomMargin={0}>
+                                The names and addresses of the corporation’s directors and officers
+                            </Paragraph>
+                        </TextBoxed>
+                        <TextBoxed style={{marginBottom: "8px"}}>
+                            <Paragraph bottomMargin={0}>
+                                An itemization of shares authorized to be issued by the corporation
+                            </Paragraph>
+                        </TextBoxed>
+                        <TextBoxed style={{marginBottom: "8px"}}>
+                            <Paragraph bottomMargin={0}>
+                                An itemization of shares that have been issued to date
+                            </Paragraph>
+                        </TextBoxed>
+                        <TextBoxed style={{marginBottom: "8px"}}>
+                            <Paragraph bottomMargin={0}>
+                                Information on all alien affiliates
+                            </Paragraph>
+                        </TextBoxed>
+                        <TextBoxed style={{marginBottom: "8px"}}>
+                            <Paragraph bottomMargin={0}>
+                                The name, address, and ownership percentage of each shareholder who owns more than five
+                                percent of the corporation’s stock
+                            </Paragraph>
+                        </TextBoxed>
+                    </PanelWrapper>
+                    <PanelWrapper>
+                        <Heading size={3} style={{marginBottom: "24px"}}>Taxes</Heading>
+                        <Paragraph big>
+                            Alaska imposes a corporate income tax similar to the federal corporate income tax, based on
+                            graduated tax rates. Alaska does recognize
+                            “S corporation” status.
+                        </Paragraph>
+                    </PanelWrapper>
                 </CollapseWrapper>
             </TabsSection>
         </TabsWrapper>
@@ -225,7 +344,7 @@ const AlaskaCorporation = () => (
             </Container>
         </InfoSection>
 
-        <Rocket />
+        <Rocket/>
     </Layout>
 );
 
