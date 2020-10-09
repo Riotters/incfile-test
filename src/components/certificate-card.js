@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { color } from "./styles/colors";
 import { shadow } from "./styles/shadows";
@@ -55,11 +55,49 @@ const Wrapper = styled.div`
     font-size: 16px;
     line-height: 24px;
     color: ${color.grey2};
-    margin-bottom: 40px;
   }
 `;
 
-const CertificateCard = ({ className, headline, content, image, dropdownOnePlaceholder, dropdownOneOptions, dropdownTwoPlaceholder, dropdownTwoOptions, dropdownThreePlaceholder, dropdownThreeOptions }) => {
+const CertificateCard = ({ className, headline, content, image, dropdownOnePlaceholder, dropdownOneOptions, dropdownTwoPlaceholder, dropdownTwoOptions, dropdownThreePlaceholder, dropdownThreeOptions, priceColumn, fields }) => {
+    const [extraFee, setExtraFee] = useState(0);
+    const [showExtraFee, setShowExtraFee] = useState(false);
+    const [entityType, setEntityType] = useState('LLC');
+
+    async function fetchData(url = '', data = {}) {
+        const response = await fetch(url, {
+            method: 'GET',
+        });
+        return response.json();
+    }
+
+    const getPrice = (option) => {
+        if (!option) {
+            setShowExtraFee(false);
+            setExtraFee(0);
+            return;
+        }
+
+        let state = option.value;
+        let priceColumnField = `${priceColumn}${entityType}`;
+
+        let endpoint = `https://api.incfile.com/api/v1/get-price-by-state/?state=${state}`;
+        if (fields) {
+            endpoint += `&_fields=${fields}`;
+        }
+
+        fetchData(endpoint)
+        .then(data => {
+            setShowExtraFee(true);
+            setExtraFee(data[priceColumnField]);
+        });
+    }
+
+    const entityOptions = [
+        { value: `LLC`, label: `LLC` },
+        { value: `Corp`, label: `Corporation` },
+        { value: `Npc`, label: `Nonprofit` },
+    ];
+
   return (
     <Wrapper className={className}>
       <h3>{headline}</h3>
@@ -67,13 +105,13 @@ const CertificateCard = ({ className, headline, content, image, dropdownOnePlace
       {dropdownOnePlaceholder && (
         <Label className="label">
           Entity Type
-          <Dropdown className="dropdown" placeholder={dropdownOnePlaceholder} options={dropdownOneOptions} />
+          <Dropdown className="dropdown" placeholder={dropdownOnePlaceholder} options={entityOptions} onChange={option => setEntityType(option.value)} />
         </Label>
       )}
       {dropdownTwoPlaceholder && (
         <Label className="label">
           State
-          <Dropdown className="dropdown" placeholder={dropdownTwoPlaceholder} options={dropdownTwoOptions} />
+          <Dropdown className="dropdown" placeholder={dropdownTwoPlaceholder} options={dropdownTwoOptions} onChange={getPrice} />
         </Label>
       )}
       {dropdownThreePlaceholder && (
@@ -85,10 +123,10 @@ const CertificateCard = ({ className, headline, content, image, dropdownOnePlace
       {content && (
         <>
           {content.price && <span className="price">${content.price}</span>}
-          {content.fee && <span className="fee">{content.fee}</span>}
+          {showExtraFee && <span className="fee">+${extraFee} State Fee</span>}
         </>
       )}
-      <Button content={content.button} theme="primary56" arrow />
+      <Button content={content.button} theme="primary56" margin="40px 0 0 0" arrow />
     </Wrapper>
   );
 };
