@@ -225,6 +225,9 @@ const IndexPage = () => (
         <Link to="/research-topics/s-corporation-info/customized-corp-llc-kit">What is the Customized Corporate/LLC Kit?</Link>
         <Link to="/research-topics/s-corporation-info/s-corporation-status">Who Will Typically Elect the S Corporation Status?</Link>
         <Link to="/research-topics/s-corporation-info/s-corp-distribution">How to Take a Distribution from an S Corp</Link>
+        <Link to="/research-topics/s-corporation-info/corporation-need">How Many Shares of Stock will my Corporation Need?</Link>
+        <Link to="/research-topics/s-corporation-info/corp-seal">What is a Corporate Seal?</Link>
+        <Link to="/research-topics/s-corporation-info/tax-advantages">Which entity offers the best tax advantages?</Link>
         <Link to="/research-topics/llc-info">LLC</Link>
         <Link to="/research-topics/llc-info/own-a-corporation-or-llc">Are Non-U.S. Residents Allowed to Own a Corporation or LLC?</Link>
         <Link to="/research-topics/llc-info/llc-business-entity-member">Can another business entity be a member of an LLC?</Link>
@@ -236,6 +239,27 @@ const IndexPage = () => (
         <Link to="/research-topics/llc-info/llc-vs-c-corporation">LLC vs. C Corporation</Link>
         <Link to="/research-topics/llc-info/llcs-vs-c-corporation">LLCs vs C-Corporation: Which Is Best for Your Business?</Link>
         <Link to="/research-topics/llc-info/starting-llc-by-steps">Steps to starting a Limited Liability Company (LLC)</Link>
+        <Link to="/research-topics/llc-info/forming-llc-benefits">The Benefits of Forming an LLC</Link>
+        <Link to="/research-topics/llc-info/llc-operating-agreement">The LLC Operating Agreement</Link>
+        <Link to="/research-topics/llc-info/llc-meaning">What Does LLC Mean?</Link>
+        <Link to="/research-topics/llc-info/publication-requirement">What is a Publication Requirement?</Link>
+        <Link to="/research-topics/llc-info/what-is-an-llc">What is an LLC (Limited Liability Company)?</Link>
+        <Link to="/research-topics/llc-info/customized-corp-llc-kit">What is the Customized Corporate/LLC Kit?</Link>
+        <Link to="/research-topics/llc-info/changing-llc-name">What is the process involved in changing the name of an LLC?</Link>
+        <Link to="/research-topics/llc-info/tax-advantages">Which entity offers the best tax advantages?</Link>
+        <Link to="/research-topics/llc-info/choosing-entity-type">Which entity type should I choose?</Link>
+        <Link to="/research-topics/llc-info/llc-members-operating-agreement">Why it’s important for the members on an LLC to have an operating agreement in place?</Link>
+        <Link to="/research-topics/ein-info">Employer Identification Number (EIN)</Link>
+        <Link to="/research-topics/ein-info/identification-number">Employer Identification Number</Link>
+        <Link to="/research-topics/nonprofit-info">Nonprofit</Link>
+        <Link to="/research-topics/nonprofit-info/corporate-meetings">Am I Required to Hold Corporate Meetings?</Link>
+        <Link to="/research-topics/nonprofit-info/profit-from-nonprofit">Can a Nonprofit Corporation Make a Profit?</Link>
+        <Link to="/research-topics/nonprofit-info/require-an-attorney">Does Forming an LLC (Limited Liability Company) or Corporation Require an Attorney?</Link>
+        <Link to="/research-topics/nonprofit-info/forming-nonprofit-corp">Forming a Nonprofit Corporation</Link>
+        <Link to="/research-topics/nonprofit-info/nonprofit-corp-name">How do I Choose a Name for my Nonprofit Corporation?</Link>
+        <Link to="/research-topics/nonprofit-info/corp-managing">How is a Corporation Managed?</Link>
+        <Link to="/research-topics/nonprofit-info/directors-and-officers-in-nonprofit">How many Directors or Officers are Nonprofit Corporations required to have?</Link>
+        <Link to="/research-topics/nonprofit-info/nonprofit-tax-exempt">Is “Nonprofit” the Same as “Tax-Exempt”?</Link>
 
         <h2>Blog</h2>
         <Link to="/blog">Blog (no API)</Link>
