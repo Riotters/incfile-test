@@ -53,10 +53,14 @@ const RequirementsSection = ({ className, content, settings }) => {
 
                 <Heading size={3} bottomMargin={40}>{content.header2}</Heading>
                 <div style={{position: "relative"}}>
+                    {content.table2 && (
                     <Curve top="-34" right="-27" color={color.orange1}>
                         <CurveSVG />
                     </Curve>
-                    <GenericTable className="blue3 headers-start left" content={content.table2} settings={settings} />
+                    )}
+                    {content.table2 && (
+                        <GenericTable className="blue3 headers-start left" content={content.table2} settings={settings} />
+                    )}
                 </div>
             </ContentCenter>
         </Wrapper>

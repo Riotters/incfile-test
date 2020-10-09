@@ -140,7 +140,7 @@ const TrustedSection = ({ className, content }) => {
                     </Improvement>
                 </CardsWrapper>
                 <div style={{position: "relative"}}>
-                    <Curve top="105" left="-5" color={color.green1} className="curve-left">
+                    <Curve top="75" left="-35" color={color.green1} className="curve-left">
                         <CurveSVG />
                     </Curve>
                     <FAQSection content={content.faq} />
