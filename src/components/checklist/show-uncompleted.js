@@ -44,18 +44,22 @@ const Arrow = styled.div`
   }
 `
 
-const ShowUncompleted = ({ className, stackItems }) => {
+const ShowUncompleted = ({ show, className, onStackItems }) => {
     let [stacked, setStacked] = useState(false);
     return (
         <Wrapper className={className} onClick={() => {
             var newValue = !stacked;
-            stackItems(newValue);
+            onStackItems(newValue);
             setStacked(newValue);
         }}>
-            <Arrow>
-                <ArrowSVG/>
-            </Arrow>
-            {stacked ? 'Show More' : 'Show Less'}
+            {show && (
+                <>
+                    <Arrow>
+                        <ArrowSVG/>
+                    </Arrow>
+                    {stacked ? 'Show More' : 'Show Less'}
+                </>
+            )}
         </Wrapper>
     )
 }
