@@ -9,9 +9,12 @@ export const about = {
         url: `/research-topics/nonprofit-info`,
       },
     ],
-    header: `How do I Choose a Name for my Nonprofit Corporation?`,
-    text: `You should choose a name that represents the purpose of your nonprofit corporation. If you incorporate through IncFile, we will request a first and second name choice for your nonprofit and complete a name availability search to assure that your name is available and not deceptively similar to any other legal entity. Further, you must choose a name that clearly indicates that your nonprofit is incorporated, by including the words “Corporation”, “Incorporated”, “Corp.”, or “Inc.” in your name.`,
-    header2: `Related Articles`,
+    header: `What is the Customized Corporate/LLC Kit?`,
+    header2: `What is the Customized Corporate/LLC Kit?`,
+    text: `The
+          <a href="/manage-your-company/corporate-llc-kit" target="_blank">Corporate/LLC Kit</a>
+          is a professional binder enclosed in a matching slip case, customized with the name of your company on the spine insert. The LLC kit comes with a metal die-cast corporate embossing seal with its own carrying pouch, customized with the name of your company and the date and state of formation. It has a set of 6 Mylar Reinforced Index Tabs, 25 custom printed stock or membership certificates with 25 full page stubs. It also comes with a variety of corporate forms on CD-Rom. The kit can be added to your order of our standard formation service, and it is included with the Premium Package.`,
+    header3: `Related Articles`,
     links2: [
         {
           text: `Not-for-Profit and Nonprofit: What’s the Difference?`,
@@ -79,4 +82,3 @@ export const about = {
         },
       ],
     };
-    

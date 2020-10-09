@@ -22,11 +22,11 @@ export const about = {
         },
         {
           text: `Forming a Nonprofit Corporation`,
-          url: `/nonprofit-info/forming-a-nonprofit-corporation/`,
+          url: `/nonprofit-info/forming-nonprofit-corp/`,
         },
         {
           text: `Can a Nonprofit Corporation Make a Profit?`,
-          url: `/nonprofit-info/can-a-nonprofit-corporation-make-a-profit/`,
+          url: `/nonprofit-info/profit-from-nonprofit/`,
         },
         {
           text: `What is a Nonprofit Corporation?`,
@@ -34,35 +34,35 @@ export const about = {
         },
         {
           text: `What Steps Need to be Taken to Form a Nonprofit Corporation?`,
-          url: `/nonprofit-info/what-steps-need-to-be-taken-to-form-a-nonprofit-corporation/`,
+          url: `/nonprofit-info/non-profit-by-steps/`,
         },
         {
           text: `How do I Choose a Name for my Nonprofit Corporation?`,
-          url: `/nonprofit-info/how-do-i-choose-a-name-for-my-nonprofit-corporation/`,
+          url: `/nonprofit-info/nonprofit-corp-name/`,
         },
         {
           text: `Where Should I Form my Nonprofit Corporation?`,
-          url: `/nonprofit-info/where-should-i-form-my-nonprofit-corporation/`,
+          url: `/nonprofit-info/where-to-form-nonprofit/`,
         },
         {
           text: `May a Nonprofit Corporation Pay Compensation to its Officers, Directors and/or Employees?`,
-          url: `/nonprofit-info/may-a-nonprofit-corporation-pay-compensation-to-its-officers-directors-andor-employees/`,
+          url: `/nonprofit-info/nonprofit-compensation/`,
         },
         {
           text: `How many Directors or Officers are Nonprofit Corporations required to have?`,
-          url: `/nonprofit-info/how-many-directors-or-officers-are-nonprofit-corporations-required-to-have/`,
+          url: `/nonprofit-info/directors-and-officers-in-nonprofit/`,
         },
         {
           text: `Is “Nonprofit” the Same as “Tax-Exempt”?`,
-          url: `/nonprofit-info/is-nonprofit-the-same-as-tax-exempt/`,
+          url: `/nonprofit-info/nonprofit-tax-exempt/`,
         },
         {
           text: `How is a Corporation Managed?`,
-          url: `/nonprofit-info/how-is-a-corporation-managed/`,
+          url: `/nonprofit-info/corp-managing/`,
         },
         {
           text: `Am I Required to Hold Corporate Meetings?`,
-          url: `/nonprofit-info/am-i-required-to-hold-corporate-meetings/`,
+          url: `/nonprofit-info/corporate-meetings/`,
         },
         {
           text: `What are Bylaws?`,
@@ -70,7 +70,7 @@ export const about = {
         },
         {
           text: `What are the Differences Between Officers, Directors and Shareholders?`,
-          url: `/nonprofit-info/what-are-the-differences-between-officers-directors-and-shareholders/`,
+          url: `/nonprofit-info/directors-and-shareholders/`,
         },
         {
           text: `Does Forming an LLC (Limited Liability Company) or Corporation Require an Attorney?`,

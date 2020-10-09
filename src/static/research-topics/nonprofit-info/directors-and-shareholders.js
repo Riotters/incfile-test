@@ -9,8 +9,8 @@ export const about = {
         url: `/research-topics/nonprofit-info`,
       },
     ],
-    header: `How do I Choose a Name for my Nonprofit Corporation?`,
-    text: `You should choose a name that represents the purpose of your nonprofit corporation. If you incorporate through IncFile, we will request a first and second name choice for your nonprofit and complete a name availability search to assure that your name is available and not deceptively similar to any other legal entity. Further, you must choose a name that clearly indicates that your nonprofit is incorporated, by including the words “Corporation”, “Incorporated”, “Corp.”, or “Inc.” in your name.`,
+    header: `What are the Differences Between Officers, Directors and Shareholders?`,
+    text: `A corporation consists of all three: officers, directors and shareholders. Shareholders are the owners of the corporation and elect the directors. Directors guide and are involved in the fundamental decisions of the corporation on behalf of the shareholders. Officers are selected by the directors and run the day-to-day operations of the corporation. These do not need to be separate people. Any person can fill all three positions. In small businesses, one person can be the only shareholder, the only director, and the only officer.`,
     header2: `Related Articles`,
     links2: [
         {
