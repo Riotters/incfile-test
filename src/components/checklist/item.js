@@ -30,6 +30,10 @@ const Wrapper = styled.div`
     &.completed {
         color: ${color.grey2};
         text-decoration: line-through;
+        
+        &.stacked:not(.last) {
+            box-shadow: none;
+        }
     }
 `
 
@@ -92,8 +96,7 @@ class Item extends React.Component{
     getTop = () => {
         const {meta, index, isCompleted, isStack} = this.props
         const prevHeight = isCompleted ? _.sumBy(meta.completed.items.slice(0, index), 'height') : _.sumBy(meta.uncompleted.items.slice(0, index), 'height')
-        const top = !isStack ? (isCompleted ? meta.uncompleted.height + prevHeight + 80 : prevHeight) : (isCompleted ? meta.uncompleted.height + 80 : prevHeight);
-        return top
+        return !isStack ? (isCompleted ? meta.uncompleted.height + prevHeight + 80 : prevHeight) : (isCompleted ? meta.uncompleted.height + 80 : prevHeight);
     }
 
     handleCollapse = (event) => {
@@ -109,10 +112,14 @@ class Item extends React.Component{
     }
 
     render() {
-        const {name, id, initHeight, index, isCompleted, toggleClass, meta, isStack, description} = this.props
+        const {name, id, initHeight, index, isCompleted, toggleClass, meta, isStack, description, isLastCompleted} = this.props
         let top = this.getTop()
+        let className = 'item '
+        if (isCompleted) className += 'completed '
+        if (isCompleted && isStack) className += 'stacked '
+        if (isLastCompleted) className += 'last'
         return (
-            <Wrapper className={isCompleted ? "item completed" : "item"} onClick={toggleClass} style={{top: `${top}px`}} ref="item">
+            <Wrapper className={className} onClick={toggleClass} style={{top: `${top}px`}} ref="item">
                 <ItemHead className={this.shouldBeExpanded() ? 'expanded' : ''}>
                     <Box>
                         <Checkbox isCompleted={isCompleted} className="circleCheck"/>

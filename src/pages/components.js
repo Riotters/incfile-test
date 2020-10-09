@@ -48,6 +48,7 @@ import StatesTable from "../components/states-table/states-table";
 import {WhichStatesAreFast} from "../static/which-states-are-fast";
 import StatesMap from "../components/states-map/states-map";
 import AmountSlider from "../components/amount-slider/amount-slider";
+import ChecklistIcon from "../images/icons/wrench-and-pen.inline.svg";
 
 const topimagebox = {
     header: `How Long does it take to file an Annual Report?`,
@@ -509,7 +510,7 @@ const ComponentsPage = () => (
                 </GridWrapper>
                 <h3>Checklist</h3>
                 <GreyWrapper>
-                    <Checklist/>
+                    <Checklist title="Workforce" icon={ChecklistIcon} iconBgColor="#faefc8"/>
                 </GreyWrapper>
                 <h3>Top Image Box</h3>
                 <GreyWrapper>

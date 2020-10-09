@@ -11,6 +11,50 @@ const baseHeight = 80;
 const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
+    width: 100%
+`;
+
+const Header = styled.div`
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 32px;
+`;
+
+const HeaderIcon = styled.div`
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    box-shadow: 0 24px 32px 0 ${props => props.bgColor};
+    background-color: ${props => props.bgColor};
+    margin-right: 24px;
+    display: grid;
+    place-items: center;
+`;
+
+const HeaderContent = styled.div`
+    display: flex;
+    flex-direction: column;
+    padding-top: 9px;
+    
+    .title {
+        font-family: "MarkPro", sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        color: #1d1d1d;
+        margin-bottom: 7px;
+    }
+    
+    .numeration {
+        font-family: "Avenir-Roman", sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #4e4e4e;
+    }
+`;
+
+const List = styled.div`
+    display: flex;
+    flex-direction: column;
     width: 100%;
     position: relative;
 `
@@ -45,10 +89,10 @@ const ShadowCard = styled.div`
     left: ${props => props.index * 8}px;
     border-radius: 5px;
     background-color: #ffffff;
-    box-shadow: ${shadow.white1};
     
     &:last-child {
-        box-shadow: none;
+        top: 6px;
+        box-shadow: ${shadow.white1};
     }
 `;
 
@@ -123,31 +167,45 @@ class Checklist extends React.Component {
     render() {
         const meta = this.getMeta()
         let uInd = 0, cInd = 0
-        const items = this.state.items.map((item, index) => (
-            <Item id={item.id}
-                  index={item.isCompleted ? cInd++ : uInd++}
-                  meta={meta}
-                  initHeight={baseHeight}
-                  name={item.name}
-                  isCompleted={item.isCompleted}
-                  toggleClass={() => this.toggleClass(item.id)}
-                  isStack={this.state.stack}
-                  description={item.description}
-                  onChangeHeight={this.handleChangeItemHeight}/>
-        ))
+        let completed = this.state.items.filter(item => item.isCompleted);
+        const items = this.state.items.map(item => {
+            let isLastCompleted = completed.length > 0 ? _.last(completed).id === item.id : false;
+            return (
+                <Item id={item.id}
+                      index={item.isCompleted ? cInd++ : uInd++}
+                      meta={meta}
+                      initHeight={baseHeight}
+                      name={item.name}
+                      isCompleted={item.isCompleted}
+                      toggleClass={() => this.toggleClass(item.id)}
+                      isStack={this.state.stack}
+                      description={item.description}
+                      onChangeHeight={this.handleChangeItemHeight}
+                      isLastCompleted={isLastCompleted}/>
+            );
+        })
 
         return (
             <Wrapper>
-                <Undone style={{height: `${meta.uncompleted.height}px`}}>
-                    {items}
-                </Undone>
-                <Separator>
-                    <h4>Done</h4>
-                    <ShowUncompleted stackItems={this.stackItems}>showLess</ShowUncompleted>
-                </Separator>
-                <Done style={{height: `${meta.completed.height}px`}}>
-                    {Array.from({length: this.state.shadowCards}, (_, i) => i + 1).reverse().map(index => <ShadowCard {...{index}}/>)}
-                </Done>
+                <Header>
+                    <HeaderIcon bgColor={this.props.iconBgColor}><this.props.icon/></HeaderIcon>
+                    <HeaderContent>
+                        <p className="title">{this.props.title}</p>
+                        <p className="numeration">{completed.length} of {this.state.items.length} completed</p>
+                    </HeaderContent>
+                </Header>
+                <List>
+                    <Undone style={{height: `${meta.uncompleted.height}px`}}>
+                        {items}
+                    </Undone>
+                    <Separator>
+                        <h4>Done</h4>
+                        <ShowUncompleted show={completed.length > 0} onStackItems={this.stackItems}>showLess</ShowUncompleted>
+                    </Separator>
+                    <Done style={{height: `${meta.completed.height}px`}}>
+                        {Array.from({length: this.state.shadowCards}, (_, i) => i + 1).reverse().map(index => <ShadowCard {...{index}}/>)}
+                    </Done>
+                </List>
             </Wrapper>
         )
     }
