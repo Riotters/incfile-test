@@ -6,7 +6,7 @@ import Top from "../../atomic/partials/top";
 import Categories from "../../atomic/sections/learning-center-entity/help-center/categories";
 import Tools from "../../atomic/sections/learning-center-entity/help-center/tools";
 import Service from "../../atomic/sections/learning-center-entity/help-center/service";
-import Rocket from "../../atomic/sections/review-entity-type/c-corporation/rocket";
+import Rocket from "../../atomic/sections/review-entity-types/c-corporation/rocket";
 import Searchbar from "../../atomic/molecules/form/searchbar";
 //Texts
 import { top, about, help, faq, rocket, categories, service, tools } from "../../static/learning-center-entity/help-center";

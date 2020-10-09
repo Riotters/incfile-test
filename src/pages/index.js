@@ -100,17 +100,18 @@ const IndexPage = () => (
         <Link to="/manage-your-company/fictitious-business">Fictitious Business</Link>
         <Link to="/manage-your-company/home-page-v3">Home Page v3</Link>
 
-        <h2>Review Entity Type</h2>
-        <Link to="/review-entity-type/nonprofit">Nonprofit (WIP)</Link>
-        <Link to="/review-entity-type/c-corporation">C Corporation (no details)</Link>
-        <Link to="/review-entity-type/s-corporation">S Corporation (no details)</Link>
-        <Link to="/review-entity-type/llc">LLC (no details)</Link>
+        <h2>Review Entity Types</h2>
+        <Link to="/start-your-company">Start Your Company</Link>
+        <Link to="/review-entity-types/nonprofit">Nonprofit (WIP)</Link>
+        <Link to="/review-entity-types/c-corporation">C Corporation (no details)</Link>
+        <Link to="/review-entity-types/s-corporation">S Corporation (no details)</Link>
+        <Link to="/review-entity-types/llc">LLC (no details)</Link>
 
         <h2>Learning Center Entity</h2>
         <Link to="/learning-center-entity/help-center">Help Center</Link>
         <Link to="/learning-center-entity/help-center-article">Help Center Article</Link>
         <Link to="/learning-center-entity/comparison-chart">Comparison Chart</Link>
-        <Link to="/learning-center-entity/business-checklist">Business Checklist (WIP)</Link>
+        <Link to="/business-checklist">Business Checklist (WIP)</Link>
         <Link to="/learning-center-entity/annual-report">Annual Report Due Date</Link>
         <Link to="/learning-center-entity/business-license-req">Business License Requirements (no API)</Link>
         <Link to="/learning-center-entity/start-a-business">Business Startup Guides (no details)</Link>

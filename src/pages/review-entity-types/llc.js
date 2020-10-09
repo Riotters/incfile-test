@@ -5,11 +5,11 @@ import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
 import Button from "../../atomic/molecules/buttons/button";
 //Sections
 import Top from "../../atomic/partials/top";
-import About from "../../atomic/sections/review-entity-type/llc/about"
-import Faq from "../../atomic/sections/review-entity-type/llc/faq";
+import About from "../../atomic/sections/review-entity-types/llc/about"
+import Faq from "../../atomic/sections/review-entity-types/llc/faq";
 import Articles from "../../components/partials/sections/articles";
 //Texts
-import { top, about, faq } from "../../static/review-entity-type/llc"
+import { top, about, faq } from "../../static/review-entity-types/llc"
 
 const LLC = () => (
   <Layout>

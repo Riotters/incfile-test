@@ -11,10 +11,6 @@ import Top from "../../atomic/partials/top";
 import About from "../../atomic/sections/learning-center-entity/guide-to-start/about";
 import TableOfContent from "../../atomic/sections/learning-center-entity/guide-to-start/table-of-content";
 import NeedMore from "../../atomic/sections/learning-center-entity/guide-to-start/need-more";
-import Benefits from "../../components/partials/sections/benefits";
-import Articles from "../../components/partials/sections/articles";
-import Rocket from "../../atomic/sections/review-entity-type/c-corporation/rocket";
-import Searchbar from "../../atomic/molecules/form/searchbar";
 //Texts
 import { top, about, tableOfContent, needMore } from "../../static/learning-center-entity/guide-to-start";
 

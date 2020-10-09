@@ -8,16 +8,16 @@ import CartBlock from "../../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../../atomic/molecules/blocks/rating-block";
 //Sections
 import Top from "../../atomic/partials/top";
-import About from "../../atomic/sections/review-entity-type/s-corporation/about";
-import Adventages from "../../atomic/sections/review-entity-type/s-corporation/adventages";
-import Disdventages from "../../atomic/sections/review-entity-type/s-corporation/disadventages";
-import Requirements from "../../atomic/sections/review-entity-type/s-corporation/requirements";
-import Differences from "../../atomic/sections/review-entity-type/s-corporation/differences";
-import Rocket from "../../atomic/sections/review-entity-type/c-corporation/rocket";
-import Faq from "../../atomic/sections/review-entity-type/s-corporation/faq";
+import About from "../../atomic/sections/review-entity-types/s-corporation/about";
+import Adventages from "../../atomic/sections/review-entity-types/s-corporation/adventages";
+import Disdventages from "../../atomic/sections/review-entity-types/s-corporation/disadventages";
+import Requirements from "../../atomic/sections/review-entity-types/s-corporation/requirements";
+import Differences from "../../atomic/sections/review-entity-types/s-corporation/differences";
+import Rocket from "../../atomic/sections/review-entity-types/c-corporation/rocket";
+import Faq from "../../atomic/sections/review-entity-types/s-corporation/faq";
 import Articles from "../../components/partials/sections/articles";
 //Texts
-import { top, about, adventages, disadventages, differences, requirements, rocket, faq } from "../../static/review-entity-type/s-corporation";
+import { top, about, adventages, disadventages, differences, requirements, rocket, faq } from "../../static/review-entity-types/s-corporation";
 
 const SCorporation = () => (
   <Layout>

@@ -9,7 +9,7 @@ import Button from "../../atomic/molecules/buttons/button";
 import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
 import BusinessFormation from "../../atomic/sections/manage-your-company/home-page-v3/business-formation";
 import SetupYourBusiness from "../../atomic/sections/manage-your-company/home-page-v3/setup-your-business";
-import Rocket from "../../atomic/sections/review-entity-type/c-corporation/rocket";
+import Rocket from "../../atomic/sections/review-entity-types/c-corporation/rocket";
 import StarSVG from "../../images/icons/star-yellow.inline.svg";
 import {shadow} from "../../atomic/atoms/styles/shadows";
 import {color} from "../../atomic/atoms/styles/colors";

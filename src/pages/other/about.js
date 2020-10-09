@@ -9,7 +9,7 @@ import Top from "../../atomic/partials/top";
 import WhyChooseUs from "../../atomic/sections/other/about/why-choose-us";
 import OurProcessSection from "../../atomic/sections/other/about/our-process";
 import WhatWeDoSection from "../../atomic/sections/other/about/what-we-do";
-import Rocket from "../../atomic/sections/review-entity-type/c-corporation/rocket";
+import Rocket from "../../atomic/sections/review-entity-types/c-corporation/rocket";
 
 //Texts
 import { seo, hero, whyChooseUsList, ourProcess, whatWeDo, rocket } from "../../static/other/about";
