@@ -55,10 +55,6 @@ const List = styled.div`
     }
 `
 
-const dropdownOneOptions = [
-    'LCC', 'Corporation', 'Nonprofit'
-];
-  
 const dropdownTwoOptions = states.state.map(state => (state.name));
 
 const RequirementsSection = ({ className, content }) => (
@@ -67,7 +63,16 @@ const RequirementsSection = ({ className, content }) => (
             <Oval2SVG />
         </Oval>
         <ContentObject className="help" headlineWidth="500" 
-            object={<Card className="card" content={content.card} headline="Amendment" price="149" dropdownOnePlaceholder="Select Entity Type" dropdownOneOptions={dropdownOneOptions} dropdownTwoPlaceholder="Select State" dropdownTwoOptions={dropdownTwoOptions} />}
+            object={<Card className="card"
+                content={content.card}
+                headline="Amendment"
+                price="149"
+                dropdownOnePlaceholder="Select Entity Type"
+                dropdownTwoPlaceholder="Select State"
+                dropdownTwoOptions={dropdownTwoOptions}
+                priceColumn="amend"
+                fields="state,amendLLC,amendCorp,amendNpc" />
+            }
         >
             <TextWrapper>
                 <Curve top="-90" left="-60" color={color.blue1}>
