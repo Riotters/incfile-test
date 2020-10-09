@@ -5,6 +5,11 @@ import _ from "lodash";
 const Table = styled.div`
     display: flex;
     flex-direction: column;
+    width: 100%;
+    
+    @media screen and (min-width: 768px) {
+        ${props => props.width ? ("width: " + props.width + ";") : ""}
+    }
 `;
 
 const TableRow = styled.div`
@@ -126,10 +131,10 @@ const StateInfoProgressBar = styled.div`
     }
 `;
 
-const StatesTable = ({entries}) => {
+const StatesTable = ({entries, width}) => {
     const stateLists = (states) =>  states.length < 3 ? [states] : _.chunk(states, Math.ceil(states.length / 2));
     return (
-        <Table>
+        <Table width={width}>
             {entries.map((entry, index) => (
                 <TableRow>
                     <Number>{index + 1}</Number>
@@ -152,5 +157,7 @@ const StatesTable = ({entries}) => {
         </Table>
     )
 };
+
+StatesTable.defaultProps = { width: 0 };
 
 export default StatesTable;
