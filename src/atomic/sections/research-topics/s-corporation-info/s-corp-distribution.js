@@ -35,7 +35,6 @@ const AboutSection = ({ className, content }) => (
         {content.text}
       </Paragraph>
       <Button content={content.button} theme="primary56" arrow margin="0 auto 48px 0" />
-
       <Heading size={3} bottomMargin="24">
         {content.header3}
       </Heading>
@@ -44,14 +43,12 @@ const AboutSection = ({ className, content }) => (
         {content.text2}
       </Paragraph>
       <Button content={content.button2} theme="primary56" arrow margin="0 auto 48px 0" />
-
       <Heading size={3} bottomMargin="24">
         {content.header4}
       </Heading>
       <Paragraph big bottomMargin="48">
         {content.text3}
       </Paragraph>
-
       <Heading size={4} bottomMargin="24">
         {content.header5}
       </Heading>
@@ -59,7 +56,6 @@ const AboutSection = ({ className, content }) => (
         {content.text4}
       </Paragraph>
       <IconListColorBox content={content.list2} color={color.orange3} rounded bottomMargin="48" />
-
       <Heading size={4} bottomMargin="24">
         {content.header6}
       </Heading>
@@ -71,7 +67,6 @@ const AboutSection = ({ className, content }) => (
         {content.text6}
       </Paragraph>
       <Button content={content.button3} theme="primary56" arrow margin="0 auto 48px 0" />
-
       <Heading size={3} bottomMargin="24">
         {content.header7}
       </Heading>
@@ -81,7 +76,6 @@ const AboutSection = ({ className, content }) => (
       <Paragraph big bottomMargin="48">
         {content.text8}
       </Paragraph>
-
       <Heading size={3} bottomMargin="24">
         {content.header8}
       </Heading>
@@ -89,7 +83,6 @@ const AboutSection = ({ className, content }) => (
         {content.text9}
       </Paragraph>
       <IconListColorBox content={content.list4} color={color.yellow3} curve curveColor={color.purple2} rounded bottomMargin="48" />
-
       <Heading size={3} bottomMargin="24">
         {content.header9}
       </Heading>
@@ -97,7 +90,6 @@ const AboutSection = ({ className, content }) => (
         {content.text10}
       </Paragraph>
       <IconListColorBox content={content.list5} color={color.babyblue3} rounded bottomMargin="48" />
-
       <Heading size={3} bottomMargin="24">
         {content.header10}
       </Heading>
@@ -106,7 +98,6 @@ const AboutSection = ({ className, content }) => (
       <Paragraph big bottomMargin="48">
         {content.text11}
       </Paragraph>
-
       <Heading size={3} bottomMargin="32">
         {content.header11}
       </Heading>

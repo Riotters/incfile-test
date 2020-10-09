@@ -11,7 +11,7 @@ import RatingBlock from "../../atomic/molecules/blocks/rating-block";
 import Top from "../../atomic/partials/top";
 import DecidingSection from "../../atomic/sections/why-choose-incfile/deciding";
 import ChooseLists from "../../atomic/sections/why-choose-incfile/choose-lists";
-import Rocket from "../../atomic/sections/review-entity-type/c-corporation/rocket";
+import Rocket from "../../atomic/sections/review-entity-types/c-corporation/rocket";
 
 //Texts
 import { seo, hero, deciding, whyChoose, rocket } from "../../static/other/why-choose-incfile";

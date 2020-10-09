@@ -13,7 +13,7 @@ import Button from "../../../atomic/molecules/buttons/button";
 import WrapperContent from '../../../atomic/states-llc/wrapper-content'
 import LeftTabPages from '../../../atomic/states-llc/left-tab-pages'
 import MainPageContent from '../../../atomic/states-llc/page-content'
-import Rocket from "../../../atomic/sections/review-entity-type/c-corporation/rocket"
+import Rocket from "../../../atomic/sections/review-entity-types/c-corporation/rocket"
 import HowToGuide from '../../../atomic/states-llc/arizona/how-to-guide'
 import Requirements from "../../../atomic/sections/learning-center-entity/state-information-california/requirements";
 import Compare from "../../../atomic/sections/learning-center-entity/state-information-california/compare";

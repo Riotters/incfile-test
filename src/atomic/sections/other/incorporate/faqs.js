@@ -17,7 +17,7 @@ const FAQSection = ({ className, content }) => {
     return (
         <Wrapper className={className}>
             <Heading size={2} maxWidth={770} bottomMargin={55}>{content.header}</Heading>
-            <Accordion content={content.faq} />
+            <Accordion content={content.faq} tab />
         </Wrapper>
     );
 };

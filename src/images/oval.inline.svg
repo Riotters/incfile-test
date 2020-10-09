@@ -10,7 +10,7 @@
         </radialGradient>
     </defs>
     <g id="Nonprofit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="review-entity-type/nonprofit@2x" transform="translate(-856.000000, 0.000000)" fill="url(#radialGradient-1)">
+        <g id="review-entity-types/nonprofit@2x" transform="translate(-856.000000, 0.000000)" fill="url(#radialGradient-1)">
             <g id="main-header/illustration" transform="translate(732.000000, 0.000000)">
                 <g id="bg-main">
                     <path d="M948.199952,0 L948.199952,777 L124.199952,776.993034 C149.072242,343.700479 508.480121,0 948.199952,0 Z" transform="translate(536.199952, 388.500000) scale(1, -1) translate(-536.199952, -388.500000) "></path>

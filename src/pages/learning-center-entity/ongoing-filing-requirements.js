@@ -8,7 +8,7 @@ import Top from "../../atomic/partials/top";
 import About from "../../atomic/sections/learning-center-entity/ongoing-filing-requirements/about";
 import EntityTypeAndState from "../../atomic/sections/learning-center-entity/ongoing-filing-requirements/entity-type-and-state";
 import Requirements from "../../atomic/sections/learning-center-entity/ongoing-filing-requirements/requirements";
-import Rocket from "../../atomic/sections/review-entity-type/c-corporation/rocket";
+import Rocket from "../../atomic/sections/review-entity-types/c-corporation/rocket";
 //Texts
 import { top, about, entityTypeAndState, requirements, rocket } from "../../static/learning-center-entity/ongoing-filing-requirements";
 

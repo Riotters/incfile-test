@@ -6,6 +6,7 @@ import { Paragraph } from "../../atoms/typography/paragraph";
 import { color } from "../../atoms/styles/colors";
 import Curve from "../../atoms/icons/curve";
 import CurveSVG from "../../../images/curves/top-left-bottom-right.inline.svg";
+import ArrowLink from "../buttons/text";
 
 const dotColor = (circleColor) => {
   switch (circleColor) {
@@ -44,7 +45,7 @@ const Wrapper = styled.div`
       padding: 40px 40px 40px 112px;
     }
 
-    svg {
+    .icon-wrapper svg {
       display: none;
       position: absolute;
       top: 40px;
@@ -70,11 +71,14 @@ const IconTextColorBox = ({ className, Icon, color, content, bottomMargin, round
         </Curve>
       )}
       <Colorbox className="box" color={color}>
-        <Icon />
+        <div className="icon-wrapper">
+          <Icon />
+        </div>
         <Heading size="4" bottomMargin="16">
           {content.header}
         </Heading>
         {content.text && <Paragraph bottomMargin="0">{content.text}</Paragraph>}
+        {content.link && <ArrowLink className="more-info-link" content={content.link} topMargin={8} />}
       </Colorbox>
     </Wrapper>
   );

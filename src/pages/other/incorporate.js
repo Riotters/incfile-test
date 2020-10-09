@@ -70,8 +70,8 @@ class RegistrationPage extends React.Component {
         const priceVariants = (variants.hasOwnProperty(this.state.state) &&
             variants[this.state.state].hasOwnProperty(this.state.entity)) ? variants[this.state.state][this.state.entity] : null;
 
-        const fillingRequirements = (priceVariants != null) ? variants[this.state.state]['requirements'] : null;
-        const services = (priceVariants != null) ? variants[this.state.state]['services'] : null;
+        const fillingRequirements = (priceVariants != null) ? variants[this.state.state][this.state.entity]['requirements'] : null;
+        const services = (priceVariants != null) ? variants[this.state.state][this.state.entity]['services'] : null;
 
         const tableSettings = {
             onChange: this.recalculateTotal.bind(this)

@@ -29,7 +29,7 @@ export const about = {
     links2: [
       {
         text: `What Does LLC Mean?`,
-        url: `/research-topics/llc-info/what-does-llc-mean`,
+        url: `/research-topics/llc-info/llc-meaning`,
       },
       {
         text: `Can another business entity be a member of an LLC?`,
@@ -37,7 +37,7 @@ export const about = {
       },
       {
         text: `Why it’s important for the members on an LLC to have an operating agreement in place?`,
-        url: `/research-topics/llc-info/why-its-important-for-the-members-on-an-llc-to-have-an-operating-agreement-in-place`,
+        url: `/research-topics/llc-info/llc-members-operating-agreement`,
       },
       {
         text: `Can a Limited Liability Company (LLC) be taxed as an S Corporation?`,
@@ -49,7 +49,7 @@ export const about = {
       },
       {
         text: `Which entity type should I choose?`,
-        url: `/research-topics/llc-info/which-entity-type-should-i-choose`,
+        url: `/research-topics/llc-info/choosing-entity-type`,
       },
       {
         text: `Is an LLC the best fit for your entity?`,
@@ -61,15 +61,15 @@ export const about = {
       },
       {
         text: `The LLC Operating Agreement`,
-        url: `/research-topics/llc-info/the-llc-operating-agreement`,
+        url: `/research-topics/llc-info/llc-operating-agreement`,
       },
       {
         text: `The Benefits of Forming an LLC`,
-        url: `/research-topics/llc-info/the-benefits-of-forming-an-llc`,
+        url: `/research-topics/llc-info/forming-llc-benefits`,
       },
       {
         text: `What is an LLC (Limited Liability Company)?`,
-        url: `/research-topics/llc-info/what-is-an-llc-limited-liability-company`,
+        url: `/research-topics/llc-info/what-is-an-llc`,
       },
       {
         text: `LLC vs. C Corporation`,
@@ -85,11 +85,11 @@ export const about = {
       },
       {
         text: `Steps to starting a Limited Liability Company (LLC)`,
-        url: `/research-topics/llc-info/steps-to-starting-a-limited-liability-company-llc`,
+        url: `/research-topics/llc-info/starting-llc-by-steps`,
       },
       {
         text: `What is the process involved in changing the name of an LLC?`,
-        url: `/research-topics/llc-info/what-is-the-process-involved-in-changing-the-name-of-an-llc`,
+        url: `/research-topics/llc-info/changing-llc-name`,
       },
       {
         text: `Can an LLC be formed without listing the member on the articles of organization?`,

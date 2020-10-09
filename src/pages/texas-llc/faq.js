@@ -12,7 +12,7 @@ import LeftTabPages from '../../atomic/states-llc/left-tab-pages';
 import MainPageContent from '../../atomic/states-llc/page-content';
 import WrapperContent from '../../atomic/states-llc/wrapper-content';
 import FaqSection from '../../atomic/states-llc/texas/faq';
-import Rocket from "../../atomic/sections/review-entity-type/c-corporation/rocket";
+import Rocket from "../../atomic/sections/review-entity-types/c-corporation/rocket";
 
 // Content
 import { tabPages, rocket } from "../../static/states-llc/texas/general";
