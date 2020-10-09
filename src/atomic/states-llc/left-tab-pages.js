@@ -132,8 +132,9 @@ const Arrow = styled.div`
 `;
 
 const icons = [<HowToGuideSVG />, <BusinessNamesSVG />, <RASVG />, <FilingFeeSVG />, <BusinessTaxesSVG />, <FaqSVG />, <WhatDoNextSVG />];
+const icons2 = [<HowToGuideSVG />, <BusinessNamesSVG />, <RASVG />, <FilingFeeSVG />, <BusinessTaxesSVG />, <WhatDoNextSVG />];
 
-const LeftTabPages = ({ layout, columns, content }) => (
+const LeftTabPages = ({ layout, columns, content, nonDIY }) => (
   <TabsWrapper layout={layout}>
     <Sticky layout={layout} columns={columns}>
       {content.pages.map((page, i) => (
@@ -141,7 +142,7 @@ const LeftTabPages = ({ layout, columns, content }) => (
           to={page.path}
           activeClassName="active"
         >
-          <Icon> {icons[i]} </Icon>
+          <Icon> {nonDIY ? icons2[i] : icons[i]} </Icon>
           <Content>
             <span>{page.name}</span>
             <Arrow className="tabArrow">
