@@ -6,7 +6,8 @@ import ContentCenter from "../../../partials/content-center";
 import Form from "../../../organisms/forms/business-name-search-form";
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-right-transparent-orange.inline.svg";
-import Checklist from "../../../../components/checklist/checklist"
+import Checklist from "../../../../components/checklist/checklist";
+import ChecklistIcon from "../../../../images/icons/wrench-and-pen.inline.svg";
 
 const Checklists = styled.section`
   position: relative;
@@ -21,11 +22,11 @@ const ChecklistsSection = ({ className, content }) => (
       <OvalSVG />
     </Oval>
     <ContentCenter>
-        <Checklist />
-        <Checklist />
-        <Checklist />
-        <Checklist />
-        <Checklist />
+      <Checklist title="Workforce" icon={ChecklistIcon} iconBgColor="#faefc8" />
+      <Checklist title="Workforce" icon={ChecklistIcon} iconBgColor="#faefc8" />
+      <Checklist title="Workforce" icon={ChecklistIcon} iconBgColor="#faefc8" />
+      <Checklist title="Workforce" icon={ChecklistIcon} iconBgColor="#faefc8" />
+      <Checklist title="Workforce" icon={ChecklistIcon} iconBgColor="#faefc8" />
     </ContentCenter>
   </Checklists>
 );
