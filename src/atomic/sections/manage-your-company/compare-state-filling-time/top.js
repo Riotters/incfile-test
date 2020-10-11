@@ -16,15 +16,15 @@ const Wrapper = styled.section`
     }
 `;
 
-const Top = ({ className, content }) => (
+const Top = ({ className, content, ovalTop }) => (
       <Wrapper>
-          <Oval top="13" right="0" width={341} height={192}>
+          <Oval top={ovalTop ?? "13"} right="0" width={341} height={192}>
               <OvalSVG />
           </Oval>
           <Container>
               <ContentCenter>
-                  <Heading size={1} maxWidth={700}>{content.header}</Heading>
-                  <Paragraph big maxWidth={700}>{content.text}</Paragraph>
+                  {content.header && (<Heading size={1} maxWidth={700}>{content.header}</Heading>)}
+                  {content.text && (<Paragraph big maxWidth={700}>{content.text}</Paragraph>)}
               </ContentCenter>
           </Container>
       </Wrapper>

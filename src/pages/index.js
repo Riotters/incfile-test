@@ -186,6 +186,10 @@ const IndexPage = () => (
         <Link to="/other/thank-you-page/">Thank You Page</Link>
         <Link to="/404">404</Link>
         <Link to="/503">503</Link>
+        <Link to="/privacy-policy">Privacy policy</Link>
+        <Link to="/cancellation-policy">Cancellation policy</Link>
+        <Link to="/legal-disclaimer">Legal disclaimer</Link>
+        <Link to="/glossary">Glossary</Link>
 
         <h2>Research Topics</h2>
         <Link to="/research-topics/business-taxes">Business taxes</Link>

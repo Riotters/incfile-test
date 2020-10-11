@@ -20,7 +20,7 @@ const Wrapper = styled.div`
   margin-top: ${(props) => (props.tab ? "" : "80px")};
 
   @media (min-width: 769px) {
-    width: auto;
+    ${props => props.noAutoWidth ? "" : "width: auto;"}
     padding: ${(props) => (props.tab ? "" : "25px 29px 0")};
   }
 `;
@@ -51,7 +51,7 @@ const TabsWrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 770px;
+  max-width: ${props => props.maxWidth ?? "770"}px;
 `;
 
 const TabBox = styled.div`
@@ -198,18 +198,18 @@ const Panel = ({ children }) => {
   );
 };
 
-const Accordion = ({ content, curve, curveRight, curveRightBottom, curveLeft, curveLeftBottom, curveColor, tab }) => {
+const Accordion = ({ content, curve, curveRight, curveRightBottom, curveLeft, curveLeftBottom, curveColor, tab, maxWidth, noAutoWidth }) => {
   return (
     <VisibilitySensor partialVisibility once>
       {({ isVisible }) => (
-        <Wrapper className={isVisible ? "slideUp enter" : "slideUp"} tab={tab}>
+        <Wrapper className={isVisible ? "slideUp enter" : "slideUp"} tab={tab} noAutoWidth={noAutoWidth}>
           {curve && (
             <Curve curveRight={curveRight} curveRightBottom={curveRightBottom} curveLeft={curveLeft} curveLeftBottom={curveLeftBottom} curveColor={curveColor}>
               <CurveSVG />
             </Curve>
           )}
           <Tabs>
-            <TabsWrapper>
+            <TabsWrapper maxWidth={maxWidth}>
               {content.items.map((item) => (
                 <TabBox>
                   <Tab>
