@@ -291,6 +291,13 @@ const IndexPage = () => (
         <Link to="/research-topics/general-research/customized-corp-llc-kit">What is the Customized Corporate/LLC Kit?</Link>
         <Link to="/research-topics/general-research/registered-agent-function">What is the main function of the Registered Agent?</Link>
         <Link to="/research-topics/general-research/required-business-account-paperwork">What Do I Need to Open a Business Bank Account?</Link>
+        <Link to="/research-topics/general-research/entity-remains-compliant">What steps do I need to take to ensure that my entity remains compliant?</Link>
+        <Link to="/research-topics/general-research/tax-advantages">Which entity offers the best tax advantages?</Link>
+        <Link to="/research-topics/general-research/choosing-entity-type">Which entity type should I choose?</Link>
+        <Link to="/research-topics/state-info">Individual State Information</Link>
+        <Link to="/research-topics/state-info/publish-inc-notice-georgia">How To Publish Your Notice Of Incorporation In Georgia</Link>
+        <Link to="/research-topics/state-info/ny-publication-requirement">How to Meet New York LLC Publication Requirements</Link>
+        <Link to="/research-topics/registered-agent">Registered Agent</Link>
 
         <h2>Blog</h2>
         <Link to="/blog">Blog (no API)</Link>

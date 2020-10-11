@@ -27,87 +27,59 @@ const AboutSection = ({ className, content }) => (
       <Heading size={3} bottomMargin="32">
         {content.header}
       </Heading>
-      <Paragraph big bottomMargin="48">
-        {content.text}
-      </Paragraph>
-      <Heading size={3} bottomMargin="24">
+      <Heading size={4} bottomMargin="32">
         {content.header2}
       </Heading>
-      <Paragraph big bottomMargin="16">
-        {content.text2}
-      </Paragraph>
-      <IconListColorBox content={content.list} color={color.green3} curve curveColor={color.orange2} rounded bottomMargin="24" />
-      <IconListColorBox content={content.list2} color={color.babyblue3} rounded bottomMargin="16" />
-      <Paragraph big bottomMargin="48" mixed>
-        {parse(content.text3)}
-      </Paragraph>
-      <Heading size={3} bottomMargin="24">
+      <Heading size={4} bottomMargin="24">
         {content.header3}
       </Heading>
-      <Paragraph big bottomMargin="16">
-        {content.text4}
-      </Paragraph>
-      <IconListColorBox content={content.list3} color={color.orange3} rounded bottomMargin="16" />
-      <Paragraph big bottomMargin="48">
-        {content.text5}
+      <Paragraph big bottomMargin="48" mixed>
+        {parse(content.text)}
       </Paragraph>
       <Heading size={4} bottomMargin="24">
         {content.header4}
       </Heading>
-      <Paragraph big bottomMargin="48" mixed>
-        {parse(content.text6)}
+      <Paragraph big bottomMargin="48">
+        {content.text2}
       </Paragraph>
       <Heading size={4} bottomMargin="24">
         {content.header5}
       </Heading>
-      <Paragraph big bottomMargin="48">
-        {content.text7}
-      </Paragraph>
+      <IconListColorBox content={content.list} color={color.green3} rounded bottomMargin="24" />
+      <IconListColorBox content={content.list2} color={color.babyblue2} curve curveColor={color.orange2} rounded bottomMargin="48" />
       <Heading size={4} bottomMargin="24">
         {content.header6}
       </Heading>
       <Paragraph big bottomMargin="16" mixed>
-        {parse(content.text8)}
+        {parse(content.text3)}
       </Paragraph>
-      <Paragraph big bottomMargin="48">
-        {content.text9}
-      </Paragraph>
+      <IconListColorBox content={content.list3} color={color.purple3} rounded bottomMargin="48" />
       <Heading size={4} bottomMargin="24">
         {content.header7}
       </Heading>
-      <Paragraph big bottomMargin="16">
-        {content.text10}
-      </Paragraph>
-      <Paragraph big bottomMargin="48" mixed>
-        {parse(content.text11)}
+      <Paragraph big bottomMargin="48">
+        {content.text4}
       </Paragraph>
       <Heading size={4} bottomMargin="24">
         {content.header8}
       </Heading>
-      <Paragraph big bottomMargin="16">
-        {content.text12}
-      </Paragraph>
-      <Paragraph big bottomMargin="16">
-        {content.text13}
-      </Paragraph>
-      <Paragraph big bottomMargin="16" mixed>
-        {parse(content.text14)}
-      </Paragraph>
-      <Paragraph big bottomMargin="48" mixed>
-        {parse(content.text15)}
+      <Paragraph big bottomMargin="48">
+        {content.text5}
       </Paragraph>
       <Heading size={4} bottomMargin="24">
         {content.header9}
       </Heading>
-      <Paragraph big bottomMargin="16">
-        {content.text16}
+      <Paragraph big bottomMargin="48">
+        {content.text6}
       </Paragraph>
-      <Paragraph big bottomMargin="16" mixed>
-        {parse(content.text17)}
-      </Paragraph>
-      <ArrowLink content={content.link} bottomMargin="48" />
-      <Heading size={3} bottomMargin="24">
+      <Heading size={4} bottomMargin="24">
         {content.header10}
+      </Heading>
+      <Paragraph big bottomMargin="48">
+        {content.text7}
+      </Paragraph>
+      <Heading size={3} bottomMargin="24">
+        {content.header11}
       </Heading>
       {content.links2.map(link => (
         <ArrowLink content={link} />

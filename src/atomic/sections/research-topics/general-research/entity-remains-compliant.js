@@ -11,6 +11,7 @@ import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-blue3.inline.svg";
 import NumericList from "../../../organisms/lists/numeric-boxed-list";
 import Path from "../../../molecules/blocks/research-topics-path";
+import parse from "html-react-parser"
 
 const About = styled.section`
   position: relative;
@@ -24,51 +25,20 @@ const AboutSection = ({ className, content }) => (
     </Oval>
     <ImageContent image="web-address-search">
       <Path content={content.links} />
-      <Heading size={3} bottomMargin="32">
+      <Heading size={3} bottomMargin="48">
         {content.header}
-      </Heading>
-      <Heading size={4} bottomMargin="24">
-        {content.header2}
       </Heading>
       <Paragraph big bottomMargin="16">
         {content.text}
       </Paragraph>
-      <Paragraph big bottomMargin="48">
+      <Paragraph big bottomMargin="16">
         {content.text2}
       </Paragraph>
-      <Heading size={4} bottomMargin="24">
-        {content.header3}
-      </Heading>
-      <Paragraph big bottomMargin="16">
+      <Paragraph big bottomMargin="48">
         {content.text3}
       </Paragraph>
-      <IconListColorBox content={content.list} color={color.orange3} curve curveColor={color.green2} rounded bottomMargin="16" />
-      <Paragraph big bottomMargin="16">
-        {content.text4}
-      </Paragraph>
-      <IconListColorBox content={content.list2} color={color.blue3} rounded bottomMargin="16" />
-      <Paragraph big bottomMargin="16">
-        {content.text5}
-      </Paragraph>
-      <Paragraph big bottomMargin="16">
-        {content.text6}
-      </Paragraph>
-      <IconListColorBox content={content.list3} color={color.yellow3} rounded bottomMargin="16" />
-      <IconListColorBox content={content.list4} color={color.purple3} curve curveColor={color.red2} rounded bottomMargin="16" />
-      <IconListColorBox content={content.list5} color={color.green3} rounded bottomMargin="16" />
-      <Paragraph big bottomMargin="48">
-        {content.text7}
-      </Paragraph>
-      <Heading size={4} bottomMargin="24">
-        {content.header4}
-      </Heading>
-      <Paragraph big bottomMargin="16">
-        {content.text8}
-      </Paragraph>
-      <IconListColorBox content={content.list6} color={color.babyblue3} rounded bottomMargin="24" />
-      <ArrowLink content={content.link} bottomMargin="48" />
       <Heading size={3} bottomMargin="32">
-        {content.header5}
+        {content.header2}
       </Heading>
       {content.links2.map(link => (
         <ArrowLink content={link} />
