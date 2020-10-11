@@ -32,7 +32,6 @@ export const about = {
       list: [`Multiple options in terms of taxation.`],
     },
     text8: `Extremely flexible in how it chooses to distribute profits which allows owners to distribute profits or losses in ways that are advantageous to their tax situation.`,
-  
     header4: `Related Articles`,
     links2: [
         {
