@@ -138,10 +138,7 @@ const LeftTabPages = ({ layout, columns, content, nonDIY }) => (
   <TabsWrapper layout={layout}>
     <Sticky layout={layout} columns={columns}>
       {content.pages.map((page, i) => (
-        <Link
-          to={page.path}
-          activeClassName="active"
-        >
+        <Link to={page.path} activeClassName="active">
           <Icon> {nonDIY ? icons2[i] : icons[i]} </Icon>
           <Content>
             <span>{page.name}</span>

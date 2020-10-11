@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import parse from 'html-react-parser';
+import parse from "html-react-parser";
 import { color } from "../../../atoms/styles/colors";
 import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";
@@ -44,26 +44,33 @@ const RequirementsSection = ({ className, content }) => (
         {content.header}
       </Heading>
     </ContentLeft>
-    <ObjectContent className="row row--1" headlineWidth="450" object={
-      <ColorBox content={content.rows[0].box} color={color.green3} icon={<ClockSVG />
-    } radius="50px 5px 5px 100px" curve curveLeft />} objectWidth="400" objectPadding="130" contentWidth="900">
+    <ObjectContent className="row row--1" headlineWidth="450" object={<ColorBox content={content.rows[0].box} color={color.green3} icon={<ClockSVG />} radius="50px 5px 5px 100px" curve curveLeft />} objectWidth="400" objectPadding="130" contentWidth="900">
       <Grid>
         <TextWrapper>
           {content.rows[0].content.columns[0].content.map((item, i) => (
             <>
-                {item.type === 'heading' && 
-                    <Heading size={item.size} bottomMargin={item.bottomMargin}>{item.content}</Heading>
-                }
-                                    
-                {item.type === 'paragraph' && 
-                    <Paragraph big mixed={true} bottomMargin={item.bottomMargin}>{parse(item.content)}</Paragraph>
-                }
+              {item.type === "heading" && (
+                <Heading size={item.size} bottomMargin={item.bottomMargin}>
+                  {item.content}
+                </Heading>
+              )}
 
-                {item.type === 'arrow-links' && 
-                    <ArrowLink content={item.content} bottomMargin={item.bottomMargin} />
-                }
+              {item.type === "paragraph" && (
+                <Paragraph big mixed={true} bottomMargin={item.bottomMargin}>
+                  {parse(item.content)}
+                </Paragraph>
+              )}
+
+              {item.type === "arrow-links" && <ArrowLink content={item.content} bottomMargin={item.bottomMargin} />}
             </>
           ))}
+          {/* <Heading size="3">{content.rows[0].content.columns[0].header}</Heading>
+          <Paragraph big>{content.rows[0].content.columns[0].text}</Paragraph>
+          <Paragraph big bottomMargin="24">
+            {content.rows[0].content.columns[0].text2}
+          </Paragraph>
+          <ArrowLink content={content.rows[0].content.columns[0].link} bottomMargin="0" />
+          <ArrowLink content={content.rows[0].content.columns[0].link2} bottomMargin="0" /> */}
         </TextWrapper>
         <TextWrapper>
           <Heading size="3">{content.rows[0].content.columns[1].header}</Heading>
@@ -84,7 +91,7 @@ const RequirementsSection = ({ className, content }) => (
         </Paragraph>
       </TextWrapper>
     </ObjectContent>
-    <ObjectContent className="row row--3" headlineWidth="450" object={<ColorBox content={content.rows[2].box} color={color.purple3} icon={<CalendarSVG />} radius="50px 5px 5px 100px"  curve curveLeft />} objectWidth="400" objectPadding="130" contentWidth="900">
+    <ObjectContent className="row row--3" headlineWidth="450" object={<ColorBox content={content.rows[2].box} color={color.purple3} icon={<CalendarSVG />} radius="50px 5px 5px 100px" curve curveLeft />} objectWidth="400" objectPadding="130" contentWidth="900">
       <TextWrapper>
         <Heading size="3" bottomMargin="32">
           {content.rows[2].content.header}

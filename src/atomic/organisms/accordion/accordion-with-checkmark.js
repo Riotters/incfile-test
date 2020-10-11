@@ -275,7 +275,6 @@ const AccordionWithCounting = ({ content, curve, curveRight, curveRightBottom, t
                       ) : null}
                       {typeof item.text === "object" ? (
                         <Paragraph topMargin="32" bottomMargin="0" mixed>
-                          {console.log(item.text)}
                           {item.text.map((el) => (el.url ? <Link to={el.url}>{` ${parse(el.text)} `}</Link> : el.text))}
                         </Paragraph>
                       ) : null}

@@ -403,18 +403,50 @@ export const requirements = {
       },
       content: {
         columns: [
+          // {
+          //   header: `Filing time and price`,
+          //   text: `The state charges this amount to file a new business entity. This fee goes directly to the Secretary of State.`,
+          //   text2: `Ut tincidunt neque a viverra egestas. Suspendisse tempus metu.`,
+          //   link: {
+          //     text: `State Filing Times`,
+          //     url: `/`,
+          //   },
+          //   link2: {
+          //     text: `State Filing Prices`,
+          //     url: `/`,
+          //   },
+          // },
           {
-            header: `Filing time and price`,
-            text: `The state charges this amount to file a new business entity. This fee goes directly to the Secretary of State.`,
-            text2: `Ut tincidunt neque a viverra egestas. Suspendisse tempus metu.`,
-            link: {
-              text: `State Filing Times`,
-              url: `/`,
-            },
-            link2: {
-              text: `State Filing Prices`,
-              url: `/`,
-            },
+            content: [
+              {
+                type: `heading`,
+                size: 3,
+                content: `Filing time and price`,
+              },
+              {
+                type: `paragraph`,
+                content: `The state charges this amount to file a new business entity. This fee goes directly to the Secretary of State.`,
+              },
+              {
+                type: `paragraph`,
+                content: `Ut tincidunt neque a viverra egestas. Suspendisse tempus metu.`,
+              },
+              {
+                type: `arrow-links`,
+                content: {
+                  text: `State Filing Times`,
+                  url: `/`,
+                },
+                bottomMargin: 16,
+              },
+              {
+                type: `arrow-links`,
+                content: {
+                  text: `State Filing Prices`,
+                  url: `/`,
+                },
+              },
+            ],
           },
           {
             header: `Compliance  Requirements`,

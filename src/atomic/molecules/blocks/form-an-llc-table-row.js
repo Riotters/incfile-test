@@ -39,7 +39,6 @@ const Cell = styled.div`
 
 const GridTableRow = ({ className, content, columns }) => (
   <Wrapper className={className} columns={columns}>
-    {columns && console.log(columns.length)}
     {content.map((item) => (
       <Cell>
         {item.type === "header" && (

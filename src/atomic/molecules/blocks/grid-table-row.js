@@ -56,7 +56,6 @@ const ListItem = styled(Paragraph)`
 
 const GridTableRow = ({ className, content, header, headerSize, list, columns, textCenter, noSeparator }) => (
   <Wrapper className={className} columns={columns}>
-    {columns && console.log(columns.length)}
     {content.map((item) => (
       <Cell textCenter={textCenter} noSeparator={noSeparator}>
         {header && (
