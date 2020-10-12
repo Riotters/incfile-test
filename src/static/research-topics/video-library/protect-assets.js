@@ -9,7 +9,7 @@ export const about = {
         url: `/research-topics/video-library`,
       },
     ],
-    header: `Protect Your Personal Assets`,
+    header: `Protect Your Personal Assets`, //https://vimeo.com/144693528
     text: `By incorporating your business, you are essentially drawing a line of demarkation between your personal assets and the assets owned by the business. After all, who wants their hard-earned savings or child’s college fund wiped out due to some unforeseen trouble with a business venture?`,
     header2: `Related Articles`,
     links2: [
