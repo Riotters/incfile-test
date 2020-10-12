@@ -9,47 +9,47 @@ export const about = {
     links2: [
       {
         text: `Can I Be My Own Registered Agent?`,
-        url: `/registered-agent/can-i-act-as-my-own-registered-agent/`,
+        url: `/registered-agent/own-registered-agent`,
       },
       {
         text: `What is the main function of the Registered Agent?`,
-        url: `/registered-agent/what-is-the-main-function-of-the-registered-agent/`,
+        url: `/registered-agent/registered-agent-function`,
       },
       {
         text: `What happens if I require the signature of my Registered Agent?`,
-        url: `/registered-agent/what-happens-if-i-require-the-signature-of-my-registered-agent/`,
+        url: `/registered-agent/registered-agent-signature`,
       },
       {
         text: `What is the name and address of my Registered Agent?`,
-        url: `/registered-agent/what-is-the-name-and-address-of-my-registered-agent/`,
+        url: `/registered-agent/registered-agent-address`,
       },
       {
         text: `Who will be responsible for updating the Registered Agent information with the state?`,
-        url: `/registered-agent/who-will-be-responsible-for-updating-the-registered-agent-information-with-the-state/`,
+        url: `/registered-agent/registered-agent-info-update`,
       },
       {
         text: `How much will it cost to renew my Registered Agent service?`,
-        url: `/registered-agent/how-much-will-it-cost-to-renew-my-registered-agent-service/`,
+        url: `/registered-agent/service-cost`,
       },
       {
         text: `How will I know when it is time to renew my Registered Agent?`,
-        url: `/registered-agent/how-will-i-know-when-it-is-time-to-renew-my-registered-agent/`,
+        url: `/registered-agent/registered-agent-renew`,
       },
       {
         text: `How will I be notified if service of process is received?`,
-        url: `/registered-agent/how-will-i-be-notified-if-service-of-process-is-received/`,
+        url: `/registered-agent/service-process-notify`,
       },
       {
         text: `What will happen to my company if the registered agent resigns?`,
-        url: `/registered-agent/what-will-happen-to-my-company-if-the-registered-agent-resigns/`,
+        url: `/registered-agent/registered-agent-resigns`,
       },
       {
         text: `Can the registered agent be a company?`,
-        url: `/registered-agent/can-the-registered-agent-be-a-company/`,
+        url: `/registered-agent/registered-agent-company`,
       },
       {
         text: `What does a Registered Agent do?`,
-        url: `/registered-agent/what-does-a-registered-agent-do/`,
+        url: `/registered-agent/registered-agent-tasks`,
       },
     ],
   };

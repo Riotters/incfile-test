@@ -20,7 +20,7 @@ import { about } from "../../../static/research-topics/general-research/required
 
 const HelpCenter = () => (
   <Layout>
-    <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
+    <SEO title="What Do I Need to Open a Business Banking Account? | Incfile" description="If you run certain types of businesses, you will need to have a bank account specifically for your business finances. Learn how to get started." />
     <Top imageName="mrs-bulb-help-center-article" imageAlt="Mrs Bulb and with checklist" ovalColor="green">
       <h1>{top.header}</h1>
       <p>{top.text}</p>

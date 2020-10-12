@@ -20,8 +20,8 @@ import { about } from "../../../static/research-topics/general-research/corp-sea
 
 const HelpCenter = () => (
   <Layout>
-    <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
-    <Top imageName="mrs-bulb-help-center-article" imageAlt="Mrs Bulb and with checklist" ovalColor="green">
+    <SEO title="What is a Corporate Seal or Company Seal? | Incfile" description="Learn about corporate and company seals and stamps, when you might need one, what they’re used for and more." />
+    <Top imageName="mrs-bulb-help-center-article" imageAlt="Mss Bulb answering question about company seals" ovalColor="green">
       <h1>{top.header}</h1>
       <p>{top.text}</p>
       <Searchbar />
