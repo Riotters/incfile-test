@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+  gatsby:
+    container_name: gatsby
+    image: gatsbyjs/gatsby
+    build: .
+    working_dir: /source
+    entrypoint: ["gatsby", "serve", "--port", "80", "--host", "128.199.8.232"]
+    network_mode: host
