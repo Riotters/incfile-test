@@ -20,7 +20,7 @@ import { about } from "../../../static/research-topics/business-taxes/sellers-pe
 
 const HelpCenter = () => (
   <Layout>
-    <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
+    <SEO title="How to Get a Seller’s Permit or Sales Tax Permit" description="If you’re required to collect sales tax, you’ll need to get a seller’s permit from your state’s Department of Revenue. Learn more." />
     <Top imageName="mrs-bulb-help-center-article" imageAlt="Mrs Bulb and with checklist" ovalColor="green">
       <h1>{top.header}</h1>
       <p>{top.text}</p>
