@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#FFF" fill-rule="nonzero" d="M17.86 2.23v5.627h-1.15l-.64-.668-.52-.56c-.3-.348-.746-.54-1.21-.521-.463.019-.892.248-1.16.62l-.18.147-.56.697c-.164.067-.313.164-.44.285H8c.152-1.495-.68-2.92-2.07-3.545C3.3 3.084.7 5.5.7 5.5c.003-.938.273-1.857.78-2.652.731-.417 1.564-.63 2.41-.619h6.9L12 3.673c.197.267.506.433.841.452.335.019.662-.111.889-.354l.88-.825.68-.667 2.57-.05z" transform="translate(2)"/>
+        <path fill="#FFF" fill-rule="nonzero" stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M11.63 7.71V29.08c.057.907-.638 1.69-1.56 1.758H10c-.863-.135-1.482-.89-1.43-1.748V7.71h3.06z" transform="translate(2)"/>
+        <path stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M19.32.688V7.71h-2.61l-.64-.668-.52-.56c-.3-.348-.746-.54-1.21-.522-.463.02-.892.249-1.16.62l-.18.207-.56.687-.19.236H8c.137-1.482-.692-2.887-2.07-3.506C3.3 2.946.7 5.382.7 5.382c.004-.935.275-1.85.78-2.642C2.309 1.426 3.787.645 5.36.687h6.9l1.2 1.444c.177.245.45.406.753.447.302.041.609-.042.847-.23l.13-.119.12-.108.76-.766.69-.667h2.56z" transform="translate(2)"/>
+        <path fill="#FFF" fill-rule="nonzero" d="M24.5 2.691l.25.422 1.82 2.947.26 22.422v1.778c.005.059.005.118 0 .177h-3.16c-.4 0-.725-.315-.73-.708V26.94l-.25-20.625.09-.167 1.57-3.113.15-.344z" transform="translate(2)"/>
+        <path stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M27.88 5.127l.26 22.373v1.768c.006.059.006.118 0 .177-.076.692-.671 1.217-1.38 1.218H24.4c-.74-.009-1.348-.573-1.4-1.297v-2.121l-.29-22.06" transform="translate(2)"/>
+        <path stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M22.71 5.186L24.38 2.121 25.16 0.688 25.8 1.738 26.06 2.151 27.88 5.127" transform="translate(2)"/>
+        <path stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M23.03 4.734L24.17 5.804 25.29 4.704 26.44 5.775 27.57 4.685M22.97 27.245L27.78 27.156" transform="translate(2)"/>
+    </g>
+</svg>
