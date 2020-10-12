@@ -58,10 +58,12 @@ const Wrapper = styled.div`
   }
 `;
 
-const CertificateCard = ({ className, headline, content, image, dropdownOnePlaceholder, dropdownOneOptions, dropdownTwoPlaceholder, dropdownTwoOptions, dropdownThreePlaceholder, dropdownThreeOptions, priceColumn, fields }) => {
+const CertificateCard = ({ className, headline, content, image, dropdownOnePlaceholder, dropdownTwoPlaceholder, dropdownTwoOptions, dropdownThreePlaceholder, dropdownThreeOptions, priceColumn, fields, orderPage }) => {
     const [extraFee, setExtraFee] = useState(0);
     const [showExtraFee, setShowExtraFee] = useState(false);
-    const [entityType, setEntityType] = useState('LLC');
+    const [entityTypeSelected, setEntityTypeSelected] = useState({});
+    const [entityState, setEntityState] = useState('');
+    const [compState, setCompState] = useState('');
 
     async function fetchData(url = '', data = {}) {
         const response = await fetch(url, {
@@ -78,9 +80,10 @@ const CertificateCard = ({ className, headline, content, image, dropdownOnePlace
         }
 
         let state = option.value;
-        let priceColumnField = `${priceColumn}${entityType}`;
+        let priceColumnField = `${priceColumn}${entityTypeSelected.value}`;
+        setEntityState(state);
 
-        let endpoint = `https://api.incfile.com/api/v1/get-price-by-state/?state=${state}`;
+        let endpoint = `${process.env.INCFILE_API_URL}/get-price-by-state/?state=${state}`;
         if (fields) {
             endpoint += `&_fields=${fields}`;
         }
@@ -92,6 +95,16 @@ const CertificateCard = ({ className, headline, content, image, dropdownOnePlace
         });
     }
 
+    const handleOrderNow = () => {
+        if (typeof window !== 'undefined') {
+            let orderUrl = `${process.env.ORDER_URL}${orderPage}?entityType=${entityTypeSelected.label}&entityState=${entityState}`;
+            if (compState) {
+                orderUrl += `&compState=${compState}`;
+            }
+            window.location.replace(orderUrl);
+        }
+    }
+
     const entityOptions = [
         { value: `LLC`, label: `LLC` },
         { value: `Corp`, label: `Corporation` },
@@ -100,33 +113,33 @@ const CertificateCard = ({ className, headline, content, image, dropdownOnePlace
 
   return (
     <Wrapper className={className}>
-      <h3>{headline}</h3>
-      {image && <Image filename={image} />}
-      {dropdownOnePlaceholder && (
-        <Label className="label">
-          Entity Type
-          <Dropdown className="dropdown" placeholder={dropdownOnePlaceholder} options={entityOptions} onChange={option => setEntityType(option.value)} />
-        </Label>
-      )}
-      {dropdownTwoPlaceholder && (
-        <Label className="label">
-          State
-          <Dropdown className="dropdown" placeholder={dropdownTwoPlaceholder} options={dropdownTwoOptions} onChange={getPrice} />
-        </Label>
-      )}
-      {dropdownThreePlaceholder && (
-        <Label className="label">
-          State of Formation
-          <Dropdown className="dropdown" placeholder={dropdownThreePlaceholder} options={dropdownThreeOptions} />
-        </Label>
-      )}
-      {content && (
-        <>
-          {content.price && <span className="price">${content.price}</span>}
-          {showExtraFee && <span className="fee">+${extraFee} State Fee</span>}
-        </>
-      )}
-      <Button content={content.button} theme="primary56" margin="40px 0 0 0" arrow />
+        <h3>{headline}</h3>
+        {image && <Image filename={image} />} 
+        {dropdownOnePlaceholder && (
+            <Label className="label">
+            Entity Type
+            <Dropdown className="dropdown" placeholder={dropdownOnePlaceholder} options={entityOptions} onChange={option => setEntityTypeSelected(option)} />
+            </Label>
+        )}
+        {dropdownTwoPlaceholder && (
+            <Label className="label">
+            State
+            <Dropdown className="dropdown" placeholder={dropdownTwoPlaceholder} options={dropdownTwoOptions} onChange={getPrice} />
+            </Label>
+        )}
+        {dropdownThreePlaceholder && (
+            <Label className="label">
+            State of Formation
+            <Dropdown className="dropdown" placeholder={dropdownThreePlaceholder} options={dropdownThreeOptions} onChange={option => setCompState(option.value)} />
+            </Label>
+        )}
+        {content && (
+            <>
+            {content.price && <span className="price">${content.price}</span>}
+            {showExtraFee && <span className="fee">+${extraFee} State Fee</span>}
+            </>
+        )}
+        <Button content={content.button} theme="primary56" margin="40px 0 0 0" arrow onClick={handleOrderNow} />
     </Wrapper>
   );
 };

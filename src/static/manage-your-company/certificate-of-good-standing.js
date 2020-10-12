@@ -1,12 +1,12 @@
 export const top = {
     header: 
         `Filing Your Certificate of Good Standing`,
-    text: 
-        `$0 + State Fee & FREE Registered Agent.`,
+    // text: 
+    //     `$0 + State Fee & FREE Registered Agent.`,
     button: [
         {
         text: 'Order now',
-        url: 'https://www.incfile.com/ein-form.php',
+        url: `${process.env.ORDER_URL}/cert-good-standing.php`,
         }
     ]
 }
@@ -27,13 +27,12 @@ export const about = {
         `When do you need a Certificate of Good Standing?`,
     text3: 
         `In certain situations, you may be required to prove that your business exists and is in compliance with relevant laws and regulations. A Certificate of Good Standing from your state serves as this proof. 
-        A Certificate of Good Standing is often required in order to obtain a loan, renew a business license or to file your business taxes. There are a few key reasons why your company might need a Certificate of Good Standing. 
-        Sometimes this document is requested by:`,
+        A Certificate of Good Standing is often required in order to obtain a loan, renew a business license or to file your business taxes. There are a few key reasons why your company might need a Certificate of Good Standing.`,
     box: {
         header:
-            `When is an Annual Report Not an Annual Report?`,
+            `Sometimes this document is requested by:`,
         list: [
-        `Other state governments as part of the process of applying for Foreign Qualification for your business to register to do business in states other than your home state`,
+        `Other state governments as part of the process of applying for <a href="/manage-your-company/foreign-qualification/">Foreign Qualification</a> for your business to register to do business in states other than your home state`,
         `Lenders or banks that want to get proof of your business’s existence and business history as part of evaluating your creditworthiness for a loan or when carrying out certain types of transactions`,
         `Investors or business partners who want to make sure your business is legitimate and in compliance with laws and regulations`,
         `Licensing agencies and regulators — in order to renew or obtain certain permits and licenses`,
@@ -48,10 +47,10 @@ export const about = {
         `How do I get a Certificate of Good Standing?`,
     text5: 
         `After you form your LLC or corporation, it’s important to stay up-to-date on filing your annual report, biennial report, or other required forms and compliance paperwork. 
-        To stay in good standing, your business needs to meet a few key requirements, depending on your company’s home state. These typically include:`,
+        To stay in good standing, your business needs to meet a few key requirements, depending on your company’s home state. `,
     box2: {
         header:
-            `When is an Annual Report Not an Annual Report?`,
+            `These typically include:`,
         list: [
             `Being up-to-date on annual or biennial fees to the secretary of state to register or renew your business`,
             `Filing annual or biennial reports`,
@@ -68,19 +67,20 @@ export const help = {
     header2:
       `Save your time. We'll handle the paperwork.`,
     text:
-      `If you would like to use our services to facilitate the filing of your annual report please place the order and a representative from IncFile will 
-      contact you to obtain specific information required to complete and file the annual report in your state of formation.`,
+      `To obtain a Good Standing Certificate, the business entity must be registered as a legal entity with the secretary of state, and cannot be in default of corporate regulations, suspended or revoked by the state.`,
     link: {
         text:
             `We can handle the paperwork`,
         url:
-            `#`,
+        `${process.env.ORDER_URL}/cert-good-standing.php`,
     },
     card: {
-        price:
-            `88`,
-        fee:
-            `+ $10 State Fee`,
+        price: `88`,
+        fee: `+ $10 State Fee`,
+        button: {
+            text: `Order Now`,
+            url: `/`
+        }
     },
 }
 

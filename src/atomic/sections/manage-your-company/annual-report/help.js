@@ -33,8 +33,6 @@ const TextWrapper = styled.div`
   position: relative;
 `;
 
-const dropdownOneOptions = ["LCC", "Corporation", "Nonprofit"];
-
 const dropdownTwoOptions = states.state.map((state) => state.name);
 
 const HelpSection = ({ className, content }) => (
@@ -48,7 +46,15 @@ const HelpSection = ({ className, content }) => (
     <ContentObject
       className="help"
       headlineWidth="450"
-      object={<Card className="card" content={content.card} headline="Annual Report" dropdownOnePlaceholder="Select Entity Type" dropdownOneOptions={dropdownOneOptions} dropdownTwoPlaceholder="Select State" dropdownTwoOptions={dropdownTwoOptions} />}
+      object={<Card className="card"
+        content={content.card}
+        headline="Annual Report"
+        dropdownOnePlaceholder="Select Entity Type"
+        dropdownTwoPlaceholder="Select State"
+        dropdownTwoOptions={dropdownTwoOptions}
+        priceColumn="annualReport"
+        orderPage="/annual-report.php"
+        fields="state,annualReportLLC,annualReportCorp,annualReportNpc"/>}
     >
       <TextWrapper>
         <Curve top="-20" right="-5" rightXL="190" color={color.blue1}>

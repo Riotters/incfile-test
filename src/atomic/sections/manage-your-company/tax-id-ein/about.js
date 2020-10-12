@@ -22,7 +22,7 @@ const About = styled.section`
 
 const AboutSection = ({ className, content }) => (
     <About className={className}>
-        <Oval className="oval" height="570" width="570" y="-40">
+        <Oval className="oval" height="570" width="570" y="-28">
             <OvalSVG />
         </Oval>
         <ImageContent image="envelope-ein">

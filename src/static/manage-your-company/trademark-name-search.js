@@ -4,7 +4,7 @@ export const top = {
   button: [
     {
       text: "Get started",
-      url: "/forms/trademark",
+      url: `${process.env.ORDER_URL}/trademark.php`,
     },
   ],
 };
@@ -29,7 +29,7 @@ export const help = {
     fee: `+ Federal fee`,
     button: {
       text: "Order now",
-      url: "/forms/trademark",
+      url: `${process.env.ORDER_URL}/trademark.php`,
     },
   },
 };
@@ -69,6 +69,6 @@ export const cta = {
   header: `Protect your name, logo, or phrase with a U.S trademark registration.`,
   link: {
     text: `Order now`,
-    url: `#`,
+    url: `${process.env.ORDER_URL}/trademark.php`,
   },
 };

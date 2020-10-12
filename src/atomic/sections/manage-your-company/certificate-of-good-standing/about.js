@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import parse from "html-react-parser";
 import { color } from "../../../atoms/styles/colors";
 import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";

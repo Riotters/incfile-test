@@ -25,7 +25,7 @@ const Amendment = () => (
     <Top imageName="mr-amendment-name-change" imageWidth="504" imagePositionRight="50%" imageAlt="Mrs Bulb holding a closed sign" ovalColor="orange">
       <h1>{top.header}</h1>
       <Buttonsbox>
-        <Button to="/amendment.php" theme="primary56" width="200px" arrow>
+        <Button to={`${process.env.ORDER_URL}/amendment.php`} theme="primary56" width="200px" arrow>
           Order now
         </Button>
       </Buttonsbox>

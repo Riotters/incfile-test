@@ -1,17 +1,17 @@
 import React from "react";
-import Layout from "../../components/layout";
-import SEO from "../../components/seo";
-import RatingRow from "../../atomic/atoms/boxes/rating-row";
-import CartBlock from "../../atomic/molecules/blocks/cart-block";
-import RatingBlock from "../../atomic/molecules/blocks/rating-block";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import RatingRow from "../atomic/atoms/boxes/rating-row";
+import CartBlock from "../atomic/molecules/blocks/cart-block";
+import RatingBlock from "../atomic/molecules/blocks/rating-block";
 //Sections
-import Top from "../../atomic/partials/top";
-import Fee from "../../atomic/sections/other/free-llc/fee";
-import Start from "../../atomic/sections/other/free-llc/start";
-import Industry from "../../atomic/sections/other/free-llc/industry";
-import Catch from "../../atomic/sections/other/free-llc/catch";
+import Top from "../atomic/partials/top";
+import Fee from "../atomic/sections/other/free-llc/fee";
+import Start from "../atomic/sections/other/free-llc/start";
+import Industry from "../atomic/sections/other/free-llc/industry";
+import Catch from "../atomic/sections/other/free-llc/catch";
 //Texts
-import { top, fee, start, industry, isCatch } from "../../static/other/free-llc";
+import { top, fee, start, industry, isCatch } from "../static/other/free-llc";
 
 const GeneralResearchTopics = () => (
   <Layout>
