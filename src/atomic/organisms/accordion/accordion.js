@@ -202,9 +202,11 @@ const Panel = ({ children }) => {
 
 const Accordion = ({ content, curve, curveRight, curveRightBottom, curveLeft, curveLeftBottom, curveColor, tab, maxWidth, noAutoWidth, bottomMargin }) => {
   return (
-    <VisibilitySensor partialVisibility once>
-      {({ isVisible }) => (
-        <Wrapper className={isVisible ? "slideUp enter" : "slideUp"} tab={tab} noAutoWidth={noAutoWidth} bottomMargin={bottomMargin}>
+    // <VisibilitySensor partialVisibility once>
+    //   {({ isVisible }) => (
+        <Wrapper 
+        //className={isVisible ? "slideUp enter" : "slideUp"} 
+        tab={tab} noAutoWidth={noAutoWidth} bottomMargin={bottomMargin}>
           {curve && (
             <Curve curveRight={curveRight} curveRightBottom={curveRightBottom} curveLeft={curveLeft} curveLeftBottom={curveLeftBottom} curveColor={curveColor}>
               <CurveSVG />
@@ -284,8 +286,8 @@ const Accordion = ({ content, curve, curveRight, curveRightBottom, curveLeft, cu
             </TabsWrapper>
           </Tabs>
         </Wrapper>
-      )}
-    </VisibilitySensor>
+    //   )}
+    // </VisibilitySensor>
   );
 };
 
