@@ -98,14 +98,14 @@ const AboutSection = ({ className, content }) => (
       <Paragraph big bottomMargin="16">
         {content.text12}
       </Paragraph>
-      <IconListColorBox content={content.list4} color={color.purple3} curve curveColor={color.orange2}rounded bottomMargin="16" />
+      <IconListColorBox content={content.list4} color={color.purple3} curve curveColor={color.orange2} rounded bottomMargin="16" />
       <Paragraph big bottomMargin="48">
         {content.text13}
       </Paragraph>
       <Heading size={3} bottomMargin="32">
         {content.header12}
       </Heading>
-      {content.links2.map(link => (
+      {content.links2.map((link) => (
         <ArrowLink content={link} />
       ))}
     </ImageContent>
