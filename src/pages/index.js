@@ -318,6 +318,11 @@ const IndexPage = () => (
         <Link to="/research-topics/registered-agent/registered-agent-resigns">What will happen to my company if the registered agent resigns?</Link>
         <Link to="/research-topics/registered-agent/registered-agent-info-update">Who will be responsible for updating the Registered Agent information with the state?</Link>
 
+        <Link to="/research-topics/video-library">Video Library</Link>
+        <Link to="/research-topics/video-library/forming-llc-or-corp">How Easy Is Forming an LLC or Corporation</Link>
+        <Link to="/research-topics/video-library/save-with-incfile">Learn How To Save Money With Incfile</Link>
+        <Link to="/research-topics/video-library/protect-assets">Protect Your Personal Assets</Link>
+
         <h2>Blog</h2>
         <Link to="/blog">Blog (no API)</Link>
         <Link to="/article">Article (no API)</Link>
