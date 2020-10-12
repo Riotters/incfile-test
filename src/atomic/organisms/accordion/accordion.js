@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
+import PropTypes from "prop-types";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import parse from "html-react-parser";
@@ -18,9 +19,10 @@ const Wrapper = styled.div`
   width: 100%;
   position: relative;
   margin-top: ${(props) => (props.tab ? "" : "80px")};
+  margin-bottom: ${(props) => (props.bottomMargin ? `${props.bottomMargin}px` : "")};
 
   @media (min-width: 769px) {
-    ${props => props.noAutoWidth ? "" : "width: auto;"}
+    ${(props) => (props.noAutoWidth ? "" : "width: auto;")}
     padding: ${(props) => (props.tab ? "" : "25px 29px 0")};
   }
 `;
@@ -51,7 +53,7 @@ const TabsWrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: ${props => props.maxWidth ?? "770"}px;
+  max-width: ${(props) => props.maxWidth ?? "770"}px;
 `;
 
 const TabBox = styled.div`
@@ -198,11 +200,11 @@ const Panel = ({ children }) => {
   );
 };
 
-const Accordion = ({ content, curve, curveRight, curveRightBottom, curveLeft, curveLeftBottom, curveColor, tab, maxWidth, noAutoWidth }) => {
+const Accordion = ({ content, curve, curveRight, curveRightBottom, curveLeft, curveLeftBottom, curveColor, tab, maxWidth, noAutoWidth, bottomMargin }) => {
   return (
     <VisibilitySensor partialVisibility once>
       {({ isVisible }) => (
-        <Wrapper className={isVisible ? "slideUp enter" : "slideUp"} tab={tab} noAutoWidth={noAutoWidth}>
+        <Wrapper className={isVisible ? "slideUp enter" : "slideUp"} tab={tab} noAutoWidth={noAutoWidth} bottomMargin={bottomMargin}>
           {curve && (
             <Curve curveRight={curveRight} curveRightBottom={curveRightBottom} curveLeft={curveLeft} curveLeftBottom={curveLeftBottom} curveColor={curveColor}>
               <CurveSVG />
@@ -222,8 +224,16 @@ const Accordion = ({ content, curve, curveRight, curveRightBottom, curveLeft, cu
                   </Tab>
                   <Panel>
                     <PanelWrapper>
-                      {typeof item.answer === "string" ? <Paragraph bottomMargin="0" mixed>{parse(item.answer)}</Paragraph> : null}
-                      {typeof item.answer === "object" ? <Paragraph bottomMargin="0" mixed>{item.answer.map((el) => (el.url ? <Link to={el.url}>{` ${parse(el.text)} `}</Link> : el.text))}</Paragraph> : null}
+                      {typeof item.answer === "string" ? (
+                        <Paragraph bottomMargin="0" mixed>
+                          {parse(item.answer)}
+                        </Paragraph>
+                      ) : null}
+                      {typeof item.answer === "object" ? (
+                        <Paragraph bottomMargin="0" mixed>
+                          {item.answer.map((el) => (el.url ? <Link to={el.url}>{` ${parse(el.text)} `}</Link> : el.text))}
+                        </Paragraph>
+                      ) : null}
 
                       {item.list && (
                         <ul>
@@ -278,4 +288,9 @@ const Accordion = ({ content, curve, curveRight, curveRightBottom, curveLeft, cu
     </VisibilitySensor>
   );
 };
+
 export default Accordion;
+
+Accordion.propTypes = {
+  bottomMargin: PropTypes.number,
+};

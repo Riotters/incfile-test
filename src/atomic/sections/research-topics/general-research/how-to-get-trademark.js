@@ -12,7 +12,7 @@ import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-blue3.inline.svg";
 import NumericList from "../../../organisms/lists/numeric-boxed-list";
 import Path from "../../../molecules/blocks/research-topics-path";
-import parse from "html-react-parser"
+import parse from "html-react-parser";
 import Circle from "../../../atoms/icons/circle";
 
 const About = styled.section`
@@ -23,21 +23,21 @@ const About = styled.section`
 const AbsoluteCircle = styled.div`
   border-radius: 50%;
   box-shadow: ${(props) => props.imageShadowColor};
+  margin-right: auto;
+  margin-bottom: 24px;
 `;
 
 const NumberSpan = styled.span`
-    font-family: MarkPro;
-    font-size: 24px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: center;
-    color: #5089fd;
-`
-
-
+  font-family: MarkPro;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #5089fd;
+`;
 
 const AboutSection = ({ className, content }) => (
   <About className={className}>
@@ -57,7 +57,7 @@ const AboutSection = ({ className, content }) => (
       </Paragraph>
       <AbsoluteCircle imageShadowColor={shadow.white1}>
         <Circle circleColor={color.white} padding={0} height={80} width={80} paddingLeft={0}>
-            <NumberSpan>{1}</NumberSpan>
+          <NumberSpan>{1}</NumberSpan>
         </Circle>
       </AbsoluteCircle>
       <Heading size={4} bottomMargin="24">
@@ -72,7 +72,7 @@ const AboutSection = ({ className, content }) => (
       </Paragraph>
       <AbsoluteCircle imageShadowColor={shadow.white1}>
         <Circle circleColor={color.white} padding={0} height={80} width={80} paddingLeft={0}>
-            <NumberSpan>{2}</NumberSpan>
+          <NumberSpan>{2}</NumberSpan>
         </Circle>
       </AbsoluteCircle>
       <Heading size={4} bottomMargin="24">
@@ -86,7 +86,7 @@ const AboutSection = ({ className, content }) => (
       </Paragraph>
       <AbsoluteCircle imageShadowColor={shadow.white1}>
         <Circle circleColor={color.white} padding={0} height={80} width={80} paddingLeft={0}>
-            <NumberSpan>{3}</NumberSpan>
+          <NumberSpan>{3}</NumberSpan>
         </Circle>
       </AbsoluteCircle>
       <Heading size={4} bottomMargin="24">
@@ -103,7 +103,7 @@ const AboutSection = ({ className, content }) => (
       </Paragraph>
       <AbsoluteCircle imageShadowColor={shadow.white1}>
         <Circle circleColor={color.white} padding={0} height={80} width={80} paddingLeft={0}>
-            <NumberSpan>{4}</NumberSpan>
+          <NumberSpan>{4}</NumberSpan>
         </Circle>
       </AbsoluteCircle>
       <Heading size={4} bottomMargin="24">
@@ -116,7 +116,7 @@ const AboutSection = ({ className, content }) => (
       <IconListColorBox content={content.list3} color={color.green3} rounded bottomMargin="48" />
       <AbsoluteCircle imageShadowColor={shadow.white1}>
         <Circle circleColor={color.white} padding={0} height={80} width={80} paddingLeft={0}>
-            <NumberSpan>{5}</NumberSpan>
+          <NumberSpan>{5}</NumberSpan>
         </Circle>
       </AbsoluteCircle>
       <Heading size={4} bottomMargin="24">
@@ -130,7 +130,7 @@ const AboutSection = ({ className, content }) => (
       </Paragraph>
       <AbsoluteCircle imageShadowColor={shadow.white1}>
         <Circle circleColor={color.white} padding={0} height={80} width={80} paddingLeft={0}>
-            <NumberSpan>{6}</NumberSpan>
+          <NumberSpan>{6}</NumberSpan>
         </Circle>
       </AbsoluteCircle>
       <Heading size={4} bottomMargin="24">
@@ -144,7 +144,7 @@ const AboutSection = ({ className, content }) => (
       </Paragraph>
       <AbsoluteCircle imageShadowColor={shadow.white1}>
         <Circle circleColor={color.white} padding={0} height={80} width={80} paddingLeft={0}>
-            <NumberSpan>{7}</NumberSpan>
+          <NumberSpan>{7}</NumberSpan>
         </Circle>
       </AbsoluteCircle>
       <Heading size={4} bottomMargin="24">
@@ -158,7 +158,7 @@ const AboutSection = ({ className, content }) => (
       </Paragraph>
       <AbsoluteCircle imageShadowColor={shadow.white1}>
         <Circle circleColor={color.white} padding={0} height={80} width={80} paddingLeft={0}>
-            <NumberSpan>{8}</NumberSpan>
+          <NumberSpan>{8}</NumberSpan>
         </Circle>
       </AbsoluteCircle>
       <Heading size={4} bottomMargin="24">
@@ -180,7 +180,7 @@ const AboutSection = ({ className, content }) => (
       <Heading size={3} bottomMargin="32">
         {content.header11}
       </Heading>
-      {content.links2.map(link => (
+      {content.links2.map((link) => (
         <ArrowLink content={link} />
       ))}
     </ImageContent>

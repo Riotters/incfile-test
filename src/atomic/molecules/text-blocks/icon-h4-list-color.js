@@ -29,6 +29,9 @@ const dotColor = (circleColor) => {
     case color.yellow3: {
       return color.yellow1;
     }
+    case color.red3: {
+      return color.red1;
+    }
     default:
       return "";
   }

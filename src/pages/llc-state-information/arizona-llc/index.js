@@ -21,7 +21,7 @@ import Variants from "../../../atomic/sections/learning-center-entity/state-info
 import Subscription from "../../../atomic/sections/learning-center-entity/state-information-california/subscription";
 import Articles from "../../../atomic/sections/articles";
 // Content
-import { top, homePageContent, compare, requirements } from "../../../static/states-llc/arizona/home";
+import { top, howToGuide, compare, requirements } from "../../../static/states-llc/arizona/home";
 import { tabPages, rocket } from "../../../static/states-llc/non-diy/general";
 import { learnMore, quickLinks, variants, subscription } from "../../../static/learning-center-entity/state-information-california";
 
@@ -31,6 +31,24 @@ const Wrapper = styled.div`
 
   @media (min-width: 769px) {
     flex-direction: ${(props) => (props.layout !== "grid" ? "row" : "column")};
+  }
+
+  .accordion-panel {
+    overflow: hidden;
+  }
+
+  .ReactCollapse--collapse {
+    width: 100%;
+    transition: height 500ms;
+    margin-left: auto;
+
+    @media (min-width: 769px) {
+      max-width: ${(props) => (props.layout !== "grid" ? "55%" : "")};
+    }
+
+    @media (min-width: 1200px) {
+      max-width: ${(props) => (props.layout !== "grid" ? "670px" : "")};
+    }
   }
 `;
 
@@ -49,7 +67,7 @@ function LLCIndex() {
         <Wrapper>
           <LeftTabPages content={tabPages} nonDIY />
           <MainPageContent>
-            <HowToGuide content={homePageContent.content} />
+            <HowToGuide content={howToGuide} />
           </MainPageContent>
         </Wrapper>
       </WrapperContent>

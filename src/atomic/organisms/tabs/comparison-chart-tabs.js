@@ -276,12 +276,18 @@ const CCorpTabs = ({ layout, columns, content }) => (
               <Panel>
                 <PanelWrapper className="panel3" layout={layout}>
                   <Heading size="3">{content.content[2].header}</Heading>
-                  <Paragraph big bottomMargin="40">{content.content[2].text}</Paragraph>
+                  <Paragraph big bottomMargin="40">
+                    {content.content[2].text}
+                  </Paragraph>
                   <IconListColorBox color={color.yellow3} content={content.content[2].box} bottomMargin="48" rounded />
                   <Heading size="3">{content.content[2].header2}</Heading>
-                  <Paragraph big bottomMargin="48">{content.content[2].text2}</Paragraph>
+                  <Paragraph big bottomMargin="48">
+                    {content.content[2].text2}
+                  </Paragraph>
                   <Heading size="3">{content.content[2].header3}</Heading>
-                  <Paragraph big bottomMargin="24">{content.content[2].text3}</Paragraph>
+                  <Paragraph big bottomMargin="24">
+                    {content.content[2].text3}
+                  </Paragraph>
                   <Table content={content.content[2].table} />
                 </PanelWrapper>
               </Panel>
@@ -289,9 +295,13 @@ const CCorpTabs = ({ layout, columns, content }) => (
                 <PanelWrapper className="panel4" layout={layout}>
                   <Heading size="3">{content.content[3].header}</Heading>
                   <Paragraph big>{content.content[3].text}</Paragraph>
-                  <Paragraph big bottomMargin="48">{content.content[3].text2}</Paragraph>
+                  <Paragraph big bottomMargin="48">
+                    {content.content[3].text2}
+                  </Paragraph>
                   <Heading size="3">{content.content[3].header2}</Heading>
-                  <Paragraph big bottomMargin="24">{content.content[3].text3}</Paragraph>
+                  <Paragraph big bottomMargin="24">
+                    {content.content[3].text3}
+                  </Paragraph>
                   <Table2 content={content.content[3].table} />
                 </PanelWrapper>
               </Panel>
@@ -299,7 +309,9 @@ const CCorpTabs = ({ layout, columns, content }) => (
                 <PanelWrapper className="panel4" layout={layout}>
                   <Heading size="3">{content.content[4].header}</Heading>
                   <Paragraph big>{content.content[4].text}</Paragraph>
-                  <Paragraph big bottomMargin="0">{content.content[4].text2}</Paragraph>
+                  <Paragraph big bottomMargin="0">
+                    {content.content[4].text2}
+                  </Paragraph>
                 </PanelWrapper>
               </Panel>
             </Collapse>

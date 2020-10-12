@@ -10,8 +10,8 @@ import IconListColorBox from "../../../molecules/text-blocks/icon-h4-list-color"
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-blue3.inline.svg";
 import Path from "../../../molecules/blocks/research-topics-path";
-import parse from "html-react-parser"
-import Button from "../../../molecules/buttons/button"
+import parse from "html-react-parser";
+import Button from "../../../molecules/buttons/button";
 import NumericList from "../../../organisms/lists/numeric-boxed-list";
 
 const About = styled.section`
@@ -25,7 +25,7 @@ const AboutSection = ({ className, content }) => (
       <OvalSVG />
     </Oval>
     <ImageContent image="web-address-search">
-    <Path content={content.links} />
+      <Path content={content.links} />
       <Heading size={3} bottomMargin="32">
         {content.header}
       </Heading>
@@ -115,7 +115,7 @@ const AboutSection = ({ className, content }) => (
       <Heading size={3} bottomMargin="24">
         {content.header15}
       </Heading>
-      {content.links2.map(link => (
+      {content.links2.map((link) => (
         <ArrowLink content={link} />
       ))}
     </ImageContent>
