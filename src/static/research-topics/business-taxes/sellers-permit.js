@@ -57,21 +57,7 @@ export const about = {
   header6: `The Process for Getting a Sales Tax or Seller’s Permit`,
   text7: `Most states will allow you to register for sales tax and get a seller’s permit online. This is the typical process:`,
   list2: [
-    {
-      text: [
-        {
-          text: `Gather together information about your business, such as its legal name, any tax identification numbers (for example, your`,
-        },
-        {
-          text: `Employer Identification Number)`,
-          url: `/`,
-        },
-        {
-          text: `and other identifying factors.`,
-        },
-      ],
-    },
-    `Find your state’s Department of Revenue website, typically by searching “state name” and “department of revenue.”`,
+    `Gather together information about your business, such as its legal name, any tax identification numbers (for example, your <a href="#">Employer Identification Number</a>) and other identifying factors. Find your state’s Department of Revenue website, typically by searching “state name” and “department of revenue.”`,
     `Go to the “Sales and Use Tax” section of the website.`,
     `Review the rules and regulations there to see if you’re liable to pay sales tax.`,
     `See if you can register for sales tax and a seller’s permit online.`,
