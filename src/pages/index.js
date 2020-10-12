@@ -43,22 +43,22 @@ const IndexPage = () => (
 
         <h2>LLC States Information</h2>
         <Link to="/llc-state-information">LLC State Information</Link>
-        <Link to="/llc-state-information/arizona-llc/">Arizona LLC ?</Link>
-        <Link to="/llc-state-information/california-llc/">California LLC</Link>
-        <Link to="/llc-state-information/florida-llc/">Florida LLC</Link>
-        <Link to="/llc-state-information/georgia-llc/">Georgia LLC</Link>
-        <Link to="/llc-state-information/illinois-llc/">Illinois LLC</Link>
-        <Link to="/llc-state-information/louisiana-llc/">Louisiana LLC ?</Link>
-        <Link to="/llc-state-information/maryland-llc/">Maryland LLC ?</Link>
-        <Link to="/llc-state-information/massachusetts-llc/">Massachusetts LLC ?</Link>
-        <Link to="/llc-state-information/michigan-llc/">Michigan LLC ?</Link>
-        <Link to="/llc-state-information/new-york-llc/">New York LLC</Link>
-        <Link to="/llc-state-information/north-carolina-llc/">North Carolina LLC ?</Link>
-        <Link to="/llc-state-information/ohio-llc/">Ohio LLC ?</Link>
-        <Link to="/llc-state-information/pennsylvania-llc/">Pennsylvania LLC ?</Link>
-        <Link to="/llc-state-information/tennessee-llc/">Tennessee LLC ?</Link>
+        <Link to="/arizona-llc/">Arizona LLC</Link>
+        <Link to="/california-llc/">California LLC</Link>
+        <Link to="/florida-llc/">Florida LLC</Link>
+        <Link to="/georgia-llc/">Georgia LLC</Link>
+        <Link to="/illinois-llc/">Illinois LLC</Link>
+        <Link to="/louisiana-llc/">Louisiana LLC ?</Link>
+        <Link to="/maryland-llc/">Maryland LLC ?</Link>
+        <Link to="/massachusetts-llc/">Massachusetts LLC ?</Link>
+        <Link to="/michigan-llc/">Michigan LLC ?</Link>
+        <Link to="/new-york-llc/">New York LLC</Link>
+        <Link to="/north-carolina-llc/">North Carolina LLC ?</Link>
+        <Link to="/ohio-llc/">Ohio LLC ?</Link>
+        <Link to="/pennsylvania-llc/">Pennsylvania LLC ?</Link>
+        <Link to="/tennessee-llc/">Tennessee LLC ?</Link>
         <Link to="/texas-llc/">Texas LLC</Link>
-        <Link to="/llc-state-information/virginia-llc/">Virginia LLC ?</Link>
+        <Link to="/virginia-llc/">Virginia LLC ?</Link>
 
         <h2>Contact Pages</h2>
         <Link to="/contact/existing-clients/">Existing clients</Link>

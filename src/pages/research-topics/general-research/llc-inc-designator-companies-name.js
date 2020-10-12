@@ -20,7 +20,8 @@ import { about } from "../../../static/research-topics/general-research/llc-inc-
 
 const HelpCenter = () => (
   <Layout>
-    <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
+    <SEO title="Does the designator “LLC” or &#8220;Inc.&#8221;  always need to be included in your companies name? | Archive articles" description="Q & A for LLC and other forms of corporations. Learning Center for
+    Incorporating in every state." />
     <Top imageName="mrs-bulb-help-center-article" imageAlt="Mrs Bulb and with checklist" ovalColor="green">
       <h1>{top.header}</h1>
       <p>{top.text}</p>
