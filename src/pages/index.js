@@ -43,7 +43,7 @@ const IndexPage = () => (
 
         <h2>LLC States Information</h2>
         <Link to="/llc-state-information">LLC State Information</Link>
-        <Link to="/llc-state-information/arizona-llc/">Arizona LLC ?</Link>
+        <Link to="/arizona-llc/">Arizona LLC</Link>
         <Link to="/llc-state-information/california-llc/">California LLC</Link>
         <Link to="/llc-state-information/florida-llc/">Florida LLC</Link>
         <Link to="/llc-state-information/georgia-llc/">Georgia LLC</Link>

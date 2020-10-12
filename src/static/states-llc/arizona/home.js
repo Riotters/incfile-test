@@ -6,7 +6,7 @@ export const top = {
   buttons: [
     {
       text: `See detailed pricing`,
-      url: `/`,
+      url: `/form-order-now.php?entityType=LLC&entityState=AZ`,
     },
   ],
 };

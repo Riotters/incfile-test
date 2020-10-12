@@ -22,7 +22,7 @@ import Subscription from "../../../atomic/sections/learning-center-entity/state-
 import Articles from "../../../atomic/sections/articles";
 // Content
 import { top, howToGuide, compare, requirements } from "../../../static/states-llc/arizona/home";
-import { tabPages, rocket } from "../../../static/states-llc/non-diy/general";
+import { tabPages, rocket } from "../../../static/states-llc/arizona/general";
 import { learnMore, quickLinks, variants, subscription } from "../../../static/learning-center-entity/state-information-california";
 
 const Wrapper = styled.div`
