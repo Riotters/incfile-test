@@ -4,8 +4,14 @@ export const about = {
         text: `View All Topics`,
         url: `/help-center/`,
       },
+      {
+        text: `Registered Agent`,
+        url: `/research-topics/registered-agent`,
+      },
     ],
-    header: `Registered Agent`,
+    header: `How will I be notified if service of process is received?`,
+    text: `Your service will be managed through the Registered Agent Dashboard any service of process that is received by us will be uploaded to the dashboard and an email notification will sent informing you that the documents have been uploaded to your account.`,
+    header2: `Related Articles`,
     links2: [
       {
         text: `Can I Be My Own Registered Agent?`,
@@ -53,4 +59,3 @@ export const about = {
       },
     ],
   };
-  

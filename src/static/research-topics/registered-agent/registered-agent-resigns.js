@@ -4,8 +4,14 @@ export const about = {
         text: `View All Topics`,
         url: `/help-center/`,
       },
+      {
+        text: `Registered Agent`,
+        url: `/research-topics/registered-agent`,
+      },
     ],
-    header: `Registered Agent`,
+    header: `What will happen to my company if the registered agent resigns?`,
+    text: `In most cases the state will grant a window of time in which the company can assign a new registered agent. If the company fails to assign a new registered agent then the state will eventually revoke or dissolve the company for non compliance.`,
+    header2: `Related Articles`,
     links2: [
       {
         text: `Can I Be My Own Registered Agent?`,
@@ -53,4 +59,3 @@ export const about = {
       },
     ],
   };
-  

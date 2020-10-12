@@ -4,8 +4,14 @@ export const about = {
         text: `View All Topics`,
         url: `/help-center/`,
       },
+      {
+        text: `Registered Agent`,
+        url: `/research-topics/registered-agent`,
+      },
     ],
-    header: `Registered Agent`,
+    header: `How will I know when it is time to renew my Registered Agent?`,
+    text: `The Registered Agent service is renewed annually. An email with renewal instructions will be sent one month prior to the due date. The service may be renewed anytime through the Registered Agent Dashboard.`,
+    header2: `Related Articles`,
     links2: [
       {
         text: `Can I Be My Own Registered Agent?`,
@@ -53,4 +59,3 @@ export const about = {
       },
     ],
   };
-  
