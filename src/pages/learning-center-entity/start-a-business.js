@@ -34,7 +34,6 @@ const HelpCenter = () => (
     <About content={about} />
     <CheckType content={checkType} />
     <BusinessStructure content={businessStructure} />
-    <Rocket content={launchBusiness} />
   </Layout>
 );
 
