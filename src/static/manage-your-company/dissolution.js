@@ -1,12 +1,12 @@
 export const top = {
     header: 
       `Filing Articles of Dissolution`,
-    text: 
-      `From $199 + Federal Fee`,
+    // text: 
+    //   `From $199 + Federal Fee`,
     button: [
       {
         text: 'Order now',
-        url: '/',
+        url: `${process.env.ORDER_URL}/dissolution.php`,
       }
     ]
   }
@@ -18,7 +18,7 @@ export const top = {
         with having a record of operation on file with the secretary of state. But, the emotional decision to dissolve your company can be tough at times, if you put your heart and sweat into building your own business.`,
     link: {
         text: 'Let Incfile do the dissolution paperwork for you',
-        url: '/',
+        url: `${process.env.ORDER_URL}/dissolution.php`,
     },
     header: 
         `How to Close an LLC or Corporation`,
@@ -36,10 +36,9 @@ export const top = {
       `Business dissolution is primarily an act of filing Articles of Dissolution with your secretary of state. 
       However, if a business is not in a sound position with the state to dissolve, other legal matters may complicate the process.`,
     header2: 
-      `How to Close an LLC or Corporation`,
+      `Steps to Dissolving Your LLC or Corporation`,
     text4: 
-      `A company begins with Articles of Incorporation when it is formed, therefore it makes sense that Articles must be filed to dissolve a company that has been in operation. 
-      Without filing the proper paperwork, the business owner will continue to be liable for taxes and other state requirements. Fortunately, closing a company is really a matter of paperwork.`,
+      `There are three key steps to dissolving a company. Incfile completes these steps in a timely manner on your behalf, making an otherwise cumbersome process simple and stress-free.`,
     list: [
         {
             header: `Hold a meeting with the Board of Directors`,
@@ -48,7 +47,7 @@ export const top = {
         },
         {
             header: `File the Articles of Dissolution`,
-            text: `The paperwork must be completed and signed by the Registered Agent of your company. You will be issued a Certificate of Dissolution that formalizes the termination of business activity in your state. 
+            text: `The paperwork must be completed and signed by the <a href="/manage-your-company/registered-agent/">Registered Agent</a> of your company. You will be issued a Certificate of Dissolution that formalizes the termination of business activity in your state. 
             Once dissolution is properly documented, all branches in other states will automatically be dissolved as well. The dissolution of a company must take place in the state where incorporation took place.`,
         },
         {
@@ -69,13 +68,15 @@ export const top = {
     header2:
       `Requirements to file Articles of Dissolution:`,
     text:
-      `The company must be in good standing with the state of incorporation and cannot be in arrears of franchise taxes or annual reporting requirements. 
-      In the event that the entity is not in good standing reinstatement would be required in order to proceed with the dissolution.`,
+      `The company must be in <a href="/manage-your-company/certificate-of-good-standing/">good standing</a> with the state of incorporation and cannot be in arrears of franchise taxes or annual reporting requirements. In the event that the entity is not in good standing reinstatement would be required in order to proceed with the dissolution.`,
     card: {
       price:
         `149`,
-      fee:
-        `Plus State Filling Fees`,
+      fee: `Plus State Filling Fees`,
+      button: {
+        text: `Order Now`,
+        url: `/`,
+      }
     }
   }
 

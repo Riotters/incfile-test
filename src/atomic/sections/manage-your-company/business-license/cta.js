@@ -28,7 +28,7 @@ const CtaSection = ({ className, content }) => (
         <ImageContent image="registered-agents-3" imageWidth="515">
             <Heading size="2">{content.header}</Heading>
             <Paragraph big>{content.text}</Paragraph>
-            <Button content={content.button[0]} theme="primary56" margin="0 auto 0 0" arrow />
+            <Button content={content.button} theme="primary56" margin="0 auto 0 0" arrow />
         </ImageContent>
     </Cta>
 );

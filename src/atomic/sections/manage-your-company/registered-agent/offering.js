@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import parser from "html-react-parser";
 import { color } from "../../../atoms/styles/colors"
 import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";
@@ -38,11 +39,11 @@ const OfferingSection = ({ className, content }) => (
                 <CurveSVG />
             </Curve>
             <Heading size="2" maxWidth="770" bottomMargin="80">{content.header}</Heading>
-            <Paragraph big maxWidth="770" bottomMargin="104">{content.text}</Paragraph>
+            <Paragraph big maxWidth="770" bottomMargin="104" mixed={true}>{parser(content.text)}</Paragraph>
             <Heading size="3" maxWidth="770" bottomMargin="40">{content.header2}</Heading>
             <Cards content={content.cards} />
-            <Paragraph big maxWidth="770">{content.text2}</Paragraph>
-            <Paragraph big maxWidth="770">{content.text3}</Paragraph>
+            <Paragraph big maxWidth="770" mixed={true}>{parser(content.text2)}</Paragraph>
+            <Paragraph big maxWidth="770" mixed={true}>{parser(content.text3)}</Paragraph>
         </ContentCenter>
   </Offering>
   );

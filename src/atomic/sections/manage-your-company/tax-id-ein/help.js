@@ -48,7 +48,16 @@ const HelpSection = ({ className, content }) => (
     <Oval className="oval" height="570" width="570" y="20" bottom="0" right="0">
       <Oval2SVG />
     </Oval>
-    <ContentObject object={<Card className="card" headline="TAX ID / EIN" content={content.card} image="entity-comparison-9288" />}>
+    <ContentObject object={
+      <Card
+        className="card"
+        headline="TAX ID / EIN"
+        content={content.card}
+        image="entity-comparison-9288"
+        orderPage="/ein-form.php"
+      />
+      }
+    >
       <TextWrapper>
         <Curve top="-15" topXL="-5" right="-20" rightXL="110" color={color.blue1}>
           <CurveSVG />

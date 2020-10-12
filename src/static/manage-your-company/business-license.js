@@ -6,7 +6,7 @@ export const top = {
     button: [
       {
         text: 'Get started',
-        url: "/",
+        url: `${process.env.ORDER_URL}/order-business-license`,
       }
     ]
   }
@@ -24,7 +24,7 @@ export const about = {
         text:
             `Get the Business License Research package`,
         url:
-            `/`,
+            `${process.env.ORDER_URL}/order-business-license`,
     },
     box: {
         header:
@@ -33,11 +33,11 @@ export const about = {
             `A business license authorizes a company to "do business" in a certain geographical jurisdiction. It is a certificate that authenticates your company is properly registered with the particular county or city in which your office(s) are located.`,
         },
     text3: 
-        `The cost and policies governing an LLC do vary from state to state. Check out our LLC State Information resource for additional info on your state.`,
-    link: {
-        text: 'Let Incfile do the dissolution paperwork for you',
-        url: '/',
-    },
+        `When you apply for a business license, keep in mind that there are instances with certain types of businesses and certain locations that require additional paperwork for permits. We discuss both the types of licenses and permits below. If you'd like to research your license and permit requirements yourself, you can get started with <a href="/business-license-tool/">Incfile's Business License Search Tool</a>, which will tell you the basic requirements for your state and industry.`,
+    // link: {
+    //     text: 'Let Incfile do the dissolution paperwork for you',
+    //     url: '/',
+    // },
     header2: 
         `What Licenses Does My Business Need?`,
     text4: 
@@ -69,13 +69,13 @@ export const about = {
             text:
                 `Have Incfile research for you`,
             url:
-                `/`,
+                `${process.env.ORDER_URL}/order-business-license`,
         },
         {
             text:
                 `Do the research yourself`,
             url:
-                `/`,
+                `/business-license-tool/`,
         },
     ],
     header4: 
@@ -97,7 +97,7 @@ export const about = {
                 text:
                     `Nearest Small Business Development Center (SBDC).`,
                 url:
-                    `/`,
+                    `https://americassbdc.org/`,
             },
         },
         {
@@ -117,7 +117,7 @@ export const requirements = {
         text:
             `Business License Research Package`,
         url:
-            `/`,
+            `${process.env.ORDER_URL}/order-business-license`,
     },
 }
 
@@ -148,7 +148,7 @@ export const cta = {
         text:
             `Start your business with us, today!`,
         url:
-            `#`
+            `${process.env.ORDER_URL}/order-business-license`,
     },
 }
 

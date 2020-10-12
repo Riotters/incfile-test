@@ -6,7 +6,7 @@ export const top = {
     button: [
       {
         text: 'Sign up now',
-        url: '#',
+        url: `${process.env.ORDER_URL}/ra-form.php`,
       }
     ]
 }
@@ -79,9 +79,9 @@ export const includes = {
       Set yourself up for success with a Registered Agent looking out for you. Join the Incfile community of entrepreneurs.`,
     link: {
         text: 
-            `Learn more`,
+            `Sign Up Now`,
         url: 
-            `#`
+            `${process.env.ORDER_URL}/ra-form.php`
     }
 }
 
@@ -89,7 +89,7 @@ export const offering = {
     header:
       `Why Is Incfile Offering a Free Registered Agent?`,
     text:
-      `Incfile already offers free LLC and other business formation—why is a free Registered Agent, included, too? Generally brands seek to find ways to charge you more for products and services. Incfile approaches things differently. 
+      `Incfile already offers <a href="/free-llc/">free LLC</a> and other business formation—why is a free Registered Agent, included, too? Generally brands seek to find ways to charge you more for products and services. Incfile approaches things differently. 
       Why? Because we care greatly about nurturing and supporting entrepreneurship. We believe entrepreneurs are the driving force behind our economy's growth by creating clever solutions to solve the world's problems.`,
     header2:
         `The Incfile package`,

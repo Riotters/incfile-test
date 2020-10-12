@@ -1,20 +1,20 @@
 import React from "react";
-import Layout from "../../components/layout";
-import SEO from "../../components/seo";
-import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
-import Button from "../../atomic/molecules/buttons/button";
-import RatingRow from "../../atomic/atoms/boxes/rating-row";
-import CartBlock from "../../atomic/molecules/blocks/cart-block";
-import RatingBlock from "../../atomic/molecules/blocks/rating-block";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import Buttonsbox from "../atomic/atoms/boxes/top-buttons-box";
+import Button from "../atomic/molecules/buttons/button";
+import RatingRow from "../atomic/atoms/boxes/rating-row";
+import CartBlock from "../atomic/molecules/blocks/cart-block";
+import RatingBlock from "../atomic/molecules/blocks/rating-block";
 
 //Sections
-import Top from "../../atomic/partials/top";
-import DecidingSection from "../../atomic/sections/why-choose-incfile/deciding";
-import ChooseLists from "../../atomic/sections/why-choose-incfile/choose-lists";
-import Rocket from "../../atomic/sections/review-entity-types/c-corporation/rocket";
+import Top from "../atomic/partials/top";
+import DecidingSection from "../atomic/sections/why-choose-incfile/deciding";
+import ChooseLists from "../atomic/sections/why-choose-incfile/choose-lists";
+import Rocket from "../atomic/sections/review-entity-types/c-corporation/rocket";
 
 //Texts
-import { seo, hero, deciding, whyChoose, rocket } from "../../static/other/why-choose-incfile";
+import { seo, hero, deciding, whyChoose, rocket } from "../static/other/why-choose-incfile";
 
 const WhyChooseIncfile = () => (
   <Layout>
