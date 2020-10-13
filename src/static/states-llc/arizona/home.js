@@ -790,6 +790,29 @@ export const registeredAgent = [
   },
   {
     type: `header`,
+    content: `Acting as Your Own Statutory Agent for Your AZ LLC`,
+    size: 3,
+    marginBottom: 20,
+  },
+  {
+    type: `text`,
+    content: `If you have an address in Arizona, you can choose to be the Statutory Agent for your LLC. We don’t recommend this approach as there can be some drawbacks:`,
+    marginBottom: 20,
+  },
+  {
+    type: `list-dot`,
+    content: {
+      header: ``,
+      list: [`The AZ Statutory Agent must have a physical street address in Arizona. If you’re forming an LLC outside AZ, you will need to use an in-state Statutory Agent.`,
+             `You always need to have someone on hand during business hours at the Arizona address to sign for important documents.`, 
+             `The AZ Statutory Agent’s name and address are part of the public record and available through the Arizona Corporation Commission's website. If you would prefer your name and address aren’t published, you might choose to use a Statutory/Registered Agent service instead.`,
+             `If you change your Arizona business address or move out of state, you would need to file additional documentation with the AZ Corporation Commission for the new address if you act as your own Statutory Agent. This would not be the case if you use a Statutory/Registered Agent service, making a move or address change much simpler.`],
+    },
+    marginBottom: 30,
+    color: color.yellow3,
+  },
+  {
+    type: `header`,
     content: `FAQs About Arizona Statutory Agents`,
     size: 3,
     marginBottom: 20,
