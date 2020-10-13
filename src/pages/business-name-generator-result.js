@@ -1,24 +1,24 @@
 import React from "react";
-import SEO from "../../components/seo";
-import Layout from "../../components/layout";
+import SEO from "../components/seo";
+import Layout from "../components/layout";
 
 import { Link } from "gatsby";
-import ContentCenter from "../../atomic/partials/content-center";
-import Searchbar from "../../atomic/sections/other/business-name-generator/search-bar";
-import ShapeCurve from "../../atomic/atoms/shapes/curve";
-import { color } from "../../atomic/atoms/styles/colors";
-import RelativeElement from "../../atomic/elements/relative-e";
-import AbsoluteShapCure from "../../atomic/elements/absolute-shape-curve-e";
+import ContentCenter from "../atomic/partials/content-center";
+import Searchbar from "../atomic/sections/other/business-name-generator/search-bar";
+import ShapeCurve from "../atomic/atoms/shapes/curve";
+import { color } from "../atomic/atoms/styles/colors";
+import RelativeElement from "../atomic/elements/relative-e";
+import AbsoluteShapCure from "../atomic/elements/absolute-shape-curve-e";
 import ArrowLeft from "../../images/arrow-circle.inline.svg";
-import Oval from "../../atomic/atoms/icons/oval";
+import Oval from "../atomic/atoms/icons/oval";
 import OvalSVG from "../../images/ovals/top-left-transparent-orange2.inline.svg";
 import OvalSVG2 from "../../images/ovals/bottom-right-transparent-blue2.inline.svg";
 import styled from "styled-components";
-import Container from "../../atomic/container";
+import Container from "../atomic/container";
 
 // text
-import { seo, resultLists } from "../../static/other/business-name-generator";
-import ResultSection from "../../atomic/sections/other/business-name-generator/result-lists";
+import { seo, resultLists } from "../static/other/business-name-generator";
+import ResultSection from "../atomic/sections/other/business-name-generator/result-lists";
 
 const Wrapper = styled.div`
   position: relative;

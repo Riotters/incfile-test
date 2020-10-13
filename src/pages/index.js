@@ -103,21 +103,6 @@ const IndexPage = () => (
         <Link to="/why-choose-incfile">Why Choose Incfile</Link>
         <Link to="/about/">About us</Link>
 
-        <h2>Forms</h2>
-        <Link to="/forms/fictitious-business-name">Assumed Business Name</Link>
-        <Link to="/forms/amendment">Articles of Amendment</Link>
-        <Link to="/forms/cert-good-standing">Certificate of Good Standing</Link>
-        <Link to="/forms/dissolution">Articles of Dissolution</Link>
-        <Link to="/forms/change-agent">Change of Registered Agent</Link>
-        <Link to="/forms/trademark">Trademark Form</Link>
-        <Link to="/forms/s-corp-election-form">S Corporation Tax Election with Form 2553</Link>
-        <Link to="/forms/order-business-license">Business License Research Package</Link>
-        <Link to="/forms/ra-form">Registered Agent Service</Link>
-        <Link to="/forms/ein-form">Federal Employer Identification Number (EIN) / Tax ID Number</Link>
-        <Link to="/forms/kit-info">Corporate / LLC Kit</Link>
-        <Link to="/forms/annual-report">Annual Report</Link>
-        <Link to="/forms/foreign-qual">Foreign Qualification</Link>
-
         <h2>Manage Your Company</h2>
         <Link to="/manage-your-company/">Manage your company</Link>
         <Link to="/manage-your-company/annual-report/">Annual report</Link>
@@ -203,28 +188,26 @@ const IndexPage = () => (
         <Link to="/entity-search/texas-entity-search">Texas Entity Search</Link>
 
         <h2>Other</h2>
-        <Link to="/other/form-an-llc">Form An LLC (WIP)</Link>
-        <Link to="/other/form-your-corporation">Form Your Corporation</Link>
-        <Link to="/other/start-an-llc">Start An LLC (no details)</Link>
-        <Link to="/other/general-research-topics">General Research Topics</Link>
-        <Link to="/other/incfile-coupon-promo-code">Incfile Coupon Promo Code</Link>
-        <Link to="/how-it-works">How It Works</Link>
-        <Link to="/free-llc">Free LLC</Link>
+        <Link to="/form-an-llc/">Form An LLC (WIP)</Link>
+        <Link to="/form-your-corporation/">Form Your Corporation</Link>
+        <Link to="/form-an-llc-bk/">Start An LLC (no details)</Link>
+        <Link to="/general-research-topics/">General Research Topics</Link>
+        <Link to="/incfile-coupon-promo-code/">Incfile Coupon Promo Code</Link>
+        <Link to="/how-it-works/">How It Works</Link>
+        <Link to="/free-llc/">Free LLC</Link>
         <Link to="/incfile-reviews/">Customer Service Reviews</Link>
         <Link to="/reviews/">Testimonials</Link>
-        <Link to="/dashboard">Dashboard Login</Link>
-        <Link to="/other/arizona-publication-newspaper-list">Arizona Publication Newspaper List</Link>
-        <Link to="/other/after-forming-llc">After Forming LLC</Link>
-        <Link to="/other/business-name-generator">Business Name Generator</Link>
-        <Link to="/other/affiliates">Affiliates</Link>
-        <Link to="/other/incorporate">Incorporate now</Link>
-        <Link to="/other/thank-you-page/">Thank You Page</Link>
+        <Link to="/arizona-publication-newspaper-list/">Arizona Publication Newspaper List</Link>
+        <Link to="/after-forming-llc/">After Forming LLC</Link>
+        <Link to="/business-name-generator/">Business Name Generator</Link>
+        <Link to="/affiliates">Affiliates</Link>
+        <Link to="/incorporate">Incorporate now</Link>
         <Link to="/404">404</Link>
         <Link to="/503">503</Link>
-        <Link to="/privacy-policy">Privacy policy</Link>
-        <Link to="/cancellation-policy">Cancellation policy</Link>
-        <Link to="/legal-disclaimer">Legal disclaimer</Link>
-        <Link to="/glossary">Glossary</Link>
+        <Link to="/privacy-policy/">Privacy policy</Link>
+        <Link to="/cancellation-policy/">Cancellation policy</Link>
+        <Link to="/legal-disclaimer/">Legal disclaimer</Link>
+        <Link to="/glossary/">Glossary</Link>
 
         <h2>Research Topics</h2>
         <Link to="/research-topics/business-taxes">Business taxes</Link>

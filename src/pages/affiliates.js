@@ -1,17 +1,17 @@
 import React from "react";
-import Layout from "../../components/layout";
+import Layout from "../components/layout";
 import styled from "styled-components";
-import SEO from "../../components/seo";
+import SEO from "../components/seo";
 //Sections
-import Top from "../../atomic/partials/top";
-import Button from "../../atomic/molecules/buttons/button";
-import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
+import Top from "../atomic/partials/top";
+import Button from "../atomic/molecules/buttons/button";
+import Buttonsbox from "../atomic/atoms/boxes/top-buttons-box";
 import OvalSVG from "../../images/ovals/bottom-left-transparent-green3.inline.svg";
 
-import {affiliates, payouts, top} from "../../static/other/affiliates";
-import HowItWorksSection from "../../atomic/sections/other/affiliates/how-it-works";
-import EnjoyHighestPayouts from "../../atomic/sections/other/affiliates/enjoy-highest-payouts";
-import Oval from "../../atomic/atoms/icons/oval";
+import {affiliates, payouts, top} from "../static/other/affiliates";
+import HowItWorksSection from "../atomic/sections/other/affiliates/how-it-works";
+import EnjoyHighestPayouts from "../atomic/sections/other/affiliates/enjoy-highest-payouts";
+import Oval from "../atomic/atoms/icons/oval";
 
 const Wrapper = styled.div`
     .oval {

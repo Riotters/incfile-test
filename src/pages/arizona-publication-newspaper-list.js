@@ -1,14 +1,14 @@
 import React from "react";
-import Layout from "../../components/layout";
-import SEO from "../../components/seo";
-import RatingRow from "../../atomic/atoms/boxes/rating-row";
-import CartBlock from "../../atomic/molecules/blocks/cart-block";
-import RatingBlock from "../../atomic/molecules/blocks/rating-block";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import RatingRow from "../atomic/atoms/boxes/rating-row";
+import CartBlock from "../atomic/molecules/blocks/cart-block";
+import RatingBlock from "../atomic/molecules/blocks/rating-block";
 //Sections
-import Top from "../../atomic/partials/top";
-import Listings from "../../atomic/sections/other/arizona-publication-newspaper-list/listings";
+import Top from "../atomic/partials/top";
+import Listings from "../atomic/sections/other/arizona-publication-newspaper-list/listings";
 //Texts
-import { top, listings, start, industry, isCatch } from "../../static/other/arizona-publication-newspaper-list";
+import { top, listings, start, industry, isCatch } from "../static/other/arizona-publication-newspaper-list";
 
 const GeneralResearchTopics = () => (
   <Layout>
