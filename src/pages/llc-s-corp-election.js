@@ -126,7 +126,7 @@ const Savings = <TotalSavings />;
 
 const CorpElection = () => (
   <Layout>
-    <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
+    <SEO title="Have Your LLC Taxed as an S Corp - S Corp Election Form 2553" description="Reduce the tax you pay by having your LLC treated as an S Corp for tax purposes. Learn more about how to file IRS form 2553 - or have us file for you!" />
     <Top imageName="mrs-bulb-business-taxes" imageAlt="Mrs Bulb checking forms on notebook" ovalColor="sun">
       <h1>{top.header}</h1>
       <p>{top.text}</p>
@@ -200,9 +200,9 @@ const CorpElection = () => (
           <h4>{behalfFile.header2}</h4>
           <p>
             {behalfFile.text2}
-            <a href="#"> {behalfFile.link} </a>
+            <a href={`${process.env.ORDER_URL}/form-order-now.php`}> {behalfFile.link} </a>
             {behalfFile.text3}
-            <a href="#"> {behalfFile.link2} </a>
+            <a href="/research-topics/c-corporation-info/what-is-the-form-2553/"> {behalfFile.link2} </a>
             {behalfFile.text4}
           </p>
         </TopImageBox>
@@ -213,7 +213,7 @@ const CorpElection = () => (
       <TextCenterLayout className="header-1" headline={help.header} />
       <ContentCenter contentWidth="770">
         <H3Text content={help.saveYourTime} />
-        <Button theme="primary56" content={help.button} margin="0 auto" arrow />
+        <Button theme="primary56" content={help.button} margin="48px auto 0 auto" arrow />
       </ContentCenter>
       <TextCenterLayout className="header-2" headline={help.header2} headlineWidth="750" />
       <ContentCenter contentWidth="770">

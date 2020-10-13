@@ -6,7 +6,7 @@ export const top = {
   button: [
     {
       text: 'Order now',
-      url: 'https://www.incfile.com/s-corp-election-form?action=new&type=24',
+      url: `${process.env.ORDER_URL}/kit-info.php`,
     }
   ]
 }
@@ -73,7 +73,7 @@ export const getFormationKit = {
     `The ultimate, best value LLC business starter kit. Order yours today by clicking the button below`,
   button: {
       text: 'Order now',
-      url: "#",
+      url: `${process.env.ORDER_URL}/kit-info.php`,
   },
   header2:
     `Common questions about Business Formation Kit`,
@@ -101,7 +101,7 @@ export const getFormationKit = {
     `Let's Do Business The Official Way.`,
   button2: {
     text: 'Get your kit today',
-    url: "#",
+    url: `${process.env.ORDER_URL}/kit-info.php`,
   },
 }
 

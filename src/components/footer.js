@@ -295,16 +295,16 @@ const Footer = () => (
           <h4>Entity Types</h4>
           <ul>
             <li>
-              <Link to="#">LLC</Link>
+              <Link to="/limited-liability-company/">LLC</Link>
             </li>
             <li>
-              <Link to="#">S-Corporation</Link>
+              <Link to="/what-is-s-corporation/">S-Corporation</Link>
             </li>
             <li>
-              <Link to="#">C-Corporation</Link>
+              <Link to="/what-is-c-corporation/">C-Corporation</Link>
             </li>
             <li>
-              <Link to="#">Nonprofit</Link>
+              <Link to="/what-is-non-profit-corporation/">Nonprofit</Link>
             </li>
           </ul>
         </div>
@@ -312,40 +312,40 @@ const Footer = () => (
           <h4>Services</h4>
           <ul>
             <li>
-              <Link to="#">Registered Agent</Link>
+              <Link to="/manage-your-company/registered-agent/">Registered Agent</Link>
             </li>
             <li>
-              <Link to="#">Annual Report</Link>
+              <Link to="/manage-your-company/annual-report/">Annual Report</Link>
             </li>
             <li>
-              <Link to="#">Certificate Of Good Standing</Link>
+              <Link to="/manage-your-company/certificate-of-good-standing/">Certificate Of Good Standing</Link>
             </li>
             <li>
-              <Link to="#">Change Of Registered Agent</Link>
+              <Link to="/manage-your-company/change-of-registered-agent/">Change Of Registered Agent</Link>
             </li>
             <li>
-              <Link to="#">Foreign Qualification</Link>
+              <Link to="/manage-your-company/foreign-qualification/">Foreign Qualification</Link>
             </li>
             <li>
-              <Link to="#">Amendment</Link>
+              <Link to="/manage-your-company/amendment/">Amendment</Link>
             </li>
             <li>
-              <Link to="#">Dissolution</Link>
+              <Link to="/manage-your-company/dissolution/">Dissolution</Link>
             </li>
             <li>
-              <Link to="#">EIN/Tax ID Number</Link>
+              <Link to="/manage-your-company/tax-id-ein/">EIN/Tax ID Number</Link>
             </li>
             <li>
-              <Link to="#">Business License Search</Link>
+              <Link to="/business-license-research-package/">Business License Search</Link>
             </li>
             <li>
-              <Link to="#">File Business Taxes</Link>
+              <Link to="/business-accounting/">File Business Taxes</Link>
             </li>
             <li>
-              <Link to="#">Fictitious Business Name</Link>
+              <Link to="/fictitious-business-or-trade-name/">Fictitious Business Name</Link>
             </li>
             <li>
-              <Link to="#">File S Corp Tax Election</Link>
+              <Link to="/llc-s-corp-election/">File S Corp Tax Election</Link>
             </li>
           </ul>
         </div>
@@ -353,28 +353,28 @@ const Footer = () => (
           <h4>Quick Links</h4>
           <ul>
             <li>
-              <Link to="#">Home</Link>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="#">Review Entity Types</Link>
+              <Link to="/start-your-company/">Review Entity Types</Link>
             </li>
             <li>
-              <Link to="#">Manage Your Company</Link>
+              <Link to="/manage-your-company/">Manage Your Company</Link>
             </li>
             <li>
-              <Link to="#">Check Order Status</Link>
+              <Link to={`${process.env.ORDER_URL}/dashboard`}>Check Order Status</Link>
             </li>
             <li>
-              <Link to="#">Learn More</Link>
+              <Link to="/learn-more/">Learn More</Link>
             </li>
             <li>
-              <Link to="#">Pricing</Link>
+              <Link to={`${process.env.ORDER_URL}/form-order-now.php`}>Pricing</Link>
             </li>
             <li>
-              <Link to="#">Blog</Link>
+              <Link to="/blog/">Blog</Link>
             </li>
             <li>
-              <Link to="#">About</Link>
+              <Link to="/about/">About</Link>
             </li>
           </ul>
         </div>
@@ -382,28 +382,28 @@ const Footer = () => (
           <h4>Resources</h4>
           <ul>
             <li>
-              <Link to="#">Renew Registered Agent</Link>
+              <Link to={`${process.env.ORDER_URL}/dashboard`}>Renew Registered Agent</Link>
             </li>
             <li>
-              <Link to="#">Filing Times</Link>
+              <Link to="/compare-state-filing-times/">Filing Times</Link>
             </li>
             <li>
-              <Link to="#">Why Choose Us</Link>
+              <Link to="/why-choose-incfile/">Why Choose Us</Link>
             </li>
             <li>
-              <Link to="#">Testimonials</Link>
+              <Link to="/reviews/">Testimonials</Link>
             </li>
             <li>
-              <Link to="#">Entity Comparison Chart</Link>
+              <Link to="/business-entity-comparison/">Entity Comparison Chart</Link>
             </li>
             <li>
-              <Link to="#">LLC State Info</Link>
+              <Link to="/llc-state-information/">LLC State Info</Link>
             </li>
             <li>
-              <Link to="#">Corporation State Info</Link>
+              <Link to="/corporation-state-information/">Corporation State Info</Link>
             </li>
             <li>
-              <Link to="#">Corporate/LLC Kit</Link>
+              <Link to="/manage-your-company/corporatellc-kit/">Corporate/LLC Kit</Link>
             </li>
           </ul>
         </div>
@@ -411,25 +411,25 @@ const Footer = () => (
           <h4>Support</h4>
           <ul>
             <li>
-              <Link to="#">Contact</Link>
+              <Link to="/contact/new-sales/">Contact</Link>
             </li>
             <li>
-              <Link to="#">Affiliates</Link>
+              <Link to="/affiliates/">Affiliates</Link>
             </li>
             <li>
-              <Link to="#">Sitemap</Link>
+              <Link to="/sitemap/">Sitemap</Link>
             </li>
             <li>
-              <Link to="#">Cancellation Policy</Link>
+              <Link to="/cancellation-policy/">Cancellation Policy</Link>
             </li>
             <li>
-              <Link to="#">Privacy Policy</Link>
+              <Link to="/privacy-policy/">Privacy Policy</Link>
             </li>
             <li>
-              <Link to="#">Legal Disclaimer</Link>
+              <Link to="/disclaimer/">Legal Disclaimer</Link>
             </li>
             <li>
-              <Link to="#">Glossary</Link>
+              <Link to="/glossary/">Glossary</Link>
             </li>
           </ul>
         </div>
@@ -440,28 +440,18 @@ const Footer = () => (
         </Copyright>
         <Social>
           <li>
-            <a href="#" title="Facebook">
+            <a href="https://facebook.com/incfile" title="Facebook">
               <FacebookSVG />
             </a>
           </li>
           <li>
-            <a href="#" title="Twitter">
-              <TwitterSVG />
-            </a>
-          </li>
-          <li>
-            <a href="#" title="YouTube">
+            <a href="https://www.youtube.com/channel/UC-hfd-zO8SSMpOgLNYwLAXA" title="YouTube">
               <YoutubeSVG />
             </a>
           </li>
           <li>
-            <a href="#" title="LinkedIn">
+            <a href="https://www.linkedin.com/company/incfile-com/" title="LinkedIn">
               <LinkedinSVG />
-            </a>
-          </li>
-          <li>
-            <a href="#" title="Pinterest">
-              <PinterestSVG />
             </a>
           </li>
         </Social>

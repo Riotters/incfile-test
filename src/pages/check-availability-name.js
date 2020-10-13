@@ -42,7 +42,7 @@ const CheckAvailabilityName = ({ location }) => {
   let entityName = '';
 
   if (typeof window !== `undefined`) {
-    entityName = location.state.entityName;
+    entityName = location.state?.entityName;
   }
   return (
     <Layout>

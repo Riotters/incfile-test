@@ -4,7 +4,7 @@ export const top = {
   button: [
     {
       text: "File your S Corp Tax Election",
-      url: "https://www.incfile.com/s-corp-election-form?action=new&type=24",
+      url: `${process.env.ORDER_URL}/s-corp-election-form?action=new&type=24`,
     },
   ],
 };
@@ -18,7 +18,7 @@ export const about = {
   button: [
     {
       text: "Let Incfile help you file your s corporation tax election",
-      url: "/",
+      url: `${process.env.ORDER_URL}/s-corp-election-form?action=new&type=24`,
     },
   ],
 };
@@ -61,7 +61,7 @@ export const taxCalculator = {
   header2: `Use our S Corporation Tax Calculator to view your potential tax savings`,
   link: {
     text: `Go to our S Corporation Tax Calculator`,
-    url: `#`,
+    url: `/s-corporation-tax-calculator/`,
   },
   header3: `What’s your estimated yearly net income for the business?`,
   income: `72,000`,
@@ -118,7 +118,7 @@ export const behalfFile = {
   text4: `after that.`,
   button: {
     text: `Help me file my S Corporation tax election today!`,
-    url: `#`,
+    url: `${process.env.ORDER_URL}/s-corp-election-form?action=new&type=24`,
   },
 };
 
@@ -130,7 +130,7 @@ export const help = {
   },
   button: {
     text: `Help me file my S Corporation tax election today!`,
-    url: `#`,
+    url: `${process.env.ORDER_URL}/s-corp-election-form?action=new&type=24`,
   },
   header2: `Common Questions About Filing Your S Corporation Tax Election`,
 };
@@ -149,7 +149,7 @@ export const faq = {
         },
         {
           text: `handy calculator`,
-          url: `https://www.incfile.com/s-corporation-tax-calculator/`,
+          url: `/s-corporation-tax-calculator/`,
         },
         {
           text: `that shows you exactly how much you could reduce your self-employment tax burden.`,
@@ -164,7 +164,7 @@ export const faq = {
         },
         {
           text: `This article`,
-          url: "https://www.incfile.com/research-topics/c-corporation-info/form-2553/",
+          url: "/research-topics/c-corporation-info/form-2553/",
         },
         {
           text: `gives you all the details you need.`,
