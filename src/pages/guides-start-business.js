@@ -1,18 +1,18 @@
 import React from "react";
-import Layout from "../../components/layout";
-import SEO from "../../components/seo";
-import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
-import Button from "../../atomic/molecules/buttons/button";
-import RatingRow from "../../atomic/atoms/boxes/rating-row";
-import CartBlock from "../../atomic/molecules/blocks/cart-block";
-import RatingBlock from "../../atomic/molecules/blocks/rating-block";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import Buttonsbox from "../atomic/atoms/boxes/top-buttons-box";
+import Button from "../atomic/molecules/buttons/button";
+import RatingRow from "../atomic/atoms/boxes/rating-row";
+import CartBlock from "../atomic/molecules/blocks/cart-block";
+import RatingBlock from "../atomic/molecules/blocks/rating-block";
 //Sections
-import Top from "../../atomic/partials/top";
-import About from "../../atomic/sections/learning-center-entity/guide-to-start/about";
-import TableOfContent from "../../atomic/sections/learning-center-entity/guide-to-start/table-of-content";
-import NeedMore from "../../atomic/sections/learning-center-entity/guide-to-start/need-more";
+import Top from "../atomic/partials/top";
+import About from "../atomic/sections/learning-center-entity/guide-to-start/about";
+import TableOfContent from "../atomic/sections/learning-center-entity/guide-to-start/table-of-content";
+import NeedMore from "../atomic/sections/learning-center-entity/guide-to-start/need-more";
 //Texts
-import { top, about, tableOfContent, needMore } from "../../static/learning-center-entity/guide-to-start";
+import { top, about, tableOfContent, needMore } from "../static/learning-center-entity/guide-to-start";
 
 const GuideToStart = () => (
   <Layout>

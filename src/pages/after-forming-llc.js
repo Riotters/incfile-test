@@ -1,15 +1,15 @@
 import React from "react";
-import Layout from "../../components/layout";
-import SEO from "../../components/seo";
-import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
-import Button from "../../atomic/molecules/buttons/button";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import Buttonsbox from "../atomic/atoms/boxes/top-buttons-box";
+import Button from "../atomic/molecules/buttons/button";
 //Sections
-import Top from "../../atomic/partials/top";
-import About from "../../atomic/sections/other/after-forming-llc/about";
-import Guide from "../../atomic/sections/other/after-forming-llc/guide";
-import Articles from "../../atomic/sections/articles";
+import Top from "../atomic/partials/top";
+import About from "../atomic/sections/other/after-forming-llc/about";
+import Guide from "../atomic/sections/other/after-forming-llc/guide";
+import Articles from "../atomic/sections/articles";
 //Texts
-import { top, about, guide } from "../../static/other/after-forming-llc";
+import { top, about, guide } from "../static/other/after-forming-llc";
 
 const AfterForming = () => (
   <Layout>

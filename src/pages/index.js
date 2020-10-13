@@ -103,21 +103,6 @@ const IndexPage = () => (
         <Link to="/why-choose-incfile">Why Choose Incfile</Link>
         <Link to="/about/">About us</Link>
 
-        <h2>Forms</h2>
-        <Link to="/forms/fictitious-business-name">Assumed Business Name</Link>
-        <Link to="/forms/amendment">Articles of Amendment</Link>
-        <Link to="/forms/cert-good-standing">Certificate of Good Standing</Link>
-        <Link to="/forms/dissolution">Articles of Dissolution</Link>
-        <Link to="/forms/change-agent">Change of Registered Agent</Link>
-        <Link to="/forms/trademark">Trademark Form</Link>
-        <Link to="/forms/s-corp-election-form">S Corporation Tax Election with Form 2553</Link>
-        <Link to="/forms/order-business-license">Business License Research Package</Link>
-        <Link to="/forms/ra-form">Registered Agent Service</Link>
-        <Link to="/forms/ein-form">Federal Employer Identification Number (EIN) / Tax ID Number</Link>
-        <Link to="/forms/kit-info">Corporate / LLC Kit</Link>
-        <Link to="/forms/annual-report">Annual Report</Link>
-        <Link to="/forms/foreign-qual">Foreign Qualification</Link>
-
         <h2>Manage Your Company</h2>
         <Link to="/manage-your-company/">Manage your company</Link>
         <Link to="/manage-your-company/annual-report/">Annual report</Link>
@@ -147,13 +132,13 @@ const IndexPage = () => (
         <h2>Learning Center Entity</h2>
         <Link to="/learning-center-entity/help-center">Help Center</Link>
         <Link to="/learning-center-entity/help-center-article">Help Center Article</Link>
-        <Link to="/learning-center-entity/comparison-chart">Comparison Chart</Link>
+        <Link to="/business-entity-comparison/">Comparison Chart</Link>
         <Link to="/business-checklist">Business Checklist (WIP)</Link>
         <Link to="/learning-center-entity/annual-report">Annual Report Due Date</Link>
         <Link to="/business-license-tool/">Business License Tools (no API)</Link>
-        <Link to="/learning-center-entity/start-a-business">Business Startup Guides (no details)</Link>
-        <Link to="/learning-center-entity/guide-to-start">Guide To Start</Link>
-        <Link to="/learning-center-entity/registered-agents">Registered Agents</Link>
+        <Link to="/start-a-business/">Business Startup Guides (no details)</Link>
+        <Link to="/guides-start-business/">Guide To Start a Business</Link>
+        <Link to="/registered-agents/">Registered Agents</Link>
         <Link to="/learning-center-entity/s-corp-tax-calculator">S Corp Tax Calculator (WIP)</Link>
         <Link to="/learning-center-entity/sales-tax-calculator">Sales Tax Calculator</Link>
         <Link to="/learning-center-entity/state-filing-times">State Filing Times (no details)</Link>
@@ -203,28 +188,26 @@ const IndexPage = () => (
         <Link to="/entity-search/texas-entity-search">Texas Entity Search</Link>
 
         <h2>Other</h2>
-        <Link to="/other/form-an-llc">Form An LLC (WIP)</Link>
-        <Link to="/other/form-your-corporation">Form Your Corporation</Link>
-        <Link to="/other/start-an-llc">Start An LLC (no details)</Link>
-        <Link to="/other/general-research-topics">General Research Topics</Link>
-        <Link to="/other/incfile-coupon-promo-code">Incfile Coupon Promo Code</Link>
-        <Link to="/how-it-works">How It Works</Link>
-        <Link to="/free-llc">Free LLC</Link>
+        <Link to="/form-an-llc/">Form An LLC (WIP)</Link>
+        <Link to="/form-your-corporation/">Form Your Corporation</Link>
+        <Link to="/form-an-llc-bk/">Start An LLC (no details)</Link>
+        <Link to="/general-research-topics/">General Research Topics</Link>
+        <Link to="/incfile-coupon-promo-code/">Incfile Coupon Promo Code</Link>
+        <Link to="/how-it-works/">How It Works</Link>
+        <Link to="/free-llc/">Free LLC</Link>
         <Link to="/incfile-reviews/">Customer Service Reviews</Link>
         <Link to="/reviews/">Testimonials</Link>
-        <Link to="/dashboard">Dashboard Login</Link>
-        <Link to="/other/arizona-publication-newspaper-list">Arizona Publication Newspaper List</Link>
-        <Link to="/other/after-forming-llc">After Forming LLC</Link>
-        <Link to="/other/business-name-generator">Business Name Generator</Link>
-        <Link to="/other/affiliates">Affiliates</Link>
-        <Link to="/other/incorporate">Incorporate now</Link>
-        <Link to="/other/thank-you-page/">Thank You Page</Link>
+        <Link to="/arizona-publication-newspaper-list/">Arizona Publication Newspaper List</Link>
+        <Link to="/after-forming-llc/">After Forming LLC</Link>
+        <Link to="/business-name-generator/">Business Name Generator</Link>
+        <Link to="/affiliates">Affiliates</Link>
+        <Link to="/incorporate">Incorporate now</Link>
         <Link to="/404">404</Link>
         <Link to="/503">503</Link>
-        <Link to="/privacy-policy">Privacy policy</Link>
-        <Link to="/cancellation-policy">Cancellation policy</Link>
-        <Link to="/legal-disclaimer">Legal disclaimer</Link>
-        <Link to="/glossary">Glossary</Link>
+        <Link to="/privacy-policy/">Privacy policy</Link>
+        <Link to="/cancellation-policy/">Cancellation policy</Link>
+        <Link to="/legal-disclaimer/">Legal disclaimer</Link>
+        <Link to="/glossary/">Glossary</Link>
 
         <h2>Research Topics</h2>
         <Link to="/research-topics/business-taxes">Business taxes</Link>
@@ -363,47 +346,47 @@ const IndexPage = () => (
         <Link to="/article">Article (no API)</Link>
 
         <h2>Type of Business</h2>
-        <Link to="/type-of-business/airbnb">Airbnb</Link>
-        <Link to="/type-of-business/coach">Coach</Link>
-        <Link to="/type-of-business/moving-company">Moving Company</Link>
-        <Link to="/type-of-business/boutique-clothing-business">Boutique Clothing Business</Link>
-        <Link to="/type-of-business/social-media-influencer">Social Media Influencer</Link>
-        <Link to="/type-of-business/etsy-business">Etsy Business</Link>
-        <Link to="/type-of-business/amazon-business">Amazon Business</Link>
-        <Link to="/type-of-business/daycare-business">Daycare business</Link>
-        <Link to="/type-of-business/travel-agency">Travel Agency</Link>
-        <Link to="/type-of-business/construction-company">Construction Company</Link>
-        <Link to="/type-of-business/publishing-company-business">Publishing Company Business</Link>
-        <Link to="/type-of-business/tshirt-business">T-Shirt Business</Link>
-        <Link to="/type-of-business/food-truck-business">Food Truck Business</Link>
-        <Link to="/type-of-business/gym-personal-training">Gym Personal Training</Link>
-        <Link to="/type-of-business/real-estate-business">Real Estate Business</Link>
-        <Link to="/type-of-business/digital-nomad">Digital Nomad</Link>
-        <Link to="/type-of-business/beauty-salon">Beauty Salon</Link>
-        <Link to="/type-of-business/cleaning-business">Cleaning Business</Link>
-        <Link to="/type-of-business/catering-business">Catering Business</Link>
-        <Link to="/type-of-business/unique-business">Unique Business</Link>
-        <Link to="/type-of-business/handyman">Handyman</Link>
-        <Link to="/type-of-business/bar-nightclub">Bar Nightclub</Link>
-        <Link to="/type-of-business/side-business">Side Business</Link>
-        <Link to="/type-of-business/franchise-business">Franchise Business</Link>
-        <Link to="/type-of-business/event-planning">Event Planning</Link>
-        <Link to="/type-of-business/online-business">Online Business</Link>
-        <Link to="/type-of-business/teen-business">Teen Business</Link>
-        <Link to="/type-of-business/consulting-business">Consulting Business</Link>
-        <Link to="/type-of-business/with-no-money-business">With No Money Business</Link>
-        <Link to="/type-of-business/photography-business">Photography Business</Link>
-        <Link to="/type-of-business/women-business">Women Business</Link>
-        <Link to="/type-of-business/restaurant-business">Restaurant Business</Link>
-        <Link to="/type-of-business/summer-business">Summer Business</Link>
-        <Link to="/type-of-business/dog-walking">Dog Walking</Link>
-        <Link to="/type-of-business/brewery-business">Brewery Business</Link>
-        <Link to="/type-of-business/blockchain">Blockchain</Link>
-        <Link to="/type-of-business/bookstore">Bookstore</Link>
-        <Link to="/type-of-business/bed-and-breakfast">Bed and Breakfast</Link>
-        <Link to="/type-of-business/laundromat">Laundromat</Link>
-        <Link to="/type-of-business/landscaping-business">Landscaping Business</Link>
-        <Link to="/type-of-business/home-business">Home Business</Link>
+        <Link to="/start-a-business/airbnb">Airbnb</Link>
+        <Link to="/start-a-business/coach">Coach</Link>
+        <Link to="/start-a-business/moving-company">Moving Company</Link>
+        <Link to="/start-a-business/boutique-clothing-business">Boutique Clothing Business</Link>
+        <Link to="/start-a-business/social-media-influencer">Social Media Influencer</Link>
+        <Link to="/start-a-business/etsy-business">Etsy Business</Link>
+        <Link to="/start-a-business/amazon-business">Amazon Business</Link>
+        <Link to="/start-a-business/daycare-business">Daycare business</Link>
+        <Link to="/start-a-business/travel-agency">Travel Agency</Link>
+        <Link to="/start-a-business/construction-company">Construction Company</Link>
+        <Link to="/start-a-business/publishing-company-business">Publishing Company Business</Link>
+        <Link to="/start-a-business/tshirt-business">T-Shirt Business</Link>
+        <Link to="/start-a-business/food-truck-business">Food Truck Business</Link>
+        <Link to="/start-a-business/gym-personal-training">Gym Personal Training</Link>
+        <Link to="/start-a-business/real-estate-business">Real Estate Business</Link>
+        <Link to="/start-a-business/digital-nomad">Digital Nomad</Link>
+        <Link to="/start-a-business/beauty-salon">Beauty Salon</Link>
+        <Link to="/start-a-business/cleaning-business">Cleaning Business</Link>
+        <Link to="/start-a-business/catering-business">Catering Business</Link>
+        <Link to="/start-a-business/unique-business">Unique Business</Link>
+        <Link to="/start-a-business/handyman">Handyman</Link>
+        <Link to="/start-a-business/bar-nightclub">Bar Nightclub</Link>
+        <Link to="/start-a-business/side-business">Side Business</Link>
+        <Link to="/start-a-business/franchise-business">Franchise Business</Link>
+        <Link to="/start-a-business/event-planning">Event Planning</Link>
+        <Link to="/start-a-business/online-business">Online Business</Link>
+        <Link to="/start-a-business/teen-business">Teen Business</Link>
+        <Link to="/start-a-business/consulting-business">Consulting Business</Link>
+        <Link to="/start-a-business/with-no-money-business">With No Money Business</Link>
+        <Link to="/start-a-business/photography-business">Photography Business</Link>
+        <Link to="/start-a-business/women-business">Women Business</Link>
+        <Link to="/start-a-business/restaurant-business">Restaurant Business</Link>
+        <Link to="/start-a-business/summer-business">Summer Business</Link>
+        <Link to="/start-a-business/dog-walking">Dog Walking</Link>
+        <Link to="/start-a-business/brewery-business">Brewery Business</Link>
+        <Link to="/start-a-business/blockchain">Blockchain</Link>
+        <Link to="/start-a-business/bookstore">Bookstore</Link>
+        <Link to="/start-a-business/bed-and-breakfast">Bed and Breakfast</Link>
+        <Link to="/start-a-business/laundromat">Laundromat</Link>
+        <Link to="/start-a-business/landscaping-business">Landscaping Business</Link>
+        <Link to="/start-a-business/home-business">Home Business</Link>
 
         <h2>Additional sites</h2>
         <Link to="/components">Components</Link>
