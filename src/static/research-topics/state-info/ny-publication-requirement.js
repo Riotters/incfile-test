@@ -82,15 +82,21 @@ export const about = {
     text12: `You’ll need to pay newspapers to publish details about your LLC, and then pay the Department of State to process the Certificate of Publication. The cost of publishing in a daily or weekly newspaper can vary widely, and could be up to $1,000.`,
     header14: `How Soon Do I Need to Publish These Notices?`,
     text13: `You should do so within 120 days of starting your NY LLC.`,
-    header15: `Related Articles`,
-    links2: [
-        {
-          text: `How to Meet New York LLC Publication Requirements`,
-          url: `/state-info/ny-publication-requirement/`,
-        },
-        {
-          text: `How To Publish Your Notice Of Incorporation In Georgia`,
-          url: `/state-info/publish-inc-notice-georgia/`,
-        },
-      ],
-    };
+}
+
+export const related = {
+  header: 
+      `Related Articles`,
+  text:
+      `Other users were also interested in knowing about…`,
+  buttons: [
+      {
+          header: `How to Meet New York LLC Publication Requirements?`,
+          url: `/research-topics/state-info/ny-publication-requirement/`,
+      },
+      {
+          header: `How To Publish Your Notice Of Incorporation In Georgia?`,
+          url: `/research-topics/state-info/publish-inc-notice-georgia/`,
+      },
+    ],
+}

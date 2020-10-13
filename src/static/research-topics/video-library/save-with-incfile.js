@@ -11,19 +11,25 @@ export const about = {
     ],
     header: `Learn How To Save Money With Incfile`, //https://vimeo.com/117685402
     text: `There are a multitude of companies on the web that perform the function of starting new entities. You will pay less to get more value with Incfile, view some distinguishing features that separate us from other companies.`,
-    header2: `Related Articles`,
-    links2: [
+}
+
+export const related = {
+  header: 
+      `Related Articles`,
+  text:
+      `Other users were also interested in knowing about…`,
+  buttons: [
       {
-        text: `How Easy Is Forming an LLC or Corporation`,
-        url: `/research-topics/video-library/forming-llc-or-corp`,
+          header: `How Easy Is Forming an LLC or Corporation?`,
+          url: `/research-topics/business-taxes/sellers-permit`,
       },
       {
-        text: `Protect Your Personal Assets`,
-        url: `/research-topics/video-library/protect-assets`,
+          header: `Protect Your Personal Assets`,
+          url: `/research-topics/business-taxes/minimizing-tax-expenses`,
       },
       {
-        text: `Learn How To Save Money With Incfile`,
-        url: `/research-topics/video-library/save-with-incfile`,
+          header: `Learn How To Save Money With Incfile`,
+          url: `/research-topics/business-taxes/tax-advantages`,
       },
     ],
-  };
+}

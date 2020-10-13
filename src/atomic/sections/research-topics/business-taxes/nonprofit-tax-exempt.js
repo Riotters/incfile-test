@@ -27,12 +27,6 @@ const AboutSection = ({ className, content }) => (
         {content.header}
       </Heading>
       <IconTextColorBox content={content.box} Icon={IconSVG} rounded curve curveColor={color.orange2} bottomMargin="48"/>
-      <Heading size={4} bottomMargin="24">
-        {content.header2}
-      </Heading>
-      {content.links2.map(link => (
-        <ArrowLink content={link} />
-      ))}
     </ImageContent>
   </About>
 );

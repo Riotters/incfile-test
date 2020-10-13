@@ -34,12 +34,6 @@ const AboutSection = ({ className, content }) => (
         {content.text}
       </Paragraph>
       <LightBoxVideo thumbnailVideo="comparison-chart-video-3611" videoID="R_oIgzYh7NU" bottomMargin="48" />
-      <Heading size={3} bottomMargin="24">
-        {content.header2}
-      </Heading>
-      {content.links2.map((link) => (
-        <ArrowLink content={link} />
-      ))}
     </ImageContent>
   </About>
 );
