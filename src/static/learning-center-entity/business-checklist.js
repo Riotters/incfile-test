@@ -1,3 +1,12 @@
+import {color} from "../../atomic/atoms/styles/colors";
+import {shadow} from "../../atomic/atoms/styles/shadows";
+import BusinessName from "../../images/icons/your-business-name.inline.svg";
+import CompanyFormation from "../../images/icons/company-formation.inline.svg";
+import Financials from "../../images/icons/financials.inline.svg";
+import Operations from "../../images/icons/operations.inline.svg";
+import Workforce from "../../images/icons/workforce.inline.svg";
+import Marketing from "../../images/icons/marketing.inline.svg";
+
 export const top = {
   header: `The Complete "Start Your Business" Checklist`,
   text: `A Clear and Comprehensive Guide to Starting Your Business the Right Way`,
@@ -8,9 +17,401 @@ export const top = {
     },
     {
       text: `Download a PDF Checklist`,
-      url: `/`,
+      url: `#`,
     },
   ],
+};
+
+export const form = {
+  header: "Download The Complete Starting a Business Checklist",
+  text: "From developing your business idea to measuring success, our free guide has all the info you need to get your business off the ground.",
+  button: {
+    text: "Download now",
+    url: "/"
+  },
+  fields: [
+    {
+      label: "Email",
+      type: "email",
+      placeholder: "",
+    },
+    {
+      label: "First Name",
+      type: "text",
+      placeholder: "",
+    },
+    {
+      label: "Last Name",
+      type: "text",
+      placeholder: "",
+    },
+    {
+      label: "Phone number",
+      type: "text",
+      placeholder: "",
+    },
+    {
+      label: "I want to...",
+      type: "select",
+      placeholder: "Please select",
+      options: [
+        "Start a Business Soon",
+        "Start a Business Now",
+        "Grow a Business",
+      ]
+    },
+  ]
+};
+
+export const checks = {
+    checklists: [
+      {
+        top: {
+          header: "Your Business Name",
+          background: color.orange2,
+          shadow: shadow.orange2,
+          svg: BusinessName,
+        },
+        items: [
+          {
+            isCompleted: false,
+            id: 0,
+            name: "Register Your Fictitious, Assumed or “Doing Business As” Name if Necessary",
+            height: 0,
+            subcontent: "test"
+          },{
+            isCompleted: false,
+            id: 1,
+            name: "Choose a business name",
+            height: 0,
+            subcontent: "test"
+          },{
+            isCompleted: false,
+            id: 2,
+            name: "Make sure no other business in your state has your name",
+            height: 0,
+            subcontent: "test"
+          },{
+            isCompleted: false,
+            id: 3,
+            name: "Get social media accounts",
+            height: 0,
+            subcontent: "test"
+          },{
+            isCompleted: false,
+            id: 4,
+            name: "Get a Website Domain Name and Email",
+            height: 0,
+            subcontent: "test"
+          },
+        ]
+      },
+      {
+        top: {
+          header: "Company Formation",
+          background: color.purple2,
+          shadow: shadow.purple2,
+          svg: CompanyFormation,
+        },
+        items: [
+          {
+            isCompleted: false,
+            id: 0,
+            name: "Get a Registered Agent for Your Business",
+            height: 0,
+            subcontent: "test"
+          },{
+            isCompleted: false,
+            id: 1,
+            name: "Obtain a Federal Employer Identification Number (EIN)/Tax ID Number",
+            height: 0,
+            subcontent: "test"
+          },{
+            isCompleted: false,
+            id: 2,
+            name: "Trademark Your Business Name",
+            height: 0,
+            subcontent: "test"
+          },{
+            isCompleted: false,
+            id: 3,
+            name: "Satisfy All Business License and Permit Requirements",
+            height: 0,
+            subcontent: "test"
+          },{
+            isCompleted: false,
+            id: 4,
+            name: "Create an Operating Agreement or Corporate Bylaws",
+            height: 0,
+            subcontent: "test"
+          },{
+            isCompleted: false,
+            id: 5,
+            name: "Establish a Company Address or Virtual Mailbox Address",
+            height: 0,
+            subcontent: "test"
+          },{
+            isCompleted: false,
+            id: 6,
+            name: "Get Business Insurance, If Needed",
+            height: 0,
+            subcontent: "test"
+          },{
+            isCompleted: false,
+            id: 7,
+            name: "Choose the Right State to Form Your Business",
+            height: 0,
+            subcontent: "test"
+          },
+        ]
+      },
+      {
+        top: {
+          header: "Financials",
+          background: color.yellow2,
+          shadow: shadow.yellow2,
+          svg: Financials,
+        },
+        items: [
+          {
+            isCompleted: false,
+            id: 0,
+            name: "Open a Business Bank Account",
+            height: 0,
+            subcontent: "test"
+          },{
+            isCompleted: false,
+            id: 1,
+            name: "Get a Business Loan, Financing or Other Funding",
+            height: 0,
+            subcontent: "test"
+          },{
+            isCompleted: false,
+            id: 2,
+            name: "Get a Business Credit Card",
+            height: 0,
+            subcontent: "test"
+          },{
+            isCompleted: false,
+            id: 3,
+            name: "Get an Accountant or Bookkeeper",
+            height: 0,
+            subcontent: "test"
+          },{
+            isCompleted: false,
+            id: 4,
+            name: "Decide If You Want Your LLC Treated as an S Corporation for Tax Purposes",
+            height: 0,
+            subcontent: "test"
+          },{
+            isCompleted: false,
+            id: 5,
+            name: "Decide on Accounting and Invoicing Software",
+            height: 0,
+            subcontent: "test"
+          },{
+            isCompleted: false,
+            id: 6,
+            name: "Understand How to Track Expenses and What's Deductible",
+            height: 0,
+            subcontent: "test"
+          },{
+            isCompleted: false,
+            id: 7,
+            name: "Understand Taxes",
+            height: 0,
+            subcontent: "test"
+          },{
+            isCompleted: false,
+            id: 8,
+            name: "Understand Sales Tax",
+            height: 0,
+            subcontent: "test"
+          },{
+            isCompleted: false,
+            id: 9,
+            name: "Know About the Sales Tax Nexus",
+            height: 0,
+            subcontent: "test"
+          },{
+            isCompleted: false,
+            id: 10,
+            name: "Create Merchant Accounts to Accept Credit Card Payments",
+            height: 0,
+            subcontent: "test"
+          },
+        ]
+      },
+      {
+        top: {
+          header: "Operations",
+          background: color.babyblue2,
+          shadow: shadow.babyblue2,
+          svg: Operations,
+        },
+        items: [
+          {
+            isCompleted: false,
+            id: 0,
+            name: "Get Equipment",
+            height: 0,
+            subcontent: "test"
+          },{
+            isCompleted: false,
+            id: 1,
+            name: "Research and Choose the Best Vendors and Suppliers",
+            height: 0,
+            subcontent: "test"
+          },{
+            isCompleted: false,
+            id: 2,
+            name: "Get the Right Business Software",
+            height: 0,
+            subcontent: "test"
+          },{
+            isCompleted: false,
+            id: 3,
+            name: "Get a Virtual Phone System",
+            height: 0,
+            subcontent: "test"
+          },{
+            isCompleted: false,
+            id: 4,
+            name: "Understand How to Track Expenses and What's Deductible",
+            height: 0,
+            subcontent: "test"
+          },{
+            isCompleted: false,
+            id: 5,
+            name: "Look Into Business Documents, Agreements and Contracts You Might Need",
+            height: 0,
+            subcontent: "test"
+          },{
+            isCompleted: false,
+            id: 6,
+            name: "Connect With Other Entrepreneurs",
+            height: 0,
+            subcontent: "test"
+          },{
+            isCompleted: false,
+            id: 7,
+            name: "Find Office Space",
+            height: 0,
+            subcontent: "test"
+          },
+        ]
+      },
+      {
+        top: {
+          header: "Workforce",
+          background: color.red2,
+          shadow: shadow.red2,
+          svg: Workforce,
+        },
+        items: [
+          {
+            isCompleted: false,
+            id: 0,
+            name: "Decide on a Payroll Service",
+            height: 0,
+            subcontent: "test"
+          },{
+            isCompleted: false,
+            id: 1,
+            name: "Create an Employee Benefits Program",
+            height: 0,
+            subcontent: "test"
+          },{
+            isCompleted: false,
+            id: 2,
+            name: "Establish Your Freelance and On-Demand Workforce Needs",
+            height: 0,
+            subcontent: "test"
+          },{
+            isCompleted: false,
+            id: 3,
+            name: "Establish Your Permanent Workforce Needs",
+            height: 0,
+            subcontent: "test"
+          },{
+            isCompleted: false,
+            id: 4,
+            name: "Learn About Legal Requirements and Responsibilities to Employees",
+            height: 0,
+            subcontent: "test"
+          },
+        ]
+      },
+      {
+        top: {
+          header: "Marketing",
+          background: color.green2,
+          shadow: shadow.green2,
+          svg: Marketing,
+        },
+        items: [
+          {
+            isCompleted: false,
+            id: 0,
+            name: "Get Business Cards",
+            height: 0,
+            subcontent: "test"
+          },{
+            isCompleted: false,
+            id: 1,
+            name: "Create a Branded Email Signature",
+            height: 0,
+            subcontent: "In oculis quidem faciunt, ut labore et via procedat oratio quaerimus igitur, quid bonum esse ratione intellegi posse et molestiae non recusandae itaque negat opus esse appetendum, alterum aspernandum sentiamus alii autem, quibus ego assentior, cum a philosophis compluribus permulta dicantur, cur verear, ne ferae."
+          },{
+            isCompleted: false,
+            id: 2,
+            name: "Build a Company Website",
+            height: 0,
+            subcontent: "test"
+          },{
+            isCompleted: false,
+            id: 3,
+            name: "Use Google Analytics and Google Search Console on Your Website",
+            height: 0,
+            subcontent: "test"
+          },{
+            isCompleted: false,
+            id: 4,
+            name: "Advertise Locally",
+            height: 0,
+            subcontent: "test"
+          },{
+            isCompleted: false,
+            id: 5,
+            name: "Create Your Google Business Profile and Google Maps Listing",
+            height: 0,
+            subcontent: "test"
+          },{
+            isCompleted: false,
+            id: 6,
+            name: "Advertise Online With Google Adwords",
+            height: 0,
+            subcontent: "test"
+          },{
+            isCompleted: false,
+            id: 7,
+            name: "Try Social Media Advertising",
+            height: 0,
+            subcontent: "test"
+          },{
+            isCompleted: false,
+            id: 8,
+            name: "Get a Business Logo Designed",
+            height: 0,
+            subcontent: "test"
+          },
+        ]
+      }
+    ],
+    button: {
+      text: "Download a PDF Checklist",
+      url: "#"
+    }
 };
 
 export const about = {

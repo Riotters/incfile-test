@@ -5,6 +5,8 @@ import styled from "styled-components";
 import LogoSVG from "../images/logo.inline.svg";
 import Button from "./button";
 import DropdownSVG from "../images/dropdown.inline.svg";
+import {color} from "../atomic/atoms/styles/colors";
+import {shadow} from "../atomic/atoms/styles/shadows";
 
 const Wrapper = styled.div`
   display: flex;
@@ -71,21 +73,31 @@ const Menu = styled.ul`
   justify-content: center;
   height: 100%;
   list-style: none;
+  width: 100%;
 
   @media (min-width: 992px) {
     flex-direction: row;
     justify-content: flex-start;
+    width: initial;
   }
 `;
 
 const MenuItem = styled.li`
-  display: flex;
-  align-items: center;
   margin-right: 34px;
   height: 50px;
 
   @media (min-width: 992px) {
     height: 100%;
+  }
+  
+  &:hover > ul, &.active > ul {
+    transition: max-height .5s;
+    max-height: 4000px;
+    padding: 24px 32px;
+    
+    li {
+      display: block;
+    }
   }
 `;
 
@@ -100,7 +112,6 @@ const MenuLink = styled(Link)`
   text-decoration: none;
   padding-right: 10px;
   white-space: nowrap;
-  position: relative;
 
   @media (min-width: 1200px) {
     font-size: 16px;
@@ -134,6 +145,50 @@ const LoginWrapper = styled.div`
         padding: 6px 38px;
       }
     }
+  }
+`;
+
+const FlexRow = styled.div`
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+`;
+
+const DropdownMenu = styled.ul`
+  top: calc(100% + 1px);
+  display: grid;
+  grid-template-columns: auto auto;
+  max-height: 0;
+  padding: 0;
+  z-index: 999;
+  
+  @media screen and (max-width: 992px) {
+    position: relative;
+    grid-template-columns: 100%;
+    overflow: hidden;
+  }
+  
+  box-shadow: ${shadow.white2};
+  
+  background: ${color.white};
+  list-style-type: none;
+  position: absolute;
+  
+  & > li {
+    display: none;
+    height: 48px;
+    min-width: 100px;
+     cursor: pointer;
+    
+    a:hover {
+      border-bottom: none;
+      color: ${color.orange1};
+    }
+  }
+  
+  & > li a {
+    min-width: 150px;
   }
 `;
 
@@ -206,37 +261,85 @@ const Hamburger = styled.div`
 `;
 
 const Header = ({ siteTitle }) => {
-  const [menu, showMenu] = useState(false);
+  const [menu, showMenu, active] = useState(false);
 
   return (
     <Wrapper>
       <Logo>
-        <Link to="/"><LogoSVG /></Link>
+        <LogoSVG />
       </Logo>
       <MobileWrapper showNav={menu}>
         <Navigation>
           <Menu>
             <MenuItem>
-              <MenuLink to="/start-your-company/">Review Entity Types</MenuLink>
-              <DropdownSVG />
+              <FlexRow>
+                <MenuLink to="#">Review Entity Type</MenuLink>
+                <div>
+                  <DropdownSVG />
+                </div>
+              </FlexRow>
+              <DropdownMenu>
+                <MenuItem><MenuLink>Review Entity Types</MenuLink></MenuItem>
+                <MenuItem><MenuLink>LLC</MenuLink></MenuItem>
+                <MenuItem><MenuLink>S Corporation</MenuLink></MenuItem>
+                <MenuItem><MenuLink>C Corporation</MenuLink></MenuItem>
+                <MenuItem><MenuLink>Non-profit</MenuLink></MenuItem>
+              </DropdownMenu>
             </MenuItem>
             <MenuItem>
-              <MenuLink to="/manage-your-company/">Manage Your Company</MenuLink>
-              <DropdownSVG />
+              <FlexRow>
+                <MenuLink to="/manage-your-company">Manage Your Company</MenuLink>
+                <div><DropdownSVG /></div>
+              </FlexRow>
+              <DropdownMenu>
+                <MenuItem>
+                  <MenuLink>Review Entity Types</MenuLink>
+                </MenuItem>
+                <MenuItem>
+                  <MenuLink>LLC</MenuLink>
+                </MenuItem>
+                <MenuItem>
+                  <MenuLink>S Corporation</MenuLink>
+                </MenuItem>
+                <MenuItem>
+                  <MenuLink>C Corporation</MenuLink>
+                </MenuItem>
+                <MenuItem>
+                  <MenuLink>Non-profit</MenuLink>
+                </MenuItem>
+              </DropdownMenu>
             </MenuItem>
             <MenuItem>
-              <MenuLink to="/business-entity-comparison/">Learning Center</MenuLink>
-              <DropdownSVG />
+              <FlexRow>
+                <MenuLink to="#">Learning Center</MenuLink>
+                <DropdownSVG />
+              </FlexRow>
+              <DropdownMenu>
+                <MenuItem><MenuLink>Review Entity Types</MenuLink></MenuItem>
+                <MenuItem><MenuLink>LLC</MenuLink></MenuItem>
+                <MenuItem><MenuLink>S Corporation</MenuLink></MenuItem>
+                <MenuItem><MenuLink>C Corporation</MenuLink></MenuItem>
+                <MenuItem><MenuLink>Non-profit</MenuLink></MenuItem>
+              </DropdownMenu>
             </MenuItem>
             <MenuItem>
-              <MenuLink to="/about/">About</MenuLink>
-              <DropdownSVG />
+              <FlexRow>
+                <MenuLink to="#">About</MenuLink>
+                <DropdownSVG />
+              </FlexRow>
+              <DropdownMenu>
+                <MenuItem><MenuLink>Review Entity Types</MenuLink></MenuItem>
+                <MenuItem><MenuLink>LLC</MenuLink></MenuItem>
+                <MenuItem><MenuLink>S Corporation</MenuLink></MenuItem>
+                <MenuItem><MenuLink>C Corporation</MenuLink></MenuItem>
+                <MenuItem><MenuLink>Non-profit</MenuLink></MenuItem>
+              </DropdownMenu>
             </MenuItem>
           </Menu>
         </Navigation>
         <LoginWrapper>
-          <Login href={`${process.env.ORDER_URL}/dashboard`}>Login</Login>
-          <Button theme="secondary40" to={`${process.env.ORDER_URL}/form-order-now.php`}>Incoporate now</Button>
+          <Login href="#">Login</Login>
+          <Button theme="secondary40">Incoporate now</Button>
         </LoginWrapper>
       </MobileWrapper>
       <Hamburger hamburger={menu} onClick={() => showMenu(!menu)}>

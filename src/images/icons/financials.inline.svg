@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <g fill="none" fill-rule="evenodd" transform="translate(1 .982)">
+        <path fill="#FFF" fill-rule="nonzero" d="M25.82 28.865H.42L.56 5.363s0 2.386 2.81 2.14h24.2c.978 0 1.77.779 1.77 1.739l-.12 16.294c-.006 1.84-1.526 3.33-3.4 3.33z"/>
+        <ellipse cx="17.51" cy="16.696" stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" rx="2.13" ry="2.092"/>
+        <path stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M30.91 12.7v7.984H17.09c-2.167-.106-3.868-1.862-3.868-3.992 0-2.131 1.701-3.887 3.868-3.993h13.82z"/>
+        <path stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M27.46 3.722c.003-.803-.321-1.574-.9-2.142-.577-.567-1.362-.885-2.18-.883-7.81 0-21.38.01-21.44.03-.554.08-1.066.336-1.46.727C.982 1.94.7 2.6.7 3.29v23.277c0 1.454 1.2 2.632 2.68 2.632h22.7c1.883 0 3.41-1.5 3.41-3.349v-4.91"/>
+        <path stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M29.49 12.542V9.379c0-1.925-1.59-3.486-3.55-3.486H3.35C1.886 5.893.7 4.728.7 3.29M2.95 3.29L24.38 3.29"/>
+    </g>
+</svg>

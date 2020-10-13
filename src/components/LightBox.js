@@ -183,7 +183,9 @@ const Control = styled.div`
     }
 `
 
-export default LightBox;
+export {
+    LightBox, PortalComponent
+};
 
 LightBox.propTypes = {
     thumbnailVideo: PropTypes.string.isRequired,
