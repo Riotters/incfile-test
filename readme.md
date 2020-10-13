@@ -13,7 +13,7 @@ Developer access to server will be via SSH with authentication keys.
 ### How to deploy new changes
 
 ```bash
-cd ~/incfile-test
+cd ~/gatsby
 git pull
 docker-compose up --build -d
 ```
