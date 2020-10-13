@@ -110,12 +110,6 @@ const AboutSection = ({ className, content }) => (
         {content.header10}
       </Heading>
       <IconListColorBox content={content.list5} color={color.orange3} rounded bottomMargin="48" />
-      <Heading size={3} bottomMargin="24">
-        {content.header11}
-      </Heading>
-      {content.links2.map(link => (
-        <ArrowLink content={link} />
-      ))}
     </ImageContent>
   </About>
 );
