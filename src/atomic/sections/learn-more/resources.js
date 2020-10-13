@@ -46,9 +46,17 @@ const Resources = () => (
 
 const Wrapper = styled.section`
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 30px;
+    grid-template-columns: 1fr;
+    column-gap: 30px; 
     row-gap: 30px;
+    
+    @media (min-width: 576px){
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    @media (min-width: 992px){
+         grid-template-columns: 1fr 1fr 1fr;
+    }
 `;
 
 const Item = styled(Link)`

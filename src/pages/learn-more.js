@@ -5,6 +5,11 @@ import ButtonsBox from "../atomic/atoms/boxes/top-buttons-box";
 import Button from "../atomic/molecules/buttons/button";
 import Layout from "../components/layout";
 import Resources from "../atomic/sections/learn-more/resources";
+import Video from "../atomic/sections/learn-more/video";
+import ToolsSection from "../atomic/sections/learn-more/tools";
+import {tools, help} from "../static/learn-more";
+import Comparison from "../atomic/sections/learn-more/comparison";
+import Help from "../components/partials/sections/help";
 
 const LearnMore = () => (
     <Layout>
@@ -20,6 +25,11 @@ const LearnMore = () => (
         </Top>
 
         <Resources />
+        <Video />
+        <ToolsSection content={tools} />
+        <Comparison />
+        <Help content={help} />
+
     </Layout>
 );
 
