@@ -152,7 +152,7 @@ const ResultSection = ({ content, keyword }) => {
                     {content.results.map((item, index) => (
                         <ResultItem key={index} className="result__item" colorProperies={arrayColor[Math.floor(Math.random() * arrayColor.length)]}>
                             <Paragraph>{item}</Paragraph>
-                            <Link state={{ entityName: item }} to="/other/check-availability-name/" className="result__item-btn-action">
+                            <Link state={{ entityName: item }} to="/check-availability-name/" className="result__item-btn-action">
                                 <span>Search Name Availability</span>
                                 <span>{item}</span>
                                 <span className="arrow">

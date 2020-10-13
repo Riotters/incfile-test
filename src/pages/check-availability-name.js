@@ -1,21 +1,21 @@
 import React from "react";
-import SEO from "../components/seo";
-import Layout from "../components/layout";
-
+import styled from "styled-components";
 import { Link } from "gatsby";
+
 import ContentCenter from "../atomic/partials/content-center";
 import Searchbar from "../atomic/sections/other/business-name-generator/search-bar";
 import ShapeCurve from "../atomic/atoms/shapes/curve";
 import { color } from "../atomic/atoms/styles/colors";
 import RelativeElement from "../atomic/elements/relative-e";
 import AbsoluteShapCure from "../atomic/elements/absolute-shape-curve-e";
-import ArrowLeft from "../../images/arrow-circle.inline.svg";
+import ArrowLeft from "../images/arrow-circle.inline.svg";
 import Oval from "../atomic/atoms/icons/oval";
-import OvalSVG from "../../images/ovals/top-left-transparent-babyblue1.inline.svg";
-import OvalSVG2 from "../../images/medium-571.inline.svg";
-import styled from "styled-components";
+import OvalSVG from "../images/ovals/top-left-transparent-babyblue1.inline.svg";
+import OvalSVG2 from "../images/medium-571.inline.svg";
 import Container from "../atomic/container";
 import HeadingCenter from "../atomic/partials/heading-center";
+import SEO from "../components/seo";
+import Layout from "../components/layout";
 
 // text
 import { seo, formCheck } from "../static/other/business-name-generator";
@@ -58,7 +58,7 @@ const CheckAvailabilityName = ({ location }) => {
         </Oval>
 
         <Container>
-          <Link to="/other/business-name-generator" className="back-link">
+          <Link to="/business-name-generator/" className="back-link">
             <span>
               <ArrowLeft />
             </span>

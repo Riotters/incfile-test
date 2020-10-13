@@ -6,7 +6,7 @@ import SEO from "../components/seo";
 import Top from "../atomic/partials/top";
 import Button from "../atomic/molecules/buttons/button";
 import Buttonsbox from "../atomic/atoms/boxes/top-buttons-box";
-import OvalSVG from "../../images/ovals/bottom-left-transparent-green3.inline.svg";
+import OvalSVG from "../images/ovals/bottom-left-transparent-green3.inline.svg";
 
 import {affiliates, payouts, top} from "../static/other/affiliates";
 import HowItWorksSection from "../atomic/sections/other/affiliates/how-it-works";
