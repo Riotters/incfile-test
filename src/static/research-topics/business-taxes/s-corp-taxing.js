@@ -18,10 +18,10 @@ export const related = {
   header: 
       `Related Articles`,
   text:
-      `Other users were also interested in knowing…`,
+      `Other users were also interested in knowing about…`,
   buttons: [
       {
-          header: `How to Get a Seller’s Permit`,
+          header: `How to Get a Seller’s Permit?`,
           url: `/research-topics/business-taxes/sellers-permit`,
       },
       {
@@ -44,5 +44,5 @@ export const related = {
           header: `How is a C Corporation Taxed?`,
           url: `/research-topics/business-taxes/c-corp-taxing/`,
       },
-  ]
+    ],
 }

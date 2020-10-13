@@ -252,7 +252,7 @@ const IndexPage = () => (
         <Link to="/research-topics/s-corporation-info/publication-requirement">What is a Publication Requirement?</Link>
         <Link to="/research-topics/s-corporation-info/customized-corp-llc-kit">What is the Customized Corporate/LLC Kit?</Link>
         <Link to="/research-topics/s-corporation-info/s-corporation-status">Who Will Typically Elect the S Corporation Status?</Link>
-        <Link to="/research-topics/s-corporation-info/s-corp-distribution">How to Take a Distribution from an S Corp</Link>
+        <Link to="/research-topics/s-corporation-info/s-corp-distribution">How to Take a Distribution from an S Corp?</Link>
         <Link to="/research-topics/s-corporation-info/corporation-need">How Many Shares of Stock will my Corporation Need?</Link>
         <Link to="/research-topics/s-corporation-info/corp-seal">What is a Corporate Seal?</Link>
         <Link to="/research-topics/s-corporation-info/tax-advantages">Which entity offers the best tax advantages?</Link>
@@ -304,7 +304,7 @@ const IndexPage = () => (
         <Link to="/research-topics/general-research/require-an-attorney">Does Forming an LLC (Limited Liability Company) or Corporation Require an Attorney?</Link>
         <Link to="/research-topics/general-research/incfile-discount-coupon">Does Incfile have a Discount or Coupon Code?</Link>
         <Link to="/research-topics/general-research/llc-inc-designator-companies-name">Does the designator “LLC” or “Inc.” always need to be included in your companies name?</Link>
-        <Link to="/research-topics/general-research/how-to-get-trademark">How to Get a Trademark: A Complete Guide</Link>
+        <Link to="/research-topics/general-research/how-to-get-trademark">How to Get a Trademark: A Complete Guide?</Link>
         <Link to="/research-topics/general-research/forming-llc-or-corp">In Which State Should I Form my LLC or Corporation?</Link>
         <Link to="/research-topics/general-research/llc-and-corporation-requirements">LLC and Corporation Ongoing Compliance Requirements</Link>
         <Link to="/research-topics/general-research/llc-incorporate-name">Should I assume that if I form an LLC or incorporate that no one else can use the same name?</Link>
@@ -320,8 +320,8 @@ const IndexPage = () => (
         <Link to="/research-topics/general-research/choosing-entity-type">Which entity type should I choose?</Link>
 
         <Link to="/research-topics/state-info">Individual State Information</Link>
-        <Link to="/research-topics/state-info/publish-inc-notice-georgia">How To Publish Your Notice Of Incorporation In Georgia</Link>
-        <Link to="/research-topics/state-info/ny-publication-requirement">How to Meet New York LLC Publication Requirements</Link>
+        <Link to="/research-topics/state-info/publish-inc-notice-georgia">How To Publish Your Notice Of Incorporation In Georgia?</Link>
+        <Link to="/research-topics/state-info/ny-publication-requirement">How to Meet New York LLC Publication Requirements?</Link>
 
         <Link to="/research-topics/registered-agent">Registered Agent</Link>
         <Link to="/research-topics/registered-agent/own-registered-agent">Can I Be My Own Registered Agent?</Link>

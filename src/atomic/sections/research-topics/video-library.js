@@ -10,6 +10,7 @@ import IconTextColorBox from "../../molecules/text-blocks/icon-h4-text-color";
 import Oval from "../../atoms/icons/oval";
 import OvalSVG from "../../../images/ovals/top-left-transparent-blue3.inline.svg";
 import Path from "../../molecules/blocks/research-topics-path";
+import LightBoxVideo from "../../../components/LightBox";
 
 const About = styled.section`
   position: relative;
@@ -29,18 +30,21 @@ const AboutSection = ({ className, content }) => (
       <Heading size={3} bottomMargin="24">
         {content.header2}
       </Heading>
+      <LightBoxVideo thumbnailVideo="comparison-chart-video-3611" videoID="R_oIgzYh7NU" bottomMargin="48" />
       <Paragraph big bottomMargin="48">
         {content.text}
       </Paragraph>
       <Heading size={3} bottomMargin="24">
         {content.header3}
       </Heading>
+      <LightBoxVideo thumbnailVideo="comparison-chart-video-3611" videoID="R_oIgzYh7NU" bottomMargin="48" />
       <Paragraph big bottomMargin="48">
         {content.text2}
       </Paragraph>
       <Heading size={3} bottomMargin="24">
         {content.header4}
       </Heading>
+      <LightBoxVideo thumbnailVideo="comparison-chart-video-3611" videoID="R_oIgzYh7NU" bottomMargin="48" />
       <Paragraph big bottomMargin="48">
         {content.text3}
       </Paragraph>

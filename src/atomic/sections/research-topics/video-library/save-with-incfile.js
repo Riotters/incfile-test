@@ -13,6 +13,7 @@ import Path from "../../../molecules/blocks/research-topics-path";
 import parse from "html-react-parser";
 import Button from "../../../molecules/buttons/button";
 import NumericList from "../../../organisms/lists/numeric-boxed-list";
+import LightBoxVideo from "../../../../components/LightBox";
 
 const About = styled.section`
   position: relative;
@@ -29,15 +30,10 @@ const AboutSection = ({ className, content }) => (
       <Heading size={3} bottomMargin="32">
         {content.header}
       </Heading>
-      <Paragraph big bottomMargin="48">
+      <Paragraph big bottomMargin="16">
         {content.text}
       </Paragraph>
-      <Heading size={3} bottomMargin="24">
-        {content.header2}
-      </Heading>
-      {content.links2.map((link) => (
-        <ArrowLink content={link} />
-      ))}
+      <LightBoxVideo thumbnailVideo="comparison-chart-video-3611" videoID="R_oIgzYh7NU" bottomMargin="48" />
     </ImageContent>
   </About>
 );

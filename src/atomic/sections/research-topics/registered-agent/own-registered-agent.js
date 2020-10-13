@@ -56,12 +56,6 @@ const AboutSection = ({ className, content }) => (
         {parse(content.text5)}
       </Paragraph>
       <Button content={content.button} theme="primary56" arrow margin="0 auto 48px 0" />
-      <Heading size={3} bottomMargin="24">
-        {content.header5}
-      </Heading>
-      {content.links2.map((link) => (
-        <ArrowLink content={link} />
-      ))}
     </ImageContent>
   </About>
 );

@@ -49,12 +49,6 @@ const AboutSection = ({ className, content }) => (
       <Paragraph big bottomMargin="48">
         {content.text4}
       </Paragraph>
-      <Heading size={4} bottomMargin="32">
-        {content.header5}
-      </Heading>
-      {content.links2.map(link => (
-        <ArrowLink content={link} />
-      ))}
     </ImageContent>
   </About>
 );
