@@ -15,19 +15,19 @@ export const footer = {
       list: [
         {
           text: `LLC`,
-          url: `/`,
+          url: `/limited-liability-company/`,
         },
         {
           text: `S-Corporation`,
-          url: `/`,
+          url: `/what-is-s-corporation/`,
         },
         {
           text: `C-Corporation`,
-          url: `/`,
+          url: `/what-is-c-corporation/`,
         },
         {
           text: `Nonprofit`,
-          url: `/`,
+          url: `/what-is-non-profit-corporation/`,
         },
       ],
     },
@@ -36,51 +36,51 @@ export const footer = {
       list: [
         {
           text: `Registered Agent`,
-          url: `/`,
+          url: `/manage-your-company/registered-agent/`,
         },
         {
           text: `Annual Report`,
-          url: `/`,
+          url: `/manage-your-company/annual-report/`,
         },
         {
           text: `Foreign Qualification`,
-          url: `/`,
+          url: `/manage-your-company/foreign-qualification/`,
         },
         {
           text: `Certificate Of Good Standing`,
-          url: `/`,
+          url: `/manage-your-company/certificate-of-good-standing/`,
         },
         {
           text: `Change Of Registered Agent`,
-          url: `/`,
+          url: `/manage-your-company/change-of-registered-agent/`,
         },
         {
           text: `Amendment`,
-          url: `/`,
+          url: `/manage-your-company/amendment/`,
         },
         {
           text: `Dissolution`,
-          url: `/`,
+          url: `/manage-your-company/dissolution/`,
         },
         {
           text: `EIN/Tax ID Number`,
-          url: `/`,
+          url: `/manage-your-company/tax-id-ein/`,
         },
         {
           text: `Business License Search`,
-          url: `/`,
+          url: `/business-license-research-package/`,
         },
         {
           text: `File Business Taxes`,
-          url: `/`,
+          url: `/business-accounting/`,
         },
         {
           text: `Fictious Business Name`,
-          url: `/`,
+          url: `/fictitious-business-or-trade-name/`,
         },
         {
           text: `File S Corp Tax Election`,
-          url: `/`,
+          url: `/llc-s-corp-election/`,
         },
       ],
     },
@@ -93,31 +93,31 @@ export const footer = {
         },
         {
           text: `Review Entity Types`,
-          url: `/`,
+          url: `/start-your-company/`,
         },
         {
           text: `Manage Your Company`,
-          url: `/`,
+          url: `/manage-your-company/`,
         },
         {
           text: `Check Order Status`,
-          url: `/`,
+          url: `${process.env.ORDER_URL}/dashboard`,
         },
         {
           text: `Learn More`,
-          url: `/`,
+          url: `/learn-more/`,
         },
         {
           text: `Pricing`,
-          url: `/`,
+          url: `${process.env.ORDER_URL}/form-order-now.php`,
         },
         {
           text: `Blog`,
-          url: `/`,
+          url: `/blog/`,
         },
         {
           text: `About`,
-          url: `/`,
+          url: `/about/`,
         },
       ],
     },
@@ -126,35 +126,35 @@ export const footer = {
       list: [
         {
           text: `Renew Registered Agent`,
-          url: `/`,
+          url: `${process.env.ORDER_URL}/dashboard`,
         },
         {
           text: `Filing Times`,
-          url: `/`,
+          url: `/compare-state-filing-times/`,
         },
         {
           text: `Why Choose Us`,
-          url: `/`,
+          url: `/why-choose-incfile/`,
         },
         {
           text: `Testimonials`,
-          url: `/`,
+          url: `/reviews/`,
         },
         {
           text: `Entity Comparision Chart`,
-          url: `/`,
+          url: `/business-entity-comparison/`,
         },
         {
           text: `LLC State Info`,
-          url: `/`,
+          url: `/llc-state-information/`,
         },
         {
           text: `Corpotate State Info`,
-          url: `/`,
+          url: `/corporation-state-information/`,
         },
         {
           text: `Corporate/LCC Kit`,
-          url: `/`,
+          url: `/manage-your-company/corporatellc-kit/`,
         },
       ],
     },
@@ -163,31 +163,31 @@ export const footer = {
       list: [
         {
           text: `Contact`,
-          url: `/`,
+          url: `/contact/new-sales/`,
         },
         {
           text: `Affiliates`,
-          url: `/`,
+          url: `/affiliates/`,
         },
         {
           text: `Sitemaps`,
-          url: `/`,
+          url: `/sitemap/`,
         },
         {
           text: `Cancellation Policy`,
-          url: `/`,
+          url: `/cancellation-policy/`,
         },
         {
           text: `Privacy Policy`,
-          url: `/`,
+          url: `/privacy-policy/`,
         },
         {
           text: `Legal Disclaimer`,
-          url: `/`,
+          url: `/disclaimer/`,
         },
         {
           text: `Glossary`,
-          url: `/`,
+          url: `/glossary/`,
         },
       ],
     },

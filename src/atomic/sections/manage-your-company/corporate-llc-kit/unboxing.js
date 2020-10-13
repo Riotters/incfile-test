@@ -23,7 +23,7 @@ const Unboxing = styled.section`
 
 const UnboxingSection = ({ className, content }) => (
   <Unboxing className={className}>
-    <Oval className="oval" height="720" width="720" top="0" left="0" y="-35">
+    <Oval className="oval" height="720" width="720" top="0" left="0" y="-15">
       <OvalSVG />
     </Oval>
     <HeadingCenter className="heading" headline={content.header} headlineWidth="770" text={content.text} />

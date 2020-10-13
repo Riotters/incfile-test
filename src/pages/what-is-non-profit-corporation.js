@@ -1,17 +1,17 @@
 import React from "react";
-import Layout from "../../components/layout";
-import SEO from "../../components/seo";
-import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
-import Button from "../../atomic/molecules/buttons/button";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import Buttonsbox from "../atomic/atoms/boxes/top-buttons-box";
+import Button from "../atomic/molecules/buttons/button";
 //Sections
-import Top from "../../atomic/partials/top";
-import About from "../../components/partials/sections/about";
-import Search from "../../atomic/sections/review-entity-types/nonprofit/search";
-import Faq from "../../atomic/sections/review-entity-types/nonprofit/faq";
-import Cta from "../../atomic/sections/general/cta";
-import Articles from "../../components/partials/sections/articles";
+import Top from "../atomic/partials/top";
+import About from "../components/partials/sections/about";
+import Search from "../atomic/sections/review-entity-types/nonprofit/search";
+import Faq from "../atomic/sections/review-entity-types/nonprofit/faq";
+import Cta from "../atomic/sections/general/cta";
+import Articles from "../components/partials/sections/articles";
 //Texts
-import { top, about, adventages, disadventages, differences, requirements, rocket, faq, cta } from "../../static/review-entity-types/nonprofit";
+import { top, about, adventages, disadventages, differences, requirements, rocket, faq, cta } from "../static/review-entity-types/nonprofit";
 
 const IndexPage = () => (
   <Layout>

@@ -116,18 +116,18 @@ const IndexPage = () => (
         <Link to="/manage-your-company/foreign-qualification/">Foreign Qualification</Link>
         <Link to="/manage-your-company/registered-agent/">Registered Agent</Link>
         <Link to="/llc-s-corp-election/">S Corp Tax Election (no details)</Link>
-        <Link to="/manage-your-company/corporate-llc-kit/">Corporate LLC Kit</Link>
+        <Link to="/manage-your-company/corporatellc-kit/">Corporate LLC Kit</Link>
         <Link to="/business-accounting/">Filling Business Taxes</Link>
         <Link to="/fictitious-business-or-trade-name/">Fictitious Business</Link>
         <Link to="/manage-your-company/home-page-v3">Home Page v3</Link>
         <Link to="/manage-your-company/compare-state-filling-time">Compare State Filling Time</Link>
 
         <h2>Review Entity Types</h2>
-        <Link to="/start-your-company">Start Your Company</Link>
-        <Link to="/review-entity-types/nonprofit">Nonprofit (WIP)</Link>
-        <Link to="/review-entity-types/c-corporation">C Corporation (no details)</Link>
-        <Link to="/review-entity-types/s-corporation">S Corporation (no details)</Link>
-        <Link to="/review-entity-types/llc">LLC (no details)</Link>
+        <Link to="/start-your-company/">Start Your Company</Link>
+        <Link to="/what-is-non-profit-corporation/">Nonprofit (WIP)</Link>
+        <Link to="/what-is-c-corporation/">C Corporation (no details)</Link>
+        <Link to="/what-is-s-corporation/">S Corporation (no details)</Link>
+        <Link to="/limited-liability-company/">LLC (no details)</Link>
 
         <h2>Learning Center Entity</h2>
         <Link to="/learning-center-entity/help-center">Help Center</Link>
@@ -139,8 +139,8 @@ const IndexPage = () => (
         <Link to="/start-a-business/">Business Startup Guides (no details)</Link>
         <Link to="/guides-start-business/">Guide To Start a Business</Link>
         <Link to="/registered-agents/">Registered Agents</Link>
-        <Link to="/learning-center-entity/s-corp-tax-calculator">S Corp Tax Calculator (WIP)</Link>
-        <Link to="/learning-center-entity/sales-tax-calculator">Sales Tax Calculator</Link>
+        <Link to="/s-corporation-tax-calculator/">S Corp Tax Calculator (WIP)</Link>
+        <Link to="/sales-tax-calculator/">Sales Tax Calculator</Link>
         <Link to="/learning-center-entity/state-filing-times">State Filing Times (no details)</Link>
         <Link to="/learning-center-entity/ongoing-filing-requirements">Ongoing Filing Requirements (no details)</Link>
         <Link to="/learning-center-entity/business-resources">Business Resources (WIP)</Link>

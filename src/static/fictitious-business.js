@@ -6,7 +6,7 @@ export const top = {
     button: [
         {
         text: `File your fictitious business name today`,
-        url: `/forms/fictitious-business-name`,
+        url: `${process.env.ORDER_URL}/fictitious-business-name`,
         }
     ]
 }
@@ -34,7 +34,7 @@ export const about = {
         text:
             `Let Incfile file your ficticious business name today!`,
         url:
-            `/forms/fictitious-business-name`,
+            `${process.env.ORDER_URL}/fictitious-business-name`,
     }
 }
 
@@ -119,7 +119,7 @@ export const behalf = {
         text:
             `Help me file my ficticious business name today`,
         url:
-            `/forms/fictitious-business-name`,
+            `${process.env.ORDER_URL}/fictitious-business-name`,
     },
 }
 
@@ -134,7 +134,7 @@ export const protect = {
         text:
             `Check out our  trademark search and registration service`,
         url:
-            `/forms/fictitious-business-name`,
+            `${process.env.ORDER_URL}/fictitious-business-name`,
     },
 }
 
@@ -218,7 +218,7 @@ export const help = {
         text:
             `Help me file my ficticious business name today`,
         url:
-            `/forms/fictitious-business-name`,
+            `${process.env.ORDER_URL}/fictitious-business-name`,
     }
 }
 
@@ -247,7 +247,7 @@ export const faq = {
                         text:
                             `state-by-state guides for LLCs`,
                         url:
-                            `/state-information/llc`,
+                            `/llc-state-information/`,
                     },
                     {
                         text:
@@ -257,7 +257,7 @@ export const faq = {
                         text:
                             `corporations`,
                         url:
-                            `/state-information/corporation`,
+                            `/corporation-state-information/`,
                     },
                 ],
             },

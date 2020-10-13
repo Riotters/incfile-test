@@ -17,7 +17,7 @@ export const typesOfTaxes = {
     text: 
       `Filing as an S Corporation could save you tax dollars`,
     url: 
-      `/s-corporation-tax-calculator`,
+      `/s-corporation-tax-calculator/`,
   },
   text2:
     `Filing a business tax return is part of the annual requirements for managing your small business taxes. Just like your personal tax return, the IRS expects your business to file a business tax return even if your business does not owe taxes.`,
@@ -101,7 +101,7 @@ export const typesOfTaxes = {
       text:
         `S Corporation Tax Calculator`,
       url:
-        `/s-corporation-tax-calculator`,
+        `/s-corporation-tax-calculator/`,
     }
   },
   cCorporationTaxes: {

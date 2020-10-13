@@ -32,8 +32,10 @@ const GetFormationKit = styled.section`
   }
 
   .text-image {
-    svg {
-      transform: rotate(-90deg);
+    .curve-svg{
+      svg {
+        transform: rotate(-90deg);
+      }
     }
 
     h2 {
@@ -85,7 +87,7 @@ const GetFormationKitSection = ({ className, content }) => (
       <Oval2SVG />
     </Oval>
     <TextImage className="text-image" image="manage-your-company" contentWidth="550" contentPadding="85">
-      <Curve top="40" left="-90" color={color.green1}>
+      <Curve top="-45" left="-90" color={color.green1} className="curve-svg">
         <CurveSVG />
       </Curve>
       <Heading size="2">{content.header}</Heading>

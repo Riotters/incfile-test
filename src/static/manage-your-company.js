@@ -5,7 +5,7 @@ export const top = {
   button: [
     {
       text: "Incorporate now",
-      url: "/",
+      url: `${process.env.ORDER_URL}/form-order-now.php`,
     },
   ],
 };
@@ -16,11 +16,11 @@ export const help = {
   buttons: [
     {
       text: `Start Now`,
-      url: `/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php`,
     },
     {
       text: `Read FAQ`,
-      url: `/`,
+      url: `/learn-more/`,
     },
   ],
 };
@@ -31,6 +31,6 @@ export const certificates = {
   list: [`Slip Case and Binder`, `20 Custom Printed Stock Certificates`, `Metal Die-Cast Embossing Seal`, `Stock Transfer Ledger`, `Operating Agreement for LLCs`, `Minutes and By-Laws for Corporations`],
   button: {
     text: `Show more`,
-    url: `/`,
+    url: `/manage-your-company/corporatellc-kit/`,
   },
 };

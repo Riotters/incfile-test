@@ -235,7 +235,7 @@ const Header = ({ siteTitle }) => {
         </Navigation>
         <LoginWrapper>
           <Login href={`${process.env.ORDER_URL}/dashboard`}>Login</Login>
-          <Button theme="secondary40">Incoporate now</Button>
+          <Button theme="secondary40" to={`${process.env.ORDER_URL}/form-order-now.php`}>Incoporate now</Button>
         </LoginWrapper>
       </MobileWrapper>
       <Hamburger hamburger={menu} onClick={() => showMenu(!menu)}>

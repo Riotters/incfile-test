@@ -158,26 +158,6 @@ const Navigation = styled.nav`
   }
 `;
 
-// const Curve = styled.div`
-//   height: 75px;
-//   width: 75px;
-//   position: absolute;
-//   bottom: 0;
-//   right: 25px;
-//   z-index: -1;
-
-//   @media (min-width: 992px) {
-//     bottom: 75px;
-//   }
-
-//   @media (min-width: 1440px) {
-//     height: 115px;
-//     width: 115px;
-//     right: -115px;
-//     bottom: 75px;
-//   }
-// `;
-
 const Copyright = styled.p`
   color: #4f4f4f;
   font-family: Avenir, sans-serif;
@@ -249,28 +229,18 @@ const Footer = () => {
           </Copyright>
           <Social>
             <li>
-              <a href="#" title="Facebook">
+              <a href="https://facebook.com/incfile" title="Facebook">
                 <FacebookSVG />
               </a>
             </li>
             <li>
-              <a href="#" title="Twitter">
-                <TwitterSVG />
-              </a>
-            </li>
-            <li>
-              <a href="#" title="YouTube">
+              <a href="https://www.youtube.com/channel/UC-hfd-zO8SSMpOgLNYwLAXA" title="YouTube">
                 <YoutubeSVG />
               </a>
             </li>
             <li>
-              <a href="#" title="LinkedIn">
+              <a href="https://www.linkedin.com/company/incfile-com/" title="LinkedIn">
                 <LinkedinSVG />
-              </a>
-            </li>
-            <li>
-              <a href="#" title="Pinterest">
-                <PinterestSVG />
               </a>
             </li>
           </Social>
