@@ -1,20 +1,20 @@
 import React from 'react';
-import { color } from '../../components/styles/colors';
+import { color } from '../components/styles/colors';
 import styled from 'styled-components';
-import Image from '../../atomic/atoms/image/image_nobase64';
-import ArrowSVG from '../../images/arrow-circle.inline.svg';
-import Oval from "../../atomic/atoms/icons/oval";
-import OvalSVG from '../../images/ovals/top-left-transparent-orange2.inline.svg';
-import OvalSVG2 from '../../images/medium-571.inline.svg';
-import IncfileLogoSVG from '../../images/logo.inline.svg';
-import Layout from '../../components/layout';
-import SEO from '../../components/seo';
+import Image from '../atomic/atoms/image/image_nobase64';
+import ArrowSVG from '../images/arrow-circle.inline.svg';
+import Oval from "../atomic/atoms/icons/oval";
+import OvalSVG from '../images/ovals/top-left-transparent-orange2.inline.svg';
+import OvalSVG2 from '../images/medium-571.inline.svg';
+import IncfileLogoSVG from '../images/logo.inline.svg';
+import Layout from '../components/layout';
+import SEO from '../components/seo';
 import { Link } from 'gatsby';
-import { Heading } from '../../atomic/atoms/typography/heading';
-import FormControl from "../../atomic/molecules/form/form-control";
-import InputField from "../../atomic/molecules/form/input-field";
-import FormContent from "../../atomic/molecules/form/form-content";
-import Button from '../../components/button';
+import { Heading } from '../atomic/atoms/typography/heading';
+import FormControl from "../atomic/molecules/form/form-control";
+import InputField from "../atomic/molecules/form/input-field";
+import FormContent from "../atomic/molecules/form/form-content";
+import Button from '../components/button';
 
 const Wrapper = styled.div`
     display: grid;

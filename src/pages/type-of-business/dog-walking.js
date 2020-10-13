@@ -18,7 +18,7 @@ import {Paragraph} from "../../atomic/atoms/typography/paragraph";
 import TabsSection from "../../atomic/partials/tabs";
 import Colorbox from "../../components/color-box";
 import Tab1Icon from "../../images/icons/dog-walking.inline.svg";
-import MegafornIcon from "../../images/icons/megafon-2.inline.svg";
+import MegafornIcon from "../../images/icons/Megafon-2.inline.svg";
 import {color} from "../../components/styles/colors";
 import TypeBusiness from "../../atomic/sections/type-of-business/dog-walking/type-business";
 import ValidatingBusinessIdea from "../../atomic/sections/type-of-business/dog-walking/validating-business-idea";

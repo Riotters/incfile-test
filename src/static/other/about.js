@@ -12,7 +12,7 @@ export const hero = {
     subtitle2: `Be the next person to start your new business with IncFile.com!`,
     button: {
         text: `Incorporate your business`,
-        url: `/`
+        url: `${process.env.ORDER_URL}/form-order-now.php`
     }
 }
 
@@ -103,5 +103,9 @@ export const rocket = {
     header: `Launch`,
     header2: `your business with Incfile`,
     text: `No Contracts. No Surprise.`,
-    text2: `Only $0 + State Fee to Launch Your Business.`
+    text2: `Only $0 + State Fee to Launch Your Business.`,
+    button: {
+        text: `See Detailed Pricing`,
+        url: `${process.env.ORDER_URL}/form-order-now.php`,
+    }
 }

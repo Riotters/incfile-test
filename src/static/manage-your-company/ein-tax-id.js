@@ -6,7 +6,7 @@ export const top = {
     button: [
       {
         text: 'Order now',
-        url: 'https://www.incfile.com/ein-form.php',
+        url: `${process.env.ORDER_URL}/ein-form.php`,
       }
     ]
   }
@@ -56,7 +56,7 @@ export const top = {
       and we'll obtain your federal tax ID electronically and have your new EIN back to you via email within one business day.`,
     link: {
       text: 'Apply for an EIN online to obtain your EIN number quickly',
-      url: '#',
+      url: `${process.env.ORDER_URL}/ein-form.php`,
     }
   }
 

@@ -69,10 +69,14 @@ const TextWrapper = styled.div`
 `;
 
 const content2 = {
-  price: `199`,
-  fee: `+ $10 State Fee`,
+  price: `149`,
+  fee: `+ $0 State Fee`,
+  button: {
+    text: `Order Now`,
+    url: `/`,
+  }
 };
-const dropdownOneOptions = ["LCC", "Corporation", "Nonprofit"];
+
 const dropdownTwoOptions = states.state.map((state) => state.name);
 const dropdownThreeOptions = states.state.map((state) => state.name);
 
@@ -94,11 +98,13 @@ const HelpSection = ({ className, content }) => (
           headline="Foreign Qualification"
           content={content2}
           dropdownOnePlaceholder="Select Entity Type"
-          dropdownOneOptions={dropdownOneOptions}
           dropdownTwoPlaceholder="Select State"
           dropdownTwoOptions={dropdownTwoOptions}
           dropdownThreePlaceholder="Select State of Formation"
           dropdownThreeOptions={dropdownThreeOptions}
+          priceColumn="foreignQual"
+          orderPage="/foreign-qual.php"
+          fields="state,foreignQualLLC,foreignQualCorp,foreignQualNpc"
         />
       }
     >

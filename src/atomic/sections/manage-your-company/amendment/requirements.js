@@ -71,6 +71,7 @@ const RequirementsSection = ({ className, content }) => (
                 dropdownTwoPlaceholder="Select State"
                 dropdownTwoOptions={dropdownTwoOptions}
                 priceColumn="amend"
+                orderPage="/amendment.php"
                 fields="state,amendLLC,amendCorp,amendNpc" />
             }
         >

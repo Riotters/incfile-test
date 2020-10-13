@@ -6,7 +6,7 @@ export const top = {
     button: [
       {
         text: 'Order Now',
-        url: '#',
+        url: `${process.env.ORDER_URL}/change-agent.php`,
       }
     ]
 }

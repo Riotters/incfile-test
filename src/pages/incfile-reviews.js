@@ -1,13 +1,13 @@
 import React from 'react';
 
-import Layout from '../../components/layout';
-import SEO from '../../components/seo';
-import TopSection from '../../atomic/sections/other/incfile-reviews/top-section';
-import ImprovementCustomerServiceSection from '../../atomic/sections/other/incfile-reviews/improvement-to-customer-service';
-import CustomerComplaintSection from '../../atomic/sections/other/incfile-reviews/customer-complaint';
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import TopSection from '../atomic/sections/other/incfile-reviews/top-section';
+import ImprovementCustomerServiceSection from '../atomic/sections/other/incfile-reviews/improvement-to-customer-service';
+import CustomerComplaintSection from '../atomic/sections/other/incfile-reviews/customer-complaint';
 
 // Contentr
-import {complaints, top, improvement} from '../../static/other/incfile-reviews';
+import {complaints, top, improvement} from '../static/other/incfile-reviews';
 
 const IncfileReviews = () => (
     <Layout>

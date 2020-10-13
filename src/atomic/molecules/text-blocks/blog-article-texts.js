@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { color } from "../../atoms/styles/colors";
 import BlogArticleTitle from "../../atoms/text-fields/blog-article-title";
 import BlogArticleMeta from "../../atoms/text-fields/blog-article-meta";
-import BlogArticleText from "../../atoms/text-fields/blog-article-Text";
+import BlogArticleText from "../../atoms/text-fields/blog-article-text";
 
 const Wrapper = styled.div`
     display: flex;

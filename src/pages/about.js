@@ -1,18 +1,18 @@
 import React from "react";
-import Layout from "../../components/layout";
-import SEO from "../../components/seo";
-import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
-import Button from "../../atomic/molecules/buttons/button";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import Buttonsbox from "../atomic/atoms/boxes/top-buttons-box";
+import Button from "../atomic/molecules/buttons/button";
 
 //Sections
-import Top from "../../atomic/partials/top";
-import WhyChooseUs from "../../atomic/sections/other/about/why-choose-us";
-import OurProcessSection from "../../atomic/sections/other/about/our-process";
-import WhatWeDoSection from "../../atomic/sections/other/about/what-we-do";
-import Rocket from "../../atomic/sections/review-entity-types/c-corporation/rocket";
+import Top from "../atomic/partials/top";
+import WhyChooseUs from "../atomic/sections/other/about/why-choose-us";
+import OurProcessSection from "../atomic/sections/other/about/our-process";
+import WhatWeDoSection from "../atomic/sections/other/about/what-we-do";
+import Rocket from "../atomic/sections/review-entity-types/c-corporation/rocket";
 
 //Texts
-import { seo, hero, whyChooseUsList, ourProcess, whatWeDo, rocket } from "../../static/other/about";
+import { seo, hero, whyChooseUsList, ourProcess, whatWeDo, rocket } from "../static/other/about";
 
 const About = () => (
   <Layout>

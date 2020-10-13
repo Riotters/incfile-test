@@ -1,10 +1,9 @@
 export const top = {
   header: `Filling a Foreign Qualification to do Business Out of State`,
-  text: `From $199 + State Fee`,
   button: [
     {
       text: "Order Now",
-      url: "/",
+      url: `${process.env.ORDER_URL}/foreign-qual.php`,
     },
   ],
 };
@@ -23,7 +22,7 @@ export const about = {
   header2: `We can take care of the details.`,
   link: {
     text: " Let Incfile help you file your Foreign Qualification today!",
-    url: "/",
+    url: `${process.env.ORDER_URL}/foreign-qual.php`,
   },
 };
 
@@ -58,14 +57,14 @@ export const basics = {
           },
           {
             text: `Every state has different rules`,
-            url: `/state-information/llc`,
+            url: `/llc-state-information/`,
           },
           {
             text: `regarding what constitutes transacting business. Not following the rules could affect your business's`,
           },
           {
             text: `Certificate of Good Standing`,
-            url: `https://www.incfile.com/manage-your-company/certificate-of-good-standing/`,
+            url: `/manage-your-company/certificate-of-good-standing/`,
           },
           {
             text: `which you need to get a business loan, renew your business license or file your business taxes. 
@@ -73,7 +72,7 @@ export const basics = {
           },
           {
             text: `Foreign Qualification`,
-            url: `https://www.incfile.com/cert-good-standing.php`,
+            url: `${process.env.ORDER_URL}/foreign-qual.php`,
           },
           {
             text: `form, and we’ll do the paperwork for you.`,
