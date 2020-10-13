@@ -14,55 +14,57 @@ export const top = {
 export const howToGuide = [
   {
     type: `header`,
-    content: `aaa`,
+    content: `Creating an LLC in Arizona`,
     size: 2,
-    marginBottom: 0,
+    marginBottom: 30,
   },
   {
     type: `text`,
-    content: `aaa`,
-    marginBottom: 0,
+    content: `Arizona is considered both a western and a mountain state, sharing borders with four other states and Mexico. Its geography makes it an ideal location for businesses who want to set their sights on expanding further afield.`,
+    marginBottom: 20,
   },
   {
     type: `text`,
-    content: `aaa`,
-    marginBottom: 0,
+    content: `Famed for its desert-like climate, Arizona’s economy includes tourism as one of the main sectors. Built on the cotton trade, fruit growing, cattle ranching and copper mining, Arizona industry has since expanded to strengthen an increasingly diverse statewide economy. The state is also well-served by universities and has developed a rich culture, including film, music and sports.`,
+    marginBottom: 20,
   },
   {
     type: `text`,
-    content: `aaa`,
-    marginBottom: 0,
+    content: `For most business owners, the fastest and easiest way to start a business in Arizona is by creating an Arizona LLC. A Limited Liability Company (LLC) is a type of business entity that’s ideal for startups and small- to medium-sized businesses. You get the advantages and protections of larger Arizona corporations but with much simpler rules and regulations.`,
+    marginBottom: 30,
   },
   {
     type: `list-dot`,
     content: {
-      header: `aaa`,
-      list: [`aaa`, `aaa`, `aaa`],
+      header: `Briefly, the benefits of starting an Arizona LLC include:`,
+      list: [`Separating and limiting your personal liability from your business liability and debts`, 
+             `Quick and simple filing, management, compliance, regulations and administration of your Arizona LLC`, 
+             `Easy tax filing and potential advantages for tax treatment`],
     },
-    marginBottom: 0,
+    marginBottom: 20,
     color: color.blue3,
     curve: true,
     curveColor: color.red1,
   },
   {
     type: `text`,
-    content: `aaa`,
-    marginBottom: 0,
+    content: `Learn more about the <a href="/limited-liability-company/">benefits of the LLC business structure here. </a>`,
+    marginBottom: 20,
   },
   {
     type: `text`,
-    content: `aaa`,
-    marginBottom: 0,
+    content: `In this guide, we’ll tell you everything you need to know about how to form an LLC in Arizona, including business searches with the Arizona Secretary of State, how to get Arizona business licenses, LLC applications in Arizona, AZ LLC registration, LLC forms, assigning a statutory agent and much more. `,
+    marginBottom: 30,
   },
   {
     type: `header`,
-    content: `aaa`,
+    content: `Six Quick Steps to Form an LLC in Arizona`,
     size: 3,
-    marginBottom: 0,
+    marginBottom: 20,
   },
   {
     type: `text`,
-    content: `aaa`,
+    content: `This guide has plenty of information on how to start an LLC in Arizona, but you can break down the basics of creating a business in AZ into just a few simple steps.`,
     marginBottom: 0,
   },
   {
@@ -70,28 +72,47 @@ export const howToGuide = [
     content: {
       items: [
         {
-          question: `aaa`,
-          answer: `aaa`,
+          question: `STEP 1: Gather Information for Your Members`,
+          answer: `First, you need to gather basic information about your LLC, including the names and addresses of the managers or members. The LLC members are typically the people who own and run the business. They are also the ones who can take profits out of the business to pay themselves.`,
         },
         {
-          question: `aaa`,
-          answer: `aaa`,
+          question: `STEP 2: Search for and Choose a Unique Business Name for Your Arizona LLC`,
+          answer: `<p>You will need a distinctive and original name for your Arizona LLC that’s not used by any other business in AZ. To find out if another company is using your chosen business name, carry out an Arizona business entity name search on the AZ Corporation Commission website.</p></br>
+
+          <p>There are a few rules you’ll need to follow when choosing an LLC name. You can find out more in our guide to searching for and naming your Arizona LLC.</p></br>
+          
+          <p><a href="/arizona-llc/how-to-name-your-llc/">Learn about Arizona LLC business naming rules.</a></p>`,
         },
         {
-          question: `aaa`,
-          answer: `aaa`,
+          question: `STEP 3: Provide an Official Address for Your AZ LLC`,
+          answer: `Every Arizona LLC must have a designated street address. That could be your home address (if you’re running the company from your residence), your company’s office building or any physical address of your preference. The address can be outside the state of Arizona, but it cannot be a P.O. Box.`,
         },
         {
-          question: `aaa`,
-          answer: `aaa`,
+          question: `STEP 4: Assign a Statutory Agent (Registered Agent) for Your Arizona LLC`,
+          answer: `<p>Every AZ LLC must have a “Registered Agent,” known in Arizona as a “Statutory Agent” when it is formed. This is an official position; the Registered Agent is someone who receives official legal and tax correspondence and has responsibility for filing reports with the Arizona Corporation Commission.</p></br> 
+
+          <p>This position can be filled by you, another manager in the business or a dedicated Registered Agent service. Your AZ Registered Agent must have a physical street address in Arizona and must be present to receive important documents for your company during business hours.</p></br>
+          
+          <p>At Incfile, all of our packages include an Arizona Registered Agent service that is free for the first year and just $119 per year afterward. We also have a dashboard where you can log in and easily view any document your Registered Agent has received on your behalf.</p></br>
+          
+          <p><a href="/arizona-llc/registered-agents-arizona-llc/">Learn more about Arizona Registered Agents.</a></p>`,
         },
         {
-          question: `aaa`,
-          answer: `aaa`,
+          question: `STEP 5: Get an Employee Identification Number (EIN) From the Internal Revenue Service`,
+          answer: `You will need an EIN to identify your business to the IRS. You use this number when filing and paying taxes or when submitting payroll information and payments for your employees. You can obtain one directly from the IRS, or we can get one for you as part of the Arizona LLC business formation process.`,
         },
         {
-          question: `aaa`,
-          answer: `aaa`,
+          question: `STEP 6: File Articles of Organization for AZ Registration`,
+          answer: `<p>Once you've gathered all the information for your Arizona LLC, you’ll need to file a formal document with the AZ Corporation Commission. This document is known as your “Articles of Organization,” and filing the document creates your Arizona LLC. Here’s what is typically included:</p></br
+          <ol>
+          <li>Your business name and address</li>
+          <li>The type of Arizona LLC that you’re creating</li>
+          <li>Details of your Registered Agent</li>
+          <li>Names of managers or members of the LLC at the time of filing</li>
+          <li>Addresses of managers or members of the LLC at the time of filing</li>
+          <li>Name of the incorporator</li>
+          </ol></br>
+          <p>You can file your Arizona LLC Articles of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Arizona. You only need to file your Articles of Organization once.</p>`,
         },
       ],
     },
