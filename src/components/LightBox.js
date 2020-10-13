@@ -176,9 +176,6 @@ const Control = styled.div`
   }
 `;
 
-// export {
-//     LightBox, PortalComponent
-// };
 export default LightBox;
 
 LightBox.propTypes = {
