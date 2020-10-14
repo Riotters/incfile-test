@@ -266,52 +266,52 @@ const Header = ({ siteTitle }) => {
   return (
     <Wrapper>
       <Logo>
-        <LogoSVG />
+        <Link to="/"><LogoSVG /></Link>
       </Logo>
       <MobileWrapper showNav={menu}>
         <Navigation>
           <Menu>
             <MenuItem>
               <FlexRow>
-                <MenuLink to="#">Review Entity Type</MenuLink>
+                <MenuLink to="/start-your-company/">Review Entity Type</MenuLink>
                 <div>
                   <DropdownSVG />
                 </div>
               </FlexRow>
               <DropdownMenu>
-                <MenuItem><MenuLink>Review Entity Types</MenuLink></MenuItem>
-                <MenuItem><MenuLink>LLC</MenuLink></MenuItem>
-                <MenuItem><MenuLink>S Corporation</MenuLink></MenuItem>
-                <MenuItem><MenuLink>C Corporation</MenuLink></MenuItem>
-                <MenuItem><MenuLink>Non-profit</MenuLink></MenuItem>
+                <MenuItem><MenuLink to="/start-your-company/">Review Entity Types</MenuLink></MenuItem>
+                <MenuItem><MenuLink to="/limited-liability-company/">LLC</MenuLink></MenuItem>
+                <MenuItem><MenuLink to="/what-is-s-corporation/">S Corporation</MenuLink></MenuItem>
+                <MenuItem><MenuLink to="/what-is-c-corporation/">C Corporation</MenuLink></MenuItem>
+                <MenuItem><MenuLink to="/what-is-non-profit-corporation/">Non-profit</MenuLink></MenuItem>
               </DropdownMenu>
             </MenuItem>
             <MenuItem>
               <FlexRow>
-                <MenuLink to="/manage-your-company">Manage Your Company</MenuLink>
+                <MenuLink to="/manage-your-company/">Manage Your Company</MenuLink>
                 <div><DropdownSVG /></div>
               </FlexRow>
               <DropdownMenu>
                 <MenuItem>
-                  <MenuLink>Review Entity Types</MenuLink>
+                  <MenuLink to="/free-llc/">Free LLC</MenuLink>
                 </MenuItem>
                 <MenuItem>
-                  <MenuLink>LLC</MenuLink>
+                  <MenuLink to="/manage-your-company/amendment/">Amendmend - Name Change</MenuLink>
                 </MenuItem>
                 <MenuItem>
-                  <MenuLink>S Corporation</MenuLink>
+                  <MenuLink to="/manage-your-company/dissolution/">Dissolution</MenuLink>
                 </MenuItem>
                 <MenuItem>
-                  <MenuLink>C Corporation</MenuLink>
+                  <MenuLink to="/manage-your-company/foreign-qualification/">Foreign Qualification</MenuLink>
                 </MenuItem>
                 <MenuItem>
-                  <MenuLink>Non-profit</MenuLink>
+                  <MenuLink to="/fictitious-business-or-trade-name/">DBA/Fictitious Business Name</MenuLink>
                 </MenuItem>
               </DropdownMenu>
             </MenuItem>
             <MenuItem>
               <FlexRow>
-                <MenuLink to="#">Learning Center</MenuLink>
+                <MenuLink to="/business-entity-comparison/">Learning Center</MenuLink>
                 <DropdownSVG />
               </FlexRow>
               <DropdownMenu>
@@ -324,22 +324,24 @@ const Header = ({ siteTitle }) => {
             </MenuItem>
             <MenuItem>
               <FlexRow>
-                <MenuLink to="#">About</MenuLink>
+                <MenuLink to="/about/">About</MenuLink>
                 <DropdownSVG />
               </FlexRow>
               <DropdownMenu>
-                <MenuItem><MenuLink>Review Entity Types</MenuLink></MenuItem>
-                <MenuItem><MenuLink>LLC</MenuLink></MenuItem>
-                <MenuItem><MenuLink>S Corporation</MenuLink></MenuItem>
-                <MenuItem><MenuLink>C Corporation</MenuLink></MenuItem>
-                <MenuItem><MenuLink>Non-profit</MenuLink></MenuItem>
+                <MenuItem><MenuLink to="/about/">About Us</MenuLink></MenuItem>
+                <MenuItem><MenuLink to="/how-it-works/">How It Works</MenuLink></MenuItem>
+                <MenuItem><MenuLink to="/incfile-reviews/">Customer Service Reviews</MenuLink></MenuItem>
+                <MenuItem><MenuLink to="/reviews/">Testimonials</MenuLink></MenuItem>
+                <MenuItem><MenuLink to="/why-choose-incfile/">Why Choose Us</MenuLink></MenuItem>
+                <MenuItem><MenuLink to="/contact/existing-clients/">Existing Clients</MenuLink></MenuItem>
+                <MenuItem><MenuLink to="/contact/new-sales/">New Sales</MenuLink></MenuItem>
               </DropdownMenu>
             </MenuItem>
           </Menu>
         </Navigation>
         <LoginWrapper>
-          <Login href="#">Login</Login>
-          <Button theme="secondary40">Incoporate now</Button>
+          <Login href={`${process.env.ORDER_URL}/dashboard`}>Login</Login>
+          <Button theme="secondary40" to={`${process.env.ORDER_URL}/form-order-now.php`}>Incoporate now</Button>
         </LoginWrapper>
       </MobileWrapper>
       <Hamburger hamburger={menu} onClick={() => showMenu(!menu)}>
