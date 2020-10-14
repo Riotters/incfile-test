@@ -5,7 +5,6 @@ import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-right-blue3-transparent.inline.svg";
-import OvalSVG2 from "../../../../images/ovals/top-left-transparent-orange3-big.inline.svg";
 import LeftContentRightObject from "../../../partials/left-content-right-object";
 import AmendmentForm from "../../../organisms/forms/virtual-mailboxes-form";
 

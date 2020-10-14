@@ -9,8 +9,8 @@ import LLCLayout from "../../atomic/partials/states-llc/arizona"
 import ContentMap from "../../atomic/partials/content-map";
 
 // Content
-import { businessTaxes } from "../../static/states-llc/arizona/home";
-import { tabPages } from "../../static/states-llc/arizona/general";
+import { businessTaxes } from "../../static/states-llc/michigan/home";
+import { tabPages } from "../../static/states-llc/michigan/general";
 
 const BusinessTaxesPage = () => (
   <Layout>
