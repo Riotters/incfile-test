@@ -75,7 +75,7 @@ const AboutSection = ({ className, content }) => (
       <Paragraph big bottomMargin="16">
         {content.text14}
       </Paragraph>
-      <Paragraph big bottomMargin="16">
+      <Paragraph big bottomMargin="24">
         {content.text15}
       </Paragraph>
       <IconListColorBox content={content.list} color={color.green2} rounded bottomMargin="48" />

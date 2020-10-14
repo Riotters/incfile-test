@@ -9,7 +9,7 @@ export const about = {
 }
 export const related = {
   header: 
-      `Related Articles`,
+      `LLC`,
   text:
       `Other users were also interested in knowing about…`,
   buttons: [

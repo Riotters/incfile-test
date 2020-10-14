@@ -60,11 +60,11 @@ const AboutSection = ({ className, content }) => (
       <Paragraph big bottomMargin="16">
         {content.text}
       </Paragraph>
-      <Paragraph big bottomMargin="16">
+      <Paragraph big bottomMargin="24">
         {content.text2}
       </Paragraph>
       <IconListColorBox content={content.list} color={color.green3} rounded bottomMargin="24" />
-      <IconListColorBox content={content.list2} color={color.red2} curve curveColor={color.yellow2} rounded bottomMargin="16" />
+      <IconListColorBox content={content.list2} color={color.red2} curve curveColor={color.yellow2} rounded bottomMargin="24" />
       <Paragraph big bottomMargin="48">
         {content.text3}
       </Paragraph>
@@ -138,7 +138,7 @@ const AboutSection = ({ className, content }) => (
       <Heading size={4} bottomMargin="24">
         {content.header7}
       </Heading>
-      <Paragraph big bottomMargin="16">
+      <Paragraph big bottomMargin="24">
         {content.text14}
       </Paragraph>
       <IconListColorBox content={content.list3} color={color.red2} curve curveColor={color.yellow2} rounded bottomMargin="48" />
