@@ -130,7 +130,7 @@ const IndexPage = () => (
         <Link to="/limited-liability-company/">LLC (no details)</Link>
 
         <h2>Learning Center Entity</h2>
-        <Link to="/learning-center-entity/help-center">Help Center</Link>
+        <Link to="/help-center">Help Center</Link>
         <Link to="/learning-center-entity/help-center-article">Help Center Article</Link>
         <Link to="/business-entity-comparison/">Comparison Chart</Link>
         <Link to="/business-checklist">Business Checklist (WIP)</Link>
@@ -141,11 +141,11 @@ const IndexPage = () => (
         <Link to="/registered-agents/">Registered Agents</Link>
         <Link to="/s-corporation-tax-calculator/">S Corp Tax Calculator (WIP)</Link>
         <Link to="/sales-tax-calculator/">Sales Tax Calculator</Link>
-        <Link to="/learning-center-entity/state-filing-times">State Filing Times (no details)</Link>
-        <Link to="/learning-center-entity/ongoing-filing-requirements">Ongoing Filing Requirements (no details)</Link>
+        <Link to="/state-filing-times">State Filing Times (no details)</Link>
+        <Link to="/ongoing-filing-requirements">Ongoing Filing Requirements (no details)</Link>
         <Link to="/learning-center-entity/business-resources">Business Resources (WIP)</Link>
         <Link to="/learning-center-entity/business-name-search">Business Name Search (no details)</Link>
-        <Link to="/learning-center-entity/business-entity-quiz">Business Entity Quiz</Link>
+        <Link to="/business-entity-quiz">Business Entity Quiz</Link>
 
         <Link to="/learning-center-entity/alaska-corporation">Alaska Corporation</Link>
         <h2>Corporation State Information</h2>
