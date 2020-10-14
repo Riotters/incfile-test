@@ -262,21 +262,26 @@ export const namingYourBusiness = [
       url: `<a href="https://www.wdfi.org/apps/CorpSearch/Search.aspx?">Wisconsin Department of Financial Institutions business name search tool</a>`,
     },
     marginBottom: 40,
-  },
+  },W
   {
     type: `header`,
-    content: `Business Name Registration Rules for Wisconsin LLCs`,
+    content: `Wisconsin LLC DBA or Trade Names`,
     size: 3,
     marginBottom: 30,
   },
   {
     type: `text`,
-    content: `Once you’ve decided on a name for your LLC and checked business name availability, you’ll need to meet Wisconsin Corporation Commission naming rules. Naming rules do vary from state to state — we’ve got general naming rules below, as well as naming rules specific to LLC businesses formed in WI.`,
+    content: `You might choose to do business under a different name from your legal LLC name. In Wisconsin, doing business under a different name is known as a “Trade Name.” You might choose to use a different name from your WI formal LLC name for a variety of reasons.`,
     marginBottom: 30,
   },
   {
+    type: `text`,
+    content: `For example, your LLC might be called Wisconsin Travel and Tourism Holding Company LLC and you have a chain called Riverside Rovers. You should file a trade name to let the Wisconsin Department of Financial Institutions know. `,
+  }
+
+  {
     type: `header`,
-    content: `Standard LLC Naming Rules`,
+    content: `General Rules for Naming Your LLC `,
     size: 3,
     marginBottom: 20,
   },
@@ -355,48 +360,43 @@ export const namingYourBusiness = [
   },
   {
     type: `header`,
-    content: `Specific Business Naming Rules in Wisconsin`,
+    content: `Specific Rules for Naming Your Wisconsin LLC`,
     size: 3,
     marginBottom: 20,
   },
   {
     type: `text`,
-    content: `In addition to the general rules listed above, the Wisconsin Corporation Commission has some specific business naming rules for your LLC. You will need to follow these rules if you want to name your WI business appropriately:`,
+    content: `In addition to the general rules listed above, the Wisconsin Department of Financial Institutions has some specific business naming rules for your LLC. You will need to follow these rules if you want to name your WI business appropriately.`,
     marginBottom: 30,
   },
   {
-    type: `list-dot`,
-    content: {
-      header: ``,
-      list: [`If the LLC name contains any of the following words, prior written approval must be obtained from the Wisconsin Department of Financial Institutions before registration is allowed: Bank; Banker; Banking; Banc; Banco; Banque; Credit Union; Deposit; Savings Association; Building Association; Savings and Loan Association; Building and Loan Association; Savings Bank; Thrift; Trust; or Trust Company`,
-             `Non-professional LLCs shall contain the words “limited liability company” or “limited company” or the abbreviations “L.L.C.”, “L.C.”, “LLC”, or “LC”. If the existing limited liability company name or the fictitious name adopted for use in Wisconsin does not contain one of those words or an abbreviation of one of those words, then one of those words or an abbreviation of one of those words must be added to it. `, 
-             `Non-professional LLCs shall not contain the words “association”, “corporation”, “incorporated”, or an abbreviation of those words`],
-    },
-    marginBottom: 20,
-    color: color.yellow3,
+    type: `text`,
+    content: `“The word ‘insurance’ is prohibited in a corporate name filed with the department unless the name makes clear that the corporation is not an insurance company. Corporate names that use words to describe or convey the impression that the corporation is engaged in the practice of architecture, professional engineering or designing must comply with the requirements of Ch. 443, Wis. Stats. (Contact Dept of Safety and Professional Services, (608) 266-5511) for details.) The word ‘cooperative’ may be used only in the name of a cooperative association formed under Ch. 185, Wis. Stats., and may not be used by other business or nonprofit corporations.”`,
+    marginBottom: 30,
+
   },
   {
     type: `arrow-link`,
     content: {
-      text: `More on Wisconsin Corporation Commission business naming rules`,
-      url: `https://www.azcc.gov/corporations/naming-policy`,
+      text: `Wisconsin Department of Financial Institutions business naming rules.`,
+      url: `https://www.wdfi.org/corporations/faqs.htm#nameAvailability`,
     },
     marginBottom: 40,
   },
   {
     type: `header`,
-    content: `Ariona LLC Trade Names/“DBA” Names`,
+    content: `Wisconsin LLC DBA or Trade Names`,
     size: 3,
     marginBottom: 20,
   },
   {
     type: `text`,
-    content: `You might choose to do business under a different name from your legal LLC name. In Wisconsin, a “DBA” or “Doing Business As” name is referred to as a “Trade Name.” You might choose to use a different name from your WI formal LLC name for a variety of reasons.`,
+    content: `You might choose to do business under a different name from your legal LLC name. In Wisconsin, doing business under a different name is known as a “Trade Name.” You might choose to use a different name from your WI formal LLC name for a variety of reasons.`,
     marginBottom: 20,
   },
   {
     type: `text`,
-    content: `For example, your LLC might be called Phoenix Property Development Holding Company LLC, and you have a chain called Gila Riverside Apartments. You should file a Trade Name to let the Wisconsin Corporation Commission know. In Wisconsin, you can do that online, or you can have Incfile do it on your behalf through our Assumed Business Name service.`,
+    content: `For example, your LLC might be called Wisconsin Travel and Tourism Holding Company LLC and you have a chain called Riverside Rovers. You should file a trade name to let the Wisconsin Department of Financial Institutions know`,
     marginBottom: 20,
   },
   {
