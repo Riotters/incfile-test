@@ -10,6 +10,7 @@ import { Paragraph } from "../atoms/typography/paragraph";
 import IconListColorBox from "../molecules/text-blocks/icon-h4-list-color";
 import Accordion from "../organisms/accordion/accordion";
 import NumericList from "../organisms/lists/numeric-boxed-list";
+import Image from "../atoms/image/image";
 
 const Wrapper = styled.div`
   display: flex;
@@ -46,6 +47,7 @@ const Content = ({ content }) => {
 
           {item.type === "accordion" && <Accordion tab content={item.content} bottomMargin={item.marginBottom} />}
           {item.type === "numeric-list" && <NumericList content={item.content} bottomMargin={item.marginBottom} />}
+          {item.type === "image" && <Image filename={item.content} bottomMargin={item.marginBottom} />}
         </>
       ))}
     </Wrapper>
