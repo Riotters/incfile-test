@@ -28,7 +28,7 @@ export const requirements = {
       text2: `Due Date: During six-month period ending on last day of anniversary month of incorporation or qualification.`,
       link: {
         text: `State Filing Times`,
-        url: `/`,
+        url: `/state-filing-times/`,
       },
     },
     {
@@ -37,7 +37,7 @@ export const requirements = {
       text2: `Important: The initial Statement of Information filing is due within 90 days of the entity formation date.`,
       link: {
         text: `State Filing Prices`,
-        url: `/`,
+        url: `/state-filing-fees/`,
       },
     },
   ],
@@ -53,6 +53,6 @@ export const rocket = {
   text2: `Only $0 + State Fee to Launch Your Business.`,
   button: {
     text: `launch your business`,
-    url: `/`,
+    url: `${process.env.ORDER_URL}/form-order-now.php`,
   },
 };

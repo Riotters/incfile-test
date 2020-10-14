@@ -1,6 +1,5 @@
-import NavigationTabs from "../../../../components/tabs/navigation-tabs"
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import React from "react";
 import ContentCenter from "../../../partials/content-center";
 import Container from "../../../container";
 import { Tabs, Panel, useTabState } from "@bumaga/tabs"
@@ -79,20 +78,6 @@ const Button = styled.button`
   }
 `;
 
-const FlexRow = styled.div`
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: state-between;
-`;
-
-const FlexColumn = styled.div`
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
-   align-content: space-between;
-`;
-
 const cn = (...args) => args.filter(Boolean).join(" ");
 const Tab = ({ children }) => {
     const { isActive, onClick } = useTabState();
@@ -109,7 +94,184 @@ const Tab = ({ children }) => {
 const Wrapper = styled.section`
 `;
 
-const WhichStatesAreFast = ({ className, content }) => {
+const WhichStatesAreFast = ({ className, content, stateListCompare }) => {    
+    const [filingTimesSlow, setFilingTimesSlow] = useState([
+        { title: '5 Business Days', percent: '0', states: [] },
+        { title: '1 Week', percent: '0', states: [] },
+        { title: '7 Business Days', percent: '0', states: [] }
+    ]);
+
+    const [filingTimesFast, setFilingTimesFast] = useState([
+        { title: '1 Business Day', percent: '0', states: [] },
+        { title: '2 Business Day', percent: '0', states: [] },
+        { title: '2 Business Days', percent: '0', states: [] }
+    ]);
+
+    const [expeditedPrice, setExpeditedPrice] = useState([
+        { title: '$50', percent: '0', states: [] },
+        { title: '$70', percent: '0', states: [] },
+        { title: '$75', percent: '0', states: [] }
+    ]);
+
+    const filterNormalFilingTimes = (entries) => {
+        let states = [];
+        let states2 = [];
+        let states3 = [];
+
+        entries.filter(entry => entry.normalProcessingTime === '5 Business Days').map(entry => {
+            states.push(entry.state);
+
+            setFilingTimesSlow(prevState => {
+                let newFilingTimeSlow = [...prevState];
+                newFilingTimeSlow[0] = {
+                    title: `5 Business Days`,
+                    states: states,
+                    percent: Math.ceil((states.length / 51 * 100)),
+                }
+
+                return newFilingTimeSlow;
+            })
+        });
+
+        entries.filter(entry => entry.normalProcessingTime === '1 Week').map(entry => {
+            states2.push(entry.state);
+
+            setFilingTimesSlow(prevState => {
+                let newFilingTimeSlow = [...prevState];
+                newFilingTimeSlow[1] = {
+                    title: `1 Week`,
+                    states: states2,
+                    percent: Math.ceil((states2.length / 51 * 100)),
+                }
+
+                return newFilingTimeSlow;
+            })
+        });
+
+        entries.filter(entry => entry.normalProcessingTime === '7 Business Days').map(entry => {
+            states3.push(entry.state);
+
+            setFilingTimesSlow(prevState => {
+                let newFilingTimeSlow = [...prevState];
+                newFilingTimeSlow[2] = {
+                    title: `7 Business Days`,
+                    states: states3,
+                    percent: Math.ceil((states3.length / 51 * 100)),
+                }
+
+                return newFilingTimeSlow;
+            })
+        });
+    }
+
+    const filterExpeditedFilingTimes = (entries) => {
+        let states = [];
+        let states2 = [];
+        let states3 = [];
+
+        entries.filter(entry => entry.expeditedProcessingTime === '1 Business Day').map(entry => {
+            states.push(entry.state);
+
+            setFilingTimesFast(prevState => {
+                let newfilingTimesFast = [...prevState];
+                newfilingTimesFast[0] = {
+                    title: `1 Business Day`,
+                    states: states,
+                    percent: Math.ceil((states.length / 51 * 100)),
+                }
+
+                return newfilingTimesFast;
+            })
+        });
+
+        entries.filter(entry => entry.expeditedProcessingTime === '2 Business Day').map(entry => {
+            states2.push(entry.state);
+
+            setFilingTimesFast(prevState => {
+                let newfilingTimesFast = [...prevState];
+                newfilingTimesFast[1] = {
+                    title: `2 Business Day`,
+                    states: states2,
+                    percent: Math.ceil((states2.length / 51 * 100)),
+                }
+
+                return newfilingTimesFast;
+            })
+        });
+
+        entries.filter(entry => entry.expeditedProcessingTime === '2 Business Days').map(entry => {
+            states3.push(entry.state);
+
+            setFilingTimesFast(prevState => {
+                let newfilingTimesFast = [...prevState];
+                newfilingTimesFast[2] = {
+                    title: `2 Business Days`,
+                    states: states3,
+                    percent: Math.ceil((states3.length / 51 * 100)),
+                }
+
+                return newfilingTimesFast;
+            })
+        });
+    }
+
+    const filterExpeditedPrices = (entries) => {
+        let states = [];
+        let states2 = [];
+        let states3 = [];
+
+        entries.filter(entry => entry.expeditedPrice == 50).map(entry => {
+            states.push(entry.state);
+
+            setExpeditedPrice(prevState => {
+                let newData = [...prevState];
+                newData[0] = {
+                    title: `$50`,
+                    states: states,
+                    percent: Math.ceil((states.length / 51 * 100)),
+                }
+
+                return newData;
+            })
+        });
+
+        entries.filter(entry => entry.expeditedPrice ==70).map(entry => {
+            states2.push(entry.state);
+
+            setExpeditedPrice(prevState => {
+                let newData = [...prevState];
+                newData[1] = {
+                    title: `$70`,
+                    states: states2,
+                    percent: Math.ceil((states2.length / 51 * 100)),
+                }
+
+                return newData;
+            })
+        });
+
+        entries.filter(entry => entry.expeditedPrice == 75).map(entry => {
+            states3.push(entry.state);
+
+            setExpeditedPrice(prevState => {
+                let newData = [...prevState];
+                newData[2] = {
+                    title: `$75`,
+                    states: states3,
+                    percent: Math.ceil((states3.length / 51 * 100)),
+                }
+
+                return newData;
+            })
+        });
+    }
+
+    useEffect(() => {
+        filterNormalFilingTimes(stateListCompare);
+        filterExpeditedFilingTimes(stateListCompare);
+        filterExpeditedPrices(stateListCompare);
+    }, [stateListCompare]);
+
     return (
         <Wrapper>
             <Container>
@@ -125,13 +287,15 @@ const WhichStatesAreFast = ({ className, content }) => {
                                 </Scroller>
                             </TabsWrapper>
                             <PanelsWrapper>
-                                {content.tabs.panels.map(function(panel) {
-                                    return (
-                                        <Panel>
-                                            <StatesTable width="970px" entries={panel}/>
-                                        </Panel>
-                                    );
-                                })}
+                                <Panel>
+                                    <StatesTable width="970px" entries={filingTimesSlow} />
+                                </Panel>
+                                <Panel>
+                                    <StatesTable width="970px" entries={filingTimesFast} />
+                                </Panel>
+                                <Panel>
+                                    <StatesTable width="970px" entries={expeditedPrice}/>
+                                </Panel>
                             </PanelsWrapper>
                         </Wrapper>
                     </Tabs>

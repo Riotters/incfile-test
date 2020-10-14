@@ -28,14 +28,14 @@ const MobileInnerContainer = styled.div`
     }
 `;
 
-const ComparisonStateFillingTime = ({ className, content }) => (
+const ComparisonStateFillingTime = ({ className, content, stateList }) => (
     <Wrapper>
         <Container>
             <ContentCenter contentWidth={1170}>
                 <IconTextColorBox className="announcement" rounded Icon={MegafonSVG} content={content.announcement.content} color={content.announcement.color} bottomMargin={32} />
                 <MobileWrapper>
                     <MobileInnerContainer width={300}>
-                        <CompareTable width="100%" headers={content.headers} entries={content.entries} />
+                        <CompareTable width="100%" headers={content.headers} stateListToCompare={stateList} />
                     </MobileInnerContainer>
                 </MobileWrapper>
             </ContentCenter>
