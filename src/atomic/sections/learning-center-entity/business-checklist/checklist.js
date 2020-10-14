@@ -22,23 +22,6 @@ const Wrapper = styled.section`
     }
 `;
 
-const BlockCircle = styled.div`
-  border-radius: 50%;
-  box-shadow: ${(props) => props.imageShadowColor};
-  margin-right: 24px;
-`;
-
-const FlexRow = styled.div`
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    ${ props => props.marginBottom ? ("margin-bottom: " + props.marginBottom + "px;") : "" }
-`;
-
-const HeaderWrapper = styled.div`
-
-`;
-
 class SingleChecklistSection extends React.Component {
     constructor(props) {
         super(props);
@@ -65,27 +48,13 @@ class SingleChecklistSection extends React.Component {
         const { top } = this.props.content;
 
         return (
-            <ContentCenter contentWidth={970}>
+            <ContentCenter contentWidth={970} style={{"margin-top": "40px"}}>
                 <Checklist Items={this.state.items} icon={top.icon}
                            title={top.header} iconBgColor={top.background} iconShadowColor={top.shadow} />
             </ContentCenter>
         );
     }
 }
-
-const SingleHeader = ({ header, SvgImage, imageShadowColor, imageBackgroundColor, done, total }) => (
-    <FlexRow marginBottom={32}>
-        <BlockCircle imageShadowColor={imageShadowColor}>
-            <Circle circleColor={imageBackgroundColor} padding={0} height={80} width={80}>
-                <SvgImage />
-            </Circle>
-        </BlockCircle>
-        <HeaderWrapper>
-            <Heading size={3} bottomMargin={8}>{header}</Heading>
-            <p>{done} of {total} completed</p>
-        </HeaderWrapper>
-    </FlexRow>
-);
 
 const ChecklistSection = ({ className, content, buttonAction }) => (
     <Wrapper>
@@ -96,11 +65,9 @@ const ChecklistSection = ({ className, content, buttonAction }) => (
             <OvalSVG2 />
         </Oval>
         <Container>
-            <Tabs>
-                {content.checklists.map((checklist) => (
-                    <SingleChecklistSection content={checklist} />
-                ))}
-            </Tabs>
+            {content.checklists.map((checklist) => (
+                <SingleChecklistSection content={checklist} />
+            ))}
             <ContentCenter>
                 <Button content={content.button} theme="primary56" arrow onClick={buttonAction} />
             </ContentCenter>
