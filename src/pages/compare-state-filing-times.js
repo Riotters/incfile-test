@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import Layout from "../components/layout";
 import styled from "styled-components";
 import SEO from "../components/seo";
@@ -13,56 +13,6 @@ import ComparisonStateFillingTime from "../atomic/sections/manage-your-company/c
 import OvalSVG from "../images/ovals/easily-compare-state-filling-time-fast-top-left.inline.svg";
 import Oval from "../atomic/atoms/icons/oval";
 
-//mrs-review-stars-5481
-
-const ItemColumn = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: ${(props) => props.align ?? "center"};
-  justify-content: ${(props) => props.justify ?? "center"};
-  color: ${color.grey2};
-
-  * {
-    font-size: 14px;
-  }
-
-  strong {
-    color: ${color.black};
-  }
-`;
-
-const ItemRow = styled.div`
-  ${(props) => (props.marginTop ? "margin-top:" + props.marginTop + "px" : "")};
-  margin-right: ${(props) => props.marginRight ?? 43}px;
-  display: flex;
-  flex-direction: row;
-  align-items: ${(props) => props.align ?? "flex-start"};
-  justify-content: ${(props) => props.justify ?? "space-between"};
-
-  & > svg {
-    margin-right: 8px;
-    margin-top: 2px;
-  }
-`;
-
-const ImageWrapper = styled.div`
-  width: 80px;
-  height: 80px;
-  box-shadow: ${shadow.white1};
-  background-color: ${color.white};
-  border-radius: 40px;
-  margin-right: 12px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  .gatsby-image-wrapper {
-    width: ${(props) => props.width ?? 0}px;
-    height: ${(props) => props.height ?? 0}px;
-  }
-`;
-
 const GradientWrapper = styled.section`
   background: ${gradient.blue3};
   padding-top: 100px;
@@ -75,21 +25,36 @@ const GradientWrapper = styled.section`
 `;
 
 
-const CompareStateTimes = () => {  
-  return (
-    <Layout>
-    <SEO title="Filing Times" description="Easily Compare State Filing Times" />
-    <Top content={top} />
-    <ComparisonStateFillingTime content={compare} />
-    <GradientWrapper>
-      <Oval width={570} height={570} className="oval" top="0" left="0">
-        <OvalSVG />
-      </Oval>
-      <WhichStatesAreFast content={states} />
-      <Rocket content={rocket} />
-    </GradientWrapper>
-  </Layout>
-  )
+const CompareStateTimes = () => { 
+    let [stateList, setStateList] = useState([]);
+
+    const getStateList = async () => {
+        const data = await fetch(`http://api.cool/api/v1/getStateFilingTimesToCompare`).then(response => response.json());
+        return data;
+    }
+
+    useEffect(() => {
+        getStateList()
+            .then(data => {
+                console.log(data);
+                setStateList(data);
+            });
+    }, []);
+
+    return (
+        <Layout>
+            <SEO title="Filing Times" description="Easily Compare State Filing Times" />
+            <Top content={top} />
+            <ComparisonStateFillingTime content={compare} stateList={stateList} />
+            <GradientWrapper>
+            <Oval width={570} height={570} className="oval" top="0" left="0">
+                <OvalSVG />
+            </Oval>
+            <WhichStatesAreFast content={states} />
+            <Rocket content={rocket} />
+            </GradientWrapper>
+        </Layout>
+    )
 };
 
 export default CompareStateTimes;

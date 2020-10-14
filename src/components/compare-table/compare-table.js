@@ -85,7 +85,7 @@ const StyledP = styled.p`
     align-self: flex-start;
 `;
 
-const CompareTable = ({width}) => {
+const CompareTable = ({stateListToCompare, width}) => {
     let [statesListOpen, setStateListOpen] = useState(false);
     let [statesList, setStateList] = useState([]);
     let [statesInColumn, setStatesInColumn] = useState(null);
@@ -99,19 +99,10 @@ const CompareTable = ({width}) => {
         });
     };
 
-    const getStateList = async () => {
-        const data = await fetch(`http://api.cool/api/v1/getStateFilingTimesToCompare`).then(response => response.json());
-        return data;
-    }
-
     useEffect(() => {
-        getStateList()
-            .then(data => {
-                console.log(data);
-                setStateList(data);
-                setStatesInColumn(Math.ceil(data.length / 4));
-            });
-    }, []);
+        setStateList(stateListToCompare);
+        setStatesInColumn(Math.ceil(stateListToCompare.length / 4));
+    }, [stateListToCompare]);
 
     const headers = [`State`, `Normal processing time`, `Expedited processing time`, `Expedited Price`];
     
