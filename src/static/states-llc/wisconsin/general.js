@@ -2,29 +2,29 @@ export const tabPages = {
   pages: [
     {
       name: `How To Guide`,
-      path: `/arizona-llc/`,
+      path: `/wisconsin-llc/`,
     },
     {
       name: `Name Your Business`,
-      path: `/arizona-llc/how-to-name-your-llc/`,
+      path: `/wisconsin-llc/how-to-name-your-llc/`,
     },
     {
       name: `Registered Agent`,
-      path: `/arizona-llc/registered-agents-arizona-llc/`,
+      path: `/wisconsin-llc/registered-agents-wisconsin-llc/`,
     },
     {
       name: `Filing Fee & Requirements`,
-      path: `/arizona-llc/form-filling-permit-requirements/`,
+      path: `/wisconsin-llc/form-filling-permit-requirements/`,
     },
     {
       name: `Business Taxes`,
-      path: `/arizona-llc/business-taxes/`,
+      path: `/wisconsin-llc/business-taxes/`,
     },
     {
       name: `What To Do Next?`,
       path: `/other/after-forming-llc/`,
     },
-  ]
+  ],
 };
 
 export const rocket = {

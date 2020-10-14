@@ -2,29 +2,29 @@ export const tabPages = {
   pages: [
     {
       name: `How To Guide`,
-      path: `/arizona-llc/`,
+      path: `/new-hampshire-llc/`,
     },
     {
       name: `Name Your Business`,
-      path: `/arizona-llc/how-to-name-your-llc/`,
+      path: `/new-hampshire-llc/how-to-name-your-llc/`,
     },
     {
       name: `Registered Agent`,
-      path: `/arizona-llc/registered-agents-arizona-llc/`,
+      path: `/new-hampshire-llc/registered-agents-new-hampshire-llc/`,
     },
     {
       name: `Filing Fee & Requirements`,
-      path: `/arizona-llc/form-filling-permit-requirements/`,
+      path: `/new-hampshire-llc/form-filling-permit-requirements/`,
     },
     {
       name: `Business Taxes`,
-      path: `/arizona-llc/business-taxes/`,
+      path: `/new-hampshire-llc/business-taxes/`,
     },
     {
       name: `What To Do Next?`,
       path: `/other/after-forming-llc/`,
     },
-  ]
+  ],
 };
 
 export const rocket = {

@@ -2,29 +2,29 @@ export const tabPages = {
   pages: [
     {
       name: `How To Guide`,
-      path: `/arizona-llc/`,
+      path: `/south-dakota-llc/`,
     },
     {
       name: `Name Your Business`,
-      path: `/arizona-llc/how-to-name-your-llc/`,
+      path: `/south-dakota-llc/how-to-name-your-llc/`,
     },
     {
       name: `Registered Agent`,
-      path: `/arizona-llc/registered-agents-arizona-llc/`,
+      path: `/south-dakota-llc/registered-agents-south-dakota-llc/`,
     },
     {
       name: `Filing Fee & Requirements`,
-      path: `/arizona-llc/form-filling-permit-requirements/`,
+      path: `/south-dakota-llc/form-filling-permit-requirements/`,
     },
     {
       name: `Business Taxes`,
-      path: `/arizona-llc/business-taxes/`,
+      path: `/south-dakota-llc/business-taxes/`,
     },
     {
       name: `What To Do Next?`,
       path: `/other/after-forming-llc/`,
     },
-  ]
+  ],
 };
 
 export const rocket = {

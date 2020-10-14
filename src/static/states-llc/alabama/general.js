@@ -2,29 +2,29 @@ export const tabPages = {
   pages: [
     {
       name: `How To Guide`,
-      path: `/arizona-llc/`,
+      path: `/alabama-llc/`,
     },
     {
       name: `Name Your Business`,
-      path: `/arizona-llc/how-to-name-your-llc/`,
+      path: `/alabama-llc/how-to-name-your-llc/`,
     },
     {
       name: `Registered Agent`,
-      path: `/arizona-llc/registered-agents-arizona-llc/`,
+      path: `/alabama-llc/registered-agents-arizona-llc/`,
     },
     {
       name: `Filing Fee & Requirements`,
-      path: `/arizona-llc/form-filling-permit-requirements/`,
+      path: `/alabama-llc/form-filling-permit-requirements/`,
     },
     {
       name: `Business Taxes`,
-      path: `/arizona-llc/business-taxes/`,
+      path: `/alabama-llc/business-taxes/`,
     },
     {
       name: `What To Do Next?`,
       path: `/other/after-forming-llc/`,
     },
-  ]
+  ],
 };
 
 export const rocket = {
