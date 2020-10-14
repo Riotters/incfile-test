@@ -1,19 +1,19 @@
 import React from "react";
-import Layout from "../../components/layout";
+import Layout from "../components/layout";
 import styled from "styled-components";
-import SEO from "../../components/seo";
+import SEO from "../components/seo";
 //Sections
-import Top from "../../atomic/partials/top";
-import {business_formation, setup, top, rocket} from "../../static/manage-your-company/home-page-v3";
-import Button from "../../atomic/molecules/buttons/button";
-import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
-import BusinessFormation from "../../atomic/sections/manage-your-company/home-page-v3/business-formation";
-import SetupYourBusiness from "../../atomic/sections/manage-your-company/home-page-v3/setup-your-business";
-import Rocket from "../../atomic/sections/review-entity-types/c-corporation/rocket";
-import StarSVG from "../../images/icons/star-yellow.inline.svg";
-import {shadow} from "../../atomic/atoms/styles/shadows";
-import {color} from "../../atomic/atoms/styles/colors";
-import Image from "../../atomic/atoms/image/image";
+import Top from "../atomic/partials/top";
+import {business_formation, setup, top, rocket} from "../static/manage-your-company/home-page-v3";
+import Button from "../atomic/molecules/buttons/button";
+import Buttonsbox from "../atomic/atoms/boxes/top-buttons-box";
+import BusinessFormation from "../atomic/sections/manage-your-company/home-page-v3/business-formation";
+import SetupYourBusiness from "../atomic/sections/manage-your-company/home-page-v3/setup-your-business";
+import Rocket from "../atomic/sections/review-entity-types/c-corporation/rocket";
+import StarSVG from "../images/icons/star-yellow.inline.svg";
+import {shadow} from "../atomic/atoms/styles/shadows";
+import {color} from "../atomic/atoms/styles/colors";
+import Image from "../atomic/atoms/image/image";
 
 //mrs-review-stars-5481
 
@@ -76,7 +76,7 @@ const FiveStarRow = styled.div`
 
 const HomePageV3 = () => (
     <Layout>
-        <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
+        <SEO title="LLC Filing & Business Formation - Start Your Company Today" description="Start your business today for as little as $0 + state fees. Incfile helps you quickly and easily create your LLC or other business entity. Learn more." />
         <Top imageName="home-page-v3-top-9458" imageAlt="Start your own company" ovalColor="green" headlineWidth="700" textWidth="700">
             <h1>{top.header}</h1>
             <p>{top.text}</p>

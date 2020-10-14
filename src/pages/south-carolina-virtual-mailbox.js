@@ -1,19 +1,19 @@
 import React from "react";
-import Layout from "../../components/layout";
+import Layout from "../components/layout";
 import styled from "styled-components";
-import SEO from "../../components/seo";
+import SEO from "../components/seo";
 //Sections
-import Top from "../../atomic/partials/top";
-import Button from "../../atomic/molecules/buttons/button";
-import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
+import Top from "../atomic/partials/top";
+import Button from "../atomic/molecules/buttons/button";
+import Buttonsbox from "../atomic/atoms/boxes/top-buttons-box";
 
-import {advantages, faqs, top} from "../../static/learning-center-entity/north-carolina-virtual-mailboxes";
-import ArizonaStreetAddrVirtualMXAdvantages from "../../atomic/sections/learning-center-entity/arizona-virtual-mailboxes/advantages";
-import FaqSection from "../../atomic/sections/learning-center-entity/arizona-virtual-mailboxes/faqs";
+import {advantages, faqs, top} from "../static/learning-center-entity/south-carolina-virtual-mailboxes";
+import ArizonaStreetAddrVirtualMXAdvantages from "../atomic/sections/learning-center-entity/arizona-virtual-mailboxes/advantages";
+import FaqSection from "../atomic/sections/learning-center-entity/arizona-virtual-mailboxes/faqs";
 
 const VirtualMailBoxes = () => (
     <Layout>
-        <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
+        <SEO title="Sourth Carolina Virtual Mailbox & Mail Scanning Service" description="Need a business address in SC? Our virtual mailbox service gives you a real street address and lets you get your mail no matter where you are. Learn more." />
         <Top imageName="mr-contact-new-sales-9845" imageAlt="Mrs Bulb New Sales" ovalColor="green" headlineWidth="500" textWidth="800">
             <h1>{top.header}</h1>
             <p>{top.text}</p>
