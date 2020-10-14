@@ -119,7 +119,7 @@ const IndexPage = () => (
         <Link to="/manage-your-company/corporatellc-kit/">Corporate LLC Kit</Link>
         <Link to="/business-accounting/">Filling Business Taxes</Link>
         <Link to="/fictitious-business-or-trade-name/">Fictitious Business</Link>
-        <Link to="/manage-your-company/home-page-v3">Home Page v3</Link>
+        <Link to="/home-page-v3/">Home Page v3</Link>
         <Link to="/manage-your-company/compare-state-filling-time">Compare State Filling Time</Link>
 
         <h2>Review Entity Types</h2>
@@ -147,35 +147,35 @@ const IndexPage = () => (
         <Link to="/learning-center-entity/business-name-search">Business Name Search (no details)</Link>
         <Link to="/learning-center-entity/business-entity-quiz">Business Entity Quiz</Link>
 
-        <Link to="/learning-center-entity/virtual-mailboxes">Virtual Mailboxes</Link>
-
-        <Link to="/learning-center-entity/arizona-virtual-mailboxes">Arizona Virtual Mailboxes</Link>
-        <Link to="/learning-center-entity/california-virtual-mailboxes">California Virtual Mailboxes</Link>
-        <Link to="/learning-center-entity/colorado-virtual-mailboxes">Colorado Virtual Mailboxes</Link>
-        <Link to="/learning-center-entity/delaware-virtual-mailboxes">Delaware Virtual Mailboxes</Link>
-        <Link to="/learning-center-entity/florida-virtual-mailboxes">Florida Virtual Mailboxes</Link>
-        <Link to="/learning-center-entity/georgia-virtual-mailboxes">Georgia Virtual Mailboxes</Link>
-        <Link to="/learning-center-entity/illinois-virtual-mailboxes">Illinois Virtual Mailboxes</Link>
-        <Link to="/learning-center-entity/massachusetts-virtual-mailboxes">Massachusetts Virtual Mailboxes</Link>
-        <Link to="/learning-center-entity/nevada-virtual-mailboxes">Nevada Virtual Mailboxes</Link>
-        <Link to="/learning-center-entity/new-york-virtual-mailboxes">New York Virtual Mailboxes</Link>
-        <Link to="/learning-center-entity/new-mexico-virtual-mailboxes">New Mexico Virtual Mailboxes</Link>
-        <Link to="/learning-center-entity/new-jersey-virtual-mailboxes">New Jersey Virtual Mailboxes</Link>
-        <Link to="/learning-center-entity/north-carolina-virtual-mailboxes">North Carolina Virtual Mailboxes</Link>
-        <Link to="/learning-center-entity/ohio-virtual-mailboxes">Ohio Virtual Mailboxes</Link>
-        <Link to="/learning-center-entity/south-carolina-virtual-mailboxes">South Carolina Virtual Mailboxes</Link>
-        <Link to="/learning-center-entity/oregon-virtual-mailboxes">Oregon Virtual Mailboxes</Link>
-        <Link to="/learning-center-entity/south-dakota-virtual-mailboxes">South Dakota Virtual Mailboxes</Link>
-        <Link to="/learning-center-entity/texas-virtual-mailboxes">Texas Virtual Mailboxes</Link>
-        <Link to="/learning-center-entity/pennsylvania-virtual-mailboxes">Pennsylvania Virtual Mailboxes</Link>
-        <Link to="/learning-center-entity/utah-virtual-mailboxes">Utah Virtual Mailboxes</Link>
-        <Link to="/learning-center-entity/virginia-virtual-mailboxes">Virginia Virtual Mailboxes</Link>
-        <Link to="/learning-center-entity/washington-virtual-mailboxes">Washington Virtual Mailboxes</Link>
-
         <Link to="/learning-center-entity/alaska-corporation">Alaska Corporation</Link>
         <h2>Corporation State Information</h2>
         <Link to="/corporation-state-information">Corporation State Information</Link>
         <Link to="/corporation-state-information/california-corporation">California Corporation (WIP)</Link>
+
+        <h2>Virtual Mailbox</h2>
+        <Link to="/virtual-mailbox/">Virtual mailbox</Link>
+        <Link to="/arizona-virtual-mailbox/">Arizona Virtual mailbox</Link>
+        <Link to="/california-virtual-mailbox/">California Virtual mailbox</Link>
+        <Link to="/colorado-virtual-mailbox/">Colorado Virtual mailbox</Link>
+        <Link to="/delaware-virtual-mailbox/">Delaware Virtual mailbox</Link>
+        <Link to="/florida-virtual-mailbox/">Florida Virtual mailbox</Link>
+        <Link to="/georgia-virtual-mailbox/">Georgia Virtual mailbox</Link>
+        <Link to="/illinois-virtual-mailbox/">Illinois Virtual mailbox</Link>
+        <Link to="/massachusetts-virtual-mailbox/">Massachusetts Virtual mailbox</Link>
+        <Link to="/nevada-virtual-mailbox/">Nevada Virtual mailbox</Link>
+        <Link to="/new-york-virtual-mailbox/">New York Virtual mailbox</Link>
+        <Link to="/new-mexico-virtual-mailbox/">New Mexico Virtual mailbox</Link>
+        <Link to="/new-jersey-virtual-mailbox/">New Jersey Virtual mailbox</Link>
+        <Link to="/north-carolina-virtual-mailbox/">North Carolina Virtual mailbox</Link>
+        <Link to="/ohio-virtual-mailbox/">Ohio Virtual mailbox</Link>
+        <Link to="/south-carolina-virtual-mailbox/">South Carolina Virtual mailbox</Link>
+        <Link to="/oregon-virtual-mailbox/">Oregon Virtual mailbox</Link>
+        <Link to="/south-dakota-virtual-mailbox/">South Dakota Virtual mailbox</Link>
+        <Link to="/texas-virtual-mailbox/">Texas Virtual mailbox</Link>
+        <Link to="/pennsylvania-virtual-mailbox/">Pennsylvania Virtual mailbox</Link>
+        <Link to="/utah-virtual-mailbox/">Utah Virtual mailbox</Link>
+        <Link to="/virginia-virtual-mailbox/">Virginia Virtual mailbox</Link>
+        <Link to="/washington-virtual-mailbox/">Washington Virtual mailbox</Link>
 
         <h2>Search your name availability</h2>
         <Link to="/entity-search/new-york-entity-search">New York Entity Search</Link>
@@ -361,7 +361,7 @@ const IndexPage = () => (
         <Link to="/start-a-business/food-truck-business">Food Truck Business</Link>
         <Link to="/start-a-business/gym-personal-training">Gym Personal Training</Link>
         <Link to="/start-a-business/real-estate-business">Real Estate Business</Link>
-        <Link to="/start-a-business/digital-nomad">Digital Nomad</Link>
+        <Link to="/start-a-business/digital-nomad-business/">Digital Nomad</Link>
         <Link to="/start-a-business/beauty-salon">Beauty Salon</Link>
         <Link to="/start-a-business/cleaning-business">Cleaning Business</Link>
         <Link to="/start-a-business/catering-business">Catering Business</Link>

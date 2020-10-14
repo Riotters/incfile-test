@@ -244,7 +244,7 @@ const HeaderAlt = ({ siteTitle }) => {
   return (
     <Wrapper>
       <Logo>
-        <LogoSVG />
+        <Link to="/"><LogoSVG /></Link>
       </Logo>
       <MobileWrapper showNav={menu}>
         <Navigation>

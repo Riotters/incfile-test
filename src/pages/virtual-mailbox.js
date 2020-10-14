@@ -1,43 +1,43 @@
 import React from "react";
-import Layout from "../../components/layout";
+import Layout from "../components/layout";
 import styled from "styled-components";
-import SEO from "../../components/seo";
+import SEO from "../components/seo";
 //Sections
-import Top from "../../atomic/partials/top";
-import Button from "../../atomic/molecules/buttons/button";
-import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
-import VirtualMailbox from "../../atomic/sections/learning-center-entity/virtual-mailboxes/welcome-incfile-virtual-address";
-import AdvantagesSection from "../../atomic/sections/learning-center-entity/virtual-mailboxes/advantages-virtual-addresses";
+import Top from "../atomic/partials/top";
+import Button from "../atomic/molecules/buttons/button";
+import Buttonsbox from "../atomic/atoms/boxes/top-buttons-box";
+import VirtualMailbox from "../atomic/sections/learning-center-entity/virtual-mailboxes/welcome-incfile-virtual-address";
+import AdvantagesSection from "../atomic/sections/learning-center-entity/virtual-mailboxes/advantages-virtual-addresses";
 
-import {top, mailboxes, advantages, availability, moreInfo} from "../../static/learning-center-entity/virtual-mailboxes";
-import ServiceAvailableSection from "../../atomic/sections/learning-center-entity/virtual-mailboxes/virtual-service-available-states";
-import VirtualMailboxesMoreInfo from "../../atomic/sections/learning-center-entity/virtual-mailboxes/more-information";
+import {top, mailboxes, advantages, availability, moreInfo} from "../static/learning-center-entity/virtual-mailboxes";
+import ServiceAvailableSection from "../atomic/sections/learning-center-entity/virtual-mailboxes/virtual-service-available-states";
+import VirtualMailboxesMoreInfo from "../atomic/sections/learning-center-entity/virtual-mailboxes/more-information";
 
-import CCTVIcon from "../../images/icons/complete-mail-scanning-of-all-correspondence.inline.svg";
-import WWWAccess from "../../images/icons/worldwide-access-with-web.inline.svg";
-import Security from "../../images/icons/security-and-encryption.inline.svg";
-import Notification from "../../images/icons/email-notification.inline.svg";
-import Mobile from "../../images/icons/mobile-compatibility.inline.svg";
+import CCTVIcon from "../images/icons/complete-mail-scanning-of-all-correspondence.inline.svg";
+import WWWAccess from "../images/icons/worldwide-access-with-web.inline.svg";
+import Security from "../images/icons/security-and-encryption.inline.svg";
+import Notification from "../images/icons/email-notification.inline.svg";
+import Mobile from "../images/icons/mobile-compatibility.inline.svg";
 
-import {Heading} from "../../atomic/atoms/typography/heading";
-import {Paragraph} from "../../atomic/atoms/typography/paragraph";
-import TextBlockWithImage from "../../atomic/molecules/mixed-blocks/text-block-with-absolute-image";
-import ContentCenter from "../../atomic/partials/content-center";
+import {Heading} from "../atomic/atoms/typography/heading";
+import {Paragraph} from "../atomic/atoms/typography/paragraph";
+import TextBlockWithImage from "../atomic/molecules/mixed-blocks/text-block-with-absolute-image";
+import ContentCenter from "../atomic/partials/content-center";
 
-import CurveSVG from "../../images/curves/top-right-babyblue1.inline.svg";
-import {color} from "../../atomic/atoms/styles/colors";
-import Curve from "../../atomic/atoms/icons/curve";
+import CurveSVG from "../images/curves/top-right-babyblue1.inline.svg";
+import {color} from "../atomic/atoms/styles/colors";
+import Curve from "../atomic/atoms/icons/curve";
 
-import OvalSVG from "../../images/ovals/top-left-transparent-reverse-big-red3.inline.svg";
-import OvalSVG2 from "../../images/ovals/bottom-right-transparent-babyblue1-small.inline.svg";
+import OvalSVG from "../images/ovals/top-left-transparent-reverse-big-red3.inline.svg";
+import OvalSVG2 from "../images/ovals/bottom-right-transparent-babyblue1-small.inline.svg";
 
-import Oval from "../../atomic/atoms/icons/oval";
+import Oval from "../atomic/atoms/icons/oval";
 
 
 
 const VirtualMailBoxes = () => (
     <Layout>
-        <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
+        <SEO title="Virtual Mailbox & Virtual Address Service | Mail Scanning" description="Enjoy the benefits of mail scanning and a virtual mailbox wherever you are with Incfile’s Virtual Address service. Learn more. " />
         <Top imageName="mr-contact-new-sales-9845" imageAlt="Mrs Bulb New Sales" ovalColor="blue" headlineWidth="500" textWidth="800">
             <h1>{top.header}</h1>
             <p>{top.text}</p>

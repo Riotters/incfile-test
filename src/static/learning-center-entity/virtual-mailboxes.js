@@ -10,7 +10,7 @@ Correspondence Anywhere.`,
     button: [
         {
         text: `Start now`,
-        url: `/`
+        url: `${process.env.ORDER_URL}/form-order-now.php`,
     }]
 }
 
@@ -52,7 +52,7 @@ export const advantages = {
             text: "Traveling and working from other countries is an amazing experience. Now you never worry about missing important mail on the go.",
             image: "digital-nomad-5392",
             link: {
-                url: "/",
+                url: "/start-a-business/digital-nomad-business/",
                 text: "Digital nomads"
             },
             background: color.purple3
@@ -64,14 +64,13 @@ export const availability = {
     header: "States Where Virtual Address Service Is Available",
     text: "Incfile currently provides virtual mailboxes in 22 different states across the country, providing you with the flexibility you need to run your business in the location that makes the most sense for you.",
     form: {
-        header: "Amendment",
         field: {
             label: "State",
             options: "Select style",
         },
         button: {
-            text: "Order now",
-            url: "/"
+            text: "Choose State",
+            url: `#`
         }
     }
 }
