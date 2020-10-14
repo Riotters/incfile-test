@@ -9,8 +9,8 @@ import LLCLayout from "../atomic/partials/states-llc/louisiana";
 import ContentMap from "../atomic/partials/content-map";
 
 // Content
-import { howToGuide } from "../static/states-llc/louisiana/home";
-import { tabPages } from "../static/states-llc/louisiana/general";
+import { howToGuide } from "../static/states-llc/new-hampshire/home";
+import { tabPages } from "../static/states-llc/new-hampshire/general";
 
 function LLCIndex() {
   return (
