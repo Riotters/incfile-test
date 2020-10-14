@@ -24,13 +24,13 @@ const AboutSection = ({ className, content }) => (
     </Oval>
     <ImageContent image="web-address-search">
       <Path content={content.links} />
-      <Heading size={4} bottomMargin="48">
+      <Heading size={4} bottomMargin="32">
         {content.header}
       </Heading>
-      <Paragraph big bottomMargin="24">
+      <Paragraph big bottomMargin="16">
         {content.text}
       </Paragraph>
-      <Paragraph big bottomMargin="16">
+      <Paragraph big bottomMargin="24">
         {content.text2}
       </Paragraph>
       <IconListColorBox content={content.list} color={color.red2} curve curveColor={color.green2} rounded bottomMargin="48" />

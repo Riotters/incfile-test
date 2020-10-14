@@ -11,7 +11,7 @@ import PlayerSVG from "../images/icons/player.inline.svg";
 import CloseSVG from "../images/icons/close.inline.svg";
 
 const PortalComponent = ({ children, visible }) => {
-  return createPortal(<LightBoxModal visible={visible}>{children}</LightBoxModal>, document.getElementById("portal-lightbox"));
+return createPortal(<LightBoxModal visible={visible}>{children}</LightBoxModal>, document.getElementById("portal-lightbox"));
 };
 
 class LightBox extends Component {

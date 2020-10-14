@@ -24,25 +24,25 @@ const AboutSection = ({ className, content }) => (
     </Oval>
     <ImageContent image="web-address-search">
       <Path content={content.links} />
-      <Heading size={3} bottomMargin="48">
+      <Heading size={3} bottomMargin="32">
         {content.header}
       </Heading>
-      <Heading size={3} bottomMargin="32">
+      <Heading size={3} bottomMargin="24">
         {content.header2}
       </Heading>
-      <Paragraph big bottomMargin="24">
+      <Paragraph big bottomMargin="16">
         {content.text}
       </Paragraph>
-      <Paragraph big bottomMargin="24">
+      <Paragraph big bottomMargin="16">
         {content.text2}
       </Paragraph>
-      <Paragraph big bottomMargin="24">
+      <Paragraph big bottomMargin="16">
         {content.text3}
       </Paragraph>
       <Paragraph big bottomMargin="24">
         {content.text4}
       </Paragraph>
-      <IconListColorBox content={content.list} color={color.purple3} curve curveColor={color.green2} rounded bottomMargin="24" />
+      <IconListColorBox content={content.list} color={color.purple3} rounded bottomMargin="24" />
       <Paragraph big bottomMargin="24">
         {content.text5}
       </Paragraph>
@@ -50,13 +50,13 @@ const AboutSection = ({ className, content }) => (
       <Paragraph big bottomMargin="48">
         {content.text6}
       </Paragraph>
-      <Heading size={3} bottomMargin="32">
+      <Heading size={3} bottomMargin="24">
         {content.header3}
       </Heading>
       <Paragraph big bottomMargin="24">
         {content.text7}
       </Paragraph>
-      <IconListColorBox content={content.list3} color={color.babyblue3} curve curveColor={color.red2} rounded bottomMargin="24" />
+      <IconListColorBox content={content.list3} color={color.babyblue3} rounded bottomMargin="24" />
       <Paragraph big bottomMargin="48">
         {content.text8}
       </Paragraph>

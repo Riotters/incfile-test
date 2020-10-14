@@ -63,10 +63,10 @@ const AboutSection = ({ className, content }) => (
       <Heading size={4} bottomMargin="24">
         {content.header2}
       </Heading>
-      <Paragraph big bottomMargin="16">
+      <Paragraph big bottomMargin="24">
         {content.text3}
       </Paragraph>
-      <IconListColorBox content={content.list} color={color.purple3} rounded bottomMargin="16" />
+      <IconListColorBox content={content.list} color={color.purple3} rounded bottomMargin="24" />
       <Paragraph big bottomMargin="48" mixed>
         {parse(content.text4)}
       </Paragraph>
@@ -109,7 +109,7 @@ const AboutSection = ({ className, content }) => (
       <Heading size={4} bottomMargin="24">
         {content.header5}
       </Heading>
-      <Paragraph big bottomMargin="16">
+      <Paragraph big bottomMargin="24">
         {content.text10}
       </Paragraph>
       <IconListColorBox content={content.list2} color={color.orange3} rounded bottomMargin="24" />
@@ -122,7 +122,7 @@ const AboutSection = ({ className, content }) => (
       <Heading size={4} bottomMargin="24">
         {content.header6}
       </Heading>
-      <Paragraph big bottomMargin="26" mixed>
+      <Paragraph big bottomMargin="16" mixed>
         {parse(content.text11)}
       </Paragraph>
       <Paragraph big bottomMargin="48">
@@ -170,10 +170,10 @@ const AboutSection = ({ className, content }) => (
       <Heading size={4} bottomMargin="24">
         {content.header10}
       </Heading>
-      <Paragraph big bottomMargin="16" mixed>
+      <Paragraph big bottomMargin="24" mixed>
         {parse(content.text18)}
       </Paragraph>
-      <IconListColorBox content={content.list4} color={color.babyblue3} rounded bottomMargin="16" />
+      <IconListColorBox content={content.list4} color={color.babyblue3} rounded bottomMargin="24" />
       <Paragraph big bottomMargin="48">
         {content.text19}
       </Paragraph>

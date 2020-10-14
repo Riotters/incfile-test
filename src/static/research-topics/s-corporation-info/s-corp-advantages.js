@@ -10,7 +10,6 @@ export const about = {
     },
   ],
   header: `What are the Advantages of an S Corporation?`,
-  header2: `What are the Advantages of an S Corporation?`,
   text: `Limited Personal Liability.`,
   list: {
     header: `This limits the liability of the owners/investors to only the amount of their investment. The owners of a corporation are not personally liable for business debts, claims, or other liabilities.`,
