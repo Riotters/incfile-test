@@ -10,7 +10,6 @@ export const about = {
       },
     ],
     header: `LLC vs. C Corporation`,
-    header2: `LLC vs. C Corporation`,
     text: `C-Corporations are the oldest and probably most common type of large domestic company. Many product and services that people come across daily are provided by corporations.`,
     text2: `And while Limited Liability Companies are a newer entity type than C-Corporations, they offer unique differences that the C-Corporation cannot provide (and vice versa), and in recent years have often become the entity type of choice for newer and smaller businesses.`,
     text3: `One of the primary differences between the two is from the taxing standpoint. C-Corporations are subject to corporate income taxes that are completely separate from their owner(s). Because of this, C-corporations have a greater and more complex tax reporting responsibility than most companies.`,

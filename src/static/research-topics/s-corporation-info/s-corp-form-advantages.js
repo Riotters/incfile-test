@@ -10,7 +10,6 @@ export const about = {
     },
   ],
   header: `Is there a limit to the amount of shareholders an S Corporation can have?`,
-  header2: `Is there a limit to the amount of shareholders an S Corporation can have?`,
   text: `There are several decisions to consider when forming a business entity; it is important to be familiar with the tax ramifications of a given business entity before it is filed with the designated state agency.
         <a href="/" target="_blank">Forming an S Corporation</a>
         is one of several options when deciding which type of business entity to form; other options include the LLC and C Corporation. There are several practical and legal concerns to take under consideration as you determine how to structure your business. You must establish whether or not your company will go public, you also need to consider the number of partners or shareholders within the company, and, perhaps most importantly, explore all the tax ramifications of each business entity. With all these considerations in mind, there are some distinct advantages to choosing the S Corporation as your business entity.`,

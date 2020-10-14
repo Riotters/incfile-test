@@ -35,7 +35,7 @@ const AboutSection = ({ className, content }) => (
       <Heading size={3} bottomMargin="24">
         {content.header2}
       </Heading>
-      <Paragraph big bottomMargin="48">
+      <Paragraph big bottomMargin="24">
         {content.text2}
       </Paragraph>
       <IconListColorBox content={content.list} color={color.babyblue3} rounded bottomMargin="48" />
@@ -48,11 +48,11 @@ const AboutSection = ({ className, content }) => (
       <Heading size={3} bottomMargin="24">
         {content.header4}
       </Heading>
-      <Paragraph big bottomMargin="16">
+      <Paragraph big bottomMargin="24">
         {content.text4}
       </Paragraph>
-      <IconListColorBox content={content.list2} color={color.green3} curve curveColor={color.orange2} rounded bottomMargin="16" />
-      <Paragraph big bottomMargin="16" mixed>
+      <IconListColorBox content={content.list2} color={color.green3} curve curveColor={color.orange2} rounded bottomMargin="24" />
+      <Paragraph big bottomMargin="24" mixed>
         {parse(content.text5)}
       </Paragraph>
       <Button content={content.button} theme="primary56" arrow margin="0 auto 48px 0" />

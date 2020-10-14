@@ -10,7 +10,6 @@ export const about = {
       },
     ],
     header: `Can a Limited Liability Company (LLC) be taxed as an S Corporation?`,
-    header2: `Can a Limited Liability Company (LLC) be taxed as an S Corporation?`,
     text: `In a recovering economy, many entrepreneurs may think of this as a prime moment to form a business entity and catch increasing consumer dollars. One tech startup,
         <a href="https://www.quicksprout.com/beginners-guide-to-corporate-entities/#more-1963" rel="noopener noreferrer nofollow" target="_blank">QuickSprout,</a>
         is dedicated to providing entrepreneurs insight on business formation and a recent post explains why filing an LLC might be the best move to make for a new company.`,

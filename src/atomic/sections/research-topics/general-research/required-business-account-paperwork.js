@@ -33,21 +33,21 @@ const AboutSection = ({ className, content }) => (
       <Heading size={3} bottomMargin="24">
         {content.header2}
       </Heading>
-      <Paragraph big bottomMargin="16">
+      <Paragraph big bottomMargin="24">
         {content.text2}
       </Paragraph>
       <IconListColorBox content={content.list} color={color.green3} curve curveColor={color.orange2} rounded bottomMargin="24" />
-      <IconListColorBox content={content.list2} color={color.babyblue3} rounded bottomMargin="16" />
+      <IconListColorBox content={content.list2} color={color.babyblue3} rounded bottomMargin="24" />
       <Paragraph big bottomMargin="48" mixed>
         {parse(content.text3)}
       </Paragraph>
       <Heading size={3} bottomMargin="24">
         {content.header3}
       </Heading>
-      <Paragraph big bottomMargin="16">
+      <Paragraph big bottomMargin="24">
         {content.text4}
       </Paragraph>
-      <IconListColorBox content={content.list3} color={color.orange3} rounded bottomMargin="16" />
+      <IconListColorBox content={content.list3} color={color.orange3} rounded bottomMargin="24" />
       <Paragraph big bottomMargin="48">
         {content.text5}
       </Paragraph>

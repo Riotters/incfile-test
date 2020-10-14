@@ -10,7 +10,6 @@ export const about = {
     },
   ],
   header: `Am I Required to Hold Corporate Meetings?`,
-  header2: `Am I Required to Hold Corporate Meetings?`,
   text: `Once you receive the filed Articles of Incorporation, which signifies the formation of the corporation by your state, your corporation will need to hold an organizational meeting of the initial shareholders and directors. At this meeting the directors will typically adopt corporate bylaws, distribute corporation stock to initial shareholders, and appoint corporate officers.`,
   text2: `Also, in most states, directors must meet at least once a year, as directors typically must be elected (or reelected) each year. At the annual meeting the board members accept their election to the board, and transact any other necessary business. The date, time, and location of the annual meeting is typically specified in the bylaws. Written notification of the annual meetings is not usually required, but it is probably a good idea. Other regular meetings may be held as spelled out in the bylaws. Special meetings may be called, and it is typically required that directors receive written notice of the date, place, and purpose all special meetings of directors.`,
   list: {

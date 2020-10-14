@@ -10,7 +10,6 @@ export const about = {
     },
   ],
   header: `Who Will Typically Elect the S Corporation Status?`,
-  header2: `Who Will Typically Elect the S Corporation Status?`,
   list: {
     header: `Typically entrepreneurs will select the S-Corporation as the entity of choice for the following reasons:`,
     list: [
