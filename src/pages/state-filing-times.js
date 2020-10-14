@@ -16,7 +16,7 @@ const StateFilingTimes = () => {
     const [stateFilingTimes, setStateFilingTimes] = useState([]);
 
     const fetchData = async () => {
-        const data = await fetch(`http://api.cool/api/v1/getStateFilingTimes`).then(response => response.json());
+        const data = await fetch(`${process.env.INCFILE_API_URL}/getStateFilingTimes`).then(response => response.json());
         return data;
     }
 
@@ -27,7 +27,7 @@ const StateFilingTimes = () => {
         })
     }, []);
 
-  return (
+    return (
         <Layout>
             <SEO title="State Filing Times | State Filing Times Tool" description="Corporation State Filing Times" />
             <Top imageName="mr-bulb-state-filing-times-3289" imageAlt="Mrs Bulb and with checklist" ovalColor="purple-2" textWidth="530">
@@ -42,7 +42,7 @@ const StateFilingTimes = () => {
             <Cta content={cta} />
             <Articles />
         </Layout>
-  );
+    );
 };
 
 export default StateFilingTimes;

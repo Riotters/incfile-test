@@ -5,7 +5,6 @@ import SEO from "../components/seo";
 //Sections
 import { rocket, top, compare, states } from "../static/manage-your-company/compare-state-filing-time";
 import Rocket from "../atomic/sections/review-entity-types/c-corporation/rocket";
-import { shadow } from "../atomic/atoms/styles/shadows";
 import { color, gradient } from "../atomic/atoms/styles/colors";
 import Top from "../atomic/sections/manage-your-company/compare-state-filling-time/top";
 import WhichStatesAreFast from "../atomic/sections/manage-your-company/compare-state-filling-time/which-states-are-fast";
@@ -29,14 +28,13 @@ const CompareStateTimes = () => {
     let [stateList, setStateList] = useState([]);
 
     const getStateList = async () => {
-        const data = await fetch(`http://api.cool/api/v1/getStateFilingTimesToCompare`).then(response => response.json());
+        const data = await fetch(`${process.env.INCFILE_API_URL}/getStateFilingTimesToCompare`).then(response => response.json());
         return data;
     }
 
     useEffect(() => {
         getStateList()
             .then(data => {
-                console.log(data);
                 setStateList(data);
             });
     }, []);
@@ -47,14 +45,14 @@ const CompareStateTimes = () => {
             <Top content={top} />
             <ComparisonStateFillingTime content={compare} stateList={stateList} />
             <GradientWrapper>
-            <Oval width={570} height={570} className="oval" top="0" left="0">
-                <OvalSVG />
-            </Oval>
-            <WhichStatesAreFast content={states} />
-            <Rocket content={rocket} />
+                <Oval width={570} height={570} className="oval" top="0" left="0">
+                    <OvalSVG />
+                </Oval>
+                <WhichStatesAreFast content={states} stateListCompare={stateList} />
+                <Rocket content={rocket} />
             </GradientWrapper>
         </Layout>
-    )
+    );
 };
 
 export default CompareStateTimes;

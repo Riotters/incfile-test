@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import MinusIcon from "./minus-icon";
 import Badge from "./badge";
-import {Paragraph} from "../../atomic/atoms/typography/paragraph";
 import {Link} from "@reach/router";
 
 const Table = styled.div`

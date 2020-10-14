@@ -15,53 +15,6 @@ export const states = {
     header: "Which States Are Fast?",
     tabs: {
         headers: [ "Filling Times", "Expedited Time", "Expedited Price" ],
-        panels: [
-            [
-                {
-                    title: '1 Business Day',
-                    percent: '80',
-                    states: ['Alaska', 'Illinois', 'Kansas', 'Minnesota', 'Missouri', 'New Jersey', 'Rhode Island', 'Tennessee', 'Wisconsin']
-                }, {
-                    title: '2 Business Days',
-                    percent: '40',
-                    states: ['Colorado']
-                }, {
-                    title: '2 Business Days',
-                    percent: '40',
-                    states: ['Indiana', 'Massachusetts', 'Mississippi']
-                }
-            ],
-            [
-                {
-                    title: '1 Business Day',
-                    percent: '80',
-                    states: ['Alaska', 'Illinois', 'Kansas', 'Minnesota', 'Missouri', 'New Jersey', 'Rhode Island', 'Tennessee', 'Wisconsin']
-                }, {
-                    title: '2 Business Days',
-                    percent: '40',
-                    states: ['Colorado']
-                }, {
-                    title: '2 Business Days',
-                    percent: '40',
-                    states: ['Indiana', 'Massachusetts', 'Mississippi']
-                }
-            ],
-            [
-                {
-                    title: '1 Business Day',
-                    percent: '80',
-                    states: ['Alaska', 'Illinois', 'Kansas', 'Minnesota', 'Missouri', 'New Jersey', 'Rhode Island', 'Tennessee', 'Wisconsin']
-                }, {
-                    title: '2 Business Days',
-                    percent: '40',
-                    states: ['Colorado']
-                }, {
-                    title: '2 Business Days',
-                    percent: '40',
-                    states: ['Indiana', 'Massachusetts', 'Mississippi']
-                }
-            ]
-        ]
     }
 };
 
@@ -77,49 +30,6 @@ export const compare = {
         }
     },
     headers: ['State', 'Normal processing time', 'Expedited processing time', 'Expedited Price'],
-    // entries: [{
-    //     state: 'Alaska',
-    //     normalProcessingTime: '5 Bussiness Days',
-    //     expeditedProcessingTime: '1 Business Day',
-    //     expeditedPrice: '$50',
-    //     selected: true
-    // }, {
-    //     state: 'Alabama',
-    //     normalProcessingTime: '4 Weeks',
-    //     expeditedProcessingTime: '15 Business Days',
-    //     expeditedPrice: '$50',
-    //     selected: true
-    // }, {
-    //     state: 'Arizona',
-    //     normalProcessingTime: '15 Business Days',
-    //     expeditedProcessingTime: '5 Business Days',
-    //     expeditedPrice: '$50',
-    //     selected: false
-    // }, {
-    //     state: 'Arkansaas',
-    //     normalProcessingTime: '5 Bussiness Days',
-    //     expeditedProcessingTime: '1 Business Day',
-    //     expeditedPrice: '$50',
-    //     selected: false
-    // }, {
-    //     state: 'California',
-    //     normalProcessingTime: '4 Weeks',
-    //     expeditedProcessingTime: '15 Business Days',
-    //     expeditedPrice: '$50',
-    //     selected: false
-    // }, {
-    //     state: 'Delaware',
-    //     normalProcessingTime: '15 Business Days',
-    //     expeditedProcessingTime: '5 Business Days',
-    //     expeditedPrice: '$50',
-    //     selected: true
-    // }, {
-    //     state: 'Georgia',
-    //     normalProcessingTime: '5 Business Days',
-    //     expeditedProcessingTime: '1 Business Days',
-    //     expeditedPrice: '$50',
-    //     selected: false
-    // }]
 };
 
 export const top = {
