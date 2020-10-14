@@ -35,7 +35,7 @@ const ComparisonStateFillingTime = ({ className, content }) => (
                 <IconTextColorBox className="announcement" rounded Icon={MegafonSVG} content={content.announcement.content} color={content.announcement.color} bottomMargin={32} />
                 <MobileWrapper>
                     <MobileInnerContainer width={300}>
-                        <CompareTable width="100%" headers={content.headers} entries={content.entries} />
+                        <CompareTable width="100%" headers={content.headers} />
                     </MobileInnerContainer>
                 </MobileWrapper>
             </ContentCenter>

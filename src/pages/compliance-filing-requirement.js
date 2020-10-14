@@ -14,7 +14,7 @@ import { top, about, entityTypeAndState, requirements, rocket } from "../static/
 
 const OngoingFilingRequirements = () => (
   <Layout>
-    <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
+    <SEO title="Research State by State Compliance Filing Requirements" description="Research State by State Compliance Filing Requirements" />
     <Top imageName="mrs-bulb-ongoing-filing-requirements-7487" imageAlt="Mrs Bulb and with checklist" ovalColor="green">
       <h1>{top.header}</h1>
       <p>{top.text}</p>

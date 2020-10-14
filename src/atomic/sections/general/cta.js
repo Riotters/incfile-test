@@ -92,7 +92,7 @@ const Map = styled.div`
   }
 `;
 
-const Cta = ({cta}) => (
+const Cta = ({ cta }) => (
   <Wrapper>
     <Oval>
       <OvalSVG />
@@ -109,7 +109,7 @@ const Cta = ({cta}) => (
           {({ isVisible }) => <p className={isVisible ? "slideUp enter" : "slideUp"}>$0 + State Fee & FREE Registered Agent for 1st year.</p>}
         </VisibilitySensor>
         <VisibilitySensor partialVisibility once>
-          {({ isVisible }) => <Button className={isVisible ? "slideUp enter" : "slideUp"} content={{ text: `${cta ? cta.button.text : `Start Now`}`, url: `${cta ? cta.button.url : `/`}` }} theme="primary56" arrow marginSM="0 auto" />}
+          {({ isVisible }) => <Button className={isVisible ? "slideUp enter" : "slideUp"} content={{ text: cta?.button.text ?? `Start Now`, url: `${process.env.ORDER_URL}/form-order-now.php` }} theme="primary56" arrow marginSM="0 auto" />}
         </VisibilitySensor>
       </Content>
     </Container>

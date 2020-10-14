@@ -74,9 +74,11 @@ const GradientWrapper = styled.section`
   }
 `;
 
-const CompareStateTimes = () => (
-  <Layout>
-    <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
+
+const CompareStateTimes = () => {  
+  return (
+    <Layout>
+    <SEO title="Filing Times" description="Easily Compare State Filing Times" />
     <Top content={top} />
     <ComparisonStateFillingTime content={compare} />
     <GradientWrapper>
@@ -87,6 +89,7 @@ const CompareStateTimes = () => (
       <Rocket content={rocket} />
     </GradientWrapper>
   </Layout>
-);
+  )
+};
 
 export default CompareStateTimes;

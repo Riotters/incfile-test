@@ -7,7 +7,7 @@ export const rocket = {
     text2: "Only $0 + State Fee to Launch Your Business.",
     button: {
         text: "Launch your business",
-        url: "/"
+        url: `${process.env.ORDER_URL}/form-order-now.php`,
     }
 };
 
@@ -71,55 +71,55 @@ export const compare = {
             text: "The option to expedite your Business filing with the Secretary of State will be presented within the first page of the order process. ",
             link: {
                 text: "Learn more",
-                url: "/"
+                url: `${process.env.ORDER_URL}/form-order-now.php`
             },
             color: color.blue3
         }
     },
     headers: ['State', 'Normal processing time', 'Expedited processing time', 'Expedited Price'],
-    entries: [{
-        state: 'Alaska',
-        normalProcessingTime: '5 Bussiness Days',
-        expeditedProcessingTime: '1 Business Day',
-        expeditedPrice: '$50',
-        selected: true
-    }, {
-        state: 'Alabama',
-        normalProcessingTime: '4 Weeks',
-        expeditedProcessingTime: '15 Business Days',
-        expeditedPrice: '$50',
-        selected: true
-    }, {
-        state: 'Arizona',
-        normalProcessingTime: '15 Business Days',
-        expeditedProcessingTime: '5 Business Days',
-        expeditedPrice: '$50',
-        selected: false
-    }, {
-        state: 'Arkansaas',
-        normalProcessingTime: '5 Bussiness Days',
-        expeditedProcessingTime: '1 Business Day',
-        expeditedPrice: '$50',
-        selected: false
-    }, {
-        state: 'California',
-        normalProcessingTime: '4 Weeks',
-        expeditedProcessingTime: '15 Business Days',
-        expeditedPrice: '$50',
-        selected: false
-    }, {
-        state: 'Delaware',
-        normalProcessingTime: '15 Business Days',
-        expeditedProcessingTime: '5 Business Days',
-        expeditedPrice: '$50',
-        selected: true
-    }, {
-        state: 'Georgia',
-        normalProcessingTime: '5 Business Days',
-        expeditedProcessingTime: '1 Business Days',
-        expeditedPrice: '$50',
-        selected: false
-    }]
+    // entries: [{
+    //     state: 'Alaska',
+    //     normalProcessingTime: '5 Bussiness Days',
+    //     expeditedProcessingTime: '1 Business Day',
+    //     expeditedPrice: '$50',
+    //     selected: true
+    // }, {
+    //     state: 'Alabama',
+    //     normalProcessingTime: '4 Weeks',
+    //     expeditedProcessingTime: '15 Business Days',
+    //     expeditedPrice: '$50',
+    //     selected: true
+    // }, {
+    //     state: 'Arizona',
+    //     normalProcessingTime: '15 Business Days',
+    //     expeditedProcessingTime: '5 Business Days',
+    //     expeditedPrice: '$50',
+    //     selected: false
+    // }, {
+    //     state: 'Arkansaas',
+    //     normalProcessingTime: '5 Bussiness Days',
+    //     expeditedProcessingTime: '1 Business Day',
+    //     expeditedPrice: '$50',
+    //     selected: false
+    // }, {
+    //     state: 'California',
+    //     normalProcessingTime: '4 Weeks',
+    //     expeditedProcessingTime: '15 Business Days',
+    //     expeditedPrice: '$50',
+    //     selected: false
+    // }, {
+    //     state: 'Delaware',
+    //     normalProcessingTime: '15 Business Days',
+    //     expeditedProcessingTime: '5 Business Days',
+    //     expeditedPrice: '$50',
+    //     selected: true
+    // }, {
+    //     state: 'Georgia',
+    //     normalProcessingTime: '5 Business Days',
+    //     expeditedProcessingTime: '1 Business Days',
+    //     expeditedPrice: '$50',
+    //     selected: false
+    // }]
 };
 
 export const top = {
