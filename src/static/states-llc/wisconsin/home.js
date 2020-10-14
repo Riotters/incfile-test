@@ -33,9 +33,7 @@ export const howToGuide = [
     type: `listt-dot`,
     content: {
       header: `Briefly, the benefits of starting an Wisconsin LLC include:`,
-      list: [`Separating and limiting your personal liability from your business liability and debts`, 
-             `Quick and simple filing, management, compliance, regulations and administration of your Wisconsin LLC`, 
-             `Easy tax filing and potential advantages for tax treatment`],
+      list: [`Separating and limiting your personal liability from your business liability and debts`, `Quick and simple filing, management, compliance, regulations and administration of your Wisconsin LLC`, `Easy tax filing and potential advantages for tax treatment`],
     },
     marginBottom: 20,
     color: color.blue3,
@@ -104,11 +102,9 @@ export const howToGuide = [
           <p>You can file your Wisconsin LLC Articles of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Wisconsin. You only need to file your Articles of Organization once.</p></br>
           <a href="https://www.incfile.com/form-order-now.php?entityType=LLC&amp;entityState=WI" title="Form Your LLC Now">Form Your LLC Now</a>`,
         },
-          ],
+      ],
     },
-
-
-
+  },
   {
     type: `header`,
     content: `Review Information from the Wisconsin Department of Financial Institutions`,
@@ -129,22 +125,23 @@ export const howToGuide = [
     type: `arrow-link`,
     content: {
       text: `Wisconsin Department of Financial Institutions for forming and running your WI LLC`,
-      url: `<a href="https://www.revenue.wi.gov/Pages/Businesses/New-Business-home.aspx">Wisconsin Department of Financial Institutions for forming and running your WI LLC</a>`,
+      url: `https://www.revenue.wi.gov/Pages/Businesses/New-Business-home.aspx`,
     },
-    {
-      type: `arrow-link`,
-      content: {
-        text: `Wisconsin Department of Workforce Development for WI employers and hiring`,
-        url: `<a href="https://dwd.wisconsin.gov/">Wisconsin Department of Workforce Development for WI employers and hiring</a>`,
-      },
-      {
-        type: `arrow-link`,
-        content: {
-          text: `Wisconsin Department of Revenue for WI taxes`,
-          url: `<a href="https://www.revenue.wi.gov/Pages/home.aspx">Wisconsin Department of Revenue for WI taxes</a>`,
-        },
-
-
+  },
+  {
+    type: `arrow-link`,
+    content: {
+      text: `Wisconsin Department of Workforce Development for WI employers and hiring`,
+      url: `https://dwd.wisconsin.gov/`,
+    },
+  },
+  {
+    type: `arrow-link`,
+    content: {
+      text: `Wisconsin Department of Revenue for WI taxes`,
+      url: `https://www.revenue.wi.gov/Pages/home.aspx`,
+    },
+  },
   {
     type: `header`,
     content: `Form a Foreign LLC in Wisconsin`,
@@ -173,7 +170,6 @@ export const howToGuide = [
     marginBottom: 30,
   },
 
-
   {
     type: `header`,
     content: `Detailed Information for Your Wisconsin LLC`,
@@ -191,7 +187,7 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content:`How to search the Wisconsin business registry of the WI Department of Financial Institutions and find the right name. Includes information on naming rules, fictitious names, reserving a Wisconsin LLC name and more.`,
+    content: `How to search the Wisconsin business registry of the WI Department of Financial Institutions and find the right name. Includes information on naming rules, fictitious names, reserving a Wisconsin LLC name and more.`,
     marginBottom: 20,
   },
   {
@@ -201,7 +197,7 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content:`How to appoint a Wisconsin Registered Agent to your new LLC or change to a different Registered Agent. Includes information on Registered Agent rules and searching for Wisconsin Registered Agents.`,
+    content: `How to appoint a Wisconsin Registered Agent to your new LLC or change to a different Registered Agent. Includes information on Registered Agent rules and searching for Wisconsin Registered Agents.`,
     marginBottom: 20,
   },
   {
@@ -211,7 +207,7 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content:`How to understand the various fees you’ll need to pay and the requirements you’ll need to meet for both federal and Wisconsin rules. Includes details of Employer Identification Numbers (EINs), Wisconsin and federal business licenses, Wisconsin annual reports and more.`,
+    content: `How to understand the various fees you’ll need to pay and the requirements you’ll need to meet for both federal and Wisconsin rules. Includes details of Employer Identification Numbers (EINs), Wisconsin and federal business licenses, Wisconsin annual reports and more.`,
     marginBottom: 20,
   },
   {
@@ -221,10 +217,9 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content:`How to understand the various taxes you will need to pay to the federal and Wisconsin government. Includes details of federal taxes like income and self-employment, and Wisconsin taxes like sales tax and income tax.    `,
+    content: `How to understand the various taxes you will need to pay to the federal and Wisconsin government. Includes details of federal taxes like income and self-employment, and Wisconsin taxes like sales tax and income tax.    `,
     marginBottom: 20,
   },
-
 ];
 
 export const namingYourBusiness = [
@@ -311,10 +306,12 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Suffixes, such as Corporation, Company, Incorporated, Incorporation, Limited, Corp., Co., Inc., Ltd., LLC, etc.`,
-             `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`, 
-             `The singular, plural or possessive forms of a word`, 
-             `Abbreviations, punctuation, symbols, fonts, typefaces, etc.`],
+      list: [
+        `Suffixes, such as Corporation, Company, Incorporated, Incorporation, Limited, Corp., Co., Inc., Ltd., LLC, etc.`,
+        `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`,
+        `The singular, plural or possessive forms of a word`,
+        `Abbreviations, punctuation, symbols, fonts, typefaces, etc.`,
+      ],
     },
     marginBottom: 30,
     color: color.yellow3,
@@ -345,10 +342,12 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Are very similar to the name of a federal or WI agency or organization (e.g., FBI, FDA, Wisconsin Department of Revenue, Wisconsin Police, Treasury, etc.)`,
-             `Suggest affiliation with a federal or state agency or organization`, 
-             `Use the term “Olympic” or any terms that are trademarks of the Olympic organization`, 
-             `Imply a purpose that it would be illegal for your business to carry out`],
+      list: [
+        `Are very similar to the name of a federal or WI agency or organization (e.g., FBI, FDA, Wisconsin Department of Revenue, Wisconsin Police, Treasury, etc.)`,
+        `Suggest affiliation with a federal or state agency or organization`,
+        `Use the term “Olympic” or any terms that are trademarks of the Olympic organization`,
+        `Imply a purpose that it would be illegal for your business to carry out`,
+      ],
     },
     marginBottom: 30,
     color: color.yellow3,
@@ -368,9 +367,11 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`If the LLC name contains any of the following words, prior written approval must be obtained from the Wisconsin Department of Financial Institutions before registration is allowed: Bank; Banker; Banking; Banc; Banco; Banque; Credit Union; Deposit; Savings Association; Building Association; Savings and Loan Association; Building and Loan Association; Savings Bank; Thrift; Trust; or Trust Company`,
-             `Non-professional LLCs shall contain the words “limited liability company” or “limited company” or the abbreviations “L.L.C.”, “L.C.”, “LLC”, or “LC”. If the existing limited liability company name or the fictitious name adopted for use in Wisconsin does not contain one of those words or an abbreviation of one of those words, then one of those words or an abbreviation of one of those words must be added to it. `, 
-             `Non-professional LLCs shall not contain the words “association”, “corporation”, “incorporated”, or an abbreviation of those words`],
+      list: [
+        `If the LLC name contains any of the following words, prior written approval must be obtained from the Wisconsin Department of Financial Institutions before registration is allowed: Bank; Banker; Banking; Banc; Banco; Banque; Credit Union; Deposit; Savings Association; Building Association; Savings and Loan Association; Building and Loan Association; Savings Bank; Thrift; Trust; or Trust Company`,
+        `Non-professional LLCs shall contain the words “limited liability company” or “limited company” or the abbreviations “L.L.C.”, “L.C.”, “LLC”, or “LC”. If the existing limited liability company name or the fictitious name adopted for use in Wisconsin does not contain one of those words or an abbreviation of one of those words, then one of those words or an abbreviation of one of those words must be added to it. `,
+        `Non-professional LLCs shall not contain the words “association”, “corporation”, “incorporated”, or an abbreviation of those words`,
+      ],
     },
     marginBottom: 20,
     color: color.yellow3,
@@ -513,10 +514,7 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Appeal to your customers`,
-             `Be memorable enough to stand out`, 
-             `Best represent your product or services`,
-             `Not be used by another business`],
+      list: [`Appeal to your customers`, `Be memorable enough to stand out`, `Best represent your product or services`, `Not be used by another business`],
     },
     marginBottom: 40,
     color: color.yellow3,
@@ -568,10 +566,12 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`If the Statutory Agent is a person, they must reside in Wisconsin`,
-             `If the Statutory Agent is a business, they must be able to conduct business in Wisconsin`, 
-             `The Statutory Agent must have a physical street address in Wisconsin, not a P.O. Box`,
-             `The WI Statutory Agent must be available in person during normal business hours to sign for any correspondence`],
+      list: [
+        `If the Statutory Agent is a person, they must reside in Wisconsin`,
+        `If the Statutory Agent is a business, they must be able to conduct business in Wisconsin`,
+        `The Statutory Agent must have a physical street address in Wisconsin, not a P.O. Box`,
+        `The WI Statutory Agent must be available in person during normal business hours to sign for any correspondence`,
+      ],
     },
     marginBottom: 20,
     color: color.yellow3,
@@ -596,9 +596,11 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Correspondence from the Wisconsin Corporation Commission, like a notice to file reports and other forms`,
-             `Service of process documents (for example, if your Wisconsin LLC has legal proceedings issued against it)`,
-             `Official Wisconsin and federal government documents, form filings and requests for information (including taxes, permits and company filings)`],
+      list: [
+        `Correspondence from the Wisconsin Corporation Commission, like a notice to file reports and other forms`,
+        `Service of process documents (for example, if your Wisconsin LLC has legal proceedings issued against it)`,
+        `Official Wisconsin and federal government documents, form filings and requests for information (including taxes, permits and company filings)`,
+      ],
     },
     marginBottom: 30,
     color: color.yellow3,
@@ -623,10 +625,12 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`An always-available Wisconsin Registered Agent who can receive correspondence, documents and legal proceedings on your LLC’s behalf`,
-             `A digital dashboard where you can access, store and retrieve any information we’ve received for your Wisconsin business`,
-             `Email notification whenever we receive documents for your Wisconsin business`,
-             `Automatic forwarding of all legal correspondence, documentation and information directly to you`],
+      list: [
+        `An always-available Wisconsin Registered Agent who can receive correspondence, documents and legal proceedings on your LLC’s behalf`,
+        `A digital dashboard where you can access, store and retrieve any information we’ve received for your Wisconsin business`,
+        `Email notification whenever we receive documents for your Wisconsin business`,
+        `Automatic forwarding of all legal correspondence, documentation and information directly to you`,
+      ],
     },
     marginBottom: 20,
     color: color.yellow3,
@@ -766,9 +770,11 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Getting served or sued and not finding out about it: If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
-             `Falling out of good standing with the Wisconsin Corporation Commission: If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`, 
-             `Losing your status as an Wisconsin LLC: An WI Statutory Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections, and your Wisconsin LLC may be dissolved.`],
+      list: [
+        `Getting served or sued and not finding out about it: If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
+        `Falling out of good standing with the Wisconsin Corporation Commission: If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
+        `Losing your status as an Wisconsin LLC: An WI Statutory Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections, and your Wisconsin LLC may be dissolved.`,
+      ],
     },
     marginBottom: 30,
     color: color.yellow3,
@@ -788,10 +794,12 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`The WI Statutory Agent must have a physical street address in Wisconsin. If you’re forming an LLC outside WI, you will need to use an in-state Statutory Agent.`,
-             `You always need to have someone on hand during business hours at the Wisconsin address to sign for important documents.`, 
-             `The WI Statutory Agent’s name and address are part of the public record and available through the Wisconsin Corporation Commission's website. If you would prefer your name and address aren’t published, you might choose to use a Statutory/Registered Agent service instead.`,
-             `If you change your Wisconsin business address or move out of state, you would need to file additional documentation with the WI Corporation Commission for the new address if you act as your own Statutory Agent. This would not be the case if you use a Statutory/Registered Agent service, making a move or address change much simpler.`],
+      list: [
+        `The WI Statutory Agent must have a physical street address in Wisconsin. If you’re forming an LLC outside WI, you will need to use an in-state Statutory Agent.`,
+        `You always need to have someone on hand during business hours at the Wisconsin address to sign for important documents.`,
+        `The WI Statutory Agent’s name and address are part of the public record and available through the Wisconsin Corporation Commission's website. If you would prefer your name and address aren’t published, you might choose to use a Statutory/Registered Agent service instead.`,
+        `If you change your Wisconsin business address or move out of state, you would need to file additional documentation with the WI Corporation Commission for the new address if you act as your own Statutory Agent. This would not be the case if you use a Statutory/Registered Agent service, making a move or address change much simpler.`,
+      ],
     },
     marginBottom: 30,
     color: color.yellow3,
@@ -836,9 +844,11 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: `You might find these resources helpful:`,
-      list: [`<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/">The Main Functions of an Wisconsin Registered Agent</a>`,
-             `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Wisconsin Registered Agent</a>`,
-             `<a href="/research-topics/registered-agent-help/what-does-a-registered-agent-do/">What an Wisconsin Registered Agent Does</a>`],
+      list: [
+        `<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/">The Main Functions of an Wisconsin Registered Agent</a>`,
+        `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Wisconsin Registered Agent</a>`,
+        `<a href="/research-topics/registered-agent-help/what-does-a-registered-agent-do/">What an Wisconsin Registered Agent Does</a>`,
+      ],
     },
     marginBottom: 0,
     color: color.yellow3,
@@ -986,9 +996,11 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: `Permits and licenses vary based on:`,
-      list: [`The industry your Wisconsin LLC operates in (e.g., restaurants will need health permits)`,
-             `The location of your Wisconsin LLC (state, county or city) (e.g., a license to conduct business from the city of Phoenix)`, 
-             `The type of business that you run (e.g., healthcare providers must meet HIPAA requirements)`],
+      list: [
+        `The industry your Wisconsin LLC operates in (e.g., restaurants will need health permits)`,
+        `The location of your Wisconsin LLC (state, county or city) (e.g., a license to conduct business from the city of Phoenix)`,
+        `The type of business that you run (e.g., healthcare providers must meet HIPAA requirements)`,
+      ],
     },
     marginBottom: 20,
     color: color.yellow3,
@@ -997,8 +1009,7 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: `You can research these permits and licenses yourself or use Incfile’s Business License Research Package, which includes:`,
-      list: [`A complete report on all the licenses, permits and tax registrations your Wisconsin LLC will need`,
-             `The application forms you will need to file with the state, regional and federal licensing authorities`],
+      list: [`A complete report on all the licenses, permits and tax registrations your Wisconsin LLC will need`, `The application forms you will need to file with the state, regional and federal licensing authorities`],
     },
     marginBottom: 20,
     color: color.yellow3,
@@ -1110,9 +1121,7 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: `Areas you might want to file Wisconsin Articles of Amendment for include:`,
-      list: [`Adding, removing or changing an Wisconsin LLC member or manager`,
-             `Changing the business address of your LLC`,
-             `Altering the stated business activities of your Wisconsin LLC`],
+      list: [`Adding, removing or changing an Wisconsin LLC member or manager`, `Changing the business address of your LLC`, `Altering the stated business activities of your Wisconsin LLC`],
     },
     marginBottom: 20,
     color: color.yellow3,
@@ -1300,8 +1309,7 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `You will typically need to collect Wisconsin sales tax on:`,
-      list: [`Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`,
-             `Certain services that your Wisconsin business might provide` ],
+      list: [`Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`, `Certain services that your Wisconsin business might provide`],
     },
     marginBottom: 20,
     color: color.blue3,
@@ -1349,10 +1357,7 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
-      list: [`On profits of $20,000, you would pay self-employment tax of $3,060`,
-             `On profits of $50,000, you would pay self-employment tax of $7,650`,
-             `On profits of $100,000, you would pay self-employment tax of $15,300`,
-             `On profits of $160,000, you would pay self-employment tax of $24,480`],
+      list: [`On profits of $20,000, you would pay self-employment tax of $3,060`, `On profits of $50,000, you would pay self-employment tax of $7,650`, `On profits of $100,000, you would pay self-employment tax of $15,300`, `On profits of $160,000, you would pay self-employment tax of $24,480`],
     },
     marginBottom: 50,
     color: color.blue3,
@@ -1478,9 +1483,7 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `The most common types of estimated tax are:`,
-      list: [`Federal income tax`,
-             `Federal self-employment tax`, 
-             `Wisconsin state tax`],
+      list: [`Federal income tax`, `Federal self-employment tax`, `Wisconsin state tax`],
     },
     marginBottom: 20,
     color: color.green3,
