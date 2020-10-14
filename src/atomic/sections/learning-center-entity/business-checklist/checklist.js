@@ -4,7 +4,7 @@ import Container from "../../../container";
 import ContentCenter from "../../../partials/content-center";
 import {Heading} from "../../../atoms/typography/heading";
 import Circle from "../../../atoms/icons/circle";
-import Checklist from "../../../../components/checklist/checklist-alternative";
+import Checklist from "../../../../components/checklist/checklist";
 import {Tabs} from "@bumaga/tabs";
 import {color} from "../../../atoms/styles/colors";
 import Button from "../../../molecules/buttons/button";
@@ -66,12 +66,8 @@ class SingleChecklistSection extends React.Component {
 
         return (
             <ContentCenter contentWidth={970}>
-                <SingleHeader header={top.header}
-                              imageBackgroundColor={top.background}
-                              SvgImage={top.svg}
-                              imageShadowColor={top.shadow} total={this.state.total} done={this.state.done} />
-
-                <Checklist Items={this.state.items} onUpdate={{ _func: this.updateHandler, scope: this }}/>
+                <Checklist Items={this.state.items} icon={top.icon}
+                           title={top.header} iconBgColor={top.background} iconShadowColor={top.shadow} />
             </ContentCenter>
         );
     }
