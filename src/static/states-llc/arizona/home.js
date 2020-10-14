@@ -133,7 +133,7 @@ export const howToGuide = [
              `<a href="https://azdor.gov/transaction-privilege-tax-tpt" target="_blank" rel="noopener noreferrer"> Arizona Department of Taxation for AZ taxes</a>`],
     },
     marginBottom: 30,
-    color: color.yellow3,
+    color: color.blue3,
   },
   {
     type: `header`,
