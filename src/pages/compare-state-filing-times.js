@@ -1,17 +1,17 @@
 import React from "react";
-import Layout from "../../components/layout";
+import Layout from "../components/layout";
 import styled from "styled-components";
-import SEO from "../../components/seo";
+import SEO from "../components/seo";
 //Sections
-import { rocket, top, compare, states } from "../../static/manage-your-company/compare-state-filing-time";
-import Rocket from "../../atomic/sections/review-entity-types/c-corporation/rocket";
-import { shadow } from "../../atomic/atoms/styles/shadows";
-import { color, gradient } from "../../atomic/atoms/styles/colors";
-import Top from "../../atomic/sections/manage-your-company/compare-state-filling-time/top";
-import WhichStatesAreFast from "../../atomic/sections/manage-your-company/compare-state-filling-time/which-states-are-fast";
-import ComparisonStateFillingTime from "../../atomic/sections/manage-your-company/compare-state-filling-time/comparison-chart";
-import OvalSVG from "../../images/ovals/easily-compare-state-filling-time-fast-top-left.inline.svg";
-import Oval from "../../atomic/atoms/icons/oval";
+import { rocket, top, compare, states } from "../static/manage-your-company/compare-state-filing-time";
+import Rocket from "../atomic/sections/review-entity-types/c-corporation/rocket";
+import { shadow } from "../atomic/atoms/styles/shadows";
+import { color, gradient } from "../atomic/atoms/styles/colors";
+import Top from "../atomic/sections/manage-your-company/compare-state-filling-time/top";
+import WhichStatesAreFast from "../atomic/sections/manage-your-company/compare-state-filling-time/which-states-are-fast";
+import ComparisonStateFillingTime from "../atomic/sections/manage-your-company/compare-state-filling-time/comparison-chart";
+import OvalSVG from "../images/ovals/easily-compare-state-filling-time-fast-top-left.inline.svg";
+import Oval from "../atomic/atoms/icons/oval";
 
 //mrs-review-stars-5481
 
