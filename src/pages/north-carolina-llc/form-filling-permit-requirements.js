@@ -9,8 +9,8 @@ import LLCLayout from "../../atomic/partials/states-llc/arizona"
 import ContentMap from "../../atomic/partials/content-map";
 
 // Content
-import { feesAndRequirments } from "../../static/states-llc/arizona/home";
-import { tabPages } from "../../static/states-llc/arizona/general";
+import { feesAndRequirments } from "../../static/states-llc/north-carolina/home";
+import { tabPages } from "../../static/states-llc/north-carolina/general";
 
 const FillingRequirementsPage = () => (
   <Layout>
