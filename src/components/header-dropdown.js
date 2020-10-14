@@ -315,11 +315,16 @@ const Header = ({ siteTitle }) => {
                 <DropdownSVG />
               </FlexRow>
               <DropdownMenu>
-                <MenuItem><MenuLink>Review Entity Types</MenuLink></MenuItem>
-                <MenuItem><MenuLink>LLC</MenuLink></MenuItem>
-                <MenuItem><MenuLink>S Corporation</MenuLink></MenuItem>
-                <MenuItem><MenuLink>C Corporation</MenuLink></MenuItem>
-                <MenuItem><MenuLink>Non-profit</MenuLink></MenuItem>
+                <MenuItem><MenuLink to="/business-entity-quiz/">Business Type Quiz</MenuLink></MenuItem>
+                <MenuItem><MenuLink to="/business-entity-comparison/">Entity Comparison Chart</MenuLink></MenuItem>
+                <MenuItem><MenuLink to="/state-filing-times/">State Filing Times</MenuLink></MenuItem>
+                <MenuItem><MenuLink to="/state-filing-fees/">State Filing Fees</MenuLink></MenuItem>
+                <MenuItem><MenuLink to="/compliance-filing-requirement/">Ongoing Filing Requirements</MenuLink></MenuItem>
+                <MenuItem><MenuLink to="/registered-agents/">About Registered Agents</MenuLink></MenuItem>
+                <MenuItem><MenuLink to="/business-license-tool/">Business License Requirements</MenuLink></MenuItem>
+                <MenuItem><MenuLink to="/llc-state-information/">LLC State Inforamtion</MenuLink></MenuItem>
+                <MenuItem><MenuLink to="/corporation-state-information/">Corporation State Information</MenuLink></MenuItem>
+                <MenuItem><MenuLink to="/help-center/">Help Center</MenuLink></MenuItem>
               </DropdownMenu>
             </MenuItem>
             <MenuItem>
