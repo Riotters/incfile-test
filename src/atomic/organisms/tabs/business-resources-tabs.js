@@ -16,7 +16,7 @@ const TabsWrapper = styled.div`
   align-items: center;
   height: 48px;
   width: 100%;
-  max-width: 570px;
+  max-width: 770px;
   background-color: ${color.white};
   box-shadow: ${shadow.white1};
   border-radius: 24px;
@@ -106,7 +106,11 @@ const Tab = ({ children }) => {
   );
 };
 
-const pdfs = ["pdf-1-6822", "pdf-2-4373", "pdf-3-3897", "pdf-4-9814", "pdf-5-0102", "pdf-6-3847", "pdf-7-6293", "pdf-8-8476"]
+const pdfs = [
+  ["pdf-1-6822", "pdf-5-0102", "pdf-6-3847", "pdf-7-6293", "pdf-8-8476", "pdf-1-6822", "pdf-2-4373", "pdf-3-3897", "pdf-4-9814", "pdf-8-8476"], 
+  ["pdf-8-8476", "pdf-8-8476", "pdf-8-8476", "pdf-8-8476", "pdf-8-8476", "pdf-8-8476", "pdf-8-8476", "pdf-8-8476", "pdf-8-8476", "pdf-8-8476", "pdf-8-8476", "pdf-8-8476"], 
+  ["pdf-8-8476", "pdf-8-8476", "pdf-8-8476", "pdf-8-8476"]
+]
 
 const BusinessResourcesTabs = ({ content }) => (
   <Tabs>
@@ -119,11 +123,11 @@ const BusinessResourcesTabs = ({ content }) => (
         </Scroller>
       </TabsWrapper>
       <PanelsWrapper>
-      {content.panels.map((panel) => (
+      {content.panels.map((panel, i) => (
         <Panel>
           <Grid>
-            {panel.cards.map((card, i) => (
-                <Card content={card} image={pdfs[i]} />
+            {panel.cards.map((card, j) => (
+                <Card content={card} image={pdfs[i][j]} />
             ))}
           </Grid>
         </Panel>
