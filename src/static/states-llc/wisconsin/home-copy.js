@@ -584,8 +584,8 @@ export const registeredAgent = [
       header: ``,
       list: [`If the Registered Agent is a person, they must reside in Wisconsin.`,
              `If the Registered Agent is a business, they must be able to conduct business in Wisconsin.`,
-             `The Registered Agent must have a physical street address in Wisconsin, not a P.O. Box.`,
-            `The WI Registered Agent must be available in person during normal business hours to sign for any correspondence.`,],
+             `The Registered Agent must have a physical street address in Wisconsin, not a P.O. Box.`
+            `The WI Registered Agent must be available in person during normal business hours to sign for any correspondence.`],
     },
     {
      type: `text`,
@@ -596,127 +596,85 @@ export const registeredAgent = [
   },
   {
     type: `header`,
-    content: `The Purpose of a Wisconsin Registered Agent`,
+    content: `A Complete Wisconsin Registered Agent Service From Incfile`,
     size: 3,
     marginBottom: 20,
   },
   {
     type: `text`,
-    content: `What can you expect from your Wisconsin Registered Agent? Their main function is to accept official documents and correspondence from the WI Department of Financial Institutions. This includes:`,
+    content: `Incfile provides a complete Wisconsin Registered Agent service for any LLC that’s incorporated in WI. Even better, if you choose to incorporate your Wisconsin business through Incfile, your Statutory/Registered Agent is completely free for the first year and only $119 a year after that.`,
+    marginBottom: 20,
+  },
+  {
+    type: `text`,
+    content: `Incfile is authorized to conduct business in Wisconsin and can legally act as your Registered Agent. Here’s what the Infile Wisconsin Registered Agent service provides for your WI LLC:`,
     marginBottom: 20,
   },
   {
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Correspondence from the Wisconsin Department of Financial Institutions`,
-             `Service of process notices (e.g., if your WI LLC is sued or required to appear in court)`,
-             `Official Wisconsin state and federal government correspondence and notifications`,
-             `Tax forms and requests to complete permits, company filings and reports`],
+      list: [`An always-available Wisconsin Registered Agent who can receive correspondence, documents and legal proceedings on your LLC’s behalf`,
+             `A digital dashboard where you can access, store and retrieve any information we’ve received for your Wisconsin business`,
+             `Email notification whenever we receive documents for your Wisconsin business`,
+             `Automatic forwarding of all legal correspondence, documentation and information directly to you`],
     },
     marginBottom: 20,
     color: color.yellow3,
   },
-
-  {
-    type: `header`,
-    content: `The Incfile Registered Agent Service for Wisconsin LLCs`,
-    size: 3,
-    marginBottom: 20,
-  },
-  
-  {
-    type: `text`,
-    content: `If you have an LLC that’s incorporated in Wisconsin and you need a WI Registered Agent, we can help. Incfile provides a complete Registered Agent service for any Wisconsin business. If you form your business through Incfile, we’ll act as your Registered Agent free for your first year (normally a $119 annual cost).`,
-    marginBottom: 40,
-  },
-  {
-    type: `text`,
-    content: `We are authorized to conduct business in Wisconsin and can legally act as your Registered Agent.`,
-    marginBottom: 40,
-  },
-  {
-    type: `text`,
-    content: `Here’s what the Infile Wisconsin Registered Agent service provides for your WI LLC:`,
-    marginBottom: 40,
-  },
-  content: {
-    header: ``,
-    list: [`An always-available Wisconsin Registered Agent who can receive correspondence, documents and legal proceedings on your LLC’s behalf`,
-           `A digital dashboard where you can access, store and retrieve any information we’ve received for your Wisconsin business`,
-           `Email notification whenever we receive documents for your Wisconsin business`,
-           `Automatic forwarding of all legal correspondence, documentation and information directly to you`],
-  },
   {
     type: `button`,
     content: {
-      text: `Order Incfile’s Wisconsin Registered Agent service`,
+      text: `MORE ABOUT REGISTERED AGENTS`,
       url: `/manage-your-company/registered-agent/`,
     },
+    theme: `primary48`,
+    marginBottom: 50,
+  },
   {
     type: `header`,
-    content: `How to Appoint a Wisconsin Registered Agent for Your LLC`,
+    content: `How to Appoint an Wisconsin Statutory Agent for Your LLC`,
     size: 3,
     marginBottom: 20,
   },
   {
     type: `text`,
-    content: `You can appoint a Registered Agent when you first incorporate your Wisconsin LLC or at any point after that. Here’s how to go about it.`,
+    content: `You can appoint a Statutory/Registered Agent when you first incorporate your Wisconsin LLC or at any point after that. Here’s how to go about it.`,
+    marginBottom: 40,
+  },
+  {
+    type: `header`,
+    content: `Appoint an WI Statutory Agent Service When You Create Your Wisconsin LLC`,
+    size: 3,
+    marginBottom: 20,
+  },
+  {
+    type: `text`,
+    content: `Your business needs to have an Wisconsin Statutory Agent Service as soon as it’s formed. You can achieve this through one of the following methods.`,
     marginBottom: 30,
   },
   {
-    type: `accordion`,
-    content: {
-      items: [
-        {
-          question: `Assign Your Wisconsin Registered Agent When You Form Your WI LLC`,
-          answer: `Your business needs to have a Wisconsin Registered Agent Service as soon as it’s formed. You can achieve this through one of the following methods.`,
-        },
-        {
-          question: `File Articles of Organization with the Wisconsin Department of Financial Institutions`,
-          answer: `You will need to include details of your Registered Agent in your Articles of Organization. This is the form that you file with the WI Department of Financial Institutions to formally create your business.`,
-        },
-        {
-          question: `Incorporate Through Incfile and Get a Free Wisconsin Registered Agent `,
-          answer: `When you incorporate through us, we complete and file your Articles of Organization based on the information you’ve provided. Additionally, we give you a free Wisconsin Registered Agent service for the first year, and we’ll include details of your WI Registered Agent in the form that we file.`,
-        },
-      ],
-    },
-    {
-      type: `button`,
-      content: {
-        text: `Incorporate your business through Incfile`,
-        url: `/form-order-now.php?entityType=LLC&amp;entityState=WI`,
-      },
-  {
     type: `header`,
-    content: `Change Your Wisconsin Registered Agent After Your LLC Is Formed`,
+    content: `File Articles of Organization With the Wisconsin Corporation Commission`,
     size: 4,
     marginBottom: 20,
   },
   {
     type: `text`,
-    content: `You can also change your WI Registered Agent service after you’ve formed your LLC. There are a couple of ways to achieve this.`,
+    content: `You will need to include details of your Statutory Agent in your Articles of Organization. This is the form that you file with the WI Corporation Commission to formally create your business.`,
     marginBottom: 20,
   },
   {
     type: `header`,
-    content: `Sign Up for Incfile’s Wisconsin Registered Agent Service and We’ll File the Change on Your Behalf`,
+    content: `Incorporate Through Incfile and Get a Free Wisconsin Statutory Agent `,
     size: 4,
     marginBottom: 20,
   },
   {
     type: `text`,
-    content: `When you choose to use our WI Registered Agent service, we take care of all the form filling for you. We’ll collect important information about your business, complete Form 13 on your behalf and send it to the Wisconsin Department of Financial Institutions. We’ll let you know once we officially become your Registered Agent.`,
+    content: `When you incorporate through us, we complete and file your Articles of Organization based on the information you’ve provided. Additionally, we give you a free Wisconsin Registered Agent service for the first year, and we’ll include details of your WI Registered Agent in the form that we file.`,
     marginBottom: 0,
   },
-  {
-    type: `header`,
-    content: `Choose a Registered Agent Service and File Form 13 - Registered Agent and/or Registered Office Change with the Wisconsin Department of Financial Institutions`,
-    size: 4,
-    marginBottom: 20,
-  },
-
   {
     type: `button`,
     content: {
@@ -762,7 +720,7 @@ export const registeredAgent = [
   {
     type: `button`,
     content: {
-      text: `ORDER INCFILE'S WISCONSIN REGISTERED AGENT SERVICE`,
+      text: `ORDER INCFILE'S ARIZONA REGISTERED AGENT SERVICE`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -770,29 +728,29 @@ export const registeredAgent = [
   },
   {
     type: `header`,
-    content: `Wisconsin Registered Agent Search`,
+    content: `Wisconsin Statutory Agent Search`,
     size: 3,
     marginBottom: 0,
   },
   {
     type: `text`,
-    content: `In some situations, you might want to know the name of the Registered Agent that represents another Wisconsin LLC. If you do, you can search the business database of the Wisconsin Department of Financial Institutions, which will often provide details of a specific business’s Registered Agent.`,
+    content: `In some situations, you might want to know the name of the Registered Agent that represents another Wisconsin LLC. If you do, you can <a href="https://ecorp.azcc.gov/EntitySearch/Index" target="_blank" rel="noopener noreferrer">search the business database of the Wisconsin Corporation Commission</a>, which will often provide details of a specific business’ Registered Agent.`,
     marginBottom: 20,
   },
   {
     type: `text`,
-    content: `If the WI Registered Agent isn’t available from the searchable business registry, contact the Wisconsin Department of Financial Institutions to request the information.`,
+    content: `If the WI Statutory Agent isn’t available from the searchable business registry, contact the Wisconsin Corporation Commission requesting the information.`,
     marginBottom: 30,
   },
   {
     type: `header`,
-    content: `Issues with Not Having a Wisconsin Registered Agent`,
+    content: `Possible Outcomes of Not Assigning a Statutory Agent for Your Wisconsin LLC`,
     size: 3,
     marginBottom: 20,
   },
   {
     type: `text`,
-    content: `What happens if you choose not to assign or provide details of a Registered Agent to the Wisconsin Department of Financial Institutions? There are several possible ramifications, including:`,
+    content: `What happens if you choose not to assign or provide details of a Statutory/Registered Agent to the Wisconsin Corporation Commission? There are several possible ramifications, including:`,
     marginBottom: 20,
   },
   {
@@ -800,38 +758,38 @@ export const registeredAgent = [
     content: {
       header: ``,
       list: [`Getting served or sued and not finding out about it: If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
-             `Falling out of good standing with the Wisconsin Department of Financial Institutions: If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`, 
-             `Losing your status as a Wisconsin LLC: A WI Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your Wisconsin LLC may be dissolved.`],
+             `Falling out of good standing with the Wisconsin Corporation Commission: If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`, 
+             `Losing your status as an Wisconsin LLC: An WI Statutory Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections, and your Wisconsin LLC may be dissolved.`],
     },
     marginBottom: 30,
     color: color.yellow3,
   },
   {
     type: `header`,
-    content: `You Can Appoint Yourself as Your Own Wisconsin Registered Agent`,
+    content: `Acting as Your Own Statutory Agent for Your WI LLC`,
     size: 3,
     marginBottom: 20,
   },
   {
     type: `text`,
-    content: `If you have an address in Wisconsin, you can choose to be the Registered Agent for your LLC. We don’t recommend this approach as there can be some drawbacks:`,
+    content: `If you have an address in Wisconsin, you can choose to be the Statutory Agent for your LLC. We don’t recommend this approach as there can be some drawbacks:`,
     marginBottom: 20,
   },
   {
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`The WI Registered Agent must have a physical street address in Wisconsin. If you’re forming an LLC outside WI, you will need to use an in-state Registered Agent.`,
+      list: [`The WI Statutory Agent must have a physical street address in Wisconsin. If you’re forming an LLC outside WI, you will need to use an in-state Statutory Agent.`,
              `You always need to have someone on hand during business hours at the Wisconsin address to sign for important documents.`, 
-             `The WI Registered Agent’s name and address are part of the public record and available through the Wisconsin Department of Financial Institutions's website. If you prefer your name and address aren’t published, you might choose a Registered Agent service.`,
-             `If you change your Wisconsin business address or move out of state, you need to file additional documentation with the WI Department of Financial Institutions for the new address if you act as your own Registered Agent. This would not be the case if you use a Registered Agent service, making a move or address change much simpler.`],
+             `The WI Statutory Agent’s name and address are part of the public record and available through the Wisconsin Corporation Commission's website. If you would prefer your name and address aren’t published, you might choose to use a Statutory/Registered Agent service instead.`,
+             `If you change your Wisconsin business address or move out of state, you would need to file additional documentation with the WI Corporation Commission for the new address if you act as your own Statutory Agent. This would not be the case if you use a Statutory/Registered Agent service, making a move or address change much simpler.`],
     },
     marginBottom: 30,
     color: color.yellow3,
   },
   {
     type: `header`,
-    content: `FAQs About Wisconsin Registered Agents`,
+    content: `FAQs About Wisconsin Statutory Agents`,
     size: 3,
     marginBottom: 20,
   },
@@ -840,20 +798,20 @@ export const registeredAgent = [
     content: {
       items: [
         {
-          question: `Do I Need to Appoint an Wisconsin Registered Agent?`,
-          answer: `Yes. All WI LLCs are required to have a Registered Agent. This is mandated by the Wisconsin Department of Financial Institutions.`,
+          question: `Do I Need to Appoint an Wisconsin Statutory Agent?`,
+          answer: `Yes. All WI LLCs are required to have a Statutory Agent. This is mandated by the Wisconsin Corporation Commission.`,
         },
         {
-          question: `When Can I Assign a Wisconsin Registered Agent Service?`,
-          answer: `You can either do it when you incorporate your Wisconsin business through paperwork filed with the WI Department of Financial Institutions or afterward by filing the correct form. If you form your business through Incfile, we will file all necessary forms on your behalf.`,
+          question: `When Can I Assign an Wisconsin Statutory Agent Service?`,
+          answer: `You can either do it when you incorporate your Wisconsin business through paperwork filed with the WI Corporation Commission or afterward by filing the correct form. If you form your business through Incfile, we will file all necessary forms on your behalf.`,
         },
         {
-          question: `Can I Be My Own Registered Agent in Wisconsin?`,
-          answer: `Yes, but we don’t recommend it for the reasons listed above. If you still want to be your own Registered Agent, you need to fill in the correct forms and pay a fee to the Wisconsin Department of Financial Institutions.`,
+          question: `Can I Be My Own Statutory Agent in Wisconsin?`,
+          answer: `Yes, but we don’t recommend it for the reasons listed above. If you still want to be your own Statutory/Registered Agent, you just need to fill in the correct forms and pay a fee to the Wisconsin Corporation Commission.`,
         },
         {
-          question: `Does My WI Registered Agent Need to Have an Address in Wisconsin?`,
-          answer: `Yes. Additionally, if they are a business providing Registered Agent services, they must be legally able to conduct business in your state.`,
+          question: `Does My WI Statutory Agent Need to Have an Address in Wisconsin?`,
+          answer: `Yes. Additionally, if they are a business providing Statutory Agent services, they must be legally able to conduct business in your state.`,
         },
       ],
     },
@@ -861,7 +819,7 @@ export const registeredAgent = [
   },
   {
     type: `header`,
-    content: `Useful Resources for Wisconsin Registered Agent Services`,
+    content: `Useful Resources for Wisconsin Statutory/Registered Agent Services`,
     size: 3,
     marginBottom: 30,
   },
@@ -881,13 +839,13 @@ export const registeredAgent = [
 export const feesAndRequirments = [
   {
     type: `header`,
-    content: `Forms, Fees and License Requirements for Your Wisconsin LLC`,
+    content: `Wisconsin LLC Forms, Annual Fees and Requirements`,
     size: 2,
     marginBottom: 20,
   },
   {
     type: `text`,
-    content: `Depending on the specifics of your Wisconsin business, you’ll be required to obtain certain business licenses, pay fees and fulfill different filing requirements. Some of these costs are payable to the Wisconsin Department of Financial Institutions, while others are due to the federal or Wisconsin government. We’ve summarized the most common requirements and fees here.`,
+    content: `Some types of businesses have different requirements in Wisconsin, including related fees and costs. Your WI LLC needs to pay various fees to the federal government, Wisconsin government and other agencies. Some of these fees are levied by the Wisconsin Corporation Commission or statewide organizations, while others come from the federal government. On this page, we’ve summarized the most common fees and requirements. `,
     marginBottom: 20,
   },
   {
@@ -897,20 +855,20 @@ export const feesAndRequirments = [
   },
   {
     type: `header`,
-    content: `Initial Filing Costs for Forming an LLC in Wisconsin`,
+    content: `Wisconsin LLC Incorporation Filing`,
     size: 3,
     marginBottom: 20,
   },
   {
     type: `text`,
-    content: `When you first incorporate your business in Wisconsin, you’ll need to file an LLC with the WI Department of Financial Institutions and pay a Wisconsin filing fee. Here are the current fees and filing times for Wisconsin:`,
+    content: `To create your business in Wisconsin, you’ll file an LLC with the WI Corporation Commission and pay an associated LLC formation fee. Every state has different LLC filing fees and filing times. Here is the current information for Wisconsin:`,
     marginBottom: 30,
   },
   {
     type: `table`,
     content: {
       headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
-      rows: [[`$130`, `5 Business Days`, `1 Business day`]],
+      rows: [[`$85`, `4 Weeks`, `12 Business days`]],
     },
   },
   {
@@ -931,7 +889,7 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `When you form your WI LLC through Incfile, we automatically forward this fee to the Wisconsin Department of Financial Institutions when we file your incorporation paperwork. `,
+    content: `When you incorporate through Incfile, we forward this fee to the Wisconsin Corporation Commission on your behalf when we file your paperwork. `,
     marginBottom: 20,
   },
   {
@@ -942,7 +900,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `INCORPORATE YOUR WISCONSIN LLC THROUGH INCFILE TODAY`,
+      text: `INCORPORATE YOUR ARIZONA LLC THROUGH INCFILE TODAY`,
       url: `/form-order-now.php?entityType=LLC&entityState=WI/`,
     },
     theme: `primary48`,
@@ -970,13 +928,13 @@ export const feesAndRequirments = [
   },
   {
     type: `header`,
-    content: `Foreign Qualification to Operate in a State Outside Wisconsin`,
+    content: `Certificate of Authority to Operate Outside Wisconsin`,
     size: 3,
     marginBottom: 20,
   },
   {
     type: `text`,
-    content: `If you’re expanding your Wisconsin LLC beyond the borders of the state, you will need a Foreign Qualification or Certificate of Authority to operate in another state. These are typically necessary if you have a physical presence, employees or banking in a different state than Wisconsin. Fees and requirements for a Foreign Qualification depends on each state’s rules. Incfile provides a complete Foreign Qualification service for any state.`,
+    content: `If you’re expanding your Wisconsin LLC beyond the borders of the state, you will need a Foreign Qualification or Certificate of Authority to operate in another state. These are typically necessary if you have a physical presence, employees or banking in a different state than Wisconsin. Fees and requirements for foreign qualifications depend on each state’s rules. Incfile provides a complete Foreign Qualification service for any state.`,
     marginBottom: 20,
   },
   {
@@ -990,79 +948,29 @@ export const feesAndRequirments = [
   },
   {
     type: `header`,
-    content: `Wisconsin LLC Annual Reports and Fees`,
+    content: `Wisconsin Affidavit of Publication`,
     size: 3,
     marginBottom: 20,
   },
   {
     type: `text`,
-    content: `Most states need you to file an annual (or other periodic) report with their Department of Financial Institutions. When you file your WI LLC annual report, you may need to pay a fee. Here are the annual filing requirements for Wisconsin:`,
+    content: `Many states require that you file an annual (or other periodic) LLC report; however, Wisconsin does not. Instead, Wisconsin requires that you publish a notice of filing of your Articles of Organization — or alternatively, you may publish the Articles of Organization in their entirety. The publication must be in a newspaper in general circulation in the county of the known place of business in Wisconsin for three consecutive publications. The publication must be filed within 60 days of the date of organization. The LLC may be subject to administrative dissolution if it fails to publish.`,
     marginBottom: 20,
   },
   {
-    type: `header`,
-    content: `Annual Report`,
-    size: 4,
-    marginBottom: 24,
-  },
-  {
     type: `text`,
-    content: `<b>Frequency:</b> Annually`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `<b>Due Date:</b> Based on anniversary date`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `<b>Domestic:</b> </br> Jan 1 – Mar 31: Mar 31 </br> Apr 1 – Jun 30: Jun 30 </br> Jul 1 – Sep 30: Sep 30</br> Oct 1 – Dec 31: Dec 31`,
-    marginBottom: 32,
-  },
-  {
-    type: `text`,
-    content: `<b>Foreign:</b> During first calendar quarter of each year following calendar year in the LLC becomes registered.`,
-    marginBottom: 48,
-  },
-  {
-    type: `text`,
-    content: `<b>Filing Fee: </b> $26`,
-    marginBottom: 48,
-  },
-  {
-    type: `text`,
-    content: `<a href="/business-filing-deadlines/"> Learn about your ongoing Wisconsin LLC filing requirements </a> and business filing deadlines with our helpful Wisconsin filing lookup tool.`,
+    content: `The CC does not endorse any particular newspaper, but as a courtesy they provide a list of newspapers that have attested to the CC that they meet the statutory criteria for publishing documents. Upon publishing, you will receive an Affidavit of Publication. It is not required, but you may send the Affidavit of Publication you receive from the newspaper to the CC for placement into the entity’s public record. If you do not submit the Affidavit of Publication to the CC,  you should retain it as part of your entity’s permanent record.`,
     marginBottom: 30,
   },
   {
-    type: `text`,
-    content: `Incfile can also complete and file your Wisconsin Annual Report on your behalf.`,
-    marginBottom: 30,
-  },
-  {
-    type: `button`,
-    content: {
-      text: `INCFILE'S WISCONSIN ANNUAL REPORT FILING SERVICE`,
-      url: `/manage-your-company/annual-report/`,
-    },
-    theme: `primary48`,
-    marginBottom: 48,
-  },
-  {
     type: `header`,
-    content: `Wisconsin Business Licenses and Permits`,
+    content: `Wisconsin Business License Search`,
     size: 3,
     marginBottom: 20,
   },
   {
     type: `text`,
     content: `Your Wisconsin LLC may need certain licenses and permits to comply with specific requirements. These business permits and licenses might be issued by Wisconsin, regional or federal organizations. Some of the associated fees only need to be paid once, while others have ongoing charges.`,
-    marginBottom: 20,
-  },
-  {
-    type: `text`,
-    content: `Permits and licenses vary based on:`,
     marginBottom: 20,
   },
   {
@@ -1077,29 +985,24 @@ export const feesAndRequirments = [
     color: color.yellow3,
   },
   {
-    type: `text`,
-    content: `You can research these permits and licenses yourself or use Incfile’s Business License Research Package, which includes:`,
-    marginBottom: 20,
-  },
-  {
     type: `list-dot`,
     content: {
       header: `You can research these permits and licenses yourself or use Incfile’s Business License Research Package, which includes:`,
       list: [`A complete report on all the licenses, permits and tax registrations your Wisconsin LLC will need`,
-             `The application forms you will need to file with the Wisconsin, regional and federal licensing authorities`],
+             `The application forms you will need to file with the state, regional and federal licensing authorities`],
     },
     marginBottom: 20,
     color: color.yellow3,
   },
   {
     type: `text`,
-    content: `Remember that operating your business without the required licenses can expose you to risks and fines from federal, Wisconsin and local governments.`,
+    content: `Remember that operating your business without the required licenses can expose you to risks and fines from federal, state and local governments.`,
     marginBottom: 0,
   },
   {
     type: `button`,
     content: {
-      text: `INCFILE'S WISCONSIN BUSINESS LICENSE RESEARCH PACKAGE`,
+      text: `INCFILE'S ARIZONA BUSINESS LICENSE RESEARCH PACKAGE`,
       url: `/business-license-research-package/`,
     },
     theme: `primary48`,
@@ -1107,7 +1010,7 @@ export const feesAndRequirments = [
   },
   {
     type: `header`,
-    content: `An Operating Agreement for Your Wisconsin LLC`,
+    content: `Create an Wisconsin Operating Agreement for Your LLC`,
     size: 3,
     marginBottom: 20,
   },
@@ -1134,19 +1037,19 @@ export const feesAndRequirments = [
   },
   {
     type: `header`,
-    content: `To Obtain a Fictitious/DBA Name for Your Wisconsin LLC`,
+    content: `To Obtain a Trade/DBA Name for Your Wisconsin LLC`,
     size: 3,
     marginBottom: 20,
   },
   {
     type: `text`,
-    content: `If you want your WI business to trade under a different name, you can file a form with the Wisconsin Department of Financial Institutions. You will need to pay a Wisconsin filing fee. Incfile can file this form on your behalf.`,
+    content: `If you want your WI business to trade under a different name, you can file a form with the Wisconsin Corporation Commission. You will need to pay an Wisconsin filing fee. Incfile can file this form on your behalf.`,
     marginBottom: 20,
   },
   {
     type: `button`,
     content: {
-      text: `INCFILE'S WISCONSIN FICTITIOUS NAME SERVICE`,
+      text: `INCFILE'S ARIZONA TRADE NAME SERVICE`,
       url: `/fictitious-business-or-trade-name/`,
     },
     theme: `primary48`,
@@ -1154,19 +1057,19 @@ export const feesAndRequirments = [
   },
   {
     type: `header`,
-    content: `To Change the Wisconsin Registered Agent for Your WI LLC`,
+    content: `To Change the Wisconsin Statutory Agent for Your WI LLC`,
     size: 3,
     marginBottom: 20,
   },
   {
     type: `text`,
-    content: `Your Wisconsin LLC needs a Registered Agent, which must be appointed when you first incorporate your LLC. You can also switch to a new WI Registered Agent later. Incfile provides a complete Wisconsin Registered Agent service.`,
+    content: `Your Wisconsin LLC needs a Statutory/Resident Agent, which must be appointed when you first incorporate your LLC. You can also switch to a new WI Statutory Agent later. Incfile provides a complete Wisconsin Statutory/Resident Agent service.`,
     marginBottom: 20,
   },
   {
     type: `button`,
     content: {
-      text: `INCFILE'S WISCONSIN REGISTERED AGENT SERVICE`,
+      text: `INCFILE'S ARIZONA REGISTERED AGENT SERVICE`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -1180,7 +1083,7 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `If you don’t want to form your WI business right away, you can reserve a name with the Wisconsin Department of Financial Institutions. You will need to pay a small fee to do this.`,
+    content: `If you don’t want to form your WI business right away, you can reserve a name with the Wisconsin Corporation Commission. You will need to pay a small fee to do this.`,
     marginBottom: 30,
   },
   {
@@ -1246,7 +1149,7 @@ export const feesAndRequirments = [
   },
   {
     type: `header`,
-    content: `FAQs About Wisconsin LLC Fees`,
+    content: `FAQs About Wisconsin LLC Fees & Requirements`,
     size: 3,
     marginBottom: 30,
   },
@@ -1256,11 +1159,11 @@ export const feesAndRequirments = [
       items: [
         {
           question: `What Happens to the State Fees That I Am Charged When Forming My Wisconsin LLC?`,
-          answer: `We charge you for this fee at cost and then pay the fee to the Department of Financial Institutions on your behalf when forming your Wisconsin business.`,
+          answer: `We charge you for this fee at cost and then pay the fee to the Corporation Commission on your behalf when forming your Wisconsin business. `,
         },
         {
           question: `Do I Need to Pay an Annual Report Fee Every Year?`,
-          answer: `Yes. Most states, including Wisconsin, require you to file a report for your LLC every year. You can find out more on the <a href="/compliance-filing-requirement/compliance> compilance page for your state</a>.`,
+          answer: `No. Most states require you to file a report for your LLC every year, but Wisconsin has no annual reporting requirements. `,
         },
         {
           question: `Who Will I Need to Get Business Licenses and Permits From for My Wisconsin LLC?`,
