@@ -13,6 +13,7 @@ const Wrapper = styled.div`
     right: ${props => props.right ? `${props.right}%` : ``};
     bottom: ${props => props.bottom ? `${props.bottom}%` : ``};
     transform: translate(${props => props.x ? `${props.x}%` : `0`}, ${props => props.y ? `${props.y}%` : `0`});
+    z-index: -1;
 `;
 
 const Oval = ({ children, className, width, height, top, left, right, bottom, y, x, opacity }) => (
