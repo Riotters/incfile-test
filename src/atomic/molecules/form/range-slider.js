@@ -4,6 +4,7 @@ import { Paragraph } from "../../atoms/typography/paragraph";
 import { Heading } from "../../atoms/typography/heading";
 import Box from "../../atoms/boxes/white-box";
 import styled from "styled-components";
+import AmountSlider from "../../../components/amount-slider/amount-slider";
 
 const WhiteBox = styled(Box)`
   display: flex;
@@ -75,18 +76,18 @@ const InputWrapper = styled.div`
 class Range extends React.Component {
   constructor(props) {
     super(props);
-    this.updateRange = this.updateRange.bind(this);
+    //this.updateRange = this.updateRange.bind(this);
   }
 
-  updateRange(e) {
-    this.props.updateRange(e.target.value);
-  }
+  // updateRange(e) {
+  //   this.props.updateRange(e.target.value);
+  // }
 
   render() {
-    const { range } = this.props;
+    //const { range } = this.props;
     return (
       <WhiteBox>
-        <Heading size="4" bottomMargin="32">
+        {/* <Heading size="4" bottomMargin="32">
           What’s your estimated yearly net income for the business?
         </Heading>
         <span id="output">${range},000</span>
@@ -94,7 +95,8 @@ class Range extends React.Component {
         <InputWrapper>
           <span className="slider-bar" style={{ width: `${range < 50 ? parseInt(range) + 4 : parseInt(range) - 1}%` }} />
           <input id="range" type="range" value={range} min="0" max="100" step="1" onChange={this.updateRange} />
-        </InputWrapper>
+        </InputWrapper> */}
+        <AmountSlider initValue={72000} maxValue={100000} step={500} description="Estimated yearly income" onChange={() => {}}/>
       </WhiteBox>
     );
   }
