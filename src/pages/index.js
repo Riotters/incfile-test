@@ -141,10 +141,10 @@ const IndexPage = () => (
         <Link to="/registered-agents/">Registered Agents</Link>
         <Link to="/s-corporation-tax-calculator/">S Corp Tax Calculator (WIP)</Link>
         <Link to="/sales-tax-calculator/">Sales Tax Calculator</Link>
-        <Link to="/state-filing-times">State Filing Times (no details)</Link>
-        <Link to="/ongoing-filing-requirements">Ongoing Filing Requirements (no details)</Link>
-        <Link to="/learning-center-entity/business-resources">Business Resources (WIP)</Link>
-        <Link to="/learning-center-entity/business-name-search">Business Name Search (no details)</Link>
+        <Link to="/state-filing-times/">State Filing Times (no details)</Link>
+        <Link to="/ongoing-filing-requirements/">Ongoing Filing Requirements (no details)</Link>
+        <Link to="/learning-center-entity/business-resources/">Business Resources (WIP)</Link>
+        <Link to="/learning-center-entity/business-name-search/">Business Name Search (no details)</Link>
         <Link to="/business-entity-quiz">Business Entity Quiz</Link>
 
         <Link to="/learning-center-entity/alaska-corporation">Alaska Corporation</Link>
