@@ -390,7 +390,7 @@ export const namingYourBusiness = [
   {
     type: `button`,
     content: {
-      text: `INCFILE'S DBA NAME SERVICE`,
+      text: `Incfile's DBA name service`,
       url: `/fictitious-business-or-trade-name/`,
     },
     theme: `primary48`,
@@ -478,7 +478,7 @@ export const namingYourBusiness = [
   {
     type: `button`,
     content: {
-      text: `INCFILE TRADEMARK SEARCH AND REGISTRATION SERVICE`,
+      text: `Incfile trademark search and registration service`,
       url: `/trademark-name-search/`,
     },
     theme: `primary48`,
@@ -624,7 +624,7 @@ export const registeredAgent = [
   {
     type: `button`,
     content: {
-      text: `ORDER INCFILE'S ARKANSAS REGISTERED AGENT SERVICE`,
+      text: `Order Incfile's Arkansas registered agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -677,7 +677,7 @@ export const registeredAgent = [
   {
     type: `button`,
     content: {
-      text: `INCORPORATE YOUR BUSINESS THROUGH INCFILE`,
+      text: `Incorporate your business through Incfile`,
       url: `/form-order-now.php?entityType=LLC&entityState=AR/`,
     },
     theme: `primary48`,
@@ -719,7 +719,7 @@ export const registeredAgent = [
   {
     type: `button`,
     content: {
-      text: `ORDER INCFILE'S ARKANSAS REGISTERED AGENT SERVICE`,
+      text: `Order Incfile's Arkansas registered agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -899,7 +899,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `INCORPORATE YOUR ARKANSAS LLC THROUGH INCFILE TODAY`,
+      text: `Incorporate your Arkansas LLC through Incfile today`,
       url: `/form-order-now.php?entityType=LLC&entityState=AR`,
     },
     theme: `primary48`,
@@ -919,7 +919,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `GET AN EIN FOR YOUR ARKANSAS LLC THROUGH INCFILE`,
+      text: `Get and EIN for your Arkansas LLC through Incfile`,
       url: `/manage-your-company/tax-id-ein/`,
     },
     theme: `primary48`,
@@ -939,7 +939,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `GET A FOREIGN QUALIFICATION/CERTIFICATE OF AUTHORITY THROUGH INCFILE`,
+      text: `Get a foreign qualification/certificate of authority through Incfile`,
       url: `/manage-your-company/foreign-qualification/`,
     },
     theme: `primary48`,
@@ -995,7 +995,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `INCFILE'S ARKANSAS ANNUAL REPORT FILING SERVICE`,
+      text: `Incfile's Arkansas annual report filing service`,
       url: `/manage-your-company/annual-report/`,
     },
     theme: `primary48`,
@@ -1059,7 +1059,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `INCFILE'S ARKANSAS BUSINESS LICENSE RESEARCH PACKAGE`,
+      text: `Incfile's Arkansas business license research package`,
       url: `/business-license-research-package/`,
     },
     theme: `primary48`,
@@ -1106,7 +1106,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `INCFILE'S ARKANSAS FICTITIOUS NAME SERVICE`,
+      text: `Incfile's Arkansas fictitious name service`,
       url: `/fictitious-business-or-trade-name/`,
     },
     theme: `primary48`,
@@ -1126,7 +1126,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `INCFILE'S ARKANSAS REGISTERED AGENT SERVICE`,
+      text: `Incfile's Arkansas registered agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -1168,8 +1168,8 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `INCFILE'S ARKANSAS ARTICLES OF AMENDMENT SERVICE`,
-      url: `/`,
+      text: `Incfile's Arkansas articles of amendment service`,
+      url: `/manage-your-company/amendment/`,
     },
     theme: `primary48`,
     marginBottom: 32,
@@ -1188,7 +1188,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `INCFILE'S ARKANSAS CERTIFICATE OF GOOD STANDING SERVICE`,
+      text: `Incfile's Arkansas certificate of good standing service`,
       url: `/manage-your-company/certificate-of-good-standing/`,
     },
     theme: `primary48`,
@@ -1423,7 +1423,7 @@ export const businessTaxes = [
   {
     type: `button`,
     content: {
-      text: `INCFILE FORM 2553 S CORPORATION TAX ELECTION FOR AN LLC SERVICE`,
+      text: `Incifle Form 2553 S corporation tax election for an LLC service`,
       url: `/llc-s-corp-election/`,
     },
     theme: `primary48`,
