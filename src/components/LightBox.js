@@ -29,7 +29,7 @@ class LightBox extends Component {
   };
 
   render() {
-    const { videoID, thumbnailVideo } = this.props;
+    const { videoID, thumbnailVideo, vimeo } = this.props;
     const { showLightBox } = this.state;
 
     return (
@@ -46,12 +46,19 @@ class LightBox extends Component {
         {videoID && showLightBox && (
           <PortalComponent visible={showLightBox}>
             <LightBoxContent>
-              {parse(`<iframe
-                                src="https://www.youtube.com/embed/${videoID}?rel=0&autoplay=1"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>`)}
-
+              {vimeo ? (
+                parse(`<iframe 
+                src="https://player.vimeo.com/video/${videoID}"  
+                frameborder="0" 
+                allow="autoplay; fullscreen" 
+                allowfullscreen></iframe>`)
+              ) : (
+                parse(`<iframe
+                src="https://www.youtube.com/embed/${videoID}?rel=0&autoplay=1"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>`)
+              )}
               <Control>
                 <button onClick={(e) => this.closeModal(e)}>
                   <CloseSVG />
@@ -89,8 +96,10 @@ const WrapperVideo = styled.div`
 `;
 
 const PlayButton = styled.button`
-  width: 80px;
-  height: 80px;
+  height: 30%;
+  width: 16.87%;
+  max-width: 80px;
+  max-height: 80px;
   background-color: ${color.orange1};
   border: 0;
   border-radius: 50%;
@@ -103,8 +112,10 @@ const PlayButton = styled.button`
 
   span {
     display: block;
-    height: 21px;
-    width: 21px;
+    height: 26%;
+    width: 26%;
+    max-width: 21px;
+    max-height: 21px;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -113,6 +124,8 @@ const PlayButton = styled.button`
     svg {
       width: 100%;
       height: 100%;
+      position: relative;
+      left: 2px;
     }
   }
 
