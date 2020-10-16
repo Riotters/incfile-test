@@ -8,6 +8,7 @@ const Wrapper = styled.div`
   width: 100%;
   max-width: ${props => props.maxWidth ? `${props.maxWidth}px` : ""};
   margin: 0 auto;
+  margin-bottom: ${props => props.bottomMargin ? `${props.bottomMargin}px` : ""};
 
   @media (min-width: 992px) {
     flex-direction: row;
@@ -58,10 +59,10 @@ const Objectbox = styled.div`
   }
 `;
 
-const LeftContentRightObject = ({ className, object, children, maxWidth, contentWidth, contentCenter }) => {
+const LeftContentRightObject = ({ className, object, children, maxWidth, contentWidth, contentCenter, bottomMargin }) => {
   return (
     <Container>
-      <Wrapper className={className} maxWidth={maxWidth}>
+      <Wrapper className={className} maxWidth={maxWidth} bottomMargin={bottomMargin}>
         <Content contentWidth={contentWidth} contentCenter={contentCenter}>{children}</Content>
         <Objectbox>
           <Sticky>

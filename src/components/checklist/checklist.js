@@ -112,7 +112,7 @@ class Checklist extends React.Component {
       item: {
         height: 60,
       },
-      items: [
+      items: this.props.Items ?? [
         { id: 1, name: "Lorem ipsum 1", isCompleted: false, height: baseHeight, description },
         { id: 2, name: "Lorem ipsum 2", isCompleted: false, height: baseHeight, description },
         { id: 3, name: "Lorem ipsum 3", isCompleted: false, height: baseHeight, description },

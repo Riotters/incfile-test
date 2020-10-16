@@ -16,7 +16,7 @@ import CheckBlueSVG from "../../../../images/circle-status-check-blue.inline.svg
 
 const FutherResources = styled.section`
   position: relative;
-  padding-top: 75px;
+  padding-top: 104px;
   padding-bottom: 64px;
 
   &::before {
@@ -41,12 +41,12 @@ const Grid = styled.div`
   }
 `;
 
-const colors = [color.orange3, color.purple3, color.blu3, color.green3, color.purple4, color.yellow3, color.babyblue3, color.orange3, color.purple3, color.green3];
-const icons = ["clock-691", "purpletick-2942", "rocket-939", "green-chart-4824", "purple-id-3067", "start-blogging-and-writing", "blue-usa-3865", "blue-usa-3865", "blue-usa-3865", "blue-usa-3865"];
+const colors = [color.orange3, color.purple3, color.blue3, color.green3, color.purple3, color.yellow3, color.blue3, color.orange3, color.purple3, color.green3];
+const icons = ["clock-691", "purpletick-2942", "rocket-939", "green-chart-4824", "purple-id-3067", "start-blogging-and-writing", "blue-usa-3865", "forming-a-corporation-3478", "ibusiness-name-search-5891", "business-report-9917"];
 
 const FutherResourcesSection = ({ className, content }) => (
   <FutherResources className={className}>
-    <HeadingCenter headline={content.header} headlineWidth="770" text={content.text} />
+    <HeadingCenter headline={content.header} headlineWidth="770" text={content.text} bottomMargin="80" />
     <ContentCenter contentWidth="970">
       <Grid>
         {content.cards.map((card, i) => (

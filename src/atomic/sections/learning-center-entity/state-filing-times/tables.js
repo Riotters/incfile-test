@@ -13,11 +13,11 @@ const Wrapper = styled.div`
   }
 `;
 
-const Tables = ({ content }) => {
+const Tables = ({ content, stateFilingTimes }) => {
   return (
     <Wrapper>
       <Container>
-        <Accordion content={content.tables} />
+        <Accordion content={stateFilingTimes} />
         <Heading headline={content.header} linkText={content.link.text} linkUrl={content.link.url} />
       </Container>
     </Wrapper>
