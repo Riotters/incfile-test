@@ -1131,7 +1131,7 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `If you don’t want to form your business right away, you can reserve a name with the Idaho Secretary of State. You will need to pay a small fee to do this.`,
+    content: `If you don’t want to form your business right away, you can reserve a name with the Indiana Secretary of State. You will need to pay a small fee to do this.`,
     marginBottom: 48,
   },
   {
@@ -1220,11 +1220,11 @@ export const feesAndRequirments = [
       items: [
         {
           question: `What Happens to the State Fees That I Am Charged When Forming My Indiana LLC?`,
-          answer: `We charge you for this fee at cost and then pay the fee to the secretary of state on your behalf when forming your Idaho business.`,
+          answer: `We charge you for this fee at cost and then pay the fee to the secretary of state on your behalf when forming your Indiana business.`,
         },
         {
           question: `Do I Need to Pay an Annual Report Fee Every Year?`,
-          answer: `Yes. Idaho requires you to file a report for your LLC every year.`,
+          answer: `Yes. Indiana requires you to file a report for your LLC every year.`,
         },
         {
           question: `Who Will I Get Business Licenses and Permits from for My Indiana LLC?`,
@@ -1368,7 +1368,7 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `Get details on the <a href= "https://www.in.gov/dor/3986.htm" target="_blank" rel="noopener noreferrer">Idaho state tax online here</a>.`,
+    content: `Get details on the <a href= "https://www.in.gov/dor/3986.htm" target="_blank" rel="noopener noreferrer">Indiana state tax online here</a>.`,
     marginBottom: 48,
   },
   {
@@ -1558,7 +1558,7 @@ export const businessTaxes = [
       list: [
         `Federal income tax`,
         `Federal self-employment tax`, 
-        `Idaho state tax`
+        `Indiana state tax`
       ],
     },
     marginBottom: 16,

@@ -112,9 +112,14 @@ export const howToGuide = [
     marginBottom: 24,
   },
   {
+    type: `text`,
+    content: `These are all the basic steps for forming an LLC in Idaho, but the Secretary of State has plenty of additional information.`,
+    marginBottom: 16,
+  },
+  {
     type: `list-dot`,
     content: {
-      header: `These are all the basic steps for forming an LLC in Idaho, but the Secretary of State has plenty of additional information. Try these resources below:`,
+      header: `Try these resources below:`,
       list: [
         `<a href="https://sos.idaho.gov/" target="_blank" rel="noopener noreferrer">Idaho Secretary of State for forming and running your LLC</a>`,
         `<a href="https://labor.idaho.gov/" target="_blank" rel="noopener noreferrer">Idaho Department of Labor for employers and hiring</a>`,
@@ -170,7 +175,7 @@ export const howToGuide = [
               <li>Psychology</li>
               <li>Social Work</li>
               <li>Surveying</li>
-              <li>Veterinary Medicine</li></br></br>`,
+              <li>Veterinary Medicine</li></br>`,
         },
         {
           question: `Foreign LLC in Idaho`,
@@ -926,7 +931,7 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Some states allow you to form your LLC more quickly by paying a rush fee. You can <a href="/state-filing-times/">compare state filing times and fees here, including expedited fees for Idaho.</a>.`,
+    content: `Some states allow you to form your LLC more quickly by paying a rush fee. You can <a href="/state-filing-times/" target="_blank">compare state filing times and fees here, including expedited fees for Idaho.</a>.`,
     marginBottom: 16,
   },
   {
@@ -1095,7 +1100,7 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Idaho LLCs aren’t required to have an Operating Agreement, but they are extremely useful for several reasons (<a href="/research-topics/llc-info/the-llc-operating-agreement/">learn about them here</a>). If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Idaho business. You can choose to make changes to the template based on your unique requirements.`,
+    content: `Idaho LLCs aren’t required to have an Operating Agreement, but they are extremely useful for several reasons (<a href="/research-topics/llc-info/the-llc-operating-agreement/" target="_blank">learn about them here</a>). If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Idaho business. You can choose to make changes to the template based on your unique requirements.`,
     marginBottom: 48,
   },
   {
@@ -1251,7 +1256,7 @@ export const feesAndRequirments = [
               <li>Governing organizations in your industry</li>
               <li>Federal, state and local regulations</li>
               </ul></br>
-            <p>That’s why our <a href="/business-license-research-package/">business license research package</a> is so useful. It explores all of these areas for you and provides a comprehensive overview of exactly what your Idaho LLC needs to be compliant.</p>`,
+            <p>That’s why our <a href="/business-license-research-package/" target="_blank">business license research package</a> is so useful. It explores all of these areas for you and provides a comprehensive overview of exactly what your Idaho LLC needs to be compliant.</p>`,
         },
       ],
     },
@@ -1273,7 +1278,7 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `If you want help with your taxes, Incfile provides a complete <a href="/business-accounting/">Business Tax Filing service</a>.`,
+    content: `If you want help with your taxes, Incfile provides a complete <a href="/business-accounting/" target="_blank">Business Tax Filing service</a>.`,
     marginBottom: 48,
   },
   {
