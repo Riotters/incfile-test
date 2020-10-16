@@ -23,9 +23,9 @@ const Wrapper = styled(Whitebox)`
             height: 72px;
         }
 
-        div {
+        & > div {
             &:last-child {
-                max-height: none;
+                height: 304px;
             }
         }
     }
@@ -46,8 +46,9 @@ const Wrapper = styled(Whitebox)`
     const TextWrapper = styled.div`
     display: flex;
     flex-direction: column;
-    max-height: 148px;
-    
+    height: 148px;
+    transition: height .3s ease;
+
     h4, p {
         text-align: center;
     }
