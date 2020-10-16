@@ -2,8 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import Whitebox from "../../atoms/boxes/white-box";
 import Image from "../../atoms/image/image";
-import Texts from "../../molecules/text-blocks/blog-newsletter-texts";
-import Input from "../../molecules/form/input-field";
 import Button from "../../molecules/buttons/button"
 import Oval from "../../atoms/icons/oval";
 import OvalSVG from "../../../images/ovals/top-left-transparent-orange3.inline.svg";
@@ -17,7 +15,7 @@ const Wrapper = styled.div`
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 32px 24px;
+        padding: 64px 24px 40px;
         position: relative;
 
         div {

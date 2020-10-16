@@ -1480,16 +1480,17 @@ export const businessTaxes = [
     content: `You can do this by making an “S Corporation Tax Election” with the IRS using a form known as Form 2553. We can file your Form 2553 with the IRS on your behalf.`,
     marginBottom: 30,
   },
-  buttons: [
-    {
-      text: `Incfile Form 2553 S Corporation Tax Election for an LLC service`,
-      url: `/llc-s-corp-election/`,
-    },
-    {
-      type: `text`,
-      content: `Speak to your accountant for more information on reducing your Wisconsin LLC self-employment tax through an S Corporation tax election.`,
-      marginBottom: 30,
-    },
+  
+  {
+    type: `button`,
+    text: `Incfile Form 2553 S Corporation Tax Election for an LLC service`,
+    url: `/llc-s-corp-election/`,
+  },
+  {
+    type: `text`,
+    content: `Speak to your accountant for more information on reducing your Wisconsin LLC self-employment tax through an S Corporation tax election.`,
+    marginBottom: 30,
+  },
   {
     type: `header`,
     content: `Wisconsin LLC Federal Income Tax`,

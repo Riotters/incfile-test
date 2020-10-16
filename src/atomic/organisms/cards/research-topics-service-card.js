@@ -2,10 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import Whitebox from "../../atoms/boxes/white-box";
 import Texts from "../../molecules/text-blocks/blog-follow-us-text";
-import Button from "../../molecules/buttons/blog-follow-us-btn";
-import FacebookSVG from "../../../images/icons/facebook32.inline.svg";
-import TwitterSVG from "../../../images/icons/twitter32.inline.svg";
-import YoutubeSVG from "../../../images/icons/youtube32.inline.svg";
 import { Paragraph } from "../../atoms/typography/paragraph";
 import LightBoxVideo from "../../../components/LightBox";
 
