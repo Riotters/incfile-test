@@ -274,67 +274,62 @@ export const howToGuide = [
 export const namingYourBusiness = [
   {
     type: `header`,
-    content: `Delaware Entity Searches & Naming your Delaware LLC`,
+    content: `Naming Your West Virginia LLC`,
     size: 2,
     marginBottom: 16,
   },
   {
     type: `text`,
-    content: `Your Delaware business entity needs the perfect name, and we’re here to help. In this section we’ll guide you through using our tool to search the DE Division of Corporations business register, tell you about the rules for naming your business, describe “Doing Business As (DBA)” names and get you started with registering your LLC.`,
+    content: `We’re here to help you find the right business name for your West Virginia LLC. From searching for a business name with the WV Secretary of State to understanding naming rules or creating a “Doing Business As” name to register your entity, you’re in the right place.`,
     marginBottom: 32,
   },
   {
     type: `header`,
-    content: `Delaware LLC Business Search`,
+    content: `West Virginia Secretary of State Business Search`,
     size: 3,
     marginBottom: 16,
   },
   {
     type: `text`,
-    content: `You should start naming your business by completing a “Delaware business entity search” with the Division of Corporations. We make that fast and easy with the <a href="/business-name-search/">Incfile business name search tool</a>. Just enter your details and we’ll search the business registry and see if your desired business name is available. We can even search your name for other states from one central place.`,
+    content: `Once you’ve narrowed down your business name choices, you’ll need to check if there’s already another West Virginia business registered under your desired business name. That means searching the West Virginia Secretary of State website using their business entity search tool. You can easily look up LLCs and corporations by name and other details.`,
     marginBottom: 16,
   },
   {
     type: `text`,
-    content: `If the business name is already used, that means it’s not available and you won’t be able to register it. Try searching for a different business name instead. Alternatively, you can use the <a href="https://icis.corp.delaware.gov/ecorp/entitysearch/namesearch.aspx" target="_blank" rel="noopener noreferrer">Delaware Secretary of State Entity Search tool</a>. All you need to do is enter the DE business name in the “Entity Name” field and click “Search.
-
-
-    `,
+    content: `If the business name is already used, that means it’s not available and you won’t be able to register it. Try searching for a different business name instead.`,
     marginBottom: 16,
   },
   {
-    type: `header`,
-    content: `Follow These Rules to Name Your Delaware LLC`,
-    size: 3,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `Once you’ve decided on a name for your LLC and checked business name availability, you’ll need to meet Delaware Division of Corporations naming rules. These do vary from state to state — we’ve got general naming rules below, as well as naming rules specific to LLC businesses formed in DE.`,
+    type: `arrow-link`,
+    content: {
+      text: `West Virginia Secretary of State business entity search tool`,
+      url: `http://apps.sos.wv.gov/business/corporations/ target="_blank" rel="noopener noreferrer"`,
+    },
     marginBottom: 32,
   },
   {
     type: `header`,
-    content: `Standard LLC Naming Rules`,
+    content: `Rules about LLC Names in West Virginia`,
     size: 3,
     marginBottom: 16,
   },
   {
     type: `text`,
-    content: `These rules typically apply to all LLCs, no matter what state they are formed in. You will need to pay attention to these rules as they will influence the name you choose for your Delaware LLC.`,
-    marginBottom: 40,
+    content: `Every LLC in West Virginia needs to follow the Secretary of State’s naming rules. We’ve outlined these rules below:`,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Your LLC Business Name Must Be Unique`,
-    size: 4,
+    size: 3,
     marginBottom: 16,
   },
   {
     type: `text`,
-    content: `The business name you have chosen cannot be used by any other LLC or corporation in the state of Delaware. This is why you should check business name availability on the DE DOC website.`,
-    marginBottom: 32,
+    content: `The business name you have chosen cannot be used by any other LLC or corporation in the state of West Virginia. This is why you should check business name availability on the WV SOS website.`,
+    marginBottom: 40,
   },
+  
   {
     type: `header`,
     content: `Your LLC Business Name Must Not Be Confusable With Another Business Name`,
@@ -371,7 +366,7 @@ export const namingYourBusiness = [
   },
   {
     type: `header`,
-    content: `Your LLC Business Name May Have Other General Restrictions`,
+    content: `Other General Restrictions`,
     size: 4,
     marginBottom: 16,
   },
@@ -420,24 +415,24 @@ export const namingYourBusiness = [
   },
   {
     type: `header`,
-    content: `Delaware LLC “Doing Business As” (DBA) Names`,
+    content: `“Trade Names” or DBAs in West Virginia`,
     size: 4,
     marginBottom: 32,
   },
   {
     type: `text`,
-    content: `You might choose to do business under a different name from your legal LLC name. In Delaware, doing business under a different name is known as a “Doing Business As (DBA)” name. You might choose to use a different name from your DE formal LLC name for a variety of reasons.`,
+    content: `You might choose to do business under a different name from your legal LLC name. In West Virginia, doing business under a different name is known as a “Trade Name” or “Doing Business As” (DBA) name. You might choose to use a different name from your formal LLC name for a variety of reasons.`,
     marginBottom: 16,
   },
   {
     type: `text`,
-    content: `For example, your LLC might be called Delaware Corporate Construction Holding Company LLC, and you have a chain called Wilmington Building Supplies. You should file a DBA form with the Delaware courts in your county. You can have Incfile do this on your behalf through our Assumed Business Name service.`,
+    content: `For example, your LLC might be called West Virginia Outdoor Holding Company LLC, but you have a brand called “Beautiful Boating.” You should file an “Application For Trade Name (DBA)” to let the West Virginia Secretary of State know. In West Virginia, you do that directly with the SOS or you can have Incfile do it on your behalf through our DBA service.`,
     marginBottom: 16,
   },
   {
     type: `button`,
     content: {
-      text: `Incfile's assumed business name service`,
+      text: `Incfile's dba name service`,
       url: `/fictitious-business-or-trade-name/`,
     },
     theme: `primary48`,
@@ -445,29 +440,29 @@ export const namingYourBusiness = [
   },
   {
     type: `header`,
-    content: `Business Name Registration for Your Delaware LLC`,
+    content: `Register Your LLC Name with the Secretary of State`,
     size: 4,
     marginBottom: 16,
   },
   {
     type: `text`,
-    content: `Once you’ve searched for your Delaware business name and checked availability through our business search tool, it’s time for next steps. You will need to follow naming rules and decide whether or not you need a fictitious name. Once you’ve done that, you can register your DE LLC name. There are a couple of ways to do this.`,
+    content: `Once you’ve searched for your Delaware business name and checked availability through our business search tool, it’s time for next steps. You will need to follow naming rules and decide whether or not you need a fictitious name. Once you’ve done that, you can register your WV LLC name. There are a couple of ways to do this:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`<p>If you don’t want to form your Delaware LLC right now, you can reserve the business name with the Delaware Division of Corporations. You will need to complete a form and file it with the DE DOC. You do not need to reserve a name if you are forming your business right away.</p></br>
-              <a href="https://icis.corp.delaware.gov/ecorp/namereserv/namereservation.aspx" target="_blank" rel="noopener noreferrer">Delaware DOC LLC name reservation form</a>`,
-             `<p>If you’re ready to start your Delaware LLC, you can file your Certificate of Formation With the Delaware Division of Corporations, or <a href="/form-order-now.php?entityType=LLC&entityState=DE/">let Incfile take care of it for you</a>.</p>`],
+      list: [`<p>If you don’t want to form your West Virginia LLC right now, you can reserve the business name with the West Virginia Secretary of State. You will need to complete an “Application for Name Reservation” and file it with the SOS. You do not need to reserve a name if you are forming your business right away.</p></br>
+              <a href="https://sos.wv.gov/FormSearch/Business/Multiple-Company-Types/nr1.pdf" target="_blank" rel="noopener noreferrer">West Virginia SOS LLC name reservation form</a>`,
+             `<p>If you’re ready to start your West Virginia LLC, you can formally file your Articles of Organization with the Secretary of State, or<a href="/form-order-now.php?entityType=LLC&entityState=WV/">let Incfile take care of it for you</a>.</p>`],
     },
     marginBottom: 32,
     color: color.purple3,
   },
   {
     type: `header`,
-    content: `FAQs on Naming Your Delaware LLC`,
+    content: `FAQs on Naming Your West Virginia LLC`,
     size: 4,
     marginBottom: 16,
   },
@@ -481,32 +476,20 @@ export const namingYourBusiness = [
     content: {
       items: [
         {
-          question: `How Do I Search for My Delaware LLC Business Name?`,
-          answer: `Just use our <a href="/business-name-search/">business name search tool</a> and enter your proposed business name. We’ll search the register of the Delaware Division of Corporations and let you know if there are any DE corporations or LLCs with that name.</br></br>
-                   <a href="/blog/post/llc-name-search-50-states/">Incfile guide to choosing a business name</a>`,
+          question: `How Do I Know if My Chosen Name Is Available?`,
+          answer: `Just go to the business name search tool and enter your proposed business name. This will allow you to search the register of the West Virginia Secretary of State and see if there are any corporations or LLCs with that name.`,
         },
         {
-          question: `Get a Street Address for Your Delaware LLC`,
-          answer: `<p>If you want a street address in Delaware, Incfile provides a convenient and safe virtual mailbox service. Please note that this may not meet the requirements of the Secretary of State for a registered office or registered agent address, but it is an excellent way to securely access your physical mail from anywhere.</p></br></br>
-                   <p>The benefits of our virtual Delaware mailbox service include:</p></br>
-                   <ul>
-                   <li>One address for all correspondence</li>
-                   <li>Review mail wherever you are</li>
-                   <li>A professional image for your business</li>
-                   <li>A low, fixed price regardless of mail volume</li>
-                   </ul>`,
+          question: `Are There Any Rules on Naming My West Virginia LLC?`,
+          answer: `Yes. Most LLCs will be bound by general rules (applicable to all LLCs) and specific rules (applicable in the state of West Virginia). We’ve detailed these rules above.`,
         },
         {
-          question: `Are There Any Rules on Naming My Delaware LLC?`,
-          answer: `Yes. Most LLCs will be bound by general rules (applicable to all LLCs) and specific rules (applicable in the state of Delaware). We’ve detailed these rules above.`,
-        },
-        {
-          question: `Can I Do Business Under a Different Name Than My LLC Name in Delaware?`,
+          question: `Can I Do Business Under a Different Name Than My LLC Name in West Virginia?`,
           answer: `Yes. Known as “assumed names,” “fictitious names,” “doing business as names” or “trade names,” you can choose to conduct business under a different name. Details are above.`,
         },
         {
-          question: `Can I Reserve a Name for My Delaware LLC?`,
-          answer: `Yes. The Delaware Division of Corporations allows you to reserve a name if you don’t want to start your business immediately. If you are ready to start your business now, you do not need to reserve a name.`,
+          question: `Can I Reserve a Name for My West Virginia LLC?`,
+          answer: `Yes. The West Virginia Secretary of State allows you to reserve a name if you don’t want to start your business immediately. If you are ready to start your business now, you do not need to reserve a name.`,
         },
       ],
     },
@@ -514,7 +497,7 @@ export const namingYourBusiness = [
   },
   {
     type: `header`,
-    content: `Useful Resources for Naming Your Delaware LLC`,
+    content: `Additional Resources for Naming Your West Virginia LLC`,
     size: 4,
     marginBottom: 16,
   },
@@ -531,7 +514,7 @@ export const namingYourBusiness = [
   },
   {
     type: `text`,
-    content: `You must be careful that your Delaware LLC name does not infringe on the trademark or service mark of another business. The easiest way to make sure your proposed business name does not infringe is to carry out a trademark search through Incfile. If it doesn’t infringe, you can even register it as a trademark yourself.`,
+    content: `You must be careful that your West Virginia LLC name does not infringe on the trademark or service mark of another business. The easiest way to make sure your proposed business name does not infringe is to carry out a trademark search through Incfile. If it doesn’t infringe, you can even register it as a trademark yourself.`,
     marginBottom: 16,
   },
   {
@@ -545,7 +528,7 @@ export const namingYourBusiness = [
   },
   {
     type: `header`,
-    content: `Find the Perfect Name for Your Delaware LLC`,
+    content: `How to Choose a Business Name`,
     size: 3,
     marginBottom: 16,
   },
