@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import parser from "html-react-parser";
 import { color, gradient } from "../../../atoms/styles/colors";
 import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";
@@ -51,6 +52,7 @@ const RequirementsSection = ({ className, content }) => (
                 dropdownTwoPlaceholder="Select State"
                 dropdownTwoOptions={dropdownTwoOptions}
                 priceColumn="dissolve"
+                orderPage = "/dissolution.php"
                 fields="state,dissolveLLC,dissolveCorp,dissolveNpc" />}
         >
             <TextWrapper>
@@ -59,7 +61,7 @@ const RequirementsSection = ({ className, content }) => (
                 </Curve>
                 <Heading size="2" bottomMargin="56" maxWidth="460">{content.header}</Heading>
                 <Heading size="4">{content.header2}</Heading>
-                <Paragraph big bottomMargin="0">{content.text}</Paragraph>
+                <Paragraph big bottomMargin="0" mixed={true}>{parser(content.text)}</Paragraph>
             </TextWrapper>
         </ContentObject>
     </Requirements>

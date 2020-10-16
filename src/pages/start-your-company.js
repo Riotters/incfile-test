@@ -15,7 +15,7 @@ import { top, about, businessStructure, rocket, cta } from "../static/review-ent
 
 const ReviewEntityType = () => (
   <Layout>
-    <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
+    <SEO title="Start a Company | Learn about Business Entity Types" description="Want to start a business? Learn about different types of business structures—from LLC to S Corp to non profit—and find the entity that suits your needs." />
     <Top imageName="mr-bulb-main-header-illustration-7201" imageAlt="Mrs Bulb and with checklist" ovalColor="purple-2" headlineWidth="560" textWidth="450">
       <h1>{top.header}</h1>
       <p>{top.text}</p>

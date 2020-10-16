@@ -43,7 +43,7 @@ const AboutSection = ({ className, content }) => (
       <Heading size={3} bottomMargin="24">
         {content.header3}
       </Heading>
-      <Paragraph big bottomMargin="16" mixed>
+      <Paragraph big bottomMargin="24" mixed>
         {parse(content.text3)}
       </Paragraph>
       <Button content={content.button} theme="primary56" arrow margin="0 auto 48px 0" />
@@ -62,10 +62,10 @@ const AboutSection = ({ className, content }) => (
       <Heading size={3} bottomMargin="24">
         {content.header6}
       </Heading>
-      <Paragraph big bottomMargin="16">
+      <Paragraph big bottomMargin="24">
         {content.text6}
       </Paragraph>
-      <IconListColorBox content={content.list2} color={color.green3} curve curveColor={color.purple2} rounded bottomMargin="16" />
+      <IconListColorBox content={content.list2} color={color.green3} curve curveColor={color.purple2} rounded bottomMargin="24" />
       <Button content={content.button2} theme="primary56" arrow margin="0 auto 48px 0" />
       <Heading size={3} bottomMargin="24">
         {content.header7}
@@ -112,12 +112,6 @@ const AboutSection = ({ className, content }) => (
       <Paragraph big bottomMargin="48">
         {content.text13}
       </Paragraph>
-      <Heading size={3} bottomMargin="24">
-        {content.header15}
-      </Heading>
-      {content.links2.map((link) => (
-        <ArrowLink content={link} />
-      ))}
     </ImageContent>
   </About>
 );

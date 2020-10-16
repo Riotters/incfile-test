@@ -8,13 +8,42 @@ import Oval2SVG from "../../images/icons/oval-blue-small.inline.svg";
 import Oval3SVG from "../../images/icons/oval-blue-medium.inline.svg";
 import VisibilitySensor from "../../components/VisibilitySensor";
 
+const switch1 = (bgColor) => {
+  {
+    console.log(bgColor);
+  }
+  switch (bgColor) {
+    case "blue": {
+      return color.blue2;
+    }
+    case "orange": {
+      return color.orange2;
+    }
+    default:
+      return "";
+  }
+};
+
+const switch2 = (bgColor) => {
+  switch (bgColor) {
+    case "blue": {
+      return color.babyblue3;
+    }
+    case "orange": {
+      return color.orange3;
+    }
+    default:
+      return "";
+  }
+};
+
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
   padding-top: 80px;
   height: 480px;
   position: relative;
-  background-color: ${color.blue3};
+  background-color: ${({ bgColor }) => switch2(bgColor)};
   overflow: hidden;
 
   @media (min-width: 769px) {
@@ -27,12 +56,42 @@ const Oval = styled.div`
   top: 80px;
   right: 0;
   z-index: 1;
+
+  & > svg {
+    defs {
+      linearGradient {
+        stop {
+          &:nth-child(1) {
+            stop-color: ${({ bgColor }) => switch1(bgColor)};
+          }
+          &:nth-child(2) {
+            stop-color: ${({ bgColor }) => switch2(bgColor)};
+          }
+        }
+      }
+    }
+  }
 `;
 
 const Oval2 = styled.div`
   position: absolute;
   top: 0;
   left: 0;
+
+  & > svg {
+    defs {
+      linearGradient {
+        stop {
+          &:nth-child(1) {
+            stop-color: ${({ bgColor }) => switch1(bgColor)};
+          }
+          &:nth-child(2) {
+            stop-color: ${({ bgColor }) => switch2(bgColor)};
+          }
+        }
+      }
+    }
+  }
 `;
 
 const Oval3 = styled.div`
@@ -44,9 +103,22 @@ const Oval3 = styled.div`
   overflow: hidden;
   transform: translateX(100%);
 
-  svg {
+  & > svg {
     height: 100%;
     width: 100%;
+
+    defs {
+      linearGradient {
+        stop {
+          &:nth-child(1) {
+            stop-color: ${({ bgColor }) => switch1(bgColor)};
+          }
+          &:nth-child(2) {
+            stop-color: ${({ bgColor }) => switch2(bgColor)};
+          }
+        }
+      }
+    }
   }
 `;
 
@@ -106,19 +178,19 @@ const ImageContainer = styled.div`
   }
 `;
 
-const Top = ({ headline, text, imageName, imageAlt }) => (
-  <Wrapper>
+const Top = ({ headline, text, imageName, imageAlt, bgColor }) => (
+  <Wrapper bgColor={bgColor}>
     <VisibilitySensor partialVisibility once>
       {({ isVisible }) => (
-        <Oval className={isVisible ? "scaleUp enter" : "scaleUp"}>
+        <Oval className={isVisible ? "scaleUp enter" : "scaleUp"} bgColor={bgColor}>
           <OvalSVG />
         </Oval>
       )}
     </VisibilitySensor>
-    <Oval2>
+    <Oval2 bgColor={bgColor}>
       <Oval2SVG />
     </Oval2>
-    <Oval3>
+    <Oval3 bgColor={bgColor}>
       <Oval3SVG />
     </Oval3>
     <Container>

@@ -8,7 +8,7 @@ export const hero = {
     subtitle: `Everything you need to know about registered agents for your LLC or Corporation`,
     button: {
         text: `Sign up now`,
-        url: `/`
+        url: `${process.env.ORDER_URL}/form-order-now.php`
     }
 }
 
@@ -171,5 +171,9 @@ export const rocket = {
     header: `Launch`,
     header2: `your business with Incfile`,
     text: `No Contracts. No Surprise.`,
-    text2: `Only $0 + State Fee to Launch Your Business.`
+    text2: `Only $0 + State Fee to Launch Your Business.`,
+    button: {
+        text: `See Detailed Pricing`,
+        url: `${process.env.ORDER_URL}/form-order-now.php`,
+      },
 }

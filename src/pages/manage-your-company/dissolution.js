@@ -20,7 +20,7 @@ const Dissolution = () => (
       <h1>{top.header}</h1>
       <p>{top.text}</p>
       <Buttonsbox>
-        <Button to="#" theme="primary56" width="200px" arrow>
+        <Button to={`${process.env.ORDER_URL}/dissolution.php`} theme="primary56" width="200px" arrow>
           Order now
         </Button>
       </Buttonsbox>

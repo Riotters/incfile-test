@@ -11,7 +11,7 @@ export const top = {
     ),
     button: [
         {
-            url: "/",
+            url: `${process.env.ORDER_URL}/form-order-now.php`,
             text: "Start my business"
         }
     ]
@@ -23,7 +23,7 @@ export const business_formation = {
     button: [
         {
             text: "Launch my business",
-            url: "/"
+            url: `${process.env.ORDER_URL}/form-order-now.php`
         }
     ],
     choose: {
@@ -67,7 +67,7 @@ export const business_formation = {
             ],
             button: {
                 text: "Start my business",
-                url: "/"
+                url: `${process.env.ORDER_URL}/form-order-now.php`
             }
         },
     }
@@ -112,6 +112,6 @@ export const rocket = {
     text2: "Businesses Have Started With incfile",
     button: {
         text: "Launch your business",
-        url: "/"
+        url: `${process.env.ORDER_URL}/form-order-now.php`
     }
 };

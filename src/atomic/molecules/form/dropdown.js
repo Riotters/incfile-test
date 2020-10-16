@@ -102,7 +102,11 @@ class Drop extends Component {
     }
 
     _onSelect(option) {
-        this.setState({selected: option})
+        this.setState({ selected: option }, () => {
+            if (this.props.onChange) {
+                this.props.onChange(option);
+            }
+        });
     }
 
     render() {

@@ -10,7 +10,6 @@ export const about = {
     },
   ],
   header: `Is there a limit to the amount of shareholders an S Corporation can have?`,
-  header2: `Is there a limit to the amount of shareholders an S Corporation can have?`,
   text: `There are several decisions to consider when forming a business entity; it is important to be familiar with the tax ramifications of a given business entity before it is filed with the designated state agency.
         <a href="/" target="_blank">Forming an S Corporation</a>
         is one of several options when deciding which type of business entity to form; other options include the LLC and C Corporation. There are several practical and legal concerns to take under consideration as you determine how to structure your business. You must establish whether or not your company will go public, you also need to consider the number of partners or shareholders within the company, and, perhaps most importantly, explore all the tax ramifications of each business entity. With all these considerations in mind, there are some distinct advantages to choosing the S Corporation as your business entity.`,
@@ -20,91 +19,97 @@ export const about = {
         <a href="/" target="_blank">multimember LLC</a>
         is treated by the IRS as a Partnership as the default status for federal tax purposes. This requires that the LLC file the Form 1065 Partnership return (informational only – the LLC does not pay federal taxes), and the net income (or loss) passes through and is accounted for on the tax returns of each individual member.`,
   text5: `Companies doing business as S Corporation must first form a standard corporation with the state (and the default federal tax status at that point is that of a C Corporation). After the corporation is formed with the state the company must file an IRS Small Business Tax Election form 2553 stating their intention to be taxed as an S Corporation. IncFile prepares the Form 2553 and returns it to you for your signature along with your filed corporation, and after the initial shareholders have signed it can simply be faxed or mailed in to the IRS. The IRS Form 2553 must be signed and submitted to the IRS within 75 days of the date of formation of the Corporation.`,
-  header3: `Related Articles`,
-  links2: [
-    {
-      text: `How to Take a Distribution from an S Corp`,
-      url: `/research-topics/s-corporation-info/s-corp-distribution/`,
-    },
-    {
-      text: `What is a Corporate Seal?`,
-      url: `/research-topics/s-corporation-info/corp-seal/`,
-    },
-    {
-      text: `Which entity offers the best tax advantages?`,
-      url: `/research-topics/s-corporation-info/tax-advantages/`,
-    },
-    {
-      text: `The Advantages of Forming an S Corporation`,
-      url: `/research-topics/s-corporation-info/s-corp-form-advantages/`,
-    },
-    {
-      text: `LLC vs. S Corporation`,
-      url: `/research-topics/c-corporation-info/corp-managing/`,
-    },
-    {
-      text: `What are the Advantages of an S Corporation?`,
-      url: `/research-topics/s-corporation-info/s-corp-advantages/`,
-    },
-    {
-      text: `What are the Disadvantages of an S Corporation?`,
-      url: `/research-topics/s-corporation-info/s-corp-disadvantages/`,
-    },
-    {
-      text: `How is an S Corporation Taxed?`,
-      url: `/research-topics/s-corporation-info/s-corp-taxing/`,
-    },
-    {
-      text: `Who Will Typically Elect the S Corporation Status?`,
-      url: `/research-topics/s-corporation-info/s-corporation-status/`,
-    },
-    {
-      text: `Is there a limit to the amount of shareholders an S Corporation can have?`,
-      url: `/research-topics/s-corporation-info/amount-of-shareholders/`,
-    },
-    {
-      text: `Can a foreign resident be a shareholder in an S Corporation?`,
-      url: `/research-topics/s-corporation-info/foreign-resident-shareholder/`,
-    },
-    {
-      text: `How is a Corporation Managed?`,
-      url: `/research-topics/s-corporation-info/corp-managing/`,
-    },
-    {
-      text: `Am I Required to Hold Corporate Meetings?`,
-      url: `/research-topics/s-corporation-info/corporate-meetings/`,
-    },
-    {
-      text: `How Many Shares of Stock will my Corporation Need?`,
-      url: `/research-topics/s-corporation-info/corporation-need/`,
-    },
-    {
-      text: `What are Bylaws?`,
-      url: `/research-topics/s-corporation-info/what-are-bylaws/`,
-    },
-    {
-      text: `What is Stock Par Value?`,
-      url: `/research-topics/s-corporation-info/stock-par-value/`,
-    },
-    {
-      text: `What is the Form 2553?`,
-      url: `/research-topics/s-corporation-info/form-2553/`,
-    },
-    {
-      text: `What are the Differences Between Officers, Directors and Shareholders?`,
-      url: `/research-topics/s-corporation-info/directors-and-shareholders/`,
-    },
-    {
-      text: `Does Forming an LLC (Limited Liability Company) or Corporation Require an Attorney?`,
-      url: `/research-topics/s-corporation-info/require-an-attorney/`,
-    },
-    {
-      text: `What is a Publication Requirement?`,
-      url: `/research-topics/s-corporation-info/publication-requirement/`,
-    },
-    {
-      text: `What is the Customized Corporate/LLC Kit?`,
-      url: `/research-topics/s-corporation-info/customized-corp-llc-kit/`,
-    },
-  ],
-};
+}
+
+export const related = {
+  header: 
+      `Related Articles`,
+  text:
+      `Other users were also interested in knowing about…`,
+  buttons: [
+      {
+          header: `How to Take a Distribution from an S Corp?`,
+          url: `/research-topics/s-corporation-info/s-corp-distribution/`,
+      },
+      {
+          header: `What is a Corporate Seal?`,
+          url: `/research-topics/s-corporation-info/corp-seal/`,
+      },
+      {
+          header: `Which entity offers the best tax advantages?`,
+          url: `/research-topics/s-corporation-info/tax-advantages/`,
+      },
+      {
+          header: `The Advantages of Forming an S Corporation`,
+          url: `/research-topics/s-corporation-info/s-corp-form-advantages/`,
+      },
+      {
+          header: `LLC vs. S Corporation`,
+          url: `/research-topics/c-corporation-info/corp-managing/`,
+      },
+      {
+          header: `What are the Advantages of an S Corporation?`,
+          url: `/research-topics/s-corporation-info/s-corp-advantages/`,
+      },
+      {
+          header: `What are the Disadvantages of an S Corporation?`,
+          url: `/research-topics/s-corporation-info/s-corp-disadvantages/`,
+      },
+      {
+          header: `How is an S Corporation Taxed?`,
+          url: `/research-topics/s-corporation-info/s-corp-taxing/`,
+      },
+      {
+          header: `Who Will Typically Elect the S Corporation Status?`,
+          url: `/research-topics/s-corporation-info/s-corporation-status/`,
+      },
+      {
+          header: `Is there a limit to the amount of shareholders an S Corporation can have?`,
+          url: `/research-topics/s-corporation-info/amount-of-shareholders/`,
+      },
+      {
+          header: `Can a foreign resident be a shareholder in an S Corporation?`,
+          url: `/research-topics/s-corporation-info/foreign-resident-shareholder/`,
+      },
+      {
+          header: `How is a Corporation Managed?`,
+          url: `/research-topics/s-corporation-info/corp-managing/`,
+      },
+      {
+          header: `Am I Required to Hold Corporate Meetings?`,
+          url: `/research-topics/s-corporation-info/corporate-meetings/`,
+      },
+      {
+          header: `How Many Shares of Stock will my Corporation Need?`,
+          url: `/research-topics/s-corporation-info/corporation-need/`,
+      },
+      {
+          header: `What are Bylaws?`,
+          url: `/research-topics/s-corporation-info/what-are-bylaws/`,
+      },
+      {
+          header: `What is Stock Par Value?`,
+          url: `/research-topics/s-corporation-info/stock-par-value/`,
+      },
+      {
+          header: `What is the Form 2553?`,
+          url: `/research-topics/s-corporation-info/form-2553/`,
+      },
+      {
+          header: `What are the Differences Between Officers, Directors and Shareholders?`,
+          url: `/research-topics/s-corporation-info/directors-and-shareholders/`,
+      },
+      {
+          header: `Does Forming an LLC (Limited Liability Company) or Corporation Require an Attorney?`,
+          url: `/research-topics/s-corporation-info/require-an-attorney/`,
+      },
+      {
+          header: `What is a Publication Requirement?`,
+          url: `/research-topics/s-corporation-info/publication-requirement/`,
+      },
+      {
+          header: `What is the Customized Corporate/LLC Kit?`,
+          url: `/research-topics/s-corporation-info/customized-corp-llc-kit/`,
+      },
+    ],
+}

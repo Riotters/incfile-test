@@ -119,44 +119,44 @@ const BenefitsAccordion = () => (
       <PanelsWrapper>
         <Panel>
           <Grid>
-            <Card content={{ header: "Amendment", text: "Filed if a company requires changes to membership, addresses or  company name.", link: { url: `/forms/amendment`, text: `Learn more` } }} color={color.purple3} image={"bc-01"} />
+            <Card content={{ header: "Amendment", text: "Filed if a company requires changes to membership, addresses or  company name.", link: { url: `/manage-your-company/amendment/`, text: `Learn more` } }} color={color.purple3} image={"bc-01"} />
 
-            <Card content={{ header: "Dissolution", text: "Used to formally terminate the existence of a entity.", link: { url: `/forms/dissolution`, text: `Learn more` } }} color={color.babyblue3} image={"bc-20"} />
+            <Card content={{ header: "Dissolution", text: "Used to formally terminate the existence of a entity.", link: { url: `/manage-your-company/dissolution/`, text: `Learn more` } }} color={color.babyblue3} image={"bc-20"} />
 
-            <Card content={{ header: "Foreign Qualification", text: "Filed when you need to expand your entity to new states.", link: { url: `/forms/foreign-qual`, text: `Learn more` } }} color={color.blue3} image={"bc-03"} />
+            <Card content={{ header: "Foreign Qualification", text: "Filed when you need to expand your entity to new states.", link: { url: `/manage-your-company/foreign-qualification/`, text: `Learn more` } }} color={color.blue3} image={"bc-03"} />
 
-            <Card content={{ header: "Fictitious Business Name", text: "Filed if a company requires assumed business/fictitious name.", link: { url: `/forms/fictitious-business-name`, text: `Learn more` } }} color={color.orange3} image={"bc-19"} />
+            <Card content={{ header: "Fictitious Business Name", text: "Filed if a company requires assumed business/fictitious name.", link: { url: `/fictitious-business-or-trade-name/`, text: `Learn more` } }} color={color.orange3} image={"bc-19"} />
           </Grid>
         </Panel>
         <Panel>
           <Grid>
-            <Card content={{ header: "File Annual Report", text: "The majority of states require that companies file periodic reports that affirm the current information of the companies members, directors, and business address.", link: { url: `/forms/foreign-qual`, text: `Learn more` } }} color={color.babyblue3} image={"bc-05"} />
+            <Card content={{ header: "File Annual Report", text: "The majority of states require that companies file periodic reports that affirm the current information of the companies members, directors, and business address.", link: { url: `/manage-your-company/annual-report/`, text: `Learn more` } }} color={color.babyblue3} image={"bc-05"} />
 
-            <Card content={{ header: "Order Registered Agent", text: "Order registered agent service and receive your new registered agent information immediately.", link: { url: `/forms/foreign-qual`, text: `Learn more` } }} color={color.orange3} image={"bc-11"} />
+            <Card content={{ header: "Order Registered Agent", text: "Order registered agent service and receive your new registered agent information immediately.", link: { url: `/manage-your-company/registered-agent/`, text: `Learn more` } }} color={color.orange3} image={"bc-11"} />
 
-            <Card content={{ header: "Certificate of Good Standing", text: "Required by governmental and private agencies to validate a companies status in order to facilitate specified transactions.", link: { url: `/forms/foreign-qual`, text: `Learn more` } }} color={color.blue3} image={"bc-10"} />
+            <Card content={{ header: "Certificate of Good Standing", text: "Required by governmental and private agencies to validate a companies status in order to facilitate specified transactions.", link: { url: `/manage-your-company/certificate-of-good-standing/`, text: `Learn more` } }} color={color.blue3} image={"bc-10"} />
 
-            <Card content={{ header: "Business License Search", text: "Determine all business licenses and permits required at the federal, state, county, and municipal level.", link: { url: `/forms/foreign-qual`, text: `Learn more` } }} color={color.yellow3} image={"bc-17"} />
+            <Card content={{ header: "Business License Search", text: "Determine all business licenses and permits required at the federal, state, county, and municipal level.", link: { url: `/business-license-research-package/`, text: `Learn more` } }} color={color.yellow3} image={"bc-17"} />
 
-            <Card content={{ header: "Trademark Name Search", text: "Take steps to protect your brand and valuable company assets such as your name, logo, and tagline.", link: { url: `/forms/foreign-qual`, text: `Learn more` } }} color={color.purple3} image={"bc-07"} />
+            <Card content={{ header: "Trademark Name Search", text: "Take steps to protect your brand and valuable company assets such as your name, logo, and tagline.", link: { url: `/trademark-name-search/`, text: `Learn more` } }} color={color.purple3} image={"bc-07"} />
           </Grid>
         </Panel>
         <Panel>
           <Grid>
-            <Card content={{ header: "Order Registered Agent", text: "Order registered agent service and receive your new registered agent information immediately.", link: { url: `/forms/foreign-qual`, text: `Learn more` } }} color={color.orange3} image={"bc-11"} />
+            <Card content={{ header: "Order Registered Agent", text: "Order registered agent service and receive your new registered agent information immediately.", link: { url: `/manage-your-company/registered-agent/`, text: `Learn more` } }} color={color.orange3} image={"bc-11"} />
 
-            <Card content={{ header: "Renew Registered Agent", text: "Click here if you have existing registered agent service and would like to renew it.", link: { url: `/forms/foreign-qual`, text: `Learn more` } }} color={color.green3} image={"bc-18"} />
+            <Card content={{ header: "Renew Registered Agent", text: "Click here if you have existing registered agent service and would like to renew it.", link: { url: `/dashboard/`, text: `Learn more` } }} color={color.green3} image={"bc-18"} />
 
-            <Card content={{ header: "Change Registered Agent", text: "Use to update the registered agent on file with the state of formation.", link: { url: `/forms/foreign-qual`, text: `Learn more` } }} color={color.blue3} image={"bc-16"} />
+            <Card content={{ header: "Change Registered Agent", text: "Use to update the registered agent on file with the state of formation.", link: { url: `/manage-your-company/change-of-registered-agent/`, text: `Learn more` } }} color={color.blue3} image={"bc-16"} />
           </Grid>
         </Panel>
         <Panel>
           <Grid>
-            <Card content={{ header: "EIN / Tax ID #", text: "An EIN is required to open a bank account, file taxes and submit payroll taxes.", link: { url: `/forms/foreign-qual`, text: `Learn more` } }} color={color.red3} image={"bc-12"} />
+            <Card content={{ header: "EIN / Tax ID #", text: "An EIN is required to open a bank account, file taxes and submit payroll taxes.", link: { url: `/manage-your-company/tax-id-ein/`, text: `Learn more` } }} color={color.red3} image={"bc-12"} />
 
-            <Card content={{ header: "File Business Taxes", text: "Work with a tax professional to file your federal business tax return.", link: { url: `/forms/foreign-qual`, text: `Learn more` } }} color={color.blue3} image={"bc-13"} />
+            <Card content={{ header: "File Business Taxes", text: "Work with a tax professional to file your federal business tax return.", link: { url: `/business-accounting/`, text: `Learn more` } }} color={color.blue3} image={"bc-13"} />
             
-            <Card content={{ header: "File S Corp Tax Election", text: "Reduce the Tax You Pay by Having Your LLC Treated as an S Corp for Tax Purposes.", link: { url: `/forms/foreign-qual`, text: `Learn more` } }} color={color.babyblue3} image={"bc-15"} />
+            <Card content={{ header: "File S Corp Tax Election", text: "Reduce the Tax You Pay by Having Your LLC Treated as an S Corp for Tax Purposes.", link: { url: `/llc-s-corp-election/`, text: `Learn more` } }} color={color.babyblue3} image={"bc-15"} />
           </Grid>
         </Panel>
       </PanelsWrapper>

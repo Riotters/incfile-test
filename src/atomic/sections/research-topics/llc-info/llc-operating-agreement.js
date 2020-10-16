@@ -40,15 +40,15 @@ const AboutSection = ({ className, content }) => (
       <Heading size={4} bottomMargin="24">
         {content.header2}
       </Heading>
-      <Paragraph big bottomMargin="16">
+      <Paragraph big bottomMargin="24">
         {content.text4}
       </Paragraph>
-      <IconListColorBox content={content.list} color={color.orange3} curve curveColor={color.blue2} rounded bottomMargin="16" />
-      <IconListColorBox content={content.list2} color={color.babyblue3} rounded bottomMargin="16" />
-      <IconListColorBox content={content.list3} color={color.green3} rounded bottomMargin="16" />
-      <IconListColorBox content={content.list4} color={color.yellow3} curve curveColor={color.green2} rounded bottomMargin="16" />
-      <IconListColorBox content={content.list5} color={color.purple3} rounded bottomMargin="16" />
-      <IconListColorBox content={content.list6} color={color.blue3} rounded bottomMargin="16" />
+      <IconListColorBox content={content.list} color={color.orange3} curve curveColor={color.blue2} rounded bottomMargin="24" />
+      <IconListColorBox content={content.list2} color={color.babyblue3} rounded bottomMargin="24" />
+      <IconListColorBox content={content.list3} color={color.green3} rounded bottomMargin="24" />
+      <IconListColorBox content={content.list4} color={color.yellow3} curve curveColor={color.green2} rounded bottomMargin="24" />
+      <IconListColorBox content={content.list5} color={color.purple3} rounded bottomMargin="24" />
+      <IconListColorBox content={content.list6} color={color.blue3} rounded bottomMargin="24" />
       <IconListColorBox content={content.list7} color={color.green3} curve curveColor={color.yellow2} rounded bottomMargin="48" />
       <Heading size={4} bottomMargin="24">
         {content.header3}
@@ -68,12 +68,6 @@ const AboutSection = ({ className, content }) => (
       <Paragraph big bottomMargin="48" mixed>
         {parse(content.text8)}
       </Paragraph>
-      <Heading size={3} bottomMargin="32">
-        {content.header5}
-      </Heading>
-      {content.links2.map(link => (
-        <ArrowLink content={link} />
-      ))}
     </ImageContent>
   </About>
 );

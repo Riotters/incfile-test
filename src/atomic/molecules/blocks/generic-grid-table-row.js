@@ -9,7 +9,9 @@ import Image from "../../atoms/image/image";
 import { Tabs, useTabState, usePanelState } from "@bumaga/tabs";
 import { motion } from "framer-motion";
 import ArrowSVG from "../../../images/arrow-circle.inline.svg";
-
+import CheckSVG from "../../../images/circle-status-check.inline.svg";
+import ExSVG from "../../../images/circle-status-x.inline.svg";
+;
 const Wrapper = styled(Whitebox)`
   display: grid;
   grid-template-columns: ${(props) => (props.columns && props.columns.length === 1 ? `repeat(${props.columns}, 1fr)` : props.columns ? props.columns : "1fr 160px 160px 160px 160px;")};
@@ -247,7 +249,7 @@ const GenericGridTableRow = ({ className, content, settings, columns }) => (
           {content.map((item) => (
           <Cell textCenter={item.textCenter ?? false} style={item.style ?? {}}>
             {item.header && (
-              <Heading size={item.headerSize ?? "5"} bottomMargin="0">
+              <Heading size={item.headerSize ?? "5"} bottomMargin="0" style={{}}>
                 {item.label}
               </Heading>
             )}
@@ -303,6 +305,16 @@ const GenericGridTableRow = ({ className, content, settings, columns }) => (
                   </svg>
                 </Checkmark>
             )}
+              {!item.header && item.type === "true" && (
+                  <IconWrapper>
+                      <CheckSVG />
+                  </IconWrapper>
+              )}
+              {!item.header && item.type === "false" && (
+                  <IconWrapper>
+                      <ExSVG />
+                  </IconWrapper>
+              )}
             {!item.header && item.type === "minus" && (
                 <IconWrapper>
                   <Minus/>
@@ -321,7 +333,7 @@ const GenericGridTableRow = ({ className, content, settings, columns }) => (
             )}
             {!item.header && item.type === "checkbox" && (
                 <FlexRowCell justifyContent="center">
-                  <Checkbox onChange={ (function(e) { settings.onChange(e, item); }) } />
+                  <Checkbox onChange={ (function(e) { if(settings != null) settings.onChange(e, item); }) } />
                   <Paragraph bottomMargin={0} topMargin={4}>{item.label}</Paragraph>
                 </FlexRowCell>
             )}

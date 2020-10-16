@@ -122,7 +122,8 @@ class Dropdown2 extends Component {
     _onSelect(option) {
         this.setState({selected: option});
 
-        this.props.onSelect(option);
+        if(this.props.onSelect != null)
+            this.props.onSelect(option);
     }
 
     render() {
@@ -139,7 +140,7 @@ class Dropdown2 extends Component {
                     )}
                 </div>
                 <div className="bottom">
-                    <span className="badge">{this.props.badge}</span>
+                    {this.props.badge && (<span className="badge">{this.props.badge}</span>)}
                     <Dropdown options={this.props.options} onChange={this._onSelect} value={defaultOption}
                               placeholder={this.props.placeholder}/>
                     <DropdownSVG/>

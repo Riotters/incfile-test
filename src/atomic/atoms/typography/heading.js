@@ -3,13 +3,14 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 
 const HeadingWrapper = styled.div`
-  margin-bottom: ${(props) => props.bottomMargin}px;
+  margin-top: ${(props) => (props.topMargin ? `${props.topMargin}px` : "")};
+  margin-bottom: ${(props) => (props.bottomMargin ? `${props.bottomMargin}px` : "")};
   padding-bottom: ${(props) => (props.bottomPadding ? `${props.bottomPadding}px` : "")};
   max-width: ${(props) => (props.maxWidth ? `${props.maxWidth}px` : "")};
 `;
 
-export const Heading = ({ size, children, bottomMargin, bottomPadding, maxWidth, className, style }) => (
-  <HeadingWrapper as={`h${size}`} bottomMargin={bottomMargin} bottomPadding={bottomPadding} maxWidth={maxWidth} className={className} style={style}>
+export const Heading = ({ size, children, bottomMargin, topMargin, bottomPadding, maxWidth, className, style }) => (
+  <HeadingWrapper as={`h${size}`} bottomMargin={bottomMargin} topMargin={topMargin} bottomPadding={bottomPadding} maxWidth={maxWidth} className={className} style={style}>
     {children}
   </HeadingWrapper>
 );

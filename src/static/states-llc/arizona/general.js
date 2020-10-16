@@ -2,23 +2,23 @@ export const tabPages = {
   pages: [
     {
       name: `How To Guide`,
-      path: `/texas-llc/`,
+      path: `/arizona-llc/`,
     },
     {
       name: `Name Your Business`,
-      path: `/texas-llc/texas-business-names/`,
+      path: `/arizona-llc/how-to-name-your-llc/`,
     },
     {
       name: `Registered Agent`,
-      path: `/texas-llc/registered-agents-texas-llc/`,
+      path: `/arizona-llc/registered-agents-arizona-llc/`,
     },
     {
       name: `Filing Fee & Requirements`,
-      path: `/texas-llc/fees-filing-requirements/`,
+      path: `/arizona-llc/form-filling-permit-requirements/`,
     },
     {
       name: `Business Taxes`,
-      path: `/texas-llc/business-taxes/`,
+      path: `/arizona-llc/business-taxes/`,
     },
     {
       name: `What To Do Next?`,

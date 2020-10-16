@@ -8,7 +8,7 @@ import IconSVG from "../../../../images/icons/enterprenour.inline.svg";
 import IconTextColorBox from "../../../molecules/text-blocks/icon-h4-text-color";
 import ArrowLink from "../../../molecules/buttons/text";
 import Oval from "../../../atoms/icons/oval";
-import OvalSVG from "../../../../images/ovals/top-left-transparent-green3.inline.svg";
+import OvalSVG from "../../../../images/ovals/business-checklist-about-top-left.inline.svg";
 
 const About = styled.section`
   position: relative;

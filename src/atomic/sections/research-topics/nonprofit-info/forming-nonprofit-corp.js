@@ -84,10 +84,10 @@ const AboutSection = ({ className, content }) => (
       <Heading size={4} bottomMargin="24">
         {content.header5}
       </Heading>
-      <Paragraph big bottomMargin="16">
+      <Paragraph big bottomMargin="24">
         {content.text16}
       </Paragraph>
-      <IconListColorBox content={content.list} color={color.green3} curve curveColor={color.babyblue2} rounded bottomMargin="16" />
+      <IconListColorBox content={content.list} color={color.green3} curve curveColor={color.babyblue2} rounded bottomMargin="24" />
       <Paragraph big bottomMargin="48">
         {content.text17}
       </Paragraph>
@@ -127,12 +127,6 @@ const AboutSection = ({ className, content }) => (
       <Paragraph big bottomMargin="48">
         {content.text26}
       </Paragraph>
-      <Heading size={3} bottomMargin="32">
-        {content.header9}
-      </Heading>
-      {content.links2.map(link => (
-        <ArrowLink content={link} />
-      ))}
     </ImageContent>
   </About>
 );

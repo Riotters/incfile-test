@@ -4,7 +4,7 @@ export const top = {
   buttons: [
     {
       text: `Check out business types`,
-      url: `/`,
+      url: `/start-your-company/`,
     },
   ],
 };
@@ -228,7 +228,7 @@ export const businessStructure = {
   ],
   button: {
     text: `Compare entity types`,
-    url: `/`,
+    url: `/business-entity-comparison/`,
   },
 };
 export const launchBusiness = {
@@ -236,6 +236,6 @@ export const launchBusiness = {
   text: `No Contracts. No Surprise. Only $0 + State Fee to Launch Your Business.`,
   button: {
     text: `launch your business`,
-    url: `/`,
+    url: `${process.env.ORDER_URL}/form-order-now.php`,
   },
 };

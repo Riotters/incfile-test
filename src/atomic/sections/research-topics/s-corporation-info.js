@@ -26,9 +26,6 @@ const AboutSection = ({ className, content }) => (
       <Heading size={3} bottomMargin="32">
         {content.header}
       </Heading>
-      {content.links2.map(link => (
-        <ArrowLink content={link} />
-      ))}
     </ImageContent>
   </About>
 );

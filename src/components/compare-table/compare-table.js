@@ -1,8 +1,7 @@
-import React, {useState} from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import MinusIcon from "./minus-icon";
 import Badge from "./badge";
-import {Paragraph} from "../../atomic/atoms/typography/paragraph";
 import {Link} from "@reach/router";
 
 const Table = styled.div`
@@ -85,10 +84,11 @@ const StyledP = styled.p`
     align-self: flex-start;
 `;
 
-const CompareTable = ({headers, entries, width}) => {
+const CompareTable = ({stateListToCompare, width}) => {
     let [statesListOpen, setStateListOpen] = useState(false);
-    let [statesList, setStateList] = useState(entries);
-    let statesInColumn = Math.ceil(statesList.length / 4);
+    let [statesList, setStateList] = useState([]);
+    let [statesInColumn, setStatesInColumn] = useState(null);
+    
     const stateChanged = (item) => {
         let index = statesList.indexOf(item);
         setStateList(prevState => {
@@ -97,6 +97,14 @@ const CompareTable = ({headers, entries, width}) => {
             return newState;
         });
     };
+
+    useEffect(() => {
+        setStateList(stateListToCompare);
+        setStatesInColumn(Math.ceil(stateListToCompare.length / 4));
+    }, [stateListToCompare]);
+
+    const headers = [`State`, `Normal processing time`, `Expedited processing time`, `Expedited Price`];
+    
     return (
         <>
             <Table width={width}>
@@ -108,7 +116,8 @@ const CompareTable = ({headers, entries, width}) => {
                         </>
                     ))}
                 </TableRow>
-                {statesList.filter(entry => entry.selected).map(entry => (
+
+                {statesList.length && statesList.filter(entry => entry.selected).map(entry => (
                     <TableRow>
                         <TableCell>
                             <div onClick={() => stateChanged(entry)}>
@@ -124,28 +133,31 @@ const CompareTable = ({headers, entries, width}) => {
                         </TableCell>
                         <Divider/>
                         <TableCell center>
-                            <BadgeGreen>{entry.expeditedPrice}</BadgeGreen>
+                            <BadgeGreen>${entry.expeditedPrice}</BadgeGreen>
                         </TableCell>
                     </TableRow>
                 ))}
+
                 {statesListOpen && <StatesList>
                     {Array(4).fill(0).map((_, i) => (
                         <StatesListCol>
-                            {statesList.slice(i * statesInColumn, i * statesInColumn + statesInColumn).map(entry => (
+                            {statesList.length && statesList.slice(i * statesInColumn, i * statesInColumn + statesInColumn).map(entry => (
                                 <div onClick={() => stateChanged(entry)}>
-                                    <Badge selected={entry.selected}>{entry.state}</Badge>
+                                    <Badge selected={!entry.selected}>{entry.state}</Badge>
                                 </div>
                             ))}
                         </StatesListCol>
                     ))}
                 </StatesList>}
+
                 <TableRow>
                     <TableCell>
                         <Button onClick={() => setStateListOpen(!statesListOpen)}>{statesListOpen ? 'Close the states list' : 'Open the states list'}</Button>
                     </TableCell>
                 </TableRow>
             </Table>
-            <StyledP>See {<Link to="/">full list</Link>} of filing times for every state.</StyledP>
+
+            <StyledP>See {<Link to="/state-filing-times/">full list</Link>} of filing times for every state.</StyledP>
         </>
     );
 };

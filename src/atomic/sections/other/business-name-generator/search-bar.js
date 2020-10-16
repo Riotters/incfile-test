@@ -84,7 +84,7 @@ const Searchbar = ({ typeSubmit, ...rest }) => {
         }
 
         if (typeSubmit !== 'itself') {
-            navigate('/other/business-name-generator-result', { state: { keyword } });
+            navigate('/business-name-generator-result/', { state: { keyword } });
         }
         return;
     }

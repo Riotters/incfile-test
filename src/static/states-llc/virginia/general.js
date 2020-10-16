@@ -2,33 +2,29 @@ export const tabPages = {
   pages: [
     {
       name: `How To Guide`,
-      path: `/texas-llc/`,
+      path: `/virginia-llc/`,
     },
     {
       name: `Name Your Business`,
-      path: `/texas-llc/texas-business-names/`,
+      path: `/virginia-llc/how-to-name-your-llc/`,
     },
     {
       name: `Registered Agent`,
-      path: `/texas-llc/registered-agents-texas-llc/`,
+      path: `/virginia-llc/registered-agents-virginia-llc/`,
     },
     {
       name: `Filing Fee & Requirements`,
-      path: `/texas-llc/fees-filing-requirements/`,
+      path: `/virginia-llc/form-filling-permit-requirements/`,
     },
     {
       name: `Business Taxes`,
-      path: `/texas-llc/business-taxes/`,
-    },
-    {
-      name: `FAQ`,
-      path: `/texas-llc/faq/`,
+      path: `/virginia-llc/business-taxes/`,
     },
     {
       name: `What To Do Next?`,
       path: `/other/after-forming-llc/`,
     },
-  ]
+  ],
 };
 
 export const rocket = {

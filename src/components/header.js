@@ -100,6 +100,7 @@ const MenuLink = styled(Link)`
   text-decoration: none;
   padding-right: 10px;
   white-space: nowrap;
+  position: relative;
 
   @media (min-width: 1200px) {
     font-size: 16px;
@@ -210,32 +211,32 @@ const Header = ({ siteTitle }) => {
   return (
     <Wrapper>
       <Logo>
-        <LogoSVG />
+        <Link to="/"><LogoSVG /></Link>
       </Logo>
       <MobileWrapper showNav={menu}>
         <Navigation>
           <Menu>
             <MenuItem>
-              <MenuLink to="#">Review Entity Types</MenuLink>
+              <MenuLink to="/start-your-company/">Review Entity Types</MenuLink>
               <DropdownSVG />
             </MenuItem>
             <MenuItem>
-              <MenuLink to="/manage-your-company">Manage Your Company</MenuLink>
+              <MenuLink to="/manage-your-company/">Manage Your Company</MenuLink>
               <DropdownSVG />
             </MenuItem>
             <MenuItem>
-              <MenuLink to="#">Learning Center</MenuLink>
+              <MenuLink to="/business-entity-comparison/">Learning Center</MenuLink>
               <DropdownSVG />
             </MenuItem>
             <MenuItem>
-              <MenuLink to="#">About</MenuLink>
+              <MenuLink to="/about/">About</MenuLink>
               <DropdownSVG />
             </MenuItem>
           </Menu>
         </Navigation>
         <LoginWrapper>
-          <Login href="#">Login</Login>
-          <Button theme="secondary40">Incoporate now</Button>
+          <Login href={`${process.env.ORDER_URL}/dashboard`}>Login</Login>
+          <Button theme="secondary40" to={`${process.env.ORDER_URL}/form-order-now.php`}>Incoporate now</Button>
         </LoginWrapper>
       </MobileWrapper>
       <Hamburger hamburger={menu} onClick={() => showMenu(!menu)}>

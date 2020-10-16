@@ -4,7 +4,7 @@ export const top = {
   buttons: [
     {
       text: `Order registered agent service`,
-      url: `/`,
+      url: `${process.env.ORDER_URL}/ra-form.php`,
     },
   ],
 };
@@ -43,7 +43,7 @@ export const need = {
   text2: `All of these business entities, regardless of the state they are registered in, must have a Registered Agent.`,
   button: {
     text: `Show more`,
-    url: `/`,
+    url: `/manage-your-company/registered-agent/`,
   },
 };
 
@@ -52,7 +52,7 @@ export const requirements = {
   text: `Your secretary of state or division of corporations has certain requirements that apply to Registered Agents. Typically, they are:`,
   link: {
     text: `Learn more`,
-    url: `/`,
+    url: `/manage-your-company/registered-agent/`,
   },
   list: [
     `If the Registered Agent is an individual, they must reside in the same state where your organization conducts business.`,
@@ -94,7 +94,7 @@ export const faq = {
           },
           {
             text: `formal Registered Agent service,`,
-            url: `/`,
+            url: `/research-topics/registered-agent-help/can-the-registered-agent-be-a-company/`,
           },
           {
             text: `anyone associated with your business who wants to take on the responsibility can be your Registered Agent. They will need to understand the legal requirements and implications of performing the role. Note that your company cannot act as its own Registered Agent.`,
@@ -109,14 +109,14 @@ export const faq = {
           },
           {
             text: `incorporate your business through Incfile,`,
-            url: `/`,
+            url: `${process.env.ORDER_URL}/form-order-now.php`,
           },
           {
             text: `we will automatically provide a`,
           },
           {
             text: `Registered Agent service`,
-            url: `/`,
+            url: `/manage-your-company/registered-agent/`,
           },
           {
             text: `for your LLC or corporation for the first year and will pass that information on to your secretary of state. If you form your business yourself, you can provide details of the Registered Agent when you file your company formation documents, like your Articles of Organization or Articles of Incorporation.`,
@@ -131,7 +131,7 @@ export const faq = {
           },
           {
             text: `change your Registered Agent service at any time.`,
-            url: `/`,
+            url: `/manage-your-company/change-of-registered-agent/`,
           },
           {
             text: `Some Registered Agents will file the necessary forms with the secretary of state — if they don't, you can file the relevant forms yourself. Full details of how to do so will be listed on the LLC and corporation pages of your secretary of state’s website.`,
@@ -146,7 +146,7 @@ export const faq = {
           },
           {
             text: `Incfile Registered Agent service,`,
-            url: `/`,
+            url: `/manage-your-company/registered-agent/`,
           },
           {
             text: `which operates in all U.S. states and provides a complete set of Registered Agent tools at a reasonable price.`,
@@ -163,7 +163,7 @@ export const faq = {
 
 export const service = {
   header: `Incfile’s Free Registered Agent Service`,
-  text: `In addition to $0 Business Formation, Incfile offers a complete, easy-to-use registered agent service for any business incorporated in any state in the U.S. It’s free for the first year, whether you formed your business with us or not (and just $119 annually after that).`,
+  text: `In addition to <a href="/free-llc/">$0 Business Formation</a>, Incfile offers a complete, easy-to-use registered agent service for any business incorporated in any state in the U.S. It’s free for the first year, whether you formed your business with us or not (and just $119 annually after that).`,
   text2: `We’re authorized to conduct business in every state and can legally act as your registered agent, wherever you are.`,
   cards: [
     {
@@ -185,7 +185,7 @@ export const service = {
   ],
   button: {
     text: `Order Registered Agent Service`,
-    url: `/`,
+    url: `${process.env.ORDER_URL}/ra-form.php`,
   },
 };
 
@@ -201,7 +201,7 @@ export const learnMore = {
           },
           {
             text: `Read more`,
-            url: `/`,
+            url: `/research-topics/registered-agent-help/can-i-act-as-my-own-registered-agent/`,
           },
         ],
       },
@@ -213,7 +213,7 @@ export const learnMore = {
           },
           {
             text: `Read more`,
-            url: `/`,
+            url: `/manage-your-company/registered-agent/`,
           },
         ],
       },
@@ -225,7 +225,7 @@ export const learnMore = {
           },
           {
             text: `Read more`,
-            url: `/`,
+            url: `/research-topics/registered-agent-help/can-the-registered-agent-be-a-company/`,
           },
         ],
       },
@@ -237,7 +237,7 @@ export const learnMore = {
           },
           {
             text: `Read more`,
-            url: `/`,
+            url: `/research-topics/registered-agent-help/what-happens-if-i-require-the-signature-of-my-registered-agent/`,
           },
         ],
       },

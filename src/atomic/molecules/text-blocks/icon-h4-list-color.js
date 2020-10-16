@@ -73,6 +73,13 @@ const Wrapper = styled.div`
 
         a {
           font-size: inherit;
+          color: ${color.blue1};
+          font-weight: 600;
+          transition: color .3s ease;
+
+          &:hover {
+            color: ${color.orange1};  
+          }
         }
       }
     }

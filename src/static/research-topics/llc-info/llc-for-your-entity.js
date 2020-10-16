@@ -10,99 +10,103 @@ export const about = {
       },
     ],
     header: `Can a Limited Liability Company (LLC) be taxed as an S Corporation?`,
-    header2: `Can a Limited Liability Company (LLC) be taxed as an S Corporation?`,
     text: `In a recovering economy, many entrepreneurs may think of this as a prime moment to form a business entity and catch increasing consumer dollars. One tech startup,
         <a href="https://www.quicksprout.com/beginners-guide-to-corporate-entities/#more-1963" rel="noopener noreferrer nofollow" target="_blank">QuickSprout,</a>
         is dedicated to providing entrepreneurs insight on business formation and a recent post explains why filing an LLC might be the best move to make for a new company.`,
     text2: `To start, QuickSprout reports the flexibility of an LLC is one of its main advantages. An LLC can be operated in a number of ways that might appeal to businesspeople. It can run as a corporation with a board of managers and officers, it can be a general partnership with all members designated as “managers,” or it can function more like a sole proprietorship – with one individual appointed a manager.`,
     text3: `This flexibility also extends to the tax preparation required. An LLC can be taxed as a C or an S corporation. No matter how entrepreneurs choose to be taxed, they can benefit from pass-through treatment with an LLC. QuickSprout explains that LLC profits and losses flow directly through the entity to the individual members – meaning members can write off certain company losses and avoid double taxation.`,
     text4: `The one drawback to an LLC is that it is often considered less appealing than S corporations with respect to garnering venture capitalist funds. Nonetheless, a report from the Center for Venture Research at the University of New Hampshire indicates business owners might have little luck securing venture capitalist funds in 2010 regardless. Entrepreneurs might consider other lenders – such as community banks – for their financing needs” or something.`,
-    header3: `Related Articles`,
-    links2: [
+}
+
+export const related = {
+  header: 
+      `Related Articles`,
+  text:
+      `Other users were also interested in knowing about…`,
+  buttons: [
       {
-        text: `What Does LLC Mean?`,
-        url: `/research-topics/llc-info/llc-meaning`,
+          header: `What Does LLC Mean?`,
+          url: `/research-topics/llc-info/llc-meaning`,
       },
       {
-        text: `Can another business entity be a member of an LLC?`,
-        url: `/research-topics/llc-info/llc-business-entity-member`,
+          header: `Can another business entity be a member of an LLC?`,
+          url: `/research-topics/llc-info/llc-business-entity-member`,
       },
       {
-        text: `Why it’s important for the members on an LLC to have an operating agreement in place?`,
-        url: `/research-topics/llc-info/llc-members-operating-agreement`,
+          header: `Why it’s important for the members on an LLC to have an operating agreement in place?`,
+          url: `/research-topics/llc-info/llc-members-operating-agreement`,
       },
       {
-        text: `Can a Limited Liability Company (LLC) be taxed as an S Corporation?`,
-        url: `/research-topics/llc-info/llc-taxed-as-an-s-corp`,
+          header: `Can a Limited Liability Company (LLC) be taxed as an S Corporation?`,
+          url: `/research-topics/llc-info/llc-taxed-as-an-s-corp`,
       },
       {
-        text: `Which entity offers the best tax advantages?`,
-        url: `/research-topics/llc-info/tax-advantages`,
+          header: `Which entity offers the best tax advantages?`,
+          url: `/research-topics/llc-info/tax-advantages`,
       },
       {
-        text: `Which entity type should I choose?`,
-        url: `/research-topics/llc-info/choosing-entity-type`,
+          header: `Which entity type should I choose?`,
+          url: `/research-topics/llc-info/choosing-entity-type`,
       },
       {
-        text: `Is an LLC the best fit for your entity?`,
-        url: `/research-topics/llc-info/llc-for-your-entity`,
+          header: `Is an LLC the best fit for your entity?`,
+          url: `/research-topics/llc-info/llc-for-your-entity`,
       },
       {
-        text: `LLC vs. S Corporation`,
-        url: `/research-topics/llc-info/llc-vs-s-corporation`,
+          header: `LLC vs. S Corporation`,
+          url: `/research-topics/llc-info/llc-vs-s-corporation`,
       },
       {
-        text: `The LLC Operating Agreement`,
-        url: `/research-topics/llc-info/llc-operating-agreement`,
+          header: `The LLC Operating Agreement`,
+          url: `/research-topics/llc-info/llc-operating-agreement`,
       },
       {
-        text: `The Benefits of Forming an LLC`,
-        url: `/research-topics/llc-info/forming-llc-benefits`,
+          header: `The Benefits of Forming an LLC`,
+          url: `/research-topics/llc-info/forming-llc-benefits`,
       },
       {
-        text: `What is an LLC (Limited Liability Company)?`,
-        url: `/research-topics/llc-info/what-is-an-llc`,
+          header: `What is an LLC (Limited Liability Company)?`,
+          url: `/research-topics/llc-info/what-is-an-llc`,
       },
       {
-        text: `LLC vs. C Corporation`,
-        url: `/research-topics/llc-info/llc-vs-c-corporation`,
+          header: `LLC vs. C Corporation`,
+          url: `/research-topics/llc-info/llc-vs-c-corporation`,
       },
       {
-        text: `Can I Form an LLC with just one Member?`,
-        url: `/research-topics/llc-info/forming-llc-with-one-member`,
+          header: `Can I Form an LLC with just one Member?`,
+          url: `/research-topics/llc-info/forming-llc-with-one-member`,
       },
       {
-        text: `LLCs vs C-Corporation: Which Is Best for Your Business?`,
-        url: `/research-topics/llc-info/llcs-vs-c-corporation`,
+          header: `LLCs vs C-Corporation: Which Is Best for Your Business?`,
+          url: `/research-topics/llc-info/llcs-vs-c-corporation`,
       },
       {
-        text: `Steps to starting a Limited Liability Company (LLC)`,
-        url: `/research-topics/llc-info/starting-llc-by-steps`,
+          header: `Steps to starting a Limited Liability Company (LLC)`,
+          url: `/research-topics/llc-info/starting-llc-by-steps`,
       },
       {
-        text: `What is the process involved in changing the name of an LLC?`,
-        url: `/research-topics/llc-info/changing-llc-name`,
+          header: `What is the process involved in changing the name of an LLC?`,
+          url: `/research-topics/llc-info/changing-llc-name`,
       },
       {
-        text: `Can an LLC be formed without listing the member on the articles of organization?`,
-        url: `/research-topics/llc-info/llc-without-listing-members`,
+          header: `Can an LLC be formed without listing the member on the articles of organization?`,
+          url: `/research-topics/llc-info/llc-without-listing-members`,
       },
       {
-        text: `Are Non-U.S. Residents Allowed to Own a Corporation or LLC?`,
-        url: `/research-topics/llc-info/own-a-corporation-or-llc`,
+          header: `Are Non-U.S. Residents Allowed to Own a Corporation or LLC?`,
+          url: `/research-topics/llc-info/own-a-corporation-or-llc`,
       },
       {
-        text: `Does Forming an LLC (Limited Liability Company) or Corporation Require an Attorney?`,
-        url: `/research-topics/llc-info/require-an-attorney`,
+          header: `Does Forming an LLC (Limited Liability Company) or Corporation Require an Attorney?`,
+          url: `/research-topics/llc-info/require-an-attorney`,
       },
       {
-        text: `What is a Publication Requirement?`,
-        url: `/research-topics/llc-info/publication-requirement`,
+          header: `What is a Publication Requirement?`,
+          url: `/research-topics/llc-info/publication-requirement`,
       },
       {
-        text: `What is the Customized Corporate/LLC Kit?`,
-        url: `/research-topics/llc-info/customized-corp-llc-kit`,
+          header: `What is the Customized Corporate/LLC Kit?`,
+          url: `/research-topics/llc-info/customized-corp-llc-kit`,
       },
     ],
-  };
-  
+}

@@ -62,7 +62,6 @@ const Navigation = styled.nav`
 
   @media (min-width: 992px) {
     margin: 0 auto;
-    max-width: 1170px;
     height: 100%;
     flex-grow: 1;
   }
@@ -244,7 +243,7 @@ const HeaderAlt = ({ siteTitle }) => {
   return (
     <Wrapper>
       <Logo>
-        <LogoSVG />
+        <Link to="/"><LogoSVG /></Link>
       </Logo>
       <MobileWrapper showNav={menu}>
         <Navigation>

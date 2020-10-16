@@ -15,12 +15,13 @@ import Articles from "../../../components/partials/sections/articles";
 import Rocket from "../../../atomic/sections/review-entity-types/c-corporation/rocket";
 import Searchbar from "../../../atomic/molecules/form/searchbar";
 //Texts
-import { top, related, rocket, categories, service, tools } from "../../../static/learning-center-entity/help-center-article";
-import { about } from "../../../static/research-topics/business-taxes/s-corp-taxing";
+import { top, rocket, categories, service, tools } from "../../../static/learning-center-entity/help-center-article";
+import { about, related } from "../../../static/research-topics/business-taxes/s-corp-taxing";
 
 const HelpCenter = () => (
   <Layout>
-    <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
+    <SEO title="How is an S Corporation Taxed? | Archive articles" description="Q & A for LLC and other forms of corporations. Learning Center for
+    Incorporating in every state." />
     <Top imageName="mrs-bulb-help-center-article" imageAlt="Mrs Bulb and with checklist" ovalColor="green">
       <h1>{top.header}</h1>
       <p>{top.text}</p>

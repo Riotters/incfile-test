@@ -18,18 +18,19 @@ const Content = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
+  position: ${props => props.relative ? "relative" : ""};
 
   @media (min-width: 769px) {
     max-width: ${props => (props.contentWidth ? `${props.contentWidth}px` : "")};
   }
 `;
 
-const ContentCenter = ({ className, children, contentWidth, headlineWidth, textWidth, ...rest}) => {
+const ContentCenter = ({ className, children, contentWidth, headlineWidth, textWidth, relative, ...rest}) => {
     
   return (
       <Container>
         <Wrapper className={className} {...rest}>
-          <Content contentWidth={contentWidth} headlineWidth={headlineWidth} textWidth={textWidth}>
+          <Content contentWidth={contentWidth} headlineWidth={headlineWidth} textWidth={textWidth} relative={relative}>
             { children }
           </Content>
         </Wrapper>

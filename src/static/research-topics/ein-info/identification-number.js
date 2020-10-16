@@ -72,12 +72,17 @@ export const about = {
         text: `Click here to have IncFile obtain and email you a FEIN / Tax ID Number.`,
         url: `/manage-your-company/tax-id-ein/`,
     },
-    header5: `Related Articles`,
-    links2: [
-        {
-          text: `Employer Identification Number`,
+}
+
+export const related = {
+  header: 
+      `Related Articles`,
+  text:
+      `Other users were also interested in knowing about…`,
+  buttons: [
+      {
+          header: `Employer Identification Number`,
           url: `/research-topics/ein-info/identification-number`,
-        },
-      ],
-    };
-  
+      },
+    ],
+}

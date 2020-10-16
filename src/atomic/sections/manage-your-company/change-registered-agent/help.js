@@ -36,8 +36,11 @@ const TextWrapper = styled.div`
 const content2 = {
   price: `49`,
   fee: `Plus State Filling Fees`,
+  button: {
+    text: `Order Now`,
+    url: `/`,
+  }
 };
-const dropdownOneOptions = ["LCC", "Corporation", "Nonprofit"];
 const dropdownTwoOptions = states.state.map((state) => state.name);
 
 const HelpSection = ({ className, content }) => (
@@ -52,7 +55,16 @@ const HelpSection = ({ className, content }) => (
       className="help"
       headlineWidth="450"
       objectWidth="550"
-      object={<Card className="card" headline="Change of Agent" content={content2} dropdownOnePlaceholder="Select Entity Type" dropdownOneOptions={dropdownOneOptions} dropdownTwoPlaceholder="Select State" dropdownTwoOptions={dropdownTwoOptions} />}
+      object={<Card className="card"
+        headline="Change of Agent"
+        content={content2}
+        dropdownOnePlaceholder="Select Entity Type"
+        dropdownTwoPlaceholder="Select State"
+        dropdownTwoOptions={dropdownTwoOptions}
+        priceColumn="raChange"
+        orderPage="/change-agent.php"
+        fields="state,raChangeLLC,raChangeCorp,raChangeNpc" />
+      }
     >
       <TextWrapper>
         <Curve top="-15" right="30" rightXL="140" color={color.blue1}>

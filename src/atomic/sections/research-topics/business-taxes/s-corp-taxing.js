@@ -24,21 +24,15 @@ const AboutSection = ({ className, content }) => (
     </Oval>
     <ImageContent image="web-address-search">
       <Path content={content.links} />
-      <Heading size={3} bottomMargin="48">
+      <Heading size={3} bottomMargin="32">
         {content.header}
       </Heading>
-      <Paragraph big bottomMargin="24">
+      <Paragraph big bottomMargin="16">
         {content.text}
       </Paragraph>
       <Paragraph big bottomMargin="48">
         {content.text2}
       </Paragraph>
-      <Heading size={3} bottomMargin="32">
-        {content.header2}
-      </Heading>
-      {content.links2.map(link => (
-        <ArrowLink content={link} />
-      ))}
     </ImageContent>
   </About>
 );

@@ -74,7 +74,6 @@ const BoxButtonLinks = styled.div`
 const HowToGuide = ({ content }) => {
   return (
     <Wrapper>
-      {console.log(content)}
       {content.map((item, i) => (
         <>
           {item.type === "header" && (
