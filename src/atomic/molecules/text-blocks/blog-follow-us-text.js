@@ -9,14 +9,14 @@ const Wrapper = styled.div`
     margin-bottom: 24px;
 
     h4 {
-        text-align: center;
+        text-align: ${props => props.leftAlign ? "left" : "center"};
     }
 `
 
-const BlogFollowUsTexts = ({ className, content }) => {
+const BlogFollowUsTexts = ({ className, content, leftAlign }) => {
   return (
-    <Wrapper className={className}>
-        <h4>Follow Incfile</h4>
+    <Wrapper className={className} leftAlign={leftAlign}>
+        <h4>{content ? content : "Follow Incfile"}</h4>
     </Wrapper>
   )
 }

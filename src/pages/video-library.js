@@ -6,11 +6,13 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Top from "../atomic/partials/blog-top";
 import Container from "../atomic/container";
-import NewsletterCard from "../atomic/organisms/cards/blog-newsletter-card";
-import FollowUs from "../atomic/organisms/cards/blog-follow-us";
+import StartBusinessCard from "../atomic/organisms/cards/start-business-card";
 import Path from "../atomic/molecules/blocks/video-lib-path";
 import ContentCard from "../atomic/organisms/cards/help-center-content-card";
-import Articles from "../components/partials/sections/articles";
+import Articles from "../atomic/sections/articles";
+import Service from "../atomic/organisms/cards/research-topics-service-card";
+import Tools from "../atomic/organisms/cards/research-topics-tools-card";
+import Tags from "../atomic/organisms/cards/research-topics-tags-card";
 
 const Wrapper = styled.section`
   padding: 72px 0;
@@ -54,7 +56,7 @@ const Sticky = styled.div`
 
 const Related = styled.div``;
 
-const Article = () => {
+const VideoLibrary = () => {
   let disqusConfig = {
     //url: `${config.siteUrl+location.pathname}`,
     url: `https://riotters.github.io/incfile-test/article/`,
@@ -64,7 +66,7 @@ const Article = () => {
   return (
     <Layout>
       <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
-      <Top headline="Help Center" text="Instant answers. What can we help with?" imageName="business-checklist" bgColor="orange" />
+      <Top headline="Help Center" text="Instant answers. What can we help with?" imageName="mrs-bulb-main-header-object-business-checklist-8435.png" bgColor="orange" />
       <Wrapper>
         <Container>
           <Content>
@@ -74,17 +76,19 @@ const Article = () => {
             </Single>
             <Sidebar>
               <Sticky>
-                <NewsletterCard />
-                <FollowUs content={followUs} />
+                <StartBusinessCard />
+                <Service />
+                <Tools />
+                <Tags />
               </Sticky>
             </Sidebar>
           </Content>
           <Related />
-          <Articles />
         </Container>
+        <Articles />
       </Wrapper>
     </Layout>
   );
 };
 
-export default Article;
+export default VideoLibrary;

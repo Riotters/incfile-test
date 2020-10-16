@@ -1289,13 +1289,13 @@ export const feesAndRequirments = [
 export const businessTaxes = [
   {
     type: `header`,
-    content: `Wisconsin Business Taxes for LLCs`,
+    content: `The Business Taxes Your Wisconsin LLC Will Pay`,
     size: 2,
     marginBottom: 20,
   },
   {
     type: `text`,
-    content: `There are a wide variety of business taxes that your Wisconsin LLC will need to pay. These include tax that’s payable to the Wisconsin government, like Wisconsin sales taxes and Wisconsin state tax. You will also need to pay federal, self-employment and possibly payroll tax to the IRS. `,
+    content: `Business taxes are a fact of life, and your WI LLC will need to pay a variety of taxes to both the federal and Wisconsin governments. We’ll cover all the main taxes in Wisconsin, including self-employment, payroll, federal, Wisconsin state tax and Wisconsin sales tax.  `,
     marginBottom: 20,
   },
   {
@@ -1356,45 +1356,33 @@ export const businessTaxes = [
   },
   {
     type: `header`,
-    content: `Wisconsin State Income Tax Payable on LLC Earnings`,
+    content: `Wisconsin Business Tax Registration `,
     size: 3,
     marginBottom: 20,
   },
   {
     type: `text`,
-    content: `As an Wisconsin business owner, you will need to pay WI state tax on any money you pay to yourself. These earnings flow through to your personal tax return, which is where you will pay Wisconsin income tax. You will be taxed at the standard rates for Wisconsin state taxes, and you will also get to apply regular allowances and deductions.`,
+    content: `You will first need to obtain a Wisconsin tax ID number to pay taxes to the Department of Revenue. You can do that by registering for<a href="https://www.revenue.wi.gov/Pages/Businesses/New-Business-home.aspx" target="_blank" rel="noopener noreferrer"> Wisconsin business tax</a>.`,
     marginBottom: 0,
   },
-  {
-    type: `text`,
-    content: `Any salaried employees will also need to pay personal Wisconsin state taxes.`,
-    marginBottom: 0,
-  },
-  {
-    type: `text`,
-    content: `The Wisconsin state tax rates run between 2.59 percent and 4.54 percent, depending on income. `,
-    marginBottom: 0,
-  },
-  {
-    type: `text`,
-    content: `Get details on the <a href= "https://azdor.gov/" target="_blank" rel="noopener noreferrer">Wisconsin state tax online here</a>.`,
-    marginBottom: 30,
-  },
+
+
+
   {
     type: `header`,
-    content: `Wisconsin Transaction Privilege Tax (TPT)/Sales Tax Rates on LLC Sales`,
+    content: `Wisconsin Sales Taxes on LLC Sales`,
     size: 3,
     marginBottom: 20,
   },
   {
     type: `text`,
-    content: `If you sell physical products or certain types of services, you may need to collect sales tax (known in Wisconsin as a Transaction Privilege Tax) and then pay it to the WI Department of Revenue. Wisconsin sales tax is collected at the point of purchase. Wisconsin sales tax rates do vary depending on the region, county or city where you are located.`,
+    content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the WI Department of Revenue. Wisconsin sales tax is collected at the point of purchase. Wisconsin sales tax rates do vary depending on the region, county or city where you are located. You will typically need to collect Wisconsin sales tax on:`,
     marginBottom: 20,
   },
   {
     type: `list-dot`,
     content: {
-      header: `You will typically need to collect Wisconsin sales tax on:`,
+      header: ``,
       list: [`Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`, `Certain services that your Wisconsin business might provide`],
     },
     marginBottom: 20,
@@ -1409,20 +1397,47 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `Get details on the Wisconsin Transaction Privilege Tax online here.`,
+    content: `Get details on the <a href="https://www.revenue.wi.gov/Pages/SalesAndUse/Home.aspx" target="_blank" rel="noopener noreferrer">Wisconsin sales tax here</a>.`,
     marginBottom: 40,
   },
   {
     type: `header`,
-    content: `Federal Taxes for Your Wisconsin LLC: Self-Employment and Income Taxes`,
+    content: `Sales Tax Rates for Your Wisconsin LLC`,
+    size: 3,
+    marginBottom: 20,
+  },
+  {
+    type: `text`,
+    content: `Sales tax rates do vary between states, counties and cities. Typically, the state will set a base sales tax rate, then specific counties and cities may levy small additional sales tax amounts on top of that. `,
+    marginBottom: 30,
+  },
+  {
+    type: `header`,
+    content: `Wisconsin State Tax on Your LLC Earnings`,
+    size: 3,
+    marginBottom: 20,
+  },
+  {
+    type: `text`,
+    content: `As a Wisconsin business owner, you will need to pay WI state tax on any money you pay to yourself. These earnings flow through to your personal tax return, which is where you will pay Wisconsin income tax. You will be taxed at the standard rates for Wisconsin state taxes, and you will also get to apply regular allowances and deductions. Any salaried employees will also need to pay personal Wisconsin state taxes.`,
+    marginBottom: 20,
+  },
+  {
+    type: `text`,
+    content: `Get details on the <a href="https://www.revenue.wi.gov/Pages/FAQS/pcs-taxrates.aspx" target="_blank" rel="noopener noreferrer">Wisconsin state tax rates here</a>.`,
+  },
+  {
+    type: `header`,
+    content: `Federal Self-Employment and Income Taxes for Your Wisconsin LLC`,
     size: 3,
     marginBottom: 20,
   },
   {
     type: `text`,
     content: `There are a couple different federal taxes that every LLC will need to pay, including Wisconsin LLCs. These are self-employment tax and federal income tax, which are taxed as “pass-through” income via your tax return forms.`,
-    marginBottom: 30,
+    marginBottom: 20,
   },
+
   {
     type: `header`,
     content: `Wisconsin LLC Federal Self-Employment Tax`,
@@ -1436,17 +1451,17 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe.`,
-    marginBottom: 20,
+    content: `You will be able to deduct your business expenses from your income when determining how much self-employment tax you owe. Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
+    marginBottom: 30,
   },
   {
     type: `list-dot`,
-    content: {
-      header: `Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
-      list: [`On profits of $20,000, you would pay self-employment tax of $3,060`, `On profits of $50,000, you would pay self-employment tax of $7,650`, `On profits of $100,000, you would pay self-employment tax of $15,300`, `On profits of $160,000, you would pay self-employment tax of $24,480`],
-    },
-    marginBottom: 50,
-    color: color.blue3,
+    header:``,
+    list: [`On profits of $50,000, you would pay self-employment tax of $7,650.`,
+            `On profits of $100,000, you would pay self-employment tax of $15,300.`,
+            `On profits of $140,000, you would pay self-employment tax of $21,420.`,
+            `On profits of $160,000, you would pay self-employment tax of $24,480.`,
+            ],
   },
   {
     type: `header`,
@@ -1457,37 +1472,35 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `The Internal Revenue Service allows LLCs to ask to be treated as an S Corporation for tax purposes. This can help you reduce the amount of self-employment tax that you pay by declaring some of your income as salary and other income as distributions or withdrawals. `,
-    marginBottom: 20,
+    marginBottom: 30,
   },
+
   {
     type: `text`,
     content: `You can do this by making an “S Corporation Tax Election” with the IRS using a form known as Form 2553. We can file your Form 2553 with the IRS on your behalf.`,
     marginBottom: 30,
   },
+  
   {
     type: `button`,
-    content: {
-      text: `INCFILE FORM 2553 S CORPORATION TAX ELECTION FOR LLC SERVICE`,
-      url: `/llc-s-corp-election/`,
-    },
-    theme: `primary48`,
-    marginBottom: 30,
+    text: `Incfile Form 2553 S Corporation Tax Election for an LLC service`,
+    url: `/llc-s-corp-election/`,
   },
   {
     type: `text`,
     content: `Speak to your accountant for more information on reducing your Wisconsin LLC self-employment tax through an S Corporation tax election.`,
-    marginBottom: 40,
+    marginBottom: 30,
   },
   {
     type: `header`,
     content: `Wisconsin LLC Federal Income Tax`,
-    size: 3,
+    size: 4,
     marginBottom: 20,
   },
   {
     type: `text`,
-    content: `You must also pay regular federal income tax on any earnings you take out of your Wisconsin LLC. The amount of income tax you pay depends on your earnings, current income tax brackets, deductions and how you file. `,
-    marginBottom: 20,
+    content: `You must also pay regular federal income tax on any earnings you take out of your Wisconsin LLC. The amount of income tax you pay depends on your earnings, current income tax brackets, deductions and how you file.`,
+    marginBottom: 30,
   },
   {
     type: `text`,
@@ -1497,7 +1510,7 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Employer and Employee Taxes for Your Wisconsin LLC`,
-    size: 3,
+    size: 4,
     marginBottom: 20,
   },
   {
@@ -1507,13 +1520,13 @@ export const businessTaxes = [
   },
   {
     type: `header`,
-    content: `Employer Payroll Tax Withholding`,
+    content: `Employer Payroll Tax Withholding for Your Wisconsin LLC `,
     size: 4,
     marginBottom: 20,
   },
   {
     type: `text`,
-    content: `All employers must collect and withhold payroll tax from their employees when they receive their salaries. You would normally withhold 7.65 percent of the taxable salary that you pay to your employees.`,
+    content: `All employers must collect and withhold payroll tax from their employees when they receive their salaries. You normally withhold 7.65 percent of the taxable salary that you pay to your employees.`,
     marginBottom: 30,
   },
   {
@@ -1525,7 +1538,7 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `You may also choose to withhold federal and Wisconsin state income tax on the wages you pay to employees. Speak to your accountant for more information.`,
-    marginBottom: 30,
+    marginBottom: 20,
   },
   {
     type: `header`,
@@ -1534,7 +1547,7 @@ export const businessTaxes = [
     marginBottom: 20,
   },
   {
-    type: `text`,
+    type:`text`,
     content: `Regardless of whether you withhold federal and Wisconsin state income tax, your employees may need to file their own tax returns.`,
     marginBottom: 30,
   },
@@ -1545,14 +1558,25 @@ export const businessTaxes = [
     marginBottom: 20,
   },
   {
+    type:`text`,
+    content: `You may also need to pay insurance for any employees, like employee compensation insurance or unemployment tax. There will also be other requirements you have for employees.`,
+    marginBottom: 30,
+  },
+  {
     type: `text`,
-    content: `You may also need to pay insurance for any employees, like workers compensation insurance or unemployment tax. There will also be other requirements you have for employees.`,
+    content: `Get more requirements from the <a href="https://dwd.wisconsin.gov/" target="_blank" rel="noopener noreferrer">Wisconsin Department of Workforce Development website</a>.`,
+    marginBottom: 30,
+  },
+  {
+    type: `header`,
+    content: `Other Taxes and Duties for Your Wisconsin LLC`,
+    size: 3,
     marginBottom: 20,
   },
   {
     type: `text`,
-    content: `Get more requirements from the <a href="https://www.azica.gov/divisions/labor-department/" target="_blank" rel="noopener noreferrer">Wisconsin Labor Department website</a>.`,
-    marginBottom: 30,
+    content: `Depending on the industry you are in, your Wisconsin LLC may be liable for certain other taxes and duties. For example, if you sell gasoline, you may need to pay a tax on any fuel you sell. Likewise, if you import or export goods, you may need to pay certain duties. Speak to your accountant about any other taxes you may need to withhold or pay.`,
+    marginBottom: 20,
   },
   {
     type: `header`,
@@ -1562,7 +1586,7 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `Most Wisconsin LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make.`,
+    content: `Most Wisconsin LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make. The most common types of estimated tax are:`,
     marginBottom: 20,
   },
   {
@@ -1581,17 +1605,6 @@ export const businessTaxes = [
   },
   {
     type: `header`,
-    content: `Other Taxes and Duties for Your Wisconsin LLC`,
-    size: 3,
-    marginBottom: 20,
-  },
-  {
-    type: `text`,
-    content: `Depending on the industry you are in, your Wisconsin LLC may be liable for certain other taxes and duties. For example, if you sell gasoline, you may need to pay a tax on any fuel you sell. Likewise, if you import or export goods, you may need to pay certain duties. Speak to your accountant about any other taxes you may need to withhold or pay.`,
-    marginBottom: 30,
-  },
-  {
-    type: `header`,
     content: `FAQs on Wisconsin LLC Business Taxes`,
     size: 3,
     marginBottom: 40,
@@ -1602,7 +1615,7 @@ export const businessTaxes = [
       items: [
         {
           question: `Does Wisconsin Have Sales Tax?`,
-          answer: `Yes. Wisconsin does have a sales tax, which may vary among cities and counties. You can find more information above.`,
+          answer: `Yes. Wisconsin does have a sales tax, which may vary among cities and counties.`,
         },
         {
           question: `Does Wisconsin Have a State Tax?`,
@@ -1629,111 +1642,4 @@ export const compare = {
   },
 };
 
-export const requirements = {
-  header: `Fees and requirements in California.`,
-  rows: [
-    {
-      box: {
-        fields: [
-          {
-            header: `$75`,
-            text: `State fee`,
-          },
-          {
-            header: `15 days`,
-            text: `State filing time`,
-          },
-          {
-            header: `5 days`,
-            text: `Expected filling time`,
-          },
-        ],
-      },
-      content: {
-        columns: [
-          {
-            content: [
-              {
-                type: `heading`,
-                size: 3,
-                content: `Filing time and price`,
-              },
-              {
-                type: `paragraph`,
-                content: `The state charges this amount to file a new business entity. This fee goes directly to the Secretary of State.`,
-              },
-              {
-                type: `paragraph`,
-                content: `Ut tincidunt neque a viverra egestas. Suspendisse tempus metu.`,
-              },
-              {
-                type: `arrow-links`,
-                content: {
-                  text: `State Filing Times`,
-                  url: `/`,
-                },
-                bottomMargin: 16,
-              },
-              {
-                type: `arrow-links`,
-                content: {
-                  text: `State Filing Prices`,
-                  url: `/`,
-                },
-              },
-            ],
-          },
-          {
-            header: `Compliance  Requirements`,
-            text: `This report is mandatory and must be filed within the specified time frame in order for the entity to remain in good standing with the state.`,
-            text2: `Failure to file this report can lead to the company being revoked or administratively dissolved.`,
-            link: {
-              text: `Other State's Ongoing`,
-              url: `/`,
-            },
-          },
-        ],
-      },
-    },
-    {
-      box: {
-        fields: [
-          {
-            header: `Annually`,
-            text: `Frequency`,
-          },
-          {
-            header: `$800 (min)`,
-            text: `Filing fee`,
-          },
-        ],
-      },
-      content: {
-        header: `California Franchise Tax`,
-        text: `$800 payment for the LLC Franchise Tax is due by 15th day of the 4th month after your LLC is filed. The month your LLC is filed counts as Month 1, regardless if you file on the 1st of the month, the last of the month, or any day of the month, really.`,
-        text2: `This means that if you were to file your LLC on March 22nd, then you must pay the $800 fee no later than June 15th (in this example, March is Month 1, April is Month 2, May is Month 3, and June is Month 4). Then, every year after your first payment $800 LLC Franchise Tax will be due April 15th. You pay the $800 LLC Franchise Tax using Form 3522 called the LLC Tax Voucher.`,
-      },
-    },
-    {
-      box: {
-        fields: [
-          {
-            header: `Biennially`,
-            text: `Frequency`,
-          },
-          {
-            header: `$20`,
-            text: `Filing fee`,
-          },
-        ],
-      },
-      content: {
-        header: `Statement of Information`,
-        header2: `Due Date:`,
-        text: `During six-month period ending on last day of anniversary month of incorporation or qualification.`,
-        header3: `Important:`,
-        text2: `The initial Statement of Information filing is due within 90 days of the entity formation date.`,
-      },
-    },
-  ],
-};
+
