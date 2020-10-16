@@ -18,7 +18,7 @@ import { top, about, care, faq, features } from "../../static/learning-center-en
 
 const BusinessNameSearch = () => (
   <Layout>
-    <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
+    <SEO title="Business Name Search | Is Your Company Name Available?<" description="Starting a new business? Check to see if your preferred business name is available in your state with Incfile’s easy name search tool. Try it now." />
     <Top imageName="mr-bulb-business-name-search-5927" imageAlt="Mrs Bulb and with checklist" ovalColor="blue" headlineWidth="500">
       <h1>{top.header}</h1>
       <p>{top.text}</p>

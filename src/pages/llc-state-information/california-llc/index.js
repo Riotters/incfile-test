@@ -29,7 +29,7 @@ const Wrapper = styled.div`
 function LLCIndex() {
   return (
     <Layout>
-      <SEO title="LLCs in Texas | Guide to Forming an LLC in Texas" description="Ready to form your Texas LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
+      <SEO title="How to Start an LLC in California | Incfile.com" description="Ready to form your California LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
 
       <LinearBgHeader imageMapName="tx-map-2x">
         <HomeHeader content={HomePageContent.header} />
