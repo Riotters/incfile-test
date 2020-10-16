@@ -44,7 +44,7 @@ class BusinessChecklist extends React.Component {
     render() {
         return (
             <Layout>
-                <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
+                <SEO title="How to Start a Business | Start a Business Checklist" description="It’s time to bring your ideas and inspiration to life. Our straightforward guide helps you get your business off the ground, fast. Read more." />
                 <Top imageName="mrs-bulb-business-checklist" imageAlt="Mrs Bulb and with checklist" ovalColor="green" contentWidth={700}>
                     <Heading size={1}>{top.header}</Heading>
                     <Paragraph big>{top.text}</Paragraph>

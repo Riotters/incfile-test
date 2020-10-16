@@ -17,7 +17,7 @@ import { top, about, resources, furtherResources } from "../../static/learning-c
 
 const BusinessResources = () => (
   <Layout>
-    <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
+    <SEO title="Business Resources & Tools for Starting a Company" description="There’s a lot to think about when you’re getting your business off the ground! Our helpful tools and free downloads can get you started. Learn more." />
     <Top imageName="mr-bulb-business-downloads-tools-7829" imageAlt="Mrs Bulb and with checklist" ovalColor="purple-2" headlineWidth="550">
       <h1>{top.header}</h1>
       <p>{top.text}</p>

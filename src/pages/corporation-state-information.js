@@ -12,7 +12,7 @@ import { map, states } from "../static/corporation-state-information";
 
 const StateInformation = () => (
   <Layout>
-    <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
+    <SEO title="Find Corporate Information for Your State | Incfile" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
     <Map content={map} />
     <States content={states} />
     <Articles />
