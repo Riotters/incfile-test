@@ -37,7 +37,6 @@ import RockerIcon from "../../images/icons/rocket.inline.svg";
 import SettingBusiness from "../../atomic/sections/type-of-business/bakery/setting-business";
 import OrderNow from "../../atomic/sections/type-of-business/bakery/order-now";
 import {RingText, RingText2, toolsList} from "../../static/type-of-business/bakery";
-import HireEmployees from "../../atomic/sections/type-of-business/bakery/hire-employees";
 import UsefulTools from "../../atomic/partials/useful-tools";
 import Conclusion from "../../atomic/sections/general/conclusion";
 import Adventages from "../../components/adventages";
@@ -57,6 +56,8 @@ import Regulations from "../../atomic/sections/type-of-business/bakery/regulatio
 import Taxes from "../../atomic/sections/type-of-business/bakery/taxes";
 import InsuranceBusinessSection from "../../atomic/sections/type-of-business/bakery/insurance-business";
 import Links from "../../atomic/sections/type-of-business/bakery/links";
+import Curve from "../../atomic/atoms/icons/curve";
+import Curve2SVG from "../../images/curves/top-left-bottom-right-big.inline.svg";
 
 const Bakery = () => (
     <Layout>
@@ -496,31 +497,31 @@ const Bakery = () => (
                 <OvalSvg/>
             </Oval2>
 
-            <CenterBox>
-                <TextCenterLayout headlineWidth={770} headline="Your Bakery Needs a Business Plan"/>
-                <Paragraph big>
-                    These areas are just starting points — there are many different types of bakery businesses. Once
-                    you’ve identified the type of bakery you’d like to run and what you want to sell, you need to
-                    validate your business idea.
-                </Paragraph>
-                <Paragraph big>
-                    Start by checking you have the right skillset. Bakers work long hours and need sufficient technical
-                    skill to make great products. You’ll need to deal with employees and customers too, and there’s a
-                    lot of planning that goes into running a successful bakery.
-                </Paragraph>
-                <Paragraph big>
-                    The thing to learn here is that it’s okay to say “no” to your first, second or third bakery business
-                    ideas. Very few entrepreneurs get it right first time. In fact, getting it wrong is often a badge of
-                    honor! Still, you don’t want to waste too much time, energy or money on the wrong initiatives, so
-                    ask and answer these questions honestly to find the right way forward.
-                </Paragraph>
-                <Paragraph big>
-                    Before committing too much time, energy and money into your new bakery business, it’s important to
-                    test the marketplace.
-                </Paragraph>
-            </CenterBox>
-
             <Container>
+                <CenterBox>
+                    <TextCenterLayout headlineWidth={770} headline="Your Bakery Needs a Business Plan"/>
+                    <Paragraph big>
+                        These areas are just starting points — there are many different types of bakery businesses. Once
+                        you’ve identified the type of bakery you’d like to run and what you want to sell, you need to
+                        validate your business idea.
+                    </Paragraph>
+                    <Paragraph big>
+                        Start by checking you have the right skillset. Bakers work long hours and need sufficient technical
+                        skill to make great products. You’ll need to deal with employees and customers too, and there’s a
+                        lot of planning that goes into running a successful bakery.
+                    </Paragraph>
+                    <Paragraph big>
+                        The thing to learn here is that it’s okay to say “no” to your first, second or third bakery business
+                        ideas. Very few entrepreneurs get it right first time. In fact, getting it wrong is often a badge of
+                        honor! Still, you don’t want to waste too much time, energy or money on the wrong initiatives, so
+                        ask and answer these questions honestly to find the right way forward.
+                    </Paragraph>
+                    <Paragraph big>
+                        Before committing too much time, energy and money into your new bakery business, it’s important to
+                        test the marketplace.
+                    </Paragraph>
+                </CenterBox>
+                
                 <GridSectionList>
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={IdentifyIcon}
                                         imageBackgroundColor={color.babyblue2}
@@ -537,6 +538,9 @@ const Bakery = () => (
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={LookIcon}
                                         imageBackgroundColor={color.green2}
                                         imageShadowColor={color.green2}>
+                        <Curve top="-110" right="-30" color={color.blue1}>
+                            <Curve2SVG/>
+                        </Curve>
                         <Heading size={4}>
                             Look at who your competitors are in
                             the space

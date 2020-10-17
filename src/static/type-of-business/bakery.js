@@ -13,7 +13,7 @@ export const InfoCards = {
         },
         {
             backgroundColor: color.green3,
-            imageName: "workers-compensation-insurance",
+            imageName: "shield",
             title: "General Liability Insurance",
             content: "This insurance protects your bakery business from claims due to being sued. This may include injury to members of the public, property damage, personal liabilities, legal defense and more. It can help protect your business from financial penalties and bankruptcy. This type of insurance could be essential to your bakery business as you [rewrite]..."
         },

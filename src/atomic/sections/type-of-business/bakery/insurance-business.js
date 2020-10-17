@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import {InfoCards} from "../../../../static/type-of-business/bakery";
-import OvalSVG from "../../../../images/ovals/top-right-transparent-blue.inline.svg";
+import OvalSVG from "../../../../images/ovals/bottom-left-transparent-blue3.inline.svg";
 import InsuranceBusiness from "../../general/insurance-business";
 
 const InsuranceBusinessSection = () => (
-    <InsuranceBusiness title={InfoCards.title} description={InfoCards.description} InfoCards={InfoCards.items}>
+    <InsuranceBusiness title={InfoCards.title} description={InfoCards.description} InfoCards={InfoCards.items} bgColor="white">
         <Oval>
             <OvalSVG/>
         </Oval>
@@ -14,13 +14,12 @@ const InsuranceBusinessSection = () => (
 
 const Oval = styled.div`
     position: absolute; 
-    top: 0;
-    right: 0;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    z-index: -1;
     
-    @media (min-width: 570px){
-        width: 570px;
+    @media (min-width: 420px){
+        width: 420px;
     }
 `;
 
