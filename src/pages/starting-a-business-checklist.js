@@ -1,26 +1,26 @@
 import React, {Fragment} from "react";
-import Layout from "../../components/layout";
-import SEO from "../../components/seo";
-import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
-import Button from "../../atomic/molecules/buttons/button";
-import RatingRow from "../../atomic/atoms/boxes/rating-row";
-import CartBlock from "../../atomic/molecules/blocks/cart-block";
-import RatingBlock from "../../atomic/molecules/blocks/rating-block";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import Buttonsbox from "../atomic/atoms/boxes/top-buttons-box";
+import Button from "../atomic/molecules/buttons/button";
+import RatingRow from "../atomic/atoms/boxes/rating-row";
+import CartBlock from "../atomic/molecules/blocks/cart-block";
+import RatingBlock from "../atomic/molecules/blocks/rating-block";
 //Sections
-import Top from "../../atomic/partials/top";
-import About from "../../atomic/sections/learning-center-entity/business-checklist/about";
+import Top from "../atomic/partials/top";
+import About from "../atomic/sections/learning-center-entity/business-checklist/about";
 
-import Articles from "../../atomic/sections/articles";
+import Articles from "../atomic/sections/articles";
 //Texts
-import { top, about, checks, form } from "../../static/learning-center-entity/business-checklist";
-import ChecklistSection from "../../atomic/sections/learning-center-entity/business-checklist/checklist";
-import {Paragraph} from "../../atomic/atoms/typography/paragraph";
-import {Heading} from "../../atomic/atoms/typography/heading";
-import {PortalComponent} from "../../components/LightBox";
+import { top, about, checks, form } from "../static/learning-center-entity/business-checklist";
+import ChecklistSection from "../atomic/sections/learning-center-entity/business-checklist/checklist";
+import {Paragraph} from "../atomic/atoms/typography/paragraph";
+import {Heading} from "../atomic/atoms/typography/heading";
+import {PortalComponent} from "../components/LightBox";
 import styled from "styled-components";
-import {BusinessChecklistForm} from "../../atomic/organisms/forms/business-checklist-form";
-import Oval from "../../atomic/atoms/icons/oval";
-import OvalSVG from "../../images/ovals/business-checklist-related-articles-top-right.inline.svg";
+import {BusinessChecklistForm} from "../atomic/organisms/forms/business-checklist-form";
+import Oval from "../atomic/atoms/icons/oval";
+import OvalSVG from "../images/ovals/business-checklist-related-articles-top-right.inline.svg";
 
 class BusinessChecklist extends React.Component {
     constructor(props) {

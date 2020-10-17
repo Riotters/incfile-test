@@ -1,15 +1,15 @@
 import React from "react";
-import Layout from "../../components/layout";
-import SEO from "../../components/seo";
-import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
-import Button from "../../atomic/molecules/buttons/button";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import Buttonsbox from "../atomic/atoms/boxes/top-buttons-box";
+import Button from "../atomic/molecules/buttons/button";
 //Sections
-import Top from "../../atomic/partials/top";
-import About from "../../atomic/sections/entity-search/delaware-entity-search/about";
-import Search from "../../atomic/sections/entity-search/delaware-entity-search/search";
-import Faq from "../../atomic/sections/entity-search/delaware-entity-search/faq";
+import Top from "../atomic/partials/top";
+import About from "../atomic/sections/entity-search/delaware-entity-search/about";
+import Search from "../atomic/sections/entity-search/delaware-entity-search/search";
+import Faq from "../atomic/sections/entity-search/delaware-entity-search/faq";
 //Texts
-import { top, about, search, faq } from "../../static/entity-search/delaware-entity-search";
+import { top, about, search, faq } from "../static/entity-search/delaware-entity-search";
 
 const GeneralResearchTopics = () => (
   <Layout>
