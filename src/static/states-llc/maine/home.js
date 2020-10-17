@@ -507,7 +507,7 @@ export const namingYourBusiness = [
   {
     type: `text`,
     content: `The perfect business name can be elusive. We have a complete guide to choosing the right business name, but basically, you'll want to choose a name that will:`,
-    marginBottom: 20,
+    marginBottom: 16,
   },
   {
     type: `list-dot`,
@@ -520,7 +520,7 @@ export const namingYourBusiness = [
         `Not be used by another business`
       ],
     },
-    marginBottom: 40,
+    marginBottom: 16,
     color: color.orange3,
   },
   {
@@ -529,7 +529,7 @@ export const namingYourBusiness = [
       text: `Incfile guide to choosing a business name.`,
       url: `/blog/post/llc-name-search-50-states/`,
     },
-    marginBottom: 30,
+    marginBottom: 0,
   },
 ];
 
@@ -1273,7 +1273,7 @@ export const feesAndRequirments = [
         },
         {
           question: `Do I Need to Pay an Annual Report Fee Every Year?`,
-          answer: `Yes. Most states, including ME, require you to file a report for your LLC every year. You can find out more on the <a href="/business-license-research-package/" target="_blank">compliance page for your state.</a>`,
+          answer: `Yes. Most states, including ME, require you to file a report for your LLC every year. You can find out more on the <a href="/compliance-filing-requirement/" target="_blank">compliance page for your state.</a>`,
         },
         {
           question: `Who Will I Need to Get Business Licenses and Permits From for My Maine LLC?`,
