@@ -64,6 +64,19 @@ const Wrapper = styled(Whitebox)`
     }
 `;
 
+function showPopup() {
+    if(typeof document !== "undefined") {
+        let modal = document.querySelector("#download-pdf-form-modal");
+
+        if( modal.className.indexOf("visible") >= 0) {
+            modal.className = modal.className.replace(" visible", "");
+        }
+        else {
+            modal.className += " visible";
+        }
+    }
+}
+
 const DownloadPdfBox = ({ className, content, image }) => {
   return (
     <Wrapper className={className}>
@@ -78,11 +91,11 @@ const DownloadPdfBox = ({ className, content, image }) => {
                 <Paragraph bottomMargin="0">{content.text}</Paragraph>
             )}
             {content.button && (
-                <Button content={content.button} theme="secondary48" margin="36px 0 0" marginSM="36px auto 0" arrow />
+                <Button content={content.button} onClick={function(e) { if(typeof window !== "undefined" && typeof window.br_dpfw_m_popup === "function") { e.preventDefault(); window.br_dpfw_m_popup(e, JSON.parse(JSON.stringify(content.header))); } }} theme="secondary48" margin="36px 0 0" marginSM="36px auto 0" arrow />
             )}
         </TextWrapper>
     </Wrapper>
   )
-}
+};
 
 export default DownloadPdfBox;
