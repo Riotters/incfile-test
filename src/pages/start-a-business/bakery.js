@@ -269,27 +269,111 @@ const Bakery = () => (
                         </Paragraph>
 
                         <Adventages
-                            headline="Sales from retail bakeries are expected to increase by over five percent a year"
+                            headline="Understanding customer demand for the products you’re intending to make"
                             width="100%"
                         />
 
                         <Adventages
-                            headline="Sales from retail bakeries are expected to increase by over five percent a year"
+                            headline="Purchasing ingredients for baking products"
                             width="100%"
                         />
 
                         <Adventages
-                            headline="Sales from retail bakeries are expected to increase by over five percent a year"
+                            headline="Preparing ingredients for baking"
                             width="100%"
                         />
 
                         <Adventages
-                            headline="Sales from retail bakeries are expected to increase by over five percent a year"
+                            headline="Working out the costs of ingredients, selling prices and profit margins"
                             width="100%"
                         />
 
                         <Adventages
-                            headline="Sales from retail bakeries are expected to increase by over five percent a year"
+                            headline="Baking products and putting them out for sale"
+                            width="100%"
+                        />
+
+                        <Adventages
+                            headline="Storing products as needed"
+                            width="100%"
+                        />
+
+                        <Adventages
+                            headline="Marketing your bakery"
+                            width="100%"
+                        />
+
+                        <Adventages
+                            headline="Managing bakery employees"
+                            width="100%"
+                        />
+
+                        <Adventages
+                            headline="Dealing with customers"
+                            width="100%"
+                        />
+
+                        <Heading size={3} style={{marginTop: "48px"}}>
+                            Skills Needed by a Bakery Business Entrepreneur
+                        </Heading>
+                        <Paragraph big style={{marginBottom: "48px"}}>
+                            The following skills will be very useful in your role as a bakery small business owner.
+                        </Paragraph>
+
+                        <Adventages
+                            headline="An excellent grasp of the art and science of baking"
+                            width="100%"
+                        />
+
+                        <Adventages
+                            headline="Good soft skills and talking to customers to find out what they want"
+                            width="100%"
+                        />
+
+                        <Adventages
+                            headline="Math skills so you can work out the ingredients you need and what you should sell products for"
+                            width="100%"
+                        />
+
+                        <Adventages
+                            headline="People management skills for your behind-the-scenes and front-of-house staff"
+                            width="100%"
+                        />
+
+                        <Adventages
+                            headline="Marketing skills to get people into the bakery"
+                            width="100%"
+                        />
+
+                        <Heading size={3} style={{marginTop: "48px"}}>
+                            What Your Bakery Customers are Looking For
+                        </Heading>
+                        <Paragraph big style={{marginBottom: "48px"}}>
+                            Someone coming to your bakery is likely to want:
+                        </Paragraph>
+
+                        <Adventages
+                            headline="Delicious, fresh, high-quality baked products"
+                            width="100%"
+                        />
+
+                        <Adventages
+                            headline="A good variety of breads, pastries, cakes and more"
+                            width="100%"
+                        />
+
+                        <Adventages
+                            headline="A place to sit, relax and chat with friends"
+                            width="100%"
+                        />
+
+                        <Adventages
+                            headline="Reasonable prices for baked goods"
+                            width="100%"
+                        />
+
+                        <Adventages
+                            headline="Drink options like tea and coffee"
                             width="100%"
                         />
 
