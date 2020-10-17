@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { color } from "../../../atoms/styles/colors";
 import HeadingCenter from "../../../partials/heading-center";
-import Button from "../../../molecules/buttons/button";
 import ContentCenter from "../../../partials/content-center";
 import Table from "../../../organisms/tables/explore-cities-table";
 import Oval from "../../../atoms/icons/oval";
