@@ -5,9 +5,11 @@ import TextCenterLayout from "../../../partials/heading-center";
 import Adventages from "../../../../components/adventages";
 import {color, gradient} from "../../../../components/styles/colors";
 import {shadow} from "../../../../components/styles/shadows";
-import OvalSvgBottom from "../../../../images/ovals/top-left-transparent-green3.inline.svg";
+import OvalSvgBottom from "../../../../images/ovals/bottom-right-transparent-blue2.inline.svg";
 import CurveSvg from "../../../../images/curve-babyblue-1.inline.svg";
 import {adventages2} from "../../../../static/type-of-business/bakery";
+import Curve2SVG from "../../../../images/curves/top-left-bottom-right-big.inline.svg";
+import Curve from "../../../atoms/icons/curve";
 
 const Taxes = () => (
     <Wrapper>
@@ -22,9 +24,9 @@ const Taxes = () => (
 
             <Container>
                 <AdventagesBox>
-                    <CurveWrapper>
+                    <Curve top="-100" right="80" color={color.blue2}>
                         <CurveSvg/>
-                    </CurveWrapper>
+                    </Curve>
                     {adventages2.items.map(item => (
                         <Adventages className="containerMargin" style={{textAlign: "center"}} url={item.url} urlText={item.urlText}
                                     circleText={item.circleText} headline={item.headline} text={item.text}
@@ -71,22 +73,12 @@ const AdventagesBox = styled.div`
 
 const OvalBottom = styled.div`
     position: absolute;
-    left: 0;
-    bottom: 388px;
+    right: 0;
+    top: 210px;
     width: 100%;
     
-    @media (max-width: 570px) {
-        width: 570px;
-    }
-`;
-
-const CurveWrapper = styled.div`
-    position: absolute;
-    right: -115px;
-    top: 24px;
-    
-    @media (max-width: 970px) {
-        display: none;
+    @media (min-width: 720px) {
+        width: 720px;
     }
 `;
 
