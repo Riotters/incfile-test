@@ -347,7 +347,7 @@ const IndexPage = () => (
 
         <h2>Type of Business</h2>
         <Link to="/start-a-business/airbnb">Airbnb</Link>
-        <Link to="/start-a-business/bakery">Bakery (no details)</Link>
+        <Link to="/start-a-business/bakery">Bakery</Link>
         <Link to="/start-a-business/coach">Coach</Link>
         <Link to="/start-a-business/moving-company">Moving Company</Link>
         <Link to="/start-a-business/boutique-clothing-business">Boutique Clothing Business</Link>
