@@ -120,7 +120,7 @@ const IndexPage = () => (
         <Link to="/business-accounting/">Filling Business Taxes</Link>
         <Link to="/fictitious-business-or-trade-name/">Fictitious Business</Link>
         <Link to="/home-page-v3/">Home Page v3</Link>
-        <Link to="/manage-your-company/compare-state-filling-time">Compare State Filling Time</Link>
+        <Link to="/compare-state-filling-times/">Compare State Filling Time</Link>
 
         <h2>Review Entity Types</h2>
         <Link to="/start-your-company/">Start Your Company</Link>
@@ -133,8 +133,8 @@ const IndexPage = () => (
         <Link to="/help-center">Help Center</Link>
         <Link to="/learning-center-entity/help-center-article">Help Center Article</Link>
         <Link to="/business-entity-comparison/">Comparison Chart</Link>
-        <Link to="/business-checklist">Business Checklist (WIP)</Link>
-        <Link to="/learning-center-entity/annual-report">Annual Report Due Date</Link>
+        <Link to="/starting-a-business-checklist/">Business Checklist (WIP)</Link>
+        <Link to="/business-filing-deadlines/">Annual Report Due Date</Link>
         <Link to="/business-license-tool/">Business License Tools (no API)</Link>
         <Link to="/start-a-business/">Business Startup Guides (no details)</Link>
         <Link to="/guides-start-business/">Guide To Start a Business</Link>
@@ -143,8 +143,8 @@ const IndexPage = () => (
         <Link to="/sales-tax-calculator/">Sales Tax Calculator</Link>
         <Link to="/state-filing-times/">State Filing Times (no details)</Link>
         <Link to="/ongoing-filing-requirements/">Ongoing Filing Requirements (no details)</Link>
-        <Link to="/learning-center-entity/business-resources/">Business Resources (WIP)</Link>
-        <Link to="/learning-center-entity/business-name-search/">Business Name Search (no details)</Link>
+        <Link to="/business-resources/">Business Resources (WIP)</Link>
+        <Link to="/business-name-search/">Business Name Search (no details)</Link>
         <Link to="/business-entity-quiz">Business Entity Quiz</Link>
 
         <Link to="/learning-center-entity/alaska-corporation">Alaska Corporation</Link>
@@ -178,14 +178,14 @@ const IndexPage = () => (
         <Link to="/washington-virtual-mailbox/">Washington Virtual mailbox</Link>
 
         <h2>Search your name availability</h2>
-        <Link to="/entity-search/new-york-entity-search">New York Entity Search</Link>
-        <Link to="/entity-search/virginia-entity-search">Virginia Entity Search</Link>
-        <Link to="/entity-search/new-jersey-entity-search">New Jersey Entity Search</Link>
-        <Link to="/entity-search/delaware-entity-search">Daleware Entity Search</Link>
-        <Link to="/entity-search/michigan-entity-search">Michigan Entity Search</Link>
-        <Link to="/entity-search/florida-entity-search">Florida Entity Search</Link>
-        <Link to="/entity-search/georgia-entity-search">Georgia Entity Search</Link>
-        <Link to="/entity-search/texas-entity-search">Texas Entity Search</Link>
+        <Link to="/new-york-entity-search">New York Entity Search</Link>
+        <Link to="/virginia-entity-search">Virginia Entity Search</Link>
+        <Link to="/new-jersey-entity-search">New Jersey Entity Search</Link>
+        <Link to="/delaware-entity-search">Daleware Entity Search</Link>
+        <Link to="/michigan-entity-search">Michigan Entity Search</Link>
+        <Link to="/florida-entity-search">Florida Entity Search</Link>
+        <Link to="/georgia-entity-search">Georgia Entity Search</Link>
+        <Link to="/texas-entity-search">Texas Entity Search</Link>
 
         <h2>Other</h2>
         <Link to="/form-an-llc/">Form An LLC (WIP)</Link>
