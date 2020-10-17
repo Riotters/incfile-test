@@ -963,7 +963,7 @@ export const feesAndRequirments = [{
     {
         type: `button`,
         content: {
-            text: `GET AN EIN FOR YOUR ARIZONA LLC THROUGH INCFILE`,
+            text: `GET AN EIN FOR YOUR WISCONSIN LLC THROUGH INCFILE`,
             url: `/manage-your-company/tax-id-ein/`,
         },
         theme: `primary48`,
@@ -1208,7 +1208,7 @@ export const feesAndRequirments = [{
     {
         type: `button`,
         content: {
-            text: `INCFILE'S ARIZONA ARTICLES OF AMENDMENT SERVICE`,
+            text: `INCFILE'S WISCONSIN ARTICLES OF AMENDMENT SERVICE`,
             url: `/manage-your-company/amendment/`,
         },
         theme: `primary48`,
@@ -1228,7 +1228,7 @@ export const feesAndRequirments = [{
     {
         type: `button`,
         content: {
-            text: `INCFILE'S ARIZONA CERTIFICATE OD GOOD STANDING SERVICE`,
+            text: `INCFILE'S WISCONSIN CERTIFICATE OD GOOD STANDING SERVICE`,
             url: `/manage-your-company/certificate-of-good-standing/`,
         },
         theme: `primary48`,
