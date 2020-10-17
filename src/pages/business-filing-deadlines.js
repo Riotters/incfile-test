@@ -1,16 +1,16 @@
 import React from "react";
-import Layout from "../../components/layout";
-import SEO from "../../components/seo";
-import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
-import Button from "../../atomic/molecules/buttons/button";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import Buttonsbox from "../atomic/atoms/boxes/top-buttons-box";
+import Button from "../atomic/molecules/buttons/button";
 //Sections
-import Top from "../../atomic/partials/top";
-import About from "../../atomic/sections/learning-center-entity/annual-report/about";
-import NextState from "../../atomic/sections/learning-center-entity/annual-report/next-state";
-import Faq from "../../atomic/sections/learning-center-entity/annual-report/faq";
-import Articles from "../../components/partials/sections/articles";
+import Top from "../atomic/partials/top";
+import About from "../atomic/sections/learning-center-entity/annual-report/about";
+import NextState from "../atomic/sections/learning-center-entity/annual-report/next-state";
+import Faq from "../atomic/sections/learning-center-entity/annual-report/faq";
+import Articles from "../components/partials/sections/articles";
 //Texts
-import { top, about, nextStateDue, faq } from "../../static/learning-center-entity/annual-raport";
+import { top, about, nextStateDue, faq } from "../static/learning-center-entity/annual-raport";
 
 const AnnualReport = () => (
   <Layout>

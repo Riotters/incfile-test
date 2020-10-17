@@ -36,8 +36,7 @@ import PlaneIcon from "../../images/icons/plane.inline.svg";
 import RockerIcon from "../../images/icons/rocket.inline.svg";
 import SettingBusiness from "../../atomic/sections/type-of-business/bakery/setting-business";
 import OrderNow from "../../atomic/sections/type-of-business/bakery/order-now";
-import {RingText, RingText2, toolsList} from "../../static/type-of-business/bakery";
-import HireEmployees from "../../atomic/sections/type-of-business/bakery/hire-employees";
+import {RingText2, toolsList} from "../../static/type-of-business/bakery";
 import UsefulTools from "../../atomic/partials/useful-tools";
 import Conclusion from "../../atomic/sections/general/conclusion";
 import Adventages from "../../components/adventages";
@@ -57,6 +56,8 @@ import Regulations from "../../atomic/sections/type-of-business/bakery/regulatio
 import Taxes from "../../atomic/sections/type-of-business/bakery/taxes";
 import InsuranceBusinessSection from "../../atomic/sections/type-of-business/bakery/insurance-business";
 import Links from "../../atomic/sections/type-of-business/bakery/links";
+import Curve from "../../atomic/atoms/icons/curve";
+import Curve2SVG from "../../images/curves/top-left-bottom-right-big.inline.svg";
 
 const Bakery = () => (
     <Layout>
@@ -94,234 +95,6 @@ const Bakery = () => (
                 </TabHeading>
 
                 <CollapseWrapper>
-                    <PanelWrapper>
-                        <Paragraph big>
-                            We want to help you get your bakery business off the ground. Since 2004, we’ve helped over
-                            100,000 people to become entrepreneurs, starting exciting businesses and bringing their
-                            ideas to life. We’ll give you the support, guidance and advice you need to create a business
-                            and make it into a success.
-                        </Paragraph>
-                        <Heading size={3}>Here is our simple guide to starting up a successful bakery
-                            business.</Heading>
-                        <Paragraph big>
-                            From exploring the types of business you can start, through research,
-                            to the legalities of setting up your business and the realities of your day
-                            to day operations, this guide is here to help.
-                        </Paragraph>
-                        <Heading size={3}>Here is our simple guide to starting up a successful bakery
-                            business.</Heading>
-
-                        <Paragraph big>
-                            Laundromats are also referred to as coin-op laundries, coin laundries, coin-operated
-                            laundries
-                            or self-service laundries.
-                        </Paragraph>
-
-                        <Heading size={3} style={{marginTop: "48px", fontSize: "20px"}}>
-                            Laundromat business formation guide
-                        </Heading>
-                        <Paragraph big>
-                            In this guide we’ll explore everything you need to do to set up your laundromat business and
-                            maximize your chances for success. We’ll cover:
-                        </Paragraph>
-
-                        <ListWrapper>
-                            <ListBox>
-                                <CkeckText>
-                                    <Paragraph big>
-                                        Understanding the world of the laundromat
-                                    </Paragraph>
-                                </CkeckText>
-                            </ListBox>
-
-                            <ListBox>
-                                <CkeckText>
-                                    <Paragraph big>
-                                        Paying taxes and for your laundromat business
-                                    </Paragraph>
-                                </CkeckText>
-                            </ListBox>
-
-                            <ListBox>
-                                <CkeckText>
-                                    <Paragraph big>
-                                        Deciding if you’re ready to start a laundromat business
-                                    </Paragraph>
-                                </CkeckText>
-                            </ListBox>
-
-                            <ListBox>
-                                <CkeckText>
-                                    <Paragraph big>
-                                        Hiring employees, managing finances and administering your laundromat business
-                                    </Paragraph>
-                                </CkeckText>
-                            </ListBox>
-
-                            <ListBox>
-                                <CkeckText>
-                                    <Paragraph big>
-                                        Planning out your laundromat business
-                                    </Paragraph>
-                                </CkeckText>
-                            </ListBox>
-
-                            <ListBox>
-                                <CkeckText>
-                                    <Paragraph big>
-                                        Locating other resources for your laundromat business
-                                    </Paragraph>
-                                </CkeckText>
-                            </ListBox>
-
-                            <ListBox>
-                                <CkeckText>
-                                    <Paragraph big>
-                                        Determining the best legal structure for your new organization
-                                    </Paragraph>
-                                </CkeckText>
-                            </ListBox>
-
-                            <ListBox>
-                                <CkeckText>
-                                    <Paragraph big>
-                                        Following various rules and regulations
-                                    </Paragraph>
-                                </CkeckText>
-                            </ListBox>
-
-                            <ListBox>
-                                <CkeckText>
-                                    <Paragraph big>
-                                        And much more
-                                    </Paragraph>
-                                </CkeckText>
-                            </ListBox>
-
-                        </ListWrapper>
-
-                        <Paragraph big>
-                            By the time you’ve read through our complete laundromat business guide, you will have all
-                            the
-                            information you need to set up and manage a thriving laundromat business. Let’s get into it.
-                        </Paragraph>
-                    </PanelWrapper>
-
-                    <PanelWrapper>
-                        <Heading size={3}>
-                            Understanding the World of the Laundromat Business
-                        </Heading>
-
-                        <Paragraph big style={{fontWeight: "bold"}}>
-                            Key Laundromat Business and Background Data and Statistics
-                        </Paragraph>
-
-                        <Paragraph big>
-                            The size and success of laundromat businesses might surprise you:
-                        </Paragraph>
-
-                        <BlueBoxWithAbsoluteText absoluteText="$4B"
-                                                 text="Revenue of laundromats in the U.S. in 2016"/>
-                        <BlueBoxWithAbsoluteText absoluteText="$4.3B"
-                                                 text="Revenue is expected to grow by 2020"/>
-                        <BlueBoxWithAbsoluteText absoluteText="$666M"
-                                                 text="Total wages in the industry in 2016"/>
-                        <BlueBoxWithAbsoluteText absoluteText="50K"
-                                                 text="People are employed by Laundromats"/>
-
-                        <ColorFulCircleWithTextAndList CircleSVG={ColorfulRing2} title={RingText.title}
-                                                       list={RingText.list}
-                                                       withBg={true}/>
-
-                        <ColorFulCircleWithTextAndList CircleSVG={ColorfulRing2} title={RingText2.title}
-                                                       list={RingText2.list}
-                                                       withBg={true} style={{marginTop: "48px"}}/>
-
-                        <div style={{marginBottom: "10px", marginTop: "48px"}}>
-                            <Adventages
-                                headline="There are nearly 30,000 coin laundries in the U.S."
-                                width="100%"
-                            />
-                        </div>
-
-                        <div style={{marginBottom: "10px"}}>
-                            <Adventages
-                                headline="The market value of an established coin laundry can vary between $50,000 and $1 million"
-                                width="100%"
-                            />
-                        </div>
-
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Annual growth in the overall market is expected to be between 1 and 1.5 percent"
-                                width="100%"
-                            />
-                        </div>
-
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="A typical coin-operated laundry will generate yearly revenues of between $15,000 and $300,000 depending on size, location, usage and services"
-                                width="100%"
-                            />
-                        </div>
-
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Laundromats are normally sized between 1,000 to 5,000 square feet with an average of nearly 2,200 square feet"
-                                width="100%"
-                            />
-                        </div>
-
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Laundromats have been used for over 70 years"
-                                width="100%"
-                            />
-                        </div>
-
-                        <Paragraph big>
-                            This all points to the laundromat industry being ripe with new opportunities for focused
-                            entrepreneurs, so now might be the perfect time to dive into starting your laundromat
-                            business.
-                            Incfile is here to help you form your laundromat business and understand the ins and outs of
-                            owning a laundromat company.
-                        </Paragraph>
-
-                        <Paragraph big style={{fontWeight: "bold"}}>
-                            What Your Laundromat Customers Are Looking for
-                        </Paragraph>
-
-                        <Paragraph big>
-                            A laundromat is a simple concept: you provide reliable, efficient, commercial washers and
-                            dryers
-                            in a retail space and request payment for the usage of the machines. Most laundromats are
-                            self-service, simply requiring that the customer purchase a certain amount of time using a
-                            washer or dryer.
-                        </Paragraph>
-                        <Paragraph big>
-                            Your customers want simple, easy-to-use machines that provide fast, effective washing and
-                            drying
-                            of clothes at a reasonable price. Ideally, you will want your laundromat business to be
-                            well-located, so placing your business in densely-populated, renter-occupied areas is a very
-                            good idea.
-                        </Paragraph>
-                        <Paragraph big>
-                            Access to and from your site needs to be straightforward, and you should have adequate
-                            parking
-                            for all your customers. Coin-operated machines are the standard in the industry, but card
-                            operated machines are also available — you can even combine these with membership schemes
-                            and
-                            incentives to keep customers loyal.
-                        </Paragraph>
-                        <Paragraph big>
-                            There are two main types of laundromat businesses: standard independent retail laundromats,
-                            and
-                            laundromats that are located inside apartment buildings to serve the residents. This second
-                            type
-                            of laundry business is known as the multi-housing laundry business.
-                        </Paragraph>
-                    </PanelWrapper>
-
                     <PanelWrapper>
                         <Paragraph big>
                             We want to help you get your bakery business off the ground. Since 2004, we’ve helped over
@@ -428,7 +201,9 @@ const Bakery = () => (
                             </ListBox>
 
                         </ListWrapper>
+                    </PanelWrapper>
 
+                    <PanelWrapper>
                         <Heading size={3} style={{marginTop: "72px"}}>Why You Should Open a New Baking
                             Business</Heading>
 
@@ -460,27 +235,147 @@ const Bakery = () => (
                             marginBottom: "88px"
                         }}>The time to take advantage is now — we’ll help you be a part of that success!</Paragraph>
 
+                        <Adventages
+                            headline="Sales from retail bakeries are expected to increase by over five percent a year"
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Sales from retail bakeries are expected to increase by over five percent a year"
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Two-thirds of bakeries have fewer than ten employees"
+                            width="100%"
+                        />
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Two-thirds of bakeries have fewer than ten employees"
-                                width="100%"
-                            />
-                        </div>
+                        <Adventages
+                            headline="Gluten-free baking is rapidly increasing in popularity, with almost 30 percent of people purchasing these products"
+                            width="100%"
+                        />
+                    </PanelWrapper>
 
-                        <div style={{marginBottom: "30px"}}>
-                            <Adventages
-                                headline="Gluten-free baking is rapidly increasing in popularity, with almost 30 percent of people purchasing these products"
-                                width="100%"
-                            />
-                        </div>
+                    <PanelWrapper>
+                        <Heading size={3}>
+                            Is Owning a Bakery Right for You?
+                        </Heading>
+                        <Paragraph big style={{marginBottom: "48px"}}>
+                            Before deciding to open a bakery, it’s important
+                            to understand the skills and approach you’re likely to need.
+                        </Paragraph>
+
+                        <Heading size={3}>
+                            A Day in the Life of a Bakery Business Owner
+                        </Heading>
+                        <Paragraph big style={{marginBottom: "48px"}}>
+                            Here are some of the typical tasks you’ll be performing for your bakery business on a daily
+                            basis.
+                        </Paragraph>
+
+                        <Adventages
+                            headline="Understanding customer demand for the products you’re intending to make"
+                            width="100%"
+                        />
+
+                        <Adventages
+                            headline="Purchasing ingredients for baking products"
+                            width="100%"
+                        />
+
+                        <Adventages
+                            headline="Preparing ingredients for baking"
+                            width="100%"
+                        />
+
+                        <Adventages
+                            headline="Working out the costs of ingredients, selling prices and profit margins"
+                            width="100%"
+                        />
+
+                        <Adventages
+                            headline="Baking products and putting them out for sale"
+                            width="100%"
+                        />
+
+                        <Adventages
+                            headline="Storing products as needed"
+                            width="100%"
+                        />
+
+                        <Adventages
+                            headline="Marketing your bakery"
+                            width="100%"
+                        />
+
+                        <Adventages
+                            headline="Managing bakery employees"
+                            width="100%"
+                        />
+
+                        <Adventages
+                            headline="Dealing with customers"
+                            width="100%"
+                        />
+
+                        <Heading size={3} style={{marginTop: "48px"}}>
+                            Skills Needed by a Bakery Business Entrepreneur
+                        </Heading>
+                        <Paragraph big style={{marginBottom: "48px"}}>
+                            The following skills will be very useful in your role as a bakery small business owner.
+                        </Paragraph>
+
+                        <Adventages
+                            headline="An excellent grasp of the art and science of baking"
+                            width="100%"
+                        />
+
+                        <Adventages
+                            headline="Good soft skills and talking to customers to find out what they want"
+                            width="100%"
+                        />
+
+                        <Adventages
+                            headline="Math skills so you can work out the ingredients you need and what you should sell products for"
+                            width="100%"
+                        />
+
+                        <Adventages
+                            headline="People management skills for your behind-the-scenes and front-of-house staff"
+                            width="100%"
+                        />
+
+                        <Adventages
+                            headline="Marketing skills to get people into the bakery"
+                            width="100%"
+                        />
+
+                        <Heading size={3} style={{marginTop: "48px"}}>
+                            What Your Bakery Customers are Looking For
+                        </Heading>
+                        <Paragraph big style={{marginBottom: "48px"}}>
+                            Someone coming to your bakery is likely to want:
+                        </Paragraph>
+
+                        <Adventages
+                            headline="Delicious, fresh, high-quality baked products"
+                            width="100%"
+                        />
+
+                        <Adventages
+                            headline="A good variety of breads, pastries, cakes and more"
+                            width="100%"
+                        />
+
+                        <Adventages
+                            headline="A place to sit, relax and chat with friends"
+                            width="100%"
+                        />
+
+                        <Adventages
+                            headline="Reasonable prices for baked goods"
+                            width="100%"
+                        />
+
+                        <Adventages
+                            headline="Drink options like tea and coffee"
+                            width="100%"
+                        />
 
                     </PanelWrapper>
 
@@ -496,31 +391,37 @@ const Bakery = () => (
                 <OvalSvg/>
             </Oval2>
 
-            <CenterBox>
-                <TextCenterLayout headlineWidth={770} headline="Your Bakery Needs a Business Plan"/>
-                <Paragraph big>
-                    These areas are just starting points — there are many different types of bakery businesses. Once
-                    you’ve identified the type of bakery you’d like to run and what you want to sell, you need to
-                    validate your business idea.
-                </Paragraph>
-                <Paragraph big>
-                    Start by checking you have the right skillset. Bakers work long hours and need sufficient technical
-                    skill to make great products. You’ll need to deal with employees and customers too, and there’s a
-                    lot of planning that goes into running a successful bakery.
-                </Paragraph>
-                <Paragraph big>
-                    The thing to learn here is that it’s okay to say “no” to your first, second or third bakery business
-                    ideas. Very few entrepreneurs get it right first time. In fact, getting it wrong is often a badge of
-                    honor! Still, you don’t want to waste too much time, energy or money on the wrong initiatives, so
-                    ask and answer these questions honestly to find the right way forward.
-                </Paragraph>
-                <Paragraph big>
-                    Before committing too much time, energy and money into your new bakery business, it’s important to
-                    test the marketplace.
-                </Paragraph>
-            </CenterBox>
-
             <Container>
+                <CenterBox>
+                    <TextCenterLayout headlineWidth={770} headline="Your Bakery Needs a Business Plan"/>
+                    <Paragraph big>
+                        These areas are just starting points — there are many different types of bakery businesses. Once
+                        you’ve identified the type of bakery you’d like to run and what you want to sell, you need to
+                        validate your business idea.
+                    </Paragraph>
+                    <Paragraph big>
+                        Start by checking you have the right skillset. Bakers work long hours and need sufficient
+                        technical
+                        skill to make great products. You’ll need to deal with employees and customers too, and there’s
+                        a
+                        lot of planning that goes into running a successful bakery.
+                    </Paragraph>
+                    <Paragraph big>
+                        The thing to learn here is that it’s okay to say “no” to your first, second or third bakery
+                        business
+                        ideas. Very few entrepreneurs get it right first time. In fact, getting it wrong is often a
+                        badge of
+                        honor! Still, you don’t want to waste too much time, energy or money on the wrong initiatives,
+                        so
+                        ask and answer these questions honestly to find the right way forward.
+                    </Paragraph>
+                    <Paragraph big>
+                        Before committing too much time, energy and money into your new bakery business, it’s important
+                        to
+                        test the marketplace.
+                    </Paragraph>
+                </CenterBox>
+
                 <GridSectionList>
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={IdentifyIcon}
                                         imageBackgroundColor={color.babyblue2}
@@ -537,6 +438,9 @@ const Bakery = () => (
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={LookIcon}
                                         imageBackgroundColor={color.green2}
                                         imageShadowColor={color.green2}>
+                        <Curve top="-110" right="-30" color={color.blue1}>
+                            <Curve2SVG/>
+                        </Curve>
                         <Heading size={4}>
                             Look at who your competitors are in
                             the space
@@ -679,7 +583,8 @@ const Bakery = () => (
                         Choose the Right Business Structure and Register Your Bakery Business
                     </Heading>
                     <Paragraph big>
-                        There are five main business structures you can have in the US, and it’s important to choose the right one. We’ve shared your options below.
+                        There are five main business structures you can have in the US, and it’s important to choose the
+                        right one. We’ve shared your options below.
                         They are:
                     </Paragraph>
 
@@ -708,7 +613,9 @@ const Bakery = () => (
                         </Paragraph>
 
                         <Paragraph big>
-                            If you don’t choose to form a legal business entity for your bakery business, you will be a sole proprietor by default. This won’t give you the legal protections you need, so we do not recommend this.
+                            If you don’t choose to form a legal business entity for your bakery business, you will be a
+                            sole proprietor by default. This won’t give you the legal protections you need, so we do not
+                            recommend this.
                         </Paragraph>
                     </TextBlockWithImage>
 
@@ -737,7 +644,9 @@ const Bakery = () => (
                         </Paragraph>
 
                         <Paragraph big>
-                            This is a type of business that is formed when two or more people work together without creating a more formal business entity. Like a sole proprietorship, it may not give you all the protections your bakery business may need.’
+                            This is a type of business that is formed when two or more people work together without
+                            creating a more formal business entity. Like a sole proprietorship, it may not give you all
+                            the protections your bakery business may need.’
                         </Paragraph>
                     </TextBlockWithImage>
 
@@ -766,7 +675,9 @@ const Bakery = () => (
                         </Paragraph>
 
                         <Paragraph big>
-                            The most common type of business entity. An LLC is fast, simple and inexpensive to setup and maintain. It protects your personal finances and assets and is a great way to start your bakery business.
+                            The most common type of business entity. An LLC is fast, simple and inexpensive to setup and
+                            maintain. It protects your personal finances and assets and is a great way to start your
+                            bakery business.
                         </Paragraph>
                     </TextBlockWithImage>
 
@@ -856,13 +767,13 @@ const Bakery = () => (
 
         <OrderNow/>
 
-        <Regulations />
+        <Regulations/>
 
-        <Taxes />
+        <Taxes/>
 
-        <InsuranceBusinessSection />
+        <InsuranceBusinessSection/>
 
-        <Links />
+        <Links/>
 
         <ToolsWrapper>
             <Oval7>
@@ -876,7 +787,9 @@ const Bakery = () => (
         <Conclusion to="/" buttonTitle="Start your Bakery Business with us, today">
             <Heading size={3} style={{fontSize: "40px"}}>Conclusion</Heading>
             <Paragraph big>
-                A bakery is a great way to provide amazing food to friendly people, and is an industry that’s still seeing growth in the US. If you can find a great niche, understand your competitors and put together a solid business plan, you will have every chance for success
+                A bakery is a great way to provide amazing food to friendly people, and is an industry that’s still
+                seeing growth in the US. If you can find a great niche, understand your competitors and put together a
+                solid business plan, you will have every chance for success
             </Paragraph>
         </Conclusion>
     </Layout>

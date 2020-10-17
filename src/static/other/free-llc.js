@@ -47,14 +47,15 @@ export const start = {
   ],
   text4: [
     {
-    text: `With your Incfile LLC, you also benefit from a free`,
+      text: `With your Incfile LLC, you also benefit from a free`,
     },
     {
-      text: 'Registered Agent',
-      url: '/'
+      text: "Registered Agent",
+      url: "/",
     },
     {
-      text: 'service for a full year; one easy, clear dashboard to access all documents and filing information; access to 30+ business contracts; lifetime company alerts; business formation kit; preparation and filing of taxes, including IRS Form 2553; banking resolution; statement and resignation of the incorporator; online order status tracking; express shipping (tracking number included); A+ rating by BBB; and more.',
+      text:
+        "service for a full year; one easy, clear dashboard to access all documents and filing information; access to 30+ business contracts; lifetime company alerts; business formation kit; preparation and filing of taxes, including IRS Form 2553; banking resolution; statement and resignation of the incorporator; online order status tracking; express shipping (tracking number included); A+ rating by BBB; and more.",
     },
   ],
   text5: [
@@ -62,11 +63,11 @@ export const start = {
       text: `Find out`,
     },
     {
-      text: 'more reasons',
-      url: '/',
+      text: "more reasons",
+      url: "/",
     },
     {
-      text: 'why people choose Incfile.',
+      text: "why people choose Incfile.",
     },
   ],
 };
@@ -75,11 +76,11 @@ export const industry = {
   header: `Incfile is an industry stalwart`,
   text: [
     {
-      text: `We're entrepreneurs, just like you. Since starting, we have assisted more than 250,000 entrepreneurs and small business owners form and grow their businesses. Our team is down-to-earth, and we know our stuff. Our mission is to provide you with a superior and modern experience at an unparalleled value. Read about our customer service team and`,
+      text: `We're entrepreneurs, just like you. Since starting, we have assisted more than 500,000 entrepreneurs and small business owners form and grow their businesses. Our team is down-to-earth, and we know our stuff. Our mission is to provide you with a superior and modern experience at an unparalleled value. Read about our customer service team and`,
     },
     {
-      text: 'what our customers have to say.',
-      url: '/',
+      text: "what our customers have to say.",
+      url: "/",
     },
   ],
   text2: `Think of us as your business companion. We make registering a company as easy as possible, so you can focus on the important things.`,

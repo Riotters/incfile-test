@@ -37,7 +37,7 @@ const aaa = {
     image1: `baloons`,
     subtitle1: `Why the Right Business Name Matters`,
     paragraph1: `Now that you have a short list of names that are unique and not used by another business in your state, you can decide on your favorite. For each name on your list, go through the questions again and make sure the name fits with your intent for your business. Talk to the people you know, speak with potential customers and get feedback on the name. Then, you can make the final decision and get your business started.
-                    Don’t forget that Incfile makes it easy to start your business. If you use our Business Name Search tool, you can choose to form your business with us once you’ve settled on a name. Incfile provides unmatched customer service and has formed well over 250,000 companies. Our experience provides us with vast knowledge and experience in filing business entities, and we are familiar with the nuances of each of the 50 states.`,
+                    Don’t forget that Incfile makes it easy to start your business. If you use our Business Name Search tool, you can choose to form your business with us once you’ve settled on a name. Incfile provides unmatched customer service and has formed well over 500,000 companies. Our experience provides us with vast knowledge and experience in filing business entities, and we are familiar with the nuances of each of the 50 states.`,
   },
 };
 

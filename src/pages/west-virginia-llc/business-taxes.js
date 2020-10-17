@@ -13,18 +13,18 @@ import { businessTaxes } from "../../static/states-llc/west-virginia/home";
 import { tabPages } from "../../static/states-llc/west-virginia/general";
 
 const BusinessTaxesPage = () => (
-  <Layout>
-    <SEO
-    title="Texas Business Search | How to Name Your TX LLC"
-    description="Learn what you need to know about naming an LLC in Texas with Incfile's helpful resources. Pick your perfect business name today!"
-    />
-    <LLCLayout>
-        <LeftTabPages content={tabPages} />
-        <MainPageContent>
-            <ContentMap content={businessTaxes} />
-        </MainPageContent>
-    </LLCLayout>
-  </Layout>
+    <Layout>
+        <SEO
+            title="West Virginia Business Search | How to Name Your WV LLC"
+            description="Learn what you need to know about naming an LLC in West Virginia with Incfile's helpful resources. Pick your perfect business name today!"
+        />
+        <LLCLayout>
+            <LeftTabPages content={tabPages} />
+            <MainPageContent>
+                <ContentMap content={businessTaxes} />
+            </MainPageContent>
+        </LLCLayout>
+    </Layout>
 );
 
 export default BusinessTaxesPage;
