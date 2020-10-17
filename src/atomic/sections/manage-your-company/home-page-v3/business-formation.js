@@ -17,45 +17,49 @@ const BusinessFormationSection = styled.section`
   position: relative;
   padding: 42px 0 0;
   overflow: hidden;
-  background: linear-gradient(180deg, rgba(255,255,255,0.00) 4%, #FEF6ED 99%);
-  
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 4%, #fef6ed 99%);
+
   h2 {
     text-align: left;
   }
-  
+
   .oval {
     overflow: hidden;
   }
 `;
 
 const Anchor = styled.div`
-    position: relative;
-    ${props => props.maxWidth ? ("max-width: " + props.maxWidth + "px") : ""};
+  position: relative;
+  ${(props) => (props.maxWidth ? "max-width: " + props.maxWidth + "px" : "")};
 `;
 
 const BusinessFormation = ({ className, content }) => (
-    <BusinessFormationSection className={className}>
-        <Oval className="oval" height="570" width="570" top="-5" left="0">
-            <BottomLeftOvalSVG />
-        </Oval>
-        <Oval className="oval" height="420" width="420" top="26" right="0">
-            <BottomRightOvalSVG />
-        </Oval>
-        <ImageContent image="mrs-review-stars-5481" contentCenter={true}>
-            <Anchor maxWidth={520}>
-                <Heading size={2} maxWidth={520} bottomMargin="24">{content.header}</Heading>
-                <Curve top="-115" right="0" color={color.orange2}>
-                    <CurveSVG />
-                </Curve>
-            </Anchor>
+  <BusinessFormationSection className={className}>
+    <Oval className="oval" height="570" width="570" top="-5" left="0">
+      <BottomLeftOvalSVG />
+    </Oval>
+    <Oval className="oval" height="420" width="420" top="26" right="0">
+      <BottomRightOvalSVG />
+    </Oval>
+    <ImageContent image="mrs-review-stars-5481" contentCenter={true}>
+      <Anchor maxWidth={520}>
+        <Heading size={2} maxWidth={520} bottomMargin="24">
+          {content.header}
+        </Heading>
+        <Curve top="-115" right="0" color={color.orange2}>
+          <CurveSVG />
+        </Curve>
+      </Anchor>
 
-            <Paragraph big bottomMargin="32">{content.text}</Paragraph>
-            <Buttonsbox>
-                <Button content={content.button[0]} theme="primary56" arrow />
-            </Buttonsbox>
-        </ImageContent>
-        <ChooseIncfile content={content.choose}/>
-    </BusinessFormationSection>
+      <Paragraph big bottomMargin="32">
+        {content.text}
+      </Paragraph>
+      <Buttonsbox>
+        <Button content={content.button[0]} theme="primary56" arrow />
+      </Buttonsbox>
+    </ImageContent>
+    <ChooseIncfile content={content.choose} />
+  </BusinessFormationSection>
 );
 
 export default BusinessFormation;

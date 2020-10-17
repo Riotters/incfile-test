@@ -6,7 +6,7 @@ export const seo = {
 };
 
 export const top = {
-  header: `Incfile.com Reviews`,
+  header: `Sitemap`,
   box1: {
     text1: `4.8`,
     text2: `Out of 5.0`,
