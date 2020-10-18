@@ -21,7 +21,9 @@ const IncludedInAll = ({ className, content }) => (
         {content.header}
       </Heading>
       <BenefitsSection content={content.benefits} />
-      <Button content={content.button} margin="56px 0 0 0" arrow theme="primary56" />
+        {content.button &&
+            <Button content={content.button} margin="56px 0 0 0" arrow theme="primary56" />
+        }
     </ContentCenter>
   </Wrapper>
 );
