@@ -12,7 +12,7 @@ import About from "../atomic/sections/learning-center-entity/business-checklist/
 
 import Articles from "../atomic/sections/articles";
 //Texts
-import { top, about, checks, form } from "../static/learning-center-entity/business-checklist";
+import {top, about, checks, form, thanks_form} from "../static/learning-center-entity/business-checklist";
 import ChecklistSection from "../atomic/sections/learning-center-entity/business-checklist/checklist";
 import { Paragraph } from "../atomic/atoms/typography/paragraph";
 import { Heading } from "../atomic/atoms/typography/heading";
@@ -21,6 +21,7 @@ import styled from "styled-components";
 import { BusinessChecklistForm } from "../atomic/organisms/forms/business-checklist-form";
 import Oval from "../atomic/atoms/icons/oval";
 import OvalSVG from "../images/ovals/business-checklist-related-articles-top-right.inline.svg";
+import {ThankYouContent} from "../atomic/partials/thank-you-modal-content";
 
 class BusinessChecklist extends React.Component {
   constructor(props) {
@@ -31,10 +32,20 @@ class BusinessChecklist extends React.Component {
     };
 
     this.popup = this.popup.bind(this);
+    this.postdownload = this.postdownload.bind(this);
   }
 
+    postdownload() {
+        this.setState({
+            modalVisible: this.state.modalVisible,
+            formSubmitted: true
+        });
+    }
+
   popup(e) {
-    if (!e.target.className.includes("modal-overlay") && this.state.modalVisible === true) return;
+      if (!e.target.className.includes("modal-overlay") && !e.target.className.includes("modal-close") &&
+          this.state.modalVisible === true)
+          return;
 
     this.setState({
       modalVisible: !this.state.modalVisible,
@@ -42,6 +53,9 @@ class BusinessChecklist extends React.Component {
   }
 
   render() {
+      let modalClases = [ "lightbox-content" ];
+      if(this.state.formSubmitted) modalClases.push("form-submitted");
+
     return (
       <Layout>
         <SEO title="How to Start a Business | Start a Business Checklist" description="It’s time to bring your ideas and inspiration to life. Our straightforward guide helps you get your business off the ground, fast. Read more." />
@@ -67,8 +81,13 @@ class BusinessChecklist extends React.Component {
           <Articles />
         </Wrapper>
         <LightBoxModal visible={this.state.modalVisible} onClick={this.popup} className="modal-overlay">
-          <LightBoxContent style={{ pointerEvents: "all" }}>
-            <BusinessChecklistForm content={form} />
+          <LightBoxContent style={{ pointerEvents: "all" }} class={modalClases.join(" ")}>
+              {!this.state.formSubmitted && (
+                  <BusinessChecklistForm content={form} postDownloadAction={this.postdownload.bind(this)} />
+              )}
+              {this.state.formSubmitted && (
+                  <ThankYouContent content={thanks_form} modalExit={this.popup.bind(this) } />
+              )}
           </LightBoxContent>
         </LightBoxModal>
       </Layout>
@@ -97,6 +116,8 @@ const Wrapper = styled.div`
 `;
 
 const LightBoxContent = styled.div`
+ transition: height 0.5s, max-width .5s;
+
   background-color: #fff;
   width: 100%;
   max-width: 960px;
@@ -108,6 +129,11 @@ const LightBoxContent = styled.div`
     height: 95vh;
     padding-top: 0;
     overflow-y: visible;
+  }
+  
+  &.form-submitted {
+    height: 40vh;
+    max-width: 500px;
   }
 `;
 export default BusinessChecklist;
