@@ -39,30 +39,30 @@ const AboutSection = ({ className, content }) => (
       <Heading size={4} bottomMargin="24">
         {content.header3}
       </Heading>
-      <Paragraph big bottomMargin="16">
+      <Paragraph big bottomMargin="24">
         {content.text3}
       </Paragraph>
-      <IconListColorBox content={content.list} color={color.orange3} curve curveColor={color.green2} rounded bottomMargin="16" />
-      <Paragraph big bottomMargin="16">
+      <IconListColorBox content={content.list} color={color.orange3} curve curveColor={color.green2} rounded bottomMargin="24" />
+      <Paragraph big bottomMargin="24">
         {content.text4}
       </Paragraph>
-      <IconListColorBox content={content.list2} color={color.blue3} rounded bottomMargin="16" />
+      <IconListColorBox content={content.list2} color={color.blue3} rounded bottomMargin="24" />
       <Paragraph big bottomMargin="16">
         {content.text5}
       </Paragraph>
-      <Paragraph big bottomMargin="16">
+      <Paragraph big bottomMargin="24">
         {content.text6}
       </Paragraph>
-      <IconListColorBox content={content.list3} color={color.yellow3} rounded bottomMargin="16" />
-      <IconListColorBox content={content.list4} color={color.purple3} curve curveColor={color.red2} rounded bottomMargin="16" />
-      <IconListColorBox content={content.list5} color={color.green3} rounded bottomMargin="16" />
+      <IconListColorBox content={content.list3} color={color.yellow3} rounded bottomMargin="24" />
+      <IconListColorBox content={content.list4} color={color.purple3} curve curveColor={color.red2} rounded bottomMargin="24" />
+      <IconListColorBox content={content.list5} color={color.green3} rounded bottomMargin="24" />
       <Paragraph big bottomMargin="48">
         {content.text7}
       </Paragraph>
       <Heading size={4} bottomMargin="24">
         {content.header4}
       </Heading>
-      <Paragraph big bottomMargin="16">
+      <Paragraph big bottomMargin="24">
         {content.text8}
       </Paragraph>
       <IconListColorBox content={content.list6} color={color.babyblue3} rounded bottomMargin="24" />

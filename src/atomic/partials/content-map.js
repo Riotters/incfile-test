@@ -10,6 +10,12 @@ import { Paragraph } from "../atoms/typography/paragraph";
 import IconListColorBox from "../molecules/text-blocks/icon-h4-list-color";
 import Accordion from "../organisms/accordion/accordion";
 import NumericList from "../organisms/lists/numeric-boxed-list";
+import Image from "../atoms/image/image";
+import {IconTextBox} from "../molecules/text-blocks/icon-text-box";
+import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
+import {TextSpacedBox} from "../molecules/text-blocks/text-spaced-box";
+import AccordionWithCheckmark from "../organisms/acccordion-with-checkboxes";
+import BusinessNameSearchForm from "../organisms/forms/business-name-search-form";
 
 const Wrapper = styled.div`
   display: flex;
@@ -41,11 +47,43 @@ const Content = ({ content }) => {
           {item.type === "arrow-link" && <ArrowLink content={item.content} bottomMargin={item.marginBottom} />}
 
           {item.type === "list-dot" && <IconListColorBox color={item.color} content={item.content} curve={item.curve} curveColor={item.curveColor} rounded bottomMargin={item.marginBottom} />}
-
-          {item.type === "button" && <Button content={item.content} theme={item.theme} arrow marginSM="24px auto 24px 0" marginMD="42px auto 42px 0" />}
-
+          {item.type === "boxes" && (
+              <div style={{"margin-bottom": item.marginBottom + "px"}}>
+                {
+                  item.content.map((box) => (
+                      <IconTextBox content={box} />
+                  ))
+                }
+              </div>
+          )}
+          {item.type === "taxes" && (
+              <div style={{"margin-bottom": item.marginBottom + "px"}}>
+                {
+                  item.content.map((box) => (
+                      <TextSpacedBox content={box} />
+                  ))
+                }
+              </div>
+          )}
+          {item.type === "button" && <Button content={item.content} theme={item.theme} arrow={item.arrow ?? true} marginSM="24px auto 24px 0" marginMD="42px auto 56px 0" />}
+          {item.type === "buttons" && (
+              <Buttonsbox>
+                {item.content.map((button) => (
+                      <Button content={button.content} theme={button.theme} arrow={button.arrow ?? true} margin="0 16px 0 0" />
+                ))}
+              </Buttonsbox>
+          )}
+          {item.type === "tabbed-checklist" && (
+              <AccordionWithCheckmark content={item.content} tab curve={item.curve} listColor={item.listColor} curveRight={item.curveRight} bottomMargin={item.marginBottom} />
+          )}
+          {item.type === "business-name-search" && (
+              <div style={{"margin-bottom": item.marginBottom + "px"}}>
+                <BusinessNameSearchForm noMaxWidth content={item.content} />
+              </div>
+          )}
           {item.type === "accordion" && <Accordion tab content={item.content} bottomMargin={item.marginBottom} />}
-          {item.type === "numeric-list" && <NumericList content={item.content} bottomMargin={item.marginBottom} />}
+          {item.type === "numeric-list" && <NumericList noBox={item.noBox ?? false} content={item.content} bottomMargin={item.marginBottom} />}
+          {item.type === "image" && <Image filename={item.content} bottomMargin={item.marginBottom} />}
         </>
       ))}
     </Wrapper>

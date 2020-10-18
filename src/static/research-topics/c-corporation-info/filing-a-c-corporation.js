@@ -10,7 +10,6 @@ export const about = {
     },
   ],
   header: `The benefits of filing a C-corporation`,
-  header2: `The benefits of filing a C-corporation`,
   text: `Every corporation is considered a C corp when it is formed with the Secretary of State. The distinction is made on a federal level and processed by the IRS.`,
   text2: `Corporation that want to be taxed a small business corporation file a form with the IRS called Form 2553 and will file their taxes using 1120s tax return. Corporations that do not file this form are taxed as traditional corporations and file the 1120 tax return.`,
   text3: `A C-corporation file a corporate tax return and will pay taxes on the profits. The post tax income may then be distributed to the corporation shareholders in the the form of dividends. The shareholders are then taxed on dividends, which effectively forces the ownership of a corporation to pay taxes on the same earnings twice- once at the corporate level, and then as individual level. This is what is known as “double taxation.”`,

@@ -1,10 +1,12 @@
-import React from "react";
+//import React from "react";
+import React, {useState} from "react";
 import styled from "styled-components";
 import { color } from "../../atoms/styles/colors";
 import { Heading } from "../../atoms/typography/heading";
 import Range from "../../molecules/form/range-slider";
 import WhiteBox from "../../atoms/boxes/white-box";
 import { Paragraph } from "../../atoms/typography/paragraph";
+//import AmountSlider from "../../../components/amount-slider/amount-slider";
 
 const Box = styled(WhiteBox)`
   display: flex;
@@ -38,6 +40,16 @@ const makeString = (val) => {
     .toLocaleString();
 };
 
+let formatter = new Intl.NumberFormat('en-US', {
+  style: 'currency',
+  currency: 'USD',
+  minimumFractionDigits: 0,
+  maximumFractionDigits: 0
+});
+
+let value = 6962;
+let amount = formatter.format(value);
+
 class TotalSavings extends React.Component {
   constructor(props) {
     super(props);
@@ -46,6 +58,7 @@ class TotalSavings extends React.Component {
     };
     this.updateRange = this.updateRange.bind(this);
   }
+
 
   updateRange(val) {
     this.setState({
@@ -57,7 +70,8 @@ class TotalSavings extends React.Component {
     const { rangeVal } = this.state;
     return (
       <>
-        <Range range={rangeVal} updateRange={this.updateRange} />
+        <Range />
+        {/* <AmountSlider initValue={72000} maxValue={100000} step={500} description="Estimated yearly income" onChange={() => {}}/> */}
         <Box>
           <div className="savings-text">
             <Heading size="4" bottomMargin="0">
@@ -66,10 +80,11 @@ class TotalSavings extends React.Component {
           </div>
           <div className="savings-amount">
             <span>
-              $
+              {/* $
               {parseInt(rangeVal * 0.967 * 100)
                 .toString()
-                .toLocaleString()}
+                .toLocaleString()} */}
+                {amount}
             </span>
           </div>
         </Box>

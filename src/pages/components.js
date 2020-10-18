@@ -584,7 +584,7 @@ const ComponentsPage = () => (
         <Container>
             <Wrapper>
                 <h3>Easily Compare State Filing Times</h3>
-                <CompareTable headers={CompareStateFilingTimes.headers} entries={CompareStateFilingTimes.entries}/>
+                {/*<CompareTable headers={CompareStateFilingTimes.headers} entries={CompareStateFilingTimes.entries}/>*/}
             </Wrapper>
         </Container>
         <Container>

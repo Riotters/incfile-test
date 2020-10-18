@@ -103,6 +103,13 @@ const PanelWrapper = styled.div`
   li {
     font-size: 14px;
     line-height: 19px;
+
+    a {
+      font-size: inherit;
+      line-height: inherit;
+      color: ${color.orange1};
+      text-decoration: none;
+    }
   }
 
   ul {
@@ -204,88 +211,91 @@ const Accordion = ({ content, curve, curveRight, curveRightBottom, curveLeft, cu
   return (
     // <VisibilitySensor partialVisibility once>
     //   {({ isVisible }) => (
-        <Wrapper 
-        //className={isVisible ? "slideUp enter" : "slideUp"} 
-        tab={tab} noAutoWidth={noAutoWidth} bottomMargin={bottomMargin}>
-          {curve && (
-            <Curve curveRight={curveRight} curveRightBottom={curveRightBottom} curveLeft={curveLeft} curveLeftBottom={curveLeftBottom} curveColor={curveColor}>
-              <CurveSVG />
-            </Curve>
-          )}
-          <Tabs>
-            <TabsWrapper maxWidth={maxWidth}>
-              {content.items.map((item) => (
-                <TabBox>
-                  <Tab>
-                    <Icon>
-                      <ArrowSVG />
-                    </Icon>
-                    <Content>
-                      <span>{item.question}</span>
-                    </Content>
-                  </Tab>
-                  <Panel>
-                    <PanelWrapper>
-                      {typeof item.answer === "string" ? (
-                        <Paragraph bottomMargin="0" mixed>
-                          {parse(item.answer)}
-                        </Paragraph>
-                      ) : null}
-                      {typeof item.answer === "object" ? (
-                        <Paragraph bottomMargin="0" mixed>
-                          {item.answer.map((el) => (el.url ? <Link to={el.url}>{` ${parse(el.text)} `}</Link> : el.text))}
-                        </Paragraph>
-                      ) : null}
+    <Wrapper
+      //className={isVisible ? "slideUp enter" : "slideUp"}
+      tab={tab}
+      noAutoWidth={noAutoWidth}
+      bottomMargin={bottomMargin}
+    >
+      {curve && (
+        <Curve curveRight={curveRight} curveRightBottom={curveRightBottom} curveLeft={curveLeft} curveLeftBottom={curveLeftBottom} curveColor={curveColor}>
+          <CurveSVG />
+        </Curve>
+      )}
+      <Tabs>
+        <TabsWrapper maxWidth={maxWidth}>
+          {content.items.map((item) => (
+            <TabBox>
+              <Tab>
+                <Icon>
+                  <ArrowSVG />
+                </Icon>
+                <Content>
+                  <span>{item.question}</span>
+                </Content>
+              </Tab>
+              <Panel>
+                <PanelWrapper>
+                  {typeof item.answer === "string" ? (
+                    <Paragraph bottomMargin="0" mixed>
+                      {parse(item.answer)}
+                    </Paragraph>
+                  ) : null}
+                  {typeof item.answer === "object" ? (
+                    <Paragraph bottomMargin="0" mixed>
+                      {item.answer.map((el) => (el.url ? <Link to={el.url}>{` ${parse(el.text)} `}</Link> : el.text))}
+                    </Paragraph>
+                  ) : null}
 
-                      {item.list && (
-                        <ul>
-                          {item.list.map((listitem) => (
-                            <li>{parse(listitem)}</li>
+                  {item.list && (
+                    <ul>
+                      {item.list.map((listitem) => (
+                        <li>{parse(listitem)}</li>
+                      ))}
+                    </ul>
+                  )}
+
+                  {typeof item.text === "string" ? (
+                    <Paragraph topMargin="32" bottomMargin="0" mixed>
+                      {parse(item.text)}
+                    </Paragraph>
+                  ) : null}
+                  {typeof item.text === "object" ? (
+                    <Paragraph topMargin="32" bottomMargin="0" mixed>
+                      {item.text.map((el) => (el.url ? <Link to={el.url}>{` ${parse(el.text)} `}</Link> : el.text))}
+                    </Paragraph>
+                  ) : null}
+
+                  {item.answer2 &&
+                    item.answer2.map((e, i) => (
+                      <div>
+                        {e.type === "paragraph" && <Paragraph mixed={true}>{parse(e.content)}</Paragraph>}
+
+                        {e.type === "arrow-links" &&
+                          e.content.map((link) => (
+                            <ArrowLink url={link.url} style={link.style}>
+                              {link.text}
+                            </ArrowLink>
                           ))}
-                        </ul>
-                      )}
 
-                      {typeof item.text === "string" ? (
-                        <Paragraph topMargin="32" bottomMargin="0" mixed>
-                          {parse(item.text)}
-                        </Paragraph>
-                      ) : null}
-                      {typeof item.text === "object" ? (
-                        <Paragraph topMargin="32" bottomMargin="0" mixed>
-                          {item.text.map((el) => (el.url ? <Link to={el.url}>{` ${parse(el.text)} `}</Link> : el.text))}
-                        </Paragraph>
-                      ) : null}
+                        {e.type === "list-dot-without-bg" && <ListWithDot color={e.color} content={e.content} />}
 
-                      {item.answer2 &&
-                        item.answer2.map((e, i) => (
-                          <div>
-                            {e.type === "paragraph" && <Paragraph mixed={true}>{parse(e.content)}</Paragraph>}
+                        {e.type === "button" && <Button content={e.content} theme={e.theme} arrow width="350px" margin="16px 0 0 0" marginMD="42px 0 42px 0" />}
+                      </div>
+                    ))}
 
-                            {e.type === "arrow-links" &&
-                              e.content.map((link) => (
-                                <ArrowLink url={link.url} style={link.style}>
-                                  {link.text}
-                                </ArrowLink>
-                              ))}
-
-                            {e.type === "list-dot-without-bg" && <ListWithDot color={e.color} content={e.content} />}
-
-                            {e.type === "button" && <Button content={e.content} theme={e.theme} arrow width="350px" margin="16px 0 0 0" marginMD="42px 0 42px 0" />}
-                          </div>
-                        ))}
-
-                      {item.arrowLink && (
-                        <ArrowLink url={item.arrowLink.url} style={item.arrowLink.styles}>
-                          {item.arrowLink.text}
-                        </ArrowLink>
-                      )}
-                    </PanelWrapper>
-                  </Panel>
-                </TabBox>
-              ))}
-            </TabsWrapper>
-          </Tabs>
-        </Wrapper>
+                  {item.arrowLink && (
+                    <ArrowLink url={item.arrowLink.url} style={item.arrowLink.styles}>
+                      {item.arrowLink.text}
+                    </ArrowLink>
+                  )}
+                </PanelWrapper>
+              </Panel>
+            </TabBox>
+          ))}
+        </TabsWrapper>
+      </Tabs>
+    </Wrapper>
     //   )}
     // </VisibilitySensor>
   );

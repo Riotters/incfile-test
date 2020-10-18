@@ -26,7 +26,7 @@ const HelpCenter = () => (
       <p>{top.text}</p>
       <Searchbar />
     </Top>
-    <About content={about} />
+    {/* <About content={about} /> */}
     <Related content={related} />
     <Categories content={categories} />
     <Service content={service} />

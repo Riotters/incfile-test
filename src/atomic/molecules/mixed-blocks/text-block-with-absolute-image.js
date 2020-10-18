@@ -16,7 +16,7 @@ const TextBlockWithImage = ({ children, SvgImage, textBackgroundColor, imageBack
 );
 
 const TextBlock = styled.div`
-    background-color: ${(props) => props.textBackgroundColor};
+    background-color: ${(props) => (props.textBackgroundColor ? props.textBackgroundColor : "")};
     width: 100%;
     position: relative;
     
@@ -46,7 +46,7 @@ const AbsoluteCircle = styled.div`
   top: -40px;
   left: ${(props) => props.paddingLeft};
   border-radius: 50%;
-  box-shadow: ${(props) => props.imageShadowColor};
+  box-shadow: ${(props) => (props.imageShadowColor ? props.imageShadowColor : "")};
 `;
 
 export default TextBlockWithImage;

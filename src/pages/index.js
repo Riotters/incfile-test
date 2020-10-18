@@ -120,7 +120,7 @@ const IndexPage = () => (
         <Link to="/business-accounting/">Filling Business Taxes</Link>
         <Link to="/fictitious-business-or-trade-name/">Fictitious Business</Link>
         <Link to="/home-page-v3/">Home Page v3</Link>
-        <Link to="/manage-your-company/compare-state-filling-time">Compare State Filling Time</Link>
+        <Link to="/compare-state-filling-times/">Compare State Filling Time</Link>
 
         <h2>Review Entity Types</h2>
         <Link to="/start-your-company/">Start Your Company</Link>
@@ -130,22 +130,22 @@ const IndexPage = () => (
         <Link to="/limited-liability-company/">LLC (no details)</Link>
 
         <h2>Learning Center Entity</h2>
-        <Link to="/learning-center-entity/help-center">Help Center</Link>
+        <Link to="/help-center">Help Center</Link>
         <Link to="/learning-center-entity/help-center-article">Help Center Article</Link>
         <Link to="/business-entity-comparison/">Comparison Chart</Link>
-        <Link to="/business-checklist">Business Checklist (WIP)</Link>
-        <Link to="/learning-center-entity/annual-report">Annual Report Due Date</Link>
+        <Link to="/starting-a-business-checklist/">Business Checklist (WIP)</Link>
+        <Link to="/business-filing-deadlines/">Annual Report Due Date</Link>
         <Link to="/business-license-tool/">Business License Tools (no API)</Link>
         <Link to="/start-a-business/">Business Startup Guides (no details)</Link>
         <Link to="/guides-start-business/">Guide To Start a Business</Link>
         <Link to="/registered-agents/">Registered Agents</Link>
         <Link to="/s-corporation-tax-calculator/">S Corp Tax Calculator (WIP)</Link>
         <Link to="/sales-tax-calculator/">Sales Tax Calculator</Link>
-        <Link to="/learning-center-entity/state-filing-times">State Filing Times (no details)</Link>
-        <Link to="/learning-center-entity/ongoing-filing-requirements">Ongoing Filing Requirements (no details)</Link>
-        <Link to="/learning-center-entity/business-resources">Business Resources (WIP)</Link>
-        <Link to="/learning-center-entity/business-name-search">Business Name Search (no details)</Link>
-        <Link to="/learning-center-entity/business-entity-quiz">Business Entity Quiz</Link>
+        <Link to="/state-filing-times/">State Filing Times (no details)</Link>
+        <Link to="/ongoing-filing-requirements/">Ongoing Filing Requirements (no details)</Link>
+        <Link to="/business-resources/">Business Resources (WIP)</Link>
+        <Link to="/business-name-search/">Business Name Search (no details)</Link>
+        <Link to="/business-entity-quiz">Business Entity Quiz</Link>
 
         <Link to="/learning-center-entity/alaska-corporation">Alaska Corporation</Link>
         <h2>Corporation State Information</h2>
@@ -178,16 +178,17 @@ const IndexPage = () => (
         <Link to="/washington-virtual-mailbox/">Washington Virtual mailbox</Link>
 
         <h2>Search your name availability</h2>
-        <Link to="/entity-search/new-york-entity-search">New York Entity Search</Link>
-        <Link to="/entity-search/virginia-entity-search">Virginia Entity Search</Link>
-        <Link to="/entity-search/new-jersey-entity-search">New Jersey Entity Search</Link>
-        <Link to="/entity-search/delaware-entity-search">Daleware Entity Search</Link>
-        <Link to="/entity-search/michigan-entity-search">Michigan Entity Search</Link>
-        <Link to="/entity-search/florida-entity-search">Florida Entity Search</Link>
-        <Link to="/entity-search/georgia-entity-search">Georgia Entity Search</Link>
-        <Link to="/entity-search/texas-entity-search">Texas Entity Search</Link>
+        <Link to="/new-york-entity-search">New York Entity Search</Link>
+        <Link to="/virginia-entity-search">Virginia Entity Search</Link>
+        <Link to="/new-jersey-entity-search">New Jersey Entity Search</Link>
+        <Link to="/delaware-entity-search">Daleware Entity Search</Link>
+        <Link to="/michigan-entity-search">Michigan Entity Search</Link>
+        <Link to="/florida-entity-search">Florida Entity Search</Link>
+        <Link to="/georgia-entity-search">Georgia Entity Search</Link>
+        <Link to="/texas-entity-search">Texas Entity Search</Link>
 
         <h2>Other</h2>
+        <Link to="/state-filing-fees/">State filing fees (WIP)</Link>
         <Link to="/form-an-llc/">Form An LLC (WIP)</Link>
         <Link to="/form-your-corporation/">Form Your Corporation</Link>
         <Link to="/form-an-llc-bk/">Start An LLC (no details)</Link>
@@ -300,24 +301,24 @@ const IndexPage = () => (
         <Link to="/research-topics/nonprofit-info/non-profit-by-steps">What Steps Need to be Taken to Form a Nonprofit Corporation?</Link>
         <Link to="/research-topics/nonprofit-info/where-to-form-nonprofit">Where Should I Form my Nonprofit Corporation?</Link>
 
-        <Link to="/research-topics/general-research">General</Link>
-        <Link to="/research-topics/general-research/require-an-attorney">Does Forming an LLC (Limited Liability Company) or Corporation Require an Attorney?</Link>
-        <Link to="/research-topics/general-research/incfile-discount-coupon">Does Incfile have a Discount or Coupon Code?</Link>
-        <Link to="/research-topics/general-research/llc-inc-designator-companies-name">Does the designator “LLC” or “Inc.” always need to be included in your companies name?</Link>
-        <Link to="/research-topics/general-research/how-to-get-trademark">How to Get a Trademark: A Complete Guide?</Link>
-        <Link to="/research-topics/general-research/forming-llc-or-corp">In Which State Should I Form my LLC or Corporation?</Link>
-        <Link to="/research-topics/general-research/llc-and-corporation-requirements">LLC and Corporation Ongoing Compliance Requirements</Link>
-        <Link to="/research-topics/general-research/llc-incorporate-name">Should I assume that if I form an LLC or incorporate that no one else can use the same name?</Link>
-        <Link to="/research-topics/general-research/corp-seal">What is a Corporate Seal?</Link>
-        <Link to="/research-topics/general-research/what-is-a-nonprofit">What is a Nonprofit Corporation?</Link>
-        <Link to="/research-topics/general-research/publication-requirement">What is a Publication Requirement?</Link>
-        <Link to="/research-topics/general-research/what-is-an-llc">What is an LLC (Limited Liability Company)?</Link>
-        <Link to="/research-topics/general-research/customized-corp-llc-kit">What is the Customized Corporate/LLC Kit?</Link>
-        <Link to="/research-topics/general-research/registered-agent-function">What is the main function of the Registered Agent?</Link>
-        <Link to="/research-topics/general-research/required-business-account-paperwork">What Do I Need to Open a Business Bank Account?</Link>
-        <Link to="/research-topics/general-research/entity-remains-compliant">What steps do I need to take to ensure that my entity remains compliant?</Link>
-        <Link to="/research-topics/general-research/tax-advantages">Which entity offers the best tax advantages?</Link>
-        <Link to="/research-topics/general-research/choosing-entity-type">Which entity type should I choose?</Link>
+        <Link to="/research-topics/general-research-topics">General</Link>
+        <Link to="/research-topics/general-research-topics/require-an-attorney">Does Forming an LLC (Limited Liability Company) or Corporation Require an Attorney?</Link>
+        <Link to="/research-topics/general-research-topics/incfile-discount-coupon">Does Incfile have a Discount or Coupon Code?</Link>
+        <Link to="/research-topics/general-research-topics/llc-inc-designator-companies-name">Does the designator “LLC” or “Inc.” always need to be included in your companies name?</Link>
+        <Link to="/research-topics/general-research-topics/how-to-get-trademark">How to Get a Trademark: A Complete Guide?</Link>
+        <Link to="/research-topics/general-research-topics/forming-llc-or-corp">In Which State Should I Form my LLC or Corporation?</Link>
+        <Link to="/research-topics/general-research-topics/llc-and-corporation-requirements">LLC and Corporation Ongoing Compliance Requirements</Link>
+        <Link to="/research-topics/general-research-topics/llc-incorporate-name">Should I assume that if I form an LLC or incorporate that no one else can use the same name?</Link>
+        <Link to="/research-topics/general-research-topics/corp-seal">What is a Corporate Seal?</Link>
+        <Link to="/research-topics/general-research-topics/what-is-a-nonprofit">What is a Nonprofit Corporation?</Link>
+        <Link to="/research-topics/general-research-topics/publication-requirement">What is a Publication Requirement?</Link>
+        <Link to="/research-topics/general-research-topics/what-is-an-llc">What is an LLC (Limited Liability Company)?</Link>
+        <Link to="/research-topics/general-research-topics/customized-corp-llc-kit">What is the Customized Corporate/LLC Kit?</Link>
+        <Link to="/research-topics/general-research-topics/registered-agent-function">What is the main function of the Registered Agent?</Link>
+        <Link to="/research-topics/general-research-topics/required-business-account-paperwork">What Do I Need to Open a Business Bank Account?</Link>
+        <Link to="/research-topics/general-research-topics/entity-remains-compliant">What steps do I need to take to ensure that my entity remains compliant?</Link>
+        <Link to="/research-topics/general-research-topics/tax-advantages">Which entity offers the best tax advantages?</Link>
+        <Link to="/research-topics/general-research-topics/choosing-entity-type">Which entity type should I choose?</Link>
 
         <Link to="/research-topics/state-info">Individual State Information</Link>
         <Link to="/research-topics/state-info/publish-inc-notice-georgia">How To Publish Your Notice Of Incorporation In Georgia?</Link>
@@ -347,6 +348,7 @@ const IndexPage = () => (
 
         <h2>Type of Business</h2>
         <Link to="/start-a-business/airbnb">Airbnb</Link>
+        <Link to="/start-a-business/bakery">Bakery</Link>
         <Link to="/start-a-business/coach">Coach</Link>
         <Link to="/start-a-business/moving-company">Moving Company</Link>
         <Link to="/start-a-business/boutique-clothing-business">Boutique Clothing Business</Link>

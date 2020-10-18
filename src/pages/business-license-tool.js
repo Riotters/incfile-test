@@ -12,11 +12,11 @@ import About from "../atomic/sections/learning-center-entity/business-license-re
 import SearchTool from "../atomic/sections/learning-center-entity/business-license-req/search-tool";
 import Articles from "../components/partials/sections/articles";
 //Texts
-import { top, about, searchTool } from "../static/learning-center-entity/business-license-req";
+import { top, about, searchTool, businessIndustryList } from "../static/learning-center-entity/business-license-req";
 
 const BusinessLicenseReq = () => (
   <Layout>
-    <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
+    <SEO title="Do I Need a Business License? Business License Search Tool" description="Wondering what licenses you need to start your business? Incfile's license search tool tells you what the requirements are for your industry. Try it now." />
     <Top imageName="mrs-bulb-business-license-requirements" imageAlt="Mrs Bulb and with checklist" ovalColor="sun" headlineWidth="460" textWidth="480">
       <h1>{top.header}</h1>
       <p>{top.text}</p>
@@ -26,7 +26,7 @@ const BusinessLicenseReq = () => (
       </RatingRow>
     </Top>
     <About content={about} />
-    <SearchTool content={searchTool} />
+    <SearchTool content={searchTool} businessIndustryList={businessIndustryList} />
     <Articles />
   </Layout>
 );

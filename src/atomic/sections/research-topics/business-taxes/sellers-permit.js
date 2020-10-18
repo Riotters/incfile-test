@@ -24,81 +24,78 @@ const AboutSection = ({ className, content }) => (
     </Oval>
     <ImageContent image="web-address-search">
       <Path content={content.links} />
-      <Heading size={3} bottomMargin="48">
+      <Heading size={3} bottomMargin="32">
         {content.header}
       </Heading>
-      <Heading size={3} bottomMargin="32">
-        {content.header2}
-      </Heading>
-      <Paragraph big bottomMargin="24">
+      <Paragraph big bottomMargin="16">
         {content.text}
       </Paragraph>
       <Paragraph big bottomMargin="48">
         {content.text2}
       </Paragraph>
       <Heading size={3} bottomMargin="24">
-        {content.header3}
+        {content.header2}
       </Heading>
-      <Paragraph big bottomMargin="24">
+      <Paragraph big bottomMargin="16">
         {content.text3}
       </Paragraph>
       <Paragraph big bottomMargin="48">
         {content.text4}
       </Paragraph>
       <Heading size={3} bottomMargin="24">
-        {content.header4}
+        {content.header3}
       </Heading>
-      <IconListColorBox content={content.list} color={color.orange3} curve curveColor={color.green2} rounded bottomMargin="32" />
+      <IconListColorBox content={content.list} color={color.orange3} curve curveColor={color.green2} rounded bottomMargin="24" />
       <Paragraph big bottomMargin="16">
         {content.text5}
       </Paragraph>
       <ArrowLink content={content.link} bottomMargin="48" />
       <Heading size={3} bottomMargin="24">
-        {content.header5}
+        {content.header4}
       </Heading>
       <Paragraph big bottomMargin="48">
         {content.text6}
       </Paragraph>
       <Heading size={3} bottomMargin="24">
-        {content.header6}
+        {content.header5}
       </Heading>
       <Paragraph big bottomMargin="16">
         {content.text7}
       </Paragraph>
-      <NumericList content={content.list2} bottomMargin="32" />
+      <NumericList content={content.list2} bottomMargin="24" />
       <IconListColorBox content={content.list3} color={color.green3} rounded bottomMargin="48" />
       <Heading size={3} bottomMargin="24">
-        {content.header7}
+        {content.header6}
       </Heading>
       <Paragraph big bottomMargin="16">
         {content.text8}
       </Paragraph>
       <ArrowLink content={content.link2} bottomMargin="48" />
       <Heading size={3} bottomMargin="24">
-        {content.header8}
+        {content.header7}
       </Heading>
       <Paragraph big bottomMargin="48">
         {content.text9}
       </Paragraph>
       <Heading size={3} bottomMargin="24">
-        {content.header9}
+        {content.header8}
       </Heading>
       <Paragraph big bottomMargin="48">
         {content.text10}
       </Paragraph>
       <Heading size={3} bottomMargin="24">
-        {content.header10}
+        {content.header9}
       </Heading>
       <Paragraph big bottomMargin="48">
         {content.text11}
       </Paragraph>
       <Heading size={3} bottomMargin="24">
-        {content.header11}
+        {content.header10}
       </Heading>
-      <Paragraph big bottomMargin="16">
+      <Paragraph big bottomMargin="24">
         {content.text12}
       </Paragraph>
-      <IconListColorBox content={content.list4} color={color.purple3} curve curveColor={color.orange2} rounded bottomMargin="16" />
+      <IconListColorBox content={content.list4} color={color.purple3} curve curveColor={color.orange2} rounded bottomMargin="24" />
       <Paragraph big bottomMargin="48">
         {content.text13}
       </Paragraph>

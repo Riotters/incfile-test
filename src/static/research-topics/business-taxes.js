@@ -10,7 +10,7 @@ export const about = {
 
 export const related = {
   header: 
-      `Related Articles`,
+      `Business Taxes`,
   text:
       `Other users were also interested in knowing about…`,
   buttons: [

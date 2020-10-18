@@ -73,6 +73,13 @@ const Wrapper = styled.div`
 
         a {
           font-size: inherit;
+          color: ${color.blue1};
+          font-weight: 600;
+          transition: color .3s ease;
+
+          &:hover {
+            color: ${color.orange1};  
+          }
         }
       }
     }
@@ -80,24 +87,24 @@ const Wrapper = styled.div`
 `;
 
 const IconTextColorBox = ({ className, color, content, bottomMargin, rounded, curve, curveColor, ...rest }) => {
-  return (
-    <Wrapper className={className} rounded={rounded} bottomMargin={bottomMargin} color={color} {...rest}>
-      {curve && (
-        <Curve top="-15" right="-15" color={curveColor ? curveColor : dotColor(color)}>
-          <CurveSVG />
-        </Curve>
-      )}
-      <Colorbox className="box" color={color}>
-        {content.header && (
-          <Heading size="4" bottomMargin="24">
-            {parse(content.header)}
-          </Heading>
-        )}
+    return (
+        <Wrapper className={className} rounded={rounded} bottomMargin={bottomMargin} color={color} {...rest}>
+            {curve && (
+                <Curve top="-15" right="-15" color={curveColor ? curveColor : dotColor(color)}>
+                    <CurveSVG />
+                </Curve>
+            )}
+            <Colorbox className="box" color={color}>
+                {content?.header && (
+                    <Heading size="4" bottomMargin="24">
+                        {parse(content.header)}
+                    </Heading>
+                )}
 
-        <ul>{content.list.map((item) => (typeof item === "string" ? <li>{parse(item)}</li> : <li>{item.map((el) => (el.url ? <Link to={el.url}>{` ${el.text} `}</Link> : el.text))}</li>))}</ul>
-      </Colorbox>
-    </Wrapper>
-  );
+                <ul>{content.list.map((item) => (typeof item === "string" ? <li>{parse(item)}</li> : <li>{item.map((el) => (el.url ? <Link to={el.url}>{` ${el.text} `}</Link> : el.text))}</li>))}</ul>
+            </Colorbox>
+        </Wrapper>
+    );
 };
 
 export default IconTextColorBox;

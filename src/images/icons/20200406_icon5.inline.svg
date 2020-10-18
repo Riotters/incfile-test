@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(0 1)">
+            <path fill="#F6C4C6" fill-rule="nonzero" d="M24.64 13.72l-8.75 6.4L4.8 11.57 2.29 9.64c.64-.63 1.35-1.36 1.35-1.36.343-.152.702-.266 1.07-.34.329-.07.664-.104 1-.1h.08c-.01-.183-.01-.367 0-.55V3.35h.12l16.53-.2c.596 0 1.167.237 1.587.66.42.422.656.994.653 1.59l-.04 8.32z"/>
+            <path fill="#F6C4C6" fill-rule="nonzero" d="M29.11 15v10.43c.002.78-.183 1.547-.54 2.24-.71.368-1.5.56-2.3.56H5.7c-1.312.003-2.571-.517-3.5-1.443C1.272 25.86.75 24.602.75 23.29V12.85c-.04-.57-.04-1.14 0-1.71l3.19 2.44 10.86 8.33c.576.438 1.374.438 1.95 0l11-8.36 1-.75c.203.717.324 1.455.36 2.2z"/>
+            <path stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M5.75 12.31V3.6C5.86 2.454 6.85 1.597 8 1.65h16c1.17-.057 2.17.832 2.25 2v8.91"/>
+            <path stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M26.27 7.91c2.719.027 4.918 2.221 4.95 4.94v10.44c.003 1.313-.518 2.572-1.447 3.5-.93.927-2.19 1.445-3.503 1.44H5.7c-1.312.003-2.571-.517-3.5-1.443C1.272 25.86.75 24.602.75 23.29V12.85c-.003-.778.18-1.546.53-2.24v-.06c.514-.97 1.333-1.742 2.33-2.2.352-.158.721-.275 1.1-.35.329-.07.664-.104 1-.1"/>
+            <path stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M1.84 9.83L6.83 13.64 15.79 20.51 24.87 13.62 29.73 9.93M20.32 17.07L29.43 26.93M11.21 17.07L2.45 26.55"/>
+            <path stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M11.79 9.05c0-.817.663-1.48 1.48-1.48h0c.492.034.922.346 1.107.803.185.457.093.98-.237 1.347l-2.37 2.73h3"/>
+            <ellipse cx="18.11" cy="10.05" stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" rx="1.67" ry="2.4"/>
+            <path fill="#FFF" fill-rule="nonzero" stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M9.51.38L9.51 3.32M13.75.38L13.75 3.32M18 .38L18 3.32M22.25.38L22.25 3.32"/>
+        </g>
+    </g>
+</svg>

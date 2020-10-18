@@ -34,10 +34,10 @@ const AboutSection = ({ className, content }) => (
       <Heading size={3} bottomMargin="24">
         {content.header2}
       </Heading>
-      <Paragraph big bottomMargin="16">
+      <Paragraph big bottomMargin="24">
         {content.text2}
       </Paragraph>
-      <IconListColorBox content={content.list} color={color.orange3} curve curveColor={color.green2} rounded bottomMargin="16" />
+      <IconListColorBox content={content.list} color={color.orange3} curve curveColor={color.green2} rounded bottomMargin="24" />
       <ArrowLink content={content.link} bottomMargin="48" />
       <Heading size={3} bottomMargin="24">
         {content.header3}
@@ -49,7 +49,7 @@ const AboutSection = ({ className, content }) => (
       <Heading size={3} bottomMargin="24">
         {content.header4}
       </Heading>
-      <Paragraph big bottomMargin="16">
+      <Paragraph big bottomMargin="24">
         {content.text4}
       </Paragraph>
       <IconListColorBox content={content.list2} color={color.green3} rounded bottomMargin="48" />
