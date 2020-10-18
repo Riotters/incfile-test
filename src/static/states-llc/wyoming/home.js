@@ -6,7 +6,7 @@ export const top = {
   buttons: [
     {
       text: `See detailed pricing`,
-      url: `/form-order-now.php?entityType=LLC&entityState=AZ`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=WY`,
     },
   ],
 };
@@ -1561,7 +1561,7 @@ export const requirements = {
                 type: `arrow-links`,
                 content: {
                   text: `State Filing Times`,
-                  url: `/`,
+                  url: `/state-filing-times/`,
                 },
                 bottomMargin: 16,
               },
@@ -1569,7 +1569,7 @@ export const requirements = {
                 type: `arrow-links`,
                 content: {
                   text: `State Filing Prices`,
-                  url: `/`,
+                  url: `/state-filing-fees/`,
                 },
               },
             ],
@@ -1580,7 +1580,7 @@ export const requirements = {
             text2: `Failure to file this report can lead to the company being revoked or administratively dissolved.`,
             link: {
               text: `Other State's Ongoing`,
-              url: `/`,
+              url: `/ongoing-filing-requirements/`,
             },
           },
         ],

@@ -1,38 +1,93 @@
 import React from "react";
+import styled from "styled-components";
+import { color } from "../../atomic/atoms/styles/colors";
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
-import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
-import Button from "../../atomic/molecules/buttons/button";
-//Sections
-import Top from "../../atomic/partials/top";
-import About from "../../atomic/sections/research-topics/video-library";
-import Related from "../../atomic/sections/learning-center-entity/help-center-article/related";
-import Categories from "../../atomic/sections/learning-center-entity/help-center-article/categories";
-import Service from "../../atomic/sections/learning-center-entity/help-center/service";
-import Tools from "../../atomic/sections/learning-center-entity/help-center-article/tools";
-import Benefits from "../../components/partials/sections/benefits";
-import Articles from "../../components/partials/sections/articles";
-import Rocket from "../../atomic/sections/review-entity-types/c-corporation/rocket";
-import Searchbar from "../../atomic/molecules/form/searchbar";
-//Texts
-import { top, rocket, categories, service, tools } from "../../static/learning-center-entity/help-center-article";
-import { about, related } from "../../static/research-topics/video-library";
+import Top from "../../atomic/partials/blog-top";
+import Container from "../../atomic/container";
+import StartBusinessCard from "../../atomic/organisms/cards/start-business-card";
+import Path from "../../atomic/molecules/blocks/video-lib-path";
+import ContentCard from "../../atomic/organisms/cards/help-center-content-card";
+import Articles from "../../atomic/sections/articles";
+import Service from "../../atomic/organisms/cards/research-topics-service-card";
+import Tools from "../../atomic/organisms/cards/research-topics-tools-card";
+import Tags from "../../atomic/organisms/cards/research-topics-tags-card";
 
-const HelpCenter = () => (
-  <Layout>
-    <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
-    <Top imageName="mrs-bulb-help-center-article" imageAlt="Mrs Bulb and with checklist" ovalColor="green">
-      <h1>{top.header}</h1>
-      <p>{top.text}</p>
-      <Searchbar />
-    </Top>
-    <About content={about} />
-    <Related content={related} />
-    <Categories content={categories} />
-    <Service content={service} />
-    <Tools content={tools} />
-    <Rocket content={rocket} />
-  </Layout>
-);
+const Wrapper = styled.section`
+  padding: 72px 0;
+  background-color: ${color.grey5};
+`;
 
-export default HelpCenter;
+const Content = styled.div`
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap: 30px;
+
+  @media (min-width: 769px) {
+    grid-template-columns: 2fr 1fr;
+  }
+`;
+
+const Single = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  #disqus_thread {
+    padding-top: 48px;
+  }
+`;
+
+const Sidebar = styled.div`
+  width: 100%;
+  padding-top: 50px;
+`;
+
+const Sticky = styled.div`
+  position: sticky;
+  top: 100px;
+
+  & > div {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+`;
+
+const Related = styled.div``;
+
+const VideoLibrary = () => {
+  let disqusConfig = {
+    //url: `${config.siteUrl+location.pathname}`,
+    url: `https://riotters.github.io/incfile-test/article/`,
+    identifier: "1",
+    title: "title",
+  };
+  return (
+    <Layout>
+      <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
+      <Top headline="Help Center" text="Instant answers. What can we help with?" imageName="mrs-bulb-main-header-object-business-checklist-8435.png" bgColor="orange" />
+      <Wrapper>
+        <Container>
+          <Content>
+            <Single>
+              <Path />
+              <ContentCard />
+            </Single>
+            <Sidebar>
+              <Sticky>
+                <StartBusinessCard />
+                <Service />
+                <Tools />
+                <Tags />
+              </Sticky>
+            </Sidebar>
+          </Content>
+          <Related />
+        </Container>
+        <Articles />
+      </Wrapper>
+    </Layout>
+  );
+};
+
+export default VideoLibrary;

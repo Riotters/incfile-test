@@ -303,11 +303,30 @@ const Header = ({ siteTitle }) => {
               </FlexRow>
               <DropdownMenu>
                 <SubmenuColumn>
+                  <Heading size={5} bottomMargin={10}>Company Changes</Heading> 
                   <MenuItem><MenuLink to="/free-llc/">Free LLC</MenuLink></MenuItem>
                   <MenuItem><MenuLink to="/manage-your-company/amendment/">Amendmend - Name Change</MenuLink></MenuItem>
                   <MenuItem><MenuLink to="/manage-your-company/dissolution/">Dissolution</MenuLink></MenuItem>
                   <MenuItem><MenuLink to="/manage-your-company/foreign-qualification/">Foreign Qualification</MenuLink></MenuItem>
                   <MenuItem><MenuLink to="/fictitious-business-or-trade-name/">DBA/Fictitious Business Name</MenuLink></MenuItem>
+
+                  <Heading size={5} bottomMargin={10}>Compliance</Heading> 
+                  <MenuItem><MenuLink to="/manage-your-company/annual-report/">Annual Report</MenuLink></MenuItem>
+                  <MenuItem><MenuLink to="/manage-your-company/certificate-of-good-standing/">Certificate of Good Standing</MenuLink></MenuItem>
+                  <MenuItem><MenuLink to="/manage-your-company/corporatellc-kit/">Corporate/LLC Kit</MenuLink></MenuItem>
+                  <MenuItem><MenuLink to="/business-license-research-package/">Business License Search</MenuLink></MenuItem>
+                  <MenuItem><MenuLink to="/trademark-name-search/">Trademark Name Search</MenuLink></MenuItem>
+                </SubmenuColumn>
+
+                <SubmenuColumn>
+                  <Heading size={5} bottomMargin={10}>IRS Filings</Heading> 
+                  <MenuItem><MenuLink to="/manage-your-company/tax-id-ein/">EIN / TAX Number</MenuLink></MenuItem>
+                  <MenuItem><MenuLink to="/business-accounting/">Business Accounting</MenuLink></MenuItem>
+                  <MenuItem><MenuLink to="/llc-s-corp-election/">File S Corp Election</MenuLink></MenuItem>
+
+                  <Heading size={5} bottomMargin={10}>Registered Agent</Heading> 
+                  <MenuItem><MenuLink to="/manage-your-company/registered-agent/">Registered Agent Service</MenuLink></MenuItem>
+                  <MenuItem><MenuLink to="/manage-your-company/change-of-registered-agent/">Change of Registered Agent</MenuLink></MenuItem>
                 </SubmenuColumn>
               </DropdownMenu>
             </MenuItem>
@@ -319,23 +338,28 @@ const Header = ({ siteTitle }) => {
               <DropdownMenu>
                 <SubmenuColumn>
                     <Heading size={5} bottomMargin={10}>Start a business soon</Heading>
-                    <MenuItem><MenuLink to="/business-entity-quiz/">Business Type Quiz</MenuLink></MenuItem>
-                    <MenuItem><MenuLink to="/business-entity-comparison/">Entity Comparison Chart</MenuLink></MenuItem>
-                    <MenuItem><MenuLink to="/state-filing-times/">State Filing Times</MenuLink></MenuItem>
-                    <MenuItem><MenuLink to="/state-filing-fees/">State Filing Fees</MenuLink></MenuItem>
-                    <MenuItem><MenuLink to="/compliance-filing-requirement/">Ongoing Filing Requirements</MenuLink></MenuItem>
-                    <MenuItem><MenuLink to="/registered-agents/">About Registered Agents</MenuLink></MenuItem>
+                    <MenuItem><MenuLink to="/learn-more/">Research Tool</MenuLink></MenuItem>
+                    <MenuItem><MenuLink to="/business-resources/">Free Business Dowmloads & Tools</MenuLink></MenuItem>
+                    <MenuItem><MenuLink to="/start-a-business/">Business Startup Guides</MenuLink></MenuItem>
+                    <MenuItem><MenuLink to="/guides-start-business/">Complete Guide to Starting A Business</MenuLink></MenuItem>
+                    <MenuItem><MenuLink to="/starting-a-business-checklist/">Start A Business CheckList</MenuLink></MenuItem>
+                    <MenuItem><MenuLink to="/business-name-generator/">Business Name Generator</MenuLink></MenuItem>
+                    <MenuItem><MenuLink to="/business-name-search/">Free Business Name Research</MenuLink></MenuItem>
+                    <MenuItem><MenuLink to="/s-corporation-tax-calculator/">S Corp Tax Calculator</MenuLink></MenuItem>
 
                     <Heading size={5} bottomMargin={10}>Grow a business</Heading>
-                    <MenuItem><MenuLink to="/">Business Type Quiz</MenuLink></MenuItem>
-                    <MenuItem><MenuLink to="/">Entity Comparison Chart</MenuLink></MenuItem>
-                    <MenuItem><MenuLink to="/">State Filing Times</MenuLink></MenuItem>
-                    <MenuItem><MenuLink to="/">State Filing Fees</MenuLink></MenuItem>
-                    <MenuItem><MenuLink to="/">Ongoing Filing Requirements</MenuLink></MenuItem>
-                    <MenuItem><MenuLink to="/">About Registered Agents</MenuLink></MenuItem>
+                    <MenuItem><MenuLink to="/after-forming-llc/">After Forming LLC</MenuLink></MenuItem>
+                    <MenuItem><MenuLink to="/business-filing-deadlines/">Annual Report Due Date Tool</MenuLink></MenuItem>
+                    <MenuItem><MenuLink to="/sales-tax-calculator/">Sale Tax Calculator</MenuLink></MenuItem>
                 </SubmenuColumn>
                 <SubmenuColumn>
-                    <Heading size={5} bottomMargin={10}>Form a business today</Heading>
+                  <Heading size={5} bottomMargin={10}>Form a business today</Heading>
+                  <MenuItem><MenuLink to="/business-entity-quiz/">Business Type Quiz</MenuLink></MenuItem>
+                  <MenuItem><MenuLink to="/business-entity-comparison/">Entity Comparison Chart</MenuLink></MenuItem>
+                  <MenuItem><MenuLink to="/state-filing-times/">State Filing Fees</MenuLink></MenuItem>
+                  <MenuItem><MenuLink to="/state-filing-fees/">State Filing Fees</MenuLink></MenuItem>
+                    <MenuItem><MenuLink to="/compliance-filing-requirement/">Ongoing Filing Requirements</MenuLink></MenuItem>
+                    <MenuItem><MenuLink to="/registered-agents/">About Registered Agents</MenuLink></MenuItem>
                     <MenuItem><MenuLink to="/business-license-tool/">Business License Requirements</MenuLink></MenuItem>
                     <MenuItem><MenuLink to="/llc-state-information/">LLC State Inforamtion</MenuLink></MenuItem>
                     <MenuItem><MenuLink to="/corporation-state-information/">Corporation State Information</MenuLink></MenuItem>

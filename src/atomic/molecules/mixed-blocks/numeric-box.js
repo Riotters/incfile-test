@@ -24,7 +24,7 @@ const Flex = styled.li`
 const NumericBox = ({ className, id, item, noBox }) =>
   !noBox ? (
     <Whitebox className={className}>
-      <Circle>{id + 1}</Circle>
+      <Circle>{item?.number ?? (id + 1)}</Circle>
       <TextWrapper>
         {item.header && (
           <Heading size="5" bottomMargin="36">
@@ -48,7 +48,7 @@ const NumericBox = ({ className, id, item, noBox }) =>
     </Whitebox>
   ) : (
     <Flex className={className}>
-      <Circle>{id + 1}</Circle>
+      <Circle>{item?.number ?? (id + 1)}</Circle>
       <TextWrapper>
         {item.header && (
           <Heading size="5" bottomMargin="36">

@@ -11,13 +11,13 @@ export const top = {
 export const perks = {
   header: `Perks Included When You Create`,
   list: [`Answer a faw easy questions in 5 minutes or less`, `We prepare and file your articles directly with the Secretary of State`, `Receive your filed documents in the mail.`],
-}
+};
 
 export const trust = {
-  header: `Over 250,000 businesses have trusted us too!`,
+  header: `Over 500,000 businesses have trusted us too!`,
   cards: [
     {
-      header: `Over 250,000 Company Formations`,
+      header: `Over 500,000 Company Formations`,
       text: `For more than a decade, we've become pretty good at helping people launch their businesses.`,
     },
     {
@@ -28,8 +28,8 @@ export const trust = {
       header: `Competetive Pricing`,
       text: `We offer the morst competitive pricing on the Internet.`,
     },
-  ]
-}
+  ],
+};
 
 export const steps = {
   header: `Start Your Business in 3 Easy Steps`,
@@ -38,7 +38,7 @@ export const steps = {
     text: `Start my LLC`,
     url: `/`,
   },
-}
+};
 
 export const differences = {
   header: `What's the difference between an LLC and a Corporation?`,
@@ -55,7 +55,7 @@ export const differences = {
       link: {
         text: `Learn more about LLC`,
         url: `/`,
-      }
+      },
     },
     {
       header: `Corporation`,
@@ -68,10 +68,10 @@ export const differences = {
       link: {
         text: `Learn more about Corporation`,
         url: `/`,
-      }
+      },
     },
-  ]
-}
+  ],
+};
 
 export const variants = {
   header: `See how easy it can be to get your business incorporated`,
