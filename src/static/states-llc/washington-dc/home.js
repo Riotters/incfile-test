@@ -438,7 +438,7 @@ export const registeredAgent = [
     },
     {
         type: `text`,
-        content: `Your LLC must assign a Registered Agent. This is a formally recognized person or business that can receive business correspondence and other documents from the Washington DC Department of Consumer and Regulatory Affairs. Assigning a Registered Agent is a legal requirement.`,
+        content: `Your LLC must assign a Registered Agent. This is a formally recognized person or business that can receive business correspondence and other documents from the Washington DC Department of Consumer and Regulatory Affairs. Assigning a Registered Agent is a legal requirement`,
         marginBottom: 0,
     },
     {
@@ -459,7 +459,7 @@ export const registeredAgent = [
     },
     {
         type: `text`,
-        content: `“Any business required to register with the Corporations Division is required to maintain a registered agent. Said registered agent may be a bona fide District of Columbia resident or a company physically located in the District of Columbia. The registered agent’s office may or may not be the same address as the place of business.”`,
+        content: `“Any business required to register with the Corporations Division is required to maintain a registered agent. Said registered agent may be a bona fide Washington DC resident or a company physically located in the Washington DC. The registered agent’s office may or may not be the same address as the place of business.”`,
         marginBottom: 0,
     },
     {
@@ -499,7 +499,6 @@ export const registeredAgent = [
     {
         type: `list-dot`,
         content: {
-            header: ``,
             list: [`Correspondence from the Washington DC Department of Consumer and Regulatory Affairs, like a notice to file reports and other forms`,
                 `Service of process documents (for example, if your LLC has legal proceedings issued against it)`,
                 `Official Washington DC and federal government documents, form filings and requests for information (including taxes, permits and company filings)`],
@@ -592,7 +591,7 @@ export const registeredAgent = [
         type: `button`,
         content: {
             text: `Incorporate your business through Incfile`,
-            url: `/form-order-now.php?entityType=LLC&amp;entityState=DC&quot;&quot;`,
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=DC`,
         },
         theme: `primary48`,
         marginBottom: 0,
@@ -669,7 +668,6 @@ export const registeredAgent = [
     {
         type: `list-dot`,
         content: {
-            header: ``,
             list: [`<b>Getting served or sued and not finding out about it:</b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
                 `<b>Falling out of good standing with the Washington DC Department of Consumer and Regulatory Affairs:</b> If you don’t respond to certain correspondence (like the request for your annual report), certain areas may revoke your right to do business.`,
                 `<b>Losing your status as a Washington DC LLC:</b> A Registered Agent “proves” to local government that your business exists. without it, you could lose your business entity protections and your LLC may be dissolved.`,],
@@ -691,7 +689,6 @@ export const registeredAgent = [
     {
         type: `list-dot`,
         content: {
-            header: ``,
             list: [
                 `The Registered Agent must have a physical street address in Washington DC. You always need to have someone on hand during business hours at the Washington DC address to sign for important documents.`,
                 `The Registered Agent’s name and address are part of the public record and available through the Washington DC Department of Consumer and Regulatory Affairs's website. If you prefer your name and address aren’t published, you should choose a Registered Agent service.`,
@@ -744,7 +741,6 @@ export const registeredAgent = [
     {
         type: `list-dot`,
         content: {
-            header: ``,
             list: [`<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/">The Main Functions of a Washington DC Registered Agent</a>`,
                 `<a htef="/manage-your-company/change-of-registered-agent/">Changing Your Washington DC Registered Agent</a>`,
                 `<a href="/research-topics/registered-agent-help/what-does-a-registered-agent-do/">What a Washington DC Registered Agent Does</a>`,],
@@ -821,7 +817,7 @@ export const feesAndRequirments = [
         type: `button`,
         content: {
             text: `INCORPORATE YOUR Washington DC LLC THROUGH INCFILE TODAY`,
-            url: `/form-order-now.php?entityType=LLC&entityState=DC/`,
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=DC/`,
         },
         theme: `primary48`,
         marginBottom: 50,
@@ -971,7 +967,7 @@ export const feesAndRequirments = [
     },
     {
         type: `text`,
-        content: `An Operating Agreement is extremely useful for several reasons (<a href="research-topics/llc-info/the-llc-operating-agreement/">learn about them here</a>). If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Washington DC business. You can choose to make changes to the template based on your unique requirements. `,
+        content: `An Operating Agreement is extremely useful for several reasons (<a href="/research-topics/llc-info/the-llc-operating-agreement/">learn about them here</a>). If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Washington DC business. You can choose to make changes to the template based on your unique requirements. `,
         marginBottom: 30,
     },
     {
