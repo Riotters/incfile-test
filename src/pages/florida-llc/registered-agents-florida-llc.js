@@ -1,20 +1,20 @@
 import React from 'react';
-import Layout from '../../../components/layout';
-import SEO from '../../../components/seo';
+import Layout from '../../components/layout';
+import SEO from '../../components/seo';
 import styled from 'styled-components'
 
 // Components
-import TaxesHeader from '../../../atomic/states-llc/taxes-header'
-import LinearBgHeader from '../../../atomic/states-llc/linear-bg-header';
-import WrapperContent from '../../../atomic/states-llc/wrapper-content'
-import LeftTabPages from '../../../atomic/states-llc/left-tab-pages'
-import MainPageContent from '../../../atomic/states-llc/page-content'
-import RegisteredAgentSection from '../../../atomic/states-llc/texas/registered-agents'
-import Rocket from "../../../atomic/sections/review-entity-types/c-corporation/rocket";
+import TaxesHeader from '../../atomic/states-llc/taxes-header'
+import LinearBgHeader from '../../atomic/states-llc/linear-bg-header';
+import WrapperContent from '../../atomic/states-llc/wrapper-content'
+import LeftTabPages from '../../atomic/states-llc/left-tab-pages'
+import MainPageContent from '../../atomic/states-llc/page-content'
+import RegisteredAgentSection from '../../atomic/states-llc/texas/registered-agents'
+import Rocket from "../../atomic/sections/review-entity-types/c-corporation/rocket";
 
 // Content
-import { agentPageContent } from "../../../static/states-llc/texas/ra";
-import { tabPages, rocket } from "../../../static/states-llc/texas/general";
+import { agentPageContent } from "../../static/states-llc/texas/ra";
+import { tabPages, rocket } from "../../static/states-llc/texas/general";
 
 const Wrapper = styled.div`
     display: flex;

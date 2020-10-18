@@ -76,7 +76,7 @@ const StatesMap = ({ corporations }) => {
                 "data-event": "mouseenter",
                 "data-tip": corporations ? MapLabelsCorporations[element.id] : MapLabels[element.id],
                 onClick: () => {
-                  navigate(`/corporation-state-information/${corporations ? MapLabelsCorporations[element.id].replace(/\s+/g, "-").toLowerCase() : MapLabels[element.id].replace(/\s+/g, "-").toLowerCase()}`);
+                  navigate(`/${corporations ? MapLabelsCorporations[element.id].replace(/\s+/g, "-").toLowerCase() : MapLabels[element.id].replace(/\s+/g, "-").toLowerCase()}/`);
                 },
               };
               if (element.tag === "polygon") attrs.points = element.points;

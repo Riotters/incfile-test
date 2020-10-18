@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import parse from "html-react-parser";
-import ReactTooltip from "react-tooltip";
+//import ReactTooltip from "react-tooltip";
 import { Heading } from "../../../atoms/typography/heading";
 import CheckSVG from "../../../../images/circle-status-check.inline.svg";
 import { Paragraph } from "../../../atoms/typography/paragraph";
@@ -47,33 +47,33 @@ const Grid = styled.div`
   }
 `;
 
-const StyledReactTooltip = styled(ReactTooltip)`
-  padding: 0;
+// const StyledReactTooltip = styled(ReactTooltip)`
+//   padding: 0;
 
-  &.show {
-    opacity: 1;
-    height: auto;
-    max-width: 560px;
-    overflow: visible;
-    background-color: transparent;
-  }
-`;
+//   &.show {
+//     opacity: 1;
+//     height: auto;
+//     max-width: 560px;
+//     overflow: visible;
+//     background-color: transparent;
+//   }
+// `;
 
 const BenefitsSection = ({ className, content }) => {
-  const handleContent = (dataTip) => {
-    ReactTooltip.rebuild();
-    if (!dataTip) {
-      return "";
-    }
-    const [header, text] = dataTip.split("|");
+  // const handleContent = (dataTip) => {
+  //   ReactTooltip.rebuild();
+  //   if (!dataTip) {
+  //     return "";
+  //   }
+  //   const [header, text] = dataTip.split("|");
 
-    return (
-      <TextBlockWithImage width={100} widthUnit="%" textBackgroundColor={color.white} SvgImage={BenefitsSVG}>
-        <Heading size={4}>{header}</Heading>
-        <Paragraph>{text}</Paragraph>
-      </TextBlockWithImage>
-    );
-  };
+  //   return (
+  //     <TextBlockWithImage width={100} widthUnit="%" textBackgroundColor={color.white} SvgImage={BenefitsSVG}>
+  //       <Heading size={4}>{header}</Heading>
+  //       <Paragraph>{text}</Paragraph>
+  //     </TextBlockWithImage>
+  //   );
+  // };
 
   return (
     <>
@@ -89,7 +89,7 @@ const BenefitsSection = ({ className, content }) => {
           );
         })}
       </Grid>
-      <StyledReactTooltip id="benefitTooltip" getContent={handleContent} effect="solid" place="top" type="light" globalEventOff="click" />
+      {/* <StyledReactTooltip id="benefitTooltip" getContent={handleContent} effect="solid" place="top" type="light" globalEventOff="click" /> */}
     </>
   );
 };
