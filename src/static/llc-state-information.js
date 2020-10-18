@@ -7,171 +7,171 @@ export const states = {
   list: [
     {
       name: "Alabama",
-      url: "alabama-llc",
+      url: "/alabama-llc/",
     },
     {
       name: "Alaska",
-      url: "alaska-llc",
+      url: "/alaska-llc/",
     },
     {
       name: "Arizona",
-      url: "arizona-llc",
+      url: "/arizona-llc/",
     },
     {
       name: "Arkansas",
-      url: "arkansas-llc",
+      url: "/arkansas-llc/",
     },
     {
       name: "California",
-      uurl: "california-llc",
+      uurl: "/california-llc/",
     },
     {
       name: "Colorado",
-      url: "colorado-llc",
+      url: "/colorado-llc/",
     },
     {
       name: "Connecticut",
-      url: "connecticut-llc",
+      url: "/connecticut-llc/",
     },
     {
       name: "Delaware",
-      url: "delaware-llc",
+      url: "/delaware-llc/",
     },
     {
       name: "Florida",
-      url: "florida-llc",
+      url: "/florida-llc/",
     },
     {
       name: "Georgia",
-      url: "georgia-llc",
+      url: "/georgia-llc/",
     },
     {
       name: "Hawaii",
-      url: "hawaii-llc",
+      url: "/hawaii-llc/",
     },
     {
       name: "Idaho",
-      url: "idaho-llc",
+      url: "/idaho-llc/",
     },
     {
       name: "Illinois",
-      url: "illinois-llc",
+      url: "/illinois-llc/",
     },
     {
       name: "Indiana",
-      url: "indiana-llc",
+      url: "/indiana-llc/",
     },
     {
       name: "Iowa",
-      url: "iowa-llc",
+      url: "/iowa-llc/",
     },
     {
       name: "Kansas",
-      url: "kansas-llc",
+      url: "/kansas-llc/",
     },
     {
       name: "Kentucky",
-      url: "kentucky-llc",
+      url: "/kentucky-llc/",
     },
     {
       name: "Louisiana",
-      url: "louisiana-llc",
+      url: "/louisiana-llc/",
     },
     {
       name: "Maine",
-      url: "maine-llc",
+      url: "/maine-llc/",
     },
     {
       name: "Maryland",
-      url: "maryland-llc",
+      url: "/maryland-llc/",
     },
     {
       name: "Massachusetts",
-      url: "massachusetts-llc",
+      url: "/massachusetts-llc/",
     },
     {
       name: "Michigan",
-      url: "michigan-llc",
+      url: "/michigan-llc/",
     },
     {
       name: "Minnesota",
-      url: "minnesota-llc",
+      url: "/minnesota-llc/",
     },
     {
       name: "Mississippi",
-      url: "mississippi-llc",
+      url: "/mississippi-llc/",
     },
     {
       name: "Missouri",
-      url: "missouri-llc",
+      url: "/missouri-llc/",
     },
     {
       name: "Montana",
-      url: "montana-llc",
+      url: "/montana-llc/",
     },
     {
       name: "Nebraska",
-      url: "nebraska-llc",
+      url: "/nebraska-llc/",
     },
     {
       name: "Nevada",
-      url: "nevada-llc",
+      url: "/nevada-llc/",
     },
     {
       name: "New Hampshire",
-      url: "new-hampshire-llc",
+      url: "/new-hampshire-llc/",
     },
     {
       name: "New Jersey",
-      url: "new-jersey-llc",
+      url: "/new-jersey-llc/",
     },
     {
       name: "New Mexico",
-      url: "new-mexico-llc",
+      url: "/new-mexico-llc/",
     },
     {
       name: "New York",
-      url: "new-york-llc",
+      url: "/new-york-llc/",
     },
     {
       name: "North Carolina",
-      url: "north-carolina-llc",
+      url: "/north-carolina-llc/",
     },
     {
       name: "North Dakota",
-      url: "north-dakota-llc",
+      url: "/north-dakota-llc/",
     },
     {
       name: "Ohio",
-      url: "ohio-llc",
+      url: "/ohio-llc/",
     },
     {
       name: "Oklahoma",
-      url: "oklahoma-llc",
+      url: "/oklahoma-llc/",
     },
     {
       name: "Oregon",
-      url: "oregon-llc",
+      url: "/oregon-llc/",
     },
     {
       name: "Pennsylvania",
-      url: "pennsylvania-llc",
+      url: "/pennsylvania-llc/",
     },
     {
       name: "Rhode Island",
-      url: "rhode-island-llc",
+      url: "/rhode-island-llc/",
     },
     {
       name: "South Carolina",
-      url: "south-carolina-llc",
+      url: "/south-carolina-llc/",
     },
     {
       name: "South Dakota",
-      url: "south-dakota-llc",
+      url: "/south-dakota-llc/",
     },
     {
       name: "Tennessee",
-      url: "tennessee-llc",
+      url: "/tennessee-llc/",
     },
     {
       name: "Texas",
@@ -179,35 +179,35 @@ export const states = {
     },
     {
       name: "Utah",
-      url: "utah-llc",
+      url: "/utah-llc/",
     },
     {
       name: "Vermont",
-      url: "vermont-llc",
+      url: "/vermont-llc/",
     },
     {
       name: "Virginia",
-      url: "virginia-llc",
+      url: "/virginia-llc/",
     },
     {
       name: "Washington",
-      url: "washington-llc",
+      url: "/washington-llc/",
     },
     {
       name: "Washington DC",
-      url: "washington-dc-llc",
+      url: "/washington-dc-llc/",
     },
     {
       name: "West Virginia",
-      url: "west-virginia-llc",
+      url: "/west-virginia-llc/",
     },
     {
       name: "Wisconsin",
-      url: "wisconsin-llc",
+      url: "/wisconsin-llc/",
     },
     {
       name: "Wyoming",
-      url: "wyoming-llc",
+      url: "/wyoming-llc/",
     },
   ],
 };
