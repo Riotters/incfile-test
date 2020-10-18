@@ -188,6 +188,7 @@ const IndexPage = () => (
         <Link to="/texas-entity-search">Texas Entity Search</Link>
 
         <h2>Other</h2>
+        <Link to="/state-filing-fees/">State filing fees (WIP)</Link>
         <Link to="/form-an-llc/">Form An LLC (WIP)</Link>
         <Link to="/form-your-corporation/">Form Your Corporation</Link>
         <Link to="/form-an-llc-bk/">Start An LLC (no details)</Link>

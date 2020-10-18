@@ -48,7 +48,9 @@ const IncludedInAll = ({ className, content }) => (
             <Heading size={2} maxWidth={770} bottomMargin={104}>{content.header}</Heading>
 
             <BenefitsSection content={content.benefits}/>
-            <Button content={content.button} margin="56px 0 0 0" arrow theme="primary56" />
+            {content.button &&
+                <Button content={content.button} margin="56px 0 0 0" arrow theme="primary56" />
+            }
         </ContentCenter>
     </Wrapper>
 );
