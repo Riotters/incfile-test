@@ -331,6 +331,8 @@ export const namingYourBusiness = [
     content: `For example, your LLC might be called Potomac Cleaning Services Holding Company LLC and you have a brand called Monument and Mall Restoration Services. You should file a trade name online to let the DC Department of Consumer and Regulatory Affairs know. Incfile can do this on your behalf through our DBA/Trade Name service.`,
     marginBottom: 0,
   },
+},
+  {
   type: `button`,
   content: {
       text: `Incfile’s DBA/Trade Name service`,
@@ -699,7 +701,7 @@ color: color.yellow3,
     }
   {
     type: `accordion`,
-    content: {
+    content: ``,
       items: [
         {
           question: `Do I Need to Appoint a Washington DC Registered Agent?`,
@@ -718,12 +720,13 @@ color: color.yellow3,
           answer: `Yes. Additionally, if they are a business providing Registered Agent services, they must be legally able to conduct business in DC.`,
         },
       ],
-    },
-    marginBottom: 0,
+      marginBottom: 0,
   },
+
+  
   {
-    type: `Useful Resources for Washington DC Registered Agent Services`,
-    content: `aaa`,
+    type: `header`,
+    content: `Useful Resources for Washington DC Registered Agent Services`,
     size: 3,
     marginBottom: 0,
   },
@@ -737,7 +740,7 @@ color: color.yellow3,
     content: {
       header: ``,
       list: [`<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/">The Main Functions of a Washington DC Registered Agent</a>`, 
-             `< a htef="/manage-your-company/change-of-registered-agent/">Changing Your Washington DC Registered Agent</a>`,
+             `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Washington DC Registered Agent</a>`,
              `<a href="/research-topics/registered-agent-help/what-does-a-registered-agent-do/">What a Washington DC Registered Agent Does</a>`,],
     },
     marginBottom: 0,
@@ -1292,7 +1295,7 @@ export const businessTaxes = [{
             `On profits of $140,000, you would pay self-employment tax of $21,420.`,
             `On profits of $160,000, you would pay self-employment tax of $24,480.`,
         ],
-    }
+    },
 },
 {
     type: `header`,
@@ -1351,7 +1354,7 @@ export const businessTaxes = [{
 },
 {
     type: `header`,
-    content: `Employer Payroll Tax withholding for Your Washington DC LLC `,
+    content: `Employer Payroll Tax withholding `,
     size: 4,
     marginBottom: 20,
 },
@@ -1359,17 +1362,6 @@ export const businessTaxes = [{
     type: `text`,
     content: `All employers must collect and withhold payroll tax from their employees when they receive their salaries. You normally withhold 7.65 percent of the taxable salary that you pay to your employees.`,
     marginBottom: 30,
-},
-{
-    type: `header`,
-    content: `Employer Payroll Tax Withholding`,
-    size: 4,
-    marginBottom: 20,
-},
-{
-    type: `text`,
-    content: `All employers must collect and withhold payroll tax from their employees when they receive their salaries. You would normally withhold 7.65 percent of the taxable salary that you pay to your employees.`,
-    marginBottom: 20,
 },
 {
     type: `header`,
@@ -1408,6 +1400,11 @@ export const businessTaxes = [{
     type: `header`,
     content: `Other Taxes and Duties for Your Washington DC LLC`,
     marginBottom: 0,
+},
+{
+  type: `text`,
+  content: `Depending on the industry you are in, your Washington DC LLC may be liable for certain other taxes and duties. For example, if you sell gasoline you may need to pay a tax on any fuel you sell. Likewise, if you import or export goods you may need to pay certain duties. Speak to your accountant about any other taxes you may need to withhold or pay.`,
+  marginBottom: 0,
 },
 {
     type: `header`,
@@ -1474,13 +1471,3 @@ export const businessTaxes = [{
 },
 ];
 
-export const compare = {
-header: `How We Compare. <br>Get more more for less.`,
-table: {
-    headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
-    rows: [
-        [`Business incorporation service`, `$49`, `$149`, `$149`],
-        [`Registered Agent included in the price`, `check-green`, `check-red`, `check-red`],
-    ],
-},
-};
