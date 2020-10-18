@@ -179,7 +179,7 @@ const DropdownMenu = styled.div`
   }
   
   & > ul > li {
-    height: 48px;
+    height: 35px;
     min-width: 100px;
     cursor: pointer;
     
@@ -374,15 +374,18 @@ const Header = ({ siteTitle }) => {
                 <DropdownSVG />
               </FlexRow>
               <DropdownMenu>
-                <SubmenuColumn>
-                  <MenuItem><MenuLink to="/about/">About Us</MenuLink></MenuItem>
-                  <MenuItem><MenuLink to="/how-it-works/">How It Works</MenuLink></MenuItem>
-                  <MenuItem><MenuLink to="/incfile-reviews/">Customer Service Reviews</MenuLink></MenuItem>
-                  <MenuItem><MenuLink to="/reviews/">Testimonials</MenuLink></MenuItem>
-                  <MenuItem><MenuLink to="/why-choose-incfile/">Why Choose Us</MenuLink></MenuItem>
-                  <MenuItem><MenuLink to="/contact/existing-clients/">Existing Clients</MenuLink></MenuItem>
-                  <MenuItem><MenuLink to="/contact/new-sales/">New Sales</MenuLink></MenuItem>
-                </SubmenuColumn>
+                    <SubmenuColumn>
+                        <Heading size={5} bottomMargin={10}>Get us to know</Heading> 
+                        <MenuItem><MenuLink to="/about/">About Us</MenuLink></MenuItem>
+                        <MenuItem><MenuLink to="/how-it-works/">How It Works</MenuLink></MenuItem>
+                        <MenuItem><MenuLink to="/incfile-reviews/">Customer Service Reviews</MenuLink></MenuItem>
+                        <MenuItem><MenuLink to="/reviews/">Testimonials</MenuLink></MenuItem>
+                        <MenuItem><MenuLink to="/why-choose-incfile/">Why Choose Us</MenuLink></MenuItem>
+                                  
+                        <Heading size={5} bottomMargin={10}>Contact</Heading> 
+                        <MenuItem><MenuLink to="/contact/existing-clients/">Existing Clients</MenuLink></MenuItem>
+                        <MenuItem><MenuLink to="/contact/new-sales/">New Sales</MenuLink></MenuItem>
+                    </SubmenuColumn>
               </DropdownMenu>
             </MenuItem>
           </Menu>
