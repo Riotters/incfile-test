@@ -11,9 +11,17 @@ import Resources from "../atomic/sections/learning-center-entity/business-resour
 import FurtherResources from "../atomic/sections/learning-center-entity/business-resources/further-resources";
 import Articles from "../components/partials/sections/articles";
 //Texts
-import { top, about, resources, furtherResources, form } from "../static/learning-center-entity/business-resources";
+import {
+    top,
+    about,
+    resources,
+    furtherResources,
+    form,
+    thanks_form
+} from "../static/learning-center-entity/business-resources";
 import {BusinessChecklistForm} from "../atomic/organisms/forms/business-checklist-form";
 import styled from "styled-components";
+import {ThankYouContent} from "../atomic/partials/thank-you-modal-content";
 
 class BusinessResources extends React.Component {
     constructor(props) {
@@ -21,7 +29,8 @@ class BusinessResources extends React.Component {
 
         this.state = {
             modalVisible: false,
-            title: ""
+            title: "",
+            formSubmitted: false
         };
 
         this.popup = this.popup.bind(this);
@@ -29,20 +38,38 @@ class BusinessResources extends React.Component {
         if(typeof window !== "undefined") {
             window.br_dpfw_m_popup = this.popup.bind(this);
         }
+
+        if(typeof window !== "undefined") {
+            window.br_dpfw_m_postdownload = this.postdownload.bind(this);
+        }
+    }
+
+    postdownload() {
+        this.setState({
+            modalVisible: this.state.modalVisible,
+            title: this.state.title,
+            formSubmitted: true
+        });
     }
 
     popup(e, title) {
-        if (!e.target.className.includes("modal-overlay") && this.state.modalVisible === true) return;
+        if (!e.target.className.includes("modal-overlay") && !e.target.className.includes("modal-close") &&
+            this.state.modalVisible === true)
+            return;
 
         form.header = "Download: " + title;
 
         this.setState({
             modalVisible: !this.state.modalVisible,
-            title: title
+            title: title,
+            formSubmitted: false
         });
     }
 
     render() {
+        let modalClases = [ "lightbox-content" ];
+        if(this.state.formSubmitted) modalClases.push("form-submitted");
+
         return (
             <Layout>
                 <SEO title="Business Resources & Tools for Starting a Company"
@@ -61,8 +88,13 @@ class BusinessResources extends React.Component {
                 <FurtherResources content={furtherResources}/>
                 <Articles/>
                 <LightBoxModal id="download-pdf-form-modal" onClick={this.popup} visible={this.state.modalVisible} className="modal-overlay">
-                    <LightBoxContent style={{pointerEvents: "all"}}>
-                        <BusinessChecklistForm content={form}/>
+                    <LightBoxContent style={{pointerEvents: "all"}} class={modalClases.join(" ")}>
+                        {!this.state.formSubmitted && (
+                            <BusinessChecklistForm content={form} postDownloadAction={this.postdownload.bind(this)} />
+                        )}
+                        {this.state.formSubmitted && (
+                            <ThankYouContent content={thanks_form} modalExit={this.popup.bind(this) } />
+                        )}
                     </LightBoxContent>
                 </LightBoxModal>
             </Layout>
@@ -86,6 +118,8 @@ const LightBoxModal = styled.div`
 `;
 
 const LightBoxContent = styled.div`
+  transition: height .5s, max-width .5s;
+
   background-color: #fff;
   width: 100%;
   max-width: 960px;
@@ -93,10 +127,16 @@ const LightBoxContent = styled.div`
   margin: 0 30px;
   max-height: 100vh;
   overflow-y: auto;
+  
   @media screen and (min-width: 769px) {
     height: 95vh;
     padding-top: 0;
     overflow-y: visible;
+  }
+  
+  &.form-submitted {
+    height: 40vh;
+    max-width: 500px;
   }
 `;
 

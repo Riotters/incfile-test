@@ -1,49 +1,49 @@
 import React from "react";
 import styled from "styled-components";
-import SEO from "../../components/seo";
-import Top from "../../atomic/partials/top";
-import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
-import Button from "../../atomic/molecules/buttons/button";
-import Layout from "../../components/layout";
-import { fillingRequirements, info, packets, questions, service, top, articlesOfIncorporation, corporationName } from "../../static/learning-center-entity/alaska-corporation";
-import CartBlock from "../../atomic/molecules/blocks/cart-block";
-import RatingBlock from "../../atomic/molecules/blocks/rating-block";
-import RatingRow from "../../atomic/atoms/boxes/rating-row";
-import TabsOvalOneSvg from "../../images/ovals/bottom-left-transparent-pink.inline.svg";
-import OvalSvg2 from "../../images/ovals/top-right-transparent-blue2.inline.svg";
-import OvalSvg3 from "../../images/ovals/bottom-left-transparent-blue1.inline.svg";
-import OvalSvg4 from "../../images/ovals/top-right-transparent-orange3.inline.svg";
-import TabsSection from "../../atomic/partials/tabs";
-import TabHeading from "../../atomic/organisms/tabs/TabHeading";
-import TabTitle from "../../atomic/molecules/tabs/tab-title";
-import OverviewSVG from "../../images/icons/icon-manage-your-company-color-business-license-research.inline.svg";
-import LightIcon from "../../images/icons/light.inline.svg";
-import RegistratedAgentIcon from "../../images/icons/icon-32-multi-color-registered-agent.inline.svg";
-import BylawsIcon from "../../images/icons/icon-learning-center-color-how-to-guide.inline.svg";
-import DirectorsIcon from "../../images/icons/icon-learning-center-color-all-ca-corporations-must-have-elected-board-of-directors.inline.svg";
-import TaxesIcon from "../../images/icons/icon-learning-center-color-business-taxes.inline.svg";
-import ReportsIcon from "../../images/icons/icon-start-a-business-color-maintaining-your-cleaning-business.inline.svg";
-import CollapseWrapper from "../../atomic/organisms/tabs/collapse";
-import PanelWrapper from "../../atomic/organisms/tabs/panel";
-import { Heading } from "../../atomic/atoms/typography/heading";
-import { Paragraph } from "../../atomic/atoms/typography/paragraph";
-import TextBoxed from "../../atomic/molecules/static-check/circle-checkmark-text-boxed";
-import { color, gradient } from "../../atomic/atoms/styles/colors";
-import Oval from "../../atomic/atoms/icons/oval";
-import HeadingCenter from "../../atomic/partials/heading-center";
-import ContentCenter from "../../atomic/partials/content-center";
-import LightBoxVideo from "../../components/LightBox";
-import Curve2SVG from "../../images/curves/bottom-left-top-right-reverse-big.inline.svg";
-import Curve from "../../atomic/atoms/icons/curve";
-import GenericTable from "../../atomic/organisms/tables/generic-table";
-import TitleWithInfoBox from "../../atomic/molecules/blocks/table-title";
-import PacketsSection from "../../atomic/sections/learning-center-entity/alaska-corporation/packets";
-import Accordion from "../../atomic/organisms/accordion/accordion";
-import Adventages from "../../components/adventages";
-import Container from "../../atomic/container";
-import Rocket from "../../atomic/sections/learning-center-entity/alaska-corporation/rocket";
-import Colorbox from "../../atomic/molecules/blocks/left-icon-block-colored";
-import CorporationNameIcon from "../../images/icons/icon-learning-center-color-business-name-trademark.inline.svg";
+import SEO from "../components/seo";
+import Top from "../atomic/partials/top";
+import Buttonsbox from "../atomic/atoms/boxes/top-buttons-box";
+import Button from "../atomic/molecules/buttons/button";
+import Layout from "../components/layout";
+import { fillingRequirements, info, packets, questions, service, top, articlesOfIncorporation, corporationName } from "../static/learning-center-entity/alaska-corporation";
+import CartBlock from "../atomic/molecules/blocks/cart-block";
+import RatingBlock from "../atomic/molecules/blocks/rating-block";
+import RatingRow from "../atomic/atoms/boxes/rating-row";
+import TabsOvalOneSvg from "../images/ovals/bottom-left-transparent-pink.inline.svg";
+import OvalSvg2 from "../images/ovals/top-right-transparent-blue2.inline.svg";
+import OvalSvg3 from "../images/ovals/bottom-left-transparent-blue1.inline.svg";
+import OvalSvg4 from "../images/ovals/top-right-transparent-orange3.inline.svg";
+import TabsSection from "../atomic/partials/tabs";
+import TabHeading from "../atomic/organisms/tabs/TabHeading";
+import TabTitle from "../atomic/molecules/tabs/tab-title";
+import OverviewSVG from "../images/icons/icon-manage-your-company-color-business-license-research.inline.svg";
+import LightIcon from "../images/icons/light.inline.svg";
+import RegistratedAgentIcon from "../images/icons/icon-32-multi-color-registered-agent.inline.svg";
+import BylawsIcon from "../images/icons/icon-learning-center-color-how-to-guide.inline.svg";
+import DirectorsIcon from "../images/icons/icon-learning-center-color-all-ca-corporations-must-have-elected-board-of-directors.inline.svg";
+import TaxesIcon from "../images/icons/icon-learning-center-color-business-taxes.inline.svg";
+import ReportsIcon from "../images/icons/icon-start-a-business-color-maintaining-your-cleaning-business.inline.svg";
+import CollapseWrapper from "../atomic/organisms/tabs/collapse";
+import PanelWrapper from "../atomic/organisms/tabs/panel";
+import { Heading } from "../atomic/atoms/typography/heading";
+import { Paragraph } from "../atomic/atoms/typography/paragraph";
+import TextBoxed from "../atomic/molecules/static-check/circle-checkmark-text-boxed";
+import { color, gradient } from "../atomic/atoms/styles/colors";
+import Oval from "../atomic/atoms/icons/oval";
+import HeadingCenter from "../atomic/partials/heading-center";
+import ContentCenter from "../atomic/partials/content-center";
+import LightBoxVideo from "../components/LightBox";
+import Curve2SVG from "../images/curves/bottom-left-top-right-reverse-big.inline.svg";
+import Curve from "../atomic/atoms/icons/curve";
+import GenericTable from "../atomic/organisms/tables/generic-table";
+import TitleWithInfoBox from "../atomic/molecules/blocks/table-title";
+import PacketsSection from "../atomic/sections/learning-center-entity/alaska-corporation/packets";
+import Accordion from "../atomic/organisms/accordion/accordion";
+import Adventages from "../components/adventages";
+import Container from "../atomic/container";
+import Rocket from "../atomic/sections/learning-center-entity/alaska-corporation/rocket";
+import Colorbox from "../atomic/molecules/blocks/left-icon-block-colored";
+import CorporationNameIcon from "../images/icons/icon-learning-center-color-business-name-trademark.inline.svg";
 
 const AlaskaCorporation = () => (
   <Layout>
@@ -233,7 +233,7 @@ const AlaskaCorporation = () => (
         <Curve top="-115" left="80" rotate={180} color={color.blue2}>
           <Curve2SVG />
         </Curve>
-        <LightBoxVideo thumbnailVideo="comparison-chart-video-3611" videoID="372490609" vimeo />
+        <LightBoxVideo thumbnailVideo="comparison-chart-video-3611" videoID="oYZShvmf9eQ" />
       </ContentCenter>
 
       <ContentCenter contentWidth={970}>

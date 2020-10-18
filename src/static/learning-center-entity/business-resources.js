@@ -253,12 +253,21 @@ export const resources = {
     },
 };
 
+export const thanks_form = {
+    header: "Thank you",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis lacus vitae mi rutrum eleifend nec in nisi. Pellentesque ac neque fringilla, vehicula augue vitae, convallis libero.",
+    button: {
+        text: "Close",
+        url: "#"
+    }
+};
+
 export const form = {
     header: "Download: ",
     text: "From developing your business idea to measuring success, our free guide has all the info you need to get your business off the ground.",
     button: {
         text: "Download now",
-        url: "/"
+        url: "#"
     },
     fields: [
         {
