@@ -26,7 +26,7 @@ const Wrapper = styled.div`
   }
 
   svg {
-    ${props => props.rotate && `transform: rotate(${props.rotate}deg)`}; 
+    transform: ${(props) => (props.rotate ? `rotate(${props.rotate}deg)` : "")};
     path {
       fill: ${(props) => (props.color ? props.color : ``)};
     }

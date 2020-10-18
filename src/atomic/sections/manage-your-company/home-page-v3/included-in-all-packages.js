@@ -14,34 +14,6 @@ const Wrapper = styled.div`
   }
 `;
 
-const Anchor = styled.div`
-  position: relative;
-`;
-
-const ImageWrapper = styled.div`
-  width: ${(props) => props.width ?? 69}px;
-  position: absolute;
-
-  ${(props) => "top: " + props.top + "px" ?? ""};
-  ${(props) => "left: " + props.left + "px" ?? ""};
-  ${(props) => "right: " + props.right + "px" ?? ""};
-  ${(props) => "bottom: " + props.bottom + "px" ?? ""};
-`;
-
-const Content = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-
-  @media (min-width: 769px) {
-    max-width: ${(props) => (props.contentWidth ? `${props.contentWidth}px` : "")};
-  }
-
-  h2 {
-    text-align: left;
-  }
-`;
-
 const IncludedInAll = ({ className, content }) => (
   <Wrapper>
     <ContentCenter contentWidth={1140} className="section-content">
