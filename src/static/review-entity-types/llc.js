@@ -50,6 +50,15 @@ export const form = {
   ]
 };
 
+export const thanks_form = {
+  header: "Thank you",
+  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis lacus vitae mi rutrum eleifend nec in nisi. Pellentesque ac neque fringilla, vehicula augue vitae, convallis libero.",
+  button: {
+    text: "Close",
+    url: "#"
+  }
+};
+
 export const about = {
   tabs: {
     panels: [`General Information`, `When choose an LLC?`, `Pros and cons of an LLC`, `LLC requirements`, `Types of LLCs`],

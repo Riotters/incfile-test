@@ -9,29 +9,47 @@ import About from "../atomic/sections/review-entity-types/llc/about"
 import Faq from "../atomic/sections/review-entity-types/llc/faq";
 import Articles from "../components/partials/sections/articles";
 //Texts
-import { top, about, faq, form } from "../static/review-entity-types/llc"
+import {top, about, faq, form, thanks_form} from "../static/review-entity-types/llc"
 import styled from "styled-components";
 import {BusinessChecklistForm} from "../atomic/organisms/forms/business-checklist-form";
+import {Paragraph} from "../atomic/atoms/typography/paragraph";
+import {ThankYouContent} from "../atomic/partials/thank-you-modal-content";
 
 class LLC extends React.Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            modalVisible: false
+            modalVisible: false,
+            formSubmitted: false
         };
         this.popup = this.popup.bind(this);
+        this.postdownload = this.postdownload.bind(this);
     }
 
     popup(e) {
-        if (!e.target.className.includes("modal-overlay") && this.state.modalVisible === true) return;
+        if (!e.target.className.includes("modal-overlay") && !e.target.className.includes("modal-close") &&
+            this.state.modalVisible === true)
+            return;
 
         this.setState({
             modalVisible: !this.state.modalVisible,
         });
     }
 
+    postdownload(e) {
+        e.preventDefault();
+
+        this.setState({
+            modalVisible: this.state.modalVisible,
+            formSubmitted: true
+        });
+    }
+
     render() {
+        let modalClases = [ "lightbox-content" ];
+        if(this.state.formSubmitted) modalClases.push("form-submitted");
+
         return (
             <Layout>
                 <SEO title="Limited Liability Company | Should I start an LLC for my Business?" description="Learn about the benefits of forming an LLC, the legal protections it offers you, and if an LLC is the right choice for your business." />
@@ -46,8 +64,13 @@ class LLC extends React.Component {
                 <Faq content={faq} />
                 <Articles />
                 <LightBoxModal visible={this.state.modalVisible} onClick={this.popup} className="modal-overlay">
-                    <LightBoxContent style={{ pointerEvents: "all" }}>
-                        <BusinessChecklistForm content={form} />
+                    <LightBoxContent style={{ pointerEvents: "all" }} class={modalClases.join(" ")}>
+                        {!this.state.formSubmitted && (
+                            <BusinessChecklistForm content={form} postDownloadAction={this.postdownload.bind(this)} />
+                        )}
+                        {this.state.formSubmitted && (
+                            <ThankYouContent content={thanks_form} modalExit={this.popup.bind(this) } />
+                        )}
                     </LightBoxContent>
                 </LightBoxModal>
             </Layout>
@@ -71,6 +94,8 @@ const LightBoxModal = styled.div`
 `;
 
 const LightBoxContent = styled.div`
+  transition: height 0.5s, max-width .5s;
+
   background-color: #fff;
   width: 100%;
   max-width: 960px;
@@ -78,6 +103,12 @@ const LightBoxContent = styled.div`
   margin: 0 30px;
   max-height: 100vh;
   overflow-y: auto;
+  
+  &.form-submitted {
+    height: 40vh;
+    max-width: 500px;
+  }
+  
   @media screen and (min-width: 769px) {
     height: 95vh;
     padding-top: 0;
