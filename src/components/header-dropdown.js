@@ -356,8 +356,8 @@ const Header = ({ siteTitle }) => {
                   <Heading size={5} bottomMargin={10}>Form a business today</Heading>
                   <MenuItem><MenuLink to="/business-entity-quiz/">Business Type Quiz</MenuLink></MenuItem>
                   <MenuItem><MenuLink to="/business-entity-comparison/">Entity Comparison Chart</MenuLink></MenuItem>
-                  <MenuItem><MenuLink to="/state-filing-times/">State Filing Fees</MenuLink></MenuItem>
-                  <MenuItem><MenuLink to="/state-filing-fees/">State Filing Fees</MenuLink></MenuItem>
+                  <MenuItem><MenuLink to="/state-filing-times/">State Filing Times</MenuLink></MenuItem>
+                  <MenuItem><MenuLink to="/state-filing-fees/">State Filing Prices</MenuLink></MenuItem>
                     <MenuItem><MenuLink to="/compliance-filing-requirement/">Ongoing Filing Requirements</MenuLink></MenuItem>
                     <MenuItem><MenuLink to="/registered-agents/">About Registered Agents</MenuLink></MenuItem>
                     <MenuItem><MenuLink to="/business-license-tool/">Business License Requirements</MenuLink></MenuItem>

@@ -11,7 +11,7 @@ export const content = {
                 text: "We conduct a thorough name search with the state corporation database and will work with you as long as needed to find an available company name."
             },
             {
-                label: (<span><span>Registered Agent Service&nbsp;</span><span style={{color: color.orange1}}>(1st Year FREE)</span></span>),
+                label: `Registered Agent Service<span style={{color: ${ color.orange1 }}}>(1st Year FREE)</span>`,
                 header: "Registered Agent Service (1st Year FREE)",
                 text: `Every new incorporation order is eligible for 1 full year of FREE Registered Agent service. As your Registered Agent, we will use our address to accept official legal correspondence and then deliver it to you. This is an invaluable service that will eliminate junk mail and limit personal information available to third parties.`
             },
