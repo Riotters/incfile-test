@@ -11,6 +11,7 @@ export const top = {
   ],
 };
 
+const newLocal = `aaa`;
 export const howToGuide = [
   {
     type: `header`,
@@ -20,13 +21,18 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `The great state of Louisiana is located on the southeast coast of the U.S. and borders Mississippi, Arkansas and Texas. It’s a combination of unusual geography, a rich and vibrant culture and a growing economy, making it a very business-friendly state. It has the largest bulk cargo port in the world and is a center of tourism, agriculture and energy.`,
-    marginBottom: 16,
+    content: `The great state of Louisiana is located on the southeast coast of the U.S. and borders Mississippi, Arkansas and Texas. 
+    It’s a combination of unusual geography, a rich and vibrant culture and a growing economy, making it a very business-friendly state. 
+    It has the largest bulk cargo port in the world and is a center of tourism, agriculture and energy.`,
+    marginBottom: 0,
   },
   {
     type: `text`,
-    content: `If you want to start your own business in Louisiana, one of the best ways to do so is by forming a Louisiana LLC. Limited liability companies (LLCs) are a business entity designed for startups and small- and medium-sized businesses. Louisiana LLCs give you many of the protections and advantages of larger corporations without all the rules, regulations and compliance issues common to larger business entities. `,
-    marginBottom: 16,
+    content: `If you want to start your own business in Louisiana, one of the best ways to do so is by forming a Louisiana LLC.
+     Limited liability companies (LLCs) are a business entity designed for startups and small- and medium-sized businesses. Louisiana
+      LLCs give you many of the protections and advantages of larger corporations without all the rules, 
+    regulations and compliance issues common to larger business entities. `,
+    marginBottom: 0,
   },
   {
     type: `text`,
@@ -68,42 +74,43 @@ export const howToGuide = [
       items: [
         {
           question: `STEP 1: Gather Information for Your Members`,
-          answer: `First, you need to gather basic information about your LLC, including the names and addresses of the managers or members. The LLC members are typically the people who own and run the business. They are also the ones who can take profits out of the business to pay themselves.`,
+          answer: `First, you need to gather basic information about your LLC, including the names and addresses of the managers or members.
+           The LLC members are typically the people who own and run the business.
+           They are also the ones who can take profits out of the business to pay themselves.`,
         },
         {
           question: `STEP 2: Search for and Choose a Unique Business Name for Your Louisiana LLC`,
-          answer: `<p>You will need a distinctive and original name for your Louisiana LLC that’s not used by any other business in LA. To find out if another company is using your chosen business name, carry out a Louisiana business entity name search on the LA Secretary of State website.</p></br>
-                   <p>There are a few rules you’ll need to follow when choosing an LLC name. You can find out more in our guide to naming your Louisiana LLC.</p></br>
-                   <a href="/louisiana-llc/how-to-name-your-llc/"> Learn about Louisiana LLC business naming rules. </a>`,
+          answer: `You will need a distinctive and original name for your Louisiana LLC that’s not used by any other business in LA. To find out if another company is using your chosen business name,
+           carry out a Louisiana business entity name search on the LA Secretary of State website
+          There are a few rules you’ll need to follow when choosing an LLC name. You can find out more in our guide to searching for and naming your Louisiana LLC.
+          Learn about Louisiana LLC business naming rules.`,
         },
         {
           question: `STEP 3: Provide an Official Address for Your LA LLC`,
-          answer: `Every Louisiana LLC must have a designated street address. That could be your home address (if you’re running the company from your residence), your company’s office building or any physical address of your preference. The address can be outside the state of Louisiana, but it cannot be a P.O. Box.`,
+          answer: `Every Louisiana LLC must have a designated street address. That could be your home address (if you’re running the company from your residence),
+           your company’s office building or any physical address of your preference. 
+          The address can be outside the state of Louisiana, but it cannot be a P.O. Box.`,
         },
         {
           question: `STEP 4: Assign a Registered Agent for Your Louisiana LLC`,
-          answer: `<p>Every LA LLC must have a “Registered Agent.” This is an official position; the Registered Agent is someone who receives official legal and tax correspondence and has responsibility for filing reports with the Louisiana Secretary of State.</p></br>
+          answer: `Every LA LLC must have a “Registered Agent.” This is an official position; the Registered Agent is someone who receives official legal and tax correspondence and has responsibility for filing reports with the Louisiana Secretary of State.
 
-          <p>This position can be filled by you, another manager in the business or a dedicated Registered Agent service. Your LA Registered Agent must have a physical street address in Louisiana and must be present to receive important documents for your company during business hours. </p></br>
+          This position can be filled by you, another manager in the business or a dedicated Registered Agent service. Your LA Registered Agent must have a physical street address in Louisiana and must be present to receive important documents for your company during business hours. 
           
-          <p>At Incfile, all of our packages include a Louisiana Registered Agent service that is free for the first year and just $119 per year afterward. We also have a dashboard where you can log in and easily view any document your Registered Agent has received on your behalf.</p></br>
-          <a href="/louisiana-llc/registered-agents-louisiana-llc/">Learn more about Louisiana Registered Agents.</a>`,
+          At Incfile, all of our packages include a Louisiana Registered Agent service that is free for the first year and just $119 per year afterward. We also have a dashboard where you can log in and easily view any document your Registered Agent has received on your behalf.
+          <br>
+          Learn more about California Agents for Service of Process.`
+          
         },
         {
           question: `STEP 5: Get an Employer Identification Number (EIN) from the Internal Revenue Service`,
-          answer: `You will need an EIN to identify your business with the IRS. You use this number when filing and paying taxes or when submitting payroll information and payments for your employees. You can obtain one directly from the IRS, or we can get one for you as part of the Louisiana LLC business formation process.`,
+          answer: `You will need an EIN to identify your business to the IRS. You use this number when filing and paying
+           taxes or when submitting payroll information and payments for your employees. You can obtain one directly from the IRS,
+           or Incfile can get one for you as part of the Louisiana LLC business formation process.`,
         },
         {
           question: `STEP 6: File Articles of Organization with the Louisiana Secretary of State`,
-          answer: `<p> Once you've gathered all the information for your LLC, you’re ready for your official State of Louisiana LLC filing. You’ll need to file a formal document with the LA Secretary of State. This document is known as your “Articles of Organization,” and filing the document creates your Louisiana LLC. Here’s what is typically included:</p></br>
-                   <ul>
-                   <li> Your business name and address </li>
-                   <li> Details of your Registered Agent </li>
-                   <li> Purpose of your business </li>
-                   <li> Name of the incorporator </li>
-                   </ul>
-                   <p>You can file your Louisiana LLC Articles of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Louisiana. You only need to file your Articles of Organization once. </p></br>
-                   <a href="/form-order-now.php?entityType=LLC&entityState=LA/"> Form your LLC now </a>`,
+          answer: ``
         },
       ],
     },

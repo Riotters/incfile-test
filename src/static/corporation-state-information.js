@@ -7,207 +7,207 @@ export const states = {
   list: [
     {
       name: "Alabama",
-      url: "alabama-corporation",
+      url: "/alabama-corporation/",
     },
     {
       name: "Alaska",
-      url: "alaska-corporation",
+      url: "/alaska-corporation/",
     },
     {
       name: "Arizona",
-      url: "arizona-corporation",
+      url: "/arizona-corporation/",
     },
     {
       name: "Arkansas",
-      url: "arkansas-corporation",
+      url: "/arkansas-corporation/",
     },
     {
       name: "California",
-      url: "california-corporation",
+      url: "/california-corporation/",
     },
     {
       name: "Colorado",
-      url: "colorado-corporation",
+      url: "/colorado-corporation/",
     },
     {
       name: "Connecticut",
-      url: "connecticut-corporation",
+      url: "/connecticut-corporation/",
     },
     {
       name: "Delaware",
-      url: "delaware-corporation",
+      url: "/delaware-corporation/",
     },
     {
       name: "Florida",
-      url: "florida-corporation",
+      url: "/florida-corporation/",
     },
     {
       name: "Georgia",
-      url: "georgia-corporation",
+      url: "/georgia-corporation/",
     },
     {
       name: "Hawaii",
-      url: "hawaii-corporation",
+      url: "/hawaii-corporation/",
     },
     {
       name: "Idaho",
-      url: "idaho-corporation",
+      url: "/idaho-corporation/",
     },
     {
       name: "Illinois",
-      url: "illinois-corporation",
+      url: "/illinois-corporation/",
     },
     {
       name: "Indiana",
-      url: "indiana-corporation",
+      url: "/indiana-corporation/",
     },
     {
       name: "Iowa",
-      url: "iowa-corporation",
+      url: "/iowa-corporation/",
     },
     {
       name: "Kansas",
-      url: "kansas-corporation",
+      url: "/kansas-corporation/",
     },
     {
       name: "Kentucky",
-      url: "kentucky-corporation",
+      url: "/kentucky-corporation/",
     },
     {
       name: "Louisiana",
-      url: "louisiana-corporation",
+      url: "/louisiana-corporation/",
     },
     {
       name: "Maine",
-      url: "maine-corporation",
+      url: "/maine-corporation/",
     },
     {
       name: "Maryland",
-      url: "maryland-corporation",
+      url: "/maryland-corporation/",
     },
     {
       name: "Massachusetts",
-      url: "massachusetts-corporation",
+      url: "/massachusetts-corporation/",
     },
     {
       name: "Michigan",
-      url: "michigan-corporation",
+      url: "/michigan-corporation/",
     },
     {
       name: "Minnesota",
-      url: "minnesota-corporation",
+      url: "/minnesota-corporation/",
     },
     {
       name: "Mississippi",
-      url: "mississippi-corporation",
+      url: "/mississippi-corporation/",
     },
     {
       name: "Missouri",
-      url: "missouri-corporation",
+      url: "/missouri-corporation/",
     },
     {
       name: "Montana",
-      url: "montana-corporation",
+      url: "/montana-corporation/",
     },
     {
       name: "Nebraska",
-      url: "nebraska-corporation",
+      url: "/nebraska-corporation/",
     },
     {
       name: "Nevada",
-      url: "nevada-corporation",
+      url: "/nevada-corporation/",
     },
     {
       name: "New Hampshire",
-      url: "new-hampshire-corporation",
+      url: "/new-hampshire-corporation/",
     },
     {
       name: "New Jersey",
-      url: "new-jersey-corporation",
+      url: "/new-jersey-corporation/",
     },
     {
       name: "New Mexico",
-      url: "new-mexico-corporation",
+      url: "/new-mexico-corporation/",
     },
     {
       name: "New York",
-      url: "new-york-corporation",
+      url: "/new-york-corporation/",
     },
     {
       name: "North Carolina",
-      url: "north-carolina-corporation",
+      url: "/north-carolina-corporation/",
     },
     {
       name: "North Dakota",
-      url: "north-dakota-corporation",
+      url: "/north-dakota-corporation/",
     },
     {
       name: "Ohio",
-      url: "ohio-corporation",
+      url: "/ohio-corporation/",
     },
     {
       name: "Oklahoma",
-      url: "oklahoma-corporation",
+      url: "/oklahoma-corporation/",
     },
     {
       name: "Oregon",
-      url: "oregon-corporation",
+      url: "/oregon-corporation/",
     },
     {
       name: "Pennsylvania",
-      url: "pennsylvania-corporation",
+      url: "/pennsylvania-corporation/",
     },
     {
       name: "Rhode Island",
-      url: "rhode-island-corporation",
+      url: "/rhode-island-corporation/",
     },
     {
       name: "South Carolina",
-      url: "south-carolina-corporation",
+      url: "/south-carolina-corporation/",
     },
     {
       name: "South Dakota",
-      url: "south-dakota-corporation",
+      url: "/south-dakota-corporation/",
     },
     {
       name: "Tennessee",
-      url: "tennessee-corporation",
+      url: "/tennessee-corporation/",
     },
     {
       name: "Texas",
-      url: "texas-corporation",
+      url: "/texas-corporation/",
     },
     {
       name: "Utah",
-      url: "utah-corporation",
+      url: "/utah-corporation/",
     },
     {
       name: "Vermont",
-      url: "vermont-corporation",
+      url: "/vermont-corporation/",
     },
     {
       name: "Virginia",
-      url: "virginia-corporation",
+      url: "/virginia-corporation/",
     },
     {
       name: "Washington",
-      url: "washington-corporation",
+      url: "/washington-corporation/",
     },
     {
       name: "Washington DC",
-      url: "washington-dc-corporation",
+      url: "/washington-dc-corporation/",
     },
     {
       name: "West Virginia",
-      url: "west-virginia-corporation",
+      url: "/west-virginia-corporation/",
     },
     {
       name: "Wisconsin",
-      url: "wisconsin-corporation",
+      url: "/wisconsin-corporation/",
     },
     {
       name: "Wyoming",
-      url: "wyoming-corporation",
+      url: "/wyoming-corporation/",
     },
   ],
 };

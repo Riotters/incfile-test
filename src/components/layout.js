@@ -186,34 +186,33 @@ a {
 
 
 const Layout = ({ children, isDashboardPage, header }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
+    const data = useStaticQuery(graphql`
+        query SiteTitleQuery {
+        site {
+            siteMetadata {
+                title
+            }
         }
-      }
-    }
-  `)
+    }`);
 
-  return (
-    <>
-        <GlobalStyle />
-        {header === "v2" && !isDashboardPage && (
-            <HeaderAlt siteTitle={data.site.siteMetadata.title} />
-        )}
-        {header == null && !isDashboardPage && (
-            <Header siteTitle={data.site.siteMetadata.title} />
-        )}
-        <main>{children}</main>
-        {!isDashboardPage && <Footer />}
+    return (
+        <>
+            <GlobalStyle />
+            {header === "v2" && !isDashboardPage && (
+                <HeaderAlt siteTitle={data.site.siteMetadata.title} />
+            )}
+            {header == null && !isDashboardPage && (
+                <Header siteTitle={data.site.siteMetadata.title} />
+            )}
+            <main>{children}</main>
+            {!isDashboardPage && <Footer />}
         
-          {/** Use this element to append the lightbox video outside of main wrapper 
+            {/** Use this element to append the lightbox video outside of main wrapper 
            * So that it should be overlay entire of page
           */}
-        <div id="portal-lightbox"></div>
-    </>
-  )
+            <div id="portal-lightbox"></div>
+        </>
+    );
 };
 
 Layout.propTypes = {
