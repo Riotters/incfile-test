@@ -36,7 +36,7 @@ const Oval = styled.div`
     position: absolute; 
     bottom: 100px;
     left: 0;
-    width: 100%:
+    width: 100%;
     
     @media (min-width: 420px){
         width: 420px;
