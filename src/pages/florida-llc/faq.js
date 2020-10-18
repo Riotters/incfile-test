@@ -1,22 +1,22 @@
 import React from 'react';
-import Layout from '../../../components/layout';
-import SEO from '../../../components/seo';
+import Layout from '../../components/layout';
+import SEO from '../../components/seo';
 import styled from 'styled-components';
 
 // Components
-import Top from '../../../atomic/states-llc/top';
-import RatingRow from "../../../atomic/atoms/boxes/rating-row";
-import CartBlock from "../../../atomic/molecules/blocks/cart-block";
-import RatingBlock from "../../../atomic/molecules/blocks/rating-block";
-import LeftTabPages from '../../../atomic/states-llc/left-tab-pages';
-import MainPageContent from '../../../atomic/states-llc/page-content';
-import WrapperContent from '../../../atomic/states-llc/wrapper-content';
-import FaqSection from '../../../atomic/states-llc/texas/faq';
-import Rocket from "../../../atomic/sections/review-entity-types/c-corporation/rocket";
+import Top from '../../atomic/states-llc/top';
+import RatingRow from "../../atomic/atoms/boxes/rating-row";
+import CartBlock from "../../atomic/molecules/blocks/cart-block";
+import RatingBlock from "../../atomic/molecules/blocks/rating-block";
+import LeftTabPages from '../../atomic/states-llc/left-tab-pages';
+import MainPageContent from '../../atomic/states-llc/page-content';
+import WrapperContent from '../../atomic/states-llc/wrapper-content';
+import FaqSection from '../../atomic/states-llc/texas/faq';
+import Rocket from "../../atomic/sections/review-entity-types/c-corporation/rocket";
 
 // Content
-import { tabPages, rocket } from "../../../static/states-llc/texas/general";
-import { faqContent } from "../../../static/states-llc/texas/faq";
+import { tabPages, rocket } from "../../static/states-llc/texas/general";
+import { faqContent } from "../../static/states-llc/texas/faq";
 
 const Wrapper = styled.div`
     display: flex;

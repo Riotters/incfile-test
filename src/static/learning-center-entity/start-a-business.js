@@ -26,59 +26,59 @@ export const checkType = {
         buttons: [
           {
             header: `Amazon Seller`,
-            url: `/`,
+            url: `/start-a-business/amazon-business/`,
           },
           {
             header: `Digital Nomad`,
-            url: `/`,
+            url: `/start-a-business/digital-nomad-business/`,
           },
           {
             header: `Etsy`,
-            url: `/`,
+            url: `/start-a-business/etsy-business/`,
           },
           {
             header: `Franchise`,
-            url: `/`,
+            url: `/start-a-business/franchise-business/`,
           },
           {
             header: `No Money`,
-            url: `/`,
+            url: `/start-a-business/with-no-money-business/`,
           },
           {
             header: `Online`,
-            url: `/`,
+            url: `/start-a-business/online-business/`,
           },
           {
             header: `Home`,
-            url: `/`,
+            url: `/start-a-business/home-business/`,
           },
           {
             header: `Side`,
-            url: `/`,
+            url: `/start-a-business/side-business/`,
           },
           {
             header: `Women`,
-            url: `/`,
+            url: `/start-a-business/women-business/`,
           },
           {
             header: `Teen`,
-            url: `/`,
+            url: `/start-a-business/teen-business/`,
           },
           {
             header: `Summer`,
-            url: `/`,
+            url: `/start-a-business/summer-business/`,
           },
           {
             header: `Unique`,
-            url: `/`,
+            url: `/start-a-business/unique-business/`,
           },
           {
             header: `Blockchain`,
-            url: `/`,
+            url: `/start-a-business/blockchain/`,
           },
           {
             header: `Social Media Influencer`,
-            url: `/`,
+            url: `/start-a-business/social-media-influencer/`,
           },
         ],
       },
@@ -86,119 +86,119 @@ export const checkType = {
         buttons: [
           {
             header: `Bar or Club`,
-            url: `/`,
+            url: `/start-a-business/bar-nightclub/`,
           },
           {
             header: `Beauty Salon`,
-            url: `/`,
+            url: `/start-a-business/beauty-salon-business/`,
           },
           {
             header: `Catering`,
-            url: `/`,
+            url: `/start-a-business/catering-business/`,
           },
           {
             header: `T-shirt Printing`,
-            url: `/`,
+            url: `/start-a-business/shirt-business/`,
           },
           {
             header: `Cleaning`,
-            url: `/`,
+            url: `/start-a-business/cleaning-business/`,
           },
           {
             header: `Consulting`,
-            url: `/`,
+            url: `/start-a-business/consulting-business/`,
           },
           {
             header: `Landscaping`,
-            url: `/`,
+            url: `/start-a-business/landscaping-business/`,
           },
           {
             header: `Landromat`,
-            url: `/`,
+            url: `/start-a-business/laundromat-business/`,
           },
           {
             header: `Photography`,
-            url: `/`,
+            url: `/start-a-business/photography-business/`,
           },
           {
             header: `Real Estate`,
-            url: `/`,
+            url: `/start-a-business/real-estate-business/`,
           },
           {
             header: `Restaurant`,
-            url: `/`,
+            url: `/start-a-business/restaurant-business/`,
           },
           {
             header: `Dog Walking`,
-            url: `/`,
+            url: `/start-a-business/dog-walking-business/`,
           },
           {
             header: `Brewery`,
-            url: `/`,
+            url: `/start-a-business/brewery-business/`,
           },
           {
             header: `Daycare`,
-            url: `/`,
+            url: `/start-a-business/daycare-business/`,
           },
           {
             header: `Construction`,
-            url: `/`,
+            url: `/start-a-business/construction-company/`,
           },
           {
             header: `Publishing`,
-            url: `/`,
+            url: `/start-a-business/publishing-company-business/`,
           },
           {
             header: `Travel Agency`,
-            url: `/`,
+            url: `/start-a-business/travel-agency/`,
           },
           {
             header: `Gym`,
-            url: `/`,
+            url: `/start-a-business/gym-personal-training/`,
           },
           {
             header: `Event Planner`,
-            url: `/`,
+            url: `/start-a-business/event-planning/`,
           },
           {
             header: `Bookstore`,
-            url: `/`,
+            url: `/start-a-business/bookstore/`,
           },
           {
             header: `Food Truck`,
-            url: `/`,
+            url: `/start-a-business/food-truck/`,
           },
           {
             header: `B&B`,
-            url: `/`,
+            url: `/start-a-business/bed-and-breakfast/`,
           },
           {
             header: `Handyman`,
-            url: `/`,
+            url: `/start-a-business/handyman/`,
           },
           {
             header: `Botique Clothing`,
-            url: `/`,
+            url: `/start-a-business/boutique-clothing-business/`,
           },
           {
             header: `Moving Company`,
-            url: `/`,
+            url: `/start-a-business/moving-company/`,
           },
           {
             header: `Life Coach`,
-            url: `/`,
+            url: `/start-a-business/coach-business/`,
           },
           {
             header: `Airbnb Business`,
-            url: `/`,
+            url: `/start-a-business/airbnb/`,
           },
           {
             header: `Bakery Business`,
-            url: `/`,
+            url: `/start-a-business/bakery/`,
           },
           {
             header: `Record Label`,
-            url: `/`,
+            url: `/start-a-business/record-label/`,
           },
         ],
       },
@@ -210,19 +210,19 @@ export const businessStructure = {
   header: `Unsure which entity structure is best for your business?`,
   cards: [
     {
-      header: `LLC`,
+      header: `<a href="/limited-liability-company/">LLC</a>`,
       text: `Keep personal assets separate from the company. `,
     },
     {
-      header: `S – Corpotation`,
+      header: `<a href="/what-is-s-corporation/">S – Corpotation</a>`,
       text: `Keep personal assets separate from the company.`,
     },
     {
-      header: `C – Corporation`,
+      header: `<a href="/what-is-c-corporation/">C – Corporation</a>`,
       text: `Attractive to investors.`,
     },
     {
-      header: `Non-Profit`,
+      header: `<a href="/what-is-non-profit-corporation/">Non-Profit</a>`,
       text: `Donations can be recordedby donors as not taxable. `,
     },
   ],

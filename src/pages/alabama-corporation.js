@@ -1,49 +1,49 @@
 import React from "react";
 import styled from "styled-components";
-import SEO from "../../components/seo";
-import Top from "../../atomic/partials/top";
-import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
-import Button from "../../atomic/molecules/buttons/button";
-import Layout from "../../components/layout";
-import { fillingRequirements, info, packets, questions, service, top, articlesOfIncorporation, corporationName } from "../../static/learning-center-entity/alaska-corporation";
-import CartBlock from "../../atomic/molecules/blocks/cart-block";
-import RatingBlock from "../../atomic/molecules/blocks/rating-block";
-import RatingRow from "../../atomic/atoms/boxes/rating-row";
-import TabsOvalOneSvg from "../../images/ovals/bottom-left-transparent-pink.inline.svg";
-import OvalSvg2 from "../../images/ovals/top-right-transparent-blue2.inline.svg";
-import OvalSvg3 from "../../images/ovals/bottom-left-transparent-blue1.inline.svg";
-import OvalSvg4 from "../../images/ovals/top-right-transparent-orange3.inline.svg";
-import TabsSection from "../../atomic/partials/tabs";
-import TabHeading from "../../atomic/organisms/tabs/TabHeading";
-import TabTitle from "../../atomic/molecules/tabs/tab-title";
-import OverviewSVG from "../../images/icons/icon-manage-your-company-color-business-license-research.inline.svg";
-import LightIcon from "../../images/icons/light.inline.svg";
-import RegistratedAgentIcon from "../../images/icons/icon-32-multi-color-registered-agent.inline.svg";
-import BylawsIcon from "../../images/icons/icon-learning-center-color-how-to-guide.inline.svg";
-import DirectorsIcon from "../../images/icons/icon-learning-center-color-all-ca-corporations-must-have-elected-board-of-directors.inline.svg";
-import TaxesIcon from "../../images/icons/icon-learning-center-color-business-taxes.inline.svg";
-import ReportsIcon from "../../images/icons/icon-start-a-business-color-maintaining-your-cleaning-business.inline.svg";
-import CollapseWrapper from "../../atomic/organisms/tabs/collapse";
-import PanelWrapper from "../../atomic/organisms/tabs/panel";
-import { Heading } from "../../atomic/atoms/typography/heading";
-import { Paragraph } from "../../atomic/atoms/typography/paragraph";
-import TextBoxed from "../../atomic/molecules/static-check/circle-checkmark-text-boxed";
-import { color, gradient } from "../../atomic/atoms/styles/colors";
-import Oval from "../../atomic/atoms/icons/oval";
-import HeadingCenter from "../../atomic/partials/heading-center";
-import ContentCenter from "../../atomic/partials/content-center";
-import LightBoxVideo from "../../components/LightBox";
-import Curve2SVG from "../../images/curves/bottom-left-top-right-reverse-big.inline.svg";
-import Curve from "../../atomic/atoms/icons/curve";
-import GenericTable from "../../atomic/organisms/tables/generic-table";
-import TitleWithInfoBox from "../../atomic/molecules/blocks/table-title";
-import PacketsSection from "../../atomic/sections/learning-center-entity/alaska-corporation/packets";
-import Accordion from "../../atomic/organisms/accordion/accordion";
-import Adventages from "../../components/adventages";
-import Container from "../../atomic/container";
-import Rocket from "../../atomic/sections/learning-center-entity/alaska-corporation/rocket";
-import Colorbox from "../../atomic/molecules/blocks/left-icon-block-colored";
-import CorporationNameIcon from "../../images/icons/icon-learning-center-color-business-name-trademark.inline.svg";
+import SEO from "../components/seo";
+import Top from "../atomic/partials/top";
+import Buttonsbox from "../atomic/atoms/boxes/top-buttons-box";
+import Button from "../atomic/molecules/buttons/button";
+import Layout from "../components/layout";
+import { fillingRequirements, info, packets, questions, service, top, articlesOfIncorporation, corporationName } from "../static/learning-center-entity/alaska-corporation";
+import CartBlock from "../atomic/molecules/blocks/cart-block";
+import RatingBlock from "../atomic/molecules/blocks/rating-block";
+import RatingRow from "../atomic/atoms/boxes/rating-row";
+import TabsOvalOneSvg from "../images/ovals/bottom-left-transparent-pink.inline.svg";
+import OvalSvg2 from "../images/ovals/top-right-transparent-blue2.inline.svg";
+import OvalSvg3 from "../images/ovals/bottom-left-transparent-blue1.inline.svg";
+import OvalSvg4 from "../images/ovals/top-right-transparent-orange3.inline.svg";
+import TabsSection from "../atomic/partials/tabs";
+import TabHeading from "../atomic/organisms/tabs/TabHeading";
+import TabTitle from "../atomic/molecules/tabs/tab-title";
+import OverviewSVG from "../images/icons/icon-manage-your-company-color-business-license-research.inline.svg";
+import LightIcon from "../images/icons/light.inline.svg";
+import RegistratedAgentIcon from "../images/icons/icon-32-multi-color-registered-agent.inline.svg";
+import BylawsIcon from "../images/icons/icon-learning-center-color-how-to-guide.inline.svg";
+import DirectorsIcon from "../images/icons/icon-learning-center-color-all-ca-corporations-must-have-elected-board-of-directors.inline.svg";
+import TaxesIcon from "../images/icons/icon-learning-center-color-business-taxes.inline.svg";
+import ReportsIcon from "../images/icons/icon-start-a-business-color-maintaining-your-cleaning-business.inline.svg";
+import CollapseWrapper from "../atomic/organisms/tabs/collapse";
+import PanelWrapper from "../atomic/organisms/tabs/panel";
+import { Heading } from "../atomic/atoms/typography/heading";
+import { Paragraph } from "../atomic/atoms/typography/paragraph";
+import TextBoxed from "../atomic/molecules/static-check/circle-checkmark-text-boxed";
+import { color, gradient } from "../atomic/atoms/styles/colors";
+import Oval from "../atomic/atoms/icons/oval";
+import HeadingCenter from "../atomic/partials/heading-center";
+import ContentCenter from "../atomic/partials/content-center";
+import LightBoxVideo from "../components/LightBox";
+import Curve2SVG from "../images/curves/bottom-left-top-right-reverse-big.inline.svg";
+import Curve from "../atomic/atoms/icons/curve";
+import GenericTable from "../atomic/organisms/tables/generic-table";
+import TitleWithInfoBox from "../atomic/molecules/blocks/table-title";
+import PacketsSection from "../atomic/sections/learning-center-entity/alaska-corporation/packets";
+import Accordion from "../atomic/organisms/accordion/accordion";
+import Adventages from "../components/adventages";
+import Container from "../atomic/container";
+import Rocket from "../atomic/sections/learning-center-entity/alaska-corporation/rocket";
+import Colorbox from "../atomic/molecules/blocks/left-icon-block-colored";
+import CorporationNameIcon from "../images/icons/icon-learning-center-color-business-name-trademark.inline.svg";
 
 const AlaskaCorporation = () => (
   <Layout>
@@ -83,22 +83,21 @@ const AlaskaCorporation = () => (
               Choosing a Corporation Name
             </Heading>
             <Paragraph big>
-              Your new Alaska corporation‘s name cannot be the same as or deceptively similar to the name of any other Alaska business entity registered or reserved with the state. It also is not permitted to be the same as any non-registered business name that has been established in common law by
-              usage over a long period of time. The name must contain (at the end) the words “incorporated,” “corporation,” “limited,” or “company,” or an abbreviation of one of those terms.
+              The business name you choose for your new Alabama corporation must be readily distinguishable from all other registered and reserved Alabama business entities. It must end with either “Incorporated” or “Corporation” (or an abbreviation thereof)-or, if it is to be a banking corporation,
+              “Bank,” “Banking,” or “Bankers.” The name cannot state or imply that the corporation is organized for some purpose other than the one specified in its articles of incorporation.
             </Paragraph>
             <Paragraph big style={{ marginBottom: "56px" }}>
-              The name may not include language that states or implies that the corporation is organized for some purpose other than stated in its articles of incorporation, or that it is a municipality (city, borough, or village). However, the name is allowed to contain the name of a municipality.
+              You must reserve your new corporation’s name with the state filing office before filing your articles of incorporation. This costs $10 and is good for up to 120 days.
             </Paragraph>
-
-            <Colorbox color={color.orange3} content={corporationName} dotsColor={color.orange1} Icon={CorporationNameIcon} />
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Articles of Incorporation
             </Heading>
             <Paragraph big>
-              So that your Alaska corporation can actually start doing business in the state, you must file articles of incorporation with the Division of Banking, Securities, and Corporations in the Alaska Department of Commerce, Community, and Economic Development (DCCED). The filing fee is $250,
-              which includes a $100 biennial license fee that will be an ongoing requirement.
+              New Alabama corporations must file an original and two copies of your articles of incorporation with their local county probate judge before they can start conducting business as a corporation. Once the judge finds that the articles are in compliance with state law, he or she will
+              issue (publish) one certified copy of the articles, return one to the LLC, and forward the third within 10 days to the Corporate Section of the Alabama Secretary of State’s office. Filing requires a $40 fee payable to the Alabama Secretary of State, and another $35 payable to the
+              county probate judge, for a total of $75.
             </Paragraph>
             <Paragraph big>Your new LLC’s articles of incorporation must be signed by at least one person, called an incorporator, who must be at least 18 years old and a natural person (not a business entity). They must sign the articles and deliver them to the DCCED.</Paragraph>
 
@@ -233,7 +232,7 @@ const AlaskaCorporation = () => (
         <Curve top="-115" left="80" rotate={180} color={color.blue2}>
           <Curve2SVG />
         </Curve>
-        <LightBoxVideo thumbnailVideo="comparison-chart-video-3611" videoID="372490609" vimeo />
+        <LightBoxVideo thumbnailVideo="comparison-chart-video-3611" videoID="oYZShvmf9eQ" />
       </ContentCenter>
 
       <ContentCenter contentWidth={970}>

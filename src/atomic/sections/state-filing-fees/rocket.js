@@ -31,7 +31,7 @@ const Rocket = () => (
                     No Contracts. No Surprise.<br />
                     Only $0 + State Fee to Launch Your Business.
                 </Paragraph>
-                <Button theme="primary48" arrow width="239px" content={{url: "/", text: "Launch your business!"}} />
+                <Button theme="primary48" arrow width="239px" content={{url: `${process.env.ORDER_URL}/form-order-now.php`, text: "Launch your business!"}} />
             </Content>
         </Container>
     </Wrapper>

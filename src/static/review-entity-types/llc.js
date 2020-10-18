@@ -4,9 +4,59 @@ export const top = {
   button: [
     {
       text: "Download our complete LLC guide",
-      url: "/",
+      url: "#",
     },
   ],
+};
+
+export const form = {
+  header: "Download our Complete LLC Guide.",
+  text: "The total who, what, where, when and how guide to forming & maintaining a LLC.",
+  button: {
+    text: "Download now",
+    url: "/"
+  },
+  fields: [
+    {
+      label: "Email",
+      type: "email",
+      placeholder: "",
+    },
+    {
+      label: "First Name",
+      type: "text",
+      placeholder: "",
+    },
+    {
+      label: "Last Name",
+      type: "text",
+      placeholder: "",
+    },
+    {
+      label: "Phone number",
+      type: "text",
+      placeholder: "",
+    },
+    {
+      label: "I want to...",
+      type: "select",
+      placeholder: "Please select",
+      options: [
+        "Start a Business Soon",
+        "Start a Business Now",
+        "Grow a Business",
+      ]
+    },
+  ]
+};
+
+export const thanks_form = {
+  header: "Thank you",
+  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis lacus vitae mi rutrum eleifend nec in nisi. Pellentesque ac neque fringilla, vehicula augue vitae, convallis libero.",
+  button: {
+    text: "Close",
+    url: "#"
+  }
 };
 
 export const about = {
