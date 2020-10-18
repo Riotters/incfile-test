@@ -1380,7 +1380,7 @@ export const businessTaxes = [
     marginBottom: 16,
   },
   {
-    type: `arrow-links`,
+    type: `arrow-link`,
     content: {
       text: `Get details on the Maine state tax here.`,
       url: `https://portal.maine.gov/ezpay/welcome`,
@@ -1418,7 +1418,7 @@ export const businessTaxes = [
     marginBottom: 16,
   },
   {
-    type: `arrow-links`,
+    type: `arrow-link`,
     content: {
       text: `Get details on the Maine sales tax online here.`,
       url: `https://portal.maine.gov/salestax/welcome`,
@@ -1689,7 +1689,7 @@ export const requirements = {
                 content: `Ut tincidunt neque a viverra egestas. Suspendisse tempus metu.`,
               },
               {
-                type: `arrow-links`,
+                type: `arrow-link`,
                 content: {
                   text: `State Filing Times`,
                   url: `/`,
@@ -1697,7 +1697,7 @@ export const requirements = {
                 bottomMargin: 16,
               },
               {
-                type: `arrow-links`,
+                type: `arrow-link`,
                 content: {
                   text: `State Filing Prices`,
                   url: `/`,
