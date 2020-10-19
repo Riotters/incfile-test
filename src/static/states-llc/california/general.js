@@ -2,33 +2,33 @@ export const tabPages = {
   pages: [
     {
       name: `How To Guide`,
-      path: `/texas-llc/`,
+      path: `/california-llc/`,
     },
     {
       name: `Name Your Business`,
-      path: `/texas-llc/texas-business-names/`,
+      path: `/california-llc/california-business-names/`,
     },
     {
       name: `Registered Agent`,
-      path: `/texas-llc/registered-agents-texas-llc/`,
+      path: `/california-llc/registered-agents-california-llc/`,
     },
     {
       name: `Filing Fee & Requirements`,
-      path: `/texas-llc/fees-filing-requirements/`,
+      path: `/california-llc/fees-filing-requirements/`,
     },
     {
       name: `Business Taxes`,
-      path: `/texas-llc/business-taxes/`,
+      path: `/california-llc/business-taxes/`,
     },
     {
       name: `FAQ`,
-      path: `/texas-llc/faq/`,
+      path: `/california-llc/faq/`,
     },
     {
       name: `What To Do Next?`,
       path: `/other/after-forming-llc/`,
     },
-  ]
+  ],
 };
 
 export const rocket = {

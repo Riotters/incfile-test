@@ -1,10 +1,10 @@
 export const HomePageContent = {
     header: {
-        title: `How to Start an LLC in Illinois`,
+        title: `How to Start an LLC in Texas`,
         subline: `aaa`,
         boxes: [{
-                title: `Learn how to form a Illinois <br>LLC yourself`,
-                desc: `Read our DIY guide to Illinois LLC formation, with information on Registered Agents, naming rules, business licenses, and more.`,
+                title: `Learn how to form a Texas <br>LLC yourself`,
+                desc: `Read our DIY guide to Texas LLC formation, with information on Registered Agents, naming rules, business licenses, and more.`,
                 button: {
                     text: `Read The Guide`,
                     url: '/'
@@ -12,7 +12,7 @@ export const HomePageContent = {
             },
             {
                 title: `Have Incfile do the work for you <br><span style="color:#FD8550">$0 + State fee</span>`,
-                desc: `Incfile can take care of all your LLC formation paperwork—and we’ll do it for free. Just pay the required Illinois state fee ($125).`,
+                desc: `Incfile can take care of all your LLC formation paperwork—and we’ll do it for free. Just pay the required Texas state fee ($300).`,
                 button: {
                     text: `Form Your LLC Now`,
                     url: '/'
@@ -22,36 +22,36 @@ export const HomePageContent = {
     },
     content: {
         whyChoose: {
-            heading: "Why Incorporate Your LLC in Illinois?",
-            text1: "Illinois is a great place to start a business. A rich culture, beautiful cities like Miami and Orlando and access to many of the world’s best transport networks make the state home to some of the biggest businesses in the U.S. Companies like Publix, Tupperware, Burger King and more are proud to call Illinois home. Disney, one of the world’s largest entertainment companies, is famous for its Disney World theme park in Orlando.",
-            text2: `For most business owners, the fastest and easiest way to start a business in Illinois is by creating a Illinois LLC. A limited liability company (LLC) is a type of <a href="/entity-search/illinois-entity-search/">business entity</a> that’s ideal for startups and small- to medium-sized businesses. You get the advantages and protections of larger Illinois corporations, but with much simpler rules and regulations.`,
-            heading4: `To summarize, the benefits of starting a Illinois LLC include:`,
+            heading: "Why Choose Texas for Your LLC?",
+            text1: "The Lone Star state is a great place to start a business. A combination of natural resources, lots of land area and culturally diverse cities makes Texas a center of opportunity.",
+            text2: "For most business owners, the fastest and easiest way to start a business in Texas is by creating a Texas LLC. A Limited Liability Company (LLC) is a type of business entity that’s ideal for startups and small- to medium-sized businesses. You get the advantages and protections of larger Texas corporations but with much simpler rules and regulations.",
+            heading4: `The benefits of starting a Texas LLC:`,
             lists: [
                 `Separating and limiting your personal liability from your business liability and debts`,
-                `Quick and simple filing, management, compliance, regulations and administration of your Illinois LLC`,
+                `Quick and simple filing, management, compliance, regulations and administration of your Texas LLC`,
                 `Easy tax filing and potential advantages for tax treatment`,
-                `There are no state taxes in Illinois, so you get to keep more of your LLC earnings`,
+                `Texas doesn’t have a state income tax, so you keep more of your TX LLC earnings`,
             ],
             learnmore: `Learn more about the <a href="/limited-liability-company/">benefits of the LLC business structure.</a>`,
-            text3: `In this guide you’ll find information on starting your Illinois business, searching for and naming your LLC, registering your business, getting a Illinois Registered Agent, the fees you’ll need to pay, business taxes and much more.`,
+            text3: `In this guide you’ll find information on searching for and naming your TX LLC, getting a Texas Registered Agent, the fees you’ll need to pay, TX business taxes and much more. We also cover the various ways you’ll interact with the Texas Secretary of State, filing your LLC and your registration needs.`,
         },
         mainSteps: {
-            heading3: `Forming Your Illinois LLC Yourself: 6 Main Steps`,
+            heading3: `Forming Your Texas LLC Yourself: 6 Main Steps`,
             navSteps: [
                 {
-                    text: `<b>Step 1</b> - Complete a Illinois LLC Search and Choose a Unique Business Name`,
+                    text: `<b>Step 1</b> - Complete a Texas LLC Search and Choose a Unique Business Name`,
                     blockID: `step1`,
                 },
                 {
-                    text: `<b>Step 2</b> - Provide an Official Business Address for Your IL LLC`,
+                    text: `<b>Step 2</b> - Provide an Official Business Address for Your TX LLC`,
                     blockID: `step2`,
                 },
                 {
-                    text: `<b>Step 3</b> - Assign a Illinois Registered Agent`,
+                    text: `<b>Step 3</b> - Assign a Texas Registered Agent`,
                     blockID: `step3`,
                 },
                 {
-                    text: `<b>Step 4</b> - File Your Articles of Incorporation with the Illinois Division of Corporations`,
+                    text: `<b>Step 4</b> - File Your Certificate of Formation (Form 205) With the Texas Secretary of State`,
                     blockID: `step4`,
                 },
                 {
@@ -59,94 +59,98 @@ export const HomePageContent = {
                     blockID: `step5`,
                 },
                 {
-                    text: `<b>Step 6</b> - Create a Illinois LLC Operating Agreement`,
+                    text: `<b>Step 6</b> - Create a Texas LLC Operating Agreement`,
                     blockID: `step6`,
                 },
             ],
             step1: {
-                heading1: `Complete a Illinois LLC Search and Choose a Unique Business Name`,
-                text1: `You will need a distinctive and original name for your Illinois LLC that’s not used by any other business in IL. If you’re having trouble coming up with a name, try out Incfile’s <a href="/business-name-generator/">Business Name Generator</a> to brainstorm ideas. There are also a few naming rules you’ll need to follow, which you can read about in detail on our section on <a href="/llc-state-information/illinois-llc/illinois-business-names/">Illinois LLC Business Names.</a>`,
-                text2: `Once you’ve chosen a name, you’ll need to make sure it’s available in Illinois. To find out if another company is using your chosen business name, use Incfile’s fast and easy name search tool below. Alternatively, you can carry out a Illinois business entity name search on the IL Secretary of State website.`,
+                heading1: `Complete a Texas LLC Search and Choose a Unique Business Name`,
+                text1: `You will need a distinctive and original name for your Texas LLC that’s not used by any other business in TX. If you’re having trouble coming up with a name, try out Incfile’s <a href="/business-name-generator/">Business Name Generator</a> to brainstorm ideas. There are also a few naming rules you’ll need to follow, which you can read about in detail on our section on <a href="/texas-llc/texas-business-names/">Texas LLC Business Names.</a>`,
+                text2: `Once you’ve chosen a name, you’ll need to make sure it’s available in Texas. To find out if another company is using your chosen business name, use Incfile’s fast and easy name search tool below. Alternatively, you can carry out a Texas business entity name search on the TX Secretary of State website.`,
                 cta: {
                     title: `Incfile’s Business <br>Name Search Tool`,
-                    subtitle: `We’ll search the Illinois Secretary <br>of State registry for you.`,
+                    subtitle: `We’ll search the Texas Secretary <br>of State registry for you.`,
                     button: {
                         text: `Check Availability`,
-                        url: `/learning-center-entity/business-name-search/`,
+                        url: `/`,
                     }
                 }
             },
             step2: {
-                heading1: `Provide an Official Business Address for Your IL LLC`,
-                text1: `Every Illinois LLC must have a designated street address. That could be your home address (if you’re running the company from your residence), your company’s office building or any physical address of your preference. The address can be outside the state of Illinois and can be a P.O. Box.`,
+                heading1: `Provide an Official Business Address for Your TX LLC`,
+                text1: `Every Texas LLC must have a designated street address. That could be your home address (if you’re running the company from your residence), your company’s office building or any physical address of your preference. The address can be outside the state of Texas and can be a P.O. Box.`,
             },
             step3: {
-                heading1: `Assign a Illinois Registered Agent`,
-                text1: `Every IL LLC must have a Registered Agent. This is an official position; the Registered Agent is someone who receives official legal and tax correspondence and has responsibility for filing reports with the Illinois Department of State.`,
-                text2: `This position can be filled by you, another manager in the business or a dedicated Registered Agent service. Your Registered Agent must have a physical street address in Illinois and must be present to receive important documents for your company during business hours.`,
-                text3: `At Incfile, all of our packages include a Illinois Registered Agent service that is free for the first year and just $119 per year afterward. We also have a dashboard where you can log in and easily view any document your Registered Agent has received on your behalf.`,
+                heading1: `Assign a Texas Registered Agent`,
+                text1: `Every Texas LLC is required to have a “Registered Agent.” This is an official position; the Registered Agent is someone who receives official legal and tax correspondence and has responsibility for filing reports with the Texas Secretary of State.`,
+                text2: `This position can be filled by you, another manager in the business or a dedicated Registered Agent service. Your TX Registered Agent must have a physical street address in Texas and must be present to receive important documents for your company during business hours. In Texas, your Registered Agent must consent to this appointment using the Acceptance of Consent Form 401-A.`,
+                text3: `At Incfile, all of our packages include a Texas Registered Agent service that is free for the first year and just $119 per year afterward. We also have a dashboard where you can log in and easily view any document your Registered Agent has received on your behalf.`,
                 groupBtn1: [{
-                        header: `Learn More About Illinois Registered Agents`,
-                        url: `/llc-state-information/illinois-llc/registered-agents-illinois-llc/`,
+                        header: `Learn More About Texas Registered Agents`,
+                        url: `/`,
                     },
                     {
                         header: `Get A Free Registered Agent Whe You Incorporate With Incfile`,
-                        url: `/form-order-now.php?entityType=LLC&entityState=IL`,
+                        url: ``,
                     }
                 ]
             },
             step4: {
-                heading1: `File Your Certificate of Formation (Form 205) With the Illinois Secretary of State`,
-                text1: `Once you've gathered all the information for your Illinois LLC, you’ll need to file a formal document with the IL Department of State. This document is known as your Articles of Organization, and filing the document creates your Illinois LLC.`,
+                heading1: `File Your Certificate of Formation (Form 205) With the Texas Secretary of State`,
+                text1: `Once you've gathered all the information for your Texas LLC, you’ll need to file a formal document with the Texas Secretary of State. This document is known as your “Certificate of Formation,” and filing the document officially creates your Texas LLC.`,
                 lists: {
                     header: `Here’s what is typically included:`,
                     list: [
-                        `A cover letter with your name, address and daytime phone number`,
                         `Your business name and address`,
                         `Details of your Registered Agent`,
-                        `Names of managers or members of the LLC at the time of filing`,
-                        `Addresses of managers or members of the LLC at the time of filing`,
+                        `Governing authority`,
+                        `Purpose of the LLC`,
+                        `Supplemental provisions`,
+                        `Name of the organizer`,
+                        `Whether your LLC will be member-managed or manager-managed`,
                     ],
                 },
                 dowload_205_button: {
                     text: `Download Form 205`,
-                    url: `http://form.sunbiz.org/pdf/cr2e047.pdf`,
+                    url: `https://www.sos.state.tx.us/corp/forms/205_boc.pdf`,
                 },
-                text2: `You can file your Articles of Organization online on the <a href="https://dos.myillinois.com/sunbiz/start-business/efile/il-llc/" target="_blank" rel="noopener noreferrer">Sunbiz.org website</a>, mail in a form or have Incfile do it on your behalf for free. The State of Illinois charges a $125 fee to file and start an LLC in Illinois, but you only need to file your Articles of Organization once`,
+                text2: `You can file your Texas LLC Certificate of Formation online with the Texas <a href="https://direct.sos.state.tx.us/acct/acct-login.asp">SOSDirect</a> filing system, mail in a form to the Office of the Secretary of State, or have Incfile do it on your behalf. The state of Texas charges a $300 fee to file and start an LLC.`,
                 certificate_info: [{
                         text1: `File by Mail:`,
-                        text2: `New Filing Section <br>Division of Corporations <br>P.O. Box 6327 <br>Tallahassee, IL 32314`
+                        text2: `Secretary of State <br>P.O. Box 13697 <br>Austin, TX 78711`
                     },
                     {
                         text1: `Submit in Person:`,
-                        text2: `New Filing Section Division <br>The Centre of Tallahassee <br>2415 N. Monroe Street, Suite 810 <br>Tallahassee, IL 32303`
+                        text2: `James Earl Rudder Office Building<br> 1019 Brazos<br> Austin, TX 78701`
+                    },
+                    {
+                        text1: `Fax:`,
+                        text2: `(512) 463-5709`
                     },
                 ],
 
-                text3: `You only need to file your Articles of Organization with the State of Illinois once, but every year after you will need to file an annual report for your LLC, which has its own fees. This is also something Incfile can remind you to do or do for you if you choose to have us handle the paperwork.`,
+                text3: `You only need to file your Certificate of Formation once, but every year after you will also need to file an annual report for your LLC. This is also something Incfile can remind you to do / do for you if you choose to have us handle the paperwork.`,
                 cta: {
-                    title: `Have Incfile Handle all the Paperwork`,
-                    subtitle: `for You for $0 + the Illinois State fee`,
+                    title: `Have Incfile Handle <br>all the Paperwork`,
+                    subtitle: `for You for $0 + the Texas State fee`,
                     button: {
                         text: `Form Your LLC Now For Free`,
-                        url: `/form-order-now.php?entityType=LLC&entityState=IL`,
+                        url: `/`,
                     }
                 },
-                heading2: `Can I Expedite the Formation of My Business in Illinois?`,
-                text4: `The State of Illinois does not offer expedited filing for LLCs and will process online filings in the order in which they are received. Incfile can internally expedite your order to ensure the fastest delivery to the state for filing.`,
                 annualReport: [{
-                        title: `What are the fees and requirements to form a business in Illinois?`,
+                        title: `What are the fees and requirements to form a business in Texas?`,
                         items: [{
                                 text1: `State Fee`,
-                                text2: `$125`,
+                                text2: `$300`,
                             },
                             {
                                 text1: `State Filing Time`,
-                                text2: `25 Business Days`,
+                                text2: `1 Week`,
                             },
                             {
                                 text1: `Expedited Filing Time`,
-                                text2: `10 Business Days`,
+                                text2: `2 Business Days`,
                             },
                         ],
                     },
@@ -158,11 +162,11 @@ export const HomePageContent = {
                             },
                             {
                                 text1: `Due Date:`,
-                                text2: `May 1st`,
+                                text2: `Both reports are due between January 1st and no later than May 15th.`,
                             },
                             {
                                 text1: `Filing Fee:`,
-                                text2: `$139`,
+                                text2: `There is no charge for the Public Information Report. The Franchise Tax Fee is based on the revenue of the LLC.`,
                             },
                         ],
                     },
@@ -170,22 +174,22 @@ export const HomePageContent = {
             },
             step5: {
                 heading1: `Get an Employer Identification Number (EIN) From the Internal Revenue Service`,
-                text1: `You will need an EIN to identify your business to the IRS. You use this number when filing and paying taxes or when submitting payroll information and payments for your employees. You can obtain one directly from the IRS, or we can get one for you as part of the Illinois LLC business formation process.`,
+                text1: `You will need an EIN to identify your business to the IRS. You use this number when filing and paying taxes or when submitting payroll information and payments for your employees. An EIN number is also required to open a business bank account. You can obtain one directly from the IRS, or Incfile can get one for you as part of the Texas LLC business formation process.`,
             },
             step6: {
-                heading1: `Create a Illinois LLC Operating Agreement`,
-                text1: `An Operating Agreement is a kind of “instruction manual” that outlines how you will run your business. It includes how decisions are made, how the business is divided amongst members and what happens if a member leaves the company.`,
-                text2: `Many states require that a company have an Operating Agreement in place — it isn’t legally required in Illinois, but it’s a good idea to have one nonetheless.`,
+                heading1: `Create a Texas LLC Operating Agreement`,
+                text1: `An operating agreement is a kind of “instruction manual” that outlines how you will run your business. It includes how decisions are made, how the business is divided amongst members, and what happens if a member leaves the company.`,
+                text2: `Many states require that a company have an operating agreement in place—it isn’t legally required in Texas, but it’s a good idea to have one nonetheless.`,
                 button1: {
                     text: `Learn More About Operating Agreemets Here`,
-                    url: `/blog/post/operating-agreement-llc/`
+                    url: `/`
                 },
                 cta: {
-                    title: `Receive a personalized operating agreement`,
+                    title: `Receive a personalized <br>operating agreement`,
                     subtitle: `when you select Incfle’s Gold package`,
                     button: {
                         text: `Form Your LLC Now`,
-                        url: `/form-order-now.php?entityType=LLC&entityState=IL`,
+                        url: `/`,
                     }
                 }
             },
@@ -193,17 +197,38 @@ export const HomePageContent = {
         otherInfo: [{
                 type: `heading`,
                 size: 3,
-                content: `Other Important Illinois LLC Info`
+                content: `Other Important Texas LLC Info`
             },
             {
                 type: `heading`,
                 size: 4,
-                content: `Special Types of LLCs in Illinois`
+                content: `Special Types of LLCs in Texas`
             },
             {
                 type: `paragraph`,
-                content: `A regular Illinois LLC is suitable for most business needs, but you also have a few other options to incorporate a special type of LLC.`
-            },  
+                content: `A regular Texas LLC is suitable for most business needs, but you also have a few other options to incorporate a special type of LLC.`
+            },
+            {
+                type: `heading`,
+                size: 4,
+                content: `Series LLCs`
+            },
+            {
+                type: `paragraph`,
+                content: `In Texas, you also have the option to set up a “Series LLC” — these are specialized LLCs designed to allow you to manage multiple separate LLCs under one master, umbrella LLC. These can be very useful if you don’t want to set up a separate Texas LLC for every individual business you run.`
+            },
+            {
+                type: 'arrow-links',
+                content: [{
+                        text: `Decide if a Texas Series LLC is right for your new business.`,
+                        url: `https://www.incfile.com/blog/post/series-llc-why-need-one/`,
+                    },
+                    {
+                        text: `What Is a Series LLC in Texas and Why Might You Need One?`,
+                        url: `https://www.incfile.com/blog/post/series-llc-in-texas/`,
+                    }
+                ]
+            },
             {
                 type: `heading`,
                 size: 4,
@@ -211,69 +236,68 @@ export const HomePageContent = {
             },
             {
                 type: `paragraph`,
-                content: `Some states, including Illinois, allow certain occupations to form “Professional LLCs.” These types of business typically have specialized requirements and licensing.`
+                content: `Some states, including Texas, allow certain occupations to form “Professional LLCs.” These types of business typically have specialized requirements and licensing.`
             },
             {
                 type: `list-dot`,
                 content: {
-                    header: `Here are the occupations that the IL Secretary of State allows to form Illinois professional LLCs:`,
+                    header: `Here are the occupations that the TX Secretary of State allows to form Texas professional LLCs:`,
                     list: [
-                        `Certified public accountants`,
-                        `Public accountants`,
-                        `Chiropractic physicians`,
-                        `Dentists`,
-                        `Osteopathic physicians`,
-                        `Physicians and surgeons`,
                         `Doctors of medicine`,
-                        `Doctors of dentistry`,
-                        `Podiatric physicians`,
-                        `Chiropodists`,
-                        `Architects`,
+                        `Doctors of osteopathy`,
+                        `Podiatrists`,
+                        `Mental health professionals`,
+                        `Optometrists`,
+                        `Therapeutic optometrists`,
+                        `Chiropractors`,
+                        `Dentists`,
                         `Veterinarians`,
-                        `Attorneys at law`,
-                        `Life insurance agents`,
                     ],
                 }
             },
             {
+                type: `paragraph`,
+                content: `A Professional LLC is also subject to a state franchise tax.`
+            },
+            {
                 type: `heading`,
                 size: 4,
-                content: `Foreign LLCs in Illinois`
+                content: `Out-of-State / Foreign LLCs`
             },
             {
                 type: `paragraph`,
-                content: `If your business is already operating in another state and expanding to Illinois, you’ll need to form a Foreign LLC.`
+                content: `If your business is already operating in another state and expanding to Texas, you’ll need to form a foreign LLC.`
             },
             {
                 type: 'arrow-links',
                 content: [{
-                    text: `More information on Illinois filing and licensing requirements can be found here.`,
-                    url: `/llc-state-information/illinois-llc/fees-filing-requirements/`,
+                    text: `More information on Texas filing and licensing requirements can be found here.`,
+                    url: `/texas-llc/fees-filing-requirements/`,
                 }, ]
             },
             // Helpful resource
             {
                 type: `heading`,
                 size: 4,
-                content: `Read More Information from the Illinois Department of State`
+                content: `Helpful Resources from the Texas Secretary of State`
             },
             {
                 type: `paragraph`,
-                content: `The IL Department of State has plenty of information on forming and running a business in Illinois.`
+                content: `The TX Secretary of State has plenty of additional information on forming and running a business in Texas.`
             },
             {
                 type: 'arrow-links',
                 content: [{
-                        text: `Illinois Department of State for forming and running your LLC`,
-                        url: `https://dos.myillinois.com/sunbiz/start-business/know-before-starting/`,
+                        text: `Texas Secretary of State for forming and running your TX LLC`,
+                        url: `https://www.sos.state.tx.us/corp/index.shtml`,
                     },
                     {
-                        text: `Illinois Department of Economic Opportunity for employers and hiring`,
-                        url: `http://www.illinoisjobs.org/`,
+                        text: `Texas Workforce Commission for TX employers and hiring`,
+                        url: `https://twc.texas.gov/businesses`,
                     },
                     {
-                        text: `Illinois Department of Revenue for taxes`,
-                        url: `https://illinoisrevenue.com/Pages/info_business.aspx`,
+                        text: `Texas Comptroller for TX taxes`,
+                        url: `https://comptroller.texas.gov/taxes/`,
                     },
                 ]
             },
@@ -294,19 +318,19 @@ export const HomePageContent = {
                     style: {
                         marginBottom: `24px`
                     },
-                    text: `Naming Your Illinois LLC`,
-                    url: `/llc-state-information/illinois-llc/illinois-business-names/`,
+                    text: `Naming Your Texas LLC`,
+                    url: `/texas-llc/texas-business-names/`,
                 }, ],
             },
             {
                 type: `paragraph`,
-                content: `How to search the Illinois business registry of the IL Secretary of State and find the right name. Includes information on naming rules, fictitious names, reserving a Illinois LLC name and more.`
+                content: `How to search the Texas business registry of the TX Secretary of State and find the right name. Includes information on naming rules, fictitious names, reserving a Texas LLC name and more.`
             },
             {
                 type: 'button',
                 theme: `secondary56`,
                 content: {
-                    text: `Search For Your illinois LLC Name`,
+                    text: `Search For Your texas LLC Name`,
                     url: `/`,
                 },
             },
@@ -316,13 +340,13 @@ export const HomePageContent = {
                     style: {
                         marginBottom: `24px`
                     },
-                    text: `Illinois Registered Agents`,
-                    url: `/llc-state-information/illinois-llc/registered-agents-illinois-llc/`,
+                    text: `Texas Registered Agents`,
+                    url: `/texas-llc/registered-agents-texas-llc/`,
                 }, ],
             },
             {
                 type: `paragraph`,
-                content: `How to appoint a Illinois Registered Agent to your new LLC or change to a different Registered Agent. Includes information on Registered Agent rules and searching for Illinois Registered Agents.`
+                content: `How to appoint a Texas Registered Agent to your new LLC or change to a different Registered Agent. Includes information on Registered Agent rules and searching for Texas Registered Agents.`
             },
             {
                 type: 'arrow-links',
@@ -330,13 +354,13 @@ export const HomePageContent = {
                     style: {
                         marginBottom: `24px`
                     },
-                    text: `Fees and Requirements for Your Illinois LLC`,
-                    url: `/llc-state-information/illinois-llc/fees-filing-requirements/`,
+                    text: `Fees and Requirements for Your Texas LLC`,
+                    url: `/texas-llc/fees-filing-requirements/`,
                 }, ],
             },
             {
                 type: `paragraph`,
-                content: `How to understand the various fees you’ll need to pay and the requirements you’ll need to meet for both federal and Illinois rules. Includes details of Employer Identification Numbers (EINs), Illinois and federal business licenses, Illinois annual reports and more.`
+                content: `How to understand the various fees you’ll need to pay and the requirements you’ll need to meet for both federal and Texas rules. Includes details of Employer Identification Numbers (EINs), Texas and federal business licenses, Texas annual reports and more.`
             },
             {
                 type: 'arrow-links',
@@ -344,13 +368,13 @@ export const HomePageContent = {
                     style: {
                         marginBottom: `24px`
                     },
-                    text: `Business Taxes for Your Illinois LLC`,
-                    url: `/llc-state-information/illinois-llc/business-taxes/`,
+                    text: `Business Taxes for Your Texas LLC`,
+                    url: `/texas-llc/business-taxes/`,
                 }, ],
             },
             {
                 type: `paragraph`,
-                content: `How to understand the various taxes you will need to pay to the federal and Illinois government. Includes details of federal taxes like income and self-employment and Illinois taxes like sales tax and income tax.`
+                content: `How to understand the various taxes you will need to pay to the federal and Texas government. Includes details of federal taxes like income and self-employment and Texas taxes like sales tax and income tax.`
             },
         ],
     },
