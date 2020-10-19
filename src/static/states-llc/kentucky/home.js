@@ -1350,7 +1350,7 @@ export const businessTaxes = [
     marginBottom: 16,
   },
   {
-    type: `arrow-links`,
+    type: `arrow-link`,
     content: {
       text: `Get details on the Kentucky sales tax online here.`,
       url: `https://revenue.ky.gov/Business/Sales-Use-Tax/Pages/default.aspx`,
@@ -1621,7 +1621,7 @@ export const requirements = {
                 content: `Ut tincidunt neque a viverra egestas. Suspendisse tempus metu.`,
               },
               {
-                type: `arrow-links`,
+                type: `arrow-link`,
                 content: {
                   text: `State Filing Times`,
                   url: `/`,
@@ -1629,7 +1629,7 @@ export const requirements = {
                 bottomMargin: 16,
               },
               {
-                type: `arrow-links`,
+                type: `arrow-link`,
                 content: {
                   text: `State Filing Prices`,
                   url: `/`,

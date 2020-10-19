@@ -1643,7 +1643,7 @@ export const requirements = {
                 content: `Ut tincidunt neque a viverra egestas. Suspendisse tempus metu.`,
               },
               {
-                type: `arrow-links`,
+                type: `arrow-link`,
                 content: {
                   text: `State Filing Times`,
                   url: `/`,
@@ -1651,7 +1651,7 @@ export const requirements = {
                 bottomMargin: 16,
               },
               {
-                type: `arrow-links`,
+                type: `arrow-link`,
                 content: {
                   text: `State Filing Prices`,
                   url: `/`,
