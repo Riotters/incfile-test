@@ -21,10 +21,6 @@ export const tabPages = {
       path: `/georgia-llc/business-taxes/`,
     },
     {
-      name: `FAQ`,
-      path: `/georgia-llc/faq/`,
-    },
-    {
       name: `What To Do Next?`,
       path: `/other/after-forming-llc/`,
     },
