@@ -27,7 +27,7 @@ const FieldWrapper = styled.div`
     margin-bottom: 15px;
 `;
 
-export const BusinessChecklistForm = ({ className, content }) => (
+export const BusinessChecklistForm = ({ className, content, postDownloadAction }) => (
     <Wrapper>
         <Heading size={3}>{content.header}</Heading>
         <Paragraph big>{content.text}</Paragraph>
@@ -40,6 +40,6 @@ export const BusinessChecklistForm = ({ className, content }) => (
                 </Label>
             </FieldWrapper>
         ))}
-        <Button theme="primary56" arrow content={content.button} />
+        <Button theme="primary56" arrow  onClick={postDownloadAction} content={content.button} />
     </Wrapper>
 );

@@ -1379,7 +1379,7 @@ export const businessTaxes = [
     marginBottom: 16,
   },
   {
-    type: `arrow-links`,
+    type: `arrow-link`,
     content: {
       text: `Get details on the Nevada sales tax online here.`,
       url: `https://www.nevadatax.nv.gov/`,
@@ -1540,7 +1540,7 @@ export const businessTaxes = [
     marginBottom: 16,
   },
   {
-    type: `arrow-links`,
+    type: `arrow-link`,
     content: {
       text: `Get more requirements from the Nevada Department of Business and Industry website.`,
       url: `http://business.nv.gov/`,
@@ -1663,7 +1663,7 @@ export const requirements = {
                 content: `Ut tincidunt neque a viverra egestas. Suspendisse tempus metu.`,
               },
               {
-                type: `arrow-links`,
+                type: `arrow-link`,
                 content: {
                   text: `State Filing Times`,
                   url: `/`,
@@ -1671,7 +1671,7 @@ export const requirements = {
                 bottomMargin: 16,
               },
               {
-                type: `arrow-links`,
+                type: `arrow-link`,
                 content: {
                   text: `State Filing Prices`,
                   url: `/`,

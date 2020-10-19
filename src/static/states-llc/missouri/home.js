@@ -1302,7 +1302,7 @@ export const businessTaxes = [
     marginBottom: 16,
   },
   {
-    type: `arrow-links`,
+    type: `arrow-link`,
     content: {
       text: `Get details on the Missouri state tax here.`,
       url: `https://dor.mo.gov/personal/`,
@@ -1340,7 +1340,7 @@ export const businessTaxes = [
     marginBottom: 16,
   },
   {
-    type: `arrow-links`,
+    type: `arrow-link`,
     content: {
       text: `Get details on the Missouri sales tax here.`,
       url: `https://mytax.mo.gov/rptp/portal/home/fileandpaybusinesstaxesonline/!ut/p/z1/jc9LC4JAEADg39LBqzM-Eum2dFAsEhEfzSWUbDXUldX8_S0WdClpLvPgm4EBghyoL-aGF1Mj-qJV_Zmci2mgafh7DDGNbIxUOsWBg3iwIVsA_giGQP_srwBaP58BLcRyce_5aAZeEpvIQpbYKQtUZb_Byo0AiLeifL3L-tJyOZCsbpWspP6QalxP0zDuNNTwKqTeCZ2LWcNvvBbjBPlHwdAlOd637XxkmycYuLyS/dz/d5/L2dBISEvZ0FBIS9nQSEh/`,
@@ -1512,7 +1512,7 @@ export const businessTaxes = [
     marginBottom: 16,
   },
   {
-    type: `arrow-links`,
+    type: `arrow-link`,
     content: {
       text: `Get more requirements from the Missouri Department of Labor website.`,
       url: `https://www.mo.gov/government/guide-to-missouris-government/department-of-labor-and-industrial-relations/`,
@@ -1636,7 +1636,7 @@ export const requirements = {
                 content: `Ut tincidunt neque a viverra egestas. Suspendisse tempus metu.`,
               },
               {
-                type: `arrow-links`,
+                type: `arrow-link`,
                 content: {
                   text: `State Filing Times`,
                   url: `/`,
@@ -1644,7 +1644,7 @@ export const requirements = {
                 bottomMargin: 16,
               },
               {
-                type: `arrow-links`,
+                type: `arrow-link`,
                 content: {
                   text: `State Filing Prices`,
                   url: `/`,

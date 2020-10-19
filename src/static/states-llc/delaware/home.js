@@ -21,7 +21,7 @@ export const howToGuide = [
   {
     type: 'text',
     content: '<iframe width="720" height="350" src="https://www.youtube.com/embed/imnAJolDWoU?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>',
-    marginBotton: 32,
+    marginBottom: 32,
   },
   {
     type: `text`,

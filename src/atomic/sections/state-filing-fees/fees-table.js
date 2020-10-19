@@ -6,791 +6,85 @@ import {shadow} from "../../atoms/styles/shadows";
 import IconSvg from "../../../images/icon-32-status-x.inline.svg";
 import {Paragraph} from "../../atoms/typography/paragraph";
 
-const FeesTable = () => (
-    <Wrapper>
-        <Container>
-            <FeesTableWrapper>
-                <TableRow>
-                    <TableCell>State</TableCell>
-                    <TableCell>LLC</TableCell>
-                    <TableCell>C-Corp</TableCell>
-                    <TableCell>S-Corp</TableCell>
-                    <TableCell>Non-Profit</TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>Alabama</TableCell>
-                    <TableCell>
-                        <Price>$212</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$175</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$163</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$202</Price>
-                    </TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>Alaska</TableCell>
-                    <TableCell>
-                        <Price>$250</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$250</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$250</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$50</Price>
-                    </TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>Arizona</TableCell>
-                    <TableCell>
-                        <Price>$85</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$95</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$95</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$75</Price>
-                    </TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>Arkansas</TableCell>
-                    <TableCell>
-                        <Price>$50</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$50</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$50</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$50</Price>
-                    </TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>California</TableCell>
-                    <TableCell>
-                        <Price>$75</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$100</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$100</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$30</Price>
-                    </TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>Colorado</TableCell>
-                    <TableCell>
-                        <Price>$50</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$50</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$50</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$50</Price>
-                    </TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>Connecticut</TableCell>
-                    <TableCell>
-                        <Price>$250</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$250</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$250</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$50</Price>
-                    </TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>Delaware</TableCell>
-                    <TableCell>
-                        <Price>$110</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$109</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$109</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$105</Price>
-                    </TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>Florida</TableCell>
-                    <TableCell>
-                        <Price>$125</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$70</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$70</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$79</Price>
-                    </TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>Georgia</TableCell>
-                    <TableCell>
-                        <Price>$100</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$100</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$100</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$100</Price>
-                    </TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>Hawaii</TableCell>
-                    <TableCell>
-                        <Price>$50</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$50</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$50</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$26</Price>
-                    </TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>Idaho</TableCell>
-                    <TableCell>
-                        <Price>$100</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$100</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$100</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$31</Price>
-                    </TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>Illinois</TableCell>
-                    <TableCell>
-                        <Price>$154</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$179</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$179</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$52</Price>
-                    </TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>Indiana</TableCell>
-                    <TableCell>
-                        <Price>$98</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$98</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$98</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$98</Price>
-                    </TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>Iowa</TableCell>
-                    <TableCell>
-                        <Price>$50</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$50</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$50</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$20</Price>
-                    </TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>Kansas</TableCell>
-                    <TableCell>
-                        <Price>$160</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$80</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$80</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$20</Price>
-                    </TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>Kentucky</TableCell>
-                    <TableCell>
-                        <Price>$40</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$55</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$55</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$8</Price>
-                    </TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>Louisiana</TableCell>
-                    <TableCell>
-                        <Price>$105</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$75</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$75</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$80</Price>
-                    </TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>Maine</TableCell>
-                    <TableCell>
-                        <Price>$175</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$145</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$145</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$40</Price>
-                    </TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>Maryland</TableCell>
-                    <TableCell>
-                        <Price>$197</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$218</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$218</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$270</Price>
-                    </TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>Massachusetts</TableCell>
-                    <TableCell>
-                        <Price>$520</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$265</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$265</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$41</Price>
-                    </TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>Michigan</TableCell>
-                    <TableCell>
-                        <Price>$50</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$60</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$60</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$20</Price>
-                    </TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>Minnesota</TableCell>
-                    <TableCell>
-                        <Price>$155</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$155</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$155</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$90</Price>
-                    </TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>Mississippi</TableCell>
-                    <TableCell>
-                        <Price>$53</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$53</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$53</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$53</Price>
-                    </TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>Missouri</TableCell>
-                    <TableCell>
-                        <Price>$52</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$60</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$60</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$27</Price>
-                    </TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>Montana</TableCell>
-                    <TableCell>
-                        <Price>$70</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$70</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$70</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$20</Price>
-                    </TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>Nebraska</TableCell>
-                    <TableCell>
-                        <Price>$109</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$68</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$68</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$22</Price>
-                    </TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>Nevada</TableCell>
-                    <TableCell>
-                        <Price>$425</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$725</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$725</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$100</Price>
-                    </TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>New Hampshire</TableCell>
-                    <TableCell>
-                        <Price>$102</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$125</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$165</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$27</Price>
-                    </TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>New Jersey</TableCell>
-                    <TableCell>
-                        <Price>$130</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$130</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$130</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$79</Price>
-                    </TableCell>
-                </TableRow>
+const FeesTable = () => {
+    const [prices, setPrices] = React.useState([]);
+    const [llcSort, setLLCSort] = React.useState(false);
+    const [ccorpSort, setCCorpSort] = React.useState(false);
+    const [scorpSort, setSCorpSort] = React.useState(false);
+    const [nonSort, setNonSort] = React.useState(false);
 
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>New Mexico</TableCell>
-                    <TableCell>
-                        <Price>$50</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$100</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$100</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$25</Price>
-                    </TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>New York</TableCell>
-                    <TableCell>
-                        <Price>$205</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$130</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$130</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$75</Price>
-                    </TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>North Carolina</TableCell>
-                    <TableCell>
-                        <Price>$127</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$127</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$127</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$62</Price>
-                    </TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>North Dakota</TableCell>
-                    <TableCell>
-                        <Price>$135</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$100</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$100</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$40</Price>
-                    </TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>Ohio</TableCell>
-                    <TableCell>
-                        <Price>$99</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$100</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$100</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$99</Price>
-                    </TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>Oklahoma</TableCell>
-                    <TableCell>
-                        <Price>$104</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$52</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$52</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$35</Price>
-                    </TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>Oregon</TableCell>
-                    <TableCell>
-                        <Price>$100</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$100</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$100</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$50</Price>
-                    </TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>Pennsylvania</TableCell>
-                    <TableCell>
-                        <Price>$125</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$125</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$125</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$125</Price>
-                    </TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>Rhode Island</TableCell>
-                    <TableCell>
-                        <Price>$156</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$230</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$238</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$65</Price>
-                    </TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>South Carolina</TableCell>
-                    <TableCell>
-                        <Price>$50</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$310</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$310</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$50</Price>
-                    </TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>South Dakota</TableCell>
-                    <TableCell>
-                        <Price>$150</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$150</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$150</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$30</Price>
-                    </TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>Tennessee</TableCell>
-                    <TableCell>
-                        <Price>$308</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$108</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$108</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$103</Price>
-                    </TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>Texas</TableCell>
-                    <TableCell>
-                        <Price>$300</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$300</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$300</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$25</Price>
-                    </TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>Utah</TableCell>
-                    <TableCell>
-                        <Price>$76</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$76</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$76</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$20</Price>
-                    </TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>Vermont</TableCell>
-                    <TableCell>
-                        <Price>$125</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$125</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$125</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$75</Price>
-                    </TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>Virginia</TableCell>
-                    <TableCell>
-                        <Price>$100</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$75</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$75</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$175</Price>
-                    </TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>Washington</TableCell>
-                    <TableCell>
-                        <Price>$200</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$200</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$200</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$50</Price>
-                    </TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>Washington DC</TableCell>
-                    <TableCell>
-                        <Price>$220</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$220</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$220</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$80</Price>
-                    </TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>West Virginia</TableCell>
-                    <TableCell>
-                        <Price>$125</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$135</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$100</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$55</Price>
-                    </TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>Wisconsin</TableCell>
-                    <TableCell>
-                        <Price>$130</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$100</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$100</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$35</Price>
-                    </TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableCell><Button><IconSvg /></Button>Wyoming</TableCell>
-                    <TableCell>
-                        <Price>$102</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$102</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$102</Price>
-                    </TableCell>
-                    <TableCell>
-                        <Price>$27</Price>
-                    </TableCell>
-                </TableRow>
-            </FeesTableWrapper>
+    const fetchData = async () => {
+        const response = await fetch(`${process.env.INCFILE_API_URL}/getStatePrices`).then(response => response.json());
+        return response;
+    }
 
-            <Paragraph mixed big>
-                Compare state filing times side by side using our <Link to={`/`}>comparison tool</Link>.
+    const handleSortPrice = (entity) => {
+        let reSort = [...prices].sort((a, b) => {
+            if (entity === 'LLC') {
+                return llcSort ? a.LLC - b.LLC : b.LLC - a.LLC;
+            }
+
+            if (entity === 'CCorp') {
+                return ccorpSort ? a.CCorporation - b.CCorporation : b.CCorporation - a.CCorporation;
+            }
+
+            if (entity === 'SCorp') {
+                return scorpSort ? a.SCorporation - b.SCorporation : b.SCorporation - a.SCorporation;
+            }
+
+            if (entity === 'non') {
+                return nonSort ? a.nonprofit - b.nonprofit : b.nonprofit - a.nonprofit;
+            }
+        });
+
+        setPrices(reSort);
+    }
+
+    React.useEffect(() => {
+        fetchData().then((data) => {
+            setPrices(data);
+        })
+    }, []);
+
+    return (
+        <Wrapper>
+            <Container>
+                <FeesTableWrapper>
+                    <TableRow>
+                        <TableCell>State</TableCell>
+                        <TableCell style={{ cursor:`pointer` }} onClick={() => {setLLCSort(!llcSort); handleSortPrice(`LLC`)}}>LLC</TableCell>
+                        <TableCell style={{ cursor:`pointer` }} onClick={() => {setCCorpSort(!ccorpSort); handleSortPrice(`CCorp`)}}>C-Corp</TableCell>
+                        <TableCell style={{ cursor:`pointer` }} onClick={() => {setSCorpSort(!scorpSort); handleSortPrice(`SCorp`)}}>S-Corp</TableCell>
+                        <TableCell style={{ cursor:`pointer` }} onClick={() => {setNonSort(!nonSort); handleSortPrice(`non`)}}>Non-Profit</TableCell>
+                    </TableRow>
+
+                    {prices.length && prices.map((price, i) => (
+                        <TableRow key={i}>
+                            <TableCell>{price.state}</TableCell>
+                            <TableCell>
+                                <Price>${price.LLC}</Price>
+                            </TableCell>
+                            <TableCell>
+                                <Price>${price.CCorporation}</Price>
+                            </TableCell>
+                            <TableCell>
+                                <Price>${price.SCorporation}</Price>
+                            </TableCell>
+                            <TableCell>
+                                <Price>${price.nonprofit}</Price>
+                            </TableCell>
+                        </TableRow>
+                    ))}
+            
+                </FeesTableWrapper>
+
+                <Paragraph mixed big>
+                    Compare state filing times side by side using our <Link to={`/compare-state-filing-times/`}>comparison tool</Link>.
             </Paragraph>
-        </Container>
-    </Wrapper>
-);
+            </Container>
+        </Wrapper>
+    );
+};
 
 const Wrapper = styled.section`
    
@@ -810,13 +104,14 @@ const TableRow = styled.div`
     align-items: center;
     box-shadow: ${shadow.white1};
     background-color: white;
-    font-family: Avenir-Roman;
+    font-family: 'Avenir';
     font-size: 16px;
     line-height 24px;
     border-radius: 5px;
         
     &:first-child{
-        font-family: Avenir-Heavy;       
+        font-family: 'Avenir';
+        font-weight: 700;       
     }
 `;
 
