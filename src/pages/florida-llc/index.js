@@ -11,11 +11,11 @@ import WrapperContent from "../../atomic/states-llc/wrapper-content";
 import LeftTabPages from "../../atomic/states-llc/left-tab-pages";
 import MainPageContent from "../../atomic/states-llc/page-content";
 import Rocket from "../../atomic/sections/review-entity-types/c-corporation/rocket";
-import HowToGuide from "../../atomic/states-llc/texas/how-to-guide";
+import HowToGuide from "../../atomic/states-llc/florida/how-to-guide";
 
 // Content
-import { HomePageContent } from "../../static/states-llc/texas/home";
-import { tabPages, rocket } from "../../static/states-llc/texas/general";
+import { HomePageContent } from "../../static/states-llc/florida/home";
+import { tabPages, rocket } from "../../static/states-llc/florida/general";
 
 const Wrapper = styled.div`
   display: flex;
@@ -26,10 +26,10 @@ const Wrapper = styled.div`
   }
 `;
 
-function TexasLLCIndex() {
+function FloridaLLCIndex() {
   return (
     <Layout>
-      <SEO title="LLCs in Texas | Guide to Forming an LLC in Texas" description="Ready to form your Texas LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
+      <SEO title="LLCs in Florida | Guide to Forming an LLC in Florida" description="Ready to form your Florida LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
 
       <LinearBgHeader imageMapName="tx-map-2x">
         <HomeHeader content={HomePageContent.header} />
@@ -49,4 +49,4 @@ function TexasLLCIndex() {
   );
 }
 
-export default TexasLLCIndex;
+export default FloridaLLCIndex;

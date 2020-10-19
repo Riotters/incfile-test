@@ -2,33 +2,33 @@ export const tabPages = {
   pages: [
     {
       name: `How To Guide`,
-      path: `/texas-llc/`,
+      path: `/new-york-llc/`,
     },
     {
       name: `Name Your Business`,
-      path: `/texas-llc/texas-business-names/`,
+      path: `/new-york-llc/new-york-business-names/`,
     },
     {
       name: `Registered Agent`,
-      path: `/texas-llc/registered-agents-texas-llc/`,
+      path: `/new-york-llc/registered-agents-new-york-llc/`,
     },
     {
       name: `Filing Fee & Requirements`,
-      path: `/texas-llc/fees-filing-requirements/`,
+      path: `/new-york-llc/fees-filing-requirements/`,
     },
     {
       name: `Business Taxes`,
-      path: `/texas-llc/business-taxes/`,
+      path: `/tenew-yorkxas-llc/business-taxes/`,
     },
     {
       name: `FAQ`,
-      path: `/texas-llc/faq/`,
+      path: `/new-york-llc/faq/`,
     },
     {
       name: `What To Do Next?`,
       path: `/other/after-forming-llc/`,
     },
-  ]
+  ],
 };
 
 export const rocket = {
