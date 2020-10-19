@@ -8,15 +8,15 @@ import BgBoxBusinessNameSearchTool from "../../../images/icons/states/business-n
 
 export const businessNamesContent = {
   header: {
-    title: `Naming Your Texas LLC`,
-    subline: `Learn how to conduct a business entity search with the Texas Secretary of State and register your LLC name.`,
+    title: `Naming Your California LLC`,
+    subline: `Learn how to conduct a business entity search with the California Secretary of State and register your LLC name.`,
     boxes: [
       {
         title: `Incorporate today for <span style="color:#FD8550">$0 + State fee.</span>`,
-        desc: `Starting a Texas LLC? Have Incfile do all the paperwork for you for free.`,
+        desc: `Starting a California LLC? Have Incfile do all the paperwork for you for free.`,
         button: {
           text: `Form Your LLC Now`,
-          url: "/",
+          url: "https://www.incfile.com/form-order-now.php?entityType=LLC&entityState=CA",
         },
       },
     ],
@@ -24,16 +24,12 @@ export const businessNamesContent = {
   content: [
     {
       type: `paragraph`,
-      content: `Whether you’re searching for the right Texas business name or registering your LLC with the TX Secretary of State, we can help. We’ve got all the information you need on Texas business entity searches, LLC naming rules, fictitious names and registering your business.`,
+      content: `Your California business entity needs the perfect name, and we’re here to help. In this section, we’ll guide you through searching the CA Secretary of State business register, tell you about the rules for naming your business, describe “Fictitious Business Names” and get you started with registering your LLC.`,
     },
     {
       type: `heading`,
       size: 3,
-      content: `General Rules for LLC Names`,
-    },
-    {
-      type: `paragraph`,
-      content: `These rules typically apply to all LLCs, no matter what state they are formed in.`,
+      content: `Business Name Rules for California LLCs`,
     },
     {
       type: `accordingTabWithCountingLeft`,
@@ -44,7 +40,7 @@ export const businessNamesContent = {
           answer: [
             {
               type: `paragraph`,
-              content: `The business name you have chosen cannot be used by any other LLC or corporation in the state of Texas. This is why you should check business name availability on the TX SOS website.`,
+              content: `The business name you have chosen cannot be used by any other LLC or corporation in the state of California. This is why you should check business name availability on the CA SOS website or Incfile’s <a href="/california-entity-search/">free Business Name Search</a>`,
             },
           ],
         },
@@ -54,7 +50,7 @@ export const businessNamesContent = {
           answer: [
             {
               type: `paragraph`,
-              content: `It’s not enough for your TX LLC name to be unique. It also cannot be similar to the name of a corporation or LLC in Texas. For example, you cannot use the following factors to say your name is different from the name of another business:`,
+              content: `It’s not enough for your CA LLC name to be unique. It also cannot be similar to the name of a corporation or LLC in California. For example, you cannot use the following factors to say your name is different from the name of another business:`,
             },
             {
               type: `list-dot-without-bg`,
@@ -88,7 +84,7 @@ export const businessNamesContent = {
             {
               type: `list-dot-without-bg`,
               content: [
-                `Are very similar to the name of a federal or TX agency or organization (e.g., FBI, FDA, Texas Comptroller, Texas Police, Treasury, etc.)`,
+                `Are very similar to the name of a federal or CA agency or organization (e.g., FBI, FDA, California Department of Taxation and Finance, California Police, Treasury, etc.)`,
                 `Suggest affiliation with a federal or state agency or organization`,
                 `Use the term “Olympic” or any terms that are trademarks of the Olympic organization`,
                 `Imply a purpose that it would be illegal for your business to carry out`,
@@ -96,30 +92,25 @@ export const businessNamesContent = {
             },
           ],
         },
+        {
+            count: 5,
+            question: `Avoid Using Words That Are Restricted or Prohibited by the California Secretary of State`,
+            answer: [
+              {
+                type: `list-dot-without-bg`,
+                content: [
+                  `The business name may not include the words "corporation, corp, trustee, bank, trust, incorporated or inc."`,
+                  `Your California business name cannot include any words suggesting you are an insurer or assume insurance risks.`,
+                  `The business name cannot include “Agency,” “Commission,” “Department,” “Bureau,” “Division,” “Municipal” or “Board.”`,
+                ],
+              },
+              {
+                type: `paragraph`,
+                content: `<a href="https://www.sos.ca.gov/administration/regulations/current-regulations/business/business-entity-names" target="_blank" rel="noopener noreferrer">Read More About California Business Naming Rules</a>`,
+              },
+            ],
+          },
       ],
-    },
-    {
-      type: `heading`,
-      size: 3,
-      content: `Specific Texas Rules for Business Names`,
-    },
-    {
-      type: `paragraph`,
-      content: `In addition to the general rules listed above, the Texas Secretary of State has some specific business naming rules for your LLC. You will need to follow these rules if you want to name your TX business appropriately. Here are some direct quotes from the Texas Secretary of State:`,
-    },
-    {
-      type: `numberBoxList`,
-      content: [
-        `Where prohibited by §31.005 and §181.004 of the Texas Finance Code, an entity name cannot include the words "bank," "bank and trust," "trust," "trust company" or a similar term, phrase or foreign language word unless accompanied by a no objection letter from the Banking Commissioner`,
-        `Where prohibited by §61.313 of the Texas Education Code, an entity name cannot include the words "College," "University," "School of Medicine," "Medical School," "Health Science Center," "School of Law," "Law Center," or "Law School," whether in English or in another language, unless accompanied by a no objection letter from the Texas Higher Education Coordinating Board`,
-        `Where prohibited by §5.062 of the Texas Business Organizations Code, an entity name cannot include the words "Veteran," "Legion," "Foreign," "Spanish," "Disabled," "War," or "World War" if the name implies the entity is created for the benefit of war veterans and their families, without written approval issued from a veterans organization pursuant to §5.062 of the Texas Business Organizations Code.`,
-        `The words "insurance" or "surety" must be accompanied by other words that remove the implication that the entity purpose is to be an insurer`,
-      ],
-    },
-    {
-      type: `paragraph`,
-      styles: { marginTop: `40px` },
-      content: `Read more about naming regulations from the <a href="https://direct.sos.state.tx.us/help/entitynames.pdf">Texas Secretary of State.</a>`,
     },
     {
       type: `heading`,
@@ -140,7 +131,7 @@ export const businessNamesContent = {
       width: `450px`,
       content: {
         text: `Incfile Guide To Choosing A Business Name`,
-        url: `https://www.incfile.com/blog/post/llc-name-search-50-states/`,
+        url: `/blog/post/llc-name-search-50-states/`,
       },
     },
     {
@@ -160,24 +151,16 @@ export const businessNamesContent = {
     {
       type: `heading`,
       size: 3,
-      content: `Texas Business Entity Searches`,
+      content: `California Business Entity Searches`,
     },
     {
       type: `paragraph`,
-      content: `Once you have an idea what business name you’d like to use, you’ll need to complete a “Texas business entity search.” Incfile offers a fast, simple and convenient tool to look up your proposed business name. The Texas Comptroller also has a tool that lets you search the register of TX LLCs and corporations to see if someone already has your desired business name.`,
-    },
-    {
-      type: `iconListColorBox`,
-      boxColor: color.orange3,
-      content: {
-        header: `The Texas Secretary of State search tool lets you enter details and search for your TX LLC by the following fields:`,
-        list: [`Tax ID`, `Entity Name`, `File Number`],
-      },
+      content: `Once you’ve narrowed it down to a few name options, it’s important to check with the California Secretary of State to make sure your preferred business name isn’t already taken by another California business. You can do this using the Secretary of State’s business search tool, or you can use Incfile’s free Business Name Search tool. The tool integrates with California’s business search database to find out if your name is available.`,
     },
     {
       type: `paragraph`,
       styles: { marginTop: `42px` },
-      content: `If the business name is already used, that means it’s not available and you won’t be able to register it. Try searching for a different business name instead.`,
+      content: `If our search shows the name is already in use, that means it’s not available and you won’t be able to register it. Try searching for a different business name instead.`,
     },
     {
       type: `box-cta`,
@@ -185,9 +168,9 @@ export const businessNamesContent = {
       styles: { fontSize: `clamp(1.5rem, 5vw, 1.2rem)` },
       bgImage: [BgBoxBusinessNameSearchTool],
       content: {
-        title: `Find out if your preferred business name is available in Texas with Incfile’s free tool.`,
+        title: `Find out if your preferred business name is available in California with Incfile’s free tool.`,
         button: {
-          text: `Check Your Texas LLC Name`,
+          text: `Check Your California LLC Name`,
           url: `/business-name-generator/`,
         },
       },
@@ -196,15 +179,15 @@ export const businessNamesContent = {
     {
       type: `heading`,
       size: 3,
-      content: `DBA / Assumed Names for Texas LLCs`,
+      content: `DBA / Assumed Names for California LLCs`,
     },
     {
       type: `paragraph`,
-      content: `You might choose to do business under a different name from your legal LLC name. In Texas, doing business under a different name is known as an “Assumed Name.” You might choose to use a different name from your TX formal LLC name for a variety of reasons.`,
+      content: `You might choose to do business under a different name from your legal LLC name. In California, doing business under a different name is known as an “Assumed Name.” You might choose to use a different name from your CA formal LLC name for a variety of reasons.`,
     },
     {
       type: `paragraph`,
-      content: `For example, your LLC might be called Texas Alternative Power Holding Company LLC and you have a chain called Home Solar Energy Systems. You should file an assumed name to let the Texas Secretary of State know. In Texas, you do that through an “Assumed Name Certificate” form or you can have Incfile do it on your behalf through our Assumed Business Name service.`,
+      content: `For example, your LLC might be called California Leisure and Travel Holding Company LLC, and you have a chain called Hollywood Bus Tours. You should file a fictitious name to let the California Secretary of State know. In California, you do that through filing a form with the county administration that your business is located in. You can also have Incfile do it on your behalf through our Fictitious Name service.`,
     },
     {
       type: `box-cta`,
@@ -219,30 +202,30 @@ export const businessNamesContent = {
         },
       },
     },
-    // Register Your Business Name With the Texas Secretary of State
+    // Register Your Business Name?
     {
       type: `heading`,
       size: 3,
-      content: `Register Your Business Name With the Texas Secretary of State`,
+      content: `Register Your Business Name?`,
     },
     {
       type: `paragraph`,
-      content: `Once you’ve searched for your Texas business name, checked availability, followed the naming rules and decided whether you need an assumed business name, you can register your TX LLC name. There are a couple of ways to do this.`,
+      content: `Once you’ve searched for your California business name, checked availability, followed the naming rules and decided whether you need a fictitious name, you can register your LLC name with California. There are a couple of ways to do this.`,
     },
     {
       type: `numberBoxList`,
       styles: { marginBottom: `55px` },
       content: [
         {
-          text: `If you don’t want to form your Texas LLC right now, you can reserve the business name with the Texas Secretary of State. You will need to complete a Name Reservation form and file it with the TX SOS. You do not need to reserve a name if you are forming your business right away.`,
+          text: `If you don’t want to form your California LLC right now, you can reserve the business name with the California Secretary of State. You will need to complete a Name Reservation form and file it with the CA SOS. You do not need to reserve a name if you are forming your business right away.`,
           button: {
-            text: `Texas SOS LLC Name Reservation Form`,
+            text: `California SOS LLC Name Reservation Form`,
             theme: `secondary56`,
             width: `385px`,
-            url: `/`,
+            url: `https://bpd.cdn.sos.ca.gov/corp/pdf/name-reservation-request-form.pdf`,
           },
         },
-        `If you’re ready to start your Texas LLC, you can formally file your Certificate of Formation with the Texas Secretary of State, or have Incfile do it for you.`,
+        `If you’re ready to start your California LLC, you can formally file your Certificate of Formation with the California Secretary of State, or have Incfile do it for you.`,
       ],
     },
     {
@@ -251,11 +234,11 @@ export const businessNamesContent = {
       styles: { fontSize: `clamp(1rem, 5vw, 1.5rem)` },
       bgImage: [BgBoxIncorporationPaperWork],
       content: {
-        title: `Incfile can handle all your incorporation paperwork with the State of Texas for you—and we’ll do it for free!`,
-        subtitle: `Incorporate in Texas for $0 + State Fee ($300)`,
+        title: `Incfile can handle all your incorporation paperwork with the State of California for you—and we’ll do it for free!`,
+        subtitle: `Incorporate in California for $0 + State Fee ($75)`,
         button: {
           text: `Start Your LLC Now`,
-          url: `/`,
+          url: `/form-order-now.php?entityType=LLC&entityState=CA`,
         },
       },
     },
@@ -263,7 +246,7 @@ export const businessNamesContent = {
     {
       type: `heading`,
       size: 3,
-      content: `FAQs About Naming Your Texas LLC`,
+      content: `FAQs About Naming Your California LLC`,
     },
     {
       type: `paragraph`,
@@ -274,20 +257,20 @@ export const businessNamesContent = {
       content: {
         items: [
           {
-            question: `How Do I Search for My Texas LLC Business Name?`,
-            answer: `Just go to the business name search tool and enter your proposed business name. You can search the register of the Texas Secretary of State, which will tell you if there are any TX corporations or LLCs with that name.`,
+            question: `How Do I Search for My California LLC Business Name?`,
+            answer: `Just go to the business name search tool and enter your proposed business name. You can search the register of the California Secretary of State, which will tell you if there are any CA corporations or LLCs with that name.`,
           },
           {
-            question: `Are There Any Rules on Naming My Texas LLC?`,
-            answer: `Yes. Most LLCs will be bound by general rules (applicable to all LLCs) and specific rules (applicable in the state of Texas). We’ve detailed these rules above.`,
+            question: `Are There Any Rules on Naming My California LLC?`,
+            answer: `Yes. Most LLCs will be bound by general rules (applicable to all LLCs) and specific rules (applicable in the state of California). We’ve detailed these rules above.`,
           },
           {
-            question: `Can I Do Business Under a Different Name Than My LLC Name in Texas?`,
+            question: `Can I Do Business Under a Different Name Than My LLC Name in California?`,
             answer: `Yes. Known as “assumed names,” “fictitious names,” “doing business as names” or “trade names,” you can choose to conduct business under a different name. Details are above.`,
           },
           {
-            question: `Can I Reserve a Name for My Texas LLC?`,
-            answer: `Yes. The Texas Secretary of State allows you to reserve a name if you don’t want to start your business immediately. Details are above. If you are ready to start your business now, you do not need to reserve a name.`,
+            question: `Can I Reserve a Name for My California LLC?`,
+            answer: `Yes. The California Secretary of State allows you to reserve a name if you don’t want to start your business immediately. Details are above. If you are ready to start your business now, you do not need to reserve a name.`,
           },
         ],
       },
@@ -300,7 +283,7 @@ export const businessNamesContent = {
     },
     {
       type: `paragraph`,
-      content: `You must be careful that your Texas LLC name does not infringe on the trademark or service mark of another business. The easiest way to make sure your proposed business name does not infringe is to carry out a trademark search through Incfile. If it doesn’t infringe, you can even register it as a trademark yourself.`,
+      content: `You must be careful that your California LLC name does not infringe on the trademark or service mark of another business. The easiest way to make sure your proposed business name does not infringe is to carry out a trademark search through Incfile. If it doesn’t infringe, you can even register it as a trademark yourself.`,
     },
     {
       type: `box-cta`,
