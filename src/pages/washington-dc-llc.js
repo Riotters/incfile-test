@@ -19,7 +19,7 @@ function LLCIndex() {
       <LLCLayout>
         <LeftTabPages content={tabPages} nonDIY />
         <MainPageContent>
-            <ContentMap content={howToGuide} />
+          <ContentMap content={howToGuide} />
         </MainPageContent>
       </LLCLayout>
     </Layout>
