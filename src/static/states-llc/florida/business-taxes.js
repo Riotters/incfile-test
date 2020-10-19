@@ -5,7 +5,7 @@ import BgBoxTreatAsAnScorp from '../../../images/treating-llc-as-an-scorp-01.png
 export const businessTaxesPageContent = {
     header: {
         title: `Business Taxes for Texas LLCs`,
-        subline: `Business taxes are a fact of life, and your TX LLC will need to pay a variety <br>of taxes to both the federal and Texas governments`,
+        subline: `Business taxes are a fact of life, and your CA LLC will need to pay a variety <br>of taxes to both the federal and Texas governments`,
         boxes: [{
             title: `Incorporate today for <span style="color:#FD8550">$0 + State fee.</span>`,
             desc: `Starting a Texas LLC? All of our incorporation packages include <br>a FREE business tax consultation.`,
@@ -31,7 +31,7 @@ export const businessTaxesPageContent = {
             content: [
                 `Texas LLC owners pay self-employment tax on business profits`,
                 `All LLC owners pay federal income tax on any profits less federal allowances or deductions`,
-                `Some TX LLCs pay Texas sales tax on products`,
+                `Some CA LLCs pay Texas sales tax on products`,
                 `Employers pay payroll tax on any salaries they pay to employees`,
                 `Employees pay federal and and payroll tax on their earnings`,
             ],
@@ -76,7 +76,7 @@ export const businessTaxesPageContent = {
         },
         {
             type: `paragraph`,
-            content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the TX Comptroller. Texas sales tax is collected at the point of purchase. Texas sales tax rates do vary depending on the region, county or city where you are located.`,
+            content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the CA Comptroller. Texas sales tax is collected at the point of purchase. Texas sales tax rates do vary depending on the region, county or city where you are located.`,
         },
         {
             type: `iconListColorBox`,
@@ -122,10 +122,10 @@ export const businessTaxesPageContent = {
             content: {
                 header: `Here are the sales tax rates for the major cities in Texas:`,
                 list: [
-                    `<strong>Houston, TX</strong> sales tax rate is <strong>8.25%</strong>`,
-                    `<strong>San Antonio, TX</strong> sales tax rate is <strong>8.25%</strong>`,
-                    `<strong>Dallas, TX</strong> sales tax rate is <strong>8.25%</strong>`,
-                    `<strong>Austin, TX</strong> sales tax rate is <strong>8.25%</strong>`,
+                    `<strong>Houston, CA</strong> sales tax rate is <strong>8.25%</strong>`,
+                    `<strong>San Antonio, CA</strong> sales tax rate is <strong>8.25%</strong>`,
+                    `<strong>Dallas, CA</strong> sales tax rate is <strong>8.25%</strong>`,
+                    `<strong>Austin, CA</strong> sales tax rate is <strong>8.25%</strong>`,
                 ],
             },
         },
