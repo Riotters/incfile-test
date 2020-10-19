@@ -2,33 +2,33 @@ export const tabPages = {
   pages: [
     {
       name: `How To Guide`,
-      path: `/texas-llc/`,
+      path: `/georgia-llc/`,
     },
     {
       name: `Name Your Business`,
-      path: `/texas-llc/texas-business-names/`,
+      path: `/georgia-llc/georgia-business-names/`,
     },
     {
       name: `Registered Agent`,
-      path: `/texas-llc/registered-agents-texas-llc/`,
+      path: `/georgia-llc/registered-agents-georgia-llc/`,
     },
     {
       name: `Filing Fee & Requirements`,
-      path: `/texas-llc/fees-filing-requirements/`,
+      path: `/georgia-llc/fees-filing-requirements/`,
     },
     {
       name: `Business Taxes`,
-      path: `/texas-llc/business-taxes/`,
+      path: `/georgia-llc/business-taxes/`,
     },
     {
       name: `FAQ`,
-      path: `/texas-llc/faq/`,
+      path: `/georgia-llc/faq/`,
     },
     {
       name: `What To Do Next?`,
       path: `/other/after-forming-llc/`,
     },
-  ]
+  ],
 };
 
 export const rocket = {

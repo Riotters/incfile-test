@@ -189,7 +189,6 @@ const HowToGuide = ({ content }) => {
                 widthUnit="%">
                 <Heading size={3}>{content.mainSteps.step4.heading1}</Heading>
                 <Paragraph big mixed={true}>{parse(content.mainSteps.step4.text1)}</Paragraph>
-                <IconListColorBox color={color.blue3} content={content.mainSteps.step4.lists} rounded />
                 <Button content={content.mainSteps.step4.dowload_205_button} theme="secondary56" arrow width="240px" margin="16px 0 0 0" marginMD="42px 0 42px 0" />
                 <Paragraph big mixed={true}>{parse(content.mainSteps.step4.text2)}</Paragraph>
 
@@ -197,12 +196,6 @@ const HowToGuide = ({ content }) => {
                     <AbsoluteShapeCurveElement right="-25px" top="-30px">
                         <ShapeCurve color={color.purple1} />
                     </AbsoluteShapeCurveElement>
-                    {content.mainSteps.step4.certificate_info.map(item => (
-                        <Whitebox flex padding="24px" bottomMargin="8px">
-                            <Paragraph mixed={true} bottomMargin={0} style={{ fontWeight: `bold`, minWidth: `300px` }}>{item.text1}</Paragraph>
-                            <Paragraph mixed={true} bottomMargin={0}>{parse(item.text2)}</Paragraph>
-                        </Whitebox>
-                    ))}
                 </RelativeElement>
                 <Paragraph big mixed={true}>{parse(content.mainSteps.step4.text3)}</Paragraph>
                 <BoxCTA bgColor={color.orange3} bgImage={BgBoxHandlePaperWorks} content={content.mainSteps.step4.cta} />

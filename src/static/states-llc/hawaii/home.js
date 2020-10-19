@@ -1041,7 +1041,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `Incfile's Hawaii business license research packageE`,
+      text: `Incfile's Hawaii business license research package`,
       url: `/business-license-research-package/`,
     },
     theme: `primary48`,

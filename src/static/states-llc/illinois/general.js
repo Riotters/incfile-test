@@ -2,33 +2,33 @@ export const tabPages = {
   pages: [
     {
       name: `How To Guide`,
-      path: `/texas-llc/`,
+      path: `/illinois-llc/`,
     },
     {
       name: `Name Your Business`,
-      path: `/texas-llc/texas-business-names/`,
+      path: `/illinois-llc/illinois-business-names/`,
     },
     {
       name: `Registered Agent`,
-      path: `/texas-llc/registered-agents-texas-llc/`,
+      path: `/illinois-llc/registered-agents-illinois-llc/`,
     },
     {
       name: `Filing Fee & Requirements`,
-      path: `/texas-llc/fees-filing-requirements/`,
+      path: `/illinois-llc/fees-filing-requirements/`,
     },
     {
       name: `Business Taxes`,
-      path: `/texas-llc/business-taxes/`,
+      path: `/illinois-llc/business-taxes/`,
     },
     {
       name: `FAQ`,
-      path: `/texas-llc/faq/`,
+      path: `/illinois-llc/faq/`,
     },
     {
       name: `What To Do Next?`,
       path: `/other/after-forming-llc/`,
     },
-  ]
+  ],
 };
 
 export const rocket = {

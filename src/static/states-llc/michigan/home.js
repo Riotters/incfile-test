@@ -1424,7 +1424,7 @@ export const businessTaxes = [
     marginBottom: 16,
   },
   {
-    type: `arrow-links`,
+    type: `arrow-link`,
     content: {
       text: `Get details on the Michigan state tax here.`,
       url: `https://www.michigan.gov/taxes/`,
@@ -1462,7 +1462,7 @@ export const businessTaxes = [
     marginBottom: 16,
   },
   {
-    type: `arrow-links`,
+    type: `arrow-link`,
     content: {
       text: `Get details on the Michigan sales tax here.`,
       url: `https://www.michigan.gov/taxes/0,4676,7-238-43519_43529---,00.html`,
@@ -1623,7 +1623,7 @@ export const businessTaxes = [
     marginBottom: 16,
   },
   {
-    type: `arrow-links`,
+    type: `arrow-link`,
     content: {
       text: `Get more requirements from the Michigan Bureau of Employment Relations website.`,
       url: `https://www.michigan.gov/leo/0,5863,7-336-94422_17485---,00.html`,
@@ -1747,7 +1747,7 @@ export const requirements = {
                 content: `Ut tincidunt neque a viverra egestas. Suspendisse tempus metu.`,
               },
               {
-                type: `arrow-links`,
+                type: `arrow-link`,
                 content: {
                   text: `State Filing Times`,
                   url: `/`,
@@ -1755,7 +1755,7 @@ export const requirements = {
                 bottomMargin: 16,
               },
               {
-                type: `arrow-links`,
+                type: `arrow-link`,
                 content: {
                   text: `State Filing Prices`,
                   url: `/`,

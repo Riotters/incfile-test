@@ -13,18 +13,18 @@ import { registeredAgent } from "../../static/states-llc/washington-dc/home";
 import { tabPages } from "../../static/states-llc/washington-dc/general";
 
 const RegisteredAgentPage = () => (
-  <Layout>
-    <SEO
-    title="Texas Business Search | How to Name Your TX LLC"
-    description="Learn what you need to know about naming an LLC in Texas with Incfile's helpful resources. Pick your perfect business name today!"
-    />
-    <LLCLayout>
-        <LeftTabPages content={tabPages} />
-        <MainPageContent>
-            <ContentMap content={registeredAgent} />
-        </MainPageContent>
-    </LLCLayout>
-  </Layout>
+    <Layout>
+        <SEO
+            title="Texas Business Search | How to Name Your TX LLC"
+            description="Learn what you need to know about naming an LLC in Texas with Incfile's helpful resources. Pick your perfect business name today!"
+        />
+        <LLCLayout>
+            <LeftTabPages content={tabPages} />
+            <MainPageContent>
+                <ContentMap content={registeredAgent} />
+            </MainPageContent>
+        </LLCLayout>
+    </Layout>
 );
 
 export default RegisteredAgentPage;
