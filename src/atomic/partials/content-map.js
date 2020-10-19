@@ -18,7 +18,6 @@ import AccordionWithCheckmark from "../organisms/acccordion-with-checkboxes";
 import BusinessNameSearchForm from "../organisms/forms/business-name-search-form";
 import ToolsList from "../organisms/lists/tools-list";
 import Mobile from "../../images/icons/mobile-compatibility.inline.svg";
-import {moreInfo} from "../../static/learning-center-entity/virtual-mailboxes";
 import TextBlockWithImage from "../../pages/virtual-mailbox";
 import GenericTable from "../organisms/tables/generic-table";
 
