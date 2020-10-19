@@ -82,7 +82,7 @@ export const about = {
           { text: `If you're interested in how to save additional money on taxes by filing your business as an S Corporation,` },
           {
             text: `check out our S Corporation Tax Calculator.`,
-            url: `/`,
+            url: `/s-corporation-tax-calculator/`,
           },
         ],
       },
@@ -375,24 +375,24 @@ export const entityType = {
   buttons: [
       {
           header: `LLC`,
-          url: `/`,
+          url: `/limited-liability-company/`,
       },
       {
-          header: `S-Corporation`,
-          url: `/`,
+          header: `S Corporation`,
+          url: `/what-is-s-corporation/`,
       },
       {
           header: `Nonprofit`,
-          url: `/`,
+          url: `/what-is-non-profit-corporation/`,
       },
       {
-          header: `C-Corporation`,
-          url: `/`,
+          header: `C Corporation`,
+          url: `/what-is-c-corporation/`,
       },
   ],
   button: {
     text: `Get started`,
-    url: `/`,
+    url: `${process.env.ORDER_URL}/form-order-now.php`,
   }
 }
 
@@ -402,8 +402,8 @@ export const rocket = {
   text: `No Contracts. No Surprise.`,
   text2: `Only $0 + State Fee to Launch Your Business.`,
   button: {
-    text: `launch your business`,
-    url: `/`,
+    text: `Launch your business`,
+    url: `${process.env.ORDER_URL}/form-order-now.php`,
   },
 };
 

@@ -44,7 +44,7 @@ const ResultItem = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: ${props => props.colorProperies.bg};
+    background-color: ${props => props.bg};
     border-radius: 5px;
     box-shadow: ${shadow.white2};
     height: 300px;
@@ -53,7 +53,7 @@ const ResultItem = styled.div`
 
     p{
         font-size: 32px;
-        color: ${props => props.colorProperies.color}
+        color: ${props => props.fontColor}
     }
 
     .result__item-btn-action{
@@ -97,38 +97,7 @@ const ResultItem = styled.div`
     }
 `
 
-const arrayColor = [
-    {
-        bg: `#29183c`,
-        color: `#caa748`,
-    },
-    {
-        bg: `#fff`,
-        color: `#349d60`
-    },
-    {
-        bg: `#f56b25`,
-        color: `#ffdb87`
-    },
-    {
-        bg: `#fff`,
-        color: `#bb6bd9`
-    },
-    {
-        bg: `#f05c41`,
-        color: `#fff`
-    },
-    {
-        bg: `#2D9CDB`,
-        color: `#fff`,
-    },
-    {
-        bg: `#903213`,
-        color: `#F2C94C`
-    }
-];
-
-const ResultSection = ({ content, keyword }) => {
+const ResultSection = ({ content, keyword, isLoading }) => {
     const [display, setDisplay] = useState('threeCol');
 
     const handleDisplayOption = option => {
@@ -138,7 +107,11 @@ const ResultSection = ({ content, keyword }) => {
     return (
         <Wrapper>
             <Paragraph big mixed={true} style={{ textAlign: `center`, fontWeight: `bold` }} bottomMargin={30} topMargin={80}>
-            {content.results.length} business name results with keyword "{keyword}"
+                {isLoading ?
+                    `Generating...`
+                    : 
+                    `${content.length} business name results with keyword "${keyword}"`
+                }
             </Paragraph>
 
             <DisplayOption>
@@ -149,12 +122,12 @@ const ResultSection = ({ content, keyword }) => {
 
             <Grid display={display}>
                 <Fragment>
-                    {content.results.map((item, index) => (
-                        <ResultItem key={index} className="result__item" colorProperies={arrayColor[Math.floor(Math.random() * arrayColor.length)]}>
-                            <Paragraph>{item}</Paragraph>
-                            <Link state={{ entityName: item }} to="/check-availability-name/" className="result__item-btn-action">
+                    {!isLoading && content.map((item, index) => (
+                        <ResultItem key={index} className="result__item" bg={item.bgColor} fColor={item.fontColor}>
+                            <Paragraph>{item.businessName}</Paragraph>
+                            <Link state={{ entityName: item.businessName }} to="/check-availability-name/" className="result__item-btn-action">
                                 <span>Search Name Availability</span>
-                                <span>{item}</span>
+                                <span>{item.businessName}</span>
                                 <span className="arrow">
                                     <ArrowLeft />
                                 </span>

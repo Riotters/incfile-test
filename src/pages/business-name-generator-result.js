@@ -37,10 +37,37 @@ const Wrapper = styled.div`
 `;
 
 const BusinessNameGeneratorResult = ({ location }) => {
-    let keyword = '';
+    const [keyword, setKeyWord] = React.useState('');
+    const [businessNames, setBusinessNames] = React.useState([]);
+    const [isLoading, setIsLoading] = React.useState(true);
 
-    if (typeof window !== `undefined`) {
-        keyword = location.state.keyword;
+    React.useEffect(() => {
+        let keyword = typeof window !== `undefined` ? location.state.keyword : '';    
+        setKeyWord(keyword);
+
+        getBusinessNames(keyword).then(data => {
+            setBusinessNames(data);
+            setIsLoading(false);
+        });
+    }, []);
+
+    const getBusinessNames = async (keyword) => {
+        const data = await fetch(`${process.env.INCFILE_API_URL}/businessNameGenerator`, {
+            method: 'post',
+            headers: {'Content-Type':'application/x-www-form-urlencoded'},
+            body: `keywords=${keyword}`
+        }).then(response => response.json());
+
+        return data;
+    }
+
+    const reloadBusinessNames = (keyword) => {
+        setIsLoading(true);
+        getBusinessNames(keyword).then(data => {
+            setBusinessNames(data);
+            setKeyWord(keyword);
+            setIsLoading(false);
+        });
     }
 
     return (
@@ -57,7 +84,7 @@ const BusinessNameGeneratorResult = ({ location }) => {
                 </Oval>
 
                 <Container>
-                    <Link to="/other/business-name-generator" className="back-link">
+                    <Link to="/business-name-generator/" className="back-link">
                         <span><ArrowLeft /></span>Back
                     </Link>
 
@@ -66,10 +93,10 @@ const BusinessNameGeneratorResult = ({ location }) => {
                             <AbsoluteShapCure rotate={0} right="-30px" top="0">
                                 <ShapeCurve color={color.orange1} />
                             </AbsoluteShapCure>
-                            <Searchbar contentWidth="auto" typeSubmit="itself" />
+                            <Searchbar contentWidth="auto" typeSubmit="itself" getBusinessNames={reloadBusinessNames.bind(this)} />
                         </RelativeElement>
 
-                        <ResultSection content={resultLists} keyword={keyword} />
+                        <ResultSection content={businessNames} keyword={keyword} isLoading={isLoading} />
                     </ContentCenter>
                 </Container>
             </Wrapper>
