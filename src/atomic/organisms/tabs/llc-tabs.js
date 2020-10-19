@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Tabs, Panel, useTabState } from "@bumaga/tabs";
+import parse from "html-react-parser";
 // import { motion } from "framer-motion"
 import Container from "../../container";
 import ArrowLink from "../../molecules/buttons/text";
@@ -13,13 +14,17 @@ import ArrowSVG from "../../../images/arrow.inline.svg";
 import { Collapse } from "react-collapse";
 import { color } from "../../atoms/styles/colors";
 import IconSVG from "../../../images/icons/generally-arrow.inline.svg";
+import Icon2SVG from "../../../images/icons/llc-operating-agreements.inline.svg";
+import Icon3SVG from "../../../images/icons/llc-annual-reports.inline.svg";
 import IconTextColorBox from "../../molecules/text-blocks/icon-h4-text-color";
 import VisibilitySensor from "../../../components/VisibilitySensor";
 import { Heading } from "../../atoms/typography/heading";
 import { Paragraph } from "../../atoms/typography/paragraph";
-import { ParagraphLink } from "../../atoms/typography/paragraph-link";
+import LightBoxVideo from "../../../components/LightBox";
 import ContentButton from "../../molecules/buttons/button";
 import Accordion from "../../organisms/accordion/accordion";
+import PlusSVG from "../../../images/icons/plus.inline.svg";
+import Advantages from "../../organisms/accordion/accordion-with-checkmark";
 
 const Wrapper = styled.div`
   display: flex;
@@ -176,6 +181,60 @@ const Arrow = styled.div`
   }
 `;
 
+const Boxes = styled.div`
+    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 32px;
+`;
+
+const CircleWhite = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+    width: 64px;
+    background-color: ${color.white};
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &::before {
+        content: "";
+        height: 48px;
+        width: 48px;
+        background-color: ${color.orange1};
+        border-radius: 50%;
+        position: absolute;
+        z-index: -1;
+    }
+`;
+
+const BlueBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 153px;
+  border-radius: 24px 0 0 24px;
+  background-color: ${color.blue3};
+`;
+
+const YellowBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 153px;
+  border-radius: 0 24px 24px 0;
+  background-color: ${color.yellow3};
+`;
+
 const cn = (...args) => args.filter(Boolean).join(" ");
 
 const Tab = ({ children }) => {
@@ -218,8 +277,21 @@ const CCorpTabs = ({ layout, columns, content }) => (
                   <Paragraph big>{content.content[0].text}</Paragraph>
                   <IconTextColorBox color={color.babyblue3} Icon={IconSVG} content={content.content[0].box} bottomMargin="48" rounded curve />
                   <Heading size="3">{content.content[0].header}</Heading>
-                  <Paragraph big>{content.content[0].text2}</Paragraph>
-                  <p>boxes</p>
+                  <LightBoxVideo thumbnailVideo="what-is-an-llc-7280" videoID="ZuadTwgek5U" />
+                  <Paragraph big topMargin="32">{content.content[0].text2}</Paragraph>
+                  <Boxes>
+                      <BlueBox>
+                        <Heading size="4" bottomMargin="8">Pass-Through Taxation</Heading>
+                        <Paragraph bottomMargin="0">of a sole proprietorship</Paragraph>
+                      </BlueBox>
+                      <CircleWhite>
+                        <PlusSVG />
+                      </CircleWhite>
+                      <YellowBox>
+                        <Heading size="4" bottomMargin="8">Limited Liability</Heading>
+                        <Paragraph bottomMargin="0">of a corporation</Paragraph>
+                      </YellowBox>
+                  </Boxes>
                   <Paragraph big>{content.content[0].text3}</Paragraph>
                 </PanelWrapper>
               </Panel>
@@ -227,28 +299,28 @@ const CCorpTabs = ({ layout, columns, content }) => (
                 <PanelWrapper className="panel2" layout={layout}>
                   <Heading size="3">{content.content[1].header}</Heading>
                   <Paragraph big>{content.content[1].text}</Paragraph>
-                  <Paragraph big>{content.content[1].text2}</Paragraph>
+                  <Paragraph big mixed>{parse(content.content[1].text2)}</Paragraph>
                   <ContentButton content={content.content[1].button} theme="primary56" margin="0 auto 0 0" arrow />
                 </PanelWrapper>
               </Panel>
               <Panel>
                 <PanelWrapper className="panel2" layout={layout}>
-                  <p>Incorporating your company is not always an easy process. Incfile is here to help you decide not only how to incorporate, but to understand exactly which type of status to file.</p>
-                  <p>Many companies who incorporate are actually charities that do not intend to make a profit, but rather donate all profits to another organization. In this case, a charity would want to incorporate as a nonprofit and, ultimately, apply for tax exempt status.</p>
-
-                  <p>By having tax exempt status, your donations can be recorded by donors as not taxable by both the federal and state government. This is a great incentive to be able to offer your constituents.</p>
-
-                  <p>People who start nonprofits are driven by passion about a certain cause. Whatever your cause, creating a nonprofit can make a difference. We've provided as much information as you need to know in choosing to incorporate as a nonprofit corporation.</p>
+                  <Heading size="3">{content.content[2].header}</Heading>
+                  <Paragraph big>{content.content[2].text}</Paragraph>
+                  <Heading size="3">{content.content[2].header2}</Heading>
+                  <Advantages content={content.content[2].advantages} tab />
+                  <Heading size="3" topMargin="32">{content.content[2].header3}</Heading>
+                  <Advantages content={content.content[2].advantages} tab red />
                 </PanelWrapper>
               </Panel>
               <Panel>
                 <PanelWrapper className="panel2" layout={layout}>
                   <Heading size="3">{content.content[3].header}</Heading>
                   <Paragraph big>{content.content[3].text}</Paragraph>
-                  <IconTextColorBox color={color.yellow3} Icon={IconSVG} content={content.content[3].box} bottomMargin="48" rounded />
+                  <IconTextColorBox color={color.yellow3} Icon={Icon2SVG} content={content.content[3].box} bottomMargin="48" rounded />
                   <Paragraph big>{content.content[3].text2}</Paragraph>
-                  <IconTextColorBox color={color.blue3} Icon={IconSVG} content={content.content[3].box2} bottomMargin="48" rounded curve />
-                  <Paragraph big>{content.content[3].text3}</Paragraph>
+                  <IconTextColorBox color={color.blue3} Icon={Icon3SVG} content={content.content[3].box2} bottomMargin="48" rounded curve />
+                  <Paragraph big mixed>{parse(content.content[3].text3)}</Paragraph>
                   <ArrowLink content={content.content[3].link} />
                 </PanelWrapper>
               </Panel>

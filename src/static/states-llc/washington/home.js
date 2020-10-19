@@ -221,6 +221,8 @@ export const howToGuide = [
         },
       ],
     },
+   },
+]
 
 export const namingYourBusiness = [
   {
@@ -414,98 +416,99 @@ export const namingYourBusiness = [
   },
   marginBottom: 0,
   color: color.yellow3,
-},
-{
-  type: `header`,
-  content: `FAQs on Naming Your Washington LLC`,
-  size: 4,
-  marginBottom: 0,
-},
-{
-  type: `text`,
-  content: `You might find the following answers useful.`,
-  marginBottom: 0,
-},
-{
-  type: `accordion`,
-  content: {
-    items: [
-      {
-        question: `How Do I Search for My Washington LLC Business Name?`,
-        answer: `Just go to the <a href="https://ccfs.sos.wa.gov/#/" target="_blank" rel="noopener noreferrer">business name search tool</a> and enter your proposed business name. You can search the register of the Washington Secretary
-        of State, which will tell you if there are any WA corporations or LLCs with that name.`,
-      },
-      {
-        question: `Are There Any Rules on Naming My Washington LLC?`,
-        answer: `Yes. Most LLCs will be bound by general rules (applicable to all LLCs) and specific rules (applicable in the state of Washington). We’ve detailed these rules above.`,
-      },
-      {
-        question: `Can I Do Business Under a Different Name Than My LLC Name in Washington?`,
-        answer: `Yes. Known as “assumed names,” “fictitious names,” “doing business as names” or “trade names,” you can choose to conduct business under a different name. Details are above.`,
-      },
-      {
-        question: `Can I Reserve a Name for My Washington LLC?`,
-        answer: `Yes. The Washington Secretary of State allows you to reserve a name if you don’t want to start your business immediately. Details are above. If you are ready to start your
-        business now, you do not need to reserve a name.`,
-      },
-    ],
-  },
-  marginBottom: 0,
-},
-{
-  type: `header`,
-  content: `Useful Resources for Naming Your Washington DC LLC`,
-  size: 3,
-  marginBottom: 0,
-},
-{
-  type: `text`,
-  content: `You might find these resources helpful.`,
-  marginBottom: 0,
-},
-{
-  type: `header`,
-  content: `Trademarks and Service Marks`,
-},
-{
-  type: `text`,
-  content: `You must be careful that your Washington LLC name does not infringe on the trademark or service mark of another business. The easiest way to make sure your proposed business name does not infringe is to carry out a trademark search through Incfile. If it doesn’t infringe, you can even register it as a trademark yourself.`,
-},
-{
-  type: `button`,
-  content: {
-      text: `Incfile Trademark Search and Registration service`,
-      url: `/trademark-name-search/`,
-  },
-},
-  {
+    },
+    {
     type: `header`,
-    content: `Find the Perfect Name for Your Washington LLC`,
+    content: `FAQs on Naming Your Washington LLC`,
+    size: 4,
+    marginBottom: 0,
+    },
+    {
+    type: `text`,
+    content: `You might find the following answers useful.`,
+    marginBottom: 0,
+    },
+    {
+    type: `accordion`,
+    content: {
+        items: [
+        {
+            question: `How Do I Search for My Washington LLC Business Name?`,
+            answer: `Just go to the <a href="https://ccfs.sos.wa.gov/#/" target="_blank" rel="noopener noreferrer">business name search tool</a> and enter your proposed business name. You can search the register of the Washington Secretary
+            of State, which will tell you if there are any WA corporations or LLCs with that name.`,
+        },
+        {
+            question: `Are There Any Rules on Naming My Washington LLC?`,
+            answer: `Yes. Most LLCs will be bound by general rules (applicable to all LLCs) and specific rules (applicable in the state of Washington). We’ve detailed these rules above.`,
+        },
+        {
+            question: `Can I Do Business Under a Different Name Than My LLC Name in Washington?`,
+            answer: `Yes. Known as “assumed names,” “fictitious names,” “doing business as names” or “trade names,” you can choose to conduct business under a different name. Details are above.`,
+        },
+        {
+            question: `Can I Reserve a Name for My Washington LLC?`,
+            answer: `Yes. The Washington Secretary of State allows you to reserve a name if you don’t want to start your business immediately. Details are above. If you are ready to start your
+            business now, you do not need to reserve a name.`,
+        },
+        ],
+    },
+    marginBottom: 0,
+    },
+    {
+    type: `header`,
+    content: `Useful Resources for Naming Your Washington DC LLC`,
     size: 3,
     marginBottom: 0,
-  },
-  {
+    },
+    {
     type: `text`,
-    content: `The perfect business name can be elusive. We have a complete guide to choosing the right business name, but basically, you'll want to choose a name that will:`,
+    content: `You might find these resources helpful.`,
     marginBottom: 0,
-  },
-{
-  type: `list-dot`,
-  content: {
-    header: ``,
-    list: [`Appeal to your customers`, `Be memorable enough to stand out`, `Best represent your product or services`, `Not be used by another business`,],
-  },
-  marginBottom: 0,
-  color: color.yellow3,
-},
-{
-  type: `arrow-link`,
-  content: {
-    text: `Incfile guide to choosing a business name`,
-    url: `/blog/post/llc-name-search-50-states/`,
-  },
-  marginBottom: 0,
-};
+    },
+    {
+    type: `header`,
+    content: `Trademarks and Service Marks`,
+    },
+    {
+    type: `text`,
+    content: `You must be careful that your Washington LLC name does not infringe on the trademark or service mark of another business. The easiest way to make sure your proposed business name does not infringe is to carry out a trademark search through Incfile. If it doesn’t infringe, you can even register it as a trademark yourself.`,
+    },
+    {
+    type: `button`,
+    content: {
+        text: `Incfile Trademark Search and Registration service`,
+        url: `/trademark-name-search/`,
+    },
+    },
+    {
+        type: `header`,
+        content: `Find the Perfect Name for Your Washington LLC`,
+        size: 3,
+        marginBottom: 0,
+    },
+    {
+        type: `text`,
+        content: `The perfect business name can be elusive. We have a complete guide to choosing the right business name, but basically, you'll want to choose a name that will:`,
+        marginBottom: 0,
+    },
+    {
+    type: `list-dot`,
+    content: {
+        header: ``,
+        list: [`Appeal to your customers`, `Be memorable enough to stand out`, `Best represent your product or services`, `Not be used by another business`,],
+    },
+    marginBottom: 0,
+    color: color.yellow3,
+    },
+    {
+    type: `arrow-link`,
+    content: {
+        text: `Incfile guide to choosing a business name`,
+        url: `/blog/post/llc-name-search-50-states/`,
+    },
+    marginBottom: 0,
+    }
+]
 
 export const registeredAgent = [
   {
@@ -800,7 +803,9 @@ color: color.yellow3,
     },
     marginBottom: 0,
     color: color.yellow3,
-  };
+  }
+]
+
 export const feesAndRequirments  = [
   {
     type: `header`,

@@ -86,11 +86,9 @@ const AlaskaCorporation = () => (
               Your new Alaska corporation‘s name cannot be the same as or deceptively similar to the name of any other Alaska business entity registered or reserved with the state. It also is not permitted to be the same as any non-registered business name that has been established in common law by
               usage over a long period of time. The name must contain (at the end) the words “incorporated,” “corporation,” “limited,” or “company,” or an abbreviation of one of those terms.
             </Paragraph>
-            <Paragraph big style={{ marginBottom: "56px" }}>
+            <Paragraph big style={{ marginBottom: "0" }}>
               The name may not include language that states or implies that the corporation is organized for some purpose other than stated in its articles of incorporation, or that it is a municipality (city, borough, or village). However, the name is allowed to contain the name of a municipality.
             </Paragraph>
-
-            <Colorbox color={color.orange3} content={corporationName} dotsColor={color.orange1} Icon={CorporationNameIcon} />
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
