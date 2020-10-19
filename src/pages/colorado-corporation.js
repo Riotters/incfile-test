@@ -5,7 +5,7 @@ import Top from "../atomic/partials/top";
 import Buttonsbox from "../atomic/atoms/boxes/top-buttons-box";
 import Button from "../atomic/molecules/buttons/button";
 import Layout from "../components/layout";
-import { fillingRequirements, info, packets, questions, service, top, articlesOfIncorporation, corporationName } from "../static/learning-center-entity/alabama-corporation";
+import { fillingRequirements, info, packets, questions, service, top, articlesOfIncorporation, corporationName } from "../static/learning-center-entity/colorado-corporation";
 import CartBlock from "../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../atomic/molecules/blocks/rating-block";
 import RatingRow from "../atomic/atoms/boxes/rating-row";
@@ -83,35 +83,29 @@ const AlaskaCorporation = () => (
               Choosing a Corporation Name
             </Heading>
             <Paragraph big>
-              The business name you choose for your new Alabama corporation must be readily distinguishable from all other registered and reserved Alabama business entities. It must end with either “Incorporated” or “Corporation” (or an abbreviation thereof)-or, if it is to be a banking corporation,
-              “Bank,” “Banking,” or “Bankers.” The name cannot state or imply that the corporation is organized for some purpose other than the one specified in its articles of incorporation.
+            Your new corporation’s name must be distinguishable from the name of any other registered or reserved Colorado business entity. It must also contain the words “incorporated,” “corporation,” “limited,” or “company,” or an abbreviation of these same terms. It may also not contain language stating or implying that it is organized for a purpose other than one permitted by state law or stated in its articles of incorporation.
+            </Paragraph>
+            <Paragraph big style={{ marginBottom: "32px" }}>
+            If your corporate name is not considered to be distinguishable from one already on file with the state or in use, it’s not enough to merely change some punctuation, a definite or indefinite article (such as “a,” “an,” or “the”), or the status designator (“corporation,” “company,” “incorporated,” “limited,” etc.).
             </Paragraph>
             <Paragraph big style={{ marginBottom: "0" }}>
-              You must reserve your new corporation’s name with the state filing office before filing your articles of incorporation. This costs $10 and is good for up to 120 days.
+            Corporate names can be reserved with the state for up to 120 days at a time for $10.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Articles of Incorporation
             </Heading>
-            <Paragraph big>
-                New Alabama corporations must file an original and two copies of your articles of incorporation with their local county probate judge before they can start conducting business as a corporation. Once the judge finds that the articles are in compliance with state law, he or she will issue (publish) one certified copy of the articles, return one to the LLC, and forward the third within 10 days to the Corporate Section of the Alabama Secretary of State’s office. Filing requires a $40 fee payable to the Alabama Secretary of State, and another $35 payable to the county probate judge, for a total of $75.
-            </Paragraph>
-            <Paragraph big>The articles must be delivered by at least one of the incorporators, who must sign and deliver the articles to the judge.</Paragraph>
-
+            <Paragraph big>Colorado requires that a new corporation’s articles of incorporation must be filed (along with a $50 fee) with the Colorado Secretary of State</Paragraph>
             <Colorbox color={color.blue3} content={articlesOfIncorporation.box1} dotsColor={color.blue1} style={{ marginBottom: "65px" }} />
-
             <Colorbox color={color.orange3} content={articlesOfIncorporation.box2} dotsColor={color.orange1} style={{ marginBottom: "48px" }} />
-
-            <Paragraph big>Since Alabama law does not use the concept of par value for stocks, you do not need to state a par value for your shares.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Registered Agent and Office
             </Heading>
             <Paragraph big>
-            Every Alabama corporation must have a registered agent in the state-someone designated to receive official state administrative and legal correspondence. The registered agent must be either an adult Alabama resident, or a corporation with a business office identical to the registered office.
-The registered office may be at any of the corporation’s places of business..
+            Every Colorado corporation must have a registered agent in the state-a natural person with a primary residence in Colorado, or a registered business entity authorized to conduct business in the state.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -119,34 +113,29 @@ The registered office may be at any of the corporation’s places of business..
               Bylaws
             </Heading>
             <Paragraph big>
-            Bylaws describe the corporation’s basic managerial and legal operating principles. An Alabama corporation must keep a copy of its bylaws at its main executive office, but is not required to file them with the state. The initial bylaws must be adopted by the board of directors, unless the articles of incorporation specify that shareholders have this right.
+            A corporation must maintain its bylaws at its main executive office, but is not required to file them with the state. The incorporators or board of directors should adopt the corporation’s bylaws at its initial meeting-insuring that they do not conflict with the articles of incorporation-and keep them updated as time goes on.
             </Paragraph>
             <Paragraph big style={{ fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
-            Bylaws normally address:
+            Bylaws describe the corporation’s basic operating principles from both the managerial and legal perspectives, and should include as a minimum:
             </Paragraph>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>Shareholders and directors meetings</Paragraph>
+              <Paragraph bottomMargin={0}>How, when, and where shareholders and directors meetings are held</Paragraph>
             </TextBoxed>
-
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The authority, number, and tenure of directors</Paragraph>
+              <Paragraph bottomMargin={0}>What authority directors have, how many there are, and how long they serve</Paragraph>
             </TextBoxed>
-
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>Voting procedures</Paragraph>
+              <Paragraph bottomMargin={0}>How consensus on major decisions is reached with and without meetings</Paragraph>
             </TextBoxed>
-
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The duties, responsibilities, and tenure of officers</Paragraph>
+              <Paragraph bottomMargin={0}>Duties and responsibilities of officers and how long they serve</Paragraph>
             </TextBoxed>
-
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>How stock is issued</Paragraph>
             </TextBoxed>
-
-            <TextBoxed style={{ marginBottom: "48px" }}>
-              <Paragraph bottomMargin={0}>How and when annual financial information is provided to shareholders</Paragraph>
+            <TextBoxed style={{ marginBottom: "8px" }}>
+              <Paragraph bottomMargin={0}>Requirements for providing annual financial information to shareholders</Paragraph>
             </TextBoxed>
           </PanelWrapper>
           <PanelWrapper>
@@ -154,41 +143,23 @@ The registered office may be at any of the corporation’s places of business..
               Directors
             </Heading>
             <Paragraph big>
-            A director must be a natural person of at least 19 years of age, but they do not have to be an Alabama resident-or even a shareholder-unless so stipulated in the articles of incorporation or the corporate bylaws. Either one of those documents may also specify a minimum and a maximum number of directors, but they are not required to be listed by name in the articles. Directors are elected annually to serve one-year terms.
-            </Paragraph>
-            <Paragraph big>
-            he bylaws may either describe the corporation’s officer positions and duties or authorize that the board of directors make these appointments. These duties must include the responsibility for preparing minutes of meetings and for authenticating corporate records. Unless the bylaws provide otherwise, an officer may simultaneously hold more than one office in a corporation.
+            The board of directors is responsible for making major decisions for the corporation. Officers of the company must be listed in the bylaws or elected by the board. At least one officer must authenticate records for the corporation, as well as prepare minutes of directors’ and shareholders meetings. Any officer may hold more than one office in the corporation unless otherwise prohibited by law.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Requirement Reports
             </Heading>
-            <Paragraph big style={{ marginBottom: "24px" }}>
-            The Alabama Secretary of State requires that Alabama corporations file an annual report between January 1 and March 15 each year that specifies:
+            <Paragraph big style={{ marginBottom: "48px" }}>
+            A Colorado corporation must file an annual report with the Colorado Secretary of State each year that includes the corporation’s name, principal office, names and addresses of directors and officers, and any information that has changed since the filing of the articles of incorporation. Colorado strongly encourages electronic filing of annual reports.
             </Paragraph>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The corporation’s name and the state or country of original incorporation.</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The address of the corporation’s registered office in the state.</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The name of its registered agent at that office.</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The nature of the corporation’s business.</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The names and addresses of the corporation’s president and secretary.</Paragraph>
-            </TextBoxed>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Taxes
             </Heading>
-            <Paragraph big>Alabama’s corporate tax structure consists of a flat rate of 6.5% on all corporate income. Among states with corporate income taxes, Alabama’s rate ranks 30th in the nation. Alabama also assesses a business privilege tax, which is an annual tax on corporate shares based on the net worth of the corporation.</Paragraph>
-            <Paragraph big>The Alabama Secretary of State recognizes subchapter S status for corporations. A “subchapter S” corporation (frequently referred to as an “S corp”) is treated as a “pass-through” entity for tax purposes in the same way as a sole proprietorship or partnership. The S corp does not file a tax return on its own behalf; instead, all tax-related data for the S corp is filed as part of the owner’s individual income tax.</Paragraph>
+            <Paragraph big>Colorado has both a corporate income tax and a sales tax for businesses; actual rates depend on the type and amount of business activity.</Paragraph>
+            <Paragraph big>A “subchapter S” corporation or “S-Corporation” is one that chooses to be treated as a pass-through entity (the same way as a sole proprietorship or partnership) for tax purposes, meaning that the tax-related information for the “S-Corp” is filed as part of the owner’s individual income tax. Since Colorado has a state income tax, a subchapter-S choice when forming a corporation affects state and federal taxes for Centennial State corporations.</Paragraph>
           </PanelWrapper>
         </CollapseWrapper>
       </TabsSection>

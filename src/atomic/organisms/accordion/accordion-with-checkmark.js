@@ -10,6 +10,7 @@ import ArrowSVG from "../../../images/arrow-circle.inline.svg";
 import CurveSVG from "../../../images/orange-curve.inline.svg";
 import VisibilitySensor from "../../../components/VisibilitySensor";
 import CheckmarkSVG from "../../../images/circle-status-check.inline.svg";
+import RedmarkSVG from "../../../images/circle-status-x.inline.svg";
 
 const Wrapper = styled.div`
   display: flex;
@@ -230,7 +231,7 @@ const Panel = ({ children }) => {
   );
 };
 
-const AccordionWithCounting = ({ content, curve, curveRight, curveRightBottom, tab, listColor, bottomMargin }) => {
+const AccordionWithCounting = ({ content, curve, curveRight, curveRightBottom, tab, listColor, bottomMargin, red }) => {
   return (
     <VisibilitySensor partialVisibility once>
       {({ isVisible }) => (
@@ -246,10 +247,15 @@ const AccordionWithCounting = ({ content, curve, curveRight, curveRightBottom, t
                 <TabBox>
                   <Tab>
                     <Content>
-                      <Checkmark>
-                        <CheckmarkSVG />
-                      </Checkmark>
-                      <span>{item.question}</span>
+                        <Checkmark>
+                            {!red ? (
+                                
+                                <CheckmarkSVG />
+                            ) : (
+                                <RedmarkSVG />
+                            )}
+                        </Checkmark>
+                        <span>{item.question}</span>
                     </Content>
                     <Icon>
                       <ArrowSVG />
