@@ -71,7 +71,7 @@ const SearchButton = styled.button`
     }
 `
 
-const Searchbar = ({ typeSubmit, ...rest }) => {
+const Searchbar = ({ typeSubmit, getBusinessNames, ...rest }) => {
     const [keyword, setKeyWord] = useState('');
     const searchInput = useRef(null);
 
@@ -85,6 +85,8 @@ const Searchbar = ({ typeSubmit, ...rest }) => {
 
         if (typeSubmit !== 'itself') {
             navigate('/business-name-generator-result/', { state: { keyword } });
+        } else {
+            getBusinessNames(keyword);
         }
         return;
     }
@@ -98,7 +100,7 @@ const Searchbar = ({ typeSubmit, ...rest }) => {
                     type="text"
                     ref={searchInput}
                     onChange={e => setKeyWord(e.target.value)}
-                    placeholder="Create New Name" />
+                    placeholder="Enter keywords like the type of business, ie: cupcakes" />
                 <SearchButton>
                     <Icon>
                         <SearchSVG />

@@ -56,7 +56,7 @@ export const formCheck = {
             label: `Entity State`,
             link: {
               text: `Not sure?`,
-              url: `/learning-center-entity/comparison-chart`,
+              url: `/business-entity-comparison/`,
             },
             options: [`Alabama`, `Arizona`],
           },

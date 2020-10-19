@@ -17,7 +17,7 @@ const Guide = styled.section`
 `;
 
 const GuideSection = ({ className, content }) => (
-  <Guide className={className}>
+  <Guide className={className} id="jsDownloadForm">
     <Oval className="oval" height="720" width="720" top="0" right="0">
       <OvalSVG />
     </Oval>
