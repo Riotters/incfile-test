@@ -1,10 +1,10 @@
 export const HomePageContent = {
     header: {
-        title: `How to Start an LLC in Texas`,
-        subline: `aaa`,
+        title: `How to Start an LLC in Georgia`,
+        subline: ``,
         boxes: [{
-                title: `Learn how to form a Texas <br>LLC yourself`,
-                desc: `Read our DIY guide to Texas LLC formation, with information on Registered Agents, naming rules, business licenses, and more.`,
+                title: `Learn how to form a </br> Georgia LLC yourself`,
+                desc: `RRead our DIY guide to Georgia LLC formation, with information on Registered Agents, naming rules, business licenses, and more.`,
                 button: {
                     text: `Read The Guide`,
                     url: '/'
@@ -12,46 +12,45 @@ export const HomePageContent = {
             },
             {
                 title: `Have Incfile do the work for you <br><span style="color:#FD8550">$0 + State fee</span>`,
-                desc: `Incfile can take care of all your LLC formation paperwork—and we’ll do it for free. Just pay the required Texas state fee ($300).`,
+                desc: `Incfile can take care of all your LLC formation paperwork—and we’ll do it for free. Just pay the required Georgia state fee ($100).`,
                 button: {
                     text: `Form Your LLC Now`,
-                    url: '/'
+                    url: '/form-order-now.php?entityType=LLC&entityState=GA'
                 }
             },
         ]
     },
     content: {
         whyChoose: {
-            heading: "Why Choose Texas for Your LLC?",
-            text1: "The Lone Star state is a great place to start a business. A combination of natural resources, lots of land area and culturally diverse cities makes Texas a center of opportunity.",
-            text2: "For most business owners, the fastest and easiest way to start a business in Texas is by creating a Texas LLC. A Limited Liability Company (LLC) is a type of business entity that’s ideal for startups and small- to medium-sized businesses. You get the advantages and protections of larger Texas corporations but with much simpler rules and regulations.",
-            heading4: `The benefits of starting a Texas LLC:`,
+            heading: "Why Get an LLC in Georgia?",
+            text1: "Georgia is a wonderful place to start a business — it’s an innovator’s dream as one of the main technical hubs in the U.S. with access to international trade and the world’s busiest airport (Atlanta). Great universities, access to talent and a rich culture combine to create the perfect backdrop for a successful business venture. Georgia is already home to the headquarters of the most famous brand in the world (Coca-Cola); other businesses, including the Home Depot, UPS, Delta and Suntrust, also call the state home.",
+            text2: "For most business owners, the fastest and easiest way to start a business in Georgia is by creating a Georgia LLC. A limited liability company (LLC) is a type of business entity that’s ideal for startups and small- to medium-sized businesses. You get the advantages and protections of larger Georgia corporations but with much simpler rules and regulations.",
+            heading4: `The benefits of starting a Georgia LLC:`,
             lists: [
                 `Separating and limiting your personal liability from your business liability and debts`,
-                `Quick and simple filing, management, compliance, regulations and administration of your Texas LLC`,
+                `Quick and simple filing, management, compliance, regulations and administration of your Georgia LLC`,
                 `Easy tax filing and potential advantages for tax treatment`,
-                `Texas doesn’t have a state income tax, so you keep more of your TX LLC earnings`,
             ],
             learnmore: `Learn more about the <a href="/limited-liability-company/">benefits of the LLC business structure.</a>`,
-            text3: `In this guide you’ll find information on searching for and naming your TX LLC, getting a Texas Registered Agent, the fees you’ll need to pay, TX business taxes and much more. We also cover the various ways you’ll interact with the Texas Secretary of State, filing your LLC and your registration needs.`,
+            text3: `In this guide you’ll find information on searching for and naming your TX LLC, getting a Georgia Registered Agent, the fees you’ll need to pay, Georgia business taxes and much more. We also cover the various ways you’ll interact with the Georgia Secretary of State, filing your LLC and your registration needs.`,
         },
         mainSteps: {
-            heading3: `Forming Your Texas LLC Yourself: 6 Main Steps`,
+            heading3: `Create Your Georgia LLC Yourself: 6 Main Steps`,
             navSteps: [
                 {
-                    text: `<b>Step 1</b> - Complete a Texas LLC Search and Choose a Unique Business Name`,
+                    text: `<b>Step 1</b> - Pick a Unique Business Name and Run a Georgia Entity Search`,
                     blockID: `step1`,
                 },
                 {
-                    text: `<b>Step 2</b> - Provide an Official Business Address for Your TX LLC`,
+                    text: `<b>Step 2</b> - Provide an Official Business Address for Your GA LLC`,
                     blockID: `step2`,
                 },
                 {
-                    text: `<b>Step 3</b> - Assign a Texas Registered Agent`,
+                    text: `<b>Step 3</b> - Assign a Registered Agent for Your Georgia LLC`,
                     blockID: `step3`,
                 },
                 {
-                    text: `<b>Step 4</b> - File Your Certificate of Formation (Form 205) With the Texas Secretary of State`,
+                    text: `<b>Step 4</b> - File Your Articles of Organization with the Georgia Secretary of State`,
                     blockID: `step4`,
                 },
                 {
@@ -59,98 +58,77 @@ export const HomePageContent = {
                     blockID: `step5`,
                 },
                 {
-                    text: `<b>Step 6</b> - Create a Texas LLC Operating Agreement`,
+                    text: `<b>Step 6</b> - Create a Georgia LLC Operating Agreement`,
                     blockID: `step6`,
                 },
             ],
             step1: {
-                heading1: `Complete a Texas LLC Search and Choose a Unique Business Name`,
-                text1: `You will need a distinctive and original name for your Texas LLC that’s not used by any other business in TX. If you’re having trouble coming up with a name, try out Incfile’s <a href="/business-name-generator/">Business Name Generator</a> to brainstorm ideas. There are also a few naming rules you’ll need to follow, which you can read about in detail on our section on <a href="/texas-llc/texas-business-names/">Texas LLC Business Names.</a>`,
-                text2: `Once you’ve chosen a name, you’ll need to make sure it’s available in Texas. To find out if another company is using your chosen business name, use Incfile’s fast and easy name search tool below. Alternatively, you can carry out a Texas business entity name search on the TX Secretary of State website.`,
+                heading1: `Pick a Unique Business Name and Run a Georgia Entity Search`,
+                text1: `You will need a distinctive and original name for your Georgia LLC that’s not used by any other business in GA. Incfile’s <a href="/business-name-generator/">Business Name Generator</a> is a great way to brainstorm company names — the tool also allows you to easily check the Georgia Secretary of State (SOS) Corporations Division business registry to verify your name isn’t already being used by another company.</a>`,
+                text2: `If you’ve already chosen a name, you can make sure it’s available by using the Georgia business search on the <a href="https://ecorp.sos.ga.gov/">GA Secretary of State website</a> or Incfile’s <a href="/business-name-search/"> free Business Name Search tool. </a>`,
+                text3: `There are several rules you’ll need to follow with your LLC name, which you can learn about in the <a href="/georgia-llc/georgia-business-names/"> Georgia business names section</a> of this guide. One rule, for example, is that your business name cannot use any of the following terms without approval from the Office of Insurance and Safety Fire Commissioner: “insurance,” “assurance,” “surety,” “fidelity,” “reinsurance,” “reassurance” or “indemnity.”`,
                 cta: {
                     title: `Incfile’s Business <br>Name Search Tool`,
-                    subtitle: `We’ll search the Texas Secretary <br>of State registry for you.`,
+                    subtitle: `We’ll search the Georgia Secretary <br>of State registry for you.`,
                     button: {
                         text: `Check Availability`,
-                        url: `/`,
+                        url: `/business-name-search/`,
                     }
                 }
             },
             step2: {
-                heading1: `Provide an Official Business Address for Your TX LLC`,
-                text1: `Every Texas LLC must have a designated street address. That could be your home address (if you’re running the company from your residence), your company’s office building or any physical address of your preference. The address can be outside the state of Texas and can be a P.O. Box.`,
+                heading1: `Provide an Official Business Address for Your GA LLC`,
+                text1: `Every Georgia LLC must have a designated street address. That could be your home address (if you’re running the company from your residence), your company’s office building or any physical address of your preference. The address can be outside the state of Georgia and can be a P.O. Box.`,
             },
             step3: {
-                heading1: `Assign a Texas Registered Agent`,
-                text1: `Every Texas LLC is required to have a “Registered Agent.” This is an official position; the Registered Agent is someone who receives official legal and tax correspondence and has responsibility for filing reports with the Texas Secretary of State.`,
-                text2: `This position can be filled by you, another manager in the business or a dedicated Registered Agent service. Your TX Registered Agent must have a physical street address in Texas and must be present to receive important documents for your company during business hours. In Texas, your Registered Agent must consent to this appointment using the Acceptance of Consent Form 401-A.`,
-                text3: `At Incfile, all of our packages include a Texas Registered Agent service that is free for the first year and just $119 per year afterward. We also have a dashboard where you can log in and easily view any document your Registered Agent has received on your behalf.`,
+                heading1: `Assign a Registered Agent for Your Georgia LLC`,
+                text1: `Every GA LLC must have a “Registered Agent” when it is formed. This is an official position; the Registered Agent is someone who receives official legal and tax correspondence and has responsibility for filing reports with the Georgia Secretary of State.`,
+                text2: `This position can be filled by you, another manager in the business or a dedicated Registered Agent service. If your Registered Agent is a person, they must reside in and have a physical street address in Georgia and must be present to receive important documents for your company during business hours. In Georgia, you designate your Registered Agent when you file your Articles of Organization and formally create your business.`,
+                text3: `At Incfile, all of our packages include an Georgia Registered Agent service that is free for the first year and just $119 per year afterward. We also have a dashboard where you can log in and easily view any document your Registered Agent has received on your behalf.`,
                 groupBtn1: [{
-                        header: `Learn More About Texas Registered Agents`,
-                        url: `/`,
+                        header: `Learn More About Georgia Registered Agents`,
+                        url: `/georgia-llc/registered-agents-georgia-llc/`,
                     },
                     {
                         header: `Get A Free Registered Agent Whe You Incorporate With Incfile`,
-                        url: ``,
+                        url: `/form-order-now.php?entityType=LLC&entityState=GA`,
                     }
                 ]
             },
             step4: {
-                heading1: `File Your Certificate of Formation (Form 205) With the Texas Secretary of State`,
-                text1: `Once you've gathered all the information for your Texas LLC, you’ll need to file a formal document with the Texas Secretary of State. This document is known as your “Certificate of Formation,” and filing the document officially creates your Texas LLC.`,
-                lists: {
-                    header: `Here’s what is typically included:`,
-                    list: [
-                        `Your business name and address`,
-                        `Details of your Registered Agent`,
-                        `Governing authority`,
-                        `Purpose of the LLC`,
-                        `Supplemental provisions`,
-                        `Name of the organizer`,
-                        `Whether your LLC will be member-managed or manager-managed`,
-                    ],
-                },
-                dowload_205_button: {
-                    text: `Download Form 205`,
-                    url: `https://www.sos.state.tx.us/corp/forms/205_boc.pdf`,
-                },
-                text2: `You can file your Texas LLC Certificate of Formation online with the Texas <a href="https://direct.sos.state.tx.us/acct/acct-login.asp">SOSDirect</a> filing system, mail in a form to the Office of the Secretary of State, or have Incfile do it on your behalf. The state of Texas charges a $300 fee to file and start an LLC.`,
-                certificate_info: [{
-                        text1: `File by Mail:`,
-                        text2: `Secretary of State <br>P.O. Box 13697 <br>Austin, TX 78711`
-                    },
-                    {
-                        text1: `Submit in Person:`,
-                        text2: `James Earl Rudder Office Building<br> 1019 Brazos<br> Austin, TX 78701`
-                    },
-                    {
-                        text1: `Fax:`,
-                        text2: `(512) 463-5709`
-                    },
-                ],
+                heading1: `File Articles of Organization with the Georgia Secretary of State`,
+                text1: `Once you've gathered all the information for your Georgia LLC, you’ll need to file both your Articles of Organization (Form CD 030) and Transmittal Information Form 231 with the GA Secretary of State Corporations Division. These documents formally create your Georgia LLC.`,
+                text2: `<a href="https://sos.ga.gov/corporations/acrobat/applications/Filing%20Template%20-%20Articles%20of%20Organization%20for%20LLC%20(CD%20030).pdf">Download Georgia's Form CD 030 Here</a>`,
+                text3: `<a href="https://sos.ga.gov/corporations/acrobat/applications/Transmittal%20Form%20-%20Limited%20Liability%20Company%20(CD%20231).pdf">Download Georgia's Transmittal Information Form(Form CD 231) Here</a>`,
+                text4: `You can file both your Articles of Organization and Transmittal Information Form online on the<a href="https://ecorp.sos.ga.gov/Account"> Georgia Secretary of State website </a>, mail them in or have Incfile do it on your behalf for free. The State of Georgia charges a $100 fee to file and start an LLC in Georgia.`,
+                text5: `<b>File by Mail:</b></br></br>
+                Corporations Division</br>
+                2 Martin Luther King Jr. Dr. SE,</br>
+                Suite 313 West Tower</br>
+                Atlanta, GA 30334`,
 
-                text3: `You only need to file your Certificate of Formation once, but every year after you will also need to file an annual report for your LLC. This is also something Incfile can remind you to do / do for you if you choose to have us handle the paperwork.`,
+                text6: `You only need to file your Articles of Organization with the State of Georgia once, but you will need to file an annual report for your LLC, which has its own fees. This is also something Incfile can remind you to do or do for you if you choose to have us handle the paperwork.`,
                 cta: {
                     title: `Have Incfile Handle <br>all the Paperwork`,
-                    subtitle: `for You for $0 + the Texas State fee`,
+                    subtitle: `for You for $0 + the Georgia State fee`,
                     button: {
                         text: `Form Your LLC Now For Free`,
-                        url: `/`,
+                        url: `/form-order-now.php?entityType=LLC&entityState=GA`,
                     }
                 },
                 annualReport: [{
-                        title: `What are the fees and requirements to form a business in Texas?`,
+                        title: `What are the fees and requirements to form a business in Georgia?`,
                         items: [{
                                 text1: `State Fee`,
-                                text2: `$300`,
+                                text2: `$100`,
                             },
                             {
                                 text1: `State Filing Time`,
-                                text2: `1 Week`,
+                                text2: `20 Business Days`,
                             },
                             {
                                 text1: `Expedited Filing Time`,
-                                text2: `2 Business Days`,
+                                text2: `5 Business Days`,
                             },
                         ],
                     },
@@ -162,11 +140,11 @@ export const HomePageContent = {
                             },
                             {
                                 text1: `Due Date:`,
-                                text2: `Both reports are due between January 1st and no later than May 15th.`,
+                                text2: `April 1st`,
                             },
                             {
                                 text1: `Filing Fee:`,
-                                text2: `There is no charge for the Public Information Report. The Franchise Tax Fee is based on the revenue of the LLC.`,
+                                text2: `$50`,
                             },
                         ],
                     },
@@ -174,22 +152,22 @@ export const HomePageContent = {
             },
             step5: {
                 heading1: `Get an Employer Identification Number (EIN) From the Internal Revenue Service`,
-                text1: `You will need an EIN to identify your business to the IRS. You use this number when filing and paying taxes or when submitting payroll information and payments for your employees. An EIN number is also required to open a business bank account. You can obtain one directly from the IRS, or Incfile can get one for you as part of the Texas LLC business formation process.`,
+                text1: `You will need an EIN to identify your business to the IRS. You use this number when filing and paying taxes or when submitting payroll information and payments for your employees. You can obtain one directly from the IRS, or we can get one for you as part of the Georgia LLC business formation process.`,
             },
             step6: {
-                heading1: `Create a Texas LLC Operating Agreement`,
-                text1: `An operating agreement is a kind of “instruction manual” that outlines how you will run your business. It includes how decisions are made, how the business is divided amongst members, and what happens if a member leaves the company.`,
-                text2: `Many states require that a company have an operating agreement in place—it isn’t legally required in Texas, but it’s a good idea to have one nonetheless.`,
+                heading1: `Create an LLC Operating Agreement`,
+                text1: `An Operating Agreement is a kind of “instruction manual” that outlines how you will run your business. It includes how decisions are made, how the business is divided amongst members and what happens if a member leaves the company.`,
+                text2: `Georgia does not require that LLCs have an operating agreement in place, but it’s a good idea to create one, nonetheless.`,
                 button1: {
                     text: `Learn More About Operating Agreemets Here`,
-                    url: `/`
+                    url: `/blog/post/operating-agreement-llc/`
                 },
                 cta: {
                     title: `Receive a personalized <br>operating agreement`,
                     subtitle: `when you select Incfle’s Gold package`,
                     button: {
                         text: `Form Your LLC Now`,
-                        url: `/`,
+                        url: `/form-order-now.php?entityType=LLC&entityState=GA`,
                     }
                 }
             },
@@ -197,37 +175,16 @@ export const HomePageContent = {
         otherInfo: [{
                 type: `heading`,
                 size: 3,
-                content: `Other Important Texas LLC Info`
+                content: `Other Important Georgia LLC Info`
             },
             {
                 type: `heading`,
                 size: 4,
-                content: `Special Types of LLCs in Texas`
+                content: `Special Types of LLCs in Georgia`
             },
             {
                 type: `paragraph`,
-                content: `A regular Texas LLC is suitable for most business needs, but you also have a few other options to incorporate a special type of LLC.`
-            },
-            {
-                type: `heading`,
-                size: 4,
-                content: `Series LLCs`
-            },
-            {
-                type: `paragraph`,
-                content: `In Texas, you also have the option to set up a “Series LLC” — these are specialized LLCs designed to allow you to manage multiple separate LLCs under one master, umbrella LLC. These can be very useful if you don’t want to set up a separate Texas LLC for every individual business you run.`
-            },
-            {
-                type: 'arrow-links',
-                content: [{
-                        text: `Decide if a Texas Series LLC is right for your new business.`,
-                        url: `https://www.incfile.com/blog/post/series-llc-why-need-one/`,
-                    },
-                    {
-                        text: `What Is a Series LLC in Texas and Why Might You Need One?`,
-                        url: `https://www.incfile.com/blog/post/series-llc-in-texas/`,
-                    }
-                ]
+                content: `A regular LLC is suitable for most business needs, but you also have a few other options in Georgia.`
             },
             {
                 type: `heading`,
@@ -236,68 +193,47 @@ export const HomePageContent = {
             },
             {
                 type: `paragraph`,
-                content: `Some states, including Texas, allow certain occupations to form “Professional LLCs.” These types of business typically have specialized requirements and licensing.`
-            },
-            {
-                type: `list-dot`,
-                content: {
-                    header: `Here are the occupations that the TX Secretary of State allows to form Texas professional LLCs:`,
-                    list: [
-                        `Doctors of medicine`,
-                        `Doctors of osteopathy`,
-                        `Podiatrists`,
-                        `Mental health professionals`,
-                        `Optometrists`,
-                        `Therapeutic optometrists`,
-                        `Chiropractors`,
-                        `Dentists`,
-                        `Veterinarians`,
-                    ],
-                }
-            },
-            {
-                type: `paragraph`,
-                content: `A Professional LLC is also subject to a state franchise tax.`
+                content: `Some states allow certain occupations to form “Professional LLCs.” These types of businesses typically have specialized requirements and licensing. Georgia does not recognize or allow Professional LLCs, although professionals can still form regular LLCs.`
             },
             {
                 type: `heading`,
                 size: 4,
-                content: `Out-of-State / Foreign LLCs`
+                content: `Foreign LLCs`
             },
             {
                 type: `paragraph`,
-                content: `If your business is already operating in another state and expanding to Texas, you’ll need to form a foreign LLC.`
+                content: `If your business is already operating in another state and expanding to Georgia, you’ll need to form a Foreign LLC.`
             },
             {
                 type: 'arrow-links',
                 content: [{
-                    text: `More information on Texas filing and licensing requirements can be found here.`,
-                    url: `/texas-llc/fees-filing-requirements/`,
+                    text: `More information on Georgia filing and licensing requirements can be found here.`,
+                    url: `/georgia-llc/fees-filing-requirements/`,
                 }, ]
             },
             // Helpful resource
             {
                 type: `heading`,
                 size: 4,
-                content: `Helpful Resources from the Texas Secretary of State`
+                content: `Read More Information from the Georgia Secretary of State`
             },
             {
                 type: `paragraph`,
-                content: `The TX Secretary of State has plenty of additional information on forming and running a business in Texas.`
+                content: `The GA Secretary of State has plenty of additional information on forming and running a business in Georgia. Click on the links below for more details.`
             },
             {
                 type: 'arrow-links',
                 content: [{
-                        text: `Texas Secretary of State for forming and running your TX LLC`,
-                        url: `https://www.sos.state.tx.us/corp/index.shtml`,
+                        text: `Georgia Secretary of State for forming and running your LLC`,
+                        url: `https://georgia.gov/starting-business-guide`,
                     },
                     {
-                        text: `Texas Workforce Commission for TX employers and hiring`,
-                        url: `https://twc.texas.gov/businesses`,
+                        text: `Georgia Department of Labor for employers and hiring`,
+                        url: `https://dol.georgia.gov/employers`,
                     },
                     {
-                        text: `Texas Comptroller for TX taxes`,
-                        url: `https://comptroller.texas.gov/taxes/`,
+                        text: `Georgia Department of Revenue for taxes`,
+                        url: `https://dor.georgia.gov/taxes/business-taxes/`,
                     },
                 ]
             },
@@ -318,20 +254,20 @@ export const HomePageContent = {
                     style: {
                         marginBottom: `24px`
                     },
-                    text: `Naming Your Texas LLC`,
-                    url: `/texas-llc/texas-business-names/`,
+                    text: `Naming Your Georgia LLC`,
+                    url: `/georgia-llc/georgia-business-names/`,
                 }, ],
             },
             {
                 type: `paragraph`,
-                content: `How to search the Texas business registry of the TX Secretary of State and find the right name. Includes information on naming rules, fictitious names, reserving a Texas LLC name and more.`
+                content: `Learn about Georgia naming rules, fictitious names, how to reserve a name and how to check business name availability using Incfile’s dedicated Business Name Search tool.`
             },
             {
                 type: 'button',
                 theme: `secondary56`,
                 content: {
-                    text: `Search For Your texas LLC Name`,
-                    url: `/`,
+                    text: `Search For Your Georgia LLC Name`,
+                    url: `/business-name-search/`,
                 },
             },
             {
@@ -340,13 +276,13 @@ export const HomePageContent = {
                     style: {
                         marginBottom: `24px`
                     },
-                    text: `Texas Registered Agents`,
-                    url: `/texas-llc/registered-agents-texas-llc/`,
+                    text: `Georgia Registered Agents`,
+                    url: `/georgia-llc/registered-agents-georgia-llc/`,
                 }, ],
             },
             {
                 type: `paragraph`,
-                content: `How to appoint a Texas Registered Agent to your new LLC or change to a different Registered Agent. Includes information on Registered Agent rules and searching for Texas Registered Agents.`
+                content: `Learn how to appoint a Georgia Registered Agent to your new LLC or change to a different Registered Agent. Includes information on Registered Agent rules and searching for Georgia Registered Agents.`
             },
             {
                 type: 'arrow-links',
@@ -354,13 +290,13 @@ export const HomePageContent = {
                     style: {
                         marginBottom: `24px`
                     },
-                    text: `Fees and Requirements for Your Texas LLC`,
-                    url: `/texas-llc/fees-filing-requirements/`,
+                    text: `Fees and Requirements for Your Georgia LLC`,
+                    url: `/georgia-llc/fees-filing-requirements/`,
                 }, ],
             },
             {
                 type: `paragraph`,
-                content: `How to understand the various fees you’ll need to pay and the requirements you’ll need to meet for both federal and Texas rules. Includes details of Employer Identification Numbers (EINs), Texas and federal business licenses, Texas annual reports and more.`
+                content: `Learn about the various fees you’ll need to pay and the requirements you’ll need to meet for both federal and Georgia rules. Includes information on Employer Identification Numbers (EINs), Georgia and federal business licenses, annual reports and more.`
             },
             {
                 type: 'arrow-links',
@@ -368,13 +304,13 @@ export const HomePageContent = {
                     style: {
                         marginBottom: `24px`
                     },
-                    text: `Business Taxes for Your Texas LLC`,
-                    url: `/texas-llc/business-taxes/`,
+                    text: `Business Taxes for Your Georgia LLC`,
+                    url: `/georgia-llc/business-taxes/`,
                 }, ],
             },
             {
                 type: `paragraph`,
-                content: `How to understand the various taxes you will need to pay to the federal and Texas government. Includes details of federal taxes like income and self-employment and Texas taxes like sales tax and income tax.`
+                content: `How to understand the various taxes you will need to pay to the federal and Georgia government. Includes details of federal taxes like income and self-employment and Georgia taxes like sales tax and income tax.`
             },
         ],
     },

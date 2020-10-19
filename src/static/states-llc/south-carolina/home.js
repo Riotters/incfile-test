@@ -571,7 +571,7 @@ export const registeredAgent = [
       list: [`An always-available South Carolina Registered Agent who can receive correspondence, documents and legal proceedings on your LLC’s behalf`,
              `A digital dashboard where you can access, store and retrieve any information we’ve received for your business`,
              `An email notification whenever we receive documents for your business`,
-             `Automatic forwarding of all legal correspondence, documentation and information directly to you,`
+             `Automatic forwarding of all legal correspondence, documentation and information directly to you`,
              `A free (+ state fee) first year, whether you form your business through us or not ($119 a year after)`],
     },
     marginBottom: 32,
