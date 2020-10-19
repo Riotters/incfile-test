@@ -16,6 +16,11 @@ import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
 import {TextSpacedBox} from "../molecules/text-blocks/text-spaced-box";
 import AccordionWithCheckmark from "../organisms/acccordion-with-checkboxes";
 import BusinessNameSearchForm from "../organisms/forms/business-name-search-form";
+import ToolsList from "../organisms/lists/tools-list";
+import Mobile from "../../images/icons/mobile-compatibility.inline.svg";
+import {moreInfo} from "../../static/learning-center-entity/virtual-mailboxes";
+import TextBlockWithImage from "../../pages/virtual-mailbox";
+import GenericTable from "../organisms/tables/generic-table";
 
 const Wrapper = styled.div`
   display: flex;
@@ -67,11 +72,13 @@ const Content = ({ content }) => {
           )}
           {item.type === "button" && <Button content={item.content} theme={item.theme} arrow={item.arrow ?? true} marginSM="24px auto 24px 0" marginMD="42px auto 56px 0" />}
           {item.type === "buttons" && (
-              <Buttonsbox>
-                {item.content.map((button) => (
+              <div style={{"margin-bottom": item.marginBottom + "px"}}>
+                <Buttonsbox>
+                  {item.content.map((button) => (
                       <Button content={button.content} theme={button.theme} arrow={button.arrow ?? true} margin="0 16px 0 0" />
-                ))}
-              </Buttonsbox>
+                  ))}
+                </Buttonsbox>
+              </div>
           )}
           {item.type === "tabbed-checklist" && (
               <AccordionWithCheckmark content={item.content} tab curve={item.curve} listColor={item.listColor} curveRight={item.curveRight} bottomMargin={item.marginBottom} />
@@ -84,6 +91,29 @@ const Content = ({ content }) => {
           {item.type === "accordion" && <Accordion tab content={item.content} bottomMargin={item.marginBottom} />}
           {item.type === "numeric-list" && <NumericList noBox={item.noBox ?? false} content={item.content} bottomMargin={item.marginBottom} />}
           {item.type === "image" && <Image filename={item.content} bottomMargin={item.marginBottom} />}
+          {item.type === "tools-list" && <ToolsList tools={item.content} tab={item.tab} />}
+          {item.type === "svg-color-text-box" && (
+              <div style={{"margin-bottom": item.marginBottom + "px"}}>
+                {item.content.map((box) => (
+                    <TextBlockWithImage SvgImage={box.svg}
+                                        imageBackgroundColor={box.backgroundColor}
+                                        imageShadowColor={box.shadowColor}
+                                        width={100}
+                                        widthUnit="%">
+                      <Heading size={4}>
+                        {box.header}
+                      </Heading>
+                      <Paragraph>
+                        {box.text}
+                      </Paragraph>
+                    </TextBlockWithImage>
+                ))
+                }
+              </div>
+          )}
+          {item.type === "table" && (
+              <GenericTable responsive={item.responsive} settings={item.settings} style={item.style} content={item.content} />
+          )}
         </>
       ))}
     </Wrapper>
