@@ -207,6 +207,9 @@ const HowToGuide = ({ content }) => {
                 <Paragraph big mixed={true}>{parse(content.mainSteps.step4.text3)}</Paragraph>
                 <BoxCTA bgColor={color.orange3} bgImage={BgBoxHandlePaperWorks} content={content.mainSteps.step4.cta} />
 
+                <Heading size={3}>{content.mainSteps.step4.heading2}</Heading>
+                <Paragraph big mixed={true}>{parse(content.mainSteps.step4.text4)}</Paragraph>
+
                 <Heading size={4} style={{ marginTop: `40px` }}>{parse(content.mainSteps.step4.annualReport[0].title)}</Heading>
                 {content.mainSteps.step4.annualReport[0].items.map(item => (
                     <Whitebox flex padding="24px" bottomMargin="8px">
