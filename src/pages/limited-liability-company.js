@@ -52,7 +52,10 @@ class LLC extends React.Component {
 
         return (
             <Layout>
-                <SEO title="Limited Liability Company | Should I start an LLC for my Business?" description="Learn about the benefits of forming an LLC, the legal protections it offers you, and if an LLC is the right choice for your business." />
+                <SEO
+                    title="Limited Liability Company | Should I start an LLC for my Business?"
+                    description="Learn about the benefits of forming an LLC, the legal protections it offers you, and if an LLC is the right choice for your business."
+                />
                 <Top imageName="mr-bulb-llc" imageAlt="Mrs Bulb and with checklist" ovalColor="darkblue">
                     <h1>{top.header}</h1>
                     <p>{top.text}</p>
