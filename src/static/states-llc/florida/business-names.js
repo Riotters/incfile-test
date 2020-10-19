@@ -9,11 +9,11 @@ import BgBoxBusinessNameSearchTool from "../../../images/icons/states/business-n
 export const businessNamesContent = {
   header: {
     title: `Naming Your Texas LLC`,
-    subline: `Learn how to conduct a business entity search with the Texas Secretary of State and register your LLC name.`,
+    subline: `Learn how to conduct a business entity search with the Florida Division of Corporations and register your LLC name.`,
     boxes: [
       {
-        title: `Incorporate today for <span style="color:#FD8550">$0 + State fee.</span>`,
-        desc: `Starting a Texas LLC? Have Incfile do all the paperwork for you for free.`,
+        title: `Starting a Florida LLC? Have Incfile do all the paperwork for you for free.`,
+        desc: `<span style="color:#FD8550">Incorporate today for $0 + State fee.</span>`,
         button: {
           text: `Form Your LLC Now`,
           url: "/",
@@ -24,16 +24,12 @@ export const businessNamesContent = {
   content: [
     {
       type: `paragraph`,
-      content: `Whether you’re searching for the right Texas business name or registering your LLC with the TX Secretary of State, we can help. We’ve got all the information you need on Texas business entity searches, LLC naming rules, fictitious names and registering your business.`,
+      content: `We’re here to help you find the right business name for your Florida LLC. From searching for a business name with the FL Department of State to understanding naming rules or creating a “Doing Business As” name to register your entity, you’re in the right place.`,
     },
     {
       type: `heading`,
       size: 3,
-      content: `General Rules for LLC Names`,
-    },
-    {
-      type: `paragraph`,
-      content: `These rules typically apply to all LLCs, no matter what state they are formed in.`,
+      content: `Florida Department of State (DOS) Rules for Naming LLCs`,
     },
     {
       type: `accordingTabWithCountingLeft`,
@@ -44,7 +40,7 @@ export const businessNamesContent = {
           answer: [
             {
               type: `paragraph`,
-              content: `The business name you have chosen cannot be used by any other LLC or corporation in the state of Texas. This is why you should check business name availability on the TX SOS website.`,
+              content: `The business name you have chosen cannot be used by any other LLC or corporation in the state of Florida. This is why you should check business name availability on the FL DOS website.`,
             },
           ],
         },
@@ -54,7 +50,7 @@ export const businessNamesContent = {
           answer: [
             {
               type: `paragraph`,
-              content: `It’s not enough for your TX LLC name to be unique. It also cannot be similar to the name of a corporation or LLC in Texas. For example, you cannot use the following factors to say your name is different from the name of another business:`,
+              content: `It’s not enough for your LLC name to be unique. It also cannot be similar to the name of a corporation or LLC in Florida. For example, you cannot use the following factors to say your name is different from the name of another business:`,
             },
             {
               type: `list-dot-without-bg`,
@@ -88,7 +84,7 @@ export const businessNamesContent = {
             {
               type: `list-dot-without-bg`,
               content: [
-                `Are very similar to the name of a federal or TX agency or organization (e.g., FBI, FDA, Texas Comptroller, Texas Police, Treasury, etc.)`,
+                `Are very similar to the name of a federal or FL agency or organization (e.g. FBI, FDA, Florida Department of Revenue, Florida Police, Treasury, etc.)`,
                 `Suggest affiliation with a federal or state agency or organization`,
                 `Use the term “Olympic” or any terms that are trademarks of the Olympic organization`,
                 `Imply a purpose that it would be illegal for your business to carry out`,
@@ -97,29 +93,6 @@ export const businessNamesContent = {
           ],
         },
       ],
-    },
-    {
-      type: `heading`,
-      size: 3,
-      content: `Specific Texas Rules for Business Names`,
-    },
-    {
-      type: `paragraph`,
-      content: `In addition to the general rules listed above, the Texas Secretary of State has some specific business naming rules for your LLC. You will need to follow these rules if you want to name your TX business appropriately. Here are some direct quotes from the Texas Secretary of State:`,
-    },
-    {
-      type: `numberBoxList`,
-      content: [
-        `Where prohibited by §31.005 and §181.004 of the Texas Finance Code, an entity name cannot include the words "bank," "bank and trust," "trust," "trust company" or a similar term, phrase or foreign language word unless accompanied by a no objection letter from the Banking Commissioner`,
-        `Where prohibited by §61.313 of the Texas Education Code, an entity name cannot include the words "College," "University," "School of Medicine," "Medical School," "Health Science Center," "School of Law," "Law Center," or "Law School," whether in English or in another language, unless accompanied by a no objection letter from the Texas Higher Education Coordinating Board`,
-        `Where prohibited by §5.062 of the Texas Business Organizations Code, an entity name cannot include the words "Veteran," "Legion," "Foreign," "Spanish," "Disabled," "War," or "World War" if the name implies the entity is created for the benefit of war veterans and their families, without written approval issued from a veterans organization pursuant to §5.062 of the Texas Business Organizations Code.`,
-        `The words "insurance" or "surety" must be accompanied by other words that remove the implication that the entity purpose is to be an insurer`,
-      ],
-    },
-    {
-      type: `paragraph`,
-      styles: { marginTop: `40px` },
-      content: `Read more about naming regulations from the <a href="https://direct.sos.state.tx.us/help/entitynames.pdf">Texas Secretary of State.</a>`,
     },
     {
       type: `heading`,
@@ -160,51 +133,83 @@ export const businessNamesContent = {
     {
       type: `heading`,
       size: 3,
-      content: `Texas Business Entity Searches`,
+      content: `Florida Business Entity Searches`,
     },
     {
       type: `paragraph`,
-      content: `Once you have an idea what business name you’d like to use, you’ll need to complete a “Texas business entity search.” Incfile offers a fast, simple and convenient tool to look up your proposed business name. The Texas Comptroller also has a tool that lets you search the register of TX LLCs and corporations to see if someone already has your desired business name.`,
+      content: `Once you’ve narrowed it down to a few name options, it’s important to check with the Florida Division of Corporations to make sure your preferred business name isn’t already taken by another Florida business. There are a few ways to do this.`,
     },
     {
-      type: `iconListColorBox`,
-      boxColor: color.orange3,
-      content: {
-        header: `The Texas Secretary of State search tool lets you enter details and search for your TX LLC by the following fields:`,
-        list: [`Tax ID`, `Entity Name`, `File Number`],
-      },
+      type: `heading`,
+      size: 3,
+      content: `Incfile’s Business Name Search Tool`,
     },
     {
       type: `paragraph`,
-      styles: { marginTop: `42px` },
-      content: `If the business name is already used, that means it’s not available and you won’t be able to register it. Try searching for a different business name instead.`,
+      content: `The Incfile Business Name Search tool lets you effortlessly search for your business name in Florida and any other state. Our tool integrates with Sunbiz business searches to query the FL Department of State register and let you know about name availability.`,
     },
     {
-      type: `box-cta`,
-      color: color.purple3,
-      styles: { fontSize: `clamp(1.5rem, 5vw, 1.2rem)` },
-      bgImage: [BgBoxBusinessNameSearchTool],
-      content: {
-        title: `Find out if your preferred business name is available in Texas with Incfile’s free tool.`,
-        button: {
-          text: `Check Your Texas LLC Name`,
-          url: `/business-name-generator/`,
+        type: `button`,
+        theme: `secondary56`,
+        width: `450px`,
+        content: {
+          text: `Search for your Florida LLC name`,
+          url: `/`,
         },
       },
+    {
+      type: `heading`,
+      size: 3,
+      content: `Sunbiz Business Search`,
     },
+    {
+      type: `paragraph`,
+      content: `Start naming your business by first completing a Florida business entity search with the FL Department of State, or more specifically, the Division of Corporations. Florida's DOS website, called Sunbiz, has a helpful tool that lets you run an LLC and corporation search to see if someone already has your desired business name. Just enter the business name you want to use, then search to see if it’s already taken. The Sunbiz search tool lets you enter details and search all Florida corporations or LLCs by the following fields:`,
+    },
+    {
+      type: `list-dot-without-bg`,
+      content: [
+        `Entity Name`,
+        `Officer/Registered Agent`,
+        `Registered Agent Name`,
+        `Trademark Name`,
+        `Trademark Owner Name`,
+        `FEI/EIN`,
+        `Detail by Document Number`,
+        `Zip Code`,
+        `Street Address`,
+        ],
+    },
+    {
+      type: `paragraph`,
+      content: `If the business name is already used by an LLC or corporation in Florida, that means it’s not available and you won’t be able to register it. Try searching for a different business name instead.`,
+    },
+    {
+        type: `button`,
+        theme: `secondary56`,
+        width: `450px`,
+        content: {
+          text: `Florida Department of State business name search tool`,
+          url: `/`,
+        },
+      },
     // Assumed Name
     {
       type: `heading`,
       size: 3,
-      content: `DBA / Assumed Names for Texas LLCs`,
+      content: `Fictitious Names or DBAs in Florida`,
     },
     {
       type: `paragraph`,
-      content: `You might choose to do business under a different name from your legal LLC name. In Texas, doing business under a different name is known as an “Assumed Name.” You might choose to use a different name from your TX formal LLC name for a variety of reasons.`,
+      content: `You might choose to do business under a different name from your legal LLC name. In Florida, doing business under a different name is known as either a “Fictitious” or “Doing Business As” name. You might choose to use a different name from your FL formal LLC name for a variety of reasons.`,
     },
     {
       type: `paragraph`,
-      content: `For example, your LLC might be called Texas Alternative Power Holding Company LLC and you have a chain called Home Solar Energy Systems. You should file an assumed name to let the Texas Secretary of State know. In Texas, you do that through an “Assumed Name Certificate” form or you can have Incfile do it on your behalf through our Assumed Business Name service.`,
+      content: `For example, your LLC might be called Florida Keys Holding Company LLC and you have a chain called Hemingway’s Bookstores. You should file a fictitious name to let the Florida Department of State know. In Florida, you do that through a Fictitious Name Application, or you can have Incfile do it on your behalf through our Assumed Business Name service.`,
+    },
+    {
+      type: `paragraph`,
+      content: `The Florida DOS also requires you to advertise the LLC name you register at least once in a newspaper that is located within the county where your principal place of business is located.`,
     },
     {
       type: `box-cta`,
@@ -214,7 +219,7 @@ export const businessNamesContent = {
       content: {
         title: `Register and manage an assumed name or DBA name through our easy-to-use service.`,
         button: {
-          text: `Icfile’s Assumed Name Service`,
+          text: `Icfile’s fictitious name service`,
           url: `/fictitious-business-or-trade-name/`,
         },
       },
@@ -223,27 +228,16 @@ export const businessNamesContent = {
     {
       type: `heading`,
       size: 3,
-      content: `Register Your Business Name With the Texas Secretary of State`,
+      content: `Ready to Register Your Business Name?`,
     },
     {
       type: `paragraph`,
-      content: `Once you’ve searched for your Texas business name, checked availability, followed the naming rules and decided whether you need an assumed business name, you can register your TX LLC name. There are a couple of ways to do this.`,
-    },
-    {
-      type: `numberBoxList`,
-      styles: { marginBottom: `55px` },
-      content: [
-        {
-          text: `If you don’t want to form your Texas LLC right now, you can reserve the business name with the Texas Secretary of State. You will need to complete a Name Reservation form and file it with the TX SOS. You do not need to reserve a name if you are forming your business right away.`,
-          button: {
-            text: `Texas SOS LLC Name Reservation Form`,
-            theme: `secondary56`,
-            width: `385px`,
-            url: `/`,
-          },
-        },
-        `If you’re ready to start your Texas LLC, you can formally file your Certificate of Formation with the Texas Secretary of State, or have Incfile do it for you.`,
-      ],
+      content: `Once you’ve
+        <a href="/business-name-search/">searched for your Florida business name</a>
+        checked availability, followed the naming rules and decided whether you need a fictitious name, you can register your FL LLC name. Just file your Articles of Organization with the Florida Department of State on the
+        <a href="https://dos.myflorida.com/sunbiz/">Sunbiz</a>
+        website, or
+        <a href="/">let Incfile take care of it for you.</a>`,
     },
     {
       type: `box-cta`,
@@ -251,8 +245,8 @@ export const businessNamesContent = {
       styles: { fontSize: `clamp(1rem, 5vw, 1.5rem)` },
       bgImage: [BgBoxIncorporationPaperWork],
       content: {
-        title: `Incfile can handle all your incorporation paperwork with the State of Texas for you—and we’ll do it for free!`,
-        subtitle: `Incorporate in Texas for $0 + State Fee ($300)`,
+        title: `Incfile can handle all your incorporation paperwork with the State of Florida for you—and we’ll do it for free!`,
+        subtitle: `Incorporate in Florida for $0 + State Fee ($125)`,
         button: {
           text: `Start Your LLC Now`,
           url: `/`,
@@ -263,31 +257,27 @@ export const businessNamesContent = {
     {
       type: `heading`,
       size: 3,
-      content: `FAQs About Naming Your Texas LLC`,
-    },
-    {
-      type: `paragraph`,
-      content: `You’ll find plenty more insight and guidance on the other pages of this guide, including:`,
+      content: `FAQs About Naming Your Florida LLC`,
     },
     {
       type: `accordion`,
       content: {
         items: [
           {
-            question: `How Do I Search for My Texas LLC Business Name?`,
-            answer: `Just go to the business name search tool and enter your proposed business name. You can search the register of the Texas Secretary of State, which will tell you if there are any TX corporations or LLCs with that name.`,
+            question: `How Do I Search for My Florida LLC Business Name?`,
+            answer: `Just go to the business name search tool and enter your proposed business name. You can search the register of the Florida Secretary of State, which will tell you if there are any FL corporations or LLCs with that name.`,
           },
           {
-            question: `Are There Any Rules on Naming My Texas LLC?`,
-            answer: `Yes. Most LLCs will be bound by general rules (applicable to all LLCs) and specific rules (applicable in the state of Texas). We’ve detailed these rules above.`,
+            question: `Are There Any Rules on Naming My Florida LLC?`,
+            answer: `Yes. Most LLCs will be bound by general rules (applicable to all LLCs) and specific rules (applicable in the state of Florida). We’ve detailed these rules above.`,
           },
           {
-            question: `Can I Do Business Under a Different Name Than My LLC Name in Texas?`,
+            question: `Can I Do Business Under a Different Name Than My LLC Name in Florida?`,
             answer: `Yes. Known as “assumed names,” “fictitious names,” “doing business as names” or “trade names,” you can choose to conduct business under a different name. Details are above.`,
           },
           {
-            question: `Can I Reserve a Name for My Texas LLC?`,
-            answer: `Yes. The Texas Secretary of State allows you to reserve a name if you don’t want to start your business immediately. Details are above. If you are ready to start your business now, you do not need to reserve a name.`,
+            question: `Can I Reserve a Name for My Florida LLC?`,
+            answer: `No. The Florida Department of State does not have any provisions to allow you to reserve your business name.`,
           },
         ],
       },
@@ -300,7 +290,7 @@ export const businessNamesContent = {
     },
     {
       type: `paragraph`,
-      content: `You must be careful that your Texas LLC name does not infringe on the trademark or service mark of another business. The easiest way to make sure your proposed business name does not infringe is to carry out a trademark search through Incfile. If it doesn’t infringe, you can even register it as a trademark yourself.`,
+      content: `You must be careful that your Florida LLC name does not infringe on the trademark or service mark of another business. The easiest way to make sure your proposed business name does not infringe is to carry out a trademark search through Incfile. If it doesn’t infringe, you can even register it as a trademark yourself.`,
     },
     {
       type: `box-cta`,
@@ -313,6 +303,28 @@ export const businessNamesContent = {
         button: {
           text: `Incfile’s Trademark & Registration Service`,
           url: `/trademark-name-search/`,
+        },
+      },
+    },
+    {
+      type: `heading`,
+      size: 3,
+      content: `Get a Street Address for Your Florida LLC`,
+    },
+    {
+      type: `paragraph`,
+      content: `If you need a street address in Florida, Incfile provides a convenient and safe Virtual Mailbox service. Please note that this may not meet the requirements of the Department of State for a registered office or Registered Agent address.`,
+    },
+    {
+      type: `box-cta`,
+      color: color.blue3,
+      styles: { fontSize: `clamp(1rem, 5vw, 1.5rem)` },
+      bgImage: [BgBoxTrademark],
+      content: {
+        title: `Give your business its own Florida mailing address and have your mail scanned for you.`,
+        button: {
+          text: `Florida virtual mailbox service`,
+          url: `/florida-virtual-mailbox/`,
         },
       },
     },

@@ -21,10 +21,6 @@ export const tabPages = {
       path: `/illinois-llc/business-taxes/`,
     },
     {
-      name: `FAQ`,
-      path: `/illinois-llc/faq/`,
-    },
-    {
       name: `What To Do Next?`,
       path: `/other/after-forming-llc/`,
     },
