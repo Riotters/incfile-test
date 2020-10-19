@@ -18,11 +18,7 @@ export const tabPages = {
     },
     {
       name: `Business Taxes`,
-      path: `/tenew-yorkxas-llc/business-taxes/`,
-    },
-    {
-      name: `FAQ`,
-      path: `/new-york-llc/faq/`,
+      path: `/new-york-llc/business-taxes/`,
     },
     {
       name: `What To Do Next?`,

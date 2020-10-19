@@ -98,7 +98,6 @@ const BusinessNames = ({ content }) => {
               </ArrowLink>
             ))}
 
-          {item.type === "list-dot" && <IconListColorBox color={color.blue3} content={item.content} rounded />}
 
           {item.type === "button" && <Button content={item.content} theme={item.theme} arrow width={item.width ?? `350px`} margin="16px 0 0 0" marginMD="42px 0 42px 0" />}
 
