@@ -90,36 +90,47 @@ const ImageBoxes = styled.div`
 `;
 
 const FeeSection = ({ content }) => {
-  const cards = content.cards;
+    const cards = content.cards;
+    const [entityType, setEntity] = React.useState('LLC');
+    const [entityState, setEntityState] = React.useState('');
 
-  return (
-    <Fee>
-      <Oval heigh="720" width="720" top="0" left="0" y="-20">
-        <OvalSVG />
-      </Oval>
-      <HeadingCenter headline={content.header} headlineWidth="770" bottomMargin="80" />
-      <ContentLeft contentWidth="770">
-        <Paragraph>{content.text}</Paragraph>
-        <Paragraph>{content.text2}</Paragraph>
-      </ContentLeft>
-      <ContentCenter contentWidth="970">
-        <ImageBoxes>
-          <Curve top="-95" right="-15" color={color.purple2}>
-            <CurveSVG />
-          </Curve>
-          <TopImageBox className="box box--left" image="lcsn-4343" color={color.green3}>
-            <Heading size="4">{cards[0]}</Heading>
-            <Dropdown className="dropdown" placeholder="Select" options={entities.map((entity) => entity)} />
-          </TopImageBox>
-          <TopImageBox className="box box--right" image="your-state" color={color.blue3}>
-            <Heading size="4">{cards[1]}</Heading>
-            <Dropdown className="dropdown" placeholder="Select" options={states.map((state) => state.name)} />
-          </TopImageBox>
-        </ImageBoxes>
-        <Button content={content.button} theme="primary56" arrow />
-      </ContentCenter>
-    </Fee>
-  );
+    const handleForm = (e) => {
+        e.preventDefault();
+        let url = `${process.env.ORDER_URL}/form-order-now.php?entityType=${entityType}&entityState=${entityState}`;
+
+        if (typeof window !== 'undefined') {
+            window.location.replace(url);
+        }
+    }
+
+    return (
+        <Fee>
+            <Oval heigh="720" width="720" top="0" left="0" y="-20">
+                <OvalSVG />
+            </Oval>
+            <HeadingCenter headline={content.header} headlineWidth="770" bottomMargin="80" />
+            <ContentLeft contentWidth="770">
+                <Paragraph>{content.text}</Paragraph>
+                <Paragraph>{content.text2}</Paragraph>
+            </ContentLeft>
+            <ContentCenter contentWidth="970">
+                <ImageBoxes>
+                    <Curve top="-95" right="-15" color={color.purple2}>
+                        <CurveSVG />
+                    </Curve>
+                    <TopImageBox className="box box--left" image="lcsn-4343" color={color.green3}>
+                        <Heading size="4">{cards[0]}</Heading>
+                        <Dropdown className="dropdown" placeholder="Select" options={entities.map((entity) => entity)} onChange={option => setEntity(option.value)} />
+                    </TopImageBox>
+                    <TopImageBox className="box box--right" image="your-state" color={color.blue3}>
+                        <Heading size="4">{cards[1]}</Heading>
+                        <Dropdown className="dropdown" placeholder="Select" options={states.map((state) => state.name)} onChange={option => setEntityState(option.value)} />
+                    </TopImageBox>
+                </ImageBoxes>
+                <Button content={content.button} theme="primary56" arrow onClick={(e) => handleForm(e)} />
+            </ContentCenter>
+        </Fee>
+    );
 };
 
 export default FeeSection;

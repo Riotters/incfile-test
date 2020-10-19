@@ -14,20 +14,20 @@ import Catch from "../atomic/sections/other/free-llc/catch";
 import { top, fee, start, industry, isCatch } from "../static/other/free-llc";
 
 const GeneralResearchTopics = () => (
-  <Layout>
-    <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
-    <Top imageName="mrs-bulb-free-llc-5591" imageAlt="Mrs Bulb and with checklist" ovalColor="blue" headlineWidth="800">
-      <h1>{top.header}</h1>
-      <RatingRow topMargin="64">
-        <CartBlock />
-        <RatingBlock />
-      </RatingRow>
-    </Top>
-    <Fee content={fee} />
-    <Start content={start} />
-    <Industry content={industry} />
-    <Catch content={isCatch} />
-  </Layout>
+    <Layout>
+        <SEO title="Free LLC Filing | Register Your LLC Online for Free" description="Let Incfile take care of the paperwork for you—for free! Form your business today for $0 + your state’s fee. Learn more." />
+        <Top imageName="mrs-bulb-free-llc-5591" imageAlt="Mrs Bulb and with checklist" ovalColor="blue" headlineWidth="800">
+            <h1>{top.header}</h1>
+            <RatingRow topMargin="64">
+                <CartBlock />
+                <RatingBlock />
+            </RatingRow>
+        </Top>
+        <Fee content={fee} />
+        <Start content={start} />
+        <Industry content={industry} />
+        <Catch content={isCatch} />
+    </Layout>
 );
 
 export default GeneralResearchTopics;

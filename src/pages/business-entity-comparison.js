@@ -14,23 +14,32 @@ import Service from "../atomic/sections/learning-center-entity/comparison-chart/
 //Texts
 import { top, about, businessStructure, entityType, rocket, guide, service } from "../static/learning-center-entity/comparison-chart";
 
-const ComparisonChart = () => (
-  <Layout>
-    <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
-    <Top imageName="mr-bulb-business-entity-comparison-9338" imageAlt="Mrs Bulb and with checklist" ovalColor="sun">
-      <h1>{top.header}</h1>
-      <p>{top.text}</p>
-      <Buttonsbox>
-        <Button content={top.buttons[0]} theme="primary56" arrow />
-      </Buttonsbox>
-    </Top>
-    <About content={about} />
-    <BusinessStructure content={businessStructure} />
-    <EntityType content={entityType} />
-    <Rocket content={rocket} />
-    <Guide content={guide} />
-    <Service content={service} />
-  </Layout>
-);
+const ComparisonChart = () => {
+    const scrollToElement = (l, e) => {
+        e.preventDefault();
+      
+        const el = document.getElementById(l);
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    return (
+        <Layout>
+            <SEO title="Types of Corporations & Business Structures | Entity Chart" description="Confused about what type of corporation is best for you? Compare business entities like LLCs, C corps, S corps, and nonprofits." />
+            <Top imageName="mr-bulb-business-entity-comparison-9338" imageAlt="Mrs Bulb and with checklist" ovalColor="sun">
+                <h1>{top.header}</h1>
+                <p>{top.text}</p>
+                <Buttonsbox>
+                    <Button content={top.buttons[0]} theme="primary56" arrow onClick={e => scrollToElement('jsDownloadForm', e)} />
+                </Buttonsbox>
+            </Top>
+            <About content={about} />
+            <BusinessStructure content={businessStructure} />
+            <EntityType content={entityType} />
+            <Rocket content={rocket} />
+            <Guide content={guide} />
+            <Service content={service} />
+        </Layout>
+    );
+};
 
 export default ComparisonChart;
