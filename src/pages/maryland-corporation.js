@@ -5,7 +5,7 @@ import Top from "../atomic/partials/top";
 import Buttonsbox from "../atomic/atoms/boxes/top-buttons-box";
 import Button from "../atomic/molecules/buttons/button";
 import Layout from "../components/layout";
-import { fillingRequirements, info, packets, questions, service, top, articlesOfIncorporation, corporationName } from "../static/learning-center-entity/alabama-corporation";
+import { fillingRequirements, info, packets, questions, service, top, articlesOfIncorporation, corporationName } from "../static/learning-center-entity/maryland-corporation";
 import CartBlock from "../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../atomic/molecules/blocks/rating-block";
 import RatingRow from "../atomic/atoms/boxes/rating-row";
@@ -83,11 +83,16 @@ const AlaskaCorporation = () => (
               Choosing a Corporation Name
             </Heading>
             <Paragraph big>
-              The business name you choose for your new Alabama corporation must be readily distinguishable from all other registered and reserved Alabama business entities. It must end with either “Incorporated” or “Corporation” (or an abbreviation thereof)-or, if it is to be a banking corporation,
-              “Bank,” “Banking,” or “Bankers.” The name cannot state or imply that the corporation is organized for some purpose other than the one specified in its articles of incorporation.
+            The name of your new Maryland corporation is very important-it’s one of the first official acts of your business organization, and it’s how people first meet your company.
+            </Paragraph>
+            <Paragraph big>
+            Your company’s name must be able to be told apart from any other registered or reserved Maryland business entity. It must also contain one or more of the following words (or an abbreviation thereof): “Incorporated,” “Corporation,” “Company” (but this must not follow the word “and” or a symbol for “and”), or “Limited.”
+            </Paragraph>
+            <Paragraph big>
+            Your corporation’s name also is not allowed to include language that states or gives the impression that the corporation is organized for any purpose other than one permitted by state law and its articles of incorporation.
             </Paragraph>
             <Paragraph big style={{ marginBottom: "0" }}>
-              You must reserve your new corporation’s name with the state filing office before filing your articles of incorporation. This costs $10 and is good for up to 120 days.
+            You can reserve an available name for 30 days for a $7 fee.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -95,23 +100,24 @@ const AlaskaCorporation = () => (
               Articles of Incorporation
             </Heading>
             <Paragraph big>
-                New Alabama corporations must file an original and two copies of your articles of incorporation with their local county probate judge before they can start conducting business as a corporation. Once the judge finds that the articles are in compliance with state law, he or she will issue (publish) one certified copy of the articles, return one to the LLC, and forward the third within 10 days to the Corporate Section of the Alabama Secretary of State’s office. Filing requires a $40 fee payable to the Alabama Secretary of State, and another $35 payable to the county probate judge, for a total of $75.
+            After choosing a name, the next step for your new Maryland corporation is filing articles of incorporation, along with a minimum filing fee of $120. The articles must be delivered to the state secretary of state’s office by at least one of the incorporators, all of whom must be adult individuals of at least 18 years age. Their duties are to sign, verify, and deliver in duplicate those articles of incorporation to the secretary of state.
             </Paragraph>
-            <Paragraph big>The articles must be delivered by at least one of the incorporators, who must sign and deliver the articles to the judge.</Paragraph>
 
             <Colorbox color={color.blue3} content={articlesOfIncorporation.box1} dotsColor={color.blue1} style={{ marginBottom: "65px" }} />
 
             <Colorbox color={color.orange3} content={articlesOfIncorporation.box2} dotsColor={color.orange1} style={{ marginBottom: "48px" }} />
 
-            <Paragraph big>Since Alabama law does not use the concept of par value for stocks, you do not need to state a par value for your shares.</Paragraph>
+            <Paragraph big>You can authorize shares of stock either with or without a stated par value. The most common practice is to issue shares without par value. Maryland imposes a stock fee that depends on the number of shares you authorize in your articles. You can authorize up to 5,000 shares without par value or a number of par value shares whose total par value equals $100,000 for the minimum filing fee of $120 ($100 recording fee plus a $20 minimum stock fee). Authorizing 100,000 shares with a stated par value of $1 or 1,000,000 shares with a stated par value of $.10 both result in an aggregate par value of $100,000, and therefore qualifies your corporation for the minimum $120 filing fee. Most incorporators authorize one class of common shares with equal voting, dividend, and liquidation rights, and no special restrictions.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Registered Agent and Office
             </Heading>
             <Paragraph big>
-            Every Alabama corporation must have a registered agent in the state-someone designated to receive official state administrative and legal correspondence. The registered agent must be either an adult Alabama resident, or a corporation with a business office identical to the registered office.
-The registered office may be at any of the corporation’s places of business..
+            Maryland corporations must each have a registered, in-state agent. The registered agent is the person or business entity designated to receive official state correspondence, including notice if the corporation is “served” with a lawsuit.
+            </Paragraph>
+            <Paragraph big>
+            Likewise, the state requires that all corporations maintain a registered, in-state office that may be its primary place of business. The registered agent must maintain a business office identical to the registered office, and must be either an individual person living in Maryland or a corporation authorized to conduct business in the “Old Line” State.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -119,33 +125,28 @@ The registered office may be at any of the corporation’s places of business..
               Bylaws
             </Heading>
             <Paragraph big>
-            Bylaws describe the corporation’s basic managerial and legal operating principles. An Alabama corporation must keep a copy of its bylaws at its main executive office, but is not required to file them with the state. The initial bylaws must be adopted by the board of directors, unless the articles of incorporation specify that shareholders have this right.
+            Bylaws lay out a corporation’s basic managerial and legal operating principles. The corporation must keep a copy at its principal executive office, but is not required to file them with the state. Nonetheless, they are a critically important document for the corporation.
             </Paragraph>
             <Paragraph big style={{ fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
-            Bylaws normally address:
+            At its initial meeting, the board of directors should adopt corporate bylaws, and then keep them updated as time goes on. The corporation’s board of directors can make, alter, amend, or repeal those bylaws, unless the articles of incorporation reserve this right to the shareholders. Bylaws normally address:
             </Paragraph>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>Shareholders and directors meetings</Paragraph>
+              <Paragraph bottomMargin={0}>Shareholders’ and directors’ meetings</Paragraph>
             </TextBoxed>
-
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>The authority, number, and tenure of directors</Paragraph>
             </TextBoxed>
-
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>Voting procedures</Paragraph>
             </TextBoxed>
-
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>The duties, responsibilities, and tenure of officers</Paragraph>
             </TextBoxed>
-
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>How stock is issued</Paragraph>
             </TextBoxed>
-
-            <TextBoxed style={{ marginBottom: "48px" }}>
+            <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>How and when annual financial information is provided to shareholders</Paragraph>
             </TextBoxed>
           </PanelWrapper>
@@ -154,41 +155,28 @@ The registered office may be at any of the corporation’s places of business..
               Directors
             </Heading>
             <Paragraph big>
-            A director must be a natural person of at least 19 years of age, but they do not have to be an Alabama resident-or even a shareholder-unless so stipulated in the articles of incorporation or the corporate bylaws. Either one of those documents may also specify a minimum and a maximum number of directors, but they are not required to be listed by name in the articles. Directors are elected annually to serve one-year terms.
+            Officers must be listed in the bylaws or elected by the board of directors. A Maryland corporation must have at least a president, a secretary, and a treasurer. Unless the bylaws specify otherwise, officers serve one-year terms and until a successor is elected and qualifies.
             </Paragraph>
             <Paragraph big>
-            he bylaws may either describe the corporation’s officer positions and duties or authorize that the board of directors make these appointments. These duties must include the responsibility for preparing minutes of meetings and for authenticating corporate records. Unless the bylaws provide otherwise, an officer may simultaneously hold more than one office in a corporation.
+            So long as the bylaws permit it, state law allows a person to hold more than one office in a corporation, but they may not serve simultaneously as both president and vice president of the same corporation. A person may hold more than one office in the same corporation, but they may not act in more than one capacity to execute, acknowledge, or verify a document that requires that action by more than one officer.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Requirement Reports
             </Heading>
-            <Paragraph big style={{ marginBottom: "24px" }}>
-            The Alabama Secretary of State requires that Alabama corporations file an annual report between January 1 and March 15 each year that specifies:
+            <Paragraph big>
+            An annual report, accompanied by a $300 fee, must be filed with the Maryland State Department of Assessments and Taxation each year with the corporate business personal property return.
             </Paragraph>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The corporation’s name and the state or country of original incorporation.</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The address of the corporation’s registered office in the state.</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The name of its registered agent at that office.</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The nature of the corporation’s business.</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The names and addresses of the corporation’s president and secretary.</Paragraph>
-            </TextBoxed>
+            <Paragraph big>
+            State law also requires the president (or another officer specified in the bylaws) to furnish an annual statement of affairs report to the shareholders, which must include the corporation’s balance sheet and financial statement of operations. This report must be submitted at each annual stockholders’ meeting and filed at the principal office within 120 days after the end of the fiscal year.
+            </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Taxes
             </Heading>
-            <Paragraph big>Alabama’s corporate tax structure consists of a flat rate of 6.5% on all corporate income. Among states with corporate income taxes, Alabama’s rate ranks 30th in the nation. Alabama also assesses a business privilege tax, which is an annual tax on corporate shares based on the net worth of the corporation.</Paragraph>
-            <Paragraph big>The Alabama Secretary of State recognizes subchapter S status for corporations. A “subchapter S” corporation (frequently referred to as an “S corp”) is treated as a “pass-through” entity for tax purposes in the same way as a sole proprietorship or partnership. The S corp does not file a tax return on its own behalf; instead, all tax-related data for the S corp is filed as part of the owner’s individual income tax.</Paragraph>
+            <Paragraph big>Maryland’s corporate tax structure consists of a flat rate of 8.25 percent based on federal taxable income after state modifications. Among states that have corporate income taxes, Maryland’s rate ranks 16th highest nationally.</Paragraph>
           </PanelWrapper>
         </CollapseWrapper>
       </TabsSection>

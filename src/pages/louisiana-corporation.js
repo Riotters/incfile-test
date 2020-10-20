@@ -5,7 +5,7 @@ import Top from "../atomic/partials/top";
 import Buttonsbox from "../atomic/atoms/boxes/top-buttons-box";
 import Button from "../atomic/molecules/buttons/button";
 import Layout from "../components/layout";
-import { fillingRequirements, info, packets, questions, service, top, articlesOfIncorporation, corporationName } from "../static/learning-center-entity/alabama-corporation";
+import { fillingRequirements, info, packets, questions, service, top, articlesOfIncorporation, corporationName } from "../static/learning-center-entity/louisiana-corporation";
 import CartBlock from "../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../atomic/molecules/blocks/rating-block";
 import RatingRow from "../atomic/atoms/boxes/rating-row";
@@ -83,11 +83,13 @@ const AlaskaCorporation = () => (
               Choosing a Corporation Name
             </Heading>
             <Paragraph big>
-              The business name you choose for your new Alabama corporation must be readily distinguishable from all other registered and reserved Alabama business entities. It must end with either “Incorporated” or “Corporation” (or an abbreviation thereof)-or, if it is to be a banking corporation,
-              “Bank,” “Banking,” or “Bankers.” The name cannot state or imply that the corporation is organized for some purpose other than the one specified in its articles of incorporation.
+            The name you decide on for your new corporation cannot be the same as or deceptively similar to the name of any other Louisiana business entity registered or reserved with the state. The name may not include language that states or implies that the corporation is organized for a charitable or nonprofit purpose other than one permitted by state law or than stated in its articles of incorporation. It also may not contain the phrase “doing business as.”
+            </Paragraph>
+            <Paragraph big>
+            The name must, however, include the words “incorporated,” “corporation,” “limited,” or “company,” or an abbreviation of one of those terms. If using the word “company,” it may be preceded by the word “and” or an equivalent symbol, such as “&.”
             </Paragraph>
             <Paragraph big style={{ marginBottom: "0" }}>
-              You must reserve your new corporation’s name with the state filing office before filing your articles of incorporation. This costs $10 and is good for up to 120 days.
+            Available corporate names can be initially reserved with the state for up to 60 days for a $25 fee, with up to two 30-day extensions upon request.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -95,23 +97,28 @@ const AlaskaCorporation = () => (
               Articles of Incorporation
             </Heading>
             <Paragraph big>
-                New Alabama corporations must file an original and two copies of your articles of incorporation with their local county probate judge before they can start conducting business as a corporation. Once the judge finds that the articles are in compliance with state law, he or she will issue (publish) one certified copy of the articles, return one to the LLC, and forward the third within 10 days to the Corporate Section of the Alabama Secretary of State’s office. Filing requires a $40 fee payable to the Alabama Secretary of State, and another $35 payable to the county probate judge, for a total of $75.
+            The Louisiana Business Law-contained in Title XII (Corporations and Associations), Chapter 1, of the Louisiana Revised Statutes-requires that articles of incorporation must be filed with the Louisiana Secretary of State
             </Paragraph>
-            <Paragraph big>The articles must be delivered by at least one of the incorporators, who must sign and deliver the articles to the judge.</Paragraph>
 
             <Colorbox color={color.blue3} content={articlesOfIncorporation.box1} dotsColor={color.blue1} style={{ marginBottom: "65px" }} />
 
+            <Paragraph big>The filing fee is $60. The articles should be delivered by one or more incorporators, who may be anyone you choose.</Paragraph>
             <Colorbox color={color.orange3} content={articlesOfIncorporation.box2} dotsColor={color.orange1} style={{ marginBottom: "48px" }} />
+            <Paragraph big>Louisiana also requires that an Initial Report be filed along with the articles of incorporation, containing the name and address of any initial directors and the street address and municipal location of the corporation’s registered office and registered agent.</Paragraph>
 
-            <Paragraph big>Since Alabama law does not use the concept of par value for stocks, you do not need to state a par value for your shares.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Registered Agent and Office
             </Heading>
             <Paragraph big>
-            Every Alabama corporation must have a registered agent in the state-someone designated to receive official state administrative and legal correspondence. The registered agent must be either an adult Alabama resident, or a corporation with a business office identical to the registered office.
-The registered office may be at any of the corporation’s places of business..
+            Louisiana corporations must have a registered agent in the state-the person or office designated to receive official administrative and legal correspondence from the state.
+            </Paragraph>
+            <Paragraph big>
+            The registered agent must be: a resident individual of Louisiana; a business corporation; a partnership or professional law corporation authorized to conduct business in Louisiana; or a foreign (out-of-state) corporation authorized to transact business in Louisiana.
+            </Paragraph>
+            <Paragraph big>
+            Louisiana requires that every corporation maintain a registered office in the Bayou State, which is considered the Louisiana corporation’s domicile.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -119,34 +126,34 @@ The registered office may be at any of the corporation’s places of business..
               Bylaws
             </Heading>
             <Paragraph big>
-            Bylaws describe the corporation’s basic managerial and legal operating principles. An Alabama corporation must keep a copy of its bylaws at its main executive office, but is not required to file them with the state. The initial bylaws must be adopted by the board of directors, unless the articles of incorporation specify that shareholders have this right.
+            Bylaws govern the corporation’s business and affairs. A Louisiana corporation is required to keep its bylaws available at its principal executive office, but it is not required to file them with the state. The incorporators or board of directors should adopt the corporation’s bylaws at their first meeting, insuring that there is no conflict with the corporation’s articles of incorporation. They should also keep them updated as time goes on.
             </Paragraph>
             <Paragraph big style={{ fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
-            Bylaws normally address:
+            Bylaws set forth the corporation’s basic operating principles from both the managerial and legal perspectives, and should include (as a minimum):
             </Paragraph>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>Shareholders and directors meetings</Paragraph>
+              <Paragraph bottomMargin={0}>What authority directors have, how many there are, and how long they serve</Paragraph>
             </TextBoxed>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The authority, number, and tenure of directors</Paragraph>
+              <Paragraph bottomMargin={0}>Duties and responsibilities of officers and how long they serve</Paragraph>
             </TextBoxed>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>Voting procedures</Paragraph>
+              <Paragraph bottomMargin={0}>How consensus on major decisions is reached, both with and without meetings</Paragraph>
             </TextBoxed>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The duties, responsibilities, and tenure of officers</Paragraph>
+              <Paragraph bottomMargin={0}>How, when, and where shareholders’ and directors’ meetings are held</Paragraph>
             </TextBoxed>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>How stock is issued</Paragraph>
+              <Paragraph bottomMargin={0}>How the corporation’s stock is issued</Paragraph>
             </TextBoxed>
 
             <TextBoxed style={{ marginBottom: "48px" }}>
-              <Paragraph bottomMargin={0}>How and when annual financial information is provided to shareholders</Paragraph>
+              <Paragraph bottomMargin={0}>Requirements for publishing annual financial information to shareholders</Paragraph>
             </TextBoxed>
           </PanelWrapper>
           <PanelWrapper>
@@ -154,41 +161,35 @@ The registered office may be at any of the corporation’s places of business..
               Directors
             </Heading>
             <Paragraph big>
-            A director must be a natural person of at least 19 years of age, but they do not have to be an Alabama resident-or even a shareholder-unless so stipulated in the articles of incorporation or the corporate bylaws. Either one of those documents may also specify a minimum and a maximum number of directors, but they are not required to be listed by name in the articles. Directors are elected annually to serve one-year terms.
-            </Paragraph>
-            <Paragraph big>
-            he bylaws may either describe the corporation’s officer positions and duties or authorize that the board of directors make these appointments. These duties must include the responsibility for preparing minutes of meetings and for authenticating corporate records. Unless the bylaws provide otherwise, an officer may simultaneously hold more than one office in a corporation.
+            Officers of the company must be either listed in the bylaws or elected by the board. A president, secretary, treasurer, and one or more vice presidents must be elected by the board of directors. However, if the officers are listed in the articles or an amendment to them, a street or physical address must be listed for each officer. An officer may hold more than one office in a Louisiana corporation, provided that no officer signs a certificate or other legal instrument in more than one capacity.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Requirement Reports
             </Heading>
-            <Paragraph big style={{ marginBottom: "24px" }}>
-            The Alabama Secretary of State requires that Alabama corporations file an annual report between January 1 and March 15 each year that specifies:
+            <Paragraph big style={{ marginBottom: "48px" }}>
+            Louisiana corporations must file a report annually on or before their anniversary of incorporation with the Commercial Division of the Louisiana Secretary of State’s office. 
+            </Paragraph>
+
+            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            The annual report must include the following:
             </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The corporation’s name and the state or country of original incorporation.</Paragraph>
+              <Paragraph bottomMargin={0}>The street address and municipal location of the corporation’s registered office, registered agent, directors, and officers</Paragraph>
             </TextBoxed>
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The address of the corporation’s registered office in the state.</Paragraph>
+              <Paragraph bottomMargin={0}>The number of issued shares of each class of its authorized capital stock</Paragraph>
             </TextBoxed>
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The name of its registered agent at that office.</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The nature of the corporation’s business.</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The names and addresses of the corporation’s president and secretary.</Paragraph>
+              <Paragraph bottomMargin={0}>The taxpayer identification number of the corporation.</Paragraph>
             </TextBoxed>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Taxes
             </Heading>
-            <Paragraph big>Alabama’s corporate tax structure consists of a flat rate of 6.5% on all corporate income. Among states with corporate income taxes, Alabama’s rate ranks 30th in the nation. Alabama also assesses a business privilege tax, which is an annual tax on corporate shares based on the net worth of the corporation.</Paragraph>
-            <Paragraph big>The Alabama Secretary of State recognizes subchapter S status for corporations. A “subchapter S” corporation (frequently referred to as an “S corp”) is treated as a “pass-through” entity for tax purposes in the same way as a sole proprietorship or partnership. The S corp does not file a tax return on its own behalf; instead, all tax-related data for the S corp is filed as part of the owner’s individual income tax.</Paragraph>
+            <Paragraph big>Louisiana’s corporate tax structure consists of five brackets and a top rate of eight percent, which takes effect at an annual corporate income level of $200,000. Among states levying corporate income taxes, Louisiana’s rate ranks 17th nationally.</Paragraph>
           </PanelWrapper>
         </CollapseWrapper>
       </TabsSection>

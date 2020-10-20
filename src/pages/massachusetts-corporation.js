@@ -5,7 +5,7 @@ import Top from "../atomic/partials/top";
 import Buttonsbox from "../atomic/atoms/boxes/top-buttons-box";
 import Button from "../atomic/molecules/buttons/button";
 import Layout from "../components/layout";
-import { fillingRequirements, info, packets, questions, service, top, articlesOfIncorporation, corporationName } from "../static/learning-center-entity/alabama-corporation";
+import { fillingRequirements, info, packets, questions, service, top, articlesOfIncorporation, corporationName } from "../static/learning-center-entity/massachusetts-corporation";
 import CartBlock from "../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../atomic/molecules/blocks/rating-block";
 import RatingRow from "../atomic/atoms/boxes/rating-row";
@@ -83,11 +83,16 @@ const AlaskaCorporation = () => (
               Choosing a Corporation Name
             </Heading>
             <Paragraph big>
-              The business name you choose for your new Alabama corporation must be readily distinguishable from all other registered and reserved Alabama business entities. It must end with either “Incorporated” or “Corporation” (or an abbreviation thereof)-or, if it is to be a banking corporation,
-              “Bank,” “Banking,” or “Bankers.” The name cannot state or imply that the corporation is organized for some purpose other than the one specified in its articles of incorporation.
+            Your Massachusetts corporation’s name must be different from any other authorized business entity on file with the Secretary of the Commonwealth. This applies to entities formed in the state, as well as those originally formed elsewhere but authorized to conduct business in Massachusetts.
+            </Paragraph>
+            <Paragraph big>
+            The corporation’s name must include either the word “Incorporation,” “Incorporated,” “Company,” or “Limited” (or an abbreviation thereof) at its end, and it can’t include language that might suggest or imply that the corporation has been formed for a purpose not permitted by law or allowed by its articles of organization.
+            </Paragraph>
+            <Paragraph big>
+            The Corporations Division does not allow symbols as part of a corporate name-for example, the name “Pri¢e Bu$ters” would not be allowed. The Corporations Division also discourages the use of initials, numbers, hyphens, apostrophes, and commas in corporate names. If you do include punctuation in your corporation’s name, it must be included on all filing documents with the office.
             </Paragraph>
             <Paragraph big style={{ marginBottom: "0" }}>
-              You must reserve your new corporation’s name with the state filing office before filing your articles of incorporation. This costs $10 and is good for up to 120 days.
+            You can reserve an available corporate name with the state for 60 days for a $30 fee.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -95,100 +100,104 @@ const AlaskaCorporation = () => (
               Articles of Incorporation
             </Heading>
             <Paragraph big>
-                New Alabama corporations must file an original and two copies of your articles of incorporation with their local county probate judge before they can start conducting business as a corporation. Once the judge finds that the articles are in compliance with state law, he or she will issue (publish) one certified copy of the articles, return one to the LLC, and forward the third within 10 days to the Corporate Section of the Alabama Secretary of State’s office. Filing requires a $40 fee payable to the Alabama Secretary of State, and another $35 payable to the county probate judge, for a total of $75.
+            The existence of a domestic profit corporation begins when its articles of organization are filed with the Corporations Division of the Secretary of the Commonwealth’s office. The articles of organization must include the corporate name, the street address of the main corporate office, the number of authorized shares, the name and address of each incorporator, and some supplemental information that is not a permanent part of the articles
             </Paragraph>
-            <Paragraph big>The articles must be delivered by at least one of the incorporators, who must sign and deliver the articles to the judge.</Paragraph>
 
             <Colorbox color={color.blue3} content={articlesOfIncorporation.box1} dotsColor={color.blue1} style={{ marginBottom: "65px" }} />
 
             <Colorbox color={color.orange3} content={articlesOfIncorporation.box2} dotsColor={color.orange1} style={{ marginBottom: "48px" }} />
 
-            <Paragraph big>Since Alabama law does not use the concept of par value for stocks, you do not need to state a par value for your shares.</Paragraph>
+            <Paragraph big>Massachusetts corporations must continuously maintain a registered agent in Massachusetts who is designated to receive official state administrative and legal correspondence. The agent may be an individual (who may be the secretary or officer of another corporation) and whose business office is the registered office of the corporation, or a corporation authorized to do business in Massachusetts, with a business office that is the same as the registered office.</Paragraph>
+            <Paragraph big>The registered office may be-but does not have to be-the same as the corporation’s place of business.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Registered Agent and Office
             </Heading>
             <Paragraph big>
-            Every Alabama corporation must have a registered agent in the state-someone designated to receive official state administrative and legal correspondence. The registered agent must be either an adult Alabama resident, or a corporation with a business office identical to the registered office.
-The registered office may be at any of the corporation’s places of business..
+            Bylaws govern a Massachusetts corporation’s business and affairs. A corporation is required to keep a copy of its bylaws at its main executive office, but is not required to file them with the state. Either the incorporators or the board of directors should adopt corporate bylaws at their initial meeting, and then keep them updated as time goes on. Bylaws describe the corporation’s basic managerial and legal operating principles, including information on:
             </Paragraph>
+            <TextBoxed style={{ marginBottom: "8px" }}>
+              <Paragraph bottomMargin={0}>Shareholders and directors meetings</Paragraph>
+            </TextBoxed>
+            <TextBoxed style={{ marginBottom: "8px" }}>
+              <Paragraph bottomMargin={0}>The authority, number, and tenure of directors</Paragraph>
+            </TextBoxed>
+            <TextBoxed style={{ marginBottom: "8px" }}>
+              <Paragraph bottomMargin={0}>Voting procedures</Paragraph>
+            </TextBoxed>
+            <TextBoxed style={{ marginBottom: "8px" }}>
+              <Paragraph bottomMargin={0}>The duties, responsibilities, and tenure of officers</Paragraph>
+            </TextBoxed>
+            <TextBoxed style={{ marginBottom: "8px" }}>
+              <Paragraph bottomMargin={0}>How stock is issued</Paragraph>
+            </TextBoxed>
+            <TextBoxed style={{ marginBottom: "8px" }}>
+              <Paragraph bottomMargin={0}>How and when annual financial information is provided to shareholders</Paragraph>
+            </TextBoxed>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Bylaws
             </Heading>
             <Paragraph big>
-            Bylaws describe the corporation’s basic managerial and legal operating principles. An Alabama corporation must keep a copy of its bylaws at its main executive office, but is not required to file them with the state. The initial bylaws must be adopted by the board of directors, unless the articles of incorporation specify that shareholders have this right.
+            A corporation’s board of directors must consist of at least one director, with the total number specified in the articles of organization the bylaws. If the corporation has only one shareholder, then only one director is necessary; if there are two shareholders, there must be at least two directors; and if there are three or more directors, there must be at least three directors.
             </Paragraph>
-            <Paragraph big style={{ fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
-            Bylaws normally address:
+            <Paragraph big>
+            The state does not mandate eligibility requirements for directors, but the articles or bylaws may specify director qualifications.
             </Paragraph>
-
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>Shareholders and directors meetings</Paragraph>
-            </TextBoxed>
-
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The authority, number, and tenure of directors</Paragraph>
-            </TextBoxed>
-
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>Voting procedures</Paragraph>
-            </TextBoxed>
-
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The duties, responsibilities, and tenure of officers</Paragraph>
-            </TextBoxed>
-
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>How stock is issued</Paragraph>
-            </TextBoxed>
-
-            <TextBoxed style={{ marginBottom: "48px" }}>
-              <Paragraph bottomMargin={0}>How and when annual financial information is provided to shareholders</Paragraph>
-            </TextBoxed>
+            <Paragraph big>
+            Officers may be appointed by the board of directors if not already listed in the bylaws, and those officers may appoint other officers if so authorized by the board or the bylaws.
+            </Paragraph>
+            <Paragraph big>
+            Every corporation must have for its officers a minimum of a president, a treasurer, and a clerk (called a “secretary” in other states). The clerk or assistant clerk has the responsibility of preparing minutes of director and shareholder meetings and for authenticating corporate records. Two or more offices may be held by the same person.
+            </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Directors
             </Heading>
+            <TextBoxed style={{ marginBottom: "8px" }}>
+              <Paragraph bottomMargin={0}>The corporation’s name and the state or country of incorporation</Paragraph>
+            </TextBoxed>
+            <TextBoxed style={{ marginBottom: "8px" }}>
+              <Paragraph bottomMargin={0}>The address of its registered office and the name of its registered agent at that office in the commonwealth</Paragraph>
+            </TextBoxed>
+            <TextBoxed style={{ marginBottom: "8px" }}>
+              <Paragraph bottomMargin={0}>The address of its principal office</Paragraph>
+            </TextBoxed>
+            <TextBoxed style={{ marginBottom: "8px" }}>
+              <Paragraph bottomMargin={0}>The names and business addresses of its directors, officers, and chief executive officer and chief financial officer, if different</Paragraph>
+            </TextBoxed>
+            <TextBoxed style={{ marginBottom: "8px" }}>
+              <Paragraph bottomMargin={0}>A brief description of any change in the nature of business</Paragraph>
+            </TextBoxed>
+            <TextBoxed style={{ marginBottom: "8px" }}>
+              <Paragraph bottomMargin={0}>The total number of authorized, issued, and outstanding shares, itemized by class and series, if any, within each class</Paragraph>
+            </TextBoxed>
+            <TextBoxed style={{ marginBottom: "8px" }}>
+              <Paragraph bottomMargin={0}>Any change in the designated fiscal year of the corporation</Paragraph>
+            </TextBoxed>
             <Paragraph big>
-            A director must be a natural person of at least 19 years of age, but they do not have to be an Alabama resident-or even a shareholder-unless so stipulated in the articles of incorporation or the corporate bylaws. Either one of those documents may also specify a minimum and a maximum number of directors, but they are not required to be listed by name in the articles. Directors are elected annually to serve one-year terms.
+            The corporation’s board of directors must send an annual report to all shareholders no more than 120 days after the close of the fiscal year, describing the financial position of the corporation for the fiscal year, as well as any statements of cash flows.
             </Paragraph>
             <Paragraph big>
-            he bylaws may either describe the corporation’s officer positions and duties or authorize that the board of directors make these appointments. These duties must include the responsibility for preparing minutes of meetings and for authenticating corporate records. Unless the bylaws provide otherwise, an officer may simultaneously hold more than one office in a corporation.
+            The corporation must also send out a report of condition to the Massachusetts Secretary of the Commonwealth within four months after the close of the fiscal year (but not before the date fixed in its bylaws for the annual meeting). This report must include the corporation name, the street address of the corporation’s principal office, particular stock information (including the total amount of the corporation’s authorized stock and its par value), and the names and addresses of the corporation’s directors and officers, as well as the date at which their terms of office expire.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Requirement Reports
             </Heading>
-            <Paragraph big style={{ marginBottom: "24px" }}>
-            The Alabama Secretary of State requires that Alabama corporations file an annual report between January 1 and March 15 each year that specifies:
+            <Paragraph big style={{ marginBottom: "48px" }}>
+            Massachusetts’ corporate tax structure consists of a flat rate of 9.5% on all corporate income. Among states levying corporate income taxes, Massachusetts’ rate ranks fourth highest nationally.
             </Paragraph>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The corporation’s name and the state or country of original incorporation.</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The address of the corporation’s registered office in the state.</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The name of its registered agent at that office.</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The nature of the corporation’s business.</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The names and addresses of the corporation’s president and secretary.</Paragraph>
-            </TextBoxed>
-          </PanelWrapper>
+        </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Taxes
             </Heading>
-            <Paragraph big>Alabama’s corporate tax structure consists of a flat rate of 6.5% on all corporate income. Among states with corporate income taxes, Alabama’s rate ranks 30th in the nation. Alabama also assesses a business privilege tax, which is an annual tax on corporate shares based on the net worth of the corporation.</Paragraph>
-            <Paragraph big>The Alabama Secretary of State recognizes subchapter S status for corporations. A “subchapter S” corporation (frequently referred to as an “S corp”) is treated as a “pass-through” entity for tax purposes in the same way as a sole proprietorship or partnership. The S corp does not file a tax return on its own behalf; instead, all tax-related data for the S corp is filed as part of the owner’s individual income tax.</Paragraph>
+            <Paragraph big>Massachusetts’ corporate tax structure consists of a flat rate of 9.5% on all corporate income. Among states levying corporate income taxes, Massachusetts’ rate ranks fourth highest nationally.</Paragraph>
           </PanelWrapper>
         </CollapseWrapper>
       </TabsSection>

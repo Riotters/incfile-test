@@ -5,7 +5,7 @@ import Top from "../atomic/partials/top";
 import Buttonsbox from "../atomic/atoms/boxes/top-buttons-box";
 import Button from "../atomic/molecules/buttons/button";
 import Layout from "../components/layout";
-import { fillingRequirements, info, packets, questions, service, top, articlesOfIncorporation, corporationName } from "../static/learning-center-entity/alabama-corporation";
+import { fillingRequirements, info, packets, questions, service, top, articlesOfIncorporation, corporationName } from "../static/learning-center-entity/kentucky-corporation";
 import CartBlock from "../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../atomic/molecules/blocks/rating-block";
 import RatingRow from "../atomic/atoms/boxes/rating-row";
@@ -83,11 +83,13 @@ const AlaskaCorporation = () => (
               Choosing a Corporation Name
             </Heading>
             <Paragraph big>
-              The business name you choose for your new Alabama corporation must be readily distinguishable from all other registered and reserved Alabama business entities. It must end with either “Incorporated” or “Corporation” (or an abbreviation thereof)-or, if it is to be a banking corporation,
-              “Bank,” “Banking,” or “Bankers.” The name cannot state or imply that the corporation is organized for some purpose other than the one specified in its articles of incorporation.
+            Your Kentucky corporation’s name must be distinguishable from any other business entity name registered or reserved with the Kentucky Secretary of State. The name must contain the word “Corporation,” “Incorporated,” “Company,” or “Limited,” or one of the abbreviations “Corp.,” “Inc.,” “Co.,” or “Ltd.”
+            </Paragraph>
+            <Paragraph big>
+            It also is not allowed to include language that states or implies that the corporation is organized for a purpose other than that permitted by state law and its articles of incorporation.
             </Paragraph>
             <Paragraph big style={{ marginBottom: "0" }}>
-              You must reserve your new corporation’s name with the state filing office before filing your articles of incorporation. This costs $10 and is good for up to 120 days.
+            An available corporate name can be reserved for 120 days for a $15 fee.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -95,23 +97,27 @@ const AlaskaCorporation = () => (
               Articles of Incorporation
             </Heading>
             <Paragraph big>
-                New Alabama corporations must file an original and two copies of your articles of incorporation with their local county probate judge before they can start conducting business as a corporation. Once the judge finds that the articles are in compliance with state law, he or she will issue (publish) one certified copy of the articles, return one to the LLC, and forward the third within 10 days to the Corporate Section of the Alabama Secretary of State’s office. Filing requires a $40 fee payable to the Alabama Secretary of State, and another $35 payable to the county probate judge, for a total of $75.
+            Kentucky requires that new corporations file articles of incorporation with the Commonwealth Secretary of State. The articles are delivered by one or more incorporators (only one is required), whose primary duties are to sign the articles and deliver the original and two copies of the articles to the state office. The incorporator does not need to be a director, officer, or shareholder of the corporation.
             </Paragraph>
-            <Paragraph big>The articles must be delivered by at least one of the incorporators, who must sign and deliver the articles to the judge.</Paragraph>
 
             <Colorbox color={color.blue3} content={articlesOfIncorporation.box1} dotsColor={color.blue1} style={{ marginBottom: "65px" }} />
+            <Paragraph big>The Commonwealth of Kentucky allows corporations to be formed for any lawful business activity. There is no need to state a business purpose in the articles.</Paragraph>
+            <Paragraph big>Kentucky does not require a statement of par value for stocks. To create one class of common shares with equal rights and preferences, simply state the number of shares. Incorporators typically authorize 1,000 shares in order to pay the minimum filing fee of $50. If you want to create special classes of shares, you must list them, together with the rights and restrictions associated with each.</Paragraph>
+            <Paragraph big>It’s also allowable to include other optional provisions into the articles of incorporation for those who want to formalize additional criteria.</Paragraph>
 
             <Colorbox color={color.orange3} content={articlesOfIncorporation.box2} dotsColor={color.orange1} style={{ marginBottom: "48px" }} />
 
-            <Paragraph big>Since Alabama law does not use the concept of par value for stocks, you do not need to state a par value for your shares.</Paragraph>
+            <Paragraph big>After the corporation has been formed, one copy of the articles of incorporation must be filed in the county where the corporation has its registered office.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Registered Agent and Office
             </Heading>
             <Paragraph big>
-            Every Alabama corporation must have a registered agent in the state-someone designated to receive official state administrative and legal correspondence. The registered agent must be either an adult Alabama resident, or a corporation with a business office identical to the registered office.
-The registered office may be at any of the corporation’s places of business..
+            The articles of incorporation should also include the name and address of your corporation’s initial registered agent-the person appointed to receive official legal and administrative correspondence from the state on behalf of your corporation.
+            </Paragraph>
+            <Paragraph big>              
+            The registered agent must be either an individual who lives in Kentucky and whose business office is the same as the registered office, or a domestic corporation, LLC, or limited partnership with a business office that is the same as the registered office.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -119,76 +125,81 @@ The registered office may be at any of the corporation’s places of business..
               Bylaws
             </Heading>
             <Paragraph big>
-            Bylaws describe the corporation’s basic managerial and legal operating principles. An Alabama corporation must keep a copy of its bylaws at its main executive office, but is not required to file them with the state. The initial bylaws must be adopted by the board of directors, unless the articles of incorporation specify that shareholders have this right.
+            Corporations should keep a copy of their bylaws at their principal executive office, but they are not required to file those bylaws with the state. At the new corporation’s initial meeting, the incorporators or board of directors should adopt corporate bylaws and then keep them updated as time goes on.
             </Paragraph>
             <Paragraph big style={{ fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
-            Bylaws normally address:
+            Bylaws are a critically important document describing the corporation’s basic managerial and legal operating principles regarding such issues as:
             </Paragraph>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>Shareholders and directors meetings</Paragraph>
+              <Paragraph bottomMargin={0}>Shareholders’ and directors’ meetings</Paragraph>
             </TextBoxed>
-
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The authority, number, and tenure of directors</Paragraph>
+              <Paragraph bottomMargin={0}>The authority, number, and tenure of directors in the board of directors</Paragraph>
             </TextBoxed>
-
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>Voting procedures</Paragraph>
             </TextBoxed>
-
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The duties, responsibilities, and tenure of officers</Paragraph>
+              <Paragraph bottomMargin={0}>The duties, responsibilities, and tenure of directors and officers</Paragraph>
             </TextBoxed>
-
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>How stock is issued</Paragraph>
             </TextBoxed>
-
-            <TextBoxed style={{ marginBottom: "48px" }}>
+            <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>How and when annual financial information is provided to shareholders</Paragraph>
             </TextBoxed>
+
+            <Paragraph big>
+            Officers of the new corporation can either be listed in the bylaws or elected by the board in compliance with those bylaws. The right to adopt, amend, or repeal bylaws is vested in the board, subject to the articles of incorporation and the stockholders.
+            </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Directors
             </Heading>
             <Paragraph big>
-            A director must be a natural person of at least 19 years of age, but they do not have to be an Alabama resident-or even a shareholder-unless so stipulated in the articles of incorporation or the corporate bylaws. Either one of those documents may also specify a minimum and a maximum number of directors, but they are not required to be listed by name in the articles. Directors are elected annually to serve one-year terms.
+            If a board of directors has the authority to fix or change the number of directors, the board may increase or decrease by up to 30 percent the number of directors last approved by the shareholders, but only the shareholders may increase or decrease by more than 30 percent the number of directors.
             </Paragraph>
             <Paragraph big>
-            he bylaws may either describe the corporation’s officer positions and duties or authorize that the board of directors make these appointments. These duties must include the responsibility for preparing minutes of meetings and for authenticating corporate records. Unless the bylaws provide otherwise, an officer may simultaneously hold more than one office in a corporation.
+            Corporate officers can either be listed in the bylaws or elected by the board in compliance with those bylaws. Officers may appoint other officers as needed for the operation of the corporation, in accordance with the bylaws. There must be one officer who is responsible for preparing and maintaining records of the proceedings of directors’ and shareholders’ meetings and for authenticating corporate records.
+            </Paragraph>
+            <Paragraph big>
+            Multiple offices may be held by the same person unless the articles or bylaws state otherwise.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Requirement Reports
             </Heading>
-            <Paragraph big style={{ marginBottom: "24px" }}>
-            The Alabama Secretary of State requires that Alabama corporations file an annual report between January 1 and March 15 each year that specifies:
+            <Paragraph big style={{ marginBottom: "48px" }}>
+            Kentucky corporations must file a report with the Kentucky Secretary of State’s office every year by the end of the anniversary month of incorporation.
+            </Paragraph>
+
+            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            The annual report must include:
             </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The corporation’s name and the state or country of original incorporation.</Paragraph>
+              <Paragraph bottomMargin={0}>The corporation’s name</Paragraph>
             </TextBoxed>
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The address of the corporation’s registered office in the state.</Paragraph>
+              <Paragraph bottomMargin={0}>The state or country of its incorporation</Paragraph>
             </TextBoxed>
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The name of its registered agent at that office.</Paragraph>
+              <Paragraph bottomMargin={0}>The address of the corporation’s registered office and the name of its registered agent at that office</Paragraph>
             </TextBoxed>
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The nature of the corporation’s business.</Paragraph>
+              <Paragraph bottomMargin={0}>The address to which correspondence for corporate officers should be mailed</Paragraph>
             </TextBoxed>
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The names and addresses of the corporation’s president and secretary.</Paragraph>
+              <Paragraph bottomMargin={0}>The names and addresses of the directors, president, and secretary</Paragraph>
             </TextBoxed>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Taxes
             </Heading>
-            <Paragraph big>Alabama’s corporate tax structure consists of a flat rate of 6.5% on all corporate income. Among states with corporate income taxes, Alabama’s rate ranks 30th in the nation. Alabama also assesses a business privilege tax, which is an annual tax on corporate shares based on the net worth of the corporation.</Paragraph>
-            <Paragraph big>The Alabama Secretary of State recognizes subchapter S status for corporations. A “subchapter S” corporation (frequently referred to as an “S corp”) is treated as a “pass-through” entity for tax purposes in the same way as a sole proprietorship or partnership. The S corp does not file a tax return on its own behalf; instead, all tax-related data for the S corp is filed as part of the owner’s individual income tax.</Paragraph>
+            <Paragraph big>Kentucky imposes a graduated corporate income tax, with rates that depend on corporate taxable income. Kentucky also imposes a license tax on capital employed in the business, with a minimum yearly license tax of $30.</Paragraph>
           </PanelWrapper>
         </CollapseWrapper>
       </TabsSection>
