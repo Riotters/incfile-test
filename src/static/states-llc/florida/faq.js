@@ -8,8 +8,8 @@ import BgBoxChangeOfAgent from '../../../images/change-of-agent-01.png';
 
 export const faqContent = {
     header: {
-        title: `Frequently Asked Questions About Texas LLCs`,
-        subline: `When you’re starting an LLC in the Lone Star state, you’ll have plenty of questions. We’ve gathered together all of the most frequently asked questions to help you get your Texas LLC up and running. From registering your company in Texas to business licenses and franchise taxes, we’ve got you covered. We’ve answered your questions below and linked extensively to our guides, tools and other services, which make everything fast and easy.`,
+        title: `Florida LLC FAQs`,
+        subline: `When you’re starting an LLC in the Sunshine state, you’ll have plenty of questions. We’ve gathered together all of the most frequently asked questions to help you get your Florida LLC up and running. From registering your company in Florida to business licenses and franchise taxes, we’ve got you covered. We’ve answered your questions below and linked extensively to our guides, tools and other services, which make everything fast and easy.`,
     },
     content: [
         {
@@ -20,199 +20,152 @@ export const faqContent = {
         },
         {
             type: `paragraph`,
-            content: `You have a few options when it comes to starting a business in Texas. From a legal perspective, there are <a href="/start-your-company/">three main types</a> of Texas for-profit business entities: LLCs, S Corporations or C Corporations. For most entrepreneurs, we believe an LLC provides the right mix of liability protection and ease of administration.`,
+            content: `You have a few options when it comes to starting a business in Florida. From a legal perspective, there are <a href="/start-your-company/">three main types</a> of Florida for-profit business entities: LLCs, S Corporations or C Corporations. For most entrepreneurs, we believe an LLC provides the right mix of liability protection and ease of administration.`,
         },
         {
             type: `heading`,
             size: 2,
-            content: `What Do I Need to Start a Business in Texas?`,
+            content: `What do I need to form an LLC in Florida?`,
         },
         {
             type: `paragraph`,
-            content: `The bare minimum needed to start a TX LLC is a completed Certificate of Formation, a business name and a fee you pay to the Texas Secretary of State.`,
-        },
-        {
-            type: `iconListColorBox`,
-            boxColor: color.blue3,
-            content: {
-                header: `We recommend taking some other steps before formally starting your LLC:`,
-                list: [
-                    `<a href="https://www.incfile.com/blog/post/perform-market-research-assess-demand-before-you-start-business/">Research your target market</a> to make sure there’s a demand for the products and services you provide.`,
-                    `<a href="https://www.incfile.com/blog/post/keys-successful-business-plan/">Create a comprehensive business plan</a> that defines the most important aspects of your Texas business.`,
-                    `<a href="https://www.incfile.com/research-topics/llc-info/llc-operating-agreement/">Write an Operating Agreement</a> that covers how you will run your LLC.`,
-                ]
-            },
-        },
-        {
-            type: `paragraph`,
-            styles: {marginTop: `42px`},
-            content: `<a href="/after-forming-llc/">After you’ve created your Texas LLC</a>, you will also need to review your business license requirements, understand ongoing filing needs, set up a separate business bank account and get an accountant.`,
+            content: `Start by determining who will be involved in your LLC and get the relevant information from them. Next,
+                <a href="/business-name-search/">search for your proposed business name</a>
+                for your Florida LLC to see if it’s already in use. After that, provide an official business address and
+                <a href="/florida-llc/registered-agents-florida-llc/">details of your Registered Agent.</a>
+                You can then complete and file your formation documents to officially create your LLC.`,
         },
 
-        // How Do I Register a Company in Texas?
+        // How Do I Register a Company in Florida?
         {
             type: `heading`,
             size: 2,
-            content: `How Do I Register a Company in Texas?`,
+            content: `Does a Florida LLC need an EIN?`,
         },
         {
             type: `paragraph`,
-            content: `You register a business by completing and filing a Certificate of Formation (Form 205) with the Texas Secretary of State. You will need to gather information about your business, fill out the form and send it to the Secretary of State with your filing fee. This will formally create your LLC in Texas.`,
+            content: `Single-member Florida LLCs don’t strictly need an Employer Identification Number (EIN) unless you’re going to hire employees, but we recommend obtaining one anyway. Multi-member Florida LLCs must have an EIN. You can get an EIN directly from the IRS or have <a href="/Florida-llc/">guide you through every step of the process</a> by getting details from you and <a href="/manage-your-company/tax-id-ein/">Incfile obtain one for your Florida LLC.</a>`,
+        },
+        {
+            type: `heading`,
+            size: 2,
+            content: `Do I need a business license in Florida?`,
         },
         {
             type: `paragraph`,
-            content: `You can file your Certificate of Formation on the Secretary of State website or mail it in. Alternatively, Incfile can <a href="/texas-llc/">guide you through every step of the process</a> by getting details from you and <a href="https://www.incfile.com/form-order-now.php?entityType=LLC&entityState=TX">filing the form</a> on your behalf — for free! There’s no additional charge for our basic LLC filing service, so all you need to do is pay the Texas state filing fee.`,
+            content: `The types of business licenses your Florida LLC may need are based on several factors. These include: local licenses for the city, county or municipality where you’re doing business; specialized licenses depending on the products and services you provide and other licenses for the industry you operate in. Incfile provides a
+                <a href="/business-license-research-package/">complete Business License Research package</a>
+                for Florida LLCs, which can tell you every license and permit required.`,
         },
         {
-            type: `box-cta`, 
-            color: color.orange3,
-            styles: { fontSize: `25px` },
-            bgImage: [MrsLeftThumUp],
-            content: {
-                title: `Incorporate through Incfile for $0 + the Texas state fee — and get a free Registered Agent for a year.`,
-                button: {
-                    text: `Incorporate Your Texas LLC Now`,
-                    url: `/form-order-now.php?entityType=LLC&entityState=TX`
-                }
-            }
+            type: `heading`,
+            size: 2,
+            content: `Do LLCs pay taxes in Florida?`,
+        },
+        {
+            type: `paragraph`,
+            content: `Florida LLCs do not pay income or self-employment tax. These taxes are “passed through” to the owners and are taxed when the individual files their 1040 income tax returns. Florida LLCs do need to pay sales tax if they sell taxable products or services.`,
         },
 
         {
             type: `heading`,
             size: 2,
-            content: `How Much Does It Cost to Form a Texas LLC?`,
+            content: `What’s the tax rate for LLCs in the State of Florida?`,
         },
         {
             type: `paragraph`,
-            content: `At the time of writing the fee charged by the Texas Secretary of State is $300. You can always check the latest Texas filing fees here. You can also pay an additional $50 for expedited filing through Incfile, which will create your LLC faster. Some LLC filing services do charge you extra to prepare and submit your filing documents, but at Incfile, we do this for free — so you only pay the state fee.`,
+            content: `Florida LLCs themselves don’t pay income or self-employment taxes. Those taxes “pass-through” to the members’ 1040 individual income tax forms where
+                <a href="https://www.incfile.com/blog/post/2020-tax-brackets/">federal income tax</a>
+                (rates start at 10 percent) and
+                <a href="https://www.incfile.com/blog/post/freelance-self-employed-taxes-budget/">self-employment tax</a>
+                (rate of 15.3 percent) will both be payable.`,
         },
-
+        {
+            type: `paragraph`,
+            content: `Florida does not charge a state income tax. Your Florida LLC will be liable for
+                <a href="https://floridarevenue.com/taxes/taxesfees/Pages/sales_tax.aspx">sales taxes</a>
+                if you sell taxable goods or services (rates of around 6 percent). Additional taxes may be payable depending on the type of business you run and the goods and services you sell. Note that you will also need to pay estimated taxes to the IRS four times a year.`,
+        },
         {
             type: `heading`,
             size: 2,
-            content: `How Long Does It Take to Form an LLC in Texas?`,
+            content: `Where do I go to file Florida sales tax?`,
         },
         {
             type: `paragraph`,
-            content: `Once you’ve gathered together all of your information and filed your Certificate of Formation (or had Incfile do it for you), it can take up to a week for the Texas Secretary of State to legally create your LLC. If you pay an additional $50 expedited fee, your LLC can be formed in as few as two days.`,
+            content: `You can apply for a sales tax ID and file your sales tax through the Florida Department of Revenue website.`,
         },
-
         {
             type: `heading`,
             size: 2,
-            content: `How Do I Perform a Texas Business Search?`,
+            content: `How do I register a business name in Florida?`,
         },
         {
             type: `paragraph`,
-            content: `Your Texas LLC name needs to be unique, so you’ll need to check if it’s already in use by another business. You can do that by searching the Texas Secretary of State website, or by using our fast and simple Business Name Search tool.`,
+            content: `Your Florida LLC name will automatically be registered when you file your Articles of Organization with the Division of Corporations or have Incfile do so on your behalf.`,
         },
-        {
-            type: `box-cta`, 
-            color: color.green3,
-            styles: { fontSize: `25px` },
-            bgImage: [SCN],
-            content: {
-                title: `Is your business name available in your state?`,
-                subtitle: `Find out using Incfile’s Business Name Search Tool.`,
-                button: {
-                    text: `Free Busineee name Search`,
-                    url: `/`
-                }
-            }
-        },
-        {
-            type: `iconListColorBox`,
-            boxColor: color.blue3,
-            styles: {margin: `56px 0`},
-            content: {
-                header: `There are a few ways to register your Texas LLC name.`,
-                list: [
-                    `If you’re creating a new business and your business name is unique in Texas and meets state naming rules, you simply include it in your Certificate of Formation.`,
-                    `If you want to change the legal name of your business, file Form 424 - Certificate of Amendment with the Secretary of State.`,
-                    `If you just want to do business under a different name, file Form 503 - Assumed Name Certificate with the Texas Secretary of State, or <a href="/fictitious-business-or-trade-name/">we can do that on your behalf.</a>`
-                ],
-            },
-        },
-        {
-            type: `box-cta`, 
-            color: color.yellow3,
-            styles: { fontSize: `25px`},
-            bgImage: [LightingOrange],
-            content: {
-                title: `Trying to come up with a creative business name?`,
-                subtitle: `Try Incfile’s Business Name Generator to brainstorm ideas.`,
-                button: {
-                    text: `Business Name Generator`,
-                    url: `/business-name-generator/`
-                }
-            }
-        },
-
-        {
-            type: `paragraph`,
-            styles: {marginTop: `42px`},
-            content: `If you want to prevent people from using your business name across the U.S., you can file a trademark for the name. <a href="/trademark-name-search/">We can help</a>`,
-        },
-
         {
             type: `heading`,
             size: 2,
-            content: `What are Texas Articles of Incorporation?`,
+            content: `Where do I go to file my LLC paperwork in Florida?`,
         },
         {
             type: `paragraph`,
-            content: `In other states, the formal documents that you file to start a corporation or LLC might be known as “Articles of Incorporation.” In Texas, this document is called a Certificate of Formation, and it performs the same functions as the Articles of Incorporation.`,
+            content: `You can file most of the LLC business paperwork you need through Sunbiz.org, the Florida Division of Corporations’ online portal. This includes your Articles of Organization, annual reports, fictitious names, dissolutions and certificates of status.`,
         },
-
         {
             type: `heading`,
             size: 2,
-            content: `Does Texas Have Series LLCs?`,
+            content: `What’s the form to file an LLC in Florida?`,
         },
         {
             type: `paragraph`,
-            content: `Yes, you can <a href="https://www.incfile.com/blog/post/series-llc-in-texas/">start a Series LLC in Texas</a>. This is a special type of LLC where you create one “overall” business and then have individual, series LLCs within it, each counted as separate legal entities.`,
+            content: `The form you need to file to start an LLC is called your “Articles of Organization.” You file this form with the Florida Division of Corporations, or we can help you gather the information needed and file the form on your behalf.`,
         },
-
         {
             type: `heading`,
             size: 2,
-            content: `Do I Need a Registered Agent for My Texas LLC?`,
+            content: `Does Florida Have Series LLCs?`,
         },
         {
             type: `paragraph`,
-            content: `Yes, all legal business entities in Texas, including LLCs, must have a Registered Agent at all times. Here at Incfile, we provide a free Texas Registered Agent service for the first year if you file through us.`,
+            content: `No. Florida does not allow for the formation of series LLCs. Series LLCs are currently only available in eight states: Delaware, Illinois, Iowa, Nevada, Oklahoma, Tennessee, Florida and Utah.`,
         },
-        {
-            type: `box-cta`, 
-            color: color.green3,
-            styles: { fontSize: `22px`},
-            bgImage: [BgBoxTrust],
-            content: {
-                title: `Have Incfile act as your registered agent for only $119 a year, or get your first year free when you incorporate your business through us.`,
-                arrayButtons: [
-                    {
-                        text: `Registered Agennt Service`,
-                        theme: `primary56`,
-                        url: `/business-name-generator/`
-                    },
-                    {
-                        text: `Incorporate Your Texas LLC Now`,
-                        theme: `secondary56`,
-                        url: `/business-name-generator/`
-                    }
-                ]
-            }
-        },
-
         {
             type: `heading`,
             size: 2,
-            content: `How Do I Change a Registered Agent in Texas? (Form 401)`,
+            content: `Does Florida have Professional LLCs?`,
         },
         {
             type: `paragraph`,
-            content: `You change your Texas registered agent or office by filing Texas Form 401 with the TX Secretary of State. Here at Incfile, we provide a free Texas Registered Agent service for the first year if you file through us. If you’ve been using a different registered agent and want to switch to us, we’ll file Form 401 on your behalf.`,
+            content: `Yes. Florida allows certain professions to form professional LLCs in the state. The professions allowed are: certified public accountants, public accountants, chiropractic physicians, dentists, osteopathic physicians, physicians and surgeons, doctors of medicine, doctors of dentistry, podiatric physicians, chiropodists, architects, veterinarians, attorneys at law and life insurance agents.`,
+        },
+        {
+            type: `heading`,
+            size: 2,
+            content: `How much does it cost to get an LLC in Florida?`,
+        },
+        {
+            type: `paragraph`,
+            content: `The current fee for incorporating an LLC in Florida is $125, payable to the Division of Corporations. If you need your LLC formed quickly, Incfile can expedite the process for an additional fee of $50. Specialist incorporation businesses may also charge an additional fee for completing and submitting paperwork on your behalf. Incfile does not charge any additional fees, meaning you only pay the state fee of $125 for LLC formation through us.`,
+        },
+        {
+            type: `heading`,
+            size: 2,
+            content: `How long does it take to file an LLC in Florida?`,
+        },
+        {
+            type: `paragraph`,
+            content: `If filing your Florida LLC with Incfile, the standard processing time from filing your Articles of Organization to being legally created as a Florida LLC is 15 business days. You can also pay an expedited filing fee to have your Florida LLC created in five days.`,
+        },
+        {
+            type: `heading`,
+            size: 2,
+            content: `How do I find available business names in Florida?`,
+        },
+        {
+            type: `paragraph`,
+            content: `ou will need to find a unique business name for your Florida LLC that’s not already in use in the state. You can search for business names on the Sunbiz website, or Incfile can search for business names on your behalf. Florida does have certain rules about words you can and can’t use in your business name.`,
         },
         {
             type: `box-cta`, 
@@ -220,138 +173,52 @@ export const faqContent = {
             styles: { fontSize: `22px`},
             bgImage: [BgBoxChangeOfAgent],
             content: {
-                title: `Need to change your registered agent? Have Incfile file the paperwork for you.`,
+                title: `Is your business name available in your state?`,
+                subtitle: `Find out using Incfile’s Business Name Search Tool.`,
                 button: {
-                    text: `Change Of Registred Agent Service`,
+                    text: `Free business name search`,
+                    url: `/business-name-search/`
+                },
+            }
+        },
+        {
+            type: `box-cta`, 
+            color: color.blue3,
+            styles: { fontSize: `22px`},
+            bgImage: [BgBoxChangeOfAgent],
+            content: {
+                title: `Trying to come up with a creative business name?`,
+                subtitle: `Try Incfile’s Business Name Generator to brainstorm ideas.`,
+                button: {
+                    text: `Business name generator`,
                     url: `/business-name-generator/`
                 },
             }
         },
-
         {
             type: `heading`,
             size: 2,
-            content: `How Do I Perform a Texas Registered Agent Search?`,
+            content: `Do I need an Operating Agreement in Florida?`,
         },
         {
             type: `paragraph`,
-            content: `You can find the Registered Agent for a specific <a href="https://mycpa.cpa.state.tx.us/coa/Index.html">Texas business by searching the Texas Comptroller of Public Accounts website</a>. Once you’ve searched, select “Details” and you’ll see the Registered Agent name.`,
+            content: `You are not required to have an Operating Agreement for a Florida LLC. We do recommend
+                <a href="/research-topics/llc-info/the-llc-operating-agreement/">creating an Operating Agreement anyway,</a>
+                as this agreement will specify how the business is run, how profits will be split, the ways that members will interact and other important factors.`,
         },
-
         {
             type: `heading`,
             size: 2,
-            content: `What Texas Business Taxes Do I Need to Pay?`,
+            content: `How do I dissolve an LLC in Florida?`,
         },
         {
             type: `paragraph`,
-            content: `As an LLC, any business profits you earn will be reported on your personal 1040 filing and reported and taxed as “pass-through” income.`,
+            content: `If you want to dissolve your business, you will need to complete and file “Articles of Dissolution.” These are available on the Sunbiz.org website.`,
         },
-        {
-            type: `iconListColorBox`,
-            boxColor: color.green3,
-            styles: {margin: `56px 0`},
-            content: {
-                header: `You will typically need to pay:`,
-                list: [
-                    `Self-employment or payroll tax on all business profits`,
-                    `Federal income tax on profits after you meet your tax-free allowance`,
-                    `Sales tax for selling taxable products and services`,
-                ],
-            },
-        },
-        {
-            type: `paragraph`,
-            content: `Note that unlike many other states, Texas does not have a state income tax.`,
-        },
-
         {
             type: `heading`,
             size: 2,
-            content: `What Businesses Need to Pay Texas Sales Tax?`,
-        },
-        {
-            type: `paragraph`,
-            content: `Texas charges a 6.25 percent state sales and use tax on all retail sales, leases and rentals of most goods. You will also need to pay sales tax if you provide a taxable service. You can <a href="https://comptroller.texas.gov/taxes/publications/96-259.php">find a full list of taxable services here.</a>`,
-        },
-
-        {
-            type: `heading`,
-            size: 2,
-            content: `How Do I Get a Texas Sales Tax ID?`,
-        },
-        {
-            type: `paragraph`,
-            content: `You will need to file a Texas State Sales Tax Application with the Texas comptroller. You can <a href="https://comptroller.texas.gov/taxes/permit/">complete this process online.</a>`,
-        },
-
-        {
-            type: `heading`,
-            size: 2,
-            content: `How Do I Calculate Texas Sales Tax?`,
-        },
-        {
-            type: `paragraph`,
-            content: `The base rate for Texas sales tax is 6.25 percent, and there may be additional sales tax depending on your region, county or city. Once you know your overall sales tax amount, calculate the value of all your taxable products and services. Then, multiply that by your sales tax rate to understand how much you will need to pay.`,
-        },
-
-        {
-            type: `heading`,
-            size: 2,
-            content: `When is Texas Sales Tax Due?`,
-        },
-        {
-            type: `paragraph`,
-            content: `Once your LLC’s business’s sales tax application has been approved, you will receive a letter with instructions on how often you must file a sales tax return and pay sales taxes. Returns and payments may be due monthly, quarterly, or annually.`,
-        },
-
-        {
-            type: `heading`,
-            size: 2,
-            content: `What Do I Need to Know About Texas Franchise Tax?`,
-        },
-        {
-            type: `paragraph`,
-            content: `Some businesses will need to pay a franchise tax in Texas.`,
-        },
-        {
-            type: `iconListColorBox`,
-            boxColor: color.blue3,
-            styles: {margin: `56px 0`},
-            content: {
-                //header: `You will typically need to pay:`,
-                list: [
-                    `Typically, if your business has margins of less than $1,180,000 (for 2020 and 2021) a year, you will not need to pay franchise tax.`,
-                    `If your margin is higher than this, you will pay a franchise tax of between 0.375 and 0.75 percent.`,
-                    `You can find more franchise tax details on the <a href="https://comptroller.texas.gov/taxes/franchise/">Texas comptroller website.</a>`,
-                ],
-            },
-        },
-
-        {
-            type: `heading`,
-            size: 2,
-            content: `Do I Need a License to Do Business in Texas?`,
-        },
-        {
-            type: `paragraph`,
-            content: `The types of business licenses you need will vary depending on your type of business, your industry, your location and various other factors. We can <a href="/business-license-research-package/">research the types of business licenses</a> you might need for you.`,
-        },
-
-        {
-            type: `heading`,
-            styles: {marginTop: `56px`},
-            size: 3,
-            content: `We hope you’ve found this Texas LLC FAQ useful. If you’ve used our services and have a question that isn’t answered here, let us know and we’d be happy to help.`,
-        },
-        {
-            type: `button`,
-            width: `200px`,
-            theme: `secondary56`,
-            content: {
-                text: `Ask a question`,
-                url: `/contact/`
-            }
+            content: `We hope you’ve found this Florida LLC FAQ useful. If you’ve used our services and have a question that isn’t answered here, <a href="/contact/">let us know and we’d be happy to help.</a>`,
         },
     ],
 };

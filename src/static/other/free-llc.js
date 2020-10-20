@@ -22,27 +22,27 @@ export const start = {
   buttons: [
     {
       header: `Fictitious Business Name`,
-      url: `/`,
+      url: `/fictitious-business-or-trade-name/`,
     },
     {
       header: `EIN / Tax ID Number`,
-      url: `/`,
+      url: `/manage-your-company/tax-id-ein/`,
     },
     {
       header: `Trademark`,
-      url: `/`,
+      url: `/trademark-name-search/`,
     },
     {
       header: `Business License Research Package`,
-      url: `/`,
+      url: `/business-license-research-package/`,
     },
     {
       header: `Certificate of Good Standing`,
-      url: `/`,
+      url: `/manage-your-company/certificate-of-good-standing/`,
     },
     {
       header: `Annual Report`,
-      url: `/`,
+      url: `/manage-your-company/annual-report/`,
     },
   ],
   text4: [
@@ -51,7 +51,7 @@ export const start = {
     },
     {
       text: "Registered Agent",
-      url: "/",
+      url: "/registered-agents/",
     },
     {
       text:
@@ -64,7 +64,7 @@ export const start = {
     },
     {
       text: "more reasons",
-      url: "/",
+      url: "/why-choose-incfile/",
     },
     {
       text: "why people choose Incfile.",
@@ -80,7 +80,7 @@ export const industry = {
     },
     {
       text: "what our customers have to say.",
-      url: "/",
+      url: "/incfile-reviews/",
     },
   ],
   text2: `Think of us as your business companion. We make registering a company as easy as possible, so you can focus on the important things.`,
@@ -100,6 +100,6 @@ export const isCatch = {
   text3: `The catch-free result is low-cost, personalized business formation with fast and friendly service. For clever people with big ideas.`,
   button: {
     text: `Calculate my sales tax`,
-    url: `/`,
+    url: `/sales-tax-calculator/`,
   },
 };

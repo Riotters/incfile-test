@@ -32,20 +32,12 @@ export const states = [
         url: "https://onestop.delaware.gov/Operate_Register"
     },
     {
-        name: "District of Columbia",
-        url: "https://dc.gov/page/permits-licenses-and-certifications"
-    },
-    {
         name: "Florida",
         url: "https://dos.myflorida.com/library-archives/research/florida-information/business/starting-a-business-in-florida/small-business/license/"
     },
     {
         name: "Georgia",
         url: "http://sos.ga.gov/index.php/?section=licensing"
-    },
-    {
-        name: "Guam",
-        url: "http://www.investguam.com/business-in-guam/business-development/"
     },
     {
         name: "Hawaii",
@@ -160,10 +152,6 @@ export const states = [
         url: "https://www.dos.pa.gov/ProfessionalLicensing/LicensingServices/Pages/default.aspx"
     },
     {
-        name: "Puerto Rico",
-        url: "http://www2.pr.gov/Pages/default.aspx"
-    },
-    {
         name: "Rhode Island",
         url: "https://www.ri.gov/business/index.php?subcategory=17&linkgroup=75"
     },
@@ -184,10 +172,6 @@ export const states = [
         url: "https://www.tdlr.texas.gov/"
     },
     {
-        name: "U.S. Virgin Islands",
-        url: "http://www.usvichamber.com/business_steps.htm"
-    },
-    {
         name: "Utah",
         url: "http://www.dopl.utah.gov/renewal.html"
     },
@@ -202,6 +186,10 @@ export const states = [
     {
         name: "Washington",
         url: "https://www.dol.wa.gov/business/"
+    },
+    {
+        name: "Washington DC",
+        url: "https://dc.gov/page/permits-licenses-and-certifications"
     },
     {
         name: "West Virginia",

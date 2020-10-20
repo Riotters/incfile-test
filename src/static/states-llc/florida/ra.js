@@ -4,12 +4,12 @@ import BgBoxDBAName from '../../../images/icons/states/dba-name-01.png';
 
 export const agentPageContent = {
     header: {
-        title: `Texas Registered Agents for LLCs`,
-        subline: `Every business entity formed in Texas needs to formally appoint a person or business to act as a Registered Agent.`,
+        title: `Florida Registered Agents for LLCs`,
+        subline: `Every business entity formed in Florida needs to formally appoint a person or business to act as a Registered Agent.`,
         boxes: [
             {
-                title: `Start your LLC today for <span style="color:#FD8550">$0 + State fee.</span>`,
-                desc: `Get your first year of Registered Agent Service for free <br>when you incorporate with Incfile.`,
+                title: `Get your first year of Registered Agent Service for free when you incorporate with Incfile.`,
+                desc: `<span style="color:#FD8550">Start your LLC today for $0 + State fee.</span>`,
                 button: {
                 text: `Form Your LLC Now`,
                 url: '/'
@@ -20,43 +20,22 @@ export const agentPageContent = {
     content: [
         {
             type: `paragraph`,
-            content: `Your Texas Registered Agent provides various services to TX LLCs, including the acceptance of formal documents and correspondence from the Texas Secretary of State.`
+            content: `Your LLC must assign a Florida Registered Agent. This is a formally recognized person or business who can receive business correspondence and other documents from the Florida Department of State. Assigning a Registered Agent is a legal requirement, and your LLC must have a Registered Agent at all times.`
         },
         {
             type: `paragraph`,
-            content: `Your LLC must have a Texas Registered Agent at all times. You can appoint a Registered Agent when you first start your business. You can also replace your existing TX Registered Agent at a later date, provided there is a smooth transition between the old and new Registered Agent service.`
-        },
-        {
-            type: `heading`,
-            size: 2,
-            content: `Information from the SOS on TX Registered Agent Services`
-        },
-        {
-            type: `paragraph`,
-            content: `Here’s some important information from the Texas Secretary of State on TX Registered Agent services:`
-        },
-        {
-            type: `paragraph`,
-            content: `“The Texas Business Organizations Code (“BOC”) requires every domestic or foreign filing entity to maintain a registered agent and office in Texas. The BOC also permits the filing of an appointment of agent for service of process by an unincorporated nonprofit association. Additionally, the Texas Finance Code permits a Texas financial institution to appoint an agent for service of process.`
-        },
-        {
-            type: `paragraph`,
-            content: `An entity’s registered agent is an agent of the entity on whom may be served any process, notice or demand required or permitted by law to be served on the entity.`
-        },
-        {
-            type: `paragraph`,
-            content: `An entity’s registered office must be a physical address in Texas where the registered agent can be served with process during business hours. The registered office is also where the Office of the Secretary of State will mail correspondence. A registered office is the business office address of the registered agent and may be the same as the entity’s place of business. It cannot, however, be a post office box that is part of a commercial mail or message service unless that commercial enterprise is the registered agent.”`
+            content: `You should appoint a Registered Agent when you first start your Florida business, but you can always change your Registered Agent at a later date, provided there is a smooth transition between the old and new Registered Agent service.`
         },
 
         // Rules for agents
         {
             type: `heading`,
             size: 3,
-            content: `Rules for Texas Registered Agents`,
+            content: `Rules for Florida Registered Agents`,
         },
         {
             type: `paragraph`,
-            content: `There are certain rules that you must follow when you’re appointing a Texas Registered Agent service for your business.`
+            content: `There are certain rules that you must follow when you’re appointing a Florida Registered Agent service for your business.`
         },
         {
             type: `iconListColorBox`,
@@ -64,28 +43,28 @@ export const agentPageContent = {
             content: {
                 header: `They are:`,
                 list: [
-                    `If the Registered Agent is a person, they must reside in Texas`,
-                    `If the Registered Agent is a business, they must be able to conduct business in Texas`,
-                    `The Registered Agent must have a physical street address in Texas, not a P.O. Box`,
-                    `The TX Registered Agent must be available in person during normal business hours to sign for any correspondence`,
+                    `If the Registered Agent is a person, they must reside in Florida`,
+                    `If the Registered Agent is a business, they must be able to conduct business in Florida`,
+                    `The Registered Agent must have a physical street address in Florida, not a P.O. Box`,
+                    `The FL Registered Agent must be available in person during normal business hours to sign for any correspondence`,
                 ],
             }
         },
         {
             type: `paragraph`,
             styles: {marginTop: `42px`},
-            content: `Note that the TX Registered Agent address does not need to be the same as your Texas LLC business address.`
+            content: `Note that the FL Registered Agent address does not need to be the same as your Florida LLC business address.`
         },
 
         // What a TX Registered Agent Does
         {
             type: `heading`,
             size: 2,
-            content: `What a TX Registered Agent Does`,
+            content: `What a FL Registered Agent Does`,
         },
         {
             type: `paragraph`,
-            content: `What can you expect from your Texas Registered Agent? Their main function is to accept official documents and correspondence from the TX Secretary of State.`
+            content: `Your Registered Agent carries out several valuable services for your business. They accept official communications and documents from the FL Department of State on your behalf.`
         },
         {
             type: `iconListColorBox`,
@@ -93,10 +72,9 @@ export const agentPageContent = {
             content: {
                 header: `This includes:`,
                 list: [
-                   `Correspondence from the Texas Secretary of State`,
-                    `Service of process notices (e.g., if your TX LLC is sued or required to appear in court)`,
-                    `Official Texas state and federal government correspondence and notifications`,
-                    `Tax forms and requests to complete permits, company filings and reports`,
+                    `Correspondence from the Florida Department of State, such as a notice to file reports and other forms`,
+                    `Service of process documents (for example, if your Florida LLC has legal proceedings issued against it)`,
+                    `Official Florida and federal government documents, form filings and requests for information (including taxes, permits and company filings)`,
                 ],
             }
         },
@@ -105,11 +83,15 @@ export const agentPageContent = {
         {
             type: `heading`,
             size: 3,
-            content: `Incfile Provides a Free Texas Registered Agent Service for the First Year`,
+            content: `ncfile Provides a Free Florida Registered Agent Service for the First Year`,
         },
         {
             type: `paragraph`,
-            content: `Incfile provides a complete Texas Registered Agent service for any LLC that’s incorporated in TX. Even better, if you choose to incorporate your Texas business through Incfile, your Registered Agent is completely free for the first year and only $119 a year after that.`
+            content: `If you have an LLC that’s incorporated in Florida and you need a Registered Agent, we can help. Incfile provides a complete Registered Agent service for any Florida business. If you form your business through Incfile, we’ll act as your Registered Agent free for your first year (normally a $119 annual cost).`
+        },
+        {
+            type: `paragraph`,
+            content: `We are authorized to conduct business in Florida and can legally act as your Registered Agent. Here’s what you need to know about Incfile’s Registered Agent service.`
         },
         {
             type: `iconListColorBox`,
@@ -117,10 +99,10 @@ export const agentPageContent = {
             content: {
                 header: `Incfile is authorized to conduct business in Texas and can legally act as your Registered Agent. Here’s what the Incfile Texas Registered Agent service provides for your TX LLC.`,
                 list: [
-                    `An always-available Texas Registered Agent who can receive correspondence, documents and legal proceedings on your LLC’s behalf`,
-                    `A digital dashboard where you can access, store and retrieve any information we’ve received for your Texas business`,
-                    `Email notification whenever we receive documents for your Texas business`,
-                    `Automatic forwarding of all legal correspondence, documentation and information directly to you`,
+                    `The Registered Agent will always be available to accept documents and letters on your behalf.`,
+                    `We automatically notify you whenever we receive correspondence for your business from the Florida Department of State or anyone else.`,
+                    `We scan your correspondence and upload it to a dashboard, so you can review it when convenient.`,
+                    `We forward all correspondence to an address you choose.`,
                 ],
             }
         },
@@ -138,41 +120,41 @@ export const agentPageContent = {
         {
             type: `heading`,
             size: 3,
-            content: `Appointing a TX Registered Agent Service for Your Texas LLC`,
+            content: `Appointing a FL Registered Agent Service for Your Florida LLC`,
         },
         {
             type: `paragraph`,
-            content: `You must appoint a Registered Agent when you first incorporate your Texas LLC, but you can change your Registered Agent after incorporation. Here’s how to go about it.`
+            content: `You appoint a Registered Agent when you first incorporate your Florida LLC and can change Registered Agents at any point after that. Here’s how to go about it.`
         },
         {
             type: `heading`,
             size: 4,
-            content: `Assign Your Texas Registered Agent When You Form Your TX LLC`,
+            content: `Appoint a Registered Agent When You Create Your Florida LLC`,
         },
         {
             type: `paragraph`,
-            content: `Your business needs to have a Texas Registered Agent Service as soon as it’s formed. You can achieve this through one of the following methods.`
+            content: `Your business needs to have a Florida Registered Agent as soon as it’s formed. You can achieve this through one of the following methods.`
         },
         {
             type: `accordionWithCounting`,
             content: [
                 {
                     count: 1,
-                    question: `File Certificate of Formation With the Texas Secretary of State`,
+                    question: `File Articles of Organization with the Florida Department of State`,
                     answer: [
                         {
                             type: `paragraph`,
-                            content: `You will need to include details of your Registered Agent in your Certificate of Formation. This is the form that you file with the TX Secretary of State to formally create your business.`
+                            content: `You will need to include details of your Registered Agent in your Articles of Organization. This is the form that you file with the FL Department of State/Division of Corporations to formally create your business.`
                         }
                     ]
                 },
                 {
                     count: 2,
-                    question: `Incorporate Through Incfile and Get a Free Texas Registered Agent`,
+                    question: `Incorporate Through Incfile and Get a Free Florida Registered Agent`,
                     answer: [
                         {
                             type: `paragraph`,
-                            content: `When you incorporate through us, we complete and file your Certificate of Formation based on the information you’ve provided. Additionally, we give you a free Texas Registered Agent Service for the first year and we’ll include details of your TX Registered Agent in the form that we file.`
+                            content: `When you incorporate through us, we complete and file your Certificate of Formation based on the information you’ve provided. Additionally, we give you a free Florida Registered Agent Service for the first year and we’ll include details of your FL Registered Agent in the form that we file.`
                         }
                     ]
                 },
@@ -192,32 +174,34 @@ export const agentPageContent = {
         {
             type: `heading`,
             size: 4,
-            content: `Assign a Different Texas Registered Agent Service After Incorporation`,
+            content: `Assign a Different Florida Registered Agent Service After Incorporation`,
         },
         {
             type: `paragraph`,
-            content: `You can also change your TX Registered Agent service after you’ve formed your LLC. There are a couple of ways to achieve this.`
+            content: `You can also change your FL Registered Agent service after you’ve formed your LLC. There are a couple of ways to achieve this.`
         },
         {
             type: `accordionWithCounting`,
             content: [
                 {
                     count: 1,
-                    question: `Choose a Registered Agent Service and File Form 401 With the Texas Secretary of State`,
+                    question: `Choose a Registered Agent and File a Form with the Florida Division of Corporations`,
                     answer: [
                         {
                             type: `paragraph`,
-                            content: `Once you’ve chosen a new Texas Registered Agent, you can complete form 401 - Statement of Change of Registered Agent and/or Registered Office, which is available on the TX Secretary of State website. Once you’ve filled it out, send it to the Secretary of State so they can update your records. The Texas SOS may charge a nominal fee to assign or change a Registered Agent.`
+                            content: `Once you’ve chosen a new Florida Registered Agent, you can complete the form available on the
+                                <a href="/limited-liability-company/">FL Department of State website</a>
+                                called a “Statement of Registered Agent/Registered Office Change.” Once you’ve filled it out, send it to the Division of Corporations at the address on the form so they can update your records. The Florida DOS charges a $25 filing fee to assign or change a Registered Agent.`
                         }
                     ]
                 },
                 {
                     count: 2,
-                    question: `Sign Up for Incfile’s Texas Registered Agent Service and We’ll File the Change on Your Behalf`,
+                    question: `Sign Up for Incfile’s Florida Registered Agent Service and We’ll File the Change on Your Behalf`,
                     answer: [
                         {
                             type: `paragraph`,
-                            content: `When you choose to use our TX Registered Agent service, we take care of all the form filling and filing for you. We’ll collect important information about your business, complete form 401 - Statement of Change of Registered Agent and/or Registered Office on your behalf and send it to the Texas Secretary of State. We’ll let you know once we officially become your Registered Agent. Note that the Texas SOS may charge a nominal fee to assign or change a Registered Agent, which will be passed on to you.`
+                            content: `When you choose to use our FL Registered Agent service, we take care of all the form filling and filing for you. We’ll collect important information about your business, complete the required forms on your behalf and send it to the Florida Division of Corporations. We’ll let you know once we officially become your Registered Agent. Note that the Florida DOS charges a $25 filing fee to assign or change a Registered Agent.`
                         }
                     ]
                 },
@@ -228,7 +212,7 @@ export const agentPageContent = {
             theme: `primary56`,
             width: `450px`,
             content: {
-                text: `Order Incfile’s Texas registered Agent Service`,
+                text: `Order Incfile’s Florida registered Agent Service`,
                 url: `/`
             }
         },
@@ -237,15 +221,15 @@ export const agentPageContent = {
         {
             type: `heading`,
             size: 3,
-            content: `Texas Registered Agent Search`,
+            content: `Florida Registered Agent Search`,
         },
         {
             type: `paragraph`,
-            content: `In some situations, you might want to know the name of the Registered Agent that represents another Texas LLC. If you do, you can search the business database of the Texas Secretary of State, as these will often provide details of a specific business’s Registered Agent.`
+            content: `In some situations, you might want to know the name of the Registered Agent that represents another Florida LLC. If you do, you can search the business database of the Florida Department of State, as these will often provide details of a specific business’s Registered Agent.`
         },
         {
             type: `paragraph`,
-            content: `If the TX Registered Agent isn’t available from the searchable business registry, contact the Texas Secretary of State requesting the information.`
+            content: `If the FL Registered Agent isn’t available from the searchable business registry, contact the Florida Department of State requesting the information.`
         },
 
         // What Happens if You Don’t Have a Registered Agent?
@@ -256,7 +240,7 @@ export const agentPageContent = {
         },
         {
             type: `paragraph`,
-            content: `What happens if you choose not to assign or provide details of a Registered Agent to the Texas Secretary of State?`
+            content: `What happens if you choose not to assign or provide details of a Registered Agent to the Florida Department of State?`
         },
         {
             type: `iconListColorBox`,
@@ -265,8 +249,8 @@ export const agentPageContent = {
                 header: `There are several possible ramifications, including:`,
                 list: [
                     `Getting served or sued and not finding out about it: If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
-                    `Falling out of good standing with the Texas Secretary of State: If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
-                    `Losing your status as a Texas LLC: A TX Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your Texas LLC may be dissolved.`,
+                    `Falling out of good standing with the Florida Department of State: If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
+                    `Losing your status as a Florida LLC: A FL Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your Florida LLC may be dissolved.`,
                 ],
             }
         },
@@ -275,22 +259,22 @@ export const agentPageContent = {
         {
             type: `heading`,
             size: 3,
-            content: `Acting as Your Own Registered Agent for Your TX LLC`,
+            content: `Acting as Your Own Registered Agent for Your FL LLC`,
         },
         {
             type: `paragraph`,
-            content: `If you have an address in Texas, you can choose to be the Registered Agent for your LLC. We don’t recommend this approach as there can be some drawbacks:`
+            content: `If you have an address in Florida, you can choose to be the Registered Agent for your LLC. We don’t recommend this approach as there can be some drawbacks:`
         },
         {
             type: `iconListColorBox`,
             boxColor: color.blue3,
             content: {
-                header: `If you have an address in Texas, you can choose to be the Registered Agent for your LLC. We don’t recommend this approach as there can be some drawbacks:`,
+                header: `We don’t recommend this approach as there can be some drawbacks:`,
                 list: [
-                    `The TX Registered Agent must have a physical street address in Texas. If you’re forming an LLC outside TX, you will need to use an in-state Registered Agent.`,
-                    `You always need to have someone on hand during business hours at the Texas address to sign for important documents.`,
-                    `The TX Registered Agent’s name and address are part of the public record and available through the Texas Secretary of State's website. If you would prefer your name and address aren’t published, you might choose a Registered Agent service.`,
-                    `If you change your Texas business address or move out of state, you would need to file additional documentation with the TX Secretary of State for the new address if you act as your own Registered Agent. This would not be the case if you use a Registered Agent service, making a move or address change much simpler.`
+                    `The FL Registered Agent must have a physical street address in Florida. If you’re forming an LLC outside FL, you will need to use an in-state Registered Agent.`,
+                    `You always need to have someone on hand during business hours at the Florida address to sign for important documents.`,
+                    `The FL Registered Agent’s name and address are part of the public record and available through the Florida Department of State's website. If you would prefer your name and address aren’t published, you might choose a Registered Agent service.`,
+                    `If you change your Florida business address or move out of state, you would need to file additional documentation with the FL Department of State for the new address if you act as your own Registered Agent. This would not be the case if you use a Registered Agent service, making a move or address change much simpler.`
                 ],
             }
         },
@@ -299,26 +283,26 @@ export const agentPageContent = {
         {
             type: `heading`,
             size: 3,
-            content: `FAQs About Texas Registered Agents`,
+            content: `FAQs About Florida Registered Agents`,
         },
         {
             type: `accordion`,
             content: {
                 items: [
                     {
-                        question: `Do I Need to Appoint a Texas Registered Agent?`,
-                        answer: `Yes. All TX LLCs are required to have a Registered Agent. This is mandated by the Texas Secretary of State.`,
+                        question: `Do I Need to Appoint a Florida Registered Agent?`,
+                        answer: `Yes. All FL LLCs are required to have a Registered Agent. This is mandated by the Florida Department of State.`,
                     },
                     {
-                        question: `When Can I Assign a Texas Registered Agent Service?`,
-                        answer: `You must assign a Registered Agent when you incorporate your business through paperwork filed with the TX Secretary of State. You can change your Registered Agent anytime. If you form your business through Incfile, we will file all necessary forms on your behalf.`,
+                        question: `When Can I Assign a Florida Registered Agent Service?`,
+                        answer: `You must assign a Registered Agent when you incorporate your business through paperwork filed with the FL Department of State. You can change your Registered Agent anytime. If you form your business through Incfile, we will file all necessary forms on your behalf.`,
                     },
                     {
-                        question: `Can I Be My Own Registered Agent in Texas?`,
-                        answer: `Yes, but we don’t recommend it, for the reasons listed above. If you still want to be your own Registered Agent, you just need to fill in the correct forms and pay a fee to the Texas Secretary of State.`,
+                        question: `Can I Be My Own Registered Agent in Florida?`,
+                        answer: `Yes, but we don’t recommend it, for the reasons listed above. If you still want to be your own Registered Agent, you just need to fill in the correct forms and pay a fee to the Florida Department of State.`,
                     },
                     {
-                        question: `Does My TX Registered Agent Need to Have an Address in Texas?`,
+                        question: `Does My FL Registered Agent Need to Have an Address in Florida?`,
                         answer: `Yes. Additionally, if they are a business providing Registered Agent services, they must be legally able to conduct business in your state.`,
                     },
                 ]
@@ -339,15 +323,15 @@ export const agentPageContent = {
             type: `arrow-links`,
             content: [
                 {
-                    text: `The Main Functions of a Texas Registered Agent`,
+                    text: `The Main Functions of a Florida Registered Agent`,
                     url: `https://www.incfile.com/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/`,
                 },
                 {
-                    text: `Changing Your Texas Registered Agent`,
+                    text: `Changing Your Florida Registered Agent`,
                     url: `https://www.incfile.com/manage-your-company/change-of-registered-agent/`,
                 },
                 {
-                    text: `What a Texas Registered Agent Does`,
+                    text: `What a Florida Registered Agent Does`,
                     url: `https://www.incfile.com/research-topics/registered-agent-help/what-does-a-registered-agent-do/`,
                 },
             ]

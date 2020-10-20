@@ -21,10 +21,6 @@ export const tabPages = {
       path: `/california-llc/business-taxes/`,
     },
     {
-      name: `FAQ`,
-      path: `/california-llc/faq/`,
-    },
-    {
       name: `What To Do Next?`,
       path: `/other/after-forming-llc/`,
     },
