@@ -15,7 +15,7 @@ import { top, general, service, tools, rocket } from "../../static/other/general
 
 const GeneralResearchTopics = () => (
   <Layout>
-    <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
+    <SEO title="General Articles & Information on Forming an LLC or Corporation" description="Find general information regarding incorpoating a small business. We cover all the topics you need to know" />
     <Top imageName="mrs-bulb-question-7726" imageAlt="Mrs Bulb and with checklist" ovalColor="blue" headlineWidth="500" textWidth="800">
       <h1>{top.header}</h1>
       <p>{top.text}</p>

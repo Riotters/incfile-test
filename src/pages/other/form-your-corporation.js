@@ -15,7 +15,7 @@ import { top, creating, opinions } from "../../static/other/form-your-corporatio
 
 const FormAnLLC = () => (
   <Layout>
-    <SEO title="Form Your Corporation" description="aaa" />
+    <SEO title="Start a Company | Learn about Business Entity Types" description="Want to start a business? Learn about different types of business structures—from LLC to S Corp to non profit—and find the entity that suits your needs." />
     <Top imageName="mr-bulb-form-your-corporation-4492" imageAlt="aaa" ovalColor="sun" headlineWidth="450">
       <h1>{top.header}</h1>
       <Buttonsbox>
