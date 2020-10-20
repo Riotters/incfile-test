@@ -79,7 +79,7 @@ class RegistrationPage extends React.Component {
 
         return (
             <Layout>
-                <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
+                <SEO title="Register Your LLC, S-Corp, C-Corp, or Nonprofit | Incfile" description="Incfile's business formation services are easy and affordable. Start your business today for as little as $0 + state fees. Learn more. " />
                 <HeaderSection content={top} eventHandlers={this.handlers} initialState={this.state} />
                 {(priceVariants != null) && (
                     <PacketsSection content={priceVariants} fullInfo={true} />
