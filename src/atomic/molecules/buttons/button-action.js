@@ -141,6 +141,6 @@ Button.defaultProps = {
   width: "auto",
   content: {
     text: "Start your business with us, today!",
-    type: "",
+    type: "button",
   },
 };

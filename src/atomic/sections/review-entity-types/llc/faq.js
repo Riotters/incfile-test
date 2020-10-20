@@ -21,7 +21,7 @@ const Faq = styled.section`
   }
 `;
 
-const FaqSection = ({ className, content }) => (
+const FaqSection = ({ className, content, onClick }) => (
   <Faq className={className}>
     <Oval className="oval" height="420" width="420" top="0" right="0">
       <OvalSVG />
@@ -32,7 +32,7 @@ const FaqSection = ({ className, content }) => (
     <HeadingCenter headline={content.header} headlineWidth="770" />
     <ContentCenter>
       <Accordion content={content.faq} curve curveLeft />
-      <Button content={content.button} theme="primary56" arrow margin="72px auto 40px" />
+      <Button content={content.button} theme="primary56" onClick={onClick} arrow margin="72px auto 40px" />
       <Paragraph big maxWidth="770" style={{ textAlign: "center" }}>
         {content.text}
       </Paragraph>
