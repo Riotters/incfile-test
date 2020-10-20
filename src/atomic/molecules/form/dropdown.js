@@ -123,8 +123,14 @@ class Drop extends Component {
                     )}
                 </div>
                 <div className="bottom">
-                    <Dropdown options={this.props.options} onChange={this._onSelect} value={defaultOption}
-                              placeholder={this.props.placeholder}/>
+                    <Dropdown
+                        name={this.props.name}
+                        id={this.props.id}
+                        required={this.props.required}
+                        options={this.props.options}
+                        onChange={this._onSelect}
+                        value={defaultOption}
+                        placeholder={this.props.placeholder} />
                     <DropdownSVG/>
                 </div>
             </Wrapper>
