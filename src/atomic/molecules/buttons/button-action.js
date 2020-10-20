@@ -6,7 +6,7 @@ import ArrowSVG from "../../../images/arrow.inline.svg";
 import Arrow2SVG from "../../../images/arrow2.inline.svg";
 import PropTypes from "prop-types";
 
-const Wrapper = styled(Link)`
+const Wrapper = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,6 +22,7 @@ const Wrapper = styled(Link)`
   text-align: center;
   text-decoration: none;
   position: relative;
+  cursor: pointer;
   padding: ${(props) => (props.padding ? props.padding : props.theme === "primary40" || props.theme === "secondary40" ? "6px 30px" : props.theme === "primary48" || props.theme === "secondary48" ? "10px 38px" : props.theme === "primary56" || props.theme === "secondary56" ? "14px 46px" : "")};
   margin: ${(props) => (props.margin ? props.margin : "")};
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -111,20 +112,20 @@ const Arrow = styled.div`
   }
 `;
 
-const Button = ({ content, id, className, theme, height, width, arrow, arrow2, margin, marginSM, marginMD, marginLG, padding, right, wrap, onClick }) => (
-  <Wrapper id={id} className={className} to={content.url ? content.url : content} height={height} width={width} arrow={arrow} arrow2={arrow2} theme={theme} margin={margin} marginSM={marginSM} marginMD={marginMD} marginLG={marginLG} padding={padding} wrap={wrap} onClick={onClick}>
-    {content.text ? content.text : content}
-    {arrow && (
-      <Arrow className="arrow1" theme={theme} right={right}>
-        <ArrowSVG />
-      </Arrow>
-    )}
-    {arrow2 && (
-      <Arrow className="arrow2">
-        <Arrow2SVG />
-      </Arrow>
-    )}
-  </Wrapper>
+const Button = ({ content, id, type, className, theme, height, width, arrow, arrow2, margin, marginSM, marginMD, marginLG, padding, right, wrap, onClick }) => (
+    <Wrapper id={id} className={className} type={type} height={height} width={width} arrow={arrow} arrow2={arrow2} theme={theme} margin={margin} marginSM={marginSM} marginMD={marginMD} marginLG={marginLG} padding={padding} wrap={wrap} onClick={onClick}>
+        {content.text ? content.text : content}
+        {arrow && (
+            <Arrow className="arrow1" theme={theme} right={right}>
+                <ArrowSVG />
+            </Arrow>
+        )}
+        {arrow2 && (
+            <Arrow className="arrow2">
+                <Arrow2SVG />
+            </Arrow>
+        )}
+    </Wrapper>
 );
 
 export default Button;
@@ -133,7 +134,6 @@ Button.propTypes = {
   width: PropTypes.string,
   content: {
     text: PropTypes.string.isRequired,
-    url: PropTypes.string.isRequired,
   },
 };
 
@@ -141,6 +141,6 @@ Button.defaultProps = {
   width: "auto",
   content: {
     text: "Start your business with us, today!",
-    url: "/",
+    type: "button",
   },
 };

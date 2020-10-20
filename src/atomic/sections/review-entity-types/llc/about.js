@@ -14,12 +14,12 @@ const About = styled.section`
   }
 `;
 
-const AboutSection = ({ className, content }) => (
+const AboutSection = ({ className, content, clickOpenModal }) => (
     <About className={className}>
         <Oval className="oval" height="570" width="570" y="-40">
             <OvalSVG />
         </Oval>
-        <Tabs content={content.tabs}/>
+        <Tabs content={content.tabs} clickOpenModal={clickOpenModal} />
     </About>
   );
   

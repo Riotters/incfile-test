@@ -4,55 +4,66 @@ export const top = {
   button: [
     {
       text: "Form Your LLC Now",
-      url: "/form-order-now.php?entityType=LLC",
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC`,
     },
   ],
 };
 
 export const form = {
-  header: "Download our Complete LLC Guide.",
-  text: "The total who, what, where, when and how guide to forming & maintaining a LLC.",
-  button: {
-    text: "Download now",
-    url: "/"
-  },
-  fields: [
-    {
-      label: "Email",
-      type: "email",
-      placeholder: "",
+    header: "Download our Complete LLC Guide.",
+    text: "The total who, what, where, when and how guide to forming & maintaining a LLC.",
+    hs_form_id: `993baef6-066e-4d18-a813-c12bc3b3fff9`,
+    button: {
+        text: "Download now",
+        url: "/"
     },
-    {
-      label: "First Name",
-      type: "text",
-      placeholder: "",
-    },
-    {
-      label: "Last Name",
-      type: "text",
-      placeholder: "",
-    },
-    {
-      label: "Phone number",
-      type: "text",
-      placeholder: "",
-    },
-    {
-      label: "I want to...",
-      type: "select",
-      placeholder: "Please select",
-      options: [
-        "Start a Business Soon",
-        "Start a Business Now",
-        "Grow a Business",
-      ]
-    },
-  ]
+    fields: [
+        {
+            label: "Email",
+            type: "email",
+            name: 'email',
+            required: 'required',
+            placeholder: "",
+        },
+        {
+            label: "First Name",
+            name: 'firstname',
+            required: 'required',
+            type: "text",
+            placeholder: "",
+        },
+        {
+            label: "Last Name",
+            name: 'lastname',
+            required: 'required',
+            type: "text",
+            placeholder: "",
+        },
+        {
+            label: "Phone number",
+            name: 'phone',
+            required: 'required',
+            type: "text",
+            placeholder: "",
+        },
+        {
+            label: "I want to...",
+            name: 'intent_path',
+            required: 'required',
+            type: "select",
+            placeholder: "Please select",
+            options: [
+                "Start a Business Soon",
+                "Start a Business Now",
+                "Grow a Business",
+            ]
+        },
+    ]
 };
 
 export const thanks_form = {
   header: "Thank you",
-  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis lacus vitae mi rutrum eleifend nec in nisi. Pellentesque ac neque fringilla, vehicula augue vitae, convallis libero.",
+  text: "Thank you for your submission. Click below to download your guide!",
   button: {
     text: "Close",
     url: "#"
@@ -175,7 +186,7 @@ export const about = {
         text3: `To learn more about annual reports (or to have Incfile file yours for you), <a href="/manage-your-company/annual-report/">click here</a>, or view our LLC state guides to learn about specific requirements for your state.`,
         link: {
           text: `Learn about specific requirements for your state`,
-          url: `/llc-state-information`,
+          url: `/llc-state-information/`,
         },
       },
       {
