@@ -65,7 +65,7 @@ class LLC extends React.Component {
                         <Button content={top.button[0]} theme="primary56" arrow />
                     </Buttonsbox>
                 </Top>
-                <About content={about} />
+                <About content={about} clickOpenModal={this.popup.bind(this)} />
                 <Faq content={faq} onClick={this.popup.bind(this)} />
                 <Articles />
                 <LightBoxModal visible={this.state.modalVisible} onClick={this.popup} className="modal-overlay">

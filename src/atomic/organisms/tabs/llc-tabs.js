@@ -249,7 +249,7 @@ const Tab = ({ children }) => {
 
 const icons = [<GeneralSVG />, <WhenChooseSVG />, <ProsAndConsSVG />, <RequirementsSVG />, <TypesSVG />];
 
-const CCorpTabs = ({ layout, columns, content }) => (
+const CCorpTabs = ({ layout, columns, content, clickOpenModal }) => (
   <Container>
     <Wrapper layout={layout}>
       <VisibilitySensor partialVisibility once>
@@ -300,7 +300,7 @@ const CCorpTabs = ({ layout, columns, content }) => (
                   <Heading size="3">{content.content[1].header}</Heading>
                   <Paragraph big>{content.content[1].text}</Paragraph>
                   <Paragraph big mixed>{parse(content.content[1].text2)}</Paragraph>
-                  <ContentButton content={content.content[1].button} theme="primary56" margin="0 auto 0 0" arrow />
+                  <ContentButton content={content.content[1].button} onClick={clickOpenModal} theme="primary56" margin="0 auto 0 0" arrow />
                 </PanelWrapper>
               </Panel>
               <Panel>
