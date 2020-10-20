@@ -47,7 +47,7 @@ import CorporationNameIcon from "../images/icons/icon-learning-center-color-busi
 
 const AlaskaCorporation = () => (
   <Layout>
-    <SEO title="Form a Corporation in Alaska." description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
+    <SEO title="Form a Corporation in Arizona." description="Thinking of starting an S Corp, C Corp, or LLC in California? Learn about corporations in Arizona and decide which business type is right for you."" />
     <Top imageName="mr-bulb-corporation-california-8302" imageAlt="Mrs Bulb and with checklist" ovalColor="purple-2" headlineWidth="560">
       <h1>{top.header}</h1>
       <p>{top.text}</p>
