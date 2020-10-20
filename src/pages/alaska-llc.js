@@ -9,8 +9,8 @@ import LLCLayout from "../atomic/partials/states-llc/louisiana";
 import ContentMap from "../atomic/partials/content-map";
 
 // Content
-import { howToGuide } from "../static/states-llc/louisiana/home";
-import { tabPages } from "../static/states-llc/louisiana/general";
+import { howToGuide } from "../static/states-llc/alaska/home";
+import { tabPages } from "../static/states-llc/alaska/general";
 
 function LLCIndex() {
   return (
@@ -19,7 +19,7 @@ function LLCIndex() {
       <LLCLayout>
         <LeftTabPages content={tabPages} nonDIY />
         <MainPageContent>
-            <ContentMap content={howToGuide} />
+          <ContentMap content={howToGuide} />
         </MainPageContent>
       </LLCLayout>
     </Layout>
