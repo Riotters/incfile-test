@@ -13,7 +13,7 @@ export default function HTML(props) {
                 />
                 {props.headComponents}
 
-                <script
+                {/* <script
                     key="google_tag_manager"
                     defer
                     dangerouslySetInnerHTML={{
@@ -24,20 +24,20 @@ export default function HTML(props) {
                         })(window,document,'script','dataLayer','GTM-5H3C8TJ');
                         `
                     }}
-                />
+                /> */}
 
             </head>
             <body {...props.bodyAttributes}>
                 {props.preBodyComponents}
 
-                <noscript
+                {/* <noscript
                     dangerouslySetInnerHTML={{
                         __html: `
                         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5H3C8TJ"
                         height="0" width="0" style="display:none;visibility:hidden"></iframe>
                         `
                     }}
-                />
+                /> */}
 
                 <div
                     key={`body`}
@@ -47,7 +47,7 @@ export default function HTML(props) {
                 {props.postBodyComponents}
                     
                 {/* clickAttributionData */}
-                <script
+                {/* <script
                     dangerouslySetInnerHTML={{
                         __html: `
                         var clickAttributionData = clickAttributionData || {};
@@ -58,10 +58,10 @@ export default function HTML(props) {
                 <script
                     defer 
                     src="https://clickattribution.com/scripts/v2/path-to-purchase.min.js"
-                />
+                /> */}
 
                 {/* Hotjar Tracking Code */}
-                <script
+                {/* <script
                     defer
                     dangerouslySetInnerHTML={{
                         __html: `
@@ -75,10 +75,10 @@ export default function HTML(props) {
                         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
                         `
                     }}
-                />
+                /> */}
 
                 {/* Visual Website Optimizer Asynchronous Code */}
-                <script
+                {/* <script
                     defer
                     dangerouslySetInnerHTML={{
                         __html: `
@@ -87,7 +87,7 @@ export default function HTML(props) {
                                 settings_tolerance = 2000,
                                 library_tolerance = 2500,
                                 use_existing_jquery = false,
-                                /* DO NOT EDIT BELOW THIS LINE */
+                                
                                 f = false, d = document;
                             return {
                                 use_existing_jquery: function () {
@@ -128,7 +128,7 @@ export default function HTML(props) {
                         _vwo_settings_timer = _vwo_code.init();
                         `
                     }}
-                />
+                /> */}
             </body>
         </html>
     );

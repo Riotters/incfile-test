@@ -9,7 +9,9 @@ import Dropdown from "../../molecules/form/dropdown";
 import ButtonAction from "../../molecules/buttons/button-action";
 import Curve from "../../atoms/icons/curve";
 import CurveSVG from "../../../images/curves/top-left-bottom-right.inline.svg";
-import {ThankYouContent} from "../../../atomic/partials/thank-you-modal-content";
+import { ThankYouContent } from "../../../atomic/partials/thank-you-modal-content";
+
+import { _phoneFormat } from '../../../helpers/input-parsers';
 
 const Wrapper = styled(Whitebox)`
   display: flex;
@@ -76,6 +78,7 @@ const BusinessNameSearchForm = ({ className, content }) => {
     const [intentPath, setIntentPath] = React.useState('');
     const [modalVisible, setModalVisible] = React.useState(false);
     const [formSubmitted, setFormSubmitted] = React.useState(false);
+    const [phoneNumber, setPhoneNumber] = React.useState('');
     const pageUrl = typeof window !== 'undefined' ? window.location.href : '';
 
     const HandleForm = (e) => {
@@ -97,7 +100,9 @@ const BusinessNameSearchForm = ({ className, content }) => {
         })
             .then(res => res.json())
             .then(json => {
-                formData.set('email', '');
+                form.reset();
+                setPhoneNumber('');
+                setIntentPath('');
                 setModalVisible(true);
                 setFormSubmitted(true);
             });
@@ -113,8 +118,13 @@ const BusinessNameSearchForm = ({ className, content }) => {
         setModalVisible(!modalVisible)
     }
 
+    const handlePhoneChange = (e) => {
+        let formatPhone = _phoneFormat(e.target.value);
+        setPhoneNumber(formatPhone);
+    }
+
     let modalClases = ["lightbox-content"];
-    if(formSubmitted) modalClases.push("form-submitted");
+    if (formSubmitted) modalClases.push("form-submitted");
 
     return (
         <Wrapper className={className}>
@@ -136,7 +146,7 @@ const BusinessNameSearchForm = ({ className, content }) => {
                     <Input name="lastname" id="last-name" required />
                 </Label>
                 <Label htmlFor="phone" content={content.field4} bottomMargin="16">
-                    <Input name="phone" id="phone" pattern="\d{3}-\d{3}-\d{4}" required />
+                    <Input name="phone" id="phone" value={phoneNumber} pattern="\d{3}-\d{3}-\d{4}" onChange={e => handlePhoneChange(e)} required />
                 </Label>
                 <Label htmlFor="intent_path" content={content.field5} bottomMargin="32">
                     <Dropdown
