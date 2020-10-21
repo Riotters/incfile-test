@@ -20,6 +20,7 @@ import ToolsList from "../organisms/lists/tools-list";
 import Mobile from "../../images/icons/mobile-compatibility.inline.svg";
 import TextBlockWithImage from "../../pages/virtual-mailbox";
 import GenericTable from "../organisms/tables/generic-table";
+import LLCTable from "../organisms/tables/llc-table";
 
 const Wrapper = styled.div`
   display: flex;
@@ -95,6 +96,7 @@ const Content = ({ content }) => {
             </div>
           )}
           {item.type === "table" && <GenericTable responsive={item.responsive} settings={item.settings} style={item.style} content={item.content} />}
+          {item.type == "table-simple" && <LLCTable content={item.content} />}
         </>
       ))}
     </Wrapper>

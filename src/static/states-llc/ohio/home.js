@@ -47,9 +47,7 @@ export const howToGuide = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Separating and limiting your personal liability from your business liability and debts`,
-             `Quick and simple filing, management, compliance, regulations and administration of your Ohio LLC`,
-             `Easy tax filing and potential advantages for tax treatment`],
+      list: [`Separating and limiting your personal liability from your business liability and debts`, `Quick and simple filing, management, compliance, regulations and administration of your Ohio LLC`, `Easy tax filing and potential advantages for tax treatment`],
     },
     marginBottom: 48,
     color: color.blue3,
@@ -127,9 +125,11 @@ export const howToGuide = [
     type: `list-dot`,
     content: {
       header: `The Ohio Secretary of State has plenty of information on forming and running a business in Ohio. Check out additional resources below.<br>These are all the basic steps for forming an LLC in Ohio. You’ll find other useful information below.`,
-      list: [`<a href="https://www.sos.state.oh.us/businesses/" target="_blank" rel="noopener noreferrer">Ohio Secretary of State for forming and running your LLC</a>`,
-             `<a href="https://info.bwc.ohio.gov/wps/portal/bwc/site/home/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8zi_S193D08TQz8LIwszA0c3Uw9g33cA_1dTEz1w_Wj9KNwKzENMYEqMMABHA30C7KzAwH2RoK7/dz/d5/L2dBISEvZ0FBIS9nQSEh/" target="_blank" rel="noopener noreferrer">Ohio Department of Labor for Ohio employers and hiring</a>`,
-             `<a href="https://tax.ohio.gov" target="_blank" rel="noopener noreferrer">Ohio Department of Revenue Administration for taxes</a>`],
+      list: [
+        `<a href="https://www.sos.state.oh.us/businesses/" target="_blank" rel="noopener noreferrer">Ohio Secretary of State for forming and running your LLC</a>`,
+        `<a href="https://info.bwc.ohio.gov/wps/portal/bwc/site/home/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8zi_S193D08TQz8LIwszA0c3Uw9g33cA_1dTEz1w_Wj9KNwKzENMYEqMMABHA30C7KzAwH2RoK7/dz/d5/L2dBISEvZ0FBIS9nQSEh/" target="_blank" rel="noopener noreferrer">Ohio Department of Labor for Ohio employers and hiring</a>`,
+        `<a href="https://tax.ohio.gov" target="_blank" rel="noopener noreferrer">Ohio Department of Revenue Administration for taxes</a>`,
+      ],
     },
     marginBottom: 32,
     color: color.yellow3,
@@ -169,7 +169,7 @@ export const howToGuide = [
               <p> More information on Ohio <a href="/Ohio-llc/fees-filing-requirements/"> filing and licensing requirements here</a> </p>`,
     marginBottom: 32,
   },
-  
+
   {
     type: `header`,
     content: `What to Do After Forming Your Ohio LLC`,
@@ -291,7 +291,7 @@ export const namingYourBusiness = [
   {
     type: `text`,
     content: `Once you’ve decided on a name for your LLC and checked business name availability, you’ll need to meet Ohio Secretary of State naming rules. These do vary from state to state — we’ve got general naming rules below.`,
-   marginBottom: 32,
+    marginBottom: 32,
   },
   {
     type: `header`,
@@ -319,10 +319,12 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Suffixes, such as Corporation, Company, Incorporated, Incorporation, Limited, Corp., Co., Inc., Ltd., LLC, etc.`,
-             `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`, 
-             `The singular, plural or possessive forms of a word`, 
-             `Abbreviations, punctuation, symbols, fonts, typefaces, etc.`],
+      list: [
+        `Suffixes, such as Corporation, Company, Incorporated, Incorporation, Limited, Corp., Co., Inc., Ltd., LLC, etc.`,
+        `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`,
+        `The singular, plural or possessive forms of a word`,
+        `Abbreviations, punctuation, symbols, fonts, typefaces, etc.`,
+      ],
     },
     marginBottom: 32,
     color: color.babyblue3,
@@ -353,15 +355,17 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Are very similar to the name of a federal or AK agency or organization (e.g. FBI, FDA, Ohio Department of Revenue, Ohio Police, Treasury, etc)`,
-             `Suggest affiliation with a federal or state agency or organization`, 
-             `Use the term “Olympic” or any terms that are trademarks of the Olympic organization`, 
-             `Imply a purpose that it would be illegal for your business to carry out`],
+      list: [
+        `Are very similar to the name of a federal or AK agency or organization (e.g. FBI, FDA, Ohio Department of Revenue, Ohio Police, Treasury, etc)`,
+        `Suggest affiliation with a federal or state agency or organization`,
+        `Use the term “Olympic” or any terms that are trademarks of the Olympic organization`,
+        `Imply a purpose that it would be illegal for your business to carry out`,
+      ],
     },
     marginBottom: 32,
     color: color.yellow3,
     curve: true,
-    curveColor:color.red1,
+    curveColor: color.red1,
   },
   {
     type: `header`,
@@ -469,10 +473,11 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`If you don’t want to form your Ohio LLC right now, you can reserve the business name with the Ohio Secretary of State. You will need to complete a <a href="https://www.sos.state.oh.us/globalassets/business/forms/534b.pdf">Name Reservation / Transfer / Cancellation </a> Form and file it with the OH SOS. You do not need to reserve a name if you are forming your business right away."`,
-             `If you’re ready to start your LLC, you can formally file your Certificate of Formation with the Ohio SOS, or
+      list: [
+        `If you don’t want to form your Ohio LLC right now, you can reserve the business name with the Ohio Secretary of State. You will need to complete a <a href="https://www.sos.state.oh.us/globalassets/business/forms/534b.pdf">Name Reservation / Transfer / Cancellation </a> Form and file it with the OH SOS. You do not need to reserve a name if you are forming your business right away."`,
+        `If you’re ready to start your LLC, you can formally file your Certificate of Formation with the Ohio SOS, or
              <a href="/Ohio-llc/fees-filing-requirements/"> let Incfile take care of it for you.</a.`,
-             ],
+      ],
     },
     marginBottom: 48,
     color: color.green3,
@@ -560,15 +565,12 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Appeal to your customers`,
-             `Be memorable enough to stand out`, 
-             `Best represent your product or services`,
-             `Not be used by another business`],
+      list: [`Appeal to your customers`, `Be memorable enough to stand out`, `Best represent your product or services`, `Not be used by another business`],
     },
     marginBottom: 40,
     color: color.blue3,
   },
-  
+
   {
     type: `arrow-link`,
     content: {
@@ -602,16 +604,18 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: `Here’s what we cover:`,
-      list: [`Information on the Ohio Secretary of State and OH Registered Agent Services`,
-              `Rules for Ohio Statutory Agents`,
-              `What to Expect From an Ohio Statutory Agent Service`,
-              `Incfile Provides a Free Ohio Registered Agent Service for the First Year`,
-              `How to Appoint an Ohio Statutory Agent for Your LLC`,
-              `Ohio Registered Agent Search`,
-              `Issues With Not Having an Ohio Statutory Agent`,
-             `Assigning Yourself as the Ohio Registered Agent for Your LLC`,
-             `FAQs About Ohio Statutory Agents`,
-             `Useful Resources for Ohio Statutory Agent Services`],
+      list: [
+        `Information on the Ohio Secretary of State and OH Registered Agent Services`,
+        `Rules for Ohio Statutory Agents`,
+        `What to Expect From an Ohio Statutory Agent Service`,
+        `Incfile Provides a Free Ohio Registered Agent Service for the First Year`,
+        `How to Appoint an Ohio Statutory Agent for Your LLC`,
+        `Ohio Registered Agent Search`,
+        `Issues With Not Having an Ohio Statutory Agent`,
+        `Assigning Yourself as the Ohio Registered Agent for Your LLC`,
+        `FAQs About Ohio Statutory Agents`,
+        `Useful Resources for Ohio Statutory Agent Services`,
+      ],
     },
     marginBottom: 32,
     color: color.yellow3,
@@ -654,10 +658,12 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`If the Registered Agent is a person, they must reside in Ohio.`,
-             `If the Registered Agent is a business, they must be able to conduct business in Ohio.`,
-             `The Registered Agent must have a physical street address in Ohio, not a P.O. Box.`,
-             `The Registered Agent must be available in person during normal business hours to sign for any correspondence.`],
+      list: [
+        `If the Registered Agent is a person, they must reside in Ohio.`,
+        `If the Registered Agent is a business, they must be able to conduct business in Ohio.`,
+        `The Registered Agent must have a physical street address in Ohio, not a P.O. Box.`,
+        `The Registered Agent must be available in person during normal business hours to sign for any correspondence.`,
+      ],
     },
     marginBottom: 32,
     color: color.yellow3,
@@ -682,11 +688,12 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Correspondence from the Ohio Secretary of State.`,
-             `Service of process notices (e.g., if your OH LLC is sued or required to appear in court)`, 
-             `Official Ohio state and federal government correspondence and notifications`,
-             `Tax forms and requests to complete permits, company filings and reports`,
-            ],
+      list: [
+        `Correspondence from the Ohio Secretary of State.`,
+        `Service of process notices (e.g., if your OH LLC is sued or required to appear in court)`,
+        `Official Ohio state and federal government correspondence and notifications`,
+        `Tax forms and requests to complete permits, company filings and reports`,
+      ],
     },
     marginBottom: 24,
     color: color.red3,
@@ -708,15 +715,17 @@ export const registeredAgent = [
     type: `text`,
     content: `We are authorized to conduct business in Ohio and can legally act as your Registered Agent. Here’s what the Incfile Ohio Registered Agent service provides for your LLC::`,
     marginBottom: 16,
-  }, 
+  },
   {
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`An always-available Ohio Registered Agent who can receive correspondence, documents and legal proceedings on your LLC’s behalf`,
-             `A digital dashboard where you can access, store and retrieve any information we’ve received for your Ohio business`,
-             `Email notification whenever we receive documents for your business`, 
-             `Automatic forwarding of all legal correspondence, documentation and information directly to you`],
+      list: [
+        `An always-available Ohio Registered Agent who can receive correspondence, documents and legal proceedings on your LLC’s behalf`,
+        `A digital dashboard where you can access, store and retrieve any information we’ve received for your Ohio business`,
+        `Email notification whenever we receive documents for your business`,
+        `Automatic forwarding of all legal correspondence, documentation and information directly to you`,
+      ],
     },
     marginBottom: 32,
     color: color.green3,
@@ -861,9 +870,11 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`<b>Getting served or sued and not finding out about it:</b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`, 
-             `<b>Falling out of good standing with the Ohio Secretary of State:</b> If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`, 
-             `<b>Losing your status as a Ohio LLC:</b> A Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your LLC may be dissolved.`],
+      list: [
+        `<b>Getting served or sued and not finding out about it:</b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
+        `<b>Falling out of good standing with the Ohio Secretary of State:</b> If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
+        `<b>Losing your status as a Ohio LLC:</b> A Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your LLC may be dissolved.`,
+      ],
     },
     marginBottom: 48,
     color: color.blue3,
@@ -883,19 +894,21 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`The Registered Agent must have a physical street address in Ohio. If you’re forming an LLC outside Ohio, you will need to use an in-state Registered Agent.`, 
-             `You always need to have someone on hand during business hours at the Ohio address to sign for important documents.`,
-             `The Registered Agent’s name and address are part of the public record and available through the Ohio Secretary of State's website. If you prefer your name and address aren’t published, you should choose a Registered Agent service.`, 
-             `If you change your Ohio business address or move out of state, you would need to file additional documentation with the OH Secretary of State for the new address if you act as your own Registered Agent. This would not be the case if you use a Registered Agent service, making a move or address change much simpler.`],
+      list: [
+        `The Registered Agent must have a physical street address in Ohio. If you’re forming an LLC outside Ohio, you will need to use an in-state Registered Agent.`,
+        `You always need to have someone on hand during business hours at the Ohio address to sign for important documents.`,
+        `The Registered Agent’s name and address are part of the public record and available through the Ohio Secretary of State's website. If you prefer your name and address aren’t published, you should choose a Registered Agent service.`,
+        `If you change your Ohio business address or move out of state, you would need to file additional documentation with the OH Secretary of State for the new address if you act as your own Registered Agent. This would not be the case if you use a Registered Agent service, making a move or address change much simpler.`,
+      ],
     },
     marginBottom: 16,
     color: color.green3,
   },
   {
-      type: `header`,
-      content: `FAQs About Ohio Registered Agents`,
-      size: 3,
-      marginBottom: 24,
+    type: `header`,
+    content: `FAQs About Ohio Registered Agents`,
+    size: 3,
+    marginBottom: 24,
   },
   {
     type: `accordion`,
@@ -932,9 +945,11 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: `You might find these resources helpful:`,
-      list: [`<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/">The Main Functions of a Ohio Registered Agent</a>`,
-             `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Ohio Registered Agent</a>`,
-             `<a href-"/research-topics/registered-agent-help/what-does-a-registered-agent-do/">What a Ohio Registered Agent Does</a>`],
+      list: [
+        `<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/">The Main Functions of a Ohio Registered Agent</a>`,
+        `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Ohio Registered Agent</a>`,
+        `<a href-"/research-topics/registered-agent-help/what-does-a-registered-agent-do/">What a Ohio Registered Agent Does</a>`,
+      ],
     },
     marginBottom: 48,
     color: color.babyblue3,
@@ -969,12 +984,54 @@ export const feesAndRequirments = [
     marginBottom: 32,
   },
   {
-    type: `table`,
+    type: `table-simple`,
     content: {
       headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
       rows: [[`$99`, `3 Weeks`, `7 Business Day`]],
     },
   },
+  //   {
+  //     type: "table",
+  //     content: {
+  //       headers: [
+  //         [
+  //           {
+  //             label: "State Fee",
+  //             textCenter: true,
+  //           },
+  //           {
+  //             label: "State Filing Time",
+  //             textCenter: true,
+  //           },
+  //           {
+  //             label: "Expedited Filing Time",
+  //             textCenter: true,
+  //           },
+  //         ],
+  //       ],
+  //       rows: [
+  //         [
+  //           {
+  //             label: "$99",
+  //             textCenter: true,
+  //           },
+  //           {
+  //             label: "3 Weeks",
+  //             textCenter: true,
+  //           },
+  //           {
+  //             label: "7 Business Day",
+  //             textCenter: true,
+  //           },
+  //         ],
+  //       ],
+  //       headerColumnDef: 3,
+  //       rowColumnDef: 3,
+  //     },
+  //     responsive: true,
+  //     settings: {},
+  //     style: {},
+  //   },
   {
     type: `arrow-link`,
     content: {
@@ -1072,7 +1129,7 @@ export const feesAndRequirments = [
     content: `<b>Frequency:</b> Ohio LLC's are currently not required to file annual reports.`,
     marginBottom: 16,
   },
-  
+
   {
     type: `text`,
     content: `<a href="/ohio-llc/fees-filing-requirements/">Learn about your ongoing Ohio LLC filing requirements</a>
@@ -1099,9 +1156,11 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: `Permits and licenses vary based on:`,
-      list: [`The industry your Ohio LLC operates in (e.g., restaurants will need health permits)`, 
-             `The location of your Ohio LLC (state, county or city) (e.g., a license to conduct business from the city of Columbus)`, 
-             `The type of business that you run (e.g., healthcare providers must meet HIPAA requirements)`],
+      list: [
+        `The industry your Ohio LLC operates in (e.g., restaurants will need health permits)`,
+        `The location of your Ohio LLC (state, county or city) (e.g., a license to conduct business from the city of Columbus)`,
+        `The type of business that you run (e.g., healthcare providers must meet HIPAA requirements)`,
+      ],
     },
     marginBottom: 32,
     color: color.green3,
@@ -1129,8 +1188,7 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`A complete report on all the licenses, permits and tax registrations your Ohio LLC will need`,
-             `The application forms you will need to file with the Ohio, regional and federal licensing authorities`],
+      list: [`A complete report on all the licenses, permits and tax registrations your Ohio LLC will need`, `The application forms you will need to file with the Ohio, regional and federal licensing authorities`],
     },
     marginBottom: 24,
     color: color.purple3,
@@ -1244,9 +1302,7 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: `Areas you might want to file Ohio Articles of Amendment for include:`,
-      list: [`Adding, removing or changing a Ohio LLC member or manager`,
-             `Changing the business address of your LLC`,
-             `Altering the stated business activities of your Ohio LLC`],
+      list: [`Adding, removing or changing a Ohio LLC member or manager`, `Changing the business address of your LLC`, `Altering the stated business activities of your Ohio LLC`],
     },
     marginBottom: 0,
     color: color.yellow3,
@@ -1440,9 +1496,7 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `The graduated Ohio state income tax rate is:`,
-      list: [`angible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`,
-             `Certain services that your Ohio business might provide`,
-            ],
+      list: [`angible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`, `Certain services that your Ohio business might provide`],
     },
     marginBottom: 16,
     color: color.blue3,
@@ -1452,7 +1506,7 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `Most states do not levy sales tax on goods that are considered necessities, like food, medications, clothing or gas. `,
-    marginBottom:8,
+    marginBottom: 8,
   },
   {
     type: `text`,
@@ -1489,10 +1543,7 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `The graduated Ohio state income tax rate is:`,
-      list: [`On profits of $40,000, you would pay self-employment tax of $6,120`,
-             `On profits of $70,000, you would pay self-employment tax of $10,710`,
-             `On profits of $100,000, you would pay self-employment tax of $15,300`,
-             `On profits of $140,000, you would pay self-employment tax of $21,420`],
+      list: [`On profits of $40,000, you would pay self-employment tax of $6,120`, `On profits of $70,000, you would pay self-employment tax of $10,710`, `On profits of $100,000, you would pay self-employment tax of $15,300`, `On profits of $140,000, you would pay self-employment tax of $21,420`],
     },
     marginBottom: 16,
     color: color.blue3,
@@ -1631,9 +1682,7 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `The most common types of estimated tax are:`,
-      list: [`Federal income tax`,
-              `Federal self-employment tax`,
-             `Ohio state tax`],
+      list: [`Federal income tax`, `Federal self-employment tax`, `Ohio state tax`],
     },
     marginBottom: 24,
     color: color.purple3,
@@ -1669,7 +1718,7 @@ export const businessTaxes = [
     },
     marginBottom: 24,
   },
-]
+];
 export const compare = {
   header: `How We Compare. <br>Get more more for less.`,
   table: {
