@@ -65,7 +65,9 @@ const Content = ({ content }) => {
               ))}
             </div>
           )}
-          {item.type === "button" && <Button content={item.content} theme={item.theme} arrow={item.arrow ?? true} marginSM="24px auto 24px 0" marginMD="42px auto 56px 0" />}
+          {item.type === "button" && (
+            <Button content={item.content} theme={item.theme} arrow={item.arrow ?? true} margin={item.marginBottom ? `0 auto ${item.marginBottom}px 0` : false} marginSM={item.marginBottom ? false : "24px auto 24px 0"} marginMD={item.marginBottom ? false : "42px auto 56px 0"} />
+          )}
           {item.type === "buttons" && (
             <div style={{ "margin-bottom": item.marginBottom + "px" }}>
               <Buttonsbox>
