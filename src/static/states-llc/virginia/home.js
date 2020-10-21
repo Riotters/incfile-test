@@ -355,7 +355,7 @@ export const howToGuide = [
           `Abbreviations, punctuation, symbols, fonts, typefaces, etc.`
         ],
       },
-      marginBottom: 32,
+      marginBottom: 48,
       color: color.yellow3,
     },
     {
@@ -398,17 +398,17 @@ export const howToGuide = [
       type: `header`,
       content: `Specific Business Naming Rules in Virginia`,
       size: 4,
-      marginBottom: 24,
+      marginBottom: 16,
     },
     {
       type: `text`,
-      content: `In addition to the general rules listed above, the Virginia State Corporation Commission has some specific business naming rules for your LLC. You will need to follow these rules if you want to name your VA business appropriately.`,
+      content: `In addition to the general rules listed above, the Virginia State Corporation Commission has some specific business naming rules for your LLC.`,
       marginBottom: 16,
     },
     {
         type: `list-dot`,
         content: {
-            header: ``,
+            header: `You will need to follow these rules if you want to name your VA business appropriately:`,
             list: [
                 `The name of a corporation, limited liability company or limited partnership may not include any word, abbreviation or combination of characters that states or implies that it is a different type of business entity. Under this standard, for example, the name of a limited liability company may not include the word “corporation” or “incorporated,” or the designation “Corp.” or “Inc.”`,
                 `The name of a corporation may not imply that it is or will be conducting business as a bank, trust company, insurance company, or public service company, such as a railroad, telephone company, utility, or water or sewer company, unless it will actually be engaged in such business.`, 
@@ -418,7 +418,7 @@ export const howToGuide = [
             ],
         },
         marginBottom: 16,
-        color: color.purple3,
+        color: color.green3,
     },
     {
         type: `arrow-link`,
@@ -426,13 +426,13 @@ export const howToGuide = [
           text: `More on Virginia State Corporation Commission business naming rules.`,
           url: `https://www.scc.virginia.gov/clk/befaq/name.aspx#a7`,
         },
-        marginBottom: 0,
+        marginBottom: 32,
       },
     {
       type: `header`,
       content: `DBA (“Doing Business As”) Names in Virginia `,
       size: 4,
-      marginBottom: 24,
+      marginBottom: 16,
     },
     {
       type: `text`,
@@ -528,7 +528,7 @@ export const howToGuide = [
       type: `header`,
       content: `Trademarks and Service Marks`,
       size: 4,
-      marginBottom: 24,
+      marginBottom: 16,
     },
     {
       type: `text`,
@@ -542,13 +542,13 @@ export const howToGuide = [
         url: `/trademark-name-search/`,
       },
       theme: `primary48`,
-      marginBottom: 48,
+      marginBottom: 32,
     },
     {
       type: `header`,
       content: `Find the Perfect Name for Your Virginia LLC`,
       size: 4,
-      marginBottom: 24,
+      marginBottom: 16,
     },
     {
       type: `text`,
@@ -575,7 +575,7 @@ export const howToGuide = [
         text: `Incfile guide to choosing a business name.`,
         url: `/blog/post/llc-name-search-50-states/`,
       },
-      marginBottom: 0,
+      marginBottom: 48,
     },
   ];
 
@@ -695,7 +695,7 @@ export const howToGuide = [
         ],
       },
       marginBottom: 16,
-      color: color.orange3,
+      color: color.babyblue3,
     },
     {
       type: `button`,
@@ -710,7 +710,7 @@ export const howToGuide = [
       type: `header`,
       content: `Appointing a VA Registered Agent Service for Your Virginia LLC`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `text`,
@@ -748,7 +748,7 @@ export const howToGuide = [
     {
       type: `text`,
       content: `When you incorporate through us, we complete and file your Articles of Organization based on the information you’ve provided. Additionally, we give you a free Virginia Registered Agent service for the first year, and we’ll include details of your VA Registered Agent in the form that we file.`,
-      marginBottom: 32,
+      marginBottom: 16,
     },
     {
       type: `button`,
@@ -946,7 +946,7 @@ export const howToGuide = [
       marginBottom: 16,
     },
     {
-      type: `table`,
+      type: `table-simple`,
       content: {
         headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
         rows: [[`$100`, `5 business days`, `1 business day`]],
@@ -966,7 +966,7 @@ export const howToGuide = [
         text: `Compare State Filing Prices`,
         url: `/state-filing-fees/`,
       },
-      marginBottom: 24,
+      marginBottom: 16,
     },
     {
       type: `text`,
@@ -975,7 +975,7 @@ export const howToGuide = [
     },
     {
       type: `text`,
-      content: `Some states allow you to form your LLC more quickly by paying a rush fee. You can <a href="/state-filing-times/" target="_blank">compare state filing times and fees here, including expedited fees for Virginia.</a>.`,
+      content: `Some states allow you to form your LLC more quickly by paying a rush fee. You can <a href="/state-filing-times/" target="_blank">compare state filing times and fees here, including expedited fees for Virginia</a>.`,
       marginBottom: 16,
     },
     {
@@ -1100,7 +1100,7 @@ export const howToGuide = [
     {
       type: `text`,
       content: `You can research these permits and licenses yourself or use Incfile’s Business License Research Package, which includes:`,
-      marginBottom: 48,
+      marginBottom: 16,
     },
     {
         type: `list-dot`,
@@ -1153,13 +1153,13 @@ export const howToGuide = [
     {
       type: `text`,
       content: `There are several other fees or requirements that you may need to meet during the life of your Virginia LLC. These ad hoc fees will only be payable in specific circumstances, which we’ve listed below.`,
-      marginBottom: 48,
+      marginBottom: 32,
     },
     {
       type: `header`,
       content: `To Obtain a Fictitious/DBA Name for Your Virginia LLC`,
       size: 4,
-      marginBottom: 24,
+      marginBottom: 16,
     },
     {
       type: `text`,
@@ -1173,13 +1173,13 @@ export const howToGuide = [
         url: `/fictitious-business-or-trade-name/`,
       },
       theme: `primary48`,
-      marginBottom: 48,
+      marginBottom: 32,
     },
     {
       type: `header`,
       content: `To Change the Virginia Registered Agent for Your VA LLC`,
       size: 4,
-      marginBottom: 24,
+      marginBottom: 16,
     },
     {
       type: `text`,
@@ -1193,24 +1193,24 @@ export const howToGuide = [
         url: `/manage-your-company/registered-agent/`,
       },
       theme: `primary48`,
-      marginBottom: 48,
+      marginBottom: 32,
     },
     {
       type: `header`,
       content: `To Reserve a Name for Your Virginia LLC`,
       size: 4,
-      marginBottom: 24,
+      marginBottom: 16,
     },
     {
       type: `text`,
       content: `If you don’t want to form your VA business right away, you can reserve a name with the Virginia State Corporation Commission. You will need to pay a small fee to do this.`,
-      marginBottom: 48,
+      marginBottom: 32,
     },
     {
       type: `header`,
       content: `To Amend Certain Facts About Your Virginia LLC`,
       size: 4,
-      marginBottom: 24,
+      marginBottom: 16,
     },
     {
       type: `text`,
@@ -1237,13 +1237,13 @@ export const howToGuide = [
         url: `/manage-your-company/amendment/`,
       },
       theme: `primary48`,
-      marginBottom: 48,
+      marginBottom: 32,
     },
     {
       type: `header`,
       content: `The Virginia Corporation Commission Certificate of Good Standing`,
       size: 4,
-      marginBottom: 24,
+      marginBottom: 16,
     },
     {
       type: `text`,
@@ -1296,11 +1296,11 @@ export const howToGuide = [
                 <li>Governing organizations in your industry</li>
                 <li>Federal, state and local regulations</li>
                 </ul></br>
-              <p>That’s why our <a href="/business-license-research-package/" target="_blank"> is so useful. It explores all of these areas for you and provides a comprehensive overview of exactly what your Virginia LLC needs to be compliant.</p>`,
+              <p>That’s why our <a href="/business-license-research-package/" target="_blank">business license research package</a> is so useful. It explores all of these areas for you and provides a comprehensive overview of exactly what your Virginia LLC needs to be compliant.</p>`,
           },
         ],
       },
-      marginBottom: 0,
+      marginBottom: 48,
     },
   ];
 
@@ -1391,7 +1391,7 @@ export const howToGuide = [
     {
       type: `text`,
       content: `The Virginia state tax rates vary between 2 and 5.75 percent.`,
-      marginBottom: 16,
+      marginBottom: 48,
     },
     {
       type: `header`,
@@ -1432,15 +1432,15 @@ export const howToGuide = [
       bottomMargin: 48,
     },
     {
-        type: `header`,
-        content: `Sales Tax Rates for Your Virginia LLC`,
-        size: 3,
-        marginBottom: 24,
-      },
-      {
-        type: `text`,
-        content: `Sales tax rates do vary between states, counties and cities. Typically, the state will set a base sales tax rate, then specific counties and cities may levy small additional sales tax amounts on top of that.`,
-        marginBottom: 16,
+      type: `header`,
+      content: `Sales Tax Rates for Your Virginia LLC`,
+      size: 3,
+      marginBottom: 24,
+    },
+    {
+      type: `text`,
+      content: `Sales tax rates do vary between states, counties and cities. Typically, the state will set a base sales tax rate, then specific counties and cities may levy small additional sales tax amounts on top of that.`,
+      marginBottom: 48,
     },
     {
       type: `header`,
@@ -1451,13 +1451,13 @@ export const howToGuide = [
     {
       type: `text`,
       content: `There are a couple different federal taxes that every LLC will need to pay, including Virginia LLCs. These are self-employment tax and federal income tax, which are taxed as “pass-through” income via your tax return forms.`,
-      marginBottom: 48,
+      marginBottom: 32,
     },
     {
       type: `header`,
       content: `Virginia LLC Federal Self-Employment Tax`,
       size: 4,
-      marginBottom: 24,
+      marginBottom: 16,
     },
     {
       type: `text`,
@@ -1479,14 +1479,14 @@ export const howToGuide = [
           `On profits of $160,000, you would pay self-employment tax of $24,480`,
         ],
       },
-      marginBottom: 48,
+      marginBottom: 32,
       color: color.orange3,
     },
     {
       type: `header`,
       content: `Pay Less Self-Employment Tax by Treating Your Virginia LLC as an S Corporation`,
       size: 4,
-      marginBottom: 24,
+      marginBottom: 16,
     },
     {
       type: `text`,
@@ -1510,13 +1510,13 @@ export const howToGuide = [
     {
       type: `text`,
       content: `Speak to your accountant for more information on reducing your Virginia LLC self-employment tax through an S Corporation tax election.`,
-      marginBottom: 48,
+      marginBottom: 32,
     },
     {
       type: `header`,
       content: `Virginia LLC Federal Income Tax`,
       size: 4,
-      marginBottom: 24,
+      marginBottom: 16,
     },
     {
       type: `text`,
@@ -1537,46 +1537,46 @@ export const howToGuide = [
     {
       type: `text`,
       content: `If you pay employees, there are some slightly different tax implications. Speak to your accountant to get clear guidance for your own unique situation.`,
-      marginBottom: 48,
+      marginBottom: 32,
     },
     {
       type: `header`,
       content: `Employer Payroll Tax Withholding for Your Virginia LLC `,
       size: 4,
-      marginBottom: 24,
+      marginBottom: 16,
     },
     {
       type: `text`,
       content: `All employers must collect and withhold payroll tax from their employees when they receive their salaries. You would normally withhold 7.65 percent of the taxable salary that you pay to your employees.`,
-      marginBottom: 48,
+      marginBottom: 32,
     },
     {
       type: `header`,
       content: `Employer Federal and State Tax Withholding for Your Virginia LLC`,
       size: 4,
-      marginBottom: 24,
+      marginBottom: 16,
     },
     {
       type: `text`,
       content: `You may also choose to withhold federal and Virginia state income tax on the wages you pay to employees. Speak to your accountant for more information.`,
-      marginBottom: 48,
+      marginBottom: 32,
     },
     {
       type: `header`,
       content: `Employees May Need to File Tax Returns`,
       size: 4,
-      marginBottom: 24,
+      marginBottom: 16,
     },
     {
       type: `text`,
       content: `Regardless of whether you withhold federal and Virginia state income tax, your employees may need to file their own tax returns.`,
-      marginBottom: 48,
+      marginBottom: 32,
     },
     {
       type: `header`,
       content: `Virginia LLC Employee Insurance and Other Requirements`,
       size: 4,
-      marginBottom: 24,
+      marginBottom: 16,
     },
     {
       type: `text`,
@@ -1589,24 +1589,24 @@ export const howToGuide = [
         text: `Get more requirements from the Virginia Department of Labor and Industry website.`,
         url: `http://www.vwc.state.va.us/sites/default/files/documents/Employer-FAQs_1.pdf`,
       },
-      bottomMargin: 48,
+      bottomMargin: 32,
     },
     {
       type: `header`,
       content: `Other Taxes and Duties for Your Virginia LLC`,
       size: 4,
-      marginBottom: 24,
+      marginBottom: 16,
     },
     {
       type: `text`,
       content: `Depending on the industry you are in, your Virginia LLC may be liable for certain other taxes and duties. For example, if you sell gasoline you may need to pay a tax on any fuel you sell. Likewise, if you import or export goods, you may need to pay certain duties. Speak to your accountant about any other taxes you may need to withhold or pay.`,
-      marginBottom: 48,
+      marginBottom: 32,
     },
     {
       type: `header`,
       content: `Estimated Taxes for Your Virginia LLC`,
       size: 4,
-      marginBottom: 24,
+      marginBottom: 16,
     },
     {
       type: `text`,
@@ -1655,7 +1655,7 @@ export const howToGuide = [
           },
         ],
       },
-      marginBottom: 0,
+      marginBottom: 48,
     },
   ];
 

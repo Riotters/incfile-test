@@ -136,7 +136,7 @@ export const howToGuide = [
   {
     type: `text`,
     content: `A regular Colorado LLC is suitable for most business needs, but you also have a few other options to incorporate a special type of LLC.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `accordion`,
@@ -292,7 +292,7 @@ export const namingYourBusiness = [
   {
     type: `text`,
     content: `Once you’ve decided on a name for your LLC and checked business name availability, you’ll need to meet Colorado Secretary of State naming rules. These do vary from state to state — we’ve got general naming rules below, as well as naming rules specific to LLC businesses formed in CO.`,
-    marginBottom: 24,
+    marginBottom: 48,
   },
   {
     type: `header`,
@@ -309,7 +309,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Your LLC Business Name Must Be Unique`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -320,12 +320,12 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Your LLC Business Name Must Not Be Confusable With Another Business Name`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `It’s not enough for your CO LLC name to be unique. It also cannot be similar to the name of another corporation or LLC in Colorado. For example, you cannot use the following factors to say your name is different from the name of another business:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -343,7 +343,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Your LLC Business Name Must Contain Certain Words`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -354,12 +354,12 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Your LLC Business Name May Have Other General Restrictions`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `Most states will not allow you to form LLCs with names that:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -407,7 +407,7 @@ export const namingYourBusiness = [
   {
     type: `text`,
     content: `Once you’ve searched for your Colorado business name, checked availability, followed the naming rules and decided whether you need a fictitious name, you can register your CO LLC name. There are a couple of ways to do this.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `numeric-list`,
@@ -473,7 +473,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Trademarks and Service Marks`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -487,18 +487,18 @@ export const namingYourBusiness = [
       url: `/trademark-name-search/`,
     },
     theme: `primary48`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Find the Perfect Name for Your Colorado LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `The perfect business name can be elusive. We have a complete guide to choosing the right business name, but basically, you'll want to choose a name that will:`,
-    marginBottom: 20,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -509,7 +509,7 @@ export const namingYourBusiness = [
              `Best represent your product or services`,
              `Not be used by another business`],
     },
-    marginBottom: 40,
+    marginBottom: 24,
     color: color.orange3,
   },
   {
@@ -518,7 +518,7 @@ export const namingYourBusiness = [
       text: `Incfile guide to choosing a business name`,
       url: `/blog/post/llc-name-search-50-states/`,
     },
-    marginBottom: 30,
+    marginBottom: 0,
   },
 ];
 
@@ -564,7 +564,7 @@ export const registeredAgent = [
   {
     type: `text`,
     content: `There are certain rules that you must follow when you’re appointing a Colorado Registered Agent service for your business.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -575,7 +575,7 @@ export const registeredAgent = [
              `The Statutory Agent must have a physical street address in Colorado, not a P.O. Box`,
              `The CO Registered Agent must be available in person during normal business hours to sign for any correspondence`],
     },
-    marginBottom: 16,
+    marginBottom: 24,
     color: color.green3,
   },
   {
@@ -592,7 +592,7 @@ export const registeredAgent = [
   {
     type: `text`,
     content: `What can you expect from your Colorado Registered Agent? Their main function is to accept official documents and correspondence from the CO Secretary of State.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -621,7 +621,7 @@ export const registeredAgent = [
   {
     type: `text`,
     content: `Incfile is authorized to conduct business in Colorado and can legally act as your Registered Agent.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -633,7 +633,7 @@ export const registeredAgent = [
              `We forward all correspondence to an address you choose`
             ],
     },
-    marginBottom: 0,
+    marginBottom: 24,
     color: color.orange3,
   },
   {
@@ -654,40 +654,40 @@ export const registeredAgent = [
   {
     type: `text`,
     content: `You can appoint a Registered Agent when you first incorporate your Colorado LLC or at any point after that. Here’s how to go about it.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Assign Your Colorado Registered Agent When You Form Your CO LLC`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `Your business needs to have a Colorado Registered Agent Service as soon as it’s formed. You can achieve this through one of the following methods.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `File Articles of Organization With the Colorado Secretary of State`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `You will need to include details of your Registered Agent in your Articles of Organization. This is the form that you file with the CO Secretary of State to formally create your business.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Incorporate Through Incfile and Get a Free Colorado Registered Agent`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `When you incorporate through us, we complete and file your Articles of Organization based on the information you’ve provided. Additionally, we give you a free Colorado Registered Agent service for the first year, and we’ll include details of your CO Registered Agent in the form that we file.`,
-    marginBottom: 0,
+    marginBottom: 16,
   },
   {
     type: `button`,
@@ -713,23 +713,23 @@ export const registeredAgent = [
     type: `header`,
     content: `Choose a Registered Agent Service and File a Statement of Change With the Colorado Secretary of State`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `Once you’ve chosen a new Colorado Registered Agent, you can complete a Statement of Change. Once you’ve filled it out, send it to the secretary of state so they can update your records.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Sign up for Incfile’s Colorado Registered Agent Service, and We’ll File the Change on Your Behalf`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `When you choose to use our CO Registered Agent service, we take care of all the form filling and filing for you. We’ll collect important information about your business, complete the form on your behalf and send it to the Colorado Secretary of State. We’ll let you know once we officially become your Registered Agent.`,
-    marginBottom: 0,
+    marginBottom: 16,
   },
   {
     type: `button`,
@@ -738,7 +738,7 @@ export const registeredAgent = [
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
@@ -765,7 +765,7 @@ export const registeredAgent = [
   {
     type: `text`,
     content: `What happens if you choose not to assign or provide details of a Registered Agent to the Colorado Secretary of State?`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -788,7 +788,7 @@ export const registeredAgent = [
   {
     type: `text`,
     content: `If you have an address in Colorado, you can choose to be the Registered Agent for your LLC.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -837,7 +837,7 @@ export const registeredAgent = [
     type: `header`,
     content: `Useful Resources for Colorado Registered Agent Services`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -878,10 +878,10 @@ export const feesAndRequirments = [
   {
     type: `text`,
     content: `To create your business in Colorado, you’ll file an LLC with the CO Secretary of State and pay an associated LLC formation fee. Every state has different LLC filing fees and filing times. Here is the current information for Colorado:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
-    type: `table`,
+    type: `table-simple`,
     content: {
       headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
       rows: [[`$50`, `5 Business Days`, `1 Business days`]],
@@ -901,7 +901,7 @@ export const feesAndRequirments = [
       text: `Compare State Filing Prices`,
       url: `/state-filing-fees/`,
     },
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -911,7 +911,7 @@ export const feesAndRequirments = [
   {
     type: `text`,
     content: `Some states allow you to form your LLC more quickly by paying a rush fee. You can <a href="/state-filing-times/">compare state filing times and fees here, including expedited fees for Colorado.</a>.`,
-    marginBottom: 0,
+    marginBottom: 16,
   },
   {
     type: `button`,
@@ -931,7 +931,7 @@ export const feesAndRequirments = [
   {
     type: `text`,
     content: `Every Colorado LLC should have a unique Employer Identification Number (EIN). These are provided by the Internal Revenue Service, and you use them when filing taxes, opening a business bank account and paying employees. You can get one yourself at no cost from the IRS or have Incfile obtain one on your behalf.`,
-    marginBottom: 0,
+    marginBottom: 16,
   },
   {
     type: `button`,
@@ -951,7 +951,7 @@ export const feesAndRequirments = [
   {
     type: `text`,
     content: `If you’re expanding your Colorado LLC beyond the borders of the state, you will need a Foreign Qualification or Certificate of Authority to operate in another state. These are typically necessary if you have a physical presence, employees or banking in a different state than Colorado. Fees and requirements for foreign qualifications depend on each state’s rules. Incfile provides a complete Foreign Qualification service for any state.`,
-    marginBottom: 0,
+    marginBottom: 16,
   },
   {
     type: `button`,
@@ -971,7 +971,7 @@ export const feesAndRequirments = [
   {
     type: `text`,
     content: `Colorado requires you to file an Annual Report with the secretary of state. When you file your CO LLC Annual Report, you will need to pay a fee. Here are the annual filing requirements for Colorado:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -992,7 +992,7 @@ export const feesAndRequirments = [
   {
     type: `text`,
     content: `Incfile can also complete and file your Colorado Annual Report on your behalf.`,
-    marginBottom: 0,
+    marginBottom: 16,
   },
   {
     type: `button`,
@@ -1012,7 +1012,7 @@ export const feesAndRequirments = [
   {
     type: `text`,
     content: `Some CO LLCs will need certain business licenses and permits from federal, state and regional organizations. These permits and licenses will have associated fees that you’ll pay on a one-off or regular basis. `,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -1038,7 +1038,7 @@ export const feesAndRequirments = [
   {
     type: `text`,
     content: `Remember that operating your business without the required licenses can expose you to risks and fines from federal, Colorado and local governments.`,
-    marginBottom: 0,
+    marginBottom: 16,
   },
   {
     type: `button`,
@@ -1085,7 +1085,7 @@ export const feesAndRequirments = [
   {
     type: `text`,
     content: `If you want your CO business to trade under a different name, you can file a form with the Colorado Secretary of State. You will need to pay a Colorado filing fee. Incfile can file this form on your behalf.`,
-    marginBottom: 0,
+    marginBottom: 16,
   },
   {
     type: `button`,
@@ -1105,7 +1105,7 @@ export const feesAndRequirments = [
   {
     type: `text`,
     content: `Your Colorado LLC needs a Registered Agent, which must be appointed when you first incorporate your LLC. You can also switch to a new CO Registered Agent later. Incfile provides a complete Colorado Registered Agent service.`,
-    marginBottom: 0,
+    marginBottom: 16,
   },
   {
     type: `button`,
@@ -1136,7 +1136,7 @@ export const feesAndRequirments = [
   {
     type: `text`,
     content: `Your business formation documents state certain facts about your Colorado business when it was originally formed. Over time, these facts might change — if they do, you need to file a Statement of Change with the Colorado Secretary of State. You can do this yourself or have Incfile complete the filing on your behalf.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -1146,7 +1146,7 @@ export const feesAndRequirments = [
              `Changing the business address of your LLC`,
              `Altering the stated business activities of your Colorado LLC`],
     },
-    marginBottom: 0,
+    marginBottom: 16,
     color: color.orange3,
   },
   {
@@ -1167,7 +1167,7 @@ export const feesAndRequirments = [
   {
     type: `text`,
     content: `Some organizations will request that you prove your Colorado LLC’s compliance with laws and tax requirements. If you need to prove you have met your commitments, you will need a “Certificate of Good Standing” from the Colorado Secretary of State. Incfile can obtain a certificate on your behalf.`,
-    marginBottom: 0,
+    marginBottom: 16,
   },
   {
     type: `button`,
@@ -1176,7 +1176,7 @@ export const feesAndRequirments = [
       url: `/manage-your-company/certificate-of-good-standing/`,
     },
     theme: `primary48`,
-    marginBottom: 48,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1249,7 +1249,7 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `The profits of a Colorado LLC are not taxed at the business level like those of C Corporations. Instead, taxes for a Colorado LLC work as follows:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `numeric-list`,
@@ -1337,7 +1337,7 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the CO Department of Revenue. Colorado sales tax is collected at the point of purchase. Colorado sales tax rates do vary depending on the region, county or city where you are located.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -1383,7 +1383,7 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `There are a couple different federal taxes that every LLC will need to pay, including Colorado LLCs. These are self-employment tax and federal income tax, which are taxed as “pass-through” income via your tax return forms.`,
-    marginBottom: 16,
+    marginBottom: 48,
   },
   {
     type: `header`,
@@ -1399,7 +1399,7 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -1468,46 +1468,46 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `If you pay employees, there are some slightly different tax implications. Speak to your accountant to get clear guidance for your own unique situation.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Colorado LLC Employer Payroll Tax Withholding`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `All employers must collect and withhold payroll tax from their employees when they receive their salaries. You would normally withhold 7.65 percent of the taxable salary that you pay to your employees.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Colorado LLC Federal and State Tax Withholding `,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `You may also choose to withhold federal and Colorado state income tax on the wages you pay to employees. Speak to your accountant for more information.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Employees May Need to File Tax Returns`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `Regardless of whether you withhold federal and Colorado state income tax, your employees may need to file their own tax returns.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Colorado LLC Employee Insurance and Other Requirements`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1539,7 +1539,7 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `Most Colorado LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
