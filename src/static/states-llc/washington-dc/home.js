@@ -65,32 +65,32 @@ export const howToGuide = [
     content: {
       items: [
         {
-          question: `<b>STEP 1:</b> Gather Information for Your Members`,
+          question: `STEP 1: Gather Information for Your Members`,
           answer: `First, you need to gather basic information about your LLC, including the names and addresses of the managers or members. The LLC members are typically the people who own and run the business. They are also the ones who can take profits out of the business to pay themselves.`,
         },
         {
-          question: `<b>STEP 2:</b> Search for and Choose a Unique Business Name for Your Washington DC LLC`,
+          question: `STEP 2: Search for and Choose a Unique Business Name for Your Washington DC LLC`,
           answer: `<p>You will need a distinctive and original name for your Washington DC LLC that’s not used by any other business in DC. To find out if another company is using your chosen business name, carry out a Washington DC business entity name search on the DC Department of Consumer and Regulatory Affairs website.</p>
                    <p>There are a few rules you’ll need to follow when choosing an LLC name. You can find out more in our guide to searching for and naming your Washington DC LLC.</p>
                     <p><a href="/washington-dc-llc/how-to-name-your-llc/">Learn about Washington DC LLC business naming rules</a>.</p>`,
         },
         {
-          question: `<b>STEP 3:</b> Provide an Official Address for Your DC LLC`,
+          question: `STEP 3: Provide an Official Address for Your DC LLC`,
           answer: `Every Washington DC LLC must have a designated street address. That could be your home address (if you’re running the company from your residence), your company’s office building or any physical address of your preference.`,
         },
         {
-          question: `<b>STEP 4:</b> Assign a Registered Agent for Your Washington DC LLC`,
+          question: `STEP 4: Assign a Registered Agent for Your Washington DC LLC`,
           answer: `<p>Every LLC must have a “Registered Agent.” This is an official position; the Registered Agent is someone who receives official legal and tax correspondence and has responsibility for filing reports with the Washington DC Department of Consumer and Regulatory Affairs.</p>
                   <p>This position can be filled by you, another manager in the business or a dedicated Registered Agent service. Your Registered Agent must have a physical street address in Washington DC and must be present to receive important documents for your company during business hours.</p>
                   <p>At Incfile, all of our packages include a Washington DC Registered Agent service that is free for the first year and just $119 per year afterward. We also have a dashboard where you can log in and easily view any document your Registered Agent has received on your behalf.</p>
                   <p><a href="/washington-dc-llc/registered-agents-washington-dc-llc/">Learn more about Washington DC Registered Agents</a></p>`,
         },
         {
-          question: `<b>STEP 5:</b> Get an Employee Identification Number (EIN) From the Internal Revenue Service`,
+          question: `STEP 5: Get an Employee Identification Number (EIN) From the Internal Revenue Service`,
           answer: `You will need an EIN to identify your business to the IRS. You use this number when filing and paying taxes or when submitting payroll information and payments for your employees. You can obtain one directly from the IRS, or we can get one for you as part of the Washington DC LLC business formation process.`,
         },
         {
-          question: `<b>STEP 6:</b> File Articles of Organization with the Washington DC Department of Consumer and Regulatory Affairs`,
+          question: `STEP 6: File Articles of Organization with the Washington DC Department of Consumer and Regulatory Affairs`,
           answer: `<p>Once you've gathered all the information for your Washington DC LLC, you’ll need to file a formal document with the DC Department of Consumer and Regulatory Affairs. This document is known as your “Articles of Organization,” and filing the document creates your Washington DC LLC. Here’s what is typically included:</p>
           <ul>
           <li> Your business name and address</li>
