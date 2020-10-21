@@ -24,16 +24,16 @@ import OvalSVG from "../images/ovals/business-checklist-related-articles-top-rig
 import {ThankYouContent} from "../atomic/partials/thank-you-modal-content";
 
 class BusinessChecklist extends React.Component {
-  constructor(props) {
-    super(props);
+    constructor(props) {
+        super(props);
 
-    this.state = {
-      modalVisible: false,
-    };
+        this.state = {
+        modalVisible: false,
+        };
 
-    this.popup = this.popup.bind(this);
-    this.postdownload = this.postdownload.bind(this);
-  }
+        this.popup = this.popup.bind(this);
+        this.postdownload = this.postdownload.bind(this);
+    }
 
     postdownload() {
         this.setState({
@@ -42,58 +42,63 @@ class BusinessChecklist extends React.Component {
         });
     }
 
-  popup(e) {
-      if (!e.target.className.includes("modal-overlay") && !e.target.className.includes("modal-close") &&
-          this.state.modalVisible === true)
-          return;
+    popup(e) {
+        if (!e.target.className.includes("modal-overlay") && !e.target.className.includes("modal-close") &&
+            this.state.modalVisible === true)
+            return;
 
-    this.setState({
-      modalVisible: !this.state.modalVisible,
-    });
-  }
+        this.setState({
+            modalVisible: !this.state.modalVisible,
+        });
+    }
 
-  render() {
-      let modalClases = [ "lightbox-content" ];
-      if(this.state.formSubmitted) modalClases.push("form-submitted");
+    render() {
+        let modalClases = [ "lightbox-content" ];
+        if(this.state.formSubmitted) modalClases.push("form-submitted");
 
-    return (
-      <Layout>
-        <SEO title="How to Start a Business | Start a Business Checklist" description="It’s time to bring your ideas and inspiration to life. Our straightforward guide helps you get your business off the ground, fast. Read more." />
-        <Top imageName="mrs-bulb-business-checklist" imageAlt="Mrs Bulb and with checklist" ovalColor="green" contentWidth={700}>
-          <Heading size={1}>{top.header}</Heading>
-          <Paragraph big>{top.text}</Paragraph>
-          <Buttonsbox>
-            <Button content={top.buttons[0]} theme="primary56" arrow />
-            <Button content={top.buttons[1]} theme="secondary56" onClick={this.popup} margin="0 0 0 15px" arrow />
-          </Buttonsbox>
-          <RatingRow>
-            <CartBlock />
-            <RatingBlock />
-          </RatingRow>
-        </Top>
-        <About content={about} />
-        <ChecklistSection content={checks} buttonAction={this.popup} />
+        return (
+            <Layout>
+                <SEO title="How to Start a Business | Start a Business Checklist" description="It’s time to bring your ideas and inspiration to life. Our straightforward guide helps you get your business off the ground, fast. Read more." />
+                <Top imageName="mrs-bulb-business-checklist" imageAlt="Mrs Bulb and with checklist" ovalColor="green" contentWidth={700}>
+                    <Heading size={1}>{top.header}</Heading>
+                    <Paragraph big>{top.text}</Paragraph>
+                    <Buttonsbox>
+                        <Button content={top.buttons[0]} theme="primary56" arrow />
+                        <Button content={top.buttons[1]} theme="secondary56" onClick={this.popup} margin="0 0 0 15px" arrow />
+                    </Buttonsbox>
+                    <RatingRow>
+                        <CartBlock />
+                        <RatingBlock />
+                    </RatingRow>
+                </Top>
+                <About content={about} />
+                <ChecklistSection content={checks} buttonAction={this.popup} />
 
-        <Wrapper>
-          <Oval className="oval" height="341" width="341" top="20" right="0">
-            <OvalSVG />
-          </Oval>
-          <Articles />
-        </Wrapper>
-        <LightBoxModal visible={this.state.modalVisible} onClick={this.popup} className="modal-overlay">
-          <LightBoxContent style={{ pointerEvents: "all" }} class={modalClases.join(" ")}>
-              {!this.state.formSubmitted && (
-                  <BusinessChecklistForm content={form} postDownloadAction={this.postdownload.bind(this)} />
-              )}
-              {this.state.formSubmitted && (
-                  <ThankYouContent content={thanks_form} modalExit={this.popup.bind(this) } />
-              )}
-          </LightBoxContent>
-        </LightBoxModal>
-      </Layout>
-    );
-  }
+                <Wrapper>
+                    <Oval className="oval" height="341" width="341" top="20" right="0">
+                        <OvalSVG />
+                    </Oval>
+                    <Articles />
+                </Wrapper>
+                <LightBoxModal visible={this.state.modalVisible} onClick={this.popup} className="modal-overlay">
+                    <LightBoxContent style={{ pointerEvents: "all" }} class={modalClases.join(" ")}>
+                        {!this.state.formSubmitted && (
+                            <BusinessChecklistForm content={form} postDownloadAction={this.postdownload.bind(this)} />
+                        )}
+                        {this.state.formSubmitted && (
+                            <ThankYouContent content={thanks_form} modalExit={this.popup.bind(this)} />
+                        )}
+                    </LightBoxContent>
+                </LightBoxModal>
+            </Layout>
+        );
+    };
 }
+
+const Wrapper = styled.div`
+  position: relative;
+  width: 100%;
+`;
 
 const LightBoxModal = styled.div`
   position: fixed;
@@ -108,11 +113,6 @@ const LightBoxModal = styled.div`
   background: rgba(0, 0, 0, 0.8);
   opacity: ${(props) => (props.visible ? "1" : "0")};
   visibility: ${(props) => (props.visible ? "visible" : "hidden")};
-`;
-
-const Wrapper = styled.div`
-  position: relative;
-  width: 100%;
 `;
 
 const LightBoxContent = styled.div`

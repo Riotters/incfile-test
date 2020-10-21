@@ -3,7 +3,6 @@ import {Paragraph} from "../atoms/typography/paragraph";
 import Button from "../molecules/buttons/button";
 import React from "react";
 import styled from "styled-components"
-import Whitebox from "../atoms/boxes/white-box";
 
 const Wrapper = styled.div`
     background-color: #fff;

@@ -47,7 +47,7 @@ import CorporationNameIcon from "../images/icons/icon-learning-center-color-busi
 
 const AlaskaCorporation = () => (
   <Layout>
-    <SEO title="Form a Corporation in Arizona." description="Thinking of starting an S Corp, C Corp, or LLC in California? Learn about corporations in Arizona and decide which business type is right for you."" />
+    <SEO title="Form a Corporation in Arizona." description="Thinking of starting an S Corp, C Corp, or LLC in California? Learn about corporations in Arizona and decide which business type is right for you." />
     <Top imageName="mr-bulb-corporation-california-8302" imageAlt="Mrs Bulb and with checklist" ovalColor="purple-2" headlineWidth="560">
       <h1>{top.header}</h1>
       <p>{top.text}</p>
@@ -83,14 +83,16 @@ const AlaskaCorporation = () => (
               Choosing a Corporation Name
             </Heading>
             <Paragraph big>
-            Your new corporation’s name must be distinguishable from the name of any other registered or reserved Arizona business entity. It must also contain the words “association,” “company,” “corporation,” “incorporated,” or “limited,” an abbreviation of one of these terms, or an equivalent in another language.
+              Your new corporation’s name must be distinguishable from the name of any other registered or reserved Arizona business entity. It must also contain the words “association,” “company,” “corporation,” “incorporated,” or “limited,” an abbreviation of one of these terms, or an equivalent
+              in another language.
             </Paragraph>
             <Paragraph big style={{ marginBottom: "32px" }}>
-            Your new Arizona corporation‘s name may not contain language stating or implying that it is organized for a purpose other than one permitted by state law or stated in its articles of incorporation. The name is not permitted to include the terms “bank,” deposit,” “trust,” or “trust company,” either separately or in combination, to state or imply that the corporation will be engaged in the banking or trust business unless it is to be and becomes actively and substantially engaged in the banking or trust business.
+              Your new Arizona corporation‘s name may not contain language stating or implying that it is organized for a purpose other than one permitted by state law or stated in its articles of incorporation. The name is not permitted to include the terms “bank,” deposit,” “trust,” or “trust
+              company,” either separately or in combination, to state or imply that the corporation will be engaged in the banking or trust business unless it is to be and becomes actively and substantially engaged in the banking or trust business.
             </Paragraph>
             <Paragraph big style={{ marginBottom: "0" }}>
-            If your corporate name is not considered to be distinguishable from one already on file, it’s usually not enough to just change some punctuation, a definite or indefinite article (such as “a,” “an,” or “the”), or the status designator (“corporation,” “company,” “incorporated,” “limited,” etc.).
-Corporate names can be reserved with the state for up to 120 days at a time for $10.
+              If your corporate name is not considered to be distinguishable from one already on file, it’s usually not enough to just change some punctuation, a definite or indefinite article (such as “a,” “an,” or “the”), or the status designator (“corporation,” “company,” “incorporated,”
+              “limited,” etc.). Corporate names can be reserved with the state for up to 120 days at a time for $10.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -98,30 +100,37 @@ Corporate names can be reserved with the state for up to 120 days at a time for 
               Articles of Incorporation
             </Heading>
             <Paragraph big>
-            Arizona requires that a new corporation’s articles of incorporation must be filed by one or more of the incorporators (there must be at least one), along with a $60 fee, with the Arizona Corporation Commission. There are no eligibility prerequisites for an incorporator, and the incorporator’s only duty is to deliver the articles of incorporation and a certificate of disclosure to the Arizona Corporation Commission.
+              Arizona requires that a new corporation’s articles of incorporation must be filed by one or more of the incorporators (there must be at least one), along with a $60 fee, with the Arizona Corporation Commission. There are no eligibility prerequisites for an incorporator, and the
+              incorporator’s only duty is to deliver the articles of incorporation and a certificate of disclosure to the Arizona Corporation Commission.
             </Paragraph>
-            <Paragraph big>A Certificate of Disclosure for Business Corporations must be signed by the incorporator and submitted with the articles of incorporation. This document asks for information about criminal convictions, civil fraud actions, and prior corporate bankruptcies relating to any of the corporation’s founders, as well as the corporation’s fiscal year end.</Paragraph>
+            <Paragraph big>
+              A Certificate of Disclosure for Business Corporations must be signed by the incorporator and submitted with the articles of incorporation. This document asks for information about criminal convictions, civil fraud actions, and prior corporate bankruptcies relating to any of the
+              corporation’s founders, as well as the corporation’s fiscal year end.
+            </Paragraph>
             <Colorbox color={color.blue3} content={articlesOfIncorporation.box1} dotsColor={color.blue1} style={{ marginBottom: "65px" }} />
             <Colorbox color={color.orange3} content={articlesOfIncorporation.box2} dotsColor={color.orange1} style={{ marginBottom: "48px" }} />
-            <Paragraph big>Arizona requires new domestic corporations to publish their filed articles of incorporation in an approved general circulation newspaper, within 60 days of filing, in the county where the principal business office is located. This publication must be made in three consecutive issues. Then, within 90 days of filing, the new corporation must file an affidavit of publication with the state.</Paragraph>
+            <Paragraph big>
+              Arizona requires new domestic corporations to publish their filed articles of incorporation in an approved general circulation newspaper, within 60 days of filing, in the county where the principal business office is located. This publication must be made in three consecutive issues.
+              Then, within 90 days of filing, the new corporation must file an affidavit of publication with the state.
+            </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Registered Agent and Office
             </Heading>
             <Paragraph big>
-            Every Arizona corporation must have a “statutory” agent in the state (called a “registered” agent in most other states)-a natural person with a primary residence in Arizona, or a registered business entity authorized to conduct business in the state. The statutory agent is designated as the official recipient of administrative and legal correspondence from the state.
+              Every Arizona corporation must have a “statutory” agent in the state (called a “registered” agent in most other states)-a natural person with a primary residence in Arizona, or a registered business entity authorized to conduct business in the state. The statutory agent is designated
+              as the official recipient of administrative and legal correspondence from the state.
             </Paragraph>
-            <Paragraph big>
-            Arizona also requires that all corporations maintain a “known place of business”-called a “registered office” in most states-which may be the address of its statutory agent.
-            </Paragraph>
+            <Paragraph big>Arizona also requires that all corporations maintain a “known place of business”-called a “registered office” in most states-which may be the address of its statutory agent.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Bylaws
             </Heading>
             <Paragraph big>
-            A corporation must maintain its bylaws at its main executive office, but is not required to file them with the state. The incorporators or board of directors should adopt the corporation’s bylaws at its initial meeting-insuring that they do not conflict with the articles of incorporation-and keep them updated as time goes on. Bylaws describe the corporation’s basic operating principles from both the managerial and legal perspectives.
+              A corporation must maintain its bylaws at its main executive office, but is not required to file them with the state. The incorporators or board of directors should adopt the corporation’s bylaws at its initial meeting-insuring that they do not conflict with the articles of
+              incorporation-and keep them updated as time goes on. Bylaws describe the corporation’s basic operating principles from both the managerial and legal perspectives.
             </Paragraph>
             <Paragraph big style={{ fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
               Bylaws should include as a minimum:
@@ -156,10 +165,13 @@ Corporate names can be reserved with the state for up to 120 days at a time for 
               Directors
             </Heading>
             <Paragraph big>
-            The board of directors is responsible for making major decisions for the corporation. Your Arizona corporation must have at least one director. The articles of incorporation and/or the bylaws will often specify qualifications for directors. A director does not have to be a state resident or a shareholder of the corporation unless the articles of incorporation or bylaws so prescribe.
+              The board of directors is responsible for making major decisions for the corporation. Your Arizona corporation must have at least one director. The articles of incorporation and/or the bylaws will often specify qualifications for directors. A director does not have to be a state
+              resident or a shareholder of the corporation unless the articles of incorporation or bylaws so prescribe.
             </Paragraph>
             <Paragraph big>
-            Corporate officers’ positions and their duties are set forth in the bylaws, or else appointed by the board of directors in accordance with those bylaws. A duly appointed officer may appoint as many officers or assistant officers as are permitted by the bylaws or by the board of directors. One of the corporation’s officers is required to have the responsibility of preparing minutes of directors’ and shareholders’ meetings, as well as for authenticating the corporation’s records. An officer is allowed to simultaneously hold more than one office in a corporation.
+              Corporate officers’ positions and their duties are set forth in the bylaws, or else appointed by the board of directors in accordance with those bylaws. A duly appointed officer may appoint as many officers or assistant officers as are permitted by the bylaws or by the board of
+              directors. One of the corporation’s officers is required to have the responsibility of preparing minutes of directors’ and shareholders’ meetings, as well as for authenticating the corporation’s records. An officer is allowed to simultaneously hold more than one office in a
+              corporation.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -167,7 +179,7 @@ Corporate names can be reserved with the state for up to 120 days at a time for 
               Requirement Reports
             </Heading>
             <Paragraph big style={{ marginBottom: "48px" }}>
-            Arizona corporations must file a report annually with the Arizona Corporation Commission in their anniversary month of the original filing.
+              Arizona corporations must file a report annually with the Arizona Corporation Commission in their anniversary month of the original filing.
             </Paragraph>
 
             <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
@@ -211,8 +223,14 @@ Corporate names can be reserved with the state for up to 120 days at a time for 
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Taxes
             </Heading>
-            <Paragraph big>Arizona has both a corporate income tax and a sales tax for businesses; actual rates depend on the type and amount of business activity. Arizona’s corporate tax structure consists of a flat rate of 6.968% on all corporate income, ranking 26th among states levying corporate income taxes.</Paragraph>
-            <Paragraph big>“S corporation” status is recognized by the State of Arizona. A “subchapter S” corporation or “S-Corporation” is one that chooses to be treated as a pass-through entity (the same way as a sole proprietorship or partnership) for tax purposes, meaning that the tax-related information for the “S-Corp” is filed as part of the owner’s individual income tax.</Paragraph>
+            <Paragraph big>
+              Arizona has both a corporate income tax and a sales tax for businesses; actual rates depend on the type and amount of business activity. Arizona’s corporate tax structure consists of a flat rate of 6.968% on all corporate income, ranking 26th among states levying corporate income
+              taxes.
+            </Paragraph>
+            <Paragraph big>
+              “S corporation” status is recognized by the State of Arizona. A “subchapter S” corporation or “S-Corporation” is one that chooses to be treated as a pass-through entity (the same way as a sole proprietorship or partnership) for tax purposes, meaning that the tax-related information for
+              the “S-Corp” is filed as part of the owner’s individual income tax.
+            </Paragraph>
           </PanelWrapper>
         </CollapseWrapper>
       </TabsSection>

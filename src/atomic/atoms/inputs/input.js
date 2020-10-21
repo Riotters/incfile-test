@@ -1,6 +1,7 @@
-import React from "react"
-import styled from "styled-components"
-import { color } from "../styles/colors"
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import { color } from "../styles/colors";
 
 const Wrapper = styled.input`
     width: 100%;
@@ -27,8 +28,25 @@ const Wrapper = styled.input`
     }
 `
 
-const Input = ({ className, placeholder, required, value, onChange, type, inputRef}) => (
-    <Wrapper className={className} placeholder={placeholder} required={required} ref={inputRef} value={value} onChange={onChange} type={type} />
-)
+const Input = ({ className, placeholder, name, id, required, value, onChange, type, inputRef,pattern }) => {
+    return (
+        <Wrapper
+            className={className}
+            placeholder={placeholder}
+            required={required}
+            ref={inputRef}
+            name={name}
+            id={id}
+            pattern={pattern}
+            value={value}
+            onChange={onChange}
+            type={type}
+        />
+    );
+};
 
 export default Input;
+
+Input.defaultProps = {
+    type: `text`
+  };

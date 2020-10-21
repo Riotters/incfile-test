@@ -16,7 +16,7 @@ export const top = {
           text4: `LLCs are also flexible with regard to how the owners are paid. For an LLC, if the members choose, the net income/profits of the LLC may be allocated to the members in different proportions to their ownership percentage in the LLC. This is different from a corporation, as corporations are required to distribute profits exactly in accordance with the proportion/percentage of ownership of each shareholder.`,
           link: {
               text: `Learn more about LLCs here`,
-              url: `/review-entity-types/llc`,
+              url: `/limited-liability-company/`,
           }
         },
         {
@@ -26,7 +26,7 @@ export const top = {
           text3: `Pass through taxation simply means that federal income tax is not assessed at the entity level; profits are distributed in the form of dividends and flow through to the individual tax returns of the shareholders, and the IRS taxes the shareholders at their individual income tax rate and not at the entity or corporation level. Unlike an LLC, Forming an S Corporation can give you the ability to minimize payroll and self employment taxes, resulting in significant savings in certain situations.`,
           link: {
             text: `Learn more about S-Corporations here`,
-            url: `/review-entity-types/s-corporation`,
+            url: `/what-is-s-corporation/`,
           }
         },
         {
@@ -35,7 +35,7 @@ export const top = {
           text2: `When you look at all of the requirements placed on C corporations, you might wonder why anyone would form one. The C-Corp does offer several unique benefits. While all business entities can provide fringe benefits to its owners and/or employees, the Corporation allows for a greater range of fringe benefits. Forming a C-Corp is also advantageous to corporate tax treatment and income splitting. The tax rate on corporate income is usually lower than the tax rate on personal income up to the first $75,000 in income. The owners can arrange salaries and bonuses in conjunction with retained corporate earnings to lower their overall tax rate.`,
           link: {
             text: `Find more details on C-Corporations here`,
-            url: `/review-entity-types/c-corporation`,
+            url: `/what-is-c-corporation/`,
           }
         },
         {
@@ -44,7 +44,7 @@ export const top = {
           text2: `Despite this entity’s name, a Non Profit Corporation may generate a profit. Non Profit does not literally mean that a your corporation cannot make a profit. A Non Profit Corporation can acquire more income than it spends on its exempt purpose. This profit can be utilized for operating expenses, including salaries. However, a Nonprofit Corporation may not utilize its income to profit any director or officer.`,
           link: {
             text: `Learn more about Non Profit Corporations here`,
-            url: `/review-entity-types/nonprofit`,
+            url: `/what-is-non-profit-corporation/`,
           }
         },
       ],
@@ -280,8 +280,8 @@ export const top = {
     text: `No Contracts. No Surprise.`,
     text2: `Only $0 + State Fee to Launch Your Business.`,
     button: {
-      text: `launch your business`,
-      url: `/`,
+      text: `Launch your business`,
+      url: `${process.env.ORDER_URL}/form-order-now.php`,
     },
   };
   
@@ -289,7 +289,7 @@ export const top = {
     header: `Launch Your Business Only $0 + State Fee.`,
     button: {
       text: `See Detailed Pricing`,
-      url: `/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php`,
     }
   }
   
