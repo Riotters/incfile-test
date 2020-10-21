@@ -359,27 +359,29 @@ Documents`,
 
 export const articlesOfIncorporation = {
     box1: {
-        header: `The articles must include:`,
+        header: `The certificate must specify:`,
         list: [
-            `The corporation’s name`,
-            `Its business purpose, which can be the general statement: “the transaction of any lawful business allowed by the Alaska Corporation Code”`,
-            `The name of the corporation’s initial registered agent`,
-            `The address of the corporation’s initial registered office`,
-            `The address of the corporation’s principal office`,
-            `Number of shares authorized for the corporation to issue (par value is not required to be designated)`,
-            `Whether the corporation has any alien (non-US citizen or a person without permanent US resident status, or non-US legal entities) affiliates (corporate directors, officers, shareholders, and other persons or entities that control or are controlled by a corporate entity)`,
-            `If the corporation has alien affiliates, their names and addresses`,
-            `The primary and secondary North American Industry Classification System (NAICS) Code Standard Industrial Codes (SICs) that most clearly describe the initial activities of your corporation`
+            `The name and address of each incorporator`,
+            `The principal corporate purpose (can be very brief; New Hampshire allows a corporation to be formed for any lawful business activity)`,
+            `The number of shares that the corporation is authorized to issue`,
         ]
     },
     box2: {
         header: `Some other provisions that aren’t required-but which may be included in the articles of incorporation-are:`,
         list: [
-            `The names and addresses of all directors`,
-            `Eligibility requirements to be a director`,
-            `Circumstances where shareholders can be liable for corporate debts`,
-            `Increased rights for or restrictions on shareholders, stock, or the board of directors`,
-            `Provisions for managing the business and regulating the affairs of the corporation`,
+            `There will be 10 or fewer owners of the corporation`,
+            `There will not be any published or circulated written advertising in order to ownership interests in the corporation`,
+            `All sales of ownership interests will be completed within 60 days of the formation of the corporation`,
+        ]
+    },
+    box3: {
+        header: `Some other provisions that aren’t required-but which may be included in the articles of incorporation-are:`,
+        list: [
+            `Names and addresses of the initial directors`,
+            `Regulations regarding the powers of the corporation, its board of directors, and shareholders`,
+            `A par value for authorized shares or classes of shares`,
+            `Shareholder liability for corporate debts in certain situations`,
+            `Limitations on a director’s or officer’s liability for money damages to the corporation or its shareholders in certain situations.`,
         ]
     }
 }

@@ -83,11 +83,13 @@ const AlaskaCorporation = () => (
               Choosing a Corporation Name
             </Heading>
             <Paragraph big>
-              Your new Alaska corporation‘s name cannot be the same as or deceptively similar to the name of any other Alaska business entity registered or reserved with the state. It also is not permitted to be the same as any non-registered business name that has been established in common law by
-              usage over a long period of time. The name must contain (at the end) the words “incorporated,” “corporation,” “limited,” or “company,” or an abbreviation of one of those terms.
+            Your North Dakota corporation’s name must be distinguishable from any other business entity name registered or reserved with the North Dakota Secretary of State. The name must contain the word “Corporation,” “Incorporated,” “Company,” or “Limited,” or one of the abbreviations “Corp.,” “Inc.,” “Co.,” or “Ltd.”
+            </Paragraph>
+            <Paragraph big>
+            It also is not allowed to include language that states or implies that the corporation is actually some other organization, or that it is organized for a purpose other than that permitted by state law and its articles of incorporation. The name must be in the English language or expressed in English letters and characters.
             </Paragraph>
             <Paragraph big style={{ marginBottom: "0" }}>
-              The name may not include language that states or implies that the corporation is organized for some purpose other than stated in its articles of incorporation, or that it is a municipality (city, borough, or village). However, the name is allowed to contain the name of a municipality.
+            An available corporate name can be reserved for a year for a $10 fee.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -95,24 +97,27 @@ const AlaskaCorporation = () => (
               Articles of Incorporation
             </Heading>
             <Paragraph big>
-              So that your Alaska corporation can actually start doing business in the state, you must file articles of incorporation with the Division of Banking, Securities, and Corporations in the Alaska Department of Commerce, Community, and Economic Development (DCCED). The filing fee is $250,
-              which includes a $100 biennial license fee that will be an ongoing requirement.
+            North Dakota requires that new corporations file articles of incorporation with the Corporations Division of the state Secretary of State’s office. The articles are delivered by one or more incorporators, whose primary duties are to sign the articles and deliver the original and an exact copy of the articles to the Corporations Division. The incorporator must be a natural person at least 18 years old, but does not need to be a director, officer, or shareholder of the corporation.
             </Paragraph>
-            <Paragraph big>Your new LLC’s articles of incorporation must be signed by at least one person, called an incorporator, who must be at least 18 years old and a natural person (not a business entity). They must sign the articles and deliver them to the DCCED.</Paragraph>
 
             <Colorbox color={color.blue3} content={articlesOfIncorporation.box1} dotsColor={color.blue1} style={{ marginBottom: "65px" }} />
 
+
+            <Paragraph big>Since North Dakota allows a corporation to be formed for any lawful business activity, a general statement in the articles granting broad powers is acceptable-for example, to state that your new corporation is being formed for “general business purposes” is enough for most situations.</Paragraph>
+            <Paragraph big>However, providing a specific business purpose in your articles can help the Corporations Division determine whether you are entitled to use your proposed corporate name if it is similar to that of another business entity. Even if your name is similar to the name of another corporation, the state filing office may let you use the name if the specific purpose of your corporation is significantly different from the other corporation’s purpose. If you provide a specific purpose, though, you should also include a general purpose-for example, “to sell retail repair parts and for any lawful purpose.”</Paragraph>
+            <Paragraph big>North Dakota statutes do not allow a business corporation to be formed for the purpose of conducting business in the banking, farming, ranching, or insurance businesses. A business corporation may be an insurance agency that sells or services insurance products, but it cannot be the insurer that actually backs the claims.</Paragraph>
+            <Paragraph big>Also, North Dakota prohibits a corporation from including provisions in its articles of incorporation that limit the right of cumulative voting as guaranteed by the state constitution, or that authorize the issuance of stocks or bonds that are in violation of the state constitution.</Paragraph>
+            
             <Colorbox color={color.orange3} content={articlesOfIncorporation.box2} dotsColor={color.orange1} style={{ marginBottom: "48px" }} />
 
-            <Paragraph big>If the initial articles do not name directors for the corporation, the incorporators may elect directors or amend the bylaws.</Paragraph>
+            <Paragraph big>The filing fee for your articles of incorporation is $90 minimum-$30 for the articles themselves, $10 for filing the Registered Agent Consent to Serve form, plus a minimum $50 license fee. The fee depends on the authorized capital specified in your articles. The license fee is $10 for each $10,000 of capital or portion thereof. You will have to pay at least the minimum license fee of $50, so you should authorize at least $50,000 of capital. Within that range, for shares without par value, multiply the number of no-par shares authorized in the articles by $1. For shares that do have a stated par value, multiply the par value amount of each share by the number of par value shares authorized.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Registered Agent and Office
             </Heading>
             <Paragraph big>
-              Alaska corporations must have a registered agent in the state-a person or office designated to receive official state administrative and legal correspondence. The agent must be either an adult who is a resident of Alaska whose business office is the same as the registered office, or it
-              may be a corporation whose business office is the same as the registered office.
+            The articles of incorporation should also include the name and address of your corporation’s initial registered agent-the person appointed to receive official legal and administrative correspondence from the state on behalf of your corporation. The registered agent must be either an individual who lives in North Dakota, or a corporation authorized to conduct business in the state. In either case, the agent’s business office must be the same as the corporation’s registered office.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -120,40 +125,33 @@ const AlaskaCorporation = () => (
               Bylaws
             </Heading>
             <Paragraph big>
-              Bylaws lay out the corporation’s basic operating principles from both the managerial and legal perspectives. A corporation must keep its bylaws available at its principal executive office, but is not required to file them with the state. The incorporators or board of directors should
-              adopt the corporation’s bylaws at their first meeting-insuring there is no conflict with the corporation’s articles of incorporation-and keep them updated as time goes on.
+            Corporations should keep a copy of their bylaws at their principal executive office, but they are not required to file those bylaws with the state. At the new corporation’s initial meeting, the incorporators or board of directors must adopt bylaws for the corporation and then keep them updated as time goes on.
             </Paragraph>
             <Paragraph big style={{ fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
-              Bylaws should include, at minimum:
+            Bylaws are a critically important document describing the corporation’s basic managerial and legal operating principles regarding such issues as:
             </Paragraph>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>What authority directors have, how many there are, and how long they serve</Paragraph>
+              <Paragraph bottomMargin={0}>Shareholders’ and directors’ meetings</Paragraph>
             </TextBoxed>
-
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>Duties and responsibilities of officers and how long they serve</Paragraph>
+              <Paragraph bottomMargin={0}>The authority, number, and tenure of directors in the board of directors</Paragraph>
             </TextBoxed>
-
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>How consensus on major decisions is reached, both with and without meetings</Paragraph>
+              <Paragraph bottomMargin={0}>Voting procedures</Paragraph>
             </TextBoxed>
-
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>How, when, and where shareholders’ and directors’ meetings are held</Paragraph>
+              <Paragraph bottomMargin={0}>The duties, responsibilities, and tenure of directors and officers</Paragraph>
             </TextBoxed>
-
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>How the corporation’s stock is issued</Paragraph>
+              <Paragraph bottomMargin={0}>How stock is issued</Paragraph>
             </TextBoxed>
-
-            <TextBoxed style={{ marginBottom: "48px" }}>
-              <Paragraph bottomMargin={0}>Requirements for publishing annual financial information to shareholders</Paragraph>
+            <TextBoxed style={{ marginBottom: "8px" }}>
+              <Paragraph bottomMargin={0}>How and when annual financial information is provided to shareholders</Paragraph>
             </TextBoxed>
 
             <Paragraph big>
-              Even though the corporation is not required to file its bylaws with the state, if the articles of incorporation don’t specify the number of directors, the bylaws must either state the exact number of directors or specify a minimum or maximum number of directors, along with the way that
-              shareholder or board approval will determine the exact number at a specified later date.
+            The right to adopt, amend, or repeal bylaws is vested in the board (subject to provisions in the articles of incorporation) and the stockholders. Unless the articles or bylaws provide otherwise, shareholders who hold five percent or more of the voting power of shares entitled to vote may propose a resolution for action by the shareholders to adopt, amend, or repeal bylaws which have been adopted, amended, or repealed by the board.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -161,12 +159,10 @@ const AlaskaCorporation = () => (
               Directors
             </Heading>
             <Paragraph big>
-              The board of directors has the responsibility of making the corporation’s major decisions. There must be at least one director; the number should be specified in the bylaws unless it is already set forth in the articles of incorporation. If no number is specified in either document,
-              the “default” number will be three. A change in the number of directors must be approved by a majority of the board, but such a change cannot shorten the term of any currently-serving director.
+            Corporate officers can either be listed in the bylaws or elected by the board in compliance with those bylaws. Officers must be individuals at least 18 years old. There must be at least a president, secretary, and treasurer. There may also be one or more vice presidents, as well as any other officers specified by the bylaws. Officers may appoint other officers as needed for the operation of the corporation, in accordance with the bylaws. Unless a different officer is designated by the bylaws or the board, the secretary or assistant secretary is responsible for preparing minutes of the directors’ and shareholders’ meetings and for maintaining and authenticating corporate records.
             </Paragraph>
             <Paragraph big>
-              Titles and duties of the corporation’s officers must be either listed in the bylaws or determined by the board of directors. Any two or more offices may be held by the same person, except the offices of president and secretary. When all of the issued and outstanding stock of the
-              corporation is owned by one person, the person may hold all or any combination of offices.
+            Multiple offices may be held by the same person unless the articles or bylaws state otherwise, but no individual is allowed to act in more than one officer capacity where the action of two or more officers is required.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -174,46 +170,49 @@ const AlaskaCorporation = () => (
               Requirement Reports
             </Heading>
             <Paragraph big style={{ marginBottom: "48px" }}>
-              Each Alaska corporation must file a biennial (every two years) report with the state before January 2 of each filing year, along with a $100 biennial license fee. The first report must be within six months of organization, but does not require the $100 fee because it is included in the
-              $250 fee at the time of incorporation.
+            North Dakota corporations must file an annual report with the state Secretary of State each year before August 2 (or before May 16 for foreign corporations), starting with the calendar year after the year of incorporation.
             </Paragraph>
 
             <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
-              The report must include:
+            The annual report must include:
             </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>What authority directors have, how many there are, and how long they serve</Paragraph>
+              <Paragraph bottomMargin={0}>The corporation’s name and its state or country of incorporation</Paragraph>
             </TextBoxed>
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The name and address of its registered agent and registered office</Paragraph>
+              <Paragraph bottomMargin={0}>The addresses of its principal and registered offices</Paragraph>
             </TextBoxed>
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The principal corporate address for foreign corporations</Paragraph>
+              <Paragraph bottomMargin={0}>The name of the corporation’s registered agent</Paragraph>
             </TextBoxed>
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The nature of the corporation’s business</Paragraph>
+              <Paragraph bottomMargin={0}>The names and addresses of all officers and directors</Paragraph>
             </TextBoxed>
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The names and addresses of the corporation’s directors and officers</Paragraph>
+              <Paragraph bottomMargin={0}>A statement of the aggregate number of authorized and issued shares, itemized by classes, par value, shares without par value, and series (if any) within a class</Paragraph>
             </TextBoxed>
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>An itemization of shares authorized to be issued by the corporation</Paragraph>
+              <Paragraph bottomMargin={0}>A statement of the value of all corporation-owned property</Paragraph>
             </TextBoxed>
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>An itemization of shares that have been issued to date</Paragraph>
+              <Paragraph bottomMargin={0}>The gross amount of corporate income for the preceding calendar year</Paragraph>
             </TextBoxed>
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>Information on all alien affiliates</Paragraph>
+              <Paragraph bottomMargin={0}>The gross amount of corporate income received at or from its places of business inside North Dakota</Paragraph>
             </TextBoxed>
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The name, address, and ownership percentage of each shareholder who owns more than five percent of the corporation’s stock</Paragraph>
+              <Paragraph bottomMargin={0}>A brief description of the character of the business</Paragraph>
             </TextBoxed>
+            <Paragraph big>
+            When a shareholder requests it in writing, North Dakota corporations are required to prepare an annual financial statement within 180 days of the close of the fiscal year. The corporation must furnish the report-which must include an annual income statement and a year-end balance sheet-to the shareholder within 10 business days of receiving the request.
+            </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Taxes
             </Heading>
-            <Paragraph big>Alaska imposes a corporate income tax similar to the federal corporate income tax, based on graduated tax rates. Alaska does recognize “S corporation” status.</Paragraph>
+            <Paragraph big>North Dakota’s corporate tax structure consists of five brackets. The top rate of 6.5 percent takes effect at $30,000 corporate income. Among states that levy corporate income taxes, North Dakota’s top rate ranks 30th nationally.</Paragraph>
+            <Paragraph big>However, North Dakota does recognize “S corp” status. A “subchapter S” corporation-frequently referred to as an “S corp”-is treated as a pass-through entity for tax purposes. The S corp does not file a tax return on its own behalf; instead, all tax-related data for the S corp is filed as part of the owner’s individual income tax. Therefore, the tax rate for an S corp will depend on the owner’s filing status and situation, as well as the level of income received.</Paragraph>
           </PanelWrapper>
         </CollapseWrapper>
       </TabsSection>

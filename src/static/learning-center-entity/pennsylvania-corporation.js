@@ -359,27 +359,27 @@ Documents`,
 
 export const articlesOfIncorporation = {
     box1: {
-        header: `The articles must include:`,
+        header: `The following information must be included in the articles of incorporation:`,
         list: [
-            `The corporation’s name`,
-            `Its business purpose, which can be the general statement: “the transaction of any lawful business allowed by the Alaska Corporation Code”`,
-            `The name of the corporation’s initial registered agent`,
-            `The address of the corporation’s initial registered office`,
-            `The address of the corporation’s principal office`,
-            `Number of shares authorized for the corporation to issue (par value is not required to be designated)`,
-            `Whether the corporation has any alien (non-US citizen or a person without permanent US resident status, or non-US legal entities) affiliates (corporate directors, officers, shareholders, and other persons or entities that control or are controlled by a corporate entity)`,
-            `If the corporation has alien affiliates, their names and addresses`,
-            `The primary and secondary North American Industry Classification System (NAICS) Code Standard Industrial Codes (SICs) that most clearly describe the initial activities of your corporation`
+            `The names and addresses of the incorporators.`,
+            `The street address and county of the corporation’s initial registered office.`,
+            `The name of the new corporation’s initial registered agent at that office.`,
+            `The mailing address of the corporation’s initial principal office (if different from the registered office).`,
+            `The number of shares the corporation is authorized to issue.`,
+            `The effective date of the articles, if later than the date of filing.`,
+            `A statement that the corporation will be organized on a non stock basis, if applicable.`,
+            `If organized on a stock share basis, the aggregate number of shares that the corporation is authorized to issue, a statement of the designations and relative rights of any class or series, and a statement of authority of the board of directors to change the attributes of any classes or series of stock.`,
+            `A statement that the corporation is incorporated under the provisions of the Pennsylvania Business Corporation Law of 1988.`,
         ]
     },
     box2: {
-        header: `Some other provisions that aren’t required-but which may be included in the articles of incorporation-are:`,
+        header: `Pennsylvania law also allows (but does not require) optional items to be included in the articles of incorporation for those corporations who wish to formally specify additional information, such as:`,
         list: [
-            `The names and addresses of all directors`,
-            `Eligibility requirements to be a director`,
-            `Circumstances where shareholders can be liable for corporate debts`,
-            `Increased rights for or restrictions on shareholders, stock, or the board of directors`,
-            `Provisions for managing the business and regulating the affairs of the corporation`,
+            `The names and addresses of the corporation’s initial directors and officers.`,
+            `The corporate purpose.`,
+            `The powers and constraints of the corporation, its board of directors, and shareholders.`,
+            `The par value of authorized shares or classes of shares.`,
+            `Provisions for or limitations on shareholder and/or director personal liability for corporate debts in certain situations.`,
         ]
     }
 }

@@ -359,27 +359,26 @@ Documents`,
 
 export const articlesOfIncorporation = {
     box1: {
-        header: `The articles must include:`,
+        header: `The following information must be included in the articles of incorporation:`,
         list: [
-            `The corporation’s name`,
-            `Its business purpose, which can be the general statement: “the transaction of any lawful business allowed by the Alaska Corporation Code”`,
-            `The name of the corporation’s initial registered agent`,
-            `The address of the corporation’s initial registered office`,
-            `The address of the corporation’s principal office`,
-            `Number of shares authorized for the corporation to issue (par value is not required to be designated)`,
-            `Whether the corporation has any alien (non-US citizen or a person without permanent US resident status, or non-US legal entities) affiliates (corporate directors, officers, shareholders, and other persons or entities that control or are controlled by a corporate entity)`,
-            `If the corporation has alien affiliates, their names and addresses`,
-            `The primary and secondary North American Industry Classification System (NAICS) Code Standard Industrial Codes (SICs) that most clearly describe the initial activities of your corporation`
+            `The name and address of each incorporator`,
+            `A specific business purpose of the corporation (to which you may also add language stating that the corporation may engage in any lawful business for which corporations may be incorporated under the New Mexico Business Corporation Act)`,
+            `The names and addresses of the corporation’s initial directors`,
+            `The number of shares that the corporation is authorized to issue`,
+            `If applicable, the articles must have a designation of each class and series of shares, as well as statements of their relative rights and the authority of the board to divide or change the designation of such shares`,
+            `The street address of the corporation’s initial registered office`,
+            `The name of the new corporation’s initial registered agent at that office`,
+            `The corporation’s period of duration, if it is not to be perpetual`,
+            `Any shareholder preemptive rights
+            `,
         ]
     },
     box2: {
-        header: `Some other provisions that aren’t required-but which may be included in the articles of incorporation-are:`,
+        header: `New Mexico law also allows (but does not require) optional items to be included in the articles of incorporation for those corporations who wish to formally specify additional information, such as:`,
         list: [
-            `The names and addresses of all directors`,
-            `Eligibility requirements to be a director`,
-            `Circumstances where shareholders can be liable for corporate debts`,
-            `Increased rights for or restrictions on shareholders, stock, or the board of directors`,
-            `Provisions for managing the business and regulating the affairs of the corporation`,
+            `The minimum consideration for any authorized shares or class of shares`,
+            `The powers and constraints of the corporation, its board of directors, and shareholders`,
+            `Provisions regarding the liability of directors in certain situations`,
         ]
     }
 }

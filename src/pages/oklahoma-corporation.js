@@ -83,11 +83,52 @@ const AlaskaCorporation = () => (
               Choosing a Corporation Name
             </Heading>
             <Paragraph big>
-              Your new Alaska corporation‘s name cannot be the same as or deceptively similar to the name of any other Alaska business entity registered or reserved with the state. It also is not permitted to be the same as any non-registered business name that has been established in common law by
-              usage over a long period of time. The name must contain (at the end) the words “incorporated,” “corporation,” “limited,” or “company,” or an abbreviation of one of those terms.
+            You’ll need to choose and register a name for your new Oklahoma corporation before you can actually conduct business in the Sooner State. The name you choose must be readily distinguishable from the names of all other registered and reserved business entities on file with the state.
             </Paragraph>
+            <Paragraph big>
+            Additionally, it may not contain language that states or implies that it is another business entity or that it is organized for some purpose other than one allowed by state law and its certificate of incorporation.
+            </Paragraph>
+            <Paragraph big>
+            Your new business’ name must include one of the following words, an abbreviation thereof, or words or abbreviations of similar meaning without punctuation in another language (but still in Roman characters):
+            </Paragraph>
+            <TextBoxed style={{ marginBottom: "8px" }}>
+              <Paragraph bottomMargin={0}>“Association”</Paragraph>
+            </TextBoxed>
+            <TextBoxed style={{ marginBottom: "8px" }}>
+              <Paragraph bottomMargin={0}>“Club”</Paragraph>
+            </TextBoxed>
+            <TextBoxed style={{ marginBottom: "8px" }}>
+              <Paragraph bottomMargin={0}>“Company”</Paragraph>
+            </TextBoxed>
+            <TextBoxed style={{ marginBottom: "8px" }}>
+              <Paragraph bottomMargin={0}>“Corporation”</Paragraph>
+            </TextBoxed>
+            <TextBoxed style={{ marginBottom: "8px" }}>
+              <Paragraph bottomMargin={0}>“Foundation”</Paragraph>
+            </TextBoxed>
+            <TextBoxed style={{ marginBottom: "8px" }}>
+              <Paragraph bottomMargin={0}>“Fund”</Paragraph>
+            </TextBoxed>
+            <TextBoxed style={{ marginBottom: "8px" }}>
+              <Paragraph bottomMargin={0}>“Incorporated”</Paragraph>
+            </TextBoxed>
+            <TextBoxed style={{ marginBottom: "8px" }}>
+              <Paragraph bottomMargin={0}>“Institute”</Paragraph>
+            </TextBoxed>
+            <TextBoxed style={{ marginBottom: "8px" }}>
+              <Paragraph bottomMargin={0}>“Limited”</Paragraph>
+            </TextBoxed>
+            <TextBoxed style={{ marginBottom: "8px" }}>
+              <Paragraph bottomMargin={0}>“Society”</Paragraph>
+            </TextBoxed>
+            <TextBoxed style={{ marginBottom: "8px" }}>
+              <Paragraph bottomMargin={0}>“Syndicate”</Paragraph>
+            </TextBoxed>
+            <TextBoxed style={{ marginBottom: "8px" }}>
+              <Paragraph bottomMargin={0}>“Union”</Paragraph>
+            </TextBoxed>
             <Paragraph big style={{ marginBottom: "0" }}>
-              The name may not include language that states or implies that the corporation is organized for some purpose other than stated in its articles of incorporation, or that it is a municipality (city, borough, or village). However, the name is allowed to contain the name of a municipality.
+            An available corporate name may be reserved for 60 days for a $10 fee.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -95,24 +136,28 @@ const AlaskaCorporation = () => (
               Articles of Incorporation
             </Heading>
             <Paragraph big>
-              So that your Alaska corporation can actually start doing business in the state, you must file articles of incorporation with the Division of Banking, Securities, and Corporations in the Alaska Department of Commerce, Community, and Economic Development (DCCED). The filing fee is $250,
-              which includes a $100 biennial license fee that will be an ongoing requirement.
+            Before it can begin conducting business in the state, a new Oklahoma corporation must file a certificate of incorporation with the Business Filing Department of the state Secretary of State’s office. The certificate must be executed (signed) and delivered by at least one incorporator, who must be a natural person, partnership, association, or corporation.
             </Paragraph>
-            <Paragraph big>Your new LLC’s articles of incorporation must be signed by at least one person, called an incorporator, who must be at least 18 years old and a natural person (not a business entity). They must sign the articles and deliver them to the DCCED.</Paragraph>
+            <Paragraph big>
+            The certificate must be accompanied by a $50 minimum fee based on the authorized capital specified in your certificate, calculated as follows:
+                <ol> <li>For no-par shares (i.e., without par value), multiply the number of authorized shares by $50. This means that the minimum $50 filing fee allows you to authorize just one share without par value. </li> <li>For shares with a stated par value, multiply the par value amount of each share by the number of par value shares authorized. </li> </ol>
+                The filing fee for par value shares is $1 for each $1,000 of capital or fraction thereof. The minimum $50 filing fee allows you to authorize $50,000 of capital (for example, 50,000 shares with a par value of $1 each or 500,000 shares with a par value of 10 cents each). Most incorporators authorize par value shares with a total par value of $50,000 in order to authorize an adequate number of shares for the minimum filing fee.
+            </Paragraph>
 
             <Colorbox color={color.blue3} content={articlesOfIncorporation.box1} dotsColor={color.blue1} style={{ marginBottom: "65px" }} />
 
             <Colorbox color={color.orange3} content={articlesOfIncorporation.box2} dotsColor={color.orange1} style={{ marginBottom: "48px" }} />
 
-            <Paragraph big>If the initial articles do not name directors for the corporation, the incorporators may elect directors or amend the bylaws.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Registered Agent and Office
             </Heading>
             <Paragraph big>
-              Alaska corporations must have a registered agent in the state-a person or office designated to receive official state administrative and legal correspondence. The agent must be either an adult who is a resident of Alaska whose business office is the same as the registered office, or it
-              may be a corporation whose business office is the same as the registered office.
+              Every Oklahoma corporation must have a registered agent in the state-the person or office designated to receive official state correspondence, both administrative and legal.
+            </Paragraph>
+            <Paragraph big>
+            The registered agent must be an Oklahoma resident whose business office is the same as the registered office, the corporation itself, or a business entity authorized to conduct business in the Sooner State that has a business office identical to the registered office.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -120,53 +165,41 @@ const AlaskaCorporation = () => (
               Bylaws
             </Heading>
             <Paragraph big>
-              Bylaws lay out the corporation’s basic operating principles from both the managerial and legal perspectives. A corporation must keep its bylaws available at its principal executive office, but is not required to file them with the state. The incorporators or board of directors should
-              adopt the corporation’s bylaws at their first meeting-insuring there is no conflict with the corporation’s articles of incorporation-and keep them updated as time goes on.
+            Bylaws lay out the corporation’s basic managerial and legal operating principles that manage their business and affairs. An Oklahoma corporation must keep a copy of its bylaws at its principal executive office, but is not required to file them with the state. At its initial meeting, the incorporators, initial directors, or the board of directors should-prior to any payment of stock to the corporation-adopt corporate bylaws, and then keep them updated as time goes on.
             </Paragraph>
             <Paragraph big style={{ fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
-              Bylaws should include, at minimum:
+            The board of directors of a corporation may adopt, amend, or repeal bylaws, unless the articles reserve this right to the shareholders. Bylaws normally address:
             </Paragraph>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>What authority directors have, how many there are, and how long they serve</Paragraph>
+              <Paragraph bottomMargin={0}>Shareholders and directors meetings</Paragraph>
             </TextBoxed>
-
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>Duties and responsibilities of officers and how long they serve</Paragraph>
+              <Paragraph bottomMargin={0}>The authority, number, and tenure of directors</Paragraph>
             </TextBoxed>
-
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>How consensus on major decisions is reached, both with and without meetings</Paragraph>
+              <Paragraph bottomMargin={0}>Voting procedures</Paragraph>
             </TextBoxed>
-
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>How, when, and where shareholders’ and directors’ meetings are held</Paragraph>
+              <Paragraph bottomMargin={0}>The duties, responsibilities, and tenure of officers</Paragraph>
             </TextBoxed>
-
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>How the corporation’s stock is issued</Paragraph>
+              <Paragraph bottomMargin={0}>How stock is issued</Paragraph>
+            </TextBoxed>
+            <TextBoxed style={{ marginBottom: "8px" }}>
+              <Paragraph bottomMargin={0}>How and when annual financial information is provided to shareholders</Paragraph>
             </TextBoxed>
 
-            <TextBoxed style={{ marginBottom: "48px" }}>
-              <Paragraph bottomMargin={0}>Requirements for publishing annual financial information to shareholders</Paragraph>
-            </TextBoxed>
-
-            <Paragraph big>
-              Even though the corporation is not required to file its bylaws with the state, if the articles of incorporation don’t specify the number of directors, the bylaws must either state the exact number of directors or specify a minimum or maximum number of directors, along with the way that
-              shareholder or board approval will determine the exact number at a specified later date.
-            </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Directors
             </Heading>
             <Paragraph big>
-              The board of directors has the responsibility of making the corporation’s major decisions. There must be at least one director; the number should be specified in the bylaws unless it is already set forth in the articles of incorporation. If no number is specified in either document,
-              the “default” number will be three. A change in the number of directors must be approved by a majority of the board, but such a change cannot shorten the term of any currently-serving director.
+            Officers are listed in the initial bylaws or elected by the board of directors, and may appoint other officers in accordance with the bylaws. At least one officer will have the responsibility for preparing minutes of director and shareholder meetings.
             </Paragraph>
             <Paragraph big>
-              Titles and duties of the corporation’s officers must be either listed in the bylaws or determined by the board of directors. Any two or more offices may be held by the same person, except the offices of president and secretary. When all of the issued and outstanding stock of the
-              corporation is owned by one person, the person may hold all or any combination of offices.
+            It is allowed for an officer to hold more than one office in the corporation unless otherwise prohibited by law or by the corporation’s bylaws.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -174,46 +207,31 @@ const AlaskaCorporation = () => (
               Requirement Reports
             </Heading>
             <Paragraph big style={{ marginBottom: "48px" }}>
-              Each Alaska corporation must file a biennial (every two years) report with the state before January 2 of each filing year, along with a $100 biennial license fee. The first report must be within six months of organization, but does not require the $100 fee because it is included in the
-              $250 fee at the time of incorporation.
+            Oklahoma corporations must file a report with the Oklahoma Tax Commission each year either between July 1 and August 31 or by the corporation’s income tax return deadline, depending on the corporation’s choice.
             </Paragraph>
 
             <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
-              The report must include:
+            This report must show:
             </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>What authority directors have, how many there are, and how long they serve</Paragraph>
+              <Paragraph bottomMargin={0}>The amount of the corporation’s authorized capital stock, interests, and certificates, and the amounts thereof which are paid up</Paragraph>
+              <Paragraph bottomMargin={0}>The number of units into which the corporation’s stock is divided</Paragraph>
+              <Paragraph bottomMargin={0}>The par value of each stock unit and the number of units issued and outstanding</Paragraph>
+              <Paragraph bottomMargin={0}>The address of the corporation’s place(s) of business</Paragraph>
+              <Paragraph bottomMargin={0}>The value of all property owned or used in its business in or out of the state</Paragraph>
+              <Paragraph bottomMargin={0}>The value of all property owned or used in its business within the state as it existed on the last day of the tax year</Paragraph>
+              <Paragraph bottomMargin={0}>The total amount of all business during the tax year, regardless of location</Paragraph>
+              <Paragraph bottomMargin={0}>The total amount of business transacted within the state during the tax year</Paragraph>
+              <Paragraph bottomMargin={0}>The names and addresses of the corporation’s officers</Paragraph>
             </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The name and address of its registered agent and registered office</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The principal corporate address for foreign corporations</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The nature of the corporation’s business</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The names and addresses of the corporation’s directors and officers</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>An itemization of shares authorized to be issued by the corporation</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>An itemization of shares that have been issued to date</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>Information on all alien affiliates</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The name, address, and ownership percentage of each shareholder who owns more than five percent of the corporation’s stock</Paragraph>
-            </TextBoxed>
+
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Taxes
             </Heading>
-            <Paragraph big>Alaska imposes a corporate income tax similar to the federal corporate income tax, based on graduated tax rates. Alaska does recognize “S corporation” status.</Paragraph>
+            <Paragraph big>Oklahoma corporations are subject to a flat tax of six percent on all corporate income. This tax ranks the state 36th highest among states levying corporate income taxes. Oklahoma corporations also pay an annual franchise tax, currently set at a rate of $1.25 for each $1,000 of capital invested or used in Oklahoma. Corporations can pay the franchise tax annually when they file their Oklahoma corporate income tax returns.</Paragraph>
+            <Paragraph big>“S corporation” status is recognized by the Oklahoma Secretary of State. A “subchapter S” corporation (frequently referred to as an “S corp”) is treated as a pass-through entity for tax purposes in the same way as a sole proprietorship or partnership. The S corp does not file a tax return on its own behalf; instead, all tax-related data for the S corp is filed as part of the owner’s individual income tax.</Paragraph>
           </PanelWrapper>
         </CollapseWrapper>
       </TabsSection>

@@ -359,29 +359,16 @@ Documents`,
 
 export const articlesOfIncorporation = {
     box1: {
-        header: `The articles must include:`,
+        header: `Including the following:`,
         list: [
-            `The corporation’s name`,
-            `Its business purpose, which can be the general statement: “the transaction of any lawful business allowed by the Alaska Corporation Code”`,
-            `The name of the corporation’s initial registered agent`,
-            `The address of the corporation’s initial registered office`,
-            `The address of the corporation’s principal office`,
-            `Number of shares authorized for the corporation to issue (par value is not required to be designated)`,
-            `Whether the corporation has any alien (non-US citizen or a person without permanent US resident status, or non-US legal entities) affiliates (corporate directors, officers, shareholders, and other persons or entities that control or are controlled by a corporate entity)`,
-            `If the corporation has alien affiliates, their names and addresses`,
-            `The primary and secondary North American Industry Classification System (NAICS) Code Standard Industrial Codes (SICs) that most clearly describe the initial activities of your corporation`
+            `At least one incorporator must sign and file the articles of incorporation.`,
+            `There must be at least one incorporator, either a natural person of legal age or a legal entity. However, the incorporator does not have to be a director, officer, or shareholder of the company.`,
+            `The name and address of each incorporator and initial director.`,
+            `The number of shares the corporation is authorized to issue, as well as the number of shares of each stock class and/or series`,
+            `The name and address of the initial registered agent, who must sign the articles, indicating acceptance.`,
+            `If the corporation is registered as an investment company or intends to conduct business in that area, the articles must list any provision limiting or eliminating annual shareholder meetings`,
         ]
     },
-    box2: {
-        header: `Some other provisions that aren’t required-but which may be included in the articles of incorporation-are:`,
-        list: [
-            `The names and addresses of all directors`,
-            `Eligibility requirements to be a director`,
-            `Circumstances where shareholders can be liable for corporate debts`,
-            `Increased rights for or restrictions on shareholders, stock, or the board of directors`,
-            `Provisions for managing the business and regulating the affairs of the corporation`,
-        ]
-    }
 }
 
 export const corporationName = {

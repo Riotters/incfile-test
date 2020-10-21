@@ -83,11 +83,16 @@ const AlaskaCorporation = () => (
               Choosing a Corporation Name
             </Heading>
             <Paragraph big>
-              Your new Alaska corporation‘s name cannot be the same as or deceptively similar to the name of any other Alaska business entity registered or reserved with the state. It also is not permitted to be the same as any non-registered business name that has been established in common law by
-              usage over a long period of time. The name must contain (at the end) the words “incorporated,” “corporation,” “limited,” or “company,” or an abbreviation of one of those terms.
+            The name you choose for your new corporation must be able to be distinguished from all other Nevada business entities registered or reserved with the Nevada Secretary of State. If the corporate name appears to be that of a natural person, it must also contain an additional word indicating its corporate status, such as “Incorporated,” “Limited,” “Company,” “Corporation,” or an abbreviation of one of these.
+            </Paragraph>
+            <Paragraph big>
+            Even if the corporate name does not contain the name of a real person, you will probably want to include one of these “status designator” words because it tells others that your business is incorporated, which give added credibility.
+            </Paragraph>
+            <Paragraph big>
+            If the name states or implies that the corporation will conduct its operations in the banking, trust, or insurance areas, you will need the prior approval of the state banking superintendent or insurance commissioner.
             </Paragraph>
             <Paragraph big style={{ marginBottom: "0" }}>
-              The name may not include language that states or implies that the corporation is organized for some purpose other than stated in its articles of incorporation, or that it is a municipality (city, borough, or village). However, the name is allowed to contain the name of a municipality.
+            You can reserve an available name online for up to 90 days for a $40 fee, or you can mail in a paper name reservation form for a $25 fee.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -95,24 +100,24 @@ const AlaskaCorporation = () => (
               Articles of Incorporation
             </Heading>
             <Paragraph big>
-              So that your Alaska corporation can actually start doing business in the state, you must file articles of incorporation with the Division of Banking, Securities, and Corporations in the Alaska Department of Commerce, Community, and Economic Development (DCCED). The filing fee is $250,
-              which includes a $100 biennial license fee that will be an ongoing requirement.
+            The Nevada Business Corporation Act (Chapter 78 of the Nevada Revised Statutes) requires that the new Nevada corporation file articles of incorporation with the Nevada Secretary of State.
             </Paragraph>
-            <Paragraph big>Your new LLC’s articles of incorporation must be signed by at least one person, called an incorporator, who must be at least 18 years old and a natural person (not a business entity). They must sign the articles and deliver them to the DCCED.</Paragraph>
 
-            <Colorbox color={color.blue3} content={articlesOfIncorporation.box1} dotsColor={color.blue1} style={{ marginBottom: "65px" }} />
+            <Colorbox color={color.orange3} content={articlesOfIncorporation.box1} dotsColor={color.orange1} style={{ marginBottom: "48px" }} />
 
-            <Colorbox color={color.orange3} content={articlesOfIncorporation.box2} dotsColor={color.orange1} style={{ marginBottom: "48px" }} />
-
-            <Paragraph big>If the initial articles do not name directors for the corporation, the incorporators may elect directors or amend the bylaws.</Paragraph>
+            <Paragraph big>State approval or certification may be required before a corporation may file its articles of incorporation if its corporate name indicates that it will conduct operations in the areas of banking, trusts, engineering, accounting, insurance, or residential owners’ associations.</Paragraph>
+            <Paragraph big>In Nevada, the filing fee is based on the number of shares authorized. It will be a minimum of $105 total, which includes $30 for certifying one copy of your articles of incorporation-Nevada law requires you to keep a certified copy of your filed articles at the corporation’s registered agent’s location. The fee also includes a minimum $75 authorized capital fee.</Paragraph>
+            <Paragraph big>By the end of the month following the filing of the articles of incorporation, you must also submit an Initial List of Officers, Directors, and Resident Agent to the Nevada Secretary of State with a $125 fee.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Registered Agent and Office
             </Heading>
             <Paragraph big>
-              Alaska corporations must have a registered agent in the state-a person or office designated to receive official state administrative and legal correspondence. The agent must be either an adult who is a resident of Alaska whose business office is the same as the registered office, or it
-              may be a corporation whose business office is the same as the registered office.
+            Nevada corporations must have a registered in-state agent-a natural person who is a Nevada resident-who is designated to receive official correspondence from the state. The registered agent must have a business office that is the same as the registered office.
+            </Paragraph>
+            <Paragraph big>
+            Many new corporations use one of the initial directors or officers as the registered agent and list the street address of the corporation for the registered office.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -120,100 +125,54 @@ const AlaskaCorporation = () => (
               Bylaws
             </Heading>
             <Paragraph big>
-              Bylaws lay out the corporation’s basic operating principles from both the managerial and legal perspectives. A corporation must keep its bylaws available at its principal executive office, but is not required to file them with the state. The incorporators or board of directors should
-              adopt the corporation’s bylaws at their first meeting-insuring there is no conflict with the corporation’s articles of incorporation-and keep them updated as time goes on.
+            A corporation is required to keep its bylaws available at its main office, but it is not required to file them with the state. The incorporators or board of directors should adopt the corporation’s bylaws at their first meeting, insuring that there is no conflict with the articles of incorporation or state law. They should also keep the bylaws updated as time goes on.
             </Paragraph>
             <Paragraph big style={{ fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
-              Bylaws should include, at minimum:
+            Bylaws set forth the corporation’s basic operating principles from both the managerial and legal perspectives, and should include, as a minimum:
             </Paragraph>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>What authority directors have, how many there are, and how long they serve</Paragraph>
+              <Paragraph bottomMargin={0}>The authority of directors, how many there are, and how long they serve</Paragraph>
             </TextBoxed>
-
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>Duties and responsibilities of officers and how long they serve</Paragraph>
+              <Paragraph bottomMargin={0}>Officers’ duties and responsibilities and how long they serve</Paragraph>
             </TextBoxed>
-
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>How consensus on major decisions is reached, both with and without meetings</Paragraph>
+              <Paragraph bottomMargin={0}>How major decisions are reached, with or without meetings</Paragraph>
             </TextBoxed>
-
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>How, when, and where shareholders’ and directors’ meetings are held</Paragraph>
             </TextBoxed>
-
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>How the corporation’s stock is issued</Paragraph>
             </TextBoxed>
-
-            <TextBoxed style={{ marginBottom: "48px" }}>
+            <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>Requirements for publishing annual financial information to shareholders</Paragraph>
             </TextBoxed>
 
-            <Paragraph big>
-              Even though the corporation is not required to file its bylaws with the state, if the articles of incorporation don’t specify the number of directors, the bylaws must either state the exact number of directors or specify a minimum or maximum number of directors, along with the way that
-              shareholder or board approval will determine the exact number at a specified later date.
-            </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Directors
             </Heading>
             <Paragraph big>
-              The board of directors has the responsibility of making the corporation’s major decisions. There must be at least one director; the number should be specified in the bylaws unless it is already set forth in the articles of incorporation. If no number is specified in either document,
-              the “default” number will be three. A change in the number of directors must be approved by a majority of the board, but such a change cannot shorten the term of any currently-serving director.
-            </Paragraph>
-            <Paragraph big>
-              Titles and duties of the corporation’s officers must be either listed in the bylaws or determined by the board of directors. Any two or more offices may be held by the same person, except the offices of president and secretary. When all of the issued and outstanding stock of the
-              corporation is owned by one person, the person may hold all or any combination of offices.
+            Officers must be either listed in the bylaws or elected by the board, and may appoint other officers in compliance with the bylaws. Corporate officers must be natural persons, and a corporation is required to have at least a president, secretary, and treasurer. An officer may hold more than one office in the corporation, unless otherwise prohibited by law or the corporation’s articles of incorporation or bylaws.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Requirement Reports
             </Heading>
-            <Paragraph big style={{ marginBottom: "48px" }}>
-              Each Alaska corporation must file a biennial (every two years) report with the state before January 2 of each filing year, along with a $100 biennial license fee. The first report must be within six months of organization, but does not require the $100 fee because it is included in the
-              $250 fee at the time of incorporation.
+            <Paragraph big>
+            Nevada corporations must update their list of directors, officers, and registered agent each year. The annual filing fee is $125.
             </Paragraph>
-
-            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
-              The report must include:
-            </Paragraph>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>What authority directors have, how many there are, and how long they serve</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The name and address of its registered agent and registered office</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The principal corporate address for foreign corporations</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The nature of the corporation’s business</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The names and addresses of the corporation’s directors and officers</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>An itemization of shares authorized to be issued by the corporation</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>An itemization of shares that have been issued to date</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>Information on all alien affiliates</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The name, address, and ownership percentage of each shareholder who owns more than five percent of the corporation’s stock</Paragraph>
-            </TextBoxed>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Taxes
             </Heading>
-            <Paragraph big>Alaska imposes a corporate income tax similar to the federal corporate income tax, based on graduated tax rates. Alaska does recognize “S corporation” status.</Paragraph>
+            <Paragraph big>Nevada has no individual or corporate income tax. However, any business with one or more employees must obtain a state business license and pay an annual business tax.</Paragraph>
+            <Paragraph big>A “Subchapter S” corporation is one that chooses to be treated as a pass-through entity (such as a sole proprietorship or partnership) for tax purposes. A subchapter-S election thus has federal, but no state, implications for Nevada corporations.</Paragraph>
           </PanelWrapper>
         </CollapseWrapper>
       </TabsSection>

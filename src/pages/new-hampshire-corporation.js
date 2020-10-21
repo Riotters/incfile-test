@@ -83,11 +83,22 @@ const AlaskaCorporation = () => (
               Choosing a Corporation Name
             </Heading>
             <Paragraph big>
-              Your new Alaska corporation‘s name cannot be the same as or deceptively similar to the name of any other Alaska business entity registered or reserved with the state. It also is not permitted to be the same as any non-registered business name that has been established in common law by
-              usage over a long period of time. The name must contain (at the end) the words “incorporated,” “corporation,” “limited,” or “company,” or an abbreviation of one of those terms.
+            The name of the New Hampshire corporation you’re starting up is very important-it’s one of your business organization’s first official acts, and it’s how people first meet your company.
+            </Paragraph>
+            <Paragraph big>
+            Your company’s name must be distinguishable from any other registered or reserved New Hampshire business entity. Its name must be such that it cannot easily be confused with not only other business entities, but also government entities and political parties.
+            </Paragraph>
+            <Paragraph big>
+            Your corporation’s name also is not allowed to include language that states or gives the impression that the corporation is organized for any purpose other than one permitted by state law and its articles of incorporation.
+            </Paragraph>
+            <Paragraph big>
+            The corporation’s name must contain one or more of the following words, an abbreviation thereof, or words of similar meaning in another language: “Incorporated,” “Corporation,” or “Limited.”
+            </Paragraph>
+            <Paragraph big>
+            It also may not include words or phrases (or their abbreviations or derivations) that are prohibited or restricted by the state. Your corporation may, however, use an alternate name for a limited period of time, subject to certain state requirements.
             </Paragraph>
             <Paragraph big style={{ marginBottom: "0" }}>
-              The name may not include language that states or implies that the corporation is organized for some purpose other than stated in its articles of incorporation, or that it is a municipality (city, borough, or village). However, the name is allowed to contain the name of a municipality.
+            You can reserve an available corporate name for 120 days for $15.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -95,24 +106,35 @@ const AlaskaCorporation = () => (
               Articles of Incorporation
             </Heading>
             <Paragraph big>
-              So that your Alaska corporation can actually start doing business in the state, you must file articles of incorporation with the Division of Banking, Securities, and Corporations in the Alaska Department of Commerce, Community, and Economic Development (DCCED). The filing fee is $250,
-              which includes a $100 biennial license fee that will be an ongoing requirement.
+            After choosing a name, the next step for your brand new corporation in New Hampshire is filing articles of incorporation with the state, along with the $100 filing fee. This fee includes the $50 articles filing fee, plus another $50 fee for filing the required addendum form.
             </Paragraph>
-            <Paragraph big>Your new LLC’s articles of incorporation must be signed by at least one person, called an incorporator, who must be at least 18 years old and a natural person (not a business entity). They must sign the articles and deliver them to the DCCED.</Paragraph>
+            <Paragraph big>
+            The certificate must be delivered to the state by one or more incorporators (there must be at least one), who are not required to be a director, officer, or shareholder of the corporation. The incorporator must also execute (sign) the articles.
+            </Paragraph>
 
             <Colorbox color={color.blue3} content={articlesOfIncorporation.box1} dotsColor={color.blue1} style={{ marginBottom: "65px" }} />
+            <Paragraph big>
+            Before your new corporation can be registered with the state, however, the incorporator(s) must sign a statement of compliance with New Hampshire Securities Laws.
+            </Paragraph>
 
             <Colorbox color={color.orange3} content={articlesOfIncorporation.box2} dotsColor={color.orange1} style={{ marginBottom: "48px" }} />
 
-            <Paragraph big>If the initial articles do not name directors for the corporation, the incorporators may elect directors or amend the bylaws.</Paragraph>
+            <Paragraph big>New Hampshire also allows optional provisions to be included in the articles of incorporation.</Paragraph>
+            <Colorbox color={color.orange3} content={articlesOfIncorporation.box3} dotsColor={color.orange1} />
+
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Registered Agent and Office
             </Heading>
             <Paragraph big>
-              Alaska corporations must have a registered agent in the state-a person or office designated to receive official state administrative and legal correspondence. The agent must be either an adult who is a resident of Alaska whose business office is the same as the registered office, or it
-              may be a corporation whose business office is the same as the registered office.
+            All New Hampshire corporations must have a registered agent the state. The registered agent is the person or office designated to receive official state administrative and legal correspondence.
+            </Paragraph>
+            <Paragraph big>
+            The corporation’s registered agent must have a business office that is the same as the registered office and must be either a natural person who resides in New Hampshire, or a corporation authorized to conduct business there.
+            </Paragraph>
+            <Paragraph big>
+            New Hampshire requires that every corporation have a registered office in the state, which may be the same of any of its places of business.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -120,100 +142,79 @@ const AlaskaCorporation = () => (
               Bylaws
             </Heading>
             <Paragraph big>
-              Bylaws lay out the corporation’s basic operating principles from both the managerial and legal perspectives. A corporation must keep its bylaws available at its principal executive office, but is not required to file them with the state. The incorporators or board of directors should
-              adopt the corporation’s bylaws at their first meeting-insuring there is no conflict with the corporation’s articles of incorporation-and keep them updated as time goes on.
+            Bylaws lay out a corporation’s basic managerial and legal operating principles; the corporation must keep a copy at its principal executive office, but is not required to file them with the state. Nonetheless, they are a critically important document for the corporation.
+            </Paragraph>
+            <Paragraph big>
+            At its initial meeting, the incorporators or the corporation’s board of directors must adopt corporate bylaws, and then keep them updated as time goes on. The corporation’s board of directors can make, alter, amend, or repeal those bylaws, unless the articles of incorporation reserve this right to the shareholders.
             </Paragraph>
             <Paragraph big style={{ fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
-              Bylaws should include, at minimum:
+            Bylaws normally address:
             </Paragraph>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>What authority directors have, how many there are, and how long they serve</Paragraph>
+              <Paragraph bottomMargin={0}>Shareholders’ and directors’ meetings</Paragraph>
             </TextBoxed>
-
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>Duties and responsibilities of officers and how long they serve</Paragraph>
+              <Paragraph bottomMargin={0}>The authority, number, and tenure of directors</Paragraph>
             </TextBoxed>
-
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>How consensus on major decisions is reached, both with and without meetings</Paragraph>
+              <Paragraph bottomMargin={0}>Voting procedures</Paragraph>
             </TextBoxed>
-
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>How, when, and where shareholders’ and directors’ meetings are held</Paragraph>
+              <Paragraph bottomMargin={0}>The duties, responsibilities, and tenure of officers</Paragraph>
             </TextBoxed>
-
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>How the corporation’s stock is issued</Paragraph>
+              <Paragraph bottomMargin={0}>How stock is issued</Paragraph>
             </TextBoxed>
-
-            <TextBoxed style={{ marginBottom: "48px" }}>
-              <Paragraph bottomMargin={0}>Requirements for publishing annual financial information to shareholders</Paragraph>
+            <TextBoxed style={{ marginBottom: "8px" }}>
+              <Paragraph bottomMargin={0}>How and when annual financial information is provided to shareholders</Paragraph>
             </TextBoxed>
-
-            <Paragraph big>
-              Even though the corporation is not required to file its bylaws with the state, if the articles of incorporation don’t specify the number of directors, the bylaws must either state the exact number of directors or specify a minimum or maximum number of directors, along with the way that
-              shareholder or board approval will determine the exact number at a specified later date.
-            </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Directors
             </Heading>
             <Paragraph big>
-              The board of directors has the responsibility of making the corporation’s major decisions. There must be at least one director; the number should be specified in the bylaws unless it is already set forth in the articles of incorporation. If no number is specified in either document,
-              the “default” number will be three. A change in the number of directors must be approved by a majority of the board, but such a change cannot shorten the term of any currently-serving director.
+            If a board of directors has the power to fix or change the number of directors, the board may raise or lower by no more than 30 percent the number of directors last approved by the shareholders, but only the shareholders may increase or decrease by more than 30 percent the number of directors. The terms of all other directors expire at the next annual shareholders’ meeting following their election.
             </Paragraph>
             <Paragraph big>
-              Titles and duties of the corporation’s officers must be either listed in the bylaws or determined by the board of directors. Any two or more offices may be held by the same person, except the offices of president and secretary. When all of the issued and outstanding stock of the
-              corporation is owned by one person, the person may hold all or any combination of offices.
+            Officers may be listed in the bylaws or elected by the board, and may appoint other officers in compliance with the bylaws. Also, one officer must be given the responsibility of preparing minutes of the directors’ and shareholders’ meetings and for authenticating corporate records. The same individual may simultaneously hold more than one office in a corporation.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Requirement Reports
             </Heading>
-            <Paragraph big style={{ marginBottom: "48px" }}>
-              Each Alaska corporation must file a biennial (every two years) report with the state before January 2 of each filing year, along with a $100 biennial license fee. The first report must be within six months of organization, but does not require the $100 fee because it is included in the
-              $250 fee at the time of incorporation.
+            <Paragraph big style={{ marginBottom: "24px" }}>
+            An annual report must be filed with the New Hampshire Corporation Division between January 1 and April 1 starting the year after the calendar year of incorporation that includes:
             </Paragraph>
 
-            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
-              The report must include:
-            </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>What authority directors have, how many there are, and how long they serve</Paragraph>
+              <Paragraph bottomMargin={0}>The corporation’s name and the state or country under whose law it is incorporated</Paragraph>
             </TextBoxed>
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The name and address of its registered agent and registered office</Paragraph>
+              <Paragraph bottomMargin={0}>The address of the corporation’s registered New Hampshire office and the name of its registered agent there</Paragraph>
             </TextBoxed>
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The principal corporate address for foreign corporations</Paragraph>
+              <Paragraph bottomMargin={0}>The address of the corporation’s principal office</Paragraph>
             </TextBoxed>
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The nature of the corporation’s business</Paragraph>
+              <Paragraph bottomMargin={0}>The names and business addresses of the corporation’s directors and principal officers</Paragraph>
             </TextBoxed>
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The names and addresses of the corporation’s directors and officers</Paragraph>
+              <Paragraph bottomMargin={0}>A brief description of the nature of the corporation’s business</Paragraph>
             </TextBoxed>
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>An itemization of shares authorized to be issued by the corporation</Paragraph>
+              <Paragraph bottomMargin={0}>The signature of an officer, director, or any other person authorized by the board of directors to execute the annual report</Paragraph>
             </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>An itemization of shares that have been issued to date</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>Information on all alien affiliates</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The name, address, and ownership percentage of each shareholder who owns more than five percent of the corporation’s stock</Paragraph>
-            </TextBoxed>
+
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Taxes
             </Heading>
-            <Paragraph big>Alaska imposes a corporate income tax similar to the federal corporate income tax, based on graduated tax rates. Alaska does recognize “S corporation” status.</Paragraph>
+            <Paragraph big>New Hampshire’s corporate tax structure consists of two brackets, with a top rate of 9.25 percent that takes effect at an income level of $150,000. Among states levying corporate income taxes, New Hampshire’s top rate ranks the state sixth highest nationally.</Paragraph>
+            <Paragraph big>S corporation status is recognized by the State of New Hampshire.</Paragraph>
           </PanelWrapper>
         </CollapseWrapper>
       </TabsSection>
