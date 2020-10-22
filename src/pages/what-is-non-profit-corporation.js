@@ -51,7 +51,7 @@ const IndexPage = () => {
                 <h1>{top.header}</h1>
                 <p>{top.text}</p>
                 <Buttonsbox>
-                    <Button content={{ text: top.button[0].text, url: `/` }} theme="primary56" width="280px" arrow />
+                    <Button content={top.button[0]} theme="primary56" width="280px" arrow />
                 </Buttonsbox>
             </Top>
             <About content={about} />
@@ -110,6 +110,7 @@ const LightBoxContent = styled.div`
   @media screen and (min-width: 769px) {
     padding-top: 0;
     overflow-y: visible;
+    max-width: 600px;
   }
 `;
 
