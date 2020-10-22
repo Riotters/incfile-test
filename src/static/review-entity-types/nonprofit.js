@@ -3,15 +3,21 @@ export const top = {
 	text: `Here’s how to get your nonprofit corporation off the ground quickly and smoothly.`,
 	button: [
 		{
-			text: "Start Now",
-			url: "/",
-		},
-		{
-			text: "How it works",
-			url: "/",
+			text: "Form Your Nonprofit Now",
+			url: `${process.env.ORDER_URL}/form-order-now.php?entityType=Nonprofit`,
 		},
 	],
 };
+
+export const hsForm = {
+    header: "Download Our Start a Nonprofit Guide.",
+    text: "Starting a nonprofit can truly help make the world a better place.",
+    hs_form_id: `cea693a7-b69e-4969-8d8e-c3b570335061`,
+    button: {
+        text: "Download now",
+        url: "/"
+    },
+}
 
 export const about = {
 	tabs: {
@@ -195,7 +201,7 @@ export const rocket = {
 	text2: `Only $0 + State Fee to Launch Your Business.`,
 	button: {
 		text: `Start Now`,
-		url: `/`,
+		url: `${process.env.ORDER_URL}/form-order-now.php?entityType=Nonprofit`,
 	},
 };
 
@@ -203,7 +209,7 @@ export const cta = {
   header: `Launch Your Business Only $0 + State Fee.`,
   button: {
     text: `See Detailed Pricing`,
-    url: `/`,
+    url: `${process.env.ORDER_URL}/form-order-now.php?entityType=Nonprofit`,
   }
 }
 
@@ -211,7 +217,7 @@ export const faq = {
 	header: `Common questions on starting a Nonprofit Corporation`,
 	link: {
 		text: `See all`,
-		url: `/`,
+		url: `/research-topics/nonprofit-info/`,
 	},
 	faq: {
 		items: [
