@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
+import {Link} from 'gatsby';
 import Label from "../../atomic/molecules/form/label-field-with-child";
 import Input from "../../atomic/atoms/inputs/input";
 import {Heading} from "../../atomic/atoms/typography/heading";
@@ -12,7 +12,7 @@ import ButtonSubmit from "../../atomic/molecules/buttons/button-action";
 // texts
 import { _phoneFormat } from '../../helpers/input-parsers';
 
-const HSFormModal = ({ content, postDownloadAction, hs_form_id }) => {
+const HSFormModal = ({ content, postDownloadAction, hs_form_id, modalExit }) => {
     const [intentPath, setIntentPath] = React.useState('');
     const [phoneNumber, setPhoneNumber] = React.useState('');
     const pageUrl = typeof window !== 'undefined' ? window.location.href : '';
@@ -82,12 +82,21 @@ const HSFormModal = ({ content, postDownloadAction, hs_form_id }) => {
                     placeholder="Please select"
                 />
             </Label>
-            <ButtonSubmit theme="primary56" type="submit" content={content.button} />
+            <FooterModal>
+                <ButtonSubmit theme="primary56" type="submit" content={content.button} />
+                <Link to="#" className="modal-close" onClick={modalExit}>Cancel</Link>
+            </FooterModal>
         </FormWrapper>
     );
 }
 
 export default HSFormModal;
+
+const FooterModal = styled.div`
+    display: flex;
+    align-items: center;
+    gap: 1em;
+`
 
 const FormWrapper = styled.form`
     background-color: #fff;

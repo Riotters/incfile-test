@@ -73,12 +73,13 @@ const SCorporation = () => {
             <Faq content={faq} onClick={popup} />
             <Articles />
 
-            <LightBoxModal visible={modalVisible} className="modal-overlay">
-                <LightBoxContent style={{ pointerEvents: "all" }} class={modalClases.join(" ")}>
+            <LightBoxModal visible={modalVisible}>
+                <LightBoxContent style={{ pointerEvents: "all" }} class={modalClases.join(" ")} className="modal-overlay">
                     {!formSubmitted && (
                         <HSFormModal
                             hs_form_id={hsForm.hs_form_id}
                             content={hsForm}
+                            modalExit={popup}
                             postDownloadAction={postDownload} />
                     )}
                     {formSubmitted && (
@@ -122,8 +123,9 @@ const LightBoxContent = styled.div`
   }
   
   @media screen and (min-width: 769px) {
-    padding-top: 0;
-    overflow-y: visible;
+      max-width: 600px;
+        padding-top: 0;
+        overflow-y: visible;
   }
 `;
 

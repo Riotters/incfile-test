@@ -1,5 +1,5 @@
 import {color} from "../../components/styles/colors";
-import React from "react";
+
 export const BusinessInsuranceAccordionContent = {
     items: [
         {
@@ -29,7 +29,7 @@ export const TaxesAccordionContent = {
     items: [
         {
             question: "Sales tax",
-            answer: "f you’re selling locally, you may also be liable for collecting and paying sales tax. To register for sales tax, see your Secretary of State website. Etsy will allow you to add sales tax to your prices automatically where you need to collect it."
+            answer: "If you’re selling locally, you may also be liable for collecting and paying sales tax. To register for sales tax, see your Secretary of State website. Etsy will allow you to add sales tax to your prices automatically where you need to collect it."
         },
         {
             question: "Federal income tax",
@@ -72,7 +72,7 @@ export const MaintainingAccordionContent = {
                 },
                 {
                     text: `We can file your Annual Report on your behalf.`,
-                    url: `/`
+                    url: `/manage-your-company/annual-report/`
                 }
             ]
         },
@@ -207,7 +207,7 @@ export const AccordionCounting = {
                 },
                 {
                     text: `guide to getting your EIN.`,
-                    url: `/`
+                    url: `/manage-your-company/tax-id-ein/`
                 },
                 {
                     text: `You need this even if you don’t plan to hire employees.`,

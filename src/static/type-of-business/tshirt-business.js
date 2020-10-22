@@ -165,36 +165,29 @@ export const FinancesAccordionContent = {
                     text: `QuickBooks,`,
                     url: `/`
                 },
-                ,
                 {
                     text: `FreshBooks,`,
                     url: `/`
                 },
-                ,
                 {
                     text: `FreeAgent,`,
                     url: `/`
                 },
-                ,
                 {
                     text: `ZipBooks,`,
                     url: `/`
                 },
-                ,
                 {
                     text: `Wave Accounting,`,
                     url: `/`
                 },
-                ,
                 {
                     text: `Xero,`,
                     url: `/`
                 },
-                ,
                 {
                     text: `and`
                 },
-                ,
                 {
                     text: `Bench.`,
                     url: `/`
@@ -215,7 +208,7 @@ export const HiringAccordionContent = {
                 },
                 {
                     text: `guide to getting your EIN.`,
-                    url: `/`
+                    url: `/manage-your-company/tax-id-ein/`
                 }
             ]
         },

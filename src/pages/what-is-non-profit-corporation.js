@@ -54,7 +54,7 @@ const IndexPage = () => {
                     <Button content={top.button[0]} theme="primary56" width="280px" arrow />
                 </Buttonsbox>
             </Top>
-            <About content={about} />
+            <About content={about} openModal={popup} />
             <Search />
             <Faq content={faq} onClick={popup} />
             <Cta cta={cta} />
@@ -65,6 +65,7 @@ const IndexPage = () => {
                         <HSFormModal
                             hs_form_id={hsForm.hs_form_id}
                             content={hsForm}
+                            modalExit={popup}
                             postDownloadAction={postDownload} />
                     )}
                     {formSubmitted && (

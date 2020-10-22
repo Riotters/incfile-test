@@ -112,29 +112,29 @@ const pdfs = [
   ["pdf-24-9588", "pdf-11-8729", "pdf-22-4629", "pdf-14-7292"]
 ]
 
-const BusinessResourcesTabs = ({ content }) => (
-  <Tabs>
-    <Wrapper>
-      <TabsWrapper>
-        <Scroller>
-            {content.switchers.map((switcher) => (
-                <Tab>{switcher}</Tab>
-            ))}
-        </Scroller>
-      </TabsWrapper>
-      <PanelsWrapper>
-      {content.panels.map((panel, i) => (
-        <Panel>
-          <Grid>
-            {panel.cards.map((card, j) => (
-                <Card content={card} image={pdfs[i][j]} />
-            ))}
-          </Grid>
-        </Panel>
-      ))}
-      </PanelsWrapper>
-    </Wrapper>
-  </Tabs>
+const BusinessResourcesTabs = ({ content, openModal }) => (
+    <Tabs>
+        <Wrapper>
+            <TabsWrapper>
+                <Scroller>
+                    {content.switchers.map((switcher) => (
+                        <Tab>{switcher}</Tab>
+                    ))}
+                </Scroller>
+            </TabsWrapper>
+            <PanelsWrapper>
+                {content.panels.map((panel, i) => (
+                    <Panel>
+                        <Grid>
+                            {panel.cards.map((card, j) => (
+                                <Card content={card} image={pdfs[i][j]} openModal={openModal} />
+                            ))}
+                        </Grid>
+                    </Panel>
+                ))}
+            </PanelsWrapper>
+        </Wrapper>
+    </Tabs>
 );
 
 export default BusinessResourcesTabs;
