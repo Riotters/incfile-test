@@ -9,7 +9,7 @@ import LegalSections from "../atomic/sections/legal-disclaimer/legal-sections";
 
 const CompareStateTimes = () => (
     <Layout>
-        <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
+        <SEO title="Incfile Cancellation Policy | How Do I Cancel my Incfile Order" description="To cancel your Incfile order, contact customer service with 24 hrs of your order. Learn more." />
         <Top content={top} />
         <LegalSections content={legal_sections} contentWidth={970} />
     </Layout>

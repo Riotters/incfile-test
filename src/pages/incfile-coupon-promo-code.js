@@ -16,7 +16,7 @@ import { top, save, get, incorporating } from "../static/other/incfile-coupon-pr
 
 const IncfileCouponPromoCode = () => (
   <Layout>
-    <SEO title="Incfile Coupon Promo Code" description="aaa" />
+    <SEO title="Incfile Coupon Promo Code" description="Incfile Coupon Promo Code" />
     <Top headline={top.header} text={top.text} />
     <Save content={save} />
     <Get content={get} />

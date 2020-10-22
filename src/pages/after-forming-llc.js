@@ -13,7 +13,7 @@ import { top, about, guide } from "../static/other/after-forming-llc";
 
 const AfterForming = () => (
   <Layout>
-    <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
+    <SEO title="What to Do After Forming Your LLC | Incfile " description="You started your LLC—now what? Here are the common next steps to ensuring your business is successful. Read more." />
     <Top imageName="mr-bulb-compass-3979" imageAlt="Mrs Bulb and with checklist" ovalColor="sun" headlineWidth="550">
       <h1>{top.header}</h1>
       <p>{top.text}</p>

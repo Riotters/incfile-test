@@ -15,8 +15,8 @@ import { tabPages } from "../../static/states-llc/massachusetts/general";
 const RegisteredAgentPage = () => (
   <Layout>
     <SEO
-    title="Texas Business Search | How to Name Your TX LLC"
-    description="Learn what you need to know about naming an LLC in Texas with Incfile's helpful resources. Pick your perfect business name today!"
+    title="Massachusetts Registered Agents & Your LLC | Resident Agents in MA"
+    description="Do you need a Registered or Resident Agent for your MA LLC? Learn what Registered Agents do and how to get one with Incfile’s helpful guide."
     />
     <LLCLayout>
         <LeftTabPages content={tabPages} />
