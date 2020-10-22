@@ -18,15 +18,15 @@ export const list = {
               links: [
                 {
                   text: `Cancellation Policy`,
-                  url: `/`,
+                  url: `/cancellation-policy/`,
                 },
                 {
                   text: `Privacy Policy`,
-                  url: `/`,
+                  url: `/privacy-policy/`,
                 },
                 {
                   text: `Legal Disclaimer`,
-                  url: `/`,
+                  url: `/disclaimer/`,
                 },
                 {
                   text: `Incfile Incorporate`,
@@ -34,11 +34,11 @@ export const list = {
                 },
                 {
                   text: `Get started now`,
-                  url: `/`,
+                  url: `/form-order-now.php`,
                 },
                 {
                   text: `Testimonials`,
-                  url: `/`,
+                  url: `/reviews/`,
                 },
               ],
             },
@@ -46,27 +46,27 @@ export const list = {
               links: [
                 {
                   text: `Affiliates`,
-                  url: `/`,
+                  url: `/affiliates/`,
                 },
                 {
                   text: `Form Your LLC`,
-                  url: `/`,
+                  url: `/form-an-llc/`,
                 },
                 {
                   text: `Free LLC Filing + State Fee`,
-                  url: `/`,
+                  url: `/free-llc/`,
                 },
                 {
                   text: `How to Start an LLC`,
-                  url: `/`,
+                  url: `/form-an-llc/`,
                 },
                 {
                   text: `Form Your Corporation`,
-                  url: `/`,
+                  url: `/what-is-s-corporation/`,
                 },
                 {
                   text: `Why choose Us`,
-                  url: `/`,
+                  url: `/why-choose-incfile/`,
                 },
               ],
             },
@@ -74,23 +74,23 @@ export const list = {
               links: [
                 {
                   text: `Learning Center`,
-                  url: `/`,
+                  url: `/learn-more/`,
                 },
                 {
                   text: `Compare LLC Filing Times`,
-                  url: `/`,
+                  url: `/compare-state-filing-times/`,
                 },
                 {
                   text: `About`,
-                  url: `/`,
+                  url: `/about/`,
                 },
                 {
                   text: `Contact - Existing Clients`,
-                  url: `/`,
+                  url: `/contact/existing-clients/`,
                 },
                 {
                   text: `Contact - New Sales`,
-                  url: `/`,
+                  url: `/contact/new-sales/`,
                 },
               ],
             },
@@ -107,11 +107,11 @@ export const list = {
               links: [
                 {
                   text: `LLC`,
-                  url: `/`,
+                  url: `/limited-liability-company/`,
                 },
                 {
                   text: `Nonprofit`,
-                  url: `/`,
+                  url: `/what-is-non-profit-corporation/`,
                 },
               ],
             },
@@ -119,7 +119,7 @@ export const list = {
               links: [
                 {
                   text: `S-Corporation`,
-                  url: `/`,
+                  url: `/what-is-s-corporation/`,
                 },
               ],
             },
@@ -127,7 +127,7 @@ export const list = {
               links: [
                 {
                   text: `C-Corporation`,
-                  url: `/`,
+                  url: `/what-is-c-corporation/`,
                 },
               ],
             },
@@ -145,11 +145,11 @@ export const list = {
               links: [
                 {
                   text: `Annual Reports`,
-                  url: `/`,
+                  url: `/manage-your-company/annual-report/`,
                 },
                 {
                   text: `Certificate of Good Standing`,
-                  url: `/`,
+                  url: `/manage-your-company/certificate-of-good-standing/`,
                 },
               ],
             },
@@ -157,11 +157,11 @@ export const list = {
               links: [
                 {
                   text: `Change of Registered Agent`,
-                  url: `/`,
+                  url: `/manage-your-company/change-of-registered-agent/`,
                 },
                 {
                   text: `Foreign Qualification`,
-                  url: `/`,
+                  url: `/manage-your-company/foreign-qualification/`,
                 },
               ],
             },
@@ -169,11 +169,11 @@ export const list = {
               links: [
                 {
                   text: `Amendment`,
-                  url: `/`,
+                  url: `/manage-your-company/amendment/`,
                 },
                 {
                   text: `Dissolution`,
-                  url: `/`,
+                  url: `/manage-your-company/dissolution/`,
                 },
               ],
             },
@@ -186,11 +186,11 @@ export const list = {
               links: [
                 {
                   text: `Registered Agent Services`,
-                  url: `/`,
+                  url: `/manage-your-company/registered-agent/`,
                 },
                 {
                   text: `Corporate/LLC Kit`,
-                  url: `/`,
+                  url: `/manage-your-company/corporatellc-kit/`,
                 },
               ],
             },
@@ -198,11 +198,11 @@ export const list = {
               links: [
                 {
                   text: `Business License Research`,
-                  url: `/`,
+                  url: `/business-license-research-package/`,
                 },
                 {
                   text: `File Business Taxes`,
-                  url: `/`,
+                  url: `/business-accounting/`,
                 },
               ],
             },
@@ -210,11 +210,11 @@ export const list = {
               links: [
                 {
                   text: `Trademark Name Search`,
-                  url: `/`,
+                  url: `/trademark-name-search/`,
                 },
                 {
                   text: `Fictitious Business Name`,
-                  url: `/`,
+                  url: `/fictitious-business-or-trade-name/`,
                 },
               ],
             },
@@ -227,7 +227,7 @@ export const list = {
               links: [
                 {
                   text: `EIN Employer Identification Number`,
-                  url: `/`,
+                  url: `/manage-your-company/tax-id-ein/`,
                 },
               ],
             },
@@ -235,7 +235,7 @@ export const list = {
               links: [
                 {
                   text: `S-Corp Tax Election – Form 2553`,
-                  url: `/`,
+                  url: `/llc-s-corp-election/`,
                 },
               ],
             },
@@ -243,7 +243,7 @@ export const list = {
               links: [
                 {
                   text: `File S Corp Tax Election`,
-                  url: `/`,
+                  url: `/llc-s-corp-election/`,
                 },
               ],
             },
@@ -260,27 +260,27 @@ export const list = {
               links: [
                 {
                   text: `Renew Registered Agent`,
-                  url: `/`,
+                  url: `/dashboard/`,
                 },
                 {
                   text: `State Filing Times`,
-                  url: `/`,
+                  url: `/state-filing-times/`,
                 },
                 {
                   text: `State Filing Prices`,
-                  url: `/`,
+                  url: `/state-filing-fees/`,
                 },
                 {
                   text: `Glossary`,
-                  url: `/`,
+                  url: `/glossary/`,
                 },
                 {
                   text: `Ongoing Filing Requirements`,
-                  url: `/`,
+                  url: `/compliance-filing-requirement/`,
                 },
                 {
                   text: `Business Startup Guides`,
-                  url: `/`,
+                  url: `/start-a-business/`,
                 },
               ],
             },
@@ -288,27 +288,27 @@ export const list = {
               links: [
                 {
                   text: `Business Checklist`,
-                  url: `/`,
+                  url: `/starting-a-business-checklist/`,
                 },
                 {
                   text: `Help Center`,
-                  url: `/`,
+                  url: `/help-center/`,
                 },
                 {
                   text: `S Corporation Tax Calculator`,
-                  url: `/`,
+                  url: `/s-corporation-tax-calculator/`,
                 },
                 {
                   text: `Check Order Status`,
-                  url: `/`,
+                  url: `/dashboard/`,
                 },
                 {
                   text: `Entity Comparison Chart`,
-                  url: `/`,
+                  url: `/business-entity-comparison/`,
                 },
                 {
                   text: `LLC State Information`,
-                  url: `/`,
+                  url: `/llc-state-information/`,
                 },
               ],
             },
@@ -316,27 +316,27 @@ export const list = {
               links: [
                 {
                   text: `Corporation State Information`,
-                  url: `/`,
+                  url: `/corporation-state-information/`,
                 },
                 {
                   text: `Annual Report Due Date Tool`,
-                  url: `/`,
+                  url: `/business-filing-deadlines/`,
                 },
                 {
                   text: `After Formation`,
-                  url: `/`,
+                  url: `/after-forming-llc/`,
                 },
                 {
                   text: `State Sales Tax Calculator`,
-                  url: `/`,
+                  url: `/sales-tax-calculator/`,
                 },
                 {
                   text: `Search Business Licenses`,
-                  url: `/`,
+                  url: `/business-license-tool/`,
                 },
                 {
                   text: `Registered Agents`,
-                  url: `/`,
+                  url: `/registered-agents/`,
                 },
               ],
             },
@@ -349,15 +349,15 @@ export const list = {
               links: [
                 {
                   text: `Search your name availability in New York`,
-                  url: `/`,
+                  url: `/new-york-entity-search/`,
                 },
                 {
                   text: `Search your name availability in Delaware`,
-                  url: `/`,
+                  url: `/delaware-entity-search/`,
                 },
                 {
                   text: `Search your name availability in New Jersey`,
-                  url: `/`,
+                  url: `/new-jersey-entity-search/`,
                 },
               ],
             },
@@ -365,15 +365,15 @@ export const list = {
               links: [
                 {
                   text: `Search your name availability in Virginia`,
-                  url: `/`,
+                  url: `/virginia-entity-search/`,
                 },
                 {
                   text: `Search your name availability in Michigan`,
-                  url: `/`,
+                  url: `/michigan-entity-search/`,
                 },
                 {
                   text: `Search your name availability in Florida`,
-                  url: `/`,
+                  url: `/florida-entity-search/`,
                 },
               ],
             },
@@ -381,11 +381,11 @@ export const list = {
               links: [
                 {
                   text: `Search your name availability in Georgia`,
-                  url: `/`,
+                  url: `/georgia-entity-search/`,
                 },
                 {
                   text: `Search your name availability in Texas`,
-                  url: `/`,
+                  url: `/texas-entity-search/`,
                 },
               ],
             },
@@ -402,48 +402,85 @@ export const list = {
             {
               links: [
                 {
-                  text: `aaa`,
-                  url: `/`,
+                  text: `How to Get a Trademark: A Complete Guide?`,
+                  url: `/research-topics/general-research-topics/how-to-get-trademark/`,
                 },
                 {
-                  text: `aaa`,
-                  url: `/`,
+                  text: `What is a Corporate Seal?`,
+                  url: `/research-topics/general-research-topics/what-is-a-corporate-seal/`,
                 },
                 {
-                  text: `aaa`,
-                  url: `/`,
-                },
-              ],
-            },
-            {
-              links: [
-                {
-                  text: `aaa`,
-                  url: `/`,
-                },
-                {
-                  text: `aaa`,
-                  url: `/`,
-                },
-                {
-                  text: `aaa`,
-                  url: `/`,
+                  text: `Does the designator “LLC” or “Inc.” always need to be included in your companies name?`,
+                  url: `/research-topics/general-research-topics/does-the-designator-llc-or-inc-always-need-to-be-included-in-your-companies-name/`,
                 },
               ],
             },
             {
               links: [
                 {
-                  text: `aaa`,
-                  url: `/`,
+                  text: `Does Incfile have a Discount or Coupon Code?`,
+                  url: `/research-topics/general-research-topics/does-incfile-have-a-discount-or-coupon-code/`,
                 },
                 {
-                  text: `aaa`,
-                  url: `/`,
+                  text: `Which entity offers the best tax advantages?`,
+                  url: `/research-topics/general-research-topics/which-entity-offers-the-best-tax-advantages/`,
                 },
                 {
-                  text: `aaa`,
-                  url: `/`,
+                  text: `What is the main function of the Registered Agent?`,
+                  url: `/research-topics/general-research-topics/what-is-the-main-function-of-the-registered-agent/`,
+                },
+              ],
+            },
+            {
+              links: [
+                {
+                  text: `What steps do I need to take to ensure that my entity remains compliant?`,
+                  url: `/research-topics/general-research-topics/what-steps-do-i-need-to-take-to-ensure-that-my-entity-remains-compliant/`,
+                },
+                {
+                  text: `Which entity type should I choose?`,
+                  url: `/research-topics/general-research-topics/which-entity-type-should-i-choose/`,
+                },
+                {
+                  text: `What is an LLC (Limited Liability Company)?`,
+                  url: `/research-topics/general-research-topics/what-is-an-llc-limited-liability-company/`,
+                },
+              ],
+            },
+            {
+              links: [
+                {
+                  text: `
+                  LLC and Corporation Ongoing Compliance Requirements`,
+                  url: `/research-topics/general-research-topics/llc-and-corporation-ongoing-compliance-requirements/`,
+                },
+                {
+                  text: `What is a Nonprofit Corporation?`,
+                  url: `/research-topics/general-research-topics/what-is-a-nonprofit-corporation/`,
+                },
+                {
+                  text: `Should I assume that if I form an LLC or incorporate that no one else can use the same name?`,
+                  url: `/research-topics/general-research-topics/should-i-assume-that-if-i-form-an-llc-or-incorporate-that-no-one-else-can-use-the-same-name/`,
+                },
+              ],
+            },
+            {
+              links: [
+                {
+                  text: `Does Forming an LLC (Limited Liability Company) or Corporation Require an Attorney?`,
+                  url: `/research-topics/general-research-topics/does-forming-an-llc-limited-liability-company-or-corporation-require-an-attorney/`,
+                },
+                {
+                  text: `In Which State Should I Form my LLC or Corporation?`,
+                  url: `/research-topics/general-research-topics/in-which-state-should-i-form-my-llc-or-corporation/`,
+                },
+                {
+                  text: `What is a Publication Requirement?`,
+                  url: `/research-topics/general-research-topics/what-is-a-publication-requirement/`,
+                },
+                {
+                  text: `What is the Customized Corporate/LLC Kit?`,
+                  url: `/research-topics/general-research-topics/what-is-the-customized-corporatellc-kit/`,
                 },
               ],
             },

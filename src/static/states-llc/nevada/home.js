@@ -43,7 +43,7 @@ export const howToGuide = [
         `Easy tax filing and potential advantages for tax treatment`
       ],
     },
-    marginBottom: 24,
+    marginBottom: 16,
     color: color.green3,
     curve: true,
     curveColor: color.red1,
@@ -70,7 +70,7 @@ export const howToGuide = [
   {
     type: `text`,
     content: `We’ve got lots of useful information on starting a business in NV. On this page you’ll find the basic steps of how to form a Nevada LLC, with more in-depth content throughout the rest of our guide.`,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `accordion`,
@@ -381,7 +381,7 @@ export const namingYourBusiness = [
         `Imply a purpose that it would be illegal for your business to carry out`
       ],
     },
-    marginBottom: 48,
+    marginBottom: 32,
     color: color.purple3,
   },
   {
@@ -528,7 +528,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Trademarks and Service Marks`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -542,13 +542,13 @@ export const namingYourBusiness = [
       url: `/trademark-name-search/`,
     },
     theme: `primary48`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Find the Perfect Name for Your Nevada LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -575,7 +575,7 @@ export const namingYourBusiness = [
       text: `Incfile guide to choosing a business name.`,
       url: `/blog/post/llc-name-search-50-states/`,
     },
-    marginBottom: 0,
+    marginBottom: 48,
   },
 ];
 
@@ -678,7 +678,7 @@ export const registeredAgent = [
       ],
     },
     marginBottom: 16,
-    color: color.orange3,
+    color: color.babyblue3,
   },
   {
     type: `button`,
@@ -698,7 +698,7 @@ export const registeredAgent = [
   {
     type: `text`,
     content: `You can appoint a Registered Agent when you first incorporate your Nevada LLC or at any point after that. Here’s how to go about it.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
@@ -740,7 +740,7 @@ export const registeredAgent = [
       url: `/form-order-now.php?entityType=LLC&entityState=AZ/`,
     },
     theme: `primary48`,
-    marginBottom: 32,
+    marginBottom: 48,
   },
   {
     type: `header`,
@@ -929,7 +929,7 @@ export const feesAndRequirments = [
     marginBottom: 16,
   },
   {
-    type: `table`,
+    type: `table-simple`,
     content: {
       headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
       rows: [[`$425`, `3 weeks`, `2 days`]],
@@ -949,7 +949,7 @@ export const feesAndRequirments = [
       text: `Compare State Filing Prices`,
       url: `/state-filing-fees/`,
     },
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -958,7 +958,7 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Some states allow you to form your LLC more quickly by paying a rush fee. You can <a href="/state-filing-times/" target="_blank">compare state filing times and fees here, including expedited fees for Nevada.</a>.`,
+    content: `Some states allow you to form your LLC more quickly by paying a rush fee. You can <a href="/state-filing-times/" target="_blank">compare state filing times and fees here, including expedited fees for Nevada</a>.`,
     marginBottom: 16,
   },
   {
@@ -1131,13 +1131,13 @@ export const feesAndRequirments = [
   {
     type: `text`,
     content: `There are several other fees or requirements that you may need to meet during the life of your Nevada LLC. These ad hoc fees will only be payable in specific circumstances, which we’ve listed below.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `To Obtain a Fictitious/DBA Name for Your Nevada LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1151,13 +1151,13 @@ export const feesAndRequirments = [
       url: `/fictitious-business-or-trade-name/`,
     },
     theme: `primary48`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `To Change the Nevada Registered Agent for Your NV LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1171,24 +1171,24 @@ export const feesAndRequirments = [
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `To Reserve a Name for Your Nevada LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `If you don’t want to form your NV business right away, you can reserve a name with the Nevada Secretary of State. You will need to pay a small fee to do this.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `To Amend Certain Facts About Your Nevada LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1206,7 +1206,7 @@ export const feesAndRequirments = [
       ],
     },
     marginBottom: 16,
-    color: color.orange3,
+    color: color.green3,
   },
   {
     type: `button`,
@@ -1215,13 +1215,13 @@ export const feesAndRequirments = [
       url: `/manage-your-company/amendment/`,
     },
     theme: `primary48`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `To Get a Certificate of Good Standing for Your Nevada LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1275,7 +1275,7 @@ export const feesAndRequirments = [
               <li>Governing organizations in your industry</li>
               <li>Federal, state and local regulations</li>
               </ul></br>
-            <p>That’s why our <a href="/business-license-research-package/" target="_blank">is so useful. It explores all of these areas for you and provides a comprehensive overview of exactly what your Nevada LLC needs to be compliant.</p>`,
+            <p>That’s why our <a href="/business-license-research-package/" target="_blank">business license research package</a> is so useful. It explores all of these areas for you and provides a comprehensive overview of exactly what your Nevada LLC needs to be compliant.</p>`,
         },
       ],
     },
@@ -1384,18 +1384,18 @@ export const businessTaxes = [
       text: `Get details on the Nevada sales tax online here.`,
       url: `https://www.nevadatax.nv.gov/`,
     },
-    bottomMargin: 48,
+    bottomMargin: 32,
   },
   {
     type: `header`,
     content: `Nevada Sales Tax Rates`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `Sales tax rates do vary between states, counties and cities. Typically, the state will set a base sales tax rate, then specific counties and cities may levy small additional sales tax amounts on top of that.`,
-    marginBottom: 16,
+    marginBottom: 48,
   },
   {
     type: `header`,
@@ -1406,13 +1406,13 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `There are a couple different federal taxes that every LLC will need to pay, including Nevada LLCs. These are self-employment tax and federal income tax, which are taxed as “pass-through” income via your tax return forms.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Nevada LLC Federal Self-Employment Tax`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1435,14 +1435,14 @@ export const businessTaxes = [
         `On profits of $140,000, you would pay self-employment tax of $21,420`
       ],
     },
-    marginBottom: 48,
+    marginBottom: 32,
     color: color.orange3,
   },
   {
     type: `header`,
     content: `Pay Less Self-Employment Tax by Treating Your Nevada LLC as an S Corporation`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1466,13 +1466,13 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `Speak to your accountant for more information on reducing your Nevada LLC self-employment tax through an S Corporation tax election.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Nevada LLC Federal Income Tax`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1493,46 +1493,46 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `If you pay employees, there are some slightly different tax implications. Speak to your accountant to get clear guidance for your own unique situation.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Employer Payroll Tax Withholding for Your Nevada LLC `,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `All employers must collect and withhold payroll tax from their employees when they receive their salaries. You would normally withhold 7.65 percent of the taxable salary that you pay to your employees.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Employer Federal Tax Withholding for Your Nevada LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `You may also choose to withhold federal income tax on the wages you pay to employees. Speak to your accountant for more information.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Employees May Need to File Tax Returns`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `Regardless of whether you withhold federal income tax, your employees may need to file their own tax returns.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Nevada LLC Employee Insurance and Other Requirements`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1545,24 +1545,24 @@ export const businessTaxes = [
       text: `Get more requirements from the Nevada Department of Business and Industry website.`,
       url: `http://business.nv.gov/`,
     },
-    bottomMargin: 48,
+    bottomMargin: 32,
   },
   {
     type: `header`,
     content: `Other Taxes and Duties for Your Nevada LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `Depending on the industry you are in, your Nevada LLC may be liable for certain other taxes and duties. For example, if you sell gasoline you may need to pay a tax on any fuel you sell. Likewise, if you import or export goods, you may need to pay certain duties. Speak to your accountant about any other taxes you may need to withhold or pay.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Estimated Taxes for Your Nevada LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,

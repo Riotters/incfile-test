@@ -19,7 +19,7 @@ import FreeTaxConsulting from "../atomic/sections/business-accounting/free-tax-c
 
 const BusinessAccountingV2 = () => (
   <Layout>
-    <SEO title="Filing Your Business Taxes With Ease" description="Eliminate the hassle of filing taxes for your LLC, S Corp, C Corp or Nonprofit. Work with a tax professional." />
+    <SEO title="Small Business Accounting & Bookkeeping Services | Incfile" description="Looking for a business accountant to handle your tax filing and bookkeeping? Incfile helps make it easy. Get a free tax consultation today." />
     <Top imageName="main-header-illustration-business-startup-guides-4593" imageAlt="Business startup guides" ovalColor="sun" contentWidth={700} headlineWidth={700} textWidth={700}>
       <Heading size={1} maxWidth={700}>
         {top.header}

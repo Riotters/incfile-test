@@ -15,8 +15,8 @@ import { tabPages } from "../../static/states-llc/iowa/general";
 const BusinessNamesPage = () => (
   <Layout>
     <SEO
-    title="Texas Business Search | How to Name Your TX LLC"
-    description="Learn what you need to know about naming an LLC in Texas with Incfile's helpful resources. Pick your perfect business name today!"
+    title="Iowa Business Search | How to Name Your IA LLC"
+    description="Learn what you need to know about naming an LLC in Iowa with Incfile's helpful resources. Pick your perfect business name today!"
     />
     <LLCLayout>
         <LeftTabPages content={tabPages} />

@@ -274,7 +274,7 @@ export const namingYourBusiness = [
       text: `Missouri Secretary of State business name search tool`,
       url: `https://bsd.sos.mo.gov/search`,
     },
-    marginBottom: 0,
+    marginBottom: 48,
   },
   {
     type: `header`,
@@ -296,7 +296,7 @@ export const namingYourBusiness = [
   {
     type: `text`,
     content: `The business name you have chosen cannot be used by any other LLC or corporation in the state of Missouri. This is why you should check business name availability on the MO SOS website.`,
-    marginBottom: 32,
+    marginBottom: 48,
   },
   {
     type: `header`,
@@ -320,7 +320,7 @@ export const namingYourBusiness = [
         `Abbreviations, punctuation, symbols, fonts, typefaces, etc.`
       ],
     },
-    marginBottom: 32,
+    marginBottom: 48,
     color: color.yellow3,
   },
   {
@@ -332,7 +332,7 @@ export const namingYourBusiness = [
   {
     type: `text`,
     content: `All LLCs must have the words “Limited Liability Company,” “L.L.C.” or “LLC” in their name. These words should normally come at the end of the name.`,
-    marginBottom: 32,
+    marginBottom: 48,
   },
   {
     type: `header`,
@@ -459,7 +459,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Trademarks and Service Marks`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -479,7 +479,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Find the Perfect Name for Your Missouri LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -506,7 +506,7 @@ export const namingYourBusiness = [
       text: `Incfile guide to choosing a business name`,
       url: `/blog/post/llc-name-search-50-states/`,
     },
-    marginBottom: 0,
+    marginBottom: 48,
   },
 ];
 
@@ -565,7 +565,7 @@ export const registeredAgent = [
         `The MO Registered Agent must be available in person during normal business hours to sign for any correspondence.`,
       ],
     },
-    marginBottom: 48,
+    marginBottom: 16,
     color: color.purple3,
   },
   {
@@ -646,7 +646,7 @@ export const registeredAgent = [
   {
     type: `text`,
     content: `You can appoint a Registered Agent when you first incorporate your Missouri LLC or at any point after that. Here’s how to go about it.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
@@ -657,7 +657,7 @@ export const registeredAgent = [
   {
     type: `text`,
     content: `Your business needs to have a Missouri Registered Agent Service as soon as it’s formed. You can achieve this through one of the following methods.`,
-    marginBottom: 32,
+    marginBottom: 48,
   },
   {
     type: `header`,
@@ -668,7 +668,7 @@ export const registeredAgent = [
   {
     type: `text`,
     content: `You will need to include details of your Registered Agent in your Articles of Organization. This is the form that you file with the MO Secretary of State to formally create your business.`,
-    marginBottom: 32,
+    marginBottom: 48,
   },
   {
     type: `header`,
@@ -688,7 +688,7 @@ export const registeredAgent = [
       url: `/form-order-now.php?entityType=LLC&entityState=AZ/`,
     },
     theme: `primary48`,
-    marginBottom: 32,
+    marginBottom: 48,
   },
   {
     type: `header`,
@@ -710,7 +710,7 @@ export const registeredAgent = [
   {
     type: `text`,
     content: `Once you’ve chosen a new Missouri Registered Agent, you can complete a “Statement of Change of Registered Agent” form. Once you’ve filled it out, send it to the secretary of state so they can update your records.`,
-    marginBottom: 32,
+    marginBottom: 48,
   },
   {
     type: `header`,
@@ -831,7 +831,7 @@ export const registeredAgent = [
     type: `header`,
     content: `Useful Resources for Missouri Registered Agent Services`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -877,7 +877,7 @@ export const feesAndRequirments = [
     marginBottom: 16,
   },
   {
-    type: `table`,
+    type: `table-simple`,
     content: {
       headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
       rows: [[`$52`, `10 business days`, `3 business days`]],
@@ -897,7 +897,7 @@ export const feesAndRequirments = [
       text: `Compare State Filing Prices`,
       url: `/state-filing-fees/`,
     },
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -983,7 +983,7 @@ export const feesAndRequirments = [
   {
     type: `text`,
     content: `<a href="/business-filing-deadlines/" target="_blank" >Learn about your ongoing Missouri LLC filing requirements</a> and business filing deadlines with our helpful Missouri filing lookup tool.`,
-    marginBottom: 16,
+    marginBottom: 48,
   },
   {
     type: `header`,
@@ -1060,13 +1060,13 @@ export const feesAndRequirments = [
   {
     type: `text`,
     content: `There are several other fees or requirements that you may need to meet during the life of your Missouri LLC. These ad hoc fees will only be payable in specific circumstances, which we’ve listed below.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `To Obtain a Fictitious/DBA Name for Your Missouri LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1086,7 +1086,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `To Change the Missouri Registered Agent for Your MO LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1106,7 +1106,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `To Reserve a Name for Your Missouri LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1117,7 +1117,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `To Amend Certain Facts About Your Missouri LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1150,7 +1150,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Missouri Certificate of Good Standing for an LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1204,7 +1204,7 @@ export const feesAndRequirments = [
               <li>Governing organizations in your industry</li>
               <li>Federal, state and local regulations</li>
               </ul></br>
-            <p>That’s why our <a href="/business-license-research-package/" target="_blank"> is so useful. It explores all of these areas for you and provides a comprehensive overview of exactly what your Missouri LLC needs to be compliant.</p>`,
+            <p>That’s why our <a href="/business-license-research-package/" target="_blank">business license research package</a> is so useful. It explores all of these areas for you and provides a comprehensive overview of exactly what your Missouri LLC needs to be compliant.</p>`,
         },
       ],
     },
@@ -1345,13 +1345,13 @@ export const businessTaxes = [
       text: `Get details on the Missouri sales tax here.`,
       url: `https://mytax.mo.gov/rptp/portal/home/fileandpaybusinesstaxesonline/!ut/p/z1/jc9LC4JAEADg39LBqzM-Eum2dFAsEhEfzSWUbDXUldX8_S0WdClpLvPgm4EBghyoL-aGF1Mj-qJV_Zmci2mgafh7DDGNbIxUOsWBg3iwIVsA_giGQP_srwBaP58BLcRyce_5aAZeEpvIQpbYKQtUZb_Byo0AiLeifL3L-tJyOZCsbpWspP6QalxP0zDuNNTwKqTeCZ2LWcNvvBbjBPlHwdAlOd637XxkmycYuLyS/dz/d5/L2dBISEvZ0FBIS9nQSEh/`,
     },
-    bottomMargin: 48,
+    bottomMargin: 32,
   },
   {
     type: `header`,
     content: `Missouri Tax ID Number`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1362,7 +1362,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Missouri Sales Tax Rates`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1378,13 +1378,13 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `There are a couple different federal taxes that every LLC will need to pay, including Missouri LLCs. These are self-employment tax and federal income tax, which are taxed as “pass-through” income via your tax return forms.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Missouri LLC Federal Self-Employment Tax`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1414,7 +1414,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Pay Less Self-Employment Tax by Treating Your Missouri LLC as an S Corporation`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1444,7 +1444,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Missouri LLC Federal Income Tax`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1460,7 +1460,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Employee and Employer Taxes for Your Missouri LLC`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1471,7 +1471,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Missouri LLC Employer Payroll Tax Withholding`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1482,7 +1482,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Missouri LLC Federal and State Tax Withholding`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1493,7 +1493,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Employees May Need to File Tax Returns`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1504,7 +1504,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Missouri LLC Employee Insurance and Other Requirements`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1523,7 +1523,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Other Taxes and Duties for Your Missouri LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1534,7 +1534,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Estimated Taxes for Your Missouri LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,

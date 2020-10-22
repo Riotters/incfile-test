@@ -12,7 +12,7 @@ import { top, listings, start, industry, isCatch } from "../static/other/arizona
 
 const GeneralResearchTopics = () => (
   <Layout>
-    <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
+    <SEO title="Arizona Newspaper List from the AZ Corporation Commission" description="View the list of publishers that meet the statutory requirements for publishing documents filed with the Arizona Corporation Commission." />
     <Top imageName="mrs-bulb-arizona-publication-newspaper-list-8115" imageAlt="Mrs Bulb and with checklist" ovalColor="purple-2" contentWidth="52" headlineWidth="800">
       <h1>{top.header}</h1>
       <RatingRow topMargin="8">

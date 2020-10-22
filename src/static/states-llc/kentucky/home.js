@@ -38,7 +38,7 @@ export const howToGuide = [
         `Easy tax filing and potential advantages for tax treatment`
       ],
     },
-    marginBottom: 24,
+    marginBottom: 16,
     color: color.green3,
     curve: true,
     curveColor: color.red1,
@@ -141,13 +141,13 @@ export const howToGuide = [
   {
     type: `text`,
     content: `A regular Kentucky LLC is suitable for most business needs, but you also have a few other options to incorporate a special type of LLC.`,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Form a Professional Kentucky LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -198,18 +198,18 @@ export const howToGuide = [
   {
     type: `text`,
     content: `Want to know your next steps after creating a new LLC in Kentucky? We’ve got you covered. Here’s our guide to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Detailed Information for Your Kentucky LLC`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `You’ll find plenty more insight and guidance on the other pages of this guide, including:`,
-    marginBottom: 32,
+    marginBottom: 48,
   },
   {
     type: `arrow-link`,
@@ -261,7 +261,7 @@ export const howToGuide = [
   {
     type: `text`,
     content: `How to understand the various taxes you will need to pay to the federal and Kentucky government. Includes details of federal taxes like income and self-employment, and Kentucky taxes like sales tax and income tax.`,
-    marginBottom: 0,
+    marginBottom: 48,
   },
 ];
 
@@ -310,13 +310,13 @@ export const namingYourBusiness = [
   {
     type: `text`,
     content: `Once you’ve decided on a name for your LLC and checked business name availability, you’ll need to meet Kentucky Secretary of State naming rules. These do vary from state to state — we’ve got general naming rules below, as well as naming rules specific to LLC businesses formed in KY.`,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Your LLC Business Name Must Be Unique`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -327,12 +327,12 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Your LLC Business Name Must Not Be Confusable with Another Business Name`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `It’s not enough for your KY LLC name to be unique. It also cannot be similar to the name of a corporation or LLC in Kentucky.`,
-    marginBottom: 32,
+    marginBottom: 16,
   },
   {
     type: `list-dot`,
@@ -352,7 +352,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Your LLC Business Name Must Contain Certain Words`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -363,7 +363,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Your LLC Business Name May Have Other General Restrictions`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -480,7 +480,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Trademarks and Service Marks`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -494,18 +494,18 @@ export const namingYourBusiness = [
       url: `/trademark-name-search/`,
     },
     theme: `primary48`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Find the Perfect Name for Your Kentucky LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `The perfect business name can be elusive. We have a complete guide to choosing the right business name, but basically, you'll want to choose a name that will:`,
-    marginBottom: 20,
+    marginBottom: 16,
   },
   {
     type: `list-dot`,
@@ -518,7 +518,7 @@ export const namingYourBusiness = [
         `Not be used by another business`
       ],
     },
-    marginBottom: 40,
+    marginBottom: 16,
     color: color.orange3,
   },
   {
@@ -527,7 +527,7 @@ export const namingYourBusiness = [
       text: `Incfile guide to choosing a business name.`,
       url: `/blog/post/llc-name-search-50-states/`,
     },
-    marginBottom: 30,
+    marginBottom: 32,
   },
 ];
 
@@ -650,35 +650,35 @@ export const registeredAgent = [
   {
     type: `text`,
     content: `You can appoint a Registered Agent when you first incorporate your Kentucky LLC or at any point after that. Here’s how to go about it.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Appoint a KY Registered Agent Service When You Create Your Kentucky LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `Your business needs to have a Kentucky Registered Agent Service as soon as it’s formed. You can achieve this through one of the following methods.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `File Articles of Organization with the Kentucky Secretary of State`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `You will need to include details of your Registered Agent in your Articles of Organization. This is the form that you file with the KY Secretary of State to formally create your business.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Incorporate Through Incfile and Get a Free Kentucky Registered Agent`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -703,24 +703,24 @@ export const registeredAgent = [
   {
     type: `text`,
     content: `You can also change your KY Registered Agent service after you’ve formed your LLC. There are a couple of ways to achieve this.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Choose a Registered Agent Service and File a Form with the Kentucky Secretary of State`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `Once you’ve chosen a new Kentucky Registered Agent, you can complete a form. Once you’ve filled it out, send it to the secretary of state so they can update your records.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Sign Up for Incfile’s Kentucky Registered Agent Service and We’ll File the Change on Your Behalf`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -774,7 +774,7 @@ export const registeredAgent = [
       ],
     },
     marginBottom: 48,
-    color: color.green3,
+    color: color.purple3,
   },
   {
     type: `header`,
@@ -834,7 +834,7 @@ export const registeredAgent = [
     type: `header`,
     content: `Useful Resources for Kentucky Registered Agent Services`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -880,7 +880,7 @@ export const feesAndRequirments = [
     marginBottom: 16,
   },
   {
-    type: `table`,
+    type: `table-simple`,
     content: {
       headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
       rows: [[`$40`, `1 weeks`, `2 business days`]],
@@ -900,7 +900,7 @@ export const feesAndRequirments = [
       text: `Compare State Filing Prices`,
       url: `/state-filing-fees/`,
     },
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1084,13 +1084,13 @@ export const feesAndRequirments = [
   {
     type: `text`,
     content: `There are several other fees or requirements that you may need to meet during the life of your Kentucky LLC. These ad hoc fees will only be payable in specific circumstances, which we’ve listed below.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `To Obtain a Fictitious/DBA Name for Your Kentucky LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1104,13 +1104,13 @@ export const feesAndRequirments = [
       url: `/fictitious-business-or-trade-name/`,
     },
     theme: `primary48`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `To Change the Kentucky Registered Agent for Your KY LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1124,24 +1124,24 @@ export const feesAndRequirments = [
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `To Reserve a Name for Your Kentucky LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `If you don’t want to form your KY business right away, you can reserve a name with the Kentucky Secretary of State. You will need to pay a small fee to do this.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `To Amend Certain Facts About Your Kentucky LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1168,13 +1168,13 @@ export const feesAndRequirments = [
       url: `/manage-your-company/amendment/`,
     },
     theme: `primary48`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `To Get a Certificate of Good Standing for Your Kentucky LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1377,13 +1377,13 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `There are a couple different federal taxes that every LLC will need to pay, including Kentucky LLCs. These are self-employment tax and federal income tax, which are taxed as “pass-through” income via your tax return forms.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Kentucky LLC Federal Self-Employment Tax`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1406,14 +1406,14 @@ export const businessTaxes = [
         `On profits of $120,000, you would pay self-employment tax of $18,360.`
       ],
     },
-    marginBottom: 48,
+    marginBottom: 32,
     color: color.orange3,
   },
   {
     type: `header`,
     content: `Pay Less Self-Employment Tax by Treating Your Kentucky LLC as an S Corporation`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1437,13 +1437,13 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `Speak to your accountant for more information on reducing your Kentucky LLC self-employment tax through an S Corporation tax election.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Kentucky LLC Federal Income Tax`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1470,29 +1470,29 @@ export const businessTaxes = [
     type: `header`,
     content: `Employer Federal and State Tax Withholding for Your Kentucky LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `You may also choose to withhold federal and Kentucky state income tax on the wages you pay to employees. Speak to your accountant for more information.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Employees May Need to File Tax Returns`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `Regardless of whether you withhold federal and Kentucky state income tax, your employees may need to file their own tax returns.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Kentucky LLC Employee Insurance and Other Requirements`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1502,24 +1502,24 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `Get more requirements from the <a href="https://labor.ky.gov/Pages/index.aspx" target="_blank" rel="noopener noreferrer">Kentucky Labor Cabinet website.</a>`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Other Taxes and Duties for Your Kentucky LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `Depending on the industry you are in, your Kentucky LLC may be liable for certain other taxes and duties. For example, if you sell gasoline you may need to pay a tax on any fuel you sell. Likewise, if you import or export goods you may need to pay certain duties. Speak to your accountant about any other taxes you may need to withhold or pay.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Estimated Taxes for Your Kentucky LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,

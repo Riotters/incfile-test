@@ -15,8 +15,8 @@ import { tabPages } from "../../static/states-llc/alabama/general";
 const BusinessTaxesPage = () => (
   <Layout>
     <SEO
-    title="Texas Business Search | How to Name Your TX LLC"
-    description="Learn what you need to know about naming an LLC in Texas with Incfile's helpful resources. Pick your perfect business name today!"
+    title="Alabama Business Search | How to Name Your TX LLC"
+    description="Learn what you need to know about naming an LLC in Alabama with Incfile's helpful resources. Pick your perfect business name today!"
     />
     <LLCLayout>
         <LeftTabPages content={tabPages} />
