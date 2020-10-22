@@ -91,6 +91,10 @@ export const differences = {
     header: `Differences between types of corporations`,
     text: `One of the main differences between C Corps and S Corps / LLCs are how income from the different types of businesses are taxed.`,
   },
+  table: {
+    headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
+    rows: [[`$99`, `3 Weeks`, `7 Business Day`]],
+  },
 };
 
 export const requirements = {
