@@ -16,7 +16,7 @@ export const howToGuide = [
     type: `header`,
     content: `How to Start an LLC in Ohio`,
     size: 2,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -251,7 +251,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Ohio Secretary of State Business Search & Naming Your LLC`,
     size: 2,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -582,11 +582,9 @@ export const namingYourBusiness = [
 export const registeredAgent = [
   {
     type: `header`,
-    content: `Registered/Statutory Agents and Your Ohio LLC
-
-    `,
+    content: `Registered/Statutory Agents and Your Ohio LLC`,
     size: 2,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -689,7 +687,7 @@ export const registeredAgent = [
             ],
     },
     marginBottom: 24,
-    color: color.red3,
+    color: color.green3,
     curve: true,
     curveColor: color.blue1,
   },
@@ -945,7 +943,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Ohio LLC Forms, Fees, and Requirements`,
     size: 2,
-    marginBottom: 24,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -1330,7 +1328,7 @@ export const businessTaxes = [
     type: `header`,
     content: `The Business Taxes Payable by Your Ohio LLC`,
     size: 2,
-    marginBottom: 24,
+    marginBottom: 40,
   },
   {
     type: `text`,

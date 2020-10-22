@@ -572,7 +572,7 @@ export const registeredAgent = [
              `Official New Mexico and federal government documents, form filings and requests for information (including taxes, permits and company filings)`],
     },
     marginBottom: 24,
-    color: color.red3,
+    color: color.yellow3,
     curve: true,
     curveColor: color.blue1,
   },
@@ -858,7 +858,7 @@ export const feesAndRequirments = [
     marginBottom: 32,
   },
   {
-    type: `table`,
+    type: `table-simple`,
     content: {
       headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
       rows: [[`$50`, `10 Business Days`, `2 Business Day`]],
@@ -1139,7 +1139,7 @@ export const feesAndRequirments = [
              `Changing the business address of your LLC`,
              `Altering the stated business activities of your New Mexico LLC`],
     },
-    marginBottom: 0,
+    marginBottom: 16,
     color: color.yellow3,
   },
   {
