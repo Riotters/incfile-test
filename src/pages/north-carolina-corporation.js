@@ -83,11 +83,13 @@ const AlaskaCorporation = () => (
               Choosing a Corporation Name
             </Heading>
             <Paragraph big>
-              Your new Alaska corporation‘s name cannot be the same as or deceptively similar to the name of any other Alaska business entity registered or reserved with the state. It also is not permitted to be the same as any non-registered business name that has been established in common law by
-              usage over a long period of time. The name must contain (at the end) the words “incorporated,” “corporation,” “limited,” or “company,” or an abbreviation of one of those terms.
+            Choosing a name for your new North Carolina corporation is one of the first official steps toward actually conducting business in the Tarheel State. The business name you choose must be able to be readily distinguished from all other registered North Carolina business entities, as well as any names already reserved on the state rolls (with some exceptions).
+            </Paragraph>
+            <Paragraph big>
+            Your new business’ name may not state or imply that it is organized for a purpose other than one permitted by state law and its articles of incorporation. The name must end with one of the following terms or its abbreviation: “Incorporated,” “Corporation,” “Company,” or “Limited.”
             </Paragraph>
             <Paragraph big style={{ marginBottom: "0" }}>
-              The name may not include language that states or implies that the corporation is organized for some purpose other than stated in its articles of incorporation, or that it is a municipality (city, borough, or village). However, the name is allowed to contain the name of a municipality.
+            Available corporate names may be reserved for up to 120 days for a $30 fee.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -95,24 +97,24 @@ const AlaskaCorporation = () => (
               Articles of Incorporation
             </Heading>
             <Paragraph big>
-              So that your Alaska corporation can actually start doing business in the state, you must file articles of incorporation with the Division of Banking, Securities, and Corporations in the Alaska Department of Commerce, Community, and Economic Development (DCCED). The filing fee is $250,
-              which includes a $100 biennial license fee that will be an ongoing requirement.
+            In accordance with the North Carolina Business Corporation Act (Chapter 55 of the North Carolina General Statutes), corporations must file articles of incorporation with the state Secretary of State’s office before conducting business. The articles must be delivered by at least one of the incorporators, accompanied by the filing fee of $125.
             </Paragraph>
-            <Paragraph big>Your new LLC’s articles of incorporation must be signed by at least one person, called an incorporator, who must be at least 18 years old and a natural person (not a business entity). They must sign the articles and deliver them to the DCCED.</Paragraph>
+            <Paragraph big>Normal processing time by the state is five business from the date the state filing office receives your articles. Filing within 24 hours is $100 extra; same-day filing costs an additional $200.</Paragraph>
 
             <Colorbox color={color.blue3} content={articlesOfIncorporation.box1} dotsColor={color.blue1} style={{ marginBottom: "65px" }} />
+            
+            <Paragraph big>North Carolina law allows a corporation to be formed for any lawful business activity. There is no requirement for a specific corporate purpose to be stated in the articles of incorporation. North Carolina law also allows (but does not require) optional items to be included in the articles of incorporation for those corporations who wish to formally specify additional information.</Paragraph>
 
             <Colorbox color={color.orange3} content={articlesOfIncorporation.box2} dotsColor={color.orange1} style={{ marginBottom: "48px" }} />
 
-            <Paragraph big>If the initial articles do not name directors for the corporation, the incorporators may elect directors or amend the bylaws.</Paragraph>
+            <Paragraph big>In North Carolina, it’s not required to state a par value for your new corporation’s shares. The filing fee is not based on how many shares are authorized, so you can authorize as desired. Most incorporators authorize one class of common shares with equal voting, dividend, and liquidation rights, with no special restrictions.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Registered Agent and Office
             </Heading>
             <Paragraph big>
-              Alaska corporations must have a registered agent in the state-a person or office designated to receive official state administrative and legal correspondence. The agent must be either an adult who is a resident of Alaska whose business office is the same as the registered office, or it
-              may be a corporation whose business office is the same as the registered office.
+            Every North Carolina corporation must have a registered agent in the state-someone designated to receive official state correspondence, including notice if the corporation is “served” with a lawsuit. The registered agent must be either a North Carolina resident whose business office is the same as the registered office, or a corporation with a business office identical with the registered office.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -120,53 +122,43 @@ const AlaskaCorporation = () => (
               Bylaws
             </Heading>
             <Paragraph big>
-              Bylaws lay out the corporation’s basic operating principles from both the managerial and legal perspectives. A corporation must keep its bylaws available at its principal executive office, but is not required to file them with the state. The incorporators or board of directors should
-              adopt the corporation’s bylaws at their first meeting-insuring there is no conflict with the corporation’s articles of incorporation-and keep them updated as time goes on.
+            Bylaws describe the corporation’s basic managerial and legal operating principles. A North Carolina corporation must keep a copy of its bylaws at its main executive office, but is not required to file them with the state. The bylaws may contain any provision for managing the business and regulating the affairs of the corporation that’s not in conflict with law or the articles of incorporation.
+            </Paragraph>
+            <Paragraph big>
+            The board of directors of a corporation may adopt, amend, or repeal bylaws, unless the articles reserve this right to the shareholders. At its initial meeting, the board of directors should adopt corporate bylaws, and then keep them updated as time goes on.
             </Paragraph>
             <Paragraph big style={{ fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
-              Bylaws should include, at minimum:
+            Bylaws normally address:
             </Paragraph>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>What authority directors have, how many there are, and how long they serve</Paragraph>
+              <Paragraph bottomMargin={0}>Shareholders and directors meetings</Paragraph>
             </TextBoxed>
-
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>Duties and responsibilities of officers and how long they serve</Paragraph>
+              <Paragraph bottomMargin={0}>The authority, number, and tenure of directors</Paragraph>
             </TextBoxed>
-
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>How consensus on major decisions is reached, both with and without meetings</Paragraph>
+              <Paragraph bottomMargin={0}>Voting procedures</Paragraph>
             </TextBoxed>
-
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>How, when, and where shareholders’ and directors’ meetings are held</Paragraph>
+              <Paragraph bottomMargin={0}>The duties, responsibilities, and tenure of officers</Paragraph>
             </TextBoxed>
-
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>How the corporation’s stock is issued</Paragraph>
+              <Paragraph bottomMargin={0}>How stock is issued</Paragraph>
             </TextBoxed>
-
-            <TextBoxed style={{ marginBottom: "48px" }}>
-              <Paragraph bottomMargin={0}>Requirements for publishing annual financial information to shareholders</Paragraph>
+            <TextBoxed style={{ marginBottom: "8px" }}>
+              <Paragraph bottomMargin={0}>How and when annual financial information is provided to shareholders</Paragraph>
             </TextBoxed>
-
-            <Paragraph big>
-              Even though the corporation is not required to file its bylaws with the state, if the articles of incorporation don’t specify the number of directors, the bylaws must either state the exact number of directors or specify a minimum or maximum number of directors, along with the way that
-              shareholder or board approval will determine the exact number at a specified later date.
-            </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Directors
             </Heading>
             <Paragraph big>
-              The board of directors has the responsibility of making the corporation’s major decisions. There must be at least one director; the number should be specified in the bylaws unless it is already set forth in the articles of incorporation. If no number is specified in either document,
-              the “default” number will be three. A change in the number of directors must be approved by a majority of the board, but such a change cannot shorten the term of any currently-serving director.
+            A director of the corporation must be a “natural person” (as opposed to a business entity) who is at least 18 years of age, and there must be at least one. The articles of incorporation or the corporation’s bylaws may specify additional qualifications for directors.
             </Paragraph>
             <Paragraph big>
-              Titles and duties of the corporation’s officers must be either listed in the bylaws or determined by the board of directors. Any two or more offices may be held by the same person, except the offices of president and secretary. When all of the issued and outstanding stock of the
-              corporation is owned by one person, the person may hold all or any combination of offices.
+            An officer may hold more than one corporate office unless prohibited by the corporation’s bylaws. However, no individual is allowed to act in more than one capactity where the action of two or more officers is required.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -174,46 +166,36 @@ const AlaskaCorporation = () => (
               Requirement Reports
             </Heading>
             <Paragraph big style={{ marginBottom: "48px" }}>
-              Each Alaska corporation must file a biennial (every two years) report with the state before January 2 of each filing year, along with a $100 biennial license fee. The first report must be within six months of organization, but does not require the $100 fee because it is included in the
-              $250 fee at the time of incorporation.
+            An annual report must be filed (in either paper or electronic format) with the North Carolina Secretary of State each year by the 15th day of the third month after the end of the corporation’s fiscal year.
             </Paragraph>
 
             <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
-              The report must include:
+            This report must include:
             </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>What authority directors have, how many there are, and how long they serve</Paragraph>
+              <Paragraph bottomMargin={0}>The corporation’s official name and its state or country of incorporation.</Paragraph>
             </TextBoxed>
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The name and address of its registered agent and registered office</Paragraph>
+              <Paragraph bottomMargin={0}>The county, street address, and mailing address (if different) of its registered office, the registered agent at that office, and a statement of change regarding any change of the registered agent and/or registered office.</Paragraph>
             </TextBoxed>
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The principal corporate address for foreign corporations</Paragraph>
+              <Paragraph bottomMargin={0}>The address and telephone number of the corporation’s main office.</Paragraph>
             </TextBoxed>
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The nature of the corporation’s business</Paragraph>
+              <Paragraph bottomMargin={0}>The names, titles, and business addresses of its principal officers.</Paragraph>
             </TextBoxed>
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The names and addresses of the corporation’s directors and officers</Paragraph>
+              <Paragraph bottomMargin={0}>A brief description of the nature of the business.</Paragraph>
             </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>An itemization of shares authorized to be issued by the corporation</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>An itemization of shares that have been issued to date</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>Information on all alien affiliates</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The name, address, and ownership percentage of each shareholder who owns more than five percent of the corporation’s stock</Paragraph>
-            </TextBoxed>
+            <Paragraph big>
+            Additionally, state law requires that the corporation mail an annual financial statement to all shareholders within 120 days of the end of the corporate fiscal year. These statements must include a year-end balance sheet, an income statement for that year, and a statement of the year’s cash flows, unless that information appears elsewhere in the financial statements
+            </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Taxes
             </Heading>
-            <Paragraph big>Alaska imposes a corporate income tax similar to the federal corporate income tax, based on graduated tax rates. Alaska does recognize “S corporation” status.</Paragraph>
+            <Paragraph big>North Carolina corporations are subject to a state corporate income tax. They must also pay an annual franchise tax, the minimum amount of which is $35.</Paragraph>
           </PanelWrapper>
         </CollapseWrapper>
       </TabsSection>

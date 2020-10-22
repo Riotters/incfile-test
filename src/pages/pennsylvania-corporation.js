@@ -83,11 +83,16 @@ const AlaskaCorporation = () => (
               Choosing a Corporation Name
             </Heading>
             <Paragraph big>
-              Your new Alaska corporation‘s name cannot be the same as or deceptively similar to the name of any other Alaska business entity registered or reserved with the state. It also is not permitted to be the same as any non-registered business name that has been established in common law by
-              usage over a long period of time. The name must contain (at the end) the words “incorporated,” “corporation,” “limited,” or “company,” or an abbreviation of one of those terms.
+            Choosing a name for your new Pennsylvania Corporation is one of the first official steps toward actually conducting business in the Keystone State. The business name you choose must be distinguishable from other registered Pennsylvania business entities, as well as any names already reserved (with some exceptions).
+            </Paragraph>
+            <Paragraph big>
+            Your new business’ name may not state or imply that it is a state or federal governmental agency, or that it is organized for a purposed other than that permitted by state law and the corporation’s articles of incorporation. The name also (with a few exceptions) may not state or imply that it is a credit union or a public utility company. The name must use Roman characters and Roman or Arabic numerals, and it may not contain language that constitutes blasphemy, profane cursing, swearing, or profaning the Lord’s name.
+            </Paragraph>
+            <Paragraph big>
+            The name must include one of the following terms or its abbreviation (or words or abbreviations of the same meaning in another language): “Incorporated,” “Corporation,” “Company,” “Limited,” “Association,” “Fund,” or “Syndicate.” “Company” or “Co.” may be immediately preceded by “and” or the symbol “&.”
             </Paragraph>
             <Paragraph big style={{ marginBottom: "0" }}>
-              The name may not include language that states or implies that the corporation is organized for some purpose other than stated in its articles of incorporation, or that it is a municipality (city, borough, or village). However, the name is allowed to contain the name of a municipality.
+            Available corporate names may be reserved for up to 120 days for a $70 fee.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -95,24 +100,27 @@ const AlaskaCorporation = () => (
               Articles of Incorporation
             </Heading>
             <Paragraph big>
-              So that your Alaska corporation can actually start doing business in the state, you must file articles of incorporation with the Division of Banking, Securities, and Corporations in the Alaska Department of Commerce, Community, and Economic Development (DCCED). The filing fee is $250,
-              which includes a $100 biennial license fee that will be an ongoing requirement.
+            In accordance with the Pennsylvania Business Corporation Law (found in Title 15 of the Pennsylvania Consolidated Statutes), corporations must file articles of incorporation with the Department of State, Corporation Bureau, before conducting business in the state. The articles must be delivered by at least one of the incorporators, accompanied by the filing fee of $125. There must be at least one incorporator, who must be either a natural person of adult age or a corporation. The incorporator does not have to be a director, officer, or shareholder of the corporation.
             </Paragraph>
             <Paragraph big>Your new LLC’s articles of incorporation must be signed by at least one person, called an incorporator, who must be at least 18 years old and a natural person (not a business entity). They must sign the articles and deliver them to the DCCED.</Paragraph>
 
             <Colorbox color={color.blue3} content={articlesOfIncorporation.box1} dotsColor={color.blue1} style={{ marginBottom: "65px" }} />
 
+            <Paragraph big>A docketing statement must also accompany the articles of incorporation at filing. This states the corporation’s general business activity, the person responsible for initial tax reports, the fiscal year, and the Employer Identification Number (EIN), if applicable.</Paragraph>
+            <Paragraph big>Pennsylvania law allows a corporation to be formed for any lawful business activity. Although there is no requirement for a specific corporate purpose to be stated in the articles of incorporation, a general statement about the corporation’s primary business activity must be included in the docketing statement that is attached to the articles when they are filed with the state.</Paragraph>
             <Colorbox color={color.orange3} content={articlesOfIncorporation.box2} dotsColor={color.orange1} style={{ marginBottom: "48px" }} />
 
-            <Paragraph big>If the initial articles do not name directors for the corporation, the incorporators may elect directors or amend the bylaws.</Paragraph>
+            <Paragraph big>In Pennsylvania, it’s not required to state a par value for your new corporation’s shares. The filing fee is not based on how many shares are authorized, so you can authorize as many as desired. Most incorporators authorize one class of common shares with equal voting, dividend, and liquidation rights, with no special restrictions.</Paragraph>
+            <Paragraph big>
+            Pennsylvania law requires that an incorporator(s) publish a notice or either the intention to file or the actual filing of the articles of incorporation. The notice must state the corporate name and specify that it has been incorporated under the provisions of the Business Corporation Law of 1988. The notice must be published at least once in at least two local newspapers, one of which should be a “general circulation” newspaper and the other a “designated legal newspaper” in the same county as the corporation’s registered office. If there are no designated legal newspapers in that county, the notice can be published in two general circulation papers. Proof of the notice’s publication does not have to be filed with the Pennsylvania Department of State, but a copy should be kept with the corporate records.
+            </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Registered Agent and Office
             </Heading>
             <Paragraph big>
-              Alaska corporations must have a registered agent in the state-a person or office designated to receive official state administrative and legal correspondence. The agent must be either an adult who is a resident of Alaska whose business office is the same as the registered office, or it
-              may be a corporation whose business office is the same as the registered office.
+            Every Pennsylvania Corporation must have a registered agent in the state – someone designated to receive official state correspondence, including notice if the corporation is “served” with a lawsuit. The registered agent must be either a Pennsylvania resident whose business office is the same as the registered office, or a corporation with a business office identical with the registered office.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -120,53 +128,47 @@ const AlaskaCorporation = () => (
               Bylaws
             </Heading>
             <Paragraph big>
-              Bylaws lay out the corporation’s basic operating principles from both the managerial and legal perspectives. A corporation must keep its bylaws available at its principal executive office, but is not required to file them with the state. The incorporators or board of directors should
-              adopt the corporation’s bylaws at their first meeting-insuring there is no conflict with the corporation’s articles of incorporation-and keep them updated as time goes on.
+            Bylaws describe the corporation’s basic managerial and legal operating principles. The incorporators or the board of directors are required to adopt the initial bylaws for the Pennsylvania Corporation.
+            </Paragraph>
+            <Paragraph big>
+            A Pennsylvania corporation must keep a copy of its bylaws at its main executive office, but is not required to file them with the state. The bylaws may contain any provision for managing the business and regulating the affairs of the corporation that’s not in conflict with law or the articles of incorporation.
             </Paragraph>
             <Paragraph big style={{ fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
-              Bylaws should include, at minimum:
+            The board of directors of a corporation may adopt, amend, or repeal bylaws, unless the articles reserve this right to the shareholders. At its initial meeting, the board of directors should adopt corporate bylaws, and then keep them updated as time goes on. Bylaws normally address:
             </Paragraph>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>What authority directors have, how many there are, and how long they serve</Paragraph>
+              <Paragraph bottomMargin={0}>Shareholders and directors meetings</Paragraph>
             </TextBoxed>
-
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>Duties and responsibilities of officers and how long they serve</Paragraph>
+              <Paragraph bottomMargin={0}>The authority, number, and tenure of directors</Paragraph>
             </TextBoxed>
-
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>How consensus on major decisions is reached, both with and without meetings</Paragraph>
+              <Paragraph bottomMargin={0}>Voting procedures</Paragraph>
             </TextBoxed>
-
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>How, when, and where shareholders’ and directors’ meetings are held</Paragraph>
+              <Paragraph bottomMargin={0}>The duties, responsibilities, and tenure of officers</Paragraph>
             </TextBoxed>
-
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>How the corporation’s stock is issued</Paragraph>
+              <Paragraph bottomMargin={0}>How stock is issued</Paragraph>
+            </TextBoxed>
+            <TextBoxed style={{ marginBottom: "8px" }}>
+              <Paragraph bottomMargin={0}>How and when annual financial information is provided to shareholders</Paragraph>
             </TextBoxed>
 
-            <TextBoxed style={{ marginBottom: "48px" }}>
-              <Paragraph bottomMargin={0}>Requirements for publishing annual financial information to shareholders</Paragraph>
-            </TextBoxed>
-
-            <Paragraph big>
-              Even though the corporation is not required to file its bylaws with the state, if the articles of incorporation don’t specify the number of directors, the bylaws must either state the exact number of directors or specify a minimum or maximum number of directors, along with the way that
-              shareholder or board approval will determine the exact number at a specified later date.
-            </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Directors
             </Heading>
             <Paragraph big>
-              The board of directors has the responsibility of making the corporation’s major decisions. There must be at least one director; the number should be specified in the bylaws unless it is already set forth in the articles of incorporation. If no number is specified in either document,
-              the “default” number will be three. A change in the number of directors must be approved by a majority of the board, but such a change cannot shorten the term of any currently-serving director.
+            Officers must be named in the bylaws or elected by the board of directors, and there must be, as a minimum, a president, a secretary, and a treasurer, or persons who shall act as such, regardless of what title they may have. The bylaws may prescribe specific qualifications for officers. The president and secretary have to be natural persons of at least 18 years of age. The treasurer may be a corporation but must be at least 18 if a natural person.
             </Paragraph>
             <Paragraph big>
-              Titles and duties of the corporation’s officers must be either listed in the bylaws or determined by the board of directors. Any two or more offices may be held by the same person, except the offices of president and secretary. When all of the issued and outstanding stock of the
-              corporation is owned by one person, the person may hold all or any combination of offices.
+            Officers may appoint other officers in compliance with the bylaws and board of directors. If the articles of incorporation and the bylaws allows it, an officer may hold multiple offices in the corporation. Unless otherwise specified in the bylaws, officers do not also have to be directors.
+            </Paragraph>
+            <Paragraph big>
+            At least one officer should be designated as responsible for preparing minutes of the directors’ and shareholders’ meetings, and for maintaining and authenticating corporate records.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -174,46 +176,16 @@ const AlaskaCorporation = () => (
               Requirement Reports
             </Heading>
             <Paragraph big style={{ marginBottom: "48px" }}>
-              Each Alaska corporation must file a biennial (every two years) report with the state before January 2 of each filing year, along with a $100 biennial license fee. The first report must be within six months of organization, but does not require the $100 fee because it is included in the
-              $250 fee at the time of incorporation.
+            In Pennsylvania, for-profit corporations do not have to file an annual report with the state Department of State. However, the corporation must (subject to certain state exceptions) file a “decennial” report every 10 years, listing its name, registered office or other office address, and a statement of existence.
             </Paragraph>
-
-            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
-              The report must include:
-            </Paragraph>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>What authority directors have, how many there are, and how long they serve</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The name and address of its registered agent and registered office</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The principal corporate address for foreign corporations</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The nature of the corporation’s business</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The names and addresses of the corporation’s directors and officers</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>An itemization of shares authorized to be issued by the corporation</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>An itemization of shares that have been issued to date</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>Information on all alien affiliates</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The name, address, and ownership percentage of each shareholder who owns more than five percent of the corporation’s stock</Paragraph>
-            </TextBoxed>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Taxes
             </Heading>
-            <Paragraph big>Alaska imposes a corporate income tax similar to the federal corporate income tax, based on graduated tax rates. Alaska does recognize “S corporation” status.</Paragraph>
+            <Paragraph big>
+            Pennsylvania corporations are subject to a state net corporate income tax corporate tax and a loans tax, based on corporate indebtedness. In addition, Pennsylvania corporations must pay a capital stock tax based on their net worth, with a current minimum annual payment of $200. They must also pay an annual franchise tax, the minimum amount of which is $35.    
+            </Paragraph>
           </PanelWrapper>
         </CollapseWrapper>
       </TabsSection>

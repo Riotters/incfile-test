@@ -83,11 +83,13 @@ const AlaskaCorporation = () => (
               Choosing a Corporation Name
             </Heading>
             <Paragraph big>
-              Your new Alaska corporation‘s name cannot be the same as or deceptively similar to the name of any other Alaska business entity registered or reserved with the state. It also is not permitted to be the same as any non-registered business name that has been established in common law by
-              usage over a long period of time. The name must contain (at the end) the words “incorporated,” “corporation,” “limited,” or “company,” or an abbreviation of one of those terms.
+            Choosing a name for your new Rhode Island corporation is one of the first official steps toward actually conducting business in the state. The corporate name you choose must be distinguishable from all other registered and reserved business entities on the Rhode Island state rolls.
+            </Paragraph>
+            <Paragraph big>
+            Your new business’ name must include one of the following words, an abbreviation thereof: “Incorporated,” “Corporation,” “Company,” or “Limited.” However, the name must not state or imply that the corporation is organized for some purpose other than the one specified in its articles of incorporation or one permitted by state law.
             </Paragraph>
             <Paragraph big style={{ marginBottom: "0" }}>
-              The name may not include language that states or implies that the corporation is organized for some purpose other than stated in its articles of incorporation, or that it is a municipality (city, borough, or village). However, the name is allowed to contain the name of a municipality.
+            An available corporate name may be reserved for 120 days for a $50 fee.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -95,24 +97,25 @@ const AlaskaCorporation = () => (
               Articles of Incorporation
             </Heading>
             <Paragraph big>
-              So that your Alaska corporation can actually start doing business in the state, you must file articles of incorporation with the Division of Banking, Securities, and Corporations in the Alaska Department of Commerce, Community, and Economic Development (DCCED). The filing fee is $250,
-              which includes a $100 biennial license fee that will be an ongoing requirement.
+              Before it can legally operate in the state, a new Rhode Island corporation must file articles of incorporation with the Corporations Division of the state Secretary of State’s office. In order to perfect the corporation’s organization, incorporators have all the powers of shareholders or directors until stock is issued or directors are elected.
             </Paragraph>
-            <Paragraph big>Your new LLC’s articles of incorporation must be signed by at least one person, called an incorporator, who must be at least 18 years old and a natural person (not a business entity). They must sign the articles and deliver them to the DCCED.</Paragraph>
+            <Paragraph big>The minimum filing fee is $230, which includes a minimum $160 license fee plus a $70 filing fee. You may authorize up to (but not including) 75,000,000 shares in your articles for the minimum $160 license fee. However, if you authorize 75,000,00 or more shares, the fee jumps to an amount calculated at the rate of one-fifth cent ($.002) per share for each authorized share.</Paragraph>
 
-            <Colorbox color={color.blue3} content={articlesOfIncorporation.box1} dotsColor={color.blue1} style={{ marginBottom: "65px" }} />
+            <Colorbox color={color.blue3} content={articlesOfIncorporation.box1} dotsColor={color.blue1} style={{ marginBottom: "48px" }} />
 
-            <Colorbox color={color.orange3} content={articlesOfIncorporation.box2} dotsColor={color.orange1} style={{ marginBottom: "48px" }} />
-
-            <Paragraph big>If the initial articles do not name directors for the corporation, the incorporators may elect directors or amend the bylaws.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Registered Agent and Office
             </Heading>
             <Paragraph big>
-              Alaska corporations must have a registered agent in the state-a person or office designated to receive official state administrative and legal correspondence. The agent must be either an adult who is a resident of Alaska whose business office is the same as the registered office, or it
-              may be a corporation whose business office is the same as the registered office.
+            Every Rhode Island corporation must have a registered agent in the state-the person or office designated to receive official state correspondence, both administrative and legal. The registered agent is required to acknowledge acceptance of the appointment as such in writing.
+            </Paragraph>
+            <Paragraph big>
+            The registered agent must be either a Rhode Island resident whose business office is the same as the registered office, or a corporation authorized to conduct business in the state that has a business office identical to the registered office.
+            </Paragraph>
+            <Paragraph big>
+            When a corporation’s registered agent is an attorney, the business address of the agent does not have to be identical to the registered office, but may be the usual business address of the attorney.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -120,53 +123,41 @@ const AlaskaCorporation = () => (
               Bylaws
             </Heading>
             <Paragraph big>
-              Bylaws lay out the corporation’s basic operating principles from both the managerial and legal perspectives. A corporation must keep its bylaws available at its principal executive office, but is not required to file them with the state. The incorporators or board of directors should
-              adopt the corporation’s bylaws at their first meeting-insuring there is no conflict with the corporation’s articles of incorporation-and keep them updated as time goes on.
+            Bylaws lay out the corporation’s basic managerial and legal operating principles that manage their internal affairs. Rhode Island corporations must keep a copy of their bylaws at their principal executive office, but are not required to file them with the state. At its initial meeting, the incorporators or the board of directors should adopt corporate bylaws, and then keep them updated as time goes on.
             </Paragraph>
             <Paragraph big style={{ fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
-              Bylaws should include, at minimum:
+            The board of directors of a corporation may adopt, amend, or repeal bylaws, unless the articles reserve this right to the shareholders. Bylaws normally address:
             </Paragraph>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>What authority directors have, how many there are, and how long they serve</Paragraph>
+              <Paragraph bottomMargin={0}>Shareholders and directors meetings</Paragraph>
             </TextBoxed>
-
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>Duties and responsibilities of officers and how long they serve</Paragraph>
+              <Paragraph bottomMargin={0}>The authority, number, and tenure of directors</Paragraph>
             </TextBoxed>
-
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>How consensus on major decisions is reached, both with and without meetings</Paragraph>
+              <Paragraph bottomMargin={0}>Voting procedures</Paragraph>
             </TextBoxed>
-
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>How, when, and where shareholders’ and directors’ meetings are held</Paragraph>
+              <Paragraph bottomMargin={0}>The duties, responsibilities, and tenure of officers</Paragraph>
             </TextBoxed>
-
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>How the corporation’s stock is issued</Paragraph>
+              <Paragraph bottomMargin={0}>How stock is issued</Paragraph>
+            </TextBoxed>
+            <TextBoxed style={{ marginBottom: "8px" }}>
+              <Paragraph bottomMargin={0}>How and when annual financial information is provided to shareholders</Paragraph>
             </TextBoxed>
 
-            <TextBoxed style={{ marginBottom: "48px" }}>
-              <Paragraph bottomMargin={0}>Requirements for publishing annual financial information to shareholders</Paragraph>
-            </TextBoxed>
-
-            <Paragraph big>
-              Even though the corporation is not required to file its bylaws with the state, if the articles of incorporation don’t specify the number of directors, the bylaws must either state the exact number of directors or specify a minimum or maximum number of directors, along with the way that
-              shareholder or board approval will determine the exact number at a specified later date.
-            </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Directors
             </Heading>
             <Paragraph big>
-              The board of directors has the responsibility of making the corporation’s major decisions. There must be at least one director; the number should be specified in the bylaws unless it is already set forth in the articles of incorporation. If no number is specified in either document,
-              the “default” number will be three. A change in the number of directors must be approved by a majority of the board, but such a change cannot shorten the term of any currently-serving director.
+            Officers are listed in the initial bylaws or elected by the board of directors, and may appoint other officers in accordance with the bylaws. At least one officer should be responsible for preparing minutes of director and shareholder meetings, and for maintaining and authenticating corporate records.
             </Paragraph>
             <Paragraph big>
-              Titles and duties of the corporation’s officers must be either listed in the bylaws or determined by the board of directors. Any two or more offices may be held by the same person, except the offices of president and secretary. When all of the issued and outstanding stock of the
-              corporation is owned by one person, the person may hold all or any combination of offices.
+            An officer or the corporation may hold more than one office simultaneously, unless otherwise prohibited by law or by the corporation’s bylaws.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -174,46 +165,35 @@ const AlaskaCorporation = () => (
               Requirement Reports
             </Heading>
             <Paragraph big style={{ marginBottom: "48px" }}>
-              Each Alaska corporation must file a biennial (every two years) report with the state before January 2 of each filing year, along with a $100 biennial license fee. The first report must be within six months of organization, but does not require the $100 fee because it is included in the
-              $250 fee at the time of incorporation.
+            Every Rhode Island corporation must file an annual report with the Rhode Island Secretary of State between January 1 and March 1, except for the year of incorporation. 
             </Paragraph>
 
             <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
-              The report must include:
+            This report must be current as of the date the report is executed and include:
             </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>What authority directors have, how many there are, and how long they serve</Paragraph>
+              <Paragraph bottomMargin={0}>The corporation’s name and its state or country of incorporation</Paragraph>
             </TextBoxed>
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The name and address of its registered agent and registered office</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The principal corporate address for foreign corporations</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The nature of the corporation’s business</Paragraph>
+              <Paragraph bottomMargin={0}>A statement as to the nature of the corporation’s business in the state</Paragraph>
             </TextBoxed>
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>The names and addresses of the corporation’s directors and officers</Paragraph>
             </TextBoxed>
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>An itemization of shares authorized to be issued by the corporation</Paragraph>
+              <Paragraph bottomMargin={0}>A statement of the aggregate number of shares the corporation has authority to issue, itemized by classes, par value of shares, shares without par value, and series, if any, within a class;</Paragraph>
             </TextBoxed>
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>An itemization of shares that have been issued to date</Paragraph>
+              <Paragraph bottomMargin={0}>A statement of the aggregate number of issued shares, itemized by classes, par value of shares, shares without par value, and series, if any, within a class</Paragraph>
             </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>Information on all alien affiliates</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The name, address, and ownership percentage of each shareholder who owns more than five percent of the corporation’s stock</Paragraph>
-            </TextBoxed>
+
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Taxes
             </Heading>
-            <Paragraph big>Alaska imposes a corporate income tax similar to the federal corporate income tax, based on graduated tax rates. Alaska does recognize “S corporation” status.</Paragraph>
+            <Paragraph big>Rhode Island corporations are subject to a corporate income tax of nine percent on all corporate income. The minimum annual payment is $250. Among states levying corporate income taxes, Rhode Island’s rate ranks 7th highest nationally.</Paragraph>
+            <Paragraph big>“S corporation” status is recognized by the Rhode Island Secretary of State. A “subchapter S” corporation (frequently referred to as an “S corp”) is treated as a pass-through entity for tax purposes in the same way as a sole proprietorship or partnership. The S corp does not file a tax return on its own behalf; instead, all tax-related data for the S corp is filed as part of the owner’s individual income tax.</Paragraph>
           </PanelWrapper>
         </CollapseWrapper>
       </TabsSection>

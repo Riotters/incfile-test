@@ -23,6 +23,20 @@ const Wrapper = styled.div`
   @media (min-width: 769px) {
     flex-direction: ${(props) => (props.layout !== "grid" ? "row" : "column")};
   }
+
+  .ReactCollapse--collapse {
+    width: 100%;
+    transition: height 500ms;
+    margin-left: auto;
+
+    @media (min-width: 769px) {
+      max-width: ${(props) => (props.layout !== "grid" ? "55%" : "")};
+    }
+
+    @media (min-width: 1200px) {
+      max-width: ${(props) => (props.layout !== "grid" ? "670px" : "")};
+    }
+  }
 `;
 
 const RegisteredAgentFlorida = () => (

@@ -44,6 +44,7 @@ import Container from "../atomic/container";
 import Rocket from "../atomic/sections/learning-center-entity/alaska-corporation/rocket";
 import Colorbox from "../atomic/molecules/blocks/left-icon-block-colored";
 import CorporationNameIcon from "../images/icons/icon-learning-center-color-business-name-trademark.inline.svg";
+import ArrowLink from "../atomic/molecules/buttons/text";
 
 const AlaskaCorporation = () => (
   <Layout>
@@ -83,36 +84,37 @@ const AlaskaCorporation = () => (
               Choosing a Corporation Name
             </Heading>
             <Paragraph big>
-              Your new Alaska corporation‘s name cannot be the same as or deceptively similar to the name of any other Alaska business entity registered or reserved with the state. It also is not permitted to be the same as any non-registered business name that has been established in common law by
-              usage over a long period of time. The name must contain (at the end) the words “incorporated,” “corporation,” “limited,” or “company,” or an abbreviation of one of those terms.
+            The name you choose for your corporation must be distinguishable from the name of any other registered or reserved New Jersey business entities, and it is not permitted to include language that states or implies that it is organized for some purpose other than one allowed by state law or stated in its articles of incorporation. It also may not have language that states or implies that the corporation is some other corporation, or words or phrases (or their abbreviations or derivatives) that are prohibited or restricted by the state.
             </Paragraph>
-            <Paragraph big style={{ marginBottom: "0" }}>
-              The name may not include language that states or implies that the corporation is organized for some purpose other than stated in its articles of incorporation, or that it is a municipality (city, borough, or village). However, the name is allowed to contain the name of a municipality.
+            <Paragraph big>
+            The corporate name is, however, required to contain one of the following words or an abbreviation thereof: “incorporated,” “corporation,” “company,” or the abbreviation “Ltd.”-or words of equivalent meaning in another language.
             </Paragraph>
+            <Paragraph big>
+            Available corporate names can be reserved with the state for $50. An online search for an available name costs $15 if the search is not done at the same time as filing the new company’s certificate of incorporation.
+            </Paragraph>
+            <ArrowLink content={{text: `Use our name search tool to check your name availability`, url: `/new-jersey-entity-search/?open=true`}}></ArrowLink>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Articles of Incorporation
             </Heading>
             <Paragraph big>
-              So that your Alaska corporation can actually start doing business in the state, you must file articles of incorporation with the Division of Banking, Securities, and Corporations in the Alaska Department of Commerce, Community, and Economic Development (DCCED). The filing fee is $250,
-              which includes a $100 biennial license fee that will be an ongoing requirement.
+            Before starting up operations in the Garden State, state law requires that a certificate of incorporation must be filed with the New Jersey Division of Revenue, accompanied by a $125 fee. The certificate must be signed by at least one incorporator, who can be either a natural person of at least 18 years of age. The incorporator signs and files the certificate of incorporation with state.
             </Paragraph>
-            <Paragraph big>Your new LLC’s articles of incorporation must be signed by at least one person, called an incorporator, who must be at least 18 years old and a natural person (not a business entity). They must sign the articles and deliver them to the DCCED.</Paragraph>
 
-            <Colorbox color={color.blue3} content={articlesOfIncorporation.box1} dotsColor={color.blue1} style={{ marginBottom: "65px" }} />
+            <Colorbox color={color.orange3} content={articlesOfIncorporation.box1} dotsColor={color.orange1} style={{ marginBottom: "48px" }} />
 
-            <Colorbox color={color.orange3} content={articlesOfIncorporation.box2} dotsColor={color.orange1} style={{ marginBottom: "48px" }} />
-
-            <Paragraph big>If the initial articles do not name directors for the corporation, the incorporators may elect directors or amend the bylaws.</Paragraph>
+            <Paragraph big>New Jersey also permits additional provisions for managing the business and regulating the affairs of the corporation to be included in the certificate of incorporation.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Registered Agent and Office
             </Heading>
             <Paragraph big>
-              Alaska corporations must have a registered agent in the state-a person or office designated to receive official state administrative and legal correspondence. The agent must be either an adult who is a resident of Alaska whose business office is the same as the registered office, or it
-              may be a corporation whose business office is the same as the registered office.
+            New Jersey corporations must maintain a registered agent in the state-a person or office designated to receive official state administrative and legal correspondence. The agent must have a business office that is identical to the registered office and be either an individual over 18 residing in the state, or a corporation with the authority to conduct business in the state.
+            </Paragraph>
+            <Paragraph big>
+            The registered office must be the same as any of the corporation’s places of business; it may not be just a post office delivery box.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -120,53 +122,41 @@ const AlaskaCorporation = () => (
               Bylaws
             </Heading>
             <Paragraph big>
-              Bylaws lay out the corporation’s basic operating principles from both the managerial and legal perspectives. A corporation must keep its bylaws available at its principal executive office, but is not required to file them with the state. The incorporators or board of directors should
-              adopt the corporation’s bylaws at their first meeting-insuring there is no conflict with the corporation’s articles of incorporation-and keep them updated as time goes on.
+            Bylaws lay out the corporation’s basic operating principles from both the managerial and legal perspectives. Corporations should maintain their bylaws at their main executive office, but are not required to file them with the state. The incorporators or board of directors should adopt the corporation’s bylaws at their initial meeting-making sure that they do not conflict with state law or provisions in the certificate of incorporation-and keep them updated.
             </Paragraph>
             <Paragraph big style={{ fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
-              Bylaws should include, at minimum:
+            Corporate bylaws should include at least the following:
             </Paragraph>
-
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>What authority directors have, how many there are, and how long they serve</Paragraph>
-            </TextBoxed>
-
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>Duties and responsibilities of officers and how long they serve</Paragraph>
-            </TextBoxed>
-
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>How consensus on major decisions is reached, both with and without meetings</Paragraph>
-            </TextBoxed>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>How, when, and where shareholders’ and directors’ meetings are held</Paragraph>
             </TextBoxed>
-
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>How the corporation’s stock is issued</Paragraph>
+              <Paragraph bottomMargin={0}>What authority directors have, how many there are, and how long they serve</Paragraph>
+            </TextBoxed>
+            <TextBoxed style={{ marginBottom: "8px" }}>
+              <Paragraph bottomMargin={0}>How consensus on major decisions is reached with and without meetings</Paragraph>
+            </TextBoxed>
+            <TextBoxed style={{ marginBottom: "8px" }}>
+              <Paragraph bottomMargin={0}>Duties and responsibilities of officers and how long they serve</Paragraph>
+            </TextBoxed>
+            <TextBoxed style={{ marginBottom: "8px" }}>
+              <Paragraph bottomMargin={0}>How stock is issued</Paragraph>
+            </TextBoxed>
+            <TextBoxed style={{ marginBottom: "8px" }}>
+              <Paragraph bottomMargin={0}>Requirements for providing annual financial information to shareholders</Paragraph>
             </TextBoxed>
 
-            <TextBoxed style={{ marginBottom: "48px" }}>
-              <Paragraph bottomMargin={0}>Requirements for publishing annual financial information to shareholders</Paragraph>
-            </TextBoxed>
-
-            <Paragraph big>
-              Even though the corporation is not required to file its bylaws with the state, if the articles of incorporation don’t specify the number of directors, the bylaws must either state the exact number of directors or specify a minimum or maximum number of directors, along with the way that
-              shareholder or board approval will determine the exact number at a specified later date.
-            </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Directors
             </Heading>
             <Paragraph big>
-              The board of directors has the responsibility of making the corporation’s major decisions. There must be at least one director; the number should be specified in the bylaws unless it is already set forth in the articles of incorporation. If no number is specified in either document,
-              the “default” number will be three. A change in the number of directors must be approved by a majority of the board, but such a change cannot shorten the term of any currently-serving director.
+            Officers may be listed in the bylaws or elected by the board. Officers’ positions should consist of a president, a secretary, a treasurer, and, if desired, a chairman of the board, one or more vice presidents, and any other officers as provided in the bylaws. An elected officer may appoint other officers in compliance with the bylaws.
             </Paragraph>
             <Paragraph big>
-              Titles and duties of the corporation’s officers must be either listed in the bylaws or determined by the board of directors. Any two or more offices may be held by the same person, except the offices of president and secretary. When all of the issued and outstanding stock of the
-              corporation is owned by one person, the person may hold all or any combination of offices.
+            An officer may hold more than one corporate office, but cannot execute, acknowledge, or verify any legal instrument acting in more than one capacity.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -174,46 +164,34 @@ const AlaskaCorporation = () => (
               Requirement Reports
             </Heading>
             <Paragraph big style={{ marginBottom: "48px" }}>
-              Each Alaska corporation must file a biennial (every two years) report with the state before January 2 of each filing year, along with a $100 biennial license fee. The first report must be within six months of organization, but does not require the $100 fee because it is included in the
-              $250 fee at the time of incorporation.
+            A New Jersey corporation must file an annual report with the New Jersey Department of Revenue each year outlining the corporation’s overall status.
             </Paragraph>
-
             <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
               The report must include:
             </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>What authority directors have, how many there are, and how long they serve</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The name and address of its registered agent and registered office</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The principal corporate address for foreign corporations</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The nature of the corporation’s business</Paragraph>
+              <Paragraph bottomMargin={0}>The name of the corporation</Paragraph>
             </TextBoxed>
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>The names and addresses of the corporation’s directors and officers</Paragraph>
             </TextBoxed>
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>An itemization of shares authorized to be issued by the corporation</Paragraph>
+              <Paragraph bottomMargin={0}>The name of its registered agent</Paragraph>
             </TextBoxed>
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>An itemization of shares that have been issued to date</Paragraph>
+              <Paragraph bottomMargin={0}>The complete address of its registered office</Paragraph>
             </TextBoxed>
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>Information on all alien affiliates</Paragraph>
+              <Paragraph bottomMargin={0}>The address of the corporation’s main business or headquarters office</Paragraph>
             </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The name, address, and ownership percentage of each shareholder who owns more than five percent of the corporation’s stock</Paragraph>
-            </TextBoxed>
+
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Taxes
             </Heading>
-            <Paragraph big>Alaska imposes a corporate income tax similar to the federal corporate income tax, based on graduated tax rates. Alaska does recognize “S corporation” status.</Paragraph>
+            <Paragraph big>The New Jersey corporate income tax rate varies based on the amount of corporate income and other factors. The minimum annual corporate income tax is $200.</Paragraph>
+            <Paragraph big>If the corporation is to be taxed as an S corporation, the state requires a separate application to be recognized in that status.</Paragraph>
           </PanelWrapper>
         </CollapseWrapper>
       </TabsSection>

@@ -11,7 +11,6 @@ import { motion } from "framer-motion";
 import ArrowSVG from "../../../images/arrow-circle.inline.svg";
 import CheckSVG from "../../../images/circle-status-check.inline.svg";
 import ExSVG from "../../../images/circle-status-x.inline.svg";
-;
 const Wrapper = styled(Whitebox)`
   display: grid;
   grid-template-columns: ${(props) => (props.columns && props.columns.length === 1 ? `repeat(${props.columns}, 1fr)` : props.columns ? props.columns : "1fr 160px 160px 160px 160px;")};
@@ -28,7 +27,7 @@ const Cell = styled.div`
   flex-direction: column;
   padding: 24px;
   ${(props) => (props.textCenter ? "justify-content: center" : "")};
-  
+
   .accordion-panel {
     overflow: hidden;
     text-align: left;
@@ -45,18 +44,18 @@ const Cell = styled.div`
   &:not(:last-child) {
     border-right: 2px solid ${color.grey4};
   }
-  
+
   .gatsby-image-wrapper {
     align-self: center;
     width: 32px;
     height: auto;
   }
-  
+
   .highlight {
     border-radius: 20px;
     padding: 8px 16px;
   }
-  
+
   .flex-center {
     display: flex;
     align-items: center;
@@ -99,7 +98,7 @@ const Icon = styled.div`
 
 const FlexRowCell = styled.div`
   flex-direction: row;
-  justify-content: ${props => props?.justifyContent ?? "space-between"};
+  justify-content: ${(props) => props?.justifyContent ?? "space-between"};
   width: 100%;
   display: flex;
   align-items: center;
@@ -107,14 +106,14 @@ const FlexRowCell = styled.div`
 
 const RightParagraph = styled(Paragraph)`
   align-self: flex-end;
-  color: ${props => props?.color ?? "#000"};
+  color: ${(props) => props?.color ?? "#000"};
 `;
 
 const Checkmark = styled.p`
   position: relative;
   width: 100%;
   height: 100%;
-  
+
   svg {
     position: absolute;
     stroke-dashoffset: 0;
@@ -163,7 +162,7 @@ const ImageWrapper = styled.span`
   height: 24px;
   margin-right: 15px;
   position: relative;
-  
+
   .gatsby-image-wrapper {
     position: absolute;
     top: -5px;
@@ -171,37 +170,37 @@ const ImageWrapper = styled.span`
 `;
 
 const FlexColumn = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    
-    p {
-        text-align: left;
-    }
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  p {
+    text-align: left;
+  }
 `;
 
 const FlexRow = styled.div`
-    display: flex;
-    width: 100%;
-    padding-left: 10px;
-    justify-content: space-between;
-    
-    @media screen and (max-width: 768px) {
-        flex-direction: column;
-        align-items: center;
-    }
+  display: flex;
+  width: 100%;
+  padding-left: 10px;
+  justify-content: space-between;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const Button = styled.button`
   appearance: none;
   border: none;
   background: transparent;
-  
+
   display: flex;
   justify-content: space-between;
   width: 100%;
-  
+
   &.active {
     svg {
       transform: rotate(0deg);
@@ -210,23 +209,23 @@ const Button = styled.button`
 `;
 
 const UlListItem = styled.li`
-    font-size: 16px;
-    font-family: Avenir, sans-serif;
-    line-height: 24px;
-    color: ${color.black};
-    list-style: disc inside;
+  font-size: 16px;
+  font-family: Avenir, sans-serif;
+  line-height: 24px;
+  color: ${color.black};
+  list-style: disc inside;
 `;
 
 const cn = (...args) => args.filter(Boolean).join(" ");
 
 const Tab = ({ children }) => {
-    const { isActive, onClick } = useTabState();
+  const { isActive, onClick } = useTabState();
 
-    return (
-        <Button className={cn("accordion-tab", isActive && "active")} onClick={onClick}>
-            {children}
-        </Button>
-    );
+  return (
+    <Button className={cn("accordion-tab", isActive && "active")} onClick={onClick}>
+      {children}
+    </Button>
+  );
 };
 
 const panel = {
@@ -238,128 +237,132 @@ const Panel = ({ children }) => {
   const isActive = usePanelState();
 
   return (
-      <motion.div className="accordion-panel" animate={isActive ? "visible" : "hidden"} transition={{ ease: "easeOut", duration: 0.3 }} variants={panel}>
-        {children}
-      </motion.div>
+    <motion.div className="accordion-panel" animate={isActive ? "visible" : "hidden"} transition={{ ease: "easeOut", duration: 0.3 }} variants={panel}>
+      {children}
+    </motion.div>
   );
 };
 
 const GenericGridTableRow = ({ className, content, settings, columns }) => (
   <Wrapper className={className} columns={columns}>
-          {content.map((item) => (
-          <Cell textCenter={item.textCenter ?? false} style={item.style ?? {}}>
-            {item.header && (
-              <Heading size={item.headerSize ?? "5"} bottomMargin="0" style={{}}>
-                {item.label}
-              </Heading>
-            )}
-            {!item.header && item.type === "list" && <ListItem bottomMargin="0">{item.label}</ListItem>}
-            {item.subcontent && (
-                <Tab>{!item.header && item.type === "label" && (
-                    <FlexRowCell>
-                        {item.subcontent && (
-                            <Icon>
-                                <ArrowSVG />
-                            </Icon>
-                        )}
-                        <FlexRow>
-                            <Paragraph bottomMargin={0} className={item?.className ?? ""}>{item.label}</Paragraph>
-                            {item.variant && (
-                                <VariantWrapper>
-                                    {item.variant.icon && (
-                                        <ImageWrapper>
-                                            <Image filename={item.variant.icon} />
-                                        </ImageWrapper>
-                                    )}
-                                    <Paragraph bottomMargin={0} style={item.variant.style}>
-                                        {item.variant.label}
-                                    </Paragraph>
-                                </VariantWrapper>
-                            )}
-                        </FlexRow>
-                    </FlexRowCell>
+    {content.map((item) => (
+      <Cell textCenter={item.textCenter ?? false} style={item.style ?? {}}>
+        {item.header && (
+          <Heading size={item.headerSize ?? "5"} bottomMargin="0" style={{}}>
+            {item.label}
+          </Heading>
+        )}
+        {!item.header && item.type === "list" && <ListItem bottomMargin="0">{item.label}</ListItem>}
+        {item.subcontent && (
+          <Tab>
+            {!item.header && item.type === "label" && (
+              <FlexRowCell>
+                {item.subcontent && (
+                  <Icon>
+                    <ArrowSVG />
+                  </Icon>
                 )}
-                </Tab>
-            )}
-            {!item.subcontent && !item.header && item.type === "label" && (
-                <FlexRowCell>
-                    <Paragraph bottomMargin={0} className={item?.className ?? ""}>{item.label}</Paragraph>
-                    {item.variant && (
+                <FlexRow>
+                  <Paragraph bottomMargin={0} className={item?.className ?? ""}>
+                    {item.label}
+                  </Paragraph>
+                  {item.variant && (
                     <VariantWrapper>
-                        {item.variant.icon && (
-                            <ImageWrapper>
-                                <Image filename={item.variant.icon} />
-                            </ImageWrapper>
-                        )}
-                        <Paragraph bottomMargin={0} style={item.variant.style}>
-                            {item.variant.label}
-                        </Paragraph>
+                      {item.variant.icon && (
+                        <ImageWrapper>
+                          <Image filename={item.variant.icon} />
+                        </ImageWrapper>
+                      )}
+                      <Paragraph bottomMargin={0} style={item.variant.style}>
+                        {item.variant.label}
+                      </Paragraph>
                     </VariantWrapper>
-                    )}
-                </FlexRowCell>
-                )}
-            {!item.header && item.type === "checkmark" && (
-                <Checkmark>
-                  <svg viewBox="-1 0 16 12">
-                    <polyline points="2 6 4.5 9 10.5 3"></polyline>
-                  </svg>
-                </Checkmark>
-            )}
-              {!item.header && item.type === "true" && (
-                  <IconWrapper>
-                      <CheckSVG />
-                  </IconWrapper>
-              )}
-              {!item.header && item.type === "false" && (
-                  <IconWrapper>
-                      <ExSVG />
-                  </IconWrapper>
-              )}
-            {!item.header && item.type === "minus" && (
-                <IconWrapper>
-                  <Minus/>
-                </IconWrapper>
-            )}
-            {!item.header && item.type === "label-boxed" && <Paragraph bottomMargin="0" className={item?.className ?? ""}>{item.label}</Paragraph>}
-            {!item.header && item.type === "content" && (
-                item.content
-            )}
-            {!item.header && item.type === "icon" && (
-                <div className="flex-center">
-                  {item.icon && (
-                      <Image filename={item.icon} alt={item.label} />
                   )}
-                </div>
+                </FlexRow>
+              </FlexRowCell>
             )}
-            {!item.header && item.type === "checkbox" && (
-                <FlexRowCell justifyContent="center">
-                  <Checkbox onChange={ (function(e) { if(settings != null) settings.onChange(e, item); }) } />
-                  <Paragraph bottomMargin={0} topMargin={4}>{item.label}</Paragraph>
-                </FlexRowCell>
+          </Tab>
+        )}
+        {!item.subcontent && !item.header && item.type === "label" && (
+          <FlexRowCell>
+            <Paragraph bottomMargin={0} className={item?.className ?? ""}>
+              {item.label}
+            </Paragraph>
+            {item.variant && (
+              <VariantWrapper>
+                {item.variant.icon && (
+                  <ImageWrapper>
+                    <Image filename={item.variant.icon} />
+                  </ImageWrapper>
+                )}
+                <Paragraph bottomMargin={0} style={item.variant.style}>
+                  {item.variant.label}
+                </Paragraph>
+              </VariantWrapper>
             )}
-            {(item.subcontent && (
-                <Panel>
-                    {item.subcontent.items && item.subcontent.items.map((subitem) => (
-                        <FlexColumn>
-                            {subitem.header && (
-                                <Heading size={5}>{subitem.header}</Heading>
-                            )}
-                            {subitem.text && (
-                                <Paragraph className="left">{subitem.text}</Paragraph>
-                            )}
-                            {subitem.items && (
-                                <ul>
-                                    {subitem.items.map((listItem) => (
-                                        <UlListItem>{listItem}</UlListItem>
-                                    ))}
-                                </ul>
-                            )}
-                        </FlexColumn>
-                    ))}
-                </Panel>
-            ))}
-          </Cell>
-        ))}
+          </FlexRowCell>
+        )}
+        {!item.header && item.type === "checkmark" && (
+          <Checkmark>
+            <svg viewBox="-1 0 16 12">
+              <polyline points="2 6 4.5 9 10.5 3"></polyline>
+            </svg>
+          </Checkmark>
+        )}
+        {!item.header && item.type === "true" && (
+          <IconWrapper>
+            <CheckSVG />
+          </IconWrapper>
+        )}
+        {!item.header && item.type === "false" && (
+          <IconWrapper>
+            <ExSVG />
+          </IconWrapper>
+        )}
+        {!item.header && item.type === "minus" && (
+          <IconWrapper>
+            <Minus />
+          </IconWrapper>
+        )}
+        {!item.header && item.type === "label-boxed" && (
+          <Paragraph bottomMargin="0" className={item?.className ?? ""}>
+            {item.label}
+          </Paragraph>
+        )}
+        {!item.header && item.type === "content" && item.content}
+        {!item.header && item.type === "icon" && <div className="flex-center">{item.icon && <Image filename={item.icon} alt={item.label} />}</div>}
+        {!item.header && item.type === "checkbox" && (
+          <FlexRowCell justifyContent="center">
+            <Checkbox
+              onChange={function (e) {
+                if (settings != null) settings.onChange(e, item);
+              }}
+            />
+            <Paragraph bottomMargin={0} topMargin={4}>
+              {item.label}
+            </Paragraph>
+          </FlexRowCell>
+        )}
+        {item.subcontent && (
+          <Panel>
+            {item.subcontent.items &&
+              item.subcontent.items.map((subitem) => (
+                <FlexColumn>
+                  {subitem.header && <Heading size={5}>{subitem.header}</Heading>}
+                  {subitem.text && <Paragraph className="left">{subitem.text}</Paragraph>}
+                  {subitem.items && (
+                    <ul>
+                      {subitem.items.map((listItem) => (
+                        <UlListItem>{listItem}</UlListItem>
+                      ))}
+                    </ul>
+                  )}
+                </FlexColumn>
+              ))}
+          </Panel>
+        )}
+      </Cell>
+    ))}
   </Wrapper>
 );
 

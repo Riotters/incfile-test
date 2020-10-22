@@ -20,6 +20,7 @@ import ToolsList from "../organisms/lists/tools-list";
 import Mobile from "../../images/icons/mobile-compatibility.inline.svg";
 import TextBlockWithImage from "../../pages/virtual-mailbox";
 import GenericTable from "../organisms/tables/generic-table";
+import LLCTable from "../organisms/tables/llc-table";
 
 const Wrapper = styled.div`
   display: flex;
@@ -64,7 +65,9 @@ const Content = ({ content }) => {
               ))}
             </div>
           )}
-          {item.type === "button" && <Button content={item.content} theme={item.theme} arrow={item.arrow ?? true} marginSM="24px auto 24px 0" marginMD="42px auto 56px 0" />}
+          {item.type === "button" && (
+            <Button content={item.content} theme={item.theme} arrow={item.arrow ?? true} margin={item.marginBottom ? `0 auto ${item.marginBottom}px 0` : false} marginSM={item.marginBottom ? false : "24px auto 24px 0"} marginMD={item.marginBottom ? false : "42px auto 56px 0"} />
+          )}
           {item.type === "buttons" && (
             <div style={{ "margin-bottom": item.marginBottom + "px" }}>
               <Buttonsbox>
@@ -95,6 +98,7 @@ const Content = ({ content }) => {
             </div>
           )}
           {item.type === "table" && <GenericTable responsive={item.responsive} settings={item.settings} style={item.style} content={item.content} />}
+          {item.type == "table-simple" && <LLCTable content={item.content} />}
         </>
       ))}
     </Wrapper>
