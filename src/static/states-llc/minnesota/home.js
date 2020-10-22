@@ -6,7 +6,7 @@ export const top = {
   buttons: [
     {
       text: `See detailed pricing`,
-      url: `/form-order-now.php?entityType=LLC&entityState=AZ`,
+      url: `/form-order-now.php?entityType=LLC&entityState=MN`,
     },
   ],
 };
@@ -16,7 +16,7 @@ export const howToGuide = [
     type: `header`,
     content: `How to Start an LLC in Minnesota`,
     size: 2,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -26,17 +26,12 @@ export const howToGuide = [
   {
     type: `text`,
     content: `For most business owners, the fastest and easiest way to start a business in Minnesota is by creating a Minnesota LLC. A limited liability company (LLC) is a type of business entity that’s ideal for startups and small- to medium-sized businesses. You get the advantages and protections of larger Minnesota corporations, but with much simpler rules and regulations.`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `Briefly, the benefits of starting a Minnesota LLC include:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
-      header: ``,
+      header: `Briefly, the benefits of starting a Minnesota LLC include:`,
       list: [`Separating and limiting your personal liability from your business liability and debts`,
              `Quick and simple filing, management, compliance, regulation and administration of your Minnesota LLC`,
              `Easy tax filing and potential advantages for your tax treatment`],
@@ -49,13 +44,13 @@ export const howToGuide = [
   {
     type: `text`,
     content: `Learn more about the <a href="/limited-liability-company/">benefits of the LLC business structure here</a>.`,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Six Quick Steps to Filing an LLC in Minnesota`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -113,7 +108,7 @@ export const howToGuide = [
     type: `header`,
     content: `Review Information from the Minnesota Secretary of State`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `list-dot`,
@@ -124,13 +119,13 @@ export const howToGuide = [
              `<a href="https://www.revenue.state.mn.us/" target="_blank" rel="noopener noreferrer">Minnesota Department of Revenue for MN taxes</a>`],
     },
     marginBottom: 32,
-    color: color.yellow3,
+    color: color.babyblue3,
   },
   {
     type: `header`,
     content: `Special Types of Minnesota LLCs`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -141,12 +136,12 @@ export const howToGuide = [
     type: `header`,
     content: `Form a Professional Minnesota LLC`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Some states, including Minnesota, allow certain occupations to form “Professional LLCs.” These types of businesses typically have special requirements and licensing.`,
-    marginBottom: 32,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -184,7 +179,7 @@ export const howToGuide = [
     type: `header`,
     content: `Form a Foreign LLC in Minnesota`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -196,7 +191,7 @@ export const howToGuide = [
     type: `header`,
     content: `What to Do After Forming Your Minnesota LLC`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -207,7 +202,7 @@ export const howToGuide = [
     type: `header`,
     content: `Detailed Information for Your Minnesota LLC`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -273,7 +268,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Search Your Business Name with the Minnesota Secretary of State and Register Your LLC`,
     size: 2,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -284,7 +279,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Minnesota Secretary of State Business Search`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -302,13 +297,13 @@ export const namingYourBusiness = [
       text: `Minnesota Secretary of State business name search tool`,
       url: `https://mblsportal.sos.state.mn.us/Business/Search`,
     },
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `Minnesota Secretary of State Rules for Naming Your LLC`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -388,7 +383,7 @@ export const namingYourBusiness = [
   {
     type: `header`,
     content: `Assumed and “Doing Business As” (DBA) Names in Minnesota`,
-    size: 4,
+    size: 3,
     marginBottom: 32,
   },
   {
@@ -399,7 +394,7 @@ export const namingYourBusiness = [
   {
     type: `text`,
     content: `For example, your LLC might be called Minnesota Renewable Resources Holding Company LLC and you want to trade as “Supreme Solar Panels.” You should file a DBA to let the Minnesota Secretary of State know. In Minnesota, you do that through a Certificate of Assumed Name Registration, or you can have Incfile do it on your behalf through our Assumed Business Name service.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -413,8 +408,8 @@ export const namingYourBusiness = [
   {
     type: `header`,
     content: `Business Name Registration for Your Minnesota LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -425,9 +420,9 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`<p>If you don’t want to form your Minnesota LLC right now, you can reserve the business name with the Minnesota Secretary of State. You will need to complete a Name Reservation form and file it with the MN SOS. You do not need to reserve a name if you are forming your business right away.</p></br>
+      list: [`If you don’t want to form your Minnesota LLC right now, you can reserve the business name with the Minnesota Secretary of State. You will need to complete a Name Reservation form and file it with the MN SOS. You do not need to reserve a name if you are forming your business right away.
               <a href="https://www.sos.state.mn.us/business-liens/business-forms-fees/name-reservation/" target="_blank" rel="noopener noreferrer">Minnesota SOS LLC name reservation form.</a>`,
-             `<p>If you’re ready to start your Minnesota LLC, you can formally file your Articles of Organization with the Minnesota SOS, or <a href="/form-order-now.php?entityType=LLC&entityState=MN/">let Incfile take care of it for you</a>.</p>`],
+             `If you’re ready to start your Minnesota LLC, you can formally file your Articles of Organization with the Minnesota SOS, or <a href="/form-order-now.php?entityType=LLC&entityState=MN/">let Incfile take care of it for you</a>.`],
     },
     marginBottom: 32,
     color: color.purple3,
@@ -435,13 +430,13 @@ export const namingYourBusiness = [
   {
     type: `header`,
     content: `FAQs on Naming Your Minnesota LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `You might find the following answers useful.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `accordion`,
@@ -461,13 +456,13 @@ export const namingYourBusiness = [
         },
       ],
     },
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `Useful Resources for Naming Your Minnesota LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -477,13 +472,13 @@ export const namingYourBusiness = [
   {
     type: `header`,
     content: `Trademarks and Service Marks`,
-    size: 3,
+    size: 4,
     marginBottom: 16,
   },
   {
     type: `text`,
     content: `You must be careful that your Minnesota LLC name does not infringe on the trademark or service mark of another business. The easiest way to make sure your proposed business name does not infringe is to carry out a trademark search through Incfile. If it doesn’t infringe, you can even register it as a trademark yourself.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -497,13 +492,13 @@ export const namingYourBusiness = [
   {
     type: `header`,
     content: `Find the Perfect Name for Your Minnesota LLC`,
-    size: 3,
+    size: 4,
     marginBottom: 16,
   },
   {
     type: `text`,
     content: `The perfect business name can be elusive. We have a complete guide to choosing the right business name, but basically, you'll want to choose a name that will:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -533,7 +528,7 @@ export const registeredAgent = [
     type: `header`,
     content: `Learn About Minnesota Registered Agents for LLCs`,
     size: 2,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -549,12 +544,12 @@ export const registeredAgent = [
     type: `header`,
     content: `Minnesota LLC Registered Agent Rules`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `There are certain rules that you must follow when you’re appointing a Minnesota Registered Agent for your business. They are:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -577,12 +572,12 @@ export const registeredAgent = [
     type: `header`,
     content: `The Purpose of a Minnesota Registered Agent`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `What can you expect from your Minnesota Registered Agent? Their main function is to accept official documents and correspondence from the MN Secretary of State. This includes:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -593,8 +588,8 @@ export const registeredAgent = [
              `Official Minnesota state and federal government correspondence and notifications`,
              `Tax forms and requests to complete permits, company filings and reports`],
     },
-    marginBottom: 24,
-    color: color.red3,
+    marginBottom: 40,
+    color: color.purple3,
     curve: true,
     curveColor: color.blue1,
   },
@@ -602,7 +597,7 @@ export const registeredAgent = [
     type: `header`,
     content: `TA Complete Minnesota Registered Agent Service from Incfile`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -617,7 +612,7 @@ export const registeredAgent = [
   {
     type: `text`,
     content: `Here’s what you need to know about Incfile’s MN Registered Agent service:`,
-    marginBottom: 16,
+    marginBottom: 24,
   }, 
   {
     type: `list-dot`,
@@ -644,29 +639,29 @@ export const registeredAgent = [
     type: `header`,
     content: `How to Appoint a Minnesota Registered Agent for Your LLC`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `You can appoint a Registered Agent when you first incorporate your Minnesota LLC or at any point after that. Here’s how to go about it.`,
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `Appoint a MN Registered Agent Service When You Create Your Minnesota LLC`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Your business needs to have a Minnesota Registered Agent Service as soon as it’s formed. You can achieve this through one of the following methods.`,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `File Articles of Organization with the Minnesota Secretary of State`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -676,13 +671,13 @@ export const registeredAgent = [
   {
     type: `header`,
     content: `Incorporate Through Incfile and Get a Free Minnesota Registered Agent`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `When you incorporate through us, we complete and file your Articles of Organization based on the information you’ve provided. Additionally, we give you a free Minnesota Registered Agent service for the first year, and we’ll include details of your MN Registered Agent in the form that we file.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -691,40 +686,40 @@ export const registeredAgent = [
       url: `/form-order-now.php?entityType=LLC&entityState=MN/`,
     },
     theme: `primary48`,
-    marginBottom: 32,
+    marginBottom: 48,
   },
   {
     type: `header`,
     content: `Change Your Minnesota Registered Agent After Your LLC Is Formed`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `You can also change your MN Registered Agent service after you’ve formed your LLC. There are a couple of ways to achieve this.`,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `Choose a Registered Agent Service and File a “Notice of Change of Registered Office/Registered Agent” Form with the Minnesota Secretary of State`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Once you’ve chosen a new Minnesota Registered Agent, you can complete a Notice of Change of Registered Office/Registered Agent form that’s available on the MN Secretary of State website. Once you’ve filled it out, send it to the secretary of state so they can update your records.`,
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `Sign Up for Incfile’s Minnesota Registered Agent Service and We’ll File the Change on Your Behalf`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `When you choose to use our MN Registered Agent service, we take care of all the form filling and filing for you. We’ll collect important information about your business, complete the form on your behalf and send it to the Minnesota Secretary of State. We’ll let you know once we officially become your Registered Agent.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -739,7 +734,7 @@ export const registeredAgent = [
     type: `header`,
     content: `Minnesota Registered Agent Search`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -755,12 +750,12 @@ export const registeredAgent = [
     type: `header`,
     content: `The Problems Caused When You Don’t Appoint a Minnesota Registered Agent Service`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `What happens if you choose not to assign or provide details of a Registered Agent to the Minnesota Secretary of State? There are several possible ramifications, including:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -777,7 +772,7 @@ export const registeredAgent = [
     type: `header`,
     content: `You Can Appoint Yourself as Your Own Minnesota Registered Agent`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -800,7 +795,7 @@ export const registeredAgent = [
       type: `header`,
       content: `FAQs About Minnesota Registered Agents`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
   },
   {
     type: `accordion`,
@@ -830,7 +825,7 @@ export const registeredAgent = [
     type: `header`,
     content: `Useful Resources for Minnesota Registered Agent Services`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `list-dot`,
@@ -850,7 +845,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Minnesota LLC Business Licenses, Fees and Filing Requirements`,
     size: 2,
-    marginBottom: 24,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -866,7 +861,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Minnesota LLC Incorporation Filing and Fees`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -874,7 +869,7 @@ export const feesAndRequirments = [
     marginBottom: 32,
   },
   {
-    type: `table`,
+    type: `table-simple`,
     content: {
       headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
       rows: [[`$155`, `5 Business Days`, `1 Business Day`]],
@@ -919,12 +914,12 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Getting an Employer Identification Number for Your MN LLC`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Every Minnesota LLC should have a unique Employer Identification Number (EIN). These are provided by the Internal Revenue Service, and you use them when filing taxes, opening a business bank account and paying employees. You can get one yourself at no cost from the IRS or have Incfile obtain one on your behalf.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -939,12 +934,12 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Certificate of Authority to Operate Outside Minnesota`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `If you’re expanding your Minnesota LLC beyond the borders of the state, you will need a Foreign Qualification or Certificate of Authority to operate in another state. These are typically necessary if you have a physical presence, employees or banking in a different state than Minnesota. Fees and requirements for foreign qualifications depend on each state’s rules. Incfile provides a complete Foreign Qualification service for any state.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -959,7 +954,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Annual Reporting and Fees for Your Minnesota LLC`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -995,7 +990,7 @@ export const feesAndRequirments = [
   {
     type: `text`,
     content: `Incfile can also complete and file your Minnesota Annual Report on your behalf.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -1010,12 +1005,12 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Minnesota Business Licenses and Permits`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Some MN LLCs will need certain business licenses and permits from federal, state and regional organizations. These permits and licenses will have associated fees that you should pay on a one-off or regular basis.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -1062,8 +1057,8 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `An Operating Agreement for Your Minnesota LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1073,29 +1068,29 @@ export const feesAndRequirments = [
   {
     type: `text`,
     content: `An Operating Agreement is extremely useful for several reasons (<a href="/research-topics/llc-info/the-llc-operating-agreement/">learn about them here</a>). If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Minnesota business. You can choose to make changes to the template based on your unique requirements.`,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Ad Hoc Minnesota Fees or Requirements for Your MN LLC`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `There are several other fees or requirements that you may need to meet during the life of your Minnesota LLC. These ad hoc fees will only be payable in specific circumstances, which we’ve listed below.`,
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `To Obtain a Fictitious/DBA Name for Your Minnesota LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `If you want your MN business to trade under a different name, you can file a form with the Minnesota Secretary of State. You will need to pay a Minnesota filing fee. Incfile can file this form on your behalf.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -1109,13 +1104,13 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `To Change the Minnesota Registered Agent for Your MN LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Your Minnesota LLC needs a Registered Agent, which must be appointed when you first incorporate your LLC. You can also switch to a new MN Registered Agent later. Incfile provides a complete Minnesota Registered Agent service.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -1124,29 +1119,29 @@ export const feesAndRequirments = [
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `To Reserve a Name for Your Minnesota LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `If you don’t want to form your MN business right away, you can reserve a name with the Minnesota Secretary of State. You will need to pay a small fee to do this.`,
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `To Amend Certain Facts About Your Minnesota LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Your business formation documents state certain facts about your Minnesota business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with the Minnesota Secretary of State. You can do this yourself or have Incfile complete the filing on your behalf.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -1156,7 +1151,7 @@ export const feesAndRequirments = [
              `Changing the business address of your LLC`,
              `Altering the stated business activities of your Minnesota LLC`],
     },
-    marginBottom: 0,
+    marginBottom: 24,
     color: color.yellow3,
   },
   {
@@ -1171,13 +1166,13 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `To Get a Certificate of Good Standing for Your Minnesota LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Some organizations will request that you prove your Minnesota LLC’s compliance with laws and tax requirements. If you need to prove you have met your commitments, you will need a “Certificate of Good Standing” from the Minnesota Secretary of State. Incfile can obtain a certificate on your behalf.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -1186,7 +1181,7 @@ export const feesAndRequirments = [
       url: `/manage-your-company/certificate-of-good-standing/`,
     },
     theme: `primary48`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `text`,
@@ -1202,7 +1197,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `FAQs About Minnesota LLC Fees & Requirements`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `accordion`,
@@ -1238,7 +1233,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Business Taxes Payable by Your Minnesota LLC`,
     size: 2,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1254,12 +1249,12 @@ export const businessTaxes = [
     type: `header`,
     content: `How Your Minnesota LLC Will Be Taxed`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `The profits of a Minnesota LLC are not taxed at the business level like those of C Corporations. Instead, taxes for a Minnesota LLC work as follows:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `numeric-list`,
@@ -1283,7 +1278,7 @@ export const businessTaxes = [
         text: `Employees pay federal, state and payroll tax on their earnings.`,
       },
     ],
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `text`,
@@ -1294,7 +1289,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Minnesota State Income Tax Payable on LLC Earnings`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1320,12 +1315,12 @@ export const businessTaxes = [
     type: `header`,
     content: `Minnesota Sales Taxes on LLC Sales`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the MN Department of Revenue. Minnesota sales tax is collected at the point of purchase. Minnesota sales tax rates do vary depending on the region, county or city where you are located.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -1353,7 +1348,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Sales Tax Rates for Your Minnesota LLC`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1364,7 +1359,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Federal Self-Employment and Income Taxes for Your Minnesota LLC`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1374,8 +1369,8 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Minnesota LLC Federal Self-Employment Tax`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1385,7 +1380,7 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -1404,8 +1399,8 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Pay Less Self-Employment Tax by Treating Your Minnesota LLC as an S Corporation`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1415,7 +1410,7 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `You can do this by making an “S Corporation Tax Election” with the IRS using a form known as Form 2553. We can file your Form 2553 with the IRS on your behalf.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -1424,7 +1419,7 @@ export const businessTaxes = [
       url: `/llc-s-corp-election/`,
     },
     theme: `primary48`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `text`,
@@ -1434,8 +1429,8 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Minnesota LLC Federal Income Tax`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1451,7 +1446,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Employer and Employee Taxes for Your Minnesota LLC`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1510,8 +1505,8 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Other Taxes and Duties for Your Minnesota LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1521,13 +1516,13 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Estimated Taxes for Your Minnesota LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Most Minnesota LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make. The most common types of estimated tax are:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -1538,7 +1533,7 @@ export const businessTaxes = [
              `Minnesota state tax`],
     },
     marginBottom: 24,
-    color: color.red3,
+    color: color.green3,
   },
   {
     type: `text`,

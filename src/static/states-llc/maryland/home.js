@@ -6,7 +6,7 @@ export const top = {
   buttons: [
     {
       text: `See detailed pricing`,
-      url: `/form-order-now.php?entityType=LLC&entityState=AZ`,
+      url: `/form-order-now.php?entityType=LLC&entityState=MD`,
     },
   ],
 };
@@ -16,7 +16,7 @@ export const howToGuide = [
       type: `header`,
       content: `Maryland Business Registration for Your LLC`,
       size: 2,
-      marginBottom: 16,
+      marginBottom: 40,
     },
     {
       type: `text`,
@@ -26,17 +26,12 @@ export const howToGuide = [
     {
       type: `text`,
       content: `For most business owners, the fastest and easiest way to start a business in Maryland is by creating a Maryland LLC. A limited liability company (LLC) is a type of business entity that’s ideal for startups and small- to medium-sized businesses. You get the advantages and protections of larger Maryland corporations, but with much simpler rules and regulations.`,
-      marginBottom: 16,
-    },
-    {
-      type: `text`,
-      content: `Briefly, the benefits of starting a Maryland LLC include:`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `list-dot`,
       content: {
-        header: ``,
+        header: `Briefly, the benefits of starting a Maryland LLC include:`,
         list: [`Separating and limiting your personal liability from your business liability and debts`,
                `Quick and simple filing, management, compliance, regulation and administration of your Maryland LLC`,
                `Easy tax filing and potential advantages for your tax treatment`],
@@ -49,13 +44,13 @@ export const howToGuide = [
     {
       type: `text`,
       content: `Learn more about the <a href="/limited-liability-company/">benefits of the LLC business structure here</a>.`,
-      marginBottom: 16,
+      marginBottom: 40,
     },
     {
       type: `header`,
       content: `Form an Maryland LLC in Six Quick Steps`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -113,7 +108,7 @@ export const howToGuide = [
       type: `header`,
       content: `Review Information from Maryland Business Express`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `list-dot`,
@@ -124,36 +119,36 @@ export const howToGuide = [
                `<a href="https://www.marylandtaxes.gov/" target="_blank" rel="noopener noreferrer">Maryland Comptroller for MD taxes</a>`],
       },
       marginBottom: 32,
-      color: color.yellow3,
+      color: color.babyblue3,
     },
     {
       type: `header`,
       content: `Form a Foreign LLC in Maryland`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `<p>If your business is already operating in another state and expanding to Maryland, you’ll need to form a foreign LLC. </p></br>
                 <p> More information on Maryland filing and licensing requirements here <link to state subpage once published> </p>`,
-      marginBottom: 32,
+      marginBottom: 40,
     },
     {
       type: `header`,
       content: `What to Do After Forming Your Maryland LLC`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `Want to know your next steps after creating a new LLC in Maryland? We’ve got you covered. <a href="/after-forming-llc/"> Here’s our guide</a> to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more.`,
-      marginBottom: 32,
+      marginBottom: 40,
     },
     {
       type: `header`,
       content: `Learn More About How to Start a Maryland LLC`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -219,7 +214,7 @@ export const howToGuide = [
       type: `header`,
       content: `Business Name Searches and Name Registration for Your Maryland LLC `,
       size: 2,
-      marginBottom: 16,
+      marginBottom: 40,
     },
     {
       type: `text`,
@@ -230,7 +225,7 @@ export const howToGuide = [
       type: `header`,
       content: `Maryland Business Entity Search`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -248,13 +243,13 @@ export const howToGuide = [
         text: `Maryland Business Express business search tool`,
         url: `https://egov.maryland.gov/businessexpress/entitysearch`,
       },
-      marginBottom: 32,
+      marginBottom: 40,
     },
     {
       type: `header`,
       content: `Business Name Registration Rules for Your Maryland LLC`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -334,7 +329,7 @@ export const howToGuide = [
     {
       type: `header`,
       content: `Maryland LLC DBA or Trade Names`,
-      size: 4,
+      size: 3,
       marginBottom: 32,
     },
     {
@@ -359,8 +354,8 @@ export const howToGuide = [
     {
       type: `header`,
       content: `Business Name Registration for Your Maryland LLC`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -371,22 +366,22 @@ export const howToGuide = [
       type: `list-dot`,
       content: {
         header: ``,
-        list: [`<p>If you don’t want to form your Maryland LLC right now, you can reserve the business name with Maryland Business Express. You will need to contact <a href="sdat.charterhelp@maryland.gov" target="_blank" rel="noopener noreferrer"> sdat.charterhelp@maryland.gov</a>. You do not need to reserve a name if you are forming your business right away.</p></br>`,
-               `<p>If you’re ready to start your Maryland LLC, you can formally file your Articles of Organization with Maryland Business Express, or <a href="/form-order-now.php?entityType=LLC&entityState=MD/">let Incfile take care of it for you</a>.</p>`],
+        list: [`If you don’t want to form your Maryland LLC right now, you can reserve the business name with Maryland Business Express. You will need to contact <a href="sdat.charterhelp@maryland.gov" target="_blank" rel="noopener noreferrer"> sdat.charterhelp@maryland.gov</a>. You do not need to reserve a name if you are forming your business right away.`,
+               `If you’re ready to start your Maryland LLC, you can formally file your Articles of Organization with Maryland Business Express, or <a href="/form-order-now.php?entityType=LLC&entityState=MD/">let Incfile take care of it for you</a>.`],
       },
-      marginBottom: 32,
+      marginBottom: 40,
       color: color.purple3,
     },
     {
       type: `header`,
       content: `FAQs on Naming Your Maryland LLC`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `You might find the following answers useful.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `accordion`,
@@ -415,8 +410,8 @@ export const howToGuide = [
     {
       type: `header`,
       content: `Useful Resources for Naming Your Maryland LLC`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -426,13 +421,13 @@ export const howToGuide = [
     {
       type: `header`,
       content: `Trademarks and Service Marks`,
-      size: 3,
+      size: 4,
       marginBottom: 16,
     },
     {
       type: `text`,
       content: `You must be careful that your Maryland LLC name does not infringe on the trademark or service mark of another business. The easiest way to make sure your proposed business name does not infringe is to carry out a trademark search through Incfile. If it doesn’t infringe, you can even register it as a trademark yourself.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `button`,
@@ -441,18 +436,18 @@ export const howToGuide = [
         url: `/trademark-name-search/`,
       },
       theme: `primary48`,
-      marginBottom: 32,
+      marginBottom: 40,
     },
     {
       type: `header`,
       content: `Find the Perfect Name for Your Maryland LLC`,
-      size: 3,
+      size: 4,
       marginBottom: 16,
     },
     {
       type: `text`,
       content: `The perfect business name can be elusive. We have a complete guide to choosing the right business name, but basically, you'll want to choose a name that will:`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `list-dot`,
@@ -482,7 +477,7 @@ export const howToGuide = [
       type: `header`,
       content: `Getting a Maryland Registered Agent for Your LLC`,
       size: 2,
-      marginBottom: 16,
+      marginBottom: 40,
     },
     {
       type: `text`,
@@ -498,23 +493,23 @@ export const howToGuide = [
       type: `header`,
       content: `What Maryland Business Express Says About MD Registered Agents`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `In Maryland, a Registered Agent is formally known as a “Resident Agent.” We’ll use those names interchangeably in this guide. Their functions and requirements are identical to those of Registered Agents described above. `,
-      marginBottom: 16,
+      marginBottom: 40,
     },
     {
       type: `header`,
       content: `Rules for Maryland Registered Agents`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `There are certain rules that you must follow when you’re appointing a Maryland Registered Agent service for your business. They are:`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `list-dot`,
@@ -537,12 +532,12 @@ export const howToGuide = [
       type: `header`,
       content: `What to Expect From a Maryland Resident Agent Service`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `Your Maryland Registered Agent carries out several valuable services for your business. They accept official communications and documents from MD Business Express on your behalf. This may include:`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `list-dot`,
@@ -552,8 +547,8 @@ export const howToGuide = [
                `Service of process documents (for example, if your Maryland LLC has legal proceedings issued against it)`, 
                `Official Maryland and federal government documents, form filings and requests for information (including taxes, permits and company filings)`],
       },
-      marginBottom: 24,
-      color: color.red3,
+      marginBottom: 40,
+      color: color.purple3,
       curve: true,
       curveColor: color.blue1,
     },
@@ -576,7 +571,7 @@ export const howToGuide = [
     {
       type: `text`,
       content: `Here’s what the Incfile MD Registered Agent service provides for your LLC:`,
-      marginBottom: 16,
+      marginBottom: 24,
     }, 
     {
       type: `list-dot`,
@@ -603,7 +598,7 @@ export const howToGuide = [
       type: `header`,
       content: `How to Appoint a Maryland Resident Agent for Your LLC`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -614,34 +609,34 @@ export const howToGuide = [
       type: `header`,
       content: `Assign Your Maryland Resident Agent When You Form Your MD LLC`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `Your business needs to have a Maryland Registered Agent Service as soon as it’s formed. You can achieve this through one of the following methods.`,
-      marginBottom: 16,
+      marginBottom: 40,
     },
     {
       type: `header`,
       content: `File Articles of Organization with Maryland Business Express`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `You will need to include details of your Registered Agent in your Articles of Organization. This is the form that you file with MD Business Express to formally create your business.`,
-      marginBottom: 24,
+      marginBottom: 40,
     },
     {
       type: `header`,
       content: `Incorporate Through Incfile and Get a Free Maryland Registered Agent `,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `When you incorporate through us, we complete and file your Articles of Organization based on the information you’ve provided. Additionally, we give you a free Maryland Registered Agent service for the first year, and we’ll include details of your MD Registered Agent in the form that we file.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `button`,
@@ -656,18 +651,18 @@ export const howToGuide = [
       type: `header`,
       content: `Change Your Maryland Resident Agent After Your LLC Is Formed`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `You can also change your MD Registered Agent service after you’ve formed your LLC. There are a couple of ways to achieve this.`,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `header`,
       content: `Choose a Registered Agent Service and Make the Change with Maryland Business Express`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -677,13 +672,13 @@ export const howToGuide = [
     {
       type: `header`,
       content: `Sign Up for Incfile’s Maryland Registered Agent Service and We’ll File the Change on Your Behalf`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `When you choose to use our MD Registered Agent service, we take care of all the filing for you. We’ll collect important information about your business and send it to Maryland Business Express. We’ll let you know once we officially become your Registered Agent. `,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `button`,
@@ -698,7 +693,7 @@ export const howToGuide = [
       type: `header`,
       content: `Maryland Resident Agent Search`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -714,12 +709,12 @@ export const howToGuide = [
       type: `header`,
       content: `Issues with Not Having a Maryland Resident Agent`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `What happens if you choose not to assign or provide details of a Registered Agent to Maryland Business Express? There are several possible ramifications, including:`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `list-dot`,
@@ -736,12 +731,12 @@ export const howToGuide = [
       type: `header`,
       content: `Acting as Your Own Resident Agent for Your MD LLC`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `If you have an address in Maryland, you can choose to be the Registered Agent for your LLC. We don’t recommend this approach as there can be some drawbacks:`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `list-dot`,
@@ -759,7 +754,7 @@ export const howToGuide = [
         type: `header`,
         content: `FAQs About Maryland Registered Agents`,
         size: 3,
-        marginBottom: 24,
+        marginBottom: 32,
     },
     {
       type: `accordion`,
@@ -789,7 +784,7 @@ export const howToGuide = [
       type: `header`,
       content: `Useful Resources for Maryland Registered Agent Services`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `list-dot`,
@@ -809,7 +804,7 @@ export const howToGuide = [
       type: `header`,
       content: `Licenses, Fees and Filing Requirements for Maryland LLCs`,
       size: 2,
-      marginBottom: 24,
+      marginBottom: 40,
     },
     {
       type: `text`,
@@ -825,7 +820,7 @@ export const howToGuide = [
       type: `header`,
       content: `Initial Filing Costs for Forming an LLC in Maryland`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -833,7 +828,7 @@ export const howToGuide = [
       marginBottom: 32,
     },
     {
-      type: `table`,
+      type: `table-simple`,
       content: {
         headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
         rows: [[`$197`, `4 Weeks`, `10 Business Days`]],
@@ -878,12 +873,12 @@ export const howToGuide = [
       type: `header`,
       content: `Getting an EIN/Tax ID for Your Maryland LLC`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `Every Maryland LLC should have a unique employer identification number (EIN). These are provided by the Internal Revenue Service, and you use them when filing taxes, opening a business bank account and paying employees. You can get one yourself at no cost from the IRS or have Incfile obtain one on your behalf.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `button`,
@@ -898,12 +893,12 @@ export const howToGuide = [
       type: `header`,
       content: `Certificate of Authority to Operate Outside Maryland`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `If you’re expanding your Maryland LLC beyond the borders of the state, you will need a Foreign Qualification or Certificate of Authority to operate in another state. These are typically necessary if you have a physical presence, employees or banking in a different state than Maryland. Fees and requirements for foreign qualifications depend on each state’s rules. Incfile provides a complete Foreign Qualification service for any state.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `button`,
@@ -918,7 +913,7 @@ export const howToGuide = [
       type: `header`,
       content: `Maryland Annual Reports and LLC Costs`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -969,12 +964,12 @@ export const howToGuide = [
       type: `header`,
       content: `Maryland Business Licenses and Permits`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `Some MD LLCs will need certain business licenses and permits from federal, state and regional organizations. These permits and licenses will have associated fees that you should pay on a one-off or regular basis. `,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `list-dot`,
@@ -1021,8 +1016,8 @@ export const howToGuide = [
     {
       type: `header`,
       content: `An Operating Agreement for Your Maryland LLC`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -1032,13 +1027,13 @@ export const howToGuide = [
     {
       type: `text`,
       content: `An Operating Agreement is extremely useful for several reasons (<a href="/research-topics/llc-info/the-llc-operating-agreement/">learn about them here</a>).  If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Maryland business. You can choose to make changes to the template based on your unique requirements. `,
-      marginBottom: 16,
+      marginBottom: 40,
     },
     {
       type: `header`,
       content: `Ad Hoc Maryland Fees or Requirements for Your MD LLC`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -1048,13 +1043,13 @@ export const howToGuide = [
     {
       type: `header`,
       content: `To Obtain a Trade Name for Your Maryland LLC`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `If you want your MD business to trade under a different name, you can file a form with Maryland Business Express. You will need to pay a Maryland filing fee. Incfile can file this form on your behalf.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `button`,
@@ -1068,13 +1063,13 @@ export const howToGuide = [
     {
       type: `header`,
       content: `To Change the Maryland Registered Agent for Your MD LLC`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `Your Maryland LLC needs a Registered Agent, which must be appointed when you first incorporate your LLC. You can also switch to a new MD Registered Agent later. Incfile provides a complete Maryland Registered Agent service.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `button`,
@@ -1088,8 +1083,8 @@ export const howToGuide = [
     {
       type: `header`,
       content: `To Reserve a Name for Your Maryland LLC`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -1099,13 +1094,13 @@ export const howToGuide = [
     {
       type: `header`,
       content: `To Amend Certain Facts About Your Maryland LLC`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `Your business formation documents state certain facts about your Maryland business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with Maryland Business Express. You can do this yourself or have Incfile complete the filing on your behalf.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `list-dot`,
@@ -1115,7 +1110,7 @@ export const howToGuide = [
                `Changing the business address of your LLC`,
                `Altering the stated business activities of your Maryland LLC`],
       },
-      marginBottom: 0,
+      marginBottom: 24,
       color: color.yellow3,
     },
     {
@@ -1130,13 +1125,13 @@ export const howToGuide = [
     {
       type: `header`,
       content: `To Get a Certificate of Good Standing for Your Maryland LLC`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `Some organizations will request that you prove your Maryland LLC’s compliance with laws and tax requirements. If you need to prove you have met your commitments, you will need a “Certificate of Good Standing” from Maryland Business Express. Incfile can obtain a certificate on your behalf.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `button`,
@@ -1145,7 +1140,7 @@ export const howToGuide = [
         url: `/manage-your-company/certificate-of-good-standing/`,
       },
       theme: `primary48`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `text`,
@@ -1161,7 +1156,7 @@ export const howToGuide = [
       type: `header`,
       content: `FAQs About Maryland LLC Costs`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `accordion`,
@@ -1197,7 +1192,7 @@ export const howToGuide = [
       type: `header`,
       content: `The Business Taxes Your MD LLC Will Need to Pay`,
       size: 2,
-      marginBottom: 24,
+      marginBottom: 40,
     },
     {
       type: `text`,
@@ -1213,12 +1208,12 @@ export const howToGuide = [
       type: `header`,
       content: `How Your Maryland LLC Will Be Taxed`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `The profits of a Maryland LLC are not taxed at the business level like those of C Corporations. Instead, taxes for a Maryland LLC work as follows:`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `numeric-list`,
@@ -1242,7 +1237,7 @@ export const howToGuide = [
           text: `Employees pay federal, state and payroll tax on their earnings.`,
         },
       ],
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `text`,
@@ -1253,18 +1248,18 @@ export const howToGuide = [
       type: `header`,
       content: `Maryland Taxes Payable to the MD Comptroller`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `There are two main types of tax that you will pay to the Maryland Comptroller: Maryland state income tax and Maryland state sales tax.`,
-      marginBottom: 32,
+      marginBottom: 40,
     },
     {
       type: `header`,
       content: `Maryland State Income Tax `,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -1279,18 +1274,18 @@ export const howToGuide = [
     {
       type: `text`,
       content: `<a href="https://www.marylandtaxes.gov/pros/index.php" target="_blank" rel="noopener noreferrer">Get details on the Maryland state tax here.</a> `,
-      marginBottom: 32,
+      marginBottom: 40,
     },
     {
       type: `header`,
       content: `Maryland Sales Taxes on LLC Sales`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the MD Comptroller. Maryland sales tax is collected at the point of purchase. Maryland sales tax rates do vary depending on the region, county or city where you are located.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `list-dot`,
@@ -1317,19 +1312,19 @@ export const howToGuide = [
     {
       type: `header`,
       content: `Maryland Sales Tax Rates`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `Sales tax rates do vary between states, counties and cities. Typically, the state will set a base sales tax rate, then specific counties and cities may levy small additional sales tax amounts on top of that. `,
-      marginBottom: 32,
+      marginBottom: 40,
     },
     {
       type: `header`,
       content: `Federal Self-Employment and Income Taxes for Your Maryland LLC`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -1339,8 +1334,8 @@ export const howToGuide = [
     {
       type: `header`,
       content: `Maryland Federal Self-Employment Tax`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -1350,7 +1345,7 @@ export const howToGuide = [
     {
       type: `text`,
       content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `list-dot`,
@@ -1369,8 +1364,8 @@ export const howToGuide = [
     {
       type: `header`,
       content: `Pay Less Self-Employment Tax by Treating Your Maryland LLC as an S Corporation`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -1380,7 +1375,7 @@ export const howToGuide = [
     {
       type: `text`,
       content: `You can do this by making an “S Corporation Tax Election” with the IRS using a form known as Form 2553. We can file your Form 2553 with the IRS on your behalf.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `button`,
@@ -1389,7 +1384,7 @@ export const howToGuide = [
         url: `/llc-s-corp-election/`,
       },
       theme: `primary48`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `text`,
@@ -1399,8 +1394,8 @@ export const howToGuide = [
     {
       type: `header`,
       content: `Maryland LLC Federal Income Tax`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -1416,12 +1411,12 @@ export const howToGuide = [
       type: `header`,
       content: `Employer and Employee Taxes for Your Maryland LLC`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `If you pay employees, there are some slightly different tax implications. Speak to your accountant to get clear guidance for your own unique situation.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `header`,
@@ -1475,8 +1470,8 @@ export const howToGuide = [
     {
       type: `header`,
       content: `Other Taxes and Duties for Your Maryland LLC`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -1486,13 +1481,13 @@ export const howToGuide = [
     {
       type: `header`,
       content: `Estimated Taxes for Your Maryland LLC`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `Most Maryland LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `list-dot`,
@@ -1503,7 +1498,7 @@ export const howToGuide = [
                `Maryland state tax`],
       },
       marginBottom: 24,
-      color: color.red3,
+      color: color.green3,
     },
     {
       type: `text`,

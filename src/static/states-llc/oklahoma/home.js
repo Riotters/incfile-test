@@ -6,7 +6,7 @@ export const top = {
   buttons: [
     {
       text: `See detailed pricing`,
-      url: `/form-order-now.php?entityType=LLC&entityState=AZ`,
+      url: `/form-order-now.php?entityType=LLC&entityState=OK`,
     },
   ],
 };
@@ -16,7 +16,7 @@ export const howToGuide = [
       type: `header`,
       content: `How to Get an LLC in Oklahoma`,
       size: 2,
-      marginBottom: 24,
+      marginBottom: 40,
     },
     {
       type: `text`,
@@ -26,17 +26,12 @@ export const howToGuide = [
     {
       type: `text`,
       content: `If you want to start your own business in Oklahoma, one of the best ways to do so is by forming an Oklahoma LLC with the secretary of state. Limited Liability Companies (LLCs) are a business entity designed for startups and small- and medium-sized businesses. Filing for an Oklahoma LLC gives you many of the protections and advantages of larger corporations without all the rules, regulations and compliance issues common to larger business entities. `,
-      marginBottom: 16,
-    },
-    {
-      type: `text`,
-      content: `Briefly, the benefits of starting an Oklahoma LLC include:`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `list-dot`,
       content: {
-        header: ``,
+        header: `Briefly, the benefits of starting an Oklahoma LLC include:`,
         list: [`Separating and limiting your personal liability from your business liability and debts`,
                `Quick and simple filing, management, compliance, regulation and administration of your Oklahoma LLC`,
                `Easy tax filing and potential advantages for your tax treatment`],
@@ -49,13 +44,13 @@ export const howToGuide = [
     {
       type: `text`,
       content: `Learn more about the <a href="/limited-liability-company/">benefits of the LLC business structure here</a>.`,
-      marginBottom: 16,
+      marginBottom: 40,
     },
     {
       type: `header`,
       content: `Six Quick Steps for Oklahoma LLC Filing`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -114,7 +109,7 @@ export const howToGuide = [
       type: `header`,
       content: `Review Information From the Oklahoma Secretary of State`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `list-dot`,
@@ -125,13 +120,13 @@ export const howToGuide = [
                `<a href="https://www.ok.gov/tax/" target="_blank" rel="noopener noreferrer">Oklahoma Tax Commission for OK taxes</a>`],
       },
       marginBottom: 32,
-      color: color.yellow3,
+      color: color.babyblue3,
     },
     {
       type: `header`,
       content: `Special Types of Oklahoma LLCs`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -142,7 +137,7 @@ export const howToGuide = [
       type: `header`,
       content: `Form an Oklahoma Series LLC`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -158,7 +153,7 @@ export const howToGuide = [
       type: `header`,
       content: `Form a Professional Oklahoma LLC`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -169,30 +164,30 @@ export const howToGuide = [
       type: `header`,
       content: `Form a Foreign LLC in Oklahoma`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `<p>If your business is already operating in another state and expanding to Oklahoma, you’ll need to form a foreign LLC.</p></br>
                 <p> More information on Oklahoma <a href="/oklahoma-llc/form-filling-permit-requirements/"> filing and licensing requirements here</a> </p>`,
-      marginBottom: 32,
+      marginBottom: 40,
     },
     {
       type: `header`,
       content: `What to Do After Forming Your Oklahoma LLC`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `Want to know your next steps after creating a new LLC in Oklahoma? We’ve got you covered. <a href="/after-forming-llc/"> Here’s our guide</a> to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more.`,
-      marginBottom: 32,
+      marginBottom: 40,
     },
     {
       type: `header`,
       content: `Detailed Information for Your Oklahoma LLC`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -258,7 +253,7 @@ export const howToGuide = [
       type: `header`,
       content: `Oklahoma Business Entity Searches & How to Register Your LLC Business Name`,
       size: 2,
-      marginBottom: 16,
+      marginBottom: 40,
     },
     {
       type: `text`,
@@ -269,7 +264,7 @@ export const howToGuide = [
       type: `header`,
       content: `Oklahoma Secretary of State Business Search`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -287,13 +282,13 @@ export const howToGuide = [
         text: `Oklahoma Secretary of State entity search tool`,
         url: `https://www.sos.ok.gov/business/corp/records.aspx/`,
       },
-      marginBottom: 32,
+      marginBottom: 40,
     },
     {
       type: `header`,
       content: `Oklahoma Secretary of State Rules for Naming Your LLC`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -304,7 +299,7 @@ export const howToGuide = [
       type: `header`,
       content: `General Rules for Naming Your OK LLC`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -384,7 +379,7 @@ export const howToGuide = [
     {
       type: `header`,
       content: `DBA Names in Oklahoma `,
-      size: 4,
+      size: 3,
       marginBottom: 32,
     },
     {
@@ -395,7 +390,7 @@ export const howToGuide = [
     {
       type: `text`,
       content: `For example, your LLC might be called Oklahoma Renewable Energy Holding Company LLC, and you want to brand it as “Oklahoma Turbines and Panels.” You should file a trade name to let the Oklahoma Secretary of State know. In Oklahoma, you can do that through their online filing service, or you can have Incfile do it on your behalf through our DBA name service.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `button`,
@@ -409,34 +404,34 @@ export const howToGuide = [
     {
       type: `header`,
       content: `Register Your Business Name With the Oklahoma Secretary of State`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `Once you’ve searched for your Oklahoma business name, checked availability, followed the naming rules and decided whether you need a fictitious name, you can register your OK LLC name. There are a couple of ways to do this.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `list-dot`,
       content: {
         header: ``,
-        list: [`<p>If you don’t want to form your Oklahoma LLC right now, you can reserve the business name with the Oklahoma Secretary of State. </p></br>`,
-               `<p>If you’re ready to start your Oklahoma LLC, you can formally file your Articles of Organization with the Oklahoma SOS, or <a href="/form-order-now.php?entityType=LLC&entityState=OK/">let Incfile take care of it for you</a>.</p>`],
+        list: [`If you don’t want to form your Oklahoma LLC right now, you can reserve the business name with the Oklahoma Secretary of State. `,
+               `If you’re ready to start your Oklahoma LLC, you can formally file your Articles of Organization with the Oklahoma SOS, or <a href="/form-order-now.php?entityType=LLC&entityState=OK/">let Incfile take care of it for you</a>.`],
       },
-      marginBottom: 32,
+      marginBottom: 40,
       color: color.purple3,
     },
     {
       type: `header`,
       content: `FAQs on Naming Your Oklahoma LLC`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `You might find the following answers useful.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `accordion`,
@@ -465,8 +460,8 @@ export const howToGuide = [
     {
       type: `header`,
       content: `Useful Resources for Naming Your Oklahoma LLC`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -476,13 +471,13 @@ export const howToGuide = [
     {
       type: `header`,
       content: `Trademarks and Service Marks`,
-      size: 3,
+      size: 4,
       marginBottom: 16,
     },
     {
       type: `text`,
       content: `You must be careful that your Oklahoma LLC name does not infringe on the trademark or service mark of another business. The easiest way to make sure your proposed business name does not infringe is to carry out a trademark search through Incfile. If it doesn’t infringe, you can even register it as a trademark yourself.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `button`,
@@ -496,13 +491,13 @@ export const howToGuide = [
     {
       type: `header`,
       content: `Find the Perfect Name for Your Oklahoma LLC`,
-      size: 3,
+      size: 4,
       marginBottom: 16,
     },
     {
       type: `text`,
       content: `The perfect business name can be elusive. We have a complete guide to choosing the right business name, but basically, you'll want to choose a name that will:`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `list-dot`,
@@ -532,7 +527,7 @@ export const howToGuide = [
       type: `header`,
       content: `Oklahoma Registered Agents for Your LLC `,
       size: 2,
-      marginBottom: 16,
+      marginBottom: 40,
     },
     {
       type: `text`,
@@ -549,12 +544,12 @@ export const howToGuide = [
       type: `header`,
       content: `Rules for Oklahoma Registered Agents`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `There are certain rules that you must follow when you’re appointing an Oklahoma Registered Agent service for your business. They are:`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `list-dot`,
@@ -577,7 +572,7 @@ export const howToGuide = [
       type: `header`,
       content: `What to Expect From an Oklahoma Registered Agent Service`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -593,8 +588,8 @@ export const howToGuide = [
                `Official Oklahoma state and federal government correspondence and notifications`, 
                `Tax forms and requests to complete permits, company filings and reports`],
       },
-      marginBottom: 24,
-      color: color.red3,
+      marginBottom: 40,
+      color: color.green3,
       curve: true,
       curveColor: color.blue1,
     },
@@ -602,7 +597,7 @@ export const howToGuide = [
       type: `header`,
       content: `A Complete Oklahoma Registered Agent Service From Incfile`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -617,7 +612,7 @@ export const howToGuide = [
     {
       type: `text`,
       content: `Here’s what you need to know about Incfile’s OK Registered Agent service:`,
-      marginBottom: 16,
+      marginBottom: 24,
     }, 
     {
       type: `list-dot`,
@@ -644,7 +639,7 @@ export const howToGuide = [
       type: `header`,
       content: `How to Appoint an Oklahoma Registered Agent for Your LLC`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -655,7 +650,7 @@ export const howToGuide = [
       type: `header`,
       content: `Appoint an OK Registered Agent Service When You Create Your Oklahoma LLC`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -665,8 +660,8 @@ export const howToGuide = [
     {
       type: `header`,
       content: `File Articles of Organization With the Oklahoma Secretary of State`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -676,13 +671,13 @@ export const howToGuide = [
     {
       type: `header`,
       content: `Incorporate Through Incfile and Get a Free Oklahoma Registered Agent `,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `When you incorporate through us, we complete and file your Articles of Organization based on the information you’ve provided. Additionally, we give you a free Oklahoma Registered Agent service for the first year, and we’ll include details of your OK Registered Agent in the form that we file.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `button`,
@@ -697,18 +692,18 @@ export const howToGuide = [
       type: `header`,
       content: `Change Your Oklahoma Registered Agent After Your LLC Is Formed`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `You can also change your OK Registered Agent service after you’ve formed your LLC. There are a couple of ways to achieve this.`,
-      marginBottom: 16,
+      marginBottom: 40,
     },
     {
       type: `header`,
       content: `File Form CHANGE OR DESIGNATION OF REGISTERED AGENT AND/OR REGISTERED OFFICE with the Oklahoma SOS`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -718,13 +713,13 @@ export const howToGuide = [
     {
       type: `header`,
       content: `Sign Up for Incfile’s Oklahoma Registered Agent Service, and We’ll File the Change on Your Behalf`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `When you choose to use our OK Registered Agent service, we take care of all the form filling and filing for you. We’ll collect important information about your business, complete the form on your behalf and send it to the Oklahoma Secretary of State. We’ll let you know once we officially become your Registered Agent. `,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `button`,
@@ -739,7 +734,7 @@ export const howToGuide = [
       type: `header`,
       content: `Oklahoma Registered Agent Search`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -755,12 +750,12 @@ export const howToGuide = [
       type: `header`,
       content: `The Problems Caused When You Don’t Appoint an Oklahoma Registered Agent Service`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `What happens if you choose not to assign or provide details of a Registered Agent to the Oklahoma Secretary of State? There are several possible ramifications, including:`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `list-dot`,
@@ -777,12 +772,12 @@ export const howToGuide = [
       type: `header`,
       content: `You Can Appoint Yourself as Your Own Oklahoma Registered Agent`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `If you have an address in Oklahoma, you can choose to be the Registered Agent for your LLC. We don’t recommend this approach as there can be some drawbacks:`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `list-dot`,
@@ -800,7 +795,7 @@ export const howToGuide = [
         type: `header`,
         content: `FAQs About Oklahoma Registered Agents`,
         size: 3,
-        marginBottom: 24,
+        marginBottom: 32,
     },
     {
       type: `accordion`,
@@ -830,7 +825,7 @@ export const howToGuide = [
       type: `header`,
       content: `Useful Resources for Oklahoma Registered Agent Services`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `list-dot`,
@@ -850,7 +845,7 @@ export const howToGuide = [
       type: `header`,
       content: `Oklahoma LLC Fees and Filing Requirements`,
       size: 2,
-      marginBottom: 24,
+      marginBottom: 40,
     },
     {
       type: `text`,
@@ -866,7 +861,7 @@ export const howToGuide = [
       type: `header`,
       content: `Initial Filing and Fees for Forming an LLC in Oklahoma`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -874,7 +869,7 @@ export const howToGuide = [
       marginBottom: 32,
     },
     {
-      type: `table`,
+      type: `table-simple`,
       content: {
         headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
         rows: [[`$104`, `1 Week`, `3 Business Days`]],
@@ -919,7 +914,7 @@ export const howToGuide = [
       type: `header`,
       content: `Getting an Employer Identification Number for Your OK LLC`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -939,7 +934,7 @@ export const howToGuide = [
       type: `header`,
       content: `Foreign Qualification/Certificate of Authority to Operate in a State Outside Oklahoma`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -959,7 +954,7 @@ export const howToGuide = [
       type: `header`,
       content: `Oklahoma LLC Annual Reporting and Fees`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -1010,12 +1005,12 @@ export const howToGuide = [
       type: `header`,
       content: `Oklahoma Business Licenses and Permits`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `Your Oklahoma LLC may need certain licenses and permits to comply with specific requirements. These business permits and licenses might be issued by Oklahoma, regional or federal organizations. Some of the associated fees only need to be paid once, while others have ongoing charges.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `list-dot`,
@@ -1048,7 +1043,7 @@ export const howToGuide = [
     {
       type: `text`,
       content: `Remember that operating your business without the required licenses can expose you to risks and fines from federal, Oklahoma and local governments.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `button`,
@@ -1062,8 +1057,8 @@ export const howToGuide = [
     {
       type: `header`,
       content: `Operating Agreements and Oklahoma LLCs`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -1073,13 +1068,13 @@ export const howToGuide = [
     {
       type: `text`,
       content: `An Operating Agreement is extremely useful for several reasons (<a href="/research-topics/llc-info/the-llc-operating-agreement/">learn about them here</a>). If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Oklahoma business. You can choose to make changes to the template based on your unique requirements. `,
-      marginBottom: 16,
+      marginBottom: 40,
     },
     {
       type: `header`,
       content: `Ad Hoc Oklahoma Fees or Requirements for Your OK LLC`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -1089,13 +1084,13 @@ export const howToGuide = [
     {
       type: `header`,
       content: `To Obtain a Fictitious/DBA/Trade Name for Your Oklahoma LLC`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `If you want your OK business to trade under a different name, you can file a form with the Oklahoma Secretary of State. You will need to pay an Oklahoma filing fee. Incfile can file this form on your behalf.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `button`,
@@ -1109,13 +1104,13 @@ export const howToGuide = [
     {
       type: `header`,
       content: `To Change the Oklahoma Registered Agent for Your OK LLC`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `Your Oklahoma LLC needs a Registered Agent, which must be appointed when you first incorporate your LLC. You can also switch to a new OK Registered Agent later. Incfile provides a complete Oklahoma Registered Agent service.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `button`,
@@ -1129,8 +1124,8 @@ export const howToGuide = [
     {
       type: `header`,
       content: `To Reserve a Name for Your Oklahoma LLC`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -1140,13 +1135,13 @@ export const howToGuide = [
     {
       type: `header`,
       content: `To Amend Certain Facts About Your Oklahoma LLC`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `Your business formation documents state certain facts about your Oklahoma business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with the Oklahoma Secretary of State. You can do this yourself or have Incfile complete the filing on your behalf.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `list-dot`,
@@ -1156,7 +1151,7 @@ export const howToGuide = [
                `Changing the business address of your LLC`,
                `Altering the stated business activities of your Oklahoma LLC`],
       },
-      marginBottom: 0,
+      marginBottom: 24,
       color: color.yellow3,
     },
     {
@@ -1171,13 +1166,13 @@ export const howToGuide = [
     {
       type: `header`,
       content: `To Get a Certificate of Good Standing for Your Oklahoma LLC`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `Some organizations will request that you prove your Oklahoma LLC’s compliance with laws and tax requirements. If you need to prove you have met your commitments, you will need a “Certificate of Good Standing” from the Oklahoma Secretary of State. Incfile can obtain a certificate on your behalf.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `button`,
@@ -1186,7 +1181,7 @@ export const howToGuide = [
         url: `/manage-your-company/certificate-of-good-standing/`,
       },
       theme: `primary48`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `text`,
@@ -1202,7 +1197,7 @@ export const howToGuide = [
       type: `header`,
       content: `FAQs About Oklahoma LLC Fees`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `accordion`,
@@ -1238,7 +1233,7 @@ export const howToGuide = [
       type: `header`,
       content: `Business and Sales Taxes for Your Oklahoma LLC`,
       size: 2,
-      marginBottom: 24,
+      marginBottom: 40,
     },
     {
       type: `text`,
@@ -1254,12 +1249,12 @@ export const howToGuide = [
       type: `header`,
       content: `How Your Oklahoma LLC Will Be Taxed`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `The profits of an Oklahoma LLC are not taxed at the business level like those of C Corporations. Instead, taxes for an Oklahoma LLC work as follows:`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `numeric-list`,
@@ -1283,7 +1278,7 @@ export const howToGuide = [
           text: `Employees pay federal, state and payroll tax on their earnings`,
         },
       ],
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `text`,
@@ -1294,18 +1289,18 @@ export const howToGuide = [
       type: `header`,
       content: `Oklahoma Taxes Payable to the OK Tax Commission/Department of Revenue`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `There are two main types of tax that you will pay to the Oklahoma Tax Commission: Oklahoma state income tax and Oklahoma state sales tax.`,
-      marginBottom: 32,
+      marginBottom: 40,
     },
     {
       type: `header`,
       content: `Oklahoma State Income Tax Payable on LLC Earnings`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -1331,12 +1326,12 @@ export const howToGuide = [
       type: `header`,
       content: `Oklahoma Sales Taxes on LLC Sales`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the OK Tax Commission. Oklahoma sales tax is collected at the point of purchase. Oklahoma sales tax rates do vary depending on the region, county or city where you are located.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `list-dot`,
@@ -1363,8 +1358,8 @@ export const howToGuide = [
     {
       type: `header`,
       content: `Oklahoma Sales Tax Rates`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -1375,7 +1370,7 @@ export const howToGuide = [
       type: `header`,
       content: `Federal Self-Employment and Income Taxes for Your Oklahoma LLC`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -1385,8 +1380,8 @@ export const howToGuide = [
     {
       type: `header`,
       content: `Oklahoma LLC Federal Self-Employment Tax`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -1396,7 +1391,7 @@ export const howToGuide = [
     {
       type: `text`,
       content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `list-dot`,
@@ -1415,8 +1410,8 @@ export const howToGuide = [
     {
       type: `header`,
       content: `Pay Less Self-Employment Tax by Treating Your Oklahoma LLC as an S Corporation`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -1426,7 +1421,7 @@ export const howToGuide = [
     {
       type: `text`,
       content: `You can do this by making an “S Corporation Tax Election” with the IRS using a form known as Form 2553. We can file your Form 2553 with the IRS on your behalf.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `button`,
@@ -1435,7 +1430,7 @@ export const howToGuide = [
         url: `/llc-s-corp-election/`,
       },
       theme: `primary48`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `text`,
@@ -1445,8 +1440,8 @@ export const howToGuide = [
     {
       type: `header`,
       content: `Oklahoma LLC Federal Income Tax`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -1456,13 +1451,13 @@ export const howToGuide = [
     {
       type: `text`,
       content: `You only pay federal income tax on your Oklahoma LLC profits that you take out of the business, less certain deductions and allowances. This includes your tax-free amount, plus LLC business expenses and other deductions for areas such as healthcare and some retirement plans. Speak to your accountant for more information.`,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `header`,
       content: `Employer and Employee Taxes for Your Oklahoma LLC`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -1521,8 +1516,8 @@ export const howToGuide = [
     {
       type: `header`,
       content: `Other Taxes and Duties for Your Oklahoma LLC`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -1532,13 +1527,13 @@ export const howToGuide = [
     {
       type: `header`,
       content: `Estimated Taxes for Your Oklahoma LLC`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `Most Oklahoma LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `list-dot`,
@@ -1549,7 +1544,7 @@ export const howToGuide = [
                `Oklahoma state tax`],
       },
       marginBottom: 24,
-      color: color.red3,
+      color: color.green3,
     },
     {
       type: `text`,
