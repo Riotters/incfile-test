@@ -26,7 +26,7 @@ export const howToGuide = [
   {
     type: `text`,
     content: `For most business owners, the fastest and easiest way to start a business in Idaho is by creating an LLC. A limited liability company (LLC) is a type of business entity that’s ideal for startups and small- to medium-sized businesses. You get the advantages and protections of larger Idaho corporations but with much simpler rules and regulations.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -38,7 +38,7 @@ export const howToGuide = [
         `Easy tax filing and potential advantages for your tax treatment`
       ],
     },
-    marginBottom: 24,
+    marginBottom: 16,
     color: color.green3,
     curve: true,
     curveColor: color.red1,
@@ -114,7 +114,7 @@ export const howToGuide = [
   {
     type: `text`,
     content: `These are all the basic steps for forming an LLC in Idaho, but the Secretary of State has plenty of additional information.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -138,7 +138,7 @@ export const howToGuide = [
   {
     type: `text`,
     content: `A regular Idaho LLC is suitable for most business needs, but you also have a few other options to incorporate a special type of LLC.`,
-    marginBottom: 16,
+    marginBottom: 48,
   },
   {
     type: `header`,
@@ -149,7 +149,7 @@ export const howToGuide = [
   {
     type: `text`,
     content: `A regular Idaho LLC is suitable for most business needs, but you also have a few other options to incorporate a special type of LLC.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `accordion`,
@@ -221,7 +221,7 @@ export const howToGuide = [
   {
     type: `text`,
     content: `How to search the Idaho business registry of the Secretary of State and find the right name. Includes information on naming rules, fictitious names, reserving a Idaho LLC name and more.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `arrow-link`,
@@ -234,7 +234,7 @@ export const howToGuide = [
   {
     type: `text`,
     content: `How to appoint a Registered Agent to your new LLC or change to a different Registered Agent. Includes information on Registered Agent rules and searching forIdaho Registered Agents.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `arrow-link`,
@@ -247,7 +247,7 @@ export const howToGuide = [
   {
     type: `text`,
     content: `How to understand the various fees you’ll need to pay and the requirements you’ll need to meet for both federal and Idaho rules. Includes details of Employer Identification Numbers (EINs), Idaho and federal business licenses, annual reports and more.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `arrow-link`,
@@ -309,7 +309,7 @@ export const namingYourBusiness = [
   {
     type: `text`,
     content: `Once you’ve decided on a name for your LLC and checked business name availability, you’ll need to meet Idaho Secretary of State naming rules.`,
-    marginBottom: 24,
+    marginBottom: 48,
   },
   {
     type: `header`,
@@ -326,12 +326,12 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Your LLC Business Name Must Not Be Confusable with Another Business Name`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `It’s not enough for your LLC name to be unique. It also cannot be similar to the name of a corporation or LLC in Idaho.`,
-    marginBottom: 32,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -351,7 +351,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Your LLC Business Name Must Contain Certain Words`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -362,12 +362,12 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Your LLC Business Name May Have Other General Restrictions`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `Most states will not allow you to form LLCs with names that:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -417,7 +417,7 @@ export const namingYourBusiness = [
   {
     type: `text`,
     content: `Once you’ve searched for your Idaho business name, checked availability, followed the naming rules and decided whether you need a fictitious name, you can register your ID LLC name. There are a couple of ways to do this.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `numeric-list`,
@@ -483,7 +483,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Trademarks and Service Marks`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -497,18 +497,18 @@ export const namingYourBusiness = [
       url: `/trademark-name-search/`,
     },
     theme: `primary48`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Find the Perfect Name for Your Idaho LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `The perfect business name can be elusive. We have a complete guide to choosing the right business name, but basically, you'll want to choose a name that will:`,
-    marginBottom: 20,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -521,7 +521,7 @@ export const namingYourBusiness = [
         `Not be used by another business`
       ],
     },
-    marginBottom: 40,
+    marginBottom: 16,
     color: color.orange3,
   },
   {
@@ -530,7 +530,7 @@ export const namingYourBusiness = [
       text: `Incfile guide to choosing a business name.`,
       url: `/blog/post/llc-name-search-50-states/`,
     },
-    marginBottom: 30,
+    marginBottom: 32,
   },
 ];
 
@@ -576,7 +576,7 @@ export const registeredAgent = [
   {
     type: `text`,
     content: `There are certain rules that you must follow when you’re appointing a Idaho Registered Agent service for your business.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -606,7 +606,7 @@ export const registeredAgent = [
   {
     type: `text`,
     content: `What can you expect from your Idaho Registered Agent? Their main function is to accept official documents and correspondence.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -636,7 +636,7 @@ export const registeredAgent = [
   {
     type: `text`,
     content: `Incfile is authorized to conduct business in Idaho and can legally act as your Registered Agent.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -671,35 +671,35 @@ export const registeredAgent = [
   {
     type: `text`,
     content: `You can appoint a Registered Agent when you first incorporate your Idaho LLC or at any point after that. Here’s how to go about it.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Assign Your Idaho Registered Agent When You Form Your LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `Your business needs to have a Idaho Registered Agent Service as soon as it’s formed. You can achieve this through one of the following methods.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `File Certificate of Formation with the Idaho Secretary of State`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `You will need to include details of your Registered Agent in your Certificate of Formation. This is the form that you file with the ID Secretary of State to formally create your business.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Incorporate Through Incfile and Get a Free Idaho Registered Agent`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -724,24 +724,24 @@ export const registeredAgent = [
   {
     type: `text`,
     content: `You can also change your Registered Agent service after you’ve formed your LLC. There are a couple of ways to achieve this.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Choose a Registered Agent Service and File Form Statement of Change of Registered Office or Registered Agent, or Both with the Idaho Secretary of State`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `Once you’ve chosen a new Registered Agent, you can complete a form that’s available on the ID Secretary of State website. Once you’ve filled it out, send it to the Secretary of State so they can update your records.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Sign Up for Incfile’s Idaho Registered Agent Service and We’ll File the Change on Your Behalf`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -782,7 +782,7 @@ export const registeredAgent = [
   {
     type: `text`,
     content: `What happens if you choose not to assign or provide details of a Registered Agent to the Idaho Secretary of State?`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -806,7 +806,7 @@ export const registeredAgent = [
   {
     type: `text`,
     content: `If you have an address in Idaho, you can choose to be the Registered Agent for your LLC.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -856,7 +856,7 @@ export const registeredAgent = [
     type: `header`,
     content: `Useful Resources for Idaho Registered Agent Services`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -899,10 +899,10 @@ export const feesAndRequirments = [
   {
     type: `text`,
     content: `To create your business in Idaho, you’ll file an LLC with the Secretary of State and pay an associated LLC formation fee. Every state has different LLC filing fees and filing times. Here is the current information for Idaho:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
-    type: `table`,
+    type: `table-simple`,
     content: {
       headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
       rows: [[`$100`, `4 weeks`, `5 business days`]],
@@ -922,7 +922,7 @@ export const feesAndRequirments = [
       text: `Compare State Filing Prices`,
       url: `/state-filing-fees/`,
     },
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -992,7 +992,7 @@ export const feesAndRequirments = [
   {
     type: `text`,
     content: `Most states need to file an annual (or other periodic) report with their department of state. When you file your ID LLC annual report, you may need to pay a fee. Here are the annual filing requirements for Idaho:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -1035,7 +1035,7 @@ export const feesAndRequirments = [
   {
     type: `text`,
     content: `Some Idaho LLCs will need certain business licenses and permits from federal, state and regional organizations. These permits and licenses will have associated fees that you should pay on a one-off or regular basis.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -1059,7 +1059,7 @@ export const feesAndRequirments = [
   {
     type: `text`,
     content: `Our Business License Research Package tells you about all of the licenses and permits you will need for your Idaho LLC.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -1112,13 +1112,13 @@ export const feesAndRequirments = [
   {
     type: `text`,
     content: `There are several other fees or requirements that you may need to meet during the life of your Idaho LLC. These ad hoc fees will only be payable in specific circumstances, which we’ve listed below.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `To Obtain a Fictitious/DBA Name`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1132,13 +1132,13 @@ export const feesAndRequirments = [
       url: `/fictitious-business-or-trade-name/`,
     },
     theme: `primary48`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `To Change the Idaho Registered Agent`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1152,29 +1152,29 @@ export const feesAndRequirments = [
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `To Reserve a Name`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `If you don’t want to form your business right away, you can reserve a name with the Idaho Secretary of State. You will need to pay a small fee to do this.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `To Amend Certain Facts About Your Idaho LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `Your business formation documents state certain facts about your Idaho business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with the Secretary of State. You can do this yourself or have Incfile complete the filing on your behalf.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -1196,13 +1196,13 @@ export const feesAndRequirments = [
       url: `/manage-your-company/amendment/`,
     },
     theme: `primary48`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `To Get a Certificate of Good Standing`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1290,7 +1290,7 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `The profits of a Idaho LLC are not taxed at the business level like those of C Corporations. Instead, taxes for a Idaho LLC work as follows:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `numeric-list`,
@@ -1364,7 +1364,7 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the ID Tax Commission. Idaho sales tax is collected at the point of purchase. Idaho sales tax rates do vary depending on the region, county or city where you are located.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -1399,13 +1399,13 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `There are a couple of different federal taxes that every LLC will need to pay, including Idaho LLCs. These are self-employment tax and federal income tax, which are taxed as “pass-through” income via your tax return forms.`,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Federal Self-Employment Tax`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1415,7 +1415,7 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -1428,14 +1428,14 @@ export const businessTaxes = [
         `On profits of $120,000, you would pay self-employment tax of $18,360.`
       ],
     },
-    marginBottom: 48,
+    marginBottom: 32,
     color: color.orange3,
   },
   {
     type: `header`,
     content: `Pay Less Self-Employment Tax by Treating Your Idaho LLC as an S Corporation`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1459,13 +1459,13 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `Speak to your accountant for more information on reducing your Idaho LLC self-employment tax through an S Corporation tax election.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Federal Income Tax`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1475,7 +1475,7 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `You only pay federal income tax on your LLC profits that you take out of the business, less certain deductions and allowances. This includes your tax-free amount, plus LLC business expenses and other deductions for areas such as healthcare and some retirement plans. Speak to your accountant for more information.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
@@ -1486,35 +1486,35 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `If you pay employees, there are some slightly different tax implications. Speak to your accountant to get clear guidance for your own unique situation.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Employer Federal Tax Withholding`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `You may also choose to withhold federal income tax on the wages you pay to employees. Speak to your accountant for more information.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Employees May Need to File Tax Returns`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `Regardless of whether you withhold federal tax, your employees may need to file their own tax returns.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Employee Insurance and Other Requirements`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1524,29 +1524,29 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `Get more requirements from the <a href="https://labor.idaho.gov/" target="_blank" rel="noopener noreferrer">the Idaho Department of Labor website.</a>`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Other Taxes and Duties for Your Idaho LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `Depending on the industry you are in, your Idaho LLC may be liable for certain other taxes and duties. For example, if you sell gasoline you may need to pay a tax on any fuel you sell. Likewise, if you import or export goods you may need to pay certain duties. Speak to your accountant about any other taxes you may need to withhold or pay.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Estimated Taxes for Your Idaho LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `Most Idaho LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,

@@ -257,15 +257,20 @@ export const businessTaxesPageContent = {
                     },
                     {
                         question: `Employee Insurance and Other Requirements`,
-                        answer: `You may also need to pay insurance for any employees, like employee compensation insurance or unemployment tax. There will also be other requirements you have for employees.`,
-                    },
-                    {
-                        type: `arrow-links`,
-                        content: [
+                        answer2: [
                             {
-                                styles: {marginTop: `24px`},
-                                text: `Get more requirements from the Illinois Department of Labor website`,
-                                url: `https://www2.illinois.gov/idol/Pages/default.aspx`,
+                                type: `paragraph`,
+                                content: `You may also need to pay insurance for any employees, like employee compensation insurance or unemployment tax. There will also be other requirements you have for employees.`,
+                            },
+                            {
+                                type: `arrow-links`,
+                                content: [
+                                    {
+                                        styles: {marginTop: `24px`},
+                                        text: `Get more requirements from the Illinois Department of Labor website`,
+                                        url: `https://www2.illinois.gov/idol/Pages/default.aspx`,
+                                    },
+                                ],
                             },
                         ],
                     },

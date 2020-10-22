@@ -140,13 +140,13 @@ export const howToGuide = [
   {
     type: `text`,
     content: `A regular Iowa LLC is suitable for most business needs, but you also have a few other options to incorporate a special type of LLC.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Form an Iowa Series LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -165,7 +165,7 @@ export const howToGuide = [
     type: `header`,
     content: `Form a Professional Iowa LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -176,7 +176,7 @@ export const howToGuide = [
     type: `header`,
     content: `Form a Foreign LLC in Iowa`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -263,7 +263,7 @@ export const howToGuide = [
   {
     type: `text`,
     content: `How to understand the various taxes you will need to pay to the federal and Iowa government. Includes details of federal taxes like income and self-employment, and Iowa taxes like sales tax and income tax.`,
-    marginBottom: 0,
+    marginBottom: 48,
   },
 ];
 
@@ -312,13 +312,13 @@ export const namingYourBusiness = [
   {
     type: `text`,
     content: `Once you’ve decided on a name for your LLC and checked business name availability, you’ll need to meet Iowa Secretary of State naming rules. These do vary from state to state — we’ve got general naming rules below, as well as naming rules specific to LLC businesses formed in IA.`,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Your LLC Business Name Must Be Unique`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -329,12 +329,12 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Your LLC Business Name Must Not Be Confusable with Another Business Name`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `It’s not enough for your IA LLC name to be unique. It also cannot be similar to the name of a corporation or LLC in Iowa.`,
-    marginBottom: 32,
+    marginBottom: 16,
   },
   {
     type: `list-dot`,
@@ -354,7 +354,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Your LLC Business Name Must Contain Certain Words`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -365,7 +365,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Your LLC Business Name May Have Other General Restrictions`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -484,7 +484,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Trademarks and Service Marks`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -498,18 +498,18 @@ export const namingYourBusiness = [
       url: `/trademark-name-search/`,
     },
     theme: `primary48`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Find the Perfect Name for Your Iowa LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `The perfect business name can be elusive. We have a complete guide to choosing the right business name, but basically, you'll want to choose a name that will:`,
-    marginBottom: 20,
+    marginBottom: 16,
   },
   {
     type: `list-dot`,
@@ -522,7 +522,7 @@ export const namingYourBusiness = [
         `Not be used by another business`
       ],
     },
-    marginBottom: 40,
+    marginBottom: 16,
     color: color.orange3,
   },
   {
@@ -531,7 +531,7 @@ export const namingYourBusiness = [
       text: `Incfile guide to choosing a business name.`,
       url: `/blog/post/llc-name-search-50-states/`,
     },
-    marginBottom: 30,
+    marginBottom: 32,
   },
 ];
 
@@ -665,29 +665,29 @@ export const registeredAgent = [
   {
     type: `text`,
     content: `Your business needs to have an Iowa Registered Agent Service as soon as it’s formed. You can achieve this through one of the following methods.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `File Certificate of Organization with the Iowa Secretary of State`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `You will need to include details of your Registered Agent in your Certificate of Organization. This is the form that you file with the IA Secretary of State to formally create your business.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Incorporate Through Incfile and Get a Free Iowa Registered Agent`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `When you incorporate through us, we complete and file your Certificate of Organization based on the information you’ve provided. Additionally, we give you a free Iowa Registered Agent service for the first year, and we’ll include details of your IA Registered Agent in the form that we file.`,
-    marginBottom: 48,
+    marginBottom: 16,
   },
   {
     type: `button`,
@@ -707,24 +707,24 @@ export const registeredAgent = [
   {
     type: `text`,
     content: `You can also change your IA Registered Agent service after you’ve formed your LLC. There are a couple of ways to achieve this.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Choose a Registered Agent Service and File a Form with the Iowa Secretary of State`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `Once you’ve chosen a new Iowa Registered Agent, you can complete a form. Once you’ve filled it out, send it to the Secretary of State so they can update your records.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Sign Up for Incfile’s Iowa Registered Agent Service and We’ll File the Change on Your Behalf`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -837,7 +837,7 @@ export const registeredAgent = [
     type: `header`,
     content: `Useful Resources for Iowa Registered Agent Services`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -883,7 +883,7 @@ export const feesAndRequirments = [
     marginBottom: 16,
   },
   {
-    type: `table`,
+    type: `table-simple`,
     content: {
       headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
       rows: [[`$50`, `3 weeks`, `5 business days`]],
@@ -1085,13 +1085,13 @@ export const feesAndRequirments = [
   {
     type: `text`,
     content: `There are several other fees or requirements that you may need to meet during the life of your Iowa LLC. These ad hoc fees will only be payable in specific circumstances, which we’ve listed below.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `To Obtain a Fictitious/DBA Name for Your Iowa LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1105,13 +1105,13 @@ export const feesAndRequirments = [
       url: `/fictitious-business-or-trade-name/`,
     },
     theme: `primary48`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `To Change the Iowa Registered Agent for Your IA LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1125,24 +1125,24 @@ export const feesAndRequirments = [
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `To Reserve a Name for Your Iowa LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `If you don’t want to form your IA business right away, you can reserve a name with the Iowa Secretary of State. You will need to pay a small fee to do this.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `To Amend Certain Facts About Your Iowa LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1160,7 +1160,7 @@ export const feesAndRequirments = [
       ],
     },
     marginBottom: 16,
-    color: color.orange3,
+    color: color.purple3,
   },
   {
     type: `button`,
@@ -1169,13 +1169,13 @@ export const feesAndRequirments = [
       url: `/manage-your-company/amendment/`,
     },
     theme: `primary48`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `To Get a Certificate of Good Standing for Your Iowa LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1372,7 +1372,7 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `Sales tax rates do vary between states, counties and cities. Typically, the state will set a base sales tax rate, then specific counties and cities may levy small additional sales tax amounts on top of that.`,
-    marginBottom: 16,
+    marginBottom: 48,
   },
   {
     type: `header`,
@@ -1383,13 +1383,13 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `There are a couple different federal taxes that every LLC will need to pay, including Iowa LLCs. These are self-employment tax and federal income tax, which are taxed as “pass-through” income via your tax return forms.`,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Iowa LLC Federal Self-Employment Tax`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1412,14 +1412,14 @@ export const businessTaxes = [
         `On profits of $160,000, you would pay self-employment tax of $24,480.`
       ],
     },
-    marginBottom: 48,
+    marginBottom: 32,
     color: color.orange3,
   },
   {
     type: `header`,
     content: `Pay Less Self-Employment Tax by Treating Your Iowa LLC as an S Corporation`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1443,13 +1443,13 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `Speak to your accountant for more information on reducing your Iowa LLC self-employment tax through an S Corporation tax election.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Iowa LLC Federal Income Tax`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1470,13 +1470,13 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `If you pay employees, there are some slightly different tax implications. Speak to your accountant to get clear guidance for your own unique situation.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Employer Payroll Tax Withholding for Your Iowa LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1487,7 +1487,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Iowa LLC Federal and State Tax Withholding`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1498,7 +1498,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Employees May Need to File Tax Returns`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1509,7 +1509,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Iowa LLC Employee Insurance and Other Requirements`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1525,7 +1525,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Other Taxes and Duties for Your Iowa LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1536,7 +1536,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Estimated Taxes for Your Iowa LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
