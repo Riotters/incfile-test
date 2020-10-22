@@ -75,6 +75,7 @@ const CCorporation = () => {
                         <HSFormModal
                             hs_form_id={hsForm.hs_form_id}
                             content={hsForm}
+                            modalExit={popup}
                             postDownloadAction={postDownload} />
                     )}
                     {formSubmitted && (

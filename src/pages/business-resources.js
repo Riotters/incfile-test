@@ -1,4 +1,5 @@
-import React, {useState} from "react";
+import React from "react";
+import styled from "styled-components";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import RatingRow from "../atomic/atoms/boxes/rating-row";
@@ -10,6 +11,9 @@ import About from "../atomic/sections/learning-center-entity/business-resources/
 import Resources from "../atomic/sections/learning-center-entity/business-resources/resources";
 import FurtherResources from "../atomic/sections/learning-center-entity/business-resources/further-resources";
 import Articles from "../components/partials/sections/articles";
+import { ThankYouContent } from "../components/hubspot/thank-you-modal";
+import HSFormModal from '../components/hubspot/standard-post-form-modal';
+
 //Texts
 import {
     top,
@@ -19,87 +23,78 @@ import {
     form,
     thanks_form
 } from "../static/learning-center-entity/business-resources";
-import {BusinessChecklistForm} from "../atomic/organisms/forms/business-checklist-form";
-import styled from "styled-components";
-import {ThankYouContent} from "../atomic/partials/thank-you-modal-content";
 
-class BusinessResources extends React.Component {
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            modalVisible: false,
-            title: "",
-            formSubmitted: false
-        };
-
-        this.popup = this.popup.bind(this);
-
-        if(typeof window !== "undefined") {
-            window.br_dpfw_m_popup = this.popup.bind(this);
+const BusinessResources = () => {
+    const [modalVisible, setModalVisible] = React.useState(false);
+    const [formSubmitted, setFormSubmitted] = React.useState(false);
+    const [hsFormId, setHSFormId] = React.useState('');
+    const [modalClases, setModalClases] = React.useState(["lightbox-content"]);
+    
+    React.useEffect(() => {
+        if (formSubmitted) {
+            setModalClases(modalClases => [...modalClases, "form-submitted"]);
         }
 
         if(typeof window !== "undefined") {
-            window.br_dpfw_m_postdownload = this.postdownload.bind(this);
+            window.br_dpfw_m_popup = popup;
         }
-    }
 
-    postdownload() {
-        this.setState({
-            modalVisible: this.state.modalVisible,
-            title: this.state.title,
-            formSubmitted: true
-        });
-    }
+        if(typeof window !== "undefined") {
+            window.br_dpfw_m_postdownload = postDownload;
+        }
 
-    popup(e, title) {
+    }, [formSubmitted]);
+
+    const popup = (e, title, hs_form_id) => {
+        e.preventDefault();
+
         if (!e.target.className.includes("modal-overlay") && !e.target.className.includes("modal-close") &&
-            this.state.modalVisible === true)
+            modalVisible)
             return;
-
+        
         form.header = "Download: " + title;
+        form.hs_form_id = hs_form_id;
 
-        this.setState({
-            modalVisible: !this.state.modalVisible,
-            title: title,
-            formSubmitted: false
-        });
+        setHSFormId(hs_form_id);
+        setModalVisible(!modalVisible);
+        setFormSubmitted(false);
     }
 
-    render() {
-        let modalClases = [ "lightbox-content" ];
-        if(this.state.formSubmitted) modalClases.push("form-submitted");
-
-        return (
-            <Layout>
-                <SEO title="Business Resources & Tools for Starting a Company"
-                     description="There’s a lot to think about when you’re getting your business off the ground! Our helpful tools and free downloads can get you started. Learn more."/>
-                <Top imageName="mr-bulb-business-downloads-tools-7829" imageAlt="Mrs Bulb and with checklist"
-                     ovalColor="purple-2" headlineWidth="550">
-                    <h1>{top.header}</h1>
-                    <p>{top.text}</p>
-                    <RatingRow topMargin="0">
-                        <CartBlock/>
-                        <RatingBlock/>
-                    </RatingRow>
-                </Top>
-                <About content={about}/>
-                <Resources content={resources} />
-                <FurtherResources content={furtherResources}/>
-                <Articles/>
-                <LightBoxModal id="download-pdf-form-modal" onClick={this.popup} visible={this.state.modalVisible} className="modal-overlay">
-                    <LightBoxContent style={{pointerEvents: "all"}} class={modalClases.join(" ")}>
-                        {!this.state.formSubmitted && (
-                            <BusinessChecklistForm content={form} postDownloadAction={this.postdownload.bind(this)} />
-                        )}
-                        {this.state.formSubmitted && (
-                            <ThankYouContent content={thanks_form} modalExit={this.popup.bind(this) } />
-                        )}
-                    </LightBoxContent>
-                </LightBoxModal>
-            </Layout>
-        );
+    const postDownload = (formData) => {
+        setModalVisible(modalVisible);
+        setFormSubmitted(true);
     }
+
+    return (
+        <Layout>
+            <SEO title="Business Resources & Tools for Starting a Company"
+                description="There’s a lot to think about when you’re getting your business off the ground! Our helpful tools and free downloads can get you started. Learn more." />
+            <Top imageName="mr-bulb-business-downloads-tools-7829" imageAlt="Mrs Bulb and with checklist"
+                ovalColor="purple-2" headlineWidth="550">
+                <h1>{top.header}</h1>
+                <p>{top.text}</p>
+                <RatingRow topMargin="0">
+                    <CartBlock />
+                    <RatingBlock />
+                </RatingRow>
+            </Top>
+            <About content={about} />
+            <Resources content={resources} openModal={popup} />
+            <FurtherResources id="js-further-resource" content={furtherResources} />
+            <Articles />
+            
+            <LightBoxModal visible={modalVisible} className="modal-overlay">
+                <LightBoxContent style={{ pointerEvents: "all" }} class={modalClases.join(" ")}>
+                    {!formSubmitted && (
+                        <HSFormModal content={form} hs_form_id={hsFormId} postDownloadAction={postDownload} modalExit={popup} />
+                    )}
+                    {formSubmitted && (
+                        <ThankYouContent modalExit={popup} />
+                    )}
+                </LightBoxContent>
+            </LightBoxModal>
+        </Layout>
+    );
 }
 
 const LightBoxModal = styled.div`
@@ -129,7 +124,7 @@ const LightBoxContent = styled.div`
   overflow-y: auto;
   
   @media screen and (min-width: 769px) {
-    height: 95vh;
+    max-width: 600px;
     padding-top: 0;
     overflow-y: visible;
   }

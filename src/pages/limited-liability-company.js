@@ -75,6 +75,7 @@ class LLC extends React.Component {
                             <HSFormModal
                                 hs_form_id="993baef6-066e-4d18-a813-c12bc3b3fff9"
                                 content={form}
+                                modalExit={this.popup.bind(this) }
                                 postDownloadAction={this.postDownload.bind(this)} />
                         )}
                         {this.state.formSubmitted && (
@@ -139,6 +140,7 @@ const LightBoxContent = styled.div`
   }
   
   @media screen and (min-width: 769px) {
+      max-width: 600px;
     padding-top: 0;
     overflow-y: visible;
   }

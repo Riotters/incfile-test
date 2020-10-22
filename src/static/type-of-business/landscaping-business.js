@@ -30,7 +30,7 @@ export const adventages2 = {
             circleText: 1,
             headline: "File an Annual Report",
             text: "Depending on the state you’re located in, you will probably have to file a report every year. This report tells the state about any major changes to your business, and we can file your Annual Report on your behalf.",
-            url: "/manage-your-company/annual-report",
+            url: "/manage-your-company/annual-report/",
             urlText: "Annual Report"
         },
         {
@@ -225,7 +225,7 @@ export const AccordionCounting = {
                 },
                 {
                     text: `guide to getting your EIN.`,
-                    url: `/`
+                    url: `/manage-your-company/tax-id-ein/`
                 }
             ]
         },
@@ -425,36 +425,29 @@ export const FinancesAccordionContent = {
                     text: `QuickBooks,`,
                     url: `/`
                 },
-                ,
                 {
                     text: `FreshBooks,`,
                     url: `/`
                 },
-                ,
                 {
                     text: `FreeAgent,`,
                     url: `/`
                 },
-                ,
                 {
                     text: `ZipBooks,`,
                     url: `/`
                 },
-                ,
                 {
                     text: `Wave Accounting,`,
                     url: `/`
                 },
-                ,
                 {
                     text: `Xero,`,
                     url: `/`
                 },
-                ,
                 {
                     text: `and`
                 },
-                ,
                 {
                     text: `Bench.`,
                     url: `/`

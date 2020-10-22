@@ -30,13 +30,13 @@ const Oval = styled.div`
     transform: scale(-1,1);
 `
 
-const About = ({content}) => (
+const About = ({content, openModal}) => (
   <Wrapper>
     <Oval>
       <OvalSVG />
     </Oval>
     <Container>
-      <AboutTabs content={content.tabs} />
+      <AboutTabs content={content.tabs} openModal={openModal} />
     </Container>
   </Wrapper>
 )

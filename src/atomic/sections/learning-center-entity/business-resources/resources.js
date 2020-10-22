@@ -19,14 +19,14 @@ const Resources = styled.section`
   }
 `;
 
-const ResourcesSection = ({ className, content }) => (
+const ResourcesSection = ({ className, content, openModal }) => (
   <Resources className={className}>
     <Oval width="720" height="720" top="0" right="0">
       <OvalSVG />
     </Oval>
     <HeadingCenter headline={content.header} headlineWidth="770" bottomMargin="80" />
     <ContentCenter>
-        <Tabs content={content.tabs} />
+        <Tabs content={content.tabs} openModal={openModal} />
     </ContentCenter>
   </Resources>
 );

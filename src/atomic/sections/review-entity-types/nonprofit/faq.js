@@ -6,8 +6,8 @@ import Accordion from "../../../organisms/accordion/accordion";
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-orange2.inline.svg";
 import Oval2SVG from "../../../../images/ovals/top-right-transparent-orange.inline.svg";
-import Button from "../../../molecules/buttons/button";
-
+import Button from "../../../molecules/buttons/button-action";
+import { Paragraph } from "../../../atoms/typography/paragraph";
 
 const Faq = styled.section`
   position: relative;
@@ -25,7 +25,12 @@ const FaqSection = ({ className, content, onClick }) => (
         <HeadingCenter className="headline" headline={content.header} headlineWidth="640" linkText={content.link.text} linkUrl={content.link.url} />
         <ContentCenter>
             <Accordion content={content.faq} bottomMargin="48" />
-            <Button content={{ text: `Download our Completed Guide to Nonprofit`, url: `/` }} onClick={onClick} theme="primary56" arrow />
+
+            <Button content={{ text: `Download our Completed Guide to Nonprofit`, url: `/` }} onClick={onClick} theme="primary56" margin="72px auto 40px" />
+            <Paragraph big maxWidth="770" style={{ textAlign: "center" }}>
+                From developing your business idea to measuring success, our free guide has
+                all the info you need to get your business off the ground.
+            </Paragraph>
         </ContentCenter>
     </Faq>
 );
