@@ -8,7 +8,7 @@ export const HomePageContent = {
         desc: `Read our DIY guide to New York LLC formation, with information on Registered Agents, naming rules, business licenses, and more.`,
         button: {
           text: `Read The Guide`,
-          url: "/",
+          url: "#video",
         },
       },
       {

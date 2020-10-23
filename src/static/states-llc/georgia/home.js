@@ -8,7 +8,7 @@ export const HomePageContent = {
         desc: `RRead our DIY guide to Georgia LLC formation, with information on Registered Agents, naming rules, business licenses, and more.`,
         button: {
           text: `Read The Guide`,
-          url: "/",
+          url: "#video",
         },
       },
       {
