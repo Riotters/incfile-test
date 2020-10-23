@@ -15,8 +15,8 @@ import { tabPages } from "../../static/states-llc/missouri/general";
 const BusinessNamesPage = () => (
   <Layout>
     <SEO
-    title="Texas Business Search | How to Name Your TX LLC"
-    description="Learn what you need to know about naming an LLC in Texas with Incfile's helpful resources. Pick your perfect business name today!"
+    title="Missouri Business Search | How to Name Your Missouri LLC"
+    description="Learn what you need to know about naming an LLC in Missouri with Incfile's helpful resources. Pick your perfect business name today!"
     />
     <LLCLayout>
         <LeftTabPages content={tabPages} />
