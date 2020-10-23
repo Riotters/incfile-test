@@ -3,3 +3,7 @@ export const scrollToElement = (e, element) => {
     const el = document.getElementById(element);
     el.scrollIntoView();
 }
+
+export const replaceStr = (newValue, currentValue, string) => {
+    return string.replace(currentValue, newValue);
+}

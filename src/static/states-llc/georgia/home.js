@@ -12,10 +12,10 @@ export const HomePageContent = {
             },
             {
                 title: `Have Incfile do the work for you <br><span style="color:#FD8550">$0 + State fee</span>`,
-                desc: `Incfile can take care of all your LLC formation paperwork—and we’ll do it for free. Just pay the required Georgia state fee ($100).`,
+                desc: `Incfile can take care of all your LLC formation paperwork—and we’ll do it for free. Just pay the required Georgia state fee ($[STATE_FEE]).`,
                 button: {
                     text: `Form Your LLC Now`,
-                    url: '/form-order-now.php?entityType=LLC&entityState=GA'
+                    url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=GA`
                 }
             },
         ]
@@ -116,39 +116,6 @@ export const HomePageContent = {
                         url: `/form-order-now.php?entityType=LLC&entityState=GA`,
                     }
                 },
-                annualReport: [{
-                        title: `What are the fees and requirements to form a business in Georgia?`,
-                        items: [{
-                                text1: `State Fee`,
-                                text2: `$100`,
-                            },
-                            {
-                                text1: `State Filing Time`,
-                                text2: `20 Business Days`,
-                            },
-                            {
-                                text1: `Expedited Filing Time`,
-                                text2: `5 Business Days`,
-                            },
-                        ],
-                    },
-                    {
-                        title: `Public Information & Franchise Tax Report`,
-                        items: [{
-                                text1: `Frequency:`,
-                                text2: `Annually`,
-                            },
-                            {
-                                text1: `Due Date:`,
-                                text2: `April 1st`,
-                            },
-                            {
-                                text1: `Filing Fee:`,
-                                text2: `$50`,
-                            },
-                        ],
-                    },
-                ],
             },
             step5: {
                 heading1: `Get an Employer Identification Number (EIN) From the Internal Revenue Service`,

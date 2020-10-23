@@ -17,6 +17,8 @@ import HowToGuide from "../../atomic/states-llc/florida/how-to-guide";
 import { HomePageContent } from "../../static/states-llc/florida/home";
 import { tabPages, rocket } from "../../static/states-llc/florida/general";
 
+import { getFullPricesAndFilings } from '../../api/Api';
+
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -41,26 +43,34 @@ const Wrapper = styled.div`
 `;
 
 function FloridaLLCIndex() {
-  return (
-    <Layout>
-      <SEO title="LLCs in Florida | Guide to Forming an LLC in Florida" description="Ready to form your Florida LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
+    const [dataApi, setDataApi] = React.useState({});
 
-      <LinearBgHeader imageMapName="tx-map-2x">
-        <HomeHeader content={HomePageContent.header} />
-      </LinearBgHeader>
+    React.useEffect(() => {
+        getFullPricesAndFilings('Florida').then(data => {
+            setDataApi(data);
+        });
+    }, []);
 
-      <WrapperContent>
-        <Wrapper>
-          <LeftTabPages content={tabPages} />
-          <MainPageContent>
-            <HowToGuide content={HomePageContent.content} />
-          </MainPageContent>
-        </Wrapper>
-      </WrapperContent>
+    return (
+        <Layout>
+            <SEO title="LLCs in Florida | Guide to Forming an LLC in Florida" description="Ready to form your Florida LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
 
-      <Rocket content={rocket} />
-    </Layout>
-  );
+            <LinearBgHeader imageMapName="tx-map-2x">
+                <HomeHeader content={HomePageContent.header} data={dataApi} />
+            </LinearBgHeader>
+
+            <WrapperContent>
+                <Wrapper>
+                    <LeftTabPages content={tabPages} />
+                    <MainPageContent>
+                        <HowToGuide content={HomePageContent.content} data={dataApi} />
+                    </MainPageContent>
+                </Wrapper>
+            </WrapperContent>
+
+            <Rocket content={rocket} />
+        </Layout>
+    );
 }
 
 export default FloridaLLCIndex;

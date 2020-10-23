@@ -48,7 +48,7 @@ const Wrapper = styled.div`
   }
 `;
 
-const LLCLayout = ({ children }) => {
+const LLCLayout = ({ children, data }) => {
   return (
     <>
       <Top imageName="mr-bulb-state-information-llc-7342" imageAlt="Mrs Bulb and with checklist" ovalColor="purple-2" textWidth="530">
@@ -64,8 +64,8 @@ const LLCLayout = ({ children }) => {
           </Wrapper>
       </WrapperContent>
       <Rocket content={rocket} />
-      <Requirements content={requirements} />
-      <Variants content={variants} />
+      <Requirements content={requirements} data={data} />
+      <Variants content={variants} data={data} />
       <Compare content={compare} />
       <Subscription content={subscription} />
       <Articles />

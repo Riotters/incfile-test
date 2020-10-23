@@ -838,7 +838,8 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content:`Depending on the specifics of your Alabama business, you’ll be required to pay certain fees and fulfill different filing requirements. Some of these costs are payable to the Alabama Secretary of State, while others are due to the federal or Alabama government. We’ve summarized the most common requirements and fees here. `,    marginBottom: 16,
+      content: `Depending on the specifics of your Alabama business, you’ll be required to pay certain fees and fulfill different filing requirements. Some of these costs are payable to the Alabama Secretary of State, while others are due to the federal or Alabama government. We’ve summarized the most common requirements and fees here. `,
+      marginBottom: 16,
   },
   {
     type: `text`,
@@ -857,11 +858,7 @@ export const feesAndRequirments = [
     marginBottom: 32,
   },
   {
-    type: `table`,
-    content: {
-      headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
-      rows: [[`$212`, `4 weeks`, `4 Business Days`]],
-    },
+    type: `dynamic_ar_box`,
   },
   {
     type: `arrow-link`,
@@ -950,26 +947,7 @@ export const feesAndRequirments = [
     marginBottom: 48,
   },
   {
-    type: `header`,
-    content: `Annual Report`,
-    size: 4,
-    marginBottom: 24,
-  },
-  {
-    type: `text`,
-    content: `<b>Frequency:</b> Anually`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `<b>Annual Year</b>: April 15th Fiscal Year: 3½ months after beginning of tax year`,
-    marginBottom: 16,
-  },
-  
-  {
-    type: `text`,
-    content: `<b>Note:</b>  LLCs elected to be taxed as corporations follow corporation rules.`,
-    marginBottom: 48,
+    type: `dynamic_filing_requirement`,
   },
   {
     type: `text`,
@@ -1592,14 +1570,10 @@ export const requirements = {
                 content: `The state charges this amount to file a new business entity. This fee goes directly to the Secretary of State.`,
               },
               {
-                type: `paragraph`,
-                content: `Ut tincidunt neque a viverra egestas. Suspendisse tempus metu.`,
-              },
-              {
                 type: `arrow-links`,
                 content: {
                   text: `State Filing Times`,
-                  url: `/`,
+                  url: `/state-filing-times/`,
                 },
                 bottomMargin: 16,
               },
@@ -1607,7 +1581,7 @@ export const requirements = {
                 type: `arrow-links`,
                 content: {
                   text: `State Filing Prices`,
-                  url: `/`,
+                  url: `/state-filing-fees/`,
                 },
               },
             ],
@@ -1618,7 +1592,7 @@ export const requirements = {
             text2: `Failure to file this report can lead to the company being revoked or administratively dissolved.`,
             link: {
               text: `Other State's Ongoing`,
-              url: `/`,
+              url: `/compliance-filing-requirement/`,
             },
           },
         ],

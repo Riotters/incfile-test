@@ -1,3 +1,4 @@
+
 export const HomePageContent = {
     header: {
         title: `How to Start an LLC in Texas`,
@@ -12,10 +13,10 @@ export const HomePageContent = {
             },
             {
                 title: `Have Incfile do the work for you <br><span style="color:#FD8550">$0 + State fee</span>`,
-                desc: `Incfile can take care of all your LLC formation paperwork—and we’ll do it for free. Just pay the required Texas state fee ($300).`,
+                desc: `Incfile can take care of all your LLC formation paperwork—and we’ll do it for free. Just pay the required Texas state fee ($[STATE_FEE]).`,
                 button: {
                     text: `Form Your LLC Now`,
-                    url: '/'
+                    url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=TX`
                 }
             },
         ]
@@ -142,15 +143,15 @@ export const HomePageContent = {
                         title: `What are the fees and requirements to form a business in Texas?`,
                         items: [{
                                 text1: `State Fee`,
-                                text2: `$300`,
+                                text2: `$[STATE_FEE]`,
                             },
                             {
                                 text1: `State Filing Time`,
-                                text2: `1 Week`,
+                                text2: `[NORNAL_TIME]`,
                             },
                             {
                                 text1: `Expedited Filing Time`,
-                                text2: `2 Business Days`,
+                                text2: `[EXPEDITED_TIME]`,
                             },
                         ],
                     },

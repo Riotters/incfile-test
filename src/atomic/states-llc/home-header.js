@@ -13,6 +13,8 @@ import { Paragraph } from "../atoms/typography/paragraph"
 import Curve from "../atoms/icons/curve";
 import CurveSVG from "../../images/curve-orange.inline.svg";
 import Colorbox from '../atoms/boxes/color-box';
+import { replaceStr } from '../../helpers/utils';
+
 
 const Content = styled.div`
   display: flex;
@@ -60,7 +62,7 @@ const WrappBox = styled.div`
   }
 `
 
-const HomeHeader = ({content}) => (
+const HomeHeader = ({content, data }) => (
   <Container>
       <Curve left="40" top="130">
         <CurveSVG />
@@ -71,7 +73,7 @@ const HomeHeader = ({content}) => (
             {content.boxes.map((box) => (
               <Colorbox color={color.white} className="box">
                 <Heading size={4}>{parse(box.title)}</Heading>
-                <Paragraph>{box.desc}</Paragraph>
+                <Paragraph>{replaceStr(data.prices?.LLC, `[STATE_FEE]`, box.desc)}</Paragraph>
                 <Button arrow content={box.button} theme="primary56" width="240"></Button>
               </Colorbox>
             ))}

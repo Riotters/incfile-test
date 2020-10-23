@@ -1590,14 +1590,10 @@ export const requirements = {
                 content: `The state charges this amount to file a new business entity. This fee goes directly to the Secretary of State.`,
               },
               {
-                type: `paragraph`,
-                content: `Ut tincidunt neque a viverra egestas. Suspendisse tempus metu.`,
-              },
-              {
                 type: `arrow-links`,
                 content: {
                   text: `State Filing Times`,
-                  url: `/`,
+                  url: `/state-filing-times/`,
                 },
                 bottomMargin: 16,
               },
@@ -1605,7 +1601,7 @@ export const requirements = {
                 type: `arrow-links`,
                 content: {
                   text: `State Filing Prices`,
-                  url: `/`,
+                  url: `/state-filing-fees/`,
                 },
               },
             ],
@@ -1616,7 +1612,7 @@ export const requirements = {
             text2: `Failure to file this report can lead to the company being revoked or administratively dissolved.`,
             link: {
               text: `Other State's Ongoing`,
-              url: `/`,
+              url: `/compliance-filing-requirement/`,
             },
           },
         ],

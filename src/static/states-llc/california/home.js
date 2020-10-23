@@ -12,7 +12,7 @@ export const HomePageContent = {
             },
             {
                 title: `Have Incfile do the work for you <br><span style="color:#FD8550">$0 + State fee</span>`,
-                desc: `Incfile can take care of all your LLC formation paperwork—and we’ll do it for free. Just pay the required California state fee ($300).`,
+                desc: `Incfile can take care of all your LLC formation paperwork—and we’ll do it for free. Just pay the required California state fee ($[STATE_FEE]).`,
                 button: {
                     text: `Form Your LLC Now`,
                     url: '/'

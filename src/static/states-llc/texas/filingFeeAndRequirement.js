@@ -49,7 +49,7 @@ export const filingFeeAndRequirementContent = {
             content: `When you first incorporate your business in Texas, you’ll need to file an LLC with the TX Secretary of State and pay a Texas filing fee. Here are the current fees and filing times for Texas:`,
         },
         {
-            type: `gridTable`,
+            type: `dynamic_ar_box`,
             headerSize: `5`,
             columns: `3`,
             content: {

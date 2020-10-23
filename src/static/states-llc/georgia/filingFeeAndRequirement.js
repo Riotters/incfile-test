@@ -49,19 +49,9 @@ export const filingFeeAndRequirementContent = {
             content: `When you first incorporate your business in Georgia, you’ll need to file an LLC with the GA Secretary of State and pay a filing fee. Here are the current fees and filing times for Georgia:`,
         },
         {
-            type: `gridTable`,
+            type: `dynamic_ar_box`,
             headerSize: `5`,
             columns: `3`,
-            content: {
-                headers: [
-                    `State Fee`,
-                    `State Filing Time`,
-                    `Expedited Filing Time`
-                ],
-                rows: [
-                    [`$100`, `20 Business Days`, `5 Business Days`],
-                ]
-            }
         },
         {
             type: `arrow-links`,
@@ -162,17 +152,7 @@ export const filingFeeAndRequirementContent = {
             content: `Most states require that you file a periodic report with the secretary of state. Georgia requires an annual report for LLCs, with a required filing fee. Here are more specifics:`,
         },
         {
-            type: `iconListColorBox`,
-            styles: {marginBottom: `55px`},
-            boxColor: color.blue3,
-            content: {
-                header: `Annual Report`,
-                list: [
-                    `<b>Frequency:</b> Annually`,
-                    `<b>Due Date:</b> April 1st`,
-                    `<b>Filing Fee:</b> $50`,
-                ]
-            },
+            type: `dynamic_filing_requirement`,
         },
         {
             type: `box-cta`, 

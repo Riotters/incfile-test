@@ -50,19 +50,9 @@ export const filingFeeAndRequirementContent = {
             content: `To create your business in Florida, you’ll file an LLC with the FL Department of State and pay an associated LLC formation fee. Every state has different LLC filing fees and filing times. Here is the current information for Florida:`,
         },
         {
-            type: `gridTable`,
+            type: `dynamic_ar_box`,
             headerSize: `5`,
             columns: `3`,
-            content: {
-                headers: [
-                    `State Fee`,
-                    `State Filing Time`,
-                    `Expedited Filing Time`
-                ],
-                rows: [
-                    [`$125`, `25 Business Days`, `10 Business Days`],
-                ]
-            }
         },
         {
             type: `arrow-links`,
@@ -167,7 +157,7 @@ export const filingFeeAndRequirementContent = {
             content: `Here are the annual filing requirements for Florida:`,
         },
         {
-            type: `gridTable`,
+            type: `dynamic_filing_requirement`,
             headerSize: `5`,
             columns: `3`,
             content: {
