@@ -185,7 +185,7 @@ export const packets = {
       image: "",
       button: {
         text: "Get the Silver package",
-        url: "/",
+        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=AL`,
       },
       fees: [
         {
@@ -209,8 +209,8 @@ export const packets = {
       price: 100,
       image: "",
       button: {
-        text: "Get the Gold package",
-        url: "/",
+        text: "Get the Silver package",
+        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=AL`,
       },
       fees: [
         {
@@ -234,8 +234,8 @@ export const packets = {
       price: 100,
       image: "",
       button: {
-        text: "Get the Platinum package",
-        url: "/",
+        text: "Get the Silver package",
+        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=AL`,
       },
       fees: [
         {
@@ -347,13 +347,13 @@ export const articlesOfIncorporation = {
   box2: {
     header: `Some other provisions that aren’t required-but which may be included in the articles of incorporation-are:`,
     list: [
-        `The names and addresses of the initial directors`,
-        `The corporate purpose(s)`,
-        `Provisions for regulating the powers of the corporation, its board of directors, and shareholders`,
-        `A par value for authorized shares or classes of shares`,
-        `Provisions establishing the preferences, designations, limitations, and relative rights of share classes`,
-        `Any situations requiring shareholder personal liability for corporate debts`,
-      ],
+      `The names and addresses of the initial directors`,
+      `The corporate purpose(s)`,
+      `Provisions for regulating the powers of the corporation, its board of directors, and shareholders`,
+      `A par value for authorized shares or classes of shares`,
+      `Provisions establishing the preferences, designations, limitations, and relative rights of share classes`,
+      `Any situations requiring shareholder personal liability for corporate debts`,
+    ],
   },
 };
 

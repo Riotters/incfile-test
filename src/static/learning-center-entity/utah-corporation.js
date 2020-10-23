@@ -185,7 +185,7 @@ export const packets = {
       image: "",
       button: {
         text: "Get the Silver package",
-        url: "/",
+        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=AL`,
       },
       fees: [
         {
@@ -209,8 +209,8 @@ export const packets = {
       price: 100,
       image: "",
       button: {
-        text: "Get the Gold package",
-        url: "/",
+        text: "Get the Silver package",
+        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=AL`,
       },
       fees: [
         {
@@ -234,8 +234,8 @@ export const packets = {
       price: 100,
       image: "",
       button: {
-        text: "Get the Platinum package",
-        url: "/",
+        text: "Get the Silver package",
+        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=AL`,
       },
       fees: [
         {
@@ -338,13 +338,13 @@ export const articlesOfIncorporation = {
   box1: {
     header: `The articles must include:`,
     list: [
-        `A statement of the corporate purpose (may just say that the corporation may conduct any and all lawful business)`,
-        `The classes of shares that the corporation is authorized to issue and the number of shares per class`,
-        `If more than one class of shares is authorized, the articles must prescribe a distinguishing designation for each class, as well as its preferences, limitations, and relative rights`,
-        `The articles of incorporation must authorize (a) at least one class of shares that has unlimited voting rights; and (b) at least one class of shares, which may be the same class or classes as those with voting rights, that is entitled to receive the corporation’s dissolved assets`,
-        `The street address of the corporation’s initial registered office`,
-        `The signature of the initial registered agent`,
-      ],
+      `A statement of the corporate purpose (may just say that the corporation may conduct any and all lawful business)`,
+      `The classes of shares that the corporation is authorized to issue and the number of shares per class`,
+      `If more than one class of shares is authorized, the articles must prescribe a distinguishing designation for each class, as well as its preferences, limitations, and relative rights`,
+      `The articles of incorporation must authorize (a) at least one class of shares that has unlimited voting rights; and (b) at least one class of shares, which may be the same class or classes as those with voting rights, that is entitled to receive the corporation’s dissolved assets`,
+      `The street address of the corporation’s initial registered office`,
+      `The signature of the initial registered agent`,
+    ],
   },
   box2: {
     header: `Some other provisions that aren’t required-but which may be included in the articles of incorporation-are:`,
