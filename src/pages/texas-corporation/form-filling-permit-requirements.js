@@ -21,7 +21,7 @@ import CorporationLayout from "../../atomic/partials/corporation-layout";
 
 const StateInformation = () => (
     <Layout>
-        <SEO title="Forms & Filing Rules for Texas S Corps & C Corps" description="From annual reports to business licenses and permits, learn about the forms and filing requirements for your Texas corporation." />
+        <SEO title="Forms & Filing Rules for Texas S Corps & C Corps " description="From annual reports to business licenses and permits, learn about the forms and filing requirements for your Texas corporation." />
         <Top imageName="mr-bulb-corporation-california-8302" imageAlt="Mrs Bulb and with checklist" ovalColor="purple-2" textWidth="530">
             <h1>{top.header}</h1>
             <p>{top.text}</p>

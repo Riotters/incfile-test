@@ -15,8 +15,8 @@ import { tabPages } from "../../static/states-llc/oklahoma/general";
 const BusinessNamesPage = () => (
   <Layout>
     <SEO
-    title="Texas Business Search | How to Name Your TX LLC"
-    description="Learn what you need to know about naming an LLC in Texas with Incfile's helpful resources. Pick your perfect business name today!"
+    title="Oklahoma Entity Search | Register a Business Name in OK"
+    description="Learn what you need to know about naming an LLC in Oklahoma with Incfile’s helpful resources. Pick your perfect business name today!"
     />
     <LLCLayout>
         <LeftTabPages content={tabPages} />

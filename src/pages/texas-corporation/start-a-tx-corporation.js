@@ -21,7 +21,7 @@ import CorporationLayout from "../../atomic/partials/corporation-layout";
 
 const StateInformation = () => (
     <Layout>
-        <SEO title="How to Start a Corporation in Texas - 6 Easy Steps " description="Forming a legal corporation in Texas doesn&#039;t have to be complicated. Learn the steps you need to take to start your business today." />
+        <SEO title="Texas Corporations & Other Business Entities" description="Thinking of starting an S Corp, C Corp, or LLC in Texas? Learn about corporations in TX and decide which business type is right for you." />
         <Top imageName="mr-bulb-corporation-california-8302" imageAlt="Mrs Bulb and with checklist" ovalColor="purple-2" textWidth="530">
             <h1>{top.header}</h1>
             <p>{top.text}</p>
