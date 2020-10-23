@@ -16,7 +16,7 @@ export const businessNamesContent = {
         desc: `Starting a New York LLC? Have Incfile do all the paperwork for you for free.`,
         button: {
           text: `Form Your LLC Now`,
-          url: "/form-order-now.php?entityType=LLC&entityState=NY/",
+          url: "${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=NY/",
         },
       },
     ],
@@ -93,18 +93,18 @@ export const businessNamesContent = {
           ],
         },
         {
-            count: 5,
-            question: `Avoid Using Words That Are Restricted or Prohibited by the NY DOS`,
-            answer: [
-              {
-                type: `list-dot-without-bg`,
-                content: [
-                  `<b>Restricted words for New York LLCs include:</b> "America Espirito Sport Fraternite," "Citius Altius Fortius," academy, acceptance, annuity, arboretum, assurance, bank, benefit, blind, bond, casualty, college, conservatory, council, doctor, education, elementary, endowment, exchange, fidelity, finance, guaranty, handicapped, historical, historical society, history, indemnity, industrial organization, industrial organization, institute, insurance, investment, kindergarten, labor, lawyer, library, loan, mortgage, museum, Olympiad, prekindergarten, preschool, savings, school, secondary, surety, title, trust, underwriter, union, United Nations, university`,
-                  `<b>Prohibited words for New York LLCs include:</b> attorney, board of trade, chamber of commerce, community, cooperation, cooperative, corporation, incorporated, partnership, redevelopment, state police, state trooper, tenant relocation, urban development, urban relocation`,
-                ],
-              },
-            ],
-          },
+          count: 5,
+          question: `Avoid Using Words That Are Restricted or Prohibited by the NY DOS`,
+          answer: [
+            {
+              type: `list-dot-without-bg`,
+              content: [
+                `<b>Restricted words for New York LLCs include:</b> "America Espirito Sport Fraternite," "Citius Altius Fortius," academy, acceptance, annuity, arboretum, assurance, bank, benefit, blind, bond, casualty, college, conservatory, council, doctor, education, elementary, endowment, exchange, fidelity, finance, guaranty, handicapped, historical, historical society, history, indemnity, industrial organization, industrial organization, institute, insurance, investment, kindergarten, labor, lawyer, library, loan, mortgage, museum, Olympiad, prekindergarten, preschool, savings, school, secondary, surety, title, trust, underwriter, union, United Nations, university`,
+                `<b>Prohibited words for New York LLCs include:</b> attorney, board of trade, chamber of commerce, community, cooperation, cooperative, corporation, incorporated, partnership, redevelopment, state police, state trooper, tenant relocation, urban development, urban relocation`,
+              ],
+            },
+          ],
+        },
       ],
     },
     {
@@ -233,7 +233,7 @@ export const businessNamesContent = {
         subtitle: `Incorporate in New York for $0 + State Fee ($300)`,
         button: {
           text: `Start Your LLC Now`,
-          url: `/form-order-now.php?entityType=LLC&entityState=NY/`,
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=NY/`,
         },
       },
     },

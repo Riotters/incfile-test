@@ -133,7 +133,7 @@ export const faq = {
   header: `Common questions on starting S Corporation`,
   link: {
     text: `See all`,
-    url: `/`,
+    url: `/research-topics/s-corporation-info/`,
   },
   faq: {
     items: [

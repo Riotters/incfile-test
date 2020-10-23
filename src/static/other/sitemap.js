@@ -34,7 +34,7 @@ export const list = {
                 },
                 {
                   text: `Get started now`,
-                  url: `/form-order-now.php`,
+                  url: `${process.env.ORDER_URL}/form-order-now.php`,
                 },
                 {
                   text: `Testimonials`,
