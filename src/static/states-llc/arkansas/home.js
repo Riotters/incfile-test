@@ -864,11 +864,7 @@ export const feesAndRequirments = [
     marginBottom: 32,
   },
   {
-    type: `table`,
-    content: {
-      headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
-      rows: [[`$50`, `7 Business Days`, `2 Business Days`]],
-    },
+    type: `dynamic_ar_box`,
   },
   {
     type: `arrow-link`,
@@ -957,30 +953,7 @@ export const feesAndRequirments = [
     marginBottom: 48,
   },
   {
-    type: `header`,
-    content: `Annual Report`,
-    size: 4,
-    marginBottom: 24,
-  },
-  {
-    type: `text`,
-    content: `<b>Frequency:</b> Annually`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `<b>Due Date:</b> May 1st.`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `<b>Filing Fee:</b> $150`,
-    marginBottom: 32,
-  },
-  {
-    type: `text`,
-    content: `<b>Note:</b>  Initial report due May 1st of the year following formation or qualification.`,
-    marginBottom: 48,
+    type: `dynamic_filing_requirement`,
   },
   {
     type: `text`,

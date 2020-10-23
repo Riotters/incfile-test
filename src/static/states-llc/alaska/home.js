@@ -913,11 +913,7 @@ export const feesAndRequirments = [
     marginBottom: 32,
   },
   {
-    type: `table`,
-    content: {
-      headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
-      rows: [[`$250`, `5 Business Days`, `1 Business Day`]],
-    },
+    type: `dynamic_ar_box`,
   },
   {
     type: `arrow-link`,
@@ -1006,52 +1002,12 @@ export const feesAndRequirments = [
     marginBottom: 48,
   },
   {
-    type: `header`,
+    type: `dynamic_filing_requirement`,
     content: `Initial Report`,
     size: 4,
     marginBottom: 24,
   },
-  {
-    type: `text`,
-    content: `Domestic (Alaskan) Entities are required to file within 6 months of creation. Failure to file will cause non-compliance and may lead to administrative dissolution. `,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `<b>Due Date:</b> Within 6 months of the date of formation. `,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `<b>Filing Fee:</b> $0`,
-    marginBottom: 48,
-  },
-  {
-    type: `header`,
-    content: `Annual Report`,
-    size: 4,
-    marginBottom: 24,
-  },
-  {
-    type: `text`,
-    content: `<b>Frequency:</b> Biennially`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `<b>Due Date:</b> By January 2nd of the filing year.`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `<b>Filing Fee:</b> $100`,
-    marginBottom: 32,
-  },
-  {
-    type: `text`,
-    content: `<b>Note:</b> Entity organized or qualified in even-numbered years must file in even-numbered years; those in odd-numbered years file in odd-numbered years.`,
-    marginBottom: 48,
-  },
+
   {
     type: `text`,
     content: `<a href="/business-filing-deadlines/">Learn about your ongoing Alaska LLC filing requirements</a> and business filing deadlines with our helpful Alaska ongoing filing lookup tool.`,
