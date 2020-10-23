@@ -6,6 +6,7 @@ import ImageContent from "../../../partials/left-image-right-content";
 import ContentCenter from "../../../partials/content-center";
 import IconTextColorBox from "../../../molecules/text-blocks/icon-h4-text-color";
 import IconSVG from "../../../../images/icons/closing-your-business.inline.svg";
+import Table from "../../../organisms/tables/compare-entity-type-table";
 
 const Differences = styled.section`
   position: relative;
@@ -19,7 +20,9 @@ const DifferencesSection = ({ className, content }) => (
     <ImageContent image="s-corp-differences-0239" contentCenter>
       <IconTextColorBox color={color.babyblue3} Icon={IconSVG} content={content.box} rounded curve curveColor={color.yellow1} />
     </ImageContent>
-    <ContentCenter>Table</ContentCenter>
+    <ContentCenter>
+      <Table content={content.table} />
+    </ContentCenter>
   </Differences>
 );
 

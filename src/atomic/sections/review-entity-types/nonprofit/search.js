@@ -137,7 +137,7 @@ const Search = () => {
       </Moon>
       <Container>
         <Rocket>
-          <Image filename="rocket" alt="rocket lunch" />
+          <Image filename="lunching-rocket-6969" alt="rocket lunch" />
         </Rocket>
         <Content>
           <SearchBox>

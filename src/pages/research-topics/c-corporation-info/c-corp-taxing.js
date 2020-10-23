@@ -20,7 +20,7 @@ import { about, related } from "../../../static/research-topics/c-corporation-in
 
 const HelpCenter = () => (
   <Layout>
-    <SEO title="What is a C Corporation? Your Guide to C Corps | Incfile" description="A C Corporation is one of several ways to legally recognize a business for tax, regulatory and official reasons. See if starting a C Corp is right for you." />
+    <SEO title="How is a C Corporation Taxed? | Archive articles" description="A C Corporation is one of several ways to legally recognize a business for tax, regulatory and official reasons. See if starting a C Corp is right for you." />
     <Top imageName="mrs-bulb-help-center-article" imageAlt="Mrs Bulb and with checklist" ovalColor="green">
       <h1>{top.header}</h1>
       <p>{top.text}</p>

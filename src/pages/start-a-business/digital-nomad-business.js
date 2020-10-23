@@ -91,7 +91,7 @@ const GymPersonalTraining = () => (
                             entrepreneur.
                         </Paragraph>
 
-                        <Paragraph big style={{marginTop: "48px", fontFamily: "Avenir-Heavy", color: color.black}}>
+                        <Paragraph big style={{marginTop: "48px", fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
                             Digital Nomad business formation guide
                         </Paragraph>
 
@@ -262,7 +262,7 @@ const GymPersonalTraining = () => (
                         <Heading size={3}>
                             Questions to Ask Before Becoming a Digital Nomad
                         </Heading>
-                        <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
+                        <Paragraph big style={{fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
                             Is Digital Nomad Entrepreneurship For You?
                         </Paragraph>
 
@@ -273,7 +273,7 @@ const GymPersonalTraining = () => (
                             satisfaction of creating a business that helps others be successful.
                         </Paragraph>
 
-                        <Paragraph big style={{marginTop: "48px", fontFamily: "Avenir-Heavy", color: color.black}}>
+                        <Paragraph big style={{marginTop: "48px", fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
                             What Are the Main Skills, Expertise and Experience to be a Successful Digital Nomad
                             Entrepreneur?
                         </Paragraph>

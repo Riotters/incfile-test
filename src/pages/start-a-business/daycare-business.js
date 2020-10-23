@@ -105,7 +105,7 @@ const DaycareBusiness = () => (
                             need to do to get your daycare business off of the ground.
                         </Paragraph>
 
-                        <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
+                        <Paragraph big style={{fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
                             Read on for some insight into creating your own childcare organization and becoming an
                             entrepreneur.
                         </Paragraph>

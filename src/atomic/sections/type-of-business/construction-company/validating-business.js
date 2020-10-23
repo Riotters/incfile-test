@@ -104,7 +104,7 @@ const ValidatingBusinessIdea = () => (
                         it’s going to work in the real world.
                     </Paragraph>
 
-                    <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
+                    <Paragraph big style={{fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
                         Before committing too much time, energy and money into your new construction business, it’s
                         important to test the marketplace.
                     </Paragraph>

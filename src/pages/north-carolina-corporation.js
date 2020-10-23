@@ -127,7 +127,7 @@ const AlaskaCorporation = () => (
             <Paragraph big>
             The board of directors of a corporation may adopt, amend, or repeal bylaws, unless the articles reserve this right to the shareholders. At its initial meeting, the board of directors should adopt corporate bylaws, and then keep them updated as time goes on.
             </Paragraph>
-            <Paragraph big style={{ fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
             Bylaws normally address:
             </Paragraph>
 
@@ -169,7 +169,7 @@ const AlaskaCorporation = () => (
             An annual report must be filed (in either paper or electronic format) with the North Carolina Secretary of State each year by the 15th day of the third month after the end of the corporation’s fiscal year.
             </Paragraph>
 
-            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
             This report must include:
             </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>

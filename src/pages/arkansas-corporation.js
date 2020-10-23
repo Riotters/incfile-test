@@ -116,7 +116,7 @@ const AlaskaCorporation = () => (
             <Paragraph big>
             A corporation is required to keep a copy of its bylaws at its main executive office, but is not required to file them with the state. At its initial meeting, the board of directors should adopt corporate bylaws, and then keep them updated as time goes on.
             </Paragraph>
-            <Paragraph big style={{ fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
             Bylaws describe the corporation’s basic managerial and legal operating principles, including information on:
             </Paragraph>
 
@@ -158,7 +158,7 @@ const AlaskaCorporation = () => (
             An annual franchise report must be filed with the Arkansas Secretary of State each year.
             </Paragraph>
 
-            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
             This report must include:
             </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>

@@ -92,7 +92,7 @@ const Certificates = ({ content }) => {
       <Container>
         <Flex>
           <Icon>
-            <Image filename="manage-your-company" />
+            <Image filename="standard-kit-5602" />
           </Icon>
           <Content>
             <h2>{content.header}</h2>

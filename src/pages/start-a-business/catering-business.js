@@ -102,7 +102,7 @@ const CateringBusiness = () => (
                             a restaurant.
                         </Paragraph>
 
-                        <Paragraph big style={{fontFamily: "Avenir-Heavy", marginTop: "48px", color: color.black}}>
+                        <Paragraph big style={{fontFamily: "Avenir", fontWeight: "900", marginTop: "48px", color: color.black}}>
                             Catering Business formation guide
                         </Paragraph>
 
@@ -301,7 +301,7 @@ const CateringBusiness = () => (
                             Questions to Ask Before You Start a Catering Business
                         </Heading>
 
-                        <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
+                        <Paragraph big style={{fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
                             Is Catering Entrepreneurship for You?
                         </Paragraph>
 
@@ -322,7 +322,7 @@ const CateringBusiness = () => (
                             huge amounts of experience in creating and running a successful business.
                         </Paragraph>
 
-                        <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
+                        <Paragraph big style={{fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
                             What Are the Main Skills, Expertise and Experience to Be a Successful Catering Entrepreneur?
                         </Paragraph>
 
@@ -376,7 +376,7 @@ const CateringBusiness = () => (
                             width="100%"
                         />
 
-                        <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
+                        <Paragraph big style={{fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
                             Is Catering Entrepreneurship for You?
                         </Paragraph>
 

@@ -88,7 +88,8 @@ const TextInside = styled.div`
 `;
 
 const TextBox = styled.div`
-    font-family: Avenir-Heavy, sans-serif;
+    font-family: Avenir, sans-serif;
+    font-weight: 900;
     font-size: 20px;
     color: #1d1d1d;
     padding-right: 48px;
@@ -97,7 +98,8 @@ const TextBox = styled.div`
 `;
 
 const Title = styled.div`
-    font-family: "Avenir-Heavy", sans-serif;
+    font-family: "Avenir", sans-serif;
+    font-weight: 900;
     font-size: 20px;
     color: ${color.black};
     text-align: center;

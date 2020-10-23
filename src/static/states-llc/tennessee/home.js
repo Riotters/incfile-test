@@ -16,7 +16,7 @@ export const howToGuide = [
     type: `header`,
     content: `Forming an LLC in Tennessee`,
     size: 2,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -38,7 +38,7 @@ export const howToGuide = [
   {
     type: `text`,
     content: `We’ll tell you what you need to know about the Tennessee Secretary of State, Tennessee business registration, filing for your Tennessee LLC and much more. Whether you’re starting a business in Columbus, Cleveland, Cincinnati, Dayton or somewhere else, we can help. `,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -61,7 +61,7 @@ export const howToGuide = [
   {
     type: `text`,
     content: `Learn more about the <a href="/limited-liability-company/">benefits of the LLC business structure here</a>.`,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `header`,
@@ -264,7 +264,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Tennessee Secretary of State Business Search & Naming Your LLC`,
     size: 2,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -572,7 +572,7 @@ export const registeredAgent = [
 
     `,
     size: 2,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -634,7 +634,7 @@ export const registeredAgent = [
             ],
     },
     marginBottom: 24,
-    color: color.red3,
+    color: color.yellow3,
     curve: true,
     curveColor: color.blue1,
   },
@@ -890,7 +890,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Tennessee LLC Costs and Filing Requirements`,
     size: 2,
-    marginBottom: 24,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -914,7 +914,7 @@ export const feesAndRequirments = [
     marginBottom: 32,
   },
   {
-    type: `table`,
+    type: `table-simple`,
     content: {
       headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
       rows: [[`$308`, `5 Bussiness days`, `1 Business Day`]],
@@ -1099,7 +1099,7 @@ export const feesAndRequirments = [
       url: `/business-license-research-package/`,
     },
     theme: `primary48`,
-    marginBottom: 48,
+    marginBottom: 40,
   },
   {
     type: `header`,
@@ -1282,7 +1282,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Tennessee Business Taxes & Your LLC`,
     size: 2,
-    marginBottom: 24,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -1617,7 +1617,7 @@ export const businessTaxes = [
         },
       ],
     },
-    marginBottom: 24,
+    marginBottom: 24, 
   },
 ]
 export const compare = {

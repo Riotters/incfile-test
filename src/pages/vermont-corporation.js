@@ -127,7 +127,7 @@ const AlaskaCorporation = () => (
             <Paragraph big>
             At its initial meeting, the incorporators or the board of directors should adopt corporate bylaws, and then keep them updated as time goes on. If no directors have been elected the incorporators may adopt initial bylaws for the corporation. If neither the incorporators nor the board of directors have adopted initial bylaws, the shareholders may do so.
             </Paragraph>
-            <Paragraph big style={{ fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
             The board of directors of a corporation may adopt, amend, or repeal bylaws, unless the articles reserve this right to the shareholders. Bylaws normally address:
             </Paragraph>
 
@@ -169,7 +169,7 @@ const AlaskaCorporation = () => (
             Your new Vermont corporation must file an annual report with the state Secretary of State within two and a half months following the end of each fiscal year.
             </Paragraph>
 
-            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
             This report must indicate:
             </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>

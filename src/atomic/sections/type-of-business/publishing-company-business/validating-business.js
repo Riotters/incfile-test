@@ -97,7 +97,7 @@ const ValidatingBusinessIdea = () => (
                         to validate your publishing business idea.
                     </Paragraph>
 
-                    <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
+                    <Paragraph big style={{fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
                         Getting started in a publishing business is easy, but becoming
                         a success is harder.
                     </Paragraph>

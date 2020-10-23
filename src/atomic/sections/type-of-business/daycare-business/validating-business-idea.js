@@ -106,7 +106,7 @@ const ValidatingBusinessIdea = () => (
                         daycare businesses. Once you’ve identified specific daycare areas you might like
                         to go into, you need to validate your daycare business idea.
                     </Paragraph>
-                    <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
+                    <Paragraph big style={{fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
                         Remember too that every daycare business will have many competitors.
                     </Paragraph>
                     <Paragraph big>

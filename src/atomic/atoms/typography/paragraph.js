@@ -20,7 +20,8 @@ const StyledParagraph = styled.p`
     ${(props) => props.flexJustify && "justify-content: " + props.flexJustifyValue + ";"}
     
     span.big {
-        font-family: Avenir-Heavy, sans-serif;
+        font-family: Avenir, sans-serif;
+        font-weight: 900;
     }
     
     span.blue {
@@ -33,7 +34,8 @@ const StyledParagraph = styled.p`
       line-height: ${(props) => (props.big ? "32" : "24")}px;
       
       ${props => props.big && 
-        "font-family: Avenir-Heavy, sans-serif;"
+        "font-family: Avenir, sans-serif;",
+        "font-weight: 900;"
       }
 
       transition: all 0.3s ease-in-out;

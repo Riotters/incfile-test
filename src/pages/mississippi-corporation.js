@@ -128,7 +128,7 @@ const AlaskaCorporation = () => (
             <Paragraph big>
             The board of directors of a corporation may adopt, amend, or repeal bylaws, unless the articles reserve this right to the shareholders.
             </Paragraph>
-            <Paragraph big style={{ fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
             Bylaws normally address:
             </Paragraph>
 
@@ -170,7 +170,7 @@ const AlaskaCorporation = () => (
             The Mississippi Secretary of State requires that Mississippi corporations file a report each year within 60 days of the anniversary of its incorporation.
             </Paragraph>
 
-            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
               The report must include:
             </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>

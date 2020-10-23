@@ -134,7 +134,7 @@ const AlaskaCorporation = () => (
             <Paragraph big>
             A corporation’s bylaws are critical because they describe the corporation’s basic operating principles from both the managerial and legal perspectives. A Virginia corporation must maintain a copy of its bylaws at its main executive office, but is not required to file them with the state.
             </Paragraph>
-            <Paragraph big style={{ fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
             The incorporators or board of directors should approve the corporation’s bylaws at their first meeting-insuring that they don’t conflict with either state law or the articles of incorporation-and keep them updated as time goes on. The bylaws should as a minimum include:
             </Paragraph>
 
@@ -174,7 +174,7 @@ const AlaskaCorporation = () => (
             Virginia corporations must file an annual report with the Virginia State Corporation Commission in the last three months of the calendar year that begins with its date of incorporation.
             </Paragraph>
 
-            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
             This report (accompanied by the filing fee of $100), must include the following information:
             </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>
