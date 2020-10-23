@@ -74,7 +74,7 @@ const RestaurantBusiness = () => (
                         starting a restaurant business.
                     </Paragraph>
 
-                    <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
+                    <Paragraph big style={{fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
                         Whatever your idea for a restaurant, turning that vision into a place that creates amazing
                         cuisine and delights your customers is doable with the right approach. In this guide we’ll
                         cover:

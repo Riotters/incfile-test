@@ -6,7 +6,7 @@ export const top = {
   buttons: [
     {
       text: `See detailed pricing`,
-      url: `/form-order-now.php?entityType=LLC&entityState=AZ`,
+      url: `/form-order-now.php?entityType=LLC&entityState=NE`,
     },
   ],
 };
@@ -16,7 +16,7 @@ export const howToGuide = [
       type: `header`,
       content: `How to Start an LLC in Nebraska`,
       size: 2,
-      marginBottom: 24,
+      marginBottom: 40,
     },
     {
       type: `text`,
@@ -26,17 +26,12 @@ export const howToGuide = [
     {
       type: `text`,
       content: `For most business owners, the fastest and easiest way to start a business in Nebraska is by creating a Nebraska LLC. A limited liability company (LLC) is a type of business entity that’s ideal for startups and small- to medium-sized businesses. You get the advantages and protections of larger Nebraska corporations but with much simpler rules and regulations.`,
-      marginBottom: 16,
-    },
-    {
-      type: `text`,
-      content: `Briefly, the benefits of starting a Nebraska LLC include:`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `list-dot`,
       content: {
-        header: ``,
+        header: `Briefly, the benefits of starting a Nebraska LLC include:`,
         list: [`Separating and limiting your personal liability from your business liability and debts`,
                `Quick and simple filing, management, compliance, regulation and administration of your Nebraska LLC`,
                `Easy tax filing and potential advantages for your tax treatment`],
@@ -49,13 +44,13 @@ export const howToGuide = [
     {
       type: `text`,
       content: `Learn more about the <a href="/limited-liability-company/">benefits of the LLC business structure here</a>.`,
-      marginBottom: 16,
+      marginBottom: 40,
     },
     {
       type: `header`,
       content: `Six Quick Steps to Filing an LLC in Nebraska`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -113,7 +108,7 @@ export const howToGuide = [
       type: `header`,
       content: `Review Information from the Nebraska Secretary of State`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `list-dot`,
@@ -123,14 +118,14 @@ export const howToGuide = [
                `<a href="https://dol.nebraska.gov/" target="_blank" rel="noopener noreferrer">Nebraska Department of Labor for NE employers and hiring</a>`,
                `<a href="https://revenue.nebraska.gov/" target="_blank" rel="noopener noreferrer">Nebraska Department of Revenue for NE taxes</a>`],
       },
-      marginBottom: 32,
-      color: color.yellow3,
+      marginBottom: 40,
+      color: color.babyblue3,
     },
     {
       type: `header`,
       content: `Special Types of Nebraska LLCs`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -141,7 +136,7 @@ export const howToGuide = [
       type: `header`,
       content: `Form a Professional Nebraska LLC`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -152,7 +147,7 @@ export const howToGuide = [
         type: `header`,
         content: `Form a Foreign LLC in Nebraska`,
         size: 3,
-        marginBottom: 16,
+        marginBottom: 32,
     },
     {
         type: `text`,
@@ -168,7 +163,7 @@ export const howToGuide = [
         type: `header`,
         content: `What to Do After Forming Your Nebraska LLC`,
         size: 3,
-        marginBottom: 16,
+        marginBottom: 32,
       },
       {
         type: `text`,
@@ -179,7 +174,7 @@ export const howToGuide = [
       type: `header`,
       content: `Detailed Information for Your Nebraska LLC`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -245,7 +240,7 @@ export const howToGuide = [
       type: `header`,
       content: `Search for the Perfect Nebraska LLC Name and Register It with the Secretary of State`,
       size: 2,
-      marginBottom: 24,
+      marginBottom: 40,
     },
     {
       type: `text`,
@@ -256,7 +251,7 @@ export const howToGuide = [
       type: `header`,
       content: `Nebraska Secretary of State Business Search`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -274,13 +269,13 @@ export const howToGuide = [
         text: `Nebraska Secretary of State business name search tool`,
         url: `https://www.nebraska.gov/sos/corp/corpsearch.cgi?nav=search/`,
       },
-      marginBottom: 32,
+      marginBottom: 40,
     },
     {
       type: `header`,
       content: `Nebraska SOS Rules on Your LLC Business Name`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -352,7 +347,7 @@ export const howToGuide = [
                `Use the term “Olympic” or any terms that are trademarks of the Olympic organization`, 
                `Imply a purpose that it would be illegal for your business to carry out`],
       },
-      marginBottom: 32,
+      marginBottom: 40,
       color: color.yellow3,
       curve: true,
       curveColor:color.red1,
@@ -360,7 +355,7 @@ export const howToGuide = [
     {
       type: `header`,
       content: `Nebraska LLC Trade Names`,
-      size: 4,
+      size: 3,
       marginBottom: 32,
     },
     {
@@ -371,7 +366,7 @@ export const howToGuide = [
     {
       type: `text`,
       content: `For example, your LLC might be called Nebraska Commercial Construction Holding Company LLC and you want to trade as Agricultural Barns and Storage. You should file an” Application for Registration of Trade Name” to let the Nebraska Secretary of State know. In Nebraska, you do that through a form, or you can have Incfile do it on your behalf through our Assumed Business Name service.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `button`,
@@ -385,21 +380,21 @@ export const howToGuide = [
     {
       type: `header`,
       content: `Business Name Registration for Your Nebraska LLC`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `Once you’ve searched for your Nebraska business name, checked availability, followed the naming rules and decided whether you need a fictitious name, you can register your NE LLC name. There are a couple of ways to do this.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `list-dot`,
       content: {
         header: ``,
-        list: [`<p>If you don’t want to form your Nebraska LLC right now, you can reserve the business name with the Nebraska Secretary of State. You will need to complete an Application for Reservation of Limited Liability Company Name and file it with the NE SOS. You do not need to reserve a name if you are forming your business right away.</p></br>
+        list: [`If you don’t want to form your Nebraska LLC right now, you can reserve the business name with the Nebraska Secretary of State. You will need to complete an Application for Reservation of Limited Liability Company Name and file it with the NE SOS. You do not need to reserve a name if you are forming your business right away.
                 <a href="http://www.sos.ne.gov/business/corp_serv/pdf/llcafter2011/Form%20Reservation%20of%20LLC%20Name%20_Form_.pdf/" target="_blank" rel="noopener noreferrer">Nebraska SOS LLC name reservation form.</a>
-                <p>If you’re ready to start your Nebraska LLC, you can formally file your Certificate of Organization with the Nebraska SOS, or <a href="/form-order-now.php?entityType=LLC&entityState=NE/">let Incfile take care of it for you</a>.</p>`],
+                If you’re ready to start your Nebraska LLC, you can formally file your Certificate of Organization with the Nebraska SOS, or <a href="/form-order-now.php?entityType=LLC&entityState=NE/">let Incfile take care of it for you</a>.`],
       },
       marginBottom: 32,
       color: color.purple3,
@@ -407,13 +402,13 @@ export const howToGuide = [
     {
       type: `header`,
       content: `FAQs on Naming Your Nebraska LLC`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `You might find the following answers useful.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `accordion`,
@@ -433,13 +428,13 @@ export const howToGuide = [
           },
         ],
       },
-      marginBottom: 32,
+      marginBottom: 40,
     },
     {
       type: `header`,
       content: `Useful Resources for Naming Your Nebraska LLC`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -449,7 +444,7 @@ export const howToGuide = [
     {
       type: `header`,
       content: `Trademarks and Service Marks`,
-      size: 3,
+      size: 4,
       marginBottom: 16,
     },
     {
@@ -464,18 +459,18 @@ export const howToGuide = [
         url: `/trademark-name-search/`,
       },
       theme: `primary48`,
-      marginBottom: 32,
+      marginBottom: 40,
     },
     {
       type: `header`,
       content: `Find the Perfect Name for Your Nebraska LLC`,
-      size: 3,
+      size: 4,
       marginBottom: 16,
     },
     {
       type: `text`,
       content: `The perfect business name can be elusive. We have a complete guide to choosing the right business name, but basically, you'll want to choose a name that will:`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `list-dot`,
@@ -505,7 +500,7 @@ export const howToGuide = [
       type: `header`,
       content: `Why Your Nebraska LLC Needs a Registered Agent`,
       size: 2,
-      marginBottom: 16,
+      marginBottom: 40,
     },
     {
       type: `text`,
@@ -521,12 +516,12 @@ export const howToGuide = [
       type: `header`,
       content: `Rules for Nebraska Registered Agents`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `There are certain rules that you must follow when you’re appointing a Nebraska Registered Agent service for your business. They are:`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `list-dot`,
@@ -549,12 +544,12 @@ export const howToGuide = [
       type: `header`,
       content: `The Purpose of a Nebraska Registered Agent`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `Your Nebraska Registered Agent carries out several valuable services for your business. They accept official communications and documents from the NE Secretary of State on your behalf. This may include:`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `list-dot`,
@@ -565,7 +560,7 @@ export const howToGuide = [
                `Official Nebraska and federal government documents, form filings and requests for information (including taxes, permits and company filings)`],
       },
       marginBottom: 24,
-      color: color.red3,
+      color: color.purple3,
       curve: true,
       curveColor: color.blue1,
     },
@@ -573,7 +568,7 @@ export const howToGuide = [
       type: `header`,
       content: `Incfile Provides a Free Nebraska Registered Agent Service for the First Year`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -583,7 +578,7 @@ export const howToGuide = [
     {
       type: `text`,
       content: `We are authorized to conduct business in Nebraska and can legally act as your Registered Agent. Here’s what the Infile Nebraska Registered Agent service provides for your NE LLC:`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `list-dot`,
@@ -610,7 +605,7 @@ export const howToGuide = [
       type: `header`,
       content: `How to Appoint a Nebraska Registered Agent for Your LLC`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -621,34 +616,34 @@ export const howToGuide = [
       type: `header`,
       content: `Assign Your Nebraska Registered Agent When You Form Your NE LLC`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `Your business needs to have a Nebraska Registered Agent Service as soon as it’s formed. You can achieve this through one of the following methods.`,
-      marginBottom: 16,
+      marginBottom: 40,
     },
     {
       type: `header`,
       content: `File Certificate of Organization with the Nebraska Secretary of State`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `You will need to include details of your Registered Agent in your Certificate of Organization. This is the form that you file with the NE Secretary of State to formally create your business.`,
-      marginBottom: 24,
+      marginBottom: 40,
     },
     {
       type: `header`,
       content: `Incorporate Through Incfile and Get a Free Nebraska Registered Agent`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `When you incorporate through us, we complete and file your Certificate of Organization based on the information you’ve provided. Additionally, we give you a free Nebraska Registered Agent service for the first year, and we’ll include details of your NE Registered Agent in the form that we file.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `button`,
@@ -657,24 +652,24 @@ export const howToGuide = [
         url: `/form-order-now.php?entityType=LLC&entityState=NE/`,
       },
       theme: `primary48`,
-      marginBottom: 32,
+      marginBottom: 40,
     },
     {
       type: `header`,
       content: `Change Your Nebraska Registered Agent After Your LLC Is Formed`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `You can also change your NE Registered Agent service after you’ve formed your LLC. There are a couple of ways to achieve this.`,
-      marginBottom: 16,
+      marginBottom: 40,
     },
     {
       type: `header`,
       content: `Choose a Registered Agent Service and File a Form with the Nebraska Secretary of State`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -684,13 +679,13 @@ export const howToGuide = [
     {
       type: `header`,
       content: `Sign Up for Incfile’s Nebraska Registered Agent Service and We’ll File the Change on Your Behalf`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `When you choose to use our NE Registered Agent service, we take care of all the form filling and filing for you. We’ll collect important information about your business, complete form [form name and number] on your behalf and send it to the Nebraska Secretary of State. We’ll let you know once we officially become your Registered Agent.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `button`,
@@ -705,7 +700,7 @@ export const howToGuide = [
       type: `header`,
       content: `Nebraska Registered Agent Search`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -721,12 +716,12 @@ export const howToGuide = [
       type: `header`,
       content: `Issues with Not Having a Nebraska Registered Agent`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `What happens if you choose not to assign or provide details of a Registered Agent to the Nebraska Secretary of State? There are several possible ramifications, including:`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `list-dot`,
@@ -736,19 +731,19 @@ export const howToGuide = [
                `<b>Falling out of good standing with the Nebraska Secretary of State:</b> If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`, 
                `<b>Losing your status as a Nebraska LLC:</b> A NE Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your Nebraska LLC may be dissolved.`],
       },
-      marginBottom: 48,
+      marginBottom: 40,
       color: color.blue3,
     },
     {
       type: `header`,
       content: `Acting as Your Own Registered Agent for Your NE LLC`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `If you have an address in Nebraska, you can choose to be the Registered Agent for your LLC. We don’t recommend this approach as there can be some drawbacks:`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `list-dot`,
@@ -765,7 +760,7 @@ export const howToGuide = [
         type: `header`,
         content: `FAQs About Nebraska Registered Agents`,
         size: 3,
-        marginBottom: 24,
+        marginBottom: 32,
     },
     {
       type: `accordion`,
@@ -795,7 +790,7 @@ export const howToGuide = [
       type: `header`,
       content: `Useful Resources for Nebraska Registered Agent Services`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `list-dot`,
@@ -815,7 +810,7 @@ export const howToGuide = [
       type: `header`,
       content: `Fees, Filing Requirements and Business Licenses for Your Nebraska LLC`,
       size: 2,
-      marginBottom: 24,
+      marginBottom: 40,
     },
     {
       type: `text`,
@@ -825,13 +820,13 @@ export const howToGuide = [
     {
       type: `text`,
       content: `Note that Nebraska business licenses and permits might need to be paid when you first form your business, on an ongoing schedule or on an ad hoc basis. Find more details below.`,
-      marginBottom: 32,
+      marginBottom: 40,
     },
     {
       type: `header`,
       content: `Nebraska LLC Formation Filing and Fees`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -839,7 +834,7 @@ export const howToGuide = [
       marginBottom: 32,
     },
     {
-      type: `table`,
+      type: `table-simple`,
       content: {
         headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
         rows: [[`$109`, `9 Business Days`, `2 Business Days`]],
@@ -884,7 +879,7 @@ export const howToGuide = [
       type: `header`,
       content: `Getting an EIN/Tax ID for Your Nebraska LLC`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -904,12 +899,12 @@ export const howToGuide = [
       type: `header`,
       content: `Certificate of Authority to Operate Outside Nebraska`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `If you’re expanding your Nebraska LLC beyond the borders of the state, you will need a Foreign Qualification or Certificate of Authority to operate in another state. These are typically necessary if you have a physical presence, employees or banking in a different state than Nebraska. Fees and requirements for foreign qualifications depend on each state’s rules. Incfile provides a complete Foreign Qualification service for any state.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `button`,
@@ -924,7 +919,7 @@ export const howToGuide = [
       type: `header`,
       content: `Nebraska LLC Annual Reporting and Fees`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -985,12 +980,12 @@ export const howToGuide = [
       type: `header`,
       content: `Business Licenses and Permits in Nebraska`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `Your Nebraska LLC may need certain licenses and permits to comply with specific requirements. These business permits and licenses might be issued by Nebraska, regional or federal organizations. Some of the associated fees only need to be paid once, while others have ongoing charges.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `list-dot`,
@@ -1037,8 +1032,8 @@ export const howToGuide = [
     {
       type: `header`,
       content: `Create an Operating Agreement for Your Nebraska LLC`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -1048,29 +1043,29 @@ export const howToGuide = [
     {
       type: `text`,
       content: `An Operating Agreement is extremely useful for several reasons (<a href="/research-topics/llc-info/the-llc-operating-agreement/">learn about them here</a>).  If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Nebraska business. You can choose to make changes to the template based on your unique requirements.`,
-      marginBottom: 16,
+      marginBottom: 40,
     },
     {
       type: `header`,
       content: `Ad Hoc Nebraska Fees or Requirements for Your NE LLC`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `There are several other fees or requirements that you may need to meet during the life of your Nebraska LLC. These ad hoc fees will only be payable in specific circumstances, which we’ve listed below.`,
-      marginBottom: 32,
+      marginBottom: 40,
     },
     {
       type: `header`,
       content: `To Obtain a Fictitious/DBA Name`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `If you want your NE business to trade under a different name, you can file a form with the Nebraska Secretary of State. You will need to pay a Nebraska filing fee. Incfile can file this form on your behalf.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `button`,
@@ -1084,13 +1079,13 @@ export const howToGuide = [
     {
       type: `header`,
       content: `To Change the Nebraska Registered Agent`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `Your Nebraska LLC needs a Registered Agent, which must be appointed when you first incorporate your LLC. You can also switch to a new NE Registered Agent later. Incfile provides a complete Nebraska Registered Agent service.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `button`,
@@ -1104,24 +1099,24 @@ export const howToGuide = [
     {
       type: `header`,
       content: `To Reserve a Name`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `If you don’t want to form your NE business right away, you can reserve a name with the Nebraska Secretary of State. You will need to pay a small fee to do this.`,
-      marginBottom: 16,
+      marginBottom: 40,
     },
     {
       type: `header`,
       content: `To Amend Certain Facts About Your Nebraska LLC`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `Your business formation documents state certain facts about your Nebraska business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with the Nebraska Secretary of State. You can do this yourself or have Incfile complete the filing on your behalf.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `list-dot`,
@@ -1131,7 +1126,7 @@ export const howToGuide = [
                `Changing the business address of your LLC`,
                `Altering the stated business activities of your Nebraska LLC`],
       },
-      marginBottom: 0,
+      marginBottom: 24,
       color: color.yellow3,
     },
     {
@@ -1146,13 +1141,13 @@ export const howToGuide = [
     {
       type: `header`,
       content: `To Get a Certificate of Good Standing`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `Some organizations will request that you prove your Nebraska LLC’s compliance with laws and tax requirements. If you need to prove you have met your commitments, you will need a “Certificate of Good Standing” from the Nebraska Secretary of State. Incfile can obtain a certificate on your behalf.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `button`,
@@ -1161,7 +1156,7 @@ export const howToGuide = [
         url: `/manage-your-company/certificate-of-good-standing/`,
       },
       theme: `primary48`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `text`,
@@ -1177,7 +1172,7 @@ export const howToGuide = [
       type: `header`,
       content: `FAQs About Nebraska LLC Requirements`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `accordion`,
@@ -1213,7 +1208,7 @@ export const howToGuide = [
       type: `header`,
       content: `The Nebraska Business Taxes Your LLC Will Pay`,
       size: 2,
-      marginBottom: 24,
+      marginBottom: 40,
     },
     {
       type: `text`,
@@ -1229,12 +1224,12 @@ export const howToGuide = [
       type: `header`,
       content: `How Your Nebraska LLC Will Be Taxed`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `The profits of a Nebraska LLC are not taxed at the business level like those of C Corporations. Instead, taxes for a Nebraska LLC work as follows:`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `numeric-list`,
@@ -1258,18 +1253,18 @@ export const howToGuide = [
           text: `Employees pay federal, state and payroll tax on their earnings.`,
         },
       ],
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `text`,
       content: `Items 1, 2 and 3 are taxed as “pass-through” income for any LLC owners, managers or members who receive profits from the business. Any profits are reported on federal and Nebraska personal tax returns, and that’s where you will pay those taxes.`,
-      marginBottom: 32,
+      marginBottom: 40,
     },
     {
       type: `header`,
       content: `Nebraska State Income Tax Payable on LLC Earnings`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -1295,12 +1290,12 @@ export const howToGuide = [
       type: `header`,
       content: `Nebraska Sales Taxes`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the NE Department of Revenue. Nebraska sales tax is collected at the point of purchase. Nebraska sales tax rates do vary depending on the region, county or city where you are located.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `list-dot`,
@@ -1328,18 +1323,18 @@ export const howToGuide = [
         type: `header`,
         content: `Nebraska Sales Tax Rates`,
         size: 3,
-        marginBottom: 24,
+        marginBottom: 32,
       },
       {
         type: `text`,
         content: `Sales tax rates do vary between states, counties and cities. Typically, the state will set a base sales tax rate, then specific counties and cities may levy small additional sales tax amounts on top of that.`,
-        marginBottom: 16,
+        marginBottom: 40,
       },
     {
       type: `header`,
       content: `Federal Taxes for Your Nebraska LLC: Self-Employment and Income Taxes`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -1349,8 +1344,8 @@ export const howToGuide = [
     {
       type: `header`,
       content: `Nebraska LLC Federal Self-Employment Tax`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -1360,7 +1355,7 @@ export const howToGuide = [
     {
       type: `text`,
       content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `list-dot`,
@@ -1379,8 +1374,8 @@ export const howToGuide = [
     {
       type: `header`,
       content: `Pay Less Self-Employment Tax by Treating Your Nebraska LLC as an S Corporation`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -1390,7 +1385,7 @@ export const howToGuide = [
     {
       type: `text`,
       content: `You can do this by making an “S Corporation Tax Election” with the IRS using a form known as Form 2553. We can file your Form 2553 with the IRS on your behalf.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `button`,
@@ -1399,7 +1394,7 @@ export const howToGuide = [
         url: `/llc-s-corp-election/`,
       },
       theme: `primary48`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `text`,
@@ -1409,8 +1404,8 @@ export const howToGuide = [
     {
       type: `header`,
       content: `Nebraska LLC Federal Income Tax`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -1426,12 +1421,12 @@ export const howToGuide = [
       type: `header`,
       content: `Employer and Employee Taxes for Your Nebraska LLC`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `If you pay employees, there are some slightly different tax implications. Speak to your accountant to get clear guidance for your own unique situation.`,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `header`,
@@ -1485,8 +1480,8 @@ export const howToGuide = [
     {
       type: `header`,
       content: `Other Taxes and Duties for Your Nebraska  LLC`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -1496,13 +1491,13 @@ export const howToGuide = [
     {
       type: `header`,
       content: `Estimated Taxes for Your Nebraska LLC`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `Most Nebraska LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make. The most common types of estimated tax are:`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `list-dot`,
@@ -1513,7 +1508,7 @@ export const howToGuide = [
                `Nebraska state tax`],
       },
       marginBottom: 24,
-      color: color.red3,
+      color: color.green3,
     },
     {
       type: `text`,

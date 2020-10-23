@@ -123,7 +123,7 @@ const AlaskaCorporation = () => (
               Bylaws lay out the corporation’s basic operating principles from both the managerial and legal perspectives. A corporation must keep its bylaws available at its principal executive office, but is not required to file them with the state. The incorporators or board of directors should
               adopt the corporation’s bylaws at their first meeting-insuring there is no conflict with the corporation’s articles of incorporation-and keep them updated as time goes on.
             </Paragraph>
-            <Paragraph big style={{ fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
               Bylaws should include, at minimum:
             </Paragraph>
 
@@ -178,7 +178,7 @@ const AlaskaCorporation = () => (
               $250 fee at the time of incorporation.
             </Paragraph>
 
-            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
               The report must include:
             </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>

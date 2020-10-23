@@ -17,14 +17,14 @@ export const howToGuide = [
     type: `header`,
     content: `Starting an LLC in Louisiana`,
     size: 2,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `The great state of Louisiana is located on the southeast coast of the U.S. and borders Mississippi, Arkansas and Texas. 
     It’s a combination of unusual geography, a rich and vibrant culture and a growing economy, making it a very business-friendly state. 
     It has the largest bulk cargo port in the world and is a center of tourism, agriculture and energy.`,
-    marginBottom: 0,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -32,17 +32,12 @@ export const howToGuide = [
      Limited liability companies (LLCs) are a business entity designed for startups and small- and medium-sized businesses. Louisiana
       LLCs give you many of the protections and advantages of larger corporations without all the rules, 
     regulations and compliance issues common to larger business entities. `,
-    marginBottom: 0,
-  },
-  {
-    type: `text`,
-    content: `Briefly, the benefits of starting a Louisiana LLC include:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
-      header: ``,
+      header: `Briefly, the benefits of starting a Louisiana LLC include:`,
       list: [`Separating and limiting your personal liability from your business liability and debts`,
              `Quick and simple filing, management, compliance, regulation and administration of your Louisiana LLC`,
              `Easy tax filing and potential advantages for your tax treatment`],
@@ -55,13 +50,13 @@ export const howToGuide = [
   {
     type: `text`,
     content: `Learn more about the <a href="/limited-liability-company/">benefits of the LLC business structure here</a>.`,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `Form an Louisiana LLC in Six Quick Steps`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -120,7 +115,7 @@ export const howToGuide = [
     type: `header`,
     content: `Review Information from the Louisiana Secretary of State`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `list-dot`,
@@ -131,25 +126,25 @@ export const howToGuide = [
              `<a href="https://www.revenue.louisiana.gov/" target="_blank" rel="noopener noreferrer">Louisiana Department of Revenue for LA taxes</a>`],
     },
     marginBottom: 32,
-    color: color.yellow3,
+    color: color.babyblue3,
   },
   {
     type: `header`,
     content: `Form a Foreign LLC in Louisiana`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `<p>If your business is already operating in another state and expanding to Louisiana, you’ll need to form a foreign LLC. </p></br>
               <p> More information on Louisiana filing and licensing requirements here <link to state subpage once published> </p>`,
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `What to Do After Filing Your Louisiana LLC`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -160,12 +155,12 @@ export const howToGuide = [
     type: `header`,
     content: `Detailed Information for Your Louisiana LLC`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `You’ll find plenty more insight and guidance on the other pages of this guide, including:`,
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `arrow-link`,
@@ -225,7 +220,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Search for the Perfect Louisiana LLC Name and Register It with the Secretary of State `,
     size: 2,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -236,7 +231,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Conduct a Business Entity Search with the Louisiana Secretary of State`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -246,7 +241,7 @@ export const namingYourBusiness = [
   {
     type: `text`,
     content: `If the business name is already used, that means it’s not available and you won’t be able to register it. Try searching for a different business name instead.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `arrow-link`,
@@ -254,13 +249,13 @@ export const namingYourBusiness = [
       text: `Louisiana Secretary of State business search tool`,
       url: `https://coraweb.sos.la.gov/commercialsearch/commercialsearch.aspx`,
     },
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `LA Secretary of State Rules for Naming Your LLC`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -298,7 +293,7 @@ export const namingYourBusiness = [
              `The singular, plural or possessive forms of a word`, 
              `Abbreviations, punctuation, symbols, fonts, typefaces, etc.`],
     },
-    marginBottom: 32,
+    marginBottom: 40,
     color: color.babyblue3,
   },
   {
@@ -340,7 +335,7 @@ export const namingYourBusiness = [
   {
     type: `header`,
     content: `Louisiana LLC Trade Names or DBAs`,
-    size: 4,
+    size: 3,
     marginBottom: 32,
   },
   {
@@ -351,7 +346,7 @@ export const namingYourBusiness = [
   {
     type: `text`,
     content: `For example, your LLC might be called Louisiana Parrish Projects Holding Company LLC and you have a property development chain called Mardi Gras Apartments. You should file a trade name to let the Louisiana Secretary of State know. `,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -365,34 +360,34 @@ export const namingYourBusiness = [
   {
     type: `header`,
     content: `Register Your Business Name with the Louisiana Secretary of State`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Once you’ve completed a Louisiana business entity search, checked availability, followed the naming rules and decided whether you need a trade name, you can register your LA LLC name. There are a couple of ways to do this:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`<p>If you don’t want to form your Louisiana LLC right now, you can reserve the business name with the Louisiana Secretary of State. You will need to complete an application for reservation and file it with the LA SOS. You do not need to reserve a name if you are forming your business right away.</p></br>`,
-             `<p>If you’re ready to start your Louisiana LLC, you can formally file your Articles of Organization with the Louisiana SOS, or <a href="/form-order-now.php?entityType=LLC&entityState=LA/">let Incfile take care of it for you</a>.</p>`],
+      list: [`If you don’t want to form your Louisiana LLC right now, you can reserve the business name with the Louisiana Secretary of State. You will need to complete an application for reservation and file it with the LA SOS. You do not need to reserve a name if you are forming your business right away.`,
+             `If you’re ready to start your Louisiana LLC, you can formally file your Articles of Organization with the Louisiana SOS, or <a href="/form-order-now.php?entityType=LLC&entityState=LA/">let Incfile take care of it for you</a>.`],
     },
-    marginBottom: 32,
+    marginBottom: 40,
     color: color.purple3,
   },
   {
     type: `header`,
     content: `FAQs on Naming Your Louisiana LLC`,
-    size: 4,
-    marginBottom: 24,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `You might find the following answers useful.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `accordion`,
@@ -412,13 +407,13 @@ export const namingYourBusiness = [
         },
       ],
     },
-    marginBottom: 32,
+    marginBottom: 48,
   },
   {
     type: `header`,
     content: `Useful Resources for Naming Your Louisiana LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -428,13 +423,13 @@ export const namingYourBusiness = [
   {
     type: `header`,
     content: `Trademarks and Service Marks`,
-    size: 3,
+    size: 4,
     marginBottom: 16,
   },
   {
     type: `text`,
     content: `You must be careful that your Louisiana LLC name does not infringe on the trademark or service mark of another business. The easiest way to make sure your proposed business name does not infringe is to carry out a trademark search through Incfile. If it doesn’t infringe, you can even register it as a trademark yourself.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -443,12 +438,12 @@ export const namingYourBusiness = [
       url: `/trademark-name-search/`,
     },
     theme: `primary48`,
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `Find the Perfect Name for Your Louisiana LLC`,
-    size: 3,
+    size: 4,
     marginBottom: 16,
   },
   {
@@ -483,7 +478,7 @@ export const registeredAgent = [
     type: `header`,
     content: `Louisiana Registered Agents and Your LLC`,
     size: 2,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -499,12 +494,12 @@ export const registeredAgent = [
     type: `header`,
     content: `Rules for Louisiana Registered Agents`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `There are certain rules that you must follow when you’re appointing a Louisiana Registered Agent service for your business. They are:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -527,12 +522,12 @@ export const registeredAgent = [
     type: `header`,
     content: `What to Expect from a Louisiana Registered Agent Service`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `What can you expect from your Louisiana Registered Agent? Their main function is to accept official documents and correspondence from the LA Secretary of State. This includes:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -543,8 +538,8 @@ export const registeredAgent = [
              `Official Louisiana state and federal government correspondence and notifications`,
              `Tax forms and requests to complete permits, company filings and reports`],
     },
-    marginBottom: 24,
-    color: color.red3,
+    marginBottom: 40,
+    color: color.purple3,
     curve: true,
     curveColor: color.blue1,
   },
@@ -552,7 +547,7 @@ export const registeredAgent = [
     type: `header`,
     content: `The Incfile Registered Agent Service for Louisiana LLCs`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -567,7 +562,7 @@ export const registeredAgent = [
   {
     type: `text`,
     content: `Here’s what you need to know about Incfile’s LA Registered Agent service:`,
-    marginBottom: 16,
+    marginBottom: 24,
   }, 
   {
     type: `list-dot`,
@@ -594,45 +589,45 @@ export const registeredAgent = [
     type: `header`,
     content: `How to Appoint a Louisiana Registered Agent for Your LLC`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `You can appoint a Registered Agent when you first incorporate your Louisiana LLC or at any point after that. Here’s how to go about it.`,
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `Assign Your Louisiana Registered Agent When You Form Your LA LLC`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Your business needs to have a Louisiana Registered Agent Service as soon as it’s formed. You can achieve this through one of the following methods.`,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `File Articles of Organization with the Louisiana Secretary of State`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `You will need to include details of your Registered Agent in your Articles of Organization. This is the form that you file with the LA Secretary of State to formally create your business.`,
-    marginBottom: 24,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `Incorporate Through Incfile and Get a Free Louisiana Registered Agent `,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `When you incorporate through us, we complete and file your Articles of Organization based on the information you’ve provided. Additionally, we give you a free Louisiana Registered Agent service for the first year, and we’ll include details of your LA Registered Agent in the form that we file.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -641,24 +636,24 @@ export const registeredAgent = [
       url: `/form-order-now.php?entityType=LLC&entityState=LA`,
     },
     theme: `primary48`,
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `Change Your Louisiana Registered Agent After Your LLC Is Formed`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `You can also change your LA Registered Agent service after you’ve formed your LLC. There are a couple of ways to achieve this.`,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `Choose a Registered Agent Service and File Form Notice of Change of Registered Office and/or Change of Registered Agent with the Louisiana Secretary of State.`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -668,13 +663,13 @@ export const registeredAgent = [
   {
     type: `header`,
     content: `Sign Up for Incfile’s Louisiana Registered Agent Service and We’ll File the Change on Your Behalf`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `When you choose to use our LA Registered Agent service, we take care of all the form filling for you. We’ll collect important information about your business, complete form on your behalf and send it to the Louisiana Secretary of State. We’ll let you know once we officially become your Registered Agent.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -689,7 +684,7 @@ export const registeredAgent = [
     type: `header`,
     content: `Louisiana Registered Agent Search`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -705,12 +700,12 @@ export const registeredAgent = [
     type: `header`,
     content: `Issues with Not Having a Louisiana Registered Agent`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `What happens if you choose not to assign or provide details of a Registered Agent to the Louisiana Secretary of State? There are several possible ramifications, including:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -732,7 +727,7 @@ export const registeredAgent = [
   {
     type: `text`,
     content: `If you have an address in Louisiana, you can choose to be the Registered Agent for your LLC. We don’t recommend this approach as there can be some drawbacks:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -750,7 +745,7 @@ export const registeredAgent = [
       type: `header`,
       content: `FAQs About Louisiana Registered Agents`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
   },
   {
     type: `accordion`,
@@ -780,7 +775,7 @@ export const registeredAgent = [
     type: `header`,
     content: `Useful Resources for Louisiana Registered Agent Services`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `list-dot`,
@@ -799,7 +794,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Louisiana Business Licenses, Fees and Filing Requirements`,
     size: 2,
-    marginBottom: 24,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -815,7 +810,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Louisiana LLC Formation Filing and Fees `,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -823,7 +818,7 @@ export const feesAndRequirments = [
     marginBottom: 32,
   },
   {
-    type: `table`,
+    type: `table-simple`,
     content: {
       headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
       rows: [[`$105`, `20 Business Days`, `8 Business Days`]],
@@ -868,12 +863,12 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Getting an Employer Identification Number for Your LA LLC`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Every Louisiana LLC should have a unique employer identification number (EIN). These are provided by the Internal Revenue Service, and you use them when filing taxes, opening a business bank account and paying employees. You can get one yourself at no cost from the IRS or have Incfile obtain one on your behalf.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -888,7 +883,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Certificate of Authority to Operate Outside Louisiana`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -908,7 +903,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Louisiana LLC Annual Report and Fees`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -959,12 +954,12 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Louisiana Business Licenses and Permits`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Your Louisiana LLC may need certain licenses and permits to comply with specific requirements. These business permits and licenses might be issued by Louisiana, regional or federal organizations. Some of the associated fees only need to be paid once, while others have ongoing charges.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -1011,8 +1006,8 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `An Operating Agreement for Your Louisiana LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1022,29 +1017,29 @@ export const feesAndRequirments = [
   {
     type: `text`,
     content: `An Operating Agreement is extremely useful for several reasons (<a href="/research-topics/llc-info/the-llc-operating-agreement/">learn about them here</a>). If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Louisiana business. You can choose to make changes to the template based on your unique requirements. `,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `Ad Hoc Louisiana Fees or Requirements for Your LA LLC`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `There are several other fees or requirements that you may need to meet during the life of your Louisiana LLC. These ad hoc fees will only be payable in specific circumstances, which we’ve listed below.`,
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `To Obtain a Fictitious/DBA Name`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `If you want your LA business to trade under a different name, you can file a form with the Louisiana Secretary of State. You will need to pay a Louisiana filing fee. Incfile can file this form on your behalf.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -1058,13 +1053,13 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `To Change the Louisiana Registered Agent`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Your Louisiana LLC needs a Registered Agent, which must be appointed when you first incorporate your LLC. You can also switch to a new LA Registered Agent later. Incfile provides a complete Louisiana Registered Agent service.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -1078,8 +1073,8 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `To Reserve a Name`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1089,13 +1084,13 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `To Amend Certain Facts About Your Louisiana LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Your business formation documents state certain facts about your Louisiana business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with the Louisiana Secretary of State. You can do this yourself or have Incfile complete the filing on your behalf.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -1105,7 +1100,7 @@ export const feesAndRequirments = [
              `Changing the business address of your LLC`,
              `Altering the stated business activities of your Louisiana LLC`],
     },
-    marginBottom: 0,
+    marginBottom: 24,
     color: color.yellow3,
   },
   {
@@ -1120,13 +1115,13 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `To Get a Certificate of Good Standing for Your Louisiana LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Some organizations will request that you prove your Louisiana LLC’s compliance with laws and tax requirements. If you need to prove you have met your commitments, you will need a “Certificate of Good Standing” from the Louisiana Secretary of State. Incfile can obtain a certificate on your behalf.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -1135,7 +1130,7 @@ export const feesAndRequirments = [
       url: `/manage-your-company/certificate-of-good-standing/`,
     },
     theme: `primary48`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `text`,
@@ -1151,7 +1146,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `FAQs About Louisiana LLC Fees`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `accordion`,
@@ -1187,7 +1182,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Business Taxes Payable by Your Louisiana LLC`,
     size: 2,
-    marginBottom: 24,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -1197,18 +1192,18 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `If you want help with your taxes, Incfile provides a complete <a href"/business-accounting/"> Business Tax Filing service</a>.`,
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `How Your Louisiana LLC Will Be Taxed`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `The profits of a Louisiana LLC are not taxed at the business level like those of C Corporations. Instead, taxes for a Louisiana LLC work as follows:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `numeric-list`,
@@ -1232,18 +1227,18 @@ export const businessTaxes = [
         text: `Employees pay federal, state and payroll tax on their earnings.`,
       },
     ],
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `text`,
     content: `Items 1, 2 and 3 are taxed as “pass-through” income for any LLC owners, managers or members who receive profits from the business. Any profits are reported on federal and Louisiana personal tax returns, and that’s where you will pay those taxes.`,
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `Louisiana State Taxes for LLCs`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1254,7 +1249,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Louisiana State Income Tax Payable on LLC Earnings`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1269,18 +1264,18 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `<a href="https://www.revenue.louisiana.gov/IndividualIncomeTax#riit" target="_blank" rel="noopener noreferrer">Get details on the Louisiana state tax here.</a>`,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `Louisiana Sales Taxes on LLC Sales`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the LA Department of Revenue. Louisiana sales tax is collected at the point of purchase. Louisiana sales tax rates do vary depending on the region, county or city where you are located.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -1307,8 +1302,8 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Sales Tax Rates for Your Louisiana LLC`,
-    size: 4,
-    marginBottom: 24,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1319,7 +1314,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Federal Self-Employment and Income Taxes for Your Louisiana LLC`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1329,8 +1324,8 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Louisiana LLC Federal Self-Employment Tax`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1340,7 +1335,7 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -1359,8 +1354,8 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Pay Less Self-Employment Tax by Treating Your Louisiana LLC as an S Corporation`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1370,7 +1365,7 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `You can do this by making an “S Corporation Tax Election” with the IRS using a form known as Form 2553. We can file your Form 2553 with the IRS on your behalf.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -1379,7 +1374,7 @@ export const businessTaxes = [
       url: `/llc-s-corp-election/`,
     },
     theme: `primary48`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `text`,
@@ -1389,8 +1384,8 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Louisiana LLC Federal Income Tax`,
-    size: 4,
-    marginBottom: 24,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1460,13 +1455,13 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `Get more requirements from <a href="http://www.laworks.net/" target="_blank" rel="noopener noreferrer"> the Louisiana Workforce Commission website.</a>`,
-    marginBottom: 24,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `Other Taxes and Duties for Your Louisiana LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1476,13 +1471,13 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Estimated Taxes for Your Louisiana LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Most Louisiana LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -1493,7 +1488,7 @@ export const businessTaxes = [
              `Louisiana state tax`],
     },
     marginBottom: 24,
-    color: color.red3,
+    color: color.green3,
   },
   {
     type: `text`,

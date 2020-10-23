@@ -78,7 +78,7 @@ const FranchiseBusiness = () => (
                             In exchange for a franchise fee and royalties, they will provide you with support, training,
                             stock, expertise and marketing to launch your franchise quickly.
                         </Paragraph>
-                        <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
+                        <Paragraph big style={{fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
                             In this guide we’ll explore everything you need to do to set up your franchise business and
                             maximize your chances for success. We’ll cover:
                         </Paragraph>
@@ -166,7 +166,7 @@ const FranchiseBusiness = () => (
                             Understanding the World of the Franchise Business
                         </Heading>
 
-                        <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
+                        <Paragraph big style={{fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
                             Key Franchise Business Background Data and Statistics
                         </Paragraph>
 

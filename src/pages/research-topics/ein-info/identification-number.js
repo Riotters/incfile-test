@@ -20,7 +20,7 @@ import { about, related } from "../../../static/research-topics/ein-info/identif
 
 const HelpCenter = () => (
   <Layout>
-    <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
+    <SEO title="Resources about Employer Identification Numbers | Incfile" description="Find information and instructions for getting and managing the EIN number for your business. Read more here." />
     <Top imageName="mrs-bulb-help-center-article" imageAlt="Mrs Bulb and with checklist" ovalColor="green">
       <h1>{top.header}</h1>
       <p>{top.text}</p>

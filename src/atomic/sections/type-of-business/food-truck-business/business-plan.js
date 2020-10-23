@@ -68,7 +68,7 @@ const BusinessPlan = () => (
         <Container>
             <BusinessOwnerResponsibilities>
                 <TextCenterLayout headline="The Food Truck Business Plan" text="You need to define how you’re going to run your food truck business, market yourself, get sales, make a profit and grow. This can only come about by creating a watertight food truck business plan. It will help you get your thinking in order and show your commitment to your new venture." />
-                <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
+                <Paragraph big style={{fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
                     You will also need to look at financial projections for your food truck business.
                 </Paragraph>
 

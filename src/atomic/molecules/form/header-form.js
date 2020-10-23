@@ -23,7 +23,8 @@ const HeadingWrapper = styled(Heading)`
     padding-left: 27px;
     font-size: 20px;
     line-height: 24px;
-    font-family: Avenir-Heavy;
+    font-family: Avenir;
+    font-weight: 900;
 `;
 
 export default HeaderForm;

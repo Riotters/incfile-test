@@ -148,7 +148,7 @@ state law. The name must include one of the following terms or its abbreviation:
             <Paragraph big>
             The board of directors or the shareholders may adopt, amend, or repeal bylaws, unless the articles of incorporation or the bylaws reserve this right to the shareholders. At its initial meeting, the board of directors should adopt corporate bylaws, and then keep them updated as time goes on.
             </Paragraph>
-            <Paragraph big style={{ fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
             Bylaws normally address:
             </Paragraph>
 

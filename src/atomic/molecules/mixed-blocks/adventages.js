@@ -43,7 +43,8 @@ const Circle = styled.span`
   ${(props) => props.position && props.position === "center" && "left: calc(50% - 24px);"}
 
   span {
-    font-family: Avenir-Heavy, sans-serif;
+    font-family: Avenir, sans-serif;
+    font-weight: 900;
     color: white;
     font-size: 16px;
     line-height: 24px;
@@ -65,7 +66,8 @@ const Circle = styled.span`
 `;
 
 const AdeventageLink = styled(Link)`
-  font-family: Avenir-Heavy, sans-serif;
+  font-family: Avenir, sans-serif;
+  font-weight: 900;
   margin-top: 24px;
   display: flex;
   align-items: center;

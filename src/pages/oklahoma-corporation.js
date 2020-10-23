@@ -167,7 +167,7 @@ const AlaskaCorporation = () => (
             <Paragraph big>
             Bylaws lay out the corporation’s basic managerial and legal operating principles that manage their business and affairs. An Oklahoma corporation must keep a copy of its bylaws at its principal executive office, but is not required to file them with the state. At its initial meeting, the incorporators, initial directors, or the board of directors should-prior to any payment of stock to the corporation-adopt corporate bylaws, and then keep them updated as time goes on.
             </Paragraph>
-            <Paragraph big style={{ fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
             The board of directors of a corporation may adopt, amend, or repeal bylaws, unless the articles reserve this right to the shareholders. Bylaws normally address:
             </Paragraph>
 
@@ -210,7 +210,7 @@ const AlaskaCorporation = () => (
             Oklahoma corporations must file a report with the Oklahoma Tax Commission each year either between July 1 and August 31 or by the corporation’s income tax return deadline, depending on the corporation’s choice.
             </Paragraph>
 
-            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
             This report must show:
             </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>

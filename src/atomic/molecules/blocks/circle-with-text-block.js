@@ -86,7 +86,8 @@ const Symbol = styled.div`
 `;
 
 const TextBox = styled.div`
-    font-family: Avenir-Heavy, sans-serif;
+    font-family: Avenir, sans-serif;
+    font-weight: 900;
     font-size: 20px;
     color: #1d1d1d;
     padding-right: 48px;

@@ -1,5 +1,5 @@
 import React from "react";
-import styled from 'styled-components';
+import styled from "styled-components";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Buttonsbox from "../atomic/atoms/boxes/top-buttons-box";
@@ -18,77 +18,67 @@ import Rocket from "../atomic/sections/review-entity-types/c-corporation/rocket"
 import Faq from "../atomic/sections/review-entity-types/s-corporation/faq";
 import Articles from "../components/partials/sections/articles";
 import { ThankYouContent } from "../components/hubspot/thank-you-modal";
-import HSFormModal from '../components/hubspot/standard-post-form-modal';
+import HSFormModal from "../components/hubspot/standard-post-form-modal";
 
 //Texts
 import { top, about, adventages, disadventages, differences, requirements, rocket, faq, hsForm } from "../static/review-entity-types/s-corporation";
 
 const SCorporation = () => {
-    const [modalVisible, setModalVisible] = React.useState(false);
-    const [formSubmitted, setFormSubmitted] = React.useState(false);
-    const [modalClases, setModalClases] = React.useState(["lightbox-content"]);
-    
-    React.useEffect(() => {
-        if (formSubmitted) {
-            setModalClases(modalClases => [...modalClases, "form-submitted"]);
-        }
-    }, [formSubmitted]);
+  const [modalVisible, setModalVisible] = React.useState(false);
+  const [formSubmitted, setFormSubmitted] = React.useState(false);
+  const [modalClases, setModalClases] = React.useState(["lightbox-content"]);
 
-    const popup = (e) => {
-        e.preventDefault();
-
-        if (!e.target.className.includes("modal-overlay") && !e.target.className.includes("modal-close") &&
-            modalVisible)
-            return;
-
-        setModalVisible(!modalVisible);
-        setFormSubmitted(false);
+  React.useEffect(() => {
+    if (formSubmitted) {
+      setModalClases((modalClases) => [...modalClases, "form-submitted"]);
     }
+  }, [formSubmitted]);
 
-    const postDownload = (formData) => {
-        setModalVisible(modalVisible);
-        setFormSubmitted(true);
-    }
+  const popup = (e) => {
+    e.preventDefault();
 
-    return (
-        <Layout>
-            <SEO title="What is an S Corp? Your Guide to S Corporations | Incfile" description="The S Corp is a business entity that offers significant tax advantages while still preserving your ownership flexibility. Learn if it's right for you." />
-            <Top imageName="mr-bulb-s-corp-calculator-4821" imageAlt="Mrs Bulb and with checklist" ovalColor="purple" textWidth="550">
-                <h1>{top.header}</h1>
-                <p>{top.text}</p>
-                <Buttonsbox>
-                    <Button content={top.button[0]} theme="primary56" arrow />
-                </Buttonsbox>
-                <RatingRow>
-                    <CartBlock />
-                    <RatingBlock />
-                </RatingRow>
-            </Top>
-            <About content={about} />
-            <Adventages content={adventages} />
-            <Disdventages content={disadventages} />
-            <Requirements content={requirements} />
-            <Differences content={differences} />
-            <Rocket content={rocket} />
-            <Faq content={faq} onClick={popup} />
-            <Articles />
+    if (!e.target.className.includes("modal-overlay") && !e.target.className.includes("modal-close") && modalVisible) return;
 
-            <LightBoxModal visible={modalVisible}>
-                <LightBoxContent style={{ pointerEvents: "all" }} class={modalClases.join(" ")} className="modal-overlay">
-                    {!formSubmitted && (
-                        <HSFormModal
-                            hs_form_id={hsForm.hs_form_id}
-                            content={hsForm}
-                            modalExit={popup}
-                            postDownloadAction={postDownload} />
-                    )}
-                    {formSubmitted && (
-                        <ThankYouContent modalExit={popup} />
-                    )}
-                </LightBoxContent>
-            </LightBoxModal>
-        </Layout>
-    );
+    setModalVisible(!modalVisible);
+    setFormSubmitted(false);
+  };
+
+  const postDownload = (formData) => {
+    setModalVisible(modalVisible);
+    setFormSubmitted(true);
+  };
+
+  return (
+    <Layout>
+      <SEO title="What is an S Corp? Your Guide to S Corporations | Incfile" description="The S Corp is a business entity that offers significant tax advantages while still preserving your ownership flexibility. Learn if it's right for you." />
+      <Top imageName="mr-bulb-s-corp-calculator-4821" imageAlt="Mrs Bulb and with checklist" ovalColor="purple" textWidth="550">
+        <h1>{top.header}</h1>
+        <p>{top.text}</p>
+        <Buttonsbox>
+          <Button content={top.button[0]} theme="primary56" arrow />
+        </Buttonsbox>
+        <RatingRow>
+          <CartBlock />
+          <RatingBlock />
+        </RatingRow>
+      </Top>
+      <About content={about} />
+      <Adventages content={adventages} />
+      <Disdventages content={disadventages} />
+      <Requirements content={requirements} />
+      <Differences content={differences} />
+      <Rocket content={rocket} />
+      <Faq content={faq} onClick={popup} />
+      <Articles />
+
+      <LightBoxModal visible={modalVisible}>
+        <LightBoxContent style={{ pointerEvents: "all" }} class={modalClases.join(" ")} className="modal-overlay">
+          {!formSubmitted && <HSFormModal hs_form_id={hsForm.hs_form_id} content={hsForm} modalExit={popup} postDownloadAction={postDownload} />}
+          {formSubmitted && <ThankYouContent modalExit={popup} />}
+        </LightBoxContent>
+      </LightBoxModal>
+    </Layout>
+  );
 };
 
 const LightBoxModal = styled.div`
@@ -107,7 +97,7 @@ const LightBoxModal = styled.div`
 `;
 
 const LightBoxContent = styled.div`
-  transition: height 0.5s, max-width .5s;
+  transition: height 0.5s, max-width 0.5s;
 
   background-color: #fff;
   width: 100%;
@@ -116,16 +106,16 @@ const LightBoxContent = styled.div`
   margin: 0 30px;
   max-height: 100vh;
   overflow-y: auto;
-  
+
   &.form-submitted {
     height: 40vh;
     max-width: 500px;
   }
-  
+
   @media screen and (min-width: 769px) {
-      max-width: 600px;
-        padding-top: 0;
-        overflow-y: visible;
+    max-width: 600px;
+    padding-top: 0;
+    overflow-y: visible;
   }
 `;
 

@@ -30,7 +30,8 @@ const List = styled.div`
 
 const Text = styled.div`
     font-weight: bold;
-    font-family: Avenir-Heavy, sans-serif;
+    font-family: Avenir, sans-serif;
+    font-weight: 900;
     font-size: 20px;
 `;
 

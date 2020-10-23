@@ -6,7 +6,7 @@ export const top = {
   buttons: [
     {
       text: `See detailed pricing`,
-      url: `/form-order-now.php?entityType=LLC&entityState=AZ`,
+      url: `/form-order-now.php?entityType=LLC&entityState=RI`,
     },
   ],
 };
@@ -16,7 +16,7 @@ export const howToGuide = [
     type: `header`,
     content: `How to Start an LLC in Rhode Island`,
     size: 2,
-    marginBottom: 24,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -26,19 +26,12 @@ export const howToGuide = [
   {
     type: `text`,
     content: `For most business owners, the fastest and easiest way to start a business in Rhode Island is by creating a Rhode Island LLC. A limited liability company (LLC) is a type of business entity that’s ideal for startups and small- to medium-sized businesses. You get the advantages and protections of larger Rhode Island corporations, but with much simpler rules and regulations.`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `Briefly, the benefits of starting a Rhode Island LLC include:
-
-    `,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
-      header: ``,
+      header: `Briefly, the benefits of starting a Rhode Island LLC include`,
       list: [`Separating and limiting your personal liability from your business liability and debts`,
              `Quick and simple filing, management, compliance, regulation and administration of your Rhode Island LLC`,
              `Easy tax filing and potential advantages for your tax treatment`],
@@ -51,13 +44,13 @@ export const howToGuide = [
   {
     type: `text`,
     content: `Learn more about the <a href="/limited-liability-company/">benefits of the LLC business structure here</a>.`,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `Six Quick Steps to Forming an LLC in Rhode Island`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -117,7 +110,7 @@ export const howToGuide = [
     type: `header`,
     content: `Review Information From the Rhode Island Secretary of State`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `list-dot`,
@@ -128,13 +121,13 @@ export const howToGuide = [
              `<a href="http://www.tax.ri.gov/" target="_blank" rel="noopener noreferrer">Rhode Island Department of Revenue for taxes</a>`],
     },
     marginBottom: 32,
-    color: color.yellow3,
+    color: color.babyblue3,
   },
   {
     type: `header`,
     content: `Special Types of Rhode Island LLCs`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -145,7 +138,7 @@ export const howToGuide = [
     type: `header`,
     content: `Form a Professional Rhode Island LLC`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -156,19 +149,19 @@ export const howToGuide = [
     type: `header`,
     content: `Form a Foreign LLC in Rhode Island`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `<p>If your business is already operating in another state and expanding to Rhode Island, you’ll need to form a foreign LLC.</p></br>
               <p> More information on Rhode Island <a href="/rhode-island-llc/form-filling-permit-requirements/"> filing and licensing requirements here</a> </p>`,
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `What to Do After Forming Your Rhode Island LLC`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -179,7 +172,7 @@ export const howToGuide = [
     type: `header`,
     content: `Detailed Information for Your Rhode Island LLC`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -245,7 +238,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Search for and Register Your Rhode Island LLC Name`,
     size: 2,
-    marginBottom: 24,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -256,7 +249,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Rhode Island Secretary of State Business Search`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -266,7 +259,7 @@ export const namingYourBusiness = [
   {
     type: `text`,
     content: `If the business name is already used, that means it’s not available and you won’t be able to register it. Try searching for a different business name instead.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `arrow-link`,
@@ -280,7 +273,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Rhode Island SoS Rules for Naming LLCs`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -360,7 +353,7 @@ export const namingYourBusiness = [
   {
     type: `header`,
     content: `Fictitious Names for Rhode Island LLCs`,
-    size: 4,
+    size: 3,
     marginBottom: 32,
   },
   {
@@ -371,7 +364,7 @@ export const namingYourBusiness = [
   {
     type: `text`,
     content: `For example, your LLC might be called Rhode Island Textile Mills Holding Company LLC and you have a brand called Cotton Concepts. You should file a fictitious name form to let the Rhode Island Secretary of State know. In Rhode Island, you do that through a Fictitious Business Name Statement form, or you can have Incfile do it on your behalf through our Assumed Business Name service.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -385,35 +378,35 @@ export const namingYourBusiness = [
   {
     type: `header`,
     content: `Register Your Business Name with the Rhode Island Secretary of State`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Once you’ve searched for your Rhode Island business name, checked availability, followed the naming rules and decided whether you need a fictitious name, you can register your RI LLC name. There are a couple of ways to do this.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`<p>If you don’t want to form your LLC right now, you can reserve the business name with the Rhode Island Secretary of State through their website. You do not need to reserve a name if you are forming your business right away.</p></br>
+      list: [`If you don’t want to form your LLC right now, you can reserve the business name with the Rhode Island Secretary of State through their website. You do not need to reserve a name if you are forming your business right away.
               <a href="https://www.sos.ri.gov/divisions/business-services" target="_blank" rel="noopener noreferrer" >Rhode Island SOS LLC name reservation form.</a></br>
-              <p>If you’re ready to start your LLC, you can formally file your Articles of Organization with the Rhode Island SOS, or <a href="/form-order-now.php?entityType=LLC&entityState=RI/">let Incfile take care of it for you</a>.</p>`],
+              If you’re ready to start your LLC, you can formally file your Articles of Organization with the Rhode Island SOS, or <a href="/form-order-now.php?entityType=LLC&entityState=RI/">let Incfile take care of it for you</a>.`],
     },
-    marginBottom: 32,
+    marginBottom: 40,
     color: color.purple3,
   },
   {
     type: `header`,
     content: `FAQs on Naming Your Rhode Island LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `You might find the following answers useful.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `accordion`,
@@ -442,8 +435,8 @@ export const namingYourBusiness = [
   {
     type: `header`,
     content: `Useful Resources for Naming Your Rhode Island LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -453,13 +446,13 @@ export const namingYourBusiness = [
   {
     type: `header`,
     content: `Trademarks and Service Marks`,
-    size: 3,
+    size: 4,
     marginBottom: 16,
   },
   {
     type: `text`,
     content: `You must be careful that your Rhode Island LLC name does not infringe on the trademark or service mark of another business. The easiest way to make sure your proposed business name does not infringe is to carry out a trademark search through Incfile. If it doesn’t infringe, you can even register it as a trademark yourself.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -473,13 +466,13 @@ export const namingYourBusiness = [
   {
     type: `header`,
     content: `Find the Perfect Name for Your Rhode Island LLC`,
-    size: 3,
+    size: 4,
     marginBottom: 16,
   },
   {
     type: `text`,
     content: `The perfect business name can be elusive. We have a complete guide to choosing the right business name, but basically, you'll want to choose a name that will:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -509,7 +502,7 @@ export const registeredAgent = [
     type: `header`,
     content: `Rhode Island Registered Agent Services`,
     size: 2,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -519,18 +512,18 @@ export const registeredAgent = [
   {
     type: `text`,
     content: `Your LLC must have a Registered Agent at all times. You can appoint a Registered Agent when you first start your business. You can also replace your existing Registered Agent at a later date, provided there is a smooth transition between the old and new Registered Agent service.`,
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `Rules for Rhode Island Registered Agents`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `There are certain rules that you must follow when you’re appointing a Rhode Island Registered Agent service for your business. They are:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -553,12 +546,12 @@ export const registeredAgent = [
     type: `header`,
     content: `Services Provided by a Rhode Island Registered Agent`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Your Rhode Island Registered Agent carries out several valuable services for your business. They accept official communications and documents from the Secretary of State on your behalf. This may include:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -569,7 +562,7 @@ export const registeredAgent = [
              `Official Rhode Island and federal government documents, form filings and requests for information (including taxes, permits and company filings)`],
     },
     marginBottom: 24,
-    color: color.red3,
+    color: color.purple3,
     curve: true,
     curveColor: color.blue1,
   },
@@ -577,7 +570,7 @@ export const registeredAgent = [
     type: `header`,
     content: `The Incfile Registered Agent Service for Rhode Island LLCs`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -592,7 +585,7 @@ export const registeredAgent = [
   {
     type: `text`,
     content: `Here’s what you need to know about Incfile’s Registered Agent service:`,
-    marginBottom: 16,
+    marginBottom: 24,
   }, 
   {
     type: `list-dot`,
@@ -619,7 +612,7 @@ export const registeredAgent = [
     type: `header`,
     content: `How to Appoint a Rhode Island Registered Agent for Your LLC`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -630,7 +623,7 @@ export const registeredAgent = [
     type: `header`,
     content: `Assign Your Registered Agent When You Form Your RI LLC`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -640,24 +633,24 @@ export const registeredAgent = [
   {
     type: `header`,
     content: `File Articles of Organization with the Rhode Island Secretary of State`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `You will need to include details of your Registered Agent in your Articles of Organization. This is the form that you file with the Secretary of State to formally create your business.`,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Incorporate Through Incfile and Get a Free Rhode Island Registered Agent`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `When you incorporate through us, we complete and file your Articles of Organization based on the information you’ve provided. Additionally, we give you a free South Dakota Registered Agent service for the first year, and we’ll include details of your Registered Agent in the form that we file.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -672,18 +665,18 @@ export const registeredAgent = [
     type: `header`,
     content: `Change Your Registered Agent After Your LLC Is Formed`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `You can also change your Registered Agent service after you’ve formed your LLC. There are a couple of ways to achieve this.`,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `Choose a Registered Agent Service and File a Statement of Change with the Rhode Island Secretary of State`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -693,13 +686,13 @@ export const registeredAgent = [
   {
     type: `header`,
     content: `Sign Up for Incfile’s Rhode Island Registered Agent Service and We’ll File the Change on Your Behalf`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `When you choose to use our RI Registered Agent service, we take care of all the form filling and filing for you. We’ll collect important information about your business, complete form “Statement of Change” on your behalf and send it to the Rhode Island Secretary of State. We’ll let you know once we officially become your Registered Agent.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -714,7 +707,7 @@ export const registeredAgent = [
     type: `header`,
     content: `RI Registered Agent Search`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -730,12 +723,12 @@ export const registeredAgent = [
     type: `header`,
     content: `The Risks When You Don’t Appoint a Rhode Island Registered Agent Service`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `What happens if you choose not to assign or provide details of a Registered Agent to the Rhode Island Secretary of State? There are several possible ramifications, including:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -752,12 +745,12 @@ export const registeredAgent = [
     type: `header`,
     content: `You Can Appoint Yourself as Your Own Rhode Island Registered Agent`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `If you have an address in Rhode Island, you can choose to be the Registered Agent for your LLC. We don’t recommend this approach as there can be some drawbacks:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -775,7 +768,7 @@ export const registeredAgent = [
       type: `header`,
       content: `FAQs About Rhode Island Registered Agents`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
   },
   {
     type: `accordion`,
@@ -805,7 +798,7 @@ export const registeredAgent = [
     type: `header`,
     content: `Useful Resources for Rhode Island Registered Agent Services`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `list-dot`,
@@ -825,7 +818,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Fees and Filing Requirements for Rhode Island LLCs`,
     size: 2,
-    marginBottom: 24,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -841,7 +834,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Rhode Island LLC Incorporation Filing and Fees `,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -849,7 +842,7 @@ export const feesAndRequirments = [
     marginBottom: 32,
   },
   {
-    type: `table`,
+    type: `table-simple`,
     content: {
       headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
       rows: [[`$156`, `5 Business Days`, `1 Business Day`]],
@@ -894,12 +887,12 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Getting an EIN/Tax ID for Your Rhode Island LLC`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Every Rhode Island LLC should have a unique employer identification number (EIN). These are provided by the Internal Revenue Service, and you use them when filing taxes, opening a business bank account and paying employees. You can get one yourself at no cost from the IRS or have Incfile obtain one on your behalf.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -914,12 +907,12 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Foreign Qualification to Operate in a State Outside Rhode Island`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `If you’re expanding your Rhode Island LLC beyond the borders of the state, you will need a Foreign Qualification or Certificate of Authority to operate in another state. These are typically necessary if you have a physical presence, employees or banking in a different state than Rhode Island. Fees and requirements for foreign qualifications depend on each state’s rules. Incfile provides a complete Foreign Qualification service for any state.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -934,7 +927,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Annual Reporting and Fees for Your Rhode Island LLC`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -970,7 +963,7 @@ export const feesAndRequirments = [
   {
     type: `text`,
     content: `Incfile can also complete and file your Rhode Island annual report on your behalf.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -985,12 +978,12 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Rhode Island Business Permits and Licenses`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Some RI LLCs will need certain business licenses and permits from federal, state and regional organizations. These permits and licenses will have associated fees that you should pay on a one-off or regular basis.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -1037,8 +1030,8 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `Create an Operating Agreement for Your Rhode Island LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1048,13 +1041,13 @@ export const feesAndRequirments = [
   {
     type: `text`,
     content: `Rhode Island LLCs aren’t required to have an Operating Agreement, but they are extremely useful for several reasons (<a href="/research-topics/llc-info/the-llc-operating-agreement/">learn about them here</a>).  If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Rhode Island business. You can choose to make changes to the template based on your unique requirements.`,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `Ad Hoc Rhode Island Fees or Requirements for Your RI LLC`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1064,13 +1057,13 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `To Obtain a Fictitious/DBA Name for Your Rhode Island LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `If you want your RI business to trade under a different name, you can file a form with the Rhode Island Department of State. You will need to pay a Rhode Island filing fee. Incfile can file this form on your behalf.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -1084,13 +1077,13 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `To Change the Rhode Island Registered Agent for Your RI LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Your Rhode Island LLC needs a Registered Agent. You need to appoint one when you first incorporate your LLC. You can also switch to a new RI Registered Agent later. Incfile provides a complete Rhode Island Registered Agent service.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -1104,24 +1097,24 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `To Reserve a Name for Your Rhode Island LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `If you don’t want to form your RI business right away, you can reserve a name with the Rhode Island Department of State. You will need to pay a small fee to do this.`,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `To Amend Certain Facts About Your Rhode Island LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Your business formation documents state certain facts about your Rhode Island business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with the Rhode Island Department of State. You can do this yourself or have Incfile complete the filing on your behalf.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -1131,7 +1124,7 @@ export const feesAndRequirments = [
              `Changing the business address of your LLC`,
              `Altering the stated business activities of your Rhode Island LLC`],
     },
-    marginBottom: 0,
+    marginBottom: 24,
     color: color.yellow3,
   },
   {
@@ -1146,13 +1139,13 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `To Get a Certificate of Good Standing`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Some organizations will request that you prove your Rhode Island LLC’s compliance with laws and tax requirements. If you need to prove you have met your commitments, you will need a “Certificate of Good Standing” from the Rhode Island Department of State. Incfile can obtain a certificate on your behalf.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -1161,7 +1154,7 @@ export const feesAndRequirments = [
       url: `/manage-your-company/certificate-of-good-standing/`,
     },
     theme: `primary48`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `text`,
@@ -1177,7 +1170,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `FAQs About Rhode Island LLC Fees`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `accordion`,
@@ -1213,7 +1206,7 @@ export const businessTaxes = [
     type: `header`,
     content: `The Business Taxes Your Rhode Island LLC Will Pay`,
     size: 2,
-    marginBottom: 24,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -1229,12 +1222,12 @@ export const businessTaxes = [
     type: `header`,
     content: `How Your Rhode Island LLC Will Be Taxed`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `The profits of an LLC are not taxed at the business level like those of C Corporations. Instead, taxes for an LLC work as follows:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `numeric-list`,
@@ -1258,7 +1251,7 @@ export const businessTaxes = [
         text: `Employees pay federal, state and payroll tax on their earnings.`,
       },
     ],
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `text`,
@@ -1269,7 +1262,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Business Taxes Payable to the RI Government`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1280,7 +1273,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Rhode Island State Tax on Your LLC Earnings`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1306,12 +1299,12 @@ export const businessTaxes = [
     type: `header`,
     content: `Rhode Island Sales Taxes`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the RI Department of Revenue. Rhode Island sales tax is collected at the point of purchase. Sales tax rates do vary depending on the region, county or city where you are located.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -1320,7 +1313,7 @@ export const businessTaxes = [
       list: [`Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`,
              `Certain services that your Rhode Island business might provide`],
     },
-    marginBottom: 16,
+    marginBottom: 24,
     color: color.blue3,
     curve: true,
     curveColor: color.red1,
@@ -1338,8 +1331,8 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Federal Taxes for Your Rhode Island LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1349,8 +1342,8 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Federal Self-Employment Tax`,
-    size: 4,
-    marginBottom: 24,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1360,7 +1353,7 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -1379,8 +1372,8 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Pay Less Self-Employment Tax by Treating Your Rhode Island LLC as an S Corporation`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1390,7 +1383,7 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `You can do this by making an “S Corporation Tax Election” with the IRS using a form known as Form 2553. We can file your Form 2553 with the IRS on your behalf.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -1399,7 +1392,7 @@ export const businessTaxes = [
       url: `/llc-s-corp-election/`,
     },
     theme: `primary48`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `text`,
@@ -1409,8 +1402,8 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Federal Income Tax`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1426,12 +1419,12 @@ export const businessTaxes = [
     type: `header`,
     content: `Employee and Employer Taxes for Your Rhode Island LLC`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `If you pay employees, there are some slightly different tax implications. Speak to your accountant to get clear guidance for your own unique situation.`,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `header`,
@@ -1485,8 +1478,8 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Other Taxes and Duties for Your Rhode Island LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1496,13 +1489,13 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Estimated Taxes for Your Rhode Island LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Most Rhode Island LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -1513,7 +1506,7 @@ export const businessTaxes = [
              `Rhode Island state tax`],
     },
     marginBottom: 24,
-    color: color.red3,
+    color: color.green3,
   },
   {
     type: `text`,

@@ -127,7 +127,7 @@ const AlaskaCorporation = () => (
             <Paragraph big>
             Corporations should keep a copy of their bylaws at their principal executive office, but they are not required to file those bylaws with the state. At the new corporation’s initial meeting, the incorporators or board of directors must adopt bylaws for the corporation and then keep them updated as time goes on.
             </Paragraph>
-            <Paragraph big style={{ fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
             Bylaws are a critically important document describing the corporation’s basic managerial and legal operating principles regarding such issues as:
             </Paragraph>
 
@@ -173,7 +173,7 @@ const AlaskaCorporation = () => (
             North Dakota corporations must file an annual report with the state Secretary of State each year before August 2 (or before May 16 for foreign corporations), starting with the calendar year after the year of incorporation.
             </Paragraph>
 
-            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
             The annual report must include:
             </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>

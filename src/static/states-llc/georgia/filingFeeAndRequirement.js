@@ -333,7 +333,7 @@ export const filingFeeAndRequirementContent = {
         },
         {
             type: `paragraph`,
-            content: `If you don’t want to form your GA business right away, you can reserve a name with the Georgia Secretary of State. You can do this <a href="https://ecorp.sos.ga.gov/">online</a> for a $25 filing fee, or you can request the form be sent to you by filling out and mailing the <a href="https://sos.ga.gov/corporations/acrobat/applications/Form%20-%20Name%20Reservation.pdf" >Name Reservation Request form</a> with a $35 check or money order ($25 filing fee + $10 paper filing service charge).`,
+            content: `If you don’t want to form your GA business right away, you can reserve a name with the Georgia Secretary of State. You can do this <a href="https://ecorp.sos.ga.gov/"target="_blank" rel="noopener noreferrer">online</a> for a $25 filing fee, or you can request the form be sent to you by filling out and mailing the <a href="https://sos.ga.gov/corporations/acrobat/applications/Form%20-%20Name%20Reservation.pdf"target="_blank" rel="noopener noreferrer" >Name Reservation Request form</a> with a $35 check or money order ($25 filing fee + $10 paper filing service charge).`,
         },
         {
             type: `paragraph`,
@@ -354,7 +354,7 @@ export const filingFeeAndRequirementContent = {
         },
         {
             type: `paragraph`,
-            content: `Over time, you may want to change the name of your LLC — if you do, you need to file Articles of Amendment (<a href="https://sos.ga.gov/corporations/acrobat/applications/Filing%20Template%20-%20Name%20Change%20Amendment%20for%20LLC%20(CD%20115).pdf">Form CD 115</a>) with the Georgia Secretary of State. You can do this yourself either online ($20) or by mail ($20 + $10 paper filing service charge) or have Incfile complete the filing on your behalf.`,
+            content: `Over time, you may want to change the name of your LLC — if you do, you need to file Articles of Amendment (<a href="https://sos.ga.gov/corporations/acrobat/applications/Filing%20Template%20-%20Name%20Change%20Amendment%20for%20LLC%20(CD%20115).pdf"target="_blank" rel="noopener noreferrer">Form CD 115</a>) with the Georgia Secretary of State. You can do this yourself either online ($20) or by mail ($20 + $10 paper filing service charge) or have Incfile complete the filing on your behalf.`,
         },
         {
             type: `paragraph`,
@@ -397,7 +397,7 @@ export const filingFeeAndRequirementContent = {
         },
         {
             type: `paragraph`,
-            content: `Some organizations will request that you prove your Georgia LLC’s compliance with laws and tax requirements. If you need to prove you have met your commitments, you will need a Certificate of Good Standing, called a “Certificate of Existence” in Georgia, from the Georgia Secretary of State. You can <a href="https://ecorp.sos.ga.gov/CertificateOfExistence">request this form online</a> or have Incfile fill out the paperwork for you.`,
+            content: `Some organizations will request that you prove your Georgia LLC’s compliance with laws and tax requirements. If you need to prove you have met your commitments, you will need a Certificate of Good Standing, called a “Certificate of Existence” in Georgia, from the Georgia Secretary of State. You can <a href="https://ecorp.sos.ga.gov/CertificateOfExistence"target="_blank" rel="noopener noreferrer">request this form online</a> or have Incfile fill out the paperwork for you.`,
         },
         {
             type: `box-cta`, 

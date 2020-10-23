@@ -115,7 +115,7 @@ const ValidatingBusinessIdea = () => (
                         of gym, fitness or personal training business you want to run through conducting your own
                         research.
                     </Paragraph>
-                    <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
+                    <Paragraph big style={{fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
                         Not every idea you have will make it through to becoming a gym, fitness or personal training
                         business.
                     </Paragraph>

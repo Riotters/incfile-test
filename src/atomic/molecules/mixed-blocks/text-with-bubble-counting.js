@@ -46,7 +46,8 @@ const Bubbles = styled.div`
 
 const Text = styled.div`
     text-align: center;
-    font-family: Avenir-Heavy, sans-serif;
+    font-family: Avenir, sans-serif;
+    font-weight: 900;
     font-size: 20px;
     color: #1d1d1d;
     max-width: 590px;

@@ -168,7 +168,8 @@ const ContentBox = styled.div`
 `;
 
 const Title = styled.h5`
-    font-family: Avenir-Heavy;
+    font-family: Avenir;
+    font-weight: 900;
     font-size: 20px;
     margin-bottom: 8px;
 `;

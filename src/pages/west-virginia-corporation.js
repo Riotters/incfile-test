@@ -125,7 +125,7 @@ const AlaskaCorporation = () => (
             <Paragraph big>
             A corporation’s bylaws are very important because they lay out the corporation’s basic operating principles and processes. A West Virginia corporation must maintain a copy of its bylaws at its main executive office, but is not required to file them with the state.
             </Paragraph>
-            <Paragraph big style={{ fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
             The incorporators or board of directors should approve the corporation’s bylaws at their first meeting—insuring that they don’t conflict with either state law or the articles of incorporation—and keep them updated as time goes on. The bylaws should, at a minimum, include:
             </Paragraph>
 
@@ -171,7 +171,7 @@ const AlaskaCorporation = () => (
             An annual return must be filed with the West Virginia Tax Commissioner by July 1st of each year.
             </Paragraph>
 
-            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
             The return must include:
             </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>

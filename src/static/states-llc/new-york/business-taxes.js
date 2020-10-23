@@ -89,7 +89,7 @@ export const businessTaxesPageContent = {
         
         {
             type: `paragraph`,
-            content: `<a href=https://www.tax.ny.gov/pit/file/tax_tables.htm"> Get details on the New York state tax here.</a>`,
+            content: `<a href=https://www.tax.ny.gov/pit/file/tax_tables.htm" target="_blank" rel="noopener noreferrer"> Get details on the New York state tax here.</a>`,
         },
 
         {
