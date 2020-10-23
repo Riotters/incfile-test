@@ -6,7 +6,7 @@ export const top = {
   buttons: [
     {
       text: `See detailed pricing`,
-      url: `/form-order-now.php?entityType=LLC&entityState=AZ`,
+      url: `/form-order-now.php?entityType=LLC&entityState=AK`,
     },
   ],
 };
@@ -16,7 +16,7 @@ export const howToGuide = [
     type: `header`,
     content: `How to Start an LLC in Alaska`,
     size: 2,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -26,36 +26,31 @@ export const howToGuide = [
   {
     type: `text`,
     content: `If you want to start your own business in Alaska, one of the best ways to do so is by forming an Alaska LLC. Limited liability companies (LLCs) are a business entity designed for startups and small- and medium-sized businesses. Alaska LLCs give you many of the protections and advantages of larger corporations without all the rules, regulations and compliance issues common to larger business entities.`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `Briefly, the benefits of starting a Alaska LLC include:`,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `list-dot`,
     content: {
-      header: ``,
+      header: `Briefly, the benefits of starting a Alaska LLC include:`,
       list: [`Separating and limiting your personal liability from your business liability and debts`,
              `Quick and simple filing, management, compliance, regulation and administration of your Alaska LLC`,
              `Easy tax filing and potential advantages for your tax treatment`],
     },
-    marginBottom: 48,
-    color: color.blue3,
+    marginBottom: 24,
+    color: color.green3,
     curve: true,
     curveColor: color.red1,
   },
   {
     type: `text`,
     content: `Learn more about the <a href="/limited-liability-company/">benefits of the LLC business structure here</a>.`,
-    marginBottom: 16,
+    marginBottom: 48,
   },
   {
     type: `header`,
     content: `Form an Alaska LLC in Six Quick Steps`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -101,41 +96,41 @@ export const howToGuide = [
                    <li> Details of your Registered Agent </li>
                    <li> Purpose of your business </li>
                    <li> Name of the incorporator </li>
-                   </ul>
+                   </ul></br>
                    <p>You can file your Alaska Articles of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Alaska, but you only need to file your Articles of Organization once.</p></br>
                    <a href="/form-order-now.php?entityType=LLC&entityState=AK/"> Form your LLC now </a>`,
         },
       ],
     },
-    marginBottom: 48,
+    marginBottom: 56,
   },
   {
     type: `header`,
     content: `Review Information from the Alaska Division of Corporations`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `list-dot`,
     content: {
-      header: `The Division of Corporations has plenty of information on forming and running a business in Alaska. Check out additional resources below.`,
+      header: `The Division of Corporations has plenty of information on forming and running a business in Alaska. Check out additional resources below.</br></br>`,
       list: [`<a href="https://www.commerce.alaska.gov/web/cbpl/Corporations.aspx" target="_blank" rel="noopener noreferrer">Alaska Division of Corporations for forming and running your LLC</a>`,
              `<a href="https://labor.alaska.gov/" target="_blank" rel="noopener noreferrer">Alaska Department of Labor for employers and hiring</a>`,
              `<a href="http://tax.alaska.gov/" target="_blank" rel="noopener noreferrer">Alaska Department of Revenue for AK taxes</a>`],
     },
-    marginBottom: 32,
+    marginBottom: 48,
     color: color.yellow3,
   },
   {
     type: `header`,
     content: `Special Types of Alaska LLCs`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `A regular Alaska LLC is suitable for most business needs, but you also have a few other options to incorporate a special type of LLC.`,
-    marginBottom: 32,
+    marginBottom: 48,
   },
   {
     type: `header`,
@@ -146,7 +141,7 @@ export const howToGuide = [
   {
     type: `text`,
     content: `Some states allow certain occupations to form “professional LLCs.” These types of businesses typically have special requirements and licensing. Alaska does not recognize or allow for the formation of professional LLCs.`,
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `header`,
@@ -158,24 +153,24 @@ export const howToGuide = [
     type: `text`,
     content: `<p>If your business is already operating in another state and expanding to Alaska, you’ll need to form a foreign LLC.</p></br>
               <p> More information on Alaska <a href="/alaska-llc/form-filling-permit-requirements/"> filing and licensing requirements here</a> </p>`,
-    marginBottom: 32,
+    marginBottom: 56,
   },
   {
     type: `header`,
     content: `What to Do After Forming Your Alaska LLC`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Want to know your next steps after creating a new LLC in Alaska? We’ve got you covered. <a href="/after-forming-llc/"> Here’s our guide</a> to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more.`,
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `Other Information in This Guide`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -241,7 +236,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Register Your LLC Name with the Alaska Division of Corporations`,
     size: 2,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -252,7 +247,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Alaska Business Search`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -262,7 +257,7 @@ export const namingYourBusiness = [
   {
     type: `text`,
     content: `If your chosen business name is already being used, that means you won’t be able to register it. Try searching for a different business name instead.`,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `arrow-link`,
@@ -270,13 +265,13 @@ export const namingYourBusiness = [
       text: `Alaska Division of Corporations business search tool`,
       url: `https://www.commerce.alaska.gov/cbp/main/search/entities`,
     },
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `Alaska Division of Corporations Rules for Naming Your LLC`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -287,7 +282,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Standard LLC Naming Rules`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -368,7 +363,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Specific Rules for Naming LLCs in Alaska`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -383,7 +378,7 @@ export const namingYourBusiness = [
              `Entity names that mislead regarding corporate purpose are not allowed. For example: An entity’s whose true purpose is clothing tailoring/design could not use the word “construction” in its name since the word “construction” misleads and implies the purpose of the entity is construction contracting.`,
              `A business name may not contain a word with professional licensing restrictions, such as “Engineer,” unless the business has the appropriate professional license. Vulgar names may be in violation of local law or other agency (e.g., banking) requirements.`],
     },
-    marginBottom: 48,
+    marginBottom: 40,
     color: color.green3,
   },
   {
@@ -397,7 +392,7 @@ export const namingYourBusiness = [
   {
     type: `header`,
     content: `Alaska LLC Assumed Names and “Doing Business As” (DBA) Names`,
-    size: 4,
+    size: 3,
     marginBottom: 32,
   },
   {
@@ -422,30 +417,30 @@ export const namingYourBusiness = [
   {
     type: `header`,
     content: `Business Name Registration for Your Alaska LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Once you’ve searched for your Alaska business name, checked availability, followed the naming rules and decided whether you need a fictitious name, you can register your AK LLC name. There are a couple of ways to do this.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`<p>If you don’t want to form your LLC right now, you can reserve the business name with the Alaska Division of Corporations. You will need to complete a Business Name Registration form and file it with the AK DOC. You do not need to reserve a name if you are forming your business right away.</p></br>
+      list: [`If you don’t want to form your LLC right now, you can reserve the business name with the Alaska Division of Corporations. You will need to complete a Business Name Registration form and file it with the AK DOC. You do not need to reserve a name if you are forming your business right away.</br>
               <a href="https://www.commerce.alaska.gov/web/cbpl/Corporations/ReservingRegisteringBusinessName.aspx" target="_blank" rel="noopener noreferrer">Alaska DOC LLC name reservation form</a>`,
-             `<p>If you’re ready to start your LLC, you can formally file your Certificate of Formation with the Alaska DOC, or <a href="/form-order-now.php?entityType=LLC&entityState=AK/">let Incfile take care of it for you</a>.</p>`],
+             `If you’re ready to start your LLC, you can formally file your Certificate of Formation with the Alaska DOC, or <a href="/form-order-now.php?entityType=LLC&entityState=AK/">let Incfile take care of it for you</a>.`],
     },
-    marginBottom: 32,
+    marginBottom: 40,
     color: color.purple3,
   },
   {
     type: `header`,
     content: `FAQs on Naming Your Alaska LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -479,8 +474,8 @@ export const namingYourBusiness = [
   {
     type: `header`,
     content: `Additional Resources for Naming Your Alaska LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -490,7 +485,7 @@ export const namingYourBusiness = [
   {
     type: `header`,
     content: `Trademarks and Service Marks`,
-    size: 3,
+    size: 4,
     marginBottom: 16,
   },
   {
@@ -510,7 +505,7 @@ export const namingYourBusiness = [
   {
     type: `header`,
     content: `Find the Perfect Name for Your Alaska LLC`,
-    size: 3,
+    size: 4,
     marginBottom: 16,
   },
   {
@@ -546,7 +541,7 @@ export const registeredAgent = [
     type: `header`,
     content: `Registered Agents and Your Alaska LLC`,
     size: 2,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -562,12 +557,12 @@ export const registeredAgent = [
     type: `header`,
     content: `What the Alaska Division of Corporations Says About Registered Agents`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Here’s some important information from the Alaska Division of Corporations on Registered Agent services.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `text`,
@@ -588,7 +583,7 @@ export const registeredAgent = [
     type: `header`,
     content: `Rules for Alaska Registered Agents`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -616,7 +611,7 @@ export const registeredAgent = [
     type: `header`,
     content: `Services Provided by a Alaska Registered Agent`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -631,8 +626,8 @@ export const registeredAgent = [
              `Service of process documents (for example, if your Alaska LLC has legal proceedings issued against it)`, 
              `Official Alaska and federal government documents, form filings and requests for information (including taxes, permits and company filings)`],
     },
-    marginBottom: 24,
-    color: color.red3,
+    marginBottom: 32,
+    color: color.babyblue3,
     curve: true,
     curveColor: color.blue1,
   },
@@ -640,7 +635,7 @@ export const registeredAgent = [
     type: `header`,
     content: `The Incfile Registered Agent Service for Alaska LLCs`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -683,7 +678,7 @@ export const registeredAgent = [
     type: `header`,
     content: `Appointing a Registered Agent Service for Your Alaska LLC`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -694,12 +689,12 @@ export const registeredAgent = [
     type: `header`,
     content: `Assign Your Alaska Registered Agent When You Form Your LLC`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Your business needs to have a Alaska Registered Agent Service as soon as it’s formed. You can achieve this through one of the following methods.`,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `header`,
@@ -736,18 +731,18 @@ export const registeredAgent = [
     type: `header`,
     content: `Change Your Registered Agent After Your LLC Is Formed`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `You can also change your Registered Agent service after you’ve formed your LLC. There are a couple of ways to achieve this.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `header`,
     content: `Choose a Registered Agent Service and File Form Statement of Change of Registered Office or Registered Agent, or Both with the Alaska Division of Corporations`,
     size: 4,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `text`,
@@ -758,7 +753,7 @@ export const registeredAgent = [
     type: `header`,
     content: `Sign Up for Incfile’s Alaska Registered Agent Service and We’ll File the Change on Your Behalf`,
     size: 4,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `text`,
@@ -778,7 +773,7 @@ export const registeredAgent = [
     type: `header`,
     content: `Alaska Registered Agent Search`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -794,7 +789,7 @@ export const registeredAgent = [
     type: `header`,
     content: `Issues with Not Having an Alaska Registered Agent`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -816,7 +811,7 @@ export const registeredAgent = [
     type: `header`,
     content: `You Can Appoint Yourself as Your Own Alaska Registered Agent`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -839,7 +834,7 @@ export const registeredAgent = [
       type: `header`,
       content: `FAQs About Alaska Registered Agents`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
   },
   {
     type: `accordion`,
@@ -889,7 +884,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `The Fees and Filing Requirements for Your Alaska LLC`,
     size: 2,
-    marginBottom: 24,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -905,7 +900,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Initial Filing and Fees for Forming an LLC in Alaska`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -913,7 +908,7 @@ export const feesAndRequirments = [
     marginBottom: 32,
   },
   {
-    type: `table`,
+    type: `table-simple`,
     content: {
       headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
       rows: [[`$250`, `5 Business Days`, `1 Business Day`]],
@@ -938,7 +933,7 @@ export const feesAndRequirments = [
   {
     type: `text`,
     content: `When you form your LLC through Incfile, we automatically forward this fee to the Alaska Division of Corporations when we file your incorporation paperwork.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `text`,
@@ -958,7 +953,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Getting an EIN/Tax AK for Your Alaska LLC`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -978,7 +973,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Foreign Qualification to Operate in a State Outside Alaska`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -998,7 +993,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Annual Reporting and Fees for Your Alaska LLC`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1075,12 +1070,12 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Business Licenses and Permits in Alaska`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Some Alaska LLCs will need certain business licenses and permits from federal, state and regional organizations. These permits and licenses will have associated fees that you should pay on a one-off or regular basis. `,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `list-dot`,
@@ -1104,7 +1099,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `The Incfile Business License Research Package for Your Alaska LLC`,
     size: 4,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `text`,
@@ -1138,8 +1133,8 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `An Operating Agreement for Your Alaska LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1149,13 +1144,13 @@ export const feesAndRequirments = [
   {
     type: `text`,
     content: `Alaska LLCs aren’t required to have an Operating Agreement, but they are extremely useful for several reasons (<a href="/research-topics/llc-info/the-llc-operating-agreement/">learn about them here</a>). If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Alaska business. You can choose to make changes to the template based on your unique requirements.`,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Ad Hoc Alaska Fees or Requirements for Your Alaska LLC`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1165,8 +1160,8 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `To Obtain a Fictitious/DBA Name`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1185,8 +1180,8 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `To Change the Alaska Registered Agent`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1205,8 +1200,8 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `To Reserve a Name`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1216,8 +1211,8 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `To Amend Certain Facts About Your Alaska LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1247,8 +1242,8 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `To Get a Certificate of Good Standing`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1278,7 +1273,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `FAQs About Alaska LLC Requirements`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `accordion`,
@@ -1314,7 +1309,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Business Taxes Payable by Your Alaska LLC`,
     size: 2,
-    marginBottom: 24,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -1330,7 +1325,7 @@ export const businessTaxes = [
     type: `header`,
     content: `How Your Alaska LLC Will Be Taxed`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1367,7 +1362,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Alaska Taxes Payable to the Department of Revenue`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1378,7 +1373,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Your Alaska Sales Taxes`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1411,7 +1406,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Federal Taxes for Your Alaska LLC`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1482,12 +1477,12 @@ export const businessTaxes = [
     type: `header`,
     content: `Employee and Employer Taxes for Your Alaska LLC`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `If you pay employees, there are some slightly different tax implications. Speak to your accountant to get clear guidance for your own unique situation.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `header`,
@@ -1504,7 +1499,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Employer Federal Tax Withholding`,
     size: 4,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `text`,
@@ -1515,7 +1510,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Employees May Need to File Tax Returns`,
     size: 4,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `text`,
@@ -1526,7 +1521,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Employee Insurance and Other Requirements`,
     size: 4,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `text`,
@@ -1542,7 +1537,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Other Taxes and Duties for Your Alaska LLC`,
     size: 4,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `text`,
@@ -1553,12 +1548,12 @@ export const businessTaxes = [
     type: `header`,
     content: `Estimated Taxes for Your Alaska LLC`,
     size: 4,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `text`,
     content: `Most Alaska LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -1568,7 +1563,7 @@ export const businessTaxes = [
              `Federal self-employment tax`],
     },
     marginBottom: 24,
-    color: color.red3,
+    color: color.babyblue3,
   },
   {
     type: `text`,

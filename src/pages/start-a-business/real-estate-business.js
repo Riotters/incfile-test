@@ -85,7 +85,7 @@ const RealEstateBusiness = () => (
                             families and businesses. What’s not to love?
                         </Paragraph>
 
-                        <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
+                        <Paragraph big style={{fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
                             Real Estate business formation guide
                         </Paragraph>
 
@@ -178,7 +178,7 @@ const RealEstateBusiness = () => (
                             Let’s start by exploring the world of real estate and understanding what the opportunities
                             are.
                         </Paragraph>
-                        <Paragraph big style={{marginBottom: "80px", fontFamily: "Avenir-Heavy", color: color.black}}>
+                        <Paragraph big style={{marginBottom: "80px", fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
                             Background Data & Stats about the Real Estate Industry
                         </Paragraph>
 
@@ -226,7 +226,7 @@ const RealEstateBusiness = () => (
                             There are two main ways you can take advantage of real estate business opportunities.
                         </Paragraph>
 
-                        <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
+                        <Paragraph big style={{fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
                             How to Invest in Real Estate
                         </Paragraph>
 
@@ -354,7 +354,7 @@ const RealEstateBusiness = () => (
                         <Heading size={3}>
                             Questions to Ask Before You Get into Real Estate
                         </Heading>
-                        <Paragraph big style={{marginTop: "48px", fontFamily: "Avenir-Heavy", color: color.black}}>
+                        <Paragraph big style={{marginTop: "48px", fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
                             Is Real Estate Entrepreneurship for You?
                         </Paragraph>
 
@@ -372,7 +372,7 @@ const RealEstateBusiness = () => (
                             you have to be prepared for your income to arrive all at once, or sometimes not at all.
                         </Paragraph>
 
-                        <Paragraph big style={{marginTop: "48px", fontFamily: "Avenir-Heavy", color: color.black}}>
+                        <Paragraph big style={{marginTop: "48px", fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
                             What Skills do You Need to be a Successful Real Estate Investor?
                         </Paragraph>
                         <Paragraph big>
@@ -403,7 +403,7 @@ const RealEstateBusiness = () => (
                             width="100%"
                         />
 
-                        <Paragraph big style={{marginTop: "48px", fontFamily: "Avenir-Heavy", color: color.black}}>
+                        <Paragraph big style={{marginTop: "48px", fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
                             What Are the Main Challenges for a Real Estate Business?
                         </Paragraph>
                         <Paragraph big>

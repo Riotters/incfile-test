@@ -128,7 +128,8 @@ const Handyman = () => (
                         </ListWrapper>
 
                         <Paragraph big style={{
-                            fontFamily: "Avenir-Heavy",
+                            fontFamily: "Avenir",
+                            fontWeight: "900",
                             marginTop: "48px",
                             marginBottom: "48px",
                             color: color.black
@@ -156,7 +157,7 @@ const Handyman = () => (
                             </Paragraph>
                         </Colorbox>
 
-                        <Paragraph big style={{fontFamily: "Avenir-Heavy", marginTop: "48px", color: color.black}}>
+                        <Paragraph big style={{fontFamily: "Avenir", fontWeight: "900", marginTop: "48px", color: color.black}}>
                             Read on for some insight into creating your own home handyman business and becoming an
                             entrepreneur. In this guide we will cover:
                         </Paragraph>

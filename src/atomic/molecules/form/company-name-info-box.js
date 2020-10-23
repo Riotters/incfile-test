@@ -21,6 +21,7 @@ const InfoBox = styled.div`
     background-color: ${color.blue1};
     color: white;
     font-size: 16px;
-    font-family: Avenir-Heavy;
+    font-family: Avenir;
+    font-weight: 900;
 `;
 export default CompanyNameInfoBox;

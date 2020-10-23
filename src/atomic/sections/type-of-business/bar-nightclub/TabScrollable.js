@@ -87,7 +87,7 @@ const TabScrollable = ({layout, columns}) => {
                                 return (
                                     <div id={ButtonList[0].tabId}>
                                         <Paragraph big mixed={true}
-                                                   style={{fontFamily: "Avenir-Heavy", color: color.black, marginTop: "140px"}}>
+                                                   style={{fontFamily: "Avenir", fontWeight: "900", color: color.black, marginTop: "140px"}}>
                                             Liquor Licenses, Business Licenses and Permits
                                         </Paragraph>
                                         <Paragraph big mixed={true}>
@@ -102,7 +102,8 @@ const TabScrollable = ({layout, columns}) => {
                                         <CountingTextBoxed number={1}>
                                             <div>
                                                 <Paragraph big style={{
-                                                    fontFamily: "Avenir-Heavy",
+                                                    fontFamily: "Avenir",
+                                                    fontWeight: "900",
                                                     color: color.black,
                                                     marginBottom: 0
                                                 }}>
@@ -124,7 +125,8 @@ const TabScrollable = ({layout, columns}) => {
                                         <CountingTextBoxed number={2}>
                                             <div>
                                                 <Paragraph big style={{
-                                                    fontFamily: "Avenir-Heavy",
+                                                    fontFamily: "Avenir",
+                                                    fontWeight: "900",
                                                     color: color.black,
                                                     marginBottom: 0
                                                 }}>
@@ -150,7 +152,8 @@ const TabScrollable = ({layout, columns}) => {
                                         <CountingTextBoxed number={3}>
                                             <div>
                                                 <Paragraph big style={{
-                                                    fontFamily: "Avenir-Heavy",
+                                                    fontFamily: "Avenir",
+                                                    fontWeight: "900",
                                                     color: color.black,
                                                     marginBottom: 0
                                                 }}>
@@ -166,7 +169,8 @@ const TabScrollable = ({layout, columns}) => {
                                         </CountingTextBoxed>
 
                                         <Paragraph big style={{
-                                            fontFamily: "Avenir-Heavy",
+                                            fontFamily: "Avenir",
+                                            fontWeight: "900",
                                             color: color.black,
                                             marginTop: "48px",
                                             marginBottom: 0
@@ -256,7 +260,8 @@ const TabScrollable = ({layout, columns}) => {
                                         <CountingTextBoxed number={1}>
                                             <div>
                                                 <Paragraph big style={{
-                                                    fontFamily: "Avenir-Heavy",
+                                                    fontFamily: "Avenir",
+                                                    fontWeight: "900",
                                                     color: color.black,
                                                     marginBottom: 0
                                                 }}>
@@ -277,7 +282,8 @@ const TabScrollable = ({layout, columns}) => {
                                         <CountingTextBoxed number={2}>
                                             <div>
                                                 <Paragraph big style={{
-                                                    fontFamily: "Avenir-Heavy",
+                                                    fontFamily: "Avenir",
+                                                    fontWeight: "900",
                                                     color: color.black,
                                                     marginBottom: 0
                                                 }}>
@@ -333,7 +339,7 @@ const TabScrollable = ({layout, columns}) => {
                                         </Paragraph>
 
                                         <Paragraph big mixed={true}
-                                                   style={{fontFamily: "Avenir-Heavy", color: color.black}}>
+                                                   style={{fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
                                             Business Taxes for Bars and Clubs
                                         </Paragraph>
                                         <Paragraph big mixed={true}>

@@ -74,7 +74,8 @@ const Item = styled(Link)`
     transition: all 0.3s ease-in-out;
     
     &:hover{
-        font-family: Avenir-Heavy;
+        font-family: Avenir;
+        font-weight: 900;
         box-shadow: ${shadow.white2};
     }
 `;

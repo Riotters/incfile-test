@@ -11,7 +11,8 @@ const Summary = ({children}) => (
 );
 
 const Header = styled.h3`
-    font-family: Avenir-Heavy;
+    font-family: Avenir;
+    font-weight: 900;
     font-size: 20px;
     text-align: center;
     color: #1d1d1d;

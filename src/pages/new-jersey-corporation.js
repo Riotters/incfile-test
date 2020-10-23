@@ -124,7 +124,7 @@ const AlaskaCorporation = () => (
             <Paragraph big>
             Bylaws lay out the corporation’s basic operating principles from both the managerial and legal perspectives. Corporations should maintain their bylaws at their main executive office, but are not required to file them with the state. The incorporators or board of directors should adopt the corporation’s bylaws at their initial meeting-making sure that they do not conflict with state law or provisions in the certificate of incorporation-and keep them updated.
             </Paragraph>
-            <Paragraph big style={{ fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
             Corporate bylaws should include at least the following:
             </Paragraph>
 
@@ -166,7 +166,7 @@ const AlaskaCorporation = () => (
             <Paragraph big style={{ marginBottom: "48px" }}>
             A New Jersey corporation must file an annual report with the New Jersey Department of Revenue each year outlining the corporation’s overall status.
             </Paragraph>
-            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
               The report must include:
             </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>

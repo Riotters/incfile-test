@@ -125,7 +125,7 @@ const AlaskaCorporation = () => (
             <Paragraph big>
             Bylaws lay out the corporation’s basic managerial and legal operating principles that manage their internal affairs. Rhode Island corporations must keep a copy of their bylaws at their principal executive office, but are not required to file them with the state. At its initial meeting, the incorporators or the board of directors should adopt corporate bylaws, and then keep them updated as time goes on.
             </Paragraph>
-            <Paragraph big style={{ fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
             The board of directors of a corporation may adopt, amend, or repeal bylaws, unless the articles reserve this right to the shareholders. Bylaws normally address:
             </Paragraph>
 
@@ -168,7 +168,7 @@ const AlaskaCorporation = () => (
             Every Rhode Island corporation must file an annual report with the Rhode Island Secretary of State between January 1 and March 1, except for the year of incorporation. 
             </Paragraph>
 
-            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
             This report must be current as of the date the report is executed and include:
             </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>

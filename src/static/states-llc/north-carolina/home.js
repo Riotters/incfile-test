@@ -6,7 +6,7 @@ export const top = {
   buttons: [
     {
       text: `See detailed pricing`,
-      url: `/form-order-now.php?entityType=LLC&entityState=AZ`,
+      url: `/form-order-now.php?entityType=LLC&entityState=NC`,
     },
   ],
 };
@@ -16,7 +16,7 @@ export const howToGuide = [
       type: `header`,
       content: `Starting an LLC in North Carolina`,
       size: 2,
-      marginBottom: 24,
+      marginBottom: 40,
     },
     {
       type: `text`,
@@ -31,17 +31,12 @@ export const howToGuide = [
     {
       type: `text`,
       content: `For most business owners, the fastest and easiest way to start a business in North Carolina is by creating a North Carolina LLC. A Limited Liability Company (LLC) is a type of business entity that’s ideal for startups and small- to medium-sized businesses. You get the advantages and protections of larger North Carolina corporations but with much simpler rules and regulations.`,
-      marginBottom: 16,
-    },
-    {
-      type: `text`,
-      content: `Briefly, the benefits of starting a North Carolina LLC include:`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `list-dot`,
       content: {
-        header: ``,
+        header: `Briefly, the benefits of starting a North Carolina LLC include:`,
         list: [`Separating and limiting your personal liability from your business liability and debts`,
                `Quick and simple filing, management, compliance, regulation and administration of your North Carolina LLC`,
                `Easy tax filing and potential advantages for your tax treatment`],
@@ -54,13 +49,13 @@ export const howToGuide = [
     {
       type: `text`,
       content: `Learn more about the <a href="/limited-liability-company/">benefits of the LLC business structure here</a>.`,
-      marginBottom: 16,
+      marginBottom: 40,
     },
     {
       type: `header`,
       content: `Six Quick Steps to Starting an LLC in NC`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -121,7 +116,7 @@ export const howToGuide = [
       type: `header`,
       content: `Review Information From the North Carolina Secretary of State`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `list-dot`,
@@ -131,14 +126,14 @@ export const howToGuide = [
                `<a href="https://www.labor.nc.gov/" target="_blank" rel="noopener noreferrer">North Carolina Department of Labor for NC employers and hiring</a>`,
                `<a href="https://www.ncdor.gov/" target="_blank" rel="noopener noreferrer">North Carolina Department of Revenue for NC taxes</a>`],
       },
-      marginBottom: 32,
-      color: color.yellow3,
+      marginBottom: 40,
+      color: color.babyblue3,
     },
     {
       type: `header`,
       content: `Special Types of North Carolina LLCs`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -149,7 +144,7 @@ export const howToGuide = [
       type: `header`,
       content: `Professional North Carolina LLCs`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -160,30 +155,30 @@ export const howToGuide = [
       type: `header`,
       content: `Foreign LLCs in North Carolina`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `<p>If your business is already operating in another state and expanding to North Carolina, you’ll need to form a foreign LLC.</p></br>
                 <p> More information on North Carolina <a href="/north-carolina-llc/form-filling-permit-requirements/"> filing and licensing requirements here</a> </p>`,
-      marginBottom: 32,
+      marginBottom: 40,
     },
     {
       type: `header`,
       content: `What to Do After Forming Your North Carolina LLC`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `Want to know your next steps after creating a new LLC in North Carolina? We’ve got you covered. <a href="/after-forming-llc/"> Here’s our guide</a> to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more.`,
-      marginBottom: 32,
+      marginBottom: 40,
     },
     {
       type: `header`,
       content: `Read the Rest of the Guide for More`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -249,7 +244,7 @@ export const howToGuide = [
       type: `header`,
       content: `NC Secretary of State Business Searches & Naming Your LLC`,
       size: 2,
-      marginBottom: 24,
+      marginBottom: 40,
     },
     {
       type: `text`,
@@ -260,7 +255,7 @@ export const howToGuide = [
       type: `header`,
       content: `North Carolina Business Entity Search`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -278,13 +273,13 @@ export const howToGuide = [
         text: `North Carolina Secretary of State business name search tool`,
         url: `https://www.sosnc.gov/search/index/corp/`,
       },
-      marginBottom: 32,
+      marginBottom: 40,
     },
     {
       type: `header`,
       content: `North Carolina SOS Rules for Naming an LLC `,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -364,7 +359,7 @@ export const howToGuide = [
     {
       type: `header`,
       content: `“DBA”/Assumed Business Names for North Carolina LLCs`,
-      size: 4,
+      size: 3,
       marginBottom: 32,
     },
     {
@@ -375,7 +370,7 @@ export const howToGuide = [
     {
       type: `text`,
       content: `For example, your LLC might be called North Carolina Travel Holding Company LLC, and you have a chain called Appalachian Outdoor Adventures. You should file an Assumed Business Name to let the North Carolina Secretary of State know. In North Carolina, you do that through an Assumed Business Name Certificate, or you can have Incfile do it on your behalf through our Assumed Business Name service.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `button`,
@@ -389,8 +384,8 @@ export const howToGuide = [
     {
       type: `header`,
       content: `Register Your Business Name in NC`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -403,19 +398,19 @@ export const howToGuide = [
         header: ``,
         list: [`If you’re ready to start your North Carolina LLC, you can formally file your Articles of Organization with the North Carolina SOS, or <a href="/form-order-now.php?entityType=LLC&entityState=NC/">let Incfile take care of it for you</a>.`],
       },
-      marginBottom: 32,
+      marginBottom: 40,
       color: color.purple3,
     },
     {
       type: `header`,
       content: `FAQs on Naming Your North Carolina LLC`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `You might find the following answers useful.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `accordion`,
@@ -440,8 +435,8 @@ export const howToGuide = [
     {
       type: `header`,
       content: `Other Useful Resources for Naming Your North Carolina LLC`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -451,13 +446,13 @@ export const howToGuide = [
     {
       type: `header`,
       content: `Trademarks and Service Marks`,
-      size: 3,
+      size: 4,
       marginBottom: 16,
     },
     {
       type: `text`,
       content: `You must be careful that your North Carolina LLC name does not infringe on the trademark or service mark of another business. The easiest way to make sure your proposed business name does not infringe is to carry out a trademark search through Incfile. If it doesn’t infringe, you can even register it as a trademark yourself.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `button`,
@@ -471,13 +466,13 @@ export const howToGuide = [
     {
       type: `header`,
       content: `Find the Perfect Name for Your North Carolina LLC`,
-      size: 3,
+      size: 4,
       marginBottom: 16,
     },
     {
       type: `text`,
       content: `The perfect business name can be elusive. We have a complete guide to choosing the right business name, but basically, you'll want to choose a name that will:`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `list-dot`,
@@ -507,7 +502,7 @@ export const howToGuide = [
       type: `header`,
       content: `Registered Agents and Your NC LLC`,
       size: 2,
-      marginBottom: 16,
+      marginBottom: 40,
     },
     {
       type: `text`,
@@ -523,7 +518,7 @@ export const howToGuide = [
       type: `header`,
       content: `What the North Carolina Secretary of State Says About NC Registered Agents`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -533,7 +528,7 @@ export const howToGuide = [
     {
       type: `text`,
       content: `You must identify the business entity’s Registered Agent name. The sole duty of the Registered Agent is to forward to the business entity at its last known address any notice, process, or demand that is served on the Registered Agent.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `list-dot`,
@@ -555,12 +550,12 @@ export const howToGuide = [
       type: `header`,
       content: `NC Registered Agents: The Rules You Need to Follow`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `There are certain rules you must follow when you’re appointing a North Carolina Registered Agent service for your business. They are:`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `list-dot`,
@@ -583,12 +578,12 @@ export const howToGuide = [
       type: `header`,
       content: `What to Expect From a North Carolina Registered Agent Service`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `What can you expect from your North Carolina Registered Agent? Their main function is to accept official documents and correspondence from the NC Secretary of State. This includes:`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `list-dot`,
@@ -599,8 +594,8 @@ export const howToGuide = [
                `Official North Carolina state and federal government correspondence and notifications`,
                `Tax forms and requests to complete permits, company filings and reports`],
       },
-      marginBottom: 24,
-      color: color.red3,
+      marginBottom: 40,
+      color: color.purple3,
       curve: true,
       curveColor: color.blue1,
     },
@@ -608,7 +603,7 @@ export const howToGuide = [
       type: `header`,
       content: `The Incfile Registered Agent Service for North Carolina LLCs`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -623,7 +618,7 @@ export const howToGuide = [
     {
       type: `text`,
       content: `Here’s what the Infile North Carolina Registered Agent service provides for your NC LLC:`,
-      marginBottom: 16,
+      marginBottom: 24,
     }, 
     {
       type: `list-dot`,
@@ -650,7 +645,7 @@ export const howToGuide = [
       type: `header`,
       content: `How to Appoint a North Carolina Registered Agent for Your LLC`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -661,18 +656,18 @@ export const howToGuide = [
       type: `header`,
       content: `Appoint a NC Registered Agent Service When You Create Your North Carolina LLC`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `Your business needs to have a North Carolina Registered Agent Service as soon as it’s formed. You can achieve this through one of the following methods.`,
-      marginBottom: 16,
+      marginBottom: 40,
     },
     {
       type: `header`,
       content: `File Articles of Organization With the North Carolina Secretary of State`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -682,13 +677,13 @@ export const howToGuide = [
     {
       type: `header`,
       content: `Incorporate Through Incfile and Get a Free North Carolina Registered Agent `,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `When you incorporate through us, we complete and file your Articles of Organization based on the information you’ve provided. Additionally, we give you a free North Carolina Registered Agent service for the first year, and we’ll include details of your NC Registered Agent in the form that we file.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `button`,
@@ -697,24 +692,24 @@ export const howToGuide = [
         url: `/form-order-now.php?entityType=LLC&entityState=NC/`,
       },
       theme: `primary48`,
-      marginBottom: 32,
+      marginBottom: 40,
     },
     {
       type: `header`,
       content: `Assign a Different North Carolina Registered Agent Service After Incorporation`,
       size: 3,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `You can also change your NC Registered Agent service after you’ve formed your LLC.`,
-      marginBottom: 16,
+      marginBottom: 32,
     },
     {
       type: `header`,
       content: `Choose a Registered Agent Service and File a Form With the North Carolina Secretary of State`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -724,13 +719,13 @@ export const howToGuide = [
     {
       type: `header`,
       content: `Sign up for Incfile’s North Carolina Registered Agent Service, and We’ll File the Change on Your Behalf`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `When you choose to use our NC Registered Agent service, we take care of all the form filling and filing for you. We’ll collect important information about your business, complete the form on your behalf and send it to the North Carolina Secretary of State. We’ll let you know once we officially become your Registered Agent. `,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `button`,
@@ -745,7 +740,7 @@ export const howToGuide = [
       type: `header`,
       content: `North Carolina Registered Agent Search`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -761,12 +756,12 @@ export const howToGuide = [
       type: `header`,
       content: `The Problems Caused When You Don’t Appoint a North Carolina Registered Agent Service`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `What happens if you choose not to assign or provide details of a Registered Agent to the North Carolina Secretary of State? There are several possible ramifications, including:`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `list-dot`,
@@ -783,12 +778,12 @@ export const howToGuide = [
       type: `header`,
       content: `Acting as Your Own Registered Agent for Your NC LLC`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `If you have an address in North Carolina, you can choose to be the Registered Agent for your LLC. We don’t recommend this approach, as there can be some drawbacks:`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `list-dot`,
@@ -806,7 +801,7 @@ export const howToGuide = [
         type: `header`,
         content: `FAQs About North Carolina Registered Agents`,
         size: 3,
-        marginBottom: 24,
+        marginBottom: 32,
     },
     {
       type: `accordion`,
@@ -836,7 +831,7 @@ export const howToGuide = [
       type: `header`,
       content: `Additional Resources for North Carolina Registered Agent Services`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `list-dot`,
@@ -856,7 +851,7 @@ export const howToGuide = [
       type: `header`,
       content: `The Fees and Filing Requirements for Your North Carolina LLC`,
       size: 2,
-      marginBottom: 24,
+      marginBottom: 40,
     },
     {
       type: `text`,
@@ -872,7 +867,7 @@ export const howToGuide = [
       type: `header`,
       content: `Forming an LLC in NC: Filing and Fees `,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -880,7 +875,7 @@ export const howToGuide = [
       marginBottom: 32,
     },
     {
-      type: `table`,
+      type: `table-simple`,
       content: {
         headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
         rows: [[`$127`, `5 Weeks`, `14 Business Days`]],
@@ -925,12 +920,12 @@ export const howToGuide = [
       type: `header`,
       content: `Getting an EIN/Tax ID for Your North Carolina LLC`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `Every North Carolina LLC should have a unique Employer Identification Number (EIN). These are provided by the Internal Revenue Service, and you use them when filing taxes, opening a business bank account and paying employees. You can get one yourself at no cost from the IRS or have Incfile obtain one on your behalf.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `button`,
@@ -945,7 +940,7 @@ export const howToGuide = [
       type: `header`,
       content: `Certificate of Authority to Operate Outside North Carolina`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -965,7 +960,7 @@ export const howToGuide = [
       type: `header`,
       content: `North Carolina LLC Annual Reporting and Fees`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -1016,12 +1011,12 @@ export const howToGuide = [
       type: `header`,
       content: `North Carolina Business License Applications and Permits`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `Your North Carolina LLC may need certain licenses and permits to comply with specific requirements. These business permits and licenses might be issued by North Carolina, regional or federal organizations. Some of the associated fees only need to be paid once, while others have ongoing charges.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `list-dot`,
@@ -1054,7 +1049,7 @@ export const howToGuide = [
     {
       type: `text`,
       content: `Remember that operating your business without the required licenses can expose you to risks and fines from federal, North Carolina and local governments.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `button`,
@@ -1068,8 +1063,8 @@ export const howToGuide = [
     {
       type: `header`,
       content: `Create an Operating Agreement for Your North Carolina LLC`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -1079,13 +1074,13 @@ export const howToGuide = [
     {
       type: `text`,
       content: `An Operating Agreement is extremely useful for several reasons (<a href="/research-topics/llc-info/the-llc-operating-agreement/">learn about them here</a>). If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your North Carolina business. You can choose to make changes to the template based on your unique requirements. `,
-      marginBottom: 16,
+      marginBottom: 40,
     },
     {
       type: `header`,
       content: `Ad Hoc North Carolina Fees or Requirements for Your NC LLC`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -1095,13 +1090,13 @@ export const howToGuide = [
     {
       type: `header`,
       content: `To Obtain a Fictitious/DBA Name for Your North Carolina LLC`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `If you want your NC business to trade under a different name, you can file a form with the North Carolina Secretary of State. You will need to pay a North Carolina filing fee; Incfile can file this form on your behalf.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `button`,
@@ -1115,13 +1110,13 @@ export const howToGuide = [
     {
       type: `header`,
       content: `To Change the North Carolina Registered Agent for Your NC LLC`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `Your North Carolina LLC needs a Registered Agent, which must be appointed when you first incorporate your LLC. You can also switch to a new NC Registered Agent later. Incfile provides a complete North Carolina Registered Agent service.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `button`,
@@ -1135,13 +1130,13 @@ export const howToGuide = [
     {
       type: `header`,
       content: `To Amend Certain Facts About Your North Carolina LLC`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `Your business formation documents state certain facts about your North Carolina business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with the North Carolina Secretary of State. You can do this yourself or have Incfile complete the filing on your behalf.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `list-dot`,
@@ -1151,7 +1146,7 @@ export const howToGuide = [
                `Changing the business address of your LLC`,
                `Altering the stated business activities of your North Carolina LLC`],
       },
-      marginBottom: 0,
+      marginBottom: 24,
       color: color.yellow3,
     },
     {
@@ -1166,13 +1161,13 @@ export const howToGuide = [
     {
       type: `header`,
       content: `To Get a Certificate of Good Standing`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `Some organizations will request that you prove your North Carolina LLC’s compliance with laws and tax requirements. If you need to prove you have met your commitments, you will need a “Certificate of Good Standing” from the North Carolina Secretary of State. Incfile can obtain a certificate on your behalf.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `button`,
@@ -1181,7 +1176,7 @@ export const howToGuide = [
         url: `/manage-your-company/certificate-of-good-standing/`,
       },
       theme: `primary48`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `text`,
@@ -1197,7 +1192,7 @@ export const howToGuide = [
       type: `header`,
       content: `FAQs About North Carolina LLC Fees`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `accordion`,
@@ -1233,7 +1228,7 @@ export const howToGuide = [
       type: `header`,
       content: `The NC Department of Revenue & Business Taxes for Your LLC `,
       size: 2,
-      marginBottom: 24,
+      marginBottom: 40,
     },
     {
       type: `text`,
@@ -1249,12 +1244,12 @@ export const howToGuide = [
       type: `header`,
       content: `How Your North Carolina LLC Will Be Taxed`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `The profits of a North Carolina LLC are not taxed at the business level like those of C Corporations. Instead, taxes for a North Carolina LLC work as follows:`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `numeric-list`,
@@ -1278,7 +1273,7 @@ export const howToGuide = [
           text: `Employees pay federal, state and payroll tax on their earnings.`,
         },
       ],
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `text`,
@@ -1289,7 +1284,7 @@ export const howToGuide = [
       type: `header`,
       content: `North Carolina Taxes Payable to the NC Department of Revenue`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -1300,7 +1295,7 @@ export const howToGuide = [
       type: `header`,
       content: `North Carolina State Income Tax Payable on LLC Earnings`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -1326,12 +1321,12 @@ export const howToGuide = [
       type: `header`,
       content: `North Carolina Sales and Use Tax`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the NC Department of Revenue. North Carolina sales tax is collected at the point of purchase. North Carolina sales tax rates do vary depending on the region, county or city where you are located.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `list-dot`,
@@ -1358,8 +1353,8 @@ export const howToGuide = [
     {
       type: `header`,
       content: `Sales Tax Rates for Your North Carolina LLC`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -1370,7 +1365,7 @@ export const howToGuide = [
       type: `header`,
       content: `Federal Self-Employment and Income Taxes `,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -1380,8 +1375,8 @@ export const howToGuide = [
     {
       type: `header`,
       content: `Federal Self-Employment Tax for LLCs`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -1391,7 +1386,7 @@ export const howToGuide = [
     {
       type: `text`,
       content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `list-dot`,
@@ -1410,8 +1405,8 @@ export const howToGuide = [
     {
       type: `header`,
       content: `Pay Less Self-Employment Tax by Treating Your North Carolina LLC as an S Corporation`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -1421,7 +1416,7 @@ export const howToGuide = [
     {
       type: `text`,
       content: `You can do this by making an “S Corporation Tax Election” with the IRS using a form known as Form 2553. We can file your Form 2553 with the IRS on your behalf.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `button`,
@@ -1430,7 +1425,7 @@ export const howToGuide = [
         url: `/llc-s-corp-election/`,
       },
       theme: `primary48`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `text`,
@@ -1440,8 +1435,8 @@ export const howToGuide = [
     {
       type: `header`,
       content: `North Carolina LLC Federal Income Tax`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -1457,7 +1452,7 @@ export const howToGuide = [
       type: `header`,
       content: `Employer and Employee Taxes for Your North Carolina LLC`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -1516,8 +1511,8 @@ export const howToGuide = [
     {
       type: `header`,
       content: `Other Taxes and Duties for Your North Carolina LLC`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
@@ -1527,13 +1522,13 @@ export const howToGuide = [
     {
       type: `header`,
       content: `Estimated Taxes for Your North Carolina LLC`,
-      size: 4,
-      marginBottom: 16,
+      size: 3,
+      marginBottom: 32,
     },
     {
       type: `text`,
       content: `Most North Carolina LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make.`,
-      marginBottom: 16,
+      marginBottom: 24,
     },
     {
       type: `list-dot`,
@@ -1544,7 +1539,7 @@ export const howToGuide = [
                `North Carolina state tax`],
       },
       marginBottom: 24,
-      color: color.red3,
+      color: color.purple3,
     },
     {
       type: `text`,

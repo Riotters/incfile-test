@@ -142,7 +142,7 @@ const ValidatingBusinessIdea = () => (
                         business stand out.
                     </Paragraph>
 
-                    <Paragraph big style={{fontFamily: "Avenir-Heavy", marginTop: "48px", color: color.black}}>
+                    <Paragraph big style={{fontFamily: "Avenir", fontWeight: "900", marginTop: "48px", color: color.black}}>
                         These are all great starting points for a home handyman, but you will need to build on them to
                         make the business your own. It’s your unique skills and approach that will really help your
                         business stand out.

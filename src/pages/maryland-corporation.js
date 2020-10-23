@@ -127,7 +127,7 @@ const AlaskaCorporation = () => (
             <Paragraph big>
             Bylaws lay out a corporation’s basic managerial and legal operating principles. The corporation must keep a copy at its principal executive office, but is not required to file them with the state. Nonetheless, they are a critically important document for the corporation.
             </Paragraph>
-            <Paragraph big style={{ fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
             At its initial meeting, the board of directors should adopt corporate bylaws, and then keep them updated as time goes on. The corporation’s board of directors can make, alter, amend, or repeal those bylaws, unless the articles of incorporation reserve this right to the shareholders. Bylaws normally address:
             </Paragraph>
 

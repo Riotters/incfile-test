@@ -150,7 +150,7 @@ export const businessTaxesPageContent = {
         },
         {
             type: `paragraph`,
-            content: `You use the State Taxpayer Identification Number (STIN) as a reference for your business tax licenses, liabilities and credits. You can get a number by submitting a State Tax Registration Application (form CRF-002) online at the <a href="https://gtc.dor.ga.gov/_/">Georgia Tax Center</a>.`,
+            content: `You use the State Taxpayer Identification Number (STIN) as a reference for your business tax licenses, liabilities and credits. You can get a number by submitting a State Tax Registration Application (form CRF-002) online at the <a href="https://gtc.dor.ga.gov/_/"target="_blank" rel="noopener noreferrer">Georgia Tax Center</a>.`,
         },
 
         /////////////////////

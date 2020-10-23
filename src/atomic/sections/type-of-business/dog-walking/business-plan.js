@@ -76,7 +76,7 @@ const BusinessPlan = () => (
                     You need to establish your canine business plan and model now, which is how you will generate sales, provide services and make money. It’s best to get your plans in place now so you can start acquiring customers and generating revenue from day one.
                 </Paragraph>
 
-                <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
+                <Paragraph big style={{fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
                     Think about and predict financial projections for your dog walking
                     or pet sitting business.
                 </Paragraph>

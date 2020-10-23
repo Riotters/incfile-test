@@ -128,7 +128,7 @@ const AlaskaCorporation = () => (
             <Paragraph big>
             At its initial meeting, the incorporators or the board of directors should adopt corporate bylaws, and then keep them updated as time goes on. If no directors have been elected the incorporators may adopt initial bylaws for the corporation. If neither the incorporators nor the board of directors have adopted initial bylaws, the shareholders may do so.
             </Paragraph>
-            <Paragraph big style={{ fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
             The board of directors of a corporation may adopt, amend, or repeal bylaws, unless the articles reserve this right to the shareholders. Bylaws normally address:
             </Paragraph>
 

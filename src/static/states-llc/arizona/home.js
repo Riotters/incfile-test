@@ -16,7 +16,7 @@ export const howToGuide = [
     type: `header`,
     content: `Creating an LLC in Arizona`,
     size: 2,
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -49,23 +49,23 @@ export const howToGuide = [
   {
     type: `text`,
     content: `Learn more about the <a href="/limited-liability-company/">benefits of the LLC business structure here. </a>`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `text`,
     content: `In this guide, we’ll tell you everything you need to know about how to form an LLC in Arizona, including business searches with the Arizona Secretary of State, how to get Arizona business licenses, LLC applications in Arizona, AZ LLC registration, LLC forms, assigning a statutory agent and much more. `,
-    marginBottom: 32,
+    marginBottom: 48,
   },
   {
     type: `header`,
     content: `Six Quick Steps to Form an LLC in Arizona`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `This guide has plenty of information on how to start an LLC in Arizona, but you can break down the basics of creating a business in AZ into just a few simple steps.`,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `accordion`,
@@ -123,7 +123,7 @@ export const howToGuide = [
     type: `header`,
     content: `More Information From the Arizona Corporation Commission`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `list-dot`,
@@ -133,19 +133,19 @@ export const howToGuide = [
              `<a href="https://www.azica.gov/" target="_blank" rel="noopener noreferrer"> Arizona Bureau of Workers' Compensation for AZ employers and hiring</a>`,
              `<a href="https://azdor.gov/transaction-privilege-tax-tpt" target="_blank" rel="noopener noreferrer"> Arizona Department of Taxation for AZ taxes</a>`],
     },
-    marginBottom: 30,
+    marginBottom: 32,
     color: color.blue3,
   },
   {
     type: `header`,
     content: `Special Types of Arizona LLCs`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `A regular Arizona LLC is suitable for most business needs, but you also have a few other options to incorporate a special type of LLC.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `accordion`,
@@ -171,7 +171,7 @@ export const howToGuide = [
     type: `header`,
     content: `What to Do After Forming Your LLC`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -182,7 +182,7 @@ export const howToGuide = [
     type: `header`,
     content: `Learn More About Arizona LLCs a`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -200,7 +200,7 @@ export const howToGuide = [
   {
     type: `text`,
     content: `How to search the Arizona business registry of the AZ Corporation Commission and find the right name. Includes information on naming rules, fictitious names, reserving an Arizona LLC name and more.`,
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `arrow-link`,
@@ -213,7 +213,7 @@ export const howToGuide = [
   {
     type: `text`,
     content: `How to appoint an Arizona Registered Agent to your new LLC or change to a different Registered Agent. Includes information on Registered Agent rules and searching for Arizona Registered Agents.`,
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `arrow-link`,
@@ -226,7 +226,7 @@ export const howToGuide = [
   {
     type: `text`,
     content: `How to understand the various fees you’ll need to pay and the requirements you’ll need to meet for both federal and Arizona rules. Includes details of Employee Identification Numbers (EINs), Arizona and federal business licenses, Arizona annual reports and more.`,
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `arrow-link`,
@@ -248,7 +248,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Arizona Business Entity Searches & Naming Your LLC`,
     size: 2,
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -269,7 +269,7 @@ export const namingYourBusiness = [
   {
     type: `text`,
     content: `If the business name is already used, that means it’s not available and you won’t be able to register it. Try searching for a different business name instead.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `arrow-link`,
@@ -294,7 +294,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Standard LLC Naming Rules`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -366,24 +366,24 @@ export const namingYourBusiness = [
              `Use the term “Olympic” or any terms that are trademarks of the Olympic organization`, 
              `Imply a purpose that it would be illegal for your business to carry out`],
     },
-    marginBottom: 32,
-    color: color.yellow3,
+    marginBottom: 48,
+    color: color.babyblue3,
   },
   {
     type: `header`,
     content: `Specific Business Naming Rules in Arizona`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
-    content: `In addition to the general rules listed above, the Arizona Corporation Commission has some specific business naming rules for your LLC. You will need to follow these rules if you want to name your AZ business appropriately:`,
+    content: `In addition to the general rules listed above, the Arizona Corporation Commission has some specific business naming rules for your LLC. `,
     marginBottom: 32,
   },
   {
     type: `list-dot`,
     content: {
-      header: ``,
+      header: `You will need to follow these rules if you want to name your AZ business appropriately:`,
       list: [`If the LLC name contains any of the following words, prior written approval must be obtained from the Arizona Department of Financial Institutions before registration is allowed: Bank; Banker; Banking; Banc; Banco; Banque; Credit Union; Deposit; Savings Association; Building Association; Savings and Loan Association; Building and Loan Association; Savings Bank; Thrift; Trust; or Trust Company`,
              `Non-professional LLCs shall contain the words “limited liability company” or “limited company” or the abbreviations “L.L.C.”, “L.C.”, “LLC”, or “LC”. If the existing limited liability company name or the fictitious name adopted for use in Arizona does not contain one of those words or an abbreviation of one of those words, then one of those words or an abbreviation of one of those words must be added to it. `, 
              `Non-professional LLCs shall not contain the words “association”, “corporation”, “incorporated”, or an abbreviation of those words`],
@@ -401,9 +401,9 @@ export const namingYourBusiness = [
   },
   {
     type: `header`,
-    content: `Ariona LLC Trade Names/“DBA” Names`,
+    content: `Arizona LLC Trade Names/“DBA” Names`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -428,7 +428,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Register an LLC Business Name in Arizona`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -452,7 +452,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `FAQs on Naming Your Arizona LLC`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -481,7 +481,7 @@ export const namingYourBusiness = [
         },
       ],
     },
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `header`,
@@ -535,7 +535,7 @@ export const namingYourBusiness = [
              `Not be used by another business`],
     },
     marginBottom: 40,
-    color: color.yellow3,
+    color: color.green3,
   },
   {
     type: `arrow-link`,
@@ -552,7 +552,7 @@ export const registeredAgent = [
     type: `header`,
     content: `Arizona Statutory Agents & Your LLC`,
     size: 2,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -573,12 +573,12 @@ export const registeredAgent = [
     type: `header`,
     content: `Arizona LLC Statutory Agent Service Rules`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `There are certain rules that you must follow when you’re appointing an Arizona Statutory Agent service for your business. They are:`,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `list-dot`,
@@ -589,7 +589,7 @@ export const registeredAgent = [
              `The Statutory Agent must have a physical street address in Arizona, not a P.O. Box`,
              `The AZ Statutory Agent must be available in person during normal business hours to sign for any correspondence`],
     },
-    marginBottom: 16,
+    marginBottom: 24,
     color: color.yellow3,
   },
   {
@@ -601,12 +601,12 @@ export const registeredAgent = [
     type: `header`,
     content: `The Purpose of an Arizona Statutory Agent`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Your Arizona Statutory/Registered Agent carries out several valuable services for your business. They accept official communications and documents from the AZ Corporation Commission on your behalf. This may include:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -616,14 +616,14 @@ export const registeredAgent = [
              `Service of process documents (for example, if your Arizona LLC has legal proceedings issued against it)`,
              `Official Arizona and federal government documents, form filings and requests for information (including taxes, permits and company filings)`],
     },
-    marginBottom: 32,
-    color: color.yellow3,
+    marginBottom: 40,
+    color: color.purple3,
   },
   {
     type: `header`,
     content: `A Complete Arizona Registered Agent Service From Incfile`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -633,7 +633,7 @@ export const registeredAgent = [
   {
     type: `text`,
     content: `Incfile is authorized to conduct business in Arizona and can legally act as your Registered Agent. Here’s what the Infile Arizona Registered Agent service provides for your AZ LLC:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -645,7 +645,7 @@ export const registeredAgent = [
              `Automatic forwarding of all legal correspondence, documentation and information directly to you`],
     },
     marginBottom: 16,
-    color: color.yellow3,
+    color: color.green3,
   },
   {
     type: `button`,
@@ -660,7 +660,7 @@ export const registeredAgent = [
     type: `header`,
     content: `How to Appoint an Arizona Statutory Agent for Your LLC`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -671,7 +671,7 @@ export const registeredAgent = [
     type: `header`,
     content: `Appoint an AZ Statutory Agent Service When You Create Your Arizona LLC`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -687,13 +687,13 @@ export const registeredAgent = [
   {
     type: `text`,
     content: `You will need to include details of your Statutory Agent in your Articles of Organization. This is the form that you file with the AZ Corporation Commission to formally create your business.`,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Incorporate Through Incfile and Get a Free Arizona Statutory Agent `,
     size: 4,
-    marginBottom: 32,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -713,7 +713,7 @@ export const registeredAgent = [
     type: `header`,
     content: `Change Your Arizona Registered Agent After Your LLC Is Formed`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -755,7 +755,7 @@ export const registeredAgent = [
     type: `header`,
     content: `Arizona Statutory Agent Search`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -771,7 +771,7 @@ export const registeredAgent = [
     type: `header`,
     content: `Possible Outcomes of Not Assigning a Statutory Agent for Your Arizona LLC`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -786,19 +786,19 @@ export const registeredAgent = [
              `Falling out of good standing with the Arizona Corporation Commission: If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`, 
              `Losing your status as an Arizona LLC: An AZ Statutory Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections, and your Arizona LLC may be dissolved.`],
     },
-    marginBottom: 32,
-    color: color.yellow3,
+    marginBottom: 40,
+    color: color.blue3,
   },
   {
     type: `header`,
     content: `Acting as Your Own Statutory Agent for Your AZ LLC`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `If you have an address in Arizona, you can choose to be the Statutory Agent for your LLC. We don’t recommend this approach as there can be some drawbacks:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -810,13 +810,13 @@ export const registeredAgent = [
              `If you change your Arizona business address or move out of state, you would need to file additional documentation with the AZ Corporation Commission for the new address if you act as your own Statutory Agent. This would not be the case if you use a Statutory/Registered Agent service, making a move or address change much simpler.`],
     },
     marginBottom: 32,
-    color: color.yellow3,
+    color: color.purple3,
   },
   {
     type: `header`,
     content: `FAQs About Arizona Statutory Agents`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `accordion`,
@@ -866,7 +866,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Arizona LLC Forms, Annual Fees and Requirements`,
     size: 2,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -882,7 +882,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Arizona LLC Incorporation Filing`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -890,7 +890,7 @@ export const feesAndRequirments = [
     marginBottom: 32,
   },
   {
-    type: `table`,
+    type: `table-simple`,
     content: {
       headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
       rows: [[`$85`, `4 Weeks`, `12 Business days`]],
@@ -910,7 +910,7 @@ export const feesAndRequirments = [
       text: `Compare State Filing Prices`,
       url: `/state-filing-fees/`,
     },
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -935,7 +935,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Getting an Employer Identification Number for Your AZ LLC`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -955,7 +955,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Certificate of Authority to Operate Outside Arizona`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -975,12 +975,12 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Arizona Affidavit of Publication`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Many states require that you file an annual (or other periodic) LLC report; however, Arizona does not. Instead, Arizona requires that you publish a notice of filing of your Articles of Organization — or alternatively, you may publish the Articles of Organization in their entirety. The publication must be in a newspaper in general circulation in the county of the known place of business in Arizona for three consecutive publications. The publication must be filed within 60 days of the date of organization. The LLC may be subject to administrative dissolution if it fails to publish.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `text`,
@@ -991,7 +991,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Arizona Business License Search`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1006,8 +1006,8 @@ export const feesAndRequirments = [
              `The location of your Arizona LLC (state, county or city) (e.g., a license to conduct business from the city of Phoenix)`, 
              `The type of business that you run (e.g., healthcare providers must meet HIPAA requirements)`],
     },
-    marginBottom: 16,
-    color: color.yellow3,
+    marginBottom: 32,
+    color: color.green3,
   },
   {
     type: `list-dot`,
@@ -1016,7 +1016,7 @@ export const feesAndRequirments = [
       list: [`A complete report on all the licenses, permits and tax registrations your Arizona LLC will need`,
              `The application forms you will need to file with the state, regional and federal licensing authorities`],
     },
-    marginBottom: 16,
+    marginBottom: 32,
     color: color.yellow3,
   },
   {
@@ -1037,7 +1037,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Create an Arizona Operating Agreement for Your LLC`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1053,18 +1053,18 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Ad Hoc Arizona Fees or Requirements for Your AZ LLC`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `There are several other fees or requirements that you may need to meet during the life of your Arizona LLC. These ad hoc fees will only be payable in specific circumstances, which we’ve listed below.`,
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `To Obtain a Trade/DBA Name for Your Arizona LLC`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1084,7 +1084,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `To Change the Arizona Statutory Agent for Your AZ LLC`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1104,7 +1104,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `To Reserve a Name for Your Arizona LLC`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1115,7 +1115,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `To Amend Certain Facts About Your Arizona LLC`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1131,7 +1131,7 @@ export const feesAndRequirments = [
              `Altering the stated business activities of your Arizona LLC`],
     },
     marginBottom: 16,
-    color: color.yellow3,
+    color: color.purple3,
   },
   {
     type: `button`,
@@ -1146,7 +1146,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `To Get a Certificate of Good Standing for Your Arizona LLC`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1212,7 +1212,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Arizona Business Taxes for LLCs`,
     size: 2,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -1228,7 +1228,7 @@ export const businessTaxes = [
     type: `header`,
     content: `How Your Arizona LLC Will Be Taxed`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1257,7 +1257,7 @@ export const businessTaxes = [
         text: `Employees pay federal, state and payroll tax on their earnings`,
       },
     ],
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `text`,
@@ -1268,7 +1268,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Arizona Sales Tax and State Taxes`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1279,7 +1279,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Arizona State Income Tax Payable on LLC Earnings`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1305,7 +1305,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Arizona Transaction Privilege Tax (TPT)/Sales Tax Rates on LLC Sales`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1319,7 +1319,7 @@ export const businessTaxes = [
       list: [`Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`,
              `Certain services that your Arizona business might provide` ],
     },
-    marginBottom: 16,
+    marginBottom: 24,
     color: color.blue3,
     curve: true,
     curveColor: color.red1,
@@ -1338,7 +1338,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Federal Taxes for Your Arizona LLC: Self-Employment and Income Taxes`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1349,7 +1349,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Arizona LLC Federal Self-Employment Tax`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1371,13 +1371,13 @@ export const businessTaxes = [
              `On profits of $160,000, you would pay self-employment tax of $24,480`],
     },
     marginBottom: 48,
-    color: color.blue3,
+    color: color.purple3,
   },
   {
     type: `header`,
     content: `Pay Less Self-Employment Tax by Treating Your Arizona LLC as an S Corporation`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1407,7 +1407,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Arizona LLC Federal Income Tax`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1423,7 +1423,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Employer and Employee Taxes for Your Arizona LLC`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1483,12 +1483,12 @@ export const businessTaxes = [
     type: `header`,
     content: `Estimated Taxes for Your Arizona LLC`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Most Arizona LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -1510,7 +1510,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Other Taxes and Duties for Your Arizona LLC`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1521,7 +1521,7 @@ export const businessTaxes = [
     type: `header`,
     content: `FAQs on Arizona LLC Business Taxes`,
     size: 3,
-    marginBottom: 40,
+    marginBottom: 32,
   },
   {
     type: `accordion`,

@@ -111,7 +111,7 @@ const CleaningBusiness = () => (
                             finding skilled workers and developing an excellent brand.
                         </Paragraph>
 
-                        <Paragraph big style={{fontFamily: "Avenir-Heavy", marginTop: "48px", color: color.black}}>
+                        <Paragraph big style={{fontFamily: "Avenir", fontWeight: "900", marginTop: "48px", color: color.black}}>
                             Cleaning business formation guide
                         </Paragraph>
 
@@ -217,7 +217,7 @@ const CleaningBusiness = () => (
                             Understanding the World of a Cleaning Business
                         </Heading>
 
-                        <Paragraph big style={{fontFamily: "Avenir-Heavy", marginTop: "48px", color: color.black}}>
+                        <Paragraph big style={{fontFamily: "Avenir", fontWeight: "900", marginTop: "48px", color: color.black}}>
                             Key Cleaning Business and Background Data and Statistics
                         </Paragraph>
 
@@ -270,7 +270,7 @@ const CleaningBusiness = () => (
                             Questions to Ask Before You Start a Cleaning Business
                         </Heading>
 
-                        <Paragraph big style={{fontFamily: "Avenir-Heavy", marginTop: "48px", color: color.black}}>
+                        <Paragraph big style={{fontFamily: "Avenir", fontWeight: "900", marginTop: "48px", color: color.black}}>
                             Is Cleaning Entrepreneurship for You?
                         </Paragraph>
 
@@ -320,7 +320,7 @@ const CleaningBusiness = () => (
                             width="100%"
                         />
 
-                        <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
+                        <Paragraph big style={{fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
                             What Are the Main Challenges for a Cleaning Entrepreneur?
                         </Paragraph>
 
@@ -331,7 +331,7 @@ const CleaningBusiness = () => (
                             your margins will likely be very thin.
                         </Paragraph>
 
-                        <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
+                        <Paragraph big style={{fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
                             What Does a Day in the Life of a Cleaning Entrepreneur Look Like?
                         </Paragraph>
 

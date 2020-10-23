@@ -120,7 +120,7 @@ const ValidatingBusinessIdea = () => (
                         understand all about product marketing, profit margins, working with suppliers and getting
                         customers?
                     </Paragraph>
-                    <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
+                    <Paragraph big style={{fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
                         Don’t assume that just because it’s online, it’s easy.
                     </Paragraph>
                     <Paragraph big>

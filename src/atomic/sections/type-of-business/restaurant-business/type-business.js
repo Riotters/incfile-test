@@ -33,7 +33,8 @@ const TypeBusiness = () => (
                 </Paragraph>
 
                 <Paragraph big style={{
-                    fontFamily: "Avenir-Heavy",
+                    fontFamily: "Avenir",
+                    fontWeight: "900",
                     color: color.black,
                     textAlign: "left",
                     marginBottom: "24px"
@@ -96,7 +97,8 @@ const TypeBusiness = () => (
                 </Paragraph>
 
                 <Paragraph big style={{
-                    fontFamily: "Avenir-Heavy",
+                    fontFamily: "Avenir",
+                    fontWeight: "900",
                     color: color.black,
                     textAlign: "left",
                     marginBottom: "24px"

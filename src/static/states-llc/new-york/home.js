@@ -68,7 +68,7 @@ export const HomePageContent = {
       step1: {
         heading1: `Complete a New York LLC Search and Choose a Unique Business Name`,
         text1: `You will need a distinctive and original name for your New York LLC that’s not used by any other business in NY. If you’re having trouble coming up with a name, try out Incfile’s <a href="/business-name-generator/">Business Name Generator</a> to brainstorm ideas. There are also a few naming rules you’ll need to follow, which you can read about in detail on our section on <a href="/new-york-llc/new-york-business-names/">New York LLC Business Names.</a>`,
-        text2: `If you already have a name in mind, make sure it’s available by using the New York business entity name search on the <a href="https://www.dos.ny.gov/corps/bus_entity_search.html">NY Department of State (DOS) website</a> or Incfile’s free Business Name Search tool.`,
+        text2: `If you already have a name in mind, make sure it’s available by using the New York business entity name search on the <a href="https://www.dos.ny.gov/corps/bus_entity_search.html" target="_blank" rel="noopener noreferrer">NY Department of State (DOS) website</a> or Incfile’s free Business Name Search tool.`,
         cta: {
           title: `Incfile’s Business <br>Name Search Tool`,
           subtitle: `We’ll search the New York Division of Corporations registry for you.`,
@@ -179,7 +179,7 @@ export const HomePageContent = {
         text1: `New York has an additional requirement for LLCs — you must publish a notice of formation in two local newspapers in the county in which your business is formed. These newspapers must be ones already approved by the County Clerk’s office.`,
         text2: `Publication must be complete within 120 days of your official LLC incorporation date, and you need to run the notices for six consecutive weeks. You can see step-by-step instructions for this process in our "How to Meet New York LLC Publication Requirements" guide.`,
         text3: `Once you’ve met the publication requirements, the newspapers will send you an Affidavit of Publication, which you then need to file with the Department of State to receive your Certificate of Publication. The state charges a $50 fee for this certificate.`,
-        text4: `<a href="https://www.dos.ny.gov/forms/corporations/1708-f-l.pdf">Download New York's Certificate of Publication Form</a>`,
+        text4: `<a href="https://www.dos.ny.gov/forms/corporations/1708-f-l.pdf" target="_blank" rel="noopener noreferrer">Download New York's Certificate of Publication Form</a>`,
       },
       step7: {
         heading1: `Create an LLC Operating Agreement`,
@@ -234,7 +234,7 @@ export const HomePageContent = {
       },
       {
         type: `paragraph`,
-        content: `<a href="http://www.op.nysed.gov/corp/pcorpdompllc.htm">Information on Professional LLCs in New York State</a>`,
+        content: `<a href="http://www.op.nysed.gov/corp/pcorpdompllc.htm" target="_blank" rel="noopener noreferrer">Information on Professional LLCs in New York State</a>`,
       },
       {
         type: `heading`,

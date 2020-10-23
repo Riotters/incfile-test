@@ -130,7 +130,7 @@ const AlaskaCorporation = () => (
             <Paragraph big>
             Bylaws lay out the corporation’s basic managerial and legal operating principles that manage their internal affairs. South Carolina corporations must keep a copy of their bylaws at their principal executive office, but are not required to file them with the state. At its initial meeting, the incorporators or the board of directors should adopt corporate bylaws, and then keep them updated as time goes on.
             </Paragraph>
-            <Paragraph big style={{ fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
             The board of directors of a corporation may adopt, amend, or repeal bylaws, unless the articles reserve this right to the shareholders. Bylaws normally address:
             </Paragraph>
 
@@ -173,7 +173,7 @@ const AlaskaCorporation = () => (
             South Carolina corporations must file a report with the South Carolina Department of Revenue each year by the 15th day of the third month after the end of the corporation’s fiscal year.
             </Paragraph>
 
-            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
             This report may be made public by the state, and must specify:
             </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>

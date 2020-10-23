@@ -279,8 +279,8 @@ const BottomContent = styled.div`
 const Content = styled.div``;
 
 const Title = styled.div`
-    font-weight: bold;
-    font-family: "Avenir-Heavy", sans-serif;
+    font-weight: 900;
+    font-family: "Avenir", sans-serif;
     font-size: 16px;
     line-height: 24px;
     color: #1d1d1d;
