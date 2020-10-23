@@ -1,26 +1,28 @@
-import React from "react"
-import styled from "styled-components"
-import { Tabs, Panel, useTabState } from "@bumaga/tabs"
+import React from "react";
+import styled from "styled-components";
+import { Tabs, Panel, useTabState } from "@bumaga/tabs";
 // import { motion } from "framer-motion"
-import Container from "../../container"
-import ArrowLink from "../../../components/arrow-link"
-import BookSVG from "../../../images/icons/book.inline.svg"
-import WrenchSVG from "../../../images/icons/wrench.inline.svg"
-import ArrowSVG from "../../../images/arrow.inline.svg"
-import { Collapse } from "react-collapse"
+import Container from "../../container";
+import ArrowLink from "../../../components/arrow-link";
+import BookSVG from "../../../images/icons/book.inline.svg";
+import WrenchSVG from "../../../images/icons/wrench.inline.svg";
+import ArrowSVG from "../../../images/arrow.inline.svg";
+import { Collapse } from "react-collapse";
 import { color } from "../../atoms/styles/colors";
-import IconSVG from "../../../images/icons/generally-arrow.inline.svg"
+import IconSVG from "../../../images/icons/generally-arrow.inline.svg";
 import IconTextColorBox from "../../molecules/text-blocks/icon-h4-text-color";
-import VisibilitySensor from "../../../components/VisibilitySensor"
-import { Heading } from "../../atoms/typography/heading"
-import { Paragraph } from "../../atoms/typography/paragraph"
+import VisibilitySensor from "../../../components/VisibilitySensor";
+import { Heading } from "../../atoms/typography/heading";
+import { Paragraph } from "../../atoms/typography/paragraph";
+import CheckText from "../../../components/static-check/text-boxed";
+//import CheckText from "../../molecules/text-blocks/text-check";
 
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
 
   @media (min-width: 769px) {
-    flex-direction: ${props => (props.layout !== "grid" ? "row" : "column")};
+    flex-direction: ${(props) => (props.layout !== "grid" ? "row" : "column")};
   }
 
   .accordion-panel {
@@ -33,14 +35,14 @@ const Wrapper = styled.div`
     margin-left: auto;
 
     @media (min-width: 769px) {
-      max-width: ${props => (props.layout !== "grid" ? "55%" : "")};
+      max-width: ${(props) => (props.layout !== "grid" ? "55%" : "")};
     }
 
     @media (min-width: 1200px) {
-      max-width: ${props => (props.layout !== "grid" ? "670px" : "")};
+      max-width: ${(props) => (props.layout !== "grid" ? "670px" : "")};
     }
   }
-`
+`;
 
 const TabsWrapper = styled.div`
   display: flex;
@@ -48,31 +50,31 @@ const TabsWrapper = styled.div`
   width: 100%;
 
   @media (min-width: 769px) {
-    max-width: ${props => (props.layout !== "grid" ? "40%" : "")};
+    max-width: ${(props) => (props.layout !== "grid" ? "40%" : "")};
   }
 
   @media (min-width: 1200px) {
-    max-width: ${props => (props.layout !== "grid" ? "370px" : "")};
+    max-width: ${(props) => (props.layout !== "grid" ? "370px" : "")};
   }
-`
+`;
 
 const Sticky = styled.div`
-  display: ${props => (props.layout === "grid" ? "grid" : "flex")};
-  flex-direction: ${props => (props.layout !== "grid" ? "column" : "")};
-  grid-template-columns: ${props => (props.columns ? `repeat(${props.columns}, 1fr)` : "")};
-  grid-gap: ${props => (props.layout === "grid" ? "30px" : "")};
-  position: ${props => (props.layout !== "grid" ? "sticky" : "")};
-  top: 100px; 
-`
+  display: ${(props) => (props.layout === "grid" ? "grid" : "flex")};
+  flex-direction: ${(props) => (props.layout !== "grid" ? "column" : "")};
+  grid-template-columns: ${(props) => (props.columns ? `repeat(${props.columns}, 1fr)` : "")};
+  grid-gap: ${(props) => (props.layout === "grid" ? "30px" : "")};
+  position: ${(props) => (props.layout !== "grid" ? "sticky" : "")};
+  top: 100px;
+`;
 
 const PanelWrapper = styled.article`
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  max-width: ${props => (props.layout !== "grid" ? "670px" : "")};
+  max-width: ${(props) => (props.layout !== "grid" ? "670px" : "")};
   margin-left: auto;
   padding-top: 24px;
-`
+`;
 
 const Button = styled.button`
   height: 78px;
@@ -100,7 +102,7 @@ const Button = styled.button`
       transform: translateX(0);
     }
   }
-`
+`;
 
 const Icon = styled.div`
   display: flex;
@@ -113,7 +115,7 @@ const Icon = styled.div`
   @media (min-width: 992px) {
     width: 80px;
   }
-`
+`;
 
 const Content = styled.div`
   display: flex;
@@ -152,7 +154,7 @@ const Content = styled.div`
       transform: translateX(0);
     }
   }
-`
+`;
 
 const Arrow = styled.div`
   display: flex;
@@ -168,101 +170,99 @@ const Arrow = styled.div`
       fill: #5088fd;
     }
   }
-`
+`;
 
-const cn = (...args) => args.filter(Boolean).join(" ")
+const cn = (...args) => args.filter(Boolean).join(" ");
 
 const Tab = ({ children }) => {
-  const { isActive, onClick } = useTabState()
+  const { isActive, onClick } = useTabState();
 
   return (
-    <Button
-      className={cn("accordion-tab", isActive && "active")}
-      onClick={onClick}
-    >
+    <Button className={cn("accordion-tab", isActive && "active")} onClick={onClick}>
       {children}
     </Button>
-  )
-}
+  );
+};
 
-const icons = [<BookSVG />, <WrenchSVG />]
+const icons = [<BookSVG />, <WrenchSVG />];
 
-const CCorpTabs = ({layout, columns, content}) => (
-    <Container>
-        <Wrapper layout={layout}>
-            <VisibilitySensor partialVisibility once>
-            {({ isVisible }) => (
-                <Tabs>
-                <TabsWrapper className={isVisible ? "slideUp enter" : "slideUp"} layout={layout}>
-                    <Sticky layout={layout} columns={columns}>
-                      {content.panels.map((panel, i) => (
-                        <Tab>
-                          <Icon>
-                            {icons[i]}
-                          </Icon>
-                          <Content>
-                          <span>{panel}</span>
-                          <Arrow className="tabArrow">
-                              <ArrowSVG />
-                          </Arrow>
-                          </Content>
-                        </Tab>
-                      ))}
-                    </Sticky>
-                </TabsWrapper>
-                {/* <Panels> */}
-                <Collapse isOpened={true}>
-                    <Panel>
-                    <PanelWrapper
-                        className={
-                        isVisible ? "slideUp enter panel1" : "slideUp panel1"
-                        }
-                        layout={layout}
-                    >
-                        <Heading size="3">{content.content[0].header}</Heading>
-                        <Paragraph big>{content.content[0].text}</Paragraph>
-                        <IconTextColorBox color={color.orange3} Icon={IconSVG} content={content.content[0].box} bottomMargin="48" rounded curve curveColor={color.yellow1}/>
-                        <Paragraph big>{content.content[0].text2}</Paragraph>
-                    </PanelWrapper>
-                    </Panel>
-                    <Panel>
-                    <PanelWrapper className="panel2" layout={layout}>
-                        <p>
-                        Incorporating your company is not always an easy process.
-                        Incfile is here to help you decide not only how to
-                        incorporate, but to understand exactly which type of status to
-                        file.
-                        </p>
-                        <p>
-                        Many companies who incorporate are actually charities that do
-                        not intend to make a profit, but rather donate all profits to
-                        another organization. In this case, a charity would want to
-                        incorporate as a nonprofit and, ultimately, apply for tax
-                        exempt status.
-                        </p>
-
-                        <p>
-                        By having tax exempt status, your donations can be recorded by
-                        donors as not taxable by both the federal and state
-                        government. This is a great incentive to be able to offer your
-                        constituents.
-                        </p>
-
-                        <p>
-                        People who start nonprofits are driven by passion about a
-                        certain cause. Whatever your cause, creating a nonprofit can
-                        make a difference. We've provided as much information as you
-                        need to know in choosing to incorporate as a nonprofit
-                        corporation.
-                        </p>
-                    </PanelWrapper>
-                    </Panel>
-                </Collapse>
-                {/* </Panels> */}
-                </Tabs>
-            )}
-            </VisibilitySensor>
-        </Wrapper>
-    </Container>
-)
-export default CCorpTabs
+const CCorpTabs = ({ layout, columns, content }) => (
+  <Container>
+    <Wrapper layout={layout}>
+      <VisibilitySensor partialVisibility once>
+        {({ isVisible }) => (
+          <Tabs>
+            <TabsWrapper className={isVisible ? "slideUp enter" : "slideUp"} layout={layout}>
+              <Sticky layout={layout} columns={columns}>
+                {content.panels.map((panel, i) => (
+                  <Tab>
+                    <Icon>{icons[i]}</Icon>
+                    <Content>
+                      <span>{panel}</span>
+                      <Arrow className="tabArrow">
+                        <ArrowSVG />
+                      </Arrow>
+                    </Content>
+                  </Tab>
+                ))}
+              </Sticky>
+            </TabsWrapper>
+            {/* <Panels> */}
+            <Collapse isOpened={true}>
+              <Panel>
+                <PanelWrapper className={isVisible ? "slideUp enter panel1" : "slideUp panel1"} layout={layout}>
+                  <Heading size="3">{content.content[0].header}</Heading>
+                  <Paragraph big>{content.content[0].text}</Paragraph>
+                  <IconTextColorBox color={color.orange3} Icon={IconSVG} content={content.content[0].box} bottomMargin="48" rounded curve curveColor={color.yellow1} />
+                  <Paragraph big>{content.content[0].text2}</Paragraph>
+                </PanelWrapper>
+              </Panel>
+              <Panel>
+                <PanelWrapper className="panel2" layout={layout}>
+                  <Heading size="3">How Is a C Corporation Formed?</Heading>
+                  <Paragraph big>
+                    A C Corp, also known as a corporation, is a type of business entity that is formed and regulated on a state level. The corporation is formed by filing “Articles of Incorporation” with the Secretary of State in the state of incorporation. The policies, articles, cost and
+                    regulations for forming a C Corp vary from state-to-state. Details on exactly how to form a C Corporation can be found at the end of this article.
+                  </Paragraph>
+                  <Paragraph big>
+                    The corporation is the oldest form of business entity. It has long been a successful way to do business and allows groups of individuals to pool their resources and capital to pursue a common purpose, with their risk limited solely to the amount of stock they own. Although a C
+                    Corp is a popular business structure, there are other options for forming businesses in the US.
+                  </Paragraph>
+                  <Heading size="4">Chosing a C Corp</Heading>
+                  <Heading size="5">Pros</Heading>
+                  <CheckText bottomMargin="8">
+                    <p>Limited Liability</p>
+                  </CheckText>
+                  <CheckText bottomMargin="8">
+                    <p>Exist Independently of Owners</p>
+                  </CheckText>
+                  <CheckText bottomMargin="8">
+                    <p>Fluid Ownership</p>
+                  </CheckText>
+                  <CheckText bottomMargin="8">
+                    <p>Ability to Rise Money Through IPO</p>
+                  </CheckText>
+                  <CheckText bottomMargin="40">
+                    <p>Enhanced Corporate Credibility</p>
+                  </CheckText>
+                  <Heading size="5">Cons</Heading>
+                  <CheckText isRed bottomMargin="8">
+                    <p>Different Tax Structure</p>
+                  </CheckText>
+                  <CheckText isRed bottomMargin="8">
+                    <p>Double Taxation Investors</p>
+                  </CheckText>
+                  <CheckText isRed bottomMargin="0">
+                    <p>Extensive Legal Requirements</p>
+                  </CheckText>
+                </PanelWrapper>
+              </Panel>
+            </Collapse>
+            {/* </Panels> */}
+          </Tabs>
+        )}
+      </VisibilitySensor>
+    </Wrapper>
+  </Container>
+);
+export default CCorpTabs;
