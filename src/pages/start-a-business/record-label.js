@@ -86,7 +86,7 @@ const RecordLabel = () => (
 
                         <Colorbox color={color.green3} curve curveColor={color.green1} Icon={MegafonIcon}
                                   theme={`icon`}>
-                            <Paragraph style={{fontFamily: "Avenir-Heavy", color: "#1d1d1d"}} big>
+                            <Paragraph style={{fontFamily: "Avenir", fontWeight: "900", color: "#1d1d1d"}} big>
                                 We know it can be daunting to start a record label business, and we’re
                                 here to help.
                             </Paragraph>
@@ -238,7 +238,7 @@ const RecordLabel = () => (
                         <Paragraph big>
                             Although it can be exciting to form a record label business, there will be significant demands on you as a small business owner. Here are some of the things you can expect.
                         </Paragraph>
-                        <Paragraph big style={{marginTop: "48px", fontFamily: "Avenir-Heavy", color: color.black}}>
+                        <Paragraph big style={{marginTop: "48px", fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
                             A Day in the Life of a Record Label Business Owner
                         </Paragraph>
 
@@ -276,7 +276,7 @@ const RecordLabel = () => (
                             width="100%"
                         />
 
-                        <Paragraph big style={{marginTop: "48px", fontFamily: "Avenir-Heavy", color: color.black}}>
+                        <Paragraph big style={{marginTop: "48px", fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
                             Skills Needed by a Record Label Entrepreneur
                         </Paragraph>
                         <Paragraph big>
@@ -323,14 +323,14 @@ const RecordLabel = () => (
                             width="100%"
                         />
 
-                        <Paragraph big style={{marginTop: "48px", fontFamily: "Avenir-Heavy", color: color.black}}>
+                        <Paragraph big style={{marginTop: "48px", fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
                             What Your Record Label Customers Are Looking For
                         </Paragraph>
                         <Paragraph big>
                             As a record company owner, you’re bringing together artists and the audiences that will enjoy their music.
                         </Paragraph>
 
-                        <Paragraph big style={{marginTop: "48px", fontFamily: "Avenir-Heavy", color: color.black}}>
+                        <Paragraph big style={{marginTop: "48px", fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
                             Artists are looking for:
                         </Paragraph>
 
@@ -354,7 +354,7 @@ const RecordLabel = () => (
                             width="100%"
                         />
 
-                        <Paragraph big style={{marginTop: "48px", fontFamily: "Avenir-Heavy", color: color.black}}>
+                        <Paragraph big style={{marginTop: "48px", fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
                             Fans are looking for
                         </Paragraph>
 

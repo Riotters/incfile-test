@@ -455,7 +455,7 @@ const LandscapingBusiness = () => (
             </CenterBox>
 
             <CenterBox>
-                <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
+                <Paragraph big style={{fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
                     Do Market Research and Validate Your Laundromat Products and Services
                 </Paragraph>
                 <Paragraph big>

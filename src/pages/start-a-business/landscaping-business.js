@@ -832,7 +832,8 @@ const LandscapingBusiness = () => (
                     </Paragraph>
 
                     <Paragraph big style={{
-                        fontFamily: "Avenir-Heavy",
+                        fontFamily: "Avenir",
+                        fontWeight: "900",
                         marginTop: "48px",
                         color: color.black,
                         paddingBottom: 0

@@ -34,7 +34,8 @@ const AbsoluteText = styled.div`
 const Text = styled(Paragraph)`
     margin-bottom: 0 !important;
     font-weight: bold;
-    font-family: Avenir-Heavy, sans-serif;
+    font-family: Avenir, sans-serif;
+    font-weight: 900;
     color: ${color.black};
 `;
 

@@ -124,7 +124,7 @@ const AlaskaCorporation = () => (
             <Paragraph big>
             Bylaws lay out the corporation’s basic managerial and legal operating principles that manage their internal affairs. New Mexico corporations must keep a copy of their bylaws at their principal executive office, but are not required to file them with the state. At its initial meeting, the board of directors should adopt corporate bylaws, and then keep them updated as time goes on.
             </Paragraph>
-            <Paragraph big style={{ fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
             The board of directors of a corporation may adopt, amend, or repeal bylaws, unless the articles reserve this right to the shareholders. Bylaws normally address:
             </Paragraph>
 
@@ -166,7 +166,7 @@ const AlaskaCorporation = () => (
             Your new corporation must file a report with the Corporations Bureau of the Public Regulation Commission within 30 days after the date of incorporation. After that, the report must be filed by the 15th day of the third month following the end of the corporation’s fiscal year.
             </Paragraph>
 
-            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
               The report must include:
             </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>

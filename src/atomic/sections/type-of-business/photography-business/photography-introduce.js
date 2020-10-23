@@ -54,7 +54,7 @@ const PhotographyIntroduce = () => (
                     in demand.
                 </Paragraph>
 
-                <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}} mixed={true}>
+                <Paragraph big style={{fontFamily: "Avenir", fontWeight: "900", color: color.black}} mixed={true}>
                     Although photography is an artform, running a successful business requires plenty of practical
                     skills. You will need to use your creative drive to create a sustainable freelance photography
                     business, and we’re here to help. In this guide we’ll cover:

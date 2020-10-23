@@ -106,7 +106,7 @@ const GymPersonalTraining = () => (
                             </Paragraph>
                         </Colorbox>
 
-                        <Paragraph big style={{marginTop: "48px", fontFamily: "Avenir-Heavy", color: color.black}}>
+                        <Paragraph big style={{marginTop: "48px", fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
                             Read on for some insight into creating your own brewery business and becoming an
                             entrepreneur.
                             In this guide we will cover:

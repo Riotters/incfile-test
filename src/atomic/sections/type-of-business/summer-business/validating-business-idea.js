@@ -118,7 +118,7 @@ const ValidatingBusinessIdea = () => (
                         to say “yes” or “no” to specific businesses, so think about what your strengths and weaknesses
                         are so you can choose a business you’d be great at.
                     </Paragraph>
-                    <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
+                    <Paragraph big style={{fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
                         Don’t assume that just because you have a summer business, running it and making money will be
                         easy.
                     </Paragraph>

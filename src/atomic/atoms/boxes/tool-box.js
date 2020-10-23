@@ -13,7 +13,8 @@ const ToolBoxWrapper = styled.div`
     background-color: ${color.blue3};
     padding: 8px 24px;
     color: ${color.blue1};
-    font-family: Avenir-Heavy, sans-serif;
+    font-family: Avenir, sans-serif;
+    font-weight: 900;
     font-size: 16px;
     line-height: 24px;
     text-align: center;

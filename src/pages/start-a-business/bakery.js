@@ -218,7 +218,8 @@ const Bakery = () => (
                                                  text="Average spending of each US household on bakery products"/>
 
                         <Paragraph big style={{
-                            fontFamily: "Avenir-Heavy",
+                            fontFamily: "Avenir",
+                            fontWeight: "900",
                             color: "#1d1d1d",
                             marginTop: "20px",
                             marginBottom: 0
@@ -229,7 +230,8 @@ const Bakery = () => (
                                                        withBg={true} style={{marginTop: "48px"}}/>
 
                         <Paragraph big style={{
-                            fontFamily: "Avenir-Heavy",
+                            fontFamily: "Avenir",
+                            fontWeight: "900",
                             color: "#1d1d1d",
                             marginTop: "48px",
                             marginBottom: "88px"

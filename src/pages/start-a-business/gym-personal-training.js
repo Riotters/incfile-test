@@ -103,7 +103,7 @@ const GymPersonalTraining = () => (
                             to do to get your fitness business off of the ground.
                         </Paragraph>
 
-                        <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
+                        <Paragraph big style={{fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
                             Read on for some insight into creating your own gym, fitness center
                             or personal training business and becoming an entrepreneur. In this guide we will cover:
                         </Paragraph>
