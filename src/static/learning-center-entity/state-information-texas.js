@@ -1,4 +1,4 @@
-import CaliforniaCorpSVG from "../../images/icons/icon-learning-center-color-business-taxes.inline.svg";
+import TexasCorpSVG from "../../images/icons/icon-learning-center-color-business-taxes.inline.svg";
 import EntitySVG from "../../images/icons/note-magnifing-glass.inline.svg";
 import PenSVG from "../../images/icons/icon-pen.inline.svg";
 import PrinterSVG from "../../images/icons/icon-printer.inline.svg";
@@ -37,7 +37,7 @@ import { color } from "../../atomic/atoms/styles/colors";
 import { shadow } from "../../atomic/atoms/styles/shadows";
 
 export const top = {
-  header: `Why Form a Corporation in California?`,
+  header: `Why Form a Corporation in Texas?`,
   text: `$0 + State Fee & 1st Year FREE Registered Agent`,
   buttons: [
     {
@@ -55,21 +55,21 @@ export const launchBusiness = {
   },
 };
 export const requirements = {
-  header: `Fees and requirements in California.`,
+  header: `Fees and requirements in Texas.`,
   rows: [
     {
       box: {
         fields: [
           {
-            header: `$100`,
+            header: `$300`,
             text: `State fee`,
           },
           {
-            header: `15 days`,
+            header: `1 Week`,
             text: `State filing time`,
           },
           {
-            header: `5 days`,
+            header: `2 Business days`,
             text: `Expected filling time`,
           },
         ],
@@ -134,7 +134,7 @@ export const requirements = {
         ],
       },
       content: {
-        header: `California Franchise Tax`,
+        header: `Texas Franchise Tax`,
         text: `$800 payment for the LLC Franchise Tax is due by 15th day of the 4th month after your LLC is filed. The month your LLC is filed counts as Month 1, regardless if you file on the 1st of the month, the last of the month, or any day of the month, really.`,
         text2: `This means that if you were to file your LLC on March 22nd, then you must pay the $800 fee no later than June 15th (in this example, March is Month 1, April is Month 2, May is Month 3, and June is Month 4). Then, every year after your first payment $800 LLC Franchise Tax will be due April 15th. You pay the $800 LLC Franchise Tax using Form 3522 called the LLC Tax Voucher.`,
       },
@@ -163,7 +163,7 @@ export const requirements = {
   ],
 };
 export const learnMore = {
-  header: `Learn more about starting a business in California`,
+  header: `Learn more about starting a business in Texas`,
   text: `Additional resources, guides, and articles for better decision making.`,
   buttons: [
     {
@@ -369,38 +369,38 @@ export const subscription = {
 export const tabPages = {
   pages: [
     {
-      name: `California Corporations`,
-      path: `/california-corporation/`,
-      icon: CaliforniaCorpSVG,
+      name: `Texas Corporations`,
+      path: `/texas-corporation/`,
+      icon: TexasCorpSVG,
     },
     {
       name: `How to guide`,
-      path: `/california-corporation/start-a-ca-corporation`,
+      path: `/texas-corporation/start-a-tx-corporation`,
       icon: EntitySVG,
     },
     {
       name: `Naming your corporation`,
-      path: `/california-corporation/how-to-name-your-corporation`,
+      path: `/texas-corporation/how-to-name-your-corporation`,
       icon: PenSVG,
     },
     {
       name: `Registered agents`,
-      path: `/california-corporation/registered-agents-california`,
+      path: `/texas-corporation/registered-agents-texas`,
       icon: RegisteredAgentSVG,
     },
     {
       name: `Filing requirements`,
-      path: `/california-corporation/form-filling-permit-requirements`,
+      path: `/texas-corporation/form-filling-permit-requirements`,
       icon: PrinterSVG,
     },
     {
       name: `Taxes & Fees`,
-      path: `/california-corporation/taxes-and-fees-for-your-corporation`,
+      path: `/texas-corporation/taxes-and-fees-for-your-corporation`,
       icon: PriceTagSVG,
     },
     {
       name: `After filing`,
-      path: `/california-corporation/know-your-ongoing-filing-requirements`,
+      path: `/texas-corporation/know-your-ongoing-filing-requirements`,
       icon: CoffeeSVG,
     },
   ],
@@ -409,29 +409,29 @@ export const tabPages = {
 export const corporation = [
     {
         type: "header",
-        content: "California Corporations",
+        content: "Texas Corporations",
         size: 4,
         marginBottom: 24
     },
   {
         type: "text",
-        content: "California is a leader in great companies and household names. From Silicon Valley to Los Angeles, the state houses some of the biggest technological and entertainment businesses on the planet.",
+        content: "WIth its busy cities and enormous landscapes, Texas is a state as beautiful as it is prosperous. If you want to start a successful business, then the Lone Star State could be a great choice — and the lack of a state income tax can be a good incentive! Whether you want to be headquartered in Houston, Austin or Dallas — or you want to build a presence in a smaller city — you have plenty of choices.",
         marginBottom: 24
     },
   {
         type: "text",
-        content: "For entrepreneurs with big dreams, starting a corporation is a powerful way to show your commitment and bring those ideas to life. In this guide we’ll talk you through everything you need to know on how to start a corporation in the state of California.",
+        content: "Here’s our guide to Texas corporations and deciding if starting one could be the right choice for you.",
         marginBottom: 48
     },
   {
         type: "header",
-        content: "What Type of California Corporation Should You Choose?",
+        content: "What Type of Texas Corporation Should You Choose?",
         size: 4,
         marginBottom: 24
     },
   {
         type: "text",
-        content: "Most entrepreneurs will have a choice of starting an LLC, an S Corporation or a C Corporation in California. We’ll help you select the right type of business entity, as each one is treated differently by the CA Secretary of State, the law, the IRS and other official bodies.",
+        content: "Most entrepreneurs will have a choice of starting an LLC, an S Corporation or a C Corporation in Texas. We’ll help you select the right type of business entity, as each one is treated differently by the TX Secretary of State, the law, the IRS and other official bodies.",
         marginBottom: 24
     },
   {
@@ -443,8 +443,8 @@ export const corporation = [
         type: "svg-color-text-box",
         content: [
           {
-              header: "California Sole Proprietorships and Partnerships",
-              text: "These are the simplest type of business and will be the “default” type of CA business you have if you do not choose to form a separate business entity. These types of businesses do not provide you with any special protections or benefits and can leave your personal assets vulnerable. We do not recommend them.",
+              header: "Texas Sole Proprietorships and Partnerships",
+              text: "These are the simplest type of business and will be the “default” type of TX business you have if you do not choose to form a separate business entity. These types of businesses do not provide you with any special protections or benefits and can leave your personal assets vulnerable. We do not recommend them.",
               svg: ProprietorshipSVG,
               backgroundColor: color.orange2,
               shadowColor: shadow.orange2,
@@ -453,11 +453,11 @@ export const corporation = [
               marginTop: "91px"
           },
           {
-            header: "California Limited Liability Companies (LLCs)",
-            text: "LLCs are a great option for smaller CA businesses. LLCs are quick and easy to create, inexpensive to administer, light on regulations and have simple taxation and rules.",
+            header: "Texas Limited Liability Companies (LLCs)",
+            text: "LLCs are a great option for smaller TX businesses. LLCs are quick and easy to create, inexpensive to administer, light on regulations and have simple taxation and rules.",
             svg: LockpadSVG,
             link: {
-              text: "Learn how to create an LLC in California",
+              text: "Learn how to create an LLC in Texas",
                 url: "/"
             },
             backgroundColor: color.babyblue2,
@@ -467,11 +467,11 @@ export const corporation = [
             marginTop: "91px"
           },
           {
-            header: "California S Corporations",
-            text: "You might choose to form a California S Corporation because it’s a good compromise between the simplicity of the LLC and the complexity of the C Corporation. Note that CA S Corporations are subject to more rules and regulations than a CA LLC, but they can mean that you pay less tax.",
+            header: "Texas S Corporations",
+            text: "You might choose to form a Texas S Corporation because it’s a good compromise between the simplicity of the LLC and the complexity of the C Corporation. Note that TX S Corporations are subject to more rules and regulations than a TX LLC, but they can mean that you pay less tax.",
             svg: ProcentSVG,
             link: {
-              text: "Learn how to create an LLC in California",
+              text: "Learn how to create an LLC in Texas",
                 url: "/"
             },
             backgroundColor: color.green2,
@@ -481,8 +481,8 @@ export const corporation = [
             marginTop: "91px"
           },
           {
-            header: "California C Corporations",
-            text: "If you plan to start a large business or want to trade your shares on the public stock market, a CA C Corporation is your only choice. Be aware that California C Corporations are subject to many rules and regulations, and they have a substantial amount of administrative overhead. Additionally, the tax rules for a California C Corporation are not as advantageous as for a CA S Corporation or LLC.",
+            header: "Texas C Corporations",
+            text: "If you plan to start a large business or want to trade your shares on the public stock market, a TX C Corporation is your only choice. Be aware that Texas C Corporations are subject to many rules and regulations, and they have a substantial amount of administrative overhead. Additionally, the tax rules for a Texas C Corporation are not as advantageous as for a TX S Corporation or LLC.",
             svg: BillSVG,
             link: {
               text: "Learn about forming a C Corporation",
@@ -527,24 +527,69 @@ export const corporation = [
   },
   {
     type: "header",
-    content: "The Advantages of a California Corporation Over an LLC",
+    content: "Advantages of Forming a Texas Corporation",
     size: 4,
     marginBottom: 24
   },
   {
     type: "text",
-    content: "Why might you want to choose to incorporate as a CA S Corp or C Corp instead of an LLC? Here are a few reasons.",
+    content: "Texas corporations have several benefits for business owners",
     marginBottom: 48
+  },
+    {
+        type: "list-dot",
+        content: {
+            list:[
+                "Texas corporations provide the strongest form of liability protection possible. They insulate your personal assets and finances from those of your business.",
+                "This means that any liabilities created by your corporation (debts, obligations, damages, bankruptcy or other liabilities) should not impact your personal money, property or assets — they are considered completely separate from a legal perspective.",
+            ]
+        },
+        color: color.green3,
+        marginBottom: 48,
+        curve: true,
+        curveColor: color.green1
+    },
+  {
+      type: "header",
+      content: "The Advantages of Incorporating a Texas S Corp or C Corp Over an LLC",
+      size: 4,
+      marginBottom: 24
+  },
+  {
+    type: "text",
+    content: "Why might you want to choose to incorporate as a TX S Corp or C Corp instead of an LLC? Here are a few reasons.",
+    marginBottom: 24
+  }, {
+    type: "text",
+    content: "When you incorporate a business as a corporation, the Texas Secretary of State will treat your business as a C Corporation by default. A C corporation will become an S Corporation when all shareholders wish to change the corporation’s status to an S Corporation with the IRS. You can make this choice when you first form your Texas corporation or at any time after you incorporate.",
+    marginBottom: 24
+  }, {
+    type: "text",
+    content: "There are some similarities and some differences between S Corps and C Corps:",
+    marginBottom: 24
+  },
+  {
+    type: "list-dot",
+    content: {
+      header: "S Corporations and C Corporations in Texas",
+      list: [
+        "<strong>Similarities:</strong> Texas S Corporations and C Corporations have similar rules and regulations for liability, governance, management and ownership",
+        "<strong>Differences:</strong> Key differences are taxation and the ease of buying, selling and transferring stock"
+      ]
+    },
+    color: color.green3,
+    marginBottom: 48,
+    curve: false,
   },
   {
     type: "header",
-    content: "Taxation Benefits of a California S Corporation Over an LLC",
+    content: "Taxation Benefits of a Texas S Corporation Over an LLC",
     size: 4,
     marginBottom: 24
   },
   {
     type: "text",
-    content: "A California S Corporation will often pay less self-employment tax on owner earnings than an LLC. Note that a CA LLC can choose to be treated as an S Corporation for tax purposes by filing Form 2553 with the IRS, which removes this restriction. California C Corporations do not have this advantage over an LLC.",
+    content: "A Texas S Corporation will often pay less self-employment tax on owner earnings than an LLC. Note that a TX LLC can choose to be treated as an S Corporation for tax purposes by filing Form 2553 with the IRS, which removes this restriction. Texas C Corporations do not have this advantage over an LLC.",
     marginBottom: 24
   },
   {
@@ -565,24 +610,26 @@ export const corporation = [
       marginBottom: 64,
   },
   {
-    type: "colorbox",
-    header: "Buying Stock",
-    icon: StockSVG,
-    text: "California S Corporations and C Corporations make it much easier to buy, sell and transfer stock. C Corporations also allow you to file an IPO and list stock on the public stock market.",
-    curve: true,
-    curveColor: color.green1,
-    color: color.green3,
-    marginBottom: 48,
-  },
-  {
+    type: "header",
+    content: "If You Need to Transfer Stocks and Ownership Easily, Choose a Texas S Corporation or C Corporation",
+    size: 4,
+    marginBottom: 24
+  }, {
+    type: "text",
+    content: "If you want to easily transfer ownership through buying and selling stock, you will need a TX C Corporation or an S Corporation. C Corporations have much more flexibility than S Corporations, and both are better than LLCs for stock and ownership transfers.",
+    marginBottom: 48
+  }, {
+    type: "header",
+    content: "Texas C Corporations Provide the Main Advantages for Buying and Selling Stock",
+    size: 4,
+    marginBottom: 24
+  }, {
     type: "text",
     content: "C Corporations provide certain benefits when it comes to buying, selling and transferring stock. Here are the rules for both S Corps and C Corps:",
-    marginBottom: 41
-  },
-  {
+    marginBottom: 24
+  }, {
     type: "list-dot",
     content: {
-      header: "Rules for Buying, Selling and Transferring Stocks",
       list: [
         "If you want up to 100 shareholders who are U.S. citizens or residents and want to issue one type of stock, you can be an S Corporation or a C Corporation.",
         "If you want more than 100 shareholders, want to issue more than one type of stock or have international shareholders, you will need a C Corporation.",
@@ -591,7 +638,8 @@ export const corporation = [
     },
     color: color.orange3,
     marginBottom: 48,
-    curve: false,
+    curve: true,
+    curveColor: color.orange1
   },
   {
     type: "arrow-link",
@@ -601,9 +649,15 @@ export const corporation = [
     },
     marginBottom: 48,
   },
+    {
+        type: "header",
+        content: "Advantages of Incorporating as a C Corporation in Texas",
+        size: 4,
+        marginBottom: 24
+    },
   {
     type: "text",
-    content: "In addition to the general benefits above, California C Corporations provide several other advantages.",
+    content: "In addition to the general benefits above, Texas C Corporations provide several other advantages.",
     marginBottom: 24
   },
   {
@@ -611,11 +665,11 @@ export const corporation = [
     content: {
       header: "Rules for Buying, Selling and Transferring Stocks",
       list: [
-        "Ownership in a California C Corporation is very fluid and determined by who owns stock in the business.",
-        "California C Corporations can list their shares on a public stock exchange. This stock can be bought and sold by anyone.",
-        "California C Corporations can sell stock to investors inside and outside the U.S.",
-        "California C Corporations can issue more than one type of stock.",
-        "California C Corporations can raise more funds by issuing more stock.",
+        "Ownership in a Texas C Corporation is very fluid and determined by who owns stock in the business.",
+        "Texas C Corporations can list their shares on a public stock exchange. This stock can be bought and sold by anyone.",
+        "Texas C Corporations can sell stock to investors inside and outside the U.S.",
+        "Texas C Corporations can issue more than one type of stock.",
+        "Texas C Corporations can raise more funds by issuing more stock.",
       ]
     },
     color: color.blue3,
@@ -623,56 +677,27 @@ export const corporation = [
     curve: false,
   },
   {
-    type: "header",
-    content: "What You Need to Know About Forming a California \n" +
-        "Corporation",
-    size: 4,
+    type: "text",
+    content: "Here are some areas to be aware of when you’re creating a corporation in Texas.",
     marginBottom: 24
   },
   {
     type: "text",
-    content: "Here are some areas to be aware of when you’re creating a corporation in California.",
+    content: "First, TX corporations are formed on the state level by filing Articles of Incorporation with the Secretary of State. Incfile specializes in helping entrepreneurs form Texas S Corporations and C Corporations and can collect the information and file this form on your behalf.",
     marginBottom: 24
-  },
-  {
-    type: "text",
-    content: "First, CA corporations are formed on the state level by filing Articles of Incorporation with the Secretary of State. Incfile specializes in helping entrepreneurs form California S Corporations and C Corporations and can collect the information and file this form on your behalf.",
-    marginBottom: 24
-  },
-  {
-    type: "text",
-    content: "When you incorporate a business as a corporation, the California Secretary of State will treat your business as a C Corporation by default. A C Corporation will become an S Corporation when all shareholders wish to change the corporation’s status to an S Corporation with the IRS. You can make this choice when you first form your California corporation or at any time after you incorporate.",
-    marginBottom: 24
-  },
-  {
-    type: "text",
-    content: "There are some similarities and some differences between S Corps and C Corps:",
-    marginBottom: 40
-  },
-  {
-    type: "list-dot",
-    content: {
-      header: "S Corporations and C Corporations in California",
-      list: [
-        "<strong>Similarities:</strong> California S Corporations and C Corporations have similar rules and regulations for liability, governance, management and ownership",
-        "<strong>Differences:</strong> Key differences are taxation and the ease of buying, selling and transferring stock"
-      ]
-    },
-    color: color.green3,
-    marginBottom: 32,
-    curve: false,
   },
   {
     type: "arrow-link",
     content: {
-      text: "Learn what you need to do to create a California  S Corporation or C Corporation",
+      text: "Learn what you need to do to create a Texas  S Corporation or C Corporation",
       url: "/"
     },
     marginBottom: 40,
   },
   {
-    type: "text",
-    content: "Your California Corporation Must Follow Certain Rules and Regulations",
+    type: "header",
+    content: "Your Texas Corporation Must Follow Certain Rules and Regulations",
+    size: 4,
     marginBottom: 32
   },
   {
@@ -680,32 +705,32 @@ export const corporation = [
     content: [
       {
         icon: ArrowLeftSVG,
-        text: "All CA corporations must issue stock to shareholders",
+        text: "All TX corporations must issue stock to shareholders",
       },
       {
         icon: ChatSVG,
-        text: "All CA corporations must hold Annual General Meetings (AGMs)",
+        text: "All TX corporations must hold Annual General Meetings (AGMs)",
       },
       {
         icon: BoardSVG,
-        text: "All CA corporations must have an elected Board of Directors",
+        text: "All TX corporations must have an elected Board of Directors",
       },
       {
         icon: UserCheckmarkSVG,
-        text: "All CA corporations must appoint officers",
+        text: "All TX corporations must appoint officers",
       },
     ],
     marginBottom: 48
   },
   {
     type: "text",
-    content: "All California corporations must follow stringent compliance rules and regulations. These include financial reports, bylaws, corporate formalities, taxes, fees, business licenses and the like. You can find links to these below.",
+    content: "All Texas corporations must follow stringent compliance rules and regulations. These include financial reports, bylaws, corporate formalities, taxes, fees, business licenses and the like. You can find links to these below.",
     marginBottom: 24
   },
   {
     type: "arrow-link",
     content: {
-      text: "Learn about California corporation requirements.",
+      text: "Learn about Texas corporation requirements.",
       url: "/"
     },
     marginBottom: 32,
@@ -713,7 +738,7 @@ export const corporation = [
   {
     type: "button",
     content: {
-      text: "Learn about California Corporation Taxes and Fees ",
+      text: "Learn about Texas Corporation Taxes and Fees ",
       url: "/"
     },
     theme: "primary56",
@@ -721,7 +746,7 @@ export const corporation = [
   },
   {
     type: "text",
-    content: "Are you ready to start your California corporation? If so, we can help. We provide comprehensive corporation formation services for both S Corporations and C Corporations in California.",
+    content: "Are you ready to start your Texas corporation? If so, we can help. We provide comprehensive corporation formation services for both S Corporations and C Corporations in Texas.",
     marginBottom: 32
   },
   {
@@ -758,7 +783,7 @@ export const corporation = [
   },
   {
     type: "header",
-    content: "Detailed Information for Your California Corporation",
+    content: "Detailed Information for Your Texas Corporation",
     size: 4,
     marginBottom: 24
   },
@@ -771,8 +796,8 @@ export const corporation = [
     type: "svg-color-text-box",
     content: [
       {
-        header: "Forming Your California Corporation",
-        text: "The six steps you need to take to start a California S Corporation or C Corporation.",
+        header: "Forming Your Texas Corporation",
+        text: "The six steps you need to take to start a Texas S Corporation or C Corporation.",
         link: {
           text: "Learn more",
           url: "/"
@@ -785,8 +810,8 @@ export const corporation = [
         boxShadow: false
       },
       {
-        header: "Naming Your California Corporation",
-        text: "How to search the California business registry of the CA Secretary of State and find the right name. Includes information on naming rules, fictitious names, reserving a California corporation name and more.",
+        header: "Naming Your Texas Corporation",
+        text: "How to search the Texas business registry of the TX Secretary of State and find the right name. Includes information on naming rules, fictitious names, reserving a Texas corporation name and more.",
         link: {
           text: "Learn more",
           url: "/"
@@ -799,8 +824,8 @@ export const corporation = [
         boxShadow: false
       },
       {
-        header: "California Registered Agents for Your Corporation",
-        text: "How to appoint a California Registered Agent to your new corporation or change to a different Registered Agent. Includes information on Registered Agent rules and searching for California Registered Agents.",
+        header: "Texas Registered Agents for Your Corporation",
+        text: "How to appoint a Texas Registered Agent to your new corporation or change to a different Registered Agent. Includes information on Registered Agent rules and searching for Texas Registered Agents.",
         link: {
           text: "Learn more",
           url: "/"
@@ -813,8 +838,8 @@ export const corporation = [
         boxShadow: false
       },
       {
-        header: "Fees and Requirements for Your California Corporation",
-        text: "How to understand the various fees you’ll need to pay and the requirements you’ll need to meet for both federal and California rules. Includes details of Employee Identification Numbers (EINs), California and federal business licenses, California Statement of Information reports and more.",
+        header: "Fees and Requirements for Your Texas Corporation",
+        text: "How to understand the various fees you’ll need to pay and the requirements you’ll need to meet for both federal and Texas rules. Includes details of Employee Identification Numbers (EINs), Texas and federal business licenses, Texas Statement of Information reports and more.",
         link: {
           text: "Learn more",
           url: "/"
@@ -827,8 +852,8 @@ export const corporation = [
         boxShadow: false
       },
       {
-        header: "Federal, State, Sales and Other Taxes for Your California Corporation",
-        text: "How to understand the various taxes you will need to pay to the federal and California government. Includes details of federal taxes like income and self-employment, and California taxes like sales tax and income tax.",
+        header: "Federal, State, Sales and Other Taxes for Your Texas Corporation",
+        text: "How to understand the various taxes you will need to pay to the federal and Texas government. Includes details of federal taxes like income and self-employment, and Texas taxes like sales tax and income tax.",
         link: {
           text: "Learn more",
           url: "/"
@@ -847,18 +872,18 @@ export const corporation = [
 export const startCaCorp = [
   {
     type: "header",
-    content: "Start Your California Corporation in Six Steps",
+    content: "Six Easy Steps to Form Your Texas Corporation",
     size: 4,
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "Setting up a CA corporation doesn’t have to be complicated. We’ve created this straightforward guide on how to form a corporation in California.",
+    content: "Setting up a TX corporation doesn’t have to be complicated. We’ve created this straightforward guide on how to form a corporation in Texas.",
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "Starting your California S Corporation or C Corporation with Incfile is fast and easy. We’ll gather all the information we need from you and file it with the CA Secretary of State. Here are the six steps you need to follow to form a corporation in California.",
+    content: "Want Incfile to take care the paperwork for you? Starting your Texas S Corporation or C Corporation with Incfile is fast and easy. We’ll gather all the information we need from you and file it with the TX Secretary of State.",
     marginBottom: 24,
   },
   {
@@ -883,23 +908,23 @@ export const startCaCorp = [
   },
   {
     type: "header",
-    content: "The Benefits of Forming a Corporation in California",
+    content: "The Benefits of Forming a Corporation in Texas",
     size: 4,
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "Briefly, the benefits of forming a California corporation are:",
+    content: "Briefly, the benefits of forming a Texas corporation are:",
     marginBottom: 41,
   },
   {
     type: "list-dot",
     content: {
       list: [
-        "A California S Corporation or C Corporation will protect your personal finances and assets by limiting your liability.",
-        "S Corporations can provide tax advantages for California business owners by reducing the self-employment tax you pay.",
-        "If you want limited options to buy, sell or transfer stock, a California S Corporation gives you some options.",
-        "CA C Corporations give you the most flexibility for creating, transferring and selling stock.",
+        "Texas corporations provide strong liability protection. They insulate your personal assets and finances from those of your business.",
+        "If you want to pay less self employment tax, a Texas S Corporation can save you money.",
+        "TX S Corporations give you some options for creating, transferring and selling stock.",
+        "For more options to create, buy, sell or transfer stock (including publicly), a Texas C Corporation is the option you need.",
       ],
     },
     color: color.orange3,
@@ -909,20 +934,20 @@ export const startCaCorp = [
   },
   {
     type: "text",
-    content: "If you don’t need the options for buying and selling stock, a California LLC may be a better choice for your business. You can even have your LLC treated as an S Corporation for tax purposes to save you money.",
+    content: "If you don’t need the options for buying and selling stock, a Texas LLC may be a better choice for your business. You can even have your LLC treated as an S Corporation for tax purposes to save you money.",
     marginBottom: 24,
   },
   {
     type: "arrow-link",
     content: {
-      text: "Learn about starting a California LLC",
+      text: "Learn about starting a Texas LLC",
       url: "/",
     },
     marginBottom: 48,
   },
   {
     type: "header",
-    content: "The Six Steps to Setting up Your California Corporation",
+    content: "The Six Steps to Setting up Your Texas Corporation",
     size: 4,
     marginBottom: 24,
   },
@@ -931,29 +956,61 @@ export const startCaCorp = [
     content: {
       items: [
         {
-          question: "Search for and Choose the Right Name for Your CA Corporation",
-          answer: "",
+          question: "Search For and Choose a Unique Business Name for Your Texas Corporation",
+          text: "Every TX business needs a unique name, including your corporation. You can carry out a Texas business entity name search on the <a href='/'>Texas Comptroller of Public Accounts website</a> or by using <a href='/'>Texas SOSDirect</a>. The name of your Texas S Corporation or C Corporation cannot be confusable with another business that’s been formed in Texas. If you’re not forming your TX corporation right away, you can reserve the name with the secretary of state.",
+          arrowLink: {
+            text: "Learn how to name your Texas corporation.",
+            url: '/'
+          }
         },
         {
-          question: "Provide an Official Address for Your CA Corporation",
+          question: "Establish Street and Mailing Addresses for Your Texas Corporation",
           answer:
-            "Every California S Corporation or C Corporation must have a designated street address. That could be your home address (if you’re running the company from your residence), your company’s office building or any physical address of your preference. The address can be outside CA, but it cannot be a P.O. Box.",
+            "A Texas corporation must have a designated address. That could be your home address (if you’re running the company from your residence), where your office is located or any physical address of your preference. The address can be outside the state of Texas and can be a P.O. Box.",
         },
         {
-          question: "Assign an Agent for Service of Process to Your California Corporation",
-          answer: "",
+          question: "Assign a Registered Agent for Your Texas Corporation",
+          text: "When your TX corporation is formed, it must have a “Registered Agent.” This is an official position; the Registered Agent is someone who receives official legal and tax correspondence and has responsibility for filing reports with the Texas Secretary of State.<br/><br/>" +
+              "A Registered Agent position for a Texas S Corporation or C Corporation can be filled in several ways.<br/><br/>" +
+              "This position can be carried out by you, another accountable person in the business or a dedicated Registered Agent service. Your TX Registered Agent must have a physical street address in Texas and must be present to receive important documents for your company during business hours.<br/><br/>" +
+              "At Incfile, all of our packages include a Texas Registered Agent service that is free for the first year and just $119 per year afterward. We also have a dashboard where you can log in and easily view any document your Registered Agent has received on your behalf.<br/><br/>" +
+              "Here at Incfile we always recommend using a proper Texas Registered Agent service since they provide several benefits:",
+          list: [
+              "Some people establish companies outside of the state they live in and will use a Registered Agent service to provide an address for receiving legal documentation in the state.",
+              "The Registered Agent address is listed in public records on the secretary of state website. If you do not want your own name and Texas address to be registered, you should use a Registered Agent service.",
+              "The Registered Agent must be present or available during normal business hours (9 a.m. to 5 p.m. Monday to Friday) to receive any legal correspondence, since the type of documents delivered to the Registered Agent require a signature on delivery.",
+          ]
         },
         {
-          question: "Create Your California Articles of Incorporation",
-          answer: "",
+          question: "Create Your Texas Certificate of Formation",
+          answer: "Once you've gathered all the information for your Texas corporation, you’ll need to file a formal document with the TX Secretary of State. This document is known as your “Certificate of Formation,” and filing the document creates your TX corporation. Here’s what the Certificate of Formation normally includes:",
+          list: [
+              "The corporation’s name",
+              "The corporation's Registered Agent and their address",
+              "The names and addresses of directors",
+              "The corporation’s purpose",
+              "The corporation’s capital structure (number of shares to be issued, who owns them, pricing, etc.)",
+              "The name and address of the organizer",
+          ]
         },
         {
-          question: "Send Your California Articles of Incorporation to the Secretary of State",
-          answer: "",
+          question: "File Your Certificate of Formation With the Texas Secretary of State",
+          answer: "You can file your Texas corporation Certificate of Formation online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start a corporation in Texas. You only need to file your Certificate of Formation once.",
         },
         {
-          question: "Your CA Corporation Will Need to Meet Certain Legal and Compliance Requirements",
-          answer: "",
+          question: "Complete the Legal and Compliance Requirements for Your Texas Corporation",
+          answer: "Once your Texas corporation has been created, you will need to get certain legal requirements in place. These include:",
+            list: [
+                "File IRS Small Business Tax Election form 2553 if you want your TX business to be treated as an S Corporation. Any Texas S Corporations formed through Incfile will also include a prepared Form 2553 that will be delivered with the state formation documents.",
+                "Create and issue stock certificates to your shareholders.",
+                "Apply for business licenses and permits. You may require licenses from the state of Texas, your county, township and various industry or federal bodies.",
+                "Get an Employer Identification Number (EIN).",
+                "File for taxes with the Texas Comptroller of Taxes",
+                "Get all formalities in place for employees, including unemployment, disability, payroll, insurance and taxes.",
+                "Appoint a Board of Directors for the corporation.",
+                "Appoint officers to the corporation.",
+                "Get a corporate records book to capture all your important corporate information.",
+            ]
         },
       ],
     },
@@ -961,84 +1018,142 @@ export const startCaCorp = [
   },
   {
     type: "header",
-    content: "Useful Corporation Information From the State \n" + "of California",
+    content: "Useful Corporation Information From the State of Texas",
     size: 4,
     marginBottom: 24,
   },
   {
     type: "arrow-link",
     content: {
-      text: "California Secretary of State website",
+      text: "Texas Secretary of State website",
       url: "/",
     },
     marginBottom: 24,
-  },
-  {
-    type: "arrow-link",
-    content: {
-      text: "General information from the California Secretary of State",
-      url: "/",
-    },
-    marginBottom: 24,
-  },
-  {
-    type: "arrow-link",
-    content: {
-      text: "Checking name availability for your California corporation",
-      url: "/",
-    },
-    marginBottom: 52,
   },
   {
     type: "header",
-    content: "Other Types of CA Corporations",
+    content: "Other Types of TX Corporations",
     size: 4,
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "A regular California S Corporation or C Corporation is suitable for almost all business needs, but you also have a few other options to incorporate a special type of corporation.",
+    content: "A regular Texas S Corporation or C Corporation is suitable for almost all business needs, but you also have a few other options to incorporate a special type of corporation.",
     marginBottom: 52,
   },
   {
     type: "header",
-    content: "Form a Professional California S Corporation or C Corporation",
+    content: "Form a Professional Texas S Corporation or C Corporation",
     size: 4,
     marginBottom: 24,
   },
   {
     type: "text",
     content:
-      "Some states, including California, allow certain occupations to form “Professional Corporations.” These types of corporations may need special requirements and licensing. The California Secretary of State allows for the formation of professional corporations but does not provide a defined list of professions. Instead, they state the following:",
+      "Some states, including Texas, allow certain occupations to form “Professional Corporations.” These types of corporations may need special requirements and licensing. Below, you will find a list that the",
     marginBottom: 24,
   },
+    {
+        type: "text",
+        content: "TX Secretary of State allows to form Texas professional corporations:",
+        marginBottom: 32
+    },
+    {
+        type: "list-dot",
+        content: {
+            list:[
+              "Accountant/CPA",
+              "Acupuncturist",
+              "Architect",
+              "Athletic Trainer",
+              "Attorney",
+              "Audiologist",
+              "Chemical Dependency Counselor, Licensed",
+              "Chiropractor",
+              "Counselor, Licensed (Mental Health or Professional)",
+              "Dental Hygienist",
+              "Dentist",
+              "Electronic Access Control",
+              "EMS Personnel: EMT, Attendant, Paramedic",
+              "EMS Providers",
+              "Engineer",
+              "Equine Dentistry",
+              "Geoscientist, Licensed Professional",
+              "Hearing Aid Dispenser",
+              "Inspector Real Estate or Home",
+              "Insurance Agent/Broker",
+              "Investment Advisor, Registered",
+              "Locksmith",
+              "Marriage/Family Therapist, Licensed",
+              "Massage Therapist",
+              "Massage School/Massage Therapy Instructor",
+              "Medical Physicist, Licensed",
+              "Mental Health Professional, Licensed",
+              "Midwives",
+              "Mold Assessment",
+              "Mold Remediation",
+              "Mortgage Broker",
+              "Nurse",
+              "Nurse Anesthetist",
+              "Nurse, Psychiatric",
+              "Occupational Therapist",
+              "Optometrist",
+              "Orthotist",
+              "Perfusionist",
+              "Pharmacist",
+              "Physical Therapist",
+              "Physician Assistant",
+              "Podiatrist",
+              "Polygraph Examiner",
+              "Private Investigator",
+              "Private Security",
+              "Prosthetist",
+              "Psychologist",
+              "Psychotherapist",
+              "Radiology Technician, Medical",
+              "Real Estate Agent",
+              "Real Estate Broker",
+              "Respiratory Care Therapist",
+              "Sanitarian, Professional",
+              "Securities Broker/ Dealer",
+              "Social Worker— Licensed clinical, baccalaureate, or master",
+              "Speech Pathologist, Speech/Language Pathologist",
+              "Surveyor-Professional, Public or Regular",
+              "Therapeutic Optometrist",
+              "Therapist, Licensed Mental Health",
+              "Veterinarian",
+            ]
+        },
+        color: color.blue3,
+        marginBottom: 48,
+        curve: false,
+    },
   {
     type: "text",
-    content: "“Before submitting the completed form, contact the California state board or agency that controls your profession to find out if your profession is authorized to be a corporation in California and if there are any specific corporate name style rules.”",
+    content: "Professional corporations may be owned by a professional individual or another professional organization. The name of a professional corporation must contain the word “corporation,” “company,” “incorporated,” “limited,” “professional corporation” or an abbreviation.",
     marginBottom: 52,
   },
   {
     type: "header",
-    content: "Form a Foreign LLC in California",
+    content: "File as a Foreign Corporation to Operate in Another State",
+    size: 4,
+    marginBottom: 24,
+  },
+  {
+    type: "text",
+    content: "A “foreign” filing is when you have a regular, domestic corporation in a state (typically the one where you first formed your business) and need the company to be able to operate in another state. This is where you would file a “Foreign Qualification” to the new state for your domestic corporation to be able to operate in both states. You must have an existing domestic corporation before you can file as a foreign corporation.",
+    marginBottom: 52,
+  },
+  {
+    type: "header",
+    content: "Need to Form a Texas Corporation Quickly \n" + "and Easily?",
     size: 4,
     marginBottom: 24,
   },
   {
     type: "text",
     content:
-      "A “foreign” filing is when you have a regular, domestic corporation in a state (typically the one where you first formed your business) and need the company to be able to operate in another state. This is where you would file a “Foreign Qualification” to the new state for your domestic corporation to be able to operate in both states. You must have an existing domestic corporation before you can file as a foreign corporation.",
-    marginBottom: 52,
-  },
-  {
-    type: "header",
-    content: "Need to Form a California Corporation Quickly \n" + "and Easily?",
-    size: 4,
-    marginBottom: 24,
-  },
-  {
-    type: "text",
-    content:
-      "Incfile provides a cost-effective service to help you create your corporation. We guide you through the process and handle most of the administrative steps on your behalf, such as filing your Articles of Incorporation. Our packages also provide a free Registered Agent service for the first year. If you're looking for assistance forming a corporation, we can help you start a CA S Corporation or C Corporation.",
+      "Incfile provides a cost-effective service to help you create your corporation. We guide you through the process and handle most of the administrative steps on your behalf, such as filing your Articles of Incorporation. Our packages also provide a free Registered Agent service for the first year. If you're looking for assistance forming a corporation, we can help you start a TX S Corporation or C Corporation.",
     marginBottom: 24,
   },
   {
@@ -1064,14 +1179,14 @@ export const startCaCorp = [
 export const naming = [
   {
     type: "header",
-    content: "CA Name Search and Registration for Your \n" + "California Corporation",
+    content: "Naming Your Texas Corporation",
     size: 4,
     marginBottom: 24,
   },
   {
     type: "text",
     content:
-      "Whether you’re searching for the right California corporation name or registering your business with the CA Secretary of State, we can help. We’ve got all the information you need on California corporation searches, S Corporation and C Corporation naming rules, fictitious names and registering your business.",
+      "You need the right name for your Texas corporation. Choosing the right name is vital because it tells your suppliers, customers and employees what your business does. The Texas Secretary of State has several rules and regulations about what you can call your new business. Let’s explore what they are.",
     marginBottom: 24,
   },
   {
@@ -1096,38 +1211,46 @@ export const naming = [
   },
   {
     type: "header",
-    content: "California Corporation Search",
+    content: "Texas Corporation Name Business Search",
     size: 4,
     marginBottom: 24,
   },
   {
     type: "text",
     content:
-      "Before you can name your CA corporation, you need to make sure there aren’t any other businesses in California with that name. That means searching the California Secretary of State website using their business search tool. You can easily look up CA corporations by name and other details.",
+      "Before you can name your TX corporation, you need to make sure there aren’t any other businesses in Texas with that name. That means searching the Texas Secretary of State or Comptroller of Public Accounts websites using their business search tools. You can easily look up TX corporations by name and other details.",
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "If your S Corporation or C Corporation name is already used by any type of business entity in California, that means it’s not available and you won’t be able to register it. Try searching for a different CA corporation name instead.",
+    content: "If your S Corporation or C Corporation name is already used by any type of business entity in Texas, that means it’s not available and you won’t be able to register it. Try searching for a different TX corporation name instead.",
     marginBottom: 24,
   },
   {
     type: "arrow-link",
     content: {
-      text: "California Secretary of State corporation name search tool",
+      text: "Texas Comptroller taxable entity search tool",
+      url: "/",
+    },
+    marginBottom: 24,
+  },
+  {
+    type: "arrow-link",
+    content: {
+      text: "Texas SOS Direct corporation name search",
       url: "/",
     },
     marginBottom: 48,
   },
   {
     type: "header",
-    content: "California Secretary of State Rules for Naming Your \n" + "Corporation",
+    content: "Follow These Rules to Name Your Texas Corporation",
     size: 4,
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "Once you’ve found an original name for your California S Corp or C Corp, you will need to make sure it meets California Secretary of State naming rules.",
+    content: "Once you’ve checked whether another business in TX is using your corporation name and confirmed availability, you’ll need to understand Texas Secretary of State naming rules.",
     marginBottom: 48,
   },
   {
@@ -1143,24 +1266,24 @@ export const naming = [
   },
   {
     type: "header",
-    content: "Your California Corporation Name Must Be Unique",
+    content: "Your Texas Corporation Name Must Be Unique",
     size: 4,
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "The name you have chosen for your S Corporation or C Corporation cannot be used by any other registered business in the state of California. This is why you must check business name availability on the CA Secretary of State website.",
+    content: "The name you have chosen for your S Corporation or C Corporation cannot be used by any other registered business in the state of Texas. This is why you must check business name availability on the TX Secretary of State website.",
     marginBottom: 48,
   },
   {
     type: "header",
-    content: "Your CA Corporation Name Must Not Be Confusable With \n" + "Another Business Name",
+    content: "The Name of Your Corporation Cannot Be Similar to Other Businesses in Texas",
     size: 4,
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "Not only must your CA corporation name be unique, it cannot be similar to another corporation or LLC name in California. You cannot use the following factors to say your name is different from the name of another business:",
+    content: "The name of your TX S Corporation or C Corporation cannot be similar to another formal business name in Texas. The following terms can’t be used to say your business name is different from another business name:",
     marginBottom: 24,
   },
   {
@@ -1184,7 +1307,7 @@ export const naming = [
   },
   {
     type: "header",
-    content: "Your California Corporation Name Must Contain Certain Words",
+    content: "Your Texas Corporation Name Must Contain Certain Words",
     size: 4,
     marginBottom: 24,
   },
@@ -1195,7 +1318,7 @@ export const naming = [
   },
   {
     type: "header",
-    content: "Your California Corporation Name May Have Other Restrictions",
+    content: "Your Texas Corporation Name May Have Other Restrictions",
     size: 4,
     marginBottom: 24,
   },
@@ -1208,10 +1331,10 @@ export const naming = [
     type: "list-dot",
     content: {
       list: [
-        "Are very similar to the name of a federal or CA agency or organization (e.g., FBI, FDA, California Department of Revenue, California Police, Treasury, etc.)",
-        "Suggest affiliation with a federal or CA agency or organization",
+        "Are very similar to the name of a federal or TX agency or organization (e.g., FBI, FDA, Texas Department of Revenue, Texas Police, Treasury, etc.)",
+        "Suggest affiliation with a federal or TX agency or organization",
         "Use the term “Olympic” or any terms that are trademarks of the Olympic organization",
-        "Imply a purpose that it would be illegal for your California corporation to carry out",
+        "Imply a purpose that it would be illegal for your Texas corporation to carry out",
       ],
     },
     color: color.yellow3,
@@ -1220,46 +1343,33 @@ export const naming = [
   },
   {
     type: "header",
-    content: "Specific Corporation Naming Rules in California",
+    content: "Specific Rules for Naming Your Texas Corporation",
     size: 4,
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "There are additional, specific rules you will need to follow from the California Secretary of State for naming your CA S Corporation or C Corporation.",
+    content: "There are additional, specific rules you will need to follow from the Texas Secretary of State for naming your TX S Corporation or C Corporation.",
     marginBottom: 24,
-  },
-  {
-    type: "list-dot",
-    content: {
-      list: [
-        "Using the following words in a corporation name requires special approval from a regulatory body: bank, trust, trustee or related words; credit union or related words; cooperative or any abbreviation of that word; insurer, insurance or related words",
-        'The name of a flexible purpose corporation must contain the words "flexible purpose corporation" or an abbreviation of those words',
-        "The name of a corporation authorized to incorporate as a professional corporation must comply with the name style requirements of the regulatory agency which has jurisdiction over the particular profession",
-      ],
-    },
-    color: color.blue3,
-    marginBottom: 48,
-    curve: false,
   },
   {
     type: "arrow-link",
     content: {
-      text: "More on California Secretary of State business naming rules",
+      text: "More on Texas Secretary of State business naming rules",
       url: "/",
     },
     marginBottom: 48,
   },
   {
     type: "header",
-    content: "California Corporation Fictitious Names",
+    content: "Texas Corporation Assumed Names",
     size: 4,
     marginBottom: 24,
   },
   {
     type: "text",
     content:
-      "Some corporations choose to do business under a different name from the name they were formed under. In California, doing business under a different name is known as a “Fictitious Name.” We can file a Fictitious Name for your California corporation on your behalf with the county in which your principal place of business is located.",
+      "Some corporations choose to do business under a different name from the name they were formed under. In Texas, doing business under a different name is known as an “Assumed Name.” We can file an Assumed Business Name for your Texas corporation on your behalf.",
     marginBottom: 24,
   },
   {
@@ -1272,20 +1382,20 @@ export const naming = [
   },
   {
     type: "header",
-    content: "Rules on Infringing on Service Marks or Trademarks Inside \n" + "or Outside California",
+    content: "Rules on Infringing on Service Marks or Trademarks Inside or Outside Texas",
     size: 4,
     marginBottom: 24,
   },
   {
     type: "text",
     content:
-      "In addition to the rules above, it’s also vital to see if your California corporation name might infringe on the trademark or service mark of another business. For example, it might not be a good idea to call yourself “General Electric Research Services,” since General Electric is a trademark.",
+      "In addition to the rules above, it’s also vital to see if your Texas corporation name might infringe on the trademark or service mark of another business. For example, it might not be a good idea to call yourself “General Electric Research Services,” since General Electric is a trademark.",
     marginBottom: 24,
   },
   {
     type: "text",
     content:
-      "The easiest way to see if your proposed business name infringes is to carry out a trademark search. You can do that via the United States Patent and Trademark Office, or Incfile can help you protect your business with our <a href='/'>Trademark Search and Registration</a> service. You should also bear in mind that your California corporation name cannot be substantially similar to an existing trademark or service mark.",
+      "The easiest way to see if your proposed business name infringes is to carry out a trademark search. You can do that via the United States Patent and Trademark Office, or Incfile can help you protect your business with our <a href='/'>Trademark Search and Registration</a> service. You should also bear in mind that your Texas corporation name cannot be substantially similar to an existing trademark or service mark.",
     marginBottom: 48,
   },
   {
@@ -1296,7 +1406,7 @@ export const naming = [
   },
   {
     type: "text",
-    content: "Once you’ve found the right name for your business, it’s time to make it a reality. Check out our packages for starting your California corporation and form either an S Corporation or a C Corporation today.",
+    content: "Once you’ve found the right name for your business, it’s time to make it a reality. Check out our packages for starting your Texas corporation and form either an S Corporation or a C Corporation today.",
     marginBottom: 24,
   },
   {
@@ -1322,22 +1432,22 @@ export const naming = [
 export const agents = [
   {
     type: "header",
-    content: "Why Your California Corporation Needs a Registered \n" + "Agent Service",
+    content: "Why Your Texas Corporation Needs a Registered Agent Service",
     size: 4,
     marginBottom: 24,
   },
   {
     type: "text",
     content:
-      "The California Secretary of State requires every CA corporation to have a Registered Agent. Once you have assigned a California Registered Agent, they can receive official correspondence and documents on behalf of your CA business. Registered Agents can be individuals or other specialized Registered Agent service businesses.",
+      "Your Texas corporation needs to have a TX Registered Agent. They’re chosen by you and can accept legal notices and other correspondence for your Texas corporation on your behalf from the Texas Secretary of State.",
     marginBottom: 41,
   },
   {
     type: "list-dot",
     content: {
       list: [
-        "If you choose a person as a Registered Agent, he or she must reside in California",
-        "If you choose a business as a Registered Agent, they must be able to conduct business in California",
+        "If you choose a person as a Registered Agent, he or she must reside in Texas",
+        "If you choose a business as a Registered Agent, they must be able to conduct business in Texas",
         "Your Registered Agent must have a physical street address (not a P.O. Box)",
         "They must be available in person to sign for any delivered correspondence during normal business hours",
       ],
@@ -1373,39 +1483,48 @@ export const agents = [
   },
   {
     type: "header",
-    content: "Information on the California Secretary of State and CA \n" + "Registered Agent Services",
+    content: "Information on the Texas Secretary of State and TX Registered Agent Services",
     size: 4,
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "Registered Agents in California are known as “Agents for Service of Process.” Here’s some important information from the California Secretary of State on CA Registered Agent services.",
+    content: "Below, you’ll find what the Texas Secretary of State says about TX Registered Agent services.",
     marginBottom: 24,
   },
   {
     type: "text",
     content:
-      "“An agent for service of process is an individual who resides in California, or a corporation, designated to accept service of process (court papers) if the business entity is sued. If a corporation is designated as agent for service of process, that corporation must have previously filed a certificate pursuant to California Corporations Code section 1505.”",
+      "“The Texas Business Organizations Code (“BOC”) requires every domestic or foreign filing entity to maintain a registered agent and office in Texas. The BOC also permits the filing of an appointment of agent for service of process by an unincorporated nonprofit association. Additionally, the Texas Finance Code permits a Texas financial institution to appoint an agent for service of process.",
     marginBottom: 48,
   },
   {
+    type: "text",
+    content: "An entity’s registered agent is an agent of the entity on whom may be served any process, notice or demand required or permitted by law to be served on the entity.",
+    marginBottom: 24
+  }, {
+    type: "text",
+    content: "An entity’s registered office must be a physical address in Texas where the registered agent can be served with process during business hours. The registered office is also where the Office of the Secretary of State will mail correspondence. A registered office is the business office address of the registered agent and may be the same as the entity’s place of business. It cannot, however, be a post office box that is part of a commercial mail or message service unless that commercial enterprise is the registered agent.”",
+    marginBottom: 24
+  },
+  {
     type: "header",
-    content: "What a CA Registered Agent Does for Your Corporation",
+    content: "Services Provided by a Texas Registered Agent to Your Corporation",
     size: 4,
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "What can your corporation expect from your California Registered Agent? Their main function is to accept official documents and correspondence from the CA Secretary of State that will affect your corporation. This includes:",
+    content: "A Texas Registered Agent may receive, on behalf of your corporation:",
     marginBottom: 41,
   },
   {
     type: "list-dot",
     content: {
       list: [
-        "Correspondence from the California Secretary of State",
-        "Service of process notices (e.g., if your CA corporation is sued or required to appear in court)",
-        "Official California state and federal government correspondence and notifications",
+        "Correspondence from the Texas Secretary of State",
+        "Service of process notices (e.g., if your TX corporation is sued or required to appear in court)",
+        "Official Texas state and federal government correspondence and notifications",
         "Tax forms and requests to complete permits, company filings and reports",
       ],
     },
@@ -1415,23 +1534,23 @@ export const agents = [
   },
   {
     type: "header",
-    content: "Why Assigning Yourself as the California Registered \n" + "Agent for Your Corporation Might Be a Bad Idea",
+    content: "Why You Might Not Want to Appoint Yourself as Your Own Texas Registered Agent",
     size: 4,
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "You can choose to act as your own CA Registered Agent for your California S Corp or C Corp.",
+    content: "You can choose to act as your own TX Registered Agent for your Texas S Corp or C Corp, but it’s not often recommended for the following reasons.",
     marginBottom: 24,
   },
   {
     type: "list-dot",
     content: {
       list: [
-        "The Registered Agent must have a physical street address in California. Some people establish corporations outside of California and will need to use a Registered Agent service to provide the address.",
+        "The Registered Agent must have a physical street address in Texas. Some people establish corporations outside of Texas and will need to use a Registered Agent service to provide the address.",
         "A person must always be available to sign for legal correspondence during business hours. If you can’t always be around, consider using a third-party Registered Agent service like Incfile.",
-        "The Registered Agent’s name and CA address are part of the public record and available through the California Secretary of State website. If you would prefer your name and address aren’t published, you might choose a Registered Agent service.",
-        "If you change your California business address or move out of state, you won’t need to file additional documentation with the secretary of state for the new address of your Registered Agent if using a service. You will need to set up a new Registered Agent service in the new state.  ",
+        "The Registered Agent’s name and TX address are part of the public record and available through the Texas Secretary of State website. If you would prefer your name and address aren’t published, you might choose a Registered Agent service.",
+        "If you change your Texas business address or move out of state, you won’t need to file additional documentation with the secretary of state for the new address of your Registered Agent if using a service. You will need to set up a new Registered Agent service in the new state.  ",
       ],
     },
     color: color.babyblue3,
@@ -1440,27 +1559,27 @@ export const agents = [
   },
   {
     type: "text",
-    content: "There are more considerations, but this should help you with your decision to use a Registered Agent service.",
+    content: "There are more considerations, but this should help you with your decision to use a <a href='/'>Registered Agent service</a>.",
     marginBottom: 48,
   },
   {
     type: "header",
-    content: "Possible Outcomes of Not Assigning a Registered Agent \n" + "for Your California Corporation",
+    content: "The Problems Caused When You Don’t Appoint a Texas Registered Agent Service",
     size: 4,
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "What happens if you choose not to assign or provide details of a Registered Agent to the California Secretary of State? There are several possible ramifications, including:",
+    content: "What are the issues with not having a TX Registered Agent or not providing that information to the Texas Secretary of State?",
     marginBottom: 41,
   },
   {
     type: "list-dot",
     content: {
       list: [
-        "Getting served or sued and not finding out about it: If your California corporation is sued and you don’t know about it, you could lose to a default judgment in your absence.",
-        "Falling out of good standing with the California Secretary of State: If you don’t respond to certain correspondence (like the request for your Annual Report), certain states may revoke your right to do business.",
-        "Losing your status as a California corporation: A CA Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your California corporation may be dissolved.",
+        "Getting served or sued and not finding out about it: If your Texas corporation is sued and you don’t know about it, you could lose to a default judgment in your absence.",
+        "Falling out of good standing with the Texas Secretary of State: If you don’t respond to certain correspondence (like the request for your Annual Report), certain states may revoke your right to do business.",
+        "Losing your status as a Texas corporation: A TX Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your Texas corporation may be dissolved.",
       ],
     },
     color: color.yellow3,
@@ -1469,39 +1588,44 @@ export const agents = [
   },
   {
     type: "header",
-    content: "Incfile Provides a Free California Corporation Registered \n" + "Agent Service for the First Year",
+    content: "Incfile Provides a Free Texas Corporation Registered Agent Service for the First Year",
     size: 4,
     marginBottom: 24,
   },
   {
     type: "text",
     content:
-      "If you have an S Corporation or C Corporation that’s incorporated in California and you need a CA Registered Agent, we can help. Incfile provides a complete Registered Agent service for any California corporation. If you form your business through Incfile, we’ll act as your Registered Agent free for your first year (normally a $119 annual cost).",
+      "If you have an S Corporation or C Corporation that’s incorporated in Texas and you need a TX Registered Agent, we can help. Incfile provides a complete Registered Agent service for any Texas corporation. If you form your business through Incfile, we’ll act as your Registered Agent free for your first year (normally a $119 annual cost).",
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "We are authorized to conduct business in California and can legally act as your Registered Agent for your CA corporation. Here’s what you need to know about Incfile’s CA Registered Agent service for corporations:",
-    marginBottom: 41,
+    content: "We are authorized to conduct business in Texas and can legally act as your Registered Agent for your TX corporation.",
+    marginBottom: 24,
   },
+    {
+        type: "text",
+        content: " Here’s what you need to know about Incfile’s TX Registered Agent service for corporations:",
+        marginBottom: 41
+    },
   {
     type: "list-dot",
     content: {
       list: [
         "The Registered Agent will always be available to accept documents and letters on your behalf",
-        "We automatically notify you whenever we receive correspondence for your business from the California Secretary of State or anyone else",
+        "We automatically notify you whenever we receive correspondence for your business from the Texas Secretary of State or anyone else",
         "We scan your correspondence and upload it to a dashboard, so you can review it when convenient",
         "We forward all correspondence to an address you choose",
       ],
     },
     color: color.orange3,
-    marginBottom: 0,
+    marginBottom: 24,
     curve: false,
   },
   {
     type: "button",
     content: {
-      text: "Order Incfile’s California Registered Agent Service",
+      text: "Order Incfile’s Texas Registered Agent Service",
       url: "/",
     },
     theme: "primary56",
@@ -1534,7 +1658,7 @@ export const agents = [
   },
   {
     type: "header",
-    content: "Useful Resources for California Registered Agent \n" + "Services",
+    content: "Useful Resources for Texas Registered Agent \n" + "Services",
     size: 4,
     marginBottom: 24,
   },
@@ -1546,7 +1670,7 @@ export const agents = [
   {
     type: "arrow-link",
     content: {
-      text: "The Main Functions of a California Registered Agent",
+      text: "The Main Functions of a Texas Registered Agent",
       url: "/",
     },
     marginBottom: 24,
@@ -1554,7 +1678,7 @@ export const agents = [
   {
     type: "arrow-link",
     content: {
-      text: "Changing Your California Registered Agent",
+      text: "Changing Your Texas Registered Agent",
       url: "/",
     },
     marginBottom: 24,
@@ -1562,7 +1686,7 @@ export const agents = [
   {
     type: "arrow-link",
     content: {
-      text: "What a California Registered Agent Does",
+      text: "What a Texas Registered Agent Does",
       url: "/",
     },
     marginBottom: 24,
@@ -1571,21 +1695,26 @@ export const agents = [
 export const filing = [
   {
     type: "header",
-    content: "California Corporation Form and Filing Rules",
+    content: "Texas Corporation Form and Filing Rules",
     size: 4,
     marginBottom: 24,
   },
   {
     type: "text",
     content:
-      "If you want to form a corporation in California, there are certain forms and legalities you must have in place. These requirements come from the CA Secretary of State, the federal government and elsewhere. We’ve detailed many of the forms and requirements for your California corporation below. Note that some of these are one-off activities, and others will need to be completed periodically.",
+      "When you’re forming a Texas S Corporation or C Corporation, you will need to file certain forms and pay certain fees. Requirements can come from various bodies including the federal government, the TX Secretary of State and elsewhere.",
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "We provide a paid service to take care of certain filings and forms for your California corporation. Alternatively, you can choose to file these requirements yourself — make sure that you set calendar reminders.",
+    content: "Below is a rundown of what you’ll need to do, together with information on the requirements for your Texas corporation. Some of these forms you only need to submit once, while others must be filed on a regular basis.",
     marginBottom: 24,
   },
+    {
+        type: "text",
+        content: "Incfile provides a paid service to take care of certain filings and forms for your Texas corporation. Alternatively, you can choose to file these requirements yourself — make sure that you set calendar reminders.",
+        marginBottom: 24
+    },
   {
     type: "buttons",
     content: [
@@ -1608,26 +1737,33 @@ export const filing = [
   },
   {
     type: "header",
-    content: "Form Your Business With the Articles of Incorporation",
+    content: "File Your Certificate of Formation",
     size: 4,
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "The California Secretary of State requires a formal document from you to form your CA S Corporation or C Corporation. This document is known as your Articles of Incorporation.",
+    content: "The Certificate of Formation document is the formal paperwork that you file with the Texas Secretary of State to create your corporation. Once the Certificate of Formation document is filed with the TX Secretary of State, your business is legally formed as a Texas corporation.",
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "Once the Articles of Incorporation document is filed with the CA Secretary of State, your business is legally formed as a California corporation. The Articles of Incorporation typically includes:",
+    content: "The Certificate of Formation typically includes:",
     marginBottom: 41,
   },
   {
     type: "list-dot",
     content: {
-      list: ["The corporation’s name", "The corporation’s mailing address and street address", "The corporation's Registered Agent and their address", "The corporation’s capital structure (number of shares to be issued, who owns them, pricing, etc.)", "The name and address of the incorporator"],
+      list: [
+        "The corporation’s name",
+        "The corporation's Registered Agent and their address",
+        "The names and addresses of directors",
+        "The corporation’s purpose",
+        "The corporation’s capital structure (number of shares to be issued, who owns them, pricing, etc.)",
+        "The name and address of the organizer",
+      ],
     },
-    color: color.green3,
+    color: color.blue3,
     marginBottom: 48,
     curve: false,
   },
@@ -1638,13 +1774,13 @@ export const filing = [
   },
   {
     type: "header",
-    content: "Get the Right Permits and Licenses for Your \n" + "California S Corp or C Corp",
+    content: "Get the Right Permits and Licenses for Your Texas S Corp or C Corp",
     size: 4,
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "Most CA corporations will need to file and pay for various permits and business licenses as you will need them to legally carry out business in California. We can help you understand the exact permits and licenses required for your business to be compliant.",
+    content: "Most TX corporations will need to file and pay for various permits and business licenses as you will need them to legally carry out business in Texas. We can help you understand the exact permits and licenses required for your business to be compliant.",
     marginBottom: 48,
   },
   {
@@ -1656,7 +1792,7 @@ export const filing = [
   {
     type: "text",
     content:
-      "Various cities in California have slightly different rules and fees for permits and licenses for corporations. Check with your local California city administration to see what their rules are. You will need a separate permit or license for each city your California corporation operates in.",
+      "Various cities in Texas have slightly different rules and fees for permits and licenses for corporations. Check with your local Texas city administration to see what their rules are. You will need a separate permit or license for each city your Texas corporation operates in.",
     marginBottom: 48,
   },
   {
@@ -1667,7 +1803,7 @@ export const filing = [
   },
   {
     type: "text",
-    content: "Depending on the type of business you are running, you may need to get additional permits and licenses from the county or state of California. You can get an idea of the types of permits and licenses your S Corporation or C Corporation might need from the State of California website.",
+    content: "Depending on the type of business you are running, you may need to get additional permits and licenses from the county or state of Texas. You can get an idea of the types of permits and licenses your S Corporation or C Corporation might need from the State of Texas website.",
     marginBottom: 48,
   },
   {
@@ -1683,14 +1819,14 @@ export const filing = [
   },
   {
     type: "header",
-    content: "Learn What Permits and Licenses Your California \n" + "Corporation Needs With Incfile",
+    content: "Learn What Permits and Licenses Your Texas \n" + "Corporation Needs With Incfile",
     size: 4,
     marginBottom: 24,
   },
   {
     type: "text",
     content:
-      "Because permits vary widely depending on the type of California corporation you are operating and where you are located, we provide a comprehensive Business License Research Package. It’s designed to tell you all of the licenses and permits necessary for your new corporation. It includes:",
+      "Because permits vary widely depending on the type of Texas corporation you are operating and where you are located, we provide a comprehensive Business License Research Package. It’s designed to tell you all of the licenses and permits necessary for your new corporation. It includes:",
     marginBottom: 41,
   },
   {
@@ -1704,7 +1840,7 @@ export const filing = [
   },
   {
     type: "text",
-    content: "Your customized Business License Research Package will be emailed to you within two days of your California Corporation being formed by the California Secretary of State.",
+    content: "Your customized Business License Research Package will be emailed to you within two days of your Texas Corporation being formed by the Texas Secretary of State.",
     marginBottom: 24,
   },
   {
@@ -1718,7 +1854,7 @@ export const filing = [
   },
   {
     type: "header",
-    content: "Other Special Requirements for Your California \n" + "S Corp or C Corp",
+    content: "Other Special Requirements for Your Texas S Corp or C Corp",
     size: 4,
     marginBottom: 24,
   },
@@ -1729,27 +1865,27 @@ export const filing = [
   },
   {
     type: "header",
-    content: "Create Bylaws for Your California Corporation",
+    content: "Your Texas Corporation Must Have Certain Bylaws",
     size: 5,
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "Bylaws are the formal, internal rules that your California corporation must follow to stay active. You will need to create and agree to bylaws in certain areas.",
+    content: "Bylaws are the formal, internal rules that your Texas corporation must follow to stay active. You will need to create and agree to bylaws in certain areas.",
     marginBottom: 41,
   },
   {
     type: "list-dot",
     content: {
       list: [
-        "Defining your California registered office and CA Registered Agent",
+        "Defining your Texas registered office and TX Registered Agent",
         "Stating details of the Annual General Meeting (AGM), including date, place, time and other relevant information",
         "Other details from the AGM, including the order of business, notice, voting record, quorum, proxies, shareholder actions and more",
         "Stating when a special shareholders’ meeting may be held and the circumstances that could lead to it",
         "Details of stock certificates, ownership, issuing and transfer",
         "Details of the Board of Directors including how they are elected and appointed, their number, the powers they have, how they can be removed, regular meetings and agendas, executive committees, remuneration and other areas",
         "Details of the various officers in the corporation including how they are chosen and appointed",
-        "Designations of officers in the California corporation including president, vice presidents, secretary, assistant secretaries and treasurer",
+        "Designations of officers in the Texas corporation including president, vice presidents, secretary, assistant secretaries and treasurer",
         "Rules around dividends, declarations and reserves",
         "Any other formalities the corporation believes need to be documented",
       ],
@@ -1766,7 +1902,7 @@ export const filing = [
   },
   {
     type: "text",
-    content: "Ownership in a California corporation is expressed through the issuance of shares. You must create stock certificates and formally issue stock to any agreed initial shareholders in the corporation.",
+    content: "Ownership in a Texas corporation is expressed through the issuance of shares. You must create stock certificates and formally issue stock to any agreed initial shareholders in the corporation.",
     marginBottom: 48,
   },
   {
@@ -1778,7 +1914,7 @@ export const filing = [
   {
     type: "text",
     content:
-      "You must appoint directors to all positions in line with the agreed California corporation bylaws. The Board of Directors is responsible for the strategic direction and overall management of the corporation. The board selects officers who will manage the day-to-day activities of the corporation.",
+      "You must appoint directors to all positions in line with the agreed Texas corporation bylaws. The Board of Directors is responsible for the strategic direction and overall management of the corporation. The board selects officers who will manage the day-to-day activities of the corporation.",
     marginBottom: 48,
   },
   {
@@ -1789,7 +1925,7 @@ export const filing = [
   },
   {
     type: "text",
-    content: "Officers are the individuals who manage the California corporation on a day-to-day basis. At minimum a CA corporation should have a president, secretary and treasurer. Theoretically, one person could hold more than one position.",
+    content: "Officers are the individuals who manage the Texas corporation on a day-to-day basis. At minimum a TX corporation should have a president, secretary and treasurer. Theoretically, one person could hold more than one position.",
     marginBottom: 48,
   },
   {
@@ -1801,7 +1937,7 @@ export const filing = [
   {
     type: "text",
     content:
-      "Your California corporation will need a book to record important information about the business. This book will include details like your Articles of Incorporation, corporate bylaws, meeting minutes, AGM details, directors, officers, stock certificate information, transfer documents and more.",
+      "Your Texas corporation will need a book to record important information about the business. This book will include details like your Articles of Incorporation, corporate bylaws, meeting minutes, AGM details, directors, officers, stock certificate information, transfer documents and more.",
     marginBottom: 48,
   },
   {
@@ -1812,7 +1948,7 @@ export const filing = [
   },
   {
     type: "text",
-    content: "You may need to hire employees for your California corporation. You will need:",
+    content: "You may need to hire employees for your Texas corporation. You will need:",
     marginBottom: 41,
   },
   {
@@ -1835,13 +1971,13 @@ export const filing = [
   },
   {
     type: "header",
-    content: "Your California Corporation Must Hold an Annual General Meeting",
+    content: "Hold an Annual General Meeting for Your Texas Corporation",
     size: 5,
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "You must hold a yearly meeting that all directors, officers and shareholders of the CA corporation are invited to. The purpose of an AGM is generally to:",
+    content: "You must hold a yearly meeting that all directors, officers and shareholders of the TX corporation are invited to. The purpose of an AGM is generally to:",
     marginBottom: 41,
   },
   {
@@ -1855,7 +1991,7 @@ export const filing = [
   },
   {
     type: "header",
-    content: "California Corporation Tax Registration",
+    content: "Texas Corporation Tax Registration",
     size: 4,
     marginBottom: 24,
   },
@@ -1867,7 +2003,13 @@ export const filing = [
   {
     type: "list-dot",
     content: {
-      list: ["The corporation’s name", "The corporation’s mailing address and street address", "The corporation's Registered Agent and their address", "The corporation’s capital structure (number of shares to be issued, who owns them, pricing, etc.)", "The name and address of the incorporator"],
+      list: [
+        "Federal income tax",
+        "Corporation tax (only for C Corporations)",
+        "Sales and Use Tax",
+        "Employment taxes",
+        "Texas Franchise Tax",
+      ],
     },
     color: color.green3,
     marginBottom: 48,
@@ -1875,28 +2017,40 @@ export const filing = [
   },
   {
     type: "text",
-    content: "You can find details on the <a href='/'>California Tax Service Center</a> and IRS websites.",
+    content: "You can find details on the <a href='/'>Texas Comptroller of Public Accounts</a> and IRS websites.",
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "<a href='/'>Learn more about taxes for your California corporation.</a>",
+    content: "<a href='/'>Learn more about taxes for your Texas corporation</a>",
     marginBottom: 48,
   },
   {
     type: "header",
-    content: "Annual Statement of Information Report for Your \n" + "California Corporation",
+    content: "Annual Statement of Information Report for Your \n" + "Texas Corporation",
     size: 4,
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "In California, S Corporations and C Corporations must file a Statement of Information report with the secretary of state every year. Failure to file the report could result in late fees or your CA corporation being dissolved.",
+    content: "Most states need to file an annual (or other periodic) report with their Secretary of State. Texas has two annual filing requirements for corporation reports:",
     marginBottom: 24,
   },
   {
+      type: "list-dot",
+      content: {
+          list:[
+              "Public Information Report",
+              "Franchise Tax Report",
+          ]
+      },
+      color: color.red3,
+      marginBottom: 48,
+      curve: false,
+  },
+  {
     type: "text",
-    content: "<a href='/'>Learn about your ongoing California corporation filing requirements</a> and business filing deadlines with our helpful California ongoing filing lookup tool.",
+    content: "<a href='/'>Learn about your ongoing Texas corporation filing requirements</a> and business filing deadlines with our helpful Texas ongoing filing lookup tool.",
     marginBottom: 0,
   },
   {
@@ -1910,25 +2064,25 @@ export const filing = [
   },
   {
     type: "header",
-    content: "Annual California Franchise Tax Report",
+    content: "Franchise Tax Report for Your Texas LLC",
     size: 4,
     marginBottom: 24,
   },
   {
     type: "text",
     content:
-      "The California Franchise Tax Board requires that all corporations registered in the State of California pay a franchise tax. New corporations that incorporate in California are exempt from the first year minimum tax, but corporate owners are still responsible for paying the applicable franchise tax on any net income earned during the first year. Starting in the second year, corporations are subject to the annual minimum franchise tax rule.",
+      "You will need to file a franchise tax report with the <a href='/'>comptroller of public accounts</a>. These are due by May 15 every year.",
     marginBottom: 48,
   },
   {
     type: "header",
-    content: "Certificate of Good Standing for Your California \n" + "Corporation",
+    content: "Certificate of Good Standing for Your Texas \n" + "Corporation",
     size: 4,
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "You may need a Certificate of Good Standing for your California corporation to carry out some business-related services like opening a bank account.",
+    content: "You may need a Certificate of Good Standing for your Texas corporation to carry out some business-related services like opening a bank account.",
     marginBottom: 0,
   },
   {
@@ -1942,13 +2096,13 @@ export const filing = [
   },
   {
     type: "header",
-    content: "Ready to Start Your California Corporation?",
+    content: "Ready to Start Your Texas Corporation?",
     size: 4,
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "Incfile provides a cost-effective service to help you create your California corporation. We guide you through the process and handle most of the administrative steps, such as filing the necessary forms on your behalf.",
+    content: "Incfile provides a cost-effective service to help you create your Texas corporation. We guide you through the process and handle most of the administrative steps, such as filing the necessary forms on your behalf.",
     marginBottom: 24,
   },
   {
@@ -1980,18 +2134,18 @@ export const filing = [
 export const taxes = [
   {
     type: "header",
-    content: "California Corporation Taxes and Fees",
+    content: "Fees and Taxes for Your Texas Corporation",
     size: 4,
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "You’ll need to pay certain taxes and fees for your California S Corp or C Corp. We’ve included the more common ones below.",
+    content: "You’ll need to pay certain taxes and fees for your Texas S Corp or C Corp. We’ve included the more common ones below.",
     marginBottom: 48,
   },
   {
     type: "header",
-    content: "Common Fees for a California Corporation",
+    content: "Texas Corporation Fees",
     size: 4,
     marginBottom: 24,
   },
@@ -2000,20 +2154,16 @@ export const taxes = [
     content: {
       items: [
         {
-          question: "Fees for forming a corporation in California",
-          answer: "",
+          question: "Fees for forming a corporation in Texas",
+          answer: "Learn about standard filing costs here for TX corporations.",
         },
         {
-          question: "California Statement of Information Report Fee",
-          answer: "A yearly fee when you file your Annual Repo",
+          question: "Texas Statement of Information Report Fee",
+          answer: "A yearly fee when you file your Annual Report.",
         },
         {
-          question: "California Franchise Tax Fee",
-          answer: "",
-        },
-        {
-          question: "California Permits and Licenses",
-          answer: "",
+          question: "Texas Permits and Licenses",
+          answer: "These are the fees for creating or renewing your licenses and permits on a regular basis. These depend on the type of Texas corporation you’re operating and where you’re located.",
         },
       ],
     },
@@ -2021,18 +2171,18 @@ export const taxes = [
   },
   {
     type: "header",
-    content: "Taxes You and Your California Corporation Need to Pay",
+    content: "Taxes Payable by Your Texas Corporation",
     size: 4,
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "California S Corporations and C Corporations are taxed differently. Find the details below.",
+    content: "The way that Texas S Corporations and C Corporations pay taxes is different. We’ll take each one separately.",
     marginBottom: 48,
   },
   {
     type: "header",
-    content: "Both S Corporations and C Corporations in California Need to Pay \n" + "These Taxes",
+    content: "Both S Corporations and C Corporations in Texas Need to Pay \n" + "These Taxes",
     size: 5,
     marginBottom: 24,
   },
@@ -2041,24 +2191,25 @@ export const taxes = [
     content: {
       items: [
         {
-          question: "IRS Payroll Tax",
-          answer: "",
+          question: "Payroll Tax Payable to the IRS",
+          answer: "Your Texas corporation will need to pay employer payroll tax to the IRS on salaries paid to employees.",
         },
         {
-          question: "California State Income Tax",
-          answer: "A yearly fee when you file your Annual Repo",
+          question: "Sales and Use Tax Payable to the State of Texas",
+          answer: "If your TX corporation is selling products or services in Texas, you may need to pay a state sales tax. Find out more on the Texas <a href='/'>Department of Revenue website</a>.",
         },
         {
-          question: "Sales and Use Tax Payable to the State of California",
-          answer: "If your CA corporation is selling products or services in California, you may need to pay a state sales tax. Find out more on the <a href='/'>California Tax Service Center</a> website.",
+          question: "Franchise Tax",
+          answer: "You may need to pay a franchise tax if your annual revenue is above a certain amount.",
         },
         {
-          question: "Franchise Tax in California",
-          answer: "",
+          question: "Employee Insurance and Taxes for Your Texas Corporation",
+          answer: "If your TX corporation employs workers, you will need to pay insurance and taxes to the state for each employee.",
+          text: "Get more requirements from the <a href='/'>Texas Department of Labor website.</a>."
         },
         {
-          question: "Other Taxes in California",
-          answer: "",
+          question: "Other Taxes in Texas",
+          answer: "You may need to pay other taxes and fees, depending on the type of Texas corporation you run. Find out more on the <a href='/'>Texas Comptroller of Public Accounts website</a>."
         },
       ],
     },
@@ -2066,19 +2217,19 @@ export const taxes = [
   },
   {
     type: "header",
-    content: "Estimated Taxes for Your California Corporation",
+    content: "Estimated Taxes for Your Texas Corporation",
     size: 4,
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "Most California corporations will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make. The most common types of estimated tax are:",
+    content: "Most Texas corporations will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make. The most common types of estimated tax are:",
     marginBottom: 41,
   },
   {
     type: "list-dot",
     content: {
-      list: ["Federal income tax", "Federal self-employment tax", "California state tax"],
+      list: ["Federal income tax", "Federal self-employment tax", "Texas state tax"],
     },
     color: color.babyblue3,
     marginBottom: 48,
@@ -2086,39 +2237,39 @@ export const taxes = [
   },
   {
     type: "text",
-    content: "Most California S Corporations and C Corporations will pay estimated taxes four times a year. Speak to your accountant for more information.",
+    content: "Most Texas S Corporations and C Corporations will pay estimated taxes four times a year. Speak to your accountant for more information.",
     marginBottom: 48,
   },
   {
     type: "header",
-    content: "California Corporation Employee Taxes and Insurance",
+    content: "Texas Corporation Employee Taxes and Insurance",
     size: 5,
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "If your CA corporation employs workers, you will need to pay insurance and taxes to the state for each employee.",
+    content: "If your TX corporation employs workers, you will need to pay insurance and taxes to the state for each employee.",
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "Get more requirements from the <a href='/'>California Labor and Workforce Development Agency website</a>.",
+    content: "Get more requirements from the <a href='/'>Texas Labor and Workforce Development Agency website</a>.",
     marginBottom: 48,
   },
   {
     type: "header",
-    content: "Taxes Payable by All Individuals Working for California Corporations",
+    content: "Taxes Payable by All Individuals Working for Texas Corporations",
     size: 5,
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "Pay Federal Income Tax on California Corporation Earnings, Dividends and Distributions. You will need to pay regular federal income tax when you file your tax return every year.",
+    content: "Pay Federal Income Tax on Texas Corporation Earnings, Dividends and Distributions. You will need to pay regular federal income tax when you file your tax return every year.",
     marginBottom: 48,
   },
   {
     type: "header",
-    content: "California S Corporations — Additional Tax Liabilities",
+    content: "Texas S Corporations — Additional Tax Liabilities",
     size: 5,
     marginBottom: 24,
   },
@@ -2127,7 +2278,7 @@ export const taxes = [
     content: [
       {
         header: "Self-Employment Tax",
-        text: "In a California S Corporation, your earnings “flow through” from the business to your personal tax return. This means you must pay self-employment tax on those earnings at a rate of 15.3 percent. Note that you can deduct standard tax deductions and business expenses.",
+        text: "In a Texas S Corporation, your earnings “flow through” from the business to your personal tax return. This means you must pay self-employment tax on those earnings at a rate of 15.3 percent. Note that you can deduct standard tax deductions and business expenses.",
         svg: SelfEmployedTaxSVG,
         backgroundColor: color.orange2,
         shadowColor: shadow.orange2,
@@ -2155,7 +2306,12 @@ export const taxes = [
   {
     type: "list-dot",
     content: {
-      list: ["On profits of $40,000, you would pay self-employment tax of $6,120", "On profits of $90,000, you would pay self-employment tax of $13,770", "On profits of $140,000, you would pay self-employment tax of $21,420", "On profits of $160,000, you would pay self-employment tax of $24,480"],
+      list: [
+        "On profits of $30,000, you would pay self-employment tax of $4,590",
+        "On profits of $70,000, you would pay self-employment tax of $10,710",
+        "On profits of $100,000, you would pay self-employment tax of $15,300",
+        "On profits of $160,000, you would pay self-employment tax of $24,480"
+      ],
     },
     color: color.green3,
     marginBottom: 48,
@@ -2169,7 +2325,7 @@ export const taxes = [
   {
     type: "button",
     content: {
-      text: "File Your California S-Corp Tax Election with Incfile",
+      text: "File Your Texas S-Corp Tax Election with Incfile",
       url: "/",
     },
     theme: "primary56",
@@ -2177,7 +2333,7 @@ export const taxes = [
   },
   {
     type: "header",
-    content: "California C Corporations — Additional Tax Liabilities",
+    content: "Texas C Corporations — Additional Tax Liabilities",
     size: 5,
     marginBottom: 24,
   },
@@ -2187,7 +2343,7 @@ export const taxes = [
       {
         header: "Corporation Tax",
         text:
-          "Unlike the the Limited Liability Company and the S Corporation, a California C Corporation is required to file a corporate tax return and pay corporation taxes on any profits. When those taxed profits are paid to shareholders as dividends, they will also be subject to taxation on that individual’s tax return. This is known as “double taxation.”",
+          "Unlike the the Limited Liability Company and the S Corporation, a Texas C Corporation is required to file a corporate tax return and pay corporation taxes on any profits. When those taxed profits are paid to shareholders as dividends, they will also be subject to taxation on that individual’s tax return. This is known as “double taxation.”",
         svg: CorpoTaxSVG,
         backgroundColor: color.babyblue2,
         shadowColor: shadow.babyblue2,
@@ -2198,7 +2354,7 @@ export const taxes = [
       {
         header: "Stock Dividends From C Corporations",
         text:
-          "A California C Corporation may pay shareholders dividends as a share of the profits of the company. The value of dividends that each shareholder is entitled to depends on how many shares they own.<br /><br />Dividends that are distributed to shareholders are taxed twice: first at the corporate level as profit (on the corporation’s Form 1120) and again at the individual level as stock dividends (on the shareholder's Form 1040).",
+          "A Texas C Corporation may pay shareholders dividends as a share of the profits of the company. The value of dividends that each shareholder is entitled to depends on how many shares they own.<br /><br />Dividends that are distributed to shareholders are taxed twice: first at the corporate level as profit (on the corporation’s Form 1120) and again at the individual level as stock dividends (on the shareholder's Form 1040).",
         svg: DividentsSVG,
         backgroundColor: color.purple2,
         shadowColor: shadow.purple2,
@@ -2211,13 +2367,13 @@ export const taxes = [
   },
   {
     type: "header",
-    content: "Ready to Start Your California Corporation?",
+    content: "Ready to Start Your Texas Corporation?",
     size: 4,
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "Incfile provides a cost-effective service to help you create your California corporation. We guide you through the process and handle most of the administrative steps, such as filing the necessary forms on your behalf.",
+    content: "Incfile provides a cost-effective service to help you create your Texas corporation. We guide you through the process and handle most of the administrative steps, such as filing the necessary forms on your behalf.",
     marginBottom: 24,
   },
   {
@@ -2261,24 +2417,13 @@ export const afterFormation = [
   },
   {
     type: "header",
-    content: "California's Ongoing Corporate File Requirements:",
+    content: "Texas's Ongoing Corporate File Requirements:",
     size: 4,
     marginBottom: 24,
   },
   {
     type: "header",
-    content: "Statement of Information (both S-Corporation and C-Corporation)",
-    size: 5,
-    marginBottom: 24,
-  },
-  {
-    type: "text",
-    content: "You must file an annual statement of information for your California corporation.",
-    marginBottom: 24,
-  },
-  {
-    type: "header",
-    content: "Statement of Information",
+    content: "Texas Public Information & Franchise Tax Report",
     size: 5,
     marginBottom: 24,
   },
@@ -2306,7 +2451,7 @@ export const afterFormation = [
             style: { "font-weight": "bold" },
           },
           {
-            label: "During six-month period ending on last day of anniversary month of incorporation or qualification.",
+            label: "Both reports are due between January 1 and no later than May 15.",
             type: "label",
             className: "left"
           },
@@ -2318,12 +2463,9 @@ export const afterFormation = [
             style: { "font-weight": "bold" },
           },
           {
-            label: "$25",
-            type: "label-boxed",
-            className: "highlight",
-            style: {
-              "align-items": "flex-start"
-            }
+            label: "There is no charge for the Public Information Report. The Franchise Tax Fee is based on the revenue of the Corporation. ",
+            type: "label",
+            className: "left",
           },
         ],
       ],
@@ -2366,7 +2508,7 @@ export const afterFormation = [
   },
   {
     type: "header",
-    content: "Finances & Accounting for Your California Corporation",
+    content: "Finances & Accounting for Your Texas Corporation",
     size: 4,
     marginBottom: 24,
   },
@@ -2378,7 +2520,7 @@ export const afterFormation = [
   },
   {
     type: "header",
-    content: "Choose a Bank for Your California Corporation",
+    content: "Choose a Bank for Your Texas Corporation",
     size: 5,
     marginBottom: 24,
   },
@@ -2466,7 +2608,7 @@ export const afterFormation = [
   {
     type: "text",
     content:
-      "Once your form your Corporation, it’s important to keep your business and personal assets separate to protect your personal assets from liability. It also makes tax season a whole lot easier when you have one clear account with all your business expenses, instead of all expenses mixed up within two accounts that need to be sorted. Once you choose a business checking account for your California Corporation, make sure you receive a business checking card or apply for a business credit card that you can use for all business expenses. You can also use a tool like <a href='/'>Expensify</a> to track and tag business expenses from your mobile phone.",
+      "Once your form your Corporation, it’s important to keep your business and personal assets separate to protect your personal assets from liability. It also makes tax season a whole lot easier when you have one clear account with all your business expenses, instead of all expenses mixed up within two accounts that need to be sorted. Once you choose a business checking account for your Texas Corporation, make sure you receive a business checking card or apply for a business credit card that you can use for all business expenses. You can also use a tool like <a href='/'>Expensify</a> to track and tag business expenses from your mobile phone.",
     marginBottom: 48,
   },
   {
@@ -2546,7 +2688,7 @@ export const afterFormation = [
   },
   {
     type: "header",
-    content: "Business Operations & Marketing for Your California \n" + "Corporation",
+    content: "Business Operations & Marketing for Your Texas \n" + "Corporation",
     size: 4,
     marginBottom: 24,
   },
@@ -2598,14 +2740,14 @@ export const afterFormation = [
   },
   {
     type: "header",
-    content: "Choose the Best Business Tools to Run Your California \n" + "Corporation",
+    content: "Choose the Best Business Tools to Run Your Texas \n" + "Corporation",
     size: 4,
     marginBottom: 24,
   },
   {
     type: "text",
     content:
-      "In addition to accounting software, there is a number of online business software options that will lift a number of menial tasks and burdens off your full business-owner plate. Below are important business functions for your Corporation and what we think are the best business tools for your California Corporation.",
+      "In addition to accounting software, there is a number of online business software options that will lift a number of menial tasks and burdens off your full business-owner plate. Below are important business functions for your Corporation and what we think are the best business tools for your Texas Corporation.",
     marginBottom: 24,
   },
   {
