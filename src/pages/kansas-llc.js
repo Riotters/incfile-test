@@ -11,7 +11,7 @@ import ContentMap from "../atomic/partials/content-map";
 // Content
 import { howToGuide } from "../static/states-llc/kansas/home";
 import { tabPages } from "../static/states-llc/kansas/general";
-import { getFullPricesAndFilings } from '../../api/Api';
+import { getFullPricesAndFilings } from '../api/Api';
 
 function KansasIndexPage() {
     const [dataApi, setDataApi] = React.useState({});

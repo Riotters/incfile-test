@@ -1073,7 +1073,7 @@ export const feesAndRequirments = [
     marginBottom: 48,
   },
   {
-    type: `dynamic_filing_requrirement`
+    type: `dynamic_filing_requirement`
   },
   {
     type: `text`,
