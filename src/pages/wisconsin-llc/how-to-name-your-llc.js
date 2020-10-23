@@ -15,8 +15,8 @@ import { tabPages } from "../../static/states-llc/wisconsin/general";
 const BusinessNamesPage = () => (
   <Layout>
     <SEO
-    title="Texas Business Search | How to Name Your TX LLC"
-    description="Learn what you need to know about naming an LLC in Texas with Incfile's helpful resources. Pick your perfect business name today!"
+    title="Wisconsin Business Search | Register an LLC Name in Wisconsin"
+    description="Learn what you need to know about naming an LLC in Wisconsin with Incfile’s helpful resources. Pick your perfect business name today!"
     />
     <LLCLayout>
         <LeftTabPages content={tabPages} />
