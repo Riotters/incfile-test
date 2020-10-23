@@ -16,7 +16,7 @@ const BusinessTaxesPage = () => (
   <Layout>
     <SEO
     title="Nebraska Sales & Business Tax Registration for LLCs"
-    description="Do you have a NE LLC? Learn about the required federal, state and sales taxes you might need to pay. Read more.""
+    description="Do you have a NE LLC? Learn about the required federal, state and sales taxes you might need to pay. Read more. "
     />
     <LLCLayout>
         <LeftTabPages content={tabPages} />
