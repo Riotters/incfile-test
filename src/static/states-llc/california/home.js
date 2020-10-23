@@ -8,7 +8,7 @@ export const HomePageContent = {
         desc: `Read our DIY guide to California LLC formation, with information on Registered Agents, naming rules, business licenses, and more.`,
         button: {
           text: `Read The Guide`,
-          url: "/",
+          url: "#video",
         },
       },
       {
@@ -16,7 +16,7 @@ export const HomePageContent = {
         desc: `Incfile can take care of all your LLC formation paperwork—and we’ll do it for free. Just pay the required California state fee ($300).`,
         button: {
           text: `Form Your LLC Now`,
-          url: "/",
+          url: "https://www.incfile.com/form-order-now.php?entityType=LLC&entityState=CA",
         },
       },
     ],
