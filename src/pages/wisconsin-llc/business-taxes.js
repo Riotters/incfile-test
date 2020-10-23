@@ -15,8 +15,8 @@ import { tabPages } from "../../static/states-llc/wisconsin/general";
 const BusinessTaxesPage = () => (
   <Layout>
     <SEO
-    title="Wisconsin Business Search | How to Name Your WI LLC"
-    description="Learn what you need to know about naming an LLC in Wisconsin with Incfile's helpful resources. Pick your perfect business name today!"
+    title="Wisconsin Sales Tax & Business Tax Registration for LLCs"
+    description="Do you have a WI LLC? Learn about the required federal, state and sales taxes you might need to pay. Read more."
     />
     <LLCLayout>
         <LeftTabPages content={tabPages} />

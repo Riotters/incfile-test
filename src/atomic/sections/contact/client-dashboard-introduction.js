@@ -111,8 +111,8 @@ const ClientDashboardSection = ({ className, content, isNewSale }) => (
           ))}
 
           <AlignCenter>
-            <Button to="/" theme="secondary56" arrow width="250px">
-              Read our blog
+            <Button to="/blog/" theme="secondary56" arrow width="250px">
+              Read our blogS
             </Button>
           </AlignCenter>
         </div>

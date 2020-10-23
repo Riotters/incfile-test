@@ -47,7 +47,7 @@ import CorporationNameIcon from "../images/icons/icon-learning-center-color-busi
 
 const AlaskaCorporation = () => (
   <Layout>
-    <SEO title="Form a Corporation in Alaska." description="Interested in starting a corporation in Alabama? Learn about filing times and costs, management structure requirements, choosing a company name and more." />
+    <SEO title="Form a Corporation in Alabama." description="Interested in starting a corporation in Alabama? Learn about filing times and costs, management structure requirements, choosing a company name and more." />
     <Top imageName="mr-bulb-corporation-california-8302" imageAlt="Mrs Bulb and with checklist" ovalColor="purple-2" headlineWidth="560">
       <h1>{top.header}</h1>
       <p>{top.text}</p>
@@ -121,7 +121,7 @@ The registered office may be at any of the corporation’s places of business..
             <Paragraph big>
             Bylaws describe the corporation’s basic managerial and legal operating principles. An Alabama corporation must keep a copy of its bylaws at its main executive office, but is not required to file them with the state. The initial bylaws must be adopted by the board of directors, unless the articles of incorporation specify that shareholders have this right.
             </Paragraph>
-            <Paragraph big style={{ fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
             Bylaws normally address:
             </Paragraph>
 

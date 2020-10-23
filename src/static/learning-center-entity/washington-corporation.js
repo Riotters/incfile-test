@@ -185,7 +185,7 @@ export const packets = {
       image: "",
       button: {
         text: "Get the Silver package",
-        url: "/",
+        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=AL`,
       },
       fees: [
         {
@@ -209,8 +209,8 @@ export const packets = {
       price: 100,
       image: "",
       button: {
-        text: "Get the Gold package",
-        url: "/",
+        text: "Get the Silver package",
+        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=AL`,
       },
       fees: [
         {
@@ -234,8 +234,8 @@ export const packets = {
       price: 100,
       image: "",
       button: {
-        text: "Get the Platinum package",
-        url: "/",
+        text: "Get the Silver package",
+        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=AL`,
       },
       fees: [
         {
@@ -348,13 +348,13 @@ export const articlesOfIncorporation = {
   box2: {
     header: `Some other provisions that aren’t required-but which may be included in the articles of incorporation-are:`,
     list: [
-        `The names and addresses of all directors.`,
-        `Eligibility requirements to be a director.`,
-        `The corporate purpose.`,
-        `Circumstances where shareholders can be liable for corporate debts.`,
-        `Par value for authorized shares or classes of stock.`,
-        `Provisions for managing the business and regulating the affairs of the corporation.`,
-      ],
+      `The names and addresses of all directors.`,
+      `Eligibility requirements to be a director.`,
+      `The corporate purpose.`,
+      `Circumstances where shareholders can be liable for corporate debts.`,
+      `Par value for authorized shares or classes of stock.`,
+      `Provisions for managing the business and regulating the affairs of the corporation.`,
+    ],
   },
 };
 

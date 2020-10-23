@@ -6,7 +6,7 @@ export const top = {
   buttons: [
     {
       text: `See detailed pricing`,
-      url: `/form-order-now.php?entityType=LLC&entityState=AZ`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ`,
     },
   ],
 };
@@ -119,9 +119,10 @@ export const howToGuide = [
     type: `list-dot`,
     content: {
       header: `The CO Secretary of State has plenty of information on registering a business in Colorado. We’ve covered the basic steps for forming an LLC, but you’ll find other useful information below.`,
-      list: [`<a href="https://www.sos.state.co.us/pubs/business/businessHome.html" target="_blank" rel="noopener noreferrer">Colorado Secretary of State for forming and running your CO LLC</a>`,
+      list: [
+        `<a href="https://www.sos.state.co.us/pubs/business/businessHome.html" target="_blank" rel="noopener noreferrer">Colorado Secretary of State for forming and running your CO LLC</a>`,
         `<a href="https://cdle.colorado.gov/" target="_blank" rel="noopener noreferrer">Colorado Department of Labor and Employment for CO employers and hiring</a>`,
-        `<a href="https://www.colorado.gov/tax" target="_blank" rel="noopener noreferrer">Colorado Department of Revenue for CO taxes</a>`
+        `<a href="https://www.colorado.gov/tax" target="_blank" rel="noopener noreferrer">Colorado Department of Revenue for CO taxes</a>`,
       ],
     },
     marginBottom: 48,
@@ -331,10 +332,12 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Suffixes, such as Corporation, Company, Incorporated, Incorporation, Limited, Corp., Co., Inc., Ltd., LLC, etc.`,
-             `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`, 
-             `The singular, plural or possessive forms of a word`, 
-             `Abbreviations, punctuation, symbols, fonts, typefaces, etc.`],
+      list: [
+        `Suffixes, such as Corporation, Company, Incorporated, Incorporation, Limited, Corp., Co., Inc., Ltd., LLC, etc.`,
+        `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`,
+        `The singular, plural or possessive forms of a word`,
+        `Abbreviations, punctuation, symbols, fonts, typefaces, etc.`,
+      ],
     },
     marginBottom: 32,
     color: color.yellow3,
@@ -365,10 +368,12 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Are very similar to the name of a federal or CO agency or organization (e.g., FBI, FDA, Colorado Department of Revenue, Colorado Police, Treasury, etc.)`,
-             `Suggest affiliation with a federal or state agency or organization`, 
-             `Use the term “Olympic” or any terms that are trademarks of the Olympic organization`, 
-             `Imply a purpose that it would be illegal for your business to carry out`],
+      list: [
+        `Are very similar to the name of a federal or CO agency or organization (e.g., FBI, FDA, Colorado Department of Revenue, Colorado Police, Treasury, etc.)`,
+        `Suggest affiliation with a federal or state agency or organization`,
+        `Use the term “Olympic” or any terms that are trademarks of the Olympic organization`,
+        `Imply a purpose that it would be illegal for your business to carry out`,
+      ],
     },
     marginBottom: 48,
     color: color.purple3,
@@ -504,10 +509,7 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Appeal to your customers`,
-             `Be memorable enough to stand out`, 
-             `Best represent your product or services`,
-             `Not be used by another business`],
+      list: [`Appeal to your customers`, `Be memorable enough to stand out`, `Best represent your product or services`, `Not be used by another business`],
     },
     marginBottom: 24,
     color: color.orange3,
@@ -570,10 +572,12 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: ` They are:`,
-      list: [`If the Statutory Agent is a person, they must reside in Colorado`,
-             `If the Statutory Agent is a business, they must be able to conduct business in Colorado`, 
-             `The Statutory Agent must have a physical street address in Colorado, not a P.O. Box`,
-             `The CO Registered Agent must be available in person during normal business hours to sign for any correspondence`],
+      list: [
+        `If the Statutory Agent is a person, they must reside in Colorado`,
+        `If the Statutory Agent is a business, they must be able to conduct business in Colorado`,
+        `The Statutory Agent must have a physical street address in Colorado, not a P.O. Box`,
+        `The CO Registered Agent must be available in person during normal business hours to sign for any correspondence`,
+      ],
     },
     marginBottom: 24,
     color: color.green3,
@@ -598,11 +602,12 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: `This includes:`,
-      list: [`Correspondence from the Colorado Secretary of State`,
-             `Service of process notices (e.g., if your CO LLC is sued or required to appear in court)`,
-             `Official Colorado state and federal government correspondence and notifications`,
-             `Tax forms and requests to complete permits, company filings and reports`,
-            ],
+      list: [
+        `Correspondence from the Colorado Secretary of State`,
+        `Service of process notices (e.g., if your CO LLC is sued or required to appear in court)`,
+        `Official Colorado state and federal government correspondence and notifications`,
+        `Tax forms and requests to complete permits, company filings and reports`,
+      ],
     },
     marginBottom: 48,
     color: color.purple3,
@@ -627,11 +632,12 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: `Here’s what you need to know about Incfile’s CO Registered Agent service:`,
-      list: [`The Registered Agent will always be available to accept documents and letters on your behalf`,
-             `We automatically notify you whenever we receive correspondence for your business from the Colorado Secretary of State or anyone else`,
-             `We scan your correspondence and upload it to a dashboard, so you can review it when convenient`,
-             `We forward all correspondence to an address you choose`
-            ],
+      list: [
+        `The Registered Agent will always be available to accept documents and letters on your behalf`,
+        `We automatically notify you whenever we receive correspondence for your business from the Colorado Secretary of State or anyone else`,
+        `We scan your correspondence and upload it to a dashboard, so you can review it when convenient`,
+        `We forward all correspondence to an address you choose`,
+      ],
     },
     marginBottom: 24,
     color: color.orange3,
@@ -693,7 +699,7 @@ export const registeredAgent = [
     type: `button`,
     content: {
       text: `Incorporate your business through IncFile`,
-      url: `/form-order-now.php?entityType=LLC&entityState=AZ/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ/`,
     },
     theme: `primary48`,
     marginBottom: 48,
@@ -771,10 +777,11 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: `There are several possible ramifications, including:`,
-      list: [`Getting served or sued and not finding out about it: If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
-             `Falling out of good standing with the Colorado Secretary of State: If you don’t respond to certain correspondence (like the request for your Annual Report), certain states may revoke your right to do business.`, 
-             `Losing your status as a Colorado LLC: A CO Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your Colorado LLC may be dissolved.`
-            ],
+      list: [
+        `Getting served or sued and not finding out about it: If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
+        `Falling out of good standing with the Colorado Secretary of State: If you don’t respond to certain correspondence (like the request for your Annual Report), certain states may revoke your right to do business.`,
+        `Losing your status as a Colorado LLC: A CO Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your Colorado LLC may be dissolved.`,
+      ],
     },
     marginBottom: 48,
     color: color.green3,
@@ -794,11 +801,12 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: `We don’t recommend this approach as there can be some drawbacks:`,
-      list: [`The CO Registered Agent must have a physical street address in Colorado. If you’re forming an LLC outside CO, you will need to use an in-state Registered Agent.`,
-             `You always need to have someone on hand during business hours at the Colorado address to sign for important documents.`, 
-             `The CO Registered Agent’s name and address are part of the public record and available through the Colorado Secretary of State's website. If you would prefer your name and address aren’t published, you might choose a Registered Agent service.`,
-             `If you change your Colorado business address or move out of state, you would need to file additional documentation with the CO Secretary of State for the new address if you act as your own Registered Agent. This would not be the case if you use a Registered Agent service, making a move or address change much simpler.`
-            ],
+      list: [
+        `The CO Registered Agent must have a physical street address in Colorado. If you’re forming an LLC outside CO, you will need to use an in-state Registered Agent.`,
+        `You always need to have someone on hand during business hours at the Colorado address to sign for important documents.`,
+        `The CO Registered Agent’s name and address are part of the public record and available through the Colorado Secretary of State's website. If you would prefer your name and address aren’t published, you might choose a Registered Agent service.`,
+        `If you change your Colorado business address or move out of state, you would need to file additional documentation with the CO Secretary of State for the new address if you act as your own Registered Agent. This would not be the case if you use a Registered Agent service, making a move or address change much simpler.`,
+      ],
     },
     marginBottom: 48,
     color: color.orange3,
@@ -843,9 +851,11 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: `You might find these resources helpful:`,
-      list: [`<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/" target="_blank">The Main Functions of a Colorado Registered Agent</a>`,
-             `<a href="/manage-your-company/change-of-registered-agent/" target="_blank" >Changing Your Colorado Registered Agent</a>`,
-             `<a href="/research-topics/registered-agent-help/what-does-a-registered-agent-do/" target="_blank" >What a Colorado Registered Agent Does</a>`],
+      list: [
+        `<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/" target="_blank">The Main Functions of a Colorado Registered Agent</a>`,
+        `<a href="/manage-your-company/change-of-registered-agent/" target="_blank" >Changing Your Colorado Registered Agent</a>`,
+        `<a href="/research-topics/registered-agent-help/what-does-a-registered-agent-do/" target="_blank" >What a Colorado Registered Agent Does</a>`,
+      ],
     }, //rel="noopener noreferrer"
     marginBottom: 0,
     color: color.blue3,
@@ -913,7 +923,7 @@ export const feesAndRequirments = [
     type: `button`,
     content: {
       text: `Incorporate your Colorado LLC through IncFile today`,
-      url: `/form-order-now.php?entityType=LLC&entityState=AZ/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ/`,
     },
     theme: `primary48`,
     marginBottom: 48,
@@ -973,9 +983,7 @@ export const feesAndRequirments = [
     type: `dynamic_filing_requirement`,
     content: {
       header: `Annual Report`,
-      list: [`Frequency:  Annually`,
-             `Due Date:  During the three-month period beginning with the first day of the entity's anniversary month of formation.`, 
-             `Filing Fee:  $10`],
+      list: [`Frequency:  Annually`, `Due Date:  During the three-month period beginning with the first day of the entity's anniversary month of formation.`, `Filing Fee:  $10`],
     },
     marginBottom: 16,
     color: color.blue2,
@@ -1014,9 +1022,11 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: `Permits and licenses vary based on:`,
-      list: [`The industry your Colorado LLC operates in (e.g., restaurants will need health permits)`,
-             `The location of your Colorado LLC (state, county or city) (e.g., a license to conduct business from the city of Colorado Springs)`, 
-             `The type of business that you run (e.g., healthcare providers must meet HIPAA requirements)`],
+      list: [
+        `The industry your Colorado LLC operates in (e.g., restaurants will need health permits)`,
+        `The location of your Colorado LLC (state, county or city) (e.g., a license to conduct business from the city of Colorado Springs)`,
+        `The type of business that you run (e.g., healthcare providers must meet HIPAA requirements)`,
+      ],
     },
     marginBottom: 24,
     color: color.yellow3,
@@ -1025,8 +1035,7 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: `You can research these permits and licenses yourself or use Incfile’s Business License Research Package, which includes:`,
-      list: [`A complete report on all the licenses, permits and tax registrations your Colorado LLC will need`,
-             `The application forms you will need to file with the Colorado, regional and federal licensing authorities`],
+      list: [`A complete report on all the licenses, permits and tax registrations your Colorado LLC will need`, `The application forms you will need to file with the Colorado, regional and federal licensing authorities`],
     },
     marginBottom: 16,
     color: color.green3,
@@ -1138,9 +1147,7 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: `Areas you might want to file a Colorado Statement of Change for include:`,
-      list: [`Adding, removing or changing a Colorado LLC member or manager`,
-             `Changing the business address of your LLC`,
-             `Altering the stated business activities of your Colorado LLC`],
+      list: [`Adding, removing or changing a Colorado LLC member or manager`, `Changing the business address of your LLC`, `Altering the stated business activities of your Colorado LLC`],
     },
     marginBottom: 16,
     color: color.orange3,
@@ -1339,10 +1346,7 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `You will typically need to collect Colorado sales tax on:`,
-      list: [
-        `Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`,
-        `Certain services that your Colorado business might provide`
-      ],
+      list: [`Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`, `Certain services that your Colorado business might provide`],
     },
     marginBottom: 16,
     color: color.purple3,
@@ -1401,10 +1405,7 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
-      list: [`On profits of $30,000, you would pay self-employment tax of $4,590`,
-             `On profits of $50,000, you would pay self-employment tax of $7,650`,
-             `On profits of $90,000, you would pay self-employment tax of $13,770`,
-             `On profits of $120,000, you would pay self-employment tax of $18,360`],
+      list: [`On profits of $30,000, you would pay self-employment tax of $4,590`, `On profits of $50,000, you would pay self-employment tax of $7,650`, `On profits of $90,000, you would pay self-employment tax of $13,770`, `On profits of $120,000, you would pay self-employment tax of $18,360`],
     },
     marginBottom: 48,
     color: color.orange3,
@@ -1541,9 +1542,7 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `The most common types of estimated taxes are:`,
-      list: [`Federal income tax`,
-             `Federal self-employment tax`, 
-             `Colorado state tax`],
+      list: [`Federal income tax`, `Federal self-employment tax`, `Colorado state tax`],
     },
     marginBottom: 16,
     color: color.green3,

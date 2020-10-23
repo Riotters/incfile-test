@@ -128,7 +128,7 @@ const AlaskaCorporation = () => (
             <Paragraph big>
             Bylaws govern the corporation’s business and affairs. A Louisiana corporation is required to keep its bylaws available at its principal executive office, but it is not required to file them with the state. The incorporators or board of directors should adopt the corporation’s bylaws at their first meeting, insuring that there is no conflict with the corporation’s articles of incorporation. They should also keep them updated as time goes on.
             </Paragraph>
-            <Paragraph big style={{ fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
             Bylaws set forth the corporation’s basic operating principles from both the managerial and legal perspectives, and should include (as a minimum):
             </Paragraph>
 
@@ -172,7 +172,7 @@ const AlaskaCorporation = () => (
             Louisiana corporations must file a report annually on or before their anniversary of incorporation with the Commercial Division of the Louisiana Secretary of State’s office. 
             </Paragraph>
 
-            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
             The annual report must include the following:
             </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>

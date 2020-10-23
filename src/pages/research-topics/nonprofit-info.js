@@ -20,7 +20,7 @@ import { about, related } from "../../static/research-topics/nonprofit-info";
 
 const HelpCenter = () => (
   <Layout>
-    <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
+    <SEO title="Nonprofit Resources & Articles | Incfile Help Center" description="Starting or running a nonprofit? Find helpful information here, from instructions on officially forming your company to how to pay business taxes. Learn more." />
     <Top imageName="mrs-bulb-help-center-article" imageAlt="Mrs Bulb and with checklist" ovalColor="green">
       <h1>{top.header}</h1>
       <p>{top.text}</p>

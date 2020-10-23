@@ -70,7 +70,8 @@ const Circle = styled.span`
 }
     
     span{
-        font-family: Avenir-Heavy, sans-serif;
+        font-family: Avenir, sans-serif;
+        font-weight: 900;
         color: white;
         font-size: 16px;
         line-height: 24px;
@@ -100,7 +101,8 @@ const Circle = styled.span`
 `;
 
 const AdeventageLink = styled(Link)`
-      font-family: Avenir-Heavy, sans-serif;
+      font-family: Avenir, sans-serif;
+      font-weight: 900;
       margin-top: 24px;
       display: flex;
       align-items: center;

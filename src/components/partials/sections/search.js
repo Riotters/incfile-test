@@ -1,13 +1,13 @@
-import React from "react"
-import styled from "styled-components"
-import Container from "../../container"
+import React from "react";
+import styled from "styled-components";
+import Container from "../../container";
 //import Searchbar from "../../searchbar"
-import Image from "../../image_nobase64"
-import OvalSVG from "../../../images/oval-yellow-3.inline.svg"
-import CurveSVG from "../../../images/yellow-curve.inline.svg"
-import VisibilitySensor from "../../VisibilitySensor"
+import Image from "../../image_nobase64";
+import OvalSVG from "../../../images/oval-yellow-3.inline.svg";
+import CurveSVG from "../../../images/yellow-curve.inline.svg";
+import VisibilitySensor from "../../VisibilitySensor";
 
-const Searchbar = React.lazy(() => import("../../searchbar"))
+const Searchbar = React.lazy(() => import("../../searchbar"));
 
 const Wrapper = styled.div`
   padding-top: 75px;
@@ -16,7 +16,7 @@ const Wrapper = styled.div`
   @media (min-width: 769px) {
     padding-top: 275px;
   }
-`
+`;
 
 const Rocket = styled.div`
   display: none;
@@ -49,7 +49,7 @@ const Rocket = styled.div`
       object-fit: contain !important;
     }
   }
-`
+`;
 
 const Oval = styled.div`
   height: 100%;
@@ -69,13 +69,9 @@ const Oval = styled.div`
     right: 0;
     bottom: 0;
     background: rgb(255, 255, 255);
-    background: linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(255, 255, 255, 0) 20%
-    );
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 20%);
   }
-`
+`;
 
 const Curve = styled.div`
   height: 97px;
@@ -83,7 +79,7 @@ const Curve = styled.div`
   position: absolute;
   right: 0;
   bottom: 50px;
-`
+`;
 
 const Moon = styled.div`
   display: none;
@@ -96,13 +92,13 @@ const Moon = styled.div`
   @media (min-width: 769px) {
     display: block;
   }
-`
+`;
 
 const Content = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
-`
+`;
 
 const SearchBox = styled.div`
   width: 100%;
@@ -123,10 +119,10 @@ const SearchBox = styled.div`
       margin: 0 0 40px;
     }
   }
-`
+`;
 
 const Search = () => {
-  const isSSR = typeof window === "undefined"
+  const isSSR = typeof window === "undefined";
 
   return (
     <Wrapper>
@@ -141,16 +137,12 @@ const Search = () => {
       </Moon>
       <Container>
         <Rocket>
-          <Image filename="rocket" alt="rocket lunch" />
+          <Image filename="lunching-rocket-6969" alt="rocket lunch" />
         </Rocket>
         <Content>
           <SearchBox>
             <VisibilitySensor partialVisibility once>
-              {({ isVisible }) => (
-                <h2 className={isVisible ? "slideUp enter" : "slideUp"}>
-                  Learn more about Nonprofits by state.
-                </h2>
-              )}
+              {({ isVisible }) => <h2 className={isVisible ? "slideUp enter" : "slideUp"}>Learn more about Nonprofits by state.</h2>}
             </VisibilitySensor>
             {!isSSR && (
               <React.Suspense fallback={<div />}>
@@ -161,7 +153,7 @@ const Search = () => {
         </Content>
       </Container>
     </Wrapper>
-  )
-}
+  );
+};
 
-export default Search
+export default Search;

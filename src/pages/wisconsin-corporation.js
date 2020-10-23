@@ -127,7 +127,7 @@ const AlaskaCorporation = () => (
             <Paragraph big>
             The board of directors or the shareholders may adopt, amend, or repeal bylaws, unless the articles of incorporation or the bylaws reserve this right to the shareholders. At its initial meeting, the board of directors should adopt corporate bylaws, and then keep them updated as time goes on.
             </Paragraph>
-            <Paragraph big style={{ fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
             Bylaws normally address:
             </Paragraph>
 
@@ -170,7 +170,7 @@ const AlaskaCorporation = () => (
             A report must be filed annually with the Wisconsin Department of Financial Institutions in the same quarter in which the company was incorporated.
             </Paragraph>
 
-            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
             This report must indicate:
             </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>

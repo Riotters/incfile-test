@@ -17,7 +17,7 @@ const AboutCreating = () => (
             <TextCenterLayout headlineWidth={770} textWidth={770} headline={`What to Know About Creating a Record Label`} text={`Let’s break down some of the key facts you’ll need to be aware of if you want to start an independent record company:`}/>
             <AdventagesBox>
                 <AdventagesWithLongText>
-                    <Paragraph style={{fontFamily: "Avenir-Heavy", color: "#1d1d1d", marginBottom: 0}} big>
+                    <Paragraph style={{fontFamily: "Avenir", fontWeight: "900", color: "#1d1d1d", marginBottom: 0}} big>
                         Finding artists that can appeal to a range of fans can be tough.
                     </Paragraph>
                     <Paragraph style={{marginBottom: 0}}>
@@ -29,7 +29,7 @@ const AboutCreating = () => (
                     <Curve top="-110" right="-30" color={color.green2}>
                         <Curve2SVG/>
                     </Curve>
-                    <Paragraph style={{fontFamily: "Avenir-Heavy", color: "#1d1d1d", marginBottom: 0}} big>
+                    <Paragraph style={{fontFamily: "Avenir", fontWeight: "900", color: "#1d1d1d", marginBottom: 0}} big>
                         Starting a record company can be expensive.
                     </Paragraph>
                     <Paragraph style={{marginBottom: 0}}>
@@ -38,7 +38,7 @@ const AboutCreating = () => (
                 </AdventagesWithLongText>
 
                 <AdventagesWithLongText>
-                    <Paragraph style={{fontFamily: "Avenir-Heavy", color: "#1d1d1d", marginBottom: 0}} big>
+                    <Paragraph style={{fontFamily: "Avenir", fontWeight: "900", color: "#1d1d1d", marginBottom: 0}} big>
                         Managing multiple areas will be challenging.
                     </Paragraph>
                     <Paragraph style={{marginBottom: 0}}>
@@ -48,7 +48,7 @@ const AboutCreating = () => (
                 </AdventagesWithLongText>
 
                 <AdventagesWithLongText>
-                    <Paragraph style={{fontFamily: "Avenir-Heavy", color: "#1d1d1d", marginBottom: 0}} big>
+                    <Paragraph style={{fontFamily: "Avenir", fontWeight: "900", color: "#1d1d1d", marginBottom: 0}} big>
                         Learning as you go is par for the course.
                     </Paragraph>
                     <Paragraph style={{marginBottom: 0}}>
@@ -57,7 +57,7 @@ const AboutCreating = () => (
                 </AdventagesWithLongText>
 
                 <AdventagesWithLongText>
-                    <Paragraph style={{fontFamily: "Avenir-Heavy", color: "#1d1d1d", marginBottom: 0}} big>
+                    <Paragraph style={{fontFamily: "Avenir", fontWeight: "900", color: "#1d1d1d", marginBottom: 0}} big>
                         Identifying the music’s unique selling points is essential.
                     </Paragraph>
                     <Paragraph style={{marginBottom: 0}}>
@@ -66,7 +66,7 @@ const AboutCreating = () => (
                 </AdventagesWithLongText>
 
                 <AdventagesWithLongText>
-                    <Paragraph style={{fontFamily: "Avenir-Heavy", color: "#1d1d1d", marginBottom: 0}} big>
+                    <Paragraph style={{fontFamily: "Avenir", fontWeight: "900", color: "#1d1d1d", marginBottom: 0}} big>
                         Marketing is (almost) everything.
                     </Paragraph>
                     <Paragraph style={{marginBottom: 0}}>
@@ -75,7 +75,7 @@ const AboutCreating = () => (
                 </AdventagesWithLongText>
 
                 <AdventagesWithLongText>
-                    <Paragraph style={{fontFamily: "Avenir-Heavy", color: "#1d1d1d", marginBottom: 0}} big>
+                    <Paragraph style={{fontFamily: "Avenir", fontWeight: "900", color: "#1d1d1d", marginBottom: 0}} big>
                         Understanding distribution is necessary.
                     </Paragraph>
                     <Paragraph style={{marginBottom: 0}}>
@@ -85,7 +85,7 @@ const AboutCreating = () => (
                 </AdventagesWithLongText>
 
                 <AdventagesWithLongText>
-                    <Paragraph style={{fontFamily: "Avenir-Heavy", color: "#1d1d1d", marginBottom: 0}} big>
+                    <Paragraph style={{fontFamily: "Avenir", fontWeight: "900", color: "#1d1d1d", marginBottom: 0}} big>
                         Making use of digital services is very useful.
                     </Paragraph>
                     <Paragraph style={{marginBottom: 0}} mixed>

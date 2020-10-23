@@ -26,7 +26,8 @@ const ColorBar = styled.div`
     align-items: center;
     justify-content: center;
     color: white;
-    font-family: Avenir-Heavy;
+    font-family: Avenir;
+    font-weight: 900;
     font-size: 16px;
     line-height: 24px;
     background-color: ${color.green1};

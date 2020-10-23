@@ -131,7 +131,7 @@ const AlaskaCorporation = () => (
             <Paragraph big>
             Bylaws describe the corporation’s basic managerial and legal operating principles. An Indiana corporation must keep a copy of its bylaws at its main executive office, but is not required to file them with the state. At its initial meeting, the board of directors should adopt corporate bylaws, and then keep them updated as time goes on.
             </Paragraph>
-            <Paragraph big style={{ fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
             The board of directors of a corporation may adopt, amend, or repeal bylaws, unless the articles reserve this right to the shareholders. Bylaws normally address:
             </Paragraph>
 
@@ -174,7 +174,7 @@ const AlaskaCorporation = () => (
             Indiana LLCs must file a biennial (every two years) report with the Secretary of State. The first biennial report must be delivered in the anniversary month of the corporation’s organization in its second year. Subsequent biennial reports must be delivered to the secretary of state during the same month every two calendar years thereafter.
             </Paragraph>
 
-            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
             Biennial reports may be accepted up to two months early.
             </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>

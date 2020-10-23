@@ -70,7 +70,8 @@ const Description = styled.div`
 `;
 
 const Price = styled.div`
-    font-family: ${props => (props.bold ? "Avenir-Heavy" : "Avenir-Roman")};
+    font-family: ${props => (props.bold ? "Avenir" : "Avenir-Roman")};
+    font-weight: 900;
     color: ${color.grey1};
     font-size: 16px;
     line-height: 24px;

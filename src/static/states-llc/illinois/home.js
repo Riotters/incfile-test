@@ -8,7 +8,7 @@ export const HomePageContent = {
         desc: `Read our DIY guide to Illinois LLC formation, with information on Registered Agents, naming rules, business licenses, and more.`,
         button: {
           text: `Read The Guide`,
-          url: "https://www.incfile.com/illinois-llc/",
+          url: "#video",
         },
       },
       {
@@ -93,7 +93,7 @@ export const HomePageContent = {
           },
           {
             header: `Get A Free Registered Agent Whe You Incorporate With Incfile`,
-            url: `/form-order-now.php?entityType=LLC&entityState=IL`,
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=IL`,
           },
         ],
       },

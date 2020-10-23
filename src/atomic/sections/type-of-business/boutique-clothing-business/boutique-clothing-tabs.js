@@ -408,7 +408,8 @@ const BoutiqueClothingTabs = ({ layout, columns }) => (
                       style={{
                         fontSize: "20px",
                         textAlign: "left",
-                        fontFamily: "Avenir-Heavy",
+                        fontFamily: "Avenir",
+                        fontWeight: "900",
                       }}
                     >
                       Starting a Traditional Brick-and-Mortar Clothing Boutique
@@ -419,7 +420,8 @@ const BoutiqueClothingTabs = ({ layout, columns }) => (
                       style={{
                         fontSize: "20px",
                         textAlign: "left",
-                        fontFamily: "Avenir-Heavy",
+                        fontFamily: "Avenir",
+                        fontWeight: "900",
                       }}
                     >
                       Advantages
@@ -442,7 +444,8 @@ const BoutiqueClothingTabs = ({ layout, columns }) => (
                       style={{
                         fontSize: "20px",
                         textAlign: "left",
-                        fontFamily: "Avenir-Heavy",
+                        fontFamily: "Avenir",
+                        fontWeight: "900",
                         marginTop: "48px",
                       }}
                     >
@@ -468,7 +471,8 @@ const BoutiqueClothingTabs = ({ layout, columns }) => (
                       style={{
                         fontSize: "20px",
                         textAlign: "left",
-                        fontFamily: "Avenir-Heavy",
+                        fontFamily: "Avenir",
+                        fontWeight: "900",
                         marginTop: "48px",
                       }}
                     >
@@ -516,7 +520,8 @@ const BoutiqueClothingTabs = ({ layout, columns }) => (
                       style={{
                         fontSize: "20px",
                         textAlign: "left",
-                        fontFamily: "Avenir-Heavy",
+                        fontFamily: "Avenir",
+                        fontWeight: "900",
                       }}
                     >
                       A Day in the Life of a Retail Business Owner
@@ -573,7 +578,8 @@ const BoutiqueClothingTabs = ({ layout, columns }) => (
                       style={{
                         fontSize: "20px",
                         textAlign: "left",
-                        fontFamily: "Avenir-Heavy",
+                        fontFamily: "Avenir",
+                        fontWeight: "900",
                         marginTop: "48px",
                         color: color.black,
                       }}

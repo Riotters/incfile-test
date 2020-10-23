@@ -127,7 +127,7 @@ const AlaskaCorporation = () => (
             <Paragraph big>
             The incorporators or board of directors should adopt the corporation’s bylaws at their first meeting, insuring that there is no conflict with the corporation’s articles of incorporation or state law. A corporation is required to keep its bylaws available at its primary executive office, but it is not required to file them with the state. They should also keep them updated as time goes on.
             </Paragraph>
-            <Paragraph big style={{ fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
             Bylaws set forth the corporation’s basic operating principles from both the managerial and legal perspectives, and should include (as a minimum):
             </Paragraph>
 
@@ -167,7 +167,7 @@ const AlaskaCorporation = () => (
             Nebraska corporations must file a biennial (every two years) report with the Nebraska Secretary of State by March 1 of every even-numbered year.
             </Paragraph>
 
-            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
             The report must be current as of January 1 of the filing year and must include:
             </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>

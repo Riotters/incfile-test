@@ -6,7 +6,7 @@ export const top = {
   buttons: [
     {
       text: `See detailed pricing`,
-      url: `/form-order-now.php?entityType=LLC&entityState=AZ`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MA`,
     },
   ],
 };
@@ -16,7 +16,7 @@ export const howToGuide = [
     type: `header`,
     content: `Forming an LLC in Massachusetts`,
     size: 2,
-    marginBottom: 24,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -31,20 +31,13 @@ export const howToGuide = [
   {
     type: `text`,
     content: `In Massachusetts, the Corporations Division is responsible for administering businesses, including LLCs. This is in contrast to the secretary of state, which is the entity that manages businesses in many other states.  `,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `Briefly, the benefits of starting a Massachusetts LLC include:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
-      header: ``,
-      list: [`Separating and limiting your personal liability from your business liability and debts`,
-             `Quick and simple filing, management, compliance, regulation and administration of your Massachusetts LLC`,
-             `Easy tax filing and potential advantages for your tax treatment`],
+      header: `Briefly, the benefits of starting a Massachusetts LLC include:`,
+      list: [`Separating and limiting your personal liability from your business liability and debts`, `Quick and simple filing, management, compliance, regulation and administration of your Massachusetts LLC`, `Easy tax filing and potential advantages for your tax treatment`],
     },
     marginBottom: 48,
     color: color.blue3,
@@ -54,13 +47,13 @@ export const howToGuide = [
   {
     type: `text`,
     content: `Learn more about the <a href="/limited-liability-company/">benefits of the LLC business structure here</a>.`,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `Six Quick Steps to Setting Up an LLC in Massachusetts`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -111,7 +104,7 @@ export const howToGuide = [
                    <li> Name of the incorporator </li>
                    </ul>
                    <p>You can file your Massachusetts LLC Certificate of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Massachusetts. You only need to file your Certificate of Organization once. </p></br>
-                   <a href="/form-order-now.php?entityType=LLC&entityState=MA/"> Form your LLC now </a>`,
+                   <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MA/"> Form your LLC now </a>`,
         },
       ],
     },
@@ -127,18 +120,20 @@ export const howToGuide = [
     type: `list-dot`,
     content: {
       header: `The MA Corporations Division has plenty of information on forming and running a business in Massachusetts. We’ve covered the basic steps for filing an LLC in Massachusetts, but you’ll find other useful information below.`,
-      list: [`<a href="https://www.sec.state.ma.us/cor/coridx.htm/" target="_blank" rel="noopener noreferrer">Massachusetts Corporations Division for forming and running your MA LLC</a>`,
-             `<a href="https://www.mass.gov/orgs/department-of-labor-standards/" target="_blank" rel="noopener noreferrer">Massachusetts Department of Labor Standards for MA employers and hiring</a>`,
-             `<a href="https://www.mass.gov/orgs/massachusetts-department-of-revenue/" target="_blank" rel="noopener noreferrer">Massachusetts Department of Revenue for MA taxes</a>`],
+      list: [
+        `<a href="https://www.sec.state.ma.us/cor/coridx.htm/" target="_blank" rel="noopener noreferrer">Massachusetts Corporations Division for forming and running your MA LLC</a>`,
+        `<a href="https://www.mass.gov/orgs/department-of-labor-standards/" target="_blank" rel="noopener noreferrer">Massachusetts Department of Labor Standards for MA employers and hiring</a>`,
+        `<a href="https://www.mass.gov/orgs/massachusetts-department-of-revenue/" target="_blank" rel="noopener noreferrer">Massachusetts Department of Revenue for MA taxes</a>`,
+      ],
     },
     marginBottom: 32,
-    color: color.yellow3,
+    color: color.babyblue3,
   },
   {
     type: `header`,
     content: `Special Types of Massachusetts LLCs`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -149,7 +144,7 @@ export const howToGuide = [
     type: `header`,
     content: `Form a Professional Massachusetts LLC`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -160,19 +155,19 @@ export const howToGuide = [
     type: `header`,
     content: `Form a Foreign LLC in Massachusetts`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `<p>If your business is already operating in another state and expanding to Massachusetts, you’ll need to form a foreign LLC.</p></br>
               <p> More information on Massachusetts <a href="/massachusetts-llc/form-filling-permit-requirements/"> filing and licensing requirements here</a> </p>`,
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `What to Do After Forming Your Massachusetts LLC`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -183,7 +178,7 @@ export const howToGuide = [
     type: `header`,
     content: `Detailed Information for Your Massachusetts LLC`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -249,7 +244,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Massachusetts Secretary of State Business Search and Registering Your LLC Name`,
     size: 2,
-    marginBottom: 24,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -260,7 +255,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Conducting a Business Entity Search on the MA SOS Website`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -278,13 +273,13 @@ export const namingYourBusiness = [
       text: `Massachusetts Corporations Division business name search tool `,
       url: `https://www.sec.state.ma.us/cor/corsearch.htm/`,
     },
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `Massachusetts Corporations Division Rules for LLC Business Names`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -295,7 +290,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `General Rules for Naming Your LLC`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -328,10 +323,12 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Suffixes, such as Corporation, Company, Incorporated, Incorporation, Limited, Corp., Co., Inc., Ltd., LLC, etc.`,
-             `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`, 
-             `The singular, plural or possessive forms of a word`, 
-             `Abbreviations, punctuation, symbols, fonts, typefaces, etc.`],
+      list: [
+        `Suffixes, such as Corporation, Company, Incorporated, Incorporation, Limited, Corp., Co., Inc., Ltd., LLC, etc.`,
+        `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`,
+        `The singular, plural or possessive forms of a word`,
+        `Abbreviations, punctuation, symbols, fonts, typefaces, etc.`,
+      ],
     },
     marginBottom: 32,
     color: color.babyblue3,
@@ -362,21 +359,23 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Are very similar to the name of a federal or MA agency or organization (e.g., FBI, FDA, Massachusetts Department of Revenue, Massachusetts Police, Treasury, etc.)`,
-             `Suggest affiliation with a federal or state agency or organization`, 
-             `Use the term “Olympic” or any terms that are trademarks of the Olympic organization`, 
-             `Imply a purpose that it would be illegal for your business to carry out`],
+      list: [
+        `Are very similar to the name of a federal or MA agency or organization (e.g., FBI, FDA, Massachusetts Department of Revenue, Massachusetts Police, Treasury, etc.)`,
+        `Suggest affiliation with a federal or state agency or organization`,
+        `Use the term “Olympic” or any terms that are trademarks of the Olympic organization`,
+        `Imply a purpose that it would be illegal for your business to carry out`,
+      ],
     },
     marginBottom: 32,
     color: color.yellow3,
     curve: true,
-    curveColor:color.red1,
+    curveColor: color.red1,
   },
   {
     type: `header`,
     content: `DBA/Fictitious Business Names in Massachusetts`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -386,7 +385,7 @@ export const namingYourBusiness = [
   {
     type: `text`,
     content: `For example, your LLC might be called Massachusetts Bioscience Holding Company LLC, and you have a specialized service called “Genetic Medicine Research Services.” You should file a Fictitious Name to let the Massachusetts Corporations Division know.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -400,35 +399,37 @@ export const namingYourBusiness = [
   {
     type: `header`,
     content: `Register Your Massachusetts LLC Business Name`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Once you’ve searched for your Massachusetts business name, checked availability, followed the naming rules and decided whether you need a Fictitious Name, you can register your MA LLC name. There are a couple of ways to do this.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`<p>If you don’t want to form your Massachusetts LLC right now, you can reserve the business name with the Massachusetts Corporations Division. You do not need to reserve a name if you are forming your business right away.</p></br>
+      list: [
+        `If you don’t want to form your Massachusetts LLC right now, you can reserve the business name with the Massachusetts Corporations Division. You do not need to reserve a name if you are forming your business right away.
               <a href="https://www.sec.state.ma.us/cor/corpweb/cornameres/nameresinf.htm/" target="_blank" rel="noopener noreferrer">Massachusetts Corporations Division LLC name reservation</a>`,
-             `<p>If you’re ready to start your Massachusetts LLC, you can formally file your Certificate of Organization with the Massachusetts Corporations Division, or <a href="/form-order-now.php?entityType=LLC&entityState=MA/">let Incfile take care of it for you</a>.</p>`],
+        `If you’re ready to start your Massachusetts LLC, you can formally file your Certificate of Organization with the Massachusetts Corporations Division, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MA/">let Incfile take care of it for you</a>.`,
+      ],
     },
-    marginBottom: 32,
+    marginBottom: 40,
     color: color.purple3,
   },
   {
     type: `header`,
     content: `FAQs on Naming Your Massachusetts LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `You might find the following answers useful.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `accordion`,
@@ -452,13 +453,13 @@ export const namingYourBusiness = [
         },
       ],
     },
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `Useful Resources for Naming Your Massachusetts LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -468,13 +469,13 @@ export const namingYourBusiness = [
   {
     type: `header`,
     content: `Trademarks and Service Marks`,
-    size: 3,
+    size: 4,
     marginBottom: 16,
   },
   {
     type: `text`,
     content: `You must be careful that your Massachusetts LLC name does not infringe on the trademark or service mark of another business. The easiest way to make sure your proposed business name does not infringe is to carry out a trademark search through Incfile. If it doesn’t infringe, you can even register it as a trademark yourself.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -483,12 +484,12 @@ export const namingYourBusiness = [
       url: `/trademark-name-search/`,
     },
     theme: `primary48`,
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `Find the Perfect Name for Your Massachusetts LLC`,
-    size: 3,
+    size: 4,
     marginBottom: 16,
   },
   {
@@ -500,15 +501,12 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Appeal to your customers`,
-             `Be memorable enough to stand out`, 
-             `Best represent your product or services`,
-             `Not be used by another business`],
+      list: [`Appeal to your customers`, `Be memorable enough to stand out`, `Best represent your product or services`, `Not be used by another business`],
     },
     marginBottom: 40,
     color: color.blue3,
   },
-  
+
   {
     type: `arrow-link`,
     content: {
@@ -524,7 +522,7 @@ export const registeredAgent = [
     type: `header`,
     content: `Massachusetts Registered Agents for LLCs`,
     size: 2,
-    marginBottom: 24,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -534,38 +532,40 @@ export const registeredAgent = [
   {
     type: `text`,
     content: `Your LLC must have a Massachusetts Registered Agent at all times. You can appoint a Registered Agent when you first start your business. You can also replace your existing MA Registered Agent at a later date, provided there is a smooth transition between the old and new Registered Agent service.`,
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `What the Massachusetts Corporations Division Says About Registered Agents`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `In Massachusetts, a Registered Agent is formally known as a “Resident agent,” and we’ll use the terms interchangeably in this guide. Their functions and requirements are identical to those of Registered Agents described above. `,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `Rules for Massachusetts Resident Agents`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `There are certain rules that you must follow when you’re appointing a Massachusetts Resident Agent service for your business. They are:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`If the Registered Agent is a person, they must reside in Massachusetts.`,
-             `If the Registered Agent is a business, they must be able to conduct business in Massachusetts.`,
-             `The Registered Agent must have a physical street address in Massachusetts, not a P.O. Box.`,
-             `The MA Registered Agent must be available in person during normal business hours to sign for any correspondence.`],
+      list: [
+        `If the Registered Agent is a person, they must reside in Massachusetts.`,
+        `If the Registered Agent is a business, they must be able to conduct business in Massachusetts.`,
+        `The Registered Agent must have a physical street address in Massachusetts, not a P.O. Box.`,
+        `The MA Registered Agent must be available in person during normal business hours to sign for any correspondence.`,
+      ],
     },
     marginBottom: 32,
     color: color.yellow3,
@@ -579,24 +579,26 @@ export const registeredAgent = [
     type: `header`,
     content: `What to Expect From a Massachusetts Resident Agent Service`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `What can you expect from your Massachusetts Registered Agent? Their main function is to accept official documents and correspondence from the MA Corporations Division. This includes:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Correspondence from the Massachusetts Corporations Division`,
-             `Service of process notices (e.g., if your MA LLC is sued or required to appear in court)`, 
-             `Official Massachusetts state and federal government correspondence and notifications`,
-             `Tax forms and requests to complete permits, company filings and reports`],
+      list: [
+        `Correspondence from the Massachusetts Corporations Division`,
+        `Service of process notices (e.g., if your MA LLC is sued or required to appear in court)`,
+        `Official Massachusetts state and federal government correspondence and notifications`,
+        `Tax forms and requests to complete permits, company filings and reports`,
+      ],
     },
-    marginBottom: 24,
-    color: color.red3,
+    marginBottom: 40,
+    color: color.purple3,
     curve: true,
     curveColor: color.blue1,
   },
@@ -604,7 +606,7 @@ export const registeredAgent = [
     type: `header`,
     content: `A Complete Massachusetts Registered Agent Service From Incfile`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -619,16 +621,18 @@ export const registeredAgent = [
   {
     type: `text`,
     content: `Here’s what the Infile Massachusetts Registered Agent service provides for your MA LLC:`,
-    marginBottom: 16,
-  }, 
+    marginBottom: 24,
+  },
   {
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`An always-available Massachusetts Registered Agent who can receive correspondence, documents and legal proceedings on your LLC’s behalf`,
-             `A digital dashboard where you can access, store and retrieve any information we’ve received for your Massachusetts business`,
-             `Email notification whenever we receive documents for your Massachusetts business`,
-             `Automatic forwarding of all legal correspondence, documentation and information directly to you`],
+      list: [
+        `An always-available Massachusetts Registered Agent who can receive correspondence, documents and legal proceedings on your LLC’s behalf`,
+        `A digital dashboard where you can access, store and retrieve any information we’ve received for your Massachusetts business`,
+        `Email notification whenever we receive documents for your Massachusetts business`,
+        `Automatic forwarding of all legal correspondence, documentation and information directly to you`,
+      ],
     },
     marginBottom: 32,
     color: color.green3,
@@ -646,71 +650,71 @@ export const registeredAgent = [
     type: `header`,
     content: `How to Appoint a Massachusetts Resident Agent for Your LLC`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `You can appoint a Registered Agent when you first incorporate your Massachusetts LLC or at any point after that. Here’s how to go about it.`,
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `Assign Your Massachusetts Registered Agent When You Form Your MA LLC`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Your business needs to have a Massachusetts Registered Agent Service as soon as it’s formed. You can achieve this through one of the following methods.`,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `File Certificate of Organization With the Massachusetts Corporations Division`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `You will need to include details of your Registered Agent in your Certificate of Organization. This is the form that you file with the MA Corporations Division to formally create your business.`,
-    marginBottom: 24,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `Incorporate Through Incfile and Get a Free Massachusetts Resident Agent `,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `When you incorporate through us, we complete and file your Certificate of Organization based on the information you’ve provided. Additionally, we give you a free Massachusetts Registered Agent service for the first year, and we’ll include details of your MA Registered Agent in the form that we file.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
     content: {
       text: `Incorporate your business through Incfile`,
-      url: `/form-order-now.php?entityType=LLC&entityState=MA/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MA/`,
     },
     theme: `primary48`,
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `Change Your Massachusetts Resident Agent After Your LLC Is Formed`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `You can also change your MA Registered Agent service after you’ve formed your LLC. There are a couple of ways to achieve this.`,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `Choose a Registered Agent Service and File a Form With the Massachusetts Corporations Division`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -720,13 +724,13 @@ export const registeredAgent = [
   {
     type: `header`,
     content: `Sign up for Incfile’s Massachusetts Resident Agent Service, and We’ll File the Change on Your Behalf`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `When you choose to use our MA Registered Agent service, we take care of all the form filling and filing for you. We’ll collect important information about your business, complete the form on your behalf and send it to the Massachusetts Corporations Division. We’ll let you know once we officially become your Registered Agent. `,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -741,7 +745,7 @@ export const registeredAgent = [
     type: `header`,
     content: `Searching for MA Registered Agents for Other LLCs`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -757,20 +761,22 @@ export const registeredAgent = [
     type: `header`,
     content: `The Problems Caused When You Don’t Appoint a Massachusetts Resident Agent Service`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `What happens if you choose not to assign or provide details of a Registered Agent to the Massachusetts Corporations Division? There are several possible ramifications, including:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`<b>Getting served or sued and not finding out about it:</b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`, 
-             `<b>Falling out of good standing with the Massachusetts Corporations Division:</b> If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`, 
-             `<b>Losing your status as a Massachusetts LLC:</b> A MA Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your Massachusetts LLC may be dissolved.`],
+      list: [
+        `<b>Getting served or sued and not finding out about it:</b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
+        `<b>Falling out of good standing with the Massachusetts Corporations Division:</b> If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
+        `<b>Losing your status as a Massachusetts LLC:</b> A MA Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your Massachusetts LLC may be dissolved.`,
+      ],
     },
     marginBottom: 48,
     color: color.blue3,
@@ -779,30 +785,32 @@ export const registeredAgent = [
     type: `header`,
     content: `Assigning Yourself as the Massachusetts Registered Agent for Your LLC`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `If you have an address in Massachusetts, you can choose to be the Registered Agent for your LLC. We don’t recommend this approach as there can be some drawbacks:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`The MA Registered Agent must have a physical street address in Massachusetts. If you’re forming an LLC outside MA, you will need to use an in-state Registered Agent.`, 
-             `You always need to have someone on hand during business hours at the Massachusetts address to sign for important documents.`,
-             `The MA Registered Agent’s name and address are part of the public record and available through the Massachusetts Corporations Division's website. If you would prefer your name and address aren’t published, you might choose a Registered Agent service.`, 
-             `If you change your Massachusetts business address or move out of state, you would need to file additional documentation with the MA Corporations Division for the new address if you act as your own Registered Agent. This would not be the case if you use a Registered Agent service, making a move or address change much simpler.`],
+      list: [
+        `The MA Registered Agent must have a physical street address in Massachusetts. If you’re forming an LLC outside MA, you will need to use an in-state Registered Agent.`,
+        `You always need to have someone on hand during business hours at the Massachusetts address to sign for important documents.`,
+        `The MA Registered Agent’s name and address are part of the public record and available through the Massachusetts Corporations Division's website. If you would prefer your name and address aren’t published, you might choose a Registered Agent service.`,
+        `If you change your Massachusetts business address or move out of state, you would need to file additional documentation with the MA Corporations Division for the new address if you act as your own Registered Agent. This would not be the case if you use a Registered Agent service, making a move or address change much simpler.`,
+      ],
     },
     marginBottom: 48,
     color: color.green3,
   },
   {
-      type: `header`,
-      content: `FAQs About Massachusetts Resident Agents`,
-      size: 3,
-      marginBottom: 24,
+    type: `header`,
+    content: `FAQs About Massachusetts Resident Agents`,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `accordion`,
@@ -838,9 +846,11 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: `You might find these resources helpful:`,
-      list: [`<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/">The Main Functions of a Massachusetts Registered Agent</a>`,
-             `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Massachusetts Registered Agent</a>`,
-             `<a href-"/research-topics/registered-agent-help/what-does-a-registered-agent-do/">What a Massachusetts Registered Agent Does</a>`],
+      list: [
+        `<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/">The Main Functions of a Massachusetts Registered Agent</a>`,
+        `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Massachusetts Registered Agent</a>`,
+        `<a href-"/research-topics/registered-agent-help/what-does-a-registered-agent-do/">What a Massachusetts Registered Agent Does</a>`,
+      ],
     },
     marginBottom: 48,
     color: color.babyblue3,
@@ -852,7 +862,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Massachusetts Reporting, Licensing & Filing Requirements for LLCs `,
     size: 2,
-    marginBottom: 24,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -868,7 +878,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Massachusetts LLC Incorporation Filing and Fees`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -876,7 +886,7 @@ export const feesAndRequirments = [
     marginBottom: 32,
   },
   {
-    type: `table`,
+    type: `table-simple`,
     content: {
       headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
       rows: [[`$520`, `5 Business Days`, `1 Business Day`]],
@@ -912,7 +922,7 @@ export const feesAndRequirments = [
     type: `button`,
     content: {
       text: `Incorporate your Massachusetts LLC through Incfile today`,
-      url: `/form-order-now.php?entityType=LLC&entityState=MA/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MA/`,
     },
     theme: `primary48`,
     marginBottom: 48,
@@ -921,12 +931,12 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Getting an Employer Identification Number for Your MA LLC`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Every Massachusetts LLC should have a unique Employer Identification Number (EIN). These are provided by the Internal Revenue Service, and you use them when filing taxes, opening a business bank account and paying employees. You can get one yourself at no cost from the IRS or have Incfile obtain one on your behalf.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -941,12 +951,12 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Certificate of Authority to Operate Outside Massachusetts`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `If you’re expanding your Massachusetts LLC beyond the borders of the state, you will need a Foreign Qualification or Certificate of Authority to operate in another state. These are typically necessary if you have a physical presence, employees or banking in a different state than Massachusetts. Fees and requirements for foreign qualifications depend on each state’s rules. Incfile provides a complete Foreign Qualification service for any state.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -961,7 +971,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Massachusetts LLC Annual Report Filing and Fees`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1012,20 +1022,22 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Massachusetts Business Licenses and Permits`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Your Massachusetts LLC may need certain licenses and permits to comply with specific requirements. These business permits and licenses might be issued by Massachusetts, regional or federal organizations. Some of the associated fees only need to be paid once, while others have ongoing charges.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
       header: `Permits and licenses vary based on:`,
-      list: [`The industry your Massachusetts LLC operates in (e.g., restaurants will need health permits)`, 
-             `The location of your Massachusetts LLC (state, county or city) (e.g., a license to conduct business from the city of Boston)`, 
-             `The type of business that you run (e.g., healthcare providers must meet HIPAA requirements)`],
+      list: [
+        `The industry your Massachusetts LLC operates in (e.g., restaurants will need health permits)`,
+        `The location of your Massachusetts LLC (state, county or city) (e.g., a license to conduct business from the city of Boston)`,
+        `The type of business that you run (e.g., healthcare providers must meet HIPAA requirements)`,
+      ],
     },
     marginBottom: 32,
     color: color.green3,
@@ -1041,8 +1053,7 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`A complete report on all the licenses, permits and tax registrations your Massachusetts LLC will need`,
-             `The application forms you will need to file with the Massachusetts, regional and federal licensing authorities`],
+      list: [`A complete report on all the licenses, permits and tax registrations your Massachusetts LLC will need`, `The application forms you will need to file with the Massachusetts, regional and federal licensing authorities`],
     },
     marginBottom: 24,
     color: color.purple3,
@@ -1050,7 +1061,7 @@ export const feesAndRequirments = [
   {
     type: `text`,
     content: `Remember that operating your business without the required licenses can expose you to risks and fines from federal, Massachusetts and local governments.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -1064,8 +1075,8 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `Massachusetts LLC Operating Agreement `,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1075,29 +1086,29 @@ export const feesAndRequirments = [
   {
     type: `text`,
     content: `An Operating Agreement is extremely useful for several reasons (<a href="/research-topics/llc-info/the-llc-operating-agreement/">learn about them here</a>). If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Massachusetts business. You can choose to make changes to the template based on your unique requirements. `,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `Ad Hoc Massachusetts Fees or Requirements for Your MA LLC`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `There are several other fees or requirements that you may need to meet during the life of your Massachusetts LLC. These ad hoc fees will only be payable in specific circumstances, which we’ve listed below.`,
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `To Obtain a Fictitious/DBA Name or Your Massachusetts LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `If you want your MA business to trade under a different name, you can file a form with the Massachusetts Corporations Division. You will need to pay a Massachusetts filing fee. Incfile can file this form on your behalf.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -1111,13 +1122,13 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `To Change the Massachusetts Registered Agent for Your MA LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Your Massachusetts LLC needs a Registered Agent, which must be appointed when you first incorporate your LLC. You can also switch to a new MA Registered Agent later. Incfile provides a complete Massachusetts Registered Agent service.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -1131,8 +1142,8 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `To Reserve a Name for Your Massachusetts LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1141,24 +1152,22 @@ export const feesAndRequirments = [
   },
   {
     type: `header`,
-    content: `TTo Amend Certain Facts About Your Massachusetts LLC`,
-    size: 4,
-    marginBottom: 16,
+    content: `To Amend Certain Facts About Your Massachusetts LLC`,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Your business formation documents state certain facts about your Massachusetts business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with the Massachusetts Corporations Division. You can do this yourself or have Incfile complete the filing on your behalf.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
       header: `Areas you might want to file Massachusetts Articles of Amendment for include:`,
-      list: [`Adding, removing or changing a Massachusetts LLC member or manager`,
-             `Changing the business address of your LLC`,
-             `Altering the stated business activities of your Massachusetts LLC`],
+      list: [`Adding, removing or changing a Massachusetts LLC member or manager`, `Changing the business address of your LLC`, `Altering the stated business activities of your Massachusetts LLC`],
     },
-    marginBottom: 0,
+    marginBottom: 24,
     color: color.yellow3,
   },
   {
@@ -1173,13 +1182,13 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `Massachusetts Secretary of State Certificate of Good Standing `,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Some organizations will request that you prove your Massachusetts LLC’s compliance with laws and tax requirements. If you need to prove you have met your commitments, you will need a “Certificate of Good Standing” from the Massachusetts Corporations Division. Incfile can obtain a certificate on your behalf.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -1188,7 +1197,7 @@ export const feesAndRequirments = [
       url: `/manage-your-company/certificate-of-good-standing/`,
     },
     theme: `primary48`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `text`,
@@ -1204,7 +1213,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `FAQs About Massachusetts LLC Costs`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `accordion`,
@@ -1240,7 +1249,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Business Taxes for Massachusetts LLCs`,
     size: 2,
-    marginBottom: 24,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -1256,12 +1265,12 @@ export const businessTaxes = [
     type: `header`,
     content: `How Your Massachusetts LLC Will Be Taxed`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `The profits of a Massachusetts LLC are not taxed at the business level like those of C Corporations. Instead, taxes for a Massachusetts LLC work as follows:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `numeric-list`,
@@ -1285,18 +1294,18 @@ export const businessTaxes = [
         text: `Employees pay federal, state and payroll tax on their earnings.`,
       },
     ],
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `text`,
     content: `Items 1, 2 and 3 are taxed as “pass-through” income for any LLC owners, managers or members who receive profits from the business. Any profits are reported on federal and Massachusetts personal tax returns, and that’s where you will pay those taxes.`,
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `Massachusetts Business Taxes Payable to the MA Government`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1307,7 +1316,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Massachusetts State Income Tax Payable on LLC Earnings`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1317,7 +1326,7 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `The Massachusetts state tax rate is just over 5 percent. `,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `text`,
@@ -1328,19 +1337,18 @@ export const businessTaxes = [
     type: `header`,
     content: `Massachusetts Sales Tax for LLCs`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the MA Department of Revenue. Massachusetts sales tax is collected at the point of purchase. Massachusetts sales tax rates do vary depending on the region, county or city where you are located.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
       header: `You will typically need to collect Massachusetts sales tax on:`,
-      list: [`Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`,
-             `Certain services that your Massachusetts business might provide`],
+      list: [`Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`, `Certain services that your Massachusetts business might provide`],
     },
     marginBottom: 16,
     color: color.blue3,
@@ -1360,8 +1368,8 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Massachusetts Sales Tax Rates`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1372,7 +1380,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Federal Self-Employment and Income Taxes for Your Massachusetts LLC`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1382,8 +1390,8 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Massachusetts LLC Federal Self-Employment Tax`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1393,16 +1401,13 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
       header: `Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
-      list: [`On profits of $40,000, you would pay self-employment tax of $6,120.`,
-             `On profits of $80,000, you would pay self-employment tax of $12,240`,
-             `On profits of $120,000, you would pay self-employment tax of $18,360`,
-             `On profits of $160,000, you would pay self-employment tax of $24,480.`],
+      list: [`On profits of $40,000, you would pay self-employment tax of $6,120.`, `On profits of $80,000, you would pay self-employment tax of $12,240`, `On profits of $120,000, you would pay self-employment tax of $18,360`, `On profits of $160,000, you would pay self-employment tax of $24,480.`],
     },
     marginBottom: 48,
     color: color.green3,
@@ -1412,8 +1417,8 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Pay Less Self-Employment Tax by Treating Your Massachusetts LLC as an S Corporation`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1423,7 +1428,7 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `You can do this by making an “S Corporation Tax Election” with the IRS using a form known as Form 2553. We can file your Form 2553 with the IRS on your behalf.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -1432,7 +1437,7 @@ export const businessTaxes = [
       url: `/llc-s-corp-election/`,
     },
     theme: `primary48`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `text`,
@@ -1442,8 +1447,8 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Massachusetts LLC Federal Income Tax`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1459,7 +1464,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Employer and Employee Taxes for Your Massachusetts LLC`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1518,8 +1523,8 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Other Taxes and Duties for Your Massachusetts LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1529,8 +1534,8 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Estimated Taxes for Your Massachusetts LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1541,12 +1546,10 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `The most common types of estimated tax are:`,
-      list: [`Federal income tax`,
-             `Federal self-employment tax`,
-             `Massachusetts state tax`],
+      list: [`Federal income tax`, `Federal self-employment tax`, `Massachusetts state tax`],
     },
     marginBottom: 24,
-    color: color.red3,
+    color: color.green3,
   },
   {
     type: `text`,

@@ -185,7 +185,7 @@ export const packets = {
       image: "",
       button: {
         text: "Get the Silver package",
-        url: "/",
+        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=AL`,
       },
       fees: [
         {
@@ -209,8 +209,8 @@ export const packets = {
       price: 100,
       image: "",
       button: {
-        text: "Get the Gold package",
-        url: "/",
+        text: "Get the Silver package",
+        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=AL`,
       },
       fees: [
         {
@@ -234,8 +234,8 @@ export const packets = {
       price: 100,
       image: "",
       button: {
-        text: "Get the Platinum package",
-        url: "/",
+        text: "Get the Silver package",
+        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=AL`,
       },
       fees: [
         {
@@ -348,12 +348,12 @@ export const articlesOfIncorporation = {
   box2: {
     header: `The state also permits optional provisions to be integrated into the articles of incorporation, including:`,
     list: [
-        `The names and addresses of initial directors`,
-        `Corporate purpose`,
-        `Regulations limiting the powers of the corporation, board of directors, or shareholders`,
-        `A par value for authorized shares or classes or series of shares`,
-        `Other provisions for managing the business and regulating the affairs of the corporation.`,
-      ],
+      `The names and addresses of initial directors`,
+      `Corporate purpose`,
+      `Regulations limiting the powers of the corporation, board of directors, or shareholders`,
+      `A par value for authorized shares or classes or series of shares`,
+      `Other provisions for managing the business and regulating the affairs of the corporation.`,
+    ],
   },
 };
 

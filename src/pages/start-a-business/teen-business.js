@@ -47,7 +47,7 @@ const TeenBusiness = () => (
         that — or you want other people to take your work seriously - it might be worth going a step further.
       </p>
       <ButtonsBox>
-        <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{ url: "/", text: "Start Now" }} />
+        <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{ url: `${process.env.ORDER_URL}/form-order-now.php`, text: "Start Now" }} />
       </ButtonsBox>
 
       <RatingRow>
@@ -192,7 +192,8 @@ const Bubbles = styled.div`
 
 const Text = styled.div`
   text-align: center;
-  font-family: Avenir-Heavy, sans-serif;
+  font-family: Avenir, sans-serif;
+  font-weight: 900;
   font-size: 20px;
   color: #1d1d1d;
   max-width: 500px;

@@ -6,7 +6,7 @@ export const top = {
   buttons: [
     {
       text: `See detailed pricing`,
-      url: `/form-order-now.php?entityType=LLC&entityState=AZ`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ`,
     },
   ],
 };
@@ -37,9 +37,7 @@ export const howToGuide = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Separating and limiting your personal liability from your business liability and debts`,
-             `Quick and simple filing, management, compliance, regulations and administration of your Oregon LLC`,
-             `Easy tax filing and potential advantages for tax treatment`],
+      list: [`Separating and limiting your personal liability from your business liability and debts`, `Quick and simple filing, management, compliance, regulations and administration of your Oregon LLC`, `Easy tax filing and potential advantages for tax treatment`],
     },
     marginBottom: 48,
     color: color.blue3,
@@ -101,7 +99,7 @@ export const howToGuide = [
                    <li> Tax closing month </li>
                    </ul>
                    <p>You can file your Oregon Articles of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Oregon, but you only need to file your Articles of Organization once.</p></br>
-                   <a href="/form-order-now.php?entityType=LLC&entityState=OR/"> Form your LLC now </a>`,
+                   <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=OR/"> Form your LLC now </a>`,
         },
       ],
     },
@@ -117,9 +115,11 @@ export const howToGuide = [
     type: `list-dot`,
     content: {
       header: `The Oregon Secretary of State has plenty of information on forming and running a business in Oregon. Check out additional resources below.<br>These are all the basic steps for forming an LLC in Oregon. You’ll find other useful information below.`,
-      list: [`<a href="https://sos.oregon.gov/business/Pages/domestic-limited-liability-companies-forms.aspx" target="_blank" rel="noopener noreferrer">Oregon Secretary of State for forming and running your LLC</a>`,
-             `<a href="https://www.oregon.gov/boli/Pages/P_Employopp.aspx" target="_blank" rel="noopener noreferrer">Oregon Department of Labor for Oregon employers and hiring</a>`,
-             `<a href="https://www.oregon.gov/dor/Pages/index.aspx" target="_blank" rel="noopener noreferrer">Oregon Department of Revenue Administration for taxes</a>`],
+      list: [
+        `<a href="https://sos.oregon.gov/business/Pages/domestic-limited-liability-companies-forms.aspx" target="_blank" rel="noopener noreferrer">Oregon Secretary of State for forming and running your LLC</a>`,
+        `<a href="https://www.oregon.gov/boli/Pages/P_Employopp.aspx" target="_blank" rel="noopener noreferrer">Oregon Department of Labor for Oregon employers and hiring</a>`,
+        `<a href="https://www.oregon.gov/dor/Pages/index.aspx" target="_blank" rel="noopener noreferrer">Oregon Department of Revenue Administration for taxes</a>`,
+      ],
     },
     marginBottom: 32,
     color: color.yellow3,
@@ -158,7 +158,7 @@ export const howToGuide = [
               <p> More information on Oregon <a href="/Oregon-llc/fees-filing-requirements/"> filing and licensing requirements here</a> </p>`,
     marginBottom: 32,
   },
-  
+
   {
     type: `header`,
     content: `What to Do After Forming Your Oregon LLC`,
@@ -280,7 +280,7 @@ export const namingYourBusiness = [
   {
     type: `text`,
     content: `Once you’ve decided on a name for your LLC and checked business name availability, you’ll need to meet Oregon Secretary of State naming rules. These do vary from state to state — we’ve got general naming rules below.`,
-   marginBottom: 32,
+    marginBottom: 32,
   },
   {
     type: `header`,
@@ -308,10 +308,12 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Suffixes, such as Corporation, Company, Incorporated, Incorporation, Limited, Corp., Co., Inc., Ltd., LLC, etc.`,
-             `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`, 
-             `The singular, plural or possessive forms of a word`, 
-             `Abbreviations, punctuation, symbols, fonts, typefaces, etc.`],
+      list: [
+        `Suffixes, such as Corporation, Company, Incorporated, Incorporation, Limited, Corp., Co., Inc., Ltd., LLC, etc.`,
+        `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`,
+        `The singular, plural or possessive forms of a word`,
+        `Abbreviations, punctuation, symbols, fonts, typefaces, etc.`,
+      ],
     },
     marginBottom: 32,
     color: color.babyblue3,
@@ -342,15 +344,17 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Are very similar to the name of a federal or AK agency or organization (e.g. FBI, FDA, Oregon Department of Revenue, Oregon Police, Treasury, etc)`,
-             `Suggest affiliation with a federal or state agency or organization`, 
-             `Use the term “Olympic” or any terms that are trademarks of the Olympic organization`, 
-             `Imply a purpose that it would be illegal for your business to carry out`],
+      list: [
+        `Are very similar to the name of a federal or AK agency or organization (e.g. FBI, FDA, Oregon Department of Revenue, Oregon Police, Treasury, etc)`,
+        `Suggest affiliation with a federal or state agency or organization`,
+        `Use the term “Olympic” or any terms that are trademarks of the Olympic organization`,
+        `Imply a purpose that it would be illegal for your business to carry out`,
+      ],
     },
     marginBottom: 32,
     color: color.yellow3,
     curve: true,
-    curveColor:color.red1,
+    curveColor: color.red1,
   },
 
   {
@@ -387,8 +391,8 @@ export const namingYourBusiness = [
     size: 3,
     marginBottom: 16,
   },
-  { 
-    type:`text`,
+  {
+    type: `text`,
     content: `If you’re ready to start your LLC, you can formally file your Certificate of Formation with the Oregon SOS, or
     <a href="/Oregon-llc/fees-filing-requirements/"> let Incfile take care of it for you.</a.`,
     marginBottom: 16,
@@ -476,15 +480,12 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Appeal to your customers`,
-             `Be memorable enough to stand out`, 
-             `Best represent your product or services`,
-             `Not be used by another business`],
+      list: [`Appeal to your customers`, `Be memorable enough to stand out`, `Best represent your product or services`, `Not be used by another business`],
     },
     marginBottom: 40,
     color: color.blue3,
   },
-  
+
   {
     type: `arrow-link`,
     content: {
@@ -545,10 +546,12 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`If the Registered Agent is a person, they must reside in Oregon.`,
-             `If the Registered Agent is a business, they must be able to conduct business in Oregon.`,
-             `The Registered Agent must have a physical street address in Oregon, not a P.O. Box.`,
-             `The Registered Agent must be available in person during normal business hours to sign for any correspondence.`],
+      list: [
+        `If the Registered Agent is a person, they must reside in Oregon.`,
+        `If the Registered Agent is a business, they must be able to conduct business in Oregon.`,
+        `The Registered Agent must have a physical street address in Oregon, not a P.O. Box.`,
+        `The Registered Agent must be available in person during normal business hours to sign for any correspondence.`,
+      ],
     },
     marginBottom: 32,
     color: color.yellow3,
@@ -573,11 +576,12 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Correspondence from the Oregon Secretary of State.`,
-             `Service of process notices (e.g., if your OH LLC is sued or required to appear in court)`, 
-             `Official Oregon state and federal government correspondence and notifications`,
-             `Tax forms and requests to complete permits, company filings and reports`,
-            ],
+      list: [
+        `Correspondence from the Oregon Secretary of State.`,
+        `Service of process notices (e.g., if your OH LLC is sued or required to appear in court)`,
+        `Official Oregon state and federal government correspondence and notifications`,
+        `Tax forms and requests to complete permits, company filings and reports`,
+      ],
     },
     marginBottom: 24,
     color: color.red3,
@@ -599,15 +603,17 @@ export const registeredAgent = [
     type: `text`,
     content: `Incfile is authorized to conduct business in Oregon and can legally act as your Registered Agent.`,
     marginBottom: 16,
-  }, 
+  },
   {
     type: `list-dot`,
     content: {
       header: `Here’s what the Infile Oregon Registered Agent service provides for your OR LLC:`,
-      list: [`An always-available Oregon Registered Agent who can receive correspondence, documents and legal proceedings on your LLC’s behalf`,
-             `A digital dashboard where you can access, store and retrieve any information we’ve received for your Oregon business`,
-             `Email notification whenever we receive documents for your business`, 
-             `Automatic forwarding of all legal correspondence, documentation and information directly to you`],
+      list: [
+        `An always-available Oregon Registered Agent who can receive correspondence, documents and legal proceedings on your LLC’s behalf`,
+        `A digital dashboard where you can access, store and retrieve any information we’ve received for your Oregon business`,
+        `Email notification whenever we receive documents for your business`,
+        `Automatic forwarding of all legal correspondence, documentation and information directly to you`,
+      ],
     },
     marginBottom: 32,
     color: color.green3,
@@ -674,7 +680,7 @@ export const registeredAgent = [
     type: `button`,
     content: {
       text: `Incorporate your business through Incfile.`,
-      url: `/form-order-now.php?entityType=LLC&entityState=OR`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=OR`,
     },
     theme: `primary48`,
     marginBottom: 32,
@@ -752,9 +758,11 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`<b>Getting served or sued and not finding out about it:</b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`, 
-             `<b>Falling out of good standing with the Oregon Secretary of State:</b> If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`, 
-             `<b>Losing your status as a Oregon LLC:</b> A Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your LLC may be dissolved.`],
+      list: [
+        `<b>Getting served or sued and not finding out about it:</b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
+        `<b>Falling out of good standing with the Oregon Secretary of State:</b> If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
+        `<b>Losing your status as a Oregon LLC:</b> A Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your LLC may be dissolved.`,
+      ],
     },
     marginBottom: 48,
     color: color.blue3,
@@ -774,19 +782,21 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`The Registered Agent must have a physical street address in Oregon. If you’re forming an LLC outside Oregon, you will need to use an in-state Registered Agent.`, 
-             `You always need to have someone on hand during business hours at the Oregon address to sign for important documents.`,
-             `The Registered Agent’s name and address are part of the public record and available through the Oregon Secretary of State's website. If you prefer your name and address aren’t published, you should choose a Registered Agent service.`, 
-             `If you change your Oregon business address or move out of state, you would need to file additional documentation with the OH Secretary of State for the new address if you act as your own Registered Agent. This would not be the case if you use a Registered Agent service, making a move or address change much simpler.`],
+      list: [
+        `The Registered Agent must have a physical street address in Oregon. If you’re forming an LLC outside Oregon, you will need to use an in-state Registered Agent.`,
+        `You always need to have someone on hand during business hours at the Oregon address to sign for important documents.`,
+        `The Registered Agent’s name and address are part of the public record and available through the Oregon Secretary of State's website. If you prefer your name and address aren’t published, you should choose a Registered Agent service.`,
+        `If you change your Oregon business address or move out of state, you would need to file additional documentation with the OH Secretary of State for the new address if you act as your own Registered Agent. This would not be the case if you use a Registered Agent service, making a move or address change much simpler.`,
+      ],
     },
     marginBottom: 16,
     color: color.green3,
   },
   {
-      type: `header`,
-      content: `FAQs About Oregon Registered Agents`,
-      size: 3,
-      marginBottom: 24,
+    type: `header`,
+    content: `FAQs About Oregon Registered Agents`,
+    size: 3,
+    marginBottom: 24,
   },
   {
     type: `accordion`,
@@ -823,9 +833,11 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: `You might find these resources helpful:`,
-      list: [`<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/">The Main Functions of a Oregon Registered Agent</a>`,
-             `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Oregon Registered Agent</a>`,
-             `<a href-"/research-topics/registered-agent-help/what-does-a-registered-agent-do/">What a Oregon Registered Agent Does</a>`],
+      list: [
+        `<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/">The Main Functions of a Oregon Registered Agent</a>`,
+        `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Oregon Registered Agent</a>`,
+        `<a href-"/research-topics/registered-agent-help/what-does-a-registered-agent-do/">What a Oregon Registered Agent Does</a>`,
+      ],
     },
     marginBottom: 48,
     color: color.babyblue3,
@@ -860,7 +872,7 @@ export const feesAndRequirments = [
     marginBottom: 32,
   },
   {
-    type: `table`,
+    type: `table-simple`,
     content: {
       headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
       rows: [[`$100`, `7 Business Days`, `2 Business Day`]],
@@ -896,7 +908,7 @@ export const feesAndRequirments = [
     type: `button`,
     content: {
       text: `Incorporate your Oregon LLC through Incfile today`,
-      url: `/form-order-now.php?entityType=LLC&entityState=OR/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=OR/`,
     },
     theme: `primary48`,
     marginBottom: 48,
@@ -973,7 +985,7 @@ export const feesAndRequirments = [
     content: `<b>Filling Fee:</b> $100`,
     marginBottom: 16,
   },
-  
+
   {
     type: `text`,
     content: `<a href="/Oregon-llc/fees-filing-requirements/">Learn about your ongoing Oregon LLC filing requirements</a>
@@ -1000,9 +1012,11 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: `Permits and licenses vary based on:`,
-      list: [`The industry your Oregon LLC operates in (e.g., restaurants will need health permits)`, 
-             `The location of your Oregon LLC (state, county or city) (e.g., a license to conduct business from the city of Columbus)`, 
-             `The type of business that you run (e.g., healthcare providers must meet HIPAA requirements)`],
+      list: [
+        `The industry your Oregon LLC operates in (e.g., restaurants will need health permits)`,
+        `The location of your Oregon LLC (state, county or city) (e.g., a license to conduct business from the city of Columbus)`,
+        `The type of business that you run (e.g., healthcare providers must meet HIPAA requirements)`,
+      ],
     },
     marginBottom: 32,
     color: color.green3,
@@ -1014,13 +1028,12 @@ export const feesAndRequirments = [
     content: `You can research these permits and licenses yourself or use Incfile’s Business License Research Package, which includes:`,
     marginBottom: 32,
   },
- 
+
   {
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`A complete report on all the licenses, permits and tax registrations your Oregon LLC will need`,
-             `The application forms you will need to file with the Oregon, regional and federal licensing authorities`],
+      list: [`A complete report on all the licenses, permits and tax registrations your Oregon LLC will need`, `The application forms you will need to file with the Oregon, regional and federal licensing authorities`],
     },
     marginBottom: 24,
     color: color.purple3,
@@ -1134,9 +1147,7 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: `Areas you might want to file Oregon Articles of Amendment for include:`,
-      list: [`Adding, removing or changing a Oregon LLC member or manager`,
-             `Changing the business address of your LLC`,
-             `Altering the stated business activities of your Oregon LLC`],
+      list: [`Adding, removing or changing a Oregon LLC member or manager`, `Changing the business address of your LLC`, `Altering the stated business activities of your Oregon LLC`],
     },
     marginBottom: 0,
     color: color.yellow3,
@@ -1352,10 +1363,7 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `The graduated Oregon state income tax rate is:`,
-      list: [`On profits of $30,000, you would pay self-employment tax of $4,590`,
-             `On profits of $70,000, you would pay self-employment tax of $10,710`,
-             `On profits of $100,000, you would pay self-employment tax of $15,300`,
-             `On profits of $140,000, you would pay self-employment tax of $21,420`],
+      list: [`On profits of $30,000, you would pay self-employment tax of $4,590`, `On profits of $70,000, you would pay self-employment tax of $10,710`, `On profits of $100,000, you would pay self-employment tax of $15,300`, `On profits of $140,000, you would pay self-employment tax of $21,420`],
     },
     marginBottom: 16,
     color: color.blue3,
@@ -1494,9 +1502,7 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `The most common types of estimated tax are:`,
-      list: [`Federal income tax`,
-              `Federal self-employment tax`,
-             `Oregon state tax`],
+      list: [`Federal income tax`, `Federal self-employment tax`, `Oregon state tax`],
     },
     marginBottom: 24,
     color: color.purple3,
@@ -1532,7 +1538,7 @@ export const businessTaxes = [
     },
     marginBottom: 24,
   },
-]
+];
 
 export const compare = {
   header: `How We Compare. <br>Get more more for less.`,

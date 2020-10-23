@@ -50,7 +50,7 @@ const DogWalking = () => (
       <h1>How to Start a Dog Walking, Pet Sitting or Other Canine Business</h1>
       <p>Everyone loves their furry friends, with almost 70 percent of U.S. families (or 85 million households) owning a pet. Dogs are the most popular choice: over 60 million households are home to a canine companion.</p>
       <ButtonsBox>
-        <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{ url: "/", text: "Start Now" }} />
+        <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{ url: `${process.env.ORDER_URL}/form-order-now.php`, text: "Start Now" }} />
       </ButtonsBox>
 
       <RatingRow>
@@ -86,7 +86,7 @@ const DogWalking = () => (
               </Paragraph>
             </Colorbox>
 
-            <Paragraph big style={{ marginTop: "48px", fontFamily: "Avenir-Heavy", color: color.black }}>
+            <Paragraph big style={{ marginTop: "48px", fontFamily: "Avenir", fontWeight: "900", color: color.black }}>
               Read on for some insight into creating your own dog walking or pet sitting business and becoming an entrepreneur. In this guide we will cover:
             </Paragraph>
 

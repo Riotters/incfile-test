@@ -35,7 +35,8 @@ const IconBox = styled.div`
 const ContentBox = styled.div``;
 
 const Title = styled(Paragraph)`
-    font-family: Avenir-Heavy;
+    font-family: Avenir;
+    font-weight: 900;
     color: #1d1d1d;
     margin-bottom: 12px;
     font-size: 16px;

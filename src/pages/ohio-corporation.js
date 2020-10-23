@@ -130,7 +130,7 @@ const AlaskaCorporation = () => (
             <Paragraph big>
             All corporations are required to keep a copy of their bylaws at their main executive office, but they are not required to file those bylaws with the state. At the new corporation’s initial meeting, the board of directors should adopt corporate bylaws, and then keep them updated as time goes on.
             </Paragraph>
-            <Paragraph big style={{ fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
             Bylaws are a critically important document describing the corporation’s basic managerial and legal operating principles regarding such issues as:
             </Paragraph>
 
@@ -179,7 +179,7 @@ const AlaskaCorporation = () => (
             Ohio corporations must file an annual report with the Ohio Tax Commissioner each year between January 1 and March 31.
             </Paragraph>
 
-            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
               The report must include:
             </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>

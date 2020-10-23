@@ -6,7 +6,7 @@ export const top = {
   buttons: [
     {
       text: `See detailed pricing`,
-      url: `/form-order-now.php?entityType=LLC&entityState=AZ`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=HI`,
     },
   ],
 };
@@ -16,7 +16,7 @@ export const howToGuide = [
     type: `header`,
     content: `Starting a Business in Hawaii: LLC Formation`,
     size: 2,
-    marginBottom: 24,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -26,36 +26,29 @@ export const howToGuide = [
   {
     type: `text`,
     content: `For most business owners, the fastest and easiest way to start a business in Hawaii is by creating a Hawaii LLC. A limited liability company (LLC) is a type of business entity that’s ideal for startups and small- to medium-sized businesses. You get the advantages and protections of larger Hawaii corporations, but with much simpler rules and regulations.`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `Briefly, the benefits of starting a Hawaii LLC include:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
-      header: ``,
-      list: [`Separating and limiting your personal liability from your business liability and debts`,
-             `Quick and simple filing, management, compliance, regulation and administration of your Hawaii LLC`,
-             `Easy tax filing and potential advantages for your tax treatment`],
+      header: `Briefly, the benefits of starting a Hawaii LLC include:`,
+      list: [`Separating and limiting your personal liability from your business liability and debts`, `Quick and simple filing, management, compliance, regulation and administration of your Hawaii LLC`, `Easy tax filing and potential advantages for your tax treatment`],
     },
-    marginBottom: 48,
-    color: color.blue3,
+    marginBottom: 40,
+    color: color.yellow3,
     curve: true,
     curveColor: color.red1,
   },
   {
     type: `text`,
     content: `Learn more about the <a href="/limited-liability-company/">benefits of the LLC business structure here</a>.`,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Six Quick Steps for Creating Your Hawaii LLC`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -103,7 +96,7 @@ export const howToGuide = [
                    <li> Name of the incorporator </li>
                    </ul>
                    <p>You can file your Hawaii LLC Articles of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Hawaii. You only need to file your Articles of Organization once.</p></br>
-                   <a href="/form-order-now.php?entityType=LLC&entityState=HI/"> Form your LLC now </a>`,
+                   <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=HI/"> Form your LLC now </a>`,
         },
       ],
     },
@@ -113,69 +106,71 @@ export const howToGuide = [
     type: `header`,
     content: `Review Information About Hawaii Business Registration`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
       header: `The HI Business Registration Division has plenty of information on forming and running a business in Hawaii. These are all the basic steps for forming an LLC in Hawaii. You’ll find other useful information below.`,
-      list: [`<a href="https://cca.hawaii.gov/breg/registration/dllc/" target="_blank" rel="noopener noreferrer">Hawaii Business Registration Division for forming and running your HI LLC</a>`,
-             `<a href="http://labor.hawaii.gov/" target="_blank" rel="noopener noreferrer">Hawaii Department of Labor and Industrial Relations for HI employers and hiring</a>`,
-             `<a href="https://tax.hawaii.gov/" target="_blank" rel="noopener noreferrer">Hawaii Department of Taxation for HI taxes</a>`],
+      list: [
+        `<a href="https://cca.hawaii.gov/breg/registration/dllc/" target="_blank" rel="noopener noreferrer">Hawaii Business Registration Division for forming and running your HI LLC</a>`,
+        `<a href="http://labor.hawaii.gov/" target="_blank" rel="noopener noreferrer">Hawaii Department of Labor and Industrial Relations for HI employers and hiring</a>`,
+        `<a href="https://tax.hawaii.gov/" target="_blank" rel="noopener noreferrer">Hawaii Department of Taxation for HI taxes</a>`,
+      ],
     },
-    marginBottom: 32,
-    color: color.yellow3,
+    marginBottom: 40,
+    color: color.babyblue3,
   },
   {
     type: `header`,
     content: `Special Types of Hawaii LLCs`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `A regular Hawaii LLC is suitable for most business needs, but you also have a few other options to incorporate a special type of LLC.`,
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `Form a Professional Hawaii LLC`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Some states allow certain occupations to form “Professional LLCs,” but Hawaii only recognizes professional corporations, not professional LLCs.`,
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `Form a Foreign LLC in Hawaii`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `<p>If your business is already operating in another state and expanding to Hawaii, you’ll need to form a foreign LLC.</p></br>
               <p> More information on Hawaii <a href="/hawaii-llc/form-filling-permit-requirements/"> filing and licensing requirements here</a> </p>`,
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `What to Do After Forming Your Hawaii LLC`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Want to know your next steps after creating a new LLC in  Hawaii? We’ve got you covered. <a href="/after-forming-llc/"> Here’s our guide</a> to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more.`,
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `Detailed Information for Your Hawaii LLC`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -241,7 +236,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Check LLC Name Availability and Register Your Business with the Hawaii Business Registration Division`,
     size: 2,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -252,7 +247,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Hawaii Business Name Searches`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -262,7 +257,7 @@ export const namingYourBusiness = [
   {
     type: `text`,
     content: `If the business name is already used, that means it’s not available and you won’t be able to register it. Try searching for a different business name instead.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `arrow-link`,
@@ -270,13 +265,13 @@ export const namingYourBusiness = [
       text: `Hawaii Business Registration Division business name search tool`,
       url: `https://hbe.ehawaii.gov/documents/search.html;jsessionid=F2302FE5964F6252F437A67175B69723.prodapp1`,
     },
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `Hawaii Business Registration Division Rules for Naming Your LLC`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -303,18 +298,20 @@ export const namingYourBusiness = [
   {
     type: `text`,
     content: `It’s not enough for your LLC name to be unique; it also cannot be similar to the name of another corporation or LLC in Hawaii. For example, you cannot use the following factors to say your name is different from the name of another business:`,
-    marginBottom: 32,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Suffixes, such as Corporation, Company, Incorporated, Incorporation, Limited, Corp., Co., Inc., Ltd., LLC, etc.`,
-             `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`, 
-             `The singular, plural or possessive forms of a word`, 
-             `Abbreviations, punctuation, symbols, fonts, typefaces, etc.`],
+      list: [
+        `Suffixes, such as Corporation, Company, Incorporated, Incorporation, Limited, Corp., Co., Inc., Ltd., LLC, etc.`,
+        `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`,
+        `The singular, plural or possessive forms of a word`,
+        `Abbreviations, punctuation, symbols, fonts, typefaces, etc.`,
+      ],
     },
-    marginBottom: 32,
+    marginBottom: 40,
     color: color.babyblue3,
   },
   {
@@ -343,20 +340,22 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Are very similar to the name of a federal or HI agency or organization  (e.g., FBI, FDA, Hawaii Department of Taxation, Hawaii Police, Treasury, etc.)`,
-             `Suggest affiliation with a federal or state agency or organization`, 
-             `Use the term “Olympic” or any terms that are trademarks of the Olympic organization`, 
-             `Imply a purpose that it would be illegal for your business to carry out`],
+      list: [
+        `Are very similar to the name of a federal or HI agency or organization  (e.g., FBI, FDA, Hawaii Department of Taxation, Hawaii Police, Treasury, etc.)`,
+        `Suggest affiliation with a federal or state agency or organization`,
+        `Use the term “Olympic” or any terms that are trademarks of the Olympic organization`,
+        `Imply a purpose that it would be illegal for your business to carry out`,
+      ],
     },
     marginBottom: 32,
     color: color.yellow3,
     curve: true,
-    curveColor:color.red1,
+    curveColor: color.red1,
   },
   {
     type: `header`,
     content: `Hawaii LLC Trade Names`,
-    size: 4,
+    size: 3,
     marginBottom: 32,
   },
   {
@@ -367,7 +366,7 @@ export const namingYourBusiness = [
   {
     type: `text`,
     content: `For example, your LLC might be called Hawaii Beach Vacations Holding Company LLC and you have a chain called Honolulu Hotels. You should file a Trade Name to let the Hawaii Business Registration Division know. In Hawaii, you do that through a Form T-1 Application for Registration of Trade Name, or you can have Incfile do it on your behalf through our Trade Name Service.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -381,29 +380,31 @@ export const namingYourBusiness = [
   {
     type: `header`,
     content: `Register Your Business Name with the Hawaii Business Registration Division`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Once you’ve searched for your Hawaii business name, checked availability, followed the naming rules and decided whether you need a fictitious name, you can register your HI LLC name. There are a couple of ways to do this.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`<p>If you don’t want to form your Hawaii LLC right now, you can reserve the business name with the Hawaii Business Registration Division. You will need to complete a form and file it with the HI BRD. You do not need to reserve a name if you are forming your business right away.</p></br>`,
-             `<p>If you’re ready to start your Hawaii LLC, you can formally file your Articles of Organization with the Hawaii BRD, or <a href="/form-order-now.php?entityType=LLC&entityState=HI/">let Incfile take care of it for you</a>.</p>`],
+      list: [
+        `If you don’t want to form your Hawaii LLC right now, you can reserve the business name with the Hawaii Business Registration Division. You will need to complete a form and file it with the HI BRD. You do not need to reserve a name if you are forming your business right away.`,
+        `If you’re ready to start your Hawaii LLC, you can formally file your Articles of Organization with the Hawaii BRD, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=HI/">let Incfile take care of it for you</a>.`,
+      ],
     },
-    marginBottom: 32,
+    marginBottom: 40,
     color: color.purple3,
   },
   {
     type: `header`,
     content: `FAQs on Naming Your Hawaii LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -437,18 +438,18 @@ export const namingYourBusiness = [
   {
     type: `header`,
     content: `Useful Resources for Naming Your Hawaii LLC`,
-    size: 4,
-    marginBottom: 24,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `You might find these other resources helpful.`,
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `Trademarks and Service Marks`,
-    size: 3,
+    size: 4,
     marginBottom: 16,
   },
   {
@@ -463,32 +464,29 @@ export const namingYourBusiness = [
       url: `/trademark-name-search/`,
     },
     theme: `primary48`,
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `Find the Perfect Name for Your Hawaii LLC`,
-    size: 3,
+    size: 4,
     marginBottom: 16,
   },
   {
     type: `text`,
     content: `The perfect business name can be elusive. We have a complete guide to choosing the right business name, but basically, you'll want to choose a name that will:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Appeal to your customers`,
-             `Be memorable enough to stand out`, 
-             `Best represent your product or services`,
-             `Not be used by another business`],
+      list: [`Appeal to your customers`, `Be memorable enough to stand out`, `Best represent your product or services`, `Not be used by another business`],
     },
     marginBottom: 40,
     color: color.blue3,
   },
-  
+
   {
     type: `arrow-link`,
     content: {
@@ -504,7 +502,7 @@ export const registeredAgent = [
     type: `header`,
     content: `Learn About Hawaii Registered Agents`,
     size: 2,
-    marginBottom: 24,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -520,7 +518,7 @@ export const registeredAgent = [
     type: `header`,
     content: `What the Hawaii Business Registration Division Says About Registered Agents`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -530,27 +528,29 @@ export const registeredAgent = [
   {
     type: `text`,
     content: `“A registered agent is the agent for service of process for a business, as identified by the business in its business filings. A registered agent must be an individual or entity authorized to transact business in this State and must be physically present in the State. In general, the duty of the registered agent is to receive service of process, notice or demand on behalf of the business the agent is hired to represent and to inform the business of such service.”`,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `Rules for Hawaii Registered Agents`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `There are certain rules that you must follow when you’re appointing a Hawaii Registered Agent service for your business. They are:`,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`If the Registered Agent is a person, they must reside in Hawaii.`,
-             `If the Registered Agent is a business, they must be able to conduct business in Hawaii.`,
-             `The Registered Agent must have a physical street address in Hawaii, not a P.O. Box.`,
-             `The Registered Agent must be available in person during normal business hours to sign for any correspondence.`],
+      list: [
+        `If the Registered Agent is a person, they must reside in Hawaii.`,
+        `If the Registered Agent is a business, they must be able to conduct business in Hawaii.`,
+        `The Registered Agent must have a physical street address in Hawaii, not a P.O. Box.`,
+        `The Registered Agent must be available in person during normal business hours to sign for any correspondence.`,
+      ],
     },
     marginBottom: 32,
     color: color.yellow3,
@@ -564,24 +564,26 @@ export const registeredAgent = [
     type: `header`,
     content: `What to Expect from a Hawaii Registered Agent Service`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `What can you expect from your Hawaii Registered Agent? Their main function is to accept official documents and correspondence from the HI Business Registration Division. This includes:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Correspondence from the Hawaii Business Registration Division`,
-             `Service of process notices (e.g., if your HI LLC is sued or required to appear in court)`, 
-             `Official Hawaii state and federal government correspondence and notifications`,
-             `Tax forms and requests to complete permits, company filings and reports`],
+      list: [
+        `Correspondence from the Hawaii Business Registration Division`,
+        `Service of process notices (e.g., if your HI LLC is sued or required to appear in court)`,
+        `Official Hawaii state and federal government correspondence and notifications`,
+        `Tax forms and requests to complete permits, company filings and reports`,
+      ],
     },
-    marginBottom: 24,
-    color: color.red3,
+    marginBottom: 40,
+    color: color.purple3,
     curve: true,
     curveColor: color.blue1,
   },
@@ -589,7 +591,7 @@ export const registeredAgent = [
     type: `header`,
     content: `Incfile Provides a Free Hawaii Registered Agent Service for the First Year`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -604,16 +606,18 @@ export const registeredAgent = [
   {
     type: `text`,
     content: `Here’s what you need to know about Incfile’s HI Registered Agent service:`,
-    marginBottom: 16,
-  }, 
+    marginBottom: 24,
+  },
   {
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`The Registered Agent will always be available to accept documents and letters on your behalf.`,
-             `We automatically notify you whenever we receive correspondence for your business from the Hawaii Business Registration Division or anyone else.`,
-             `We scan your correspondence and upload it to a dashboard, so you can review it when convenient.`,
-             `We forward all correspondence to an address you choose.`],
+      list: [
+        `The Registered Agent will always be available to accept documents and letters on your behalf.`,
+        `We automatically notify you whenever we receive correspondence for your business from the Hawaii Business Registration Division or anyone else.`,
+        `We scan your correspondence and upload it to a dashboard, so you can review it when convenient.`,
+        `We forward all correspondence to an address you choose.`,
+      ],
     },
     marginBottom: 32,
     color: color.green3,
@@ -631,71 +635,71 @@ export const registeredAgent = [
     type: `header`,
     content: `How to Appoint a Hawaii Registered Agent for Your LLC`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `You can appoint a Registered Agent when you first incorporate your Hawaii LLC or at any point after that. Here’s how to go about it.`,
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `Appoint a HI Registered Agent Service When You Create Your Hawaii LLC`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Your business needs to have a Hawaii Registered Agent Service as soon as it’s formed. You can achieve this through one of the following methods.`,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `File Articles of Organization with the Hawaii Business Registration Division`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `You will need to include details of your Registered Agent in your Articles of Organization. This is the form that you file with the HI Business Registration Division to formally create your business.`,
-    marginBottom: 24,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `Incorporate Through Incfile and Get a Free Hawaii Registered Agent`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `When you incorporate through us, we complete and file your Articles of Organization based on the information you’ve provided. Additionally, we give you a free Hawaii Registered Agent service for the first year, and we’ll include details of your HI Registered Agent in the form that we file.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
     content: {
       text: `Incorporate your business through Incfile`,
-      url: `/form-order-now.php?entityType=LLC&entityState=HI/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=HI/`,
     },
     theme: `primary48`,
-    marginBottom: 32,
+    marginBottom: 48,
   },
   {
     type: `header`,
     content: `Change Your Hawaii Registered Agent After Your LLC Is Formed`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `You can also change your HI Registered Agent service after you’ve formed your LLC. There are a couple of ways to achieve this.`,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `Choose a Registered Agent Service and File a Form with the Hawaii Business Registration Division`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -705,13 +709,13 @@ export const registeredAgent = [
   {
     type: `header`,
     content: `Sign Up for Incfile’s Hawaii Registered Agent Service and We’ll File the Change on Your Behalf`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `When you choose to use our HI Registered Agent service, we take care of all the form filling and filing for you. We’ll collect important information about your business, complete the form on your behalf and send it to the Hawaii Business Registration Division. We’ll let you know once we officially become your Registered Agent.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -726,7 +730,7 @@ export const registeredAgent = [
     type: `header`,
     content: `Hawaii Registered Agent Search`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -742,20 +746,22 @@ export const registeredAgent = [
     type: `header`,
     content: `The Problems Caused When You Don’t Appoint a Hawaii Registered Agent Service`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `What happens if you choose not to assign or provide details of a Registered Agent to the Hawaii Business Registration Division? There are several possible ramifications, including:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`<b>Getting served or sued and not finding out about it:</b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`, 
-             `<b>Falling out of good standing with the Hawaii Business Registration Division:</b> If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`, 
-             `<b>Losing your status as a Hawaii LLC:</b> A HI Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your Hawaii LLC may be dissolved.`],
+      list: [
+        `<b>Getting served or sued and not finding out about it:</b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
+        `<b>Falling out of good standing with the Hawaii Business Registration Division:</b> If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
+        `<b>Losing your status as a Hawaii LLC:</b> A HI Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your Hawaii LLC may be dissolved.`,
+      ],
     },
     marginBottom: 48,
     color: color.blue3,
@@ -764,30 +770,32 @@ export const registeredAgent = [
     type: `header`,
     content: `You Can Appoint Yourself as Your Own Hawaii Registered Agent`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `If you have an address in Hawaii, you can choose to be the Registered Agent for your LLC. We don’t recommend this approach as there can be some drawbacks:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`The HI Registered Agent must have a physical street address in Hawaii. If you’re forming an LLC outside HI, you will need to use an in-state Registered Agent.`, 
-             `You always need to have someone on hand during business hours at the Hawaii address to sign for important documents.`,
-             `The HI Registered Agent’s name and address are part of the public record and available through the Hawaii Business Registration Division's website. If you would prefer your name and address aren’t published, you should choose a Registered Agent service.`, 
-             `If you change your Hawaii business address or move out of state, you need to file additional documentation with the HI Business Registration Division for the new address if you act as your own Registered Agent. This would not be the case if you use a Registered Agent service, making a move or address change much simpler.`],
+      list: [
+        `The HI Registered Agent must have a physical street address in Hawaii. If you’re forming an LLC outside HI, you will need to use an in-state Registered Agent.`,
+        `You always need to have someone on hand during business hours at the Hawaii address to sign for important documents.`,
+        `The HI Registered Agent’s name and address are part of the public record and available through the Hawaii Business Registration Division's website. If you would prefer your name and address aren’t published, you should choose a Registered Agent service.`,
+        `If you change your Hawaii business address or move out of state, you need to file additional documentation with the HI Business Registration Division for the new address if you act as your own Registered Agent. This would not be the case if you use a Registered Agent service, making a move or address change much simpler.`,
+      ],
     },
     marginBottom: 48,
     color: color.green3,
   },
   {
-      type: `header`,
-      content: `FAQs About Hawaii Registered Agents`,
-      size: 3,
-      marginBottom: 24,
+    type: `header`,
+    content: `FAQs About Hawaii Registered Agents`,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `accordion`,
@@ -817,15 +825,17 @@ export const registeredAgent = [
     type: `header`,
     content: `Useful Resources for Hawaii Registered Agent Services`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `list-dot`,
     content: {
       header: `You might find these resources helpful:`,
-      list: [`<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/">The Main Functions of a Hawaii Registered Agent</a>`,
-             `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Hawaii Registered Agent</a>`,
-             `<a href-"/research-topics/registered-agent-help/what-does-a-registered-agent-do/">What a Hawaii Registered Agent Does</a>`],
+      list: [
+        `<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/">The Main Functions of a Hawaii Registered Agent</a>`,
+        `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Hawaii Registered Agent</a>`,
+        `<a href-"/research-topics/registered-agent-help/what-does-a-registered-agent-do/">What a Hawaii Registered Agent Does</a>`,
+      ],
     },
     marginBottom: 48,
     color: color.babyblue3,
@@ -837,7 +847,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Hawaii Business Licenses, Fees and Filing Requirements for Your LLC`,
     size: 2,
-    marginBottom: 24,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -847,13 +857,13 @@ export const feesAndRequirments = [
   {
     type: `text`,
     content: `Note that Hawaii business licenses and permits might need to be paid when you first form your business, on an ongoing schedule or on an ad hoc basis. Find more details below.`,
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `Hawaii LLC Incorporation Filing Costs`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -861,7 +871,7 @@ export const feesAndRequirments = [
     marginBottom: 32,
   },
   {
-    type: `table`,
+    type: `table-simple`,
     content: {
       headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
       rows: [[`$50`, `10 Business Days`, `2 Business Days`]],
@@ -897,7 +907,7 @@ export const feesAndRequirments = [
     type: `button`,
     content: {
       text: `Incorporate your Hawaii LLC through Incfile today`,
-      url: `/form-order-now.php?entityType=LLC&entityState=HI/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=HI/`,
     },
     theme: `primary48`,
     marginBottom: 48,
@@ -906,12 +916,12 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Getting an EIN/Tax ID for Your Hawaii LLC`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Every Hawaii LLC should have a unique Employer Identification Number (EIN). These are provided by the Internal Revenue Service, and you use them when filing taxes, opening a business bank account and paying employees. You can get one yourself at no cost from the IRS or have Incfile obtain one on your behalf.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -926,12 +936,12 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Certificate of Authority to Operate Outside Hawaii`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `If you’re expanding your Hawaii LLC beyond the borders of the state, you will need a Foreign Qualification or Certificate of Authority to operate in another state. These are typically necessary if you have a physical presence, employees or banking in a different state than Hawaii. Fees and requirements for foreign qualifications depend on each state’s rules. Incfile provides a complete Foreign Qualification service for any state.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -946,7 +956,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Hawaii LLC Annual Reporting and Ongoing Fees`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1004,20 +1014,22 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Business Licenses and Permits in Hawaii`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Some HI LLCs will need certain business licenses and permits from federal, state and regional organizations. These permits and licenses will have associated fees that you should pay on a one-off or regular basis.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
       header: `Permits and licenses vary based on:`,
-      list: [`The industry your Hawaii LLC operates in (e.g., restaurants will need health permits)`, 
-             `The location of your Hawaii LLC (state, county or city) (e.g., a license to conduct business from the city of Honolulu)`, 
-             `The type of business that you run (e.g., healthcare providers must meet HIPAA requirements)`],
+      list: [
+        `The industry your Hawaii LLC operates in (e.g., restaurants will need health permits)`,
+        `The location of your Hawaii LLC (state, county or city) (e.g., a license to conduct business from the city of Honolulu)`,
+        `The type of business that you run (e.g., healthcare providers must meet HIPAA requirements)`,
+      ],
     },
     marginBottom: 32,
     color: color.green3,
@@ -1050,8 +1062,8 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `An Operating Agreement for Your Hawaii LLC`,
-    size: 4,
-    marginBottom: 24,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1061,13 +1073,13 @@ export const feesAndRequirments = [
   {
     type: `text`,
     content: `An Operating Agreement is extremely useful for several reasons (<a href="/research-topics/llc-info/the-llc-operating-agreement/">learn about them here</a>).If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Hawaii business. You can choose to make changes to the template based on your unique requirements.`,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `Ad Hoc Hawaii Fees or Requirements for Your HI LLC`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1077,13 +1089,13 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `To Obtain a Fictitious/DBA Name for Your Hawaii LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `If you want your HI business to trade under a different name, you can file a form with the Hawaii Business Registration Division. You will need to pay a Hawaii filing fee. Incfile can file this form on your behalf.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -1092,18 +1104,18 @@ export const feesAndRequirments = [
       url: `/fictitious-business-or-trade-name/`,
     },
     theme: `primary48`,
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `To Change the Hawaii Registered Agent`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Your Hawaii LLC needs a Registered Agent, which must be appointed when you first incorporate your LLC. You can also switch to a new HI Registered Agent later. Incfile provides a complete Hawaii Registered Agent service.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -1112,13 +1124,13 @@ export const feesAndRequirments = [
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `To Reserve a Name`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1128,23 +1140,21 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `To Amend Certain Facts About Your Hawaii LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Your business formation documents state certain facts about your Hawaii business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with the Hawaii Business Registration Division. You can do this yourself or have Incfile complete the filing on your behalf.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
       header: `Areas you might want to file Hawaii Articles of Amendment for include:`,
-      list: [`Adding, removing or changing a Hawaii LLC member or manager`,
-             `Changing the business address of your LLC`,
-             `Altering the stated business activities of your Hawaii LLC`],
+      list: [`Adding, removing or changing a Hawaii LLC member or manager`, `Changing the business address of your LLC`, `Altering the stated business activities of your Hawaii LLC`],
     },
-    marginBottom: 0,
+    marginBottom: 24,
     color: color.yellow3,
   },
   {
@@ -1159,13 +1169,13 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `To Get a Certificate of Good Standing`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Some organizations will request that you prove your Hawaii LLC’s compliance with laws and tax requirements. If you need to prove you have met your commitments, you will need a “Certificate of Good Standing” from the Hawaii Business Registration Division. Incfile can obtain a certificate on your behalf.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -1174,7 +1184,7 @@ export const feesAndRequirments = [
       url: `/manage-your-company/certificate-of-good-standing/`,
     },
     theme: `primary48`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `text`,
@@ -1190,7 +1200,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `FAQs About Hawaii LLC Fees`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `accordion`,
@@ -1226,7 +1236,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Business Taxes Payable by Your Hawaii LLC`,
     size: 2,
-    marginBottom: 24,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -1242,12 +1252,12 @@ export const businessTaxes = [
     type: `header`,
     content: `How Your Hawaii LLC Will Be Taxed`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `The profits of a Hawaii LLC are not taxed at the business level like those of C Corporations. Instead, taxes for a Hawaii LLC work as follows:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `numeric-list`,
@@ -1271,7 +1281,7 @@ export const businessTaxes = [
         text: `Employees pay federal, state and payroll tax on their earnings.`,
       },
     ],
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `text`,
@@ -1282,7 +1292,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Hawaii State Business Taxes`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1293,7 +1303,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Hawaii State Income Tax Payable on LLC Earnings`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1319,21 +1329,20 @@ export const businessTaxes = [
     type: `header`,
     content: `Hawaii Sales Taxes for LLCs`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the HI Department of Taxation. Hawaii sales tax is collected at the point of purchase. Hawaii sales tax rates do vary depending on the region, county or city where you are located.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
       header: `You will typically need to collect  Hawaii sales tax on:`,
-      list: [`Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`,
-             `Certain services that your Hawaii business might provide`],
+      list: [`Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`, `Certain services that your Hawaii business might provide`],
     },
-    marginBottom: 16,
+    marginBottom: 24,
     color: color.blue3,
     curve: true,
     curveColor: color.red1,
@@ -1351,19 +1360,19 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Sales Tax Rates in Hawaii`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Sales tax rates do vary between states, counties and cities. Typically, the state will set a base sales tax rate, then specific counties and cities may levy small additional sales tax amounts on top of that.`,
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `Federal Taxes for Your Hawaii LLC: Self-Employment and Income Taxes`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1373,8 +1382,8 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Hawaii LLC Federal Self-Employment Tax`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1384,17 +1393,19 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe. Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
       header: `Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
-      list: [`On profits of $60,000, you would pay self-employment tax of $9,180.`,
-             `On profits of $90,000, you would pay self-employment tax of $13,770.`,
-             `On profits of $100,000, you would pay self-employment tax of $15,300.`,
-             `On profits of $140,000, you would pay self-employment tax of $21,420.`,
-             `On profits of $160,000, you would pay self-employment tax of $24,480.`],
+      list: [
+        `On profits of $60,000, you would pay self-employment tax of $9,180.`,
+        `On profits of $90,000, you would pay self-employment tax of $13,770.`,
+        `On profits of $100,000, you would pay self-employment tax of $15,300.`,
+        `On profits of $140,000, you would pay self-employment tax of $21,420.`,
+        `On profits of $160,000, you would pay self-employment tax of $24,480.`,
+      ],
     },
     marginBottom: 48,
     color: color.green3,
@@ -1404,8 +1415,8 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Pay Less Self-Employment Tax by Treating Your Hawaii LLC as an S Corporation`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1415,7 +1426,7 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `You can do this by making an “S Corporation Tax Election” with the IRS using a form known as Form 2553. We can file your Form 2553 with the IRS on your behalf.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -1424,7 +1435,7 @@ export const businessTaxes = [
       url: `/llc-s-corp-election/`,
     },
     theme: `primary48`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `text`,
@@ -1434,8 +1445,8 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Hawaii LLC Federal Income Tax`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1451,12 +1462,12 @@ export const businessTaxes = [
     type: `header`,
     content: `Employee and Employer Taxes for Your Hawaii LLC`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `If you pay employees, there are some slightly different tax implications. Speak to your accountant to get clear guidance for your own unique situation.`,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `header`,
@@ -1510,8 +1521,8 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Other Taxes and Duties for Your Hawaii LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1521,29 +1532,27 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Estimated Taxes for Your Hawaii LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Most Hawaii LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
       header: `The most common types of estimated tax are:`,
-      list: [`Federal income tax`,
-             `Federal self-employment tax`,
-             `Hawaii state tax`],
+      list: [`Federal income tax`, `Federal self-employment tax`, `Hawaii state tax`],
     },
     marginBottom: 24,
-    color: color.red3,
+    color: color.green3,
   },
   {
     type: `text`,
     content: `Most Hawaii LLCs will pay estimated taxes four times a year. Speak to your accountant for more information.`,
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `header`,

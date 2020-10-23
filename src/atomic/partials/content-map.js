@@ -18,13 +18,12 @@ import AccordionWithCheckmark from "../organisms/acccordion-with-checkboxes";
 import BusinessNameSearchForm from "../organisms/forms/business-name-search-form";
 import ToolsList from "../organisms/lists/tools-list";
 import Mobile from "../../images/icons/mobile-compatibility.inline.svg";
-import TextBlockWithImage from "../../pages/virtual-mailbox";
+import TextBlockWithImage from "../../atomic/molecules/mixed-blocks/text-block-with-absolute-image";
 import GenericTable from "../organisms/tables/generic-table";
 import LLCTable from "../organisms/tables/llc-table";
-
-import AnnualReportBoxOnly from '../states-llc/annual-report-box-only';
-import FilingRequirementBox from '../states-llc/FilingRequirementBox';
-
+import Whitebox from "../atoms/boxes/white-box";
+import IconChildrenColorBox from "../molecules/text-blocks/icon-h4-children-color";
+import RoundedTopImageBox from "../molecules/mixed-blocks/top-image-box-rounded";
 
 const Wrapper = styled.div`
   display: flex;
@@ -35,7 +34,7 @@ const Wrapper = styled.div`
   }
 `;
 
-const Content = ({ content, data }) => {
+const Content = ({ content }) => {
     return (
         <Wrapper>
             {content.map((item, i) => (
@@ -90,24 +89,63 @@ const Content = ({ content, data }) => {
                     {item.type === "accordion" && <Accordion tab content={item.content} bottomMargin={item.marginBottom} />}
                     {item.type === "numeric-list" && <NumericList noBox={item.noBox ?? false} content={item.content} bottomMargin={item.marginBottom} />}
                     {item.type === "image" && <Image filename={item.content} bottomMargin={item.marginBottom} />}
-                    {item.type === "tools-list" && <ToolsList tools={item.content} tab={item.tab} />}
+                    {item.type === "tools-list" && (
+                        <div style={{ "margin-bottom": "48px" }}>
+                            <ToolsList tools={item.content} tab={item.tab} />
+                        </div>
+                    )}
                     {item.type === "svg-color-text-box" && (
-                        <div style={{ "margin-bottom": item.marginBottom + "px" }}>
+                        <div style={{ "margin-bottom": item.marginBottom + "px", "margin-top": "0" }}>
                             {item.content.map((box) => (
-                                <TextBlockWithImage SvgImage={box.svg} imageBackgroundColor={box.backgroundColor} imageShadowColor={box.shadowColor} width={100} widthUnit="%">
+                                <TextBlockWithImage SvgImage={box.svg} paddingLeft={0} paddingRight={0} paddingBottom={0} boxShadow={box.boxShadow} textBackgroundColor={box.textBackgroundColor} style={{ "margin-top": box.marginTop }} imageBackgroundColor={box.backgroundColor} imageShadowColor={box.shadowColor} width={100} widthUnit="%">
                                     <Heading size={4}>{box.header}</Heading>
-                                    <Paragraph>{box.text}</Paragraph>
+                                    <Paragraph mixed={true} bottomMargin="0">{parse(box.text)}</Paragraph>
+                                    {box.link && (
+                                        <ArrowLink content={box.link} bottomMargin={24} topMargin={24} />
+                                    )}
                                 </TextBlockWithImage>
                             ))}
                         </div>
                     )}
                     {item.type === "table" && <GenericTable responsive={item.responsive} settings={item.settings} style={item.style} content={item.content} />}
-                    {item.type == "table-simple" && <LLCTable content={item.content} />}
-              
+                    {item.type === "table-simple" && <LLCTable content={item.content} />}
+                    {item.type === "whiteboxes" && (
+                        item.content.map((box) => (
+                            <div className="whitebox-wrapper" style={{ "margin-bottom": box.marginBottom ?? "8px" }}>
+                                <Whitebox padding="32px 40px">
+                                    <ArrowLink content={box.link} bottomMargin={24} />
+                                    <Paragraph bottomMargin={24} mixed={true}>{parse(box.text)}</Paragraph>
+                                </Whitebox>
+                            </div>
+                        ))
+                    )}
+                    {item.type === "colorbox" && (
+                        <IconChildrenColorBox curve={item.curve} curveColor={item.curveColor} rounded color={item.color} Icon={item.icon} bottomMargin={item.marginBottom}>
+                            <Heading size={4} bottomMargin={24}>{item.header}</Heading>
+                            <Paragraph mixed bottomMargin={32}>{item.text}</Paragraph>
+                            {item.buttons && (
+                                <Buttonsbox>
+                                    {item.buttons.map((button) => (
+                                        <Button content={button.content} theme={button.theme} arrow={button.arrow ?? true} margin="0 16px 0 0" />
+                                    ))}
+                                </Buttonsbox>
+                            )}
+                        </IconChildrenColorBox>
+                    )}
+                    {item.type === "rounded-boxes" && (
+                        <Grid marginBottom={item.marginBottom ?? 24}>
+                            {
+                                item.content.map((box) => (
+                                    <RoundedTopImageBox roundLeft={box.roundLeft} roundRight={box.roundRight} image={box.image} content={box.content} noShadow={box.noShadow} color={box.color} align="center" />
+                                ))
+                            }
+                        </Grid>
+                    )}
+
                     {item.type === 'dynamic_ar_box' && (
                         <AnnualReportBoxOnly data={data} />
                     )}
-
+                    
                     {item.type === 'dynamic_filing_requirement' && (
                         <FilingRequirementBox data={data} margin="0 0 42px 0" />
                     )}
@@ -116,5 +154,13 @@ const Content = ({ content, data }) => {
         </Wrapper>
     );
 };
+
+const Grid = styled.div`
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-bottom: ${props => props.marginBottom}px;
+  
+  grid-gap: 30px;
+`;
 
 export default Content;

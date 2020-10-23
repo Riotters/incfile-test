@@ -15,8 +15,8 @@ import { tabPages } from "../../static/states-llc/wisconsin/general";
 const FillingRequirementsPage = () => (
   <Layout>
     <SEO
-    title="Texas Business Search | How to Name Your TX LLC"
-    description="Learn what you need to know about naming an LLC in Texas with Incfile's helpful resources. Pick your perfect business name today!"
+    title="Wisconsin LLC Forms, Costs & License Requirements"
+    description="Make sense of the required forms, fees and filing procedures for your WI LLC with Incfile’s easy-to-use guide. Read more."
     />
     <LLCLayout>
         <LeftTabPages content={tabPages} />

@@ -4,7 +4,7 @@ export const top = {
   button: [
     {
       text: "Check Name Availability",
-      url: "/",
+      url: "#form",
     },
   ],
 };
@@ -56,7 +56,11 @@ export const search = {
 export const newRules = {
   header: `Rules About How You Should Name Your New Jersey Business`,
   text: `Once you've checked to see if your New Jersey business name is available, you'll need to confirm it follows certain naming rules.`,
-  cards: [{ text: `If your New Jersey business is an LLC, it must contain "Limited Liability Company" or an abbreviation. If it's a corporation, it must contain a word like "Incorporated", "Corporation" or something similar.` }, { text: `Normally, you cannot imply connection with a New Jersey state entity or that you will be carrying out activities your NJ business is not legally able to provide.` }, { text: `Your business name must be unique and not similar to or confusable with another business name in New Jersey.` }],
+  cards: [
+    { text: `If your New Jersey business is an LLC, it must contain "Limited Liability Company" or an abbreviation. If it's a corporation, it must contain a word like "Incorporated", "Corporation" or something similar.` },
+    { text: `Normally, you cannot imply connection with a New Jersey state entity or that you will be carrying out activities your NJ business is not legally able to provide.` },
+    { text: `Your business name must be unique and not similar to or confusable with another business name in New Jersey.` },
+  ],
 };
 
 export const specificRules = {
@@ -153,12 +157,7 @@ export const faq = {
           text: `— you'll want to choose a name that will:`,
         },
       ],
-      list: [
-        `Matter to business customers`,
-        `Help people remember your company`,
-        `Tell people what your business does`,
-        `Be unique among New Jersey business entities`,
-      ],
+      list: [`Matter to business customers`, `Help people remember your company`, `Tell people what your business does`, `Be unique among New Jersey business entities`],
     },
     {
       question: `How Do I Protect My New Jersey Business Name?`,

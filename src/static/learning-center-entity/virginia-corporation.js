@@ -185,7 +185,7 @@ export const packets = {
       image: "",
       button: {
         text: "Get the Silver package",
-        url: "/",
+        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=AL`,
       },
       fees: [
         {
@@ -209,8 +209,8 @@ export const packets = {
       price: 100,
       image: "",
       button: {
-        text: "Get the Gold package",
-        url: "/",
+        text: "Get the Silver package",
+        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=AL`,
       },
       fees: [
         {
@@ -234,8 +234,8 @@ export const packets = {
       price: 100,
       image: "",
       button: {
-        text: "Get the Platinum package",
-        url: "/",
+        text: "Get the Silver package",
+        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=AL`,
       },
       fees: [
         {
@@ -348,13 +348,13 @@ export const articlesOfIncorporation = {
   box2: {
     header: `Other items may-but are not required to be-included in the articles of incorporation, such as:`,
     list: [
-        `Directors’ names and addresses.`,
-        `Shareholder preemptive rights, if any.`,
-        `Business purpose of the corporation.`,
-        `Provisions regulating the affairs and managing the business of the corporation.`,
-        `Par value for authorized shares or classes of shares.`,
-        `Limitations on a director’s or officer’s liability for fiscal damages to the corporation or its shareholders in certain situations.`,
-      ],
+      `Directors’ names and addresses.`,
+      `Shareholder preemptive rights, if any.`,
+      `Business purpose of the corporation.`,
+      `Provisions regulating the affairs and managing the business of the corporation.`,
+      `Par value for authorized shares or classes of shares.`,
+      `Limitations on a director’s or officer’s liability for fiscal damages to the corporation or its shareholders in certain situations.`,
+    ],
   },
 };
 

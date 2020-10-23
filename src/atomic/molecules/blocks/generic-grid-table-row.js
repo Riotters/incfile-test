@@ -25,7 +25,7 @@ const Cell = styled.div`
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
-  padding: 24px;
+  padding: ${props => props.padding ?? 24}px;
   ${(props) => (props.textCenter ? "justify-content: center" : "")};
 
   .accordion-panel {
@@ -246,7 +246,7 @@ const Panel = ({ children }) => {
 const GenericGridTableRow = ({ className, content, settings, columns }) => (
   <Wrapper className={className} columns={columns}>
     {content.map((item) => (
-      <Cell textCenter={item.textCenter ?? false} style={item.style ?? {}}>
+      <Cell textCenter={item.textCenter ?? false} style={item.style ?? {}} padding={settings?.padding}>
         {item.header && (
           <Heading size={item.headerSize ?? "5"} bottomMargin="0" style={{}}>
             {item.label}

@@ -25,7 +25,8 @@ const FurnishingsAndEquipment = () => (
 
                 <Paragraph big
                            style={{
-                               fontFamily: "Avenir-Heavy",
+                               fontFamily: "Avenir",
+                               fontWeight: "900",
                                color: color.black,
                                marginBottom: "48px",
                                paddingBottom: 0
@@ -94,7 +95,8 @@ const FurnishingsAndEquipment = () => (
 
                 <Paragraph big
                            style={{
-                               fontFamily: "Avenir-Heavy",
+                               fontFamily: "Avenir",
+                               fontWeight: "900",
                                color: color.black,
                                marginBottom: "48px",
                                paddingBottom: 0,
@@ -138,7 +140,8 @@ const FurnishingsAndEquipment = () => (
 
                 <Paragraph big
                            style={{
-                               fontFamily: "Avenir-Heavy",
+                               fontFamily: "Avenir",
+                               fontWeight: "900",
                                color: color.black,
                                marginBottom: "48px",
                                paddingBottom: 0,

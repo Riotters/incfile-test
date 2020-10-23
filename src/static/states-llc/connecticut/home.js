@@ -6,7 +6,7 @@ export const top = {
   buttons: [
     {
       text: `See detailed pricing`,
-      url: `/form-order-now.php?entityType=LLC&entityState=AZ`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=CT`,
     },
   ],
 };
@@ -16,7 +16,7 @@ export const howToGuide = [
     type: `header`,
     content: `Forming an LLC in Connecticut `,
     size: 2,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -31,36 +31,29 @@ export const howToGuide = [
   {
     type: `text`,
     content: `A Limited Liability Company (LLC) is a type of business entity that’s ideal for startups and small- to medium-sized businesses. You get the advantages and protections of larger CT corporations but with much simpler rules and regulations.`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `Briefly, the benefits of starting a Connecticut LLC include:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
-      header: ``,
-      list: [`Separating and limiting your personal liability from your business liability and debts`,
-             `Quick and simple filing, management, compliance, regulation and administration of your Connecticut LLC`,
-             `Easy tax filing and potential advantages for your tax treatment`],
+      header: `Briefly, the benefits of starting a Connecticut LLC include:`,
+      list: [`Separating and limiting your personal liability from your business liability and debts`, `Quick and simple filing, management, compliance, regulation and administration of your Connecticut LLC`, `Easy tax filing and potential advantages for your tax treatment`],
     },
     marginBottom: 48,
-    color: color.blue3,
+    color: color.yellow3,
     curve: true,
     curveColor: color.red1,
   },
   {
     type: `text`,
     content: `Learn more about the <a href="/limited-liability-company/">benefits of the LLC business structure here</a>.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `header`,
     content: `Start a Connecticut LLC in Six Quick Steps`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -109,7 +102,7 @@ export const howToGuide = [
                    <li> Name of the incorporator </li>
                    </ul>
                    <p>You can file your Connecticut LLC Certificate of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Connecticut. You only need to file your Certificate of Organization once.</p></br>
-                   <a href="/form-order-now.php?entityType=LLC&entityState=CT"> Form your LLC now </a>`,
+                   <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=CT"> Form your LLC now </a>`,
         },
       ],
     },
@@ -119,24 +112,31 @@ export const howToGuide = [
     type: `header`,
     content: `Review Information From the Connecticut Secretary of State`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
+  },
+  {
+    type: `text`,
+    content: `The CT Secretary of State has plenty of information on forming and running a business in Connecticut. These are all the basic steps for forming an LLC in Connecticut.`,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
-      header: `The CT Secretary of State has plenty of information on forming and running a business in Connecticut. These are all the basic steps for forming an LLC in Connecticut. You’ll find other useful information below.`,
-      list: [`<a href="https://portal.ct.gov/DRS/Businesses/Business-Tax-Page/Starting-a--New-Business" target="_blank" rel="noopener noreferrer">Connecticut Secretary of State for forming and running your CT LLC</a>`,
-             `<a href="https://www.ctdol.state.ct.us/" target="_blank" rel="noopener noreferrer">Connecticut Department of Labor for CT employers and hiring</a>`,
-             `<a href="https://portal.ct.gov/drs" target="_blank" rel="noopener noreferrer">Connecticut Department of Revenue Services for CT taxes</a>`],
+      header: `You’ll find other useful information below:`,
+      list: [
+        `<a href="https://portal.ct.gov/DRS/Businesses/Business-Tax-Page/Starting-a--New-Business" target="_blank" rel="noopener noreferrer">Connecticut Secretary of State for forming and running your CT LLC</a>`,
+        `<a href="https://www.ctdol.state.ct.us/" target="_blank" rel="noopener noreferrer">Connecticut Department of Labor for CT employers and hiring</a>`,
+        `<a href="https://portal.ct.gov/drs" target="_blank" rel="noopener noreferrer">Connecticut Department of Revenue Services for CT taxes</a>`,
+      ],
     },
     marginBottom: 32,
-    color: color.yellow3,
+    color: color.babyblue3,
   },
   {
     type: `header`,
     content: `Special Types of Connecticut LLCs`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -146,7 +146,7 @@ export const howToGuide = [
   {
     type: `header`,
     content: `Form a Professional Connecticut LLC`,
-    size: 3,
+    size: 4,
     marginBottom: 16,
   },
   {
@@ -157,31 +157,31 @@ export const howToGuide = [
   {
     type: `header`,
     content: `Form a Foreign LLC in Connecticut`,
-    size: 3,
+    size: 4,
     marginBottom: 16,
   },
   {
     type: `text`,
     content: `<p>If your business is already operating in another state and expanding to Connecticut, you’ll need to form a foreign LLC.</p></br>
               <p> More information on Connecticut <a href="/connecticut-llc/form-filling-permit-requirements/"> filing and licensing requirements here</a> </p>`,
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `What to Do After Forming Your Connecticut LLC`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Want to know your next steps after creating a new LLC in Connecticut? We’ve got you covered. <a href="/after-forming-llc/"> Here’s our guide</a> to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more.`,
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `Detailed Information for Your Connecticut LLC`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -249,7 +249,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Connecticut Secretary of State Business Search and Registering Your LLC Name`,
     size: 2,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -260,7 +260,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Connecticut Business Entity Search on the SOS Website`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -278,13 +278,13 @@ export const namingYourBusiness = [
       text: `Connecticut Secretary of State business name search tool.`,
       url: `https://www.concord-sots.ct.gov/CONCORD/online?sn=PublicInquiry&eid=9740`,
     },
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `Connecticut SOS Rules on Your LLC Business Name`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -295,7 +295,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `General Business Name Availability Rules`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -330,10 +330,12 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Suffixes, such as Corporation, Company, Incorporated, Incorporation, Limited, Corp., Co., Inc., Ltd., LLC, etc.`,
-             `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`, 
-             `The singular, plural or possessive forms of a word`, 
-             `Abbreviations, punctuation, symbols, fonts, typefaces, etc.`],
+      list: [
+        `Suffixes, such as Corporation, Company, Incorporated, Incorporation, Limited, Corp., Co., Inc., Ltd., LLC, etc.`,
+        `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`,
+        `The singular, plural or possessive forms of a word`,
+        `Abbreviations, punctuation, symbols, fonts, typefaces, etc.`,
+      ],
     },
     marginBottom: 32,
     color: color.babyblue3,
@@ -364,21 +366,23 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Are very similar to the name of a federal or CT agency or organization (e.g., FBI, FDA, Connecticut Department of Revenue Services, Connecticut Police, Treasury, etc.)`,
-             `Suggest affiliation with a federal or state agency or organization`, 
-             `Use the term “Olympic” or any terms that are trademarks of the Olympic organization`, 
-             `Imply a purpose that it would be illegal for your business to carry out`],
+      list: [
+        `Are very similar to the name of a federal or CT agency or organization (e.g., FBI, FDA, Connecticut Department of Revenue Services, Connecticut Police, Treasury, etc.)`,
+        `Suggest affiliation with a federal or state agency or organization`,
+        `Use the term “Olympic” or any terms that are trademarks of the Olympic organization`,
+        `Imply a purpose that it would be illegal for your business to carry out`,
+      ],
     },
     marginBottom: 32,
     color: color.yellow3,
     curve: true,
-    curveColor:color.red1,
+    curveColor: color.red1,
   },
   {
     type: `header`,
     content: `Connecticut LLC Fictitious Names`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -402,8 +406,8 @@ export const namingYourBusiness = [
   {
     type: `header`,
     content: `Register Your Connecticut LLC Company Name`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -414,11 +418,11 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`<p>If you don’t want to form your Connecticut LLC right now, you can reserve the business name with the Connecticut Secretary of State. You will need to complete an “Application for reservation of name” form and file it with the CT SOS. You do not need to reserve a name if you are forming your business right away.</p></br>
-              <a href="https://portal.ct.gov/-/media/sots/CommercialRecording/AllForms/allnamereservationpdf.pdf?la=en" target="_blank" rel="noopener noreferrer">Connecticut SOS LLC name reservation form.
-
-              </a>`,
-             `<p>If you’re ready to start your Connecticut LLC, you can formally file your Certificate of Organization with the Connecticut SOS, or <a href="/form-order-now.php?entityType=LLC&entityState=CT/">let Incfile take care of it for you</a>.</p>`],
+      list: [
+        `If you don’t want to form your Connecticut LLC right now, you can reserve the business name with the Connecticut Secretary of State. You will need to complete an “Application for reservation of name” form and file it with the CT SOS. You do not need to reserve a name if you are forming your business right away.
+              <a href="https://portal.ct.gov/-/media/sots/CommercialRecording/AllForms/allnamereservationpdf.pdf?la=en" target="_blank" rel="noopener noreferrer">Connecticut SOS LLC name reservation form.</a>`,
+        `If you’re ready to start your Connecticut LLC, you can formally file your Certificate of Organization with the Connecticut SOS, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=CT/">let Incfile take care of it for you</a>.`,
+      ],
     },
     marginBottom: 32,
     color: color.purple3,
@@ -426,13 +430,13 @@ export const namingYourBusiness = [
   {
     type: `header`,
     content: `FAQs on Naming Your Connecticut LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `You might find the following answers useful.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `accordion`,
@@ -461,8 +465,8 @@ export const namingYourBusiness = [
   {
     type: `header`,
     content: `Useful Resources for Naming Your Connecticut LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -472,7 +476,7 @@ export const namingYourBusiness = [
   {
     type: `header`,
     content: `Trademarks and Service Marks`,
-    size: 3,
+    size: 4,
     marginBottom: 16,
   },
   {
@@ -487,12 +491,12 @@ export const namingYourBusiness = [
       url: `/trademark-name-search/`,
     },
     theme: `primary48`,
-    marginBottom: 32,
+    marginBottom: 48,
   },
   {
     type: `header`,
     content: `Find the Perfect Name for Your Connecticut Company`,
-    size: 3,
+    size: 4,
     marginBottom: 16,
   },
   {
@@ -504,15 +508,12 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Appeal to your customers`,
-             `Be memorable enough to stand out`, 
-             `Best represent your product or services`,
-             `Not be used by another business`],
+      list: [`Appeal to your customers`, `Be memorable enough to stand out`, `Best represent your product or services`, `Not be used by another business`],
     },
     marginBottom: 40,
     color: color.blue3,
   },
-  
+
   {
     type: `arrow-link`,
     content: {
@@ -528,7 +529,7 @@ export const registeredAgent = [
     type: `header`,
     content: `A Connecticut Registered Agent for Your LLC`,
     size: 2,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -544,7 +545,7 @@ export const registeredAgent = [
     type: `header`,
     content: `What the Connecticut Secretary of State Says About CT Registered Agents`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -554,27 +555,29 @@ export const registeredAgent = [
   {
     type: `text`,
     content: `“A registered agent is a responsible third-party who is registered in the same state in which a business entity was established and who is designated to receive service of process notices and correspondence on behalf of the corporation or LLC.”`,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `Rules for Connecticut Registered Agents`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
-    content: `There are certain rules that you must follow when you’re appointing a Connecticut Registered Agent service for your business. They are:`,
+    content: `There are certain rules that you must follow when you’re appointing a Connecticut Registered Agent service for your business.`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: ``,
-      list: [`If the Registered Agent is a person, they must reside in Connecticut.`,
-             `If the Registered Agent is a business, they must be able to conduct business in Connecticut.`,
-             `The Registered Agent must have a physical street address in Connecticut, not a P.O. Box.`,
-             `The CT Registered Agent must be available in person during normal business hours to sign for any correspondence.`],
+      header: `They are:`,
+      list: [
+        `If the Registered Agent is a person, they must reside in Connecticut.`,
+        `If the Registered Agent is a business, they must be able to conduct business in Connecticut.`,
+        `The Registered Agent must have a physical street address in Connecticut, not a P.O. Box.`,
+        `The CT Registered Agent must be available in person during normal business hours to sign for any correspondence.`,
+      ],
     },
     marginBottom: 32,
     color: color.yellow3,
@@ -588,7 +591,7 @@ export const registeredAgent = [
     type: `header`,
     content: `What to Expect From a Connecticut Registered Agent Service`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -599,13 +602,15 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Correspondence from the Connecticut Secretary of State`,
-             `Service of process notices (e.g., if your CT LLC is sued or required to appear in court)`, 
-             `Official Connecticut state and federal government correspondence and notifications`,
-             `Tax forms and requests to complete permits, company filings and reports`],
+      list: [
+        `Correspondence from the Connecticut Secretary of State`,
+        `Service of process notices (e.g., if your CT LLC is sued or required to appear in court)`,
+        `Official Connecticut state and federal government correspondence and notifications`,
+        `Tax forms and requests to complete permits, company filings and reports`,
+      ],
     },
-    marginBottom: 24,
-    color: color.red3,
+    marginBottom: 32,
+    color: color.purple3,
     curve: true,
     curveColor: color.blue1,
   },
@@ -613,7 +618,7 @@ export const registeredAgent = [
     type: `header`,
     content: `The Incfile Registered Agent Service for Connecticut LLCs`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -628,16 +633,18 @@ export const registeredAgent = [
   {
     type: `text`,
     content: `Here’s what you need to know about Incfile’s CT Registered Agent service:`,
-    marginBottom: 16,
-  }, 
+    marginBottom: 24,
+  },
   {
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`The Registered Agent will always be available to accept documents and letters on your behalf`,
-             `We automatically notify you whenever we receive correspondence for your business from the Connecticut Secretary of State or anyone else`,
-             `We scan your correspondence and upload it to a dashboard, so you can review it when convenient`,
-             `We forward all correspondence to an address you choose`]
+      list: [
+        `The Registered Agent will always be available to accept documents and letters on your behalf`,
+        `We automatically notify you whenever we receive correspondence for your business from the Connecticut Secretary of State or anyone else`,
+        `We scan your correspondence and upload it to a dashboard, so you can review it when convenient`,
+        `We forward all correspondence to an address you choose`,
+      ],
     },
     marginBottom: 32,
     color: color.green3,
@@ -655,7 +662,7 @@ export const registeredAgent = [
     type: `header`,
     content: `How to Appoint a Connecticut Registered Agent for Your LLC`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -666,12 +673,12 @@ export const registeredAgent = [
     type: `header`,
     content: `Assign Your Connecticut Registered Agent When You Form Your CT LLC`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Your business needs to have a Connecticut Registered Agent Service as soon as it’s formed. You can achieve this through one of the following methods.`,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `header`,
@@ -682,7 +689,7 @@ export const registeredAgent = [
   {
     type: `text`,
     content: `You will need to include details of your Registered Agent in your Certificate of Organization. This is the form that you file with the CT Secretary of State to formally create your business.`,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `header`,
@@ -699,7 +706,7 @@ export const registeredAgent = [
     type: `button`,
     content: {
       text: `Incorporate your business through Incfile`,
-      url: `/form-order-now.php?entityType=LLC&entityState=CT`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=CT`,
     },
     theme: `primary48`,
     marginBottom: 32,
@@ -708,18 +715,18 @@ export const registeredAgent = [
     type: `header`,
     content: `Change Your Connecticut Registered Agent After Your LLC Is Formed`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `You can also change your CT Registered Agent service after you’ve formed your LLC. There are a couple of ways to achieve this.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `header`,
     content: `Choose a Registered Agent Service and File a Change of Agent Form`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -729,8 +736,8 @@ export const registeredAgent = [
   {
     type: `header`,
     content: `Sign up for Incfile’s Connecticut Registered Agent Service, and We’ll File the Change on Your Behalf`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -750,7 +757,7 @@ export const registeredAgent = [
     type: `header`,
     content: `CT Registered Agent Search`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -766,7 +773,7 @@ export const registeredAgent = [
     type: `header`,
     content: `The Problems Caused When You Don’t Appoint a Connecticut Registered Agent Service`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -777,9 +784,11 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`<b>Getting served or sued and not finding out about it:</b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`, 
-             `<b>Falling out of good standing with the Connecticut Secretary of State: If you don’t respond to certain correspondence (like the request for your Annual Report), certain states may revoke your right to do business.`, 
-             `<b>Losing your status as a Connecticut LLC:</b> A CT Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your LLC may be dissolved.`],
+      list: [
+        `<b>Getting served or sued and not finding out about it:</b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
+        `<b>Falling out of good standing with the Connecticut Secretary of State: If you don’t respond to certain correspondence (like the request for your Annual Report), certain states may revoke your right to do business.`,
+        `<b>Losing your status as a Connecticut LLC:</b> A CT Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your LLC may be dissolved.`,
+      ],
     },
     marginBottom: 48,
     color: color.blue3,
@@ -799,19 +808,21 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`The CT Registered Agent must have a physical street address in Connecticut. If you’re forming an LLC outside CT, you will need to use an in-state Registered Agent.`, 
-             `You always need to have someone on hand during business hours at the Connecticut address to sign for important documents.`,
-             `The CT Registered Agent’s name and address are part of the public record and available through the Connecticut Secretary of State's website. If you would prefer your name and address aren’t published, you might choose a Registered Agent service.`, 
-             `If you change your Connecticut business address or move out of state, you would need to file additional documentation with the CT Secretary of State for the new address if you act as your own Registered Agent. This would not be the case if you use a Registered Agent service, making a move or address change much simpler.`],
+      list: [
+        `The CT Registered Agent must have a physical street address in Connecticut. If you’re forming an LLC outside CT, you will need to use an in-state Registered Agent.`,
+        `You always need to have someone on hand during business hours at the Connecticut address to sign for important documents.`,
+        `The CT Registered Agent’s name and address are part of the public record and available through the Connecticut Secretary of State's website. If you would prefer your name and address aren’t published, you might choose a Registered Agent service.`,
+        `If you change your Connecticut business address or move out of state, you would need to file additional documentation with the CT Secretary of State for the new address if you act as your own Registered Agent. This would not be the case if you use a Registered Agent service, making a move or address change much simpler.`,
+      ],
     },
     marginBottom: 48,
     color: color.green3,
   },
   {
-      type: `header`,
-      content: `FAQs About Connecticut Registered Agents`,
-      size: 3,
-      marginBottom: 24,
+    type: `header`,
+    content: `FAQs About Connecticut Registered Agents`,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `accordion`,
@@ -843,15 +854,17 @@ export const registeredAgent = [
     type: `header`,
     content: `Useful Resources for Connecticut Registered Agent Services`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `list-dot`,
     content: {
       header: `You might find these resources helpful:`,
-      list: [`<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/">The Main Functions of a Connecticut Registered Agent</a>`,
-             `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Connecticut Registered Agent</a>`,
-             `<a href-"/research-topics/registered-agent-help/what-does-a-registered-agent-do/">What a Connecticut Registered Agent Does</a>`],
+      list: [
+        `<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/">The Main Functions of a Connecticut Registered Agent</a>`,
+        `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Connecticut Registered Agent</a>`,
+        `<a href-"/research-topics/registered-agent-help/what-does-a-registered-agent-do/">What a Connecticut Registered Agent Does</a>`,
+      ],
     },
     marginBottom: 48,
     color: color.babyblue3,
@@ -863,7 +876,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Connecticut Business Licenses, Fees & Other Requirements for Your LLC `,
     size: 2,
-    marginBottom: 24,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -879,7 +892,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Connecticut LLC Incorporation Costs & Filing`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -887,7 +900,7 @@ export const feesAndRequirments = [
     marginBottom: 32,
   },
   {
-    type: `table`,
+    type: `table-simple`,
     content: {
       headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
       rows: [[`$120`, `12 Business Days`, `4 Business Days`]],
@@ -932,12 +945,12 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Getting an Employer Identification Number for Your CT LLC`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Every Connecticut LLC should have a unique employer identification number (EIN). These are provided by the Internal Revenue Service, and you use them when filing taxes, opening a business bank account and paying employees. You can get one yourself at no cost from the IRS or have Incfile obtain one on your behalf.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -952,18 +965,18 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Getting a State Tax ID for Connecticut`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `You will need a tax registration number to pay CT taxes. You can get this by <a href="https://portal.ct.gov/DRS/DRS-Forms/Registration/Register-Your-Business" target="_blank" rel="noopener noreferrer> registering your business online. </a>`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `header`,
     content: `Certificate of Authority to Operate Outside Connecticut`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -983,7 +996,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Connecticut Annual Report Filing and Fees for LLCs`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1034,20 +1047,22 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Connecticut Business Licenses and Permits `,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Your Connecticut LLC may need certain licenses and permits to comply with specific requirements. These business permits and licenses might be issued by Connecticut, regional or federal organizations. Some of the associated fees only need to be paid once, while others have ongoing charges.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
       header: `Permits and licenses vary based on:`,
-      list: [`The industry your Connecticut LLC operates in (e.g., restaurants will need health permits)`, 
-             `The location of your Connecticut LLC (state, county or city) (e.g., a license to conduct business from the city of Bridgeport)`, 
-             `The type of business that you run (e.g., healthcare providers must meet HIPAA requirements)`],
+      list: [
+        `The industry your Connecticut LLC operates in (e.g., restaurants will need health permits)`,
+        `The location of your Connecticut LLC (state, county or city) (e.g., a license to conduct business from the city of Bridgeport)`,
+        `The type of business that you run (e.g., healthcare providers must meet HIPAA requirements)`,
+      ],
     },
     marginBottom: 32,
     color: color.green3,
@@ -1057,8 +1072,8 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `The Incfile Business License Research Package for Your Connecticut LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1069,8 +1084,7 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`A complete report on all the licenses, permits and tax registrations your Connecticut LLC will need`,
-             `The application forms you will need to file with the Connecticut, regional and federal licensing authorities`],
+      list: [`A complete report on all the licenses, permits and tax registrations your Connecticut LLC will need`, `The application forms you will need to file with the Connecticut, regional and federal licensing authorities`],
     },
     marginBottom: 24,
     color: color.purple3,
@@ -1078,7 +1092,7 @@ export const feesAndRequirments = [
   {
     type: `text`,
     content: `Remember that operating your business without the required licenses can expose you to risks and fines from federal, Connecticut and local governments.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -1092,8 +1106,8 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `Connecticut LLC Operating Agreements`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1103,13 +1117,13 @@ export const feesAndRequirments = [
   {
     type: `text`,
     content: `An Operating Agreement is extremely useful for several reasons (<a href="/research-topics/llc-info/the-llc-operating-agreement/">learn about them here</a>). If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Connecticut business. You can choose to make changes to the template based on your unique requirements.`,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Ad Hoc Connecticut Fees or Requirements for Your Connecticut LLC`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1119,13 +1133,13 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `To Obtain a Fictitious/DBA Name for Your Connecticut LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `If you want your CT business to trade under a different name, you can file a form with the Connecticut Secretary of State. You will need to pay a Connecticut filing fee. Incfile can file this form on your behalf.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -1139,13 +1153,13 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `To Change the Connecticut Registered Agent for Your CT LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Your Connecticut LLC needs a Registered Agent, which must be appointed when you first incorporate your LLC. You can also switch to a new CT Registered Agent later. Incfile provides a complete Connecticut Registered Agent service.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -1154,13 +1168,13 @@ export const feesAndRequirments = [
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
-    marginBottom: 32,
+    marginBottom: 48,
   },
   {
     type: `header`,
     content: `To Reserve a Name for Your Connecticut LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1170,23 +1184,21 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `To Amend Certain Facts About Your Connecticut LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Your business formation documents state certain facts about your Connecticut business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with the Connecticut Secretary of State. You can do this yourself or have Incfile complete the filing on your behalf.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
       header: `Areas you might want to file Connecticut Articles of Amendment for include:`,
-      list: [`Adding, removing or changing a Connecticut LLC member or manager`,
-             `Changing the business address of your LLC`,
-             `Altering the stated business activities of your Connecticut LLC`],
+      list: [`Adding, removing or changing a Connecticut LLC member or manager`, `Changing the business address of your LLC`, `Altering the stated business activities of your Connecticut LLC`],
     },
-    marginBottom: 0,
+    marginBottom: 32,
     color: color.yellow3,
   },
   {
@@ -1201,13 +1213,13 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `To Get a CT Secretary of State Certificate of Good Standing`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Some organizations will request that you prove your Connecticut LLC’s compliance with laws and tax requirements. If you need to prove you have met your commitments, you will need a “Certificate of Good Standing” from the Connecticut Secretary of State. Incfile can obtain a certificate on your behalf.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -1216,7 +1228,7 @@ export const feesAndRequirments = [
       url: `/manage-your-company/certificate-of-good-standing/`,
     },
     theme: `primary48`,
-    marginBottom: 16,
+    marginBottom: 48,
   },
   {
     type: `text`,
@@ -1232,7 +1244,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `FAQs About Connecticut LLC Fees`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `accordion`,
@@ -1263,13 +1275,12 @@ export const feesAndRequirments = [
   },
 ];
 
-
 export const businessTaxes = [
   {
     type: `header`,
     content: `Connecticut Business Taxes for Your LLC`,
     size: 2,
-    marginBottom: 24,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -1285,12 +1296,12 @@ export const businessTaxes = [
     type: `header`,
     content: `How Your Connecticut LLC Will Be Taxed`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `TThe profits of a Connecticut LLC are not taxed at the business level like those of C Corporations. Instead, taxes for a Connecticut LLC work as follows:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `numeric-list`,
@@ -1314,7 +1325,7 @@ export const businessTaxes = [
         text: `Employees pay federal, state and payroll tax on their earnings`,
       },
     ],
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `text`,
@@ -1325,7 +1336,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Connecticut Taxes Payable to the CT Department of Revenue Services`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1336,7 +1347,7 @@ export const businessTaxes = [
     type: `header`,
     content: `State Taxes in Connecticut`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1351,27 +1362,26 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `The Connecticut state tax rate varies between 3 and 6.99 percent, depending on how much you earn. `,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `CT Sales Taxes and Filing for LLCs`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the CT Department of Revenue Services. Connecticut sales tax is collected at the point of purchase. Connecticut sales tax rates do vary depending on the region, county or city where you are located. <a href="https://portal.ct.gov/Services/Revenue/State-Individual-Taxes" target="_blank" rel="noopener noreferrer"> Get details of the CT state tax here.</a>`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
       header: `You will typically need to collect Connecticut sales tax on:`,
-      list: [`Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`,
-             `Certain services that your Connecticut business might provide`],
+      list: [`Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`, `Certain services that your Connecticut business might provide`],
     },
-    marginBottom: 16,
+    marginBottom: 32,
     color: color.blue3,
     curve: true,
     curveColor: color.red1,
@@ -1390,7 +1400,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Getting a State Tax ID for Connecticut`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1400,8 +1410,8 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Connecticut Sales Tax Rates`,
-    size: 4,
-    marginBottom: 24,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1412,7 +1422,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Federal Self-Employment and Income Taxes for Your Connecticut LLC`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1422,8 +1432,8 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Connecticut LLC Federal Self-Employment Tax`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1433,16 +1443,18 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
       header: `Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
-      list: [`On profits of $100,000, you would pay self-employment tax of $15,300`,
-             `On profits of $120,000, you would pay self-employment tax of $18,360`,
-             `On profits of $140,000, you would pay self-employment tax of $21,420`,
-             `On profits of $160,000, you would pay self-employment tax of $24,480`],
+      list: [
+        `On profits of $100,000, you would pay self-employment tax of $15,300`,
+        `On profits of $120,000, you would pay self-employment tax of $18,360`,
+        `On profits of $140,000, you would pay self-employment tax of $21,420`,
+        `On profits of $160,000, you would pay self-employment tax of $24,480`,
+      ],
     },
     marginBottom: 48,
     color: color.green3,
@@ -1452,8 +1464,8 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Pay Less Self-Employment Tax by Treating Your Connecticut LLC as an S Corporation`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1463,7 +1475,7 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `You can do this by making an “S Corporation Tax Election” with the IRS using a form known as Form 2553. We can file your Form 2553 with the IRS on your behalf.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -1472,7 +1484,7 @@ export const businessTaxes = [
       url: `/llc-s-corp-election/`,
     },
     theme: `primary48`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `text`,
@@ -1482,8 +1494,8 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Connecticut LLC Federal Income Tax`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1499,12 +1511,12 @@ export const businessTaxes = [
     type: `header`,
     content: `Employer and Employee Taxes for Your Connecticut LLC`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `If you pay employees, there are some slightly different tax implications. Speak to your accountant to get clear guidance for your own unique situation.`,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `header`,
@@ -1543,7 +1555,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Connecticut LLC Employee Insurance and Other Requirements`,
     size: 4,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1553,13 +1565,13 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `Get more requirements from <a href="https://www.ctdol.state.ct.us/" target="_blank" rel="noopener noreferrer"> the Connecticut Department of Labor website.</a>`,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Other Taxes and Duties for Your Connecticut LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1569,24 +1581,22 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Estimated Taxes for Your Connecticut LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Most Connecticut LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
       header: `The most common types of estimated tax are:`,
-      list: [`Federal income tax`,
-             `Federal self-employment tax`,
-             `Connecticut state tax`],
+      list: [`Federal income tax`, `Federal self-employment tax`, `Connecticut state tax`],
     },
     marginBottom: 24,
-    color: color.red3,
+    color: color.babyblue,
   },
   {
     type: `text`,

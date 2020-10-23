@@ -132,7 +132,7 @@ const AlaskaCorporation = () => (
               A corporation must maintain its bylaws at its main executive office, but is not required to file them with the state. The incorporators or board of directors should adopt the corporation’s bylaws at its initial meeting-insuring that they do not conflict with the articles of
               incorporation-and keep them updated as time goes on. Bylaws describe the corporation’s basic operating principles from both the managerial and legal perspectives.
             </Paragraph>
-            <Paragraph big style={{ fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
               Bylaws should include as a minimum:
             </Paragraph>
 
@@ -182,7 +182,7 @@ const AlaskaCorporation = () => (
               Arizona corporations must file a report annually with the Arizona Corporation Commission in their anniversary month of the original filing.
             </Paragraph>
 
-            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
               The report must include:
             </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>

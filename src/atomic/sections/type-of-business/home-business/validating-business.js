@@ -132,7 +132,7 @@ const ValidatingBusinessIdea = () => (
                         test the marketplace and validate your ideas.
                     </Paragraph>
 
-                    <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
+                    <Paragraph big style={{fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
                         The thing to learn here is that it’s okay to say “no” to your first, second or third home-based
                         business ideas.
                     </Paragraph>
