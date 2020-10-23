@@ -862,11 +862,7 @@ export const feesAndRequirments = [
     marginBottom: 32,
   },
   {
-    type: `table-simple`,
-    content: {
-      headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
-      rows: [[`$212`, `4 weeks`, `4 Business Days`]],
-    },
+    type: `dynamic_ar_box`
   },
   {
     type: `arrow-link`,
@@ -955,26 +951,7 @@ export const feesAndRequirments = [
     marginBottom: 48,
   },
   {
-    type: `header`,
-    content: `Annual Report`,
-    size: 4,
-    marginBottom: 24,
-  },
-  {
-    type: `text`,
-    content: `<b>Frequency:</b> Anually`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `<b>Annual Year</b>: April 15th Fiscal Year: 3½ months after beginning of tax year`,
-    marginBottom: 16,
-  },
-
-  {
-    type: `text`,
-    content: `<b>Note:</b>  LLCs elected to be taxed as corporations follow corporation rules.`,
-    marginBottom: 48,
+    type: `dynamic_filing_requirement`,
   },
   {
     type: `text`,

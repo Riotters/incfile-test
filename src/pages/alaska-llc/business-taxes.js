@@ -11,17 +11,30 @@ import ContentMap from "../../atomic/partials/content-map";
 // Content
 import { businessTaxes } from "../../static/states-llc/alaska/home";
 import { tabPages } from "../../static/states-llc/alaska/general";
+import { getFullPricesAndFilings } from '../../api/Api';
 
-const BusinessTaxesPage = () => (
-  <Layout>
-    <SEO title="Alaska Business Search | How to Name Your TX LLC" description="Learn what you need to know about naming an LLC in Alaska with Incfile's helpful resources. Pick your perfect business name today!" />
-    <LLCLayout>
-      <LeftTabPages content={tabPages} />
-      <MainPageContent>
-        <ContentMap content={businessTaxes} />
-      </MainPageContent>
-    </LLCLayout>
-  </Layout>
-);
+
+function BusinessTaxesPage() {
+    const [dataApi, setDataApi] = React.useState({});
+
+    React.useEffect(() => {
+        getFullPricesAndFilings('Alaska').then(data => {
+            setDataApi(data);
+        });
+    }, []);
+
+    return (
+        <Layout>
+            <SEO title="Alaska Business Search | How to Name Your TX LLC" description="Learn what you need to know about naming an LLC in Alaska with Incfile's helpful resources. Pick your perfect business name today!" />
+            <LLCLayout data={dataApi}>
+                <LeftTabPages content={tabPages} />
+                <MainPageContent>
+                    <ContentMap content={businessTaxes} data={dataApi} />
+                </MainPageContent>
+            </LLCLayout>
+        </Layout>
+    );
+  
+};
 
 export default BusinessTaxesPage;

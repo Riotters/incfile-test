@@ -10,7 +10,7 @@ export const tabPages = {
     },
     {
       name: `Registered Agent`,
-      path: `/alabama-llc/registered-agents-arizona-llc/`,
+      path: `/alabama-llc/registered-agents-alabama-llc/`,
     },
     {
       name: `Filing Fee & Requirements`,
@@ -22,7 +22,7 @@ export const tabPages = {
     },
     {
       name: `What To Do Next?`,
-      path: `/other/after-forming-llc/`,
+      path: `/after-forming-llc/`,
     },
   ],
 };

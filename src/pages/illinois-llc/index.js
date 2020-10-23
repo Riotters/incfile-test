@@ -17,6 +17,9 @@ import HowToGuide from "../../atomic/states-llc/illinois/how-to-guide";
 import { HomePageContent } from "../../static/states-llc/illinois/home";
 import { tabPages, rocket } from "../../static/states-llc/illinois/general";
 
+import { getFullPricesAndFilings } from '../../api/Api';
+
+
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -41,26 +44,34 @@ const Wrapper = styled.div`
 `;
 
 function IllinoisLLCIndex() {
-  return (
-    <Layout>
-      <SEO title="LLCs in Illinois | Guide to Forming an LLC in Illinois" description="Ready to form your Illinois LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
+    const [dataApi, setDataApi] = React.useState({});
 
-      <LinearBgHeader imageMapName="tx-map-2x">
-        <HomeHeader content={HomePageContent.header} />
-      </LinearBgHeader>
+    React.useEffect(() => {
+        getFullPricesAndFilings('Illinois').then(data => {
+            setDataApi(data);
+        });
+    }, []);
 
-      <WrapperContent>
-        <Wrapper>
-          <LeftTabPages content={tabPages} />
-          <MainPageContent>
-            <HowToGuide content={HomePageContent.content} />
-          </MainPageContent>
-        </Wrapper>
-      </WrapperContent>
+    return (
+        <Layout>
+            <SEO title="LLCs in Illinois | Guide to Forming an LLC in Illinois" description="Ready to form your Illinois LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
 
-      <Rocket content={rocket} />
-    </Layout>
-  );
+            <LinearBgHeader imageMapName="tx-map-2x">
+                <HomeHeader content={HomePageContent.header} data={dataApi} />
+            </LinearBgHeader>
+
+            <WrapperContent>
+                <Wrapper>
+                    <LeftTabPages content={tabPages} />
+                    <MainPageContent>
+                        <HowToGuide content={HomePageContent.content} data={dataApi} />
+                    </MainPageContent>
+                </Wrapper>
+            </WrapperContent>
+
+            <Rocket content={rocket} />
+        </Layout>
+    );
 }
 
 export default IllinoisLLCIndex;

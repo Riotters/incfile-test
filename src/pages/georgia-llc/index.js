@@ -17,6 +17,8 @@ import HowToGuide from "../../atomic/states-llc/georgia/how-to-guide";
 import { HomePageContent } from "../../static/states-llc/georgia/home";
 import { tabPages, rocket } from "../../static/states-llc/georgia/general";
 
+import { getFullPricesAndFilings } from '../../api/Api';
+
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -41,19 +43,27 @@ const Wrapper = styled.div`
 `;
 
 function GeorgiaLLCIndex() {
+    const [dataApi, setDataApi] = React.useState({});
+
+    React.useEffect(() => {
+        getFullPricesAndFilings('Georgia').then(data => {
+            setDataApi(data);
+        });
+    }, []);
+
   return (
     <Layout>
       <SEO title="LLCs in Georgia | Guide to Forming an LLC in Georgia" description="Ready to form your Georgia LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
 
       <LinearBgHeader imageMapName="tx-map-2x">
-        <HomeHeader content={HomePageContent.header} />
+        <HomeHeader content={HomePageContent.header} data={dataApi} />
       </LinearBgHeader>
 
       <WrapperContent>
         <Wrapper>
           <LeftTabPages content={tabPages} />
           <MainPageContent>
-            <HowToGuide content={HomePageContent.content} />
+            <HowToGuide content={HomePageContent.content} data={dataApi} />
           </MainPageContent>
         </Wrapper>
       </WrapperContent>

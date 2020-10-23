@@ -18,7 +18,7 @@ export const filingFeeAndRequirementContent = {
         desc: `Starting a New York LLC? Have Incfile do all the paperwork for you for free.`,
         button: {
           text: `Form Your LLC Now`,
-          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=NY/`,
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=NY`,
         },
       },
     ],
@@ -51,13 +51,7 @@ export const filingFeeAndRequirementContent = {
       content: `To create your business in New York, you’ll file an LLC with the NY Department of State and pay an associated LLC formation fee. Every state has different LLC filing fees and filing times. Here is the current information for New York:`,
     },
     {
-      type: `gridTable`,
-      headerSize: `5`,
-      columns: `3`,
-      content: {
-        headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
-        rows: [[`$205`, `5 Business Days`, `1 Business Day`]],
-      },
+      type: `dynamic_ar_box`,
     },
     {
       type: `arrow-links`,
@@ -150,19 +144,7 @@ export const filingFeeAndRequirementContent = {
       content: `Most states require some form of regular reporting with their Department of State. New York requires a biennial LLC report with an associated filing fee. Here are the current biennial filing requirements for New York:`,
     },
     {
-      type: `iconListColorBox`,
-      styles: { marginBottom: `55px` },
-      boxColor: color.blue3,
-      content: {
-        header: `Annual Report`,
-        list: [
-          `<b>Frequency:</b> Biennially`,
-          `<b>Due Date:</b> During anniversary month of organization.`,
-          `<b>Filing Fee:</b> $9 `,
-          `<b>Important:</b> Section 206 of the New York State Limited Liability Company Law requires that within 120 days after the effectiveness of the initial articles of organization, a limited liability company (LLC) must publish in two newspapers a copy of the articles of organization or a notice related to the formation of the LLC. The newspapers must be designated by the county clerk of the county in which the office of the LLC is located, as stated in the articles of organization. After publication, the printer or publisher of each newspaper will provide you with an affidavit of publication. A Certificate of Publication, with the affidavits of publication of the newspapers attached, must be submitted to the New York Department of State, Division of Corporations, One Commerce Plaza, 99 Washington Avenue, Albany, NY 12231. The fee for filing the Certificate of Publication is $50.</br></br>
-                    <b>(We do not assist in the filing of the Publication Requirement)</b>`,
-        ],
-      },
+      type: `dynamc_filing_requirement`,
     },
     {
       type: `box-cta`,

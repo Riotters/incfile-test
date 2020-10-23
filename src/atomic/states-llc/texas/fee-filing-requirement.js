@@ -15,7 +15,7 @@ import IconListColorBox from "../../molecules/text-blocks/icon-h4-list-color"
 import AcccordionCounting from '../tab-acccordion-with-counting';
 import Accordion from "../../organisms/accordion/accordion";
 import TextBoxed from "../../molecules/static-check/circle-checkmark-text-boxed";
-import GridTableRow from "../../molecules/blocks/grid-table-row";
+import AnnualReportBoxOnly from '../annual-report-box-only';
 
 const Wrapper = styled.div`
     h2, h3{
@@ -48,7 +48,7 @@ const Wrapper = styled.div`
     }
 `
 
-const FeeFilingRequirementSection = ({ content }) => {
+const FeeFilingRequirementSection = ({ content, data }) => {
     return (
         <Wrapper>              
             {content.map((item, i) => (
@@ -105,13 +105,8 @@ const FeeFilingRequirementSection = ({ content }) => {
                         <AcccordionCounting content={item.content} tab/>
                     )}
 
-                    {item.type === 'gridTable' && (
-                        <div className="grid-table" style={{ marginBottom: `32px` }}>
-                            <GridTableRow textCenter columns={item.columns} content={item.content.headers} header headerSize={item.headerSize} />
-                            {item.content.rows && (item.content.rows.map(row => (
-                                <GridTableRow textCenter content={row} columns={item.columns} list />
-                            )))}
-                        </div>
+                    {item.type === 'dynamic_ar_box' && (
+                        <AnnualReportBoxOnly data={data} />
                     )}
                 </div>
             ))}

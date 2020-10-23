@@ -18,7 +18,7 @@ export const filingFeeAndRequirementContent = {
         desc: `Starting a Illinois LLC? Have Incfile do all the paperwork for you for free.`,
         button: {
           text: `Form Your LLC Now`,
-          url: "https://www.incfile.com/form-order-now.php?entityType=LLC&entityState=IL",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=IL`,
         },
       },
     ],
@@ -51,13 +51,7 @@ export const filingFeeAndRequirementContent = {
       content: `To create your business in Illinois, you’ll file an LLC with the IL Secretary of State and pay an associated LLC formation fee. Every state has different LLC filing fees and filing times. Here is the current information for Illinois:`,
     },
     {
-      type: `gridTable`,
-      headerSize: `5`,
-      columns: `3`,
-      content: {
-        headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
-        rows: [[`$154`, `2 Weeks`, `1 Business Day`]],
-      },
+      type: `dynamic_ar_box`,
     },
     {
       type: `arrow-links`,
@@ -154,21 +148,7 @@ export const filingFeeAndRequirementContent = {
       content: `Most states need to file an annual (or other periodic) report with their department of state. When you file your IL LLC annual report, you may need to pay a fee. Here are the annual filing requirements for Illinois:`,
     },
     {
-      title: `Public Information & Franchise Tax Report`,
-      items: [
-        {
-          text1: `Frequency:`,
-          text2: `Annually`,
-        },
-        {
-          text1: `Due Date:`,
-          text2: `Within 60 days immediately preceding first day of anniversary month.`,
-        },
-        {
-          text1: `Filing Fee:`,
-          text2: `$78`,
-        },
-      ],
+      type: `dynamic_filing_requirement`,
     },
     {
       type: `box-cta`,
