@@ -16,7 +16,7 @@ export const businessNamesContent = {
         desc: `Starting a Texas LLC? Have Incfile do all the paperwork for you for free.`,
         button: {
           text: `Form Your LLC Now`,
-          url: "https://www.incfile.com/form-order-now.php?entityType=LLC&entityState=TX",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=TX`,
         },
       },
     ],
@@ -140,7 +140,7 @@ export const businessNamesContent = {
       width: `450px`,
       content: {
         text: `Incfile Guide To Choosing A Business Name`,
-        url: `https://www.incfile.com/blog/post/llc-name-search-50-states/`,
+        url: `/blog/post/llc-name-search-50-states/`,
       },
     },
     {

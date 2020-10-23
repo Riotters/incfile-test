@@ -32,7 +32,7 @@ export const search = {
       label: `Entity Type`,
       link: {
         text: `Not sure?`,
-        url: `https://www.incfile.com/business-entity-comparison/`,
+        url: `/business-entity-comparison/`,
       },
       options: [`LLC`, `Corporation`],
     },
@@ -106,14 +106,14 @@ export const faq = {
         },
         {
           text: "incorporate your business in Delaware,",
-          url: "https://www.incfile.com/form-order-now.php?entityType=LLC&entityState=De",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=De`,
         },
         {
           text: "generally as a Limited Liability Company (LLC) or a corporation. If you want extra protection, you could consider ",
         },
         {
           text: "registering your Delaware business name as a trademark.",
-          url: "https://www.incfile.com/trademark-name-search/",
+          url: "/trademark-name-search/",
         },
         {
           text: 'Note that filing a fictitious or “doing business as" (DBA) name in Delaware will not be sufficient to protect it.',

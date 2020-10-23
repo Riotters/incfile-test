@@ -37,9 +37,9 @@ export const faqContent = {
       content: {
         header: `We recommend taking some other steps before formally starting your LLC:`,
         list: [
-          `<a href="https://www.incfile.com/blog/post/perform-market-research-assess-demand-before-you-start-business/">Research your target market</a> to make sure there’s a demand for the products and services you provide.`,
-          `<a href="https://www.incfile.com/blog/post/keys-successful-business-plan/">Create a comprehensive business plan</a> that defines the most important aspects of your Texas business.`,
-          `<a href="https://www.incfile.com/research-topics/llc-info/llc-operating-agreement/">Write an Operating Agreement</a> that covers how you will run your LLC.`,
+          `<a href="/blog/post/perform-market-research-assess-demand-before-you-start-business/">Research your target market</a> to make sure there’s a demand for the products and services you provide.`,
+          `<a href="/blog/post/keys-successful-business-plan/">Create a comprehensive business plan</a> that defines the most important aspects of your Texas business.`,
+          `<a href="/research-topics/llc-info/llc-operating-agreement/">Write an Operating Agreement</a> that covers how you will run your LLC.`,
         ],
       },
     },
@@ -61,7 +61,7 @@ export const faqContent = {
     },
     {
       type: `paragraph`,
-      content: `You can file your Certificate of Formation on the Secretary of State website or mail it in. Alternatively, Incfile can <a href="/texas-llc/">guide you through every step of the process</a> by getting details from you and <a href="https://www.incfile.com/form-order-now.php?entityType=LLC&entityState=TX">filing the form</a> on your behalf — for free! There’s no additional charge for our basic LLC filing service, so all you need to do is pay the Texas state filing fee.`,
+      content: `You can file your Certificate of Formation on the Secretary of State website or mail it in. Alternatively, Incfile can <a href="/texas-llc/">guide you through every step of the process</a> by getting details from you and <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=TX">filing the form</a> on your behalf — for free! There’s no additional charge for our basic LLC filing service, so all you need to do is pay the Texas state filing fee.`,
     },
     {
       type: `box-cta`,
@@ -171,7 +171,7 @@ export const faqContent = {
     },
     {
       type: `paragraph`,
-      content: `Yes, you can <a href="https://www.incfile.com/blog/post/series-llc-in-texas/">start a Series LLC in Texas</a>. This is a special type of LLC where you create one “overall” business and then have individual, series LLCs within it, each counted as separate legal entities.`,
+      content: `Yes, you can <a href="/blog/post/series-llc-in-texas/">start a Series LLC in Texas</a>. This is a special type of LLC where you create one “overall” business and then have individual, series LLCs within it, each counted as separate legal entities.`,
     },
 
     {

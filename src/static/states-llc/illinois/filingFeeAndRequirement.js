@@ -233,7 +233,7 @@ export const filingFeeAndRequirementContent = {
         subtitle: `You can choose to make changes to the template based on your unique requirements.`,
         button: {
           text: `Lear About Operating Agreemets`,
-          url: `https://www.incfile.com/research-topics/llc-info/llc-operating-agreement/`,
+          url: `/research-topics/llc-info/llc-operating-agreement/`,
         },
       },
     },

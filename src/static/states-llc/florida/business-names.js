@@ -16,7 +16,7 @@ export const businessNamesContent = {
         desc: `<span style="color:#FD8550">Incorporate today for $0 + State fee.</span>`,
         button: {
           text: `Form Your LLC Now`,
-          url: "https://www.incfile.com/form-order-now.php?entityType=LLC&entityState=FL",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=FL`,
         },
       },
     ],
@@ -113,7 +113,7 @@ export const businessNamesContent = {
       width: `450px`,
       content: {
         text: `Incfile Guide To Choosing A Business Name`,
-        url: `https://www.incfile.com/blog/post/llc-name-search-50-states/`,
+        url: `/blog/post/llc-name-search-50-states/`,
       },
     },
     {
