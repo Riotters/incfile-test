@@ -83,11 +83,13 @@ const AlaskaCorporation = () => (
               Choosing a Corporation Name
             </Heading>
             <Paragraph big>
-              Your new Alaska corporation‘s name cannot be the same as or deceptively similar to the name of any other Alaska business entity registered or reserved with the state. It also is not permitted to be the same as any non-registered business name that has been established in common law by
-              usage over a long period of time. The name must contain (at the end) the words “incorporated,” “corporation,” “limited,” or “company,” or an abbreviation of one of those terms.
+            The name you choose for your new West Virginia corporation may not be the same as or deceptively similar to the registered or reserved name of any other business entity in the state. It may not include language that states or implies that it has been organized for some other purpose than one allowed under state law or stated in its articles of incorporation.
+            </Paragraph>
+            <Paragraph big>
+            The name also must contain one of the following words, or an abbreviation thereof: “corporation,” “incorporated,” “limited,” or “company.”
             </Paragraph>
             <Paragraph big style={{ marginBottom: "0" }}>
-              The name may not include language that states or implies that the corporation is organized for some purpose other than stated in its articles of incorporation, or that it is a municipality (city, borough, or village). However, the name is allowed to contain the name of a municipality.
+            You can reserve an available corporate name for up to 120 days for $15.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -95,24 +97,25 @@ const AlaskaCorporation = () => (
               Articles of Incorporation
             </Heading>
             <Paragraph big>
-              So that your Alaska corporation can actually start doing business in the state, you must file articles of incorporation with the Division of Banking, Securities, and Corporations in the Alaska Department of Commerce, Community, and Economic Development (DCCED). The filing fee is $250,
-              which includes a $100 biennial license fee that will be an ongoing requirement.
+            A new corporation’s articles of incorporation must be filed with the West Virginia Secretary of State before it can conduct business in the state. There must be at least one incorporator, who can be a natural person or a corporate entity, and does not have to be a corporate director, officer, or shareholder. The incorporator signs the articles of incorporation and then files them with the Secretary of State. 
             </Paragraph>
-            <Paragraph big>Your new LLC’s articles of incorporation must be signed by at least one person, called an incorporator, who must be at least 18 years old and a natural person (not a business entity). They must sign the articles and deliver them to the DCCED.</Paragraph>
 
             <Colorbox color={color.blue3} content={articlesOfIncorporation.box1} dotsColor={color.blue1} style={{ marginBottom: "65px" }} />
 
             <Colorbox color={color.orange3} content={articlesOfIncorporation.box2} dotsColor={color.orange1} style={{ marginBottom: "48px" }} />
 
-            <Paragraph big>If the initial articles do not name directors for the corporation, the incorporators may elect directors or amend the bylaws.</Paragraph>
+            <Paragraph big>The incorporation fee has three parts: first, a registration fee of $50; second, an “attorney-in-fact” fee (the amount of which depends on the month in which you file your articles); and third, a license fee.</Paragraph>
+            <Paragraph big>The amount of the license fee depends on the value of the shares you authorize in your articles and the month when your articles are received for filing. To pay the smallest license fee, keep the authorized capital of your corporation at or below $5,000. For par value shares, authorized capital simply means the number of shares authorized in your articles multiplied by the par value amount of each share. Shares without par value are assumed to have a par value of $25 per share for purposes of this calculation.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Registered Agent and Office
             </Heading>
             <Paragraph big>
-              Alaska corporations must have a registered agent in the state-a person or office designated to receive official state administrative and legal correspondence. The agent must be either an adult who is a resident of Alaska whose business office is the same as the registered office, or it
-              may be a corporation whose business office is the same as the registered office.
+            West Virginia corporations must maintain a registered agent within the state—a person or office appointed to receive official state administrative and legal correspondence. The agent must have the same business office address as the registered office and be either an individual living in the state a business entity with authority to transact business in West Virginia.
+            </Paragraph>
+            <Paragraph big>
+            The corporation’s registered office may be the same as any of the corporation’s places of business.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -120,53 +123,44 @@ const AlaskaCorporation = () => (
               Bylaws
             </Heading>
             <Paragraph big>
-              Bylaws lay out the corporation’s basic operating principles from both the managerial and legal perspectives. A corporation must keep its bylaws available at its principal executive office, but is not required to file them with the state. The incorporators or board of directors should
-              adopt the corporation’s bylaws at their first meeting-insuring there is no conflict with the corporation’s articles of incorporation-and keep them updated as time goes on.
+            A corporation’s bylaws are very important because they lay out the corporation’s basic operating principles and processes. A West Virginia corporation must maintain a copy of its bylaws at its main executive office, but is not required to file them with the state.
             </Paragraph>
             <Paragraph big style={{ fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
-              Bylaws should include, at minimum:
+            The incorporators or board of directors should approve the corporation’s bylaws at their first meeting—insuring that they don’t conflict with either state law or the articles of incorporation—and keep them updated as time goes on. The bylaws should, at a minimum, include:
             </Paragraph>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>What authority directors have, how many there are, and how long they serve</Paragraph>
             </TextBoxed>
-
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>Duties and responsibilities of officers and how long they serve</Paragraph>
             </TextBoxed>
-
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>How consensus on major decisions is reached, both with and without meetings</Paragraph>
+              <Paragraph bottomMargin={0}>How consensus on major decisions is reached with and without meetings</Paragraph>
             </TextBoxed>
-
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>How, when, and where shareholders’ and directors’ meetings are held</Paragraph>
+              <Paragraph bottomMargin={0}>How, when, and where shareholders and directors meetings are held</Paragraph>
             </TextBoxed>
-
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>How the corporation’s stock is issued</Paragraph>
+              <Paragraph bottomMargin={0}>How stock is issued</Paragraph>
+            </TextBoxed>
+            <TextBoxed style={{ marginBottom: "8px" }}>
+              <Paragraph bottomMargin={0}>Requirements for providing annual financial information to shareholders</Paragraph>
             </TextBoxed>
 
-            <TextBoxed style={{ marginBottom: "48px" }}>
-              <Paragraph bottomMargin={0}>Requirements for publishing annual financial information to shareholders</Paragraph>
-            </TextBoxed>
-
-            <Paragraph big>
-              Even though the corporation is not required to file its bylaws with the state, if the articles of incorporation don’t specify the number of directors, the bylaws must either state the exact number of directors or specify a minimum or maximum number of directors, along with the way that
-              shareholder or board approval will determine the exact number at a specified later date.
-            </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Directors
             </Heading>
             <Paragraph big>
-              The board of directors has the responsibility of making the corporation’s major decisions. There must be at least one director; the number should be specified in the bylaws unless it is already set forth in the articles of incorporation. If no number is specified in either document,
-              the “default” number will be three. A change in the number of directors must be approved by a majority of the board, but such a change cannot shorten the term of any currently-serving director.
+            The articles of incorporation or the bylaws may specify a variable range for the size of the board of directors by establishing a minimum and maximum number of directors. If a variable range is established, the number of directors may be specified or changed within the minimum and maximum by the shareholders or the board of directors.
             </Paragraph>
             <Paragraph big>
-              Titles and duties of the corporation’s officers must be either listed in the bylaws or determined by the board of directors. Any two or more offices may be held by the same person, except the offices of president and secretary. When all of the issued and outstanding stock of the
-              corporation is owned by one person, the person may hold all or any combination of offices.
+            After shares have been issued, only the corporation’s shareholders are allowed to change the range of the board’s size, change from a fixed- to a variable-range size board or vice versa.
+            </Paragraph>
+            <Paragraph big>
+            Officers of the company—who run the day-to-day affairs of the organization—must be natural persons and may be listed in the bylaws or elected by the board. An officer may appoint other officers in accordance with the bylaws and the volte of the board of directors. At least one officer must authenticate records for the corporation, as well as prepare minutes of directors’ and shareholders’ meetings. An officer may hold more than one office in the corporation unless otherwise prohibited by law.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -174,46 +168,46 @@ const AlaskaCorporation = () => (
               Requirement Reports
             </Heading>
             <Paragraph big style={{ marginBottom: "48px" }}>
-              Each Alaska corporation must file a biennial (every two years) report with the state before January 2 of each filing year, along with a $100 biennial license fee. The first report must be within six months of organization, but does not require the $100 fee because it is included in the
-              $250 fee at the time of incorporation.
+            An annual return must be filed with the West Virginia Tax Commissioner by July 1st of each year.
             </Paragraph>
 
             <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
-              The report must include:
+            The return must include:
             </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>What authority directors have, how many there are, and how long they serve</Paragraph>
+              <Paragraph bottomMargin={0}>The address of the corporation’s principal office</Paragraph>
             </TextBoxed>
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The name and address of its registered agent and registered office</Paragraph>
+              <Paragraph bottomMargin={0}>The names and addresses of the officers and directors</Paragraph>
             </TextBoxed>
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The principal corporate address for foreign corporations</Paragraph>
+              <Paragraph bottomMargin={0}>The name and address of the person on whom notice of process may be served</Paragraph>
             </TextBoxed>
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The nature of the corporation’s business</Paragraph>
+              <Paragraph bottomMargin={0}>The name and address of the corporation’s parent corporation and of each subsidiary of the corporation licensed to do business in the state</Paragraph>
             </TextBoxed>
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The names and addresses of the corporation’s directors and officers</Paragraph>
+              <Paragraph bottomMargin={0}>The county or county code in which the principal office address or mailing address of the company is located in</Paragraph>
             </TextBoxed>
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>An itemization of shares authorized to be issued by the corporation</Paragraph>
+              <Paragraph bottomMargin={0}>The corporation’s business class code and</Paragraph>
             </TextBoxed>
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>An itemization of shares that have been issued to date</Paragraph>
+              <Paragraph bottomMargin={0}>Any other information the tax commissioner considers appropriate.</Paragraph>
             </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>Information on all alien affiliates</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The name, address, and ownership percentage of each shareholder who owns more than five percent of the corporation’s stock</Paragraph>
-            </TextBoxed>
+            <Paragraph big>
+            Unless unanimously waived by the shareholders, a West Virginia corporation must mail financial statements to its shareholders within 120 days of the end of each fiscal year. The statement must include a balance sheet, an income statement, and a statement of changes in shareholders’ equity for the year, unless that information appears elsewhere in the financial statements.
+            </Paragraph>
+            <Paragraph big>
+            Additionally, certain types of businesses (such as health care and real estate) are required to obtain a license and pay a fee to operate in West Virginia.
+            </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Taxes
             </Heading>
-            <Paragraph big>Alaska imposes a corporate income tax similar to the federal corporate income tax, based on graduated tax rates. Alaska does recognize “S corporation” status.</Paragraph>
+            <Paragraph big>West Virginia’s corporate tax structure consists of a flat 8.5 percent rate on all corporate income. Among states that tax corporate income, West Virginia’s corporate rate ranks 11th highest nationally.</Paragraph>
+            <Paragraph big>West Virginia recognizes “subchapter S” corporation or “S corporation” status, where a corporation chooses to be treated as a pass-through entity for tax purposes. This means that the tax-related information for the “S corp” is filed as part of the owner’s individual income tax and is taxed at the appropriate individual rate.</Paragraph>
           </PanelWrapper>
         </CollapseWrapper>
       </TabsSection>

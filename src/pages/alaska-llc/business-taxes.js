@@ -14,7 +14,7 @@ import { tabPages } from "../../static/states-llc/alaska/general";
 
 const BusinessTaxesPage = () => (
   <Layout>
-    <SEO title="Texas Business Search | How to Name Your TX LLC" description="Learn what you need to know about naming an LLC in Texas with Incfile's helpful resources. Pick your perfect business name today!" />
+    <SEO title="Alaska Business Search | How to Name Your TX LLC" description="Learn what you need to know about naming an LLC in Alaska with Incfile's helpful resources. Pick your perfect business name today!" />
     <LLCLayout>
       <LeftTabPages content={tabPages} />
       <MainPageContent>

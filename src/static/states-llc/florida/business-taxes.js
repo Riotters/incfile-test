@@ -217,7 +217,7 @@ export const businessTaxesPageContent = {
                     },
                     {
                         question: `Florida LLC Employee Insurance and Other Requirements`,
-                        answer: [
+                        answer2: [
                             {
                                 type: `paragraph`,
                                 content: `You may also need to pay insurance for any employees, like employee compensation insurance or unemployment tax. There will also be other requirements you have for employees.`,

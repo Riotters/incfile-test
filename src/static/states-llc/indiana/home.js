@@ -136,29 +136,29 @@ export const howToGuide = [
   {
     type: `text`,
     content: `A regular Indiana LLC is suitable for most business needs, but you also have a few other options to incorporate a special type of LLC.`,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Form a Professional Indiana LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `Some states allow certain occupations to form “Professional LLCs,” but Indiana only recognizes professional corporations, not professional LLCs.`,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Form a Foreign LLC in Indiana`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `If your business is already operating in another state and expanding to Indiana, you’ll need to form a foreign LLC.`,
-    marginBottom: 48,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -177,7 +177,7 @@ export const howToGuide = [
     content: `Want to know your next steps after creating a new LLC in Indiana? We’ve got you covered.
       <a href="/after-forming-llc/" target="_blank" >Here’s our guide</a>
       to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more.`,
-    marginBottom: 32,
+    marginBottom: 48,
   },
   {
     type: `header`,
@@ -188,7 +188,7 @@ export const howToGuide = [
   {
     type: `text`,
     content: `You’ll find plenty more insight and guidance on the other pages of this guide, including:`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `arrow-link`,
@@ -201,7 +201,7 @@ export const howToGuide = [
   {
     type: `text`,
     content: `How to search the Indiana business registry of the IN Secretary of State and find the right name. Includes information on naming rules, fictitious names, reserving an Indiana LLC name and more.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `arrow-link`,
@@ -214,7 +214,7 @@ export const howToGuide = [
   {
     type: `text`,
     content: `How to appoint an Indiana Registered Agent to your new LLC or change to a different Registered Agent. Includes information on Registered Agent rules and searching for Indiana Registered Agents.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `arrow-link`,
@@ -227,7 +227,7 @@ export const howToGuide = [
   {
     type: `text`,
     content: `How to understand the various fees you’ll need to pay and the requirements you’ll need to meet for both federal and Indiana rules. Includes details of Employer Identification Numbers (EINs), Indiana and federal business licenses, Indiana annual reports and more.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `arrow-link`,
@@ -240,7 +240,7 @@ export const howToGuide = [
   {
     type: `text`,
     content: `How to understand the various taxes you will need to pay to the federal and Indiana government. Includes details of federal taxes like income and self-employment, and Indiana taxes like sales tax and income tax.`,
-    marginBottom: 0,
+    marginBottom: 32,
   },
 ];
 
@@ -289,13 +289,13 @@ export const namingYourBusiness = [
   {
     type: `text`,
     content: `Once you’ve decided on a name for your LLC and checked business name availability, you’ll need to meet Indiana Secretary of State (SOS) naming rules. These do vary from state to state — we’ve got general naming rules below, as well as naming rules specific to LLC businesses formed in IN.`,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Your LLC Business Name Must Be Unique`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -306,12 +306,12 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Your LLC Business Name Must Not Be Confusable with Another Business Name`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `It’s not enough for your IN LLC name to be unique. It also cannot be similar to the name of a corporation or LLC in Indiana.`,
-    marginBottom: 32,
+    marginBottom: 16,
   },
   {
     type: `list-dot`,
@@ -331,7 +331,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Your LLC Business Name Must Contain Certain Words`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -342,7 +342,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Your LLC Business Name May Have Other General Restrictions`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -462,7 +462,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Trademarks and Service Marks`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -476,18 +476,18 @@ export const namingYourBusiness = [
       url: `/trademark-name-search/`,
     },
     theme: `primary48`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Find the Perfect Name for Your Indiana LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `The perfect business name can be elusive. We have a complete guide to choosing the right business name, but basically, you'll want to choose a name that will:`,
-    marginBottom: 20,
+    marginBottom: 16,
   },
   {
     type: `list-dot`,
@@ -500,7 +500,7 @@ export const namingYourBusiness = [
         `Not be used by another business`
       ],
     },
-    marginBottom: 40,
+    marginBottom: 16,
     color: color.orange3,
   },
   {
@@ -509,7 +509,7 @@ export const namingYourBusiness = [
       text: `Incfile guide to choosing a business name.`,
       url: `/blog/post/llc-name-search-50-states/`,
     },
-    marginBottom: 30,
+    marginBottom: 32,
   },
 ];
 
@@ -649,35 +649,35 @@ export const registeredAgent = [
   {
     type: `text`,
     content: `You can appoint a Registered Agent when you first incorporate your Indiana LLC or at any point after that. Here’s how to go about it.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Assign Your Indiana Registered Agent When You Form Your IN LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `Your business needs to have an Indiana Registered Agent Service as soon as it’s formed. You can achieve this through one of the following methods.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `File Articles of Organization with the Indiana Secretary of State`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `You will need to include details of your Registered Agent in your Articles of Organization. This is the form that you file with the IN Secretary of State to formally create your business.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Incorporate Through Incfile and Get a Free Indiana Registered Agent`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -702,24 +702,24 @@ export const registeredAgent = [
   {
     type: `text`,
     content: `You can also change your IN Registered Agent service after you’ve formed your LLC. There are a couple of ways to achieve this.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Choose a Registered Agent Service and File a Form with the Indiana Secretary of State`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `Once you’ve chosen a new Indiana Registered Agent, you can complete a form. Once you’ve filled it out, send it to the Secretary of State so they can update your records.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Sign Up for Incfile’s Indiana Registered Agent Service and We’ll File the Change on Your Behalf`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -877,7 +877,7 @@ export const feesAndRequirments = [
     marginBottom: 16,
   },
   {
-    type: `table`,
+    type: `table-simple`,
     content: {
       headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
       rows: [[`$98`, `7 business days`, `1 business day`]],
@@ -1081,13 +1081,13 @@ export const feesAndRequirments = [
   {
     type: `text`,
     content: `There are several other fees or requirements that you may need to meet during the life of your Indiana LLC. These ad hoc fees will only be payable in specific circumstances, which we’ve listed below.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `To Obtain a Fictitious/DBA Name for Your Indiana LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1101,13 +1101,13 @@ export const feesAndRequirments = [
       url: `/fictitious-business-or-trade-name/`,
     },
     theme: `primary48`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `To Change the Indiana Registered Agent for Your IN LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1121,35 +1121,35 @@ export const feesAndRequirments = [
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `To Reserve a Name`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `If you don’t want to form your business right away, you can reserve a name with the Indiana Secretary of State. You will need to pay a small fee to do this.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `To Reserve a Name for Your Indiana LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `If you don’t want to form your IN business right away, you can reserve a name with the Indiana Secretary of State. You will need to pay a small fee to do this.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `To Amend Certain Facts About Your Indiana LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1167,7 +1167,7 @@ export const feesAndRequirments = [
       ],
     },
     marginBottom: 16,
-    color: color.orange3,
+    color: color.purple3,
   },
   {
     type: `button`,
@@ -1176,13 +1176,13 @@ export const feesAndRequirments = [
       url: `/manage-your-company/amendment/`,
     },
     theme: `primary48`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `To Get a Certificate of Good Standing for Your Indiana LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1369,35 +1369,35 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `Get details on the <a href= "https://www.in.gov/dor/3986.htm" target="_blank" rel="noopener noreferrer">Indiana state tax online here</a>.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Indiana Sales Tax Rates`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `Sales tax rates do vary between states, counties and cities. Typically, the state will set a base sales tax rate, then specific counties and cities may levy small additional sales tax amounts on top of that.`,
-    marginBottom: 16,
+    marginBottom: 48,
   },
   {
     type: `header`,
     content: `Federal Self-Employment and Income Taxes for Your Indiana LLC`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `There are a couple different federal taxes that every LLC will need to pay, including Indiana LLCs. These are self-employment tax and federal income tax, which are taxed as “pass-through” income via your tax return forms.`,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Indiana LLC Federal Self-Employment Tax`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1420,14 +1420,14 @@ export const businessTaxes = [
         `On profits of $120,000, you would pay self-employment tax of $18,360.`
       ],
     },
-    marginBottom: 48,
+    marginBottom: 32,
     color: color.orange3,
   },
   {
     type: `header`,
     content: `Pay Less Self-Employment Tax by Treating Your Indiana LLC as an S Corporation`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1451,13 +1451,13 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `Speak to your accountant for more information on reducing your Indiana LLC self-employment tax through an S Corporation tax election.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Indiana LLC Federal Income Tax`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1478,46 +1478,46 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `If you pay employees, there are some slightly different tax implications. Speak to your accountant to get clear guidance for your own unique situation.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Indiana LLC Employer Payroll Tax Withholding`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `All employers must collect and withhold payroll tax from their employees when they receive their salaries. You would normally withhold 7.65 percent of the taxable salary that you pay to your employees.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Employer Federal and State Tax Withholding for Your Indiana LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `You may also choose to withhold federal and Indiana state income tax on the wages you pay to employees. Speak to your accountant for more information.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Employees May Need to File Tax Returns`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `Regardless of whether you withhold federal and Indiana state income tax, your employees may need to file their own tax returns.`,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Indiana LLC Employee Insurance and Other Requirements`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1527,24 +1527,24 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `Get more requirements from the <a href="https://www.in.gov/dol/" target="_blank" rel="noopener noreferrer">Indiana Department of Labor website.</a>`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Other Taxes and Duties for Your Indiana LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `Depending on the industry you are in, your Indiana LLC may be liable for certain other taxes and duties. For example, if you sell gasoline you may need to pay a tax on any fuel you sell. Likewise, if you import or export goods you may need to pay certain duties. Speak to your accountant about any other taxes you may need to withhold or pay.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Estimated Taxes for Your Indiana LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1567,7 +1567,7 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `Most Indiana LLCs will pay estimated taxes four times a year. Speak to your accountant for more information.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,

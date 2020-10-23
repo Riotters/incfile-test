@@ -10,6 +10,8 @@ import ArrowLink from "../../../molecules/buttons/text";
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-green3.inline.svg";
 
+import { scrollToElement } from '../../../../helpers/utils';
+
 const About = styled.section`
   position: relative;
   padding-bottom: 64px;
@@ -29,7 +31,7 @@ const AboutSection = ({ className, content }) => (
             <Paragraph big bottomMargin="40">{content.text}</Paragraph>
             <IconTextColorBox color={color.blue3} Icon={IconSVG} content={content.box} bottomMargin="48" rounded curve />
             <Paragraph big bottomMargin="72">{content.text2}</Paragraph>
-            <ArrowLink bottomMargin="72" content={content.link} />
+            <ArrowLink bottomMargin="72" content={content.link}/>
         </ImageContent>
     </About>
   );

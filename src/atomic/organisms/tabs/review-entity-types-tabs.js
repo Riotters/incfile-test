@@ -16,6 +16,7 @@ import IconTextColorBox from "../../molecules/text-blocks/icon-h4-text-color";
 import VisibilitySensor from "../../../components/VisibilitySensor"
 import { Heading } from "../../atoms/typography/heading"
 import { Paragraph } from "../../atoms/typography/paragraph"
+import LightBoxVideo from "../../../components/LightBox";
 
 const Wrapper = styled.div`
   display: flex;
@@ -223,7 +224,8 @@ const CCorpTabs = ({layout, columns, content}) => (
                       >
                         <Heading size="3">{content.content[0].header}</Heading>
                         <Paragraph big bottomMargin="48">{content.content[0].text}</Paragraph>
-                        <Heading size="3">{content.content[0].header2}</Heading>
+                        <LightBoxVideo thumbnailVideo="business-for-you-3432" videoID="_u4u3-PQ8a0" />
+                        <Heading size="3" topMargin="48">{content.content[0].header2}</Heading>
                         <Paragraph big>{content.content[0].text2}</Paragraph>
                         <Paragraph big>{content.content[0].text3}</Paragraph>
                         <Paragraph big bottomMargin="56">{content.content[0].text4}</Paragraph>

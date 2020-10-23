@@ -17,10 +17,10 @@ const Wrapper = styled.div`
 `;
 
 export const ThankYouContent = ({ content, modalExit }) => (
-  <Wrapper>
-      <Heading size={2}>{content.header}</Heading>
-      <Paragraph bottomMargin={56}>{content.text}</Paragraph>
-      <Button arrow theme="primary56" className="modal-close" onClick={modalExit} content={content.button} />
-  </Wrapper>
+    <Wrapper>
+        <Heading size={2}>{content.header}</Heading>
+        <Paragraph bottomMargin={56}>{content.text}</Paragraph>
+        <Button arrow theme="primary56" className="modal-close" onClick={modalExit} content={content.button} />
+    </Wrapper>
 );
 

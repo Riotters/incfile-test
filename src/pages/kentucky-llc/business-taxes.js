@@ -15,8 +15,8 @@ import { tabPages } from "../../static/states-llc/kentucky/general";
 const BusinessTaxesPage = () => (
   <Layout>
     <SEO
-    title="Texas Business Search | How to Name Your TX LLC"
-    description="Learn what you need to know about naming an LLC in Texas with Incfile's helpful resources. Pick your perfect business name today!"
+    title="Kentucky Sales & Business Tax Registration for LLCs"
+    description="Do you have a KY LLC? Learn about the required federal, state and sales taxes you might need to pay. Read more."
     />
     <LLCLayout>
         <LeftTabPages content={tabPages} />

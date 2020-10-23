@@ -15,8 +15,8 @@ import { tabPages } from "../../static/states-llc/colorado/general";
 const FillingRequirementsPage = () => (
   <Layout>
     <SEO
-    title="Texas Business Search | How to Name Your TX LLC"
-    description="Learn what you need to know about naming an LLC in Texas with Incfile's helpful resources. Pick your perfect business name today!"
+    title="Colorado Business Licenses, Fees, & Other LLC Requirements"
+    description="Make sense of the required forms, fees, and filing procedures for your Colorado LLC with Incfile’s easy-to-use guide. Read more."
     />
     <LLCLayout>
         <LeftTabPages content={tabPages} />

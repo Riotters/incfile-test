@@ -336,28 +336,25 @@ Documents`,
 
 export const articlesOfIncorporation = {
   box1: {
-    header: `The articles must include:`,
+    header: `The articles of incorporation must include:`,
     list: [
-      `The corporation’s name`,
-      `Its business purpose, which can be the general statement: “the transaction of any lawful business allowed by the Virginia Corporation Code”`,
-      `The name of the corporation’s initial registered agent`,
-      `The address of the corporation’s initial registered office`,
-      `The address of the corporation’s principal office`,
-      `Number of shares authorized for the corporation to issue (par value is not required to be designated)`,
-      `Whether the corporation has any alien (non-US citizen or a person without permanent US resident status, or non-US legal entities) affiliates (corporate directors, officers, shareholders, and other persons or entities that control or are controlled by a corporate entity)`,
-      `If the corporation has alien affiliates, their names and addresses`,
-      `The primary and secondary North American Industry Classification System (NAICS) Code Standard Industrial Codes (SICs) that most clearly describe the initial activities of your corporation`,
+      `The minimum number of directors (state law specifies one or more).`,
+      `Qualifications for directors (may also be stated in the bylaws).`,
+      `Number of shares the corporation is authorized to issue; if more than one class of shares is authorized, the articles must state how many authorized shares are in each class, as well as a distinguishing designation for each class.`,
+      `The street address and county of the corporation’s initial registered office.`,
+      `The name of the corporation’s initial registered agent at the registered office; the articles must also be signed by that agent. The articles must also specify whether the agent is a Virginia resident, a director of the corporation, a domestic or foreign (out of state) corporation, an LLC, or a partnership.`,
     ],
   },
   box2: {
-    header: `Some other provisions that aren’t required-but which may be included in the articles of incorporation-are:`,
+    header: `Other items may-but are not required to be-included in the articles of incorporation, such as:`,
     list: [
-      `The names and addresses of all directors`,
-      `Eligibility requirements to be a director`,
-      `Circumstances where shareholders can be liable for corporate debts`,
-      `Increased rights for or restrictions on shareholders, stock, or the board of directors`,
-      `Provisions for managing the business and regulating the affairs of the corporation`,
-    ],
+        `Directors’ names and addresses.`,
+        `Shareholder preemptive rights, if any.`,
+        `Business purpose of the corporation.`,
+        `Provisions regulating the affairs and managing the business of the corporation.`,
+        `Par value for authorized shares or classes of shares.`,
+        `Limitations on a director’s or officer’s liability for fiscal damages to the corporation or its shareholders in certain situations.`,
+      ],
   },
 };
 

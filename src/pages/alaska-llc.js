@@ -15,7 +15,7 @@ import { tabPages } from "../static/states-llc/alaska/general";
 function LLCIndex() {
   return (
     <Layout>
-      <SEO title="LLCs in Texas | Guide to Forming an LLC in Texas" description="Ready to form your Texas LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
+      <SEO title="LLCs in Alaska | Guide to Forming an LLC in Alaska" description="Ready to form your Alaska LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
       <LLCLayout>
         <LeftTabPages content={tabPages} nonDIY />
         <MainPageContent>

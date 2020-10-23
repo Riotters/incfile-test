@@ -13,7 +13,7 @@ import { top, typesOfTaxes, taxReturn, pricing, benefits } from "../static/filli
 
 const FillingBusinessTaxes = () => (
   <Layout>
-    <SEO title="Filing Your Business Taxes With Ease" description="Eliminate the hassle of filing taxes for your LLC, S Corp, C Corp or Nonprofit. Work with a tax professional." />
+    <SEO title="Small Business Accounting & Bookkeeping Services | Incfile" description="Looking for a business accountant to handle your tax filing and bookkeeping? Incfile helps make it easy. Get a free tax consultation today." />
     <Top imageName="mrs-bulb-filling-taxes" imageAlt="mr. bulb filling tax form" ovalColor="sun">
       <h1>{top.header}</h1>
       <p>{top.text}</p>

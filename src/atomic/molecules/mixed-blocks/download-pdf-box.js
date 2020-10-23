@@ -4,8 +4,9 @@ import { shadow } from "../../atoms/styles/shadows";
 import { Heading } from "../../atoms/typography/heading";
 import { Paragraph } from "../../atoms/typography/paragraph";
 import Whitebox from "../../atoms/boxes/white-box";
-import Circle from "../../atoms/icons/circle";
-import Button from "../../molecules/buttons/button";
+import ButtonLink from "../../molecules/buttons/button";
+import ButtonAction from "../../molecules/buttons/button-action";
+
 import Image from "../../atoms/image/image";
 
 const Wrapper = styled(Whitebox)`
@@ -31,7 +32,7 @@ const Wrapper = styled(Whitebox)`
     }
     `;
     
-    const ImageBox = styled.div`
+const ImageBox = styled.div`
     display: block;
     width: 158px;
     height: 210px;
@@ -43,7 +44,7 @@ const Wrapper = styled(Whitebox)`
     }
     `;
     
-    const TextWrapper = styled.div`
+const TextWrapper = styled.div`
     display: flex;
     flex-direction: column;
     height: 148px;
@@ -64,38 +65,32 @@ const Wrapper = styled(Whitebox)`
     }
 `;
 
-function showPopup() {
-    if(typeof document !== "undefined") {
-        let modal = document.querySelector("#download-pdf-form-modal");
 
-        if( modal.className.indexOf("visible") >= 0) {
-            modal.className = modal.className.replace(" visible", "");
-        }
-        else {
-            modal.className += " visible";
-        }
-    }
-}
+const DownloadPdfBox = ({ className, content, image, openModal }) => {
+    return (
+        <Wrapper className={className}>
+            <ImageBox>
+                <Image filename={image} />
+            </ImageBox>
+            <TextWrapper>
+                {content.header && (
+                    <Heading size="4" bottomMargin="16">{content.header}</Heading>
+                )}
 
-const DownloadPdfBox = ({ className, content, image }) => {
-  return (
-    <Wrapper className={className}>
-        <ImageBox>
-            <Image filename={image} />
-        </ImageBox>
-        <TextWrapper>
-            {content.header && (
-                <Heading size="4" bottomMargin="16">{content.header}</Heading>
-            )}
-            {content.text && (
-                <Paragraph bottomMargin="0">{content.text}</Paragraph>
-            )}
-            {content.button && (
-                <Button content={content.button} onClick={function(e) { if(typeof window !== "undefined" && typeof window.br_dpfw_m_popup === "function") { e.preventDefault(); window.br_dpfw_m_popup(e, JSON.parse(JSON.stringify(content.header))); } }} theme="secondary48" margin="36px 0 0" marginSM="36px auto 0" arrow />
-            )}
-        </TextWrapper>
-    </Wrapper>
-  )
+                {content.text && (
+                    <Paragraph bottomMargin="0">{content.text}</Paragraph>
+                )}
+
+                {content.button && content.button.type === 'internal-link' && (
+                    <ButtonLink content={content.button} theme="secondary48" margin="36px 0 0" marginSM="36px auto 0" arrow />
+                )}
+
+                {content.button && !content.button?.type && (
+                    <ButtonAction content={content.button} onClick={function (e) { if (typeof window !== "undefined" && typeof window.br_dpfw_m_popup === "function") { e.preventDefault(); window.br_dpfw_m_popup(e, JSON.parse(JSON.stringify(content.header)), JSON.parse(JSON.stringify(content.hs_form_id))); } }} theme="secondary48" margin="36px 0 0" marginSM="36px auto 0" />
+                )}
+            </TextWrapper>
+        </Wrapper>
+    );
 };
 
 export default DownloadPdfBox;

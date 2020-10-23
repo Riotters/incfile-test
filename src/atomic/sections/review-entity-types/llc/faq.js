@@ -32,7 +32,7 @@ const FaqSection = ({ className, content, onClick }) => (
     <HeadingCenter headline={content.header} headlineWidth="770" />
     <ContentCenter>
       <Accordion content={content.faq} curve curveLeft />
-      <Button content={content.button} theme="primary56" onClick={onClick} arrow margin="72px auto 40px" />
+      <Button content={content.button} theme="primary56" onClick={onClick} margin="72px auto 40px" />
       <Paragraph big maxWidth="770" style={{ textAlign: "center" }}>
         {content.text}
       </Paragraph>

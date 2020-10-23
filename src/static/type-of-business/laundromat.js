@@ -250,7 +250,7 @@ export const AccordionCounting = {
                 },
                 {
                     text: `guide to getting your EIN.`,
-                    url: `/`
+                    url: `/manange-your-company/tax-id-ein/`
                 }
             ]
         },
@@ -353,7 +353,7 @@ export const MaintainingAccordionContent = {
                 },
                 {
                     text: `We can file your Annual Report on your behalf.`,
-                    url: `/`
+                    url: `/manage-your-company/annual-report/`
                 }
             ]
         },
@@ -446,36 +446,29 @@ export const FinancesAccordionContent = {
                     text: `QuickBooks,`,
                     url: `/`
                 },
-                ,
                 {
                     text: `FreshBooks,`,
                     url: `/`
                 },
-                ,
                 {
                     text: `FreeAgent,`,
                     url: `/`
                 },
-                ,
                 {
                     text: `ZipBooks,`,
                     url: `/`
                 },
-                ,
                 {
                     text: `Wave Accounting,`,
                     url: `/`
                 },
-                ,
                 {
                     text: `Xero,`,
                     url: `/`
                 },
-                ,
                 {
                     text: `and`
                 },
-                ,
                 {
                     text: `Bench.`,
                     url: `/`

@@ -7,7 +7,7 @@ import ContentLeft from "../../../partials/content-left";
 import ContentCenter from "../../../partials/content-center";
 import HeadingCenter from "../../../partials/heading-center";
 import TopImageBox from "../../../../components/top-image-box";
-import Button from "../../../molecules/buttons/button";
+import Button from "../../../molecules/buttons/button-action";
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-babyblue.inline.svg";
 import { Heading } from "../../../atoms/typography/heading";

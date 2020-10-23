@@ -36,7 +36,7 @@ export const howToGuide = [
   {
     type: 'text', //video
     content: '<iframe width="720" height="350" src="https://www.youtube.com/watch?v=0sh4OgPJ3kE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>',
-    marginBottom: 32,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -48,7 +48,7 @@ export const howToGuide = [
         `Easy tax filing and potential advantages for tax treatment`
       ],
     },
-    marginBottom: 24,
+    marginBottom: 16,
     color: color.green3,
     curve: true,
     curveColor: color.red1,
@@ -355,7 +355,7 @@ export const namingYourBusiness = [
         `Imply a purpose that it would be illegal for your business to carry out`
       ],
     },
-    marginBottom: 48,
+    marginBottom: 32,
     color: color.purple3,
   },
   {
@@ -372,7 +372,7 @@ export const namingYourBusiness = [
   {
     type: `text`,
     content: `Certain restricted words need additional paperwork and other words are prohibited. Restricted and prohibited words include: Blind, Cemetery, Funeral Homes, Handicapped, Urban Renewal,  D.C., District of Columbia, Little League, Metropolitan, Olympia, Olympic, Postal, Realtor, Trust or Underwriters.`,
-    marginBottom: 32,
+    marginBottom: 48,
   },
   {
     type: `header`,
@@ -420,7 +420,7 @@ export const namingYourBusiness = [
     content: [
       {
         text: `<p>If you don’t want to form your New Jersey LLC right now, you can reserve  a name with the New Jersey Division of Revenue and Enterprise Services. You do not need to reserve a name if you are forming your business right away.</p></br>
-          <p><a href="https://www.nj.gov/treasury/revenue/" target="_blank" rel="noopener noreferrer">​New Jersey DORES LLC name reservation.</a><p>`,
+          <a href="https://www.nj.gov/treasury/revenue/" target="_blank" rel="noopener noreferrer">​New Jersey DORES LLC name reservation.</a>`,
       },
       {
         text: `If you’re ready to start your New Jersey LLC, you can file your Business Registration Application with the New Jersey Division of Revenue and Enterprise Services yourself, or
@@ -479,7 +479,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Trademarks and Service Marks`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -499,7 +499,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Find the Perfect Name for Your New Jersey LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -526,7 +526,7 @@ export const namingYourBusiness = [
       text: `Incfile guide to choosing a business name.`,
       url: `/blog/post/llc-name-search-50-states/`,
     },
-    marginBottom: 0,
+    marginBottom: 48,
   },
 ];
 
@@ -570,7 +570,7 @@ export const registeredAgent = [
       ],
     },
     marginBottom: 16,
-    color: color.orange3,
+    color: color.green3,
   },
   {
     type: `text`,
@@ -650,7 +650,7 @@ export const registeredAgent = [
   {
     type: `text`,
     content: `You can appoint a Registered Agent when you first incorporate your New Jersey LLC or at any point after that. Here’s how to go about it.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
@@ -881,7 +881,7 @@ export const feesAndRequirments = [
     marginBottom: 16,
   },
   {
-    type: `table`,
+    type: `table-simple`,
     content: {
       headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
       rows: [[`$130`, `5 business days`, `1 business day`]],
@@ -901,7 +901,7 @@ export const feesAndRequirments = [
       text: `Compare State Filing Prices`,
       url: `/state-filing-fees/`,
     },
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1056,13 +1056,13 @@ export const feesAndRequirments = [
   {
     type: `text`,
     content: `There are several other fees or requirements that you may need to meet during the life of your New Jersey LLC. These ad hoc fees will only be payable in specific circumstances, which we’ve listed below.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `To Obtain a Fictitious/DBA Name for Your New Jersey LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1076,13 +1076,13 @@ export const feesAndRequirments = [
       url: `/fictitious-business-or-trade-name/`,
     },
     theme: `primary48`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `To Change the New Jersey Registered Agent for Your NJ LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1096,24 +1096,24 @@ export const feesAndRequirments = [
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `To Reserve a Name for Your New Jersey LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `If you don’t want to form your NJ business right away, you can reserve a name with the New Jersey Division of Revenue and Enterprise Services. You will need to pay a small fee to do this.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `To Amend Certain Facts About Your New Jersey LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1131,7 +1131,7 @@ export const feesAndRequirments = [
       ],
     },
     marginBottom: 16,
-    color: color.orange3,
+    color: color.green3,
   },
   {
     type: `button`,
@@ -1140,13 +1140,13 @@ export const feesAndRequirments = [
       url: `/manage-your-company/amendment/`,
     },
     theme: `primary48`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `To Get a Certificate of Good Standing for Your New Jersey LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1200,7 +1200,7 @@ export const feesAndRequirments = [
               <li>Governing organizations in your industry</li>
               <li>Federal, state and local regulations</li>
               </ul></br>
-            <p>That’s why our <a href="/business-license-research-package/" target="_blank">is so useful. It explores all of these areas for you and provides a comprehensive overview of exactly what your New Jersey LLC needs to be compliant.</p>`,
+            <p>That’s why our <a href="/business-license-research-package/" target="_blank">business license research package</a> is so useful. It explores all of these areas for you and provides a comprehensive overview of exactly what your New Jersey LLC needs to be compliant.</p>`,
         },
       ],
     },
@@ -1336,13 +1336,13 @@ export const businessTaxes = [
       text: `Get more details on the New Jersey sales tax online here.`,
       url: `https://www.state.nj.us/treasury/taxation/su.shtml`,
     },
-    bottomMargin: 48,
+    bottomMargin: 32,
   },
   {
     type: `header`,
     content: `New Jersey Sales Tax Rates`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1372,13 +1372,13 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `There are a couple different federal taxes that every LLC will need to pay, including New Jersey LLCs. These are self-employment tax and federal income tax, which are taxed as “pass-through” income via your tax return forms.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `New Jersey LLC Federal Self-Employment Tax`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1401,14 +1401,14 @@ export const businessTaxes = [
         `On profits of $160,000, you would pay self-employment tax of $24,480`
       ],
     },
-    marginBottom: 48,
-    color: color.orange3,
+    marginBottom: 32,
+    color: color.babyblue3,
   },
   {
     type: `header`,
     content: `Pay Less Self-Employment Tax by Treating Your New Jersey LLC as an S Corporation`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1432,13 +1432,13 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `Speak to your accountant for more information on reducing your New Jersey LLC self-employment tax through an S Corporation tax election.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `New Jersey LLC Federal Income Tax`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1459,46 +1459,46 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `If you pay employees, there are some slightly different tax implications. Speak to your accountant to get clear guidance for your own unique situation.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Employer Payroll Tax Withholding for Your New Jersey LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `All employers must collect and withhold payroll tax from their employees when they receive their salaries. You would normally withhold 7.65 percent of the taxable salary that you pay to your employees.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Employer Federal and State Tax Withholding for Your New Jersey LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `You may also choose to withhold federal and New Jersey state income tax on the wages you pay to employees. Speak to your accountant for more information.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Employees May Need to File Tax Returns`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `Regardless of whether you withhold federal and New Jersey state income tax, your employees may need to file their own tax returns.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `New Jersey LLC Employee Insurance and Other Requirements`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -1511,24 +1511,24 @@ export const businessTaxes = [
       text: `Get more requirements from the New Jersey Department of Labor website.`,
       url: `https://www.nj.gov/labor/`,
     },
-    bottomMargin: 48,
+    bottomMargin: 32,
   },
   {
     type: `header`,
     content: `Other Taxes and Duties for Your New Jersey LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,
     content: `Depending on the industry you are in, your New Jersey LLC may be liable for certain other taxes and duties. For example, if you sell gasoline you may need to pay a tax on any fuel you sell. Likewise, if you import or export goods you may need to pay certain duties. Speak to your accountant about any other taxes you may need to withhold or pay.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Estimated Taxes for Your New Jersey LLC`,
     size: 4,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   {
     type: `text`,

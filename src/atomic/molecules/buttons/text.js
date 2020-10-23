@@ -45,13 +45,19 @@ const Arrow = styled.div`
   }
 `;
 
-const ArrowLink = ({ className, content, maxWidth, bottomPadding, bottomMargin, topMargin }) => (
-  <Wrapper to={content.url} className={className} maxWidth={maxWidth} bottomPadding={bottomPadding} bottomMargin={bottomMargin} topMargin={topMargin}>
-    <Arrow>
-      <ArrowSVG />
-    </Arrow>
-    <span>{content.text}</span>
-  </Wrapper>
+const ArrowLink = ({ className, content, maxWidth, bottomPadding, bottomMargin, topMargin, onClick }) => (
+    <Wrapper
+        to={content.url}
+        className={className}
+        maxWidth={maxWidth}
+        bottomPadding={bottomPadding}
+        bottomMargin={bottomMargin}
+        topMargin={topMargin}>
+        <Arrow>
+            <ArrowSVG />
+        </Arrow>
+        <span>{content.text}</span>
+    </Wrapper>
 );
 
 export default ArrowLink;
