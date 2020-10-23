@@ -938,11 +938,7 @@ export const feesAndRequirments = [
     marginBottom: 32,
   },
   {
-    type: `table-simple`,
-    content: {
-      headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
-      rows: [[`$110`, `15 Business Days`, `6 Business Days`]],
-    },
+    type: `dynamic_ar_box`
   },
   {
     type: `arrow-link`,
@@ -1031,26 +1027,9 @@ export const feesAndRequirments = [
     marginBottom: 48,
   },
   {
-    type: `header`,
-    content: `Delaware Franchise Tax Report`,
-    size: 4,
-    marginBottom: 24,
+    type: `dynamic_filing_requirement`
   },
-  {
-    type: `text`,
-    content: `<b>Frequency:</b> Annually`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `<b>Due Date:</b> June 1st`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `<b>Filing Fee:</b> $300`,
-    marginBottom: 32,
-  },
+  
   {
     type: `text`,
     content: `Incfile can also complete and file your Delaware franchise report on your behalf.`,
