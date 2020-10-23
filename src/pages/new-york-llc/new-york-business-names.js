@@ -41,7 +41,7 @@ const Wrapper = styled.div`
 
 const NewYorkBusinessNames = () => (
   <Layout>
-    <SEO title="New York Business Search | How to Name Your TX LLC" description="Learn what you need to know about naming an LLC in New York with Incfile's helpful resources. Pick your perfect business name today!" />
+    <SEO title="New York LLC Search | Naming Your New York LLC" description="Learn what you need to know about naming an LLC in New York with Incfile's helpful resources. Pick your perfect business name today!" />
 
     <LinearBgHeader position="to top" imageMapName="tx-map-2x">
       <ContentHeader content={businessNamesContent.header} />

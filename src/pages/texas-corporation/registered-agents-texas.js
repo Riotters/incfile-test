@@ -21,7 +21,7 @@ import CorporationLayout from "../../atomic/partials/corporation-layout";
 
 const StateInformation = () => (
     <Layout>
-        <SEO title="California Corporations & Other Business Entities " description="Thinking of starting an S Corp, C Corp, or LLC in California? Learn about corporations in CA and decide which business type is right for you." />
+        <SEO title="Registered Agent Rules for Texas S Corps & C Corps" description="Do you need a registered agent for your Texas corporation? Learn about the rules, requirements, and how a registered agent can benefit your business." />
         <Top imageName="mr-bulb-corporation-california-8302" imageAlt="Mrs Bulb and with checklist" ovalColor="purple-2" textWidth="530">
             <h1>{top.header}</h1>
             <p>{top.text}</p>
