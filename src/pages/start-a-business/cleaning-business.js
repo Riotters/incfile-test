@@ -66,7 +66,7 @@ const CleaningBusiness = () => (
       <h1>How to Start a Cleaning Business</h1>
       <p>Starting a cleaning business can be an ideal way to begin your journey as an entrepreneur. Although they may seem simple, cleaning businesses have a lot going for them.</p>
       <ButtonsBox>
-        <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{ url: "/", text: "Start Now" }} />
+        <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{ url: `${process.env.ORDER_URL}/form-order-now.php`, text: "Start Now" }} />
       </ButtonsBox>
 
       <RatingRow>

@@ -65,7 +65,7 @@ const BeautySalon = () => (
       <h1>How to Start a Beauty Salon Business</h1>
       <p>Personal care and pampering is something we all need. If you’re an entrepreneur, the world of the beauty salon has some surprising advantages.</p>
       <ButtonsBox>
-        <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{ url: "/", text: "Start Now" }} />
+        <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{ url: `${process.env.ORDER_URL}/form-order-now.php`, text: "Start Now" }} />
       </ButtonsBox>
 
       <RatingRow>

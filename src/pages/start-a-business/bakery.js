@@ -70,7 +70,7 @@ const Bakery = () => (
       <h1>How to Start a Bakery Business</h1>
       <p>Bakeries are a growing industry in the US. It’s easy to see why, as people shop for their daily bread or seek out cakes and other sweet treats. Specialty baking is on the rise too, with products designed for people who have particular dietary choices or digestive issues.</p>
       <ButtonsBox>
-        <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{ url: "/", text: "Start Now" }} />
+        <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{ url: `${process.env.ORDER_URL}/form-order-now.php`, text: "Start Now" }} />
       </ButtonsBox>
 
       <RatingRow>
