@@ -18,7 +18,7 @@ export const filingFeeAndRequirementContent = {
         desc: `Starting a New York LLC? Have Incfile do all the paperwork for you for free.`,
         button: {
           text: `Form Your LLC Now`,
-          url: "${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=NY/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=NY/`,
         },
       },
     ],

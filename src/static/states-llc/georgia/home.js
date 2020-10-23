@@ -16,7 +16,7 @@ export const HomePageContent = {
         desc: `Incfile can take care of all your LLC formation paperwork—and we’ll do it for free. Just pay the required Georgia state fee ($100).`,
         button: {
           text: `Form Your LLC Now`,
-          url: "${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=GA",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=GA`,
         },
       },
     ],
