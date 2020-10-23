@@ -84,22 +84,22 @@ const AlaskaCorporation = () => (
               Choosing a Corporation Name
             </Heading>
             <Paragraph big mixed>
-            {parse(`Selecting the name of your new Michigan corporation is one of the first official steps toward actually conducting business in the Wolverine State. The
+              {parse(`Selecting the name of your new Michigan corporation is one of the first official steps toward actually conducting business in the Wolverine State. The
 <a href="michigan-entity-search/">business name</a> you choose must be distinguishable from other business entities registered or reserved in Michigan (with some exceptions).`)}
             </Paragraph>
             <Paragraph big>
-            {parse(`Your new <a href="/michigan-entity-search/">business’ name</a> may not state or imply that it is organized for any other purpose that what’s permitted by state law and laid out in its articles
+              {parse(`Your new <a href="/michigan-entity-search/">business’ name</a> may not state or imply that it is organized for any other purpose that what’s permitted by state law and laid out in its articles
 of incorporation. The name also cannot contain a word, phrase, abbreviation, or a derivative of a word or phrase whose use is forbidden or restricted by
 state law. The name must include one of the following terms or its abbreviation: “Incorporated,” “Corporation,” “Company,” or “Limited.”`)}
             </Paragraph>
+            <Paragraph big>Available corporate names may be reserved for up to 180 days for a $25 fee.</Paragraph>
             <Paragraph big>
-            Available corporate names may be reserved for up to 180 days for a $25 fee.
-            </Paragraph>
-            <Paragraph big>
-            A Michigan corporation may also conduct business under an assumed name or DBA (“doing business as” name) that complies with the state’s corporate naming rules. Doing so requires filing a certificate of assumed name with the state secretary of state (along with the $10 fee), and must be periodically renewed.
+              A Michigan corporation may also conduct business under an assumed name or DBA (“doing business as” name) that complies with the state’s corporate naming rules. Doing so requires filing a certificate of assumed name with the state secretary of state (along with the $10 fee), and must be
+              periodically renewed.
             </Paragraph>
             <Paragraph big style={{ marginBottom: "0" }}>
-            The filing fee includes a $10 nonrefundable fee plus a $50 organization tax for the first 60,000 shares authorized in the new corporation’s articles of incorporation. If more shares are authorized, the organization portion of the fee increases in a graduated manner. For each additional 20,000 shares (or a portion thereof), the organization tax is $30 more. The maximum organization tax for the first 10 million shares is $5,000. Most incorporators simply authorize 60,000 shares and pay the minimum filing fee.
+              The filing fee includes a $10 nonrefundable fee plus a $50 organization tax for the first 60,000 shares authorized in the new corporation’s articles of incorporation. If more shares are authorized, the organization portion of the fee increases in a graduated manner. For each additional
+              20,000 shares (or a portion thereof), the organization tax is $30 more. The maximum organization tax for the first 10 million shares is $5,000. Most incorporators simply authorize 60,000 shares and pay the minimum filing fee.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -107,15 +107,20 @@ state law. The name must include one of the following terms or its abbreviation:
               Articles of Incorporation
             </Heading>
             <Paragraph big>
-            In accordance with the Michigan Business Corporation Act contained in Chapter 450 (Corporations) of the Michigan Compiled Laws, corporations must file articles of incorporation with the Michigan Department of Labor and Economic Growth, Bureau of Commercial Services, Corporation Division, before conducting business in the state.
+              In accordance with the Michigan Business Corporation Act contained in Chapter 450 (Corporations) of the Michigan Compiled Laws, corporations must file articles of incorporation with the Michigan Department of Labor and Economic Growth, Bureau of Commercial Services, Corporation
+              Division, before conducting business in the state.
             </Paragraph>
             <Paragraph big>
-            The articles must be delivered by at least one of the incorporators, accompanied by the filing fee of $60 minimum, depending on the number of shares authorized. There must be at least one incorporator, who must be either a natural person of adult age (18) or a corporation. The incorporator does not have to be a director, officer, or shareholder of the corporation.
+              The articles must be delivered by at least one of the incorporators, accompanied by the filing fee of $60 minimum, depending on the number of shares authorized. There must be at least one incorporator, who must be either a natural person of adult age (18) or a corporation. The
+              incorporator does not have to be a director, officer, or shareholder of the corporation.
             </Paragraph>
 
             <Colorbox color={color.blue3} content={articlesOfIncorporation.box1} dotsColor={color.blue1} style={{ marginBottom: "65px" }} />
 
-            <Paragraph big>Michigan law allows a corporation to be formed for any lawful business activity. Althought it is required to state the business purpose, it is sufficient to state that the corporation may engage in any activity included in the purposes for which corporations may be legally formed under the Michigan Business Corporation Act. State law may have additional requirements for corporations that are formed for education-related purposes.</Paragraph>
+            <Paragraph big>
+              Michigan law allows a corporation to be formed for any lawful business activity. Althought it is required to state the business purpose, it is sufficient to state that the corporation may engage in any activity included in the purposes for which corporations may be legally formed under
+              the Michigan Business Corporation Act. State law may have additional requirements for corporations that are formed for education-related purposes.
+            </Paragraph>
             <Paragraph big>Michigan law also allows additional provisions to be included in the articles for managing the business and regulating the affairs of the corporation, as well as regulating the corporation’s powers, its board of directors, and shareholders</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -123,33 +128,31 @@ state law. The name must include one of the following terms or its abbreviation:
               Registered Agent and Office
             </Heading>
             <Paragraph big>
-            All corporations authorized to conduct business in Michigan must have and maintain both a registered office (which may be the same as its place of business) and a registered agent in the state-someone designated to receive official state correspondence, including notice if the corporation is “served” with a lawsuit.
+              All corporations authorized to conduct business in Michigan must have and maintain both a registered office (which may be the same as its place of business) and a registered agent in the state-someone designated to receive official state correspondence, including notice if the
+              corporation is “served” with a lawsuit.
             </Paragraph>
-            <Paragraph big>
-            The registered agent must be either:
-            </Paragraph>
+            <Paragraph big>The registered agent must be either:</Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>An individual resident in Michigan whose business office or residence is the same as the registered office</Paragraph>
               <Paragraph bottomMargin={0}>A domestic corporation, or</Paragraph>
               <Paragraph bottomMargin={0}>A foreign corporation authorized to transact business in Michigan and having a business office that is the same as the registered office</Paragraph>
             </TextBoxed>
-
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Bylaws
             </Heading>
+            <Paragraph big>Bylaws describe the corporation’s basic managerial and legal operating principles. The corporation’s initial bylaws must be adopted by its incorporators, its shareholders, or its board of directors.</Paragraph>
             <Paragraph big>
-            Bylaws describe the corporation’s basic managerial and legal operating principles. The corporation’s initial bylaws must be adopted by its incorporators, its shareholders, or its board of directors.
+              A Michigan corporation should keep a copy of its bylaws at its main executive office, but is not required to file them with the state. The bylaws may contain any provision for managing the business and regulating the affairs of the corporation that’s not in conflict with law or the
+              articles of incorporation.
             </Paragraph>
             <Paragraph big>
-            A Michigan corporation should keep a copy of its bylaws at its main executive office, but is not required to file them with the state. The bylaws may contain any provision for managing the business and regulating the affairs of the corporation that’s not in conflict with law or the articles of incorporation.
-            </Paragraph>
-            <Paragraph big>
-            The board of directors or the shareholders may adopt, amend, or repeal bylaws, unless the articles of incorporation or the bylaws reserve this right to the shareholders. At its initial meeting, the board of directors should adopt corporate bylaws, and then keep them updated as time goes on.
+              The board of directors or the shareholders may adopt, amend, or repeal bylaws, unless the articles of incorporation or the bylaws reserve this right to the shareholders. At its initial meeting, the board of directors should adopt corporate bylaws, and then keep them updated as time
+              goes on.
             </Paragraph>
             <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            Bylaws normally address:
+              Bylaws normally address:
             </Paragraph>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
@@ -176,21 +179,18 @@ state law. The name must include one of the following terms or its abbreviation:
               Directors
             </Heading>
             <Paragraph big>
-            Officers must be named in the bylaws or elected by the board of directors. As a minimum, there must be a president, a secretary, and a treasurer; if desired, the corporation may have a chairman of the board, one or more vice presidents, and other officers as set forth in the bylaws or as decided by the board of directors
+              Officers must be named in the bylaws or elected by the board of directors. As a minimum, there must be a president, a secretary, and a treasurer; if desired, the corporation may have a chairman of the board, one or more vice presidents, and other officers as set forth in the bylaws or
+              as decided by the board of directors
             </Paragraph>
-            <Paragraph big>
-            Officers may appoint other officers in compliance with the bylaws. If the articles of incorporation and the bylaws allows it, an officer may hold multiple offices in the corporation, but they may not sign any documents in more than one capacity.
-            </Paragraph>
-            <Paragraph big>
-            At least one officer should be designated as responsible for preparing minutes of the directors’ and shareholders’ meetings, and for maintaining and authenticating corporate records.
-            </Paragraph>
+            <Paragraph big>Officers may appoint other officers in compliance with the bylaws. If the articles of incorporation and the bylaws allows it, an officer may hold multiple offices in the corporation, but they may not sign any documents in more than one capacity.</Paragraph>
+            <Paragraph big>At least one officer should be designated as responsible for preparing minutes of the directors’ and shareholders’ meetings, and for maintaining and authenticating corporate records.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Requirement Reports
             </Heading>
             <Paragraph big style={{ marginBottom: "24px" }}>
-            A report must be filed with the Michigan Secretary of State no later than May 15 of each year (except for the first year of incorporation) indicating:
+              A report must be filed with the Michigan Secretary of State no later than May 15 of each year (except for the first year of incorporation) indicating:
             </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>The corporation’s name</Paragraph>
@@ -210,15 +210,16 @@ state law. The name must include one of the following terms or its abbreviation:
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>For foreign corporations authorized to transact business in the state, the total number of authorized shares and the most recent percentage used in computation of the tax required by the single business tax act</Paragraph>
             </TextBoxed>
-            <Paragraph big>
-            Within four months of the end of the corporation’s fiscal year, it must also send a financial report to its shareholders with its end-of-year balance sheet, state of income, and any other information required by state law.
-            </Paragraph>
+            <Paragraph big>Within four months of the end of the corporation’s fiscal year, it must also send a financial report to its shareholders with its end-of-year balance sheet, state of income, and any other information required by state law.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Taxes
             </Heading>
-            <Paragraph big>Michigan imposes a Single Business Tax (SBT) on both corporate and noncorporate business income as the only general business tax levied by the state. The SBT replaced net income-based taxation with value-added taxation, which levies taxes on a “services consumed” or “benefits received” basis. It was enacted in 1976 to replace seven business taxes, including the corporate income tax. In 1999, the governor signed legislation to phase out the SBT by 2022.</Paragraph>
+            <Paragraph big>
+              Michigan imposes a Single Business Tax (SBT) on both corporate and noncorporate business income as the only general business tax levied by the state. The SBT replaced net income-based taxation with value-added taxation, which levies taxes on a “services consumed” or “benefits received”
+              basis. It was enacted in 1976 to replace seven business taxes, including the corporate income tax. In 1999, the governor signed legislation to phase out the SBT by 2022.
+            </Paragraph>
           </PanelWrapper>
         </CollapseWrapper>
       </TabsSection>
@@ -267,7 +268,7 @@ state law. The name must include one of the following terms or its abbreviation:
         <Accordion content={questions} curve curveColor={color.blue1} curveLeft="-15px" />
       </ContentCenter>
       <ContentCenter style={{ marginBottom: "48px" }}>
-        <Button content={{ text: `View all corporation FAQ's`, url: `/` }} width={300} padding="12px 48px" />
+        <Button content={{ text: `View all corporation FAQ's`, url: `https://www.incfile.com/research-topics/c-corporation-info/` }} width={300} padding="12px 48px" />
       </ContentCenter>
     </QuestionSection>
 

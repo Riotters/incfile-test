@@ -82,17 +82,14 @@ const AlaskaCorporation = () => (
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Choosing a Corporation Name
             </Heading>
+            <Paragraph big>The name of your new Maryland corporation is very important-it’s one of the first official acts of your business organization, and it’s how people first meet your company.</Paragraph>
             <Paragraph big>
-            The name of your new Maryland corporation is very important-it’s one of the first official acts of your business organization, and it’s how people first meet your company.
+              Your company’s name must be able to be told apart from any other registered or reserved Maryland business entity. It must also contain one or more of the following words (or an abbreviation thereof): “Incorporated,” “Corporation,” “Company” (but this must not follow the word “and” or a
+              symbol for “and”), or “Limited.”
             </Paragraph>
-            <Paragraph big>
-            Your company’s name must be able to be told apart from any other registered or reserved Maryland business entity. It must also contain one or more of the following words (or an abbreviation thereof): “Incorporated,” “Corporation,” “Company” (but this must not follow the word “and” or a symbol for “and”), or “Limited.”
-            </Paragraph>
-            <Paragraph big>
-            Your corporation’s name also is not allowed to include language that states or gives the impression that the corporation is organized for any purpose other than one permitted by state law and its articles of incorporation.
-            </Paragraph>
+            <Paragraph big>Your corporation’s name also is not allowed to include language that states or gives the impression that the corporation is organized for any purpose other than one permitted by state law and its articles of incorporation.</Paragraph>
             <Paragraph big style={{ marginBottom: "0" }}>
-            You can reserve an available name for 30 days for a $7 fee.
+              You can reserve an available name for 30 days for a $7 fee.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -100,24 +97,28 @@ const AlaskaCorporation = () => (
               Articles of Incorporation
             </Heading>
             <Paragraph big>
-            After choosing a name, the next step for your new Maryland corporation is filing articles of incorporation, along with a minimum filing fee of $120. The articles must be delivered to the state secretary of state’s office by at least one of the incorporators, all of whom must be adult individuals of at least 18 years age. Their duties are to sign, verify, and deliver in duplicate those articles of incorporation to the secretary of state.
+              After choosing a name, the next step for your new Maryland corporation is filing articles of incorporation, along with a minimum filing fee of $120. The articles must be delivered to the state secretary of state’s office by at least one of the incorporators, all of whom must be adult
+              individuals of at least 18 years age. Their duties are to sign, verify, and deliver in duplicate those articles of incorporation to the secretary of state.
             </Paragraph>
 
             <Colorbox color={color.blue3} content={articlesOfIncorporation.box1} dotsColor={color.blue1} style={{ marginBottom: "65px" }} />
 
             <Colorbox color={color.orange3} content={articlesOfIncorporation.box2} dotsColor={color.orange1} style={{ marginBottom: "48px" }} />
 
-            <Paragraph big>You can authorize shares of stock either with or without a stated par value. The most common practice is to issue shares without par value. Maryland imposes a stock fee that depends on the number of shares you authorize in your articles. You can authorize up to 5,000 shares without par value or a number of par value shares whose total par value equals $100,000 for the minimum filing fee of $120 ($100 recording fee plus a $20 minimum stock fee). Authorizing 100,000 shares with a stated par value of $1 or 1,000,000 shares with a stated par value of $.10 both result in an aggregate par value of $100,000, and therefore qualifies your corporation for the minimum $120 filing fee. Most incorporators authorize one class of common shares with equal voting, dividend, and liquidation rights, and no special restrictions.</Paragraph>
+            <Paragraph big>
+              You can authorize shares of stock either with or without a stated par value. The most common practice is to issue shares without par value. Maryland imposes a stock fee that depends on the number of shares you authorize in your articles. You can authorize up to 5,000 shares without par
+              value or a number of par value shares whose total par value equals $100,000 for the minimum filing fee of $120 ($100 recording fee plus a $20 minimum stock fee). Authorizing 100,000 shares with a stated par value of $1 or 1,000,000 shares with a stated par value of $.10 both result in
+              an aggregate par value of $100,000, and therefore qualifies your corporation for the minimum $120 filing fee. Most incorporators authorize one class of common shares with equal voting, dividend, and liquidation rights, and no special restrictions.
+            </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Registered Agent and Office
             </Heading>
+            <Paragraph big>Maryland corporations must each have a registered, in-state agent. The registered agent is the person or business entity designated to receive official state correspondence, including notice if the corporation is “served” with a lawsuit.</Paragraph>
             <Paragraph big>
-            Maryland corporations must each have a registered, in-state agent. The registered agent is the person or business entity designated to receive official state correspondence, including notice if the corporation is “served” with a lawsuit.
-            </Paragraph>
-            <Paragraph big>
-            Likewise, the state requires that all corporations maintain a registered, in-state office that may be its primary place of business. The registered agent must maintain a business office identical to the registered office, and must be either an individual person living in Maryland or a corporation authorized to conduct business in the “Old Line” State.
+              Likewise, the state requires that all corporations maintain a registered, in-state office that may be its primary place of business. The registered agent must maintain a business office identical to the registered office, and must be either an individual person living in Maryland or a
+              corporation authorized to conduct business in the “Old Line” State.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -125,10 +126,11 @@ const AlaskaCorporation = () => (
               Bylaws
             </Heading>
             <Paragraph big>
-            Bylaws lay out a corporation’s basic managerial and legal operating principles. The corporation must keep a copy at its principal executive office, but is not required to file them with the state. Nonetheless, they are a critically important document for the corporation.
+              Bylaws lay out a corporation’s basic managerial and legal operating principles. The corporation must keep a copy at its principal executive office, but is not required to file them with the state. Nonetheless, they are a critically important document for the corporation.
             </Paragraph>
             <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            At its initial meeting, the board of directors should adopt corporate bylaws, and then keep them updated as time goes on. The corporation’s board of directors can make, alter, amend, or repeal those bylaws, unless the articles of incorporation reserve this right to the shareholders. Bylaws normally address:
+              At its initial meeting, the board of directors should adopt corporate bylaws, and then keep them updated as time goes on. The corporation’s board of directors can make, alter, amend, or repeal those bylaws, unless the articles of incorporation reserve this right to the shareholders.
+              Bylaws normally address:
             </Paragraph>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
@@ -155,21 +157,21 @@ const AlaskaCorporation = () => (
               Directors
             </Heading>
             <Paragraph big>
-            Officers must be listed in the bylaws or elected by the board of directors. A Maryland corporation must have at least a president, a secretary, and a treasurer. Unless the bylaws specify otherwise, officers serve one-year terms and until a successor is elected and qualifies.
+              Officers must be listed in the bylaws or elected by the board of directors. A Maryland corporation must have at least a president, a secretary, and a treasurer. Unless the bylaws specify otherwise, officers serve one-year terms and until a successor is elected and qualifies.
             </Paragraph>
             <Paragraph big>
-            So long as the bylaws permit it, state law allows a person to hold more than one office in a corporation, but they may not serve simultaneously as both president and vice president of the same corporation. A person may hold more than one office in the same corporation, but they may not act in more than one capacity to execute, acknowledge, or verify a document that requires that action by more than one officer.
+              So long as the bylaws permit it, state law allows a person to hold more than one office in a corporation, but they may not serve simultaneously as both president and vice president of the same corporation. A person may hold more than one office in the same corporation, but they may not
+              act in more than one capacity to execute, acknowledge, or verify a document that requires that action by more than one officer.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Requirement Reports
             </Heading>
+            <Paragraph big>An annual report, accompanied by a $300 fee, must be filed with the Maryland State Department of Assessments and Taxation each year with the corporate business personal property return.</Paragraph>
             <Paragraph big>
-            An annual report, accompanied by a $300 fee, must be filed with the Maryland State Department of Assessments and Taxation each year with the corporate business personal property return.
-            </Paragraph>
-            <Paragraph big>
-            State law also requires the president (or another officer specified in the bylaws) to furnish an annual statement of affairs report to the shareholders, which must include the corporation’s balance sheet and financial statement of operations. This report must be submitted at each annual stockholders’ meeting and filed at the principal office within 120 days after the end of the fiscal year.
+              State law also requires the president (or another officer specified in the bylaws) to furnish an annual statement of affairs report to the shareholders, which must include the corporation’s balance sheet and financial statement of operations. This report must be submitted at each
+              annual stockholders’ meeting and filed at the principal office within 120 days after the end of the fiscal year.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -225,7 +227,7 @@ const AlaskaCorporation = () => (
         <Accordion content={questions} curve curveColor={color.blue1} curveLeft="-15px" />
       </ContentCenter>
       <ContentCenter style={{ marginBottom: "48px" }}>
-        <Button content={{ text: `View all corporation FAQ's`, url: `/` }} width={300} padding="12px 48px" />
+        <Button content={{ text: `View all corporation FAQ's`, url: `https://www.incfile.com/research-topics/c-corporation-info/` }} width={300} padding="12px 48px" />
       </ContentCenter>
     </QuestionSection>
 

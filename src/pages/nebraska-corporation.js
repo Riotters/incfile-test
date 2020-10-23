@@ -83,13 +83,12 @@ const AlaskaCorporation = () => (
               Choosing a Corporation Name
             </Heading>
             <Paragraph big>
-            The name you decide on for your new corporation cannot be the same as or deceptively similar to the name of any other Nebraska business entity registered or reserved with the state. The name may not include language that states or implies that the corporation is organized for some purpose other than one permitted by state law or than stated in its articles of incorporation.
+              The name you decide on for your new corporation cannot be the same as or deceptively similar to the name of any other Nebraska business entity registered or reserved with the state. The name may not include language that states or implies that the corporation is organized for some
+              purpose other than one permitted by state law or than stated in its articles of incorporation.
             </Paragraph>
-            <Paragraph big>
-            The name must also include the words “incorporated,” “corporation,” “limited,” or “company,” or an abbreviation of one of those terms. Banking businesses, however, may use the word “bank” and are not required to use these words or abbreviations.
-            </Paragraph>
+            <Paragraph big>The name must also include the words “incorporated,” “corporation,” “limited,” or “company,” or an abbreviation of one of those terms. Banking businesses, however, may use the word “bank” and are not required to use these words or abbreviations.</Paragraph>
             <Paragraph big style={{ marginBottom: "0" }}>
-            Corporate names can be reserved with the state for $30 for up to 120 days.Corporate names can be reserved with the state for $30 for up to 120 days.
+              Corporate names can be reserved with the state for $30 for up to 120 days.Corporate names can be reserved with the state for $30 for up to 120 days.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -97,15 +96,22 @@ const AlaskaCorporation = () => (
               Articles of Incorporation
             </Heading>
             <Paragraph big>
-            Actually getting your new corporation authorized to conduct business in Nebraska requires filing articles of incorporation with the Corporation Bureau of the Nebraska Secretary of State’s office. The articles must be delivered to the state by one or more incorporators, who may be either any natural person of legal age or a business entity.
+              Actually getting your new corporation authorized to conduct business in Nebraska requires filing articles of incorporation with the Corporation Bureau of the Nebraska Secretary of State’s office. The articles must be delivered to the state by one or more incorporators, who may be
+              either any natural person of legal age or a business entity.
             </Paragraph>
 
             <Colorbox color={color.blue3} content={articlesOfIncorporation.box1} dotsColor={color.blue1} style={{ marginBottom: "65px" }} />
 
             <Colorbox color={color.orange3} content={articlesOfIncorporation.box2} dotsColor={color.orange1} style={{ marginBottom: "48px" }} />
 
-            <Paragraph big>Nebraska requires that your shares have a stated par value. Most incorporators make sure that the capital value of their authorized shares (number of shares multiplied by par value) is $10,000 or less in order to pay the minimum filing fee. If you want to authorize more than one class of shares, you must list the designation of each class, the number of shares in each class, a statement of the par value of the shares in each class, and the rights and restrictions associated with each class.</Paragraph>
-            <Paragraph big>There is a $5 per page filing fee plus a $60 minimum capital stock fee if your corporation’s capital stock does not exceed $10,000, for a minimum filing fee of $65 for one-page articles. Your corporation’s capital stock is the number of shares authorized in your articles multiplied by the par value of these shares.</Paragraph>
+            <Paragraph big>
+              Nebraska requires that your shares have a stated par value. Most incorporators make sure that the capital value of their authorized shares (number of shares multiplied by par value) is $10,000 or less in order to pay the minimum filing fee. If you want to authorize more than one class
+              of shares, you must list the designation of each class, the number of shares in each class, a statement of the par value of the shares in each class, and the rights and restrictions associated with each class.
+            </Paragraph>
+            <Paragraph big>
+              There is a $5 per page filing fee plus a $60 minimum capital stock fee if your corporation’s capital stock does not exceed $10,000, for a minimum filing fee of $65 for one-page articles. Your corporation’s capital stock is the number of shares authorized in your articles multiplied by
+              the par value of these shares.
+            </Paragraph>
             <Colorbox color={color.orange3} content={articlesOfIncorporation.box3} dotsColor={color.orange1} style={{ marginBottom: "48px" }} />
             <Paragraph big>Nebraska law requires publication of a notice of incorporation for three successive weeks in a general circulation newspaper in the county where the corporation’s principal office is located, and proof of publication then submitted to the Secretary of State.</Paragraph>
           </PanelWrapper>
@@ -114,21 +120,21 @@ const AlaskaCorporation = () => (
               Registered Agent and Office
             </Heading>
             <Paragraph big>
-            Nebraska corporations must have a registered in-state agent-the person or office designated to receive official state administrative and legal correspondence on behalf of the corporation. The registered agent must have a business office that is the same as the registered office and must be either an individual state resident or a corporation authorized to conduct business in the Cornhusker State.
+              Nebraska corporations must have a registered in-state agent-the person or office designated to receive official state administrative and legal correspondence on behalf of the corporation. The registered agent must have a business office that is the same as the registered office and
+              must be either an individual state resident or a corporation authorized to conduct business in the Cornhusker State.
             </Paragraph>
-            <Paragraph big>
-            The registered office may be the same as any of the corporation’s places of business.
-            </Paragraph>
+            <Paragraph big>The registered office may be the same as any of the corporation’s places of business.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Bylaws
             </Heading>
             <Paragraph big>
-            The incorporators or board of directors should adopt the corporation’s bylaws at their first meeting, insuring that there is no conflict with the corporation’s articles of incorporation or state law. A corporation is required to keep its bylaws available at its primary executive office, but it is not required to file them with the state. They should also keep them updated as time goes on.
+              The incorporators or board of directors should adopt the corporation’s bylaws at their first meeting, insuring that there is no conflict with the corporation’s articles of incorporation or state law. A corporation is required to keep its bylaws available at its primary executive
+              office, but it is not required to file them with the state. They should also keep them updated as time goes on.
             </Paragraph>
             <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            Bylaws set forth the corporation’s basic operating principles from both the managerial and legal perspectives, and should include (as a minimum):
+              Bylaws set forth the corporation’s basic operating principles from both the managerial and legal perspectives, and should include (as a minimum):
             </Paragraph>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
@@ -149,14 +155,14 @@ const AlaskaCorporation = () => (
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>Requirements for publishing annual financial information to shareholders</Paragraph>
             </TextBoxed>
-
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Directors
             </Heading>
             <Paragraph big>
-            Officers of the company must be either listed in the bylaws or elected by the board. A duly appointed officer may appoint one or more officers or assistant officers if authorized by the bylaws or the board of directors. At least one officer must authenticate the corporation’s records, as well as prepare the minutes of directors’ and shareholders meetings. An officer may hold more than one office in the corporation, unless otherwise prohibited by law, the corporation’s articles of incorporation, or the bylaws.
+              Officers of the company must be either listed in the bylaws or elected by the board. A duly appointed officer may appoint one or more officers or assistant officers if authorized by the bylaws or the board of directors. At least one officer must authenticate the corporation’s records,
+              as well as prepare the minutes of directors’ and shareholders meetings. An officer may hold more than one office in the corporation, unless otherwise prohibited by law, the corporation’s articles of incorporation, or the bylaws.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -164,11 +170,11 @@ const AlaskaCorporation = () => (
               Requirement Reports
             </Heading>
             <Paragraph big style={{ marginBottom: "48px" }}>
-            Nebraska corporations must file a biennial (every two years) report with the Nebraska Secretary of State by March 1 of every even-numbered year.
+              Nebraska corporations must file a biennial (every two years) report with the Nebraska Secretary of State by March 1 of every even-numbered year.
             </Paragraph>
 
             <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            The report must be current as of January 1 of the filing year and must include:
+              The report must be current as of January 1 of the filing year and must include:
             </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>aaaa</Paragraph>
@@ -195,18 +201,20 @@ const AlaskaCorporation = () => (
               <Paragraph bottomMargin={0}>aaaa</Paragraph>
             </TextBoxed>
             <Paragraph big>
-            The corporation must provide its shareholders an annual financial statement within 120 days after the close of each fiscal year. These statements must include a year-end balance sheet, an income statement for that year, and a statement of changes in shareholders’ equity for that year (unless this information is stated elsewhere in the financial statements).
+              The corporation must provide its shareholders an annual financial statement within 120 days after the close of each fiscal year. These statements must include a year-end balance sheet, an income statement for that year, and a statement of changes in shareholders’ equity for that year
+              (unless this information is stated elsewhere in the financial statements).
             </Paragraph>
-            <Paragraph big>            
-            The corporation must also report in writing any expenses advanced to a director, as well as any issued or authorized promissory notes or promises to render services in the future, with or before notice of the next shareholders’ meeting.
-            </Paragraph>
+            <Paragraph big>The corporation must also report in writing any expenses advanced to a director, as well as any issued or authorized promissory notes or promises to render services in the future, with or before notice of the next shareholders’ meeting.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Taxes
             </Heading>
             <Paragraph big>Nebraska imposes an annual corporation license tax, for which the minimum payment is $50.</Paragraph>
-            <Paragraph big>Additionally, “S corporation” status is recognized by the State of Nebraska. A “subchapter S” corporation (frequently referred to as an “S corp”) is treated as a pass-through entity for tax purposes in the same way as a sole proprietorship or partnership. The S corp does not file a tax return on its own behalf; instead, all tax-related data for the S corp is filed as part of the owner’s individual income tax.</Paragraph>
+            <Paragraph big>
+              Additionally, “S corporation” status is recognized by the State of Nebraska. A “subchapter S” corporation (frequently referred to as an “S corp”) is treated as a pass-through entity for tax purposes in the same way as a sole proprietorship or partnership. The S corp does not file a tax
+              return on its own behalf; instead, all tax-related data for the S corp is filed as part of the owner’s individual income tax.
+            </Paragraph>
           </PanelWrapper>
         </CollapseWrapper>
       </TabsSection>
@@ -255,7 +263,7 @@ const AlaskaCorporation = () => (
         <Accordion content={questions} curve curveColor={color.blue1} curveLeft="-15px" />
       </ContentCenter>
       <ContentCenter style={{ marginBottom: "48px" }}>
-        <Button content={{ text: `View all corporation FAQ's`, url: `/` }} width={300} padding="12px 48px" />
+        <Button content={{ text: `View all corporation FAQ's`, url: `https://www.incfile.com/research-topics/c-corporation-info/` }} width={300} padding="12px 48px" />
       </ContentCenter>
     </QuestionSection>
 

@@ -83,13 +83,15 @@ const AlaskaCorporation = () => (
               Choosing a Corporation Name
             </Heading>
             <Paragraph big>
-            Choosing a name for your new Mississippi corporation is one of the first official steps toward actually conducting business in the Magnolia State. The business name you choose must be able to be readily distinguished from all other registered Mississippi business entities, as well as any business entity names already reserved on the state rolls.
+              Choosing a name for your new Mississippi corporation is one of the first official steps toward actually conducting business in the Magnolia State. The business name you choose must be able to be readily distinguished from all other registered Mississippi business entities, as well as
+              any business entity names already reserved on the state rolls.
             </Paragraph>
             <Paragraph big>
-            Your new business’ name must be written in English letters or characters and include one of the following words or an abbreviation thereof: “Incorporated,” “Corporation,” “Company,” or “Limited.” If the word “Company” is used, it may not be preceded by the word “and” or a symbol that means the same thing, such as “&.” The name also must not state or imply that the corporation is organized for some purpose other than the one specified in its articles of incorporation.
+              Your new business’ name must be written in English letters or characters and include one of the following words or an abbreviation thereof: “Incorporated,” “Corporation,” “Company,” or “Limited.” If the word “Company” is used, it may not be preceded by the word “and” or a symbol that
+              means the same thing, such as “&.” The name also must not state or imply that the corporation is organized for some purpose other than the one specified in its articles of incorporation.
             </Paragraph>
             <Paragraph big style={{ marginBottom: "0" }}>
-            Available corporate names may be reserved for up to 180 days for a fee of $25.
+              Available corporate names may be reserved for up to 180 days for a fee of $25.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -97,7 +99,8 @@ const AlaskaCorporation = () => (
               Articles of Incorporation
             </Heading>
             <Paragraph big>
-            New Mississippi corporations must file articles of incorporation with the Mississippi Secretary of State’s office before they can start conducting business as a corporation. The articles must be delivered by at least one of the incorporators (who must be a natural person at least 18 years old), accompanied by the $50 filing fee.
+              New Mississippi corporations must file articles of incorporation with the Mississippi Secretary of State’s office before they can start conducting business as a corporation. The articles must be delivered by at least one of the incorporators (who must be a natural person at least 18
+              years old), accompanied by the $50 filing fee.
             </Paragraph>
 
             <Colorbox color={color.blue3} content={articlesOfIncorporation.box1} dotsColor={color.blue1} style={{ marginBottom: "65px" }} />
@@ -105,31 +108,32 @@ const AlaskaCorporation = () => (
             <Paragraph big>Mississippi law allows a corporation to be formed for any lawful business activity. There is no requirement for a specific corporate purpose to be stated in the articles of incorporation.</Paragraph>
             <Colorbox color={color.orange3} content={articlesOfIncorporation.box2} dotsColor={color.orange1} style={{ marginBottom: "48px" }} />
 
-            <Paragraph big>Since Mississippi law does not use the concept of par value for stocks, you do not need to state a par value for your shares. The filing fee is a flat fee, rather than being based on your authorized shares, so you can authorize as many as desired. Most incorporators authorize common shares with equal voting, dividend, and liquidation rights and no special restrictions.</Paragraph>
+            <Paragraph big>
+              Since Mississippi law does not use the concept of par value for stocks, you do not need to state a par value for your shares. The filing fee is a flat fee, rather than being based on your authorized shares, so you can authorize as many as desired. Most incorporators authorize common
+              shares with equal voting, dividend, and liquidation rights and no special restrictions.
+            </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Registered Agent and Office
             </Heading>
             <Paragraph big>
-            Every Mississippi corporation must have a registered agent in the state-the person or office designated to receive official state correspondence, both administrative and legal. The registered agent must be either a Mississippi resident whose business office is the same as the registered office, or a corporation with a business office identical to the registered office.
+              Every Mississippi corporation must have a registered agent in the state-the person or office designated to receive official state correspondence, both administrative and legal. The registered agent must be either a Mississippi resident whose business office is the same as the
+              registered office, or a corporation with a business office identical to the registered office.
             </Paragraph>
-            <Paragraph big>
-            The registered office may be any of the corporation’s places of business in Mississippi.
-            </Paragraph>
+            <Paragraph big>The registered office may be any of the corporation’s places of business in Mississippi.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Bylaws
             </Heading>
             <Paragraph big>
-            Bylaws lay out the corporation’s basic managerial and legal operating principles. Mississippi corporations must keep a copy of their bylaws at their principal executive office, but are not required to file them with the state. At its initial meeting, the board of directors should adopt corporate bylaws, and then keep them updated as time goes on.
+              Bylaws lay out the corporation’s basic managerial and legal operating principles. Mississippi corporations must keep a copy of their bylaws at their principal executive office, but are not required to file them with the state. At its initial meeting, the board of directors should adopt
+              corporate bylaws, and then keep them updated as time goes on.
             </Paragraph>
-            <Paragraph big>
-            The board of directors of a corporation may adopt, amend, or repeal bylaws, unless the articles reserve this right to the shareholders.
-            </Paragraph>
+            <Paragraph big>The board of directors of a corporation may adopt, amend, or repeal bylaws, unless the articles reserve this right to the shareholders.</Paragraph>
             <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            Bylaws normally address:
+              Bylaws normally address:
             </Paragraph>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
@@ -156,18 +160,17 @@ const AlaskaCorporation = () => (
               Directors
             </Heading>
             <Paragraph big>
-            Officers are appointed or elected by the board in compliance with the corporation’s bylaws, or elected by shareholders in compliance with the articles of incorporation. One officer has the responsibility of preparing minutes of director and shareholder meetings, and for maintaining and authenticating corporate records.
+              Officers are appointed or elected by the board in compliance with the corporation’s bylaws, or elected by shareholders in compliance with the articles of incorporation. One officer has the responsibility of preparing minutes of director and shareholder meetings, and for maintaining and
+              authenticating corporate records.
             </Paragraph>
-            <Paragraph big>
-            It is permissible for an officer to hold more than one office in the corporation unless otherwise prohibited by law or by the corporation’s bylaws. Any officer may hold more than one office in the Mississippi incorporation.
-            </Paragraph>
+            <Paragraph big>It is permissible for an officer to hold more than one office in the corporation unless otherwise prohibited by law or by the corporation’s bylaws. Any officer may hold more than one office in the Mississippi incorporation.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Requirement Reports
             </Heading>
             <Paragraph big style={{ marginBottom: "48px" }}>
-            The Mississippi Secretary of State requires that Mississippi corporations file a report each year within 60 days of the anniversary of its incorporation.
+              The Mississippi Secretary of State requires that Mississippi corporations file a report each year within 60 days of the anniversary of its incorporation.
             </Paragraph>
 
             <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
@@ -199,7 +202,9 @@ const AlaskaCorporation = () => (
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Taxes
             </Heading>
-            <Paragraph big>Mississippi imposes an annual corporate franchise tax of $2.50 per $1,000 of corporate capital, surplus, and profits, plus a corporate income tax. There is a minimum annual franchise payment of $25. You must file a combined corporate franchise and income tax return each year.</Paragraph>
+            <Paragraph big>
+              Mississippi imposes an annual corporate franchise tax of $2.50 per $1,000 of corporate capital, surplus, and profits, plus a corporate income tax. There is a minimum annual franchise payment of $25. You must file a combined corporate franchise and income tax return each year.
+            </Paragraph>
           </PanelWrapper>
         </CollapseWrapper>
       </TabsSection>
@@ -248,7 +253,7 @@ const AlaskaCorporation = () => (
         <Accordion content={questions} curve curveColor={color.blue1} curveLeft="-15px" />
       </ContentCenter>
       <ContentCenter style={{ marginBottom: "48px" }}>
-        <Button content={{ text: `View all corporation FAQ's`, url: `/` }} width={300} padding="12px 48px" />
+        <Button content={{ text: `View all corporation FAQ's`, url: `https://www.incfile.com/research-topics/c-corporation-info/` }} width={300} padding="12px 48px" />
       </ContentCenter>
     </QuestionSection>
 

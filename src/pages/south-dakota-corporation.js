@@ -83,13 +83,15 @@ const AlaskaCorporation = () => (
               Choosing a Corporation Name
             </Heading>
             <Paragraph big>
-            Choosing a name for your new South Dakota corporation is one of the first official steps toward actually conducting business in the state. The corporate name you choose must be readily distinguishable from all other registered and reserved business entities on the South Dakota state rolls.
+              Choosing a name for your new South Dakota corporation is one of the first official steps toward actually conducting business in the state. The corporate name you choose must be readily distinguishable from all other registered and reserved business entities on the South Dakota state
+              rolls.
             </Paragraph>
             <Paragraph big>
-            Your new business’ name must include one of the following words, an abbreviation thereof, or words of similar meaning in another language: “Incorporated,” “Corporation,” “Company,” or “Limited.” However, the name must not state or imply that the corporation is organized for some purpose other than the one specified in its articles of incorporation or one permitted by state law.
+              Your new business’ name must include one of the following words, an abbreviation thereof, or words of similar meaning in another language: “Incorporated,” “Corporation,” “Company,” or “Limited.” However, the name must not state or imply that the corporation is organized for some
+              purpose other than the one specified in its articles of incorporation or one permitted by state law.
             </Paragraph>
             <Paragraph big style={{ marginBottom: "0" }}>
-            An available corporate name may be reserved for 120 days by filing two copies of an Application to Reserve Corporate Name form, along with a $25 fee.
+              An available corporate name may be reserved for 120 days by filing two copies of an Application to Reserve Corporate Name form, along with a $25 fee.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -97,7 +99,8 @@ const AlaskaCorporation = () => (
               Articles of Incorporation
             </Heading>
             <Paragraph big>
-            Before it can legitimately commence operations in the state, a new South Dakota corporation must file articles of incorporation with the Corporations Department of the state Secretary of State’s office. The articles must be executed (signed) and delivered by at least one incorporator, who must be a natural person of legal age.
+              Before it can legitimately commence operations in the state, a new South Dakota corporation must file articles of incorporation with the Corporations Department of the state Secretary of State’s office. The articles must be executed (signed) and delivered by at least one incorporator,
+              who must be a natural person of legal age.
             </Paragraph>
             <Paragraph big>The articles must be accompanied by a filing fee of $125.</Paragraph>
 
@@ -106,28 +109,27 @@ const AlaskaCorporation = () => (
             <Colorbox color={color.orange3} content={articlesOfIncorporation.box2} dotsColor={color.orange1} style={{ marginBottom: "65px" }} />
 
             <Colorbox color={color.orange3} content={articlesOfIncorporation.box3} dotsColor={color.orange1} style={{ marginBottom: "48px" }} />
-
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Registered Agent and Office
             </Heading>
             <Paragraph big>
-            Every South Dakota corporation must have a registered agent in the state—the person or office designated to receive official state correspondence, both administrative and legal. The registered agent is required to sign the articles of incorporation, indicating acceptance of the appointment as registered agent.
+              Every South Dakota corporation must have a registered agent in the state—the person or office designated to receive official state correspondence, both administrative and legal. The registered agent is required to sign the articles of incorporation, indicating acceptance of the
+              appointment as registered agent.
             </Paragraph>
-            <Paragraph big>
-            The registered agent must be either a South Dakota resident whose business office is the same as the registered office, or a corporation authorized to conduct business in the Mount Rushmore State that has a business office identical to the registered office.
-            </Paragraph>
+            <Paragraph big>The registered agent must be either a South Dakota resident whose business office is the same as the registered office, or a corporation authorized to conduct business in the Mount Rushmore State that has a business office identical to the registered office.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Bylaws
             </Heading>
             <Paragraph big>
-            Bylaws lay out the corporation’s basic managerial and legal operating principles that manage their internal affairs. South Dakota corporations must keep a copy of their bylaws at their principal executive office, but are not required to file them with the state. At its initial meeting, the incorporators or the board of directors should adopt corporate bylaws, and then keep them updated as time goes on.
+              Bylaws lay out the corporation’s basic managerial and legal operating principles that manage their internal affairs. South Dakota corporations must keep a copy of their bylaws at their principal executive office, but are not required to file them with the state. At its initial meeting,
+              the incorporators or the board of directors should adopt corporate bylaws, and then keep them updated as time goes on.
             </Paragraph>
             <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            The board of directors of a corporation may adopt, amend, or repeal bylaws, unless the articles reserve this right to the shareholders. Bylaws normally address:
+              The board of directors of a corporation may adopt, amend, or repeal bylaws, unless the articles reserve this right to the shareholders. Bylaws normally address:
             </Paragraph>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
@@ -148,29 +150,28 @@ const AlaskaCorporation = () => (
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>How and when annual financial information is provided to shareholders</Paragraph>
             </TextBoxed>
-
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Directors
             </Heading>
             <Paragraph big>
-            Officers are listed in the initial bylaws or elected by the board of directors, and may appoint other officers in accordance with the bylaws. At least one officer has the responsibility of preparing minutes of director and shareholder meetings, and for maintaining and authenticating corporate records.
+              Officers are listed in the initial bylaws or elected by the board of directors, and may appoint other officers in accordance with the bylaws. At least one officer has the responsibility of preparing minutes of director and shareholder meetings, and for maintaining and authenticating
+              corporate records.
             </Paragraph>
-            <Paragraph big>
-            It is permissible for an officer to hold more than one office in the corporation unless otherwise prohibited by law or by the corporation’s bylaws.
-            </Paragraph>
+            <Paragraph big>It is permissible for an officer to hold more than one office in the corporation unless otherwise prohibited by law or by the corporation’s bylaws.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Requirement Reports
             </Heading>
             <Paragraph big style={{ marginBottom: "48px" }}>
-            South Dakota corporations must file a report with the South Dakota Department of Secretary of State each year before the first day of the second month following the anniversary month of its incorporation, except for the year of incorporation. The report must be current as of the close of business on the day prior to the corporation’s anniversary date of incorporation.
+              South Dakota corporations must file a report with the South Dakota Department of Secretary of State each year before the first day of the second month following the anniversary month of its incorporation, except for the year of incorporation. The report must be current as of the close
+              of business on the day prior to the corporation’s anniversary date of incorporation.
             </Paragraph>
 
             <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            This report must indicate:
+              This report must indicate:
             </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>The corporation’s name and its state or country of incorporation</Paragraph>
@@ -193,13 +194,15 @@ const AlaskaCorporation = () => (
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>The stated capital amount of the corporation</Paragraph>
             </TextBoxed>
-
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Taxes
             </Heading>
-            <Paragraph big>“S corporation” status is recognized by the South Dakota Secretary of State. A “subchapter S” corporation (frequently referred to as an “S corp”) is treated as a pass-through entity for tax purposes in the same way as a sole proprietorship or partnership. The S corp does not file a tax return on its own behalf; instead, all tax-related data for the S corp is filed as part of the owner’s individual income tax.</Paragraph>
+            <Paragraph big>
+              “S corporation” status is recognized by the South Dakota Secretary of State. A “subchapter S” corporation (frequently referred to as an “S corp”) is treated as a pass-through entity for tax purposes in the same way as a sole proprietorship or partnership. The S corp does not file a tax
+              return on its own behalf; instead, all tax-related data for the S corp is filed as part of the owner’s individual income tax.
+            </Paragraph>
             <Paragraph big>South Dakota does not impose a corporate income tax, however, so a subchapter S choice in this state has federal implications for South Dakota corporations, but no state impact.</Paragraph>
           </PanelWrapper>
         </CollapseWrapper>
@@ -249,7 +252,7 @@ const AlaskaCorporation = () => (
         <Accordion content={questions} curve curveColor={color.blue1} curveLeft="-15px" />
       </ContentCenter>
       <ContentCenter style={{ marginBottom: "48px" }}>
-        <Button content={{ text: `View all corporation FAQ's`, url: `/` }} width={300} padding="12px 48px" />
+        <Button content={{ text: `View all corporation FAQ's`, url: `https://www.incfile.com/research-topics/c-corporation-info/` }} width={300} padding="12px 48px" />
       </ContentCenter>
     </QuestionSection>
 

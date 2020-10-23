@@ -83,16 +83,13 @@ const AlaskaCorporation = () => (
               Choosing a Corporation Name
             </Heading>
             <Paragraph big>
-            Choosing a name for your new Utah corporation is one of the first official steps toward actually conducting business in the state. The corporate name you choose must be readily distinguishable from all other registered and reserved business entities in Utah records and it may not state or imply that the corporation is organized for some purpose other than specified in its articles of incorporation or permitted by state law, and it must not state or imply that it is associated with the government.
+              Choosing a name for your new Utah corporation is one of the first official steps toward actually conducting business in the state. The corporate name you choose must be readily distinguishable from all other registered and reserved business entities in Utah records and it may not state
+              or imply that the corporation is organized for some purpose other than specified in its articles of incorporation or permitted by state law, and it must not state or imply that it is associated with the government.
             </Paragraph>
-            <Paragraph big>
-            Your new business’ name must include one of the following words, an abbreviation thereof, or words of similar meaning in another language: “Incorporated,” “Corporation,” or “Company.”
-            </Paragraph>
-            <Paragraph big>
-            An available corporate name may be reserved for up to four months by for a $22 fee.
-            </Paragraph>
+            <Paragraph big>Your new business’ name must include one of the following words, an abbreviation thereof, or words of similar meaning in another language: “Incorporated,” “Corporation,” or “Company.”</Paragraph>
+            <Paragraph big>An available corporate name may be reserved for up to four months by for a $22 fee.</Paragraph>
             <Paragraph big style={{ marginBottom: "0" }}>
-            Utah state law also restricts the use of certain words and phrases in business names, such as “Olympics,” “Olympiad,” “College,” “University,” and “Institute.”
+              Utah state law also restricts the use of certain words and phrases in business names, such as “Olympics,” “Olympiad,” “College,” “University,” and “Institute.”
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -100,7 +97,8 @@ const AlaskaCorporation = () => (
               Articles of Incorporation
             </Heading>
             <Paragraph big>
-            Before it can legitimately begin operations in the state, a new Utah corporation must file articles of incorporation with the Utah Division of Corporations and Commercial Code. The charter must be executed (signed) and delivered by at least one incorporator—who must be a natural person of legal age or a business entity—and accompanied by the $52 filing fee.
+              Before it can legitimately begin operations in the state, a new Utah corporation must file articles of incorporation with the Utah Division of Corporations and Commercial Code. The charter must be executed (signed) and delivered by at least one incorporator—who must be a natural person
+              of legal age or a business entity—and accompanied by the $52 filing fee.
             </Paragraph>
 
             <Colorbox color={color.blue3} content={articlesOfIncorporation.box1} dotsColor={color.blue1} style={{ marginBottom: "65px" }} />
@@ -112,24 +110,22 @@ const AlaskaCorporation = () => (
               Registered Agent and Office
             </Heading>
             <Paragraph big>
-            Every Utah corporation must have a registered agent in the state—the person or office designated to receive official state correspondence, both administrative and legal. The registered agent is required to sign the articles of incorporation, indicating acceptance of the appointment as registered agent.
+              Every Utah corporation must have a registered agent in the state—the person or office designated to receive official state correspondence, both administrative and legal. The registered agent is required to sign the articles of incorporation, indicating acceptance of the appointment as
+              registered agent.
             </Paragraph>
-            <Paragraph big>
-            The registered agent must be either a Utah resident whose business office is the same as the registered office, or a corporation authorized to conduct business in the Volunteer State that has a business office identical to the registered office.
-            </Paragraph>
+            <Paragraph big>The registered agent must be either a Utah resident whose business office is the same as the registered office, or a corporation authorized to conduct business in the Volunteer State that has a business office identical to the registered office.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Bylaws
             </Heading>
+            <Paragraph big>Bylaws lay out the corporation’s basic managerial and legal operating principles that manage their internal affairs. Utah corporations must keep a copy of their bylaws at their principal executive office, but are not required to file them with the state.</Paragraph>
             <Paragraph big>
-            Bylaws lay out the corporation’s basic managerial and legal operating principles that manage their internal affairs. Utah corporations must keep a copy of their bylaws at their principal executive office, but are not required to file them with the state.
-            </Paragraph>
-            <Paragraph big>
-            At its initial meeting, the incorporators or the board of directors should adopt corporate bylaws, and then keep them updated as time goes on. If no directors have been elected the incorporators may adopt initial bylaws for the corporation. If neither the incorporators nor the board of directors have adopted initial bylaws, the shareholders may do so.
+              At its initial meeting, the incorporators or the board of directors should adopt corporate bylaws, and then keep them updated as time goes on. If no directors have been elected the incorporators may adopt initial bylaws for the corporation. If neither the incorporators nor the board of
+              directors have adopted initial bylaws, the shareholders may do so.
             </Paragraph>
             <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            The board of directors of a corporation may adopt, amend, or repeal bylaws, unless the articles reserve this right to the shareholders. Bylaws normally address:
+              The board of directors of a corporation may adopt, amend, or repeal bylaws, unless the articles reserve this right to the shareholders. Bylaws normally address:
             </Paragraph>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
@@ -161,26 +157,24 @@ const AlaskaCorporation = () => (
               Directors
             </Heading>
             <Paragraph big>
-            Officers are listed in the initial bylaws or elected by the board of directors, and may appoint other officers in accordance with the bylaws. There must be at least a president and a secretary. At least one officer has the responsibility of preparing minutes of director and shareholder meetings, and for maintaining and authenticating corporate records
+              Officers are listed in the initial bylaws or elected by the board of directors, and may appoint other officers in accordance with the bylaws. There must be at least a president and a secretary. At least one officer has the responsibility of preparing minutes of director and shareholder
+              meetings, and for maintaining and authenticating corporate records
             </Paragraph>
-            <Paragraph big>
-            An officer may hold more than one office in the corporation unless specified otherwise by the corporation’s bylaws.
-            </Paragraph>
+            <Paragraph big>An officer may hold more than one office in the corporation unless specified otherwise by the corporation’s bylaws.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Requirement Reports
             </Heading>
             <Paragraph big>
-            A corporation’s board of directors consists of at least three directors except that the board may consist of only one or more director if no shares have been issued yet. Directors must be natural persons. After shares are issued and for as long as a corporation has fewer than three shareholders, the number of its board of directors may be equal to or greater than the number of those shareholders.
+              A corporation’s board of directors consists of at least three directors except that the board may consist of only one or more director if no shares have been issued yet. Directors must be natural persons. After shares are issued and for as long as a corporation has fewer than three
+              shareholders, the number of its board of directors may be equal to or greater than the number of those shareholders.
             </Paragraph>
             <Paragraph big>
-            Officers are listed in the initial bylaws or elected by the board of directors, and may appoint other officers in accordance with the bylaws. There must be at least a president and a secretary. At least one officer has the responsibility of preparing minutes of director and shareholder meetings, and for maintaining and authenticating corporate records
+              Officers are listed in the initial bylaws or elected by the board of directors, and may appoint other officers in accordance with the bylaws. There must be at least a president and a secretary. At least one officer has the responsibility of preparing minutes of director and shareholder
+              meetings, and for maintaining and authenticating corporate records
             </Paragraph>
-            <Paragraph big>
-            An officer may hold more than one office in the corporation unless specified otherwise by the corporation’s bylaws.
-            </Paragraph>
-
+            <Paragraph big>An officer may hold more than one office in the corporation unless specified otherwise by the corporation’s bylaws.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
@@ -188,7 +182,10 @@ const AlaskaCorporation = () => (
             </Heading>
             <Paragraph big>Utah’s corporate tax structure consists of a flat rate of five percent on all corporate income with a $100 minimum. Among states levying corporate income taxes, Utah’s rate ranks 41st nationally.</Paragraph>
             <Paragraph big>Utah corporations are subject to a corporate franchise tax based on net income. Every corporation must file a return and pay the tax each calendar or fiscal year, regardless of whether or not a profit was made or business was conducted.</Paragraph>
-            <Paragraph big>“S corporation” status is recognized by Utah. A “subchapter S” corporation (frequently referred to as an “S corp”) is treated as a pass-through entity for tax purposes in the same way as a sole proprietorship or partnership. The S corp does not file a tax return on its own behalf; instead, all tax-related data for the S corp is filed as part of the owner’s individual income tax.</Paragraph>
+            <Paragraph big>
+              “S corporation” status is recognized by Utah. A “subchapter S” corporation (frequently referred to as an “S corp”) is treated as a pass-through entity for tax purposes in the same way as a sole proprietorship or partnership. The S corp does not file a tax return on its own behalf;
+              instead, all tax-related data for the S corp is filed as part of the owner’s individual income tax.
+            </Paragraph>
           </PanelWrapper>
         </CollapseWrapper>
       </TabsSection>
@@ -237,7 +234,7 @@ const AlaskaCorporation = () => (
         <Accordion content={questions} curve curveColor={color.blue1} curveLeft="-15px" />
       </ContentCenter>
       <ContentCenter style={{ marginBottom: "48px" }}>
-        <Button content={{ text: `View all corporation FAQ's`, url: `/` }} width={300} padding="12px 48px" />
+        <Button content={{ text: `View all corporation FAQ's`, url: `https://www.incfile.com/research-topics/c-corporation-info/` }} width={300} padding="12px 48px" />
       </ContentCenter>
     </QuestionSection>
 

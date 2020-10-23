@@ -83,16 +83,12 @@ const AlaskaCorporation = () => (
               Choosing a Corporation Name
             </Heading>
             <Paragraph big>
-            Deciding on a name for your new business is one of the first steps in the process of forming your Ohio corporation. The corporate name you choose must be distinguishable from any other registered Ohio business entity, as well as different from any reserved names on record.
+              Deciding on a name for your new business is one of the first steps in the process of forming your Ohio corporation. The corporate name you choose must be distinguishable from any other registered Ohio business entity, as well as different from any reserved names on record.
             </Paragraph>
-            <Paragraph big>
-            The name cannot include language that says or implies that the corporation is connected with any government entity, or that it is organized for a purpose besides what is permitted by state law and its own articles of incorporation.
-            </Paragraph>
-            <Paragraph big>
-            Additionally, the name must contain the words “Corporation,” “Company,” or “Incorporated,” their abbreviations, or words or abbreviations of words meaning the same in another language.
-            </Paragraph>
+            <Paragraph big>The name cannot include language that says or implies that the corporation is connected with any government entity, or that it is organized for a purpose besides what is permitted by state law and its own articles of incorporation.</Paragraph>
+            <Paragraph big>Additionally, the name must contain the words “Corporation,” “Company,” or “Incorporated,” their abbreviations, or words or abbreviations of words meaning the same in another language.</Paragraph>
             <Paragraph big style={{ marginBottom: "0" }}>
-            You can reserve an available corporate name for up to 180 days for a $50 fee.
+              You can reserve an available corporate name for up to 180 days for a $50 fee.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -100,27 +96,29 @@ const AlaskaCorporation = () => (
               Articles of Incorporation
             </Heading>
             <Paragraph big>
-            New Ohio businesses must file articles of incorporation with the Ohio Secretary of State. The Ohio General Corporation Law (Title 17 of the Ohio Revised Code) requires that certain items are included in your company’s articles of incorporation. The minimum filing fee is $125, for which you can authorize up to 1,500 shares.
+              New Ohio businesses must file articles of incorporation with the Ohio Secretary of State. The Ohio General Corporation Law (Title 17 of the Ohio Revised Code) requires that certain items are included in your company’s articles of incorporation. The minimum filing fee is $125, for which
+              you can authorize up to 1,500 shares.
             </Paragraph>
             <Paragraph big>There must be at least one incorporator, who can be either a natural person or a business entity. The articles must list the name and address of each incorporator, as well as the address of the corporation’s principal office.</Paragraph>
             <Paragraph big>The articles must also state the initial capital of the corporation, if any, as well as the number of shares that the corporation is authorized to issue and the par value of those shares.</Paragraph>
-            <Paragraph big>Ohio also allows for the inclusion of optional provisions in the articles of incorporation, such as the names and addresses of the initial directors, the corporate purpose or purposes, the corporation’s duration (if it will not be perpetual), and other provisions for managing the corporation’s business.</Paragraph>
+            <Paragraph big>
+              Ohio also allows for the inclusion of optional provisions in the articles of incorporation, such as the names and addresses of the initial directors, the corporate purpose or purposes, the corporation’s duration (if it will not be perpetual), and other provisions for managing the
+              corporation’s business.
+            </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Registered Agent and Office
             </Heading>
+            <Paragraph big>The new corporation’s authorized representative will be the new corporation’s incorporator. Typically, an initial director is named as the incorporator, but anyone can fill this role.</Paragraph>
+            <Paragraph big>The incorporator must prepare and sign an Original Appointment of Statutory Agent form, which must be included with your articles when you file.</Paragraph>
             <Paragraph big>
-            The new corporation’s authorized representative will be the new corporation’s incorporator. Typically, an initial director is named as the incorporator, but anyone can fill this role.
+              Usually, an initial director or shareholder is designated as the initial registered agent, who is the person authorized to receive legal documents on behalf of the corporation. The street address of the corporation can be given as the registered agent’s business address, which also
+              constitutes the registered office of the corporation.
             </Paragraph>
             <Paragraph big>
-            The incorporator must prepare and sign an Original Appointment of Statutory Agent form, which must be included with your articles when you file.
-            </Paragraph>
-            <Paragraph big>
-            Usually, an initial director or shareholder is designated as the initial registered agent, who is the person authorized to receive legal documents on behalf of the corporation. The street address of the corporation can be given as the registered agent’s business address, which also constitutes the registered office of the corporation.
-            </Paragraph>
-            <Paragraph big>
-            The registered agent must be an Ohio resident, and his or her business address must be in-state, also. The incorporator who signed the articles as the authorized representative must also sign the appointment form as the authorized representative, and the agent must sign the form as well.
+              The registered agent must be an Ohio resident, and his or her business address must be in-state, also. The incorporator who signed the articles as the authorized representative must also sign the appointment form as the authorized representative, and the agent must sign the form as
+              well.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -128,10 +126,11 @@ const AlaskaCorporation = () => (
               Bylaws
             </Heading>
             <Paragraph big>
-            All corporations are required to keep a copy of their bylaws at their main executive office, but they are not required to file those bylaws with the state. At the new corporation’s initial meeting, the board of directors should adopt corporate bylaws, and then keep them updated as time goes on.
+              All corporations are required to keep a copy of their bylaws at their main executive office, but they are not required to file those bylaws with the state. At the new corporation’s initial meeting, the board of directors should adopt corporate bylaws, and then keep them updated as time
+              goes on.
             </Paragraph>
             <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            Bylaws are a critically important document describing the corporation’s basic managerial and legal operating principles regarding such issues as:
+              Bylaws are a critically important document describing the corporation’s basic managerial and legal operating principles regarding such issues as:
             </Paragraph>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
@@ -153,22 +152,21 @@ const AlaskaCorporation = () => (
               <Paragraph bottomMargin={0}>How and when annual financial information is provided to shareholders</Paragraph>
             </TextBoxed>
 
-            <Paragraph big>
-            Officers of the new corporation can either be listed in the bylaws or elected by the board in compliance with those bylaws.
-            </Paragraph>
+            <Paragraph big>Officers of the new corporation can either be listed in the bylaws or elected by the board in compliance with those bylaws.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Directors
             </Heading>
             <Paragraph big>
-            Unless the articles of incorporation specify otherwise, each director will hold office for no more than three years or until the next annual meeting of the shareholders and until his successor is elected, or until his earlier resignation, removal from office, or death.
+              Unless the articles of incorporation specify otherwise, each director will hold office for no more than three years or until the next annual meeting of the shareholders and until his successor is elected, or until his earlier resignation, removal from office, or death.
             </Paragraph>
             <Paragraph big>
-            The corporation’s officers (who are elected annually by the directors) should consist of a president, a secretary, a treasurer, and, if desired, a chairman of the board, one or more vice presidents, and such other officers and assistant officers as may be thought necessary.
+              The corporation’s officers (who are elected annually by the directors) should consist of a president, a secretary, a treasurer, and, if desired, a chairman of the board, one or more vice presidents, and such other officers and assistant officers as may be thought necessary.
             </Paragraph>
             <Paragraph big>
-            The chairman of the board is required to be a director, but unless the articles of incorporation say otherwise, none of the other officers need to be a director. Any two or more offices may be held by the same person, but an officer is not allowed to execute, acknowledge, or verify any official document in more than one capacity if that instrument is required to be executed, acknowledged, or verified by two or more officers.
+              The chairman of the board is required to be a director, but unless the articles of incorporation say otherwise, none of the other officers need to be a director. Any two or more offices may be held by the same person, but an officer is not allowed to execute, acknowledge, or verify any
+              official document in more than one capacity if that instrument is required to be executed, acknowledged, or verified by two or more officers.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -176,7 +174,7 @@ const AlaskaCorporation = () => (
               Requirement Reports
             </Heading>
             <Paragraph big style={{ marginBottom: "48px" }}>
-            Ohio corporations must file an annual report with the Ohio Tax Commissioner each year between January 1 and March 31.
+              Ohio corporations must file an annual report with the Ohio Tax Commissioner each year between January 1 and March 31.
             </Paragraph>
 
             <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
@@ -197,7 +195,6 @@ const AlaskaCorporation = () => (
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>The date of the beginning of the corporation’s annual accounting period that includes the first day of January of the tax year.</Paragraph>
             </TextBoxed>
-
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
@@ -252,7 +249,7 @@ const AlaskaCorporation = () => (
         <Accordion content={questions} curve curveColor={color.blue1} curveLeft="-15px" />
       </ContentCenter>
       <ContentCenter style={{ marginBottom: "48px" }}>
-        <Button content={{ text: `View all corporation FAQ's`, url: `/` }} width={300} padding="12px 48px" />
+        <Button content={{ text: `View all corporation FAQ's`, url: `https://www.incfile.com/research-topics/c-corporation-info/` }} width={300} padding="12px 48px" />
       </ContentCenter>
     </QuestionSection>
 

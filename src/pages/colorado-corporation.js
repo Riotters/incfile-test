@@ -83,13 +83,15 @@ const AlaskaCorporation = () => (
               Choosing a Corporation Name
             </Heading>
             <Paragraph big>
-            Your new corporation’s name must be distinguishable from the name of any other registered or reserved Colorado business entity. It must also contain the words “incorporated,” “corporation,” “limited,” or “company,” or an abbreviation of these same terms. It may also not contain language stating or implying that it is organized for a purpose other than one permitted by state law or stated in its articles of incorporation.
+              Your new corporation’s name must be distinguishable from the name of any other registered or reserved Colorado business entity. It must also contain the words “incorporated,” “corporation,” “limited,” or “company,” or an abbreviation of these same terms. It may also not contain
+              language stating or implying that it is organized for a purpose other than one permitted by state law or stated in its articles of incorporation.
             </Paragraph>
             <Paragraph big style={{ marginBottom: "32px" }}>
-            If your corporate name is not considered to be distinguishable from one already on file with the state or in use, it’s not enough to merely change some punctuation, a definite or indefinite article (such as “a,” “an,” or “the”), or the status designator (“corporation,” “company,” “incorporated,” “limited,” etc.).
+              If your corporate name is not considered to be distinguishable from one already on file with the state or in use, it’s not enough to merely change some punctuation, a definite or indefinite article (such as “a,” “an,” or “the”), or the status designator (“corporation,” “company,”
+              “incorporated,” “limited,” etc.).
             </Paragraph>
             <Paragraph big style={{ marginBottom: "0" }}>
-            Corporate names can be reserved with the state for up to 120 days at a time for $10.
+              Corporate names can be reserved with the state for up to 120 days at a time for $10.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -104,19 +106,18 @@ const AlaskaCorporation = () => (
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Registered Agent and Office
             </Heading>
-            <Paragraph big>
-            Every Colorado corporation must have a registered agent in the state-a natural person with a primary residence in Colorado, or a registered business entity authorized to conduct business in the state.
-            </Paragraph>
+            <Paragraph big>Every Colorado corporation must have a registered agent in the state-a natural person with a primary residence in Colorado, or a registered business entity authorized to conduct business in the state.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Bylaws
             </Heading>
             <Paragraph big>
-            A corporation must maintain its bylaws at its main executive office, but is not required to file them with the state. The incorporators or board of directors should adopt the corporation’s bylaws at its initial meeting-insuring that they do not conflict with the articles of incorporation-and keep them updated as time goes on.
+              A corporation must maintain its bylaws at its main executive office, but is not required to file them with the state. The incorporators or board of directors should adopt the corporation’s bylaws at its initial meeting-insuring that they do not conflict with the articles of
+              incorporation-and keep them updated as time goes on.
             </Paragraph>
             <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            Bylaws describe the corporation’s basic operating principles from both the managerial and legal perspectives, and should include as a minimum:
+              Bylaws describe the corporation’s basic operating principles from both the managerial and legal perspectives, and should include as a minimum:
             </Paragraph>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
@@ -143,7 +144,8 @@ const AlaskaCorporation = () => (
               Directors
             </Heading>
             <Paragraph big>
-            The board of directors is responsible for making major decisions for the corporation. Officers of the company must be listed in the bylaws or elected by the board. At least one officer must authenticate records for the corporation, as well as prepare minutes of directors’ and shareholders meetings. Any officer may hold more than one office in the corporation unless otherwise prohibited by law.
+              The board of directors is responsible for making major decisions for the corporation. Officers of the company must be listed in the bylaws or elected by the board. At least one officer must authenticate records for the corporation, as well as prepare minutes of directors’ and
+              shareholders meetings. Any officer may hold more than one office in the corporation unless otherwise prohibited by law.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -151,7 +153,8 @@ const AlaskaCorporation = () => (
               Requirement Reports
             </Heading>
             <Paragraph big style={{ marginBottom: "48px" }}>
-            A Colorado corporation must file an annual report with the Colorado Secretary of State each year that includes the corporation’s name, principal office, names and addresses of directors and officers, and any information that has changed since the filing of the articles of incorporation. Colorado strongly encourages electronic filing of annual reports.
+              A Colorado corporation must file an annual report with the Colorado Secretary of State each year that includes the corporation’s name, principal office, names and addresses of directors and officers, and any information that has changed since the filing of the articles of
+              incorporation. Colorado strongly encourages electronic filing of annual reports.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -159,7 +162,10 @@ const AlaskaCorporation = () => (
               Taxes
             </Heading>
             <Paragraph big>Colorado has both a corporate income tax and a sales tax for businesses; actual rates depend on the type and amount of business activity.</Paragraph>
-            <Paragraph big>A “subchapter S” corporation or “S-Corporation” is one that chooses to be treated as a pass-through entity (the same way as a sole proprietorship or partnership) for tax purposes, meaning that the tax-related information for the “S-Corp” is filed as part of the owner’s individual income tax. Since Colorado has a state income tax, a subchapter-S choice when forming a corporation affects state and federal taxes for Centennial State corporations.</Paragraph>
+            <Paragraph big>
+              A “subchapter S” corporation or “S-Corporation” is one that chooses to be treated as a pass-through entity (the same way as a sole proprietorship or partnership) for tax purposes, meaning that the tax-related information for the “S-Corp” is filed as part of the owner’s individual
+              income tax. Since Colorado has a state income tax, a subchapter-S choice when forming a corporation affects state and federal taxes for Centennial State corporations.
+            </Paragraph>
           </PanelWrapper>
         </CollapseWrapper>
       </TabsSection>
@@ -208,7 +214,7 @@ const AlaskaCorporation = () => (
         <Accordion content={questions} curve curveColor={color.blue1} curveLeft="-15px" />
       </ContentCenter>
       <ContentCenter style={{ marginBottom: "48px" }}>
-        <Button content={{ text: `View all corporation FAQ's`, url: `/` }} width={300} padding="12px 48px" />
+        <Button content={{ text: `View all corporation FAQ's`, url: `https://www.incfile.com/research-topics/c-corporation-info/` }} width={300} padding="12px 48px" />
       </ContentCenter>
     </QuestionSection>
 

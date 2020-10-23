@@ -83,13 +83,12 @@ const AlaskaCorporation = () => (
               Choosing a Corporation Name
             </Heading>
             <Paragraph big>
-            Your Kentucky corporation’s name must be distinguishable from any other business entity name registered or reserved with the Kentucky Secretary of State. The name must contain the word “Corporation,” “Incorporated,” “Company,” or “Limited,” or one of the abbreviations “Corp.,” “Inc.,” “Co.,” or “Ltd.”
+              Your Kentucky corporation’s name must be distinguishable from any other business entity name registered or reserved with the Kentucky Secretary of State. The name must contain the word “Corporation,” “Incorporated,” “Company,” or “Limited,” or one of the abbreviations “Corp.,” “Inc.,”
+              “Co.,” or “Ltd.”
             </Paragraph>
-            <Paragraph big>
-            It also is not allowed to include language that states or implies that the corporation is organized for a purpose other than that permitted by state law and its articles of incorporation.
-            </Paragraph>
+            <Paragraph big>It also is not allowed to include language that states or implies that the corporation is organized for a purpose other than that permitted by state law and its articles of incorporation.</Paragraph>
             <Paragraph big style={{ marginBottom: "0" }}>
-            An available corporate name can be reserved for 120 days for a $15 fee.
+              An available corporate name can be reserved for 120 days for a $15 fee.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -97,12 +96,16 @@ const AlaskaCorporation = () => (
               Articles of Incorporation
             </Heading>
             <Paragraph big>
-            Kentucky requires that new corporations file articles of incorporation with the Commonwealth Secretary of State. The articles are delivered by one or more incorporators (only one is required), whose primary duties are to sign the articles and deliver the original and two copies of the articles to the state office. The incorporator does not need to be a director, officer, or shareholder of the corporation.
+              Kentucky requires that new corporations file articles of incorporation with the Commonwealth Secretary of State. The articles are delivered by one or more incorporators (only one is required), whose primary duties are to sign the articles and deliver the original and two copies of the
+              articles to the state office. The incorporator does not need to be a director, officer, or shareholder of the corporation.
             </Paragraph>
 
             <Colorbox color={color.blue3} content={articlesOfIncorporation.box1} dotsColor={color.blue1} style={{ marginBottom: "65px" }} />
             <Paragraph big>The Commonwealth of Kentucky allows corporations to be formed for any lawful business activity. There is no need to state a business purpose in the articles.</Paragraph>
-            <Paragraph big>Kentucky does not require a statement of par value for stocks. To create one class of common shares with equal rights and preferences, simply state the number of shares. Incorporators typically authorize 1,000 shares in order to pay the minimum filing fee of $50. If you want to create special classes of shares, you must list them, together with the rights and restrictions associated with each.</Paragraph>
+            <Paragraph big>
+              Kentucky does not require a statement of par value for stocks. To create one class of common shares with equal rights and preferences, simply state the number of shares. Incorporators typically authorize 1,000 shares in order to pay the minimum filing fee of $50. If you want to create
+              special classes of shares, you must list them, together with the rights and restrictions associated with each.
+            </Paragraph>
             <Paragraph big>It’s also allowable to include other optional provisions into the articles of incorporation for those who want to formalize additional criteria.</Paragraph>
 
             <Colorbox color={color.orange3} content={articlesOfIncorporation.box2} dotsColor={color.orange1} style={{ marginBottom: "48px" }} />
@@ -113,22 +116,19 @@ const AlaskaCorporation = () => (
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Registered Agent and Office
             </Heading>
-            <Paragraph big>
-            The articles of incorporation should also include the name and address of your corporation’s initial registered agent-the person appointed to receive official legal and administrative correspondence from the state on behalf of your corporation.
-            </Paragraph>
-            <Paragraph big>              
-            The registered agent must be either an individual who lives in Kentucky and whose business office is the same as the registered office, or a domestic corporation, LLC, or limited partnership with a business office that is the same as the registered office.
-            </Paragraph>
+            <Paragraph big>The articles of incorporation should also include the name and address of your corporation’s initial registered agent-the person appointed to receive official legal and administrative correspondence from the state on behalf of your corporation.</Paragraph>
+            <Paragraph big>The registered agent must be either an individual who lives in Kentucky and whose business office is the same as the registered office, or a domestic corporation, LLC, or limited partnership with a business office that is the same as the registered office.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Bylaws
             </Heading>
             <Paragraph big>
-            Corporations should keep a copy of their bylaws at their principal executive office, but they are not required to file those bylaws with the state. At the new corporation’s initial meeting, the incorporators or board of directors should adopt corporate bylaws and then keep them updated as time goes on.
+              Corporations should keep a copy of their bylaws at their principal executive office, but they are not required to file those bylaws with the state. At the new corporation’s initial meeting, the incorporators or board of directors should adopt corporate bylaws and then keep them updated
+              as time goes on.
             </Paragraph>
             <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            Bylaws are a critically important document describing the corporation’s basic managerial and legal operating principles regarding such issues as:
+              Bylaws are a critically important document describing the corporation’s basic managerial and legal operating principles regarding such issues as:
             </Paragraph>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
@@ -150,34 +150,32 @@ const AlaskaCorporation = () => (
               <Paragraph bottomMargin={0}>How and when annual financial information is provided to shareholders</Paragraph>
             </TextBoxed>
 
-            <Paragraph big>
-            Officers of the new corporation can either be listed in the bylaws or elected by the board in compliance with those bylaws. The right to adopt, amend, or repeal bylaws is vested in the board, subject to the articles of incorporation and the stockholders.
-            </Paragraph>
+            <Paragraph big>Officers of the new corporation can either be listed in the bylaws or elected by the board in compliance with those bylaws. The right to adopt, amend, or repeal bylaws is vested in the board, subject to the articles of incorporation and the stockholders.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Directors
             </Heading>
             <Paragraph big>
-            If a board of directors has the authority to fix or change the number of directors, the board may increase or decrease by up to 30 percent the number of directors last approved by the shareholders, but only the shareholders may increase or decrease by more than 30 percent the number of directors.
+              If a board of directors has the authority to fix or change the number of directors, the board may increase or decrease by up to 30 percent the number of directors last approved by the shareholders, but only the shareholders may increase or decrease by more than 30 percent the number of
+              directors.
             </Paragraph>
             <Paragraph big>
-            Corporate officers can either be listed in the bylaws or elected by the board in compliance with those bylaws. Officers may appoint other officers as needed for the operation of the corporation, in accordance with the bylaws. There must be one officer who is responsible for preparing and maintaining records of the proceedings of directors’ and shareholders’ meetings and for authenticating corporate records.
+              Corporate officers can either be listed in the bylaws or elected by the board in compliance with those bylaws. Officers may appoint other officers as needed for the operation of the corporation, in accordance with the bylaws. There must be one officer who is responsible for preparing
+              and maintaining records of the proceedings of directors’ and shareholders’ meetings and for authenticating corporate records.
             </Paragraph>
-            <Paragraph big>
-            Multiple offices may be held by the same person unless the articles or bylaws state otherwise.
-            </Paragraph>
+            <Paragraph big>Multiple offices may be held by the same person unless the articles or bylaws state otherwise.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Requirement Reports
             </Heading>
             <Paragraph big style={{ marginBottom: "48px" }}>
-            Kentucky corporations must file a report with the Kentucky Secretary of State’s office every year by the end of the anniversary month of incorporation.
+              Kentucky corporations must file a report with the Kentucky Secretary of State’s office every year by the end of the anniversary month of incorporation.
             </Paragraph>
 
             <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            The annual report must include:
+              The annual report must include:
             </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>The corporation’s name</Paragraph>
@@ -248,7 +246,7 @@ const AlaskaCorporation = () => (
         <Accordion content={questions} curve curveColor={color.blue1} curveLeft="-15px" />
       </ContentCenter>
       <ContentCenter style={{ marginBottom: "48px" }}>
-        <Button content={{ text: `View all corporation FAQ's`, url: `/` }} width={300} padding="12px 48px" />
+        <Button content={{ text: `View all corporation FAQ's`, url: `https://www.incfile.com/research-topics/c-corporation-info/` }} width={300} padding="12px 48px" />
       </ContentCenter>
     </QuestionSection>
 

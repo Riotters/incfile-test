@@ -82,23 +82,13 @@ const AlaskaCorporation = () => (
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Choosing a Corporation Name
             </Heading>
-            <Paragraph big>
-            The name of the New Hampshire corporation you’re starting up is very important-it’s one of your business organization’s first official acts, and it’s how people first meet your company.
-            </Paragraph>
-            <Paragraph big>
-            Your company’s name must be distinguishable from any other registered or reserved New Hampshire business entity. Its name must be such that it cannot easily be confused with not only other business entities, but also government entities and political parties.
-            </Paragraph>
-            <Paragraph big>
-            Your corporation’s name also is not allowed to include language that states or gives the impression that the corporation is organized for any purpose other than one permitted by state law and its articles of incorporation.
-            </Paragraph>
-            <Paragraph big>
-            The corporation’s name must contain one or more of the following words, an abbreviation thereof, or words of similar meaning in another language: “Incorporated,” “Corporation,” or “Limited.”
-            </Paragraph>
-            <Paragraph big>
-            It also may not include words or phrases (or their abbreviations or derivations) that are prohibited or restricted by the state. Your corporation may, however, use an alternate name for a limited period of time, subject to certain state requirements.
-            </Paragraph>
+            <Paragraph big>The name of the New Hampshire corporation you’re starting up is very important-it’s one of your business organization’s first official acts, and it’s how people first meet your company.</Paragraph>
+            <Paragraph big>Your company’s name must be distinguishable from any other registered or reserved New Hampshire business entity. Its name must be such that it cannot easily be confused with not only other business entities, but also government entities and political parties.</Paragraph>
+            <Paragraph big>Your corporation’s name also is not allowed to include language that states or gives the impression that the corporation is organized for any purpose other than one permitted by state law and its articles of incorporation.</Paragraph>
+            <Paragraph big>The corporation’s name must contain one or more of the following words, an abbreviation thereof, or words of similar meaning in another language: “Incorporated,” “Corporation,” or “Limited.”</Paragraph>
+            <Paragraph big>It also may not include words or phrases (or their abbreviations or derivations) that are prohibited or restricted by the state. Your corporation may, however, use an alternate name for a limited period of time, subject to certain state requirements.</Paragraph>
             <Paragraph big style={{ marginBottom: "0" }}>
-            You can reserve an available corporate name for 120 days for $15.
+              You can reserve an available corporate name for 120 days for $15.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -106,49 +96,39 @@ const AlaskaCorporation = () => (
               Articles of Incorporation
             </Heading>
             <Paragraph big>
-            After choosing a name, the next step for your brand new corporation in New Hampshire is filing articles of incorporation with the state, along with the $100 filing fee. This fee includes the $50 articles filing fee, plus another $50 fee for filing the required addendum form.
+              After choosing a name, the next step for your brand new corporation in New Hampshire is filing articles of incorporation with the state, along with the $100 filing fee. This fee includes the $50 articles filing fee, plus another $50 fee for filing the required addendum form.
             </Paragraph>
-            <Paragraph big>
-            The certificate must be delivered to the state by one or more incorporators (there must be at least one), who are not required to be a director, officer, or shareholder of the corporation. The incorporator must also execute (sign) the articles.
-            </Paragraph>
+            <Paragraph big>The certificate must be delivered to the state by one or more incorporators (there must be at least one), who are not required to be a director, officer, or shareholder of the corporation. The incorporator must also execute (sign) the articles.</Paragraph>
 
             <Colorbox color={color.blue3} content={articlesOfIncorporation.box1} dotsColor={color.blue1} style={{ marginBottom: "65px" }} />
-            <Paragraph big>
-            Before your new corporation can be registered with the state, however, the incorporator(s) must sign a statement of compliance with New Hampshire Securities Laws.
-            </Paragraph>
+            <Paragraph big>Before your new corporation can be registered with the state, however, the incorporator(s) must sign a statement of compliance with New Hampshire Securities Laws.</Paragraph>
 
             <Colorbox color={color.orange3} content={articlesOfIncorporation.box2} dotsColor={color.orange1} style={{ marginBottom: "48px" }} />
 
             <Paragraph big>New Hampshire also allows optional provisions to be included in the articles of incorporation.</Paragraph>
             <Colorbox color={color.orange3} content={articlesOfIncorporation.box3} dotsColor={color.orange1} />
-
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Registered Agent and Office
             </Heading>
-            <Paragraph big>
-            All New Hampshire corporations must have a registered agent the state. The registered agent is the person or office designated to receive official state administrative and legal correspondence.
-            </Paragraph>
-            <Paragraph big>
-            The corporation’s registered agent must have a business office that is the same as the registered office and must be either a natural person who resides in New Hampshire, or a corporation authorized to conduct business there.
-            </Paragraph>
-            <Paragraph big>
-            New Hampshire requires that every corporation have a registered office in the state, which may be the same of any of its places of business.
-            </Paragraph>
+            <Paragraph big>All New Hampshire corporations must have a registered agent the state. The registered agent is the person or office designated to receive official state administrative and legal correspondence.</Paragraph>
+            <Paragraph big>The corporation’s registered agent must have a business office that is the same as the registered office and must be either a natural person who resides in New Hampshire, or a corporation authorized to conduct business there.</Paragraph>
+            <Paragraph big>New Hampshire requires that every corporation have a registered office in the state, which may be the same of any of its places of business.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Bylaws
             </Heading>
             <Paragraph big>
-            Bylaws lay out a corporation’s basic managerial and legal operating principles; the corporation must keep a copy at its principal executive office, but is not required to file them with the state. Nonetheless, they are a critically important document for the corporation.
+              Bylaws lay out a corporation’s basic managerial and legal operating principles; the corporation must keep a copy at its principal executive office, but is not required to file them with the state. Nonetheless, they are a critically important document for the corporation.
             </Paragraph>
             <Paragraph big>
-            At its initial meeting, the incorporators or the corporation’s board of directors must adopt corporate bylaws, and then keep them updated as time goes on. The corporation’s board of directors can make, alter, amend, or repeal those bylaws, unless the articles of incorporation reserve this right to the shareholders.
+              At its initial meeting, the incorporators or the corporation’s board of directors must adopt corporate bylaws, and then keep them updated as time goes on. The corporation’s board of directors can make, alter, amend, or repeal those bylaws, unless the articles of incorporation reserve
+              this right to the shareholders.
             </Paragraph>
             <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            Bylaws normally address:
+              Bylaws normally address:
             </Paragraph>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
@@ -175,10 +155,12 @@ const AlaskaCorporation = () => (
               Directors
             </Heading>
             <Paragraph big>
-            If a board of directors has the power to fix or change the number of directors, the board may raise or lower by no more than 30 percent the number of directors last approved by the shareholders, but only the shareholders may increase or decrease by more than 30 percent the number of directors. The terms of all other directors expire at the next annual shareholders’ meeting following their election.
+              If a board of directors has the power to fix or change the number of directors, the board may raise or lower by no more than 30 percent the number of directors last approved by the shareholders, but only the shareholders may increase or decrease by more than 30 percent the number of
+              directors. The terms of all other directors expire at the next annual shareholders’ meeting following their election.
             </Paragraph>
             <Paragraph big>
-            Officers may be listed in the bylaws or elected by the board, and may appoint other officers in compliance with the bylaws. Also, one officer must be given the responsibility of preparing minutes of the directors’ and shareholders’ meetings and for authenticating corporate records. The same individual may simultaneously hold more than one office in a corporation.
+              Officers may be listed in the bylaws or elected by the board, and may appoint other officers in compliance with the bylaws. Also, one officer must be given the responsibility of preparing minutes of the directors’ and shareholders’ meetings and for authenticating corporate records. The
+              same individual may simultaneously hold more than one office in a corporation.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -186,7 +168,7 @@ const AlaskaCorporation = () => (
               Requirement Reports
             </Heading>
             <Paragraph big style={{ marginBottom: "24px" }}>
-            An annual report must be filed with the New Hampshire Corporation Division between January 1 and April 1 starting the year after the calendar year of incorporation that includes:
+              An annual report must be filed with the New Hampshire Corporation Division between January 1 and April 1 starting the year after the calendar year of incorporation that includes:
             </Paragraph>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
@@ -207,7 +189,6 @@ const AlaskaCorporation = () => (
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>The signature of an officer, director, or any other person authorized by the board of directors to execute the annual report</Paragraph>
             </TextBoxed>
-
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
@@ -263,7 +244,7 @@ const AlaskaCorporation = () => (
         <Accordion content={questions} curve curveColor={color.blue1} curveLeft="-15px" />
       </ContentCenter>
       <ContentCenter style={{ marginBottom: "48px" }}>
-        <Button content={{ text: `View all corporation FAQ's`, url: `/` }} width={300} padding="12px 48px" />
+        <Button content={{ text: `View all corporation FAQ's`, url: `https://www.incfile.com/research-topics/c-corporation-info/` }} width={300} padding="12px 48px" />
       </ContentCenter>
     </QuestionSection>
 

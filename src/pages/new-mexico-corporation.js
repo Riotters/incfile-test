@@ -83,13 +83,15 @@ const AlaskaCorporation = () => (
               Choosing a Corporation Name
             </Heading>
             <Paragraph big>
-            Choosing a name for your startup New Mexico corporation is one of the first official steps toward actually conducting business in the Land of Enchantment. The business name you choose must be able to be readily distinguished from the names of all other business entities, government organizations, and political parties registered of reserved on the New Mexico state rolls.
+              Choosing a name for your startup New Mexico corporation is one of the first official steps toward actually conducting business in the Land of Enchantment. The business name you choose must be able to be readily distinguished from the names of all other business entities, government
+              organizations, and political parties registered of reserved on the New Mexico state rolls.
             </Paragraph>
             <Paragraph big>
-            Your new business’ name must include one of the following words or an abbreviation thereof: “Incorporated,” “Corporation,” “Company,” or “Limited.” The name also must not state or imply that the corporation is organized for some purpose other than the one specified in its articles of incorporation or one permitted by state law.
+              Your new business’ name must include one of the following words or an abbreviation thereof: “Incorporated,” “Corporation,” “Company,” or “Limited.” The name also must not state or imply that the corporation is organized for some purpose other than the one specified in its articles of
+              incorporation or one permitted by state law.
             </Paragraph>
             <Paragraph big style={{ marginBottom: "0" }}>
-            Available corporate names may be reserved for up to 120 days for a fee of $25.
+              Available corporate names may be reserved for up to 120 days for a fee of $25.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -97,35 +99,39 @@ const AlaskaCorporation = () => (
               Articles of Incorporation
             </Heading>
             <Paragraph big>
-            Before they can start operations, New Mexico corporations must file articles of incorporation with the Corporations Bureau of the state Public Regulation Commission. The articles must be delivered by at least one incorporator, accompanied by the filing fee. The filing fee, based on the number of shares authorized in the articles, is $1 for each 1,000 shares authorized, with a minimum amount of $100.
+              Before they can start operations, New Mexico corporations must file articles of incorporation with the Corporations Bureau of the state Public Regulation Commission. The articles must be delivered by at least one incorporator, accompanied by the filing fee. The filing fee, based on the
+              number of shares authorized in the articles, is $1 for each 1,000 shares authorized, with a minimum amount of $100.
             </Paragraph>
 
             <Colorbox color={color.blue3} content={articlesOfIncorporation.box1} dotsColor={color.blue1} style={{ marginBottom: "65px" }} />
 
             <Colorbox color={color.orange3} content={articlesOfIncorporation.box2} dotsColor={color.orange1} style={{ marginBottom: "48px" }} />
 
-            <Paragraph big>New Mexico does not require a new corporation to state a par value for shares. Most incorporators authorize one class of common shares with equal voting, dividend, and liquidation rights and no special restrictions. Most incorporators simply authorize 100,000 shares, which is the most you can authorize for the minimum filing fee of $100.</Paragraph>
+            <Paragraph big>
+              New Mexico does not require a new corporation to state a par value for shares. Most incorporators authorize one class of common shares with equal voting, dividend, and liquidation rights and no special restrictions. Most incorporators simply authorize 100,000 shares, which is the most
+              you can authorize for the minimum filing fee of $100.
+            </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Registered Agent and Office
             </Heading>
             <Paragraph big>
-            Every New Mexico corporation must have a registered agent in the state-the person or office designated to receive official state correspondence, both administrative and legal. The registered agent must be either a New Mexico resident whose business office is the same as the registered office, or a corporation with a business office identical to the registered office.
+              Every New Mexico corporation must have a registered agent in the state-the person or office designated to receive official state correspondence, both administrative and legal. The registered agent must be either a New Mexico resident whose business office is the same as the registered
+              office, or a corporation with a business office identical to the registered office.
             </Paragraph>
-            <Paragraph big>
-            The registered office may be any of the corporation’s places of business in New Mexico.
-            </Paragraph>
+            <Paragraph big>The registered office may be any of the corporation’s places of business in New Mexico.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Bylaws
             </Heading>
             <Paragraph big>
-            Bylaws lay out the corporation’s basic managerial and legal operating principles that manage their internal affairs. New Mexico corporations must keep a copy of their bylaws at their principal executive office, but are not required to file them with the state. At its initial meeting, the board of directors should adopt corporate bylaws, and then keep them updated as time goes on.
+              Bylaws lay out the corporation’s basic managerial and legal operating principles that manage their internal affairs. New Mexico corporations must keep a copy of their bylaws at their principal executive office, but are not required to file them with the state. At its initial meeting,
+              the board of directors should adopt corporate bylaws, and then keep them updated as time goes on.
             </Paragraph>
             <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            The board of directors of a corporation may adopt, amend, or repeal bylaws, unless the articles reserve this right to the shareholders. Bylaws normally address:
+              The board of directors of a corporation may adopt, amend, or repeal bylaws, unless the articles reserve this right to the shareholders. Bylaws normally address:
             </Paragraph>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
@@ -152,18 +158,17 @@ const AlaskaCorporation = () => (
               Directors
             </Heading>
             <Paragraph big>
-            Officers are listed in the initial bylaws or elected by the board of directors, and may appoint other officers in accordance with the bylaws. One officer has the responsibility of preparing minutes of director and shareholder meetings, and for maintaining and authenticating corporate records.
+              Officers are listed in the initial bylaws or elected by the board of directors, and may appoint other officers in accordance with the bylaws. One officer has the responsibility of preparing minutes of director and shareholder meetings, and for maintaining and authenticating corporate
+              records.
             </Paragraph>
-            <Paragraph big>
-            It is permissible for an officer to hold more than one office in the corporation unless otherwise prohibited by law or by the corporation’s bylaws. An officer may hold more than one office in the New Mexico incorporation.
-            </Paragraph>
+            <Paragraph big>It is permissible for an officer to hold more than one office in the corporation unless otherwise prohibited by law or by the corporation’s bylaws. An officer may hold more than one office in the New Mexico incorporation.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Requirement Reports
             </Heading>
             <Paragraph big style={{ marginBottom: "48px" }}>
-            Your new corporation must file a report with the Corporations Bureau of the Public Regulation Commission within 30 days after the date of incorporation. After that, the report must be filed by the 15th day of the third month following the end of the corporation’s fiscal year.
+              Your new corporation must file a report with the Corporations Bureau of the Public Regulation Commission within 30 days after the date of incorporation. After that, the report must be filed by the 15th day of the third month following the end of the corporation’s fiscal year.
             </Paragraph>
 
             <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
@@ -193,15 +198,15 @@ const AlaskaCorporation = () => (
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>The corporation’s taxpayer identification number</Paragraph>
             </TextBoxed>
-            <Paragraph big>
-            The corporation must also send its shareholders an annual financial statement, including at least a year-end balance sheet and an income statement for that year.
-            </Paragraph>
+            <Paragraph big>The corporation must also send its shareholders an annual financial statement, including at least a year-end balance sheet and an income statement for that year.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Taxes
             </Heading>
-            <Paragraph big>New Mexico’s corporate tax structure is made up of three brackets. The top rate of 7.6 percent only takes effect at $1,000,000 of net income. They must also pay an annual franchise tax of $50. Among states that have corporate income taxes, New Mexico ranks 20th.</Paragraph>
+            <Paragraph big>
+              New Mexico’s corporate tax structure is made up of three brackets. The top rate of 7.6 percent only takes effect at $1,000,000 of net income. They must also pay an annual franchise tax of $50. Among states that have corporate income taxes, New Mexico ranks 20th.
+            </Paragraph>
           </PanelWrapper>
         </CollapseWrapper>
       </TabsSection>
@@ -250,7 +255,7 @@ const AlaskaCorporation = () => (
         <Accordion content={questions} curve curveColor={color.blue1} curveLeft="-15px" />
       </ContentCenter>
       <ContentCenter style={{ marginBottom: "48px" }}>
-        <Button content={{ text: `View all corporation FAQ's`, url: `/` }} width={300} padding="12px 48px" />
+        <Button content={{ text: `View all corporation FAQ's`, url: `https://www.incfile.com/research-topics/c-corporation-info/` }} width={300} padding="12px 48px" />
       </ContentCenter>
     </QuestionSection>
 

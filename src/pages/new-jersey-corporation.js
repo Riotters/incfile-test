@@ -84,22 +84,20 @@ const AlaskaCorporation = () => (
               Choosing a Corporation Name
             </Heading>
             <Paragraph big>
-            The name you choose for your corporation must be distinguishable from the name of any other registered or reserved New Jersey business entities, and it is not permitted to include language that states or implies that it is organized for some purpose other than one allowed by state law or stated in its articles of incorporation. It also may not have language that states or implies that the corporation is some other corporation, or words or phrases (or their abbreviations or derivatives) that are prohibited or restricted by the state.
+              The name you choose for your corporation must be distinguishable from the name of any other registered or reserved New Jersey business entities, and it is not permitted to include language that states or implies that it is organized for some purpose other than one allowed by state law
+              or stated in its articles of incorporation. It also may not have language that states or implies that the corporation is some other corporation, or words or phrases (or their abbreviations or derivatives) that are prohibited or restricted by the state.
             </Paragraph>
-            <Paragraph big>
-            The corporate name is, however, required to contain one of the following words or an abbreviation thereof: “incorporated,” “corporation,” “company,” or the abbreviation “Ltd.”-or words of equivalent meaning in another language.
-            </Paragraph>
-            <Paragraph big>
-            Available corporate names can be reserved with the state for $50. An online search for an available name costs $15 if the search is not done at the same time as filing the new company’s certificate of incorporation.
-            </Paragraph>
-            <ArrowLink content={{text: `Use our name search tool to check your name availability`, url: `/new-jersey-entity-search/?open=true`}}></ArrowLink>
+            <Paragraph big>The corporate name is, however, required to contain one of the following words or an abbreviation thereof: “incorporated,” “corporation,” “company,” or the abbreviation “Ltd.”-or words of equivalent meaning in another language.</Paragraph>
+            <Paragraph big>Available corporate names can be reserved with the state for $50. An online search for an available name costs $15 if the search is not done at the same time as filing the new company’s certificate of incorporation.</Paragraph>
+            <ArrowLink content={{ text: `Use our name search tool to check your name availability`, url: `/new-jersey-entity-search/?open=true` }}></ArrowLink>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Articles of Incorporation
             </Heading>
             <Paragraph big>
-            Before starting up operations in the Garden State, state law requires that a certificate of incorporation must be filed with the New Jersey Division of Revenue, accompanied by a $125 fee. The certificate must be signed by at least one incorporator, who can be either a natural person of at least 18 years of age. The incorporator signs and files the certificate of incorporation with state.
+              Before starting up operations in the Garden State, state law requires that a certificate of incorporation must be filed with the New Jersey Division of Revenue, accompanied by a $125 fee. The certificate must be signed by at least one incorporator, who can be either a natural person of
+              at least 18 years of age. The incorporator signs and files the certificate of incorporation with state.
             </Paragraph>
 
             <Colorbox color={color.orange3} content={articlesOfIncorporation.box1} dotsColor={color.orange1} style={{ marginBottom: "48px" }} />
@@ -111,21 +109,21 @@ const AlaskaCorporation = () => (
               Registered Agent and Office
             </Heading>
             <Paragraph big>
-            New Jersey corporations must maintain a registered agent in the state-a person or office designated to receive official state administrative and legal correspondence. The agent must have a business office that is identical to the registered office and be either an individual over 18 residing in the state, or a corporation with the authority to conduct business in the state.
+              New Jersey corporations must maintain a registered agent in the state-a person or office designated to receive official state administrative and legal correspondence. The agent must have a business office that is identical to the registered office and be either an individual over 18
+              residing in the state, or a corporation with the authority to conduct business in the state.
             </Paragraph>
-            <Paragraph big>
-            The registered office must be the same as any of the corporation’s places of business; it may not be just a post office delivery box.
-            </Paragraph>
+            <Paragraph big>The registered office must be the same as any of the corporation’s places of business; it may not be just a post office delivery box.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Bylaws
             </Heading>
             <Paragraph big>
-            Bylaws lay out the corporation’s basic operating principles from both the managerial and legal perspectives. Corporations should maintain their bylaws at their main executive office, but are not required to file them with the state. The incorporators or board of directors should adopt the corporation’s bylaws at their initial meeting-making sure that they do not conflict with state law or provisions in the certificate of incorporation-and keep them updated.
+              Bylaws lay out the corporation’s basic operating principles from both the managerial and legal perspectives. Corporations should maintain their bylaws at their main executive office, but are not required to file them with the state. The incorporators or board of directors should adopt
+              the corporation’s bylaws at their initial meeting-making sure that they do not conflict with state law or provisions in the certificate of incorporation-and keep them updated.
             </Paragraph>
             <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            Corporate bylaws should include at least the following:
+              Corporate bylaws should include at least the following:
             </Paragraph>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
@@ -146,25 +144,23 @@ const AlaskaCorporation = () => (
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>Requirements for providing annual financial information to shareholders</Paragraph>
             </TextBoxed>
-
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Directors
             </Heading>
             <Paragraph big>
-            Officers may be listed in the bylaws or elected by the board. Officers’ positions should consist of a president, a secretary, a treasurer, and, if desired, a chairman of the board, one or more vice presidents, and any other officers as provided in the bylaws. An elected officer may appoint other officers in compliance with the bylaws.
+              Officers may be listed in the bylaws or elected by the board. Officers’ positions should consist of a president, a secretary, a treasurer, and, if desired, a chairman of the board, one or more vice presidents, and any other officers as provided in the bylaws. An elected officer may
+              appoint other officers in compliance with the bylaws.
             </Paragraph>
-            <Paragraph big>
-            An officer may hold more than one corporate office, but cannot execute, acknowledge, or verify any legal instrument acting in more than one capacity.
-            </Paragraph>
+            <Paragraph big>An officer may hold more than one corporate office, but cannot execute, acknowledge, or verify any legal instrument acting in more than one capacity.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Requirement Reports
             </Heading>
             <Paragraph big style={{ marginBottom: "48px" }}>
-            A New Jersey corporation must file an annual report with the New Jersey Department of Revenue each year outlining the corporation’s overall status.
+              A New Jersey corporation must file an annual report with the New Jersey Department of Revenue each year outlining the corporation’s overall status.
             </Paragraph>
             <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
               The report must include:
@@ -184,7 +180,6 @@ const AlaskaCorporation = () => (
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>The address of the corporation’s main business or headquarters office</Paragraph>
             </TextBoxed>
-
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
@@ -240,7 +235,7 @@ const AlaskaCorporation = () => (
         <Accordion content={questions} curve curveColor={color.blue1} curveLeft="-15px" />
       </ContentCenter>
       <ContentCenter style={{ marginBottom: "48px" }}>
-        <Button content={{ text: `View all corporation FAQ's`, url: `/` }} width={300} padding="12px 48px" />
+        <Button content={{ text: `View all corporation FAQ's`, url: `https://www.incfile.com/research-topics/c-corporation-info/` }} width={300} padding="12px 48px" />
       </ContentCenter>
     </QuestionSection>
 

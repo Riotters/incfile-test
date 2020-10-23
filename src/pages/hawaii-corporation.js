@@ -83,33 +83,38 @@ const AlaskaCorporation = () => (
               Choosing a Corporation Name
             </Heading>
             <Paragraph big>
-            Your Hawaii corporation’s name must be different from any other authorized business entity on file (registered or reserved) with the Hawaii Department of Commerce and Consumer Affairs (DCCA). The name also may not state or imply that the corporation is organized for some purpose other than that stated in its articles of incorporation.
+              Your Hawaii corporation’s name must be different from any other authorized business entity on file (registered or reserved) with the Hawaii Department of Commerce and Consumer Affairs (DCCA). The name also may not state or imply that the corporation is organized for some purpose other
+              than that stated in its articles of incorporation.
             </Paragraph>
-            <Paragraph big>
-            Your new corporation’s name has to include the words “Corporation,” “Incorporated,” or “Limited,” or the applicable abbreviation: “Corp.,” “Inc.,” or “Ltd.”
-            </Paragraph>
+            <Paragraph big>Your new corporation’s name has to include the words “Corporation,” “Incorporated,” or “Limited,” or the applicable abbreviation: “Corp.,” “Inc.,” or “Ltd.”</Paragraph>
             <Paragraph big style={{ marginBottom: "0" }}>
-            You can reserve an available corporate name for 120 days for a $20 fee.
+              You can reserve an available corporate name for 120 days for a $20 fee.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Articles of Incorporation
             </Heading>
-            <Paragraph big>
-            Hawaiian law requires that articles of incorporation be filed with the Hawaii DCCA. The fee to file your corporation’s articles is $100, plus another $50 if you want expedited one-day filing. Certified copies of your articles of incorporation are $20 each.
-            </Paragraph>
+            <Paragraph big>Hawaiian law requires that articles of incorporation be filed with the Hawaii DCCA. The fee to file your corporation’s articles is $100, plus another $50 if you want expedited one-day filing. Certified copies of your articles of incorporation are $20 each.</Paragraph>
             <Paragraph big>Hawaii allows corporations to be formed for any lawful business activity; in fact, the business purpose of the new corporation does not even have to be listed in the articles.</Paragraph>
             <Paragraph big>At least one person (usually an initial director or officer) must sign the articles as incorporator. The incorporator’s primary duty is to deliver the articles of incorporation to the Hawaii DCCA.</Paragraph>
-            <Paragraph big>Hawaiian state law doesn’t use the concept of par value, so you don’t have to state a par value for your shares in the articles of incorporation. The filing fee is a flat amount and is not based on your authorized shares, so you can authorize as many shares as you desire. Many incorporators authorize common shares with equal voting, dividend, and liquidation rights, and no special restrictions. If you want to authorize one or more special classes of shares, state the name of each class or series, the number of shares in each, and the rights and restrictions associated with each class or series. A Hawaii corporation is exempt from registration under Hawaii’s Uniform Securities Act if the number of subscribers is 25 or less.</Paragraph>
-            <Paragraph big>It’s also allowable to integrate other optional provisions into the articles of incorporation for those corporations wishing to formalize additional criteria, such as special qualifications of shareholders, limits on the duration of the corporation’s existence, any limits on the liability of a director in specific circumstances, and the like.</Paragraph>
+            <Paragraph big>
+              Hawaiian state law doesn’t use the concept of par value, so you don’t have to state a par value for your shares in the articles of incorporation. The filing fee is a flat amount and is not based on your authorized shares, so you can authorize as many shares as you desire. Many
+              incorporators authorize common shares with equal voting, dividend, and liquidation rights, and no special restrictions. If you want to authorize one or more special classes of shares, state the name of each class or series, the number of shares in each, and the rights and restrictions
+              associated with each class or series. A Hawaii corporation is exempt from registration under Hawaii’s Uniform Securities Act if the number of subscribers is 25 or less.
+            </Paragraph>
+            <Paragraph big>
+              It’s also allowable to integrate other optional provisions into the articles of incorporation for those corporations wishing to formalize additional criteria, such as special qualifications of shareholders, limits on the duration of the corporation’s existence, any limits on the
+              liability of a director in specific circumstances, and the like.
+            </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Registered Agent and Office
             </Heading>
             <Paragraph big>
-            The articles of incorporation should also include the name and address of your corporation’s initial registered agent-the person you designate to receive official correspondence (legal or administrative) on behalf of your corporation. The registered agent must be either an individual who lives in Hawaii and whose business office is the same as the registered office, or a corporation with a business office that is the same as the registered office.
+              The articles of incorporation should also include the name and address of your corporation’s initial registered agent-the person you designate to receive official correspondence (legal or administrative) on behalf of your corporation. The registered agent must be either an individual
+              who lives in Hawaii and whose business office is the same as the registered office, or a corporation with a business office that is the same as the registered office.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -117,10 +122,11 @@ const AlaskaCorporation = () => (
               Bylaws
             </Heading>
             <Paragraph big>
-            All corporations are required to keep a copy of their bylaws at their main executive office, but they are not required to file those bylaws with the state. At the new corporation’s initial meeting, the board of directors should adopt corporate bylaws, and then keep them updated as time goes on.
+              All corporations are required to keep a copy of their bylaws at their main executive office, but they are not required to file those bylaws with the state. At the new corporation’s initial meeting, the board of directors should adopt corporate bylaws, and then keep them updated as time
+              goes on.
             </Paragraph>
             <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            Bylaws are a critically important document describing the corporation’s basic managerial and legal operating principles regarding such issues as:
+              Bylaws are a critically important document describing the corporation’s basic managerial and legal operating principles regarding such issues as:
             </Paragraph>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
@@ -142,19 +148,19 @@ const AlaskaCorporation = () => (
               <Paragraph bottomMargin={0}>How and when annual financial information is provided to shareholders</Paragraph>
             </TextBoxed>
 
-            <Paragraph big>
-            Officers of the new corporation can either be listed in the bylaws or elected by the board in compliance with those bylaws.
-            </Paragraph>
+            <Paragraph big>Officers of the new corporation can either be listed in the bylaws or elected by the board in compliance with those bylaws.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Directors
             </Heading>
             <Paragraph big>
-            Corporate officers can either be listed in the bylaws or elected by the board in compliance with the corporation’s bylaws. A corporation must have a chairman of the board or a president (or both), a secretary, a chief financial officer, and whatever other officers with titles and duties as listed in the bylaws or determined by the board.
+              Corporate officers can either be listed in the bylaws or elected by the board in compliance with the corporation’s bylaws. A corporation must have a chairman of the board or a president (or both), a secretary, a chief financial officer, and whatever other officers with titles and
+              duties as listed in the bylaws or determined by the board.
             </Paragraph>
             <Paragraph big>
-            The president, or, if there is no president, the chairman of the board, is the general manager and chief executive officer of the Hawaii corporation, unless otherwise provided in the articles or bylaws. Any number of offices may be held by the same person unless the articles or bylaws require otherwise.
+              The president, or, if there is no president, the chairman of the board, is the general manager and chief executive officer of the Hawaii corporation, unless otherwise provided in the articles or bylaws. Any number of offices may be held by the same person unless the articles or bylaws
+              require otherwise.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -162,7 +168,7 @@ const AlaskaCorporation = () => (
               Requirement Reports
             </Heading>
             <Paragraph big style={{ marginBottom: "48px" }}>
-            Your corporation must file an annual report with the DCCA every year between January 1 and April 1, or on another date that the director may specify. The first report must be filed within this period in the year immediately after the calendar year in which the company was incorporated.
+              Your corporation must file an annual report with the DCCA every year between January 1 and April 1, or on another date that the director may specify. The first report must be filed within this period in the year immediately after the calendar year in which the company was incorporated.
             </Paragraph>
 
             <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
@@ -237,7 +243,7 @@ const AlaskaCorporation = () => (
         <Accordion content={questions} curve curveColor={color.blue1} curveLeft="-15px" />
       </ContentCenter>
       <ContentCenter style={{ marginBottom: "48px" }}>
-        <Button content={{ text: `View all corporation FAQ's`, url: `/` }} width={300} padding="12px 48px" />
+        <Button content={{ text: `View all corporation FAQ's`, url: `https://www.incfile.com/research-topics/c-corporation-info/` }} width={300} padding="12px 48px" />
       </ContentCenter>
     </QuestionSection>
 

@@ -84,19 +84,22 @@ const AlaskaCorporation = () => (
               Choosing a Corporation Name
             </Heading>
             <Paragraph big>
-            The name you choose for your new Virginia corporation is not allowed to be the same as or deceptively similar to the registered or reserved name of any other business entity in the state. It may not include language that states or implies that it’s been organized for a purpose other than one allowed under state law or stated in its articles of incorporation. It must also include as a status designator one of the following terms or its abbreviation: “corporation,” “incorporated,” “limited,” or “company.”
+              The name you choose for your new Virginia corporation is not allowed to be the same as or deceptively similar to the registered or reserved name of any other business entity in the state. It may not include language that states or implies that it’s been organized for a purpose other
+              than one allowed under state law or stated in its articles of incorporation. It must also include as a status designator one of the following terms or its abbreviation: “corporation,” “incorporated,” “limited,” or “company.”
             </Paragraph>
             <Paragraph big>
-            If your corporate name is not considered to be distinguishable from one already on file with the state, it’s not sufficient to just change some punctuation, a definite or indefinite article, or the status designator. In other words, if “ABC Company” is a name already on file in Virginia, it would not be enough of a difference to file your corporation’s name as “The ABC Company,” “A-B-C Company,” or “ABC Incorporated.”
+              If your corporate name is not considered to be distinguishable from one already on file with the state, it’s not sufficient to just change some punctuation, a definite or indefinite article, or the status designator. In other words, if “ABC Company” is a name already on file in
+              Virginia, it would not be enough of a difference to file your corporation’s name as “The ABC Company,” “A-B-C Company,” or “ABC Incorporated.”
             </Paragraph>
-            <ArrowLink content={{text: `Use our name search tool to check your name availability`, url: `/virginia-entity-search/?open=true`}} />
+            <ArrowLink content={{ text: `Use our name search tool to check your name availability`, url: `/virginia-entity-search/?open=true` }} />
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Articles of Incorporation
             </Heading>
             <Paragraph big>
-            A new corporation’s articles of incorporation must be filed with the Virginia Secretary of State before it can conduct business in the Old Dominion. Incorporating in Virginia can occur for any lawful business activity (subject to Virginia regulations regarding certain industries), but there is no requirement to specifically state the corporation’s purpose in the articles.
+              A new corporation’s articles of incorporation must be filed with the Virginia Secretary of State before it can conduct business in the Old Dominion. Incorporating in Virginia can occur for any lawful business activity (subject to Virginia regulations regarding certain industries), but
+              there is no requirement to specifically state the corporation’s purpose in the articles.
             </Paragraph>
             <Paragraph big>There must be at least one incorporator (a natural person or a corporate entity), who signs and files the articles of incorporation with the Secretary of State.</Paragraph>
 
@@ -104,7 +107,10 @@ const AlaskaCorporation = () => (
 
             <Colorbox color={color.orange3} content={articlesOfIncorporation.box2} dotsColor={color.orange1} style={{ marginBottom: "48px" }} />
 
-            <Paragraph big>After the articles are filed, the incorporator(s) or initial director(s)-if they are named in the articles-must hold a meeting to complete the organization of the corporation. Virginia’s laws regarding corporations give some protection from liability to directors for good-faith business decisions, as well as for minority and dissenting shareholders.</Paragraph>
+            <Paragraph big>
+              After the articles are filed, the incorporator(s) or initial director(s)-if they are named in the articles-must hold a meeting to complete the organization of the corporation. Virginia’s laws regarding corporations give some protection from liability to directors for good-faith
+              business decisions, as well as for minority and dissenting shareholders.
+            </Paragraph>
             <Paragraph big>The minimum filing fee for a corporation in Virginia is $178.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -112,7 +118,7 @@ const AlaskaCorporation = () => (
               Registered Agent and Office
             </Heading>
             <Paragraph big>
-            Virginia corporations must maintain a registered agent within the state-a person or office appointed to receive official state correspondence, both administrative and legal. The agent must have the same business office address as the registered office and be either:
+              Virginia corporations must maintain a registered agent within the state-a person or office appointed to receive official state correspondence, both administrative and legal. The agent must have the same business office address as the registered office and be either:
             </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>An individual residing in the state who is a director of the corporation, or</Paragraph>
@@ -123,19 +129,18 @@ const AlaskaCorporation = () => (
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>A business entity with authority to transact business in Virginia.</Paragraph>
             </TextBoxed>
-            <Paragraph big>
-            The corporation’s registered office may be the same as any of the corporations's places of business.
-            </Paragraph>
+            <Paragraph big>The corporation’s registered office may be the same as any of the corporations's places of business.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Bylaws
             </Heading>
             <Paragraph big>
-            A corporation’s bylaws are critical because they describe the corporation’s basic operating principles from both the managerial and legal perspectives. A Virginia corporation must maintain a copy of its bylaws at its main executive office, but is not required to file them with the state.
+              A corporation’s bylaws are critical because they describe the corporation’s basic operating principles from both the managerial and legal perspectives. A Virginia corporation must maintain a copy of its bylaws at its main executive office, but is not required to file them with the
+              state.
             </Paragraph>
             <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            The incorporators or board of directors should approve the corporation’s bylaws at their first meeting-insuring that they don’t conflict with either state law or the articles of incorporation-and keep them updated as time goes on. The bylaws should as a minimum include:
+              The incorporators or board of directors should approve the corporation’s bylaws at their first meeting-insuring that they don’t conflict with either state law or the articles of incorporation-and keep them updated as time goes on. The bylaws should as a minimum include:
             </Paragraph>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
@@ -156,14 +161,14 @@ const AlaskaCorporation = () => (
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>Requirements for providing annual financial information to shareholders</Paragraph>
             </TextBoxed>
-
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Directors
             </Heading>
             <Paragraph big>
-            The corporation’s board of directors has the responsibility for making major corporate decisions. Officers of the company-who run the day-to-day affairs of the organization-must be listed in the bylaws or elected by the board. At least one officer must authenticate records for the corporation, as well as prepare minutes of directors’ and shareholders meetings. An officer may hold more than one office in the corporation unless otherwise prohibited by law.
+              The corporation’s board of directors has the responsibility for making major corporate decisions. Officers of the company-who run the day-to-day affairs of the organization-must be listed in the bylaws or elected by the board. At least one officer must authenticate records for the
+              corporation, as well as prepare minutes of directors’ and shareholders meetings. An officer may hold more than one office in the corporation unless otherwise prohibited by law.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -171,11 +176,11 @@ const AlaskaCorporation = () => (
               Requirement Reports
             </Heading>
             <Paragraph big style={{ marginBottom: "48px" }}>
-            Virginia corporations must file an annual report with the Virginia State Corporation Commission in the last three months of the calendar year that begins with its date of incorporation.
+              Virginia corporations must file an annual report with the Virginia State Corporation Commission in the last three months of the calendar year that begins with its date of incorporation.
             </Paragraph>
 
             <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            This report (accompanied by the filing fee of $100), must include the following information:
+              This report (accompanied by the filing fee of $100), must include the following information:
             </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>The corporation’s name and its state or country of incorporation.</Paragraph>
@@ -249,7 +254,7 @@ const AlaskaCorporation = () => (
         <Accordion content={questions} curve curveColor={color.blue1} curveLeft="-15px" />
       </ContentCenter>
       <ContentCenter style={{ marginBottom: "48px" }}>
-        <Button content={{ text: `View all corporation FAQ's`, url: `/` }} width={300} padding="12px 48px" />
+        <Button content={{ text: `View all corporation FAQ's`, url: `https://www.incfile.com/research-topics/c-corporation-info/` }} width={300} padding="12px 48px" />
       </ContentCenter>
     </QuestionSection>
 

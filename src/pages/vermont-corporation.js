@@ -83,13 +83,12 @@ const AlaskaCorporation = () => (
               Choosing a Corporation Name
             </Heading>
             <Paragraph big>
-            Choosing a name for your new Vermont corporation is one of the first official steps toward actually conducting business in the state. The corporate name you choose must be readily distinguishable from all other registered and reserved business entities and it may not state or imply that the corporation is organized for some purpose other than specified in its articles of incorporation or permitted by state law.
+              Choosing a name for your new Vermont corporation is one of the first official steps toward actually conducting business in the state. The corporate name you choose must be readily distinguishable from all other registered and reserved business entities and it may not state or imply
+              that the corporation is organized for some purpose other than specified in its articles of incorporation or permitted by state law.
             </Paragraph>
-            <Paragraph big>
-            Your new business’ name must include one of the following words, an abbreviation thereof, or words of similar meaning in another language: “Incorporated,” “Corporation,” “Limited,” or “Company.”
-            </Paragraph>
+            <Paragraph big>Your new business’ name must include one of the following words, an abbreviation thereof, or words of similar meaning in another language: “Incorporated,” “Corporation,” “Limited,” or “Company.”</Paragraph>
             <Paragraph big style={{ marginBottom: "0" }}>
-            An available corporate name may be reserved for up to four months by for a $20 fee.
+              An available corporate name may be reserved for up to four months by for a $20 fee.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -97,7 +96,8 @@ const AlaskaCorporation = () => (
               Articles of Incorporation
             </Heading>
             <Paragraph big>
-            Before it can legitimately begin operations in the state, a new Vermont corporation must file articles of incorporation with the Vermont Corporations Division of the Secretary of State’s office. The articles must be executed (signed) and delivered by at least one incorporator—who must be a natural person (not a business entity) of legal age—and accompanied by the $75 filing fee. 
+              Before it can legitimately begin operations in the state, a new Vermont corporation must file articles of incorporation with the Vermont Corporations Division of the Secretary of State’s office. The articles must be executed (signed) and delivered by at least one incorporator—who must
+              be a natural person (not a business entity) of legal age—and accompanied by the $75 filing fee.
             </Paragraph>
 
             <Colorbox color={color.blue3} content={articlesOfIncorporation.box1} dotsColor={color.blue1} style={{ marginBottom: "65px" }} />
@@ -110,25 +110,20 @@ const AlaskaCorporation = () => (
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Registered Agent and Office
             </Heading>
-            <Paragraph big>
-            Every Vermont corporation must have a registered agent in the state—the person or office designated to receive official state administrative and legal correspondence.
-            </Paragraph>
-            <Paragraph big>
-            The registered agent must be either a Vermont resident whose business office is the same as the registered office, or a corporation authorized to conduct business in Vermont that has a business office identical to the registered office.
-            </Paragraph>
+            <Paragraph big>Every Vermont corporation must have a registered agent in the state—the person or office designated to receive official state administrative and legal correspondence.</Paragraph>
+            <Paragraph big>The registered agent must be either a Vermont resident whose business office is the same as the registered office, or a corporation authorized to conduct business in Vermont that has a business office identical to the registered office.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Bylaws
             </Heading>
+            <Paragraph big>Bylaws lay out the corporation’s basic managerial and legal operating principles that manage their internal affairs. Vermont corporations must keep a copy of their bylaws at their principal executive office, but are not required to file them with the state.</Paragraph>
             <Paragraph big>
-            Bylaws lay out the corporation’s basic managerial and legal operating principles that manage their internal affairs. Vermont corporations must keep a copy of their bylaws at their principal executive office, but are not required to file them with the state.
-            </Paragraph>
-            <Paragraph big>
-            At its initial meeting, the incorporators or the board of directors should adopt corporate bylaws, and then keep them updated as time goes on. If no directors have been elected the incorporators may adopt initial bylaws for the corporation. If neither the incorporators nor the board of directors have adopted initial bylaws, the shareholders may do so.
+              At its initial meeting, the incorporators or the board of directors should adopt corporate bylaws, and then keep them updated as time goes on. If no directors have been elected the incorporators may adopt initial bylaws for the corporation. If neither the incorporators nor the board of
+              directors have adopted initial bylaws, the shareholders may do so.
             </Paragraph>
             <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            The board of directors of a corporation may adopt, amend, or repeal bylaws, unless the articles reserve this right to the shareholders. Bylaws normally address:
+              The board of directors of a corporation may adopt, amend, or repeal bylaws, unless the articles reserve this right to the shareholders. Bylaws normally address:
             </Paragraph>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
@@ -155,22 +150,21 @@ const AlaskaCorporation = () => (
               Directors
             </Heading>
             <Paragraph big>
-            Officers are listed in the initial bylaws or elected by the board of directors, and may appoint other officers in accordance with the bylaws. There must be at least a president and a secretary. Officers may appoint other officers in compliance with the bylaws and board of directors. At least one officer has the responsibility of preparing minutes of director and shareholder meetings, and for maintaining and authenticating corporate records.
+              Officers are listed in the initial bylaws or elected by the board of directors, and may appoint other officers in accordance with the bylaws. There must be at least a president and a secretary. Officers may appoint other officers in compliance with the bylaws and board of directors. At
+              least one officer has the responsibility of preparing minutes of director and shareholder meetings, and for maintaining and authenticating corporate records.
             </Paragraph>
-            <Paragraph big>
-            An officer may hold more than one office in the corporation unless the corporation is a professional corporation.
-            </Paragraph>
+            <Paragraph big>An officer may hold more than one office in the corporation unless the corporation is a professional corporation.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Requirement Reports
             </Heading>
             <Paragraph big style={{ marginBottom: "48px" }}>
-            Your new Vermont corporation must file an annual report with the state Secretary of State within two and a half months following the end of each fiscal year.
+              Your new Vermont corporation must file an annual report with the state Secretary of State within two and a half months following the end of each fiscal year.
             </Paragraph>
 
             <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            This report must indicate:
+              This report must indicate:
             </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>The corporation’s name and its place of incorporation</Paragraph>
@@ -187,16 +181,17 @@ const AlaskaCorporation = () => (
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>The names and addresses of the corporation’s directors, president, secretary, treasurer, and all others with policy-making authority</Paragraph>
             </TextBoxed>
-            <Paragraph big>
-            The corporation must mail annual financial statements to its shareholders within 120 days after the close of its fiscal year. These statements must include (as a minimum) a balance sheet, income statement, and a statement of changes in shareholders’ equity.
-            </Paragraph>
+            <Paragraph big>The corporation must mail annual financial statements to its shareholders within 120 days after the close of its fiscal year. These statements must include (as a minimum) a balance sheet, income statement, and a statement of changes in shareholders’ equity.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Taxes
             </Heading>
             <Paragraph big>Vermont’s corporate tax system has three brackets with an annual minimum payment of $250 and a top rate of 8.5 percent on corporate income of over $25,000.</Paragraph>
-            <Paragraph big>The Green Mountain State recognizes “S corporation” status. A “subchapter S” corporation (frequently referred to as an “S corp”) is treated as a pass-through entity for tax purposes in the same way as a sole proprietorship or partnership. The S corp does not file a tax return on its own behalf. Instead, all tax-related data for the S corp is filed as part of the owner’s individual income tax.</Paragraph>
+            <Paragraph big>
+              The Green Mountain State recognizes “S corporation” status. A “subchapter S” corporation (frequently referred to as an “S corp”) is treated as a pass-through entity for tax purposes in the same way as a sole proprietorship or partnership. The S corp does not file a tax return on its
+              own behalf. Instead, all tax-related data for the S corp is filed as part of the owner’s individual income tax.
+            </Paragraph>
           </PanelWrapper>
         </CollapseWrapper>
       </TabsSection>
@@ -245,7 +240,7 @@ const AlaskaCorporation = () => (
         <Accordion content={questions} curve curveColor={color.blue1} curveLeft="-15px" />
       </ContentCenter>
       <ContentCenter style={{ marginBottom: "48px" }}>
-        <Button content={{ text: `View all corporation FAQ's`, url: `/` }} width={300} padding="12px 48px" />
+        <Button content={{ text: `View all corporation FAQ's`, url: `https://www.incfile.com/research-topics/c-corporation-info/` }} width={300} padding="12px 48px" />
       </ContentCenter>
     </QuestionSection>
 

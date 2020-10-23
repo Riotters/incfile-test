@@ -83,16 +83,15 @@ const AlaskaCorporation = () => (
               Choosing a Corporation Name
             </Heading>
             <Paragraph big>
-            Choosing a name for your new Indiana corporation is one of the first official steps toward actually conducting business in the Hoosier State. The business name you choose must be able to be readily distinguished from all other registered and reserved Indiana business entities.
+              Choosing a name for your new Indiana corporation is one of the first official steps toward actually conducting business in the Hoosier State. The business name you choose must be able to be readily distinguished from all other registered and reserved Indiana business entities.
             </Paragraph>
             <Paragraph big>
-            Your new business’ name must end with “Incorporated,” “Corporation,” “Company,” or “Limited,” or the abbreviation “Corp.,” “Inc.,” “Co.,” or “Ltd.” It may not contain language stating or implying that the corporation is organized for a purpose other than that permitted by state law and its own articles of incorporation.
+              Your new business’ name must end with “Incorporated,” “Corporation,” “Company,” or “Limited,” or the abbreviation “Corp.,” “Inc.,” “Co.,” or “Ltd.” It may not contain language stating or implying that the corporation is organized for a purpose other than that permitted by state law and
+              its own articles of incorporation.
             </Paragraph>
-            <Paragraph big>
-            The name is allowed to include the word “bank” or “banks” for a bank holding company, so long as it does not imply that it offers the same services as a bank or trust company.
-            </Paragraph>
+            <Paragraph big>The name is allowed to include the word “bank” or “banks” for a bank holding company, so long as it does not imply that it offers the same services as a bank or trust company.</Paragraph>
             <Paragraph big style={{ marginBottom: "0" }}>
-            Available corporate names may be reserved for up to 120 days for $20.
+              Available corporate names may be reserved for up to 120 days for $20.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -100,17 +99,14 @@ const AlaskaCorporation = () => (
               Articles of Incorporation
             </Heading>
             <Paragraph big>
-            New Indiana corporations must file articles of incorporation with the Indiana Secretary of State’s office before they can start conducting business as a corporation. The articles must be delivered by at least one of the incorporators, accompanied by the filing fee of $90. The incorporator does not have to be a director, officer, or shareholder of the corporation.
+              New Indiana corporations must file articles of incorporation with the Indiana Secretary of State’s office before they can start conducting business as a corporation. The articles must be delivered by at least one of the incorporators, accompanied by the filing fee of $90. The
+              incorporator does not have to be a director, officer, or shareholder of the corporation.
             </Paragraph>
 
             <Colorbox color={color.blue3} content={articlesOfIncorporation.box1} dotsColor={color.blue1} style={{ marginBottom: "65px" }} />
 
-            <Paragraph big>
-            Indiana law allows a corporation to be formed for any lawful business activity. There is no requirement for a specific corporate purpose to be stated in the articles of incorporation.
-            </Paragraph>
-            <Paragraph big>
-            Indiana law also allows (but does not require) optional items to be included in the articles of incorporation for those corporations who wish to formally specify additional information.
-            </Paragraph>
+            <Paragraph big>Indiana law allows a corporation to be formed for any lawful business activity. There is no requirement for a specific corporate purpose to be stated in the articles of incorporation.</Paragraph>
+            <Paragraph big>Indiana law also allows (but does not require) optional items to be included in the articles of incorporation for those corporations who wish to formally specify additional information.</Paragraph>
 
             <Colorbox color={color.orange3} content={articlesOfIncorporation.box2} dotsColor={color.orange1} style={{ marginBottom: "48px" }} />
 
@@ -121,7 +117,8 @@ const AlaskaCorporation = () => (
               Registered Agent and Office
             </Heading>
             <Paragraph big>
-            Indiana corporations must have a registered agent in the state-someone officially designated to receive state legal and administrative correspondence. A corporation’s registered agent may be an individual who resides in Indiana, or a business entity authorized to conduct business in the state. In either circumstance, the registered agent’s business office must be the same as the corporation’s registered office.
+              Indiana corporations must have a registered agent in the state-someone officially designated to receive state legal and administrative correspondence. A corporation’s registered agent may be an individual who resides in Indiana, or a business entity authorized to conduct business in
+              the state. In either circumstance, the registered agent’s business office must be the same as the corporation’s registered office.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -129,10 +126,11 @@ const AlaskaCorporation = () => (
               Bylaws
             </Heading>
             <Paragraph big>
-            Bylaws describe the corporation’s basic managerial and legal operating principles. An Indiana corporation must keep a copy of its bylaws at its main executive office, but is not required to file them with the state. At its initial meeting, the board of directors should adopt corporate bylaws, and then keep them updated as time goes on.
+              Bylaws describe the corporation’s basic managerial and legal operating principles. An Indiana corporation must keep a copy of its bylaws at its main executive office, but is not required to file them with the state. At its initial meeting, the board of directors should adopt corporate
+              bylaws, and then keep them updated as time goes on.
             </Paragraph>
             <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            The board of directors of a corporation may adopt, amend, or repeal bylaws, unless the articles reserve this right to the shareholders. Bylaws normally address:
+              The board of directors of a corporation may adopt, amend, or repeal bylaws, unless the articles reserve this right to the shareholders. Bylaws normally address:
             </Paragraph>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
@@ -153,17 +151,18 @@ const AlaskaCorporation = () => (
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>How and when annual financial information is provided to shareholders</Paragraph>
             </TextBoxed>
-
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Directors
             </Heading>
             <Paragraph big>
-            Officers are appointed or elected by the board in compliance with the corporation’s bylaws, or elected by shareholders in compliance with the articles of incorporation. One officer has the responsibility of preparing minutes of director and shareholder meetings, and for authenticating corporate records.
+              Officers are appointed or elected by the board in compliance with the corporation’s bylaws, or elected by shareholders in compliance with the articles of incorporation. One officer has the responsibility of preparing minutes of director and shareholder meetings, and for authenticating
+              corporate records.
             </Paragraph>
             <Paragraph big>
-            It is permissible for an officer to hold more than one office in the corporation unless otherwise prohibited by law or by the corporation’s bylaws. One person may hold all or any combination of offices when all of the issued and outstanding stock of the corporation is owned by this same person.
+              It is permissible for an officer to hold more than one office in the corporation unless otherwise prohibited by law or by the corporation’s bylaws. One person may hold all or any combination of offices when all of the issued and outstanding stock of the corporation is owned by this
+              same person.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -171,11 +170,12 @@ const AlaskaCorporation = () => (
               Requirement Reports
             </Heading>
             <Paragraph big style={{ marginBottom: "48px" }}>
-            Indiana LLCs must file a biennial (every two years) report with the Secretary of State. The first biennial report must be delivered in the anniversary month of the corporation’s organization in its second year. Subsequent biennial reports must be delivered to the secretary of state during the same month every two calendar years thereafter.
+              Indiana LLCs must file a biennial (every two years) report with the Secretary of State. The first biennial report must be delivered in the anniversary month of the corporation’s organization in its second year. Subsequent biennial reports must be delivered to the secretary of state
+              during the same month every two calendar years thereafter.
             </Paragraph>
 
             <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            Biennial reports may be accepted up to two months early.
+              Biennial reports may be accepted up to two months early.
             </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>The corporation’s name and the state or country of original incorporation</Paragraph>
@@ -193,9 +193,7 @@ const AlaskaCorporation = () => (
               <Paragraph bottomMargin={0}>The names and addresses of the corporation’s directors, secretary, and highest executive officer</Paragraph>
             </TextBoxed>
           </PanelWrapper>
-          <Paragraph big>
-          The board must also report certain information about director indemnification and expenses, as well as future promises or promissory note issuance, to all shareholders with or before notice of the next shareholders’ meeting.
-            </Paragraph>
+          <Paragraph big>The board must also report certain information about director indemnification and expenses, as well as future promises or promissory note issuance, to all shareholders with or before notice of the next shareholders’ meeting.</Paragraph>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Taxes
@@ -249,7 +247,7 @@ const AlaskaCorporation = () => (
         <Accordion content={questions} curve curveColor={color.blue1} curveLeft="-15px" />
       </ContentCenter>
       <ContentCenter style={{ marginBottom: "48px" }}>
-        <Button content={{ text: `View all corporation FAQ's`, url: `/` }} width={300} padding="12px 48px" />
+        <Button content={{ text: `View all corporation FAQ's`, url: `https://www.incfile.com/research-topics/c-corporation-info/` }} width={300} padding="12px 48px" />
       </ContentCenter>
     </QuestionSection>
 

@@ -83,53 +83,58 @@ const AlaskaCorporation = () => (
               Choosing a Corporation Name
             </Heading>
             <Paragraph big>
-            Selecting the name of your new Minnesota corporation is one of the first official steps toward actually conducting business in the North Star State. The business name you choose must be distinguishable from the names of other business entities registered or reserved in Minnesota (with some exceptions).
+              Selecting the name of your new Minnesota corporation is one of the first official steps toward actually conducting business in the North Star State. The business name you choose must be distinguishable from the names of other business entities registered or reserved in Minnesota (with
+              some exceptions).
             </Paragraph>
             <Paragraph big>
-            Your new business’ name may not state or imply that it is organized for any other purpose that what’s permitted by state law and laid out in its articles of incorporation, and it must be written in English letters or characters. The name must include one of the following terms or its abbreviation: “Incorporated,” “Corporation,” “Company,” or “Limited.” The word “Company” may not be preceded by the word “and” or a symbol denoting it, such as “&.”
+              Your new business’ name may not state or imply that it is organized for any other purpose that what’s permitted by state law and laid out in its articles of incorporation, and it must be written in English letters or characters. The name must include one of the following terms or its
+              abbreviation: “Incorporated,” “Corporation,” “Company,” or “Limited.” The word “Company” may not be preceded by the word “and” or a symbol denoting it, such as “&.”
             </Paragraph>
             <Paragraph big style={{ marginBottom: "0" }}>
-            Available corporate names may be reserved for up to 12 months for a $35 fee.
+              Available corporate names may be reserved for up to 12 months for a $35 fee.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Articles of Incorporation
             </Heading>
+            <Paragraph big>In accordance with the Minnesota Business Corporation Act in Chapter 302A of the Minnesota Statutes, corporations must file articles of incorporation with the Business Services Division of the Minnesota Secretary of State’s office.</Paragraph>
             <Paragraph big>
-            In accordance with the Minnesota Business Corporation Act in Chapter 302A of the Minnesota Statutes, corporations must file articles of incorporation with the Business Services Division of the Minnesota Secretary of State’s office.
+              The articles must be delivered by at least one of the incorporators, accompanied by the filing fee of $135. There must be at least one incorporator, who must be a natural person of adult age (18). The incorporator does not have to be a director, officer, or shareholder of the
+              corporation.
             </Paragraph>
-            <Paragraph big>The articles must be delivered by at least one of the incorporators, accompanied by the filing fee of $135. There must be at least one incorporator, who must be a natural person of adult age (18). The incorporator does not have to be a director, officer, or shareholder of the corporation.</Paragraph>
 
             <Colorbox color={color.blue3} content={articlesOfIncorporation.box1} dotsColor={color.blue1} style={{ marginBottom: "65px" }} />
 
             <Colorbox color={color.orange3} content={articlesOfIncorporation.box2} dotsColor={color.orange1} style={{ marginBottom: "48px" }} />
 
-            <Paragraph big>The state filing office website offers the option of “express” (one-day) filing of articles for an additional $10 fee-this service consists of sending your incorporation information in an email to the filing office instead of preparing and mailing an articles form. It should be noted, though, that this service is only available to subscribers to the state’s direct access account, which costs $75 annually.</Paragraph>
+            <Paragraph big>
+              The state filing office website offers the option of “express” (one-day) filing of articles for an additional $10 fee-this service consists of sending your incorporation information in an email to the filing office instead of preparing and mailing an articles form. It should be noted,
+              though, that this service is only available to subscribers to the state’s direct access account, which costs $75 annually.
+            </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Registered Agent and Office
             </Heading>
-            <Paragraph big>
-            A Minnesota corporation may-but is not required to-designate or appoint a registered agent in its articles of organization. The registered agent may be a natural person residing in Minnesota or a business entity authorized to operate in Minnesota.
-            </Paragraph>
-            <Paragraph big>
-            The state does, however, require that every corporation maintain a registered office in the state. The registered agent must have a business office that is the same as the registered office.
-            </Paragraph>
+            <Paragraph big>A Minnesota corporation may-but is not required to-designate or appoint a registered agent in its articles of organization. The registered agent may be a natural person residing in Minnesota or a business entity authorized to operate in Minnesota.</Paragraph>
+            <Paragraph big>The state does, however, require that every corporation maintain a registered office in the state. The registered agent must have a business office that is the same as the registered office.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Bylaws
             </Heading>
             <Paragraph big>
-            Bylaws describe the corporation’s basic managerial and legal operating principles. Although state law does not absolutely require a corporation to have bylaws, it’s a critical document that sets forth how the management of the business will be regulated and conducted. The corporation’s initial bylaws should be adopted by its incorporators, its shareholders, or its board of directors, and maintained at its main executive office; again, it is not required to file them with the state. The bylaws may contain any provision for managing the business and regulating the affairs of the corporation that’s not in conflict with law or the articles of incorporation.  
+              Bylaws describe the corporation’s basic managerial and legal operating principles. Although state law does not absolutely require a corporation to have bylaws, it’s a critical document that sets forth how the management of the business will be regulated and conducted. The corporation’s
+              initial bylaws should be adopted by its incorporators, its shareholders, or its board of directors, and maintained at its main executive office; again, it is not required to file them with the state. The bylaws may contain any provision for managing the business and regulating the
+              affairs of the corporation that’s not in conflict with law or the articles of incorporation.
             </Paragraph>
             <Paragraph big>
-            The board of directors or the shareholders may adopt, amend, or repeal bylaws, unless the articles of incorporation or the bylaws reserve this right to the shareholders. At its initial meeting, the board of directors should adopt corporate bylaws, and then keep them updated as time goes on.
+              The board of directors or the shareholders may adopt, amend, or repeal bylaws, unless the articles of incorporation or the bylaws reserve this right to the shareholders. At its initial meeting, the board of directors should adopt corporate bylaws, and then keep them updated as time
+              goes on.
             </Paragraph>
             <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            Bylaws normally address:
+              Bylaws normally address:
             </Paragraph>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
@@ -156,7 +161,8 @@ const AlaskaCorporation = () => (
               Directors
             </Heading>
             <Paragraph big>
-            Officers may be named in the bylaws or elected by the board of directors; there must be at least one officer. Officers may appoint other officers in compliance with the bylaws. There must be at least a chief executive officer and a chief financial officer, each of whom must execute specific state-required duties. An officer may hold more than one office in the corporation, and may sign a document in more than one capacity only if the document indicates each capacity in which the officer is signing.
+              Officers may be named in the bylaws or elected by the board of directors; there must be at least one officer. Officers may appoint other officers in compliance with the bylaws. There must be at least a chief executive officer and a chief financial officer, each of whom must execute
+              specific state-required duties. An officer may hold more than one office in the corporation, and may sign a document in more than one capacity only if the document indicates each capacity in which the officer is signing.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -164,7 +170,7 @@ const AlaskaCorporation = () => (
               Requirement Reports
             </Heading>
             <Paragraph big style={{ marginBottom: "48px" }}>
-            Your new Minnesota corporation must file an annual registration form with the Minnesota Secretary of State each year by December 31, except for the first calendar year of incorporation.
+              Your new Minnesota corporation must file an annual registration form with the Minnesota Secretary of State each year by December 31, except for the first calendar year of incorporation.
             </Paragraph>
 
             <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
@@ -239,7 +245,7 @@ const AlaskaCorporation = () => (
         <Accordion content={questions} curve curveColor={color.blue1} curveLeft="-15px" />
       </ContentCenter>
       <ContentCenter style={{ marginBottom: "48px" }}>
-        <Button content={{ text: `View all corporation FAQ's`, url: `/` }} width={300} padding="12px 48px" />
+        <Button content={{ text: `View all corporation FAQ's`, url: `https://www.incfile.com/research-topics/c-corporation-info/` }} width={300} padding="12px 48px" />
       </ContentCenter>
     </QuestionSection>
 
