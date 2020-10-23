@@ -14,11 +14,9 @@ export const top = {
 export const howToGuide = [
   {
     type: `header`,
-    content: `How to Start a Mississippi LLC
-
-    `,
+    content: `How to Start a Mississippi LLC`,
     size: 2,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -175,7 +173,7 @@ export const howToGuide = [
   {
     type: `text`,
     content: `You’ll find plenty more insight and guidance on the other pages of this guide, including`,
-    marginBottom: 32,
+    marginBottom: 16,
   },
   {
     type: `arrow-link`,
@@ -188,7 +186,7 @@ export const howToGuide = [
   {
     type: `text`,
     content: `How to search the Mississippi business registry of the Secretary of State and find the right name. Includes information on naming rules, fictitious names, reserving a Mississippi  LLC name and more.`,
-    marginBottom: 32,
+    marginBottom: 16,
   },
   {
     type: `arrow-link`,
@@ -196,7 +194,7 @@ export const howToGuide = [
       text: `Mississippi  Registered Agents for LLCs`,
       url: `/Mississippi-llc/registered-agents-Mississippi-llc/`,
     },
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -236,7 +234,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Search Your Business Name With the Mississippi Secretary of State and Register Your LLC`,
     size: 2,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -274,7 +272,7 @@ export const namingYourBusiness = [
              `By a Resident Agent's full name or keyword`],
     },
     marginBottom: 32,
-    color: color.red3,
+    color: color.purple3,
   },
   {
     type: `header`,
@@ -607,7 +605,7 @@ export const registeredAgent = [
     type: `header`,
     content: `Mississippi Registered Agents for Your LLC`,
     size: 2,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -683,7 +681,7 @@ export const registeredAgent = [
              `Official Mississippi and federal government documents, form filings and requests for information (including taxes, permits and company filings)`],
     },
     marginBottom: 24,
-    color: color.red3,
+    color: color.blue3,
     curve: true,
     curveColor: color.blue1,
   },
@@ -949,7 +947,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `The Fees and Filing Requirements for Your Mississippi LLC`,
     size: 2,
-    marginBottom: 24,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -973,7 +971,7 @@ export const feesAndRequirments = [
     marginBottom: 32,
   },
   {
-    type: `table`,
+    type: `table-simple`,
     content: {
       headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
       rows: [[`$53`, `5 Business Days`, `1 Business Day`]],
@@ -1372,7 +1370,7 @@ export const businessTaxes = [
     type: `header`,
     content: `The Federal, State, Sales and Other Taxes You Need to Pay for Your Mississippi LLC`,
     size: 2,
-    marginBottom: 24,
+    marginBottom: 40,
   },
   {
     type: `text`,
