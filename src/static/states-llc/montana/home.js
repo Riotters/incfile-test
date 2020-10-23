@@ -17,7 +17,7 @@ export const howToGuide = [
     type: `header`,
     content: `Starting an LLC in Montana`,
     size: 2,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -50,7 +50,7 @@ export const howToGuide = [
   {
     type: `text`,
     content: `Learn more about the <a href="/limited-liability-company/">benefits of the LLC business structure here</a>.`,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `header`,
@@ -73,7 +73,7 @@ export const howToGuide = [
         },
         {
           question: `STEP 2: Search for and Choose a Unique Business Name for Your Montana LLC`,
-          answer: `<p>YYou will need a distinctive and original name for your Montana LLC that's not used by any other business in MS. To find out if another company is using your chosen business name, carry out a Montana business entity name search on the MT Secretary of State website.</p></br>
+          answer: `<p>You will need a distinctive and original name for your Montana LLC that's not used by any other business in MS. To find out if another company is using your chosen business name, carry out a Montana business entity name search on the MT Secretary of State website.</p></br>
                    <p>There are a few rules you'll need to follow when choosing an LLC name. You can find out more in our guide to searching for and naming your Montana LLC.</p></br>
                    <a href="/Montana-llc/how-to-name-your-llc/"> Learn about Montana LLC business naming rules.</a>`,
         },
@@ -246,7 +246,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Searching for and Registering a Name for Your Montana LLC`,
     size: 2,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -513,7 +513,7 @@ export const registeredAgent = [
 
     `,
     size: 2,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -589,9 +589,9 @@ export const registeredAgent = [
              `Official Montana and federal government documents, form filings and requests for information (including taxes, permits and company filings)`],
     },
     marginBottom: 24,
-    color: color.red3,
+    color: color.green3,
     curve: true,
-    curveColor: color.blue1,
+    curveColor: color.purple3,
   },
   {
     type: `header`,
@@ -1249,7 +1249,7 @@ export const businessTaxes = [
     type: `header`,
     content: `The Business Taxes Payable by Your Montana LLC`,
     size: 2,
-    marginBottom: 24,
+    marginBottom: 40,
   },
   {
     type: `text`,

@@ -120,7 +120,7 @@ const AlaskaCorporation = () => (
             <Paragraph big>
             A corporation should keep its bylaws available at its principal executive office, but it is not required to file them with the state. The incorporators or board of directors should adopt the corporation’s bylaws at their first meeting, insuring that there is no conflict with the articles of incorporation or state law. They should also keep the bylaws updated as time goes on.
             </Paragraph>
-            <Paragraph big style={{ fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
             Bylaws set forth the corporation’s basic operating principles from both the managerial and legal perspectives, and should include, as a minimum:
             </Paragraph>
 
@@ -161,7 +161,7 @@ const AlaskaCorporation = () => (
             <Paragraph big style={{ marginBottom: "32px" }}>
             Connecticut corporations must file an annual or biannual report with the Connecticut Secretary of State. The first report must be filed within 30 days after its organizational meeting. This report must include the corporation’s name, its principal office, and the names and addresses of the directors and officers.
             </Paragraph>
-            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
             A corporation shall mail required annual financial statements to each shareholder within 120 days after the close of each fiscal year. If a shareholder requests it, a corporation must send its most recent annual report and financial statement.
             </Paragraph>
           </PanelWrapper>

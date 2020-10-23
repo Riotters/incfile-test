@@ -127,7 +127,7 @@ const AlaskaCorporation = () => (
             <Paragraph big>
             Corporations should keep a copy of their bylaws at their principal executive office, but they are not required to file those bylaws with the state. At the new corporation’s initial meeting, the incorporators or board of directors should adopt corporate bylaws and then keep them updated as time goes on.
             </Paragraph>
-            <Paragraph big style={{ fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
             Bylaws are a critically important document describing the corporation’s basic managerial and legal operating principles regarding such issues as:
             </Paragraph>
 
@@ -176,7 +176,7 @@ const AlaskaCorporation = () => (
             Kentucky corporations must file a report with the Kentucky Secretary of State’s office every year by the end of the anniversary month of incorporation.
             </Paragraph>
 
-            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
             The annual report must include:
             </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>

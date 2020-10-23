@@ -74,7 +74,7 @@ const BusinessPlan = () => (
                     a watertight business plan. It will help you get your thinking in order and show your commitment to your fitness or personal training business.
                 </Paragraph>
 
-                <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
+                <Paragraph big style={{fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
                     You will also need to look carefully at financial projections for your fitness business.
                 </Paragraph>
 

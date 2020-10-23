@@ -131,7 +131,7 @@ const AlaskaCorporation = () => (
             <Paragraph big>
             A corporation is required to keep its bylaws available at its main office, but it is not required to file them with the state. The incorporators or board of directors should adopt the corporation’s bylaws at their first meeting, insuring that there is no conflict with the articles of incorporation or state law. They should also keep the bylaws updated as time goes on.
             </Paragraph>
-            <Paragraph big style={{ fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
             Bylaws set forth the corporation’s basic operating principles from both the managerial and legal perspectives, and should include, as a minimum:
             </Paragraph>
 
@@ -181,7 +181,7 @@ const AlaskaCorporation = () => (
             A report must be filed with the Maine Secretary of State each year, except for the first year of incorporation. This report must be filed each year between January 1 and June 1 in the calendar year following the year of incorporation
             </Paragraph>
 
-            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
             Must indicate:
             </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>

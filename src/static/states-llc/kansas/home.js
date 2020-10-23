@@ -6,7 +6,7 @@ export const top = {
   buttons: [
     {
       text: `See detailed pricing`,
-      url: `/form-order-now.php?entityType=LLC&entityState=AZ`,
+      url: `/form-order-now.php?entityType=LLC&entityState=KS`,
     },
   ],
 };
@@ -16,8 +16,8 @@ export const howToGuide = [
     type: `header`,
     content: `How to Start a Kansas LLC`,
     size: 2,
-    marginBottom: 16,
-  },
+    marginBottom: 40,
+  },  
   {
     type: `text`,
     content: `Kansas is named after a Native American tribe and is located in the Midwestern U.S. It is one of the most productive agricultural states in America.`,
@@ -255,7 +255,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Search Your Business Name With the Kansas Secretary of State and Register Your LLC`,
     size: 2,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -293,7 +293,7 @@ export const namingYourBusiness = [
              `By a Resident Agent's full name or keyword`],
     },
     marginBottom: 32,
-    color: color.red3,
+    color: color.blue3,
   },
   {
     type: `header`,
@@ -608,7 +608,7 @@ export const registeredAgent = [
     type: `header`,
     content: `Get a Kansas LLC Resident Agent in Place`,
     size: 2,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -684,7 +684,7 @@ export const registeredAgent = [
              `Official Kansas and federal government documents, form filings and requests for information (including taxes, permits and company filings)`],
     },
     marginBottom: 24,
-    color: color.red3,
+    color: color.blue2,
     curve: true,
     curveColor: color.blue1,
   },
@@ -867,7 +867,7 @@ export const registeredAgent = [
              `<b>Losing your status as a Kansas LLC:</b> A Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your LLC may be dissolved.`],
     },
     marginBottom: 48,
-    color: color.blue3,
+    color: color.blue2,
   },
   {
     type: `header`,
@@ -951,7 +951,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Kansas Fees and Filing Requirements for Your LLC`,
     size: 2,
-    marginBottom: 24,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -1272,7 +1272,7 @@ export const feesAndRequirments = [
              `Changing the business address of your LLC`,
              `Altering the stated business activities of your Kansas LLC`],
     },
-    marginBottom: 0,
+    marginBottom: 16,
     color: color.yellow3,
   },
   {
@@ -1354,7 +1354,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Business Taxes Payable by Your Kansas LLC`,
     size: 2,
-    marginBottom: 24,
+    marginBottom: 40,
   },
   {
     type: `text`,

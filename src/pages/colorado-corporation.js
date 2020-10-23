@@ -115,7 +115,7 @@ const AlaskaCorporation = () => (
             <Paragraph big>
             A corporation must maintain its bylaws at its main executive office, but is not required to file them with the state. The incorporators or board of directors should adopt the corporation’s bylaws at its initial meeting-insuring that they do not conflict with the articles of incorporation-and keep them updated as time goes on.
             </Paragraph>
-            <Paragraph big style={{ fontFamily: "Avenir-Heavy", color: "#1e1e1e" }}>
+            <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
             Bylaws describe the corporation’s basic operating principles from both the managerial and legal perspectives, and should include as a minimum:
             </Paragraph>
 

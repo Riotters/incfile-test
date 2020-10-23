@@ -102,7 +102,7 @@ const WorldOfPhotography = () => (
                         individuals.
                     </Paragraph>
 
-                    <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
+                    <Paragraph big style={{fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
                         There are dozens of different niches you can choose to pursue as a photographer.
                     </Paragraph>
 

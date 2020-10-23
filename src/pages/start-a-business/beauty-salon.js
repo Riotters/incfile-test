@@ -208,7 +208,7 @@ const BeautySalon = () => (
                             Understanding the World of the Beauty Salon Business
                         </Heading>
 
-                        <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black, marginTop: "48px"}}>
+                        <Paragraph big style={{fontFamily: "Avenir", fontWeight: "900", color: color.black, marginTop: "48px"}}>
                             Key Beauty Salon Business and Background Data and Statistics
                         </Paragraph>
 
@@ -256,7 +256,7 @@ const BeautySalon = () => (
                             outs of owning a beauty salon company.
                         </Paragraph>
 
-                        <Paragraph big style={{fontWeight: "Avenir-Heavy", color: color.black}}>
+                        <Paragraph big style={{fontWeight: "Avenir", fontWeight: "900", color: color.black}}>
                             What Your Beauty Salon Customers Are Looking for
                         </Paragraph>
 
@@ -344,7 +344,7 @@ const BeautySalon = () => (
                             width="100%"
                         />
 
-                        <Paragraph big style={{fontWeight: "Avenir-Heavy", color: color.black}}>
+                        <Paragraph big style={{fontWeight: "Avenir", fontWeight: "900", color: color.black}}>
                             What Are the Main Challenges for a Beauty Salon Entrepreneur?
                         </Paragraph>
 

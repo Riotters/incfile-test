@@ -103,7 +103,7 @@ const BedAndBreakfast = () => (
                             </Paragraph>
                         </Colorbox>
 
-                        <Paragraph big style={{marginTop: "72px", marginBottom: "24px", fontFamily: "Avenir-Heavy", color: color.black}}>
+                        <Paragraph big style={{marginTop: "72px", marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
                             To get you off on the right foot, here’s our simple guide to starting
                             up a successful bed and breakfast business.
                         </Paragraph>
@@ -114,7 +114,7 @@ const BedAndBreakfast = () => (
                             you need.
                         </Paragraph>
 
-                        <Paragraph big style={{marginBottom: "48px", fontFamily: "Avenir-Heavy", color: color.black}}>
+                        <Paragraph big style={{marginBottom: "48px", fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
                             Read on for some insight into creating your own bed and breakfast business and becoming an
                             entrepreneur. In this guide we will cover:
                         </Paragraph>

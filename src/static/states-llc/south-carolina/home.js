@@ -6,7 +6,7 @@ export const top = {
   buttons: [
     {
       text: `See detailed pricing`,
-      url: `/form-order-now.php?entityType=LLC&entityState=AZ`,
+      url: `/form-order-now.php?entityType=LLC&entityState=SC`,
     },
   ],
 };
@@ -16,7 +16,7 @@ export const howToGuide = [
     type: `header`,
     content: `How to Start an LLC in South Carolina`,
     size: 2,
-    marginBottom: 24,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -26,17 +26,12 @@ export const howToGuide = [
   {
     type: `text`,
     content: `If you want to start your own business in South Carolina, one of the best ways to do so is by forming a South Carolina LLC. Limited liability companies (LLCs) are a business entity designed for startups and small- and medium-sized businesses. South Carolina LLCs give you many of the protections and advantages of larger corporations without all the rules, regulations and compliance issues common to larger business entities.`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `Briefly, the benefits of starting a South Carolina LLC include:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
-      header: ``,
+      header: `Briefly, the benefits of starting a South Carolina LLC include:`,
       list: [`Separating and limiting your personal liability from your business liability and debts`,
              `Quick and simple filing, management, compliance, regulation and administration of your South Carolina LLC`,
              `Easy tax filing and potential advantages for your tax treatment`],
@@ -49,13 +44,13 @@ export const howToGuide = [
   {
     type: `text`,
     content: `Learn more about the <a href="/limited-liability-company/">benefits of the LLC business structure here</a>.`,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `Six Quick Steps to Forming Your South Carolina LLC`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -115,7 +110,7 @@ export const howToGuide = [
     type: `header`,
     content: `Additional Information from the South Carolina Secretary of State`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -126,25 +121,25 @@ export const howToGuide = [
              `<a href="https://dor.sc.gov/" target="_blank" rel="noopener noreferrer">South Carolina Department of Revenue for SC taxes</a>`],
     },
     marginBottom: 32,
-    color: color.yellow3,
+    color: color.babyblue3,
   },
   {
     type: `header`,
     content: `Foreign LLCs in South Carolina`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `<p>If your business is already operating in another state and expanding to South Carolina, you’ll need to form a foreign LLC.</p></br>
               <p> More information on South Carolina <a href="/south-carolina-llc/form-filling-permit-requirements/"> filing and licensing requirements here</a> </p>`,
-    marginBottom: 32,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `What to Do After Forming Your South Carolina LLC`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -155,7 +150,7 @@ export const howToGuide = [
     type: `header`,
     content: `Other Information in This Guide`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -221,7 +216,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Naming Your South Carolina LLC`,
     size: 2,
-    marginBottom: 24,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -232,7 +227,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `South Carolina Secretary of State Business Search`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -242,7 +237,7 @@ export const namingYourBusiness = [
   {
     type: `text`,
     content: `If the business name is already used, that means it’s not available and you won’t be able to register it. Try searching for a different business name instead.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `arrow-link`,
@@ -256,7 +251,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Rules for Naming an LLC in South Carolina `,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -336,7 +331,7 @@ export const namingYourBusiness = [
   {
     type: `header`,
     content: `Fictitious/Assumed Business Names for South Carolina LLCs`,
-    size: 4,
+    size: 3,
     marginBottom: 32,
   },
   {
@@ -347,7 +342,7 @@ export const namingYourBusiness = [
   {
     type: `text`,
     content: `For example, your LLC might be called Charleston Rental and Real Estate Holding Company LLC, but you have a brand called Old Town Holiday Rentals. You should file a fictitious name to let the South Carolina Secretary of State know. In South Carolina, you do that through an “Assumed Name Certificate”—or you can have Incfile do it on your behalf through our Assumed Business Name service.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -361,20 +356,20 @@ export const namingYourBusiness = [
   {
     type: `header`,
     content: `Business Name Registration in South Carolina`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Once you’ve decided on your South Carolina business name, checked availability, followed the naming rules and decided whether or not you need a fictitious name, you can register your LLC name. There are a couple of ways to do this.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`<p>If you don’t want to form your LLC right now, you can reserve the business name with the South Carolina Secretary of State. You do not need to reserve a name if you are forming your business right away.</p></br>
-              <p>If you’re ready to start your LLC, you can formally file your Articles of Organization with the South Carolina SOS, or <a href="/form-order-now.php?entityType=LLC&entityState=SC/">let Incfile take care of it for you</a>.</p>`],
+      list: [`If you don’t want to form your LLC right now, you can reserve the business name with the South Carolina Secretary of State. You do not need to reserve a name if you are forming your business right away.
+              If you’re ready to start your LLC, you can formally file your Articles of Organization with the South Carolina SOS, or <a href="/form-order-now.php?entityType=LLC&entityState=SC/">let Incfile take care of it for you</a>.`],
     },
     marginBottom: 32,
     color: color.purple3,
@@ -382,13 +377,13 @@ export const namingYourBusiness = [
   {
     type: `header`,
     content: `FAQs on Naming Your South Carolina LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `You might find the following answers useful.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `accordion`,
@@ -417,8 +412,8 @@ export const namingYourBusiness = [
   {
     type: `header`,
     content: `Additional Incfile Resources on LLC Names`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -428,13 +423,13 @@ export const namingYourBusiness = [
   {
     type: `header`,
     content: `Trademarks and Service Marks`,
-    size: 3,
+    size: 4,
     marginBottom: 16,
   },
   {
     type: `text`,
     content: `You must be careful that your South Carolina LLC name does not infringe on the trademark or service mark of another business. The easiest way to make sure your proposed business name does not infringe is to carry out a trademark search through Incfile. If it doesn’t infringe, you can even register it as a trademark yourself.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -448,13 +443,13 @@ export const namingYourBusiness = [
   {
     type: `header`,
     content: `How to Choose a Business Name`,
-    size: 3,
+    size: 4,
     marginBottom: 16,
   },
   {
     type: `text`,
     content: `The perfect business name can be elusive. We have a complete guide to choosing the right business name, but basically, you'll want to choose a name that will:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -484,7 +479,7 @@ export const registeredAgent = [
     type: `header`,
     content: `South Carolina Registered Agents & Your LLC`,
     size: 2,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -500,12 +495,12 @@ export const registeredAgent = [
     type: `header`,
     content: `Rules for Registered Agents in South Carolina`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `There are certain rules that you must follow when you’re appointing a South Carolina Registered Agent service for your business. They are:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -528,12 +523,12 @@ export const registeredAgent = [
     type: `header`,
     content: `What a Registered Agent Does`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Your Registered Agent carries out several valuable services for your business. They accept official communications and documents from the South Carolina Secretary of State on your behalf. This may include:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -544,7 +539,7 @@ export const registeredAgent = [
              `Official South Carolina and federal government documents, form filings and requests for information (including taxes, permits and company filings)`],
     },
     marginBottom: 24,
-    color: color.red3,
+    color: color.purple3,
     curve: true,
     curveColor: color.blue1,
   },
@@ -552,7 +547,7 @@ export const registeredAgent = [
     type: `header`,
     content: `The Incfile Registered Agent Service for South Carolina LLCs`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -562,7 +557,7 @@ export const registeredAgent = [
   {
     type: `text`,
     content: `Incfile is authorized to conduct business in South Carolina and can legally act as your Registered Agent. Here’s what the service includes:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -590,7 +585,7 @@ export const registeredAgent = [
     type: `header`,
     content: `Appointing a South Carolina Registered Agent`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -601,18 +596,18 @@ export const registeredAgent = [
     type: `header`,
     content: `Appoint a Registered Agent Service When You Create Your South Carolina LLC`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Your business needs to have a South Carolina Registered Agent Service as soon as it’s formed. You can achieve this through one of the following methods.`,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `header`,
     content: `File Articles of Organization with the South Carolina Secretary of State`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -622,13 +617,13 @@ export const registeredAgent = [
   {
     type: `header`,
     content: `Incorporate Through Incfile and Get a Free South Carolina Registered Agent `,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `When you incorporate through us, we complete and file your Articles of Organization based on the information you’ve provided. Additionally, we give you a free South Carolina Registered Agent service for the first year, and we’ll include details on your Registered Agent in the form that we file with the state.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -643,18 +638,18 @@ export const registeredAgent = [
     type: `header`,
     content: `Change Your Registered Agent After Your LLC Is Formed`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `You can also change your official Registered Agent after you’ve formed your LLC. There are a couple of ways to achieve this.`,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `File a Form with the South Carolina Secretary of State`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -664,13 +659,13 @@ export const registeredAgent = [
   {
     type: `header`,
     content: `Have Incfile File the Change on Your Behalf`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `When you choose to use our SC Registered Agent service, we take care of all the form filling and filing for you. We’ll collect important information about your business, complete the form on your behalf and send it to the South Carolina Secretary of State. We’ll let you know once we officially become your Registered Agent.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -685,7 +680,7 @@ export const registeredAgent = [
     type: `header`,
     content: `South Carolina Registered Agent Search`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -701,12 +696,12 @@ export const registeredAgent = [
     type: `header`,
     content: `What Happens If You Don’t Have a Registered Agent in South Carolina?`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `What happens if you choose not to assign or provide details of a Registered Agent to the South Carolina Secretary of State? There are several possible ramifications, including:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -723,12 +718,12 @@ export const registeredAgent = [
     type: `header`,
     content: `Acting as Your Own Registered Agent`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `If you have an address in South Carolina, you can choose to be the Registered Agent for your LLC. We don’t recommend this approach as there can be some drawbacks:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -745,7 +740,7 @@ export const registeredAgent = [
       type: `header`,
       content: `FAQs About South Carolina Registered Agents`,
       size: 3,
-      marginBottom: 24,
+      marginBottom: 32,
   },
   {
     type: `accordion`,
@@ -775,7 +770,7 @@ export const registeredAgent = [
     type: `header`,
     content: `Useful Resources for South Carolina Registered Agent Services`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `list-dot`,
@@ -795,7 +790,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `LLC Fees and Filing Requirements in South Carolina`,
     size: 2,
-    marginBottom: 24,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -811,7 +806,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `LLC Incorporation Filing`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -819,7 +814,7 @@ export const feesAndRequirments = [
     marginBottom: 32,
   },
   {
-    type: `table`,
+    type: `table-simple`,
     content: {
       headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
       rows: [[`$150`, `7 Business Days`, `2 Business Days`]],
@@ -864,12 +859,12 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Getting an EIN/Tax ID for Your South Carolina LLC`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Every South Carolina LLC should have a unique Employer Identification Number (EIN). These are provided by the Internal Revenue Service, and you use them when filing taxes, opening a business bank account and paying employees. You can get one yourself at no cost from the IRS or have Incfile obtain one on your behalf.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -884,12 +879,12 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Foreign Qualification to Operate in a State Outside South Carolina`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `If you’re expanding your South Carolina LLC beyond the borders of the state, you will need a Foreign Qualification or Certificate of Authority to operate in another state. These are typically necessary if you have a physical presence, employees or banking in a different state than South Carolina. Fees and requirements for foreign qualifications depend on each state’s rules. Incfile provides a complete Foreign Qualification service for any state.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -904,7 +899,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `Annual Reporting and Fees for Your South Carolina LLC`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -925,7 +920,7 @@ export const feesAndRequirments = [
   {
     type: `text`,
     content: `Incfile can also complete and file your South Carolina annual report on your behalf.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -940,12 +935,12 @@ export const feesAndRequirments = [
     type: `header`,
     content: `South Carolina Business Permits and Licenses`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Some South Carolina LLCs will need certain business licenses and permits from federal, state and regional organizations. These permits and licenses will have associated fees that you should pay on a one-off or regular basis.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -978,7 +973,7 @@ export const feesAndRequirments = [
   {
     type: `text`,
     content: `Remember that operating your business without the required licenses can expose you to risks and fines from federal, South Carolina and local governments.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -992,8 +987,8 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `Create an Operating Agreement for Your South Carolina LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1003,13 +998,13 @@ export const feesAndRequirments = [
   {
     type: `text`,
     content: `South Carolina LLCs aren’t required to have an Operating Agreement, but they are extremely useful for several reasons (<a href="/research-topics/llc-info/the-llc-operating-agreement/">learn about them here</a>). If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your South Carolina business. You can choose to make changes to the template based on your unique requirements.`,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Ad Hoc South Carolina Fees or Requirements for Your South Carolina LLC`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1019,13 +1014,13 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `To Obtain a Fictitious/DBA Name`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `If you want your business to trade under a different name, you can file a form with the South Carolina Secretary of State. You will need to pay a filing fee. Incfile can file this form on your behalf.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -1039,13 +1034,13 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `To Change the South Carolina Registered Agent`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Your South Carolina LLC needs a Registered Agent, which must be appointed when you first incorporate your LLC. You can also switch to a new Registered Agent later. Incfile provides a complete South Carolina Registered Agent service.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -1059,24 +1054,24 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `To Reserve a Name`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `If you don’t want to form your business right away, you can reserve a name with the South Carolina Secretary of State. You will need to pay a small fee to do this.`,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `To Amend Certain Facts About Your South Carolina LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Your business formation documents state certain facts about your South Carolina business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with the Secretary of State. You can do this yourself or have Incfile complete the filing on your behalf.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -1086,7 +1081,7 @@ export const feesAndRequirments = [
              `Changing the business address of your LLC`,
              `Altering the stated business activities of your South Carolina LLC`],
     },
-    marginBottom: 0,
+    marginBottom: 24,
     color: color.yellow3,
   },
   {
@@ -1101,13 +1096,13 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `To Get a Certificate of Good Standing`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Some organizations will request that you prove your South Carolina LLC’s compliance with laws and tax requirements. If you need to prove you have met your commitments, you will need a “Certificate of Good Standing” from the South Carolina Secretary of State. Incfile can obtain a certificate on your behalf.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -1116,7 +1111,7 @@ export const feesAndRequirments = [
       url: `/manage-your-company/certificate-of-good-standing/`,
     },
     theme: `primary48`,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1132,7 +1127,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `FAQs About South Carolina LLC Requirements`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `accordion`,
@@ -1168,7 +1163,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Business Taxes Payable by Your South Carolina LLC `,
     size: 2,
-    marginBottom: 24,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -1184,12 +1179,12 @@ export const businessTaxes = [
     type: `header`,
     content: `How Your South Carolina LLC Will Be Taxed`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `The profits of a South Carolina LLC are not taxed at the business level like those of C Corporations. Instead, taxes for a LLC work as follows:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `numeric-list`,
@@ -1213,7 +1208,7 @@ export const businessTaxes = [
         text: `Employees pay federal, state and payroll tax on their earnings.`,
       },
     ],
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `text`,
@@ -1224,7 +1219,7 @@ export const businessTaxes = [
     type: `header`,
     content: `State Taxes in South Carolina`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1250,12 +1245,12 @@ export const businessTaxes = [
     type: `header`,
     content: `South Carolina Sales Taxes for LLCs`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the SC Department of Revenue. South Carolina sales tax is collected at the point of purchase. Sales tax rates do vary depending on the region, county or city where you are located.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -1283,7 +1278,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Federal Taxes`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1293,8 +1288,8 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Federal Self-Employment Tax`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1304,7 +1299,7 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -1323,8 +1318,8 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Pay Less Self-Employment Tax by Treating Your South Carolina LLC as an S Corporation`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1334,7 +1329,7 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `You can do this by making an “S Corporation Tax Election” with the IRS using a form known as Form 2553. We can file your Form 2553 with the IRS on your behalf.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `button`,
@@ -1343,7 +1338,7 @@ export const businessTaxes = [
       url: `/llc-s-corp-election/`,
     },
     theme: `primary48`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `text`,
@@ -1353,8 +1348,8 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Federal Income Tax`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1370,7 +1365,7 @@ export const businessTaxes = [
     type: `header`,
     content: `Tax Information for Employers and Employees`,
     size: 3,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1429,8 +1424,8 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Other Taxes and Duties for Your South Carolina LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1440,13 +1435,13 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Estimated Taxes for Your South Carolina LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `Most South Carolina LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -1456,8 +1451,8 @@ export const businessTaxes = [
              `Federal self-employment tax`,
              `South Carolina state tax`],
     },
-    marginBottom: 24,
-    color: color.red3,
+    marginBottom: 32,
+    color: color.green3,
   },
   {
     type: `text`,

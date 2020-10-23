@@ -111,7 +111,7 @@ export const businessNamesContent = {
     {
       type: `paragraph`,
       styles: { marginTop: `40px` },
-      content: `<a href="https://sos.ga.gov/index.php/corporations/name_availability_standards">Read More About Georgia Business Naming Rules</a>`,
+      content: `<a href="https://sos.ga.gov/index.php/corporations/name_availability_standards" target="_blank" rel="noopener noreferrer">Read More About Georgia Business Naming Rules</a>`,
     },
     {
       type: `heading`,
@@ -156,7 +156,7 @@ export const businessNamesContent = {
     },
     {
       type: `paragraph`,
-      content: `Once you’ve narrowed it down to a few name options, the next step is to complete a business entity search with the Georgia Secretary of State. Incfile provides an easy-to-use Business Name Search tool that will look up your proposed business name in the Georgia business registry. You can also use the business search feature on the <a href="https://ecorp.sos.ga.gov/BusinessSearch">Secretary of State website</a> yourself.`,
+      content: `Once you’ve narrowed it down to a few name options, the next step is to complete a business entity search with the Georgia Secretary of State. Incfile provides an easy-to-use Business Name Search tool that will look up your proposed business name in the Georgia business registry. You can also use the business search feature on the <a href="https://ecorp.sos.ga.gov/BusinessSearch"target="_blank" rel="noopener noreferrer">Secretary of State website</a> yourself.`,
     },
     {
       type: `paragraph`,
@@ -218,9 +218,9 @@ export const businessNamesContent = {
       styles: { marginBottom: `55px` },
       content: [
         {
-          text: `If you don’t want to form your Georgia LLC right now, you can reserve the business name with the Georgia Secretary of State. You will need to complete a <a href="https://sos.ga.gov/corporations/acrobat/applications/Form%20-%20Name%20Reservation.pdf">Name Reservation Request</a> and file it with the GA SOS. You do not need to reserve a name if you are forming your business right away.`,
+          text: `If you don’t want to form your Georgia LLC right now, you can reserve the business name with the Georgia Secretary of State. You will need to complete a <a href="https://sos.ga.gov/corporations/acrobat/applications/Form%20-%20Name%20Reservation.pdf"target="_blank" rel="noopener noreferrer">Name Reservation Request</a> and file it with the GA SOS. You do not need to reserve a name if you are forming your business right away.`,
         },
-        `If you’re ready to start your Georgia LLC, you can <a href="https://ecorp.sos.ga.gov/Account">formally file</a> your Articles of Organization with the Georgia Secretary of State, or let Incfile do it for you for free.`,
+        `If you’re ready to start your Georgia LLC, you can <a href="https://ecorp.sos.ga.gov/Account"target="_blank" rel="noopener noreferrer">formally file</a> your Articles of Organization with the Georgia Secretary of State, or let Incfile do it for you for free.`,
       ],
     },
     {

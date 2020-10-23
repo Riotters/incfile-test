@@ -254,7 +254,7 @@ const BarNightclub = () => (
                             an establishment like this.
                         </Paragraph>
 
-                        <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
+                        <Paragraph big style={{fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
                             Understand Your Local Market Opportunity & Customers
                         </Paragraph>
                         <Paragraph big>
@@ -264,7 +264,7 @@ const BarNightclub = () => (
                             with bars or clubs, so choosing the right location will be vital to your success.
                         </Paragraph>
 
-                        <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
+                        <Paragraph big style={{fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
                             What Kind of Bar or Club Should You Open?
                         </Paragraph>
                         <Paragraph big>
@@ -362,7 +362,7 @@ const BarNightclub = () => (
                             The Challenges of Running a Bar or Club
                         </Heading>
 
-                        <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
+                        <Paragraph big style={{fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
                             Is Being a Bar or Club Owner Right for You?
                         </Paragraph>
                         <Paragraph big>
@@ -402,7 +402,7 @@ const BarNightclub = () => (
                             well-managed, that competition may not last for long.
                         </Paragraph>
 
-                        <Paragraph big style={{fontFamily: "Avenir-Heavy", color: color.black}}>
+                        <Paragraph big style={{fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
                             Skills Needed to Be a Successful Bar or Club Owner
                         </Paragraph>
 
@@ -488,7 +488,8 @@ const BarNightclub = () => (
                         </TextBoxed>
 
                         <Paragraph big style={{
-                            fontFamily: "Avenir-Heavy",
+                            fontFamily: "Avenir",
+                            fontWeight: "900",
                             color: color.black,
                             marginTop: "32px",
                             textAlign: "right"

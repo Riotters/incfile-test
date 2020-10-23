@@ -65,7 +65,7 @@ export const HomePageContent = {
             step1: {
                 heading1: `Pick a Unique Business Name and Run a Georgia Entity Search`,
                 text1: `You will need a distinctive and original name for your Georgia LLC that’s not used by any other business in GA. Incfile’s <a href="/business-name-generator/">Business Name Generator</a> is a great way to brainstorm company names — the tool also allows you to easily check the Georgia Secretary of State (SOS) Corporations Division business registry to verify your name isn’t already being used by another company.</a>`,
-                text2: `If you’ve already chosen a name, you can make sure it’s available by using the Georgia business search on the <a href="https://ecorp.sos.ga.gov/">GA Secretary of State website</a> or Incfile’s <a href="/business-name-search/"> free Business Name Search tool. </a>`,
+                text2: `If you’ve already chosen a name, you can make sure it’s available by using the Georgia business search on the <a href="https://ecorp.sos.ga.gov/"target="_blank" rel="noopener noreferrer">GA Secretary of State website</a> or Incfile’s <a href="/business-name-search/"> free Business Name Search tool. </a>`,
                 text3: `There are several rules you’ll need to follow with your LLC name, which you can learn about in the <a href="/georgia-llc/georgia-business-names/"> Georgia business names section</a> of this guide. One rule, for example, is that your business name cannot use any of the following terms without approval from the Office of Insurance and Safety Fire Commissioner: “insurance,” “assurance,” “surety,” “fidelity,” “reinsurance,” “reassurance” or “indemnity.”`,
                 cta: {
                     title: `Incfile’s Business <br>Name Search Tool`,
@@ -98,9 +98,9 @@ export const HomePageContent = {
             step4: {
                 heading1: `File Articles of Organization with the Georgia Secretary of State`,
                 text1: `Once you've gathered all the information for your Georgia LLC, you’ll need to file both your Articles of Organization (Form CD 030) and Transmittal Information Form 231 with the GA Secretary of State Corporations Division. These documents formally create your Georgia LLC.`,
-                text2: `<a href="https://sos.ga.gov/corporations/acrobat/applications/Filing%20Template%20-%20Articles%20of%20Organization%20for%20LLC%20(CD%20030).pdf">Download Georgia's Form CD 030 Here</a>`,
-                text3: `<a href="https://sos.ga.gov/corporations/acrobat/applications/Transmittal%20Form%20-%20Limited%20Liability%20Company%20(CD%20231).pdf">Download Georgia's Transmittal Information Form(Form CD 231) Here</a>`,
-                text4: `You can file both your Articles of Organization and Transmittal Information Form online on the<a href="https://ecorp.sos.ga.gov/Account"> Georgia Secretary of State website </a>, mail them in or have Incfile do it on your behalf for free. The State of Georgia charges a $100 fee to file and start an LLC in Georgia.`,
+                text2: `<a href="https://sos.ga.gov/corporations/acrobat/applications/Filing%20Template%20-%20Articles%20of%20Organization%20for%20LLC%20(CD%20030).pdf" target="_blank" rel="noopener noreferrer" >Download Georgia's Form CD 030 Here</a>`,
+                text3: `<a href="https://sos.ga.gov/corporations/acrobat/applications/Transmittal%20Form%20-%20Limited%20Liability%20Company%20(CD%20231).pdf" target="_blank" rel="noopener noreferrer" >Download Georgia's Transmittal Information Form(Form CD 231) Here</a>`,
+                text4: `You can file both your Articles of Organization and Transmittal Information Form online on the<a href="https://ecorp.sos.ga.gov/Account" target="_blank" rel="noopener noreferrer" > Georgia Secretary of State website </a>, mail them in or have Incfile do it on your behalf for free. The State of Georgia charges a $100 fee to file and start an LLC in Georgia.`,
                 text5: `<b>File by Mail:</b></br></br>
                 Corporations Division</br>
                 2 Martin Luther King Jr. Dr. SE,</br>
