@@ -12,7 +12,7 @@ export const agentPageContent = {
         desc: `Get your first year of Registered Agent Service for free <br>when you incorporate with Incfile.`,
         button: {
           text: `Form Your LLC Now`,
-          url: "https://www.incfile.com/form-order-now.php?entityType=LLC&entityState=CA",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=CA`,
         },
       },
     ],
@@ -287,15 +287,15 @@ export const agentPageContent = {
       content: [
         {
           text: `The Main Functions of a California Registered Agent`,
-          url: `https://www.incfile.com/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/`,
+          url: `/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/`,
         },
         {
           text: `Changing Your California Registered Agent`,
-          url: `https://www.incfile.com/manage-your-company/change-of-registered-agent/`,
+          url: `/manage-your-company/change-of-registered-agent/`,
         },
         {
           text: `What a California Registered Agent Does`,
-          url: `https://www.incfile.com/research-topics/registered-agent-help/what-does-a-registered-agent-do/`,
+          url: `/research-topics/registered-agent-help/what-does-a-registered-agent-do/`,
         },
       ],
     },

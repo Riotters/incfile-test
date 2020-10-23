@@ -292,7 +292,7 @@ export const variants = {
       price: `100`,
       button: {
         text: `Get the Silver package`,
-        url: `/`,
+        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=AL`,
       },
       fees: [
         {
@@ -316,7 +316,7 @@ export const variants = {
       price: `249`,
       button: {
         text: `Get the Gold package`,
-        url: `/`,
+        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=AL`,
       },
       fees: [
         {
@@ -340,7 +340,7 @@ export const variants = {
       price: `399`,
       button: {
         text: `Get the Platinum package`,
-        url: `/`,
+        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=AL`,
       },
       fees: [
         {
@@ -407,96 +407,98 @@ export const tabPages = {
 };
 
 export const corporation = [
-    {
-        type: "header",
-        content: "California Corporations",
-        size: 4,
-        marginBottom: 24
-    },
   {
-        type: "text",
-        content: "California is a leader in great companies and household names. From Silicon Valley to Los Angeles, the state houses some of the biggest technological and entertainment businesses on the planet.",
-        marginBottom: 24
-    },
+    type: "header",
+    content: "California Corporations",
+    size: 4,
+    marginBottom: 24,
+  },
   {
-        type: "text",
-        content: "For entrepreneurs with big dreams, starting a corporation is a powerful way to show your commitment and bring those ideas to life. In this guide we’ll talk you through everything you need to know on how to start a corporation in the state of California.",
-        marginBottom: 48
-    },
+    type: "text",
+    content: "California is a leader in great companies and household names. From Silicon Valley to Los Angeles, the state houses some of the biggest technological and entertainment businesses on the planet.",
+    marginBottom: 24,
+  },
   {
-        type: "header",
-        content: "What Type of California Corporation Should You Choose?",
-        size: 4,
-        marginBottom: 24
-    },
+    type: "text",
+    content: "For entrepreneurs with big dreams, starting a corporation is a powerful way to show your commitment and bring those ideas to life. In this guide we’ll talk you through everything you need to know on how to start a corporation in the state of California.",
+    marginBottom: 48,
+  },
   {
-        type: "text",
-        content: "Most entrepreneurs will have a choice of starting an LLC, an S Corporation or a C Corporation in California. We’ll help you select the right type of business entity, as each one is treated differently by the CA Secretary of State, the law, the IRS and other official bodies.",
-        marginBottom: 24
-    },
+    type: "header",
+    content: "What Type of California Corporation Should You Choose?",
+    size: 4,
+    marginBottom: 24,
+  },
   {
-        type: "text",
-        content: "Here’s a quick overview of each type of business entity.",
-        marginBottom: 24
-    },
+    type: "text",
+    content: "Most entrepreneurs will have a choice of starting an LLC, an S Corporation or a C Corporation in California. We’ll help you select the right type of business entity, as each one is treated differently by the CA Secretary of State, the law, the IRS and other official bodies.",
+    marginBottom: 24,
+  },
   {
-        type: "svg-color-text-box",
-        content: [
-          {
-              header: "California Sole Proprietorships and Partnerships",
-              text: "These are the simplest type of business and will be the “default” type of CA business you have if you do not choose to form a separate business entity. These types of businesses do not provide you with any special protections or benefits and can leave your personal assets vulnerable. We do not recommend them.",
-              svg: ProprietorshipSVG,
-              backgroundColor: color.orange2,
-              shadowColor: shadow.orange2,
-              boxShadow: false,
-              textBackgroundColor: "transparent",
-              marginTop: "91px"
-          },
-          {
-            header: "California Limited Liability Companies (LLCs)",
-            text: "LLCs are a great option for smaller CA businesses. LLCs are quick and easy to create, inexpensive to administer, light on regulations and have simple taxation and rules.",
-            svg: LockpadSVG,
-            link: {
-              text: "Learn how to create an LLC in California",
-                url: "/"
-            },
-            backgroundColor: color.babyblue2,
-            shadowColor: shadow.babyblue2,
-            boxShadow: false,
-            textBackgroundColor: "transparent",
-            marginTop: "91px"
-          },
-          {
-            header: "California S Corporations",
-            text: "You might choose to form a California S Corporation because it’s a good compromise between the simplicity of the LLC and the complexity of the C Corporation. Note that CA S Corporations are subject to more rules and regulations than a CA LLC, but they can mean that you pay less tax.",
-            svg: ProcentSVG,
-            link: {
-              text: "Learn how to create an LLC in California",
-                url: "/"
-            },
-            backgroundColor: color.green2,
-            shadowColor: shadow.green2,
-            boxShadow: false,
-            textBackgroundColor: "transparent",
-            marginTop: "91px"
-          },
-          {
-            header: "California C Corporations",
-            text: "If you plan to start a large business or want to trade your shares on the public stock market, a CA C Corporation is your only choice. Be aware that California C Corporations are subject to many rules and regulations, and they have a substantial amount of administrative overhead. Additionally, the tax rules for a California C Corporation are not as advantageous as for a CA S Corporation or LLC.",
-            svg: BillSVG,
-            link: {
-              text: "Learn about forming a C Corporation",
-                url: "/"
-            },
-            backgroundColor: color.yellow2,
-            shadowColor: shadow.yellow2,
-            boxShadow: false,
-            textBackgroundColor: "transparent",
-            marginTop: "91px"
-          },
-        ],
-        marginBottom: 24,
-    },
+    type: "text",
+    content: "Here’s a quick overview of each type of business entity.",
+    marginBottom: 24,
+  },
+  {
+    type: "svg-color-text-box",
+    content: [
+      {
+        header: "California Sole Proprietorships and Partnerships",
+        text:
+          "These are the simplest type of business and will be the “default” type of CA business you have if you do not choose to form a separate business entity. These types of businesses do not provide you with any special protections or benefits and can leave your personal assets vulnerable. We do not recommend them.",
+        svg: ProprietorshipSVG,
+        backgroundColor: color.orange2,
+        shadowColor: shadow.orange2,
+        boxShadow: false,
+        textBackgroundColor: "transparent",
+        marginTop: "91px",
+      },
+      {
+        header: "California Limited Liability Companies (LLCs)",
+        text: "LLCs are a great option for smaller CA businesses. LLCs are quick and easy to create, inexpensive to administer, light on regulations and have simple taxation and rules.",
+        svg: LockpadSVG,
+        link: {
+          text: "Learn how to create an LLC in California",
+          url: "/",
+        },
+        backgroundColor: color.babyblue2,
+        shadowColor: shadow.babyblue2,
+        boxShadow: false,
+        textBackgroundColor: "transparent",
+        marginTop: "91px",
+      },
+      {
+        header: "California S Corporations",
+        text: "You might choose to form a California S Corporation because it’s a good compromise between the simplicity of the LLC and the complexity of the C Corporation. Note that CA S Corporations are subject to more rules and regulations than a CA LLC, but they can mean that you pay less tax.",
+        svg: ProcentSVG,
+        link: {
+          text: "Learn how to create an LLC in California",
+          url: "/",
+        },
+        backgroundColor: color.green2,
+        shadowColor: shadow.green2,
+        boxShadow: false,
+        textBackgroundColor: "transparent",
+        marginTop: "91px",
+      },
+      {
+        header: "California C Corporations",
+        text:
+          "If you plan to start a large business or want to trade your shares on the public stock market, a CA C Corporation is your only choice. Be aware that California C Corporations are subject to many rules and regulations, and they have a substantial amount of administrative overhead. Additionally, the tax rules for a California C Corporation are not as advantageous as for a CA S Corporation or LLC.",
+        svg: BillSVG,
+        link: {
+          text: "Learn about forming a C Corporation",
+          url: "/",
+        },
+        backgroundColor: color.yellow2,
+        shadowColor: shadow.yellow2,
+        boxShadow: false,
+        textBackgroundColor: "transparent",
+        marginTop: "91px",
+      },
+    ],
+    marginBottom: 24,
+  },
   {
     type: "colorbox",
     icon: FolderProcentSVG,
@@ -510,59 +512,60 @@ export const corporation = [
       {
         content: {
           text: "Start Your S-Corp",
-          url: "/"
+          url: "/",
         },
         arrow: true,
-        theme: "primary56"
+        theme: "primary56",
       },
       {
         content: {
           text: "Start Your C-Corp",
-          url: "/"
+          url: "/",
         },
         arrow: true,
-        theme: "primary56"
+        theme: "primary56",
       },
-    ]
+    ],
   },
   {
     type: "header",
     content: "The Advantages of a California Corporation Over an LLC",
     size: 4,
-    marginBottom: 24
+    marginBottom: 24,
   },
   {
     type: "text",
     content: "Why might you want to choose to incorporate as a CA S Corp or C Corp instead of an LLC? Here are a few reasons.",
-    marginBottom: 48
+    marginBottom: 48,
   },
   {
     type: "header",
     content: "Taxation Benefits of a California S Corporation Over an LLC",
     size: 4,
-    marginBottom: 24
+    marginBottom: 24,
   },
   {
     type: "text",
-    content: "A California S Corporation will often pay less self-employment tax on owner earnings than an LLC. Note that a CA LLC can choose to be treated as an S Corporation for tax purposes by filing Form 2553 with the IRS, which removes this restriction. California C Corporations do not have this advantage over an LLC.",
-    marginBottom: 24
+    content:
+      "A California S Corporation will often pay less self-employment tax on owner earnings than an LLC. Note that a CA LLC can choose to be treated as an S Corporation for tax purposes by filing Form 2553 with the IRS, which removes this restriction. California C Corporations do not have this advantage over an LLC.",
+    marginBottom: 24,
   },
   {
     type: "arrow-link",
     content: {
       text: "Learn about the tax benefits of S Corporations.",
-      url: "/"
+      url: "/",
     },
     marginBottom: 32,
   },
   {
-      type: "button",
-      content: {
-          text: "File From 2553 with the IRS",
-          url: "/"
-      },
-      theme: "primary56",
-      marginBottom: 64,
+    type: "button",
+    content: {
+      text: "File From 2553 with the IRS",
+      url: "/",
+    },
+    theme: "primary56",
+    marginBottom: 64,
   },
   {
     type: "colorbox",
@@ -577,7 +580,7 @@ export const corporation = [
   {
     type: "text",
     content: "C Corporations provide certain benefits when it comes to buying, selling and transferring stock. Here are the rules for both S Corps and C Corps:",
-    marginBottom: 41
+    marginBottom: 41,
   },
   {
     type: "list-dot",
@@ -587,7 +590,7 @@ export const corporation = [
         "If you want up to 100 shareholders who are U.S. citizens or residents and want to issue one type of stock, you can be an S Corporation or a C Corporation.",
         "If you want more than 100 shareholders, want to issue more than one type of stock or have international shareholders, you will need a C Corporation.",
         "If you want to allow the public to buy and sell shares in your company after an Initial Public Offering (IPO), you will need a C Corporation.",
-      ]
+      ],
     },
     color: color.orange3,
     marginBottom: 48,
@@ -597,14 +600,14 @@ export const corporation = [
     type: "arrow-link",
     content: {
       text: "Learn more about the differences between business entities",
-      url: "/"
+      url: "/",
     },
     marginBottom: 48,
   },
   {
     type: "text",
     content: "In addition to the general benefits above, California C Corporations provide several other advantages.",
-    marginBottom: 24
+    marginBottom: 24,
   },
   {
     type: "list-dot",
@@ -616,7 +619,7 @@ export const corporation = [
         "California C Corporations can sell stock to investors inside and outside the U.S.",
         "California C Corporations can issue more than one type of stock.",
         "California C Corporations can raise more funds by issuing more stock.",
-      ]
+      ],
     },
     color: color.blue3,
     marginBottom: 72,
@@ -624,39 +627,36 @@ export const corporation = [
   },
   {
     type: "header",
-    content: "What You Need to Know About Forming a California \n" +
-        "Corporation",
+    content: "What You Need to Know About Forming a California \n" + "Corporation",
     size: 4,
-    marginBottom: 24
+    marginBottom: 24,
   },
   {
     type: "text",
     content: "Here are some areas to be aware of when you’re creating a corporation in California.",
-    marginBottom: 24
+    marginBottom: 24,
   },
   {
     type: "text",
     content: "First, CA corporations are formed on the state level by filing Articles of Incorporation with the Secretary of State. Incfile specializes in helping entrepreneurs form California S Corporations and C Corporations and can collect the information and file this form on your behalf.",
-    marginBottom: 24
+    marginBottom: 24,
   },
   {
     type: "text",
-    content: "When you incorporate a business as a corporation, the California Secretary of State will treat your business as a C Corporation by default. A C Corporation will become an S Corporation when all shareholders wish to change the corporation’s status to an S Corporation with the IRS. You can make this choice when you first form your California corporation or at any time after you incorporate.",
-    marginBottom: 24
+    content:
+      "When you incorporate a business as a corporation, the California Secretary of State will treat your business as a C Corporation by default. A C Corporation will become an S Corporation when all shareholders wish to change the corporation’s status to an S Corporation with the IRS. You can make this choice when you first form your California corporation or at any time after you incorporate.",
+    marginBottom: 24,
   },
   {
     type: "text",
     content: "There are some similarities and some differences between S Corps and C Corps:",
-    marginBottom: 40
+    marginBottom: 40,
   },
   {
     type: "list-dot",
     content: {
       header: "S Corporations and C Corporations in California",
-      list: [
-        "<strong>Similarities:</strong> California S Corporations and C Corporations have similar rules and regulations for liability, governance, management and ownership",
-        "<strong>Differences:</strong> Key differences are taxation and the ease of buying, selling and transferring stock"
-      ]
+      list: ["<strong>Similarities:</strong> California S Corporations and C Corporations have similar rules and regulations for liability, governance, management and ownership", "<strong>Differences:</strong> Key differences are taxation and the ease of buying, selling and transferring stock"],
     },
     color: color.green3,
     marginBottom: 32,
@@ -665,15 +665,15 @@ export const corporation = [
   {
     type: "arrow-link",
     content: {
-      text: "Learn what you need to do to create a California  S Corporation or C Corporation",
-      url: "/"
+      text: "Learn what you need to do to create a California S Corporation or C Corporation",
+      url: "/",
     },
     marginBottom: 40,
   },
   {
     type: "text",
     content: "Your California Corporation Must Follow Certain Rules and Regulations",
-    marginBottom: 32
+    marginBottom: 32,
   },
   {
     type: "boxes",
@@ -695,18 +695,18 @@ export const corporation = [
         text: "All CA corporations must appoint officers",
       },
     ],
-    marginBottom: 48
+    marginBottom: 48,
   },
   {
     type: "text",
     content: "All California corporations must follow stringent compliance rules and regulations. These include financial reports, bylaws, corporate formalities, taxes, fees, business licenses and the like. You can find links to these below.",
-    marginBottom: 24
+    marginBottom: 24,
   },
   {
     type: "arrow-link",
     content: {
       text: "Learn about California corporation requirements.",
-      url: "/"
+      url: "/",
     },
     marginBottom: 32,
   },
@@ -714,7 +714,7 @@ export const corporation = [
     type: "button",
     content: {
       text: "Learn about California Corporation Taxes and Fees ",
-      url: "/"
+      url: "/",
     },
     theme: "primary56",
     marginBottom: 48,
@@ -722,7 +722,7 @@ export const corporation = [
   {
     type: "text",
     content: "Are you ready to start your California corporation? If so, we can help. We provide comprehensive corporation formation services for both S Corporations and C Corporations in California.",
-    marginBottom: 32
+    marginBottom: 32,
   },
   {
     type: "rounded-boxes",
@@ -735,11 +735,11 @@ export const corporation = [
           header: "S Corporation",
           link: {
             text: "Incorporate now",
-            url: "/"
-          }
+            url: "/",
+          },
         },
         noShadow: false,
-        color: color.purple3
+        color: color.purple3,
       },
       {
         roundRight: true,
@@ -748,24 +748,24 @@ export const corporation = [
           header: "C Corporation",
           link: {
             text: "Incorporate now",
-            url: "/"
-          }
+            url: "/",
+          },
         },
         noShadow: false,
-        color: color.orange3
-      }
-    ]
+        color: color.orange3,
+      },
+    ],
   },
   {
     type: "header",
     content: "Detailed Information for Your California Corporation",
     size: 4,
-    marginBottom: 24
+    marginBottom: 24,
   },
   {
     type: "text",
     content: "You’ll find plenty more insight and guidance on the other pages of this guide, including:",
-    marginBottom: 24
+    marginBottom: 24,
   },
   {
     type: "svg-color-text-box",
@@ -775,70 +775,71 @@ export const corporation = [
         text: "The six steps you need to take to start a California S Corporation or C Corporation.",
         link: {
           text: "Learn more",
-          url: "/"
+          url: "/",
         },
         svg: TodoSVG,
         backgroundColor: color.red2,
         shadowColor: shadow.red2,
         marginTop: "91px",
         textBackgroundColor: "transparent",
-        boxShadow: false
+        boxShadow: false,
       },
       {
         header: "Naming Your California Corporation",
         text: "How to search the California business registry of the CA Secretary of State and find the right name. Includes information on naming rules, fictitious names, reserving a California corporation name and more.",
         link: {
           text: "Learn more",
-          url: "/"
+          url: "/",
         },
         svg: QuestionSVG,
         backgroundColor: color.orange3,
         shadowColor: shadow.orange2,
         marginTop: "91px",
         textBackgroundColor: "transparent",
-        boxShadow: false
+        boxShadow: false,
       },
       {
         header: "California Registered Agents for Your Corporation",
         text: "How to appoint a California Registered Agent to your new corporation or change to a different Registered Agent. Includes information on Registered Agent rules and searching for California Registered Agents.",
         link: {
           text: "Learn more",
-          url: "/"
+          url: "/",
         },
         svg: IdSVG,
         backgroundColor: color.purple2,
         shadowColor: shadow.purple2,
         marginTop: "91px",
         textBackgroundColor: "transparent",
-        boxShadow: false
+        boxShadow: false,
       },
       {
         header: "Fees and Requirements for Your California Corporation",
-        text: "How to understand the various fees you’ll need to pay and the requirements you’ll need to meet for both federal and California rules. Includes details of Employee Identification Numbers (EINs), California and federal business licenses, California Statement of Information reports and more.",
+        text:
+          "How to understand the various fees you’ll need to pay and the requirements you’ll need to meet for both federal and California rules. Includes details of Employee Identification Numbers (EINs), California and federal business licenses, California Statement of Information reports and more.",
         link: {
           text: "Learn more",
-          url: "/"
+          url: "/",
         },
         svg: BillPadSVG,
         backgroundColor: color.orange2,
         shadowColor: shadow.orange2,
         marginTop: "91px",
         textBackgroundColor: "transparent",
-        boxShadow: false
+        boxShadow: false,
       },
       {
         header: "Federal, State, Sales and Other Taxes for Your California Corporation",
         text: "How to understand the various taxes you will need to pay to the federal and California government. Includes details of federal taxes like income and self-employment, and California taxes like sales tax and income tax.",
         link: {
           text: "Learn more",
-          url: "/"
+          url: "/",
         },
         svg: DollarUpSVG,
         backgroundColor: color.green2,
         shadowColor: shadow.green2,
         marginTop: "91px",
         textBackgroundColor: "transparent",
-        boxShadow: false
+        boxShadow: false,
       },
     ],
     marginBottom: 24,
@@ -957,7 +958,7 @@ export const startCaCorp = [
         },
       ],
     },
-    marginBottom: 48
+    marginBottom: 48,
   },
   {
     type: "header",
@@ -2017,7 +2018,7 @@ export const taxes = [
         },
       ],
     },
-    marginBottom: 47
+    marginBottom: 47,
   },
   {
     type: "header",
@@ -2062,7 +2063,7 @@ export const taxes = [
         },
       ],
     },
-    marginBottom: 52
+    marginBottom: 52,
   },
   {
     type: "header",
@@ -2308,7 +2309,7 @@ export const afterFormation = [
           {
             label: "During six-month period ending on last day of anniversary month of incorporation or qualification.",
             type: "label",
-            className: "left"
+            className: "left",
           },
         ],
         [
@@ -2322,8 +2323,8 @@ export const afterFormation = [
             type: "label-boxed",
             className: "highlight",
             style: {
-              "align-items": "flex-start"
-            }
+              "align-items": "flex-start",
+            },
           },
         ],
       ],
@@ -2334,7 +2335,7 @@ export const afterFormation = [
     settings: {},
     tableScheme: "blue3",
     style: {
-      "margin-bottom": "41px"
+      "margin-bottom": "41px",
     },
   },
   {
@@ -2454,7 +2455,7 @@ export const afterFormation = [
     responsive: true,
     settings: {},
     style: {
-      "margin-bottom": "41px"
+      "margin-bottom": "41px",
     },
   },
   {
@@ -2492,33 +2493,35 @@ export const afterFormation = [
       {
         link: {
           text: "QuickBooks",
-          url: "/"
+          url: "/",
         },
-        text: "This is a top option for a lot of business owners and starts out at only $10 a month. You can automatically important banking transactions, track your customers and vendors and related bills and expenses, and integrate with a lot of other online finance tools. If you hire an accountant or tax support, they will all likely support QuickBooks. You can even use an online version in addition to a desktop version of their software. The drawback is that the learning curve for QuickBooks can sometimes be a bit steep.",
+        text:
+          "This is a top option for a lot of business owners and starts out at only $10 a month. You can automatically important banking transactions, track your customers and vendors and related bills and expenses, and integrate with a lot of other online finance tools. If you hire an accountant or tax support, they will all likely support QuickBooks. You can even use an online version in addition to a desktop version of their software. The drawback is that the learning curve for QuickBooks can sometimes be a bit steep.",
       },
       {
         link: {
           text: "Xero",
-          url: "/"
+          url: "/",
         },
         text: "Xero is online accounting software that is a great option for those who find QuickBooks to be too complicated and difficult to understand. Their plans start out at $20 per month.",
       },
       {
         link: {
           text: "FreshBooks",
-          url: "/"
+          url: "/",
         },
-        text: "Freshbooks is online accounting software that allows you to also track your time, expenses, collaborate on projects and view accounting reports. One drawback is that it doesn’t currently have a way to track invoices that your business needs to pay. But, accounts start out at $15 per month.",
+        text:
+          "Freshbooks is online accounting software that allows you to also track your time, expenses, collaborate on projects and view accounting reports. One drawback is that it doesn’t currently have a way to track invoices that your business needs to pay. But, accounts start out at $15 per month.",
       },
       {
         link: {
           text: "Bench",
-          url: "/"
+          url: "/",
         },
         text: "Bench not only allows you to track your accounts receivable, but they include the help of a real-life bookkeeper to run your accounting every month. For a Bench account starting out at $125 a month, this is quite the deal instead of hiring your own bookkeeper.",
-        marginBottom: "52px"
+        marginBottom: "52px",
       },
-    ]
+    ],
   },
   {
     type: "header",
@@ -2555,43 +2558,47 @@ export const afterFormation = [
     content: [
       {
         header: "Build a Business Website",
-        text: "Having a great online presence for your business is the number one way people will find you. You need to start with buying a domain name using a service such as <a href='/'>NameCheap</a>. Then you need to choose a service to host your website such as <a href='/'>SnapWeb</a>. Finally, design your website using a tool such as Squarespace or WordPress. Make sure your website includes important business information such as how to contact you and business hours.",
+        text:
+          "Having a great online presence for your business is the number one way people will find you. You need to start with buying a domain name using a service such as <a href='/'>NameCheap</a>. Then you need to choose a service to host your website such as <a href='/'>SnapWeb</a>. Finally, design your website using a tool such as Squarespace or WordPress. Make sure your website includes important business information such as how to contact you and business hours.",
         svg: WebSVG,
         backgroundColor: color.purple2,
         shadowColor: shadow.purple2,
         marginTop: "91px",
         boxShadow: false,
-        textBackgroundColor: "transparent"
+        textBackgroundColor: "transparent",
       },
       {
         header: "Choose a Virtual Phone System",
-        text: "Your business needs a phone number so that your customers, employees and vendors can reach you. A great option is to look into a tool such as <a href='/'>Grasshopper</a>, which allows you to get a business phone that actually forwards to your cell phone, so you never miss an important call.",
+        text:
+          "Your business needs a phone number so that your customers, employees and vendors can reach you. A great option is to look into a tool such as <a href='/'>Grasshopper</a>, which allows you to get a business phone that actually forwards to your cell phone, so you never miss an important call.",
         svg: PhoneSVG,
         backgroundColor: color.green2,
         shadowColor: shadow.green2,
         marginTop: "91px",
         boxShadow: false,
-        textBackgroundColor: "transparent"
+        textBackgroundColor: "transparent",
       },
       {
         header: "Design a Business Logo",
-        text: "A logo will reflect your business branding everywhere your customers interact with you — on your website, on your invoices, in your email signature, on business cards and more. Instead of trying to design a logo yourself, try a logo making service such as <a href='/'>99 Designs</a> or buy some really high-quality pre-made logos you can customize on <a href='/'>CreativeMarket</a>.",
+        text:
+          "A logo will reflect your business branding everywhere your customers interact with you — on your website, on your invoices, in your email signature, on business cards and more. Instead of trying to design a logo yourself, try a logo making service such as <a href='/'>99 Designs</a> or buy some really high-quality pre-made logos you can customize on <a href='/'>CreativeMarket</a>.",
         svg: LogoSVG,
         backgroundColor: color.orange2,
         shadowColor: shadow.orange2,
         marginTop: "91px",
         boxShadow: false,
-        textBackgroundColor: "transparent"
+        textBackgroundColor: "transparent",
       },
       {
         header: "Get Business Cards Created",
-        text: "Once you have a logo, create nice looking business cards that you can hand out when you’re out networking or even running errands. You never know when a conversation about your business will come up, and you want to be able to give someone a place to research your business and contact you. A great tool to create inexpensive business cards is <a href='/'>Vistaprint</a>.",
+        text:
+          "Once you have a logo, create nice looking business cards that you can hand out when you’re out networking or even running errands. You never know when a conversation about your business will come up, and you want to be able to give someone a place to research your business and contact you. A great tool to create inexpensive business cards is <a href='/'>Vistaprint</a>.",
         svg: CardSVG,
         backgroundColor: color.blue3,
         shadowColor: shadow.blue3,
         marginTop: "91px",
         boxShadow: false,
-        textBackgroundColor: "transparent"
+        textBackgroundColor: "transparent",
       },
     ],
     marginBottom: 50,
@@ -2676,7 +2683,7 @@ export const afterFormation = [
         tools: ["SemRush", "KWFinder", "Moz", "AHREFS"],
       },
     ],
-    tab: true
+    tab: true,
   },
   {
     type: "header",

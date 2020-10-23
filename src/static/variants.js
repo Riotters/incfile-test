@@ -12,7 +12,7 @@ export const variants = {
       price: `100`,
       button: {
         text: `Get the Silver package`,
-        url: `/`,
+        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=AL`,
       },
       fees: [
         {
@@ -36,7 +36,7 @@ export const variants = {
       price: `249`,
       button: {
         text: `Get the Gold package`,
-        url: `/`,
+        url: `${process.env.ORDER_URL}/form-order-now.php`,
       },
       fees: [
         {
@@ -60,7 +60,7 @@ export const variants = {
       price: `399`,
       button: {
         text: `Get the Platinum package`,
-        url: `/`,
+        url: `${process.env.ORDER_URL}/form-order-now.php`,
       },
       fees: [
         {

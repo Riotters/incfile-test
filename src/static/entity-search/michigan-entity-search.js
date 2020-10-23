@@ -30,7 +30,7 @@ export const search = {
       label: `Entity Type`,
       link: {
         text: `Not sure?`,
-        url: `/`,
+        url: `/business-entity-comparison/`,
       },
       options: [`LLC`, `Corporation`],
     },
@@ -105,12 +105,12 @@ export const faq = {
     {
       question: `I Need to Change the Name of My Michigan Business Entity — Can You Help?`,
       answer: `You can change your Michigan legal business entity name by filing an amendment to your Articles of Incorporation or Articles of
-        Organization. We can <a href="https://www.incfile.com/manage-your-company/amendment/">file an amendment on your behalf</a>, including
+        Organization. We can <a href="/manage-your-company/amendment/">file an amendment on your behalf</a>, including
         changing the name of your Michigan corporation or LLC.`,
     },
     {
       question: `Can You Help Me Choose the Right Michigan Business Name?`,
-      answer: `The perfect Michigan business name can be elusive. We have a <a href="https://www.incfile.com/blog/post/llc-name-search-50-states/">complete guide to choosing the right MI business name</a> —
+      answer: `The perfect Michigan business name can be elusive. We have a <a href="/blog/post/llc-name-search-50-states/">complete guide to choosing the right MI business name</a> —
         you'll want to choose a name that will:`,
       list: [`Matter to business customers`, `Help people remember your company`, `Be unique among Michigan business entities`],
     },
@@ -118,7 +118,7 @@ export const faq = {
       question: `What’s the Best Way to Stop My Michigan Business Name From Being Used by Someone Else?`,
       answer: `The easiest way to protect your Michigan business name is to incorporate your business in Michigan, generally as a Limited
         Liability Company (LLC) or a corporation. We can help you do that — just choose “Incorporate Now” above to get started.`,
-      text: `If you want extra protection, you could consider <a href="https://www.incfile.com/trademark-name-search/">registering your
+      text: `If you want extra protection, you could consider <a href="/trademark-name-search/">registering your
         Michigan business name as a trademark</a>. Note that filing a fictitious or “doing business as" (DBA) name in Michigan will not be
         sufficient to protect it.`,
     },

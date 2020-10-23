@@ -101,7 +101,7 @@ export const howToGuide = [
           question: `STEP 6: File a Business Registration Application With the New Jersey Division of Revenue and Enterprise Services`,
           answer: `<p>Once you've gathered all the information together for your New Jersey LLC, you'll need to file a formal document with the NJ Division of Revenue and Enterprise Services. This document is known as your “Business Registration Application,” and filing the document creates your New Jersey LLC. This is a long and complex form that requires detailed information.</p></br>
             <p>You can file your New Jersey LLC Business Registration Application online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in New Jersey. You only need to file your Business Registration Application once.</p></br>
-            <p><a href="/" target="_blank">Form your LLC now</a></p>`, //https://www.incfile.com/form-order-now.php?entityType=LLC&entityState=ID
+            <p><a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=ID" target="_blank">Form your LLC now</a></p>`,
         },
       ],
     },
@@ -420,7 +420,7 @@ export const namingYourBusiness = [
       },
       {
         text: `If you’re ready to start your New Jersey LLC, you can file your Business Registration Application with the New Jersey Division of Revenue and Enterprise Services yourself, or
-          <a href="/" target="_blank" rel="noopener noreferrer">let Incfile take care of it for you.</a>`, //https://www.incfile.com/form-order-now.php?entityType=LLC&entityState=CO
+          <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=CO" target="_blank" rel="noopener noreferrer">let Incfile take care of it for you.</a>`,
       },
     ],
     marginBottom: 48,

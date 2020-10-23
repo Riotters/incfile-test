@@ -33,7 +33,7 @@ export const search = {
       label: `Entity Type`,
       link: {
         text: `Not sure?`,
-        url: `/`,
+        url: `/business-entity-comparison/`,
       },
       options: [`LLC`, `Corporation`],
     },

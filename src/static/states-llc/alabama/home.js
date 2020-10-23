@@ -392,7 +392,7 @@ export const namingYourBusiness = [
         `If you don’t want to form your Alabama LLC right now, you can reserve the business name with the Alabama Secretary of State. You will need to complete a “Name Reservation Request Form” and file it with the AL SOS. You do not need to reserve a name if you are forming your business right away. <br>
         <a href="https://www.sos.alabama.gov/node/1390" target="_blank" rel="noopener noreferrer">Alabama SOS LLC name reservation form</a>`,
         `If you’re ready to start your Alabama LLC, you can formally file your Certificate of Formation with the Alabama SOS,
-        or <a href="form-order-now.php?entityType=LLC&entityState=AL" target="_blank"> let Incfile take care of it for you. `,
+        or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AL" target="_blank"> let Incfile take care of it for you. `,
       ],
     },
     marginBottom: 56,
@@ -862,7 +862,7 @@ export const feesAndRequirments = [
     marginBottom: 32,
   },
   {
-    type: `dynamic_ar_box`
+    type: `dynamic_ar_box`,
   },
   {
     type: `arrow-link`,
