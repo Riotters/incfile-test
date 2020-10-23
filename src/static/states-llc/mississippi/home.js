@@ -6,7 +6,7 @@ export const top = {
   buttons: [
     {
       text: `See detailed pricing`,
-      url: `/form-order-now.php?entityType=LLC&entityState=AZ`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ`,
     },
   ],
 };
@@ -14,11 +14,9 @@ export const top = {
 export const howToGuide = [
   {
     type: `header`,
-    content: `How to Start a Mississippi LLC
-
-    `,
+    content: `How to Start a Mississippi LLC`,
     size: 2,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -44,9 +42,7 @@ export const howToGuide = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Separating and limiting your personal liability from your business liability and debts`,
-             `Quick and simple filing, management, compliance, regulations and administration of your Mississippi LLC`,
-             `Easy tax filing and potential advantages for tax treatment`],
+      list: [`Separating and limiting your personal liability from your business liability and debts`, `Quick and simple filing, management, compliance, regulations and administration of your Mississippi LLC`, `Easy tax filing and potential advantages for tax treatment`],
     },
     marginBottom: 48,
     color: color.blue3,
@@ -108,7 +104,7 @@ export const howToGuide = [
                    <li> Tax closing month </li>
                    </ul>
                    <p>You can file your Mississippi Articles of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Mississippi, but you only need to file your Articles of Organization once.</p></br>
-                   <a href="/form-order-now.php?entityType=LLC&entityState=MS/"> Form your LLC now </a>`,
+                   <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MS/"> Form your LLC now </a>`,
         },
       ],
     },
@@ -124,9 +120,11 @@ export const howToGuide = [
     type: `list-dot`,
     content: {
       header: `The Mississippi Secretary of State has plenty of information on forming and running a business in Mississippi. Check out additional resources below.<br>These are all the basic steps for forming an LLC in Mississippi. You’ll find other useful information below.`,
-      list: [`<a href="https://www.sos.ms.gov/BusinessServices/Pages/default.aspx" target="_blank" rel="noopener noreferrer">Mississippi Secretary of State for forming and running your KS LLC</a>`,
-             `<a href="https://mdes.ms.gov/employers/" target="_blank" rel="noopener noreferrer">Mississippi Department of Labor for Mississippi employers and hiring</a>`,
-             `<a href="https://www.dor.ms.gov/Business/Pages/default.aspx" target="_blank" rel="noopener noreferrer">Mississippi Department of Revenue for Mississippi taxes/a>`],
+      list: [
+        `<a href="https://www.sos.ms.gov/BusinessServices/Pages/default.aspx" target="_blank" rel="noopener noreferrer">Mississippi Secretary of State for forming and running your KS LLC</a>`,
+        `<a href="https://mdes.ms.gov/employers/" target="_blank" rel="noopener noreferrer">Mississippi Department of Labor for Mississippi employers and hiring</a>`,
+        `<a href="https://www.dor.ms.gov/Business/Pages/default.aspx" target="_blank" rel="noopener noreferrer">Mississippi Department of Revenue for Mississippi taxes/a>`,
+      ],
     },
     marginBottom: 32,
     color: color.yellow3,
@@ -165,7 +163,7 @@ export const howToGuide = [
               <p> More information on Mississippi <a href="/Mississippi-llc/fees-filing-requirements/"> filing and licensing requirements here</a> </p>`,
     marginBottom: 32,
   },
-  
+
   {
     type: `header`,
     content: `Detailed Information for Your Mississippi LLC`,
@@ -175,7 +173,7 @@ export const howToGuide = [
   {
     type: `text`,
     content: `You’ll find plenty more insight and guidance on the other pages of this guide, including`,
-    marginBottom: 32,
+    marginBottom: 16,
   },
   {
     type: `arrow-link`,
@@ -188,7 +186,7 @@ export const howToGuide = [
   {
     type: `text`,
     content: `How to search the Mississippi business registry of the Secretary of State and find the right name. Includes information on naming rules, fictitious names, reserving a Mississippi  LLC name and more.`,
-    marginBottom: 32,
+    marginBottom: 16,
   },
   {
     type: `arrow-link`,
@@ -196,7 +194,7 @@ export const howToGuide = [
       text: `Mississippi  Registered Agents for LLCs`,
       url: `/Mississippi-llc/registered-agents-Mississippi-llc/`,
     },
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -236,7 +234,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Search Your Business Name With the Mississippi Secretary of State and Register Your LLC`,
     size: 2,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -268,13 +266,10 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`By business entity name.`,
-             `By business entity ID number`, 
-             `By a keyword`, 
-             `By a Resident Agent's full name or keyword`],
+      list: [`By business entity name.`, `By business entity ID number`, `By a keyword`, `By a Resident Agent's full name or keyword`],
     },
     marginBottom: 32,
-    color: color.red3,
+    color: color.purple3,
   },
   {
     type: `header`,
@@ -324,10 +319,12 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Suffixes, such as Corporation, Company, Incorporated, Incorporation, Limited, Corp., Co., Inc., Ltd., LLC, etc.`,
-             `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`, 
-             `The singular, plural or possessive forms of a word`, 
-             `Abbreviations, punctuation, symbols, fonts, typefaces, etc.`],
+      list: [
+        `Suffixes, such as Corporation, Company, Incorporated, Incorporation, Limited, Corp., Co., Inc., Ltd., LLC, etc.`,
+        `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`,
+        `The singular, plural or possessive forms of a word`,
+        `Abbreviations, punctuation, symbols, fonts, typefaces, etc.`,
+      ],
     },
     marginBottom: 32,
     color: color.babyblue3,
@@ -358,15 +355,17 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Are very similar to the name of a federal or AK agency or organization (e.g. FBI, FDA, Mississippi Department of Revenue, Mississippi Police, Treasury, etc)`,
-             `Suggest affiliation with a federal or state agency or organization`, 
-             `Use the term “Olympic” or any terms that are trademarks of the Olympic organization`, 
-             `Imply a purpose that it would be illegal for your business to carry out`],
+      list: [
+        `Are very similar to the name of a federal or AK agency or organization (e.g. FBI, FDA, Mississippi Department of Revenue, Mississippi Police, Treasury, etc)`,
+        `Suggest affiliation with a federal or state agency or organization`,
+        `Use the term “Olympic” or any terms that are trademarks of the Olympic organization`,
+        `Imply a purpose that it would be illegal for your business to carry out`,
+      ],
     },
     marginBottom: 32,
     color: color.yellow3,
     curve: true,
-    curveColor:color.red1,
+    curveColor: color.red1,
   },
   {
     type: `header`,
@@ -397,14 +396,12 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`You cannot use the following words as qualifiers in the overall Mississippi LLC business name: "companies," "corporations," "incorporation," "unlimited," “limited partnerships."`,
-             `Certain restricted words may need additional paperwork if you want to use them in your business name.`,
-             ],
+      list: [`You cannot use the following words as qualifiers in the overall Mississippi LLC business name: "companies," "corporations," "incorporation," "unlimited," “limited partnerships."`, `Certain restricted words may need additional paperwork if you want to use them in your business name.`],
     },
     marginBottom: 48,
     color: color.green3,
   },
-  
+
   {
     type: `header`,
     content: `Business Name Registration for Your Mississippi LLC`,
@@ -420,9 +417,11 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`<p>If you don’t want to form your LLC right now, you can reserve the business name with the Mississippi Division of Corporations. You will need to complete a Business Name Registration form and file it with the AK DOC. You do not need to reserve a name if you are forming your business right away.</p></br>
+      list: [
+        `<p>If you don’t want to form your LLC right now, you can reserve the business name with the Mississippi Division of Corporations. You will need to complete a Business Name Registration form and file it with the AK DOC. You do not need to reserve a name if you are forming your business right away.</p></br>
               <a href="https://www.commerce.mississippi.gov/web/cbpl/Corporations/ReservingRegisteringBusinessName.aspx" target="_blank" rel="noopener noreferrer">Mississippi DOC LLC name reservation form</a>`,
-             `<p>If you’re ready to start your LLC, you can formally file your Certificate of Formation with the Mississippi DOC, or <a href="/form-order-now.php?entityType=LLC&entityState=AK/">let Incfile take care of it for you</a>.</p>`],
+        `<p>If you’re ready to start your LLC, you can formally file your Certificate of Formation with the Mississippi DOC, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AK/">let Incfile take care of it for you</a>.</p>`,
+      ],
     },
     marginBottom: 32,
     color: color.purple3,
@@ -462,8 +461,7 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`<p>If you don’t want to form your Mississippi LLC right now, you can reserve the business name/p></br>`,
-             `<p>If you’re ready to start your Mississippi LLC, you can register it through Incfile`],
+      list: [`<p>If you don’t want to form your Mississippi LLC right now, you can reserve the business name/p></br>`, `<p>If you’re ready to start your Mississippi LLC, you can register it through Incfile`],
     },
     marginBottom: 32,
     color: color.purple3,
@@ -495,7 +493,7 @@ export const namingYourBusiness = [
     type: `button`,
     content: {
       text: `Register your Mississippi LLC now.`,
-      url: `/form-order-now.php?entityType=LLC&entityState=MS`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MS`,
     },
     theme: `primary48`,
     marginBottom: 32,
@@ -583,15 +581,12 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Appeal to your customers`,
-             `Be memorable enough to stand out`, 
-             `Best represent your product or services`,
-             `Not be used by another business`],
+      list: [`Appeal to your customers`, `Be memorable enough to stand out`, `Best represent your product or services`, `Not be used by another business`],
     },
     marginBottom: 40,
     color: color.blue3,
   },
-  
+
   {
     type: `arrow-link`,
     content: {
@@ -607,7 +602,7 @@ export const registeredAgent = [
     type: `header`,
     content: `Mississippi Registered Agents for Your LLC`,
     size: 2,
-    marginBottom: 16,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -650,10 +645,12 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`If the Registered Agent is a person, they must reside in Mississippi.`,
-             `If the Registered Agent is a business, they must be able to conduct business in Mississippi.`,
-             `The Registered Agent must have a physical street address in Mississippi, not a P.O. Box.`,
-             `The Registered Agent must be available in person during normal business hours to sign for any correspondence.`],
+      list: [
+        `If the Registered Agent is a person, they must reside in Mississippi.`,
+        `If the Registered Agent is a business, they must be able to conduct business in Mississippi.`,
+        `The Registered Agent must have a physical street address in Mississippi, not a P.O. Box.`,
+        `The Registered Agent must be available in person during normal business hours to sign for any correspondence.`,
+      ],
     },
     marginBottom: 32,
     color: color.yellow3,
@@ -678,12 +675,14 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Correspondence from the Mississippi Secretary of State, like a notice to file reports and other forms`,
-             `Service of process documents (for example, if your Mississippi LLC has legal proceedings issued against it)`, 
-             `Official Mississippi and federal government documents, form filings and requests for information (including taxes, permits and company filings)`],
+      list: [
+        `Correspondence from the Mississippi Secretary of State, like a notice to file reports and other forms`,
+        `Service of process documents (for example, if your Mississippi LLC has legal proceedings issued against it)`,
+        `Official Mississippi and federal government documents, form filings and requests for information (including taxes, permits and company filings)`,
+      ],
     },
     marginBottom: 24,
-    color: color.red3,
+    color: color.blue3,
     curve: true,
     curveColor: color.blue1,
   },
@@ -707,15 +706,17 @@ export const registeredAgent = [
     type: `text`,
     content: `We are authorized to conduct business in Mississippi and can legally act as your Registered Agent. We also have an address in Mississippi, which is required to operate as a Registered Agent. Here’s what you need to know about Incfile’s MS Registered Agent service:`,
     marginBottom: 16,
-  }, 
+  },
   {
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`The Registered Agent will always be available to accept documents and letters on your behalf`,
-             `We automatically notify you whenever we receive correspondence for your business from the Mississippi Secretary of State or anyone else`,
-             `We scan your correspondence and upload it to a dashboard, so you can review it when convenient`, 
-             `We forward all correspondence to an address you choose`],
+      list: [
+        `The Registered Agent will always be available to accept documents and letters on your behalf`,
+        `We automatically notify you whenever we receive correspondence for your business from the Mississippi Secretary of State or anyone else`,
+        `We scan your correspondence and upload it to a dashboard, so you can review it when convenient`,
+        `We forward all correspondence to an address you choose`,
+      ],
     },
     marginBottom: 32,
     color: color.green3,
@@ -782,7 +783,7 @@ export const registeredAgent = [
     type: `button`,
     content: {
       text: `Form your business now`,
-      url: `/form-order-now.php?entityType=LLC&entityState=MS/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MS/`,
     },
     theme: `primary48`,
     marginBottom: 32,
@@ -860,9 +861,11 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`<b>Getting served or sued and not finding out about it:</b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`, 
-             `<b>Falling out of good standing with the Mississippi Secretary of State:</b> If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`, 
-             `<b>Losing your status as a Mississippi LLC:</b> A Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your LLC may be dissolved.`],
+      list: [
+        `<b>Getting served or sued and not finding out about it:</b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
+        `<b>Falling out of good standing with the Mississippi Secretary of State:</b> If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
+        `<b>Losing your status as a Mississippi LLC:</b> A Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your LLC may be dissolved.`,
+      ],
     },
     marginBottom: 48,
     color: color.blue3,
@@ -882,10 +885,12 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`The Registered Agent must have a physical street address in Mississippi. If you’re forming an LLC outside Mississippi, you will need to use an in-state Registered Agent.`, 
-             `You always need to have someone on hand during business hours at the Mississippi address to sign for important documents.`,
-             `The Registered Agent’s name and address are part of the public record and available through the Mississippi Secretary of State's website. If you prefer your name and address aren’t published, you should choose a Registered Agent service.`, 
-             `If you change your Mississippi business address or move out of state, you would need to file additional documentation with the MS Secretary of State for the new address if you act as your own Registered Agent. This would not be the case if you use a Registered Agent service, making a move or address change much simpler.`],
+      list: [
+        `The Registered Agent must have a physical street address in Mississippi. If you’re forming an LLC outside Mississippi, you will need to use an in-state Registered Agent.`,
+        `You always need to have someone on hand during business hours at the Mississippi address to sign for important documents.`,
+        `The Registered Agent’s name and address are part of the public record and available through the Mississippi Secretary of State's website. If you prefer your name and address aren’t published, you should choose a Registered Agent service.`,
+        `If you change your Mississippi business address or move out of state, you would need to file additional documentation with the MS Secretary of State for the new address if you act as your own Registered Agent. This would not be the case if you use a Registered Agent service, making a move or address change much simpler.`,
+      ],
     },
     marginBottom: 16,
     color: color.green3,
@@ -896,10 +901,10 @@ export const registeredAgent = [
     marginBottom: 48,
   },
   {
-      type: `header`,
-      content: `FAQs About Mississippi Registered Agents`,
-      size: 3,
-      marginBottom: 24,
+    type: `header`,
+    content: `FAQs About Mississippi Registered Agents`,
+    size: 3,
+    marginBottom: 24,
   },
   {
     type: `accordion`,
@@ -936,9 +941,11 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: `You might find these resources helpful:`,
-      list: [`<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/">The Main Functions of a Mississippi Registered Agent</a>`,
-             `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Mississippi Registered Agent</a>`,
-             `<a href-"/research-topics/registered-agent-help/what-does-a-registered-agent-do/">What a Mississippi Registered Agent Does</a>`],
+      list: [
+        `<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/">The Main Functions of a Mississippi Registered Agent</a>`,
+        `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Mississippi Registered Agent</a>`,
+        `<a href-"/research-topics/registered-agent-help/what-does-a-registered-agent-do/">What a Mississippi Registered Agent Does</a>`,
+      ],
     },
     marginBottom: 48,
     color: color.babyblue3,
@@ -949,7 +956,7 @@ export const feesAndRequirments = [
     type: `header`,
     content: `The Fees and Filing Requirements for Your Mississippi LLC`,
     size: 2,
-    marginBottom: 24,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -973,7 +980,7 @@ export const feesAndRequirments = [
     marginBottom: 32,
   },
   {
-    type: `table`,
+    type: `table-simple`,
     content: {
       headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
       rows: [[`$53`, `5 Business Days`, `1 Business Day`]],
@@ -1009,7 +1016,7 @@ export const feesAndRequirments = [
     type: `button`,
     content: {
       text: `Incorporate your Mississippi LLC through Incfile today`,
-      url: `/form-order-now.php?entityType=LLC&entityState=MS/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MS/`,
     },
     theme: `primary48`,
     marginBottom: 48,
@@ -1115,9 +1122,11 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: `Permits and licenses vary based on:`,
-      list: [`The industry your Mississippi LLC operates in (e.g., restaurants will need health permits)`, 
-             `The location of your Mississippi LLC (state, county or city) (e.g., a license to conduct business from the city of Jackson)`, 
-             `The type of business that you run (e.g., healthcare providers must meet HIPAA requirements)`],
+      list: [
+        `The industry your Mississippi LLC operates in (e.g., restaurants will need health permits)`,
+        `The location of your Mississippi LLC (state, county or city) (e.g., a license to conduct business from the city of Jackson)`,
+        `The type of business that you run (e.g., healthcare providers must meet HIPAA requirements)`,
+      ],
     },
     marginBottom: 32,
     color: color.green3,
@@ -1145,8 +1154,7 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`A complete report on all the licenses, permits and tax registrations your Mississippi LLC will need`,
-             `The application forms you will need to file with the Mississippi, regional and federal licensing authorities`],
+      list: [`A complete report on all the licenses, permits and tax registrations your Mississippi LLC will need`, `The application forms you will need to file with the Mississippi, regional and federal licensing authorities`],
     },
     marginBottom: 24,
     color: color.purple3,
@@ -1180,8 +1188,7 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: `Areas you might want to file Mississippi Articles of Amendment for include:`,
-      list: [`A complete report on all the licenses, permits and tax registrations your Mississippi LLC will need`,
-             `The application forms you will need to file with the Mississippi, regional and federal licensing authorities`],
+      list: [`A complete report on all the licenses, permits and tax registrations your Mississippi LLC will need`, `The application forms you will need to file with the Mississippi, regional and federal licensing authorities`],
     },
     marginBottom: 8,
     color: color.yellow3,
@@ -1191,7 +1198,7 @@ export const feesAndRequirments = [
     content: `Remember that operating your business without the required licenses can expose you to risks and fines from federal, Mississippi and local governments.`,
     marginBottom: 16,
   },
-  
+
   {
     type: `header`,
     content: `Create an Operating Agreement for Your Mississippi LLC`,
@@ -1286,9 +1293,7 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: `Areas you might want to file Mississippi Articles of Amendment for include:`,
-      list: [`Adding, removing or changing a Mississippi LLC member or manager`,
-             `Changing the business address of your LLC`,
-             `Altering the stated business activities of your Mississippi LLC`],
+      list: [`Adding, removing or changing a Mississippi LLC member or manager`, `Changing the business address of your LLC`, `Altering the stated business activities of your Mississippi LLC`],
     },
     marginBottom: 0,
     color: color.yellow3,
@@ -1372,7 +1377,7 @@ export const businessTaxes = [
     type: `header`,
     content: `The Federal, State, Sales and Other Taxes You Need to Pay for Your Mississippi LLC`,
     size: 2,
-    marginBottom: 24,
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -1456,9 +1461,7 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `The graduated Mississippi state income tax rate is:`,
-      list: [`3 percent on the first $5,000 of taxable income`,
-             `4 percent on the next $5,000 of taxable income`,
-             `5 percent on all taxable income over $10,000`],
+      list: [`3 percent on the first $5,000 of taxable income`, `4 percent on the next $5,000 of taxable income`, `5 percent on all taxable income over $10,000`],
     },
     marginBottom: 16,
     color: color.blue3,
@@ -1490,8 +1493,7 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `You will typically need to collect Mississippi sales tax on:`,
-      list: [`Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`,
-             `Certain services that your Mississippi business might provide.`],
+      list: [`Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`, `Certain services that your Mississippi business might provide.`],
     },
     marginBottom: 16,
     color: color.green3,
@@ -1523,10 +1525,7 @@ export const businessTaxes = [
   {
     type: `list-dot`,
     content: {
-      list: [`Jackson, MS sales tax rate is 8 percent`,
-             `Gulfport, MS sales tax rate is 7 percent`,
-              `Southaven, MS sales tax rate is 7 percent`,
-             `Hattiesburg, MS sales tax rate is 7 percent`],
+      list: [`Jackson, MS sales tax rate is 8 percent`, `Gulfport, MS sales tax rate is 7 percent`, `Southaven, MS sales tax rate is 7 percent`, `Hattiesburg, MS sales tax rate is 7 percent`],
     },
     marginBottom: 16,
     color: color.green3,
@@ -1564,10 +1563,7 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
-      list: [`On profits of $10,000, you would pay self-employment tax of $1,530.`,
-             `On profits of $40,000, you would pay self-employment tax of $6,120.`,
-             `On profits of $70,000, you would pay self-employment tax of $10,710.`,
-             `On profits of $90,000, you would pay self-employment tax of $13,770.`],
+      list: [`On profits of $10,000, you would pay self-employment tax of $1,530.`, `On profits of $40,000, you would pay self-employment tax of $6,120.`, `On profits of $70,000, you would pay self-employment tax of $10,710.`, `On profits of $90,000, you would pay self-employment tax of $13,770.`],
     },
     marginBottom: 48,
     color: color.babyblue3,
@@ -1702,9 +1698,7 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `The most common types of estimated tax are:`,
-      list: [`Federal income tax`,
-              `Federal self-employment tax`,
-             `Mississippi state tax`],
+      list: [`Federal income tax`, `Federal self-employment tax`, `Mississippi state tax`],
     },
     marginBottom: 24,
     color: color.purple3,
@@ -1745,7 +1739,6 @@ export const businessTaxes = [
     marginBottom: 24,
   },
 ];
-
 
 export const compare = {
   header: `How We Compare. <br>Get more more for less.`,

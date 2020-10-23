@@ -15,8 +15,8 @@ import { tabPages } from "../../static/states-llc/nevada/general";
 const RegisteredAgentPage = () => (
   <Layout>
     <SEO
-    title="Texas Business Search | How to Name Your TX LLC"
-    description="Learn what you need to know about naming an LLC in Texas with Incfile's helpful resources. Pick your perfect business name today!"
+    title="Nevada Registered Agents for LLCs"
+    description="Do you need a Registered Agent for your NV LLC? Learn what Registered Agents do and how to get one with Incfile’s helpful guide."
     />
     <LLCLayout>
         <LeftTabPages content={tabPages} />

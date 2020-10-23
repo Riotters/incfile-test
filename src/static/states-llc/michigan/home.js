@@ -6,7 +6,7 @@ export const top = {
   buttons: [
     {
       text: `See detailed pricing`,
-      url: `/form-order-now.php?entityType=LLC&entityState=AZ`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ`,
     },
   ],
 };
@@ -37,11 +37,7 @@ export const howToGuide = [
     type: `list-dot`,
     content: {
       header: `Briefly, here are the benefits of filing an LLC in Michigan:`,
-      list: [
-        `Limit your personal liability and keep personal assets separate from your business liability and debts`,
-        `Enjoy quick and simple filing, management, compliance, regulations and administration`,
-        `Benefit from easy tax filing and potential advantages for tax treatment`
-      ],
+      list: [`Limit your personal liability and keep personal assets separate from your business liability and debts`, `Enjoy quick and simple filing, management, compliance, regulations and administration`, `Benefit from easy tax filing and potential advantages for tax treatment`],
     },
     marginBottom: 16,
     color: color.green3,
@@ -248,7 +244,7 @@ export const howToGuide = [
       list: [
         `<a href="https://www.michigan.gov/som/0,4669,7-192-29943---,00.html" target="_blank" rel="noopener noreferrer">Michigan Department of Licensing and Regulatory Affairs for forming and running your MI LLC</a>`,
         `<a href="https://www.michigan.gov/leo/0,5863,7-336-94422_17485---,00.html" target="_blank" rel="noopener noreferrer">Michigan Bureau of Employment Relations for MI employers and hiring</a>`,
-        `<a href="https://www.michigan.gov/treasury/" target="_blank" rel="noopener noreferrer">Michigan Department of Treasury for MI taxes</a>`
+        `<a href="https://www.michigan.gov/treasury/" target="_blank" rel="noopener noreferrer">Michigan Department of Treasury for MI taxes</a>`,
       ],
     },
     marginBottom: 48,
@@ -361,9 +357,9 @@ export const namingYourBusiness = [
       header: `For example, you cannot use the following factors to say your name is different from the name of another business:`,
       list: [
         `Suffixes, such as Corporation, Company, Incorporated, Incorporation, Limited, Corp., Co., Inc., Ltd., LLC, etc.`,
-        `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`, 
-        `The singular, plural or possessive forms of a word`, 
-        `Abbreviations, punctuation, symbols, fonts, typefaces, etc.`
+        `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`,
+        `The singular, plural or possessive forms of a word`,
+        `Abbreviations, punctuation, symbols, fonts, typefaces, etc.`,
       ],
     },
     marginBottom: 32,
@@ -397,9 +393,9 @@ export const namingYourBusiness = [
       header: ``,
       list: [
         `Are very similar to the name of a federal or MI agency or organization (e.g., FBI, FDA, Michigan Department of Treasury, Michigan Police, Treasury, etc.)`,
-        `Suggest affiliation with a federal or state agency or organization`, 
-        `Use the term “Olympic” or any terms that are trademarks of the Olympic organization`, 
-        `Imply a purpose that it would be illegal for your business to carry out`
+        `Suggest affiliation with a federal or state agency or organization`,
+        `Use the term “Olympic” or any terms that are trademarks of the Olympic organization`,
+        `Imply a purpose that it would be illegal for your business to carry out`,
       ],
     },
     marginBottom: 32,
@@ -570,12 +566,7 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [
-        `Appeal to your customers`,
-        `Be memorable enough to stand out`, 
-        `Best represent your product or services`,
-        `Not be used by another business`
-      ],
+      list: [`Appeal to your customers`, `Be memorable enough to stand out`, `Best represent your product or services`, `Not be used by another business`],
     },
     marginBottom: 16,
     color: color.orange3,
@@ -613,7 +604,7 @@ export const registeredAgent = [
       header: ` Here’s what we cover:`,
       list: [
         `Information on the Michigan Department of Licensing and Regulatory Affairs and MI Resident Agent Services`,
-        `Rules for Michigan Resident Agents`, 
+        `Rules for Michigan Resident Agents`,
         `What to Expect From a Michigan Resident Agent Service`,
         `Appointing a MI Resident Agent Service for Your Michigan LLC`,
         `Change Your Michigan Resident Agent After Your LLC Is Formed`,
@@ -788,7 +779,7 @@ export const registeredAgent = [
     type: `button`,
     content: {
       text: `Incorporate your business through IncFile`,
-      url: `/form-order-now.php?entityType=LLC&entityState=AZ/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ/`,
     },
     theme: `primary48`,
     marginBottom: 48,
@@ -830,7 +821,7 @@ export const registeredAgent = [
     type: `button`,
     content: {
       text: `Order IncFile's Michigan registered agent service`,
-      url: `/form-order-now.php?entityType=LLC&entityState=AZ/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ/`,
     },
     theme: `primary48`,
     marginBottom: 48,
@@ -869,7 +860,7 @@ export const registeredAgent = [
       list: [
         `Getting served or sued and not finding out about it: If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
         `Falling out of good standing with the Michigan Department of Licensing and Regulatory Affairs: If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
-        `Losing your status as a Michigan LLC: A MI Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your Michigan LLC may be dissolved.`
+        `Losing your status as a Michigan LLC: A MI Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your Michigan LLC may be dissolved.`,
       ],
     },
     marginBottom: 48,
@@ -892,7 +883,7 @@ export const registeredAgent = [
       header: `We don’t recommend this approach, as there can be some drawbacks:`,
       list: [
         `The MI Registered Agent must have a physical street address in Michigan. If you’re forming an LLC outside MI, you will need to use an in-state Registered Agent.`,
-        `You always need to have someone on hand during business hours at the Michigan address to sign for important documents.`, 
+        `You always need to have someone on hand during business hours at the Michigan address to sign for important documents.`,
         `The MI Registered Agent’s name and address are part of the public record and available through the Michigan Department of Licensing and Regulatory Affairs website. If you would prefer your name and address aren’t published, you might choose a Registered Agent service.`,
         `If you change your Michigan business address or move out of state, you would need to file additional documentation with the MI Department of Licensing and Regulatory Affairs for the new address if you act as your own Registered Agent. This would not be the case if you use a Registered Agent service, making a move or address change much simpler.`,
       ],
@@ -943,7 +934,7 @@ export const registeredAgent = [
       list: [
         `<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/" target="_blank">The Main Functions of a Michigan Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/" target="_blank" >Changing Your Michigan Registered Agent</a>`,
-        `<a href="/research-topics/registered-agent-help/what-does-a-registered-agent-do/" target="_blank" >What a Michigan Registered Agent Does</a>`
+        `<a href="/research-topics/registered-agent-help/what-does-a-registered-agent-do/" target="_blank" >What a Michigan Registered Agent Does</a>`,
       ],
     },
     marginBottom: 0,
@@ -1016,7 +1007,7 @@ export const feesAndRequirments = [
     type: `button`,
     content: {
       text: `Incorporate your Michigan LLC through IncFile today`,
-      url: `/form-order-now.php?entityType=LLC&entityState=AZ/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ/`,
     },
     theme: `primary48`,
     marginBottom: 48,
@@ -1076,12 +1067,7 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: `Annual Report`,
-      list: [
-        `Frequency:  Annually`,
-        `Due Date:  February 15th`, 
-        `Note:  LLCs registered after September 30th of the preceding year are exempt from filing the report in the subsequent year. `,
-        `Filing Fee:  $25`
-      ],
+      list: [`Frequency:  Annually`, `Due Date:  February 15th`, `Note:  LLCs registered after September 30th of the preceding year are exempt from filing the report in the subsequent year. `, `Filing Fee:  $25`],
     },
     marginBottom: 16,
     color: color.blue2,
@@ -1122,8 +1108,8 @@ export const feesAndRequirments = [
       header: `Permits and licenses vary based on:`,
       list: [
         `The industry your Michigan LLC operates in (e.g., restaurants will need health permits)`,
-        `The location of your Michigan LLC (state, county or city) (e.g., a license to conduct business from the city of Detroit)`, 
-        `The type of business that you run (e.g., healthcare providers must meet HIPAA requirements)`
+        `The location of your Michigan LLC (state, county or city) (e.g., a license to conduct business from the city of Detroit)`,
+        `The type of business that you run (e.g., healthcare providers must meet HIPAA requirements)`,
       ],
     },
     marginBottom: 24,
@@ -1133,10 +1119,7 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: `You can research these permits and licenses yourself or use Incfile’s Business License Research Package, which includes:`,
-      list: [
-        `A complete report on all the licenses, permits and tax registrations your Michigan LLC will need`,
-        `The application forms you will need to file with the state, regional and federal licensing authorities`,
-      ],
+      list: [`A complete report on all the licenses, permits and tax registrations your Michigan LLC will need`, `The application forms you will need to file with the state, regional and federal licensing authorities`],
     },
     marginBottom: 16,
     color: color.yellow3,
@@ -1248,11 +1231,7 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: `Areas you might want to file Michigan Articles of Amendment for include:`,
-      list: [
-        `Adding, removing or changing a Michigan LLC member or manager`,
-        `Changing the business address of your LLC`,
-        `Altering the stated business activities of your Michigan LLC`
-      ],
+      list: [`Adding, removing or changing a Michigan LLC member or manager`, `Changing the business address of your LLC`, `Altering the stated business activities of your Michigan LLC`],
     },
     marginBottom: 16,
     color: color.orange3,
@@ -1444,10 +1423,7 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `You will typically need to collect Michigan sales tax on:`,
-      list: [
-        `Tangible, personal property and goods you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`,
-        `Certain services that your Michigan business might provide`
-      ],
+      list: [`Tangible, personal property and goods you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`, `Certain services that your Michigan business might provide`],
     },
     marginBottom: 16,
     color: color.purple3,
@@ -1509,12 +1485,7 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
-      list: [
-        `On profits of $30,000, you would pay self-employment tax of $4,590`,
-        `On profits of $70,000, you would pay self-employment tax of $10,710`,
-        `On profits of $120,000, you would pay self-employment tax of $18,360`,
-        `On profits of $160,000, you would pay self-employment tax of $24,480`
-      ],
+      list: [`On profits of $30,000, you would pay self-employment tax of $4,590`, `On profits of $70,000, you would pay self-employment tax of $10,710`, `On profits of $120,000, you would pay self-employment tax of $18,360`, `On profits of $160,000, you would pay self-employment tax of $24,480`],
     },
     marginBottom: 32,
     color: color.babyblue3,
@@ -1654,11 +1625,7 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `The most common types of estimated tax are:`,
-      list: [
-        `Federal income tax`,
-        `Federal self-employment tax`, 
-        `Michigan state tax`
-      ],
+      list: [`Federal income tax`, `Federal self-employment tax`, `Michigan state tax`],
     },
     marginBottom: 16,
     color: color.green3,

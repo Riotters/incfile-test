@@ -6,7 +6,7 @@ export const top = {
   buttons: [
     {
       text: `See detailed pricing`,
-      url: `/form-order-now.php?entityType=LLC&entityState=AZ`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ`,
     },
   ],
 };
@@ -32,11 +32,7 @@ export const howToGuide = [
     type: `list-dot`,
     content: {
       header: `Briefly, the benefits of starting a Idaho LLC include:`,
-      list: [
-        `Separating and limiting your personal liability from your business liability and debts`,
-        `Quick and simple filing, management, compliance, regulation and administration of your Idaho LLC`,
-        `Easy tax filing and potential advantages for your tax treatment`
-      ],
+      list: [`Separating and limiting your personal liability from your business liability and debts`, `Quick and simple filing, management, compliance, regulation and administration of your Idaho LLC`, `Easy tax filing and potential advantages for your tax treatment`],
     },
     marginBottom: 16,
     color: color.green3,
@@ -123,7 +119,7 @@ export const howToGuide = [
       list: [
         `<a href="https://sos.idaho.gov/" target="_blank" rel="noopener noreferrer">Idaho Secretary of State for forming and running your LLC</a>`,
         `<a href="https://labor.idaho.gov/" target="_blank" rel="noopener noreferrer">Idaho Department of Labor for employers and hiring</a>`,
-        `<a href="https://tax.idaho.gov/index.cfm" target="_blank" rel="noopener noreferrer">Idaho Tax Commission for taxes</a>`
+        `<a href="https://tax.idaho.gov/index.cfm" target="_blank" rel="noopener noreferrer">Idaho Tax Commission for taxes</a>`,
       ],
     },
     marginBottom: 48,
@@ -339,9 +335,9 @@ export const namingYourBusiness = [
       header: `For example, you cannot use the following factors to say your name is different from the name of another business:`,
       list: [
         `Suffixes, such as Corporation, Company, Incorporated, Incorporation, Limited, Corp., Co., Inc., Ltd., LLC, etc.`,
-        `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`, 
-        `The singular, plural or possessive forms of a word`, 
-        `Abbreviations, punctuation, symbols, fonts, typefaces, etc.`
+        `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`,
+        `The singular, plural or possessive forms of a word`,
+        `Abbreviations, punctuation, symbols, fonts, typefaces, etc.`,
       ],
     },
     marginBottom: 32,
@@ -375,9 +371,9 @@ export const namingYourBusiness = [
       header: ``,
       list: [
         `Are very similar to the name of a federal or ID agency or organization (e.g., FBI, FDA, Idaho Department of Revenue Administration, Idaho Police, Treasury, etc.)`,
-        `Suggest affiliation with a federal or state agency or organization`, 
-        `Use the term “Olympic” or any terms that are trademarks of the Olympic organization`, 
-        `Imply a purpose that it would be illegal for your business to carry out`
+        `Suggest affiliation with a federal or state agency or organization`,
+        `Use the term “Olympic” or any terms that are trademarks of the Olympic organization`,
+        `Imply a purpose that it would be illegal for your business to carry out`,
       ],
     },
     marginBottom: 48,
@@ -514,12 +510,7 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [
-        `Appeal to your customers`,
-        `Be memorable enough to stand out`, 
-        `Best represent your product or services`,
-        `Not be used by another business`
-      ],
+      list: [`Appeal to your customers`, `Be memorable enough to stand out`, `Best represent your product or services`, `Not be used by another business`],
     },
     marginBottom: 16,
     color: color.orange3,
@@ -584,9 +575,9 @@ export const registeredAgent = [
       header: ` They are:`,
       list: [
         `If the Registered Agent is a person, they must reside in Idaho.`,
-        `If the Registered Agent is a business, they must be able to conduct business in Idaho.`, 
+        `If the Registered Agent is a business, they must be able to conduct business in Idaho.`,
         `The Registered Agent must have a physical street address in Idaho, not a P.O. Box.`,
-        `The Registered Agent must be available in person during normal business hours to sign for any correspondence.`
+        `The Registered Agent must be available in person during normal business hours to sign for any correspondence.`,
       ],
     },
     marginBottom: 16,
@@ -710,7 +701,7 @@ export const registeredAgent = [
     type: `button`,
     content: {
       text: `Incorporate your business through IncFile`,
-      url: `/form-order-now.php?entityType=LLC&entityState=AZ/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ/`,
     },
     theme: `primary48`,
     marginBottom: 48,
@@ -790,8 +781,8 @@ export const registeredAgent = [
       header: `There are several possible ramifications, including:`,
       list: [
         `Getting served or sued and not finding out about it: If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
-        `Falling out of good standing with the Idaho Secretary of State: If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`, 
-        `Losing your status as a Idaho LLC: A Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your LLC may be dissolved.`
+        `Falling out of good standing with the Idaho Secretary of State: If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
+        `Losing your status as a Idaho LLC: A Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your LLC may be dissolved.`,
       ],
     },
     marginBottom: 48,
@@ -814,9 +805,9 @@ export const registeredAgent = [
       header: `We don’t recommend this approach as there can be some drawbacks:`,
       list: [
         `The Registered Agent must have a physical street address in Idaho. If you’re forming an LLC outside ID, you will need to use an in-state Registered Agent.`,
-        `You always need to have someone on hand during business hours at the Idaho address to sign for important documents.`, 
+        `You always need to have someone on hand during business hours at the Idaho address to sign for important documents.`,
         `The Registered Agent’s name and address are part of the public record and available through the Idaho Secretary of State's website. If you prefer your name and address aren’t published, you should choose a Registered Agent service.`,
-        `If you change your Idaho business address or move out of state, you need to file additional documentation with the ID Secretary of State for the new address if you act as your own Registered Agent. This would not be the case if you use a Registered Agent service, making a move or address change much simpler.`
+        `If you change your Idaho business address or move out of state, you need to file additional documentation with the ID Secretary of State for the new address if you act as your own Registered Agent. This would not be the case if you use a Registered Agent service, making a move or address change much simpler.`,
       ],
     },
     marginBottom: 48,
@@ -865,7 +856,7 @@ export const registeredAgent = [
       list: [
         `<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/" target="_blank">The Main Functions of a Idaho Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/" target="_blank" >Changing Your Idaho Registered Agent</a>`,
-        `<a href="/research-topics/registered-agent-help/what-does-a-registered-agent-do/" target="_blank" >What a Idaho Registered Agent Does</a>`
+        `<a href="/research-topics/registered-agent-help/what-does-a-registered-agent-do/" target="_blank" >What a Idaho Registered Agent Does</a>`,
       ],
     },
     marginBottom: 0,
@@ -938,7 +929,7 @@ export const feesAndRequirments = [
     type: `button`,
     content: {
       text: `Incorporate your Idaho LLC through IncFile today`,
-      url: `/form-order-now.php?entityType=LLC&entityState=AZ/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ/`,
     },
     theme: `primary48`,
     marginBottom: 48,
@@ -998,11 +989,7 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: `Annual Report`,
-      list: [
-        `Frequency:  Annually`,
-        `Due Date:  Within 60 days immediately preceding first day of anniversary month.`, 
-        `Filing Fee:  $0`
-      ],
+      list: [`Frequency:  Annually`, `Due Date:  Within 60 days immediately preceding first day of anniversary month.`, `Filing Fee:  $0`],
     },
     marginBottom: 16,
     color: color.blue2,
@@ -1043,8 +1030,8 @@ export const feesAndRequirments = [
       header: `Permits and licenses vary based on:`,
       list: [
         `The industry your LLC operates in (e.g., restaurants will need health permits)`,
-        `The location of your Idaho LLC (state, county or city) (e.g., a license to conduct business from the city of Boise)`, 
-        `The type of business that you run (e.g., healthcare providers must meet HIPAA requirements)`
+        `The location of your Idaho LLC (state, county or city) (e.g., a license to conduct business from the city of Boise)`,
+        `The type of business that you run (e.g., healthcare providers must meet HIPAA requirements)`,
       ],
     },
     marginBottom: 48,
@@ -1065,10 +1052,7 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: `It includes:`,
-      list: [
-        `A complete report on all the licenses, permits and tax registrations your Idaho LLC will need`,
-        `The application forms you will need to file with the Idaho, regional and federal licensing authorities`
-      ],
+      list: [`A complete report on all the licenses, permits and tax registrations your Idaho LLC will need`, `The application forms you will need to file with the Idaho, regional and federal licensing authorities`],
     },
     marginBottom: 16,
     color: color.green3,
@@ -1180,11 +1164,7 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: `Areas you might want to file Idaho Articles of Amendment for include:`,
-      list: [
-        `Adding, removing or changing a Idaho LLC member or manager`,
-        `Changing the business address of your LLC`,
-        `Altering the stated business activities of your Idaho LLC`
-      ],
+      list: [`Adding, removing or changing a Idaho LLC member or manager`, `Changing the business address of your LLC`, `Altering the stated business activities of your Idaho LLC`],
     },
     marginBottom: 16,
     color: color.orange3,
@@ -1370,10 +1350,7 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `You will typically need to collect sales tax on:`,
-      list: [
-        `Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`,
-        `Certain services that your Idaho business might provide`
-      ],
+      list: [`Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`, `Certain services that your Idaho business might provide`],
     },
     marginBottom: 16,
     color: color.purple3,
@@ -1421,12 +1398,7 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
-      list: [
-        `On profits of $20,000, you would pay self-employment tax of $3,060.`,
-        `On profits of $50,000, you would pay self-employment tax of $7,650.`,
-        `On profits of $80,000, you would pay self-employment tax of $12,240.`,
-        `On profits of $120,000, you would pay self-employment tax of $18,360.`
-      ],
+      list: [`On profits of $20,000, you would pay self-employment tax of $3,060.`, `On profits of $50,000, you would pay self-employment tax of $7,650.`, `On profits of $80,000, you would pay self-employment tax of $12,240.`, `On profits of $120,000, you would pay self-employment tax of $18,360.`],
     },
     marginBottom: 32,
     color: color.orange3,
@@ -1552,11 +1524,7 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `The most common types of estimated tax are:`,
-      list: [
-        `Federal income tax`,
-        `Federal self-employment tax`, 
-        `Idaho state tax`
-      ],
+      list: [`Federal income tax`, `Federal self-employment tax`, `Idaho state tax`],
     },
     marginBottom: 16,
     color: color.green3,

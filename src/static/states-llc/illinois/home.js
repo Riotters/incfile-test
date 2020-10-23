@@ -93,7 +93,7 @@ export const HomePageContent = {
           },
           {
             header: `Get A Free Registered Agent Whe You Incorporate With Incfile`,
-            url: `/form-order-now.php?entityType=LLC&entityState=IL`,
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=IL`,
           },
         ],
       },
@@ -191,7 +191,7 @@ export const HomePageContent = {
           subtitle: `when you select Incfle’s Gold package`,
           button: {
             text: `Form Your LLC Now`,
-            url: `/form-order-now.php?entityType=LLC&entityState=IL`,
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=IL`,
           },
         },
       },

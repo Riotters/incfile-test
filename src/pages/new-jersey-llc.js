@@ -15,7 +15,7 @@ import { tabPages } from "../static/states-llc/new-jersey/general";
 function LLCIndex() {
   return (
     <Layout>
-      <SEO title="LLCs in Texas | Guide to Forming an LLC in Texas" description="Ready to form your Texas LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
+      <SEO title="LLCs in New Jersey | Guide to Forming an LLC in New Jersey" description="Ready to form your New Jersey LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
       <LLCLayout>
         <LeftTabPages content={tabPages} nonDIY />
         <MainPageContent>

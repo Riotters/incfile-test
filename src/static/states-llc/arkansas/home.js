@@ -6,7 +6,7 @@ export const top = {
   buttons: [
     {
       text: `See detailed pricing`,
-      url: `/form-order-now.php?entityType=LLC&entityState=AR`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AR`,
     },
   ],
 };
@@ -32,9 +32,7 @@ export const howToGuide = [
     type: `list-dot`,
     content: {
       header: `Briefly, the benefits of starting a Arkansas LLC include:`,
-      list: [`Separating and limiting your personal liability from your business liability and debts`,
-             `Quick and simple filing, management, compliance, regulation and administration of your Arkansas LLC`,
-             `Easy tax filing and potential advantages for your tax treatment`],
+      list: [`Separating and limiting your personal liability from your business liability and debts`, `Quick and simple filing, management, compliance, regulation and administration of your Arkansas LLC`, `Easy tax filing and potential advantages for your tax treatment`],
     },
     marginBottom: 32,
     color: color.blue3,
@@ -97,7 +95,7 @@ export const howToGuide = [
                    <li> Name of the incorporator </li>
                    </ul>
                    <p>You can file your Arkansas LLC Articles of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Arkansas, but you only need to file your Articles of Organization once.</p></br>
-                   <a href="/form-order-now.php?entityType=LLC&entityState=AR"> Form your LLC now </a>`,
+                   <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AR"> Form your LLC now </a>`,
         },
       ],
     },
@@ -113,9 +111,11 @@ export const howToGuide = [
     type: `list-dot`,
     content: {
       header: `These are all the basic steps for forming an LLC in Arkansas, but the Secretary of State has plenty of additional information. Try these resources below:`,
-      list: [`<a href="https://www.sos.arkansas.gov/business-commercial-services-bcs/forms-fees/llc" target="_blank" rel="noopener noreferrer">Arkansas Secretary of State for forming and running your LLC</a>`,
-             `<a href="https://www.labor.arkansas.gov/" target="_blank" rel="noopener noreferrer">Arkansas Department of Labor for employers and hiring</a>`,
-             `<a href="https://www.dfa.arkansas.gov/" target="_blank" rel="noopener noreferrer">Arkansas Department of Finance and Administration for taxes</a>`],
+      list: [
+        `<a href="https://www.sos.arkansas.gov/business-commercial-services-bcs/forms-fees/llc" target="_blank" rel="noopener noreferrer">Arkansas Secretary of State for forming and running your LLC</a>`,
+        `<a href="https://www.labor.arkansas.gov/" target="_blank" rel="noopener noreferrer">Arkansas Department of Labor for employers and hiring</a>`,
+        `<a href="https://www.dfa.arkansas.gov/" target="_blank" rel="noopener noreferrer">Arkansas Department of Finance and Administration for taxes</a>`,
+      ],
     },
     marginBottom: 32,
     color: color.babyblue3,
@@ -322,10 +322,12 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Suffixes, such as Corporation, Company, Incorporated, Incorporation, Limited, Corp., Co., Inc., Ltd., LLC, etc.`,
-             `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`, 
-             `The singular, plural or possessive forms of a word`, 
-             `Abbreviations, punctuation, symbols, fonts, typefaces, etc.`],
+      list: [
+        `Suffixes, such as Corporation, Company, Incorporated, Incorporation, Limited, Corp., Co., Inc., Ltd., LLC, etc.`,
+        `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`,
+        `The singular, plural or possessive forms of a word`,
+        `Abbreviations, punctuation, symbols, fonts, typefaces, etc.`,
+      ],
     },
     marginBottom: 32,
     color: color.yellow3,
@@ -356,15 +358,17 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Are very similar to the name of a federal or AR agency or organization (e.g., FBI, FDA, Arkansas Department of Revenue Administration, Arkansas Police, Treasury, etc.)`,
-             `Suggest affiliation with a federal or state agency or organization`, 
-             `Use the term “Olympic” or any terms that are trademarks of the Olympic organization`, 
-             `Imply a purpose that it would be illegal for your business to carry out`],
+      list: [
+        `Are very similar to the name of a federal or AR agency or organization (e.g., FBI, FDA, Arkansas Department of Revenue Administration, Arkansas Police, Treasury, etc.)`,
+        `Suggest affiliation with a federal or state agency or organization`,
+        `Use the term “Olympic” or any terms that are trademarks of the Olympic organization`,
+        `Imply a purpose that it would be illegal for your business to carry out`,
+      ],
     },
     marginBottom: 32,
     color: color.babyblue3,
     curve: true,
-    curveColor:color.red1,
+    curveColor: color.red1,
   },
   {
     type: `header`,
@@ -406,8 +410,10 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`If you don’t want to form your LLC right now, you can reserve the business name with the Arkansas Secretary of State. You will need to complete an Application for Reservation of Limited Liability Company Name and file it with the SOS. You do not need to reserve a name if you are forming your business right away.`,
-             `If you’re ready to start your LLC, you can formally file your Certificate of Formation with the Arkansas SOS, or <a href="/form-order-now.php?entityType=LLC&entityState=AR">let Incfile take care of it for you</a>.`],
+      list: [
+        `If you don’t want to form your LLC right now, you can reserve the business name with the Arkansas Secretary of State. You will need to complete an Application for Reservation of Limited Liability Company Name and file it with the SOS. You do not need to reserve a name if you are forming your business right away.`,
+        `If you’re ready to start your LLC, you can formally file your Certificate of Formation with the Arkansas SOS, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AR">let Incfile take care of it for you</a>.`,
+      ],
     },
     marginBottom: 32,
     color: color.purple3,
@@ -493,15 +499,12 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Appeal to your customers`,
-             `Be memorable enough to stand out`, 
-             `Best represent your product or services`,
-             `Not be used by another business`],
+      list: [`Appeal to your customers`, `Be memorable enough to stand out`, `Best represent your product or services`, `Not be used by another business`],
     },
     marginBottom: 40,
     color: color.blue3,
   },
-  
+
   {
     type: `arrow-link`,
     content: {
@@ -544,10 +547,12 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: `They are:`,
-      list: [`If the Registered Agent is a person, they must reside in Arkansas.`,
-             `If the Registered Agent is a business, they must be able to conduct business in Arkansas.`,
-             `The Registered Agent must have a physical street address in Arkansas, not a P.O. Box.`,
-             `The Registered Agent must be available in person during normal business hours to sign for any correspondence.`],
+      list: [
+        `If the Registered Agent is a person, they must reside in Arkansas.`,
+        `If the Registered Agent is a business, they must be able to conduct business in Arkansas.`,
+        `The Registered Agent must have a physical street address in Arkansas, not a P.O. Box.`,
+        `The Registered Agent must be available in person during normal business hours to sign for any correspondence.`,
+      ],
     },
     marginBottom: 32,
     color: color.yellow3,
@@ -572,9 +577,11 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Correspondence from the Secretary of State, like a notice to file reports and other forms`,
-             `Service of process documents (for example, if your Arkansas LLC has legal proceedings issued against it)`, 
-             `Official Arkansas and federal government documents, form filings and requests for information (including taxes, permits and company filings)`],
+      list: [
+        `Correspondence from the Secretary of State, like a notice to file reports and other forms`,
+        `Service of process documents (for example, if your Arkansas LLC has legal proceedings issued against it)`,
+        `Official Arkansas and federal government documents, form filings and requests for information (including taxes, permits and company filings)`,
+      ],
     },
     marginBottom: 32,
     color: color.purple3,
@@ -601,16 +608,18 @@ export const registeredAgent = [
     type: `text`,
     content: `Here’s what you need to know about Incfile’s Registered Agent service:`,
     marginBottom: 24,
-  }, 
+  },
   {
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`The Registered Agent will always be available to accept documents and letters on your behalf.`,
-             `We automatically notify you whenever we receive correspondence for your business from the Arkansas Secretary of State or anyone else.`,
-             `We scan your correspondence and upload it to a dashboard, so you can review it when convenient.`,
-             `We forward all correspondence to an address you choose.`, 
-             `The service is free for the first year and $119 a year after that.`],
+      list: [
+        `The Registered Agent will always be available to accept documents and letters on your behalf.`,
+        `We automatically notify you whenever we receive correspondence for your business from the Arkansas Secretary of State or anyone else.`,
+        `We scan your correspondence and upload it to a dashboard, so you can review it when convenient.`,
+        `We forward all correspondence to an address you choose.`,
+        `The service is free for the first year and $119 a year after that.`,
+      ],
     },
     marginBottom: 24,
     color: color.green3,
@@ -672,7 +681,7 @@ export const registeredAgent = [
     type: `button`,
     content: {
       text: `Incorporate your business through Incfile`,
-      url: `/form-order-now.php?entityType=LLC&entityState=AR/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AR/`,
     },
     theme: `primary48`,
     marginBottom: 32,
@@ -750,9 +759,11 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`<b>Getting served or sued and not finding out about it:</b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`, 
-             `<b>Falling out of good standing with the Arkansas Secretary of State:</b> If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`, 
-             `<b>Losing your status as a Arkansas LLC:</b> A Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your LLC may be dissolved.`],
+      list: [
+        `<b>Getting served or sued and not finding out about it:</b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
+        `<b>Falling out of good standing with the Arkansas Secretary of State:</b> If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
+        `<b>Losing your status as a Arkansas LLC:</b> A Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your LLC may be dissolved.`,
+      ],
     },
     marginBottom: 40,
     color: color.blue3,
@@ -772,19 +783,21 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`The Registered Agent must have a physical street address in Arkansas. If you’re forming an LLC outside AR , you will need to use an in-state Registered Agent.`, 
-             `You always need to have someone on hand during business hours at the Arkansas address to sign for important documents.`,
-             `The Registered Agent’s name and address are part of the public record and available through the  Arkansas Secretary of State's website. If you prefer your name and address aren’t published, you should choose a Registered Agent service.`, 
-             `If you change your Arkansas business address or move out of state, you need to file additional documentation with the AR Secretary of State for the new address if you act as your own Registered Agent. This would not be the case if you use a Registered Agent service, making a move or address change much simpler.`],
+      list: [
+        `The Registered Agent must have a physical street address in Arkansas. If you’re forming an LLC outside AR , you will need to use an in-state Registered Agent.`,
+        `You always need to have someone on hand during business hours at the Arkansas address to sign for important documents.`,
+        `The Registered Agent’s name and address are part of the public record and available through the  Arkansas Secretary of State's website. If you prefer your name and address aren’t published, you should choose a Registered Agent service.`,
+        `If you change your Arkansas business address or move out of state, you need to file additional documentation with the AR Secretary of State for the new address if you act as your own Registered Agent. This would not be the case if you use a Registered Agent service, making a move or address change much simpler.`,
+      ],
     },
     marginBottom: 48,
     color: color.green3,
   },
   {
-      type: `header`,
-      content: `FAQs About Arkansas Registered Agents`,
-      size: 3,
-      marginBottom: 32,
+    type: `header`,
+    content: `FAQs About Arkansas Registered Agents`,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `accordion`,
@@ -820,9 +833,11 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: `You might find these resources helpful:`,
-      list: [`<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/">The Main Functions of a Arkansas Registered Agent</a>`,
-             `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Arkansas Registered Agent</a>`,
-             `<a href-"/research-topics/registered-agent-help/what-does-a-registered-agent-do/">What a Arkansas Registered Agent Does</a>`],
+      list: [
+        `<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/">The Main Functions of a Arkansas Registered Agent</a>`,
+        `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Arkansas Registered Agent</a>`,
+        `<a href-"/research-topics/registered-agent-help/what-does-a-registered-agent-do/">What a Arkansas Registered Agent Does</a>`,
+      ],
     },
     marginBottom: 48,
     color: color.babyblue3,
@@ -894,7 +909,7 @@ export const feesAndRequirments = [
     type: `button`,
     content: {
       text: `Incorporate your Arkansas LLC through Incfile today`,
-      url: `/form-order-now.php?entityType=LLC&entityState=AR`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AR`,
     },
     theme: `primary48`,
     marginBottom: 48,
@@ -1010,9 +1025,11 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: `Permits and licenses vary based on:`,
-      list: [`The industry your Arkansas LLC operates in (e.g., restaurants will need health permits)`, 
-             `The location of your Arkansas LLC (state, county or city) (e.g., a license to conduct business from the city of Little Rock)`, 
-             `The type of business that you run (e.g., healthcare providers must meet HIPAA requirements)`],
+      list: [
+        `The industry your Arkansas LLC operates in (e.g., restaurants will need health permits)`,
+        `The location of your Arkansas LLC (state, county or city) (e.g., a license to conduct business from the city of Little Rock)`,
+        `The type of business that you run (e.g., healthcare providers must meet HIPAA requirements)`,
+      ],
     },
     marginBottom: 32,
     color: color.green3,
@@ -1039,8 +1056,7 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`A complete report on all the licenses, permits and tax registrations your Arkansas LLC will need`,
-             `The application forms you will need to file with the Arkansas, regional and federal licensing authorities`],
+      list: [`A complete report on all the licenses, permits and tax registrations your Arkansas LLC will need`, `The application forms you will need to file with the Arkansas, regional and federal licensing authorities`],
     },
     marginBottom: 24,
     color: color.purple3,
@@ -1152,9 +1168,7 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: `Areas you might want to file Arkansas Articles of Amendment for include:`,
-      list: [`Adding, removing or changing a Arkansas LLC member or manager`,
-             `Changing the business address of your LLC`,
-             `Altering the stated business activities of your Arkansas LLC`],
+      list: [`Adding, removing or changing a Arkansas LLC member or manager`, `Changing the business address of your LLC`, `Altering the stated business activities of your Arkansas LLC`],
     },
     marginBottom: 0,
     color: color.yellow3,
@@ -1339,8 +1353,7 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `You will typically need to collect Arkansas sales tax on:`,
-      list: [`Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`,
-             `Certain services that your Arkansas business might provide`],
+      list: [`Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`, `Certain services that your Arkansas business might provide`],
     },
     marginBottom: 24,
     color: color.blue3,
@@ -1388,10 +1401,7 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
-      list: [`On profits of $20,000, you would pay self-employment tax of $3,060.`,
-             `On profits of $40,000, you would pay self-employment tax of $6,120.`,
-             `On profits of $80,000, you would pay self-employment tax of $12,240.`,
-             `On profits of $120,000, you would pay self-employment tax of $18,360.`],
+      list: [`On profits of $20,000, you would pay self-employment tax of $3,060.`, `On profits of $40,000, you would pay self-employment tax of $6,120.`, `On profits of $80,000, you would pay self-employment tax of $12,240.`, `On profits of $120,000, you would pay self-employment tax of $18,360.`],
     },
     marginBottom: 48,
     color: color.green3,
@@ -1530,9 +1540,7 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `The most common types of estimated tax are:`,
-      list: [`Federal income tax`,
-             `Federal self-employment tax`,
-             `Arkansas tax on interest and dividends`],
+      list: [`Federal income tax`, `Federal self-employment tax`, `Arkansas tax on interest and dividends`],
     },
     marginBottom: 24,
     color: color.green3,
