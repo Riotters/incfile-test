@@ -32,7 +32,7 @@ export const search = {
       label: `Entity Type`,
       link: {
         text: `Not sure?`,
-        url: `/`,
+        url: `https://www.incfile.com/business-entity-comparison/`,
       },
       options: [`LLC`, `Corporation`],
     },
