@@ -30,9 +30,9 @@ const AirbnbTaxes = () => (
                     <Curve color={color.babyblue1}
                            style={{position: "absolute", left: "-29px", top: "-25px", transform: "rotate(-90deg)"}}/>
                     Even though you’re running an Airbnb business, you can’t escape real-world licenses, permits and
-                    regulations. You will need to explore local, state and federal licenses and permits, and <span
-                    className="big blue">we can also
-                    help out with researching your business licensing needs.</span>
+                    regulations. You will need to explore local, state and federal licenses and permits, and <Link
+                    to="https://www.incfile.com/business-accounting/">we can also
+                    help out with researching your business licensing needs.</Link>
                 </Paragraph>
                 <Paragraph big>
                     It’s also very important to consider local zoning laws, ordinances and permits. Some
