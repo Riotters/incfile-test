@@ -15,8 +15,8 @@ import { tabPages } from "../../static/states-llc/west-virginia/general";
 const BusinessTaxesPage = () => (
     <Layout>
         <SEO
-            title="West Virginia Business Search | How to Name Your WV LLC"
-            description="Learn what you need to know about naming an LLC in West Virginia with Incfile's helpful resources. Pick your perfect business name today!"
+            title="West Virginia Sales Tax & Business Tax Registration for LLCs"
+            description="Do you have a WV LLC? Learn about the required federal, state and sales taxes you might need to pay. Read more."
         />
         <LLCLayout>
             <LeftTabPages content={tabPages} />
