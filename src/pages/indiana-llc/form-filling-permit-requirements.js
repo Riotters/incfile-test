@@ -30,7 +30,7 @@ const FillingRequirementsPage = () => {
             <LLCLayout data={dataApi}>
                 <LeftTabPages content={tabPages} />
                 <MainPageContent>
-                    <ContentMap content={feesAndRequirments} />
+                    <ContentMap content={feesAndRequirments} data={dataApi} />
                 </MainPageContent>
             </LLCLayout>
         </Layout>
