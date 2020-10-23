@@ -21,7 +21,7 @@ import CorporationLayout from "../../atomic/partials/corporation-layout";
 
 const StateInformation = () => (
     <Layout>
-        <SEO title="California Corporations & Other Business Entities " description="Thinking of starting an S Corp, C Corp, or LLC in California? Learn about corporations in CA and decide which business type is right for you." />
+        <SEO title="Naming a Delaware Corporation | DE Business Name Rules" description="Choosing the right name for your business helps you get off on the right foot. Learn about the rules for naming a business in Delaware." />
         <Top imageName="mr-bulb-corporation-california-8302" imageAlt="Mrs Bulb and with checklist" ovalColor="purple-2" textWidth="530">
             <h1>{top.header}</h1>
             <p>{top.text}</p>

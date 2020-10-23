@@ -20,7 +20,7 @@ import { about, related } from "../../static/research-topics/registered-agent";
 
 const HelpCenter = () => (
   <Layout>
-    <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
+    <SEO title="Registered Agent Resources & Articles | Incfile Help Center" description="Find helpful information about Registered Agents, from why your company needs one to their responsibilities and requirements." />
     <Top imageName="mrs-bulb-help-center-article" imageAlt="Mrs Bulb and with checklist" ovalColor="green">
       <h1>{top.header}</h1>
       <p>{top.text}</p>

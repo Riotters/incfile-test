@@ -21,7 +21,7 @@ import CorporationLayout from "../../atomic/partials/corporation-layout";
 
 const StateInformation = () => (
     <Layout>
-        <SEO title="California Corporations & Other Business Entities " description="Thinking of starting an S Corp, C Corp, or LLC in California? Learn about corporations in CA and decide which business type is right for you." />
+        <SEO title="How to Name Your Wyoming Corporation | GA Business Name Registration" description="Choosing the right name for your business is vitally important. Read Incfile&#039;s guide to naming corporations in Wyoming for everything you need to know." />
         <Top imageName="mr-bulb-corporation-california-8302" imageAlt="Mrs Bulb and with checklist" ovalColor="purple-2" textWidth="530">
             <h1>{top.header}</h1>
             <p>{top.text}</p>
