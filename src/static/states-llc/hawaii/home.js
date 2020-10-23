@@ -871,11 +871,7 @@ export const feesAndRequirments = [
     marginBottom: 32,
   },
   {
-    type: `table-simple`,
-    content: {
-      headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
-      rows: [[`$50`, `10 Business Days`, `2 Business Days`]],
-    },
+    type: `dynamic_ar_box`
   },
   {
     type: `arrow-link`,
@@ -964,33 +960,9 @@ export const feesAndRequirments = [
     marginBottom: 48,
   },
   {
-    type: `header`,
-    content: `Annual Report`,
-    size: 4,
-    marginBottom: 24,
+    type: `dynamic_filing_requirement`
   },
-  {
-    type: `text`,
-    content: `<b>Frequency:</b> Annually`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `<b>Due Date:</b> The annual report or annual statement due date is dependent on the registration date. If the registration falls between:</br></br>
-                               <ul>
-                               <li>January 1 and March 31, the annual report or statement is due by March 31 of each year;</li>
-                               <li>April 1 and June 30, the annual report or statement is due by June 30 of each year;</li>
-                               <li>July 1 and September 30, the annual report or statement is due by September 30 of each year;</li>
-                               <li>October 1 and December 31, the annual report or statement is due by December 31 of each year;</li>
-                               </ul>`,
 
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `<b>Filing Fee:</b> $15`,
-    marginBottom: 32,
-  },
   {
     type: `text`,
     content: `<a href="/business-filing-deadlines/">Learn about your ongoing Hawaii LLC filing requirements</a> and business filing deadlines with our helpful Hawaii filing lookup tool.`,

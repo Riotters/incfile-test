@@ -868,11 +868,7 @@ export const feesAndRequirments = [
     marginBottom: 16,
   },
   {
-    type: `table-simple`,
-    content: {
-      headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
-      rows: [[`$98`, `7 business days`, `1 business day`]],
-    },
+    type: `dynamic_ar_box`
   },
   {
     type: `arrow-link`,
@@ -961,13 +957,7 @@ export const feesAndRequirments = [
     marginBottom: 16,
   },
   {
-    type: `list-dot`,
-    content: {
-      header: `Annual Report`,
-      list: [`Frequency:  Biennially`, `Due Date:  Last day of anniversary month of formation or qualification.`, `Filing Fee:  $30`],
-    },
-    marginBottom: 16,
-    color: color.blue2,
+    type: `dynamic_filing_requirement`
   },
   {
     type: `text`,

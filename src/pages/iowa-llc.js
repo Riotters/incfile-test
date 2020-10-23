@@ -11,19 +11,27 @@ import ContentMap from "../atomic/partials/content-map";
 // Content
 import { howToGuide } from "../static/states-llc/iowa/home";
 import { tabPages } from "../static/states-llc/iowa/general";
+import { getFullPricesAndFilings } from '../api/Api';
 
 function LLCIndex() {
-  return (
-    <Layout>
-      <SEO title="LLCs in Iowa | Guide to Forming an LLC in Iowa" description="Ready to form your Iowa LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
-      <LLCLayout>
-        <LeftTabPages content={tabPages} nonDIY />
-        <MainPageContent>
-            <ContentMap content={howToGuide} />
-        </MainPageContent>
-      </LLCLayout>
-    </Layout>
-  );
+    const [dataApi, setDataApi] = React.useState({});
+
+    React.useEffect(() => {
+        getFullPricesAndFilings('Iowa').then(data => {
+            setDataApi(data);
+        });
+    }, []);
+    return (
+        <Layout>
+            <SEO title="LLCs in Iowa | Guide to Forming an LLC in Iowa" description="Ready to form your Iowa LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
+            <LLCLayout data={dataApi}>
+                <LeftTabPages content={tabPages} nonDIY />
+                <MainPageContent>
+                    <ContentMap content={howToGuide} data={dataApi} />
+                </MainPageContent>
+            </LLCLayout>
+        </Layout>
+    );
 }
 
 export default LLCIndex;
