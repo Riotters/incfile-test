@@ -18,7 +18,7 @@ export const filingFeeAndRequirementContent = {
         desc: `Starting a Florida LLC? Have Incfile do all the paperwork for you for free.`,
         button: {
           text: `Form Your LLC Now`,
-          url: "https://www.incfile.com/form-order-now.php?entityType=LLC&entityState=FL",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=FL`,
         },
       },
     ],
@@ -40,45 +40,6 @@ export const filingFeeAndRequirementContent = {
       content: `Note that Florida business licenses and permits might need to be paid when you first form your business, on an ongoing schedule or on an ad hoc basis. Find more details below.`,
     },
 
-<<<<<<< HEAD
-        ////////////////
-        {
-            type: `heading`,
-            styles: {marginTop: `0`},
-            size: 2,
-            content: `Initial Filing and Fees for Forming a Florida LLC`,
-        },
-        {
-            type: `paragraph`,
-            content: `To create your business in Florida, you’ll file an LLC with the FL Department of State and pay an associated LLC formation fee. Every state has different LLC filing fees and filing times. Here is the current information for Florida:`,
-        },
-        {
-            type: `dynamic_ar_box`,
-            headerSize: `5`,
-            columns: `3`,
-        },
-        {
-            type: `arrow-links`,
-            content: [
-                {
-                    text: `Compare State Filing Times`,
-                    url: `/state-filing-times/`
-                },
-                {
-                    text: `Compare State Filing Prices`,
-                    url: `/state-filing-fees/`
-                },
-            ],
-        },
-        {
-            type: `paragraph`,
-            content: `While the state of Florida does not offer expedited filing for LLCs, Incfile can internally expedite your order to ensure the fastest delivery to the state for filing.`,
-        },
-        {
-            type: `paragraph`,
-            content: `When you incorporate through Incfile, we charge the state fee to you and pay the Florida Department of State on your behalf when we file your paperwork.`,
-        },
-=======
     ////////////////
     {
       type: `heading`,
@@ -91,18 +52,11 @@ export const filingFeeAndRequirementContent = {
       content: `To create your business in Florida, you’ll file an LLC with the FL Department of State and pay an associated LLC formation fee. Every state has different LLC filing fees and filing times. Here is the current information for Florida:`,
     },
     {
-      type: `gridTable`,
-      headerSize: `5`,
-      columns: `3`,
-      content: {
-        headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
-        rows: [[`$125`, `25 Business Days`, `10 Business Days`]],
-      },
+      type: `dynamic_ar_box`,
     },
     {
       type: `arrow-links`,
       content: [
->>>>>>> master
         {
           text: `Compare State Filing Times`,
           url: `/state-filing-times/`,
@@ -188,54 +142,6 @@ export const filingFeeAndRequirementContent = {
       },
     },
 
-<<<<<<< HEAD
-        ////////////////
-        {
-            type: `heading`,
-            size: 2,
-            content: `Annual Report Requirements for Florida`,
-        },
-        {
-            type: `paragraph`,
-            content: `Most states need to file an annual (or other periodic) report with their department of state. When you file your FL LLC annual report, you may need to pay a fee.`,
-        },
-        {
-            type: `paragraph`,
-            content: `Here are the annual filing requirements for Florida:`,
-        },
-        {
-            type: `dynamic_filing_requirement`,
-            headerSize: `5`,
-            columns: `3`,
-            content: {
-                headers: [
-                    `Frequency`,
-                    `Due Date`,
-                    `Filing Fee`
-                ],
-                rows: [
-                    [`Annually`, `May 1st`, `$139`],
-                ]
-            }
-        },
-        {
-            type: `paragraph`,
-            content: `There is no fee to file a Public Information Report. The fee to file your Franchise Tax Report is based on your LLC revenue.`,
-        },
-        {
-            type: `box-cta`, 
-            color: color.green3,
-            styles: { fontSize: `25px` },
-            bgImage: [BgBoxAnnualReport],
-            content: {
-                title: `Incfile can also complete and file your Florida Public Information Report on your behalf.`,
-                button: {
-                    text: `Incfile’s Florida Annual Report Filing Service`,
-                    url: `/manage-your-company/annual-report/`
-                }
-            }
-        },
-=======
     ////////////////
     {
       type: `heading`,
@@ -251,13 +157,7 @@ export const filingFeeAndRequirementContent = {
       content: `Here are the annual filing requirements for Florida:`,
     },
     {
-      type: `gridTable`,
-      headerSize: `5`,
-      columns: `3`,
-      content: {
-        headers: [`Frequency`, `Due Date`, `Filing Fee`],
-        rows: [[`Annually`, `May 1st`, `$139`]],
-      },
+      type: `dynamic_filing_requirement`,
     },
     {
       type: `paragraph`,
@@ -276,7 +176,6 @@ export const filingFeeAndRequirementContent = {
         },
       },
     },
->>>>>>> master
 
     //////////////////
     {

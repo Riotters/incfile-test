@@ -56,7 +56,7 @@ function TexasLLCIndex() {
             <SEO title="LLCs in Texas | Guide to Forming an LLC in Texas" description="Ready to form your Texas LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
 
             <LinearBgHeader imageMapName="tx-map-2x">
-                <HomeHeader content={HomePageContent.header} dataApi={dataApi} />
+                <HomeHeader content={HomePageContent.header} data={dataApi} />
             </LinearBgHeader>
 
             <WrapperContent>

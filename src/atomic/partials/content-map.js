@@ -24,6 +24,8 @@ import LLCTable from "../organisms/tables/llc-table";
 import Whitebox from "../atoms/boxes/white-box";
 import IconChildrenColorBox from "../molecules/text-blocks/icon-h4-children-color";
 import RoundedTopImageBox from "../molecules/mixed-blocks/top-image-box-rounded";
+import AnnualReportBoxOnly from "../states-llc/annual-report-box-only";
+import FilingRequirementBox from "../states-llc/filingRequirementBox";
 
 const Wrapper = styled.div`
   display: flex;
@@ -34,7 +36,7 @@ const Wrapper = styled.div`
   }
 `;
 
-const Content = ({ content }) => {
+const Content = ({ content, data }) => {
     return (
         <Wrapper>
             {content.map((item, i) => (

@@ -16,11 +16,7 @@ export const HomePageContent = {
         desc: `Incfile can take care of all your LLC formation paperwork—and we’ll do it for free. Just pay the required Florida state fee ($[STATE_FEE]).`,
         button: {
           text: `Form Your LLC Now`,
-<<<<<<< HEAD
           url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=FL`,
-=======
-          url: "https://www.incfile.com/form-order-now.php?entityType=LLC&entityState=FL",
->>>>>>> master
         },
       },
     ],
@@ -136,42 +132,7 @@ export const HomePageContent = {
         },
         heading2: `Can I Expedite the Formation of My Business in Florida?`,
         text4: `The State of Florida does not offer expedited filing for LLCs and will process online filings in the order in which they are received. Incfile can internally expedite your order to ensure the fastest delivery to the state for filing.`,
-        annualReport: [
-          {
-            title: `What are the fees and requirements to form a business in Florida?`,
-            items: [
-              {
-                text1: `State Fee`,
-                text2: `$125`,
-              },
-              {
-                text1: `State Filing Time`,
-                text2: `25 business days`,
-              },
-              {
-                text1: `Expedited Filing Time`,
-                text2: `10 business days`,
-              },
-            ],
-          },
-          {
-            title: `Annual Report`,
-            items: [
-              {
-                text1: `Frequency:`,
-                text2: `Annually`,
-              },
-              {
-                text1: `Due Date:`,
-                text2: `May 1st`,
-              },
-              {
-                text1: `Filing Fee:`,
-                text2: `$139`,
-              },
-            ],
-          },
-        ],
+        
       },
       step5: {
         heading1: `STEP 5: Get an Employer Identification Number (EIN) From the Internal Revenue Service`,
