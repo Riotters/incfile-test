@@ -4,7 +4,7 @@ export const top = {
   button: [
     {
       text: "Check Name Availability",
-      url: "/",
+      url: "#form",
     },
   ],
 };
@@ -57,7 +57,11 @@ export const search = {
 export const newRules = {
   header: `Rules About How You Should Name Your Virginia Business`,
   text: `All businesses formed in Virginia must be named following certain rules.`,
-  cards: [{ text: `Typically, the Virginia State Corporation Commission will not allow you to form a business with a name that implies association with a VA state entity, or one that implies an illegal purpose for your business.` }, { text: `If your Virginia business is an LLC, it must contain “Limited Liability Company” or an abbreviation. If it’s a corporation, it must contain a word like “Incorporated,” “Corporation” or something similar.` }, { text: `Your Virginia business name should not be confusable with or similar to another business in VA.` }],
+  cards: [
+    { text: `Typically, the Virginia State Corporation Commission will not allow you to form a business with a name that implies association with a VA state entity, or one that implies an illegal purpose for your business.` },
+    { text: `If your Virginia business is an LLC, it must contain “Limited Liability Company” or an abbreviation. If it’s a corporation, it must contain a word like “Incorporated,” “Corporation” or something similar.` },
+    { text: `Your Virginia business name should not be confusable with or similar to another business in VA.` },
+  ],
 };
 
 export const specificRules = {
@@ -87,23 +91,23 @@ export const faq = {
     {
       question: `What else should I know before I start my LLC or Corporation?`,
       answer: [
-         {
+        {
           text: `We’ve put together comprehensive guides on how to start an LLC or corporation in Virginia, including information on business formation, annual reports, registered agents, and Virginia business taxes. See the`,
-         },
-         {
+        },
+        {
           text: `VA LLC`,
           url: `/`,
-         },
-         {
+        },
+        {
           text: `or`,
-         },
-         {
+        },
+        {
           text: `VA Corporation`,
           url: `/`,
-         },
-         {
+        },
+        {
           text: `guides for more information.`,
-         },
+        },
       ],
     },
     {
@@ -158,12 +162,7 @@ export const faq = {
           text: `— you'll want to choose a name that will:`,
         },
       ],
-      list: [
-        `Matter to business customers`,
-        `Be memorable enough to stand out`,
-        `Best represent your product or services`,
-        `Not be used by another business in Virginia`,
-      ],
+      list: [`Matter to business customers`, `Be memorable enough to stand out`, `Best represent your product or services`, `Not be used by another business in Virginia`],
     },
     {
       question: `What’s the Best Way to Stop My Virginia Business Name From Being Used by Someone Else?`,
