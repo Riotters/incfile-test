@@ -62,7 +62,7 @@ const SettingBusiness = () => (
                         You will need a separate business bank account
                         for your bookstore business. You might also want
                         to consider a business credit card. Additionally, you will also need to keep careful bookkeeping
-                        records and file business and personal taxes. Here at Incfile we can even <Link to="/">help you file your
+                        records and file business and personal taxes. Here at Incfile we can even <Link to="https://www.incfile.com/business-accounting/">help you file your
                         taxes</Link>.
                     </p>
                 </TopImageBox>

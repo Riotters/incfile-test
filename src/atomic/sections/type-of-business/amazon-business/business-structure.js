@@ -79,7 +79,7 @@ const CoachBusinessStructure = () => (
                 >
                     <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                mixed={true}>
-                        <FlexLink to="/">
+                        <FlexLink to="">
                             <IconCircle circleColor="transparent" iconColor={color.blue1}>
                                 <ArrowSVG/>
                             </IconCircle>
@@ -110,7 +110,7 @@ const CoachBusinessStructure = () => (
                 >
                     <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                mixed={true}>
-                        <FlexLink to="/">
+                        <FlexLink to="https://www.incfile.com/form-order-now.php?entityType=LLC">
                             <IconCircle circleColor="transparent" iconColor={color.blue1}>
                                 <ArrowSVG/>
                             </IconCircle>
@@ -141,7 +141,7 @@ const CoachBusinessStructure = () => (
                 >
                     <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                mixed={true}>
-                        <FlexLink to="/">
+                        <FlexLink to="https://www.incfile.com/form-order-now.php?entityType=LLC">
                             <IconCircle circleColor="transparent" iconColor={color.blue1}>
                                 <ArrowSVG/>
                             </IconCircle>
@@ -172,7 +172,7 @@ const CoachBusinessStructure = () => (
                 >
                     <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                mixed={true}>
-                        <FlexLink to="/">
+                        <FlexLink to="https://www.incfile.com/form-order-now.php?entityType=S-Corporation">
                             <IconCircle circleColor="transparent" iconColor={color.blue1}>
                                 <ArrowSVG/>
                             </IconCircle>
@@ -202,7 +202,7 @@ const CoachBusinessStructure = () => (
                 >
                     <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                                mixed={true}>
-                        <FlexLink to="/">
+                        <FlexLink to="https://www.incfile.com/form-order-now.php?entityType=C-Corporation">
                             <IconCircle circleColor="transparent" iconColor={color.blue1}>
                                 <ArrowSVG/>
                             </IconCircle>
@@ -218,15 +218,15 @@ const CoachBusinessStructure = () => (
 
                 <Paragraph big style={{paddingTop: "48px", paddingBottom: 0}} mixed={true}>
                     For more information on the advantages and disadvantages of different types of businesses,
-                    <Link to="/">please see our in-depth guide</Link>. If you've still got
-                    questions, <Link to="/">we've answered them to help you
+                    <Link to="https://www.incfile.com/business-entity-comparison/">please see our in-depth guide</Link>. If you've still got
+                    questions, <Link to="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/">we've answered them to help you
                     choose the right business structure.</Link>
                 </Paragraph>
                 <Paragraph big mixed={true} style={{marginBottom: "48px", paddingBottom: 0}}>
                     In most cases our recommendation would be to create an LLC, We've
-                    <Link to="/">got a complete guide to everything you need to do</Link> and we can
+                    <Link to="https://www.incfile.com/form-an-llc/">got a complete guide to everything you need to do</Link> and we can
                     set one up for your Amazon Seller
-                    business. <Link to="/">LLC formation dose vary from state
+                    business. <Link to="https://www.incfile.com/llc-state-information/">LLC formation dose vary from state
                     to state</Link>, but we've got you covered, wherever you are.
                 </Paragraph>
 

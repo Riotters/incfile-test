@@ -11,6 +11,7 @@ import OvalSvg from "../../../../images/oval-babyblue-1.inline.svg";
 import OvalSvgBottom from "../../../../images/oval-babyblue-2.inline.svg";
 import CurveSvg from "../../../../images/curve-babyblue-1.inline.svg";
 import {adventages} from "../../../../static/type-of-business/airbnb";
+import { Link } from "gatsby";
 
 const AirbnbTaxes = () => (
     <BabyBlueContainer>

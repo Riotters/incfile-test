@@ -23,7 +23,7 @@ const HireEmployees = () => (
                 Since you won’t be able to run your bar or club solo, you will need to hire employees.
                 Additionally, because bar and server wages are typically very low and supplemented with tips,
                 expect to have a fairly high staff turnover. This could mean you spend a lot of time
-                interviewing and hiring. See our <Link to="/">10 tips on hiring employees</Link>.
+                interviewing and hiring. See our <Link to="https://www.incfile.com/blog/post/avoid-confusion-when-hiring/">10 tips on hiring employees</Link>.
             </Paragraph>
             <Paragraph big>
                 Your bartenders will be mixing and pouring drinks, which means their speed, efficiency and pour
@@ -72,7 +72,7 @@ const HireEmployees = () => (
                     <h4>Get an Employer Identification Number (EIN)</h4>
                     <p>
                         Contact the IRS and let them know you will need an EIN for your bar business. This is a
-                        number you will use to file and pay your taxes. We put together this <Link to="/">guide to
+                        number you will use to file and pay your taxes. We put together this <Link to="https://www.incfile.com/manage-your-company/tax-id-ein/">guide to
                         getting your
                         EIN</Link>.
                     </p>
@@ -92,8 +92,8 @@ const HireEmployees = () => (
                         You do have certain responsibilities and requirements for hiring employees. In addition to
                         getting a proper employment contract in place with them, you have
                         a duty to provide them with a safe working environment, proper training, regular pay and
-                        certain other criteria. <Link to="/">OSHA</Link> covers your health and safety requirements,
-                        while the <Link to="/">U.S.
+                        certain other criteria. <Link to="https://www.osha.gov/as/opa/worker/employer-responsibility.html">OSHA</Link> covers your health and safety requirements,
+                        while the <Link to="https://www.dol.gov/general/topics">U.S.
                         Department</Link> of Labor provides information on other responsibilities.
                     </p>
                 </TopImageBox>

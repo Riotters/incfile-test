@@ -137,14 +137,14 @@ const TabScrollable = ({layout, columns}) => {
                                                     permits
                                                     on the website for your Secretary of State. You can find all those
                                                     details
-                                                    in our <Link to="/">state-by-state guides to company
+                                                    in our <Link to="https://www.incfile.com/llc-state-information/">state-by-state guides to company
                                                     formation</Link>.
                                                     Alternatively, the
                                                     Small
-                                                    Business Administration website has a <Link to="/">list of licenses
+                                                    Business Administration website has a list of licenses
                                                     and
                                                     permits by
-                                                    state</Link>.
+                                                    state.
                                                 </Paragraph>
                                             </div>
                                         </CountingTextBoxed>
@@ -160,7 +160,7 @@ const TabScrollable = ({layout, columns}) => {
                                                     Federal
                                                 </Paragraph>
                                                 <Paragraph bottomMargin={0} mixed>
-                                                    The Small Business Administration provides <Link to="/">details of
+                                                    The Small Business Administration provides <Link to="https://www.sba.gov/business-guide/launch-your-business/apply-licenses-permits">details of
                                                     any
                                                     national
                                                     or federal licenses and permits</Link> you might need.
@@ -268,7 +268,7 @@ const TabScrollable = ({layout, columns}) => {
                                                     Workers compensation insurance
                                                 </Paragraph>
                                                 <Paragraph bottomMargin={0} mixed>
-                                                    <Link to="/">This insurance</Link> provides coverage for job-related
+                                                    <Link to="https://www.incfile.com/blog/post/forming-an-llc-with-employees-means-purchasing-workers-compensation/">This insurance</Link> provides coverage for job-related
                                                     illnesses,
                                                     disabilities
                                                     or injuries that affect employees. Regulations for this insurance
@@ -323,7 +323,7 @@ const TabScrollable = ({layout, columns}) => {
                                         </Paragraph>
 
                                         <Paragraph big mixed={true}>
-                                            Although you can act as your own <Link to="/">Registered Agent</Link>, we
+                                            Although you can act as your own <Link to="https://www.incfile.com/manage-your-company/registered-agent/">Registered Agent</Link>, we
                                             recommend using a
                                             professional service. It ensures there will always be someone available to
                                             receive important legal documentation on your behalf and also removes your
@@ -332,9 +332,8 @@ const TabScrollable = ({layout, columns}) => {
                                         </Paragraph>
 
                                         <Paragraph big mixed={true}>
-                                            When you <Link to="/">incorporate through us</Link>, we provide a <Link
-                                            to="/">complete
-                                            Registered Agent service</Link>
+                                            When you <Link to="https://www.incfile.com/form-order-now.php">incorporate through us</Link>, we provide a complete
+                                            Registered Agent service
                                             free for the first year.
                                         </Paragraph>
 
@@ -463,7 +462,7 @@ const TabScrollable = ({layout, columns}) => {
 
                         <Paragraph big style={{marginTop: "48px"}}>
                             As a rule of thumb, we recommend keeping back around a third of your earnings to
-                            pay your taxes. We can <Link to="/">prepare and file your tax returns for you</Link>.
+                            pay your taxes. We can <Link to="https://www.incfile.com/business-accounting/">prepare and file your tax returns for you</Link>.
                         </Paragraph>
                     </PanelWrapper>
 

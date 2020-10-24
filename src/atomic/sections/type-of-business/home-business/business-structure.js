@@ -72,7 +72,7 @@ const BusinessStructure = () => (
           widthUnit="%"
         >
           <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-            <FlexLink to="/">
+            <FlexLink to="">
               <IconCircle circleColor="transparent" iconColor={color.blue1}>
                 <ArrowSVG />
               </IconCircle>
@@ -98,7 +98,7 @@ const BusinessStructure = () => (
           widthUnit="%"
         >
           <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-            <FlexLink to="/">
+            <FlexLink to="">
               <IconCircle circleColor="transparent" iconColor={color.blue1}>
                 <ArrowSVG />
               </IconCircle>
@@ -124,7 +124,7 @@ const BusinessStructure = () => (
           widthUnit="%"
         >
           <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-            <FlexLink to="/">
+            <FlexLink to="">
               <IconCircle circleColor="transparent" iconColor={color.blue1}>
                 <ArrowSVG />
               </IconCircle>
@@ -150,7 +150,7 @@ const BusinessStructure = () => (
           widthUnit="%"
         >
           <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-            <FlexLink to="/">
+            <FlexLink to="">
               <IconCircle circleColor="transparent" iconColor={color.blue1}>
                 <ArrowSVG />
               </IconCircle>
@@ -176,7 +176,7 @@ const BusinessStructure = () => (
           widthUnit="%"
         >
           <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-            <FlexLink to="/">
+            <FlexLink to="">
               <IconCircle circleColor="transparent" iconColor={color.blue1}>
                 <ArrowSVG />
               </IconCircle>
@@ -188,11 +188,11 @@ const BusinessStructure = () => (
         </TextBlockWithImage>
 
         <Paragraph big mixed={true} style={{ marginBottom: "48px", paddingBottom: 0 }}>
-          For more information on the advantages and disadvantages of different types of businesses, <Link to="/">please see our in-depth guide</Link>. If you've still got questions, <Link to="/">we've answered them to help you choose the right business structure</Link>.
+          For more information on the advantages and disadvantages of different types of businesses, <Link to="https://www.incfile.com/business-entity-comparison/">please see our in-depth guide</Link>. If you've still got questions, <Link to="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/">we've answered them to help you choose the right business structure</Link>.
         </Paragraph>
         <Paragraph big mixed={true} style={{ marginBottom: "48px", paddingBottom: 0 }}>
           In most cases our recommendation would be to create an LLC, We've
-          <Link to="/">got a complete guide to everything you need to do</Link> and we can set one up for your Amazon Seller business. <Link to="/">LLC formation dose vary from state to state</Link>, but we've got you covered, wherever you are.
+          <Link to="https://www.incfile.com/form-an-llc/">got a complete guide to everything you need to do</Link> and we can set one up for your Amazon Seller business. <Link to="https://www.incfile.com/llc-state-information/">LLC formation dose vary from state to state</Link>, but we've got you covered, wherever you are.
         </Paragraph>
 
         <Button theme="primary48" width="365px" arrow content={{ url: `${process.env.ORDER_URL}/form-order-now.php`, text: `Start your business with us, today!` }} />

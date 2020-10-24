@@ -62,7 +62,7 @@ const SettingBusiness = () => (
                 <TopImageBox image="state-filling-fees" color={color.yellow3}>
                     <h4>Finances and taxes</h4>
                     <p>
-                        What kind of bank account will you get? Do you need a business credit card? How will you pay your business taxes? These are important questions to consider so your laundromat business stays in the green. Here at Incfile, <Link to="/">we can even help you file your taxes</Link>.
+                        What kind of bank account will you get? Do you need a business credit card? How will you pay your business taxes? These are important questions to consider so your laundromat business stays in the green. Here at Incfile, <Link to="https://www.incfile.com/business-accounting/">we can even help you file your taxes</Link>.
                     </p>
                 </TopImageBox>
 

@@ -36,7 +36,7 @@ const BoutiqueTaxes = () => (
                 </Paragraph>
                 <Paragraph big mixed={true}>
                     As a rule of thumb, we recommend holding back around a third of your earnings to pay your taxes. We
-                    can also <Link to="/">prepare and file your tax returns for you.</Link>
+                    can also <Link to="https://www.incfile.com/business-accounting/">prepare and file your tax returns for you.</Link>
                 </Paragraph>
             </TextWrapper>
         </Container>

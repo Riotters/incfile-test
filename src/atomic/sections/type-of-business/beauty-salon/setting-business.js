@@ -45,7 +45,7 @@ const SettingBusiness = () => (
                 <TopImageBox image="measuring-business-success" color={color.babyblue3}>
                     <h4>Business maintenance</h4>
                     <p>
-                        Most states require businesses to file an <Link to="/">Annual Report</Link> once a year. You will also be expected to pay estimated taxes on what you plan to earn in the current business year. Your federal, state, regional and city <Link to="/">business licenses and permits</Link> may need to be renewed on a regular basis, typically once a year.
+                        Most states require businesses to file an <Link to="https://www.incfile.com/manage-your-company/annual-report/">Annual Report</Link> once a year. You will also be expected to pay estimated taxes on what you plan to earn in the current business year. Your federal, state, regional and city <Link to="https://www.incfile.com/business-license-research-package/">business licenses and permits</Link> may need to be renewed on a regular basis, typically once a year.
                     </p>
                 </TopImageBox>
 
@@ -66,7 +66,7 @@ const SettingBusiness = () => (
                 <TopImageBox image="state-filling-fees" color={color.yellow3}>
                     <h4>Finances and taxes</h4>
                     <p>
-                        What kind of bank account will you get? Do you need a <Link to="/">business credit card</Link>? How will you pay your business taxes? These are important questions to consider so your beauty salon business stays in the green. Here at Incfile, we can even <Link to="/">help you file your taxes</Link>.
+                        What kind of bank account will you get? Do you need a <Link to="http://t.tihop.com/cgi/r?;n=203;c=1666272;s=7273;x=7936;f=201908011042310;u=j;z=TIMESTAMP;src=663024">business credit card</Link>? How will you pay your business taxes? These are important questions to consider so your beauty salon business stays in the green. Here at Incfile, we can even <Link to="https://www.incfile.com/business-accounting/">help you file your taxes</Link>.
                     </p>
                 </TopImageBox>
 

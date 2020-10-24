@@ -43,7 +43,7 @@ const SettingBusiness = () => (
                     <p>
                         In addition to the strict rules and agreements you will have with the franchisor, there are also
                         federal, state, local and industry-specific permits, licenses and regulations you will need to
-                        follow. Incfile can conduct a <Link to="/">Business License Research</Link> package for you or you can take the time
+                        follow. Incfile can conduct a <Link to="https://www.incfile.com/business-license-research-package/">Business License Research</Link> package for you or you can take the time
                         to do the research yourself.
                     </p>
                 </TopImageBox>
@@ -51,9 +51,9 @@ const SettingBusiness = () => (
                 <TopImageBox image="state-filling-fees" color={color.yellow3}>
                     <h4>Finances and Taxes</h4>
                     <p>
-                        You will need a separate business bank account for your franchise business. You might also want
-                        to consider a business credit card. Additionally, you will also need to keep careful bookkeeping
-                        records and file business and personal taxes. Here at Incfile we can even <Link to="/">help you file your
+                        You will need a separate <Link to="https://utility.bankofamerica.com/alliance/?formid=IF1">business bank account</Link> for your franchise business. You might also want
+                        to consider a <Link to="http://t.tihop.com/cgi/r?;n=203;c=1666272;s=7273;x=7936;f=201908011042310;u=j;z=TIMESTAMP;src=663024">business credit card</Link>. Additionally, you will also need to keep careful bookkeeping
+                        records and file business and personal taxes. Here at Incfile we can even <Link to="https://www.incfile.com/business-accounting/">help you file your
                         taxes</Link>.
                     </p>
                 </TopImageBox>
@@ -98,9 +98,9 @@ const SettingBusiness = () => (
                 <TopImageBox image="measuring-business-success" color={color.babyblue3}>
                     <h4>Business maintenance</h4>
                     <p>
-                        Most states require businesses to file an <Link to="/">Annual Report</Link> report once a year. You will also be
+                        Most states require businesses to file an <Link to="https://www.incfile.com/manage-your-company/annual-report/">Annual Report</Link> report once a year. You will also be
                         expected to pay estimated taxes on what you plan to earn in the current business year. Your
-                        federal, state, regional and city <Link to="/">business licenses and permits</Link> may need to be renewed on a
+                        federal, state, regional and city <Link to="https://www.incfile.com/business-license-research-package/">business licenses and permits</Link> may need to be renewed on a
                         regular basis, typically once a year.
                     </p>
                 </TopImageBox>
