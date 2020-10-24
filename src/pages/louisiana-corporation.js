@@ -83,53 +83,46 @@ const AlaskaCorporation = () => (
               Choosing a Corporation Name
             </Heading>
             <Paragraph big>
-            The name you decide on for your new corporation cannot be the same as or deceptively similar to the name of any other Louisiana business entity registered or reserved with the state. The name may not include language that states or implies that the corporation is organized for a charitable or nonprofit purpose other than one permitted by state law or than stated in its articles of incorporation. It also may not contain the phrase “doing business as.”
+              The name you decide on for your new corporation cannot be the same as or deceptively similar to the name of any other Louisiana business entity registered or reserved with the state. The name may not include language that states or implies that the corporation is organized for a
+              charitable or nonprofit purpose other than one permitted by state law or than stated in its articles of incorporation. It also may not contain the phrase “doing business as.”
             </Paragraph>
-            <Paragraph big>
-            The name must, however, include the words “incorporated,” “corporation,” “limited,” or “company,” or an abbreviation of one of those terms. If using the word “company,” it may be preceded by the word “and” or an equivalent symbol, such as “&.”
-            </Paragraph>
+            <Paragraph big>The name must, however, include the words “incorporated,” “corporation,” “limited,” or “company,” or an abbreviation of one of those terms. If using the word “company,” it may be preceded by the word “and” or an equivalent symbol, such as “&.”</Paragraph>
             <Paragraph big style={{ marginBottom: "0" }}>
-            Available corporate names can be initially reserved with the state for up to 60 days for a $25 fee, with up to two 30-day extensions upon request.
+              Available corporate names can be initially reserved with the state for up to 60 days for a $25 fee, with up to two 30-day extensions upon request.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Articles of Incorporation
             </Heading>
-            <Paragraph big>
-            The Louisiana Business Law-contained in Title XII (Corporations and Associations), Chapter 1, of the Louisiana Revised Statutes-requires that articles of incorporation must be filed with the Louisiana Secretary of State
-            </Paragraph>
+            <Paragraph big>The Louisiana Business Law-contained in Title XII (Corporations and Associations), Chapter 1, of the Louisiana Revised Statutes-requires that articles of incorporation must be filed with the Louisiana Secretary of State</Paragraph>
 
             <Colorbox color={color.blue3} content={articlesOfIncorporation.box1} dotsColor={color.blue1} style={{ marginBottom: "65px" }} />
 
             <Paragraph big>The filing fee is $60. The articles should be delivered by one or more incorporators, who may be anyone you choose.</Paragraph>
             <Colorbox color={color.orange3} content={articlesOfIncorporation.box2} dotsColor={color.orange1} style={{ marginBottom: "48px" }} />
             <Paragraph big>Louisiana also requires that an Initial Report be filed along with the articles of incorporation, containing the name and address of any initial directors and the street address and municipal location of the corporation’s registered office and registered agent.</Paragraph>
-
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Registered Agent and Office
             </Heading>
+            <Paragraph big>Louisiana corporations must have a registered agent in the state-the person or office designated to receive official administrative and legal correspondence from the state.</Paragraph>
             <Paragraph big>
-            Louisiana corporations must have a registered agent in the state-the person or office designated to receive official administrative and legal correspondence from the state.
+              The registered agent must be: a resident individual of Louisiana; a business corporation; a partnership or professional law corporation authorized to conduct business in Louisiana; or a foreign (out-of-state) corporation authorized to transact business in Louisiana.
             </Paragraph>
-            <Paragraph big>
-            The registered agent must be: a resident individual of Louisiana; a business corporation; a partnership or professional law corporation authorized to conduct business in Louisiana; or a foreign (out-of-state) corporation authorized to transact business in Louisiana.
-            </Paragraph>
-            <Paragraph big>
-            Louisiana requires that every corporation maintain a registered office in the Bayou State, which is considered the Louisiana corporation’s domicile.
-            </Paragraph>
+            <Paragraph big>Louisiana requires that every corporation maintain a registered office in the Bayou State, which is considered the Louisiana corporation’s domicile.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Bylaws
             </Heading>
             <Paragraph big>
-            Bylaws govern the corporation’s business and affairs. A Louisiana corporation is required to keep its bylaws available at its principal executive office, but it is not required to file them with the state. The incorporators or board of directors should adopt the corporation’s bylaws at their first meeting, insuring that there is no conflict with the corporation’s articles of incorporation. They should also keep them updated as time goes on.
+              Bylaws govern the corporation’s business and affairs. A Louisiana corporation is required to keep its bylaws available at its principal executive office, but it is not required to file them with the state. The incorporators or board of directors should adopt the corporation’s bylaws at
+              their first meeting, insuring that there is no conflict with the corporation’s articles of incorporation. They should also keep them updated as time goes on.
             </Paragraph>
             <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            Bylaws set forth the corporation’s basic operating principles from both the managerial and legal perspectives, and should include (as a minimum):
+              Bylaws set forth the corporation’s basic operating principles from both the managerial and legal perspectives, and should include (as a minimum):
             </Paragraph>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
@@ -161,7 +154,8 @@ const AlaskaCorporation = () => (
               Directors
             </Heading>
             <Paragraph big>
-            Officers of the company must be either listed in the bylaws or elected by the board. A president, secretary, treasurer, and one or more vice presidents must be elected by the board of directors. However, if the officers are listed in the articles or an amendment to them, a street or physical address must be listed for each officer. An officer may hold more than one office in a Louisiana corporation, provided that no officer signs a certificate or other legal instrument in more than one capacity.
+              Officers of the company must be either listed in the bylaws or elected by the board. A president, secretary, treasurer, and one or more vice presidents must be elected by the board of directors. However, if the officers are listed in the articles or an amendment to them, a street or
+              physical address must be listed for each officer. An officer may hold more than one office in a Louisiana corporation, provided that no officer signs a certificate or other legal instrument in more than one capacity.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -169,11 +163,11 @@ const AlaskaCorporation = () => (
               Requirement Reports
             </Heading>
             <Paragraph big style={{ marginBottom: "48px" }}>
-            Louisiana corporations must file a report annually on or before their anniversary of incorporation with the Commercial Division of the Louisiana Secretary of State’s office. 
+              Louisiana corporations must file a report annually on or before their anniversary of incorporation with the Commercial Division of the Louisiana Secretary of State’s office.
             </Paragraph>
 
             <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            The annual report must include the following:
+              The annual report must include the following:
             </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>The street address and municipal location of the corporation’s registered office, registered agent, directors, and officers</Paragraph>
@@ -238,7 +232,7 @@ const AlaskaCorporation = () => (
         <Accordion content={questions} curve curveColor={color.blue1} curveLeft="-15px" />
       </ContentCenter>
       <ContentCenter style={{ marginBottom: "48px" }}>
-        <Button content={{ text: `View all corporation FAQ's`, url: `/` }} width={300} padding="12px 48px" />
+        <Button content={{ text: `View all corporation FAQ's`, url: `/research-topics/c-corporation-info/` }} width={300} padding="12px 48px" />
       </ContentCenter>
     </QuestionSection>
 

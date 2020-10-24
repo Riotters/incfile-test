@@ -16,6 +16,9 @@ import FeeFilingRequirementSection from "../../atomic/states-llc/georgia/fee-fil
 import { filingFeeAndRequirementContent } from "../../static/states-llc/georgia/filingFeeAndRequirement";
 import { tabPages, rocket } from "../../static/states-llc/georgia/general";
 
+import { getFullPricesAndFilings } from '../../api/Api';
+
+
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -39,25 +42,35 @@ const Wrapper = styled.div`
   }
 `;
 
-const filingFeeAndRequirementPage = () => (
-  <Layout>
-    <SEO title="Filing Requirements & Fees for Georgia LLCs | Incfile.com" description="Make sense of the required forms, fees, and filing procedures for your Georgia LLC with Incfile's easy-to-use guide. Read more." />
+const FilingFeeAndRequirementPage = () => {
+    const [dataApi, setDataApi] = React.useState({});
 
-    <LinearBgHeader position="to top" imageMapName="tx-map-2x">
-      <ContentHeader content={filingFeeAndRequirementContent.header} />
-    </LinearBgHeader>
+    React.useEffect(() => {
+        getFullPricesAndFilings('Georgia').then(data => {
+            setDataApi(data);
+        });
+    }, []);
 
-    <WrapperContent>
-      <Wrapper>
-        <LeftTabPages content={tabPages} />
-        <MainPageContent>
-          <FeeFilingRequirementSection content={filingFeeAndRequirementContent.content} />
-        </MainPageContent>
-      </Wrapper>
-    </WrapperContent>
+    return (
+        <Layout>
+            <SEO title="Filing Requirements & Fees for Georgia LLCs | Incfile.com" description="Make sense of the required forms, fees, and filing procedures for your Georgia LLC with Incfile's easy-to-use guide. Read more." />
+    
+            <LinearBgHeader position="to top" imageMapName="tx-map-2x">
+                <ContentHeader content={filingFeeAndRequirementContent.header} />
+            </LinearBgHeader>
+    
+            <WrapperContent>
+                <Wrapper>
+                    <LeftTabPages content={tabPages} />
+                    <MainPageContent>
+                        <FeeFilingRequirementSection content={filingFeeAndRequirementContent.content} data={dataApi} />
+                    </MainPageContent>
+                </Wrapper>
+            </WrapperContent>
+    
+            <Rocket content={rocket} />
+        </Layout >
+    );
+}
 
-    <Rocket content={rocket} />
-  </Layout>
-);
-
-export default filingFeeAndRequirementPage;
+export default FilingFeeAndRequirementPage;

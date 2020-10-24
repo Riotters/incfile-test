@@ -49,7 +49,7 @@ const RecordLabel = () => (
       <h1>How to Start a Record Label</h1>
       <p>If you want to get into the music business, then starting your own record company could be a great idea. Whether you’re a band or artist that wants to control your own destiny, or you want to sign and promote the talents of others, owning a record label gives you options.</p>
       <ButtonsBox>
-        <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{ url: "/", text: "Start Now" }} />
+        <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{ url: `${process.env.ORDER_URL}/form-order-now.php`, text: "Start Now" }} />
       </ButtonsBox>
 
       <RatingRow>

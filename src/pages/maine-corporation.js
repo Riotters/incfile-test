@@ -83,29 +83,24 @@ const AlaskaCorporation = () => (
               Choosing a Corporation Name
             </Heading>
             <Paragraph big>
-            Your new corporation’s name must be distinguishable from all other business entities already registered or reserved with the Maine Secretary of State. The name does not (unlike most other states) have to include a corporate designator, such as “Inc.” or “Corporation.” However, many consider it advisable to include such a designation anyway, to let potential customers know that you are incorporated.
+              Your new corporation’s name must be distinguishable from all other business entities already registered or reserved with the Maine Secretary of State. The name does not (unlike most other states) have to include a corporate designator, such as “Inc.” or “Corporation.” However, many
+              consider it advisable to include such a designation anyway, to let potential customers know that you are incorporated.
             </Paragraph>
-            <Paragraph big>
-            The name is not permitted, however, to contain language that states or implies that the corporation is organized for some purpose other than that permitted by state law and the corporation’s articles of incorporation.
-            </Paragraph>
-            <Paragraph big>
-            Additionally, the name request may be refused if the Secretary of State finds the requested name to be obscene, promoting of abusive or unlawful activity, falsely suggestive of some association with public institutions, or of violating any other state laws.
-            </Paragraph>
+            <Paragraph big>The name is not permitted, however, to contain language that states or implies that the corporation is organized for some purpose other than that permitted by state law and the corporation’s articles of incorporation.</Paragraph>
+            <Paragraph big>Additionally, the name request may be refused if the Secretary of State finds the requested name to be obscene, promoting of abusive or unlawful activity, falsely suggestive of some association with public institutions, or of violating any other state laws.</Paragraph>
             <Paragraph big style={{ marginBottom: "0" }}>
-            An available corporate name can be reserved for 120 days for $25.
+              An available corporate name can be reserved for 120 days for $25.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Articles of Incorporation
             </Heading>
-            <Paragraph big>
-            State law requires that the new Maine corporation file articles of incorporation with the Secretary of State, delivered by at least one incorporator and accompanied by a filing fee of $145.
-            </Paragraph>
+            <Paragraph big>State law requires that the new Maine corporation file articles of incorporation with the Secretary of State, delivered by at least one incorporator and accompanied by a filing fee of $145.</Paragraph>
 
             <Colorbox color={color.blue3} content={articlesOfIncorporation.box1} dotsColor={color.blue1} style={{ marginBottom: "65px" }} />
             <Paragraph big>
-            Maine law no longer uses the concept of par value for shares, so you only need to specify the number of shares you wish to authorize for later issuance to shareholders. The filing fee is not based on the number of authorized shares, so you can authorize as many as you wish.
+              Maine law no longer uses the concept of par value for shares, so you only need to specify the number of shares you wish to authorize for later issuance to shareholders. The filing fee is not based on the number of authorized shares, so you can authorize as many as you wish.
             </Paragraph>
 
             <Colorbox color={color.orange3} content={articlesOfIncorporation.box2} dotsColor={color.orange1} style={{ marginBottom: "48px" }} />
@@ -115,24 +110,23 @@ const AlaskaCorporation = () => (
               Registered Agent and Office
             </Heading>
             <Paragraph big>
-            Every Maine corporation must have a clerk, who must be a natural person who is a Maine resident. (In other states, this position is usually called the “registered agent.”) The clerk is the person designated to receive official state administrative and legal correspondence, including notice if the corporation is served with a lawsuit. The clerk may be-but is not required to be-one of the directors or officers of the corporation, or the clerk may be a person holding no other position with the corporation. The clerk must be appointed by the corporation’s board of directors unless the articles of incorporation reserve appointment of the clerk to the shareholders.
+              Every Maine corporation must have a clerk, who must be a natural person who is a Maine resident. (In other states, this position is usually called the “registered agent.”) The clerk is the person designated to receive official state administrative and legal correspondence, including
+              notice if the corporation is served with a lawsuit. The clerk may be-but is not required to be-one of the directors or officers of the corporation, or the clerk may be a person holding no other position with the corporation. The clerk must be appointed by the corporation’s board of
+              directors unless the articles of incorporation reserve appointment of the clerk to the shareholders.
             </Paragraph>
-            <Paragraph big>
-            In addition, the clerk must keep on file a list of all shareholders of the corporation and maintain records of all shareholders’ meetings, including all records of all votes and minutes of the meetings.
-            </Paragraph>
-            <Paragraph big>
-            Maine requires that every corporation maintain a registered office, which may be the same as its place of business.
-            </Paragraph>
+            <Paragraph big>In addition, the clerk must keep on file a list of all shareholders of the corporation and maintain records of all shareholders’ meetings, including all records of all votes and minutes of the meetings.</Paragraph>
+            <Paragraph big>Maine requires that every corporation maintain a registered office, which may be the same as its place of business.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Bylaws
             </Heading>
             <Paragraph big>
-            A corporation is required to keep its bylaws available at its main office, but it is not required to file them with the state. The incorporators or board of directors should adopt the corporation’s bylaws at their first meeting, insuring that there is no conflict with the articles of incorporation or state law. They should also keep the bylaws updated as time goes on.
+              A corporation is required to keep its bylaws available at its main office, but it is not required to file them with the state. The incorporators or board of directors should adopt the corporation’s bylaws at their first meeting, insuring that there is no conflict with the articles of
+              incorporation or state law. They should also keep the bylaws updated as time goes on.
             </Paragraph>
             <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            Bylaws set forth the corporation’s basic operating principles from both the managerial and legal perspectives, and should include, as a minimum:
+              Bylaws set forth the corporation’s basic operating principles from both the managerial and legal perspectives, and should include, as a minimum:
             </Paragraph>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
@@ -163,26 +157,23 @@ const AlaskaCorporation = () => (
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Directors
             </Heading>
+            <Paragraph big>Directors are not required by law to be stockholders, but the articles of incorporation or the bylaws may specify a requirement in this area as well as others.</Paragraph>
             <Paragraph big>
-            Directors are not required by law to be stockholders, but the articles of incorporation or the bylaws may specify a requirement in this area as well as others.
+              The officers of a corporation oversee the day-to-day operations of the organization and carry out the strategic decisions made by the board of directors. They are listed by name in the bylaws or elected by the board, and their titles and duties are stated in the bylaws. They may
+              appoint other officers in compliance with the bylaws.
             </Paragraph>
-            <Paragraph big>
-            The officers of a corporation oversee the day-to-day operations of the organization and carry out the strategic decisions made by the board of directors. They are listed by name in the bylaws or elected by the board, and their titles and duties are stated in the bylaws. They may appoint other officers in compliance with the bylaws.
-            </Paragraph>
-            <Paragraph big>
-            Additionally, at least one officer is responsible for preparing minutes of director and shareholder meetings and for authenticating records. An officer may simultaneously hold more than one office in the corporation.
-            </Paragraph>
+            <Paragraph big>Additionally, at least one officer is responsible for preparing minutes of director and shareholder meetings and for authenticating records. An officer may simultaneously hold more than one office in the corporation.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Requirement Reports
             </Heading>
             <Paragraph big style={{ marginBottom: "48px" }}>
-            A report must be filed with the Maine Secretary of State each year, except for the first year of incorporation. This report must be filed each year between January 1 and June 1 in the calendar year following the year of incorporation
+              A report must be filed with the Maine Secretary of State each year, except for the first year of incorporation. This report must be filed each year between January 1 and June 1 in the calendar year following the year of incorporation
             </Paragraph>
 
             <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            Must indicate:
+              Must indicate:
             </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>The corporation’s name and where it was incorporated</Paragraph>
@@ -200,7 +191,8 @@ const AlaskaCorporation = () => (
               <Paragraph bottomMargin={0}>The names and business or residence addresses of the president or chief executive officer, the treasurer or chief financial officer, and all directors (or shareholders, if no directors)</Paragraph>
             </TextBoxed>
             <Paragraph big style={{ marginBottom: "48px" }}>
-            Each corporation (except for closed corporations) must also file an annual financial statement, not later than five months after the close of the corporate fiscal year, which includes its year-end balance sheet, income statement, and a statement of change of shareholders’ equity, unless this information appears elsewhere in the financial statements.
+              Each corporation (except for closed corporations) must also file an annual financial statement, not later than five months after the close of the corporate fiscal year, which includes its year-end balance sheet, income statement, and a statement of change of shareholders’ equity,
+              unless this information appears elsewhere in the financial statements.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -257,7 +249,7 @@ const AlaskaCorporation = () => (
         <Accordion content={questions} curve curveColor={color.blue1} curveLeft="-15px" />
       </ContentCenter>
       <ContentCenter style={{ marginBottom: "48px" }}>
-        <Button content={{ text: `View all corporation FAQ's`, url: `/` }} width={300} padding="12px 48px" />
+        <Button content={{ text: `View all corporation FAQ's`, url: `/research-topics/c-corporation-info/` }} width={300} padding="12px 48px" />
       </ContentCenter>
     </QuestionSection>
 

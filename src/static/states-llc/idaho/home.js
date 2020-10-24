@@ -6,7 +6,7 @@ export const top = {
   buttons: [
     {
       text: `See detailed pricing`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=ID`,
     },
   ],
 };
@@ -95,7 +95,7 @@ export const howToGuide = [
             <li>Addresses of managers or members of the LLC at the time of filing</li>
             <li>Name of the incorporator</li></br>
             <p>You can file your Idaho Articles of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Idaho, but you only need to file your Articles of Organization once.</p></br>
-            <p><a href="/" target="_blank">Form your LLC now</a></p>`, //https://www.incfile.com/form-order-now.php?entityType=LLC&entityState=ID
+            <p><a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=CO" target="_blank">Form your LLC now</a></p>`,
         },
       ],
     },
@@ -424,7 +424,7 @@ export const namingYourBusiness = [
       },
       {
         text: `If you’re ready to start your LLC, you can formally file your Certificate of Formation with the Idaho SOS, or
-          <a href="/" target="_blank" rel="noopener noreferrer">let Incfile take care of it for you.</a>`, //https://www.incfile.com/form-order-now.php?entityType=LLC&entityState=CO
+          <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=CO" target="_blank" rel="noopener noreferrer">let Incfile take care of it for you.</a>`,
       },
     ],
     marginBottom: 48,
@@ -893,11 +893,7 @@ export const feesAndRequirments = [
     marginBottom: 24,
   },
   {
-    type: `table-simple`,
-    content: {
-      headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
-      rows: [[`$100`, `4 weeks`, `5 business days`]],
-    },
+    type: `dynamic_ar_box`
   },
   {
     type: `arrow-link`,
@@ -986,13 +982,7 @@ export const feesAndRequirments = [
     marginBottom: 24,
   },
   {
-    type: `list-dot`,
-    content: {
-      header: `Annual Report`,
-      list: [`Frequency:  Annually`, `Due Date:  Within 60 days immediately preceding first day of anniversary month.`, `Filing Fee:  $0`],
-    },
-    marginBottom: 16,
-    color: color.blue2,
+    type: `dynamic_filing_requirement`
   },
   {
     type: `text`,

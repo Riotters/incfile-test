@@ -48,29 +48,29 @@ const Wrapper = styled.div`
   }
 `;
 
-const LLCLayout = ({ children }) => {
-  return (
-    <>
-      <Top imageName="mr-bulb-state-information-llc-7342" imageAlt="Mrs Bulb and with checklist" ovalColor="purple-2" textWidth="530">
-        <h1>{top.header}</h1>
-        <p>{top.text}</p>
-        <Buttonsbox>
-          <Button content={top.buttons[0]} theme="primary56" arrow />
-        </Buttonsbox>
-      </Top>
-      <WrapperContent>
-          <Wrapper>
-            {children}
-          </Wrapper>
-      </WrapperContent>
-      <Rocket content={rocket} />
-      <Requirements content={requirements} />
-      <Variants content={variants} />
-      <Compare content={compare} />
-      <Subscription content={subscription} />
-      <Articles />
-    </>
-  );
+const LLCLayout = ({ children, data }) => {
+    return (
+        <>
+            <Top imageName="mr-bulb-state-information-llc-7342" imageAlt="Mrs Bulb and with checklist" ovalColor="purple-2" textWidth="530">
+                <h1>{top.header}</h1>
+                <p>{top.text}</p>
+                <Buttonsbox>
+                    <Button content={top.buttons[0]} theme="primary56" arrow />
+                </Buttonsbox>
+            </Top>
+            <WrapperContent>
+                <Wrapper>
+                    {children}
+                </Wrapper>
+            </WrapperContent>
+            <Rocket content={rocket} />
+            <Requirements content={requirements} data={data} />
+            <Variants content={variants} data={data} />
+            <Compare content={compare} data={data} />
+            <Subscription content={subscription} />
+            <Articles />
+        </>
+    );
 }
 
 export default LLCLayout;

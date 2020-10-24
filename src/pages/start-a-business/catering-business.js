@@ -59,7 +59,7 @@ const CateringBusiness = () => (
       <h1>How to Start a Catering Business</h1>
       <p>Producing delicious food and experiences for your customers is a great way to make a living.</p>
       <ButtonsBox>
-        <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{ url: "/", text: "Start Now" }} />
+        <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{ url: `${process.env.ORDER_URL}/form-order-now.php`, text: "Start Now" }} />
       </ButtonsBox>
 
       <RatingRow>

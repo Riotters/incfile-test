@@ -87,7 +87,7 @@ export const howToGuide = [
           question: `STEP 2: Search for and Choose a Unique Business Name for Your Wyoming LLC`,
           answer: `<p>You will need a distinctive and original name for your Wyoming LLC that’s not used by any other business in WY. To find out if another company is using your chosen business name, carry out a Wyoming business entity name search on the WY Secretary of State website.</p></br>
             <p>There are a few rules you’ll need to follow when choosing an LLC name. You can find out more in our guide to searching for and naming your Wyoming LLC.</p></br>
-            <p><a href="https://www.incfile.com/wyoming-llc/how-to-name-your-llc/" title="Learn about Wyoming LLC business naming rules">Learn about Wyoming LLC
+            <p><a href="/wyoming-llc/how-to-name-your-llc/" title="Learn about Wyoming LLC business naming rules">Learn about Wyoming LLC
             business naming rules</a>.</p>`,
         },
         {
@@ -99,7 +99,7 @@ export const howToGuide = [
           answer: `<p>Every WY LLC must have a “Registered Agent” when it is formed. This is an official position; the Registered Agent is someone who receives official legal and tax correspondence and has responsibility for filing reports with the Wyoming Secretary of State.</p></br> 
             <p>This position can be filled by you, another manager in the business or a dedicated Registered Agent service. Your WY Registered Agent must have a physical street address in Wyoming and must be present to receive important documents for your company during business hours.</p></br>
             <p>At Incfile, all of our packages include a Wyoming Registered Agent service that is free for the first year and just $119 per year afterward. We also have a dashboard where you can log in and easily view any document your Registered Agent has received on your behalf.</p></br>
-            <p><a href="https://www.incfile.com/wyoming-llc/registered-agents-wyoming-llc/" title="Learn more about Wyoming Registered Agents">Learn more about Wyoming Registered Agents</a></p>`,
+            <p><a href="/wyoming-llc/registered-agents-wyoming-llc/" title="Learn more about Wyoming Registered Agents">Learn more about Wyoming Registered Agents</a></p>`,
         },
         {
           question: `STEP 5: Get an Employee Identification Number (EIN) From the Internal Revenue Service`,
@@ -114,7 +114,7 @@ export const howToGuide = [
                 <li>Name of the incorporator</li>
             </ol></br>
             <p>You can file your Wyoming LLC Articles of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Wyoming. You only need to file your Articles of Organization once.</p></br>
-            <a href="https://www.incfile.com/wyoming-llc/registered-agents-wyoming-llc/" title="Learn more about Wyoming Registered Agents">Learn more about Wyoming Registered Agents</a>`,
+            <a href="/wyoming-llc/registered-agents-wyoming-llc/" title="Learn more about Wyoming Registered Agents">Learn more about Wyoming Registered Agents</a>`,
         },
       ],
     },
@@ -161,7 +161,7 @@ export const howToGuide = [
         {
           question: `Form a Foreign LLC in Wyoming`,
           answer: `<p>If your business is already operating in another state and expanding to Wyoming, you’ll need to form a foreign LLC.</p></br>
-          <p>More information on Wyoming <a href="https://www.incfile.com/wyoming-llc/form-filling-permit-requirements/">filing and licensing requirements here</a></p>`,
+          <p>More information on Wyoming <a href="/wyoming-llc/form-filling-permit-requirements/">filing and licensing requirements here</a></p>`,
         },
       ],
     },
@@ -873,11 +873,7 @@ export const feesAndRequirments = [
     marginBottom: 16,
   },
   {
-    type: `table`,
-    content: {
-      headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
-      rows: [[`$85`, `4 Weeks`, `12 Business days`]],
-    },
+    type: `dynamic_ar_box`
   },
   {
     type: `arrow-link`,

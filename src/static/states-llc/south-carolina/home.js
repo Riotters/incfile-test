@@ -829,11 +829,7 @@ export const feesAndRequirments = [
     marginBottom: 32,
   },
   {
-    type: `table-simple`,
-    content: {
-      headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
-      rows: [[`$150`, `7 Business Days`, `2 Business Days`]],
-    },
+    type: `dynamic_ar_box`
   },
   {
     type: `arrow-link`,

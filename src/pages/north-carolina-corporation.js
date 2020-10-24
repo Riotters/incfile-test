@@ -83,13 +83,14 @@ const AlaskaCorporation = () => (
               Choosing a Corporation Name
             </Heading>
             <Paragraph big>
-            Choosing a name for your new North Carolina corporation is one of the first official steps toward actually conducting business in the Tarheel State. The business name you choose must be able to be readily distinguished from all other registered North Carolina business entities, as well as any names already reserved on the state rolls (with some exceptions).
+              Choosing a name for your new North Carolina corporation is one of the first official steps toward actually conducting business in the Tarheel State. The business name you choose must be able to be readily distinguished from all other registered North Carolina business entities, as well
+              as any names already reserved on the state rolls (with some exceptions).
             </Paragraph>
             <Paragraph big>
-            Your new business’ name may not state or imply that it is organized for a purpose other than one permitted by state law and its articles of incorporation. The name must end with one of the following terms or its abbreviation: “Incorporated,” “Corporation,” “Company,” or “Limited.”
+              Your new business’ name may not state or imply that it is organized for a purpose other than one permitted by state law and its articles of incorporation. The name must end with one of the following terms or its abbreviation: “Incorporated,” “Corporation,” “Company,” or “Limited.”
             </Paragraph>
             <Paragraph big style={{ marginBottom: "0" }}>
-            Available corporate names may be reserved for up to 120 days for a $30 fee.
+              Available corporate names may be reserved for up to 120 days for a $30 fee.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -97,24 +98,32 @@ const AlaskaCorporation = () => (
               Articles of Incorporation
             </Heading>
             <Paragraph big>
-            In accordance with the North Carolina Business Corporation Act (Chapter 55 of the North Carolina General Statutes), corporations must file articles of incorporation with the state Secretary of State’s office before conducting business. The articles must be delivered by at least one of the incorporators, accompanied by the filing fee of $125.
+              In accordance with the North Carolina Business Corporation Act (Chapter 55 of the North Carolina General Statutes), corporations must file articles of incorporation with the state Secretary of State’s office before conducting business. The articles must be delivered by at least one of
+              the incorporators, accompanied by the filing fee of $125.
             </Paragraph>
             <Paragraph big>Normal processing time by the state is five business from the date the state filing office receives your articles. Filing within 24 hours is $100 extra; same-day filing costs an additional $200.</Paragraph>
 
             <Colorbox color={color.blue3} content={articlesOfIncorporation.box1} dotsColor={color.blue1} style={{ marginBottom: "65px" }} />
-            
-            <Paragraph big>North Carolina law allows a corporation to be formed for any lawful business activity. There is no requirement for a specific corporate purpose to be stated in the articles of incorporation. North Carolina law also allows (but does not require) optional items to be included in the articles of incorporation for those corporations who wish to formally specify additional information.</Paragraph>
+
+            <Paragraph big>
+              North Carolina law allows a corporation to be formed for any lawful business activity. There is no requirement for a specific corporate purpose to be stated in the articles of incorporation. North Carolina law also allows (but does not require) optional items to be included in the
+              articles of incorporation for those corporations who wish to formally specify additional information.
+            </Paragraph>
 
             <Colorbox color={color.orange3} content={articlesOfIncorporation.box2} dotsColor={color.orange1} style={{ marginBottom: "48px" }} />
 
-            <Paragraph big>In North Carolina, it’s not required to state a par value for your new corporation’s shares. The filing fee is not based on how many shares are authorized, so you can authorize as desired. Most incorporators authorize one class of common shares with equal voting, dividend, and liquidation rights, with no special restrictions.</Paragraph>
+            <Paragraph big>
+              In North Carolina, it’s not required to state a par value for your new corporation’s shares. The filing fee is not based on how many shares are authorized, so you can authorize as desired. Most incorporators authorize one class of common shares with equal voting, dividend, and
+              liquidation rights, with no special restrictions.
+            </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Registered Agent and Office
             </Heading>
             <Paragraph big>
-            Every North Carolina corporation must have a registered agent in the state-someone designated to receive official state correspondence, including notice if the corporation is “served” with a lawsuit. The registered agent must be either a North Carolina resident whose business office is the same as the registered office, or a corporation with a business office identical with the registered office.
+              Every North Carolina corporation must have a registered agent in the state-someone designated to receive official state correspondence, including notice if the corporation is “served” with a lawsuit. The registered agent must be either a North Carolina resident whose business office is
+              the same as the registered office, or a corporation with a business office identical with the registered office.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -122,13 +131,12 @@ const AlaskaCorporation = () => (
               Bylaws
             </Heading>
             <Paragraph big>
-            Bylaws describe the corporation’s basic managerial and legal operating principles. A North Carolina corporation must keep a copy of its bylaws at its main executive office, but is not required to file them with the state. The bylaws may contain any provision for managing the business and regulating the affairs of the corporation that’s not in conflict with law or the articles of incorporation.
+              Bylaws describe the corporation’s basic managerial and legal operating principles. A North Carolina corporation must keep a copy of its bylaws at its main executive office, but is not required to file them with the state. The bylaws may contain any provision for managing the business
+              and regulating the affairs of the corporation that’s not in conflict with law or the articles of incorporation.
             </Paragraph>
-            <Paragraph big>
-            The board of directors of a corporation may adopt, amend, or repeal bylaws, unless the articles reserve this right to the shareholders. At its initial meeting, the board of directors should adopt corporate bylaws, and then keep them updated as time goes on.
-            </Paragraph>
+            <Paragraph big>The board of directors of a corporation may adopt, amend, or repeal bylaws, unless the articles reserve this right to the shareholders. At its initial meeting, the board of directors should adopt corporate bylaws, and then keep them updated as time goes on.</Paragraph>
             <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            Bylaws normally address:
+              Bylaws normally address:
             </Paragraph>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
@@ -155,22 +163,20 @@ const AlaskaCorporation = () => (
               Directors
             </Heading>
             <Paragraph big>
-            A director of the corporation must be a “natural person” (as opposed to a business entity) who is at least 18 years of age, and there must be at least one. The articles of incorporation or the corporation’s bylaws may specify additional qualifications for directors.
+              A director of the corporation must be a “natural person” (as opposed to a business entity) who is at least 18 years of age, and there must be at least one. The articles of incorporation or the corporation’s bylaws may specify additional qualifications for directors.
             </Paragraph>
-            <Paragraph big>
-            An officer may hold more than one corporate office unless prohibited by the corporation’s bylaws. However, no individual is allowed to act in more than one capactity where the action of two or more officers is required.
-            </Paragraph>
+            <Paragraph big>An officer may hold more than one corporate office unless prohibited by the corporation’s bylaws. However, no individual is allowed to act in more than one capactity where the action of two or more officers is required.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Requirement Reports
             </Heading>
             <Paragraph big style={{ marginBottom: "48px" }}>
-            An annual report must be filed (in either paper or electronic format) with the North Carolina Secretary of State each year by the 15th day of the third month after the end of the corporation’s fiscal year.
+              An annual report must be filed (in either paper or electronic format) with the North Carolina Secretary of State each year by the 15th day of the third month after the end of the corporation’s fiscal year.
             </Paragraph>
 
             <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            This report must include:
+              This report must include:
             </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>The corporation’s official name and its state or country of incorporation.</Paragraph>
@@ -188,7 +194,8 @@ const AlaskaCorporation = () => (
               <Paragraph bottomMargin={0}>A brief description of the nature of the business.</Paragraph>
             </TextBoxed>
             <Paragraph big>
-            Additionally, state law requires that the corporation mail an annual financial statement to all shareholders within 120 days of the end of the corporate fiscal year. These statements must include a year-end balance sheet, an income statement for that year, and a statement of the year’s cash flows, unless that information appears elsewhere in the financial statements
+              Additionally, state law requires that the corporation mail an annual financial statement to all shareholders within 120 days of the end of the corporate fiscal year. These statements must include a year-end balance sheet, an income statement for that year, and a statement of the year’s
+              cash flows, unless that information appears elsewhere in the financial statements
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -244,7 +251,7 @@ const AlaskaCorporation = () => (
         <Accordion content={questions} curve curveColor={color.blue1} curveLeft="-15px" />
       </ContentCenter>
       <ContentCenter style={{ marginBottom: "48px" }}>
-        <Button content={{ text: `View all corporation FAQ's`, url: `/` }} width={300} padding="12px 48px" />
+        <Button content={{ text: `View all corporation FAQ's`, url: `/research-topics/c-corporation-info/` }} width={300} padding="12px 48px" />
       </ContentCenter>
     </QuestionSection>
 

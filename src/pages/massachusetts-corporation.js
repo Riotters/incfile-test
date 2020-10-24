@@ -83,16 +83,19 @@ const AlaskaCorporation = () => (
               Choosing a Corporation Name
             </Heading>
             <Paragraph big>
-            Your Massachusetts corporation’s name must be different from any other authorized business entity on file with the Secretary of the Commonwealth. This applies to entities formed in the state, as well as those originally formed elsewhere but authorized to conduct business in Massachusetts.
+              Your Massachusetts corporation’s name must be different from any other authorized business entity on file with the Secretary of the Commonwealth. This applies to entities formed in the state, as well as those originally formed elsewhere but authorized to conduct business in
+              Massachusetts.
             </Paragraph>
             <Paragraph big>
-            The corporation’s name must include either the word “Incorporation,” “Incorporated,” “Company,” or “Limited” (or an abbreviation thereof) at its end, and it can’t include language that might suggest or imply that the corporation has been formed for a purpose not permitted by law or allowed by its articles of organization.
+              The corporation’s name must include either the word “Incorporation,” “Incorporated,” “Company,” or “Limited” (or an abbreviation thereof) at its end, and it can’t include language that might suggest or imply that the corporation has been formed for a purpose not permitted by law or
+              allowed by its articles of organization.
             </Paragraph>
             <Paragraph big>
-            The Corporations Division does not allow symbols as part of a corporate name-for example, the name “Pri¢e Bu$ters” would not be allowed. The Corporations Division also discourages the use of initials, numbers, hyphens, apostrophes, and commas in corporate names. If you do include punctuation in your corporation’s name, it must be included on all filing documents with the office.
+              The Corporations Division does not allow symbols as part of a corporate name-for example, the name “Pri¢e Bu$ters” would not be allowed. The Corporations Division also discourages the use of initials, numbers, hyphens, apostrophes, and commas in corporate names. If you do include
+              punctuation in your corporation’s name, it must be included on all filing documents with the office.
             </Paragraph>
             <Paragraph big style={{ marginBottom: "0" }}>
-            You can reserve an available corporate name with the state for 60 days for a $30 fee.
+              You can reserve an available corporate name with the state for 60 days for a $30 fee.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -100,14 +103,18 @@ const AlaskaCorporation = () => (
               Articles of Incorporation
             </Heading>
             <Paragraph big>
-            The existence of a domestic profit corporation begins when its articles of organization are filed with the Corporations Division of the Secretary of the Commonwealth’s office. The articles of organization must include the corporate name, the street address of the main corporate office, the number of authorized shares, the name and address of each incorporator, and some supplemental information that is not a permanent part of the articles
+              The existence of a domestic profit corporation begins when its articles of organization are filed with the Corporations Division of the Secretary of the Commonwealth’s office. The articles of organization must include the corporate name, the street address of the main corporate office,
+              the number of authorized shares, the name and address of each incorporator, and some supplemental information that is not a permanent part of the articles
             </Paragraph>
 
             <Colorbox color={color.blue3} content={articlesOfIncorporation.box1} dotsColor={color.blue1} style={{ marginBottom: "65px" }} />
 
             <Colorbox color={color.orange3} content={articlesOfIncorporation.box2} dotsColor={color.orange1} style={{ marginBottom: "48px" }} />
 
-            <Paragraph big>Massachusetts corporations must continuously maintain a registered agent in Massachusetts who is designated to receive official state administrative and legal correspondence. The agent may be an individual (who may be the secretary or officer of another corporation) and whose business office is the registered office of the corporation, or a corporation authorized to do business in Massachusetts, with a business office that is the same as the registered office.</Paragraph>
+            <Paragraph big>
+              Massachusetts corporations must continuously maintain a registered agent in Massachusetts who is designated to receive official state administrative and legal correspondence. The agent may be an individual (who may be the secretary or officer of another corporation) and whose business
+              office is the registered office of the corporation, or a corporation authorized to do business in Massachusetts, with a business office that is the same as the registered office.
+            </Paragraph>
             <Paragraph big>The registered office may be-but does not have to be-the same as the corporation’s place of business.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -115,7 +122,8 @@ const AlaskaCorporation = () => (
               Registered Agent and Office
             </Heading>
             <Paragraph big>
-            Bylaws govern a Massachusetts corporation’s business and affairs. A corporation is required to keep a copy of its bylaws at its main executive office, but is not required to file them with the state. Either the incorporators or the board of directors should adopt corporate bylaws at their initial meeting, and then keep them updated as time goes on. Bylaws describe the corporation’s basic managerial and legal operating principles, including information on:
+              Bylaws govern a Massachusetts corporation’s business and affairs. A corporation is required to keep a copy of its bylaws at its main executive office, but is not required to file them with the state. Either the incorporators or the board of directors should adopt corporate bylaws at
+              their initial meeting, and then keep them updated as time goes on. Bylaws describe the corporation’s basic managerial and legal operating principles, including information on:
             </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>Shareholders and directors meetings</Paragraph>
@@ -141,16 +149,14 @@ const AlaskaCorporation = () => (
               Bylaws
             </Heading>
             <Paragraph big>
-            A corporation’s board of directors must consist of at least one director, with the total number specified in the articles of organization the bylaws. If the corporation has only one shareholder, then only one director is necessary; if there are two shareholders, there must be at least two directors; and if there are three or more directors, there must be at least three directors.
+              A corporation’s board of directors must consist of at least one director, with the total number specified in the articles of organization the bylaws. If the corporation has only one shareholder, then only one director is necessary; if there are two shareholders, there must be at least
+              two directors; and if there are three or more directors, there must be at least three directors.
             </Paragraph>
+            <Paragraph big>The state does not mandate eligibility requirements for directors, but the articles or bylaws may specify director qualifications.</Paragraph>
+            <Paragraph big>Officers may be appointed by the board of directors if not already listed in the bylaws, and those officers may appoint other officers if so authorized by the board or the bylaws.</Paragraph>
             <Paragraph big>
-            The state does not mandate eligibility requirements for directors, but the articles or bylaws may specify director qualifications.
-            </Paragraph>
-            <Paragraph big>
-            Officers may be appointed by the board of directors if not already listed in the bylaws, and those officers may appoint other officers if so authorized by the board or the bylaws.
-            </Paragraph>
-            <Paragraph big>
-            Every corporation must have for its officers a minimum of a president, a treasurer, and a clerk (called a “secretary” in other states). The clerk or assistant clerk has the responsibility of preparing minutes of director and shareholder meetings and for authenticating corporate records. Two or more offices may be held by the same person.
+              Every corporation must have for its officers a minimum of a president, a treasurer, and a clerk (called a “secretary” in other states). The clerk or assistant clerk has the responsibility of preparing minutes of director and shareholder meetings and for authenticating corporate
+              records. Two or more offices may be held by the same person.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -178,11 +184,11 @@ const AlaskaCorporation = () => (
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>Any change in the designated fiscal year of the corporation</Paragraph>
             </TextBoxed>
+            <Paragraph big>The corporation’s board of directors must send an annual report to all shareholders no more than 120 days after the close of the fiscal year, describing the financial position of the corporation for the fiscal year, as well as any statements of cash flows.</Paragraph>
             <Paragraph big>
-            The corporation’s board of directors must send an annual report to all shareholders no more than 120 days after the close of the fiscal year, describing the financial position of the corporation for the fiscal year, as well as any statements of cash flows.
-            </Paragraph>
-            <Paragraph big>
-            The corporation must also send out a report of condition to the Massachusetts Secretary of the Commonwealth within four months after the close of the fiscal year (but not before the date fixed in its bylaws for the annual meeting). This report must include the corporation name, the street address of the corporation’s principal office, particular stock information (including the total amount of the corporation’s authorized stock and its par value), and the names and addresses of the corporation’s directors and officers, as well as the date at which their terms of office expire.
+              The corporation must also send out a report of condition to the Massachusetts Secretary of the Commonwealth within four months after the close of the fiscal year (but not before the date fixed in its bylaws for the annual meeting). This report must include the corporation name, the
+              street address of the corporation’s principal office, particular stock information (including the total amount of the corporation’s authorized stock and its par value), and the names and addresses of the corporation’s directors and officers, as well as the date at which their terms of
+              office expire.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -190,9 +196,9 @@ const AlaskaCorporation = () => (
               Requirement Reports
             </Heading>
             <Paragraph big style={{ marginBottom: "48px" }}>
-            Massachusetts’ corporate tax structure consists of a flat rate of 9.5% on all corporate income. Among states levying corporate income taxes, Massachusetts’ rate ranks fourth highest nationally.
+              Massachusetts’ corporate tax structure consists of a flat rate of 9.5% on all corporate income. Among states levying corporate income taxes, Massachusetts’ rate ranks fourth highest nationally.
             </Paragraph>
-        </PanelWrapper>
+          </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Taxes
@@ -246,7 +252,7 @@ const AlaskaCorporation = () => (
         <Accordion content={questions} curve curveColor={color.blue1} curveLeft="-15px" />
       </ContentCenter>
       <ContentCenter style={{ marginBottom: "48px" }}>
-        <Button content={{ text: `View all corporation FAQ's`, url: `/` }} width={300} padding="12px 48px" />
+        <Button content={{ text: `View all corporation FAQ's`, url: `/research-topics/c-corporation-info/` }} width={300} padding="12px 48px" />
       </ContentCenter>
     </QuestionSection>
 

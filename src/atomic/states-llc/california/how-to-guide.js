@@ -28,6 +28,8 @@ import BgBoxPersonalOA from '../../../images/icons/states/personal-oa.inline.png
 import BgBoxHandlePaperWorks from '../../../images/icons/states/handle-paperwork.inline.png'
 import BgBoxBusinessNameSearchTool from '../../../images/icons/states/business-name-search-tool.inline.png'
 
+import AnnualReportFilingBox from '../AnnualReportFilingBox';
+
 const Wrapper = styled.div``
 
 const ListFlex = styled.div`
@@ -65,7 +67,7 @@ const BoxButtonLinks = styled.div`
 	}
 `
 
-const HowToGuide = ({ content }) => {
+const HowToGuide = ({ content, data }) => {
     return (
         <Wrapper>
 
@@ -207,21 +209,7 @@ const HowToGuide = ({ content }) => {
                 <Paragraph big mixed={true}>{parse(content.mainSteps.step4.text3)}</Paragraph>
                 <BoxCTA bgColor={color.orange3} bgImage={BgBoxHandlePaperWorks} content={content.mainSteps.step4.cta} />
 
-                <Heading size={4} style={{ marginTop: `40px` }}>{parse(content.mainSteps.step4.annualReport[0].title)}</Heading>
-                {content.mainSteps.step4.annualReport[0].items.map(item => (
-                    <Whitebox flex padding="24px" bottomMargin="8px">
-                        <Paragraph mixed={true} bottomMargin={0} style={{ fontWeight: `bold`, minWidth: `300px` }}>{item.text1}</Paragraph>
-                        <Paragraph mixed={true} bottomMargin={0}>{parse(item.text2)}</Paragraph>
-                    </Whitebox>
-                ))}
-
-                <Heading size={4} style={{ marginTop: `40px` }}>{parse(content.mainSteps.step4.annualReport[1].title)}</Heading>
-                {content.mainSteps.step4.annualReport[1].items.map(item => (
-                    <Whitebox flex padding="24px" bottomMargin="8px">
-                        <Paragraph mixed={true} bottomMargin={0} style={{ fontWeight: `bold`, minWidth: `300px` }}>{item.text1}</Paragraph>
-                        <Paragraph mixed={true} bottomMargin={0}>{parse(item.text2)}</Paragraph>
-                    </Whitebox>
-                ))}
+                <AnnualReportFilingBox data={data} />
 
             </TextBlockWithNumberCounting>
 

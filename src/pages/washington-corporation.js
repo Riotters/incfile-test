@@ -83,37 +83,35 @@ const AlaskaCorporation = () => (
               Choosing a Corporation Name
             </Heading>
             <Paragraph big>
-            The name you decide on for your new corporation cannot be the same as or deceptively similar to the name of any other Washington business entity registered or reserved with the state. The name may not include language that states or implies that the corporation is organized for some purpose other than one permitted by state law or than stated in its articles of incorporation. The name must also include the words “incorporated,” “corporation,” “limited,” or “company,” or an abbreviation of one of those terms.
+              The name you decide on for your new corporation cannot be the same as or deceptively similar to the name of any other Washington business entity registered or reserved with the state. The name may not include language that states or implies that the corporation is organized for some
+              purpose other than one permitted by state law or than stated in its articles of incorporation. The name must also include the words “incorporated,” “corporation,” “limited,” or “company,” or an abbreviation of one of those terms.
             </Paragraph>
             <Paragraph big>
-            If your corporate name is not considered sufficiently distinguishable from one already on file with the state, it’s not enough to just change some punctuation, a definite or indefinite article (such as “a,” “an,” or “the”), or the status designator (“corporation,” “company,” “incorporated,” “limited,” etc.). You have to make a significant change.
+              If your corporate name is not considered sufficiently distinguishable from one already on file with the state, it’s not enough to just change some punctuation, a definite or indefinite article (such as “a,” “an,” or “the”), or the status designator (“corporation,” “company,”
+              “incorporated,” “limited,” etc.). You have to make a significant change.
             </Paragraph>
             <Paragraph big style={{ marginBottom: "0" }}>
-            Corporate names can be reserved with the state for a $30 fee for up to 180 days at a time.
+              Corporate names can be reserved with the state for a $30 fee for up to 180 days at a time.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Articles of Incorporation
             </Heading>
-            <Paragraph big>
-            The Washington Business Corporation Act (Title 23B of the Revised Code of Washington) requires that articles of incorporation must be filed with the Washington Secretary of State.
-            </Paragraph>
+            <Paragraph big>The Washington Business Corporation Act (Title 23B of the Revised Code of Washington) requires that articles of incorporation must be filed with the Washington Secretary of State.</Paragraph>
 
             <Colorbox color={color.blue3} content={articlesOfIncorporation.box1} dotsColor={color.blue1} style={{ marginBottom: "65px" }} />
-            <Paragraph big>
-            The filing fee is $175.
-            </Paragraph>
+            <Paragraph big>The filing fee is $175.</Paragraph>
 
             <Colorbox color={color.orange3} content={articlesOfIncorporation.box2} dotsColor={color.orange1} style={{ marginBottom: "48px" }} />
-
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Registered Agent and Office
             </Heading>
             <Paragraph big>
-            Washington corporations must have a registered in-state agent-either a natural person who is a resident of Washington or a business entity (corporation or LLC) authorized to conduct business in the Evergreen State. The registered agent must have a business office that is the same as the registered office.
+              Washington corporations must have a registered in-state agent-either a natural person who is a resident of Washington or a business entity (corporation or LLC) authorized to conduct business in the Evergreen State. The registered agent must have a business office that is the same as
+              the registered office.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -121,10 +119,11 @@ const AlaskaCorporation = () => (
               Bylaws
             </Heading>
             <Paragraph big>
-            A corporation is required to keep its bylaws available at its primary executive office, but it is not required to file them with the state. The incorporators or board of directors should adopt the corporation’s bylaws at their first meeting, insuring that there is no conflict with the corporation’s articles of incorporation. They should also keep them updated as time goes on.
+              A corporation is required to keep its bylaws available at its primary executive office, but it is not required to file them with the state. The incorporators or board of directors should adopt the corporation’s bylaws at their first meeting, insuring that there is no conflict with the
+              corporation’s articles of incorporation. They should also keep them updated as time goes on.
             </Paragraph>
             <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            Bylaws set forth the corporation’s basic operating principles from both the managerial and legal perspectives, and should include (as a minimum):
+              Bylaws set forth the corporation’s basic operating principles from both the managerial and legal perspectives, and should include (as a minimum):
             </Paragraph>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
@@ -145,14 +144,14 @@ const AlaskaCorporation = () => (
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>Requirements for publishing annual financial information to shareholders</Paragraph>
             </TextBoxed>
-
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Directors
             </Heading>
             <Paragraph big>
-            The board of directors has the responsibility of making the corporation’s major decisions. Officers of the company must be either listed in the bylaws or elected by the board. At least one officer must authenticate the corporation’s records, as well as prepare the minutes of directors’ and shareholders meetings. Any officer may hold more than one office in the corporation, unless otherwise prohibited by law or the corporation’s articles of incorporation or bylaws.
+              The board of directors has the responsibility of making the corporation’s major decisions. Officers of the company must be either listed in the bylaws or elected by the board. At least one officer must authenticate the corporation’s records, as well as prepare the minutes of directors’
+              and shareholders meetings. Any officer may hold more than one office in the corporation, unless otherwise prohibited by law or the corporation’s articles of incorporation or bylaws.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -160,14 +159,18 @@ const AlaskaCorporation = () => (
               Requirement Reports
             </Heading>
             <Paragraph big style={{ marginBottom: "48px" }}>
-            Washington corporations must file a report with the Washington Secretary of State each year that includes the corporation’s name, principal office, the names and addresses of directors and officers, and a description of the business. The corporation must also, upon request, send its most recent annual report to a shareholder.
+              Washington corporations must file a report with the Washington Secretary of State each year that includes the corporation’s name, principal office, the names and addresses of directors and officers, and a description of the business. The corporation must also, upon request, send its
+              most recent annual report to a shareholder.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Taxes
             </Heading>
-            <Paragraph big>Washington State does not have an income tax for individuals or corporations as such. Instead, Washington corporations are subject to Business and Occupation (B&O) tax that depends on the gross revenue received from business activities in Washington. The actual tax rates depend on the type of business activity and its levels.</Paragraph>
+            <Paragraph big>
+              Washington State does not have an income tax for individuals or corporations as such. Instead, Washington corporations are subject to Business and Occupation (B&O) tax that depends on the gross revenue received from business activities in Washington. The actual tax rates depend on the
+              type of business activity and its levels.
+            </Paragraph>
           </PanelWrapper>
         </CollapseWrapper>
       </TabsSection>
@@ -216,7 +219,7 @@ const AlaskaCorporation = () => (
         <Accordion content={questions} curve curveColor={color.blue1} curveLeft="-15px" />
       </ContentCenter>
       <ContentCenter style={{ marginBottom: "48px" }}>
-        <Button content={{ text: `View all corporation FAQ's`, url: `/` }} width={300} padding="12px 48px" />
+        <Button content={{ text: `View all corporation FAQ's`, url: `/research-topics/c-corporation-info/` }} width={300} padding="12px 48px" />
       </ContentCenter>
     </QuestionSection>
 

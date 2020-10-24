@@ -83,13 +83,15 @@ const AlaskaCorporation = () => (
               Choosing a Corporation Name
             </Heading>
             <Paragraph big>
-            Choosing a name for your new South Carolina corporation is one of the first official steps toward actually conducting business in the state. The corporate name you choose must be readily distinguishable from all other registered and reserved business entities on the South Carolina state rolls.
+              Choosing a name for your new South Carolina corporation is one of the first official steps toward actually conducting business in the state. The corporate name you choose must be readily distinguishable from all other registered and reserved business entities on the South Carolina
+              state rolls.
             </Paragraph>
             <Paragraph big>
-            Your new business’ name must include one of the following words, an abbreviation thereof, or words of similar meaning in another language: “Incorporated,” “Corporation,” “Company,” or “Limited.” However, the name must not state or imply that the corporation is organized for some purpose other than the one specified in its articles of incorporation or one permitted by state law.
+              Your new business’ name must include one of the following words, an abbreviation thereof, or words of similar meaning in another language: “Incorporated,” “Corporation,” “Company,” or “Limited.” However, the name must not state or imply that the corporation is organized for some
+              purpose other than the one specified in its articles of incorporation or one permitted by state law.
             </Paragraph>
             <Paragraph big style={{ marginBottom: "0" }}>
-            An available corporate name may be reserved for 120 days by filing two copies of an Application to Reserve Corporate Name form, along with a $25 fee.
+              An available corporate name may be reserved for 120 days by filing two copies of an Application to Reserve Corporate Name form, along with a $25 fee.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -97,10 +99,12 @@ const AlaskaCorporation = () => (
               Articles of Incorporation
             </Heading>
             <Paragraph big>
-            Before it can legitimately commence operations in the state, a new South Carolina corporation must file articles of incorporation with the Corporations Department of the state Secretary of State’s office. The articles must be executed (signed) and delivered by at least one incorporator, who is not required to be an officer, director, or shareholder of the corporation. An incorporator may be any natural person or legal entity.
+              Before it can legitimately commence operations in the state, a new South Carolina corporation must file articles of incorporation with the Corporations Department of the state Secretary of State’s office. The articles must be executed (signed) and delivered by at least one
+              incorporator, who is not required to be an officer, director, or shareholder of the corporation. An incorporator may be any natural person or legal entity.
             </Paragraph>
             <Paragraph big>
-            The articles must be accompanied by a filing fee of $135, an Initial Annual Report form (with a $25 fee), and a certificate signed by a South Carolina attorney that all requirements of applicable state law have been met. The attorney’s signature certifies that your articles contain the required information listed in Section 33-2-102 of the South Carolina Business Corporation Act.
+              The articles must be accompanied by a filing fee of $135, an Initial Annual Report form (with a $25 fee), and a certificate signed by a South Carolina attorney that all requirements of applicable state law have been met. The attorney’s signature certifies that your articles contain the
+              required information listed in Section 33-2-102 of the South Carolina Business Corporation Act.
             </Paragraph>
 
             <Colorbox color={color.blue3} content={articlesOfIncorporation.box1} dotsColor={color.blue1} style={{ marginBottom: "65px" }} />
@@ -114,24 +118,22 @@ const AlaskaCorporation = () => (
               Registered Agent and Office
             </Heading>
             <Paragraph big>
-            Every South Carolina corporation must have a registered agent in the state-the person or office designated to receive official state correspondence, both administrative and legal. The registered agent is required to sign the articles of incorporation, indicating acceptance of the appointment as registered agent.
+              Every South Carolina corporation must have a registered agent in the state-the person or office designated to receive official state correspondence, both administrative and legal. The registered agent is required to sign the articles of incorporation, indicating acceptance of the
+              appointment as registered agent.
             </Paragraph>
-            <Paragraph big>
-            The registered agent must be either a South Carolina resident whose business office is the same as the registered office, or a corporation authorized to conduct business in the Palmetto State that has a business office identical to the registered office.
-            </Paragraph>
-            <Paragraph big>
-            The registered office may be any of the corporation’s places of business in South Carolina.
-            </Paragraph>
+            <Paragraph big>The registered agent must be either a South Carolina resident whose business office is the same as the registered office, or a corporation authorized to conduct business in the Palmetto State that has a business office identical to the registered office.</Paragraph>
+            <Paragraph big>The registered office may be any of the corporation’s places of business in South Carolina.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Bylaws
             </Heading>
             <Paragraph big>
-            Bylaws lay out the corporation’s basic managerial and legal operating principles that manage their internal affairs. South Carolina corporations must keep a copy of their bylaws at their principal executive office, but are not required to file them with the state. At its initial meeting, the incorporators or the board of directors should adopt corporate bylaws, and then keep them updated as time goes on.
+              Bylaws lay out the corporation’s basic managerial and legal operating principles that manage their internal affairs. South Carolina corporations must keep a copy of their bylaws at their principal executive office, but are not required to file them with the state. At its initial
+              meeting, the incorporators or the board of directors should adopt corporate bylaws, and then keep them updated as time goes on.
             </Paragraph>
             <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            The board of directors of a corporation may adopt, amend, or repeal bylaws, unless the articles reserve this right to the shareholders. Bylaws normally address:
+              The board of directors of a corporation may adopt, amend, or repeal bylaws, unless the articles reserve this right to the shareholders. Bylaws normally address:
             </Paragraph>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
@@ -152,29 +154,27 @@ const AlaskaCorporation = () => (
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>How and when annual financial information is provided to shareholders</Paragraph>
             </TextBoxed>
-
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Directors
             </Heading>
             <Paragraph big>
-            Officers are listed in the initial bylaws or elected by the board of directors, and may appoint other officers in accordance with the bylaws. At least one officer has the responsibility of preparing minutes of director and shareholder meetings, and for maintaining and authenticating corporate records.
+              Officers are listed in the initial bylaws or elected by the board of directors, and may appoint other officers in accordance with the bylaws. At least one officer has the responsibility of preparing minutes of director and shareholder meetings, and for maintaining and authenticating
+              corporate records.
             </Paragraph>
-            <Paragraph big>
-            It is permissible for an officer to hold more than one office in the corporation unless otherwise prohibited by law or by the corporation’s bylaws.
-            </Paragraph>
+            <Paragraph big>It is permissible for an officer to hold more than one office in the corporation unless otherwise prohibited by law or by the corporation’s bylaws.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Requirement Reports
             </Heading>
             <Paragraph big style={{ marginBottom: "48px" }}>
-            South Carolina corporations must file a report with the South Carolina Department of Revenue each year by the 15th day of the third month after the end of the corporation’s fiscal year.
+              South Carolina corporations must file a report with the South Carolina Department of Revenue each year by the 15th day of the third month after the end of the corporation’s fiscal year.
             </Paragraph>
 
             <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            This report may be made public by the state, and must specify:
+              This report may be made public by the state, and must specify:
             </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>The corporation’s name and its state or country of incorporation</Paragraph>
@@ -197,18 +197,20 @@ const AlaskaCorporation = () => (
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>The total number of authorized, issued, and outstanding shares of stock, itemized by class and series (if any) within each class</Paragraph>
             </TextBoxed>
+            <Paragraph big>Within 120 days after the close of the fiscal year, the corporation must send its shareholders a financial report that includes a year-end balance sheet, an income statement, and a statement of changes in shareholders’ equity for the year.</Paragraph>
             <Paragraph big>
-            Within 120 days after the close of the fiscal year, the corporation must send its shareholders a financial report that includes a year-end balance sheet, an income statement, and a statement of changes in shareholders’ equity for the year.
-            </Paragraph>
-            <Paragraph big>
-            The corporation must also report in writing to the shareholders if it issues or authorizes promissory notes or other future obligations. If these promises consist of shares of corporate stock, the report must specify the number of shares issued or authorized, and the benefit received by the corporation, either with or before notice of the next shareholders’ meeting.
+              The corporation must also report in writing to the shareholders if it issues or authorizes promissory notes or other future obligations. If these promises consist of shares of corporate stock, the report must specify the number of shares issued or authorized, and the benefit received
+              by the corporation, either with or before notice of the next shareholders’ meeting.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Taxes
             </Heading>
-            <Paragraph big>“S corporation” status is recognized by the South Carolina Secretary of State. A “subchapter S” corporation (frequently referred to as an “S corp”) is treated as a pass-through entity for tax purposes in the same way as a sole proprietorship or partnership. The S corp does not file a tax return on its own behalf; instead, all tax-related data for the S corp is filed as part of the owner’s individual income tax.</Paragraph>
+            <Paragraph big>
+              “S corporation” status is recognized by the South Carolina Secretary of State. A “subchapter S” corporation (frequently referred to as an “S corp”) is treated as a pass-through entity for tax purposes in the same way as a sole proprietorship or partnership. The S corp does not file a
+              tax return on its own behalf; instead, all tax-related data for the S corp is filed as part of the owner’s individual income tax.
+            </Paragraph>
           </PanelWrapper>
         </CollapseWrapper>
       </TabsSection>
@@ -257,7 +259,7 @@ const AlaskaCorporation = () => (
         <Accordion content={questions} curve curveColor={color.blue1} curveLeft="-15px" />
       </ContentCenter>
       <ContentCenter style={{ marginBottom: "48px" }}>
-        <Button content={{ text: `View all corporation FAQ's`, url: `/` }} width={300} padding="12px 48px" />
+        <Button content={{ text: `View all corporation FAQ's`, url: `/research-topics/c-corporation-info/` }} width={300} padding="12px 48px" />
       </ContentCenter>
     </QuestionSection>
 

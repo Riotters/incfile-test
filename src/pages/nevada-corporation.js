@@ -83,52 +83,49 @@ const AlaskaCorporation = () => (
               Choosing a Corporation Name
             </Heading>
             <Paragraph big>
-            The name you choose for your new corporation must be able to be distinguished from all other Nevada business entities registered or reserved with the Nevada Secretary of State. If the corporate name appears to be that of a natural person, it must also contain an additional word indicating its corporate status, such as “Incorporated,” “Limited,” “Company,” “Corporation,” or an abbreviation of one of these.
+              The name you choose for your new corporation must be able to be distinguished from all other Nevada business entities registered or reserved with the Nevada Secretary of State. If the corporate name appears to be that of a natural person, it must also contain an additional word
+              indicating its corporate status, such as “Incorporated,” “Limited,” “Company,” “Corporation,” or an abbreviation of one of these.
             </Paragraph>
-            <Paragraph big>
-            Even if the corporate name does not contain the name of a real person, you will probably want to include one of these “status designator” words because it tells others that your business is incorporated, which give added credibility.
-            </Paragraph>
-            <Paragraph big>
-            If the name states or implies that the corporation will conduct its operations in the banking, trust, or insurance areas, you will need the prior approval of the state banking superintendent or insurance commissioner.
-            </Paragraph>
+            <Paragraph big>Even if the corporate name does not contain the name of a real person, you will probably want to include one of these “status designator” words because it tells others that your business is incorporated, which give added credibility.</Paragraph>
+            <Paragraph big>If the name states or implies that the corporation will conduct its operations in the banking, trust, or insurance areas, you will need the prior approval of the state banking superintendent or insurance commissioner.</Paragraph>
             <Paragraph big style={{ marginBottom: "0" }}>
-            You can reserve an available name online for up to 90 days for a $40 fee, or you can mail in a paper name reservation form for a $25 fee.
+              You can reserve an available name online for up to 90 days for a $40 fee, or you can mail in a paper name reservation form for a $25 fee.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Articles of Incorporation
             </Heading>
-            <Paragraph big>
-            The Nevada Business Corporation Act (Chapter 78 of the Nevada Revised Statutes) requires that the new Nevada corporation file articles of incorporation with the Nevada Secretary of State.
-            </Paragraph>
+            <Paragraph big>The Nevada Business Corporation Act (Chapter 78 of the Nevada Revised Statutes) requires that the new Nevada corporation file articles of incorporation with the Nevada Secretary of State.</Paragraph>
 
             <Colorbox color={color.orange3} content={articlesOfIncorporation.box1} dotsColor={color.orange1} style={{ marginBottom: "48px" }} />
 
-            <Paragraph big>State approval or certification may be required before a corporation may file its articles of incorporation if its corporate name indicates that it will conduct operations in the areas of banking, trusts, engineering, accounting, insurance, or residential owners’ associations.</Paragraph>
-            <Paragraph big>In Nevada, the filing fee is based on the number of shares authorized. It will be a minimum of $105 total, which includes $30 for certifying one copy of your articles of incorporation-Nevada law requires you to keep a certified copy of your filed articles at the corporation’s registered agent’s location. The fee also includes a minimum $75 authorized capital fee.</Paragraph>
+            <Paragraph big>
+              State approval or certification may be required before a corporation may file its articles of incorporation if its corporate name indicates that it will conduct operations in the areas of banking, trusts, engineering, accounting, insurance, or residential owners’ associations.
+            </Paragraph>
+            <Paragraph big>
+              In Nevada, the filing fee is based on the number of shares authorized. It will be a minimum of $105 total, which includes $30 for certifying one copy of your articles of incorporation-Nevada law requires you to keep a certified copy of your filed articles at the corporation’s
+              registered agent’s location. The fee also includes a minimum $75 authorized capital fee.
+            </Paragraph>
             <Paragraph big>By the end of the month following the filing of the articles of incorporation, you must also submit an Initial List of Officers, Directors, and Resident Agent to the Nevada Secretary of State with a $125 fee.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Registered Agent and Office
             </Heading>
-            <Paragraph big>
-            Nevada corporations must have a registered in-state agent-a natural person who is a Nevada resident-who is designated to receive official correspondence from the state. The registered agent must have a business office that is the same as the registered office.
-            </Paragraph>
-            <Paragraph big>
-            Many new corporations use one of the initial directors or officers as the registered agent and list the street address of the corporation for the registered office.
-            </Paragraph>
+            <Paragraph big>Nevada corporations must have a registered in-state agent-a natural person who is a Nevada resident-who is designated to receive official correspondence from the state. The registered agent must have a business office that is the same as the registered office.</Paragraph>
+            <Paragraph big>Many new corporations use one of the initial directors or officers as the registered agent and list the street address of the corporation for the registered office.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Bylaws
             </Heading>
             <Paragraph big>
-            A corporation is required to keep its bylaws available at its main office, but it is not required to file them with the state. The incorporators or board of directors should adopt the corporation’s bylaws at their first meeting, insuring that there is no conflict with the articles of incorporation or state law. They should also keep the bylaws updated as time goes on.
+              A corporation is required to keep its bylaws available at its main office, but it is not required to file them with the state. The incorporators or board of directors should adopt the corporation’s bylaws at their first meeting, insuring that there is no conflict with the articles of
+              incorporation or state law. They should also keep the bylaws updated as time goes on.
             </Paragraph>
             <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            Bylaws set forth the corporation’s basic operating principles from both the managerial and legal perspectives, and should include, as a minimum:
+              Bylaws set forth the corporation’s basic operating principles from both the managerial and legal perspectives, and should include, as a minimum:
             </Paragraph>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
@@ -149,23 +146,21 @@ const AlaskaCorporation = () => (
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>Requirements for publishing annual financial information to shareholders</Paragraph>
             </TextBoxed>
-
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Directors
             </Heading>
             <Paragraph big>
-            Officers must be either listed in the bylaws or elected by the board, and may appoint other officers in compliance with the bylaws. Corporate officers must be natural persons, and a corporation is required to have at least a president, secretary, and treasurer. An officer may hold more than one office in the corporation, unless otherwise prohibited by law or the corporation’s articles of incorporation or bylaws.
+              Officers must be either listed in the bylaws or elected by the board, and may appoint other officers in compliance with the bylaws. Corporate officers must be natural persons, and a corporation is required to have at least a president, secretary, and treasurer. An officer may hold more
+              than one office in the corporation, unless otherwise prohibited by law or the corporation’s articles of incorporation or bylaws.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Requirement Reports
             </Heading>
-            <Paragraph big>
-            Nevada corporations must update their list of directors, officers, and registered agent each year. The annual filing fee is $125.
-            </Paragraph>
+            <Paragraph big>Nevada corporations must update their list of directors, officers, and registered agent each year. The annual filing fee is $125.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
@@ -221,7 +216,7 @@ const AlaskaCorporation = () => (
         <Accordion content={questions} curve curveColor={color.blue1} curveLeft="-15px" />
       </ContentCenter>
       <ContentCenter style={{ marginBottom: "48px" }}>
-        <Button content={{ text: `View all corporation FAQ's`, url: `/` }} width={300} padding="12px 48px" />
+        <Button content={{ text: `View all corporation FAQ's`, url: `/research-topics/c-corporation-info/` }} width={300} padding="12px 48px" />
       </ContentCenter>
     </QuestionSection>
 

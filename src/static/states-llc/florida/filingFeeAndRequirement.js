@@ -18,7 +18,7 @@ export const filingFeeAndRequirementContent = {
         desc: `Starting a Florida LLC? Have Incfile do all the paperwork for you for free.`,
         button: {
           text: `Form Your LLC Now`,
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=FL`,
         },
       },
     ],
@@ -52,13 +52,7 @@ export const filingFeeAndRequirementContent = {
       content: `To create your business in Florida, you’ll file an LLC with the FL Department of State and pay an associated LLC formation fee. Every state has different LLC filing fees and filing times. Here is the current information for Florida:`,
     },
     {
-      type: `gridTable`,
-      headerSize: `5`,
-      columns: `3`,
-      content: {
-        headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
-        rows: [[`$125`, `25 Business Days`, `10 Business Days`]],
-      },
+      type: `dynamic_ar_box`,
     },
     {
       type: `arrow-links`,
@@ -163,13 +157,7 @@ export const filingFeeAndRequirementContent = {
       content: `Here are the annual filing requirements for Florida:`,
     },
     {
-      type: `gridTable`,
-      headerSize: `5`,
-      columns: `3`,
-      content: {
-        headers: [`Frequency`, `Due Date`, `Filing Fee`],
-        rows: [[`Annually`, `May 1st`, `$139`]],
-      },
+      type: `dynamic_filing_requirement`,
     },
     {
       type: `paragraph`,
@@ -258,7 +246,7 @@ export const filingFeeAndRequirementContent = {
         subtitle: `You can choose to make changes to the template based on your unique requirements.`,
         button: {
           text: `Lear About Operating Agreemets`,
-          url: `https://www.incfile.com/research-topics/llc-info/llc-operating-agreement/`,
+          url: `/research-topics/llc-info/llc-operating-agreement/`,
         },
       },
     },

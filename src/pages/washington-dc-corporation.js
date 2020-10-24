@@ -83,13 +83,15 @@ const AlaskaCorporation = () => (
               Choosing a Corporation Name
             </Heading>
             <Paragraph big>
-            Choosing a name for your new District of Columbia corporation is one of the first official steps toward actually conducting business in the District. The corporate name you choose must be readily distinguishable from all other registered and reserved business entities on the District of Columbia rolls.
+              Choosing a name for your new District of Columbia corporation is one of the first official steps toward actually conducting business in the District. The corporate name you choose must be readily distinguishable from all other registered and reserved business entities on the District
+              of Columbia rolls.
             </Paragraph>
             <Paragraph big>
-            Your new business’ name must include one of the following words or an abbreviation thereof: “Incorporated,” “Corporation,” “Company,” or “Limited.” It’s also a good idea to make sure that the name does not state or imply that the corporation is organized for some purpose other than stated in its articles of incorporation or one permitted by District law.
+              Your new business’ name must include one of the following words or an abbreviation thereof: “Incorporated,” “Corporation,” “Company,” or “Limited.” It’s also a good idea to make sure that the name does not state or imply that the corporation is organized for some purpose other than
+              stated in its articles of incorporation or one permitted by District law.
             </Paragraph>
             <Paragraph big style={{ marginBottom: "0" }}>
-            An available corporate name can be reserved for up to 60 days for a $35 fee.
+              An available corporate name can be reserved for up to 60 days for a $35 fee.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -97,14 +99,22 @@ const AlaskaCorporation = () => (
               Articles of Incorporation
             </Heading>
             <Paragraph big>
-            Before it can start conducting business in the District, a new DC corporation must file articles of incorporation, along with a minimum $120 incorporation fee ($100 filing fee and a minimum $20 authorized stock fee). You may authorize up to $100,000 of capitalization (shares) in your articles for this minimum $20 fee—for example, 100,000 shares with a par value of $1 each or 200,000 with a par value of 50 cents each. Shares without par value are given a $1 per share value for purposes of this fee, so you can authorize up to 100,000 shares without par value for the minimum $20 authorized stock fee.
+              Before it can start conducting business in the District, a new DC corporation must file articles of incorporation, along with a minimum $120 incorporation fee ($100 filing fee and a minimum $20 authorized stock fee). You may authorize up to $100,000 of capitalization (shares) in your
+              articles for this minimum $20 fee—for example, 100,000 shares with a par value of $1 each or 200,000 with a par value of 50 cents each. Shares without par value are given a $1 per share value for purposes of this fee, so you can authorize up to 100,000 shares without par value for the
+              minimum $20 authorized stock fee.
             </Paragraph>
             <Paragraph big>Two original signed copies of the articles, along with a Written Consent of Registered Agent, must be delivered by at least one incorporator. The incorporator may be one of the initial directors, or anyone else as long as they are at least 18 years of age.</Paragraph>
 
             <Colorbox color={color.orange3} content={articlesOfIncorporation.box1} dotsColor={color.orange1} style={{ marginBottom: "48px" }} />
 
-            <Paragraph big>Most incorporators authorize only common shares of stock with equal voting, dividend, and liquidation rights, and no special restrictions. If you want to authorize the maximum number of common shares without par value, you can state that in your articles. Or, to authorize par value shares, you can include a statement along the lines of, “The aggregate number of shares the corporation is authorized to issue is 100,000, with a par value of $1.00 each.”</Paragraph>
-            <Paragraph big>If you want to authorize a special class or classes of shares, you must state the name of each class or series, the number of shares in each, and the par value (if any) of each class or series. Another alternative is to state that the shares in each class or series are without par value.</Paragraph>
+            <Paragraph big>
+              Most incorporators authorize only common shares of stock with equal voting, dividend, and liquidation rights, and no special restrictions. If you want to authorize the maximum number of common shares without par value, you can state that in your articles. Or, to authorize par value
+              shares, you can include a statement along the lines of, “The aggregate number of shares the corporation is authorized to issue is 100,000, with a par value of $1.00 each.”
+            </Paragraph>
+            <Paragraph big>
+              If you want to authorize a special class or classes of shares, you must state the name of each class or series, the number of shares in each, and the par value (if any) of each class or series. Another alternative is to state that the shares in each class or series are without par
+              value.
+            </Paragraph>
             <Paragraph big>If you do authorize separate classes or series of shares, you should also state any applicable rights and/or restrictions.</Paragraph>
             <Paragraph big>District law requires that a corporation obtains at least $1,000 of capitalization before it starts doing business. Your financial records should show that this much cash or property was paid into your corporation by the initial shareholders.</Paragraph>
           </PanelWrapper>
@@ -113,10 +123,11 @@ const AlaskaCorporation = () => (
               Registered Agent and Office
             </Heading>
             <Paragraph big>
-            Every District of Columbia corporation must have a registered agent in the district—the person or office designated to receive official administrative and legal correspondence. The registered agent is required to sign the articles of incorporation, indicating acceptance of the appointment as such.
+              Every District of Columbia corporation must have a registered agent in the district—the person or office designated to receive official administrative and legal correspondence. The registered agent is required to sign the articles of incorporation, indicating acceptance of the
+              appointment as such.
             </Paragraph>
             <Paragraph big>
-            The registered agent must be either a DC resident or a corporation authorized to conduct business there. In either case, the agent’s business office must be the same as the registered office. The registered office may be the same as the corporation’s place of business.
+              The registered agent must be either a DC resident or a corporation authorized to conduct business there. In either case, the agent’s business office must be the same as the registered office. The registered office may be the same as the corporation’s place of business.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -124,10 +135,11 @@ const AlaskaCorporation = () => (
               Bylaws
             </Heading>
             <Paragraph big>
-            Bylaws lay out the corporation’s basic managerial and legal operating principles that manage their internal affairs. The District of Columbia corporations must keep a copy of their bylaws at their principal executive office, but are not required to file them with the state. At its initial meeting, the incorporators or the board of directors should adopt corporate bylaws, and then keep them updated as time goes on.
+              Bylaws lay out the corporation’s basic managerial and legal operating principles that manage their internal affairs. The District of Columbia corporations must keep a copy of their bylaws at their principal executive office, but are not required to file them with the state. At its
+              initial meeting, the incorporators or the board of directors should adopt corporate bylaws, and then keep them updated as time goes on.
             </Paragraph>
             <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            The board of directors of a corporation may adopt, amend, or repeal bylaws, unless the articles reserve this right to the shareholders. Bylaws normally address:
+              The board of directors of a corporation may adopt, amend, or repeal bylaws, unless the articles reserve this right to the shareholders. Bylaws normally address:
             </Paragraph>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
@@ -148,14 +160,14 @@ const AlaskaCorporation = () => (
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>How and when annual financial information is provided to shareholders</Paragraph>
             </TextBoxed>
-
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Directors
             </Heading>
             <Paragraph big>
-            Officers are listed in the initial bylaws or elected by the board of directors, and may appoint other officers in accordance with the bylaws. At least one officer should have the responsibility of preparing minutes of director and shareholder meetings, and for maintaining and authenticating corporate records.
+              Officers are listed in the initial bylaws or elected by the board of directors, and may appoint other officers in accordance with the bylaws. At least one officer should have the responsibility of preparing minutes of director and shareholder meetings, and for maintaining and
+              authenticating corporate records.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -163,12 +175,10 @@ const AlaskaCorporation = () => (
               Requirement Reports
             </Heading>
             <Paragraph big>
-            DC corporations must file a report with the mayor’s office by the end of the second calendar month after delivery of the corporation’s original articles, and every year after that. This report must include the corporation’s name, its jurisdiction of incorporation, and any information in its articles that has since changed since the last report.
+              DC corporations must file a report with the mayor’s office by the end of the second calendar month after delivery of the corporation’s original articles, and every year after that. This report must include the corporation’s name, its jurisdiction of incorporation, and any information
+              in its articles that has since changed since the last report.
             </Paragraph>
-            <Paragraph big>
-            If shareholder requests it, a DC corporation must send that shareholder its most recent annual and published reports.
-            </Paragraph>
-            
+            <Paragraph big>If shareholder requests it, a DC corporation must send that shareholder its most recent annual and published reports.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
@@ -224,7 +234,7 @@ const AlaskaCorporation = () => (
         <Accordion content={questions} curve curveColor={color.blue1} curveLeft="-15px" />
       </ContentCenter>
       <ContentCenter style={{ marginBottom: "48px" }}>
-        <Button content={{ text: `View all corporation FAQ's`, url: `/` }} width={300} padding="12px 48px" />
+        <Button content={{ text: `View all corporation FAQ's`, url: `/research-topics/c-corporation-info/` }} width={300} padding="12px 48px" />
       </ContentCenter>
     </QuestionSection>
 

@@ -83,10 +83,11 @@ const AlaskaCorporation = () => (
               Choosing a Corporation Name
             </Heading>
             <Paragraph big>
-            The name chosen for your corporation must not be the same as or confusingly similar to the name of any other registered or reserved Arkansas business entity, and it may not state or imply that it is organized for some purpose other than permitted by state law or as stated in its articles of incorporation. It must also contain one of the following words or an abbreviation thereof: “Incorporated,” “Corporation,” “Company,” or “Limited.”
+              The name chosen for your corporation must not be the same as or confusingly similar to the name of any other registered or reserved Arkansas business entity, and it may not state or imply that it is organized for some purpose other than permitted by state law or as stated in its
+              articles of incorporation. It must also contain one of the following words or an abbreviation thereof: “Incorporated,” “Corporation,” “Company,” or “Limited.”
             </Paragraph>
             <Paragraph big style={{ marginBottom: "0" }}>
-            You can reserve an Arkansas corporate name for up to 120 days for $25.
+              You can reserve an Arkansas corporate name for up to 120 days for $25.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -106,18 +107,17 @@ const AlaskaCorporation = () => (
               Registered Agent and Office
             </Heading>
             <Paragraph big>
-            Arkansas corporations must have a registered agent in Arkansas who is designated to receive official state administrative and legal correspondence. The registered agent must be either an individual Arkansas resident whose business office is the same as the registered office, or a corporation whose business office is the same as the registered office.
+              Arkansas corporations must have a registered agent in Arkansas who is designated to receive official state administrative and legal correspondence. The registered agent must be either an individual Arkansas resident whose business office is the same as the registered office, or a
+              corporation whose business office is the same as the registered office.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Bylaws
             </Heading>
-            <Paragraph big>
-            A corporation is required to keep a copy of its bylaws at its main executive office, but is not required to file them with the state. At its initial meeting, the board of directors should adopt corporate bylaws, and then keep them updated as time goes on.
-            </Paragraph>
+            <Paragraph big>A corporation is required to keep a copy of its bylaws at its main executive office, but is not required to file them with the state. At its initial meeting, the board of directors should adopt corporate bylaws, and then keep them updated as time goes on.</Paragraph>
             <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            Bylaws describe the corporation’s basic managerial and legal operating principles, including information on:
+              Bylaws describe the corporation’s basic managerial and legal operating principles, including information on:
             </Paragraph>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
@@ -144,10 +144,13 @@ const AlaskaCorporation = () => (
               Directors
             </Heading>
             <Paragraph big>
-            Your new Arkansas corporation is required to have at least one director. The articles of incorporation or bylaws may list director qualifications. A director does not need to be an Arkansas resident or a shareholder of the corporation unless so stated in the articles of incorporation or bylaws.
+              Your new Arkansas corporation is required to have at least one director. The articles of incorporation or bylaws may list director qualifications. A director does not need to be an Arkansas resident or a shareholder of the corporation unless so stated in the articles of incorporation
+              or bylaws.
             </Paragraph>
             <Paragraph big>
-            The board of directors is required to elect officers in accordance with the corporation’s bylaws. The titles and duties of corporate officers must be described in the corporation’s bylaws, or they must be appointed by the board of directors in accordance with the bylaws. A duly appointed officer may appoint as many officers or assistant officers as authorized by the bylaws or the board of directors. The bylaws or the board of directors will delegate responsibility to one of the officers for preparing minutes of the directors’ and shareholders’ meetings, as well as for authenticating corporate records. The same individual may simultaneously hold more than one office in a corporation.
+              The board of directors is required to elect officers in accordance with the corporation’s bylaws. The titles and duties of corporate officers must be described in the corporation’s bylaws, or they must be appointed by the board of directors in accordance with the bylaws. A duly
+              appointed officer may appoint as many officers or assistant officers as authorized by the bylaws or the board of directors. The bylaws or the board of directors will delegate responsibility to one of the officers for preparing minutes of the directors’ and shareholders’ meetings, as
+              well as for authenticating corporate records. The same individual may simultaneously hold more than one office in a corporation.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -155,11 +158,11 @@ const AlaskaCorporation = () => (
               Requirement Reports
             </Heading>
             <Paragraph big style={{ marginBottom: "48px" }}>
-            An annual franchise report must be filed with the Arkansas Secretary of State each year.
+              An annual franchise report must be filed with the Arkansas Secretary of State each year.
             </Paragraph>
 
             <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            This report must include:
+              This report must include:
             </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>The corporation’s name and its state or country of incorporation</Paragraph>
@@ -188,7 +191,10 @@ const AlaskaCorporation = () => (
               Taxes
             </Heading>
             <Paragraph big>Arkansas’ corporate tax structure consists of six separate brackets with a top rate of 6.5 percent that takes effect when corporate income reaches $100,000. Arkansas’ top rate ranks 30th highest nationally among states with corporate income taxes.</Paragraph>
-            <Paragraph big>The Arkansas secretary of state recognizes S corporation status. A “subchapter S” corporation or “S corp” is one that chooses to be treated as a pass-through entity for tax purposes in the same way as a sole proprietorship or partnership. Tax-related information for the S corp is filed as part of the owner’s individual income tax. Arkansas does not require filing a separate form for the S corp.</Paragraph>
+            <Paragraph big>
+              The Arkansas secretary of state recognizes S corporation status. A “subchapter S” corporation or “S corp” is one that chooses to be treated as a pass-through entity for tax purposes in the same way as a sole proprietorship or partnership. Tax-related information for the S corp is filed
+              as part of the owner’s individual income tax. Arkansas does not require filing a separate form for the S corp.
+            </Paragraph>
           </PanelWrapper>
         </CollapseWrapper>
       </TabsSection>
@@ -237,7 +243,7 @@ const AlaskaCorporation = () => (
         <Accordion content={questions} curve curveColor={color.blue1} curveLeft="-15px" />
       </ContentCenter>
       <ContentCenter style={{ marginBottom: "48px" }}>
-        <Button content={{ text: `View all corporation FAQ's`, url: `/` }} width={300} padding="12px 48px" />
+        <Button content={{ text: `View all corporation FAQ's`, url: `/research-topics/c-corporation-info/` }} width={300} padding="12px 48px" />
       </ContentCenter>
     </QuestionSection>
 

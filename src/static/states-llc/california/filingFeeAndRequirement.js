@@ -18,7 +18,7 @@ export const filingFeeAndRequirementContent = {
         desc: `Starting a California LLC? Have Incfile do all the paperwork for you for free.`,
         button: {
           text: `Form Your LLC Now`,
-          url: "https://www.incfile.com/form-order-now.php?entityType=LLC&entityState=CA",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=CA`,
         },
       },
     ],
@@ -51,13 +51,7 @@ export const filingFeeAndRequirementContent = {
       content: `When you first incorporate your business in California, you’ll need to file an LLC with the TX Secretary of State and pay a California filing fee. Here are the current fees and filing times for California:`,
     },
     {
-      type: `gridTable`,
-      headerSize: `5`,
-      columns: `3`,
-      content: {
-        headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
-        rows: [[`$75`, `15 Business Days`, `5 Business Days`]],
-      },
+      type: `dynamic_ar_box`,
     },
     {
       type: `arrow-links`,
@@ -165,51 +159,8 @@ export const filingFeeAndRequirementContent = {
       },
     },
     {
-      type: `heading`,
-      content: `Statement of Information`,
-      size: 4,
-      marginBottom: 24,
+      type: `dynamic_filing_requirement`,
     },
-    {
-      type: `paragraph`,
-      content: `<b>Frequency:</b> Biennially`,
-      marginBottom: 16,
-    },
-    {
-      type: `paragraph`,
-      content: `<b>Due Date:</b>: During six-month period ending on last day of anniversary month of incorporation or qualification.`,
-      marginBottom: 16,
-    },
-    {
-      type: `paragraph`,
-      content: `<b>Filing Fee:</b>: $20`,
-      marginBottom: 16,
-    },
-    {
-      type: `paragraph`,
-      content: `<b>Important:</b>: The initial Statement of Information filing is due within 90 days of the entity formation date.`,
-      marginBottom: 16,
-    },
-
-    {
-      type: `heading`,
-      content: `California Franchise Tax`,
-      size: 4,
-      marginBottom: 24,
-    },
-    {
-      type: `paragraph`,
-      content: `<b>Frequency:</b> Annually`,
-      marginBottom: 16,
-    },
-    {
-      type: `paragraph`,
-      content: `<b>Franchise Tax Fee:</b>: $800 (minimum)<br>
-            $800 payment for the LLC Franchise Tax is due by 15th day of the 4th month after your LLC is filed. The month your LLC is filed counts as Month 1, regardless if you file on the 1st of the month, the last of the month, or any day of the month, really. This means that if you were to file your LLC on March 22nd, then you must pay the $800 fee no later than June 15th (in this example, March is Month 1, April is Month 2, May is Month 3, and June is Month 4). Then, every year after your first payment $800 LLC Franchise Tax will be due by April 15th. You pay the $800 LLC Franchise Tax using Form 3522 called the LLC Tax Voucher. 
-            (We do not assist in the filing of the Franchise Tax Report)`,
-      marginBottom: 16,
-    },
-
     {
       type: `box-cta`,
       color: color.green3,
@@ -293,7 +244,7 @@ export const filingFeeAndRequirementContent = {
         subtitle: `You can choose to make changes to the template based on your unique requirements.`,
         button: {
           text: `Lear About Operating Agreemets`,
-          url: `https://www.incfile.com/research-topics/llc-info/llc-operating-agreement/`,
+          url: `/research-topics/llc-info/llc-operating-agreement/`,
         },
       },
     },

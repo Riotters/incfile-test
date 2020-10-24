@@ -18,7 +18,7 @@ export const filingFeeAndRequirementContent = {
         desc: `Starting a Georgia LLC? Have Incfile do all the paperwork for you for free.`,
         button: {
           text: `Form Your LLC Now`,
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=GA`,
         },
       },
     ],
@@ -51,13 +51,7 @@ export const filingFeeAndRequirementContent = {
       content: `When you first incorporate your business in Georgia, you’ll need to file an LLC with the GA Secretary of State and pay a filing fee. Here are the current fees and filing times for Georgia:`,
     },
     {
-      type: `gridTable`,
-      headerSize: `5`,
-      columns: `3`,
-      content: {
-        headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
-        rows: [[`$100`, `20 Business Days`, `5 Business Days`]],
-      },
+      type: `dynamic_ar_box`,
     },
     {
       type: `arrow-links`,
@@ -158,13 +152,7 @@ export const filingFeeAndRequirementContent = {
       content: `Most states require that you file a periodic report with the secretary of state. Georgia requires an annual report for LLCs, with a required filing fee. Here are more specifics:`,
     },
     {
-      type: `iconListColorBox`,
-      styles: { marginBottom: `55px` },
-      boxColor: color.blue3,
-      content: {
-        header: `Annual Report`,
-        list: [`<b>Frequency:</b> Annually`, `<b>Due Date:</b> April 1st`, `<b>Filing Fee:</b> $50`],
-      },
+      type: `dynamic_filing_requirement`,
     },
     {
       type: `box-cta`,
@@ -249,7 +237,7 @@ export const filingFeeAndRequirementContent = {
         subtitle: `You can choose to make changes to the template based on your unique requirements.`,
         button: {
           text: `Lear About Operating Agreemets`,
-          url: `https://www.incfile.com/research-topics/llc-info/llc-operating-agreement/`,
+          url: `/research-topics/llc-info/llc-operating-agreement/`,
         },
       },
     },

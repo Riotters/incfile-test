@@ -83,13 +83,14 @@ const AlaskaCorporation = () => (
               Choosing a Corporation Name
             </Heading>
             <Paragraph big>
-            Choosing a name for your new Rhode Island corporation is one of the first official steps toward actually conducting business in the state. The corporate name you choose must be distinguishable from all other registered and reserved business entities on the Rhode Island state rolls.
+              Choosing a name for your new Rhode Island corporation is one of the first official steps toward actually conducting business in the state. The corporate name you choose must be distinguishable from all other registered and reserved business entities on the Rhode Island state rolls.
             </Paragraph>
             <Paragraph big>
-            Your new business’ name must include one of the following words, an abbreviation thereof: “Incorporated,” “Corporation,” “Company,” or “Limited.” However, the name must not state or imply that the corporation is organized for some purpose other than the one specified in its articles of incorporation or one permitted by state law.
+              Your new business’ name must include one of the following words, an abbreviation thereof: “Incorporated,” “Corporation,” “Company,” or “Limited.” However, the name must not state or imply that the corporation is organized for some purpose other than the one specified in its articles of
+              incorporation or one permitted by state law.
             </Paragraph>
             <Paragraph big style={{ marginBottom: "0" }}>
-            An available corporate name may be reserved for 120 days for a $50 fee.
+              An available corporate name may be reserved for 120 days for a $50 fee.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -97,36 +98,36 @@ const AlaskaCorporation = () => (
               Articles of Incorporation
             </Heading>
             <Paragraph big>
-              Before it can legally operate in the state, a new Rhode Island corporation must file articles of incorporation with the Corporations Division of the state Secretary of State’s office. In order to perfect the corporation’s organization, incorporators have all the powers of shareholders or directors until stock is issued or directors are elected.
+              Before it can legally operate in the state, a new Rhode Island corporation must file articles of incorporation with the Corporations Division of the state Secretary of State’s office. In order to perfect the corporation’s organization, incorporators have all the powers of shareholders
+              or directors until stock is issued or directors are elected.
             </Paragraph>
-            <Paragraph big>The minimum filing fee is $230, which includes a minimum $160 license fee plus a $70 filing fee. You may authorize up to (but not including) 75,000,000 shares in your articles for the minimum $160 license fee. However, if you authorize 75,000,00 or more shares, the fee jumps to an amount calculated at the rate of one-fifth cent ($.002) per share for each authorized share.</Paragraph>
+            <Paragraph big>
+              The minimum filing fee is $230, which includes a minimum $160 license fee plus a $70 filing fee. You may authorize up to (but not including) 75,000,000 shares in your articles for the minimum $160 license fee. However, if you authorize 75,000,00 or more shares, the fee jumps to an
+              amount calculated at the rate of one-fifth cent ($.002) per share for each authorized share.
+            </Paragraph>
 
             <Colorbox color={color.blue3} content={articlesOfIncorporation.box1} dotsColor={color.blue1} style={{ marginBottom: "48px" }} />
-
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Registered Agent and Office
             </Heading>
             <Paragraph big>
-            Every Rhode Island corporation must have a registered agent in the state-the person or office designated to receive official state correspondence, both administrative and legal. The registered agent is required to acknowledge acceptance of the appointment as such in writing.
+              Every Rhode Island corporation must have a registered agent in the state-the person or office designated to receive official state correspondence, both administrative and legal. The registered agent is required to acknowledge acceptance of the appointment as such in writing.
             </Paragraph>
-            <Paragraph big>
-            The registered agent must be either a Rhode Island resident whose business office is the same as the registered office, or a corporation authorized to conduct business in the state that has a business office identical to the registered office.
-            </Paragraph>
-            <Paragraph big>
-            When a corporation’s registered agent is an attorney, the business address of the agent does not have to be identical to the registered office, but may be the usual business address of the attorney.
-            </Paragraph>
+            <Paragraph big>The registered agent must be either a Rhode Island resident whose business office is the same as the registered office, or a corporation authorized to conduct business in the state that has a business office identical to the registered office.</Paragraph>
+            <Paragraph big>When a corporation’s registered agent is an attorney, the business address of the agent does not have to be identical to the registered office, but may be the usual business address of the attorney.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Bylaws
             </Heading>
             <Paragraph big>
-            Bylaws lay out the corporation’s basic managerial and legal operating principles that manage their internal affairs. Rhode Island corporations must keep a copy of their bylaws at their principal executive office, but are not required to file them with the state. At its initial meeting, the incorporators or the board of directors should adopt corporate bylaws, and then keep them updated as time goes on.
+              Bylaws lay out the corporation’s basic managerial and legal operating principles that manage their internal affairs. Rhode Island corporations must keep a copy of their bylaws at their principal executive office, but are not required to file them with the state. At its initial meeting,
+              the incorporators or the board of directors should adopt corporate bylaws, and then keep them updated as time goes on.
             </Paragraph>
             <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            The board of directors of a corporation may adopt, amend, or repeal bylaws, unless the articles reserve this right to the shareholders. Bylaws normally address:
+              The board of directors of a corporation may adopt, amend, or repeal bylaws, unless the articles reserve this right to the shareholders. Bylaws normally address:
             </Paragraph>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
@@ -147,29 +148,27 @@ const AlaskaCorporation = () => (
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>How and when annual financial information is provided to shareholders</Paragraph>
             </TextBoxed>
-
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Directors
             </Heading>
             <Paragraph big>
-            Officers are listed in the initial bylaws or elected by the board of directors, and may appoint other officers in accordance with the bylaws. At least one officer should be responsible for preparing minutes of director and shareholder meetings, and for maintaining and authenticating corporate records.
+              Officers are listed in the initial bylaws or elected by the board of directors, and may appoint other officers in accordance with the bylaws. At least one officer should be responsible for preparing minutes of director and shareholder meetings, and for maintaining and authenticating
+              corporate records.
             </Paragraph>
-            <Paragraph big>
-            An officer or the corporation may hold more than one office simultaneously, unless otherwise prohibited by law or by the corporation’s bylaws.
-            </Paragraph>
+            <Paragraph big>An officer or the corporation may hold more than one office simultaneously, unless otherwise prohibited by law or by the corporation’s bylaws.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Requirement Reports
             </Heading>
             <Paragraph big style={{ marginBottom: "48px" }}>
-            Every Rhode Island corporation must file an annual report with the Rhode Island Secretary of State between January 1 and March 1, except for the year of incorporation. 
+              Every Rhode Island corporation must file an annual report with the Rhode Island Secretary of State between January 1 and March 1, except for the year of incorporation.
             </Paragraph>
 
             <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            This report must be current as of the date the report is executed and include:
+              This report must be current as of the date the report is executed and include:
             </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>The corporation’s name and its state or country of incorporation</Paragraph>
@@ -186,14 +185,16 @@ const AlaskaCorporation = () => (
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>A statement of the aggregate number of issued shares, itemized by classes, par value of shares, shares without par value, and series, if any, within a class</Paragraph>
             </TextBoxed>
-
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Taxes
             </Heading>
             <Paragraph big>Rhode Island corporations are subject to a corporate income tax of nine percent on all corporate income. The minimum annual payment is $250. Among states levying corporate income taxes, Rhode Island’s rate ranks 7th highest nationally.</Paragraph>
-            <Paragraph big>“S corporation” status is recognized by the Rhode Island Secretary of State. A “subchapter S” corporation (frequently referred to as an “S corp”) is treated as a pass-through entity for tax purposes in the same way as a sole proprietorship or partnership. The S corp does not file a tax return on its own behalf; instead, all tax-related data for the S corp is filed as part of the owner’s individual income tax.</Paragraph>
+            <Paragraph big>
+              “S corporation” status is recognized by the Rhode Island Secretary of State. A “subchapter S” corporation (frequently referred to as an “S corp”) is treated as a pass-through entity for tax purposes in the same way as a sole proprietorship or partnership. The S corp does not file a tax
+              return on its own behalf; instead, all tax-related data for the S corp is filed as part of the owner’s individual income tax.
+            </Paragraph>
           </PanelWrapper>
         </CollapseWrapper>
       </TabsSection>
@@ -242,7 +243,7 @@ const AlaskaCorporation = () => (
         <Accordion content={questions} curve curveColor={color.blue1} curveLeft="-15px" />
       </ContentCenter>
       <ContentCenter style={{ marginBottom: "48px" }}>
-        <Button content={{ text: `View all corporation FAQ's`, url: `/` }} width={300} padding="12px 48px" />
+        <Button content={{ text: `View all corporation FAQ's`, url: `/research-topics/c-corporation-info/` }} width={300} padding="12px 48px" />
       </ContentCenter>
     </QuestionSection>
 

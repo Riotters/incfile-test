@@ -104,7 +104,7 @@ export const howToGuide = [
               <li>Details of your Registered Agent</li>
               <li>Name of the organizers</li></br>
               <p>You can file your Virginia LLC Articles of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Virginia. You only need to file your Articles of Organization once.</p></br>
-              <p><a href="/" target="_blank">Form your LLC now</a></p>`, //https://www.incfile.com/form-order-now.php?entityType=LLC&entityState=ID
+              <p><a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=ID" target="_blank">Form your LLC now</a></p>`,
         },
       ],
     },
@@ -468,7 +468,7 @@ export const namingYourBusiness = [
       },
       {
         text: `If you’re ready to start your Virginia LLC, you can formally file your Articles of Organization with the Virginia SCC, or
-            <a href="/" target="_blank">let Incfile take care of it for you.</a>`, //https://www.incfile.com/form-order-now.php?entityType=LLC&entityState=CO
+            <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=CO" target="_blank">let Incfile take care of it for you.</a>`,
       },
     ],
     marginBottom: 48,
@@ -937,11 +937,7 @@ export const feesAndRequirments = [
     marginBottom: 16,
   },
   {
-    type: `table-simple`,
-    content: {
-      headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
-      rows: [[`$100`, `5 business days`, `1 business day`]],
-    },
+    type: `dynamic_ar_box`
   },
   {
     type: `arrow-link`,
@@ -1030,13 +1026,7 @@ export const feesAndRequirments = [
     marginBottom: 16,
   },
   {
-    type: `list-dot`,
-    content: {
-      header: `Annual Report`,
-      list: [`Frequency:  Annually`, `Due Date:  Last day of anniversary month of organization.`, `Filing Fee:  $50`],
-    },
-    marginBottom: 16,
-    color: color.blue2,
+    type: `dynamic_filing_requirement`
   },
   {
     type: `arrow-link`,

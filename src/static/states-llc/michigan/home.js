@@ -109,7 +109,7 @@ export const howToGuide = [
             <li>Purpose of your business</li>
             <li>Name of the incorporator</li></br>
             <p>You can file your Michigan LLC Articles of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Michigan, but you only need to file your Articles of Organization once.</p></br>
-            <p><a href="/" target="_blank">Form your LLC now</a></p>`, //https://www.incfile.com/form-order-now.php?entityType=LLC&entityState=ID
+            <p><a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=ID" target="_blank">Form your LLC now</a></p>`,
         },
       ],
     },
@@ -470,7 +470,7 @@ export const namingYourBusiness = [
       },
       {
         text: `If you’re ready to start your Michigan LLC, you can formally file your Articles of Organization with the Michigan LARA, or
-          <a href="/" target="_blank" rel="noopener noreferrer">let Incfile take care of it for you.</a>`, //https://www.incfile.com/form-order-now.php?entityType=LLC&entityState=CO
+          <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=CO" target="_blank" rel="noopener noreferrer">let Incfile take care of it for you.</a>`,
       },
     ],
     marginBottom: 16,
@@ -971,11 +971,7 @@ export const feesAndRequirments = [
     marginBottom: 16,
   },
   {
-    type: `table-simple`,
-    content: {
-      headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
-      rows: [[`$50`, `15 business days`, `8 business days`]],
-    },
+    type: `dynamic_ar_box`
   },
   {
     type: `arrow-link`,
@@ -1064,13 +1060,7 @@ export const feesAndRequirments = [
     marginBottom: 16,
   },
   {
-    type: `list-dot`,
-    content: {
-      header: `Annual Report`,
-      list: [`Frequency:  Annually`, `Due Date:  February 15th`, `Note:  LLCs registered after September 30th of the preceding year are exempt from filing the report in the subsequent year. `, `Filing Fee:  $25`],
-    },
-    marginBottom: 16,
-    color: color.blue2,
+    type: `dynamic_filing_requirement`
   },
   {
     type: `text`,

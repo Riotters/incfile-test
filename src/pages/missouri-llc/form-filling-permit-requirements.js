@@ -11,20 +11,30 @@ import ContentMap from "../../atomic/partials/content-map";
 // Content
 import { feesAndRequirments } from "../../static/states-llc/missouri/home";
 import { tabPages } from "../../static/states-llc/missouri/general";
+import { getFullPricesAndFilings } from '../../api/Api';
 
-const FillingRequirementsPage = () => (
-  <Layout>
-    <SEO
-    title="Missouri Business Licenses, LLC Costs and Requirements"
-    description="Make sense of the required forms, fees and filing procedures for your MO LLC with Incfile’s easy-to-use guide. Read more."
-    />
-    <LLCLayout>
-        <LeftTabPages content={tabPages} />
-        <MainPageContent>
-            <ContentMap content={feesAndRequirments} />
-        </MainPageContent>
-    </LLCLayout>
-  </Layout>
-);
+const FillingRequirementsPage = () => {
+    const [dataApi, setDataApi] = React.useState({});
+
+    React.useEffect(() => {
+        getFullPricesAndFilings('Missouri').then(data => {
+            setDataApi(data);
+        });
+    }, []);
+    return (
+        <Layout>
+            <SEO
+                title="Missouri Business Licenses, LLC Costs and Requirements"
+                description="Make sense of the required forms, fees and filing procedures for your MO LLC with Incfile’s easy-to-use guide. Read more."
+            />
+            <LLCLayout data={dataApi}>
+                <LeftTabPages content={tabPages} />
+                <MainPageContent>
+                    <ContentMap content={feesAndRequirments} data={dataApi} />
+                </MainPageContent>
+            </LLCLayout>
+        </Layout>
+    );
+};
 
 export default FillingRequirementsPage;

@@ -872,11 +872,7 @@ export const feesAndRequirments = [
     marginBottom: 32,
   },
   {
-    type: `table-simple`,
-    content: {
-      headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
-      rows: [[`$50`, `10 Business Days`, `2 Business Day`]],
-    },
+    type: `dynamic_ar_box`
   },
   {
     type: `arrow-link`,
@@ -965,19 +961,11 @@ export const feesAndRequirments = [
     marginBottom: 48,
   },
   {
-    type: `header`,
-    content: `Annual Report`,
-    size: 4,
-    marginBottom: 24,
+    type: `dynamic_filing_requirement`
   },
   {
     type: `text`,
-    content: `<b>Frequency:</b> New Mexico LLCs are currently not required to file annual reports.`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `<a href="/New-Mexico-llc/fees-filing-requirements/">Learn about your ongoing New Mexico LLC filing requirements</a>
+    content: `<a href="/new-mexico-llc/fees-filing-requirements/">Learn about your ongoing New Mexico LLC filing requirements</a>
     and business filing deadlines with our helpful New Mexico ongoing filing lookup tool..`,
     marginBottom: 16,
   },

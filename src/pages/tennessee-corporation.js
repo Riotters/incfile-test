@@ -83,16 +83,15 @@ const AlaskaCorporation = () => (
               Choosing a Corporation Name
             </Heading>
             <Paragraph big>
-            Choosing a name for your new Tennessee corporation is one of the first official steps toward actually conducting business in the state. The corporate name you choose must be readily distinguishable from all other registered and reserved business entities on the Tennessee state rolls.
+              Choosing a name for your new Tennessee corporation is one of the first official steps toward actually conducting business in the state. The corporate name you choose must be readily distinguishable from all other registered and reserved business entities on the Tennessee state rolls.
             </Paragraph>
             <Paragraph big>
-            Your new business’ name must include one of the following words, an abbreviation thereof, or words of similar meaning in another language: “Incorporated,” “Corporation,” “Company,” or “Limited.” However, the name must not state or imply that the corporation is organized for some purpose other than the one specified in its articles of incorporation or one permitted by state law, and it must not state or imply that it is associated with the government.
+              Your new business’ name must include one of the following words, an abbreviation thereof, or words of similar meaning in another language: “Incorporated,” “Corporation,” “Company,” or “Limited.” However, the name must not state or imply that the corporation is organized for some
+              purpose other than the one specified in its articles of incorporation or one permitted by state law, and it must not state or imply that it is associated with the government.
             </Paragraph>
-            <Paragraph big>
-            An available corporate name may be reserved for up to four months by for a $20 fee.
-            </Paragraph>
+            <Paragraph big>An available corporate name may be reserved for up to four months by for a $20 fee.</Paragraph>
             <Paragraph big style={{ marginBottom: "0" }}>
-            A corporation may apply to the Tennessee Department of State to use a name that is not its true corporate name. For each assumed name, the corporation must file an application specifying:
+              A corporation may apply to the Tennessee Department of State to use a name that is not its true corporate name. For each assumed name, the corporation must file an application specifying:
             </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>Its true corporate name</Paragraph>
@@ -112,7 +111,8 @@ const AlaskaCorporation = () => (
               Articles of Incorporation
             </Heading>
             <Paragraph big>
-            Before it can legitimately commence operations in the state, a new Tennessee corporation must file a charter (usually known as articles of incorporation in other states) with the Business Services Division of the Tennessee Department of State. The charter must be executed (signed) and delivered by at least one incorporator—who must be a natural person of legal age—and accompanied by a filing fee of $100.
+              Before it can legitimately commence operations in the state, a new Tennessee corporation must file a charter (usually known as articles of incorporation in other states) with the Business Services Division of the Tennessee Department of State. The charter must be executed (signed) and
+              delivered by at least one incorporator—who must be a natural person of legal age—and accompanied by a filing fee of $100.
             </Paragraph>
 
             <Colorbox color={color.blue3} content={articlesOfIncorporation.box1} dotsColor={color.blue1} style={{ marginBottom: "65px" }} />
@@ -126,21 +126,21 @@ const AlaskaCorporation = () => (
               Registered Agent and Office
             </Heading>
             <Paragraph big>
-            Every Tennessee corporation must have a registered agent in the state—the person or office designated to receive official state correspondence, both administrative and legal. The registered agent is required to sign the articles of incorporation, indicating acceptance of the appointment as registered agent.
+              Every Tennessee corporation must have a registered agent in the state—the person or office designated to receive official state correspondence, both administrative and legal. The registered agent is required to sign the articles of incorporation, indicating acceptance of the
+              appointment as registered agent.
             </Paragraph>
-            <Paragraph big>
-            The registered agent must be either a Tennessee resident whose business office is the same as the registered office, or a corporation authorized to conduct business in the Volunteer State that has a business office identical to the registered office.
-            </Paragraph>
+            <Paragraph big>The registered agent must be either a Tennessee resident whose business office is the same as the registered office, or a corporation authorized to conduct business in the Volunteer State that has a business office identical to the registered office.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Bylaws
             </Heading>
             <Paragraph big>
-            Bylaws lay out the corporation’s basic managerial and legal operating principles that manage their internal affairs. Tennessee corporations must keep a copy of their bylaws at their principal executive office, but are not required to file them with the state. At its initial meeting, the incorporators or the board of directors should adopt corporate bylaws, and then keep them updated as time goes on.
+              Bylaws lay out the corporation’s basic managerial and legal operating principles that manage their internal affairs. Tennessee corporations must keep a copy of their bylaws at their principal executive office, but are not required to file them with the state. At its initial meeting,
+              the incorporators or the board of directors should adopt corporate bylaws, and then keep them updated as time goes on.
             </Paragraph>
             <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            The board of directors of a corporation may adopt, amend, or repeal bylaws, unless the articles reserve this right to the shareholders. Bylaws normally address:
+              The board of directors of a corporation may adopt, amend, or repeal bylaws, unless the articles reserve this right to the shareholders. Bylaws normally address:
             </Paragraph>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
@@ -161,33 +161,27 @@ const AlaskaCorporation = () => (
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>How and when annual financial information is provided to shareholders</Paragraph>
             </TextBoxed>
-
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Directors
             </Heading>
             <Paragraph big>
-            Officers are listed in the initial bylaws or elected by the board of directors, and may appoint other officers in accordance with the bylaws. There must be at least a president and a secretary. At least one officer has the responsibility of preparing minutes of director and shareholder meetings, and for maintaining and authenticating corporate records.
+              Officers are listed in the initial bylaws or elected by the board of directors, and may appoint other officers in accordance with the bylaws. There must be at least a president and a secretary. At least one officer has the responsibility of preparing minutes of director and shareholder
+              meetings, and for maintaining and authenticating corporate records.
             </Paragraph>
-            <Paragraph big>
-            An officer may hold more than one office in the corporation (except for the offices of president and secretary) unless otherwise prohibited by law or by the corporation’s bylaws.
-            </Paragraph>
+            <Paragraph big>An officer may hold more than one office in the corporation (except for the offices of president and secretary) unless otherwise prohibited by law or by the corporation’s bylaws.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Requirement Reports
             </Heading>
+            <Paragraph big>A corporation’s board of directors consists of one or more individuals in accordance with the corporate charter or bylaws. The number of directors may be increased or decreased by amending the charter or the bylaws.</Paragraph>
             <Paragraph big>
-            A corporation’s board of directors consists of one or more individuals in accordance with the corporate charter or bylaws. The number of directors may be increased or decreased by amending the charter or the bylaws.
+              Officers are listed in the initial bylaws or elected by the board of directors, and may appoint other officers in accordance with the bylaws. There must be at least a president and a secretary. At least one officer has the responsibility of preparing minutes of director and shareholder
+              meetings, and for maintaining and authenticating corporate records.
             </Paragraph>
-            <Paragraph big>
-            Officers are listed in the initial bylaws or elected by the board of directors, and may appoint other officers in accordance with the bylaws. There must be at least a president and a secretary. At least one officer has the responsibility of preparing minutes of director and shareholder meetings, and for maintaining and authenticating corporate records.
-            </Paragraph>
-            <Paragraph big>
-            An officer may hold more than one office in the corporation (except for the offices of president and secretary) unless otherwise prohibited by law or by the corporation’s bylaws.
-            </Paragraph>
-
+            <Paragraph big>An officer may hold more than one office in the corporation (except for the offices of president and secretary) unless otherwise prohibited by law or by the corporation’s bylaws.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
@@ -195,7 +189,10 @@ const AlaskaCorporation = () => (
             </Heading>
             <Paragraph big>Tennessee’s corporate tax structure consists of a flat rate of 6.5 percent on all corporate income. Among states levying corporate income taxes, Tennessee’s rate ranks 30th highest nationally.</Paragraph>
             <Paragraph big>Tennessee corporations are subject to an annual excise tax and a franchise tax. The minimum annual franchise tax is $100.</Paragraph>
-            <Paragraph big>“S corporation” status is recognized by the Tennessee Secretary of State. A “subchapter S” corporation (frequently referred to as an “S corp”) is treated as a pass-through entity for tax purposes in the same way as a sole proprietorship or partnership. The S corp does not file a tax return on its own behalf; instead, all tax-related data for the S corp is filed as part of the owner’s individual income tax.</Paragraph>
+            <Paragraph big>
+              “S corporation” status is recognized by the Tennessee Secretary of State. A “subchapter S” corporation (frequently referred to as an “S corp”) is treated as a pass-through entity for tax purposes in the same way as a sole proprietorship or partnership. The S corp does not file a tax
+              return on its own behalf; instead, all tax-related data for the S corp is filed as part of the owner’s individual income tax.
+            </Paragraph>
           </PanelWrapper>
         </CollapseWrapper>
       </TabsSection>
@@ -244,7 +241,7 @@ const AlaskaCorporation = () => (
         <Accordion content={questions} curve curveColor={color.blue1} curveLeft="-15px" />
       </ContentCenter>
       <ContentCenter style={{ marginBottom: "48px" }}>
-        <Button content={{ text: `View all corporation FAQ's`, url: `/` }} width={300} padding="12px 48px" />
+        <Button content={{ text: `View all corporation FAQ's`, url: `/research-topics/c-corporation-info/` }} width={300} padding="12px 48px" />
       </ContentCenter>
     </QuestionSection>
 

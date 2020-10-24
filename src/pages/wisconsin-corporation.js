@@ -83,10 +83,11 @@ const AlaskaCorporation = () => (
               Choosing a Corporation Name
             </Heading>
             <Paragraph big>
-            Selecting the name of your new Wisconsin corporation is one of the first official steps toward actually conducting business in the Badger State. The business name you choose must be distinguishable from all other business entities registered or reserved in Wisconsin, and it may not include language stating or implying that it is organized for a purpose other than that permitted by state law and its articles of incorporation.
+              Selecting the name of your new Wisconsin corporation is one of the first official steps toward actually conducting business in the Badger State. The business name you choose must be distinguishable from all other business entities registered or reserved in Wisconsin, and it may not
+              include language stating or implying that it is organized for a purpose other than that permitted by state law and its articles of incorporation.
             </Paragraph>
             <Paragraph big style={{ marginBottom: "0" }}>
-            The name must also end with one of the following terms or its abbreviation: “Incorporated,” “Corporation,” “Company,” or “Limited.” You can reserve an available LLC name for up to 120 days for $15 by mail or $30 by phone.
+              The name must also end with one of the following terms or its abbreviation: “Incorporated,” “Corporation,” “Company,” or “Limited.” You can reserve an available LLC name for up to 120 days for $15 by mail or $30 by phone.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -94,41 +95,37 @@ const AlaskaCorporation = () => (
               Articles of Incorporation
             </Heading>
             <Paragraph big>
-            Before conducting business in the state, Wisconsin corporations must file articles of incorporation with the state and pay a $100 filing fee. The articles must be delivered by at least one of the incorporators, who must be a natural person at least 18 years old. The incorporator is not required to be a director, officer, or shareholder of the corporation.
+              Before conducting business in the state, Wisconsin corporations must file articles of incorporation with the state and pay a $100 filing fee. The articles must be delivered by at least one of the incorporators, who must be a natural person at least 18 years old. The incorporator is not
+              required to be a director, officer, or shareholder of the corporation.
             </Paragraph>
 
             <Colorbox color={color.blue3} content={articlesOfIncorporation.box1} dotsColor={color.blue1} style={{ marginBottom: "65px" }} />
 
             <Paragraph big>Wisconsin law allows a corporation to be formed for any lawful business activity; the exact purpose does not have to be stated in the articles.</Paragraph>
             <Colorbox color={color.orange3} content={articlesOfIncorporation.box2} dotsColor={color.orange1} style={{ marginBottom: "48px" }} />
-
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Registered Agent and Office
             </Heading>
-            <Paragraph big>
-            All Wisconsin corporations must have and maintain both a registered office (which may be the same as its place of business) and a registered agent in the state—the person or office designated to receive official state legal and administrative correspondence.
-            </Paragraph>
-            <Paragraph big>
-            The registered agent must be an individual resident in Wisconsin whose business office is the same as the registered office, or a business entity authorized to conduct business in the state.
-            </Paragraph>
+            <Paragraph big>All Wisconsin corporations must have and maintain both a registered office (which may be the same as its place of business) and a registered agent in the state—the person or office designated to receive official state legal and administrative correspondence.</Paragraph>
+            <Paragraph big>The registered agent must be an individual resident in Wisconsin whose business office is the same as the registered office, or a business entity authorized to conduct business in the state.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Bylaws
             </Heading>
+            <Paragraph big>Bylaws describe the corporation’s basic managerial and legal operating principles. The corporation’s initial bylaws should be adopted by its incorporators or its board of directors.</Paragraph>
             <Paragraph big>
-            Bylaws describe the corporation’s basic managerial and legal operating principles. The corporation’s initial bylaws should be adopted by its incorporators or its board of directors.
+              A Wisconsin corporation should keep a copy of its bylaws at its main executive office, but is not required to file them with the state. The bylaws may contain any provision for managing the business and regulating the affairs of the corporation that’s not in conflict with law or the
+              articles of incorporation.
             </Paragraph>
             <Paragraph big>
-            A Wisconsin corporation should keep a copy of its bylaws at its main executive office, but is not required to file them with the state. The bylaws may contain any provision for managing the business and regulating the affairs of the corporation that’s not in conflict with law or the articles of incorporation.
-            </Paragraph>
-            <Paragraph big>
-            The board of directors or the shareholders may adopt, amend, or repeal bylaws, unless the articles of incorporation or the bylaws reserve this right to the shareholders. At its initial meeting, the board of directors should adopt corporate bylaws, and then keep them updated as time goes on.
+              The board of directors or the shareholders may adopt, amend, or repeal bylaws, unless the articles of incorporation or the bylaws reserve this right to the shareholders. At its initial meeting, the board of directors should adopt corporate bylaws, and then keep them updated as time
+              goes on.
             </Paragraph>
             <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            Bylaws normally address:
+              Bylaws normally address:
             </Paragraph>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
@@ -149,29 +146,24 @@ const AlaskaCorporation = () => (
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>How and when annual financial information is provided to shareholders</Paragraph>
             </TextBoxed>
-
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Directors
             </Heading>
-            <Paragraph big>
-            Officers must be named in the bylaws or elected by the board of directors. Officers may appoint other officers in compliance with the bylaws. The same natural person may simultaneously hold more than one office in a corporation.
-            </Paragraph>
-            <Paragraph big>
-            At least one officer should be designated as responsible for preparing minutes of the directors’ and shareholders’ meetings, and for maintaining and authenticating corporate records.
-            </Paragraph>
+            <Paragraph big>Officers must be named in the bylaws or elected by the board of directors. Officers may appoint other officers in compliance with the bylaws. The same natural person may simultaneously hold more than one office in a corporation.</Paragraph>
+            <Paragraph big>At least one officer should be designated as responsible for preparing minutes of the directors’ and shareholders’ meetings, and for maintaining and authenticating corporate records.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Requirement Reports
             </Heading>
             <Paragraph big style={{ marginBottom: "48px" }}>
-            A report must be filed annually with the Wisconsin Department of Financial Institutions in the same quarter in which the company was incorporated.
+              A report must be filed annually with the Wisconsin Department of Financial Institutions in the same quarter in which the company was incorporated.
             </Paragraph>
 
             <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            This report must indicate:
+              This report must indicate:
             </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>The corporation’s name</Paragraph>
@@ -198,7 +190,10 @@ const AlaskaCorporation = () => (
               Taxes
             </Heading>
             <Paragraph big>Wisconsin’s corporate tax structure takes a flat bite of 7.9 percent out of all corporate income. Among states levying corporate income taxes, Wisconsin’s rate ranks 18th highest nationally.</Paragraph>
-            <Paragraph big>A “subchapter S” or “S corporation” (frequently referred to as an “S corp”) is treated as a pass-through entity for tax purposes in the same way as a sole proprietorship or partnership. S corp status is recognized by the state of Wisconsin. The S corp does not file a tax return on its own behalf. All tax-related information for the S corp is filed as part of the owner’s individual income tax.</Paragraph>
+            <Paragraph big>
+              A “subchapter S” or “S corporation” (frequently referred to as an “S corp”) is treated as a pass-through entity for tax purposes in the same way as a sole proprietorship or partnership. S corp status is recognized by the state of Wisconsin. The S corp does not file a tax return on its
+              own behalf. All tax-related information for the S corp is filed as part of the owner’s individual income tax.
+            </Paragraph>
           </PanelWrapper>
         </CollapseWrapper>
       </TabsSection>
@@ -247,7 +242,7 @@ const AlaskaCorporation = () => (
         <Accordion content={questions} curve curveColor={color.blue1} curveLeft="-15px" />
       </ContentCenter>
       <ContentCenter style={{ marginBottom: "48px" }}>
-        <Button content={{ text: `View all corporation FAQ's`, url: `/` }} width={300} padding="12px 48px" />
+        <Button content={{ text: `View all corporation FAQ's`, url: `/research-topics/c-corporation-info/` }} width={300} padding="12px 48px" />
       </ContentCenter>
     </QuestionSection>
 

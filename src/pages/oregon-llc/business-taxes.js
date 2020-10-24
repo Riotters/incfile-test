@@ -11,20 +11,30 @@ import ContentMap from "../../atomic/partials/content-map";
 // Content
 import { businessTaxes } from "../../static/states-llc/oregon/home";
 import { tabPages } from "../../static/states-llc/oregon/general";
+import { getFullPricesAndFilings } from '../../api/Api';
 
-const BusinessTaxesPage = () => (
-  <Layout>
-    <SEO
-    title="Oregon LLC Business Taxes & Sales Tax"
-    description="Do you have an OR LLC? Learn about the required federal, state and sales taxes you might need to pay. Read more."
-    />
-    <LLCLayout>
-        <LeftTabPages content={tabPages} />
-        <MainPageContent>
-            <ContentMap content={businessTaxes} />
-        </MainPageContent>
-    </LLCLayout>
-  </Layout>
-);
+const BusinessTaxesPage = () => {
+    const [dataApi, setDataApi] = React.useState({});
+
+    React.useEffect(() => {
+        getFullPricesAndFilings('Oregon').then(data => {
+            setDataApi(data);
+        });
+    }, []);
+    return (
+        <Layout>
+            <SEO
+                title="Oregon LLC Business Taxes & Sales Tax"
+                description="Do you have an OR LLC? Learn about the required federal, state and sales taxes you might need to pay. Read more."
+            />
+            <LLCLayout data={dataApi}>
+                <LeftTabPages content={tabPages} />
+                <MainPageContent>
+                    <ContentMap content={businessTaxes} />
+                </MainPageContent>
+            </LLCLayout>
+        </Layout>
+    );
+}
 
 export default BusinessTaxesPage;

@@ -83,13 +83,15 @@ const AlaskaCorporation = () => (
               Choosing a Corporation Name
             </Heading>
             <Paragraph big>
-            Your new corporation’s business name must be distinguishable from that of any other Idaho business entity registered or reserved with the state. The name may not include language that states or implies that the corporation is organized for some purpose other than one permitted by state law or than stated in its articles of incorporation. The fee for registering a business name with the state is $25.
+              Your new corporation’s business name must be distinguishable from that of any other Idaho business entity registered or reserved with the state. The name may not include language that states or implies that the corporation is organized for some purpose other than one permitted by state
+              law or than stated in its articles of incorporation. The fee for registering a business name with the state is $25.
             </Paragraph>
             <Paragraph big>
-            The name must also include the words “incorporated,” “corporation,” “limited,” or “company,” or an abbreviation of one of those terms. However, if the word “company” or its abbreviation is used, it cannot be immediately preceded by the word “and” or by an abbreviation of or symbol representing the word “and.”
+              The name must also include the words “incorporated,” “corporation,” “limited,” or “company,” or an abbreviation of one of those terms. However, if the word “company” or its abbreviation is used, it cannot be immediately preceded by the word “and” or by an abbreviation of or symbol
+              representing the word “and.”
             </Paragraph>
             <Paragraph big style={{ marginBottom: "0" }}>
-            An available corporate name can be reserved with the Corporations Division of the Secretary of State’s office state for a nonrenewable four-month period for $20.
+              An available corporate name can be reserved with the Corporations Division of the Secretary of State’s office state for a nonrenewable four-month period for $20.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -107,7 +109,7 @@ const AlaskaCorporation = () => (
               Registered Agent and Office
             </Heading>
             <Paragraph big>
-            Idaho corporations must have a registered in-state agent-either a natural person who is an Idaho resident or a corporation authorized to conduct business in the Gem State. The registered agent must have a business office that is the same as the registered office.
+              Idaho corporations must have a registered in-state agent-either a natural person who is an Idaho resident or a corporation authorized to conduct business in the Gem State. The registered agent must have a business office that is the same as the registered office.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -115,10 +117,11 @@ const AlaskaCorporation = () => (
               Bylaws
             </Heading>
             <Paragraph big>
-            A corporation is required to keep its bylaws available at its primary executive office, but it is not required to file them with the state. The incorporators or board of directors should adopt the corporation’s bylaws at their first meeting, insuring that there is no conflict with the corporation’s articles of incorporation. They should also keep them updated as time goes on.
+              A corporation is required to keep its bylaws available at its primary executive office, but it is not required to file them with the state. The incorporators or board of directors should adopt the corporation’s bylaws at their first meeting, insuring that there is no conflict with the
+              corporation’s articles of incorporation. They should also keep them updated as time goes on.
             </Paragraph>
             <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            Bylaws set forth the corporation’s basic operating principles from both the managerial and legal perspectives, and should include (as a minimum):
+              Bylaws set forth the corporation’s basic operating principles from both the managerial and legal perspectives, and should include (as a minimum):
             </Paragraph>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
@@ -145,18 +148,17 @@ const AlaskaCorporation = () => (
               Directors
             </Heading>
             <Paragraph big>
-            Officers of the company must be either listed in the bylaws or elected by the board. At least one officer must authenticate the corporation’s records, as well as prepare the minutes of directors’ and shareholders meetings. Any officer may hold more than one office in the corporation, unless otherwise prohibited by law or the corporation’s articles of incorporation or bylaws.
+              Officers of the company must be either listed in the bylaws or elected by the board. At least one officer must authenticate the corporation’s records, as well as prepare the minutes of directors’ and shareholders meetings. Any officer may hold more than one office in the corporation,
+              unless otherwise prohibited by law or the corporation’s articles of incorporation or bylaws.
             </Paragraph>
-            <Paragraph big>
-            The board must also report certain information about director indemnification and expenses and promissory note issuance to all shareholders with or before notice of the next shareholders’ meeting.
-            </Paragraph>
+            <Paragraph big>The board must also report certain information about director indemnification and expenses and promissory note issuance to all shareholders with or before notice of the next shareholders’ meeting.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Requirement Reports
             </Heading>
             <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            Idaho corporations must file a report with the Idaho Secretary of State each year (except for the year of incorporation) that includes:
+              Idaho corporations must file a report with the Idaho Secretary of State each year (except for the year of incorporation) that includes:
             </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>The corporation’s name and its state or country of incorporation</Paragraph>
@@ -224,7 +226,7 @@ const AlaskaCorporation = () => (
         <Accordion content={questions} curve curveColor={color.blue1} curveLeft="-15px" />
       </ContentCenter>
       <ContentCenter style={{ marginBottom: "48px" }}>
-        <Button content={{ text: `View all corporation FAQ's`, url: `/` }} width={300} padding="12px 48px" />
+        <Button content={{ text: `View all corporation FAQ's`, url: `/research-topics/c-corporation-info/` }} width={300} padding="12px 48px" />
       </ContentCenter>
     </QuestionSection>
 

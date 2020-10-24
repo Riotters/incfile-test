@@ -83,19 +83,18 @@ const AlaskaCorporation = () => (
               Choosing a Corporation Name
             </Heading>
             <Paragraph big>
-            Your new corporation’s name must be distinguishable from all other business entities registered or reserved with the Oregon Secretary of State. The name must include the word “incorporated,” “corporation,” “company,” “limited,” or an abbreviation thereof, or words or abbreviations of similar meaning in another language. The name may not, however, include language that states or implies that the corporation is organized for a purpose other than one permitted by state law and its articles of incorporation.
+              Your new corporation’s name must be distinguishable from all other business entities registered or reserved with the Oregon Secretary of State. The name must include the word “incorporated,” “corporation,” “company,” “limited,” or an abbreviation thereof, or words or abbreviations of
+              similar meaning in another language. The name may not, however, include language that states or implies that the corporation is organized for a purpose other than one permitted by state law and its articles of incorporation.
             </Paragraph>
             <Paragraph big style={{ marginBottom: "0" }}>
-            You can reserve a name for up to 120 days from the state filing office website for $50.
+              You can reserve a name for up to 120 days from the state filing office website for $50.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Articles of Incorporation
             </Heading>
-            <Paragraph big>
-            Oregon state law requires that the new Oregon corporation file articles of incorporation with the Secretary of State
-            </Paragraph>
+            <Paragraph big>Oregon state law requires that the new Oregon corporation file articles of incorporation with the Secretary of State</Paragraph>
 
             <Colorbox color={color.blue3} content={articlesOfIncorporation.box1} dotsColor={color.blue1} style={{ marginBottom: "65px" }} />
             <Paragraph big>There must be at least one incorporator, either a natural person of legal age or a legal entity, who signs the articles of incorporation.</Paragraph>
@@ -109,21 +108,20 @@ const AlaskaCorporation = () => (
               Registered Agent and Office
             </Heading>
             <Paragraph big>
-            Oregon corporations must have a registered in-state agent who is designated to receive official state correspondence. The agent is the person or business entity designated to receive official state correspondence, including notice if the corporation is served with a lawsuit.
+              Oregon corporations must have a registered in-state agent who is designated to receive official state correspondence. The agent is the person or business entity designated to receive official state correspondence, including notice if the corporation is served with a lawsuit.
             </Paragraph>
-            <Paragraph big>
-            Every corporation must have a registered office in the state, which may be any of its places of business.
-            </Paragraph>
+            <Paragraph big>Every corporation must have a registered office in the state, which may be any of its places of business.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Bylaws
             </Heading>
             <Paragraph big>
-            A corporation is required to keep its bylaws available at its primary executive office, but it is not required to file them with the state. The incorporators or board of directors should adopt the corporation’s bylaws at their first meeting, insuring that there is no conflict with the articles of incorporation or state law. They should also keep the bylaws updated as time goes on.
+              A corporation is required to keep its bylaws available at its primary executive office, but it is not required to file them with the state. The incorporators or board of directors should adopt the corporation’s bylaws at their first meeting, insuring that there is no conflict with the
+              articles of incorporation or state law. They should also keep the bylaws updated as time goes on.
             </Paragraph>
             <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            Bylaws set forth the corporation’s basic operating principles from both the managerial and legal perspectives, and should include, as a minimum:
+              Bylaws set forth the corporation’s basic operating principles from both the managerial and legal perspectives, and should include, as a minimum:
             </Paragraph>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
@@ -144,17 +142,16 @@ const AlaskaCorporation = () => (
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>Requirements for publishing annual financial information to shareholders</Paragraph>
             </TextBoxed>
-
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Directors
             </Heading>
+            <Paragraph big>There must be at least one director, but there are no statutory eligibility requirements. However, the articles of incorporation or the bylaws may specify these requirements.</Paragraph>
             <Paragraph big>
-            There must be at least one director, but there are no statutory eligibility requirements. However, the articles of incorporation or the bylaws may specify these requirements.
-            </Paragraph>
-            <Paragraph big>
-            Officers must be listed in the bylaws or elected by the board of directors. The officers of a corporation oversee the day-to-day operations of the organization and carry out the strategic decisions made by the board of directors. There must be at least a president and a secretary. Their titles and duties are stated in the bylaws and/or specified by the board, but they must be organized so as to be able to sign instruments and stock certificates that comply with state law. Officers may appoint other officers in compliance with the bylaws and board of directors. One of the officers will have the duty of recording the proceedings of stockholder and director meetings and authenticating records for the corporation. An officer may hold more than one office simultaneously unless the certificate or bylaws state otherwise.
+              Officers must be listed in the bylaws or elected by the board of directors. The officers of a corporation oversee the day-to-day operations of the organization and carry out the strategic decisions made by the board of directors. There must be at least a president and a secretary.
+              Their titles and duties are stated in the bylaws and/or specified by the board, but they must be organized so as to be able to sign instruments and stock certificates that comply with state law. Officers may appoint other officers in compliance with the bylaws and board of directors.
+              One of the officers will have the duty of recording the proceedings of stockholder and director meetings and authenticating records for the corporation. An officer may hold more than one office simultaneously unless the certificate or bylaws state otherwise.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -162,7 +159,7 @@ const AlaskaCorporation = () => (
               Requirement Reports
             </Heading>
             <Paragraph big style={{ marginBottom: "48px" }}>
-            A report must be filed with the Oregon Secretary of State each year on the anniversary of its incorporation date.
+              A report must be filed with the Oregon Secretary of State each year on the anniversary of its incorporation date.
             </Paragraph>
 
             <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
@@ -186,15 +183,15 @@ const AlaskaCorporation = () => (
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>The corporation’s federal employer identification number (EIN).</Paragraph>
             </TextBoxed>
-            <Paragraph big>
-            The corporation must provide its shareholders a report of any indemnifications or expenses advanced to a director in connection with a proceeding by or for the benefit of the corporation, with or before notice of the next shareholders’ meeting.
-            </Paragraph>
+            <Paragraph big>The corporation must provide its shareholders a report of any indemnifications or expenses advanced to a director in connection with a proceeding by or for the benefit of the corporation, with or before notice of the next shareholders’ meeting.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Taxes
             </Heading>
-            <Paragraph big>Oregon imposes a flat rate of 6.6 percent on all corporate revenue generated within the state. Oregon corporations operating in more than one state pay corporate excise taxes according to an apportionment formula, but within the state, the formula is based only on in-state revenue.</Paragraph>
+            <Paragraph big>
+              Oregon imposes a flat rate of 6.6 percent on all corporate revenue generated within the state. Oregon corporations operating in more than one state pay corporate excise taxes according to an apportionment formula, but within the state, the formula is based only on in-state revenue.
+            </Paragraph>
           </PanelWrapper>
         </CollapseWrapper>
       </TabsSection>
@@ -243,7 +240,7 @@ const AlaskaCorporation = () => (
         <Accordion content={questions} curve curveColor={color.blue1} curveLeft="-15px" />
       </ContentCenter>
       <ContentCenter style={{ marginBottom: "48px" }}>
-        <Button content={{ text: `View all corporation FAQ's`, url: `/` }} width={300} padding="12px 48px" />
+        <Button content={{ text: `View all corporation FAQ's`, url: `/research-topics/c-corporation-info/` }} width={300} padding="12px 48px" />
       </ContentCenter>
     </QuestionSection>
 

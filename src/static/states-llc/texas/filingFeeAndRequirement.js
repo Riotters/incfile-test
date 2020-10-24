@@ -18,7 +18,7 @@ export const filingFeeAndRequirementContent = {
         desc: `Starting a Texas LLC? Have Incfile do all the paperwork for you for free.`,
         button: {
           text: `Form Your LLC Now`,
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=TX`,
         },
       },
     ],
@@ -51,13 +51,7 @@ export const filingFeeAndRequirementContent = {
       content: `When you first incorporate your business in Texas, you’ll need to file an LLC with the TX Secretary of State and pay a Texas filing fee. Here are the current fees and filing times for Texas:`,
     },
     {
-      type: `gridTable`,
-      headerSize: `5`,
-      columns: `3`,
-      content: {
-        headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
-        rows: [[`$300`, `1 Week`, `2 Business Days`]],
-      },
+      type: `dynamic_ar_box`,
     },
     {
       type: `arrow-links`,
@@ -245,7 +239,7 @@ export const filingFeeAndRequirementContent = {
         subtitle: `You can choose to make changes to the template based on your unique requirements.`,
         button: {
           text: `Lear About Operating Agreemets`,
-          url: `https://www.incfile.com/research-topics/llc-info/llc-operating-agreement/`,
+          url: `/research-topics/llc-info/llc-operating-agreement/`,
         },
       },
     },

@@ -83,14 +83,10 @@ const AlaskaCorporation = () => (
               Choosing a Corporation Name
             </Heading>
             <Paragraph big>
-            You’ll need to choose and register a name for your new Oklahoma corporation before you can actually conduct business in the Sooner State. The name you choose must be readily distinguishable from the names of all other registered and reserved business entities on file with the state.
+              You’ll need to choose and register a name for your new Oklahoma corporation before you can actually conduct business in the Sooner State. The name you choose must be readily distinguishable from the names of all other registered and reserved business entities on file with the state.
             </Paragraph>
-            <Paragraph big>
-            Additionally, it may not contain language that states or implies that it is another business entity or that it is organized for some purpose other than one allowed by state law and its certificate of incorporation.
-            </Paragraph>
-            <Paragraph big>
-            Your new business’ name must include one of the following words, an abbreviation thereof, or words or abbreviations of similar meaning without punctuation in another language (but still in Roman characters):
-            </Paragraph>
+            <Paragraph big>Additionally, it may not contain language that states or implies that it is another business entity or that it is organized for some purpose other than one allowed by state law and its certificate of incorporation.</Paragraph>
+            <Paragraph big>Your new business’ name must include one of the following words, an abbreviation thereof, or words or abbreviations of similar meaning without punctuation in another language (but still in Roman characters):</Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>“Association”</Paragraph>
             </TextBoxed>
@@ -128,7 +124,7 @@ const AlaskaCorporation = () => (
               <Paragraph bottomMargin={0}>“Union”</Paragraph>
             </TextBoxed>
             <Paragraph big style={{ marginBottom: "0" }}>
-            An available corporate name may be reserved for 60 days for a $10 fee.
+              An available corporate name may be reserved for 60 days for a $10 fee.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -136,28 +132,31 @@ const AlaskaCorporation = () => (
               Articles of Incorporation
             </Heading>
             <Paragraph big>
-            Before it can begin conducting business in the state, a new Oklahoma corporation must file a certificate of incorporation with the Business Filing Department of the state Secretary of State’s office. The certificate must be executed (signed) and delivered by at least one incorporator, who must be a natural person, partnership, association, or corporation.
+              Before it can begin conducting business in the state, a new Oklahoma corporation must file a certificate of incorporation with the Business Filing Department of the state Secretary of State’s office. The certificate must be executed (signed) and delivered by at least one incorporator,
+              who must be a natural person, partnership, association, or corporation.
             </Paragraph>
             <Paragraph big>
-            The certificate must be accompanied by a $50 minimum fee based on the authorized capital specified in your certificate, calculated as follows:
-                <ol> <li>For no-par shares (i.e., without par value), multiply the number of authorized shares by $50. This means that the minimum $50 filing fee allows you to authorize just one share without par value. </li> <li>For shares with a stated par value, multiply the par value amount of each share by the number of par value shares authorized. </li> </ol>
-                The filing fee for par value shares is $1 for each $1,000 of capital or fraction thereof. The minimum $50 filing fee allows you to authorize $50,000 of capital (for example, 50,000 shares with a par value of $1 each or 500,000 shares with a par value of 10 cents each). Most incorporators authorize par value shares with a total par value of $50,000 in order to authorize an adequate number of shares for the minimum filing fee.
+              The certificate must be accompanied by a $50 minimum fee based on the authorized capital specified in your certificate, calculated as follows:
+              <ol>
+                {" "}
+                <li>For no-par shares (i.e., without par value), multiply the number of authorized shares by $50. This means that the minimum $50 filing fee allows you to authorize just one share without par value. </li>{" "}
+                <li>For shares with a stated par value, multiply the par value amount of each share by the number of par value shares authorized. </li>{" "}
+              </ol>
+              The filing fee for par value shares is $1 for each $1,000 of capital or fraction thereof. The minimum $50 filing fee allows you to authorize $50,000 of capital (for example, 50,000 shares with a par value of $1 each or 500,000 shares with a par value of 10 cents each). Most
+              incorporators authorize par value shares with a total par value of $50,000 in order to authorize an adequate number of shares for the minimum filing fee.
             </Paragraph>
 
             <Colorbox color={color.blue3} content={articlesOfIncorporation.box1} dotsColor={color.blue1} style={{ marginBottom: "65px" }} />
 
             <Colorbox color={color.orange3} content={articlesOfIncorporation.box2} dotsColor={color.orange1} style={{ marginBottom: "48px" }} />
-
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Registered Agent and Office
             </Heading>
+            <Paragraph big>Every Oklahoma corporation must have a registered agent in the state-the person or office designated to receive official state correspondence, both administrative and legal.</Paragraph>
             <Paragraph big>
-              Every Oklahoma corporation must have a registered agent in the state-the person or office designated to receive official state correspondence, both administrative and legal.
-            </Paragraph>
-            <Paragraph big>
-            The registered agent must be an Oklahoma resident whose business office is the same as the registered office, the corporation itself, or a business entity authorized to conduct business in the Sooner State that has a business office identical to the registered office.
+              The registered agent must be an Oklahoma resident whose business office is the same as the registered office, the corporation itself, or a business entity authorized to conduct business in the Sooner State that has a business office identical to the registered office.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -165,10 +164,11 @@ const AlaskaCorporation = () => (
               Bylaws
             </Heading>
             <Paragraph big>
-            Bylaws lay out the corporation’s basic managerial and legal operating principles that manage their business and affairs. An Oklahoma corporation must keep a copy of its bylaws at its principal executive office, but is not required to file them with the state. At its initial meeting, the incorporators, initial directors, or the board of directors should-prior to any payment of stock to the corporation-adopt corporate bylaws, and then keep them updated as time goes on.
+              Bylaws lay out the corporation’s basic managerial and legal operating principles that manage their business and affairs. An Oklahoma corporation must keep a copy of its bylaws at its principal executive office, but is not required to file them with the state. At its initial meeting,
+              the incorporators, initial directors, or the board of directors should-prior to any payment of stock to the corporation-adopt corporate bylaws, and then keep them updated as time goes on.
             </Paragraph>
             <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            The board of directors of a corporation may adopt, amend, or repeal bylaws, unless the articles reserve this right to the shareholders. Bylaws normally address:
+              The board of directors of a corporation may adopt, amend, or repeal bylaws, unless the articles reserve this right to the shareholders. Bylaws normally address:
             </Paragraph>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
@@ -189,29 +189,24 @@ const AlaskaCorporation = () => (
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>How and when annual financial information is provided to shareholders</Paragraph>
             </TextBoxed>
-
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Directors
             </Heading>
-            <Paragraph big>
-            Officers are listed in the initial bylaws or elected by the board of directors, and may appoint other officers in accordance with the bylaws. At least one officer will have the responsibility for preparing minutes of director and shareholder meetings.
-            </Paragraph>
-            <Paragraph big>
-            It is allowed for an officer to hold more than one office in the corporation unless otherwise prohibited by law or by the corporation’s bylaws.
-            </Paragraph>
+            <Paragraph big>Officers are listed in the initial bylaws or elected by the board of directors, and may appoint other officers in accordance with the bylaws. At least one officer will have the responsibility for preparing minutes of director and shareholder meetings.</Paragraph>
+            <Paragraph big>It is allowed for an officer to hold more than one office in the corporation unless otherwise prohibited by law or by the corporation’s bylaws.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Requirement Reports
             </Heading>
             <Paragraph big style={{ marginBottom: "48px" }}>
-            Oklahoma corporations must file a report with the Oklahoma Tax Commission each year either between July 1 and August 31 or by the corporation’s income tax return deadline, depending on the corporation’s choice.
+              Oklahoma corporations must file a report with the Oklahoma Tax Commission each year either between July 1 and August 31 or by the corporation’s income tax return deadline, depending on the corporation’s choice.
             </Paragraph>
 
             <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            This report must show:
+              This report must show:
             </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>The amount of the corporation’s authorized capital stock, interests, and certificates, and the amounts thereof which are paid up</Paragraph>
@@ -224,14 +219,19 @@ const AlaskaCorporation = () => (
               <Paragraph bottomMargin={0}>The total amount of business transacted within the state during the tax year</Paragraph>
               <Paragraph bottomMargin={0}>The names and addresses of the corporation’s officers</Paragraph>
             </TextBoxed>
-
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Taxes
             </Heading>
-            <Paragraph big>Oklahoma corporations are subject to a flat tax of six percent on all corporate income. This tax ranks the state 36th highest among states levying corporate income taxes. Oklahoma corporations also pay an annual franchise tax, currently set at a rate of $1.25 for each $1,000 of capital invested or used in Oklahoma. Corporations can pay the franchise tax annually when they file their Oklahoma corporate income tax returns.</Paragraph>
-            <Paragraph big>“S corporation” status is recognized by the Oklahoma Secretary of State. A “subchapter S” corporation (frequently referred to as an “S corp”) is treated as a pass-through entity for tax purposes in the same way as a sole proprietorship or partnership. The S corp does not file a tax return on its own behalf; instead, all tax-related data for the S corp is filed as part of the owner’s individual income tax.</Paragraph>
+            <Paragraph big>
+              Oklahoma corporations are subject to a flat tax of six percent on all corporate income. This tax ranks the state 36th highest among states levying corporate income taxes. Oklahoma corporations also pay an annual franchise tax, currently set at a rate of $1.25 for each $1,000 of capital
+              invested or used in Oklahoma. Corporations can pay the franchise tax annually when they file their Oklahoma corporate income tax returns.
+            </Paragraph>
+            <Paragraph big>
+              “S corporation” status is recognized by the Oklahoma Secretary of State. A “subchapter S” corporation (frequently referred to as an “S corp”) is treated as a pass-through entity for tax purposes in the same way as a sole proprietorship or partnership. The S corp does not file a tax
+              return on its own behalf; instead, all tax-related data for the S corp is filed as part of the owner’s individual income tax.
+            </Paragraph>
           </PanelWrapper>
         </CollapseWrapper>
       </TabsSection>
@@ -280,7 +280,7 @@ const AlaskaCorporation = () => (
         <Accordion content={questions} curve curveColor={color.blue1} curveLeft="-15px" />
       </ContentCenter>
       <ContentCenter style={{ marginBottom: "48px" }}>
-        <Button content={{ text: `View all corporation FAQ's`, url: `/` }} width={300} padding="12px 48px" />
+        <Button content={{ text: `View all corporation FAQ's`, url: `/research-topics/c-corporation-info/` }} width={300} padding="12px 48px" />
       </ContentCenter>
     </QuestionSection>
 

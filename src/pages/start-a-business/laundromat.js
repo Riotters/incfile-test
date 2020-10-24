@@ -64,7 +64,7 @@ const LandscapingBusiness = () => (
       <h1>How to Start a Laundromat Business</h1>
       <p>The most successful businesses in the world are those that meet a genuine personal need. The laundromat is a great example of this type of business</p>
       <ButtonsBox>
-        <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{ url: "/", text: "Start Now" }} />
+        <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{ url: `${process.env.ORDER_URL}/form-order-now.php`, text: "Start Now" }} />
       </ButtonsBox>
 
       <RatingRow>

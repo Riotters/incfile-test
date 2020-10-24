@@ -83,36 +83,29 @@ const AlaskaCorporation = () => (
               Choosing a Corporation Name
             </Heading>
             <Paragraph big>
-            Your Iowa corporation’s name must be noticeably different from any other registered Iowa business entity, as well as any reserved names on file with the Iowa Secretary of State, with only a few exceptions. It also is not allowed to use language that states or implies that the corporation is organized for a purpose not allowed by state law or the corporation’s articles of incorporation.
+              Your Iowa corporation’s name must be noticeably different from any other registered Iowa business entity, as well as any reserved names on file with the Iowa Secretary of State, with only a few exceptions. It also is not allowed to use language that states or implies that the
+              corporation is organized for a purpose not allowed by state law or the corporation’s articles of incorporation.
             </Paragraph>
-            <Paragraph big>
-            The name also may not state or imply that the corporation is organized for some purpose other than that stated in its articles of incorporation.
-            </Paragraph>
-            <Paragraph big>
-            Your new corporation’s name has to include the words “Corporation,” “Incorporated,” “Company,” or “Limited,” or abbreviations thereof
-            </Paragraph>
+            <Paragraph big>The name also may not state or imply that the corporation is organized for some purpose other than that stated in its articles of incorporation.</Paragraph>
+            <Paragraph big>Your new corporation’s name has to include the words “Corporation,” “Incorporated,” “Company,” or “Limited,” or abbreviations thereof</Paragraph>
             <Paragraph big style={{ marginBottom: "0" }}>
-            You can reserve a name not already taken by another entity for up to 120 days for $10.
+              You can reserve a name not already taken by another entity for up to 120 days for $10.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Articles of Incorporation
             </Heading>
+            <Paragraph big>Iowa state law requires that new corporations file articles of incorporation with the Iowa Secretary of State, which also requires a $50 filing fee. These articles must meet the requirements of the Iowa Business Corporation Act.</Paragraph>
+            <Paragraph big>The State of Iowa allows corporations to be formed for any lawful business activity-the business purpose of the new corporation is not required to be included in the articles.</Paragraph>
+            <Paragraph big>At least one person (usually an initial director or officer) must sign the articles as incorporator. The incorporator’s primary duty is to deliver the articles of incorporation to the Iowa Secretary of State.</Paragraph>
             <Paragraph big>
-            Iowa state law requires that new corporations file articles of incorporation with the Iowa Secretary of State, which also requires a $50 filing fee. These articles must meet the requirements of the Iowa Business Corporation Act.
+              The articles must also specify the classes, distinguishing designation, relative rights, and number of shares of each class of stock that the corporation is authorized to issue. The articles must authorize two things: one or more classes of shares that together have unlimited voting
+              rights; and one or more classes of shares, which may be the same class or classes as those with voting rights, that together may receive the net assets of the corporation upon dissolution.
             </Paragraph>
             <Paragraph big>
-            The State of Iowa allows corporations to be formed for any lawful business activity-the business purpose of the new corporation is not required to be included in the articles.
-            </Paragraph>
-            <Paragraph big>
-            At least one person (usually an initial director or officer) must sign the articles as incorporator. The incorporator’s primary duty is to deliver the articles of incorporation to the Iowa Secretary of State.
-            </Paragraph>
-            <Paragraph big>
-            The articles must also specify the classes, distinguishing designation, relative rights, and number of shares of each class of stock that the corporation is authorized to issue. The articles must authorize two things: one or more classes of shares that together have unlimited voting rights; and one or more classes of shares, which may be the same class or classes as those with voting rights, that together may receive the net assets of the corporation upon dissolution.
-            </Paragraph>
-            <Paragraph big>
-            It’s also allowable to include other optional provisions into the articles of incorporation for those who want to formalize additional criteria, such as special shareholder qualifications, time limits on the corporation’s existence, limits on directors’ liability in specific circumstances, and so on.
+              It’s also allowable to include other optional provisions into the articles of incorporation for those who want to formalize additional criteria, such as special shareholder qualifications, time limits on the corporation’s existence, limits on directors’ liability in specific
+              circumstances, and so on.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -120,7 +113,8 @@ const AlaskaCorporation = () => (
               Registered Agent and Office
             </Heading>
             <Paragraph big>
-            The articles of incorporation should also include the name and address of your corporation’s initial registered agent-the person you designate to receive official correspondence (legal or administrative) on behalf of your corporation. The registered agent must be either an individual who lives in Iowa and whose business office is the same as the registered office, or a corporation with a business office that is the same as the registered office.
+              The articles of incorporation should also include the name and address of your corporation’s initial registered agent-the person you designate to receive official correspondence (legal or administrative) on behalf of your corporation. The registered agent must be either an individual
+              who lives in Iowa and whose business office is the same as the registered office, or a corporation with a business office that is the same as the registered office.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -128,10 +122,11 @@ const AlaskaCorporation = () => (
               Bylaws
             </Heading>
             <Paragraph big>
-            All corporations are required to keep a copy of their bylaws at their main executive office, but they are not required to file those bylaws with the state. At the new corporation’s initial meeting, the board of directors should adopt corporate bylaws, and then keep them updated as time goes on.
+              All corporations are required to keep a copy of their bylaws at their main executive office, but they are not required to file those bylaws with the state. At the new corporation’s initial meeting, the board of directors should adopt corporate bylaws, and then keep them updated as time
+              goes on.
             </Paragraph>
             <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            Bylaws are a critically important document describing the corporation’s basic managerial and legal operating principles regarding such issues as:
+              Bylaws are a critically important document describing the corporation’s basic managerial and legal operating principles regarding such issues as:
             </Paragraph>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
@@ -153,19 +148,19 @@ const AlaskaCorporation = () => (
               <Paragraph bottomMargin={0}>How and when annual financial information is provided to shareholders</Paragraph>
             </TextBoxed>
 
-            <Paragraph big>
-            Officers of the new corporation can either be listed in the bylaws or elected by the board in compliance with those bylaws.
-            </Paragraph>
+            <Paragraph big>Officers of the new corporation can either be listed in the bylaws or elected by the board in compliance with those bylaws.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Directors
             </Heading>
             <Paragraph big>
-            Corporate officers can either be listed in the bylaws or elected by the board in compliance with the bylaws. A corporation must have a chairman of the board or a president (or both), a secretary, a chief financial officer, and whatever other officers are listed in the bylaws or determined by the board.
+              Corporate officers can either be listed in the bylaws or elected by the board in compliance with the bylaws. A corporation must have a chairman of the board or a president (or both), a secretary, a chief financial officer, and whatever other officers are listed in the bylaws or
+              determined by the board.
             </Paragraph>
             <Paragraph big>
-            The president, or, if there is no president, the chairman of the board, is the general manager and chief executive officer of the Iowa corporation, unless otherwise stipulated in the articles or bylaws. Any number of offices may be held by the same person unless the articles or bylaws state otherwise.
+              The president, or, if there is no president, the chairman of the board, is the general manager and chief executive officer of the Iowa corporation, unless otherwise stipulated in the articles or bylaws. Any number of offices may be held by the same person unless the articles or bylaws
+              state otherwise.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -173,11 +168,12 @@ const AlaskaCorporation = () => (
               Requirement Reports
             </Heading>
             <Paragraph big style={{ marginBottom: "48px" }}>
-            Iowa corporations must file a report with the Iowa Secretary of State’s office every even-number calendar year. The first report must be delivered between January 1 and April 1 of the first even-numbered year following the calendar year of incorporation, or by another date that the Iowa Secretary of State’s office may designate.
+              Iowa corporations must file a report with the Iowa Secretary of State’s office every even-number calendar year. The first report must be delivered between January 1 and April 1 of the first even-numbered year following the calendar year of incorporation, or by another date that the
+              Iowa Secretary of State’s office may designate.
             </Paragraph>
 
             <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            Each biennial report must contain information regarding the two-year period immediately before the calendar year in which the report is filed, including the following information:
+              Each biennial report must contain information regarding the two-year period immediately before the calendar year in which the report is filed, including the following information:
             </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>The corporation’s name and its state or country of incorporation.</Paragraph>
@@ -245,7 +241,7 @@ const AlaskaCorporation = () => (
         <Accordion content={questions} curve curveColor={color.blue1} curveLeft="-15px" />
       </ContentCenter>
       <ContentCenter style={{ marginBottom: "48px" }}>
-        <Button content={{ text: `View all corporation FAQ's`, url: `/` }} width={300} padding="12px 48px" />
+        <Button content={{ text: `View all corporation FAQ's`, url: `/research-topics/c-corporation-info/` }} width={300} padding="12px 48px" />
       </ContentCenter>
     </QuestionSection>
 

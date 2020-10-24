@@ -16,7 +16,7 @@ export const businessNamesContent = {
         desc: `Starting a Illinois LLC? Have Incfile do all the paperwork for you for free.`,
         button: {
           text: `Form Your LLC Now`,
-          url: "https://www.incfile.com/form-order-now.php?entityType=LLC&entityState=IL",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=IL`,
         },
       },
     ],
@@ -139,7 +139,7 @@ export const businessNamesContent = {
       width: `450px`,
       content: {
         text: `Incfile Guide To Choosing A Business Name`,
-        url: `https://www.incfile.com/blog/post/llc-name-search-50-states/`,
+        url: `/blog/post/llc-name-search-50-states/`,
       },
     },
     {
@@ -229,13 +229,13 @@ export const businessNamesContent = {
       content: `Once you’ve searched for your Illinois business name, checked availability, followed the naming rules and decided whether you need an assumed business name, you can register your IL LLC name. There are a couple of ways to do this.`,
     },
     {
-        type: `numberBoxList`,
-        content: [
-          `If you don’t want to form your Illinois LLC right now, you can reserve the business name with the Illinois Secretary of State. You will need to complete an 
+      type: `numberBoxList`,
+      content: [
+        `If you don’t want to form your Illinois LLC right now, you can reserve the business name with the Illinois Secretary of State. You will need to complete an 
           LLC-1.15 “Application to Reserve a Name” form and file it with the IL SOS. You do not need to reserve a name if you are forming your business right away.`,
-          `If you’re ready to start your Illinois LLC, you can formally file your Articles of Organization with the Illinois Secretary of State, or have Incfile do it for you.`,
-        ],
-      },
+        `If you’re ready to start your Illinois LLC, you can formally file your Articles of Organization with the Illinois Secretary of State, or have Incfile do it for you.`,
+      ],
+    },
     {
       type: `box-cta`,
       color: color.blue3,
@@ -246,7 +246,7 @@ export const businessNamesContent = {
         subtitle: `Incorporate in Illinois for $0 + State Fee ($154)`,
         button: {
           text: `Start Your LLC Now`,
-          url: `https://www.incfile.com/form-order-now.php?entityType=LLC&entityState=IL`,
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=IL`,
         },
       },
     },

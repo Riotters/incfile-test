@@ -315,15 +315,15 @@ export const agentPageContent = {
       content: [
         {
           text: `The Main Functions of a New York Registered Agent`,
-          url: `https://www.incfile.com/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/`,
+          url: `/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/`,
         },
         {
           text: `Changing Your New York Registered Agent`,
-          url: `https://www.incfile.com/manage-your-company/change-of-registered-agent/`,
+          url: `/manage-your-company/change-of-registered-agent/`,
         },
         {
           text: `What a New York Registered Agent Does`,
-          url: `https://www.incfile.com/research-topics/registered-agent-help/what-does-a-registered-agent-do/`,
+          url: `/research-topics/registered-agent-help/what-does-a-registered-agent-do/`,
         },
       ],
     },

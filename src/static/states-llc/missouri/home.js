@@ -100,7 +100,7 @@ export const howToGuide = [
             <li>Purpose of your business</li>
             <li>Name of the incorporator</li></br>
             <p>You can file your Missouri LLC Articles of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Missouri. You only need to file your Articles of Organization once.</p></br>
-            <p><a href="/" target="_blank">Form your LLC now</a></p>`, //https://www.incfile.com/form-order-now.php?entityType=LLC&entityState=ID
+            <p><a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=ID" target="_blank">Form your LLC now</a></p>`,
         },
       ],
     },
@@ -400,7 +400,7 @@ export const namingYourBusiness = [
       },
       {
         text: `If you’re ready to start your Missouri LLC, you can formally file your Articles of Organization with the Missouri SOS, or
-          <a href="/" target="_blank" rel="noopener noreferrer">let Incfile take care of it for you.</a>`, //https://www.incfile.com/form-order-now.php?entityType=LLC&entityState=CO
+          <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=CO" target="_blank" rel="noopener noreferrer">let Incfile take care of it for you.</a>`,
       },
     ],
     marginBottom: 16,
@@ -868,11 +868,7 @@ export const feesAndRequirments = [
     marginBottom: 16,
   },
   {
-    type: `table-simple`,
-    content: {
-      headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
-      rows: [[`$52`, `10 business days`, `3 business days`]],
-    },
+    type: `dynamic_ar_box`
   },
   {
     type: `arrow-link`,
@@ -961,13 +957,7 @@ export const feesAndRequirments = [
     marginBottom: 16,
   },
   {
-    type: `list-dot`,
-    content: {
-      header: `Annual Report`,
-      list: [`Frequency:  No report due for LLC's at this time.`],
-    },
-    marginBottom: 16,
-    color: color.blue2,
+    type: `dynamic_filing_requirement`
   },
   {
     type: `text`,

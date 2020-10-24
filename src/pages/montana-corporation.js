@@ -83,13 +83,12 @@ const AlaskaCorporation = () => (
               Choosing a Corporation Name
             </Heading>
             <Paragraph big>
-            The name you decide on for your new corporation cannot be the same as or deceptively similar to the name of any other Montana business entity registered or reserved with the state. The name may not include language that states or implies that the corporation is organized for some purpose other than one permitted by state law or than stated in its articles of incorporation.
+              The name you decide on for your new corporation cannot be the same as or deceptively similar to the name of any other Montana business entity registered or reserved with the state. The name may not include language that states or implies that the corporation is organized for some
+              purpose other than one permitted by state law or than stated in its articles of incorporation.
             </Paragraph>
-            <Paragraph big>
-            The name must also include the words “incorporated,” “corporation,” “limited,” or “company,” an abbreviation of one of those terms, or words of a similar meaning in another language.
-            </Paragraph>
+            <Paragraph big>The name must also include the words “incorporated,” “corporation,” “limited,” or “company,” an abbreviation of one of those terms, or words of a similar meaning in another language.</Paragraph>
             <Paragraph big style={{ marginBottom: "0" }}>
-            Corporate names can be reserved with the state for $10 for up to 120 days.
+              Corporate names can be reserved with the state for $10 for up to 120 days.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -97,34 +96,34 @@ const AlaskaCorporation = () => (
               Articles of Incorporation
             </Heading>
             <Paragraph big>
-            Actually getting your new corporation authorized to conduct business in Montana requires filing articles of incorporation with the Corporation Bureau of the Montana Secretary of State’s office, along with a $70 filing fee. The articles must be delivered to the state by one or more incorporators, who may be either any natural person of legal age or a business entity.
+              Actually getting your new corporation authorized to conduct business in Montana requires filing articles of incorporation with the Corporation Bureau of the Montana Secretary of State’s office, along with a $70 filing fee. The articles must be delivered to the state by one or more
+              incorporators, who may be either any natural person of legal age or a business entity.
             </Paragraph>
 
             <Colorbox color={color.blue3} content={articlesOfIncorporation.box1} dotsColor={color.blue1} style={{ marginBottom: "65px" }} />
 
             <Colorbox color={color.orange3} content={articlesOfIncorporation.box2} dotsColor={color.orange1} style={{ marginBottom: "48px" }} />
-
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Registered Agent and Office
             </Heading>
             <Paragraph big>
-            Montana corporations must have a registered in-state agent-either a natural person who is a resident of Montana or a corporation authorized to conduct business in the Big Sky State. The registered agent is responsible for receiving official state administrative and legal correspondence on behalf of the corporation.
+              Montana corporations must have a registered in-state agent-either a natural person who is a resident of Montana or a corporation authorized to conduct business in the Big Sky State. The registered agent is responsible for receiving official state administrative and legal correspondence
+              on behalf of the corporation.
             </Paragraph>
-            <Paragraph big>
-            The registered agent must have a business office that is the same as the registered office.
-            </Paragraph>
+            <Paragraph big>The registered agent must have a business office that is the same as the registered office.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Bylaws
             </Heading>
             <Paragraph big>
-              A corporation is required to keep its bylaws available at its primary executive office, but it is not required to file them with the state. The incorporators or board of directors should adopt the corporation’s bylaws at their first meeting, insuring that there is no conflict with the corporation’s articles of incorporation or state law. They should also keep them updated as time goes on. 
+              A corporation is required to keep its bylaws available at its primary executive office, but it is not required to file them with the state. The incorporators or board of directors should adopt the corporation’s bylaws at their first meeting, insuring that there is no conflict with the
+              corporation’s articles of incorporation or state law. They should also keep them updated as time goes on.
             </Paragraph>
             <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            Bylaws set forth the corporation’s basic operating principles from both the managerial and legal perspectives, and should include (as a minimum):
+              Bylaws set forth the corporation’s basic operating principles from both the managerial and legal perspectives, and should include (as a minimum):
             </Paragraph>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
@@ -151,7 +150,8 @@ const AlaskaCorporation = () => (
               Directors
             </Heading>
             <Paragraph big>
-            Officers of the company must be either listed in the bylaws or elected by the board. A duly appointed officer may appoint one or more officers or assistant officers if authorized by the bylaws or the board of directors. At least one officer must authenticate the corporation’s records, as well as prepare the minutes of directors’ and shareholders meetings. Any officer may hold more than one office in the corporation, unless otherwise prohibited by law or the corporation’s articles of incorporation or bylaws.
+              Officers of the company must be either listed in the bylaws or elected by the board. A duly appointed officer may appoint one or more officers or assistant officers if authorized by the bylaws or the board of directors. At least one officer must authenticate the corporation’s records,
+              as well as prepare the minutes of directors’ and shareholders meetings. Any officer may hold more than one office in the corporation, unless otherwise prohibited by law or the corporation’s articles of incorporation or bylaws.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -159,11 +159,11 @@ const AlaskaCorporation = () => (
               Requirement Reports
             </Heading>
             <Paragraph big style={{ marginBottom: "48px" }}>
-            Montana corporations must file a report with the Montana Secretary of State each year between January 1 and April 15, except for the first calendar year of incorporation.
+              Montana corporations must file a report with the Montana Secretary of State each year between January 1 and April 15, except for the first calendar year of incorporation.
             </Paragraph>
 
             <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            The report must contain:
+              The report must contain:
             </Paragraph>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
@@ -195,7 +195,10 @@ const AlaskaCorporation = () => (
               Taxes
             </Heading>
             <Paragraph big>Montana imposes an annual corporation license tax, for which the minimum payment is $50.</Paragraph>
-            <Paragraph big>Additionally, “S corporation” status is recognized by the State of Montana. A “subchapter S” corporation (frequently referred to as an “S corp”) is treated as a pass-through entity for tax purposes in the same way as a sole proprietorship or partnership. The S corp does not file a tax return on its own behalf; instead, all tax-related data for the S corp is filed as part of the owner’s individual income tax.</Paragraph>
+            <Paragraph big>
+              Additionally, “S corporation” status is recognized by the State of Montana. A “subchapter S” corporation (frequently referred to as an “S corp”) is treated as a pass-through entity for tax purposes in the same way as a sole proprietorship or partnership. The S corp does not file a tax
+              return on its own behalf; instead, all tax-related data for the S corp is filed as part of the owner’s individual income tax.
+            </Paragraph>
           </PanelWrapper>
         </CollapseWrapper>
       </TabsSection>
@@ -244,7 +247,7 @@ const AlaskaCorporation = () => (
         <Accordion content={questions} curve curveColor={color.blue1} curveLeft="-15px" />
       </ContentCenter>
       <ContentCenter style={{ marginBottom: "48px" }}>
-        <Button content={{ text: `View all corporation FAQ's`, url: `/` }} width={300} padding="12px 48px" />
+        <Button content={{ text: `View all corporation FAQ's`, url: `/research-topics/c-corporation-info/` }} width={300} padding="12px 48px" />
       </ContentCenter>
     </QuestionSection>
 

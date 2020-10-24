@@ -68,7 +68,7 @@ export const howToGuide = [
           question: `STEP 2: Search for and Choose a Unique Business Name for Your Indiana LLC`,
           answer: `<p>You will need a distinctive and original name for your Indiana LLC that’s not used by any other business in IN. To find out if another company is using your chosen business name, carry out an Indiana business entity name search on the IN Secretary of State website.</p></br>
             <p>There are a few rules you’ll need to follow when choosing an LLC name. You can find out more in our guide to searching for and naming your Indiana LLC.</p></br>
-            <p><a href="https://www.incfile.com/indiana-llc/how-to-name-your-llc/" target="_blank">Learn about Indiana LLC business naming rules.</a></p>`,
+            <p><a href="/indiana-llc/how-to-name-your-llc/" target="_blank">Learn about Indiana LLC business naming rules.</a></p>`,
         },
         {
           question: `STEP 3: Provide an Official Address for Your IN LLC`,
@@ -93,7 +93,7 @@ export const howToGuide = [
               <li>Duration of your business</li>
               <li>Name of the incorporator</li></br>
             <p>You can file your Indiana LLC Certificate of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Indiana. You only need to file your Certificate of Organization once.</p></br>
-            <p><a href="/" target="_blank">Form your LLC now</a></p>`, //https://www.incfile.com/form-order-now.php?entityType=LLC&entityState=ID
+            <p><a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=ID" target="_blank">Form your LLC now</a></p>`,
         },
       ],
     },
@@ -402,7 +402,7 @@ export const namingYourBusiness = [
       list: [
         `<p>If you don’t want to form your Indiana LLC right now, you can reserve the business name with the Indiana Secretary of State. You will need to complete a Reservation of Business Name and file it with the IN SOS. You do not need to reserve a name if you are forming your business right away.</p>
           <p><a href="https://www.in.gov/sos/business/2426.htm" target="_blank" rel="noopener noreferrer">Indiana SOS LLC name reservation form.</a></p>`,
-        `If you’re ready to start your Indiana LLC, you can formally file your Articles of Organization with the Indiana SOS, or <a href="/" target="_blank" >let Incfile take care of it for you.</a>`, //https://www.incfile.com/form-order-now.php?entityType=LLC&entityState=IN
+        `If you’re ready to start your Indiana LLC, you can formally file your Articles of Organization with the Indiana SOS, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=IN" target="_blank" >let Incfile take care of it for you.</a>`,
       ],
     },
     marginBottom: 48,
@@ -868,11 +868,7 @@ export const feesAndRequirments = [
     marginBottom: 16,
   },
   {
-    type: `table-simple`,
-    content: {
-      headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
-      rows: [[`$98`, `7 business days`, `1 business day`]],
-    },
+    type: `dynamic_ar_box`
   },
   {
     type: `arrow-link`,
@@ -961,13 +957,7 @@ export const feesAndRequirments = [
     marginBottom: 16,
   },
   {
-    type: `list-dot`,
-    content: {
-      header: `Annual Report`,
-      list: [`Frequency:  Biennially`, `Due Date:  Last day of anniversary month of formation or qualification.`, `Filing Fee:  $30`],
-    },
-    marginBottom: 16,
-    color: color.blue2,
+    type: `dynamic_filing_requirement`
   },
   {
     type: `text`,

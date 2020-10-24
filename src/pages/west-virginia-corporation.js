@@ -83,13 +83,12 @@ const AlaskaCorporation = () => (
               Choosing a Corporation Name
             </Heading>
             <Paragraph big>
-            The name you choose for your new West Virginia corporation may not be the same as or deceptively similar to the registered or reserved name of any other business entity in the state. It may not include language that states or implies that it has been organized for some other purpose than one allowed under state law or stated in its articles of incorporation.
+              The name you choose for your new West Virginia corporation may not be the same as or deceptively similar to the registered or reserved name of any other business entity in the state. It may not include language that states or implies that it has been organized for some other purpose
+              than one allowed under state law or stated in its articles of incorporation.
             </Paragraph>
-            <Paragraph big>
-            The name also must contain one of the following words, or an abbreviation thereof: “corporation,” “incorporated,” “limited,” or “company.”
-            </Paragraph>
+            <Paragraph big>The name also must contain one of the following words, or an abbreviation thereof: “corporation,” “incorporated,” “limited,” or “company.”</Paragraph>
             <Paragraph big style={{ marginBottom: "0" }}>
-            You can reserve an available corporate name for up to 120 days for $15.
+              You can reserve an available corporate name for up to 120 days for $15.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -97,7 +96,8 @@ const AlaskaCorporation = () => (
               Articles of Incorporation
             </Heading>
             <Paragraph big>
-            A new corporation’s articles of incorporation must be filed with the West Virginia Secretary of State before it can conduct business in the state. There must be at least one incorporator, who can be a natural person or a corporate entity, and does not have to be a corporate director, officer, or shareholder. The incorporator signs the articles of incorporation and then files them with the Secretary of State. 
+              A new corporation’s articles of incorporation must be filed with the West Virginia Secretary of State before it can conduct business in the state. There must be at least one incorporator, who can be a natural person or a corporate entity, and does not have to be a corporate director,
+              officer, or shareholder. The incorporator signs the articles of incorporation and then files them with the Secretary of State.
             </Paragraph>
 
             <Colorbox color={color.blue3} content={articlesOfIncorporation.box1} dotsColor={color.blue1} style={{ marginBottom: "65px" }} />
@@ -105,28 +105,30 @@ const AlaskaCorporation = () => (
             <Colorbox color={color.orange3} content={articlesOfIncorporation.box2} dotsColor={color.orange1} style={{ marginBottom: "48px" }} />
 
             <Paragraph big>The incorporation fee has three parts: first, a registration fee of $50; second, an “attorney-in-fact” fee (the amount of which depends on the month in which you file your articles); and third, a license fee.</Paragraph>
-            <Paragraph big>The amount of the license fee depends on the value of the shares you authorize in your articles and the month when your articles are received for filing. To pay the smallest license fee, keep the authorized capital of your corporation at or below $5,000. For par value shares, authorized capital simply means the number of shares authorized in your articles multiplied by the par value amount of each share. Shares without par value are assumed to have a par value of $25 per share for purposes of this calculation.</Paragraph>
+            <Paragraph big>
+              The amount of the license fee depends on the value of the shares you authorize in your articles and the month when your articles are received for filing. To pay the smallest license fee, keep the authorized capital of your corporation at or below $5,000. For par value shares,
+              authorized capital simply means the number of shares authorized in your articles multiplied by the par value amount of each share. Shares without par value are assumed to have a par value of $25 per share for purposes of this calculation.
+            </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Registered Agent and Office
             </Heading>
             <Paragraph big>
-            West Virginia corporations must maintain a registered agent within the state—a person or office appointed to receive official state administrative and legal correspondence. The agent must have the same business office address as the registered office and be either an individual living in the state a business entity with authority to transact business in West Virginia.
+              West Virginia corporations must maintain a registered agent within the state—a person or office appointed to receive official state administrative and legal correspondence. The agent must have the same business office address as the registered office and be either an individual living
+              in the state a business entity with authority to transact business in West Virginia.
             </Paragraph>
-            <Paragraph big>
-            The corporation’s registered office may be the same as any of the corporation’s places of business.
-            </Paragraph>
+            <Paragraph big>The corporation’s registered office may be the same as any of the corporation’s places of business.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Bylaws
             </Heading>
             <Paragraph big>
-            A corporation’s bylaws are very important because they lay out the corporation’s basic operating principles and processes. A West Virginia corporation must maintain a copy of its bylaws at its main executive office, but is not required to file them with the state.
+              A corporation’s bylaws are very important because they lay out the corporation’s basic operating principles and processes. A West Virginia corporation must maintain a copy of its bylaws at its main executive office, but is not required to file them with the state.
             </Paragraph>
             <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            The incorporators or board of directors should approve the corporation’s bylaws at their first meeting—insuring that they don’t conflict with either state law or the articles of incorporation—and keep them updated as time goes on. The bylaws should, at a minimum, include:
+              The incorporators or board of directors should approve the corporation’s bylaws at their first meeting—insuring that they don’t conflict with either state law or the articles of incorporation—and keep them updated as time goes on. The bylaws should, at a minimum, include:
             </Paragraph>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
@@ -147,20 +149,19 @@ const AlaskaCorporation = () => (
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>Requirements for providing annual financial information to shareholders</Paragraph>
             </TextBoxed>
-
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Directors
             </Heading>
             <Paragraph big>
-            The articles of incorporation or the bylaws may specify a variable range for the size of the board of directors by establishing a minimum and maximum number of directors. If a variable range is established, the number of directors may be specified or changed within the minimum and maximum by the shareholders or the board of directors.
+              The articles of incorporation or the bylaws may specify a variable range for the size of the board of directors by establishing a minimum and maximum number of directors. If a variable range is established, the number of directors may be specified or changed within the minimum and
+              maximum by the shareholders or the board of directors.
             </Paragraph>
+            <Paragraph big>After shares have been issued, only the corporation’s shareholders are allowed to change the range of the board’s size, change from a fixed- to a variable-range size board or vice versa.</Paragraph>
             <Paragraph big>
-            After shares have been issued, only the corporation’s shareholders are allowed to change the range of the board’s size, change from a fixed- to a variable-range size board or vice versa.
-            </Paragraph>
-            <Paragraph big>
-            Officers of the company—who run the day-to-day affairs of the organization—must be natural persons and may be listed in the bylaws or elected by the board. An officer may appoint other officers in accordance with the bylaws and the volte of the board of directors. At least one officer must authenticate records for the corporation, as well as prepare minutes of directors’ and shareholders’ meetings. An officer may hold more than one office in the corporation unless otherwise prohibited by law.
+              Officers of the company—who run the day-to-day affairs of the organization—must be natural persons and may be listed in the bylaws or elected by the board. An officer may appoint other officers in accordance with the bylaws and the volte of the board of directors. At least one officer
+              must authenticate records for the corporation, as well as prepare minutes of directors’ and shareholders’ meetings. An officer may hold more than one office in the corporation unless otherwise prohibited by law.
             </Paragraph>
           </PanelWrapper>
           <PanelWrapper>
@@ -168,11 +169,11 @@ const AlaskaCorporation = () => (
               Requirement Reports
             </Heading>
             <Paragraph big style={{ marginBottom: "48px" }}>
-            An annual return must be filed with the West Virginia Tax Commissioner by July 1st of each year.
+              An annual return must be filed with the West Virginia Tax Commissioner by July 1st of each year.
             </Paragraph>
 
             <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-            The return must include:
+              The return must include:
             </Paragraph>
             <TextBoxed style={{ marginBottom: "8px" }}>
               <Paragraph bottomMargin={0}>The address of the corporation’s principal office</Paragraph>
@@ -196,18 +197,20 @@ const AlaskaCorporation = () => (
               <Paragraph bottomMargin={0}>Any other information the tax commissioner considers appropriate.</Paragraph>
             </TextBoxed>
             <Paragraph big>
-            Unless unanimously waived by the shareholders, a West Virginia corporation must mail financial statements to its shareholders within 120 days of the end of each fiscal year. The statement must include a balance sheet, an income statement, and a statement of changes in shareholders’ equity for the year, unless that information appears elsewhere in the financial statements.
+              Unless unanimously waived by the shareholders, a West Virginia corporation must mail financial statements to its shareholders within 120 days of the end of each fiscal year. The statement must include a balance sheet, an income statement, and a statement of changes in shareholders’
+              equity for the year, unless that information appears elsewhere in the financial statements.
             </Paragraph>
-            <Paragraph big>
-            Additionally, certain types of businesses (such as health care and real estate) are required to obtain a license and pay a fee to operate in West Virginia.
-            </Paragraph>
+            <Paragraph big>Additionally, certain types of businesses (such as health care and real estate) are required to obtain a license and pay a fee to operate in West Virginia.</Paragraph>
           </PanelWrapper>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Taxes
             </Heading>
             <Paragraph big>West Virginia’s corporate tax structure consists of a flat 8.5 percent rate on all corporate income. Among states that tax corporate income, West Virginia’s corporate rate ranks 11th highest nationally.</Paragraph>
-            <Paragraph big>West Virginia recognizes “subchapter S” corporation or “S corporation” status, where a corporation chooses to be treated as a pass-through entity for tax purposes. This means that the tax-related information for the “S corp” is filed as part of the owner’s individual income tax and is taxed at the appropriate individual rate.</Paragraph>
+            <Paragraph big>
+              West Virginia recognizes “subchapter S” corporation or “S corporation” status, where a corporation chooses to be treated as a pass-through entity for tax purposes. This means that the tax-related information for the “S corp” is filed as part of the owner’s individual income tax and is
+              taxed at the appropriate individual rate.
+            </Paragraph>
           </PanelWrapper>
         </CollapseWrapper>
       </TabsSection>
@@ -256,7 +259,7 @@ const AlaskaCorporation = () => (
         <Accordion content={questions} curve curveColor={color.blue1} curveLeft="-15px" />
       </ContentCenter>
       <ContentCenter style={{ marginBottom: "48px" }}>
-        <Button content={{ text: `View all corporation FAQ's`, url: `/` }} width={300} padding="12px 48px" />
+        <Button content={{ text: `View all corporation FAQ's`, url: `/research-topics/c-corporation-info/` }} width={300} padding="12px 48px" />
       </ContentCenter>
     </QuestionSection>
 
