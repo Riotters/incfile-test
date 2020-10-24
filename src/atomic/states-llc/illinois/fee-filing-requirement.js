@@ -16,7 +16,7 @@ import AcccordionCounting from '../tab-acccordion-with-counting';
 import Accordion from "../../organisms/accordion/accordion";
 import TextBoxed from "../../molecules/static-check/circle-checkmark-text-boxed";
 import GridTableRow from "../../molecules/blocks/grid-table-row";
-import FilingRequirementBox from '../FilingRequirementBox';
+import FilingRequirementBox from '../filing-requirement-box';
 import AnnualReportBoxOnly from '../annual-report-box-only';
 
 const Wrapper = styled.div`

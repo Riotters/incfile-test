@@ -40,10 +40,12 @@ const Grid = styled.div`
 
 const RequirementsSection = ({ className, content, data }) => {
     const headerSection = `Fees and requirements in ${data?.prices ? data.prices.state : ''}.`;
+    let stateFee = data?.prices ? data.prices.statefee : 0; 
+
     const boxFilingTimeAndFees = {
         fields: [
             {
-                header: `$${data?.prices ? data.prices.LLC : 0}`,
+                header: `$${stateFee}`,
                 text: `State fee`,
             },
             {
