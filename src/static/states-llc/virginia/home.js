@@ -969,7 +969,7 @@ export const feesAndRequirments = [
     type: `button`,
     content: {
       text: `Incorporate your Virginia LLC through IncFile today`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=VA`,
     },
     theme: `primary48`,
     marginBottom: 48,
