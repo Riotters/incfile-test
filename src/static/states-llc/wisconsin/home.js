@@ -947,7 +947,7 @@ export const feesAndRequirments = [{
         type: `button`,
         content: {
             text: `INCORPORATE YOUR WISCONSIN LLC THROUGH INCFILE TODAY`,
-            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=WI/`,
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=WI`,
         },
         theme: `primary48`,
         marginBottom: 48,

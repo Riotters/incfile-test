@@ -2,13 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import parse from 'html-react-parser';
 
-import Whitebox from "../atoms/boxes/white-box";
-import { Heading } from "../atoms/typography/heading";
-import { Paragraph } from "../atoms/typography/paragraph";
-
-const FilingRequirementBox = ({ margin, data }) => {
+const FilingRequirementBox = ({ margin, data, className, ...rest }) => {
     return (
-        <Filing margin={margin}>
+        <Filing margin={margin} className={className} {...rest}>
             {parse(data.filings?.llc_requirement ?? 'loading')}
         </Filing>
     );

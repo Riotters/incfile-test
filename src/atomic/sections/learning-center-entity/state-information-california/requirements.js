@@ -11,6 +11,7 @@ import ArrowLink from "../../../molecules/buttons/text";
 import ClockSVG from "../../../../images/icons/clock.inline.svg";
 import TaxesSVG from "../../../../images/icons/taxes4.inline.svg";
 import CalendarSVG from "../../../../images/icons/calendar.inline.svg";
+import FilingRequirementBox from "../../../states-llc/filingRequirementBox";
 
 const Requirements = styled.section`
   position: relative;
@@ -66,11 +67,7 @@ const RequirementsSection = ({ className, content, data }) => {
                 },
                 {
                     type: `paragraph`,
-                    content: `Filing requirements are an important part in maintaining a companies standing with the state. Each state proscribes specific rules regarding when annual reports and franchise tax reports are due.`,
-                },
-                {
-                    type: `paragraph`,
-                    content: `Many states require the annual report to be filed on the anniversary month of the companies date of formation. Where some states set a specific date of filing for corporations and another for LLCs.`,
+                    content: `The state charges this amount to file a new business entity. This fee goes directly to the Secretary of State.`,
                 },
                 {
                     type: `arrow-links`,
@@ -140,32 +137,10 @@ const RequirementsSection = ({ className, content, data }) => {
                 </Grid>
             </ObjectContent>
 
-            {content && content.rows && content.rows.map(row => (
+            <ContentLeft>
+                <FilingRequirementBox data={data} style={{ margin: 0 }} />
+            </ContentLeft>
 
-                <ObjectContent
-                    className="row row--2"
-                    headlineWidth="450"
-                    object={<ColorBox content={row.boxItems} color={row.color} icon={<TaxesSVG />} radius="5px 50px 100px 5px" curve {...row.curve} />}
-                    objectWidth="400"
-                    objectPadding="130"
-                    contentWidth="900">
-                    <TextWrapper>
-                        {row.content.lenth && row.content.map(item => (
-                            <>
-                                {item.type === 'header' && 
-                                    <Heading size={item.size} bottomMargin={item.marginBottom}>{item.text}</Heading>
-                                }    
-
-                                {item.type === 'text' && 
-                                    <Paragraph style={{ fontSize: `18px` }} mixed={true}>{item.text}</Paragraph>
-                                }
-                            </>    
-                        ))}
-                    </TextWrapper>
-                </ObjectContent>
-                
-            ))}
-            
         </Requirements>
     );
 };
