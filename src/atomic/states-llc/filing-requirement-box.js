@@ -5,7 +5,7 @@ import parse from 'html-react-parser';
 const FilingRequirementBox = ({ margin, data, className, ...rest }) => {
     return (
         <Filing margin={margin} className={className} {...rest}>
-            {parse(data.filings?.llc_requirement ?? 'loading')}
+            {parse(data.filings?.requirement ?? 'loading')}
         </Filing>
     );
 }

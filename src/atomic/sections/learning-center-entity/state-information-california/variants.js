@@ -12,7 +12,7 @@ const Variants = styled.section`
 `;
 
 const VariantsSection = ({ content, data }) => {
-    let stateFee = data?.prices ? data.prices.LLC : 0;
+    let stateFee = data?.prices ? data.prices.statefee : 0;
     let entityState = data?.prices ? data.prices.state : '';
     const cards = [
         {

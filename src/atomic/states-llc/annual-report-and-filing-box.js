@@ -14,7 +14,7 @@ const AnnualReportFilingBox = ({ data }) => {
             </Heading>
             <Whitebox flex padding="24px" bottomMargin="8px">
                 <Paragraph mixed={true} bottomMargin={0} style={{ fontWeight: `bold`, minWidth: `300px` }}>State Fee</Paragraph>
-                <Paragraph mixed={true} bottomMargin={0}>${data.prices?.LLC}</Paragraph>
+                <Paragraph mixed={true} bottomMargin={0}>${data.prices?.statefee}</Paragraph>
             </Whitebox>
 
             <Whitebox flex padding="24px" bottomMargin="8px">
@@ -28,7 +28,7 @@ const AnnualReportFilingBox = ({ data }) => {
             </Whitebox>
 
             <Filing>
-                {parse(data.filings?.llc_requirement ?? 'loading')}
+                {parse(data.filings?.requirement ?? 'loading')}
             </Filing>
         </>
     );
