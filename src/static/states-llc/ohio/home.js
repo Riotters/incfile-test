@@ -982,54 +982,8 @@ export const feesAndRequirments = [
     marginBottom: 32,
   },
   {
-    type: `table-simple`,
-    content: {
-      headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
-      rows: [[`$99`, `3 Weeks`, `7 Business Day`]],
-    },
+    type: `dynamic_ar_box`
   },
-  //   {
-  //     type: "table",
-  //     content: {
-  //       headers: [
-  //         [
-  //           {
-  //             label: "State Fee",
-  //             textCenter: true,
-  //           },
-  //           {
-  //             label: "State Filing Time",
-  //             textCenter: true,
-  //           },
-  //           {
-  //             label: "Expedited Filing Time",
-  //             textCenter: true,
-  //           },
-  //         ],
-  //       ],
-  //       rows: [
-  //         [
-  //           {
-  //             label: "$99",
-  //             textCenter: true,
-  //           },
-  //           {
-  //             label: "3 Weeks",
-  //             textCenter: true,
-  //           },
-  //           {
-  //             label: "7 Business Day",
-  //             textCenter: true,
-  //           },
-  //         ],
-  //       ],
-  //       headerColumnDef: 3,
-  //       rowColumnDef: 3,
-  //     },
-  //     responsive: true,
-  //     settings: {},
-  //     style: {},
-  //   },
   {
     type: `arrow-link`,
     content: {
@@ -1117,15 +1071,7 @@ export const feesAndRequirments = [
     marginBottom: 48,
   },
   {
-    type: `header`,
-    content: `Annual Report`,
-    size: 4,
-    marginBottom: 24,
-  },
-  {
-    type: `text`,
-    content: `<b>Frequency:</b> Ohio LLC's are currently not required to file annual reports.`,
-    marginBottom: 16,
+    type: `dynamic_filing_requirement`
   },
 
   {

@@ -928,11 +928,7 @@ export const feesAndRequirments = [
     marginBottom: 32,
   },
   {
-    type: `table-simple`,
-    content: {
-      headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
-      rows: [[`$308`, `5 Bussiness days`, `1 Business Day`]],
-    },
+    type: `dynamic_ar_box`
   },
   {
     type: `arrow-link`,
@@ -1021,30 +1017,12 @@ export const feesAndRequirments = [
     marginBottom: 48,
   },
   {
-    type: `header`,
-    content: `Annual Report`,
-    size: 4,
-    marginBottom: 24,
-  },
-  {
-    type: `text`,
-    content: `<b>Frequency:</b> Annually`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `<b>Due Dates:</b> Calender Year: April 1st. <br>Fiscal Year: 1st day of 4th month following close of fiscal year.`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `<b>Filing Fee:</b> $307`,
-    marginBottom: 16,
+    type: `dynamic_filing_requirement`
   },
 
   {
     type: `text`,
-    content: `<a href="/Tennessee-llc/fees-filing-requirements/">Learn about your ongoing Tennessee LLC filing requirements</a>
+    content: `<a href="/tennessee-llc/fees-filing-requirements/">Learn about your ongoing Tennessee LLC filing requirements</a>
     and business filing deadlines with our helpful Tennessee ongoing filing lookup tool..`,
     marginBottom: 16,
   },

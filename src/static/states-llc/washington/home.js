@@ -862,11 +862,7 @@ export const feesAndRequirments = [
     marginBottom: 16,
   },
   {
-    type: `table`,
-    content: {
-      headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
-      rows: [[`$220`, `15 Business Days`, `5 Business days`]],
-    },
+    type: `dynamic_ar_box`
   },
   {
     type: `arrow-link`,
@@ -955,24 +951,7 @@ export const feesAndRequirments = [
     marginBottom: 16,
   },
   {
-    type: `text`,
-    content: `Annual Reporting and Fees in Washington State`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `<b>Frequency:</b> Annually`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `<b>Due Date:</b> Last day of anniversary month of organization or qualification.`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `<b>Filing Fee: </b> $60`,
-    marginBottom: 16,
+    type: `dynamic_filing_requirement`
   },
   {
     type: `text`,

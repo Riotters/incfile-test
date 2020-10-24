@@ -11,20 +11,30 @@ import ContentMap from "../../atomic/partials/content-map";
 // Content
 import { feesAndRequirments } from "../../static/states-llc/virginia/home";
 import { tabPages } from "../../static/states-llc/virginia/general";
+import { getFullPricesAndFilings } from '../../api/Api';
 
-const FillingRequirementsPage = () => (
-  <Layout>
-    <SEO
-    title="Virginia LLC Business Licenses, Costs & Requirements"
-    description="Make sense of the required forms, fees and filing procedures for your VA LLC with Incfile’s easy-to-use guide. Read more."
-    />
-    <LLCLayout>
-        <LeftTabPages content={tabPages} />
-        <MainPageContent>
-            <ContentMap content={feesAndRequirments} />
-        </MainPageContent>
-    </LLCLayout>
-  </Layout>
-);
+const FillingRequirementsPage = () => {
+    const [dataApi, setDataApi] = React.useState({});
+
+    React.useEffect(() => {
+        getFullPricesAndFilings('Virginia').then(data => {
+            setDataApi(data);
+        });
+    }, []);
+    return (
+        <Layout>
+            <SEO
+                title="Virginia LLC Business Licenses, Costs & Requirements"
+                description="Make sense of the required forms, fees and filing procedures for your VA LLC with Incfile’s easy-to-use guide. Read more."
+            />
+            <LLCLayout data={dataApi}>
+                <LeftTabPages content={tabPages} />
+                <MainPageContent>
+                    <ContentMap content={feesAndRequirments} data={dataApi} />
+                </MainPageContent>
+            </LLCLayout>
+        </Layout>
+    );
+}
 
 export default FillingRequirementsPage;
