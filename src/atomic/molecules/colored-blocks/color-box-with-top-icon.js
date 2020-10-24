@@ -118,7 +118,7 @@ const ColorBoxWithTopIcon = ({ children, content, icon, color, radius, curve, cu
         {icon}
       </Circle>
     </AbsoluteCircle>
-    {content.fields.map(field => (
+    {content?.fields && content.fields.map(field => (
       <TextWapper circleColor={circleColor(color)}>
         <Heading size="4" bottomMargin="0">{field.header}</Heading>
         <Paragraph bottomMargin="0">{field.text}</Paragraph>
