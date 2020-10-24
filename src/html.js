@@ -2,7 +2,6 @@ import React from "react"
 import PropTypes from "prop-types"
 
 export default function HTML(props) {
-    console.log('GTM', process.env.ENABLE_GTM);
     return (
         <html {...props.htmlAttributes}>
             <head>

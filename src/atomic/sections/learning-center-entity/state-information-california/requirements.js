@@ -38,19 +38,19 @@ const Grid = styled.div`
 `;
 
 const RequirementsSection = ({ className, content, data }) => {
-    const headerSection = `Fees and requirements in ${data.prices?.state}.`;
+    const headerSection = `Fees and requirements in ${data?.prices ? data.prices.state : ''}.`;
     const boxFilingTimeAndFees = {
         fields: [
             {
-                header: `$${data.prices?.LLC}`,
+                header: `$${data?.prices ? data.prices.LLC : 0}`,
                 text: `State fee`,
             },
             {
-                header: `${data.prices?.slow}`,
+                header: `${data?.prices ? data.prices.slow: 0}`,
                 text: `State filing time`,
             },
             {
-                header: `${data.prices?.fast}`,
+                header: `${data?.prices ? data.prices.fast : 0}`,
                 text: `Expected filling time`,
             },
         ],
@@ -140,7 +140,7 @@ const RequirementsSection = ({ className, content, data }) => {
                 </Grid>
             </ObjectContent>
 
-            {content && content?.rows && content?.rows.map(row => (
+            {content && content.rows && content.rows.map(row => (
 
                 <ObjectContent
                     className="row row--2"
@@ -150,7 +150,7 @@ const RequirementsSection = ({ className, content, data }) => {
                     objectPadding="130"
                     contentWidth="900">
                     <TextWrapper>
-                        {row.content && row.content.map(item => (
+                        {row.content.lenth && row.content.map(item => (
                             <>
                                 {item.type === 'header' && 
                                     <Heading size={item.size} bottomMargin={item.marginBottom}>{item.text}</Heading>
