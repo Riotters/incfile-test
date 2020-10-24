@@ -892,11 +892,7 @@ export const feesAndRequirments = [
     marginBottom: 16,
   },
   {
-    type: `table-simple`,
-    content: {
-      headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
-      rows: [[`$125`, `4 weeks`, `15 business days`]],
-    },
+    type: `dynamic_ar_box`
   },
   {
     type: `arrow-link`,
@@ -980,18 +976,7 @@ export const feesAndRequirments = [
     marginBottom: 16,
   },
   {
-    type: `list-dot`,
-    content: {
-      header: `Annual Report`,
-      list: [
-        `Frequency:  Decennially in years ending with the number "1" (2021, 2031, etc.)`,
-        `Due Date:  Any time during the reporting year.`,
-        `*The decennial filing is only required if no other filings (agent changes, amendments, etc.) have been submitted to the state during that 10 year period.</br>`,
-        `Filing Fee:  $50`,
-      ],
-    },
-    marginBottom: 16,
-    color: color.blue2,
+    type: `dynamic_filing_requirement`
   },
   {
     type: `text`,

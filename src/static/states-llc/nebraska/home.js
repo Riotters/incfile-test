@@ -849,11 +849,7 @@ export const feesAndRequirments = [
     marginBottom: 32,
   },
   {
-    type: `table-simple`,
-    content: {
-      headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
-      rows: [[`$109`, `9 Business Days`, `2 Business Days`]],
-    },
+    type: `dynamic_ar_box`
   },
   {
     type: `arrow-link`,
@@ -942,35 +938,7 @@ export const feesAndRequirments = [
     marginBottom: 48,
   },
   {
-    type: `header`,
-    content: `Annual Report`,
-    size: 4,
-    marginBottom: 24,
-  },
-  {
-    type: `text`,
-    content: `<b>Frequency:</b> Biennially`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `<b>Due Date:</b> April 1st of each odd-numbered year. `,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `<b>Filing Fee:</b> $0`,
-    marginBottom: 32,
-  },
-  {
-    type: `text`,
-    content: `<b>Publication Requirement:</b> Domestic Nebraska limited liability companies must publish a notice of organization, amendment, merger or conversion for three successive weeks in some legal newspaper of general circulation, near the designated office of the limited liability company. The notice of organization shall show the name of the limited liability company, the street address of the designated office and the general nature of the business to be transacted.`,
-    marginBottom: 32,
-  },
-  {
-    type: `text`,
-    content: `<b>(We do not assist in the filing of the Publication Requirement)</b>`,
-    marginBottom: 32,
+    type: `dynamic_filing_requirement`
   },
   {
     type: `text`,

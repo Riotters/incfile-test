@@ -11,20 +11,30 @@ import ContentMap from "../../atomic/partials/content-map";
 // Content
 import { registeredAgent } from "../../static/states-llc/missouri/home";
 import { tabPages } from "../../static/states-llc/missouri/general";
+import { getFullPricesAndFilings } from '../../api/Api';
 
-const RegisteredAgentPage = () => (
-  <Layout>
-    <SEO
-    title="Missouri Registered Agents for LLCs"
-    description="Do you need a Registered Agent for your MO LLC? Learn what Registered Agents do and how to get one with Incfile’s helpful guide."
-    />
-    <LLCLayout>
-        <LeftTabPages content={tabPages} />
-        <MainPageContent>
-            <ContentMap content={registeredAgent} />
-        </MainPageContent>
-    </LLCLayout>
-  </Layout>
-);
+const RegisteredAgentPage = () => {
+    const [dataApi, setDataApi] = React.useState({});
+
+    React.useEffect(() => {
+        getFullPricesAndFilings('Missouri').then(data => {
+            setDataApi(data);
+        });
+    }, []);
+    return (
+        <Layout>
+            <SEO
+                title="Missouri Registered Agents for LLCs"
+                description="Do you need a Registered Agent for your MO LLC? Learn what Registered Agents do and how to get one with Incfile’s helpful guide."
+            />
+            <LLCLayout data={dataApi}>
+                <LeftTabPages content={tabPages} />
+                <MainPageContent>
+                    <ContentMap content={registeredAgent} />
+                </MainPageContent>
+            </LLCLayout>
+        </Layout>
+    );
+};
 
 export default RegisteredAgentPage;

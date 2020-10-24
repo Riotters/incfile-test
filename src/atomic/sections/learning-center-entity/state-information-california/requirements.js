@@ -56,6 +56,50 @@ const RequirementsSection = ({ className, content, data }) => {
         ],
     };
 
+    const FirstSectionColumns = [
+        {
+            content: [
+                {
+                    type: `heading`,
+                    size: 3,
+                    content: `Filing time and price`,
+                },
+                {
+                    type: `paragraph`,
+                    content: `Filing requirements are an important part in maintaining a companies standing with the state. Each state proscribes specific rules regarding when annual reports and franchise tax reports are due.`,
+                },
+                {
+                    type: `paragraph`,
+                    content: `Many states require the annual report to be filed on the anniversary month of the companies date of formation. Where some states set a specific date of filing for corporations and another for LLCs.`,
+                },
+                {
+                    type: `arrow-links`,
+                    content: {
+                        text: `State Filing Times`,
+                        url: `/state-filing-times/`,
+                    },
+                    bottomMargin: 16,
+                },
+                {
+                    type: `arrow-links`,
+                    content: {
+                        text: `State Filing Prices`,
+                        url: `/state-filing-fees/`,
+                    },
+                },
+            ],
+        },
+        {
+            header: `Compliance  Requirements`,
+            text: `This report is mandatory and must be filed within the specified time frame in order for the entity to remain in good standing with the state.`,
+            text2: `Failure to file these reports can lead to the company being revoked or administrative dissolution. Included with all incorporation packages are lifetime company alerts that will provide courtesy email reminders to inform clients of an upcoming filing requirement.`,
+            link: {
+                text: `Other State's Ongoing`,
+                url: `/compliance-filing-requirement/`,
+            },
+        },
+    ];
+
     return (
         <Requirements className={className}>
             <ContentLeft>
@@ -66,7 +110,7 @@ const RequirementsSection = ({ className, content, data }) => {
             <ObjectContent className="row row--1" headlineWidth="450" object={<ColorBox content={boxFilingTimeAndFees} color={color.green3} icon={<ClockSVG />} radius="50px 5px 5px 100px" curve curveLeft />} objectWidth="400" objectPadding="130" contentWidth="900">
                 <Grid>
                     <TextWrapper>
-                        {content.rows[0].content.columns[0].content.map((item, i) => (
+                        {FirstSectionColumns[0].content.map((item, i) => (
                             <>
                                 {item.type === "heading" && (
                                     <Heading size={item.size} bottomMargin={item.bottomMargin}>
@@ -75,7 +119,7 @@ const RequirementsSection = ({ className, content, data }) => {
                                 )}
 
                                 {item.type === "paragraph" && (
-                                    <Paragraph big mixed={true} bottomMargin={item.bottomMargin}>
+                                    <Paragraph mixed={true} bottomMargin={item.bottomMargin} style={{ fontSize: `18px` }}>
                                         {parse(item.content)}
                                     </Paragraph>
                                 )}
@@ -86,43 +130,42 @@ const RequirementsSection = ({ className, content, data }) => {
 
                     </TextWrapper>
                     <TextWrapper>
-                        <Heading size="3">{content.rows[0].content.columns[1].header}</Heading>
-                        <Paragraph big>{content.rows[0].content.columns[1].text}</Paragraph>
-                        <Paragraph big bottomMargin="24">
-                            {content.rows[0].content.columns[1].text2}
+                        <Heading size="3">{FirstSectionColumns[1].header}</Heading>
+                        <Paragraph style={{ fontSize: `18px` }}>{FirstSectionColumns[1].text}</Paragraph>
+                        <Paragraph bottomMargin="24"style={{ fontSize: `18px` }}>
+                            {FirstSectionColumns[1].text2}
                         </Paragraph>
-                        <ArrowLink content={content.rows[0].content.columns[1].link} bottomMargin="0" />
+                        <ArrowLink content={FirstSectionColumns[1].link} bottomMargin="0" />
                     </TextWrapper>
                 </Grid>
             </ObjectContent>
-            <ObjectContent className="row row--2" headlineWidth="450" object={<ColorBox content={content.rows[1].box} color={color.orange3} icon={<TaxesSVG />} radius="5px 50px 100px 5px" curve curveRight />} objectWidth="400" objectPadding="130" contentWidth="900">
-                <TextWrapper>
-                    <Heading size="3">{content.rows[1].content.header}</Heading>
-                    <Paragraph big>{content.rows[1].content.text}</Paragraph>
-                    <Paragraph big bottomMargin="0">
-                        {content.rows[1].content.text2}
-                    </Paragraph>
-                </TextWrapper>
-            </ObjectContent>
-            <ObjectContent className="row row--3" headlineWidth="450" object={<ColorBox content={content.rows[2].box} color={color.purple3} icon={<CalendarSVG />} radius="50px 5px 5px 100px" curve curveLeft />} objectWidth="400" objectPadding="130" contentWidth="900">
-                <TextWrapper>
-                    <Heading size="3" bottomMargin="32">
-                        {content.rows[2].content.header}
-                    </Heading>
-                    <Heading size="4" bottomMargin="16">
-                        {content.rows[2].content.header2}
-                    </Heading>
-                    <Paragraph big bottomMargin="56">
-                        {content.rows[2].content.text}
-                    </Paragraph>
-                    <Heading size="4" bottomMargin="16">
-                        {content.rows[2].content.header3}
-                    </Heading>
-                    <Paragraph big bottomMargin="0">
-                        {content.rows[2].content.text2}
-                    </Paragraph>
-                </TextWrapper>
-            </ObjectContent>
+
+            {content && content?.rows && content?.rows.map(row => (
+
+                <ObjectContent
+                    className="row row--2"
+                    headlineWidth="450"
+                    object={<ColorBox content={row.boxItems} color={row.color} icon={<TaxesSVG />} radius="5px 50px 100px 5px" curve {...row.curve} />}
+                    objectWidth="400"
+                    objectPadding="130"
+                    contentWidth="900">
+                    <TextWrapper>
+                        {row.content && row.content.map(item => (
+                            <>
+                                {item.type === 'header' && 
+                                    <Heading size={item.size} bottomMargin={item.marginBottom}>{item.text}</Heading>
+                                }    
+
+                                {item.type === 'text' && 
+                                    <Paragraph style={{ fontSize: `18px` }} mixed={true}>{item.text}</Paragraph>
+                                }
+                            </>    
+                        ))}
+                    </TextWrapper>
+                </ObjectContent>
+                
+            ))}
+            
         </Requirements>
     );
 };

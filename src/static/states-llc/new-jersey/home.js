@@ -872,11 +872,7 @@ export const feesAndRequirments = [
     marginBottom: 16,
   },
   {
-    type: `table-simple`,
-    content: {
-      headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
-      rows: [[`$130`, `5 business days`, `1 business day`]],
-    },
+    type: `dynamic_ar_box`
   },
   {
     type: `arrow-link`,
@@ -945,18 +941,7 @@ export const feesAndRequirments = [
     marginBottom: 16,
   },
   {
-    type: `list-dot`,
-    content: {
-      header: `Annual Report`,
-      list: [
-        `Frequency:  Annually`,
-        `Due Date:  Last day of anniversary month of organization.`,
-        `Filing Fee:  $78`,
-        `*All new business entities in New Jersey are required to file Form NJ-REG to be registered for tax and employer purposes. Filing Form NJ-REG ensures that the business is registered under the correct tax   identification number and that it will receive the proper returns and notices. The NJ-REG, must be filed within 60 days of filing the new business entity, there is no fee for this filing.`,
-      ],
-    },
-    marginBottom: 16,
-    color: color.blue2,
+    type: `dynamic_filing_requirement`
   },
   {
     type: `text`,

@@ -883,11 +883,7 @@ export const feesAndRequirments = [
     marginBottom: 32,
   },
   {
-    type: `table`,
-    content: {
-      headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
-      rows: [[`$70`, `8 Business Days`, `1 Business Day`]],
-    },
+    type: `dynamic_ar_box`
   },
   {
     type: `arrow-link`,
@@ -919,7 +915,7 @@ export const feesAndRequirments = [
     type: `button`,
     content: {
       text: `Incorporate your Montana LLC through Incfile today`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MT/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MT`,
     },
     theme: `primary48`,
     marginBottom: 48,
@@ -976,29 +972,11 @@ export const feesAndRequirments = [
     marginBottom: 48,
   },
   {
-    type: `header`,
-    content: `Annual Report`,
-    size: 4,
-    marginBottom: 24,
+    type: `dynamic_filing_requirement`
   },
   {
     type: `text`,
-    content: `<b>Frequency:</b> Annually`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `<b>Due Date:</b> Calendar Year: April 15`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `<b>Filing Fee:</b> $15`,
-    marginBottom: 32,
-  },
-  {
-    type: `text`,
-    content: `<a href="/Montana-llc/fees-filing-requirements/">Learn about your ongoing Montana LLC filing requirements</a>
+    content: `<a href="/montana-llc/fees-filing-requirements/">Learn about your ongoing Montana LLC filing requirements</a>
     and business filing deadlines with our helpful Montana ongoing filing lookup tool..`,
     marginBottom: 16,
   },
