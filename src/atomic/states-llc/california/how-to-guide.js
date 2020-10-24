@@ -28,7 +28,7 @@ import BgBoxPersonalOA from '../../../images/icons/states/personal-oa.inline.png
 import BgBoxHandlePaperWorks from '../../../images/icons/states/handle-paperwork.inline.png'
 import BgBoxBusinessNameSearchTool from '../../../images/icons/states/business-name-search-tool.inline.png'
 
-import AnnualReportFilingBox from '../AnnualReportFilingBox';
+import AnnualReportFilingBox from '../annual-report-and-filing-box';
 
 const Wrapper = styled.div``
 
