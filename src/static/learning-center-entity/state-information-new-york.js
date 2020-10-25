@@ -23,10 +23,7 @@ import ArrowLeftSVG from "../../images/icons/icon-user-arrow-left.inline.svg";
 import ChatSVG from "../../images/icons/icon-chat.inline.svg";
 import BoardSVG from "../../images/icons/icon-board-of-directors.inline.svg";
 import UserCheckmarkSVG from "../../images/icons/icon-user-checkmark.inline.svg";
-
-import StockSVG from "../../images/icons/icon-stock-buying.inline.svg";
 import FolderProcentSVG from "../../images/icons/icon-folder-procent.inline.svg";
-
 import TodoSVG from "../../images/icons/icon-todo-list.inline.svg";
 import QuestionSVG from "../../images/icons/icon-chat-question-mark.inline.svg";
 import IdSVG from "../../images/icons/icon-registered-id.inline.svg";
@@ -2025,66 +2022,9 @@ export const afterFormation = [
     marginBottom: 24,
   },
   {
-    type: "header",
-    content: "New York Annual Report",
-    size: 5,
-    marginBottom: 24,
+    type: "dynamic_filing_requirement"
   },
-  {
-    type: "table",
-    content: {
-      headers: false,
-      rows: [
-        [
-          {
-            label: "Frequency:",
-            type: "label",
-            style: { "font-weight": "bold" },
-          },
-          {
-            label: "Biennially",
-            type: "label",
-            textCenter: true,
-          },
-        ],
-        [
-          {
-            label: "Due Date:",
-            type: "label",
-            style: { "font-weight": "bold" },
-          },
-          {
-            label: "During anniversary month of incorporation.",
-            type: "label",
-            className: "left",
-          },
-        ],
-        [
-          {
-            label: "Filing Fee:",
-            type: "label",
-            style: { "font-weight": "bold" },
-          },
-          {
-            label: "$18",
-            type: "label-boxed",
-            className: "highlight",
-            style: {
-              "align-items": "flex-start",
-            },
-          },
-        ],
-      ],
-      headerColumnsDef: "200px 1fr",
-      rowColumnsDef: "200px 1fr",
-    },
-    responsive: true,
-    settings: {},
-    tableScheme: "blue3",
-    style: {
-      "margin-bottom": "41px",
-    },
-  },
+ 
   {
     type: "header",
     content: "Protect Your NY Business Name With a Trademark",

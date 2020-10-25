@@ -23,10 +23,7 @@ import ArrowLeftSVG from "../../images/icons/icon-user-arrow-left.inline.svg";
 import ChatSVG from "../../images/icons/icon-chat.inline.svg";
 import BoardSVG from "../../images/icons/icon-board-of-directors.inline.svg";
 import UserCheckmarkSVG from "../../images/icons/icon-user-checkmark.inline.svg";
-
-import StockSVG from "../../images/icons/icon-stock-buying.inline.svg";
 import FolderProcentSVG from "../../images/icons/icon-folder-procent.inline.svg";
-
 import TodoSVG from "../../images/icons/icon-todo-list.inline.svg";
 import QuestionSVG from "../../images/icons/icon-chat-question-mark.inline.svg";
 import IdSVG from "../../images/icons/icon-registered-id.inline.svg";
@@ -2109,67 +2106,7 @@ export const afterFormation = [
     marginBottom: 24,
   },
   {
-    type: "header",
-    content: "Texas Public Information & Franchise Tax Report",
-    size: 5,
-    marginBottom: 24,
-  },
-  {
-    type: "table",
-    content: {
-      headers: false,
-      rows: [
-        [
-          {
-            label: "Frequency:",
-            type: "label",
-            style: { "font-weight": "bold" },
-          },
-          {
-            label: "Annually",
-            type: "label",
-            textCenter: true,
-          },
-        ],
-        [
-          {
-            label: "Due Date:",
-            type: "label",
-            style: { "font-weight": "bold" },
-          },
-          {
-            label: "Both reports are due between January 1 and no later than May 15.",
-            type: "label",
-            className: "left",
-          },
-        ],
-        [
-          {
-            label: "Filing Fee:",
-            type: "label",
-            style: { "font-weight": "bold" },
-          },
-          {
-            label: "There is no charge for the Public Information Report. The Franchise Tax Fee is based on the revenue of the Corporation. ",
-            type: "label",
-            className: "left",
-          },
-        ],
-      ],
-      headerColumnsDef: "200px 1fr",
-      rowColumnsDef: "200px 1fr",
-    },
-    responsive: true,
-    settings: {},
-    tableScheme: "blue3",
-    style: {
-      "margin-bottom": "41px",
-    },
-  },
-  {
-    type: "text",
-    content: " The initial Statement of Information filing is due within 90 days of the entity formation date.",
-    marginBottom: 48,
+    type: "dynamic_filing_requirement"
   },
   {
     type: "header",

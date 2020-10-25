@@ -54,4 +54,4 @@ const DelawareCorporation = () => {
     );
 }
 
-export default StateInformation;
+export default DelawareCorporation;
