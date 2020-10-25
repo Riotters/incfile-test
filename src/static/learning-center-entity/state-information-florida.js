@@ -71,32 +71,32 @@ export const tabPages = {
     },
     {
       name: `How to guide`,
-      path: `/florida-corporation/start-a-fl-corporation`,
+      path: `/florida-corporation/start-a-fl-corporation/`,
       icon: EntitySVG,
     },
     {
       name: `Naming your corporation`,
-      path: `/florida-corporation/how-to-name-your-corporation`,
+      path: `/florida-corporation/how-to-name-your-corporation/`,
       icon: PenSVG,
     },
     {
       name: `Registered agents`,
-      path: `/florida-corporation/registered-agents-florida`,
+      path: `/florida-corporation/registered-agents-florida/`,
       icon: RegisteredAgentSVG,
     },
     {
       name: `Filing requirements`,
-      path: `/florida-corporation/form-filling-permit-requirements`,
+      path: `/florida-corporation/form-filling-permit-requirements/`,
       icon: PrinterSVG,
     },
     {
       name: `Taxes & Fees`,
-      path: `/florida-corporation/taxes-and-fees-for-your-corporation`,
+      path: `/florida-corporation/taxes-and-fees-for-your-corporation/`,
       icon: PriceTagSVG,
     },
     {
       name: `After filing`,
-      path: `/florida-corporation/know-your-ongoing-filing-requirements`,
+      path: `/florida-corporation/know-your-ongoing-filing-requirements/`,
       icon: CoffeeSVG,
     },
   ],
@@ -1999,66 +1999,9 @@ export const afterFormation = [
     marginBottom: 24,
   },
   {
-    type: "header",
-    content: "Statement of Information",
-    size: 5,
-    marginBottom: 24,
+    type: "dynamic_filing_requirement"
   },
-  {
-    type: "table",
-    content: {
-      headers: false,
-      rows: [
-        [
-          {
-            label: "Frequency:",
-            type: "label",
-            style: { "font-weight": "bold" },
-          },
-          {
-            label: "Annually",
-            type: "label",
-            textCenter: true,
-          },
-        ],
-        [
-          {
-            label: "Due Date:",
-            type: "label",
-            style: { "font-weight": "bold" },
-          },
-          {
-            label: "May 1",
-            type: "label",
-            className: "left",
-          },
-        ],
-        [
-          {
-            label: "Filing Fee:",
-            type: "label",
-            style: { "font-weight": "bold" },
-          },
-          {
-            label: "$150",
-            type: "label-boxed",
-            className: "highlight",
-            style: {
-              "align-items": "flex-start",
-            },
-          },
-        ],
-      ],
-      headerColumnsDef: "200px 1fr",
-      rowColumnsDef: "200px 1fr",
-    },
-    responsive: true,
-    settings: {},
-    tableScheme: "blue3",
-    style: {
-      "margin-bottom": "41px",
-    },
-  },
+
   {
     type: "header",
     content: "Protect Your Business Name with a Trademark",

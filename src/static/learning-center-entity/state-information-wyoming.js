@@ -39,114 +39,6 @@ export const launchBusiness = {
     url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=WY`,
   },
 };
-export const requirements = {
-  header: `Fees and requirements in Wyoming.`,
-  rows: [
-    {
-      box: {
-        fields: [
-          {
-            header: `$102`,
-            text: `State fee`,
-          },
-          {
-            header: `5 Business days`,
-            text: `State filing time`,
-          },
-          {
-            header: `1 Business day`,
-            text: `Expected filling time`,
-          },
-        ],
-      },
-      content: {
-        columns: [
-          {
-            content: [
-              {
-                type: `heading`,
-                size: 3,
-                content: `Filing time and price`,
-              },
-              {
-                type: `paragraph`,
-                content: `The state charges this amount to file a new business entity. This fee goes directly to the Secretary of State.`,
-              },
-              {
-                type: `paragraph`,
-                content: `Ut tincidunt neque a viverra egestas. Suspendisse tempus metu.`,
-              },
-              {
-                type: `arrow-links`,
-                content: {
-                  text: `State Filing Times`,
-                  url: `/`,
-                },
-                bottomMargin: 16,
-              },
-              {
-                type: `arrow-links`,
-                content: {
-                  text: `State Filing Prices`,
-                  url: `/`,
-                },
-              },
-            ],
-          },
-          {
-            header: `Compliance  Requirements`,
-            text: `This report is mandatory and must be filed within the specified time frame in order for the entity to remain in good standing with the state.`,
-            text2: `Failure to file this report can lead to the company being revoked or administratively dissolved.`,
-            link: {
-              text: `Other State's Ongoing`,
-              url: `/`,
-            },
-          },
-        ],
-      },
-    },
-    {
-      box: {
-        fields: [
-          {
-            header: `Annually`,
-            text: `Frequency`,
-          },
-          {
-            header: `$800 (min)`,
-            text: `Filing fee`,
-          },
-        ],
-      },
-      content: {
-        header: `Wyoming Franchise Tax`,
-        text: `$800 payment for the LLC Franchise Tax is due by 15th day of the 4th month after your LLC is filed. The month your LLC is filed counts as Month 1, regardless if you file on the 1st of the month, the last of the month, or any day of the month, really.`,
-        text2: `This means that if you were to file your LLC on March 22nd, then you must pay the $800 fee no later than June 15th (in this example, March is Month 1, April is Month 2, May is Month 3, and June is Month 4). Then, every year after your first payment $800 LLC Franchise Tax will be due April 15th. You pay the $800 LLC Franchise Tax using Form 3522 called the LLC Tax Voucher.`,
-      },
-    },
-    {
-      box: {
-        fields: [
-          {
-            header: `Biennially`,
-            text: `Frequency`,
-          },
-          {
-            header: `$20`,
-            text: `Filing fee`,
-          },
-        ],
-      },
-      content: {
-        header: `Statement of Information`,
-        header2: `Due Date:`,
-        text: `During six-month period ending on last day of anniversary month of incorporation or qualification.`,
-        header3: `Important:`,
-        text2: `The initial Statement of Information filing is due within 90 days of the entity formation date.`,
-      },
-    },
-  ],
-};
 
 export const subscription = {
   header: `Subscribe now to learn more about Corporation and starting a business`,
@@ -164,27 +56,27 @@ export const tabPages = {
     },
     {
       name: `Entity Search & Name`,
-      path: `/wyoming-corporation/how-to-name-your-corporation`,
+      path: `/wyoming-corporation/how-to-name-your-corporation/`,
       icon: PenSVG,
     },
     {
       name: `Registered agents`,
-      path: `/wyoming-corporation/registered-agents-wyoming`,
+      path: `/wyoming-corporation/registered-agents-wyoming/`,
       icon: RegisteredAgentSVG,
     },
     {
       name: `Corporation requirements`,
-      path: `/wyoming-corporation/form-filling-permit-requirements`,
+      path: `/wyoming-corporation/form-filling-permit-requirements/`,
       icon: PrinterSVG,
     },
     {
       name: `Taxes & Fees`,
-      path: `/wyoming-corporation/taxes-and-fees-for-your-corporation`,
+      path: `/wyoming-corporation/taxes-and-fees-for-your-corporation/`,
       icon: PriceTagSVG,
     },
     {
       name: `What To Do After?`,
-      path: `/wyoming-corporation/know-your-ongoing-filing-requirements`,
+      path: `/wyoming-corporation/know-your-ongoing-filing-requirements/`,
       icon: CoffeeSVG,
     },
   ],

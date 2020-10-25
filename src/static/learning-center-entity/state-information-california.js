@@ -1974,71 +1974,9 @@ export const afterFormation = [
     marginBottom: 24,
   },
   {
-    type: "header",
-    content: "Statement of Information",
-    size: 5,
-    marginBottom: 24,
+    type: "dynamic_filing_requirement"
   },
-  {
-    type: "table",
-    content: {
-      headers: false,
-      rows: [
-        [
-          {
-            label: "Frequency:",
-            type: "label",
-            style: { "font-weight": "bold" },
-          },
-          {
-            label: "Annually",
-            type: "label",
-            textCenter: true,
-          },
-        ],
-        [
-          {
-            label: "Due Date:",
-            type: "label",
-            style: { "font-weight": "bold" },
-          },
-          {
-            label: "During six-month period ending on last day of anniversary month of incorporation or qualification.",
-            type: "label",
-            className: "left",
-          },
-        ],
-        [
-          {
-            label: "Filing Fee:",
-            type: "label",
-            style: { "font-weight": "bold" },
-          },
-          {
-            label: "$25",
-            type: "label-boxed",
-            className: "highlight",
-            style: {
-              "align-items": "flex-start",
-            },
-          },
-        ],
-      ],
-      headerColumnsDef: "200px 1fr",
-      rowColumnsDef: "200px 1fr",
-    },
-    responsive: true,
-    settings: {},
-    tableScheme: "blue3",
-    style: {
-      "margin-bottom": "41px",
-    },
-  },
-  {
-    type: "text",
-    content: " The initial Statement of Information filing is due within 90 days of the entity formation date.",
-    marginBottom: 48,
-  },
+
   {
     type: "header",
     content: "Protect Your Business Name with a Trademark",

@@ -2342,66 +2342,9 @@ export const afterFormation = [
     marginBottom: 24,
   },
   {
-    type: "header",
-    content: "Illinois Annual Report",
-    size: 5,
-    marginBottom: 24,
+    type: "dynamic_filing_requirement"
   },
-  {
-    type: "table",
-    content: {
-      headers: false,
-      rows: [
-        [
-          {
-            label: "Frequency:",
-            type: "label",
-            style: { "font-weight": "bold" },
-          },
-          {
-            label: "Annually",
-            type: "label",
-            textCenter: true,
-          },
-        ],
-        [
-          {
-            label: "Due Date:",
-            type: "label",
-            style: { "font-weight": "bold" },
-          },
-          {
-            label: "Within 60 days immediately preceding first day of anniversary month",
-            type: "label",
-            className: "left",
-          },
-        ],
-        [
-          {
-            label: "Filing Fee:",
-            type: "label",
-            style: { "font-weight": "bold" },
-          },
-          {
-            label: "$153",
-            type: "label-boxed",
-            className: "highlight",
-            style: {
-              "align-items": "flex-start",
-            },
-          },
-        ],
-      ],
-      headerColumnsDef: "250px 1fr",
-      rowColumnsDef: "250px 1fr",
-    },
-    responsive: true,
-    settings: {},
-    tableScheme: "blue3",
-    style: {
-      "margin-bottom": "41px",
-    },
-  },
+
   {
     type: "header",
     content: "Protect Your Business Name With a Trademark",
