@@ -1,7 +1,5 @@
 import { color } from "../../../components/styles/colors";
 
-import BgBoxDBAName from "../../../images/icons/states/dba-name-01.png";
-
 export const agentPageContent = {
   header: {
     title: `New York Registered Agents for LLCs`,

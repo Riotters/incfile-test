@@ -23,7 +23,6 @@ import { color } from "../../atomic/atoms/styles/colors";
 import CkeckText from "../../components/static-check/text-only";
 import BlueBoxWithAbsoluteText from "../../atomic/molecules/text-blocks/blue-box-with-absolute-text";
 import Adventages from "../../components/adventages";
-import CountingTextBoxed from "../../atomic/molecules/text-blocks/counting-text-boxed";
 import Colorbox from "../../components/color-box";
 import AboutCreating from "../../atomic/sections/type-of-business/record-label/about-creating";
 import BusinessPlan from "../../atomic/sections/type-of-business/record-label/business-plan";
@@ -299,18 +298,6 @@ const TabsOval = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-
-  @media (min-width: 420px) {
-    width: 420px;
-  }
-`;
-
-const TabsOval2 = styled.div`
-  position: absolute;
-  bottom: 112px;
-  right: 0;
-  width: 100%;
-  transform: scaleX(-1);
 
   @media (min-width: 420px) {
     width: 420px;

@@ -190,7 +190,7 @@ const BeautySalon = () => (
               owning a beauty salon company.
             </Paragraph>
 
-            <Paragraph big style={{ fontWeight: "Avenir", fontWeight: "900", color: color.black }}>
+            <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: color.black }}>
               What Your Beauty Salon Customers Are Looking for
             </Paragraph>
 
@@ -230,7 +230,7 @@ const BeautySalon = () => (
 
             <Adventages headline="Business administration" text="Sorting out profits, payroll, financial management, accounting and all the other areas that go into running any successful business" width="100%" />
 
-            <Paragraph big style={{ fontWeight: "Avenir", fontWeight: "900", color: color.black }}>
+            <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: color.black }}>
               What Are the Main Challenges for a Beauty Salon Entrepreneur?
             </Paragraph>
 

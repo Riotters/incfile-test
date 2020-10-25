@@ -56,12 +56,6 @@ const Sticky = styled.div`
 const Related = styled.div``;
 
 const VideoLibrary = () => {
-  let disqusConfig = {
-    //url: `${config.siteUrl+location.pathname}`,
-    url: `https://riotters.github.io/incfile-test/article/`,
-    identifier: "1",
-    title: "title",
-  };
   return (
     <Layout>
       <SEO title="Business Videos & Resources | Incfile Video Library" description="Find helpful videos on a variety of business topics, from starting an LLC to getting a business license." />
