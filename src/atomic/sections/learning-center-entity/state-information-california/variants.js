@@ -14,6 +14,13 @@ const Variants = styled.section`
 const VariantsSection = ({ content, data }) => {
     let stateFee = data?.prices ? data.prices.statefee : 0;
     let entityState = data?.prices ? data.prices.state : '';
+    const headerSection = {
+        header: `See how easy it can be to get your business incorporated`,
+        link: {
+            text: `Learn more`,
+            url: `${process.env.ORDER_URL}/form-order-now.php`,
+        }
+    }
     const cards = [
         {
             variant: ``,
@@ -91,7 +98,7 @@ const VariantsSection = ({ content, data }) => {
     
     return (
         <Variants>
-            <HeadingCenter headline={content.header} headlineWidth="640" linkText={content.link.text} linkUrl={content.link.url} />
+            <HeadingCenter headline={headerSection.header} headlineWidth="640" linkText={headerSection.link.text} linkUrl={headerSection.link.url} />
             <ContentCenter>
                 <VariantsCards content={cards} />
             </ContentCenter>
