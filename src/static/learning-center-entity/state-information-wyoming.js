@@ -1,5 +1,4 @@
 import NewYorkCorpSVG from "../../images/icons/icon-learning-center-color-business-taxes.inline.svg";
-import EntitySVG from "../../images/icons/note-magnifing-glass.inline.svg";
 import PenSVG from "../../images/icons/icon-pen.inline.svg";
 import PrinterSVG from "../../images/icons/icon-printer.inline.svg";
 import RegisteredAgentSVG from "../../images/icons/icon-registered-agent-cog.inline.svg";
@@ -18,21 +17,7 @@ import ProprietorshipSVG from "../../images/icons/icon-sole-proprietorship.inlin
 import LockpadSVG from "../../images/icons/icon-user-lockpad.inline.svg";
 import ProcentSVG from "../../images/icons/icon-user-percentge.inline.svg";
 import BillSVG from "../../images/icons/icon-person-bill.inline.svg";
-
-import ArrowLeftSVG from "../../images/icons/icon-user-arrow-left.inline.svg";
-import ChatSVG from "../../images/icons/icon-chat.inline.svg";
-import BoardSVG from "../../images/icons/icon-board-of-directors.inline.svg";
-import UserCheckmarkSVG from "../../images/icons/icon-user-checkmark.inline.svg";
-
-import StockSVG from "../../images/icons/icon-stock-buying.inline.svg";
-import FolderProcentSVG from "../../images/icons/icon-folder-procent.inline.svg";
-
-import TodoSVG from "../../images/icons/icon-todo-list.inline.svg";
-import QuestionSVG from "../../images/icons/icon-chat-question-mark.inline.svg";
-import IdSVG from "../../images/icons/icon-registered-id.inline.svg";
-import BillPadSVG from "../../images/icons/icon-bill-pad.inline.svg";
-import DollarUpSVG from "../../images/icons/icon-dollar-arrow-up.inline.svg";
-
+import FolderProcentSVG from "../../images/icons/icon-folder-procent.inline.svg"
 import { color } from "../../atomic/atoms/styles/colors";
 import { shadow } from "../../atomic/atoms/styles/shadows";
 
@@ -42,7 +27,7 @@ export const top = {
   buttons: [
     {
       text: `See detailed pricing`,
-      url: `/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=WY`,
     },
   ],
 };
@@ -50,8 +35,8 @@ export const launchBusiness = {
   header: `Launch your business with Incfile`,
   text: `No Contracts. No Surprise. Only $0 + State Fee to Launch Your Business.`,
   button: {
-    text: `launch your business`,
-    url: `/`,
+    text: `Launch your business`,
+    url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=WY`,
   },
 };
 export const requirements = {
@@ -76,19 +61,6 @@ export const requirements = {
       },
       content: {
         columns: [
-          // {
-          //   header: `Filing time and price`,
-          //   text: `The state charges this amount to file a new business entity. This fee goes directly to the Secretary of State.`,
-          //   text2: `Ut tincidunt neque a viverra egestas. Suspendisse tempus metu.`,
-          //   link: {
-          //     text: `State Filing Times`,
-          //     url: `/`,
-          //   },
-          //   link2: {
-          //     text: `State Filing Prices`,
-          //     url: `/`,
-          //   },
-          // },
           {
             content: [
               {
@@ -175,203 +147,7 @@ export const requirements = {
     },
   ],
 };
-export const learnMore = {
-  header: `Learn more about starting a business in Wyoming`,
-  text: `Additional resources, guides, and articles for better decision making.`,
-  buttons: [
-    {
-      header: `Business Name`,
-      url: `/`,
-    },
-    {
-      header: `Articles of Incorporation`,
-      url: `/`,
-    },
-    {
-      header: `Registered Agent`,
-      url: `/`,
-    },
-    {
-      header: `Operating Agreement`,
-      url: `/`,
-    },
-    {
-      header: `Members`,
-      url: `/`,
-    },
-    {
-      header: `Required reports`,
-      url: `/`,
-    },
-    {
-      header: `Taxes`,
-      url: `/`,
-    },
-    {
-      header: `Foreign Qualifications`,
-      url: `/`,
-    },
-  ],
-};
-export const quickLinks = {
-  header: `Quick links`,
-  cards: [
-    {
-      header: `State Filing Times`,
-      text: `Get started wih easy-to-follow guides, wizards, content and support documents. Help is only an email away.`,
-      link: {
-        text: `Learn more`,
-        url: `/`,
-      },
-    },
-    {
-      header: `Starting a Home Business`,
-      text: `Learn everything you need to launch your home business.`,
-      link: {
-        text: `Learn more`,
-        url: `/`,
-      },
-    },
-    {
-      header: `LLC State/Corporation State Information`,
-      text: `Learn more about LLCs/Corporation in your state.`,
-      link: {
-        text: `Learn more`,
-        url: `/`,
-      },
-    },
-    {
-      header: `Ongoing Filing Requirements`,
-      text: `Review your states ongoing filing requirements.`,
-      link: {
-        text: `Learn more`,
-        url: `/`,
-      },
-    },
-    {
-      header: `Business Plan Tips`,
-      text: `Read our guide to the 10 things your business plan needs.`,
-      link: {
-        text: `Learn more`,
-        url: `/`,
-      },
-    },
-    {
-      header: `Small Business Workshops`,
-      text: `Check out our list of free entrepreneur workshops, seminars, business training and webinars.`,
-      link: {
-        text: `Learn more`,
-        url: `/`,
-      },
-    },
-    {
-      header: `State Filing Fees`,
-      text: `Use our comparison tool to determine the processing fee fro each state.`,
-      link: {
-        text: `Learn more`,
-        url: `/`,
-      },
-    },
-    {
-      header: `S-Corp Tax Calculator`,
-      text: `Review the potential tax savings by forming an S-Corporation`,
-      link: {
-        text: `Learn more`,
-        url: `/`,
-      },
-    },
-    {
-      header: `Entity Comparison Chart`,
-      text: `Ongoing filing and compliance Review the benefits of each entity to determine which type is best for you`,
-      link: {
-        text: `Learn more`,
-        url: `/`,
-      },
-    },
-  ],
-};
-export const variants = {
-  header: `See how easy it can be to get your business incorporated`,
 
-  link: {
-    text: `Learn more`,
-    url: `/`,
-  },
-  cards: [
-    {
-      variant: ``,
-      header: `Silver`,
-      text: `Our core features for the lowest price`,
-      price: `102`,
-      button: {
-        text: `Get the Silver package`,
-        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=AL`,
-      },
-      fees: [
-        {
-          helpmark: `helpmark`,
-          text: `Package fee`,
-          price: `0`,
-        },
-        {
-          helpmark: `helpmark`,
-          text: `State fee`,
-          price: `102`,
-        },
-      ],
-      include: `The sliver services includes:`,
-      list: [`Prepare & Filing the Articles of Organization`, `Unlimited Name Searches`, `FREE Registered Agent for a year!`],
-    },
-    {
-      variant: `Most popular`,
-      header: `Gold`,
-      text: `Comprehensive features to get your business started`,
-      price: `251`,
-      button: {
-        text: `Get the Gold package`,
-        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=AL`,
-      },
-      fees: [
-        {
-          helpmark: `helpmark`,
-          text: `Package fee`,
-          price: `149`,
-        },
-        {
-          helpmark: `helpmark`,
-          text: `State fee`,
-          price: `102`,
-        },
-      ],
-      include: `The sliver package, and:`,
-      list: [`EIN Business Tax Number`, `IRS Form 2553`, `Operating Agreement`, `Banking Resolution`, `Express Shipping`, `Lifetime Company Alerts`, `Online Access Dashboard`, `Unlimited Phone & Email Support`, `Business Banking Account`, `Business Tax Consultation`],
-    },
-    {
-      variant: `Best value`,
-      header: `Platinum`,
-      text: `Full service features at the best value`,
-      price: `401`,
-      button: {
-        text: `Get the Platinum package`,
-        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=AL`,
-      },
-      fees: [
-        {
-          helpmark: `helpmark`,
-          text: `Package fee`,
-          price: `299`,
-        },
-        {
-          helpmark: `helpmark`,
-          text: `State fee`,
-          price: `102`,
-        },
-      ],
-      include: `The gold package, and:`,
-      list: [`Business Contract Templates`, `Expedited Filing`, `FedEx Delivery`, `Domain Name + Business Email`],
-    },
-  ],
-};
 export const subscription = {
   header: `Subscribe now to learn more about Corporation and starting a business`,
   button: {
@@ -542,7 +318,7 @@ export const corporation = [
       {
         content: {
           text: "Start Your S-Corp",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=WY`,
         },
         arrow: true,
         theme: "primary56",
@@ -550,7 +326,7 @@ export const corporation = [
       {
         content: {
           text: "Start Your C-Corp",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=WY`,
         },
         arrow: true,
         theme: "primary56",
@@ -1292,14 +1068,14 @@ export const corporation = [
       {
         content: {
           text: "Start Your S Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=WY`,
         },
         theme: "primary56",
       },
       {
         content: {
           text: "Start Your C Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=WY`,
         },
         theme: "primary56",
       },
@@ -1325,14 +1101,14 @@ export const naming = [
       {
         content: {
           text: "Start Your S Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=WY`,
         },
         theme: "primary56",
       },
       {
         content: {
           text: "Start Your C Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=WY`,
         },
         theme: "primary56",
       },
@@ -1487,14 +1263,14 @@ export const naming = [
       {
         content: {
           text: "Start Your S Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=WY`,
         },
         theme: "primary56",
       },
       {
         content: {
           text: "Start Your C Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=WY`,
         },
         theme: "primary56",
       },
@@ -1538,14 +1314,14 @@ export const agents = [
       {
         content: {
           text: "Start Your S Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=WY`,
         },
         theme: "primary56",
       },
       {
         content: {
           text: "Start Your S Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=WY`,
         },
         theme: "primary56",
       },
@@ -1672,7 +1448,7 @@ export const agents = [
     type: "button",
     content: {
       text: "Order Incfile’s Wyoming Registered Agent Service",
-      url: "/",
+      url: "/manage-your-company/registered-agent/",
     },
     theme: "primary56",
     marginBottom: 48,
@@ -1688,14 +1464,14 @@ export const agents = [
       {
         content: {
           text: "Start Your S Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=WY`,
         },
         theme: "primary56",
       },
       {
         content: {
           text: "Start Your C Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=WY`,
         },
         theme: "primary56",
       },
@@ -1731,14 +1507,14 @@ export const filing = [
       {
         content: {
           text: "Start Your S Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=WY`,
         },
         theme: "primary56",
       },
       {
         content: {
           text: "Start Your C Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=WY`,
         },
         theme: "primary56",
       },
@@ -1847,7 +1623,7 @@ export const filing = [
     type: "button",
     content: {
       text: "Get the Incfile License Research Package",
-      url: "/",
+      url: "/business-license-research-package/",
     },
     theme: "primary56",
     marginBottom: 24,
@@ -1976,7 +1752,7 @@ export const filing = [
     type: "button",
     content: {
       text: "Get an EIN through Incfile",
-      url: "/",
+      url: "/manage-your-company/tax-id-ein/",
     },
     theme: "primary56",
     marginBottom: 48,
@@ -2051,7 +1827,7 @@ export const filing = [
     type: "button",
     content: {
       text: "Have Incfile File Your Report for You",
-      url: "/",
+      url: "/manage-your-company/annual-report/",
     },
     theme: "primary56",
     marginBottom: 48,
@@ -2098,14 +1874,14 @@ export const filing = [
       {
         content: {
           text: "Start Your S Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=WY`,
         },
         theme: "primary56",
       },
       {
         content: {
           text: "Start Your C Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=WY`,
         },
         theme: "primary56",
       },
@@ -2351,65 +2127,7 @@ export const afterFormation = [
     marginBottom: 24,
   },
   {
-    type: "header",
-    content: "Wyoming Annual Report",
-    size: 5,
-    marginBottom: 24,
-  },
-  {
-    type: "table",
-    content: {
-      headers: false,
-      rows: [
-        [
-          {
-            label: "Frequency:",
-            type: "label",
-            style: { "font-weight": "bold" },
-          },
-          {
-            label: "Annually",
-            type: "label",
-            textCenter: true,
-          },
-        ],
-        [
-          {
-            label: "Due Date:",
-            type: "label",
-            style: { "font-weight": "bold" },
-          },
-          {
-            label: "On or before first day of anniversary month of incorporation",
-            type: "label",
-            className: "left",
-          },
-        ],
-        [
-          {
-            label: "Filing Fee:",
-            type: "label",
-            style: { "font-weight": "bold" },
-          },
-          {
-            label: "$52",
-            type: "label-boxed",
-            className: "highlight",
-            style: {
-              "align-items": "flex-start",
-            },
-          },
-        ],
-      ],
-      headerColumnsDef: "250px 1fr",
-      rowColumnsDef: "250px 1fr",
-    },
-    responsive: true,
-    settings: {},
-    tableScheme: "blue3",
-    style: {
-      "margin-bottom": "41px",
-    },
+    type: "dynamic_filing_requirement",
   },
   {
     type: "header",
@@ -2426,7 +2144,7 @@ export const afterFormation = [
   {
     type: "list-dot",
     content: {
-      header: "Benefits of <a href='/'>Incfile's Trademark service</a> include:",
+      header: "Benefits of <a href='/trademark-name-search/'>Incfile's Trademark service</a> include:",
       list: ["Legal counsel from an experienced trademark attorney", "A thorough search of existing trademarks", "A registered trademark with the USPTO", "Handling all correspondence with the USPTO until the name is approved."],
     },
     color: color.blue3,

@@ -1,19 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import { color, gradient } from "../../../atoms/styles/colors";
-import { Heading } from "../../../atoms/typography/heading";
-import { Paragraph } from "../../../atoms/typography/paragraph";
-import { states } from "../../../../components/states";
+import { color } from "../../../atoms/styles/colors";
 import HeadingCenter from "../../../partials/heading-center";
 import BoxedButton from "../../../molecules/buttons/boxed-normal-weight";
 import ContentCenter from "../../../partials/content-center";
-import Card from "../../../../components/certificate-card";
-import Oval from "../../../atoms/icons/oval";
-import Curve from "../../../atoms/icons/curve";
-import OvalSVG from "../../../../images/ovals/top-right-transparent-blue.inline.svg";
-import Oval2SVG from "../../../../images/ovals/bottom-left-transparent-blue3.inline.svg";
-import CurveSVG from "../../../../images/curves/top-left-bottom-right.inline.svg";
-import CheckBlueSVG from "../../../../images/circle-status-check-blue.inline.svg";
+import { learnMore } from '../../../../static/state-corporation/general';
 
 const LearnMore = styled.section`
   position: relative;
@@ -41,17 +32,36 @@ const Grid = styled.div`
   }
 `;
 
-const LearnMoreSection = ({ className, content }) => (
-  <LearnMore className={className}>
-    <HeadingCenter headline={content.header} headlineWidth="670" text={content.text} bottomMargin="80" />
-    <ContentCenter>
-      <Grid>
-        {content.buttons.map((button) => (
-          <BoxedButton content={button} ellipsis />
-        ))}
-      </Grid>
-    </ContentCenter>
-  </LearnMore>
-);
+const LearnMoreSection = ({ className, data }) => {
+    const [learnmores, setLearnMores] = React.useState(learnMore);
+
+    React.useEffect(() => {
+        if (data?.prices) {
+            let state = data.prices.state;
+            let covert = state.toLowerCase().replace(' ', '-');
+    
+            setLearnMores(prevState => {
+                let newState = { ...prevState };
+                newState.header = `Learn more about starting a business in ${state}`;
+                newState.buttons[0].url = `/${covert}-corporation/how-to-name-your-corporation/`;
+
+                return newState;
+            })
+        }
+    }, [data]);
+
+    return (
+        <LearnMore className={className}>
+            <HeadingCenter headline={learnmores.header} headlineWidth="670" text={learnmores.text} bottomMargin="80" />
+            <ContentCenter>
+                <Grid>
+                    {learnmores.buttons.map((button) => (
+                        <BoxedButton content={button} ellipsis />
+                    ))}
+                </Grid>
+            </ContentCenter>
+        </LearnMore>
+    );
+}
 
 export default LearnMoreSection;

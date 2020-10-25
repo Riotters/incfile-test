@@ -73,7 +73,7 @@ const HomeHeader = ({content, data }) => (
             {content.boxes.map((box) => (
               <Colorbox color={color.white} className="box">
                 <Heading size={4}>{parse(box.title)}</Heading>
-                <Paragraph>{replaceStr(data.prices?.LLC, `[STATE_FEE]`, box.desc)}</Paragraph>
+                <Paragraph>{replaceStr(data.prices?.statefee, `[STATE_FEE]`, box.desc)}</Paragraph>
                 <Button arrow content={box.button} theme="primary56" width="240"></Button>
               </Colorbox>
             ))}
