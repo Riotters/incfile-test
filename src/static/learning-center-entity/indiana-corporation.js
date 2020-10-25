@@ -1,12 +1,10 @@
-import React from "react";
-
 export const top = {
   header: `Form a Corporation in Indiana.`,
   text: `$0 + State Fee & 1st Year FREE Registered Agent`,
   buttons: [
     {
       text: `Start my corporation`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=AZ`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=IN`,
     },
   ],
 };

@@ -5,7 +5,7 @@ import Top from "../atomic/partials/top";
 import Buttonsbox from "../atomic/atoms/boxes/top-buttons-box";
 import Button from "../atomic/molecules/buttons/button";
 import Layout from "../components/layout";
-import { info, packets, questions, service, top, articlesOfIncorporation} from "../static/learning-center-entity/oklahoma-corporation";
+import { info, questions, service, top, articlesOfIncorporation} from "../static/learning-center-entity/oklahoma-corporation";
 import CartBlock from "../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../atomic/molecules/blocks/rating-block";
 import RatingRow from "../atomic/atoms/boxes/rating-row";
@@ -271,10 +271,7 @@ const AlaskaCorporation = () => {
                 </ContentCenter>
             </ServiceSection>
 
-            <PackageSection>
-                <HeadingCenter headline={packets.header} textWidth="770" />
-                <PacketsSection content={packets} data={dataApi} />
-            </PackageSection>
+            <PacketsSection data={dataApi} />
 
             <QuestionSection>
                 <Oval className="oval" height={570} width={570} top="20" right="0">

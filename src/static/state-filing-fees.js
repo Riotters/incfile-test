@@ -1,5 +1,4 @@
 import {color} from "../atomic/atoms/styles/colors";
-import React from "react";
 
 export const content = {
     included: {

@@ -8,7 +8,8 @@ import Oval from "../../../atoms/icons/oval";
 
 import Curve from "../../../../atomic/atoms/icons/curve";
 import CurveSVG from "../../../../images/curves/top-right-babyblue1.inline.svg";
-import {color} from "../../../atoms/styles/colors";
+import { color } from "../../../atoms/styles/colors";
+import HeadingCenter from "../../../../atomic/partials/heading-center";
 import { packagePrice } from '../../../../helpers/global-variables'; 
 
 const Wrapper = styled.div`
@@ -35,9 +36,10 @@ const Wrapper = styled.div`
   }
 `;
 
-const PacketsSection = ({ className, content, fullInfo, data }) => {
+const PacketsSection = ({ className, fullInfo, data }) => {
     let stateFee = data?.prices ? data.prices.statefee : 0;
     let entityState = data?.prices ? data.prices.state : '';
+    let header = `Select the package that works best for you`;
 
     const priceOptions = [
         {
@@ -118,19 +120,22 @@ const PacketsSection = ({ className, content, fullInfo, data }) => {
     ];
 
     return (
-        <Wrapper className={className} heightSM="unset">
-            <Oval className="oval" height="420" width="420" top="0" left="0" y={95}>
-                <OvalSVG />
-            </Oval>
-            <ContentCenter>
-                <div style={{position: "relative"}}>
-                    <Curve top="53" left="-35" color={color.purple1} className="curve-left">
-                        <CurveSVG />
-                    </Curve>
-                    <Cards content={priceOptions} fullInfo={fullInfo} />
-                </div>
-            </ContentCenter>
-        </Wrapper>
+        <>
+            <HeadingCenter headline={header} textWidth="770" />
+            <Wrapper className={className} heightSM="unset">
+                <Oval className="oval" height="420" width="420" top="0" left="0" y={95}>
+                    <OvalSVG />
+                </Oval>
+                <ContentCenter>
+                    <div style={{ position: "relative" }}>
+                        <Curve top="53" left="-35" color={color.purple1} className="curve-left">
+                            <CurveSVG />
+                        </Curve>
+                        <Cards content={priceOptions} fullInfo={fullInfo} />
+                    </div>
+                </ContentCenter>
+            </Wrapper>
+        </>
     );
 };
 

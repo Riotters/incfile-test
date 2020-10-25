@@ -23,8 +23,6 @@ import ArrowLeftSVG from "../../images/icons/icon-user-arrow-left.inline.svg";
 import ChatSVG from "../../images/icons/icon-chat.inline.svg";
 import BoardSVG from "../../images/icons/icon-board-of-directors.inline.svg";
 import UserCheckmarkSVG from "../../images/icons/icon-user-checkmark.inline.svg";
-
-import StockSVG from "../../images/icons/icon-stock-buying.inline.svg";
 import FolderProcentSVG from "../../images/icons/icon-folder-procent.inline.svg";
 
 import TodoSVG from "../../images/icons/icon-todo-list.inline.svg";

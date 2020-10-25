@@ -11,7 +11,6 @@ export const top = {
   ],
 };
 
-const newLocal = `aaa`;
 export const howToGuide = [
   {
     type: `header`,

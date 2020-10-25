@@ -234,10 +234,7 @@ const AlaskaCorporation = () => {
                 </ContentCenter>
             </ServiceSection>
 
-            <PackageSection>
-                <HeadingCenter headline={packets.header} textWidth="770" />
-                <PacketsSection content={packets} data={dataApi} />
-            </PackageSection>
+            <PacketsSection data={dataApi} />
 
             <QuestionSection>
                 <Oval className="oval" height={570} width={570} top="20" right="0">
