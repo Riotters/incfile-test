@@ -35,23 +35,26 @@ import ContentCenter from "../atomic/partials/content-center";
 import LightBoxVideo from "../components/LightBox";
 import Curve2SVG from "../images/curves/bottom-left-top-right-reverse-big.inline.svg";
 import Curve from "../atomic/atoms/icons/curve";
-import GenericTable from "../atomic/organisms/tables/generic-table";
-import TitleWithInfoBox from "../atomic/molecules/blocks/table-title";
 import PacketsSection from "../atomic/sections/learning-center-entity/alaska-corporation/packets";
 import Accordion from "../atomic/organisms/accordion/accordion";
 import Adventages from "../components/adventages";
 import Container from "../atomic/container";
 import Rocket from "../atomic/sections/learning-center-entity/alaska-corporation/rocket";
 import Colorbox from "../atomic/molecules/blocks/left-icon-block-colored";
-import CorporationNameIcon from "../images/icons/icon-learning-center-color-business-name-trademark.inline.svg";
+
+import FilingTimeAndPriceBox from '../atomic/state-corporation/filing-time-and-price-box';
+import ComplianceRequirementBox from "../atomic/state-corporation/compliance-requirement-box";
+
 import { getFullPricesAndFilings } from '../api/Api';
 
 const ArizonaCorporation = () => {
     const [dataApi, setDataApi] = React.useState({});
+    const [filingTimeAndRequirementHeader, setFilingTimeAndRequirementHeader] = React.useState('');
 
     React.useEffect(() => {
         getFullPricesAndFilings('Arizona', 'Corporation').then(data => {
             setDataApi(data);
+            setFilingTimeAndRequirementHeader(`Annual ${data.prices.state} Filing Requirements`);
         });
     }, []);
 
@@ -260,24 +263,18 @@ const ArizonaCorporation = () => {
                     </Curve>
                     <LightBoxVideo thumbnailVideo="comparison-chart-video-3611" videoID="oYZShvmf9eQ" />
                 </ContentCenter>
-
+                
+                {/* Filing Times & Requirement section */}
                 <ContentCenter contentWidth={970}>
-                    <HeadingCenter headline={fillingRequirements.mainHeader} textWidth="770" bottomMargin="48" bottomMarginLG="80" />
-
-                    <TitleWithInfoBox title={fillingRequirements.header1} style={{ marginBottom: "24px" }} hasInfoBox infoBoxText={fillingRequirements.header1infoBox} questionMarkColor={color.blue1} />
-                    <GenericTable className="blue3 headers-start left" content={fillingRequirements.table} style={{ "margin-bottom": "56px", width: "100%" }} />
-
-                    <TitleWithInfoBox title={fillingRequirements.header2} style={{ marginBottom: "24px" }} hasInfoBox infoBoxText={fillingRequirements.header2infoBox} questionMarkColor={color.blue1} />
-                    <GenericTable className="blue3 headers-start left" content={fillingRequirements.table2} style={{ "margin-bottom": "56px", width: "100%" }} />
-
-                    <TitleWithInfoBox title={fillingRequirements.header3} style={{ marginBottom: "24px" }} />
-                    <GenericTable className="blue3 headers-start left" content={fillingRequirements.table3} style={{ "margin-bottom": "56px", width: "100%" }} />
+                    <HeadingCenter headline={filingTimeAndRequirementHeader} textWidth="770" bottomMargin="48" bottomMarginLG="80" />
+                    <FilingTimeAndPriceBox data={dataApi} />
+                    <ComplianceRequirementBox data={dataApi} style={{ margin: 0 }} />
                 </ContentCenter>
             </ServiceSection>
 
             <PackageSection>
                 <HeadingCenter headline={packets.header} textWidth="770" />
-                <PacketsSection data={dataApi} />
+                <PacketsSection content={packets} data={dataApi} />
             </PackageSection>
 
             <QuestionSection>
