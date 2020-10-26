@@ -193,12 +193,15 @@ const BusinessStructure = () => (
           <Paragraph big>These are the largest and most complex types of businesses and are typically far more than the average fitness entrepreneur will need.</Paragraph>
         </TextBlockWithImage>
 
-        <Paragraph big mixed={true} style={{ marginBottom: "48px", paddingBottom: 0 }}>
-          For more information on the advantages and disadvantages of different types of businesses, please <Link to="/">see our in-depth guide</Link>. If you’ve still got questions,{" "}
-          <Link to="/">we’ve answered them to help you choose the right business structure for your dog walking or pet sitting business</Link>.
+        <Paragraph big style={{ paddingTop: "48px", paddingBottom: 0 }} mixed={true}>
+          For more information on the advantages and disadvantages of different types of businesses, <Link to="/business-entity-comparison/">please see our in-depth guide</Link>. If you’ve still got questions,{" "}
+          <a to="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/" target="_blank" rel="noopener noreferrer">
+            we’ve answered them to help you choose the right business structure
+          </a>{" "}
+          for your daycare business.
         </Paragraph>
         <Paragraph big mixed={true} style={{ marginBottom: "48px", paddingBottom: 0 }}>
-          In most cases, our recommendation for your dog walking or pet sitting business would be to create an LLC. We’ve <Link to="/">got a complete guide</Link>
+          In most cases, our recommendation for your dog walking or pet sitting business would be to create an LLC. We’ve <Link to="/form-an-llc/">got a complete guide</Link>
           to everything you need to do.<Link to="/"> LLC formation does vary from state to state</Link>, but we’ve got you covered, wherever you are.
         </Paragraph>
 

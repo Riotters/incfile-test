@@ -186,11 +186,15 @@ const BusinessStructure = () => (
           <Paragraph big>These are the largest and most complex types of businesses and are far more than the average entrepreneur or business owner will need.</Paragraph>
         </TextBlockWithImage>
 
-        <Paragraph big style={{ paddingTop: "120px" }} mixed={true}>
-          For more information on the advantages and disadvantages of different types of businesses, please <Link to="/">see our in-depth guide</Link>. If you’ve still got questions, <Link to="/">we’ve answered them to help you choose the right business structure</Link>.
+        <Paragraph big style={{ paddingTop: "48px", paddingBottom: 0 }} mixed={true}>
+          For more information on the advantages and disadvantages of different types of businesses, <Link to="/business-entity-comparison/">please see our in-depth guide</Link>. If you’ve still got questions,{" "}
+          <a to="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/" target="_blank" rel="noopener noreferrer">
+            we’ve answered them to help you choose the right business structure
+          </a>{" "}
+          for your daycare business.
         </Paragraph>
         <Paragraph big mixed={true}>
-          In most cases, our recommendation would be to create an LLC. We’ve <Link to="/">got a complete guide to everything you need to do</Link>, — and we can even set up your LLC for you
+          In most cases, our recommendation would be to create an LLC. We’ve <Link to="/form-an-llc/">got a complete guide to everything you need to do</Link>, — and we can even set up your LLC for you
         </Paragraph>
 
         <Button theme="primary48" width="365px" arrow content={{ url: `${process.env.ORDER_URL}/form-order-now.php`, text: `Start your business with us, today!` }} />
