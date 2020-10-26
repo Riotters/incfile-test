@@ -12,6 +12,9 @@ import ArrowLink from "../../molecules/buttons/text";
 import Curve from "../../atoms/icons/curve";
 import CurveSVG from "../../../images/curves/top-left-bottom-right.inline.svg";
 import { states } from "../../../components/states";
+
+import { ThankYouContent } from "../../../components/hubspot/thank-you-modal";
+
 // API 
 import { postHSForm } from '../../../api/Api';
 
@@ -61,11 +64,13 @@ const LinkWrapper = styled.div`
 
 const dropdownStates = states.state.map((state) => state.name);
 
-const BusinessNameSearchForm = ({ className, content, noMaxWidth, propState }) => {
+const BusinessNameSearchForm = ({ className, content, noMaxWidth, propState, propEntityName }) => {
     const [businessNameInState, setBusinessNameState] = React.useState(propState);
     const [entityType, setEntityType] = React.useState('LLC');
+    const [modalVisible, setModalVisible] = React.useState(false);
+    const [modalClases, setModalClases] = React.useState(['lightbox-content']);
     const pageUrl = typeof window !== 'undefined' ? window.location.href : '';
-
+  
     const handleForm = (e) => {
         e.preventDefault();
         const form = e.target;
@@ -83,28 +88,40 @@ const BusinessNameSearchForm = ({ className, content, noMaxWidth, propState }) =
         postHSForm(formData)
             .then(json => {
                 form.reset();
+                setModalClases((modalClases) => [...modalClases, "form-submitted"]);
+                setModalVisible(!modalVisible);
             });
     }
 
+    const popup = (e) => {
+        e.preventDefault();
+    
+        if (!e.target.className.includes("modal-overlay") && !e.target.className.includes("modal-close") && modalVisible === true) return;
+    
+        setModalVisible(!modalVisible);
+    }
+
     return (
+        <>
         <form noValidate onSubmit={handleForm}>
             <input type="hidden" name="hs_form_id" value="9b2dac2c-1122-4c12-9204-0cbebeea6ed6" />
             <Wrapper className={className} noMaxWidth={noMaxWidth}>
-                {(content.hasOwnProperty("noFullName") && content.noFullName === true) && (
+                {/* {(content.hasOwnProperty("noFullName") && content.noFullName === true) && (
                     <Curve top="-25" right="-29" color={color.orange1} rotate={0}>
                         <CurveSVG />
                     </Curve>
-                )}
-                {(!content.hasOwnProperty("noFullName") || content.noFullName === false) && (
+                )} */}
+                {/* {(!content.hasOwnProperty("noFullName") || content.noFullName === false) && (
+                    
+                )} */}
                     <Curve className="curve-shape" bottom="-25" left="-29" color={color.orange1}>
                         <CurveSVG />
                     </Curve>
-                )}
                 <Heading size="5" bottomMargin="16">
                     Please enter the business name information
-            </Heading>
+                </Heading>
                 <Label htmlFor="entity_name" content={{ label: `Entity Name` }} bottomMargin="24">
-                    <Input placeholder="Enter your desired company name..." name="entity_name" id="entity_name" required />
+                    <Input placeholder="Enter your desired company name..." value={propEntityName} name="entity_name" id="entity_name" required />
                 </Label>
             
                 <Flex>
@@ -130,7 +147,7 @@ const BusinessNameSearchForm = ({ className, content, noMaxWidth, propState }) =
                 }
 
                 <Heading size="5" bottomMargin="16">
-                    Where we can let you about your business name?
+                Let us know where we can let you know if your business name is available
                 </Heading>
                 <Grid>
                     <Label htmlFor="first-name" content={{ label: `First Name` }} bottomMargin="32">
@@ -141,14 +158,59 @@ const BusinessNameSearchForm = ({ className, content, noMaxWidth, propState }) =
                     </Label>
                 </Grid>
                 
-                <Label htmlFor="email" content={{ label: `Email` }} bottomMargin="32">
+                <Label htmlFor="email" content={{ label: `Email` }} bottomMargin="0">
                     <Input type="email" name="email" id="email" required />
                 </Label>
 
                 <Button type="submit" content={{ text: `Check Name Avaliability` }} theme="primary56" marginSM="48px auto 0" />
             </Wrapper>
         </form>
+
+        <LightBoxModal visible={modalVisible} className="modal-overlay">
+            <LightBoxContent style={{ pointerEvents: "all" }} class={modalClases.join(" ")}>
+                <ThankYouContent isBusinesNameSearch={true} modalExit={popup} />
+            </LightBoxContent>
+        </LightBoxModal>
+        </>
     );
 };
 
 export default BusinessNameSearchForm;
+
+const LightBoxModal = styled.div`
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: ${(props) => (props.visible ? "1" : "0")};
+  visibility: ${(props) => (props.visible ? "visible" : "hidden")};
+`;
+
+const LightBoxContent = styled.div`
+  transition: height 0.5s, max-width 0.5s;
+
+  background-color: #fff;
+  width: 100%;
+  max-width: 750px;
+  position: relative;
+  margin: 0 30px;
+  max-height: 100vh;
+  overflow-y: auto;
+
+  &.form-submitted {
+    height: 40vh;
+    max-width: 500px;
+  }
+
+  @media screen and (min-width: 769px) {
+    max-width: 600px;
+    padding-top: 0;
+    overflow-y: visible;
+  }
+`;
