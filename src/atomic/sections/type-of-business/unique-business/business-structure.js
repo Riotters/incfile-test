@@ -194,13 +194,17 @@ const BusinessStructure = () => (
         </TextBlockWithImage>
 
         <Paragraph big style={{ paddingTop: "48px", paddingBottom: 0 }} mixed={true}>
-          For more information on the advantages and disadvantages of different types of businesses, please <Link to="/">see our in-depth guide</Link>. If you’ve still got questions, <Link to="/">we’ve answered them to help you choose the right business structure</Link>.
+          For more information on the advantages and disadvantages of different types of businesses, <Link to="/business-entity-comparison/">please see our in-depth guide</Link>. If you’ve still got questions,{" "}
+          <a to="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/" target="_blank" rel="noopener noreferrer">
+            we’ve answered them to help you choose the right business structure
+          </a>{" "}
+          for your daycare business.
         </Paragraph>
         <Paragraph big style={{ paddingTop: "48px", paddingBottom: 0 }} mixed={true}>
           In most cases our recommendation would be to create an LLC - they are quick to create, easy to manage and relatively inexpensive to run. They also provide you with liability protection and help you get taken more seriously by photography clients.
         </Paragraph>
         <Paragraph big style={{ paddingTop: "48px", paddingBottom: 0 }} mixed={true}>
-          We’ve got a <Link to="/">complete guide to everything you need to do</Link>, and we can even start setting up an LLC for your photography business today. <Link to="/">LLC formation does vary from state to state</Link>, but we’ve got you covered, wherever you are.
+          We’ve got a <Link to="/">complete guide to everything you need to do</Link>, and we can even start setting up an LLC for your photography business today. <Link to="/llc-state-information/">LLC formation does vary from state to state</Link>, but we’ve got you covered, wherever you are.
         </Paragraph>
 
         <Button theme="primary48" width="365px" arrow content={{ url: `${process.env.ORDER_URL}/form-order-now.php`, text: `Start your business with us, today!` }} />

@@ -570,12 +570,16 @@ const CleaningBusiness = () => (
             <Paragraph big>These are the largest and most complex types of businesses and are far more than the average entrepreneur or business owner will need.</Paragraph>
           </TextBlockWithImage>
 
-          <Paragraph big mixed={true} style={{ marginBottom: "48px", paddingBottom: 0 }}>
-            For more information on the advantages and disadvantages of different types of businesses, please <Link to="/">see our in-depth guide</Link> on business entities. If you still have questions, <Link to="/">we’ve answered them to help you choose the right business structure</Link>.
+          <Paragraph big style={{ paddingTop: "48px", paddingBottom: 0 }} mixed={true}>
+            For more information on the advantages and disadvantages of different types of businesses, <Link to="/business-entity-comparison/">please see our in-depth guide</Link>. If you’ve still got questions,{" "}
+            <a to="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/" target="_blank" rel="noopener noreferrer">
+              we’ve answered them to help you choose the right business structure
+            </a>{" "}
+            for your daycare business.
           </Paragraph>
           <Paragraph big mixed={true} style={{ marginBottom: "56px", paddingBottom: 0 }}>
-            In most cases our recommendation would be to create an LLC. We have a <Link to="/">complete guide to everything you need to do</Link>, and we can set one up for your T-shirt business. <Link to="/">LLC formation does vary from state to state</Link>, but we’ve got you covered, wherever you
-            are.
+            In most cases our recommendation would be to create an LLC. We have a <Link to="/">complete guide to everything you need to do</Link>, and we can set one up for your T-shirt business. <Link to="/llc-state-information/">LLC formation does vary from state to state</Link>, but we’ve got you
+            covered, wherever you are.
           </Paragraph>
 
           <Heading size={3} style={{ marginBottom: "48px", paddingBottom: 0 }}>

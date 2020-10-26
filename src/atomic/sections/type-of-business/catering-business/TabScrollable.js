@@ -1,11 +1,11 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
-import {Link} from "gatsby";
+import { Link } from "gatsby";
 
-import {color} from "../../../atoms/styles/colors";
-import {shadow} from "../../../atoms/styles/shadows";
-import {Heading} from "../../../atoms/typography/heading";
-import {Paragraph} from "../../../atoms/typography/paragraph";
+import { color } from "../../../atoms/styles/colors";
+import { shadow } from "../../../atoms/styles/shadows";
+import { Heading } from "../../../atoms/typography/heading";
+import { Paragraph } from "../../../atoms/typography/paragraph";
 
 import TextBlockWithImage from "../../../molecules/mixed-blocks/text-block-with-absolute-image";
 
@@ -18,425 +18,358 @@ import ArrowSVG from "../../../../images/arrow.inline.svg";
 import TaxesIcon from "../../../../images/icons/other-taxes.inline.svg";
 import BusinessInsuranceIcon from "../../../../images/icons/business-insurance.inline.svg";
 import AgentIcon from "../../../../images/icons/registered-agent.inline.svg";
-import MaintainingIcon from "../../../../images/icons/maintaining-your-cleaning-business.inline.svg"
+import MaintainingIcon from "../../../../images/icons/maintaining-your-cleaning-business.inline.svg";
 import BusinessLicensesColoredIcon from "../../../../images/icons/business-licenses-and-permits-colored.inline.svg";
 
 import BusinessInsuranceColoredIcon from "../../../../images/icons/business-insurance-colored.inline.svg";
 import AgentColoredIcon from "../../../../images/icons/registered-agent-colored.inline.svg";
 import TaxesColoredIcon from "../../../../images/icons/other-taxes-colored.inline.svg";
-import MaintainingColoredIcon from "../../../../images/icons/maintaining-your-cleaning-business-colored.inline.svg"
+import MaintainingColoredIcon from "../../../../images/icons/maintaining-your-cleaning-business-colored.inline.svg";
 import StateBusinessColoredIcon from "../../../../images/icons/state-business-licenses-and-permits-colored.inline.svg";
-import FederalBusinessColoredIcon
-    from "../../../../images/icons/federal-business-licenses-and-permits-colored.inline.svg";
+import FederalBusinessColoredIcon from "../../../../images/icons/federal-business-licenses-and-permits-colored.inline.svg";
 import StateBusinessIcon from "../../../../images/icons/state-business-licenses-and-permits.inline.svg";
 import FederalBusinessIcon from "../../../../images/icons/federal-business-licenses-and-permits.inline.svg";
 
-import {
-    BusinessInsuranceAccordionContent,
-    MaintainingAccordionContent,
-    TaxesAccordionContent
-} from "../../../../static/type-of-business/catering-business";
+import { BusinessInsuranceAccordionContent, MaintainingAccordionContent, TaxesAccordionContent } from "../../../../static/type-of-business/catering-business";
 import VisibilitySensor from "../../../../components/VisibilitySensor";
 
 const ButtonList = [
-    {
-        title: "Local Business Licenses",
-        icon: BusinessLicensesColoredIcon,
-        tabId: "local-business"
-    },
-    {
-        title: "State Business Licenses",
-        icon: StateBusinessColoredIcon,
-        tabId: "local-business"
-    },
-    {
-        title: "Federal Business Licenses",
-        icon: FederalBusinessColoredIcon,
-        tabId: "local-business"
-    },
-    {
-        title: "Business Insurance",
-        icon: BusinessInsuranceColoredIcon,
-        tabId: "business-insurance"
-    },
-    {
-        title: "Registered Agent",
-        icon: AgentColoredIcon,
-        tabId: "registered-agent"
-    },
-    {
-        title: "Taxes",
-        icon: TaxesColoredIcon,
-        tabId: "taxes"
-    },
-    {
-        title: "Maintaining Your Business",
-        icon: MaintainingColoredIcon,
-        tabId: "maintaining"
-    }
+  {
+    title: "Local Business Licenses",
+    icon: BusinessLicensesColoredIcon,
+    tabId: "local-business",
+  },
+  {
+    title: "State Business Licenses",
+    icon: StateBusinessColoredIcon,
+    tabId: "local-business",
+  },
+  {
+    title: "Federal Business Licenses",
+    icon: FederalBusinessColoredIcon,
+    tabId: "local-business",
+  },
+  {
+    title: "Business Insurance",
+    icon: BusinessInsuranceColoredIcon,
+    tabId: "business-insurance",
+  },
+  {
+    title: "Registered Agent",
+    icon: AgentColoredIcon,
+    tabId: "registered-agent",
+  },
+  {
+    title: "Taxes",
+    icon: TaxesColoredIcon,
+    tabId: "taxes",
+  },
+  {
+    title: "Maintaining Your Business",
+    icon: MaintainingColoredIcon,
+    tabId: "maintaining",
+  },
 ];
 
-const TabScrollable = ({layout, columns}) => {
-    const [isActive, setActive] = useState(0);
+const TabScrollable = ({ layout, columns }) => {
+  const [isActive, setActive] = useState(0);
 
-    const handleClick = (index, elementId) => {
-        setActive(index);
-        let element = document.getElementById(elementId);
+  const handleClick = (index, elementId) => {
+    setActive(index);
+    let element = document.getElementById(elementId);
 
-        if (null !== element) {
-            element.scrollIntoView({behavior: 'smooth', block: "start"});
-        }
-    };
+    if (null !== element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
 
-    return (
-        <Wrapper>
-            <Container>
-                <Wrapper layout={layout}>
-                    <TabsWrapper className="slideUp enter" layout={layout}>
-                        <StickyContainer>
-                            <Sticky layout={layout} columns={columns}>
-                                {ButtonList.map((item, index) => {
-                                    return (
-                                        <Tab key={index}
-                                             onClick={() => handleClick(index, item.tabId)}
-                                             className={`accordian-tab${(isActive === index) ? " active" : ""}`}>
-                                            <Icon>
-                                                <item.icon/>
-                                            </Icon>
-                                            <Content>
-                                                <span>{item.title}</span>
-                                                <Arrow className="tabArrow">
-                                                    <ArrowSVG/>
-                                                </Arrow>
-                                            </Content>
-                                        </Tab>
-                                    );
-                                })}
-                            </Sticky>
-                        </StickyContainer>
-                    </TabsWrapper>
+  return (
+    <Wrapper>
+      <Container>
+        <Wrapper layout={layout}>
+          <TabsWrapper className="slideUp enter" layout={layout}>
+            <StickyContainer>
+              <Sticky layout={layout} columns={columns}>
+                {ButtonList.map((item, index) => {
+                  return (
+                    <Tab key={index} onClick={() => handleClick(index, item.tabId)} className={`accordian-tab${isActive === index ? " active" : ""}`}>
+                      <Icon>
+                        <item.icon />
+                      </Icon>
+                      <Content>
+                        <span>{item.title}</span>
+                        <Arrow className="tabArrow">
+                          <ArrowSVG />
+                        </Arrow>
+                      </Content>
+                    </Tab>
+                  );
+                })}
+              </Sticky>
+            </StickyContainer>
+          </TabsWrapper>
 
-                    <PanelWrapper>
-                        <Heading size={3}>
-                            Rules, Regulations and Laws for Your Catering Business
-                        </Heading>
-                        <Paragraph big mixed={true}>
-                            Of course, along with running a business there are certain rules, regulations
-                            and legalities you need to be aware of. <Link to="https://www.incfile.com/business-license-research-package/">We can also help with researching your
-                            business licensing needs</Link>.
-                        </Paragraph>
+          <PanelWrapper>
+            <Heading size={3}>Rules, Regulations and Laws for Your Catering Business</Heading>
+            <Paragraph big mixed={true}>
+              Of course, along with running a business there are certain rules, regulations and legalities you need to be aware of. <Link to="/business-license-research-package/">We can also help with researching your business licensing needs</Link>.
+            </Paragraph>
 
-                        <VisibilitySensor partialVisibility minTopValue={0}>
-                            {({isVisible}) => {
-                                if (isVisible) {
-                                    handleClick(0);
-                                }
-                                return (
-                                    <div id={ButtonList[0].tabId}>
-                                        <TextBlockWithImage
-                                            SvgImage={BusinessLicenseIcon}
-                                            textBackgroundColor="transparent"
-                                            imageBackgroundColor={color.orange2}
-                                            imageShadowColor={shadow.orange2}
-                                            imageShadowOpacity={0.5}
-                                            boxShadow={false}
-                                            paddingLeft={0}
-                                            style={{marginTop: "140px"}}
-                                            circleShadowY={40}
-                                            circleShadowBlure={80}
-                                            width={100}
-                                            widthUnit="%"
-                                        >
-                                            <Paragraph big flex flexAlign={true}
-                                                       style={{color: color.black, fontWeight: "bold"}} mixed={true}>
-                                                Local Business Licenses and Permits
-                                            </Paragraph>
+            <VisibilitySensor partialVisibility minTopValue={0}>
+              {({ isVisible }) => {
+                if (isVisible) {
+                  handleClick(0);
+                }
+                return (
+                  <div id={ButtonList[0].tabId}>
+                    <TextBlockWithImage
+                      SvgImage={BusinessLicenseIcon}
+                      textBackgroundColor="transparent"
+                      imageBackgroundColor={color.orange2}
+                      imageShadowColor={shadow.orange2}
+                      imageShadowOpacity={0.5}
+                      boxShadow={false}
+                      paddingLeft={0}
+                      style={{ marginTop: "140px" }}
+                      circleShadowY={40}
+                      circleShadowBlure={80}
+                      width={100}
+                      widthUnit="%"
+                    >
+                      <Paragraph big flex flexAlign={true} style={{ color: color.black, fontWeight: "bold" }} mixed={true}>
+                        Local Business Licenses and Permits
+                      </Paragraph>
 
-                                            <Paragraph big>
-                                                Your region, county or city may require you to have licenses or permits
-                                                to
-                                                operate a business. Talk to your city’s Chamber of Commerce to learn
-                                                about
-                                                your local licensing and permit requirements.
-                                            </Paragraph>
+                      <Paragraph big>Your region, county or city may require you to have licenses or permits to operate a business. Talk to your city’s Chamber of Commerce to learn about your local licensing and permit requirements.</Paragraph>
+                    </TextBlockWithImage>
+                  </div>
+                );
+              }}
+            </VisibilitySensor>
 
-                                        </TextBlockWithImage>
-                                    </div>
-                                )
-                            }}
-                        </VisibilitySensor>
+            <VisibilitySensor partialVisibility minTopValue={0}>
+              {({ isVisible }) => {
+                if (isVisible) {
+                  handleClick(1);
+                }
+                return (
+                  <div id={ButtonList[1].tabId}>
+                    <TextBlockWithImage
+                      SvgImage={StateBusinessIcon}
+                      textBackgroundColor="transparent"
+                      imageBackgroundColor={color.orange2}
+                      imageShadowColor={shadow.orange2}
+                      imageShadowOpacity={0.5}
+                      boxShadow={false}
+                      paddingLeft={0}
+                      style={{ marginTop: "140px" }}
+                      circleShadowY={40}
+                      circleShadowBlure={80}
+                      width={100}
+                      widthUnit="%"
+                    >
+                      <Paragraph big flex flexAlign={true} style={{ color: color.black, fontWeight: "bold" }} mixed={true}>
+                        State Business Licenses and Premits
+                      </Paragraph>
 
-                        <VisibilitySensor partialVisibility minTopValue={0}>
-                            {({isVisible}) => {
-                                if (isVisible) {
-                                    handleClick(1);
-                                }
-                                return (
-                                    <div id={ButtonList[1].tabId}>
-                                        <TextBlockWithImage
-                                            SvgImage={StateBusinessIcon}
-                                            textBackgroundColor="transparent"
-                                            imageBackgroundColor={color.orange2}
-                                            imageShadowColor={shadow.orange2}
-                                            imageShadowOpacity={0.5}
-                                            boxShadow={false}
-                                            paddingLeft={0}
-                                            style={{marginTop: "140px"}}
-                                            circleShadowY={40}
-                                            circleShadowBlure={80}
-                                            width={100}
-                                            widthUnit="%"
-                                        >
-                                            <Paragraph big flex flexAlign={true}
-                                                       style={{color: color.black, fontWeight: "bold"}} mixed={true}>
-                                                State Business Licenses and Premits
-                                            </Paragraph>
+                      <Paragraph big mixed={true}>
+                        You can find all the information you need about statewide licenses and permits on your state’s Secretary of State website. You can also find those details in our <Link to="/llc-state-information/">state-by-state guides to company formation</Link>. Alternatively, the Small
+                        Business Administration website has a list of licenses and permits by state.
+                      </Paragraph>
+                    </TextBlockWithImage>
+                  </div>
+                );
+              }}
+            </VisibilitySensor>
 
-                                            <Paragraph big mixed={true}>
-                                                You can find all the information you need about statewide licenses and
-                                                permits on your state’s Secretary of State website. You can also find
-                                                those
-                                                details in our <Link to="https://www.incfile.com/llc-state-information/">state-by-state guides to company
-                                                formation</Link>.
-                                                Alternatively,
-                                                the Small Business Administration website has a list of licenses and
-                                                permits
-                                                by state.
-                                            </Paragraph>
+            <VisibilitySensor partialVisibility minTopValue={0}>
+              {({ isVisible }) => {
+                if (isVisible) {
+                  handleClick(2);
+                }
+                return (
+                  <div id={ButtonList[2].tabId}>
+                    <TextBlockWithImage
+                      SvgImage={FederalBusinessIcon}
+                      textBackgroundColor="transparent"
+                      imageBackgroundColor={color.orange2}
+                      imageShadowColor={shadow.orange2}
+                      imageShadowOpacity={0.5}
+                      boxShadow={false}
+                      paddingLeft={0}
+                      style={{ marginTop: "140px" }}
+                      circleShadowY={40}
+                      circleShadowBlure={80}
+                      width={100}
+                      widthUnit="%"
+                    >
+                      <Paragraph big flex flexAlign={true} style={{ color: color.black, fontWeight: "bold" }} mixed={true}>
+                        Federal Business Licenses and Premits
+                      </Paragraph>
 
-                                        </TextBlockWithImage>
-                                    </div>
-                                )
-                            }}
-                        </VisibilitySensor>
+                      <Paragraph big mixed={true}>
+                        The Small Business Administration provides <Link to="details of any national or federal licenses and permits">details of any national or federal licenses and permits</Link> you might need.
+                      </Paragraph>
+                    </TextBlockWithImage>
+                  </div>
+                );
+              }}
+            </VisibilitySensor>
 
-                        <VisibilitySensor partialVisibility minTopValue={0}>
-                            {({isVisible}) => {
-                                if (isVisible) {
-                                    handleClick(2);
-                                }
-                                return (
-                                    <div id={ButtonList[2].tabId}>
-                                        <TextBlockWithImage
-                                            SvgImage={FederalBusinessIcon}
-                                            textBackgroundColor="transparent"
-                                            imageBackgroundColor={color.orange2}
-                                            imageShadowColor={shadow.orange2}
-                                            imageShadowOpacity={0.5}
-                                            boxShadow={false}
-                                            paddingLeft={0}
-                                            style={{marginTop: "140px"}}
-                                            circleShadowY={40}
-                                            circleShadowBlure={80}
-                                            width={100}
-                                            widthUnit="%"
-                                        >
-                                            <Paragraph big flex flexAlign={true}
-                                                       style={{color: color.black, fontWeight: "bold"}} mixed={true}>
-                                                Federal Business Licenses and Premits
-                                            </Paragraph>
+            <VisibilitySensor partialVisibility minTopValue={0}>
+              {({ isVisible }) => {
+                if (isVisible) {
+                  handleClick(3);
+                }
+                return (
+                  <div id={ButtonList[3].tabId}>
+                    <TextBlockWithImage
+                      SvgImage={BusinessInsuranceIcon}
+                      textBackgroundColor="transparent"
+                      imageBackgroundColor={color.orange2}
+                      imageShadowColor={shadow.orange2}
+                      imageShadowOpacity={0.5}
+                      boxShadow={false}
+                      paddingLeft={0}
+                      style={{ marginTop: "140px" }}
+                      circleShadowY={40}
+                      circleShadowBlure={80}
+                      width={100}
+                      widthUnit="%"
+                    >
+                      <Paragraph big flex flexAlign={true} style={{ color: color.black, fontWeight: "bold" }} mixed={true}>
+                        Business Insurance
+                      </Paragraph>
 
-                                            <Paragraph big mixed={true}>
-                                                The Small Business Administration provides <Link to="details of any national or federal licenses and permits">details of any
-                                                national or
-                                                federal licenses and permits</Link> you might need.
-                                            </Paragraph>
+                      <Paragraph big>Your cleaning business must have comprehensive business insurance. There are various types to consider.</Paragraph>
 
-                                        </TextBlockWithImage>
-                                    </div>
-                                )
-                            }}
-                        </VisibilitySensor>
+                      <Accordion tab content={BusinessInsuranceAccordionContent} />
+                    </TextBlockWithImage>
+                  </div>
+                );
+              }}
+            </VisibilitySensor>
 
-                        <VisibilitySensor partialVisibility minTopValue={0}>
-                            {({isVisible}) => {
-                                if (isVisible) {
-                                    handleClick(3);
-                                }
-                                return (
-                                    <div id={ButtonList[3].tabId}>
-                                        <TextBlockWithImage
-                                            SvgImage={BusinessInsuranceIcon}
-                                            textBackgroundColor="transparent"
-                                            imageBackgroundColor={color.orange2}
-                                            imageShadowColor={shadow.orange2}
-                                            imageShadowOpacity={0.5}
-                                            boxShadow={false}
-                                            paddingLeft={0}
-                                            style={{marginTop: "140px"}}
-                                            circleShadowY={40}
-                                            circleShadowBlure={80}
-                                            width={100}
-                                            widthUnit="%"
-                                        >
-                                            <Paragraph big flex flexAlign={true}
-                                                       style={{color: color.black, fontWeight: "bold"}} mixed={true}>
-                                                Business Insurance
-                                            </Paragraph>
+            <VisibilitySensor partialVisibility minTopValue={0}>
+              {({ isVisible }) => {
+                if (isVisible) {
+                  handleClick(4);
+                }
+                return (
+                  <div id={ButtonList[4].tabId}>
+                    <TextBlockWithImage
+                      SvgImage={AgentIcon}
+                      textBackgroundColor="transparent"
+                      imageBackgroundColor={color.orange2}
+                      imageShadowColor={shadow.orange2}
+                      imageShadowOpacity={0.5}
+                      boxShadow={false}
+                      paddingLeft={0}
+                      style={{ marginTop: "140px" }}
+                      circleShadowY={40}
+                      circleShadowBlure={80}
+                      width={100}
+                      widthUnit="%"
+                    >
+                      <Paragraph big flex flexAlign={true} style={{ color: color.black, fontWeight: "bold" }} mixed={true}>
+                        Registered Agent
+                      </Paragraph>
 
-                                            <Paragraph big>
-                                                Your cleaning business must have comprehensive business insurance. There
-                                                are
-                                                various types to consider.
-                                            </Paragraph>
+                      <Paragraph big mixed={true}>
+                        All businesses need to have a <Link to="/manage-your-company/registered-agent/">Registered Agent</Link>. These are individuals or other businesses that can accept legal documents on behalf of your landscaping company.
+                      </Paragraph>
+                      <Paragraph big>
+                        Although you can act as your own registered agent, we recommend using a professional service. It ensures there will always be someone available to receive important legal documentation on your behalf and also removes your name and address from the public record.
+                      </Paragraph>
+                      <Paragraph big mixed={true}>
+                        When you <Link to="/form-order-now.php">incorporate through us</Link>, we provide a complete Registered Agent service free for the first year.
+                      </Paragraph>
+                    </TextBlockWithImage>
+                  </div>
+                );
+              }}
+            </VisibilitySensor>
 
-                                            <Accordion tab content={BusinessInsuranceAccordionContent}/>
-                                        </TextBlockWithImage>
-                                    </div>
-                                )
-                            }}
-                        </VisibilitySensor>
+            <VisibilitySensor partialVisibility minTopValue={0}>
+              {({ isVisible }) => {
+                if (isVisible) {
+                  handleClick(5);
+                }
+                return (
+                  <div id={ButtonList[5].tabId}>
+                    <TextBlockWithImage
+                      SvgImage={TaxesIcon}
+                      textBackgroundColor="transparent"
+                      imageBackgroundColor={color.orange2}
+                      imageShadowColor={shadow.orange2}
+                      imageShadowOpacity={0.5}
+                      boxShadow={false}
+                      paddingLeft={0}
+                      style={{ marginTop: "140px" }}
+                      circleShadowY={40}
+                      circleShadowBlure={80}
+                      width={100}
+                      widthUnit="%"
+                    >
+                      <Paragraph big flex flexAlign={true} style={{ color: color.black, fontWeight: "bold" }} mixed={true}>
+                        Taxes
+                      </Paragraph>
 
-                        <VisibilitySensor partialVisibility minTopValue={0}>
-                            {({isVisible}) => {
-                                if (isVisible) {
-                                    handleClick(4);
-                                }
-                                return (
-                                    <div id={ButtonList[4].tabId}>
-                                        <TextBlockWithImage
-                                            SvgImage={AgentIcon}
-                                            textBackgroundColor="transparent"
-                                            imageBackgroundColor={color.orange2}
-                                            imageShadowColor={shadow.orange2}
-                                            imageShadowOpacity={0.5}
-                                            boxShadow={false}
-                                            paddingLeft={0}
-                                            style={{marginTop: "140px"}}
-                                            circleShadowY={40}
-                                            circleShadowBlure={80}
-                                            width={100}
-                                            widthUnit="%"
-                                        >
-                                            <Paragraph big flex flexAlign={true}
-                                                       style={{color: color.black, fontWeight: "bold"}} mixed={true}>
-                                                Registered Agent
-                                            </Paragraph>
+                      <Paragraph big>Taxes are a fact of life. If you’re in business, there are various ways you will need to file and pay them.</Paragraph>
 
-                                            <Paragraph big mixed={true}>
-                                                All businesses need to have a <Link to="https://www.incfile.com/manage-your-company/registered-agent/">Registered Agent</Link>.
-                                                These are
-                                                individuals or
-                                                other businesses that can accept legal documents on behalf of your
-                                                landscaping company.
-                                            </Paragraph>
-                                            <Paragraph big>
-                                                Although you can act as your own registered agent, we recommend using a
-                                                professional service. It ensures there will always be someone available
-                                                to
-                                                receive important legal documentation on your behalf and also removes
-                                                your
-                                                name and address from the public record.
-                                            </Paragraph>
-                                            <Paragraph big mixed={true}>
-                                                When you <Link to="https://www.incfile.com/form-order-now.php">incorporate through us</Link>, we provide a
-                                                complete Registered
-                                                Agent
-                                                service free for the first year.
-                                            </Paragraph>
-                                        </TextBlockWithImage>
-                                    </div>
-                                )
-                            }}
-                        </VisibilitySensor>
+                      <Accordion tab content={TaxesAccordionContent} />
 
-                        <VisibilitySensor partialVisibility minTopValue={0}>
-                            {({isVisible}) => {
-                                if (isVisible) {
-                                    handleClick(5);
-                                }
-                                return (
-                                    <div id={ButtonList[5].tabId}>
-                                        <TextBlockWithImage
-                                            SvgImage={TaxesIcon}
-                                            textBackgroundColor="transparent"
-                                            imageBackgroundColor={color.orange2}
-                                            imageShadowColor={shadow.orange2}
-                                            imageShadowOpacity={0.5}
-                                            boxShadow={false}
-                                            paddingLeft={0}
-                                            style={{marginTop: "140px"}}
-                                            circleShadowY={40}
-                                            circleShadowBlure={80}
-                                            width={100}
-                                            widthUnit="%"
-                                        >
-                                            <Paragraph big flex flexAlign={true}
-                                                       style={{color: color.black, fontWeight: "bold"}} mixed={true}>
-                                                Taxes
-                                            </Paragraph>
+                      <Paragraph big mixed={true} style={{ marginTop: "48px" }}>
+                        As a rule of thumb, we recommend keeping back around a third of your earnings to pay your taxes. We can even prepare and file your tax returns for you.
+                      </Paragraph>
+                    </TextBlockWithImage>
+                  </div>
+                );
+              }}
+            </VisibilitySensor>
 
-                                            <Paragraph big>
-                                                Taxes are a fact of life. If you’re in business, there are various ways
-                                                you
-                                                will need to file and pay them.
-                                            </Paragraph>
+            <VisibilitySensor partialVisibility minTopValue={0}>
+              {({ isVisible }) => {
+                if (isVisible) {
+                  handleClick(6);
+                }
+                return (
+                  <div id={ButtonList[6].tabId}>
+                    <TextBlockWithImage
+                      SvgImage={MaintainingIcon}
+                      textBackgroundColor="transparent"
+                      imageBackgroundColor={color.orange2}
+                      imageShadowColor={shadow.orange2}
+                      imageShadowOpacity={0.5}
+                      boxShadow={false}
+                      paddingLeft={0}
+                      style={{ marginTop: "140px" }}
+                      circleShadowY={40}
+                      circleShadowBlure={80}
+                      width={100}
+                      widthUnit="%"
+                    >
+                      <Paragraph big flex flexAlign={true} style={{ color: color.black, fontWeight: "bold" }} mixed={true}>
+                        Maintaining Your Business
+                      </Paragraph>
 
-                                            <Accordion tab content={TaxesAccordionContent}/>
+                      <Paragraph big>There are certain forms and legalities you need to follow to keep your cleaning business in good standing.</Paragraph>
 
-                                            <Paragraph big mixed={true} style={{marginTop: "48px"}}>
-                                                As a rule of thumb, we recommend keeping back around a third of your
-                                                earnings to pay your taxes. We can even prepare and file your tax
-                                                returns
-                                                for you.
-                                            </Paragraph>
-                                        </TextBlockWithImage>
-                                    </div>
-                                )
-                            }}
-                        </VisibilitySensor>
+                      <Accordion tab content={MaintainingAccordionContent} />
 
-                        <VisibilitySensor partialVisibility minTopValue={0}>
-                            {({isVisible}) => {
-                                if (isVisible) {
-                                    handleClick(6);
-                                }
-                                return (
-                                    <div id={ButtonList[6].tabId}>
-                                        <TextBlockWithImage
-                                            SvgImage={MaintainingIcon}
-                                            textBackgroundColor="transparent"
-                                            imageBackgroundColor={color.orange2}
-                                            imageShadowColor={shadow.orange2}
-                                            imageShadowOpacity={0.5}
-                                            boxShadow={false}
-                                            paddingLeft={0}
-                                            style={{marginTop: "140px"}}
-                                            circleShadowY={40}
-                                            circleShadowBlure={80}
-                                            width={100}
-                                            widthUnit="%"
-                                        >
-                                            <Paragraph big flex flexAlign={true}
-                                                       style={{color: color.black, fontWeight: "bold"}} mixed={true}>
-                                                Maintaining Your Business
-                                            </Paragraph>
-
-                                            <Paragraph big>
-                                                There are certain forms and legalities you need to follow to keep your
-                                                cleaning business in good standing.
-                                            </Paragraph>
-
-                                            <Accordion tab content={MaintainingAccordionContent}/>
-
-                                            <Paragraph big mixed={true} style={{marginTop: "48px"}}>
-                                                As a rule of thumb, we recommend keeping back around a third of your
-                                                earnings to pay your taxes. We can even <Link to="https://www.incfile.com/business-accounting/">prepare and file
-                                                your tax returns
-                                                for you</Link>.
-                                            </Paragraph>
-                                        </TextBlockWithImage>
-                                    </div>
-                                )
-                            }}
-                        </VisibilitySensor>
-
-                    </PanelWrapper>
-
-                </Wrapper>
-            </Container>
+                      <Paragraph big mixed={true} style={{ marginTop: "48px" }}>
+                        As a rule of thumb, we recommend keeping back around a third of your earnings to pay your taxes. We can even <Link to="/business-accounting/">prepare and file your tax returns for you</Link>.
+                      </Paragraph>
+                    </TextBlockWithImage>
+                  </div>
+                );
+              }}
+            </VisibilitySensor>
+          </PanelWrapper>
         </Wrapper>
-    );
+      </Container>
+    </Wrapper>
+  );
 };
 
 const Wrapper = styled.div`
@@ -446,7 +379,7 @@ const Wrapper = styled.div`
   position: relative;
 
   @media (min-width: 992px) {
-    flex-direction: ${props => (props.layout !== "grid" ? "row" : "column")};
+    flex-direction: ${(props) => (props.layout !== "grid" ? "row" : "column")};
   }
 
   .accordion-panel {
@@ -459,14 +392,14 @@ const Wrapper = styled.div`
     margin-left: auto;
 
     @media (min-width: 992px) {
-      max-width: ${props => (props.layout !== "grid" ? "55%" : "")};
+      max-width: ${(props) => (props.layout !== "grid" ? "55%" : "")};
     }
 
     @media (min-width: 1200px) {
-      max-width: ${props => (props.layout !== "grid" ? "670px" : "")};
+      max-width: ${(props) => (props.layout !== "grid" ? "670px" : "")};
     }
   }
-`
+`;
 
 const TabsWrapper = styled.div`
   display: flex;
@@ -475,39 +408,39 @@ const TabsWrapper = styled.div`
   position: relative;
 
   @media (min-width: 992px) {
-    max-width: ${props => (props.layout !== "grid" ? "40%" : "")};
+    max-width: ${(props) => (props.layout !== "grid" ? "40%" : "")};
   }
 
   @media (min-width: 1200px) {
-    max-width: ${props => (props.layout !== "grid" ? "370px" : "")};
+    max-width: ${(props) => (props.layout !== "grid" ? "370px" : "")};
   }
-`
+`;
 
 const Sticky = styled.div`
-  display: ${props => (props.layout === "grid" ? "grid" : "flex")};
-  flex-direction: ${props => (props.layout !== "grid" ? "column" : "")};
-  grid-template-columns: ${props => (props.columns ? `repeat(${props.columns}, 1fr)` : "")};
-  grid-gap: ${props => (props.layout === "grid" ? "30px" : "")};
-  position: ${props => (props.layout !== "grid" ? "sticky" : "")};
-  top: 100px; 
-`
+  display: ${(props) => (props.layout === "grid" ? "grid" : "flex")};
+  flex-direction: ${(props) => (props.layout !== "grid" ? "column" : "")};
+  grid-template-columns: ${(props) => (props.columns ? `repeat(${props.columns}, 1fr)` : "")};
+  grid-gap: ${(props) => (props.layout === "grid" ? "30px" : "")};
+  position: ${(props) => (props.layout !== "grid" ? "sticky" : "")};
+  top: 100px;
+`;
 
 const PanelWrapper = styled.article`
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  max-width: ${props => (props.layout !== "grid" ? "670px" : "")};
+  max-width: ${(props) => (props.layout !== "grid" ? "670px" : "")};
   margin-left: auto;
   padding-top: 24px;
 
   h3 {
     margin-bottom: 48px;
   }
-  
-  @media (min-width: 768px){
+
+  @media (min-width: 768px) {
     padding-left: 30px;
   }
-`
+`;
 
 const ButtonBox = styled.button`
   height: 78px;
@@ -535,7 +468,7 @@ const ButtonBox = styled.button`
       transform: translateX(0);
     }
   }
-`
+`;
 
 const Icon = styled.div`
   display: flex;
@@ -548,7 +481,7 @@ const Icon = styled.div`
   @media (min-width: 992px) {
     width: 80px;
   }
-`
+`;
 
 const Content = styled.div`
   display: flex;
@@ -587,7 +520,7 @@ const Content = styled.div`
       transform: translateX(0);
     }
   }
-`
+`;
 
 const Arrow = styled.div`
   display: flex;
@@ -603,7 +536,7 @@ const Arrow = styled.div`
       fill: #5088fd;
     }
   }
-`
+`;
 
 const ListWrapper = styled.div`
   display: flex;
@@ -611,25 +544,18 @@ const ListWrapper = styled.div`
 `;
 
 const ListBox = styled.div`
-    width: 50%;
+  width: 50%;
 `;
 
 const StickyContainer = styled.div`
-    position: relative;
-    height: 100%;
+  position: relative;
+  height: 100%;
 `;
 
 const cn = (...args) => args.filter(Boolean).join(" ");
 
-const Tab = ({children, ...props}) => {
-
-    return (
-        <ButtonBox
-            {...props}
-        >
-            {children}
-        </ButtonBox>
-    )
+const Tab = ({ children, ...props }) => {
+  return <ButtonBox {...props}>{children}</ButtonBox>;
 };
 
 export default TabScrollable;
