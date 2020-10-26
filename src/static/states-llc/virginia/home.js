@@ -937,11 +937,7 @@ export const feesAndRequirments = [
     marginBottom: 16,
   },
   {
-    type: `table-simple`,
-    content: {
-      headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
-      rows: [[`$100`, `5 business days`, `1 business day`]],
-    },
+    type: `dynamic_ar_box`
   },
   {
     type: `arrow-link`,
@@ -973,7 +969,7 @@ export const feesAndRequirments = [
     type: `button`,
     content: {
       text: `Incorporate your Virginia LLC through IncFile today`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=VA`,
     },
     theme: `primary48`,
     marginBottom: 48,
@@ -1030,13 +1026,7 @@ export const feesAndRequirments = [
     marginBottom: 16,
   },
   {
-    type: `list-dot`,
-    content: {
-      header: `Annual Report`,
-      list: [`Frequency:  Annually`, `Due Date:  Last day of anniversary month of organization.`, `Filing Fee:  $50`],
-    },
-    marginBottom: 16,
-    color: color.blue2,
+    type: `dynamic_filing_requirement`
   },
   {
     type: `arrow-link`,

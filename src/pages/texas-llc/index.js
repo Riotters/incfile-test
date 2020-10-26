@@ -4,7 +4,6 @@ import SEO from "../../components/seo";
 import styled from "styled-components";
 
 // Components
-import { color } from "../../components/styles/colors";
 import LinearBgHeader from "../../atomic/states-llc/linear-bg-header";
 import HomeHeader from "../../atomic/states-llc/home-header";
 import WrapperContent from "../../atomic/states-llc/wrapper-content";

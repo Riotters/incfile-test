@@ -1,9 +1,4 @@
 import { color } from "../../../components/styles/colors";
-
-import MrsLeftThumUp from "../../../images/icons/states/mrs-bulb-thumb-up-left-color-01.png";
-import SCN from "../../../images/search-for-name-7560.png";
-import LightingOrange from "../../../images/lighting-orange-01.png";
-import BgBoxTrust from "../../../images/trust-01.png";
 import BgBoxChangeOfAgent from "../../../images/change-of-agent-01.png";
 
 export const faqContent = {

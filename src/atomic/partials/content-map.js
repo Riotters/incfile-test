@@ -17,7 +17,6 @@ import { TextSpacedBox } from "../molecules/text-blocks/text-spaced-box";
 import AccordionWithCheckmark from "../organisms/acccordion-with-checkboxes";
 import BusinessNameSearchForm from "../organisms/forms/business-name-search-form";
 import ToolsList from "../organisms/lists/tools-list";
-import Mobile from "../../images/icons/mobile-compatibility.inline.svg";
 import TextBlockWithImage from "../../atomic/molecules/mixed-blocks/text-block-with-absolute-image";
 import GenericTable from "../organisms/tables/generic-table";
 import LLCTable from "../organisms/tables/llc-table";
@@ -25,7 +24,7 @@ import Whitebox from "../atoms/boxes/white-box";
 import IconChildrenColorBox from "../molecules/text-blocks/icon-h4-children-color";
 import RoundedTopImageBox from "../molecules/mixed-blocks/top-image-box-rounded";
 import AnnualReportBoxOnly from "../states-llc/annual-report-box-only";
-import FilingRequirementBox from "../states-llc/filingRequirementBox";
+import FilingRequirementBox from "../states-llc/filing-requirement-box";
 
 const Wrapper = styled.div`
   display: flex;

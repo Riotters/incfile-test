@@ -71,7 +71,7 @@ const BusinessStructure = () => (
           widthUnit="%"
         >
           <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-            <FlexLink to="/">
+            <FlexLink to="">
               <IconCircle circleColor="transparent" iconColor={color.blue1}>
                 <ArrowSVG />
               </IconCircle>
@@ -97,7 +97,7 @@ const BusinessStructure = () => (
           widthUnit="%"
         >
           <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-            <FlexLink to="/">
+            <FlexLink to="https://www.incfile.com/form-order-now.php?entityType=LLC">
               <IconCircle circleColor="transparent" iconColor={color.blue1}>
                 <ArrowSVG />
               </IconCircle>
@@ -125,7 +125,7 @@ const BusinessStructure = () => (
           widthUnit="%"
         >
           <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-            <FlexLink to="/">
+            <FlexLink to="https://www.incfile.com/form-order-now.php?entityType=LLC">
               <IconCircle circleColor="transparent" iconColor={color.blue1}>
                 <ArrowSVG />
               </IconCircle>
@@ -151,7 +151,7 @@ const BusinessStructure = () => (
           widthUnit="%"
         >
           <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-            <FlexLink to="/">
+            <FlexLink to="https://www.incfile.com/form-order-now.php?entityType=S-Corporation">
               <IconCircle circleColor="transparent" iconColor={color.blue1}>
                 <ArrowSVG />
               </IconCircle>
@@ -177,7 +177,7 @@ const BusinessStructure = () => (
           widthUnit="%"
         >
           <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-            <FlexLink to="/">
+            <FlexLink to="https://www.incfile.com/form-order-now.php?entityType=C-Corporation">
               <IconCircle circleColor="transparent" iconColor={color.blue1}>
                 <ArrowSVG />
               </IconCircle>

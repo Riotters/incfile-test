@@ -21,7 +21,7 @@ const AirBnbOwners = () => (
             <LinksContainer>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://airhostsforum.com/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Airhosts forum
                     </PathLink>
                 </LinkItem>
@@ -30,13 +30,13 @@ const AirBnbOwners = () => (
                     <AbsoluteCurve>
                         <Curve color={color.blue1}/>
                     </AbsoluteCurve>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://community.withairbnb.com/t5/Community-Center/ct-p/community-center" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Airbnb official community discussions
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink to="https://www.reddit.com/r/AirBnB/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         Airbnb subreddit
                     </PathLink>
                 </LinkItem>

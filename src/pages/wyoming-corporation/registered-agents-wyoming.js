@@ -13,36 +13,47 @@ import Variants from "../../atomic/sections/learning-center-entity/state-informa
 import Subscription from "../../atomic/sections/learning-center-entity/state-information-california/subscription";
 import Articles from "../../atomic/sections/articles";
 //Texts
-import { top, tabPages, agents, launchBusiness, requirements, learnMore, quickLinks, variants, subscription } from "../../static/learning-center-entity/state-information-wyoming";
+import { top, tabPages, agents, launchBusiness, subscription } from "../../static/learning-center-entity/state-information-wyoming";
 import LeftTabPages from "../../atomic/sections/choose-your-business/left-tab-pages";
 import MainPageContent from "../../atomic/states-llc/page-content";
 import ContentMap from "../../atomic/partials/content-map";
 import CorporationLayout from "../../atomic/partials/corporation-layout";
 
-const StateInformation = () => (
-    <Layout>
-        <SEO title="California Corporations & Other Business Entities " description="Thinking of starting an S Corp, C Corp, or LLC in California? Learn about corporations in CA and decide which business type is right for you." />
-        <Top imageName="mr-bulb-corporation-california-8302" imageAlt="Mrs Bulb and with checklist" ovalColor="purple-2" textWidth="530">
-            <h1>{top.header}</h1>
-            <p>{top.text}</p>
-            <Buttonsbox>
-                <Button content={top.buttons[0]} theme="primary56" arrow />
-            </Buttonsbox>
-        </Top>
-        <CorporationLayout>
-            <LeftTabPages content={tabPages} nonDIY />
-            <MainPageContent>
-                <ContentMap content={agents} />
-            </MainPageContent>
-        </CorporationLayout>
-        <Rocket content={launchBusiness} />
-        <Requirements content={requirements} />
-        <LearnMore content={learnMore} />
-        <QuickLinks content={quickLinks} />
-        <Variants content={variants} />
-        <Subscription content={subscription} />
-        <Articles />
-    </Layout>
-);
+import { getFullPricesAndFilings } from '../../api/Api';
 
-export default StateInformation;
+const WyomingCorporation = () => {
+    const [dataApi, setDataApi] = React.useState({});
+    React.useEffect(() => {
+        getFullPricesAndFilings('Wyoming', 'Corporation').then(data => {
+            setDataApi(data);
+        });
+    }, []);
+
+    return (
+        <Layout>
+            <SEO title="California Corporations & Other Business Entities " description="Thinking of starting an S Corp, C Corp, or LLC in California? Learn about corporations in CA and decide which business type is right for you." />
+            <Top imageName="mr-bulb-corporation-california-8302" imageAlt="Mrs Bulb and with checklist" ovalColor="purple-2" textWidth="530">
+                <h1>{top.header}</h1>
+                <p>{top.text}</p>
+                <Buttonsbox>
+                    <Button content={top.buttons[0]} theme="primary56" arrow />
+                </Buttonsbox>
+            </Top>
+            <CorporationLayout>
+                <LeftTabPages content={tabPages} nonDIY />
+                <MainPageContent>
+                    <ContentMap content={agents} />
+                </MainPageContent>
+            </CorporationLayout>
+            <Rocket content={launchBusiness} />
+            <Requirements data={dataApi} />
+            <LearnMore data={dataApi} />
+            <QuickLinks />
+            <Variants data={dataApi} />
+            <Subscription content={subscription} />
+            <Articles />
+        </Layout>
+    );
+}
+
+export default WyomingCorporation;

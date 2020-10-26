@@ -17,7 +17,7 @@ const Regulations = () => (
             </Heading>
             <Paragraph big mixed={true}>
                 You will need to explore local, state and federal licenses and permits, and <Link
-                to="/">we can also help out with researching your business licensing needs.</Link>
+                to="https://www.incfile.com/business-license-research-package/">we can also help out with researching your business licensing needs.</Link>
             </Paragraph>
         </Container>
     </Wrapper>

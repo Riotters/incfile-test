@@ -5,7 +5,7 @@ import Top from "../atomic/partials/top";
 import Buttonsbox from "../atomic/atoms/boxes/top-buttons-box";
 import Button from "../atomic/molecules/buttons/button";
 import Layout from "../components/layout";
-import { fillingRequirements, info, packets, questions, service, top, articlesOfIncorporation, corporationName } from "../static/learning-center-entity/mississippi-corporation";
+import { info, questions, service, top, articlesOfIncorporation} from "../static/learning-center-entity/mississippi-corporation";
 import CartBlock from "../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../atomic/molecules/blocks/rating-block";
 import RatingRow from "../atomic/atoms/boxes/rating-row";
@@ -35,243 +35,246 @@ import ContentCenter from "../atomic/partials/content-center";
 import LightBoxVideo from "../components/LightBox";
 import Curve2SVG from "../images/curves/bottom-left-top-right-reverse-big.inline.svg";
 import Curve from "../atomic/atoms/icons/curve";
-import GenericTable from "../atomic/organisms/tables/generic-table";
-import TitleWithInfoBox from "../atomic/molecules/blocks/table-title";
 import PacketsSection from "../atomic/sections/learning-center-entity/alaska-corporation/packets";
 import Accordion from "../atomic/organisms/accordion/accordion";
 import Adventages from "../components/adventages";
 import Container from "../atomic/container";
 import Rocket from "../atomic/sections/learning-center-entity/alaska-corporation/rocket";
 import Colorbox from "../atomic/molecules/blocks/left-icon-block-colored";
-import CorporationNameIcon from "../images/icons/icon-learning-center-color-business-name-trademark.inline.svg";
+import FilingTimeAndPriceBox from '../atomic/state-corporation/filing-time-and-price-box';
+import ComplianceRequirementBox from "../atomic/state-corporation/compliance-requirement-box";
+import { getFullPricesAndFilings } from '../api/Api';
 
-const AlaskaCorporation = () => (
-  <Layout>
-    <SEO title="Form a Corporation in Alaska." description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
-    <Top imageName="mr-bulb-corporation-california-8302" imageAlt="Mrs Bulb and with checklist" ovalColor="purple-2" headlineWidth="560">
-      <h1>{top.header}</h1>
-      <p>{top.text}</p>
-      <Buttonsbox>
-        <Button content={top.buttons[0]} theme="primary56" arrow />
-      </Buttonsbox>
+const AlaskaCorporation = () => {
+    const [dataApi, setDataApi] = React.useState({});
+    const [filingTimeAndRequirementHeader, setFilingTimeAndRequirementHeader] = React.useState('');
 
-      <RatingRow>
-        <CartBlock />
-        <RatingBlock />
-      </RatingRow>
-    </Top>
+    React.useEffect(() => {
+        getFullPricesAndFilings('Mississippi', 'Corporation').then(data => {
+            setDataApi(data);
+            setFilingTimeAndRequirementHeader(`Annual ${data.prices.state} Filing Requirements`);
+        });
+    }, []);
 
-    <TabsWrapper>
-      <Oval className="oval" height={420} width={420} top="1" left="0">
-        <TabsOvalOneSvg />
-      </Oval>
+    return (
+        <Layout>
+            <SEO title="Form a Corporation in Alaska." description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
+            <Top imageName="mr-bulb-corporation-california-8302" imageAlt="Mrs Bulb and with checklist" ovalColor="purple-2" headlineWidth="560">
+                <h1>{top.header}</h1>
+                <p>{top.text}</p>
+                <Buttonsbox>
+                    <Button content={top.buttons[0]} theme="primary56" arrow />
+                </Buttonsbox>
 
-      <TabsSection>
-        <TabHeading>
-          <TabTitle title="Corporation Name" SvgIcon={OverviewSVG} />
-          <TabTitle title="Articles of Incorporation" SvgIcon={LightIcon} />
-          <TabTitle title="Registered Agent" SvgIcon={RegistratedAgentIcon} />
-          <TabTitle title="Bylaws" SvgIcon={BylawsIcon} />
-          <TabTitle title="Directors" SvgIcon={DirectorsIcon} />
-          <TabTitle title="Required Reports" SvgIcon={ReportsIcon} />
-          <TabTitle title="Taxes" SvgIcon={TaxesIcon} />
-        </TabHeading>
+                <RatingRow>
+                    <CartBlock />
+                    <RatingBlock />
+                </RatingRow>
+            </Top>
 
-        <CollapseWrapper>
-          <PanelWrapper>
-            <Heading size={3} style={{ marginBottom: "24px" }}>
-              Choosing a Corporation Name
+            <TabsWrapper>
+                <Oval className="oval" height={420} width={420} top="1" left="0">
+                    <TabsOvalOneSvg />
+                </Oval>
+
+                <TabsSection>
+                    <TabHeading>
+                        <TabTitle title="Corporation Name" SvgIcon={OverviewSVG} />
+                        <TabTitle title="Articles of Incorporation" SvgIcon={LightIcon} />
+                        <TabTitle title="Registered Agent" SvgIcon={RegistratedAgentIcon} />
+                        <TabTitle title="Bylaws" SvgIcon={BylawsIcon} />
+                        <TabTitle title="Directors" SvgIcon={DirectorsIcon} />
+                        <TabTitle title="Required Reports" SvgIcon={ReportsIcon} />
+                        <TabTitle title="Taxes" SvgIcon={TaxesIcon} />
+                    </TabHeading>
+
+                    <CollapseWrapper>
+                        <PanelWrapper>
+                            <Heading size={3} style={{ marginBottom: "24px" }}>
+                                Choosing a Corporation Name
             </Heading>
-            <Paragraph big>
-              Choosing a name for your new Mississippi corporation is one of the first official steps toward actually conducting business in the Magnolia State. The business name you choose must be able to be readily distinguished from all other registered Mississippi business entities, as well as
-              any business entity names already reserved on the state rolls.
+                            <Paragraph big>
+                                Choosing a name for your new Mississippi corporation is one of the first official steps toward actually conducting business in the Magnolia State. The business name you choose must be able to be readily distinguished from all other registered Mississippi business entities, as well as
+                                any business entity names already reserved on the state rolls.
             </Paragraph>
-            <Paragraph big>
-              Your new business’ name must be written in English letters or characters and include one of the following words or an abbreviation thereof: “Incorporated,” “Corporation,” “Company,” or “Limited.” If the word “Company” is used, it may not be preceded by the word “and” or a symbol that
-              means the same thing, such as “&.” The name also must not state or imply that the corporation is organized for some purpose other than the one specified in its articles of incorporation.
+                            <Paragraph big>
+                                Your new business’ name must be written in English letters or characters and include one of the following words or an abbreviation thereof: “Incorporated,” “Corporation,” “Company,” or “Limited.” If the word “Company” is used, it may not be preceded by the word “and” or a symbol that
+                                means the same thing, such as “&.” The name also must not state or imply that the corporation is organized for some purpose other than the one specified in its articles of incorporation.
             </Paragraph>
-            <Paragraph big style={{ marginBottom: "0" }}>
-              Available corporate names may be reserved for up to 180 days for a fee of $25.
+                            <Paragraph big style={{ marginBottom: "0" }}>
+                                Available corporate names may be reserved for up to 180 days for a fee of $25.
             </Paragraph>
-          </PanelWrapper>
-          <PanelWrapper>
-            <Heading size={3} style={{ marginBottom: "24px" }}>
-              Articles of Incorporation
+                        </PanelWrapper>
+                        <PanelWrapper>
+                            <Heading size={3} style={{ marginBottom: "24px" }}>
+                                Articles of Incorporation
             </Heading>
-            <Paragraph big>
-              New Mississippi corporations must file articles of incorporation with the Mississippi Secretary of State’s office before they can start conducting business as a corporation. The articles must be delivered by at least one of the incorporators (who must be a natural person at least 18
-              years old), accompanied by the $50 filing fee.
+                            <Paragraph big>
+                                New Mississippi corporations must file articles of incorporation with the Mississippi Secretary of State’s office before they can start conducting business as a corporation. The articles must be delivered by at least one of the incorporators (who must be a natural person at least 18
+                                years old), accompanied by the $50 filing fee.
             </Paragraph>
 
-            <Colorbox color={color.blue3} content={articlesOfIncorporation.box1} dotsColor={color.blue1} style={{ marginBottom: "65px" }} />
+                            <Colorbox color={color.blue3} content={articlesOfIncorporation.box1} dotsColor={color.blue1} style={{ marginBottom: "65px" }} />
 
-            <Paragraph big>Mississippi law allows a corporation to be formed for any lawful business activity. There is no requirement for a specific corporate purpose to be stated in the articles of incorporation.</Paragraph>
-            <Colorbox color={color.orange3} content={articlesOfIncorporation.box2} dotsColor={color.orange1} style={{ marginBottom: "48px" }} />
+                            <Paragraph big>Mississippi law allows a corporation to be formed for any lawful business activity. There is no requirement for a specific corporate purpose to be stated in the articles of incorporation.</Paragraph>
+                            <Colorbox color={color.orange3} content={articlesOfIncorporation.box2} dotsColor={color.orange1} style={{ marginBottom: "48px" }} />
 
-            <Paragraph big>
-              Since Mississippi law does not use the concept of par value for stocks, you do not need to state a par value for your shares. The filing fee is a flat fee, rather than being based on your authorized shares, so you can authorize as many as desired. Most incorporators authorize common
-              shares with equal voting, dividend, and liquidation rights and no special restrictions.
+                            <Paragraph big>
+                                Since Mississippi law does not use the concept of par value for stocks, you do not need to state a par value for your shares. The filing fee is a flat fee, rather than being based on your authorized shares, so you can authorize as many as desired. Most incorporators authorize common
+                                shares with equal voting, dividend, and liquidation rights and no special restrictions.
             </Paragraph>
-          </PanelWrapper>
-          <PanelWrapper>
-            <Heading size={3} style={{ marginBottom: "24px" }}>
-              Registered Agent and Office
+                        </PanelWrapper>
+                        <PanelWrapper>
+                            <Heading size={3} style={{ marginBottom: "24px" }}>
+                                Registered Agent and Office
             </Heading>
-            <Paragraph big>
-              Every Mississippi corporation must have a registered agent in the state-the person or office designated to receive official state correspondence, both administrative and legal. The registered agent must be either a Mississippi resident whose business office is the same as the
-              registered office, or a corporation with a business office identical to the registered office.
+                            <Paragraph big>
+                                Every Mississippi corporation must have a registered agent in the state-the person or office designated to receive official state correspondence, both administrative and legal. The registered agent must be either a Mississippi resident whose business office is the same as the
+                                registered office, or a corporation with a business office identical to the registered office.
             </Paragraph>
-            <Paragraph big>The registered office may be any of the corporation’s places of business in Mississippi.</Paragraph>
-          </PanelWrapper>
-          <PanelWrapper>
-            <Heading size={3} style={{ marginBottom: "24px" }}>
-              Bylaws
+                            <Paragraph big>The registered office may be any of the corporation’s places of business in Mississippi.</Paragraph>
+                        </PanelWrapper>
+                        <PanelWrapper>
+                            <Heading size={3} style={{ marginBottom: "24px" }}>
+                                Bylaws
             </Heading>
-            <Paragraph big>
-              Bylaws lay out the corporation’s basic managerial and legal operating principles. Mississippi corporations must keep a copy of their bylaws at their principal executive office, but are not required to file them with the state. At its initial meeting, the board of directors should adopt
-              corporate bylaws, and then keep them updated as time goes on.
+                            <Paragraph big>
+                                Bylaws lay out the corporation’s basic managerial and legal operating principles. Mississippi corporations must keep a copy of their bylaws at their principal executive office, but are not required to file them with the state. At its initial meeting, the board of directors should adopt
+                                corporate bylaws, and then keep them updated as time goes on.
             </Paragraph>
-            <Paragraph big>The board of directors of a corporation may adopt, amend, or repeal bylaws, unless the articles reserve this right to the shareholders.</Paragraph>
-            <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-              Bylaws normally address:
+                            <Paragraph big>The board of directors of a corporation may adopt, amend, or repeal bylaws, unless the articles reserve this right to the shareholders.</Paragraph>
+                            <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
+                                Bylaws normally address:
             </Paragraph>
 
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>Shareholders and directors meetings</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The authority, number, and tenure of directors</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>Voting procedures</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The duties, responsibilities, and tenure of officers</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>How stock is issued</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>How and when annual financial information is provided to shareholders</Paragraph>
-            </TextBoxed>
-          </PanelWrapper>
-          <PanelWrapper>
-            <Heading size={3} style={{ marginBottom: "24px" }}>
-              Directors
+                            <TextBoxed style={{ marginBottom: "8px" }}>
+                                <Paragraph bottomMargin={0}>Shareholders and directors meetings</Paragraph>
+                            </TextBoxed>
+                            <TextBoxed style={{ marginBottom: "8px" }}>
+                                <Paragraph bottomMargin={0}>The authority, number, and tenure of directors</Paragraph>
+                            </TextBoxed>
+                            <TextBoxed style={{ marginBottom: "8px" }}>
+                                <Paragraph bottomMargin={0}>Voting procedures</Paragraph>
+                            </TextBoxed>
+                            <TextBoxed style={{ marginBottom: "8px" }}>
+                                <Paragraph bottomMargin={0}>The duties, responsibilities, and tenure of officers</Paragraph>
+                            </TextBoxed>
+                            <TextBoxed style={{ marginBottom: "8px" }}>
+                                <Paragraph bottomMargin={0}>How stock is issued</Paragraph>
+                            </TextBoxed>
+                            <TextBoxed style={{ marginBottom: "8px" }}>
+                                <Paragraph bottomMargin={0}>How and when annual financial information is provided to shareholders</Paragraph>
+                            </TextBoxed>
+                        </PanelWrapper>
+                        <PanelWrapper>
+                            <Heading size={3} style={{ marginBottom: "24px" }}>
+                                Directors
             </Heading>
-            <Paragraph big>
-              Officers are appointed or elected by the board in compliance with the corporation’s bylaws, or elected by shareholders in compliance with the articles of incorporation. One officer has the responsibility of preparing minutes of director and shareholder meetings, and for maintaining and
-              authenticating corporate records.
+                            <Paragraph big>
+                                Officers are appointed or elected by the board in compliance with the corporation’s bylaws, or elected by shareholders in compliance with the articles of incorporation. One officer has the responsibility of preparing minutes of director and shareholder meetings, and for maintaining and
+                                authenticating corporate records.
             </Paragraph>
-            <Paragraph big>It is permissible for an officer to hold more than one office in the corporation unless otherwise prohibited by law or by the corporation’s bylaws. Any officer may hold more than one office in the Mississippi incorporation.</Paragraph>
-          </PanelWrapper>
-          <PanelWrapper>
-            <Heading size={3} style={{ marginBottom: "24px" }}>
-              Requirement Reports
+                            <Paragraph big>It is permissible for an officer to hold more than one office in the corporation unless otherwise prohibited by law or by the corporation’s bylaws. Any officer may hold more than one office in the Mississippi incorporation.</Paragraph>
+                        </PanelWrapper>
+                        <PanelWrapper>
+                            <Heading size={3} style={{ marginBottom: "24px" }}>
+                                Requirement Reports
             </Heading>
-            <Paragraph big style={{ marginBottom: "48px" }}>
-              The Mississippi Secretary of State requires that Mississippi corporations file a report each year within 60 days of the anniversary of its incorporation.
+                            <Paragraph big style={{ marginBottom: "48px" }}>
+                                The Mississippi Secretary of State requires that Mississippi corporations file a report each year within 60 days of the anniversary of its incorporation.
             </Paragraph>
 
-            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-              The report must include:
+                            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
+                                The report must include:
             </Paragraph>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The corporation’s name and the state or country of original incorporation</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The street address of the corporation’s registered office in the state</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The name of its registered agent there</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The address of the corporation’s principal office</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The names and addresses of the directors and principal officers</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>A brief description of the nature of its business</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The total number of issued and outstanding shares, itemized by class and series (if any) within each class</Paragraph>
-            </TextBoxed>
-          </PanelWrapper>
-          <PanelWrapper>
-            <Heading size={3} style={{ marginBottom: "24px" }}>
-              Taxes
+                            <TextBoxed style={{ marginBottom: "8px" }}>
+                                <Paragraph bottomMargin={0}>The corporation’s name and the state or country of original incorporation</Paragraph>
+                            </TextBoxed>
+                            <TextBoxed style={{ marginBottom: "8px" }}>
+                                <Paragraph bottomMargin={0}>The street address of the corporation’s registered office in the state</Paragraph>
+                            </TextBoxed>
+                            <TextBoxed style={{ marginBottom: "8px" }}>
+                                <Paragraph bottomMargin={0}>The name of its registered agent there</Paragraph>
+                            </TextBoxed>
+                            <TextBoxed style={{ marginBottom: "8px" }}>
+                                <Paragraph bottomMargin={0}>The address of the corporation’s principal office</Paragraph>
+                            </TextBoxed>
+                            <TextBoxed style={{ marginBottom: "8px" }}>
+                                <Paragraph bottomMargin={0}>The names and addresses of the directors and principal officers</Paragraph>
+                            </TextBoxed>
+                            <TextBoxed style={{ marginBottom: "8px" }}>
+                                <Paragraph bottomMargin={0}>A brief description of the nature of its business</Paragraph>
+                            </TextBoxed>
+                            <TextBoxed style={{ marginBottom: "8px" }}>
+                                <Paragraph bottomMargin={0}>The total number of issued and outstanding shares, itemized by class and series (if any) within each class</Paragraph>
+                            </TextBoxed>
+                        </PanelWrapper>
+                        <PanelWrapper>
+                            <Heading size={3} style={{ marginBottom: "24px" }}>
+                                Taxes
             </Heading>
-            <Paragraph big>
-              Mississippi imposes an annual corporate franchise tax of $2.50 per $1,000 of corporate capital, surplus, and profits, plus a corporate income tax. There is a minimum annual franchise payment of $25. You must file a combined corporate franchise and income tax return each year.
+                            <Paragraph big>
+                                Mississippi imposes an annual corporate franchise tax of $2.50 per $1,000 of corporate capital, surplus, and profits, plus a corporate income tax. There is a minimum annual franchise payment of $25. You must file a combined corporate franchise and income tax return each year.
             </Paragraph>
-          </PanelWrapper>
-        </CollapseWrapper>
-      </TabsSection>
-    </TabsWrapper>
+                        </PanelWrapper>
+                    </CollapseWrapper>
+                </TabsSection>
+            </TabsWrapper>
 
-    <ServiceSection>
-      <Oval className="oval" height={420} width={420} top="20" right="0">
-        <OvalSvg2 />
-      </Oval>
-      <Oval className="oval" height={720} width={720} top="60" left="0">
-        <OvalSvg3 />
-      </Oval>
-      <HeadingCenter headline={service.header} textWidth="590" text={service.text} bottomMargin="48" bottomMarginLG="80" />
-      <ContentCenter style={{ marginBottom: "149px" }}>
-        <Curve top="-115" left="80" rotate={180} color={color.blue2}>
-          <Curve2SVG />
-        </Curve>
-        <LightBoxVideo thumbnailVideo="comparison-chart-video-3611" videoID="oYZShvmf9eQ" />
-      </ContentCenter>
+            <ServiceSection>
+                <Oval className="oval" height={420} width={420} top="20" right="0">
+                    <OvalSvg2 />
+                </Oval>
+                <Oval className="oval" height={720} width={720} top="60" left="0">
+                    <OvalSvg3 />
+                </Oval>
+                <HeadingCenter headline={service.header} textWidth="590" text={service.text} bottomMargin="48" bottomMarginLG="80" />
+                <ContentCenter style={{ marginBottom: "149px" }}>
+                    <Curve top="-115" left="80" rotate={180} color={color.blue2}>
+                        <Curve2SVG />
+                    </Curve>
+                    <LightBoxVideo thumbnailVideo="comparison-chart-video-3611" videoID="oYZShvmf9eQ" />
+                </ContentCenter>
 
-      <ContentCenter contentWidth={970}>
-        <HeadingCenter headline={fillingRequirements.mainHeader} textWidth="770" bottomMargin="48" bottomMarginLG="80" />
+                {/* Filing Times & Requirement section */}
+                <ContentCenter contentWidth={970}>
+                    <HeadingCenter headline={filingTimeAndRequirementHeader} textWidth="770" bottomMargin="48" bottomMarginLG="80" />
+                    <FilingTimeAndPriceBox data={dataApi} />
+                    <ComplianceRequirementBox data={dataApi} style={{ margin: 0 }} />
+                </ContentCenter>
+            </ServiceSection>
 
-        <TitleWithInfoBox title={fillingRequirements.header1} style={{ marginBottom: "24px" }} hasInfoBox infoBoxText={fillingRequirements.header1infoBox} questionMarkColor={color.blue1} />
-        <GenericTable className="blue3 headers-start left" content={fillingRequirements.table} style={{ "margin-bottom": "56px", width: "100%" }} />
+            <PacketsSection data={dataApi} />
 
-        <TitleWithInfoBox title={fillingRequirements.header2} style={{ marginBottom: "24px" }} hasInfoBox infoBoxText={fillingRequirements.header2infoBox} questionMarkColor={color.blue1} />
-        <GenericTable className="blue3 headers-start left" content={fillingRequirements.table2} style={{ "margin-bottom": "56px", width: "100%" }} />
+            <QuestionSection>
+                <Oval className="oval" height={570} width={570} top="20" right="0">
+                    <OvalSvg4 />
+                </Oval>
+                <HeadingCenter headline={questions.header} textWidth="770" />
+                <ContentCenter style={{ marginBottom: "48px" }}>
+                    <Accordion content={questions} curve curveColor={color.blue1} curveLeft="-15px" />
+                </ContentCenter>
+                <ContentCenter style={{ marginBottom: "48px" }}>
+                    <Button content={{ text: `View all corporation FAQ's`, url: `/research-topics/c-corporation-info/` }} width={300} padding="12px 48px" />
+                </ContentCenter>
+            </QuestionSection>
 
-        <TitleWithInfoBox title={fillingRequirements.header3} style={{ marginBottom: "24px" }} />
-        <GenericTable className="blue3 headers-start left" content={fillingRequirements.table3} style={{ "margin-bottom": "56px", width: "100%" }} />
-      </ContentCenter>
-    </ServiceSection>
+            <InfoSection>
+                <HeadingCenter headline={info.header} textWidth="770" />
 
-    <PackageSection>
-      <HeadingCenter headline={packets.header} textWidth="770" />
-      <PacketsSection content={packets} />
-    </PackageSection>
+                <Container>
+                    <AdventagesBox>
+                        {info.items.map((item) => (
+                            <Adventages headline={item.headline} text={item.text} />
+                        ))}
+                    </AdventagesBox>
+                </Container>
+            </InfoSection>
 
-    <QuestionSection>
-      <Oval className="oval" height={570} width={570} top="20" right="0">
-        <OvalSvg4 />
-      </Oval>
-      <HeadingCenter headline={questions.header} textWidth="770" />
-      <ContentCenter style={{ marginBottom: "48px" }}>
-        <Accordion content={questions} curve curveColor={color.blue1} curveLeft="-15px" />
-      </ContentCenter>
-      <ContentCenter style={{ marginBottom: "48px" }}>
-        <Button content={{ text: `View all corporation FAQ's`, url: `/research-topics/c-corporation-info/` }} width={300} padding="12px 48px" />
-      </ContentCenter>
-    </QuestionSection>
-
-    <InfoSection>
-      <HeadingCenter headline={info.header} textWidth="770" />
-
-      <Container>
-        <AdventagesBox>
-          {info.items.map((item) => (
-            <Adventages headline={item.headline} text={item.text} />
-          ))}
-        </AdventagesBox>
-      </Container>
-    </InfoSection>
-
-    <Rocket />
-  </Layout>
-);
+            <Rocket />
+        </Layout>
+    );
+}
 
 const InfoSection = styled.section`
   margin-bottom: 148px;

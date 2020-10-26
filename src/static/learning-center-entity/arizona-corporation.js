@@ -1,5 +1,3 @@
-import React from "react";
-
 export const top = {
   header: `Form a Corporation in Arizona.`,
   text: `$0 + State Fee & 1st Year FREE Registered Agent`,
@@ -24,49 +22,6 @@ export const fillingRequirements = {
   header2: "Arizona Compliance Requirements",
   header2infoBox: `This report is mandatory and must be filed within the specified time frame in order for the entity to remain in good standing with the state. Failure to file this report can lead to the company being revoked or administratively dissolved.`,
   header3: "Annual Report",
-  table: {
-    headers: false,
-    rows: [
-      [
-        {
-          label: "Start Fee:",
-          type: "label",
-          style: { "font-weight": "bold" },
-        },
-        {
-          label: "$250",
-          type: "label",
-          textCenter: true,
-        },
-      ],
-      [
-        {
-          label: "State Filing Time:",
-          type: "label",
-          style: { "font-weight": "bold" },
-        },
-        {
-          label: "5 Business Days",
-          type: "label",
-          textCenter: true,
-        },
-      ],
-      [
-        {
-          label: "Expedited Filing Time:",
-          type: "label",
-          style: { "font-weight": "bold" },
-        },
-        {
-          label: "1 Business Day",
-          type: "label",
-          textCenter: true,
-        },
-      ],
-    ],
-    rowColumnsDef: "1fr 2fr",
-    headerColumnsDef: "1fr 2fr",
-  },
   table2: {
     headers: false,
     rows: [
@@ -172,87 +127,6 @@ export const fillingRequirements = {
     rowColumnsDef: "1fr 2fr",
     headerColumnsDef: "1fr 2fr",
   },
-};
-
-export const packets = {
-  header: `Select the package that works best for you`,
-  priceOptions: [
-    {
-      header: "Silver",
-      variant: "",
-      text: "Our core features for\n" + "the lowest price",
-      price: 100,
-      image: "",
-      button: {
-        text: "Get the Silver package",
-        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=AL`,
-      },
-      fees: [
-        {
-          text: "Package fee",
-          price: "0",
-        },
-        {
-          text: "State fee",
-          price: "100",
-        },
-      ],
-      include: "The Silver Services includes:",
-      list: ["Preparing & Filing the Articles \n" + "of Organization", "Unlimited Name Searches", "FREE Registered Agent Service for \n" + "a year!"],
-      fee: "",
-      savings: "",
-    },
-    {
-      header: "Gold",
-      variant: "most popular",
-      text: "Our core features for\n" + "the lowest price",
-      price: 100,
-      image: "",
-      button: {
-        text: "Get the Silver package",
-        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=AL`,
-      },
-      fees: [
-        {
-          text: "Package fee",
-          price: "0",
-        },
-        {
-          text: "State fee",
-          price: "100",
-        },
-      ],
-      include: "The Gold Services includes:",
-      list: ["Preparing & Filing the Articles \n" + "of Organization", "Unlimited Name Searches", "FREE Registered Agent Service for \n" + "a year!"],
-      fee: "",
-      savings: "SAVE $468",
-    },
-    {
-      header: "Platinum",
-      variant: "Best value",
-      text: "Our core features for\n" + "the lowest price",
-      price: 100,
-      image: "",
-      button: {
-        text: "Get the Silver package",
-        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=AL`,
-      },
-      fees: [
-        {
-          text: "Package fee",
-          price: "0",
-        },
-        {
-          text: "State fee",
-          price: "100",
-        },
-      ],
-      include: "The Platinum Services includes:",
-      list: ["Preparing & Filing the Articles \n" + "of Organization", "Unlimited Name Searches", "FREE Registered Agent Service for \n" + "a year!"],
-      fee: "",
-      savings: "SAVE $908",
-    },
-  ],
 };
 
 export const questions = {

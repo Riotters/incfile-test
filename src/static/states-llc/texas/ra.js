@@ -1,7 +1,5 @@
 import { color } from "../../../components/styles/colors";
 
-import BgBoxDBAName from "../../../images/icons/states/dba-name-01.png";
-
 export const agentPageContent = {
   header: {
     title: `Texas Registered Agents for LLCs`,
@@ -12,7 +10,7 @@ export const agentPageContent = {
         desc: `Get your first year of Registered Agent Service for free <br>when you incorporate with Incfile.`,
         button: {
           text: `Form Your LLC Now`,
-          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=TX/`,
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=TX`,
         },
       },
     ],

@@ -5,7 +5,7 @@ import Top from "../atomic/partials/top";
 import Buttonsbox from "../atomic/atoms/boxes/top-buttons-box";
 import Button from "../atomic/molecules/buttons/button";
 import Layout from "../components/layout";
-import { fillingRequirements, info, packets, questions, service, top, articlesOfIncorporation, corporationName } from "../static/learning-center-entity/ohio-corporation";
+import { info, questions, service, top, articlesOfIncorporation } from "../static/learning-center-entity/ohio-corporation";
 import CartBlock from "../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../atomic/molecules/blocks/rating-block";
 import RatingRow from "../atomic/atoms/boxes/rating-row";
@@ -35,239 +35,242 @@ import ContentCenter from "../atomic/partials/content-center";
 import LightBoxVideo from "../components/LightBox";
 import Curve2SVG from "../images/curves/bottom-left-top-right-reverse-big.inline.svg";
 import Curve from "../atomic/atoms/icons/curve";
-import GenericTable from "../atomic/organisms/tables/generic-table";
-import TitleWithInfoBox from "../atomic/molecules/blocks/table-title";
 import PacketsSection from "../atomic/sections/learning-center-entity/alaska-corporation/packets";
 import Accordion from "../atomic/organisms/accordion/accordion";
 import Adventages from "../components/adventages";
 import Container from "../atomic/container";
 import Rocket from "../atomic/sections/learning-center-entity/alaska-corporation/rocket";
 import Colorbox from "../atomic/molecules/blocks/left-icon-block-colored";
-import CorporationNameIcon from "../images/icons/icon-learning-center-color-business-name-trademark.inline.svg";
+import FilingTimeAndPriceBox from '../atomic/state-corporation/filing-time-and-price-box';
+import ComplianceRequirementBox from "../atomic/state-corporation/compliance-requirement-box";
+import { getFullPricesAndFilings } from '../api/Api';
 
-const AlaskaCorporation = () => (
-  <Layout>
-    <SEO title="Form a Corporation in Alaska." description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
-    <Top imageName="mr-bulb-corporation-california-8302" imageAlt="Mrs Bulb and with checklist" ovalColor="purple-2" headlineWidth="560">
-      <h1>{top.header}</h1>
-      <p>{top.text}</p>
-      <Buttonsbox>
-        <Button content={top.buttons[0]} theme="primary56" arrow />
-      </Buttonsbox>
+const AlaskaCorporation = () => {
+    const [dataApi, setDataApi] = React.useState({});
+    const [filingTimeAndRequirementHeader, setFilingTimeAndRequirementHeader] = React.useState('');
 
-      <RatingRow>
-        <CartBlock />
-        <RatingBlock />
-      </RatingRow>
-    </Top>
+    React.useEffect(() => {
+        getFullPricesAndFilings('Ohio', 'Corporation').then(data => {
+            setDataApi(data);
+            setFilingTimeAndRequirementHeader(`Annual ${data.prices.state} Filing Requirements`);
+        });
+    }, []);
 
-    <TabsWrapper>
-      <Oval className="oval" height={420} width={420} top="1" left="0">
-        <TabsOvalOneSvg />
-      </Oval>
+    return (
+        <Layout>
+            <SEO title="Form a Corporation in Alaska." description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
+            <Top imageName="mr-bulb-corporation-california-8302" imageAlt="Mrs Bulb and with checklist" ovalColor="purple-2" headlineWidth="560">
+                <h1>{top.header}</h1>
+                <p>{top.text}</p>
+                <Buttonsbox>
+                    <Button content={top.buttons[0]} theme="primary56" arrow />
+                </Buttonsbox>
 
-      <TabsSection>
-        <TabHeading>
-          <TabTitle title="Corporation Name" SvgIcon={OverviewSVG} />
-          <TabTitle title="Articles of Incorporation" SvgIcon={LightIcon} />
-          <TabTitle title="Registered Agent" SvgIcon={RegistratedAgentIcon} />
-          <TabTitle title="Bylaws" SvgIcon={BylawsIcon} />
-          <TabTitle title="Directors" SvgIcon={DirectorsIcon} />
-          <TabTitle title="Required Reports" SvgIcon={ReportsIcon} />
-          <TabTitle title="Taxes" SvgIcon={TaxesIcon} />
-        </TabHeading>
+                <RatingRow>
+                    <CartBlock />
+                    <RatingBlock />
+                </RatingRow>
+            </Top>
 
-        <CollapseWrapper>
-          <PanelWrapper>
-            <Heading size={3} style={{ marginBottom: "24px" }}>
-              Choosing a Corporation Name
+            <TabsWrapper>
+                <Oval className="oval" height={420} width={420} top="1" left="0">
+                    <TabsOvalOneSvg />
+                </Oval>
+
+                <TabsSection>
+                    <TabHeading>
+                        <TabTitle title="Corporation Name" SvgIcon={OverviewSVG} />
+                        <TabTitle title="Articles of Incorporation" SvgIcon={LightIcon} />
+                        <TabTitle title="Registered Agent" SvgIcon={RegistratedAgentIcon} />
+                        <TabTitle title="Bylaws" SvgIcon={BylawsIcon} />
+                        <TabTitle title="Directors" SvgIcon={DirectorsIcon} />
+                        <TabTitle title="Required Reports" SvgIcon={ReportsIcon} />
+                        <TabTitle title="Taxes" SvgIcon={TaxesIcon} />
+                    </TabHeading>
+
+                    <CollapseWrapper>
+                        <PanelWrapper>
+                            <Heading size={3} style={{ marginBottom: "24px" }}>
+                                Choosing a Corporation Name
             </Heading>
-            <Paragraph big>
-              Deciding on a name for your new business is one of the first steps in the process of forming your Ohio corporation. The corporate name you choose must be distinguishable from any other registered Ohio business entity, as well as different from any reserved names on record.
+                            <Paragraph big>
+                                Deciding on a name for your new business is one of the first steps in the process of forming your Ohio corporation. The corporate name you choose must be distinguishable from any other registered Ohio business entity, as well as different from any reserved names on record.
             </Paragraph>
-            <Paragraph big>The name cannot include language that says or implies that the corporation is connected with any government entity, or that it is organized for a purpose besides what is permitted by state law and its own articles of incorporation.</Paragraph>
-            <Paragraph big>Additionally, the name must contain the words “Corporation,” “Company,” or “Incorporated,” their abbreviations, or words or abbreviations of words meaning the same in another language.</Paragraph>
-            <Paragraph big style={{ marginBottom: "0" }}>
-              You can reserve an available corporate name for up to 180 days for a $50 fee.
+                            <Paragraph big>The name cannot include language that says or implies that the corporation is connected with any government entity, or that it is organized for a purpose besides what is permitted by state law and its own articles of incorporation.</Paragraph>
+                            <Paragraph big>Additionally, the name must contain the words “Corporation,” “Company,” or “Incorporated,” their abbreviations, or words or abbreviations of words meaning the same in another language.</Paragraph>
+                            <Paragraph big style={{ marginBottom: "0" }}>
+                                You can reserve an available corporate name for up to 180 days for a $50 fee.
             </Paragraph>
-          </PanelWrapper>
-          <PanelWrapper>
-            <Heading size={3} style={{ marginBottom: "24px" }}>
-              Articles of Incorporation
+                        </PanelWrapper>
+                        <PanelWrapper>
+                            <Heading size={3} style={{ marginBottom: "24px" }}>
+                                Articles of Incorporation
             </Heading>
-            <Paragraph big>
-              New Ohio businesses must file articles of incorporation with the Ohio Secretary of State. The Ohio General Corporation Law (Title 17 of the Ohio Revised Code) requires that certain items are included in your company’s articles of incorporation. The minimum filing fee is $125, for which
-              you can authorize up to 1,500 shares.
+                            <Paragraph big>
+                                New Ohio businesses must file articles of incorporation with the Ohio Secretary of State. The Ohio General Corporation Law (Title 17 of the Ohio Revised Code) requires that certain items are included in your company’s articles of incorporation. The minimum filing fee is $125, for which
+                                you can authorize up to 1,500 shares.
             </Paragraph>
-            <Paragraph big>There must be at least one incorporator, who can be either a natural person or a business entity. The articles must list the name and address of each incorporator, as well as the address of the corporation’s principal office.</Paragraph>
-            <Paragraph big>The articles must also state the initial capital of the corporation, if any, as well as the number of shares that the corporation is authorized to issue and the par value of those shares.</Paragraph>
-            <Paragraph big>
-              Ohio also allows for the inclusion of optional provisions in the articles of incorporation, such as the names and addresses of the initial directors, the corporate purpose or purposes, the corporation’s duration (if it will not be perpetual), and other provisions for managing the
-              corporation’s business.
+                            <Paragraph big>There must be at least one incorporator, who can be either a natural person or a business entity. The articles must list the name and address of each incorporator, as well as the address of the corporation’s principal office.</Paragraph>
+                            <Paragraph big>The articles must also state the initial capital of the corporation, if any, as well as the number of shares that the corporation is authorized to issue and the par value of those shares.</Paragraph>
+                            <Paragraph big>
+                                Ohio also allows for the inclusion of optional provisions in the articles of incorporation, such as the names and addresses of the initial directors, the corporate purpose or purposes, the corporation’s duration (if it will not be perpetual), and other provisions for managing the
+                                corporation’s business.
             </Paragraph>
-          </PanelWrapper>
-          <PanelWrapper>
-            <Heading size={3} style={{ marginBottom: "24px" }}>
-              Registered Agent and Office
+                        </PanelWrapper>
+                        <PanelWrapper>
+                            <Heading size={3} style={{ marginBottom: "24px" }}>
+                                Registered Agent and Office
             </Heading>
-            <Paragraph big>The new corporation’s authorized representative will be the new corporation’s incorporator. Typically, an initial director is named as the incorporator, but anyone can fill this role.</Paragraph>
-            <Paragraph big>The incorporator must prepare and sign an Original Appointment of Statutory Agent form, which must be included with your articles when you file.</Paragraph>
-            <Paragraph big>
-              Usually, an initial director or shareholder is designated as the initial registered agent, who is the person authorized to receive legal documents on behalf of the corporation. The street address of the corporation can be given as the registered agent’s business address, which also
-              constitutes the registered office of the corporation.
+                            <Paragraph big>The new corporation’s authorized representative will be the new corporation’s incorporator. Typically, an initial director is named as the incorporator, but anyone can fill this role.</Paragraph>
+                            <Paragraph big>The incorporator must prepare and sign an Original Appointment of Statutory Agent form, which must be included with your articles when you file.</Paragraph>
+                            <Paragraph big>
+                                Usually, an initial director or shareholder is designated as the initial registered agent, who is the person authorized to receive legal documents on behalf of the corporation. The street address of the corporation can be given as the registered agent’s business address, which also
+                                constitutes the registered office of the corporation.
             </Paragraph>
-            <Paragraph big>
-              The registered agent must be an Ohio resident, and his or her business address must be in-state, also. The incorporator who signed the articles as the authorized representative must also sign the appointment form as the authorized representative, and the agent must sign the form as
-              well.
+                            <Paragraph big>
+                                The registered agent must be an Ohio resident, and his or her business address must be in-state, also. The incorporator who signed the articles as the authorized representative must also sign the appointment form as the authorized representative, and the agent must sign the form as
+                                well.
             </Paragraph>
-          </PanelWrapper>
-          <PanelWrapper>
-            <Heading size={3} style={{ marginBottom: "24px" }}>
-              Bylaws
+                        </PanelWrapper>
+                        <PanelWrapper>
+                            <Heading size={3} style={{ marginBottom: "24px" }}>
+                                Bylaws
             </Heading>
-            <Paragraph big>
-              All corporations are required to keep a copy of their bylaws at their main executive office, but they are not required to file those bylaws with the state. At the new corporation’s initial meeting, the board of directors should adopt corporate bylaws, and then keep them updated as time
-              goes on.
+                            <Paragraph big>
+                                All corporations are required to keep a copy of their bylaws at their main executive office, but they are not required to file those bylaws with the state. At the new corporation’s initial meeting, the board of directors should adopt corporate bylaws, and then keep them updated as time
+                                goes on.
             </Paragraph>
-            <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-              Bylaws are a critically important document describing the corporation’s basic managerial and legal operating principles regarding such issues as:
+                            <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
+                                Bylaws are a critically important document describing the corporation’s basic managerial and legal operating principles regarding such issues as:
             </Paragraph>
 
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>Shareholders’ and directors’ meetings</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The authority, number, and tenure of directors in the board of directors</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>Voting procedures</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The duties, responsibilities, and tenure of officers</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>How stock is issued</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>How and when annual financial information is provided to shareholders</Paragraph>
-            </TextBoxed>
+                            <TextBoxed style={{ marginBottom: "8px" }}>
+                                <Paragraph bottomMargin={0}>Shareholders’ and directors’ meetings</Paragraph>
+                            </TextBoxed>
+                            <TextBoxed style={{ marginBottom: "8px" }}>
+                                <Paragraph bottomMargin={0}>The authority, number, and tenure of directors in the board of directors</Paragraph>
+                            </TextBoxed>
+                            <TextBoxed style={{ marginBottom: "8px" }}>
+                                <Paragraph bottomMargin={0}>Voting procedures</Paragraph>
+                            </TextBoxed>
+                            <TextBoxed style={{ marginBottom: "8px" }}>
+                                <Paragraph bottomMargin={0}>The duties, responsibilities, and tenure of officers</Paragraph>
+                            </TextBoxed>
+                            <TextBoxed style={{ marginBottom: "8px" }}>
+                                <Paragraph bottomMargin={0}>How stock is issued</Paragraph>
+                            </TextBoxed>
+                            <TextBoxed style={{ marginBottom: "8px" }}>
+                                <Paragraph bottomMargin={0}>How and when annual financial information is provided to shareholders</Paragraph>
+                            </TextBoxed>
 
-            <Paragraph big>Officers of the new corporation can either be listed in the bylaws or elected by the board in compliance with those bylaws.</Paragraph>
-          </PanelWrapper>
-          <PanelWrapper>
-            <Heading size={3} style={{ marginBottom: "24px" }}>
-              Directors
+                            <Paragraph big>Officers of the new corporation can either be listed in the bylaws or elected by the board in compliance with those bylaws.</Paragraph>
+                        </PanelWrapper>
+                        <PanelWrapper>
+                            <Heading size={3} style={{ marginBottom: "24px" }}>
+                                Directors
             </Heading>
-            <Paragraph big>
-              Unless the articles of incorporation specify otherwise, each director will hold office for no more than three years or until the next annual meeting of the shareholders and until his successor is elected, or until his earlier resignation, removal from office, or death.
+                            <Paragraph big>
+                                Unless the articles of incorporation specify otherwise, each director will hold office for no more than three years or until the next annual meeting of the shareholders and until his successor is elected, or until his earlier resignation, removal from office, or death.
             </Paragraph>
-            <Paragraph big>
-              The corporation’s officers (who are elected annually by the directors) should consist of a president, a secretary, a treasurer, and, if desired, a chairman of the board, one or more vice presidents, and such other officers and assistant officers as may be thought necessary.
+                            <Paragraph big>
+                                The corporation’s officers (who are elected annually by the directors) should consist of a president, a secretary, a treasurer, and, if desired, a chairman of the board, one or more vice presidents, and such other officers and assistant officers as may be thought necessary.
             </Paragraph>
-            <Paragraph big>
-              The chairman of the board is required to be a director, but unless the articles of incorporation say otherwise, none of the other officers need to be a director. Any two or more offices may be held by the same person, but an officer is not allowed to execute, acknowledge, or verify any
-              official document in more than one capacity if that instrument is required to be executed, acknowledged, or verified by two or more officers.
+                            <Paragraph big>
+                                The chairman of the board is required to be a director, but unless the articles of incorporation say otherwise, none of the other officers need to be a director. Any two or more offices may be held by the same person, but an officer is not allowed to execute, acknowledge, or verify any
+                                official document in more than one capacity if that instrument is required to be executed, acknowledged, or verified by two or more officers.
             </Paragraph>
-          </PanelWrapper>
-          <PanelWrapper>
-            <Heading size={3} style={{ marginBottom: "24px" }}>
-              Requirement Reports
+                        </PanelWrapper>
+                        <PanelWrapper>
+                            <Heading size={3} style={{ marginBottom: "24px" }}>
+                                Requirement Reports
             </Heading>
-            <Paragraph big style={{ marginBottom: "48px" }}>
-              Ohio corporations must file an annual report with the Ohio Tax Commissioner each year between January 1 and March 31.
+                            <Paragraph big style={{ marginBottom: "48px" }}>
+                                Ohio corporations must file an annual report with the Ohio Tax Commissioner each year between January 1 and March 31.
             </Paragraph>
 
-            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
-              The report must include:
+                            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
+                                The report must include:
             </Paragraph>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The corporation’s name and its state or country of incorporation.</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The location of the corporation’s principal office.</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The names of the corporation’s president, secretary, treasurer, and statutory agent in the state, with the post office address of each.</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The kind of business in which the corporation is engaged.</Paragraph>
-            </TextBoxed>
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>The date of the beginning of the corporation’s annual accounting period that includes the first day of January of the tax year.</Paragraph>
-            </TextBoxed>
-          </PanelWrapper>
-          <PanelWrapper>
-            <Heading size={3} style={{ marginBottom: "24px" }}>
-              Taxes
+                            <TextBoxed style={{ marginBottom: "8px" }}>
+                                <Paragraph bottomMargin={0}>The corporation’s name and its state or country of incorporation.</Paragraph>
+                            </TextBoxed>
+                            <TextBoxed style={{ marginBottom: "8px" }}>
+                                <Paragraph bottomMargin={0}>The location of the corporation’s principal office.</Paragraph>
+                            </TextBoxed>
+                            <TextBoxed style={{ marginBottom: "8px" }}>
+                                <Paragraph bottomMargin={0}>The names of the corporation’s president, secretary, treasurer, and statutory agent in the state, with the post office address of each.</Paragraph>
+                            </TextBoxed>
+                            <TextBoxed style={{ marginBottom: "8px" }}>
+                                <Paragraph bottomMargin={0}>The kind of business in which the corporation is engaged.</Paragraph>
+                            </TextBoxed>
+                            <TextBoxed style={{ marginBottom: "8px" }}>
+                                <Paragraph bottomMargin={0}>The date of the beginning of the corporation’s annual accounting period that includes the first day of January of the tax year.</Paragraph>
+                            </TextBoxed>
+                        </PanelWrapper>
+                        <PanelWrapper>
+                            <Heading size={3} style={{ marginBottom: "24px" }}>
+                                Taxes
             </Heading>
-            <Paragraph big>Ohio corporations must pay a franchise tax based on the value of their outstanding shares of stock. This value is determined by corporate net income or corporate net worth.</Paragraph>
-          </PanelWrapper>
-        </CollapseWrapper>
-      </TabsSection>
-    </TabsWrapper>
+                            <Paragraph big>Ohio corporations must pay a franchise tax based on the value of their outstanding shares of stock. This value is determined by corporate net income or corporate net worth.</Paragraph>
+                        </PanelWrapper>
+                    </CollapseWrapper>
+                </TabsSection>
+            </TabsWrapper>
 
-    <ServiceSection>
-      <Oval className="oval" height={420} width={420} top="20" right="0">
-        <OvalSvg2 />
-      </Oval>
-      <Oval className="oval" height={720} width={720} top="60" left="0">
-        <OvalSvg3 />
-      </Oval>
-      <HeadingCenter headline={service.header} textWidth="590" text={service.text} bottomMargin="48" bottomMarginLG="80" />
-      <ContentCenter style={{ marginBottom: "149px" }}>
-        <Curve top="-115" left="80" rotate={180} color={color.blue2}>
-          <Curve2SVG />
-        </Curve>
-        <LightBoxVideo thumbnailVideo="comparison-chart-video-3611" videoID="oYZShvmf9eQ" />
-      </ContentCenter>
+            <ServiceSection>
+                <Oval className="oval" height={420} width={420} top="20" right="0">
+                    <OvalSvg2 />
+                </Oval>
+                <Oval className="oval" height={720} width={720} top="60" left="0">
+                    <OvalSvg3 />
+                </Oval>
+                <HeadingCenter headline={service.header} textWidth="590" text={service.text} bottomMargin="48" bottomMarginLG="80" />
+                <ContentCenter style={{ marginBottom: "149px" }}>
+                    <Curve top="-115" left="80" rotate={180} color={color.blue2}>
+                        <Curve2SVG />
+                    </Curve>
+                    <LightBoxVideo thumbnailVideo="comparison-chart-video-3611" videoID="oYZShvmf9eQ" />
+                </ContentCenter>
 
-      <ContentCenter contentWidth={970}>
-        <HeadingCenter headline={fillingRequirements.mainHeader} textWidth="770" bottomMargin="48" bottomMarginLG="80" />
+                {/* Filing Times & Requirement section */}
+                <ContentCenter contentWidth={970}>
+                    <HeadingCenter headline={filingTimeAndRequirementHeader} textWidth="770" bottomMargin="48" bottomMarginLG="80" />
+                    <FilingTimeAndPriceBox data={dataApi} />
+                    <ComplianceRequirementBox data={dataApi} style={{ margin: 0 }} />
+                </ContentCenter>
+            </ServiceSection>
 
-        <TitleWithInfoBox title={fillingRequirements.header1} style={{ marginBottom: "24px" }} hasInfoBox infoBoxText={fillingRequirements.header1infoBox} questionMarkColor={color.blue1} />
-        <GenericTable className="blue3 headers-start left" content={fillingRequirements.table} style={{ "margin-bottom": "56px", width: "100%" }} />
+            <PacketsSection data={dataApi} />
 
-        <TitleWithInfoBox title={fillingRequirements.header2} style={{ marginBottom: "24px" }} hasInfoBox infoBoxText={fillingRequirements.header2infoBox} questionMarkColor={color.blue1} />
-        <GenericTable className="blue3 headers-start left" content={fillingRequirements.table2} style={{ "margin-bottom": "56px", width: "100%" }} />
+            <QuestionSection>
+                <Oval className="oval" height={570} width={570} top="20" right="0">
+                    <OvalSvg4 />
+                </Oval>
+                <HeadingCenter headline={questions.header} textWidth="770" />
+                <ContentCenter style={{ marginBottom: "48px" }}>
+                    <Accordion content={questions} curve curveColor={color.blue1} curveLeft="-15px" />
+                </ContentCenter>
+                <ContentCenter style={{ marginBottom: "48px" }}>
+                    <Button content={{ text: `View all corporation FAQ's`, url: `/research-topics/c-corporation-info/` }} width={300} padding="12px 48px" />
+                </ContentCenter>
+            </QuestionSection>
 
-        <TitleWithInfoBox title={fillingRequirements.header3} style={{ marginBottom: "24px" }} />
-        <GenericTable className="blue3 headers-start left" content={fillingRequirements.table3} style={{ "margin-bottom": "56px", width: "100%" }} />
-      </ContentCenter>
-    </ServiceSection>
+            <InfoSection>
+                <HeadingCenter headline={info.header} textWidth="770" />
 
-    <PackageSection>
-      <HeadingCenter headline={packets.header} textWidth="770" />
-      <PacketsSection content={packets} />
-    </PackageSection>
+                <Container>
+                    <AdventagesBox>
+                        {info.items.map((item) => (
+                            <Adventages headline={item.headline} text={item.text} />
+                        ))}
+                    </AdventagesBox>
+                </Container>
+            </InfoSection>
 
-    <QuestionSection>
-      <Oval className="oval" height={570} width={570} top="20" right="0">
-        <OvalSvg4 />
-      </Oval>
-      <HeadingCenter headline={questions.header} textWidth="770" />
-      <ContentCenter style={{ marginBottom: "48px" }}>
-        <Accordion content={questions} curve curveColor={color.blue1} curveLeft="-15px" />
-      </ContentCenter>
-      <ContentCenter style={{ marginBottom: "48px" }}>
-        <Button content={{ text: `View all corporation FAQ's`, url: `/research-topics/c-corporation-info/` }} width={300} padding="12px 48px" />
-      </ContentCenter>
-    </QuestionSection>
-
-    <InfoSection>
-      <HeadingCenter headline={info.header} textWidth="770" />
-
-      <Container>
-        <AdventagesBox>
-          {info.items.map((item) => (
-            <Adventages headline={item.headline} text={item.text} />
-          ))}
-        </AdventagesBox>
-      </Container>
-    </InfoSection>
-
-    <Rocket />
-  </Layout>
-);
+            <Rocket />
+        </Layout>
+    );
+}
 
 const InfoSection = styled.section`
   margin-bottom: 148px;

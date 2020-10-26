@@ -1,7 +1,4 @@
-import React from "react";
 import { color } from "../../atomic/atoms/styles/colors";
-import { Paragraph } from "../../atomic/atoms/typography/paragraph";
-import { Heading } from "../../atomic/atoms/typography/heading";
 
 export const top = {
   header: "Start your business with confidence",

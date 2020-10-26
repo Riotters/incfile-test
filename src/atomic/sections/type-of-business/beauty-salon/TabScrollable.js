@@ -127,7 +127,7 @@ const TabScrollable = ({layout, columns}) => {
                         <Heading size={3}>Rules, Regulations and Laws for Your Beauty Salon Business</Heading>
                         <Paragraph big mixed={true}>
                             Of course, along with running a business there are certain rules, regulations and legalities
-                            you need to be aware of. <Link to="/">We can also help with researching your business
+                            you need to be aware of. <Link to="https://www.incfile.com/business-license-research-package/">We can also help with researching your business
                             licensing needs</Link>.
                         </Paragraph>
                         <Paragraph big mixed={true}>
@@ -205,7 +205,7 @@ const TabScrollable = ({layout, columns}) => {
                                                 You can find all the information you need about statewide licenses and
                                                 permits on your
                                                 state’s Secretary of State website. You can also find those details in
-                                                our <Link to="/">state-by-state
+                                                our <Link to="https://www.incfile.com/llc-state-information/">state-by-state
                                                 guides to company formation</Link>. Alternatively, the Small Business
                                                 Administration
                                                 website has a list of licenses and permits by state.
@@ -243,7 +243,7 @@ const TabScrollable = ({layout, columns}) => {
                                             </Paragraph>
 
                                             <Paragraph big mixed>
-                                                The Small Business Administration provides <Link to="/">details of any
+                                                The Small Business Administration provides <Link to="https://www.sba.gov/business-guide/launch-your-business/apply-licenses-permits">details of any
                                                 national or
                                                 federal licenses and permits</Link> you might need.
                                             </Paragraph>
@@ -319,7 +319,7 @@ const TabScrollable = ({layout, columns}) => {
                                             </Paragraph>
 
                                             <Paragraph big mixed={true}>
-                                                All businesses need to have a <Link to="/">Registered Agent</Link>.
+                                                All businesses need to have a <Link to="https://www.incfile.com/manage-your-company/registered-agent/">Registered Agent</Link>.
                                                 These are
                                                 individuals or other businesses that can accept legal documents on
                                                 behalf of your
@@ -335,7 +335,7 @@ const TabScrollable = ({layout, columns}) => {
                                                 record.
                                             </Paragraph>
                                             <Paragraph big mixed={true}>
-                                                When you <Link to="/">incorporate through us</Link>, we provide a
+                                                When you <Link to="https://www.incfile.com/form-order-now.php">incorporate through us</Link>, we provide a
                                                 complete Registered
                                                 Agent service free for the first year.
                                             </Paragraph>
@@ -382,7 +382,7 @@ const TabScrollable = ({layout, columns}) => {
                                             <Paragraph big mixed={true} style={{marginTop: "48px"}}>
                                                 As a rule of thumb, we recommend keeping back around a third of your
                                                 earnings to pay
-                                                your taxes. We can even <Link to="/">prepare and file your tax returns
+                                                your taxes. We can even <Link to="https://www.incfile.com/business-accounting/">prepare and file your tax returns
                                                 for you</Link>.
                                             </Paragraph>
                                         </TextBlockWithImage>

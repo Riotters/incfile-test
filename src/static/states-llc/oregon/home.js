@@ -872,11 +872,7 @@ export const feesAndRequirments = [
     marginBottom: 32,
   },
   {
-    type: `table-simple`,
-    content: {
-      headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
-      rows: [[`$100`, `7 Business Days`, `2 Business Day`]],
-    },
+    type: `dynamic_ar_box`
   },
   {
     type: `arrow-link`,
@@ -908,7 +904,7 @@ export const feesAndRequirments = [
     type: `button`,
     content: {
       text: `Incorporate your Oregon LLC through Incfile today`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=OR/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=OR`,
     },
     theme: `primary48`,
     marginBottom: 48,
@@ -965,30 +961,12 @@ export const feesAndRequirments = [
     marginBottom: 48,
   },
   {
-    type: `header`,
-    content: `Annual Report`,
-    size: 4,
-    marginBottom: 24,
-  },
-  {
-    type: `text`,
-    content: `<b>Frequency:</b> Annually`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `<b>Due Date:</b> On or before the anniversary of LLC's date of organization.`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `<b>Filling Fee:</b> $100`,
-    marginBottom: 16,
+    type: `dynamic_filing_requirement`
   },
 
   {
     type: `text`,
-    content: `<a href="/Oregon-llc/fees-filing-requirements/">Learn about your ongoing Oregon LLC filing requirements</a>
+    content: `<a href="/oregon-llc/fees-filing-requirements/">Learn about your ongoing Oregon LLC filing requirements</a>
     and business filing deadlines with our helpful Oregon ongoing filing lookup tool..`,
     marginBottom: 16,
   },

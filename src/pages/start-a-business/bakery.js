@@ -708,17 +708,6 @@ const TabsOval = styled.div`
   }
 `;
 
-const TabsOval2 = styled.div`
-  position: absolute;
-  width: 100%;
-  top: 436px;
-  right: 0;
-
-  @media (min-width: 420px) {
-    width: 420px;
-  }
-`;
-
 const Oval3 = styled.div`
   position: absolute;
   width: 100%;
@@ -728,17 +717,6 @@ const Oval3 = styled.div`
 
   @media (min-width: 420px) {
     width: 420px;
-  }
-`;
-
-const Oval4 = styled.div`
-  position: absolute;
-  width: 100%;
-  bottom: 100px;
-  right: 0;
-
-  @media (min-width: 720px) {
-    width: 720px;
   }
 `;
 

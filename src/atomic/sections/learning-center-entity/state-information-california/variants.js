@@ -12,15 +12,24 @@ const Variants = styled.section`
 `;
 
 const VariantsSection = ({ content, data }) => {
+    let stateFee = data?.prices ? data.prices.statefee : 0;
+    let entityState = data?.prices ? data.prices.state : '';
+    const headerSection = {
+        header: `See how easy it can be to get your business incorporated`,
+        link: {
+            text: `Learn more`,
+            url: `${process.env.ORDER_URL}/form-order-now.php`,
+        }
+    }
     const cards = [
         {
             variant: ``,
             header: `Silver`,
             text: `Our core features for the lowest price`,
-            price: `${packagePrice.silver + data.prices?.LLC}`,
+            price: `${packagePrice.silver + stateFee}`,
             button: {
                 text: `Get the Silver package`,
-                url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=${data.prices?.state}`,
+                url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=${entityState}`,
             },
             fees: [
                 {
@@ -31,7 +40,7 @@ const VariantsSection = ({ content, data }) => {
                 {
                     helpmark: `helpmark`,
                     text: `State fee`,
-                    price: `${data.prices?.LLC}`,
+                    price: `${stateFee}`,
                 },
             ],
             include: `The sliver services includes:`,
@@ -41,10 +50,10 @@ const VariantsSection = ({ content, data }) => {
             variant: `Most popular`,
             header: `Gold`,
             text: `Comprehensive features to get your business started`,
-            price: `${packagePrice.gold + data.prices?.LLC}`,
+            price: `${packagePrice.gold + stateFee}`,
             button: {
                 text: `Get the Gold package`,
-                url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=${data.prices?.state}`,
+                url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=${entityState}`,
             },
             fees: [
                 {
@@ -55,7 +64,7 @@ const VariantsSection = ({ content, data }) => {
                 {
                     helpmark: `helpmark`,
                     text: `State fee`,
-                    price: `${data.prices?.LLC}`,
+                    price: `${stateFee}`,
                 },
             ],
             include: `The sliver package, and:`,
@@ -65,10 +74,10 @@ const VariantsSection = ({ content, data }) => {
             variant: `Best value`,
             header: `Platinum`,
             text: `Full service features at the best value`,
-            price: `${packagePrice.platinum + data.prices?.LLC}`,
+            price: `${packagePrice.platinum + stateFee}`,
             button: {
                 text: `Get the Platinum package`,
-                url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=${data.prices?.state}`,
+                url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=${entityState}`,
             },
             fees: [
                 {
@@ -79,7 +88,7 @@ const VariantsSection = ({ content, data }) => {
                 {
                     helpmark: `helpmark`,
                     text: `State fee`,
-                    price: `${data.prices?.LLC}`,
+                    price: `${stateFee}`,
                 },
             ],
             include: `The gold package, and:`,
@@ -89,7 +98,7 @@ const VariantsSection = ({ content, data }) => {
     
     return (
         <Variants>
-            <HeadingCenter headline={content.header} headlineWidth="640" linkText={content.link.text} linkUrl={content.link.url} />
+            <HeadingCenter headline={headerSection.header} headlineWidth="640" linkText={headerSection.link.text} linkUrl={headerSection.link.url} />
             <ContentCenter>
                 <VariantsCards content={cards} />
             </ContentCenter>

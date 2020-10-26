@@ -5,7 +5,7 @@ import GridTableRow from "../molecules/blocks/grid-table-row";
 
 const AnnualReportBoxOnly = ({ data }) => {
     const headers = [`State Fee`, `State Filing Time`, `Expedited Filing Time`];
-    const rows = [[`$${data.prices?.LLC}`, `${data.prices?.slow}`, `${data.prices?.fast}`]];
+    const rows = [[`$${data.prices?.statefee}`, `${data.prices?.slow}`, `${data.prices?.fast}`]];
 
     return (
         <Wrapper className="grid-table" style={{ marginBottom: `32px` }}>

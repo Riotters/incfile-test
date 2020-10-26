@@ -72,7 +72,7 @@ const SettingBusiness = () => (
                         You will need a separate business bank account
                         for your gym or personal training business. You might also want to consider a business credit
                         card. Additionally, you will need to keep careful bookkeeping records and file business and
-                        personal taxes. Here at Incfile <Link to="/">we can even help you file your taxes</Link>.
+                        personal taxes. Here at Incfile <Link to="https://www.incfile.com/business-accounting/">we can even help you file your taxes</Link>.
                     </p>
                 </TopImageBox>
 

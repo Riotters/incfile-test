@@ -4,7 +4,6 @@ import BgBoxDBAName from "../../../images/icons/states/dba-name-01.png";
 import BgBoxTrademark from "../../../images/icons/states/trademark-01.png";
 import BgBoxBusinessNameIdea from "../../../images/icons/states/business-name-idea.inline.png";
 import BgBoxIncorporationPaperWork from "../../../images/icons/states/incorporation-paperwork-01.png";
-import BgBoxBusinessNameSearchTool from "../../../images/icons/states/business-name-search-tool.inline.png";
 
 export const businessNamesContent = {
   header: {
