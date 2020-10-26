@@ -6,7 +6,7 @@ import { color } from "../../../../components/styles/colors";
 import styled from "styled-components";
 import Curve from "../../../../images/green-curve.inline.svg";
 import GreenOval from "../../../../images/ovals/top-right-transparent-green2.inline.svg";
-
+import {Link} from "gatsby";
 const SettingBusiness = () => (
   <GreenContainer>
     <Oval>
