@@ -5,7 +5,7 @@ import TopImageBox from "../../../../components/top-image-box";
 import { color } from "../../../../components/styles/colors";
 import styled from "styled-components";
 import GreenOval from "../../../../images/ovals/bottom-left-transparent-green2.inline.svg";
-
+import {Link} from "gatsby";
 const SettingBusiness = () => (
   <GreenContainer>
     <Oval>

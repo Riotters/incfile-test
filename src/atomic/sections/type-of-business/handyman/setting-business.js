@@ -7,7 +7,7 @@ import styled from "styled-components";
 import OvalSvg from "../../../../images/ovals/bottom-right-transparent-blue2.inline.svg";
 import OvalSvg2 from "../../../../images/ovals/bottom-right-transparent-babyblue2.inline.svg";
 import ContentCenter from "../../../partials/content-center";
-
+import {Link} from "gatsby";
 const SettingBusiness = () => (
   <GreenContainer>
     <Oval>

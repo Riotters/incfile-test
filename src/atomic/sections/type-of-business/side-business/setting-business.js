@@ -4,7 +4,7 @@ import TextCenterLayout from "../../../partials/heading-center";
 import TopImageBox from "../../../../components/top-image-box";
 import { color } from "../../../../components/styles/colors";
 import styled from "styled-components";
-import Curve from "../../../../images/green-curve.inline.svg";
+import { Link } from "gatsby";
 import OvalSvg from "../../../../images/ovals/bottom-right-transparent-blue2.inline.svg";
 import OvalSvg2 from "../../../../images/ovals/bottom-right-transparent-babyblue2.inline.svg";
 import ContentCenter from "../../../partials/content-center";

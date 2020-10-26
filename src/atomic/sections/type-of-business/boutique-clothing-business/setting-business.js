@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "gatsby";
 import Container from "../../../container";
 import TextCenterLayout from "../../../partials/heading-center";
 import TopImageBox from "../../../../components/top-image-box";
