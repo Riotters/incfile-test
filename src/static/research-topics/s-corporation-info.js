@@ -32,7 +32,7 @@ export const related = {
       },
       {
           header: `LLC vs. S Corporation`,
-          url: `/research-topics/c-corporation-info/corp-managing/`,
+          url: `/research-topics/s-corporation-info/llc-vs-s-corporation/`,
       },
       {
           header: `What are the Advantages of an S Corporation?`,
