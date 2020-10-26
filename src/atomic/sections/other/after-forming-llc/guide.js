@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { color } from "../../../atoms/styles/colors";
 import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";
-import Button from "../../../molecules/buttons/button";
+import Button from "../../../molecules/buttons/button-action";
 import ImageContent from "../../../partials/left-content-right-image";
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-orange2.inline.svg";
@@ -19,7 +19,7 @@ const Guide = styled.section`
   overflow: hidden;
 `;
 
-const GuideSection = ({ className, content }) => (
+const GuideSection = ({ className, content, onClick }) => (
     <Guide className={className}>
         <Oval className="oval" height="420" width="420" top="0" left="0">
             <OvalSVG />
@@ -35,7 +35,7 @@ const GuideSection = ({ className, content }) => (
                 {content.header}
             </Heading>
             <Paragraph big>{content.text}</Paragraph>
-            <Button content={content.button} theme="primary56" margin="0 auto 0 0" arrow />
+            <Button content={content.button} theme="primary56" margin="0 auto 0 0" onClick={onClick} />
         </ImageContent>
     </Guide>
 );

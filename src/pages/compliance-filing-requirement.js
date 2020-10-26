@@ -16,10 +16,12 @@ import ContentCenter from "../atomic/partials/content-center";
 import { top, about, entityTypeAndState, rocket } from "../static/learning-center-entity/ongoing-filing-requirements";
 
 const OngoingFilingRequirements = () => {
-    const [dataApi, setDataApi] = React.useState('');
+    const [dataApi, setDataApi] = React.useState({});
+    const [isLoading, setIsLoading] = React.useState(true);
     const [header, setHeader] = React.useState('');
     const renderComplianceSection = (data) => {
         setDataApi(data);
+        setIsLoading(false);
         setHeader(`Mandatory ${data.prices.state} Compliance Requirements`);
     }
     return (
@@ -31,7 +33,7 @@ const OngoingFilingRequirements = () => {
             </Top>
             <About content={about} />
             <EntityTypeAndState content={entityTypeAndState} getDataApi={renderComplianceSection} />
-            {dataApi.length && (
+            {!isLoading && dataApi && (
                 <ContentCenter contentWidth="970">
                     <TextCenterLayout headline={header} headlineWidth="700" style={{ marginBottom: `52px` }} />
                     <FilingTimeAndPriceBox data={dataApi} />
