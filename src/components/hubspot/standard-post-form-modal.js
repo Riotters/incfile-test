@@ -12,6 +12,9 @@ import ButtonSubmit from "../../atomic/molecules/buttons/button-action";
 // texts
 import { _phoneFormat } from '../../helpers/input-parsers';
 
+// API 
+import { postHSForm } from '../../api/Api';
+
 const HSFormModal = ({ content, postDownloadAction, hs_form_id, modalExit }) => {
     const [intentPath, setIntentPath] = React.useState('');
     const [phoneNumber, setPhoneNumber] = React.useState('');
@@ -30,11 +33,7 @@ const HSFormModal = ({ content, postDownloadAction, hs_form_id, modalExit }) => 
         formData.set('pageTitle', document.title);
         formData.set('pageUrl', pageUrl);
     
-        fetch(`${process.env.INCFILE_API_URL}/hubspot/postForm`, {
-            method: 'POST',
-            body: formData,
-        })
-            .then(res => res.json())
+        postHSForm(formData)
             .then(json => {
                 form.reset();
                 setPhoneNumber('');
@@ -50,7 +49,7 @@ const HSFormModal = ({ content, postDownloadAction, hs_form_id, modalExit }) => 
 
     const options = [
         "Start a Business Soon",
-        "Start a Business Now",
+        "Form a Business Now",
         "Grow a Business",
     ];
 

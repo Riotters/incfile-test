@@ -21,7 +21,7 @@ export const ThankYouContent = ({ content, modalExit }) => {
     return (
         <Wrapper>
             <Heading size={2}>Thank You!</Heading>
-            <Paragraph bottomMargin={56}>Thank you for your submission. Click below to download your guide!</Paragraph>
+            <Paragraph bottomMargin={56}>Thank you for downloading guide. An email contains the link download would be sent to you!</Paragraph>
             <Button arrow theme="primary56" className="modal-close" onClick={modalExit} content={{ text: `Close`, url: `#` }} />
         </Wrapper>
     );
