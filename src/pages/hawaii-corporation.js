@@ -59,7 +59,7 @@ const AlaskaCorporation = () => {
 
     return (
         <Layout>
-            <SEO title="Form a Corporation in Alaska." description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
+            <SEO title="Form a Corporation or LLC in Hawai Today | Incfile" description="Incorporating in Hawaii is easy. Get access to articles of incorporation requirements, filing times and fees, and answers to FAQs." />
             <Top imageName="mr-bulb-corporation-california-8302" imageAlt="Mrs Bulb and with checklist" ovalColor="purple-2" headlineWidth="560">
                 <h1>{top.header}</h1>
                 <p>{top.text}</p>

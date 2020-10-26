@@ -16,7 +16,7 @@ import { top, about, tableOfContent, needMore } from "../static/learning-center-
 
 const GuideToStart = () => (
   <Layout>
-    <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
+    <SEO title="Business Ideas & Tips - Guides to Starting Your Own Business" description="From running an Amazon business to opening your own restaurant, our &quot;Start a Business&quot; guides have ideas, industry tips, and more. Start your business now!" />
     <Top imageName="mrs-bulb-complete-guide-to-starting-a-business" imageAlt="Mrs Bulb and with checklist" ovalColor="darkblue">
       <h1>{top.header}</h1>
       <p>{top.text}</p>

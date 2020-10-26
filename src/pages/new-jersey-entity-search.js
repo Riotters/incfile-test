@@ -16,7 +16,7 @@ import { top, about, search, newRules, specificRules, startBusiness, faq } from 
 
 const GeneralResearchTopics = () => (
   <Layout>
-    <SEO title="New Jersey Entity Search" description="aaa" />
+    <SEO title="New Jersey Business Entity Search | Is Your Name Available?" description="Starting a new business in NJ? Check to see if your preferred business name is available with Incfile’s easy name search tool. Try it now." />
     <Top imageName="mr-bulb-corporation-california-8302" imageAlt="Mrs Bulb and with checklist" ovalColor="love" headlineWidth="560" textWidth="500">
       <h1>{top.header}</h1>
       <p>{top.text}</p>

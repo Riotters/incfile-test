@@ -16,7 +16,7 @@ import { top, about, search, newRules, otherRules, startBusiness, faq } from "..
 
 const GeneralResearchTopics = () => (
   <Layout>
-    <SEO title="Michigan Entity Search" description="aaa" />
+    <SEO title="Michigan Business Entity Search | Is Your Name Available?" description="Starting a new business in MI? Check to see if your preferred business name is available with Incfile’s easy name search tool. Try it now." />
     <Top imageName="mrs-bulb-state-ilustrations-9948" imageAlt="Mrs Bulb and with checklist" ovalColor="sun" headlineWidth="700" textWidth="520">
       <h1>{top.header}</h1>
       <p>{top.text}</p>
