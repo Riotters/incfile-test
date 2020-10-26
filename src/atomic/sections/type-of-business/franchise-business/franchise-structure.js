@@ -27,7 +27,7 @@ const FranchiseStructure = () => (
 
         <Container>
             <BoxWrapper>
-                <Franchise to="/">
+                <Franchise to="">
                     <TopContent width={51} height={45} className="topContent">
                         <div>
                             <Image filename="mcdonalds-logo" />
@@ -48,7 +48,7 @@ const FranchiseStructure = () => (
                     </BottomContent>
                 </Franchise>
 
-                <Franchise to="/">
+                <Franchise to="">
                     <TopContent width={52} height={53} className="topContent">
                         <div>
                             <Image filename="kfc-logo" />
@@ -69,7 +69,7 @@ const FranchiseStructure = () => (
                     </BottomContent>
                 </Franchise>
 
-                <Franchise to="/">
+                <Franchise to="">
                     <TopContent width={53} height={54} className="topContent">
                         <div>
                             <Image filename="burgerking-logo" />
@@ -90,7 +90,7 @@ const FranchiseStructure = () => (
                     </BottomContent>
                 </Franchise>
 
-                <Franchise to="/">
+                <Franchise to="">
                     <TopContent width={115} height={38} className="topContent">
                         <div>
                             <Image filename="subway-logo" />
@@ -111,7 +111,7 @@ const FranchiseStructure = () => (
                     </BottomContent>
                 </Franchise>
 
-                <Franchise to="/">
+                <Franchise to="">
                     <TopContent width={80} height={60} className="topContent">
                         <div>
                             <Image filename="7-eleven-logo" />
@@ -132,7 +132,7 @@ const FranchiseStructure = () => (
                     </BottomContent>
                 </Franchise>
 
-                <Franchise to="/">
+                <Franchise to="">
                     <TopContent width={86} height={32} className="topContent">
                         <div>
                             <Image filename="hertz-logo" />
@@ -153,7 +153,7 @@ const FranchiseStructure = () => (
                     </BottomContent>
                 </Franchise>
 
-                <Franchise to="/">
+                <Franchise to="">
                     <TopContent width={61} height={64} className="topContent">
                         <div>
                             <Image filename="pizza-hut-logo" />
@@ -174,7 +174,7 @@ const FranchiseStructure = () => (
                     </BottomContent>
                 </Franchise>
 
-                <Franchise to="/">
+                <Franchise to="">
                     <TopContent width={120} height={28} className="topContent">
                         <div>
                             <Image filename="marriott-logo" />
@@ -195,7 +195,7 @@ const FranchiseStructure = () => (
                     </BottomContent>
                 </Franchise>
 
-                <Franchise to="/">
+                <Franchise to="">
                     <TopContent width={125} height={18} className="topContent">
                         <div>
                             <Image filename="wyndham-logo" />
@@ -216,7 +216,7 @@ const FranchiseStructure = () => (
                     </BottomContent>
                 </Franchise>
 
-                <Franchise to="/">
+                <Franchise to="">
                     <TopContent width={75} height={57} className="topContent">
                         <div>
                             <Image filename="hilton-logo" />
@@ -237,7 +237,7 @@ const FranchiseStructure = () => (
                     </BottomContent>
                 </Franchise>
 
-                <Franchise to="/">
+                <Franchise to="">
                     <TopContent width={100} height={18} className="topContent">
                         <div>
                             <Image filename="remax-logo" />
@@ -258,7 +258,7 @@ const FranchiseStructure = () => (
                     </BottomContent>
                 </Franchise>
 
-                <Franchise to="/">
+                <Franchise to="">
                     <TopContent width={63} height={63} className="topContent">
                         <div>
                             <Image filename="dominos-pizza-logo" />
@@ -279,7 +279,7 @@ const FranchiseStructure = () => (
                     </BottomContent>
                 </Franchise>
 
-                <Franchise to="/">
+                <Franchise to="">
                     <TopContent width={87} height={32} className="topContent">
                         <div>
                             <Image filename="dunkin-donuts-logo" />
@@ -300,7 +300,7 @@ const FranchiseStructure = () => (
                     </BottomContent>
                 </Franchise>
 
-                <Franchise to="/">
+                <Franchise to="">
                     <TopContent width={63} height={39} className="topContent">
                         <div>
                             <Image filename="ace-hardware-logo" />
@@ -321,7 +321,7 @@ const FranchiseStructure = () => (
                     </BottomContent>
                 </Franchise>
 
-                <Franchise to="/">
+                <Franchise to="">
                     <TopContent width={97} height={32} className="topContent">
                         <div>
                             <Image filename="chemdry-logo" />
@@ -342,7 +342,7 @@ const FranchiseStructure = () => (
                     </BottomContent>
                 </Franchise>
 
-                <Franchise to="/">
+                <Franchise to="">
                     <TopContent width={44} height={55} className="topContent">
                         <div>
                             <Image filename="taco-bell-logo" />
@@ -363,7 +363,7 @@ const FranchiseStructure = () => (
                     </BottomContent>
                 </Franchise>
 
-                <Franchise to="/">
+                <Franchise to="">
                     <TopContent width={92} height={40} className="topContent">
                         <div>
                             <Image filename="papa-johns-logo" />
@@ -384,7 +384,7 @@ const FranchiseStructure = () => (
                     </BottomContent>
                 </Franchise>
 
-                <Franchise to="/">
+                <Franchise to="">
                     <TopContent width={112} height={26} className="topContent">
                         <div>
                             <Image filename="anytime-fitness-logo" />
@@ -405,7 +405,7 @@ const FranchiseStructure = () => (
                     </BottomContent>
                 </Franchise>
 
-                <Franchise to="/">
+                <Franchise to="">
                     <TopContent width={101} height={23} className="topContent">
                         <div>
                             <Image filename="jan-pro-logo" />
@@ -426,7 +426,7 @@ const FranchiseStructure = () => (
                     </BottomContent>
                 </Franchise>
 
-                <Franchise to="/">
+                <Franchise to="">
                     <TopContent width={75} height={49} className="topContent">
                         <div>
                             <Image filename="dq-logo" />
@@ -447,7 +447,7 @@ const FranchiseStructure = () => (
                     </BottomContent>
                 </Franchise>
 
-                <Franchise to="/">
+                <Franchise to="">
                     <TopContent width={106} height={26} className="topContent">
                         <div>
                             <Image filename="choice-logo" />
@@ -468,7 +468,7 @@ const FranchiseStructure = () => (
                     </BottomContent>
                 </Franchise>
 
-                <Franchise to="/">
+                <Franchise to="">
                     <TopContent width={88} height={57} className="topContent">
                         <div>
                             <Image filename="liberty-tax-service-logo" />
@@ -489,7 +489,7 @@ const FranchiseStructure = () => (
                     </BottomContent>
                 </Franchise>
 
-                <Franchise to="/">
+                <Franchise to="">
                     <TopContent width={101} height={29} className="topContent">
                         <div>
                             <Image filename="baskin-robbins-logo" />
@@ -510,7 +510,7 @@ const FranchiseStructure = () => (
                     </BottomContent>
                 </Franchise>
 
-                <Franchise to="/">
+                <Franchise to="">
                     <TopContent width={75} height={58} className="topContent">
                         <div>
                             <Image filename="little-caesars-logo" />
@@ -531,7 +531,7 @@ const FranchiseStructure = () => (
                     </BottomContent>
                 </Franchise>
 
-                <Franchise to="/">
+                <Franchise to="">
                     <TopContent width={113} height={26} className="topContent">
                         <div>
                             <Image filename="novus-logo" />

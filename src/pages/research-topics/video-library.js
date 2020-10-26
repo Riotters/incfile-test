@@ -56,15 +56,9 @@ const Sticky = styled.div`
 const Related = styled.div``;
 
 const VideoLibrary = () => {
-  let disqusConfig = {
-    //url: `${config.siteUrl+location.pathname}`,
-    url: `https://riotters.github.io/incfile-test/article/`,
-    identifier: "1",
-    title: "title",
-  };
   return (
     <Layout>
-      <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
+      <SEO title="Business Videos & Resources | Incfile Video Library" description="Find helpful videos on a variety of business topics, from starting an LLC to getting a business license." />
       <Top headline="Help Center" text="Instant answers. What can we help with?" imageName="mrs-bulb-main-header-object-business-checklist-8435.png" bgColor="orange" />
       <Wrapper>
         <Container>

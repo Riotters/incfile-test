@@ -11,20 +11,30 @@ import ContentMap from "../../atomic/partials/content-map";
 // Content
 import { namingYourBusiness } from "../../static/states-llc/ohio/home";
 import { tabPages } from "../../static/states-llc/ohio/general";
+import { getFullPricesAndFilings } from '../../api/Api';
 
-const BusinessNamesPage = () => (
-  <Layout>
-    <SEO
-    title="Texas Business Search | How to Name Your TX LLC"
-    description="Learn what you need to know about naming an LLC in Texas with Incfile's helpful resources. Pick your perfect business name today!"
-    />
-    <LLCLayout>
-        <LeftTabPages content={tabPages} />
-        <MainPageContent>
-            <ContentMap content={namingYourBusiness} />
-        </MainPageContent>
-    </LLCLayout>
-  </Layout>
-);
+const BusinessNamesPage = () => {
+    const [dataApi, setDataApi] = React.useState({});
+
+    React.useEffect(() => {
+        getFullPricesAndFilings('Ohio').then(data => {
+            setDataApi(data);
+        });
+    }, []);
+    return (
+        <Layout>
+            <SEO
+                title="OH Business Entity Search | Register a Business Name in OH"
+                description="Learn what you need to know about naming an LLC in Ohio with Incfile’s helpful resources. Pick your perfect business name today!"
+            />
+            <LLCLayout data={dataApi}>
+                <LeftTabPages content={tabPages} />
+                <MainPageContent>
+                    <ContentMap content={namingYourBusiness} />
+                </MainPageContent>
+            </LLCLayout>
+        </Layout>
+    );
+}
 
 export default BusinessNamesPage;

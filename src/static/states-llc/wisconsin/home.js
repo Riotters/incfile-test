@@ -7,7 +7,7 @@ export const top = {
     text: `$0 + State Fee & 1st Year FREE Registered Agent`,
     buttons: [{
         text: `See detailed pricing`,
-        url: `/form-order-now.php?entityType=LLC&entityState=WI`,
+        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=WI`,
     }, ],
 };
 
@@ -59,8 +59,7 @@ export const howToGuide = [{
     {
         type: `accordion`,
         content: {
-            items: [
-                {
+            items: [{
                     question: `STEP 1: Gather Information for Your Members`,
                     answer: `First, you need to gather basic information about your LLC, including the names and addresses of the managers or members. The LLC members are typically the people who own and run the business. They are also the ones who can take profits out of the business to pay themselves.`,
                 },
@@ -94,7 +93,7 @@ export const howToGuide = [{
                             <li>Name of the incorporator</li>
                         </ol></br>
                         <p>You can file your Wisconsin LLC Articles of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Wisconsin. You only need to file your Articles of Organization once.</p></br>
-                        <a href="https://www.incfile.com/form-order-now.php?entityType=LLC&amp;entityState=WI" title="Form Your LLC Now">Form Your LLC Now</a>`,
+                        <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&amp;entityState=WI" title="Form Your LLC Now">Form Your LLC Now</a>`,
                 },
             ],
         },
@@ -422,7 +421,7 @@ export const namingYourBusiness = [{
                <a href="https://www.wdfi.org/Apostilles_Notary_Public_and_Trademarks/pdf/dfi-trd-102.pdf" target="_blank" rel="noopener noreferrer">Wisconsin DFI LLC name reservation form.</a>`,
             },
             {
-                text: `If you’re ready to start your Wisconsin LLC, you can formally file your Articles of Organization with the Wisconsin DFI, or <a href="/form-order-now.php?entityType=LLC&entityState=WI/"> let Incfile take care of it for you.</a>`,
+                text: `If you’re ready to start your Wisconsin LLC, you can formally file your Articles of Organization with the Wisconsin DFI, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=WI/"> let Incfile take care of it for you.</a>`,
             },
         ],
         marginBottom: 48,
@@ -689,7 +688,7 @@ export const registeredAgent = [{
         type: `button`,
         content: {
             text: `Incorporate your business through Incfile`,
-            url: `/form-order-now.php?entityType=LLC&amp;entityState=WI`,
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&amp;entityState=WI`,
         },
         theme: `primary48`,
         marginBottom: 32,
@@ -726,7 +725,7 @@ export const registeredAgent = [{
         type: `button`,
         content: {
             text: `INCORPORATE YOUR BUSINESS THROUGH INCFILE`,
-            url: `/form-order-now.php?entityType=LLC&entityState=WI/`,
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=WI/`,
         },
         theme: `primary48`,
         marginBottom: 48,
@@ -916,13 +915,7 @@ export const feesAndRequirments = [{
         marginBottom: 16,
     },
     {
-        type: `table`,
-        content: {
-            headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
-            rows: [
-                [`$130`, `5 Business Days`, `1 Business day`]
-            ],
-        },
+        type: `dynamic_ar_box`
     },
     {
         type: `arrow-link`,
@@ -954,7 +947,7 @@ export const feesAndRequirments = [{
         type: `button`,
         content: {
             text: `INCORPORATE YOUR WISCONSIN LLC THROUGH INCFILE TODAY`,
-            url: `/form-order-now.php?entityType=LLC&entityState=WI/`,
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=WI`,
         },
         theme: `primary48`,
         marginBottom: 48,
@@ -1011,35 +1004,7 @@ export const feesAndRequirments = [{
         marginBottom: 32,
     },
     {
-        type: `header`,
-        content: `Annual Report`,
-        size: 4,
-        marginBottom: 16,
-    },
-    {
-        type: `text`,
-        content: `<b>Frequency:</b> Annually`,
-        marginBottom: 16,
-    },
-    {
-        type: `text`,
-        content: `<b>Due Date:</b> Based on anniversary date`,
-        marginBottom: 16,
-    },
-    {
-        type: `text`,
-        content: `<b>Domestic:</b> </br> Jan 1 – Mar 31: Mar 31 </br> Apr 1 – Jun 30: Jun 30 </br> Jul 1 – Sep 30: Sep 30</br> Oct 1 – Dec 31: Dec 31`,
-        marginBottom: 16,
-    },
-    {
-        type: `text`,
-        content: `<b>Foreign:</b> During first calendar quarter of each year following calendar year in the LLC becomes registered.`,
-        marginBottom: 16,
-    },
-    {
-        type: `text`,
-        content: `<b>Filing Fee: </b> $26`,
-        marginBottom: 16,
+        type: `dynamic_filing_requirement`
     },
     {
         type: `text`,
@@ -1455,7 +1420,8 @@ export const businessTaxes = [{
     {
         type: `list-dot`,
         content: {
-            list: [`On profits of $50,000, you would pay self-employment tax of $7,650.`,
+            list: [
+                `On profits of $50,000, you would pay self-employment tax of $7,650.`,
                 `On profits of $100,000, you would pay self-employment tax of $15,300.`,
                 `On profits of $140,000, you would pay self-employment tax of $21,420.`,
                 `On profits of $160,000, you would pay self-employment tax of $24,480.`,
@@ -1483,8 +1449,8 @@ export const businessTaxes = [{
     {
         type: `button`,
         content: {
-          text: `Incfile Form 2553 S Corporation Tax Election for an LLC service`,
-          url: `/llc-s-corp-election/`,
+            text: `Incfile Form 2553 S Corporation Tax Election for an LLC service`,
+            url: `/llc-s-corp-election/`,
         },
         theme: `primary48`,
         marginBottom: 16,
@@ -1642,4 +1608,66 @@ export const compare = {
             [`Registered Agent included in the price`, `check-green`, `check-red`, `check-red`],
         ],
     },
+};
+
+export const ongoingFilingRequirement = {
+    header: `Fees and requirements in Wisconsin.`,
+    rows: [
+        {
+            curve: `curveRight`,
+            color: color.orange3,
+            boxItems: {
+                fields: [{
+                    header: `Biennially`,
+                    text: `Frequency`,
+                    },
+                    {
+                        header: `$20`,
+                        text: `Filing fee`,
+                    },
+                ]
+            },
+            content: [
+                {
+                    type: `header`,
+                    size: 3,
+                    marginBottom: 32,
+                    text: `Annual Report`
+                },
+                {
+                    type: `header`,
+                    size: 4,
+                    marginBottom: 16,
+                    text: `Due Date`
+                },
+                {
+                    type: `text`,
+                    text: `Based on anniversary date`,
+                },
+                {
+                    type: `header`,
+                    size: 4,
+                    marginBottom: 16,
+                    text: `Domestic`
+                },
+                {
+                    type: `text`,
+                    text: `Jan 1 – Mar 31: Mar 31
+                    Apr 1 – Jun 30: Jun 30
+                    Jul 1 – Sep 30: Sep 30 
+                    Oct 1 – Dec 31: Dec 31`,
+                },
+                {
+                    type: `header`,
+                    size: 4,
+                    marginBottom: 16,
+                    text: `Foreign`
+                },
+                {
+                    type: `text`,
+                    text: `During first calendar quarter of each year following calendar year in the LLC becomes registered.`,
+                },
+            ]
+        },
+    ]
 };

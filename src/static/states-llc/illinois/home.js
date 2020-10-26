@@ -8,15 +8,15 @@ export const HomePageContent = {
         desc: `Read our DIY guide to Illinois LLC formation, with information on Registered Agents, naming rules, business licenses, and more.`,
         button: {
           text: `Read The Guide`,
-          url: "https://www.incfile.com/illinois-llc/",
+          url: "#video",
         },
       },
       {
         title: `Have Incfile do the work for you <br><span style="color:#FD8550">$0 + State fee</span>`,
-        desc: `Incfile ILn take ILre of all your LLC formation paperwork—and we’ll do it for free. Just pay the required Illinois state fee ($300).`,
+        desc: `Incfile ILn take ILre of all your LLC formation paperwork—and we’ll do it for free. Just pay the required Illinois state fee ($[STATE_FEE]).`,
         button: {
           text: `Form Your LLC Now`,
-          url: "https://www.incfile.com/form-order-now.php?entityType=LLC&entityState=IL",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=IL`,
         },
       },
     ],
@@ -93,7 +93,7 @@ export const HomePageContent = {
           },
           {
             header: `Get A Free Registered Agent Whe You Incorporate With Incfile`,
-            url: `/form-order-now.php?entityType=LLC&entityState=IL`,
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=IL`,
           },
         ],
       },
@@ -136,43 +136,6 @@ export const HomePageContent = {
             url: `form-order-now.php?entityType=LLC&entityState=IL`,
           },
         },
-        annualReport: [
-          {
-            title: `What are the fees and requirements to form a business in Illinois?`,
-            items: [
-              {
-                text1: `State Fee`,
-                text2: `$154`,
-              },
-              {
-                text1: `State Filing Time`,
-                text2: `2 Weeks`,
-              },
-              {
-                text1: `Expedited Filing Time`,
-                text2: `1 Business Day`,
-              },
-            ],
-          },
-          {
-            title: `Statement of Information
-                        `,
-            items: [
-              {
-                text1: `Frequency:`,
-                text2: `Annually`,
-              },
-              {
-                text1: `Due Date:`,
-                text2: `Within 60 days immediately preceding first day of anniversary month.`,
-              },
-              {
-                text1: `Filing Fee:`,
-                text2: `$78`,
-              },
-            ],
-          },
-        ],
       },
       step5: {
         heading1: `Get an Employer IdentifiILtion Number (EIN) From the Internal Revenue Service`,
@@ -191,7 +154,7 @@ export const HomePageContent = {
           subtitle: `when you select Incfle’s Gold package`,
           button: {
             text: `Form Your LLC Now`,
-            url: `/form-order-now.php?entityType=LLC&entityState=IL`,
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=IL`,
           },
         },
       },

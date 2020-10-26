@@ -16,7 +16,7 @@ export const businessNamesContent = {
         desc: `Starting a Georgia LLC? Have Incfile do all the paperwork for you for free.`,
         button: {
           text: `Form Your LLC Now`,
-          url: "/form-order-now.php?entityType=LLC&entityState=GA",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=GA`,
         },
       },
     ],
@@ -93,21 +93,21 @@ export const businessNamesContent = {
           ],
         },
         {
-            count: 5,
-            question: `Avoid Using Words That Are Restricted by the Georgia Secretary of State`,
-            answer: [
-              {
-                type: `list-dot-without-bg`,
-                content: [
-                  `Use of the following terms in an entity name requires the written approval of the Office of Insurance and Safety Fire Commissioner: “insurance,” “assurance,” “surety,” “fidelity,” “reinsurance,” “reassurance” or “indemnity”`,
-                  `Use of the following terms or any variation of the word “bank” in an entity name requires the written approval of the Department of Banking and Finance: "bank," “banc,” “banque,” “banker,” “banking company,” “banking house,” “bancorp,” “bankruptcy,” “credit union,” “savings & loan,” “trust” or “trust company”`,
-                  `Use of the following terms in an entity name requires the written approval of the Georgia Nonpublic Postsecondary Education Commission: “college” or “university”`
-                ],
-              },
-            ],
+          count: 5,
+          question: `Avoid Using Words That Are Restricted by the Georgia Secretary of State`,
+          answer: [
+            {
+              type: `list-dot-without-bg`,
+              content: [
+                `Use of the following terms in an entity name requires the written approval of the Office of Insurance and Safety Fire Commissioner: “insurance,” “assurance,” “surety,” “fidelity,” “reinsurance,” “reassurance” or “indemnity”`,
+                `Use of the following terms or any variation of the word “bank” in an entity name requires the written approval of the Department of Banking and Finance: "bank," “banc,” “banque,” “banker,” “banking company,” “banking house,” “bancorp,” “bankruptcy,” “credit union,” “savings & loan,” “trust” or “trust company”`,
+                `Use of the following terms in an entity name requires the written approval of the Georgia Nonpublic Postsecondary Education Commission: “college” or “university”`,
+              ],
+            },
+          ],
         },
-       ],
-      }, 
+      ],
+    },
     {
       type: `paragraph`,
       styles: { marginTop: `40px` },
@@ -132,7 +132,7 @@ export const businessNamesContent = {
       width: `450px`,
       content: {
         text: `Incfile Guide To Choosing A Business Name`,
-        url: `https://www.incfile.com/blog/post/llc-name-search-50-states/`,
+        url: `/blog/post/llc-name-search-50-states/`,
       },
     },
     {

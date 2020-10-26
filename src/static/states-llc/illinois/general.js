@@ -22,7 +22,7 @@ export const tabPages = {
     },
     {
       name: `What To Do Next?`,
-      path: `/other/after-forming-llc/`,
+      path: `/after-forming-llc/`,
     },
   ],
 };
@@ -34,6 +34,6 @@ export const rocket = {
   text2: `Only $0 + State Fee to Launch Your Business.`,
   button: {
     text: `Start Now`,
-    url: `/`,
+    url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=IL`,
   },
 };

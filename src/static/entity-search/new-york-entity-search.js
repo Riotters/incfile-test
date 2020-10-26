@@ -4,7 +4,7 @@ export const top = {
   button: [
     {
       text: "Check Name Availability",
-      url: "/",
+      url: "#form",
     },
   ],
 };
@@ -32,7 +32,7 @@ export const search = {
       label: `Entity Type`,
       link: {
         text: `Not sure?`,
-        url: `/`,
+        url: `/business-entity-comparison/`,
       },
       options: [`LLC`, `Corporation`],
     },
@@ -56,7 +56,11 @@ export const search = {
 export const newRules = {
   header: `New York Rules on Naming Your Business`,
   text: `Once you’ve checked to see if your New York business name is available, you’ll need to confirm it follows certain naming rules.`,
-  cards: [{ text: `If your New York business is an LLC, it must contain “Limited Liability Company” or an abbreviation. If it’s a corporation, it must contain a word like “Incorporated”, “Corporation” or something similar.` }, { text: `Normally, you cannot imply connection with a New York state entity or that you will be carrying out activities your NY business is not legally able to provide.` }, { text: `Your business name must be unique and not similar to or confusable with another business name in New York.` }],
+  cards: [
+    { text: `If your New York business is an LLC, it must contain “Limited Liability Company” or an abbreviation. If it’s a corporation, it must contain a word like “Incorporated”, “Corporation” or something similar.` },
+    { text: `Normally, you cannot imply connection with a New York state entity or that you will be carrying out activities your NY business is not legally able to provide.` },
+    { text: `Your business name must be unique and not similar to or confusable with another business name in New York.` },
+  ],
 };
 
 export const specificRules = {
@@ -100,8 +104,8 @@ export const faq = {
           url: `/`,
         },
         {
-          text: `guides for more information.`
-        }
+          text: `guides for more information.`,
+        },
       ],
     },
     {
@@ -156,7 +160,7 @@ export const faq = {
           text: `— you'll want to choose a name that will:`,
         },
       ],
-    list: [`Appeal to your customers`,`Help people remember your company`,`Best represent your product or services`,`Not be used by another business in New York`],
+      list: [`Appeal to your customers`, `Help people remember your company`, `Best represent your product or services`, `Not be used by another business in New York`],
     },
     {
       question: `What’s the Best Way to Stop My New York Business Name From Being Used by Someone Else?`,

@@ -4,7 +4,6 @@ import BgBoxDBAName from "../../../images/icons/states/dba-name-01.png";
 import BgBoxTrademark from "../../../images/icons/states/trademark-01.png";
 import BgBoxBusinessNameIdea from "../../../images/icons/states/business-name-idea.inline.png";
 import BgBoxIncorporationPaperWork from "../../../images/icons/states/incorporation-paperwork-01.png";
-import BgBoxBusinessNameSearchTool from "../../../images/icons/states/business-name-search-tool.inline.png";
 
 export const businessNamesContent = {
   header: {
@@ -16,7 +15,7 @@ export const businessNamesContent = {
         desc: `<span style="color:#FD8550">Incorporate today for $0 + State fee.</span>`,
         button: {
           text: `Form Your LLC Now`,
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=FL`,
         },
       },
     ],
@@ -113,7 +112,7 @@ export const businessNamesContent = {
       width: `450px`,
       content: {
         text: `Incfile Guide To Choosing A Business Name`,
-        url: `https://www.incfile.com/blog/post/llc-name-search-50-states/`,
+        url: `/blog/post/llc-name-search-50-states/`,
       },
     },
     {
@@ -149,14 +148,14 @@ export const businessNamesContent = {
       content: `The Incfile Business Name Search tool lets you effortlessly search for your business name in Florida and any other state. Our tool integrates with Sunbiz business searches to query the FL Department of State register and let you know about name availability.`,
     },
     {
-        type: `button`,
-        theme: `secondary56`,
-        width: `450px`,
-        content: {
-          text: `Search for your Florida LLC name`,
-          url: `/`,
-        },
+      type: `button`,
+      theme: `secondary56`,
+      width: `450px`,
+      content: {
+        text: `Search for your Florida LLC name`,
+        url: `/`,
       },
+    },
     {
       type: `heading`,
       size: 3,
@@ -168,31 +167,21 @@ export const businessNamesContent = {
     },
     {
       type: `list-dot-without-bg`,
-      content: [
-        `Entity Name`,
-        `Officer/Registered Agent`,
-        `Registered Agent Name`,
-        `Trademark Name`,
-        `Trademark Owner Name`,
-        `FEI/EIN`,
-        `Detail by Document Number`,
-        `Zip Code`,
-        `Street Address`,
-        ],
+      content: [`Entity Name`, `Officer/Registered Agent`, `Registered Agent Name`, `Trademark Name`, `Trademark Owner Name`, `FEI/EIN`, `Detail by Document Number`, `Zip Code`, `Street Address`],
     },
     {
       type: `paragraph`,
       content: `If the business name is already used by an LLC or corporation in Florida, that means it’s not available and you won’t be able to register it. Try searching for a different business name instead.`,
     },
     {
-        type: `button`,
-        theme: `secondary56`,
-        width: `450px`,
-        content: {
-          text: `Florida Department of State business name search tool`,
-          url: `/`,
-        },
+      type: `button`,
+      theme: `secondary56`,
+      width: `450px`,
+      content: {
+        text: `Florida Department of State business name search tool`,
+        url: `/`,
       },
+    },
     // Assumed Name
     {
       type: `heading`,

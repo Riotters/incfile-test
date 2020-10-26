@@ -32,7 +32,7 @@ const Rocket = () => (
                     you can create great listings, build positive reviews, understand your competitors and put
                     together a solid business plan, you will have every chance for success
                 </Paragraph>
-                <Button theme="primary48" arrow width="410px" content={{url: "/", text: "Start your Airbnb Business with us, today!"}} />
+                <Button theme="primary48" arrow width="410px" content={{url: "https://www.incfile.com/form-order-now.php", text: "Start your Airbnb Business with us, today!"}} />
             </Content>
         </Container>
     </Wrapper>

@@ -6,8 +6,8 @@ import {Tools} from "../../../../static/type-of-business/coach";
 
 const UseFulTools = () => (
     <Wrapper>
-        <TextCenterLayout headline="Useful Online Tools for Professional Coaches"
-                          text="Here are some really great online tools for managing your life or business coaching business. They will reduce the time you spend on administration, help you to collaborate with others and free up your time to grow and manage your new venture."/>
+        <TextCenterLayout headline="Useful Online Tools for Your Beauty Salon Business"
+                          text="Here are some really great online tools for managing your beauty salon business. They will reduce the time you spend on administration, help you collaborate with others and free up your time to grow and manage your new venture."/>
 
         <ToolsList tools={Tools}/>
     </Wrapper>

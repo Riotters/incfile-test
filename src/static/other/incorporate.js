@@ -1,7 +1,4 @@
-import React from "react";
 import { color } from "../../atomic/atoms/styles/colors";
-import { Paragraph } from "../../atomic/atoms/typography/paragraph";
-import { Heading } from "../../atomic/atoms/typography/heading";
 
 export const top = {
   header: "Start your business with confidence",
@@ -106,7 +103,7 @@ export const variants = {
           image: "",
           button: {
             text: "Get the Silver package",
-            url: "/",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=AL`,
           },
           fees: [
             {
@@ -131,7 +128,7 @@ export const variants = {
           image: "",
           button: {
             text: "Get the Gold package",
-            url: "/",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=AL`,
           },
           fees: [
             {
@@ -155,8 +152,8 @@ export const variants = {
           price: 501,
           image: "",
           button: {
-            text: "Get the Gold package",
-            url: "/",
+            text: "Get the Platinum package",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=AL`,
           },
           fees: [
             {
@@ -1425,7 +1422,7 @@ export const variants = {
           image: "",
           button: {
             text: "Get the Silver package",
-            url: "/",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=AL`,
           },
           fees: [
             {
@@ -1450,7 +1447,7 @@ export const variants = {
           image: "",
           button: {
             text: "Get the Gold package",
-            url: "/",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=AL`,
           },
           fees: [
             {
@@ -1474,8 +1471,8 @@ export const variants = {
           price: 462,
           image: "",
           button: {
-            text: "Get the Gold package",
-            url: "/",
+            text: "Get the Platinum package",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=AL`,
           },
           fees: [
             {
@@ -2744,7 +2741,7 @@ export const variants = {
           image: "",
           button: {
             text: "Get the Silver package",
-            url: "/",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=Nonprofit&entityState=AL`,
           },
           fees: [
             {
@@ -2769,7 +2766,7 @@ export const variants = {
           image: "",
           button: {
             text: "Get the Gold package",
-            url: "/",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=Nonprofit&entityState=AL`,
           },
           fees: [
             {
@@ -2793,8 +2790,8 @@ export const variants = {
           price: 474,
           image: "",
           button: {
-            text: "Get the Gold package",
-            url: "/",
+            text: "Get the Platinum package",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=Nonprofit&entityState=AL`,
           },
           fees: [
             {
@@ -3991,7 +3988,7 @@ export const variants = {
           image: "",
           button: {
             text: "Get the Silver package",
-            url: "/",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AL`,
           },
           fees: [
             {
@@ -4016,7 +4013,7 @@ export const variants = {
           image: "",
           button: {
             text: "Get the Gold package",
-            url: "/",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AL`,
           },
           fees: [
             {
@@ -4040,8 +4037,8 @@ export const variants = {
           price: 511,
           image: "",
           button: {
-            text: "Get the Gold package",
-            url: "/",
+            text: "Get the Platinum package",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AL`,
           },
           fees: [
             {
@@ -5318,7 +5315,7 @@ export const variants = {
           image: "",
           button: {
             text: "Get the Silver package",
-            url: "/",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=AK`,
           },
           fees: [
             {
@@ -5343,7 +5340,7 @@ export const variants = {
           image: "",
           button: {
             text: "Get the Gold package",
-            url: "/",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=AK`,
           },
           fees: [
             {
@@ -5367,8 +5364,8 @@ export const variants = {
           price: 549,
           image: "",
           button: {
-            text: "Get the Gold package",
-            url: "/",
+            text: "Get the Platinum package",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=AK`,
           },
           fees: [
             {
@@ -6696,7 +6693,7 @@ export const variants = {
           image: "",
           button: {
             text: "Get the Silver package",
-            url: "/",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=AK`,
           },
           fees: [
             {
@@ -6721,7 +6718,7 @@ export const variants = {
           image: "",
           button: {
             text: "Get the Gold package",
-            url: "/",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=AK`,
           },
           fees: [
             {
@@ -6745,8 +6742,8 @@ export const variants = {
           price: 462,
           image: "",
           button: {
-            text: "Get the Gold package",
-            url: "/",
+            text: "Get the Platinum package",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=AK`,
           },
           fees: [
             {
@@ -8074,7 +8071,7 @@ export const variants = {
           image: "",
           button: {
             text: "Get the Silver package",
-            url: "/",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=Nonprofit&entityState=AK`,
           },
           fees: [
             {
@@ -8099,7 +8096,7 @@ export const variants = {
           image: "",
           button: {
             text: "Get the Gold package",
-            url: "/",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=Nonprofit&entityState=AK`,
           },
           fees: [
             {
@@ -8123,8 +8120,8 @@ export const variants = {
           price: 474,
           image: "",
           button: {
-            text: "Get the Gold package",
-            url: "/",
+            text: "Get the Platinum package",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=Nonprofit&entityState=AK`,
           },
           fees: [
             {
@@ -9408,7 +9405,7 @@ export const variants = {
           image: "",
           button: {
             text: "Get the Silver package",
-            url: "/",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AK`,
           },
           fees: [
             {
@@ -9433,7 +9430,7 @@ export const variants = {
           image: "",
           button: {
             text: "Get the Gold package",
-            url: "/",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AK`,
           },
           fees: [
             {
@@ -9457,8 +9454,8 @@ export const variants = {
           price: 511,
           image: "",
           button: {
-            text: "Get the Gold package",
-            url: "/",
+            text: "Get the Platinum package",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AK`,
           },
           fees: [
             {
@@ -10794,7 +10791,7 @@ export const variants = {
           image: "",
           button: {
             text: "Get the Silver package",
-            url: "/",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=AZ`,
           },
           fees: [
             {
@@ -10819,7 +10816,7 @@ export const variants = {
           image: "",
           button: {
             text: "Get the Gold package",
-            url: "/",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=AZ`,
           },
           fees: [
             {
@@ -10843,8 +10840,8 @@ export const variants = {
           price: 394,
           image: "",
           button: {
-            text: "Get the Gold package",
-            url: "/",
+            text: "Get the Platinum package",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=AZ`,
           },
           fees: [
             {
@@ -12148,7 +12145,7 @@ export const variants = {
           image: "",
           button: {
             text: "Get the Silver package",
-            url: "/",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=AZ`,
           },
           fees: [
             {
@@ -12173,7 +12170,7 @@ export const variants = {
           image: "",
           button: {
             text: "Get the Gold package",
-            url: "/",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=AZ`,
           },
           fees: [
             {
@@ -12197,8 +12194,8 @@ export const variants = {
           price: 394,
           image: "",
           button: {
-            text: "Get the Gold package",
-            url: "/",
+            text: "Get the Platinum package",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=AZ`,
           },
           fees: [
             {
@@ -13502,7 +13499,7 @@ export const variants = {
           image: "",
           button: {
             text: "Get the Silver package",
-            url: "/",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=Nonprofit&entityState=AZ`,
           },
           fees: [
             {
@@ -13527,7 +13524,7 @@ export const variants = {
           image: "",
           button: {
             text: "Get the Gold package",
-            url: "/",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=Nonprofit&entityState=AZ`,
           },
           fees: [
             {
@@ -13551,8 +13548,8 @@ export const variants = {
           price: 374,
           image: "",
           button: {
-            text: "Get the Gold package",
-            url: "/",
+            text: "Get the Platinum package",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=Nonprofit&entityState=AZ`,
           },
           fees: [
             {
@@ -14812,7 +14809,7 @@ export const variants = {
           image: "",
           button: {
             text: "Get the Silver package",
-            url: "/",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ`,
           },
           fees: [
             {
@@ -14837,7 +14834,7 @@ export const variants = {
           image: "",
           button: {
             text: "Get the Gold package",
-            url: "/",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ`,
           },
           fees: [
             {
@@ -14861,8 +14858,8 @@ export const variants = {
           price: 384,
           image: "",
           button: {
-            text: "Get the Gold package",
-            url: "/",
+            text: "Get the Platinum package",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ`,
           },
           fees: [
             {
@@ -16150,7 +16147,7 @@ export const variants = {
           image: "",
           button: {
             text: "Get the Silver package",
-            url: "/",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=AR`,
           },
           fees: [
             {
@@ -16175,7 +16172,7 @@ export const variants = {
           image: "",
           button: {
             text: "Get the Gold package",
-            url: "/",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=AR`,
           },
           fees: [
             {
@@ -16199,8 +16196,8 @@ export const variants = {
           price: 349,
           image: "",
           button: {
-            text: "Get the Gold package",
-            url: "/",
+            text: "Get the Platinum package",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=AR`,
           },
           fees: [
             {
@@ -17482,7 +17479,7 @@ export const variants = {
           image: "",
           button: {
             text: "Get the Silver package",
-            url: "/",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=AR`,
           },
           fees: [
             {
@@ -17507,7 +17504,7 @@ export const variants = {
           image: "",
           button: {
             text: "Get the Gold package",
-            url: "/",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=AR`,
           },
           fees: [
             {
@@ -17531,8 +17528,8 @@ export const variants = {
           price: 349,
           image: "",
           button: {
-            text: "Get the Gold package",
-            url: "/",
+            text: "Get the Platinum package",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=AR`,
           },
           fees: [
             {
@@ -18814,7 +18811,7 @@ export const variants = {
           image: "",
           button: {
             text: "Get the Silver package",
-            url: "/",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=Nonprofit&entityState=AR`,
           },
           fees: [
             {
@@ -18839,7 +18836,7 @@ export const variants = {
           image: "",
           button: {
             text: "Get the Gold package",
-            url: "/",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=Nonprofit&entityState=AR`,
           },
           fees: [
             {
@@ -18863,8 +18860,8 @@ export const variants = {
           price: 349,
           image: "",
           button: {
-            text: "Get the Gold package",
-            url: "/",
+            text: "Get the Platinum package",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=Nonprofit&entityState=AR`,
           },
           fees: [
             {
@@ -20102,7 +20099,7 @@ export const variants = {
           image: "",
           button: {
             text: "Get the Silver package",
-            url: "/",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AR`,
           },
           fees: [
             {
@@ -20127,7 +20124,7 @@ export const variants = {
           image: "",
           button: {
             text: "Get the Gold package",
-            url: "/",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AR`,
           },
           fees: [
             {
@@ -20151,8 +20148,8 @@ export const variants = {
           price: 349,
           image: "",
           button: {
-            text: "Get the Gold package",
-            url: "/",
+            text: "Get the Platinum package",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AR`,
           },
           fees: [
             {

@@ -1,29 +1,28 @@
 export const about = {
-    links: [
-      {
-        text: `View All Topics`,
-        url: `/help-center/`,
-      },
-      {
-        text: `Individual State Information`,
-        url: `/research-topics/state-info`,
-      },
+    links: [{
+            text: `View All Topics`,
+            url: `/help-center/`,
+        },
+        {
+            text: `Individual State Information`,
+            url: `/research-topics/state-info`,
+        },
     ],
     header: `How to Meet New York LLC Publication Requirements`,
     text: `If you’re starting a limited liability company in the state of New York, there’s an extra step you’ll need to take once you’ve filed your Articles of Organization. You will need to publish information about your business in two newspapers. This is known as the “New York LLC Publication Requirement” and it’s a necessary part of starting a business in the state. You’ll need to complete this process if you’re creating a domestic or foreign LLC in NY, and you’ll have to do so within 120 days of starting your LLC.`,
     header2: `Here’s how to get a certificate of publication in NY:`,
     list: [
-          `Start an LLC in the state of New York
+        `Start an LLC in the state of New York
           <a href="/" target="_blank">(we can help with that).</a>`,
-          `The
+        `The
           <a href="https://www.dos.ny.gov/index.html" rel="noopener noreferrer nofollow" target="_blank">New York Department of State</a>
           will provide you with a filing receipt.`,
-          `Contact the County Clerk in the same county where your LLC has its principal office.`,
-          `The County Clerk will advise you of two newspapers where you will need to file a notice that you’ve formed an LLC.`,
-          `You’ll need to include certain details about your LLC (more on that below).`,
-          `You’ll need to publish once a week for six successive weeks.`,
-          `Once you’ve completed publication, the newspaper will send you an “Affidavit of Publication.”`,
-          `Finally, you should file a “Certificate of Publication” with the New York Department of State.`,
+        `Contact the County Clerk in the same county where your LLC has its principal office.`,
+        `The County Clerk will advise you of two newspapers where you will need to file a notice that you’ve formed an LLC.`,
+        `You’ll need to include certain details about your LLC (more on that below).`,
+        `You’ll need to publish once a week for six successive weeks.`,
+        `Once you’ve completed publication, the newspaper will send you an “Affidavit of Publication.”`,
+        `Finally, you should file a “Certificate of Publication” with the New York Department of State.`,
     ],
     text2: `Want to see if your business name is available in New York? `,
     link: {
@@ -36,9 +35,8 @@ export const about = {
       guide that tells you what you need to do. Once your Articles of Organization have been filed, you’ll receive a filing receipt, which you’ll need for the next step.`,
     button: {
         text: `Start a New Tork LLC With IncFile`,
-        url: `/`,
+        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=NY`,
     },
-    //https://www.incfile.com/form-order-now.php?entityType=LLC&entityState=NY
     header4: `Find Your County Clerk’s Contact Details`,
     text4: `You’ll need to get in touch with your local County Clerk, which will be in the same county as your LLC’s “principal office.” You can find their details through a quick Google search. Visit their website and find out how they want you to get in touch — typically via mail or an in-person visit.`,
     header5: `The County Clerk Will Tell You Where to Publish Your Notices`,
@@ -48,23 +46,22 @@ export const about = {
     list2: {
         header: `Typically, the notice published by the newspapers will need to include:`,
         list: [
-          `The name of your LLC.`,
-          `The date the LLC was formed (you can get this from your Articles of Organization).`,
-          `The county where your main office is located.`,
-          `The street address of your LLC.`,
-          `A statement that the Secretary of State has been designated as an agent of the LLC upon whom process against it may be served.`,
-          `The address where the NY Secretary of State may forward any process against the LLC.`,
-          `The name and address of your Registered Agent.`,
-          `A statement that the Registered Agent is to be the agent of the LLC upon whom process against it may be served.`,
-          `The purpose of the LLC, which can be a statement like “the purpose of the LLC is to engage in any lawful act or activity.”`,
-          `The date the LLC will dissolve. If you plan to run your LLC indefinitely, you can use the word “perpetual” here.`,
+            `The name of your LLC.`,
+            `The date the LLC was formed (you can get this from your Articles of Organization).`,
+            `The county where your main office is located.`,
+            `The street address of your LLC.`,
+            `A statement that the Secretary of State has been designated as an agent of the LLC upon whom process against it may be served.`,
+            `The address where the NY Secretary of State may forward any process against the LLC.`,
+            `The name and address of your Registered Agent.`,
+            `A statement that the Registered Agent is to be the agent of the LLC upon whom process against it may be served.`,
+            `The purpose of the LLC, which can be a statement like “the purpose of the LLC is to engage in any lawful act or activity.”`,
+            `The date the LLC will dissolve. If you plan to run your LLC indefinitely, you can use the word “perpetual” here.`,
         ],
     },
     button: {
         text: `Start a New Tork LLC With IncFile`,
-        url: `/`,
+        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=NY`,
     },
-    //https://www.incfile.com/form-order-now.php?entityType=LLC&entityState=NY
     header7: `Publish Your NY LLC Notice for Six Weeks`,
     text7: `It’s not sufficient to just publish your LLC in two separate newspapers for one week. NY state law requires you to publish the notice for six consecutive weeks. Because this is a standard requirement, the newspapers should have an easy process you can use for repeat publication.`,
     header8: `Receive an Affidavit of Publication from the Newspapers`,
@@ -82,21 +79,18 @@ export const about = {
     text12: `You’ll need to pay newspapers to publish details about your LLC, and then pay the Department of State to process the Certificate of Publication. The cost of publishing in a daily or weekly newspaper can vary widely, and could be up to $1,000.`,
     header14: `How Soon Do I Need to Publish These Notices?`,
     text13: `You should do so within 120 days of starting your NY LLC.`,
-}
+};
 
 export const related = {
-  header: 
-      `Related Articles`,
-  text:
-      `Other users were also interested in knowing about…`,
-  buttons: [
-      {
-          header: `How to Meet New York LLC Publication Requirements?`,
-          url: `/research-topics/state-info/ny-publication-requirement/`,
-      },
-      {
-          header: `How To Publish Your Notice Of Incorporation In Georgia?`,
-          url: `/research-topics/state-info/publish-inc-notice-georgia/`,
-      },
+    header: `Related Articles`,
+    text: `Other users were also interested in knowing about…`,
+    buttons: [{
+            header: `How to Meet New York LLC Publication Requirements?`,
+            url: `/research-topics/state-info/ny-publication-requirement/`,
+        },
+        {
+            header: `How To Publish Your Notice Of Incorporation In Georgia?`,
+            url: `/research-topics/state-info/publish-inc-notice-georgia/`,
+        },
     ],
-}
+};

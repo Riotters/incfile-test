@@ -11,20 +11,30 @@ import ContentMap from "../../atomic/partials/content-map";
 // Content
 import { namingYourBusiness } from "../../static/states-llc/washington/home";
 import { tabPages } from "../../static/states-llc/washington/general";
+import { getFullPricesAndFilings } from '../../api/Api';
 
-const BusinessNamesPage = () => (
-  <Layout>
-    <SEO
-    title="Washington Business Searches & Naming Your LLC"
-    description="Learn what you need to know about naming an LLC in WA with Incfile’s helpful resources. Pick your perfect business name today!"
-    />
-    <LLCLayout>
-        <LeftTabPages content={tabPages} />
-        <MainPageContent>
-            <ContentMap content={namingYourBusiness} />
-        </MainPageContent>
-    </LLCLayout>
-  </Layout>
-);
+const BusinessNamesPage = () => {
+    const [dataApi, setDataApi] = React.useState({});
+
+    React.useEffect(() => {
+        getFullPricesAndFilings('Washington').then(data => {
+            setDataApi(data);
+        });
+    }, []);
+    return (
+        <Layout>
+            <SEO
+                title="Washington Business Searches & Naming Your LLC"
+                description="Learn what you need to know about naming an LLC in WA with Incfile’s helpful resources. Pick your perfect business name today!"
+            />
+            <LLCLayout data={dataApi}>
+                <LeftTabPages content={tabPages} />
+                <MainPageContent>
+                    <ContentMap content={namingYourBusiness} />
+                </MainPageContent>
+            </LLCLayout>
+        </Layout>
+    );
+}
 
 export default BusinessNamesPage;

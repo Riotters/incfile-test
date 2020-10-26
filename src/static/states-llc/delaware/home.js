@@ -6,7 +6,7 @@ export const top = {
   buttons: [
     {
       text: `See detailed pricing`,
-      url: `/form-order-now.php?entityType=LLC&entityState=DE`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=DE`,
     },
   ],
 };
@@ -19,7 +19,7 @@ export const howToGuide = [
     marginBottom: 40,
   },
   {
-    type: 'text',
+    type: "text",
     content: '<iframe width="720" height="350" src="https://www.youtube.com/embed/imnAJolDWoU?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>',
     marginBottom: 40,
   },
@@ -42,9 +42,7 @@ export const howToGuide = [
     type: `list-dot`,
     content: {
       header: `Briefly, the benefits of starting a Delaware LLC include:`,
-      list: [`Separating and limiting your personal liability from your business liability and debts`,
-             `Quick and simple filing, management, compliance, regulation and administration of your Delaware LLC`,
-             `Easy tax filing and potential advantages for your tax treatment`],
+      list: [`Separating and limiting your personal liability from your business liability and debts`, `Quick and simple filing, management, compliance, regulation and administration of your Delaware LLC`, `Easy tax filing and potential advantages for your tax treatment`],
     },
     marginBottom: 32,
     color: color.blue3,
@@ -117,7 +115,7 @@ export const howToGuide = [
                    <li> Name of the incorporator </li>
                    </ul>
                    <p>You can file your Delaware LLC Certificate of Formation online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Delaware. You only need to file your Certificate of Formation once.</p></br>
-                   <a href="/form-order-now.php?entityType=LLC&entityState=DE/"> Form your LLC now </a>`,
+                   <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=DE/"> Form your LLC now </a>`,
         },
       ],
     },
@@ -133,9 +131,11 @@ export const howToGuide = [
     type: `list-dot`,
     content: {
       header: `The DE Division of Corporations has plenty of additional information on forming and running a business in Delaware.`,
-      list: [`<a href="https://corp.delaware.gov/" target="_blank" rel="noopener noreferrer">Delaware Division of Corporations for forming and running your DE LLC</a>`,
-             `<a href="https://dol.delaware.gov/" target="_blank" rel="noopener noreferrer">Delaware Department of Labor for DE employers and hiring</a>`,
-             `<a href="https://revenue.delaware.gov/services-for-the-business-taxpayer/" target="_blank" rel="noopener noreferrer">Delaware Division of Revenue for DE taxes</a>`],
+      list: [
+        `<a href="https://corp.delaware.gov/" target="_blank" rel="noopener noreferrer">Delaware Division of Corporations for forming and running your DE LLC</a>`,
+        `<a href="https://dol.delaware.gov/" target="_blank" rel="noopener noreferrer">Delaware Department of Labor for DE employers and hiring</a>`,
+        `<a href="https://revenue.delaware.gov/services-for-the-business-taxpayer/" target="_blank" rel="noopener noreferrer">Delaware Division of Revenue for DE taxes</a>`,
+      ],
     },
     marginBottom: 32,
     color: color.babyblue3,
@@ -333,10 +333,12 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Suffixes, such as Corporation, Company, Incorporated, Incorporation, Limited, Corp., Co., Inc., Ltd., LLC, etc.`,
-             `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`, 
-             `The singular, plural or possessive forms of a word`, 
-             `Abbreviations, punctuation, symbols, fonts, typefaces, etc.`],
+      list: [
+        `Suffixes, such as Corporation, Company, Incorporated, Incorporation, Limited, Corp., Co., Inc., Ltd., LLC, etc.`,
+        `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`,
+        `The singular, plural or possessive forms of a word`,
+        `Abbreviations, punctuation, symbols, fonts, typefaces, etc.`,
+      ],
     },
     marginBottom: 32,
     color: color.babyblue3,
@@ -367,15 +369,17 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Are very similar to the name of a federal or DE agency or organization (e.g., FBI, FDA, Delaware Division of Revenue, Delaware Police, Treasury, etc.)`,
-             `Suggest affiliation with a federal or state agency or organization`, 
-             `Use the term “Olympic” or any terms that are trademarks of the Olympic organization`, 
-             `Imply a purpose that it would be illegal for your business to carry out`],
+      list: [
+        `Are very similar to the name of a federal or DE agency or organization (e.g., FBI, FDA, Delaware Division of Revenue, Delaware Police, Treasury, etc.)`,
+        `Suggest affiliation with a federal or state agency or organization`,
+        `Use the term “Olympic” or any terms that are trademarks of the Olympic organization`,
+        `Imply a purpose that it would be illegal for your business to carry out`,
+      ],
     },
     marginBottom: 40,
     color: color.yellow3,
     curve: true,
-    curveColor:color.red1,
+    curveColor: color.red1,
   },
   {
     type: `header`,
@@ -392,11 +396,13 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`The name of your LLC may contain the names of members or the words "Club," "Foundation," "Fund," "Institute," "Society," "Union," "Syndicate," or "Trust" instead of “LLC.”`,
-             `The name can include words in a foreign language, as long as you provide a translation into English when filing the LLC.`,
-             `Some words, like “Bank,” “University” or “College” are restricted and need additional paperwork`,
-             `Other words (typically those associated with certain professions and licensed individuals) require the individual to be part of the LLC — doctors, engineers or accountants, for example.`,
-             `The name may contain the name of a member or manager.`],
+      list: [
+        `The name of your LLC may contain the names of members or the words "Club," "Foundation," "Fund," "Institute," "Society," "Union," "Syndicate," or "Trust" instead of “LLC.”`,
+        `The name can include words in a foreign language, as long as you provide a translation into English when filing the LLC.`,
+        `Some words, like “Bank,” “University” or “College” are restricted and need additional paperwork`,
+        `Other words (typically those associated with certain professions and licensed individuals) require the individual to be part of the LLC — doctors, engineers or accountants, for example.`,
+        `The name may contain the name of a member or manager.`,
+      ],
     },
     marginBottom: 48,
     color: color.green3,
@@ -441,9 +447,11 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`If you don’t want to form your Delaware LLC right now, you can reserve the business name with the Delaware Division of Corporations. You will need to complete a form and file it with the DE DOC. You do not need to reserve a name if you are forming your business right away.
+      list: [
+        `If you don’t want to form your Delaware LLC right now, you can reserve the business name with the Delaware Division of Corporations. You will need to complete a form and file it with the DE DOC. You do not need to reserve a name if you are forming your business right away.
               <a href="https://icis.corp.delaware.gov/ecorp/namereserv/namereservation.aspx" target="_blank" rel="noopener noreferrer">Delaware DOC LLC name reservation form</a>`,
-             `If you’re ready to start your Delaware LLC, you can file your Certificate of Formation With the Delaware Division of Corporations, or <a href="/form-order-now.php?entityType=LLC&entityState=DE/">let Incfile take care of it for you</a>.`],
+        `If you’re ready to start your Delaware LLC, you can file your Certificate of Formation With the Delaware Division of Corporations, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=DE/">let Incfile take care of it for you</a>.`,
+      ],
     },
     marginBottom: 32,
     color: color.purple3,
@@ -541,15 +549,12 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Appeal to your customers`,
-             `Be memorable enough to stand out`, 
-             `Best represent your product or services`,
-             `Not be used by another business`],
+      list: [`Appeal to your customers`, `Be memorable enough to stand out`, `Best represent your product or services`, `Not be used by another business`],
     },
     marginBottom: 40,
     color: color.blue3,
   },
-  
+
   {
     type: `arrow-link`,
     content: {
@@ -608,10 +613,12 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`If the Registered Agent is a person, they must reside in Delaware`,
-             `If the Registered Agent is a business, they must be able to conduct business in Delaware`,
-             `The Registered Agent must have a physical street address in Delaware, not a P.O. Box`,
-             `The DE Registered Agent must be available in person during normal business hours to sign for any correspondence`],
+      list: [
+        `If the Registered Agent is a person, they must reside in Delaware`,
+        `If the Registered Agent is a business, they must be able to conduct business in Delaware`,
+        `The Registered Agent must have a physical street address in Delaware, not a P.O. Box`,
+        `The DE Registered Agent must be available in person during normal business hours to sign for any correspondence`,
+      ],
     },
     marginBottom: 32,
     color: color.yellow3,
@@ -636,9 +643,11 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Correspondence from the Delaware Division of Corporations, like a notice to file reports and other forms`,
-             `Service of process documents (for example, if your Delaware LLC has legal proceedings issued against it)`, 
-             `Official Delaware and federal government documents, form filings and requests for information (including taxes, permits and company filings)`],
+      list: [
+        `Correspondence from the Delaware Division of Corporations, like a notice to file reports and other forms`,
+        `Service of process documents (for example, if your Delaware LLC has legal proceedings issued against it)`,
+        `Official Delaware and federal government documents, form filings and requests for information (including taxes, permits and company filings)`,
+      ],
     },
     marginBottom: 48,
     color: color.purple3,
@@ -665,15 +674,17 @@ export const registeredAgent = [
     type: `text`,
     content: `Here’s what the Infile Delaware Registered Agent service provides for your DE LLC.`,
     marginBottom: 24,
-  }, 
+  },
   {
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`An always-available Delaware Registered Agent who can receive correspondence, documents and legal proceedings on your LLC’s behalf`,
-             `A digital dashboard where you can access, store and retrieve any information we’ve received for your Delaware business`,
-             `Email notification whenever we receive documents for your Delaware business`,
-             `Automatic forwarding of all legal correspondence, documentation and information directly to you`],
+      list: [
+        `An always-available Delaware Registered Agent who can receive correspondence, documents and legal proceedings on your LLC’s behalf`,
+        `A digital dashboard where you can access, store and retrieve any information we’ve received for your Delaware business`,
+        `Email notification whenever we receive documents for your Delaware business`,
+        `Automatic forwarding of all legal correspondence, documentation and information directly to you`,
+      ],
     },
     marginBottom: 32,
     color: color.green3,
@@ -735,7 +746,7 @@ export const registeredAgent = [
     type: `button`,
     content: {
       text: `Incorporate your business through Incfile`,
-      url: `/form-order-now.php?entityType=LLC&entityState=DE/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=DE/`,
     },
     theme: `primary48`,
     marginBottom: 48,
@@ -813,9 +824,11 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`<b>Getting served or sued and not finding out about it:</b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`, 
-             `<b>Falling out of good standing with the Delaware Division of Corporations: </b> If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`, 
-             `<b>Losing your status as a Delaware LLC: </b> A DE Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your Delaware LLC may be dissolved.`],
+      list: [
+        `<b>Getting served or sued and not finding out about it:</b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
+        `<b>Falling out of good standing with the Delaware Division of Corporations: </b> If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
+        `<b>Losing your status as a Delaware LLC: </b> A DE Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your Delaware LLC may be dissolved.`,
+      ],
     },
     marginBottom: 48,
     color: color.blue3,
@@ -835,19 +848,21 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`The DE Registered Agent must have a physical street address in Delaware. If you’re forming an LLC outside DE, you will need to use an in-state Registered Agent.`, 
-             `You always need to have someone on hand during business hours at the Delaware address to sign for important documents.`,
-             `The DE Registered Agent’s name and address are part of the public record and available through the Delaware Division of Corporations website. If you would prefer your name and address aren’t published, you might choose a Registered Agent service.`, 
-             `If you change your Delaware business address or move out of state, you would need to file additional documentation with the DE Division of Corporations for the new address if you act as your own Registered Agent. This would not be the case if you use a Registered Agent service, making a move or address change much simpler.`],
+      list: [
+        `The DE Registered Agent must have a physical street address in Delaware. If you’re forming an LLC outside DE, you will need to use an in-state Registered Agent.`,
+        `You always need to have someone on hand during business hours at the Delaware address to sign for important documents.`,
+        `The DE Registered Agent’s name and address are part of the public record and available through the Delaware Division of Corporations website. If you would prefer your name and address aren’t published, you might choose a Registered Agent service.`,
+        `If you change your Delaware business address or move out of state, you would need to file additional documentation with the DE Division of Corporations for the new address if you act as your own Registered Agent. This would not be the case if you use a Registered Agent service, making a move or address change much simpler.`,
+      ],
     },
     marginBottom: 48,
     color: color.green3,
   },
   {
-      type: `header`,
-      content: `FAQs About Delaware Registered Agents`,
-      size: 3,
-      marginBottom: 32,
+    type: `header`,
+    content: `FAQs About Delaware Registered Agents`,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `accordion`,
@@ -883,9 +898,11 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: `You might find these resources helpful:`,
-      list: [`<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/">The Main Functions of a Delaware Registered Agentt</a>`,
-             `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Delaware Registered Agent</a>`,
-             `<a href-"/research-topics/registered-agent-help/what-does-a-registered-agent-do/">What a Delaware Registered Agent Does</a>`],
+      list: [
+        `<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/">The Main Functions of a Delaware Registered Agentt</a>`,
+        `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Delaware Registered Agent</a>`,
+        `<a href-"/research-topics/registered-agent-help/what-does-a-registered-agent-do/">What a Delaware Registered Agent Does</a>`,
+      ],
     },
     marginBottom: 48,
     color: color.babyblue3,
@@ -921,11 +938,7 @@ export const feesAndRequirments = [
     marginBottom: 32,
   },
   {
-    type: `table-simple`,
-    content: {
-      headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
-      rows: [[`$110`, `15 Business Days`, `6 Business Days`]],
-    },
+    type: `dynamic_ar_box`
   },
   {
     type: `arrow-link`,
@@ -957,7 +970,7 @@ export const feesAndRequirments = [
     type: `button`,
     content: {
       text: `Incorporate your Delaware LLC through Incfile today`,
-      url: `/form-order-now.php?entityType=LLC&entityState=DE/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=DE/`,
     },
     theme: `primary48`,
     marginBottom: 48,
@@ -1014,26 +1027,9 @@ export const feesAndRequirments = [
     marginBottom: 48,
   },
   {
-    type: `header`,
-    content: `Delaware Franchise Tax Report`,
-    size: 4,
-    marginBottom: 24,
+    type: `dynamic_filing_requirement`
   },
-  {
-    type: `text`,
-    content: `<b>Frequency:</b> Annually`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `<b>Due Date:</b> June 1st`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `<b>Filing Fee:</b> $300`,
-    marginBottom: 32,
-  },
+  
   {
     type: `text`,
     content: `Incfile can also complete and file your Delaware franchise report on your behalf.`,
@@ -1063,9 +1059,11 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: `Permits and licenses vary based on:`,
-      list: [`The industry your Delaware LLC operates in (e.g., restaurants will need health permits)`, 
-             `The location of your Delaware LLC (state, county or city) (e.g., a license to conduct business from the city of Wilmington)`, 
-             `The type of business that you run (e.g., healthcare providers must meet HIPAA requirements)`],
+      list: [
+        `The industry your Delaware LLC operates in (e.g., restaurants will need health permits)`,
+        `The location of your Delaware LLC (state, county or city) (e.g., a license to conduct business from the city of Wilmington)`,
+        `The type of business that you run (e.g., healthcare providers must meet HIPAA requirements)`,
+      ],
     },
     marginBottom: 32,
     color: color.green3,
@@ -1081,8 +1079,7 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`A complete report on all the licenses, permits and tax registrations your Delaware LLC will need`,
-             `The application forms you will need to file with the Delaware, regional and federal licensing authorities`],
+      list: [`A complete report on all the licenses, permits and tax registrations your Delaware LLC will need`, `The application forms you will need to file with the Delaware, regional and federal licensing authorities`],
     },
     marginBottom: 24,
     color: color.purple3,
@@ -1194,9 +1191,7 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: `Adjustments for which you might want to file Delaware Articles of Amendment include:`,
-      list: [`Adding, removing or changing a Delaware LLC member or manager`,
-             `Changing the business address of your LLC`,
-             `Altering the stated business activities of your Delaware LLC`],
+      list: [`Adding, removing or changing a Delaware LLC member or manager`, `Changing the business address of your LLC`, `Altering the stated business activities of your Delaware LLC`],
     },
     marginBottom: 40,
     color: color.yellow3,
@@ -1394,10 +1389,7 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
-      list: [`On profits of $50,000, you would pay self-employment tax of $7,650`,
-             `On profits of $90,000, you would pay self-employment tax of $13,770`,
-             `On profits of $120,000, you would pay self-employment tax of $18,360`,
-             `On profits of $160,000, you would pay self-employment tax of $24,480`],
+      list: [`On profits of $50,000, you would pay self-employment tax of $7,650`, `On profits of $90,000, you would pay self-employment tax of $13,770`, `On profits of $120,000, you would pay self-employment tax of $18,360`, `On profits of $160,000, you would pay self-employment tax of $24,480`],
     },
     marginBottom: 48,
     color: color.green3,
@@ -1536,9 +1528,7 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `The most common types of estimated tax are:`,
-      list: [`Federal income tax`,
-             `Federal self-employment tax`,
-             `Delaware state tax`],
+      list: [`Federal income tax`, `Federal self-employment tax`, `Delaware state tax`],
     },
     marginBottom: 24,
     color: color.red3,

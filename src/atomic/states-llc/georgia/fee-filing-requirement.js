@@ -17,6 +17,9 @@ import Accordion from "../../organisms/accordion/accordion";
 import TextBoxed from "../../molecules/static-check/circle-checkmark-text-boxed";
 import GridTableRow from "../../molecules/blocks/grid-table-row";
 
+import FilingRequirementBox from '../filing-requirement-box';
+import AnnualReportBoxOnly from '../annual-report-box-only';
+
 const Wrapper = styled.div`
     h2, h3{
         text-align: left;
@@ -48,17 +51,17 @@ const Wrapper = styled.div`
     }
 `
 
-const FeeFilingRequirementSection = ({ content }) => {
+const FeeFilingRequirementSection = ({ content, data }) => {
     return (
-        <Wrapper>              
+        <Wrapper>
             {content.map((item, i) => (
                 <div>
-                    {item.type === 'heading' && 
+                    {item.type === 'heading' &&
                         <Heading size={item.size} style={item.styles}>{item.content}</Heading>
                     }
                                         
-                    {item.type === 'paragraph' && 
-                        <Paragraph big mixed={true} style={item.styles }>{parse(item.content)}</Paragraph>
+                    {item.type === 'paragraph' &&
+                        <Paragraph big mixed={true} style={item.styles}>{parse(item.content)}</Paragraph>
                     }
 
                     {item.type === 'arrow-links' && item.content.map(link => (
@@ -69,40 +72,40 @@ const FeeFilingRequirementSection = ({ content }) => {
                         <IconListColorBox color={color.blue3} content={item.content} rounded />
                     }
 
-                    {item.type === 'button' && 
+                    {item.type === 'button' &&
                         <Button content={item.content} theme={item.theme} arrow width={item.width ?? `350px`} margin="16px 0 0 0" marginMD="42px 0 42px 0" />
                     }
 
-                    {item.type === 'accordingTabWithCountingLeft' && 
-                        <AcccordionCounting content={item.content} tab/>
+                    {item.type === 'accordingTabWithCountingLeft' &&
+                        <AcccordionCounting content={item.content} tab />
                     }
 
-                    {item.type === 'numberBoxList' && 
-                        <NumericBoxedList content={item.content} style={item.styles}/>
+                    {item.type === 'numberBoxList' &&
+                        <NumericBoxedList content={item.content} style={item.styles} />
                     }
 
-                    {item.type === 'iconListColorBox' && 
+                    {item.type === 'iconListColorBox' &&
                         <IconListColorBox color={item.boxColor} style={item.styles} content={item.content} rounded />
                     }
 
                     {item.type === 'textBoxWithCheckIcon' && item.content.map(i => (
-                        <TextBoxed style={{marginBottom: "8px"}}>
+                        <TextBoxed style={{ marginBottom: "8px" }}>
                             <Paragraph bottomMargin={0}>
                                 {i}
                             </Paragraph>
                         </TextBoxed>
                     ))}
 
-                    {item.type === 'box-cta' && 
+                    {item.type === 'box-cta' &&
                         <BoxCTA bgColor={item.color} bgImage={item.bgImage[0]} style={item.styles} content={item.content} />
                     }
 
                     {item.type === 'accordion' && (
-                        <Accordion content={item.content} tab/>
+                        <Accordion content={item.content} tab />
                     )}
 
                     {item.type === 'accordionWithCounting' && (
-                        <AcccordionCounting content={item.content} tab/>
+                        <AcccordionCounting content={item.content} tab />
                     )}
 
                     {item.type === 'gridTable' && (
@@ -113,11 +116,18 @@ const FeeFilingRequirementSection = ({ content }) => {
                             )))}
                         </div>
                     )}
+                    {item.type === 'dynamic_ar_box' && (
+                        <AnnualReportBoxOnly data={data} />
+                    )}
+
+                    {item.type === 'dynamic_filing_requirement' && (
+                        <FilingRequirementBox data={data} />
+                    )}
                 </div>
             ))}
 
         </Wrapper>
-    )
+    );
 }
 
 export default FeeFilingRequirementSection

@@ -17,7 +17,7 @@ const Regulations = () => (
             </Heading>
             <Paragraph big mixed>
                 You can’t escape real-world licenses, permits and regulations, and they’re particularly onerous for a
-                food-based business. You will need to explore local, state and federal licenses and permits, and <Link to="/">we can
+                food-based business. You will need to explore local, state and federal licenses and permits, and <Link to="https://www.incfile.com/business-license-research-package/">we can
                 also help out with researching your business licensing needs</Link>. Pay particular attention to any permits or
                 licenses needed for safety and hygiene.
             </Paragraph>
@@ -28,7 +28,7 @@ const Regulations = () => (
             </Paragraph>
             <Paragraph big mixed>
                 As a rule of thumb, we recommend holding back around a third of your earnings
-                to pay your taxes. We can also <Link to="/">prepare and file your tax returns for you</Link>.
+                to pay your taxes. We can also <Link to="https://www.incfile.com/business-accounting/">prepare and file your tax returns for you</Link>.
             </Paragraph>
         </Container>
     </Wrapper>

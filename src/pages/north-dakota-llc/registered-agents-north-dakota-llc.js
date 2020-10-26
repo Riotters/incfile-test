@@ -11,20 +11,30 @@ import ContentMap from "../../atomic/partials/content-map";
 // Content
 import { registeredAgent } from "../../static/states-llc/north-dakota/home";
 import { tabPages } from "../../static/states-llc/north-dakota/general";
+import { getFullPricesAndFilings } from '../../api/Api';
 
-const RegisteredAgentPage = () => (
-  <Layout>
-    <SEO
-    title="Texas Business Search | How to Name Your TX LLC"
-    description="Learn what you need to know about naming an LLC in Texas with Incfile's helpful resources. Pick your perfect business name today!"
-    />
-    <LLCLayout>
-        <LeftTabPages content={tabPages} />
-        <MainPageContent>
-            <ContentMap content={registeredAgent} />
-        </MainPageContent>
-    </LLCLayout>
-  </Layout>
-);
+const RegisteredAgentPage = () => {
+    const [dataApi, setDataApi] = React.useState({});
+
+    React.useEffect(() => {
+        getFullPricesAndFilings('North Dakota').then(data => {
+            setDataApi(data);
+        });
+    }, []);
+    return (
+        <Layout>
+            <SEO
+                title="North Dakota Registered Agents for LLCs"
+                description="Do you need a Registered Agent for your ND LLC? Learn what Registered Agents do and how to get one with Incfile’s helpful guide."
+            />
+            <LLCLayout data={dataApi}>
+                <LeftTabPages content={tabPages} />
+                <MainPageContent>
+                    <ContentMap content={registeredAgent} />
+                </MainPageContent>
+            </LLCLayout>
+        </Layout>
+    );
+}
 
 export default RegisteredAgentPage;

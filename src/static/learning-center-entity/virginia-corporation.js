@@ -1,12 +1,10 @@
-import React from "react";
-
 export const top = {
   header: `Form a Corporation in Virginia.`,
   text: `$0 + State Fee & 1st Year FREE Registered Agent`,
   buttons: [
     {
       text: `Start my corporation`,
-      url: `/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=VA`,
     },
   ],
 };
@@ -174,86 +172,6 @@ export const fillingRequirements = {
   },
 };
 
-export const packets = {
-  header: `Select the package that works best for you`,
-  priceOptions: [
-    {
-      header: "Silver",
-      variant: "",
-      text: "Our core features for\n" + "the lowest price",
-      price: 100,
-      image: "",
-      button: {
-        text: "Get the Silver package",
-        url: "/",
-      },
-      fees: [
-        {
-          text: "Package fee",
-          price: "0",
-        },
-        {
-          text: "State fee",
-          price: "100",
-        },
-      ],
-      include: "The Silver Services includes:",
-      list: ["Preparing & Filing the Articles \n" + "of Organization", "Unlimited Name Searches", "FREE Registered Agent Service for \n" + "a year!"],
-      fee: "",
-      savings: "",
-    },
-    {
-      header: "Gold",
-      variant: "most popular",
-      text: "Our core features for\n" + "the lowest price",
-      price: 100,
-      image: "",
-      button: {
-        text: "Get the Gold package",
-        url: "/",
-      },
-      fees: [
-        {
-          text: "Package fee",
-          price: "0",
-        },
-        {
-          text: "State fee",
-          price: "100",
-        },
-      ],
-      include: "The Gold Services includes:",
-      list: ["Preparing & Filing the Articles \n" + "of Organization", "Unlimited Name Searches", "FREE Registered Agent Service for \n" + "a year!"],
-      fee: "",
-      savings: "SAVE $468",
-    },
-    {
-      header: "Platinum",
-      variant: "Best value",
-      text: "Our core features for\n" + "the lowest price",
-      price: 100,
-      image: "",
-      button: {
-        text: "Get the Platinum package",
-        url: "/",
-      },
-      fees: [
-        {
-          text: "Package fee",
-          price: "0",
-        },
-        {
-          text: "State fee",
-          price: "100",
-        },
-      ],
-      include: "The Platinum Services includes:",
-      list: ["Preparing & Filing the Articles \n" + "of Organization", "Unlimited Name Searches", "FREE Registered Agent Service for \n" + "a year!"],
-      fee: "",
-      savings: "SAVE $908",
-    },
-  ],
-};
 
 export const questions = {
   header: `Commonly Asked Questions For Starting a Virginia Corporation`,
@@ -348,13 +266,13 @@ export const articlesOfIncorporation = {
   box2: {
     header: `Other items may-but are not required to be-included in the articles of incorporation, such as:`,
     list: [
-        `Directors’ names and addresses.`,
-        `Shareholder preemptive rights, if any.`,
-        `Business purpose of the corporation.`,
-        `Provisions regulating the affairs and managing the business of the corporation.`,
-        `Par value for authorized shares or classes of shares.`,
-        `Limitations on a director’s or officer’s liability for fiscal damages to the corporation or its shareholders in certain situations.`,
-      ],
+      `Directors’ names and addresses.`,
+      `Shareholder preemptive rights, if any.`,
+      `Business purpose of the corporation.`,
+      `Provisions regulating the affairs and managing the business of the corporation.`,
+      `Par value for authorized shares or classes of shares.`,
+      `Limitations on a director’s or officer’s liability for fiscal damages to the corporation or its shareholders in certain situations.`,
+    ],
   },
 };
 

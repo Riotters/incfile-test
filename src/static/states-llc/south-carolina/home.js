@@ -6,7 +6,7 @@ export const top = {
   buttons: [
     {
       text: `See detailed pricing`,
-      url: `/form-order-now.php?entityType=LLC&entityState=SC`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=SC`,
     },
   ],
 };
@@ -32,9 +32,7 @@ export const howToGuide = [
     type: `list-dot`,
     content: {
       header: `Briefly, the benefits of starting a South Carolina LLC include:`,
-      list: [`Separating and limiting your personal liability from your business liability and debts`,
-             `Quick and simple filing, management, compliance, regulation and administration of your South Carolina LLC`,
-             `Easy tax filing and potential advantages for your tax treatment`],
+      list: [`Separating and limiting your personal liability from your business liability and debts`, `Quick and simple filing, management, compliance, regulation and administration of your South Carolina LLC`, `Easy tax filing and potential advantages for your tax treatment`],
     },
     marginBottom: 48,
     color: color.blue3,
@@ -100,7 +98,7 @@ export const howToGuide = [
                    <li> Name of the incorporator </li>
                    </ul>
                    <p>You can file your South Carolina LLC Articles of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in South Carolina. You only need to file your Articles of Organization once.</p></br>
-                   <a href="/form-order-now.php?entityType=LLC&entityState=SC/"> Form your LLC now </a>`,
+                   <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=SC/"> Form your LLC now </a>`,
         },
       ],
     },
@@ -116,9 +114,11 @@ export const howToGuide = [
     type: `list-dot`,
     content: {
       header: `The Secretary of State has plenty of other information on forming and running a business in South Carolina. You’ll find other useful information below.`,
-      list: [`<a href="https://sos.sc.gov/online-filings/business-entities" target="_blank" rel="noopener noreferrer">South Carolina Secretary of State for forming and running your LLC</a>`,
-             `<a href="https://dew.sc.gov/" target="_blank" rel="noopener noreferrer">South Carolina Department of Employment and Workforce for SC employers and hiring</a>`,
-             `<a href="https://dor.sc.gov/" target="_blank" rel="noopener noreferrer">South Carolina Department of Revenue for SC taxes</a>`],
+      list: [
+        `<a href="https://sos.sc.gov/online-filings/business-entities" target="_blank" rel="noopener noreferrer">South Carolina Secretary of State for forming and running your LLC</a>`,
+        `<a href="https://dew.sc.gov/" target="_blank" rel="noopener noreferrer">South Carolina Department of Employment and Workforce for SC employers and hiring</a>`,
+        `<a href="https://dor.sc.gov/" target="_blank" rel="noopener noreferrer">South Carolina Department of Revenue for SC taxes</a>`,
+      ],
     },
     marginBottom: 32,
     color: color.babyblue3,
@@ -284,10 +284,12 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Suffixes, such as Corporation, Company, Incorporated, Incorporation, Limited, Corp., Co., Inc., Ltd., LLC, etc.`,
-             `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`, 
-             `The singular, plural or possessive forms of a word`, 
-             `Abbreviations, punctuation, symbols, fonts, typefaces, etc.`],
+      list: [
+        `Suffixes, such as Corporation, Company, Incorporated, Incorporation, Limited, Corp., Co., Inc., Ltd., LLC, etc.`,
+        `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`,
+        `The singular, plural or possessive forms of a word`,
+        `Abbreviations, punctuation, symbols, fonts, typefaces, etc.`,
+      ],
     },
     marginBottom: 32,
     color: color.babyblue3,
@@ -318,15 +320,17 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Are very similar to the name of a federal or South Carolina agency or organization (e.g., FBI, FDA, South Carolina Department of Revenue, South Carolina Police, Treasury, etc.)`,
-             `Suggest affiliation with a federal or state agency or organization`, 
-             `Use the term “Olympic” or any terms that are trademarks of the Olympic organization`, 
-             `Imply a purpose that it would be illegal for your business to carry out`],
+      list: [
+        `Are very similar to the name of a federal or South Carolina agency or organization (e.g., FBI, FDA, South Carolina Department of Revenue, South Carolina Police, Treasury, etc.)`,
+        `Suggest affiliation with a federal or state agency or organization`,
+        `Use the term “Olympic” or any terms that are trademarks of the Olympic organization`,
+        `Imply a purpose that it would be illegal for your business to carry out`,
+      ],
     },
     marginBottom: 32,
     color: color.yellow3,
     curve: true,
-    curveColor:color.red1,
+    curveColor: color.red1,
   },
   {
     type: `header`,
@@ -368,8 +372,10 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`If you don’t want to form your LLC right now, you can reserve the business name with the South Carolina Secretary of State. You do not need to reserve a name if you are forming your business right away.
-              If you’re ready to start your LLC, you can formally file your Articles of Organization with the South Carolina SOS, or <a href="/form-order-now.php?entityType=LLC&entityState=SC/">let Incfile take care of it for you</a>.`],
+      list: [
+        `If you don’t want to form your LLC right now, you can reserve the business name with the South Carolina Secretary of State. You do not need to reserve a name if you are forming your business right away.
+              If you’re ready to start your LLC, you can formally file your Articles of Organization with the South Carolina SOS, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=SC/">let Incfile take care of it for you</a>.`,
+      ],
     },
     marginBottom: 32,
     color: color.purple3,
@@ -455,15 +461,12 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Appeal to your customers`,
-             `Be memorable enough to stand out`, 
-             `Best represent your product or services`,
-             `Not be used by another business`],
+      list: [`Appeal to your customers`, `Be memorable enough to stand out`, `Best represent your product or services`, `Not be used by another business`],
     },
     marginBottom: 40,
     color: color.blue3,
   },
-  
+
   {
     type: `arrow-link`,
     content: {
@@ -506,10 +509,12 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`If the Registered Agent is a person, they must reside in South Carolina.`,
-             `If the Registered Agent is a business, they must be able to conduct business in South Carolina.`,
-             `The Registered Agent must have a physical street address in South Carolina, not a P.O. Box.`,
-             `The Registered Agent must be available in person during normal business hours to sign for any correspondence.`],
+      list: [
+        `If the Registered Agent is a person, they must reside in South Carolina.`,
+        `If the Registered Agent is a business, they must be able to conduct business in South Carolina.`,
+        `The Registered Agent must have a physical street address in South Carolina, not a P.O. Box.`,
+        `The Registered Agent must be available in person during normal business hours to sign for any correspondence.`,
+      ],
     },
     marginBottom: 32,
     color: color.yellow3,
@@ -534,9 +539,11 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Correspondence from the Secretary of State, such as a notice to file reports and other forms`,
-             `Service of process documents (for example, if your LLC has legal proceedings issued against it)`,
-             `Official South Carolina and federal government documents, form filings and requests for information (including taxes, permits and company filings)`],
+      list: [
+        `Correspondence from the Secretary of State, such as a notice to file reports and other forms`,
+        `Service of process documents (for example, if your LLC has legal proceedings issued against it)`,
+        `Official South Carolina and federal government documents, form filings and requests for information (including taxes, permits and company filings)`,
+      ],
     },
     marginBottom: 24,
     color: color.purple3,
@@ -563,11 +570,13 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`An always-available South Carolina Registered Agent who can receive correspondence, documents and legal proceedings on your LLC’s behalf`,
-             `A digital dashboard where you can access, store and retrieve any information we’ve received for your business`,
-             `An email notification whenever we receive documents for your business`,
-             `Automatic forwarding of all legal correspondence, documentation and information directly to you`,
-             `A free (+ state fee) first year, whether you form your business through us or not ($119 a year after)`],
+      list: [
+        `An always-available South Carolina Registered Agent who can receive correspondence, documents and legal proceedings on your LLC’s behalf`,
+        `A digital dashboard where you can access, store and retrieve any information we’ve received for your business`,
+        `An email notification whenever we receive documents for your business`,
+        `Automatic forwarding of all legal correspondence, documentation and information directly to you`,
+        `A free (+ state fee) first year, whether you form your business through us or not ($119 a year after)`,
+      ],
     },
     marginBottom: 32,
     color: color.green3,
@@ -629,7 +638,7 @@ export const registeredAgent = [
     type: `button`,
     content: {
       text: `Incorporate your business through Incfile`,
-      url: `/form-order-now.php?entityType=LLC&entityState=SC/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=SC/`,
     },
     theme: `primary48`,
     marginBottom: 32,
@@ -707,9 +716,11 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`<b>Getting served or sued and not finding out about it:</b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`, 
-             `<b>Falling out of good standing with the South Carolina Secretary of State:</b> If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`, 
-             `<b>Losing your status as a South Carolina LLC:</b> A SC Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your LLC may be dissolved.`],
+      list: [
+        `<b>Getting served or sued and not finding out about it:</b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
+        `<b>Falling out of good standing with the South Carolina Secretary of State:</b> If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
+        `<b>Losing your status as a South Carolina LLC:</b> A SC Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your LLC may be dissolved.`,
+      ],
     },
     marginBottom: 48,
     color: color.blue3,
@@ -729,18 +740,20 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`The Registered Agent must have a physical street address in South Carolina. If you’re forming an LLC outside of SC, you will need to use an in-state Registered Agent. You always need to have someone on hand during business hours at the South Carolina address to sign for important documents.`, 
-             `The Registered Agent’s name and address are part of the public record and available through the South Carolina Secretary of State's website. If you would prefer your name and address aren’t published, you should choose a Registered Agent service.`,
-             `If you change your South Carolina business address or move out of state, you need to file additional documentation with the SC Secretary of State for the new address if you act as your own Registered Agent. This would not be the case if you use a Registered Agent service, making a move or address change much simpler.`],
+      list: [
+        `The Registered Agent must have a physical street address in South Carolina. If you’re forming an LLC outside of SC, you will need to use an in-state Registered Agent. You always need to have someone on hand during business hours at the South Carolina address to sign for important documents.`,
+        `The Registered Agent’s name and address are part of the public record and available through the South Carolina Secretary of State's website. If you would prefer your name and address aren’t published, you should choose a Registered Agent service.`,
+        `If you change your South Carolina business address or move out of state, you need to file additional documentation with the SC Secretary of State for the new address if you act as your own Registered Agent. This would not be the case if you use a Registered Agent service, making a move or address change much simpler.`,
+      ],
     },
     marginBottom: 48,
     color: color.green3,
   },
   {
-      type: `header`,
-      content: `FAQs About South Carolina Registered Agents`,
-      size: 3,
-      marginBottom: 32,
+    type: `header`,
+    content: `FAQs About South Carolina Registered Agents`,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `accordion`,
@@ -776,9 +789,11 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: `You might find these resources helpful:`,
-      list: [`<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/">The Main Functions of a South Carolina Registered Agent</a>`,
-             `<a href="/manage-your-company/change-of-registered-agent/">Changing Your South Carolina Registered Agent</a>`,
-             `<a href-"/research-topics/registered-agent-help/what-does-a-registered-agent-do/">What a South Carolina Registered Agent Does</a>`],
+      list: [
+        `<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/">The Main Functions of a South Carolina Registered Agent</a>`,
+        `<a href="/manage-your-company/change-of-registered-agent/">Changing Your South Carolina Registered Agent</a>`,
+        `<a href-"/research-topics/registered-agent-help/what-does-a-registered-agent-do/">What a South Carolina Registered Agent Does</a>`,
+      ],
     },
     marginBottom: 48,
     color: color.babyblue3,
@@ -814,11 +829,7 @@ export const feesAndRequirments = [
     marginBottom: 32,
   },
   {
-    type: `table-simple`,
-    content: {
-      headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
-      rows: [[`$150`, `7 Business Days`, `2 Business Days`]],
-    },
+    type: `dynamic_ar_box`
   },
   {
     type: `arrow-link`,
@@ -850,7 +861,7 @@ export const feesAndRequirments = [
     type: `button`,
     content: {
       text: `Incorporate your South Carolina LLC through Incfile today`,
-      url: `/form-order-now.php?entityType=LLC&entityState=SC/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=SC/`,
     },
     theme: `primary48`,
     marginBottom: 48,
@@ -946,9 +957,11 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: `Permits and licenses vary based on:`,
-      list: [`The industry your South Carolina LLC operates in (e.g., restaurants will need health permits)`, 
-             `The location of your South Carolina LLC (state, county or city) (e.g., a license to conduct business from the city of Pittsburgh)`, 
-             `The type of business that you run (e.g., healthcare providers must meet HIPAA requirements)`],
+      list: [
+        `The industry your South Carolina LLC operates in (e.g., restaurants will need health permits)`,
+        `The location of your South Carolina LLC (state, county or city) (e.g., a license to conduct business from the city of Pittsburgh)`,
+        `The type of business that you run (e.g., healthcare providers must meet HIPAA requirements)`,
+      ],
     },
     marginBottom: 32,
     color: color.green3,
@@ -964,8 +977,7 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`A complete report on all the licenses, permits and tax registrations your South Carolina LLC will need`,
-             `The application forms you will need to file with the South Carolinaa, regional and federal licensing authorities`],
+      list: [`A complete report on all the licenses, permits and tax registrations your South Carolina LLC will need`, `The application forms you will need to file with the South Carolinaa, regional and federal licensing authorities`],
     },
     marginBottom: 24,
     color: color.purple3,
@@ -1077,9 +1089,7 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: `Areas you might want to file South Carolina Articles of Amendment for include:`,
-      list: [`Adding, removing or changing a South Carolina LLC member or manager`,
-             `Changing the business address of your LLC`,
-             `Altering the stated business activities of your South Carolina LLC`],
+      list: [`Adding, removing or changing a South Carolina LLC member or manager`, `Changing the business address of your LLC`, `Altering the stated business activities of your South Carolina LLC`],
     },
     marginBottom: 24,
     color: color.yellow3,
@@ -1256,8 +1266,7 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `You will typically need to collect South Carolina sales tax on:`,
-      list: [`Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`,
-             `Certain services that your South Carolina business might provide`],
+      list: [`Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`, `Certain services that your South Carolina business might provide`],
     },
     marginBottom: 16,
     color: color.blue3,
@@ -1305,10 +1314,7 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
-      list: [`On profits of $30,000, you would pay self-employment tax of $4,590`,
-             `On profits of $60,000, you would pay self-employment tax of $9,180`,
-             `On profits of $100,000, you would pay self-employment tax of $15,300.`,
-             `On profits of $120,000, you would pay self-employment tax of $18,360`],
+      list: [`On profits of $30,000, you would pay self-employment tax of $4,590`, `On profits of $60,000, you would pay self-employment tax of $9,180`, `On profits of $100,000, you would pay self-employment tax of $15,300.`, `On profits of $120,000, you would pay self-employment tax of $18,360`],
     },
     marginBottom: 48,
     color: color.green3,
@@ -1447,9 +1453,7 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `The most common types of estimated tax are:`,
-      list: [`Federal income tax`,
-             `Federal self-employment tax`,
-             `South Carolina state tax`],
+      list: [`Federal income tax`, `Federal self-employment tax`, `South Carolina state tax`],
     },
     marginBottom: 32,
     color: color.green3,

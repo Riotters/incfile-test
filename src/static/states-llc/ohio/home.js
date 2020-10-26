@@ -6,7 +6,7 @@ export const top = {
   buttons: [
     {
       text: `See detailed pricing`,
-      url: `/form-order-now.php?entityType=LLC&entityState=AZ`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ`,
     },
   ],
 };
@@ -109,7 +109,7 @@ export const howToGuide = [
                    <li> Tax closing month </li>
                    </ul>
                    <p>You can file your Ohio Articles of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Ohio, but you only need to file your Articles of Organization once.</p></br>
-                   <a href="/form-order-now.php?entityType=LLC&entityState=OH/"> Form your LLC now </a>`,
+                   <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=OH/"> Form your LLC now </a>`,
         },
       ],
     },
@@ -790,7 +790,7 @@ export const registeredAgent = [
     type: `button`,
     content: {
       text: `Incorporate your business through Incfile.`,
-      url: `/form-order-now.php?entityType=LLC&entityState=OH`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=OH`,
     },
     theme: `primary48`,
     marginBottom: 32,
@@ -982,54 +982,8 @@ export const feesAndRequirments = [
     marginBottom: 32,
   },
   {
-    type: `table-simple`,
-    content: {
-      headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
-      rows: [[`$99`, `3 Weeks`, `7 Business Day`]],
-    },
+    type: `dynamic_ar_box`
   },
-  //   {
-  //     type: "table",
-  //     content: {
-  //       headers: [
-  //         [
-  //           {
-  //             label: "State Fee",
-  //             textCenter: true,
-  //           },
-  //           {
-  //             label: "State Filing Time",
-  //             textCenter: true,
-  //           },
-  //           {
-  //             label: "Expedited Filing Time",
-  //             textCenter: true,
-  //           },
-  //         ],
-  //       ],
-  //       rows: [
-  //         [
-  //           {
-  //             label: "$99",
-  //             textCenter: true,
-  //           },
-  //           {
-  //             label: "3 Weeks",
-  //             textCenter: true,
-  //           },
-  //           {
-  //             label: "7 Business Day",
-  //             textCenter: true,
-  //           },
-  //         ],
-  //       ],
-  //       headerColumnDef: 3,
-  //       rowColumnDef: 3,
-  //     },
-  //     responsive: true,
-  //     settings: {},
-  //     style: {},
-  //   },
   {
     type: `arrow-link`,
     content: {
@@ -1060,7 +1014,7 @@ export const feesAndRequirments = [
     type: `button`,
     content: {
       text: `Incorporate your Ohio LLC through Incfile today`,
-      url: `/form-order-now.php?entityType=LLC&entityState=OH/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=OH/`,
     },
     theme: `primary48`,
     marginBottom: 48,
@@ -1117,15 +1071,7 @@ export const feesAndRequirments = [
     marginBottom: 48,
   },
   {
-    type: `header`,
-    content: `Annual Report`,
-    size: 4,
-    marginBottom: 24,
-  },
-  {
-    type: `text`,
-    content: `<b>Frequency:</b> Ohio LLC's are currently not required to file annual reports.`,
-    marginBottom: 16,
+    type: `dynamic_filing_requirement`
   },
 
   {

@@ -1,4 +1,4 @@
-import React, {Fragment} from "react";
+import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Buttonsbox from "../atomic/atoms/boxes/top-buttons-box";
@@ -16,7 +16,6 @@ import { top, about, checks, form } from "../static/learning-center-entity/busin
 import ChecklistSection from "../atomic/sections/learning-center-entity/business-checklist/checklist";
 import {Paragraph} from "../atomic/atoms/typography/paragraph";
 import {Heading} from "../atomic/atoms/typography/heading";
-import {PortalComponent} from "../components/LightBox";
 import styled from "styled-components";
 import {BusinessChecklistForm} from "../atomic/organisms/forms/business-checklist-form";
 import Oval from "../atomic/atoms/icons/oval";

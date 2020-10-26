@@ -33,7 +33,7 @@ const UniqueBusiness = () => (
       <h1>How to Start a Unique Business</h1>
       <p>Some of us like to do things a little differently, and that’s also true of business owners and entrepreneurs. If you’ve looked at some standard business ideas and thought “that’s not for me,” perhaps you need something a more unique.</p>
       <ButtonsBox>
-        <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{ url: "/", text: "Start Now" }} />
+        <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{ url: `${process.env.ORDER_URL}/form-order-now.php`, text: "Start Now" }} />
       </ButtonsBox>
 
       <RatingRow>

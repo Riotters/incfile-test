@@ -32,7 +32,7 @@ const Rocket = () => (
                     No Contracts. No Surprise. <br/>
                     Only $0 + State Fee to Launch Your Business.
                 </Paragraph>
-                <Button theme="primary48" arrow width="max-content" content={{url: "/", text: "Start your Blockchain Business with us, today!"}} />
+                <Button theme="primary48" arrow width="max-content" content={{url: "https://www.incfile.com/form-order-now.php", text: "Start your Blockchain Business with us, today!"}} />
             </Content>
         </Container>
     </Wrapper>

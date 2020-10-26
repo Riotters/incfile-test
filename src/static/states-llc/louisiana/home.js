@@ -6,12 +6,11 @@ export const top = {
   buttons: [
     {
       text: `See detailed pricing`,
-      url: `/form-order-now.php?entityType=LLC&entityState=LA`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=LA`,
     },
   ],
 };
 
-const newLocal = `aaa`;
 export const howToGuide = [
   {
     type: `header`,
@@ -38,9 +37,7 @@ export const howToGuide = [
     type: `list-dot`,
     content: {
       header: `Briefly, the benefits of starting a Louisiana LLC include:`,
-      list: [`Separating and limiting your personal liability from your business liability and debts`,
-             `Quick and simple filing, management, compliance, regulation and administration of your Louisiana LLC`,
-             `Easy tax filing and potential advantages for your tax treatment`],
+      list: [`Separating and limiting your personal liability from your business liability and debts`, `Quick and simple filing, management, compliance, regulation and administration of your Louisiana LLC`, `Easy tax filing and potential advantages for your tax treatment`],
     },
     marginBottom: 48,
     color: color.blue3,
@@ -94,8 +91,7 @@ export const howToGuide = [
           
           At Incfile, all of our packages include a Louisiana Registered Agent service that is free for the first year and just $119 per year afterward. We also have a dashboard where you can log in and easily view any document your Registered Agent has received on your behalf.
           <br>
-          Learn more about California Agents for Service of Process.`
-          
+          Learn more about California Agents for Service of Process.`,
         },
         {
           question: `STEP 5: Get an Employer Identification Number (EIN) from the Internal Revenue Service`,
@@ -105,7 +101,7 @@ export const howToGuide = [
         },
         {
           question: `STEP 6: File Articles of Organization with the Louisiana Secretary of State`,
-          answer: ``
+          answer: ``,
         },
       ],
     },
@@ -121,9 +117,11 @@ export const howToGuide = [
     type: `list-dot`,
     content: {
       header: `The LA Secretary of State has plenty of information on forming and running a business in Louisiana. These are all the basic steps for forming an LLC in Louisiana. You’ll find other useful information below.`,
-      list: [`<a href="https://www.sos.la.gov/BusinessServices/StartABusiness/Pages/default.aspx" target="_blank" rel="noopener noreferrer">Louisiana Secretary of State for forming and running your LA LLC</a>`,
-             `<a href="http://www.laworks.net/" target="_blank" rel="noopener noreferrer">Louisiana Workforce Commission for LA employers and hiring</a>`,
-             `<a href="https://www.revenue.louisiana.gov/" target="_blank" rel="noopener noreferrer">Louisiana Department of Revenue for LA taxes</a>`],
+      list: [
+        `<a href="https://www.sos.la.gov/BusinessServices/StartABusiness/Pages/default.aspx" target="_blank" rel="noopener noreferrer">Louisiana Secretary of State for forming and running your LA LLC</a>`,
+        `<a href="http://www.laworks.net/" target="_blank" rel="noopener noreferrer">Louisiana Workforce Commission for LA employers and hiring</a>`,
+        `<a href="https://www.revenue.louisiana.gov/" target="_blank" rel="noopener noreferrer">Louisiana Department of Revenue for LA taxes</a>`,
+      ],
     },
     marginBottom: 32,
     color: color.babyblue3,
@@ -288,10 +286,12 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Suffixes, such as Corporation, Company, Incorporated, Incorporation, Limited, Corp., Co., Inc., Ltd., LLC, etc.`,
-             `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`, 
-             `The singular, plural or possessive forms of a word`, 
-             `Abbreviations, punctuation, symbols, fonts, typefaces, etc.`],
+      list: [
+        `Suffixes, such as Corporation, Company, Incorporated, Incorporation, Limited, Corp., Co., Inc., Ltd., LLC, etc.`,
+        `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`,
+        `The singular, plural or possessive forms of a word`,
+        `Abbreviations, punctuation, symbols, fonts, typefaces, etc.`,
+      ],
     },
     marginBottom: 40,
     color: color.babyblue3,
@@ -322,15 +322,17 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Are very similar to the name of a federal or LA agency or organization (e.g., FBI, FDA, Louisiana Department of Revenue, Louisiana Police, Treasury, etc.)`,
-             `Suggest affiliation with a federal or state agency or organization`, 
-             `Use the term “Olympic” or any terms that are trademarks of the Olympic organization`, 
-             `Imply a purpose that it would be illegal for your business to carry out`],
+      list: [
+        `Are very similar to the name of a federal or LA agency or organization (e.g., FBI, FDA, Louisiana Department of Revenue, Louisiana Police, Treasury, etc.)`,
+        `Suggest affiliation with a federal or state agency or organization`,
+        `Use the term “Olympic” or any terms that are trademarks of the Olympic organization`,
+        `Imply a purpose that it would be illegal for your business to carry out`,
+      ],
     },
     marginBottom: 32,
     color: color.yellow3,
     curve: true,
-    curveColor:color.red1,
+    curveColor: color.red1,
   },
   {
     type: `header`,
@@ -372,8 +374,10 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`If you don’t want to form your Louisiana LLC right now, you can reserve the business name with the Louisiana Secretary of State. You will need to complete an application for reservation and file it with the LA SOS. You do not need to reserve a name if you are forming your business right away.`,
-             `If you’re ready to start your Louisiana LLC, you can formally file your Articles of Organization with the Louisiana SOS, or <a href="/form-order-now.php?entityType=LLC&entityState=LA/">let Incfile take care of it for you</a>.`],
+      list: [
+        `If you don’t want to form your Louisiana LLC right now, you can reserve the business name with the Louisiana Secretary of State. You will need to complete an application for reservation and file it with the LA SOS. You do not need to reserve a name if you are forming your business right away.`,
+        `If you’re ready to start your Louisiana LLC, you can formally file your Articles of Organization with the Louisiana SOS, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=LA/">let Incfile take care of it for you</a>.`,
+      ],
     },
     marginBottom: 40,
     color: color.purple3,
@@ -455,15 +459,12 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Appeal to your customers`,
-             `Be memorable enough to stand out`, 
-             `Best represent your product or services`,
-             `Not be used by another business`],
+      list: [`Appeal to your customers`, `Be memorable enough to stand out`, `Best represent your product or services`, `Not be used by another business`],
     },
     marginBottom: 40,
     color: color.blue3,
   },
-  
+
   {
     type: `arrow-link`,
     content: {
@@ -505,10 +506,12 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`If the Registered Agent is a person, they must reside in Louisiana.`,
-             `If the Registered Agent is a business, they must be able to conduct business in Louisiana.`,
-             `The Registered Agent must have a physical street address in Louisiana, not a P.O. Box.`,
-             `The Registered Agent must be available in person during normal business hours to sign for any correspondence.`],
+      list: [
+        `If the Registered Agent is a person, they must reside in Louisiana.`,
+        `If the Registered Agent is a business, they must be able to conduct business in Louisiana.`,
+        `The Registered Agent must have a physical street address in Louisiana, not a P.O. Box.`,
+        `The Registered Agent must be available in person during normal business hours to sign for any correspondence.`,
+      ],
     },
     marginBottom: 32,
     color: color.yellow3,
@@ -533,10 +536,12 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Correspondence from the Louisiana Secretary of State`,
-             `Service of process notices (e.g., if your LA LLC is sued or required to appear in court)`, 
-             `Official Louisiana state and federal government correspondence and notifications`,
-             `Tax forms and requests to complete permits, company filings and reports`],
+      list: [
+        `Correspondence from the Louisiana Secretary of State`,
+        `Service of process notices (e.g., if your LA LLC is sued or required to appear in court)`,
+        `Official Louisiana state and federal government correspondence and notifications`,
+        `Tax forms and requests to complete permits, company filings and reports`,
+      ],
     },
     marginBottom: 40,
     color: color.purple3,
@@ -563,15 +568,17 @@ export const registeredAgent = [
     type: `text`,
     content: `Here’s what you need to know about Incfile’s LA Registered Agent service:`,
     marginBottom: 24,
-  }, 
+  },
   {
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`The Registered Agent will always be available to accept documents and letters on your behalf.`,
-             `We automatically notify you whenever we receive correspondence for your business from the Louisiana Business Registration Division or anyone else.`,
-             `We scan your correspondence and upload it to a dashboard, so you can review it when convenient.`,
-             `We forward all correspondence to an address you choose.`], 
+      list: [
+        `The Registered Agent will always be available to accept documents and letters on your behalf.`,
+        `We automatically notify you whenever we receive correspondence for your business from the Louisiana Business Registration Division or anyone else.`,
+        `We scan your correspondence and upload it to a dashboard, so you can review it when convenient.`,
+        `We forward all correspondence to an address you choose.`,
+      ],
     },
     marginBottom: 32,
     color: color.green3,
@@ -633,7 +640,7 @@ export const registeredAgent = [
     type: `button`,
     content: {
       text: `Incorporate your business through Incfile`,
-      url: `/form-order-now.php?entityType=LLC&entityState=LA`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=LA`,
     },
     theme: `primary48`,
     marginBottom: 40,
@@ -711,9 +718,11 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`<b>Getting served or sued and not finding out about it:</b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`, 
-             `<b>Falling out of good standing with the Louisiana Secretary of State:</b> If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`, 
-             `<b>Losing your status as a Louisiana LLC:</b> A Louisiana Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your LA LLC may be dissolved.`],
+      list: [
+        `<b>Getting served or sued and not finding out about it:</b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
+        `<b>Falling out of good standing with the Louisiana Secretary of State:</b> If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
+        `<b>Losing your status as a Louisiana LLC:</b> A Louisiana Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your LA LLC may be dissolved.`,
+      ],
     },
     marginBottom: 48,
     color: color.blue3,
@@ -733,19 +742,21 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`The LA Registered Agent must have a physical street address in Louisiana. If you’re forming an LLC outside LA, you will need to use an in-state Registered Agent.`, 
-             `You always need to have someone on hand during business hours at the Louisiana address to sign for important documents.`,
-             `The LA Registered Agent’s name and address are part of the public record and available through the Louisiana Secretary of State's website. If you would prefer your name and address aren’t published, you might choose a Registered Agent service.`, 
-             `If you change your Louisiana business address or move out of state, you would need to file additional documentation with the LA Secretary of State for the new address if you act as your own Registered Agent. This would not be the case if you use a Registered Agent service, making a move or address change much simpler.`],
+      list: [
+        `The LA Registered Agent must have a physical street address in Louisiana. If you’re forming an LLC outside LA, you will need to use an in-state Registered Agent.`,
+        `You always need to have someone on hand during business hours at the Louisiana address to sign for important documents.`,
+        `The LA Registered Agent’s name and address are part of the public record and available through the Louisiana Secretary of State's website. If you would prefer your name and address aren’t published, you might choose a Registered Agent service.`,
+        `If you change your Louisiana business address or move out of state, you would need to file additional documentation with the LA Secretary of State for the new address if you act as your own Registered Agent. This would not be the case if you use a Registered Agent service, making a move or address change much simpler.`,
+      ],
     },
     marginBottom: 48,
     color: color.green3,
   },
   {
-      type: `header`,
-      content: `FAQs About Louisiana Registered Agents`,
-      size: 3,
-      marginBottom: 32,
+    type: `header`,
+    content: `FAQs About Louisiana Registered Agents`,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `accordion`,
@@ -781,9 +792,11 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: `You might find these resources helpful:`,
-      list: [`<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/">The Main Functions of a Louisiana Registered Agent</a>`,
-             `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Louisiana Registered Agent</a>`,
-             `<a href-"/research-topics/registered-agent-help/what-does-a-registered-agent-do/">What a Louisiana Registered Agent Does</a>`],
+      list: [
+        `<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/">The Main Functions of a Louisiana Registered Agent</a>`,
+        `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Louisiana Registered Agent</a>`,
+        `<a href-"/research-topics/registered-agent-help/what-does-a-registered-agent-do/">What a Louisiana Registered Agent Does</a>`,
+      ],
     },
     marginBottom: 48,
     color: color.babyblue3,
@@ -818,11 +831,7 @@ export const feesAndRequirments = [
     marginBottom: 32,
   },
   {
-    type: `table-simple`,
-    content: {
-      headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
-      rows: [[`$105`, `20 Business Days`, `8 Business Days`]],
-    },
+    type: `dynamic_ar_box`
   },
   {
     type: `arrow-link`,
@@ -854,7 +863,7 @@ export const feesAndRequirments = [
     type: `button`,
     content: {
       text: `Incorporate your Louisiana LLC through Incfile today`,
-      url: `/form-order-now.php?entityType=LLC&entityState=LA/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=LA/`,
     },
     theme: `primary48`,
     marginBottom: 48,
@@ -911,25 +920,7 @@ export const feesAndRequirments = [
     marginBottom: 48,
   },
   {
-    type: `header`,
-    content: `Annual Report`,
-    size: 4,
-    marginBottom: 24,
-  },
-  {
-    type: `text`,
-    content: `<b>Frequency:</b> Annually`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `<b>Due Date:</b> On or before 1st day of anniversary month of organization.`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `<b>Filing Fee:</b> $25`,
-    marginBottom: 32,
+    type: `dynamic_filing_requirement`
   },
   {
     type: `text`,
@@ -965,9 +956,11 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: `Permits and licenses vary based on:`,
-      list: [`The industry your Louisiana LLC operates in (e.g., restaurants will need health permits)`, 
-             `The location of your Louisiana LLC (state, county or city) (e.g., a license to conduct business from the city of New Orleans)`, 
-             `The type of business that you run (e.g., healthcare providers must meet HIPAA requirements)`],
+      list: [
+        `The industry your Louisiana LLC operates in (e.g., restaurants will need health permits)`,
+        `The location of your Louisiana LLC (state, county or city) (e.g., a license to conduct business from the city of New Orleans)`,
+        `The type of business that you run (e.g., healthcare providers must meet HIPAA requirements)`,
+      ],
     },
     marginBottom: 32,
     color: color.green3,
@@ -983,8 +976,7 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`A complete report on all the licenses, permits and tax registrations your Louisiana LLC will need`,
-             `The application forms you will need to file with the Louisiana, regional and federal licensing authorities`],
+      list: [`A complete report on all the licenses, permits and tax registrations your Louisiana LLC will need`, `The application forms you will need to file with the Louisiana, regional and federal licensing authorities`],
     },
     marginBottom: 24,
     color: color.purple3,
@@ -1096,9 +1088,7 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: `Areas you might want to file Louisiana Articles of Amendment for include:`,
-      list: [`Adding, removing or changing a Louisiana LLC member or manager`,
-             `Changing the business address of your LLC`,
-             `Altering the stated business activities of your Louisiana LLC`],
+      list: [`Adding, removing or changing a Louisiana LLC member or manager`, `Changing the business address of your LLC`, `Altering the stated business activities of your Louisiana LLC`],
     },
     marginBottom: 24,
     color: color.yellow3,
@@ -1281,8 +1271,7 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `You will typically need to collect Louisiana sales tax on:`,
-      list: [`Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`,
-             `Certain services that your Louisiana business might provide`],
+      list: [`Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`, `Certain services that your Louisiana business might provide`],
     },
     marginBottom: 16,
     color: color.blue3,
@@ -1341,10 +1330,7 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
-      list: [`On profits of $30,000, you would pay self-employment tax of $4,590.`,
-             `On profits of $40,000, you would pay self-employment tax of $6,120.`,
-             `On profits of $80,000, you would pay self-employment tax of $12,240.`,
-             `On profits of $100,000, you would pay self-employment tax of $15,300.`],
+      list: [`On profits of $30,000, you would pay self-employment tax of $4,590.`, `On profits of $40,000, you would pay self-employment tax of $6,120.`, `On profits of $80,000, you would pay self-employment tax of $12,240.`, `On profits of $100,000, you would pay self-employment tax of $15,300.`],
     },
     marginBottom: 48,
     color: color.green3,
@@ -1483,9 +1469,7 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `The most common types of estimated tax are:`,
-      list: [`Federal income tax`,
-             `Federal self-employment tax`,
-             `Louisiana state tax`],
+      list: [`Federal income tax`, `Federal self-employment tax`, `Louisiana state tax`],
     },
     marginBottom: 24,
     color: color.green3,

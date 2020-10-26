@@ -6,11 +6,10 @@ export const top = {
   buttons: [
     {
       text: `See detailed pricing`,
-      url: `/form-order-now.php?entityType=LLC&entityState=AZ`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ`,
     },
   ],
 };
-
 
 export const howToGuide = [
   {
@@ -38,9 +37,7 @@ export const howToGuide = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Separating and limiting your personal liability from your business liability and debts`,
-             `Quick and simple filing, management, compliance, regulations and administration of your Montana LLC`,
-             `Easy tax filing and potential advantages for tax treatment`],
+      list: [`Separating and limiting your personal liability from your business liability and debts`, `Quick and simple filing, management, compliance, regulations and administration of your Montana LLC`, `Easy tax filing and potential advantages for tax treatment`],
     },
     marginBottom: 48,
     color: color.blue3,
@@ -102,7 +99,7 @@ export const howToGuide = [
                    <li> Tax closing month </li>
                    </ul>
                    <p>You can file your Montana Articles of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Montana, but you only need to file your Articles of Organization once.</p></br>
-                   <a href="/form-order-now.php?entityType=LLC&entityState=MT/"> Form your LLC now </a>`,
+                   <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MT/"> Form your LLC now </a>`,
         },
       ],
     },
@@ -118,9 +115,11 @@ export const howToGuide = [
     type: `list-dot`,
     content: {
       header: `The Montana Secretary of State has plenty of information on forming and running a business in Montana. Check out additional resources below.<br>These are all the basic steps for forming an LLC in Montana. You’ll find other useful information below.`,
-      list: [`<a href="https://app.mt.gov/businesschecklist" target="_blank" rel="noopener noreferrer">Montana Secretary of State for forming and running your LLC</a>`,
-             `<a href="http://dli.mt.gov//" target="_blank" rel="noopener noreferrer">Montana Department of Labor for Montana employers and hiring</a>`,
-             `<a href="https://mtrevenue.gov" target="_blank" rel="noopener noreferrer">Montana Department of Revenue Administration for taxes</a>`],
+      list: [
+        `<a href="https://app.mt.gov/businesschecklist" target="_blank" rel="noopener noreferrer">Montana Secretary of State for forming and running your LLC</a>`,
+        `<a href="http://dli.mt.gov//" target="_blank" rel="noopener noreferrer">Montana Department of Labor for Montana employers and hiring</a>`,
+        `<a href="https://mtrevenue.gov" target="_blank" rel="noopener noreferrer">Montana Department of Revenue Administration for taxes</a>`,
+      ],
     },
     marginBottom: 32,
     color: color.yellow3,
@@ -175,7 +174,7 @@ export const howToGuide = [
               <p> More information on Montana <a href="/Montana-llc/fees-filing-requirements/"> filing and licensing requirements here</a> </p>`,
     marginBottom: 32,
   },
-  
+
   {
     type: `header`,
     content: `Detailed Information for Your Montana LLC`,
@@ -314,10 +313,12 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Suffixes, such as Corporation, Company, Incorporated, Incorporation, Limited, Corp., Co., Inc., Ltd., LLC, etc.`,
-             `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`, 
-             `The singular, plural or possessive forms of a word`, 
-             `Abbreviations, punctuation, symbols, fonts, typefaces, etc.`],
+      list: [
+        `Suffixes, such as Corporation, Company, Incorporated, Incorporation, Limited, Corp., Co., Inc., Ltd., LLC, etc.`,
+        `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`,
+        `The singular, plural or possessive forms of a word`,
+        `Abbreviations, punctuation, symbols, fonts, typefaces, etc.`,
+      ],
     },
     marginBottom: 32,
     color: color.babyblue3,
@@ -348,15 +349,17 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Are very similar to the name of a federal or AK agency or organization (e.g. FBI, FDA, Montana Department of Revenue, Montana Police, Treasury, etc)`,
-             `Suggest affiliation with a federal or state agency or organization`, 
-             `Use the term “Olympic” or any terms that are trademarks of the Olympic organization`, 
-             `Imply a purpose that it would be illegal for your business to carry out`],
+      list: [
+        `Are very similar to the name of a federal or AK agency or organization (e.g. FBI, FDA, Montana Department of Revenue, Montana Police, Treasury, etc)`,
+        `Suggest affiliation with a federal or state agency or organization`,
+        `Use the term “Olympic” or any terms that are trademarks of the Olympic organization`,
+        `Imply a purpose that it would be illegal for your business to carry out`,
+      ],
     },
     marginBottom: 32,
     color: color.yellow3,
     curve: true,
-    curveColor:color.red1,
+    curveColor: color.red1,
   },
   {
     type: `header`,
@@ -396,10 +399,11 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`If you don’t want to form your LLC right now, you can reserve the business name with the Montana Secretary of State. You will need to complete an Application for Reservation of Name and file it with the MT SOS. You do not need to reserve a name if you are forming your business right away."`,
-             `If you’re ready to start your LLC, you can formally file your Certificate of Formation with the Montana SOS, or
+      list: [
+        `If you don’t want to form your LLC right now, you can reserve the business name with the Montana Secretary of State. You will need to complete an Application for Reservation of Name and file it with the MT SOS. You do not need to reserve a name if you are forming your business right away."`,
+        `If you’re ready to start your LLC, you can formally file your Certificate of Formation with the Montana SOS, or
              <a href="/Montana-llc/fees-filing-requirements/"> let Incfile take care of it for you.</a.`,
-             ],
+      ],
     },
     marginBottom: 48,
     color: color.green3,
@@ -487,15 +491,12 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Appeal to your customers`,
-             `Be memorable enough to stand out`, 
-             `Best represent your product or services`,
-             `Not be used by another business`],
+      list: [`Appeal to your customers`, `Be memorable enough to stand out`, `Best represent your product or services`, `Not be used by another business`],
     },
     marginBottom: 40,
     color: color.blue3,
   },
-  
+
   {
     type: `arrow-link`,
     content: {
@@ -556,10 +557,12 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`If the Registered Agent is a person, they must reside in Montana.`,
-             `If the Registered Agent is a business, they must be able to conduct business in Montana.`,
-             `The Registered Agent must have a physical street address in Montana, not a P.O. Box.`,
-             `The Registered Agent must be available in person during normal business hours to sign for any correspondence.`],
+      list: [
+        `If the Registered Agent is a person, they must reside in Montana.`,
+        `If the Registered Agent is a business, they must be able to conduct business in Montana.`,
+        `The Registered Agent must have a physical street address in Montana, not a P.O. Box.`,
+        `The Registered Agent must be available in person during normal business hours to sign for any correspondence.`,
+      ],
     },
     marginBottom: 32,
     color: color.yellow3,
@@ -584,9 +587,11 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Correspondence from the Montana Secretary of State, like a notice to file reports and other forms`,
-             `Service of process documents (for example, if your Montana LLC has legal proceedings issued against it)`, 
-             `Official Montana and federal government documents, form filings and requests for information (including taxes, permits and company filings)`],
+      list: [
+        `Correspondence from the Montana Secretary of State, like a notice to file reports and other forms`,
+        `Service of process documents (for example, if your Montana LLC has legal proceedings issued against it)`,
+        `Official Montana and federal government documents, form filings and requests for information (including taxes, permits and company filings)`,
+      ],
     },
     marginBottom: 24,
     color: color.green3,
@@ -608,15 +613,17 @@ export const registeredAgent = [
     type: `text`,
     content: `We are authorized to conduct business in Montana and can legally act as your Registered Agent. Here’s what the Incfile Montana Registered Agent service provides for your LLC::`,
     marginBottom: 16,
-  }, 
+  },
   {
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`An always-available Montana Registered Agent who can receive correspondence, documents and legal proceedings on your LLC’s behalf`,
-             `A digital dashboard where you can access, store and retrieve any information we’ve received for your Montana business`,
-             `Email notification whenever we receive documents for your business`, 
-             `Automatic forwarding of all legal correspondence, documentation and information directly to you`],
+      list: [
+        `An always-available Montana Registered Agent who can receive correspondence, documents and legal proceedings on your LLC’s behalf`,
+        `A digital dashboard where you can access, store and retrieve any information we’ve received for your Montana business`,
+        `Email notification whenever we receive documents for your business`,
+        `Automatic forwarding of all legal correspondence, documentation and information directly to you`,
+      ],
     },
     marginBottom: 32,
     color: color.green3,
@@ -683,7 +690,7 @@ export const registeredAgent = [
     type: `button`,
     content: {
       text: `Incorporate your business through Incfile.`,
-      url: `/form-order-now.php?entityType=LLC&entityState=MT`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MT`,
     },
     theme: `primary48`,
     marginBottom: 32,
@@ -761,9 +768,11 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`<b>Getting served or sued and not finding out about it:</b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`, 
-             `<b>Falling out of good standing with the Montana Secretary of State:</b> If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`, 
-             `<b>Losing your status as a Montana LLC:</b> A Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your LLC may be dissolved.`],
+      list: [
+        `<b>Getting served or sued and not finding out about it:</b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
+        `<b>Falling out of good standing with the Montana Secretary of State:</b> If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
+        `<b>Losing your status as a Montana LLC:</b> A Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your LLC may be dissolved.`,
+      ],
     },
     marginBottom: 48,
     color: color.blue3,
@@ -783,19 +792,21 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`The Registered Agent must have a physical street address in Montana. If you’re forming an LLC outside Montana, you will need to use an in-state Registered Agent.`, 
-             `You always need to have someone on hand during business hours at the Montana address to sign for important documents.`,
-             `The Registered Agent’s name and address are part of the public record and available through the Montana Secretary of State's website. If you prefer your name and address aren’t published, you should choose a Registered Agent service.`, 
-             `If you change your Montana business address or move out of state, you would need to file additional documentation with the MT Secretary of State for the new address if you act as your own Registered Agent. This would not be the case if you use a Registered Agent service, making a move or address change much simpler.`],
+      list: [
+        `The Registered Agent must have a physical street address in Montana. If you’re forming an LLC outside Montana, you will need to use an in-state Registered Agent.`,
+        `You always need to have someone on hand during business hours at the Montana address to sign for important documents.`,
+        `The Registered Agent’s name and address are part of the public record and available through the Montana Secretary of State's website. If you prefer your name and address aren’t published, you should choose a Registered Agent service.`,
+        `If you change your Montana business address or move out of state, you would need to file additional documentation with the MT Secretary of State for the new address if you act as your own Registered Agent. This would not be the case if you use a Registered Agent service, making a move or address change much simpler.`,
+      ],
     },
     marginBottom: 16,
     color: color.green3,
   },
   {
-      type: `header`,
-      content: `FAQs About Montana Registered Agents`,
-      size: 3,
-      marginBottom: 24,
+    type: `header`,
+    content: `FAQs About Montana Registered Agents`,
+    size: 3,
+    marginBottom: 24,
   },
   {
     type: `accordion`,
@@ -832,9 +843,11 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: `You might find these resources helpful:`,
-      list: [`<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/">The Main Functions of a Montana Registered Agent</a>`,
-             `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Montana Registered Agent</a>`,
-             `<a href-"/research-topics/registered-agent-help/what-does-a-registered-agent-do/">What a Montana Registered Agent Does</a>`],
+      list: [
+        `<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/">The Main Functions of a Montana Registered Agent</a>`,
+        `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Montana Registered Agent</a>`,
+        `<a href-"/research-topics/registered-agent-help/what-does-a-registered-agent-do/">What a Montana Registered Agent Does</a>`,
+      ],
     },
     marginBottom: 48,
     color: color.babyblue3,
@@ -870,11 +883,7 @@ export const feesAndRequirments = [
     marginBottom: 32,
   },
   {
-    type: `table`,
-    content: {
-      headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
-      rows: [[`$70`, `8 Business Days`, `1 Business Day`]],
-    },
+    type: `dynamic_ar_box`
   },
   {
     type: `arrow-link`,
@@ -906,7 +915,7 @@ export const feesAndRequirments = [
     type: `button`,
     content: {
       text: `Incorporate your Montana LLC through Incfile today`,
-      url: `/form-order-now.php?entityType=LLC&entityState=MT/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MT`,
     },
     theme: `primary48`,
     marginBottom: 48,
@@ -963,29 +972,11 @@ export const feesAndRequirments = [
     marginBottom: 48,
   },
   {
-    type: `header`,
-    content: `Annual Report`,
-    size: 4,
-    marginBottom: 24,
+    type: `dynamic_filing_requirement`
   },
   {
     type: `text`,
-    content: `<b>Frequency:</b> Annually`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `<b>Due Date:</b> Calendar Year: April 15`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `<b>Filing Fee:</b> $15`,
-    marginBottom: 32,
-  },
-  {
-    type: `text`,
-    content: `<a href="/Montana-llc/fees-filing-requirements/">Learn about your ongoing Montana LLC filing requirements</a>
+    content: `<a href="/montana-llc/fees-filing-requirements/">Learn about your ongoing Montana LLC filing requirements</a>
     and business filing deadlines with our helpful Montana ongoing filing lookup tool..`,
     marginBottom: 16,
   },
@@ -1018,9 +1009,11 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: `Permits and licenses vary based on:`,
-      list: [`The industry your Montana LLC operates in (e.g., restaurants will need health permits)`, 
-             `The location of your Montana LLC (state, county or city) (e.g., a license to conduct business from the city of Jackson)`, 
-             `The type of business that you run (e.g., healthcare providers must meet HIPAA requirements)`],
+      list: [
+        `The industry your Montana LLC operates in (e.g., restaurants will need health permits)`,
+        `The location of your Montana LLC (state, county or city) (e.g., a license to conduct business from the city of Jackson)`,
+        `The type of business that you run (e.g., healthcare providers must meet HIPAA requirements)`,
+      ],
     },
     marginBottom: 32,
     color: color.green3,
@@ -1048,8 +1041,7 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`A complete report on all the licenses, permits and tax registrations your Montana LLC will need`,
-             `The application forms you will need to file with the Montana, regional and federal licensing authorities`],
+      list: [`A complete report on all the licenses, permits and tax registrations your Montana LLC will need`, `The application forms you will need to file with the Montana, regional and federal licensing authorities`],
     },
     marginBottom: 24,
     color: color.purple3,
@@ -1059,15 +1051,14 @@ export const feesAndRequirments = [
     content: `Remember that operating your business without the required licenses can expose you to risks and fines from federal, Montana and local governments.`,
     marginBottom: 16,
   },
-  
+
   {
     type: `header`,
     content: `Create an Operating Agreement for Your Montana LLC`,
     size: 4,
     marginBottom: 16,
   },
-  
-  
+
   {
     type: `header`,
     content: `Create an Operating Agreement for Your Montana LLC`,
@@ -1163,9 +1154,7 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: `Areas you might want to file Montana Articles of Amendment for include:`,
-      list: [`Adding, removing or changing a Montana LLC member or manager`,
-             `Changing the business address of your LLC`,
-             `Altering the stated business activities of your Montana LLC`],
+      list: [`Adding, removing or changing a Montana LLC member or manager`, `Changing the business address of your LLC`, `Altering the stated business activities of your Montana LLC`],
     },
     marginBottom: 0,
     color: color.yellow3,
@@ -1358,10 +1347,7 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `The graduated Montana state income tax rate is:`,
-      list: [`On profits of $30,000, you would pay self-employment tax of $4,590.`,
-             `On profits of $50,000, you would pay self-employment tax of $7,650.`,
-             `On profits of $80,000, you would pay self-employment tax of $12,240.`,
-             `On profits of $100,000, you would pay self-employment tax of $15,300.`],
+      list: [`On profits of $30,000, you would pay self-employment tax of $4,590.`, `On profits of $50,000, you would pay self-employment tax of $7,650.`, `On profits of $80,000, you would pay self-employment tax of $12,240.`, `On profits of $100,000, you would pay self-employment tax of $15,300.`],
     },
     marginBottom: 16,
     color: color.blue3,
@@ -1500,9 +1486,7 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `The most common types of estimated tax are:`,
-      list: [`Federal income tax`,
-              `Federal self-employment tax`,
-             `Montana state tax`],
+      list: [`Federal income tax`, `Federal self-employment tax`, `Montana state tax`],
     },
     marginBottom: 24,
     color: color.purple3,
@@ -1538,7 +1522,7 @@ export const businessTaxes = [
     },
     marginBottom: 24,
   },
-]
+];
 export const requirements = {
   header: `Fees and requirements in California.`,
   rows: [

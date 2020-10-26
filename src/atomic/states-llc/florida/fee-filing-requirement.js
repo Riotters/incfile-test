@@ -17,6 +17,9 @@ import Accordion from "../../organisms/accordion/accordion";
 import TextBoxed from "../../molecules/static-check/circle-checkmark-text-boxed";
 import GridTableRow from "../../molecules/blocks/grid-table-row";
 
+import FilingRequirementBox from '../filing-requirement-box';
+import AnnualReportBoxOnly from '../annual-report-box-only';
+
 const Wrapper = styled.div`
     h2, h3{
         text-align: left;
@@ -48,7 +51,7 @@ const Wrapper = styled.div`
     }
 `
 
-const FeeFilingRequirementSection = ({ content }) => {
+const FeeFilingRequirementSection = ({ content, data }) => {
     return (
         <Wrapper>              
             {content.map((item, i) => (
@@ -112,6 +115,14 @@ const FeeFilingRequirementSection = ({ content }) => {
                                 <GridTableRow textCenter content={row} columns={item.columns} list />
                             )))}
                         </div>
+                    )}
+
+                    {item.type === 'dynamic_ar_box' && (
+                        <AnnualReportBoxOnly data={data} />
+                    )}
+
+                    {item.type === 'dynamic_filing_requirement' && (
+                        <FilingRequirementBox data={data} />
                     )}
                 </div>
             ))}

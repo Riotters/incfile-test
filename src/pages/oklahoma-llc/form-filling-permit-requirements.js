@@ -11,20 +11,30 @@ import ContentMap from "../../atomic/partials/content-map";
 // Content
 import { feesAndRequirments } from "../../static/states-llc/oklahoma/home";
 import { tabPages } from "../../static/states-llc/oklahoma/general";
+import { getFullPricesAndFilings } from '../../api/Api';
 
-const FillingRequirementsPage = () => (
-  <Layout>
-    <SEO
-    title="Texas Business Search | How to Name Your TX LLC"
-    description="Learn what you need to know about naming an LLC in Texas with Incfile's helpful resources. Pick your perfect business name today!"
-    />
-    <LLCLayout>
-        <LeftTabPages content={tabPages} />
-        <MainPageContent>
-            <ContentMap content={feesAndRequirments} />
-        </MainPageContent>
-    </LLCLayout>
-  </Layout>
-);
+const FillingRequirementsPage = () => {
+    const [dataApi, setDataApi] = React.useState({});
+
+    React.useEffect(() => {
+        getFullPricesAndFilings('Oklahoma').then(data => {
+            setDataApi(data);
+        });
+    }, []);
+    return (
+        <Layout>
+            <SEO
+                title="Oklahoma LLC Forms, Requirements, and Costs"
+                description="Make sense of the required forms, fees, and filing procedures for your Oklahoma LLC with Incfile’s easy-to-use guide. Read more."
+            />
+            <LLCLayout data={dataApi}>
+                <LeftTabPages content={tabPages} />
+                <MainPageContent>
+                    <ContentMap content={feesAndRequirments} data={dataApi} />
+                </MainPageContent>
+            </LLCLayout>
+        </Layout>
+    );
+}
 
 export default FillingRequirementsPage;

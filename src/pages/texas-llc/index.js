@@ -4,7 +4,6 @@ import SEO from "../../components/seo";
 import styled from "styled-components";
 
 // Components
-import { color } from "../../components/styles/colors";
 import LinearBgHeader from "../../atomic/states-llc/linear-bg-header";
 import HomeHeader from "../../atomic/states-llc/home-header";
 import WrapperContent from "../../atomic/states-llc/wrapper-content";
@@ -16,6 +15,8 @@ import HowToGuide from "../../atomic/states-llc/texas/how-to-guide";
 // Content
 import { HomePageContent } from "../../static/states-llc/texas/home";
 import { tabPages, rocket } from "../../static/states-llc/texas/general";
+
+import { getFullPricesAndFilings } from '../../api/Api';
 
 const Wrapper = styled.div`
   display: flex;
@@ -41,26 +42,34 @@ const Wrapper = styled.div`
 `;
 
 function TexasLLCIndex() {
-  return (
-    <Layout>
-      <SEO title="LLCs in Texas | Guide to Forming an LLC in Texas" description="Ready to form your Texas LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
+    const [dataApi, setDataApi] = React.useState({});
 
-      <LinearBgHeader imageMapName="tx-map-2x">
-        <HomeHeader content={HomePageContent.header} />
-      </LinearBgHeader>
+    React.useEffect(() => {
+        getFullPricesAndFilings('Texas').then(data => {
+            setDataApi(data);
+        });
+    }, []);
+    
+    return (
+        <Layout>
+            <SEO title="LLCs in Texas | Guide to Forming an LLC in Texas" description="Ready to form your Texas LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
 
-      <WrapperContent>
-        <Wrapper>
-          <LeftTabPages content={tabPages} />
-          <MainPageContent>
-            <HowToGuide content={HomePageContent.content} />
-          </MainPageContent>
-        </Wrapper>
-      </WrapperContent>
+            <LinearBgHeader imageMapName="tx-map-2x">
+                <HomeHeader content={HomePageContent.header} data={dataApi} />
+            </LinearBgHeader>
 
-      <Rocket content={rocket} />
-    </Layout>
-  );
+            <WrapperContent>
+                <Wrapper>
+                    <LeftTabPages content={tabPages} />
+                    <MainPageContent>
+                        <HowToGuide content={HomePageContent.content} data={dataApi} />
+                    </MainPageContent>
+                </Wrapper>
+            </WrapperContent>
+
+            <Rocket content={rocket} />
+        </Layout>
+    );
 }
 
 export default TexasLLCIndex;

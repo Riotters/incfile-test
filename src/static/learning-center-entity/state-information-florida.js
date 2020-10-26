@@ -23,8 +23,6 @@ import ArrowLeftSVG from "../../images/icons/icon-user-arrow-left.inline.svg";
 import ChatSVG from "../../images/icons/icon-chat.inline.svg";
 import BoardSVG from "../../images/icons/icon-board-of-directors.inline.svg";
 import UserCheckmarkSVG from "../../images/icons/icon-user-checkmark.inline.svg";
-
-import StockSVG from "../../images/icons/icon-stock-buying.inline.svg";
 import FolderProcentSVG from "../../images/icons/icon-folder-procent.inline.svg";
 
 import TodoSVG from "../../images/icons/icon-todo-list.inline.svg";
@@ -54,324 +52,7 @@ export const launchBusiness = {
     url: `/`,
   },
 };
-export const requirements = {
-  header: `Fees and requirements in Florida.`,
-  rows: [
-    {
-      box: {
-        fields: [
-          {
-            header: `$70`,
-            text: `State fee`,
-          },
-          {
-            header: `20 days`,
-            text: `State filing time`,
-          },
-          {
-            header: `10 days`,
-            text: `Expected filling time`,
-          },
-        ],
-      },
-      content: {
-        columns: [
-          // {
-          //   header: `Filing time and price`,
-          //   text: `The state charges this amount to file a new business entity. This fee goes directly to the Secretary of State.`,
-          //   text2: `Ut tincidunt neque a viverra egestas. Suspendisse tempus metu.`,
-          //   link: {
-          //     text: `State Filing Times`,
-          //     url: `/`,
-          //   },
-          //   link2: {
-          //     text: `State Filing Prices`,
-          //     url: `/`,
-          //   },
-          // },
-          {
-            content: [
-              {
-                type: `heading`,
-                size: 3,
-                content: `Filing time and price`,
-              },
-              {
-                type: `paragraph`,
-                content: `The state charges this amount to file a new business entity. This fee goes directly to the Secretary of State.`,
-              },
-              {
-                type: `paragraph`,
-                content: `Ut tincidunt neque a viverra egestas. Suspendisse tempus metu.`,
-              },
-              {
-                type: `arrow-links`,
-                content: {
-                  text: `State Filing Times`,
-                  url: `/`,
-                },
-                bottomMargin: 16,
-              },
-              {
-                type: `arrow-links`,
-                content: {
-                  text: `State Filing Prices`,
-                  url: `/`,
-                },
-              },
-            ],
-          },
-          {
-            header: `Compliance  Requirements`,
-            text: `This report is mandatory and must be filed within the specified time frame in order for the entity to remain in good standing with the state.`,
-            text2: `Failure to file this report can lead to the company being revoked or administratively dissolved.`,
-            link: {
-              text: `Other State's Ongoing`,
-              url: `/`,
-            },
-          },
-        ],
-      },
-    },
-    {
-      box: {
-        fields: [
-          {
-            header: `Annually`,
-            text: `Frequency`,
-          },
-          {
-            header: `$800 (min)`,
-            text: `Filing fee`,
-          },
-        ],
-      },
-      content: {
-        header: `Florida Franchise Tax`,
-        text: `$800 payment for the LLC Franchise Tax is due by 15th day of the 4th month after your LLC is filed. The month your LLC is filed counts as Month 1, regardless if you file on the 1st of the month, the last of the month, or any day of the month, really.`,
-        text2: `This means that if you were to file your LLC on March 22nd, then you must pay the $800 fee no later than June 15th (in this example, March is Month 1, April is Month 2, May is Month 3, and June is Month 4). Then, every year after your first payment $800 LLC Franchise Tax will be due April 15th. You pay the $800 LLC Franchise Tax using Form 3522 called the LLC Tax Voucher.`,
-      },
-    },
-    {
-      box: {
-        fields: [
-          {
-            header: `Biennially`,
-            text: `Frequency`,
-          },
-          {
-            header: `$20`,
-            text: `Filing fee`,
-          },
-        ],
-      },
-      content: {
-        header: `Statement of Information`,
-        header2: `Due Date:`,
-        text: `During six-month period ending on last day of anniversary month of incorporation or qualification.`,
-        header3: `Important:`,
-        text2: `The initial Statement of Information filing is due within 90 days of the entity formation date.`,
-      },
-    },
-  ],
-};
-export const learnMore = {
-  header: `Learn more about starting a business in Florida`,
-  text: `Additional resources, guides, and articles for better decision making.`,
-  buttons: [
-    {
-      header: `Business Name`,
-      url: `/`,
-    },
-    {
-      header: `Articles of Incorporation`,
-      url: `/`,
-    },
-    {
-      header: `Registered Agent`,
-      url: `/`,
-    },
-    {
-      header: `Operating Agreement`,
-      url: `/`,
-    },
-    {
-      header: `Members`,
-      url: `/`,
-    },
-    {
-      header: `Required reports`,
-      url: `/`,
-    },
-    {
-      header: `Taxes`,
-      url: `/`,
-    },
-    {
-      header: `Foreign Qualifications`,
-      url: `/`,
-    },
-  ],
-};
-export const quickLinks = {
-  header: `Quick links`,
-  cards: [
-    {
-      header: `State Filing Times`,
-      text: `Get started wih easy-to-follow guides, wizards, content and support documents. Help is only an email away.`,
-      link: {
-        text: `Learn more`,
-        url: `/`,
-      },
-    },
-    {
-      header: `Starting a Home Business`,
-      text: `Learn everything you need to launch your home business.`,
-      link: {
-        text: `Learn more`,
-        url: `/`,
-      },
-    },
-    {
-      header: `LLC State/Corporation State Information`,
-      text: `Learn more about LLCs/Corporation in your state.`,
-      link: {
-        text: `Learn more`,
-        url: `/`,
-      },
-    },
-    {
-      header: `Ongoing Filing Requirements`,
-      text: `Review your states ongoing filing requirements.`,
-      link: {
-        text: `Learn more`,
-        url: `/`,
-      },
-    },
-    {
-      header: `Business Plan Tips`,
-      text: `Read our guide to the 10 things your business plan needs.`,
-      link: {
-        text: `Learn more`,
-        url: `/`,
-      },
-    },
-    {
-      header: `Small Business Workshops`,
-      text: `Check out our list of free entrepreneur workshops, seminars, business training and webinars.`,
-      link: {
-        text: `Learn more`,
-        url: `/`,
-      },
-    },
-    {
-      header: `State Filing Fees`,
-      text: `Use our comparison tool to determine the processing fee fro each state.`,
-      link: {
-        text: `Learn more`,
-        url: `/`,
-      },
-    },
-    {
-      header: `S-Corp Tax Calculator`,
-      text: `Review the potential tax savings by forming an S-Corporation`,
-      link: {
-        text: `Learn more`,
-        url: `/`,
-      },
-    },
-    {
-      header: `Entity Comparison Chart`,
-      text: `Ongoing filing and compliance Review the benefits of each entity to determine which type is best for you`,
-      link: {
-        text: `Learn more`,
-        url: `/`,
-      },
-    },
-  ],
-};
-export const variants = {
-  header: `See how easy it can be to get your business incorporated`,
 
-  link: {
-    text: `Learn more`,
-    url: `/`,
-  },
-  cards: [
-    {
-      variant: ``,
-      header: `Silver`,
-      text: `Our core features for the lowest price`,
-      price: `100`,
-      button: {
-        text: `Get the Silver package`,
-        url: `/`,
-      },
-      fees: [
-        {
-          helpmark: `helpmark`,
-          text: `Package fee`,
-          price: `0`,
-        },
-        {
-          helpmark: `helpmark`,
-          text: `State fee`,
-          price: `100`,
-        },
-      ],
-      include: `The sliver services includes:`,
-      list: [`Prepare & Filing the Articles of Organization`, `Unlimited Name Searches`, `FREE Registered Agent for a year!`],
-    },
-    {
-      variant: `Most popular`,
-      header: `Gold`,
-      text: `Comprehensive features to get your business started`,
-      price: `249`,
-      button: {
-        text: `Get the Gold package`,
-        url: `/`,
-      },
-      fees: [
-        {
-          helpmark: `helpmark`,
-          text: `Package fee`,
-          price: `149`,
-        },
-        {
-          helpmark: `helpmark`,
-          text: `State fee`,
-          price: `100`,
-        },
-      ],
-      include: `The sliver package, and:`,
-      list: [`EIN Business Tax Number`, `IRS Form 2553`, `Operating Agreement`, `Banking Resolution`, `Express Shipping`, `Lifetime Company Alerts`, `Online Access Dashboard`, `Unlimited Phone & Email Support`, `Business Banking Account`, `Business Tax Consultation`],
-    },
-    {
-      variant: `Best value`,
-      header: `Platinum`,
-      text: `Full service features at the best value`,
-      price: `399`,
-      button: {
-        text: `Get the Platinum package`,
-        url: `/`,
-      },
-      fees: [
-        {
-          helpmark: `helpmark`,
-          text: `Package fee`,
-          price: `299`,
-        },
-        {
-          helpmark: `helpmark`,
-          text: `State fee`,
-          price: `100`,
-        },
-      ],
-      include: `The gold package, and:`,
-      list: [`Business Contract Templates`, `Expedited Filing`, `FedEx Delivery`, `Domain Name + Business Email`],
-    },
-  ],
-};
 export const subscription = {
   header: `Subscribe now to learn more about Corporation and starting a business`,
   button: {
@@ -388,32 +69,32 @@ export const tabPages = {
     },
     {
       name: `How to guide`,
-      path: `/florida-corporation/start-a-fl-corporation`,
+      path: `/florida-corporation/start-a-fl-corporation/`,
       icon: EntitySVG,
     },
     {
       name: `Naming your corporation`,
-      path: `/florida-corporation/how-to-name-your-corporation`,
+      path: `/florida-corporation/how-to-name-your-corporation/`,
       icon: PenSVG,
     },
     {
       name: `Registered agents`,
-      path: `/florida-corporation/registered-agents-florida`,
+      path: `/florida-corporation/registered-agents-florida/`,
       icon: RegisteredAgentSVG,
     },
     {
       name: `Filing requirements`,
-      path: `/florida-corporation/form-filling-permit-requirements`,
+      path: `/florida-corporation/form-filling-permit-requirements/`,
       icon: PrinterSVG,
     },
     {
       name: `Taxes & Fees`,
-      path: `/florida-corporation/taxes-and-fees-for-your-corporation`,
+      path: `/florida-corporation/taxes-and-fees-for-your-corporation/`,
       icon: PriceTagSVG,
     },
     {
       name: `After filing`,
-      path: `/florida-corporation/know-your-ongoing-filing-requirements`,
+      path: `/florida-corporation/know-your-ongoing-filing-requirements/`,
       icon: CoffeeSVG,
     },
   ],
@@ -424,41 +105,49 @@ export const corporation = [
     type: "header",
     content: "Florida Corporations",
     size: 4,
-    marginBottom: 24
-  }, {
+    marginBottom: 24,
+  },
+  {
     type: "text",
-    content: "Florida is a great place to start a business. A combination of a rich culture, beautiful cities like Miami, Orlando or Tampa Bay, and access to the world’s transport networks makes the state home to some of the biggest businesses in the U.S. Headquarters of companies like Publix, Tupperware, Burger King and more are proud to call Florida home. One of the world’s largest entertainment companies, Disney, is famous for its Disney World theme park in Orlando. The lack of a state tax can also make it financially advantageous to start a business there. ",
-    marginBottom: 24
-  }, {
+    content:
+      "Florida is a great place to start a business. A combination of a rich culture, beautiful cities like Miami, Orlando or Tampa Bay, and access to the world’s transport networks makes the state home to some of the biggest businesses in the U.S. Headquarters of companies like Publix, Tupperware, Burger King and more are proud to call Florida home. One of the world’s largest entertainment companies, Disney, is famous for its Disney World theme park in Orlando. The lack of a state tax can also make it financially advantageous to start a business there. ",
+    marginBottom: 24,
+  },
+  {
     type: "header",
     content: "What Type of Florida Corporation Should You Choose? ",
     size: 4,
-    marginBottom: 24
-  }, {
+    marginBottom: 24,
+  },
+  {
     type: "text",
-    content: "When it comes to incorporating a business in Florida, you have a few options for the type of corporation you want to create. This is known as your “legal business entity,” and it defines how your Florida business will be treated by the FL Division of Corporations, the law, the IRS and other official bodies. ",
-    marginBottom: 24
-  }, {
+    content:
+      "When it comes to incorporating a business in Florida, you have a few options for the type of corporation you want to create. This is known as your “legal business entity,” and it defines how your Florida business will be treated by the FL Division of Corporations, the law, the IRS and other official bodies. ",
+    marginBottom: 24,
+  },
+  {
     type: "text",
     content: "Most new entrepreneurs have a choice of several FL business types: sole proprietorship, partnership, Limited Liability Company (LLC), S Corporation or C Corporation. ",
-    marginBottom: 24
-  }, {
+    marginBottom: 24,
+  },
+  {
     type: "text",
     content: "Here’s a quick overview of each type of <a href='/florida-entity-search'>business entity</a>.",
-    marginBottom: 24
+    marginBottom: 24,
   },
   {
     type: "svg-color-text-box",
     content: [
       {
         header: "Florida Sole Proprietorships and Partnerships",
-        text: "These are the simplest type of business and will be the “default” type of FL business you have if you do not choose to form a separate business entity. These types of businesses do not provide you with any special protections or benefits and can leave your personal assets vulnerable. We do not recommend them.",
+        text:
+          "These are the simplest type of business and will be the “default” type of FL business you have if you do not choose to form a separate business entity. These types of businesses do not provide you with any special protections or benefits and can leave your personal assets vulnerable. We do not recommend them.",
         svg: ProprietorshipSVG,
         backgroundColor: color.orange2,
         shadowColor: shadow.orange2,
         boxShadow: false,
         textBackgroundColor: "transparent",
-        marginTop: "91px"
+        marginTop: "91px",
       },
       {
         header: "Florida Limited Liability Companies (LLCs)",
@@ -466,13 +155,13 @@ export const corporation = [
         svg: LockpadSVG,
         link: {
           text: "Learn how to create an LLC in Florida",
-          url: "/"
+          url: "/",
         },
         backgroundColor: color.babyblue2,
         shadowColor: shadow.babyblue2,
         boxShadow: false,
         textBackgroundColor: "transparent",
-        marginTop: "91px"
+        marginTop: "91px",
       },
       {
         header: "Florida S Corporations",
@@ -480,27 +169,28 @@ export const corporation = [
         svg: ProcentSVG,
         link: {
           text: "Learn how to create an LLC in Florida",
-          url: "/"
+          url: "/",
         },
         backgroundColor: color.green2,
         shadowColor: shadow.green2,
         boxShadow: false,
         textBackgroundColor: "transparent",
-        marginTop: "91px"
+        marginTop: "91px",
       },
       {
         header: "Florida C Corporations",
-        text: "If you plan to start a large business or want to trade your shares on the public stock market, a FL C Corporation is your only choice. Be aware that Florida C Corporations are subject to many rules and regulations, and they have a substantial amount of administrative overhead. Additionally, the tax rules for a Florida C Corporation are not as advantageous as for a FL S Corporation or LLC.",
+        text:
+          "If you plan to start a large business or want to trade your shares on the public stock market, a FL C Corporation is your only choice. Be aware that Florida C Corporations are subject to many rules and regulations, and they have a substantial amount of administrative overhead. Additionally, the tax rules for a Florida C Corporation are not as advantageous as for a FL S Corporation or LLC.",
         svg: BillSVG,
         link: {
           text: "Learn about forming a C Corporation",
-          url: "/"
+          url: "/",
         },
         backgroundColor: color.yellow2,
         shadowColor: shadow.yellow2,
         boxShadow: false,
         textBackgroundColor: "transparent",
-        marginTop: "91px"
+        marginTop: "91px",
       },
     ],
     marginBottom: 24,
@@ -518,20 +208,20 @@ export const corporation = [
       {
         content: {
           text: "Start Your S-Corp",
-          url: "/"
+          url: "/",
         },
         arrow: true,
-        theme: "primary56"
+        theme: "primary56",
       },
       {
         content: {
           text: "Start Your C-Corp",
-          url: "/"
+          url: "/",
         },
         arrow: true,
-        theme: "primary56"
+        theme: "primary56",
       },
-    ]
+    ],
   },
   {
     type: "list-dot",
@@ -541,37 +231,41 @@ export const corporation = [
       list: [
         "Florida corporations provide the strongest form of liability protection possible. They insulate your personal assets and finances from those of your business. ",
         "This means that any liabilities created by your corporation (debts, obligations, damages, bankruptcy or other liabilities) should not impact your personal money, property or assets — they are considered completely separate from a legal perspective. ",
-      ]
+      ],
     },
     color: color.orange3,
     marginBottom: 48,
     curve: true,
-    curveColor: color.orange1
-  }, {
+    curveColor: color.orange1,
+  },
+  {
     type: "header",
     content: "The Advantages of a Florida Corporation Versus an LLC ",
     size: 4,
-    marginBottom: 24
-  }, {
+    marginBottom: 24,
+  },
+  {
     type: "text",
     content: "There are several reasons an entrepreneur might choose to form a FL corporation instead of a Florida LLC. ",
-    marginBottom: 24
+    marginBottom: 24,
   },
   {
     type: "header",
     content: "Taxation Benefits of a Florida S Corporation Over an LLC ",
     size: 5,
-    marginBottom: 24
-  }, {
+    marginBottom: 24,
+  },
+  {
     type: "text",
-    content: "A Florida S Corporation will often pay less self-employment tax on owner earnings than an LLC. Note that a FL LLC can choose to be treated as an S Corporation for tax purposes by filing Form 2553 with the IRS, which removes this restriction. Florida C Corporations do not have this advantage over an LLC. ",
-    marginBottom: 24
+    content:
+      "A Florida S Corporation will often pay less self-employment tax on owner earnings than an LLC. Note that a FL LLC can choose to be treated as an S Corporation for tax purposes by filing Form 2553 with the IRS, which removes this restriction. Florida C Corporations do not have this advantage over an LLC. ",
+    marginBottom: 24,
   },
   {
     type: "arrow-link",
     content: {
       text: "Learn about the tax benefits of S Corporations.",
-      url: "/"
+      url: "/",
     },
     marginBottom: 32,
   },
@@ -579,7 +273,7 @@ export const corporation = [
     type: "button",
     content: {
       text: "File From 2553 with the IRS",
-      url: "/"
+      url: "/",
     },
     theme: "primary56",
     marginBottom: 64,
@@ -588,59 +282,60 @@ export const corporation = [
     type: "header",
     content: "Florida S Corporations and C Corporations Make It Much Easier to Transfer Stock and Ownership ",
     size: 4,
-    marginBottom: 24
-  }, {
+    marginBottom: 24,
+  },
+  {
     type: "text",
     content: "If you want to easily transfer ownership through buying and selling stock, you will need a FL C Corporation or an S Corporation. C Corporations have much more flexibility than S Corporations, and both are better than LLCs for stock and ownership transfers. ",
-    marginBottom: 24
+    marginBottom: 24,
   },
-    {
-        type: "list-dot",
-        content: {
-          header: "Florida C Corporations Provide the Main Advantages for Buying and Selling Stock",
-          text: "C Corporations provide certain benefits when it comes to buying, selling and transferring stock. Here are the rules for both S Corps and C Corps: ",
-            list:[
-                "If you want up to 100 shareholders who are U.S. citizens or residents and want to issue one type of stock, you can be an S Corporation or a C Corporation. ",
-                "If you want more than 100 shareholders, want to issue more than one type of stock or have international shareholders, you will need a C Corporation. ",
-                "If you want to allow the public to buy and sell shares in your company after an Initial Public Offering (IPO), you will need a C Corporation. ",
-            ]
-        },
-        color: color.orange3,
-        marginBottom: 48,
-        curve: true,
-        curveColor: color.orange1
+  {
+    type: "list-dot",
+    content: {
+      header: "Florida C Corporations Provide the Main Advantages for Buying and Selling Stock",
+      text: "C Corporations provide certain benefits when it comes to buying, selling and transferring stock. Here are the rules for both S Corps and C Corps: ",
+      list: [
+        "If you want up to 100 shareholders who are U.S. citizens or residents and want to issue one type of stock, you can be an S Corporation or a C Corporation. ",
+        "If you want more than 100 shareholders, want to issue more than one type of stock or have international shareholders, you will need a C Corporation. ",
+        "If you want to allow the public to buy and sell shares in your company after an Initial Public Offering (IPO), you will need a C Corporation. ",
+      ],
     },
+    color: color.orange3,
+    marginBottom: 48,
+    curve: true,
+    curveColor: color.orange1,
+  },
   {
     type: "arrow-link",
     content: {
       text: "Learn more about the differences between business entities",
-      url: "/"
+      url: "/",
     },
     marginBottom: 48,
   },
-    {
-        type: "list-dot",
-        content: {
-          header: "Advantages of Opening an S Corporation in Florida ",
-          text: "In addition to the general benefits above, FL S Corporations provide several other advantages: ",
-          list:[
-                "Florida S Corporations can have up to 100 shareholders.",
-                "Running an S Corporation in Florida is simpler than running a C Corporation.",
-                "It is easy to transfer ownership in an S Corporation by selling your stock.",
-                "In some cases, part of the income from an S Corporation can be paid as a “distribution” rather than “salary,” so it would not be subject to self-employment tax. Find out how this can save you money using our S Corporation Tax Calculator .",
-                "LLCs can <a href='/'>choose to be taxed as S Corporations</a> to take advantage of this.",
-            ]
-        },
-        color: color.orange3,
-        marginBottom: 48,
-        curve: true,
-        curveColor: color.orange1
+  {
+    type: "list-dot",
+    content: {
+      header: "Advantages of Opening an S Corporation in Florida ",
+      text: "In addition to the general benefits above, FL S Corporations provide several other advantages: ",
+      list: [
+        "Florida S Corporations can have up to 100 shareholders.",
+        "Running an S Corporation in Florida is simpler than running a C Corporation.",
+        "It is easy to transfer ownership in an S Corporation by selling your stock.",
+        "In some cases, part of the income from an S Corporation can be paid as a “distribution” rather than “salary,” so it would not be subject to self-employment tax. Find out how this can save you money using our S Corporation Tax Calculator .",
+        "LLCs can <a href='/'>choose to be taxed as S Corporations</a> to take advantage of this.",
+      ],
     },
+    color: color.orange3,
+    marginBottom: 48,
+    curve: true,
+    curveColor: color.orange1,
+  },
   {
     type: "arrow-link",
     content: {
       text: "Learn more about the advantages of forming an S Corporation. ",
-      url: "/"
+      url: "/",
     },
     marginBottom: 48,
   },
@@ -648,77 +343,81 @@ export const corporation = [
     type: "header",
     content: "Advantages of Opening a C Corporation in Florida ",
     size: 4,
-    marginBottom: 24
-  }, {
+    marginBottom: 24,
+  },
+  {
     type: "text",
     content: "In addition to the general benefits above, Florida C Corporations provide several other advantages. ",
-    marginBottom: 24
+    marginBottom: 24,
   },
-    {
-        type: "list-dot",
-        content: {
-            list:[
-                "Ownership in a Florida C Corporation is very fluid and determined by who owns stock in the business.",
-                "Florida C Corporations can list their shares on a public stock exchange. This stock can be bought and sold by anyone.",
-                "Florida C Corporations can sell stock to investors inside and outside the U.S.",
-                "Florida C Corporations can issue more than one type of stock.",
-                "Florida C Corporations can raise more funds by issuing more stock.",
-            ]
-        },
-        color: color.orange3,
-        marginBottom: 48,
-        curve: true,
-        curveColor: color.orange1
+  {
+    type: "list-dot",
+    content: {
+      list: [
+        "Ownership in a Florida C Corporation is very fluid and determined by who owns stock in the business.",
+        "Florida C Corporations can list their shares on a public stock exchange. This stock can be bought and sold by anyone.",
+        "Florida C Corporations can sell stock to investors inside and outside the U.S.",
+        "Florida C Corporations can issue more than one type of stock.",
+        "Florida C Corporations can raise more funds by issuing more stock.",
+      ],
     },
+    color: color.orange3,
+    marginBottom: 48,
+    curve: true,
+    curveColor: color.orange1,
+  },
   {
     type: "header",
     content: "Important Points About How to Start a Corporation in the State of Florida ",
     size: 4,
-    marginBottom: 24
-  }, {
+    marginBottom: 24,
+  },
+  {
     type: "text",
     content: "Here are some areas to be aware of when you’re creating a corporation in Florida. ",
-    marginBottom: 24
-  }, {
+    marginBottom: 24,
+  },
+  {
     type: "text",
-    content: "First, FL corporations are formed on the state level by filing Articles of Incorporation with the Florida Division of Corporations. Incfile specializes in helping entrepreneurs form Florida S Corporations and C Corporations and can collect the information and file this form on your behalf. ",
-    marginBottom: 24
-  }, {
+    content:
+      "First, FL corporations are formed on the state level by filing Articles of Incorporation with the Florida Division of Corporations. Incfile specializes in helping entrepreneurs form Florida S Corporations and C Corporations and can collect the information and file this form on your behalf. ",
+    marginBottom: 24,
+  },
+  {
     type: "text",
-    content: "When you incorporate a business as a corporation, the Florida Division of Corporations will treat your business as a C Corporation by default. A C Corporation will become an S Corporation when all shareholders wish to change the corporation’s status to an S Corporation with the IRS. You can make this choice when you first form your Florida corporation or at any time after you incorporate. ",
-    marginBottom: 24
-  }, {
+    content:
+      "When you incorporate a business as a corporation, the Florida Division of Corporations will treat your business as a C Corporation by default. A C Corporation will become an S Corporation when all shareholders wish to change the corporation’s status to an S Corporation with the IRS. You can make this choice when you first form your Florida corporation or at any time after you incorporate. ",
+    marginBottom: 24,
+  },
+  {
     type: "text",
     content: "There are some similarities and some differences between S Corps and C Corps: ",
-    marginBottom: 24
+    marginBottom: 24,
   },
-    {
-        type: "list-dot",
-        content: {
-            list:[
-                "<strong>Similarities</strong>: Florida S Corporations and C Corporations have similar rules and regulations for liability, governance, management and ownership",
-                "<strong>Differences</strong>: Key differences are taxation and the ease of buying, selling and transferring stock",
-            ]
-        },
-        color: color.orange3,
-        marginBottom: 48,
-        curve: true,
-        curveColor: color.orange1
+  {
+    type: "list-dot",
+    content: {
+      list: ["<strong>Similarities</strong>: Florida S Corporations and C Corporations have similar rules and regulations for liability, governance, management and ownership", "<strong>Differences</strong>: Key differences are taxation and the ease of buying, selling and transferring stock"],
     },
-    {
-        type: "arrow-link",
-        content: {
-            text: "Learn what you need to do to create a Florida S Corporation or C Corporation ",
-            url: "/"
-        },
-        marginBottom: 24,
+    color: color.orange3,
+    marginBottom: 48,
+    curve: true,
+    curveColor: color.orange1,
+  },
+  {
+    type: "arrow-link",
+    content: {
+      text: "Learn what you need to do to create a Florida S Corporation or C Corporation ",
+      url: "/",
     },
-    {
-        type: "header",
-        content: "Your State of Florida Corporation Must Follow Certain Rules and Regulations ",
-        size: 4,
-        marginBottom: 24
-    },
+    marginBottom: 24,
+  },
+  {
+    type: "header",
+    content: "Your State of Florida Corporation Must Follow Certain Rules and Regulations ",
+    size: 4,
+    marginBottom: 24,
+  },
   {
     type: "boxes",
     content: [
@@ -739,32 +438,33 @@ export const corporation = [
         text: "All FL corporations must appoint officers",
       },
     ],
-    marginBottom: 48
+    marginBottom: 48,
   },
-    {
-        type: "text",
-        content: "All Florida corporations must follow stringent compliance rules and regulations. These include financial reports, bylaws, corporate formalities, taxes, fees, business licenses and the like. You can find links to these below. ",
-        marginBottom: 24
-    },
+  {
+    type: "text",
+    content: "All Florida corporations must follow stringent compliance rules and regulations. These include financial reports, bylaws, corporate formalities, taxes, fees, business licenses and the like. You can find links to these below. ",
+    marginBottom: 24,
+  },
   {
     type: "arrow-link",
     content: {
       text: "Learn about Florida corporation requirements . ",
-      url: "/"
+      url: "/",
     },
     marginBottom: 24,
-  }, {
+  },
+  {
     type: "arrow-link",
     content: {
       text: "Learn about Florida corporation taxes and fees . ",
-      url: "/"
+      url: "/",
     },
     marginBottom: 24,
   },
   {
     type: "text",
     content: "Are you ready to start your Florida corporation? If so, we can help. We provide comprehensive corporation formation services for both S Corporations and C Corporations in Florida.",
-    marginBottom: 32
+    marginBottom: 32,
   },
   {
     type: "rounded-boxes",
@@ -777,11 +477,11 @@ export const corporation = [
           header: "S Corporation",
           link: {
             text: "Incorporate now",
-            url: "/"
-          }
+            url: "/",
+          },
         },
         noShadow: false,
-        color: color.purple3
+        color: color.purple3,
       },
       {
         roundRight: true,
@@ -790,13 +490,13 @@ export const corporation = [
           header: "C Corporation",
           link: {
             text: "Incorporate now",
-            url: "/"
-          }
+            url: "/",
+          },
         },
         noShadow: false,
-        color: color.orange3
-      }
-    ]
+        color: color.orange3,
+      },
+    ],
   },
   {
     type: "svg-color-text-box",
@@ -806,70 +506,70 @@ export const corporation = [
         text: "The six steps you need to take to start a Florida S Corporation or C Corporation.",
         link: {
           text: "Learn more",
-          url: "/"
+          url: "/",
         },
         svg: TodoSVG,
         backgroundColor: color.red2,
         shadowColor: shadow.red2,
         marginTop: "91px",
         textBackgroundColor: "transparent",
-        boxShadow: false
+        boxShadow: false,
       },
       {
         header: "Naming Your Florida Corporation",
         text: "How to search the Florida business registry of the FL Secretary of State and find the right name. Includes information on naming rules, fictitious names, reserving a Florida corporation name and more.",
         link: {
           text: "Learn more",
-          url: "/"
+          url: "/",
         },
         svg: QuestionSVG,
         backgroundColor: color.orange3,
         shadowColor: shadow.orange2,
         marginTop: "91px",
         textBackgroundColor: "transparent",
-        boxShadow: false
+        boxShadow: false,
       },
       {
         header: "Florida Registered Agents for Your Corporation",
         text: "How to appoint a Florida Registered Agent to your new corporation or change to a different Registered Agent. Includes information on Registered Agent rules and searching for Florida Registered Agents.",
         link: {
           text: "Learn more",
-          url: "/"
+          url: "/",
         },
         svg: IdSVG,
         backgroundColor: color.purple2,
         shadowColor: shadow.purple2,
         marginTop: "91px",
         textBackgroundColor: "transparent",
-        boxShadow: false
+        boxShadow: false,
       },
       {
         header: "Fees and Requirements for Your Florida Corporation",
         text: "How to understand the various fees you’ll need to pay and the requirements you’ll need to meet for both federal and Florida rules. Includes details of Employee Identification Numbers (EINs), Florida and federal business licenses, Florida Statement of Information reports and more.",
         link: {
           text: "Learn more",
-          url: "/"
+          url: "/",
         },
         svg: BillPadSVG,
         backgroundColor: color.orange2,
         shadowColor: shadow.orange2,
         marginTop: "91px",
         textBackgroundColor: "transparent",
-        boxShadow: false
+        boxShadow: false,
       },
       {
         header: "Federal, State, Sales and Other Taxes for Your Florida Corporation",
         text: "How to understand the various taxes you will need to pay to the federal and Florida government. Includes details of federal taxes like income and self-employment, and Florida taxes like sales tax and income tax.",
         link: {
           text: "Learn more",
-          url: "/"
+          url: "/",
         },
         svg: DollarUpSVG,
         backgroundColor: color.green2,
         shadowColor: shadow.green2,
         marginTop: "91px",
         textBackgroundColor: "transparent",
-        boxShadow: false
+        boxShadow: false,
       },
     ],
     marginBottom: 24,
@@ -964,15 +664,18 @@ export const startCaCorp = [
       items: [
         {
           question: "Carry Out a Florida Corporation Search and Choose the Right Name for Your Business",
-          answer: "Every FL business needs a unique name, including your corporation. You can carry out a Florida business entity name search on the FL Division of Corporations website. The name of your Florida S Corporation or C Corporation cannot be confusable with another business that’s been formed in Florida. If you’re not forming your corporation right away, you can reserve the name with the FL Division of Corporations. <br/><br />See if the name is available by <a href='/'>searching for it on the Florida Division of Corporations website</a>.<br /><br /><a href='/'>Learn how to name your Florida corporation.</a>",
+          answer:
+            "Every FL business needs a unique name, including your corporation. You can carry out a Florida business entity name search on the FL Division of Corporations website. The name of your Florida S Corporation or C Corporation cannot be confusable with another business that’s been formed in Florida. If you’re not forming your corporation right away, you can reserve the name with the FL Division of Corporations. <br/><br />See if the name is available by <a href='/'>searching for it on the Florida Division of Corporations website</a>.<br /><br /><a href='/'>Learn how to name your Florida corporation.</a>",
         },
         {
           question: "Establish Street and Mailing Addresses for Your Florida Corporation",
-          answer: "Every Florida S Corporation or C Corporation must have a designated street address. That could be your home address (if you’re running the company from your residence), your company’s office building or any physical address of your preference. The address can be outside FL, but it cannot be a P.O. Box.",
+          answer:
+            "Every Florida S Corporation or C Corporation must have a designated street address. That could be your home address (if you’re running the company from your residence), your company’s office building or any physical address of your preference. The address can be outside FL, but it cannot be a P.O. Box.",
         },
         {
           question: "Appoint a Registered Agent for Your Florida Corporation",
-          text: "Every Florida corporation must have a “Registered Agent” who receives official legal and tax correspondence and has responsibility for filing reports with the Florida Division of Corporations. Your Registered Agent must have a physical street address in Florida.<br/><br />A Registered Agent position for a Florida S Corporation or C Corporation can be filled in several ways.<br /><br />A Registered Agent could be you, a director or an officer of the corporation. The Florida Registered Agent for your corporation must have a physical street address in Florida. They need to be available during business hours to receive important documents for your corporation.<br/><br/>At Incfile, all of our packages include a Florida Registered Agent service that is free for the first year and just $119 per year afterward. We also have a dashboard where you can log in and easily view any document your Registered Agent has received on your behalf.<br/><br/>Here at Incfile we always recommend using a proper Florida Registered Agent service since they provide several benefits:",
+          text:
+            "Every Florida corporation must have a “Registered Agent” who receives official legal and tax correspondence and has responsibility for filing reports with the Florida Division of Corporations. Your Registered Agent must have a physical street address in Florida.<br/><br />A Registered Agent position for a Florida S Corporation or C Corporation can be filled in several ways.<br /><br />A Registered Agent could be you, a director or an officer of the corporation. The Florida Registered Agent for your corporation must have a physical street address in Florida. They need to be available during business hours to receive important documents for your corporation.<br/><br/>At Incfile, all of our packages include a Florida Registered Agent service that is free for the first year and just $119 per year afterward. We also have a dashboard where you can log in and easily view any document your Registered Agent has received on your behalf.<br/><br/>Here at Incfile we always recommend using a proper Florida Registered Agent service since they provide several benefits:",
           list: [
             "Some people establish companies outside of the state they live in and will use a Registered Agent service to provide an address for receiving legal documentation in the state.",
             "The Registered Agent address is listed in public records on the FL Division of Corporations website. If you do not want your own name and Florida address to be registered, you should use a Registered Agent service.",
@@ -980,45 +683,45 @@ export const startCaCorp = [
           ],
           arrowLink: {
             text: "Learn more about Florida Registered Agents.",
-            url: "/"
-          }
+            url: "/",
+          },
         },
         {
           question: "Create Your Florida Articles of Incorporation",
           list: [
-              "The corporation’s name",
-              "The corporation’s purpose",
-              "The corporation’s mailing address and street address",
-              "The corporation's Registered Agent and their address",
-              "The corporation’s capital structure (number of shares to be issued, who owns them, pricing, etc.)",
-              "The names and addresses of officers and directors",
-              "The effective date",
-              "The name and address of the incorporator",
-          ]
+            "The corporation’s name",
+            "The corporation’s purpose",
+            "The corporation’s mailing address and street address",
+            "The corporation's Registered Agent and their address",
+            "The corporation’s capital structure (number of shares to be issued, who owns them, pricing, etc.)",
+            "The names and addresses of officers and directors",
+            "The effective date",
+            "The name and address of the incorporator",
+          ],
         },
         {
           question: "Send Your Florida Articles of Incorporation to the Secretary of State",
-          text: "Once your Articles of Incorporation document is drafted, you can file it with the Florida Division of Corporations. Filing your Articles of Incorporation creates your Florida corporation. You can do this online, mail in a form or have Incfile do it on your behalf."
+          text: "Once your Articles of Incorporation document is drafted, you can file it with the Florida Division of Corporations. Filing your Articles of Incorporation creates your Florida corporation. You can do this online, mail in a form or have Incfile do it on your behalf.",
         },
         {
           question: "Your FL Corporation Will Need to Meet Certain Legal and Compliance Requirements",
           answer: "Once your Florida corporation has been created, you will need to get certain legal requirements in place. These include:",
           list: [
-              "File IRS Small Business Tax Election Form 2553 if you want your FL business to be treated as an S Corporation.",
-              "​Any Florida S Corporations formed through Incfile will also include a prepared Form 2553 that will be delivered with the state formation documents.",
-              "Create and issue stock certificates to your shareholders.",
-              "Apply for business licenses and permits. You may require licenses from the state of Florida, your county, township and various industry or federal bodies.",
-              "Get an Employer Identification Number (EIN).",
-              "File for taxes with Florida Department of Revenue.",
-              "Get all formalities in place for employees, including unemployment, disability, payroll, insurance and taxes.",
-              "Appoint a Board of Directors for the corporation.",
-              "Appoint officers to the corporation.",
-              "Get a corporate records book to capture all your important corporate information.",
-          ]
+            "File IRS Small Business Tax Election Form 2553 if you want your FL business to be treated as an S Corporation.",
+            "​Any Florida S Corporations formed through Incfile will also include a prepared Form 2553 that will be delivered with the state formation documents.",
+            "Create and issue stock certificates to your shareholders.",
+            "Apply for business licenses and permits. You may require licenses from the state of Florida, your county, township and various industry or federal bodies.",
+            "Get an Employer Identification Number (EIN).",
+            "File for taxes with Florida Department of Revenue.",
+            "Get all formalities in place for employees, including unemployment, disability, payroll, insurance and taxes.",
+            "Appoint a Board of Directors for the corporation.",
+            "Appoint officers to the corporation.",
+            "Get a corporate records book to capture all your important corporate information.",
+          ],
         },
       ],
     },
-    marginBottom: 48
+    marginBottom: 48,
   },
   {
     type: "header",
@@ -1070,7 +773,7 @@ export const startCaCorp = [
   {
     type: "text",
     content:
-        "Some states, including Florida, allow certain occupations to form “Professional Corporations.” These types of corporations may need special requirements and licensing. The Florida Secretary of State allows for the formation of professional corporations but does not provide a defined list of professions. Instead, they state the following:",
+      "Some states, including Florida, allow certain occupations to form “Professional Corporations.” These types of corporations may need special requirements and licensing. The Florida Secretary of State allows for the formation of professional corporations but does not provide a defined list of professions. Instead, they state the following:",
     marginBottom: 24,
   },
   {
@@ -1087,7 +790,7 @@ export const startCaCorp = [
   {
     type: "text",
     content:
-        "A “foreign” filing is when you have a regular, domestic corporation in a state (typically the one where you first formed your business) and need the company to be able to operate in another state. This is where you would file a “Foreign Qualification” to the new state for your domestic corporation to be able to operate in both states. You must have an existing domestic corporation before you can file as a foreign corporation.",
+      "A “foreign” filing is when you have a regular, domestic corporation in a state (typically the one where you first formed your business) and need the company to be able to operate in another state. This is where you would file a “Foreign Qualification” to the new state for your domestic corporation to be able to operate in both states. You must have an existing domestic corporation before you can file as a foreign corporation.",
     marginBottom: 52,
   },
   {
@@ -1099,7 +802,7 @@ export const startCaCorp = [
   {
     type: "text",
     content:
-        "Incfile provides a cost-effective service to help you create your corporation. We guide you through the process and handle most of the administrative steps on your behalf, such as filing your Articles of Incorporation. Our packages also provide a free Registered Agent service for the first year. If you're looking for assistance forming a corporation, we can help you start a FL S Corporation or C Corporation.",
+      "Incfile provides a cost-effective service to help you create your corporation. We guide you through the process and handle most of the administrative steps on your behalf, such as filing your Articles of Incorporation. Our packages also provide a free Registered Agent service for the first year. If you're looking for assistance forming a corporation, we can help you start a FL S Corporation or C Corporation.",
     marginBottom: 24,
   },
   {
@@ -1132,7 +835,7 @@ export const naming = [
   {
     type: "text",
     content:
-        "You need the right name for your Florida corporation. Choosing the right name is vital because it tells your suppliers, customers and employees what your business does. The Florida Division of Corporations has several rules and regulations about what you can call your new business. Let’s explore what they are.",
+      "You need the right name for your Florida corporation. Choosing the right name is vital because it tells your suppliers, customers and employees what your business does. The Florida Division of Corporations has several rules and regulations about what you can call your new business. Let’s explore what they are.",
     marginBottom: 24,
   },
   {
@@ -1163,8 +866,7 @@ export const naming = [
   },
   {
     type: "text",
-    content:
-        "Before you can name your FL corporation, you need to make sure there aren’t any other businesses in Florida with that name. That means searching the Florida Secretary of State website using their business search tool. You can easily look up FL corporations by name and other details.",
+    content: "Before you can name your FL corporation, you need to make sure there aren’t any other businesses in Florida with that name. That means searching the Florida Secretary of State website using their business search tool. You can easily look up FL corporations by name and other details.",
     marginBottom: 24,
   },
   {
@@ -1288,7 +990,7 @@ export const naming = [
   {
     type: "text",
     content:
-        "Some corporations choose to do business under a different name from the name they were formed under. In Florida, doing business under a different name is known as a “Fictitious Name.” We can file a Fictitious Name for your Florida corporation on your behalf with the county in which your principal place of business is located.",
+      "Some corporations choose to do business under a different name from the name they were formed under. In Florida, doing business under a different name is known as a “Fictitious Name.” We can file a Fictitious Name for your Florida corporation on your behalf with the county in which your principal place of business is located.",
     marginBottom: 24,
   },
   {
@@ -1308,13 +1010,13 @@ export const naming = [
   {
     type: "text",
     content:
-        "In addition to the rules above, it’s also vital to see if your Florida corporation name might infringe on the trademark or service mark of another business. For example, it might not be a good idea to call yourself “General Electric Research Services,” since General Electric is a trademark.",
+      "In addition to the rules above, it’s also vital to see if your Florida corporation name might infringe on the trademark or service mark of another business. For example, it might not be a good idea to call yourself “General Electric Research Services,” since General Electric is a trademark.",
     marginBottom: 24,
   },
   {
     type: "text",
     content:
-        "The easiest way to see if your proposed business name infringes is to carry out a trademark search. You can do that via the United States Patent and Trademark Office, or Incfile can help you protect your business with our <a href='/'>Trademark Search and Registration</a> service. You should also bear in mind that your Florida corporation name cannot be substantially similar to an existing trademark or service mark.",
+      "The easiest way to see if your proposed business name infringes is to carry out a trademark search. You can do that via the United States Patent and Trademark Office, or Incfile can help you protect your business with our <a href='/'>Trademark Search and Registration</a> service. You should also bear in mind that your Florida corporation name cannot be substantially similar to an existing trademark or service mark.",
     marginBottom: 48,
   },
   {
@@ -1358,7 +1060,7 @@ export const agents = [
   {
     type: "text",
     content:
-        "Every corporation in Florida needs to formally appoint a person or business to act as a Registered Agent. Your Florida Registered Agent provides various services to FL S Corporations and C Corporations, including the acceptance of formal documents and correspondence from the Florida Division of Corporations.",
+      "Every corporation in Florida needs to formally appoint a person or business to act as a Registered Agent. Your Florida Registered Agent provides various services to FL S Corporations and C Corporations, including the acceptance of formal documents and correspondence from the Florida Division of Corporations.",
     marginBottom: 41,
   },
   {
@@ -1411,20 +1113,20 @@ export const agents = [
     content: "Your Florida Registered Agent carries out several valuable services for your corporation. They accept official communications and documents from the FL Division of Corporations on your behalf. This may include:",
     marginBottom: 24,
   },
-    {
-        type: "list-dot",
-        content: {
-            list:[
-                "Correspondence from the Florida Division of Corporations, like a notice to file reports and other forms",
-                "Service of process documents (for example, if your Florida corporation has legal proceedings issued against it)",
-                "Official Florida and federal government documents, form filings and requests for information (including taxes, permits and company filings)",
-            ]
-        },
-        color: color.orange3,
-        marginBottom: 48,
-        curve: true,
-        curveColor: color.orange1
+  {
+    type: "list-dot",
+    content: {
+      list: [
+        "Correspondence from the Florida Division of Corporations, like a notice to file reports and other forms",
+        "Service of process documents (for example, if your Florida corporation has legal proceedings issued against it)",
+        "Official Florida and federal government documents, form filings and requests for information (including taxes, permits and company filings)",
+      ],
     },
+    color: color.orange3,
+    marginBottom: 48,
+    curve: true,
+    curveColor: color.orange1,
+  },
   {
     type: "header",
     content: "Why Assigning Yourself as the Florida Registered Agent for Your Corporation Might Be a Bad Idea",
@@ -1488,7 +1190,7 @@ export const agents = [
   {
     type: "text",
     content:
-        "If you have an S Corporation or C Corporation that’s incorporated in Florida and you need a FL Registered Agent, we can help. Incfile provides a complete Registered Agent service for any Florida corporation. If you form your business through Incfile, we’ll act as your Registered Agent free for your first year (normally a $119 annual cost).",
+      "If you have an S Corporation or C Corporation that’s incorporated in Florida and you need a FL Registered Agent, we can help. Incfile provides a complete Registered Agent service for any Florida corporation. If you form your business through Incfile, we’ll act as your Registered Agent free for your first year (normally a $119 annual cost).",
     marginBottom: 24,
   },
   {
@@ -1589,8 +1291,7 @@ export const filing = [
   },
   {
     type: "text",
-    content:
-        "When you’re forming a Florida S Corporation or C Corporation, you will need to file certain forms and pay certain fees. Requirements can come from various bodies including the federal government, the FL Division of Corporations and elsewhere.",
+    content: "When you’re forming a Florida S Corporation or C Corporation, you will need to file certain forms and pay certain fees. Requirements can come from various bodies including the federal government, the FL Division of Corporations and elsewhere.",
     marginBottom: 24,
   },
   {
@@ -1598,11 +1299,11 @@ export const filing = [
     content: "Below is a rundown of what you’ll need to do, together with information on the requirements for your Florida corporation. Some of these forms you only need to submit once, while others must be filed on a regular basis.",
     marginBottom: 24,
   },
-    {
-        type: "text",
-        content: "We provide a paid service to take care of certain filings and forms for your Florida corporation. Alternatively, you can choose to file these requirements yourself — make sure that you set calendar reminders.",
-        marginBottom: 24
-    },
+  {
+    type: "text",
+    content: "We provide a paid service to take care of certain filings and forms for your Florida corporation. Alternatively, you can choose to file these requirements yourself — make sure that you set calendar reminders.",
+    marginBottom: 24,
+  },
   {
     type: "buttons",
     content: [
@@ -1670,7 +1371,8 @@ export const filing = [
   },
   {
     type: "text",
-    content: "Depending on the type of Florida corporation you’re running, you will need to obtain various business licenses and permits. These are not required to form your FL corporation, but you must have them to legally carry out business. It’s vital to understand the permits and licenses required for your business to operate in compliance in your jurisdiction.",
+    content:
+      "Depending on the type of Florida corporation you’re running, you will need to obtain various business licenses and permits. These are not required to form your FL corporation, but you must have them to legally carry out business. It’s vital to understand the permits and licenses required for your business to operate in compliance in your jurisdiction.",
     marginBottom: 48,
   },
   {
@@ -1681,8 +1383,7 @@ export const filing = [
   },
   {
     type: "text",
-    content:
-        "Various cities in Florida have slightly different rules and fees for permits and licenses for corporations. Check with your local Florida city administration to see what their rules are. You will need a separate permit or license for each city your Florida corporation operates in.",
+    content: "Various cities in Florida have slightly different rules and fees for permits and licenses for corporations. Check with your local Florida city administration to see what their rules are. You will need a separate permit or license for each city your Florida corporation operates in.",
     marginBottom: 48,
   },
   {
@@ -1716,16 +1417,13 @@ export const filing = [
   {
     type: "text",
     content:
-        "Because permits vary widely depending on the type of Florida corporation you are operating and where you are located, we provide a comprehensive Business License Research Package. It’s designed to tell you all of the licenses and permits necessary for your new corporation. It includes:",
+      "Because permits vary widely depending on the type of Florida corporation you are operating and where you are located, we provide a comprehensive Business License Research Package. It’s designed to tell you all of the licenses and permits necessary for your new corporation. It includes:",
     marginBottom: 41,
   },
   {
     type: "list-dot",
     content: {
-      list: [
-          "A comprehensive package of all the licenses, permits and tax registrations required for your business",
-        "The application forms to file with the appropriate licensing authorities"
-      ],
+      list: ["A comprehensive package of all the licenses, permits and tax registrations required for your business", "The application forms to file with the appropriate licensing authorities"],
     },
     color: color.blue3,
     marginBottom: 48,
@@ -1807,7 +1505,7 @@ export const filing = [
   {
     type: "text",
     content:
-        "You must appoint directors to all positions in line with the agreed Florida corporation bylaws. The Board of Directors is responsible for the strategic direction and overall management of the corporation. The board selects officers who will manage the day-to-day activities of the corporation.",
+      "You must appoint directors to all positions in line with the agreed Florida corporation bylaws. The Board of Directors is responsible for the strategic direction and overall management of the corporation. The board selects officers who will manage the day-to-day activities of the corporation.",
     marginBottom: 48,
   },
   {
@@ -1830,7 +1528,7 @@ export const filing = [
   {
     type: "text",
     content:
-        "Your Florida corporation will need a book to record important information about the business. This book will include details like your Articles of Incorporation, corporate bylaws, meeting minutes, AGM details, directors, officers, stock certificate information, transfer documents and more.",
+      "Your Florida corporation will need a book to record important information about the business. This book will include details like your Articles of Incorporation, corporate bylaws, meeting minutes, AGM details, directors, officers, stock certificate information, transfer documents and more.",
     marginBottom: 48,
   },
   {
@@ -1839,17 +1537,18 @@ export const filing = [
     size: 5,
     marginBottom: 24,
   },
-    {
-        type: "text",
-        content: "Your Florida corporation will need a book to record important information about the business. This book will include details like your Articles of Incorporation, corporate bylaws, meeting minutes, AGM details, directors, officers, stock certificate information, transfer documents and more.",
-        marginBottom: 24
-    },
-    {
-        type: "header",
-        content: "Hire Employees",
-        size: 5,
-        marginBottom: 24
-    },
+  {
+    type: "text",
+    content:
+      "Your Florida corporation will need a book to record important information about the business. This book will include details like your Articles of Incorporation, corporate bylaws, meeting minutes, AGM details, directors, officers, stock certificate information, transfer documents and more.",
+    marginBottom: 24,
+  },
+  {
+    type: "header",
+    content: "Hire Employees",
+    size: 5,
+    marginBottom: 24,
+  },
   {
     type: "text",
     content: "You may need to hire employees for your Florida corporation. You will need:",
@@ -2036,7 +1735,7 @@ export const taxes = [
         },
       ],
     },
-    marginBottom: 47
+    marginBottom: 47,
   },
   {
     type: "header",
@@ -2077,7 +1776,7 @@ export const taxes = [
         },
       ],
     },
-    marginBottom: 52
+    marginBottom: 52,
   },
   {
     type: "header",
@@ -2175,7 +1874,7 @@ export const taxes = [
         "On profits of $40,000, you would pay self-employment tax of $6,120",
         "On profits of $70,000, you would pay self-employment tax of $10,710",
         "On profits of $100,000, you would pay self-employment tax of $15,300",
-        "On profits of $140,000, you would pay self-employment tax of $21,420"
+        "On profits of $140,000, you would pay self-employment tax of $21,420",
       ],
     },
     color: color.green3,
@@ -2208,7 +1907,7 @@ export const taxes = [
       {
         header: "Corporation Tax",
         text:
-            "Unlike the the Limited Liability Company and the S Corporation, a Florida C Corporation is required to file a corporate tax return and pay corporation taxes on any profits. When those taxed profits are paid to shareholders as dividends, they will also be subject to taxation on that individual’s tax return. This is known as “double taxation.”",
+          "Unlike the the Limited Liability Company and the S Corporation, a Florida C Corporation is required to file a corporate tax return and pay corporation taxes on any profits. When those taxed profits are paid to shareholders as dividends, they will also be subject to taxation on that individual’s tax return. This is known as “double taxation.”",
         svg: CorpoTaxSVG,
         backgroundColor: color.babyblue2,
         shadowColor: shadow.babyblue2,
@@ -2219,7 +1918,7 @@ export const taxes = [
       {
         header: "Stock Dividends From C Corporations",
         text:
-            "A Florida C Corporation may pay shareholders dividends as a share of the profits of the company. The value of dividends that each shareholder is entitled to depends on how many shares they own.<br /><br />Dividends that are distributed to shareholders are taxed twice: first at the corporate level as profit (on the corporation’s Form 1120) and again at the individual level as stock dividends (on the shareholder's Form 1040).",
+          "A Florida C Corporation may pay shareholders dividends as a share of the profits of the company. The value of dividends that each shareholder is entitled to depends on how many shares they own.<br /><br />Dividends that are distributed to shareholders are taxed twice: first at the corporate level as profit (on the corporation’s Form 1120) and again at the individual level as stock dividends (on the shareholder's Form 1040).",
         svg: DividentsSVG,
         backgroundColor: color.purple2,
         shadowColor: shadow.purple2,
@@ -2277,7 +1976,7 @@ export const afterFormation = [
   {
     type: "text",
     content:
-        "Each state requires different forms such as your business annual reports and state franchise tax reports to be filed at different times. It’s important to understand when each form needs to be filed and when you need to refile the form. Complying by the form filing requirements keeps your business in good standing with the state. Failure to file these reports can lead to the company being revoked or administrative business dissolution. Incfile includes lifetime company alerts with courtesy email reminders to inform clients of an upcoming filing requirement with all of our state filing packages.",
+      "Each state requires different forms such as your business annual reports and state franchise tax reports to be filed at different times. It’s important to understand when each form needs to be filed and when you need to refile the form. Complying by the form filing requirements keeps your business in good standing with the state. Failure to file these reports can lead to the company being revoked or administrative business dissolution. Incfile includes lifetime company alerts with courtesy email reminders to inform clients of an upcoming filing requirement with all of our state filing packages.",
     marginBottom: 48,
   },
   {
@@ -2298,66 +1997,9 @@ export const afterFormation = [
     marginBottom: 24,
   },
   {
-    type: "header",
-    content: "Statement of Information",
-    size: 5,
-    marginBottom: 24,
+    type: "dynamic_filing_requirement"
   },
-  {
-    type: "table",
-    content: {
-      headers: false,
-      rows: [
-        [
-          {
-            label: "Frequency:",
-            type: "label",
-            style: { "font-weight": "bold" },
-          },
-          {
-            label: "Annually",
-            type: "label",
-            textCenter: true,
-          },
-        ],
-        [
-          {
-            label: "Due Date:",
-            type: "label",
-            style: { "font-weight": "bold" },
-          },
-          {
-            label: "May 1",
-            type: "label",
-            className: "left"
-          },
-        ],
-        [
-          {
-            label: "Filing Fee:",
-            type: "label",
-            style: { "font-weight": "bold" },
-          },
-          {
-            label: "$150",
-            type: "label-boxed",
-            className: "highlight",
-            style: {
-              "align-items": "flex-start"
-            }
-          },
-        ],
-      ],
-      headerColumnsDef: "200px 1fr",
-      rowColumnsDef: "200px 1fr",
-    },
-    responsive: true,
-    settings: {},
-    tableScheme: "blue3",
-    style: {
-      "margin-bottom": "41px"
-    },
-  },
+
   {
     type: "header",
     content: "Protect Your Business Name with a Trademark",
@@ -2367,19 +2009,14 @@ export const afterFormation = [
   {
     type: "text",
     content:
-        "A trademark is an essential asset for your business because it protects the brand name and identity that you worked so hard to create. When you secure a federal trademark for your business brand, it gives you exclusive rights to use your business name, logo or slogan once the trademark is approved. Federal Trademark Protection also prevents other businesses from using your brand name and brand identity. Incfile is happy to help with conducting a trademark name search on your Corporation business name. Our partnered attorneys will do the research to make sure the mark isn't already taken, ensure the filing is properly prepared and submitted to the government office, and provide sound legal advice throughout the entire process.",
+      "A trademark is an essential asset for your business because it protects the brand name and identity that you worked so hard to create. When you secure a federal trademark for your business brand, it gives you exclusive rights to use your business name, logo or slogan once the trademark is approved. Federal Trademark Protection also prevents other businesses from using your brand name and brand identity. Incfile is happy to help with conducting a trademark name search on your Corporation business name. Our partnered attorneys will do the research to make sure the mark isn't already taken, ensure the filing is properly prepared and submitted to the government office, and provide sound legal advice throughout the entire process.",
     marginBottom: 41,
   },
   {
     type: "list-dot",
     content: {
       header: "Benefits of <a href='/'>Incfile's Trademark service</a> include:",
-      list: [
-          "Legal counsel from an experienced trademark attorney",
-        "A thorough search of existing trademarks",
-        "A registered trademark with the USPTO",
-        "Handling all correspondence with the USPTO until the name is approved."
-      ],
+      list: ["Legal counsel from an experienced trademark attorney", "A thorough search of existing trademarks", "A registered trademark with the USPTO", "Handling all correspondence with the USPTO until the name is approved."],
     },
     color: color.blue3,
     marginBottom: 48,
@@ -2394,7 +2031,7 @@ export const afterFormation = [
   {
     type: "text",
     content:
-        "Once you form your LLC in Delaware, there are important next steps to ensure your business finances and accounting are organized for tax season and peace of mind, and that your personal and business finances are kept separate to ensure safety of your personal assets. With the right accounting steps, your business will run smoothly and be set up for increased profits and success.",
+      "Once you form your LLC in Delaware, there are important next steps to ensure your business finances and accounting are organized for tax season and peace of mind, and that your personal and business finances are kept separate to ensure safety of your personal assets. With the right accounting steps, your business will run smoothly and be set up for increased profits and success.",
     marginBottom: 48,
   },
   {
@@ -2406,7 +2043,7 @@ export const afterFormation = [
   {
     type: "text",
     content:
-        "The right business checking account for your business should have minimum fees, so that your money goes into the business or your own checking account instead of spending on hidden, tricky bank fees. According to NerdWallet — who looked at the 10 biggest banks in the U.S. and some additional online banks — these are the best four free business checking accounts for your Corporation:",
+      "The right business checking account for your business should have minimum fees, so that your money goes into the business or your own checking account instead of spending on hidden, tricky bank fees. According to NerdWallet — who looked at the 10 biggest banks in the U.S. and some additional online banks — these are the best four free business checking accounts for your Corporation:",
     marginBottom: 48,
   },
   {
@@ -2418,7 +2055,7 @@ export const afterFormation = [
   {
     type: "text",
     content:
-        "Once your form your Corporation, it’s important to keep your business and personal assets separate to protect your personal assets from liability. It also makes tax season a whole lot easier when you have one clear account with all your business expenses, instead of all expenses mixed up within two accounts that need to be sorted. Once you choose a business checking account for your Florida Corporation, make sure you receive a business checking card or apply for a business credit card that you can use for all business expenses. You can also use a tool like <a href='/'>Expensify</a> to track and tag business expenses from your mobile phone.",
+      "Once your form your Corporation, it’s important to keep your business and personal assets separate to protect your personal assets from liability. It also makes tax season a whole lot easier when you have one clear account with all your business expenses, instead of all expenses mixed up within two accounts that need to be sorted. Once you choose a business checking account for your Florida Corporation, make sure you receive a business checking card or apply for a business credit card that you can use for all business expenses. You can also use a tool like <a href='/'>Expensify</a> to track and tag business expenses from your mobile phone.",
     marginBottom: 48,
   },
   {
@@ -2435,7 +2072,7 @@ export const afterFormation = [
   {
     type: "text",
     content:
-        "Choosing the right accounting software will allow you to track your accounts receivable — the money that is flowing in and out of your Corporation. Accounting software will allow you to track bills, invoices, expenses and customers. This is also another important step in simplifying your year-end tax burden. With a clear, separate business checking account and card and an organized accounting software system, you’ll (barely) dread tax season as a business owner.",
+      "Choosing the right accounting software will allow you to track your accounts receivable — the money that is flowing in and out of your Corporation. Accounting software will allow you to track bills, invoices, expenses and customers. This is also another important step in simplifying your year-end tax burden. With a clear, separate business checking account and card and an organized accounting software system, you’ll (barely) dread tax season as a business owner.",
     marginBottom: 24,
   },
   {
@@ -2444,33 +2081,35 @@ export const afterFormation = [
       {
         link: {
           text: "QuickBooks",
-          url: "/"
+          url: "/",
         },
-        text: "This is a top option for a lot of business owners and starts out at only $10 a month. You can automatically important banking transactions, track your customers and vendors and related bills and expenses, and integrate with a lot of other online finance tools. If you hire an accountant or tax support, they will all likely support QuickBooks. You can even use an online version in addition to a desktop version of their software. The drawback is that the learning curve for QuickBooks can sometimes be a bit steep.",
+        text:
+          "This is a top option for a lot of business owners and starts out at only $10 a month. You can automatically important banking transactions, track your customers and vendors and related bills and expenses, and integrate with a lot of other online finance tools. If you hire an accountant or tax support, they will all likely support QuickBooks. You can even use an online version in addition to a desktop version of their software. The drawback is that the learning curve for QuickBooks can sometimes be a bit steep.",
       },
       {
         link: {
           text: "Xero",
-          url: "/"
+          url: "/",
         },
         text: "Xero is online accounting software that is a great option for those who find QuickBooks to be too complicated and difficult to understand. Their plans start out at $20 per month.",
       },
       {
         link: {
           text: "FreshBooks",
-          url: "/"
+          url: "/",
         },
-        text: "Freshbooks is online accounting software that allows you to also track your time, expenses, collaborate on projects and view accounting reports. One drawback is that it doesn’t currently have a way to track invoices that your business needs to pay. But, accounts start out at $15 per month.",
+        text:
+          "Freshbooks is online accounting software that allows you to also track your time, expenses, collaborate on projects and view accounting reports. One drawback is that it doesn’t currently have a way to track invoices that your business needs to pay. But, accounts start out at $15 per month.",
       },
       {
         link: {
           text: "Bench",
-          url: "/"
+          url: "/",
         },
         text: "Bench not only allows you to track your accounts receivable, but they include the help of a real-life bookkeeper to run your accounting every month. For a Bench account starting out at $125 a month, this is quite the deal instead of hiring your own bookkeeper.",
-        marginBottom: "52px"
+        marginBottom: "52px",
       },
-    ]
+    ],
   },
   {
     type: "header",
@@ -2481,7 +2120,7 @@ export const afterFormation = [
   {
     type: "text",
     content:
-        "If you use QuickBooks or Freshbooks, you’ll be able to accept credit cards to pay for invoices. If you have a brick and mortar location for your small business, you want to look into offering payments through a service such as <a href='https://shopify.com/'>Shopify</a> or <a href='/'>Square</a>.",
+      "If you use QuickBooks or Freshbooks, you’ll be able to accept credit cards to pay for invoices. If you have a brick and mortar location for your small business, you want to look into offering payments through a service such as <a href='https://shopify.com/'>Shopify</a> or <a href='/'>Square</a>.",
     marginBottom: 48,
   },
   {
@@ -2493,7 +2132,7 @@ export const afterFormation = [
   {
     type: "text",
     content:
-        "In case your business runs out of cash flow, you want to have a backup option so your business doesn’t go under. You can raise capital from investors, ask friends or family for loans, get a business credit card, take an online business loan, or look into government financing using the <a href='/'>SBA & BusinessUSA’s financing tools</a>. Also, it’s important to remember that you can also bootstrap your business — which means, only using the funds you have in your bank account and not expanding until you get more business income.",
+      "In case your business runs out of cash flow, you want to have a backup option so your business doesn’t go under. You can raise capital from investors, ask friends or family for loans, get a business credit card, take an online business loan, or look into government financing using the <a href='/'>SBA & BusinessUSA’s financing tools</a>. Also, it’s important to remember that you can also bootstrap your business — which means, only using the funds you have in your bank account and not expanding until you get more business income.",
     marginBottom: 48,
   },
   {
@@ -2507,43 +2146,47 @@ export const afterFormation = [
     content: [
       {
         header: "Build a Business Website",
-        text: "Having a great online presence for your business is the number one way people will find you. You need to start with buying a domain name using a service such as <a href='/'>NameCheap</a>. Then you need to choose a service to host your website such as <a href='/'>SnapWeb</a>. Finally, design your website using a tool such as Squarespace or WordPress. Make sure your website includes important business information such as how to contact you and business hours.",
+        text:
+          "Having a great online presence for your business is the number one way people will find you. You need to start with buying a domain name using a service such as <a href='/'>NameCheap</a>. Then you need to choose a service to host your website such as <a href='/'>SnapWeb</a>. Finally, design your website using a tool such as Squarespace or WordPress. Make sure your website includes important business information such as how to contact you and business hours.",
         svg: WebSVG,
         backgroundColor: color.purple2,
         shadowColor: shadow.purple2,
         marginTop: "91px",
         boxShadow: false,
-        textBackgroundColor: "transparent"
+        textBackgroundColor: "transparent",
       },
       {
         header: "Choose a Virtual Phone System",
-        text: "Your business needs a phone number so that your customers, employees and vendors can reach you. A great option is to look into a tool such as <a href='/'>Grasshopper</a>, which allows you to get a business phone that actually forwards to your cell phone, so you never miss an important call.",
+        text:
+          "Your business needs a phone number so that your customers, employees and vendors can reach you. A great option is to look into a tool such as <a href='/'>Grasshopper</a>, which allows you to get a business phone that actually forwards to your cell phone, so you never miss an important call.",
         svg: PhoneSVG,
         backgroundColor: color.green2,
         shadowColor: shadow.green2,
         marginTop: "91px",
         boxShadow: false,
-        textBackgroundColor: "transparent"
+        textBackgroundColor: "transparent",
       },
       {
         header: "Design a Business Logo",
-        text: "A logo will reflect your business branding everywhere your customers interact with you — on your website, on your invoices, in your email signature, on business cards and more. Instead of trying to design a logo yourself, try a logo making service such as <a href='/'>99 Designs</a> or buy some really high-quality pre-made logos you can customize on <a href='/'>CreativeMarket</a>.",
+        text:
+          "A logo will reflect your business branding everywhere your customers interact with you — on your website, on your invoices, in your email signature, on business cards and more. Instead of trying to design a logo yourself, try a logo making service such as <a href='/'>99 Designs</a> or buy some really high-quality pre-made logos you can customize on <a href='/'>CreativeMarket</a>.",
         svg: LogoSVG,
         backgroundColor: color.orange2,
         shadowColor: shadow.orange2,
         marginTop: "91px",
         boxShadow: false,
-        textBackgroundColor: "transparent"
+        textBackgroundColor: "transparent",
       },
       {
         header: "Get Business Cards Created",
-        text: "Once you have a logo, create nice looking business cards that you can hand out when you’re out networking or even running errands. You never know when a conversation about your business will come up, and you want to be able to give someone a place to research your business and contact you. A great tool to create inexpensive business cards is <a href='/'>Vistaprint</a>.",
+        text:
+          "Once you have a logo, create nice looking business cards that you can hand out when you’re out networking or even running errands. You never know when a conversation about your business will come up, and you want to be able to give someone a place to research your business and contact you. A great tool to create inexpensive business cards is <a href='/'>Vistaprint</a>.",
         svg: CardSVG,
         backgroundColor: color.blue3,
         shadowColor: shadow.blue3,
         marginTop: "91px",
         boxShadow: false,
-        textBackgroundColor: "transparent"
+        textBackgroundColor: "transparent",
       },
     ],
     marginBottom: 50,
@@ -2557,7 +2200,7 @@ export const afterFormation = [
   {
     type: "text",
     content:
-        "In addition to accounting software, there is a number of online business software options that will lift a number of menial tasks and burdens off your full business-owner plate. Below are important business functions for your Corporation and what we think are the best business tools for your Florida Corporation.",
+      "In addition to accounting software, there is a number of online business software options that will lift a number of menial tasks and burdens off your full business-owner plate. Below are important business functions for your Corporation and what we think are the best business tools for your Florida Corporation.",
     marginBottom: 24,
   },
   {
@@ -2628,7 +2271,7 @@ export const afterFormation = [
         tools: ["SemRush", "KWFinder", "Moz", "AHREFS"],
       },
     ],
-    tab: true
+    tab: true,
   },
   {
     type: "header",
@@ -2639,7 +2282,7 @@ export const afterFormation = [
   {
     type: "text",
     content:
-        "If you want to track your progress in getting your new business set up properly, we have a great virtual <a href='/'>Start a Business Checklist</a> that includes everything you need to do to launch your business. It even features downloadable PDFs you can access to download and print.",
+      "If you want to track your progress in getting your new business set up properly, we have a great virtual <a href='/'>Start a Business Checklist</a> that includes everything you need to do to launch your business. It even features downloadable PDFs you can access to download and print.",
     marginBottom: 24,
   },
 ];

@@ -11,20 +11,31 @@ import ContentMap from "../../atomic/partials/content-map";
 // Content
 import { businessTaxes } from "../../static/states-llc/kansas/home";
 import { tabPages } from "../../static/states-llc/kansas/general";
+import { getFullPricesAndFilings } from '../../api/Api';
 
-const BusinessTaxesPage = () => (
-  <Layout>
-    <SEO
-    title="Filing Requirements & Fees for Kansas LLCs | Incfile.com"
-    description="Do you have an Kansas LLC? Learn about the required federal, state, and sales taxes you might need to pay. Read more."
-    />
-    <LLCLayout>
-        <LeftTabPages content={tabPages} />
-        <MainPageContent>
-            <ContentMap content={businessTaxes} />
-        </MainPageContent>
-    </LLCLayout>
-  </Layout>
-);
+const BusinessTaxesPage = () => {
+    const [dataApi, setDataApi] = React.useState({});
+
+    React.useEffect(() => {
+        getFullPricesAndFilings('Kansas').then(data => {
+            setDataApi(data);
+        });
+    }, []);
+  
+    return (
+        <Layout>
+            <SEO
+                title="Filing Requirements & Fees for Kansas LLCs | Incfile.com"
+                description="Do you have an Kansas LLC? Learn about the required federal, state, and sales taxes you might need to pay. Read more."
+            />
+            <LLCLayout data={dataApi}>
+                <LeftTabPages content={tabPages} />
+                <MainPageContent>
+                    <ContentMap content={businessTaxes} data={dataApi} />
+                </MainPageContent>
+            </LLCLayout>
+        </Layout>
+    );
+};
 
 export default BusinessTaxesPage;

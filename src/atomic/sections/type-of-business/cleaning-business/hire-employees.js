@@ -23,7 +23,7 @@ const HireEmployees = () => (
             <TextCenterLayout headlineWidth={770} headline="Hire Employees" />
 
             <Paragraph big mixed>
-                If you are hiring people to work at your beauty salon, you will need to know what to do. See our <Link to="/">10 tips on hiring employees</Link>.
+            If you’re just running your cleaning business solo, you don’t need to worry about employees. If you are hiring people to work for you, you will need to know what to do. See  <Link to="https://www.incfile.com/blog/post/avoid-confusion-when-hiring/">10 tips on hiring employees</Link>.
             </Paragraph>
         </ContentCenter>
 

@@ -16,7 +16,7 @@ export const businessNamesContent = {
         desc: `Starting a California LLC? Have Incfile do all the paperwork for you for free.`,
         button: {
           text: `Form Your LLC Now`,
-          url: "https://www.incfile.com/form-order-now.php?entityType=LLC&entityState=CA",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=CA`,
         },
       },
     ],
@@ -93,23 +93,23 @@ export const businessNamesContent = {
           ],
         },
         {
-            count: 5,
-            question: `Avoid Using Words That Are Restricted or Prohibited by the California Secretary of State`,
-            answer: [
-              {
-                type: `list-dot-without-bg`,
-                content: [
-                  `The business name may not include the words "corporation, corp, trustee, bank, trust, incorporated or inc."`,
-                  `Your California business name cannot include any words suggesting you are an insurer or assume insurance risks.`,
-                  `The business name cannot include “Agency,” “Commission,” “Department,” “Bureau,” “Division,” “Municipal” or “Board.”`,
-                ],
-              },
-              {
-                type: `paragraph`,
-                content: `<a href="https://www.sos.ca.gov/administration/regulations/current-regulations/business/business-entity-names" target="_blank" rel="noopener noreferrer">Read More About California Business Naming Rules</a>`,
-              },
-            ],
-          },
+          count: 5,
+          question: `Avoid Using Words That Are Restricted or Prohibited by the California Secretary of State`,
+          answer: [
+            {
+              type: `list-dot-without-bg`,
+              content: [
+                `The business name may not include the words "corporation, corp, trustee, bank, trust, incorporated or inc."`,
+                `Your California business name cannot include any words suggesting you are an insurer or assume insurance risks.`,
+                `The business name cannot include “Agency,” “Commission,” “Department,” “Bureau,” “Division,” “Municipal” or “Board.”`,
+              ],
+            },
+            {
+              type: `paragraph`,
+              content: `<a href="https://www.sos.ca.gov/administration/regulations/current-regulations/business/business-entity-names" target="_blank" rel="noopener noreferrer">Read More About California Business Naming Rules</a>`,
+            },
+          ],
+        },
       ],
     },
     {
@@ -238,7 +238,7 @@ export const businessNamesContent = {
         subtitle: `Incorporate in California for $0 + State Fee ($75)`,
         button: {
           text: `Start Your LLC Now`,
-          url: `/form-order-now.php?entityType=LLC&entityState=CA`,
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=CA`,
         },
       },
     },

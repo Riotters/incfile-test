@@ -32,9 +32,11 @@ export const howToGuide = [
     type: `list-dot`,
     content: {
       header: `There are a couple of other good reasons for starting a business in Wyoming:`,
-      list: [`Wyoming is the first state in the U.S. to recognize and create statutes for the LLC. It has become popular as an 
-              alternative to Nevada for starting a business as the fees for Nevada have greatly increased over the past few years. `, 
-             `Wyoming does not have state tax, making it an attractive proposition for anyone wanting to reduce their tax liability.`],
+      list: [
+        `Wyoming is the first state in the U.S. to recognize and create statutes for the LLC. It has become popular as an 
+              alternative to Nevada for starting a business as the fees for Nevada have greatly increased over the past few years. `,
+        `Wyoming does not have state tax, making it an attractive proposition for anyone wanting to reduce their tax liability.`,
+      ],
     },
     marginBottom: 16,
     color: color.blue3,
@@ -50,9 +52,7 @@ export const howToGuide = [
     type: `list-dot`,
     content: {
       header: `Briefly, the benefits of starting a Wyoming LLC include:`,
-      list: [`Separating and limiting your personal liability from your business liability and debts`, 
-             `Quick and simple filing, management, compliance, regulations and administration of your Wyoming LLC`,
-             `Easy tax filing and potential advantages for tax treatment`],
+      list: [`Separating and limiting your personal liability from your business liability and debts`, `Quick and simple filing, management, compliance, regulations and administration of your Wyoming LLC`, `Easy tax filing and potential advantages for tax treatment`],
     },
     marginBottom: 16,
     color: color.blue3,
@@ -87,7 +87,7 @@ export const howToGuide = [
           question: `STEP 2: Search for and Choose a Unique Business Name for Your Wyoming LLC`,
           answer: `<p>You will need a distinctive and original name for your Wyoming LLC that’s not used by any other business in WY. To find out if another company is using your chosen business name, carry out a Wyoming business entity name search on the WY Secretary of State website.</p></br>
             <p>There are a few rules you’ll need to follow when choosing an LLC name. You can find out more in our guide to searching for and naming your Wyoming LLC.</p></br>
-            <p><a href="https://www.incfile.com/wyoming-llc/how-to-name-your-llc/" title="Learn about Wyoming LLC business naming rules">Learn about Wyoming LLC
+            <p><a href="/wyoming-llc/how-to-name-your-llc/" title="Learn about Wyoming LLC business naming rules">Learn about Wyoming LLC
             business naming rules</a>.</p>`,
         },
         {
@@ -99,7 +99,7 @@ export const howToGuide = [
           answer: `<p>Every WY LLC must have a “Registered Agent” when it is formed. This is an official position; the Registered Agent is someone who receives official legal and tax correspondence and has responsibility for filing reports with the Wyoming Secretary of State.</p></br> 
             <p>This position can be filled by you, another manager in the business or a dedicated Registered Agent service. Your WY Registered Agent must have a physical street address in Wyoming and must be present to receive important documents for your company during business hours.</p></br>
             <p>At Incfile, all of our packages include a Wyoming Registered Agent service that is free for the first year and just $119 per year afterward. We also have a dashboard where you can log in and easily view any document your Registered Agent has received on your behalf.</p></br>
-            <p><a href="https://www.incfile.com/wyoming-llc/registered-agents-wyoming-llc/" title="Learn more about Wyoming Registered Agents">Learn more about Wyoming Registered Agents</a></p>`,
+            <p><a href="/wyoming-llc/registered-agents-wyoming-llc/" title="Learn more about Wyoming Registered Agents">Learn more about Wyoming Registered Agents</a></p>`,
         },
         {
           question: `STEP 5: Get an Employee Identification Number (EIN) From the Internal Revenue Service`,
@@ -114,7 +114,7 @@ export const howToGuide = [
                 <li>Name of the incorporator</li>
             </ol></br>
             <p>You can file your Wyoming LLC Articles of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Wyoming. You only need to file your Articles of Organization once.</p></br>
-            <a href="https://www.incfile.com/wyoming-llc/registered-agents-wyoming-llc/" title="Learn more about Wyoming Registered Agents">Learn more about Wyoming Registered Agents</a>`,
+            <a href="/wyoming-llc/registered-agents-wyoming-llc/" title="Learn more about Wyoming Registered Agents">Learn more about Wyoming Registered Agents</a>`,
         },
       ],
     },
@@ -130,9 +130,11 @@ export const howToGuide = [
     type: `list-dot`,
     content: {
       header: `These are all the basic steps for forming an LLC in Wyoming. You’ll find other useful information below.`,
-      list: [`<a href="https://soswy.state.wy.us/Business/StartABusiness.aspx">Wyoming Secretary of State for forming and running your WY LLC</a>`,
-             `<a href="http://www.wyomingworkforce.org/">Wyoming Department of Workforce Services for WY employers and hiring</a>`,
-             `<a href="http://revenue.wyo.gov/">Wyoming Department of Revenue for WY taxes</a>`],
+      list: [
+        `<a href="https://soswy.state.wy.us/Business/StartABusiness.aspx">Wyoming Secretary of State for forming and running your WY LLC</a>`,
+        `<a href="http://www.wyomingworkforce.org/">Wyoming Department of Workforce Services for WY employers and hiring</a>`,
+        `<a href="http://revenue.wyo.gov/">Wyoming Department of Revenue for WY taxes</a>`,
+      ],
     },
     marginBottom: 48,
     color: color.blue3,
@@ -159,7 +161,7 @@ export const howToGuide = [
         {
           question: `Form a Foreign LLC in Wyoming`,
           answer: `<p>If your business is already operating in another state and expanding to Wyoming, you’ll need to form a foreign LLC.</p></br>
-          <p>More information on Wyoming <a href="https://www.incfile.com/wyoming-llc/form-filling-permit-requirements/">filing and licensing requirements here</a></p>`,
+          <p>More information on Wyoming <a href="/wyoming-llc/form-filling-permit-requirements/">filing and licensing requirements here</a></p>`,
         },
       ],
     },
@@ -325,7 +327,12 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: `For example, you cannot use the following factors to say your name is different from the name of another business:`,
-      list: [`Suffixes, such as Corporation, Company, Incorporated, Incorporation, Limited, Corp., Co., Inc., Ltd., LLC, etc.`, `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`, `The singular, plural or possessive forms of a word`, `Abbreviations, punctuation, symbols, fonts, typefaces, etc.`],
+      list: [
+        `Suffixes, such as Corporation, Company, Incorporated, Incorporation, Limited, Corp., Co., Inc., Ltd., LLC, etc.`,
+        `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`,
+        `The singular, plural or possessive forms of a word`,
+        `Abbreviations, punctuation, symbols, fonts, typefaces, etc.`,
+      ],
     },
     marginBottom: 32,
     color: color.green3,
@@ -351,7 +358,12 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: `Most states will not allow you to form LLCs with names that:`,
-      list: [`Are very similar to the name of a federal or WY agency or organization (e.g., FBI, FDA, Wyoming Department of Revenue, Wyoming Police, Treasury, etc.)`, `Suggest affiliation with a federal or state agency or organization`, `Use the term “Olympic” or any terms that are trademarks of the Olympic organization`, `Imply a purpose that it would be illegal for your business to carry out`],
+      list: [
+        `Are very similar to the name of a federal or WY agency or organization (e.g., FBI, FDA, Wyoming Department of Revenue, Wyoming Police, Treasury, etc.)`,
+        `Suggest affiliation with a federal or state agency or organization`,
+        `Use the term “Olympic” or any terms that are trademarks of the Olympic organization`,
+        `Imply a purpose that it would be illegal for your business to carry out`,
+      ],
     },
     marginBottom: 48,
     color: color.yellow3,
@@ -415,7 +427,7 @@ export const namingYourBusiness = [
         text: `If you don’t want to form your Wyoming LLC right now, you can reserve the business name with the Wyoming Secretary of State. `,
       },
       {
-        text: `If you’re ready to start your Wyoming LLC, you can formally file your Articles of Organization with the Wyoming SOS, or <a href="/form-order-now.php?entityType=LLC&amp;entityState=WY">let Incfile take care of it for you</a>.`,
+        text: `If you’re ready to start your Wyoming LLC, you can formally file your Articles of Organization with the Wyoming SOS, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&amp;entityState=WY">let Incfile take care of it for you</a>.`,
       },
     ],
     marginBottom: 48,
@@ -543,10 +555,12 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: ` They are:`,
-      list: [`If the Statutory Agent is a person, they must reside in Wyoming`,
-             `If the Statutory Agent is a business, they must be able to conduct business in Wyoming`, 
-             `The Statutory Agent must have a physical street address in Wyoming, not a P.O. Box`,
-             `The AZ Statutory Agent must be available in person during normal business hours to sign for any correspondence`],
+      list: [
+        `If the Statutory Agent is a person, they must reside in Wyoming`,
+        `If the Statutory Agent is a business, they must be able to conduct business in Wyoming`,
+        `The Statutory Agent must have a physical street address in Wyoming, not a P.O. Box`,
+        `The AZ Statutory Agent must be available in person during normal business hours to sign for any correspondence`,
+      ],
     },
     marginBottom: 16,
     color: color.green3,
@@ -571,9 +585,11 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: `This may include:`,
-      list: [`Correspondence from the Wyoming Corporation Commission, like a notice to file reports and other forms`,
-             `Service of process documents (for example, if your Wyoming LLC has legal proceedings issued against it)`,
-             `Official Wyoming and federal government documents, form filings and requests for information (including taxes, permits and company filings)`],
+      list: [
+        `Correspondence from the Wyoming Corporation Commission, like a notice to file reports and other forms`,
+        `Service of process documents (for example, if your Wyoming LLC has legal proceedings issued against it)`,
+        `Official Wyoming and federal government documents, form filings and requests for information (including taxes, permits and company filings)`,
+      ],
     },
     marginBottom: 48,
     color: color.yellow3,
@@ -598,10 +614,12 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: `Here’s what the Infile Wyoming Registered Agent service provides for your AZ LLC:`,
-      list: [`An always-available Wyoming Registered Agent who can receive correspondence, documents and legal proceedings on your LLC’s behalf`,
-             `A digital dashboard where you can access, store and retrieve any information we’ve received for your Wyoming business`,
-             `Email notification whenever we receive documents for your Wyoming business`,
-             `Automatic forwarding of all legal correspondence, documentation and information directly to you`],
+      list: [
+        `An always-available Wyoming Registered Agent who can receive correspondence, documents and legal proceedings on your LLC’s behalf`,
+        `A digital dashboard where you can access, store and retrieve any information we’ve received for your Wyoming business`,
+        `Email notification whenever we receive documents for your Wyoming business`,
+        `Automatic forwarding of all legal correspondence, documentation and information directly to you`,
+      ],
     },
     marginBottom: 16,
     color: color.purple3,
@@ -663,7 +681,7 @@ export const registeredAgent = [
     type: `button`,
     content: {
       text: `INCORPORATE YOUR BUSINESS THROUGH INCFILE`,
-      url: `/form-order-now.php?entityType=LLC&entityState=AZ/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ/`,
     },
     theme: `primary48`,
     marginBottom: 48,
@@ -741,9 +759,11 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: `There are several possible ramifications, including:`,
-      list: [`Getting served or sued and not finding out about it: If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
-             `Falling out of good standing with the Wyoming Corporation Commission: If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`, 
-             `Losing your status as an Wyoming LLC: An AZ Statutory Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections, and your Wyoming LLC may be dissolved.`],
+      list: [
+        `Getting served or sued and not finding out about it: If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
+        `Falling out of good standing with the Wyoming Corporation Commission: If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
+        `Losing your status as an Wyoming LLC: An AZ Statutory Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections, and your Wyoming LLC may be dissolved.`,
+      ],
     },
     marginBottom: 48,
     color: color.babyblue3,
@@ -763,10 +783,12 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: `We don’t recommend this approach as there can be some drawbacks:`,
-      list: [`The AZ Statutory Agent must have a physical street address in Wyoming. If you’re forming an LLC outside AZ, you will need to use an in-state Statutory Agent.`,
-             `You always need to have someone on hand during business hours at the Wyoming address to sign for important documents.`, 
-             `The AZ Statutory Agent’s name and address are part of the public record and available through the Wyoming Corporation Commission's website. If you would prefer your name and address aren’t published, you might choose to use a Statutory/Registered Agent service instead.`,
-             `If you change your Wyoming business address or move out of state, you would need to file additional documentation with the AZ Corporation Commission for the new address if you act as your own Statutory Agent. This would not be the case if you use a Statutory/Registered Agent service, making a move or address change much simpler.`],
+      list: [
+        `The AZ Statutory Agent must have a physical street address in Wyoming. If you’re forming an LLC outside AZ, you will need to use an in-state Statutory Agent.`,
+        `You always need to have someone on hand during business hours at the Wyoming address to sign for important documents.`,
+        `The AZ Statutory Agent’s name and address are part of the public record and available through the Wyoming Corporation Commission's website. If you would prefer your name and address aren’t published, you might choose to use a Statutory/Registered Agent service instead.`,
+        `If you change your Wyoming business address or move out of state, you would need to file additional documentation with the AZ Corporation Commission for the new address if you act as your own Statutory Agent. This would not be the case if you use a Statutory/Registered Agent service, making a move or address change much simpler.`,
+      ],
     },
     marginBottom: 48,
     color: color.purple3,
@@ -811,9 +833,11 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       header: `You might find these resources helpful:`,
-      list: [`<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/">The Main Functions of an Wyoming Registered Agent</a>`,
-             `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Wyoming Registered Agent</a>`,
-             `<a href="/research-topics/registered-agent-help/what-does-a-registered-agent-do/">What an Wyoming Registered Agent Does</a>`],
+      list: [
+        `<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/">The Main Functions of an Wyoming Registered Agent</a>`,
+        `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Wyoming Registered Agent</a>`,
+        `<a href="/research-topics/registered-agent-help/what-does-a-registered-agent-do/">What an Wyoming Registered Agent Does</a>`,
+      ],
     },
     marginBottom: 48,
     color: color.blue3,
@@ -849,11 +873,7 @@ export const feesAndRequirments = [
     marginBottom: 16,
   },
   {
-    type: `table`,
-    content: {
-      headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
-      rows: [[`$85`, `4 Weeks`, `12 Business days`]],
-    },
+    type: `dynamic_ar_box`
   },
   {
     type: `arrow-link`,
@@ -885,7 +905,7 @@ export const feesAndRequirments = [
     type: `button`,
     content: {
       text: `INCORPORATE YOUR ARIZONA LLC THROUGH INCFILE TODAY`,
-      url: `/form-order-now.php?entityType=LLC&entityState=AZ/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ/`,
     },
     theme: `primary48`,
     marginBottom: 48,
@@ -961,9 +981,11 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: `Permits and licenses vary based on:`,
-      list: [`The industry your Wyoming LLC operates in (e.g., restaurants will need health permits)`,
-             `The location of your Wyoming LLC (state, county or city) (e.g., a license to conduct business from the city of Phoenix)`, 
-             `The type of business that you run (e.g., healthcare providers must meet HIPAA requirements)`],
+      list: [
+        `The industry your Wyoming LLC operates in (e.g., restaurants will need health permits)`,
+        `The location of your Wyoming LLC (state, county or city) (e.g., a license to conduct business from the city of Phoenix)`,
+        `The type of business that you run (e.g., healthcare providers must meet HIPAA requirements)`,
+      ],
     },
     marginBottom: 24,
     color: color.green3,
@@ -972,8 +994,7 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: `You can research these permits and licenses yourself or use Incfile’s Business License Research Package, which includes:`,
-      list: [`A complete report on all the licenses, permits and tax registrations your Wyoming LLC will need`,
-             `The application forms you will need to file with the state, regional and federal licensing authorities`],
+      list: [`A complete report on all the licenses, permits and tax registrations your Wyoming LLC will need`, `The application forms you will need to file with the state, regional and federal licensing authorities`],
     },
     marginBottom: 16,
     color: color.yellow3,
@@ -1085,9 +1106,7 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: `Areas you might want to file Wyoming Articles of Amendment for include:`,
-      list: [`Adding, removing or changing an Wyoming LLC member or manager`,
-             `Changing the business address of your LLC`,
-             `Altering the stated business activities of your Wyoming LLC`],
+      list: [`Adding, removing or changing an Wyoming LLC member or manager`, `Changing the business address of your LLC`, `Altering the stated business activities of your Wyoming LLC`],
     },
     marginBottom: 16,
     color: color.purple3,
@@ -1275,10 +1294,7 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `You will typically need to collect Wyoming sales tax on:`,
-      list: [
-            `Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`,
-            `Certain services that your Wyoming business might provide`
-        ],
+      list: [`Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`, `Certain services that your Wyoming business might provide`],
     },
     marginBottom: 16,
     color: color.babyblue3,
@@ -1326,10 +1342,7 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
-      list: [`On profits of $20,000, you would pay self-employment tax of $3,060`,
-             `On profits of $50,000, you would pay self-employment tax of $7,650`,
-             `On profits of $100,000, you would pay self-employment tax of $15,300`,
-             `On profits of $160,000, you would pay self-employment tax of $24,480`],
+      list: [`On profits of $20,000, you would pay self-employment tax of $3,060`, `On profits of $50,000, you would pay self-employment tax of $7,650`, `On profits of $100,000, you would pay self-employment tax of $15,300`, `On profits of $160,000, you would pay self-employment tax of $24,480`],
     },
     marginBottom: 48,
     color: color.orange3,
@@ -1455,9 +1468,7 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `The most common types of estimated tax are:`,
-      list: [`Federal income tax`,
-             `Federal self-employment tax`, 
-             `Wyoming state tax`],
+      list: [`Federal income tax`, `Federal self-employment tax`, `Wyoming state tax`],
     },
     marginBottom: 16,
     color: color.green3,

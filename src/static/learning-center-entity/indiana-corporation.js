@@ -1,12 +1,10 @@
-import React from "react";
-
 export const top = {
   header: `Form a Corporation in Indiana.`,
   text: `$0 + State Fee & 1st Year FREE Registered Agent`,
   buttons: [
     {
       text: `Start my corporation`,
-      url: `/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=IN`,
     },
   ],
 };
@@ -185,7 +183,7 @@ export const packets = {
       image: "",
       button: {
         text: "Get the Silver package",
-        url: "/",
+        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=AL`,
       },
       fees: [
         {
@@ -209,8 +207,8 @@ export const packets = {
       price: 100,
       image: "",
       button: {
-        text: "Get the Gold package",
-        url: "/",
+        text: "Get the Silver package",
+        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=AL`,
       },
       fees: [
         {
@@ -234,8 +232,8 @@ export const packets = {
       price: 100,
       image: "",
       button: {
-        text: "Get the Platinum package",
-        url: "/",
+        text: "Get the Silver package",
+        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=AL`,
       },
       fees: [
         {

@@ -79,7 +79,7 @@ const BusinessStructure = () => <OrangeContainer>
             >
                 <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                            mixed={true}>
-                    <FlexLink to="/">
+                    <FlexLink to="">
                         <IconCircle circleColor="transparent" iconColor={color.blue1}>
                             <ArrowSVG/>
                         </IconCircle>
@@ -110,10 +110,12 @@ const BusinessStructure = () => <OrangeContainer>
             >
                 <Paragraph big flex flexAlign={true} style={{color: color.blue1, fontWeight: "bold"}}
                            mixed={true}>
+                <FlexLink to="https://www.incfile.com/form-order-now.php?entityType=LLC">
                     <IconCircle circleColor="transparent" iconColor={color.blue1}>
                         <ArrowSVG/>
                     </IconCircle>
                     Limited Liability Company or LLC
+                    </FlexLink>
                 </Paragraph>
 
                 <Paragraph big>
@@ -139,7 +141,7 @@ const BusinessStructure = () => <OrangeContainer>
             >
                 <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                            mixed={true}>
-                    <FlexLink to="/">
+                    <FlexLink to="https://www.incfile.com/form-order-now.php?entityType=LLC">
                         <IconCircle circleColor="transparent" iconColor={color.blue1}>
                             <ArrowSVG/>
                         </IconCircle>
@@ -170,7 +172,7 @@ const BusinessStructure = () => <OrangeContainer>
             >
                 <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                            mixed={true}>
-                    <FlexLink to="/">
+                    <FlexLink to="https://www.incfile.com/form-order-now.php?entityType=S-Corporation">
                         <IconCircle circleColor="transparent" iconColor={color.blue1}>
                             <ArrowSVG/>
                         </IconCircle>
@@ -200,7 +202,7 @@ const BusinessStructure = () => <OrangeContainer>
             >
                 <Paragraph big style={{color: color.blue1, fontWeight: "bold"}}
                            mixed={true}>
-                    <FlexLink to="/">
+                    <FlexLink to="https://www.incfile.com/form-order-now.php?entityType=C-Corporation">
                         <IconCircle circleColor="transparent" iconColor={color.blue1}>
                             <ArrowSVG/>
                         </IconCircle>
@@ -222,13 +224,13 @@ const BusinessStructure = () => <OrangeContainer>
             </Paragraph>
             <Paragraph big style={{paddingTop: "48px", paddingBottom: 0}} mixed={true}>
                 For more information on the advantages and disadvantages of different types of businesses, <Link
-                to="/">please see our in-depth guide</Link>. If you’ve still got questions, <Link to="/">we’ve
+                to="https://www.incfile.com/business-entity-comparison/">please see our in-depth guide</Link>. If you’ve still got questions, <Link to="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/">we’ve
                 answered them to help you choose the right business structure.</Link>
             </Paragraph>
             <Paragraph big style={{paddingTop: "48px", paddingBottom: 0}} mixed={true}>
-                We’ve <Link to="/">got a complete guide to everything you need to do to set up an LLC</Link>, and we
+                We’ve <Link to="https://www.incfile.com/form-an-llc/">got a complete guide to everything you need to do to set up an LLC</Link>, and we
                 can start one
-                for your consulting business today. <Link to="/">LLC formation does vary from state to state</Link>,
+                for your consulting business today. <Link to="https://www.incfile.com/llc-state-information/">LLC formation does vary from state to state</Link>,
                 but we’ve got
                 you covered, wherever you are.
             </Paragraph>

@@ -1,5 +1,4 @@
 import React from "react";
-import { color } from "../../atomic/atoms/styles/colors";
 
 export const top = {
   header: "The Fastest & Easiest Way\n" + " To Start Your Business",

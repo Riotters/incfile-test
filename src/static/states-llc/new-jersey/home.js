@@ -6,7 +6,7 @@ export const top = {
   buttons: [
     {
       text: `See detailed pricing`,
-      url: `/form-order-now.php?entityType=LLC&entityState=AZ`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ`,
     },
   ],
 };
@@ -34,7 +34,7 @@ export const howToGuide = [
     marginBottom: 16,
   },
   {
-    type: 'text', //video
+    type: "text", //video
     content: '<iframe width="720" height="350" src="https://www.youtube.com/watch?v=0sh4OgPJ3kE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>',
     marginBottom: 24,
   },
@@ -42,11 +42,7 @@ export const howToGuide = [
     type: `list-dot`,
     content: {
       header: `Briefly, the benefits of starting a New Jersey LLC include:`,
-      list: [
-        `Separating and limiting your personal liability from your business liability and debts`,
-        `Quick and simple filing, management, compliance, regulations and administration of your New Jersey LLC`,
-        `Easy tax filing and potential advantages for tax treatment`
-      ],
+      list: [`Separating and limiting your personal liability from your business liability and debts`, `Quick and simple filing, management, compliance, regulations and administration of your New Jersey LLC`, `Easy tax filing and potential advantages for tax treatment`],
     },
     marginBottom: 16,
     color: color.green3,
@@ -105,7 +101,7 @@ export const howToGuide = [
           question: `STEP 6: File a Business Registration Application With the New Jersey Division of Revenue and Enterprise Services`,
           answer: `<p>Once you've gathered all the information together for your New Jersey LLC, you'll need to file a formal document with the NJ Division of Revenue and Enterprise Services. This document is known as your “Business Registration Application,” and filing the document creates your New Jersey LLC. This is a long and complex form that requires detailed information.</p></br>
             <p>You can file your New Jersey LLC Business Registration Application online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in New Jersey. You only need to file your Business Registration Application once.</p></br>
-            <p><a href="/" target="_blank">Form your LLC now</a></p>`, //https://www.incfile.com/form-order-now.php?entityType=LLC&entityState=ID
+            <p><a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=ID" target="_blank">Form your LLC now</a></p>`,
         },
       ],
     },
@@ -129,7 +125,7 @@ export const howToGuide = [
       list: [
         `<a href="https://www.state.nj.us/treasury/revenue/" target="_blank" rel="noopener noreferrer">New Jersey Division of Revenue and Enterprise Services for forming and running your NJ LLC</a>`,
         `<a href="https://www.nj.gov/labor/" target="_blank" rel="noopener noreferrer">New Jersey Department of Labor for NJ employers and hiring</a>`,
-        `<a href="https://www.state.nj.us/treasury/taxation/businesses.shtml" target="_blank" rel="noopener noreferrer">New Jersey Division of Taxation for NJ taxes</a>`
+        `<a href="https://www.state.nj.us/treasury/taxation/businesses.shtml" target="_blank" rel="noopener noreferrer">New Jersey Division of Taxation for NJ taxes</a>`,
       ],
     },
     marginBottom: 48,
@@ -314,9 +310,9 @@ export const namingYourBusiness = [
       header: `For example, you cannot use the following factors to say your name is different from the name of another business:`,
       list: [
         `Suffixes, such as Corporation, Company, Incorporated, Incorporation, Limited, Corp., Co., Inc., Ltd., LLC, etc.`,
-        `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`, 
-        `The singular, plural or possessive forms of a word`, 
-        `Abbreviations, punctuation, symbols, fonts, typefaces, etc.`
+        `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`,
+        `The singular, plural or possessive forms of a word`,
+        `Abbreviations, punctuation, symbols, fonts, typefaces, etc.`,
       ],
     },
     marginBottom: 32,
@@ -350,9 +346,9 @@ export const namingYourBusiness = [
       header: ``,
       list: [
         `Are very similar to the name of a federal or NJ agency or organization (e.g., FBI, FDA, New Jersey Division of Taxation, New Jersey Police, Treasury, etc.)`,
-        `Suggest affiliation with a federal or state agency or organization`, 
-        `Use the term “Olympic” or any terms that are trademarks of the Olympic organization`, 
-        `Imply a purpose that it would be illegal for your business to carry out`
+        `Suggest affiliation with a federal or state agency or organization`,
+        `Use the term “Olympic” or any terms that are trademarks of the Olympic organization`,
+        `Imply a purpose that it would be illegal for your business to carry out`,
       ],
     },
     marginBottom: 32,
@@ -424,7 +420,7 @@ export const namingYourBusiness = [
       },
       {
         text: `If you’re ready to start your New Jersey LLC, you can file your Business Registration Application with the New Jersey Division of Revenue and Enterprise Services yourself, or
-          <a href="/" target="_blank" rel="noopener noreferrer">let Incfile take care of it for you.</a>`, //https://www.incfile.com/form-order-now.php?entityType=LLC&entityState=CO
+          <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=CO" target="_blank" rel="noopener noreferrer">let Incfile take care of it for you.</a>`,
       },
     ],
     marginBottom: 48,
@@ -510,12 +506,7 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [
-        `Appeal to your customers`,
-        `Be memorable enough to stand out`, 
-        `Best represent your product or services`,
-        `Not be used by another business`
-      ],
+      list: [`Appeal to your customers`, `Be memorable enough to stand out`, `Best represent your product or services`, `Not be used by another business`],
     },
     marginBottom: 16,
     color: color.orange3,
@@ -636,7 +627,7 @@ export const registeredAgent = [
     type: `button`,
     content: {
       text: `Order IncFile's New Jersey registered agent service`,
-      url: `/form-order-now.php?entityType=LLC&entityState=AZ/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ/`,
     },
     theme: `primary48`,
     marginBottom: 48,
@@ -689,7 +680,7 @@ export const registeredAgent = [
     type: `button`,
     content: {
       text: `Incorporate your business through IncFile`,
-      url: `/form-order-now.php?entityType=LLC&entityState=AZ/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ/`,
     },
     theme: `primary48`,
     marginBottom: 32,
@@ -731,7 +722,7 @@ export const registeredAgent = [
     type: `button`,
     content: {
       text: `Order IncFile's New Jersey registered agent service`,
-      url: `/form-order-now.php?entityType=LLC&entityState=AZ/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ/`,
     },
     theme: `primary48`,
     marginBottom: 48,
@@ -770,7 +761,7 @@ export const registeredAgent = [
       list: [
         `Getting served or sued and not finding out about it: If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
         `Falling out of good standing With the New Jersey Division of Revenue and Enterprise Services: If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
-        `Losing your status as a New Jersey LLC: A NJ Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your New Jersey LLC may be dissolved.`
+        `Losing your status as a New Jersey LLC: A NJ Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your New Jersey LLC may be dissolved.`,
       ],
     },
     marginBottom: 48,
@@ -793,7 +784,7 @@ export const registeredAgent = [
       header: `We don’t recommend this approach as there can be some drawbacks:`,
       list: [
         `The NJ Registered Agent must have a physical street address in New Jersey. If you’re forming an LLC outside NJ, you will need to use an in-state Registered Agent.`,
-        `You always need to have someone on hand during business hours at the New Jersey address to sign for important documents.`, 
+        `You always need to have someone on hand during business hours at the New Jersey address to sign for important documents.`,
         `The NJ Registered Agent’s name and address are part of the public record and available through the New Jersey Division of Revenue and Enterprise Service's website. If you would prefer your name and address aren’t published, you might choose a Registered Agent service.`,
         `If you change your New Jersey business address or move out of state, you would need to file additional documentation with the NJ Division of Revenue and Enterprise Services for the new address if you act as your own Registered Agent. This would not be the case if you use a Registered Agent service, making a move or address change much simpler.`,
       ],
@@ -844,7 +835,7 @@ export const registeredAgent = [
       list: [
         `<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/" target="_blank">The Main Functions of a New Jersey Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/" target="_blank" >Changing Your New Jersey Registered Agent</a>`,
-        `<a href="/research-topics/registered-agent-help/what-does-a-registered-agent-do/" target="_blank" >What a New Jersey Registered Agent Does</a>`
+        `<a href="/research-topics/registered-agent-help/what-does-a-registered-agent-do/" target="_blank" >What a New Jersey Registered Agent Does</a>`,
       ],
     },
     marginBottom: 0,
@@ -881,11 +872,7 @@ export const feesAndRequirments = [
     marginBottom: 16,
   },
   {
-    type: `table-simple`,
-    content: {
-      headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
-      rows: [[`$130`, `5 business days`, `1 business day`]],
-    },
+    type: `dynamic_ar_box`
   },
   {
     type: `arrow-link`,
@@ -917,7 +904,7 @@ export const feesAndRequirments = [
     type: `button`,
     content: {
       text: `Incorporate your New Jersey LLC through IncFile today`,
-      url: `/form-order-now.php?entityType=LLC&entityState=AZ/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ/`,
     },
     theme: `primary48`,
     marginBottom: 48,
@@ -954,18 +941,7 @@ export const feesAndRequirments = [
     marginBottom: 16,
   },
   {
-    type: `list-dot`,
-    content: {
-      header: `Annual Report`,
-      list: [
-        `Frequency:  Annually`,
-        `Due Date:  Last day of anniversary month of organization.`,
-        `Filing Fee:  $78`,
-        `*All new business entities in New Jersey are required to file Form NJ-REG to be registered for tax and employer purposes. Filing Form NJ-REG ensures that the business is registered under the correct tax   identification number and that it will receive the proper returns and notices. The NJ-REG, must be filed within 60 days of filing the new business entity, there is no fee for this filing.`,
-      ],
-    },
-    marginBottom: 16,
-    color: color.blue2,
+    type: `dynamic_filing_requirement`
   },
   {
     type: `text`,
@@ -998,8 +974,8 @@ export const feesAndRequirments = [
       header: `Permits and licenses vary based on:`,
       list: [
         `The industry your New Jersey LLC operates in (e.g., restaurants will need health permits)`,
-        `The location of your New Jersey LLC (state, county or city) (e.g., a license to conduct business from the city of Newark.)`, 
-        `The type of business that you run (e.g., healthcare providers must meet HIPAA requirements)`
+        `The location of your New Jersey LLC (state, county or city) (e.g., a license to conduct business from the city of Newark.)`,
+        `The type of business that you run (e.g., healthcare providers must meet HIPAA requirements)`,
       ],
     },
     marginBottom: 24,
@@ -1009,10 +985,7 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: `You can research these permits and licenses yourself or use Incfile’s Business License Research Package, which includes:`,
-      list: [
-        `A complete report on all the licenses, permits and tax registrations your New Jersey LLC will need`,
-        `The application forms you will need to file with the New Jersey, regional and federal licensing authorities`,
-      ],
+      list: [`A complete report on all the licenses, permits and tax registrations your New Jersey LLC will need`, `The application forms you will need to file with the New Jersey, regional and federal licensing authorities`],
     },
     marginBottom: 16,
     color: color.yellow3,
@@ -1124,11 +1097,7 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: `Areas you might want to file New Jersey Certificate of Amendment for include:`,
-      list: [
-        `Adding, removing or changing a New Jersey LLC member or manager`,
-        `Changing the business address of your LLC`,
-        `Altering the stated business activities of your New Jersey LLC`
-      ],
+      list: [`Adding, removing or changing a New Jersey LLC member or manager`, `Changing the business address of your LLC`, `Altering the stated business activities of your New Jersey LLC`],
     },
     marginBottom: 16,
     color: color.green3,
@@ -1315,10 +1284,7 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `You will typically need to collect New Jersey sales tax on:`,
-      list: [
-        `Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`,
-        `Certain services that your New Jersey business might provide`
-      ],
+      list: [`Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`, `Certain services that your New Jersey business might provide`],
     },
     marginBottom: 16,
     color: color.purple3,
@@ -1353,12 +1319,7 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `Here are the sales tax rates for the major cities in New Jersey:`,
-      list: [
-        `Newark:  6.875 percent`,
-        `Jersey City:  6.875 percent`,
-        `Edison:  6.875 percent`,
-        `Parsippany-Troy Hills:  6.875 percent`
-      ],
+      list: [`Newark:  6.875 percent`, `Jersey City:  6.875 percent`, `Edison:  6.875 percent`, `Parsippany-Troy Hills:  6.875 percent`],
     },
     marginBottom: 48,
     color: color.orange3,
@@ -1394,12 +1355,7 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
-      list: [
-        `On profits of $50,000, you would pay self-employment tax of $7,650`,
-        `On profits of $80,000, you would pay self-employment tax of $12,240`,
-        `On profits of $120,000, you would pay self-employment tax of $18,360`,
-        `On profits of $160,000, you would pay self-employment tax of $24,480`
-      ],
+      list: [`On profits of $50,000, you would pay self-employment tax of $7,650`, `On profits of $80,000, you would pay self-employment tax of $12,240`, `On profits of $120,000, you would pay self-employment tax of $18,360`, `On profits of $160,000, you would pay self-employment tax of $24,480`],
     },
     marginBottom: 32,
     color: color.babyblue3,
@@ -1539,11 +1495,7 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `The most common types of estimated tax are:`,
-      list: [
-        `Federal income tax`,
-        `Federal self-employment tax`,
-        `New Jersey state tax`,
-      ],
+      list: [`Federal income tax`, `Federal self-employment tax`, `New Jersey state tax`],
     },
     marginBottom: 16,
     color: color.green3,

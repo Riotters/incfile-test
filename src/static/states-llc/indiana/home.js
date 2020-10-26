@@ -6,7 +6,7 @@ export const top = {
   buttons: [
     {
       text: `See detailed pricing`,
-      url: `/form-order-now.php?entityType=LLC&entityState=AZ`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ`,
     },
   ],
 };
@@ -32,11 +32,7 @@ export const howToGuide = [
     type: `list-dot`,
     content: {
       header: `Briefly, the benefits of starting an Indiana LLC include:`,
-      list: [
-        `Separating and limiting your personal liability from your business liability and debts`,
-        `Quick and simple filing, management, compliance, regulations and administration of your Indiana LLC`,
-        `Easy tax filing and potential advantages for tax treatment`
-      ],
+      list: [`Separating and limiting your personal liability from your business liability and debts`, `Quick and simple filing, management, compliance, regulations and administration of your Indiana LLC`, `Easy tax filing and potential advantages for tax treatment`],
     },
     marginBottom: 24,
     color: color.green3,
@@ -72,7 +68,7 @@ export const howToGuide = [
           question: `STEP 2: Search for and Choose a Unique Business Name for Your Indiana LLC`,
           answer: `<p>You will need a distinctive and original name for your Indiana LLC that’s not used by any other business in IN. To find out if another company is using your chosen business name, carry out an Indiana business entity name search on the IN Secretary of State website.</p></br>
             <p>There are a few rules you’ll need to follow when choosing an LLC name. You can find out more in our guide to searching for and naming your Indiana LLC.</p></br>
-            <p><a href="https://www.incfile.com/indiana-llc/how-to-name-your-llc/" target="_blank">Learn about Indiana LLC business naming rules.</a></p>`,
+            <p><a href="/indiana-llc/how-to-name-your-llc/" target="_blank">Learn about Indiana LLC business naming rules.</a></p>`,
         },
         {
           question: `STEP 3: Provide an Official Address for Your IN LLC`,
@@ -97,7 +93,7 @@ export const howToGuide = [
               <li>Duration of your business</li>
               <li>Name of the incorporator</li></br>
             <p>You can file your Indiana LLC Certificate of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Indiana. You only need to file your Certificate of Organization once.</p></br>
-            <p><a href="/" target="_blank">Form your LLC now</a></p>`, //https://www.incfile.com/form-order-now.php?entityType=LLC&entityState=ID
+            <p><a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=ID" target="_blank">Form your LLC now</a></p>`,
         },
       ],
     },
@@ -121,7 +117,7 @@ export const howToGuide = [
       list: [
         `<a href="http://www.in.gov/sos/business/index.htm" target="_blank" rel="noopener noreferrer">Indiana Secretary of State for forming and running your IN LLC</a>`,
         `<a href="https://www.in.gov/dol/" target="_blank" rel="noopener noreferrer">Indiana Department of Labor for IN employers and hiring</a>`,
-        `<a href="https://www.in.gov/dor/" target="_blank" rel="noopener noreferrer">Indiana Department of Revenue for IN taxes</a>`
+        `<a href="https://www.in.gov/dor/" target="_blank" rel="noopener noreferrer">Indiana Department of Revenue for IN taxes</a>`,
       ],
     },
     marginBottom: 48,
@@ -319,9 +315,9 @@ export const namingYourBusiness = [
       header: `For example, you cannot use the following factors to say your name is different from the name of another business:`,
       list: [
         `Suffixes, such as Corporation, Company, Incorporated, Incorporation, Limited, Corp., Co., Inc., Ltd., LLC, etc.`,
-        `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`, 
-        `The singular, plural or possessive forms of a word`, 
-        `Abbreviations, punctuation, symbols, fonts, typefaces, etc.`
+        `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`,
+        `The singular, plural or possessive forms of a word`,
+        `Abbreviations, punctuation, symbols, fonts, typefaces, etc.`,
       ],
     },
     marginBottom: 32,
@@ -355,9 +351,9 @@ export const namingYourBusiness = [
       header: ``,
       list: [
         `Are very similar to the name of a federal or IN agency or organization (e.g., FBI, FDA, Indiana Department of Revenue, Indiana Police, Treasury, etc.)`,
-        `Suggest affiliation with a federal or state agency or organization`, 
-        `Use the term “Olympic” or any terms that are trademarks of the Olympic organization`, 
-        `Imply a purpose that would be illegal for your business to carry out`
+        `Suggest affiliation with a federal or state agency or organization`,
+        `Use the term “Olympic” or any terms that are trademarks of the Olympic organization`,
+        `Imply a purpose that would be illegal for your business to carry out`,
       ],
     },
     marginBottom: 48,
@@ -406,7 +402,7 @@ export const namingYourBusiness = [
       list: [
         `<p>If you don’t want to form your Indiana LLC right now, you can reserve the business name with the Indiana Secretary of State. You will need to complete a Reservation of Business Name and file it with the IN SOS. You do not need to reserve a name if you are forming your business right away.</p>
           <p><a href="https://www.in.gov/sos/business/2426.htm" target="_blank" rel="noopener noreferrer">Indiana SOS LLC name reservation form.</a></p>`,
-        `If you’re ready to start your Indiana LLC, you can formally file your Articles of Organization with the Indiana SOS, or <a href="/" target="_blank" >let Incfile take care of it for you.</a>`, //https://www.incfile.com/form-order-now.php?entityType=LLC&entityState=IN
+        `If you’re ready to start your Indiana LLC, you can formally file your Articles of Organization with the Indiana SOS, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=IN" target="_blank" >let Incfile take care of it for you.</a>`,
       ],
     },
     marginBottom: 48,
@@ -493,12 +489,7 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [
-        `Appeal to your customers`,
-        `Be memorable enough to stand out`, 
-        `Best represent your product or services`,
-        `Not be used by another business`
-      ],
+      list: [`Appeal to your customers`, `Be memorable enough to stand out`, `Best represent your product or services`, `Not be used by another business`],
     },
     marginBottom: 16,
     color: color.orange3,
@@ -563,9 +554,9 @@ export const registeredAgent = [
       header: ` They are:`,
       list: [
         `If the Registered Agent is a person, they must reside in Indiana.`,
-        `If the Registered Agent is a business, they must be able to conduct business in Indiana.`, 
+        `If the Registered Agent is a business, they must be able to conduct business in Indiana.`,
         `The Registered Agent must have a physical street address in Indiana, not a P.O. Box.`,
-        `The IN Registered Agent must be available in person during normal business hours to sign for any correspondence.`
+        `The IN Registered Agent must be available in person during normal business hours to sign for any correspondence.`,
       ],
     },
     marginBottom: 16,
@@ -688,7 +679,7 @@ export const registeredAgent = [
     type: `button`,
     content: {
       text: `Incorporate your business through IncFile`,
-      url: `/form-order-now.php?entityType=LLC&entityState=AZ/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ/`,
     },
     theme: `primary48`,
     marginBottom: 48,
@@ -768,7 +759,7 @@ export const registeredAgent = [
       header: `There are several possible ramifications, including:`,
       list: [
         `Getting served or sued and not finding out about it: If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence. Falling out of good standing with the Indiana Secretary of State: If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
-        `Losing your status as an Indiana LLC: An IN Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your Indiana LLC may be dissolved.`, 
+        `Losing your status as an Indiana LLC: An IN Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your Indiana LLC may be dissolved.`,
       ],
     },
     marginBottom: 48,
@@ -840,7 +831,7 @@ export const registeredAgent = [
       list: [
         `<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/" target="_blank">The Main Functions of an Indiana Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/" target="_blank" >Changing Your Indiana Registered Agent</a>`,
-        `<a href="/research-topics/registered-agent-help/what-does-a-registered-agent-do/" target="_blank" >What an Indiana Registered Agent Does</a>`
+        `<a href="/research-topics/registered-agent-help/what-does-a-registered-agent-do/" target="_blank" >What an Indiana Registered Agent Does</a>`,
       ],
     },
     marginBottom: 0,
@@ -877,11 +868,7 @@ export const feesAndRequirments = [
     marginBottom: 16,
   },
   {
-    type: `table-simple`,
-    content: {
-      headers: [`State Fee`, `State Filing Time`, `Expedited Filing Time`],
-      rows: [[`$98`, `7 business days`, `1 business day`]],
-    },
+    type: `dynamic_ar_box`
   },
   {
     type: `arrow-link`,
@@ -913,7 +900,7 @@ export const feesAndRequirments = [
     type: `button`,
     content: {
       text: `Incorporate your Indiana LLC through IncFile today`,
-      url: `/form-order-now.php?entityType=LLC&entityState=AZ/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ/`,
     },
     theme: `primary48`,
     marginBottom: 48,
@@ -970,17 +957,7 @@ export const feesAndRequirments = [
     marginBottom: 16,
   },
   {
-    type: `list-dot`,
-    content: {
-      header: `Annual Report`,
-      list: [
-        `Frequency:  Biennially`,
-        `Due Date:  Last day of anniversary month of formation or qualification.`, 
-        `Filing Fee:  $30`
-      ],
-    },
-    marginBottom: 16,
-    color: color.blue2,
+    type: `dynamic_filing_requirement`
   },
   {
     type: `text`,
@@ -1018,8 +995,8 @@ export const feesAndRequirments = [
       header: `Permits and licenses vary based on:`,
       list: [
         `The industry your Indiana LLC operates in (e.g., restaurants will need health permits)`,
-        `The location of your Indiana LLC (state, county or city) (e.g., a license to conduct business from the city of Indianapolis)`, 
-        `The type of business that you run (e.g., healthcare providers must meet HIPAA requirements)`
+        `The location of your Indiana LLC (state, county or city) (e.g., a license to conduct business from the city of Indianapolis)`,
+        `The type of business that you run (e.g., healthcare providers must meet HIPAA requirements)`,
       ],
     },
     marginBottom: 48,
@@ -1034,10 +1011,7 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: `It includes:`,
-      list: [
-        `A complete report on all the licenses, permits and tax registrations your Indiana LLC will need`,
-        `The application forms you will need to file with the Indiana, regional and federal licensing authorities`
-      ],
+      list: [`A complete report on all the licenses, permits and tax registrations your Indiana LLC will need`, `The application forms you will need to file with the Indiana, regional and federal licensing authorities`],
     },
     marginBottom: 16,
     color: color.green3,
@@ -1160,11 +1134,7 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: `Areas you might want to file Indiana Articles of Amendment for include:`,
-      list: [
-        `Adding, removing or changing an Indiana LLC member or manager`,
-        `Changing the business address of your LLC`,
-        `Altering the stated business activities of your Indiana LLC`
-      ],
+      list: [`Adding, removing or changing an Indiana LLC member or manager`, `Changing the business address of your LLC`, `Altering the stated business activities of your Indiana LLC`],
     },
     marginBottom: 16,
     color: color.purple3,
@@ -1351,10 +1321,7 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `You will typically need to collect Indiana sales tax on:`,
-      list: [
-        `Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`,
-        `Certain services that your Indiana business might provide`
-      ],
+      list: [`Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`, `Certain services that your Indiana business might provide`],
     },
     marginBottom: 16,
     color: color.purple3,
@@ -1417,7 +1384,7 @@ export const businessTaxes = [
         `On profits of $40,000, you would pay self-employment tax of $6,120.`,
         `On profits of $70,000, you would pay self-employment tax of $10,710.`,
         `On profits of $100,000, you would pay self-employment tax of $15,300.`,
-        `On profits of $120,000, you would pay self-employment tax of $18,360.`
+        `On profits of $120,000, you would pay self-employment tax of $18,360.`,
       ],
     },
     marginBottom: 32,
@@ -1555,11 +1522,7 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `The most common types of estimated tax are:`,
-      list: [
-        `Federal income tax`,
-        `Federal self-employment tax`, 
-        `Indiana state tax`
-      ],
+      list: [`Federal income tax`, `Federal self-employment tax`, `Indiana state tax`],
     },
     marginBottom: 16,
     color: color.green3,

@@ -17,7 +17,7 @@ const Regulations = () => (
             </Heading>
             <Paragraph big mixed={true}>
                 Construction businesses will need to meet stringent rules and regulations, especially around building
-                codes. You will also need to get licenses and permits. <Link to="/">We can help out with researching your
+                codes. You will also need to get licenses and permits. <Link to="https://www.incfile.com/business-license-research-package/">We can help out with researching your
                 construction business licensing needs.</Link>
             </Paragraph>
             <Paragraph big mixed={true}>
@@ -27,7 +27,7 @@ const Regulations = () => (
             </Paragraph>
             <Paragraph big mixed={true}>
                 As a rule of thumb, we recommend holding back around a third of your earnings
-                to pay your taxes. We can also <Link to="/">prepare and file your tax returns for you.</Link>
+                to pay your taxes. We can also <Link to="prepare and file your tax returns for you">prepare and file your tax returns for you.</Link>
             </Paragraph>
         </Container>
     </Wrapper>

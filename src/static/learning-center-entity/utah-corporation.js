@@ -1,12 +1,10 @@
-import React from "react";
-
 export const top = {
   header: `Form a Corporation in Utah.`,
   text: `$0 + State Fee & 1st Year FREE Registered Agent`,
   buttons: [
     {
       text: `Start my corporation`,
-      url: `/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=UT`,
     },
   ],
 };
@@ -174,87 +172,6 @@ export const fillingRequirements = {
   },
 };
 
-export const packets = {
-  header: `Select the package that works best for you`,
-  priceOptions: [
-    {
-      header: "Silver",
-      variant: "",
-      text: "Our core features for\n" + "the lowest price",
-      price: 100,
-      image: "",
-      button: {
-        text: "Get the Silver package",
-        url: "/",
-      },
-      fees: [
-        {
-          text: "Package fee",
-          price: "0",
-        },
-        {
-          text: "State fee",
-          price: "100",
-        },
-      ],
-      include: "The Silver Services includes:",
-      list: ["Preparing & Filing the Articles \n" + "of Organization", "Unlimited Name Searches", "FREE Registered Agent Service for \n" + "a year!"],
-      fee: "",
-      savings: "",
-    },
-    {
-      header: "Gold",
-      variant: "most popular",
-      text: "Our core features for\n" + "the lowest price",
-      price: 100,
-      image: "",
-      button: {
-        text: "Get the Gold package",
-        url: "/",
-      },
-      fees: [
-        {
-          text: "Package fee",
-          price: "0",
-        },
-        {
-          text: "State fee",
-          price: "100",
-        },
-      ],
-      include: "The Gold Services includes:",
-      list: ["Preparing & Filing the Articles \n" + "of Organization", "Unlimited Name Searches", "FREE Registered Agent Service for \n" + "a year!"],
-      fee: "",
-      savings: "SAVE $468",
-    },
-    {
-      header: "Platinum",
-      variant: "Best value",
-      text: "Our core features for\n" + "the lowest price",
-      price: 100,
-      image: "",
-      button: {
-        text: "Get the Platinum package",
-        url: "/",
-      },
-      fees: [
-        {
-          text: "Package fee",
-          price: "0",
-        },
-        {
-          text: "State fee",
-          price: "100",
-        },
-      ],
-      include: "The Platinum Services includes:",
-      list: ["Preparing & Filing the Articles \n" + "of Organization", "Unlimited Name Searches", "FREE Registered Agent Service for \n" + "a year!"],
-      fee: "",
-      savings: "SAVE $908",
-    },
-  ],
-};
-
 export const questions = {
   header: `Commonly Asked Questions For Starting a Utah Corporation`,
   items: [
@@ -338,13 +255,13 @@ export const articlesOfIncorporation = {
   box1: {
     header: `The articles must include:`,
     list: [
-        `A statement of the corporate purpose (may just say that the corporation may conduct any and all lawful business)`,
-        `The classes of shares that the corporation is authorized to issue and the number of shares per class`,
-        `If more than one class of shares is authorized, the articles must prescribe a distinguishing designation for each class, as well as its preferences, limitations, and relative rights`,
-        `The articles of incorporation must authorize (a) at least one class of shares that has unlimited voting rights; and (b) at least one class of shares, which may be the same class or classes as those with voting rights, that is entitled to receive the corporation’s dissolved assets`,
-        `The street address of the corporation’s initial registered office`,
-        `The signature of the initial registered agent`,
-      ],
+      `A statement of the corporate purpose (may just say that the corporation may conduct any and all lawful business)`,
+      `The classes of shares that the corporation is authorized to issue and the number of shares per class`,
+      `If more than one class of shares is authorized, the articles must prescribe a distinguishing designation for each class, as well as its preferences, limitations, and relative rights`,
+      `The articles of incorporation must authorize (a) at least one class of shares that has unlimited voting rights; and (b) at least one class of shares, which may be the same class or classes as those with voting rights, that is entitled to receive the corporation’s dissolved assets`,
+      `The street address of the corporation’s initial registered office`,
+      `The signature of the initial registered agent`,
+    ],
   },
   box2: {
     header: `Some other provisions that aren’t required-but which may be included in the articles of incorporation-are:`,
