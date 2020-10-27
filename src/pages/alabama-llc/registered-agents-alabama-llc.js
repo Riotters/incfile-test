@@ -26,8 +26,8 @@ const RegisteredAgentPage = () => {
     return (
         <Layout>
             <SEO
-                title="Alabama Business Search | How to Name Your TX LLC"
-                description="Learn what you need to know about naming an LLC in Alabama with Incfile's helpful resources. Pick your perfect business name today!"
+                title="Alabama Registered Agents for LLCs"
+                description="Do you need a Registered Agent for your AL LLC? Learn what Registered Agents do and how to get one with Incfile’s helpful guide."
             />
             <LLCLayout data={dataApi}>
                 <LeftTabPages content={tabPages} />

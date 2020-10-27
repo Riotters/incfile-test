@@ -24,8 +24,8 @@ const RegisteredAgentPage = () => {
     return (
         <Layout>
             <SEO
-                title="Arizona Business Search | How to Name Your AZ LLC"
-                description="Learn what you need to know about naming an LLC in Arizona with Incfile's helpful resources. Pick your perfect business name today!"
+                title="Arizona Registered Agents for LLCs"
+                description="Do you need a Registered Agent for your AR LLC? Learn what Registered Agents do and how to get one with Incfile’s helpful guide."
             />
             <LLCLayout data={dataApi}>
                 <LeftTabPages content={tabPages} />

@@ -24,7 +24,7 @@ const BusinessTaxesPage = () => {
     return (
         <Layout>
             <SEO
-                title="Indiana Sales & Business Tax Registration for LLCs<"
+                title="Indiana Sales & Business Tax Registration for LLCs"
                 description="Do you have an IN LLC? Learn about the required federal, state and sales taxes you might need to pay. Read more."
             />
             <LLCLayout data={dataApi}>
