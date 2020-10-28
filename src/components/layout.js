@@ -5,17 +5,17 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-import { createGlobalStyle } from "styled-components"
-import Header from "./header-dropdown"
-import Footer from "./footer-v2"
-//import Avenir400 from "../fonts/avenir/Avenir-Roman-12.woff2"
+import React from "react";
+import PropTypes from "prop-types";
+import { useStaticQuery, graphql } from "gatsby";
+import { createGlobalStyle } from "styled-components";
+import Header from "./header-dropdown";
+import Footer from "./footer-v2";
+//import Avenir400 from "../fonts/avenir/Avenir-12.woff2"
 //import Avenir600 from "../fonts/avenir/Avenir-Heavy-05.woff2"
 //import MarkPro from "../fonts/mark-pro/MarkPro-Bold.woff2"
-import "../fonts/fonts.css"
-import { color } from "./styles/colors"
+import "../fonts/fonts.css";
+import { color } from "./styles/colors";
 import HeaderAlt from "./header-v2";
 
 const GlobalStyle = createGlobalStyle`
@@ -182,37 +182,33 @@ a {
       transform: scale(1);
   }
 }
-`
-
+`;
 
 const Layout = ({ children, isDashboardPage, header }) => {
-    const data = useStaticQuery(graphql`
-        query SiteTitleQuery {
-        site {
-            siteMetadata {
-                title
-            }
+  const data = useStaticQuery(graphql`
+    query SiteTitleQuery {
+      site {
+        siteMetadata {
+          title
         }
-    }`);
+      }
+    }
+  `);
 
-    return (
-        <>
-            <GlobalStyle />
-            {header === "v2" && !isDashboardPage && (
-                <HeaderAlt siteTitle={data.site.siteMetadata.title} />
-            )}
-            {header == null && !isDashboardPage && (
-                <Header siteTitle={data.site.siteMetadata.title} />
-            )}
-            <main>{children}</main>
-            {!isDashboardPage && <Footer />}
-        
-            {/** Use this element to append the lightbox video outside of main wrapper 
-           * So that it should be overlay entire of page
-          */}
-            <div id="portal-lightbox"></div>
-        </>
-    );
+  return (
+    <>
+      <GlobalStyle />
+      {header === "v2" && !isDashboardPage && <HeaderAlt siteTitle={data.site.siteMetadata.title} />}
+      {header == null && !isDashboardPage && <Header siteTitle={data.site.siteMetadata.title} />}
+      <main>{children}</main>
+      {!isDashboardPage && <Footer />}
+
+      {/** Use this element to append the lightbox video outside of main wrapper
+       * So that it should be overlay entire of page
+       */}
+      <div id="portal-lightbox"></div>
+    </>
+  );
 };
 
 Layout.propTypes = {
@@ -220,7 +216,7 @@ Layout.propTypes = {
 };
 
 Layout.defaultProps = {
-    header: null,
+  header: null,
 };
 
-export default Layout
+export default Layout;
