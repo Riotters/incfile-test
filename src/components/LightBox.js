@@ -11,7 +11,7 @@ import PlayerSVG from "../images/icons/player.inline.svg";
 import CloseSVG from "../images/icons/close.inline.svg";
 
 const PortalComponent = ({ children, visible }) => {
-return createPortal(<LightBoxModal visible={visible}>{children}</LightBoxModal>, document.getElementById("portal-lightbox"));
+  return createPortal(<LightBoxModal visible={visible}>{children}</LightBoxModal>, document.getElementById("portal-lightbox"));
 };
 
 class LightBox extends Component {
@@ -29,12 +29,12 @@ class LightBox extends Component {
   };
 
   render() {
-    const { videoID, thumbnailVideo, vimeo } = this.props;
+    const { videoID, thumbnailVideo, vimeo, bottomMargin } = this.props;
     const { showLightBox } = this.state;
 
     return (
       <Fragment>
-        <WrapperVideo>
+        <WrapperVideo bottomMargin={bottomMargin}>
           <Image filename={thumbnailVideo} alt="" />
           <PlayButton onClick={(e) => this.openModal(e)}>
             <span>
@@ -46,19 +46,17 @@ class LightBox extends Component {
         {videoID && showLightBox && (
           <PortalComponent visible={showLightBox}>
             <LightBoxContent>
-              {vimeo ? (
-                parse(`<iframe 
+              {vimeo
+                ? parse(`<iframe 
                 src="https://player.vimeo.com/video/${videoID}"  
                 frameborder="0" 
                 allow="autoplay; fullscreen" 
                 allowfullscreen></iframe>`)
-              ) : (
-                parse(`<iframe
+                : parse(`<iframe
                 src="https://www.youtube.com/embed/${videoID}?rel=0&autoplay=1"
                 frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>`)
-              )}
+                allowfullscreen></iframe>`)}
               <Control>
                 <button onClick={(e) => this.closeModal(e)}>
                   <CloseSVG />
@@ -77,6 +75,7 @@ const WrapperVideo = styled.div`
   max-width: 770px;
   background-color: ${color.orange3};
   position: relative;
+  margin-bottom: ${(props) => (props.bottomMargin ? `${props.bottomMargin}px` : "")};
 
   &::before {
     content: "";

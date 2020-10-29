@@ -20,7 +20,7 @@ const BusinessStructureSection = ({ className, content }) => (
     </Oval>
     <HeadingCenter headline={content.header} headlineWidth="770" bottomMargin="24" bottomMarginLG="65" />
     <ContentCenter>
-      <Table content={content.faq} curve curveRight curveColor={color.blue1}/>
+      <Table content={content.faq} curve curveRight curveColor={color.blue1} />
     </ContentCenter>
   </BusinessStructure>
 );
