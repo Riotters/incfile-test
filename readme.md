@@ -15,7 +15,7 @@ Developer access to server will be via SSH with authentication keys.
 ```bash
 cd ~/gatsby
 git pull
-docker-compose up --build -d
+docker-compose up --build --force-recreate -d
 ```
 
 ... the last command will take a loooooong time.
