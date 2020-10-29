@@ -280,7 +280,7 @@ const TabScrollable = ({ layout, columns }) => {
                       </Paragraph>
 
                       <Paragraph big mixed={true}>
-                        All businesses need to have a <Link to="/">Registered Agent</Link>. These are individuals or other businesses that can accept legal documents on behalf of your landscaping company.
+                        All businesses need to have a <Link to="/manage-your-company/registered-agent/">Registered Agent</Link>. These are individuals or other businesses that can accept legal documents on behalf of your landscaping company.
                       </Paragraph>
                       <Paragraph big>
                         Although you can act as your own registered agent, we recommend using a professional service. It ensures there will always be someone available to receive important legal documentation on your behalf and also removes your name and address from the public record.

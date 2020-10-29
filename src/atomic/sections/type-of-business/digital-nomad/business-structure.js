@@ -185,7 +185,7 @@ const CoachBusinessStructure = () => (
 
         <Paragraph big style={{ marginBottom: 0 }}>
           As a digital nomad, you will have some unique circumstances for how you're going to setup your business. To start with, we recommend an LLC — the combination of a low administrative overhead and liability protection are great for your peace-of-mind. Secondly, you will probably want to take
-          advantage of our <Link to="/">Registered Agent service</Link> - it means there will always be someone available to receive official documents, even if you're out of the country.
+          advantage of our <Link to="/manage-your-company/registered-agent">Registered Agent service</Link> - it means there will always be someone available to receive official documents, even if you're out of the country.
         </Paragraph>
 
         <SpecialBox radiusTop>

@@ -52,8 +52,15 @@ const SettingBusiness = () => (
         <TopImageBox image="state-filling-fees" color={color.blue3}>
           <h4>Finances and Taxes</h4>
           <p>
-            You will need a separate <Link to="/">business bank account</Link>
-            for your business, and you might also want to consider a <Link to="/">business credit card</Link>. Additionally, you will need to keep careful bookkeeping records and file business and personal taxes. Here at Incfile
+            You will need a separate{" "}
+            <a href="https://utility.bankofamerica.com/alliance/?formid=IF1" target="_blank" rel="noopener noreferrer">
+              business bank account
+            </a>
+            for your business, and you might also want to consider a{" "}
+            <a href="http://t.tihop.com/cgi/r?;n=203;c=1666272;s=7273;x=7936;f=201908011042310;u=j;z=TIMESTAMP;src=663024" target="_blank" rel="noopener noreferrer">
+              business credit card
+            </a>
+            . Additionally, you will need to keep careful bookkeeping records and file business and personal taxes. Here at Incfile
             <Link to="/business-accounting/">we can even help you file your taxes</Link>.
           </p>
         </TopImageBox>

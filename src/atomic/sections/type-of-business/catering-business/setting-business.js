@@ -40,8 +40,8 @@ const SettingBusiness = () => (
         <TopImageBox image="permits-licences" color={color.babyblue3}>
           <h4>Permits and licenses</h4>
           <p>
-            Running a catering business comes with certain rules, regulations and legalities you need to be aware of, especially around staff health and safety and food hygiene and preparation. Incfile can conduct a <Link to="/">Business License Research</Link> package for you, or you can take the
-            time to do the research yourself.
+            Running a catering business comes with certain rules, regulations and legalities you need to be aware of, especially around staff health and safety and food hygiene and preparation. Incfile can conduct a <Link to="/business-license-research-package/">Business License Research</Link>{" "}
+            package for you, or you can take the time to do the research yourself.
           </p>
         </TopImageBox>
 
@@ -63,8 +63,8 @@ const SettingBusiness = () => (
         <TopImageBox image="measuring-business-success" color={color.babyblue3}>
           <h4>Business maintenance</h4>
           <p>
-            Most states require businesses to file an <Link to="/">Annual Report</Link> report once a year. You will also be expected to pay estimated taxes on what you plan to earn in the current business year. Four federal, state, regional and city <Link to="/">business licenses and permits</Link>{" "}
-            may need to be renewed on a regular basis, typically once a year.
+            Most states require businesses to file an <Link to="/manage-your-company/annual-report/">Annual Report</Link> report once a year. You will also be expected to pay estimated taxes on what you plan to earn in the current business year. Four federal, state, regional and city{" "}
+            <Link to="/business-license-research-package/">business licenses and permits</Link> may need to be renewed on a regular basis, typically once a year.
           </p>
         </TopImageBox>
       </ImageBoxes>
