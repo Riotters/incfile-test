@@ -64,7 +64,7 @@ const SettingBusiness = () => (
         <TopImageBox image="permits-licences" color={color.blue3}>
           <h4>Permits and licenses</h4>
           <p>
-            Running a photography business comes with certain rules, regulations and legalities you need to be aware of. Incfile can conduct a <Link to="/">Business License Research</Link> package for you, or you can take the time to do the research yourself.
+            Running a photography business comes with certain rules, regulations and legalities you need to be aware of. Incfile can conduct a <Link to="/business-license-research-package/">Business License Research</Link> package for you, or you can take the time to do the research yourself.
           </p>
         </TopImageBox>
       </ImageBoxes>

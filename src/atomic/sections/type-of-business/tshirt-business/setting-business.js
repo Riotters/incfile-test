@@ -32,7 +32,7 @@ const SettingBusiness = () => (
         <TopImageBox image="permits-licences" color={color.blue3}>
           <h4>Permits and licenses</h4>
           <p>
-            Running a T-shirt business comes with certain rules, regulations and legalities you need to be aware of. Incfile offers a <Link to="/">Business License Research Package</Link> for you, or you can take the time to do the research yourself.
+            Running a T-shirt business comes with certain rules, regulations and legalities you need to be aware of. Incfile offers a <Link to="/business-license-research-package/">Business License Research Package</Link> for you, or you can take the time to do the research yourself.
           </p>
         </TopImageBox>
 
@@ -59,8 +59,11 @@ const SettingBusiness = () => (
         <TopImageBox image="state-filling-fees" color={color.yellow3}>
           <h4>Finances and taxes</h4>
           <p>
-            What kind of bank account will you get? Do you need a <Link to="/">business credit card</Link>? How will you pay your business taxes? These are important questions to consider so your T-shirt business stays in the green. Here at Incfile, we can even{" "}
-            <Link to="/business-accounting/">help you file your taxes</Link>.
+            What kind of bank account will you get? Do you need a{" "}
+            <a href="http://t.tihop.com/cgi/r?;n=203;c=1666272;s=7273;x=7936;f=201908011042310;u=j;z=TIMESTAMP;src=663024" target="_blank" rel="noopener noreferrer">
+              business credit card
+            </a>
+            ? How will you pay your business taxes? These are important questions to consider so your T-shirt business stays in the green. Here at Incfile, we can even <Link to="/business-accounting/">help you file your taxes</Link>.
           </p>
         </TopImageBox>
 

@@ -171,7 +171,7 @@ const BusinessStructure = () => (
         </Paragraph>
         <Paragraph big mixed={true} style={{ marginBottom: "48px", paddingBottom: 0 }}>
           In most cases, our recommendation for your dog walking or pet sitting business would be to create an LLC. We’ve <Link to="/form-an-llc/">got a complete guide</Link>
-          to everything you need to do.<Link to="/"> LLC formation does vary from state to state</Link>, but we’ve got you covered, wherever you are.
+          to everything you need to do.<Link to="/llc-state-information/"> LLC formation does vary from state to state</Link>, but we’ve got you covered, wherever you are.
         </Paragraph>
 
         <Button theme="primary48" width="365px" arrow content={{ url: `${process.env.ORDER_URL}/form-order-now.php`, text: `Start your business with us, today!` }} />

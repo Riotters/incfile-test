@@ -28,7 +28,7 @@ const Rocket = () => (
           Are You Ready to Start an Airbnb?
         </Heading>
         <Paragraph big>If you have an extra room, or a whole property you want to rent out, Airbnb makes it easy. If you can create great listings, build positive reviews, understand your competitors and put together a solid business plan, you will have every chance for success</Paragraph>
-        <Button theme="primary48" arrow width="410px" content={{ url: "/form-order-now.php", text: "Start your Airbnb Business with us, today!" }} />
+        <Button theme="primary48" arrow width="410px" content={{ url: `${process.env.ORDER_URL}/form-order-now.php`, text: "Start your Airbnb Business with us, today!" }} />
       </Content>
     </Container>
   </Wrapper>

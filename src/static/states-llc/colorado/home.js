@@ -47,7 +47,7 @@ export const howToGuide = [
   {
     type: `text`,
     content: `Learn more about the
-      <a href="/" target="_blank">benefits of the LLC business structure here.</a>`,
+      <a href="/limited-liability-company/" target="_blank">benefits of the LLC business structure here.</a>`,
     marginBottom: 48,
   },
   {
@@ -74,7 +74,7 @@ export const howToGuide = [
           question: `STEP 2: Search for and Choose a Unique Business Name for Your Colorado LLC`,
           answer: `<p>You will need a distinctive and original name for your Colorado LLC that’s not used by any other business in CO. To find out if another company is using your chosen business name, carry out a Colorado business entity name search on the CO Secretary of State website.</p></br>
             <p>There are a few rules you’ll need to follow when choosing an LLC name. You can find out more in our guide to searching for and naming your Colorado LLC.</p></br>
-            <p><a href="/" target="_blank">Learn about Colorado LLC business naming rules.</a></p>`,
+            <p><a href="/colorado-llc/how-to-name-your-llc/" target="_blank">Learn about Colorado LLC business naming rules.</a></p>`,
         },
         {
           question: `STEP 3: Provide an Official Address for Your CO LLC`,
@@ -85,7 +85,7 @@ export const howToGuide = [
           answer: `<p>Every CO LLC must have a “Registered Agent” when it is formed. This is an official position; the Registered Agent is someone who receives official legal and tax correspondence and has responsibility for filing reports with the Colorado Secretary of State.</p></br>
             <p>This position can be filled by you, another manager in the business or a dedicated Registered Agent service. Your CO Registered Agent must have a physical street address in Colorado and must be present to receive important documents for your company during business hours. </p></br>
             <p>At Incfile, all of our packages include a Colorado Registered Agent service that is free for the first year and just $119 per year afterward. We also have a dashboard where you can log in and easily view any document your Registered Agent has received on your behalf. </p></br>
-            <p><a href="/" target="_blank">Learn more about Colorado Registered Agents</a></p>`,
+            <p><a href="/colorado-llc/registered-agents-colorado-llc/" target="_blank">Learn more about Colorado Registered Agents</a></p>`,
         },
         {
           question: `STEP 5: Get an Employee Identification Number (EIN) From the Internal Revenue Service`,

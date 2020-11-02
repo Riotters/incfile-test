@@ -281,7 +281,7 @@ const TabScrollable = ({ layout, columns }) => {
                     </Paragraph>
 
                     <Paragraph big mixed={true}>
-                      When you <Link to="/form-order-now.php">incorporate through us</Link>, we provide a complete Registered Agent service free for the first year.
+                      When you <Link to={`${process.env.ORDER_URL}/form-order-now.php`}>incorporate through us</Link>, we provide a complete Registered Agent service free for the first year.
                     </Paragraph>
 
                     <Paragraph big mixed={true} style={{ fontFamily: "Avenir", fontWeight: "900", color: color.black }}>

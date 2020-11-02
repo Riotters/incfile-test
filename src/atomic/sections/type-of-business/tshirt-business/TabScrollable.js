@@ -117,8 +117,8 @@ const TabScrollable = ({ layout, columns }) => {
           <PanelWrapper>
             <Heading size={3}>Rules, Regulations and Laws for Your Etsy Business</Heading>
             <Paragraph big mixed={true}>
-              Of course, along with running a business there are certain rules, regulations and legalities you need to be aware of. <Link to="/">We can also help with researching your business licensing needs.</Link> Most Etsy businesses will not have any significant permit and licensing needs
-              beyond the basic licenses we cover below.
+              Of course, along with running a business there are certain rules, regulations and legalities you need to be aware of. <Link to="/business-license-research-package/">We can also help with researching your business licensing needs.</Link> Most Etsy businesses will not have any
+              significant permit and licensing needs beyond the basic licenses we cover below.
             </Paragraph>
 
             <VisibilitySensor partialVisibility minTopValue={0}>
@@ -179,8 +179,8 @@ const TabScrollable = ({ layout, columns }) => {
                       </Paragraph>
 
                       <Paragraph big mixed={true}>
-                        You can find all the information you need about statewide licenses and permits on your state’s Secretary of State website. You can also find those details in our <Link to="/">state-by-state guides to company formation.</Link> Alternatively, the Small Business Administration
-                        website has a list of licenses and permits by state.
+                        You can find all the information you need about statewide licenses and permits on your state’s Secretary of State website. You can also find those details in our <Link to="/llc-state-information/">state-by-state guides to company formation.</Link> Alternatively, the Small
+                        Business Administration website has a list of licenses and permits by state.
                       </Paragraph>
                     </TextBlockWithImage>
                   </div>
@@ -286,7 +286,7 @@ const TabScrollable = ({ layout, columns }) => {
                         Although you can act as your own registered agent, we recommend using a professional service. It ensures there will always be someone available to receive important legal documentation on your behalf and also removes your name and address from the public record.
                       </Paragraph>
                       <Paragraph big mixed={true}>
-                        When you <Link to="/">incorporate through us</Link>, we provide a complete Registered Agent service free for the first year.
+                        When you <Link to={`${process.env.ORDER_URL}/form-order-now.php`}>incorporate through us</Link>, we provide a complete Registered Agent service free for the first year.
                       </Paragraph>
                     </TextBlockWithImage>
                   </div>

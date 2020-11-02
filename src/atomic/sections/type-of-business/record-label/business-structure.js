@@ -174,8 +174,8 @@ const BusinessStructure = () => (
           for your daycare business.
         </Paragraph>
         <Paragraph big mixed={true} style={{ marginBottom: "48px", paddingBottom: 0 }}>
-          In most cases, our recommendation for your party planning business would be to create an LLC. We’ve got a <Link to="/">complete guide to everything you need to do</Link>. <Link to="/llc-state-information/">LLC formation does vary from state to state</Link>, but we’ve got you covered,
-          wherever you are.
+          In most cases, our recommendation for your party planning business would be to create an LLC. We’ve got a <Link to="/form-an-llc/">complete guide to everything you need to do</Link>. <Link to="/llc-state-information/">LLC formation does vary from state to state</Link>, but we’ve got you
+          covered, wherever you are.
         </Paragraph>
 
         <Button theme="primary48" width="365px" arrow content={{ url: `${process.env.ORDER_URL}/form-order-now.php`, text: `Start your business with us, today!` }} />

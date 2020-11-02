@@ -616,7 +616,7 @@ const BarNightclub = () => (
         uniqueness to really stand out.
       </Paragraph>
       <Paragraph big>
-        When you’re ready to start your bar or club business, <Link to="/form-order-now.php">we’re here to help</Link>.
+        When you’re ready to start your bar or club business, <Link to={`${process.env.ORDER_URL}/form-order-now.php`}>we’re here to help</Link>.
       </Paragraph>
     </Conclusion>
   </Layout>

@@ -201,7 +201,7 @@ const TabScrollable = ({ layout, columns }) => {
                         Although you can act as your own registered agent, we recommend using a professional service. It ensures there will always be someone available to receive important legal documentation on your behalf and also removes your name and address from the public record.
                       </Paragraph>
                       <Paragraph big mixed={true}>
-                        When you <Link to="/">incorporate through us</Link>, we provide a <Link to="/">complete Registered Agent service</Link> free for the first year.
+                        When you <Link to={`${process.env.ORDER_URL}/form-order-now.php`}>incorporate through us</Link>, we provide a <Link to="/manage-your-company/registered-agent/">complete Registered Agent service</Link> free for the first year.
                       </Paragraph>
                     </TextBlockWithImage>
                   </div>
@@ -239,7 +239,7 @@ const TabScrollable = ({ layout, columns }) => {
                       <Accordion tab content={TaxesAccordionContent} />
 
                       <Paragraph big mixed={true} style={{ marginTop: "48px" }}>
-                        As a rule of thumb, we recommend keeping back around a third of your earnings to pay your taxes. We can even <Link to="/">prepare and file your tax returns for you</Link>.
+                        As a rule of thumb, we recommend keeping back around a third of your earnings to pay your taxes. We can even <Link to="/business-accounting/">prepare and file your tax returns for you</Link>.
                       </Paragraph>
                     </TextBlockWithImage>
                   </div>
@@ -277,7 +277,7 @@ const TabScrollable = ({ layout, columns }) => {
                       <Accordion tab content={MaintainingAccordionContent} />
 
                       <Paragraph big mixed={true} style={{ marginTop: "48px" }}>
-                        As a rule of thumb, we recommend keeping back around a third of your earnings to pay your taxes. We can even <Link to="/">prepare and file your tax returns for you</Link>.
+                        As a rule of thumb, we recommend keeping back around a third of your earnings to pay your taxes. We can even <Link to="/business-accounting/">prepare and file your tax returns for you</Link>.
                       </Paragraph>
                     </TextBlockWithImage>
                   </div>

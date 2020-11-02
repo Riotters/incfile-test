@@ -186,7 +186,7 @@ const BusinessStructure = () => (
         </Colorbox>
 
         <Paragraph big mixed={true} style={{ marginTop: "48px", marginBottom: "72px" }}>
-          If you’re in one of these states, <Link to="/">see if a series LLC could be right for you.</Link>
+          If you’re in one of these states, <Link to="/blog/post/series-llc-why-need-one/">see if a series LLC could be right for you.</Link>
         </Paragraph>
 
         <Heading size={3} style={{ maxWidth: "100%" }} bottomMargin={0}>
