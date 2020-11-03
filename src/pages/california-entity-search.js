@@ -17,7 +17,7 @@ import { top, about, search, newRules, llcRules, corporationRules, startBusiness
 
 const GeneralResearchTopics = () => (
   <Layout>
-    <SEO title="California Entity Search" description="aaa" />
+    <SEO title="California Business Entity Search | Is Your Name Available?" description="Starting a new business in CA? Check to see if your preferred business name is available with Incfile’s easy name search tool. Try it now." />
     <Top imageName="mrs-bulb-state-ilustrations-9948" imageAlt="Mrs Bulb and with checklist" ovalColor="sun" headlineWidth="700" textWidth="400">
       <h1>{top.header}</h1>
       <p>{top.text}</p>

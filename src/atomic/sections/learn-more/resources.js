@@ -78,18 +78,27 @@ const Item = styled(Link)`
   box-shadow: ${shadow.white1};
   background-color: white;
   border-radius: 5px;
-  font-family: Avenir-Roman;
+  font-family: Avenir;
   font-size: 16px;
   line-height: 24px;
   color: #4e4e4e;
   align-items: center;
   justify-content: flex-start;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease;
+
+  svg {
+    opacity: 0.75;
+    transition: opacity 0.3s ease;
+  }
 
   &:hover {
     font-family: Avenir;
     font-weight: 900;
     box-shadow: ${shadow.white2};
+
+    svg {
+      opacity: 1;
+    }
   }
 `;
 

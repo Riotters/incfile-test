@@ -13,7 +13,7 @@ import { top, about, search, faq } from "../static/entity-search/delaware-entity
 
 const GeneralResearchTopics = () => (
   <Layout>
-    <SEO title="Daleware Entity Search" description="aaa" />
+    <SEO title="New York Business Entity Search | Is Your Name Available?" description="Starting a new business in NY? Check to see if your preferred business name is available with Incfile’s easy name search tool. Try it now." />
     <Top imageName="mr-bulb-state-ilustrations-1722" imageAlt="Mrs Bulb and with checklist" ovalColor="green" headlineWidth="700" textWidth="520">
       <h1>{top.header}</h1>
       <p>{top.text}</p>
