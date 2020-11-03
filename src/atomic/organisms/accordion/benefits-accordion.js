@@ -130,11 +130,23 @@ const BenefitsAccordion = () => (
         </Panel>
         <Panel>
           <Grid>
-            <Card content={{ header: "File Annual Report", text: "The majority of states require that companies file periodic reports that affirm the current information of the companies members, directors, and business address.", link: { url: `/manage-your-company/annual-report/`, text: `Learn more` } }} color={color.babyblue3} image={"bc-05"} />
+            <Card
+              content={{
+                header: "File Annual Report",
+                text: "The majority of states require that companies file periodic reports that affirm the current information of the companies members, directors, and business address.",
+                link: { url: `/manage-your-company/annual-report/`, text: `Learn more` },
+              }}
+              color={color.babyblue3}
+              image={"bc-05"}
+            />
 
             <Card content={{ header: "Order Registered Agent", text: "Order registered agent service and receive your new registered agent information immediately.", link: { url: `/manage-your-company/registered-agent/`, text: `Learn more` } }} color={color.orange3} image={"bc-11"} />
 
-            <Card content={{ header: "Certificate of Good Standing", text: "Required by governmental and private agencies to validate a companies status in order to facilitate specified transactions.", link: { url: `/manage-your-company/certificate-of-good-standing/`, text: `Learn more` } }} color={color.blue3} image={"bc-10"} />
+            <Card
+              content={{ header: "Certificate of Good Standing", text: "Required by governmental and private agencies to validate a companies status in order to facilitate specified transactions.", link: { url: `/manage-your-company/certificate-of-good-standing/`, text: `Learn more` } }}
+              color={color.blue3}
+              image={"bc-10"}
+            />
 
             <Card content={{ header: "Business License Search", text: "Determine all business licenses and permits required at the federal, state, county, and municipal level.", link: { url: `/business-license-research-package/`, text: `Learn more` } }} color={color.yellow3} image={"bc-17"} />
 
@@ -155,7 +167,7 @@ const BenefitsAccordion = () => (
             <Card content={{ header: "EIN / Tax ID #", text: "An EIN is required to open a bank account, file taxes and submit payroll taxes.", link: { url: `/manage-your-company/tax-id-ein/`, text: `Learn more` } }} color={color.red3} image={"bc-12"} />
 
             <Card content={{ header: "File Business Taxes", text: "Work with a tax professional to file your federal business tax return.", link: { url: `/business-accounting/`, text: `Learn more` } }} color={color.blue3} image={"bc-13"} />
-            
+
             <Card content={{ header: "File S Corp Tax Election", text: "Reduce the Tax You Pay by Having Your LLC Treated as an S Corp for Tax Purposes.", link: { url: `/llc-s-corp-election/`, text: `Learn more` } }} color={color.babyblue3} image={"bc-15"} />
           </Grid>
         </Panel>

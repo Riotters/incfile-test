@@ -54,6 +54,8 @@ class LightBox extends Component {
                 allowfullscreen></iframe>`)
                 : parse(`<iframe
                 src="https://www.youtube.com/embed/${videoID}?rel=0&autoplay=1"
+                width="560"
+                height="349"
                 frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>`)}

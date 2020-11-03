@@ -93,7 +93,7 @@ const PanelWrapper = styled.div`
     line-height: 24px;
 
     a {
-      color: ${color.orange1};
+      color: ${color.blue1};
       font-size: inherit;
       line-height: inherit;
       text-decoration: none;
@@ -107,7 +107,7 @@ const PanelWrapper = styled.div`
     a {
       font-size: inherit;
       line-height: inherit;
-      color: ${color.orange1};
+      color: ${color.blue1};
       text-decoration: none;
     }
   }

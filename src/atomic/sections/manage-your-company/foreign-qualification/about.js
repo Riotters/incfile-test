@@ -20,19 +20,27 @@ const About = styled.section`
 `;
 
 const AboutSection = ({ className, content }) => (
-    <About className={className}>
-        <Oval className="oval" height="570" width="570" y="-40">
-            <OvalSVG />
-        </Oval>
-        <ImageContent image="fqualification">
-            <Heading size={3} bottomMargin="24">{content.header}</Heading>
-            <Paragraph big bottomMargin="40">{content.text}</Paragraph>
-            <IconTextColorBox color={color.babyblue3} Icon={IconSVG} content={content.box} bottomMargin="48" rounded curve curveColor={color.yellow1}/>
-            <Paragraph big bottomMargin="48">{content.text2}</Paragraph>
-            <Heading size={3} bottomMargin="32">{content.header2}</Heading>
-            <ArrowLink bottomMargin="0" content={content.link} />
-        </ImageContent>
-    </About>
-  );
-  
-  export default AboutSection;
+  <About className={className}>
+    <Oval className="oval" height="570" width="570" y="-40">
+      <OvalSVG />
+    </Oval>
+    <ImageContent image="fqualification">
+      <Heading size={3} bottomMargin="24">
+        {content.header}
+      </Heading>
+      <Paragraph big bottomMargin="40">
+        {content.text}
+      </Paragraph>
+      <IconTextColorBox color={color.babyblue3} Icon={IconSVG} content={content.box} bottomMargin="48" rounded curve curveColor={color.yellow1} />
+      <Paragraph big bottomMargin="48">
+        {content.text2}
+      </Paragraph>
+      <Heading size={3} bottomMargin="32">
+        {content.header2}
+      </Heading>
+      <ArrowLink bottomMargin="0" content={content.link} />
+    </ImageContent>
+  </About>
+);
+
+export default AboutSection;

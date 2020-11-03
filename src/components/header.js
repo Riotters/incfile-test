@@ -211,7 +211,9 @@ const Header = ({ siteTitle }) => {
   return (
     <Wrapper>
       <Logo>
-        <Link to="/"><LogoSVG /></Link>
+        <Link to="/">
+          <LogoSVG />
+        </Link>
       </Logo>
       <MobileWrapper showNav={menu}>
         <Navigation>
@@ -236,7 +238,9 @@ const Header = ({ siteTitle }) => {
         </Navigation>
         <LoginWrapper>
           <Login href={`${process.env.ORDER_URL}/dashboard`}>Login</Login>
-          <Button theme="secondary40" to={`${process.env.ORDER_URL}/form-order-now.php`}>Incoporate now</Button>
+          <Button theme="secondary40" to={`${process.env.ORDER_URL}/form-order-now.php`}>
+            Incorporate now
+          </Button>
         </LoginWrapper>
       </MobileWrapper>
       <Hamburger hamburger={menu} onClick={() => showMenu(!menu)}>

@@ -41,7 +41,7 @@ const Grants = () => (
 
     <Container>
       <BoxWrapper>
-        <Franchise to="/">
+        <Franchise href="https://www.girlboss.com/foundation" target="_blank" rel="noopener noreferrer">
           <TopContent width={129} height={33} className="topContent">
             <div>
               <Image filename="girlboss-logo" />
@@ -58,7 +58,7 @@ const Grants = () => (
           </BottomContent>
         </Franchise>
 
-        <Franchise to="/">
+        <Franchise to="https://www.sba.gov/local-assistance/find/?type=Women%27s%20Business%20Center&pageNumber=1" target="_blank" rel="noopener noreferrer">
           <TopContent width={84} height={48} className="topContent">
             <div>
               <Image filename="sba-logo" />
@@ -75,7 +75,7 @@ const Grants = () => (
           </BottomContent>
         </Franchise>
 
-        <Franchise to="/">
+        <Franchise to="https://ambergrantsforwomen.com/get-an-amber-grant/" target="_blank" rel="noopener noreferrer">
           <TopContent width={102} height={68} className="topContent">
             <div>
               <Image filename="womensnet-logo" />
@@ -92,7 +92,7 @@ const Grants = () => (
           </BottomContent>
         </Franchise>
 
-        <Franchise to="/">
+        <Franchise to="https://www.eileenfisher.com/social-consciousness/grants-overview" target="_blank" rel="noopener noreferrer">
           <TopContent width={83} height={41} className="topContent">
             <div>
               <Image filename="eileen-fisher-2-logo" />
@@ -109,7 +109,7 @@ const Grants = () => (
           </BottomContent>
         </Franchise>
 
-        <Franchise to="/">
+        <Franchise to="https://sites.google.com/site/openmeadowsfoundation/" target="_blank" rel="noopener noreferrer">
           <TopContent width={80} height={80} className="topContent">
             <div>
               <Image filename="open-logo" />
@@ -126,7 +126,7 @@ const Grants = () => (
           </BottomContent>
         </Franchise>
 
-        <Franchise to="/">
+        <Franchise to="http://www.grantsforwomen.org/" target="_blank" rel="noopener noreferrer">
           <TopContent width={102} height={50} className="topContent">
             <div>
               <Image filename="grants-for-women-logo" />
@@ -143,7 +143,7 @@ const Grants = () => (
           </BottomContent>
         </Franchise>
 
-        <Franchise to="/">
+        <Franchise to="https://grant.halsteadbead.com/" target="_blank" rel="noopener noreferrer">
           <TopContent width={60} height={60} className="topContent">
             <div>
               <Image filename="eileen-fisher-logo" />
@@ -192,7 +192,7 @@ const BoxWrapper = styled.div`
     }
 `;
 
-const Franchise = styled(Link)`
+const Franchise = styled.a`
   display: block;
   width: 100%;
   border-radius: 5px;
