@@ -64,7 +64,7 @@ const LinkWrapper = styled.div`
 
 const dropdownStates = states.state.map((state) => state.name);
 
-const BusinessNameSearchForm = ({ className, content, noMaxWidth, propState, propEntityName }) => {
+const BusinessNameSearchForm = ({ className, content, noMaxWidth, propState, propEntityName, curvePosition, curveColor, curveRotate }) => {
     const [businessNameInState, setBusinessNameState] = React.useState(propState);
     const [entityType, setEntityType] = React.useState('LLC');
     const [modalVisible, setModalVisible] = React.useState(false);
@@ -87,10 +87,13 @@ const BusinessNameSearchForm = ({ className, content, noMaxWidth, propState, pro
     
         postHSForm(formData)
             .then(json => {
-                form.reset();
-                setModalClases((modalClases) => [...modalClases, "form-submitted"]);
-                setModalVisible(!modalVisible);
+                // Do sth
             });
+        
+        form.reset();
+        setModalClases((modalClases) => [...modalClases, "form-submitted"]);
+        setModalVisible(!modalVisible);
+        if (!propState) setBusinessNameState('');
     }
 
     const popup = (e) => {
@@ -105,18 +108,18 @@ const BusinessNameSearchForm = ({ className, content, noMaxWidth, propState, pro
         <>
         <form noValidate onSubmit={handleForm}>
             <input type="hidden" name="hs_form_id" value="9b2dac2c-1122-4c12-9204-0cbebeea6ed6" />
-            <Wrapper className={className} noMaxWidth={noMaxWidth}>
-                {/* {(content.hasOwnProperty("noFullName") && content.noFullName === true) && (
-                    <Curve top="-25" right="-29" color={color.orange1} rotate={0}>
-                        <CurveSVG />
-                    </Curve>
-                )} */}
-                {/* {(!content.hasOwnProperty("noFullName") || content.noFullName === false) && (
-                    
-                )} */}
-                    <Curve className="curve-shape" bottom="-25" left="-29" color={color.orange1}>
-                        <CurveSVG />
-                    </Curve>
+                <Wrapper className={className} noMaxWidth={noMaxWidth}>
+                    { curvePosition === 'bottomRight' && 
+                        <Curve bottom="-25" right="-29" color={curveColor ?? color.orange1} rotate={curveRotate ?? 0}>
+                            <CurveSVG />
+                        </Curve>
+                    }
+
+                    {(!curvePosition || curvePosition === 'bottomLeft') && 
+                        <Curve className="curve-shape" bottom="-25" left="-29" color={curveColor ?? color.orange1}>
+                            <CurveSVG />
+                        </Curve>
+                    }
                 <Heading size="5" bottomMargin="16">
                     Please enter the business name information
                 </Heading>
@@ -133,18 +136,17 @@ const BusinessNameSearchForm = ({ className, content, noMaxWidth, propState, pro
                         <ArrowLink content={{ text: `Not Sure?`, url: `/business-entity-comparison/` }} bottomMargin="0" />
                     </LinkWrapper>
                 </Flex>
-                {!propState &&
-                    <Label htmlFor="business_name_search_state" content={{ label: `Entity State` }} bottomMargin="32">
-                        <Dropdown
-                            options={dropdownStates}
-                            name="business_name_search_state"
-                            id="business_name_search_state"
-                            required
-                            onChange={option => setBusinessNameState(option.value)}
-                            placeholder="Select"
-                        />
-                    </Label>
-                }
+                <Label className={propState ? 'hide' : ''} htmlFor="business_name_search_state" content={{ label: `Entity State` }} bottomMargin="32">
+                    <Dropdown
+                        options={dropdownStates}
+                        name="business_name_search_state"
+                        id="business_name_search_state"
+                        defaultSelected={businessNameInState}
+                        required
+                        onChange={option => setBusinessNameState(option.value)}
+                        placeholder="Select"
+                    />
+                </Label>
 
                 <Heading size="5" bottomMargin="16">
                 Let us know where we can let you know if your business name is available

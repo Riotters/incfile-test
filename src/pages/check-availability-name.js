@@ -19,7 +19,6 @@ import Layout from "../components/layout";
 
 // text
 import { seo, formCheck } from "../static/other/business-name-generator";
-import FormSection from "../atomic/sections/other/business-name-generator/form-check-name";
 import BusinessNameSearchForm from "../atomic/organisms/forms/business-name-search-form";
 
 const Wrapper = styled.div`
@@ -41,9 +40,9 @@ const Wrapper = styled.div`
 
 const CheckAvailabilityName = ({ location }) => {
     const [entityName, setEntityName] = React.useState('');
-    console.log('FUCK', window.location.state);
+    
     React.useEffect(() => {
-        let name = typeof window !== `undefined` ? location.state.entityName : '';    
+        let name = typeof window !== `undefined` ? location.state.businessName : '';    
         setEntityName(name);
     }, []);
     return (
