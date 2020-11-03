@@ -40,12 +40,12 @@ const Wrapper = styled.div`
 `;
 
 const CheckAvailabilityName = ({ location }) => {
-    let entityName = '';
-
-    if (typeof window !== `undefined`) {
-        entityName = location.state?.entityName;
-    }
-    console.log('FUCK2', location.state);
+    const [entityName, setEntityName] = React.useState('');
+    console.log('FUCK', window.location.state);
+    React.useEffect(() => {
+        let name = typeof window !== `undefined` ? location.state.entityName : '';    
+        setEntityName(name);
+    }, []);
     return (
         <Layout>
             <SEO title={seo.title} description={seo.desc} />
