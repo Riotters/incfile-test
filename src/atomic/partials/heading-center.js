@@ -29,33 +29,33 @@ const Wrapper = styled.div`
   }
 `;
 
-const TextCenterLayout = ({ className, headline, headlineWidth, text, textWidth, linkText, linkUrl, bottomMargin, bottomMarginLG }) => {
+const TextCenterLayout = ({ className, headline, headlineWidth, text, textWidth, linkText, linkUrl, linkOnClick, bottomMargin, bottomMarginLG }) => {
   const content = {
     text: linkText,
     url: linkUrl,
   };
 
-  return (
-    <Wrapper className={className} headlineWidth={headlineWidth} textWidth={textWidth} bottomMargin={bottomMargin} bottomMarginLG={bottomMarginLG}>
-      <ContentCenter>
-        {headline && (
-          <VisibilitySensor partialVisibility once>
-            {({ isVisible }) => <h2 className={isVisible ? "slideUp enter" : "slideUp"}>{parse(headline)}</h2>}
-          </VisibilitySensor>
-        )}
-        {text && (
-          <VisibilitySensor partialVisibility once>
-            {({ isVisible }) => <p className={isVisible ? "slideUp enter" : "slideUp"}>{parse(text)}</p>}
-          </VisibilitySensor>
-        )}
-        {linkText && (
-          <VisibilitySensor partialVisibility once>
-            {({ isVisible }) => <ArrowLink content={content} className={isVisible ? "slideUp enter" : "slideUp"} />}
-          </VisibilitySensor>
-        )}
-      </ContentCenter>
-    </Wrapper>
-  );
+    return (
+        <Wrapper className={className} headlineWidth={headlineWidth} textWidth={textWidth} bottomMargin={bottomMargin} bottomMarginLG={bottomMarginLG}>
+            <ContentCenter>
+                {headline && (
+                    <VisibilitySensor partialVisibility once>
+                        {({ isVisible }) => <h2 className={isVisible ? "slideUp enter" : "slideUp"}>{parse(headline)}</h2>}
+                    </VisibilitySensor>
+                )}
+                {text && (
+                    <VisibilitySensor partialVisibility once>
+                        {({ isVisible }) => <p className={isVisible ? "slideUp enter" : "slideUp"}>{parse(text)}</p>}
+                    </VisibilitySensor>
+                )}
+                {linkText && (
+                    <VisibilitySensor partialVisibility once>
+                        {({ isVisible }) => <ArrowLink content={content} className={isVisible ? "slideUp enter" : "slideUp"} onClick={linkOnClick}  />}
+                    </VisibilitySensor>
+                )}
+            </ContentCenter>
+        </Wrapper>
+    );
 };
 
 export default TextCenterLayout;

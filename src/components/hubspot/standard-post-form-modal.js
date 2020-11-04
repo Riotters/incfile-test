@@ -35,11 +35,13 @@ const HSFormModal = ({ content, postDownloadAction, hs_form_id, modalExit }) => 
     
         postHSForm(formData)
             .then(json => {
-                form.reset();
-                setPhoneNumber('');
-                setIntentPath('');
-                postDownloadAction(formData);
+                // Do sth
             });
+        
+        form.reset();
+        setPhoneNumber('');
+        setIntentPath('');
+        postDownloadAction(formData);
     }
 
     const handlePhoneChange = (e) => {
