@@ -18,15 +18,15 @@ const Faq = styled.section`
 `;
 
 const FaqSection = ({ className, content }) => (
-  <Faq className={className}>
-    <Oval className="oval" height="570" width="570" top="10" left="0">
-      <OvalSVG />
-    </Oval>
-    <HeadingCenter headline={content.header} headlineWidth="640" />
-    <ContentCenter>
-      <Accordion content={content} curve curveRightBottom curveColor={color.orange1} />
-    </ContentCenter>
-  </Faq>
+    <Faq className={className}>
+        <Oval className="oval" height="570" width="570" top="10" left="0">
+            <OvalSVG />
+        </Oval>
+        <HeadingCenter headline={content.header} headlineWidth="640" />
+        <ContentCenter>
+            <Accordion content={content} curve curveRightBottom curveColor={color.orange1} />
+        </ContentCenter>
+    </Faq>
 );
 
 export default FaqSection;

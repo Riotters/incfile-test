@@ -22,7 +22,7 @@ const SearchSection = ({ className, content, id }) => (
         <Oval className="oval" height="420" width="420" top="0" right="0">
             <OvalSVG />
         </Oval>
-        <ContentObject object={<BusinessNameSearchForm propState="Delaware" curveColor={color.yellow1} curvePosition="bottomRight" curveRotate="90" />} contentWidth="500" contentCenter>
+        <ContentObject object={<BusinessNameSearchForm propState="Texas" curveColor={color.yellow1} curvePosition="bottomRight" curveRotate="90" />} contentWidth="500" contentCenter>
             <Heading size="2" bottomMargin="48" style={{ position: `relative` }}>
                 <Curve top="-85" left="-85" color={color.yellow1}>
                     <CurveSVG />
