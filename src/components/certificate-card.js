@@ -6,6 +6,7 @@ import Image from "./image";
 import Label from "./form/label";
 import Dropdown from "./form/dropdown";
 import Button from "../atomic/molecules/buttons/button";
+import { AnnualReportState } from '../helpers/annual-report-states';
 
 const Wrapper = styled.div`
   display: flex;
@@ -64,12 +65,23 @@ const CertificateCard = ({ className, headline, content, image, dropdownOnePlace
     const [entityTypeSelected, setEntityTypeSelected] = useState({});
     const [entityState, setEntityState] = useState('');
     const [compState, setCompState] = useState('');
+    const [stateFormationOptions, setStateFormationOptions] = useState(dropdownTwoOptions);
 
     async function fetchData(url = '', data = {}) {
         const response = await fetch(url, {
             method: 'GET',
         });
         return response.json();
+    }
+
+    const _onChangeEntityType = (option) => {
+        let value = option.value;
+        setEntityTypeSelected(option);
+
+        if (orderPage === '/annual-report.php') {
+            let states = AnnualReportState[value];
+            setStateFormationOptions(states);
+        }
     }
 
     const getPrice = (option) => {
@@ -95,6 +107,15 @@ const CertificateCard = ({ className, headline, content, image, dropdownOnePlace
         });
     }
 
+    const checkForeignQualificateState = (option) => {
+        if (option.value === entityState) {
+            alert(`The State of Incorporation and State of Foreign Qualification should not same`);
+            setCompState('');
+        } else {
+            setCompState(option.value);
+        }
+    }
+
     const handleOrderNow = () => {
         if (typeof window !== 'undefined') {
             let orderUrl = `${process.env.ORDER_URL}${orderPage}?entityType=${entityTypeSelected.label}&entityState=${entityState}`;
@@ -118,19 +139,19 @@ const CertificateCard = ({ className, headline, content, image, dropdownOnePlace
         {dropdownOnePlaceholder && (
             <Label className="label">
             Entity Type
-            <Dropdown className="dropdown" placeholder={dropdownOnePlaceholder} options={entityOptions} onChange={option => setEntityTypeSelected(option)} />
+            <Dropdown className="dropdown" placeholder={dropdownOnePlaceholder} options={entityOptions} onChange={_onChangeEntityType} />
             </Label>
         )}
         {dropdownTwoPlaceholder && (
             <Label className="label">
-            State
-            <Dropdown className="dropdown" placeholder={dropdownTwoPlaceholder} options={dropdownTwoOptions} onChange={getPrice} />
+            {orderPage === '/foreign-qual.php' ? 'State of Formation' : 'Select State'}
+            <Dropdown className="dropdown" placeholder={dropdownTwoPlaceholder} options={stateFormationOptions} onChange={getPrice} />
             </Label>
         )}
         {dropdownThreePlaceholder && (
             <Label className="label">
-            State of Formation
-            <Dropdown className="dropdown" placeholder={dropdownThreePlaceholder} options={dropdownThreeOptions} onChange={option => setCompState(option.value)} />
+            State of Foreign Qualification
+            <Dropdown className="dropdown" defaultSelected={compState} placeholder={dropdownThreePlaceholder} options={dropdownThreeOptions} onChange={checkForeignQualificateState} />
             </Label>
         )}
         {content && (
