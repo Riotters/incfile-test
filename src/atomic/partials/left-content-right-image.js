@@ -21,15 +21,14 @@ const Content = styled.div`
   order: 2;
 
   @media (min-width: 992px) {
-    max-width: 500px;
-    padding-right: ${props => (props.contentPadding ? props.contentPadding : "100")}px;
+    max-width: ${(props) => (props.contentWidth ? parseInt(props.contentWidth) - 100 : "500")}px;
+    padding-right: ${(props) => (props.contentPadding ? props.contentPadding : "100")}px;
     order: 1;
   }
-  
-  @media (min-width: 1200px) {
-    max-width: ${props => (props.contentWidth ? parseInt(props.contentWidth) + 100 : "700")}px;
-  }
 
+  @media (min-width: 1200px) {
+    max-width: ${(props) => (props.contentWidth ? parseInt(props.contentWidth) + 100 : "700")}px;
+  }
 
   h2 {
     text-align: left;
@@ -66,7 +65,7 @@ const LeftContentRightImage = ({ className, children, image, contentWidth, conte
     <Container>
       <Wrapper className={className}>
         <Content className="content" contentWidth={contentWidth} contentPadding={contentPadding}>
-            { children }
+          {children}
         </Content>
         <Imagebox className="imagebox">
           <Image filename={image} />

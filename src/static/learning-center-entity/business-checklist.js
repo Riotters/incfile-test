@@ -478,7 +478,7 @@ export const about = {
 export const help = {
   header: `Help File My Annual Report`,
   header2: `Save your time. We'll handle the paperwork.`,
-  text: `If you would like to use our services to facilitate the filing of your annual report please place the order and a representative from IncFile will contact you to obtain specific information required to complete and file the annual report in your state of formation.`,
+  text: `If you would like to use our services to facilitate the filing of your annual report please place the order and a representative from Incfile will contact you to obtain specific information required to complete and file the annual report in your state of formation.`,
 };
 
 export const faq = {

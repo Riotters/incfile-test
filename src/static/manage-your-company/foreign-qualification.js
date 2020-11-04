@@ -122,7 +122,7 @@ export const faq = {
       },
       {
         question: `How do I obtain a Certificate of Good Standing?`,
-        answer: `This document is obtained by contacting the Secretary of State. IncFile will complete this request when you file with our service. It is provided to verify that you are in compliance with tax and government requirements in that state.`,
+        answer: `This document is obtained by contacting the Secretary of State. Incfile will complete this request when you file with our service. It is provided to verify that you are in compliance with tax and government requirements in that state.`,
       },
       {
         question: `What will I receive when the Foreign Qualification is filed?`,
