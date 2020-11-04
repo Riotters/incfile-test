@@ -88,40 +88,38 @@ export const about = {
   text21: `Every business circumstance is unique, and there may be situations where some of these deductions don’t apply, or where you could claim additional expenses. That’s why it’s always important to see a qualified account or tax professional and get their advice on your business affairs.`,
   text22: `Incfile provides a Business Tax service that makes it easy for you to prepare and file your business taxes.`,
   button: {
-    text: `Try IncFile's Business Tax Service`,
+    text: `Try Incfile's Business Tax Service`,
     url: `/`,
   },
-}
+};
 
 export const related = {
-  header: 
-      `Related Articles`,
-  text:
-      `Other users were also interested in knowing about…`,
+  header: `Related Articles`,
+  text: `Other users were also interested in knowing about…`,
   buttons: [
-      {
-          header: `How to Get a Seller’s Permit?`,
-          url: `/research-topics/business-taxes/sellers-permit`,
-      },
-      {
-          header: `Minimizing tax expenses`,
-          url: `/research-topics/business-taxes/minimizing-tax-expenses`,
-      },
-      {
-          header: `Which entity offers the best tax advantages?`,
-          url: `/research-topics/business-taxes/tax-advantages`,
-      },
-      {
-          header: `How is an S Corporation Taxed?`,
-          url: `/research-topics/business-taxes/s-corp-taxing/`,
-      },
-      {
-          header: `Is “Nonprofit” the Same as “Tax-Exempt”?`,
-          url: `/research-topics/business-taxes/nonprofit-tax-exempt/`,
-      },
-      {
-          header: `How is a C Corporation Taxed?`,
-          url: `/research-topics/business-taxes/c-corp-taxing/`,
-      },
-    ],
-}
+    {
+      header: `How to Get a Seller’s Permit?`,
+      url: `/research-topics/business-taxes/sellers-permit`,
+    },
+    {
+      header: `Minimizing tax expenses`,
+      url: `/research-topics/business-taxes/minimizing-tax-expenses`,
+    },
+    {
+      header: `Which entity offers the best tax advantages?`,
+      url: `/research-topics/business-taxes/tax-advantages`,
+    },
+    {
+      header: `How is an S Corporation Taxed?`,
+      url: `/research-topics/business-taxes/s-corp-taxing/`,
+    },
+    {
+      header: `Is “Nonprofit” the Same as “Tax-Exempt”?`,
+      url: `/research-topics/business-taxes/nonprofit-tax-exempt/`,
+    },
+    {
+      header: `How is a C Corporation Taxed?`,
+      url: `/research-topics/business-taxes/c-corp-taxing/`,
+    },
+  ],
+};

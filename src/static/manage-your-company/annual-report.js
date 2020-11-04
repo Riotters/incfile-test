@@ -13,7 +13,7 @@ export const about = {
   header: `What is an annual report?`,
   text: `The SS4 is the IRS form required to obtain an EIN (Employer Identification Number, frequently called a Tax ID number). The EIN/Tax ID number can be thought of as a Social Security Number for your business. 
       It is usually required to open a bank account in the name of the business and to properly pay and account for any wage/payroll employees of your company. 
-      IncFile will obtain your federal EIN electronically and have it back to you via email within one business day.`,
+      Incfile will obtain your federal EIN electronically and have it back to you via email within one business day.`,
   box: {
     header: `Enterpreneur 360 (2019)`,
     text: `If you’re a business manager, director, or owner, you have a requirement to follow certain rules and regulations. One of those is filing an annual report for your business. 
@@ -82,14 +82,14 @@ export const about = {
 export const help = {
   header: `Help File My Annual Report`,
   header2: `Save your time. We'll handle the paperwork.`,
-  text: `If you would like to use our services to facilitate the filing of your annual report please place the order and a representative from IncFile will contact you to obtain specific information required to complete and file the annual report in your state of formation.`,
+  text: `If you would like to use our services to facilitate the filing of your annual report please place the order and a representative from Incfile will contact you to obtain specific information required to complete and file the annual report in your state of formation.`,
   card: {
     price: `88`,
     fee: `+ $10 State Fee`,
     button: {
       text: `Order Now`,
       url: `/`,
-    }
+    },
   },
 };
 

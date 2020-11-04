@@ -318,7 +318,7 @@ const Header = ({ siteTitle }) => {
               <DropdownMenu>
                 <SubmenuColumn>
                   <Heading size={5} bottomMargin={10}>
-                    Company Changes
+                    State Filings
                   </Heading>
                   <MenuItem>
                     <MenuLink to="/free-llc/">Free LLC Filing</MenuLink>

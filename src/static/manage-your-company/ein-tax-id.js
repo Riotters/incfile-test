@@ -12,7 +12,7 @@ export const top = {
 export const about = {
   text: `The SS4 is the IRS form required to obtain an EIN (Employer Identification Number, frequently called a Tax ID number). The EIN/Tax ID number can be thought of as a Social Security Number for your business. 
       It is usually required to open a bank account in the name of the business and to properly pay and account for any wage/payroll employees of your company. 
-      IncFile will obtain your federal EIN electronically and have it back to you via email within one business day.`,
+      Incfile will obtain your federal EIN electronically and have it back to you via email within one business day.`,
   box: {
     header: `What is an Employer Identification Number (EIN)?`,
     text: `Also known as a “Tax ID number,” the EIN is a business federal tax ID that works like a Social Security Number for your business. 
@@ -39,8 +39,8 @@ export const about = {
       and other forms related to managing payroll for your employees. Your EIN is also necessary to set up a business bank account and apply for business loans. 
       The same types of reasons for needing a Social Security Number in your personal life are also the reasons to use an EIN in managing your business.`,
   header3: `How Do You Get an EIN? Apply for an EIN Online`,
-  text4: `Business owners can get an EIN by filing IRS Form SS-4. IncFile offers a convenient service to help you apply for an EIN online to obtain your EIN number quickly and efficiently. 
-      If you're looking for a way to get an EIN, whether in Texas, Florida, Michigan or anywhere in the United States, IncFile can provide one for you in one day. Apply for an EIN online with IncFile, 
+  text4: `Business owners can get an EIN by filing IRS Form SS-4. Incfile offers a convenient service to help you apply for an EIN online to obtain your EIN number quickly and efficiently. 
+      If you're looking for a way to get an EIN, whether in Texas, Florida, Michigan or anywhere in the United States, Incfile can provide one for you in one day. Apply for an EIN online with Incfile, 
       and we'll obtain your federal tax ID electronically and have your new EIN back to you via email within one business day.`,
   link: {
     text: "Apply for an EIN online to obtain your EIN number quickly",
@@ -51,11 +51,15 @@ export const about = {
 export const help = {
   header: `Help Obtain a EIN / Tax ID Number`,
   header2: `Save your time. We'll handle the paperwork.`,
-  text: `If you would like to use our services to facilitate the filing of your Tax ID / EIN please place the order and a representative from IncFile will contact you to 
+  text: `If you would like to use our services to facilitate the filing of your Tax ID / EIN please place the order and a representative from Incfile will contact you to 
       obtain specific information required to complete and file the Tax ID / EIN in your state of formation.`,
   card: {
     price: `70`,
     fee: `Total price`,
+    button: {
+      text: "Order Now",
+      url: `/`,
+    },
   },
 };
 

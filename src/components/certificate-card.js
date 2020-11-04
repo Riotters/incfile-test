@@ -132,37 +132,37 @@ const CertificateCard = ({ className, headline, content, image, dropdownOnePlace
         { value: `Npc`, label: `Nonprofit` },
     ];
 
-  return (
-    <Wrapper className={className}>
-        <h3>{headline}</h3>
-        {image && <Image filename={image} />} 
-        {dropdownOnePlaceholder && (
-            <Label className="label">
-            Entity Type
-            <Dropdown className="dropdown" placeholder={dropdownOnePlaceholder} options={entityOptions} onChange={_onChangeEntityType} />
-            </Label>
-        )}
-        {dropdownTwoPlaceholder && (
-            <Label className="label">
-            {orderPage === '/foreign-qual.php' ? 'State of Formation' : 'Select State'}
-            <Dropdown className="dropdown" placeholder={dropdownTwoPlaceholder} options={stateFormationOptions} onChange={getPrice} />
-            </Label>
-        )}
-        {dropdownThreePlaceholder && (
-            <Label className="label">
-            State of Foreign Qualification
-            <Dropdown className="dropdown" defaultSelected={compState} placeholder={dropdownThreePlaceholder} options={dropdownThreeOptions} onChange={checkForeignQualificateState} />
-            </Label>
-        )}
-        {content && (
-            <>
-            {content.price && <span className="price">${content.price}</span>}
-            {showExtraFee && <span className="fee">+${extraFee} State Fee</span>}
-            </>
-        )}
-        <Button content={content.button} theme="primary56" margin="40px 0 0 0" arrow onClick={handleOrderNow} />
-    </Wrapper>
-  );
+    return (
+        <Wrapper className={className}>
+            <h3>{headline}</h3>
+            {image && <Image filename={image} />}
+            {dropdownOnePlaceholder && (
+                <Label className="label">
+                    Entity Type
+                    <Dropdown className="dropdown" placeholder={dropdownOnePlaceholder} options={entityOptions} onChange={_onChangeEntityType} />
+                </Label>
+            )}
+            {dropdownTwoPlaceholder && (
+                <Label className="label">
+                    {orderPage === '/foreign-qual.php' ? 'State of Formation' : 'Select State'}
+                    <Dropdown className="dropdown" placeholder={dropdownTwoPlaceholder} options={stateFormationOptions} onChange={getPrice} />
+                </Label>
+            )}
+            {dropdownThreePlaceholder && (
+                <Label className="label">
+                    State of Foreign Qualification
+                    <Dropdown className="dropdown" defaultSelected={compState} placeholder={dropdownThreePlaceholder} options={dropdownThreeOptions} onChange={checkForeignQualificateState} />
+                </Label>
+            )}
+            {content && (
+                <>
+                    {content.price && <span className="price">${content.price}</span>}
+                    {showExtraFee && <span className="fee">+${extraFee} State Fee</span>}
+                </>
+            )}
+            <Button content={content.button} theme="primary56" margin="40px 0 0 0" arrow onClick={handleOrderNow} />
+        </Wrapper>
+    );
 };
 
 export default CertificateCard;

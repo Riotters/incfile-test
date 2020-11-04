@@ -110,8 +110,8 @@ const BenefitsAccordion = () => (
     <Wrapper>
       <TabsWrapper>
         <Scroller>
-          <Tab>Company Changes</Tab>
-          <Tab>Compiliance</Tab>
+          <Tab>State Filings</Tab>
+          <Tab>Compliance</Tab>
           <Tab>Registered Agent</Tab>
           <Tab>IRS Filings</Tab>
         </Scroller>
@@ -139,8 +139,6 @@ const BenefitsAccordion = () => (
               color={color.babyblue3}
               image={"bc-05"}
             />
-
-            <Card content={{ header: "Order Registered Agent", text: "Order registered agent service and receive your new registered agent information immediately.", link: { url: `/manage-your-company/registered-agent/`, text: `Learn more` } }} color={color.orange3} image={"bc-11"} />
 
             <Card
               content={{ header: "Certificate of Good Standing", text: "Required by governmental and private agencies to validate a companies status in order to facilitate specified transactions.", link: { url: `/manage-your-company/certificate-of-good-standing/`, text: `Learn more` } }}

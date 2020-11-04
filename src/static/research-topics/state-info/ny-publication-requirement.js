@@ -35,7 +35,7 @@ export const about = {
       <a href="/llc-state-information/new-york-llc/" target="_blank">we have a complete NY LLC</a>
       guide that tells you what you need to do. Once your Articles of Organization have been filed, you’ll receive a filing receipt, which you’ll need for the next step.`,
   button: {
-    text: `Start a New Tork LLC With IncFile`,
+    text: `Start a New Tork LLC With Incfile`,
     url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=NY`,
   },
   header4: `Find Your County Clerk’s Contact Details`,
@@ -60,7 +60,7 @@ export const about = {
     ],
   },
   button: {
-    text: `Start a New Tork LLC With IncFile`,
+    text: `Start a New Tork LLC With Incfile`,
     url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=NY`,
   },
   header7: `Publish Your NY LLC Notice for Six Weeks`,

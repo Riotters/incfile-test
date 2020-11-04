@@ -126,7 +126,7 @@ export const about = {
           ],
         },
         header4: `How to Create an LLC without Breaking the Bank`,
-        text4: `IncFile provides a cost effective service to help you create your LLC. We guide you through the process and handle most of the administrative steps, such as filing the articles of organization, on your behalf. Our basic package also provides a free registered agent service for the first year. If you're looking for help to start an LLC, our comprehensive online formation services provide outstanding value. `,
+        text4: `Incfile provides a cost effective service to help you create your LLC. We guide you through the process and handle most of the administrative steps, such as filing the articles of organization, on your behalf. Our basic package also provides a free registered agent service for the first year. If you're looking for help to start an LLC, our comprehensive online formation services provide outstanding value. `,
       },
       {
         header: `Who Can Start an LLC?`,
@@ -205,7 +205,6 @@ export const service = {
   header: `How our service works`,
   text: `Take a moment to view our instructional video and see how easy it can be to get your business incorporated.`,
 };
-
 
 export const faq = {
   header: `Common questions about Business Formation Kit`,
