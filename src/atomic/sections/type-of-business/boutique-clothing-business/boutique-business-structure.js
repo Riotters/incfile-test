@@ -73,12 +73,7 @@ const BoutiqueBusinessStructure = () => (
           widthUnit="%"
         >
           <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-            <FlexLink to="">
-              <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                <ArrowSVG />
-              </IconCircle>
-              Sole Proprietorship
-            </FlexLink>
+            Sole Proprietorship
           </Paragraph>
 
           <Paragraph big>If you don’t choose to form a legal business entity for your moving business, you will be a sole proprietor by default. This won’t give you the legal protections you need, so we do not recommend this. </Paragraph>
@@ -99,12 +94,7 @@ const BoutiqueBusinessStructure = () => (
           widthUnit="%"
         >
           <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-            <FlexLink to="">
-              <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                <ArrowSVG />
-              </IconCircle>
-              Partnership
-            </FlexLink>
+            Partnership
           </Paragraph>
 
           <Paragraph big>
@@ -127,12 +117,7 @@ const BoutiqueBusinessStructure = () => (
           widthUnit="%"
         >
           <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-            <FlexLink to="">
-              <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                <ArrowSVG />
-              </IconCircle>
-              Limited Liability Company or LLC
-            </FlexLink>
+            Limited Liability Company or LLC
           </Paragraph>
 
           <Paragraph big>The Limited Liability Company (LLC) is ideal for most small retail clothing businesses. An LLC is easy and inexpensive to set up, and it has the least administrative requirements of any formal business entity.</Paragraph>
@@ -153,12 +138,7 @@ const BoutiqueBusinessStructure = () => (
           widthUnit="%"
         >
           <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-            <FlexLink to="">
-              <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                <ArrowSVG />
-              </IconCircle>
-              S Corporation
-            </FlexLink>
+            S Corporation
           </Paragraph>
 
           <Paragraph big>This is a more complex type of business and isn't generally recommended for smaller organizations.</Paragraph>
@@ -179,12 +159,7 @@ const BoutiqueBusinessStructure = () => (
           widthUnit="%"
         >
           <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-            <FlexLink to="">
-              <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                <ArrowSVG />
-              </IconCircle>
-              C Corporation
-            </FlexLink>
+            C Corporation
           </Paragraph>
 
           <Paragraph big>These are the largest and most complex types of businesses and are typically far more than the average entrepreneur or boutique business owner will need.</Paragraph>
@@ -204,11 +179,5 @@ const BoutiqueBusinessStructure = () => (
     </BusinessOwnerResponsibilities>
   </OrangeContainer>
 );
-
-const FlexLink = styled(Link)`
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-`;
 
 export default BoutiqueBusinessStructure;

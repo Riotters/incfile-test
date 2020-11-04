@@ -13,9 +13,8 @@ export const about = {
   text: `Or perhaps you are an Internet business with fulfillment centers in multiple locations. This may mean you are doing business in a “foreign” state. 
         What do you do? We have the answers to all your questions regarding what constitutes doing business in another state and how to get the proper paperwork done to be legitimate.`,
   box: {
-    header: `Enterpreneur 360 (2019)`,
     text: `Many confuse foreign qualification with the idea of operating outside the United States. This really has to do with how you perform within the borders of the United States. 
-            “Foreign,” in this case, refers to the fact that each state has operating rules that are different from one another; and, in turn, must insist on proper registration to do business in that locale.`,
+            “Foreign,” in this case, refers to the fact that <a href="/llc-state-information/">each state has operating rules that are different from one another</a>; and, in turn, must insist on proper registration to do business in that locale.`,
   },
   text2: `Therefore, it is important that when your company is located in or operates within a state other than the place of original incorporation, 
         you are given the proper rights to conduct business there. This actually means you need to obtain a Certificate of Authority.`,

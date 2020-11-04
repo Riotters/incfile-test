@@ -25,7 +25,7 @@ const BasicsSection = ({ className, content }) => (
     <Oval height="720" width="720" top="0" left="0">
       <OvalSVG />
     </Oval>
-    <HeadingCenter headline={content.header} headlineWidth="640" bottomMargin="24" bottomMarginLG="112" />
+    <HeadingCenter headline={content.header} headlineWidth="640" />
     <ContentCenter>
       <Accordion content={content.faq} curve curveRight />
     </ContentCenter>

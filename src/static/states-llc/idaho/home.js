@@ -69,7 +69,7 @@ export const howToGuide = [
           question: `STEP 2: Choose a Unique Business Name for Your Idaho LLC`,
           answer: `<p>You will need a distinctive and original name for your LLC that’s not used by any other business in ID. To find out if another company is using your chosen business name, carry out a business entity name search on the ID Secretary of State website.</p></br>
             <p>There are a few rules you’ll need to follow when choosing an LLC name. You can find out more in our guide to naming your Idaho LLC.</p></br>
-            <p><a href="/" target="_blank">Learn about Idaho LLC business naming rules.</a></p>`,
+            <p><a href="/idaho-llc/how-to-name-your-llc/" target="_blank">Learn about Idaho LLC business naming rules.</a></p>`,
         },
         {
           question: `STEP 3: Provide an Official Address for Your ID LLC`,
@@ -80,7 +80,7 @@ export const howToGuide = [
           answer: `<p>Every ID LLC must have a “Registered Agent.” This is an official position; the Registered Agent is someone who receives official legal and tax correspondence and has responsibility for filing reports with the Idaho Secretary of State.</p></br>
             <p>This position can be filled by you, another manager in the business or a dedicated Registered Agent service. Your Registered Agent must have a physical street address in Idaho and must be present to receive important documents for your company during business hours.</p></br>
             <p>At Incfile, all of our packages include a Idaho Registered Agent service that is free for the first year and just $119 per year afterward. We also have a dashboard where you can log in and easily view any document your Registered Agent has received on your behalf.</p></br>
-            <p><a href="/" target="_blank">Learn more about Idaho Registered Agents</a></p>`,
+            <p><a href="/idaho-llc/registered-agents-idaho-llc/" target="_blank">Learn more about Idaho Registered Agents</a></p>`,
         },
         {
           question: `STEP 5: Get an Employer Identification Number (EIN) from the Internal Revenue Service`,
@@ -893,7 +893,7 @@ export const feesAndRequirments = [
     marginBottom: 24,
   },
   {
-    type: `dynamic_ar_box`
+    type: `dynamic_ar_box`,
   },
   {
     type: `arrow-link`,
@@ -982,7 +982,7 @@ export const feesAndRequirments = [
     marginBottom: 24,
   },
   {
-    type: `dynamic_filing_requirement`
+    type: `dynamic_filing_requirement`,
   },
   {
     type: `text`,

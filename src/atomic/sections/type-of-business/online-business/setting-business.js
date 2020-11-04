@@ -5,7 +5,7 @@ import TopImageBox from "../../../../components/top-image-box";
 import { color } from "../../../../components/styles/colors";
 import styled from "styled-components";
 import GreenOval from "../../../../images/ovals/bottom-left-transparent-green2.inline.svg";
-import {Link} from "gatsby";
+import { Link } from "gatsby";
 const SettingBusiness = () => (
   <GreenContainer>
     <Oval>
@@ -48,9 +48,9 @@ const SettingBusiness = () => (
           <h4>Finances and Taxes</h4>
           <p>
             You will need a separate{" "}
-            <Link to="https://utility.bankofamerica.com/alliance/?formid=IF1" target="_blank" rel="noopener noreferrer">
+            <a href="https://utility.bankofamerica.com/alliance/?formid=IF1" target="_blank" rel="noopener noreferrer">
               business bank account
-            </Link>{" "}
+            </a>{" "}
             for your online business. You might also want to consider a business credit card. Additionally, you will also need to keep careful bookkeeping records and file business and personal taxes. Here at Incfile <Link to="/business-accounting/">we can even help you file your taxes</Link>.
           </p>
         </TopImageBox>

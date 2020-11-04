@@ -73,12 +73,7 @@ const CoachBusinessStructure = () => (
           widthUnit="%"
         >
           <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-            <FlexLink to="/">
-              <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                <ArrowSVG />
-              </IconCircle>
-              Sole Proprietorship
-            </FlexLink>
+            Sole Proprietorship
           </Paragraph>
 
           <Paragraph big>If you don’t choose to form a legal business entity for your publishing business, you will be a sole proprietor by default. This won’t give you the legal protections you need, so we do not recommend this.</Paragraph>
@@ -99,12 +94,7 @@ const CoachBusinessStructure = () => (
           widthUnit="%"
         >
           <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-            <FlexLink to="/">
-              <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                <ArrowSVG />
-              </IconCircle>
-              Partnership
-            </FlexLink>
+            Partnership
           </Paragraph>
 
           <Paragraph big>This is a type of business that is formed when two or more people work together without creating a more formal business entity. Like a sole proprietorship, it may not give you all the protections your publishing business may need.</Paragraph>
@@ -125,12 +115,7 @@ const CoachBusinessStructure = () => (
           widthUnit="%"
         >
           <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-            <FlexLink to="/">
-              <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                <ArrowSVG />
-              </IconCircle>
-              Limited Liability Company or LLC
-            </FlexLink>
+            Limited Liability Company or LLC
           </Paragraph>
 
           <Paragraph big>This is a type of business that is formed when two or more people work together without creating a more formal business entity. Like a sole proprietorship, it may not give you all the protections your publishing business may need.</Paragraph>
@@ -151,12 +136,7 @@ const CoachBusinessStructure = () => (
           widthUnit="%"
         >
           <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-            <FlexLink to="/">
-              <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                <ArrowSVG />
-              </IconCircle>
-              S Corporation
-            </FlexLink>
+            S Corporation
           </Paragraph>
 
           <Paragraph big>This is a more complex type of business and isn't generally recommended for smaller organizations.</Paragraph>
@@ -177,12 +157,7 @@ const CoachBusinessStructure = () => (
           widthUnit="%"
         >
           <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-            <FlexLink to="/">
-              <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                <ArrowSVG />
-              </IconCircle>
-              C Corporation
-            </FlexLink>
+            C Corporation
           </Paragraph>
 
           <Paragraph big>These are the largest and most complex types of businesses and are typically far more than the average entrepreneur will need.</Paragraph>
@@ -190,7 +165,7 @@ const CoachBusinessStructure = () => (
 
         <Paragraph big style={{ paddingTop: "48px", paddingBottom: 0 }} mixed={true}>
           For more information on the advantages and disadvantages of different types of businesses, <Link to="/business-entity-comparison/">please see our in-depth guide</Link>. If you’ve still got questions,{" "}
-          <a to="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/" target="_blank" rel="noopener noreferrer">
+          <a href="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/" target="_blank" rel="noopener noreferrer">
             we’ve answered them to help you choose the right business structure
           </a>{" "}
           for your daycare business.
@@ -205,11 +180,5 @@ const CoachBusinessStructure = () => (
     </BusinessOwnerResponsibilities>
   </WrapperContainer>
 );
-
-const FlexLink = styled(Link)`
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-`;
 
 export default CoachBusinessStructure;

@@ -208,7 +208,11 @@ const TabScrollable = ({ layout, columns }) => {
                       </Paragraph>
 
                       <Paragraph big mixed={true}>
-                        The Small Business Administration provides <Link to="details of any national or federal licenses and permits">details of any national or federal licenses and permits</Link> you might need.
+                        The Small Business Administration provides{" "}
+                        <a href="https://www.sba.gov/business-guide/launch-your-business/apply-licenses-permits" target="_blank" rel="noopener noreferrer">
+                          details of any national or federal licenses and permits
+                        </a>{" "}
+                        you might need.
                       </Paragraph>
                     </TextBlockWithImage>
                   </div>
@@ -282,7 +286,7 @@ const TabScrollable = ({ layout, columns }) => {
                         Although you can act as your own registered agent, we recommend using a professional service. It ensures there will always be someone available to receive important legal documentation on your behalf and also removes your name and address from the public record.
                       </Paragraph>
                       <Paragraph big mixed={true}>
-                        When you <Link to="/form-order-now.php">incorporate through us</Link>, we provide a complete Registered Agent service free for the first year.
+                        When you <Link to={`${process.env.ORDER_URL}/form-order-now.php`}>incorporate through us</Link>, we provide a complete Registered Agent service free for the first year.
                       </Paragraph>
                     </TextBlockWithImage>
                   </div>

@@ -6,7 +6,7 @@ export const top = {
 export const fee = {
   header: `Free LLC Filing + State Fee`,
   text: `An LLC is often the first step to starting your business, and now we’re making it even easier to kickstart your dream. There is no longer any monetary blocker to getting your business started. You’ll get the same incredible Incfile offering and service, but now with a free $0 business formation backed by our years of experience in the industry.`,
-  text2: `Get your business started with a $0 LLC today.`,
+  text2: `Get your business <a href="${process.env.ORDER_URL}/form-order-now.php">started with a $0 LLC today.</a>`,
   cards: [`Entity Type`, `State of Formation`],
   button: {
     text: `Form my LLC for free`,
@@ -55,7 +55,7 @@ export const start = {
     },
     {
       text:
-        "service for a full year; one easy, clear dashboard to access all documents and filing information; access to 30+ business contracts; lifetime company alerts; business formation kit; preparation and filing of taxes, including IRS Form 2553; banking resolution; statement and resignation of the incorporator; online order status tracking; express shipping (tracking number included); A+ rating by BBB; and more.",
+        "service for a full year; one easy, clear dashboard to access all documents and filing information; access to 30+ business contracts; lifetime company alerts; preparation and filing of taxes, including IRS Form 2553; banking resolution; statement and resignation of the incorporator; online order status tracking; and more.",
     },
   ],
   text5: [
@@ -99,7 +99,7 @@ export const isCatch = {
   text2: `Since 2004 we’ve been perfecting our service and as a result of our tech-enabled process efficiencies, we’re able to keep the costs down. So, we wanted to pass this incredible value on to you. And when we work with you for the lifetime of your business, it’s your participation that truly fuels our service and success.`,
   text3: `The catch-free result is low-cost, personalized business formation with fast and friendly service. For clever people with big ideas.`,
   button: {
-    text: `Calculate my sales tax`,
-    url: `/sales-tax-calculator/`,
+    text: `Start your LLC Now`,
+    url: `${process.env.ORDER_URL}/form-order-now.php`,
   },
 };

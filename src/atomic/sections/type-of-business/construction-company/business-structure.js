@@ -73,12 +73,7 @@ const CoachBusinessStructure = () => (
           widthUnit="%"
         >
           <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-            <FlexLink to="">
-              <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                <ArrowSVG />
-              </IconCircle>
-              Sole Proprietorship
-            </FlexLink>
+            Sole Proprietorship
           </Paragraph>
 
           <Paragraph big>If you don’t choose to form a legal business entity for your construction business, you will be a sole proprietor by default. This won’t give you the legal protections you need, so we do not recommend this.</Paragraph>
@@ -99,12 +94,7 @@ const CoachBusinessStructure = () => (
           widthUnit="%"
         >
           <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-            <FlexLink to="//form-order-now.php?entityType=LLC">
-              <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                <ArrowSVG />
-              </IconCircle>
-              Partnership
-            </FlexLink>
+            Partnership
           </Paragraph>
 
           <Paragraph big>
@@ -127,12 +117,7 @@ const CoachBusinessStructure = () => (
           widthUnit="%"
         >
           <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-            <FlexLink to="//form-order-now.php?entityType=LLC">
-              <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                <ArrowSVG />
-              </IconCircle>
-              Limited Liability Company or LLC
-            </FlexLink>
+            Limited Liability Company or LLC
           </Paragraph>
 
           <Paragraph big>The most common type of business entity, an LLC is fast, simple and inexpensive to set up and maintain. It protects your personal finances and assets and is a great way to start your construction business.</Paragraph>
@@ -153,12 +138,7 @@ const CoachBusinessStructure = () => (
           widthUnit="%"
         >
           <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-            <FlexLink to="//form-order-now.php?entityType=S-Corporation">
-              <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                <ArrowSVG />
-              </IconCircle>
-              S Corporation
-            </FlexLink>
+            S Corporation
           </Paragraph>
 
           <Paragraph big>This is a more complex type of business and isn't generally recommended for smaller organizations, but it could be a good fit for your construction business depending on your goals.</Paragraph>
@@ -179,12 +159,7 @@ const CoachBusinessStructure = () => (
           widthUnit="%"
         >
           <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-            <FlexLink to="/form-order-now.php?entityType=C-Corporation">
-              <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                <ArrowSVG />
-              </IconCircle>
-              C Corporation
-            </FlexLink>
+            C Corporation
           </Paragraph>
 
           <Paragraph big>This is a more complex type of business and isn't generally recommended for smaller organizations, but it could be a good fit for your construction business depending on your goals.</Paragraph>
@@ -205,11 +180,5 @@ const CoachBusinessStructure = () => (
     </BusinessOwnerResponsibilities>
   </WrapperContainer>
 );
-
-const FlexLink = styled(Link)`
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-`;
 
 export default CoachBusinessStructure;
