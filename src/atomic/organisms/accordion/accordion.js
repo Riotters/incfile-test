@@ -243,7 +243,7 @@ const Accordion = ({ content, curve, curveRight, curveRightBottom, curveLeft, cu
                   ) : null}
                   {typeof item.answer === "object" ? (
                     <Paragraph bottomMargin="0" mixed>
-                      {item.answer.map((el) => (el.url ? <Link to={el.url}>{` ${parse(el.text)} `}</Link> : el.text))}
+                      {item.answer.map((el) => (el.url ? <Link to={el.url}>{` ${parse(el.text)} `}</Link> : parse(el.text)))}
                     </Paragraph>
                   ) : null}
 
@@ -274,7 +274,7 @@ const Accordion = ({ content, curve, curveRight, curveRightBottom, curveLeft, cu
                         {e.type === "arrow-links" &&
                           e.content.map((link) => (
                             <ArrowLink url={link.url} style={link.style}>
-                              {link.text}
+                              {parse(link.text)}
                             </ArrowLink>
                           ))}
 
