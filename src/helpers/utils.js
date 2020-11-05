@@ -8,6 +8,15 @@ export const replaceStr = (newValue, currentValue, string) => {
     return string.replace(currentValue, newValue);
 }
 
+export const formatNumber = (num) => {
+    return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
+}
+
+export const roundUp = (num, precision) => {
+    precision = Math.pow(10, precision)
+    return Math.ceil(num * precision) / precision
+}
+
 export const shortState = (A) => {
     let N = [];
 	let I = A.toUpperCase();

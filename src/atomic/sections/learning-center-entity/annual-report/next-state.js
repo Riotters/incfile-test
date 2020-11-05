@@ -54,10 +54,13 @@ const NextStateSection = ({ className, content, id }) => {
                     }
                 }));
 
-                // Fire GTM dataLayer
-                // dataLayer.push({
-                //     'event': 'stateFilingReportSearchCompleted'
-                // });
+                //Fire GTM dataLayer
+                if (typeof window !== 'undefined') {
+                    window.dataLayer = window.dataLayer || [];
+                    window.dataLayer.push({
+                        'event': 'stateFilingReportSearchCompleted'
+                    });
+                }
             }
         });
     }
