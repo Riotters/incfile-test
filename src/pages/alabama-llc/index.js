@@ -25,7 +25,8 @@ function AlabamaIndexPage() {
     
     return (
         <Layout>
-            <SEO title="LLCs in Alabama | Guide to Forming an LLC in Texas" description="Ready to form your Alabama LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
+            <SEO title="Alabama LLCs | Forming an LLC in Alabama"
+                description="Ready to register your AL LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
             <LLCLayout data={dataApi}>
                 <LeftTabPages content={tabPages} nonDIY />
                 <MainPageContent>

@@ -24,7 +24,7 @@ const BusinessNamesPage = () => {
     return (
         <Layout>
             <SEO
-                title="Montana Business Search | How to Name Your TX LLC"
+                title="Montana Business Search | How to Name Your MO LLC"
                 description="Learn what you need to know about naming an LLC in Montana with Incfile's helpful resources. Pick your perfect business name today!"
             />
             <LLCLayout data={dataApi}>

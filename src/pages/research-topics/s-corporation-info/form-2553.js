@@ -20,7 +20,7 @@ import { about, related } from "../../../static/research-topics/c-corporation-in
 
 const HelpCenter = () => (
   <Layout>
-    <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
+    <SEO title="What is the Form 2553 for your business" description="If your business is a C Corporation but you have decided that you would rather file taxes as an S Corporation, you need to notify the IRS in advance by filing the appropriate paperwork. Learn more." />
     <Top imageName="mrs-bulb-help-center-article" imageAlt="Mrs Bulb and with checklist" ovalColor="green">
       <h1>{top.header}</h1>
       <p>{top.text}</p>

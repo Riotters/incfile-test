@@ -24,8 +24,8 @@ const BusinessTaxesPage = () => {
     return (
         <Layout>
             <SEO
-                title="Arizona Business Search | How to Name Your Arizona LLC"
-                description="Learn what you need to know about naming an LLC in Arizona with Incfile's helpful resources. Pick your perfect business name today!"
+                title="Arizona Business Taxes & Sales Tax for LLCs"
+                description="Do you have an Arizona LLC? Learn about the required federal, state and sales taxes you might need to pay. Read more."
             />
             <LLCLayout data={dataApi}>
                 <LeftTabPages content={tabPages} />
