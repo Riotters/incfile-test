@@ -15,6 +15,6 @@ const Wrapper = styled.div`
   }
 `;
 
-const TopButtonsBox = ({ children, mediaXL }) => <Wrapper mediaXL={mediaXL}>{children}</Wrapper>;
+const TopButtonsBox = ({ children, mediaXL, ...rest }) => <Wrapper mediaXL={mediaXL} {...rest}>{children}</Wrapper>;
 
 export default TopButtonsBox;

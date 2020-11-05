@@ -18,7 +18,7 @@ export const about = {
   text2: `Just enter your details in the link below, and we'll let you know what need to do`,
   link: {
     text: `Learn more about compilance requirements`,
-    url: `/`,
+    url: `/compliance-filing-requirement/`,
   },
 };
 
@@ -103,7 +103,7 @@ export const nextStateFiling = {
     buttons: [
       {
         text: `File Your Annual or Biennal Report`,
-        utl: `/`,
+        utl: `${process.env.ORDER_URL}/annual-report.php`,
       },
       {
         text: `Check Another Due Date`,
@@ -150,21 +150,21 @@ export const faq = {
           },
           {
             text: `compliance tool`,
-            url: `/`,
+            url: `/compliance-filing-requirement/`,
           },
           {
             text: ` will tell you what the business administration entity in your state needs. Of course, you may also produce other annual or interim reports for your business shareholders, employees or other stakeholders, but that will generally be defined in your `,
           },
           {
             text: `operating agreement`,
-            url: `/`,
+            url: `/research-topics/llc-info/the-llc-operating-agreement/`,
           },
           {
             text: ` or other `,
           },
           {
             text: `corporate bylawes`,
-            url: `/`,
+            url: `/research-topics/c-corporation-info/what-are-bylaws/`,
           },
         ],
       },
@@ -189,7 +189,7 @@ export const faq = {
           },
           {
             text: `Annual Report filing service.`,
-            url: `/`,
+            url: `/manage-your-company/annual-report/`,
           },
         ],
       },
