@@ -4,7 +4,7 @@ import { Heading } from "../../atoms/typography/heading";
 import { Paragraph } from "../../atoms/typography/paragraph";
 import styled from "styled-components";
 import WhiteBox from "../../atoms/boxes/white-box";
-import CircleSVG from "../../../images/circle-graph.inline.svg"
+import CircleSVG from "../../../images/circle-graph.inline.svg";
 
 const Wrapper = styled(WhiteBox)`
   display: flex;

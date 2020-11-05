@@ -9,7 +9,6 @@ import Container from "../../../container";
 
 const Requirements = styled.section`
   position: relative;
-  padding-top: 104px;
   padding-bottom: 112px;
 
   h2 {
