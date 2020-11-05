@@ -14,6 +14,8 @@ import StarSVG from "../images/icons/star-yellow.inline.svg";
 import { shadow } from "../atomic/atoms/styles/shadows";
 import { color } from "../atomic/atoms/styles/colors";
 import Image from "../atomic/atoms/image/image";
+import { getAggregrateReviews } from '../api/Api';
+import { formatNumber } from '../helpers/utils';
 
 //mrs-review-stars-5481
 
@@ -74,51 +76,61 @@ const FiveStarRow = styled.div`
   }
 `;
 
-const HomePageV3 = () => (
-    <Layout>
-        <SEO title="LLC Filing & Business Formation - Start Your Company Today" description="Start your business today for as little as $0 + state fees. Incfile helps you quickly and easily create your LLC or other business entity. Learn more." />
-        <Top imageName="home-page-v3-top-9458" imageAlt="Start your own company" ovalColor="green" headlineWidth="700" textWidth="700">
-            <h1>{top.header}</h1>
-            <p>{top.text}</p>
-            <Buttonsbox>
-                <Button content={top.button[0]} theme="primary56" arrow />
-            </Buttonsbox>
-            <ItemRow marginTop={32}>
-                <ItemRow align="center">
-                    <ImageWrapper width={42} height={46}>
-                        <Image filename="verified-cart-6601" />
-                    </ImageWrapper>
-                    <ItemColumn>
-                        <FiveStarRow>
-                            <StarSVG />
-                            <StarSVG />
-                            <StarSVG />
-                            <StarSVG />
-                            <StarSVG />
-                        </FiveStarRow>
-                        <div>
-                            <strong>1400</strong>
-                            <span>&nbsp;ratings</span>
-                        </div>
-                    </ItemColumn>
+const HomePageV3 = () => {
+    const [fiveStarsNumber, setFiveStarsNumber] = React.useState(0);
+
+    React.useEffect(() => {
+        getAggregrateReviews().then(data => {
+            setFiveStarsNumber(formatNumber(data['5_star']));
+        })
+    }, []);
+
+    return (
+        <Layout>
+            <SEO title="LLC Filing & Business Formation - Start Your Company Today" description="Start your business today for as little as $0 + state fees. Incfile helps you quickly and easily create your LLC or other business entity. Learn more." />
+            <Top imageName="home-page-v3-top-9458" imageAlt="Start your own company" ovalColor="green" headlineWidth="700" textWidth="700">
+                <h1>{top.header}</h1>
+                <p>{top.text}</p>
+                <Buttonsbox>
+                    <Button content={top.button[0]} theme="primary56" arrow />
+                </Buttonsbox>
+                <ItemRow marginTop={32}>
+                    <ItemRow align="center">
+                        <ImageWrapper width={42} height={46}>
+                            <Image filename="verified-cart-6601" />
+                        </ImageWrapper>
+                        <ItemColumn>
+                            <FiveStarRow>
+                                <StarSVG />
+                                <StarSVG />
+                                <StarSVG />
+                                <StarSVG />
+                                <StarSVG />
+                            </FiveStarRow>
+                            <div>
+                                <strong>{fiveStarsNumber}</strong>
+                                <span>&nbsp;ratings</span>
+                            </div>
+                        </ItemColumn>
+                    </ItemRow>
+                    <ItemRow align="center">
+                        <ImageWrapper width={31} height={45}>
+                            <Image filename="bbb-logo-blue-5493" />
+                        </ImageWrapper>
+                        <ItemColumn align="flex-start">
+                            <div>
+                                <strong>A+</strong>
+                            </div>
+                            <div>Rating</div>
+                        </ItemColumn>
+                    </ItemRow>
                 </ItemRow>
-                <ItemRow align="center">
-                    <ImageWrapper width={31} height={45}>
-                        <Image filename="bbb-logo-blue-5493" />
-                    </ImageWrapper>
-                    <ItemColumn align="flex-start">
-                        <div>
-                            <strong>A+</strong>
-                        </div>
-                        <div>Rating</div>
-                    </ItemColumn>
-                </ItemRow>
-            </ItemRow>
-        </Top>
-        <BusinessFormation content={business_formation} />
-        <SetupYourBusiness content={setup} />
-        <Rocket content={rocket} />
-    </Layout>
-);
+            </Top>
+            <BusinessFormation content={business_formation} />
+            <SetupYourBusiness content={setup} />
+            <Rocket content={rocket} />
+        </Layout>
+    );
+};
 
 export default HomePageV3;

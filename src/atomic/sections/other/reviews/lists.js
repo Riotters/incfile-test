@@ -16,6 +16,8 @@ import AbsoluteShapCure from '../../../elements/absolute-shape-curve-e';
 import Whitebox from "../../../atoms/boxes/white-box";
 import { Paragraph } from "../../../atoms/typography/paragraph";
 import Drop from '../../../../components/form/dropdown';
+import { getAggregrateReviews, getReviews } from '../../../../api/Api';
+import { formatNumber, roundUp } from '../../../../helpers/utils';
 
 const Wrapper = styled.div`
     position: relative;
@@ -110,7 +112,8 @@ const optionsSort = [
 ];
 
 const ListReviews = ({ content }) => {
-    const [reviews, setReviews] = useState(content);
+    const [reviews, setReviews] = useState([]);
+    const [loading, setLoading] = useState(true);
 
     const handleSortingReviews = (option) => {
         let value = option.value;
@@ -138,6 +141,10 @@ const ListReviews = ({ content }) => {
     }
 
     const formatDate = (date) => {
+        if (!date) {
+            return null;
+        }
+        
         const myDate = new Date(date);
         const newDate = new Intl.DateTimeFormat('en-US', {
             year: "numeric",
@@ -148,62 +155,89 @@ const ListReviews = ({ content }) => {
         return newDate;
     }
 
+    React.useEffect(() => {
+        getReviews().then(data => {
+            console.log('HH', data);
+            const res = [];
+
+            Object.keys(data).forEach(key => {
+                const vKey = data[key];
+                
+                return res.push({
+                    rate: vKey.overall,
+                    verified: true,
+                    author: vKey.display_name,
+                    date: vKey.review_date,
+                    address: vKey.location,
+                    text: vKey.comments,
+                });
+            })
+            
+            setReviews(res);
+            setLoading(!loading);
+        })
+    }, []);
+
     return (
         <Wrapper>
             <Oval className="oval" height="420" width="460" top="7" left="0" y="-20">
-            <OvalSVG />
+                <OvalSVG />
             </Oval>
 
             <Oval className="oval" height="570" width="570" bottom="0" right="0" y="20">
-            <OvalSVG2 />
+                <OvalSVG2 />
             </Oval>
             
-            <Container>
-                <RelativeElement>
-                    <AbsoluteShapCure rotate={0} right="-25px" top="-25px">
-                        <ShapeCurve color={color.blue} />
-                    </AbsoluteShapCure>
+            {!loading && (
+                <Container>
+                    <RelativeElement>
+                        <AbsoluteShapCure rotate={0} right="-25px" top="-25px">
+                            <ShapeCurve color={color.blue} />
+                        </AbsoluteShapCure>
 
-                    {reviews.map(item => (
-                        <Fragment>
-                            <Whitebox className="review__item" flex style={{ marginBottom: `8px` }}>
-                                <div className="review__item-top">
-                                    <div>
-                                        {Array(...Array(item.rate)).map((v, i) => <span><StarSVG /></span>)}
+                        {reviews.map((item, key) => (
+                            <Fragment key={key}>
+                                <Whitebox className="review__item" flex style={{ marginBottom: `8px` }}>
+                                    <div className="review__item-top">
+                                        <div>
+                                            {Array(...Array(item.rate)).map((v, i) => <span><StarSVG /></span>)}
+                                        </div>
+                                        {item.verified && (
+                                            <div className="verified">VERIFIED BUYER</div>
+                                        )}
                                     </div>
-                                    {item.verified && (
-                                        <div className="verified">VERIFIED BUYER</div>
-                                    )}        
-                                </div>
-                                <div className="review__item-date-author">
-                                    {formatDate(item.date)} by {item.author} ({item.address})
-                                </div>
-                                <Paragraph big mixed={true} bottomMargin={0}>"{parse(item.text)}"</Paragraph>
-                            </Whitebox>
-                        </Fragment>
-                    ))}
+                                    <div className="review__item-date-author">
+                                        {formatDate(item.date)} by {item.author} ({item.address})
+                                    </div>
+                                    {typeof item.text != 'undefined' && item.text &&
+                                        <Paragraph big mixed={true} bottomMargin={0}>"{parse(item.text)}"</Paragraph>
+                                    }
+                                </Whitebox>
+                            </Fragment>
+                        ))}
 
-                    <Footer>
-                        <div className="left">
-                            <Pagination>
-                                <Link to="#" className="active">1</Link>
-                                <Link to="#">2</Link>
-                                <Link to="#">3</Link>
-                                <Link to="#" className="next__page">{`>`}</Link>
-                            </Pagination>
+                        <Footer>
+                            <div className="left">
+                                <Pagination>
+                                    <Link to="#" className="active">1</Link>
+                                    <Link to="#">2</Link>
+                                    <Link to="#">3</Link>
+                                    <Link to="#" className="next__page">{`>`}</Link>
+                                </Pagination>
 
-                            <Drop options={optionsSort} placeholder="Featured Reviews" onChange = {handleSortingReviews}/>
-                        </div>
+                                <Drop options={optionsSort} placeholder="Featured Reviews" onChange={handleSortingReviews} />
+                            </div>
 
-                        <div className="right">
-                            <Image filename="widgetfooter-darklogo-eng" alt=""/>
-                        </div>
-                    </Footer>
+                            <div className="right">
+                                <Image filename="widgetfooter-darklogo-eng" alt="" />
+                            </div>
+                        </Footer>
 
-                </RelativeElement>
-            </Container>
+                    </RelativeElement>
+                </Container>
+            )}
         </Wrapper>
-    )
+    );
 };
 
 export default ListReviews;

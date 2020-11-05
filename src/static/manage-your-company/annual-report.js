@@ -84,7 +84,7 @@ export const help = {
   header2: `Save your time. We'll handle the paperwork.`,
   text: `If you would like to use our services to facilitate the filing of your annual report please place the order and a representative from Incfile will contact you to obtain specific information required to complete and file the annual report in your state of formation.`,
   card: {
-    price: `88`,
+    price: `99`,
     fee: `+ $10 State Fee`,
     button: {
       text: `Order Now`,

@@ -1,8 +1,3 @@
-// import BikeThumb from '../images/bike.jpg';
-// import NewsPaperThumb from '../images/newspaper.jpg';
-// import ChairThumb from '../images/chair-01.jpg';
-// import WaveThumb from '../images/wave-01.jpg';
-
 export const existing = {
   header: `Using your Client Dashboard`,
   text: `Your client dashboard will become the central document repository and management tool that will allow you to actively
@@ -10,7 +5,7 @@ export const existing = {
     with your order. Below are some helpful links provided to orient you with the features of the client dashboard.`,
   button: {
     text: `Check my order status`,
-    url: `/dashboard`,
+    url: `${process.env.ORDER_URL}/dashboard`,
   },
   phone: {
     phone1: `844.830.8267`,

@@ -7,6 +7,7 @@ import Label from "./form/label";
 import Dropdown from "./form/dropdown";
 import Button from "../atomic/molecules/buttons/button";
 import { AnnualReportState } from '../helpers/annual-report-states';
+import { shortState } from '../helpers/utils';
 
 const Wrapper = styled.div`
   display: flex;
@@ -60,8 +61,16 @@ const Wrapper = styled.div`
 `;
 
 const CertificateCard = ({ className, headline, content, image, dropdownOnePlaceholder, dropdownTwoPlaceholder, dropdownTwoOptions, dropdownThreePlaceholder, dropdownThreeOptions, priceColumn, fields, orderPage }) => {
-    const [extraFee, setExtraFee] = useState(0);
-    const [showExtraFee, setShowExtraFee] = useState(false);
+    let defaultExtraFee = 'Plus State Filing Fees';
+    if (orderPage === '/trademark.php') {
+        defaultExtraFee = '+ $275 Federal Fee';
+    }
+    if (orderPage === '/ein-form.php') {
+        defaultExtraFee = '';
+    }
+
+    const [extraFee, setExtraFee] = useState(defaultExtraFee);
+    const [showExtraFee, setShowExtraFee] = useState(true);
     const [entityTypeSelected, setEntityTypeSelected] = useState({});
     const [entityState, setEntityState] = useState('');
     const [compState, setCompState] = useState('');
@@ -85,9 +94,13 @@ const CertificateCard = ({ className, headline, content, image, dropdownOnePlace
     }
 
     const getPrice = (option) => {
+        if (orderPage === '/foreign-qual.php') {
+            return;
+        }
+
         if (!option) {
-            setShowExtraFee(false);
-            setExtraFee(0);
+            //setShowExtraFee(false);
+            setExtraFee('Plus State Filing Fees');
             return;
         }
 
@@ -102,17 +115,32 @@ const CertificateCard = ({ className, headline, content, image, dropdownOnePlace
 
         fetchData(endpoint)
         .then(data => {
-            setShowExtraFee(true);
-            setExtraFee(data[priceColumnField]);
+            //setShowExtraFee(true);
+            setExtraFee(`+$${data[priceColumnField]} State Fee`);
         });
     }
 
     const checkForeignQualificateState = (option) => {
-        if (option.value === entityState) {
+        let stateOfFQ = option.value;
+
+        if (stateOfFQ === entityState) {
             alert(`The State of Incorporation and State of Foreign Qualification should not same`);
+            setExtraFee('Plus State Filing Fees');
             setCompState('');
         } else {
-            setCompState(option.value);
+            setCompState(stateOfFQ);
+            let priceColumnField = `${priceColumn}${entityTypeSelected.value}`;
+            
+            let endpoint = `${process.env.INCFILE_API_URL}/get-price-by-state/?state=${stateOfFQ}`;
+            if (fields) {
+                endpoint += `&_fields=${fields}`;
+            }
+
+            fetchData(endpoint)
+            .then(data => {
+                //setShowExtraFee(true);
+                setExtraFee(`+$${data[priceColumnField]} ${shortState(stateOfFQ)} State Fee`);
+            });
         }
     }
 
@@ -145,19 +173,30 @@ const CertificateCard = ({ className, headline, content, image, dropdownOnePlace
             {dropdownTwoPlaceholder && (
                 <Label className="label">
                     {orderPage === '/foreign-qual.php' ? 'State of Formation' : 'Select State'}
-                    <Dropdown className="dropdown" placeholder={dropdownTwoPlaceholder} options={stateFormationOptions} onChange={getPrice} />
+                    <Dropdown
+                        className="dropdown"
+                        placeholder={dropdownTwoPlaceholder}
+                        options={stateFormationOptions}
+                        onChange={getPrice}
+                    />
                 </Label>
             )}
             {dropdownThreePlaceholder && (
                 <Label className="label">
                     State of Foreign Qualification
-                    <Dropdown className="dropdown" defaultSelected={compState} placeholder={dropdownThreePlaceholder} options={dropdownThreeOptions} onChange={checkForeignQualificateState} />
+                    <Dropdown
+                        className="dropdown"
+                        defaultSelected={compState}
+                        placeholder={dropdownThreePlaceholder}
+                        options={dropdownThreeOptions}
+                        onChange={checkForeignQualificateState}
+                    />
                 </Label>
             )}
             {content && (
                 <>
                     {content.price && <span className="price">${content.price}</span>}
-                    {showExtraFee && <span className="fee">+${extraFee} State Fee</span>}
+                    {<span className="fee">{extraFee}</span>}
                 </>
             )}
             <Button content={content.button} theme="primary56" margin="40px 0 0 0" arrow onClick={handleOrderNow} />

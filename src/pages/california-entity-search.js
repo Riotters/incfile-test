@@ -25,7 +25,7 @@ const GeneralResearchTopics = () => {
                 <h1>{top.header}</h1>
                 <p>{top.text}</p>
                 <Buttonsbox>
-                    <Button onClick={e => scrollToElement(e, 'js-business-name-search-form')} content={top.button[0]} theme="primary56" arrow />
+                    <Button onClick={e => scrollToElement(e, 'js-business-name-search-form')} content={top.button[0]} theme="primary56" />
                 </Buttonsbox>
             </Top>
             <About content={about} />

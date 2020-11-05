@@ -9,6 +9,8 @@ import OvalSVG from "../../../../images/ovals/top-right-transparent-dark-blue.in
 import FiveStarSVG from "../../../../images/group-5-stars.inline.svg"
 import ShapeCurve from "../../../atoms/shapes/curve";
 import AbsoluteShapCure from '../../../elements/absolute-shape-curve-e';
+import { getAggregrateReviews } from '../../../../api/Api';
+import { formatNumber, roundUp } from '../../../../helpers/utils';
 
 const Wrapper = styled.div`
     padding: 80px 0;
@@ -130,6 +132,53 @@ const Item = styled.div`
 `
 
 function Top({ content }) {
+    const [statistics, setStatistics] = React.useState({
+        average: `0.0`,
+        stars: [],
+        percentFourOrFive: 0,
+    });
+
+    React.useEffect(() => {
+        getAggregrateReviews().then(data => {
+            let totalReview = data.total_reviews;
+            let totalFourAndFiveStars = data['4_star'] + data['5_star'];
+            let starsReview = [
+                {
+                    name: `5 star`,
+                    total: formatNumber(data['5_star']),
+                    percent: Math.ceil( (data['5_star'] / totalReview) * 100 ),
+                },
+                {
+                    name: `4 star`,
+                    total: formatNumber(data['4_star']),
+                    percent: Math.ceil( (data['4_star'] / totalReview) * 100 ),
+                },
+                {
+                    name: `3 star`,
+                    total: formatNumber(data['3_star']),
+                    percent: Math.ceil( (data['3_star'] / totalReview) * 100 ),
+                },
+                {
+                    name: `2 star`,
+                    total: formatNumber(data['2_star']),
+                    percent: Math.ceil( (data['2_star'] / totalReview) * 100 ),
+                },
+                {
+                    name: `1 star`,
+                    total: formatNumber(data['1_star']),
+                    percent: Math.ceil( (data['1_star'] / totalReview) * 100 ),
+                },
+            ];
+
+            setStatistics((prevState) => ({
+                ...prevState,
+                average: roundUp(data.average_rating, 1),
+                stars: starsReview,
+                percentFourOrFive: Math.ceil( (totalFourAndFiveStars / totalReview) * 100 )
+            }));
+        })
+    }, []);
+
     return (
         <Wrapper>
             <Oval className="oval" height="243" width="330" top="20" right="0" y="-20">
@@ -149,11 +198,11 @@ function Top({ content }) {
                         <ShapeCurve color={color.green2} />
                     </AbsoluteShapCure>
                     <Box bgColor="#f2f8f3" className="box__1">
-                        <p>{content.box1.text1}</p>
+                        <p>{statistics.average}</p>
                         <p>{content.box1.text2}</p>
                     </Box>
                     <Box bgColor={color.blue3} className="box__2">
-                        {content.box2.map(item => (
+                        {statistics.stars.map(item => (
                             <Item width={item.percent}>
                                 <span>{item.name}</span>
                                 <span width={item.percent}></span>
@@ -166,7 +215,7 @@ function Top({ content }) {
                         <p><FiveStarSVG/></p>
                     </Box>
                     <Box bgColor={color.blue3} className="box__4">
-                        <p>{content.box4.text1}</p>
+                        <p>{`${statistics.percentFourOrFive}%`}</p>
                         <p>{content.box4.text2}</p>
                     </Box>
                 </Grid>

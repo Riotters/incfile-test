@@ -74,7 +74,7 @@ const HelpSection = ({ className, content }) => (
             <Oval2SVG />
         </Oval>
         <ContentObject className="help" headlineWidth="450" 
-            object={<Card className="card" content={content.card} headline="Rgister a Trademark" />}
+            object={<Card className="card" content={content.card} orderPage = "/trademark.php" headline="Rgister a Trademark" />}
         >
             <TextWrapper>
                 <Heading size="2" bottomMargin="56" maxWidth="460">{content.header}</Heading>
