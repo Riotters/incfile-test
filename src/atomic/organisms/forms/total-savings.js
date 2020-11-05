@@ -77,13 +77,14 @@ const SpaceBetween = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  padding-top: 16px;
 
   h5 {
     padding-bottom: 8px;
   }
 
   &:last-child {
-    padding-top: 16px;
+    padding-top: 24px;
     align-items: center;
   }
 `;
