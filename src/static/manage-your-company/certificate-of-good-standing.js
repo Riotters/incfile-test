@@ -75,7 +75,7 @@ export const help = {
         `${process.env.ORDER_URL}/cert-good-standing.php`,
     },
     card: {
-        price: `88`,
+        price: `49`,
         fee: `+ $10 State Fee`,
         button: {
             text: `Order Now`,

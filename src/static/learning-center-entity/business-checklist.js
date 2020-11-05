@@ -21,51 +21,16 @@ export const top = {
     },
   ],
 };
-export const thanks_form = {
-  header: "Thank you",
-  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis lacus vitae mi rutrum eleifend nec in nisi. Pellentesque ac neque fringilla, vehicula augue vitae, convallis libero.",
-  button: {
-    text: "Close",
-    url: "#",
-  },
-};
 
-export const form = {
-  header: "Download The Complete Starting a Business Checklist",
-  text: "From developing your business idea to measuring success, our free guide has all the info you need to get your business off the ground.",
-  button: {
-    text: "Download now",
-    url: "#",
-  },
-  fields: [
-    {
-      label: "Email",
-      type: "email",
-      placeholder: "",
+export const hsForm = {
+    header: "Download The Complete Starting a Business Checklist",
+    text: "From developing your business idea to measuring success, our free guide has all the info you need to get your business off the ground.",
+    hs_form_id: `d077bdb7-f266-4cc6-b69f-a8f4b53acf21`,
+    button: {
+      text: "Download now",
+      url: "/",
     },
-    {
-      label: "First Name",
-      type: "text",
-      placeholder: "",
-    },
-    {
-      label: "Last Name",
-      type: "text",
-      placeholder: "",
-    },
-    {
-      label: "Phone number",
-      type: "text",
-      placeholder: "",
-    },
-    {
-      label: "I want to...",
-      type: "select",
-      placeholder: "Please select",
-      options: ["Start a Business Soon", "Start a Business Now", "Grow a Business"],
-    },
-  ],
-};
+  };
 
 export const checks = {
   checklists: [
