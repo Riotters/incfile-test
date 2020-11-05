@@ -134,7 +134,7 @@ export const ins_and_outs = {
         <br />
         The tax treatment of S Corporations is different from LLCs, in that the company owners can choose to pay the members a salary (subject to payroll taxes) and also assign additional income to be treated as a distribution, which is not subject to payroll or self-employment taxes. This gives the owners some flexibility in how they pay themselves from the company’s profits, as well as reducing payroll taxes.`,
         list: [
-          `Filing as an S Corporation requires you to <a href="/research-topics/c-corporation-info/what-is-the-form-2553/">file Form 2553: Entity Classification Election.</a>`,
+          `Filing as an S Corporation requires you to <a href="/research-topics/c-corporation-info/form-2553/">file Form 2553: Entity Classification Election.</a>`,
           `You will also need to file an 1120-S: U.S. Income Tax Return for an S Corporation or an 1120-A, the short version of this form.`,
           `Review how the S Corporation can considerably reduce your self-employment tax obligations with our <a href="/s-corporation-tax-calculator/">S Corporation
           Tax Calculator.</a>`,

@@ -32,7 +32,7 @@ const GetFormationKit = styled.section`
   }
 
   .text-image {
-    .curve-svg{
+    .curve-svg {
       svg {
         transform: rotate(-90deg);
       }
@@ -63,14 +63,6 @@ const GetFormationKit = styled.section`
   .content-center {
     padding-top: 88px;
 
-    h2 {
-      text-align: center;
-
-      @media (min-width: 992px) {
-        text-align: left;
-      }
-    }
-
     h3 {
       text-align: center;
       padding: 96px 0 32px;
@@ -86,8 +78,8 @@ const GetFormationKitSection = ({ className, content }) => (
     <Oval className="oval" height="720" width="720" top="35" left="0">
       <Oval2SVG />
     </Oval>
-    <TextImage className="text-image" image="manage-your-company" contentWidth="550" contentPadding="85">
-      <Curve top="-45" left="-90" color={color.green1} className="curve-svg">
+    <TextImage className="text-image" image="standard-kit-5602" contentWidth="550" contentPadding="85">
+      <Curve top="25" left="-90" color={color.green1} className="curve-svg">
         <CurveSVG />
       </Curve>
       <Heading size="2">{content.header}</Heading>
@@ -97,7 +89,7 @@ const GetFormationKitSection = ({ className, content }) => (
       <Button content={content.button} theme="primary56" marginSM="0 auto" marginLG="0 auto 0 0" arrow />
     </TextImage>
     <ContentCenter className="content-center">
-      <Heading size="2" bottomMargin="88" maxWidth="770">
+      <Heading size="2" maxWidth="770" bottomMargin="0">
         {content.header2}
       </Heading>
       <Accordion content={content.faq} />

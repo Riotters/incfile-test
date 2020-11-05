@@ -18,7 +18,7 @@ const Contact = () => (
     <Top imageName="hero-contact-existing-clients" heightSM="75vh" ovalColor="yellow" alt="existing clients">
       <h1>We're Here To Help</h1>
       <p>Phone support available Monday - Friday from 9am to 6pm CST or submit a question and we'll respond as quickly as possible.</p>
-      <Button to="/" theme="primary56" width="250px" arrow>
+      <Button to="/contact/existing-clients/" theme="primary56" width="250px" arrow>
         Contact our support
       </Button>
     </Top>

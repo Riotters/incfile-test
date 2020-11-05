@@ -25,12 +25,16 @@ const IndustrySection = ({ className, content }) => (
     </Oval>
     <HeadingCenter headline={content.header} headlineWidth="700" bottomMargin="80" />
     <ContentCenter contentWidth="770">
-      <Paragraph bottomMargin="64">{content.text}</Paragraph>
+      <Paragraph big bottomMargin="64">
+        {content.text}
+      </Paragraph>
       <RatingRow topMargin="0">
         <CartBlock />
         <RatingBlock />
       </RatingRow>
-      <Paragraph topMargin="64">{content.text2}</Paragraph>
+      <Paragraph big topMargin="64">
+        {content.text2}
+      </Paragraph>
     </ContentCenter>
   </Industry>
 );

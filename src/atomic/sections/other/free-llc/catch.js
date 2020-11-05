@@ -36,14 +36,14 @@ const CatchSection = ({ className, content }) => (
     </Oval>
     <HeadingCenter headline={content.header} headlineWidth="700" bottomMargin="80" />
     <ContentCenter contentWidth="970">
-      <Paragraph maxWidth="770" bottomMargin="64">
+      <Paragraph big maxWidth="770" bottomMargin="64">
         {content.text}
       </Paragraph>
       <Table content={content.table} />
-      <Paragraph maxWidth="770" topMargin="64">
+      <Paragraph big maxWidth="770" topMargin="64">
         {content.text2}
       </Paragraph>
-      <Paragraph maxWidth="770" topMargin="64">
+      <Paragraph big maxWidth="770" topMargin="64">
         {content.text3}
       </Paragraph>
       <Button content={content.button} theme="primary56" arrow />

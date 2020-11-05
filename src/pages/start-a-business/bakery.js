@@ -405,7 +405,7 @@ const Bakery = () => (
           </CountingTextBoxed>
 
           <Paragraph big mixed={true} style={{ marginTop: "50px" }}>
-            We’ve got the perfect <Link to="/">guide to writing your business plan.</Link>
+            We’ve got the perfect <Link to="/blog/post/keys-successful-business-plan/">guide to writing your business plan.</Link>
           </Paragraph>
         </CenterBox>
       </Container>
@@ -438,12 +438,7 @@ const Bakery = () => (
             widthUnit="%"
           >
             <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-              <FlexLink to="/">
-                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                  <ArrowSVG />
-                </IconCircle>
-                Sole Proprietorship
-              </FlexLink>
+              Sole Proprietorship
             </Paragraph>
 
             <Paragraph big>If you don’t choose to form a legal business entity for your bakery business, you will be a sole proprietor by default. This won’t give you the legal protections you need, so we do not recommend this.</Paragraph>
@@ -464,12 +459,7 @@ const Bakery = () => (
             widthUnit="%"
           >
             <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-              <FlexLink to="/">
-                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                  <ArrowSVG />
-                </IconCircle>
-                Partnership
-              </FlexLink>
+              Partnership
             </Paragraph>
 
             <Paragraph big>This is a type of business that is formed when two or more people work together without creating a more formal business entity. Like a sole proprietorship, it may not give you all the protections your bakery business may need.’</Paragraph>
@@ -490,12 +480,7 @@ const Bakery = () => (
             widthUnit="%"
           >
             <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-              <FlexLink to="/">
-                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                  <ArrowSVG />
-                </IconCircle>
-                Limited Liability Company or LLC
-              </FlexLink>
+              Limited Liability Company or LLC
             </Paragraph>
 
             <Paragraph big>The most common type of business entity. An LLC is fast, simple and inexpensive to setup and maintain. It protects your personal finances and assets and is a great way to start your bakery business.</Paragraph>
@@ -516,12 +501,7 @@ const Bakery = () => (
             widthUnit="%"
           >
             <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-              <FlexLink to="/">
-                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                  <ArrowSVG />
-                </IconCircle>
-                S Corporation
-              </FlexLink>
+              S Corporation
             </Paragraph>
 
             <Paragraph big>This is a more complex type of business and isn't generally recommended for smaller organization.</Paragraph>
@@ -542,23 +522,22 @@ const Bakery = () => (
             widthUnit="%"
           >
             <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-              <FlexLink to="/">
-                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                  <ArrowSVG />
-                </IconCircle>
-                C Corporation
-              </FlexLink>
+              C Corporation
             </Paragraph>
 
             <Paragraph big>These are the largest and most complex types of businesses and are far more than the average entrepreneur or business owner will need.</Paragraph>
           </TextBlockWithImage>
 
           <Paragraph big style={{ paddingTop: "48px", paddingBottom: 0 }} mixed={true}>
-            For more information on the advantages and disadvantages of different types of businesses, please <Link to="/">see our in-depth guide</Link> on business entities. If you still have questions, <Link to="/">we’ve answered them to help you choose the right business structure</Link>.
+            For more information on the advantages and disadvantages of different types of businesses, <Link to="/business-entity-comparison/">please see our in-depth guide</Link>. If you’ve still got questions,{" "}
+            <a href="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/" target="_blank" rel="noopener noreferrer">
+              we’ve answered them to help you choose the right business structure
+            </a>{" "}
+            for your daycare business.
           </Paragraph>
           <Paragraph big style={{ paddingTop: "48px", paddingBottom: 0 }} mixed={true}>
-            In most cases our recommendation would be to create an LLC. We have a <Link to="/">complete guide to everything you need to do</Link>, and we can set one up for your T-shirt business. <Link to="/">LLC formation does vary from state to state</Link>, but we’ve got you covered, wherever you
-            are.
+            In most cases our recommendation would be to create an LLC. We have a <Link to="/form-an-llc/">complete guide to everything you need to do</Link>, and we can set one up for your T-shirt business. <Link to="/llc-state-information/">LLC formation does vary from state to state</Link>, but
+            we’ve got you covered, wherever you are.
           </Paragraph>
 
           <Button theme="primary48" width="365px" arrow content={{ url: `${process.env.ORDER_URL}/form-order-now.php`, text: `Start your business with us, today!` }} />
@@ -752,12 +731,6 @@ const Oval7 = styled.div`
   @media (min-width: 720px) {
     width: 720px;
   }
-`;
-
-const FlexLink = styled(Link)`
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
 `;
 
 export default Bakery;

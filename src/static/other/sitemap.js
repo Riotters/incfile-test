@@ -26,7 +26,7 @@ export const list = {
                 },
                 {
                   text: `Legal Disclaimer`,
-                  url: `/disclaimer/`,
+                  url: `/legal-disclaimer/`,
                 },
                 {
                   text: `Incfile Incorporate`,
@@ -260,7 +260,7 @@ export const list = {
               links: [
                 {
                   text: `Renew Registered Agent`,
-                  url: `/dashboard/`,
+                  url: `/dashboard/`, //file doesn't exist
                 },
                 {
                   text: `State Filing Times`,
@@ -300,7 +300,7 @@ export const list = {
                 },
                 {
                   text: `Check Order Status`,
-                  url: `/dashboard/`,
+                  url: `/dashboard/`, //file doesn't exist
                 },
                 {
                   text: `Entity Comparison Chart`,
@@ -397,7 +397,7 @@ export const list = {
       header: `Help Center`,
       rows: [
         {
-          header: `General Information`,
+          header: `General Information`, //files doesn't exist
           columns: [
             {
               links: [
@@ -407,11 +407,11 @@ export const list = {
                 },
                 {
                   text: `What is a Corporate Seal?`,
-                  url: `/research-topics/general-research-topics/what-is-a-corporate-seal/`,
+                  url: `/research-topics/general-research-topics/corp-seal/`,
                 },
                 {
                   text: `Does the designator “LLC” or “Inc.” always need to be included in your companies name?`,
-                  url: `/research-topics/general-research-topics/does-the-designator-llc-or-inc-always-need-to-be-included-in-your-companies-name/`,
+                  url: `/research-topics/general-research-topics/llc-inc-designator-companies-name/`,
                 },
               ],
             },
@@ -419,15 +419,15 @@ export const list = {
               links: [
                 {
                   text: `Does Incfile have a Discount or Coupon Code?`,
-                  url: `/research-topics/general-research-topics/does-incfile-have-a-discount-or-coupon-code/`,
+                  url: `/research-topics/general-research-topics/incfile-discount-coupon/`,
                 },
                 {
                   text: `Which entity offers the best tax advantages?`,
-                  url: `/research-topics/general-research-topics/which-entity-offers-the-best-tax-advantages/`,
+                  url: `/research-topics/general-research-topics/tax-advantages/`,
                 },
                 {
                   text: `What is the main function of the Registered Agent?`,
-                  url: `/research-topics/general-research-topics/what-is-the-main-function-of-the-registered-agent/`,
+                  url: `/research-topics/general-research-topics/registered-agent-function/`,
                 },
               ],
             },
@@ -435,32 +435,31 @@ export const list = {
               links: [
                 {
                   text: `What steps do I need to take to ensure that my entity remains compliant?`,
-                  url: `/research-topics/general-research-topics/what-steps-do-i-need-to-take-to-ensure-that-my-entity-remains-compliant/`,
+                  url: `/research-topics/general-research-topics/entity-remains-compliant/`,
                 },
                 {
                   text: `Which entity type should I choose?`,
-                  url: `/research-topics/general-research-topics/which-entity-type-should-i-choose/`,
+                  url: `/research-topics/general-research-topics/choosing-entity-type/`,
                 },
                 {
                   text: `What is an LLC (Limited Liability Company)?`,
-                  url: `/research-topics/general-research-topics/what-is-an-llc-limited-liability-company/`,
+                  url: `/research-topics/general-research-topics/what-is-an-llc/`,
                 },
               ],
             },
             {
               links: [
                 {
-                  text: `
-                  LLC and Corporation Ongoing Compliance Requirements`,
-                  url: `/research-topics/general-research-topics/llc-and-corporation-ongoing-compliance-requirements/`,
+                  text: `LLC and Corporation Ongoing Compliance Requirements`,
+                  url: `/research-topics/general-research-topics/llc-and-corporation-requirements/`,
                 },
                 {
                   text: `What is a Nonprofit Corporation?`,
-                  url: `/research-topics/general-research-topics/what-is-a-nonprofit-corporation/`,
+                  url: `/research-topics/general-research-topics/what-is-a-nonprofit/`,
                 },
                 {
                   text: `Should I assume that if I form an LLC or incorporate that no one else can use the same name?`,
-                  url: `/research-topics/general-research-topics/should-i-assume-that-if-i-form-an-llc-or-incorporate-that-no-one-else-can-use-the-same-name/`,
+                  url: `/research-topics/general-research-topics/llc-incorporate-name/`,
                 },
               ],
             },
@@ -468,19 +467,19 @@ export const list = {
               links: [
                 {
                   text: `Does Forming an LLC (Limited Liability Company) or Corporation Require an Attorney?`,
-                  url: `/research-topics/general-research-topics/does-forming-an-llc-limited-liability-company-or-corporation-require-an-attorney/`,
+                  url: `/research-topics/general-research-topics/require-an-attorney/`,
                 },
                 {
                   text: `In Which State Should I Form my LLC or Corporation?`,
-                  url: `/research-topics/general-research-topics/in-which-state-should-i-form-my-llc-or-corporation/`,
+                  url: `/research-topics/general-research-topics/forming-llc-or-corp/`,
                 },
                 {
                   text: `What is a Publication Requirement?`,
-                  url: `/research-topics/general-research-topics/what-is-a-publication-requirement/`,
+                  url: `/research-topics/general-research-topics/publication-requirement/`,
                 },
                 {
                   text: `What is the Customized Corporate/LLC Kit?`,
-                  url: `/research-topics/general-research-topics/what-is-the-customized-corporatellc-kit/`,
+                  url: `/research-topics/general-research-topics/customized-corp-llc-kit/`,
                 },
               ],
             },
@@ -493,15 +492,15 @@ export const list = {
               links: [
                 {
                   text: `What Does LLC Mean?`,
-                  url: `/research-topics/llc-info/what-does-llc-mean/`,
+                  url: `/research-topics/llc-info/llc-meaning/`,
                 },
                 {
                   text: `Can another business entity be a member of an LLC?`,
-                  url: `/research-topics/llc-info/can-another-business-entity-be-a-member-of-an-llc/`,
+                  url: `/research-topics/llc-info/llc-business-entity-member/`,
                 },
                 {
                   text: `Why it’s important for the members on an LLC to have an operating agreement in place?`,
-                  url: `/research-topics/llc-info/why-its-important-for-the-members-on-an-llc-to-have-an-operating-agreement-in-place/`,
+                  url: `/research-topics/llc-info/llc-members-operating-agreement/`,
                 },
               ],
             },
@@ -509,15 +508,15 @@ export const list = {
               links: [
                 {
                   text: `Can a Limited Liability Company (LLC) be taxed as an S Corporation?`,
-                  url: `/research-topics/llc-info/can-a-limited-liability-company-llc-be-taxed-as-an-s-corporation/`,
+                  url: `/research-topics/llc-info/llc-taxed-as-an-s-corp/`,
                 },
                 {
                   text: `Which entity offers the best tax advantages?`,
-                  url: `/research-topics/llc-info/which-entity-offers-the-best-tax-advantages/`,
+                  url: `/research-topics/llc-info/tax-advantages/`,
                 },
                 {
                   text: `Which entity type should I choose?`,
-                  url: `/research-topics/llc-info/which-entity-type-should-i-choose/`,
+                  url: `/research-topics/llc-info/choosing-entity-type/`,
                 },
               ],
             },
@@ -525,7 +524,7 @@ export const list = {
               links: [
                 {
                   text: `Is an LLC the best fit for your entity?`,
-                  url: `/research-topics/llc-info/is-an-llc-the-best-fit-for-your-entity/`,
+                  url: `/research-topics/llc-info/llc-for-your-entity/`,
                 },
                 {
                   text: `LLC vs. S Corporation`,
@@ -533,68 +532,68 @@ export const list = {
                 },
                 {
                   text: `The LLC Operating Agreement`,
-                  url: `/research-topics/llc-info/the-llc-operating-agreement/`,
+                  url: `/research-topics/llc-info/llc-operating-agreement/`,
                 },
               ],
             },
             {
-                links: [
-                  {
-                    text: `The Benefits of Forming an LLC`,
-                    url: `/research-topics/llc-info/the-benefits-of-forming-an-llc/`,
-                  },
-                  {
-                    text: `What is an LLC (Limited Liability Company)?`,
-                    url: `/research-topics/llc-info/what-is-an-llc-limited-liability-company/`,
-                  },
-                  {
-                    text: `LLC vs. C Corporation`,
-                    url: `/research-topics/llc-info/llc-vs-c-corporation/`,
-                  },
-                ],
-              },
-              {
-                links: [
-                  {
-                    text: `Can I Form an LLC with just one Member?`,
-                    url: `/research-topics/llc-info/can-i-form-an-llc-with-just-one-member/`,
-                  },
-                  {
-                    text: `LLCs vs C-Corporation: Which Is Best for Your Business?`,
-                    url: `/research-topics/llc-info/llcs-vs-c-corporation-which-is-best-for-your-business/`,
-                  },
-                  {
-                    text: `What is the process involved in changing the name of an LLC?`,
-                    url: `/research-topics/llc-info/what-is-the-process-involved-in-changing-the-name-of-an-llc/`,
-                  },
-                ],
-              },
-              {
-                links: [
-                  {
-                    text: `Can an LLC be formed without listing the member on the articles of organization?`,
-                    url: `/research-topics/llc-info/can-an-llc-or-formed-without-listing-the-members-on-on-the-articles-of-organization/`,
-                  },
-                  {
-                    text: `Are Non-U.S. Residents Allowed to Own a Corporation or LLC?`,
-                    url: `/research-topics/llc-info/are-non-u-s-residents-allowed-to-own-a-corporation-or-llc/`,
-                  },
-                  {
-                    text: `Does Forming an LLC (Limited Liability Company) or Corporation Require an Attorney?`,
-                    url: `/research-topics/llc-info/does-forming-an-llc-limited-liability-company-or-corporation-require-an-attorney/`,
-                  },
-                ],
-              },
-              {
-                links: [
-                  {
-                    text: `What is a Publication Requirement?`,
-                    url: `/research-topics/llc-info/what-is-a-publication-requirement/`,
-                  },
-                  {
-                    text: `What is the Customized Corporate/LLC Kit?`,
-                    url: `/research-topics/llc-info/what-is-the-customized-corporatellc-kit/`,
-                  },
+              links: [
+                {
+                  text: `The Benefits of Forming an LLC`,
+                  url: `/research-topics/llc-info/forming-llc-benefits/`,
+                },
+                {
+                  text: `What is an LLC (Limited Liability Company)?`,
+                  url: `/research-topics/llc-info/what-is-an-llc/`,
+                },
+                {
+                  text: `LLC vs. C Corporation`,
+                  url: `/research-topics/llc-info/llc-vs-c-corporation/`,
+                },
+              ],
+            },
+            {
+              links: [
+                {
+                  text: `Can I Form an LLC with just one Member?`,
+                  url: `/research-topics/llc-info/forming-llc-with-one-member/`,
+                },
+                {
+                  text: `LLCs vs C-Corporation: Which Is Best for Your Business?`,
+                  url: `/research-topics/llc-info/llcs-vs-c-corporation/`,
+                },
+                {
+                  text: `What is the process involved in changing the name of an LLC?`,
+                  url: `/research-topics/llc-info/changing-llc-name/`,
+                },
+              ],
+            },
+            {
+              links: [
+                {
+                  text: `Can an LLC be formed without listing the member on the articles of organization?`,
+                  url: `/research-topics/llc-info/llc-without-listing-members/`,
+                },
+                {
+                  text: `Are Non-U.S. Residents Allowed to Own a Corporation or LLC?`,
+                  url: `/research-topics/llc-info/own-a-corporation-or-llc/`,
+                },
+                {
+                  text: `Does Forming an LLC (Limited Liability Company) or Corporation Require an Attorney?`,
+                  url: `/research-topics/llc-info/require-an-attorney/`,
+                },
+              ],
+            },
+            {
+              links: [
+                {
+                  text: `What is a Publication Requirement?`,
+                  url: `/research-topics/llc-info/publication-requirement/`,
+                },
+                {
+                  text: `What is the Customized Corporate/LLC Kit?`,
+                  url: `/research-topics/llc-info/customized-corp-llc-kit/`,
+                },
               ],
             },
           ],
@@ -606,15 +605,15 @@ export const list = {
               links: [
                 {
                   text: `What is a Corporate Seal?`,
-                  url: `/research-topics/c-corporation-info/what-is-a-corporate-seal/`,
+                  url: `/research-topics/c-corporation-info/corp-seal/`,
                 },
                 {
                   text: `Which entity offers the best tax advantages?`,
-                  url: `/research-topics/c-corporation-info/which-entity-offers-the-best-tax-advantages/`,
+                  url: `/research-topics/c-corporation-info/tax-advantages/`,
                 },
                 {
                   text: `The benefits of filing a C-corporation`,
-                  url: `/research-topics/c-corporation-info/the-benefits-of-filing-a-c-corporation/`,
+                  url: `/research-topics/c-corporation-info/filing-a-c-corporation/`,
                 },
               ],
             },
@@ -622,15 +621,15 @@ export const list = {
               links: [
                 {
                   text: `LLCs vs C-Corporation: Which Is Best for Your Business?`,
-                  url: `/research-topics/c-corporation-info/llcs-vs-c-corporation-which-is-best-for-your-business/`,
+                  url: `/research-topics/c-corporation-info/llcs-vs-c-corporation/`,
                 },
                 {
                   text: `How is a C Corporation Taxed?`,
-                  url: `/research-topics/c-corporation-info/how-is-a-c-corporation-taxed/`,
+                  url: `/research-topics/c-corporation-info/c-corp-taxing/`,
                 },
                 {
                   text: `Am I Required to Hold Corporate Meetings?`,
-                  url: `/research-topics/c-corporation-info/am-i-required-to-hold-corporate-meetings/`,
+                  url: `/research-topics/c-corporation-info/corporate-meetings/`,
                 },
               ],
             },
@@ -638,7 +637,7 @@ export const list = {
               links: [
                 {
                   text: `How Many Shares of Stock will my Corporation Need?`,
-                  url: `/research-topics/c-corporation-info/how-many-shares-of-stock-will-my-corporation-need/`,
+                  url: `/research-topics/c-corporation-info/corporation-need/`,
                 },
                 {
                   text: `What are Bylaws?`,
@@ -646,7 +645,7 @@ export const list = {
                 },
                 {
                   text: `What is Stock Par Value?`,
-                  url: `/research-topics/c-corporation-info/what-is-stock-par-value/`,
+                  url: `/research-topics/c-corporation-info/stock-par-value/`,
                 },
               ],
             },
@@ -654,15 +653,15 @@ export const list = {
               links: [
                 {
                   text: `What is the Form 2553?`,
-                  url: `/research-topics/c-corporation-info/what-is-the-form-2553/`,
+                  url: `/research-topics/c-corporation-info/form-2553/`,
                 },
                 {
                   text: `What are the Differences Between Officers, Directors and Shareholders?`,
-                  url: `/research-topics/c-corporation-info/what-are-the-differences-between-officers-directors-and-shareholders/`,
+                  url: `/research-topics/c-corporation-info/directors-and-shareholders/`,
                 },
                 {
                   text: `Are Non-U.S. Residents Allowed to Own a Corporation or LLC?`,
-                  url: `/research-topics/c-corporation-info/are-non-u-s-residents-allowed-to-own-a-corporation-or-llc/`,
+                  url: `/research-topics/c-corporation-info/own-a-corporation-or-llc/`,
                 },
               ],
             },
@@ -670,15 +669,15 @@ export const list = {
               links: [
                 {
                   text: `Does Forming an LLC (Limited Liability Company) or Corporation Require an Attorney?`,
-                  url: `/research-topics/c-corporation-info/does-forming-an-llc-limited-liability-company-or-corporation-require-an-attorney/`,
+                  url: `/research-topics/c-corporation-info/require-an-attorney/`,
                 },
                 {
                   text: `What is a Publication Requirement?`,
-                  url: `/research-topics/c-corporation-info/what-is-a-publication-requirement/`,
+                  url: `/research-topics/c-corporation-info/publication-requirement/`,
                 },
                 {
                   text: `What is the Customized Corporate/LLC Kit?`,
-                  url: `/research-topics/c-corporation-info/what-is-the-customized-corporatellc-kit/`,
+                  url: `/research-topics/c-corporation-info/customized-corp-llc-kit/`,
                 },
               ],
             },
@@ -695,11 +694,11 @@ export const list = {
                 },
                 {
                   text: `What is a Corporate Seal?`,
-                  url: `/research-topics/s-corporation-info/what-is-a-corporate-seal/`,
+                  url: `/research-topics/s-corporation-info/corp-seal/`,
                 },
                 {
                   text: `Which entity offers the best tax advantages?`,
-                  url: `/research-topics/s-corporation-info/which-entity-offers-the-best-tax-advantages/`,
+                  url: `/research-topics/s-corporation-info/tax-advantages/`,
                 },
               ],
             },
@@ -707,15 +706,15 @@ export const list = {
               links: [
                 {
                   text: `LLC vs. S Corporation`,
-                  url: `/research-topics/s-corporation-info/llc-vs-s-corporation/`,
+                  url: `/research-topics/c-corporation-info/llc-vs-s-corporation/`,
                 },
                 {
                   text: `What are the Advantages of an S Corporation?`,
-                  url: `/research-topics/s-corporation-info/what-are-the-advantages-of-an-s-corporation/`,
+                  url: `/research-topics/s-corporation-info/s-corp-advantages/`,
                 },
                 {
                   text: `What are the Disadvantages of an S Corporation?`,
-                  url: `/research-topics/s-corporation-info/what-are-the-disadvantages-of-an-s-corporation/`,
+                  url: `/research-topics/s-corporation-info/s-corp-disadvantages/`,
                 },
               ],
             },
@@ -723,15 +722,15 @@ export const list = {
               links: [
                 {
                   text: `How is an S Corporation Taxed?`,
-                  url: `/research-topics/s-corporation-info/how-is-an-s-corporation-taxed/`,
+                  url: `/research-topics/s-corporation-info/s-corp-taxing/`,
                 },
                 {
                   text: `Who Will Typically Elect the S Corporation Status?`,
-                  url: `/research-topics/s-corporation-info/who-will-typically-elect-the-s-corporation-status/`,
+                  url: `/research-topics/s-corporation-info/s-corporation-status/`,
                 },
                 {
                   text: `Is there a limit to the amount of shareholders an S Corporation can have?`,
-                  url: `/research-topics/s-corporation-info/is-there-a-limit-to-the-amount-of-shareholders-an-s-corporation-can-have/`,
+                  url: `/research-topics/s-corporation-info/amount-of-shareholders/`,
                 },
               ],
             },
@@ -739,15 +738,15 @@ export const list = {
               links: [
                 {
                   text: `Can a foreign resident be a shareholder in an S Corporation?`,
-                  url: `/research-topics/s-corporation-info/can-a-foreign-resident-be-a-shareholder-in-an-s-corporation/`,
+                  url: `/research-topics/s-corporation-info/foreign-resident-shareholder/`,
                 },
                 {
                   text: `How is a Corporation Managed?`,
-                  url: `/research-topics/s-corporation-info/how-is-a-corporation-managed/`,
+                  url: `/research-topics/s-corporation-info/corp-managing/`,
                 },
                 {
                   text: `Am I Required to Hold Corporate Meetings?`,
-                  url: `/research-topics/s-corporation-info/am-i-required-to-hold-corporate-meetings/`,
+                  url: `/research-topics/s-corporation-info/corporate-meetings/`,
                 },
               ],
             },
@@ -755,7 +754,7 @@ export const list = {
               links: [
                 {
                   text: `How Many Shares of Stock will my Corporation Need?`,
-                  url: `/research-topics/s-corporation-info/how-many-shares-of-stock-will-my-corporation-need/`,
+                  url: `/research-topics/s-corporation-info/corporation-need/`,
                 },
                 {
                   text: `What are Bylaws?`,
@@ -763,7 +762,7 @@ export const list = {
                 },
                 {
                   text: `What is Stock Par Value?`,
-                  url: `/research-topics/s-corporation-info/what-is-stock-par-value/`,
+                  url: `/research-topics/s-corporation-info/stock-par-value/`,
                 },
               ],
             },
@@ -771,15 +770,15 @@ export const list = {
               links: [
                 {
                   text: `What is the Form 2553?`,
-                  url: `/research-topics/s-corporation-info/what-is-the-form-2553/`,
+                  url: `/research-topics/s-corporation-info/form-2553/`,
                 },
                 {
                   text: `What are the Differences Between Officers, Directors and Shareholders?`,
-                  url: `/research-topics/s-corporation-info/what-are-the-differences-between-officers-directors-and-shareholders/`,
+                  url: `/research-topics/s-corporation-info/directors-and-shareholders/`,
                 },
                 {
                   text: `Does Forming an LLC (Limited Liability Company) or Corporation Require an Attorney?`,
-                  url: `/research-topics/s-corporation-info/does-forming-an-llc-limited-liability-company-or-corporation-require-an-attorney/`,
+                  url: `/research-topics/s-corporation-info/require-an-attorney/`,
                 },
               ],
             },
@@ -787,11 +786,11 @@ export const list = {
               links: [
                 {
                   text: `What is a Publication Requirement?`,
-                  url: `/research-topics/s-corporation-info/what-is-a-publication-requirement/`,
+                  url: `/research-topics/s-corporation-info/publication-requirement/`,
                 },
                 {
                   text: `What is the Customized Corporate/LLC Kit?`,
-                  url: `/research-topics/s-corporation-info/what-is-the-customized-corporatellc-kit/`,
+                  url: `/research-topics/s-corporation-info/customized-corp-llc-kit/`,
                 },
               ],
             },
@@ -808,11 +807,11 @@ export const list = {
                 },
                 {
                   text: `Forming a Nonprofit Corporation`,
-                  url: `/research-topics/nonprofit-info/forming-a-nonprofit-corporation/`,
+                  url: `/research-topics/nonprofit-info/forming-nonprofit-corp/`,
                 },
                 {
                   text: `Can a Nonprofit Corporation Make a Profit?`,
-                  url: `/research-topics/nonprofit-info/can-a-nonprofit-corporation-make-a-profit/`,
+                  url: `/research-topics/nonprofit-info/profit-from-nonprofit/`,
                 },
               ],
             },
@@ -820,15 +819,15 @@ export const list = {
               links: [
                 {
                   text: `What is a Nonprofit Corporation?`,
-                  url: `/research-topics/nonprofit-info/what-is-a-nonprofit-corporation/`,
+                  url: `/research-topics/nonprofit-info/what-is-a-nonprofit/`,
                 },
                 {
                   text: `What Steps Need to be Taken to Form a Nonprofit Corporation?`,
-                  url: `/research-topics/nonprofit-info/what-steps-need-to-be-taken-to-form-a-nonprofit-corporation/`,
+                  url: `/research-topics/nonprofit-info/non-profit-by-steps/`,
                 },
                 {
                   text: `How do I Choose a Name for my Nonprofit Corporation?`,
-                  url: `/research-topics/nonprofit-info/how-do-i-choose-a-name-for-my-nonprofit-corporation/`,
+                  url: `/research-topics/nonprofit-info/nonprofit-corp-name/`,
                 },
               ],
             },
@@ -836,15 +835,15 @@ export const list = {
               links: [
                 {
                   text: `Where Should I Form my Nonprofit Corporation?`,
-                  url: `/research-topics/nonprofit-info/where-should-i-form-my-nonprofit-corporation/`,
+                  url: `/research-topics/nonprofit-info/where-to-form-nonprofit/`,
                 },
                 {
                   text: `May a Nonprofit Corporation Pay Compensation to its Officers, Directors and/or Employees?`,
-                  url: `/research-topics/nonprofit-info/may-a-nonprofit-corporation-pay-compensation-to-its-officers-directors-andor-employees/`,
+                  url: `/research-topics/nonprofit-info/nonprofit-compensation/`,
                 },
                 {
                   text: `How many Directors or Officers are Nonprofit Corporations required to have?`,
-                  url: `/research-topics/nonprofit-info/how-many-directors-or-officers-are-nonprofit-corporations-required-to-have/`,
+                  url: `/research-topics/nonprofit-info/directors-and-officers-in-nonprofit/`,
                 },
               ],
             },
@@ -852,15 +851,15 @@ export const list = {
               links: [
                 {
                   text: `Is “Nonprofit” the Same as “Tax-Exempt”?`,
-                  url: `/research-topics/nonprofit-info/is-nonprofit-the-same-as-tax-exempt/`,
+                  url: `/research-topics/nonprofit-info/nonprofit-tax-exempt/`,
                 },
                 {
                   text: `How is a Corporation Managed?`,
-                  url: `/research-topics/nonprofit-info/how-is-a-corporation-managed/`,
+                  url: `/research-topics/nonprofit-info/corp-managing/`,
                 },
                 {
                   text: `Am I Required to Hold Corporate Meetings?`,
-                  url: `/research-topics/nonprofit-info/am-i-required-to-hold-corporate-meetings/`,
+                  url: `/research-topics/nonprofit-info/corporate-meetings/`,
                 },
               ],
             },
@@ -872,11 +871,11 @@ export const list = {
                 },
                 {
                   text: `What are the Differences Between Officers, Directors and Shareholders?`,
-                  url: `/research-topics/nonprofit-info/what-are-the-differences-between-officers-directors-and-shareholders/`,
+                  url: `/research-topics/nonprofit-info/directors-and-shareholders/`,
                 },
                 {
                   text: `Does Forming an LLC (Limited Liability Company) or Corporation Require an Attorney?`,
-                  url: `/research-topics/nonprofit-info/does-forming-an-llc-limited-liability-company-or-corporation-require-an-attorney/`,
+                  url: `/research-topics/nonprofit-info/require-an-attorney/`,
                 },
               ],
             },
@@ -884,7 +883,7 @@ export const list = {
               links: [
                 {
                   text: `What is the Customized Corporate/LLC Kit?`,
-                  url: `/`,
+                  url: `/research-topics/nonprofit-info/customized-corp-llc-kit/`,
                 },
               ],
             },
@@ -897,15 +896,15 @@ export const list = {
               links: [
                 {
                   text: `What is the main function of the Registered Agent?`,
-                  url: `/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/`,
+                  url: `/research-topics/registered-agent/registered-agent-function/`,
                 },
                 {
                   text: `What happens if I require the signature of my Registered Agent?`,
-                  url: `/research-topics/registered-agent-help/what-happens-if-i-require-the-signature-of-my-registered-agent/`,
+                  url: `/research-topics/registered-agent/registered-agent-signature/`,
                 },
                 {
                   text: `What is the name and address of my Registered Agent?`,
-                  url: `/research-topics/registered-agent-help/what-is-the-name-and-address-of-my-registered-agent/`,
+                  url: `/research-topics/registered-agent/registered-agent-address/`,
                 },
               ],
             },
@@ -913,15 +912,15 @@ export const list = {
               links: [
                 {
                   text: `Who will be responsible for updating the Registered Agent information with the state?`,
-                  url: `/research-topics/registered-agent-help/who-will-be-responsible-for-updating-the-registered-agent-information-with-the-state/`,
+                  url: `/research-topics/registered-agent/registered-agent-info-update/`,
                 },
                 {
                   text: `How much will it cost to renew my Registered Agent service?`,
-                  url: `/research-topics/registered-agent-help/how-much-will-it-cost-to-renew-my-registered-agent-service/`,
+                  url: `/research-topics/registered-agent/service-cost/`,
                 },
                 {
                   text: `How will I know when it is time to renew my Registered Agent?`,
-                  url: `/research-topics/registered-agent-help/how-will-i-know-when-it-is-time-to-renew-my-registered-agent/`,
+                  url: `/research-topics/registered-agent/registered-agent-renew/`,
                 },
               ],
             },
@@ -929,15 +928,15 @@ export const list = {
               links: [
                 {
                   text: `How will I be notified if service of process is received?`,
-                  url: `/research-topics/registered-agent-help/how-will-i-be-notified-if-service-of-process-is-received/`,
+                  url: `/research-topics/registered-agent/service-process-notify/`,
                 },
                 {
                   text: `What will happen to my company if the registered agent resigns?`,
-                  url: `/research-topics/registered-agent-help/what-will-happen-to-my-company-if-the-registered-agent-resigns/`,
+                  url: `/research-topics/registered-agent/registered-agent-resigns/`,
                 },
                 {
                   text: `Can the registered agent be a company?`,
-                  url: `/research-topics/registered-agent-help/can-the-registered-agent-be-a-company/`,
+                  url: `/research-topics/registered-agent/registered-agent-company/`,
                 },
               ],
             },
@@ -945,7 +944,7 @@ export const list = {
               links: [
                 {
                   text: `What does a Registered Agent do?`,
-                  url: `/research-topics/registered-agent-help/what-does-a-registered-agent-do/`,
+                  url: `/research-topics/registered-agent/registered-agent-tasks/`,
                 },
               ],
             },
@@ -958,11 +957,11 @@ export const list = {
               links: [
                 {
                   text: `How to Meet New York LLC Publication Requirements`,
-                  url: `/research-topics/individual-state-info/meeting-the-new-york-publication-requirement/`,
+                  url: `/research-topics/state-info/ny-publication-requirement/`,
                 },
                 {
                   text: `How To Publish Your Notice Of Incorporation In Georgia`,
-                  url: `/research-topics/individual-state-info/how-to-publish-your-notice-of-incorporation-in-georgia/`,
+                  url: `/research-topics/state-info/publish-inc-notice-georgia/`,
                 },
               ],
             },
@@ -979,11 +978,11 @@ export const list = {
                 },
                 {
                   text: `Which entity offers the best tax advantages?`,
-                  url: `/research-topics/business-taxes/which-entity-offers-the-best-tax-advantages/`,
+                  url: `/research-topics/business-taxes/tax-advantages/`,
                 },
                 {
                   text: `How is an S Corporation Taxed?`,
-                  url: `/research-topics/business-taxes/how-is-an-s-corporation-taxed/`,
+                  url: `/research-topics/business-taxes/s-corp-taxing/`,
                 },
               ],
             },
@@ -991,11 +990,11 @@ export const list = {
               links: [
                 {
                   text: `Is “Nonprofit” the Same as “Tax-Exempt”?`,
-                  url: `/research-topics/business-taxes/is-nonprofit-the-same-as-tax-exempt/`,
+                  url: `/research-topics/business-taxes/nonprofit-tax-exempt/`,
                 },
                 {
                   text: `How is a C Corporation Taxed?`,
-                  url: `/research-topics/business-taxes/how-is-a-c-corporation-taxed/`,
+                  url: `/research-topics/business-taxes/c-corp-taxing/`,
                 },
               ],
             },
@@ -1008,7 +1007,7 @@ export const list = {
               links: [
                 {
                   text: `How Easy Is Forming an LLC or Corporation`,
-                  url: `/research-topics/video-library/how-easy-is-forming-an-llc-or-corporation/`,
+                  url: `/research-topics/business-taxes/sellers-permit/`,
                 },
               ],
             },
@@ -1016,7 +1015,7 @@ export const list = {
               links: [
                 {
                   text: `Protect Your Personal Assets`,
-                  url: `/research-topics/video-library/protect-your-personal-assets/`,
+                  url: `/research-topics/business-taxes/minimizing-tax-expenses/`,
                 },
               ],
             },
@@ -1024,7 +1023,7 @@ export const list = {
               links: [
                 {
                   text: `Learn How To Save Money With Incfile`,
-                  url: `/research-topics/video-library/learn-how-to-save-money-with-incfile/`,
+                  url: `/research-topics/business-taxes/tax-advantages/`,
                 },
               ],
             },
@@ -2012,11 +2011,11 @@ export const list = {
               links: [
                 {
                   text: `Laundromat Business`,
-                  url: `/start-a-business/laundromat-business/`,
+                  url: `/start-a-business/laundromat/`,
                 },
                 {
                   text: `T-shirt Business`,
-                  url: `/start-a-business/shirt-business/`,
+                  url: `/start-a-business/tshirt-business/`,
                 },
                 {
                   text: `Beauty Salon Business`,
@@ -2052,7 +2051,7 @@ export const list = {
                 },
                 {
                   text: `Dog Walking Business`,
-                  url: `/start-a-business/dog-walking-business/`,
+                  url: `/start-a-business/dog-walking/`,
                 },
               ],
             },
@@ -2148,7 +2147,7 @@ export const list = {
                 },
                 {
                   text: `Business Contract Templates`,
-                  url: `/start-a-business/business-contract-templates/`,
+                  url: `/start-a-business/business-contract-templates/`, //file doesn't exist
                 },
               ],
             },
@@ -2160,7 +2159,7 @@ export const list = {
                 },
                 {
                   text: `Food Truck`,
-                  url: `/start-a-business/food-truck/`,
+                  url: `/start-a-business/food-truck-business/`,
                 },
                 {
                   text: `Bed & Breakfast`,
@@ -2336,10 +2335,10 @@ export const trust = {
   header: `Trusted by over <span style="color:#fd8550">500,000</span> business owners worldwide since 2004!`,
   button1: {
     text: `See Plans & Pricing`,
-    url: `/`,
+    url: `${process.env.ORDER_URL}/form-order-now.php`,
   },
   button2: {
     text: `Explore more benefits`,
-    url: `/`,
+    url: `/why-choose-incfile/`,
   },
 };

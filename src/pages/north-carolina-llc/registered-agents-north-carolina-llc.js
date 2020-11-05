@@ -25,7 +25,7 @@ const RegisteredAgentPage = () => {
         <Layout>
             <SEO
                 title="North Carolina Registered Agents & Your LLC"
-                description="Learn what you need to know about naming an LLC in Texas with Incfile's helpful resources. Pick your perfect business name todayDo you need a Registered Agent for your NC LLC? Learn what Registered Agents do and how to get one with Incfile’s helpful guide!"
+                description="Do you need a Registered Agent for your NC LLC? Learn what Registered Agents do and how to get one with Incfile’s helpful guide."
             />
             <LLCLayout data={dataApi}>
                 <LeftTabPages content={tabPages} />

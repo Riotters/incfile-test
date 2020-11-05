@@ -30,7 +30,7 @@ const CaliforniaCorporation = () => {
 
     return (
         <Layout>
-            <SEO title="California Corporations & Other Business Entities " description="Thinking of starting an S Corp, C Corp, or LLC in California? Learn about corporations in CA and decide which business type is right for you." />
+            <SEO title="Taxes & Fees for California S Corps & C Corps" description="Learn about the taxes and fees you&#039;ll be required to pay for your California corporation, plus find out the tax differences between CA S Corps and C Corps." />
             <Top imageName="mr-bulb-corporation-california-8302" imageAlt="Mrs Bulb and with checklist" ovalColor="purple-2" textWidth="530">
                 <h1>{top.header}</h1>
                 <p>{top.text}</p>

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import parser from "html-react-parser";
-import { color } from "../../../atoms/styles/colors"
+import { color } from "../../../atoms/styles/colors";
 import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";
 import ContentCenter from "../../../partials/content-center";
@@ -16,8 +16,9 @@ const Offering = styled.section`
   padding-top: 100px;
   padding-bottom: 120px;
 
-  h2, p {
-      text-align: left;
+  h2,
+  p {
+    text-align: left;
   }
 
   h3 {
@@ -25,27 +26,35 @@ const Offering = styled.section`
   }
 
   p {
-       width: 100%;
+    width: 100%;
   }
 `;
 
 const OfferingSection = ({ className, content }) => (
-    <Offering className={className}>
-        <Oval height="570" width="570" top="10" right="0">
-            <OvalSVG />
-        </Oval>
-        <ContentCenter>
-            <Curve top="-15" right="395" color={color.purple1}>
-                <CurveSVG />
-            </Curve>
-            <Heading size="2" maxWidth="770" bottomMargin="80">{content.header}</Heading>
-            <Paragraph big maxWidth="770" bottomMargin="104" mixed={true}>{parser(content.text)}</Paragraph>
-            <Heading size="3" maxWidth="770" bottomMargin="40">{content.header2}</Heading>
-            <Cards content={content.cards} />
-            <Paragraph big maxWidth="770" mixed={true}>{parser(content.text2)}</Paragraph>
-            <Paragraph big maxWidth="770" mixed={true}>{parser(content.text3)}</Paragraph>
-        </ContentCenter>
+  <Offering className={className}>
+    <Oval height="570" width="570" top="10" right="0">
+      <OvalSVG />
+    </Oval>
+    <ContentCenter contentWidth="770" relative>
+      <Curve top="-15" right="175" color={color.purple1}>
+        <CurveSVG />
+      </Curve>
+      <Heading size="2" bottomMargin="80">
+        {content.header}
+      </Heading>
+      <Paragraph big mixed>
+        {parser(content.text)}
+      </Paragraph>
+      {/* <Heading size="3" maxWidth="770" bottomMargin="40">{content.header2}</Heading>
+            <Cards content={content.cards} /> */}
+      <Paragraph big mixed>
+        {parser(content.text2)}
+      </Paragraph>
+      <Paragraph big bottomMargin="0" mixed>
+        {parser(content.text3)}
+      </Paragraph>
+    </ContentCenter>
   </Offering>
-  );
-  
-  export default OfferingSection;
+);
+
+export default OfferingSection;

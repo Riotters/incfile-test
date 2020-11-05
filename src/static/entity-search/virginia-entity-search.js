@@ -24,34 +24,6 @@ export const search = {
   header: `Use Our Free Business Name Search Tool To Find Out If Your Company Name Is Available`,
   header2: `We’ll Take Care of the Entity Search.`,
   text: `We’ll tell you if your business name is available with the Virginia Division of Corporations. Just fill in your proposed business name, and we’ll search the company registrar for you.`,
-  form: {
-    header: `Please enter the business name information`,
-    field: {
-      label: `First Name*`,
-    },
-    field2: {
-      label: `Entity Type`,
-      link: {
-        text: `Not sure?`,
-        url: `/business-entity-comparison/`,
-      },
-      options: [`LLC`, `Corporation`],
-    },
-    header2: `Let us know where we can let you know if your business name is available`,
-    field3: {
-      label: `First Name*`,
-    },
-    field4: {
-      label: `Last Name*`,
-    },
-    field5: {
-      label: `Email*`,
-    },
-    button: {
-      text: `Check Name Availability`,
-      url: `/`,
-    },
-  },
 };
 
 export const newRules = {
@@ -81,7 +53,7 @@ export const startBusiness = {
   text: `Ready to start your business? Incfile will take care of the paperwork for you and file it with the Virginia State Corporation Commission—all for as little as $0 + state fee.`,
   button: {
     text: `Start a VA Buisness Now`,
-    url: `/`,
+    url: `${process.env.ORDER_URL}/form-order-now.php?entityState=VA`,
   },
 };
 
@@ -96,14 +68,14 @@ export const faq = {
         },
         {
           text: `VA LLC`,
-          url: `/`,
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=VA`,
         },
         {
           text: `or`,
         },
         {
           text: `VA Corporation`,
-          url: `/`,
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=VA`,
         },
         {
           text: `guides for more information.`,
@@ -126,7 +98,7 @@ export const faq = {
         },
         {
           text: `VA Fictitious Business Name`,
-          url: `/`,
+          url: `/fictitious-business-or-trade-name/`,
         },
         {
           text: `with the Virginia State Corporation Commission on your behalf.`,
@@ -141,7 +113,7 @@ export const faq = {
         },
         {
           text: `file an amendment on your behalf,`,
-          url: `/`,
+          url: `/manage-your-company/amendment/`,
         },
         {
           text: `including changing the name of your Virginia corporation or LLC.`,
@@ -173,7 +145,7 @@ export const faq = {
         },
         {
           text: `registering your Virginia business name as a trademark.`,
-          url: `/`,
+          url: `/trademark-name-search/`,
         },
         {
           text: `Note that filing a fictitious or “doing business as" (DBA) name in Virginia will not be sufficient to protect it.`,

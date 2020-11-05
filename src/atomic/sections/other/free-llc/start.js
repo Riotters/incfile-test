@@ -30,25 +30,31 @@ const colors = [color.orange3, color.red3, color.blue3, color.purple3, color.yel
 const icons = ["fictitious-business-name-7188", "tax-id", "trademark", "business-licence-search-4730", "certificate-of-good-standing-6366", "receive"];
 
 const StartSection = ({ className, content }) => (
-    <Start className={className}>
-        <Oval className="oval" height="420" width="420" top="0" right="0">
-            <OvalSVG />
-        </Oval>
-        <HeadingCenter headline={content.header} headlineWidth="700" text={content.text} bottomMargin="80" />
-        <ContentLeft contentWidth="770">
-            <Paragraph>{content.text2}</Paragraph>
-            <Paragraph bottomMargin="80">{content.text3}</Paragraph>
-        </ContentLeft>
-        <CenterGrid columnsSM="1" columnsMD="2">
-            {content.buttons.map((button, i) => (
-                <BoxedButton content={button} icon={icons[i]} iconColor={colors[i]} />
-            ))}
-        </CenterGrid>
-        <ContentLeft contentWidth="770">
-            <Paragraph topMargin="80">{content.text4}</Paragraph>
-            <Paragraph bottomMargin="0">{content.text5}</Paragraph>
-        </ContentLeft>
-    </Start>
+  <Start className={className}>
+    <Oval className="oval" height="420" width="420" top="0" right="0">
+      <OvalSVG />
+    </Oval>
+    <HeadingCenter headline={content.header} headlineWidth="700" text={content.text} bottomMargin="80" />
+    <ContentLeft contentWidth="770">
+      <Paragraph big>{content.text2}</Paragraph>
+      <Paragraph big bottomMargin="80">
+        {content.text3}
+      </Paragraph>
+    </ContentLeft>
+    <CenterGrid columnsSM="1" columnsMD="2">
+      {content.buttons.map((button, i) => (
+        <BoxedButton content={button} icon={icons[i]} iconColor={colors[i]} />
+      ))}
+    </CenterGrid>
+    <ContentLeft contentWidth="770">
+      <Paragraph big topMargin="80">
+        {content.text4}
+      </Paragraph>
+      <Paragraph big bottomMargin="0">
+        {content.text5}
+      </Paragraph>
+    </ContentLeft>
+  </Start>
 );
 
 export default StartSection;

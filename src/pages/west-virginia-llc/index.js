@@ -23,7 +23,7 @@ function LLCIndex() {
     }, []);
     return (
         <Layout>
-            <SEO title="LLCs in West Virginia  | Guide to Forming an LLC in West Virginia " description="Ready to form your West Virginia  LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
+            <SEO title="LLCs in West Virginia | Guide to Forming an LLC in West Virginia" description="Ready to form your West Virginia LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
             <LLCLayout data={dataApi}>
                 <LeftTabPages content={tabPages} nonDIY />
                 <MainPageContent>

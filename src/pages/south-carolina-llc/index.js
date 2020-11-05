@@ -23,8 +23,7 @@ function LLCIndex() {
     }, []);
     return (
         <Layout>
-            <SEO title="South Carolina LLCs | How to Get an LLC in South Carolina" 
-            description="Ready to register your SC LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
+            <SEO title="LLCs in South Carolina | Guide to Forming an LLC in Texas" description="Ready to form your South Carolina LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
             <LLCLayout data={dataApi}>
                 <LeftTabPages content={tabPages} nonDIY />
                 <MainPageContent>

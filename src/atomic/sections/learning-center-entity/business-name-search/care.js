@@ -14,16 +14,18 @@ const Care = styled.section`
   background-color: ${color.orange3};
 `;
 
-const CareSection = ({ className, content }) => (
-  <Care className={className}>
-    <Oval className="oval" height="720" width="720" top="0" right="0">
-      <OvalSVG />
-    </Oval>
-    <HeadingCenter headline={content.header} headlineWidth="770" text={content.text} textWidth="770" bottomMargin="80" />
-    <ContentCenter>
-      <Form content={content.form} />
-    </ContentCenter>
-  </Care>
-);
+const CareSection = ({ className, content, id }) => {
+    return (
+        <Care className={className} id={id}>
+            <Oval className="oval" height="720" width="720" top="0" right="0">
+                <OvalSVG />
+            </Oval>
+            <HeadingCenter headline={content.header} headlineWidth="770" text={content.text} textWidth="770" bottomMargin="80" />
+            <ContentCenter>
+                <Form content={content.form} />
+            </ContentCenter>
+        </Care>
+    );
+};
 
 export default CareSection;

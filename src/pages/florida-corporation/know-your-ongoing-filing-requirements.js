@@ -30,7 +30,7 @@ const FloridaCorporation = () => {
     }, []);
     return (
         <Layout>
-            <SEO title="Business Taxes & Fees for Florida S Corps & C Corps" description="Learn about the taxes and fees you&#039;ll be required to pay for your Florida corporation, plus find out the tax differences between FL S Corps and C Corps" />
+            <SEO title="Business Taxes & Fees for Florida S Corps & C Corps" description="Learn about the taxes and fees you'll be required to pay for your Florida corporation, plus find out the tax differences between FL S Corps and C Corps" />
             <Top imageName="mr-bulb-corporation-california-8302" imageAlt="Mrs Bulb and with checklist" ovalColor="purple-2" textWidth="530">
                 <h1>{top.header}</h1>
                 <p>{top.text}</p>

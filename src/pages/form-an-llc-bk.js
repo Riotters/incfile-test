@@ -19,7 +19,7 @@ import { top, perks, trust, steps, differences, variants } from "../static/other
 
 const FormAnLLC = () => (
   <Layout>
-    <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
+    <SEO title="How to Start an LLC | Starting an LLC with Incfile" description="Forming a limited liability company is simple and comes with lots of advantages for your small business or startup. Learn how to create your LLC today." />
     <Top imageName="mrs-bulb-form-an-llc-8929" imageAlt="Mrs Bulb and with checklist" ovalColor="sun" headlineWidth="550">
       <h1>{top.header}</h1>
       <Buttonsbox>

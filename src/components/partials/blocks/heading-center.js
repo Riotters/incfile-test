@@ -25,10 +25,10 @@ const Wrapper = styled.div`
   }
 `
 
-const TextCenterLayout = ({className, headline, headlineWidth, text, textWidth, linkText, linkUrl}) => {
+const TextCenterLayout = ({className, headline, headlineWidth, text, textWidth, linkText, linkUrl, ...rest}) => {
 
   return (
-    <Wrapper className={className} headlineWidth={headlineWidth} textWidth={textWidth}>
+    <Wrapper className={className} headlineWidth={headlineWidth} textWidth={textWidth} {...rest}>
         {headline && (
             <VisibilitySensor partialVisibility once>
                 {({ isVisible }) => (

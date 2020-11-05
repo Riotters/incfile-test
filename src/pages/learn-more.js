@@ -13,12 +13,12 @@ import Help from "../components/partials/sections/help";
 
 const LearnMore = () => (
     <Layout>
-        <SEO title="Everything about forming a business at your fingertips."
-             description="Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus et interdum."/>
+        <SEO title="LLC, Nonprofit and Incorporation Resource Center | Incfile"
+             description="Learn about the LLC (Limited Liability Company) and Corporation are filed as well as other reporting and compliance requirements"/>
 
         <Top ovalColor="purple-2" imageName="research-tools" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
             <h1>Everything about forming a business at your fingertips.</h1>
-            <p>Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus et interdum.</p>
+            <p>Learn about the LLC (Limited Liability Company) and Corporation are filed as well as other reporting and compliance requirements</p>
             <ButtonsBox>
                 <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{text: `Read FAQ`, url: `/`}} />
             </ButtonsBox>

@@ -42,7 +42,7 @@ import ToolsOvalSvg from "../../images/ovals/bottom-left-transparent-orange.inli
 
 const AmazonBusiness = () => (
   <Layout>
-    <SEO title="What is a Nonprofit Organization? How to Start a Nonprofit" description="Learn all about nonprofit corporations, including the benefits & disadvantages, getting 501c3 status, and what's needed to get your company off the ground." />
+    <SEO title="How to Start an Amazon Business | How to Sell on Amazon" description="Want to know what it takes to start a business on Amazon? Read our guide for Amazon sellers to get your Amazon business off the ground." />
 
     <Top ovalColor="sun" imageName="amazon-business-main" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
       <h1>How to Start an Amazon Business</h1>

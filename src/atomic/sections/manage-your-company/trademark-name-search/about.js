@@ -19,16 +19,20 @@ const About = styled.section`
 `;
 
 const AboutSection = ({ className, content }) => (
-    <About className={className}>
-        <Oval className="oval" height="570" width="570" y="-40">
-            <OvalSVG />
-        </Oval>
-        <ImageContent image="shieldo">
-            <Heading size={3} bottomMargin="40">{content.header}</Heading>
-            <Paragraph big bottomMargin="40">{content.text}</Paragraph>
-            <IconTextColorBox color={color.blue3} Icon={IconSVG} content={content.box} bottomMargin="0" rounded curve curveColor={color.yellow1} />
-        </ImageContent>
-    </About>
-  );
-  
-  export default AboutSection;
+  <About className={className}>
+    <Oval className="oval" height="570" width="570" y="-40">
+      <OvalSVG />
+    </Oval>
+    <ImageContent image="shieldo">
+      <Heading size={3} bottomMargin="40">
+        {content.header}
+      </Heading>
+      <Paragraph big bottomMargin="40">
+        {content.text}
+      </Paragraph>
+      <IconTextColorBox color={color.blue3} Icon={IconSVG} content={content.box} bottomMargin="0" rounded curve curveColor={color.yellow1} />
+    </ImageContent>
+  </About>
+);
+
+export default AboutSection;

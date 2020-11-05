@@ -100,7 +100,7 @@ const HelpSection = ({ className, content }) => (
           dropdownOnePlaceholder="Select Entity Type"
           dropdownTwoPlaceholder="Select State"
           dropdownTwoOptions={dropdownTwoOptions}
-          dropdownThreePlaceholder="Select State of Formation"
+          dropdownThreePlaceholder="Select State"
           dropdownThreeOptions={dropdownThreeOptions}
           priceColumn="foreignQual"
           orderPage="/foreign-qual.php"

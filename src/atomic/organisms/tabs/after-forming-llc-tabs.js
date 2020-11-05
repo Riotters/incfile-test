@@ -21,7 +21,7 @@ import BusinessWebsiteSVG from "../../../images/icons/build-a-business-website.i
 import PhoneSystemSVG from "../../../images/icons/choose-virtual-phone-system.inline.svg";
 import BusinessLogoSVG from "../../../images/icons/design-a-business-logo.inline.svg";
 import GetBusinessSVG from "../../../images/icons/get-business-cards-created.inline.svg";
-import Button from "../../molecules/buttons/button";
+import Button from "../../molecules/buttons/button-action";
 import Whitebox from "../../atoms/boxes/white-box";
 
 const Wrapper = styled.div`
@@ -236,7 +236,7 @@ const Tab = ({ children }) => {
 
 const icons = [<Tab1SVG />, <Tab2SVG />, <Tab3SVG />, <Tab4SVG />, <Tab5SVG />];
 
-const CCorpTabs = ({ layout, columns, content }) => (
+const CCorpTabs = ({ layout, columns, content, openHsForm }) => (
   <Container>
     <Wrapper layout={layout}>
       <VisibilitySensor partialVisibility once>
@@ -290,7 +290,7 @@ const CCorpTabs = ({ layout, columns, content }) => (
                   <Paragraph big bottomMargin="40">
                     {content.content[2].text2}
                   </Paragraph>
-                  <Button theme="primary56" content={content.content[2].button} arrow margin="0 0 80px" marginSM="0 auto 80px 0" />
+                  <Button theme="primary56" content={content.content[2].button} onClick={openHsForm} margin="0 0 80px" marginSM="0 auto 80px 0" />
                   <Heading size="3" bottomMargin="32">
                     {content.content[2].header3}
                   </Heading>

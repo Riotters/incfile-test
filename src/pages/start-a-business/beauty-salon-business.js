@@ -382,7 +382,7 @@ const BeautySalon = () => (
           </CountingTextBoxed>
 
           <Paragraph big mixed={true} style={{ marginTop: "50px" }}>
-            We’ve got the perfect <Link to="/">guide to writing your business plan.</Link>
+            We’ve got the perfect <Link to="/blog/post/keys-successful-business-plan/">guide to writing your business plan.</Link>
           </Paragraph>
         </CenterBox>
       </Container>
@@ -415,12 +415,7 @@ const BeautySalon = () => (
             widthUnit="%"
           >
             <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-              <FlexLink to="/">
-                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                  <ArrowSVG />
-                </IconCircle>
-                Sole Proprietorship
-              </FlexLink>
+              Sole Proprietorship
             </Paragraph>
 
             <Paragraph big>This is the "default" business structure and is what your business will be if you decide not to create a more formal structure. We don't recommend this type of business as it doesn't give you the legal protections you need.</Paragraph>
@@ -441,12 +436,7 @@ const BeautySalon = () => (
             widthUnit="%"
           >
             <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-              <FlexLink to="/">
-                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                  <ArrowSVG />
-                </IconCircle>
-                Limited Liability Company or LLC
-              </FlexLink>
+              Limited Liability Company or LLC
             </Paragraph>
 
             <Paragraph big>The most common type of business entity. An LLC is fast, simple and inexpensive to setup and maintain. It protects your personal finances and assets and is a great way to start your real estate</Paragraph>
@@ -467,12 +457,7 @@ const BeautySalon = () => (
             widthUnit="%"
           >
             <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-              <FlexLink to="/">
-                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                  <ArrowSVG />
-                </IconCircle>
-                Series LLC
-              </FlexLink>
+              Series LLC
             </Paragraph>
 
             <Paragraph big>This is a special type of LLC entity that's only available in certain states. It allows you to create "mini" LLCs, each with their own limited liability and separate assets, under the umbrella of a master LLC.</Paragraph>
@@ -493,12 +478,7 @@ const BeautySalon = () => (
             widthUnit="%"
           >
             <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-              <FlexLink to="/">
-                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                  <ArrowSVG />
-                </IconCircle>
-                S Corporation
-              </FlexLink>
+              S Corporation
             </Paragraph>
 
             <Paragraph big>This is a more complex type of business and isn't generally recommended for smaller organization.</Paragraph>
@@ -519,12 +499,7 @@ const BeautySalon = () => (
             widthUnit="%"
           >
             <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-              <FlexLink to="/">
-                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                  <ArrowSVG />
-                </IconCircle>
-                C Corporation
-              </FlexLink>
+              C Corporation
             </Paragraph>
 
             <Paragraph big>These are the largest and most complex types of businesses and are far more than the average entrepreneur or business owner will need.</Paragraph>
@@ -532,10 +507,14 @@ const BeautySalon = () => (
 
           <Paragraph big style={{ paddingTop: "48px", paddingBottom: 0 }} mixed={true}>
             If you've still got questions about different types of business entities, check out our
-            <Link to="/">in-depth guide</Link>, or hear our answers to the <Link to="/">most common questions</Link> about LLCs vs. corporations.
+            <Link to="/business-entity-comparison/">in-depth guide</Link>, or hear our answers to the{" "}
+            <a href="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/" target="_blank" rel="noopener noreferrer">
+              most common questions
+            </a>{" "}
+            about LLCs vs. corporations.
           </Paragraph>
           <Paragraph big style={{ paddingTop: "48px", paddingBottom: 0 }} mixed={true}>
-            If you're ready to start your Etsy LLC, you can check out our <Link to="/">LLC formation guide for your state</Link>, or have Incfile take care of all the paperwork for you.
+            If you're ready to start your Etsy LLC, you can check out our <Link to="/form-an-llc/">LLC formation guide for your state</Link>, or have Incfile take care of all the paperwork for you.
           </Paragraph>
 
           <Button theme="primary48" width="365px" arrow content={{ url: `${process.env.ORDER_URL}/form-order-now.php`, text: `Start your business with us, today!` }} />
@@ -734,12 +713,6 @@ const Oval5 = styled.div`
   @media (min-width: 720px) {
     width: 720px;
   }
-`;
-
-const FlexLink = styled(Link)`
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
 `;
 
 export default BeautySalon;

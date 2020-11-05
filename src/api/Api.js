@@ -4,3 +4,12 @@ export const getFullPricesAndFilings = async (state, entityType) => {
         .then(response => response.json());
     return data;
 }
+
+export const postHSForm = (formData) => {
+    const data = fetch(`${process.env.INCFILE_API_URL}/hubspot/postForm`, {
+        method: 'POST',
+        body: formData,
+    }).then(res => res.json());
+
+    return data;
+}

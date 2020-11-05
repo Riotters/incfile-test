@@ -113,7 +113,7 @@ export const about = {
           {
             count: 1,
             question: `Pick a Name`,
-            answer: `If you haven’t already, choose a business name for your nonprofit. Once you have decided upon a name and entered your information online, IncFile automatically performs a name search against the corporate database of the state of incorporation to check the availability.`,
+            answer: `If you haven’t already, choose a business name for your nonprofit. Once you have decided upon a name and entered your information online, Incfile automatically performs a name search against the corporate database of the state of incorporation to check the availability.`,
           },
           {
             count: 2,

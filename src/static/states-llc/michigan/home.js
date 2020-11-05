@@ -444,7 +444,7 @@ export const namingYourBusiness = [
   {
     type: `button`,
     content: {
-      text: `IncFile's assumed business name service`,
+      text: `Incfile's assumed business name service`,
       url: `/fictitious-business-or-trade-name/`,
     },
     theme: `primary48`,
@@ -545,7 +545,7 @@ export const namingYourBusiness = [
   {
     type: `button`,
     content: {
-      text: `IncFile trademark search and registration service`,
+      text: `Incfile trademark search and registration service`,
       url: `/trademark-name-search/`,
     },
     theme: `primary48`,
@@ -725,7 +725,7 @@ export const registeredAgent = [
   {
     type: `button`,
     content: {
-      text: `Order IncFile's Michigan registered agent service`,
+      text: `Order Incfile's Michigan registered agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -778,7 +778,7 @@ export const registeredAgent = [
   {
     type: `button`,
     content: {
-      text: `Incorporate your business through IncFile`,
+      text: `Incorporate your business through Incfile`,
       url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ/`,
     },
     theme: `primary48`,
@@ -820,7 +820,7 @@ export const registeredAgent = [
   {
     type: `button`,
     content: {
-      text: `Order IncFile's Michigan registered agent service`,
+      text: `Order Incfile's Michigan registered agent service`,
       url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ/`,
     },
     theme: `primary48`,
@@ -971,7 +971,7 @@ export const feesAndRequirments = [
     marginBottom: 16,
   },
   {
-    type: `dynamic_ar_box`
+    type: `dynamic_ar_box`,
   },
   {
     type: `arrow-link`,
@@ -1002,7 +1002,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `Incorporate your Michigan LLC through IncFile today`,
+      text: `Incorporate your Michigan LLC through Incfile today`,
       url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ/`,
     },
     theme: `primary48`,
@@ -1022,7 +1022,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `Get an EIN for your Michigan LLC through IncFile`,
+      text: `Get an EIN for your Michigan LLC through Incfile`,
       url: `/manage-your-company/tax-id-ein/`,
     },
     theme: `primary48`,
@@ -1042,7 +1042,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `Get a foreign qualification/certificate of authority through IncFile`,
+      text: `Get a foreign qualification/certificate of authority through Incfile`,
       url: `/manage-your-company/foreign-qualification/`,
     },
     theme: `primary48`,
@@ -1060,7 +1060,7 @@ export const feesAndRequirments = [
     marginBottom: 16,
   },
   {
-    type: `dynamic_filing_requirement`
+    type: `dynamic_filing_requirement`,
   },
   {
     type: `text`,
@@ -1075,7 +1075,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `IncFile's Michigan annual report filing service`,
+      text: `Incfile's Michigan annual report filing service`,
       url: `/manage-your-company/annual-report/`,
     },
     theme: `primary48`,
@@ -1122,7 +1122,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `IncFile's Michigan business license research package`,
+      text: `Incfile's Michigan business license research package`,
       url: `/business-license-research-package/`,
     },
     theme: `primary48`,
@@ -1169,7 +1169,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `IncFile's Michigan fictitious name service`,
+      text: `Incfile's Michigan fictitious name service`,
       url: `/fictitious-business-or-trade-name/`,
     },
     theme: `primary48`,
@@ -1189,7 +1189,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `IncFile's Michigan registered agent service`,
+      text: `Incfile's Michigan registered agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -1229,7 +1229,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `IncFile's Michigan articles of amendment service`,
+      text: `Incfile's Michigan articles of amendment service`,
       url: `/manage-your-company/amendment/`,
     },
     theme: `primary48`,
@@ -1249,7 +1249,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `IncFile's Michigan certificate of good standing service`,
+      text: `Incfile's Michigan certificate of good standing service`,
       url: `/manage-your-company/certificate-of-good-standing/`,
     },
     theme: `primary48`,
@@ -1499,7 +1499,7 @@ export const businessTaxes = [
   {
     type: `button`,
     content: {
-      text: `IncFile form 2553 S Corporation tax election for an LLC service`,
+      text: `Incfile form 2553 S Corporation tax election for an LLC service`,
       url: `/llc-s-corp-election/`,
     },
     theme: `primary48`,

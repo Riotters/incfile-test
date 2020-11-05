@@ -9,7 +9,7 @@ export const hero = {
     Texas. Since starting we have assisted more than 500,000 entrepreneurs 
     and small business owners form their businesses. Our mission is it to 
     provide a superior user experience at an unparalleled value.`,
-  subtitle2: `Be the next person to start your new business with IncFile.com!`,
+  subtitle2: `Be the next person to start your new business with Incfile.com!`,
   button: {
     text: `Incorporate your business`,
     url: `${process.env.ORDER_URL}/form-order-now.php`,

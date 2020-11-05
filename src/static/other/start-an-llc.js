@@ -4,7 +4,7 @@ export const top = {
   button: [
     {
       text: "Form my LLC",
-      url: "/",
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC`,
     },
   ],
 };
@@ -61,7 +61,7 @@ export const about = {
                 },
                 {
                   text: `How to Search & Choose Your Business Entity Name in all 50 States.`,
-                  url: `/`,
+                  url: `/blog/post/llc-name-search-50-states/`,
                 },
               ],
             },
@@ -79,7 +79,7 @@ export const about = {
                 },
                 {
                   text: `registered agent.`,
-                  url: `/`,
+                  url: `/manage-your-company/registered-agent/`,
                 },
                 {
                   text: `For small LLCs, this is generally the same person as the managing director or owner.`,
@@ -92,7 +92,7 @@ export const about = {
                 },
                 {
                   text: `business formation packages`,
-                  url: `/`,
+                  url: `${process.env.ORDER_URL}/form-order-now.php`,
                 },
                 {
                   text: `include a “registered agent” service free for the first year and $119 per year thereafter.`,
@@ -119,14 +119,14 @@ export const about = {
                 },
                 {
                   text: `steps to starting a Limited Liability Company (LLC).`,
-                  url: `/`,
+                  url: `/research-topics/llc-info/steps-to-starting-a-limited-liability-company-llc/`,
                 },
               ],
             },
           ],
         },
         header4: `How to Create an LLC without Breaking the Bank`,
-        text4: `IncFile provides a cost effective service to help you create your LLC. We guide you through the process and handle most of the administrative steps, such as filing the articles of organization, on your behalf. Our basic package also provides a free registered agent service for the first year. If you're looking for help to start an LLC, our comprehensive online formation services provide outstanding value. `,
+        text4: `Incfile provides a cost effective service to help you create your LLC. We guide you through the process and handle most of the administrative steps, such as filing the articles of organization, on your behalf. Our basic package also provides a free registered agent service for the first year. If you're looking for help to start an LLC, our comprehensive online formation services provide outstanding value. `,
       },
       {
         header: `Who Can Start an LLC?`,
@@ -134,7 +134,7 @@ export const about = {
         text2: `It’s important to note that not all businesses can operate as LLCs. For example, businesses dealing with banking or insurance are typically prevented from forming as an LLC. There are also restrictions from state to state, for example California prevents some types of professionals from starting LLCs. To learn more about the specific regulations in your state when starting your LLC, check out Incfile's complete LLC state information.`,
         link: {
           text: `Learn more about LLC state information`,
-          url: `/`,
+          url: `/llc-state-information/`,
         },
       },
       {
@@ -143,7 +143,7 @@ export const about = {
         boxes: [`Texas`, `Delaware`, `Nevada`, `Florida`],
         link: {
           text: `See more business-friendly states`,
-          url: `/`,
+          url: `/llc-state-information/`,
         },
       },
       {
@@ -162,7 +162,7 @@ export const about = {
               },
               {
                 text: `annual report`,
-                url: `/`,
+                url: `/manage-your-company/annual-report/`,
               },
               {
                 text: `with your state’s Secretary of State.`,
@@ -173,8 +173,8 @@ export const about = {
                 text: `Reporting income earned (or lost) by your LLC on your personal tax return. Each member of an LLC will need to do this. If you're interested in how to save even more tax money by filing as an S Corporation, check out our`,
               },
               {
-                text: `S\u00A0Corporation Tax Calculator.`,
-                url: `/`,
+                text: `S Corporation Tax Calculator.`,
+                url: `/s-corporation-tax-calculator/`,
               },
             ],
             `Providing business reports as needed to other LLC members (this is not a legal; requirement, just best practice.)`,
@@ -193,219 +193,17 @@ export const state = {
   },
   button: {
     text: `Calculate my sales tax`,
-    url: `/`,
-  },
-  header2: `Statement of Information`,
-  table: {
-    rows: [
-      [
-        {
-          type: `header`,
-          text: `State Fee`,
-        },
-        {
-          type: `boxed`,
-          text: `$75`,
-        },
-      ],
-      [
-        {
-          type: `header`,
-          text: `State Filing Time`,
-        },
-        {
-          type: `text`,
-          text: `30 Business Days`,
-        },
-      ],
-      [
-        {
-          type: `header`,
-          text: `Expedited Filing Time`,
-        },
-        {
-          type: `text`,
-          text: `11 Business Days`,
-        },
-      ],
-    ],
-  },
-  header3: `California Compliance Requirements`,
-  header4: `Statement of Information`,
-  table2: {
-    rows: [
-      [
-        {
-          type: `header`,
-          text: `Frequency`,
-        },
-        {
-          type: `text`,
-          text: `Biennially`,
-        },
-      ],
-      [
-        {
-          type: `header`,
-          text: `Due Date:`,
-        },
-        {
-          type: `text`,
-          text: `During six-month period ending on last day of anniversary month of incorporation or qualification.`,
-        },
-      ],
-      [
-        {
-          type: `header`,
-          text: `Filing Fee:`,
-        },
-        {
-          type: `boxed`,
-          text: `$20`,
-        },
-      ],
-      [
-        {
-          type: `header`,
-          text: `Important:`,
-        },
-        {
-          type: `text`,
-          text: `The initial Statement of Information filing is due within 90 days of the entity formation date.`,
-        },
-      ],
-    ],
-  },
-  header5: `California Franchise Tax`,
-  table3: {
-    rows: [
-      [
-        {
-          type: `header`,
-          text: `Frequency:`,
-        },
-        {
-          type: `text`,
-          text: `Annually`,
-        },
-      ],
-      [
-        {
-          type: `header`,
-          text: `Fee:`,
-        },
-        {
-          type: `array`,
-          text: [
-            {
-              type: `boxed`,
-              text: `$800 (minimum)`,
-            },
-            {
-              type: `text`,
-              text: `The California Franchise Tax Board requires that all corporations registered in the State of California pay a franchise tax. For new corporations, the minimum franchise tax is $800 per year. However, Franchise Tax  is waived the 1st year for corporations but not LLCs. 
-              New corporations that incorporate in California  are exempt from the 1st year minimum tax, however the corporate owners are still responsible for paying the applicable franchise tax on any net income earned during the 1st year. Starting in the second year corporations are subject to the annual $800 minimum franchise tax rule.`,
-            },
-            {
-              type: `header`,
-              text: `(We do not assist in the filing of the Franchise Tax Report)`,
-            },
-          ],
-        },
-      ],
-    ],
+    url: `/sale-tax-calculator/`,
   },
   button2: {
     text: `Check for another state`,
-    url: `/`,
+    url: `/llc-state-information/`,
   },
 };
 
 export const service = {
   header: `How our service works`,
   text: `Take a moment to view our instructional video and see how easy it can be to get your business incorporated.`,
-};
-
-export const variants = {
-  header: `Select the package that works best for you`,
-  link: {
-    text: `Learn more`,
-    url: `/`,
-  },
-  cards: [
-    {
-      variant: ``,
-      header: `Silver`,
-      text: `Our core features for the lowest price`,
-      price: `100`,
-      button: {
-        text: `Get the Silver package`,
-        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC`,
-      },
-      fees: [
-        {
-          helpmark: `helpmark`,
-          text: `Package fee`,
-          price: `0`,
-        },
-        {
-          helpmark: `helpmark`,
-          text: `State fee`,
-          price: `100`,
-        },
-      ],
-      include: `The sliver services includes:`,
-      list: [`Prepare & Filing the Articles of Organization`, `Unlimited Name Searches`, `FREE Registered Agent for a year!`],
-    },
-    {
-      variant: `Most popular`,
-      header: `Gold`,
-      text: `Comprehensive features to get your business started`,
-      price: `249`,
-      button: {
-        text: `Get the Gold package`,
-        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC`,
-      },
-      fees: [
-        {
-          helpmark: `helpmark`,
-          text: `Package fee`,
-          price: `149`,
-        },
-        {
-          helpmark: `helpmark`,
-          text: `State fee`,
-          price: `100`,
-        },
-      ],
-      include: `The sliver package, and:`,
-      list: [`EIN Business Tax Number`, `IRS Form 2553`, `Operating Agreement`, `Banking Resolution`, `Express Shipping`, `Lifetime Company Alerts`, `Online Access Dashboard`, `Unlimited Phone & Email Support`, `Business Banking Account`, `Business Tax Consultation`],
-    },
-    {
-      variant: `Best value`,
-      header: `Platinum`,
-      text: `Full service features at the best value`,
-      price: `399`,
-      button: {
-        text: `Get the Platinum package`,
-        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC`,
-      },
-      fees: [
-        {
-          helpmark: `helpmark`,
-          text: `Package fee`,
-          price: `299`,
-        },
-        {
-          helpmark: `helpmark`,
-          text: `State fee`,
-          price: `100`,
-        },
-      ],
-      include: `The gold package, and:`,
-      list: [`Business Contract Templates`, `Expedited Filing`, `FedEx Delivery`, `Domain Name + Business Email`],
-    },
-  ],
 };
 
 export const faq = {
@@ -448,6 +246,6 @@ export const rocket = {
   text2: `Only $0 + State Fee to Launch Your Business.`,
   button: {
     text: `Start Now`,
-    url: `/`,
+    url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC`,
   },
 };
