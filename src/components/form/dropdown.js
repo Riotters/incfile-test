@@ -95,7 +95,7 @@ class Drop extends Component {
     }
 
     render () {
-        const defaultOption = this.state.selected;
+        const defaultOption = this.props.defaultSelected ?? this.state.selected;
     
         return (
             <Wrapper className={this.props.className}>
