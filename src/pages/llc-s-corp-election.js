@@ -13,7 +13,7 @@ import ObjectContent from "../atomic/partials/left-object-right-content";
 import Articles from "../components/partials/sections/articles";
 import { color, gradient } from "../components/styles/colors";
 import Accordion from "../components/accordion";
-import Benefits from "../components/partials/sections/benefits";
+import Benefits from "../atomic/sections/manage-your-company/manage-your-company/benefits";
 import ArrowLink from "../atomic/molecules/buttons/text";
 import H2Text from "../atomic/molecules/text-blocks/h2-text";
 import H3Text from "../atomic/molecules/text-blocks/h3-text";
@@ -148,7 +148,9 @@ const CorpElection = () => (
           {howSaveMoney.text2}
         </Paragraph>
         <Heading size="3">{howSaveMoney.header3}</Heading>
-        <Paragraph big bottomMargin="0">{howSaveMoney.text3}</Paragraph>
+        <Paragraph big bottomMargin="0">
+          {howSaveMoney.text3}
+        </Paragraph>
       </ContentObject>
       <ObjectContent object={Savings}>
         <Heading size="2" bottomMargin="80" style={{ textAlign: "left" }}>
@@ -158,7 +160,7 @@ const CorpElection = () => (
         <Heading size="3" bottomMargin="32">
           {taxCalculator.header2}
         </Heading>
-        <ArrowLink content={taxCalculator.link} bottomMargin="0"/>
+        <ArrowLink content={taxCalculator.link} bottomMargin="0" />
       </ObjectContent>
     </Example>
     <FairlSalary>
@@ -202,7 +204,7 @@ const CorpElection = () => (
             {behalfFile.text2}
             <a href={`${process.env.ORDER_URL}/form-order-now.php`}> {behalfFile.link} </a>
             {behalfFile.text3}
-            <a href="/research-topics/c-corporation-info/what-is-the-form-2553/"> {behalfFile.link2} </a>
+            <a href="/research-topics/c-corporation-info/form-2553/"> {behalfFile.link2} </a>
             {behalfFile.text4}
           </p>
         </TopImageBox>
