@@ -69,7 +69,7 @@ export const howToGuide = [
           question: `STEP 2: Choose a Unique Business Name for Your Idaho LLC`,
           answer: `<p>You will need a distinctive and original name for your LLC that’s not used by any other business in ID. To find out if another company is using your chosen business name, carry out a business entity name search on the ID Secretary of State website.</p></br>
             <p>There are a few rules you’ll need to follow when choosing an LLC name. You can find out more in our guide to naming your Idaho LLC.</p></br>
-            <p><a href="/" target="_blank">Learn about Idaho LLC business naming rules.</a></p>`,
+            <p><a href="/idaho-llc/how-to-name-your-llc/" target="_blank">Learn about Idaho LLC business naming rules.</a></p>`,
         },
         {
           question: `STEP 3: Provide an Official Address for Your ID LLC`,
@@ -80,7 +80,7 @@ export const howToGuide = [
           answer: `<p>Every ID LLC must have a “Registered Agent.” This is an official position; the Registered Agent is someone who receives official legal and tax correspondence and has responsibility for filing reports with the Idaho Secretary of State.</p></br>
             <p>This position can be filled by you, another manager in the business or a dedicated Registered Agent service. Your Registered Agent must have a physical street address in Idaho and must be present to receive important documents for your company during business hours.</p></br>
             <p>At Incfile, all of our packages include a Idaho Registered Agent service that is free for the first year and just $119 per year afterward. We also have a dashboard where you can log in and easily view any document your Registered Agent has received on your behalf.</p></br>
-            <p><a href="/" target="_blank">Learn more about Idaho Registered Agents</a></p>`,
+            <p><a href="/idaho-llc/registered-agents-idaho-llc/" target="_blank">Learn more about Idaho Registered Agents</a></p>`,
         },
         {
           question: `STEP 5: Get an Employer Identification Number (EIN) from the Internal Revenue Service`,
@@ -398,7 +398,7 @@ export const namingYourBusiness = [
   {
     type: `button`,
     content: {
-      text: `IncFile's DBA name service`,
+      text: `Incfile's DBA name service`,
       url: `/fictitious-business-or-trade-name/`,
     },
     theme: `primary48`,
@@ -489,7 +489,7 @@ export const namingYourBusiness = [
   {
     type: `button`,
     content: {
-      text: `IncFile trademark search and registration service`,
+      text: `Incfile trademark search and registration service`,
       url: `/trademark-name-search/`,
     },
     theme: `primary48`,
@@ -647,7 +647,7 @@ export const registeredAgent = [
   {
     type: `button`,
     content: {
-      text: `Order IncFile's Idaho registered agent service`,
+      text: `Order Incfile's Idaho registered agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -700,7 +700,7 @@ export const registeredAgent = [
   {
     type: `button`,
     content: {
-      text: `Incorporate your business through IncFile`,
+      text: `Incorporate your business through Incfile`,
       url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ/`,
     },
     theme: `primary48`,
@@ -742,7 +742,7 @@ export const registeredAgent = [
   {
     type: `button`,
     content: {
-      text: `Order IncFile's Idaho registered agent service`,
+      text: `Order Incfile's Idaho registered agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -893,7 +893,7 @@ export const feesAndRequirments = [
     marginBottom: 24,
   },
   {
-    type: `dynamic_ar_box`
+    type: `dynamic_ar_box`,
   },
   {
     type: `arrow-link`,
@@ -924,7 +924,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `Incorporate your Idaho LLC through IncFile today`,
+      text: `Incorporate your Idaho LLC through Incfile today`,
       url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ/`,
     },
     theme: `primary48`,
@@ -944,7 +944,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `Get an EIN for your Idaho LLC through IncFile`,
+      text: `Get an EIN for your Idaho LLC through Incfile`,
       url: `/manage-your-company/tax-id-ein/`,
     },
     theme: `primary48`,
@@ -964,7 +964,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `Get a foreign qualification/certificate of authority through IncFile`,
+      text: `Get a foreign qualification/certificate of authority through Incfile`,
       url: `/manage-your-company/foreign-qualification/`,
     },
     theme: `primary48`,
@@ -982,7 +982,7 @@ export const feesAndRequirments = [
     marginBottom: 24,
   },
   {
-    type: `dynamic_filing_requirement`
+    type: `dynamic_filing_requirement`,
   },
   {
     type: `text`,
@@ -997,7 +997,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `IncFile's Idaho annual report filing service`,
+      text: `Incfile's Idaho annual report filing service`,
       url: `/manage-your-company/annual-report/`,
     },
     theme: `primary48`,
@@ -1055,7 +1055,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `IncFile's Idaho business license research package`,
+      text: `Incfile's Idaho business license research package`,
       url: `/business-license-research-package/`,
     },
     theme: `primary48`,
@@ -1102,7 +1102,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `IncFile's Idaho fictitious name service`,
+      text: `Incfile's Idaho fictitious name service`,
       url: `/fictitious-business-or-trade-name/`,
     },
     theme: `primary48`,
@@ -1122,7 +1122,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `IncFile's Idaho registered agent service`,
+      text: `Incfile's Idaho registered agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -1162,7 +1162,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `IncFile's Idaho articles of amendment service`,
+      text: `Incfile's Idaho articles of amendment service`,
       url: `/manage-your-company/amendment/`,
     },
     theme: `primary48`,
@@ -1182,7 +1182,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `IncFile's Idaho certificate of good standing service`,
+      text: `Incfile's Idaho certificate of good standing service`,
       url: `/manage-your-company/certificate-of-good-standing/`,
     },
     theme: `primary48`,
@@ -1412,7 +1412,7 @@ export const businessTaxes = [
   {
     type: `button`,
     content: {
-      text: `IncFile form 2553 S Corporation tax election for an LLC service`,
+      text: `Incfile form 2553 S Corporation tax election for an LLC service`,
       url: `/llc-s-corp-election/`,
     },
     theme: `primary48`,

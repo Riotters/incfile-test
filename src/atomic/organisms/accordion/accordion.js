@@ -93,7 +93,7 @@ const PanelWrapper = styled.div`
     line-height: 24px;
 
     a {
-      color: ${color.orange1};
+      color: ${color.blue1};
       font-size: inherit;
       line-height: inherit;
       text-decoration: none;
@@ -107,7 +107,7 @@ const PanelWrapper = styled.div`
     a {
       font-size: inherit;
       line-height: inherit;
-      color: ${color.orange1};
+      color: ${color.blue1};
       text-decoration: none;
     }
   }
@@ -243,7 +243,7 @@ const Accordion = ({ content, curve, curveRight, curveRightBottom, curveLeft, cu
                   ) : null}
                   {typeof item.answer === "object" ? (
                     <Paragraph bottomMargin="0" mixed>
-                      {item.answer.map((el) => (el.url ? <Link to={el.url}>{` ${parse(el.text)} `}</Link> : el.text))}
+                      {item.answer.map((el) => (el.url ? <Link to={el.url}>{` ${parse(el.text)} `}</Link> : parse(el.text)))}
                     </Paragraph>
                   ) : null}
 
@@ -274,7 +274,7 @@ const Accordion = ({ content, curve, curveRight, curveRightBottom, curveLeft, cu
                         {e.type === "arrow-links" &&
                           e.content.map((link) => (
                             <ArrowLink url={link.url} style={link.style}>
-                              {link.text}
+                              {parse(link.text)}
                             </ArrowLink>
                           ))}
 

@@ -49,7 +49,7 @@ const HeaderContent = styled.div`
   }
 
   .numeration {
-    font-family: "Avenir-Roman", sans-serif;
+    font-family: "Avenir", sans-serif;
     font-size: 16px;
     line-height: 1.5;
     color: #4e4e4e;

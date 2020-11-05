@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { color } from "../../../atoms/styles/colors";
 import { shadow } from "../../../atoms/styles/shadows";
-import HeadingCenter from "../../../partials/heading-center"
+import HeadingCenter from "../../../partials/heading-center";
 import ContentCenter from "../../../partials/content-center";
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-right-transparent-blue.inline.svg";
@@ -10,7 +10,7 @@ import Oval2SVG from "../../../../images/ovals/top-left-transparent-blue2.inline
 import CurveSVG from "../../../../images/curves/top-left-bottom-right.inline.svg";
 import CircleIcon from "../../../../components/icons/circle";
 import ArrowSVG from "../../../../images/arrow-circle.inline.svg";
-import { states  } from "../../../../components/states";
+import { states } from "../../../../components/states";
 
 const Requirements = styled.section`
   position: relative;
@@ -76,34 +76,28 @@ const States = styled.div`
 `;
 
 const RequirementsSection = ({ className, content }) => (
-    <Requirements className={className}>
-        <Oval className="oval" height="570" width="570" top="0" right="0">
-            <OvalSVG />
-        </Oval>
-        <Oval className="oval" height="420" width="420" top="46" left="0">
-            <Oval2SVG />
-        </Oval>
-        <HeadingCenter
-            headline={content.header}
-            text={content.text}
-            headlineWidth="600"
-            linkText={content.link.text}
-            linkUrl={content.link.url}
-        />
-        <ContentCenter>
-            <States>
-                <CurveSVG />
-                {states.state.map((state) => (
-                <ArrowButton href={state.url}>
-                    {state.name}
-                    <CircleIcon transform="rotate(90deg)" circleColor={color.orange3} iconColor={color.orange1}>
-                    <ArrowSVG />
-                    </CircleIcon>
-                </ArrowButton>
-                ))}
-            </States>
-        </ContentCenter>
-    </Requirements>
+  <Requirements className={className}>
+    <Oval className="oval" height="570" width="570" top="0" right="0">
+      <OvalSVG />
+    </Oval>
+    <Oval className="oval" height="420" width="420" top="46" left="0">
+      <Oval2SVG />
+    </Oval>
+    <HeadingCenter headline={content.header} text={content.text} headlineWidth="600" linkText={content.link.text} linkUrl={content.link.url} />
+    <ContentCenter>
+      <States>
+        <CurveSVG />
+        {states.state.map((state) => (
+          <ArrowButton href={state.url} target="_blank" rel="noopener noreferrer">
+            {state.name}
+            <CircleIcon transform="rotate(90deg)" circleColor={color.orange3} iconColor={color.orange1}>
+              <ArrowSVG />
+            </CircleIcon>
+          </ArrowButton>
+        ))}
+      </States>
+    </ContentCenter>
+  </Requirements>
 );
-  
+
 export default RequirementsSection;

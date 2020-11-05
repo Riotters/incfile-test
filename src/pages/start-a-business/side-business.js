@@ -237,7 +237,7 @@ const SideBusiness = () => (
           </CountingTextBoxed>
 
           <Paragraph big mixed={true} style={{ marginTop: "50px" }}>
-            We’ve got the perfect <Link to="/">guide to writing your business plan.</Link>
+            We’ve got the perfect <Link to="/blog/post/keys-successful-business-plan/">guide to writing your business plan.</Link>
           </Paragraph>
         </CenterBox>
       </Container>
@@ -270,12 +270,7 @@ const SideBusiness = () => (
             widthUnit="%"
           >
             <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-              <FlexLink to="/">
-                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                  <ArrowSVG />
-                </IconCircle>
-                Sole Proprietorship
-              </FlexLink>
+              Sole Proprietorship
             </Paragraph>
 
             <Paragraph big>This is the "default" business structure and is what your side business will be if you decide not to create a more formal structure. We don't recommend this type of business as it doesn't give you the legal protections you need.</Paragraph>
@@ -296,12 +291,7 @@ const SideBusiness = () => (
             widthUnit="%"
           >
             <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-              <FlexLink to="/">
-                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                  <ArrowSVG />
-                </IconCircle>
-                Partnership
-              </FlexLink>
+              Partnership
             </Paragraph>
 
             <Paragraph big>This is a type of business that is formed when two or more people work together without creating a more formal business entity. Like a sole proprietorship, it may not give you all the protections your side business may need.</Paragraph>
@@ -322,12 +312,7 @@ const SideBusiness = () => (
             widthUnit="%"
           >
             <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-              <FlexLink to="/">
-                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                  <ArrowSVG />
-                </IconCircle>
-                Limited Liability Company or LLC
-              </FlexLink>
+              Limited Liability Company or LLC
             </Paragraph>
 
             <Paragraph big>The most common type of business entity, an LLC is fast, simple and inexpensive to set up and maintain. It protects your personal finances and assets and is a great way to start your side business.</Paragraph>
@@ -348,12 +333,7 @@ const SideBusiness = () => (
             widthUnit="%"
           >
             <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-              <FlexLink to="/">
-                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                  <ArrowSVG />
-                </IconCircle>
-                S Corporation
-              </FlexLink>
+              S Corporation
             </Paragraph>
 
             <Paragraph big>This is a more complex type of business and isn't generally recommended for smaller organization.</Paragraph>
@@ -374,23 +354,22 @@ const SideBusiness = () => (
             widthUnit="%"
           >
             <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-              <FlexLink to="/">
-                <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                  <ArrowSVG />
-                </IconCircle>
-                C Corporation
-              </FlexLink>
+              C Corporation
             </Paragraph>
 
             <Paragraph big>These are the largest and most complex types of businesses and are far more than the average entrepreneur or business owner will need.</Paragraph>
           </TextBlockWithImage>
 
           <Paragraph big style={{ paddingTop: "48px", paddingBottom: 0 }} mixed={true}>
-            Our <Link to="/">in-depth guide</Link> covers more of the advantages and disadvantages of different types of business entities, and you’ve still got questions, you can read our answers to frequently asked questions on <Link to="/">choosing the right business structure</Link>.
+            Our <Link to="/business-entity-comparison/">in-depth guide</Link> covers more of the advantages and disadvantages of different types of business entities, and you’ve still got questions, you can read our answers to frequently asked questions on{" "}
+            <a herf="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/" target="_blank" rel="noopener noreferrer">
+              choosing the right business structure
+            </a>
+            .
           </Paragraph>
           <Paragraph big style={{ paddingTop: "48px", paddingBottom: 0 }} mixed={true}>
             In most cases, our recommendation for a side business would be to create an LLC. See our
-            <Link to="/">complete guide to creating an LLC</Link> to learn everything you need to do, or and have Incfile register your business for you. No matter what state you’re in, we’ve got you covered.
+            <Link to="/form-an-llc/">complete guide to creating an LLC</Link> to learn everything you need to do, or and have Incfile register your business for you. No matter what state you’re in, we’ve got you covered.
           </Paragraph>
 
           <Button theme="primary48" width="365px" arrow content={{ url: `${process.env.ORDER_URL}/form-order-now.php`, text: `Start your business with us, today!` }} />
@@ -544,12 +523,6 @@ const TabsWrapper = styled.div`
   @media (min-width: 992px) {
     margin-top: 21px;
   }
-`;
-
-const FlexLink = styled(Link)`
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
 `;
 
 export default SideBusiness;

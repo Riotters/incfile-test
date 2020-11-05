@@ -15,7 +15,7 @@ import Articles from "../../sections/articles";
 // Content
 import { top, compare, requirements } from "../../../static/states-llc/arizona/home";
 import { rocket } from "../../../static/states-llc/arizona/general";
-import { variants, subscription } from "../../../static/learning-center-entity/state-information-california";
+import { subscription } from "../../../static/learning-center-entity/state-information-california";
 
 const Wrapper = styled.div`
   display: flex;
@@ -65,7 +65,7 @@ const LLCLayout = ({ children, data }) => {
             </WrapperContent>
             <Rocket content={rocket} />
             <Requirements content={requirements} data={data} />
-            <Variants content={variants} data={data} />
+            <Variants data={data} />
             <Compare content={compare} data={data} />
             <Subscription content={subscription} />
             <Articles />

@@ -4,7 +4,6 @@ import { color } from "../../../atoms/styles/colors";
 import Tabs from "../../../organisms/tabs/after-forming-llc-tabs";
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-pink.inline.svg";
-import Oval2SVG from "../../../../images/ovals/bottom-right-transparent-babyblue3.inline.svg";
 
 const About = styled.section`
   position: relative;
@@ -21,12 +20,12 @@ const About = styled.section`
   }
 `;
 
-const AboutSection = ({ className, content }) => (
+const AboutSection = ({ className, content, openHsForm }) => (
   <About className={className}>
     <Oval className="oval" height="570" width="570" y="-40">
       <OvalSVG />
     </Oval>
-    <Tabs content={content.tabs} />
+    <Tabs content={content.tabs} openHsForm={openHsForm} />
   </About>
 );
 

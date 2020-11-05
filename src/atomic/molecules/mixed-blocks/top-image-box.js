@@ -33,6 +33,10 @@ const Wrapper = styled.div`
   }
 
   .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100% - 128px);
     padding: 24px 24px 0;
   }
 
@@ -52,10 +56,12 @@ const TopImageBox = ({ className, image, color, content, noShadow }) => {
     <Wrapper className={className} color={color} noShadow={noShadow}>
       <div className="top">{image && <Image filename={image} />}</div>
       <div className="content">
-        <Heading size="4" bottomMargin="16">
-          {content.header}
-        </Heading>
-        <Paragraph bottomMargin="0">{content.text}</Paragraph>
+        <div>
+          <Heading size="4" bottomMargin="16">
+            {content.header}
+          </Heading>
+          <Paragraph bottomMargin="0">{content.text}</Paragraph>
+        </div>
         {content.link && <ArrowLink content={content.link} bottomMargin="0" topMargin="24" />}
       </div>
     </Wrapper>

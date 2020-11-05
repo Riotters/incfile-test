@@ -19,7 +19,7 @@ import Layout from "../components/layout";
 
 // text
 import { seo, formCheck } from "../static/other/business-name-generator";
-import FormSection from "../atomic/sections/other/business-name-generator/form-check-name";
+import BusinessNameSearchForm from "../atomic/organisms/forms/business-name-search-form";
 
 const Wrapper = styled.div`
   position: relative;
@@ -39,45 +39,41 @@ const Wrapper = styled.div`
 `;
 
 const CheckAvailabilityName = ({ location }) => {
-  let entityName = '';
+    const [entityName, setEntityName] = React.useState('');
+    
+    React.useEffect(() => {
+        let name = typeof window !== `undefined` ? location.state.businessName : '';    
+        setEntityName(name);
+    }, []);
+    return (
+        <Layout>
+            <SEO title={seo.title} description={seo.desc} />
 
-  if (typeof window !== `undefined`) {
-    entityName = location.state?.entityName;
-  }
-  return (
-    <Layout>
-      <SEO title={seo.title} description={seo.desc} />
+            <Wrapper>
+                <Oval className="oval" height="570" width="570" bottom="0" left="0" y="-50">
+                    <OvalSVG />
+                </Oval>
 
-      <Wrapper>
-        <Oval className="oval" height="570" width="570" bottom="0" left="0" y="-50">
-          <OvalSVG />
-        </Oval>
+                <Oval className="oval" height="570" width="570" top="0" right="0" y="30">
+                    <OvalSVG2 />
+                </Oval>
 
-        <Oval className="oval" height="570" width="570" top="0" right="0" y="30">
-          <OvalSVG2 />
-        </Oval>
-
-        <Container>
-          <Link to="/business-name-generator/" className="back-link">
-            <span>
-              <ArrowLeft />
-            </span>
-            Back
-          </Link>
-
-          <ContentCenter>
-            <HeadingCenter headline={formCheck.header} text={formCheck.text} />
-            <RelativeElement maxWidth="670px" margin="60px 0 0 0">
-              <AbsoluteShapCure rotate={90} right="70" bottom="-25">
-                <ShapeCurve color={color.blue} />
-              </AbsoluteShapCure>
-              <FormSection content={formCheck.form} propEntityName={entityName} />
-            </RelativeElement>
-          </ContentCenter>
-        </Container>
-      </Wrapper>
-    </Layout>
-  )
+                <Container>
+                    <Link to="/business-name-generator/" className="back-link"> <span> <ArrowLeft /> </span> Back </Link>
+                    <ContentCenter>
+                        <HeadingCenter headline={formCheck.header} text={formCheck.text} />
+                        <RelativeElement maxWidth="670px" margin="60px 0 0 0">
+                            <AbsoluteShapCure rotate={90} right="70" bottom="-25">
+                                <ShapeCurve color={color.blue} />
+                            </AbsoluteShapCure>
+                            {/* <FormSection content={formCheck.form} propEntityName={entityName} /> */}
+                            <BusinessNameSearchForm propEntityName={entityName} />
+                        </RelativeElement>
+                    </ContentCenter>
+                </Container>
+            </Wrapper>
+        </Layout>
+    );
 };
 
 export default CheckAvailabilityName;

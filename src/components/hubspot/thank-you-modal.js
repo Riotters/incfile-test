@@ -17,11 +17,12 @@ const Wrapper = styled.div`
     padding: 56px;
 `;
 
-export const ThankYouContent = ({ content, modalExit }) => {
+export const ThankYouContent = ({ modalExit, isBusinesNameSearch }) => {
+    const text = isBusinesNameSearch ? `You'll be notified via email with your search results. If your name is not available, you will have the opportunity to submit a new name.` : `You'll be notified via email with the link download.`;
     return (
         <Wrapper>
-            <Heading size={2}>Thank You!</Heading>
-            <Paragraph bottomMargin={56}>Thank you for your submission. Click below to download your guide!</Paragraph>
+            <Heading size={2}>Thanks for submitting the form.</Heading>
+            <Paragraph bottomMargin={56}>{text}</Paragraph>
             <Button arrow theme="primary56" className="modal-close" onClick={modalExit} content={{ text: `Close`, url: `#` }} />
         </Wrapper>
     );

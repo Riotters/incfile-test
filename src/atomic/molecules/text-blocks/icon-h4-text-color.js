@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import parse from "html-react-parser";
 import Colorbox from "../../atoms/boxes/color-box";
 import { Heading } from "../../atoms/typography/heading";
 import { Paragraph } from "../../atoms/typography/paragraph";
@@ -74,10 +75,16 @@ const IconTextColorBox = ({ className, Icon, color, content, bottomMargin, round
         <div className="icon-wrapper">
           <Icon />
         </div>
-        <Heading size="4" bottomMargin="16">
-          {content.header}
-        </Heading>
-        {content.text && <Paragraph bottomMargin="0">{content.text}</Paragraph>}
+        {content.header ? (
+          <Heading size="4" bottomMargin="16">
+            {content.header}
+          </Heading>
+        ) : null}
+        {content.text && (
+          <Paragraph mixed bottomMargin="0">
+            {parse(content.text)}
+          </Paragraph>
+        )}
         {content.link && <ArrowLink className="more-info-link" content={content.link} topMargin={8} />}
       </Colorbox>
     </Wrapper>

@@ -41,7 +41,7 @@ const TooltipContent = styled.div`
   flex-direction: row;
   align-items: center;
   padding: 12px;
-  font-family: "Avenir-Roman", sans-serif;
+  font-family: "Avenir", sans-serif;
   font-size: 16px;
   font-weight: normal;
   color: #4e4e4e;

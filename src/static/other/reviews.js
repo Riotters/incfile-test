@@ -135,10 +135,10 @@ export const trust = {
   header: `Trusted by over <span style="color:#fd8550">500,000</span> business owners worldwide since 2004!`,
   button1: {
     text: `See Plans & Pricing`,
-    url: `/`,
+    url: `${process.env.ORDER_URL}/form-order-now.php`,
   },
   button2: {
     text: `Explore more benefits`,
-    url: `/`,
+    url: `/why-choose-incfile/`,
   },
 };
