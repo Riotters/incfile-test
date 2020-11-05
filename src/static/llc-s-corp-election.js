@@ -13,7 +13,7 @@ export const about = {
   header: `Reducing Your Income Tax`,
   text: `The SS4 is the IRS form required to obtain an EIN (Employer Identification Number, frequently called a Tax ID number). 
     The EIN/Tax ID number can be thought of as a Social Security Number for your business. It is usually required to open a bank account in 
-    the name of the business and to properly pay and account for any wage/payroll employees of your company. IncFile will 
+    the name of the business and to properly pay and account for any wage/payroll employees of your company. Incfile will 
     obtain your federal EIN electronically and have it back to you via email within one business day.`,
   button: [
     {

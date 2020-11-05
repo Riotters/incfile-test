@@ -33,7 +33,7 @@ const BoxWrapper = styled.div`
 `;
 
 const TitleBox = styled.div`
-  font-family: Avenir-Roman, sans-serif;
+  font-family: Avenir, sans-serif;
   width: 100%;
   max-width: 220px;
   font-size: 16px;

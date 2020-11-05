@@ -28,7 +28,7 @@ export const related = {
         },
         {
             header: `What is a Nonprofit Corporation?`,
-            url: `/research-topics/nonprofit-info/what-is-a-nonprofit-corporation/`,
+            url: `/research-topics/nonprofit-info/what-is-a-nonprofit/`,
         },
         {
             header: `What Steps Need to be Taken to Form a Nonprofit Corporation?`,

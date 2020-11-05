@@ -150,7 +150,7 @@ const Title = styled.h5`
 `;
 
 const Content = styled.p`
-  font-family: Avenir-Roman;
+  font-family: Avenir;
   font-size: 16px;
   line-height: 24px;
 `;

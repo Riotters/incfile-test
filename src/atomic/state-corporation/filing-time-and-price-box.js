@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import { color } from '../../components/styles/colors';
 import GenericTable from "../organisms/tables/generic-table";
 import TitleWithInfoBox from "../molecules/blocks/table-title";

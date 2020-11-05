@@ -44,12 +44,6 @@ const Oval = styled.div`
   }
 `;
 
-const FlexLink = styled(Link)`
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-`;
-
 const BusinessStructure = () => (
   <OrangeContainer>
     <Oval>
@@ -78,12 +72,7 @@ const BusinessStructure = () => (
           widthUnit="%"
         >
           <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-            <FlexLink to="/">
-              <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                <ArrowSVG />
-              </IconCircle>
-              Sole Proprietorship
-            </FlexLink>
+            Sole Proprietorship
           </Paragraph>
 
           <Paragraph big>If you don’t choose to form a legal business entity for your dog walking, pet sitting or other business, you will be a sole proprietor by default. This won’t give you the legal protections you need, so we do not recommend this.</Paragraph>
@@ -104,12 +93,7 @@ const BusinessStructure = () => (
           widthUnit="%"
         >
           <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-            <FlexLink to="/">
-              <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                <ArrowSVG />
-              </IconCircle>
-              Partnership
-            </FlexLink>
+            Partnership
           </Paragraph>
 
           <Paragraph big>This is a type of business that is formed when two or more people work together without creating a more formal business entity. Like a sole proprietorship, it may not give you all the protections your dog walking or pet sitting business may need.</Paragraph>
@@ -130,12 +114,7 @@ const BusinessStructure = () => (
           widthUnit="%"
         >
           <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-            <FlexLink to="/">
-              <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                <ArrowSVG />
-              </IconCircle>
-              Limited Liability Company or LLC
-            </FlexLink>
+            Limited Liability Company or LLC
           </Paragraph>
 
           <Paragraph big>The most common type of business entity. An LLC is fast, simple and inexpensive to set up and maintain. It protects your personal finances and assets and is a great way to start your dog-related business.</Paragraph>
@@ -156,12 +135,7 @@ const BusinessStructure = () => (
           widthUnit="%"
         >
           <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-            <FlexLink to="/">
-              <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                <ArrowSVG />
-              </IconCircle>
-              S Corporation
-            </FlexLink>
+            S Corporation
           </Paragraph>
 
           <Paragraph big>This is a more complex type of business and isn't generally recommended for smaller organizations.</Paragraph>
@@ -182,24 +156,22 @@ const BusinessStructure = () => (
           widthUnit="%"
         >
           <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-            <FlexLink to="/">
-              <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                <ArrowSVG />
-              </IconCircle>
-              C Corporation
-            </FlexLink>
+            C Corporation
           </Paragraph>
 
           <Paragraph big>These are the largest and most complex types of businesses and are typically far more than the average fitness entrepreneur will need.</Paragraph>
         </TextBlockWithImage>
 
-        <Paragraph big mixed={true} style={{ marginBottom: "48px", paddingBottom: 0 }}>
-          For more information on the advantages and disadvantages of different types of businesses, please <Link to="/">see our in-depth guide</Link>. If you’ve still got questions,{" "}
-          <Link to="/">we’ve answered them to help you choose the right business structure for your dog walking or pet sitting business</Link>.
+        <Paragraph big style={{ paddingTop: "48px", paddingBottom: 0 }} mixed={true}>
+          For more information on the advantages and disadvantages of different types of businesses, <Link to="/business-entity-comparison/">please see our in-depth guide</Link>. If you’ve still got questions,{" "}
+          <a href="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/" target="_blank" rel="noopener noreferrer">
+            we’ve answered them to help you choose the right business structure
+          </a>{" "}
+          for your daycare business.
         </Paragraph>
         <Paragraph big mixed={true} style={{ marginBottom: "48px", paddingBottom: 0 }}>
-          In most cases, our recommendation for your dog walking or pet sitting business would be to create an LLC. We’ve <Link to="/">got a complete guide</Link>
-          to everything you need to do.<Link to="/"> LLC formation does vary from state to state</Link>, but we’ve got you covered, wherever you are.
+          In most cases, our recommendation for your dog walking or pet sitting business would be to create an LLC. We’ve <Link to="/form-an-llc/">got a complete guide</Link>
+          to everything you need to do.<Link to="/llc-state-information/"> LLC formation does vary from state to state</Link>, but we’ve got you covered, wherever you are.
         </Paragraph>
 
         <Button theme="primary48" width="365px" arrow content={{ url: `${process.env.ORDER_URL}/form-order-now.php`, text: `Start your business with us, today!` }} />

@@ -362,3 +362,13 @@ export const guide = {
     url: `/`,
   },
 };
+
+export const hsForm = {
+    header: `Download our "What to Do After Formation" Guide.`,
+    text: `You filed your Articles of Organization and started your LLC—now what? Here are the most important next steps to ensuring your business is successful.`,
+    hs_form_id: `f8b25ab5-7a9a-4f21-b7db-425ede0e6750`,
+    button: {
+      text: "Download now",
+      url: "/",
+    },
+  };

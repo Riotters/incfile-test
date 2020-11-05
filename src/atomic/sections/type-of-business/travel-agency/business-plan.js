@@ -1,16 +1,16 @@
 import React from "react";
 import styled from "styled-components";
-import {color} from "../../../../components/styles/colors";
-import {Heading} from "../../../atoms/typography/heading";
+import { color } from "../../../../components/styles/colors";
+import { Heading } from "../../../atoms/typography/heading";
 import CountingTextBoxed from "../../../molecules/text-blocks/counting-text-boxed";
-import {Paragraph} from "../../../atoms/typography/paragraph";
+import { Paragraph } from "../../../atoms/typography/paragraph";
 import Container from "../../../container";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-orange2.inline.svg";
-import {Link} from "gatsby";
+import { Link } from "gatsby";
 
 const Wrapper = styled.div`
-    position: relative;
-    background-color: ${color.orange3};
+  position: relative;
+  background-color: ${color.orange3};
 `;
 
 const BusinessOwnerResponsibilities = styled.section`
@@ -19,9 +19,8 @@ const BusinessOwnerResponsibilities = styled.section`
   padding-bottom: 64px;
   width: 100%;
   max-width: 770px;
-  
+
   @media (min-width: 770px) {
-    
     margin: 0 auto;
   }
 
@@ -40,11 +39,11 @@ const Oval = styled.div`
   left: 0;
   top: 71px;
   width: 100%;
-  
-  @media (min-width: 420px){
+
+  @media (min-width: 420px) {
     width: 420px;
   }
-`
+`;
 
 const OvalCenter = styled.div`
   position: absolute;
@@ -52,106 +51,99 @@ const OvalCenter = styled.div`
   bottom: 361px;
   width: 100%;
   transform: scaleX(-1);
-  
-  @media (min-width: 720px){
+
+  @media (min-width: 720px) {
     width: 720px;
   }
-`
+`;
 
 const BusinessPlan = () => (
-    <Wrapper style={{position: "relative"}}>
-        <Oval>
-            <OvalSVG/>
-        </Oval>
-        <OvalCenter>
-            <OvalSVG/>
-        </OvalCenter>
-        <Container>
-            <BusinessOwnerResponsibilities>
-                <Heading size={4} className="title">
-                    Your Travel Agency Needs
-                    a Business Plan
-                </Heading>
-                <Paragraph big>
-                    Profit margins in travel agency businesses can be tight (between 6 and 12 percent), so you need to stay on top of your finances and business planning.
-                </Paragraph>
+  <Wrapper style={{ position: "relative" }}>
+    <Oval>
+      <OvalSVG />
+    </Oval>
+    <OvalCenter>
+      <OvalSVG />
+    </OvalCenter>
+    <Container>
+      <BusinessOwnerResponsibilities>
+        <Heading size={4} className="title">
+          Your Travel Agency Needs a Business Plan
+        </Heading>
+        <Paragraph big>Profit margins in travel agency businesses can be tight (between 6 and 12 percent), so you need to stay on top of your finances and business planning.</Paragraph>
 
-                <Paragraph big>
-                    A business plan will help you decide and define how you’re going to run your travel agency business, where you will get money, how you will market your tourism services, how you will create your sales plan and what you envision for your profitability and future growth.
-                </Paragraph>
+        <Paragraph big>
+          A business plan will help you decide and define how you’re going to run your travel agency business, where you will get money, how you will market your tourism services, how you will create your sales plan and what you envision for your profitability and future growth.
+        </Paragraph>
 
-                <Paragraph big style={{fontWeight: "bold"}}>
-                    All travel agencies need a solid business model, which is how you will generate sales, provide services and make money.
-                </Paragraph>
+        <Paragraph big style={{ fontWeight: "bold" }}>
+          All travel agencies need a solid business model, which is how you will generate sales, provide services and make money.
+        </Paragraph>
 
-                <Paragraph big>
-                    Think about your travel and tourism business model now, because it’s better to have that in place so you can start acquiring customers and generating revenue from day one.
-                </Paragraph>
+        <Paragraph big>Think about your travel and tourism business model now, because it’s better to have that in place so you can start acquiring customers and generating revenue from day one.</Paragraph>
 
-                <Paragraph big>
-                    Business plans do vary slightly, but they should all cover the following areas:
-                </Paragraph>
+        <Paragraph big>Business plans do vary slightly, but they should all cover the following areas:</Paragraph>
 
-                <CountingTextBoxed number={1}>
-                    <Paragraph bottomPadding={0} bottomMargin={0}>
-                        An executive summary with the most important points from your business plan
-                    </Paragraph>
-                </CountingTextBoxed>
+        <CountingTextBoxed number={1}>
+          <Paragraph bottomPadding={0} bottomMargin={0}>
+            An executive summary with the most important points from your business plan
+          </Paragraph>
+        </CountingTextBoxed>
 
-                <CountingTextBoxed number={2}>
-                    <Paragraph bottomPadding={0} bottomMargin={0}>
-                        Your goals and what you hope to achieve with your travel agency business
-                    </Paragraph>
-                </CountingTextBoxed>
+        <CountingTextBoxed number={2}>
+          <Paragraph bottomPadding={0} bottomMargin={0}>
+            Your goals and what you hope to achieve with your travel agency business
+          </Paragraph>
+        </CountingTextBoxed>
 
-                <CountingTextBoxed number={3}>
-                    <Paragraph bottomPadding={0} bottomMargin={0}>
-                        A description of your travel agency business, including background information, your chosen niche and context
-                    </Paragraph>
-                </CountingTextBoxed>
+        <CountingTextBoxed number={3}>
+          <Paragraph bottomPadding={0} bottomMargin={0}>
+            A description of your travel agency business, including background information, your chosen niche and context
+          </Paragraph>
+        </CountingTextBoxed>
 
-                <CountingTextBoxed number={4}>
-                    <Paragraph bottomPadding={0} bottomMargin={0}>
-                        A market analysis and likely demand
-                    </Paragraph>
-                </CountingTextBoxed>
+        <CountingTextBoxed number={4}>
+          <Paragraph bottomPadding={0} bottomMargin={0}>
+            A market analysis and likely demand
+          </Paragraph>
+        </CountingTextBoxed>
 
-                <CountingTextBoxed number={5}>
-                    <Paragraph bottomPadding={0} bottomMargin={0}>
-                        An overview of how your travel agency business is structured
-                    </Paragraph>
-                </CountingTextBoxed>
+        <CountingTextBoxed number={5}>
+          <Paragraph bottomPadding={0} bottomMargin={0}>
+            An overview of how your travel agency business is structured
+          </Paragraph>
+        </CountingTextBoxed>
 
-                <CountingTextBoxed number={6}>
-                    <Paragraph bottomPadding={0} bottomMargin={0}>
-                        Your business model
-                    </Paragraph>
-                </CountingTextBoxed>
+        <CountingTextBoxed number={6}>
+          <Paragraph bottomPadding={0} bottomMargin={0}>
+            Your business model
+          </Paragraph>
+        </CountingTextBoxed>
 
-                <CountingTextBoxed number={7}>
-                    <Paragraph bottomPadding={0} bottomMargin={0}>
-                        How you will market and sell your offerings
-                    </Paragraph>
-                </CountingTextBoxed>
+        <CountingTextBoxed number={7}>
+          <Paragraph bottomPadding={0} bottomMargin={0}>
+            How you will market and sell your offerings
+          </Paragraph>
+        </CountingTextBoxed>
 
-                <CountingTextBoxed number={8}>
-                    <Paragraph bottomPadding={0} bottomMargin={0}>
-                        Financial projections, revenue and profitability
-                    </Paragraph>
-                </CountingTextBoxed>
+        <CountingTextBoxed number={8}>
+          <Paragraph bottomPadding={0} bottomMargin={0}>
+            Financial projections, revenue and profitability
+          </Paragraph>
+        </CountingTextBoxed>
 
-                <CountingTextBoxed number={9}>
-                    <Paragraph bottomPadding={0} bottomMargin={0}>
-                        Appendices
-                    </Paragraph>
-                </CountingTextBoxed>
+        <CountingTextBoxed number={9}>
+          <Paragraph bottomPadding={0} bottomMargin={0}>
+            Appendices
+          </Paragraph>
+        </CountingTextBoxed>
 
-                <Paragraph big style={{marginTop: "50px"}} mixed={true}>
-                    We’ve got the perfect <Link to="/">guide to writing your business plan.</Link>
-                </Paragraph>
-            </BusinessOwnerResponsibilities>
-        </Container>
-    </Wrapper>
+        <Paragraph big style={{ marginTop: "50px" }} mixed={true}>
+          We’ve got the perfect <Link to="/blog/post/keys-successful-business-plan/">guide to writing your business plan.</Link>
+        </Paragraph>
+      </BusinessOwnerResponsibilities>
+    </Container>
+  </Wrapper>
 );
 
 export default BusinessPlan;

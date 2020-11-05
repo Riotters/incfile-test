@@ -45,12 +45,6 @@ const Oval = styled.div`
   }
 `;
 
-const FlexLink = styled(Link)`
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-`;
-
 const CoachBusinessStructure = () => (
   <OrangeContainer>
     <Oval>
@@ -79,12 +73,7 @@ const CoachBusinessStructure = () => (
           widthUnit="%"
         >
           <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed>
-            <FlexLink to="">
-              <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                <ArrowSVG />
-              </IconCircle>
-              Sole Proprietorship
-            </FlexLink>
+            Sole Proprietorship
           </Paragraph>
 
           <Paragraph big>This is the "default" business structure and is what your life or business coaching venture will be if you decide not to create a more formal structure. We don't recommend this type of business as it doesn't give you the legal protections you need.</Paragraph>
@@ -105,12 +94,7 @@ const CoachBusinessStructure = () => (
           widthUnit="%"
         >
           <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed>
-            <FlexLink to="">
-              <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                <ArrowSVG />
-              </IconCircle>
-              Partnership
-            </FlexLink>
+            Partnership
           </Paragraph>
 
           <Paragraph big>This is a type of business that is formed when two or more people work together without creating a more formal business entity. Like a sole proprietorship, it may not give you all the protections your life or business coaching organization may need.</Paragraph>
@@ -131,12 +115,7 @@ const CoachBusinessStructure = () => (
           widthUnit="%"
         >
           <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed>
-            <FlexLink to="">
-              <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                <ArrowSVG />
-              </IconCircle>
-              Limited Liability Company or LLC
-            </FlexLink>
+            Limited Liability Company or LLC
           </Paragraph>
 
           <Paragraph big>The Limited Liability Company (LLC) is ideal for most life or business coaching startups. An LLC is easy and inexpensive to set up, and has the least administrative requirements of any formal business entity.</Paragraph>
@@ -157,12 +136,7 @@ const CoachBusinessStructure = () => (
           widthUnit="%"
         >
           <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed>
-            <FlexLink to="">
-              <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                <ArrowSVG />
-              </IconCircle>
-              S Corporation
-            </FlexLink>
+            S Corporation
           </Paragraph>
 
           <Paragraph big>This is a more complex type of business and isn't generally recommended for smaller organizations.</Paragraph>
@@ -183,22 +157,19 @@ const CoachBusinessStructure = () => (
           widthUnit="%"
         >
           <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed>
-            <FlexLink to="">
-              <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                <ArrowSVG />
-              </IconCircle>
-              C Corporation
-            </FlexLink>
+            C Corporation
           </Paragraph>
 
           <Paragraph big>and most complex types of businesses and are typically far more than the average entrepreneur will need.</Paragraph>
         </TextBlockWithImage>
 
         <Paragraph big style={{ paddingTop: "48px", paddingBottom: 0 }} mixed={true}>
-          For more information on the advantages and disadvantages of different types of businesses, <Link to="https://www.incfile.com/business-entity-comparison/">please see our in-depth guide</Link>. If you’ve still got questions, <Link to="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/">we’ve answered them to help you choose the right business structure</Link> for your coaching business.
+          For more information on the advantages and disadvantages of different types of businesses, <Link to="/business-entity-comparison/">please see our in-depth guide</Link>. If you’ve still got questions,{" "}
+          <Link to="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/">we’ve answered them to help you choose the right business structure</Link> for your coaching business.
         </Paragraph>
         <Paragraph big style={{ paddingTop: "48px", paddingBottom: 0 }} mixed={true}>
-          In most cases, our recommendation for a boutique business business would be to create an LLC. We’ve <Link to="https://www.incfile.com/form-an-llc/">got a complete guide</Link> to everything you need to do. <Link to="https://www.incfile.com/llc-state-information/">LLC formation does vary from state to state</Link>, but we’ve got you covered, wherever you are.
+          In most cases, our recommendation for a boutique business business would be to create an LLC. We’ve <Link to="/form-an-llc/">got a complete guide</Link> to everything you need to do. <Link to="/llc-state-information/">LLC formation does vary from state to state</Link>, but we’ve got you
+          covered, wherever you are.
         </Paragraph>
 
         <Button theme="primary48" width="365px" arrow content={{ url: `${process.env.ORDER_URL}/form-order-now.php`, text: `Start your business with us, today!` }} />

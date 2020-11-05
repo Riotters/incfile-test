@@ -73,12 +73,7 @@ const BusinessStructure = () => (
           widthUnit="%"
         >
           <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-            <FlexLink to="/">
-              <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                <ArrowSVG />
-              </IconCircle>
-              Sole Proprietorship
-            </FlexLink>
+            Sole Proprietorship
           </Paragraph>
 
           <Paragraph big>This is the "default" business structure and is what your influencer business will be if you decide not to create a more formal structure. We don't recommend this type of business as it doesn't give you the legal protections you need.</Paragraph>
@@ -99,12 +94,7 @@ const BusinessStructure = () => (
           widthUnit="%"
         >
           <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-            <FlexLink to="/">
-              <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                <ArrowSVG />
-              </IconCircle>
-              Partnership
-            </FlexLink>
+            Partnership
           </Paragraph>
 
           <Paragraph big>
@@ -127,12 +117,7 @@ const BusinessStructure = () => (
           widthUnit="%"
         >
           <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-            <FlexLink to="/">
-              <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                <ArrowSVG />
-              </IconCircle>
-              Limited Liability Company or LLC
-            </FlexLink>
+            Limited Liability Company or LLC
           </Paragraph>
 
           <Paragraph big>The Limited Liability Company (LLC) is ideal for most marketing businesses. An LLC is easy and inexpensive to set up, and it has the least administrative requirements of any formal business entity.</Paragraph>
@@ -153,12 +138,7 @@ const BusinessStructure = () => (
           widthUnit="%"
         >
           <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-            <FlexLink to="/">
-              <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                <ArrowSVG />
-              </IconCircle>
-              S Corporation
-            </FlexLink>
+            S Corporation
           </Paragraph>
 
           <Paragraph big>This is a more complex type of business and isn't generally recommended for smaller organizations, like an influencer business.</Paragraph>
@@ -179,23 +159,22 @@ const BusinessStructure = () => (
           widthUnit="%"
         >
           <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-            <FlexLink to="/">
-              <IconCircle circleColor="transparent" iconColor={color.blue1}>
-                <ArrowSVG />
-              </IconCircle>
-              C Corporation
-            </FlexLink>
+            C Corporation
           </Paragraph>
 
           <Paragraph big>These are the largest and most complex types of businesses and are typically far more than the average entrepreneur or business owner will need.</Paragraph>
         </TextBlockWithImage>
 
-        <Paragraph big mixed={true} style={{ marginBottom: "48px", paddingBottom: 0 }}>
-          For more information on the advantages and disadvantages of different types of businesses, <Link to="/">please see our in-depth guide</Link>. If you’ve still got questions, <Link to="/">we’ve answered them to help you choose the right business structure</Link> for your boutique clothing
-          business.
+        <Paragraph big style={{ paddingTop: "48px", paddingBottom: 0 }} mixed={true}>
+          For more information on the advantages and disadvantages of different types of businesses, <Link to="/business-entity-comparison/">please see our in-depth guide</Link>. If you’ve still got questions,{" "}
+          <a href="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/" target="_blank" rel="noopener noreferrer">
+            we’ve answered them to help you choose the right business structure
+          </a>{" "}
+          for your daycare business.
         </Paragraph>
         <Paragraph big mixed={true} style={{ marginBottom: "48px", paddingBottom: 0 }}>
-          In most cases, our recommendation for a boutique business business would be to create an LLC. We’ve <Link to="/">got a complete guide</Link> to everything you need to do. <Link to="/">LLC formation does vary from state to state</Link>, but we’ve got you covered, wherever you are.
+          In most cases, our recommendation for a boutique business business would be to create an LLC. We’ve <Link to="/form-an-llc/">got a complete guide</Link> to everything you need to do. <Link to="/llc-state-information/">LLC formation does vary from state to state</Link>, but we’ve got you
+          covered, wherever you are.
         </Paragraph>
 
         <Button theme="primary48" width="365px" arrow content={{ url: `${process.env.ORDER_URL}/form-order-now.php`, text: `Start your business with us, today!` }} />
@@ -203,11 +182,5 @@ const BusinessStructure = () => (
     </BusinessOwnerResponsibilities>
   </OrangeContainer>
 );
-
-const FlexLink = styled(Link)`
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-`;
 
 export default BusinessStructure;

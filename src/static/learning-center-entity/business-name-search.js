@@ -32,7 +32,7 @@ export const care = {
     },
     link: {
       text: `Not sure?`,
-      url: `/`,
+      url: `/business-entity-comparison/`,
     },
     field3: {
       label: `Entity State*`,

@@ -11,7 +11,7 @@ const Variants = styled.section`
   position: relative;
 `;
 
-const VariantsSection = ({ content, data }) => {
+const VariantsSection = ({ data }) => {
     let stateFee = data?.prices ? data.prices.statefee : 0;
     let entityState = data?.prices ? data.prices.state : '';
     const headerSection = {

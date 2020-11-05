@@ -52,7 +52,7 @@ export const rocket = {
   text: `No Contracts. No Surprise.`,
   text2: `Only $0 + State Fee to Launch Your Business.`,
   button: {
-    text: `launch your business`,
+    text: `Launch your business`,
     url: `${process.env.ORDER_URL}/form-order-now.php`,
   },
 };

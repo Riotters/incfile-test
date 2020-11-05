@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Buttonsbox from "../atomic/atoms/boxes/top-buttons-box";
-import Button from "../atomic/molecules/buttons/button";
+import Button from "../atomic/molecules/buttons/button-action";
 //Sections
 import Top from "../atomic/partials/top";
 import About from "../atomic/sections/entity-search/michigan-entity-search/about";
@@ -11,6 +11,8 @@ import NewRules from "../atomic/sections/entity-search/michigan-entity-search/ne
 import OtherRules from "../atomic/sections/entity-search/michigan-entity-search/other-rules";
 import StartBusiness from "../atomic/sections/entity-search/michigan-entity-search/start-business";
 import Faq from "../atomic/sections/entity-search/delaware-entity-search/faq";
+import {scrollToElement } from '../helpers/utils';
+
 //Texts
 import { top, about, search, newRules, otherRules, startBusiness, faq } from "../static/entity-search/michigan-entity-search";
 
@@ -21,11 +23,11 @@ const GeneralResearchTopics = () => (
       <h1>{top.header}</h1>
       <p>{top.text}</p>
       <Buttonsbox>
-        <Button content={top.button[0]} theme="primary56" arrow />
+        <Button onClick={e => scrollToElement(e, 'js-business-name-search-form')} content={top.button[0]} theme="primary56" arrow />
       </Buttonsbox>
     </Top>
     <About content={about} />
-    <Search content={search} />
+    <Search content={search} id="js-business-name-search-form" />
     <NewRules content={newRules} />
     <OtherRules content={otherRules} />
     <StartBusiness content={startBusiness} />

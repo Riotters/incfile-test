@@ -11,7 +11,9 @@ import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-green1.inline.svg";
 import Oval2SVG from "../../../../images/ovals/top-right-transparent-green2.inline.svg";
 import { Heading } from "../../../atoms/typography/heading";
-import Table from "../../../organisms/tables/form-an-llc-table";
+import FilingTimeAndPriceBox from "../../../state-corporation/filing-time-and-price-box";
+import ComplianceRequirementBox from "../../../state-corporation/compliance-requirement-box";
+import { getFullPricesAndFilings } from '../../../../api/Api';
 
 const State = styled.div`
   background-color: ${color.green3};
@@ -65,41 +67,47 @@ const Result = styled.div`
   flex-direction: column;
   width: 100%;
   max-width: 770px;
+  margin-top: 42px;
 `;
 
 const dropdownOptions = states.state.map((state) => state.name);
 
-const StateSection = ({ content }) => {
-  return (
-    <State>
-      <Oval height="420" width="420" top="5" left="0">
-        <OvalSVG />
-      </Oval>
-      <Oval height="570" width="570" top="0" right="0">
-        <Oval2SVG />
-      </Oval>
-      <ContentCenter>
-        <TextCenterLayout headline={content.header} headlineWidth="700" />
-        <ImageBoxes>
-          <TopImageBox className="box box--left" image="your-state" color={color.blue3}>
-            <Heading size="4">{content.card.header}</Heading>
-            <Dropdown className="dropdown" placeholder="select" options={dropdownOptions} />
-          </TopImageBox>
-        </ImageBoxes>
-        <Button content={content.button} theme="primary56" arrow />
-        <Result>
-          <Heading size="4">{content.header2}</Heading>
-          <Table content={content.table} bottomMargin="48" />
-          <Heading size="4">{content.header3}</Heading>
-          <Heading size="5">{content.header4}</Heading>
-          <Table content={content.table2} bottomMargin="40" />
-          <Heading size="5">{content.header5}</Heading>
-          <Table content={content.table3} bottomMargin="48" />
-        </Result>
-        <Button content={content.button2} theme="secondary56" arrow />
-      </ContentCenter>
-    </State>
-  );
+const StateSection = ({ content, getDataForVariants }) => {
+    const [state, setState] = React.useState('Alabama');
+    const [dataApi, setDataApi] = React.useState({});
+
+    React.useEffect(() => {
+        getFullPricesAndFilings(state, 'LLC').then(data => {
+            setDataApi(data);
+            getDataForVariants(data);
+        });
+    }, [state]);
+
+    return (
+        <State>
+            <Oval height="420" width="420" top="5" left="0">
+                <OvalSVG />
+            </Oval>
+            <Oval height="570" width="570" top="0" right="0">
+                <Oval2SVG />
+            </Oval>
+            <ContentCenter>
+                <TextCenterLayout headline={content.header} headlineWidth="700" />
+                <ImageBoxes>
+                    <TopImageBox className="box box--left" image="your-state" color={color.blue3}>
+                        <Heading size="4">{content.card.header}</Heading>
+                        <Dropdown className="dropdown" placeholder="Alabama" options={dropdownOptions} onChange={option => setState(option.value)} />
+                    </TopImageBox>
+                </ImageBoxes>
+                <Button content={content.button} theme="primary56" arrow />
+                <Result>
+                    <FilingTimeAndPriceBox data={dataApi} />                    
+                    <ComplianceRequirementBox data={dataApi} />                    
+                </Result>
+                <Button content={content.button2} theme="secondary56" arrow />
+            </ContentCenter>
+        </State>
+    );
 };
 
 export default StateSection;

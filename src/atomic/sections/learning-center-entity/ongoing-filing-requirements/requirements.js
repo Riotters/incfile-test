@@ -1,9 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { color } from "../../../atoms/styles/colors";
-import Image from "../../../atoms/image/image_nobase64";
 import ContentLeft from "../../../partials/content-left";
-import ContentCenter from "../../../partials/content-center";
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/bottom-left-transparent-blue3.inline.svg";
 import { Heading } from "../../../atoms/typography/heading";

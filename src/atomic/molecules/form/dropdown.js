@@ -96,7 +96,7 @@ class Drop extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            selected: ''
+            selected: this.props.defaultSelected ?? ''
         }
         this._onSelect = this._onSelect.bind(this)
     }

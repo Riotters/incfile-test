@@ -1,6 +1,6 @@
 import React, {Fragment, useState} from 'react';
 import styled from 'styled-components';
-import { Link } from 'gatsby';
+import { Link, navigate } from 'gatsby';
 
 import { shadow } from "../../../atoms/styles/shadows"
 import { Paragraph } from '../../../atoms/typography/paragraph';
@@ -104,6 +104,11 @@ const ResultSection = ({ content, keyword, isLoading }) => {
         setDisplay(option);
     }
 
+    const checkName = (e, businessName) => {
+        e.preventDefault();
+        navigate('/check-availability-name/', { state: { businessName } });
+    }
+
     return (
         <Wrapper>
             <Paragraph big mixed={true} style={{ textAlign: `center`, fontWeight: `bold` }} bottomMargin={30} topMargin={80}>
@@ -125,13 +130,13 @@ const ResultSection = ({ content, keyword, isLoading }) => {
                     {!isLoading && content.map((item, index) => (
                         <ResultItem key={index} className="result__item" bg={item.bgColor} fColor={item.fontColor}>
                             <Paragraph>{item.businessName}</Paragraph>
-                            <Link state={{ entityName: item.businessName }} to="/check-availability-name/" className="result__item-btn-action">
+                            <div onClick={e => checkName(e, item.businessName)} className="result__item-btn-action">
                                 <span>Search Name Availability</span>
                                 <span>{item.businessName}</span>
                                 <span className="arrow">
                                     <ArrowLeft />
                                 </span>
-                            </Link>
+                            </div>
                         </ResultItem>
                     ))}
                 </Fragment>

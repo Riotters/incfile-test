@@ -811,7 +811,7 @@ export const feesAndRequirments = [
     marginBottom: 16,
   },
   {
-    type: `dynamic_ar_box`
+    type: `dynamic_ar_box`,
   },
   {
     type: `arrow-link`,
@@ -880,7 +880,7 @@ export const feesAndRequirments = [
     marginBottom: 32,
   },
   {
-    type: `dynamic_filing_requirement`
+    type: `dynamic_filing_requirement`,
   },
   {
     type: `text`,
@@ -1227,7 +1227,7 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `Get details on the <a href="/" target="_blank" rel="noopener noreferrer">Washington DC sales tax here</a>.`,
+    content: `Get details on the <a href="/washington-dc-llc/business-taxes/" target="_blank" rel="noopener noreferrer">Washington DC sales tax here</a>.`,
     marginBottom: 48,
   },
   {

@@ -6,10 +6,11 @@ import Dropdown from "../../../molecules/form/dropdown";
 import ContentCenter from "../../../partials/content-center";
 import TextCenterLayout from "../../../../components/partials/blocks/heading-center";
 import TopImageBox from "../../../../components/top-image-box";
-import Button from "../../../molecules/buttons/button";
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-right-transparent-orange.inline.svg";
 import { Heading } from "../../../atoms/typography/heading";
+import { getFullPricesAndFilings } from '../../../../api/Api';
+
 
 const SearchTool = styled.div`
   padding-bottom: 100px;
@@ -92,31 +93,56 @@ const ImageBoxes = styled.div`
 `;
 
 const dropdownOptions = states.state.map((state) => state.name);
-const dropdownOptionsTwo = ["Option 1", "Option 2", "Option 3"];
+const dropdownOptionsTwo = [
+    { value: `LLC`, label: `LLC` },
+    { value: `SCorporation`, label: `S Corporation` },
+    { value: `CCorporation`, label: `C Corporation` },
+    { value: `Nonprofit`, label: `Nonprofit` },
+];
 
-const SearchToolSection = ({ content }) => {
-  const cards = content.cards;
+const SearchToolSection = ({ content, getDataApi }) => {
+    const cards = content.cards;
+    const [entityType, setEntityType] = React.useState('');
+    const [entityState, setEntityState] = React.useState('');
 
-  return (
-    <SearchTool>
-      <Oval heigh="720" width="720" top="0" right="0">
-        <OvalSVG />
-      </Oval>
-      <ContentCenter>
-        <TextCenterLayout headline={content.header} headlineWidth="700" text={content.text} />
-        <ImageBoxes>
-          <TopImageBox className="box box--left" image="lcsn-4343" color={color.green3}>
-            <Heading size="4">{cards[0]}</Heading>
-            <Dropdown className="dropdown" placeholder="Select" options={dropdownOptionsTwo} />
-          </TopImageBox>
-          <TopImageBox className="box box--right" image="your-state" color={color.blue3}>
-            <Heading size="4">{cards[1]}</Heading>
-            <Dropdown className="dropdown" placeholder="Select" options={dropdownOptions} />
-          </TopImageBox>
-        </ImageBoxes>
-      </ContentCenter>
-    </SearchTool>
-  );
+    React.useEffect(() => {
+        if (entityType && entityState) {
+            getFullPricesAndFilings(entityState, entityType).then(data => {
+                getDataApi(data);
+            });
+        }
+    }, [entityType, entityState]);
+
+    return (
+        <SearchTool>
+            <Oval heigh="720" width="720" top="0" right="0">
+                <OvalSVG />
+            </Oval>
+            <ContentCenter>
+                <TextCenterLayout headline={content.header} headlineWidth="700" text={content.text} />
+                <ImageBoxes>
+                    <TopImageBox className="box box--left" image="lcsn-4343" color={color.green3}>
+                        <Heading size="4">{cards[0]}</Heading>
+                        <Dropdown
+                            className="dropdown"
+                            placeholder="Select"
+                            options={dropdownOptionsTwo}
+                            onChange={option => setEntityType(option.value)}
+                        />
+                    </TopImageBox>
+                    <TopImageBox className="box box--right" image="your-state" color={color.blue3}>
+                        <Heading size="4">{cards[1]}</Heading>
+                        <Dropdown
+                            className="dropdown"
+                            placeholder="Select"
+                            options={dropdownOptions}
+                            onChange={option => setEntityState(option.value)}
+                        />
+                    </TopImageBox>
+                </ImageBoxes>
+            </ContentCenter>
+        </SearchTool>
+    );
 };
 
 export default SearchToolSection;
