@@ -3,11 +3,13 @@ import React from "react";
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
 import Top from "../../atomic/partials/top";
-import Button from "../../components/button";
+import Button from "../../atomic/molecules/buttons/button-action";
 import ClientDashboardSection from "../../atomic/sections/contact/client-dashboard-introduction";
 import SupportFormSection from "../../atomic/sections/contact/support-form";
 import ContactInfoSection from "../../atomic/sections/contact/conatact-info";
 import Tools from "../../atomic/sections/learning-center-entity/help-center/tools";
+import {scrollToElement } from '../../helpers/utils';
+
 // Content
 import { newSales } from "../../static/contact.js";
 import { tools } from "../../static/learning-center-entity/help-center";
@@ -19,14 +21,12 @@ const NewSales = () => (
     <Top imageName="hero-contact-new-sales" heightSM="75vh" ovalColor="yellow" alt="existing clients">
       <h1>We're Here To Help</h1>
       <p>Phone support available Monday - Friday from 9am to 6pm CST or submit a question and we'll respond as quickly as possible.</p>
-      <Button to="/contact/existing-clients/" theme="primary56" width="250px" arrow>
-        Contact our support
-      </Button>
+      <Button theme="primary56" width="250px" onClick={e => scrollToElement(e, 'js-contact-form')} content={{ text: `Contact our support`, url: `#` }} />
     </Top>
 
     <ClientDashboardSection content={newSales} isNewSale={true} />
     <Tools content={tools} bgLinear="to bottom, #f2f6ff, #ffffff" />
-    <SupportFormSection isNewSale={true} />
+    <SupportFormSection isNewSale={true} id="js-contact-form" />
     <ContactInfoSection content={newSales.phone} isNewSale={true} />
   </Layout>
 );

@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 
-const FormControl = ({children, span}) => (
-    <Wrapper span={span}>
+const FormControl = ({children, span, ...rest}) => (
+    <Wrapper span={span} {...rest}>
         {children}
     </Wrapper>
 );
