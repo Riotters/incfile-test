@@ -25,8 +25,8 @@ const BusinessNamesPage = () => {
     return (
         <Layout>
             <SEO
-                title="Maine Registered Agents for LLCs"
-                description=" Pick your perfect business name today!"
+                title="Maine Business Entity Searches & Naming Your LLC"
+                description=" Learn what you need to know about naming an LLC in ME with Incfile’s helpful resources. Pick your perfect business name today!"
             />
             <LLCLayout data={dataApi}>
                 <LeftTabPages content={tabPages} />

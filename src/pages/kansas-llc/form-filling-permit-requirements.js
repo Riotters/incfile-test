@@ -25,7 +25,7 @@ const FillingRequirementsPage = () => {
     return (
         <Layout>
             <SEO
-                title="Texas Business Search | How to Name Your TX LLC"
+                title="Kansas Business Search | How to Name Your KS LLC"
                 description="Make sense of the required forms, fees, and filing procedures for your Kansas LLC with Incfile&#039;s easy-to-use guide. Read more. "
             />
             <LLCLayout data={dataApi}>

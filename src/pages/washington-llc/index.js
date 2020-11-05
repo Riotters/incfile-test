@@ -23,7 +23,7 @@ function LLCIndex() {
     }, []);
     return (
         <Layout>
-            <SEO title="LLCs in Washington | Guide to Forming an LLC in Washington" description="Ready to form your Washington LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
+            <SEO title="Washington LLCs | Forming an LLC in Washington State" description="Ready to register your WA LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
             <LLCLayout data={dataApi}>
                 <LeftTabPages content={tabPages} nonDIY />
                 <MainPageContent>
