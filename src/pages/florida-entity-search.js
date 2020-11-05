@@ -16,6 +16,7 @@ import {scrollToElement } from '../helpers/utils';
 import { top, about, search, newRules, startBusiness, faq } from "../static/entity-search/florida-entity-search";
 
 const GeneralResearchTopics = () => (
+
     <Layout>
         <SEO title="Florida Entity Search" description="aaa" />
         <Top imageName="mrs-bulb-state-ilustrations-9948" imageAlt="Mrs Bulb and with checklist" ovalColor="sun" headlineWidth="700" textWidth="400">

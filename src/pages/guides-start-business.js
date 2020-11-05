@@ -16,6 +16,7 @@ import { ThankYouContent } from "../components/hubspot/thank-you-modal";
 import HSFormModal from "../components/hubspot/standard-post-form-modal";
 
 //Texts
+
 import { top, about, tableOfContent, needMore, hsForm } from "../static/learning-center-entity/guide-to-start";
 
 const GuideToStart = () => {

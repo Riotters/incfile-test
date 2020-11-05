@@ -24,7 +24,7 @@ const BusinessNamesPage = () => {
     return (
         <Layout>
             <SEO
-                title="Michigan Business Search | How to Name Your TX LLC"
+                title="Michigan Business Search | How to Name Your Michigan LLC"
                 description="Learn what you need to know about naming an LLC in Michigan with Incfile's helpful resources. Pick your perfect business name today!"
             />
             <LLCLayout data={dataApi}>
