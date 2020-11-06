@@ -101,7 +101,7 @@ export const cta = {
   header: `Incfile's Business License Research Package`,
   text: `With Incfile's Business License Research Package, you'll have everything you need to apply for your licenses and meet the requirements for your business.`,
   button: {
-    text: `Start your business with us, today!`,
+    text: `Order Now`,
     url: `${process.env.ORDER_URL}/order-business-license`,
   },
 };

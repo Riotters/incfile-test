@@ -14,6 +14,7 @@ import {scrollToElement } from '../helpers/utils';
 import { top, about, search, faq } from "../static/entity-search/texas-entity-search";
 
 const GeneralResearchTopics = () => (
+
     <Layout>
         <SEO title="Texas Business Entity Search | Is Your Name Available?" description="Starting a new business in TX? Check to see if your preferred business name is available with Incfile’s easy name search tool. Try it now." />
         <Top imageName="mr-bulb-state-ilustrations-1722" imageAlt="Mrs Bulb and with checklist" ovalColor="green" headlineWidth="700" textWidth="520">
