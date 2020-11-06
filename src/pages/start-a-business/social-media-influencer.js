@@ -20,7 +20,7 @@ import {Paragraph} from "../../atomic/atoms/typography/paragraph";
 const SocialMediaInfluencer = () => (
     <Layout>
         <SEO title="How to Start a Business as a Social Media Influencer"
-             description="Learn all about nonprofit corporations, including the benefits & disadvantages, getting 501c3 status, and what's needed to get your company off the ground."/>
+             description="Want to turn your social media presence into a thriving influencer business? Learn how influencer marketing works, how to build followers and much more."/>
 
         <Top ovalColor="green" imageName="social-media-influencer" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
             <h1>How to Start a Business as a Social Media Influencer</h1>

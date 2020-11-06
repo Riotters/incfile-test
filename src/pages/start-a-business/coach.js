@@ -24,7 +24,7 @@ import { Paragraph } from "../../atomic/atoms/typography/paragraph";
 
 const Coach = () => (
   <Layout>
-    <SEO title="What is a Nonprofit Organization? How to Start a Nonprofit" description="Learn all about nonprofit corporations, including the benefits & disadvantages, getting 501c3 status, and what's needed to get your company off the ground." />
+    <SEO title="How to Become a Life or Business Coach" description="Becoming a professional coach can be a great way to turn your insight and understanding into practical advice. Learn how with our comprehensive guide." />
 
     <Top ovalColor="darkblue" imageName="coach-2" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
       <h1>How to Become a Life or Business Coach</h1>

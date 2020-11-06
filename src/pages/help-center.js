@@ -13,7 +13,7 @@ import { top, about, help, faq, rocket, categories, service, tools } from "../st
 
 const HelpCenter = () => (
   <Layout>
-    <SEO title="Incfile Business Help Center for LLC, Incorporating| Q & A" description="Q & A for LLC and other forms of corporations. Learning Center for Incorporating in every state." />
+    <SEO title="Incfile Business Help Center for LLC, Incorporating | Q & A" description="Q & A for LLC and other forms of corporations. Learning Center for Incorporating in every state." />
     <Top imageName="mrs-bulb-question-7726" imageAlt="Mrs Bulb and with checklist" ovalColor="darkblue">
       <h1>{top.header}</h1>
       <p>{top.text}</p>

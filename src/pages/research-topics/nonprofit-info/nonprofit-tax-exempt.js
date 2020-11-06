@@ -20,7 +20,7 @@ import { about, related } from "../../../static/research-topics/nonprofit-info/n
 
 const HelpCenter = () => (
   <Layout>
-    <SEO title="Is Nonprofit the same as Tax Exempt " description="Learn about the key differences between nonprofit and not-for-profit organizations, including legal status, purpose, tax exemption and more." />
+    <SEO title="Is Nonprofit the same as Tax Exempt?" description="Learn about the key differences between nonprofit and not-for-profit organizations, including legal status, purpose, tax exemption and more." />
     <Top imageName="mrs-bulb-help-center-article" imageAlt="Mrs Bulb and with checklist" ovalColor="green">
       <h1>{top.header}</h1>
       <p>{top.text}</p>

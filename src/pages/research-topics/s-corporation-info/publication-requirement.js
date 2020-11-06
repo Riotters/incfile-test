@@ -20,7 +20,7 @@ import { about, related } from "../../../static/research-topics/s-corporation-in
 
 const HelpCenter = () => (
   <Layout>
-    <SEO title="What is a Publication Requirement? | Archive articles" description="Q & A for LLC and other forms of corporations. Learning Center for
+    <SEO title="What is a Publication Requirement?" description="Q & A for LLC and other forms of corporations. Learning Center for
     Incorporating in every state." />
     <Top imageName="mrs-bulb-help-center-article" imageAlt="Mrs Bulb and with checklist" ovalColor="green">
       <h1>{top.header}</h1>
