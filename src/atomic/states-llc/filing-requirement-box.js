@@ -13,6 +13,7 @@ const FilingRequirementBox = ({ margin, data, className, ...rest }) => {
 export default FilingRequirementBox;
 
 const Filing = styled.div`
+    width: 100%;
     margin: ${props => props.margin ? props.margin : '52px 0 42px 0'};
 
     h3, h4{

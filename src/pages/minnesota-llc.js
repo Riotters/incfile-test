@@ -24,7 +24,7 @@ function LLCIndex() {
 
     return (
         <Layout>
-            <SEO title="LLCs in Minnesota | Guide to Forming an LLC in Texas" description="Ready to form your Minnesota LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
+            <SEO title="LLCs in Minnesota | Guide to Forming an LLC in Minnesota" description="Ready to form your Minnesota LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
             <LLCLayout data={dataApi}>
                 <LeftTabPages content={tabPages} nonDIY />
                 <MainPageContent>

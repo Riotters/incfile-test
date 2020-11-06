@@ -25,7 +25,8 @@ function AlaskaIndexPage() {
     
     return (
         <Layout>
-            <SEO title="LLCs in Alaska | Guide to Forming an LLC in Alaska" description="Ready to form your Alaska LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
+            <SEO title="LLCs in Alaska | Guide to Forming an LLC in Alaska" 
+            description="Ready to register your AK LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
             <LLCLayout data={dataApi}>
                 <LeftTabPages content={tabPages} nonDIY />
                 <MainPageContent>

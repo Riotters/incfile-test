@@ -26,8 +26,8 @@ const FillingRequirementsPage = () => {
     return (
         <Layout>
             <SEO
-                title="Alabama Business Search | How to Name Your TX LLC"
-                description="Learn what you need to know about naming an LLC in Alabama with Incfile's helpful resources. Pick your perfect business name today!"
+                title="Alabama Business Licenses, Forms & Costs for LLCs"
+                description="Make sense of the required forms, fees and filing procedures for your AL LLC with Incfile’s easy-to-use guide. Read more."
             />
             <LLCLayout data={dataApi}>
                 <LeftTabPages content={tabPages} />

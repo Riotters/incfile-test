@@ -24,8 +24,8 @@ const BusinessNamesPage = () => {
     return (
         <Layout>
             <SEO
-                title="Texas Business Search | How to Name Your TX LLC"
-                description="Learn what you need to know about naming an LLC in Texas with Incfile's helpful resources. Pick your perfect business name today!"
+                title="South Carolina Business Search | How to Name Your South Carolina LLC"
+                description="Learn what you need to know about naming an LLC in South Carolina with Incfile's helpful resources. Pick your perfect business name today!"
             />
             <LLCLayout data={dataApi}>
                 <LeftTabPages content={tabPages} />

@@ -11,7 +11,6 @@ import Table from "../../../organisms/tables/compare-entity-type-table";
 const Differences = styled.section`
   position: relative;
   padding-top: 104px;
-  padding-bottom: 112px;
 `;
 
 const DifferencesSection = ({ className, content }) => (

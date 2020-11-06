@@ -27,7 +27,6 @@ export const about = {
         header: `What is an S Corp?`,
         text: `Seeing your small business start to succeed and grow into a well-established company is a dream come true for entrepreneurs. But as your company grows, your tax rate tends to grow too. Growing companies face a variety of complexities during tax season, and that’s why when your company starts growing, you may want to consider forming an S Corporation, otherwise known an S Corp. The S Corp is a business entity that offers significant tax advantages while still preserving your ownership flexibility.`,
         box: {
-          header: `Enterpreneur 360 (2019)`,
           text: `An S Corp, also known as the subchapter or small business corporation, is a tax code that was enacted into law by Congress in 1958. The S Corp was created to encourage and support the creation of small and family businesses, while eliminating the double taxation that conventional corporations were subjected to.`,
         },
       },
