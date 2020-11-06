@@ -12,6 +12,17 @@ export const formatNumber = (num) => {
     return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
 }
 
+export const formatMoney = (value = 0) => {
+    let formatter = new Intl.NumberFormat("en-US", {
+        style: "currency",
+        currency: "USD",
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 0,
+    });
+    
+    return formatter.format(value);
+}
+
 export const roundUp = (num, precision) => {
     precision = Math.pow(10, precision)
     return Math.ceil(num * precision) / precision

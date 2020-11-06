@@ -4,27 +4,27 @@ export const tools = {
   buttons: [
     {
       header: `Corporation State Information`,
-      url: `/`,
+      url: `/corporation-state-information/`,
     },
     {
       header: `Corporation Tax Calculator`,
-      url: `/`,
+      url: `/s-corporation-tax-calculator/`,
     },
     {
       header: `Entity Comparison Chart`,
-      url: `/`,
+      url: `/business-entity-comparison/`,
     },
     {
       header: `State Filing Fees`,
-      url: `/`,
+      url: `/state-filing-fees/`,
     },
     {
       header: `Ongoing Filing Requirements`,
-      url: `/`,
+      url: `/compliance-filing-requirement/`,
     },
     {
       header: `State Filing TImes`,
-      url: `/`,
+      url: `/state-filings-times/`,
     },
   ],
 };
