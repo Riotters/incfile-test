@@ -8,7 +8,7 @@ import OvalSVG from "../../../../images/ovals/top-right-transparent-babyblue2.in
 
 const Faq = styled.section`
   position: relative;
-  padding-top: 75px;
+  padding-top: 56px;
 `;
 
 const FaqSection = ({ className, content }) => (
@@ -16,7 +16,7 @@ const FaqSection = ({ className, content }) => (
     <Oval className="oval" height="570" width="570" top="0" right="0" y="0">
       <OvalSVG />
     </Oval>
-    <HeadingCenter className="headline" headline={content.header} headlineWidth="640" bottomMargin="55" />
+    <HeadingCenter className="headline" headline={content.header} headlineWidth="640" bottomMargin="0" />
     <ContentCenter>
       <Accordion content={content.faq} />
     </ContentCenter>
