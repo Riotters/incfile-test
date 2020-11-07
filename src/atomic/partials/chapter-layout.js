@@ -5,7 +5,6 @@ import styled from "styled-components";
 import Top from "../partials/top";
 import WrapperContent from "../states-llc/wrapper-content";
 // Content
-import { top } from "../../static/choose-business-name";
 import RatingRow from "../atoms/boxes/rating-row";
 import CartBlock from "../molecules/blocks/cart-block";
 import RatingBlock from "../molecules/blocks/rating-block";
@@ -42,7 +41,7 @@ const Wrapper = styled.div`
   }
 `;
 
-const ChapterLayout = ({ children }) => {
+const ChapterLayout = ({ children, top }) => {
   return (
     <>
       <Top imageName="mrs-bulb-laptop-4059" imageAlt="Mrs Bulb with laptop" ovalColor="sun" textWidth="700" headlineWidth={700}>
