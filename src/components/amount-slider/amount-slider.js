@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import SelectorSVG from "../../images/slider-selector.svg";
+import { formatMoney } from "../../helpers/utils";
 
 const Wrapper = styled.div`
   display: flex;
@@ -38,7 +39,7 @@ const Slider = styled.div`
     -webkit-transition: 0.2s;
     margin-bottom: 8px;
     position: relative;
-    background-image: -webkit-gradient(linear, left top, right top, color-stop(${(props) => props.percent}%, #5089fd), color-stop(${(props) => props.percent}%, #d2e0fe));
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(${(props) => (props.percent !== props.percent) ? 0 : props.percent}%, #5089fd), color-stop(${(props) => (props.percent !== props.percent) ? 0 : props.percent ?? 0}%, #d2e0fe));
     background-image: -moz-linear-gradient(left center, #df7164 0%, #5089fd ${(props) => props.percent}%, #f5d0cc ${(props) => props.percent}%, #d2e0fe 100%);
   }
 
@@ -94,39 +95,38 @@ const Scale = styled.div`
   }
 `;
 
-const AmountSlider = ({ initValue, maxValue, description, onChange, step }) => {
-  let [value, setValue] = useState(initValue);
-  let formatter = new Intl.NumberFormat("en-US", {
-    style: "currency",
-    currency: "USD",
-    minimumFractionDigits: 0,
-    maximumFractionDigits: 0,
-  });
-  let amount = formatter.format(value);
-  let handleChange = (event) => {
-    let newValue = event.target.value;
-    setValue(newValue);
-    onChange(newValue);
-  };
-  return (
-    <Wrapper>
-      <Amount>{amount}</Amount>
-      <Description>{description}</Description>
-      <Slider percent={Math.round((value / maxValue) * 100)}>
-        <input type="range" min="0" max={maxValue} value={value} className="range" step={step || 1000} onChange={handleChange} />
-        <Scale>
-          <Divider />
-          <Divider />
-          <Divider />
-        </Scale>
-        <Scale>
-          <div className="label">{formatter.format(0)}</div>
-          <div className="label">{formatter.format(maxValue / 2)}</div>
-          <div className="label">{formatter.format(maxValue)}</div>
-        </Scale>
-      </Slider>
-    </Wrapper>
-  );
+const AmountSlider = ({ initValue, maxValue, description, onChange, step, field }) => {
+    let [value, setValue] = useState(0);
+    let amount = formatMoney(value);
+    
+    const handleChange = (event) => {
+        let newValue = event.target.value;
+        setValue(newValue);
+        onChange(field, newValue);
+    };
+
+    React.useEffect(() => {
+        setValue(initValue);
+    }, [initValue]);
+    return (
+        <Wrapper>
+            <Amount>{amount}</Amount>
+            <Description>{description}</Description>
+            <Slider percent={Math.round((value / maxValue) * 100)}>
+                <input type="range" min="0" max={maxValue} value={value} className="range" step={step || 1000} onChange={e => handleChange(e)} />
+                <Scale>
+                    <Divider />
+                    <Divider />
+                    <Divider />
+                </Scale>
+                <Scale>
+                    <div className="label">{formatMoney(0)}</div>
+                    <div className="label">{formatMoney(maxValue / 2)}</div>
+                    <div className="label">{formatMoney(maxValue)}</div>
+                </Scale>
+            </Slider>
+        </Wrapper>
+    );
 };
 
 export default AmountSlider;
