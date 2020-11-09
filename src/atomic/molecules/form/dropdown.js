@@ -131,6 +131,7 @@ class Drop extends Component {
                 </div>
                 <div className="bottom">
                     <Dropdown
+                        ref={this.props.inputRef}
                         name={this.props.name}
                         id={this.props.id}
                         required={this.props.required}

@@ -34,6 +34,21 @@ const Wrapper = styled.div`
             "margin-top:" + props.contentMarginTop
         }
     }
+
+    .error__info{
+        width: 100%;
+        height: 16px;
+        font-size: 11px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.45;
+        letter-spacing: normal;
+        color: #fd8550;
+        display: block;
+        text-align: right;
+        margin-top: 4px;
+    }
 `;
 
 const InputField = ({ className, children, content, htmlFor, bottomMargin, bottomMarginMD, contentMarginTop, bottomDirection, ...rest}) => (

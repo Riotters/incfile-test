@@ -1,7 +1,10 @@
 export const scrollToElement = (e, element) => {
     e.preventDefault();
     const el = document.getElementById(element);
-    el.scrollIntoView();
+    el.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+    });
 }
 
 export const replaceStr = (newValue, currentValue, string) => {

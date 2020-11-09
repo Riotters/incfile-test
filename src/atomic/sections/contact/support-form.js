@@ -6,56 +6,35 @@ import Oval from "../../atoms/icons/oval";
 import OvalSVG from "../../../images/ovals/bottom-left-transparent-orange3.inline.svg";
 import OvalSVG2 from "../../../images/ovals/top-right-transparent-babyblue1.inline.svg";
 import OvalSVG3 from "../../../images/ovals/top-left-transparent-babyblue1.inline.svg";
-import FormControl from "../../molecules/form/form-control";
-import Row from "../../molecules/helpers/row";
-import InputField from "../../molecules/form/input-field";
+import Label from "../../molecules/form/label-field-with-child";
+import Input from "../../atoms/inputs/input";
 import Button from "../../molecules/buttons/button-action";
-import { ThankYouContent } from "../../../components/hubspot/thank-you-modal";
+import { useForm } from 'react-hook-form';
 import { submitContactForm } from '../../../api/Api';
 import { _phoneFormat } from '../../../helpers/input-parsers';
-
-
-const Wrapper = styled.section`
-  position: relative;
-  padding: 120px 0 64px;
-
-  @media (min-width: 992px) {
-    padding: 0 0 64px;
-  }
-`;
-
-const FormContent = styled.form`
-    @media screen and (min-width: 769px) {
-        min-width: 706px;
-    }
-`
-
-const AlignCenter = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 48px;
-`
+import { validEmail, isUSPhone } from '../../../helpers/form-validate';
 
 const SupportForm = ({ className, content, isNewSale, id }) => {
     const [phoneNumber, setPhoneNumber] = React.useState('');
     const [formSubmitted, setFormSubmitted] = React.useState(false);
+    const [submittedData, setSubmittedData] = React.useState({});
 
-    const handleForm = e => {
-        e.preventDefault();
-        const form = e.target;
+    const { register, reset, handleSubmit, errors, formState } = useForm();
+    const { isSubmitting, isSubmitSuccessful } = formState;
 
-        if (!form.checkValidity()) {
-            return false;
-        }
-
-        const formData = new FormData(form);
+    const handleForm = data => {
+        const formData = new FormData();
+        Object.keys(data).forEach(i => {
+            return formData.set(i, data[i]);
+        });
         
-        submitContactForm(formData).then(data => {
-            // Do sth
+        // call API
+        submitContactForm(formData).then(res => {
+            setSubmittedData(data);
         });
 
-        form.reset();
+        // Do sth after the form is submitted
+
         setPhoneNumber('');
         setFormSubmitted(true);
 
@@ -68,10 +47,12 @@ const SupportForm = ({ className, content, isNewSale, id }) => {
         }
     }
 
-    const handlePhoneChange = (e) => {
-        let formatPhone = _phoneFormat(e.target.value);
-        setPhoneNumber(formatPhone);
-    }
+    React.useEffect(() => {
+        if (isSubmitSuccessful) {
+          reset({ ...submittedData });
+        }
+      }, [isSubmitSuccessful, submittedData, reset]);
+
 
     return (
         <Wrapper className={className} id={id}>
@@ -105,35 +86,79 @@ const SupportForm = ({ className, content, isNewSale, id }) => {
                     />
         
                     <ContentCenter>
-                        <FormContent noValidate onSubmit={handleForm}>
-                            <Row>
-                                <FormControl column={2} style={{ marginBottom: `16px` }}>
-                                    <InputField label="Name *" name="name" isRequired={true} />
-                                </FormControl>
+                        <FormContent onSubmit={handleSubmit(handleForm)}>
+                            <Grid column={2}>
+                                <Label htmlFor="name" content={{ label: `Name` }} bottomMargin="32">
+                                    <Input
+                                        className={errors.name ? 'invalid' : ''}
+                                        name="name"
+                                        id="name"
+                                        inputRef={register({ required: `Field can't be empty` })}
+                                    />
+                                    {errors.name && (
+                                        <span className="error__info">{errors.name.message}</span>
+                                    )}
+                                </Label>
 
-                                <FormControl column={2} style={{ marginBottom: `16px` }}>
-                                    <InputField label="Email Address *" name="email" type="email" isRequired={true} />
-                                </FormControl>
-                            </Row>
-                            <Row>
-                                <FormControl column={2} style={{ marginBottom: `16px` }}>
-                                    <InputField label="Phone Number (optional)" name="phone" value={phoneNumber} pattern="\d{3}-\d{3}-\d{4}" onChange={e => handlePhoneChange(e)} />
-                                </FormControl>
+                                <Label htmlFor="email" content={{ label: `Email` }} bottomMargin="32">
+                                    <Input
+                                        className={errors.email ? 'invalid' : ''}
+                                        type="text"
+                                        name="email"
+                                        id="email"
+                                        inputRef={register({
+                                            required: `Field can't be empty`,
+                                            validate: value => validEmail(value) || `Email is not valid`
+                                        })}
+                                    />
+                                    {errors.email && (
+                                        <span className="error__info">{errors.email.message}</span>
+                                    )}
+                                </Label>
+                            </Grid>
+                            <Grid column={!isNewSale ? 2 : 1}>
+                                <Label htmlFor="phone" content={{ label: `Phone Number` }} bottomMargin="16">
+                                    <Input
+                                        className={errors.phone ? 'invalid' : ''}
+                                        name="phone"
+                                        id="phone"
+                                        value={phoneNumber}
+                                        onChange={e => setPhoneNumber(_phoneFormat(e.target.value))}
+                                        inputRef={register({
+                                            required: `Field can't be empty`,
+                                            validate: value => isUSPhone(value) || `Should be formatted like xxx-xxx-xxxx`
+                                        })}
+                                    />
+                                    {errors.phone && (
+                                        <span className="error__info">{errors.phone.message}</span>
+                                    )}
+                                </Label>
 
                                 {!isNewSale && (
-                                    <FormControl column={2} style={{ marginBottom: `16px` }}>
-                                        <InputField label="Order Number *" isRequired={true} name="ordernum" />
-                                    </FormControl>
+                                    <Label htmlFor="ordernum" content={{ label: `Order Number` }} bottomMargin="16">
+                                        <Input
+                                            name="ordernum"
+                                            id="ordernum"
+                                        />
+                                    </Label>
                                 )}
-                            </Row>
-                            <Row>
-                                <FormControl column={1} style={{ marginBottom: `16px` }}>
-                                    <InputField label="Your Message *" isRequired={true} name="message" />
-                                </FormControl>
-                            </Row>
+                            </Grid>
+                            <Label htmlFor="message" content={{ label: `Message` }} bottomMargin="32">
+                                <Input
+                                    className={errors.message ? 'invalid' : ''}
+                                    name="message"
+                                    id="message"
+                                    inputRef={register({ required: `Field can't be empty` })}
+                                />
+                            </Label>
 
                             <AlignCenter>
-                                <Button type="submit" theme="primary56" width="160px" content={{ text: `Submit`, url: `#` }} />
+                                <Button
+                                    type="submit"
+                                    theme="primary56"
+                                    width="160px"
+                                    content={{ text: isSubmitting ? `Submitting...` : `Submit` }}
+                                />
                             </AlignCenter>
                         </FormContent>
                     </ContentCenter>
@@ -144,3 +169,37 @@ const SupportForm = ({ className, content, isNewSale, id }) => {
 };
 
 export default SupportForm;
+
+const Wrapper = styled.section`
+  position: relative;
+  padding: 120px 0 64px;
+
+  @media (min-width: 992px) {
+    padding: 0 0 64px;
+  }
+`;
+
+const FormContent = styled.form`
+    @media screen and (min-width: 769px) {
+        min-width: 706px;
+    }
+`
+
+const AlignCenter = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 48px;
+`
+
+const Grid = styled.div`
+  display: grid;
+  grid-template-columns: 100%;
+  width: 100%;
+  grid-template-columns: 1fr;
+  
+  @media(min-width: 769px) {
+    grid-template-columns: ${props => (props.column && props.column == 2) ? `1fr 1fr` : `1fr`};
+    grid-gap: 30px;
+  }
+`;

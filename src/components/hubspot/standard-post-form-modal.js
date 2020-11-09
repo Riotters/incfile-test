@@ -24,7 +24,6 @@ const HSFormModal = ({ content, postDownloadAction, hs_form_id, modalExit }) => 
     const { isSubmitting } = formState;
 
     const handleForm = data => {   
-        console.log(errors);
         const formData = new FormData();
         formData.set('pageTitle', document.title);
         formData.set('pageUrl', pageUrl);
@@ -156,21 +155,6 @@ const FormWrapper = styled.form`
     
     h2 {
         text-align: left;
-    }
-
-    .error__info{
-        width: 100%;
-        height: 16px;
-        font-size: 11px;
-        font-weight: 500;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.45;
-        letter-spacing: normal;
-        color: #fd8550;
-        display: block;
-        text-align: right;
-        margin-top: 4px;
     }
 
     button:disabled,
