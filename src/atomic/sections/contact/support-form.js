@@ -99,7 +99,6 @@ const SupportForm = ({ className, content, isNewSale, id }) => {
                                         <span className="error__info">{errors.name.message}</span>
                                     )}
                                 </Label>
-
                                 <Label htmlFor="email" content={{ label: `Email` }} bottomMargin="32">
                                     <Input
                                         className={errors.email ? 'invalid' : ''}
@@ -116,6 +115,7 @@ const SupportForm = ({ className, content, isNewSale, id }) => {
                                     )}
                                 </Label>
                             </Grid>
+
                             <Grid column={!isNewSale ? 2 : 1}>
                                 <Label htmlFor="phone" content={{ label: `Phone Number` }} bottomMargin="16">
                                     <Input
@@ -143,6 +143,7 @@ const SupportForm = ({ className, content, isNewSale, id }) => {
                                     </Label>
                                 )}
                             </Grid>
+                            
                             <Label htmlFor="message" content={{ label: `Message` }} bottomMargin="32">
                                 <Input
                                     className={errors.message ? 'invalid' : ''}
