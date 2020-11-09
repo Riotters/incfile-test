@@ -26,6 +26,9 @@ const Wrapper = styled.input`
     &:invalid {
         border-color: ${color.orange1};
     }
+    &.invalid {
+        border-color: ${color.orange1};
+    }
 `
 
 const Input = ({ className, placeholder, name, id, required, value, onChange, type, inputRef,pattern }) => {
