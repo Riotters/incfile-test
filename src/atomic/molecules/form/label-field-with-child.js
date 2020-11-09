@@ -23,6 +23,12 @@ const Wrapper = styled.div`
     .bottom {
         display: flex;
         width: 100%;
+        &.column{
+            flex-flow:column;
+        }
+        &.row{
+            flex-flow:row;
+        }
         
         ${props => props.contentMarginTop &&
             "margin-top:" + props.contentMarginTop
@@ -30,7 +36,7 @@ const Wrapper = styled.div`
     }
 `;
 
-const InputField = ({ className, children, content, htmlFor, bottomMargin, bottomMarginMD, contentMarginTop, ...rest}) => (
+const InputField = ({ className, children, content, htmlFor, bottomMargin, bottomMarginMD, contentMarginTop, bottomDirection, ...rest}) => (
   <Wrapper className={className} bottomMargin={bottomMargin} bottomMarginMD={bottomMarginMD} contentMarginTop={contentMarginTop} {...rest}>
       {content &&
           <div className="top">
@@ -39,7 +45,7 @@ const InputField = ({ className, children, content, htmlFor, bottomMargin, botto
           </div>
       }
 
-    <div className="bottom">{children}</div>
+    <div className="bottom" class={bottomDirection ?? 'bottom column'}>{children}</div>
   </Wrapper>
 );
 

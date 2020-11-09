@@ -90,6 +90,13 @@ const Wrapper = styled.div`
         width: 100%;
         position: relative;
     }
+
+    &.invalid{
+        .bottom{
+            border-radius: 5px;
+            border: 1px solid ${color.orange1};
+        }
+    }
 `;
 
 class Drop extends Component {

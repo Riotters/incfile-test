@@ -128,7 +128,7 @@ const BusinessNameSearchForm = ({ className, content, noMaxWidth, propState, pro
                 </Label>
             
                 <Flex>
-                    <Label htmlFor="type" content={{ label: `Entity Type` }} bottomMargin="16">
+                    <Label htmlFor="type" content={{ label: `Entity Type` }} bottomMargin="16" bottomDirection="bottom row">
                         <Radio content="LLC" checked name="entity_type" id="bns-llc" value="LLC" onClick={e => setEntityType(e.target.value)} />
                         <Radio content="Corporation" name="entity_type" id="bns-corp" value="Corporation" onClick={e => setEntityType(e.target.value)} />
                     </Label>
