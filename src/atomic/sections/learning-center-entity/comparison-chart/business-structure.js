@@ -10,7 +10,7 @@ import OvalSVG from "../../../../images/ovals/bottom-right-transparent-green1.in
 
 const BusinessStructure = styled.section`
   position: relative;
-  padding-top: 104px;
+  padding-top: 32px;
 `;
 
 const BusinessStructureSection = ({ className, content }) => (
