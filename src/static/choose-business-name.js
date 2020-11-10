@@ -18,40 +18,56 @@ export const tabPages = {
   pages: [
     {
       name: `Business name`,
-      path: `/chapters/choose-business-name/`,
+      path: `/diy-business-course/choose-business-name/`,
       icon: BusinessSVG,
     },
     {
       name: `Availability of the name`,
-      path: `/chapters/name-availability/`,
+      path: `/diy-business-course/name-availability/`,
       icon: AvailabilitySVG,
     },
     {
       name: `Security`,
-      path: `/chapters/security/`,
+      path: `/diy-business-course/digital-footprint/`,
       icon: SecuritySVG,
     },
     {
       name: `Entity type`,
-      path: `/chapters/entity-type/`,
+      path: `/diy-business-course/entity-type/`,
       icon: EntitySVG,
     },
     {
       name: `DIY Your LLC`,
-      path: `/chapters/diy-your-llc/`,
+      path: `/diy-business-course/lc-formation/`,
       icon: DIYSVG,
     },
     {
       name: `After filing`,
-      path: `/chapters/after-filing/`,
+      path: `/diy-business-course/before-after/`,
       icon: AfterSVG,
     },
   ],
 };
 
 export const top = {
-  header: "Choosing a Name for Your BusinessFees & LLC Costs",
-  text: "",
+    before_after: {
+        header: `After Filing & Before You Do Business`
+    },
+    entity_type: {
+        header: `Choosing the Right Entity Type`
+    },
+    choose_business_name: {
+        header: `Choosing a Business Name`
+    },
+    business_name_available: {
+        header: `Is Your Business Name Available`
+    },
+    lc_formation: {
+        header: `DIY Your LLC`
+    },
+    footprint: {
+        header: `Securing Your Digital Footprint`
+    },
 };
 
 export const choseNameGuide = [
@@ -221,7 +237,7 @@ export const choseNameGuide = [
     type: "button",
     content: {
       text: "Start chapter 2",
-      url: "/chapters/name-availability/",
+      url: "/diy-business-course/name-availability/",
     },
     theme: "primary56",
   },
@@ -337,7 +353,7 @@ export const nameAvailability = [
       {
         content: {
           text: "Prev chapter 1",
-          url: "/chapters/choose-business-name/",
+          url: "/diy-business-course/choose-business-name/",
         },
         theme: "secondary56",
         arrow: false,
@@ -345,7 +361,7 @@ export const nameAvailability = [
       {
         content: {
           text: "Start Chapter 3",
-          url: "/chapters/security/",
+          url: "/diy-business-course/digital-footprint/",
         },
         theme: "primary56",
       },
@@ -849,7 +865,7 @@ export const security = [
       {
         content: {
           text: "Prev chapter 2",
-          url: "/chapters/name-availability",
+          url: "/diy-business-course/name-availability/",
         },
         theme: "secondary56",
         arrow: false,
@@ -857,7 +873,7 @@ export const security = [
       {
         content: {
           text: "Start chapter 4",
-          url: "/chapters/entity-type",
+          url: "/diy-business-course/entity-type/",
         },
         theme: "primary56",
       },
@@ -1100,7 +1116,7 @@ export const entityType = [
       {
         content: {
           text: "Prev chapter 3",
-          url: "/chapters/security",
+          url: "/diy-business-course/digital-footprint/",
         },
         theme: "secondary56",
         arrow: false,
@@ -1108,7 +1124,7 @@ export const entityType = [
       {
         content: {
           text: "Start chapter 5",
-          url: "/chapters/diy-your-llc",
+          url: "/diy-business-course/lc-formation/",
         },
         theme: "primary56",
       },
@@ -1259,7 +1275,7 @@ export const diyLLC = [
       {
         content: {
           text: "Prev chapter 4",
-          url: "/chapters/entity-type",
+          url: "/diy-business-course/entity-type/",
         },
         theme: "secondary56",
         arrow: false,
@@ -1267,7 +1283,7 @@ export const diyLLC = [
       {
         content: {
           text: "Start chapter 6",
-          url: "/chapters/after-filing",
+          url: "/diy-business-course/before-after/",
         },
         theme: "primary56",
       },
@@ -1375,7 +1391,7 @@ export const afterFilling = [
     type: "button",
     content: {
       text: "Prev chapter 5",
-      url: "/chapters/diy-your-llc",
+      url: "/diy-business-course/lc-formation/",
     },
     theme: "secondary56",
     arrow: false,

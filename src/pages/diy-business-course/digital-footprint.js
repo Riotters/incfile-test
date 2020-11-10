@@ -8,19 +8,19 @@ import MainPageContent from "../../atomic/states-llc/page-content";
 import ContentMap from "../../atomic/partials/content-map";
 
 // Content
-import { choseNameGuide, tabPages } from "../../static/choose-business-name";
-import CorporationLayout from "../../atomic/partials/corporation-layout";
+import { security, tabPages, top } from "../../static/choose-business-name";
+import ChapterLayout from "../../atomic/partials/chapter-layout";
 
 function LLCIndex() {
     return (
         <Layout>
-            <SEO title="LLCs in Texas | Guide to Forming an LLC in Texas" description="Ready to form your Texas LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
-            <CorporationLayout>
+            <SEO title="Start Your Own Business | Incfile's Step-by-Step Course" description="Ready to form your Texas LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
+            <ChapterLayout top={top.footprint}>
                 <LeftTabPages content={tabPages} nonDIY />
                 <MainPageContent>
-                    <ContentMap content={choseNameGuide} />
+                    <ContentMap content={security} />
                 </MainPageContent>
-            </CorporationLayout>
+            </ChapterLayout>
         </Layout>
     );
 }

@@ -61,6 +61,10 @@ const Sticky = styled.div`
   grid-gap: ${(props) => (props.layout === "grid" ? "30px" : "")};
   position: ${(props) => (props.layout !== "grid" ? "sticky" : "")};
   top: 100px;
+
+  a{
+      pointer-events: none;
+  }
 `;
 
 const Icon = styled.div`
