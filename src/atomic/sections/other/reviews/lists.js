@@ -19,6 +19,9 @@ import Drop from '../../../../components/form/dropdown';
 import { getAggregrateReviews, getReviews } from '../../../../api/Api';
 import { formatNumber, roundUp } from '../../../../helpers/utils';
 
+import PaginationC from '../../../../components/Pagination';
+import { filter } from 'lodash';
+
 const Wrapper = styled.div`
     position: relative;
     background-color: #f2f6ff;
@@ -74,46 +77,37 @@ const Footer = styled.div`
     }
 `
 
-const Pagination = styled.div`
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 8px;
-    margin-right: 15px;
 
-    a{
-        width: 42px;
-        height: 42px;
-        padding: 24px;
-        font-family: 'Avenir';
-        font-size: 18px;
-        font-weight: bold;
-        text-align: center;
-        color: #4e4e4e;
-        background: ${color.grey5};
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 5px;
-        transition: all  0.3s ease-out;
 
-        &.active, &:hover{
-            background-color: #5089fd;
-            color: #fff;
-        }
-    }
-`
-
+// const optionsSort = [
+//     { value: `high_to_low`, label: `High to Low` },
+//     { value: `low_to_high`, label: `Lowest to Highest` },
+//     { value: `desc_date`, label: `Newsest to Oldest` },
+//     {value: `asc_date`, label: `Oldest to Newest`},
+// ];
 const optionsSort = [
-    { value: `high_to_low`, label: `High to Low` },
-    { value: `low_to_high`, label: `Lowest to Highest` },
-    { value: `desc_date`, label: `Newsest to Oldest` },
-    {value: `asc_date`, label: `Oldest to Newest`},
+    { value: `highest`, label: `High to Low` },
+    { value: `lowest`, label: `Lowest to Highest` },
+    { value: `newest`, label: `Newsest to Oldest` },
+    {value: `oldest`, label: `Oldest to Newest`},
 ];
 
 const ListReviews = ({ content }) => {
+    const totalReviews = 70;
     const [reviews, setReviews] = useState([]);
     const [loading, setLoading] = useState(true);
+    const [filters, setFilters] = useState({
+        _currentPage: 1,
+        _limit: 10,
+        _sort: 'highest'
+    });
+
+    const setCurrentPage = (pageNum) => {
+        setFilters((prevState) => ({
+            ...prevState,
+            _currentPage: pageNum
+        }));
+    }
 
     const handleSortingReviews = (option) => {
         let value = option.value;
@@ -156,7 +150,7 @@ const ListReviews = ({ content }) => {
     }
 
     React.useEffect(() => {
-        getReviews().then(data => {
+        getReviews(filters._currentPage, filters._limit, filters._sort).then(data => {
             const res = [];
             Object.keys(data).forEach(key => {
                 const vKey = data[key];
@@ -173,9 +167,9 @@ const ListReviews = ({ content }) => {
             })
             
             setReviews(res);
-            setLoading(!loading);
+            setLoading(false);
         })
-    }, []);
+    }, [filters]);
 
     return (
         <Wrapper>
@@ -217,18 +211,27 @@ const ListReviews = ({ content }) => {
 
                         <Footer>
                             <div className="left">
-                                <Pagination>
+                                {/* <Pagination>
                                     <Link to="#" className="active">1</Link>
                                     <Link to="#">2</Link>
                                     <Link to="#">3</Link>
                                     <Link to="#" className="next__page">{`>`}</Link>
-                                </Pagination>
+                                </Pagination> */}
+                                <PaginationC totalRecords={totalReviews} perPage={filters._limit} setCurrentPage={setCurrentPage} />
 
-                                <Drop options={optionsSort} placeholder="Featured Reviews" onChange={handleSortingReviews} />
+                                <Drop
+                                    options={optionsSort}
+                                    placeholder="Featured Reviews"
+                                    //onChange={handleSortingReviews}
+                                    onChange={option => setFilters((prevState) => ({
+                                        ...prevState,
+                                        _sort: option.value
+                                    }))}
+                                />
                             </div>
 
                             <div className="right">
-                                <a href="https://www.shopperapproved.com/reviews/IncFile.com/" target="_blank">
+                                <a href="https://www.shopperapproved.com/reviews/IncFile.com/" target="_blank" rel="noreferrer">
                                     <Image filename="widgetfooter-darklogo-eng" alt="Incfile review in Shopper Approved" />
                                 </a>
                             </div>
