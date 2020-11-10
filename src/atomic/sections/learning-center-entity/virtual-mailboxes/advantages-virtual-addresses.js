@@ -117,7 +117,7 @@ const SearchSection = ({ className, content }) => (
                                 <ImageWrapper background={item.background}>
                                     <Image filename={item.image} alt={item.title} />
                                 </ImageWrapper>
-                                <Paragraph big mixed={true} style={{  fontWeight: `bold` }} bottomMargin="16">{item.header}</Paragraph>
+                                <Paragraph big mixed={true} style={{  fontWeight: `bold` }} bottomMargin="16">{parse(item.header)}</Paragraph>
                                 <Paragraph mixed={true}>{parse(item.text)}</Paragraph>
                                 {item.link && (
                                     <ArrowLink bottomMargin="0" content={item.link}/>

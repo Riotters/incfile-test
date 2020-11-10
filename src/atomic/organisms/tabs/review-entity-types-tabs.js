@@ -17,6 +17,7 @@ import VisibilitySensor from "../../../components/VisibilitySensor"
 import { Heading } from "../../atoms/typography/heading"
 import { Paragraph } from "../../atoms/typography/paragraph"
 import LightBoxVideo from "../../../components/LightBox";
+import parse from 'html-react-parser';
 
 const Wrapper = styled.div`
   display: flex;
@@ -228,8 +229,8 @@ const CCorpTabs = ({layout, columns, content}) => (
                         <Heading size="3" topMargin="48">{content.content[0].header2}</Heading>
                         <Paragraph big>{content.content[0].text2}</Paragraph>
                         <Paragraph big>{content.content[0].text3}</Paragraph>
-                        <Paragraph big bottomMargin="56">{content.content[0].text4}</Paragraph>
-                        <ArrowLink content={content.content[0].link} />
+                        <Paragraph big>{content.content[0].text4}</Paragraph>
+                        <Paragraph mixed big bottomMargin="56">{parse(content.content[0].text5)}</Paragraph>
                       </PanelWrapper>
                     </Panel>
                     <Panel>
@@ -237,24 +238,24 @@ const CCorpTabs = ({layout, columns, content}) => (
                         <Heading size="3">{content.content[1].header}</Heading>
                         <Paragraph big>{content.content[1].text}</Paragraph>
                         <Paragraph big>{content.content[1].text2}</Paragraph>
-                        <Paragraph big bottomMargin="56">{content.content[1].text3}</Paragraph>
-                        <ArrowLink content={content.content[1].link} />
+                        <Paragraph big>{content.content[1].text3}</Paragraph>
+                        <Paragraph mixed big bottomMargin="56">{parse(content.content[1].text4)}</Paragraph>
                       </PanelWrapper>
                     </Panel>
                     <Panel>
                       <PanelWrapper className="panel2" layout={layout}>
                         <Heading size="3">{content.content[2].header}</Heading>
                         <Paragraph big>{content.content[2].text}</Paragraph>
-                        <Paragraph big bottomMargin="56">{content.content[2].text2}</Paragraph>
-                        <ArrowLink content={content.content[2].link} />
+                        <Paragraph big>{content.content[2].text2}</Paragraph>
+                        <Paragraph mixed big bottomMargin="56">{parse(content.content[2].text3)}</Paragraph>
                       </PanelWrapper>
                     </Panel>
                     <Panel>
                       <PanelWrapper className="panel2" layout={layout}>
                         <Heading size="3">{content.content[3].header}</Heading>
                         <Paragraph big>{content.content[3].text}</Paragraph>
-                        <Paragraph big bottomMargin="56">{content.content[3].text2}</Paragraph>
-                        <ArrowLink content={content.content[3].link} />
+                        <Paragraph big>{content.content[3].text2}</Paragraph>
+                        <Paragraph mixed big bottomMargin="56">{parse(content.content[3].text3)}</Paragraph>
                       </PanelWrapper>
                     </Panel>
                 </Collapse>
