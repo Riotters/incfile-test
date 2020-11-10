@@ -12,7 +12,6 @@ import OvalSVG from "../../../../images/ovals/top-right-orange1-to-transparent.i
 import Oval2SVG from "../../../../images/ovals/bottom-left-transparent-orange.inline.svg";
 import Curve from "../../../atoms/icons/curve";
 import CurveSVG from "../../../../images/curves/bottom-left-top-right-big.inline.svg";
-
 import { getAnnualReportDueDate } from "../../../../api/Api";
 
 const NextState = styled.section`
