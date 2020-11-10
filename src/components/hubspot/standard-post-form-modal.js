@@ -8,45 +8,37 @@ import {Paragraph} from "../../atomic/atoms/typography/paragraph";
 import Dropdown from "../../atomic/molecules/form/dropdown";
 import {color} from "../../atomic/atoms/styles/colors";
 import ButtonSubmit from "../../atomic/molecules/buttons/button-action";
+import { useForm, Controller } from "react-hook-form";
 
 // texts
 import { _phoneFormat } from '../../helpers/input-parsers';
+import { validEmail, isUSPhone } from '../../helpers/form-validate';
 
 // API 
 import { postHSForm } from '../../api/Api';
 
 const HSFormModal = ({ content, postDownloadAction, hs_form_id, modalExit }) => {
-    const [intentPath, setIntentPath] = React.useState('');
     const [phoneNumber, setPhoneNumber] = React.useState('');
     const pageUrl = typeof window !== 'undefined' ? window.location.href : '';
+    const { register, handleSubmit, control, errors, formState, setValue } = useForm();
+    const { isSubmitting } = formState;
 
-    const handleForm = (e) => {
-        e.preventDefault();
-        const form = e.target;
-        
-        if (!form.checkValidity()) {
-            return false;
-        }
-
-        const formData = new FormData(form);
-        formData.set('intent_path', intentPath);
+    const handleForm = data => {   
+        const formData = new FormData();
         formData.set('pageTitle', document.title);
         formData.set('pageUrl', pageUrl);
+        formData.set('hs_form_id', hs_form_id);
+
+        Object.keys(data).forEach(i => {
+            return formData.set(i, data[i]);
+        });
     
         postHSForm(formData)
             .then(json => {
                 // Do sth
             });
         
-        form.reset();
-        setPhoneNumber('');
-        setIntentPath('');
         postDownloadAction(formData);
-    }
-
-    const handlePhoneChange = (e) => {
-        let formatPhone = _phoneFormat(e.target.value);
-        setPhoneNumber(formatPhone);
     }
 
     const options = [
@@ -56,32 +48,84 @@ const HSFormModal = ({ content, postDownloadAction, hs_form_id, modalExit }) => 
     ];
 
     return (
-        <FormWrapper onSubmit={handleForm} noValidate>
-            <input type="hidden" name="hs_form_id" value={hs_form_id} />
+        <FormWrapper onSubmit={handleSubmit(handleForm)} id="hs-form">
             <Heading size={3}>{content.header}</Heading>
             <Paragraph big>{content.text}</Paragraph>
             <hr />
             <Label htmlFor="email" content={{ label: `Email` }} bottomMargin="16">
-                <Input type="email" name="email" id="email" required />
+                <Input
+                    className={errors.email ? 'invalid' : ''}
+                    type="text"
+                    name="email"
+                    id="email"
+                    inputRef={register({ 
+                        required: `Field can't be empty`,
+                        validate: value => validEmail(value) || `Email is not valid`
+                    })}
+                />
+                {errors.email && (
+                    <span className="error__info">{errors.email.message}</span>
+                )}
             </Label>
+
             <Label htmlFor="first-name" content={{ label: `First Name` }} bottomMargin="16">
-                <Input name="firstname" id="first-name" required />
+                <Input
+                    className={errors.firstname ? 'invalid' : ''}
+                    name="firstname"
+                    id="first-name"
+                    inputRef={register({ required: `Field can't be empty` })}
+                />
+                {errors.firstname && (
+                    <span className="error__info">{errors.firstname.message}</span>
+                )}
             </Label>
             <Label htmlFor="last-name" content={{ label: `Last Name` }} bottomMargin="16">
-                <Input name="lastname" id="last-name" required />
+                <Input
+                    className={errors.lastname ? 'invalid' : ''}
+                    name="lastname"
+                    id="last-name"
+                    inputRef={register({ required: `Field can't be empty` })}
+                />
+                {errors.lastname && (
+                    <span className="error__info">{errors.lastname.message}</span>
+                )}
             </Label>
             <Label htmlFor="phone" content={{ label: `Phone Number` }} bottomMargin="16">
-                <Input name="phone" id="phone" value={phoneNumber} pattern="\d{3}-\d{3}-\d{4}" onChange={e => handlePhoneChange(e)} required />
+                <Input
+                    className={errors.phone ? 'invalid' : ''}
+                    name="phone"
+                    id="phone"
+                    value={phoneNumber}
+                    onChange={e => setPhoneNumber(_phoneFormat(e.target.value))}
+                    inputRef={register({
+                        required: `Field can't be empty`,
+                        validate: value => isUSPhone(value) || `Should be formatted like xxx-xxx-xxxx`
+                    })}
+                />
+                {errors.phone && (
+                    <span className="error__info">{errors.phone.message}</span>
+                )}
             </Label>
             <Label htmlFor="intent_path" content={{ label: `I want to...` }} bottomMargin="32">
-                <Dropdown
+                <Controller
+                    control={control}
                     name="intent_path"
-                    id="intent_path"
-                    required
-                    options={options}
-                    onChange={option => setIntentPath(option.value)}
-                    placeholder="Please select"
+                    rules={{ required: `Field can't be empty` }}
+                    defaultValue=""
+                    render={({ onChange, onBlur, value, name, ref }) => (
+                        <Dropdown
+                            className={errors.intent_path ? 'invalid' : ''}
+                            options={options}
+                            onChange={option => {
+                                setValue('intent_path', option.value, {shouldValidate: true})
+                            }}
+                            placeholder="Please select"
+                        />
+                    )}
                 />
+                {errors.intent_path && (
+                    <span className="error__info">{errors.intent_path.message}</span>
+                )}
             </Label>
             <FooterModal>
                 <ButtonSubmit theme="primary56" type="submit" content={content.button} />
@@ -112,9 +156,10 @@ const FormWrapper = styled.form`
     h2 {
         text-align: left;
     }
-`;
 
-const FieldWrapper = styled.div`
-    width: 100%;
-    margin-bottom: 15px;
+    button:disabled,
+    button[disabled]{
+        cursor: not-allowed;
+        opacity: 0.6;
+    }
 `;

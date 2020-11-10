@@ -58,19 +58,19 @@ const CheckAvailabilityName = ({ location }) => {
                     <OvalSVG2 />
                 </Oval>
 
-                <Container>
-                    <Link to="/business-name-generator/" className="back-link"> <span> <ArrowLeft /> </span> Back </Link>
-                    <ContentCenter>
-                        <HeadingCenter headline={formCheck.header} text={formCheck.text} />
-                        <RelativeElement maxWidth="670px" margin="60px 0 0 0">
-                            <AbsoluteShapCure rotate={90} right="70" bottom="-25">
-                                <ShapeCurve color={color.blue} />
-                            </AbsoluteShapCure>
-                            {/* <FormSection content={formCheck.form} propEntityName={entityName} /> */}
-                            <BusinessNameSearchForm propEntityName={entityName} />
-                        </RelativeElement>
-                    </ContentCenter>
-                </Container>
+                <ContentCenter>
+                    <div style={{ display: `flex`, width: `100%` }}>
+                        <Link to="/business-name-generator/" className="back-link"> <span> <ArrowLeft /> </span> Back </Link>
+                    </div>
+                    <HeadingCenter headline={formCheck.header} text={formCheck.text} />
+                    <RelativeElement maxWidth="670px" margin="60px 0 0 0">
+                        <AbsoluteShapCure rotate={90} right="70" bottom="-25">
+                            <ShapeCurve color={color.blue} />
+                        </AbsoluteShapCure>
+                        
+                        <BusinessNameSearchForm propEntityName={entityName} />
+                    </RelativeElement>
+                </ContentCenter>
             </Wrapper>
         </Layout>
     );

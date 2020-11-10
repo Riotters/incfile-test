@@ -138,15 +138,20 @@ export const faq = {
     items: [
       {
         question: `Can a foreign resident be a shareholder in an S Corporation?`,
-        answer: `In oculis quidem faciunt, ut labore et via procedat oratio quaerimus igitur, quid bonum esse ratione intellegi posse et molestiae non recusandae itaque negat opus esse appetendum, alterum aspernandum sentiamus alii autem, quibus ego assentior, cum a philosophis compluribus permulta dicantur, cur verear, ne ferae.`,
+        answer: `In order to be eligible to be a shareholder of an S-Corporation the individual would need to be classified as a “Resident Alien”. A “Resident Alien” has the legal capacity to work and pay taxes in the United States and therefore should possess a Social Security Number (SSN) or a Individual Taxpayer Identification Number (ITIN).`,
       },
       {
         question: `Is there a limit to the amount of shareholders an S Corporation can have?`,
-        answer: `In oculis quidem faciunt, ut labore et via procedat oratio quaerimus igitur, quid bonum esse ratione intellegi posse et molestiae non recusandae itaque negat opus esse appetendum, alterum aspernandum sentiamus alii autem, quibus ego assentior, cum a philosophis compluribus permulta dicantur, cur verear, ne ferae.`,
+        answer: `An S Corporation formed before 2004 was limited to 75 shareholders however the limit of shareholders for any S Corporation formed after 2004 was increased to 100 shareholders.`,
       },
       {
         question: `Which entity offers the best tax advantages?`,
-        answer: `In oculis quidem faciunt, ut labore et via procedat oratio quaerimus igitur, quid bonum esse ratione intellegi posse et molestiae non recusandae itaque negat opus esse appetendum, alterum aspernandum sentiamus alii autem, quibus ego assentior, cum a philosophis compluribus permulta dicantur, cur verear, ne ferae.`,
+          answer: [
+              {text: `There are two main types of corporations the S-Corporation and the C-Corporation.`},
+              {text: `Every corporation is considered a C corp when it is formed with the Secretary of State. The distinction is made on a federal level and processed by the IRS.`},
+              {text: `Corporation that want to be taxed a small business corporation file a form with the IRS called Form 2553 and will file their taxes using 1120s tax return. Corporations that do not file this form are taxed as traditional corporations and file the 1120 tax return.`},
+              {text: `A C-corporation file a corporate tax return and will pay taxes on the profits. The post tax income may then be distributed to the corporation shareholders in the the form of dividends. The shareholders are then taxed on dividends, which effectively forces the ownership of a corporation to pay taxes on the same earnings twice- once at the corporate level, and then as individual level. This is what is known as “double taxation.”`}
+          ],
       },
     ],
   },

@@ -1,13 +1,13 @@
 import React from "react";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Layout from "../../components/layout";
+import SEO from "../../components/seo";
 //Sections
-import Top from "../atomic/partials/top";
-import About from "../atomic/sections/diy-business-course/about";
-import Consultation from "../atomic/sections/diy-business-course/consultation";
-import Form from "../atomic/sections/diy-business-course/form";
+import Top from "../../atomic/partials/top";
+import About from "../../atomic/sections/diy-business-course/about";
+import Consultation from "../../atomic/sections/diy-business-course/consultation";
+import Form from "../../atomic/sections/diy-business-course/form";
 //Texts
-import { top, about, consultation, form } from "../static/diy-business-course";
+import { top, about, consultation, form } from "../../static/diy-business-course";
 
 const StartAnLLC = () => {
   return (

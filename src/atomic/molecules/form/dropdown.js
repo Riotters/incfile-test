@@ -90,6 +90,13 @@ const Wrapper = styled.div`
         width: 100%;
         position: relative;
     }
+
+    &.invalid{
+        .bottom{
+            border-radius: 5px;
+            border: 1px solid ${color.orange1};
+        }
+    }
 `;
 
 class Drop extends Component {
@@ -124,6 +131,7 @@ class Drop extends Component {
                 </div>
                 <div className="bottom">
                     <Dropdown
+                        ref={this.props.inputRef}
                         name={this.props.name}
                         id={this.props.id}
                         required={this.props.required}

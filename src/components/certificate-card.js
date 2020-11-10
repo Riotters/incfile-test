@@ -94,6 +94,9 @@ const CertificateCard = ({ className, headline, content, image, dropdownOnePlace
     }
 
     const getPrice = (option) => {
+        let state = option.value;
+        setEntityState(state);
+
         if (orderPage === '/foreign-qual.php') {
             return;
         }
@@ -104,10 +107,7 @@ const CertificateCard = ({ className, headline, content, image, dropdownOnePlace
             return;
         }
 
-        let state = option.value;
         let priceColumnField = `${priceColumn}${entityTypeSelected.value}`;
-        setEntityState(state);
-
         let endpoint = `${process.env.INCFILE_API_URL}/get-price-by-state/?state=${state}`;
         if (fields) {
             endpoint += `&_fields=${fields}`;
@@ -115,11 +115,11 @@ const CertificateCard = ({ className, headline, content, image, dropdownOnePlace
 
         fetchData(endpoint)
         .then(data => {
-            //setShowExtraFee(true);
             setExtraFee(`+$${data[priceColumnField]} State Fee`);
         });
     }
 
+    // Only apply for Foreign Qualification
     const checkForeignQualificateState = (option) => {
         let stateOfFQ = option.value;
 
@@ -138,7 +138,6 @@ const CertificateCard = ({ className, headline, content, image, dropdownOnePlace
 
             fetchData(endpoint)
             .then(data => {
-                //setShowExtraFee(true);
                 setExtraFee(`+$${data[priceColumnField]} ${shortState(stateOfFQ)} State Fee`);
             });
         }

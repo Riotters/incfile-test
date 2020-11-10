@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 import styled from "styled-components";
 import { color } from "../../../components/styles/colors";
 import ArrowSVG from "../../../images/arrow.inline.svg";
@@ -112,8 +111,8 @@ const Arrow = styled.div`
   }
 `;
 
-const Button = ({ content, id, type, className, theme, height, width, arrow, arrow2, margin, marginSM, marginMD, marginLG, padding, right, wrap, onClick }) => (
-    <Wrapper id={id} className={className} type={type} height={height} width={width} arrow={arrow} arrow2={arrow2} theme={theme} margin={margin} marginSM={marginSM} marginMD={marginMD} marginLG={marginLG} padding={padding} wrap={wrap} onClick={onClick}>
+const Button = ({ content, id, type, className, theme, height, width, arrow, arrow2, margin, marginSM, marginMD, marginLG, padding, right, wrap, onClick, disabled }) => (
+    <Wrapper id={id} className={className} type={type} height={height} width={width} arrow={arrow} arrow2={arrow2} theme={theme} margin={margin} marginSM={marginSM} marginMD={marginMD} marginLG={marginLG} padding={padding} wrap={wrap} onClick={onClick} disabled={disabled}>
         {content.text ? content.text : content}
         {arrow && (
             <Arrow className="arrow1" theme={theme} right={right}>

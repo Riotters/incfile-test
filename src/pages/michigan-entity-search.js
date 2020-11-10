@@ -17,22 +17,22 @@ import {scrollToElement } from '../helpers/utils';
 import { top, about, search, newRules, otherRules, startBusiness, faq } from "../static/entity-search/michigan-entity-search";
 
 const GeneralResearchTopics = () => (
-  <Layout>
-    <SEO title="Michigan Business Entity Search | Is Your Name Available?" description="Starting a new business in MI? Check to see if your preferred business name is available with Incfile’s easy name search tool. Try it now." />
-    <Top imageName="mrs-bulb-state-ilustrations-9948" imageAlt="Mrs Bulb and with checklist" ovalColor="sun" headlineWidth="700" textWidth="520">
-      <h1>{top.header}</h1>
-      <p>{top.text}</p>
-      <Buttonsbox>
-        <Button onClick={e => scrollToElement(e, 'js-business-name-search-form')} content={top.button[0]} theme="primary56" arrow />
-      </Buttonsbox>
-    </Top>
-    <About content={about} />
-    <Search content={search} id="js-business-name-search-form" />
-    <NewRules content={newRules} />
-    <OtherRules content={otherRules} />
-    <StartBusiness content={startBusiness} />
-    <Faq content={faq} />
-  </Layout>
+    <Layout>
+        <SEO title="Michigan Business Entity Search | Is Your Name Available?" description="Starting a new business in MI? Check to see if your preferred business name is available with Incfile’s easy name search tool. Try it now." />
+        <Top imageName="mrs-bulb-state-ilustrations-9948" imageAlt="Mrs Bulb and with checklist" ovalColor="sun" headlineWidth="700" textWidth="520">
+            <h1>{top.header}</h1>
+            <p>{top.text}</p>
+            <Buttonsbox>
+                <Button onClick={e => scrollToElement(e, 'js-business-name-search-form')} content={top.button[0]} theme="primary56" arrow />
+            </Buttonsbox>
+        </Top>
+        <About content={about} />
+        <Search content={search} id="js-business-name-search-form" />
+        <NewRules content={newRules} />
+        <OtherRules content={otherRules} />
+        <StartBusiness content={startBusiness} />
+        <Faq content={faq} />
+    </Layout>
 );
 
 export default GeneralResearchTopics;
