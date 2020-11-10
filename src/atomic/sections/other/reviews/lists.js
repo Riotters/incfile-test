@@ -16,8 +16,8 @@ import AbsoluteShapCure from '../../../elements/absolute-shape-curve-e';
 import Whitebox from "../../../atoms/boxes/white-box";
 import { Paragraph } from "../../../atoms/typography/paragraph";
 import Drop from '../../../../components/form/dropdown';
-import { getAggregrateReviews, getReviews } from '../../../../api/Api';
-import { formatNumber, roundUp } from '../../../../helpers/utils';
+import { getReviews } from '../../../../api/Api';
+import Pagination from '../../../../components/Pagination';
 
 const Wrapper = styled.div`
     position: relative;
@@ -74,70 +74,28 @@ const Footer = styled.div`
     }
 `
 
-const Pagination = styled.div`
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 8px;
-    margin-right: 15px;
-
-    a{
-        width: 42px;
-        height: 42px;
-        padding: 24px;
-        font-family: 'Avenir';
-        font-size: 18px;
-        font-weight: bold;
-        text-align: center;
-        color: #4e4e4e;
-        background: ${color.grey5};
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 5px;
-        transition: all  0.3s ease-out;
-
-        &.active, &:hover{
-            background-color: #5089fd;
-            color: #fff;
-        }
-    }
-`
-
 const optionsSort = [
-    { value: `high_to_low`, label: `High to Low` },
-    { value: `low_to_high`, label: `Lowest to Highest` },
-    { value: `desc_date`, label: `Newsest to Oldest` },
-    {value: `asc_date`, label: `Oldest to Newest`},
+    { value: `highest`, label: `High to Low` },
+    { value: `lowest`, label: `Lowest to Highest` },
+    { value: `newest`, label: `Newsest to Oldest` },
+    {value: `oldest`, label: `Oldest to Newest`},
 ];
 
-const ListReviews = ({ content }) => {
+const ListReviews = () => {
+    const totalReviews = 70;
     const [reviews, setReviews] = useState([]);
     const [loading, setLoading] = useState(true);
+    const [filters, setFilters] = useState({
+        _currentPage: 1,
+        _limit: 10,
+        _sort: 'highest'
+    });
 
-    const handleSortingReviews = (option) => {
-        let value = option.value;
-        
-        let reSort = [...reviews].sort((a, b) => {
-            if (value === 'desc_date') {
-                return new Date(b.date) - new Date(a.date);
-            }
-
-            if (value === 'asc_date') {
-                return new Date(a.date) - new Date(b.date);
-            }
-
-            if (value === 'high_to_low') {
-                return b.rate - a.rate;
-            }
-
-            if (value === 'low_to_high') {
-                return a.rate - b.rate;
-            }
-            return '';
-        });
-
-        setReviews(reSort);
+    const setCurrentPage = (pageNum) => {
+        setFilters((prevState) => ({
+            ...prevState,
+            _currentPage: pageNum
+        }));
     }
 
     const formatDate = (date) => {
@@ -156,27 +114,26 @@ const ListReviews = ({ content }) => {
     }
 
     React.useEffect(() => {
-        getReviews().then(data => {
-            console.log('HH', data);
+        getReviews(filters._currentPage, filters._limit, filters._sort).then(data => {
             const res = [];
-
             Object.keys(data).forEach(key => {
                 const vKey = data[key];
-                
-                return res.push({
-                    rate: vKey.overall,
-                    verified: true,
-                    author: vKey.display_name,
-                    date: vKey.review_date,
-                    address: vKey.location,
-                    text: vKey.comments,
-                });
+                if (vKey.display_name) {
+                    return res.push({
+                        rate: vKey.overall,
+                        verified: true,
+                        author: vKey.display_name,
+                        date: vKey.review_date,
+                        address: vKey.location,
+                        text: vKey.comments,
+                    })
+                }
             })
             
             setReviews(res);
-            setLoading(!loading);
+            setLoading(false);
         })
-    }, []);
+    }, [filters]);
 
     return (
         <Wrapper>
@@ -218,18 +175,21 @@ const ListReviews = ({ content }) => {
 
                         <Footer>
                             <div className="left">
-                                <Pagination>
-                                    <Link to="#" className="active">1</Link>
-                                    <Link to="#">2</Link>
-                                    <Link to="#">3</Link>
-                                    <Link to="#" className="next__page">{`>`}</Link>
-                                </Pagination>
-
-                                <Drop options={optionsSort} placeholder="Featured Reviews" onChange={handleSortingReviews} />
+                                <Pagination totalRecords={totalReviews} perPage={filters._limit} setCurrentPage={setCurrentPage} />
+                                <Drop
+                                    options={optionsSort}
+                                    placeholder="Featured Reviews"
+                                    onChange={option => setFilters((prevState) => ({
+                                        ...prevState,
+                                        _sort: option.value
+                                    }))}
+                                />
                             </div>
 
                             <div className="right">
-                                <Image filename="widgetfooter-darklogo-eng" alt="" />
+                                <a href="https://www.shopperapproved.com/reviews/IncFile.com/" target="_blank" rel="noreferrer">
+                                    <Image filename="widgetfooter-darklogo-eng" alt="Incfile review in Shopper Approved" />
+                                </a>
                             </div>
                         </Footer>
 

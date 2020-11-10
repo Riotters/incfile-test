@@ -22,7 +22,7 @@ const Wrapper = styled(Link)`
   text-align: center;
   text-decoration: none;
   position: relative;
-  padding: ${(props) => (props.padding ? props.padding : props.theme === "primary40" || props.theme === "secondary40" ? "6px 30px" : props.theme === "primary48" || props.theme === "secondary48" ? "10px 38px" : props.theme === "primary56" || props.theme === "secondary56" ? "14px 46px" : "")};
+  padding: ${(props) => (props.padding ? props.padding : props.theme === "primary40" || props.theme === "secondary40" ? "6px 30px" : props.theme === "primary48" || props.theme === "secondary48" ? "10px 38px" : props.theme === "primary56" || props.theme === "secondary56" ? "14px 42px" : "")};
   margin: ${(props) => (props.margin ? props.margin : "")};
   transition: background-color 0.3s ease, color 0.3s ease;
 

@@ -11,48 +11,6 @@ import Curve from "../../atoms/icons/curve";
 import CurveSVG from "../../../images/curves/top-left-bottom-right.inline.svg";
 import { states } from "../../../components/states";
 
-const Wrapper = styled(Whitebox)`
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 570px;
-  padding: 40px;
-  position: relative;
-
-  .curve-shape {
-    svg {
-      transform: scale(-1);
-    }
-  }
-`;
-
-const Grid = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 30px;
-  width: 100%;
-
-  .Dropdown-root {
-    min-width: 50px;
-  }
-`;
-
-const Flex = styled.div`
-  display: flex;
-  justify-content: space-between;
-`;
-
-const LinkWrapper = styled.div`
-  display: flex;
-  align-items: flex-end;
-  margin-bottom: 16px;
-
-  a {
-    font-size: 16px;
-    line-height: 24px;
-  }
-`;
-
 const entityList = ['LLC', 'SCorporation', 'CCorporation', 'Nonprofit'];
 const stateList = states.state.map((state) => state.name);
 const monthList = [
@@ -137,3 +95,28 @@ const AnnualReportForm = ({ className, content, checkDueDate }) => {
 };
 
 export default AnnualReportForm;
+
+const Wrapper = styled(Whitebox)`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 570px;
+  padding: 40px;
+  position: relative;
+
+  .curve-shape {
+    svg {
+      transform: scale(-1);
+    }
+  }
+`;
+const Grid = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  width: 100%;
+
+  .Dropdown-root {
+    min-width: 50px;
+  }
+`;

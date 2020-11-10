@@ -202,8 +202,8 @@ function Top({ content }) {
                         <p>{content.box1.text2}</p>
                     </Box>
                     <Box bgColor={color.blue3} className="box__2">
-                        {statistics.stars.map(item => (
-                            <Item width={item.percent}>
+                        {statistics.stars.map((item, index) => (
+                            <Item width={item.percent} key={index}>
                                 <span>{item.name}</span>
                                 <span width={item.percent}></span>
                                 <span>{item.total}</span>

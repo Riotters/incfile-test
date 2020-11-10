@@ -29,8 +29,8 @@ export const getAggregrateReviews = () => {
     return data;
 }
 
-export const getReviews = async (page = 0) => {
-    const data = await fetch(`${process.env.SHOPPER_ENDPOINT}/reviews/${process.env.SHOPPER_SITE_ID}?token=${process.env.SHOPPER_TOKEN}&rating=1%2C2%2C3%2C4%2C5&sort=newest&limit=20&page=${page}&test=false&xml=false`)
+export const getReviews = async (page, limit, sort) => {
+    const data = await fetch(`${process.env.SHOPPER_ENDPOINT}/reviews/${process.env.SHOPPER_SITE_ID}?token=${process.env.SHOPPER_TOKEN}&rating=1%2C2%2C3%2C4%2C5&sort=${sort}&limit=${limit}&page=${page}`)
         .then(response => response.json());
 
     return data;
