@@ -15,7 +15,7 @@ Correspondence Anywhere.`,
 }
 
 export const mailboxes = {
-    text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam ipsum. Sed in fermentum purus. Curabitur vestibulum augue at tellus efficitur, in viverra nisi venenatis. Vestibulum efficitur luctus lacinia. Integer a euismod lectus, eu eleifend risus`,
+    text: `The way we do business has changed. More people travel than ever before, but we still need to stay in touch. Our suppliers, customers, partners and others expect to contact us and get the answers they need. Although email, instant messaging and other technologies make communication easier and faster, there’s no good substitute for traditional snail mail.`,
     text2: "Until now.",
     box: {
         header: "Welcome to Incfile’s Virtual Address service.",
@@ -48,13 +48,9 @@ export const advantages = {
             background: color.orange3
         },
         {
-            header: "Digital nomads and remote work",
+            header: `<a href="/start-a-business/digital-nomad-business/">Digital nomads</a> and remote work`,
             text: "Traveling and working from other countries is an amazing experience. Now you never worry about missing important mail on the go.",
             image: "digital-nomad-5392",
-            link: {
-                url: "/start-a-business/digital-nomad-business/",
-                text: "Digital nomads"
-            },
             background: color.purple3
         }
     ],

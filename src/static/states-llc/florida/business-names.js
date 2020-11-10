@@ -7,7 +7,7 @@ import BgBoxIncorporationPaperWork from "../../../images/icons/states/incorporat
 
 export const businessNamesContent = {
   header: {
-    title: `Naming Your Texas LLC`,
+    title: `Naming Your Florida LLC`,
     subline: `Learn how to conduct a business entity search with the Florida Division of Corporations and register your LLC name.`,
     boxes: [
       {
@@ -213,7 +213,7 @@ export const businessNamesContent = {
         },
       },
     },
-    // Register Your Business Name With the Texas Secretary of State
+    // Register Your Business Name With the Florida Secretary of State
     {
       type: `heading`,
       size: 3,

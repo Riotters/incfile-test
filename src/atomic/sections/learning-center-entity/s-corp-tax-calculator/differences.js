@@ -46,7 +46,7 @@ const DifferencesSection = ({ className, content }) => (
     <Oval className="oval" height="570" width="570" top="0" right="0">
       <OvalSVG />
     </Oval>
-    <HeadingCenter headline={content.header} headlineWidth="770" linkText={content.link.text} linkUrl={content.link.url} bottomMargin="56" />
+    <HeadingCenter headline={content.header} headlineWidth="770" bottomMargin="56" />
     <ContentCenter contentWidth="970">
       <Grid>
         {content.cards.map((card, i) => (

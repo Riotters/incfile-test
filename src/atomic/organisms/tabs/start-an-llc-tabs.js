@@ -325,6 +325,9 @@ const CCorpTabs = ({ layout, columns, content }) => (
                     ))}
                   </Grid>
                   <ArrowLink content={content.content[2].link} />
+                  <Paragraph big bottomMargin="56">
+                    {content.content[2].text2}
+                  </Paragraph>
                 </PanelWrapper>
               </Panel>
               <Panel>

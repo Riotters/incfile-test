@@ -1,7 +1,7 @@
-import React from "react"
-import styled from "styled-components"
-import SearchSVG from "../../../images/search.inline.svg"
-import { shadow } from "../../atoms/styles/shadows"
+import React from "react";
+import styled from "styled-components";
+import SearchSVG from "../../../images/search.inline.svg";
+import { shadow } from "../../atoms/styles/shadows";
 
 const Wrapper = styled.div`
   display: flex;
@@ -11,7 +11,7 @@ const Wrapper = styled.div`
   width: 100%;
   position: relative;
   box-shadow: ${shadow.white2};
-`
+`;
 
 const Box = styled.div`
   display: flex;
@@ -21,20 +21,20 @@ const Box = styled.div`
   background-color: #fff;
   padding: 0 40px;
   position: relative;
-`
+`;
 
 const Icon = styled.div`
   height: 16px;
   width: 16px;
   transform: translateY(-2px);
-`
+`;
 
 const Label = styled.label`
   height: 100%;
   flex-grow: 1;
   position: absolute;
   z-index: -1;
-`
+`;
 
 const Input = styled.input`
   height: 100%;
@@ -45,13 +45,13 @@ const Input = styled.input`
   font-size: 16px;
   line-height: 19px;
   margin-left: 16px;
-`
+`;
 
 const States = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-`
+`;
 
 const State = styled.div`
   display: flex;
@@ -77,7 +77,7 @@ const State = styled.div`
       transform: translateY(-2px);
     }
   }
-`
+`;
 
 const Searchbar = () => {
   return (
@@ -87,14 +87,10 @@ const Searchbar = () => {
           <SearchSVG />
         </Icon>
         <Label for="search">searchbar</Label>
-        <Input
-          name="search"
-          id="search"
-          type="text"
-        />
+        <Input name="search" id="search" type="text" />
       </Box>
     </Wrapper>
-  )
-}
+  );
+};
 
-export default Searchbar
+export default Searchbar;

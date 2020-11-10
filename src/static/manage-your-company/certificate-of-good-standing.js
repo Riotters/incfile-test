@@ -27,10 +27,10 @@ export const about = {
         `When do you need a Certificate of Good Standing?`,
     text3: 
         `In certain situations, you may be required to prove that your business exists and is in compliance with relevant laws and regulations. A Certificate of Good Standing from your state serves as this proof. 
-        A Certificate of Good Standing is often required in order to obtain a loan, renew a business license or to file your business taxes. There are a few key reasons why your company might need a Certificate of Good Standing.`,
+        A Certificate of Good Standing is often required in order to obtain a loan, renew a business license or to file your business taxes.`,
     box: {
         header:
-            `Sometimes this document is requested by:`,
+            `There are a few key reasons why your company might need a Certificate of Good Standing:`,
         list: [
         `Other state governments as part of the process of applying for <a href="/manage-your-company/foreign-qualification/">Foreign Qualification</a> for your business to register to do business in states other than your home state`,
         `Lenders or banks that want to get proof of your business’s existence and business history as part of evaluating your creditworthiness for a loan or when carrying out certain types of transactions`,
@@ -47,10 +47,10 @@ export const about = {
         `How do I get a Certificate of Good Standing?`,
     text5: 
         `After you form your LLC or corporation, it’s important to stay up-to-date on filing your annual report, biennial report, or other required forms and compliance paperwork. 
-        To stay in good standing, your business needs to meet a few key requirements, depending on your company’s home state. `,
+        To stay in good standing, your business needs to meet a few key requirements, depending on your company’s home state. These typically include:`,
     box2: {
         header:
-            `These typically include:`,
+            ``,
         list: [
             `Being up-to-date on annual or biennial fees to the secretary of state to register or renew your business`,
             `Filing annual or biennial reports`,
@@ -70,7 +70,7 @@ export const help = {
       `To obtain a Good Standing Certificate, the business entity must be registered as a legal entity with the secretary of state, and cannot be in default of corporate regulations, suspended or revoked by the state.`,
     link: {
         text:
-            `We can handle the paperwork`,
+            `Incfile will handle the paperwork for your Certificate of Good Standing`,
         url:
         `${process.env.ORDER_URL}/cert-good-standing.php`,
     },

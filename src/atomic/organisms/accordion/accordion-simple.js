@@ -59,10 +59,14 @@ const PanelWrapper = styled.div`
     line-height: 24px;
 
     a {
-      color: ${color.orange1};
       font-size: inherit;
       line-height: inherit;
       text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: ${color.orange1};
+      }
     }
   }
 

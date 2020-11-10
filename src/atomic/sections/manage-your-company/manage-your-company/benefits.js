@@ -37,7 +37,7 @@ const Benefits = () => {
       <ContentCenter className="heading">
         <Heading size="3">Providing everything you need when you need it</Heading>
         <Paragraph big bottomMargin="48" maxWidth="770">
-          We are here to help you every step of the way. We provide lifetime company alerts to make sure that you never miss an important due date and can assist with protecting your good standing by filing any mandatory reports with the state.
+            As your business grows we'll be there every step of the way to make sure that you have the resources at hand to service your companies ongoing needs.
         </Paragraph>
       </ContentCenter>
       <Container>

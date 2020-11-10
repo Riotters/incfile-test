@@ -178,7 +178,7 @@ export const packets = {
     {
       header: "Silver",
       variant: "",
-      text: "Our core features for\n" + "the lowest price",
+      text: "",
       price: 100,
       image: "",
       button: {
@@ -203,7 +203,7 @@ export const packets = {
     {
       header: "Gold",
       variant: "most popular",
-      text: "Our core features for\n" + "the lowest price",
+      text: "Everything from sliver+",
       price: 100,
       image: "",
       button: {
@@ -228,7 +228,7 @@ export const packets = {
     {
       header: "Platinum",
       variant: "Best value",
-      text: "Our core features for\n" + "the lowest price",
+      text: "Everything from sliver & gold+",
       price: 100,
       image: "",
       button: {
