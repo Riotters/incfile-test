@@ -10,9 +10,10 @@ import Label from "../../molecules/form/label-field-with-child";
 import Input from "../../atoms/inputs/input";
 import Button from "../../molecules/buttons/button-action";
 import { useForm } from 'react-hook-form';
+import Swal from 'sweetalert2';
 import { submitContactForm } from '../../../api/Api';
 import { _phoneFormat } from '../../../helpers/input-parsers';
-import { validEmail, isUSPhone } from '../../../helpers/form-validate';
+import { validEmail } from '../../../helpers/form-validate';
 
 const SupportForm = ({ className, content, isNewSale, id }) => {
     const [phoneNumber, setPhoneNumber] = React.useState('');
@@ -34,9 +35,13 @@ const SupportForm = ({ className, content, isNewSale, id }) => {
         });
 
         // Do sth after the form is submitted
-
         setPhoneNumber('');
         setFormSubmitted(true);
+        Swal.fire(
+            'Thank You!',
+            'Your question has been successfully submitted.',
+            'success'
+        );
 
         //Fire GTM dataLayer
         if (typeof window !== 'undefined') {
@@ -45,6 +50,53 @@ const SupportForm = ({ className, content, isNewSale, id }) => {
                 'event': 'ContactUsFormSubmission'
             });
         }
+    }
+
+    const showModalForgotOrdernum = e => {
+        e.preventDefault();
+        Swal.fire({
+            title: `Remind Order Number`,
+            html: `Your order number will be sent to this address.`,
+            input: 'email',
+            inputPlaceholder: 'Enter your email address',
+            inputAttributes: {
+              autocapitalize: 'off'
+            },
+            showCancelButton: true,
+            confirmButtonText: 'Submit',
+            showLoaderOnConfirm: true,
+            preConfirm: async (email) => {
+                return await fetch(`${process.env.INCFILE_API_URL}/remind-ordernum/?email=${email}`)
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error(response.statusText)
+                        }
+                        return response.json();
+                    })
+                    .then(res => {
+                        if (!res.status) {
+                            Swal.showValidationMessage(
+                                `Request failed: ${res.msg}`
+                            )
+                        }
+                    })
+                    .catch(error => {
+                        Swal.showValidationMessage(
+                            `Request failed: ${error}`
+                        )
+                    })
+            },
+            allowOutsideClick: () => !Swal.isLoading()
+        }).then((result) => {
+              console.log('HH', result);
+                if (result.isConfirmed) {
+                    Swal.fire(
+                        `Done!`,
+                        `A reminder email has been sent to your inbox.`,
+                        `success`
+                    )
+                }
+          })
     }
 
     React.useEffect(() => {
@@ -74,9 +126,7 @@ const SupportForm = ({ className, content, isNewSale, id }) => {
                 </Oval>
             )}
 
-            {formSubmitted
-                ? <HeadingCenter className="heading" headline={`Thank you for submission`} headlineWidth="770" />
-                :
+            {!formSubmitted && (
                 <>
                     <HeadingCenter
                         className="heading"
@@ -84,9 +134,10 @@ const SupportForm = ({ className, content, isNewSale, id }) => {
                         headlineWidth="770"
                         text={`Please provide contact information`}
                     />
-        
+
                     <ContentCenter>
                         <FormContent onSubmit={handleSubmit(handleForm)}>
+                            <input type="hidden" name="inquiry" value={isNewSale ? 1 : 2} name="inquiry" ref={register()}/>
                             <Grid column={2}>
                                 <Label htmlFor="name" content={{ label: `Name` }} bottomMargin="32">
                                     <Input
@@ -117,30 +168,25 @@ const SupportForm = ({ className, content, isNewSale, id }) => {
                             </Grid>
 
                             <Grid column={!isNewSale ? 2 : 1}>
-                                <Label htmlFor="phone" content={{ label: `Phone Number` }} bottomMargin="16">
+                                <Label htmlFor="phone" content={{ label: `Phone Number (optional)` }} bottomMargin="16">
                                     <Input
-                                        className={errors.phone ? 'invalid' : ''}
                                         name="phone"
                                         id="phone"
                                         value={phoneNumber}
                                         onChange={e => setPhoneNumber(_phoneFormat(e.target.value))}
-                                        inputRef={register({
-                                            required: `Field can't be empty`,
-                                            validate: value => isUSPhone(value) || `Should be formatted like xxx-xxx-xxxx`
-                                        })}
+                                        inputRef={register()}
                                     />
-                                    {errors.phone && (
-                                        <span className="error__info">{errors.phone.message}</span>
-                                    )}
                                 </Label>
 
                                 {!isNewSale && (
-                                    <Label htmlFor="ordernum" content={{ label: `Order Number` }} bottomMargin="16">
-                                        <Input
-                                            name="ordernum"
-                                            id="ordernum"
-                                        />
+                                    <>
+                                        <Label htmlFor="ordernum" linkOnClick={showModalForgotOrdernum} content={{
+                                            label: `Order Number`,
+                                            link: { text: `Forgot Order Number?`, url: `#` },
+                                        }} bottomMargin="16">
+                                        <Input name="ordernum" id="ordernum"/>
                                     </Label>
+                                    </>
                                 )}
                             </Grid>
                             
@@ -164,7 +210,7 @@ const SupportForm = ({ className, content, isNewSale, id }) => {
                         </FormContent>
                     </ContentCenter>
                 </>
-            }
+            )}
         </Wrapper>
     );
 };
