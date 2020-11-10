@@ -10,7 +10,6 @@ import NextState from "../atomic/sections/learning-center-entity/annual-report/n
 import Faq from "../atomic/sections/learning-center-entity/annual-report/faq";
 import Articles from "../components/partials/sections/articles";
 import { scrollToElement } from '../helpers/utils';
-import Swal from 'sweetalert2';
 
 //Texts
 import { top, about, nextStateDue, faq } from "../static/learning-center-entity/annual-raport";

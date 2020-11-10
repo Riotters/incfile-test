@@ -69,7 +69,7 @@ const LinkWrapper = styled.div`
 
 const dropdownStates = states.state.map((state) => state.name);
 
-const BusinessNameSearchForm = ({ className, content, noMaxWidth, propState, propEntityName, curvePosition, curveColor, curveRotate }) => {
+const BusinessNameSearchForm = ({ className, noMaxWidth, propState, propEntityName, curvePosition, curveColor, curveRotate }) => {
     const stateRef = useRef();
     const [businessNameInState, setBusinessNameState] = React.useState(propState || '');
     const [modalVisible, setModalVisible] = React.useState(false);

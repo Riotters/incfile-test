@@ -157,20 +157,19 @@ const ListReviews = ({ content }) => {
 
     React.useEffect(() => {
         getReviews().then(data => {
-            console.log('HH', data);
             const res = [];
-
             Object.keys(data).forEach(key => {
                 const vKey = data[key];
-                
-                return res.push({
-                    rate: vKey.overall,
-                    verified: true,
-                    author: vKey.display_name,
-                    date: vKey.review_date,
-                    address: vKey.location,
-                    text: vKey.comments,
-                });
+                if (vKey.display_name) {
+                    return res.push({
+                        rate: vKey.overall,
+                        verified: true,
+                        author: vKey.display_name,
+                        date: vKey.review_date,
+                        address: vKey.location,
+                        text: vKey.comments,
+                    })
+                }
             })
             
             setReviews(res);
@@ -229,7 +228,9 @@ const ListReviews = ({ content }) => {
                             </div>
 
                             <div className="right">
-                                <Image filename="widgetfooter-darklogo-eng" alt="" />
+                                <a href="https://www.shopperapproved.com/reviews/IncFile.com/" target="_blank">
+                                    <Image filename="widgetfooter-darklogo-eng" alt="Incfile review in Shopper Approved" />
+                                </a>
                             </div>
                         </Footer>
 
