@@ -6,6 +6,8 @@ import ContentCenter from "../../../partials/content-center";
 import Form from "../../../organisms/forms/business-name-search-form";
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-right-transparent-orange.inline.svg";
+import { Heading } from "../../../atoms/typography/heading";
+import { Paragraph } from "../../../atoms/typography/paragraph";
 
 const Care = styled.section`
   position: relative;
@@ -15,17 +17,25 @@ const Care = styled.section`
 `;
 
 const CareSection = ({ className, content, id }) => {
-    return (
-        <Care className={className} id={id}>
-            <Oval className="oval" height="720" width="720" top="0" right="0">
-                <OvalSVG />
-            </Oval>
-            <HeadingCenter headline={content.header} headlineWidth="770" text={content.text} textWidth="770" bottomMargin="80" />
-            <ContentCenter>
-                <Form content={content.form} />
-            </ContentCenter>
-        </Care>
-    );
+  return (
+    <Care className={className} id={id}>
+      <Oval className="oval" height="720" width="720" top="0" right="0">
+        <OvalSVG />
+      </Oval>
+      <ContentCenter>
+        <Heading size="2" maxWidth="770" style={{ textAlign: "center" }}>
+          Free Business Name Search
+        </Heading>
+        <Heading size="3" maxWidth="770" style={{ textAlign: "center" }}>
+          We’ll Take Care of the Entity Search.
+        </Heading>
+        <Paragraph big maxWidth="770" style={{ textAlign: "center" }} bottomMargin="80">
+          We’ll tell you if your business name is available with the Secretary of State. Just fill in your proposed business name, and we’ll search the company registrar for you.
+        </Paragraph>
+        <Form content={content.form} />
+      </ContentCenter>
+    </Care>
+  );
 };
 
 export default CareSection;

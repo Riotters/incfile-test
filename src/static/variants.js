@@ -8,7 +8,7 @@ export const variants = {
     {
       variant: ``,
       header: `Silver`,
-      text: `Our core features for the lowest price`,
+      text: ``,
       price: `100`,
       button: {
         text: `Get the Silver package`,
@@ -32,7 +32,7 @@ export const variants = {
     {
       variant: `Most popular`,
       header: `Gold`,
-      text: `Comprehensive features to get your business started`,
+      text: `Everything from sliver+`,
       price: `249`,
       button: {
         text: `Get the Gold package`,
@@ -56,7 +56,7 @@ export const variants = {
     {
       variant: `Best value`,
       header: `Platinum`,
-      text: `Full service features at the best value`,
+      text: `Everything from sliver & gold+`,
       price: `399`,
       button: {
         text: `Get the Platinum package`,

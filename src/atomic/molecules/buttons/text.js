@@ -6,7 +6,6 @@ import ArrowSVG from "../../../images/arrow.inline.svg";
 
 const Wrapper = styled(Link)`
   display: flex;
-  align-items: center;
   text-decoration: none;
   max-width: ${(props) => (props.maxWidth ? `${props.maxWidth}px` : "")} !important;
   padding-bottom: ${(props) => (props.bottomPadding ? `${props.bottomPadding}px` : "")} !important;
@@ -60,6 +59,7 @@ const Arrow = styled.div`
   justify-content: center;
   height: 12px;
   width: 12px;
+  margin-top: 5px;
   margin-right: 10px;
 
   svg {

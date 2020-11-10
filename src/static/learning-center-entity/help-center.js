@@ -133,7 +133,7 @@ export const categories = {
       ],
       link: {
         text: `see all 18 articles`,
-        url: `/`,
+        url: `/research-topics/general-research-topics/`,
       },
     },
     {
@@ -154,7 +154,7 @@ export const categories = {
       ],
       link: {
         text: `see all 21 articles`,
-        url: `/`,
+        url: `/research-topics/llc-info/`,
       },
     },
     {
@@ -175,7 +175,7 @@ export const categories = {
       ],
       link: {
         text: `see all 23 articles`,
-        url: `/`,
+        url: `/research-topics/s-corporation-info/`,
       },
     },
     {
@@ -196,7 +196,7 @@ export const categories = {
       ],
       link: {
         text: `see all 16 articles`,
-        url: `/`,
+        url: `/research-topics/c-corporation-info/`,
       },
     },
     {
@@ -217,7 +217,7 @@ export const categories = {
       ],
       link: {
         text: `see all 15 articles`,
-        url: `/`,
+        url: `research-topics/nonprofit-info/`,
       },
     },
     {
@@ -238,7 +238,7 @@ export const categories = {
       ],
       link: {
         text: `see all 11 articles`,
-        url: `/`,
+        url: `/research-topics/registered-agent-help/`,
       },
     },
     {
@@ -259,7 +259,7 @@ export const categories = {
       ],
       link: {
         text: `see all 5 articles`,
-        url: `/`,
+        url: `/research-topics/business-taxes/`,
       },
     },
     {
@@ -272,7 +272,7 @@ export const categories = {
       ],
       link: {
         text: `see all 1 articles`,
-        url: `/`,
+        url: `/research-topics/ein-info/`,
       },
     },
     {
@@ -293,7 +293,7 @@ export const categories = {
       ],
       link: {
         text: `see all 4 articles`,
-        url: `/`,
+        url: `/research-topics/individual-state-info/`,
       },
     },
     {
@@ -314,14 +314,10 @@ export const categories = {
       ],
       link: {
         text: `see all 3 articles`,
-        url: `/`,
+        url: `/research-topics/video-library/`,
       },
     },
   ],
-  button: {
-    header: `aaaa`,
-    url: `/`,
-  },
 };
 
 export const service = {

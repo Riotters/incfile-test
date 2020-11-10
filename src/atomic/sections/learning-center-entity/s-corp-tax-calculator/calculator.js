@@ -26,7 +26,7 @@ const CalculatorSection = ({ className, content }) => (
     </ContentCenter>
     <HeadingCenter headline={content.header} headlineWidth="770" text={content.text} textWidth="770" bottomMargin="56" />
     <ContentCenter contentWidth="970">
-        <Sliders />
+      <Sliders />
     </ContentCenter>
   </Calculator>
 );

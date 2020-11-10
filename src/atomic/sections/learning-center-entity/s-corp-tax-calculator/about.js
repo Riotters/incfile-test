@@ -10,6 +10,7 @@ import BoxedButton from "../../../molecules/buttons/boxed";
 import IconTextColorBox from "../../../molecules/text-blocks/icon-h4-text-color";
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-orange3.inline.svg";
+import parse from "html-react-parser";
 
 const About = styled.section`
   position: relative;
@@ -42,11 +43,17 @@ const AboutSection = ({ className, content }) => (
     <ImageContent image="s-corporation-tax-calculator-about-3829">
       <Heading size="3">{content.header}</Heading>
       <Paragraph big>{content.text}</Paragraph>
-      <Paragraph big bottomMargin="40">
-        {content.text2}
+      <Paragraph big>{content.text2}</Paragraph>
+      {/* <BoxedButton className="boxed-button boxed-button--1" content={content.button} textColor={color.grey1} />
+      <BoxedButton className="boxed-button boxed-button--2" content={content.button2} textColor={color.grey1} /> */}
+      {/* <ArrowLink content={content.link} />
+      <ArrowLink content={content.link2} /> */}
+      <Paragraph big bottomMargin="16" mixed>
+        {parse(content.text6)}
       </Paragraph>
-      <BoxedButton className="boxed-button boxed-button--1" content={content.button} textColor={color.grey1} />
-      <BoxedButton className="boxed-button boxed-button--2" content={content.button2} textColor={color.grey1} />
+      <Paragraph big bottomMargin="40" mixed>
+        {parse(content.text7)}
+      </Paragraph>
       <IconTextColorBox color={color.green3} Icon={IconSVG} content={content.box} bottomMargin="72" rounded curve />
       <Heading size="3">{content.header2}</Heading>
       <Paragraph big>{content.text3}</Paragraph>
