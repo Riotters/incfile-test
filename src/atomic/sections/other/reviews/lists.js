@@ -16,11 +16,8 @@ import AbsoluteShapCure from '../../../elements/absolute-shape-curve-e';
 import Whitebox from "../../../atoms/boxes/white-box";
 import { Paragraph } from "../../../atoms/typography/paragraph";
 import Drop from '../../../../components/form/dropdown';
-import { getAggregrateReviews, getReviews } from '../../../../api/Api';
-import { formatNumber, roundUp } from '../../../../helpers/utils';
-
-import PaginationC from '../../../../components/Pagination';
-import { filter } from 'lodash';
+import { getReviews } from '../../../../api/Api';
+import Pagination from '../../../../components/Pagination';
 
 const Wrapper = styled.div`
     position: relative;
@@ -77,14 +74,6 @@ const Footer = styled.div`
     }
 `
 
-
-
-// const optionsSort = [
-//     { value: `high_to_low`, label: `High to Low` },
-//     { value: `low_to_high`, label: `Lowest to Highest` },
-//     { value: `desc_date`, label: `Newsest to Oldest` },
-//     {value: `asc_date`, label: `Oldest to Newest`},
-// ];
 const optionsSort = [
     { value: `highest`, label: `High to Low` },
     { value: `lowest`, label: `Lowest to Highest` },
@@ -92,7 +81,7 @@ const optionsSort = [
     {value: `oldest`, label: `Oldest to Newest`},
 ];
 
-const ListReviews = ({ content }) => {
+const ListReviews = () => {
     const totalReviews = 70;
     const [reviews, setReviews] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -107,31 +96,6 @@ const ListReviews = ({ content }) => {
             ...prevState,
             _currentPage: pageNum
         }));
-    }
-
-    const handleSortingReviews = (option) => {
-        let value = option.value;
-        
-        let reSort = [...reviews].sort((a, b) => {
-            if (value === 'desc_date') {
-                return new Date(b.date) - new Date(a.date);
-            }
-
-            if (value === 'asc_date') {
-                return new Date(a.date) - new Date(b.date);
-            }
-
-            if (value === 'high_to_low') {
-                return b.rate - a.rate;
-            }
-
-            if (value === 'low_to_high') {
-                return a.rate - b.rate;
-            }
-            return '';
-        });
-
-        setReviews(reSort);
     }
 
     const formatDate = (date) => {
@@ -211,18 +175,10 @@ const ListReviews = ({ content }) => {
 
                         <Footer>
                             <div className="left">
-                                {/* <Pagination>
-                                    <Link to="#" className="active">1</Link>
-                                    <Link to="#">2</Link>
-                                    <Link to="#">3</Link>
-                                    <Link to="#" className="next__page">{`>`}</Link>
-                                </Pagination> */}
-                                <PaginationC totalRecords={totalReviews} perPage={filters._limit} setCurrentPage={setCurrentPage} />
-
+                                <Pagination totalRecords={totalReviews} perPage={filters._limit} setCurrentPage={setCurrentPage} />
                                 <Drop
                                     options={optionsSort}
                                     placeholder="Featured Reviews"
-                                    //onChange={handleSortingReviews}
                                     onChange={option => setFilters((prevState) => ({
                                         ...prevState,
                                         _sort: option.value
