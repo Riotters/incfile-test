@@ -12,7 +12,7 @@ export const searchTool = {
     text: `Our Business License Search Tool helps you narrow down the requirements for your business. Just enter the relevant information below to learn the likely registrations, permits, or licenses you’ll need.`,
     cards: [
         `Your State`,
-        `Your Industy`,
+        `Your Industry`,
 
     ],
     button: {

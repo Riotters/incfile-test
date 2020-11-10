@@ -5,6 +5,7 @@ import _ from "lodash";
 import ShowUncompleted from "./show-uncompleted";
 import { color } from "../styles/colors";
 import { shadow } from "../styles/shadows";
+import parse from "html-react-parser";
 
 const description =
   "In oculis quidem faciunt, ut labore et via procedat oratio quaerimus igitur, quid bonum esse ratione intellegi posse et molestiae non recusandae itaque negat opus esse appetendum, alterum aspernandum sentiamus alii autem, quibus ego assentior, cum a philosophis compluribus permulta dicantur, cur verear, ne ferae.";
@@ -185,7 +186,7 @@ class Checklist extends React.Component {
           isCompleted={item.isCompleted}
           toggleClass={() => this.toggleClass(item.id)}
           isStack={this.state.stack}
-          description={item.description}
+          description={parse(item.description)}
           onChangeHeight={this.handleChangeItemHeight}
           isLastCompleted={isLastCompleted}
         />

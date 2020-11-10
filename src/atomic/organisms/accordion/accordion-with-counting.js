@@ -265,8 +265,8 @@ const AccordionWithCounting = ({ content, curve, curveRight, curveRightBottom, t
                   </Tab>
                   <Panel>
                     <PanelWrapper>
-                      {typeof item.answer === "string" ? <Paragraph bottomMargin="0">{parse(item.answer)}</Paragraph> : null}
-                      {typeof item.answer === "object" ? <Paragraph bottomMargin="0">{item.answer.map((el) => (el.url ? <Link to={el.url}>{` ${parse(el.text)} `}</Link> : el.text))}</Paragraph> : null}
+                      {typeof item.answer === "string" ? <Paragraph mixed bottomMargin="0">{parse(item.answer)}</Paragraph> : null}
+                      {typeof item.answer === "object" ? <Paragraph mixed bottomMargin="0">{item.answer.map((el) => (el.url ? <Link to={el.url}>{` ${parse(el.text)} `}</Link> : el.text))}</Paragraph> : null}
                       {/* <p>{item.answer}</p> */}
                       {item.list && (
                         <ListItems listColor={listColor}>
