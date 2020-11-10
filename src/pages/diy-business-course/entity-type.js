@@ -16,7 +16,7 @@ function LLCIndex() {
         <Layout>
             <SEO title="Start Your Own Business | Incfile's Step-by-Step Course" description="Ready to start your own business? Our DIY business formation course will take you through each step, so you can hit the ground running. Learn more." />
             <ChapterLayout top={top.entity_type}> 
-                <LeftTabPages content={tabPages} nonDIY />
+                <LeftTabPages content={tabPages} nonDIY pointerEventsTab="none"/>
                 <MainPageContent>
                     <ContentMap content={entityType} />
                 </MainPageContent>
