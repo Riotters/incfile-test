@@ -681,7 +681,7 @@ export const registeredAgent = [
     type: `button`,
     content: {
       text: `INCORPORATE YOUR BUSINESS THROUGH INCFILE`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=WY/`,
     },
     theme: `primary48`,
     marginBottom: 48,
@@ -905,7 +905,7 @@ export const feesAndRequirments = [
     type: `button`,
     content: {
       text: `INCORPORATE YOUR ARIZONA LLC THROUGH INCFILE TODAY`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=WY/`,
     },
     theme: `primary48`,
     marginBottom: 48,

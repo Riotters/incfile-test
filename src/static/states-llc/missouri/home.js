@@ -6,7 +6,7 @@ export const top = {
   buttons: [
     {
       text: `See detailed pricing`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MO`,
     },
   ],
 };
@@ -676,7 +676,7 @@ export const registeredAgent = [
     type: `button`,
     content: {
       text: `Incorporate your business through Incfile`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MO/`,
     },
     theme: `primary48`,
     marginBottom: 48,
@@ -718,7 +718,7 @@ export const registeredAgent = [
     type: `button`,
     content: {
       text: `Order Incfile's Missouri registered agent service`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MO/`,
     },
     theme: `primary48`,
     marginBottom: 48,
@@ -900,7 +900,7 @@ export const feesAndRequirments = [
     type: `button`,
     content: {
       text: `Incorporate your Missouri LLC through Incfile today`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MO/`,
     },
     theme: `primary48`,
     marginBottom: 48,
