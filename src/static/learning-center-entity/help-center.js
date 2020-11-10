@@ -120,20 +120,20 @@ export const categories = {
       buttons: [
         {
           header: `Should I assume that if I form an LLC or incorporate that no…`,
-          url: `/`,
+          url: `/research-topics/general-research-topics/should-i-assume-that-if-i-form-an-llc-or-incorporate-that-no-one-else-can-use-the-same-name/`,
         },
         {
-          header: `What paperwork is required in order to open a business…`,
-          url: `/`,
+          header: `How to Get a Trademark: A Complete Guide`,
+          url: `/research-topics/general-research-topics/how-to-get-trademark/`,
         },
         {
-          header: `What paperwork is required in order to open a business…`,
-          url: `/`,
+          header: `What is a Corporate Seal?`,
+          url: `/research-topics/general-research-topics/what-is-a-corporate-seal/`,
         },
       ],
       link: {
         text: `see all 18 articles`,
-        url: `/`,
+        url: `/research-topics/general-research-topics/`,
       },
     },
     {
@@ -141,20 +141,20 @@ export const categories = {
       buttons: [
         {
           header: `What Does LLC Mean?`,
-          url: `/`,
+          url: `/research-topics/llc-info/what-does-llc-mean/`,
         },
         {
           header: `Can an LLC be formed without listing the members on on…`,
-          url: `/`,
+          url: `/research-topics/llc-info/can-an-llc-or-formed-without-listing-the-members-on-on-the-articles-of-organization/`,
         },
         {
           header: `Can another business entity be a member of an LLC?`,
-          url: `/`,
+          url: `/research-topics/llc-info/can-another-business-entity-be-a-member-of-an-llc/`,
         },
       ],
       link: {
         text: `see all 21 articles`,
-        url: `/`,
+        url: `/research-topics/llc-info/`,
       },
     },
     {
@@ -162,20 +162,20 @@ export const categories = {
       buttons: [
         {
           header: `Can a foreign resident be a shareholder in an S Corporation?`,
-          url: `/`,
+          url: `/research-topics/s-corporation-info/can-a-foreign-resident-be-a-shareholder-in-an-s-corporation/`,
         },
         {
           header: `Is there a limit to the amount of shareholders an S Corporat…`,
-          url: `/`,
+          url: `/research-topics/s-corporation-info/is-there-a-limit-to-the-amount-of-shareholders-an-s-corporation-can-have/`,
         },
         {
           header: `Which entity offers the best tax advantages?`,
-          url: `/`,
+          url: `/research-topics/s-corporation-info/which-entity-offers-the-best-tax-advantages/`,
         },
       ],
       link: {
         text: `see all 23 articles`,
-        url: `/`,
+        url: `/research-topics/s-corporation-info/`,
       },
     },
     {
@@ -183,20 +183,20 @@ export const categories = {
       buttons: [
         {
           header: `Which entity offers the best tax advantages?`,
-          url: `/`,
+          url: `/research-topics/c-corporation-info/which-entity-offers-the-best-tax-advantages/`,
         },
         {
           header: `The benefits of filing a C-corporation`,
-          url: `/`,
+          url: `/research-topics/c-corporation-info/the-benefits-of-filing-a-c-corporation/`,
         },
         {
           header: `LLCs vs C-Corporation: Which Is Best for Your Business?`,
-          url: `/`,
+          url: `/research-topics/c-corporation-info/llcs-vs-c-corporation-which-is-best-for-your-business/`,
         },
       ],
       link: {
         text: `see all 16 articles`,
-        url: `/`,
+        url: `/research-topics/c-corporation-info/`,
       },
     },
     {
@@ -204,20 +204,20 @@ export const categories = {
       buttons: [
         {
           header: `Forming a Nonprofit Corporation`,
-          url: `/`,
+          url: `/research-topics/nonprofit-info/forming-a-nonprofit-corporation/`,
         },
         {
           header: `Can a Nonprofit Corporation Make a Profit?`,
-          url: `/`,
+          url: `/research-topics/nonprofit-info/can-a-nonprofit-corporation-make-a-profit/`,
         },
         {
           header: `What is a Nonprofit Corporation?`,
-          url: `/`,
+          url: `/research-topics/nonprofit-info/what-is-a-nonprofit-corporation/`,
         },
       ],
       link: {
         text: `see all 15 articles`,
-        url: `/`,
+        url: `/research-topics/nonprofit-info/`,
       },
     },
     {
@@ -225,20 +225,20 @@ export const categories = {
       buttons: [
         {
           header: `What is the main function of the Registered Agent?`,
-          url: `/`,
+          url: `/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/`,
         },
         {
           header: `Can I Be My Own Registered Agent?`,
-          url: `/`,
+          url: `/research-topics/registered-agent-help/can-i-act-as-my-own-registered-agent/`,
         },
         {
           header: `What happens if I require the signature of my Registered A…`,
-          url: `/`,
+          url: `/research-topics/registered-agent-help/what-happens-if-i-require-the-signature-of-my-registered-agent/`,
         },
       ],
       link: {
         text: `see all 11 articles`,
-        url: `/`,
+        url: `/research-topics/registered-agent-help/`,
       },
     },
     {
@@ -246,20 +246,20 @@ export const categories = {
       buttons: [
         {
           header: `Which entity offers the best tax advantages?`,
-          url: `/`,
+          url: `/research-topics/business-taxes/which-entity-offers-the-best-tax-advantages/`,
         },
         {
           header: `Minimizing tax expenses`,
-          url: `/`,
+          url: `/research-topics/business-taxes/minimizing-tax-expenses/`,
         },
         {
           header: `How is an S Corporation Taxed?`,
-          url: `/`,
+          url: `/research-topics/business-taxes/how-is-an-s-corporation-taxed/`,
         },
       ],
       link: {
         text: `see all 5 articles`,
-        url: `/`,
+        url: `/research-topics/business-taxes/`,
       },
     },
     {
@@ -267,61 +267,53 @@ export const categories = {
       buttons: [
         {
           header: `Employer Identification Number`,
-          url: `/`,
+          url: `/research-topics/ein-info/employer-identification-number/`,
         },
       ],
       link: {
         text: `see all 1 articles`,
-        url: `/`,
+        url: `/research-topics/ein-info/`,
       },
     },
     {
       header: `Individual State Information`,
       buttons: [
         {
-          header: `How To Publish Your Notice Of Incorporation In Georgia`,
-          url: `/`,
-        },
-        {
           header: `Meeting the New York Publication Requirement`,
-          url: `/`,
+          url: `/research-topics/individual-state-info/meeting-the-new-york-publication-requirement/`,
         },
         {
           header: `How To Publish Your Notice Of Incorporation In Georgia`,
-          url: `/`,
+          url: `/research-topics/individual-state-info/how-to-publish-your-notice-of-incorporation-in-georgia/`,
         },
       ],
       link: {
-        text: `see all 4 articles`,
-        url: `/`,
+        text: `see all 2 articles`,
+        url: `/research-topics/individual-state-info/`,
       },
     },
     {
       header: `Video Library`,
       buttons: [
         {
-          header: `What is the main function of the Registered Agent?`,
-          url: `/`,
+          header: `How easy is forming an LLC or Corporation`,
+          url: `https://vimeo.com/97238919`,
         },
         {
-          header: `Can I Be My Own Registered Agent?`,
-          url: `/`,
+          header: `Protect your personal assets`,
+          url: `https://vimeo.com/144693528`,
         },
         {
-          header: `What happens if I require the signature of my Registered A...`,
-          url: `/`,
+          header: `Learn how to save money with Incfile`,
+          url: `https://vimeo.com/117685402`,
         },
       ],
       link: {
         text: `see all 3 articles`,
-        url: `/`,
+        url: `/research-topics/video-library/`,
       },
     },
   ],
-  button: {
-    header: `aaaa`,
-    url: `/`,
-  },
 };
 
 export const service = {
