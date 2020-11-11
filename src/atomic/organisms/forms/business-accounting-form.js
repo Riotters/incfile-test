@@ -1,18 +1,17 @@
 import React from "react";
 import styled from "styled-components";
-import Whitebox from "../../atoms/boxes/white-box";
-import { color } from "../../atoms/styles/colors";
-import { Heading } from "../../atoms/typography/heading";
 import Label from "../../molecules/form/label-field-with-child";
 import Input from "../../atoms/inputs/input";
-import Dropdown from "../../molecules/form/dropdown";
-import Radio from "../../molecules/form/radio";
-import Button from "../../molecules/buttons/button";
-import ArrowLink from "../../molecules/buttons/text";
-import Curve from "../../atoms/icons/curve";
-import CurveSVG from "../../../images/curves/top-left-bottom-right.inline.svg";
+import Button from "../../molecules/buttons/button-action";
+import { useForm, Controller } from 'react-hook-form';
 
-const Wrapper = styled.div`
+// API 
+import { postHSForm } from '../../../api/Api';
+import { _phoneFormat } from '../../../helpers/input-parsers';
+import { validEmail, isUSPhone } from '../../../helpers/form-validate';
+import { Helmet } from "react-helmet";
+
+const Wrapper = styled.form`
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -42,28 +41,68 @@ const Grid = styled.div`
   }
 `;
 
-const Flex = styled.div`
-  display: flex;
-  justify-content: space-between;
-`;
-
 const BusinessAccountingForm = ({ className, content }) => {
-    return (
-        <Wrapper className={className}>
-            <Grid>
-                <Label htmlFor="company" content={content.field1}>
-                    <Input type="text" required />
-                </Label>
-                <Label htmlFor="company" content={content.field2}>
-                    <Input type="text" required />
-                </Label>
-                <Label htmlFor="company" content={content.field3} bottomMargin={20}>
-                    <Input type="text" />
-                </Label>
-            </Grid>
+    const [phoneNumber, setPhoneNumber] = React.useState('');
+    const { register, reset, handleSubmit, errors, formState, setValue } = useForm();
+    const { isSubmitting, isSubmitSuccessful } = formState;
 
-            <Button content={content.button} theme="primary56" arrow marginSM="32px auto 0" />
-        </Wrapper>
+    const handleSignup = data => {
+        console.log('HH', data);
+    }
+
+    return (
+        <>
+            <Helmet>
+                <script src='https://www.google.com/recaptcha/api.js'></script>
+            </Helmet>
+            <Wrapper className={className} onSubmit={handleSubmit(handleSignup)}>
+                <Grid>
+                    <Label htmlFor="name" content={content.field1}>
+                        <Input
+                            className={errors.name ? 'invalid' : ''}
+                            type="text"
+                            name="name"
+                            inputRef={register({ required: `Field can't be empty` })}
+                        />
+                        {errors.name && (
+                            <span className="error__info">{errors.name.message}</span>
+                        )}
+                    </Label>
+                    <Label htmlFor="email" content={content.field2}>
+                        <Input
+                            className={errors.email ? 'invalid' : ''}
+                            type="text"
+                            name="email"
+                            id="email"
+                            inputRef={register({
+                                required: `Field can't be empty`,
+                                validate: value => validEmail(value) || `Email is not valid`
+                            })}
+                        />
+                        {errors.email && (
+                            <span className="error__info">{errors.email.message}</span>
+                        )}
+                    </Label>
+                    <Label htmlFor="phone" content={content.field3} bottomMargin={20}>
+                        <Input
+                            name="phone"
+                            id="phone"
+                            onChange={e => setValue('phone', _phoneFormat(e.target.value))}
+                            inputRef={register({
+                                required: `Field can't be empty`,
+                                validate: value => isUSPhone(value) || `Should be formatted like xxx-xxx-xxxx`
+                            })}
+                        />
+                        {errors.phone && (
+                            <span className="error__info">{errors.phone.message}</span>
+                        )}
+                    </Label>
+                    <div class="g-recaptcha" data-sitekey={`${process.env.CAPTCHA_KEY}`}></div>
+                </Grid>
+
+                <Button type="submit" content={content.button} theme="primary56" arrow marginSM="32px auto 0" />
+            </Wrapper>
+        </>
     );
 };
 

@@ -37,7 +37,7 @@ const BusinessAccountingV2 = () => (
     <AllPackagesInclude content={cards} />
     <BusinessAccountingBenefitsSection content={cards2} />
     <InsAndOuts content={ins_and_outs} />
-    <FreeTaxConsulting content={tax_consulting} />
+    <FreeTaxConsulting content={tax_consulting} id="js-business-tax-signup-form" />
   </Layout>
 );
 
