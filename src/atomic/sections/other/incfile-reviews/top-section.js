@@ -32,30 +32,30 @@ const TopSection = ({ content }) => (
         <Oval className="oval" height="420" width="420" bottom="0" left="0" y="0">
             <OvalSVG2 />
         </Oval>
-        
+
         <ContentCenter contentWidth="770">
-                <Heading size={1} style={{ marginTop: `180px` }}>{content.header}</Heading>
+            <Heading size={1} style={{ marginTop: `180px` }}>{content.header}</Heading>
+            <Paragraph big mixed={true}>
+                {parse(content.text1)}
+            </Paragraph>
+
+            <RelativeElement style={{ marginTop: `75px` }}>
+                <AbsoluteShapCure right="-20px" top="-10px" rotate={0}>
+                    <ShapeCurve color={color.blue1} />
+                </AbsoluteShapCure>
+
                 <Paragraph big mixed={true}>
-                    {parse(content.text1)}
-                </Paragraph>
-                
-                <RelativeElement style={{ marginTop: `75px` }}>
-                    <AbsoluteShapCure right="-20px" top="-10px" rotate={0}>
-                        <ShapeCurve color={color.blue1}/>
-                    </AbsoluteShapCure>
-
-                    <Paragraph big mixed={true}>
                     {parse(content.text2)}
-                    </Paragraph>
-                    <Paragraph big mixed={true}>
+                </Paragraph>
+                <Paragraph big mixed={true}>
                     {parse(content.text3)}
-                    </Paragraph>
-                </RelativeElement>
+                </Paragraph>
+            </RelativeElement>
 
-                <Button to={`/`} theme="primary56" width="300px" arrow margin="15px 0 0 0">See our customer review</Button>
+            <Button to={`/reviews/`} theme="primary56" width="300px" arrow margin="15px 0 0 0">See our customer review</Button>
 
-            </ContentCenter>
-    </Wrapper>    
+        </ContentCenter>
+    </Wrapper>
 )
 
 export default TopSection;

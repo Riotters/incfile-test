@@ -55,7 +55,7 @@ const SupportForm = ({ className, content, isNewSale, id }) => {
     const showModalForgotOrdernum = e => {
         e.preventDefault();
         Swal.fire({
-            title: `Remind Order Number`,
+            title: `Help is on the way`,
             html: `Your order number will be sent to this address.`,
             input: 'email',
             inputPlaceholder: 'Enter your email address',
