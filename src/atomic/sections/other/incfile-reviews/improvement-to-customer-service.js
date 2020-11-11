@@ -76,7 +76,7 @@ const ImprovementToCustomerServices = ({ content }) => (
                         <Image filename={item.image} alt={item.title} />
                         <Paragraph big mixed={true} style={{  fontWeight: `bold` }} bottomMargin="16">{item.title}</Paragraph>
                         <Paragraph mixed={true}>{parse(item.desc)}</Paragraph>
-                        <ArrowLink bottomMargin="0" content={item.link}/>
+                        {item.link && <ArrowLink bottomMargin="0" content={item.link} />}
                     </Whitebox>
                 ))}
             </Improvement>

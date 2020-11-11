@@ -3,11 +3,9 @@ import React from "react";
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
 import Top from "../../atomic/partials/top";
-import Button from "../../atomic/molecules/buttons/button-action";
 import ClientDashboardSection from "../../atomic/sections/contact/client-dashboard-introduction";
 import SupportFormSection from "../../atomic/sections/contact/support-form";
 import ContactInfoSection from "../../atomic/sections/contact/conatact-info";
-import {scrollToElement } from '../../helpers/utils';
 
 // Content
 import { existing } from "../../static/contact";
@@ -19,10 +17,10 @@ const ExistingClients = () => (
         <Top imageName="hero-contact-existing-clients" heightSM="75vh" ovalColor="yellow" alt="existing clients">
             <h1>We're Here To Help</h1>
             <p>Phone support available Monday - Friday from 9am to 6pm CST or submit a question and we'll respond as quickly as possible.</p>
-            <Button theme="primary56" width="250px" onClick={e => scrollToElement(e, 'js-contact-form')} content={{ text: `Contact our support`, url: `#` }} />
         </Top>
 
-        <ClientDashboardSection content={existing} isNewSale={false} />
+        <ClientDashboardSection content={existing}
+            isNewSale={false} />
         <SupportFormSection isNewSale={false} id="js-contact-form" />
         <ContactInfoSection content={existing.phone} isNewSale={false} />
     </Layout>
