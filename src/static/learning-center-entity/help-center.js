@@ -119,8 +119,8 @@ export const categories = {
       header: `General`,
       buttons: [
         {
-          header: `Should I assume that if I form an LLC or incorporate that no…`,
-          url: `/research-topics/general-research-topics/should-i-assume-that-if-i-form-an-llc-or-incorporate-that-no-one-else-can-use-the-same-name/`,
+          header: `Does the designator “LLC” or “Inc.” always need to be included in your companies name?`,
+          url: `/research-topics/general-research-topics/llc-inc-designator-companies-name/`,
         },
         {
           header: `How to Get a Trademark: A Complete Guide`,
@@ -128,7 +128,7 @@ export const categories = {
         },
         {
           header: `What is a Corporate Seal?`,
-          url: `/research-topics/general-research-topics/what-is-a-corporate-seal/`,
+          url: `/research-topics/general-research-topics/corp-seal/`,
         },
       ],
       link: {
@@ -141,15 +141,15 @@ export const categories = {
       buttons: [
         {
           header: `What Does LLC Mean?`,
-          url: `/research-topics/llc-info/what-does-llc-mean/`,
+          url: `/research-topics/llc-info/llc-meaning/`,
         },
         {
-          header: `Can an LLC be formed without listing the members on on…`,
-          url: `/research-topics/llc-info/can-an-llc-or-formed-without-listing-the-members-on-on-the-articles-of-organization/`,
+          header: `Can an LLC be formed without listing the members on…`,
+          url: `/research-topics/llc-info/llc-without-listing-members/`,
         },
         {
           header: `Can another business entity be a member of an LLC?`,
-          url: `/research-topics/llc-info/can-another-business-entity-be-a-member-of-an-llc/`,
+          url: `/research-topics/llc-info/llc-business-entity-member/`,
         },
       ],
       link: {
@@ -162,15 +162,15 @@ export const categories = {
       buttons: [
         {
           header: `Can a foreign resident be a shareholder in an S Corporation?`,
-          url: `/research-topics/s-corporation-info/can-a-foreign-resident-be-a-shareholder-in-an-s-corporation/`,
+          url: `/research-topics/s-corporation-info/foreign-resident-shareholder/`,
         },
         {
           header: `Is there a limit to the amount of shareholders an S Corporat…`,
-          url: `/research-topics/s-corporation-info/is-there-a-limit-to-the-amount-of-shareholders-an-s-corporation-can-have/`,
+          url: `/research-topics/s-corporation-info/amount-of-shareholders/`,
         },
         {
           header: `Which entity offers the best tax advantages?`,
-          url: `/research-topics/s-corporation-info/which-entity-offers-the-best-tax-advantages/`,
+          url: `/research-topics/s-corporation-info/tax-advantages/`,
         },
       ],
       link: {
@@ -183,15 +183,15 @@ export const categories = {
       buttons: [
         {
           header: `Which entity offers the best tax advantages?`,
-          url: `/research-topics/c-corporation-info/which-entity-offers-the-best-tax-advantages/`,
+          url: `/research-topics/c-corporation-info/tax-advantages/`,
         },
         {
           header: `The benefits of filing a C-corporation`,
-          url: `/research-topics/c-corporation-info/the-benefits-of-filing-a-c-corporation/`,
+          url: `/research-topics/c-corporation-info/filing-a-c-corporation/`,
         },
         {
           header: `LLCs vs C-Corporation: Which Is Best for Your Business?`,
-          url: `/research-topics/c-corporation-info/llcs-vs-c-corporation-which-is-best-for-your-business/`,
+          url: `/research-topics/c-corporation-info/llcs-vs-c-corporation/`,
         },
       ],
       link: {
@@ -204,15 +204,15 @@ export const categories = {
       buttons: [
         {
           header: `Forming a Nonprofit Corporation`,
-          url: `/research-topics/nonprofit-info/forming-a-nonprofit-corporation/`,
+          url: `/research-topics/nonprofit-info/forming-nonprofit-corp/`,
         },
         {
           header: `Can a Nonprofit Corporation Make a Profit?`,
-          url: `/research-topics/nonprofit-info/can-a-nonprofit-corporation-make-a-profit/`,
+          url: `/research-topics/nonprofit-info/profit-from-nonprofit/`,
         },
         {
           header: `What is a Nonprofit Corporation?`,
-          url: `/research-topics/nonprofit-info/what-is-a-nonprofit-corporation/`,
+          url: `/research-topics/nonprofit-info/what-is-a-nonprofit/`,
         },
       ],
       link: {
@@ -225,20 +225,20 @@ export const categories = {
       buttons: [
         {
           header: `What is the main function of the Registered Agent?`,
-          url: `/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/`,
+          url: `/research-topics/registered-agent/registered-agent-function/`,
         },
         {
-          header: `Can I Be My Own Registered Agent?`,
-          url: `/research-topics/registered-agent-help/can-i-act-as-my-own-registered-agent/`,
+          header: `How much will it cost to renew my Registered Agent service?`,
+          url: `/research-topics/registered-agent/service-cost/`,
         },
         {
           header: `What happens if I require the signature of my Registered A…`,
-          url: `/research-topics/registered-agent-help/what-happens-if-i-require-the-signature-of-my-registered-agent/`,
+          url: `/research-topics/registered-agent/registered-agent-signature/`,
         },
       ],
       link: {
         text: `see all 11 articles`,
-        url: `/research-topics/registered-agent-help/`,
+        url: `/research-topics/registered-agent/`,
       },
     },
     {
@@ -246,15 +246,15 @@ export const categories = {
       buttons: [
         {
           header: `Which entity offers the best tax advantages?`,
-          url: `/research-topics/business-taxes/which-entity-offers-the-best-tax-advantages/`,
+          url: `/research-topics/business-taxes/tax-advantages/`,
         },
         {
-          header: `Minimizing tax expenses`,
-          url: `/research-topics/business-taxes/minimizing-tax-expenses/`,
+          header: `How to Get a Seller’s Permit`,
+          url: `/research-topics/business-taxes/sellers-permit/`,
         },
         {
           header: `How is an S Corporation Taxed?`,
-          url: `/research-topics/business-taxes/how-is-an-s-corporation-taxed/`,
+          url: `/research-topics/business-taxes/s-corp-taxing/`,
         },
       ],
       link: {
@@ -280,16 +280,16 @@ export const categories = {
       buttons: [
         {
           header: `Meeting the New York Publication Requirement`,
-          url: `/research-topics/individual-state-info/meeting-the-new-york-publication-requirement/`,
+          url: `/research-topics/state-info/ny-publication-requirement/`,
         },
         {
           header: `How To Publish Your Notice Of Incorporation In Georgia`,
-          url: `/research-topics/individual-state-info/how-to-publish-your-notice-of-incorporation-in-georgia/`,
+          url: `/research-topics/state-info/publish-inc-notice-georgia/`,
         },
       ],
       link: {
         text: `see all 2 articles`,
-        url: `/research-topics/individual-state-info/`,
+        url: `/research-topics/state-info/`,
       },
     },
     {
