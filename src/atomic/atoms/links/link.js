@@ -14,8 +14,15 @@ const Wrapper = styled(Link)`
   margin-bottom: ${(props) => props.bottomMargin}px !important;
 `;
 
-const CustomLink = ({ className, linkText, linkUrl, maxWidth, bottomPadding, bottomMargin, ...rest }) => (
-  <Wrapper className={className} to={linkUrl} maxWidth={maxWidth} bottomPadding={bottomPadding} bottomMargin={bottomMargin} {...rest}>
+const CustomLink = ({ className, linkText, linkUrl, maxWidth, bottomPadding, bottomMargin, onClick, ...rest }) => (
+    <Wrapper
+        className={className}
+        to={linkUrl}
+        maxWidth={maxWidth}
+        bottomPadding={bottomPadding}
+        bottomMargin={bottomMargin}
+        onClick={e => onClick(e)}
+        {...rest}>
     {linkText}
   </Wrapper>
 );

@@ -153,7 +153,7 @@ export const footer = {
           url: `/corporation-state-information/`,
         },
         {
-          text: `Corporate/LCC Kit`,
+          text: `Corporate/LLC Kit`,
           url: `/manage-your-company/corporatellc-kit/`,
         },
       ],

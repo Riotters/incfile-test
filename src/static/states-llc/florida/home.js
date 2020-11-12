@@ -26,7 +26,7 @@ export const HomePageContent = {
       heading: "Why Incorporate Your LLC in Florida?",
       text1:
         "Florida is a great place to start a business. A rich culture, beautiful cities like Miami and Orlando and access to many of the world’s best transport networks make the state home to some of the biggest businesses in the U.S. Companies like Publix, Tupperware, Burger King and more are proud to call Florida home. Disney, one of the world’s largest entertainment companies, is famous for its Disney World theme park in Orlando.",
-      text2: `For most business owners, the fastest and easiest way to start a business in Florida is by creating a Florida LLC. A limited liability company (LLC) is a type of <a href="/florida-entity-search/">benefits of the LLC business structure.</a> that’s ideal for startups and small- to medium-sized businesses. You get the advantages and protections of larger Florida corporations, but with much simpler rules and regulations.`,
+      text2: `For most business owners, the fastest and easiest way to start a business in Florida is by creating a Florida LLC. A limited liability company (LLC) is a type of <a href="/florida-entity-search/">business entity</a> that’s ideal for startups and small- to medium-sized businesses. You get the advantages and protections of larger Florida corporations, but with much simpler rules and regulations.`,
       heading4: `To summarize, the benefits of starting a Florida LLC include:`,
       lists: [
         `Separating and limiting your personal liability from your business liability and debts`,
@@ -147,8 +147,8 @@ export const HomePageContent = {
           url: `/blog/post/operating-agreement-llc/`,
         },
         cta: {
-          title: `Receive a personalized <br>operating agreement`,
-          subtitle: `when you select Incfle’s Gold package`,
+          title: `Receive a personalized <br>operating agreement when you select Incfle’s Gold package`,
+          subtitle: ``,
           button: {
             text: `Form Your LLC Now`,
             url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=FL`,

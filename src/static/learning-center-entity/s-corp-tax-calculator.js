@@ -6,14 +6,24 @@ export const about = {
   header: `S Corporation Tax Calculator`,
   text: `There are several advantages to forming a business entity. It protects your personal assets, gives you more financial visibility, and can make it easier to manage your taxes. If you choose the right type of corporate structure, you can significantly lower your yearly tax bill.`,
   text2: `The easiest way for most business owners to reduce tax bills is to be taxed as an S Corporation. You can do this either by:`,
-  button: {
-    header: `Forming an S Corporation.`,
-    url: `/`,
-  },
-  button2: {
-    header: `Forming a Limited Liability Company (LLC) but electing to be taxed as an S Corporation.`,
-    url: `/`,
-  },
+  //   button: {
+  //     header: `Forming an S Corporation.`,
+  //     url: `/`,
+  //   },
+  //   button2: {
+  //     header: `Forming a Limited Liability Company (LLC) but electing to be taxed as an S Corporation.`,
+  //     url: `/`,
+  //   },
+  //   link: {
+  //     text: `Forming an S Corporation.`,
+  //     url: `/what-is-s-corporation/`,
+  //   },
+  //   link2: {
+  //     text: `Forming a Limited Liability Company (LLC) but electing to be taxed as an S Corporation.`,
+  //     url: `/limited-liability-company/`,
+  //   },
+  text6: `<a href="/what-is-s-corporation/">Forming an S Corporation.`,
+  text7: `<a href="/limited-liability-company/">Forming a Limited Liability Company</a> (LLC) but electing to be taxed as an S Corporation.`,
   box: {
     header: `Reduce Self-Employment/Payroll Taxes by Being Taxed as an S Corporation instead of a Sole Proprietorship or Partnership.`,
     text: `To understand why getting taxed as an S Corporation is more tax effective, it’s useful to understand the types of taxes you will need to pay.`,

@@ -77,10 +77,11 @@ class RadioV2 extends React.Component {
     // }
     
     render() {
-        const {className, name, id, value, content, checked, onClick} = this.props;
+        const {className, name, id, value, content, checked, onClick, inputRef} = this.props;
         return (
             <Wrapper className={className}>
                 <Input
+                    ref={inputRef}
                     id={id}
                     type="radio"
                     name={name}

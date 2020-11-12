@@ -23,7 +23,7 @@ export const states = {
     },
     {
       name: "California",
-      uurl: "/california-llc/",
+      url: "/california-llc/",
     },
     {
       name: "Colorado",

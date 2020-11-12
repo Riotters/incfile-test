@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "gatsby";
-import parse from 'html-react-parser';
+import parse from "html-react-parser";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { Tabs, useTabState, usePanelState } from "@bumaga/tabs";
 
-import ListWithDot from './list-with-dot';
+import ListWithDot from "./list-with-dot";
 import { color } from "../atoms/styles/colors";
-import ArrowLink from "../../components/arrow-link"
-import { Paragraph } from "../atoms/typography/paragraph"
+import ArrowLink from "../../components/arrow-link";
+import { Paragraph } from "../atoms/typography/paragraph";
 import ArrowSVG from "../../images/arrow-circle.inline.svg";
 import CurveSVG from "../../images/orange-curve.inline.svg";
 import VisibilitySensor from "../../components/VisibilitySensor";
@@ -85,10 +85,15 @@ const PanelWrapper = styled.div`
     line-height: 24px;
 
     a {
-      color: ${color.orange1};
+      color: ${color.blue1};
       font-size: inherit;
       line-height: inherit;
       text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: ${color.orange1};
+      }
     }
   }
 
@@ -101,14 +106,14 @@ const PanelWrapper = styled.div`
 const ListItems = styled.ul`
   list-style: none;
   padding-left: 0;
-  
+
   li {
     font-family: Avenir, sans-serif;
     font-size: 16px;
     line-height: 24px;
     color: ${(props) => (props.listColor ? `${color[props.listColor.item]}` : `${color.grey1}`)};
     padding-left: 26px;
-    padding-top:0;
+    padding-top: 0;
     position: relative;
 
     &::before {
@@ -125,7 +130,8 @@ const ListItems = styled.ul`
     &:not(:last-child) {
       margin-bottom: 16px;
     }
-  }`;
+  }
+`;
 
 const Button = styled.button`
   min-width: 80px;
@@ -186,100 +192,97 @@ const Icon = styled.div`
 `;
 
 const Counting = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    background-color: ${color.blue1};
-    color: white;
-    border-radius: 100px;
-    width: 30px;
-    min-width:30px;
-    height: 30px;
-    margin-left: 30px;
-    margin-right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: ${color.blue1};
+  color: white;
+  border-radius: 100px;
+  width: 30px;
+  min-width: 30px;
+  height: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
 `;
 
 const cn = (...args) => args.filter(Boolean).join(" ");
 
 const Tab = ({ children }) => {
-    const { isActive, onClick } = useTabState();
+  const { isActive, onClick } = useTabState();
 
-    return (
-        <Button className={cn("accordion-tab", isActive && "active")} onClick={onClick}>
-            {children}
-        </Button>
-    );
+  return (
+    <Button className={cn("accordion-tab", isActive && "active")} onClick={onClick}>
+      {children}
+    </Button>
+  );
 };
 
 const panel = {
-    hidden: { height: 0 },
-    visible: { height: "auto" },
+  hidden: { height: 0 },
+  visible: { height: "auto" },
 };
 
 const Panel = ({ children }) => {
-    const isActive = usePanelState();
+  const isActive = usePanelState();
 
-    return (
-        <motion.div className="accordion-panel" animate={isActive ? "visible" : "hidden"} transition={{ ease: "easeOut", duration: 0.3 }} variants={panel}>
-            {children}
-        </motion.div>
-    );
+  return (
+    <motion.div className="accordion-panel" animate={isActive ? "visible" : "hidden"} transition={{ ease: "easeOut", duration: 0.3 }} variants={panel}>
+      {children}
+    </motion.div>
+  );
 };
 
-const AccordionWithCounting = ({ content, curve, curveRight, curveRightBottom, tab, listColor}) => {
-    return (
-        <VisibilitySensor partialVisibility once>
-            {({ isVisible }) => (
-                <Wrapper className={isVisible ? "slideUp enter" : "slideUp"} tab={tab}>
-                    {curve && (
-                        <Curve curveRight={curveRight} curveRightBottom={curveRightBottom}>
-                            <CurveSVG />
-                        </Curve>
-                    )}
-                    <Tabs>
-                        <TabsWrapper>
-                            {content.map((item) => (
-                                <TabBox>
-                                    <Tab>
-                                        <Content>
-                                            <Counting>{item.count}</Counting>
-                                            <span>{item.question}</span>
-                                        </Content>
-                                        <Icon>
-                                            <ArrowSVG />
-                                        </Icon>
-                                    </Tab>
-                                    <Panel>
-                                        <PanelWrapper>
-                                        {item.answer.map((e, i) => (
-                                            <div>                                                                    
-                                                {e.type === 'paragraph' && 
-                                                    <Paragraph mixed={true}>{parse(e.content)}</Paragraph>
-                                                }
+const AccordionWithCounting = ({ content, curve, curveRight, curveRightBottom, tab, listColor }) => {
+  return (
+    <VisibilitySensor partialVisibility once>
+      {({ isVisible }) => (
+        <Wrapper className={isVisible ? "slideUp enter" : "slideUp"} tab={tab}>
+          {curve && (
+            <Curve curveRight={curveRight} curveRightBottom={curveRightBottom}>
+              <CurveSVG />
+            </Curve>
+          )}
+          <Tabs>
+            <TabsWrapper>
+              {content.map((item) => (
+                <TabBox>
+                  <Tab>
+                    <Content>
+                      <Counting>{item.count}</Counting>
+                      <span>{item.question}</span>
+                    </Content>
+                    <Icon>
+                      <ArrowSVG />
+                    </Icon>
+                  </Tab>
+                  <Panel>
+                    <PanelWrapper>
+                      {item.answer.map((e, i) => (
+                        <div>
+                          {e.type === "paragraph" && <Paragraph mixed={true}>{parse(e.content)}</Paragraph>}
 
-                                                {e.type === 'arrow-links' && e.content.map(link => (
-                                                    <ArrowLink url={link.url} style={link.style}>{link.text}</ArrowLink>
-                                                ))}
-
-                                                {e.type === 'list-dot-without-bg' &&
-                                                    <ListWithDot color={color.blue3} content={e.content} />
-                                                }
-
-                                                {e.type === 'button' && 
-                                                    <Button content={e.content} theme={e.theme} arrow width="350px" margin="16px 0 0 0" marginMD="42px 0 42px 0" />
-                                                }
-                                            </div>
-                                        ))}
-                                        </PanelWrapper>
-                                    </Panel>
-                                </TabBox>
+                          {e.type === "arrow-links" &&
+                            e.content.map((link) => (
+                              <ArrowLink url={link.url} style={link.style}>
+                                {link.text}
+                              </ArrowLink>
                             ))}
-                        </TabsWrapper>
-                    </Tabs>
-                </Wrapper>
-            )}
-        </VisibilitySensor>
-    );
+
+                          {e.type === "list-dot-without-bg" && <ListWithDot color={color.blue3} content={e.content} />}
+
+                          {e.type === "button" && <Button content={e.content} theme={e.theme} arrow width="350px" margin="16px 0 0 0" marginMD="42px 0 42px 0" />}
+                        </div>
+                      ))}
+                    </PanelWrapper>
+                  </Panel>
+                </TabBox>
+              ))}
+            </TabsWrapper>
+          </Tabs>
+        </Wrapper>
+      )}
+    </VisibilitySensor>
+  );
 };
 export default AccordionWithCounting;

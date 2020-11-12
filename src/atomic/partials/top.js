@@ -44,7 +44,7 @@ const switch1 = (ovalColor) => {
     case "love": {
       return "#fdabab";
     }
-    case "babyblue" : {
+    case "babyblue": {
       return "#71bef8";
     }
     default:
@@ -90,7 +90,7 @@ const switch2 = (ovalColor) => {
     case "love": {
       return "#f9e0e0";
     }
-    case "babyblue" : {
+    case "babyblue": {
       return "#d2eeff";
     }
     default:
@@ -104,6 +104,7 @@ const Wrapper = styled.div`
   align-items: center;
   position: relative;
   padding-top: 80px;
+  z-index: 1;
 
   @media (min-width: 992px) {
     flex-direction: row;
@@ -208,7 +209,7 @@ const TextContainer = styled.div`
 
 const ImageContainer = styled.div`
   display: flex;
-  max-width: ${props => props.imageWidth ? `${props.imageWidth}px` : "950px"};
+  max-width: ${(props) => (props.imageWidth ? `${props.imageWidth}px` : "950px")};
   width: 100%;
   top: 50%;
   right: 55%;
@@ -218,9 +219,7 @@ const ImageContainer = styled.div`
     width: 55%;
     transform: translate(100%, -50%);
 
-    ${props => (props.imagePositionRight &&
-        `right: ${ props.imagePositionRight };`
-    )}
+    ${(props) => props.imagePositionRight && `right: ${props.imagePositionRight};`}
   }
 
   .gatsby-image-wrapper {

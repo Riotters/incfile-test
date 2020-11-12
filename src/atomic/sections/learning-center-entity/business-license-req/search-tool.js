@@ -208,7 +208,7 @@ const SearchToolSection = ({ content, businessIndustryList }) => {
                             />     
                             
                             <Button
-                                content={{ text: `Do The ReSearch For me`, url: `/business-license-research-package/` }}
+                                content={{ text: `Do The Research For me`, url: `/business-license-research-package/` }}
                                 theme="primary56" width="250px" arrow />
                         </>
                     )}

@@ -3,13 +3,6 @@ import styled from "styled-components";
 import { Link } from "gatsby";
 
 // Components
-import HowToGuideSVG from "../../../images/icons/states/how-to-guide.inline.svg";
-import BusinessNamesSVG from "../../../images/icons/states/naming-your-business.inline.svg";
-import RASVG from "../../../images/icons/states/registered-agent.inline.svg";
-import FilingFeeSVG from "../../../images/icons/states/filing-fees-requirements.inline.svg";
-import BusinessTaxesSVG from "../../../images/icons/states/business-taxes.inline.svg";
-import FaqSVG from "../../../images/icons/states/faq.inline.svg";
-import WhatDoNextSVG from "../../../images/icons/states/what-to-do-after.inline.svg";
 import ArrowSVG from "../../../images/arrow.inline.svg";
 
 const TabsWrapper = styled.div`
@@ -63,7 +56,7 @@ const Sticky = styled.div`
   top: 100px;
 
   a{
-      pointer-events: none;
+      pointer-events: ${props => (props.pointerEventsTab ?? "auto")};
   }
 `;
 
@@ -136,11 +129,11 @@ const Arrow = styled.div`
 `;
 
 
-const LeftTabPages = ({ layout, columns, content }) => {
+const LeftTabPages = ({ layout, columns, content, pointerEventsTab }) => {
 
     return (
         <TabsWrapper layout={layout}>
-            <Sticky layout={layout} columns={columns}>
+            <Sticky layout={layout} columns={columns} pointerEventsTab={pointerEventsTab}>
                 {content.pages.map((page, i) => (
                     <Link to={page.path} activeClassName="active">
                         <Icon>
@@ -159,3 +152,7 @@ const LeftTabPages = ({ layout, columns, content }) => {
     );
 };
 export default LeftTabPages;
+
+LeftTabPages.defaultProps = {
+    pointerEventsTab: `auto`,
+  };

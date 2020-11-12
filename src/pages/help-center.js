@@ -7,7 +7,7 @@ import Categories from "../atomic/sections/learning-center-entity/help-center/ca
 import Tools from "../atomic/sections/learning-center-entity/help-center/tools";
 import Service from "../atomic/sections/learning-center-entity/help-center/service";
 import Rocket from "../atomic/sections/review-entity-types/c-corporation/rocket";
-import Searchbar from "../atomic/molecules/form/searchbar";
+import Searchbar from "../atomic/molecules/form/help-center-searchbar";
 //Texts
 import { top, about, help, faq, rocket, categories, service, tools } from "../static/learning-center-entity/help-center";
 

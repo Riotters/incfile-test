@@ -11,6 +11,8 @@ import Button from "../../../molecules/buttons/button";
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/business-checklist-checklists-top-right.inline.svg";
 import OvalSVG2 from "../../../../images/ovals/business-checklist-checklist-center-left.inline.svg";
+import { Paragraph } from "../../../atoms/typography/paragraph";
+import parse from "html-react-parser";
 
 const Wrapper = styled.section`
     background-color: ${color.blue3};
@@ -69,7 +71,10 @@ const ChecklistSection = ({ className, content, buttonAction }) => (
                 <SingleChecklistSection content={checklist} />
             ))}
             <ContentCenter>
-                <Button content={content.button} theme="primary56" arrow onClick={buttonAction} />
+                <Button content={content.button} theme="primary56" arrow onClick={buttonAction} margin="0 0 24px 0" />
+                <Paragraph mixed>
+                    {parse(content.text)}
+                </Paragraph>
             </ContentCenter>
         </Container>
     </Wrapper>

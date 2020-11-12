@@ -70,6 +70,7 @@ const ResultItem = styled.div`
         border-radius: 0 0 5px 5px;
         transform: translateY(90px);
         transition: all .3s ease;
+        cursor: pointer;
         
         span{
             font-family: 'Avenir', san-serif;
@@ -113,7 +114,7 @@ const ResultSection = ({ content, keyword, isLoading }) => {
         <Wrapper>
             <Paragraph big mixed={true} style={{ textAlign: `center`, fontWeight: `bold` }} bottomMargin={30} topMargin={80}>
                 {isLoading ?
-                    `Generating...`
+                    `Hold on a split second while we warm up the search engines.`
                     : 
                     `${content.length} business name results with keyword "${keyword}"`
                 }

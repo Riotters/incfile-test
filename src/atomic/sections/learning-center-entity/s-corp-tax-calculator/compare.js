@@ -50,27 +50,21 @@ const AboutSection = ({ className, content }) => (
         {content.text}
       </Paragraph>
       <IconListColorBox color={color.orange3} content={content.box} bottomMargin="72" rounded />
-      <Heading size="3">
-        {content.header2}
-      </Heading>
+      <Heading size="3">{content.header2}</Heading>
       <Paragraph big bottomMargin="72">
         {content.text2}
       </Paragraph>
-      <Circle height="80" width="80" circleColor={color.green2} bottomMargin="32">
+      {/* <Circle height="80" width="80" circleColor={color.green2} bottomMargin="32">
         <ResonableSalarySVG />
-      </Circle>
-      <Heading size="3">
-        {content.header3}
-      </Heading>
+      </Circle> */}
+      <Heading size="3">{content.header3}</Heading>
       <Paragraph big bottomMargin="48">
         {content.text3}
       </Paragraph>
-      <Circle height="80" width="80" circleColor={color.purple2} bottomMargin="32">
+      {/* <Circle height="80" width="80" circleColor={color.purple2} bottomMargin="32">
         <LLCDeclaringSVG />
-      </Circle>
-      <Heading size="3">
-        {content.header4}
-      </Heading>
+      </Circle> */}
+      <Heading size="3">{content.header4}</Heading>
       <Paragraph big bottomMargin="0">
         {content.text4}
       </Paragraph>

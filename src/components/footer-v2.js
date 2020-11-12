@@ -7,16 +7,20 @@ import Container from "../atomic/container";
 import LogoSVG from "../images/logo.inline.svg";
 import ArrowSVG from "../images/arrow.inline.svg";
 import FacebookSVG from "../images/facebook.inline.svg";
-import TwitterSVG from "../images/twitter.inline.svg";
 import YoutubeSVG from "../images/youtube.inline.svg";
 import LinkedinSVG from "../images/linkedin.inline.svg";
-import PinterestSVG from "../images/pinterest.inline.svg";
-import Button from "../atomic/molecules/buttons/button";
+import Button from "../atomic/molecules/buttons/button-action";
 import List from "../atomic/organisms/accordion/footer-single";
 import Curve from "../atomic/atoms/icons/curve";
 import CurveSVG from "../images/green-curve.inline.svg";
+import { validEmail } from "../helpers/form-validate";
+import { useForm } from "react-hook-form";
+import Swal from "sweetalert2";
+import { postHSForm } from '../api/Api';
+
 //Texts
 import { newsletter, footer } from "../static/footer";
+
 
 const Wrapper = styled.div`
   padding-top: 56px;
@@ -56,7 +60,7 @@ const Logo = styled.div`
   }
 `;
 
-const NewsletterWrapper = styled.div`
+const NewsletterWrapper = styled.form`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -123,6 +127,9 @@ const Newsletter = styled.input`
   &:focus {
     border-color: #fd8550;
   }
+  &.invalid {
+    border-color: ${color.orange1};
+}
 `;
 
 const Arrow = styled.div`
@@ -195,59 +202,119 @@ const Social = styled.ul`
 `;
 
 const Footer = () => {
-  return (
-    <Wrapper>
-      <Container>
-        <Top>
-          <Logo>
-            <LogoSVG />
-          </Logo>
-          <NewsletterWrapper>
-            <p>
-              {newsletter.text}
-              <span>({newsletter.bracket})</span>
-            </p>
-            <Arrow>
-              <ArrowSVG />
-            </Arrow>
-            <Label for="newsletter">Newsletter</Label>
-            <Newsletter placeholder="Your E-mail" name="newsletter" id="newsletter" type="text" />
-            <Button content={newsletter.button} theme="secondary40" arrow="yes" right="14px" margin="0 auto 0 0" />
-          </NewsletterWrapper>
-        </Top>
-        <Navigation>
-          <Curve right="-30" bottom="150">
-            <CurveSVG />
-          </Curve>
-          {footer.items.map((item) => (
-            <List content={item} />
-          ))}
-        </Navigation>
-        <Bot>
-          <Copyright>
-            © {new Date().getFullYear()}.{` `}Incfile.com{` `}All Rights Reserved.
+    const { register, errors, reset, handleSubmit, formState } = useForm();
+    const { isSubmitting, isSubmitSuccessful } = formState;
+
+    const pageUrl = typeof window !== 'undefined' ? window.location.href : '';
+    const [submittedData, setSubmittedData] = React.useState({});
+
+    const signupNewsletter = data => {
+        const formData = new FormData();
+        formData.set('pageTitle', document.title);
+        formData.set('pageUrl', pageUrl);
+        formData.set('hs_form_id', '9b0b3b59-46d3-45c2-aae0-dc4897883b3d');
+        formData.set('lifecyclestage', 'subscriber');
+
+        Object.keys(data).forEach(i => {
+            return formData.set(i, data[i]);
+        });
+
+        postHSForm(formData)
+            .then(json => {
+                setSubmittedData(data);
+            });
+        
+        // Fire GA Tracking
+        if (typeof window !== 'undefined') {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                'event': 'newsletterSignupFormSubmission'
+            });
+        }
+        
+        Swal.fire(
+            'Done!',
+            'Thank you for submission',
+            'success'
+        );
+    }
+
+    React.useEffect(() => {
+        if (isSubmitSuccessful) {
+          reset({ ...submittedData });
+        }
+      }, [isSubmitSuccessful, submittedData, reset]);
+
+    return (
+        <Wrapper>
+            <Container>
+                <Top>
+                    <Logo>
+                        <LogoSVG />
+                    </Logo>
+                    <NewsletterWrapper onSubmit={handleSubmit(signupNewsletter)}>
+                        <p>
+                            {newsletter.text}
+                            <span>({newsletter.bracket})</span>
+                        </p>
+                        <Arrow>
+                            <ArrowSVG />
+                        </Arrow>
+                        <Label for="newsletter">Newsletter</Label>
+                        <Newsletter
+                            className={errors.email ? 'invalid' : ''}
+                            placeholder="Your E-mail"
+                            name="email"
+                            type="text"
+                            ref={register({
+                                required: true,
+                                validate: value => validEmail(value) || `Email is not valid`
+                            })}
+                        />
+                        <Button
+                            disabled={isSubmitting}
+                            type="submit"
+                            content={newsletter.button}
+                            theme="secondary40"
+                            arrow="yes"
+                            right="14px"
+                            margin="0 auto 0 0"
+                        />
+                    </NewsletterWrapper>
+                </Top>
+                <Navigation>
+                    <Curve right="-30" bottom="150">
+                        <CurveSVG />
+                    </Curve>
+                    {footer.items.map((item) => (
+                        <List content={item} />
+                    ))}
+                </Navigation>
+                <Bot>
+                    <Copyright>
+                        © {new Date().getFullYear()}.{` `}Incfile.com{` `}All Rights Reserved.
           </Copyright>
-          <Social>
-            <li>
-              <a href="https://facebook.com/incfile" title="Facebook">
-                <FacebookSVG />
-              </a>
-            </li>
-            <li>
-              <a href="https://www.youtube.com/channel/UC-hfd-zO8SSMpOgLNYwLAXA" title="YouTube">
-                <YoutubeSVG />
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/company/incfile-com/" title="LinkedIn">
-                <LinkedinSVG />
-              </a>
-            </li>
-          </Social>
-        </Bot>
-      </Container>
-    </Wrapper>
-  );
+                    <Social>
+                        <li>
+                            <a href="https://facebook.com/incfile" title="Facebook">
+                                <FacebookSVG />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UC-hfd-zO8SSMpOgLNYwLAXA" title="YouTube">
+                                <YoutubeSVG />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/incfile-com/" title="LinkedIn">
+                                <LinkedinSVG />
+                            </a>
+                        </li>
+                    </Social>
+                </Bot>
+            </Container>
+        </Wrapper>
+    );
 };
 
 export default Footer;

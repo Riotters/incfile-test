@@ -98,7 +98,7 @@ export const variants = {
         {
           header: "Silver",
           variant: "",
-          text: "Our core features for\n" + "the lowest price",
+          text: "",
           price: 202,
           image: "",
           button: {
@@ -123,7 +123,7 @@ export const variants = {
         {
           header: "Gold",
           variant: "most popular",
-          text: "Comprehensive features to get your business started",
+          text: "Everything from sliver+",
           price: 351,
           image: "",
           button: {
@@ -148,7 +148,7 @@ export const variants = {
         {
           header: "Platinum",
           variant: "Best value",
-          text: "Full service features at the best value",
+          text: "Everything from sliver & gold+",
           price: 501,
           image: "",
           button: {
@@ -1417,7 +1417,7 @@ export const variants = {
         {
           header: "Silver",
           variant: "",
-          text: "Our core features for\n" + "the lowest price",
+          text: "",
           price: 163,
           image: "",
           button: {
@@ -1442,7 +1442,7 @@ export const variants = {
         {
           header: "Gold",
           variant: "most popular",
-          text: "Comprehensive features to get your business started",
+          text: "Everything from sliver+",
           price: 312,
           image: "",
           button: {
@@ -1467,7 +1467,7 @@ export const variants = {
         {
           header: "Platinum",
           variant: "Best value",
-          text: "Full service features at the best value",
+          text: "Everything from sliver & gold+",
           price: 462,
           image: "",
           button: {
@@ -2736,7 +2736,7 @@ export const variants = {
         {
           header: "Silver",
           variant: "",
-          text: "Our core features for\n" + "the lowest price",
+          text: "",
           price: 175,
           image: "",
           button: {
@@ -2761,7 +2761,7 @@ export const variants = {
         {
           header: "Gold",
           variant: "most popular",
-          text: "Comprehensive features to get your business started",
+          text: "Everything from sliver+",
           price: 324,
           image: "",
           button: {
@@ -2786,7 +2786,7 @@ export const variants = {
         {
           header: "Platinum",
           variant: "Best value",
-          text: "Full service features at the best value",
+          text: "Everything from sliver & gold+",
           price: 474,
           image: "",
           button: {
@@ -3983,7 +3983,7 @@ export const variants = {
         {
           header: "Silver",
           variant: "",
-          text: "Our core features for\n" + "the lowest price",
+          text: "",
           price: 212,
           image: "",
           button: {
@@ -4008,7 +4008,7 @@ export const variants = {
         {
           header: "Gold",
           variant: "most popular",
-          text: "Comprehensive features to get your business started",
+          text: "Everything from sliver+",
           price: 361,
           image: "",
           button: {
@@ -4033,7 +4033,7 @@ export const variants = {
         {
           header: "Platinum",
           variant: "Best value",
-          text: "Full service features at the best value",
+          text: "Everything from sliver & gold+",
           price: 511,
           image: "",
           button: {
@@ -5310,7 +5310,7 @@ export const variants = {
         {
           header: "Silver",
           variant: "",
-          text: "Our core features for\n" + "the lowest price",
+          text: "",
           price: 250,
           image: "",
           button: {
@@ -5335,7 +5335,7 @@ export const variants = {
         {
           header: "Gold",
           variant: "most popular",
-          text: "Comprehensive features to get your business started",
+          text: "Everything from sliver+",
           price: 399,
           image: "",
           button: {
@@ -5360,7 +5360,7 @@ export const variants = {
         {
           header: "Platinum",
           variant: "Best value",
-          text: "Full service features at the best value",
+          text: "Everything from sliver & gold+",
           price: 549,
           image: "",
           button: {
@@ -6688,7 +6688,7 @@ export const variants = {
         {
           header: "Silver",
           variant: "",
-          text: "Our core features for\n" + "the lowest price",
+          text: "",
           price: 163,
           image: "",
           button: {
@@ -6713,7 +6713,7 @@ export const variants = {
         {
           header: "Gold",
           variant: "most popular",
-          text: "Comprehensive features to get your business started",
+          text: "Everything from sliver+",
           price: 312,
           image: "",
           button: {
@@ -6738,7 +6738,7 @@ export const variants = {
         {
           header: "Platinum",
           variant: "Best value",
-          text: "Full service features at the best value",
+          text: "Everything from sliver & gold+",
           price: 462,
           image: "",
           button: {
@@ -8066,7 +8066,7 @@ export const variants = {
         {
           header: "Silver",
           variant: "",
-          text: "Our core features for\n" + "the lowest price",
+          text: "",
           price: 175,
           image: "",
           button: {
@@ -8091,7 +8091,7 @@ export const variants = {
         {
           header: "Gold",
           variant: "most popular",
-          text: "Comprehensive features to get your business started",
+          text: "Everything from sliver+",
           price: 324,
           image: "",
           button: {
@@ -8116,7 +8116,7 @@ export const variants = {
         {
           header: "Platinum",
           variant: "Best value",
-          text: "Full service features at the best value",
+          text: "Everything from sliver & gold+",
           price: 474,
           image: "",
           button: {
@@ -9400,7 +9400,7 @@ export const variants = {
         {
           header: "Silver",
           variant: "",
-          text: "Our core features for\n" + "the lowest price",
+          text: "",
           price: 212,
           image: "",
           button: {
@@ -9425,7 +9425,7 @@ export const variants = {
         {
           header: "Gold",
           variant: "most popular",
-          text: "Comprehensive features to get your business started",
+          text: "Everything from sliver+",
           price: 361,
           image: "",
           button: {
@@ -9450,7 +9450,7 @@ export const variants = {
         {
           header: "Platinum",
           variant: "Best value",
-          text: "Full service features at the best value",
+          text: "Everything from sliver & gold+",
           price: 511,
           image: "",
           button: {
@@ -10786,7 +10786,7 @@ export const variants = {
         {
           header: "Silver",
           variant: "",
-          text: "Our core features for\n" + "the lowest price",
+          text: "",
           price: 95,
           image: "",
           button: {
@@ -10811,7 +10811,7 @@ export const variants = {
         {
           header: "Gold",
           variant: "most popular",
-          text: "Comprehensive features to get your business started",
+          text: "Everything from sliver+",
           price: 244,
           image: "",
           button: {
@@ -10836,7 +10836,7 @@ export const variants = {
         {
           header: "Platinum",
           variant: "Best value",
-          text: "Full service features at the best value",
+          text: "Everything from sliver & gold+",
           price: 394,
           image: "",
           button: {
@@ -12140,7 +12140,7 @@ export const variants = {
         {
           header: "Silver",
           variant: "",
-          text: "Our core features for\n" + "the lowest price",
+          text: "",
           price: 95,
           image: "",
           button: {
@@ -12165,7 +12165,7 @@ export const variants = {
         {
           header: "Gold",
           variant: "most popular",
-          text: "Comprehensive features to get your business started",
+          text: "Everything from sliver+",
           price: 244,
           image: "",
           button: {
@@ -12190,7 +12190,7 @@ export const variants = {
         {
           header: "Platinum",
           variant: "Best value",
-          text: "Full service features at the best value",
+          text: "Everything from sliver & gold+",
           price: 394,
           image: "",
           button: {
@@ -13494,7 +13494,7 @@ export const variants = {
         {
           header: "Silver",
           variant: "",
-          text: "Our core features for\n" + "the lowest price",
+          text: "",
           price: 75,
           image: "",
           button: {
@@ -13519,7 +13519,7 @@ export const variants = {
         {
           header: "Gold",
           variant: "most popular",
-          text: "Comprehensive features to get your business started",
+          text: "Everything from sliver+",
           price: 224,
           image: "",
           button: {
@@ -13544,7 +13544,7 @@ export const variants = {
         {
           header: "Platinum",
           variant: "Best value",
-          text: "Full service features at the best value",
+          text: "Everything from sliver & gold+",
           price: 374,
           image: "",
           button: {
@@ -14804,7 +14804,7 @@ export const variants = {
         {
           header: "Silver",
           variant: "",
-          text: "Our core features for\n" + "the lowest price",
+          text: "",
           price: 85,
           image: "",
           button: {
@@ -14829,7 +14829,7 @@ export const variants = {
         {
           header: "Gold",
           variant: "most popular",
-          text: "Comprehensive features to get your business started",
+          text: "Everything from sliver+",
           price: 234,
           image: "",
           button: {
@@ -14854,7 +14854,7 @@ export const variants = {
         {
           header: "Platinum",
           variant: "Best value",
-          text: "Full service features at the best value",
+          text: "Everything from sliver & gold+",
           price: 384,
           image: "",
           button: {
@@ -16142,7 +16142,7 @@ export const variants = {
         {
           header: "Silver",
           variant: "",
-          text: "Our core features for\n" + "the lowest price",
+          text: "",
           price: 50,
           image: "",
           button: {
@@ -16167,7 +16167,7 @@ export const variants = {
         {
           header: "Gold",
           variant: "most popular",
-          text: "Comprehensive features to get your business started",
+          text: "Everything from sliver+",
           price: 199,
           image: "",
           button: {
@@ -16192,7 +16192,7 @@ export const variants = {
         {
           header: "Platinum",
           variant: "Best value",
-          text: "Full service features at the best value",
+          text: "Everything from sliver & gold+",
           price: 349,
           image: "",
           button: {
@@ -17474,7 +17474,7 @@ export const variants = {
         {
           header: "Silver",
           variant: "",
-          text: "Our core features for\n" + "the lowest price",
+          text: "",
           price: 50,
           image: "",
           button: {
@@ -17499,7 +17499,7 @@ export const variants = {
         {
           header: "Gold",
           variant: "most popular",
-          text: "Comprehensive features to get your business started",
+          text: "Everything from sliver+",
           price: 199,
           image: "",
           button: {
@@ -17524,7 +17524,7 @@ export const variants = {
         {
           header: "Platinum",
           variant: "Best value",
-          text: "Full service features at the best value",
+          text: "Everything from sliver & gold+",
           price: 349,
           image: "",
           button: {
@@ -18806,7 +18806,7 @@ export const variants = {
         {
           header: "Silver",
           variant: "",
-          text: "Our core features for\n" + "the lowest price",
+          text: "",
           price: 50,
           image: "",
           button: {
@@ -18831,7 +18831,7 @@ export const variants = {
         {
           header: "Gold",
           variant: "most popular",
-          text: "Comprehensive features to get your business started",
+          text: "Everything from sliver+",
           price: 199,
           image: "",
           button: {
@@ -18856,7 +18856,7 @@ export const variants = {
         {
           header: "Platinum",
           variant: "Best value",
-          text: "Full service features at the best value",
+          text: "Everything from sliver & gold+",
           price: 349,
           image: "",
           button: {
@@ -20094,7 +20094,7 @@ export const variants = {
         {
           header: "Silver",
           variant: "",
-          text: "Our core features for\n" + "the lowest price",
+          text: "",
           price: 50,
           image: "",
           button: {
@@ -20119,7 +20119,7 @@ export const variants = {
         {
           header: "Gold",
           variant: "most popular",
-          text: "Comprehensive features to get your business started",
+          text: "Everything from sliver+",
           price: 199,
           image: "",
           button: {
@@ -20144,7 +20144,7 @@ export const variants = {
         {
           header: "Platinum",
           variant: "Best value",
-          text: "Full service features at the best value",
+          text: "Everything from sliver & gold+",
           price: 349,
           image: "",
           button: {

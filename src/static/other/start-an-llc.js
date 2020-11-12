@@ -145,6 +145,7 @@ export const about = {
           text: `See more business-friendly states`,
           url: `/llc-state-information/`,
         },
+        text2: `It’s important to note that not all businesses can operate as LLCs. For example, businesses dealing with banking or insurance are typically prevented from forming as an LLC. There are also restrictions from state to state, for example California prevents some types of professionals from starting LLCs. To learn more about the specific regulations in your state when starting your LLC, check out Incfile's complete LLC state information.`,
       },
       {
         header: `When to Form an LLC`,

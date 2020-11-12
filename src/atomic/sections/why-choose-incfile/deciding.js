@@ -23,7 +23,7 @@ import Button from "../../../components/button";
 const Wrapper = styled.div`
     position: relative;
     background-color: #fef6ed;
-    padding: 100px 0 300px 0;
+    padding: 100px 0 256px 0;
 `
 
 const ImgageBottom = styled.div`

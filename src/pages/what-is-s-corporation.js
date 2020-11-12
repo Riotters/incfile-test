@@ -43,7 +43,7 @@ const SCorporation = () => {
     setFormSubmitted(false);
   };
 
-  const postDownload = (formData) => {
+  const postDownload = () => {
     setModalVisible(modalVisible);
     setFormSubmitted(true);
   };

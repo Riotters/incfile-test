@@ -16,7 +16,7 @@ function LLCIndex() {
         <Layout>
             <SEO title="Start Your Own Business | Incfile's Step-by-Step Course" description="Ready to form your Texas LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
             <ChapterLayout top={top.footprint}>
-                <LeftTabPages content={tabPages} nonDIY />
+                <LeftTabPages content={tabPages} nonDIY pointerEventsTab="none"/>
                 <MainPageContent>
                     <ContentMap content={security} />
                 </MainPageContent>

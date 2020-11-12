@@ -18,7 +18,7 @@ const Wrapper = styled.div`
   display: flex;
   width: 100%;
   position: relative;
-  margin-top: ${(props) => (props.tab ? "" : "80px")};
+  margin-top: ${(props) => (props.tab ? "" : "56px")};
   margin-bottom: ${(props) => (props.bottomMargin ? `${props.bottomMargin}px` : "")};
 
   @media (min-width: 769px) {

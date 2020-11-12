@@ -7,7 +7,7 @@ import IconSVG from "../../../images/icons/biennal-report.inline.svg";
 import IconLitsColorBox from "../../molecules/text-blocks/icon-h4-list-color";
 import Oval from "../../atoms/icons/oval";
 import OvalSVG from "../../../images/ovals/top-left-transparent-pink.inline.svg";
-import Button from "../../molecules/buttons/button";
+import Button from "../../molecules/buttons/button-action";
 
 const About = styled.section`
   position: relative;

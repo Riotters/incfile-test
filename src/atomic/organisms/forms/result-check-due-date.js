@@ -8,6 +8,7 @@ import ButtonLink from "../../molecules/buttons/button";
 import ButtonAction from "../../molecules/buttons/button-action";
 import DueDateSVG from "../../../images/due_date.inline.svg";
 import FilingRequirementBox from "../../states-llc/filing-requirement-box";
+import { scrollToElement } from '../../../helpers/utils';
 
 const Icon = styled.div`
 `
@@ -15,6 +16,7 @@ const Icon = styled.div`
 const ResultCheckDueDate = ({ content, toggleForm }) => {
     const openForm = e => {
         e.preventDefault();
+        scrollToElement(e, 'js-check-duedate-form');
         toggleForm(false);
     }
 
@@ -42,13 +44,14 @@ const ResultCheckDueDate = ({ content, toggleForm }) => {
             <Buttonsbox style={{ justifyContent: `center` }}>
                 <ButtonLink
                     content={{ text: `File your annual or biennial report`, url: `${process.env.ORDER_URL}/annual-report.php` }}
-                    theme="primary56" arrow
+                    theme="primary56" margin="15px"
+                    arrow
                 />
                 <ButtonAction
                     onClick={e => openForm(e)}
                     content={{ text: `Check Another Due Date`, url: `#` }}
                     theme="secondary56"
-                    margin="0 0 0 15px"
+                    margin="15px"
                 />
             </Buttonsbox>
         </ContentCenter>
