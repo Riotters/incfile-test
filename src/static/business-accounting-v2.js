@@ -116,7 +116,7 @@ export const ins_and_outs = {
     items: [
       {
         question: "LLC Tax Filing",
-        answer: `<a href="limited-liability-company/">A limited liability company (LLC)</a> is treated as a “pass-through” or “disregarded” entity for tax purposes. This means
+        answer: `<a href="/limited-liability-company/">A limited liability company (LLC)</a> is treated as a “pass-through” or “disregarded” entity for tax purposes. This means
                 your LLC does not pay taxes itself, instead all of the LLC’s profits or losses are “passed through” directly to the personal tax returns of the owners of the LLC and taxed there.
                 <br />
                 Even though your LLC is a pass-through entity, it will still need to file some tax forms.`,

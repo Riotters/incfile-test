@@ -3,13 +3,14 @@ import styled from "styled-components";
 import Label from "../../molecules/form/label-field-with-child";
 import Input from "../../atoms/inputs/input";
 import Button from "../../molecules/buttons/button-action";
-import { useForm, Controller } from 'react-hook-form';
+import { useForm } from 'react-hook-form';
 
 // API 
-import { postHSForm } from '../../../api/Api';
+import { signupFreeTaxConsultation } from '../../../api/Api';
 import { _phoneFormat } from '../../../helpers/input-parsers';
 import { validEmail, isUSPhone } from '../../../helpers/form-validate';
 import { Helmet } from "react-helmet";
+import Swal from "sweetalert2";
 
 const Wrapper = styled.form`
   display: flex;
@@ -42,18 +43,49 @@ const Grid = styled.div`
 `;
 
 const BusinessAccountingForm = ({ className, content }) => {
-    const [phoneNumber, setPhoneNumber] = React.useState('');
     const { register, reset, handleSubmit, errors, formState, setValue } = useForm();
     const { isSubmitting, isSubmitSuccessful } = formState;
 
+    const [submittedData, setSubmittedData] = React.useState({});
+
     const handleSignup = data => {
-        console.log('HH', data);
+        if (typeof window !== 'undefined') {
+            let v = window.grecaptcha.getResponse();
+            if (!window) {
+                Swal.fire(
+                    'Error!', 'You must confirm that you are not a robot', 'warning'
+                );
+
+                return false;
+            } else {
+                const formData = new FormData();
+                Object.keys(data).forEach(i => {
+                    return formData.set(i, data[i]);
+                });
+
+                signupFreeTaxConsultation(formData)
+                    .then(res => {
+                        setSubmittedData(data);
+                    });
+                
+                window.grecaptcha.reset();
+                Swal.fire(
+                    'Success!', 'Your request has been sent', 'success'
+                );
+            }
+        }
     }
+
+    React.useEffect(() => {
+        if (isSubmitSuccessful) {
+          reset({ ...submittedData });
+        }
+      }, [isSubmitSuccessful, submittedData, reset]);
 
     return (
         <>
             <Helmet>
-                <script src='https://www.google.com/recaptcha/api.js'></script>
+                <script src='https://www.google.com/recaptcha/api.js' async></script>
             </Helmet>
             <Wrapper className={className} onSubmit={handleSubmit(handleSignup)}>
                 <Grid>
@@ -100,7 +132,7 @@ const BusinessAccountingForm = ({ className, content }) => {
                     <div class="g-recaptcha" data-sitekey={`${process.env.CAPTCHA_KEY}`}></div>
                 </Grid>
 
-                <Button type="submit" content={content.button} theme="primary56" arrow marginSM="32px auto 0" />
+                <Button type="submit" content={{text: isSubmitting ? 'Submitting...' : 'Yes, Contact Me to Learn More'}} theme="primary56" arrow marginSM="32px auto 0" />
             </Wrapper>
         </>
     );
