@@ -894,7 +894,7 @@ export const feesAndRequirments = [
     type: `button`,
     content: {
       text: `INCORPORATE YOUR ALABAMA LLC THROUGH INCFILE TODAY`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AL/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AL`,
     },
     theme: `primary48`,
     marginBottom: 48,

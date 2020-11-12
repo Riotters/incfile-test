@@ -7,7 +7,7 @@ export const top = {
     text: `$0 + State Fee & 1st Year FREE Registered Agent`,
     buttons: [{
         text: `See detailed pricing`,
-        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ`,
+        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=WV`,
     }, ],
 };
 
@@ -119,7 +119,7 @@ export const howToGuide = [{
                    <li> Name of the incorporator </li>
                    </ul>
                    <p>You can file your West Virginia Articles of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in West Virginia, but you only need to file your Articles of Organization once.</p></br>
-                   <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=DE/"> Form your LLC now </a>`,
+                   <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=WV"> Form your LLC now </a>`,
                 },
             ],
         },
@@ -743,7 +743,7 @@ export const registeredAgent = [{
         type: `button`,
         content: {
             text: `Incorporate your business through Incfile`,
-            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=WV/`,
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=WV`,
         },
         theme: `primary48`,
         marginBottom: 32,
@@ -961,7 +961,7 @@ export const feesAndRequirments = [{
         type: `button`,
         content: {
             text: `Incorporate your West Virginia LLC through Incfile today`,
-            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=WV/`,
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=WV`,
         },
         theme: `primary48`,
         marginBottom: 48,

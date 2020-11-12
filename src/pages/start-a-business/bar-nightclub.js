@@ -56,7 +56,7 @@ import { Link } from "gatsby";
 const BarNightclub = () => (
   <Layout>
     <SEO
-      title="How to Start Bar or Club Business"
+      title="How to Start a Bar or Nightclub"
       description="Opening a bar, nightclub or pub business is a great way to give your customers the perfect place to meet, drink and socialize. The combination of a good location, friendly staff, great selection and the right ambiance can really help set you apart and make your bar successful."
     />
 

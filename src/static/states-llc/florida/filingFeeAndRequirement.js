@@ -84,7 +84,7 @@ export const filingFeeAndRequirementContent = {
         title: `Incfile can file your incorporation paperwork for you for free - just pay your required state fee.`,
         button: {
           text: `Incorporate Your Florida LLC Today`,
-          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=TX`,
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=FL`,
         },
       },
     },
@@ -97,7 +97,7 @@ export const filingFeeAndRequirementContent = {
         title: `Some states allow you to form your LLC more quickly by paying a rush fee.`,
         button: {
           text: `View Expedited Fees For Florida`,
-          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=TX`,
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=FL`,
         },
       },
     },

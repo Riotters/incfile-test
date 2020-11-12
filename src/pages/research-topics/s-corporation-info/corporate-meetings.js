@@ -20,7 +20,7 @@ import { about, related } from "../../../static/research-topics/s-corporation-in
 
 const HelpCenter = () => (
   <Layout>
-    <SEO title="Am I Required to Hold Corporate Meetings? | Archive articles" description="Q & A for LLC and other forms of corporations. Learning Center for
+    <SEO title="Am I Required to Hold Corporate Meetings?" description="Q & A for LLC and other forms of corporations. Learning Center for
     Incorporating in every state." />
     <Top imageName="mrs-bulb-help-center-article" imageAlt="Mrs Bulb and with checklist" ovalColor="green">
       <h1>{top.header}</h1>

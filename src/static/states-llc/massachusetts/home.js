@@ -104,7 +104,7 @@ export const howToGuide = [
                    <li> Name of the incorporator </li>
                    </ul>
                    <p>You can file your Massachusetts LLC Certificate of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Massachusetts. You only need to file your Certificate of Organization once. </p></br>
-                   <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MA/"> Form your LLC now </a>`,
+                   <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MA"> Form your LLC now </a>`,
         },
       ],
     },
@@ -414,7 +414,7 @@ export const namingYourBusiness = [
       list: [
         `If you don’t want to form your Massachusetts LLC right now, you can reserve the business name with the Massachusetts Corporations Division. You do not need to reserve a name if you are forming your business right away.
               <a href="https://www.sec.state.ma.us/cor/corpweb/cornameres/nameresinf.htm/" target="_blank" rel="noopener noreferrer">Massachusetts Corporations Division LLC name reservation</a>`,
-        `If you’re ready to start your Massachusetts LLC, you can formally file your Certificate of Organization with the Massachusetts Corporations Division, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MA/">let Incfile take care of it for you</a>.`,
+        `If you’re ready to start your Massachusetts LLC, you can formally file your Certificate of Organization with the Massachusetts Corporations Division, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MA">let Incfile take care of it for you</a>.`,
       ],
     },
     marginBottom: 40,
@@ -694,7 +694,7 @@ export const registeredAgent = [
     type: `button`,
     content: {
       text: `Incorporate your business through Incfile`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MA/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MA`,
     },
     theme: `primary48`,
     marginBottom: 40,
@@ -918,7 +918,7 @@ export const feesAndRequirments = [
     type: `button`,
     content: {
       text: `Incorporate your Massachusetts LLC through Incfile today`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MA/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MA`,
     },
     theme: `primary48`,
     marginBottom: 48,

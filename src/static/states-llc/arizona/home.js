@@ -111,7 +111,7 @@ export const howToGuide = [
           <li>Name of the incorporator</li>
           </ol></br>
           <p>You can file your Arizona LLC Articles of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Arizona. You only need to file your Articles of Organization once.</p>
-          <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ/">Form your LLC now </a>`,
+          <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ">Form your LLC now </a>`,
         },
       ],
     },
@@ -449,7 +449,7 @@ export const namingYourBusiness = [
                <a href="https://azcc.gov/corporations/name-reservations" target="_blank" rel="noopener noreferrer">Arizona CC LLC name reservation form</a>`,
       },
       {
-        text: `If you’re ready to start your Arizona LLC, you can formally file your Articles of Organization with the Arizona CC, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ/"> let Incfile take care of it for you.</a>`,
+        text: `If you’re ready to start your Arizona LLC, you can formally file your Articles of Organization with the Arizona CC, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ"> let Incfile take care of it for you.</a>`,
       },
     ],
     marginBottom: 32,
@@ -713,7 +713,7 @@ export const registeredAgent = [
     type: `button`,
     content: {
       text: `Incorporate your business through Incfile`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ`,
     },
     theme: `primary48`,
     marginBottom: 48,
@@ -937,7 +937,7 @@ export const feesAndRequirments = [
     type: `button`,
     content: {
       text: `Incorporate your Arizona LLC through Incfile today`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ`,
     },
     theme: `primary48`,
     marginBottom: 48,

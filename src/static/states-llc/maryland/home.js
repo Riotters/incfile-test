@@ -96,7 +96,7 @@ export const howToGuide = [
                      <li> Name of the incorporator </li>
                      </ul>
                      <p>You can file your Maryland LLC Articles of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Maryland. You only need to file your Articles of Organization once. </p></br>
-                     <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MD/"> Form your LLC now </a>`,
+                     <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MD"> Form your LLC now </a>`,
         },
       ],
     },
@@ -372,7 +372,7 @@ export const namingYourBusiness = [
       header: ``,
       list: [
         `If you don’t want to form your Maryland LLC right now, you can reserve the business name with Maryland Business Express. You will need to contact <a href="sdat.charterhelp@maryland.gov" target="_blank" rel="noopener noreferrer"> sdat.charterhelp@maryland.gov</a>. You do not need to reserve a name if you are forming your business right away.`,
-        `If you’re ready to start your Maryland LLC, you can formally file your Articles of Organization with Maryland Business Express, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MD/">let Incfile take care of it for you</a>.`,
+        `If you’re ready to start your Maryland LLC, you can formally file your Articles of Organization with Maryland Business Express, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MD">let Incfile take care of it for you</a>.`,
       ],
     },
     marginBottom: 40,
@@ -651,7 +651,7 @@ export const registeredAgent = [
     type: `button`,
     content: {
       text: `Incorporate your business through Incfile`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MD/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MD`,
     },
     theme: `primary48`,
     marginBottom: 32,
@@ -875,7 +875,7 @@ export const feesAndRequirments = [
     type: `button`,
     content: {
       text: `Incorporate your Maryland LLC through Incfile today`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MD/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MD`,
     },
     theme: `primary48`,
     marginBottom: 48,

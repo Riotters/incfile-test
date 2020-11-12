@@ -83,7 +83,7 @@ export const filingFeeAndRequirementContent = {
         title: `Incfile can file your incorporation paperwork for you for free - just pay your required state fee.`,
         button: {
           text: `Incorporate Your Georgia LLC Today`,
-          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=GA/`,
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=GA`,
         },
       },
     },

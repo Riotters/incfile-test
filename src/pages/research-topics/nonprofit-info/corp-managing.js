@@ -16,7 +16,7 @@ import { about, related } from "../../../static/research-topics/nonprofit-info/c
 
 const HelpCenter = () => (
   <Layout>
-    <SEO title="How is non-profit managed?" description="Learn about the key differences between nonprofit and not-for-profit organizations, including legal status, purpose, tax exemption and more." />
+    <SEO title="How is a Corporation Managed?" description="Learn about the key differences between nonprofit and not-for-profit organizations, including legal status, purpose, tax exemption and more." />
     <Top imageName="mrs-bulb-help-center-article" imageAlt="Mrs Bulb and with checklist" ovalColor="green">
       <h1>{top.header}</h1>
       <p>{top.text}</p>

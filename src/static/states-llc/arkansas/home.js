@@ -681,7 +681,7 @@ export const registeredAgent = [
     type: `button`,
     content: {
       text: `Incorporate your business through Incfile`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AR/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AR`,
     },
     theme: `primary48`,
     marginBottom: 32,

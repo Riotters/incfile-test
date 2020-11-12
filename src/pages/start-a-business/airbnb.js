@@ -40,7 +40,7 @@ import CircleSvg from "../../images/circle-percentage.inline.svg";
 
 const Airbnb = () => (
   <Layout>
-    <SEO title="What is a Nonprofit Organization? How to Start a Nonprofit" description="Learn all about nonprofit corporations, including the benefits & disadvantages, getting 501c3 status, and what's needed to get your company off the ground." />
+    <SEO title="How to Start an Airbnb | A Guide to Airbnb Businesses" description="More than two million people stay at an Airbnb on any given day. Could starting an Airbnb business be right for you? Learn more." />
 
     <Top ovalColor="sun" imageName="airbnb-main" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
       <h1>How to Start an Airbnb</h1>

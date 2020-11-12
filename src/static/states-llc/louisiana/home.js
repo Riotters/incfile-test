@@ -376,7 +376,7 @@ export const namingYourBusiness = [
       header: ``,
       list: [
         `If you don’t want to form your Louisiana LLC right now, you can reserve the business name with the Louisiana Secretary of State. You will need to complete an application for reservation and file it with the LA SOS. You do not need to reserve a name if you are forming your business right away.`,
-        `If you’re ready to start your Louisiana LLC, you can formally file your Articles of Organization with the Louisiana SOS, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=LA/">let Incfile take care of it for you</a>.`,
+        `If you’re ready to start your Louisiana LLC, you can formally file your Articles of Organization with the Louisiana SOS, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=LA">let Incfile take care of it for you</a>.`,
       ],
     },
     marginBottom: 40,
@@ -863,7 +863,7 @@ export const feesAndRequirments = [
     type: `button`,
     content: {
       text: `Incorporate your Louisiana LLC through Incfile today`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=LA/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=LA`,
     },
     theme: `primary48`,
     marginBottom: 48,

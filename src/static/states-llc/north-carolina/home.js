@@ -104,7 +104,7 @@ export const howToGuide = [
                      <li> Name of the incorporator </li>
                      </ul>
                      <p>You can file your North Carolina LLC Articles of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in North Carolina. You only need to file your Articles of Organization once.</p></br>
-                     <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=NC/"> Form your LLC now </a>`,
+                     <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=NC"> Form your LLC now </a>`,
         },
       ],
     },
@@ -400,7 +400,7 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`If you’re ready to start your North Carolina LLC, you can formally file your Articles of Organization with the North Carolina SOS, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=NC/">let Incfile take care of it for you</a>.`],
+      list: [`If you’re ready to start your North Carolina LLC, you can formally file your Articles of Organization with the North Carolina SOS, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=NC">let Incfile take care of it for you</a>.`],
     },
     marginBottom: 40,
     color: color.purple3,
@@ -698,7 +698,7 @@ export const registeredAgent = [
     type: `button`,
     content: {
       text: `Incorporate your business through Incfile`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=NC/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=NC`,
     },
     theme: `primary48`,
     marginBottom: 40,
@@ -922,7 +922,7 @@ export const feesAndRequirments = [
     type: `button`,
     content: {
       text: `Incorporate your North Carolina LLC through Incfile today`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=NC/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=NC`,
     },
     theme: `primary48`,
     marginBottom: 48,

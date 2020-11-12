@@ -31,7 +31,7 @@ import TabsOvalSvg from "../../images/ovals/bottom-left-transparent-pink.inline.
 
 const GymPersonalTraining = () => (
   <Layout>
-    <SEO title="How to Make Your Businessa Blockchain Startup" description="Blockchain is one of the most popular buzzwords in business right now, but unless you have a good understanding of “immutable, publicly distributed ledgers,” it can be difficult to understand what it could do for you." />
+    <SEO title="How to Make Your Business a Blockchain Startup" description="Blockchain is one of the most popular buzzwords in business right now, but unless you have a good understanding of “immutable, publicly distributed ledgers,” it can be difficult to understand what it could do for you." />
 
     <Top ovalColor="blue" imageName="blockchain-main" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
       <h1>How to Make Your Businessa Blockchain Startup</h1>

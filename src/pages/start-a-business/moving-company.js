@@ -23,7 +23,7 @@ import TextCenterLayout from "../../atomic/partials/heading-left";
 
 const MovingCompanyPage = () => (
     <Layout>
-        <SEO title="Moving Company"/>
+        <SEO title="Moving Company" description= "Starting a moving or relocation company? Read our guide to understand what you need to do to build a successful moving business." />
 
         <Top ovalColor="orange" imageName="moving-company-bg" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
             <h1>How to Start a Moving Company</h1>

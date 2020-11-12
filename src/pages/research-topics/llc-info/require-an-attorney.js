@@ -20,7 +20,7 @@ import { about, related } from "../../../static/research-topics/llc-info/require
 
 const HelpCenter = () => (
   <Layout>
-    <SEO title="Does forming an LLC req uire an Attorney?" description="Q & A for LLC and other forms of corporations. Learning Center for Incorporating in every state." />    
+    <SEO title="Does forming an LLC require an Attorney?" description="Q & A for LLC and other forms of corporations. Learning Center for Incorporating in every state." />    
     <Top imageName="mrs-bulb-help-center-article" imageAlt="Mrs Bulb and with checklist" ovalColor="green">
       <h1>{top.header}</h1>
       <p>{top.text}</p>

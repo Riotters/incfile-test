@@ -120,15 +120,15 @@ export const categories = {
       buttons: [
         {
           header: `Should I assume that if I form an LLC or incorporate that no…`,
-          url: `/`,
+          url: `/research-topics/general-research-topics/llc-incorporate-name/`,
         },
         {
-          header: `What paperwork is required in order to open a business…`,
-          url: `/`,
+          header: `How to Get a Trademark: A Complete Guide`,
+          url: `/research-topics/general-research-topics/how-to-get-trademark/`,
         },
         {
-          header: `What paperwork is required in order to open a business…`,
-          url: `/`,
+          header: `What is a Corporate Seal?`,
+          url: `/research-topics/general-research-topics/corp-seal/`,
         },
       ],
       link: {
@@ -141,15 +141,15 @@ export const categories = {
       buttons: [
         {
           header: `What Does LLC Mean?`,
-          url: `/`,
+          url: `/research-topics/llc-info/llc-meaning/`,
         },
         {
           header: `Can an LLC be formed without listing the members on on…`,
-          url: `/`,
+          url: `/research-topics/llc-info/llc-without-listing-members/`,
         },
         {
           header: `Can another business entity be a member of an LLC?`,
-          url: `/`,
+          url: `/research-topics/llc-info/llc-business-entity-member/`,
         },
       ],
       link: {
@@ -162,15 +162,15 @@ export const categories = {
       buttons: [
         {
           header: `Can a foreign resident be a shareholder in an S Corporation?`,
-          url: `/`,
+          url: `/research-topics/s-corporation-info/foreign-resident-shareholder/`,
         },
         {
           header: `Is there a limit to the amount of shareholders an S Corporat…`,
-          url: `/`,
+          url: `/research-topics/s-corporation-info/amount-of-shareholders/`,
         },
         {
           header: `Which entity offers the best tax advantages?`,
-          url: `/`,
+          url: `/research-topics/s-corporation-info/tax-advantages/`,
         },
       ],
       link: {
@@ -183,15 +183,15 @@ export const categories = {
       buttons: [
         {
           header: `Which entity offers the best tax advantages?`,
-          url: `/`,
+          url: `/research-topics/c-corporation-info/which-entity-offers-the-best-tax-advantages/`,
         },
         {
           header: `The benefits of filing a C-corporation`,
-          url: `/`,
+          url: `/research-topics/c-corporation-info/filing-a-c-corporation/`,
         },
         {
           header: `LLCs vs C-Corporation: Which Is Best for Your Business?`,
-          url: `/`,
+          url: `/research-topics/c-corporation-info/llcs-vs-c-corporation/`,
         },
       ],
       link: {
@@ -204,15 +204,15 @@ export const categories = {
       buttons: [
         {
           header: `Forming a Nonprofit Corporation`,
-          url: `/`,
+          url: `/research-topics/nonprofit-info/forming-nonprofit-corp/`,
         },
         {
           header: `Can a Nonprofit Corporation Make a Profit?`,
-          url: `/`,
+          url: `/research-topics/nonprofit-info/profit-from-nonprofit/`,
         },
         {
           header: `What is a Nonprofit Corporation?`,
-          url: `/`,
+          url: `/research-topics/nonprofit-info/what-is-a-nonprofit/`,
         },
       ],
       link: {
@@ -225,15 +225,15 @@ export const categories = {
       buttons: [
         {
           header: `What is the main function of the Registered Agent?`,
-          url: `/`,
+          url: `/research-topics/general-research-topics/registered-agent-function/`,
         },
         {
-          header: `Can I Be My Own Registered Agent?`,
-          url: `/`,
+          header: `What is the name and address of my Registered Agent?`,
+          url: `/research-topics/registered-agent/registered-agent-address/`,
         },
         {
           header: `What happens if I require the signature of my Registered A…`,
-          url: `/`,
+          url: `/research-topics/registered-agent/registered-agent-signature/`,
         },
       ],
       link: {
@@ -246,15 +246,15 @@ export const categories = {
       buttons: [
         {
           header: `Which entity offers the best tax advantages?`,
-          url: `/`,
+          url: `/research-topics/business-taxes/tax-advantages/`,
         },
         {
-          header: `Minimizing tax expenses`,
-          url: `/`,
+          header: `How to Get a Seller’s Permit`,
+          url: `/research-topics/business-taxes/sellers-permit/`,
         },
         {
           header: `How is an S Corporation Taxed?`,
-          url: `/`,
+          url: `/research-topics/business-taxes/s-corp-taxing/`,
         },
       ],
       link: {
@@ -267,7 +267,7 @@ export const categories = {
       buttons: [
         {
           header: `Employer Identification Number`,
-          url: `/`,
+          url: `/manage-your-company/tax-id-ein/`,
         },
       ],
       link: {
@@ -279,20 +279,16 @@ export const categories = {
       header: `Individual State Information`,
       buttons: [
         {
-          header: `How To Publish Your Notice Of Incorporation In Georgia`,
-          url: `/`,
-        },
-        {
           header: `Meeting the New York Publication Requirement`,
-          url: `/`,
+          url: `/research-topics/state-info/ny-publication-requirement/`,
         },
         {
           header: `How To Publish Your Notice Of Incorporation In Georgia`,
-          url: `/`,
+          url: `/research-topics/state-info/publish-inc-notice-georgia/`,
         },
       ],
       link: {
-        text: `see all 4 articles`,
+        text: `see all 2 articles`,
         url: `/research-topics/individual-state-info/`,
       },
     },
@@ -300,16 +296,16 @@ export const categories = {
       header: `Video Library`,
       buttons: [
         {
-          header: `What is the main function of the Registered Agent?`,
-          url: `/`,
+          header: `How easy is forming an LLC or Corporation`,
+          url: `/research-topics/business-taxes/sellers-permit/`,
         },
         {
-          header: `Can I Be My Own Registered Agent?`,
-          url: `/`,
+          header: `Protect Your Personal Assets`,
+          url: `/research-topics/business-taxes/minimizing-tax-expenses/`,
         },
         {
-          header: `What happens if I require the signature of my Registered A...`,
-          url: `/`,
+          header: `Learn How To Save Money With Incfile`,
+          url: `/research-topics/business-taxes/tax-advantages/`,
         },
       ],
       link: {

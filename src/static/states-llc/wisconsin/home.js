@@ -421,7 +421,7 @@ export const namingYourBusiness = [{
                <a href="https://www.wdfi.org/Apostilles_Notary_Public_and_Trademarks/pdf/dfi-trd-102.pdf" target="_blank" rel="noopener noreferrer">Wisconsin DFI LLC name reservation form.</a>`,
             },
             {
-                text: `If you’re ready to start your Wisconsin LLC, you can formally file your Articles of Organization with the Wisconsin DFI, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=WI/"> let Incfile take care of it for you.</a>`,
+                text: `If you’re ready to start your Wisconsin LLC, you can formally file your Articles of Organization with the Wisconsin DFI, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=WI"> let Incfile take care of it for you.</a>`,
             },
         ],
         marginBottom: 48,
@@ -725,7 +725,7 @@ export const registeredAgent = [{
         type: `button`,
         content: {
             text: `INCORPORATE YOUR BUSINESS THROUGH INCFILE`,
-            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=WI/`,
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=WI`,
         },
         theme: `primary48`,
         marginBottom: 48,

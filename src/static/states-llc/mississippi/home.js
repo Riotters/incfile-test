@@ -6,7 +6,7 @@ export const top = {
   buttons: [
     {
       text: `See detailed pricing`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MS`,
     },
   ],
 };
@@ -104,7 +104,7 @@ export const howToGuide = [
                    <li> Tax closing month </li>
                    </ul>
                    <p>You can file your Mississippi Articles of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Mississippi, but you only need to file your Articles of Organization once.</p></br>
-                   <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MS/"> Form your LLC now </a>`,
+                   <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MS"> Form your LLC now </a>`,
         },
       ],
     },
@@ -420,7 +420,7 @@ export const namingYourBusiness = [
       list: [
         `<p>If you don’t want to form your LLC right now, you can reserve the business name with the Mississippi Division of Corporations. You will need to complete a Business Name Registration form and file it with the AK DOC. You do not need to reserve a name if you are forming your business right away.</p></br>
               <a href="https://www.commerce.mississippi.gov/web/cbpl/Corporations/ReservingRegisteringBusinessName.aspx" target="_blank" rel="noopener noreferrer">Mississippi DOC LLC name reservation form</a>`,
-        `<p>If you’re ready to start your LLC, you can formally file your Certificate of Formation with the Mississippi DOC, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AK/">let Incfile take care of it for you</a>.</p>`,
+        `<p>If you’re ready to start your LLC, you can formally file your Certificate of Formation with the Mississippi DOC, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MS">let Incfile take care of it for you</a>.</p>`,
       ],
     },
     marginBottom: 32,
@@ -783,7 +783,7 @@ export const registeredAgent = [
     type: `button`,
     content: {
       text: `Form your business now`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MS/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MS`,
     },
     theme: `primary48`,
     marginBottom: 32,
@@ -1012,7 +1012,7 @@ export const feesAndRequirments = [
     type: `button`,
     content: {
       text: `Incorporate your Mississippi LLC through Incfile today`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MS/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MS`,
     },
     theme: `primary48`,
     marginBottom: 48,

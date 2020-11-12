@@ -12,7 +12,7 @@ export const businessTaxesPageContent = {
         desc: `Starting a New York LLC? All of our incorporation packages include <br>a FREE business tax consultation.`,
         button: {
           text: `Form Your LLC Now`,
-          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=NY/`,
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=NY`,
         },
       },
     ],

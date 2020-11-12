@@ -64,7 +64,7 @@ const Article = () => {
   };
   return (
     <Layout>
-      <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
+      <SEO title="Incfile Blog - Resources, Articles & Tools for Small Business Owners" description="Thinking about starting a business or looking for ways to make your company successful? The Incfile blog is an entrepreneur's resource to grow. Read more." />
       <Top headline="Where Business Begins. Your Resource to Grow." text="The Incfile Blog" imageName="business-checklist" bgColor="blue" />
       <Wrapper>
         <Container>

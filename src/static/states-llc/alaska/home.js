@@ -438,7 +438,7 @@ export const namingYourBusiness = [
       list: [
         `If you don’t want to form your LLC right now, you can reserve the business name with the Alaska Division of Corporations. You will need to complete a Business Name Registration form and file it with the AK DOC. You do not need to reserve a name if you are forming your business right away.</br>
               <a href="https://www.commerce.alaska.gov/web/cbpl/Corporations/ReservingRegisteringBusinessName.aspx" target="_blank" rel="noopener noreferrer">Alaska DOC LLC name reservation form</a>`,
-        `If you’re ready to start your LLC, you can formally file your Certificate of Formation with the Alaska DOC, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AK/">let Incfile take care of it for you</a>.`,
+        `If you’re ready to start your LLC, you can formally file your Certificate of Formation with the Alaska DOC, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AK">let Incfile take care of it for you</a>.`,
       ],
     },
     marginBottom: 40,
@@ -733,7 +733,7 @@ export const registeredAgent = [
     type: `button`,
     content: {
       text: `Incorporate your business through Incfile`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AK/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AK`,
     },
     theme: `primary48`,
     marginBottom: 32,
@@ -957,7 +957,7 @@ export const feesAndRequirments = [
     type: `button`,
     content: {
       text: `Incorporate your Alaska LLC through Incfile today`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AK/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AK`,
     },
     theme: `primary48`,
     marginBottom: 48,

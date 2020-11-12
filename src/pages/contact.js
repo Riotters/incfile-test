@@ -13,7 +13,7 @@ import { existing } from "../static/contact";
 
 const Contact = () => (
   <Layout>
-    <SEO title="Existing Clients | Incfile Customer Service" description="Have a question about your Incfile order or need help with your dashboard? Find useful links or send us a message here." />
+    <SEO title="Contact Incfile | Incfile Customer Service" description="Whether you need help with your Incfile dashboard or want to track the status of your order, we'll get you what you need. Contact us today." />
 
     <Top imageName="hero-contact-existing-clients" heightSM="75vh" ovalColor="yellow" alt="existing clients">
       <h1>We're Here To Help</h1>

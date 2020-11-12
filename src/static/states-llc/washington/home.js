@@ -6,7 +6,7 @@ export const top = {
   buttons: [
     {
       text: `See detailed pricing`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AZ`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=WA`,
     },
   ],
 };
@@ -899,7 +899,7 @@ export const feesAndRequirments = [
     type: `button`,
     content: {
       text: `INCORPORATE YOUR Washington LLC THROUGH INCFILE TODAY`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=DC/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=WA`,
     },
     theme: `primary48`,
     marginBottom: 48,
