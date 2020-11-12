@@ -115,7 +115,7 @@ export const howToGuide = [
                    <li> Name of the incorporator </li>
                    </ul>
                    <p>You can file your Delaware LLC Certificate of Formation online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Delaware. You only need to file your Certificate of Formation once.</p></br>
-                   <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=DE/"> Form your LLC now </a>`,
+                   <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=DE"> Form your LLC now </a>`,
         },
       ],
     },
@@ -450,7 +450,7 @@ export const namingYourBusiness = [
       list: [
         `If you don’t want to form your Delaware LLC right now, you can reserve the business name with the Delaware Division of Corporations. You will need to complete a form and file it with the DE DOC. You do not need to reserve a name if you are forming your business right away.
               <a href="https://icis.corp.delaware.gov/ecorp/namereserv/namereservation.aspx" target="_blank" rel="noopener noreferrer">Delaware DOC LLC name reservation form</a>`,
-        `If you’re ready to start your Delaware LLC, you can file your Certificate of Formation With the Delaware Division of Corporations, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=DE/">let Incfile take care of it for you</a>.`,
+        `If you’re ready to start your Delaware LLC, you can file your Certificate of Formation With the Delaware Division of Corporations, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=DE">let Incfile take care of it for you</a>.`,
       ],
     },
     marginBottom: 32,
@@ -746,7 +746,7 @@ export const registeredAgent = [
     type: `button`,
     content: {
       text: `Incorporate your business through Incfile`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=DE/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=DE`,
     },
     theme: `primary48`,
     marginBottom: 48,
@@ -970,7 +970,7 @@ export const feesAndRequirments = [
     type: `button`,
     content: {
       text: `Incorporate your Delaware LLC through Incfile today`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=DE/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=DE`,
     },
     theme: `primary48`,
     marginBottom: 48,

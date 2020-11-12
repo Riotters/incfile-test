@@ -133,7 +133,7 @@ export const HomePageContent = {
             subtitle: `for You for $0 + the California State fee`,
             button: {
               text: `Form Your LLC Now For Free`,
-              url: `form-order-now.php?entityType=LLC&entityState=C`,
+              url: `form-order-now.php?entityType=LLC&entityState=CA`,
             },
           },
         },

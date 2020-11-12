@@ -97,7 +97,7 @@ export const howToGuide = [
             <li>Purpose of your business</li>
             <li>Name of the incorporator</li></br>
             <p>You can file your South Dakota LLC Certificate of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in South Dakota. You only need to file your Certificate of Organization once.</p></br>
-            <p><a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=ID" target="_blank">Form your LLC now</a></p>`,
+            <p><a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=SD" target="_blank">Form your LLC now</a></p>`,
         },
       ],
     },
@@ -397,7 +397,7 @@ export const namingYourBusiness = [
       },
       {
         text: `If you’re ready to start your LLC, you can formally file your Articles of Organization with the South Dakota SOS, or
-          <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=CO" target="_blank">let Incfile take care of it for you.</a>`,
+          <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=SD" target="_blank">let Incfile take care of it for you.</a>`,
       },
     ],
     marginBottom: 48,
@@ -656,7 +656,7 @@ export const registeredAgent = [
     type: `button`,
     content: {
       text: `Incorporate your business through Incfile`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=SD/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=SD`,
     },
     theme: `primary48`,
     marginBottom: 32,
@@ -880,7 +880,7 @@ export const feesAndRequirments = [
     type: `button`,
     content: {
       text: `Incorporate your South Dakota LLC through Incfile today`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=SD/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=SD`,
     },
     theme: `primary48`,
     marginBottom: 48,

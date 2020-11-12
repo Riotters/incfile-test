@@ -98,7 +98,7 @@ export const howToGuide = [
                    <li> Name of the incorporator </li>
                    </ul>
                    <p>You can file your South Carolina LLC Articles of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in South Carolina. You only need to file your Articles of Organization once.</p></br>
-                   <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=SC/"> Form your LLC now </a>`,
+                   <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=SC"> Form your LLC now </a>`,
         },
       ],
     },
@@ -374,7 +374,7 @@ export const namingYourBusiness = [
       header: ``,
       list: [
         `If you don’t want to form your LLC right now, you can reserve the business name with the South Carolina Secretary of State. You do not need to reserve a name if you are forming your business right away.
-              If you’re ready to start your LLC, you can formally file your Articles of Organization with the South Carolina SOS, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=SC/">let Incfile take care of it for you</a>.`,
+              If you’re ready to start your LLC, you can formally file your Articles of Organization with the South Carolina SOS, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=SC">let Incfile take care of it for you</a>.`,
       ],
     },
     marginBottom: 32,
@@ -638,7 +638,7 @@ export const registeredAgent = [
     type: `button`,
     content: {
       text: `Incorporate your business through Incfile`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=SC/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=SC`,
     },
     theme: `primary48`,
     marginBottom: 32,
@@ -861,7 +861,7 @@ export const feesAndRequirments = [
     type: `button`,
     content: {
       text: `Incorporate your South Carolina LLC through Incfile today`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=SC/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=SC`,
     },
     theme: `primary48`,
     marginBottom: 48,

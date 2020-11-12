@@ -99,7 +99,7 @@ export const howToGuide = [
                    <li> Tax closing month </li>
                    </ul>
                    <p>You can file your Oregon Articles of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Oregon, but you only need to file your Articles of Organization once.</p></br>
-                   <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=OR/"> Form your LLC now </a>`,
+                   <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=OR"> Form your LLC now </a>`,
         },
       ],
     },

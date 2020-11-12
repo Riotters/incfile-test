@@ -97,7 +97,7 @@ export const howToGuide = [
                      <li> Name of the incorporator </li>
                      </ul>
                      <p>You can file your Oklahoma LLC Articles of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Oklahoma. You only need to file your Articles of Organization once.</p></br>
-                     <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=OK/"> Form your LLC now </a>`,
+                     <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=OK"> Form your LLC now </a>`,
         },
       ],
     },
@@ -422,7 +422,7 @@ export const namingYourBusiness = [
       header: ``,
       list: [
         `If you don’t want to form your Oklahoma LLC right now, you can reserve the business name with the Oklahoma Secretary of State. `,
-        `If you’re ready to start your Oklahoma LLC, you can formally file your Articles of Organization with the Oklahoma SOS, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=OK/">let Incfile take care of it for you</a>.`,
+        `If you’re ready to start your Oklahoma LLC, you can formally file your Articles of Organization with the Oklahoma SOS, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=OK">let Incfile take care of it for you</a>.`,
       ],
     },
     marginBottom: 40,
@@ -692,7 +692,7 @@ export const registeredAgent = [
     type: `button`,
     content: {
       text: `Incorporate your business through Incfile`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=OK/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=OK`,
     },
     theme: `primary48`,
     marginBottom: 32,

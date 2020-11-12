@@ -111,7 +111,7 @@ export const howToGuide = [
                    <li> Tax closing month </li>
                    </ul>
                    <p>You can file your Tennessee Articles of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Tennessee, but you only need to file your Articles of Organization once.</p></br>
-                   <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=TN/"> Form your LLC now </a>`,
+                   <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=TN"> Form your LLC now </a>`,
         },
       ],
     },
@@ -960,7 +960,7 @@ export const feesAndRequirments = [
     type: `button`,
     content: {
       text: `Incorporate your Tennessee LLC through Incfile today`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=TN/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=TN`,
     },
     theme: `primary48`,
     marginBottom: 48,

@@ -421,7 +421,7 @@ export const namingYourBusiness = [
       list: [
         `If you don’t want to form your Connecticut LLC right now, you can reserve the business name with the Connecticut Secretary of State. You will need to complete an “Application for reservation of name” form and file it with the CT SOS. You do not need to reserve a name if you are forming your business right away.
               <a href="https://portal.ct.gov/-/media/sots/CommercialRecording/AllForms/allnamereservationpdf.pdf?la=en" target="_blank" rel="noopener noreferrer">Connecticut SOS LLC name reservation form.</a>`,
-        `If you’re ready to start your Connecticut LLC, you can formally file your Certificate of Organization with the Connecticut SOS, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=CT/">let Incfile take care of it for you</a>.`,
+        `If you’re ready to start your Connecticut LLC, you can formally file your Certificate of Organization with the Connecticut SOS, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=CT">let Incfile take care of it for you</a>.`,
       ],
     },
     marginBottom: 32,

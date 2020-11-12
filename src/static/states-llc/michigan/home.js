@@ -109,7 +109,7 @@ export const howToGuide = [
             <li>Purpose of your business</li>
             <li>Name of the incorporator</li></br>
             <p>You can file your Michigan LLC Articles of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Michigan, but you only need to file your Articles of Organization once.</p></br>
-            <p><a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=ID" target="_blank">Form your LLC now</a></p>`,
+            <p><a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MI" target="_blank">Form your LLC now</a></p>`,
         },
       ],
     },
@@ -470,7 +470,7 @@ export const namingYourBusiness = [
       },
       {
         text: `If you’re ready to start your Michigan LLC, you can formally file your Articles of Organization with the Michigan LARA, or
-          <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=CO" target="_blank" rel="noopener noreferrer">let Incfile take care of it for you.</a>`,
+          <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MI" target="_blank" rel="noopener noreferrer">let Incfile take care of it for you.</a>`,
       },
     ],
     marginBottom: 16,
@@ -779,7 +779,7 @@ export const registeredAgent = [
     type: `button`,
     content: {
       text: `Incorporate your business through Incfile`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MI/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MI`,
     },
     theme: `primary48`,
     marginBottom: 48,
@@ -821,7 +821,7 @@ export const registeredAgent = [
     type: `button`,
     content: {
       text: `Order Incfile's Michigan registered agent service`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MI/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MI`,
     },
     theme: `primary48`,
     marginBottom: 48,
@@ -1003,7 +1003,7 @@ export const feesAndRequirments = [
     type: `button`,
     content: {
       text: `Incorporate your Michigan LLC through Incfile today`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MI/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MI`,
     },
     theme: `primary48`,
     marginBottom: 48,

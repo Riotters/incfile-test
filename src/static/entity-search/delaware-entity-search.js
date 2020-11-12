@@ -106,7 +106,7 @@ export const faq = {
         },
         {
           text: "incorporate your business in Delaware,",
-          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=De`,
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=DE`,
         },
         {
           text: "generally as a Limited Liability Company (LLC) or a corporation. If you want extra protection, you could consider ",

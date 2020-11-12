@@ -843,7 +843,7 @@ export const feesAndRequirments = [
     type: `button`,
     content: {
       text: `INCORPORATE YOUR Washington DC LLC THROUGH INCFILE TODAY`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=DC/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=DC`,
     },
     theme: `primary48`,
     marginBottom: 48,

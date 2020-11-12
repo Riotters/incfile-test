@@ -95,7 +95,7 @@ export const howToGuide = [
             <li>Addresses of managers or members of the LLC at the time of filing</li>
             <li>Name of the incorporator</li></br>
             <p>You can file your Idaho Articles of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Idaho, but you only need to file your Articles of Organization once.</p></br>
-            <p><a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=CO" target="_blank">Form your LLC now</a></p>`,
+            <p><a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=ID" target="_blank">Form your LLC now</a></p>`,
         },
       ],
     },
@@ -424,7 +424,7 @@ export const namingYourBusiness = [
       },
       {
         text: `If you’re ready to start your LLC, you can formally file your Certificate of Formation with the Idaho SOS, or
-          <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=CO" target="_blank" rel="noopener noreferrer">let Incfile take care of it for you.</a>`,
+          <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=ID" target="_blank" rel="noopener noreferrer">let Incfile take care of it for you.</a>`,
       },
     ],
     marginBottom: 48,
@@ -701,7 +701,7 @@ export const registeredAgent = [
     type: `button`,
     content: {
       text: `Incorporate your business through Incfile`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=ID/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=ID`,
     },
     theme: `primary48`,
     marginBottom: 48,
@@ -925,7 +925,7 @@ export const feesAndRequirments = [
     type: `button`,
     content: {
       text: `Incorporate your Idaho LLC through Incfile today`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=ID/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=ID`,
     },
     theme: `primary48`,
     marginBottom: 48,

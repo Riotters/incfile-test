@@ -98,7 +98,7 @@ export const howToGuide = [
                    <li> Name of the incorporator </li>
                    </ul>
                    <p>You can file your Rhode Island LLC Certificate of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Rhode Island. You only need to file your Certificate of Organization once.</p></br>
-                   <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=RI/"> Form your LLC now </a>`,
+                   <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=RI"> Form your LLC now </a>`,
         },
       ],
     },
@@ -397,7 +397,7 @@ export const namingYourBusiness = [
       list: [
         `If you don’t want to form your LLC right now, you can reserve the business name with the Rhode Island Secretary of State through their website. You do not need to reserve a name if you are forming your business right away.
               <a href="https://www.sos.ri.gov/divisions/business-services" target="_blank" rel="noopener noreferrer" >Rhode Island SOS LLC name reservation form.</a></br>
-              If you’re ready to start your LLC, you can formally file your Articles of Organization with the Rhode Island SOS, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=RI/">let Incfile take care of it for you</a>.`,
+              If you’re ready to start your LLC, you can formally file your Articles of Organization with the Rhode Island SOS, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=RI">let Incfile take care of it for you</a>.`,
       ],
     },
     marginBottom: 40,
@@ -665,7 +665,7 @@ export const registeredAgent = [
     type: `button`,
     content: {
       text: `Incorporate your business through Incfile`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=RI/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=RI`,
     },
     theme: `primary48`,
     marginBottom: 32,

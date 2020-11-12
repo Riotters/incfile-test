@@ -99,7 +99,7 @@ export const howToGuide = [
                    <li> Tax closing month </li>
                    </ul>
                    <p>You can file your New Mexico Articles of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Montana, but you only need to file your Articles of Organization once.</p></br>
-                   <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=NM/"> Form your LLC now </a>`,
+                   <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=NM"> Form your LLC now </a>`,
         },
       ],
     },
@@ -904,7 +904,7 @@ export const feesAndRequirments = [
     type: `button`,
     content: {
       text: `Incorporate your New Mexico LLC through Incfile today`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MT/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=NM`,
     },
     theme: `primary48`,
     marginBottom: 48,

@@ -527,17 +527,17 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `The Wyoming Corporation Commission requires every AZ LLC to have a Statutory Agent, or as it’s referred to in other states, a Registered Agent. We’ll use those names interchangeably in this guide, since their functions and requirements are identical. `,
+    content: `The Wyoming Corporation Commission requires every WY LLC to have a Statutory Agent, or as it’s referred to in other states, a Registered Agent. We’ll use those names interchangeably in this guide, since their functions and requirements are identical. `,
     marginBottom: 16,
   },
   {
     type: `text`,
-    content: `Once you have assigned an Wyoming Statutory Agent, they can receive official correspondence and documents on behalf of your AZ business. Statutory Agents can be individuals or other specialized Statutory/Registered Agent service organizations. `,
+    content: `Once you have assigned an Wyoming Statutory Agent, they can receive official correspondence and documents on behalf of your WY business. Statutory Agents can be individuals or other specialized Statutory/Registered Agent service organizations. `,
     marginBottom: 16,
   },
   {
     type: `text`,
-    content: `Your LLC must have an Wyoming Statutory Agent at all times. You can appoint a one when you first start your business, and you can also replace your existing AZ Statutory Agent at a later date, provided there is a smooth transition between the old and new Statutory Agent service. `,
+    content: `Your LLC must have an Wyoming Statutory Agent at all times. You can appoint a one when you first start your business, and you can also replace your existing WY Statutory Agent at a later date, provided there is a smooth transition between the old and new Statutory Agent service. `,
     marginBottom: 48,
   },
   {
@@ -559,7 +559,7 @@ export const registeredAgent = [
         `If the Statutory Agent is a person, they must reside in Wyoming`,
         `If the Statutory Agent is a business, they must be able to conduct business in Wyoming`,
         `The Statutory Agent must have a physical street address in Wyoming, not a P.O. Box`,
-        `The AZ Statutory Agent must be available in person during normal business hours to sign for any correspondence`,
+        `The WY Statutory Agent must be available in person during normal business hours to sign for any correspondence`,
       ],
     },
     marginBottom: 16,
@@ -567,7 +567,7 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `Note that the AZ Statutory Agent address does not need to be the same as your Wyoming LLC business address. `,
+    content: `Note that the WY Statutory Agent address does not need to be the same as your Wyoming LLC business address. `,
     marginBottom: 48,
   },
   {
@@ -578,7 +578,7 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `Your Wyoming Statutory/Registered Agent carries out several valuable services for your business. They accept official communications and documents from the AZ Corporation Commission on your behalf. `,
+    content: `Your Wyoming Statutory/Registered Agent carries out several valuable services for your business. They accept official communications and documents from the WY Corporation Commission on your behalf. `,
     marginBottom: 16,
   },
   {
@@ -613,7 +613,7 @@ export const registeredAgent = [
   {
     type: `list-dot`,
     content: {
-      header: `Here’s what the Infile Wyoming Registered Agent service provides for your AZ LLC:`,
+      header: `Here’s what the Infile Wyoming Registered Agent service provides for your WY LLC:`,
       list: [
         `An always-available Wyoming Registered Agent who can receive correspondence, documents and legal proceedings on your LLC’s behalf`,
         `A digital dashboard where you can access, store and retrieve any information we’ve received for your Wyoming business`,
@@ -646,7 +646,7 @@ export const registeredAgent = [
   },
   {
     type: `header`,
-    content: `Appoint an AZ Statutory Agent Service When You Create Your Wyoming LLC`,
+    content: `Appoint an WY Statutory Agent Service When You Create Your Wyoming LLC`,
     size: 3,
     marginBottom: 24,
   },
@@ -663,7 +663,7 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `You will need to include details of your Statutory Agent in your Articles of Organization. This is the form that you file with the AZ Corporation Commission to formally create your business.`,
+    content: `You will need to include details of your Statutory Agent in your Articles of Organization. This is the form that you file with the WY Corporation Commission to formally create your business.`,
     marginBottom: 32,
   },
   {
@@ -674,14 +674,14 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `When you incorporate through us, we complete and file your Articles of Organization based on the information you’ve provided. Additionally, we give you a free Wyoming Registered Agent service for the first year, and we’ll include details of your AZ Registered Agent in the form that we file.`,
+    content: `When you incorporate through us, we complete and file your Articles of Organization based on the information you’ve provided. Additionally, we give you a free Wyoming Registered Agent service for the first year, and we’ll include details of your WY Registered Agent in the form that we file.`,
     marginBottom: 16,
   },
   {
     type: `button`,
     content: {
       text: `INCORPORATE YOUR BUSINESS THROUGH INCFILE`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=WY/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=WY`,
     },
     theme: `primary48`,
     marginBottom: 48,
@@ -694,7 +694,7 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `You can also change your AZ Registered Agent service after you’ve formed your LLC. There are a couple of ways to achieve this.`,
+    content: `You can also change your WY Registered Agent service after you’ve formed your LLC. There are a couple of ways to achieve this.`,
     marginBottom: 32,
   },
   {
@@ -705,7 +705,7 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `Once you’ve chosen a new Wyoming Statutory Agent, you can complete form M002 - Statutory Agent Acceptance that’s available on the AZ Corporation Commission website. Once you’ve filled it out, send it to the Corporation Commission so they can update your records.`,
+    content: `Once you’ve chosen a new Wyoming Statutory Agent, you can complete form M002 - Statutory Agent Acceptance that’s available on the WY Corporation Commission website. Once you’ve filled it out, send it to the Corporation Commission so they can update your records.`,
     marginBottom: 32,
   },
   {
@@ -716,13 +716,13 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `When you choose to use our AZ Registered Agent service, we take care of all the form filling and filing for you. We’ll collect important information about your business, complete form M002 on your behalf and send it to the Wyoming Corporation Commission. We’ll let you know once we officially become your Statutory Agent. `,
+    content: `When you choose to use our WY Registered Agent service, we take care of all the form filling and filing for you. We’ll collect important information about your business, complete form M002 on your behalf and send it to the Wyoming Corporation Commission. We’ll let you know once we officially become your Statutory Agent. `,
     marginBottom: 16,
   },
   {
     type: `button`,
     content: {
-      text: `ORDER INCFILE'S ARIZONA REGISTERED AGENT SERVICE`,
+      text: `ORDER INCFILE'S WYOMING REGISTERED AGENT SERVICE`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -741,7 +741,7 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `If the AZ Statutory Agent isn’t available from the searchable business registry, contact the Wyoming Corporation Commission requesting the information.`,
+    content: `If the WY Statutory Agent isn’t available from the searchable business registry, contact the Wyoming Corporation Commission requesting the information.`,
     marginBottom: 48,
   },
   {
@@ -762,7 +762,7 @@ export const registeredAgent = [
       list: [
         `Getting served or sued and not finding out about it: If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
         `Falling out of good standing with the Wyoming Corporation Commission: If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
-        `Losing your status as an Wyoming LLC: An AZ Statutory Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections, and your Wyoming LLC may be dissolved.`,
+        `Losing your status as an Wyoming LLC: An WY Statutory Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections, and your Wyoming LLC may be dissolved.`,
       ],
     },
     marginBottom: 48,
@@ -770,7 +770,7 @@ export const registeredAgent = [
   },
   {
     type: `header`,
-    content: `Acting as Your Own Statutory Agent for Your AZ LLC`,
+    content: `Acting as Your Own Statutory Agent for Your WY LLC`,
     size: 3,
     marginBottom: 24,
   },
@@ -784,10 +784,10 @@ export const registeredAgent = [
     content: {
       header: `We don’t recommend this approach as there can be some drawbacks:`,
       list: [
-        `The AZ Statutory Agent must have a physical street address in Wyoming. If you’re forming an LLC outside AZ, you will need to use an in-state Statutory Agent.`,
+        `The WY Statutory Agent must have a physical street address in Wyoming. If you’re forming an LLC outside WY, you will need to use an in-state Statutory Agent.`,
         `You always need to have someone on hand during business hours at the Wyoming address to sign for important documents.`,
-        `The AZ Statutory Agent’s name and address are part of the public record and available through the Wyoming Corporation Commission's website. If you would prefer your name and address aren’t published, you might choose to use a Statutory/Registered Agent service instead.`,
-        `If you change your Wyoming business address or move out of state, you would need to file additional documentation with the AZ Corporation Commission for the new address if you act as your own Statutory Agent. This would not be the case if you use a Statutory/Registered Agent service, making a move or address change much simpler.`,
+        `The WY Statutory Agent’s name and address are part of the public record and available through the Wyoming Corporation Commission's website. If you would prefer your name and address aren’t published, you might choose to use a Statutory/Registered Agent service instead.`,
+        `If you change your Wyoming business address or move out of state, you would need to file additional documentation with the WY Corporation Commission for the new address if you act as your own Statutory Agent. This would not be the case if you use a Statutory/Registered Agent service, making a move or address change much simpler.`,
       ],
     },
     marginBottom: 48,
@@ -805,18 +805,18 @@ export const registeredAgent = [
       items: [
         {
           question: `Do I Need to Appoint an Wyoming Statutory Agent?`,
-          answer: `Yes. All AZ LLCs are required to have a Statutory Agent. This is mandated by the Wyoming Corporation Commission.`,
+          answer: `Yes. All WY LLCs are required to have a Statutory Agent. This is mandated by the Wyoming Corporation Commission.`,
         },
         {
           question: `When Can I Assign an Wyoming Statutory Agent Service?`,
-          answer: `You can either do it when you incorporate your Wyoming business through paperwork filed with the AZ Corporation Commission or afterward by filing the correct form. If you form your business through Incfile, we will file all necessary forms on your behalf.`,
+          answer: `You can either do it when you incorporate your Wyoming business through paperwork filed with the WY Corporation Commission or afterward by filing the correct form. If you form your business through Incfile, we will file all necessary forms on your behalf.`,
         },
         {
           question: `Can I Be My Own Statutory Agent in Wyoming?`,
           answer: `Yes, but we don’t recommend it for the reasons listed above. If you still want to be your own Statutory/Registered Agent, you just need to fill in the correct forms and pay a fee to the Wyoming Corporation Commission.`,
         },
         {
-          question: `Does My AZ Statutory Agent Need to Have an Address in Wyoming?`,
+          question: `Does My WY Statutory Agent Need to Have an Address in Wyoming?`,
           answer: `Yes. Additionally, if they are a business providing Statutory Agent services, they must be legally able to conduct business in your state.`,
         },
       ],
@@ -853,7 +853,7 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Some types of businesses have different requirements in Wyoming, including related fees and costs. Your AZ LLC needs to pay various fees to the federal government, Wyoming government and other agencies. Some of these fees are levied by the Wyoming Corporation Commission or statewide organizations, while others come from the federal government. On this page, we’ve summarized the most common fees and requirements. `,
+    content: `Some types of businesses have different requirements in Wyoming, including related fees and costs. Your WY LLC needs to pay various fees to the federal government, Wyoming government and other agencies. Some of these fees are levied by the Wyoming Corporation Commission or statewide organizations, while others come from the federal government. On this page, we’ve summarized the most common fees and requirements. `,
     marginBottom: 16,
   },
   {
@@ -869,7 +869,7 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `To create your business in Wyoming, you’ll file an LLC with the AZ Corporation Commission and pay an associated LLC formation fee. Every state has different LLC filing fees and filing times. Here is the current information for Wyoming:`,
+    content: `To create your business in Wyoming, you’ll file an LLC with the WY Corporation Commission and pay an associated LLC formation fee. Every state has different LLC filing fees and filing times. Here is the current information for Wyoming:`,
     marginBottom: 16,
   },
   {
@@ -904,15 +904,15 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `INCORPORATE YOUR ARIZONA LLC THROUGH INCFILE TODAY`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=WY/`,
+      text: `INCORPORATE YOUR WYOMING LLC THROUGH INCFILE TODAY`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=WY`,
     },
     theme: `primary48`,
     marginBottom: 48,
   },
   {
     type: `header`,
-    content: `Getting an Employer Identification Number for Your AZ LLC`,
+    content: `Getting an Employer Identification Number for Your WY LLC`,
     size: 3,
     marginBottom: 24,
   },
@@ -924,7 +924,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `GET AN EIN FOR YOUR ARIZONA LLC THROUGH INCFILE`,
+      text: `GET AN EIN FOR YOUR WYOMING LLC THROUGH INCFILE`,
       url: `/manage-your-company/tax-id-ein/`,
     },
     theme: `primary48`,
@@ -1007,7 +1007,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `INCFILE'S ARIZONA BUSINESS LICENSE RESEARCH PACKAGE`,
+      text: `INCFILE'S WYOMING BUSINESS LICENSE RESEARCH PACKAGE`,
       url: `/business-license-research-package/`,
     },
     theme: `primary48`,
@@ -1031,7 +1031,7 @@ export const feesAndRequirments = [
   },
   {
     type: `header`,
-    content: `Ad Hoc Wyoming Fees or Requirements for Your AZ LLC`,
+    content: `Ad Hoc Wyoming Fees or Requirements for Your WY LLC`,
     size: 3,
     marginBottom: 24,
   },
@@ -1048,13 +1048,13 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `If you want your AZ business to trade under a different name, you can file a form with the Wyoming Corporation Commission. You will need to pay an Wyoming filing fee. Incfile can file this form on your behalf.`,
+    content: `If you want your WY business to trade under a different name, you can file a form with the Wyoming Corporation Commission. You will need to pay an Wyoming filing fee. Incfile can file this form on your behalf.`,
     marginBottom: 16,
   },
   {
     type: `button`,
     content: {
-      text: `INCFILE'S ARIZONA TRADE NAME SERVICE`,
+      text: `INCFILE'S WYOMING TRADE NAME SERVICE`,
       url: `/fictitious-business-or-trade-name/`,
     },
     theme: `primary48`,
@@ -1062,19 +1062,19 @@ export const feesAndRequirments = [
   },
   {
     type: `header`,
-    content: `To Change the Wyoming Statutory Agent for Your AZ LLC`,
+    content: `To Change the Wyoming Statutory Agent for Your WY LLC`,
     size: 3,
     marginBottom: 24,
   },
   {
     type: `text`,
-    content: `Your Wyoming LLC needs a Statutory/Resident Agent, which must be appointed when you first incorporate your LLC. You can also switch to a new AZ Statutory Agent later. Incfile provides a complete Wyoming Statutory/Resident Agent service.`,
+    content: `Your Wyoming LLC needs a Statutory/Resident Agent, which must be appointed when you first incorporate your LLC. You can also switch to a new WY Statutory Agent later. Incfile provides a complete Wyoming Statutory/Resident Agent service.`,
     marginBottom: 16,
   },
   {
     type: `button`,
     content: {
-      text: `INCFILE'S ARIZONA REGISTERED AGENT SERVICE`,
+      text: `INCFILE'S WYOMING REGISTERED AGENT SERVICE`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -1088,7 +1088,7 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `If you don’t want to form your AZ business right away, you can reserve a name with the Wyoming Corporation Commission. You will need to pay a small fee to do this.`,
+    content: `If you don’t want to form your WY business right away, you can reserve a name with the Wyoming Corporation Commission. You will need to pay a small fee to do this.`,
     marginBottom: 48,
   },
   {
@@ -1114,7 +1114,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `INCFILE'S ARIZONA ARTICLES OF AMENDMENT SERVICE`,
+      text: `INCFILE'S WYOMING ARTICLES OF AMENDMENT SERVICE`,
       url: `/manage-your-company/amendment/`,
     },
     theme: `primary48`,
@@ -1134,7 +1134,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `INCFILE'S ARIZONA CERTIFICATE OD GOOD STANDING SERVICE`,
+      text: `INCFILE'S WYOMING CERTIFICATE OD GOOD STANDING SERVICE`,
       url: `/manage-your-company/certificate-of-good-standing/`,
     },
     theme: `primary48`,
@@ -1142,12 +1142,12 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `The fees listed above detail all the charges that a standard AZ LLC will be required to pay. In some unusual circumstances, there may be other one-off, periodic or ad hoc fees not listed above. a`,
+    content: `The fees listed above detail all the charges that a standard WY LLC will be required to pay. In some unusual circumstances, there may be other one-off, periodic or ad hoc fees not listed above. a`,
     marginBottom: 16,
   },
   {
     type: `text`,
-    content: `Of course, your Wyoming LLC will also probably need to pay self-employment, payroll, federal, state and sales taxes, but we will cover that when we talk about taxes for AZ LLCs.`,
+    content: `Of course, your Wyoming LLC will also probably need to pay self-employment, payroll, federal, state and sales taxes, but we will cover that when we talk about taxes for WY LLCs.`,
     marginBottom: 48,
   },
   {
@@ -1220,13 +1220,13 @@ export const businessTaxes = [
         text: `Wyoming LLC owners pay self-employment tax on business profits`,
       },
       {
-        text: `Wyoming LLC owners pay AZ state tax on any profits, less state allowances or deductions`,
+        text: `Wyoming LLC owners pay WY state tax on any profits, less state allowances or deductions`,
       },
       {
         text: `All LLC owners pay federal income tax on any profits less federal allowances or deductions`,
       },
       {
-        text: `Some AZ LLCs pay Wyoming sales tax on products`,
+        text: `Some WY LLCs pay Wyoming sales tax on products`,
       },
       {
         text: `Employers pay payroll tax on any salaries they pay to employees`,
@@ -1261,7 +1261,7 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `As an Wyoming business owner, you will need to pay AZ state tax on any money you pay to yourself. These earnings flow through to your personal tax return, which is where you will pay Wyoming income tax. You will be taxed at the standard rates for Wyoming state taxes, and you will also get to apply regular allowances and deductions.`,
+    content: `As an Wyoming business owner, you will need to pay WY state tax on any money you pay to yourself. These earnings flow through to your personal tax return, which is where you will pay Wyoming income tax. You will be taxed at the standard rates for Wyoming state taxes, and you will also get to apply regular allowances and deductions.`,
     marginBottom: 16,
   },
   {
@@ -1287,7 +1287,7 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `If you sell physical products or certain types of services, you may need to collect sales tax (known in Wyoming as a Transaction Privilege Tax) and then pay it to the AZ Department of Revenue. Wyoming sales tax is collected at the point of purchase. Wyoming sales tax rates do vary depending on the region, county or city where you are located.`,
+    content: `If you sell physical products or certain types of services, you may need to collect sales tax (known in Wyoming as a Transaction Privilege Tax) and then pay it to the WY Department of Revenue. Wyoming sales tax is collected at the point of purchase. Wyoming sales tax rates do vary depending on the region, county or city where you are located.`,
     marginBottom: 16,
   },
   {

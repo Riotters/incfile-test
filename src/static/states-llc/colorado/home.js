@@ -699,7 +699,7 @@ export const registeredAgent = [
     type: `button`,
     content: {
       text: `Incorporate your business through Incfile`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=CO/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=CO`,
     },
     theme: `primary48`,
     marginBottom: 48,
@@ -923,7 +923,7 @@ export const feesAndRequirments = [
     type: `button`,
     content: {
       text: `Incorporate your Colorado LLC through Incfile today`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=CO/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=CO`,
     },
     theme: `primary48`,
     marginBottom: 48,
