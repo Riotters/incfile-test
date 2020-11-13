@@ -27,6 +27,7 @@ import Table from "../tables/the-c-corp-table";
 import Table2 from "../tables/the-nonprofit-corp-table";
 import AccordionWithCheckmark from "../accordion/accordion-with-checkmark";
 import AccordionWithCounting from "../accordion/accordion-with-counting";
+import LightBoxVideo from "../../../components/LightBox";
 
 const Wrapper = styled.div`
   display: flex;
@@ -290,6 +291,7 @@ const CCorpTabs = ({ layout, columns, content }) => (
                   </Paragraph>
                   <AccordionWithCheckmark content={content.content[0].list} tab bottomMargin="40" />
                   <Heading size="3">{content.content[0].header3}</Heading>
+                  <LightBoxVideo thumbnailVideo="how-to-start-an-llc-2379" videoID="R_oIgzYh7NU" bottomMargin="40" />
                   <Paragraph big bottomMargin="48">
                     {content.content[0].text3}
                   </Paragraph>

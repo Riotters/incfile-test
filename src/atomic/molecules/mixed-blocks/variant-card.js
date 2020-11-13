@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import { color } from "../../atoms/styles/colors";
 import { Heading } from "../../atoms/typography/heading";
@@ -8,6 +8,7 @@ import TextCheck from "../../molecules/text-blocks/text-check";
 import Button from "../buttons/button";
 import HelpMarkSVG from "../../../images/icons/help-mark.inline.svg";
 import Image from "../../atoms/image/image_nobase64";
+import ReactTooltip from "react-tooltip";
 
 const Wrapper = styled.div`
   display: flex;
@@ -21,7 +22,8 @@ const Wrapper = styled.div`
   background-color: ${(props) => (props.color ? props.color : "")};
   border-radius: 5px;
 
-  & > h4, & > p {
+  & > h4,
+  & > p {
     text-align: center;
   }
 
@@ -33,7 +35,7 @@ const Wrapper = styled.div`
   ul {
     width: 100%;
     list-style: none;
-    
+
     li {
       font-family: Avenir, sans-serif;
       font-size: 16px;
@@ -43,7 +45,7 @@ const Wrapper = styled.div`
       &:not(:last-child) {
         margin-bottom: 8px;
       }
-    } 
+    }
   }
 `;
 
@@ -120,7 +122,8 @@ const Fee = styled.div`
     cursor: pointer;
   }
 
-  .text, .price {
+  .text,
+  .price {
     font-family: Avenir, sans-serif;
     font-size: 16px;
     line-height: 24px;
@@ -131,49 +134,66 @@ const Fee = styled.div`
   }
 
   .price {
-    ${color.black}; 
+    ${color.black};
   }
 `;
 
-const PricingCard = ({ className, content, image, ...rest }) => (
-  <Wrapper className={className} {...rest}>
-    {content.variant && (
-      <Box>
-        <span>{content.variant}</span>
-      </Box>
-    )}
-    <Heading size="4" marginBottom="16">{content.header}</Heading>
-    <Paragraph bottomMargin="8">{content.text}</Paragraph>
-    <ImageWrapper>
-      <Image filename={image} />
-    </ImageWrapper>
-    <Price>${content.price}</Price>
-    <Button theme="primary48" content={content.button} margin="0 0 32px 0" wrap arrow />
-    <ul style={{marginBottom: "48px"}}>
-      {content.fees.map((fee) => (
-        <li>
-          <Fee><div><span className="help-mark"><HelpMarkSVG /></span><span className="text">{fee.text}</span></div><span className="price">${fee.price}</span></Fee>
-        </li>
-      ))}
-    </ul>
+const StyledReactTooltip = styled.div`
+  display: flex;
+`;
+
+const PricingCard = ({ className, content, image, ...rest }) => {
+  useEffect(() => {
+    ReactTooltip.rebuild();
+  });
+  return (
+    <Wrapper className={className} {...rest}>
+      {content.variant && (
+        <Box>
+          <span>{content.variant}</span>
+        </Box>
+      )}
+      <Heading size="4" marginBottom="16">
+        {content.header}
+      </Heading>
+      <Paragraph bottomMargin="8">{content.text}</Paragraph>
+      <ImageWrapper>
+        <Image filename={image} />
+      </ImageWrapper>
+      <Price>${content.price}</Price>
+      <Button theme="primary48" content={content.button} margin="0 0 32px 0" wrap arrow />
+      <ul style={{ marginBottom: "48px" }}>
+        {content.fees.map((fee) => (
+          <li>
+            <Fee>
+              <div>
+                <span className="help-mark" data-tip="aaa" data-for="benefitTooltip">
+                  <HelpMarkSVG />
+                </span>
+                <span className="text">{fee.text}</span>
+              </div>
+              <span className="price">${fee.price}</span>
+            </Fee>
+          </li>
+        ))}
+      </ul>
       {content.include && (
-          <Package>
-              <span>
-                {content.include}
-              </span>
-          </Package>
+        <Package>
+          <span>{content.include}</span>
+        </Package>
       )}
-    <ul className="list">
-      {content.list && content.list.map((item) => (
-        <li>
-          <TextCheck>{item}</TextCheck>
-        </li>
-      ))}
-    </ul>
-      {content.fee && (
-          <Paragraph bottomMargin="6">{content.fee}</Paragraph>
-      )}
-  </Wrapper>
-);
+      <ul className="list">
+        {content.list &&
+          content.list.map((item) => (
+            <li>
+              <TextCheck>{item}</TextCheck>
+            </li>
+          ))}
+      </ul>
+      {content.fee && <Paragraph bottomMargin="6">{content.fee}</Paragraph>}
+      <StyledReactTooltip id="benefitTooltip" />
+    </Wrapper>
+  );
+};
 
 export default PricingCard;
