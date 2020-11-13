@@ -44,3 +44,12 @@ export const submitContactForm = async (formData) => {
 
     return data;
 }
+
+export const signupFreeTaxConsultation = async (formData) => {
+    const data = await fetch(`${process.env.INCFILE_API_URL}/signup-free-tax-consultation`, {
+        method: 'POST',
+        body: formData,
+    }).then(res => res.json());
+
+    return data;
+}

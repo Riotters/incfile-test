@@ -31,7 +31,7 @@ const Wrapper = styled.input`
     }
 `
 
-const Input = ({ className, placeholder, name, id, required, value, onChange, type, inputRef,pattern }) => {
+const Input = ({ className, placeholder, name, id, required, value, onChange, type, inputRef, pattern }) => {
     return (
         <Wrapper
             className={className}

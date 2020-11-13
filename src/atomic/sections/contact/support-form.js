@@ -15,12 +15,11 @@ import { submitContactForm } from '../../../api/Api';
 import { _phoneFormat } from '../../../helpers/input-parsers';
 import { validEmail } from '../../../helpers/form-validate';
 
-const SupportForm = ({ className, content, isNewSale, id }) => {
-    const [phoneNumber, setPhoneNumber] = React.useState('');
+const SupportForm = ({ className, isNewSale, id }) => {
     const [formSubmitted, setFormSubmitted] = React.useState(false);
     const [submittedData, setSubmittedData] = React.useState({});
 
-    const { register, reset, handleSubmit, errors, formState } = useForm();
+    const { register, reset, handleSubmit, errors, formState, setValue } = useForm();
     const { isSubmitting, isSubmitSuccessful } = formState;
 
     const handleForm = data => {
@@ -35,7 +34,6 @@ const SupportForm = ({ className, content, isNewSale, id }) => {
         });
 
         // Do sth after the form is submitted
-        setPhoneNumber('');
         setFormSubmitted(true);
         Swal.fire(
             'Thank You!',
@@ -88,7 +86,6 @@ const SupportForm = ({ className, content, isNewSale, id }) => {
             },
             allowOutsideClick: () => !Swal.isLoading()
         }).then((result) => {
-              console.log('HH', result);
                 if (result.isConfirmed) {
                     Swal.fire(
                         `Done!`,
@@ -172,8 +169,7 @@ const SupportForm = ({ className, content, isNewSale, id }) => {
                                     <Input
                                         name="phone"
                                         id="phone"
-                                        value={phoneNumber}
-                                        onChange={e => setPhoneNumber(_phoneFormat(e.target.value))}
+                                        onChange={e => setValue('phone', _phoneFormat(e.target.value))}
                                         inputRef={register()}
                                     />
                                 </Label>
