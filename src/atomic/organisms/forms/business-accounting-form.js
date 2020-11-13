@@ -51,7 +51,7 @@ const BusinessAccountingForm = ({ className, content }) => {
     const handleSignup = data => {
         if (typeof window !== 'undefined') {
             let v = window.grecaptcha.getResponse();
-            if (!window) {
+            if (!v.length) {
                 Swal.fire(
                     'Error!', 'You must confirm that you are not a robot', 'warning'
                 );
