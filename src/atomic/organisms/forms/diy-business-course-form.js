@@ -34,7 +34,7 @@ const BusinessNameSearchForm = ({ className }) => {
     const [submittedData, setSubmittedData] = React.useState({});
 
     const pageUrl = typeof window !== 'undefined' ? window.location.href : '';
-    const hutk = document.cookie.replace(/(?:(?:^|.*;\s*)hubspotutk\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+    const hutk = typeof window !== 'undefined' ? document.cookie.replace(/(?:(?:^|.*;\s*)hubspotutk\s*\=\s*([^;]*).*$)|^.*$/, "$1"): '';
 
     const signupNewsletter = data => {
         const formData = new FormData();
