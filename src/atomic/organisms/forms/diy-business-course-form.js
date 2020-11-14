@@ -41,7 +41,6 @@ const BusinessNameSearchForm = ({ className }) => {
         formData.set('pageTitle', document.title);
         formData.set('pageUrl', pageUrl);
         formData.set('hs_form_id', '86b6b235-1338-4b6a-ac5c-0a6910b14d1c');
-        formData.set('lifecyclestage', 'subscriber');
         formData.set('hutk', hutk);
 
         Object.keys(data).forEach(i => {
@@ -84,7 +83,7 @@ const BusinessNameSearchForm = ({ className }) => {
                 <Label htmlFor="email" content={{ label: `Email` }} bottomMargin="32">
                     <Input
                         className={errors.email ? 'invalid' : ''}
-                        type="text"
+                        type="email"
                         name="email"
                         id="email"
                         inputRef={register({
