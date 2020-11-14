@@ -7,7 +7,7 @@ import Dropdown from "../../../molecules/form/dropdown";
 import ContentCenter from "../../../partials/content-center";
 import TextCenterLayout from "../../../../components/partials/blocks/heading-center";
 import TopImageBox from "../../../../components/top-image-box";
-import Button from "../../../molecules/buttons/button";
+import Button from "../../../molecules/buttons/button-action";
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-blue2.inline.svg";
 import LicenseIcon from '../../../../images/icons/license.inline.svg';
@@ -22,7 +22,6 @@ const SearchTool = styled.div`
     position: relative;
     background-image: ${gradient.blue3};
 `;
-
 
 const ImageBoxes = styled.div`
   display: grid;
@@ -88,7 +87,6 @@ const ImageBoxes = styled.div`
       margin: 0 auto;
 `;
 
-
 const LicenseItemWrapper = styled.ul`
     margin-bottom: 32px;
 `
@@ -149,7 +147,7 @@ const SearchToolSection = ({ content, businessIndustryList }) => {
         setLicenseFound(finds);
         setShowResult(true);
     }
-    
+
     return (
         <SearchTool>
             <Oval heigh="720" width="720" top="0" left="0">
@@ -161,7 +159,7 @@ const SearchToolSection = ({ content, businessIndustryList }) => {
                     headlineWidth="850"
                     text={content.text}
                 />
-                
+
                 {!showResult ? (
                     <>
                         <ImageBoxes>
@@ -174,7 +172,7 @@ const SearchToolSection = ({ content, businessIndustryList }) => {
                                 <Dropdown className="dropdown" placeholder="Select" options={dropdownOptionsTwo} onChange={option => setLicenseOption(option)} />
                             </TopImageBox>
                         </ImageBoxes>
-                        
+
                         <Button content={content.button} theme="primary56" arrow onClick={e => findLicense(e)} />
                     </>
                 )
@@ -187,16 +185,20 @@ const SearchToolSection = ({ content, businessIndustryList }) => {
                                     {parser(`Here are the licenses you will need for your <b>${licenseFound.name}</b> business in <b>${selectedState}</b>...`)}
                                 </Paragraph>
 
-                                <LicenseItemWrapper>
-                                    {licenseFound.licenses.map(item => (
-                                        <LicenseItem>
-                                            <Icon className="icon"><LicenseIcon /></Icon>
-                                            <Paragraph>{item}</Paragraph>
-                                        </LicenseItem>
-                                    ))}
-                                </LicenseItemWrapper>
+                                {licenseFound.licenses.length
+                                    ? <LicenseItemWrapper>
+                                        {licenseFound.licenses.map(item => (
+                                            <LicenseItem>
+                                                <Icon className="icon"><LicenseIcon /></Icon>
+                                                <Paragraph>{item}</Paragraph>
+                                            </LicenseItem>
+                                        ))}
+                                    </LicenseItemWrapper>
+                                    : <Paragraph>There was no licenses that you needed.</Paragraph>
+                                }
 
-                                <Link to="#" onClick={(e) => { e.preventDefault(); setShowResult(false)}}>Search Again</Link>
+
+                                <Link to="#" onClick={(e) => { e.preventDefault(); setShowResult(false) }}>Search Again</Link>
                             </Whitebox>
 
                             <TextCenterLayout
@@ -205,8 +207,8 @@ const SearchToolSection = ({ content, businessIndustryList }) => {
                                 text={`Our Business License Research Package offers total peace of mind by having our licensing
                                 specialist conduct the necessary research to determine all of the licenses and permits
                                 required on a city, state, and county level specifically for your business.`}
-                            />     
-                            
+                            />
+
                             <Button
                                 content={{ text: `Do The Research For me`, url: `/business-license-research-package/` }}
                                 theme="primary56" width="250px" arrow />

@@ -28,8 +28,6 @@ import { color } from "../../components/styles/colors";
 import CountingTextBoxed from "../../atomic/molecules/text-blocks/counting-text-boxed";
 import ImageContent from "../../components/partials/blocks/left-image-right-content";
 import HandsIcon from "../../images/icons/hands.inline.svg";
-import IconCircle from "../../components/icons/circle";
-import ArrowSVG from "../../images/arrow.inline.svg";
 import LimitedIcon from "../../images/icons/limited-liability-company-or-llc.inline.svg";
 import UmbrellaIcon from "../../images/icons/umbrella.inline.svg";
 import PlaneIcon from "../../images/icons/plane.inline.svg";

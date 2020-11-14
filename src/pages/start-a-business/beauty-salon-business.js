@@ -30,8 +30,6 @@ import CountingTextBoxed from "../../atomic/molecules/text-blocks/counting-text-
 import OvalOrange2Svg from "../../images/ovals/top-left-transparent-orange2.inline.svg";
 import ImageContent from "../../components/partials/blocks/left-image-right-content";
 import HandsIcon from "../../images/icons/hands.inline.svg";
-import IconCircle from "../../components/icons/circle";
-import ArrowSVG from "../../images/arrow.inline.svg";
 import LimitedIcon from "../../images/icons/limited-liability-company-or-llc.inline.svg";
 import SeriesIcon from "../../images/icons/limited-liability-company.inline.svg";
 import PlaneIcon from "../../images/icons/plane.inline.svg";

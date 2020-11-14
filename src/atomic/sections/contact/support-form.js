@@ -8,6 +8,7 @@ import OvalSVG2 from "../../../images/ovals/top-right-transparent-babyblue1.inli
 import OvalSVG3 from "../../../images/ovals/top-left-transparent-babyblue1.inline.svg";
 import Label from "../../molecules/form/label-field-with-child";
 import Input from "../../atoms/inputs/input";
+import Textarea from "../../atoms/inputs/textarea";
 import Button from "../../molecules/buttons/button-action";
 import { useForm } from 'react-hook-form';
 import Swal from 'sweetalert2';
@@ -187,16 +188,20 @@ const SupportForm = ({ className, isNewSale, id }) => {
                             </Grid>
                             
                             <Label htmlFor="message" content={{ label: `Message` }} bottomMargin="32">
-                                <Input
+                                <Textarea
                                     className={errors.message ? 'invalid' : ''}
                                     name="message"
-                                    id="message"
+                                    row="5"
                                     inputRef={register({ required: `Field can't be empty` })}
                                 />
+                                {errors.message && (
+                                        <span className="error__info">{errors.message.message}</span>
+                                    )}
                             </Label>
 
                             <AlignCenter>
                                 <Button
+                                    disabled={isSubmitting}
                                     type="submit"
                                     theme="primary56"
                                     width="160px"
