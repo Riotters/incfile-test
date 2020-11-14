@@ -1,8 +1,6 @@
 import React from "react";
 import Layout from "../../../components/layout";
 import SEO from "../../../components/seo";
-import Buttonsbox from "../../../atomic/atoms/boxes/top-buttons-box";
-import Button from "../../../atomic/molecules/buttons/button";
 //Sections
 import Top from "../../../atomic/partials/top";
 import About from "../../../atomic/sections/research-topics/llc-info/forming-llc-with-one-member";
@@ -10,8 +8,6 @@ import Related from "../../../atomic/sections/learning-center-entity/help-center
 import Categories from "../../../atomic/sections/learning-center-entity/help-center-article/categories";
 import Service from "../../../atomic/sections/learning-center-entity/help-center/service";
 import Tools from "../../../atomic/sections/learning-center-entity/help-center-article/tools";
-import Benefits from "../../../components/partials/sections/benefits";
-import Articles from "../../../components/partials/sections/articles";
 import Rocket from "../../../atomic/sections/review-entity-types/c-corporation/rocket";
 import Searchbar from "../../../atomic/molecules/form/searchbar";
 //Texts
