@@ -269,8 +269,6 @@ const QuestionSection = styled.section`
   margin-bottom: 148px;
 `;
 
-const PackageSection = styled.section``;
-
 const ServiceSection = styled.section`
   background-image: ${gradient.blue3};
   padding-top: 100px;

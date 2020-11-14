@@ -76,6 +76,7 @@ const BusinessNameSearchForm = ({ className, noMaxWidth, propState, propEntityNa
     const [modalClases, setModalClases] = React.useState(['lightbox-content']);
     const [submittedData, setSubmittedData] = React.useState({});
     const pageUrl = typeof window !== 'undefined' ? window.location.href : '';
+    const hutk = typeof window !== 'undefined' ? document.cookie.replace(/(?:(?:^|.*;\s*)hubspotutk\s*\=\s*([^;]*).*$)|^.*$/, "$1"): '';
 
     const { register, reset, handleSubmit, control, errors, formState, setValue } = useForm({
         defaultValues: {
@@ -89,6 +90,7 @@ const BusinessNameSearchForm = ({ className, noMaxWidth, propState, propEntityNa
         formData.set('pageTitle', document.title);
         formData.set('pageUrl', pageUrl);
         formData.set('hs_form_id', '9b2dac2c-1122-4c12-9204-0cbebeea6ed6');
+        formData.set('hutk', hutk);
 
         Object.keys(data).forEach(i => {
             return formData.set(i, data[i]);

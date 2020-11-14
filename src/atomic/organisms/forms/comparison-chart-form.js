@@ -1,4 +1,4 @@
-import React, {useRef } from "react";
+import React, { useRef } from "react";
 import styled from "styled-components";
 import Whitebox from "../../atoms/boxes/white-box";
 import { color } from "../../atoms/styles/colors";
@@ -10,8 +10,10 @@ import ButtonAction from "../../molecules/buttons/button-action";
 import Curve from "../../atoms/icons/curve";
 import CurveSVG from "../../../images/curves/top-left-bottom-right.inline.svg";
 import { ThankYouContent } from "../../../atomic/partials/thank-you-modal-content";
-
+import { useForm, Controller } from 'react-hook-form';
+import { postHSForm } from '../../../api/Api';
 import { _phoneFormat } from '../../../helpers/input-parsers';
+import { isUSPhone, validEmail } from "../../../helpers/form-validate";
 
 const Wrapper = styled(Whitebox)`
   display: flex;
@@ -69,40 +71,40 @@ export const thanks_form = {
     header: "Thanks for submitting the form.",
     text: "A link download was sent to your email. Please check your inbox.",
     button: {
-      text: "Close",
-      url: "#"
+        text: "Close",
+        url: "#"
     }
-  };
+};
 
 const BusinessNameSearchForm = ({ className, content }) => {
-    const [intentPath, setIntentPath] = React.useState('');
     const [modalVisible, setModalVisible] = React.useState(false);
     const [formSubmitted, setFormSubmitted] = React.useState(false);
-    const [phoneNumber, setPhoneNumber] = React.useState('');
     const pageUrl = typeof window !== 'undefined' ? window.location.href : '';
+    const hutk = typeof window !== 'undefined' ? document.cookie.replace(/(?:(?:^|.*;\s*)hubspotutk\s*\=\s*([^;]*).*$)|^.*$/, "$1"): '';
 
-    const HandleForm = (e) => {
-        e.preventDefault();
-        const form = e.target;
-        
-        if (!form.checkValidity()) {
-            return false;
+    const intentPathRef = useRef();
+    const [submittedData, setSubmittedData] = React.useState({});
+    const { register, reset, handleSubmit, control, errors, formState, setValue } = useForm({
+        defaultValues: {
+            intent_path: ''
         }
+    });
+    const { isSubmitting, isSubmitSuccessful } = formState;
 
-        const formData = new FormData(form);
-        formData.set('intent_path', intentPath);
+    const HandleForm = data => {
+        const formData = new FormData();
         formData.set('pageTitle', document.title);
         formData.set('pageUrl', pageUrl);
-        
-        fetch(`${process.env.INCFILE_API_URL}/hubspot/postForm`, {
-            method: 'POST',
-            body: formData,
-        })
-            .then(res => res.json())
+        formData.set('hs_form_id', '42fd5e33-a7fc-4758-aaed-00a5cd6483b4');
+        formData.set('hutk', hutk);
+
+        Object.keys(data).forEach(i => {
+            return formData.set(i, data[i]);
+        });
+
+        postHSForm(formData)
             .then(json => {
-                form.reset();
-                setPhoneNumber('');
-                setIntentPath('');
+                setSubmittedData(data);
                 setModalVisible(true);
                 setFormSubmitted(true);
             });
@@ -118,10 +120,11 @@ const BusinessNameSearchForm = ({ className, content }) => {
         setModalVisible(!modalVisible)
     }
 
-    const handlePhoneChange = (e) => {
-        let formatPhone = _phoneFormat(e.target.value);
-        setPhoneNumber(formatPhone);
-    }
+    React.useEffect(() => {
+        if (isSubmitSuccessful) {
+            reset({ ...submittedData });
+        }
+    }, [isSubmitSuccessful, submittedData, reset]);
 
     let modalClases = ["lightbox-content"];
     if (formSubmitted) modalClases.push("form-submitted");
@@ -131,34 +134,67 @@ const BusinessNameSearchForm = ({ className, content }) => {
             <Curve className="curve-shape" bottom="-25" left="-29" color={color.blue1}>
                 <CurveSVG />
             </Curve>
-            <form onSubmit={HandleForm} noValidate>
-                <input type="hidden" name="hs_form_id" value="42fd5e33-a7fc-4758-aaed-00a5cd6483b4" />
+            <form onSubmit={handleSubmit(HandleForm)}>
+
                 <Heading size="5" bottomMargin="16">
                     {content.header}
                 </Heading>
                 <Label htmlFor="email" content={content.field} bottomMargin="16">
-                    <Input type="email" name="email" id="email" required />
+                    <Input type="email" name="email" id="email" inputRef={register({
+                        required: `Field can't be empty`,
+                        validate: value => validEmail(value) || `Email is not valid`
+                    })} />
+                    {errors.email && (
+                        <span className="error__info">{errors.email.message}</span>
+                    )}
                 </Label>
                 <Label htmlFor="first-name" content={content.field2} bottomMargin="16">
-                    <Input name="firstname" id="first-name" required  />
+                    <Input name="firstname" id="first-name" inputRef={register({ required: `Field can't be empty` })} />
+                    {errors.firstname && (
+                        <span className="error__info">{errors.firstname.message}</span>
+                    )}
                 </Label>
                 <Label htmlFor="last-name" content={content.field3} bottomMargin="16">
-                    <Input name="lastname" id="last-name" required />
+                    <Input name="lastname" id="last-name" inputRef={register({ required: `Field can't be empty` })} />
+                    {errors.lastname && (
+                        <span className="error__info">{errors.lastname.message}</span>
+                    )}
                 </Label>
                 <Label htmlFor="phone" content={content.field4} bottomMargin="16">
-                    <Input name="phone" id="phone" value={phoneNumber} pattern="\d{3}-\d{3}-\d{4}" onChange={e => handlePhoneChange(e)} required />
+                    <Input name="phone" id="phone"
+                        onChange={e => setValue('phone', _phoneFormat(e.target.value))}
+                        inputRef={register({
+                            required: `Field can't be empty`,
+                            validate: value => isUSPhone(value) || `Should be formatted like xxx-xxx-xxxx`,
+                        })}
+                    />
+                    {errors.phone && (
+                        <span className="error__info">{errors.phone.message}</span>
+                    )}
                 </Label>
                 <Label htmlFor="intent_path" content={content.field5} bottomMargin="32">
-                    <Dropdown
+                    <Controller
+                        control={control}
                         name="intent_path"
-                        id="intent_path"
-                        required
-                        options={content.dropdown}
-                        onChange={option => setIntentPath(option.value)}
-                        placeholder="Please select"
+                        rules={{ required: `Field can't be empty` }}
+                        onFocus={() => intentPathRef.current?.focus()}
+                        render={() => (
+                            <Dropdown
+                                inputRef={intentPathRef}
+                                className={errors.intent_path ? 'invalid' : ''}
+                                options={content.dropdown}
+                                onChange={option => {
+                                    setValue('intent_path', option.value, { shouldValidate: true })
+                                }}
+                                placeholder="Select"
+                            />
+                        )}
                     />
+                    {errors.intent_path && (
+                        <span className="error__info">{errors.intent_path.message}</span>
+                    )}
                 </Label>
-                <ButtonAction content={content.button} type="submit" theme="primary56" arrow marginSM="0 auto"/>
+                <ButtonAction disabled={isSubmitting} content={content.button} type="submit" theme="primary56" arrow marginSM="0 auto" />
             </form>
 
             <LightBoxModal visible={modalVisible} onClick={popup} className="modal-overlay">

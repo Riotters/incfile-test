@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Buttonsbox from "../atomic/atoms/boxes/top-buttons-box";
-import Button from "../atomic/molecules/buttons/button";
+import Button from "../atomic/molecules/buttons/button-action";
 //Sections
 import Top from "../atomic/partials/top";
 import About from "../atomic/sections/learning-center-entity/comparison-chart/about";
@@ -11,16 +11,11 @@ import EntityType from "../atomic/sections/learning-center-entity/comparison-cha
 import Rocket from "../atomic/sections/review-entity-types/c-corporation/rocket";
 import Guide from "../atomic/sections/learning-center-entity/comparison-chart/guide";
 import Service from "../atomic/sections/learning-center-entity/comparison-chart/service";
+import { scrollToElement } from '../helpers/utils';
 //Texts
 import { top, about, businessStructure, entityType, rocket, guide, service } from "../static/learning-center-entity/comparison-chart";
 
 const ComparisonChart = () => {
-    const scrollToElement = (l, e) => {
-        e.preventDefault();
-      
-        const el = document.getElementById(l);
-        el.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
 
     return (
         <Layout>
@@ -29,7 +24,7 @@ const ComparisonChart = () => {
                 <h1>{top.header}</h1>
                 <p>{top.text}</p>
                 <Buttonsbox>
-                    <Button content={top.buttons[0]} theme="primary56" arrow onClick={e => scrollToElement('jsDownloadForm', e)} />
+                    <Button content={top.buttons[0]} theme="primary56" arrow onClick={e => scrollToElement(e, 'jsDownloadForm')} />
                 </Buttonsbox>
             </Top>
             <About content={about} />
