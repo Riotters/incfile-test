@@ -1,5 +1,5 @@
 import React from "react";
-import styled from 'styled-components';
+import styled from "styled-components";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Buttonsbox from "../atomic/atoms/boxes/top-buttons-box";
@@ -17,54 +17,52 @@ import HSFormModal from "../components/hubspot/standard-post-form-modal";
 import { top, about, guide, hsForm } from "../static/other/after-forming-llc";
 
 const AfterForming = () => {
-    const [modalVisible, setModalVisible] = React.useState(false);
-    const [formSubmitted, setFormSubmitted] = React.useState(false);
-    const [modalClases, setModalClases] = React.useState(["lightbox-content"]);
+  const [modalVisible, setModalVisible] = React.useState(false);
+  const [formSubmitted, setFormSubmitted] = React.useState(false);
+  const [modalClases, setModalClases] = React.useState(["lightbox-content"]);
 
-    React.useEffect(() => {
-        if (formSubmitted) {
-            setModalClases((modalClases) => [...modalClases, "form-submitted"]);
-        }
-    }, [formSubmitted]);
+  React.useEffect(() => {
+    if (formSubmitted) {
+      setModalClases((modalClases) => [...modalClases, "form-submitted"]);
+    }
+  }, [formSubmitted]);
 
-    const popup = (e) => {
-        e.preventDefault();
+  const popup = (e) => {
+    e.preventDefault();
 
-        if (!e.target.className.includes("modal-overlay") && !e.target.className.includes("modal-close") && modalVisible) return;
+    if (!e.target.className.includes("modal-overlay") && !e.target.className.includes("modal-close") && modalVisible) return;
 
-        setModalVisible(!modalVisible);
-        setFormSubmitted(false);
-    };
+    setModalVisible(!modalVisible);
+    setFormSubmitted(false);
+  };
 
-    const postDownload = (formData) => {
-        setModalVisible(modalVisible);
-        setFormSubmitted(true);
-    };
-    
-    return (
-        <Layout>
-            <SEO title="What to Do After Forming Your LLC | Incfile " description="You started your LLC—now what? Here are the common next steps to ensuring your business is successful. Read more." />
-            <Top imageName="mr-bulb-compass-3979" imageAlt="Mrs Bulb and with checklist" ovalColor="sun" headlineWidth="550">
-                <h1>{top.header}</h1>
-                <p>{top.text}</p>
-                <Buttonsbox>
-                    <Button content={top.button[0]} theme="primary56" onClick={popup} />
-                </Buttonsbox>
-            </Top>
-            <About content={about} openHsForm={popup} />
-            <Guide content={guide} onClick={popup} />
-            <Articles />
+  const postDownload = (formData) => {
+    setModalVisible(modalVisible);
+    setFormSubmitted(true);
+  };
 
-            <LightBoxModal visible={modalVisible} className="modal-overlay">
-                <LightBoxContent style={{ pointerEvents: "all" }} class={modalClases.join(" ")}>
-                    {!formSubmitted &&
-                        <HSFormModal hs_form_id={hsForm.hs_form_id} content={hsForm} modalExit={popup} postDownloadAction={postDownload} />
-                    }
-                {formSubmitted && <ThankYouContent modalExit={popup} />}
-                </LightBoxContent>
-            </LightBoxModal>
-        </Layout>
-    );
+  return (
+    <Layout>
+      <SEO title="What to Do After Forming Your LLC | Incfile " description="You started your LLC—now what? Here are the common next steps to ensuring your business is successful. Read more." />
+      <Top imageName="mr-bulb-compass-3979" imageAlt="Mrs Bulb and with checklist" ovalColor="sun" headlineWidth="550">
+        <h1>{top.header}</h1>
+        <p>{top.text}</p>
+        <Buttonsbox>
+          <Button content={top.button[0]} theme="primary56" onClick={popup} />
+        </Buttonsbox>
+      </Top>
+      <About content={about} openHsForm={popup} />
+      <Guide content={guide} onClick={popup} />
+      <Articles />
+
+      <LightBoxModal visible={modalVisible} className="modal-overlay">
+        <LightBoxContent style={{ pointerEvents: "all" }} class={modalClases.join(" ")}>
+          {!formSubmitted && <HSFormModal hs_form_id={hsForm.hs_form_id} content={hsForm} modalExit={popup} postDownloadAction={postDownload} />}
+          {formSubmitted && <ThankYouContent modalExit={popup} />}
+        </LightBoxContent>
+      </LightBoxModal>
+    </Layout>
+  );
 };
 
 export default AfterForming;
@@ -91,7 +89,7 @@ const LightBoxContent = styled.div`
   width: 100%;
   max-width: 750px;
   position: relative;
-  margin: 0 30px;
+  //margin: 0 30px;
   max-height: 100vh;
   overflow-y: auto;
 
@@ -102,7 +100,15 @@ const LightBoxContent = styled.div`
 
   @media screen and (min-width: 769px) {
     padding-top: 0;
-    overflow-y: visible;
     max-width: 600px;
+    max-height: 80vh;
+  }
+
+  form {
+    padding: 25px 15px;
+
+    @media (min-width: 769px) {
+      padding: 50px;
+    }
   }
 `;

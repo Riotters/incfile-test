@@ -5,7 +5,7 @@ import Buttonsbox from "../atomic/atoms/boxes/top-buttons-box";
 import Button from "../atomic/molecules/buttons/button";
 import TextCenterLayout from "../atomic/partials/heading-center.js";
 import styled from "styled-components";
-import Top from "../components/partials/sections/top";
+import Top from "../atomic/partials/top";
 import About from "../atomic/sections/manage-your-company/llc-s-corp-election/about";
 import ImageContent from "../components/partials/blocks/left-image-right-content";
 import ContentObject from "../atomic/partials/left-content-right-object";
@@ -142,7 +142,7 @@ const CorpElection = () => (
     </LLCsTax>
     <Example>
       <TextCenterLayout headline={howSaveMoney.header} headlineWidth="770" text={howSaveMoney.text} bottomMargin="80" />
-      <ContentObject object={Revenue} contentWidth="570" bottomMargin="144">
+      <ContentObject object={Revenue} contentWidth="570" bottomMargin="48" bottomMarginLG="144">
         <Heading size="3">{howSaveMoney.header2}</Heading>
         <Paragraph big bottomMargin="64">
           {howSaveMoney.text2}

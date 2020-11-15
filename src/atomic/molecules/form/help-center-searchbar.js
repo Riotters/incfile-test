@@ -7,33 +7,6 @@ import Autosuggest from "react-autosuggest";
 import { pages } from "../../../static/research-topics/list";
 import { color } from "../../../components/styles/colors";
 
-// const languages = [
-//   {
-//     name: "C",
-//     url: "/start-your-company/",
-//   },
-//   {
-//     name: "Elm",
-//     url: "/start-your-company/",
-//   },
-//   {
-//     name: "Elmb",
-//     url: "/start-your-company/",
-//   },
-//   {
-//     name: "Elms",
-//     url: "/start-your-company/",
-//   },
-//   {
-//     name: "Elmaasa",
-//     url: "/start-your-company/",
-//   },
-//   {
-//     name: "Elmfdffd",
-//     url: "/start-your-company/",
-//   },
-// ];
-
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
