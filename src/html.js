@@ -13,7 +13,7 @@ export default function HTML(props) {
                 />
                 {props.headComponents}
 
-                {process.env.ENABLE_GTM && (
+                {process.env.ENABLE_GTM === true && (
                     <script
                     key="google_tag_manager"
                     defer
@@ -32,7 +32,7 @@ export default function HTML(props) {
             <body {...props.bodyAttributes}>
                 {props.preBodyComponents}
 
-                {process.env.ENABLE_GTM && (
+                {process.env.ENABLE_GTM === true && (
                     <noscript
                         dangerouslySetInnerHTML={{
                             __html: `
