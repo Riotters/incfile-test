@@ -7,6 +7,7 @@ import ImageContent from "../../../partials/left-image-right-content";
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-pink.inline.svg";
 import Oval2SVG from "../../../../images/ovals/top-right-transparent-babyblue2.inline.svg";
+import parse from "html-react-parser";
 
 const About = styled.section`
   position: relative;
@@ -23,8 +24,8 @@ const AboutSection = ({ className, content }) => (
     </Oval>
     <ImageContent image="cash-register">
       <Heading size="3">{content.header}</Heading>
-      <Paragraph big bottomMargin="72">
-        {content.text}
+      <Paragraph big mixed bottomMargin="72">
+        {parse(content.text)}
       </Paragraph>
       <Button content={content.button[0]} theme="secondary56" arrow margin="0 auto 0 0" />
     </ImageContent>

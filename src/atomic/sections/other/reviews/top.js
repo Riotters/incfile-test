@@ -8,9 +8,11 @@ import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-right-transparent-dark-blue.inline.svg";
 import FiveStarSVG from "../../../../images/group-5-stars.inline.svg";
 import ShapeCurve from "../../../atoms/shapes/curve";
-import AbsoluteShapCure from "../../../elements/absolute-shape-curve-e";
-import { getAggregrateReviews } from "../../../../api/Api";
-import { formatNumber, roundUp } from "../../../../helpers/utils";
+import AbsoluteShapCure from '../../../elements/absolute-shape-curve-e';
+import { getAggregrateReviews } from '../../../../api/Api';
+import { formatNumber, roundUp } from '../../../../helpers/utils';
+import { Paragraph } from "../../../atoms/typography/paragraph";
+import parse from 'html-react-parser';
 
 const Wrapper = styled.div`
   padding: 80px 0;
@@ -183,48 +185,93 @@ function Top({ content }) {
         percentFourOrFive: Math.ceil((totalFourAndFiveStars / totalReview) * 100),
       }));
     });
-  }, []);
 
-  return (
-    <Wrapper>
-      <Oval className="oval" height="243" width="330" top="0" right="0" y="31">
-        <OvalSVG />
-      </Oval>
+    React.useEffect(() => {
+        getAggregrateReviews().then(data => {
+            let totalReview = data.total_reviews;
+            let totalFourAndFiveStars = data['4_star'] + data['5_star'];
+            let starsReview = [
+                {
+                    name: `5 star`,
+                    total: formatNumber(data['5_star']),
+                    percent: Math.ceil( (data['5_star'] / totalReview) * 100 ),
+                },
+                {
+                    name: `4 star`,
+                    total: formatNumber(data['4_star']),
+                    percent: Math.ceil( (data['4_star'] / totalReview) * 100 ),
+                },
+                {
+                    name: `3 star`,
+                    total: formatNumber(data['3_star']),
+                    percent: Math.ceil( (data['3_star'] / totalReview) * 100 ),
+                },
+                {
+                    name: `2 star`,
+                    total: formatNumber(data['2_star']),
+                    percent: Math.ceil( (data['2_star'] / totalReview) * 100 ),
+                },
+                {
+                    name: `1 star`,
+                    total: formatNumber(data['1_star']),
+                    percent: Math.ceil( (data['1_star'] / totalReview) * 100 ),
+                },
+            ];
 
-      <Container>
-        <HeadingCenter bottomMargin={56} bottomMarginMD={100} className="heading" headline={content.header} headlineWidth="770" />
+            setStatistics((prevState) => ({
+                ...prevState,
+                average: roundUp(data.average_rating, 1),
+                stars: starsReview,
+                percentFourOrFive: Math.ceil( (totalFourAndFiveStars / totalReview) * 100 )
+            }));
+        })
+    }, []);
 
-        <Grid>
-          <AbsoluteShapCure rotate={-90} left="-25px" top="-25px">
-            <ShapeCurve color={color.green2} />
-          </AbsoluteShapCure>
-          <Box bgColor="#f2f8f3" className="box__1">
-            <p>{statistics.average}</p>
-            <p>{content.box1.text2}</p>
-          </Box>
-          <Box bgColor={color.blue3} className="box__2">
-            {statistics.stars.map((item, index) => (
-              <Item width={item.percent} key={index}>
-                <span>{item.name}</span>
-                <span width={item.percent}></span>
-                <span>{item.total}</span>
-              </Item>
-            ))}
-          </Box>
-          <Box bgColor={color.orange3} className="box__3">
-            <p>{content.box3.text1}</p>
-            <p>
-              <FiveStarSVG />
-            </p>
-          </Box>
-          <Box bgColor={color.blue3} className="box__4">
-            <p>{`${statistics.percentFourOrFive}%`}</p>
-            <p>{content.box4.text2}</p>
-          </Box>
-        </Grid>
-      </Container>
-    </Wrapper>
-  );
+    return (
+        <Wrapper>
+            <Oval className="oval" height="243" width="330" top="0" right="0" y="31">
+            <OvalSVG />
+            </Oval>
+            
+            <Container>
+                <HeadingCenter
+                    bottomMargin={56} 
+                    bottomMarginMD={100}
+                    className="heading"
+                    headline={content.header}
+                    headlineWidth="770" />
+                <Paragraph big mixed bottomMargin={100} style={{ textAlign: `center`}}>{parse(content.text)}</Paragraph>
+
+                <Grid>
+                    <AbsoluteShapCure rotate={-90} left="-25px" top="-25px">
+                        <ShapeCurve color={color.green2} />
+                    </AbsoluteShapCure>
+                    <Box bgColor="#f2f8f3" className="box__1">
+                        <p>{statistics.average}</p>
+                        <p>{content.box1.text2}</p>
+                    </Box>
+                    <Box bgColor={color.blue3} className="box__2">
+                        {statistics.stars.map((item, index) => (
+                            <Item width={item.percent} key={index}>
+                                <span>{item.name}</span>
+                                <span width={item.percent}></span>
+                                <span>{item.total}</span>
+                            </Item>
+                        ))}
+                    </Box>
+                    <Box bgColor={color.orange3} className="box__3">
+                        <p>{content.box3.text1}</p>
+                        <p><FiveStarSVG/></p>
+                    </Box>
+                    <Box bgColor={color.blue3} className="box__4">
+                        <p>{`${statistics.percentFourOrFive}%`}</p>
+                        <p>{content.box4.text2}</p>
+                    </Box>
+                </Grid>
+
+            </Container>
+        </Wrapper>
+    )
 }
 
 export default Top;

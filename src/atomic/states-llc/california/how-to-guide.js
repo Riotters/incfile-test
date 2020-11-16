@@ -122,6 +122,7 @@ const HowToGuide = ({ content, data }) => {
                 <Heading size={3}>{content.mainSteps.step1.heading1}</Heading>
                 <Paragraph big mixed={true}>{parse(content.mainSteps.step1.text1)}</Paragraph>
                 <Paragraph big mixed={true}>{parse(content.mainSteps.step1.text2)}</Paragraph>
+                <Paragraph big mixed={true}>{parse(content.mainSteps.step1.text3)}</Paragraph>
                 <BoxCTA bgColor={color.purple3} bgImage={BgBoxBusinessNameSearchTool} content={content.mainSteps.step1.cta} />
             </TextBlockWithNumberCounting>
 
@@ -207,6 +208,7 @@ const HowToGuide = ({ content, data }) => {
                     ))}
                 </RelativeElement>
                 <Paragraph big mixed={true}>{parse(content.mainSteps.step4.text3)}</Paragraph>
+                <Paragraph big mixed={true}>{parse(content.mainSteps.step4.text4)}</Paragraph>
                 <BoxCTA bgColor={color.orange3} bgImage={BgBoxHandlePaperWorks} content={content.mainSteps.step4.cta} />
 
                 <AnnualReportFilingBox data={data} />

@@ -282,10 +282,11 @@ const CCorpTabs = ({ layout, columns, content, openHsForm }) => (
             <Collapse isOpened={true}>
               <Panel>
                 <PanelWrapper className={isVisible ? "slideUp enter panel1" : "slideUp panel1"} layout={layout}>
+                <Heading size="3">{content.content[0].header}</Heading>
                   <Paragraph big bottomMargin="48">
                     {content.content[0].text}
                   </Paragraph>
-                  <Heading size="3">{content.content[0].header}</Heading>
+                  <Heading size="3">{content.content[0].header2}</Heading>
                   <Paragraph big bottomMargin="0">
                     {content.content[0].text2}
                   </Paragraph>

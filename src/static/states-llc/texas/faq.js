@@ -151,7 +151,7 @@ export const faqContent = {
     {
       type: `paragraph`,
       styles: { marginTop: `42px` },
-      content: `If you want to prevent people from using your business name across the U.S., you can file a trademark for the name. <a href="/trademark-name-search/">We can help</a>`,
+      content: `If you want to prevent people from using your business name across the U.S., you can file a trademark for the name. <a href="/trademark-name-search/">We can help.</a>`,
     },
 
     {

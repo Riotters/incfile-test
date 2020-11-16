@@ -1602,10 +1602,6 @@ export const requirements = {
                 content: `The state charges this amount to file a new business entity. This fee goes directly to the Secretary of State.`,
               },
               {
-                type: `paragraph`,
-                content: `Ut tincidunt neque a viverra egestas. Suspendisse tempus metu.`,
-              },
-              {
                 type: `arrow-links`,
                 content: {
                   text: `State Filing Times`,

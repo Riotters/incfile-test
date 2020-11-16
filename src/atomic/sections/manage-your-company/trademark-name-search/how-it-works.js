@@ -107,7 +107,7 @@ const HowItWorksSection = ({ className, content }) => (
             <Image filename="needs-947" imageAlt="an comic speech bubble icon" />
           </div>
           <h4>Tell us what you need</h4>
-          <p>Tell us what you need. A trademark attorney will follow up with you to get a better understanding of your needs and provide guidance on how the process works.</p>
+          <p>A trademark attorney will follow up with you to get a better understanding of your needs and provide guidance on how the process works.</p>
         </div>
         <div className="circle">
           <span>

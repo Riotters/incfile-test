@@ -19,7 +19,7 @@ export const about = {
     text2: 
         `Each of our free resources for starting a business is self-contained and provides practical, easy-to-use information and tools to get you up and running with a minimum of fuss.`,
     link: {
-        text: `View our specialized guidelines`,
+        text: `View our business guides`,
         url: `/`,
     }
 }
