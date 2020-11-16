@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
 import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
-import Button from "../../components/button";
+import Button from "../../atomic/molecules/buttons/button";
 //Sections
 import Top from "../../atomic/partials/top";
 import About from "../../atomic/sections/manage-your-company/dissolution/about";
@@ -18,11 +18,8 @@ const Dissolution = () => (
     <SEO title="Company Dissolution | How to Dissolve an LLC or Corporation" description="To legally close a corporation or LLC, the company must file Articles of Dissolution with the state of incorporation. Learn more." />
     <Top imageName="mrs-bulb-dissolution" imageAlt="Mrs Bulb holding a closed sign" ovalColor="darkblue">
       <h1>{top.header}</h1>
-      <p>{top.text}</p>
       <Buttonsbox>
-        <Button to={`${process.env.ORDER_URL}/dissolution.php`} theme="primary56" width="200px" arrow>
-          Order now
-        </Button>
+        <Button content={top.button[0]} theme="primary56" width="200px" arrow />
       </Buttonsbox>
     </Top>
     <About content={about} />

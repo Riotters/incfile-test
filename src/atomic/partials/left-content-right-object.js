@@ -12,6 +12,7 @@ const Wrapper = styled.div`
 
   @media (min-width: 992px) {
     flex-direction: row;
+    margin-bottom: ${(props) => (props.bottomMarginLG ? `${props.bottomMarginLG}px` : "")};
   }
 `;
 
@@ -59,10 +60,10 @@ const Objectbox = styled.div`
   }
 `;
 
-const LeftContentRightObject = ({ className, object, objectMargin, children, maxWidth, contentWidth, contentCenter, bottomMargin }) => {
+const LeftContentRightObject = ({ className, object, objectMargin, children, maxWidth, contentWidth, contentCenter, bottomMargin, bottomMarginLG }) => {
   return (
     <Container>
-      <Wrapper className={className} maxWidth={maxWidth} bottomMargin={bottomMargin}>
+      <Wrapper className={className} maxWidth={maxWidth} bottomMargin={bottomMargin} bottomMarginLG={bottomMarginLG}>
         <Content contentWidth={contentWidth} contentCenter={contentCenter}>
           {children}
         </Content>

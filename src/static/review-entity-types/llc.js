@@ -127,12 +127,9 @@ export const about = {
               },
               {
                 question: `No Ownership Restrictions`,
-                answer: `The LLC does not have any residency or citizenship restrictions, which allows foreign
-                nationals to have ownership in an LLC, if desired. In addition, other corporate entities may be LLC members which means that <a href="/research-topics/llc-info/can-another-business-entity-be-a-member-of-an-llc/">other corporations or
-                LLCs (or other entities)</a>
-                may be a member of the LLC, or may be the sole member (although an LLC with a sole member that is a corporation or LLC is treated
-                for tax purposes as a partnership
-                 or multi-member LLC).`,
+                answer: `<p>The LLC does not have any residency or citizenship restrictions, which allows foreign nationals to have ownership in an LLC, if desired. In addition, other corporate entities may be LLC members which means that
+                <a href="/research-topics/llc-info/can-another-business-entity-be-a-member-of-an-llc/">other corporations or LLCs (or other entities)</a>
+                may be a member of the LLC, or may be the sole member (although an LLC with a sole member that is a corporation or LLC is treated for tax purposes as a partnership or multi-member LLC).</p>`,
               },
               {
                 question: `Versatile Tax Status`,
@@ -245,35 +242,35 @@ export const faq = {
     items: [
       {
         question: `How does business asset protection work with LLCs?`,
-        answer: `The limited liability company structure, much like a corporation, provides LLC owners with limited liability asset protection. 
+        answer: `<p>The limited liability company structure, much like a corporation, provides LLC owners with limited liability asset protection. 
                   This means that the company assets are typically owned by the LLC and are separate from the personal assets from that of the LLC owner(s). 
                   Should there be a lawsuit aimed at the company, whether with or without merit, the LLC is the legal entity that would be sued. The assets of the LLC could be attacked, 
-                  however that would be separate from the personal assets of the LLC owner(s), which would be protected.
-
+                  however that would be separate from the personal assets of the LLC owner(s), which would be protected.</br>
                   The potential liability of an LLC owner is limited only to whatever that owner has invested in the LLC, such as an initial, investment or any retained earnings. 
                   This is very much the same as if you had purchased shares of stock in a corporation. In most cases, the most you can lose is what you paid for the stock, but you typically will not lose more than that, 
-                  no matter how much the company might potentially lose or for however much the company might be sued.`,
+                  no matter how much the company might potentially lose or for however much the company might be sued.</p>`,
       },
       {
         question: `What is an LLC member?`,
-        answer: `The state fee varies by state our service fee to file Articles of Dissolution is $149. To review the fee in your state click on the “order now” button and select the state and entity type.`,
+        answer: `If you are the owner of an LLC, you are referred to as a member, and LLCs can have a single member or multiple members — it's up to you.`,
       },
       {
         question: `How do I file an amendment for an LLC?`,
-        answer: `The only stipulation that would prohibit the owners of an entity from filing a dissolution is if the company owes outstanding taxes or has annual reports outstanding. 
-                  In this event the company would need to bring the itself to good standing with the state before filing the dissolution.`,
+        answer: `<p>If you need to make a change to your LLC, you need to
+        <a href="/manage-your-company/amendment/">file an amendment</a>
+        with your secretary of state. Not all changes need to be amended, but generally anything within your LLC's Articles of Incorporation or Articles of Organization that is being changed needs to be filed.</p>`,
       },
       {
         question: `Can you start an LLC by yourself?`,
-        answer: `The filing time is dependent on the governing state agency and varies by state.`,
+        answer: `Yes! In fact, LLCs are often the perfect structure for sole proprietors because they provide protection for your personal assets without the complexity and rigid regulations of a corporation.`,
       },
       {
         question: `How do LLC owners pay themselves?`,
-        answer: `The governing state agency will return a copy of the filed articles which are then mailed to the client.`,
+        answer: `As the owner of your LLC, you do not receive a paycheck. Instead LLC members take "draws" or "distributions," which do not have any federal or state income taxes withheld. You are responsible for reporting your share of profits on your personal income tax returns.`,
       },
       {
         question: `How do LLC taxes work?`,
-        answer: `The governing state agency will return a copy of the filed articles which are then mailed to the client.`,
+        answer: `LLCs can be taxed differently depending on whether they are sole proprietorships or have multiple members, and whether or not you elect to be taxes as a corporation. For more information, talk to your accountant.`,
       },
     ],
   },

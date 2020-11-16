@@ -46,6 +46,7 @@ export const basics = {
           `Second, if your company has to pay state taxes in a particular locale, they are going to be tagged as “doing business” in a state. 
                     Taxes are assessed when a company sells directly from a state or upholds a significant number of contracts in a state.`,
         ],
+        text: `If your business fits any of these criteria, you could benefit from filing a Foreign Qualification with us.`,
       },
       {
         question: `What is a cerificate of Authority?`,

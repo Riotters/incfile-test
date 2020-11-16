@@ -27,7 +27,7 @@ const Comparison = () => (
 
           <div>
             <ContentBox>
-              <Title>Ongoing File Requirements</Title>
+              <Title>Informal and easy to maintain</Title>
               <Content>Unlike the corporation the LLC is not required to hold meetings annually or maintain bylaws furthermore ownership is expressed by the % each member owns unlike the corporation where ownership is represented by shares of stock.</Content>
             </ContentBox>
 

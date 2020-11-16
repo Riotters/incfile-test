@@ -74,7 +74,7 @@ const RequirementsSection = ({ className, content, data }) => {
                 {
                     type: `arrow-links`,
                     content: {
-                        text: `State Filing Times`,
+                        text: `Compare State Filing Times`,
                         url: `/state-filing-times/`,
                     },
                     bottomMargin: 16,
@@ -82,7 +82,7 @@ const RequirementsSection = ({ className, content, data }) => {
                 {
                     type: `arrow-links`,
                     content: {
-                        text: `State Filing Prices`,
+                        text: `Compare State Filing Prices`,
                         url: `/state-filing-fees/`,
                     },
                 },
@@ -90,8 +90,7 @@ const RequirementsSection = ({ className, content, data }) => {
         },
         {
             header: `Compliance  Requirements`,
-            text: `This report is mandatory and must be filed within the specified time frame in order for the entity to remain in good standing with the state.`,
-            text2: `Failure to file these reports can lead to the company being revoked or administrative dissolution. Included with all incorporation packages are lifetime company alerts that will provide courtesy email reminders to inform clients of an upcoming filing requirement.`,
+            text: `This report is mandatory and must be filed within the specified time frame in order for the entity to remain in good standing with the state. Failure to file this report can lead to the company being revoked or administratively dissolved.`,
             link: {
                 text: `Other State's Ongoing`,
                 url: `/compliance-filing-requirement/`,

@@ -9,9 +9,25 @@ import CircleSVG from "../../../images/circle-graph.inline.svg";
 const Wrapper = styled(WhiteBox)`
   display: flex;
   flex-direction: column;
-  padding: 80px 96px 40px;
-  max-width: 470px;
-  margin-left: auto;
+  align-items: center;
+  padding: 80px 16px 40px;
+  margin-top: 48px;
+
+  @media (min-width: 992px) {
+    align-items: flex-start;
+    max-width: 470px;
+    padding: 80px 96px 40px;
+    margin-top: 0;
+    margin-left: auto;
+  }
+
+  & > h4 {
+    text-align: center;
+
+    @media (min-width: 992px) {
+      text-align: left;
+    }
+  }
 `;
 
 const Circle = styled.div`
@@ -51,6 +67,7 @@ const Money = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: ${(props) => (props.bottomMargin ? `${props.bottomMargin}px` : "0")};
+  width: 280px;
 
   .color-box {
     height: 32px;

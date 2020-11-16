@@ -100,37 +100,103 @@ const cn = (...args) => args.filter(Boolean).join(" ");
 const Tab = ({ children }) => {
   const { isActive, onClick } = useTabState();
 
+  const scrollTop = (l) => {
+    const el = document.getElementById(l);
+    const offset = 100;
+    const bodyRect = document.body.getBoundingClientRect().top;
+    const elementRect = el.getBoundingClientRect().top;
+    const elementPosition = elementRect - bodyRect;
+    const offsetPosition = elementPosition - offset;
+
+    if (typeof window !== "undefined") {
+      window.scrollTo({
+        top: offsetPosition,
+      });
+    }
+  };
+
   return (
-    <Button className={cn("accordion-tab", isActive && "active")} onClick={onClick}>
+    <Button
+      className={cn("accordion-tab", isActive && "active")}
+      onClick={() => {
+        onClick();
+        scrollTop("tabs-wrapper");
+      }}
+    >
       {children}
     </Button>
   );
 };
 
 const colors = [color.yellow3, color.blue3, color.purple3, color.orange3, color.babyblue3, color.red3, color.yellow3, color.green3, color.blue3, color.red3, color.purple3, color.purple3, color.yellow3, color.orange3];
-const icons = [
-  "amazon88",
-  "computer-2346",
-  "etsy299",
-  "place038",
-  "bulb385",
-  "buy597",
-  "home294",
-  "case408",
-  "bag5",
-  "cap395 4",
-  "shop459",
-  "buttons695 2",
-  "chart3456",
-  "ok235",
-];
+const icons = ["amazon88", "computer-2346", "etsy299", "place038", "bulb385", "buy597", "home294", "case408", "bag5", "cap395 4", "shop459", "buttons695 2", "chart3456", "ok235"];
 
-const colors2 = [color.yellow3, color.red3, color.blue3, color.orange3, color.green3, color.purple3, color.green3, color.orange3, color.purple3, color.babyblue3, color.red3, color.blue3, color.babyblue3, color.purple3, color.yellow3, color.yellow3, color.green3, color.red3, color.babyblue3, color.orange3, color.yellow3, color.orange3, color.green3, color.red3, color.blue3, color.purple3, color.red3, color.yellow3, color.orange3,];
-const icons2 = ["beer-489", "makeup-394", "waiter-5786", "tshirt472", "cleaning-345", "talk293", "tree485", "laundry-379", "camera-234", "bulding-395", "table4859", "leash-478", "landromat-332", "bear-485", "calliper-169", "message-596", "palm-204", "gym-238", "baloon-385", "book-436", "food-truck-46", "bed-586", "tools384", "dress-245", "truck34", "tie486", "airbnb-467", "bakery-35", "record-23"];
+const colors2 = [
+  color.yellow3,
+  color.red3,
+  color.blue3,
+  color.orange3,
+  color.green3,
+  color.purple3,
+  color.green3,
+  color.orange3,
+  color.purple3,
+  color.babyblue3,
+  color.red3,
+  color.blue3,
+  color.babyblue3,
+  color.purple3,
+  color.yellow3,
+  color.yellow3,
+  color.green3,
+  color.red3,
+  color.babyblue3,
+  color.orange3,
+  color.yellow3,
+  color.orange3,
+  color.green3,
+  color.red3,
+  color.blue3,
+  color.purple3,
+  color.red3,
+  color.yellow3,
+  color.orange3,
+];
+const icons2 = [
+  "beer-489",
+  "makeup-394",
+  "waiter-5786",
+  "tshirt472",
+  "cleaning-345",
+  "talk293",
+  "tree485",
+  "laundry-379",
+  "camera-234",
+  "bulding-395",
+  "table4859",
+  "leash-478",
+  "landromat-332",
+  "bear-485",
+  "calliper-169",
+  "message-596",
+  "palm-204",
+  "gym-238",
+  "baloon-385",
+  "book-436",
+  "food-truck-46",
+  "bed-586",
+  "tools384",
+  "dress-245",
+  "truck34",
+  "tie486",
+  "airbnb-467",
+  "bakery-35",
+  "record-23",
+];
 
 const CheckTypesTabs = ({ content }) => (
   <Tabs>
-    <Wrapper>
+    <Wrapper id="tabs-wrapper">
       <TabsWrapper>
         <Scroller>
           {content.switchers.map((switcher) => (

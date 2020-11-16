@@ -46,27 +46,36 @@ const AboutSection = ({ className, content }) => (
       <Heading size="3" bottomMargin="32">
         {content.header}
       </Heading>
-      <Paragraph big bottomMargin="48">
+      <Paragraph big bottomMargin="16">
         {content.text}
       </Paragraph>
-      <IconListColorBox color={color.orange3} content={content.box} bottomMargin="72" rounded />
-      <Heading size="3">{content.header2}</Heading>
-      <Paragraph big bottomMargin="72">
+      <Paragraph big bottomMargin="16">
         {content.text2}
+      </Paragraph>
+      <IconListColorBox color={color.orange3} content={content.box} bottomMargin="48" rounded />
+      <Heading size="3" bottomMargin="24">
+        {content.header2}
+      </Heading>
+      <Paragraph big bottomMargin="32">
+        {content.text3}
       </Paragraph>
       {/* <Circle height="80" width="80" circleColor={color.green2} bottomMargin="32">
         <ResonableSalarySVG />
       </Circle> */}
-      <Heading size="3">{content.header3}</Heading>
-      <Paragraph big bottomMargin="48">
-        {content.text3}
+      <Heading size="3" bottomMargin="16">
+        {content.header3}
+      </Heading>
+      <Paragraph big bottomMargin="32">
+        {content.text4}
       </Paragraph>
       {/* <Circle height="80" width="80" circleColor={color.purple2} bottomMargin="32">
         <LLCDeclaringSVG />
       </Circle> */}
-      <Heading size="3">{content.header4}</Heading>
+      <Heading size="3" bottomMargin="16">
+        {content.header4}
+      </Heading>
       <Paragraph big bottomMargin="0">
-        {content.text4}
+        {content.text5}
       </Paragraph>
     </ImageContent>
   </About>
