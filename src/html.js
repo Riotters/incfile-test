@@ -32,14 +32,16 @@ export default function HTML(props) {
             <body {...props.bodyAttributes}>
                 {props.preBodyComponents}
 
-                {/* <noscript
-                    dangerouslySetInnerHTML={{
-                        __html: `
-                        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5H3C8TJ"
-                        height="0" width="0" style="display:none;visibility:hidden"></iframe>
-                        `
-                    }}
-                /> */}
+                {process.env.ENABLE_GTM && (
+                    <noscript
+                        dangerouslySetInnerHTML={{
+                            __html: `
+                            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5H3C8TJ"
+                            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+                            `
+                        }}
+                    />
+                )}
 
                 <div
                     key={`body`}
@@ -49,21 +51,23 @@ export default function HTML(props) {
                 {props.postBodyComponents}
                     
                 {/* clickAttributionData */}
-                {/* <script
-                    dangerouslySetInnerHTML={{
-                        __html: `
-                        var clickAttributionData = clickAttributionData || {};
-                        clickAttributionData.MerchantId = "8d7e83c4-7a78-4116-9866-d7de1274330c";
-                        `
-                    }}
-                />
-                <script
-                    defer 
-                    src="https://clickattribution.com/scripts/v2/path-to-purchase.min.js"
-                /> */}
-
+                {process.env.ENABLE_CLICK === true && (
+                    <script
+                        dangerouslySetInnerHTML={{
+                            __html: `
+                            var clickAttributionData = clickAttributionData || {};
+                            clickAttributionData.MerchantId = "8d7e83c4-7a78-4116-9866-d7de1274330c";
+                            `
+                        }}
+                    />
+                    <script
+                        defer 
+                        src="https://clickattribution.com/scripts/v2/path-to-purchase.min.js"
+                    />
+                )}
+                
                 {/* Hotjar Tracking Code */}
-                {process.env.ENABLE_HOTJAR && (
+                {process.env.ENABLE_HOTJAR === true && (
                     <script
                         key="hotjar_function"
                         defer
@@ -83,7 +87,7 @@ export default function HTML(props) {
                 )}
 
                 {/* Visual Website Optimizer Asynchronous Code */}
-                {process.env.ENABLE_VWO && (
+                {process.env.ENABLE_VWO === true && (
                     <script
                         key="vwo_function"
                         defer
