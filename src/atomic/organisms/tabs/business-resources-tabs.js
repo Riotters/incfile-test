@@ -99,42 +99,63 @@ const cn = (...args) => args.filter(Boolean).join(" ");
 const Tab = ({ children }) => {
   const { isActive, onClick } = useTabState();
 
+  const scrollTop = (l) => {
+    const el = document.getElementById(l);
+    const offset = 100;
+    const bodyRect = document.body.getBoundingClientRect().top;
+    const elementRect = el.getBoundingClientRect().top;
+    const elementPosition = elementRect - bodyRect;
+    const offsetPosition = elementPosition - offset;
+
+    if (typeof window !== "undefined") {
+      window.scrollTo({
+        top: offsetPosition,
+      });
+    }
+  };
+
   return (
-    <Button className={cn("accordion-tab", isActive && "active")} onClick={onClick}>
+    <Button
+      className={cn("accordion-tab", isActive && "active")}
+      onClick={() => {
+        onClick();
+        scrollTop("tabs-wrapper");
+      }}
+    >
       {children}
     </Button>
   );
 };
 
 const pdfs = [
-  ["pdf-1-6822", "pdf-5-0102", "pdf-6-3847", "pdf-7-6293", "pdf-15-6193", "pdf-17-7720", "pdf-23-5520", "pdf-10-2891", "pdf-13-5204", "pdf-9-3243"], 
-  ["pdf-2-4373", "pdf-8-8476", "pdf-4-9814", "pdf-3-3897", "pdf-20-3771", "pdf-19-8200", "pdf-12-8216", "pdf-16-3059", "pdf-18-9362", "pdf-26-5244", "pdf-25-5211", "pdf-21-4728"], 
-  ["pdf-24-9588", "pdf-11-8729", "pdf-22-4629", "pdf-14-7292"]
-]
+  ["pdf-1-6822", "pdf-5-0102", "pdf-6-3847", "pdf-7-6293", "pdf-15-6193", "pdf-17-7720", "pdf-23-5520", "pdf-10-2891", "pdf-13-5204", "pdf-9-3243"],
+  ["pdf-2-4373", "pdf-8-8476", "pdf-4-9814", "pdf-3-3897", "pdf-20-3771", "pdf-19-8200", "pdf-12-8216", "pdf-16-3059", "pdf-18-9362", "pdf-26-5244", "pdf-25-5211", "pdf-21-4728"],
+  ["pdf-24-9588", "pdf-11-8729", "pdf-22-4629", "pdf-14-7292"],
+];
 
 const BusinessResourcesTabs = ({ content, openModal }) => (
-    <Tabs>
-        <Wrapper>
-            <TabsWrapper>
-                <Scroller>
-                    {content.switchers.map((switcher) => (
-                        <Tab>{switcher}</Tab>
-                    ))}
-                </Scroller>
-            </TabsWrapper>
-            <PanelsWrapper>
-                {content.panels.map((panel, i) => (
-                    <Panel>
-                        <Grid>
-                            {panel.cards.map((card, j) => (
-                                <Card content={card} image={pdfs[i][j]} openModal={openModal} />
-                            ))}
-                        </Grid>
-                    </Panel>
-                ))}
-            </PanelsWrapper>
-        </Wrapper>
-    </Tabs>
+  <Tabs>
+    <Wrapper id="tabs-wrapper">
+      <TabsWrapper>
+        <Scroller>
+          {content.switchers.map((switcher) => (
+            <Tab>{switcher}</Tab>
+          ))}
+        </Scroller>
+      </TabsWrapper>
+      <PanelsWrapper>
+        {content.panels.map((panel, i) => (
+          <Panel>
+            <Grid>
+              {panel.cards.map((card, j) => (
+                <Card content={card} image={pdfs[i][j]} openModal={openModal} />
+              ))}
+            </Grid>
+          </Panel>
+        ))}
+      </PanelsWrapper>
+    </Wrapper>
+  </Tabs>
 );
 
 export default BusinessResourcesTabs;

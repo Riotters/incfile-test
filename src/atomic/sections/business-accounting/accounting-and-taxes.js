@@ -3,8 +3,9 @@ import {Heading} from "../../atoms/typography/heading";
 import ImageContent from "../../partials/left-image-right-content";
 import React from "react";
 import Buttonsbox from "../../atoms/boxes/top-buttons-box";
-import Button from "../../molecules/buttons/button";
+import Button from "../../molecules/buttons/button-action";
 import {Paragraph} from "../../atoms/typography/paragraph";
+import { scrollToElement } from "../../../helpers/utils";
 
 const Wrapper = styled.div`
     position: relative;
@@ -23,7 +24,7 @@ const AccountingAndTaxes = ({ content }) => (
             <Heading size={5}>{content.header}</Heading>
             <Paragraph big bottomMargin={48}>{content.text}</Paragraph>
             <Buttonsbox>
-                <Button content={content.button[0]} theme="primary56" arrow />
+                <Button onClick={e => scrollToElement(e, 'js-business-tax-signup-form')} content={content.button[0]} theme="primary56" arrow />
             </Buttonsbox>
             <Heading size={5} topMargin={24}>{content.header2}</Heading>
         </ImageContent>

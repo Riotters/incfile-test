@@ -27,7 +27,7 @@ const ResultCheckDueDate = ({ content, toggleForm }) => {
             <Heading size={3} style={{ textAlign: `center`, marginTop: `42px` }}>
                 State Requirement: {content.itemType}
             </Heading>
-            <Paragraph big mixed={true}>
+            <Paragraph big mixed={true} style={{ maxWidth: `670px` }}>
                 The {content.itemType} required by the State of {content.state} for <strong>{content.compName}</strong> is due on <strong>{content.dueDate}</strong>
             </Paragraph>
             

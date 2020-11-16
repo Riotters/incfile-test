@@ -25,8 +25,29 @@ const cn = (...args) => args.filter(Boolean).join(" ");
 const Tab = ({ children }) => {
   const { isActive, onClick } = useTabState();
 
+  const scrollTop = (l) => {
+    const el = document.getElementById(l);
+    const offset = 100;
+    const bodyRect = document.body.getBoundingClientRect().top;
+    const elementRect = el.getBoundingClientRect().top;
+    const elementPosition = elementRect - bodyRect;
+    const offsetPosition = elementPosition - offset;
+
+    if (typeof window !== "undefined") {
+      window.scrollTo({
+        top: offsetPosition,
+      });
+    }
+  };
+
   return (
-    <ButtonBox className={cn("accordion-tab", isActive && "active")} onClick={onClick}>
+    <ButtonBox
+      className={cn("accordion-tab", isActive && "active")}
+      onClick={() => {
+        onClick();
+        scrollTop("tabs-wrapper");
+      }}
+    >
       {children}
     </ButtonBox>
   );
@@ -243,7 +264,7 @@ const CoachTabs = ({ layout, columns }) => (
       <OvalGreenSVG />
     </OvalBottom>
     <Container>
-      <Wrapper layout={layout}>
+      <Wrapper id="tabs-wrapper" layout={layout}>
         <VisibilitySensor partialVisibility once>
           {({ isVisible }) => (
             <Tabs>

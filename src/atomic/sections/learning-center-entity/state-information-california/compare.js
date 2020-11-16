@@ -1,18 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { color, gradient } from "../../../atoms/styles/colors";
-import { Heading } from "../../../atoms/typography/heading";
-import { Paragraph } from "../../../atoms/typography/paragraph";
-import { states } from "../../../../components/states";
 import HeadingCenter from "../../../partials/heading-center";
-import Card from "../../../molecules/mixed-blocks/top-image-box";
 import ContentCenter from "../../../partials/content-center";
-import Oval from "../../../atoms/icons/oval";
-import Curve from "../../../atoms/icons/curve";
-import OvalSVG from "../../../../images/ovals/top-right-transparent-blue.inline.svg";
-import Oval2SVG from "../../../../images/ovals/bottom-left-transparent-blue3.inline.svg";
-import CurveSVG from "../../../../images/curves/top-left-bottom-right.inline.svg";
-import CheckBlueSVG from "../../../../images/circle-status-check-blue.inline.svg";
 import Table from "../../../organisms/tables/state-information-llc-table";
 
 const Compare = styled.section`

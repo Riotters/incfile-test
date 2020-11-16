@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { color } from "../../../atoms/styles/colors";
 import HeadingCenter from "../../../partials/heading-center";
-import ContentCenter from "../../../partials/content-center";
+import ContentLeft from "../../../partials/content-left";
 import Table from "../../../organisms/tables/explore-cities-table";
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-pink.inline.svg";
@@ -22,9 +22,9 @@ const BusinessStructureSection = ({ className, content }) => (
       <Oval2SVG />
     </Oval>
     <HeadingCenter headline={content.header} headlineWidth="770" bottomMargin="24" bottomMarginLG="65" />
-    <ContentCenter>
-      <Table content={content.table} curve curveRight curveColor={color.blue1}/>
-    </ContentCenter>
+    <ContentLeft overflow="auto">
+      <Table content={content.table} curve curveRight curveColor={color.blue1} />
+    </ContentLeft>
   </BusinessStructure>
 );
 

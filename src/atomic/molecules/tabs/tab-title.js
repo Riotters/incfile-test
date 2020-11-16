@@ -1,52 +1,70 @@
 import React from "react";
 import OverviewSVG from "../../../images/icons/coaching-business.inline.svg";
 import ArrowSVG from "../../../images/arrow.inline.svg";
-import {useTabState} from "@bumaga/tabs";
+import { useTabState } from "@bumaga/tabs";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 
-const TabTitle = ({title, arrow, SvgIcon}) => (
-    <Tab>
-        <Icon>
-            <SvgIcon/>
-        </Icon>
-        <Content>
-            <span>{title}</span>
+const TabTitle = ({ title, arrow, SvgIcon }) => (
+  <Tab>
+    <Icon>
+      <SvgIcon />
+    </Icon>
+    <Content>
+      <span>{title}</span>
 
-            {arrow &&
-                <Arrow className="tabArrow">
-                    <ArrowSVG/>
-                </Arrow>
-            }
-        </Content>
-    </Tab>
+      {arrow && (
+        <Arrow className="tabArrow">
+          <ArrowSVG />
+        </Arrow>
+      )}
+    </Content>
+  </Tab>
 );
 
 export default TabTitle;
 
 const cn = (...args) => args.filter(Boolean).join(" ");
 
-const Tab = ({children}) => {
-    const {isActive, onClick} = useTabState()
+const Tab = ({ children }) => {
+  const { isActive, onClick } = useTabState();
 
-    return (
-        <ButtonBox
-            className={cn("accordion-tab", isActive && "active")}
-            onClick={onClick}
-        >
-            {children}
-        </ButtonBox>
-    )
+  const scrollTop = (l) => {
+    const el = document.getElementById(l);
+    const offset = 100;
+    const bodyRect = document.body.getBoundingClientRect().top;
+    const elementRect = el.getBoundingClientRect().top;
+    const elementPosition = elementRect - bodyRect;
+    const offsetPosition = elementPosition - offset;
+
+    if (typeof window !== "undefined") {
+      window.scrollTo({
+        top: offsetPosition,
+      });
+    }
+  };
+
+  return (
+    <ButtonBox
+      className={cn("accordion-tab", isActive && "active")}
+      onClick={() => {
+        onClick();
+        scrollTop("tabs-wrapper");
+      }}
+    >
+      {children}
+    </ButtonBox>
+  );
 };
 
 TabTitle.propTypes = {
-    title: PropTypes.string.isRequired,
-    arrow: PropTypes.bool
+  title: PropTypes.string.isRequired,
+  arrow: PropTypes.bool,
 };
 
 TabTitle.defaultProps = {
-    arrow: true,
-    SvgIcon: OverviewSVG
+  arrow: true,
+  SvgIcon: OverviewSVG,
 };
 
 const Icon = styled.div`
@@ -60,7 +78,7 @@ const Icon = styled.div`
   @media (min-width: 992px) {
     width: 80px;
   }
-`
+`;
 
 const Content = styled.div`
   display: flex;
@@ -99,7 +117,7 @@ const Content = styled.div`
       transform: translateX(0);
     }
   }
-`
+`;
 
 const Arrow = styled.div`
   display: flex;
@@ -115,7 +133,7 @@ const Arrow = styled.div`
       fill: #5088fd;
     }
   }
-`
+`;
 
 const ButtonBox = styled.button`
   height: 78px;
@@ -143,4 +161,4 @@ const ButtonBox = styled.button`
       transform: translateX(0);
     }
   }
-`
+`;

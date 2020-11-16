@@ -8,6 +8,7 @@ import OvalSVG2 from "../../../images/ovals/top-right-transparent-babyblue1.inli
 import OvalSVG3 from "../../../images/ovals/top-left-transparent-babyblue1.inline.svg";
 import Label from "../../molecules/form/label-field-with-child";
 import Input from "../../atoms/inputs/input";
+import Textarea from "../../atoms/inputs/textarea";
 import Button from "../../molecules/buttons/button-action";
 import { useForm } from 'react-hook-form';
 import Swal from 'sweetalert2';
@@ -15,12 +16,11 @@ import { submitContactForm } from '../../../api/Api';
 import { _phoneFormat } from '../../../helpers/input-parsers';
 import { validEmail } from '../../../helpers/form-validate';
 
-const SupportForm = ({ className, content, isNewSale, id }) => {
-    const [phoneNumber, setPhoneNumber] = React.useState('');
+const SupportForm = ({ className, isNewSale, id }) => {
     const [formSubmitted, setFormSubmitted] = React.useState(false);
     const [submittedData, setSubmittedData] = React.useState({});
 
-    const { register, reset, handleSubmit, errors, formState } = useForm();
+    const { register, reset, handleSubmit, errors, formState, setValue } = useForm();
     const { isSubmitting, isSubmitSuccessful } = formState;
 
     const handleForm = data => {
@@ -35,7 +35,6 @@ const SupportForm = ({ className, content, isNewSale, id }) => {
         });
 
         // Do sth after the form is submitted
-        setPhoneNumber('');
         setFormSubmitted(true);
         Swal.fire(
             'Thank You!',
@@ -88,7 +87,6 @@ const SupportForm = ({ className, content, isNewSale, id }) => {
             },
             allowOutsideClick: () => !Swal.isLoading()
         }).then((result) => {
-              console.log('HH', result);
                 if (result.isConfirmed) {
                     Swal.fire(
                         `Done!`,
@@ -172,8 +170,7 @@ const SupportForm = ({ className, content, isNewSale, id }) => {
                                     <Input
                                         name="phone"
                                         id="phone"
-                                        value={phoneNumber}
-                                        onChange={e => setPhoneNumber(_phoneFormat(e.target.value))}
+                                        onChange={e => setValue('phone', _phoneFormat(e.target.value))}
                                         inputRef={register()}
                                     />
                                 </Label>
@@ -191,16 +188,20 @@ const SupportForm = ({ className, content, isNewSale, id }) => {
                             </Grid>
                             
                             <Label htmlFor="message" content={{ label: `Message` }} bottomMargin="32">
-                                <Input
+                                <Textarea
                                     className={errors.message ? 'invalid' : ''}
                                     name="message"
-                                    id="message"
+                                    row="5"
                                     inputRef={register({ required: `Field can't be empty` })}
                                 />
+                                {errors.message && (
+                                        <span className="error__info">{errors.message.message}</span>
+                                    )}
                             </Label>
 
                             <AlignCenter>
                                 <Button
+                                    disabled={isSubmitting}
                                     type="submit"
                                     theme="primary56"
                                     width="160px"

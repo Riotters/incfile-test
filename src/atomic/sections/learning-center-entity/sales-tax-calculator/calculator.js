@@ -29,60 +29,59 @@ const ImageBoxes = styled.div`
   padding-bottom: 48px;
   width: 100%;
 
-  @media(min-width: 769px) {
+  @media (min-width: 769px) {
     grid-template-columns: 1fr 1fr;
   }
-  
+
   @media (min-width: 970px) {
     width: 970px;
     margin: 0 auto;
   }
 
   .box {
-      padding: 16px 16px 56px;
+    padding: 16px 16px 56px;
 
     h4 {
-        text-align: center;
-        padding: 24px 0 0;
+      text-align: center;
+      padding: 24px 0 0;
     }
 
     &--left {
+      border-radius: 5px;
+
+      @media (min-width: 769px) {
+        border-radius: 50px 5px 5px 50px;
+      }
+
+      .top {
         border-radius: 5px;
 
         @media (min-width: 769px) {
-            border-radius: 50px 5px 5px 50px;
+          border-radius: 35px 5px 5px 5px;
         }
-        
-    
-        .top {
-            border-radius: 5px;
-
-            @media (min-width: 769px) {
-                border-radius: 35px 5px 5px 5px;
-            }
-        }
+      }
     }
 
     &--right {
+      border-radius: 5px;
+
+      @media (min-width: 769px) {
+        border-radius: 5px 50px 50px 5px;
+      }
+
+      .top {
         border-radius: 5px;
 
         @media (min-width: 769px) {
-            border-radius: 5px 50px 50px 5px;
+          border-radius: 5px 35px 5px 5px;
         }
-    
-        .top {
-            border-radius: 5px;
-
-            @media (min-width: 769px) {
-                border-radius: 5px 35px 5px 5px;
-            }
-        }
+      }
     }
   }
 
   .dropdown {
-      max-width: 304px;
-      margin: 0 auto;
+    max-width: 304px;
+    margin: 0 auto;
   }
 `;
 
@@ -91,14 +90,14 @@ const dropdownOptions = states.state.map((state) => state.name);
 const CalculatorSection = ({ content, onSelectState, state }) => {
   const cards = content.cards;
   const inputRevenue = useRef(0);
-  const [selectedState, setSelectedState] = useState('');
+  const [selectedState, setSelectedState] = useState("");
   const [showResult, setShowResult] = useState(false);
   const [finalCalculator, setFinalCalculator] = useState(0);
 
   const handleOnChangeState = (option) => {
     setSelectedState(option.value);
     onSelectState(option.value);
-  }
+  };
 
   const calculatorTaxAmount = (e, stateTaxRate) => {
     e.preventDefault();
@@ -110,18 +109,28 @@ const CalculatorSection = ({ content, onSelectState, state }) => {
     let taxAmount = (revenvue * stateTaxRate) / 100;
 
     setShowResult(true);
-    setFinalCalculator('$' + formatMoney(taxAmount));
+    setFinalCalculator("$" + formatMoney(taxAmount));
   };
 
   const formatMoney = (n, c, d, t) => {
-    var c = isNaN(c = Math.abs(c)) ? 2 : c,
+    var c = isNaN((c = Math.abs(c))) ? 2 : c,
       d = d == undefined ? "." : d,
       t = t == undefined ? "," : t,
       s = n < 0 ? "-" : "",
-      i = String(parseInt(n = Math.abs(Number(n) || 0).toFixed(c))),
+      i = String(parseInt((n = Math.abs(Number(n) || 0).toFixed(c)))),
       j = (j = i.length) > 3 ? j % 3 : 0;
 
-    return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) + (c ? d + Math.abs(n - i).toFixed(c).slice(2) : "");
+    return (
+      s +
+      (j ? i.substr(0, j) + t : "") +
+      i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) +
+      (c
+        ? d +
+          Math.abs(n - i)
+            .toFixed(c)
+            .slice(2)
+        : "")
+    );
   };
 
   return (
@@ -141,8 +150,8 @@ const CalculatorSection = ({ content, onSelectState, state }) => {
             <InputField className="dropdown" placeholder="Enter total revenue from sales" type="number" inputRef={inputRevenue} />
           </TopImageBox>
         </ImageBoxes>
-        <Button content={content.button} theme="primary56" margin="0 0 32px 0"arrow onClick={(e) => calculatorTaxAmount(e, state.tax_rate)} />
-        
+        <Button content={content.button} theme="primary56" margin="0 0 32px 0" arrow onClick={(e) => calculatorTaxAmount(e, state.tax_rate)} />
+
         {Object.entries(state).length !== 0 && (
           <Paragraph big mixed={true}>
             {parser(`The state sales tax rate in <b>${state.long_name}</b> is <b>${state.tax_rate}</b>%`)}
@@ -154,7 +163,6 @@ const CalculatorSection = ({ content, onSelectState, state }) => {
             {parser(`${inputRevenue.current.value} X ${state.tax_rate}% Tax = ${finalCalculator} Total`)}
           </Paragraph>
         )}
-
       </ContentCenter>
     </Calculator>
   );

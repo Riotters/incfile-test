@@ -396,7 +396,7 @@ const Header = ({ siteTitle }) => {
                     <MenuLink to="/learn-more/">Research Tool</MenuLink>
                   </MenuItem>
                   <MenuItem>
-                    <MenuLink to="/business-resources/">Free Business Dowmloads & Tools</MenuLink>
+                    <MenuLink to="/business-resources/">Free Business Downloads & Tools</MenuLink>
                   </MenuItem>
                   <MenuItem>
                     <MenuLink to="/start-a-business/">Business Startup Guides</MenuLink>
