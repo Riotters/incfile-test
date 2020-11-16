@@ -157,19 +157,19 @@ export const businessStructure = {
         answer: [
           {
             header: `LLC`,
-            text: `LLCs must be member or manager managed according to the terms of the operating agreement.`,
+            text: `LLCs provide personal asset protection, which shields you from being personally liable for business debts.`,
           },
           {
             header: `Corporation`,
-            text: `C Corps are required to have shareholder elected directors who oversee and elect officers to run the day-to-day operations of the company.`,
+            text: `C Corps provide personal asset protection, which shields you from being personally liable for business debts.`,
           },
           {
             header: `S-Corporation`,
-            text: `S Corps are required to have shareholder elected directors who oversee and elect officers to run the day-to-day operations of the company.`,
+            text: `S Corps provide personal asset protection, which shields you from being personally liable for business debts.`,
           },
           {
             header: `Nonprofit`,
-            text: `Nonprofits are managed by their board of directors following the regulations set forth in their Bylaws.`,
+            text: `Nonprofits provide personal asset protection, which shields you from being personally liable for business debts.`,
           },
         ],
       },
@@ -179,19 +179,19 @@ export const businessStructure = {
         answer: [
           {
             header: `LLC`,
-            text: `LLCs must be member or manager managed according to the terms of the operating agreement.`,
+            text: `LLCs are required to pay formation fees to the state. Fees will vary based on the state of incorporation.`,
           },
           {
             header: `Corporation`,
-            text: `C Corps are required to have shareholder elected directors who oversee and elect officers to run the day-to-day operations of the company.`,
+            text: `C Corps are required to pay formation fees to the state. Fees will vary based on the state of incorporation.`,
           },
           {
             header: `S-Corporation`,
-            text: `S Corps are required to have shareholder elected directors who oversee and elect officers to run the day-to-day operations of the company.`,
+            text: `S Corps are required to pay formation fees to the state. Fees will vary based on the state of incorporation.`,
           },
           {
             header: `Nonprofit`,
-            text: `Nonprofits are managed by their board of directors following the regulations set forth in their Bylaws.`,
+            text: `Nonprofits are required to pay formation fees to the state. Fees will vary based on the state of incorporation.`,
           },
         ],
       },
@@ -200,19 +200,19 @@ export const businessStructure = {
         answer: [
           {
             header: `LLC`,
-            text: `LLCs must be member or manager managed according to the terms of the operating agreement.`,
+            text: `Depending on the state of incorporation, reports and fees may be required.`,
           },
           {
             header: `Corporation`,
-            text: `C Corps are required to have shareholder elected directors who oversee and elect officers to run the day-to-day operations of the company.`,
+            text: `An annual report and franchise fees are generally due each year along with other reports and fees, which varies depending on the state of incorporation.`,
           },
           {
             header: `S-Corporation`,
-            text: `S Corps are required to have shareholder elected directors who oversee and elect officers to run the day-to-day operations of the company.`,
+            text: `An annual report and franchise fees are generally due each year along with other reports and fees, which varies depending on the state of incorporation.`,
           },
           {
             header: `Nonprofit`,
-            text: `Nonprofits are managed by their board of directors following the regulations set forth in their Bylaws.`,
+            text: `For Nonprofits this varies from state to state.`,
           },
         ],
       },
@@ -243,19 +243,19 @@ export const businessStructure = {
         answer: [
           {
             header: `LLC`,
-            text: `LLCs must be member or manager managed according to the terms of the operating agreement.`,
+            text: `Changes in ownership of an LLC are dependent on the terms of the operating agreement.`,
           },
           {
             header: `Corporation`,
-            text: `C Corps are required to have shareholder elected directors who oversee and elect officers to run the day-to-day operations of the company.`,
+            text: `Ownership changes in a C Corp are easily made through the sell of stock to new or existing shareholders.`,
           },
           {
             header: `S-Corporation`,
-            text: `S Corps are required to have shareholder elected directors who oversee and elect officers to run the day-to-day operations of the company.`,
+            text: `Ownership changes in an S Corp are easily made through the sell of stock to new or existing shareholders.`,
           },
           {
             header: `Nonprofit`,
-            text: `Nonprofits are managed by their board of directors following the regulations set forth in their Bylaws.`,
+            text: `Nonprofits have no owners.`,
           },
         ],
       },
@@ -264,19 +264,19 @@ export const businessStructure = {
         answer: [
           {
             header: `LLC`,
-            text: `LLCs must be member or manager managed according to the terms of the operating agreement.`,
+            text: `Depending on the state of incorporation, an LLC may be required to file an annual report and/or pay franchise fees.`,
           },
           {
             header: `Corporation`,
-            text: `C Corps are required to have shareholder elected directors who oversee and elect officers to run the day-to-day operations of the company.`,
+            text: `After formation, C Corps have many ongoing formalities such as writing bylaws, selecting directors, holding initial and annual shareholder meetings, and issuing stock.`,
           },
           {
             header: `S-Corporation`,
-            text: `S Corps are required to have shareholder elected directors who oversee and elect officers to run the day-to-day operations of the company.`,
+            text: `After formation, S Corps have many ongoing formalities such as writing bylaws, selecting directors, holding initial and annual shareholder meetings, and issuing stock.`,
           },
           {
             header: `Nonprofit`,
-            text: `Nonprofits are managed by their board of directors following the regulations set forth in their Bylaws.`,
+            text: `After formation, Nonprofits have many ongoing formalities such as writing bylaws, selecting directors, and seeking tax exempt status.`,
           },
         ],
       },
@@ -285,19 +285,19 @@ export const businessStructure = {
         answer: [
           {
             header: `LLC`,
-            text: `LLCs must be member or manager managed according to the terms of the operating agreement.`,
+            text: `LLCs are not allowed to sell stock but may be able to raise capital via bank loans and various other avenues.`,
           },
           {
             header: `Corporation`,
-            text: `C Corps are required to have shareholder elected directors who oversee and elect officers to run the day-to-day operations of the company.`,
+            text: `C Corps may issue many types of stocks, which may be sold to an unlimited number of shareholders.`,
           },
           {
             header: `S-Corporation`,
-            text: `S Corps are required to have shareholder elected directors who oversee and elect officers to run the day-to-day operations of the company.`,
+            text: `S Corps may issue one type of stock, which may be sold to a maximum of 100 shareholders.`,
           },
           {
             header: `Nonprofit`,
-            text: `Nonprofits are managed by their board of directors following the regulations set forth in their Bylaws.`,
+            text: `Nonprofits may obtain bank loans, grants, venture capital, and tax-exempt donations. In some states, Nonprofits may sell stock.`,
           },
         ],
       },
@@ -307,19 +307,19 @@ export const businessStructure = {
         answer: [
           {
             header: `LLC`,
-            text: `LLCs must be member or manager managed according to the terms of the operating agreement.`,
+            text: `LLCs are not taxed at the corporate level. Instead, all profit and losses are reported with the personal income taxes of each member.`,
           },
           {
             header: `Corporation`,
-            text: `C Corps are required to have shareholder elected directors who oversee and elect officers to run the day-to-day operations of the company.`,
+            text: `The income of the C Corp is taxed at the corporate level and then again at the shareholder level.`,
           },
           {
             header: `S-Corporation`,
-            text: `S Corps are required to have shareholder elected directors who oversee and elect officers to run the day-to-day operations of the company.`,
+            text: `S Corps are not taxed at the corporate level. Instead, all profit and losses are reported with the personal income taxes of each shareholder (owner).`,
           },
           {
             header: `Nonprofit`,
-            text: `Nonprofits are managed by their board of directors following the regulations set forth in their Bylaws.`,
+            text: `The income of Nonprofits is taxed at the corporate level unless they apply for and are granted tax-exempt status.`,
           },
         ],
       },
@@ -328,19 +328,19 @@ export const businessStructure = {
         answer: [
           {
             header: `LLC`,
-            text: `LLCs must be member or manager managed according to the terms of the operating agreement.`,
+            text: `LLCs are not taxed at the corporate level.`,
           },
           {
             header: `Corporation`,
-            text: `C Corps are required to have shareholder elected directors who oversee and elect officers to run the day-to-day operations of the company.`,
+            text: `The income of the C Corp is taxed at the corporate level and then again at the shareholder level.`,
           },
           {
             header: `S-Corporation`,
-            text: `S Corps are required to have shareholder elected directors who oversee and elect officers to run the day-to-day operations of the company.`,
+            text: `S Corps are not taxed at the corporate level.`,
           },
           {
             header: `Nonprofit`,
-            text: `Nonprofits are managed by their board of directors following the regulations set forth in their Bylaws.`,
+            text: `The income of Nonprofits is taxed at the corporate level unless they apply for and are granted tax-exempt status.`,
           },
         ],
       },
@@ -349,19 +349,19 @@ export const businessStructure = {
         answer: [
           {
             header: `LLC`,
-            text: `LLCs must be member or manager managed according to the terms of the operating agreement.`,
+            text: `LLCs are not eligible for tax-exempt status.`,
           },
           {
             header: `Corporation`,
-            text: `C Corps are required to have shareholder elected directors who oversee and elect officers to run the day-to-day operations of the company.`,
+            text: `C Corps are not eligible for tax-exempt status.`,
           },
           {
             header: `S-Corporation`,
-            text: `S Corps are required to have shareholder elected directors who oversee and elect officers to run the day-to-day operations of the company.`,
+            text: `S Corps are not eligible for tax-exempt status.`,
           },
           {
             header: `Nonprofit`,
-            text: `Nonprofits are managed by their board of directors following the regulations set forth in their Bylaws.`,
+            text: `The income of Nonprofits is taxed at the corporate level unless they apply for and are granted tax-exempt status.`,
           },
         ],
       },

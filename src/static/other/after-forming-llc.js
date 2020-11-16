@@ -14,8 +14,9 @@ export const about = {
     panels: [`LLC Filing Requirements`, `Business Name Trademark`, `Finances & Accounting`, `Set up Business Operations`, `Choose Business Tools`],
     content: [
       {
+        header: `Haven't formed your LLC yet? Read our How to Start an LLC guide for your state`,
         text: `You filed your Articles of Organization and started your LLC—now what? Here are the most important next steps to ensuring your business is successful.`,
-        header: `1. Understand Your Ongoing LLC Filing Requirements`,
+        header2: `1. Understand Your Ongoing LLC Filing Requirements`,
         text2: [
           {
             text: `Each state requires different forms, such as your business`,

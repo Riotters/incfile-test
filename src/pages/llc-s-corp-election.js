@@ -190,8 +190,14 @@ const CorpElection = () => (
       </ContentCenter>
     </Overhead>
     <FileForm>
-      <TextCenterLayout headline={fileForm.header} text={fileForm.text} />
+      <TextCenterLayout headline={fileForm.header} text={fileForm.text} bottomMargin="48"/>
       <ContentCenter contentWidth="770">
+      <Heading size="3" bottomMargin="8">
+          {fileForm.header2}
+        </Heading>
+        <Paragraph big bottomMargin="8">
+          {fileForm.text2}
+        </Paragraph>
         <NumericBoxedList content={fileForm.list} />
       </ContentCenter>
     </FileForm>

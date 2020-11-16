@@ -1,5 +1,5 @@
 export const top = {
-  header: `Start a New Business Today`,
+  header: `Business Startup Guides`,
   text: `Incfile has you covered with lots of business ideas and in-depth guides for success in different industries`,
   buttons: [
     {
@@ -177,7 +177,7 @@ export const checkType = {
             url: `/start-a-business/handyman/`,
           },
           {
-            header: `Botique Clothing`,
+            header: `Boutique Clothing`,
             url: `/start-a-business/boutique-clothing-business/`,
           },
           {

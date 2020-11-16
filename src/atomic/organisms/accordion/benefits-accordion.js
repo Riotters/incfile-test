@@ -110,7 +110,7 @@ const BenefitsAccordion = () => (
     <Wrapper>
       <TabsWrapper>
         <Scroller>
-          <Tab>State Filings</Tab>
+          <Tab>Company Changes</Tab>
           <Tab>Compliance</Tab>
           <Tab>Registered Agent</Tab>
           <Tab>IRS Filings</Tab>

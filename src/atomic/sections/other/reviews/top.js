@@ -11,6 +11,8 @@ import ShapeCurve from "../../../atoms/shapes/curve";
 import AbsoluteShapCure from '../../../elements/absolute-shape-curve-e';
 import { getAggregrateReviews } from '../../../../api/Api';
 import { formatNumber, roundUp } from '../../../../helpers/utils';
+import { Paragraph } from "../../../atoms/typography/paragraph";
+import parse from 'html-react-parser';
 
 const Wrapper = styled.div`
     padding: 80px 0;
@@ -187,11 +189,11 @@ function Top({ content }) {
             
             <Container>
                 <HeadingCenter
-                    bottomMargin={100}
+                    bottomMargin={0}
                     className="heading"
                     headline={content.header}
-                    headlineWidth="770"
-                />
+                    headlineWidth="770" />
+                <Paragraph big mixed bottomMargin={100} style={{ textAlign: `center`}}>{parse(content.text)}</Paragraph>
 
                 <Grid>
                     <AbsoluteShapCure rotate={-90} left="-25px" top="-25px">

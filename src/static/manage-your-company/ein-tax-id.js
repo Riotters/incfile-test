@@ -74,18 +74,18 @@ export const faq = {
       {
         question: `What circumstances require me to change my EIN?`,
         answer: `If you already have an EIN, and the organization or ownership of your business changes, you may need to apply for a new number. Some of the circumstances under which a new number is required are as follows:`,
-      },
+        list: [
+            "An existing business is purchased or inherited by an individual who will operate it as a sole proprietorship.",
+            "A sole proprietorship changes to an LLC, corporation, or partnership.",
+            "A partnership changes to an LLC, corporation, or sole proprietorship.",
+            "A corporation changes to an LLC, partnership, or sole proprietorship.",
+            "An LLC changes to a corporation, partnership, or sole proprietorship.",
+            "An individual owner dies, and the estate takes over the business.",
+          ],
+        },
       {
         question: `When will I receive my Federal Employer Identification Number?`,
         answer: `If it is a stand alone order for an existing entity we can obtain and email the EIN within 1 business day.`,
-        list: [
-          "An existing business is purchased or inherited by an individual who will operate it as a sole proprietorship.",
-          "A sole proprietorship changes to an LLC, corporation, or partnership.",
-          "A partnership changes to an LLC, corporation, or sole proprietorship.",
-          "A corporation changes to an LLC, partnership, or sole proprietorship.",
-          "An LLC changes to a corporation, partnership, or sole proprietorship.",
-          "An individual owner dies, and the estate takes over the business.",
-        ],
       },
       {
         question: `What is the SS4/EIN/Tax ID Number?`,
