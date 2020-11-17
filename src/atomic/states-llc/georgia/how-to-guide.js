@@ -190,16 +190,21 @@ const HowToGuide = ({ content, data }) => {
                 widthUnit="%">
                 <Heading size={3}>{content.mainSteps.step4.heading1}</Heading>
                 <Paragraph big mixed={true}>{parse(content.mainSteps.step4.text1)}</Paragraph>
-                <Button content={content.mainSteps.step4.dowload_205_button} theme="secondary56" arrow width="240px" margin="16px 0 0 0" marginMD="42px 0 42px 0" />
+                <Button content={content.mainSteps.step4.dowload_205_button} theme="secondary56" arrow width="360px" margin="16px 0 0 0" marginMD="42px 0 42px 0" />
                 <Paragraph big mixed={true}>{parse(content.mainSteps.step4.text2)}</Paragraph>
-
+                <Paragraph big mixed={true}>{parse(content.mainSteps.step4.text3)}</Paragraph>
+                <Paragraph big mixed={true}>{parse(content.mainSteps.step4.text4)}</Paragraph>
+                <Paragraph big mixed={true}>{parse(content.mainSteps.step4.text5)}</Paragraph>
+                <Paragraph big mixed={true}>{parse(content.mainSteps.step4.text6)}</Paragraph>
+                <BoxCTA bgColor={color.orange3} bgImage={BgBoxHandlePaperWorks} content={content.mainSteps.step4.cta} />
+                
                 <RelativeElement margin="40px 0">
                     <AbsoluteShapeCurveElement right="-25px" top="-30px">
                         <ShapeCurve color={color.purple1} />
                     </AbsoluteShapeCurveElement>
                 </RelativeElement>
-                <Paragraph big mixed={true}>{parse(content.mainSteps.step4.text3)}</Paragraph>
-                <BoxCTA bgColor={color.orange3} bgImage={BgBoxHandlePaperWorks} content={content.mainSteps.step4.cta} />
+                
+                
 
                 <AnnualReportFilingBox data={data} />
 

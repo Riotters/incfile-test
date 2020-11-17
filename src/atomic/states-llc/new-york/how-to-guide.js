@@ -136,6 +136,9 @@ const HowToGuide = ({ content, data }) => {
                 <Paragraph big mixed={true}>
                     {parse(content.mainSteps.step1.text2)}
                 </Paragraph>
+                <Paragraph big mixed={true}>
+                    {parse(content.mainSteps.step1.text3)}
+                </Paragraph>
                 <BoxCTA bgColor={color.purple3} bgImage={BgBoxBusinessNameSearchTool} content={content.mainSteps.step1.cta} />
             </TextBlockWithNumberCounting>
 
@@ -219,7 +222,7 @@ const HowToGuide = ({ content, data }) => {
                     {parse(content.mainSteps.step4.text1)}
                 </Paragraph>
                 <IconListColorBox color={color.blue3} content={content.mainSteps.step4.lists} rounded />
-                <Button content={content.mainSteps.step4.dowload_205_button} theme="secondary56" arrow width="240px" margin="16px 0 0 0" marginMD="42px 0 42px 0" />
+                <Button content={content.mainSteps.step4.dowload_205_button} theme="secondary56" arrow width="360px" margin="16px 0 0 0" marginMD="42px 0 42px 0" />
                 <Paragraph big mixed={true}>
                     {parse(content.mainSteps.step4.text2)}
                 </Paragraph>
@@ -295,8 +298,45 @@ const HowToGuide = ({ content, data }) => {
                 <Paragraph big mixed={true}>
                     {parse(content.mainSteps.step6.text2)}
                 </Paragraph>
+                <Paragraph big mixed={true}>
+                    {parse(content.mainSteps.step6.text3)}
+                </Paragraph>
+                <Paragraph big mixed={true}>
+                    {parse(content.mainSteps.step6.text4)}
+                </Paragraph>
+                <Paragraph big mixed={true}>
+                    {parse(content.mainSteps.step6.text5)}
+                </Paragraph>
                 <Button content={content.mainSteps.step6.button1} theme="secondary56" arrow width="450px" margin="16px 0 0 0" marginMD="42px 0 42px 0" />
                 {/* <BoxCTA bgColor={color.orange3} bgImage={BgBoxPersonalOA} content={content.mainSteps.step6.cta} /> */}
+            </TextBlockWithNumberCounting>
+
+            <TextBlockWithNumberCounting
+                blockId="step7"
+                numberCounting="7"
+                borderRadius="0"
+                boxShadow={false}
+                textBackgroundColor="transparent"
+                imageBackgroundColor={color.white}
+                imageShadowColor={shadow.white2}
+                imageShadowOpacity={0.5}
+                boxShadow={false}
+                paddingLeft={0}
+                style={{ marginTop: "70px" }}
+                circleShadowY={40}
+                circleShadowBlure={80}
+                width={100}
+                widthUnit="%"
+            >
+                <Heading size={3}>{content.mainSteps.step7.heading1}</Heading>
+                <Paragraph big mixed={true}>
+                    {parse(content.mainSteps.step7.text1)}
+                </Paragraph>
+                <Paragraph big mixed={true}>
+                    {parse(content.mainSteps.step7.text2)}
+                </Paragraph>
+                <Button content={content.mainSteps.step7.button1} theme="secondary56" arrow width="450px" margin="16px 0 0 0" marginMD="42px 0 42px 0" />
+                <BoxCTA bgColor={color.orange3} bgImage={BgBoxHandlePaperWorks} content={content.mainSteps.step7.cta} />
             </TextBlockWithNumberCounting>
 
             {content.otherInfo.map((item, i) => (

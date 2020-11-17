@@ -68,7 +68,8 @@ export const HomePageContent = {
       step1: {
         heading1: `Complete a New York LLC Search and Choose a Unique Business Name`,
         text1: `You will need a distinctive and original name for your New York LLC that’s not used by any other business in NY. If you’re having trouble coming up with a name, try out Incfile’s <a href="/business-name-generator/">Business Name Generator</a> to brainstorm ideas. There are also a few naming rules you’ll need to follow, which you can read about in detail on our section on <a href="/new-york-llc/new-york-business-names/">New York LLC Business Names.</a>`,
-        text2: `If you already have a name in mind, make sure it’s available by using the New York business entity name search on the <a href="https://www.dos.ny.gov/corps/bus_entity_search.html" target="_blank" rel="noopener noreferrer">NY Department of State (DOS) website</a> or Incfile’s free Business Name Search tool.`,
+        text2: `If you already have a name in mind, make sure it’s available by using the New York business entity name search on the <a href="https://www.dos.ny.gov/corps/bus_entity_search.html" target="_blank" rel="noopener noreferrer">NY Department of State (DOS) website</a> or <a href="/business-name-search/" target="_blank" rel="noopener noreferrer">Incfile’s free Business Name Search tool.</a>`,
+        text3: `There are a few rules you’ll need to follow when choosing an LLC name, which you can learn about in the <a href="/new-york-llc/new-york-business-names/" target="_blank" rel="noopener noreferrer">naming section of this guide.</a> One rule is that your business name must have the words “Limited Liability Company,” “L.L.C.” or “LLC” in it.`,
         cta: {
           title: `Incfile’s Business <br>Name Search Tool`,
           subtitle: `We’ll search the New York Division of Corporations registry for you.`,
@@ -106,7 +107,7 @@ export const HomePageContent = {
           header: `Here’s what is typically included:`,
           list: [`Your business name and address`, `Details of your Registered Agent`, `Name and address of the incorporator`],
         },
-        dowload_205_button: {
+        button: {
           text: `Download New York's Articles of Organization Form Here`,
           url: `https://www.dos.ny.gov/forms/corporations/1336-f.pdf`,
         },
@@ -138,6 +139,14 @@ export const HomePageContent = {
         text2: `Publication must be complete within 120 days of your official LLC incorporation date, and you need to run the notices for six consecutive weeks. You can see step-by-step instructions for this process in our "How to Meet New York LLC Publication Requirements" guide.`,
         text3: `Once you’ve met the publication requirements, the newspapers will send you an Affidavit of Publication, which you then need to file with the Department of State to receive your Certificate of Publication. The state charges a $50 fee for this certificate.`,
         text4: `<a href="https://www.dos.ny.gov/forms/corporations/1708-f-l.pdf" target="_blank" rel="noopener noreferrer">Download New York's Certificate of Publication Form</a>`,
+        text5: `
+            <b>Where to File Your Certificate of Publication:</b></br>
+            Department of State Division of Corporations</br>
+            State Records and Uniform Commercial Code</br>
+            One Commerce Plaza</br>
+            99 Washington Ave.</br>
+            Albany, NY 12231-0001</br>
+        `,
       },
       step7: {
         heading1: `Create an LLC Operating Agreement`,
