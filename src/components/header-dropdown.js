@@ -66,6 +66,12 @@ const Navigation = styled.nav`
     height: 100%;
     flex-grow: 1;
   }
+  
+  @media (max-width: 992px) {
+    max-height: 100%;
+    overflow-y: auto;
+    align-items: flex-start;
+  }
 `;
 
 const Menu = styled.ul`
@@ -81,6 +87,10 @@ const Menu = styled.ul`
     justify-content: flex-start;
     width: initial;
   }
+  
+  @media (max-width: 992px) {
+    height: auto;
+  }
 `;
 
 const MenuItem = styled.li`
@@ -91,14 +101,42 @@ const MenuItem = styled.li`
     height: 100%;
   }
   
-  &:hover > div, &.active > div {
-    transition: max-height .5s;
+  @media (min-width: 992px) {
+    &:hover > div {
+      max-height: 4000px;
+      
+      &:last-child {
+        display: grid;
+        padding: 24px 32px;
+      }
+    }
+  }
+  
+  @media (max-width: 992px) {
+    margin-right: 0;
+    
+    &.active {
+      height: auto;
+    }
+    
+    &.active > div {
     max-height: 4000px;
     
-    &:last-child {
-      display: grid;
-      padding: 24px 32px;
+      &:last-child {
+        display: grid;
+        padding: 24px 32px;
+      }
     }
+    
+    svg {
+      transition: transform .6s;
+      transform: rotate(0deg);
+    }
+  }
+  
+  &.active svg {
+    transform: rotate(-180deg);
+  }
 `;
 
 const MenuLink = styled(Link)`
@@ -136,6 +174,10 @@ const LoginWrapper = styled.div`
     align-items: center;
     margin-top: 0;
   }
+  
+  @media (max-width: 992px) {
+    width: 100%;
+  }
 
   a {
     &:nth-child(2) {
@@ -153,26 +195,37 @@ const FlexRow = styled.div`
   justify-content: center;
   height: 100%;
   align-items: center;
+  
+  @media screen and (max-width: 992px) {
+    justify-content: space-between;
+  }
 `;
 
 const DropdownMenu = styled.div`
+  transition: max-height .8s;
   top: calc(100% + 1px);
   display: none;
   grid-template-columns: auto auto;
   max-height: 0;
   padding: 0;
   z-index: 999;
+  box-shadow: ${shadow.white2};
+  background: ${color.white};
+  position: absolute;
 
   @media screen and (max-width: 992px) {
     position: relative;
     grid-template-columns: 100%;
     overflow: hidden;
   }
+  
+  @media screen and (max-width: 992px) {
+    position: static;
+    top: unset;
+    background: unset;
+    box-shadow: unset;
+  }
 
-  box-shadow: ${shadow.white2};
-
-  background: ${color.white};
-  position: absolute;
 
   & > ul {
     list-style: none;
@@ -186,6 +239,7 @@ const DropdownMenu = styled.div`
     a:hover {
       border-bottom: none;
       color: ${color.orange1};
+      height: 35px;
     }
   }
 
@@ -216,6 +270,33 @@ const Login = styled.a`
   @media (min-width: 1200px) {
     font-size: 16px;
     line-height: 19px;
+  }
+  
+  @media (max-width: 992px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    background-color: ${color.orange1};
+    border: 2px solid #fd8550;
+    border-radius: 50px;
+    color: ${color.white};
+    font-family: MarkPro;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    position: relative;
+    padding: 6px 38px;
+    margin: 24px 0 12px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    
+    &:hover {
+      background-color: ${color.white};
+      color: ${color.orange1};
+    }
   }
 
   &:hover {
@@ -268,6 +349,16 @@ const SubmenuColumn = styled.ul`
   }
 `;
 
+function handleHeaderClick(e) {
+  let menuItem = e.target.closest(".menu-item-l1");
+
+  if (menuItem.className.indexOf("active") > -1) {
+    menuItem.className = menuItem.className.replace(" active", "");
+  } else {
+    menuItem.className += " active";
+  }
+}
+
 const Header = ({ siteTitle }) => {
   const [menu, showMenu, active] = useState(false);
 
@@ -281,7 +372,7 @@ const Header = ({ siteTitle }) => {
       <MobileWrapper showNav={menu}>
         <Navigation>
           <Menu>
-            <MenuItem>
+            <MenuItem onClick={handleHeaderClick} className="menu-item-l1">
               <FlexRow>
                 <MenuLink to="/start-your-company/">Review Entity Type</MenuLink>
                 <div>
@@ -308,7 +399,7 @@ const Header = ({ siteTitle }) => {
                 </SubmenuColumn>
               </DropdownMenu>
             </MenuItem>
-            <MenuItem>
+            <MenuItem onClick={handleHeaderClick} className="menu-item-l1">
               <FlexRow>
                 <MenuLink to="/manage-your-company/">Manage Your Company</MenuLink>
                 <div>
@@ -382,7 +473,7 @@ const Header = ({ siteTitle }) => {
                 </SubmenuColumn>
               </DropdownMenu>
             </MenuItem>
-            <MenuItem>
+            <MenuItem onClick={handleHeaderClick} className="menu-item-l1">
               <FlexRow>
                 <MenuLink to="/business-entity-comparison/">Learning Center</MenuLink>
                 <DropdownSVG />
@@ -467,7 +558,7 @@ const Header = ({ siteTitle }) => {
                 </SubmenuColumn>
               </DropdownMenu>
             </MenuItem>
-            <MenuItem>
+            <MenuItem onClick={handleHeaderClick} className="menu-item-l1">
               <FlexRow>
                 <MenuLink to="/about/">About</MenuLink>
                 <DropdownSVG />
@@ -509,7 +600,7 @@ const Header = ({ siteTitle }) => {
         </Navigation>
         <LoginWrapper>
           <Login href={`${process.env.ORDER_URL}/dashboard`}>Login</Login>
-          <Button theme="secondary40" to={`${process.env.ORDER_URL}/form-order-now.php`}>
+          <Button theme="secondary40" to={`${process.env.ORDER_URL}/form-order-now.php`} width="100%">
             Incorporate now
           </Button>
         </LoginWrapper>
