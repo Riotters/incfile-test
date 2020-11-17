@@ -138,17 +138,14 @@ const Fee = styled.div`
   }
 `;
 
-const StyledReactTooltip = styled.div`
-  display: flex;
-`;
-
 const PricingCard = ({ className, content, image, ...rest }) => {
   useEffect(() => {
     ReactTooltip.rebuild();
   });
   return (
     <Wrapper className={className} {...rest}>
-      {content.variant && (
+        <ReactTooltip id={"benefitTooltip-" + content.header} />
+        {content.variant && (
         <Box>
           <span>{content.variant}</span>
         </Box>
@@ -167,7 +164,7 @@ const PricingCard = ({ className, content, image, ...rest }) => {
           <li>
             <Fee>
               <div>
-                <span className="help-mark" data-tip="aaa" data-for="benefitTooltip">
+                <span className="help-mark" data-tip="Some content" data-for={"benefitTooltip-" + content.header}>
                   <HelpMarkSVG />
                 </span>
                 <span className="text">{fee.text}</span>
@@ -191,7 +188,6 @@ const PricingCard = ({ className, content, image, ...rest }) => {
           ))}
       </ul>
       {content.fee && <Paragraph bottomMargin="6">{content.fee}</Paragraph>}
-      <StyledReactTooltip id="benefitTooltip" />
     </Wrapper>
   );
 };

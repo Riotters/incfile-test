@@ -69,7 +69,7 @@ const Button = styled.button`
   justify-content: center;
   align-items: center;
   height: 40px;
-  min-width: 252px;
+  min-width: 182px;
   background-color: ${color.white};
   border-radius: 24px;
   border: none;
