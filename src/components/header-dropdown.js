@@ -175,6 +175,18 @@ const LoginWrapper = styled.div`
     margin-top: 0;
   }
   
+  @media (min-width: 556px) and (max-width: 992px) {
+    flex-direction: row;
+    
+    a:first-child {
+      margin-right: 30px;
+    }
+    
+    a:last-child {
+      margin-top: 24px;
+    }
+  }
+  
   @media (max-width: 992px) {
     width: 100%;
   }
@@ -217,6 +229,10 @@ const DropdownMenu = styled.div`
     position: relative;
     grid-template-columns: 100%;
     overflow: hidden;
+  }
+  
+  @media (min-width: 556px) and (max-width: 992px) {
+    grid-template-columns: auto auto;
   }
   
   @media screen and (max-width: 992px) {
