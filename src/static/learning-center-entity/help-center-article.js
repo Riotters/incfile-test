@@ -86,14 +86,14 @@ export const rocket = {
     header2:
       `your business with Incfile`,
     text:
-      `No Contracts. No Surprise.`,
+      `No Contracts. No Surprises.`,
     text2:
       `Only $0 + State Fee to Launch Your Business.`,
     button: {
       text: 
         `launch your business`,
       url:
-        `/`,  
+       `${process.env.ORDER_URL}/form-order-now.php`,
     }
   }
 
