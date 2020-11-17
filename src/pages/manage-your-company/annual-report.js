@@ -33,7 +33,7 @@ const AnnualReport = () => (
     <About content={about} />
     <Help content={help} />
     <Faq content={faq} />
-    <Benefits />
+    <Benefits page="annual-report" />
     <Articles />
   </Layout>
 );
