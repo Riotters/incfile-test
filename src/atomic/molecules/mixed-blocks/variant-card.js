@@ -138,6 +138,11 @@ const Fee = styled.div`
   }
 `;
 
+const toolTipTexts = {
+    "Package fee": "<span style='line-height: 13px; text-align: center;'>The Package Price covers the cost to create, <br />prepare and file all required legal paperwork on your behalf to properly form your new business entity. <br />It also includes the cost for additional services and products in your chosen package.</span>",
+    "State fee": "<span style='line-height: 13px; text-align: center;'>The State Fee is what your selected state charges to file a new business entity. <br />This amount is pass-through and goes 100% directly to the Secretary of State; <br />Incfile does not keep any part of this fee.</span>"
+};
+
 const PricingCard = ({ className, content, image, ...rest }) => {
   useEffect(() => {
     ReactTooltip.rebuild();
@@ -164,7 +169,7 @@ const PricingCard = ({ className, content, image, ...rest }) => {
           <li>
             <Fee>
               <div>
-                <span className="help-mark" data-tip="Some content" data-for={"benefitTooltip-" + content.header}>
+                <span className="help-mark" data-tip={ toolTipTexts[ fee.text ] } data-html={true} data-for={"benefitTooltip-" + content.header}>
                   <HelpMarkSVG />
                 </span>
                 <span className="text">{fee.text}</span>
