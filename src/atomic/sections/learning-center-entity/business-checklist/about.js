@@ -9,6 +9,7 @@ import IconTextColorBox from "../../../molecules/text-blocks/icon-h4-text-color"
 import ArrowLink from "../../../molecules/buttons/text";
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/business-checklist-about-top-left.inline.svg";
+import parse from "html-react-parser";
 
 const About = styled.section`
   position: relative;
@@ -27,9 +28,9 @@ const AboutSection = ({ className, content }) => (
         <ImageContent image="business-checklist-rocket-lunch">
             <Heading size={3} bottomMargin="24">{content.header}</Heading>
             <Paragraph big bottomMargin="40">{content.text}</Paragraph>
-            <IconTextColorBox color={color.green3} Icon={IconSVG} content={content.box} bottomMargin="48" rounded curve />
-            <Paragraph big bottomMargin="72">{content.text2}</Paragraph>
-            <ArrowLink bottomMargin="72" content={content.link} />
+            <IconTextColorBox color={color.green3} Icon={IconSVG} content={content.box} bottomMargin="40" rounded curve />
+            <Paragraph big bottomMargin="40">{content.text2}</Paragraph>
+            <Paragraph big bottomMargin="72">{parse(content.text3)}</Paragraph>
         </ImageContent>
     </About>
   );

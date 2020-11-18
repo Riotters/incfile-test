@@ -469,7 +469,7 @@ export const checks = {
     text: "Download a PDF Checklist",
     url: "#",
   },
-  text: `<p>From developing your business idea to measuring success, </br>
+  text: `<p>From developing your business idea to measuring success,</br>
     our free guide has all the info you need to get your business off the ground.</p>`,
 };
 
@@ -481,13 +481,10 @@ export const about = {
     header: `Relax, we’ve got you covered.`,
     text: `We’re experts at incorporating LLCs and corporations, and we’ve learned a thing or two about starting and running businesses. 
         That’s why we put together this complete and easy-to-understand business checklist — to make it faster and simpler for you to get stuff done. `,
-  },
-  text2: `The majority of larger businesses in the United States are structured as C Corporations, although a C Corp could, theoretically, consist of just one person. 
+    },
+    text2: `The majority of larger businesses in the United States are structured as C Corporations, although a C Corp could, theoretically, consist of just one person. 
       The information below will help you decide if a C Corporation structure is right for your business.`,
-  link: {
-    text: `View our specialized guidelines`,
-    url: `/`,
-  },
+    text3: `We’ve even got <a href="/start-a-business/" target="_blank" rel="noopener noreferrer">specialized guides</a> depending on the type of business you’re building.`,
 };
 
 export const help = {

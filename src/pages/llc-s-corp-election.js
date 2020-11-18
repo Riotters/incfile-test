@@ -27,6 +27,7 @@ import { Paragraph } from "../atomic/atoms/typography/paragraph";
 import TotalSavings from "../atomic/organisms/forms/total-savings";
 import LeftContentRightImage from "../atomic/partials/left-content-right-image";
 import BusinessRevenue from "../atomic/molecules/blocks/business-revenue";
+import parse from "html-react-parser";
 
 const LLCsTax = styled.section`
   position: relative;
@@ -190,13 +191,13 @@ const CorpElection = () => (
       </ContentCenter>
     </Overhead>
     <FileForm>
-      <TextCenterLayout headline={fileForm.header} text={fileForm.text} bottomMargin="48"/>
+      <TextCenterLayout headline={fileForm.header} text={fileForm.text} bottomMargin="64"/>
       <ContentCenter contentWidth="770">
-      <Heading size="3" bottomMargin="8">
+      <Heading size="4" bottomMargin="8">
           {fileForm.header2}
         </Heading>
-        <Paragraph big bottomMargin="8">
-          {fileForm.text2}
+        <Paragraph big mixed style={{ textAlign: `center` }}>
+          {parse(fileForm.text2)}
         </Paragraph>
         <NumericBoxedList content={fileForm.list} />
       </ContentCenter>

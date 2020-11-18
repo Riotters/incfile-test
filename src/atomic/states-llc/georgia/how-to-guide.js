@@ -190,7 +190,7 @@ const HowToGuide = ({ content, data }) => {
                 widthUnit="%">
                 <Heading size={3}>{content.mainSteps.step4.heading1}</Heading>
                 <Paragraph big mixed={true}>{parse(content.mainSteps.step4.text1)}</Paragraph>
-                <Button content={content.mainSteps.step4.dowload_205_button} theme="secondary56" arrow width="360px" margin="16px 0 0 0" marginMD="42px 0 42px 0" />
+                <Button content={content.mainSteps.step4.dowload_205_button} theme="secondary56" arrow margin="16px auto 0 0" marginMD="42px auto 42px 0" />
                 <Paragraph big mixed={true}>{parse(content.mainSteps.step4.text2)}</Paragraph>
                 <Paragraph big mixed={true}>{parse(content.mainSteps.step4.text3)}</Paragraph>
                 <Paragraph big mixed={true}>{parse(content.mainSteps.step4.text4)}</Paragraph>

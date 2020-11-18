@@ -17,6 +17,7 @@ const Wrapper = styled.section`
     ul {
         list-style: inside disc;
         margin-bottom: 42px;
+        padding-left: 32px;
     }
     
     ul, p {
