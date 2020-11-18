@@ -98,7 +98,8 @@ export const fileForm = {
   header: `How to File Your S Corp Tax Election`,
   text: `There are a couple of ways you can file form 2553`,
   header2: `File Form 2553, S Corporation Tax Election Yourself`,
-  text2: `If you want to complete the filing process yourself, here are the steps you need to follow:`,
+  text2: `<p>If you want to complete the filing process yourself,</br>
+    here are the steps you need to follow:</p>`,
   list: [
     `Go to the Internal Revenue Service website`,
     `Find the section on S Corporation Tax Elections`,

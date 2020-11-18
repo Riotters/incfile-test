@@ -182,7 +182,7 @@ export const businessTaxesPageContent = {
           `On profits of <strong>$60,000</strong>, you would pay self-employment tax of <strong>$9,180</strong>`,
           `On profits of <strong>$100,000</strong>, you would pay self-employment tax of <strong>$15,300</strong>`,
           `On profits of <strong>$140,000</strong>, you would pay self-employment tax of <strong> $21,420</strong>`,
-          `On profits of <strong>$160,000</strong>, you would pay self-employment tax of <strong> $24,480c</strong>`,
+          `On profits of <strong>$160,000</strong>, you would pay self-employment tax of <strong> $24,480</strong>`,
         ],
       },
     },
@@ -204,6 +204,7 @@ export const businessTaxesPageContent = {
       content: {
         title: `Treating your LLC as an S Corp can help you save money.`,
         subtitle: `you can do this by making an “S Corporation Tax Election” with the IRS using a form known as Form 2553. We can file your Form 2553 with the IRS on your behalf.`,
+        bgSize: "",
         button: {
           text: `Get My LLC Treated As An S Corp`,
           url: `/business-accounting/`,

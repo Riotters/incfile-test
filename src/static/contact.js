@@ -5,7 +5,7 @@ export const existing = {
     with your order. Below are some helpful links provided to orient you with the features of the client dashboard.`,
   button: {
     text: `Check my order status`,
-    url: `${process.env.ORDER_URL}/dashboard`,
+    url: `${process.env.ORDER_URL}/dashboard/`,
   },
   phone: {
     phone1: `844.830.8267`,

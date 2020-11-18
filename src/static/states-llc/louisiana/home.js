@@ -101,7 +101,15 @@ export const howToGuide = [
         },
         {
           question: `STEP 6: File Articles of Organization with the Louisiana Secretary of State`,
-          answer: ``,
+          answer: `Once you've gathered all the information for your LLC, you’re ready for your official State of Louisiana LLC filing. You’ll need to file a formal document with the LA Secretary of State. This document is known as your “Articles of Organization,” and filing the document creates your Louisiana LLC. Here’s what is typically included:</br>
+          <ul>
+          <li>Your business name and address</li>
+          <li>Details of your Registered Agent</li>
+          <li>Purpose of your business</li>
+          <li>Name of the incorporator</li>
+          </ul></br>
+          You can file your Louisiana LLC Articles of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Louisiana. You only need to file your Articles of Organization once.</br></br>
+          <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MD">Form your LLC now</a>`,
         },
       ],
     },
@@ -1508,7 +1516,7 @@ export const businessTaxes = [
 ];
 
 export const compare = {
-  header: `How We Compare. <br>Get more more for less.`,
+  header: `How We Compare. <br>Get more for less.`,
   table: {
     headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
     rows: [
