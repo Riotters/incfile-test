@@ -1550,12 +1550,20 @@ export const businessTaxes = [
 ];
 
 export const compare = {
-  header: `How We Compare. <br>Get more more for less.`,
+  header: `How We Compare. <br>Get more for less.`,
   table: {
     headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
     rows: [
-      [`Business incorporation service`, `$49`, `$149`, `$149`],
-      [`Registered Agent included in the price`, `check-green`, `check-red`, `check-red`],
+        [`Initial Filing Price`, `$0 +\u00a0State\u00a0Fee`, `$79 +\u00a0State\u00a0Fee`, `$49 +\u00a0State\u00a0Fee`],
+        [`File Articles`, `check-green`, `check-green`, `check-green`],
+        [`Name Search`, `check-green`, `check-green`, `check-green`],
+        [`Business Dashboard with Additional Services, Content & Support`, `check-green`, `check-red`, `check-green`],
+        [`Business Tax Consultation`, `check-green`, `check-green`, `check-green`],
+        [`First Year Registered Agent`, `FREE`, `$249`, `check-green`],
+        [`Operating Agreement`, `$40`, `$99`, `check-green`],
+        [`EIN`, `$70`, `$159`, `$70`],
+        [`Business Contract Templates`, `$150`, `$40`, `check-red`],
+        [`Expedited Order`, `(+$50)`, `$350`, `$50`],
     ],
   },
 };
@@ -1592,10 +1600,6 @@ export const requirements = {
               {
                 type: `paragraph`,
                 content: `The state charges this amount to file a new business entity. This fee goes directly to the Secretary of State.`,
-              },
-              {
-                type: `paragraph`,
-                content: `Ut tincidunt neque a viverra egestas. Suspendisse tempus metu.`,
               },
               {
                 type: `arrow-links`,

@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import { color } from "../../atoms/styles/colors";
+import { shadow } from "../../atoms/styles/shadows";
 import { Heading } from "../../atoms/typography/heading";
 import { Paragraph } from "../../atoms/typography/paragraph";
 import Whitebox from "../../atoms/boxes/white-box";
@@ -8,6 +9,7 @@ import TextCheck from "../../molecules/text-blocks/text-check";
 import Button from "../buttons/button";
 import HelpMarkSVG from "../../../images/icons/help-mark.inline.svg";
 import Image from "../../atoms/image/image_nobase64";
+import ReactTooltip from "react-tooltip";
 
 const Wrapper = styled.div`
   display: flex;
@@ -21,7 +23,8 @@ const Wrapper = styled.div`
   background-color: ${(props) => (props.color ? props.color : "")};
   border-radius: 5px;
 
-  & > h4, & > p {
+  & > h4,
+  & > p {
     text-align: center;
   }
 
@@ -33,7 +36,7 @@ const Wrapper = styled.div`
   ul {
     width: 100%;
     list-style: none;
-    
+
     li {
       font-family: Avenir, sans-serif;
       font-size: 16px;
@@ -43,7 +46,7 @@ const Wrapper = styled.div`
       &:not(:last-child) {
         margin-bottom: 8px;
       }
-    } 
+    }
   }
 `;
 
@@ -120,7 +123,8 @@ const Fee = styled.div`
     cursor: pointer;
   }
 
-  .text, .price {
+  .text,
+  .price {
     font-family: Avenir, sans-serif;
     font-size: 16px;
     line-height: 24px;
@@ -131,49 +135,85 @@ const Fee = styled.div`
   }
 
   .price {
-    ${color.black}; 
+    ${color.black};
   }
 `;
 
-const PricingCard = ({ className, content, image, ...rest }) => (
-  <Wrapper className={className} {...rest}>
-    {content.variant && (
-      <Box>
-        <span>{content.variant}</span>
-      </Box>
-    )}
-    <Heading size="4" marginBottom="16">{content.header}</Heading>
-    <Paragraph bottomMargin="8">{content.text}</Paragraph>
-    <ImageWrapper>
-      <Image filename={image} />
-    </ImageWrapper>
-    <Price>${content.price}</Price>
-    <Button theme="primary48" content={content.button} margin="0 0 32px 0" wrap arrow />
-    <ul style={{marginBottom: "48px"}}>
-      {content.fees.map((fee) => (
-        <li>
-          <Fee><div><span className="help-mark"><HelpMarkSVG /></span><span className="text">{fee.text}</span></div><span className="price">${fee.price}</span></Fee>
-        </li>
-      ))}
-    </ul>
+const TooltipWrapper = styled.div`
+    .tooltip-content {
+        font-size: 16px;
+        max-width: 350px;
+        padding: 40px;
+        line-height: 24px;
+    }
+    
+    & > div.show {
+        opacity: 1;
+        box-shadow: ${shadow.white2};
+        border-radius: 16px;
+        padding: 0;
+    }
+`;
+
+const toolTipTexts = {
+    "Package fee": "<p class='tooltip-content'>The Package Price covers the cost to create, prepare and file all required legal paperwork on your behalf to properly form your new business entity. It also includes the cost for additional services and products in your chosen package.</p>",
+    "State fee": "<p class='tooltip-content'>The State Fee is what your selected state charges to file a new business entity. This amount is pass-through and goes 100% directly to the Secretary of State; Incfile does not keep any part of this fee.</p>"
+};
+
+const PricingCard = ({ className, content, image, ...rest }) => {
+  useEffect(() => {
+    ReactTooltip.rebuild();
+  });
+  return (
+    <Wrapper className={className} {...rest}>
+        <TooltipWrapper>
+            <ReactTooltip id={"benefitTooltip-" + content.header} />
+        </TooltipWrapper>
+        {content.variant && (
+        <Box>
+          <span>{content.variant}</span>
+        </Box>
+      )}
+      <Heading size="4" marginBottom="16">
+        {content.header}
+      </Heading>
+      <Paragraph bottomMargin="8">{content.text}</Paragraph>
+      <ImageWrapper>
+        <Image filename={image} />
+      </ImageWrapper>
+      <Price>${content.price}</Price>
+      <Button theme="primary48" content={content.button} margin="0 0 32px 0" wrap arrow />
+      <ul style={{ marginBottom: "48px" }}>
+        {content.fees.map((fee) => (
+          <li>
+            <Fee>
+              <div>
+                <span className="help-mark" data-tip={ toolTipTexts[ fee.text ] } data-html={true} data-type="light" data-for={"benefitTooltip-" + content.header}>
+                  <HelpMarkSVG />
+                </span>
+                <span className="text">{fee.text}</span>
+              </div>
+              <span className="price">${fee.price}</span>
+            </Fee>
+          </li>
+        ))}
+      </ul>
       {content.include && (
-          <Package>
-              <span>
-                {content.include}
-              </span>
-          </Package>
+        <Package>
+          <span>{content.include}</span>
+        </Package>
       )}
-    <ul className="list">
-      {content.list && content.list.map((item) => (
-        <li>
-          <TextCheck>{item}</TextCheck>
-        </li>
-      ))}
-    </ul>
-      {content.fee && (
-          <Paragraph bottomMargin="6">{content.fee}</Paragraph>
-      )}
-  </Wrapper>
-);
+      <ul className="list">
+        {content.list &&
+          content.list.map((item) => (
+            <li>
+              <TextCheck>{item}</TextCheck>
+            </li>
+          ))}
+      </ul>
+      {content.fee && <Paragraph bottomMargin="6">{content.fee}</Paragraph>}
+    </Wrapper>
+  );
+};
 
 export default PricingCard;

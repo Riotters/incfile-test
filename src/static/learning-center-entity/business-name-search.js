@@ -1,6 +1,6 @@
 export const top = {
   header: `Business Name Search`,
-  text: `Find Out If Your Company Name Is Available Using ncfile’s Business Name Lookup Tool`,
+  text: `Find Out If Your Company Name Is Available Using Incfile’s Business Name Lookup Tool`,
   buttons: [
     {
       text: `Search Business Name`,
@@ -93,7 +93,7 @@ export const faq = {
             <li>The name should not imply you are carrying out a service or business operations that you are not legally able to provide.</li>
         </ul>
         Additionally, most states will have other, more specific naming rules. You can find those on the individual state business name search
-        pages above, or in our state-by-state<a href="/llc-state-information/"> guides to LLCs</a> and<a href="corporation-state-information/"> corporations</a>.`,
+        pages above, or in our state-by-state<a href="/llc-state-information/"> guides to LLCs</a> and<a href="/corporation-state-information/"> corporations</a>.`,
       },
       {
         question: `How Do I Lookup My Proposed LLC or Corporation Business Name?`,

@@ -90,7 +90,7 @@ const HowToGuide = ({ content, data }) => {
             {/* Main Steps */}
             <Heading size={3} bottomMargin="40" style={{ marginTop: `48px` }}>{content.mainSteps.heading3}</Heading>
 
-            <LightBoxVideo thumbnailVideo="comparison-chart-video-3611" videoID="gXFjp7S_Fsw" />
+            <div id="video"><LightBoxVideo thumbnailVideo="comparison-chart-video-3611" videoID="gXFjp7S_Fsw" /></div>
 
             {content.mainSteps.navSteps.map(step => (
                 <Link to="/#" onClick={e => handleMenuStepClick(step.blockID, e)}>
@@ -122,6 +122,7 @@ const HowToGuide = ({ content, data }) => {
                 <Heading size={3}>{content.mainSteps.step1.heading1}</Heading>
                 <Paragraph big mixed={true}>{parse(content.mainSteps.step1.text1)}</Paragraph>
                 <Paragraph big mixed={true}>{parse(content.mainSteps.step1.text2)}</Paragraph>
+                <Paragraph big mixed={true}>{parse(content.mainSteps.step1.text3)}</Paragraph>
                 <BoxCTA bgColor={color.purple3} bgImage={BgBoxBusinessNameSearchTool} content={content.mainSteps.step1.cta} />
             </TextBlockWithNumberCounting>
 
@@ -192,7 +193,7 @@ const HowToGuide = ({ content, data }) => {
                 <Heading size={3}>{content.mainSteps.step4.heading1}</Heading>
                 <Paragraph big mixed={true}>{parse(content.mainSteps.step4.text1)}</Paragraph>
                 <IconListColorBox color={color.blue3} content={content.mainSteps.step4.lists} rounded />
-                <Button content={content.mainSteps.step4.dowload_205_button} theme="secondary56" arrow width="240px" margin="16px 0 0 0" marginMD="42px 0 42px 0" />
+                <Button content={content.mainSteps.step4.dowload_205_button} theme="secondary56" arrow margin="16px 0 0 0" marginMD="42px 0 42px 0" />
                 <Paragraph big mixed={true}>{parse(content.mainSteps.step4.text2)}</Paragraph>
 
                 <RelativeElement margin="40px 0">
@@ -207,6 +208,7 @@ const HowToGuide = ({ content, data }) => {
                     ))}
                 </RelativeElement>
                 <Paragraph big mixed={true}>{parse(content.mainSteps.step4.text3)}</Paragraph>
+                <Paragraph big mixed={true}>{parse(content.mainSteps.step4.text4)}</Paragraph>
                 <BoxCTA bgColor={color.orange3} bgImage={BgBoxHandlePaperWorks} content={content.mainSteps.step4.cta} />
 
                 <AnnualReportFilingBox data={data} />

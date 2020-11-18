@@ -93,7 +93,7 @@ const HowToGuide = ({ content, data }) => {
                 {content.mainSteps.heading3}
             </Heading>
 
-            <LightBoxVideo thumbnailVideo="comparison-chart-video-3611" videoID="wGAzGRmy6m8" />
+            <div id="video"><LightBoxVideo thumbnailVideo="comparison-chart-video-3611" videoID="wGAzGRmy6m8" /></div>
 
             {content.mainSteps.navSteps.map((step) => (
                 <Link to="/#" onClick={(e) => handleMenuStepClick(step.blockID, e)}>
@@ -215,7 +215,7 @@ const HowToGuide = ({ content, data }) => {
                     {parse(content.mainSteps.step4.text1)}
                 </Paragraph>
                 <IconListColorBox color={color.blue3} content={content.mainSteps.step4.lists} rounded />
-                <Button content={content.mainSteps.step4.dowload_205_button} theme="secondary56" arrow width="240px" margin="16px 0 0 0" marginMD="42px 0 42px 0" />
+                <Button content={content.mainSteps.step4.dowload_205_button} theme="secondary56" arrow margin="16px 0 0 0" marginMD="42px 0 42px 0" />
                 <Paragraph big mixed={true}>
                     {parse(content.mainSteps.step4.text2)}
                 </Paragraph>

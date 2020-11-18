@@ -17,7 +17,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   position: relative;
-  padding-top: 36px;
+  padding-top: 100px;
 
   @media screen and (max-width: 512px) {
     .oval {
@@ -27,7 +27,6 @@ const Wrapper = styled.div`
   }
 
   @media (min-width: 992px) {
-    flex-direction: row;
     height: ${(props) => (props.heightSM ? props.heightSM : "100vh")};
   }
 
@@ -121,8 +120,8 @@ const PacketsSection = ({ className, fullInfo, data }) => {
 
   return (
     <>
-      <HeadingCenter headline={header} textWidth="770" />
       <Wrapper className={className} heightSM="unset">
+        <HeadingCenter headline={header} textWidth="770" />
         <Oval className="oval" height="420" width="420" top="0" left="0" y={95}>
           <OvalSVG />
         </Oval>

@@ -101,8 +101,29 @@ const cn = (...args) => args.filter(Boolean).join(" ");
 const Tab = ({ children }) => {
   const { isActive, onClick } = useTabState();
 
+  const scrollTop = (l) => {
+    const el = document.getElementById(l);
+    const offset = 100;
+    const bodyRect = document.body.getBoundingClientRect().top;
+    const elementRect = el.getBoundingClientRect().top;
+    const elementPosition = elementRect - bodyRect;
+    const offsetPosition = elementPosition - offset;
+
+    if (typeof window !== "undefined") {
+      window.scrollTo({
+        top: offsetPosition,
+      });
+    }
+  };
+
   return (
-    <Button className={cn("accordion-tab", isActive && "active")} onClick={onClick}>
+    <Button
+      className={cn("accordion-tab", isActive && "active")}
+      onClick={() => {
+        onClick();
+        scrollTop("tabs-wrapper");
+      }}
+    >
       {children}
     </Button>
   );
@@ -110,7 +131,7 @@ const Tab = ({ children }) => {
 
 const StateFilingTimesTabs = ({ content }) => (
   <Tabs>
-    <Wrapper>
+    <Wrapper id="tabs-wrapper">
       <TabsWrapper>
         <Scroller>
           <Tab>LLC</Tab>

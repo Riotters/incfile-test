@@ -4,7 +4,7 @@ import React from "react";
 import {Paragraph} from "../../atoms/typography/paragraph";
 import ContentCenter from "../../partials/content-center";
 import BusinessAccountingForm from "../../organisms/forms/business-accounting-form";
-import {color, gradient} from "../../atoms/styles/colors"
+import {gradient} from "../../atoms/styles/colors"
 
 import OvalSVG from "../../../images/ovals/business-accounting-free-tax-consulting-top-left.inline.svg";
 import Oval from "../../atoms/icons/oval"
@@ -23,12 +23,9 @@ const Wrapper = styled.div`
     }
 `;
 
-const Anchor = styled.div`
-    position: relative;
-`;
 
-const FreeTaxConsulting = ({ content }) => (
-    <Wrapper>
+const FreeTaxConsulting = ({ content, id }) => (
+    <Wrapper id={id}>
         <Oval top="20" left="0" width={570} height={570} className="oval">
             <OvalSVG />
         </Oval>

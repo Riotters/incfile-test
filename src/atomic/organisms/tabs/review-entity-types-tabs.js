@@ -1,30 +1,30 @@
-import React from "react"
-import styled from "styled-components"
-import { Tabs, Panel, useTabState } from "@bumaga/tabs"
+import React from "react";
+import styled from "styled-components";
+import { Tabs, Panel, useTabState } from "@bumaga/tabs";
 // import { motion } from "framer-motion"
-import Container from "../../container"
-import ArrowLink from "../../molecules/buttons/text"
-import SpaceshipSVG from "../../../images/icons/space-ship.inline.svg"
-import PlaneSVG from "../../../images/icons/plane.inline.svg"
-import RocketSVG from "../../../images/icons/rocket.inline.svg"
-import FlowerSVG from "../../../images/icons/heart-flower.inline.svg"
-import ArrowSVG from "../../../images/arrow.inline.svg"
-import { Collapse } from "react-collapse"
+import Container from "../../container";
+import ArrowLink from "../../molecules/buttons/text";
+import SpaceshipSVG from "../../../images/icons/space-ship.inline.svg";
+import PlaneSVG from "../../../images/icons/plane.inline.svg";
+import RocketSVG from "../../../images/icons/rocket.inline.svg";
+import FlowerSVG from "../../../images/icons/heart-flower.inline.svg";
+import ArrowSVG from "../../../images/arrow.inline.svg";
+import { Collapse } from "react-collapse";
 import { color } from "../../atoms/styles/colors";
-import IconSVG from "../../../images/icons/generally-arrow.inline.svg"
+import IconSVG from "../../../images/icons/generally-arrow.inline.svg";
 import IconTextColorBox from "../../molecules/text-blocks/icon-h4-text-color";
-import VisibilitySensor from "../../../components/VisibilitySensor"
-import { Heading } from "../../atoms/typography/heading"
-import { Paragraph } from "../../atoms/typography/paragraph"
+import VisibilitySensor from "../../../components/VisibilitySensor";
+import { Heading } from "../../atoms/typography/heading";
+import { Paragraph } from "../../atoms/typography/paragraph";
 import LightBoxVideo from "../../../components/LightBox";
-import parse from 'html-react-parser';
+import parse from "html-react-parser";
 
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
 
   @media (min-width: 769px) {
-    flex-direction: ${props => (props.layout !== "grid" ? "row" : "column")};
+    flex-direction: ${(props) => (props.layout !== "grid" ? "row" : "column")};
   }
 
   .accordion-panel {
@@ -37,14 +37,14 @@ const Wrapper = styled.div`
     margin-left: auto;
 
     @media (min-width: 769px) {
-      max-width: ${props => (props.layout !== "grid" ? "55%" : "")};
+      max-width: ${(props) => (props.layout !== "grid" ? "55%" : "")};
     }
 
     @media (min-width: 1200px) {
-      max-width: ${props => (props.layout !== "grid" ? "670px" : "")};
+      max-width: ${(props) => (props.layout !== "grid" ? "670px" : "")};
     }
   }
-`
+`;
 
 const TabsWrapper = styled.div`
   display: flex;
@@ -52,31 +52,31 @@ const TabsWrapper = styled.div`
   width: 100%;
 
   @media (min-width: 769px) {
-    max-width: ${props => (props.layout !== "grid" ? "40%" : "")};
+    max-width: ${(props) => (props.layout !== "grid" ? "40%" : "")};
   }
 
   @media (min-width: 1200px) {
-    max-width: ${props => (props.layout !== "grid" ? "370px" : "")};
+    max-width: ${(props) => (props.layout !== "grid" ? "370px" : "")};
   }
-`
+`;
 
 const Sticky = styled.div`
-  display: ${props => (props.layout === "grid" ? "grid" : "flex")};
-  flex-direction: ${props => (props.layout !== "grid" ? "column" : "")};
-  grid-template-columns: ${props => (props.columns ? `repeat(${props.columns}, 1fr)` : "")};
-  grid-gap: ${props => (props.layout === "grid" ? "30px" : "")};
-  position: ${props => (props.layout !== "grid" ? "sticky" : "")};
-  top: 100px; 
-`
+  display: ${(props) => (props.layout === "grid" ? "grid" : "flex")};
+  flex-direction: ${(props) => (props.layout !== "grid" ? "column" : "")};
+  grid-template-columns: ${(props) => (props.columns ? `repeat(${props.columns}, 1fr)` : "")};
+  grid-gap: ${(props) => (props.layout === "grid" ? "30px" : "")};
+  position: ${(props) => (props.layout !== "grid" ? "sticky" : "")};
+  top: 100px;
+`;
 
 const PanelWrapper = styled.article`
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  max-width: ${props => (props.layout !== "grid" ? "670px" : "")};
+  max-width: ${(props) => (props.layout !== "grid" ? "670px" : "")};
   margin-left: auto;
   padding-top: 24px;
-`
+`;
 
 const Button = styled.button`
   height: 78px;
@@ -104,7 +104,7 @@ const Button = styled.button`
       transform: translateX(0);
     }
   }
-`
+`;
 
 const Icon = styled.div`
   display: flex;
@@ -117,7 +117,7 @@ const Icon = styled.div`
   @media (min-width: 992px) {
     width: 80px;
   }
-`
+`;
 
 const Content = styled.div`
   display: flex;
@@ -156,7 +156,7 @@ const Content = styled.div`
       transform: translateX(0);
     }
   }
-`
+`;
 
 const Arrow = styled.div`
   display: flex;
@@ -172,98 +172,121 @@ const Arrow = styled.div`
       fill: #5088fd;
     }
   }
-`
+`;
 
-const cn = (...args) => args.filter(Boolean).join(" ")
+const cn = (...args) => args.filter(Boolean).join(" ");
 
 const Tab = ({ children }) => {
-  const { isActive, onClick } = useTabState()
+  const { isActive, onClick } = useTabState();
+
+  const scrollTop = (l) => {
+    const el = document.getElementById(l);
+    const offset = 100;
+    const bodyRect = document.body.getBoundingClientRect().top;
+    const elementRect = el.getBoundingClientRect().top;
+    const elementPosition = elementRect - bodyRect;
+    const offsetPosition = elementPosition - offset;
+
+    if (typeof window !== "undefined") {
+      window.scrollTo({
+        top: offsetPosition,
+      });
+    }
+  };
 
   return (
     <Button
       className={cn("accordion-tab", isActive && "active")}
-      onClick={onClick}
+      onClick={() => {
+        onClick();
+        scrollTop("tabs-wrapper");
+      }}
     >
       {children}
     </Button>
-  )
-}
+  );
+};
 
-const icons = [<SpaceshipSVG />, <PlaneSVG />, <RocketSVG />, <FlowerSVG />]
+const icons = [<SpaceshipSVG />, <PlaneSVG />, <RocketSVG />, <FlowerSVG />];
 
-const CCorpTabs = ({layout, columns, content}) => (
-    <Container>
-        <Wrapper layout={layout}>
-            <VisibilitySensor partialVisibility once>
-            {({ isVisible }) => (
-                <Tabs>
-                <TabsWrapper className={isVisible ? "slideUp enter" : "slideUp"} layout={layout}>
-                    <Sticky layout={layout} columns={columns}>
-                      {content.panels.map((panel, i) => (
-                        <Tab>
-                          <Icon>
-                            {icons[i]}
-                          </Icon>
-                          <Content>
-                          <span>{panel}</span>
-                          <Arrow className="tabArrow">
-                              <ArrowSVG />
-                          </Arrow>
-                          </Content>
-                        </Tab>
-                      ))}
-                    </Sticky>
-                </TabsWrapper>
-                {/* <Panels> */}
-                <Collapse isOpened={true}>
-                    <Panel>
-                      <PanelWrapper
-                        className={
-                        isVisible ? "slideUp enter panel1" : "slideUp panel1"
-                        }
-                        layout={layout}
-                      >
-                        <Heading size="3">{content.content[0].header}</Heading>
-                        <Paragraph big bottomMargin="48">{content.content[0].text}</Paragraph>
-                        <LightBoxVideo thumbnailVideo="business-for-you-3432" videoID="_u4u3-PQ8a0" />
-                        <Heading size="3" topMargin="48">{content.content[0].header2}</Heading>
-                        <Paragraph big>{content.content[0].text2}</Paragraph>
-                        <Paragraph big>{content.content[0].text3}</Paragraph>
-                        <Paragraph big>{content.content[0].text4}</Paragraph>
-                        <Paragraph mixed big bottomMargin="56">{parse(content.content[0].text5)}</Paragraph>
-                      </PanelWrapper>
-                    </Panel>
-                    <Panel>
-                      <PanelWrapper className="panel2" layout={layout}>
-                        <Heading size="3">{content.content[1].header}</Heading>
-                        <Paragraph big>{content.content[1].text}</Paragraph>
-                        <Paragraph big>{content.content[1].text2}</Paragraph>
-                        <Paragraph big>{content.content[1].text3}</Paragraph>
-                        <Paragraph mixed big bottomMargin="56">{parse(content.content[1].text4)}</Paragraph>
-                      </PanelWrapper>
-                    </Panel>
-                    <Panel>
-                      <PanelWrapper className="panel2" layout={layout}>
-                        <Heading size="3">{content.content[2].header}</Heading>
-                        <Paragraph big>{content.content[2].text}</Paragraph>
-                        <Paragraph big>{content.content[2].text2}</Paragraph>
-                        <Paragraph mixed big bottomMargin="56">{parse(content.content[2].text3)}</Paragraph>
-                      </PanelWrapper>
-                    </Panel>
-                    <Panel>
-                      <PanelWrapper className="panel2" layout={layout}>
-                        <Heading size="3">{content.content[3].header}</Heading>
-                        <Paragraph big>{content.content[3].text}</Paragraph>
-                        <Paragraph big>{content.content[3].text2}</Paragraph>
-                        <Paragraph mixed big bottomMargin="56">{parse(content.content[3].text3)}</Paragraph>
-                      </PanelWrapper>
-                    </Panel>
-                </Collapse>
-                {/* </Panels> */}
-                </Tabs>
-            )}
-            </VisibilitySensor>
-        </Wrapper>
-    </Container>
-)
-export default CCorpTabs
+const CCorpTabs = ({ layout, columns, content }) => (
+  <Container>
+    <Wrapper id="tabs-wrapper" layout={layout}>
+      <VisibilitySensor partialVisibility once>
+        {({ isVisible }) => (
+          <Tabs>
+            <TabsWrapper className={isVisible ? "slideUp enter" : "slideUp"} layout={layout}>
+              <Sticky layout={layout} columns={columns}>
+                {content.panels.map((panel, i) => (
+                  <Tab>
+                    <Icon>{icons[i]}</Icon>
+                    <Content>
+                      <span>{panel}</span>
+                      <Arrow className="tabArrow">
+                        <ArrowSVG />
+                      </Arrow>
+                    </Content>
+                  </Tab>
+                ))}
+              </Sticky>
+            </TabsWrapper>
+            {/* <Panels> */}
+            <Collapse isOpened={true}>
+              <Panel>
+                <PanelWrapper className={isVisible ? "slideUp enter panel1" : "slideUp panel1"} layout={layout}>
+                  <Heading size="3">{content.content[0].header}</Heading>
+                  <Paragraph big bottomMargin="48">
+                    {content.content[0].text}
+                  </Paragraph>
+                  <LightBoxVideo thumbnailVideo="business-for-you-3432" videoID="_u4u3-PQ8a0" />
+                  <Heading size="3" topMargin="48">
+                    {content.content[0].header2}
+                  </Heading>
+                  <Paragraph big>{content.content[0].text2}</Paragraph>
+                  <Paragraph big>{content.content[0].text3}</Paragraph>
+                  <Paragraph big>{content.content[0].text4}</Paragraph>
+                  <Paragraph mixed big bottomMargin="56">
+                    {parse(content.content[0].text5)}
+                  </Paragraph>
+                </PanelWrapper>
+              </Panel>
+              <Panel>
+                <PanelWrapper className="panel2" layout={layout}>
+                  <Heading size="3">{content.content[1].header}</Heading>
+                  <Paragraph big>{content.content[1].text}</Paragraph>
+                  <Paragraph big>{content.content[1].text2}</Paragraph>
+                  <Paragraph big>{content.content[1].text3}</Paragraph>
+                  <Paragraph mixed big bottomMargin="56">
+                    {parse(content.content[1].text4)}
+                  </Paragraph>
+                </PanelWrapper>
+              </Panel>
+              <Panel>
+                <PanelWrapper className="panel2" layout={layout}>
+                  <Heading size="3">{content.content[2].header}</Heading>
+                  <Paragraph big>{content.content[2].text}</Paragraph>
+                  <Paragraph big>{content.content[2].text2}</Paragraph>
+                  <Paragraph mixed big bottomMargin="56">
+                    {parse(content.content[2].text3)}
+                  </Paragraph>
+                </PanelWrapper>
+              </Panel>
+              <Panel>
+                <PanelWrapper className="panel2" layout={layout}>
+                  <Heading size="3">{content.content[3].header}</Heading>
+                  <Paragraph big>{content.content[3].text}</Paragraph>
+                  <Paragraph big>{content.content[3].text2}</Paragraph>
+                  <Paragraph mixed big bottomMargin="56">
+                    {parse(content.content[3].text3)}
+                  </Paragraph>
+                </PanelWrapper>
+              </Panel>
+            </Collapse>
+            {/* </Panels> */}
+          </Tabs>
+        )}
+      </VisibilitySensor>
+    </Wrapper>
+  </Container>
+);
+export default CCorpTabs;

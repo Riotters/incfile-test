@@ -86,7 +86,7 @@ export const disadventages = {
 
 export const differences = {
   header: `What Are the Differences Between an  S Corp, C Corp and LLC?`,
-  text: `See how a C Corporation compares to other entities:`,
+  text: `Two other popular business entity structures in the US are the S Corp and the LLC. They provide many of the same protections offered by a C Corp but have less formal rules on taxation, governance and compliance. This can mean more flexibility in how an LLC or S Corp is owned and funded.`,
   box: {
     header: `Differences between types of corporations`,
     text: `One of the main differences between C Corps and S Corps / LLCs are how income from the different types of businesses are taxed.`,
@@ -193,6 +193,8 @@ export const forming = {
     `Requirements do vary from one jurisdiction to another, but you will generally need to get ID numbers for the unemployment, disability and other payroll taxes.`,
     `Assign other positions in the business as required by law.`,
   ],
+  text2: `<p>Forming a C Corporation can be tricky, so let us do the hard work for you. Here at Incfile, we’ve helped to form thousands of businesses, and our experts are on hand to help you, right now.
+  <a href="${process.env.ORDER_URL}/form-order-now.php">Incorporate your business with Incfile for as little as $0 plus the state fee.</a></p>`,
 };
 
 export const hsForm = {

@@ -254,7 +254,9 @@ const CCorpTabs = ({ layout, columns, content }) => (
                   <Heading size="4">Assign Certain Positions in the Corporation</Heading>
                   <Paragraph big>
                     A C Corporation will need to have all of the following positions. In a small C Corp, one person could hold multiple of these positions.
-                    <ul>
+                  </Paragraph>
+                  <Paragraph mixed big>
+                  <ul>
                       <li>
                         <strong>Shareholders</strong>: They own the company's stock and are responsible for electing directors, amending the bylaws and articles of incorporation and approving major actions taken by the corporation like mergers and the sale of corporate assets. They alone are allowed
                         to dissolve the corporation.
@@ -270,8 +272,6 @@ const CCorpTabs = ({ layout, columns, content }) => (
                       </li>
                     </ul>
                   </Paragraph>
-                  <Heading size="4">aaaa</Heading>
-                  <Paragraph big>aaa</Paragraph>
                 </PanelWrapper>
               </Panel>
             </Collapse>

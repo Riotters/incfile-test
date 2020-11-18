@@ -47,24 +47,24 @@ export const about = {
 };
 
 export const adventages = {
-  header: `The Advantages of S Corporations`,
+  header: `The Advantages and Benefits of an S Corporations`,
   text: `S Corporations offer several advantages if your company qualifies:`,
   cards: [
     {
       header: `Tax advantages`,
-      text: `S Corporations are exempt from federal income tax except for certain capital gains and passive income.`,
+      text: `S Corporations are exempt from federal income tax except for certain capital gains and passive income. Similar to the LLC, the S Corporation allows profit to pass through to its shareholders, and the income is then taxed on the shareholders’ personal tax returns at each shareholder’s individual tax rates. Because the S Corporation is a pass-through entity, this ensures that the corporation’s profits are only taxed once – at the shareholder level. This means that S Corporations avoid having to pay what is often referred to as “double taxation” of dividends. See how much you can save with our <a href="/s-corporation-tax-calculator/">S Corporation Tax Calculator.</a>`,
     },
     {
       header: `Asset protection`,
-      text: `If your business is an S Corporation, you have certain legal protections for your personal assets which are separate from the assets of the business.`,
+      text: `If your business is an S Corporation, you have certain legal protections for your personal assets which are separate from the assets of the business. For example, shareholders are not personally liable for the company’s debts or liabilities, and for the most part, creditors are not able to go after the shareholders’ personal assets in order to recover business debts.`,
     },
     {
       header: `Flexible characterization of income`,
-      text: `Being an owner of an S  Corporation gives you flexibility in how to characterize your income for tax purposes.`,
+      text: `Being an owner of an S Corporation gives you flexibility in how to characterize your income for tax purposes. As the owner/shareholder of an S Corp, you can be an employee of the business and pay yourself a salary. In addition to your salary, you can also pay yourself dividends from the S Corporation or distributions that are generally tax-free or taxed at a lower rate than the employee’s salary. This helps you reduce your self-employment tax liability, as long as you are characterizing your salary and dividends/distributions in a reasonable way. The IRS does not want to see you paying yourself an artificially low salary in order to avoid paying self-employment taxes on the “dividend/distribution” portion of your income.`,
     },
     {
       header: `Easy transfer of ownership`,
-      text: `S Corporation ownership interests are easy to transfer to other owners without causing significant tax consequences or terminating the corporate entity.`,
+      text: `S Corporation ownership interests are easy to transfer to other owners without causing significant tax consequences or terminating the corporate entity. An ownership transfer of an S Corporation does not require adjustments to property basis or compliance with complicated accounting rules.`,
     },
   ],
 };

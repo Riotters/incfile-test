@@ -63,7 +63,7 @@ const Wrapper = styled.div`
   }
 `;
 
-const IconTextColorBox = ({ className, Icon, color, content, bottomMargin, rounded, curve, curveColor }) => {
+const IconTextColorBox = ({ className, Icon, color, content, bottomMargin, linkBottomMargin, rounded, curve, curveColor }) => {
   return (
     <Wrapper className={className} rounded={rounded} bottomMargin={bottomMargin}>
       {curve && (
@@ -85,7 +85,7 @@ const IconTextColorBox = ({ className, Icon, color, content, bottomMargin, round
             {parse(content.text)}
           </Paragraph>
         )}
-        {content.link && <ArrowLink className="more-info-link" content={content.link} topMargin={8} />}
+        {content.link && <ArrowLink className="more-info-link" content={content.link} topMargin={8} bottomMargin={linkBottomMargin} />}
       </Colorbox>
     </Wrapper>
   );

@@ -5,11 +5,11 @@ export const existing = {
     with your order. Below are some helpful links provided to orient you with the features of the client dashboard.`,
   button: {
     text: `Check my order status`,
-    url: `${process.env.ORDER_URL}/dashboard`,
+    url: `${process.env.ORDER_URL}/dashboard/`,
   },
   phone: {
     phone1: `844.830.8267`,
-    phone2: `877 919-2613`,
+    phone2: `877.919.2613`,
   },
 };
 
@@ -17,7 +17,7 @@ export const newSales = {
   header: `We've put together the following resources to help answer our most common questions.`,
   phone: {
     phone1: `855.829.9090`,
-    phone2: `877 919-2613`,
+    phone2: `877.919.2613`,
   },
   articles: [
     {

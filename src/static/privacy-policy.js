@@ -22,8 +22,12 @@ export const legal_sections = [
     text:
       "There will be times, such as when you communicate with us by e-mail, submit an application, request a quote, purchase a product, etc., when we will need to obtain personally identifiable information from you or about you. Such personally identifiable information may include your name, home address, e-mail address, telephone number, social security number, financial information, credit references, etc. The information we receive about you or from you may be used by us or shared (including evaluating and obtaining financial products or services) by us with our corporate affiliates, agents, vendors and other third parties to help process your request or complete a transaction; to comply with any law, regulation, audit or court order; to help improve our website or the products or services we offer; for research; to better understand our customers’ needs; to develop new offerings; and to alert you to new products and services (of us or our business associates) in which you may be interested. We may also combine information you provide us with information about you that is available to us internally or from other sources. We believe that knowing more about you can enable us to serve you better.",
     text2: "You should be aware that we do not collect usage information about you when you visit our site, and we do not use “cookies.”",
-    text3: "We collect nonpublic personal information about you from the following sources:",
-    list: ["Information we receive from you on applications on our website or other forms", "Information about your transactions with us, our affiliates, or others", "Information about you we may receive from credit reporting agencies."],
+    text3: `<p>We collect nonpublic personal information about you from the following sources:</p></br>
+        <ul>
+            <li>Information we receive from you on applications on our website or other forms.</li>
+            <li>Information about your transactions with us, our affiliates, or others.</li>
+            <li>Information about you we may receive from credit reporting agencies.</li>
+        </ul>`,
   },
   {
     header: "Personal Data Protection",

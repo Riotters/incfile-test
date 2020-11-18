@@ -88,7 +88,7 @@ const ContactInfo = ({ className, content, isNewSale }) => (
                     { parse(`17350 State Highway 249, <br>Suite 220, Houston, TX 77064`)}
                 </Paragraph>
 
-                <RelativeElement style={{ width: `100%`, maxWidth: `${isNewSale ? '440px' : '330px'}` }}>
+                <RelativeElement style={{ width: `100%`, maxWidth: `${isNewSale ? '550px' : '465px'}` }}>
                     <AbsoluteShapCure left="-20px" top="15px" rotate={-90}>
                         <ShapeCurve color={color.orange1}/>
                     </AbsoluteShapCure>
@@ -99,7 +99,7 @@ const ContactInfo = ({ className, content, isNewSale }) => (
                                     <ArrowSVG />
                                 </Circle>
                             )}
-                            <Paragraph>{content.phone1}</Paragraph>
+                            <Paragraph mixed={true}>Phone: {content.phone1}</Paragraph>
                         </Whitebox>
                         <Whitebox flex>
                             {isNewSale && (
@@ -107,7 +107,7 @@ const ContactInfo = ({ className, content, isNewSale }) => (
                                     <ArrowSVG />
                                 </Circle>
                             )}
-                            <Paragraph>{content.phone2}</Paragraph>
+                            <Paragraph mixed={true}>Fax: {content.phone2}</Paragraph>
                         </Whitebox>
                     </Flex>
                 </RelativeElement>

@@ -4,33 +4,8 @@ import SearchSVG from "../../../images/search.inline.svg";
 import ArrowSVG from "../../../images/arrow-circle.inline.svg";
 import { shadow } from "../../atoms/styles/shadows";
 import Autosuggest from "react-autosuggest";
-
-const languages = [
-  {
-    name: "C",
-    url: "/start-your-company/",
-  },
-  {
-    name: "Elm",
-    url: "/start-your-company/",
-  },
-  {
-    name: "Elmb",
-    url: "/start-your-company/",
-  },
-  {
-    name: "Elms",
-    url: "/start-your-company/",
-  },
-  {
-    name: "Elmaasa",
-    url: "/start-your-company/",
-  },
-  {
-    name: "Elmfdffd",
-    url: "/start-your-company/",
-  },
-];
+import { pages } from "../../../static/research-topics/list";
+import { color } from "../../../components/styles/colors";
 
 const Wrapper = styled.div`
   display: flex;
@@ -88,6 +63,11 @@ const Box = styled.div`
         height: 100%;
         background-color: red;
       }
+
+      &--open {
+        max-height: 300px;
+        overflow-y: auto;
+      }
     }
   }
 `;
@@ -96,24 +76,6 @@ const Icon = styled.div`
   height: 16px;
   width: 16px;
   transform: translateY(-2px);
-`;
-
-const Label = styled.label`
-  height: 100%;
-  flex-grow: 1;
-  position: absolute;
-  z-index: -1;
-`;
-
-const Input = styled.input`
-  height: 100%;
-  width: 100%;
-  border: none;
-  color: #1e1e1e;
-  font-family: Avenir;
-  font-size: 16px;
-  line-height: 19px;
-  margin-left: 16px;
 `;
 
 const States = styled.a`
@@ -133,17 +95,32 @@ const State = styled.div`
   padding: 0 40px;
   cursor: pointer;
 
-  span {
-    color: #1e1e1e;
-    font-family: MarkPro;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: left;
-  }
-
   &:hover {
     svg {
       transform: translateY(-2px);
+    }
+  }
+`;
+
+const TextWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  span {
+    text-align: left;
+
+    &:nth-child(1) {
+      color: ${color.orange1};
+      font-family: Avenir, sans-serif;
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    &:nth-child(2) {
+      color: #1e1e1e;
+      font-family: MarkPro, sans-serif;
+      font-size: 16px;
+      line-height: 19px;
     }
   }
 `;
@@ -161,16 +138,18 @@ const Arrow = styled.div`
 const getSuggestions = (value) => {
   const inputValue = value.trim().toLowerCase();
   const inputLength = inputValue.length;
-
-  return inputLength === 0 ? [] : languages.filter((lang) => lang.name.toLowerCase().slice(0, inputLength) === inputValue);
+  return inputLength === 0 ? [] : pages.filter((el) => el.text.split(" ").some((term) => term.toLowerCase().slice(0, inputLength) === inputValue));
 };
 
-const getSuggestionValue = (suggestion) => suggestion.name;
+const getSuggestionValue = (suggestion) => suggestion.text;
 
 const renderSuggestion = (suggestion) => (
   <States href={suggestion.url}>
     <State>
-      <span>{suggestion.name}</span>
+      <TextWrapper>
+        <span>{suggestion.header}</span>
+        <span>{suggestion.text}</span>
+      </TextWrapper>
       <Arrow>
         <ArrowSVG />
       </Arrow>
@@ -182,11 +161,6 @@ class Searchbar extends React.Component {
   constructor() {
     super();
 
-    // Autosuggest is a controlled component.
-    // This means that you need to provide an input value
-    // and an onChange handler that updates this value (see below).
-    // Suggestions also need to be provided to the Autosuggest,
-    // and they are initially empty because the Autosuggest is closed.
     this.state = {
       value: "",
       suggestions: [],
@@ -199,15 +173,12 @@ class Searchbar extends React.Component {
     });
   };
 
-  // Autosuggest will call this function every time you need to update suggestions.
-  // You already implemented this logic above, so just use it.
   onSuggestionsFetchRequested = ({ value }) => {
     this.setState({
       suggestions: getSuggestions(value),
     });
   };
 
-  // Autosuggest will call this function every time you need to clear suggestions.
   onSuggestionsClearRequested = () => {
     this.setState({
       suggestions: [],
@@ -217,9 +188,8 @@ class Searchbar extends React.Component {
   render() {
     const { value, suggestions } = this.state;
 
-    // Autosuggest will pass through all these props to the input.
     const inputProps = {
-      placeholder: "Type a programming language",
+      placeholder: "",
       value,
       onChange: this.onChange,
     };

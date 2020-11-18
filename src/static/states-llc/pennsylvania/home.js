@@ -142,16 +142,18 @@ export const howToGuide = [
         {
           question: `Form a Professional Pennsylvania LLC`,
           answer: `<p>Some states, including Pennsylvania, allow certain occupations to form “Professional LLCs.” These types of business typically have specialized requirements and licensing. Here are the occupations that the PA Department of State allows to form Pennsylvania professional LLCs:</p></br
-            <li>Chiropractic</li>
-            <li>Dentistry</li>
-            <li>Law</li>
-            <li>Medicine and surgery</li>
-            <li>Optometry</li>
-            <li>Osteopathic medicine and surgery</li>
-            <li>Podiatric medicine</li>
-            <li>Public accounting</li>
-            <li>Psychology</li>
-            <li>Veterinary medicine</li>`,
+            <ul>
+                <li>Chiropractic</li>
+                <li>Dentistry</li>
+                <li>Law</li>
+                <li>Medicine and surgery</li>
+                <li>Optometry</li>
+                <li>Osteopathic medicine and surgery</li>
+                <li>Podiatric medicine</li>
+                <li>Public accounting</li>
+                <li>Psychology</li>
+                <li>Veterinary medicine</li>
+            </ul>`,
         },
         {
           question: `Form a Foreign LLC in Pennsylvania`,
@@ -1583,7 +1585,7 @@ export const businessTaxes = [
 ];
 
 export const compare = {
-  header: `How We Compare. <br>Get more more for less.`,
+  header: `How We Compare. <br>Get more for less.`,
   table: {
     headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
     rows: [

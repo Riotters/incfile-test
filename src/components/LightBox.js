@@ -54,7 +54,7 @@ class LightBox extends Component {
                 allowfullscreen></iframe>`)
                 : parse(`<iframe
                 src="https://www.youtube.com/embed/${videoID}?rel=0&autoplay=1"
-                width="560"
+                width="500"
                 height="349"
                 frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -153,7 +153,7 @@ const LightBoxModal = styled.div`
 const LightBoxContent = styled.div`
   background-color: #fff;
   width: 100%;
-  max-width: 960px;
+  max-width: 913px;
   position: relative;
   margin: 0 30px;
   padding-top: 49.25%;

@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   width: 100%;
   position: relative;
   margin-top: 80px;
-  margin-bottom: ${props => props.bottomMargin ? `${props.bottomMargin}px` : "48px"};
+  margin-bottom: ${(props) => (props.bottomMargin ? `${props.bottomMargin}px` : "48px")};
 
   @media (min-width: 769px) {
     grid-template-columns: 1fr 1fr 1fr;

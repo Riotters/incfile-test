@@ -16,7 +16,7 @@ const Video = () => (
     <Oval className="oval" height={652} width={652} top="20" left="0">
       <OvalSvg />
     </Oval>
-    <Oval className="oval" height={434} width={434} top="60" right="15">
+    <Oval className="oval" height={217} width={434} top="60" right="15">
       <OvalSvg2 />
     </Oval>
     <HeadingCenter headline="See how easy it can be to get your business incorporated" textWidth="590" text="Take a moment to view our instructional video." bottomMargin="48" bottomMarginLG="80" />

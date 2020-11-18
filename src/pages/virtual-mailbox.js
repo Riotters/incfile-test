@@ -153,7 +153,6 @@ const StepsGridContainer = styled.div`
         align-items: flex-start;
         flex-direction: column;
         text-align: left;
-        height: 100%;
 
         @media screen and (min-width: 769px) {
             padding: 72px 40px 40px;

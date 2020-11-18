@@ -1,16 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import { color } from "../../../atoms/styles/colors";
-import Image from "../../../atoms/image/image_nobase64";
 import HeadingCenter from "../../../partials/heading-center";
 import ContentCenter from "../../../partials/content-center";
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/bottom-left-transparent-pink1.inline.svg";
 import Oval2SVG from "../../../../images/ovals/top-left-transparent-red3.inline.svg";
-import BoxedButton from "../../../molecules/buttons/boxed";
-import PlayerSVG from "../../../../images/icons/player.inline.svg";
 import Curve from "../../../atoms/icons/curve";
-import CurveSVG from "../../../../images/curves/top-left-bottom-right.inline.svg";
 import Curve2SVG from "../../../../images/curves/bottom-left-top-right-reverse-big.inline.svg";
 import LightBoxVideo from "../../../../components/LightBox";
 

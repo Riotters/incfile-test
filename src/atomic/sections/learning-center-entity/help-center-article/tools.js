@@ -6,7 +6,6 @@ import CenterGrid from "../../../partials/center-grid";
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-right-transparent-blue.inline.svg";
 import BoxedButton from "../../../molecules/buttons/boxed";
-import { states } from "../../../../components/states";
 
 const Tools = styled.section`
   position: relative;

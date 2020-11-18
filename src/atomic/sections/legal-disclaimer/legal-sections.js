@@ -4,6 +4,7 @@ import Container from "../../container";
 import ContentCenter from "../../partials/content-center";
 import {Heading} from "../../atoms/typography/heading";
 import {Paragraph} from "../../atoms/typography/paragraph";
+import parse from 'html-react-parser';
 
 const Wrapper = styled.section`
     position: relative;
@@ -16,6 +17,7 @@ const Wrapper = styled.section`
     ul {
         list-style: inside disc;
         margin-bottom: 42px;
+        padding-left: 32px;
     }
     
     ul, p {
@@ -32,13 +34,13 @@ const LegalSection = ({ className, content, contentWidth }) => (
         <ContentCenter contentWidth={contentWidth}>
             {content.header && (<Heading size={2} bottomMargin={32}>{content.header}</Heading>)}
             {content.bold1 && (<Heading size={4} bottomMargin={42}>{content.bold1}</Heading>)}
-            {content.text && (<Paragraph big bottomMargin={42}>{content.text}</Paragraph>)}
+            {content.text && (<Paragraph big mixed bottomMargin={42}>{parse(content.text)}</Paragraph>)}
             {content.bold2 && (<Heading size={4} bottomMargin={42}>{content.bold2}</Heading>)}
             {content.text2 && (<Paragraph big bottomMargin={42} topMargin={-18}>{content.text2}</Paragraph>)}
             {content.bold3 && (<Heading size={4} bottomMargin={42}>{content.bold3}</Heading>)}
-            {content.text3 && (<Paragraph big bottomMargin={42} topMargin={-18}>{content.text3}</Paragraph>)}
+            {content.text3 && (<Paragraph mixed big bottomMargin={42} topMargin={-18}>{parse(content.text3)}</Paragraph>)}
             {content.bold4 && (<Heading size={4} bottomMargin={42}>{content.bold4}</Heading>)}
-            {content.text4 && (<Paragraph big bottomMargin={42} topMargin={-18}>{content.text4}</Paragraph>)}
+            {content.text4 && (<Paragraph mixed big bottomMargin={42} topMargin={-18}>{parse(content.text4)}</Paragraph>)}
             {content.list && (
                 <ul>
                     {content.list.map((item) => (

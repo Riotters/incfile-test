@@ -12,16 +12,24 @@ import ArrowLink from "../../../components/arrow-link";
 import { Paragraph } from "../../atoms/typography/paragraph";
 import ArrowSVG from "../../../images/arrow-circle.inline.svg";
 import CurveSVG from "../../../images/orange-curve.inline.svg";
-import VisibilitySensor from "../../../components/VisibilitySensor";
+
+import {
+  Accordion,
+  AccordionItem,
+  AccordionItemHeading,
+  AccordionItemButton,
+  AccordionItemPanel,
+} from 'react-accessible-accordion';
 
 const Wrapper = styled.div`
   display: flex;
   width: 100%;
   position: relative;
-  margin-top: ${(props) => (props.tab ? "" : "56px")};
+  margin-top: ${(props) => (props.tab ? "" : "24px")};
   margin-bottom: ${(props) => (props.bottomMargin ? `${props.bottomMargin}px` : "")};
 
   @media (min-width: 769px) {
+    margin-top: ${(props) => (props.tab ? "" : "56px")};
     ${(props) => (props.noAutoWidth ? "" : "width: auto;")}
     padding: ${(props) => (props.tab ? "" : "25px 29px 0")};
   }
@@ -59,25 +67,44 @@ const TabsWrapper = styled.div`
 const TabBox = styled.div`
   box-shadow: 0 24px 32px 0 rgba(236, 236, 236, 0.5);
   margin-bottom: 8px;
+  width: 100%;
 
-  .accordion-panel {
+  .accordion__panel {
     overflow: hidden;
+    transition: max-height .6s;
+    max-height: 1200px;
+    width: 100%;
+    opacity: 1;
+    
+    &[hidden] {
+      transition: max-height .6s, padding-top .6s, padding-bottom .6s, opacity .6s;
+      display: block;
+      max-height: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+      opacity: 0;
+    }
   }
 `;
 
 const PanelWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  background: #fff;
-  padding: 15px;
-  z-index: 1;
-
-  @media (min-width: 769px) {
-    padding: 16px 40px 40px 80px;
-  }
-
-  h3 {
-    margin-bottom: 48px;
+  .accordion__panel {
+    &[aria-expanded="true"] {
+      display: flex;
+    }
+  
+    flex-direction: column;
+    background: #fff;
+    padding: 15px;
+    z-index: 1;
+  
+    @media (min-width: 769px) {
+      padding: 16px 40px 40px 80px;
+    }
+  
+    h3 {
+      margin-bottom: 48px;
+    }
   }
 
   p,
@@ -122,7 +149,7 @@ const PanelWrapper = styled.div`
   }
 `;
 
-const Button = styled.button`
+const Button = styled.div`
   min-width: 80px;
   width: 100%;
   color: #4e4e4e;
@@ -134,15 +161,6 @@ const Button = styled.button`
   border-radius: 5px;
   overflow: hidden;
   border: none;
-
-  &.active {
-    border-radius: 5px 5px 0 0;
-    font-weight: 900;
-
-    svg {
-      transform: rotate(0deg);
-    }
-  }
 `;
 
 const Content = styled.div`
@@ -180,34 +198,45 @@ const Icon = styled.div`
   }
 `;
 
+const TabHeading = styled(AccordionItemHeading)`
+  .accordion__button[aria-expanded="true"] {
+    border-radius: 5px 5px 0 0;
+    font-weight: 900;
+
+    svg {
+      transform: rotate(0deg);
+    }
+  }
+`;
+
 const cn = (...args) => args.filter(Boolean).join(" ");
 
-const Tab = ({ children }) => {
-  const { isActive, onClick } = useTabState();
-
-  return (
-    <Button className={cn("accordion-tab", isActive && "active")} onClick={onClick}>
-      {children}
-    </Button>
-  );
-};
+// const Tab = ({ children }) => {
+//   const { isActive, onClick } = useTabState();
+//
+//   return (
+//     <Button className={cn("accordion-tab", isActive && "active")} onClick={onClick}>
+//       {children}
+//     </Button>
+//   );
+// };
 
 const panel = {
   hidden: { height: 0 },
   visible: { height: "auto" },
 };
 
-const Panel = ({ children }) => {
-  const isActive = usePanelState();
+// const Panel = ({ children }) => {
+//   const isActive = usePanelState();
+//
+//   return (
+//     <motion.div className="accordion-panel" animate={isActive ? "visible" : "hidden"} transition={{ ease: "easeOut", duration: 0.3 }} variants={panel}>
+//       {children}
+//     </motion.div>
+//   );
+// };
 
-  return (
-    <motion.div className="accordion-panel" animate={isActive ? "visible" : "hidden"} transition={{ ease: "easeOut", duration: 0.3 }} variants={panel}>
-      {children}
-    </motion.div>
-  );
-};
-
-const Accordion = ({ content, curve, curveRight, curveRightBottom, curveLeft, curveLeftBottom, curveColor, tab, maxWidth, noAutoWidth, bottomMargin }) => {
+const AccordionFaq = ({ content, curve, curveRight, curveRightBottom, curveLeft, curveLeftBottom, curveColor, tab, maxWidth, noAutoWidth, bottomMargin }) => {
   return (
     // <VisibilitySensor partialVisibility once>
     //   {({ isVisible }) => (
@@ -222,86 +251,92 @@ const Accordion = ({ content, curve, curveRight, curveRightBottom, curveLeft, cu
           <CurveSVG />
         </Curve>
       )}
-      <Tabs>
         <TabsWrapper maxWidth={maxWidth}>
+          <Accordion allowZeroExpanded={true}>
           {content.items.map((item) => (
             <TabBox>
-              <Tab>
-                <Icon>
-                  <ArrowSVG />
-                </Icon>
-                <Content>
-                  <span>{item.question}</span>
-                </Content>
-              </Tab>
-              <Panel>
-                <PanelWrapper>
-                  {typeof item.answer === "string" ? (
-                    <Paragraph bottomMargin="0" mixed>
-                      {parse(item.answer)}
-                    </Paragraph>
-                  ) : null}
-                  {typeof item.answer === "object" ? (
-                    <Paragraph bottomMargin="0" mixed>
-                      {item.answer.map((el) => (el.url ? <Link to={el.url}>{` ${parse(el.text)} `}</Link> : parse(el.text)))}
-                    </Paragraph>
-                  ) : null}
+              <AccordionItem>
+                <TabHeading>
+                    <AccordionItemButton>
+                      <Button className="accordion-tab">
+                        <Icon>
+                          <ArrowSVG />
+                        </Icon>
+                        <Content>
+                          <span>{item.question}</span>
+                        </Content>
+                      </Button>
+                    </AccordionItemButton>
+                </TabHeading>
+                <PanelWrapper className="accordion-panel">
+                  <AccordionItemPanel>
+                    {typeof item.answer === "string" ? (
+                        <Paragraph bottomMargin="0" mixed>
+                          {parse(item.answer)}
+                        </Paragraph>
+                    ) : null}
+                    {typeof item.answer === "object" ? (
+                        <Paragraph bottomMargin="0" mixed>
+                          {item.answer.map((el) => (el.url ? <Link to={el.url}>{` ${parse(el.text)} `}</Link> : parse(el.text)))}
+                        </Paragraph>
+                    ) : null}
 
-                  {item.list && (
-                    <ul>
-                      {item.list.map((listitem) => (
-                        <li>{parse(listitem)}</li>
-                      ))}
-                    </ul>
-                  )}
+                    {item.list && (
+                        <ul>
+                          {item.list.map((listitem) => (
+                              <li>{parse(listitem)}</li>
+                          ))}
+                        </ul>
+                    )}
 
-                  {typeof item.text === "string" ? (
-                    <Paragraph topMargin="32" bottomMargin="0" mixed>
-                      {parse(item.text)}
-                    </Paragraph>
-                  ) : null}
-                  {typeof item.text === "object" ? (
-                    <Paragraph topMargin="32" bottomMargin="0" mixed>
-                      {item.text.map((el) => (el.url ? <Link to={el.url}>{` ${parse(el.text)} `}</Link> : el.text))}
-                    </Paragraph>
-                  ) : null}
+                    {typeof item.text === "string" ? (
+                        <Paragraph topMargin="32" bottomMargin="0" mixed>
+                          {parse(item.text)}
+                        </Paragraph>
+                    ) : null}
+                    {typeof item.text === "object" ? (
+                        <Paragraph topMargin="32" bottomMargin="0" mixed>
+                          {item.text.map((el) => (el.url ? <Link to={el.url}>{` ${parse(el.text)} `}</Link> : el.text))}
+                        </Paragraph>
+                    ) : null}
 
-                  {item.answer2 &&
+                    {item.answer2 &&
                     item.answer2.map((e, i) => (
-                      <div>
-                        {e.type === "paragraph" && <Paragraph mixed={true}>{parse(e.content)}</Paragraph>}
+                        <div>
+                          {e.type === "paragraph" && <Paragraph mixed={true}>{parse(e.content)}</Paragraph>}
 
-                        {e.type === "arrow-links" &&
+                          {e.type === "arrow-links" &&
                           e.content.map((link) => (
-                            <ArrowLink url={link.url} style={link.style}>
-                              {parse(link.text)}
-                            </ArrowLink>
+                              <ArrowLink url={link.url} style={link.style}>
+                                {parse(link.text)}
+                              </ArrowLink>
                           ))}
 
-                        {e.type === "list-dot-without-bg" && <ListWithDot color={e.color} content={e.content} />}
+                          {e.type === "list-dot-without-bg" && <ListWithDot color={e.color} content={e.content} />}
 
-                        {e.type === "button" && <Button content={e.content} theme={e.theme} arrow width="350px" margin="16px 0 0 0" marginMD="42px 0 42px 0" />}
-                      </div>
+                          {e.type === "button" && <Button content={e.content} theme={e.theme} arrow width="350px" margin="16px 0 0 0" marginMD="42px 0 42px 0" />}
+                        </div>
                     ))}
 
-                  {item.arrowLink && (
-                    <ArrowLink url={item.arrowLink.url} style={item.arrowLink.styles}>
-                      {item.arrowLink.text}
-                    </ArrowLink>
-                  )}
+                    {item.arrowLink && (
+                        <ArrowLink url={item.arrowLink.url} style={item.arrowLink.styles}>
+                          {item.arrowLink.text}
+                        </ArrowLink>
+                    )}
+                  </AccordionItemPanel>
                 </PanelWrapper>
-              </Panel>
+              </AccordionItem>
             </TabBox>
           ))}
+          </Accordion>
         </TabsWrapper>
-      </Tabs>
     </Wrapper>
     //   )}
     // </VisibilitySensor>
   );
 };
 
-export default Accordion;
+export default AccordionFaq;
 
 Accordion.propTypes = {
   bottomMargin: PropTypes.number,

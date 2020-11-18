@@ -1,19 +1,19 @@
-import React from "react"
-import styled from "styled-components"
-import { Tabs, Panel, useTabState } from "@bumaga/tabs"
-import ArrowLink from "./../arrow-link"
-import OverviewSVG from "../../images/overview.inline.svg"
-import WhatIsSVG from "../../images/whatis.inline.svg"
-import ArrowSVG from "../../images/arrow.inline.svg"
-import { Collapse } from "react-collapse"
-import VisibilitySensor from "./../VisibilitySensor"
+import React from "react";
+import styled from "styled-components";
+import { Tabs, Panel, useTabState } from "@bumaga/tabs";
+import ArrowLink from "./../arrow-link";
+import OverviewSVG from "../../images/overview.inline.svg";
+import WhatIsSVG from "../../images/whatis.inline.svg";
+import ArrowSVG from "../../images/arrow.inline.svg";
+import { Collapse } from "react-collapse";
+import VisibilitySensor from "./../VisibilitySensor";
 
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
 
   @media (min-width: 769px) {
-    flex-direction: ${props => (props.layout !== "grid" ? "row" : "column")};
+    flex-direction: ${(props) => (props.layout !== "grid" ? "row" : "column")};
   }
 
   .accordion-panel {
@@ -26,10 +26,10 @@ const Wrapper = styled.div`
     margin-left: auto;
 
     @media (min-width: 769px) {
-      max-width: ${props => (props.layout !== "grid" ? "57%" : "")};
+      max-width: ${(props) => (props.layout !== "grid" ? "57%" : "")};
     }
   }
-`
+`;
 
 const TabsWrapper = styled.div`
   display: flex;
@@ -37,37 +37,37 @@ const TabsWrapper = styled.div`
   width: 100%;
 
   @media (min-width: 769px) {
-    max-width: ${props => (props.layout !== "grid" ? "40%" : "")};
+    max-width: ${(props) => (props.layout !== "grid" ? "40%" : "")};
   }
 
   @media (min-width: 1200px) {
-    max-width: ${props => (props.layout !== "grid" ? "370px" : "")};
+    max-width: ${(props) => (props.layout !== "grid" ? "370px" : "")};
   }
-`
+`;
 
 const Sticky = styled.div`
   display: flex;
   flex-direction: column;
-  grid-gap: ${props => (props.layout === "grid" ? "30px" : "")};
-  position: ${props => (props.layout !== "grid" ? "sticky" : "")};
+  grid-gap: ${(props) => (props.layout === "grid" ? "30px" : "")};
+  position: ${(props) => (props.layout !== "grid" ? "sticky" : "")};
   top: 100px;
 
   @media (min-width: 769px) {
-    display: ${props => (props.layout === "grid" ? "grid" : "flex")};
-    flex-direction: ${props => (props.layout !== "grid" ? "column" : "")};
-    grid-template-columns: ${props => (props.columns ? `repeat(${Math.round(props.columns/2)}, 1fr)` : "")};
+    display: ${(props) => (props.layout === "grid" ? "grid" : "flex")};
+    flex-direction: ${(props) => (props.layout !== "grid" ? "column" : "")};
+    grid-template-columns: ${(props) => (props.columns ? `repeat(${Math.round(props.columns / 2)}, 1fr)` : "")};
   }
 
   @media (min-width: 1200px) {
-    grid-template-columns: ${props => (props.columns ? `repeat(${props.columns}, 1fr)` : "")};
+    grid-template-columns: ${(props) => (props.columns ? `repeat(${props.columns}, 1fr)` : "")};
   }
-`
+`;
 
 const PanelWrapper = styled.article`
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  max-width: ${props => (props.layout !== "grid" ? "670px" : "")};
+  max-width: ${(props) => (props.layout !== "grid" ? "670px" : "")};
   margin-left: auto;
   padding-top: 24px;
 
@@ -82,7 +82,7 @@ const PanelWrapper = styled.article`
   h3 {
     margin-bottom: 48px;
   }
-`
+`;
 
 const Button = styled.button`
   height: 78px;
@@ -110,7 +110,7 @@ const Button = styled.button`
       transform: translateX(0);
     }
   }
-`
+`;
 
 const Icon = styled.div`
   display: flex;
@@ -123,7 +123,7 @@ const Icon = styled.div`
   @media (min-width: 992px) {
     width: 80px;
   }
-`
+`;
 
 const Content = styled.div`
   display: flex;
@@ -162,7 +162,7 @@ const Content = styled.div`
       transform: translateX(0);
     }
   }
-`
+`;
 
 const Arrow = styled.div`
   display: flex;
@@ -178,25 +178,43 @@ const Arrow = styled.div`
       fill: #5088fd;
     }
   }
-`
+`;
 
-const cn = (...args) => args.filter(Boolean).join(" ")
+const cn = (...args) => args.filter(Boolean).join(" ");
 
 const Tab = ({ children }) => {
-  const { isActive, onClick } = useTabState()
+  const { isActive, onClick } = useTabState();
+
+  const scrollTop = (l) => {
+    const el = document.getElementById(l);
+    const offset = 100;
+    const bodyRect = document.body.getBoundingClientRect().top;
+    const elementRect = el.getBoundingClientRect().top;
+    const elementPosition = elementRect - bodyRect;
+    const offsetPosition = elementPosition - offset;
+
+    if (typeof window !== "undefined") {
+      window.scrollTo({
+        top: offsetPosition,
+      });
+    }
+  };
 
   return (
     <Button
       className={cn("accordion-tab", isActive && "active")}
-      onClick={onClick}
+      onClick={() => {
+        onClick();
+        scrollTop("tabs-wrapper");
+      }}
     >
       {children}
     </Button>
-  )
-}
+  );
+};
 
-const AboutTabs = ({layout, columns}) => (
-  <Wrapper layout={layout}>
+const AboutTabs = ({ layout, columns }) => (
+  <Wrapper id="tabs-wrapper" layout={layout}>
     <VisibilitySensor partialVisibility once>
       {({ isVisible }) => (
         <Tabs>
@@ -228,69 +246,25 @@ const AboutTabs = ({layout, columns}) => (
           </TabsWrapper>
           <Collapse isOpened={true}>
             <Panel>
-              <PanelWrapper
-                className={
-                  isVisible ? "slideUp enter panel1" : "slideUp panel1"
-                }
-                layout={layout}
-              >
+              <PanelWrapper className={isVisible ? "slideUp enter panel1" : "slideUp panel1"} layout={layout}>
+                <p>Incorporating your company is not always an easy process. Incfile is here to help you decide not only how to incorporate, but to understand exactly which type of status to file.</p>
                 <p>
-                  Incorporating your company is not always an easy process.
-                  Incfile is here to help you decide not only how to
-                  incorporate, but to understand exactly which type of status to
-                  file.
+                  Many companies who incorporate are actually charities that do not intend to make a profit, but rather donate all profits to another organization. In this case, a charity would want to incorporate as a nonprofit and, ultimately, apply for tax exempt status. By having tax exempt
+                  status, your donations can be recorded by donors as not taxable by both the federal and state government. This is a great incentive to be able to offer your constituents.
                 </p>
-                <p>
-                  Many companies who incorporate are actually charities that do
-                  not intend to make a profit, but rather donate all profits to
-                  another organization. In this case, a charity would want to
-                  incorporate as a nonprofit and, ultimately, apply for tax
-                  exempt status. By having tax exempt status, your donations can
-                  be recorded by donors as not taxable by both the federal and
-                  state government. This is a great incentive to be able to
-                  offer your constituents.
-                </p>
-                <p>
-                  People who start nonprofits are driven by passion about a
-                  certain cause. Whatever your cause, creating a nonprofit can
-                  make a difference. We've provided as much information as you
-                  need to know in choosing to incorporate as a nonprofit
-                  corporation.
-                </p>
+                <p>People who start nonprofits are driven by passion about a certain cause. Whatever your cause, creating a nonprofit can make a difference. We've provided as much information as you need to know in choosing to incorporate as a nonprofit corporation.</p>
                 <h3>Save Time and Money. We'll Handle The Paperwork.</h3>
                 <ArrowLink>Form your Nonprofit Corporation today</ArrowLink>
               </PanelWrapper>
             </Panel>
             <Panel>
               <PanelWrapper className="panel2" layout={layout}>
-                <p>
-                  Incorporating your company is not always an easy process.
-                  Incfile is here to help you decide not only how to
-                  incorporate, but to understand exactly which type of status to
-                  file.
-                </p>
-                <p>
-                  Many companies who incorporate are actually charities that do
-                  not intend to make a profit, but rather donate all profits to
-                  another organization. In this case, a charity would want to
-                  incorporate as a nonprofit and, ultimately, apply for tax
-                  exempt status.
-                </p>
+                <p>Incorporating your company is not always an easy process. Incfile is here to help you decide not only how to incorporate, but to understand exactly which type of status to file.</p>
+                <p>Many companies who incorporate are actually charities that do not intend to make a profit, but rather donate all profits to another organization. In this case, a charity would want to incorporate as a nonprofit and, ultimately, apply for tax exempt status.</p>
 
-                <p>
-                  By having tax exempt status, your donations can be recorded by
-                  donors as not taxable by both the federal and state
-                  government. This is a great incentive to be able to offer your
-                  constituents.
-                </p>
+                <p>By having tax exempt status, your donations can be recorded by donors as not taxable by both the federal and state government. This is a great incentive to be able to offer your constituents.</p>
 
-                <p>
-                  People who start nonprofits are driven by passion about a
-                  certain cause. Whatever your cause, creating a nonprofit can
-                  make a difference. We've provided as much information as you
-                  need to know in choosing to incorporate as a nonprofit
-                  corporation.
-                </p>
+                <p>People who start nonprofits are driven by passion about a certain cause. Whatever your cause, creating a nonprofit can make a difference. We've provided as much information as you need to know in choosing to incorporate as a nonprofit corporation.</p>
               </PanelWrapper>
             </Panel>
           </Collapse>
@@ -298,5 +272,5 @@ const AboutTabs = ({layout, columns}) => (
       )}
     </VisibilitySensor>
   </Wrapper>
-)
-export default AboutTabs
+);
+export default AboutTabs;

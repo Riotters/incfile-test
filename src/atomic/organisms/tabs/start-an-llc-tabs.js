@@ -27,6 +27,7 @@ import Table from "../tables/the-c-corp-table";
 import Table2 from "../tables/the-nonprofit-corp-table";
 import AccordionWithCheckmark from "../accordion/accordion-with-checkmark";
 import AccordionWithCounting from "../accordion/accordion-with-counting";
+import LightBoxVideo from "../../../components/LightBox";
 
 const Wrapper = styled.div`
   display: flex;
@@ -245,8 +246,29 @@ const cn = (...args) => args.filter(Boolean).join(" ");
 const Tab = ({ children }) => {
   const { isActive, onClick } = useTabState();
 
+  const scrollTop = (l) => {
+    const el = document.getElementById(l);
+    const offset = 100;
+    const bodyRect = document.body.getBoundingClientRect().top;
+    const elementRect = el.getBoundingClientRect().top;
+    const elementPosition = elementRect - bodyRect;
+    const offsetPosition = elementPosition - offset;
+
+    if (typeof window !== "undefined") {
+      window.scrollTo({
+        top: offsetPosition,
+      });
+    }
+  };
+
   return (
-    <Button className={cn("accordion-tab", isActive && "active")} onClick={onClick}>
+    <Button
+      className={cn("accordion-tab", isActive && "active")}
+      onClick={() => {
+        onClick();
+        scrollTop("tabs-wrapper");
+      }}
+    >
       {children}
     </Button>
   );
@@ -257,7 +279,7 @@ const iconsState = [<TexasSVG />, <DelawareSVG />, <NevadaSVG />, <FloridaSVG />
 
 const CCorpTabs = ({ layout, columns, content }) => (
   <Container>
-    <Wrapper layout={layout}>
+    <Wrapper id="tabs-wrapper" layout={layout}>
       <VisibilitySensor partialVisibility once>
         {({ isVisible }) => (
           <Tabs>
@@ -290,6 +312,7 @@ const CCorpTabs = ({ layout, columns, content }) => (
                   </Paragraph>
                   <AccordionWithCheckmark content={content.content[0].list} tab bottomMargin="40" />
                   <Heading size="3">{content.content[0].header3}</Heading>
+                  <LightBoxVideo thumbnailVideo="how-to-start-an-llc-2379" videoID="R_oIgzYh7NU" bottomMargin="40" />
                   <Paragraph big bottomMargin="48">
                     {content.content[0].text3}
                   </Paragraph>
