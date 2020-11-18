@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
 import { color } from "../../atoms/styles/colors";
+import { shadow } from "../../atoms/styles/shadows";
 import { Heading } from "../../atoms/typography/heading";
 import { Paragraph } from "../../atoms/typography/paragraph";
 import Whitebox from "../../atoms/boxes/white-box";
@@ -138,9 +139,26 @@ const Fee = styled.div`
   }
 `;
 
-const StyledReactTooltip = styled.div`
-  display: flex;
+const TooltipWrapper = styled.div`
+    .tooltip-content {
+        font-size: 16px;
+        max-width: 350px;
+        padding: 40px;
+        line-height: 24px;
+    }
+    
+    & > div.show {
+        opacity: 1;
+        box-shadow: ${shadow.white2};
+        border-radius: 16px;
+        padding: 0;
+    }
 `;
+
+const toolTipTexts = {
+    "Package fee": "<p class='tooltip-content'>The Package Price covers the cost to create, prepare and file all required legal paperwork on your behalf to properly form your new business entity. It also includes the cost for additional services and products in your chosen package.</p>",
+    "State fee": "<p class='tooltip-content'>The State Fee is what your selected state charges to file a new business entity. This amount is pass-through and goes 100% directly to the Secretary of State; Incfile does not keep any part of this fee.</p>"
+};
 
 const PricingCard = ({ className, content, image, ...rest }) => {
   useEffect(() => {
@@ -148,7 +166,10 @@ const PricingCard = ({ className, content, image, ...rest }) => {
   });
   return (
     <Wrapper className={className} {...rest}>
-      {content.variant && (
+        <TooltipWrapper>
+            <ReactTooltip id={"benefitTooltip-" + content.header} />
+        </TooltipWrapper>
+        {content.variant && (
         <Box>
           <span>{content.variant}</span>
         </Box>
@@ -167,7 +188,7 @@ const PricingCard = ({ className, content, image, ...rest }) => {
           <li>
             <Fee>
               <div>
-                <span className="help-mark" data-tip="aaa" data-for="benefitTooltip">
+                <span className="help-mark" data-tip={ toolTipTexts[ fee.text ] } data-html={true} data-type="light" data-for={"benefitTooltip-" + content.header}>
                   <HelpMarkSVG />
                 </span>
                 <span className="text">{fee.text}</span>
@@ -191,7 +212,6 @@ const PricingCard = ({ className, content, image, ...rest }) => {
           ))}
       </ul>
       {content.fee && <Paragraph bottomMargin="6">{content.fee}</Paragraph>}
-      <StyledReactTooltip id="benefitTooltip" />
     </Wrapper>
   );
 };

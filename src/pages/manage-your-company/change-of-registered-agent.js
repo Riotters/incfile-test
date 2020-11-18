@@ -26,7 +26,7 @@ const ChangeOfRegisteredAgent = () => (
     <About content={about} />
     <Help content={help} />
     <Faq content={faq} />
-    <Benefits />
+    <Benefits page="change-of-registered-agent" />
     <Articles oval />
   </Layout>
 );

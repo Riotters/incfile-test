@@ -34,7 +34,7 @@ const ForeignQualification = () => (
     <About content={about} />
     <Basics content={basics} />
     <Help content={help} />
-    <Benefits />
+    <Benefits page="foreign-qualification" />
     <Faq content={faq} />
     <Articles />
   </Layout>
