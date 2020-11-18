@@ -99,9 +99,9 @@ export const HomePageContent = {
           heading1: `File Articles of Organization with the Georgia Secretary of State`,
           text1: `Once you've gathered all the information for your Georgia LLC, you’ll need to file both your Articles of Organization (Form CD 030) and Transmittal Information Form 231 with the GA Secretary of State Corporations Division. These documents formally create your Georgia LLC.`,
           text2: `<a href="https://sos.ga.gov/corporations/acrobat/applications/Filing%20Template%20-%20Articles%20of%20Organization%20for%20LLC%20(CD%20030).pdf" target="_blank" rel="noopener noreferrer" >Download Georgia's Form CD 030 Here</a>`,
-          text3: `<a href="https://sos.ga.gov/corporations/acrobat/applications/Transmittal%20Form%20-%20Limited%20Liability%20Company%20(CD%20231).pdf" target="_blank" rel="noopener noreferrer" >Download Georgia's Transmittal Information Form(Form CD 231) Here</a>`,
-          text4: `You can file both your Articles of Organization and Transmittal Information Form online on the<a href="https://ecorp.sos.ga.gov/Account" target="_blank" rel="noopener noreferrer" > Georgia Secretary of State website </a>, mail them in or have Incfile do it on your behalf for free. The State of Georgia charges a $100 fee to file and start an LLC in Georgia.`,
-          text5: `<b>File by Mail:</b></br></br>
+          text3: `<a href="https://sos.ga.gov/corporations/acrobat/applications/Transmittal%20Form%20-%20Limited%20Liability%20Company%20(CD%20231).pdf" target="_blank" rel="noopener noreferrer" >Download Georgia's Transmittal Information Form (Form CD 231) Here</a>`,
+          text4: `You can file both your Articles of Organization and Transmittal Information Form online on the <a href="https://ecorp.sos.ga.gov/Account" target="_blank" rel="noopener noreferrer" >Georgia Secretary of State website</a>, mail them in or have Incfile do it on your behalf for free. The State of Georgia charges a $100 fee to file and start an LLC in Georgia.`,
+          text5: `<b>File by Mail:</b></br>
                   Corporations Division</br>
                   2 Martin Luther King Jr. Dr. SE,</br>
                   Suite 313 West Tower</br>

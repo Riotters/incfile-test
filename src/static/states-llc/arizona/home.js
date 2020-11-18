@@ -1550,11 +1550,11 @@ export const businessTaxes = [
 ];
 
 export const compare = {
-  header: `How We Compare. <br>Get more more for less.`,
+  header: `How We Compare. <br>Get more for less.`,
   table: {
     headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
     rows: [
-        [`Initial Filing Price`, `$0 + State Fee`, `$79 + State Fee`, `$49 + State Fee`],
+        [`Initial Filing Price`, `$0 +\u00a0State\u00a0Fee`, `$79 +\u00a0State\u00a0Fee`, `$49 +\u00a0State\u00a0Fee`],
         [`File Articles`, `check-green`, `check-green`, `check-green`],
         [`Name Search`, `check-green`, `check-green`, `check-green`],
         [`Business Dashboard with Additional Services, Content & Support`, `check-green`, `check-red`, `check-green`],

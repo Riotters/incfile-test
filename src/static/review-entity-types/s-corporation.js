@@ -47,7 +47,7 @@ export const about = {
 };
 
 export const adventages = {
-  header: `The Advantages of S Corporations`,
+  header: `The Advantages and Benefits of an S Corporations`,
   text: `S Corporations offer several advantages if your company qualifies:`,
   cards: [
     {

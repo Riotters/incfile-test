@@ -194,7 +194,7 @@ const SearchToolSection = ({ content, businessIndustryList }) => {
                                             </LicenseItem>
                                         ))}
                                     </LicenseItemWrapper>
-                                    : <Paragraph>There was no licenses that you needed.</Paragraph>
+                                    : <Paragraph style={{ textAlign: `center` }}>There was no licenses that you needed.</Paragraph>
                                 }
 
 

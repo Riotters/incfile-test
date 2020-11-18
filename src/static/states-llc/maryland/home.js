@@ -135,7 +135,7 @@ export const howToGuide = [
   },
   {
     type: `header`,
-    content: `What to Do After Forming Your Maryland LLC`,
+    content: `What to Do After Starting Your Maryland LLC`,
     size: 3,
     marginBottom: 32,
   },
@@ -1525,7 +1525,7 @@ export const businessTaxes = [
 ];
 
 export const compare = {
-  header: `How We Compare. <br>Get more more for less.`,
+  header: `How We Compare. <br>Get more for less.`,
   table: {
     headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
     rows: [

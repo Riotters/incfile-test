@@ -173,9 +173,7 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `<p>You can easily search the business registry of the MI Secretary of State/Department of Licensing and Regulatory Affairs by using Incfile’s</p>
-      <a href="/business-name-search/" target="_blank">business name search tool.</a></br> 
-      <p>This part of our guide also includes information on naming rules, fictitious names, reserving a Michigan LLC name and more.</p>`,
+    content: `<p>You can easily search the business registry of the MI Secretary of State/Department of Licensing and Regulatory Affairs by using Incfile’s <a href="/business-name-search/" target="_blank">business name search tool.</a> This part of our guide also includes information on naming rules, fictitious names, reserving a Michigan LLC name and more.</p>`,
     marginBottom: 16,
   },
   {
@@ -1654,7 +1652,7 @@ export const businessTaxes = [
 ];
 
 export const compare = {
-  header: `How We Compare. <br>Get more more for less.`,
+  header: `How We Compare. <br>Get more for less.`,
   table: {
     headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
     rows: [
