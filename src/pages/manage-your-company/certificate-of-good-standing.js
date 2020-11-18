@@ -33,7 +33,7 @@ const CertificateOfGoodStanding = () => (
     <About content={about} />
     <Help content={help} />
     <Faq content={faq} />
-    <Benefits />
+    <Benefits page="certificate-of-good-standing" />
     <Articles />
   </Layout>
 );

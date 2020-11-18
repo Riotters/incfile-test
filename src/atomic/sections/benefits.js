@@ -23,7 +23,7 @@ const Wrapper = styled.div`
   }
 `;
 
-const Benefits = ({ bgImage }) => {
+const Benefits = ({ bgImage, page }) => {
   return (
     <Wrapper bgImage={bgImage}>
       <ContentCenter className="heading">
@@ -31,7 +31,7 @@ const Benefits = ({ bgImage }) => {
         <Paragraph big bottomMargin="48" maxWidth="770">
           As your business grows we'll be there every step of the way to make sure that you have the resources at hand to service your companies ongoing needs.
         </Paragraph>
-        <Accordion />
+        <Accordion page={page} />
       </ContentCenter>
     </Wrapper>
   );

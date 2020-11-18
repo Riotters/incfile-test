@@ -89,7 +89,7 @@ const HowToGuide = ({ content, data }) => {
             {/* Main Steps */}
             <Heading size={3} bottomMargin="40" style={{ marginTop: `48px` }}>{content.mainSteps.heading3}</Heading>
 
-            <LightBoxVideo thumbnailVideo="comparison-chart-video-3611" videoID="gXFjp7S_Fsw" />
+            <div id="video"><LightBoxVideo thumbnailVideo="comparison-chart-video-3611" videoID="gXFjp7S_Fsw" /></div>
 
             {content.mainSteps.navSteps.map(step => (
                 <Link to="/#" onClick={e => handleMenuStepClick(step.blockID, e)}>

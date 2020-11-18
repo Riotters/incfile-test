@@ -14,7 +14,7 @@ const Wrapper = styled.div`
     min-height:300px;
     padding: 40px;
 	background: ${(props) => (props.bgColor ? props.bgColor : `${color.white}`)} url(${(props) => props.bgImage}) center right no-repeat;
-	background-size: contain;
+	background-size: ${props => props.bgSize ?? "contain"};
 	margin: ${props => (props.margin ? props.margin : "55px 0")};
 
     .title{
@@ -43,7 +43,7 @@ const Content = styled.div`
 `
 
 const BoxCTA = ({content, bgColor, bgImage, ...rest}) => (
-	<Wrapper bgColor={bgColor} bgImage={bgImage}>
+	<Wrapper bgColor={bgColor} bgImage={bgImage} bgSize={content.bgSize}>
 		<Content>
 			<div className="title" {...rest}>{parse(content.title)}</div>
 			{content.subtitle && 

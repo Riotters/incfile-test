@@ -37,7 +37,7 @@ const Amendment = () => (
     <About content={about} />
     <Requirements content={requirements} />
     <Faq content={faq} />
-    <Benefits bgImage="linear-gradient(to top, rgba(255, 255, 255, 0) 36%, #f2f6ff);"/>
+    <Benefits bgImage="linear-gradient(to top, rgba(255, 255, 255, 0) 36%, #f2f6ff);" page="amendment" />
     <Articles />
   </Layout>
 );
