@@ -2,17 +2,17 @@ export const pages = [
   {
     header: `General`,
     text: `Should I assume that if I form an LLC or incorporate that no…`,
-    url: `/research-topics/general-research-topics/llc-incorporate-name/`,
+    url: `/research-topics/general-research/llc-incorporate-name/`,
   },
   {
     header: `General`,
     text: `How to Get a Trademark: A Complete Guide`,
-    url: `/research-topics/general-research-topics/how-to-get-trademark/`,
+    url: `/research-topics/general-research/how-to-get-trademark/`,
   },
   {
     header: `General`,
     text: `What is a Corporate Seal?`,
-    url: `/research-topics/general-research-topics/corp-seal/`,
+    url: `/research-topics/general-research/corp-seal/`,
   },
 
   {
@@ -78,7 +78,7 @@ export const pages = [
   {
     header: `Registered Agent`,
     text: `What is the main function of the Registered Agent?`,
-    url: `/research-topics/general-research-topics/registered-agent-function/`,
+    url: `/research-topics/general-research/registered-agent-function/`,
   },
   {
     header: `Registered Agent`,

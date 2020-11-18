@@ -120,20 +120,20 @@ export const categories = {
       buttons: [
         {
           header: `Should I assume that if I form an LLC or incorporate that no…`,
-          url: `/research-topics/general-research-topics/llc-incorporate-name/`,
+          url: `/research-topics/general-research/llc-incorporate-name/`,
         },
         {
           header: `How to Get a Trademark: A Complete Guide`,
-          url: `/research-topics/general-research-topics/how-to-get-trademark/`,
+          url: `/research-topics/general-research/how-to-get-trademark/`,
         },
         {
           header: `What is a Corporate Seal?`,
-          url: `/research-topics/general-research-topics/corp-seal/`,
+          url: `/research-topics/general-research/corp-seal/`,
         },
       ],
       link: {
         text: `see all 18 articles`,
-        url: `/research-topics/general-research-topics/`,
+        url: `/research-topics/general-research/`,
       },
     },
     {
@@ -225,7 +225,7 @@ export const categories = {
       buttons: [
         {
           header: `What is the main function of the Registered Agent?`,
-          url: `/research-topics/general-research-topics/registered-agent-function/`,
+          url: `/research-topics/general-research/registered-agent-function/`,
         },
         {
           header: `What is the name and address of my Registered Agent?`,
