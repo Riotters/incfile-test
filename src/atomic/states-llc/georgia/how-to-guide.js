@@ -89,7 +89,7 @@ const HowToGuide = ({ content, data }) => {
             {/* Main Steps */}
             <Heading size={3} bottomMargin="40" style={{ marginTop: `48px` }}>{content.mainSteps.heading3}</Heading>
 
-            <LightBoxVideo thumbnailVideo="comparison-chart-video-3611" videoID="gXFjp7S_Fsw" />
+            <div id="video"><LightBoxVideo thumbnailVideo="comparison-chart-video-3611" videoID="gXFjp7S_Fsw" /></div>
 
             {content.mainSteps.navSteps.map(step => (
                 <Link to="/#" onClick={e => handleMenuStepClick(step.blockID, e)}>
@@ -191,6 +191,7 @@ const HowToGuide = ({ content, data }) => {
                 <Heading size={3}>{content.mainSteps.step4.heading1}</Heading>
                 <Paragraph big mixed={true}>{parse(content.mainSteps.step4.text1)}</Paragraph>
                 <Button content={content.mainSteps.step4.dowload_205_button} theme="secondary56" arrow margin="16px auto 0 0" marginMD="42px auto 42px 0" />
+
                 <Paragraph big mixed={true}>{parse(content.mainSteps.step4.text2)}</Paragraph>
                 <Paragraph big mixed={true}>{parse(content.mainSteps.step4.text3)}</Paragraph>
                 <Paragraph big mixed={true}>{parse(content.mainSteps.step4.text4)}</Paragraph>
