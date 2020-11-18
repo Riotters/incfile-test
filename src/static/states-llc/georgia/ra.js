@@ -25,8 +25,9 @@ export const agentPageContent = {
       content: `Your LLC must have a Georgia Registered Agent at all times. You can appoint a Registered Agent when you first start your business, and you can also replace your existing GA Registered Agent at a later date, provided there is a smooth transition between the old and new Registered Agent service.`,
     },
     {
-      type: `paragraph`,
-      content: `<iframe width="720" height="350" src="https://www.youtube.com/watch?v=wSsZAvrT-IU&feature=emb_logo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>`,
+      type: `video`,
+      image: `what-is-a-registered-agent-7199`,
+      id: `wSsZAvrT-IU`,
     },
     {
       type: `heading`,

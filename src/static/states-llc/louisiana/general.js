@@ -22,7 +22,7 @@ export const tabPages = {
     },
     {
       name: `What To Do Next?`,
-      path: `/other/after-forming-llc/`,
+      path: `/after-forming-llc/`,
     },
   ],
 };
