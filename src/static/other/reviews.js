@@ -7,6 +7,7 @@ export const seo = {
 
 export const top = {
   header: `Incfile.com Reviews`,
+  text: `<p>We've been trusted by 250,000+ business owners worldwide since 2004. </br>See what your fellow entrepreneurs are saying about Incfile.</p>`,
   box1: {
     text1: `4.8`,
     text2: `Out of 5.0`,
@@ -44,7 +45,7 @@ export const top = {
   },
   box4: {
     text1: `96%`,
-    text2: `of customers that buy from this merchant give them a 4 or 5`,
+    text2: `of customers that buy from this merchant give them a 4 or 5 Star rating`,
   },
 };
 

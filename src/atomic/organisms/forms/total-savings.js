@@ -92,7 +92,11 @@ const SpaceBetween = styled.div`
 const StaticRange = styled(WhiteBox)`
   display: flex;
   flex-direction: column;
-  padding: 64px 56px;
+  padding: 64px 16px;
+
+  @media (min-width: 470px) {
+    padding: 64px 56px;
+  }
 
   h4,
   p {

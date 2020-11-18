@@ -66,7 +66,7 @@ export const HomePageContent = {
           text1: `You will need a distinctive and original name for your California LLC that’s not used by any other business in CA. If you’re having trouble coming up with a name, try out Incfile’s <a href="/business-name-generator/">Business Name Generator</a> to brainstorm ideas. There are also a few naming rules you’ll need to follow, which you can read about in detail on our section on <a href="/California-llc/California-business-names/">California LLC Business Names.</a>`,
           text2: `If you already have a name in mind, you can make sure it’s available by using the California business search on the <a href="https://businesssearch.sos.ca.gov" target="_blank" rel="noopener noreferrer">CA Secretary of State website  </a>or<a href="/business-name-search/"> Incfile’s free Business Name Search tool.</a>`,
           text3: `There are a few rules you’ll need to follow when choosing an LLC name, which you can learn about in the 
-                  a href="/california-llc/california-business-names/">California business names</a>
+                  <a href="/california-llc/california-business-names/">California business names</a>
                    section of this guide. One California rule, for example, is that your business name cannot include “Agency,” “Commission,” “Department,” “Bureau,” “Division,” “Municipal” or “Board.”`,
           cta: {
             title: `Incfile’s Business <br>Name Search Tool`,

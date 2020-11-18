@@ -16,7 +16,7 @@ import HowToGuide from "../../atomic/states-llc/texas/how-to-guide";
 import { HomePageContent } from "../../static/states-llc/texas/home";
 import { tabPages, rocket } from "../../static/states-llc/texas/general";
 
-import { getFullPricesAndFilings } from '../../api/Api';
+import { getFullPricesAndFilings } from "../../api/Api";
 
 const Wrapper = styled.div`
   display: flex;
@@ -42,34 +42,34 @@ const Wrapper = styled.div`
 `;
 
 function TexasLLCIndex() {
-    const [dataApi, setDataApi] = React.useState({});
+  const [dataApi, setDataApi] = React.useState({});
 
-    React.useEffect(() => {
-        getFullPricesAndFilings('Texas').then(data => {
-            setDataApi(data);
-        });
-    }, []);
-    
-    return (
-        <Layout>
-            <SEO title="LLCs in Texas | Guide to Forming an LLC in Texas" description="Ready to form your Texas LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
+  React.useEffect(() => {
+    getFullPricesAndFilings("Texas").then((data) => {
+      setDataApi(data);
+    });
+  }, []);
 
-            <LinearBgHeader imageMapName="tx-map-2x">
-                <HomeHeader content={HomePageContent.header} data={dataApi} />
-            </LinearBgHeader>
+  return (
+    <Layout>
+      <SEO title="LLCs in Texas | Guide to Forming an LLC in Texas" description="Ready to form your Texas LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
 
-            <WrapperContent>
-                <Wrapper>
-                    <LeftTabPages content={tabPages} />
-                    <MainPageContent>
-                        <HowToGuide content={HomePageContent.content} data={dataApi} />
-                    </MainPageContent>
-                </Wrapper>
-            </WrapperContent>
+      <LinearBgHeader imageMapName="tx-map-2x">
+        <HomeHeader content={HomePageContent.header} data={dataApi} />
+      </LinearBgHeader>
 
-            <Rocket content={rocket} />
-        </Layout>
-    );
+      <WrapperContent>
+        <Wrapper>
+          <LeftTabPages content={tabPages} />
+          <MainPageContent>
+            <HowToGuide content={HomePageContent.content} data={dataApi} />
+          </MainPageContent>
+        </Wrapper>
+      </WrapperContent>
+
+      <Rocket content={rocket} />
+    </Layout>
+  );
 }
 
 export default TexasLLCIndex;

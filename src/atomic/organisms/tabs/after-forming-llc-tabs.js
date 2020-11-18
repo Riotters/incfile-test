@@ -227,8 +227,29 @@ const cn = (...args) => args.filter(Boolean).join(" ");
 const Tab = ({ children }) => {
   const { isActive, onClick } = useTabState();
 
+  const scrollTop = (l) => {
+    const el = document.getElementById(l);
+    const offset = 100;
+    const bodyRect = document.body.getBoundingClientRect().top;
+    const elementRect = el.getBoundingClientRect().top;
+    const elementPosition = elementRect - bodyRect;
+    const offsetPosition = elementPosition - offset;
+
+    if (typeof window !== "undefined") {
+      window.scrollTo({
+        top: offsetPosition,
+      });
+    }
+  };
+
   return (
-    <TabButton className={cn("accordion-tab", isActive && "active")} onClick={onClick}>
+    <TabButton
+      className={cn("accordion-tab", isActive && "active")}
+      onClick={() => {
+        onClick();
+        scrollTop("tabs-wrapper");
+      }}
+    >
       {children}
     </TabButton>
   );
@@ -238,7 +259,7 @@ const icons = [<Tab1SVG />, <Tab2SVG />, <Tab3SVG />, <Tab4SVG />, <Tab5SVG />];
 
 const CCorpTabs = ({ layout, columns, content, openHsForm }) => (
   <Container>
-    <Wrapper layout={layout}>
+    <Wrapper id="tabs-wrapper" layout={layout}>
       <VisibilitySensor partialVisibility once>
         {({ isVisible }) => (
           <Tabs>
@@ -261,10 +282,11 @@ const CCorpTabs = ({ layout, columns, content, openHsForm }) => (
             <Collapse isOpened={true}>
               <Panel>
                 <PanelWrapper className={isVisible ? "slideUp enter panel1" : "slideUp panel1"} layout={layout}>
+                <Heading size="3">{content.content[0].header}</Heading>
                   <Paragraph big bottomMargin="48">
                     {content.content[0].text}
                   </Paragraph>
-                  <Heading size="3">{content.content[0].header}</Heading>
+                  <Heading size="3">{content.content[0].header2}</Heading>
                   <Paragraph big bottomMargin="0">
                     {content.content[0].text2}
                   </Paragraph>

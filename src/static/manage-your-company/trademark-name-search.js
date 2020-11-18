@@ -60,6 +60,10 @@ export const faq = {
         answer: `Once you have submitted your business name or logo, an attorney will conduct the initial search and discuss the results via email or phone. 
                     The attorney will then prepare the filing application and submit to the United States Patent and Trademark Office. You will be able to track the approval status and contact us with any questions you may have while awaiting for the approval.`,
       },
+      {
+        question: `How long will the Trademark process take?`,
+        answer: `The Trademark approval times can vary based on a variety of factors. The USPTO is likely to repond in 3 - 4 months from the filing of the application. Despite the delayed approval time, you will be able to monitor the status of the trademark online as it's going through the approval process.`,
+      },
     ],
   },
 };

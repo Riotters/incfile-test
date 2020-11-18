@@ -6,19 +6,20 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: ${props => props.maxWidth ? `${props.maxWidth}px` : ""};
+  max-width: ${(props) => (props.maxWidth ? `${props.maxWidth}px` : "")};
   margin: 0 auto;
-  margin-bottom: ${props => props.bottomMargin ? `${props.bottomMargin}px` : ""};
+  margin-bottom: ${(props) => (props.bottomMargin ? `${props.bottomMargin}px` : "")};
 
   @media (min-width: 992px) {
     flex-direction: row;
+    margin-bottom: ${(props) => (props.bottomMarginLG ? `${props.bottomMarginLG}px` : "")};
   }
 `;
 
 const Content = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: ${props => props.contentCenter ? "center" : ""};
+  justify-content: ${(props) => (props.contentCenter ? "center" : "")};
   width: 100%;
 
   @media (min-width: 992px) {
@@ -36,10 +37,10 @@ const Content = styled.div`
 `;
 
 const Sticky = styled.div`
-    display: block;
-    width: 100%;
-    position: sticky !important;
-    top: 100px;
+  display: block;
+  width: 100%;
+  position: sticky !important;
+  top: 100px;
 `;
 
 const Objectbox = styled.div`
@@ -51,7 +52,7 @@ const Objectbox = styled.div`
   }
 
   .card {
-    margin: 80px auto 0;
+    margin: ${(props) => (props.objectMargin ? props.objectMargin : "80px auto 0")};
 
     @media (min-width: 992px) {
       margin: 0 auto;
@@ -59,15 +60,15 @@ const Objectbox = styled.div`
   }
 `;
 
-const LeftContentRightObject = ({ className, object, children, maxWidth, contentWidth, contentCenter, bottomMargin }) => {
+const LeftContentRightObject = ({ className, object, objectMargin, children, maxWidth, contentWidth, contentCenter, bottomMargin, bottomMarginLG }) => {
   return (
     <Container>
-      <Wrapper className={className} maxWidth={maxWidth} bottomMargin={bottomMargin}>
-        <Content contentWidth={contentWidth} contentCenter={contentCenter}>{children}</Content>
-        <Objectbox>
-          <Sticky>
-            {object}
-          </Sticky>
+      <Wrapper className={className} maxWidth={maxWidth} bottomMargin={bottomMargin} bottomMarginLG={bottomMarginLG}>
+        <Content contentWidth={contentWidth} contentCenter={contentCenter}>
+          {children}
+        </Content>
+        <Objectbox objectMargin={objectMargin}>
+          <Sticky>{object}</Sticky>
         </Objectbox>
       </Wrapper>
     </Container>

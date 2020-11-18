@@ -24,64 +24,64 @@ import { ThankYouContent } from "../components/hubspot/thank-you-modal";
 import HSFormModal from "../components/hubspot/standard-post-form-modal";
 
 const BusinessChecklist = () => {
-    const [modalVisible, setModalVisible] = React.useState(false);
-    const [formSubmitted, setFormSubmitted] = React.useState(false);
-    const [modalClases, setModalClases] = React.useState(["lightbox-content"]);
+  const [modalVisible, setModalVisible] = React.useState(false);
+  const [formSubmitted, setFormSubmitted] = React.useState(false);
+  const [modalClases, setModalClases] = React.useState(["lightbox-content"]);
 
-    React.useEffect(() => {
-        if (formSubmitted) {
-            setModalClases((modalClases) => [...modalClases, "form-submitted"]);
-        }
-    }, [formSubmitted]);
+  React.useEffect(() => {
+    if (formSubmitted) {
+      setModalClases((modalClases) => [...modalClases, "form-submitted"]);
+    }
+  }, [formSubmitted]);
 
-    const popup = (e) => {
-        e.preventDefault();
+  const popup = (e) => {
+    e.preventDefault();
 
-        if (!e.target.className.includes("modal-overlay") && !e.target.className.includes("modal-close") && modalVisible) return;
+    if (!e.target.className.includes("modal-overlay") && !e.target.className.includes("modal-close") && modalVisible) return;
 
-        setModalVisible(!modalVisible);
-        setFormSubmitted(false);
-    };
+    setModalVisible(!modalVisible);
+    setFormSubmitted(false);
+  };
 
-    const postDownload = (formData) => {
-        setModalVisible(modalVisible);
-        setFormSubmitted(true);
-    };
-    
-    return (
-        <Layout>
-            <SEO title="How to Start a Business | Start a Business Checklist" description="It’s time to bring your ideas and inspiration to life. Our straightforward guide helps you get your business off the ground, fast. Read more." />
-            <Top imageName="mrs-bulb-business-checklist" imageAlt="Mrs Bulb and with checklist" ovalColor="green" contentWidth={700}>
-                <Heading size={1}>{top.header}</Heading>
-                <Paragraph big>{top.text}</Paragraph>
-                <Buttonsbox>
-                    <Button content={top.buttons[0]} theme="primary56" arrow />
-                    <ButtonAction content={top.buttons[1]} theme="secondary56" onClick={popup} margin="0 0 0 15px" />
-                </Buttonsbox>
-                <RatingRow>
-                    <CartBlock />
-                    <RatingBlock />
-                </RatingRow>
-            </Top>
-            <About content={about} />
-            <ChecklistSection content={checks} buttonAction={popup} />
+  const postDownload = (formData) => {
+    setModalVisible(modalVisible);
+    setFormSubmitted(true);
+  };
 
-            <Wrapper>
-                <Oval className="oval" height="341" width="341" top="20" right="0">
-                    <OvalSVG />
-                </Oval>
-                <Articles />
-            </Wrapper>
-            
-            <LightBoxModal visible={modalVisible} className="modal-overlay">
-                <LightBoxContent style={{ pointerEvents: "all" }} class={modalClases.join(" ")}>
-                {!formSubmitted && <HSFormModal hs_form_id={hsForm.hs_form_id} content={hsForm} modalExit={popup} postDownloadAction={postDownload} />}
-                {formSubmitted && <ThankYouContent modalExit={popup} />}
-                </LightBoxContent>
-            </LightBoxModal>
-        </Layout>
-    );
-}
+  return (
+    <Layout>
+      <SEO title="How to Start a Business | Start a Business Checklist" description="It’s time to bring your ideas and inspiration to life. Our straightforward guide helps you get your business off the ground, fast. Read more." />
+      <Top imageName="mrs-bulb-business-checklist" imageAlt="Mrs Bulb and with checklist" ovalColor="green" contentWidth={700}>
+        <Heading size={1}>{top.header}</Heading>
+        <Paragraph big>{top.text}</Paragraph>
+        <Buttonsbox>
+          <Button content={top.buttons[0]} theme="primary56" arrow />
+          <ButtonAction content={top.buttons[1]} theme="secondary56" onClick={popup} margin="0 0 0 15px" />
+        </Buttonsbox>
+        <RatingRow>
+          <CartBlock />
+          <RatingBlock />
+        </RatingRow>
+      </Top>
+      <About content={about} />
+      <ChecklistSection content={checks} buttonAction={popup} />
+
+      <Wrapper>
+        <Oval className="oval" height="341" width="341" top="20" right="0">
+          <OvalSVG />
+        </Oval>
+        <Articles />
+      </Wrapper>
+
+      <LightBoxModal visible={modalVisible} className="modal-overlay">
+        <LightBoxContent style={{ pointerEvents: "all" }} class={modalClases.join(" ")}>
+          {!formSubmitted && <HSFormModal hs_form_id={hsForm.hs_form_id} content={hsForm} modalExit={popup} postDownloadAction={postDownload} />}
+          {formSubmitted && <ThankYouContent modalExit={popup} />}
+        </LightBoxContent>
+      </LightBoxModal>
+    </Layout>
+  );
+};
 
 const Wrapper = styled.div`
   position: relative;
@@ -110,7 +110,7 @@ const LightBoxContent = styled.div`
   width: 100%;
   max-width: 750px;
   position: relative;
-  margin: 0 30px;
+  //margin: 0 30px;
   max-height: 100vh;
   overflow-y: auto;
 

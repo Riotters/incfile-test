@@ -11,6 +11,8 @@ import Curve from "../../atoms/icons/curve";
 import CurveSVG from "../../../images/curves/top-left-bottom-right.inline.svg";
 import { states } from "../../../components/states";
 
+import { useForm, Controller } from "react-hook-form";
+
 const entityList = ['LLC', 'SCorporation', 'CCorporation', 'Nonprofit'];
 const stateList = states.state.map((state) => state.name);
 const monthList = [
@@ -38,29 +40,32 @@ const yearList = [];
 const d = new Date();
 const currentYear = d.getFullYear();
 for (let year = currentYear; year > 1980; year--) {
-  yearList.push(year);
+    yearList.push(year);
 }
 
 const AnnualReportForm = ({ className, content, checkDueDate }) => {
-    const [formationDay, setFormationDay] = React.useState('');
-    const [formationMonth, setFormationMonth] = React.useState('');
-    const [formationYear, setFormationYear] = React.useState('');
-    const [entityType, setEntityType] = React.useState('');
-    const [companyName, setCompName] = React.useState('');
-    const [entityState, setEntityState] = React.useState('');
+    const { register, reset, handleSubmit, control, errors, formState, setValue } = useForm({
+        defaultValues: {
+            entityType: '',
+            entityState: '',
+            formationYear: '',
+            formationDay: '',
+            formationMonth: ''
+        }
+    });
+    const { isSubmitting, isSubmitSuccessful } = formState;
 
-    const handleForm = e => {
-        e.preventDefault();
-        
+    const { monthRef, yearRef, dayRef, entityTypeRef, stateRef } = React.useRef();
+
+    const handleForm = data => {
+ 
         const formData = new FormData();
-        formData.append('formationDay', formationDay);
-        formData.append('formationMonth', formationMonth);
-        formData.append('formationYear', formationYear);
-        formData.append('entityType', entityType);
-        formData.append('companyName', companyName);
         formData.append('isForeign', 0);
-        formData.append('entityState', entityState);
         formData.append('ongoingRequirement', 1);
+
+        Object.keys(data).forEach(i => {
+            return formData.set(i, data[i]);
+        });
 
         checkDueDate(formData);
     }
@@ -73,23 +78,122 @@ const AnnualReportForm = ({ className, content, checkDueDate }) => {
             <Heading size="5" bottomMargin="16">
                 {content.header}
             </Heading>
-            <Label htmlFor="company" content={content.field} bottomMargin="24">
-                <Input placeholder="Company name" onChange={e => setCompName(e.target.value)} />
-            </Label>
-            <Label htmlFor="state" content={content.field2} bottomMargin="16">
-                <Dropdown options={stateList} placeholder="Select" onChange={option => setEntityState(option.value)} />
-            </Label>
-            <Label htmlFor="state" content={{ label: `Select Entity Type*` }} bottomMargin="16">
-                <Dropdown options={entityList} placeholder="Select" onChange={option => setEntityType(option.value)} />
-            </Label>
-            <Label htmlFor="date" content={content.field4}>
-                <Grid>
-                    <Dropdown name="formationMonth" options={monthList} placeholder="Month" onChange={option => setFormationMonth(option.value)} />
-                    <Dropdown name="formationDay" options={dayList} placeholder="Day" onChange={option => setFormationDay(option.value)} />
-                    <Dropdown name="formationYear" options={yearList} placeholder="Year" onChange={option => setFormationYear(option.value)} />
-                </Grid>
-            </Label>
-            <Button content={content.button} onClick={e => handleForm(e)} theme="primary56" arrow marginSM="32px auto 0" />
+            <form onSubmit={handleSubmit(handleForm)}>
+                <Label htmlFor="company" content={content.field} bottomMargin="24">
+                    <Input placeholder="Company name" name="companyName"
+                        className={errors.firstname ? 'invalid' : ''}
+                        inputRef={register({ required: `Field can't be empty` })}
+                    />
+                    {errors.companyName && (
+                        <span className="error__info">{errors.companyName.message}</span>
+                    )}
+                </Label>
+
+                <Label htmlFor="state" content={content.field2} bottomMargin="16">
+                    <Controller
+                        control={control}
+                        name="entityState"
+                        rules={{ required: `Field can't be empty` }}
+                        onFocus={() => stateRef.current?.focus()}
+                        render={() => (
+                            <Dropdown
+                                inputRef={stateRef}
+                                className={errors.entityState ? 'invalid' : ''}
+                                options={stateList}
+                                onChange={option => {
+                                    setValue('entityState', option.value, { shouldValidate: true })
+                                }}
+                                placeholder="Select"
+                            />
+                        )}
+                    />
+                    {errors.entityState && (
+                        <span className="error__info">{errors.entityState.message}</span>
+                    )}
+
+                </Label>
+                <Label htmlFor="state" content={{ label: `Select Entity Type*` }} bottomMargin="16">
+                    <Controller
+                        control={control}
+                        name="entityType"
+                        rules={{ required: `Field can't be empty` }}
+                        onFocus={() => entityTypeRef.current?.focus()}
+                        render={() => (
+                            <Dropdown
+                                inputRef={entityTypeRef}
+                                className={errors.entityType ? 'invalid' : ''}
+                                options={entityList}
+                                onChange={option => {
+                                    setValue('entityType', option.value, { shouldValidate: true })
+                                }}
+                                placeholder="Select"
+                            />
+                        )}
+                    />
+                    {errors.entityType && (
+                        <span className="error__info">{errors.entityType.message}</span>
+                    )}
+                </Label>
+                <Label htmlFor="date" content={content.field4}>
+                    <Grid>
+                        <Controller
+                            control={control}
+                            name="formationMonth"
+                            rules={{ required: `Field can't be empty` }}
+                            onFocus={() => monthRef.current?.focus()}
+                            render={() => (
+                                <Dropdown
+                                    inputRef={monthRef}
+                                    className={errors.formationMonth ? 'invalid' : ''}
+                                    options={monthList}
+                                    onChange={option => {
+                                        setValue('formationMonth', option.value, { shouldValidate: true })
+                                    }}
+                                    placeholder="Month"
+                                />
+                            )}
+                        />
+
+                        <Controller
+                            control={control}
+                            name="formationDay"
+                            rules={{ required: `Field can't be empty` }}
+                            onFocus={() => dayRef.current?.focus()}
+                            render={() => (
+                                <Dropdown
+                                    inputRef={dayRef}
+                                    className={errors.formationDay ? 'invalid' : ''}
+                                    options={dayList}
+                                    onChange={option => {
+                                        setValue('formationDay', option.value, { shouldValidate: true })
+                                    }}
+                                    placeholder="Day"
+                                />
+                            )}
+                        />
+
+                        <Controller
+                            control={control}
+                            name="formationYear"
+                            rules={{ required: `Field can't be empty` }}
+                            onFocus={() => yearRef.current?.focus()}
+                            render={() => (
+                                <Dropdown
+                                    inputRef={yearRef}
+                                    className={errors.formationYear ? 'invalid' : ''}
+                                    options={yearList}
+                                    onChange={option => {
+                                        setValue('formationYear', option.value, { shouldValidate: true })
+                                    }}
+                                    placeholder="Year"
+                                />
+                            )}
+                        />
+    
+                    </Grid>
+                </Label>
+                <Button disabled={isSubmitting} content={content.button} theme="primary56" arrow marginSM="32px auto 0" />
+            </form>
         </Wrapper>
     );
 };

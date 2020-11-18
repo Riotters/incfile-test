@@ -29,8 +29,8 @@ const Cell = styled.div`
   }
 
   ${(props) =>
-    !props.noSeparator &&
-    `
+        !props.noSeparator &&
+        `
   &:not(:last-child) {
     border-right: 2px solid ${color.grey4};
   }
@@ -55,22 +55,22 @@ const ListItem = styled(Paragraph)`
 `;
 
 const GridTableRow = ({ className, content, header, headerSize, list, columns, textCenter, noSeparator }) => (
-  <Wrapper className={className} columns={columns}>
-    {content.map((item) => (
-      <Cell textCenter={textCenter} noSeparator={noSeparator}>
-        {header && (
-          <Heading size={headerSize ? headerSize : "4"} bottomMargin="0">
-            {item}
-          </Heading>
-        )}
-        {list && item !== "" && item !== "check-green" && item !== "check-red" && <ListItem bottomMargin="0">{item}</ListItem>}
-        {!header && !list && item !== "" && item !== "check-green" && item !== "check-red" && <Paragraph bottomMargin="0">{item}</Paragraph>}
-        {item === "check-green" && <CheckSVG />}
-        {item === "check-red" && <ExSVG />}
-        {item === "" && <IconCircle theme="empty" circleColor="#E7E7E7" />}
-      </Cell>
-    ))}
-  </Wrapper>
+    <Wrapper className={className} columns={columns}>
+        {content.map((item) => (
+            <Cell textCenter={textCenter} noSeparator={noSeparator}>
+                {header && (
+                    <Heading size={headerSize ? headerSize : "4"} bottomMargin="0">
+                        {item}
+                    </Heading>
+                )}
+                {list && item !== "" && item !== "check-green" && item !== "check-red" && <ListItem bottomMargin="0">{item}</ListItem>}
+                {!header && !list && item !== "" && item !== "check-green" && item !== "check-red" && <Paragraph bottomMargin="0">{item}</Paragraph>}
+                {item === "check-green" && <CheckSVG />}
+                {item === "check-red" && <ExSVG />}
+                {item === "" && <IconCircle theme="empty" circleColor="#E7E7E7" />}
+            </Cell>
+        ))}
+    </Wrapper>
 );
 
 export default GridTableRow;

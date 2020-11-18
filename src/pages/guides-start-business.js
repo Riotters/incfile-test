@@ -20,58 +20,56 @@ import HSFormModal from "../components/hubspot/standard-post-form-modal";
 import { top, about, tableOfContent, needMore, hsForm } from "../static/learning-center-entity/guide-to-start";
 
 const GuideToStart = () => {
-    const [modalVisible, setModalVisible] = React.useState(false);
-    const [formSubmitted, setFormSubmitted] = React.useState(false);
-    const [modalClases, setModalClases] = React.useState(["lightbox-content"]);
+  const [modalVisible, setModalVisible] = React.useState(false);
+  const [formSubmitted, setFormSubmitted] = React.useState(false);
+  const [modalClases, setModalClases] = React.useState(["lightbox-content"]);
 
-    React.useEffect(() => {
-        if (formSubmitted) {
-            setModalClases((modalClases) => [...modalClases, "form-submitted"]);
-        }
-    }, [formSubmitted]);
+  React.useEffect(() => {
+    if (formSubmitted) {
+      setModalClases((modalClases) => [...modalClases, "form-submitted"]);
+    }
+  }, [formSubmitted]);
 
-    const popup = (e) => {
-        e.preventDefault();
+  const popup = (e) => {
+    e.preventDefault();
 
-        if (!e.target.className.includes("modal-overlay") && !e.target.className.includes("modal-close") && modalVisible) return;
+    if (!e.target.className.includes("modal-overlay") && !e.target.className.includes("modal-close") && modalVisible) return;
 
-        setModalVisible(!modalVisible);
-        setFormSubmitted(false);
-    };
+    setModalVisible(!modalVisible);
+    setFormSubmitted(false);
+  };
 
-    const postDownload = (formData) => {
-        setModalVisible(modalVisible);
-        setFormSubmitted(true);
-    };
-    
-    return (
-        <Layout>
-            <SEO title="How to Start a Business: A Complete Guide" description="From developing your business idea to measuring success, our free guide has all the info you need to get your business off the ground. Download now." />
-            <Top imageName="mrs-bulb-complete-guide-to-starting-a-business" imageAlt="Mrs Bulb and with checklist" ovalColor="darkblue">
-                <h1>{top.header}</h1>
-                <p>{top.text}</p>
-                <Buttonsbox>
-                    <Button onClick={popup} content={top.buttons[0]} theme="primary56" arrow />
-                </Buttonsbox>
-                <RatingRow>
-                    <CartBlock />
-                    <RatingBlock />
-                </RatingRow>
-            </Top>
-            <About content={about} />
-            <TableOfContent content={tableOfContent} />
-            <NeedMore content={needMore} onClick={popup} />
-            <LightBoxModal visible={modalVisible} className="modal-overlay">
-                <LightBoxContent style={{ pointerEvents: "all" }} class={modalClases.join(" ")}>
-                    {!formSubmitted &&
-                        <HSFormModal hs_form_id={hsForm.hs_form_id} content={hsForm} modalExit={popup} postDownloadAction={postDownload} />
-                    }
+  const postDownload = (formData) => {
+    setModalVisible(modalVisible);
+    setFormSubmitted(true);
+  };
 
-                    {formSubmitted && <ThankYouContent modalExit={popup} />}
-                </LightBoxContent>
-            </LightBoxModal>
-        </Layout>
-    );
+  return (
+    <Layout>
+      <SEO title="How to Start a Business: A Complete Guide" description="From developing your business idea to measuring success, our free guide has all the info you need to get your business off the ground. Download now." />
+      <Top imageName="mrs-bulb-complete-guide-to-starting-a-business" imageAlt="Mrs Bulb and with checklist" ovalColor="darkblue">
+        <h1>{top.header}</h1>
+        <p>{top.text}</p>
+        <Buttonsbox>
+          <Button onClick={popup} content={top.buttons[0]} theme="primary56" arrow />
+        </Buttonsbox>
+        <RatingRow>
+          <CartBlock />
+          <RatingBlock />
+        </RatingRow>
+      </Top>
+      <About content={about} />
+      <TableOfContent content={tableOfContent} />
+      <NeedMore content={needMore} onClick={popup} />
+      <LightBoxModal visible={modalVisible} className="modal-overlay">
+        <LightBoxContent style={{ pointerEvents: "all" }} class={modalClases.join(" ")}>
+          {!formSubmitted && <HSFormModal hs_form_id={hsForm.hs_form_id} content={hsForm} modalExit={popup} postDownloadAction={postDownload} />}
+
+          {formSubmitted && <ThankYouContent modalExit={popup} />}
+        </LightBoxContent>
+      </LightBoxModal>
+    </Layout>
+  );
 };
 
 const LightBoxModal = styled.div`
@@ -96,7 +94,7 @@ const LightBoxContent = styled.div`
   width: 100%;
   max-width: 750px;
   position: relative;
-  margin: 0 30px;
+  //margin: 0 30px;
   max-height: 100vh;
   overflow-y: auto;
 

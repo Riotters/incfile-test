@@ -182,37 +182,37 @@ const Arrow = styled.div`
 `;
 
 const Boxes = styled.div`
-    display: flex;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-    width: 100%;
-    position: relative;
-    margin-bottom: 32px;
+  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 32px;
 `;
 
 const CircleWhite = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 64px;
-    width: 64px;
-    background-color: ${color.white};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+  width: 64px;
+  background-color: ${color.white};
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &::before {
+    content: "";
+    height: 48px;
+    width: 48px;
+    background-color: ${color.orange1};
     border-radius: 50%;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    &::before {
-        content: "";
-        height: 48px;
-        width: 48px;
-        background-color: ${color.orange1};
-        border-radius: 50%;
-        position: absolute;
-        z-index: -1;
-    }
+    z-index: -1;
+  }
 `;
 
 const BlueBox = styled.div`
@@ -240,8 +240,29 @@ const cn = (...args) => args.filter(Boolean).join(" ");
 const Tab = ({ children }) => {
   const { isActive, onClick } = useTabState();
 
+  const scrollTop = (l) => {
+    const el = document.getElementById(l);
+    const offset = 100;
+    const bodyRect = document.body.getBoundingClientRect().top;
+    const elementRect = el.getBoundingClientRect().top;
+    const elementPosition = elementRect - bodyRect;
+    const offsetPosition = elementPosition - offset;
+
+    if (typeof window !== "undefined") {
+      window.scrollTo({
+        top: offsetPosition,
+      });
+    }
+  };
+
   return (
-    <Button className={cn("accordion-tab", isActive && "active")} onClick={onClick}>
+    <Button
+      className={cn("accordion-tab", isActive && "active")}
+      onClick={() => {
+        onClick();
+        scrollTop("tabs-wrapper");
+      }}
+    >
       {children}
     </Button>
   );
@@ -251,7 +272,7 @@ const icons = [<GeneralSVG />, <WhenChooseSVG />, <ProsAndConsSVG />, <Requireme
 
 const CCorpTabs = ({ layout, columns, content, clickOpenModal }) => (
   <Container>
-    <Wrapper layout={layout}>
+    <Wrapper id="tabs-wrapper" layout={layout}>
       <VisibilitySensor partialVisibility once>
         {({ isVisible }) => (
           <Tabs>
@@ -278,19 +299,25 @@ const CCorpTabs = ({ layout, columns, content, clickOpenModal }) => (
                   <IconTextColorBox color={color.babyblue3} Icon={IconSVG} content={content.content[0].box} bottomMargin="48" rounded curve />
                   <Heading size="3">{content.content[0].header}</Heading>
                   <LightBoxVideo thumbnailVideo="what-is-an-llc-7280" videoID="ZuadTwgek5U" />
-                  <Paragraph big topMargin="32">{content.content[0].text2}</Paragraph>
+                  <Paragraph big topMargin="32">
+                    {content.content[0].text2}
+                  </Paragraph>
                   <Boxes>
-                      <BlueBox>
-                        <Heading size="4" bottomMargin="8">Pass-Through Taxation</Heading>
-                        <Paragraph bottomMargin="0">of a sole proprietorship</Paragraph>
-                      </BlueBox>
-                      <CircleWhite>
-                        <PlusSVG />
-                      </CircleWhite>
-                      <YellowBox>
-                        <Heading size="4" bottomMargin="8">Limited Liability</Heading>
-                        <Paragraph bottomMargin="0">of a corporation</Paragraph>
-                      </YellowBox>
+                    <BlueBox>
+                      <Heading size="4" bottomMargin="8">
+                        Pass-Through Taxation
+                      </Heading>
+                      <Paragraph bottomMargin="0">of a sole proprietorship</Paragraph>
+                    </BlueBox>
+                    <CircleWhite>
+                      <PlusSVG />
+                    </CircleWhite>
+                    <YellowBox>
+                      <Heading size="4" bottomMargin="8">
+                        Limited Liability
+                      </Heading>
+                      <Paragraph bottomMargin="0">of a corporation</Paragraph>
+                    </YellowBox>
                   </Boxes>
                   <Paragraph big>{content.content[0].text3}</Paragraph>
                 </PanelWrapper>
@@ -299,7 +326,9 @@ const CCorpTabs = ({ layout, columns, content, clickOpenModal }) => (
                 <PanelWrapper className="panel2" layout={layout}>
                   <Heading size="3">{content.content[1].header}</Heading>
                   <Paragraph big>{content.content[1].text}</Paragraph>
-                  <Paragraph big mixed>{parse(content.content[1].text2)}</Paragraph>
+                  <Paragraph big mixed>
+                    {parse(content.content[1].text2)}
+                  </Paragraph>
                   <ContentButton content={content.content[1].button} onClick={clickOpenModal} theme="primary56" margin="0 auto 0 0" arrow />
                 </PanelWrapper>
               </Panel>
@@ -309,7 +338,9 @@ const CCorpTabs = ({ layout, columns, content, clickOpenModal }) => (
                   <Paragraph big>{content.content[2].text}</Paragraph>
                   <Heading size="3">{content.content[2].header2}</Heading>
                   <Advantages content={content.content[2].advantages} tab />
-                  <Heading size="3" topMargin="32">{content.content[2].header3}</Heading>
+                  <Heading size="3" topMargin="32">
+                    {content.content[2].header3}
+                  </Heading>
                   <Advantages content={content.content[2].advantages} tab red />
                 </PanelWrapper>
               </Panel>
@@ -320,7 +351,9 @@ const CCorpTabs = ({ layout, columns, content, clickOpenModal }) => (
                   <IconTextColorBox color={color.yellow3} Icon={Icon2SVG} content={content.content[3].box} bottomMargin="48" rounded />
                   <Paragraph big>{content.content[3].text2}</Paragraph>
                   <IconTextColorBox color={color.blue3} Icon={Icon3SVG} content={content.content[3].box2} bottomMargin="48" rounded curve />
-                  <Paragraph big mixed>{parse(content.content[3].text3)}</Paragraph>
+                  <Paragraph big mixed>
+                    {parse(content.content[3].text3)}
+                  </Paragraph>
                   <ArrowLink content={content.content[3].link} />
                 </PanelWrapper>
               </Panel>

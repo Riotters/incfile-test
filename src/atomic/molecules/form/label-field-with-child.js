@@ -60,7 +60,7 @@ const InputField = ({ className, children, content, htmlFor, bottomMargin, botto
           </div>
       }
 
-    <div className="bottom" class={bottomDirection ?? 'bottom column'}>{children}</div>
+    <div className={bottomDirection ?? 'bottom column'}>{children}</div>
   </Wrapper>
 );
 

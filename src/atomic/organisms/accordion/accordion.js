@@ -18,10 +18,11 @@ const Wrapper = styled.div`
   display: flex;
   width: 100%;
   position: relative;
-  margin-top: ${(props) => (props.tab ? "" : "56px")};
+  margin-top: ${(props) => (props.tab ? "" : "24px")};
   margin-bottom: ${(props) => (props.bottomMargin ? `${props.bottomMargin}px` : "")};
 
   @media (min-width: 769px) {
+    margin-top: ${(props) => (props.tab ? "" : "56px")};
     ${(props) => (props.noAutoWidth ? "" : "width: auto;")}
     padding: ${(props) => (props.tab ? "" : "25px 29px 0")};
   }

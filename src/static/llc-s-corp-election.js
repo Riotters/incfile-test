@@ -11,13 +11,13 @@ export const top = {
 
 export const about = {
   header: `Reducing Your Income Tax`,
-  text: `The SS4 is the IRS form required to obtain an EIN (Employer Identification Number, frequently called a Tax ID number). 
-    The EIN/Tax ID number can be thought of as a Social Security Number for your business. It is usually required to open a bank account in 
-    the name of the business and to properly pay and account for any wage/payroll employees of your company. Incfile will 
-    obtain your federal EIN electronically and have it back to you via email within one business day.`,
+  text: `<p>If you want to reduce the amount of tax you pay on your LLC earnings, an</br>
+  <a href="/llc-s-corp-election/" target="_blank">S Corporation Tax Election</a>
+  (<a href="/research-topics/c-corporation-info/what-is-the-form-2553/" target="_blank">form 2553</a>)
+  is a necessity. This tax election tells the Internal Revenue Service to tax your LLC business as an S Corporation, which could reduce the amount of income on which you need to pay self-employment tax (including Social Security, Medicare and FICA). This can substantially reduce your tax bill with only a slight increase in administrative overhead for you and your accountant.</p>`,
   button: [
     {
-      text: "Let Incfile help you file your s corporation tax election",
+      text: "Let Incfile help you file your S Corporation tax election",
       url: `${process.env.ORDER_URL}/s-corp-election-form?action=new&type=24`,
     },
   ],
@@ -95,8 +95,10 @@ export const overhead = {
 };
 
 export const fileForm = {
-  header: `File Form 2553, S Corporation Tax Election Yourself`,
-  text: `If you want to complete the filing process yourself, here are the steps you need to follow:`,
+  header: `How to File Your S Corp Tax Election`,
+  text: `There are a couple of ways you can file form 2553`,
+  header2: `File Form 2553, S Corporation Tax Election Yourself`,
+  text2: `If you want to complete the filing process yourself, here are the steps you need to follow:`,
   list: [
     `Go to the Internal Revenue Service website`,
     `Find the section on S Corporation Tax Elections`,

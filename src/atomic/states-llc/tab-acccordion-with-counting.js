@@ -134,17 +134,29 @@ const ListItems = styled.ul`
 `;
 
 const Button = styled.button`
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  grid-template-areas:
+    "counting text"
+    "arrow text";
+  grid-gap: 8px 15px;
+  min-height: 80px;
   min-width: 80px;
   width: 100%;
   color: #4e4e4e;
   align-items: center;
   background: #fff;
-  display: flex;
   cursor: pointer;
   position: relative;
   border-radius: 5px;
   overflow: hidden;
   border: none;
+  padding: 15px;
+
+  @media (min-width: 470px) {
+    grid-template-columns: 50px 1fr 50px;
+    grid-template-areas: "counting text arrow";
+  }
 
   &.active {
     border-radius: 5px 5px 0 0;
@@ -172,23 +184,46 @@ const Content = styled.div`
     line-height: 24px;
   }
 `;
+const Text = styled.span`
+  color: #4e4e4e;
+  font-family: Avenir;
+  font-size: 16px;
+  text-align: left;
+  width: 100%;
+  line-height: 24px;
+  grid-area: text;
+`;
 
 const Icon = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80px;
-  width: 80px;
-  min-height: 80px;
-  min-width: 80px;
-  max-height: 80px;
-  max-width: 80px;
   opacity: 0.75;
+  grid-area: arrow;
+
+  //   @media (min-width: 470px) {
+  //     height: 50px;
+  //     min-height: 50px;
+  //     max-height: 50px;
+  //   }
 
   svg {
     transform: rotate(180deg);
     transition: transform 0.3s ease;
   }
+`;
+
+const CountingWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: counting;
+
+  //   @media (min-width: 470px) {
+  //     height: 80px;
+  //     min-height: 80px;
+  //     max-height: 80px;
+  //   }
 `;
 
 const Counting = styled.div`
@@ -202,8 +237,6 @@ const Counting = styled.div`
   width: 30px;
   min-width: 30px;
   height: 30px;
-  margin-left: 30px;
-  margin-right: 30px;
 `;
 
 const cn = (...args) => args.filter(Boolean).join(" ");
@@ -248,10 +281,12 @@ const AccordionWithCounting = ({ content, curve, curveRight, curveRightBottom, t
               {content.map((item) => (
                 <TabBox>
                   <Tab>
-                    <Content>
+                    {/* <Content> */}
+                    <CountingWrapper>
                       <Counting>{item.count}</Counting>
-                      <span>{item.question}</span>
-                    </Content>
+                    </CountingWrapper>
+                    <Text>{item.question}</Text>
+                    {/* </Content> */}
                     <Icon>
                       <ArrowSVG />
                     </Icon>

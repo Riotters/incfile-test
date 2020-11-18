@@ -119,7 +119,7 @@ export const about = {
                 },
                 {
                   text: `steps to starting a Limited Liability Company (LLC).`,
-                  url: `/research-topics/llc-info/steps-to-starting-a-limited-liability-company-llc/`,
+                  url: `/research-topics/llc-info/starting-llc-by-steps`,
                 },
               ],
             },
@@ -194,7 +194,7 @@ export const state = {
   },
   button: {
     text: `Calculate my sales tax`,
-    url: `/sale-tax-calculator/`,
+    url: `/sales-tax-calculator/`,
   },
   button2: {
     text: `Check for another state`,

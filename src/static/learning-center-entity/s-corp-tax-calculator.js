@@ -96,8 +96,7 @@ export const compare = {
       `If you choose to form an S Corp, there are more stringent rules and regulations you will have to meet. This can result in more paperwork and higher professional fees for accountancy and legal services.`,
     ],
   },
-  header2: `Important Points about Salaries, Distributions, S Corp 
-  Status, and Taxes`,
+  header2: `Important Points about Salaries, Distributions, S Corp Status, and Taxes`,
   text3: `There are several areas you will need to pay attention to:`,
   header3: `Reasonable Salary and Compensation`,
   text4: `You must pay a reasonable salary as a salary (not a distribution.) The IRS does not have a clear definition of what a “reasonable salary” is, other than proper compensation for the services provided to the corporation. A good rule of thumb is to look at the “average” salary for the position and pay that as salary, with any excess being paid as a distribution. Failure to do this could result in an audit from the IRS.`,

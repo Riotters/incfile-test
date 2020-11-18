@@ -7,40 +7,38 @@ import IconTextColorBox from "../../../molecules/text-blocks/icon-h4-text-color"
 import MegafonSVG from "../../../../images/icons/megafon.inline.svg";
 
 const Wrapper = styled.section`
-    position: relative;
-    
-    .announcement {
-        width: 100%;
-    }
+  position: relative;
+
+  .announcement {
+    width: 100%;
+  }
 `;
 
 const MobileWrapper = styled.div`
-    width: 100%;
-    
-    @media screen and (max-width: 768px) {
-        overflow-x: auto;
-    }
+  width: 100%;
+
+  @media screen and (max-width: 768px) {
+    overflow-x: auto;
+  }
 `;
 
 const MobileInnerContainer = styled.div`
-    @media screen and (max-width: 768px) {
-        width: ${props => props.width ?? "100"}%;
-    }
+  @media screen and (max-width: 768px) {
+    width: ${(props) => props.width ?? "100"}%;
+  }
 `;
 
 const ComparisonStateFillingTime = ({ className, content, stateList }) => (
-    <Wrapper>
-        <Container>
-            <ContentCenter contentWidth={1170}>
-                <IconTextColorBox className="announcement" rounded Icon={MegafonSVG} content={content.announcement.content} color={content.announcement.color} bottomMargin={32} />
-                <MobileWrapper>
-                    <MobileInnerContainer width={300}>
-                        <CompareTable width="100%" headers={content.headers} stateListToCompare={stateList} />
-                    </MobileInnerContainer>
-                </MobileWrapper>
-            </ContentCenter>
-        </Container>
-    </Wrapper>
+  <Wrapper>
+    <ContentCenter contentWidth={1170}>
+      <IconTextColorBox className="announcement" rounded Icon={MegafonSVG} content={content.announcement.content} color={content.announcement.color} bottomMargin={32} linkBottomMargin={0} />
+      <MobileWrapper>
+        <MobileInnerContainer width={300}>
+          <CompareTable width="100%" headers={content.headers} stateListToCompare={stateList} />
+        </MobileInnerContainer>
+      </MobileWrapper>
+    </ContentCenter>
+  </Wrapper>
 );
 
 export default ComparisonStateFillingTime;

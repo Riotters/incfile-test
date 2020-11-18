@@ -99,7 +99,7 @@ const LightBoxContent = styled.div`
   width: 100%;
   max-width: 750px;
   position: relative;
-  margin: 0 30px;
+  //margin: 0 30px;
   max-height: 100vh;
   overflow-y: auto;
 
