@@ -52,18 +52,20 @@ export default function HTML(props) {
                     
                 {/* clickAttributionData */}
                 {process.env.ENABLE_CLICK === true && (
-                    <script
-                        dangerouslySetInnerHTML={{
-                            __html: `
-                            var clickAttributionData = clickAttributionData || {};
-                            clickAttributionData.MerchantId = "8d7e83c4-7a78-4116-9866-d7de1274330c";
-                            `
-                        }}
-                    />
-                    <script
-                        defer 
-                        src="https://clickattribution.com/scripts/v2/path-to-purchase.min.js"
-                    />
+                    <>
+                        <script
+                            dangerouslySetInnerHTML={{
+                                __html: `
+                                var clickAttributionData = clickAttributionData || {};
+                                clickAttributionData.MerchantId = "8d7e83c4-7a78-4116-9866-d7de1274330c";
+                                `
+                            }}
+                        />
+                        <script
+                            defer 
+                            src="https://clickattribution.com/scripts/v2/path-to-purchase.min.js"
+                        />
+                    </>
                 )}
                 
                 {/* Hotjar Tracking Code */}
