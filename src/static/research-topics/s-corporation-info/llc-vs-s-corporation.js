@@ -21,9 +21,9 @@ export const about = {
   text4: `This is not the case with the LLC. In an LLC, the members (akin to stockholders, although LLC’s usually issue “member units” as opposed to common stock) decide how profits should be divided. There may be someone with 10% of the “stock”, but they put in 30% of the work. This stockholder can receive more than what they have invested if the other members agree that they deserve it.`,
   text5: `The same goes with voting power. S-Corporations follow a more traditional structure by which voting power is determined by stock ownership. An LLC can give more or less voting power to stockholders regardless of how much stock they may own.`,
   header5: `The Benefits Of An LLC`,
-  text6: `There are several benefits to forming an LLC instead of an S-Corporations. There are less requirements on this more flexible business entity. You can almost think of an LLC as a marriage between a classic small business (partnership / sole proprietorship) and a corporation.`,
+  text6: `There are several benefits to forming an LLC instead of an S-Corporations. There are less requirements on this more flexible business entity. You can almost think of an LLC as a marriage between a classic small business (partnership / sole proprietorship) and a corporation. Forming an LLC offers you:`,
   list: {
-    header: `Forming an LLC offers you:`,
+    header: ``,
     list: [
       `No ownership restrictions – virtually anyone (individuals, Corporations, other LLC’s, and even foreign entities may be owners of an LLC).`,
       `The ability to operate with a single member.`,

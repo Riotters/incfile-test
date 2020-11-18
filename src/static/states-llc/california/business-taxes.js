@@ -182,7 +182,7 @@ export const businessTaxesPageContent = {
           `On profits of <strong>$60,000</strong>, you would pay self-employment tax of <strong>$9,180</strong>`,
           `On profits of <strong>$100,000</strong>, you would pay self-employment tax of <strong>$15,300</strong>`,
           `On profits of <strong>$140,000</strong>, you would pay self-employment tax of <strong> $21,420</strong>`,
-          `On profits of <strong>$160,000</strong>, you would pay self-employment tax of <strong> $24,480c</strong>`,
+          `On profits of <strong>$160,000</strong>, you would pay self-employment tax of <strong> $24,480</strong>`,
         ],
       },
     },
