@@ -28,7 +28,7 @@ const Rocket = () => (
           Launch your business with Incfile
         </Heading>
         <Paragraph big mixed>
-          No Contracts. No Surprise. <br />
+          No Contracts. No Surprises. <br />
           Only $0 + State Fee to Launch Your Business.
         </Paragraph>
         <Button theme="primary48" arrow width="max-content" content={{ url: `${process.env.ORDER_URL}/form-order-now.php`, text: "Start your Blockchain Business with us, today!" }} />
