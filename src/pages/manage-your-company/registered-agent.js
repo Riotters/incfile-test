@@ -28,7 +28,7 @@ const RegisteredAgent = () => (
     <Includes content={includes} />
     <Offering content={offering} />
     <Faq content={faq} />
-    <Benefits />
+    <Benefits page="registered-agent" />
     <Articles />
   </Layout>
 );

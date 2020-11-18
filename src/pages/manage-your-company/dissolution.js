@@ -25,7 +25,7 @@ const Dissolution = () => (
     <About content={about} />
     <Requirements content={requirements} />
     <Faq content={faq} />
-    <Benefits />
+    <Benefits page="dissolution" />
     <Articles />
   </Layout>
 );
