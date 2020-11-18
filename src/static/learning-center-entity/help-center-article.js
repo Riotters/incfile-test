@@ -9,11 +9,11 @@ export const about = {
     links: [
         {
             text: `View All Topics`,
-            url: `/`,
+            url: `/research-topics/`,
         },
         {
             text: `General`,
-            url: `/`,
+            url: `/research-topics/general-research-topics/`,
         },
     ],
     header: 
@@ -39,43 +39,43 @@ export const related = {
     buttons: [
         {
             header: `Should I assume that if I form an LLC or incorporate that no one else can use the same name?`,
-            url: `/`,
+            url: `/research-topics/general-research-topics/llc-incorporate-name`,
         },
         {
-            header: `What paperwork is required in order to open a business checking account?`,
-            url: `/`,
+            header: `What Do I Need to Open a Business Bank Account?`,
+            url: `/research-topics/general-research-topics/required-business-account-paperwork`,
         },
         {
-            header: `What paperwork is required in order to open a business checking account?`,
-            url: `/`,
+            header: `What is a Publication Requirement?`,
+            url: `/research-topics/general-research-topics/publication-requirement`,
         },
         {
             header: `Does the designator “LLC” or "Inc." always need to be included in your companies name?`,
-            url: `/`,
+            url: `/research-topics/general-research-topics/llc-inc-designator-companies-name`,
         },
         {
             header: `Does Incfile have a Discount or Coupon Code?`,
-            url: `/`,
+            url: `/research-topics/general-research-topics/incfile-discount-coupon`,
         },
         {
             header: `Which entity offers the best tax advantages?`,
-            url: `/`,
+            url: `/research-topics/business-taxes/tax-advantages`,
         },
         {
             header: `What is the main function of the Registered Agent?`,
-            url: `/`,
+            url: `/research-topics/general-research-topics/registered-agent-function`,
         },
         {
             header: `What steps do I need to take to ensure that my entity remains compliant?`,
-            url: `/`,
+            url: `/research-topics/general-research-topics/entity-remains-compliant`,
         },
         {
             header: `Which entity type should I choose?`,
-            url: `/`,
+            url: `/research-topics/llc-info/choosing-entity-type`,
         },
         {
             header: `What is an LLC (Limited Liability Company)?`,
-            url: `/`,
+            url: `/research-topics/llc-info/what-is-an-llc`,
         },
     ]
 }
@@ -103,43 +103,43 @@ export const rocket = {
     buttons: [
         {
             header: `General`,
-            url: `/`
+            url: `/research-topics/general-research-topics/`
         },
         {
             header: `LLC`,
-            url: `/`
+            url: `/research-topics/llc-info/`
         },
         {
             header: `S-Corporation`,
-            url: `/`
+            url: `/research-topics/s-corporation-info/`
         },
         {
             header: `C-Corporation`,
-            url: `/`
+            url: `/research-topics/c-corporation-info/`
         },
         {
             header: `Nonprofit`,
-            url: `/`
+            url: `/research-topics/nonprofit-info/`
         },
         {
             header: `Registered Agent`,
-            url: `/`
+            url: `/research-topics/registered-agent/`
         },
         {
             header: `Business Tax`,
-            url: `/`
+            url: `/research-topics/business-taxes/`
         },
         {
             header: `Employer Identification Number (EIN)`,
-            url: `/`
+            url: `/research-topics/ein-info/`
         },
         {
             header: `Individual State Information`,
-            url: `/`
+            url: `/research-topics/state-info/`
         },
         {
             header: `Video Library`,
-            url: `/`
+            url: `/research-topics/video-library/`
         },
     ],
   }
@@ -159,27 +159,27 @@ export const tools = {
     buttons: [
         {
             header: `Corporation State Information`,
-            url: `/`,
+            url: `/corporation-state-information/`,
         },
         {
             header: `Corporation Tax Calculator`,
-            url: `/`,
+            url: `/s-corporation-tax-calculator/`,
         },
         {
             header: `Entity Comparison Chart`,
-            url: `/`,
+            url: `/business-entity-comparison/`,
         },
         {
             header: `State Filing Fees`,
-            url: `/`,
+            url: `/state-filing-fees/`,
         },
         {
             header: `Ongoing Filing Requirements`,
-            url: `/`,
+            url: `/compliance-filing-requirement/`,
         },
         {
-            header: `State Filing TImes`,
-            url: `/`,
+            header: `State Filing Times`,
+            url: `/state-filings-times/`,
         },
     ],
 }
