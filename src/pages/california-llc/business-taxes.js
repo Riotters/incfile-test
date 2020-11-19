@@ -10,7 +10,7 @@ import WrapperContent from "../../atomic/states-llc/wrapper-content";
 import LeftTabPages from "../../atomic/states-llc/left-tab-pages";
 import MainPageContent from "../../atomic/states-llc/page-content";
 import BusinessTaxesSection from "../../atomic/states-llc/california/business-taxes";
-import Rocket from "../../sections/rocket";
+import Rocket from "../../atomic/sections/rocket";
 
 // Content
 import { businessTaxesPageContent } from "../../static/states-llc/california/business-taxes";
