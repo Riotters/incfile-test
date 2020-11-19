@@ -50,6 +50,8 @@ export const checks = {
           name: "Register Your Fictitious, Assumed or “Doing Business As” Name if Necessary",
           description: "<p>You might want to conduct business under a different name from your legal entity name. For example, your official business name might be “Northwest Restaurant Holdings LLC,” but you might run a restaurant called “Portland Plants and Whole Foods.” If that’s the case, you may want to register the new name as your assumed, fictitious or doing business as name.</p><br><p>This can be much easier than setting up a new business since there’s much less bookkeeping and administration, and you’ll have fewer challenges with bank accounts, finances and tax returns. We have a fictitious names service and are happy to register your assumed business name on your behalf.</p>",
           height: 80,
+          heightSM: 1078,
+          heightMD: 500,
         },
         {
           isCompleted: false,
@@ -57,6 +59,8 @@ export const checks = {
           name: "Choose a business name",
           description: `The perfect business name can be elusive! We have a <a href="/blog/post/llc-name-search-50-states/" target="_blank">complete guide to choosing the right business name.</a> You will want to choose something that best represents your product or services while appealing to your customers and being memorable enough to stand out. You should also check that the business name isn’t used by anyone else in the state(s) where you want to conduct business. If you’re not ready to start your business yet but have the perfect name, you can normally reserve it with the business formation authority in your state.`,
           height: 80,
+          heightSM: 604,
+          heightMD: 500,
         },
         {
           isCompleted: false,
@@ -64,6 +68,8 @@ export const checks = {
           name: "Make sure no other business in your state has your name",
           description: `States do require that every incorporated business has a unique name that’s not used by any other formal business in the state. You will need to check if your business name is available by searching the company name database for your state. We’ve got links to <a href="/blog/post/llc-name-search-50-states/" target="_blank">all the information you need,</a> and we’ve also got a specialized tool for searching your business name in the popular incorporation state of Delaware.`,
           height: 80,
+          heightSM: 507,
+          heightMD: 500,
         },
         {
           isCompleted: false,
@@ -71,6 +77,8 @@ export const checks = {
           name: "Get social media accounts",
           description: "Social media marketing and accounts are vital for any online business, so make sure you can get social media accounts in the name you choose before settling on a business name. The most important social media accounts are probably Facebook and Twitter, but depending on your field you may also want to get set up on LinkedIn, YouTube, Instagram, Pinterest, Reddit or other social media platforms. Namechk, Namecheckr and Check Usernames will all allow you to see whether social media accounts are available across various networks. If they are available, you should sign in and get the accounts as soon as possible.",
           height: 80,
+          heightSM: 649,
+          heightMD: 500,
         },
         {
           isCompleted: false,
@@ -78,6 +86,8 @@ export const checks = {
           name: "Get a Website Domain Name and Email",
           description: `Most businesses need a website, even if they’re not selling online. Even if you don’t have a website, it’s still worth securing your domain name so no one else can use it. You can search for and register your domain name through various domain services like Google Domains, <a href="www.web.com/email-service/business-email" rel="noopener noreferrer nofollow" target="_blank">Web.com,</a> GoDaddy or another domain service. At the same time, you can set up your email account. Services like GSuite from Google or your web hosting provider will often allow you to use your domain name as part of your email address.`,
           height: 80,
+          heightSM: 602,
+          heightMD: 500,
         },
       ],
     },
@@ -95,6 +105,8 @@ export const checks = {
           name: "Get a Registered Agent for Your Business",
           description: `<p>If you've incorporated your business, you must have a “Registered Agent.” They’re chosen by you and can accept legal notices and other correspondence for your business on your behalf. If you’ve chosen a person as a Registered Agent, they must live in the same state where the business is incorporated. If you’ve chosen a business, they must be able to conduct business in that state. They must also have a physical street address and not a P.O. Box.</p><br><p>At Incfile, we provide a comprehensive <a href="/manage-your-company/registered-agent/" target="_blank">Registered Agent</a> service that’s free for the first year if you incorporate through us. Our Registered Agent service includes a dashboard where you can review documents received, get automatic notification of correspondence and get free forwarding of all official, legal correspondence.</p><br><p>Note that you can act as your own Registered Agent, but many business owners choose to have a professional Registered Agent service for privacy, availability or other concerns.</p>`,
           height: 80,
+          heightSM: 1481,
+          heightMD: 500,
         },
         {
           isCompleted: false,
@@ -102,6 +114,8 @@ export const checks = {
           name: "Obtain a Federal Employer Identification Number (EIN)/Tax ID Number",
           description: `<p>Whether you intend to employ people or not, we recommend getting a Federal Employment Number (EIN) from the IRS. This unique number allows LLCs, corporations and sole proprietors to identify themselves for tax purposes.</p></br><p>Think of your EIN as a social security number for your business. You use it when paying wages, filing taxes and paying any money you owe to the IRS. Your state government may also use an EIN for certain tax-related administration or payment. Although you can get an EIN directly from the IRS, it will probably be easier for us to <a href="/manage-your-company/tax-id-ein/" target="_blank">get an EIN on your behalf.</a> For a single low fee, you can get your EIN when you’re incorporating your business with us.</p>`,
           height: 80,
+          heightSM: 1109,
+          heightMD: 500,
         },
         {
           isCompleted: false,
@@ -109,6 +123,8 @@ export const checks = {
           name: "Trademark Your Business Name",
           description: `Incorporating your business means that other businesses can’t incorporate with the same name in your state. If you want more protection than that, you can register your business name as an official trademark. We provide a <a href="/trademark-name-search/" target="_blank">complete trademark search and registration service</a> — we’ll check if your name is already registered with the U.S. Patent and Trademark Office, and then we’ll register it on your behalf if it's available.`,
           height: 80,
+          heightSM: 507,
+          heightMD: 500,
         },
         {
           isCompleted: false,
@@ -116,6 +132,8 @@ export const checks = {
           name: "Satisfy All Business License and Permit Requirements",
           description: `<p>Depending on the type of business you run, you may need certain licenses from the city, county, region, state or federal government. These requirements do vary between industries. For example, to run a restaurant you will need food and hygiene certifications, and if you want to sell alcohol, you will need a liquor license.</p><br><p>The world of permits and licensing can be complex. While the Small Business Administration website is a useful resource, there are likely to be more local and regional licenses you’ll need. Here at Incfile, we provide a <a href="/business-license-research-package/" target="_blank">Business License Research Package</a> service to help. We’ll research all the permits and licenses you’re likely to need and tell you how to register for and obtain each one.</p>`,
           height: 80,
+          heightSM: 1116,
+          heightMD: 500,
         },
         {
           isCompleted: false,
@@ -123,6 +141,8 @@ export const checks = {
           name: "Create an Operating Agreement or Corporate Bylaws",
           description: `<p>Most businesses have internal rules that state how they are run. This helps avoid confusion and makes sure that all the members, managers or directors understand how decisions are made. LLCs typically use a document called an “Operating Agreement” to define how the business should run, while corporations use “Corporate Bylaws.”</p><br><p>Although this might sound complicated, it’s not. We can provide you with <a href="/research-topics/llc-info/the-llc-operating-agreement/" target="_blank">Operating Agreements</a>or corporate bylaws that you can tweak to your exact needs. For corporations, after the corporation has been filed with the state, the directors of the corporation are required to have a meeting to take care of things such as issuing shares of stock, adopting bylaws, appointing officers, etc. You should also keep minutes of directors' meetings and corporate resolutions so you stay compliant with state rules.</p>`,
           height: 80,
+          heightSM: 1271,
+          heightMD: 500,
         },
         {
           isCompleted: false,
@@ -130,6 +150,8 @@ export const checks = {
           name: "Establish a Company Address or Virtual Mailbox Address",
           description: `You will need to list a company address when you form your business. If you work from home, this could be your home address, or it could be your main office address if you have a business headquarters. In some cases, you might even choose to use a Virtual Mailbox as your address. We provide a <a href="/virtual-mailbox/" target="_blank">Virtual Mailbox service</a> across several states.`,
           height: 80,
+          heightSM: 459,
+          heightMD: 500,
         },
         {
           isCompleted: false,
@@ -137,6 +159,8 @@ export const checks = {
           name: "Get Business Insurance, If Needed",
           description: `<p>Most businesses should carry insurance to cover them in any unforeseen circumstances. Common types of business insurance include general liability, professional liability, business property, business vehicles, business interruption, product liability and various profession-based insurance types. If you have employees, you will also need to carry workers compensation insurance.</p><br><p>The <a href="www.sba.gov/business-guide/launch-your-business/get-business-insurance" rel="noopener noreferrer nofollow" target="_blank">U.S. Small Business Administration’s insurance resource</a> an help you understand the different types of business insurance and whether or not insurance is necessary for you. For comprehensive business insurance needs, you won’t go wrong with <a href="land.coverwallet.com/incfile" rel="noopener noreferrer nofollow" target="_blank">Cover Wallet.</a></p><br><p>For more information on how to form your business, see our specialized <a href="/starting-a-business-checklist/" target="_blank">Business Formation Checklist.</a></p>`,
           height: 80,
+          heightSM: 1209,
+          heightMD: 500,
         },
         {
           isCompleted: false,
@@ -144,6 +168,8 @@ export const checks = {
           name: "Choose the Right State to Form Your Business",
           description: `<p>Before you form your business, you’ll need to choose what state you want to incorporate in. For most business owners, incorporating in your home state is the best idea. Although Delaware and Nevada are both popular states for incorporation due to legal and other benefits, many of those advantages won’t apply to most small businesses.</p><br><p>Typically, you will register in your own state as a “Domestic” business, and in other states where you want to operate as a “Foreign” business. We’ve got helpful, state-by-state information that guides you through <a href="/llc-state-information/" target="_blank">starting an LLC</a> or <a href="/corporation-state-information/" target="_blank">corporation in every state.</a></p>`,
           height: 80,
+          heightSM: 961,
+          heightMD: 500,
         },
       ],
     },
@@ -161,6 +187,8 @@ export const checks = {
           name: "Open a Business Bank Account",
           description: `<p>If you’re an LLC or corporation, you must have a separate business bank account. Even if you’re not a legally-incorporated business, a separate business bank account is always a good idea. Managing your business finances in a different account will make it much easier to manage financial transactions, see when invoices have been paid, track expenses and reconcile against your accounting records.</p><br><p>Setting up a business bank account is easy. Every bank has its own requirements, but most will need the incorporation paperwork from your state (like your Articles of Organization) and your EIN. We can get all the information you need and send it to you.</p><br><p>When it comes to banks, choose one that works for you — whether it’s a large chain like <a href="utility.bankofamerica.com/alliance/?formid=IF1" rel="noopener noreferrer nofollow" target="_blank">Bank of America,</a> Wells Fargo or Chase, or a smaller local bank. Get in touch with your bank to see what their specific requirements are for opening up a business bank account. Most banks will provide checkbooks and business debit cards that are linked to your account.</p>`,
           height: 80,
+          heightSM: 1488,
+          heightMD: 500,
         },
         {
           isCompleted: false,
@@ -178,6 +206,8 @@ export const checks = {
           <p>The <a href="www.sba.gov/node/13710" rel="noopener noreferrer nofollow" target="_blank">SBA Access Financing tool</a> will help you find out what government financing programs may be available to help you start or expand your business.</p><br>
           <p>If you’re after a great business loan from a specialized business loan provider, <a href="www.kabbage.com/?refid=krpecbf088e" rel="noopener noreferrer nofollow" target="_blank">we recommend Kabbage</a> for competitive rates and terms.</p><br>`,
           height: 80,
+          heightSM: 991,
+          heightMD: 500,
         },
         {
           isCompleted: false,
@@ -185,6 +215,8 @@ export const checks = {
           name: "Get a Business Credit Card",
           description: `A business credit card gives your business a simple way to buy products and services now and pay them off when you have the cash. For a new business, a business credit card will mainly be issued based on your personal credit score, so you will need to make sure that’s in good shape. Remember to pay your business card off regularly so you don’t run up large interest fees.`,
           height: 80,
+          heightSM: 457,
+          heightMD: 500,
         },
         {
           isCompleted: false,
@@ -192,6 +224,8 @@ export const checks = {
           name: "Get an Accountant or Bookkeeper",
           description: "Good financial management is essential for any small business. You will want to hire an accountant or bookkeeper who can provide financial advice, help you with your taxes and file them on your behalf. You'll also need to understand cash flow statements, balance sheets and profit and loss reports so you can stay on top of your money. Typically, a bookkeeper will help you with financial record keeping and reconciliation, while an accountant will also assist with preparing and filing taxes and providing financial advice.",
           height: 80,
+          heightSM: 553,
+          heightMD: 500,
         },
         {
           isCompleted: false,
@@ -199,6 +233,8 @@ export const checks = {
           name: "Decide If You Want Your LLC Treated as an S Corporation for Tax Purposes",
           description: `If you’re forming an LLC and want to reduce the amount of tax you pay, you might want to complete an <a href="www.incfile.com/llc-s-corp-election/" rel="noopener noreferrer nofollow" target="_blank">S Corporation Tax Election.</a> This tells the Internal Revenue Service to treat your business like an S Corporation, which could reduce the amount of income on which you need to pay self-employment tax (Social Security, Medicare and FICA). This can substantially reduce your tax bill, with only a slight increase in administrative overhead for you and your accountant. We can file the S Corporation Tax Election on your behalf.`,
           height: 80,
+          heightSM: 627,
+          heightMD: 500,
         },
         {
           isCompleted: false,
@@ -206,6 +242,8 @@ export const checks = {
           name: "Decide on Accounting and Invoicing Software",
           description: `It will make your job (and your accountant’s job) much easier if you use accounting software to keep track of your finances on an ongoing basis. There are plenty of great online options for managing your invoices, expenses, transactions and reports. We recommend <a href="www.freshbooks.com/invoice?ref=10400&utm_source=sas&utm_medium=affiliate&utm_campaign=938781&sscid=b1k4_82jjj" rel="noopener noreferrer nofollow" target="_blank">Freshbooks,</a> Quickbooks, Zipbooks and Xero. You can also use an invoicing tool like Bonsai, And.co or Invoicely.`,
           height: 80,
+          heightSM: 482,
+          heightMD: 500,
         },
         {
           isCompleted: false,
@@ -222,6 +260,8 @@ export const checks = {
             </ul>
             <p>Transaction costs: Fees from processing payments via PayPal, Stripe or debit/credit cards</p>`,
           height: 80,
+          heightSM: 1238,
+          heightMD: 500,
         },
         {
           isCompleted: false,
@@ -239,6 +279,8 @@ export const checks = {
               </ul>
               <p>Once you know what taxes you are likely to pay, you will need to pay estimated taxes to the federal and state government four times a year.</p>`,
           height: 80,
+          heightSM: 1556,
+          heightMD: 500,
         },
         {
           isCompleted: false,
@@ -252,6 +294,8 @@ export const checks = {
               </ul>
               <p>Most states do not levy sales tax on goods that are considered necessities, like food, medications, clothing or gas.</p>`,
           height: 80,
+          heightSM: 995,
+          heightMD: 500,
         },
         {
           isCompleted: false,
@@ -259,6 +303,8 @@ export const checks = {
           name: "Know About the Sales Tax Nexus",
           description: "<p>Another important concept for sales taxes is that of a “nexus.” A nexus, also known as a “sufficient physical presence” helps define whether you'll need to pay sales tax in a particular state. For example, if you have a nexus in North Carolina, you must pay NC sales taxes. For traditional brick and mortar businesses, the idea of a sales tax nexus is straightforward — if you have a physical store, office location or other presence, you will need to pay sales tax to the state government.</p><br><p>Where it gets more complicated is if you’re an online retailer or ecommerce website. Because you’re selling across state lines, whether you have a nexus or not is a little more confusing. Typically, you will be defined as having a nexus if you have an office, employee, warehouse or affiliate in a state. Some states may also define a sales tax nexus if you make a certain number or amount of sales, or if you are temporarily doing business in a state.</p><br><p>If you do have a nexus, you will need to collect sales tax and pay it to the state government. Because nexus rules can be confusing, we recommend seeking professional advice from your accountant.</p><br>",
           height: 80,
+          heightSM: 1698,
+          heightMD: 500,
         },
         {
           isCompleted: false,
@@ -266,6 +312,8 @@ export const checks = {
           name: "Create Merchant Accounts to Accept Credit Card Payments",
           description: "You may need a special merchant account to accept credit and debit card payments from your customers. Some accounting software, payment gateways and other setups let you accept cards automatically, especially if you just take payments online. If you take payments in person (like in a brick-and-mortar store), you might want to look into merchant account providers to get the best rates on your card transactions.",
           height: 80,
+          heightSM: 505,
+          heightMD: 500,
         },
       ],
     },
@@ -283,6 +331,8 @@ export const checks = {
           name: "Get Equipment",
           description: "The equipment you need depends on your industry and the type of work you do. Will you need a laptop, computer, smartphone or tablet? Think also about your needs for transportation or specialized equipment. You might be able to lease certain equipment or buy used versions if you’re trying to keep costs down. Remember to record exactly what you’re spending so you can write it off as business expenses on your taxes.",
           height: 80,
+          heightSM: 505,
+          heightMD: 500,
         },
         {
           isCompleted: false,
@@ -290,6 +340,8 @@ export const checks = {
           name: "Research and Choose the Best Vendors and Suppliers",
           description: "<p>If you’re selling a product, you will need to source it from somewhere. Choosing the right vendor or supplier is a vital part of managing your supply chain. Look at multiple suppliers, read reviews and speak to other people in the industry. Talk with your suppliers and understand the terms and conditions that you will both have to work with.</p><br><p>There are plenty of online vendor marketplaces where you can find and research products and suppliers, including Alibaba, ThomasNet, EC21 and more.</p>",
           height: 80,
+          heightSM: 837,
+          heightMD: 500,
         },
         {
           isCompleted: false,
@@ -302,6 +354,8 @@ export const checks = {
             <p><b>Maximize Creativity Through Software</b> — If you’re in a freelance or creative industry, you will want software that streamlines the creative process and maximizes output. Tools like Adobe Creative Cloud or various creative software available from Apple can help.</p><br>
             <p>There are also dozens of other online software tools that can make business management much easier. Wunderlist or Microsoft To Do will help you with your to-do list, and you can get cloud storage through Google Drive, Dropbox or Box. You can manage customer relationships with SalesForce or Insightly, or launch an ecommerce store with Shopify. Most of these apps have free versions or trial periods so you can try them out and see if you like them before making a big investment.</p>`,
           height: 80,
+          heightSM: 2644,
+          heightMD: 500,
         },
         {
           isCompleted: false,
@@ -309,6 +363,8 @@ export const checks = {
           name: "Get a Virtual Phone System",
           description: `<p>If you want your customers to call you, a virtual phone system is a good idea. It means you won’t have to share your personal number but can still take calls for your business on your landline or cell phone.</p><br><p>A virtual phone system lets you create a unique business phone number; when people call it, the calls are automatically forwarded to another phone that you specify. Most virtual phone systems come with other features like voicemail, answering rules, hold music, call direction and more. The <a href="www.shareasale.com/notactive.html?938781" rel="noopener noreferrer nofollow" target="_blank">Grasshopper virtual phone system</a> has all the capabilities a business needs.</p>`,
           height: 80,
+          heightSM: 937,
+          heightMD: 500,
         },
         {
           isCompleted: false,
@@ -329,6 +385,8 @@ export const checks = {
                 <li>And more</li>
             </ul>`,
           height: 80,
+          heightSM: 908,
+          heightMD: 500,
         },
         {
           isCompleted: false,
@@ -336,6 +394,8 @@ export const checks = {
           name: "Connect With Other Entrepreneurs",
           description: "Running a business can sometimes be lonely. That’s why we recommend joining local groups like meetups or your chamber of commerce. This lets you talk with other business owners who have faced similar challenges and can help you brainstorm solutions. You can also look at online networking through LinkedIn, professional Facebook groups or other dedicated business forums. Don’t be afraid to ask questions and share your expertise.",
           height: 80,
+          heightSM: 505,
+          heightMD: 500,
         },
         {
           isCompleted: false,
@@ -343,6 +403,8 @@ export const checks = {
           name: "Find Office Space",
           description: `<p>Although entrepreneurs sometimes choose to work from home, you might need another location if you have a team or a slightly larger business. Of course, you could start by going down the traditional route and leasing out commercial office space, but that will probably tie you in for at least a year and may not be cost effective.</p><br><p>Instead, you might want to look into a co-working solution like WeWork or another business where you can rent space on a daily, weekly or monthly basis. This can be a great way to start, since you can expand your office space as you take on more staff while getting the other benefits of a co-working space.</p>`,
           height: 80,
+          heightSM: 968,
+          heightMD: 500,
         },
       ],
     },
@@ -360,6 +422,8 @@ export const checks = {
           name: "Decide on a Payroll Service",
           description: "If your business needs employees, you are going to have to pay them. The easiest way to do this is via a payroll service — these services will work out salaries, payments and benefits and help you with payroll taxes. We recommend Xero, Quickbooks Payroll or Paychex.",
           height: 80,
+          heightSM: 555,
+          heightMD: 500,
         },
         {
           isCompleted: false,
@@ -367,6 +431,8 @@ export const checks = {
           name: "Create an Employee Benefits Program",
           description: `Many employees will expect you to provide them with benefits like vacation time, health insurance, retirement contributions and other areas. Look into the total cost of employment to help you budget for employee benefits. The U.S. government provides small business health insurance options through the <a href="www.healthcare.gov/small-businesses/employers/" rel="noopener noreferrer nofollow" target="_blank">SHOP Marketplace.</a> You can look into retirement plan options through Vanguard, Fidelity Investments, Blackrock and other retirement and investment services.`,
           height: 80,
+          heightSM: 1667,
+          heightMD: 500,
         },
         {
           isCompleted: false,
@@ -374,6 +440,8 @@ export const checks = {
           name: "Establish Your Freelance and On-Demand Workforce Needs",
           description: "<p>Every business needs something different from the people who work for them. If you’re a solopreneur, freelancer, knowledge worker or you’ve started a business with a partner, you might not need employees. Most other businesses will probably need to build a workforce at some point. When it comes to hiring people to work with, you have a few different options.</p><br><p>If you’re looking for specialists and experts who can help you with specific tasks, you’re probably best off using a freelancer. There are plenty of freelance marketplaces like Freelancer, Upwork or Toptal — but if you just want straightforward, easy-to-use services, Fiverr is hard to beat. They’ve also launched Fiverr Pro, where you can find vetted freelancers for more demanding projects.</p><br><p>If you need help on a do basis but don’t want the expense and overhead of an employee, you could take advantage of virtual assistant and concierge services. They specialize in administrative tasks and can lessen the burden of your to-do list. One Concierge, Red Butler, Fancy Hands and Zirtual all provide virtual assistant services for business owners.</p>",
           height: 80,
+          heightSM: 457,
+          heightMD: 500,
         },
         {
           isCompleted: false,
@@ -381,6 +449,8 @@ export const checks = {
           name: "Establish Your Permanent Workforce Needs",
           description: "Of course, you can also hire permanent employees. You might choose to go to a specialized staffing agency, or you can recruit employees yourself. Whatever route you use, you will need to advertise the role, find candidates, review resumes, shortlist applicants, interview them, agree on terms and hire the right people.",
           height: 80,
+          heightSM: 1271,
+          heightMD: 500,
         },
         {
           isCompleted: false,
@@ -388,6 +458,8 @@ export const checks = {
           name: "Learn About Legal Requirements and Responsibilities to Employees",
           description: `<p>You will need to make sure you have proper worker's compensation insurance to cover injuries, illness and medical costs. You should run payroll and compensate your employees on a regular frequency, which may be mandated by your state. You will also need to calculate and keep back income tax so you can pay the appropriate bodies including the employer portion of the payroll tax. If all this sounds like a lot, you could outsource your HR services to a third-party provider like Insperity, Oasis Outsourcing or ADP Total Source.</p><br><p>In addition to getting a proper employment contract in place with them, you have a duty to provide them with a safe working environment, proper training, regular pay and certain other criteria. <a href="www.osha.gov/as/opa/worker/employer-responsibility.html" rel="noopener noreferrer nofollow" target="_blank">OSHA</a> covers your health and safety requirements, while the <a href="www.dol.gov/general/topics" rel="noopener noreferrer nofollow" target="_blank">US Department of Labor</a> provides information on other responsibilities.</p>`,
           height: 80,
+          heightSM: 266,
+          heightMD: 500,
         },
       ],
     },
@@ -405,13 +477,17 @@ export const checks = {
           name: "Get Business Cards",
           description: `Once you have a logo, you can get custom business cards printed. It's easy to design your own cards using services like <a href="www.vistaprint.com/business-cards?txi=15626&%3bxnid=TopNav_Business+Cards&%3bxnav=TopNav&%3bGP=04%2f28%2f2017+14%3a14%3a22&%3bGPS=4378726571&%3bGNF=0&rd=1&GP=11%2f08%2f2020+05%3a49%3a00&GPS=5816176090&GNF=0" rel="noopener noreferrer nofollow" target="_blank">Vistaprint.</a>`,
           height: 80,
+          heightSM: 385,
+          heightMD: 500,
         },
         {
           isCompleted: false,
           id: 1,
           name: "Create a Branded Email Signature",
-          description:
-            "One easy way to increase visibility of your business is by adding your logo or other branding to your email signature. This is easy to do in Gmail, Outlook and various other email clients. Make sure to include a link to your business website and give people a reason to click through.",
+          description: "One easy way to increase visibility of your business is by adding your logo or other branding to your email signature. This is easy to do in Gmail, Outlook and various other email clients. Make sure to include a link to your business website and give people a reason to click through.",
+          height: 80,
+          heightSM: 1295,
+          heightMD: 500,
         },
         {
           isCompleted: false,
@@ -419,6 +495,8 @@ export const checks = {
           name: "Build a Company Website",
           description: `<p>If you’re an online-only business, your website is your window to the world. Even if you have a physical presence, your website is still a crucial destination for people who want to learn more about your products and services.</p><br><p>You will need a business website that’s tailored to your exact business needs. A website for a restaurant will be very different from a website for a freelance writer or accountant. You can find designers to create websites for you on marketplaces like Toptal, Fiverr Pro or Upwork.</p><br><p>Alternatively, if you don’t mind rolling your sleeves up and putting in some effort, you can use an online web builder to do it yourself. There are plenty of services available, but sites like <a href="xoopah.com/website-voucher-discount/?ref=INCFILE" rel="noopener noreferrer nofollow" target="_blank">Xoopah.com,</a> Squarespace, Wix or Weebly are all good options.</p><br><p>If you’re selling online, <a href="www.wix.com/mystunningwebsites/ecom-onlinestore?utm_medium=paid_referral&experiment_id=cake_73680325%5E88" rel="noopener noreferrer nofollow" target="_blank">Volusion provides powerful, easy-to-use ecommerce software.</a></p>`,
           height: 80,
+            heightSM: 1295,
+            heightMD: 500,
         },
         {
           isCompleted: false,
@@ -426,6 +504,8 @@ export const checks = {
           name: "Use Google Analytics and Google Search Console on Your Website",
           description: "<p>Google Analytics and Google Search Console are two incredibly powerful tools that give you lots of insight into your website visitors. Google Analytics lets you understand how visitors are finding your website, what they do when they get there, popular pages, user demographics and much more.</p><br><p>Google Search Console shows how your pages are doing on organic Google searches. You can track the search queries your website pages are showing for and optimize them so you increase visibility in organic search. Use Google Analytics and Google Search Console together to optimize your website for user experience, conversions and sales.</p>",
           height: 80,
+          heightSM: 1023,
+          heightMD: 500,
         },
         {
           isCompleted: false,
@@ -433,6 +513,8 @@ export const checks = {
           name: "Advertise Locally",
           description: "If you’re a local business, it makes sense to get the word out in your community. You can try local advertising in papers, on billboards or through the radio. You could also sponsor local organizations or events and partner with other businesses to generate goodwill. Incentivizing customers through loyalty schemes will often build repeat business and help them spread the word about you through advocacy.",
           height: 80,
+          heightSM: 481,
+          heightMD: 500,
         },
         {
           isCompleted: false,
@@ -440,6 +522,8 @@ export const checks = {
           name: "Create Your Google Business Profile and Google Maps Listing",
           description: "Local Google search is a great way to let customers in your city know about your business. You can easily claim a business profile from Google and enter vital information about your business like opening hours, location, contact details and more. Combine this with a Google Maps listing that lets you appear in map searches to make it easy for customers to find you.",
           height: 80,
+          heightSM: 457,
+          heightMD: 500,
         },
         {
           isCompleted: false,
@@ -447,6 +531,8 @@ export const checks = {
           name: "Advertise Online With Google Adwords",
           description: `Google Adwords is a fast and easy way to advertise your business website. You just <a href="get.incpromote.com" rel="noopener noreferrer nofollow" target="_blank">sign up for an account,</a> enter a few details about your business, create some ads and keywords and away you go. Adwords is a powerful form of advertising known as “pay per click,” which can send interested customers directly to your website where they can buy products and services. As an Incfile customer, you can get a $200 credit for your advertising and start sending people to your website now.`,
           height: 80,
+          heightSM: 555,
+          heightMD: 500,
         },
         {
           isCompleted: false,
@@ -454,6 +540,8 @@ export const checks = {
           name: "Try Social Media Advertising",
           description: "Social media networks like Twitter, Facebook and Pinterest all provide advertising that helps you promote your services to potential customers. The trick with social media advertising is to carefully define your audience, then present your products in a way that will keep their interest. Make sure you carefully track what you’re spending so you get the best return on investment.",
           height: 80,
+          heightSM: 457,
+          heightMD: 500,
         },
         {
           isCompleted: false,
@@ -461,6 +549,8 @@ export const checks = {
           name: "Get a Business Logo Designed",
           description: `<p>It’s time to get the word out! Networking isn’t just about meeting up and sharing business cards — this is your chance to connect with potential partners, customers, suppliers or other opportunities. Talk to past colleagues, ask for connections, join local meetup groups or see if there’s a WeWork location near you. You’ll be surprised at how powerful “chance encounters” can be.</p><br><p>We hope you’ve found this checklist helpful, and that it gives you everything you need to bring your business to life. Remember that we also have a <a href="/learn-more/" target="_blank">comprehensive help center</a> that contains dozens of articles on setting up and running your business.</p><br><p>That’s it. Follow this checklist, and your business can take on the world!</p>`,
           height: 80,
+          heightSM: 1147,
+          heightMD: 500,
         },
       ],
     },
