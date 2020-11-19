@@ -9,7 +9,7 @@ import ContentHeader from "../../atomic/states-llc/taxes-header";
 import WrapperContent from "../../atomic/states-llc/wrapper-content";
 import LeftTabPages from "../../atomic/states-llc/left-tab-pages";
 import MainPageContent from "../../atomic/states-llc/page-content";
-import Rocket from "../../atomic/sections/review-entity-types/c-corporation/rocket";
+import Rocket from "../../atomic/sections/rocket";
 import BusinessNames from "../../atomic/states-llc/california/business-names";
 
 // Content
@@ -56,7 +56,7 @@ const CaliforniaBusinessNames = () => (
       </Wrapper>
     </WrapperContent>
 
-    <Rocket content={rocket} />
+    <Rocket url="?entityType=LLC&entityState=CA" />
   </Layout>
 );
 

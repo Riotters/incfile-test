@@ -66,7 +66,6 @@ const FilingFeeAndRequirementPage = () => {
           </MainPageContent>
         </Wrapper>
       </WrapperContent>
-
       <Rocket url="?entityType=LLC&entityState=GA" />
     </Layout>
   );
