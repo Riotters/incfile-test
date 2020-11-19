@@ -9,7 +9,7 @@ import ContentHeader from "../../atomic/states-llc/taxes-header";
 import WrapperContent from "../../atomic/states-llc/wrapper-content";
 import LeftTabPages from "../../atomic/states-llc/left-tab-pages";
 import MainPageContent from "../../atomic/states-llc/page-content";
-import Rocket from "../../atomic/sections/review-entity-types/c-corporation/rocket";
+import Rocket from "../../sections/rocket";
 import FeeFilingRequirementSection from "../../atomic/states-llc/illinois/fee-filing-requirement";
 
 // Content
@@ -68,7 +68,7 @@ const FilingFeeAndRequirementPage = () => {
                 </Wrapper>
             </WrapperContent>
 
-            <Rocket content={rocket} />
+            <Rocket url="?entityType=LLC&entityState=IL" />
         </Layout>
     );
 };

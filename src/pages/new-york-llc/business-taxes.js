@@ -10,7 +10,7 @@ import WrapperContent from "../../atomic/states-llc/wrapper-content";
 import LeftTabPages from "../../atomic/states-llc/left-tab-pages";
 import MainPageContent from "../../atomic/states-llc/page-content";
 import BusinessTaxesSection from "../../atomic/states-llc/new-york/business-taxes";
-import Rocket from "../../atomic/sections/review-entity-types/c-corporation/rocket";
+import Rocket from "../../sections/rocket";
 
 // Content
 import { businessTaxesPageContent } from "../../static/states-llc/new-york/business-taxes";
@@ -56,7 +56,7 @@ const NewYorkBusinessTaxes = () => (
       </Wrapper>
     </WrapperContent>
 
-    <Rocket content={rocket} />
+    <Rocket url="?entityType=LLC&entityState=NY" />
   </Layout>
 );
 

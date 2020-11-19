@@ -10,7 +10,7 @@ import WrapperContent from "../../atomic/states-llc/wrapper-content";
 import LeftTabPages from "../../atomic/states-llc/left-tab-pages";
 import MainPageContent from "../../atomic/states-llc/page-content";
 import RegisteredAgentSection from "../../atomic/states-llc/new-york/registered-agents";
-import Rocket from "../../atomic/sections/review-entity-types/c-corporation/rocket";
+import Rocket from "../../sections/rocket";
 
 // Content
 import { agentPageContent } from "../../static/states-llc/new-york/ra";
@@ -56,7 +56,7 @@ const RegisteredAgentNewYork = () => (
       </Wrapper>
     </WrapperContent>
 
-    <Rocket content={rocket} />
+    <Rocket url="?entityType=LLC&entityState=NY" />
   </Layout>
 );
 
