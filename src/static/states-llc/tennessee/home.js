@@ -84,7 +84,7 @@ export const howToGuide = [
           question: `STEP 2: Search for and Choose a Unique Business Name for Your Tennessee LLC`,
           answer: `<p>YYou will need a distinctive and original name for your Tennessee LLC that's not used by any other business in MS. To find out if another company is using your chosen business name, carry out a Tennessee business entity name search on the TN Secretary of State website.</p></br>
                    <p>There are a few rules you'll need to follow when choosing an LLC name. You can find out more in our guide to searching for and naming your Tennessee LLC.</p></br>
-                   <a href="/Tennessee-llc/how-to-name-your-llc/"> Learn about Tennessee LLC business naming rules.</a>`,
+                   <a href="/tennessee-llc/how-to-name-your-llc/"> Learn about Tennessee LLC business naming rules.</a>`,
         },
         {
           question: `STEP 3: Provide an Official Address for Your Tennessee LLC`,
@@ -96,7 +96,7 @@ export const howToGuide = [
           <p>This position can be filled by you, another manager in the business or a dedicated Registered Agent service. Your Registered Agent must have a physical street address in Tennessee and must be present to receive important documents for your company during business hours.</p></br>
           
           <p>At Incfile, all of our packages include a Tennessee Registered Agent service that is free for the first year and just $119 per year afterward. We also have a dashboard where you can log in and easily view any document your Registered Agent has received on your behalf.</p></br>
-          <a href="/Tennessee-llc/registered-agents-Tennessee-llc/">Learn more about Tennessee Registered Agents.</a>`,
+          <a href="/tennessee-llc/registered-agents-Tennessee-llc/">Learn more about Tennessee Registered Agents.</a>`,
         },
         {
           question: `STEP 5: Get an Employer Identification Number (EIN) from the Internal Revenue Service`,
@@ -109,7 +109,7 @@ export const howToGuide = [
                    <li> Your business name and address </li>
                    <li> Details of your Registered Agent </li>
                    <li> Tax closing month </li>
-                   </ul>
+                   </ul></br>
                    <p>You can file your Tennessee Articles of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Tennessee, but you only need to file your Articles of Organization once.</p></br>
                    <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=TN"> Form your LLC now </a>`,
         },
@@ -179,7 +179,7 @@ export const howToGuide = [
   {
     type: `text`,
     content: `<p>If your business is already operating in another state and expanding to Tennessee, you’ll need to form a foreign LLC.</p></br>
-              <p> More information on Tennessee <a href="/Tennessee-llc/fees-filing-requirements/"> filing and licensing requirements here</a> </p>`,
+              <p> More information on Tennessee <a href="/tennessee-llc/fees-filing-requirements/"> filing and licensing requirements here</a> </p>`,
     marginBottom: 32,
   },
 
@@ -191,7 +191,7 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `Want to know your next steps after creating a new LLC in Tennessee? We’ve got you covered. <a href="/Tennessee-llc/fees-filing-requirements/">Here’s our guide</a> to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more. `,
+    content: `Want to know your next steps after creating a new LLC in Tennessee? We’ve got you covered. <a href="/tennessee-llc/fees-filing-requirements/">Here’s our guide</a> to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more. `,
     marginBottom: 32,
   },
   {
@@ -209,7 +209,7 @@ export const howToGuide = [
     type: `arrow-link`,
     content: {
       text: `Naming Your Tennessee LLC`,
-      url: `/Tennessee-llc/how-to-name-your-llc/`,
+      url: `/tennessee-llc/how-to-name-your-llc/`,
     },
     marginBottom: 16,
   },
@@ -222,7 +222,7 @@ export const howToGuide = [
     type: `arrow-link`,
     content: {
       text: `Tennessee  Registered Agents for LLCs`,
-      url: `/Tennessee-llc/registered-agents-Tennessee-llc/`,
+      url: `/tennessee-llc/registered-agents-Tennessee-llc/`,
     },
     marginBottom: 16,
   },
@@ -235,7 +235,7 @@ export const howToGuide = [
     type: `arrow-link`,
     content: {
       text: `Fees and Requirements for Tennessee LLCs`,
-      url: `/Tennessee-llc/form-filling-permit-requirements/`,
+      url: `/tennessee-llc/form-filling-permit-requirements/`,
     },
     marginBottom: 16,
   },
@@ -248,7 +248,7 @@ export const howToGuide = [
     type: `arrow-link`,
     content: {
       text: `Federal, State, Sales and Other Taxes for Your Tennessee LLC`,
-      url: `/Tennessee-llc/business-taxes/`,
+      url: `/tennessee-llc/business-taxes/`,
     },
     marginBottom: 16,
   },
@@ -463,7 +463,7 @@ export const namingYourBusiness = [
       list: [
         `If you’re ready to start your Tennessee LLC, you can formally file your Articles of Organization with the Tennessee SOS, or <a href="https://sos.tn.gov/products/business-services/application-reservation-name-ss-4228"> let Incfile take care of it for you.</a>"`,
         `If you’re ready to start your LLC, you can formally file your Certificate of Formation with the Tennessee SOS, or
-             <a href="/Tennessee-llc/fees-filing-requirements/"> let Incfile take care of it for you.</a.`,
+             <a href="/tennessee-llc/fees-filing-requirements/"> let Incfile take care of it for you.</a.`,
       ],
     },
     marginBottom: 48,
@@ -928,7 +928,7 @@ export const feesAndRequirments = [
     marginBottom: 32,
   },
   {
-    type: `dynamic_ar_box`
+    type: `dynamic_ar_box`,
   },
   {
     type: `arrow-link`,
@@ -1017,7 +1017,7 @@ export const feesAndRequirments = [
     marginBottom: 48,
   },
   {
-    type: `dynamic_filing_requirement`
+    type: `dynamic_filing_requirement`,
   },
 
   {

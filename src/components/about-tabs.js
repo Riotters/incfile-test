@@ -51,25 +51,27 @@ const Wrapper = styled.div`
 
 const TabsWrapper = styled.div`
   display: flex;
-  flex-direction: column;
   width: 100%;
+  overflow: auto;
 
   @media (min-width: 769px) {
-    max-width: ${(props) => (props.layout !== "grid" ? "40%" : "")};
-  }
-
-  @media (min-width: 1200px) {
+    flex-direction: column;
+    width: ${(props) => (props.layout !== "grid" ? "40%" : "")};
     max-width: ${(props) => (props.layout !== "grid" ? "370px" : "")};
+    overflow: visible;
   }
 `;
 
 const Sticky = styled.div`
   display: ${(props) => (props.layout === "grid" ? "grid" : "flex")};
-  flex-direction: ${(props) => (props.layout !== "grid" ? "column" : "")};
   grid-template-columns: ${(props) => (props.columns ? `repeat(${props.columns}, 1fr)` : "")};
   grid-gap: ${(props) => (props.layout === "grid" ? "30px" : "")};
   position: ${(props) => (props.layout !== "grid" ? "sticky" : "")};
   top: 100px;
+
+  @media (min-width: 769px) {
+    flex-direction: ${(props) => (props.layout !== "grid" ? "column" : "")};
+  }
 `;
 
 const PanelWrapper = styled.article`
@@ -99,20 +101,31 @@ const Button = styled.button`
   color: #4e4e4e;
   background: #fff;
   transition: box-shadow 0.3s ease;
-  box-shadow: 0 20px 30px 0 #e6e6e6;
   display: flex;
   cursor: pointer;
   position: relative;
-  border-radius: 5px;
   overflow: hidden;
-  margin-bottom: 7px;
-  border: none;
+  border: 0;
   z-index: 0;
 
+  @media (min-width: 769px) {
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 7px;
+    box-shadow: 0 20px 30px 0 #e6e6e6;
+  }
+
   &.active {
-    box-shadow: 0 40px 80px 0 #e6e6e6;
-    font-weight: 600;
     z-index: 1;
+    color: ${color.blue1};
+    border-bottom: 2px solid ${color.blue1};
+
+    @media (min-width: 769px) {
+      box-shadow: 0 40px 80px 0 #e6e6e6;
+      font-weight: 600;
+      color: #4e4e4e;
+      border: none;
+    }
 
     .tabArrow {
       opacity: 1;
@@ -122,12 +135,16 @@ const Button = styled.button`
 `;
 
 const Icon = styled.div`
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   height: 80px;
   width: 50px;
   opacity: 0.75;
+
+  @media (min-width: 769px) {
+    display: flex;
+  }
 
   @media (min-width: 992px) {
     width: 80px;
@@ -139,11 +156,15 @@ const Content = styled.div`
   justify-content: space-between;
   align-items: center;
   flex-grow: 1;
-  padding: 0 24px;
-  border-left: 1px solid #f4f4f4;
+  padding: 0 16px;
+
+  @media (min-width: 769px) {
+    border-left: 1px solid #f4f4f4;
+    padding: 0 24px;
+  }
 
   span {
-    color: #4e4e4e;
+    color: inherit;
     font-family: Avenir;
     font-size: 13px;
     white-space: nowrap;
@@ -174,12 +195,16 @@ const Content = styled.div`
 `;
 
 const Arrow = styled.div`
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   height: 12px;
   width: 12px;
   margin-right: 10px;
+
+  @media (min-width: 769px) {
+    display: flex;
+  }
 
   svg {
     path {

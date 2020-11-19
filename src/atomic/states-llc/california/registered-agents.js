@@ -15,6 +15,7 @@ import IconListColorBox from "../../molecules/text-blocks/icon-h4-list-color";
 import AcccordionCounting from '../tab-acccordion-with-counting';
 import Accordion from "../../organisms/accordion/accordion";
 import TextBoxed from "../../molecules/static-check/circle-checkmark-text-boxed";
+import LightBoxVideo from "../../../components/LightBox";
 
 const Wrapper = styled.div``
 

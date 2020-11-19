@@ -17,9 +17,6 @@ const ManageYourCompany = () => (
     <Top imageName="mrs-bulb-final-paper-stock" imageAlt="Mr Bulb with a briefcase holding a sign pointing foward" ovalColor="purple">
       <h1>{top.header}</h1>
       <p>{top.text}</p>
-      <Buttonsbox>
-        <Button content={top.button[0]} theme="primary56" width="200px" arrow />
-      </Buttonsbox>
     </Top>
     <Benefits />
     <Certificates content={certificates} />

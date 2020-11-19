@@ -21,7 +21,8 @@ import { Paragraph } from "../../atoms/typography/paragraph";
 import TextCheck from "../../../components/static-check/text-only";
 import IconListColorBox from "../../molecules/text-blocks/icon-h4-list-color";
 import TextBlockWithNumberCounting from "../../molecules/mixed-blocks/text-block-with-absolute-number";
-import AbsoluteShapeCurveElement from "../../elements/absolute-shape-curve-e";
+//import AbsoluteShapeCurveElement from "../../elements/absolute-shape-curve-e";
+import AbsoluteShapeCurveElement from "../../atoms/icons/curve";
 
 // Bg box CTA
 import BgBoxPersonalOA from "../../../images/icons/states/personal-oa.inline.png";
@@ -63,6 +64,22 @@ const BoxButtonLinks = styled.div`
   .article-link:not(:last-child) {
     display: block;
     margin-bottom: 8px;
+  }
+`;
+
+const WhiteBoxColumn = styled(Whitebox)`
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 576px) {
+    flex-direction: row;
+  }
+
+  p {
+    &:first-child {
+      font-weight: bold;
+      min-width: 50%;
+    }
   }
 `;
 
@@ -229,6 +246,11 @@ const HowToGuide = ({ content, data }) => {
         <Paragraph big mixed={true}>
           {parse(content.mainSteps.step4.text4)}
         </Paragraph>
+        <RelativeElement>
+          <AbsoluteShapeCurveElement right="0" top="-30px">
+            <ShapeCurve color={color.purple1} />
+          </AbsoluteShapeCurveElement>
+        </RelativeElement>
         <Paragraph big mixed={true}>
           {parse(content.mainSteps.step4.text5)}
         </Paragraph>
@@ -236,13 +258,6 @@ const HowToGuide = ({ content, data }) => {
           {parse(content.mainSteps.step4.text6)}
         </Paragraph>
         <BoxCTA bgColor={color.orange3} bgImage={BgBoxHandlePaperWorks} content={content.mainSteps.step4.cta} />
-
-        <RelativeElement margin="40px 0">
-          <AbsoluteShapeCurveElement right="-25px" top="-30px">
-            <ShapeCurve color={color.purple1} />
-          </AbsoluteShapeCurveElement>
-        </RelativeElement>
-
         <AnnualReportFilingBox data={data} />
       </TextBlockWithNumberCounting>
 

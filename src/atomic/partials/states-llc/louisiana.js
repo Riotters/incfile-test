@@ -6,7 +6,7 @@ import Top from "../../partials/top";
 import Buttonsbox from "../../atoms/boxes/top-buttons-box";
 import Button from "../../molecules/buttons/button";
 import WrapperContent from "../../states-llc/wrapper-content";
-import Rocket from "../../sections/review-entity-types/c-corporation/rocket";
+import Rocket from "../../sections/rocket";
 import Requirements from "../../sections/learning-center-entity/state-information-california/requirements";
 import Compare from "../../sections/learning-center-entity/state-information-california/compare";
 import Variants from "../../sections/learning-center-entity/state-information-california/variants";
@@ -63,7 +63,7 @@ const LLCLayout = ({ children, data }) => {
                     {children}
                 </Wrapper>
             </WrapperContent>
-            <Rocket content={rocket} />
+            <Rocket url="?entityType=LLC&entityState=LA" />
             <Requirements content={requirements} data={data} />
             <Variants data={data} />
             <Compare content={compare} data={data} />

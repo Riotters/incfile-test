@@ -88,10 +88,12 @@ export const howToGuide = [
         {
           question: `STEP 6: File Certificate of Organization with the Indiana Secretary of State`,
           answer: `<p>Once you've gathered all the information for your Indiana LLC, you’ll need to file a formal document with the IN Secretary of State. This document is known as your “Certificate of Organization,” and filing the document creates your Indiana LLC. Here’s what is typically included:</p></br>
+          <ul>
               <li>Your business name and address</li>
               <li>Details of your Registered Agent</li>
               <li>Duration of your business</li>
-              <li>Name of the incorporator</li></br>
+              <li>Name of the incorporator</li>
+              </ul></br>
             <p>You can file your Indiana LLC Certificate of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Indiana. You only need to file your Certificate of Organization once.</p></br>
             <p><a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=IN" target="_blank">Form your LLC now</a></p>`,
         },

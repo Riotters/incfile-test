@@ -10,14 +10,14 @@ import HomeHeader from "../../atomic/states-llc/home-header";
 import WrapperContent from "../../atomic/states-llc/wrapper-content";
 import LeftTabPages from "../../atomic/states-llc/left-tab-pages";
 import MainPageContent from "../../atomic/states-llc/page-content";
-import Rocket from "../../atomic/sections/review-entity-types/c-corporation/rocket";
+import Rocket from "../../atomic/sections/rocket";
 import HowToGuide from "../../atomic/states-llc/georgia/how-to-guide";
 
 // Content
 import { HomePageContent } from "../../static/states-llc/georgia/home";
 import { tabPages, rocket } from "../../static/states-llc/georgia/general";
 
-import { getFullPricesAndFilings } from '../../api/Api';
+import { getFullPricesAndFilings } from "../../api/Api";
 
 const Wrapper = styled.div`
   display: flex;
@@ -43,13 +43,13 @@ const Wrapper = styled.div`
 `;
 
 function GeorgiaLLCIndex() {
-    const [dataApi, setDataApi] = React.useState({});
+  const [dataApi, setDataApi] = React.useState({});
 
-    React.useEffect(() => {
-        getFullPricesAndFilings('Georgia').then(data => {
-            setDataApi(data);
-        });
-    }, []);
+  React.useEffect(() => {
+    getFullPricesAndFilings("Georgia").then((data) => {
+      setDataApi(data);
+    });
+  }, []);
 
   return (
     <Layout>
@@ -68,7 +68,7 @@ function GeorgiaLLCIndex() {
         </Wrapper>
       </WrapperContent>
 
-      <Rocket content={rocket} />
+      <Rocket url="?entityType=LLC&entityState=GA" />
     </Layout>
   );
 }

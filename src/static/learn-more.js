@@ -23,7 +23,7 @@ export const tools = {
       url: `/compliance-filing-requirement/`,
     },
     {
-      header: `State Filing TImes`,
+      header: `State Filing Times`,
       url: `/state-filings-times/`,
     },
   ],

@@ -6,7 +6,7 @@ export const tabPages = {
     },
     {
       name: `Name Your Business`,
-      path: `/pennsylvania-llc/how-to-name-your-llc/`,
+      path: `/pennsylvania-llc/pennsylvania-business-names/`,
     },
     {
       name: `Registered Agent`,
@@ -14,7 +14,7 @@ export const tabPages = {
     },
     {
       name: `Filing Fee & Requirements`,
-      path: `/pennsylvania-llc/form-filling-permit-requirements/`,
+      path: `/pennsylvania-llc/fees-filing-requirements/`,
     },
     {
       name: `Business Taxes`,

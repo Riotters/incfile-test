@@ -16,7 +16,7 @@ import Circle from "../../atoms/icons/circle";
 import ArrowSVG from "../../../images/arrow.inline.svg";
 import { Heading } from "../../atoms/typography/heading";
 import { Paragraph } from "../../atoms/typography/paragraph";
-import Button from "../../../components/button";
+import Button from "../../molecules/buttons/button";
 
 const Wrapper = styled.section`
   position: relative;
@@ -71,9 +71,9 @@ const ClientDashboardSection = ({ className, content, isNewSale }) => (
       <OvalSVG />
     </Oval>
 
-    <HeadingCenter className="heading" headline={content.header} headlineWidth="770" text={content.text} linkText={content.button ? content.button.text : ""} linkUrl={content.button ? content.button.url : ""} />
-
+    <HeadingCenter className="heading" headline={content.header} headlineWidth="770" text={content.text} />
     <ContentCenter>
+      <Button content={content.button} theme="primary56" arrow margin="0 0 32px" />
       {!isNewSale && (
         <RelativeElement style={{ width: `100%` }}>
           <AbsoluteShapCure left="170px" top="73%" rotate={180}>
@@ -111,9 +111,7 @@ const ClientDashboardSection = ({ className, content, isNewSale }) => (
           ))}
 
           <AlignCenter>
-            <Button to="/blog/" theme="secondary56" arrow width="250px">
-              Read our blogs
-            </Button>
+            <Button content={{ text: "Read our blogs", url: "/blog/" }} theme="secondary56" arrow width="250px" />
           </AlignCenter>
         </div>
       )}

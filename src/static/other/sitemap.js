@@ -403,15 +403,15 @@ export const list = {
               links: [
                 {
                   text: `How to Get a Trademark: A Complete Guide?`,
-                  url: `/research-topics/general-research-topics/how-to-get-trademark/`,
+                  url: `/research-topics/general-research/how-to-get-trademark/`,
                 },
                 {
                   text: `What is a Corporate Seal?`,
-                  url: `/research-topics/general-research-topics/corp-seal/`,
+                  url: `/research-topics/general-research/corp-seal/`,
                 },
                 {
                   text: `Does the designator “LLC” or “Inc.” always need to be included in your companies name?`,
-                  url: `/research-topics/general-research-topics/llc-inc-designator-companies-name/`,
+                  url: `/research-topics/general-research/llc-inc-designator-companies-name/`,
                 },
               ],
             },
@@ -419,15 +419,15 @@ export const list = {
               links: [
                 {
                   text: `Does Incfile have a Discount or Coupon Code?`,
-                  url: `/research-topics/general-research-topics/incfile-discount-coupon/`,
+                  url: `/research-topics/general-research/incfile-discount-coupon/`,
                 },
                 {
                   text: `Which entity offers the best tax advantages?`,
-                  url: `/research-topics/general-research-topics/tax-advantages/`,
+                  url: `/research-topics/general-research/tax-advantages/`,
                 },
                 {
                   text: `What is the main function of the Registered Agent?`,
-                  url: `/research-topics/general-research-topics/registered-agent-function/`,
+                  url: `/research-topics/general-research/registered-agent-function/`,
                 },
               ],
             },
@@ -435,15 +435,15 @@ export const list = {
               links: [
                 {
                   text: `What steps do I need to take to ensure that my entity remains compliant?`,
-                  url: `/research-topics/general-research-topics/entity-remains-compliant/`,
+                  url: `/research-topics/general-research/entity-remains-compliant/`,
                 },
                 {
                   text: `Which entity type should I choose?`,
-                  url: `/research-topics/general-research-topics/choosing-entity-type/`,
+                  url: `/research-topics/general-research/choosing-entity-type/`,
                 },
                 {
                   text: `What is an LLC (Limited Liability Company)?`,
-                  url: `/research-topics/general-research-topics/what-is-an-llc/`,
+                  url: `/research-topics/general-research/what-is-an-llc/`,
                 },
               ],
             },
@@ -451,15 +451,15 @@ export const list = {
               links: [
                 {
                   text: `LLC and Corporation Ongoing Compliance Requirements`,
-                  url: `/research-topics/general-research-topics/llc-and-corporation-requirements/`,
+                  url: `/research-topics/general-research/llc-and-corporation-requirements/`,
                 },
                 {
                   text: `What is a Nonprofit Corporation?`,
-                  url: `/research-topics/general-research-topics/what-is-a-nonprofit/`,
+                  url: `/research-topics/general-research/what-is-a-nonprofit/`,
                 },
                 {
                   text: `Should I assume that if I form an LLC or incorporate that no one else can use the same name?`,
-                  url: `/research-topics/general-research-topics/llc-incorporate-name/`,
+                  url: `/research-topics/general-research/llc-incorporate-name/`,
                 },
               ],
             },
@@ -467,19 +467,19 @@ export const list = {
               links: [
                 {
                   text: `Does Forming an LLC (Limited Liability Company) or Corporation Require an Attorney?`,
-                  url: `/research-topics/general-research-topics/require-an-attorney/`,
+                  url: `/research-topics/general-research/require-an-attorney/`,
                 },
                 {
                   text: `In Which State Should I Form my LLC or Corporation?`,
-                  url: `/research-topics/general-research-topics/forming-llc-or-corp/`,
+                  url: `/research-topics/general-research/forming-llc-or-corp/`,
                 },
                 {
                   text: `What is a Publication Requirement?`,
-                  url: `/research-topics/general-research-topics/publication-requirement/`,
+                  url: `/research-topics/general-research/publication-requirement/`,
                 },
                 {
                   text: `What is the Customized Corporate/LLC Kit?`,
-                  url: `/research-topics/general-research-topics/customized-corp-llc-kit/`,
+                  url: `/research-topics/general-research/customized-corp-llc-kit/`,
                 },
               ],
             },
