@@ -5,10 +5,10 @@ import Image from "./image";
 
 const Wrapper = styled.article`
   margin-bottom: 8px;
+  height: 275px;
 
   @media (min-width: 769px) {
     padding: 0 15px;
-    height: 275px;
     margin-bottom: 0;
   }
 `;
@@ -16,7 +16,6 @@ const Wrapper = styled.article`
 const Content = styled.a`
   display: block;
   background-color: #fff;
-  //box-shadow: 0 20px 30px 0 #e6e6e6;
   border-radius: 6px;
   text-decoration: none;
   user-drag: none;
@@ -30,7 +29,6 @@ const Content = styled.a`
 `;
 
 const ImageBox = styled.div`
-  display: none;
   height: 180px;
   background-color: #a4eed0;
   overflow: hidden;
@@ -42,10 +40,6 @@ const ImageBox = styled.div`
     @media (min-width: 1070px) {
       top: ${(props) => (props.topLG ? props.topLG : "0")} !important;
     }
-  }
-
-  @media (min-width: 769px) {
-    display: block;
   }
 `;
 

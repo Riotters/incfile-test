@@ -77,11 +77,11 @@ export const startBusiness = {
   text: `We have a full guide to starting a new business in Michigan. Learn about how to start a MI LLC or a MI corporation.`,
   button: {
     text: `MI LLC`,
-    url: `/llc-state-information/michigan-llc`,
+    url: `/michigan-llc`,
   },
   button2: {
     text: `MI Corporation`,
-    url: `/corporation-state-information/michigan-corporation`,
+    url: `/michigan-corporation`,
   },
 };
 

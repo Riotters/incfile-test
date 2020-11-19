@@ -102,11 +102,11 @@ export const startBusiness = {
   text: `We have a full guide to starting a new business in California. Learn about how to start a CA LLC or a CA corporation.`,
   button: {
     text: `CA LLC`,
-    url: `/llc-state-information/florida-llc`,
+    url: `/california-llc`,
   },
   button2: {
     text: `CA Corporation`,
-    url: `/corporation-state-information/florida-corporation`,
+    url: `/california-corporation`,
   },
 };
 

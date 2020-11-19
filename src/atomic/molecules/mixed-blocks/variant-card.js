@@ -22,6 +22,10 @@ const Wrapper = styled.div`
   border: ${(props) => (props.border ? `solid 1px ${color.grey4}` : "")};
   background-color: ${(props) => (props.color ? props.color : "")};
   border-radius: 5px;
+  
+  .package-description {
+    min-height: 48px;
+  }
 
   & > h4,
   & > p {
@@ -177,7 +181,7 @@ const PricingCard = ({ className, content, image, ...rest }) => {
       <Heading size="4" marginBottom="16">
         {content.header}
       </Heading>
-      <Paragraph bottomMargin="8">{content.text}</Paragraph>
+      <Paragraph bottomMargin="8" className="package-description">{content.text}</Paragraph>
       <ImageWrapper>
         <Image filename={image} />
       </ImageWrapper>

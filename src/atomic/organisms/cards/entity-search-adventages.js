@@ -9,8 +9,12 @@ const Wrapper = styled.div`
   width: 100%;
   max-width: 970px;
   margin: 0 auto;
-  padding-top: 80px;
+  padding-top: 50px;
   padding-bottom: 104px;
+  
+  @media (min-width: 576px) {
+    padding-top: 80px;
+  }
 
   @media (min-width: 769px) {
     grid-template-columns: 1fr 1fr;
