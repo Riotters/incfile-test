@@ -19,7 +19,7 @@ const Regulations = () => (
         Finances
       </Heading>
       <Paragraph big mixed={true}>
-        In most cases, you will want to keep your personal and business finances separate. We recommend a <Link to="https://utility.bankofamerica.com/alliance/?formid=IF1" target="_blank" rel="noopener noreferrer">business bank account</Link> for your side business. You might also want to consider a <Link to="http://t.tihop.com/cgi/r?;n=203;c=1666272;s=7273;x=7936;f=201908011042310;u=j;z=TIMESTAMP;src=663024">business credit card</Link>. Additionally, you will also need to keep careful bookkeeping records and file business and personal taxes.
+        In most cases, you will want to keep your personal and business finances separate. We recommend a <Link to="https://utility.bankofamerica.com/alliance/?formid=IF1" target="_blank" rel="noopener noreferrer">business bank account</Link> for your side business. You might also want to consider a <Link to="http://t.tihop.com/cgi/r?;n=203;c=1666272;s=7273;x=7936;f=201908011042310;u=j;z=TIMESTAMP;src=663024" target="_blank" rel="noopener noreferrer">business credit card</Link>. Additionally, you will also need to keep careful bookkeeping records and file business and personal taxes.
       </Paragraph>
       <Heading size={4} style={{ fontSize: "24px" }}>
         Taxes
