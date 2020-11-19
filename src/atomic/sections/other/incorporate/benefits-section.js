@@ -77,19 +77,19 @@ const BenefitsSection = ({ className, content }) => {
 
   return (
     <>
-      <Grid>
-        {content.map((item, i) => {
-          return (
-            <Flex className="benefit-box" data-for="benefitTooltip" data-event="mouseenter" data-tip={`${item.header}|${item.text}`}>
-              <CheckSVG />
-              <Heading bottomMargin="0" style={{ "margin-left": "16px" }} size={5}>
-                {parse(item.label)}
-              </Heading>
-            </Flex>
-          );
-        })}
-      </Grid>
-      {/* <StyledReactTooltip id="benefitTooltip" getContent={handleContent} effect="solid" place="top" type="light" globalEventOff="click" /> */}
+      {/*<Grid>*/}
+        {/*{content.map((item, i) => {*/}
+          {/*return (*/}
+            {/*<Flex className="benefit-box" data-for="benefitTooltip" data-event="mouseenter" data-tip={`${item.header}|${item.text}`}>*/}
+              {/*<CheckSVG />*/}
+              {/*<Heading bottomMargin="0" style={{ "margin-left": "16px" }} size={5}>*/}
+                {/*{parse(item.label)}*/}
+              {/*</Heading>*/}
+            {/*</Flex>*/}
+          {/*);*/}
+        {/*})}*/}
+      {/*</Grid>*/}
+      {/*/!* <StyledReactTooltip id="benefitTooltip" getContent={handleContent} effect="solid" place="top" type="light" globalEventOff="click" /> *!/*/}
     </>
   );
 };

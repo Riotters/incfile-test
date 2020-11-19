@@ -11,6 +11,7 @@ import OvalSVG from "../../../../images/ovals/top-left-orange-transparent.inline
 import OvalSVG2 from "../../../../images/ovals/top-right-transparent-orange.inline.svg";
 import CurveSVG from "../../../../images/curves/bottom-left-top-right-big.inline.svg";
 import Button from "../../../molecules/buttons/button";
+import Buttonsbox from "../../../atoms/boxes/top-buttons-box";
 
 const Protect = styled.section`
   position: relative;
@@ -46,7 +47,10 @@ const ProtectSection = ({ className, content }) => (
         <Paragraph big maxWidth="530">
           {content.text}
         </Paragraph>
-        <Button content={content.button} theme="primary56" arrow margin="0" marginSM="0 auto 0 0" />
+        <Buttonsbox>
+            <Button content={content.button} theme="primary56" arrow margin="0" marginSM="0 auto 0 0" marginLG="0 16px 0 0" />
+            <Button content={content.button2} theme="primary56" arrow margin="0" marginSM="0 auto 0 0" />
+        </Buttonsbox>
       </TextWrapper>
     </ContentImage>
   </Protect>

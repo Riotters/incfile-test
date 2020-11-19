@@ -9,8 +9,7 @@ export const top = {
 };
 
 export const about = {
-  header: `Your business is expanding beyond your local region.`,
-  text: `Or perhaps you are an Internet business with fulfillment centers in multiple locations. This may mean you are doing business in a “foreign” state. 
+  text: `Your business is expanding beyond your local region. Or perhaps you are an Internet business with fulfillment centers in multiple locations. This may mean you are doing business in a “foreign” state. 
         What do you do? We have the answers to all your questions regarding what constitutes doing business in another state and how to get the proper paperwork done to be legitimate.`,
   box: {
     text: `Many confuse foreign qualification with the idea of operating outside the United States. This really has to do with how you perform within the borders of the United States. 
@@ -18,11 +17,7 @@ export const about = {
   },
   text2: `Therefore, it is important that when your company is located in or operates within a state other than the place of original incorporation, 
         you are given the proper rights to conduct business there. This actually means you need to obtain a Certificate of Authority.`,
-  header2: `We can take care of the details.`,
-  link: {
-    text: " Let Incfile help you file your Foreign Qualification today!",
-    url: `${process.env.ORDER_URL}/foreign-qual.php`,
-  },
+  header2: `We can take care of the details. <a href='${process.env.ORDER_URL}/foreign-qual.php'>Let Incfile help you file your Foreign Qualification today!</a>`,
 };
 
 export const basics = {
@@ -83,8 +78,8 @@ export const basics = {
         question: `How The Foreign Qualification Process Works`,
         answer: `Every process has paperwork and proper steps to follow. To give you an understanding of what we’ll be doing on your behalf, let’s review the process below:`,
         list: [
-          `Name Search: Your corporation’s name will be compared to the database in each state to ensure no other company is using it. Hopefully, there will be no contradiction, but if there is then you’ll be asked to operate under a fictitious or assumed name. If you'd like to conduct your own name search for your LLC, we've created How to Search & Choose Your Business Entity Name in all 50 States.`,
-          `Registered Agent: You will need to select a registered agent in that state.`,
+          `Name Search: Your corporation’s name will be compared to the database in each state to ensure no other company is using it. Hopefully, there will be no contradiction, but if there is then you’ll be asked to operate under a fictitious or assumed name. If you'd like to conduct your own name search for your LLC, we've created <a href='/blog/post/llc-name-search-50-states/'>How to Search & Choose Your Business Entity Name in all 50 States</a>.`,
+          `Registered Agent: You will need to select a <a href='/manage-your-company/registered-agent'>registered agent</a> in that state.`,
           `Certificate of Authority: Finally, you register for the right to do business in the state. This is similar to the process of incorporation and requires some paperwork and fees be submitted.`,
         ],
       },
