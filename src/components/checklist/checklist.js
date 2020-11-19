@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import styled from "styled-components";
 import Item from "./item";
 import _ from "lodash";
@@ -9,7 +9,6 @@ import parse from "html-react-parser";
 
 const description =
   "In oculis quidem faciunt, ut labore et via procedat oratio quaerimus igitur, quid bonum esse ratione intellegi posse et molestiae non recusandae itaque negat opus esse appetendum, alterum aspernandum sentiamus alii autem, quibus ego assentior, cum a philosophis compluribus permulta dicantur, cur verear, ne ferae.";
-const baseHeight = 80;
 
 const Wrapper = styled.div`
   display: flex;
@@ -84,11 +83,15 @@ const Done = styled.div`
   position: relative;
   margin-top: 20px;
   transition: all 0.5s;
+  
+  &.stacked {
+    height: 150px;  
+  }
 `;
 
 const ShadowCard = styled.div`
   width: calc(100% - ${(props) => props.index * 16}px);
-  height: ${baseHeight}px;
+  height: ${props => props.baseHeight ?? 80}px;
   position: absolute;
   top: ${(props) => props.index * 8}px;
   left: ${(props) => props.index * 8}px;
@@ -104,6 +107,7 @@ const ShadowCard = styled.div`
 class Checklist extends React.Component {
   constructor(props) {
     super(props);
+    this.baseHeight = 60;
     this.getMeta = this.getMeta.bind(this);
     this.toggleClass = this.toggleClass.bind(this);
     this.stackItems = this.stackItems.bind(this);
@@ -111,26 +115,37 @@ class Checklist extends React.Component {
       stack: false,
       completed: 0,
       item: {
-        height: 60,
+        height: this.baseHeight,
       },
-      items: this.props.Items ?? [
-        { id: 1, name: "Lorem ipsum 1", isCompleted: false, height: baseHeight, description },
-        { id: 2, name: "Lorem ipsum 2", isCompleted: false, height: baseHeight, description },
-        { id: 3, name: "Lorem ipsum 3", isCompleted: false, height: baseHeight, description },
-        { id: 4, name: "Lorem ipsum 4", isCompleted: false, height: baseHeight, description },
+      items: this.props.Items.map((item) => {
+        item.expanded = false;
+
+        return item;
+    }) ?? [
+        { id: 1, name: "Lorem ipsum 1", isCompleted: false, height: this.baseHeight, description },
+        { id: 2, name: "Lorem ipsum 2", isCompleted: false, height: this.baseHeight, description },
+        { id: 3, name: "Lorem ipsum 3", isCompleted: false, height: this.baseHeight, description },
+        { id: 4, name: "Lorem ipsum 4", isCompleted: false, height: this.baseHeight, description },
       ],
       shadowCards: 0,
     };
   }
 
+  componentDidMount() {
+    if( this.state.shouldRecalculate ) {
+      this.setState(() => ({ shouldRecalculate: false }));
+    }
+  }
+
   getMeta() {
     const { items } = this.state;
+
     const completed = items.filter((item) => item.isCompleted);
     const uncompleted = items.filter((item) => !item.isCompleted);
     return {
       completed: {
         items: completed,
-        height: this.state.stack ? baseHeight + 20 : completed.length > 0 ? _.sumBy(completed, "height") : 0,
+        height: this.state.stack ? this.baseHeight + 20 : completed.length > 0 ? _.sumBy(completed, "height") : 0,
         length: completed.length,
       },
       uncompleted: {
@@ -165,8 +180,8 @@ class Checklist extends React.Component {
 
   handleChangeItemHeight = (id, height) => {
     const { items } = this.state;
-    const updatedItems = items.map((item) => ({ ...item, height: item.id === id ? height : item.height }));
-    this.setState({ items: updatedItems });
+    const updatedItems = items.map((item) => ({ ...item, height: item.id === id ? height : item.height, expanded: item.id === id ? !item.expanded : item.expanded }));
+    this.setState(() => ({ items: updatedItems, shouldRecalculate: true }));
   };
 
   render() {
@@ -174,22 +189,46 @@ class Checklist extends React.Component {
     let uInd = 0,
       cInd = 0;
     let completed = this.state.items.filter((item) => item.isCompleted);
-    const items = this.state.items.map((item) => {
+    let itemHeight = 80;
+    if( typeof window !== "undefined" ) {
+      itemHeight = window.innerWidth < 576 ? 120 : 80;
+    }
+
+    const doneItems = this.state.items.filter((item) => item.isCompleted).map((item) => {
       let isLastCompleted = completed.length > 0 ? _.last(completed).id === item.id : false;
       return (
-        <Item
-          id={item.id}
-          index={item.isCompleted ? cInd++ : uInd++}
-          meta={meta}
-          initHeight={baseHeight}
-          name={item.name}
-          isCompleted={item.isCompleted}
-          toggleClass={() => this.toggleClass(item.id)}
-          isStack={this.state.stack}
-          description={parse(item.description)}
-          onChangeHeight={this.handleChangeItemHeight}
-          isLastCompleted={isLastCompleted}
-        />
+          <Item
+              id={item.id}
+              index={item.isCompleted ? cInd++ : uInd++}
+              meta={meta}
+              initHeight={this.baseHeight}
+              name={item.name}
+              isCompleted={item.isCompleted}
+              toggleClass={() => this.toggleClass(item.id)}
+              isStack={this.state.stack}
+              description={parse(item.description)}
+              onChangeHeight={this.handleChangeItemHeight}
+              isLastCompleted={isLastCompleted}
+          />
+      );
+    });
+
+    const undoneItems = this.state.items.filter((item) => !item.isCompleted).map((item) => {
+      let isLastCompleted = completed.length > 0 ? _.last(completed).id === item.id : false;
+      return (
+          <Item
+              id={item.id}
+              index={item.isCompleted ? cInd++ : uInd++}
+              meta={meta}
+              initHeight={this.baseHeight}
+              name={item.name}
+              isCompleted={item.isCompleted}
+              toggleClass={() => this.toggleClass(item.id)}
+              isStack={this.state.stack}
+              description={parse(item.description)}
+              onChangeHeight={this.handleChangeItemHeight}
+              isLastCompleted={isLastCompleted}
+          />
       );
     });
 
@@ -207,19 +246,17 @@ class Checklist extends React.Component {
           </HeaderContent>
         </Header>
         <List>
-          <Undone style={{ height: `${meta.uncompleted.height}px` }}>{items}</Undone>
+          <Undone>{undoneItems}</Undone>
           <Separator>
-            <h4>Done</h4>
+            {
+              completed.length > 0 && <h4>Done</h4>
+            }
             <ShowUncompleted show={completed.length > 0} onStackItems={this.stackItems}>
-              showLess
+              show Less
             </ShowUncompleted>
           </Separator>
-          <Done style={{ height: `${meta.completed.height}px` }}>
-            {Array.from({ length: this.state.shadowCards }, (_, i) => i + 1)
-              .reverse()
-              .map((index) => (
-                <ShadowCard {...{ index }} />
-              ))}
+          <Done className={ this.state.stack ? "stacked" : "" } style={ this.state.stack ? { height: (itemHeight + 20 + (doneItems.length * 10) + "px") } : {} }>
+            {doneItems}
           </Done>
         </List>
       </Wrapper>
