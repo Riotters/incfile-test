@@ -59,7 +59,7 @@ export const about = {
       `The date the LLC will dissolve. If you plan to run your LLC indefinitely, you can use the word “perpetual” here.`,
     ],
   },
-  button: {
+  button2: {
     text: `Start a New Tork LLC With Incfile`,
     url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=NY`,
   },

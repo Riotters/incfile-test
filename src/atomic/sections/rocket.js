@@ -65,6 +65,7 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   margin-top: 120px;
+  z-index: 1;
 
   @media (min-width: 769px) {
     margin-top: 200px;
