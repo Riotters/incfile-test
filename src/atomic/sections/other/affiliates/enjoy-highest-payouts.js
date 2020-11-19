@@ -13,11 +13,15 @@ import {color} from "../../../atoms/styles/colors";
 
 const Section = styled.section`
   position: relative;
-  padding: 100px 0 120px;
+  padding: 100px 0 0;
   
   .oval:not(.small) {
         max-width: 100%;
         overflow: hidden;
+    }
+    
+    @media (min-width: 576px) {
+        padding: 100px 0 120px;    
     }
 `;
 

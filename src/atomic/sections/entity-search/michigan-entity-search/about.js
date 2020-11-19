@@ -12,7 +12,11 @@ import { Heading } from "../../../atoms/typography/heading";
 
 const About = styled.section`
   position: relative;
-  padding-bottom: 120px;
+  padding-bottom: 60px;
+  
+  @media (min-width: 576px) {
+    padding-bottom: 120px;
+  }
 `;
 
 const AboutSection = ({ className, content }) => (

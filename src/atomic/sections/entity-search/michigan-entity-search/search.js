@@ -12,9 +12,13 @@ import CurveSVG from "../../../../images/curves/bottom-left-top-right-big.inline
 
 const Search = styled.section`
   position: relative;
-  padding: 108px 0;
+  padding: 60px 0;
   background-color: ${color.orange3};
   overflow: hidden;
+  
+  @media (min-width: 576px) {
+      padding: 108px 0;
+  }
 `;
 
 const SearchSection = ({ className, content, id }) => (

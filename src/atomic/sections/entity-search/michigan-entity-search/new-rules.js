@@ -8,8 +8,12 @@ import OvalSVG from "../../../../images/ovals/top-right-transparent-pink2.inline
 
 const Adventages = styled.section`
   position: relative;
-  padding-top: 104px;
+  padding-top: 60px;
   padding-bottom: 112px;
+  
+  @media (min-width: 576px) {
+    padding-top: 104px;
+  }
 `;
 
 const AdventagesSection = ({ className, content }) => (
