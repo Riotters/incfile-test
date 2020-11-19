@@ -226,7 +226,7 @@ const ImageContainer = styled.div`
   .gatsby-image-wrapper {
     width: 100%;
     position: absolute;
-    left: 8%;
+    left: ${(props) => (props.imageMobilePosition ? props.imageMobilePosition : "8%")};
 
     @media (min-width: 992px) {
       position: static;
@@ -238,7 +238,7 @@ const ImageContainer = styled.div`
   }
 `;
 
-const Top = ({ children, imageName, imageAlt, imageWidth, imagePositionRight, contentWidth, headlineWidth, textWidth, ovalColor, ...rest }) => (
+const Top = ({ children, imageName, imageAlt, imageWidth, imagePositionRight, imageMobilePosition, contentWidth, headlineWidth, textWidth, ovalColor, ...rest }) => (
   <Wrapper {...rest}>
     <VisibilitySensor partialVisibility once>
       {({ isVisible }) => (
@@ -247,7 +247,7 @@ const Top = ({ children, imageName, imageAlt, imageWidth, imagePositionRight, co
         </Oval>
       )}
     </VisibilitySensor>
-    <ImageContainer imageWidth={imageWidth} imagePositionRight={imagePositionRight}>
+    <ImageContainer imageWidth={imageWidth} imagePositionRight={imagePositionRight} imageMobilePosition={imageMobilePosition}>
       <Image filename={imageName} alt={imageAlt} />
     </ImageContainer>
     <Container>

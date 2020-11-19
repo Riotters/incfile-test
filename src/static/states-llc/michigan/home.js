@@ -104,10 +104,12 @@ export const howToGuide = [
         {
           question: `STEP 6: File Michigan LLC Forms — Articles of Organization — With the Department of Licensing and Regulatory Affairs`,
           answer: `<p>In many states, the Secretary of State is the body responsible for registering and managing LLCs, whereas in Michigan, it's the Department of Licensing and Regulatory Affairs. Once you've gathered all the information for your Michigan LLC, you’ll need to file a formal document with the state. This document is known as your “Articles of Organization,” and filing the document creates your Michigan LLC. Here’s what is typically included:</p></br>
+          <ul>
             <li>Your business name and address</li>
             <li>Details of your Registered Agent</li>
             <li>Purpose of your business</li>
-            <li>Name of the incorporator</li></br>
+            <li>Name of the incorporator</li>
+            </ul></br>
             <p>You can file your Michigan LLC Articles of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Michigan, but you only need to file your Articles of Organization once.</p></br>
             <p><a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MI" target="_blank">Form your LLC now</a></p>`,
         },

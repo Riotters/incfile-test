@@ -67,6 +67,22 @@ const BoxButtonLinks = styled.div`
   }
 `;
 
+const WhiteBoxColumn = styled(Whitebox)`
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 576px) {
+    flex-direction: row;
+  }
+
+  p {
+    &:first-child {
+      font-weight: bold;
+      min-width: 50%;
+    }
+  }
+`;
+
 const HowToGuide = ({ content, data }) => {
   return (
     <Wrapper>
@@ -231,7 +247,7 @@ const HowToGuide = ({ content, data }) => {
           {parse(content.mainSteps.step4.text4)}
         </Paragraph>
         <RelativeElement>
-          <AbsoluteShapeCurveElement right="0" top="0">
+          <AbsoluteShapeCurveElement right="0" top="-30px">
             <ShapeCurve color={color.purple1} />
           </AbsoluteShapeCurveElement>
         </RelativeElement>

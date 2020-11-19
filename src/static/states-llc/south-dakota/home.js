@@ -90,12 +90,14 @@ export const howToGuide = [
         {
           question: `STEP 6: File A Certificate of Organization With the South Dakota Secretary of State`,
           answer: `<p>Once you've gathered all the information together for your South Dakota LLC, you’ll need to file a formal document with the SD Secretary of State. This document is known as your “Certificate of Organization,” and filing the document creates your South Dakota LLC. Here’s what is typically included:</p></br>
+          <ul>
             <li>Your business name and address</li>
             <li>Details of your Registered Agent</li>
             <li>Names of organizers of the LLC at the time of filing</li>
             <li>Addresses of managers or members of the LLC at the time of filing</li>
             <li>Purpose of your business</li>
-            <li>Name of the incorporator</li></br>
+            <li>Name of the incorporator</li>
+            </ul></br>
             <p>You can file your South Dakota LLC Certificate of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in South Dakota. You only need to file your Certificate of Organization once.</p></br>
             <p><a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=SD" target="_blank">Form your LLC now</a></p>`,
         },

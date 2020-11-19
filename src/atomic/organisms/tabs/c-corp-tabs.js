@@ -16,6 +16,7 @@ import { Heading } from "../../atoms/typography/heading";
 import { Paragraph } from "../../atoms/typography/paragraph";
 import CheckText from "../../../components/static-check/text-boxed";
 //import CheckText from "../../molecules/text-blocks/text-check";
+import LightBoxVideo from "../../../components/LightBox";
 
 const Wrapper = styled.div`
   display: flex;
@@ -233,6 +234,7 @@ const CCorpTabs = ({ layout, columns, content }) => (
               <Panel>
                 <PanelWrapper className={isVisible ? "slideUp enter panel1" : "slideUp panel1"} layout={layout}>
                   <Heading size="3">{content.content[0].header}</Heading>
+                  <LightBoxVideo thumbnailVideo="what-is-a-c-corporation-2737" videoID="BmZ7zyLd710" bottomMargin="32" />
                   <Paragraph big>{content.content[0].text}</Paragraph>
                   <IconTextColorBox color={color.orange3} Icon={IconSVG} content={content.content[0].box} bottomMargin="48" rounded curve curveColor={color.yellow1} />
                   <Paragraph big>{content.content[0].text2}</Paragraph>

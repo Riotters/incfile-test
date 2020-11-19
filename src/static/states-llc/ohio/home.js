@@ -82,7 +82,7 @@ export const howToGuide = [
           question: `STEP 2: Search for and Choose a Unique Business Name for Your Ohio LLC`,
           answer: `<p>YYou will need a distinctive and original name for your Ohio LLC that's not used by any other business in MS. To find out if another company is using your chosen business name, carry out a Ohio business entity name search on the OH Secretary of State website.</p></br>
                    <p>There are a few rules you'll need to follow when choosing an LLC name. You can find out more in our guide to searching for and naming your Ohio LLC.</p></br>
-                   <a href="/Ohio-llc/how-to-name-your-llc/"> Learn about Ohio LLC business naming rules.</a>`,
+                   <a href="/ohio-llc/how-to-name-your-llc/"> Learn about Ohio LLC business naming rules.</a>`,
         },
         {
           question: `STEP 3: Provide an Official Address for Your Ohio LLC`,
@@ -94,7 +94,7 @@ export const howToGuide = [
           <p>This position can be filled by you, another manager in the business or a dedicated Registered Agent service. Your Registered Agent must have a physical street address in Ohio and must be present to receive important documents for your company during business hours.</p></br>
           
           <p>At Incfile, all of our packages include a Ohio Registered Agent service that is free for the first year and just $119 per year afterward. We also have a dashboard where you can log in and easily view any document your Registered Agent has received on your behalf.</p></br>
-          <a href="/Ohio-llc/registered-agents-Ohio-llc/">Learn more about Ohio Registered Agents.</a>`,
+          <a href="/ohio-llc/registered-agents-Ohio-llc/">Learn more about Ohio Registered Agents.</a>`,
         },
         {
           question: `STEP 5: Get an Employer Identification Number (EIN) from the Internal Revenue Service`,
@@ -107,7 +107,7 @@ export const howToGuide = [
                    <li> Your business name and address </li>
                    <li> Details of your Registered Agent </li>
                    <li> Tax closing month </li>
-                   </ul>
+                   </ul></br>
                    <p>You can file your Ohio Articles of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Ohio, but you only need to file your Articles of Organization once.</p></br>
                    <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=OH"> Form your LLC now </a>`,
         },
@@ -166,7 +166,7 @@ export const howToGuide = [
   {
     type: `text`,
     content: `<p>If your business is already operating in another state and expanding to Ohio, you’ll need to form a foreign LLC.</p></br>
-              <p> More information on Ohio <a href="/Ohio-llc/fees-filing-requirements/"> filing and licensing requirements here</a> </p>`,
+              <p> More information on Ohio <a href="/ohio-llc/fees-filing-requirements/"> filing and licensing requirements here</a> </p>`,
     marginBottom: 32,
   },
 
@@ -196,7 +196,7 @@ export const howToGuide = [
     type: `arrow-link`,
     content: {
       text: `Naming Your Ohio LLC`,
-      url: `/Ohio-llc/how-to-name-your-llc/`,
+      url: `/ohio-llc/how-to-name-your-llc/`,
     },
     marginBottom: 16,
   },
@@ -209,7 +209,7 @@ export const howToGuide = [
     type: `arrow-link`,
     content: {
       text: `Ohio  Registered Agents for LLCs`,
-      url: `/Ohio-llc/registered-agents-Ohio-llc/`,
+      url: `/ohio-llc/registered-agents-Ohio-llc/`,
     },
     marginBottom: 16,
   },
@@ -222,7 +222,7 @@ export const howToGuide = [
     type: `arrow-link`,
     content: {
       text: `Fees and Requirements for Ohio LLCs`,
-      url: `/Ohio-llc/form-filling-permit-requirements/`,
+      url: `/ohio-llc/form-filling-permit-requirements/`,
     },
     marginBottom: 16,
   },
@@ -235,7 +235,7 @@ export const howToGuide = [
     type: `arrow-link`,
     content: {
       text: `Federal, State, Sales and Other Taxes for Your Ohio LLC`,
-      url: `/Ohio-llc/business-taxes/`,
+      url: `/ohio-llc/business-taxes/`,
     },
     marginBottom: 16,
   },
@@ -476,7 +476,7 @@ export const namingYourBusiness = [
       list: [
         `If you don’t want to form your Ohio LLC right now, you can reserve the business name with the Ohio Secretary of State. You will need to complete a <a href="https://www.sos.state.oh.us/globalassets/business/forms/534b.pdf">Name Reservation / Transfer / Cancellation </a> Form and file it with the OH SOS. You do not need to reserve a name if you are forming your business right away."`,
         `If you’re ready to start your LLC, you can formally file your Certificate of Formation with the Ohio SOS, or
-             <a href="/Ohio-llc/fees-filing-requirements/"> let Incfile take care of it for you.</a.`,
+             <a href="/ohio-llc/fees-filing-requirements/"> let Incfile take care of it for you.</a.`,
       ],
     },
     marginBottom: 48,
@@ -982,7 +982,7 @@ export const feesAndRequirments = [
     marginBottom: 32,
   },
   {
-    type: `dynamic_ar_box`
+    type: `dynamic_ar_box`,
   },
   {
     type: `arrow-link`,
@@ -1071,7 +1071,7 @@ export const feesAndRequirments = [
     marginBottom: 48,
   },
   {
-    type: `dynamic_filing_requirement`
+    type: `dynamic_filing_requirement`,
   },
 
   {

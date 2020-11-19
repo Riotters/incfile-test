@@ -97,7 +97,7 @@ export const howToGuide = [
                     <li>Addresses of managers or members of the LLC at the time of filing</li>
                     <li>Purpose of your business</li>
                     <li>Name of the incorporator</li>
-                </ul>
+                </ul></br>
                 <p>You can file your Washington LLC Articles of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Washington. You only need to file your Articles of Organization once.</p>
                 <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&amp;entityState=DC"> Form Your LLC now</a> `,
         },
@@ -862,7 +862,7 @@ export const feesAndRequirments = [
     marginBottom: 16,
   },
   {
-    type: `dynamic_ar_box`
+    type: `dynamic_ar_box`,
   },
   {
     type: `arrow-link`,
@@ -951,7 +951,7 @@ export const feesAndRequirments = [
     marginBottom: 16,
   },
   {
-    type: `dynamic_filing_requirement`
+    type: `dynamic_filing_requirement`,
   },
   {
     type: `text`,

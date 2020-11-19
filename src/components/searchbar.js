@@ -120,7 +120,7 @@ const Searchbar = () => {
             <SearchSVG />
           </Icon>
           <Label for="search">searchbar</Label>
-          <Input value={search} onChange={handleChange} name="search" id="search" type="text" autoComplete="off" />
+          <Input value={search} onChange={handleChange} name="search" id="search" type="text" autoComplete="off" placeholder="Type to find the right state" />
         </Box>
         {display && (
           <States>

@@ -17,8 +17,7 @@ import HowToGuide from "../../atomic/states-llc/new-york/how-to-guide";
 import { HomePageContent } from "../../static/states-llc/new-york/home";
 import { tabPages, rocket } from "../../static/states-llc/new-york/general";
 
-import { getFullPricesAndFilings } from '../../api/Api';
-
+import { getFullPricesAndFilings } from "../../api/Api";
 
 const Wrapper = styled.div`
   display: flex;
@@ -44,34 +43,34 @@ const Wrapper = styled.div`
 `;
 
 function NewYorkLLCIndex() {
-    const [dataApi, setDataApi] = React.useState({});
+  const [dataApi, setDataApi] = React.useState({});
 
-    React.useEffect(() => {
-        getFullPricesAndFilings('New York').then(data => {
-            setDataApi(data);
-        });
-    }, []);
+  React.useEffect(() => {
+    getFullPricesAndFilings("New York").then((data) => {
+      setDataApi(data);
+    });
+  }, []);
 
-    return (
-        <Layout>
-            <SEO title="Forming a New York LLC | A How-to Guide to LLCs in NY" description="Ready to form your New York LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
+  return (
+    <Layout>
+      <SEO title="Forming a New York LLC | A How-to Guide to LLCs in NY" description="Ready to form your New York LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
 
-            <LinearBgHeader imageMapName="tx-map-2x">
-                <HomeHeader content={HomePageContent.header} data={dataApi} />
-            </LinearBgHeader>
+      <LinearBgHeader imageMapName="tx-map-2x">
+        <HomeHeader content={HomePageContent.header} data={dataApi} />
+      </LinearBgHeader>
 
-            <WrapperContent>
-                <Wrapper>
-                    <LeftTabPages content={tabPages} />
-                    <MainPageContent>
-                        <HowToGuide content={HomePageContent.content} data={dataApi} />
-                    </MainPageContent>
-                </Wrapper>
-            </WrapperContent>
+      <WrapperContent>
+        <Wrapper>
+          <LeftTabPages content={tabPages} />
+          <MainPageContent>
+            <HowToGuide content={HomePageContent.content} data={dataApi} />
+          </MainPageContent>
+        </Wrapper>
+      </WrapperContent>
 
-            <Rocket url="?entityType=LLC&entityState=NY" />
-        </Layout>
-    );
+      <Rocket url="?entityType=LLC&entityState=NY" />
+    </Layout>
+  );
 }
 
 export default NewYorkLLCIndex;
