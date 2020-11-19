@@ -85,7 +85,7 @@ const Done = styled.div`
   transition: all 0.5s;
   
   &.stacked {
-    height: 150px;
+    height: 150px;  
   }
 `;
 
@@ -139,17 +139,6 @@ class Checklist extends React.Component {
 
   getMeta() {
     const { items } = this.state;
-    if(typeof window !== "undefined") {
-      items.map((item) => {
-        if( typeof window !== "undefined" ) {
-          if(window.innerWidth < 576) {
-            item.height = item.expanded ? item.heightSM + 10 : 120;
-          }
-        }
-
-        return item;
-      })
-    }
 
     const completed = items.filter((item) => item.isCompleted);
     const uncompleted = items.filter((item) => !item.isCompleted);
@@ -200,6 +189,11 @@ class Checklist extends React.Component {
     let uInd = 0,
       cInd = 0;
     let completed = this.state.items.filter((item) => item.isCompleted);
+    let itemHeight = 80;
+    if( typeof window !== "undefined" ) {
+      itemHeight = window.innerWidth < 576 ? 120 : 80;
+    }
+
     const doneItems = this.state.items.filter((item) => item.isCompleted).map((item) => {
       let isLastCompleted = completed.length > 0 ? _.last(completed).id === item.id : false;
       return (
@@ -261,7 +255,7 @@ class Checklist extends React.Component {
               show Less
             </ShowUncompleted>
           </Separator>
-          <Done className={ this.state.stack ? "stacked" : "" } style={ this.state.stack ? { height: (100 + (doneItems.length * 10) + "px") } : {} }>
+          <Done className={ this.state.stack ? "stacked" : "" } style={ this.state.stack ? { height: (itemHeight + 20 + (doneItems.length * 10) + "px") } : {} }>
             {doneItems}
           </Done>
         </List>

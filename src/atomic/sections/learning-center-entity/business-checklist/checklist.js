@@ -70,7 +70,7 @@ const ChecklistSection = ({ className, content, buttonAction }) => (
     {content.checklists.map((checklist) => (
       <SingleChecklistSection content={checklist} />
     ))}
-    <ContentCenter>
+    <ContentCenter style={{ "margin-top": "40px" }}>
       <Button content={content.button} theme="primary56" arrow onClick={buttonAction} margin="0 0 24px 0" />
       <Paragraph mixed style={{ textAlign: `center` }}>{parse(content.text)}</Paragraph>
     </ContentCenter>
