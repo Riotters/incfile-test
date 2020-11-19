@@ -45,7 +45,7 @@ const ResearchTopicsTags = ({ className, content }) => {
         <Whitebox className="tags" overflow>
             <Texts content="More answers to your questions" leftAlign />
             <Tagsbox>
-                <Tag to="/research-topics/general-research-topics/">General</Tag>
+                <Tag to="/research-topics/general-research/">General</Tag>
                 <Tag to="/research-topics/llc-info/">LLC</Tag>
                 <Tag to="/research-topics/s-corporation-info/">S - Corporation</Tag>
                 <Tag to="/research-topics/c-corporation-info/">C - Corporation</Tag>

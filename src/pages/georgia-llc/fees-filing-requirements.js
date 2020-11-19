@@ -16,8 +16,7 @@ import FeeFilingRequirementSection from "../../atomic/states-llc/georgia/fee-fil
 import { filingFeeAndRequirementContent } from "../../static/states-llc/georgia/filingFeeAndRequirement";
 import { tabPages, rocket } from "../../static/states-llc/georgia/general";
 
-import { getFullPricesAndFilings } from '../../api/Api';
-
+import { getFullPricesAndFilings } from "../../api/Api";
 
 const Wrapper = styled.div`
   display: flex;
@@ -43,34 +42,33 @@ const Wrapper = styled.div`
 `;
 
 const FilingFeeAndRequirementPage = () => {
-    const [dataApi, setDataApi] = React.useState({});
+  const [dataApi, setDataApi] = React.useState({});
 
-    React.useEffect(() => {
-        getFullPricesAndFilings('Georgia').then(data => {
-            setDataApi(data);
-        });
-    }, []);
+  React.useEffect(() => {
+    getFullPricesAndFilings("Georgia").then((data) => {
+      setDataApi(data);
+    });
+  }, []);
 
-    return (
-        <Layout>
-            <SEO title="Filing Requirements & Fees for Georgia LLCs | Incfile.com" description="Make sense of the required forms, fees, and filing procedures for your Georgia LLC with Incfile's easy-to-use guide. Read more." />
-    
-            <LinearBgHeader position="to top" imageMapName="tx-map-2x">
-                <ContentHeader content={filingFeeAndRequirementContent.header} />
-            </LinearBgHeader>
-    
-            <WrapperContent>
-                <Wrapper>
-                    <LeftTabPages content={tabPages} />
-                    <MainPageContent>
-                        <FeeFilingRequirementSection content={filingFeeAndRequirementContent.content} data={dataApi} />
-                    </MainPageContent>
-                </Wrapper>
-            </WrapperContent>
-    
-            <Rocket url="?entityType=LLC&entityState=GA" />
-        </Layout >
-    );
-}
+  return (
+    <Layout>
+      <SEO title="Filing Requirements & Fees for Georgia LLCs | Incfile.com" description="Make sense of the required forms, fees, and filing procedures for your Georgia LLC with Incfile's easy-to-use guide. Read more." />
+
+      <LinearBgHeader position="to top" imageMapName="tx-map-2x">
+        <ContentHeader content={filingFeeAndRequirementContent.header} />
+      </LinearBgHeader>
+
+      <WrapperContent>
+        <Wrapper>
+          <LeftTabPages content={tabPages} />
+          <MainPageContent>
+            <FeeFilingRequirementSection content={filingFeeAndRequirementContent.content} data={dataApi} />
+          </MainPageContent>
+        </Wrapper>
+      </WrapperContent>
+      <Rocket url="?entityType=LLC&entityState=GA" />
+    </Layout>
+  );
+};
 
 export default FilingFeeAndRequirementPage;
