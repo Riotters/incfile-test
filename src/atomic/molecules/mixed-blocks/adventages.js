@@ -9,6 +9,7 @@ import IconCircle from "../../atoms/icons/circle";
 import ArrowSVG from "../../../images/arrow.inline.svg";
 import Image from "../../atoms/image/image";
 import Whitebox from "../../atoms/boxes/white-box";
+import parse from "html-react-parser";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -102,7 +103,7 @@ const Adventages = ({ className, content, colorStroke, circleBackgroundColor, ci
             {content.header}
           </Heading>
         )}
-        {content.text && <Paragraph bottomMargin="0">{content.text}</Paragraph>}
+        {content.text && <Paragraph mixed bottomMargin="0">{parse(content.text)}</Paragraph>}
         {url && (
           <AdeventageLink to={url}>
             <IconCircle circleColor="transparent" iconColor={color.blue1}>

@@ -127,9 +127,8 @@ export const about = {
               },
               {
                 question: `No Ownership Restrictions`,
-                answer: `<p>The LLC does not have any residency or citizenship restrictions, which allows foreign nationals to have ownership in an LLC, if desired. In addition, other corporate entities may be LLC members which means that
-                <a href="/research-topics/llc-info/can-another-business-entity-be-a-member-of-an-llc/">other corporations or LLCs (or other entities)</a>
-                may be a member of the LLC, or may be the sole member (although an LLC with a sole member that is a corporation or LLC is treated for tax purposes as a partnership or multi-member LLC).</p>`,
+                answer: `The LLC does not have any residency or citizenship restrictions, which allows foreign nationals to have ownership in an LLC, if desired.`,
+                text: `In addition, other corporate entities may be LLC members which means that <a href="/research-topics/llc-info/can-another-business-entity-be-a-member-of-an-llc/">other corporations or LLCs (or other entities)</a> may be a member of the LLC, or may be the sole member (although an LLC with a sole member that is a corporation or LLC is treated for tax purposes as a partnership or multi-member LLC).`,
               },
               {
                 question: `Versatile Tax Status`,

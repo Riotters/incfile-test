@@ -28,7 +28,7 @@ const Rocket = () => (
                     Launch your business with Incfile
                 </Heading>
                 <Paragraph big mixed>
-                    No Contracts. No Surprise.<br/>
+                    No Contracts. No Surprises.<br/>
                     Only $0 + State Fee to Launch Your Business.
                 </Paragraph>
                 <Button theme="primary48" arrow width="240px" content={{url: "/", text: "Launch your business"}} />

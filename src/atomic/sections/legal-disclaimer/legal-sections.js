@@ -17,6 +17,7 @@ const Wrapper = styled.section`
     ul {
         list-style: inside disc;
         margin-bottom: 42px;
+        padding-left: 32px;
     }
     
     ul, p {
@@ -39,7 +40,7 @@ const LegalSection = ({ className, content, contentWidth }) => (
             {content.bold3 && (<Heading size={4} bottomMargin={42}>{content.bold3}</Heading>)}
             {content.text3 && (<Paragraph mixed big bottomMargin={42} topMargin={-18}>{parse(content.text3)}</Paragraph>)}
             {content.bold4 && (<Heading size={4} bottomMargin={42}>{content.bold4}</Heading>)}
-            {content.text4 && (<Paragraph big bottomMargin={42} topMargin={-18}>{content.text4}</Paragraph>)}
+            {content.text4 && (<Paragraph mixed big bottomMargin={42} topMargin={-18}>{parse(content.text4)}</Paragraph>)}
             {content.list && (
                 <ul>
                     {content.list.map((item) => (

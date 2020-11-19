@@ -13,15 +13,19 @@ import Tools from "../../../atomic/sections/learning-center-entity/help-center-a
 import Benefits from "../../../components/partials/sections/benefits";
 import Articles from "../../../components/partials/sections/articles";
 import Rocket from "../../../atomic/sections/review-entity-types/c-corporation/rocket";
-import Searchbar from "../../../atomic/molecules/form/searchbar";
+import Searchbar from "../../../atomic/molecules/form/help-center-searchbar";
 //Texts
 import { top, rocket, categories, service, tools } from "../../../static/learning-center-entity/help-center-article";
 import { about, related } from "../../../static/research-topics/registered-agent/registered-agent-info-update";
 
 const HelpCenter = () => (
   <Layout>
-    <SEO title="How will I be notified if service of process is recived?" description="Q & A for LLC and other forms of corporations. Learning Center for
-    Incorporating in every state." />    <Top imageName="mrs-bulb-help-center-article" imageAlt="Mrs Bulb and with checklist" ovalColor="green">
+    <SEO
+      title="How will I be notified if service of process is recived?"
+      description="Q & A for LLC and other forms of corporations. Learning Center for
+    Incorporating in every state."
+    />{" "}
+    <Top imageName="mrs-bulb-help-center-article" imageAlt="Mrs Bulb and with checklist" ovalColor="green">
       <h1>{top.header}</h1>
       <p>{top.text}</p>
       <Searchbar />

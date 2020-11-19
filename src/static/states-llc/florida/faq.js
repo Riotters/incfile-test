@@ -213,7 +213,7 @@ export const faqContent = {
     {
       type: `heading`,
       size: 2,
-      content: `We hope you’ve found this Florida LLC FAQ useful. If you’ve used our services and have a question that isn’t answered here, <a href="/contact/">let us know and we’d be happy to help.</a>`,
+      content: `<p>We hope you’ve found this Florida LLC FAQ useful. If you’ve used our services and have a question that isn’t answered here, <a href="/contact/">let us know and we’d be happy to help.</a></p>`,
     },
   ],
 };
