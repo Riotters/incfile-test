@@ -26,6 +26,10 @@ const Wrapper = styled(Whitebox)`
   ${(props) => (props.noMaxWidth ? "" : "max-width: 570px;")}
   padding: 40px;
   position: relative;
+  
+  @media (max-width: 575px) {
+    margin-top: 40px;
+  }
 
   .curve-shape {
     svg {
