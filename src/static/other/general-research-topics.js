@@ -112,7 +112,7 @@ export const tools = {
       url: `/`,
     },
     {
-      header: `State Filing TImes`,
+      header: `State Filing Times`,
       url: `/`,
     },
   ],
