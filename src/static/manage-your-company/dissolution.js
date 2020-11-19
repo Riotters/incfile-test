@@ -12,15 +12,16 @@ export const about = {
   text: `A corporation or LLC can come to a place of dissolution for several reasons. It can simply be a decision you've made for your company because it is no longer successful, 
         you are moving on to a new adventure or your shareholders wish to dissolve its assets. This will, fortunately, stop the necessary tax filings and other requirements that come 
         with having a record of operation on file with the secretary of state. But, the emotional decision to dissolve your company can be tough at times, if you put your heart and sweat into building your own business.`,
-  link: {
-    text: "Let Incfile do the dissolution paperwork for you",
-    url: `${process.env.ORDER_URL}/dissolution.php`,
-  },
+  //   link: {
+  //     text: "Let Incfile do the dissolution paperwork for you",
+  //     url: `${process.env.ORDER_URL}/dissolution.php`,
+  //   },
+  text6: `Allow Incfile.com to ease the burden by doing the <a href="${process.env.ORDER_URL}/dissolution.php" class="ProsemirrorEditor-link">dissolution paperwork for you</a>`,
   header: `How to Close an LLC or Corporation`,
   text2: `A company begins with Articles of Incorporation when it is formed, therefore it makes sense that Articles must be filed to dissolve a company that has been in operation. 
         Without filing the proper paperwork, the business owner will continue to be liable for taxes and other state requirements. Fortunately, closing a company is really a matter of paperwork.`,
   box: {
-    header: `Closing Your Business`,
+    // header: `Closing Your Business`,
     text: `In order to properly close a corporation or LLC that is no longer transacting business, the company must file Articles of Dissolution with the state of incorporation. 
         Neglecting to file Articles of Dissolution for a company that is no longer active may expose the corporation or LLC to unnecessary recurring fees or taxes.`,
   },

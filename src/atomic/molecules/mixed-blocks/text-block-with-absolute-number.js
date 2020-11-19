@@ -16,18 +16,20 @@ const TextBlockWithNumberCounting = ({ children, numberCounting, textBackgroundC
 );
 
 const NumberSpan = styled.span`
-    font-family: MarkPro;
-    font-size: 24px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: center;
-    color: #5089fd;
-`
+  font-family: MarkPro;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #5089fd;
+`;
 
 const TextBlock = styled.div`
+    display: flex;
+    flex-direction: column;
     background-color: ${(props) => props.textBackgroundColor};
     width: 100%;
     position: relative;
@@ -64,26 +66,26 @@ const AbsoluteCircle = styled.div`
 export default TextBlockWithNumberCounting;
 
 TextBlockWithNumberCounting.propTypes = {
-    width: PropsTypes.number,
-    borderRadius: PropsTypes.number,
-    boxShadow: PropsTypes.bool,
-    paddingTop: PropsTypes.number,
-    paddingBottom: PropsTypes.number,
-    paddingLeft: PropsTypes.number,
-    paddingRight: PropsTypes.number,
-    widthUnit: PropsTypes.string,
+  width: PropsTypes.number,
+  borderRadius: PropsTypes.number,
+  boxShadow: PropsTypes.bool,
+  paddingTop: PropsTypes.number,
+  paddingBottom: PropsTypes.number,
+  paddingLeft: PropsTypes.number,
+  paddingRight: PropsTypes.number,
+  widthUnit: PropsTypes.string,
 };
 
 TextBlockWithNumberCounting.defaultProps = {
-    width: 470,
-    widthUnit: "px",
-    borderRadius: 20,
-    textBackgroundColor: `white`,
-    imageShadowColor: shadow.white2,
-    imageShadowOpacity: 0.5,
-    boxShadow: true,
-    paddingTop: 70,
-    paddingBottom: 40,
-    paddingLeft: 40,
-    paddingRight: 40,
+  width: 470,
+  widthUnit: "px",
+  borderRadius: 20,
+  textBackgroundColor: `white`,
+  imageShadowColor: shadow.white2,
+  imageShadowOpacity: 0.5,
+  boxShadow: true,
+  paddingTop: 70,
+  paddingBottom: 40,
+  paddingLeft: 40,
+  paddingRight: 40,
 };
