@@ -73,11 +73,11 @@ export const startBusiness = {
   text: `We have a full guide to starting a new business in Florida. Learn about how to start a FL LLC or a FL corporation.`,
   button: {
     text: `FL LLC`,
-    url: `/llc-state-information/florida-llc`,
+    url: `/florida-llc`,
   },
   button2: {
     text: `FL Corporation`,
-    url: `/corporation-state-information/florida-corporation`,
+    url: `/florida-corporation`,
   },
 };
 

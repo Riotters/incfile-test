@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useRef} from "react";
 import {Link} from "gatsby";
 import Container from "../../container";
 import styled from "styled-components";
@@ -6,6 +6,7 @@ import {shadow} from "../../atoms/styles/shadows";
 import IconSvg from "../../../images/icon-32-status-x.inline.svg";
 import ExSVG from "../../../images/circle-status-x.inline.svg"
 import {Paragraph} from "../../atoms/typography/paragraph";
+import FeesTableRow from "./fees-table-row";
 
 const FeesTable = () => {
     const [prices, setPrices] = React.useState([  ]);
@@ -55,6 +56,8 @@ const FeesTable = () => {
         return state;
     };
 
+    const itemRef = useRef();
+
     return (
         <Wrapper>
             <Container>
@@ -68,28 +71,8 @@ const FeesTable = () => {
                     </TableRow>
 
                     {prices.length && prices.map((price, i) => {
-
                         return (
-                            <TableRow key={i} className={visible[i] === false ? "hidden" : ""}>
-                                <TableCell>
-                                    <IconWrapper onClick={ function() { setVisible(setItemState(i)); } }>
-                                        <ExSVG/>
-                                    </IconWrapper>
-                                    {price.state}
-                                </TableCell>
-                                <TableCell>
-                                    <Price>${price.LLC}</Price>
-                                </TableCell>
-                                <TableCell>
-                                    <Price>${price.CCorporation}</Price>
-                                </TableCell>
-                                <TableCell>
-                                    <Price>${price.SCorporation}</Price>
-                                </TableCell>
-                                <TableCell>
-                                    <Price>${price.nonprofit}</Price>
-                                </TableCell>
-                            </TableRow>
+                            <FeesTableRow price={price} i={i} />
                         );
                     })}
             
