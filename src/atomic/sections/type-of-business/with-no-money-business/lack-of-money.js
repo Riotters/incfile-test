@@ -13,7 +13,7 @@ const LackOfMoney = () => (
         </Oval>
         <Container style={{paddingTop: "100px", paddingBottom: "100px"}} width={750}>
             <Heading size={4} style={{fontSize: "40px"}}>
-                Rules, Regulations and Taxes for Your Unique Business
+            Why a Lack of Money Shouldn’t Stop You From Starting a New Business
             </Heading>
             <Paragraph big style={{marginBottom: "48px"}}>
                 Starting a business is one of the most powerful things you can do. It’s an opportunity to create unique

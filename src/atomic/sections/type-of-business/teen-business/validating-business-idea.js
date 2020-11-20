@@ -124,7 +124,7 @@ const ValidatingBusinessIdea = () => (
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={IdetifyIcon} imageBackgroundColor={color.green2}
                                         imageShadowColor={color.green2}>
                         <Heading size={4}>
-                            Here are some further tips
+                            Identify your unique selling points (USPs)
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
                             This might be surprising, but even though you "only" have a teen business, you still need to

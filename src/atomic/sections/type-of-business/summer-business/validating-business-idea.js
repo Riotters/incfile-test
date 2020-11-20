@@ -169,8 +169,12 @@ const ValidatingBusinessIdea = () => (
                             to reach them. Remember that with seasonal businesses, precisely marketing to tourists, parents or other niches will be critical.
                         </Paragraph>
                     </TextBlockWithImage>
-
                 </GridSectionList>
+                <TitleBox>
+                    <Paragraph big>
+                    Not every idea you have will actually become a summer business. There are all sorts of reasons to say “yes” or “no” to specific businesses, so think about what your strengths and weaknesses are so you can choose a business you’d be great at.
+                    </Paragraph>
+                </TitleBox>
             </GridSection>
 
         </Container>

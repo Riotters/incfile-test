@@ -1103,7 +1103,6 @@ export const agents = [
         "Correspondence from the California Secretary of State",
         "Service of process notices (e.g., if your CA corporation is sued or required to appear in court)",
         "Official California state and federal government correspondence and notifications",
-        "Tax forms and requests to complete permits, company filings and reports",
       ],
     },
     color: color.blue3,

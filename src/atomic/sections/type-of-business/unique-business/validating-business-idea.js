@@ -108,7 +108,7 @@ const ValidatingBusinessIdea = () => (
             <GridSection>
                 <TitleBox>
 
-                    <Heading size={3}>Unique Small Business Ideas — Finding the Right Type of Business</Heading>
+                    <Heading size={3}>How to Make Your Unique Business Stand Out</Heading>
                     <Paragraph big>
                         Remember, the ideas you’ve created are just a starting point. You will need to define and tweak
                         exactly what type of unique business you want to run by conducting your own research.
@@ -116,7 +116,7 @@ const ValidatingBusinessIdea = () => (
 
                     <Colorbox theme="icon" curve curveColor={color.orange1} color={color.orange3} Icon={MountainsIcon}>
                         <Paragraph style={{fontWeight: "bold", fontSize: "20px", color: color.black}}>
-                            And don’t assume that just because you have a great idea, it will be easy to turn that into
+                            Don’t assume that just because you have a great idea, it will be easy to turn that into
                             revenue.
                         </Paragraph>
                         <Paragraph bottomMargin={0}>
@@ -126,15 +126,8 @@ const ValidatingBusinessIdea = () => (
                     </Colorbox>
 
                     <Paragraph big style={{marginTop: "48px"}}>
-                        The thing to learn here is that it’s okay to say “no” to your first, second or third unique
-                        business idea. Very few entrepreneurs get it right the first time. In fact, getting it wrong is
-                        often a badge of honor! Still, you don’t want to waste too much time, energy or money on the
-                        wrong initiatives, so ask and answer these questions honestly to find the right way forward.
-                    </Paragraph>
-                    <Paragraph big>
-                        Getting started in business is easy, but becoming a success is harder. Before committing too
-                        much time, energy and money into your new unique business,
-                        it’s important to test the marketplace. Here's how:
+                    Getting started in business is easy, but becoming a success is harder. Before committing too much time, energy and money into your new unique business, it’s important to test the marketplace. 
+                    Here's how:
                     </Paragraph>
                 </TitleBox>
 
@@ -194,6 +187,11 @@ const ValidatingBusinessIdea = () => (
                     </TextBlockWithImage>
 
                 </GridSectionList>
+                <TitleBox>
+                    <Paragraph big>
+                    The thing to learn here is that it’s okay to say “no” to your first, second or third unique business idea. Very few entrepreneurs get it right the first time. In fact, getting it wrong is often a badge of honor! Still, you don’t want to waste too much time, energy or money on the wrong initiatives, so ask and answer these questions honestly to find the right way forward.
+                    </Paragraph>
+                </TitleBox>
             </GridSection>
 
         </Container>

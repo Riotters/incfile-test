@@ -86,7 +86,7 @@ const SideBusiness = () => (
               <Paragraph big style={{ fontWeight: "bold" }}>
                 If you don’t know how to start a side business, we’re here to help.
               </Paragraph>
-              <Paragraph bottomMargin={0}>We’ve supported over 500,000 people to form their business and provided answers to transform them into entrepreneurs. We’ll guide you through what you need to know to create your side business and get it off the ground.</Paragraph>
+              <Paragraph bottomMargin={0}>We’ve supported over 250,000 people to form their business and provided answers to transform them into entrepreneurs. We’ll guide you through what you need to know to create your side business and get it off the ground.</Paragraph>
             </Colorbox>
 
             <Paragraph big style={{ marginTop: "48px" }}>

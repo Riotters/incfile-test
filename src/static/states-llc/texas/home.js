@@ -74,7 +74,7 @@ export const HomePageContent = {
           subtitle: `We’ll search the Texas Secretary <br>of State registry for you.`,
           button: {
             text: `Check Availability`,
-            url: `/`,
+            url: `/business-name-search/`,
           },
         },
       },
@@ -90,11 +90,11 @@ export const HomePageContent = {
         groupBtn1: [
           {
             header: `Learn More About Texas Registered Agents`,
-            url: `/`,
+            url: `/texas-llc/registered-agents-texas-llc/`,
           },
           {
-            header: `Get A Free Registered Agent Whe You Incorporate With Incfile`,
-            url: ``,
+            header: `Get A Free Registered Agent When You Incorporate With Incfile`,
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=TX`,
           },
         ],
       },
@@ -131,7 +131,7 @@ export const HomePageContent = {
           subtitle: `for You for $0 + the Texas State fee`,
           button: {
             text: `Form Your LLC Now For Free`,
-            url: `/`,
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=TX`,
           },
         },
       },
@@ -144,12 +144,12 @@ export const HomePageContent = {
         text1: `An operating agreement is a kind of “instruction manual” that outlines how you will run your business. It includes how decisions are made, how the business is divided amongst members, and what happens if a member leaves the company.`,
         text2: `Many states require that a company have an operating agreement in place—it isn’t legally required in Texas, but it’s a good idea to have one nonetheless.`,
         button1: {
-          text: `Learn More About Operating Agreemets Here`,
-          url: `/`,
+          text: `Learn More About Operating Agreements Here`,
+          url: `/blog/post/operating-agreement-llc/`,
         },
         cta: {
           title: `Receive a personalized <br>operating agreement`,
-          subtitle: `when you select Incfle’s Gold package`,
+          subtitle: `when you select Incfile’s Gold package`,
           button: {
             text: `Form Your LLC Now`,
             url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=TX`,

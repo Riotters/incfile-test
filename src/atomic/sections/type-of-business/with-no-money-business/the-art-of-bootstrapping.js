@@ -34,7 +34,7 @@ const TheArtOfBootstrapping = () => (
                 <TopImageBox image="understand-where-every-penny-is-going" color={color.green3}>
                     <h4>Understand Where Every Penny Is Going</h4>
                     <p>
-                        Make sure you understand exactly how you’re spending money. Review your finances every day, including your income, spending, cash flow, emergency savings and more. If you don’t need to spend the money, don’t spend the money.
+                        Make sure you understand exactly how you’re spending money. Review your finances every day, including your income, spending, cash flow, emergency savings and more. Having a separate business-only <a href="https://utility.bankofamerica.com/alliance/?formid=IF1" target="_blank" rel="noopener noreferrer" >bank account</a> can help you see things more clearly. If you don’t need to spend the money, don’t spend the money.
                     </p>
                 </TopImageBox>
 
