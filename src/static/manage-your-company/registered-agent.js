@@ -1,6 +1,6 @@
 export const top = {
-  header: `Registered Agent Service`,
-  text: `Dependable, Easy, and Free for the First Year When You Incorporate with Incfile. A nationwide Registered Agent service provider you can trust at an affordable price. Available in all U.S. states.`,
+  header: `Registered Agent Service. Dependable, Easy, and Free for the First Year When You Incorporate with Incfile.`,
+  text: `A nationwide Registered Agent service provider you can trust at an affordable price. Available in all U.S. states.`,
   button: [
     {
       text: "Sign up now",
@@ -53,7 +53,7 @@ export const includes = {
   header2: `Registered Agent Service`,
   text: `A good Registered Agent service can help you respond quickly in the event of a lawsuit, avoid missed deadlines, fines and penalties for non-compliance, and otherwise manage the details of paperwork so you can focus on running your business. 
       Set yourself up for success with a Registered Agent looking out for you. Join the Incfile community of entrepreneurs.`,
-  link: {
+  button: {
     text: `Sign Up Now`,
     url: `${process.env.ORDER_URL}/ra-form.php`,
   },
