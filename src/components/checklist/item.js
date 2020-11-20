@@ -23,8 +23,7 @@ const Wrapper = styled.div`
   cursor: pointer;
   margin-bottom: 8px;
   border-radius: 5px;
-  transition: all 0.5s, background-color 0s;
-  position: absolute;
+  transition: all .5s, background-color 0s;
   z-index: 1;
 
   &.completed {
@@ -34,6 +33,17 @@ const Wrapper = styled.div`
     &.stacked:not(.last) {
       box-shadow: none;
     }
+  }
+  
+  &.stacked {
+    transform: perspective(600px) translateZ(${props => (props.index * -10)}px);
+    position: absolute;
+    top: ${props => props.index * 10}px;
+    z-index: ${ props => props.total - props.index };
+  }
+  
+  @media (max-width: 575px) {
+    padding: 24px 24px 64px 80px;
   }
 `;
 
@@ -50,7 +60,6 @@ const ItemHead = styled.div`
 `;
 
 const ItemDescription = styled.div`
-  transition: all 0.5s;
   font-family: "Avenir", sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -58,9 +67,10 @@ const ItemDescription = styled.div`
   overflow: hidden;
   max-height: 0;
   padding-bottom: 0;
+  transition: all .5s;
 
   &.expanded {
-    max-height: 100px;
+    max-height: 2500px;
     padding-bottom: ${descritionMarginBottom}px;
   }
 `;
@@ -72,6 +82,7 @@ const Box = styled.span`
   top: 36px;
   left: 24px;
   transform: translateY(-50%);
+  z-index: 1;
 `;
 
 const CollapseButton = styled.div`
@@ -81,6 +92,12 @@ const CollapseButton = styled.div`
   top: 36px;
   right: 24px;
   transform: translateY(-50%);
+  
+  @media (max-width: 575px) {
+    right: unset;
+    left: 24px;
+    top: 78px;
+  }
 `;
 
 const CollapseArrow = styled(ArrowSVG)`
@@ -91,17 +108,12 @@ class Item extends React.Component {
   constructor(props) {
     super(props);
     this.state = { expanded: false };
+    this.itemRef = React.createRef();
   }
-
-  getTop = () => {
-    const { meta, index, isCompleted, isStack } = this.props;
-    const prevHeight = isCompleted ? _.sumBy(meta.completed.items.slice(0, index), "height") : _.sumBy(meta.uncompleted.items.slice(0, index), "height");
-    return !isStack ? (isCompleted ? meta.uncompleted.height + prevHeight + 80 : prevHeight) : isCompleted ? meta.uncompleted.height + 80 : prevHeight;
-  };
 
   handleCollapse = (event) => {
     event.stopPropagation();
-    const height = this.refs.item.getBoundingClientRect().height + headerMarginBottom + descritionMarginBottom + this.props.initHeight;
+    const height = this.itemRef.current.getBoundingClientRect().height + headerMarginBottom + descritionMarginBottom;
     this.setState(
       (prevState) => ({ expanded: !prevState.expanded }),
       () => {
@@ -116,19 +128,18 @@ class Item extends React.Component {
 
   render() {
     const { name, id, initHeight, index, isCompleted, toggleClass, meta, isStack, description, isLastCompleted } = this.props;
-    let top = this.getTop();
     let className = "item ";
     if (isCompleted) className += "completed ";
     if (isCompleted && isStack) className += "stacked ";
     if (isLastCompleted) className += "last";
     return (
-      <Wrapper className={className} onClick={toggleClass} style={{ top: `${top}px` }} ref="item">
-        <ItemHead className={this.shouldBeExpanded() ? "expanded" : ""}>
-          <Box>
+      <Wrapper className={isStack && isCompleted ? className + " stacked" : className} ref={this.itemRef} index={index} total={meta.completed.length}>
+        <ItemHead className={this.shouldBeExpanded() ? "expanded" : ""} onClick={this.handleCollapse}>
+          <Box onClick={function(e) {  toggleClass.call(); e.stopPropagation();  }} className="circleCheck">
             <Checkbox isCompleted={isCompleted} className="circleCheck" />
           </Box>
-          {name}
-          <CollapseButton onClick={this.handleCollapse}>
+          <span>{name}</span>
+          <CollapseButton>
             <CollapseArrow expanded={this.shouldBeExpanded()} />
           </CollapseButton>
         </ItemHead>

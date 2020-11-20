@@ -70,7 +70,7 @@ export const howToGuide = [
           question: `STEP 2: Search for and Choose a Unique Business Name for Your Pennsylvania LLC`,
           answer: `<p>You will need a distinctive and original name for your LLC that’s not used by any other business in Pennsylvania. To find out if another company is using your chosen business name, carry out a business entity name search on the PA Department of State website.</p></br>
             <p>There are a few rules you’ll need to follow when choosing an LLC name. You can find out more in our guide to searching for and naming your Pennsylvania LLC.</p></br>
-            <p><a href="/pennsylvania-llc/pennsylvania-business-names/" target="_blank">Learn about Pennsylvania LLC business naming rules.</a></p>`,
+            <p><a href="/pennsylvania-llc/pennsylvania-business-names/">Learn about Pennsylvania LLC business naming rules.</a></p>`,
         },
         {
           question: `STEP 3: Provide an Official Address for your PA LLC`,
@@ -142,16 +142,18 @@ export const howToGuide = [
         {
           question: `Form a Professional Pennsylvania LLC`,
           answer: `<p>Some states, including Pennsylvania, allow certain occupations to form “Professional LLCs.” These types of business typically have specialized requirements and licensing. Here are the occupations that the PA Department of State allows to form Pennsylvania professional LLCs:</p></br
-            <li>Chiropractic</li>
-            <li>Dentistry</li>
-            <li>Law</li>
-            <li>Medicine and surgery</li>
-            <li>Optometry</li>
-            <li>Osteopathic medicine and surgery</li>
-            <li>Podiatric medicine</li>
-            <li>Public accounting</li>
-            <li>Psychology</li>
-            <li>Veterinary medicine</li>`,
+            <ul>
+                <li>Chiropractic</li>
+                <li>Dentistry</li>
+                <li>Law</li>
+                <li>Medicine and surgery</li>
+                <li>Optometry</li>
+                <li>Osteopathic medicine and surgery</li>
+                <li>Podiatric medicine</li>
+                <li>Public accounting</li>
+                <li>Psychology</li>
+                <li>Veterinary medicine</li>
+            </ul>`,
         },
         {
           question: `Form a Foreign LLC in Pennsylvania`,
@@ -1583,7 +1585,7 @@ export const businessTaxes = [
 ];
 
 export const compare = {
-  header: `How We Compare. <br>Get more more for less.`,
+  header: `How We Compare. <br>Get more for less.`,
   table: {
     headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
     rows: [

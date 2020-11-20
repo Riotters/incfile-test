@@ -73,9 +73,9 @@ export const howToGuide = [
         {
           question: `STEP 2: Search for and Choose a Unique Business Name for Your Louisiana LLC`,
           answer: `You will need a distinctive and original name for your Louisiana LLC that’s not used by any other business in LA. To find out if another company is using your chosen business name,
-           carry out a Louisiana business entity name search on the LA Secretary of State website
-          There are a few rules you’ll need to follow when choosing an LLC name. You can find out more in our guide to searching for and naming your Louisiana LLC.
-          Learn about Louisiana LLC business naming rules.`,
+           carry out a Louisiana business entity name search on the LA Secretary of State website.<br><br>
+          There are a few rules you’ll need to follow when choosing an LLC name. You can find out more in our guide to searching for and naming your Louisiana LLC.<br><br>
+          <a href="/louisiana-llc/how-to-name-your-llc/">Learn about Louisiana LLC business naming rules.</a>`,
         },
         {
           question: `STEP 3: Provide an Official Address for Your LA LLC`,
@@ -86,12 +86,12 @@ export const howToGuide = [
         {
           question: `STEP 4: Assign a Registered Agent for Your Louisiana LLC`,
           answer: `Every LA LLC must have a “Registered Agent.” This is an official position; the Registered Agent is someone who receives official legal and tax correspondence and has responsibility for filing reports with the Louisiana Secretary of State.
-
+          <br><br>
           This position can be filled by you, another manager in the business or a dedicated Registered Agent service. Your LA Registered Agent must have a physical street address in Louisiana and must be present to receive important documents for your company during business hours. 
-          
+          <br><br>
           At Incfile, all of our packages include a Louisiana Registered Agent service that is free for the first year and just $119 per year afterward. We also have a dashboard where you can log in and easily view any document your Registered Agent has received on your behalf.
-          <br>
-          Learn more about California Agents for Service of Process.`,
+          <br><br>
+          <a href="/louisiana-llc/registered-agents-louisiana-llc/">Learn more about California Agents for Service of Process.</a>`,
         },
         {
           question: `STEP 5: Get an Employer Identification Number (EIN) from the Internal Revenue Service`,
@@ -101,7 +101,15 @@ export const howToGuide = [
         },
         {
           question: `STEP 6: File Articles of Organization with the Louisiana Secretary of State`,
-          answer: ``,
+          answer: `Once you've gathered all the information for your LLC, you’re ready for your official State of Louisiana LLC filing. You’ll need to file a formal document with the LA Secretary of State. This document is known as your “Articles of Organization,” and filing the document creates your Louisiana LLC. Here’s what is typically included:</br>
+          <ul>
+          <li>Your business name and address</li>
+          <li>Details of your Registered Agent</li>
+          <li>Purpose of your business</li>
+          <li>Name of the incorporator</li>
+          </ul></br>
+          You can file your Louisiana LLC Articles of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Louisiana. You only need to file your Articles of Organization once.</br></br>
+          <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MD">Form your LLC now</a>`,
         },
       ],
     },
@@ -831,7 +839,7 @@ export const feesAndRequirments = [
     marginBottom: 32,
   },
   {
-    type: `dynamic_ar_box`
+    type: `dynamic_ar_box`,
   },
   {
     type: `arrow-link`,
@@ -920,7 +928,7 @@ export const feesAndRequirments = [
     marginBottom: 48,
   },
   {
-    type: `dynamic_filing_requirement`
+    type: `dynamic_filing_requirement`,
   },
   {
     type: `text`,
@@ -1508,7 +1516,7 @@ export const businessTaxes = [
 ];
 
 export const compare = {
-  header: `How We Compare. <br>Get more more for less.`,
+  header: `How We Compare. <br>Get more for less.`,
   table: {
     headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
     rows: [

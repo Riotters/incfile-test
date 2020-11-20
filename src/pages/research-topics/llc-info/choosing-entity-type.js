@@ -9,14 +9,14 @@ import Categories from "../../../atomic/sections/learning-center-entity/help-cen
 import Service from "../../../atomic/sections/learning-center-entity/help-center/service";
 import Tools from "../../../atomic/sections/learning-center-entity/help-center-article/tools";
 import Rocket from "../../../atomic/sections/review-entity-types/c-corporation/rocket";
-import Searchbar from "../../../atomic/molecules/form/searchbar";
+import Searchbar from "../../../atomic/molecules/form/help-center-searchbar";
 //Texts
 import { top, rocket, categories, service, tools } from "../../../static/learning-center-entity/help-center-article";
 import { about, related } from "../../../static/research-topics/llc-info/forming-llc-benefits";
 
 const HelpCenter = () => (
   <Layout>
-    <SEO title="Which entity type offers the best tax advantages?" description="Q & A for LLC and other forms of corporations. Learning Center for Incorporating in every state." />    
+    <SEO title="Which entity type offers the best tax advantages?" description="Q & A for LLC and other forms of corporations. Learning Center for Incorporating in every state." />
     <Top imageName="mrs-bulb-help-center-article" imageAlt="Mrs Bulb and with checklist" ovalColor="green">
       <h1>{top.header}</h1>
       <p>{top.text}</p>

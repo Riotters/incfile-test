@@ -1,17 +1,18 @@
-import React from "react"
-import styled from "styled-components"
-import Container from "../../container"
-import AboutTabs from "../../about-tabs"
-import OvalSVG from "../../../images/oval-blue.inline.svg"
+import React from "react";
+import styled from "styled-components";
+import Container from "../../container";
+import AboutTabs from "../../about-tabs";
+import OvalSVG from "../../../images/oval-blue.inline.svg";
 
 const Wrapper = styled.div`
   padding-top: 75px;
+  padding-bottom: 80px;
   position: relative;
 
   @media (min-width: 769px) {
     padding-top: 115px;
   }
-`
+`;
 
 const Oval = styled.div`
   height: 100%;
@@ -28,9 +29,9 @@ const Oval = styled.div`
     -o-transform: scale(-1,1);
     -webkit-transform: scale(-1,1);
     transform: scale(-1,1);
-`
+`;
 
-const About = ({content, openModal}) => (
+const About = ({ content, openModal }) => (
   <Wrapper>
     <Oval>
       <OvalSVG />
@@ -39,6 +40,6 @@ const About = ({content, openModal}) => (
       <AboutTabs content={content.tabs} openModal={openModal} />
     </Container>
   </Wrapper>
-)
+);
 
-export default About
+export default About;

@@ -322,7 +322,7 @@ const CCorpTabs = ({ layout, columns, content, clickOpenModal }) => (
                   <Paragraph big>{content.content[0].text3}</Paragraph>
                 </PanelWrapper>
               </Panel>
-              <Panel>
+              <Panel>q
                 <PanelWrapper className="panel2" layout={layout}>
                   <Heading size="3">{content.content[1].header}</Heading>
                   <Paragraph big>{content.content[1].text}</Paragraph>
@@ -341,7 +341,7 @@ const CCorpTabs = ({ layout, columns, content, clickOpenModal }) => (
                   <Heading size="3" topMargin="32">
                     {content.content[2].header3}
                   </Heading>
-                  <Advantages content={content.content[2].advantages} tab red />
+                  <Advantages content={content.content[2].disadvantages} tab red />
                 </PanelWrapper>
               </Panel>
               <Panel>

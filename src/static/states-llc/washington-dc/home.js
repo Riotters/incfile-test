@@ -94,7 +94,7 @@ export const howToGuide = [
                     <li>Addresses of managers or members of the LLC at the time of filing</li>
                     <li>Purpose of your business</li>
                     <li>Name of the incorporator</li>
-                </ul>
+                </ul></br>
                 <p>You can file your Washington DC LLC Articles of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Washington DC. You only need to file your Articles of Organization once.</p>
                 <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&amp;entityState=DC"> Form Your LLC now</a> `,
         },
@@ -1484,7 +1484,7 @@ export const businessTaxes = [
 ];
 
 export const compare = {
-  header: `How We Compare. <br>Get more more for less.`,
+  header: `How We Compare. <br>Get more for less.`,
   table: {
     headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
     rows: [

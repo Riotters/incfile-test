@@ -45,19 +45,22 @@ const Wrapper = styled.div`
 `;
 
 const RocketWrapper = styled.div`
-  display: none;
+  display: flex;
   width: 100%;
   max-width: 755px;
+  top: 20%;
+  left: 90%;
   position: absolute;
-  top: 50%;
-  left: 40%;
+  
   transform: translate(-100%, -50%);
   z-index: 0;
 
   @media (min-width: 769px) {
     display: flex;
+    top: 50%;
+    left: 40%;
   }
-
+  
   &::after {
     content: "";
     display: block;
@@ -96,6 +99,11 @@ const Oval = styled.div`
     background: rgb(255, 255, 255);
     background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 20%);
   }
+  
+  @media (max-width: 768px) {
+    bottom: unset;
+    top: 20%;
+  }
 `;
 
 const Curve = styled.div`
@@ -107,16 +115,20 @@ const Curve = styled.div`
 `;
 
 const Moon = styled.div`
-  display: none;
+  display: block;
   height: 130px;
   width: 81px;
   position: absolute;
-  top: 190px;
-  right: 190px;
+  top: 0;
+  left: 30px;
 
   @media (min-width: 769px) {
     display: block;
+    top: 190px;
+    right: 190px;
+    left: unset;
   }
+  
 `;
 
 const Content = styled.div`
@@ -124,10 +136,12 @@ const Content = styled.div`
   flex-direction: column;
   width: 100%;
   margin-left: auto;
+  margin-top: 300px;
 
   @media (min-width: 769px) {
     width: 100%;
     max-width: 670px;
+    margin-top: 0;
   }
 
   h2 {

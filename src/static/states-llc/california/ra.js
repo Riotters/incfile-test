@@ -16,6 +16,17 @@ export const agentPageContent = {
     ],
   },
   content: [
+    {
+      type: `paragraph`,
+      content: `A California Agent for Service of Process provides various services for your LLC, including the acceptance of formal documents and correspondence from the California Secretary of State. You will appoint an Agent for Service of Process when you first <a href="/blog/post/starting-a-small-business-in-california-is-easiest-with-incfile/">start your business</a> — you can change this agent later, but your LLC must have one at all times.`,
+    },
+    {
+        type: `video`,
+        image: `what-is-a-registered-agent-7199`,
+        id: `wSsZAvrT-IU`,
+    },
+
+
     // Rules for agents
     {
       type: `heading`,

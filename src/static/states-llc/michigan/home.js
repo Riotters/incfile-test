@@ -104,10 +104,12 @@ export const howToGuide = [
         {
           question: `STEP 6: File Michigan LLC Forms — Articles of Organization — With the Department of Licensing and Regulatory Affairs`,
           answer: `<p>In many states, the Secretary of State is the body responsible for registering and managing LLCs, whereas in Michigan, it's the Department of Licensing and Regulatory Affairs. Once you've gathered all the information for your Michigan LLC, you’ll need to file a formal document with the state. This document is known as your “Articles of Organization,” and filing the document creates your Michigan LLC. Here’s what is typically included:</p></br>
+          <ul>
             <li>Your business name and address</li>
             <li>Details of your Registered Agent</li>
             <li>Purpose of your business</li>
-            <li>Name of the incorporator</li></br>
+            <li>Name of the incorporator</li>
+            </ul></br>
             <p>You can file your Michigan LLC Articles of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Michigan, but you only need to file your Articles of Organization once.</p></br>
             <p><a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MI" target="_blank">Form your LLC now</a></p>`,
         },
@@ -173,9 +175,7 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `<p>You can easily search the business registry of the MI Secretary of State/Department of Licensing and Regulatory Affairs by using Incfile’s</p>
-      <a href="/business-name-search/" target="_blank">business name search tool.</a></br> 
-      <p>This part of our guide also includes information on naming rules, fictitious names, reserving a Michigan LLC name and more.</p>`,
+    content: `<p>You can easily search the business registry of the MI Secretary of State/Department of Licensing and Regulatory Affairs by using Incfile’s <a href="/business-name-search/" target="_blank">business name search tool.</a> This part of our guide also includes information on naming rules, fictitious names, reserving a Michigan LLC name and more.</p>`,
     marginBottom: 16,
   },
   {
@@ -1654,7 +1654,7 @@ export const businessTaxes = [
 ];
 
 export const compare = {
-  header: `How We Compare. <br>Get more more for less.`,
+  header: `How We Compare. <br>Get more for less.`,
   table: {
     headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
     rows: [

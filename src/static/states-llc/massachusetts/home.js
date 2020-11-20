@@ -102,7 +102,7 @@ export const howToGuide = [
                    <li> Addresses of managers or members of the LLC at the time of filing </li>
                    <li> Contact information </li>
                    <li> Name of the incorporator </li>
-                   </ul>
+                   </ul></br>
                    <p>You can file your Massachusetts LLC Certificate of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Massachusetts. You only need to file your Certificate of Organization once. </p></br>
                    <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MA"> Form your LLC now </a>`,
         },
@@ -886,7 +886,7 @@ export const feesAndRequirments = [
     marginBottom: 32,
   },
   {
-    type: `dynamic_ar_box`
+    type: `dynamic_ar_box`,
   },
   {
     type: `arrow-link`,
@@ -975,7 +975,7 @@ export const feesAndRequirments = [
     marginBottom: 48,
   },
   {
-    type: `dynamic_filing_requirement`
+    type: `dynamic_filing_requirement`,
   },
   {
     type: `text`,
@@ -1563,7 +1563,7 @@ export const businessTaxes = [
 ];
 
 export const compare = {
-  header: `How We Compare. <br>Get more more for less.`,
+  header: `How We Compare. <br>Get more for less.`,
   table: {
     headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
     rows: [

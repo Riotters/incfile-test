@@ -49,6 +49,12 @@ const Wrapper = styled.div`
     }
 
     & > div {
+      min-width: 30%;
+
+      @media (min-width: 470px) {
+        min-width: 122px;
+      }
+
       &:nth-child(1) {
         display: none;
 
@@ -60,15 +66,39 @@ const Wrapper = styled.div`
   }
 
   .table-row {
-    grid-template-areas: 
-    "header header header"
-    "incfile legalzoom zenbusiness";
+    grid-template-areas:
+      "header header header"
+      "incfile legalzoom zenbusiness";
+
+    p {
+      font-size: 12px;
+      line-height: 20px;
+    }
+
+    @media (min-width: 470px) {
+      p {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
 
     @media (min-width: 769px) {
       grid-template-areas: "header incfile legalzoom zenbusiness";
     }
 
+    &:nth-child(2) {
+      p {
+        text-align: center;
+      }
+    }
+
     & > div {
+      min-width: 30%;
+
+      @media (min-width: 470px) {
+        min-width: 122px;
+      }
+
       &:nth-child(1) {
         grid-area: header;
         border-right-width: 0;
@@ -79,11 +109,11 @@ const Wrapper = styled.div`
           border-bottom-width: 0;
         }
       }
-  
+
       &:nth-child(2) {
         grid-area: incfile;
       }
-  
+
       &:nth-child(3) {
         grid-area: legalzoom;
       }

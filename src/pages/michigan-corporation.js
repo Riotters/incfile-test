@@ -276,17 +276,17 @@ state law. The name must include one of the following terms or its abbreviation:
                 </ContentCenter>
             </QuestionSection>
 
-            <InfoSection>
-                <HeadingCenter headline={info.header} textWidth="770" />
+            {/*<InfoSection>*/}
+                {/*<HeadingCenter headline={info.header} textWidth="770" />*/}
 
-                <Container>
-                    <AdventagesBox>
-                        {info.items.map((item) => (
-                            <Adventages headline={item.headline} text={item.text} />
-                        ))}
-                    </AdventagesBox>
-                </Container>
-            </InfoSection>
+                {/*<Container>*/}
+                    {/*<AdventagesBox>*/}
+                        {/*{info.items.map((item) => (*/}
+                            {/*<Adventages headline={item.headline} text={item.text} />*/}
+                        {/*))}*/}
+                    {/*</AdventagesBox>*/}
+                {/*</Container>*/}
+            {/*</InfoSection>*/}
 
             <Rocket />
         </Layout>

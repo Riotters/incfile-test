@@ -1,16 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 
-const RatingWrapper = styled.div`
+const RatingWrapper = styled.a`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 15px;
-  margin-right: 15px;
-  
+
   @media (min-width: 1024px) {
     margin-left: 0px;
-    margin-right: 42px; 
+    margin-right: 42px;
   }
 
   @media (min-width: 769px) {
@@ -18,10 +16,10 @@ const RatingWrapper = styled.div`
   }
 `;
 
-const RatingBox = ({ children}) => (
-    <RatingWrapper>
-        {children}
-    </RatingWrapper>
+const RatingBox = ({ children }) => (
+  <RatingWrapper href="https://www.shopperapproved.com/reviews/IncFile.com" target="_blank" rel="noopener noreferrer">
+    {children}
+  </RatingWrapper>
 );
 
 export default RatingBox;

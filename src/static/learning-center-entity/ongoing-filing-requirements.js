@@ -15,7 +15,7 @@ export const about = {
 
 export const entityTypeAndState = {
   header: `Choose your entity type and state`,
-  text: `Our Business License Search Tool helps you narrow down the requirements for your business. Just enter the relevant information below to learn the likely registrations, permits, or licenses you’ll need.`,
+  text:``,
   cards: [`1. Entity Type`, `2. Your State`],
 };
 
@@ -49,7 +49,7 @@ export const requirements = {
 export const rocket = {
   header: `Launch`,
   header2: `your business with Incfile`,
-  text: `No Contracts. No Surprise.`,
+  text: `No Contracts. No Surprises.`,
   text2: `Only $0 + State Fee to Launch Your Business.`,
   button: {
     text: `Launch your business`,

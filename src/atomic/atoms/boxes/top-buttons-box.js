@@ -13,6 +13,10 @@ const Wrapper = styled.div`
   @media (min-width: ${(props) => (props.mediaXL ? "1200px" : "992px")}) {
     flex-direction: row;
   }
+  
+  @media (min-width: ${(props) => (props.mediaSM ? "576px" : "992px")}) {
+    flex-direction: row;
+  }
 `;
 
 const TopButtonsBox = ({ children, mediaXL, ...rest }) => (

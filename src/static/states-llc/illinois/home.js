@@ -63,11 +63,8 @@ export const HomePageContent = {
       ],
       step1: {
         heading1: `Complete a Illinois LLC Search and Choose a Unique Business Name`,
-        text1: `You will need a distinctive and original name for your Illinois LLC that’s not used by any other business in IL. If you’re having trouble coming up with a name, try out Incfile’s <a href="/business-name-generator/">Business Name Generator</a> to brainstorm ideas. There are also a few naming rules you’ll need to follow, which you ILn read about in detail on our section on <a href="/Illinois-llc/Illinois-business-names/">Illinois LLC Business Names.</a>`,
-        text2: `If you already have a name in mind, you ILn make sure it’s available by using the Illinois business search on the <a href="https://businesssearch.sos.IL.gov" target="_blank" rel="noopener noreferrer">IL Secretary of State website  </a>or<a href="/business-name-search/"> Incfile’s free Business Name Search tool.</a>`,
-        text3: `There are a few rules you’ll need to follow when choosing an LLC name, which you ILn learn about in the 
-                a href="/Illinois-llc/Illinois-business-names/">Illinois business names</a>
-                 section of this guide. One Illinois rule, for example, is that your business name ILnnot include “Agency,” “Commission,” “Department,” “Bureau,” “Division,” “Municipal” or “Board.”`,
+        text1: `You will need a distinctive and original name for your Illinois LLC that’s not used by any other business in IL. If you’re having trouble coming up with a name, try out Incfile’s <a href="/business-name-generator/">Business Name Generator</a> to brainstorm ideas. There are also a few naming rules you’ll need to follow, which you ILn read about in detail on our section on <a href="/illinois-llc/illinois-business-names/">Illinois LLC Business Names.</a> One Illinois rule, for example, is that certain restricted words need additional paperwork if you want to use them in your business name. This includes both names associated with institutions and words associated with certain qualified professions, such as insurance, surety, underwriters, bank, bankers, banking or any licensed professional services.`,
+        text2: `Once you’ve chosen a name, you’ll need to make sure it’s available in Illinois. To find out if another company is using your chosen business name, use Incfile’s fast and easy Business Name Search tool below. Alternatively, you can carry out an Illinois business entity name search on the <a href="https://www.cyberdriveillinois.com/departments/business_services/corp.html" target="_blank" rel="noopener noreferrer">IL Secretary of State website.</a>`,
         cta: {
           title: `Incfile’s Business <br>Name Search Tool`,
           subtitle: `We’ll search the Illinois Secretary <br>of State registry for you.`,
@@ -83,13 +80,13 @@ export const HomePageContent = {
       },
       step3: {
         heading1: `Assign an Agent for Service of Process for Your Illinois LLC`,
-        text1: `Every IL LLC must have a “Registered Agent,” known in Illinois as an “Agent for Service of Process,” when it is formed. This is an official position; the Agent for Service of Process is someone who receives official legal and tax correspondence and has responsibility for filing reports with the Illinois Secretary of State.`,
-        text2: `This position ILn be filled by you, another manager in the business or a dediILted Registered Agent service. Your IL Agent for Service of Process must have a physiILl street address in Illinois and must be present to receive important documents for your company during business hours.`,
-        text3: `At Incfile, all of our packages include a Illinois Registered Agent service that is free for the first year and just $119 per year afterward. We also have a dashboard where you ILn log in and easily view any document your Registered Agent has received on your behalf.`,
+        text1: `Every Illinois LLC is required to have a Registered Agent. This is an official position; the Registered Agent is someone who receives official legal and tax correspondence and has responsibility for filing reports with the Illinois Secretary of State.`,
+        text2: `This position can be filled by you, another manager in the business or a dedicated Registered Agent service. If your Registered Agent is a person, they must reside in and have a physical street address in Illinois and must be present to receive important documents for your company during business hours. In Illinois, you designate your Registered Agent when you file your Articles of Organization and formally create your business.`,
+        text3: `At Incfile, all of our packages include an Illinois Registered Agent service that is free for the first year and just $119 per year afterward. We also have a dashboard where you can log in and easily view any document your Registered Agent has received on your behalf.`,
         groupBtn1: [
           {
             header: `Learn More About Illinois Registered Agents`,
-            url: `/Illinois-llc/registered-agents-Illinois-llc/`,
+            url: `/illinois-llc/registered-agents-Illinois-llc/`,
           },
           {
             header: `Get A Free Registered Agent Whe You Incorporate With Incfile`,
@@ -101,7 +98,7 @@ export const HomePageContent = {
         heading1: `File Articles of Organization with the Illinois Secretary of State`,
         text1: `Once you've gathered all the information for your Illinois LLC, you’ll need to file a formal document (Form LLC-1) with the IL Secretary of State. This document is known as your “Articles of Organization,” and filing the document creates your Illinois LLC.`,
         lists: {
-          header: `Here’s what is typiILlly included:`,
+          header: `Here’s what is typically included:`,
           list: [
             `Your business name and address`,
             `Details of your Registered Agent`,
@@ -117,11 +114,11 @@ export const HomePageContent = {
           text: `Download Illinois's form LLC-5.5 Here.`,
           url: `https://www.cyberdriveillinois.com/publications/pdf_publications/llc55.pdf`,
         },
-        text2: `You can file your Articles of Organization online on the <a href="https://www.ilsos.gov/llcarticles/index.jsp" target="_blank" rel="noopener noreferrer">Illinois Secretary of State website</a>, mail in a form, submit in person, or have Incfile do it on your behalf for free. The State of Illinois charges a $150 fee to file and start an LLC in Illinois.`,
+        text2: `You can file your <a href="https://www.ilsos.gov/llcarticles/index.jsp" target="_blank" rel="noopener noreferrer">Illinois LLC Articles of Organization online with the Illinois Secretary of State (SOS) filing system,</a> mail in a form to the Office of the Secretary of State or have Incfile do it on your behalf. The State of Illinois charges a $150 fee to file and start an LLC.`,
         certifiILte_info: [
           {
             text1: `File by Mail:`,
-            text2: `SDepartment of Business Services<br>
+            text2: `Department of Business Services<br>
                         Limited Liability Division<br>
                         501 S. Second St., Rm. 351<br>
                         Springfield, IL 62756`,
@@ -143,8 +140,8 @@ export const HomePageContent = {
       },
       step6: {
         heading1: `Create a Illinois LLC Operating Agreement`,
-        text1: `An operating agreement is a kind of “instruction manual” that outlines how you will run your business. It includes how decisions are made, how the business is divided amongst members, and what happens if a member leaves the company.`,
-        text2: `Illinois requires that LLCs have an operating agreement in place. This does not need to be filed with the Secretary of State but should be kept on hand.`,
+        text1: `An Operating Agreement is a kind of “instruction manual” that outlines how you will run your business. It includes how decisions are made, how the business is divided amongst members and what happens if a member leaves the company.`,
+        text2: `Many states require that a company have an Operating Agreement in place — it isn’t legally required in Illinois, but it’s a good idea to have one nonetheless.`,
         button1: {
           text: `Learn More About Operating Agreemets Here`,
           url: `/blog/post/operating-agreement-llc/`,
@@ -214,7 +211,7 @@ export const HomePageContent = {
         content: [
           {
             text: `More information on Illinois filing and licensing requirements ILn be found here.`,
-            url: `/Illinois-llc/fees-filing-requirements/`,
+            url: `/illinois-llc/fees-filing-requirements/`,
           },
         ],
       },
@@ -264,7 +261,7 @@ export const HomePageContent = {
               marginBottom: `24px`,
             },
             text: `Naming Your Illinois LLC`,
-            url: `/Illinois-llc/Illinois-business-names/`,
+            url: `/illinois-llc/illinois-business-names/`,
           },
         ],
       },
@@ -285,7 +282,7 @@ export const HomePageContent = {
               marginBottom: `24px`,
             },
             text: `Illinois Registered Agents`,
-            url: `/Illinois-llc/registered-agents-Illinois-llc/`,
+            url: `/illinois-llc/registered-agents-Illinois-llc/`,
           },
         ],
       },
@@ -301,7 +298,7 @@ export const HomePageContent = {
               marginBottom: `24px`,
             },
             text: `Fees and Requirements for Your Illinois LLC`,
-            url: `/Illinois-llc/fees-filing-requirements/`,
+            url: `/illinois-llc/fees-filing-requirements/`,
           },
         ],
       },
@@ -317,7 +314,7 @@ export const HomePageContent = {
               marginBottom: `24px`,
             },
             text: `Business Taxes for Your Illinois LLC`,
-            url: `/Illinois-llc/business-taxes/`,
+            url: `/illinois-llc/business-taxes/`,
           },
         ],
       },

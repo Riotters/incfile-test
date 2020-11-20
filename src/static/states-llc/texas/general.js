@@ -26,18 +26,18 @@ export const tabPages = {
     },
     {
       name: `What To Do Next?`,
-      path: `/other/after-forming-llc/`,
+      path: `/after-forming-llc/`,
     },
-  ]
+  ],
 };
 
 export const rocket = {
   header: `Launch`,
   header2: `your business with Incfile`,
-  text: `No Contracts. No Surprise.`,
+  text: `No Contracts. No Surprises.`,
   text2: `Only $0 + State Fee to Launch Your Business.`,
   button: {
     text: `Start Now`,
-    url: `/`,
+    url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=TX`,
   },
 };

@@ -28,7 +28,7 @@ export const tableOfContent = {
         },
         {
             header: `The Legalities of Starting a Business`,
-            text: `Click here if you have existing registered agent service and would like to renew it.`,
+            text: `Deciding on the right business structure and entity for your needs, searching for and finding the right business name and how to go about filing and registering your new business.`,
         },
         {
             header: `Developing Your Business Idea`,
@@ -64,11 +64,11 @@ export const needMore = {
 export const rocket = {
     header: `Launch`,
     header2: `your business with Incfile`,
-    text: `No Contracts. No Surprise.`,
+    text: `No Contracts. No Surprises.`,
     text2: `Only $0 + State Fee to Launch Your Business.`,
     button: {
         text: `launch your business`,
-        url: `/`,
+        url: `${process.env.ORDER_URL}/form-order-now.php`,
     },
 };
 

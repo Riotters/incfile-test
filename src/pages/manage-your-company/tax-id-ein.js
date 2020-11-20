@@ -26,7 +26,7 @@ const TaxIdEin = () => (
     <About content={about} />
     <Help content={help} />
     <Faq content={faq} />
-    <Benefits />
+    <Benefits page="tax-id-ein" />
     <Articles />
   </Layout>
 );

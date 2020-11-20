@@ -118,7 +118,7 @@ export const about = {
           {
             count: 2,
             question: `File Paperwork`,
-            answer: `In order to form a nonprofit, you will have to file nonprofit Articles of Incorporation with the appropriate state agency and pay the necessary state filing fees. The paperwork and fees vary by state.`,
+            answer: `In order to form a nonprofit, you will have to file nonprofit Articles of Incorporation with the appropriate state agency and pay the necessary state filing fees. The paperwork and fees vary <a href="/state-filing-fees/">by state</a>.`,
           },
           {
             count: 3,
@@ -175,7 +175,7 @@ export const differences = {
 export const rocket = {
   header: `Launch Your Business`,
   header2: `your business with Incfile`,
-  text: `No Contracts. No Surprise.`,
+  text: `No Contracts. No Surprises.`,
   text2: `Only $0 + State Fee to Launch Your Business.`,
   button: {
     text: `Start Now`,
@@ -193,10 +193,6 @@ export const cta = {
 
 export const faq = {
   header: `Common questions on starting a Nonprofit Corporation`,
-  link: {
-    text: `See all`,
-    url: `/research-topics/nonprofit-info/`,
-  },
   faq: {
     items: [
       {

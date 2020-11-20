@@ -14,12 +14,16 @@ import NumericList from "../../../organisms/lists/numeric-boxed-list";
 
 const OtherRules = styled.section`
   position: relative;
-  padding-bottom: 120px;
+  padding-bottom: 60px;
   overflow: hidden;
 
   p,
   ul {
     margin-bottom: 0;
+  }
+  
+  @media (min-width: 576px) {
+    padding-bottom: 120px;
   }
 `;
 
