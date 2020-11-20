@@ -9,6 +9,7 @@ import IconSVG from "../../../../images/icons/globe.inline.svg";
 import IconTextColorBox from "../../../molecules/text-blocks/icon-h4-text-color";
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-blue3.inline.svg";
+import parse from "html-react-parser";
 
 const About = styled.section`
   position: relative;
@@ -25,20 +26,28 @@ const AboutSection = ({ className, content }) => (
       <OvalSVG />
     </Oval>
     <ImageContent image="fqualification">
-      <Heading size={3} bottomMargin="24">
-        {content.header}
-      </Heading>
-      <Paragraph big bottomMargin="40">
-        {content.text}
-      </Paragraph>
+        {content.header && (
+            <Heading size={3} bottomMargin="24">
+                {parse(content.header)}
+            </Heading>
+        )}
+        {content.text && (
+            <Paragraph big bottomMargin="40">
+                {parse(content.text)}
+            </Paragraph>
+        )}
       <IconTextColorBox color={color.babyblue3} Icon={IconSVG} content={content.box} bottomMargin="48" rounded curve curveColor={color.yellow1} />
-      <Paragraph big bottomMargin="48">
-        {content.text2}
-      </Paragraph>
-      <Heading size={3} bottomMargin="32">
-        {content.header2}
-      </Heading>
-      <ArrowLink bottomMargin="0" content={content.link} />
+        {content.text2 && (
+            <Paragraph big bottomMargin="48">
+                {parse(content.text2)}
+            </Paragraph>
+        )}
+        {content.header2 && (
+            <Heading size={3} bottomMargin="32">
+                {parse(content.header2)}
+            </Heading>
+        )}
+        {content.link && <ArrowLink bottomMargin="0" content={content.link} />}
     </ImageContent>
   </About>
 );

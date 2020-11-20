@@ -63,7 +63,7 @@ export const HomePageContent = {
       ],
       step1: {
         heading1: `Complete a Illinois LLC Search and Choose a Unique Business Name`,
-        text1: `You will need a distinctive and original name for your Illinois LLC that’s not used by any other business in IL. If you’re having trouble coming up with a name, try out Incfile’s <a href="/business-name-generator/">Business Name Generator</a> to brainstorm ideas. There are also a few naming rules you’ll need to follow, which you ILn read about in detail on our section on <a href="/Illinois-llc/Illinois-business-names/">Illinois LLC Business Names.</a> One Illinois rule, for example, is that certain restricted words need additional paperwork if you want to use them in your business name. This includes both names associated with institutions and words associated with certain qualified professions, such as insurance, surety, underwriters, bank, bankers, banking or any licensed professional services.`,
+        text1: `You will need a distinctive and original name for your Illinois LLC that’s not used by any other business in IL. If you’re having trouble coming up with a name, try out Incfile’s <a href="/business-name-generator/">Business Name Generator</a> to brainstorm ideas. There are also a few naming rules you’ll need to follow, which you ILn read about in detail on our section on <a href="/illinois-llc/illinois-business-names/">Illinois LLC Business Names.</a> One Illinois rule, for example, is that certain restricted words need additional paperwork if you want to use them in your business name. This includes both names associated with institutions and words associated with certain qualified professions, such as insurance, surety, underwriters, bank, bankers, banking or any licensed professional services.`,
         text2: `Once you’ve chosen a name, you’ll need to make sure it’s available in Illinois. To find out if another company is using your chosen business name, use Incfile’s fast and easy Business Name Search tool below. Alternatively, you can carry out an Illinois business entity name search on the <a href="https://www.cyberdriveillinois.com/departments/business_services/corp.html" target="_blank" rel="noopener noreferrer">IL Secretary of State website.</a>`,
         cta: {
           title: `Incfile’s Business <br>Name Search Tool`,
@@ -86,7 +86,7 @@ export const HomePageContent = {
         groupBtn1: [
           {
             header: `Learn More About Illinois Registered Agents`,
-            url: `/Illinois-llc/registered-agents-Illinois-llc/`,
+            url: `/illinois-llc/registered-agents-Illinois-llc/`,
           },
           {
             header: `Get A Free Registered Agent Whe You Incorporate With Incfile`,
@@ -211,7 +211,7 @@ export const HomePageContent = {
         content: [
           {
             text: `More information on Illinois filing and licensing requirements ILn be found here.`,
-            url: `/Illinois-llc/fees-filing-requirements/`,
+            url: `/illinois-llc/fees-filing-requirements/`,
           },
         ],
       },
@@ -261,7 +261,7 @@ export const HomePageContent = {
               marginBottom: `24px`,
             },
             text: `Naming Your Illinois LLC`,
-            url: `/Illinois-llc/Illinois-business-names/`,
+            url: `/illinois-llc/illinois-business-names/`,
           },
         ],
       },
@@ -282,7 +282,7 @@ export const HomePageContent = {
               marginBottom: `24px`,
             },
             text: `Illinois Registered Agents`,
-            url: `/Illinois-llc/registered-agents-Illinois-llc/`,
+            url: `/illinois-llc/registered-agents-Illinois-llc/`,
           },
         ],
       },
@@ -298,7 +298,7 @@ export const HomePageContent = {
               marginBottom: `24px`,
             },
             text: `Fees and Requirements for Your Illinois LLC`,
-            url: `/Illinois-llc/fees-filing-requirements/`,
+            url: `/illinois-llc/fees-filing-requirements/`,
           },
         ],
       },
@@ -314,7 +314,7 @@ export const HomePageContent = {
               marginBottom: `24px`,
             },
             text: `Business Taxes for Your Illinois LLC`,
-            url: `/Illinois-llc/business-taxes/`,
+            url: `/illinois-llc/business-taxes/`,
           },
         ],
       },

@@ -13,10 +13,15 @@ import ResonableSalarySVG from "../../../../images/icons/resonable-salary-and-co
 import LLCDeclaringSVG from "../../../../images/icons/declaring-an-llc-should-be-taxed-as-an-s-corp.inline.svg";
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-babyblue1.inline.svg";
+import ContentCenter from "../../../partials/content-center";
+import Button from "../../../molecules/buttons/button";
 
 const About = styled.section`
   position: relative;
-  padding-bottom: 120px;
+
+  @media (min-width: 769px) {
+    padding-bottom: 120px;
+  }
 
   p {
     color: ${color.grey2};
@@ -78,6 +83,9 @@ const AboutSection = ({ className, content }) => (
         {content.text5}
       </Paragraph>
     </ImageContent>
+    <ContentCenter>
+      <Button theme="primary56" content={{ text: `Get Started`, url: `${process.env.ORDER_URL}/form-order-now.php` }} margin="48px 0 0" arrow />
+    </ContentCenter>
   </About>
 );
 

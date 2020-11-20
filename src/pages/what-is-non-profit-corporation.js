@@ -7,7 +7,7 @@ import Button from "../atomic/molecules/buttons/button";
 //Sections
 import Top from "../atomic/partials/top";
 import About from "../components/partials/sections/about";
-import Search from "../atomic/sections/review-entity-types/nonprofit/search";
+import Rocket from "../atomic/sections/rocket";
 import Faq from "../atomic/sections/review-entity-types/nonprofit/faq";
 import Cta from "../atomic/sections/general/cta";
 import Articles from "../components/partials/sections/articles";
@@ -53,7 +53,7 @@ const IndexPage = () => {
         </Buttonsbox>
       </Top>
       <About content={about} openModal={popup} />
-      <Search />
+      <Rocket search />
       <Faq content={faq} onClick={popup} />
       <Cta cta={cta} />
       <Articles />

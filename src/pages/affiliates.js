@@ -29,11 +29,6 @@ const VirtualMailBoxes = () => (
         <Button content={top.button[0]} theme="primary56" arrow />
       </Buttonsbox>
     </Top>
-    <Wrapper>
-      <Oval className="oval" height="420" width="420" top="0" left="0" y={125}>
-        <OvalSVG />
-      </Oval>
-    </Wrapper>
     <HowItWorksSection content={affiliates} />
     <EnjoyHighestPayouts content={payouts} />
   </Layout>

@@ -11,7 +11,7 @@ export const top = {
 export const whyBrandName = {
     header: `Why a Branded Name?`,
     text1: `For new businesses, naming options can seem quite limited. Short domains are very expensive, yet longer multi-word names don’t inspire confidence.`,
-    text2: `In 2020 many startups are choosing a short, branded name that is unique, memorable and affordable.`,
+    text2: `In 2021 many startups are choosing a short, branded name that is unique, memorable and affordable.`,
     lists: [
         {
             hasCircle: true,

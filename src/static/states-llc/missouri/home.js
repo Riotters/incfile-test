@@ -95,10 +95,12 @@ export const howToGuide = [
         {
           question: `STEP 6: File Articles of Organization with the Missouri Secretary of State`,
           answer: `<p>Once you've gathered all the information for your Missouri LLC, you’ll need to file a formal document with the MO Secretary of State. This document is known as your “Articles of Organization,” and filing the document creates your Missouri LLC. Here’s what is typically included:</p></br>
+          <ul>
             <li>Your business name and address</li>
             <li>Details of your Registered Agent</li>
             <li>Purpose of your business</li>
-            <li>Name of the incorporator</li></br>
+            <li>Name of the incorporator</li>
+            </ul></br>
             <p>You can file your Missouri LLC Articles of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Missouri. You only need to file your Articles of Organization once.</p></br>
             <p><a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MO" target="_blank">Form your LLC now</a></p>`,
         },

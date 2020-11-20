@@ -105,6 +105,7 @@ const Wrapper = styled.div`
   position: relative;
   padding-top: 80px;
   z-index: 1;
+  overflow: hidden;
 
   @media (min-width: 992px) {
     flex-direction: row;
@@ -181,7 +182,7 @@ const TextContainer = styled.div`
     padding-top: ${(props) => (props.contentPaddingTop ? props.contentPaddingTop : "150")}px;
   }
 
-  h1 {
+  & > h1 {
     width: 100%;
     text-align: center;
     padding-bottom: 40px;
@@ -196,7 +197,7 @@ const TextContainer = styled.div`
     }
   }
 
-  p {
+  & > p {
     margin-bottom: 32px;
     text-align: center;
 
@@ -211,19 +212,25 @@ const ImageContainer = styled.div`
   display: flex;
   max-width: ${(props) => (props.imageWidth ? `${props.imageWidth}px` : "950px")};
   width: 100%;
-  top: 50%;
-  right: 55%;
 
   @media (min-width: 992px) {
     position: absolute;
+    top: 50%;
+    right: 55%;
     width: 55%;
     transform: translate(100%, -50%);
-
+    padding-bottom: 0;
     ${(props) => props.imagePositionRight && `right: ${props.imagePositionRight};`}
   }
 
   .gatsby-image-wrapper {
     width: 100%;
+    position: absolute;
+    left: ${(props) => (props.imageMobilePosition ? props.imageMobilePosition : "8%")};
+
+    @media (min-width: 992px) {
+      position: static;
+    }
 
     img {
       object-fit: contain !important;
@@ -231,7 +238,7 @@ const ImageContainer = styled.div`
   }
 `;
 
-const Top = ({ children, imageName, imageAlt, imageWidth, imagePositionRight, contentWidth, headlineWidth, textWidth, ovalColor, ...rest }) => (
+const Top = ({ children, imageName, imageAlt, imageWidth, imagePositionRight, imageMobilePosition, contentWidth, headlineWidth, textWidth, ovalColor, ...rest }) => (
   <Wrapper {...rest}>
     <VisibilitySensor partialVisibility once>
       {({ isVisible }) => (
@@ -240,7 +247,7 @@ const Top = ({ children, imageName, imageAlt, imageWidth, imagePositionRight, co
         </Oval>
       )}
     </VisibilitySensor>
-    <ImageContainer imageWidth={imageWidth} imagePositionRight={imagePositionRight}>
+    <ImageContainer imageWidth={imageWidth} imagePositionRight={imagePositionRight} imageMobilePosition={imageMobilePosition}>
       <Image filename={imageName} alt={imageAlt} />
     </ImageContainer>
     <Container>
