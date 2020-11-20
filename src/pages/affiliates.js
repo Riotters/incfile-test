@@ -1,23 +1,14 @@
 import React from "react";
 import Layout from "../components/layout";
-import styled from "styled-components";
 import SEO from "../components/seo";
 //Sections
 import Top from "../atomic/partials/top";
-import Button from "../atomic/molecules/buttons/button";
+import ExternalLink from "../atomic/molecules/buttons/external-link";
 import Buttonsbox from "../atomic/atoms/boxes/top-buttons-box";
-import OvalSVG from "../images/ovals/bottom-left-transparent-green3.inline.svg";
 
 import { affiliates, payouts, top } from "../static/other/affiliates";
 import HowItWorksSection from "../atomic/sections/other/affiliates/how-it-works";
 import EnjoyHighestPayouts from "../atomic/sections/other/affiliates/enjoy-highest-payouts";
-import Oval from "../atomic/atoms/icons/oval";
-
-const Wrapper = styled.div`
-  .oval {
-    z-index: -1;
-  }
-`;
 
 const VirtualMailBoxes = () => (
   <Layout>
@@ -26,22 +17,12 @@ const VirtualMailBoxes = () => (
       <h1>{top.header}</h1>
       <p>{top.text}</p>
       <Buttonsbox>
-        <Button content={top.button[0]} theme="primary56" arrow />
+        <ExternalLink content={top.button[0]} theme="primary56" arrow />
       </Buttonsbox>
     </Top>
     <HowItWorksSection content={affiliates} />
     <EnjoyHighestPayouts content={payouts} />
   </Layout>
 );
-
-const InnerSection = styled.div`
-  position: relative;
-  margin-bottom: 100px;
-
-  .oval:not(.small) {
-    max-width: 100%;
-    overflow: hidden;
-  }
-`;
 
 export default VirtualMailBoxes;

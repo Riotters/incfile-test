@@ -114,7 +114,7 @@ export const HomePageContent = {
           text: `Download Illinois's form LLC-5.5 Here.`,
           url: `https://www.cyberdriveillinois.com/publications/pdf_publications/llc55.pdf`,
         },
-        text2: `You can file your <a href="https://www.ilsos.gov/llcarticles/index.jsp" target="_blank" rel="noopener noreferrer">Illinois LLC Articles of Organization online with the Illinois Secretary of State (SOS) filing system,</a> mail in a form to the Office of the Secretary of State or have Incfile do it on your behalf. The State of Illinois charges a $150 fee to file and start an LLC.`,
+        text2: `You can file your <a href="https://www.ilsos.gov/llcarticles/index.jsp" target="_blank" rel="noopener noreferrer">Illinois LLC Articles of Organization online with the Illinois Secretary of State (SOS) filing system,</a> mail in a form to the Office of the Secretary of State or have Incfile do it on your behalf. The State of Illinois charges a $[STATE_FEE] fee to file and start an LLC.`,
         certifiILte_info: [
           {
             text1: `File by Mail:`,

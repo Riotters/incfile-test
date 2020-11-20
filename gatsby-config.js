@@ -1,10 +1,14 @@
+require("dotenv").config({
+    path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   pathPrefix: `/incfile-test`,
   siteMetadata: {
     title: `What is a Nonprofit Organization? How to Start a Nonprofit`,
     description: `Learn all about nonprofit corporations, including the benefits & disadvantages, getting 501c3 status, and what's needed to get your company off the ground.`,
     author: `Krzysztof Stefański`,
-    siteUrl: `https://incfile.netlify.app`,
+    siteUrl: `${process.env.SITE_URL}`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -56,8 +60,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: "https://incfile.netlify.app",
-        sitemap: "https://incfile.netlify.app/sitemap.xml",
+        host: `${process.env.SITE_URL}`,
+        sitemap: `${process.env.SITE_URL}/sitemap.xml`,
         policy: [{ userAgent: "*", allow: "/" }],
       },
     },
