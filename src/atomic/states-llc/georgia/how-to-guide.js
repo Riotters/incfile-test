@@ -246,11 +246,13 @@ const HowToGuide = ({ content, data }) => {
         <Paragraph big mixed={true}>
           {parse(content.mainSteps.step4.text4)}
         </Paragraph>
+
         <RelativeElement>
           <AbsoluteShapeCurveElement right="0" top="-30px">
             <ShapeCurve color={color.purple1} />
           </AbsoluteShapeCurveElement>
         </RelativeElement>
+
         <Paragraph big mixed={true}>
           {parse(content.mainSteps.step4.text5)}
         </Paragraph>
@@ -258,6 +260,7 @@ const HowToGuide = ({ content, data }) => {
           {parse(content.mainSteps.step4.text6)}
         </Paragraph>
         <BoxCTA bgColor={color.orange3} bgImage={BgBoxHandlePaperWorks} content={content.mainSteps.step4.cta} />
+
         <AnnualReportFilingBox data={data} />
       </TextBlockWithNumberCounting>
 

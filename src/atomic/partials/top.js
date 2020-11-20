@@ -182,7 +182,7 @@ const TextContainer = styled.div`
     padding-top: ${(props) => (props.contentPaddingTop ? props.contentPaddingTop : "150")}px;
   }
 
-  h1 {
+  & > h1 {
     width: 100%;
     text-align: center;
     padding-bottom: 40px;
@@ -197,7 +197,7 @@ const TextContainer = styled.div`
     }
   }
 
-  p {
+  & > p {
     margin-bottom: 32px;
     text-align: center;
 

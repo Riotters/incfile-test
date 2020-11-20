@@ -9,7 +9,7 @@ import { Paragraph } from "../atoms/typography/paragraph";
 import Button from "../molecules/buttons/button";
 import Searchbar from "../../components/searchbar";
 
-const Rocket = ({ search, index, url }) => (
+const Rocket = ({ search, index, url, textButton, text1, text2 }) => (
   <Wrapper>
     <Oval>
       <OvalSVG />
@@ -49,9 +49,9 @@ const Rocket = ({ search, index, url }) => (
             Launch
           </Heading>
           <Heading size={2}>your business with Incfile</Heading>
-          <Paragraph bottomMargin="0">No Contracts. No Surprises.</Paragraph>
-          <Paragraph>Only $0 + State Fee to Launch Your Business.</Paragraph>
-          <Button content={{ text: `Start Now`, url: `${process.env.ORDER_URL}/form-order-now.php${url ? url : ""}` }} theme="primary48" margin="0 auto 0 0" arrow />
+          <Paragraph bottomMargin="0">{text1 ? text1 : "No Contracts. No Surprises."}</Paragraph>
+          <Paragraph>{text2 ? text2 : "Only $0 + State Fee to Launch Your Business."}</Paragraph>
+          <Button content={{ text: `${textButton ? textButton : "Start Now"}`, url: `${process.env.ORDER_URL}/form-order-now.php${url ? url : ""}` }} theme="primary48" margin="0 auto 0 0" arrow />
         </Content>
       )}
     </Container>

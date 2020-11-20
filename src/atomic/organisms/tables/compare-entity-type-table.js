@@ -11,9 +11,18 @@ const Wrapper = styled.div`
   margin-bottom: 56px;
   padding-top: 64px;
 
+  @media (max-width: 576px) {
+    overflow: auto;
+  }
+
   .table-header,
   .table-row {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: fit-content;
+
+    @media (min-width: 540px) {
+      width: 100%;
+    }
 
     @media (min-width: 769px) {
       grid-template-columns: 1fr 120px 120px 120px 120px;

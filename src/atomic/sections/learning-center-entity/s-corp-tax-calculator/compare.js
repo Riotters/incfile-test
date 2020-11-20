@@ -18,7 +18,10 @@ import Button from "../../../molecules/buttons/button";
 
 const About = styled.section`
   position: relative;
-  padding-bottom: 120px;
+
+  @media (min-width: 769px) {
+    padding-bottom: 120px;
+  }
 
   p {
     color: ${color.grey2};
