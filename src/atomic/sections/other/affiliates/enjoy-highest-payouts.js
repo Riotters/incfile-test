@@ -6,7 +6,7 @@ import Oval from "../../../atoms/icons/oval";
 import OvalSVG2 from "../../../../images/ovals/affiliates-enjoy-highest-payouts-top-left.inline.svg";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import TextBoxed from "../../../molecules/static-check/circle-checkmark-text-boxed";
-import Button from "../../../../atomic/molecules/buttons/button";
+import ExternalLink from "../../../../atomic/molecules/buttons/external-link";
 import Curve from "../../../../atomic/atoms/icons/curve";
 import CurveSVG from "../../../../images/curves/bottom-left-top-right-reverse.inline.svg";
 import {color} from "../../../atoms/styles/colors";
@@ -35,9 +35,9 @@ const EnjoyHighestPayouts = ({ className, content }) => (
             <Paragraph big>{content.text}</Paragraph>
             <GridContainer>
                 {
-                    content.items.map((item) => {
+                    content.items.map((item, index) => {
                         return (
-                            <TextBoxed>
+                            <TextBoxed key={index}>
                                 <Paragraph bottomMargin={0}>{item.text}</Paragraph>
                             </TextBoxed>
                         );
@@ -48,7 +48,7 @@ const EnjoyHighestPayouts = ({ className, content }) => (
                 </Curve>
             </GridContainer>
 
-            <Button className="sign-up-btn" content={content.button} theme="primary56" arrow />
+            <ExternalLink className="sign-up-btn" content={content.button} theme="primary56" arrow />
         </ContentCenter>
     </Section>
 );

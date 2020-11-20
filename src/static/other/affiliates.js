@@ -7,7 +7,7 @@ export const top = {
     button: [
         {
             text: "Sign up now",
-            url: "/"
+            url: "https://www.shareasale.com/shareasale.cfm?merchantID=53954"
         }
     ]
 };
@@ -36,6 +36,6 @@ export const payouts = {
   ],
     button: {
       text: "Sign up now",
-        url: "/"
+        url: "https://www.shareasale.com/shareasale.cfm?merchantID=53954"
     }
 };
