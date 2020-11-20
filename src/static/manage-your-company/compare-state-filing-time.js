@@ -8,7 +8,7 @@ export const rocket = {
     button: {
         text: "Launch your business",
         url: `${process.env.ORDER_URL}/form-order-now.php`,
-    }
+    },
 };
 
 export const states = {
