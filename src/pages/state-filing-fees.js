@@ -8,7 +8,7 @@ import Layout from "../components/layout";
 import FeesTable from "../atomic/sections/state-filing-fees/fees-table";
 import IncludedInAll from "../atomic/sections/manage-your-company/home-page-v3/included-in-all-packages";
 import { content } from "../static/state-filing-fees";
-import Rocket from "../atomic/sections/state-filing-fees/rocket";
+import Rocket from "../atomic/sections/rocket";
 
 const StateFilingFees = () => (
   <Layout>
@@ -24,7 +24,7 @@ const StateFilingFees = () => (
 
     <FeesTable />
     {/* <IncludedInAll content={content.included} /> */}
-    <Rocket />
+    <Rocket text1="Launch Your Business Only $0 + State Fee." text2="Clear Pricing. No Contracts. No Surprises." textButton="See Detailed Pricing" />
   </Layout>
 );
 
