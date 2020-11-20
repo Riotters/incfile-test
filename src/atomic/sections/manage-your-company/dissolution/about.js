@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import parse from "html-react-parser";
 import ArrowLink from "../../../molecules/buttons/text";
 import { color } from "../../../atoms/styles/colors";
 import { Heading } from "../../../atoms/typography/heading";
@@ -21,23 +22,40 @@ const About = styled.section`
 `;
 
 const AboutSection = ({ className, content }) => (
-    <About className={className}>
-        <Oval className="oval" height="570" width="570" y="-40">
-            <OvalSVG />
-        </Oval>
-        <ImageContent image="dissolation">
-            <Paragraph big bottomMargin="32">{content.text}</Paragraph>
-            <ArrowLink bottomMargin="72" content={content.link} />
-            <Heading size={3} bottomMargin="24">{content.header}</Heading>
-            <Paragraph big bottomMargin="40">{content.text2}</Paragraph>
-            <IconTextColorBox color={color.babyblue3} Icon={IconSVG} content={content.box} bottomMargin="72" rounded curve/>
-            <Paragraph big bottomMargin="72">{content.text3}</Paragraph>
-            <Heading size={3} bottomMargin="24">{content.header2}</Heading>
-            <Paragraph big bottomMargin="40">{content.text4}</Paragraph>
-            <NumericList content={content.list} bottomMargin="48" />
-            <Paragraph big bottomMargin="0">{content.text5}</Paragraph>
-        </ImageContent>
-    </About>
-  );
-  
-  export default AboutSection;
+  <About className={className}>
+    <Oval className="oval" height="570" width="570" y="-40">
+      <OvalSVG />
+    </Oval>
+    <ImageContent image="dissolation">
+      <Paragraph big bottomMargin="32">
+        {content.text}
+      </Paragraph>
+      <Paragraph big mixed bottomMargin="72">
+        {parse(content.text6)}
+      </Paragraph>
+      {/* <ArrowLink bottomMargin="72" content={content.link} /> */}
+      <Heading size={3} bottomMargin="24">
+        {content.header}
+      </Heading>
+      <Paragraph big bottomMargin="40">
+        {content.text2}
+      </Paragraph>
+      <IconTextColorBox color={color.babyblue3} Icon={IconSVG} content={content.box} bottomMargin="72" rounded curve />
+      <Paragraph big bottomMargin="72">
+        {content.text3}
+      </Paragraph>
+      <Heading size={3} bottomMargin="24">
+        {content.header2}
+      </Heading>
+      <Paragraph big bottomMargin="40">
+        {content.text4}
+      </Paragraph>
+      <NumericList content={content.list} bottomMargin="48" />
+      <Paragraph big bottomMargin="0">
+        {content.text5}
+      </Paragraph>
+    </ImageContent>
+  </About>
+);
+
+export default AboutSection;

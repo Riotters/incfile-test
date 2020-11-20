@@ -9,7 +9,7 @@ import Categories from "../../../atomic/sections/learning-center-entity/help-cen
 import Service from "../../../atomic/sections/learning-center-entity/help-center/service";
 import Tools from "../../../atomic/sections/learning-center-entity/help-center-article/tools";
 import Rocket from "../../../atomic/sections/review-entity-types/c-corporation/rocket";
-import Searchbar from "../../../atomic/molecules/form/searchbar";
+import Searchbar from "../../../atomic/molecules/form/help-center-searchbar";
 //Texts
 import { top, rocket, categories, service, tools } from "../../../static/learning-center-entity/help-center-article";
 import { about, related } from "../../../static/research-topics/llc-info/customized-corp-llc-kit";
