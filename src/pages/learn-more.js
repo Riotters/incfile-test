@@ -18,9 +18,9 @@ const LearnMore = () => (
     <Top ovalColor="purple-2" imageName="research-tools" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
       <h1>Everything about forming a business at your fingertips.</h1>
       <p>Learn about the LLC (Limited Liability Company) and Corporation are filed as well as other reporting and compliance requirements</p>
-      <ButtonsBox>
-        <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{ text: `Read FAQ`, url: `/` }} />
-      </ButtonsBox>
+      {/*<ButtonsBox>*/}
+        {/*<Button theme="primary56" marginMD="0 24px 0 0" arrow content={{ text: `Read FAQ`, url: `/` }} />*/}
+      {/*</ButtonsBox>*/}
     </Top>
 
     <Resources />

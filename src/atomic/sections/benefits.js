@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   padding-top: 50px;
   position: relative;
   ${(props) => props.bgImage && `background-image: ${props.bgImage};`}
-
+  
   @media (min-width: 769px) {
     padding-top: 105px;
   }

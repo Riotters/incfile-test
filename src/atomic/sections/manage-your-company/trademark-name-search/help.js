@@ -12,8 +12,13 @@ import CheckBlueSVG from "../../../../images/circle-status-check-blue.inline.svg
 
 const Help = styled.section`
   position: relative;
-  padding-top: 100px;
-  padding-bottom: 144px;
+  padding-top: 50px;
+  padding-bottom: 70px;
+  
+  @media (min-width: 576px) {
+      padding-top: 100px;
+      padding-bottom: 144px;
+  }
 
     &::before {
         content: '';

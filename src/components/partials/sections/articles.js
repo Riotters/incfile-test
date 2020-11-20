@@ -187,30 +187,30 @@ const Articles = ({ oval }) => (
           </Carousel>
         </CarouselWrapper>
         <MobileWrapper>
-          <Article>
+          <Article img="bike">
             Here’s Seven Tips to Steer You in the Right Direction.
           </Article>
-          <Article>How to Balance Owning Multiple Businesses.</Article>
-          <Article>
+          <Article img="baloons">How to Balance Owning Multiple Businesses.</Article>
+          <Article img="newspaper">
             Here’s Seven Tips to Steer You in the Right Direction.
           </Article>
-          <Article>How to Balance Owning Multiple Businesses.</Article>
-          <Article>
+          <Article img="bike">How to Balance Owning Multiple Businesses.</Article>
+          <Article img="newspaper">
             Here’s Seven Tips to Steer You in the Right Direction.
           </Article>
-          <Article>How to Balance Owning Multiple Businesses.</Article>
-          <Article>
+          <Article img="baloons">How to Balance Owning Multiple Businesses.</Article>
+          <Article img="bike">
             Here’s Seven Tips to Steer You in the Right Direction.
           </Article>
-          <Article>How to Balance Owning Multiple Businesses.</Article>
-          <Article>
+          <Article img="baloons">How to Balance Owning Multiple Businesses.</Article>
+          <Article img="newspaper">
             Here’s Seven Tips to Steer You in the Right Direction.
           </Article>
-          <Article>How to Balance Owning Multiple Businesses.</Article>
-          <Article>
+          <Article img="bike">How to Balance Owning Multiple Businesses.</Article>
+          <Article img="newspaper">
             Here’s Seven Tips to Steer You in the Right Direction.
           </Article>
-          <Article>How to Balance Owning Multiple Businesses.</Article>
+          <Article img="baloons">How to Balance Owning Multiple Businesses.</Article>
         </MobileWrapper>
       </Content>
     </Container>

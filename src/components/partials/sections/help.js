@@ -7,9 +7,13 @@ import OvalSVG from "../../../images/ovals/top-right-orange3-to-transparent.inli
 import { color } from "../../styles/colors";
 
 const Wrapper = styled.div`
-  padding: 100px 0;
+  padding: 60px 0;
   position: relative;
   background-color: #fffcf9;
+  
+  @media (min-width: 576px) {
+    padding: 100px 0;
+  }
 `;
 
 const Iconbox = styled.div`
