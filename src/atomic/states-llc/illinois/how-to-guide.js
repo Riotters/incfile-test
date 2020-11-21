@@ -28,7 +28,7 @@ import BgBoxPersonalOA from "../../../images/icons/states/personal-oa.inline.png
 import BgBoxHandlePaperWorks from "../../../images/icons/states/handle-paperwork.inline.png";
 import BgBoxBusinessNameSearchTool from "../../../images/icons/states/business-name-search-tool.inline.png";
 import AnnualReportFilingBox from "../annual-report-and-filing-box";
-
+import { replaceStr } from "../../../helpers/utils";
 const Wrapper = styled.div``;
 
 const ListFlex = styled.div`
@@ -63,22 +63,6 @@ const BoxButtonLinks = styled.div`
   .article-link:not(:last-child) {
     display: block;
     margin-bottom: 8px;
-  }
-`;
-
-const WhiteBoxColumn = styled(Whitebox)`
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: 576px) {
-    flex-direction: row;
-  }
-
-  p {
-    &:first-child {
-      font-weight: bold;
-      min-width: 50%;
-    }
   }
 `;
 
@@ -238,7 +222,7 @@ const HowToGuide = ({ content, data }) => {
         <IconListColorBox color={color.blue3} content={content.mainSteps.step4.lists} rounded />
         <Button content={content.mainSteps.step4.dowload_205_button} theme="secondary56" arrow margin="16px 0 0 0" marginMD="42px 0 42px 0" />
         <Paragraph big mixed={true}>
-          {parse(content.mainSteps.step4.text2)}
+          { parse(replaceStr(data.prices?.statefee, `[STATE_FEE]`, content.mainSteps.step4.text2))  }
         </Paragraph>
 
         <RelativeElement margin="40px 0">

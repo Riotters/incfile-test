@@ -4,7 +4,6 @@ import SEO from "../../components/seo";
 import styled from "styled-components";
 
 // Components
-import { color } from "../../components/styles/colors";
 import LinearBgHeader from "../../atomic/states-llc/linear-bg-header";
 import HomeHeader from "../../atomic/states-llc/home-header";
 import WrapperContent from "../../atomic/states-llc/wrapper-content";
@@ -15,7 +14,7 @@ import HowToGuide from "../../atomic/states-llc/illinois/how-to-guide";
 
 // Content
 import { HomePageContent } from "../../static/states-llc/illinois/home";
-import { tabPages, rocket } from "../../static/states-llc/illinois/general";
+import { tabPages } from "../../static/states-llc/illinois/general";
 
 import { getFullPricesAndFilings } from '../../api/Api';
 
