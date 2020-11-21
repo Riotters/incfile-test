@@ -362,7 +362,7 @@ export const filingFeeAndRequirementContent = {
       content: {
         title: `Incfile can obtain a certificate of good standing on your behalf.`,
         button: {
-          text: `Incfile’s Texas Certificate `,
+          text: `Incfile’s Texas Certificate Of Good Standing Service`,
           url: `/manage-your-company/certificate-of-good-standing/`,
         },
       },

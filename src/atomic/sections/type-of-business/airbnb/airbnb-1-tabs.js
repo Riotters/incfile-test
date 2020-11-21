@@ -317,7 +317,7 @@ const AirBnb1Tabs = ({ layout, columns }) => (
                     <Heading size={3}>Starting an Airbnb Business</Heading>
                     <Paragraph big>The concept of renting out space through Airbnb is relatively straightforward, but setting yourself up for success requires a little more work.</Paragraph>
                     <Paragraph big style={{ marginBottom: "50px" }}>
-                      We don’t think that creating an Airbnb business needs to be daunting, and we’re here to help. We’ve supported over 500,000 people to form a business and provided answers, guidance and support to transform them into entrepreneurs. We’ll guide you through what you need to know to
+                      We don’t think that creating an Airbnb business needs to be daunting, and we’re here to help. We’ve supported over 250,000 people to form a business and provided answers, guidance and support to transform them into entrepreneurs. We’ll guide you through what you need to know to
                       start your Airbnb venture and get it off the ground.
                     </Paragraph>
                     <Heading size={3}>Airbnb Business formation guide</Heading>

@@ -50,7 +50,7 @@ export const agentPageContent = {
     // Rules for agents
     {
       type: `heading`,
-      size: 3,
+      size: 2,
       content: `Rules for Georgia Registered Agents`,
     },
     {

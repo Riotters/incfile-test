@@ -319,7 +319,7 @@ export const filingFeeAndRequirementContent = {
     },
     {
       type: `paragraph`,
-      content: `our business formation documents state certain facts about your Florida business when it was originally formed. Over time, these facts might change — if they do, you need to file a “Certificate of Amendment” with the Florida Department of State. You can do this yourself or have Incfile complete the filing on your behalf.`,
+      content: `Your business formation documents state certain facts about your Florida business when it was originally formed. Over time, these facts might change — if they do, you need to file a “Certificate of Amendment” with the Florida Department of State. You can do this yourself or have Incfile complete the filing on your behalf.`,
     },
     {
       type: `iconListColorBox`,
@@ -358,7 +358,7 @@ export const filingFeeAndRequirementContent = {
       content: {
         title: `Incfile can obtain a certificate of good standing on your behalf.`,
         button: {
-          text: `Incfile’s Florida Certificate `,
+          text: `Incfile’s Florida Certificate Of Good Standing Service`,
           url: `/manage-your-company/certificate-of-good-standing/`,
         },
       },

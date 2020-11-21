@@ -95,7 +95,7 @@ export const HomePageContent = {
             url: `/new-york-llc/registered-agents-new-york-llc/`,
           },
           {
-            header: `Get A Free Registered Agent Whe You Incorporate With Incfile`,
+            header: `Get A Free Registered Agent When You Incorporate With Incfile`,
             url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=NY`,
           },
         ],
@@ -153,12 +153,12 @@ export const HomePageContent = {
         text1: `An operating agreement is a kind of “instruction manual” that outlines how you will run your business. It includes how decisions are made, how the business is divided amongst members, and what happens if a member leaves the company.`,
         text2: `New York requires that LLCs have an Operating Agreement in place. This does not need to be filed with the Division of Corporations but should be kept on hand.`,
         button1: {
-          text: `Learn More About Operating Agreemets Here`,
+          text: `Learn More About Operating Agreements Here`,
           url: `/blog/post/operating-agreement-llc/`,
         },
         cta: {
           title: `Receive a personalized <br>operating agreement`,
-          subtitle: `when you select Incfle’s Gold package`,
+          subtitle: `when you select Incfile’s Gold package`,
           button: {
             text: `Form Your LLC Now`,
             url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=NY`,

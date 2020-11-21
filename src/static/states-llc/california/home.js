@@ -92,7 +92,7 @@ export const HomePageContent = {
               url: `/california-llc/registered-agents-california-llc/`,
             },
             {
-              header: `Get A Free Registered Agent Whe You Incorporate With Incfile`,
+              header: `Get A Free Registered Agent When You Incorporate With Incfile`,
               url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=CA`,
             },
           ],
@@ -146,12 +146,12 @@ export const HomePageContent = {
           text1: `An operating agreement is a kind of “instruction manual” that outlines how you will run your business. It includes how decisions are made, how the business is divided amongst members, and what happens if a member leaves the company.`,
           text2: `California requires that LLCs have an operating agreement in place. This does not need to be filed with the Secretary of State but should be kept on hand.`,
           button1: {
-            text: `Learn More About Operating Agreemets Here`,
+            text: `Learn More About Operating Agreements Here`,
             url: `/blog/post/operating-agreement-llc/`,
           },
           cta: {
-            title: `Receive a personalized operating agreement`,
-            subtitle: `when you select Incfle’s Gold package`,
+            title: `Receive a personalized <br>operating agreement`,
+            subtitle: `when you select Incfile’s Gold package`,
             button: {
               text: `Form Your LLC Now`,
               url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=CA`,

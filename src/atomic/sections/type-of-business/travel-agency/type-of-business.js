@@ -21,8 +21,8 @@ const TypeOfBusiness = () => (
             <OvalSvg/>
         </Oval2>
 
-        <TextCenterLayout headlineWidth={770} textWidth={770} headline="What Type of Daycare Should You Start?"
-                          text="There are several different types of daycare business that you can start. You will also want to decide if you want to be a work-from-home travel agent, or if you have other options for where to locate your business."/>
+        <TextCenterLayout headlineWidth={770} textWidth={770} headline="What Type of Travel Agency Business Should You Start?"
+                          text="If you want to start a successful travel agency business, it’s important to know what your options are. Here are some of the more popular business ideas:"/>
 
 
         <Service>

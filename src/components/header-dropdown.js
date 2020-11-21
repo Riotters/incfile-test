@@ -410,7 +410,7 @@ const Header = ({ siteTitle }) => {
                     <MenuLink to="/what-is-c-corporation/">C Corporation</MenuLink>
                   </MenuItem>
                   <MenuItem>
-                    <MenuLink to="/what-is-non-profit-corporation/">Non-profit</MenuLink>
+                    <MenuLink to="/what-is-non-profit-corporation/">Nonprofit</MenuLink>
                   </MenuItem>
                 </SubmenuColumn>
               </DropdownMenu>

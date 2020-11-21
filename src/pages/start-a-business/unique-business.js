@@ -60,12 +60,15 @@ const UniqueBusiness = () => (
             The question is, just where do you start? How do you find a unique business idea, test it out and bring it to life?
           </Paragraph>
           <Paragraph bottomMargin={0}>
-            We can help. Since 2004, we’ve helped over 500,000 people like you become entrepreneurs, starting exciting businesses and bringing their ideas to life. We’ll give you the support, guidance and advice you need to create a unique business and make it into a success.
+            We can help. Since 2004, we’ve helped over 250,000 people like you become entrepreneurs, starting exciting businesses and bringing their ideas to life. We’ll give you the support, guidance and advice you need to create a unique business and make it into a success.
           </Paragraph>
         </Colorbox>
 
         <Paragraph big style={{ marginTop: "48px" }}>
-          You’ll be creating products or services that people can’t easily get elsewhere, and you’ll be able to identify your target market and build up your marketing and reputation with them.
+            To get you off on the right foot, here’s our simple guide to starting up a successful unique business. From highlighting important facts to validating your ideas, and from choosing the right structure to managing and running your business, you’ll find the answers you need. 
+        </Paragraph>
+        <Paragraph big>
+            Read on for some insight into creating your own unique business and becoming an entrepreneur.
         </Paragraph>
       </ImageContent>
     </SimpleContainer>

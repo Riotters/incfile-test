@@ -18,8 +18,8 @@ const TypeBusiness = () => (
         </Oval>
 
         <TextCenterLayout headlineWidth={770} textWidth={770}
-                          headline="What Type of Fitness-Based Business Should You Start?"
-                          text="There are lots of different options for the type of fitness business you can start. We’ve provided several suggestions below."/>
+                          headline="Unique Small Business Ideas — Finding the Right Type of Business"
+                          text="<p>A unique business needs a unique idea. Starting a truly one-of-a-kind business may be a stretch, as the chances are someone has already done something similar. But you can certainly find niches that are not too saturated, and then create a unique model to serve them.</p></br><p>We recommend basing your business around skills, talents, training or interests you already have. That way you won’t need to learn something new at the same time as starting up a business. This is a multi-step process as you:</p>"/>
 
         <Container>
             <Service>
@@ -94,7 +94,7 @@ const TypeBusiness = () => (
                     <AdventagesWithLongText
                         style={{textAlign: "left"}}
                         circleText={4}
-                        title="Think About Your Main Skills"
+                        title="Combine Your Most Important Skills and Interests to Create Unique Business Ideas"
                         circlePosition="center"
                         circleBackgroundColor={color.blue1}
                         circleBackgroundShadow={shadow.blue1}
@@ -102,14 +102,10 @@ const TypeBusiness = () => (
                         width="100%"
                     >
                         <Paragraph>
-                            The most successful businesses happen because the founder has a great idea that they care
-                            about. Even if you’re awesome at Excel spreadsheets, you’re not going to be able to sustain
-                            a business doing data analysis if they don’t interest you.
+                            Once you have some prioritized skills and interests, combine them with each other to see if you have an idea for a business.
                         </Paragraph>
                         <Paragraph>
-                            Go through each of your skills and interests and prioritize them — how good are you at this
-                            particular area? Could you see yourself doing it as a business? Are you enthusiastic about
-                            it?
+                        For example, say you’ve listed nonfiction writing and programming as skills, along with veganism, classic cars and fitness as interests. You’d take each of those and combine them to create a list of business ideas:
                         </Paragraph>
                         <Paragraph mixed={true}>
                             <ul style={{paddingLeft: "20px"}}>
@@ -124,9 +120,7 @@ const TypeBusiness = () => (
                         </Paragraph>
 
                         <Paragraph>
-                            You can continue to expand into your other skill and interest areas too. Once you have a
-                            collection of ideas, it’s time to start validating them to see if they would work as a
-                            business.
+                            You can continue to expand into your other skill and interest areas too — such as starting a moving company based on your skills with helping friends move or starting a record company based on your love of music.
                         </Paragraph>
 
                     </AdventagesWithLongText>
