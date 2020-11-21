@@ -24,7 +24,7 @@ export const tools = {
     },
     {
       header: `State Filing Times`,
-      url: `/state-filings-times/`,
+      url: `/state-filing-times/`,
     },
   ],
 };

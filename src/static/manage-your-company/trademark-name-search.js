@@ -57,7 +57,7 @@ export const faq = {
       },
       {
         question: `What level of support can I expect through this process?`,
-        answer: `Once you have submitted your business name or logo, an attorney will conduct the initial search and discuss the results via email or phone. 
+        answer: `Once you have submitted your business name or <a href='https://www.squadhelp.com/LogoDesignContests' rel="nofollow">logo</a>, an attorney will conduct the initial search and discuss the results via email or phone. 
                     The attorney will then prepare the filing application and submit to the United States Patent and Trademark Office. You will be able to track the approval status and contact us with any questions you may have while awaiting for the approval.`,
       },
       {

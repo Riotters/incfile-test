@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <g>
+                            <g>
+                                <path fill="#FFF" d="M19.836 6.003v20.215c.014 1.34-.813 2.561-2.105 3.11-.459.2-.957.301-1.462.3H4.403c-.951-.002-1.863-.363-2.532-1.003-.67-.64-1.042-1.507-1.035-2.407V6.003c.001-.465.106-.924.308-1.348.557-1.234 1.841-2.032 3.26-2.027h11.865c1.968.005 3.562 1.513 3.567 3.375z" transform="translate(-879 -989) translate(0 602) translate(855 363) translate(24 24) translate(4.5)"/>
+                                <path stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M22.164 4.015V25.93c.015 1.453-.913 2.777-2.363 3.372-.515.216-1.075.327-1.641.325H4.84c-1.068-.002-2.091-.394-2.843-1.088-.751-.694-1.169-1.633-1.16-2.61V4.016c0-.504.118-1.002.344-1.462C1.807 1.215 3.248.35 4.841.355H18.16c2.209.006 3.998 1.64 4.004 3.66z" transform="translate(-879 -989) translate(0 602) translate(855 363) translate(24 24) translate(4.5)"/>
+                            </g>
+                            <g stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4">
+                                <path d="M-2.091 4.663L6.105 4.663" transform="translate(-879 -989) translate(0 602) translate(855 363) translate(24 24) translate(4.5) translate(8.364 5.227) rotate(90 2.007 4.663)"/>
+                                <path d="M.624 8.886L6.502 8.886M.624.523L3.366.523" transform="translate(-879 -989) translate(0 602) translate(855 363) translate(24 24) translate(4.5) translate(8.364 5.227)"/>
+                                <path d="M5.731 8.094h1.585" transform="translate(-879 -989) translate(0 602) translate(855 363) translate(24 24) translate(4.5) translate(8.364 5.227) rotate(90 6.523 8.094)"/>
+                            </g>
+                            <path fill="#E0F1FA" d="M14.636 25.091H17.772V30.318H14.636z" transform="translate(-879 -989) translate(0 602) translate(855 363) translate(24 24) translate(4.5)"/>
+                            <path stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M14.636 27.136L14.636 28.073 14.636 27.793 14.636 30.769 14.636 31.068 15.383 30.355 16.31 29.473 16.702 29.902 17.773 31.06 17.773 27.609 17.773 27.386 17.773 28.849M19.479 22.217c.17.03.31.157.363.33.052.171.009.36-.114.487l-.204.208-.103.1-1.118 1.146.07.435.275 1.674c.034.175-.033.354-.172.457-.138.103-.322.11-.468.019l-1.438-.79-.371-.208-1.771.971c-.152.073-.33.054-.463-.051-.134-.105-.201-.278-.177-.451l.34-2.056-1.28-1.286-.166-.174c-.123-.126-.167-.315-.115-.486.053-.172.194-.298.365-.325l1.918-.294h.038l.819-1.628.102-.214c.077-.161.234-.263.406-.263.172 0 .329.102.406.263l.882 1.868 1.976.268zM4.182 19.864L8.552 19.864M4.182 24.045L6.367 24.045" transform="translate(-879 -989) translate(0 602) translate(855 363) translate(24 24) translate(4.5)"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -15,6 +15,10 @@ export default FilingRequirementBox;
 const Filing = styled.div`
     width: 100%;
     margin: ${props => props.margin ? props.margin : '52px 0 42px 0'};
+    
+    p:nth-child(4) > strong {
+        padding-right: 10px;
+    }
 
     h3, h4{
         font-family: Avenir;
@@ -42,5 +46,9 @@ const Filing = styled.div`
             margin-bottom: 0px;
             min-width: 150px;
         }
+    }
+    
+    .full-width {
+        margin-top: 20px;
     }
 `

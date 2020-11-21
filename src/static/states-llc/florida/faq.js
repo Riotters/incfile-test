@@ -198,7 +198,7 @@ export const faqContent = {
     {
       type: `paragraph`,
       content: `You are not required to have an Operating Agreement for a Florida LLC. We do recommend
-                <a href="/research-topics/llc-info/the-llc-operating-agreement/">creating an Operating Agreement anyway,</a>
+                <a href="/research-topics/llc-info/llc-operating-agreement/">creating an Operating Agreement anyway,</a>
                 as this agreement will specify how the business is run, how profits will be split, the ways that members will interact and other important factors.`,
     },
     {

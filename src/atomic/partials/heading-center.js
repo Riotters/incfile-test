@@ -4,6 +4,7 @@ import parse from "html-react-parser";
 import ArrowLink from "../molecules/buttons/text";
 import VisibilitySensor from "../../components/VisibilitySensor";
 import ContentCenter from "./content-center";
+import Button from "../molecules/buttons/button";
 
 const Wrapper = styled.div`
   position: relative;
@@ -33,7 +34,7 @@ const Wrapper = styled.div`
   }
 `;
 
-const TextCenterLayout = ({ className, headline, headlineWidth, text, textWidth, linkText, linkUrl, linkOnClick, bottomMargin, bottomMarginMD, bottomMarginLG }) => {
+const TextCenterLayout = ({ className, headline, headlineWidth, text, textWidth, linkText, linkUrl, linkOnClick, bottomMargin, bottomMarginMD, bottomMarginLG, useButton = false }) => {
   const content = {
     text: linkText,
     url: linkUrl,
@@ -52,11 +53,16 @@ const TextCenterLayout = ({ className, headline, headlineWidth, text, textWidth,
             {({ isVisible }) => <p className={isVisible ? "slideUp enter" : "slideUp"}>{parse(text)}</p>}
           </VisibilitySensor>
         )}
-        {linkText && (
+        {linkText && !useButton && (
           <VisibilitySensor partialVisibility once>
             {({ isVisible }) => <ArrowLink content={content} className={isVisible ? "slideUp enter" : "slideUp"} onClick={linkOnClick} />}
           </VisibilitySensor>
         )}
+          {linkText && useButton && (
+              <VisibilitySensor partialVisibility once>
+                  {({ isVisible }) => <Button content={content} className={isVisible ? "slideUp enter" : "slideUp"} onClick={linkOnClick} arrow theme="primary56" />}
+              </VisibilitySensor>
+          )}
       </ContentCenter>
     </Wrapper>
   );

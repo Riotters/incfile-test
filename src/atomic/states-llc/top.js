@@ -61,15 +61,22 @@ const Wrapper = styled.div`
     display: flex;
     align-items: center;
     position: relative;
+    padding-top: 100px;
+    overflow-x: hidden;
 `;
 
 const IconMap = styled.div`
+    display: none;
     width: 550px;
     position: absolute;
     top: 100px;
     right: 75px;
     z-index: -1;
     transform: scale(.9);
+    
+    @media (min-width: 992px) {
+      display: block;
+    }
 
     &::after {
         content: "";
@@ -94,11 +101,13 @@ const TextContainer = styled.div`
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding-top: 230px;
+    order: 2;
 
     @media (min-width: 992px) {
         width: 60%;
+        padding-top: 230px;
         align-items: flex-start;
+        order: 1;
     }
 
     h1 {
@@ -128,17 +137,23 @@ const TextContainer = styled.div`
 `;
 
 const ImageContainer = styled.div`
-    display: none;
-    width: 70%;
     max-width: 950px;
-    position: absolute;
-    top: 5%;
-    right: -20%;
-    -ms-transform: translate(-12%,0);
-    transform: translate(0,0);
+    width: 100%;
+    order: 1;
+
+    @media (max-width: 991px) {
+      transform: translateX(30px);
+    }
 
     @media (min-width: 992px) {
+        width: 70%;
+        position: absolute;
+        top: 5%;
+        right: -20%;
+        -ms-transform: translate(-12%,0);
+        transform: translate(0,0);
         display: flex;
+        order: 2;
     }
 
     @media screen and (min-width: 1550px) {
@@ -160,9 +175,9 @@ const arrayMap = {
 
 const Top = ({ children, imageName, imageAlt, headlineWidth, imageWidthLG, imageOffsetRightLG, stateName }) => (
     <Wrapper>
-        <IconMap>
-            {arrayMap[stateName]}
-        </IconMap>
+        {/*<IconMap>*/}
+            {/*{arrayMap[stateName]}*/}
+        {/*</IconMap>*/}
     
     <Container>
       <Content>

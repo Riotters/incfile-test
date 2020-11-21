@@ -14,7 +14,6 @@ import RatingBlock from "../../../molecules/blocks/rating-block";
 
 const Industry = styled.section`
   position: relative;
-  padding-top: 104px;
   padding-bottom: 120px;
 `;
 
@@ -23,7 +22,7 @@ const IndustrySection = ({ className, content }) => (
     <Oval className="oval" height="720" width="720" top="0" right="0">
       <OvalSVG />
     </Oval>
-    <HeadingCenter headline={content.header} headlineWidth="700" bottomMargin="80" />
+    <HeadingCenter headline={content.header} headlineWidth="700" bottomMargin="40" />
     <ContentCenter contentWidth="770">
       <Paragraph big bottomMargin="64">
         {content.text}
