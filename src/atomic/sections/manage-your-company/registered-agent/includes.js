@@ -30,7 +30,7 @@ const OfferingSection = ({ className, content }) => (
     <ContentCenter>
       <Adventages content={content.cards} />
     </ContentCenter>
-    <HeadingCenter headline={content.header2} headlineWidth="640" text={content.text} textWidth="770" linkText={content.link.text} linkUrl={content.link.url} />
+    <HeadingCenter headline={content.header2} headlineWidth="640" text={content.text} textWidth="770" linkText={content.button.text} linkUrl={content.button.url} useButton={true} />
   </Offering>
 );
 

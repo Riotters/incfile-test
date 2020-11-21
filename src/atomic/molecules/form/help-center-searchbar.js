@@ -65,7 +65,7 @@ const Box = styled.div`
       }
 
       &--open {
-        max-height: 300px;
+        max-height: 240px;
         overflow-y: auto;
       }
     }
@@ -189,7 +189,7 @@ class Searchbar extends React.Component {
     const { value, suggestions } = this.state;
 
     const inputProps = {
-      placeholder: "",
+      placeholder: "Have a question? Ask or enter search term here.",
       value,
       onChange: this.onChange,
     };

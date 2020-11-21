@@ -20,7 +20,7 @@ const Video = () => (
       <OvalSvg2 />
     </Oval>
     <HeadingCenter headline="See how easy it can be to get your business incorporated" textWidth="590" text="Take a moment to view our instructional video." bottomMargin="48" bottomMarginLG="80" />
-    <ContentCenter style={{ marginBottom: "149px" }}>
+    <ContentCenter className="content">
       <Curve bottom="150" left="-160" color="#ede0fa">
         <Curve2SVG />
       </Curve>
@@ -32,6 +32,14 @@ const Video = () => (
 const Wrapper = styled.div`
   margin-top: 160px;
   position: relative;
+  
+  .content {
+    margin-bottom: 70px;
+  
+    @media (min-width: 576px) {
+       margin-bottom: 149px;
+    } 
+  }
 `;
 
 export default Video;

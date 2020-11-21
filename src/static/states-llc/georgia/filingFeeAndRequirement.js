@@ -378,7 +378,7 @@ export const filingFeeAndRequirementContent = {
       content: {
         title: `Incfile can obtain a certificate of good standing on your behalf.`,
         button: {
-          text: `Get a certificate of good standing in Georgia `,
+          text: `Get A Certificate Of Good Standing in Georgia `,
           url: `/manage-your-company/certificate-of-good-standing/`,
         },
       },

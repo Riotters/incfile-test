@@ -17,8 +17,8 @@ const Taxes = () => (
         </OvalBottom>
 
         <Service>
-            <TextCenterLayout headlineWidth={770} textWidth={770} headline="Maintaining Your Daycare Business"
-                              text="There are certain forms and legalities you need to follow to keep your daycare business in good standing."/>
+            <TextCenterLayout headlineWidth={770} textWidth={770} headline="Maintaining Your Travel Agency Business"
+                              text="There are certain forms and legalities you need to follow to keep your travel agency in good standing."/>
 
             <Container>
                 <AdventagesBox>

@@ -29,10 +29,20 @@ const Subscription = styled.form`
 
 const Flex = styled.div`
   display: flex;
+  flex-direction: column;
 
   .subscription-input {
     flex-grow: 1;
-    margin-right: 30px;
+    margin-bottom: 15px;
+    
+    @media (min-width: 768px) {
+        margin-right: 30px;
+        margin-bottom: 0;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    flex-direction:row;
   }
 `;
 

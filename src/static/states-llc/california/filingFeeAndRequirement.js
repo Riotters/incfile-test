@@ -137,7 +137,7 @@ export const filingFeeAndRequirementContent = {
     {
       type: `heading`,
       size: 2,
-      content: `Annual Report Requirements for California`,
+      content: `Annual Reporting and Fees for California LLCs`,
     },
     {
       type: `paragraph`,
@@ -367,7 +367,7 @@ export const filingFeeAndRequirementContent = {
       content: {
         title: `Incfile can obtain a certificate of good standing on your behalf.`,
         button: {
-          text: `Incfile’s California Certificate `,
+          text: `Incfile’s California Certificate Of Good Standing Service`,
           url: `/manage-your-company/certificate-of-good-standing/`,
         },
       },

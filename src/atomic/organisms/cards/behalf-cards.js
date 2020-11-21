@@ -14,7 +14,7 @@ const Wrapper = styled.div`
 
     @media (min-width: 769px) {
       grid-template-columns: 1fr 1fr;
-      padding: 140px 0;
+      padding: 70px 0 90px;
     }
 `
 

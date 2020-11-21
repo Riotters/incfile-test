@@ -15,8 +15,8 @@ const Tools = styled.section`
   background-image: linear-gradient(${(props) => (props.bgLinear ? props.bgLinear : "")});
 `;
 
-const colors = [color.green3, color.red3, color.red3, color.yellow3, color.babyblue3, color.orange3]
-const icons = ["corporation-state-information", "s-corp-tax-calculator-01", "entity-comparison-chart", "state-filling-fees", "ongoing-filling-requirements-02", "clock-691"]
+const colors = [color.green3, color.red3, color.red3, color.yellow3, color.babyblue3, color.orange3, color.blue3];
+const icons = ["corporation-state-information", "s-corp-tax-calculator-01", "entity-comparison-chart", "state-filling-fees", "ongoing-filling-requirements-02", "clock-691", "blue-usa-3865"];
 
 const ToolsSection = ({ className, content, bgLinear }) => (
     <Tools className={className} bgLinear={bgLinear}>

@@ -6,8 +6,13 @@ import ArrowLink from "../../../molecules/buttons/text"
 
 const Cta = styled.section`
   position: relative;
-  padding-top: 100px;
-  padding-bottom: 144px;
+  padding-top: 20px;
+  padding-bottom: 0;
+  
+  @media (min-width: 576px) {
+      padding-top: 100px;
+      padding-bottom: 144px;
+  }
 `;
 
 const CtaSection = ({ className, content }) => (

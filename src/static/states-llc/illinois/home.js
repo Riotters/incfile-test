@@ -89,7 +89,7 @@ export const HomePageContent = {
             url: `/illinois-llc/registered-agents-Illinois-llc/`,
           },
           {
-            header: `Get A Free Registered Agent Whe You Incorporate With Incfile`,
+            header: `Get A Free Registered Agent When You Incorporate With Incfile`,
             url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=IL`,
           },
         ],
@@ -143,12 +143,12 @@ export const HomePageContent = {
         text1: `An Operating Agreement is a kind of “instruction manual” that outlines how you will run your business. It includes how decisions are made, how the business is divided amongst members and what happens if a member leaves the company.`,
         text2: `Many states require that a company have an Operating Agreement in place — it isn’t legally required in Illinois, but it’s a good idea to have one nonetheless.`,
         button1: {
-          text: `Learn More About Operating Agreemets Here`,
+          text: `Learn More About Operating Agreements Here`,
           url: `/blog/post/operating-agreement-llc/`,
         },
         cta: {
-          title: `Receive a personalized operating agreement`,
-          subtitle: `when you select Incfle’s Gold package`,
+          title: `Receive a personalized <br>operating agreement`,
+          subtitle: `when you select Incfile’s Gold package`,
           button: {
             text: `Form Your LLC Now`,
             url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=IL`,

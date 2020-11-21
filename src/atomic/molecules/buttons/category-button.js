@@ -6,18 +6,18 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 
 const TabTitle = ({content, arrow, icon}) => (
-    <ButtonBox to={content.url}>
+    <ButtonBox>
         <Icon>
             {icon}
         </Icon>
         <Content>
             <span>{content.header}</span>
 
-            {arrow &&
-                <Arrow className="tabArrow">
-                    <ArrowSVG/>
-                </Arrow>
-            }
+            {/*{arrow &&*/}
+                {/*<Arrow className="tabArrow">*/}
+                    {/*<ArrowSVG/>*/}
+                {/*</Arrow>*/}
+            {/*}*/}
         </Content>
     </ButtonBox>
 );
@@ -70,23 +70,23 @@ const Content = styled.div`
     }
   }
 
-  .tabArrow {
-    opacity: 0;
-    transform: translateX(-3px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-
-    svg {
-      path {
-        fill: #1d1d1d;
-      }
-    }
-  }
+  // .tabArrow {
+  //   opacity: 0;
+  //   transform: translateX(-3px);
+  //   transition: opacity 0.3s ease, transform 0.3s ease;
+  //
+  //   svg {
+  //     path {
+  //       fill: #1d1d1d;
+  //     }
+  //   }
+  // }
 
   &:hover {
-    .tabArrow {
-      opacity: 1;
-      transform: translateX(0);
-    }
+    // .tabArrow {
+    //   opacity: 1;
+    //   transform: translateX(0);
+    // }
   }
 `
 
@@ -106,7 +106,7 @@ const Arrow = styled.div`
   }
 `
 
-const ButtonBox = styled(Link)`
+const ButtonBox = styled.div`
   height: 78px;
   line-height: 78px;
   color: #4e4e4e;
@@ -114,7 +114,7 @@ const ButtonBox = styled(Link)`
   transition: box-shadow 0.3s ease;
   box-shadow: 0 20px 30px 0 #e6e6e6;
   display: flex;
-  cursor: pointer;
+  // cursor: pointer;
   position: relative;
   border-radius: 5px;
   overflow: hidden;
@@ -127,9 +127,9 @@ const ButtonBox = styled(Link)`
     font-weight: 600;
     z-index: 1;
 
-    .tabArrow {
-      opacity: 1;
-      transform: translateX(0);
-    }
+    // .tabArrow {
+    //   opacity: 1;
+    //   transform: translateX(0);
+    // }
   }
 `
