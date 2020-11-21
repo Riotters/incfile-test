@@ -9,6 +9,7 @@ import { Paragraph } from "../../atoms/typography/paragraph";
 import { color } from "../../atoms/styles/colors";
 import ArrowLink from "../../molecules/buttons/text";
 import ArrowSVG from "../../../images/arrow.inline.svg";
+import { shadow } from "../../atoms/styles/shadows";
 
 const Wrapper = styled(Link)`
   .box {
@@ -17,6 +18,17 @@ const Wrapper = styled(Link)`
     align-items: ${(props) => (props.ellipsis || props.icon ? "center" : "")};
     border-radius: ${(props) => (props.icon ? "20px" : "")};
     padding: ${(props) => (props.icon ? "16px 24px 16px 16px" : "24px 24px 24px 40px")};
+    transition: box-shadow 0.3s ease;
+  }
+
+  &:hover {
+    .box {
+      box-shadow: ${shadow.white2};
+
+      h4 {
+        color: ${color.orange1};
+      }
+    }
   }
 `;
 
