@@ -36,12 +36,10 @@ const Grid = styled.div`
         @media screen and (min-width: 992px) {
             &:nth-child(2) {
                 grid-column: 2/3;
-                grid-row: 1/3;
             }
     
             &:nth-child(4) {
                 grid-column: 2/2;
-                grid-row: 2/4;
                 margin-top: 100px;
             }
         }

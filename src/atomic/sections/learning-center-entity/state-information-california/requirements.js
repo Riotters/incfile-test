@@ -34,8 +34,20 @@ const TextWrapper = styled.div`
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
   grid-gap: 30px;
+  grid-template-columns: 100%;
+  
+  div:first-child {
+    margin-top: 26px;
+  }
+  
+  @media (min-width: 576px) {
+    grid-template-columns: 1fr 1fr;
+    
+    div:first-child {
+        margin-top: 0;
+    }
+  }
 `;
 
 const RequirementsSection = ({ className, content, data }) => {

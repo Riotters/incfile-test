@@ -9,10 +9,15 @@ import BoxedButton from "../../molecules/buttons/boxed";
 
 const Tools = styled.section`
   position: relative;
-  padding-top: 104px;
-  padding-bottom: 120px;
+  padding-top: 50px;
+  padding-bottom: 60px;
   background-color: ${color.blue3};
   background-image: linear-gradient(${(props) => (props.bgLinear ? props.bgLinear : "")});
+  
+  @media (min-width: 576px) {
+    padding-bottom: 120px;
+    padding-top: 104px;
+  }
 `;
 
 const colors = [color.green3, color.red3, color.red3, color.yellow3, color.babyblue3, color.orange3]

@@ -12,6 +12,13 @@ import parse from "html-react-parser";
 const About = styled.section`
   position: relative;
   padding-bottom: 64px;
+  
+  @media (max-width: 575px) {
+    .small {
+        font-size: 12px;
+        line-height: 16px;
+    }
+  }
 `;
 
 const AboutSection = ({ className, content }) => (
@@ -27,7 +34,7 @@ const AboutSection = ({ className, content }) => (
       <Paragraph big mixed bottomMargin="72">
         {parse(content.text)}
       </Paragraph>
-      <Button content={content.button[0]} theme="secondary56" arrow margin="0 auto 0 0" />
+      <Button content={content.button[0]} theme="secondary56" arrow margin="0 auto 0 0" className="small" />
     </ImageContent>
   </About>
 );

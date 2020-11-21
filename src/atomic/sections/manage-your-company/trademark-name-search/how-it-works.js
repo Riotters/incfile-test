@@ -17,7 +17,11 @@ const Boxes = styled.div`
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  padding-top: 72px;
+  padding-top: 40px;
+  
+  @media (min-width: 576px) {
+    padding-top: 72px;
+  }
 
   @media (min-width: 769px) {
     flex-direction: row;

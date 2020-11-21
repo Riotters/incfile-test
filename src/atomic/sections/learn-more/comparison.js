@@ -85,9 +85,14 @@ const Comparison = () => (
 );
 
 const Wrapper = styled.div`
-  padding-top: 100px;
-  padding-bottom: 120px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   position: relative;
+  
+  @media (min-width: 576px) {
+    padding-top: 100px;  
+    padding-bottom: 120px;  
+  }
 `;
 
 const ComparisonWrapper = styled.div`
@@ -156,7 +161,11 @@ const Content = styled.p`
 `;
 
 const LearnMoreLink = styled(ArrowLink)`
-  padding: 0 40px;
+  padding: 26px 40px 0;
+  
+  @media (min-width: 576px) {
+    padding: 0 40px;
+  }
 `;
 
 export default Comparison;

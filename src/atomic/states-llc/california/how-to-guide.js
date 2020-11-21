@@ -345,7 +345,7 @@ const HowToGuide = ({ content, data }) => {
 
           {item.type === "list-dot" && <IconListColorBox color={color.blue3} content={item.content} rounded />}
 
-          {item.type === "button" && <Button content={item.content} theme={item.theme} arrow width="350px" margin="16px 0 0 0" marginMD="42px 0 42px 0" />}
+          {item.type === "button" && <Button content={item.content} theme={item.theme} arrow width="350px" margin="16px 0 26px 0" marginMD="42px 0 42px 0" />}
         </div>
       ))}
     </Wrapper>

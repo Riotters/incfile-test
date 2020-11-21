@@ -12,7 +12,7 @@ import ContentObject from "../atomic/partials/left-content-right-object";
 import ObjectContent from "../atomic/partials/left-object-right-content";
 import Articles from "../components/partials/sections/articles";
 import { color, gradient } from "../components/styles/colors";
-import Accordion from "../components/accordion";
+import Accordion from "../atomic/organisms/accordion/accordion";
 import Benefits from "../atomic/sections/manage-your-company/manage-your-company/benefits";
 import ArrowLink from "../atomic/molecules/buttons/text";
 import H2Text from "../atomic/molecules/text-blocks/h2-text";
@@ -64,12 +64,16 @@ const Overhead = styled.section`
 
 const OverheadBoxes = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
   grid-gap: 30px;
   width: 100%;
   max-width: 970px;
   padding: 140px 0;
   margin: 0 auto;
+  grid-template-columns: 100%;
+  
+  @media (min-width: 576px) {
+    grid-template-columns: 1fr 1fr;
+  }
 `;
 
 const FileForm = styled.section`
@@ -89,6 +93,13 @@ const BehalfFile = styled.section`
 
   .card {
     margin: 56px 0 48px;
+  }
+  
+  @media (max-width: 575px) {
+    .small {
+        font-size: 12px;
+        line-height: 22px;
+    }
   }
 `;
 
@@ -117,6 +128,13 @@ const Help = styled.section`
 
   h3 {
     padding-bottom: 24px;
+  }
+  
+  @media (max-width: 575px) {
+    .small {
+        font-size: 12px;
+        line-height: 16px;
+    }
   }
 `;
 
@@ -215,18 +233,18 @@ const CorpElection = () => (
             {behalfFile.text4}
           </p>
         </TopImageBox>
-        <Button theme="secondary56" content={behalfFile.button} arrow />
+        <Button theme="secondary56" content={behalfFile.button} arrow className="small" />
       </ContentCenter>
     </BehalfFile>
     <Help>
       <TextCenterLayout className="header-1" headline={help.header} />
       <ContentCenter contentWidth="770">
         <H3Text content={help.saveYourTime} />
-        <Button theme="primary56" content={help.button} margin="48px auto 0 auto" arrow />
+        <Button theme="primary56" content={help.button} margin="48px auto 0 auto" arrow className="small" />
       </ContentCenter>
       <TextCenterLayout className="header-2" headline={help.header2} headlineWidth="750" />
       <ContentCenter contentWidth="770">
-        <Accordion faq={faq} />
+        <Accordion content={faq} />
       </ContentCenter>
     </Help>
     <Benefits />

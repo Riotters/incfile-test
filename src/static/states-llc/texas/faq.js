@@ -84,7 +84,7 @@ export const faqContent = {
     },
     {
       type: `paragraph`,
-      content: `At the time of writing the fee charged by the Texas Secretary of State is $300. You can always check the latest Texas filing fees here. You can also pay an additional $50 for expedited filing through Incfile, which will create your LLC faster. Some LLC filing services do charge you extra to prepare and submit your filing documents, but at Incfile, we do this for free — so you only pay the state fee.`,
+      content: `At the time of writing the fee charged by the Texas Secretary of State is $300. You can always <a href='/state-filing-fees/'>check the latest Texas filing fees here</a>. You can also pay an additional $50 for expedited filing through Incfile, which will create your LLC faster. Some LLC filing services do charge you extra to prepare and submit your filing documents, but at Incfile, we do this for free — so you only pay the state fee.`,
     },
 
     {
@@ -94,7 +94,7 @@ export const faqContent = {
     },
     {
       type: `paragraph`,
-      content: `Once you’ve gathered together all of your information and filed your Certificate of Formation (or had Incfile do it for you), it can take up to a week for the Texas Secretary of State to legally create your LLC. If you pay an additional $50 expedited fee, your LLC can be formed in as few as two days.`,
+      content: `Once you’ve gathered together all of your information and filed your Certificate of Formation (or had Incfile do it for you), it can take up to a week for the Texas Secretary of State to legally create your LLC. If you pay an additional <a href='/state-filing-fees/'>$50 expedited fee</a>, your LLC can be formed in as few as two days.`,
     },
 
     {
@@ -104,7 +104,7 @@ export const faqContent = {
     },
     {
       type: `paragraph`,
-      content: `Your Texas LLC name needs to be unique, so you’ll need to check if it’s already in use by another business. You can do that by searching the Texas Secretary of State website, or by using our fast and simple Business Name Search tool.`,
+      content: `Your <a href='/texas-llc/texas-business-names/'>Texas LLC</a> name needs to be unique, so you’ll need to check if it’s already in use by another business. You can do that by searching the Texas Secretary of State website, or by using our fast and simple <a href="/business-name-search/">Business Name Search tool</a>.`,
     },
     {
       type: `box-cta`,
@@ -181,7 +181,7 @@ export const faqContent = {
     },
     {
       type: `paragraph`,
-      content: `Yes, all legal business entities in Texas, including LLCs, must have a Registered Agent at all times. Here at Incfile, we provide a free Texas Registered Agent service for the first year if you file through us.`,
+      content: `Yes, all legal business entities in Texas, including LLCs, <a href='/texas-llc/registered-agents-texas-llc/'>must have a Registered Agent at all times</a>. Here at Incfile, <a href="/manage-your-company/registered-agent/">we provide a free Texas Registered Agent service for the first year if you file through us.</a>`,
     },
     {
       type: `box-cta`,
@@ -245,7 +245,7 @@ export const faqContent = {
     },
     {
       type: `paragraph`,
-      content: `As an LLC, any business profits you earn will be reported on your personal 1040 filing and reported and taxed as “pass-through” income.`,
+      content: `As an LLC, <a href='/business-accounting/'>any business profits</a> you earn will be reported on your personal 1040 filing and reported and taxed as “pass-through” income.`,
     },
     {
       type: `iconListColorBox`,
@@ -338,7 +338,7 @@ export const faqContent = {
       type: `heading`,
       styles: { marginTop: `56px` },
       size: 3,
-      content: `We hope you’ve found this Texas LLC FAQ useful. If you’ve used our services and have a question that isn’t answered here, let us know and we’d be happy to help.`,
+      content: `We hope you’ve found this Texas LLC FAQ useful. If you’ve used our services and have a question that isn’t answered here, <a href='/contact/'>let us know</a> and we’d be happy to help.`,
     },
     {
       type: `button`,
