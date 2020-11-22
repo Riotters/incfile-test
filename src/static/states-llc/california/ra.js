@@ -75,7 +75,6 @@ export const agentPageContent = {
           `Correspondence from the California Secretary of State`,
           `Service of process notices (e.g., if your CA LLC is sued or required to appear in court)`,
           `Official California state and federal government correspondence and notifications`,
-          `Tax forms and requests to complete permits, company filings and reports`,
         ],
       },
     },

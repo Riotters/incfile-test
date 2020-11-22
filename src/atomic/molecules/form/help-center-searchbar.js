@@ -65,7 +65,7 @@ const Box = styled.div`
       }
 
       &--open {
-        max-height: 300px;
+        max-height: 240px;
         overflow-y: auto;
       }
     }

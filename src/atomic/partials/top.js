@@ -105,7 +105,6 @@ const Wrapper = styled.div`
   position: relative;
   padding-top: 80px;
   z-index: 1;
-  overflow: hidden;
 
   @media (min-width: 992px) {
     flex-direction: row;
@@ -212,6 +211,7 @@ const ImageContainer = styled.div`
   display: flex;
   max-width: ${(props) => (props.imageWidth ? `${props.imageWidth}px` : "950px")};
   width: 100%;
+  overflow: hidden;
 
   @media (min-width: 992px) {
     position: absolute;
