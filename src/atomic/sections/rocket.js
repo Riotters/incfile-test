@@ -6,56 +6,65 @@ import OvalSVG from "../../images/oval-yellow-3.inline.svg";
 import CurveSVG from "../../images/yellow-curve.inline.svg";
 import { Heading } from "../atoms/typography/heading";
 import { Paragraph } from "../atoms/typography/paragraph";
-import Button from "../molecules/buttons/button";
+import ExternalLink from "../molecules/buttons/external-link";
 import Searchbar from "../../components/searchbar";
 
 const Rocket = ({ search, index, url, textButton, text1, text2 }) => (
-  <Wrapper>
-    <Oval>
-      <OvalSVG />
-    </Oval>
-    <Curve>
-      <CurveSVG />
-    </Curve>
-    <Moon>
-      <Image filename="moon" alt="moon" />
-    </Moon>
-    <Container>
-      <RocketWrapper>
-        <Image filename="rocket-2x" alt="rocket lunch" />
-      </RocketWrapper>
-      {search && (
-        <Content>
-          <SearchBox>
-            <h2>Learn more about Nonprofits by state.</h2>
-            <Searchbar />
-          </SearchBox>
-        </Content>
-      )}
-      {index && (
-        <Content>
-          <Heading size={2} bottomMargin="0">
-            Start Your LLC, S Corp,
-          </Heading>
-          <Heading size={2}>or C Corp Today</Heading>
-          <Paragraph bottomMargin="0">There's A Reason More Than 500,000</Paragraph>
-          <Paragraph>Businesses Have Started With incfile</Paragraph>
-          <Button content={{ text: `Launch your business`, url: `${process.env.ORDER_URL}/form-order-now.php` }} theme="primary48" margin="0 auto 0 0" arrow />
-        </Content>
-      )}
-      {!search && !index && (
-        <Content>
-          <Heading size={2} bottomMargin="0">
-            Launch
-          </Heading>
-          <Heading size={2}>your business with Incfile</Heading>
-          <Paragraph bottomMargin="0">{text1 ? text1 : "No Contracts. No Surprises."}</Paragraph>
-          <Paragraph>{text2 ? text2 : "Only $0 + State Fee to Launch Your Business."}</Paragraph>
-          <Button content={{ text: `${textButton ? textButton : "Start Now"}`, url: `${process.env.ORDER_URL}/form-order-now.php${url ? url : ""}` }} theme="primary48" margin="0 auto 0 0" arrow />
-        </Content>
-      )}
-    </Container>
-  </Wrapper>
+    <Wrapper>
+        <Oval>
+            <OvalSVG />
+        </Oval>
+        <Curve>
+            <CurveSVG />
+        </Curve>
+        <Moon>
+            <Image filename="moon" alt="moon" />
+        </Moon>
+        <Container>
+            <RocketWrapper>
+                <Image filename="rocket-2x" alt="rocket lunch" />
+            </RocketWrapper>
+            {search && (
+                <Content>
+                    <SearchBox>
+                        <h2>Learn more about Nonprofits by state.</h2>
+                        <Searchbar />
+                    </SearchBox>
+                </Content>
+            )}
+
+            {index && (
+                <Content>
+                    <Heading size={2} bottomMargin="0"> Start Your LLC, S Corp, </Heading>
+                    <Heading size={2}>or C Corp Today</Heading>
+                    <Paragraph bottomMargin="0">There's A Reason More Than 500,000</Paragraph>
+                    <Paragraph>Businesses Have Started With incfile</Paragraph>
+                    <ExternalLink content={{ text: `Launch your business`, url: `${process.env.ORDER_URL}/form-order-now.php` }}
+                        target="_self"
+                        theme="primary48"
+                        margin="0 auto 0 0"
+                        arrow
+                    />
+                </Content>
+            )}
+
+            {!search && !index && (
+                <Content>
+                    <Heading size={2} bottomMargin="0"> Launch </Heading>
+                    <Heading size={2}>your business with Incfile</Heading>
+                    <Paragraph bottomMargin="0">{text1 ? text1 : "No Contracts. No Surprises."}</Paragraph>
+                    <Paragraph>{text2 ? text2 : "Only $0 + State Fee to Launch Your Business."}</Paragraph>
+                    <ExternalLink
+                        content={{ text: `${textButton ? textButton : "Start Now"}`, url: `${process.env.ORDER_URL}/form-order-now.php${url ? url : ""}` }}
+                        theme="primary48" 
+                        margin="0 auto 0 0"
+                        target="_self"
+                        arrow
+                    />
+                </Content>
+            )}
+        </Container>
+    </Wrapper>
 );
 
 const Wrapper = styled.div`
