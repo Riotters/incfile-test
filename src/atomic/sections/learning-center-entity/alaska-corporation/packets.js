@@ -130,7 +130,7 @@ const PacketsSection = ({ className, fullInfo, data }) => {
             <Curve top="53" left="-35" color={color.purple1} className="curve-left">
               <CurveSVG />
             </Curve>
-            <Cards content={priceOptions} fullInfo={fullInfo} />
+            <Cards content={priceOptions} fullInfo={fullInfo} compacted={true} />
           </div>
         </ContentCenter>
       </Wrapper>

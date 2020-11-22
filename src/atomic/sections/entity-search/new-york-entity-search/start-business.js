@@ -14,8 +14,13 @@ import Button from "../../../molecules/buttons/button";
 
 const Protect = styled.section`
   position: relative;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  
+  @media (min-width: 992px) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
   background-color: ${color.orange3};
   overflow: hidden;
 `;

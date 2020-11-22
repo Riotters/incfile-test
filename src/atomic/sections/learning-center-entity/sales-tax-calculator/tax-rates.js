@@ -9,7 +9,11 @@ import OvalSVG from "../../../../images/ovals/top-right-transparent-orange3.inli
 
 const TaxRates = styled.section`
   position: relative;
-  padding-top: 124px;
+  padding-top: 62px;
+  
+  @media (min-width: 576px) {
+    padding-top: 124px;
+  }
 `;
 
 const TaxRatesSection = ({ className, content }) => (

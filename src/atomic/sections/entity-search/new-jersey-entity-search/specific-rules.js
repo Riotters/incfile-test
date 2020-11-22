@@ -14,7 +14,11 @@ import NumericList from "../../../organisms/lists/numeric-boxed-list";
 
 const SpecificRules = styled.section`
   position: relative;
-  padding-bottom: 120px;
+  padding-bottom: 60px;
+  
+  @media (min-width: 992px) {
+    padding-bottom: 120px;
+  }
   overflow: hidden;
 
   p,

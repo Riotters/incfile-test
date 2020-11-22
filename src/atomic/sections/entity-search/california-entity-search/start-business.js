@@ -14,8 +14,13 @@ import Button from "../../../molecules/buttons/button";
 
 const Protect = styled.section`
   position: relative;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  
+  @media (min-width: 992px) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
   background-color: ${color.orange3};
   overflow: hidden;
 `;
@@ -46,8 +51,8 @@ const ProtectSection = ({ className, content }) => (
         <Paragraph big maxWidth="530">
           {content.text}
         </Paragraph>
-        <Buttonsbox>
-          <Button content={content.button} theme="primary56" arrow margin="0 0 16px" marginSM="0 auto 16px 0" marginLG="0 16px 0 0" />
+        <Buttonsbox mediaSM>
+          <Button content={content.button} theme="primary56" arrow margin="0 0 16px" marginSM="0 16px 0 0" />
           <Button content={content.button2} theme="primary56" arrow margin="0" marginSM="0 auto 0 0" />
         </Buttonsbox>
       </TextWrapper>

@@ -31,7 +31,9 @@ const Wrapper = styled.div`
     & > div {
       &:nth-child(3) {
         p {
-          color: ${color.green1};
+          background-color: ${color.green3};
+          border-radius: 20px;
+          padding: 8px 16px;
         }
       }
 
@@ -49,6 +51,10 @@ const Wrapper = styled.div`
     font-size: 16px;
     line-height: 24px;
     color: ${color.black};
+  }
+  
+  @media (max-width: 575px) {
+    max-width: 100%;
   }
 `;
 

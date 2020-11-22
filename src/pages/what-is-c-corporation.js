@@ -90,6 +90,7 @@ const LightBoxModal = styled.div`
   background: rgba(0, 0, 0, 0.8);
   opacity: ${(props) => (props.visible ? "1" : "0")};
   visibility: ${(props) => (props.visible ? "visible" : "hidden")};
+  overflow-y: auto;
 `;
 
 const LightBoxContent = styled.div`
@@ -100,8 +101,7 @@ const LightBoxContent = styled.div`
   max-width: 750px;
   position: relative;
   //margin: 0 30px;
-  max-height: 100vh;
-  overflow-y: auto;
+  max-height: 80vh;
 
   &.form-submitted {
     height: 40vh;

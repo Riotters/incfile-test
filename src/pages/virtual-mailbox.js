@@ -38,11 +38,11 @@ import Oval from "../atomic/atoms/icons/oval";
 const VirtualMailBoxes = () => (
     <Layout>
         <SEO title="Virtual Mailbox & Virtual Address Service | Mail Scanning" description="Enjoy the benefits of mail scanning and a virtual mailbox wherever you are with Incfile’s Virtual Address service. Learn more. " />
-        <Top imageName="mr-contact-new-sales-9845" imageAlt="Mrs Bulb New Sales" ovalColor="blue" headlineWidth="500" textWidth="800">
+        <Top imageName="mr-contact-new-sales-9845" imageAlt="Mrs Bulb New Sales" ovalColor="blue" headlineWidth="500" textWidth="800" imageWidth={700} imagePositionRight="50%">
             <h1>{top.header}</h1>
             <p>{top.text}</p>
             <Buttonsbox>
-                <Button content={top.button[0]} theme="primary56" arrow />
+                {/*<Button content={top.button[0]} theme="primary56" arrow />*/}
             </Buttonsbox>
         </Top>
         <VirtualMailbox content={mailboxes} />
@@ -178,5 +178,6 @@ const InnerSection = styled.div`
         overflow: hidden;
     }
 `;
+
 
 export default VirtualMailBoxes;

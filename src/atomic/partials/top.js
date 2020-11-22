@@ -227,6 +227,7 @@ const ImageContainer = styled.div`
     width: 100%;
     position: absolute;
     left: ${(props) => (props.imageMobilePosition ? props.imageMobilePosition : "8%")};
+    ${props => props?.imageMobileWidth ? "width: " + props.imageMobileWidth + "px;" : ""}
 
     @media (min-width: 992px) {
       position: static;
@@ -238,7 +239,7 @@ const ImageContainer = styled.div`
   }
 `;
 
-const Top = ({ children, imageName, imageAlt, imageWidth, imagePositionRight, imageMobilePosition, contentWidth, headlineWidth, textWidth, ovalColor, ...rest }) => (
+const Top = ({ children, imageName, imageAlt, imageWidth, imagePositionRight, imageMobilePosition, contentWidth, headlineWidth, textWidth, ovalColor, imageMobileWidth, ...rest }) => (
   <Wrapper {...rest}>
     <VisibilitySensor partialVisibility once>
       {({ isVisible }) => (
@@ -247,7 +248,7 @@ const Top = ({ children, imageName, imageAlt, imageWidth, imagePositionRight, im
         </Oval>
       )}
     </VisibilitySensor>
-    <ImageContainer imageWidth={imageWidth} imagePositionRight={imagePositionRight} imageMobilePosition={imageMobilePosition}>
+    <ImageContainer imageWidth={imageWidth} imagePositionRight={imagePositionRight} imageMobilePosition={imageMobilePosition} imageMobileWidth={imageMobileWidth}>
       <Image filename={imageName} alt={imageAlt} />
     </ImageContainer>
     <Container>

@@ -1,10 +1,23 @@
 import React from "react";
 import styled from "styled-components";
 import { color } from "../styles/colors";
+import {Link} from "gatsby";
 
-const ToolBox = ({ title }) => <ToolBoxWrapper>{title}</ToolBoxWrapper>;
+const ToolBox = ({ content }) => {
 
-const ToolBoxWrapper = styled.div`
+    if( typeof content !== "object" ) {
+        content = {
+            url: "/",
+            text: content
+        }
+    }
+
+    return (
+        <ToolBoxWrapper to={content.url}>{content.text}</ToolBoxWrapper>
+    )
+};
+
+const ToolBoxWrapper = styled(Link)`
   display: inline-block;
   background-color: ${color.blue3};
   padding: 8px 24px;

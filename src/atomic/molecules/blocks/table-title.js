@@ -33,7 +33,6 @@ const Header = styled.header`
 `;
 
 const InfoBox = styled.div`
-  position: relative;
   margin-left: 12px;
 
   &:hover {
@@ -74,7 +73,12 @@ const InfoBoxContent = styled.div`
   width: 549px;
   left: calc(50% - 274px);
   transition: all 0.4s ease-in-out;
-
+  
+  @media (max-width: 575px) {
+    left: 0;
+    max-width: 100%;
+  }
+  
   &:before {
     content: "";
     width: 15px;

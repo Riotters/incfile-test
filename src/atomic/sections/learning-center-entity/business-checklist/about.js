@@ -30,7 +30,8 @@ const AboutSection = ({ className, content }) => (
             <Paragraph big bottomMargin="40">{content.text}</Paragraph>
             <IconTextColorBox color={color.green3} Icon={IconSVG} content={content.box} bottomMargin="40" rounded curve />
             <Paragraph big bottomMargin="40">{content.text2}</Paragraph>
-            <Paragraph big bottomMargin="72">{parse(content.text3)}</Paragraph>
+            <Paragraph big bottomMargin="40" mixed>{parse(content.text3)}</Paragraph>
+            <Paragraph big bottomMargin="72" mixed>{parse(content.text4)}</Paragraph>
         </ImageContent>
     </About>
   );

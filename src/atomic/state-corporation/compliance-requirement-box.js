@@ -43,7 +43,8 @@ const Filing = styled.div`
             margin-top: 0;
         }
     }
-    div.full-width{
+   
+    div.full-width {
         width: 100%;
         background-color: #ffffff;
         box-shadow: 0 24px 32px 0 rgba(236,236,236,0.50);

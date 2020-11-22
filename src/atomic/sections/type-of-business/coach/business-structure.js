@@ -93,9 +93,9 @@ const CoachBusinessStructure = () => (
           width={100}
           widthUnit="%"
         >
-          <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed>
-            Partnership
-          </Paragraph>
+          <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
+              <Link to={process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"}>Partnership</Link>
+            </Paragraph>
 
           <Paragraph big>This is a type of business that is formed when two or more people work together without creating a more formal business entity. Like a sole proprietorship, it may not give you all the protections your life or business coaching organization may need.</Paragraph>
         </TextBlockWithImage>
@@ -114,9 +114,9 @@ const CoachBusinessStructure = () => (
           width={100}
           widthUnit="%"
         >
-          <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed>
-            Limited Liability Company or LLC
-          </Paragraph>
+          <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
+              <Link to={process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"}>Limited Liability Company or LLC</Link>
+            </Paragraph>
 
           <Paragraph big>The Limited Liability Company (LLC) is ideal for most life or business coaching startups. An LLC is easy and inexpensive to set up, and has the least administrative requirements of any formal business entity.</Paragraph>
         </TextBlockWithImage>
@@ -135,8 +135,8 @@ const CoachBusinessStructure = () => (
           width={100}
           widthUnit="%"
         >
-          <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed>
-            S Corporation
+          <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
+            <Link to={process.env.ORDER_URL + "/form-order-now.php?entityType=S-Corporation"}>S Corporation</Link>
           </Paragraph>
 
           <Paragraph big>This is a more complex type of business and isn't generally recommended for smaller organizations.</Paragraph>
@@ -156,8 +156,8 @@ const CoachBusinessStructure = () => (
           width={100}
           widthUnit="%"
         >
-          <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed>
-            C Corporation
+          <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
+              <Link to={process.env.ORDER_URL + "/form-order-now.php?entityType=C-Corporation"}>C Corporation</Link>
           </Paragraph>
 
           <Paragraph big>and most complex types of businesses and are typically far more than the average entrepreneur will need.</Paragraph>

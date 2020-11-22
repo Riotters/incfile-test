@@ -434,7 +434,7 @@ const BeautySalon = () => (
             widthUnit="%"
           >
             <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-              Limited Liability Company or LLC
+              <Link to={process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"}>Limited Liability Company or LLC</Link>
             </Paragraph>
 
             <Paragraph big>The most common type of business entity. An LLC is fast, simple and inexpensive to setup and maintain. It protects your personal finances and assets and is a great way to start your real estate</Paragraph>
@@ -476,7 +476,7 @@ const BeautySalon = () => (
             widthUnit="%"
           >
             <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-              S Corporation
+              <Link to={process.env.ORDER_URL + "/form-order-now.php?entityType=S-Corporation"}>S Corporation</Link>
             </Paragraph>
 
             <Paragraph big>This is a more complex type of business and isn't generally recommended for smaller organization.</Paragraph>
@@ -497,7 +497,7 @@ const BeautySalon = () => (
             widthUnit="%"
           >
             <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-              C Corporation
+              <Link to={process.env.ORDER_URL + "/form-order-now.php?entityType=C-Corporation"}>C Corporation</Link>
             </Paragraph>
 
             <Paragraph big>These are the largest and most complex types of businesses and are far more than the average entrepreneur or business owner will need.</Paragraph>

@@ -5,7 +5,7 @@ export const seo = {
 
 export const hero = {
   header: `Why Thousands of Small Business Owners Choose Incfile`,
-  subtitle: `Everything you need to know about registered agents for your LLC or Corporation`,
+  // subtitle: `Everything you need to know about registered agents for your LLC or Corporation`,
   button: {
     text: `Sign up now`,
     url: `${process.env.ORDER_URL}/form-order-now.php`,

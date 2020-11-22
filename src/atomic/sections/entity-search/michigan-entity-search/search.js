@@ -34,7 +34,7 @@ const SearchSection = ({ className, content, id }) => (
                 {content.header}
             </Heading>
             <Heading size="4">{content.header2}</Heading>
-            <Paragraph big bottomMargin="0">
+            <Paragraph big bottomMargin="24">
                 {content.text}
             </Paragraph>
         </ContentObject>
