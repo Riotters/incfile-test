@@ -17,9 +17,10 @@ const Wrapper = styled.div`
   background-size: ${(props) => props.bgSize ?? "contain"};
   margin: ${(props) => (props.margin ? props.margin : "55px 0")};
   
-  @media (min-width: 769px) {
+  @media (min-width: 1200px) {
       
       background: ${(props) => (props.bgColor ? props.bgColor : `${color.white}`)} url(${(props) => props.bgImage}) center right no-repeat;
+      background-size: cover;
 }
 
   .title {
