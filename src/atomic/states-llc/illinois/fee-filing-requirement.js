@@ -88,7 +88,7 @@ const FeeFilingRequirementSection = ({ content, data }) => {
                     }
 
                     {item.type === 'textBoxWithCheckIcon' && item.content.map(i => (
-                        <TextBoxed style={{marginBottom: "8px"}}>
+                        <TextBoxed style={{ marginBottom: "8px"}}>
                             <Paragraph bottomMargin={0}>
                                 {i}
                             </Paragraph>

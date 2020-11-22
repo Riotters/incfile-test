@@ -1084,7 +1084,7 @@ export const feesAndRequirments = [
   {
     type: `list-dot`,
     content: {
-      header: `It includes:`,
+      header: ``,
       list: [`A complete report on all the licenses, permits and tax registrations your Virginia LLC will need`, `The application forms you will need to file with the Virginia, regional and federal licensing authorities`],
     },
     marginBottom: 16,

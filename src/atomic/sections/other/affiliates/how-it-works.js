@@ -147,7 +147,7 @@ const HowItWorksSection = ({ className, content }) => (
                         <Image filename="get-paid-9581" imageAlt="Get paid" />
                     </div>
                     <h4>Get paid</h4>
-                    <p>Make $50 when customers you refer form an LLC or Corporation.</p>
+                    <p>Earn $100 on average when customers you refer form an LLC or Corporation.</p>
                 </div>
             </Boxes>
         </ContentCenter>
