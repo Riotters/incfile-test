@@ -23,8 +23,6 @@ const Wrapper = styled.ul`
     }
 
     p {
-      //   display: flex;
-      //   align-items: center;
       min-height: 32px;
       font-size: 16px;
       line-height: 24px;
@@ -43,7 +41,7 @@ const NumericBoxedList = ({ className, content, noBox, curve, bottomMargin, ...r
         </Curve>
       )}
       {content.map((item, id) => (
-        <NumericBox item={item} id={id} noBox={noBox} />
+        <NumericBox key={id} item={item} id={id} noBox={noBox} />
       ))}
     </Wrapper>
   );

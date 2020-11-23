@@ -13,8 +13,7 @@ import Variants from "../../sections/learning-center-entity/state-information-ca
 import Subscription from "../../sections/learning-center-entity/state-information-california/subscription";
 import Articles from "../../sections/articles";
 // Content
-import { top, compare, requirements } from "../../../static/states-llc/arizona/home";
-import { rocket } from "../../../static/states-llc/arizona/general";
+import { top, compare } from "../../../static/states-llc/arizona/home";
 import { subscription } from "../../../static/learning-center-entity/state-information-california";
 
 const Wrapper = styled.div`

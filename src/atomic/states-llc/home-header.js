@@ -13,7 +13,7 @@ import { Paragraph } from "../atoms/typography/paragraph";
 import Curve from "../atoms/icons/curve";
 import CurveSVG from "../../images/curve-orange.inline.svg";
 import Colorbox from "../atoms/boxes/color-box";
-import { replaceStr } from "../../helpers/utils";
+import { replace } from "lodash";
 
 const Content = styled.div`
   display: flex;
@@ -76,7 +76,7 @@ const HomeHeader = ({ content, data }) => (
         {content.boxes.map((box) => (
           <Colorbox color={color.white} className="box">
             <Heading size={4}>{parse(box.title)}</Heading>
-            <Paragraph>{replaceStr(data.prices?.statefee, `[STATE_FEE]`, box.desc)}</Paragraph>
+            <Paragraph>{replace(box.desc, `[STATE_FEE]`, data.prices?.statefee)}</Paragraph>
             <Button arrow content={box.button} theme="primary56" width="240"></Button>
           </Colorbox>
         ))}

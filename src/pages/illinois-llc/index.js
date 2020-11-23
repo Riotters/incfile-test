@@ -17,6 +17,7 @@ import { HomePageContent } from "../../static/states-llc/illinois/home";
 import { tabPages } from "../../static/states-llc/illinois/general";
 
 import { getFullPricesAndFilings } from '../../api/Api';
+import { Helmet } from "react-helmet";
 
 
 const Wrapper = styled.div`
@@ -69,6 +70,22 @@ function IllinoisLLCIndex() {
             </WrapperContent>
 
             <Rocket url="?entityType=LLC&entityState=IL" />
+
+            <Helmet>
+                <script type="application/ld+json">{`
+                {
+                    "@context": "http://schema.org",
+                    "@type": "VideoObject",
+                    "name": "Forming an LLC in Illinois by Incfile",
+                    "description": "Starting your business in Illinois has never been easier!  Home to the amazing city of Chicago and a critical ground for culture and politics, Illinois is a great state for LLC formation. When you create an LLC in Illinois, you get the protection and advantages of a corporation with much simpler rules to follow.  Ready to learn all about starting an LLC in Illinois?  Step 1: Gather Information for Your Members Step 2: Choose a Unique Business Name and Complete a Business Entity Search Step 3: Provide an Official Illinois Address Step 4: Assign a Registered Agent in Illinois Step 5: Get an Employer Identification Number (EIN) Step 6: File your Articles of Organization with the Illinois Secretary of State  For more information on how to start an LLC in IL, check out the following resources:   - File Your LLC Paperwork for Free: https://www.incfile.com - Incfile's Guide to Illinois LLCs: https://www.incfile.com/illinois-llc/ - Business Name Search tool: https://www.incfile.com/business-name - Virtual Business Address: https://www.incfile.com/virtual-mailbox/ - Registered Agent Service: https://www.incfile.com/manage-your-company/registered-agent/",
+                    "thumbnailUrl": "https://i.ytimg.com/vi/Rx9Ns_xqp2A/default.jpg",
+                    "uploadDate": "2020-07-28T18:58:23Z",
+                    "duration": "PT1M53S",
+                    "embedUrl": "https://www.youtube.com/embed/Rx9Ns_xqp2A",
+                    "interactionCount": "4"
+                }
+            `}</script>
+            </Helmet>
         </Layout>
     );
 }
