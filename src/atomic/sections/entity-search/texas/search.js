@@ -12,7 +12,13 @@ import CurveSVG from "../../../../images/curves/bottom-left-top-right-big.inline
 
 const Search = styled.section`
   position: relative;
-  padding: 108px 0;
+  padding: 54px 0;
+  
+  @media (min-width: 992px) {
+    padding: 108px 0;
+  }
+
+  
   background-color: ${color.orange3};
   overflow: hidden;
 `;
@@ -30,7 +36,7 @@ const SearchSection = ({ className, content, id }) => (
                 {content.header}
             </Heading>
             <Heading size="4">{content.header2}</Heading>
-            <Paragraph big bottomMargin="0">
+            <Paragraph big bottomMargin="24">
                 {content.text}
             </Paragraph>
         </ContentObject>

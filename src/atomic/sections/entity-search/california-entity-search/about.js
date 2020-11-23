@@ -12,7 +12,11 @@ import { Heading } from "../../../atoms/typography/heading";
 
 const About = styled.section`
   position: relative;
-  padding-bottom: 120px;
+  padding-bottom: 30px;
+  
+  @media (min-width: 992px) {
+    padding-bottom: 120px;
+  }
 
   p {
     color: ${color.grey2};
@@ -32,7 +36,7 @@ const AboutSection = ({ className, content }) => (
       <Heading size="3">{content.header}</Heading>
       <Paragraph big>{content.text}</Paragraph>
       <IconTextColorBox color={color.orange3} Icon={IconSVG} content={content.box} bottomMargin="48" rounded curve curveColor={color.yellow1} />
-      <Paragraph big>{content.text2}</Paragraph>
+      <Paragraph big bottomMargin={0}>{content.text2}</Paragraph>
     </ImageContent>
   </About>
 );

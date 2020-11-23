@@ -6,6 +6,7 @@ import Image from "../../atoms/image/image";
 import { Heading } from "../../atoms/typography/heading";
 import { Paragraph } from "../../atoms/typography/paragraph";
 import ArrowLink from "../buttons/text";
+import parse from 'html-react-parser';
 
 const Wrapper = styled.div`
   width: 100%;
@@ -58,9 +59,9 @@ const TopImageBox = ({ className, image, color, content, noShadow }) => {
       <div className="content">
         <div>
           <Heading size="4" bottomMargin="16">
-            {content.header}
+            {parse(content.header)}
           </Heading>
-          <Paragraph bottomMargin="0">{content.text}</Paragraph>
+          <Paragraph bottomMargin="0" mixed>{parse(content.text)}</Paragraph>
         </div>
         {content.link && <ArrowLink content={content.link} bottomMargin="0" topMargin="24" />}
       </div>

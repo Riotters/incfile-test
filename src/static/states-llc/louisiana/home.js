@@ -1072,7 +1072,7 @@ export const feesAndRequirments = [
   },
   {
     type: `header`,
-    content: `To Reserve a Name`,
+    content: `To Reserve a Name for Your Louisiana LLC`,
     size: 3,
     marginBottom: 32,
   },

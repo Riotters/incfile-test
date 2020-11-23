@@ -10,10 +10,11 @@ const Wrapper = styled.div`
   max-width: 970px;
   margin: 0 auto;
   padding-top: 50px;
-  padding-bottom: 104px;
+  padding-bottom: 22px;
   
-  @media (min-width: 576px) {
+  @media (min-width: 992px) {
     padding-top: 80px;
+    padding-bottom: 104px;
   }
 
   @media (min-width: 769px) {

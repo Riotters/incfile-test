@@ -53,7 +53,7 @@ const ProtectSection = ({ className, content }) => (
           {content.text}
         </Paragraph>
         <Buttonsbox mediaSM>
-          <Button content={content.button} theme="primary56" arrow margin="0 0 16px"  marginSM="0 16px 16px 0" marginLG="0 16px 0 0" />
+          <Button content={content.button} theme="primary56" arrow margin="0 0 16px"  marginSM="0 16px 0 0" />
           <Button content={content.button2} theme="primary56" arrow margin="0" marginSM="0 0 16px" />
         </Buttonsbox>
       </TextWrapper>

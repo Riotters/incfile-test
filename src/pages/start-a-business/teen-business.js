@@ -77,7 +77,10 @@ const TeenBusiness = () => (
               </Paragraph>
             </Colorbox>
 
-            <Paragraph big style={{ marginTop: "48px" }}>
+            <Paragraph big style={{ marginTop: "48px" }}>  
+              We know it can be daunting to start a teen business, and we’re here to help. We’ve helped over 250,000 people form their business and provided answers, guidance and support to transform them into entrepreneurs.
+            </Paragraph>
+            <Paragraph big style={{ marginTop: "0" }}>
               Here is our simple guide to starting up a successful teen business. We’ll share some business ideas that are suitable for kids, teens and students, and let you know how to get your business off the ground. From exploring the types of business you can start to the legalities of setting
               up your business and the realities of your day-to-day operations, this guide is here to help.
             </Paragraph>

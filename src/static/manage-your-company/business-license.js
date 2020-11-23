@@ -62,7 +62,7 @@ export const about = {
       text: `You'll need to get a license for a small fee to operate a business at the address of location.`,
     },
     {
-      text: `Next, your company will need an Assumed Name under which to register, or you can incorporate your business and use your formal name.`,
+      text: `Next, your company will need an Assumed Name under which to register, or you can <a href='${process.env.ORDER_URL}/order-business-license'>incorporate your business</a> and use your formal name.`,
     },
     {
       text: `Then, if you operate from home or plan to remodel a space, for example, you'll need to obtain permits to do so. Other permits covering serving alcohol, displaying a sign on the building exterior and even parking for your business might also be a requirement. 
@@ -81,7 +81,7 @@ export const about = {
 export const requirements = {
   header: `Business License and Permit Requirements by State`,
   text: `Every state has different licensing needs based on the type of business you've incorporated, where it's located and the government rules in that state. 
-        We will research your business license needs for you with our Business License Research Package, but you can also do initial research yourself with the following resources:`,
+        We will research your business license needs for you with our <a href='${process.env.ORDER_URL}/order-business-license'>Business License Research Package</a>, but you can also do initial research yourself with the following resources:`,
   link: {
     text: `Business License Research Package`,
     url: `${process.env.ORDER_URL}/order-business-license`,

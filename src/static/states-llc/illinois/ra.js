@@ -25,6 +25,11 @@ export const agentPageContent = {
       content: `Your LLC must have an Illinois Registered Agent at all times. You can appoint a Registered Agent when you first start your business. You can also replace your existing IL Registered Agent at a later date, provided there is a smooth transition between the old and new Registered Agent service.`,
     },
     {
+      type: "video",
+      url: "wSsZAvrT-IU",
+      thumbnail: "what-is-a-registered-agent-7199"
+    },
+    {
       type: `heading`,
       size: 2,
       content: `What the Illinois Secretary of State Says About Registered Agents`,
@@ -201,7 +206,7 @@ export const agentPageContent = {
           answer: [
             {
               type: `paragraph`,
-              content: `Once you’ve chosen a new Illinois Registered Agent, you can complete the form available on the Corporation Registered Agent or Address Change” form that’s available on the IL Secretary of State website. Once you’ve filled it out, send it to the Secretary of State so they can update your records. The Illinois SOS will charge a fee of $25 to assign or change a Registered Agent.`,
+              content: `Once you’ve chosen a new Illinois Registered Agent, you can complete the form available on the <a href='https://www.cyberdriveillinois.com/departments/business_services/agent_change/corpagentchange.html'>Corporation Registered Agent or Address Change</a>” form that’s available on the IL Secretary of State website. Once you’ve filled it out, send it to the Secretary of State so they can update your records. The Illinois SOS will charge a fee of $25 to assign or change a Registered Agent.`,
             },
           ],
         },
@@ -235,7 +240,7 @@ export const agentPageContent = {
     },
     {
       type: `paragraph`,
-      content: `In some situations, you might want to know the name of the Registered Agent that represents another Illinois LLC. If you do, you can search the business database of the Illinois Secretary of State, as these will often provide details of a specific business’s Registered Agent.`,
+      content: `In some situations, you might want to know the name of the Registered Agent that represents another Illinois LLC. If you do, you can search the <a href='https://www.cyberdriveillinois.com/departments/business_services/agent_change/corpagentchange.html'>business database</a> of the Illinois Secretary of State, as these will often provide details of a specific business’s Registered Agent.`,
     },
     {
       type: `paragraph`,
@@ -334,7 +339,7 @@ export const agentPageContent = {
       content: [
         {
           text: `The Main Functions of a Illinois Registered Agent`,
-          url: `/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/`,
+          url: `/research-topics/registered-agent/registered-agent-function/`,
         },
         {
           text: `Changing Your Illinois Registered Agent`,
@@ -342,7 +347,7 @@ export const agentPageContent = {
         },
         {
           text: `What a Illinois Registered Agent Does`,
-          url: `/research-topics/registered-agent-help/what-does-a-registered-agent-do/`,
+          url: `/research-topics/registered-agent/registered-agent-tasks/`,
         },
       ],
     },

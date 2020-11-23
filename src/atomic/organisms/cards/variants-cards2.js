@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { color } from "../../atoms/styles/colors";
-import Card from "../../molecules/mixed-blocks/variant-card2";
+import Card from "../../molecules/mixed-blocks/variant-card";
 
 const Wrapper = styled.div`
   display: grid;
@@ -33,11 +33,11 @@ const Wrapper = styled.div`
 const colors = [color.white, "#f8faff", "#f2f6ff"];
 const images = ["paper-plane-7719", "plane-7291", "rocket-7993"];
 
-const PricingCards = ({ className, content, bottomMargin, fullInfo }) => {
+const PricingCards = ({ className, content, bottomMargin, fullInfo, compacted = false }) => {
   return (
     <Wrapper className={className} bottomMargin={bottomMargin}>
       {content.map((card, i) => (
-        <Card content={card} fullInfo={fullInfo} border={i === 0 ? true : false} color={colors[i]} image={images[i]} />
+        <Card content={card} fullInfo={fullInfo} border={i === 0 ? true : false} color={colors[i]} image={images[i]} compacted={compacted} />
       ))}
     </Wrapper>
   );

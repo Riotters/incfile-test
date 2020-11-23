@@ -94,8 +94,8 @@ const CoachBusinessStructure = () => (
           widthUnit="%"
         >
           <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-            Partnership
-          </Paragraph>
+              <Link to={process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"}>Partnership</Link>
+            </Paragraph>
 
           <Paragraph big>
             Similar to a sole proprietorship, if you go into business with someone else without forming a legal business entity, you will be treated as a partnership. This doesn’t give you limited liability protections, so we don’t recommend it for your construction business.
@@ -117,8 +117,8 @@ const CoachBusinessStructure = () => (
           widthUnit="%"
         >
           <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-            Limited Liability Company or LLC
-          </Paragraph>
+              <Link to={process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"}>Limited Liability Company or LLC</Link>
+            </Paragraph>
 
           <Paragraph big>The most common type of business entity, an LLC is fast, simple and inexpensive to set up and maintain. It protects your personal finances and assets and is a great way to start your construction business.</Paragraph>
         </TextBlockWithImage>
@@ -138,8 +138,8 @@ const CoachBusinessStructure = () => (
           widthUnit="%"
         >
           <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-            S Corporation
-          </Paragraph>
+              <Link to={process.env.ORDER_URL + "/form-order-now.php?entityType=S-Corporation"}>S Corporation</Link>
+            </Paragraph>
 
           <Paragraph big>This is a more complex type of business and isn't generally recommended for smaller organizations, but it could be a good fit for your construction business depending on your goals.</Paragraph>
         </TextBlockWithImage>
@@ -159,8 +159,8 @@ const CoachBusinessStructure = () => (
           widthUnit="%"
         >
           <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-            C Corporation
-          </Paragraph>
+              <Link to={process.env.ORDER_URL + "/form-order-now.php?entityType=C-Corporation"}>C Corporation</Link>
+            </Paragraph>
 
           <Paragraph big>This is a more complex type of business and isn't generally recommended for smaller organizations, but it could be a good fit for your construction business depending on your goals.</Paragraph>
         </TextBlockWithImage>

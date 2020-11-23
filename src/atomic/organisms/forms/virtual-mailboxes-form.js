@@ -13,6 +13,12 @@ const Wrapper = styled(Whitebox)`
   max-width: 570px;
   padding: 40px;
   position: relative;
+  
+  .states-dropdown {
+    @media (max-width: 576px) {
+        margin-bottom: 22px;
+    }
+  }
 `;
 
 const states = [
@@ -63,7 +69,7 @@ const AmendmentForm = ({ className, content }) => {
                     {content.header}
                 </Heading>
             }
-            <Dropdown label={content.field.label} options={states} onChange={option => setStateSelected(option.value)} />
+            <Dropdown label={content.field.label} options={states} onChange={option => setStateSelected(option.value)} className="states-dropdown" />
             <Button content={content.button} theme="primary56" arrow marginSM="64px auto 8px" onClick={e => handleOpenVTURL(e)} />
         </Wrapper>
     );

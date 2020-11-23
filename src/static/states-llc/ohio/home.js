@@ -280,7 +280,7 @@ export const namingYourBusiness = [
       text: `Ohio Secretary of State business entity search tool`,
       url: `https://businesssearch.sos.state.oh.us`,
     },
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `header`,
@@ -1007,7 +1007,7 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Some states allow you to form your LLC more quickly by paying a rush fee. You can <a href="/state-filing-times/">compare state filing times and fees here.</a>`,
+    content: `Some states allow you to form your LLC more quickly by paying a rush fee. You can <a href="/state-filing-times/">compare state filing times and fees here,</a> <a href="/state-filing-times/">including expedited fees for Ohio.</a>`,
     marginBottom: 24,
   },
   {
@@ -1077,7 +1077,7 @@ export const feesAndRequirments = [
   {
     type: `text`,
     content: `<a href="/ohio-llc/fees-filing-requirements/">Learn about your ongoing Ohio LLC filing requirements</a>
-    and business filing deadlines with our helpful Ohio ongoing filing lookup tool..`,
+    and business filing deadlines with our helpful Ohio ongoing filing lookup tool.`,
     marginBottom: 16,
   },
   {
@@ -1115,18 +1115,6 @@ export const feesAndRequirments = [
     type: `text`,
     content: `You can research these permits and licenses yourself or use Incfile’s Business License Research Package, which includes:`,
     marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `The Incfile Business License Research Package for Your Ohio LLC`,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `Our Business License Research Package
-     tells you about all of the licenses and permits you will need for your Ohio LLC. It includes:`,
-    marginBottom: 24,
   },
   {
     type: `list-dot`,
@@ -1182,26 +1170,6 @@ export const feesAndRequirments = [
   },
   {
     type: `header`,
-    content: `To Change the Ohio Resident Agent for Your Ohio LLC`,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `Your Ohio LLC needs a Registered Agent. You need to appoint one when you first incorporate your LLC. You can also switch to a new Ohio Resident Agent later. Incfile provides a complete Ohio Resident Agent service.`,
-    marginBottom: 16,
-  },
-  {
-    type: `button`,
-    content: {
-      text: `Incfile's Ohio registered agent service`,
-      url: `/manage-your-company/registered-agent/`,
-    },
-    theme: `primary48`,
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
     content: `To Obtain a Trade Name for Your Ohio LLC`,
     size: 4,
     marginBottom: 16,
@@ -1222,7 +1190,27 @@ export const feesAndRequirments = [
   },
   {
     type: `header`,
-    content: `To Reserve a Name`,
+    content: `To Change the Ohio Resident Agent for Your Ohio LLC`,
+    size: 4,
+    marginBottom: 16,
+  },
+  {
+    type: `text`,
+    content: `Your Ohio LLC needs a Registered Agent. You need to appoint one when you first incorporate your LLC. You can also switch to a new Ohio Resident Agent later. Incfile provides a complete Ohio Resident Agent service.`,
+    marginBottom: 16,
+  },
+  {
+    type: `button`,
+    content: {
+      text: `Incfile's Ohio registered agent service`,
+      url: `/manage-your-company/registered-agent/`,
+    },
+    theme: `primary48`,
+    marginBottom: 32,
+  },
+  {
+    type: `header`,
+    content: `To Reserve a Name for Your Ohio LLC`,
     size: 4,
     marginBottom: 16,
   },

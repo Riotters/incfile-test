@@ -24,7 +24,7 @@ const AboutSection = ({ className, content }) => (
     </Oval>
     <ImageContent image="web-address-search">
     <Path content={content.links} />
-      <Heading size={3} bottomMargin="32">
+      <Heading size={3} bottomMargin="24">
         {content.header}
       </Heading>
       <Heading size={4} bottomMargin="24">
@@ -96,10 +96,10 @@ const AboutSection = ({ className, content }) => (
         {content.text14}
       </Paragraph>
       <IconListColorBox content={content.list3} color={color.purple3} rounded bottomMargin="24" />
-      <Paragraph big bottomMargin="24">
-        {content.text15}
+      <Paragraph big mixed bottomMargin="24">
+        {parse(content.text15)}
       </Paragraph>
-      <IconListColorBox content={content.list4} color={color.babyblue3} rounded bottomMargin="24" />
+      <IconListColorBox content={content.list4} color={color.babyblue2} rounded bottomMargin="24" />
       <Paragraph big bottomMargin="16">
         {content.text16}
       </Paragraph>

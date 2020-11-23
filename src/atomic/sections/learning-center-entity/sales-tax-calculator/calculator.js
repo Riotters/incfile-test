@@ -13,12 +13,31 @@ import OvalSVG from "../../../../images/ovals/top-left-transparent-blue2.inline.
 import { Heading } from "../../../atoms/typography/heading";
 import InputField from "../../../molecules/form/input-field";
 import { Paragraph } from "../../../atoms/typography/paragraph";
+import ArrowLink from "../../../molecules/buttons/text";
+import PlusSVG from "../../../../images/icons/plus.inline.svg";
+import Whitebox from "../../../atoms/boxes/white-box";
+import Circle from "../../../atoms/icons/circle";
+import { shadow } from "../../../atoms/styles/shadows";
+import AssetsSVG from "../../../../images/icons/assets-flag.inline.svg"
+import RevenueSVG from "../../../../images/icons/revenue.inline.svg"
 
 const Calculator = styled.div`
   background-color: ${color.blue3};
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   padding-top: 100px;
   position: relative;
+  
+  @media (min-width: 576px) {
+    padding-bottom: 100px;
+  }
+  
+  .calculator-main {
+    padding: 88px 40px 48px;
+    max-width: 630px;
+    text-align: center;
+    
+    margin-bottom: 48px;
+  }
 `;
 
 const ImageBoxes = styled.div`
@@ -85,14 +104,108 @@ const ImageBoxes = styled.div`
   }
 `;
 
+const Boxes = styled.div`
+  display: flex;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap: 10px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 32px;
+  
+  @media (min-width: 576px) {
+    grid-template-columns: 1fr 1fr;
+  }
+`;
+
+const CircleWhite = styled.div`
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+  width: 64px;
+  background-color: ${color.white};
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  z-index: 1;
+  pointer-events: none;
+
+  @media (min-width: 576px) {
+    display: flex;
+  }
+
+  &::before {
+    content: "";
+    height: 48px;
+    width: 48px;
+    background-color: ${color.orange1};
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+  }
+`;
+
+const BlueBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 153px;
+  border-radius: 24px;
+  background-color: ${color.green3};
+  padding: 64px 13px 24px;
+  position: relative;
+  
+  @media (min-width: 576px) {
+    border-radius: 24px 0 0 24px;
+  }
+  
+  .dropdown-state {
+    max-width: 60%;
+  }
+`;
+
+const YellowBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 153px;
+  border-radius: 24px;
+  background-color: ${color.blue3};
+  padding: 64px 13px 24px;
+  position: relative;
+  
+  @media (min-width: 576px) {
+    border-radius: 0 24px 24px 0;
+  }
+  
+  .revenue {
+    max-width: 60%;
+    width: 60%;
+  }
+`;
+
+const AbsoluteCircle = styled.div`
+  position: absolute;
+  top: -40px;
+  left: ${(props) => props.paddingLeft};
+  border-radius: 50%;
+  box-shadow: ${(props) => (props.imageShadowColor ? props.imageShadowColor : "")};
+`;
+
 const dropdownOptions = states.state.map((state) => state.name);
 
-const CalculatorSection = ({ content, onSelectState, state }) => {
+const CalculatorSection = ({ content, onSelectState, state, id }) => {
   const cards = content.cards;
   const inputRevenue = useRef(0);
   const [selectedState, setSelectedState] = useState("");
   const [showResult, setShowResult] = useState(false);
   const [finalCalculator, setFinalCalculator] = useState(0);
+  const [error, setError] = useState(false);
 
   const handleOnChangeState = (option) => {
     setSelectedState(option.value);
@@ -101,12 +214,31 @@ const CalculatorSection = ({ content, onSelectState, state }) => {
 
   const calculatorTaxAmount = (e, stateTaxRate) => {
     e.preventDefault();
-    if (!stateTaxRate) {
+    if(showResult && finalCalculator !== "") {
+      setShowResult(false);
+      setFinalCalculator(0);
+      setSelectedState("");
       return;
     }
 
-    let revenvue = inputRevenue.current.value;
-    let taxAmount = (revenvue * stateTaxRate) / 100;
+    if (!stateTaxRate) {
+      setShowResult(true);
+      setError("Choose state first");
+      return;
+    }
+
+    if(error) setError(false);
+    let revenue = inputRevenue.current.value;
+
+    if(error && (revenue == null || revenue === 0)) {
+      setError("Fill out your revenue");
+      return;
+    }
+    else {
+      setError(false);
+    }
+
+    let taxAmount = (revenue * stateTaxRate) / 100;
 
     setShowResult(true);
     setFinalCalculator("$" + formatMoney(taxAmount));
@@ -134,34 +266,61 @@ const CalculatorSection = ({ content, onSelectState, state }) => {
   };
 
   return (
-    <Calculator>
+    <Calculator id={id}>
       <Oval height="570" width="570" top="0" left="0">
         <OvalSVG />
       </Oval>
       <ContentCenter>
         <TextCenterLayout headline={content.header} headlineWidth="700" text={content.text} />
-        <ImageBoxes>
-          <TopImageBox className="box box--left" image="your-state" color={color.blue3}>
-            <Heading size="4">{cards[0]}</Heading>
-            <Dropdown className="dropdown" placeholder="select" onChange={handleOnChangeState} options={dropdownOptions} />
-          </TopImageBox>
-          <TopImageBox className="box box--right" image="forming-a-corporation" color={color.orange3}>
-            <Heading size="4">{cards[1]}</Heading>
-            <InputField className="dropdown" placeholder="Enter total revenue from sales" type="number" inputRef={inputRevenue} />
-          </TopImageBox>
-        </ImageBoxes>
-        <Button content={content.button} theme="primary56" margin="0 0 32px 0" arrow onClick={(e) => calculatorTaxAmount(e, state.tax_rate)} />
-
-        {Object.entries(state).length !== 0 && (
-          <Paragraph big mixed={true}>
-            {parser(`The state sales tax rate in <b>${state.long_name}</b> is <b>${state.tax_rate}</b>%`)}
-          </Paragraph>
+        {showResult && !error && (
+            <Whitebox className="calculator-main">
+              <Boxes>
+                <BlueBox className="box box--left">
+                  <AbsoluteCircle imageShadowColor={shadow.green2}>
+                    <Circle circleColor={color.green3} padding={0} height={80} width={80}>
+                      <AssetsSVG />
+                    </Circle>
+                  </AbsoluteCircle>
+                  <Heading size={4} bottomMargin={0}>{state.tax_rate}%</Heading>
+                  <Paragraph mixed>{state.long_name} state tax</Paragraph>
+                </BlueBox>
+                <CircleWhite>
+                  <PlusSVG />
+                </CircleWhite>
+                <YellowBox className="box box--right">
+                  <AbsoluteCircle imageShadowColor={shadow.babyblue2}>
+                    <Circle circleColor={color.blue3} padding={0} height={80} width={80}>
+                      <RevenueSVG />
+                    </Circle>
+                  </AbsoluteCircle>
+                  <Heading size={4} bottomMargin={0}>${typeof inputRevenue.current !== "undefined" && (
+                      formatMoney(inputRevenue.current.value)
+                  )}</Heading>
+                  <Paragraph>Your revenue</Paragraph>
+                </YellowBox>
+              </Boxes>
+              <Heading size={5} bottomMargin={24}>Your total tax amount</Heading>
+              <Heading size={2} bottomMargin={24}>{finalCalculator}</Heading>
+              <Paragraph>Additional municipality taxes may apply</Paragraph>
+            </Whitebox>
         )}
-
-        {showResult && (
-          <Paragraph big mixed={true}>
-            {parser(`${inputRevenue.current.value} X ${state.tax_rate}% Tax = ${finalCalculator} Total`)}
-          </Paragraph>
+        {(!showResult || error) && (
+            <ImageBoxes>
+              <TopImageBox className="box box--left" image="your-state" color={color.blue3}>
+                <Heading size={4}>{cards[0]}</Heading>
+                <Dropdown className="dropdown" placeholder="select" onChange={handleOnChangeState} options={dropdownOptions} />
+              </TopImageBox>
+              <TopImageBox className="box box--right" image="forming-a-corporation" color={color.orange3}>
+                <Heading size={4}>{cards[1]}</Heading>
+                <InputField className="dropdown" placeholder="Enter total revenue from sales" type="number" inputRef={inputRevenue} />
+              </TopImageBox>
+            </ImageBoxes>
+        )}
+        <Button content={content.button} theme="primary56" margin="0 0 32px 0" arrow onClick={(e) => calculatorTaxAmount(e, state.tax_rate)} />
+        {showResult && error && (
+            <Paragraph big mixed={true} bottomMargin={0}>
+              {parser(error)}
+            </Paragraph>
         )}
       </ContentCenter>
     </Calculator>

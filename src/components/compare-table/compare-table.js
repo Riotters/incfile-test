@@ -34,6 +34,18 @@ const TableCell = styled.div`
   font-family: ${(props) => (props.header ? `"Avenir", sans-serif` : `"Avenir", sans-serif`)};
   font-weight: ${(props) => (props.header ? "900" : "normal")};
   justify-content: ${(props) => (props.center ? "center" : "flex-start")};
+  
+  &.list-opener-cell {
+    @media (max-width: 575px) {
+      width: calc(100vw - 30px);
+    }
+  }
+  
+  .list-opener {
+    @media (max-width: 575px) {
+      width: 100%;
+    }
+  }
 `;
 
 const Divider = styled.div`
@@ -161,8 +173,8 @@ const CompareTable = ({ stateListToCompare, width }) => {
         )}
 
         <TableRow>
-          <TableCell>
-            <Button onClick={() => setStateListOpen(!statesListOpen)}>{statesListOpen ? "Close the states list" : "Open the states list"}</Button>
+          <TableCell className="list-opener-cell">
+            <Button className="list-opener" onClick={() => setStateListOpen(!statesListOpen)}>{statesListOpen ? "Close the states list" : "Open the states list"}</Button>
           </TableCell>
         </TableRow>
       </Table>

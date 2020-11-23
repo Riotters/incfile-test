@@ -164,7 +164,7 @@ const toolTipTexts = {
   "State fee": "<p class='tooltip-content'>The State Fee is what your selected state charges to file a new business entity. This amount is pass-through and goes 100% directly to the Secretary of State; Incfile does not keep any part of this fee.</p>",
 };
 
-const PricingCard = ({ className, content, image, ...rest }) => {
+const PricingCard = ({ className, content, image, compacted = false, ...rest }) => {
   useEffect(() => {
     ReactTooltip.rebuild();
   });
@@ -204,20 +204,24 @@ const PricingCard = ({ className, content, image, ...rest }) => {
           </li>
         ))}
       </ul>
-      {content.include && (
-        <Package>
-          <span>{content.include}</span>
-        </Package>
-      )}
-      <ul className="list">
-        {content.list &&
-          content.list.map((item) => (
-            <li>
-              <TextCheck>{item}</TextCheck>
-            </li>
-          ))}
-      </ul>
-      {content.fee && <Paragraph bottomMargin="6">{content.fee}</Paragraph>}
+        {!compacted && (
+            <>
+                {content.include && (
+                    <Package>
+                        <span>{content.include}</span>
+                    </Package>
+                )}
+                <ul className="list">
+                    {content.list &&
+                    content.list.map((item) => (
+                        <li>
+                            <TextCheck>{item}</TextCheck>
+                        </li>
+                    ))}
+                </ul>
+                {content.fee && <Paragraph bottomMargin="6">{content.fee}</Paragraph>}
+            </>
+        )}
     </Wrapper>
   );
 };

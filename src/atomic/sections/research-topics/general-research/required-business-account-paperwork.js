@@ -102,7 +102,7 @@ const AboutSection = ({ className, content }) => (
       <Paragraph big bottomMargin="16">
         {content.text16}
       </Paragraph>
-      <Paragraph big bottomMargin="16" mixed>
+      <Paragraph big bottomMargin="24" mixed>
         {parse(content.text17)}
       </Paragraph>
       <ArrowLink content={content.link} bottomMargin="48" />
