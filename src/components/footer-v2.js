@@ -32,6 +32,13 @@ const Top = styled.div`
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
+  
+  @media (min-width: 768px) and (max-width: 991px) { 
+    p:first-child, input {
+        margin-bottom: 0;
+        margin-right: 15px;
+    }
+  }
 
   @media (min-width: 992px) {
     flex-direction: row;
@@ -65,7 +72,7 @@ const NewsletterWrapper = styled.form`
   flex-direction: column;
   justify-content: flex-end;
 
-  @media (min-width: 992px) {
+  @media (min-width: 768px) {
     flex-direction: row;
     align-items: center;
   }
@@ -110,11 +117,13 @@ const Newsletter = styled.input`
   text-align: left;
   transition: border-color 0.3s ease;
 
-  @media (min-width: 576px) {
-    width: 246px;
+  @media (min-width: 768px) {
+    min-width: 200px;
+    max-width: 300px
   }
 
   @media (min-width: 992px) {
+    width: 246px;
     margin-top: 0;
     margin-bottom: 0;
   }

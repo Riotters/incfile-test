@@ -323,7 +323,7 @@ export const service = {
 
 export const tools = {
   header: `Helpful tools for decision making`,
-  text: `Select your business type to see how Incfile can work for you.`,
+  // text: `Select your business type to see how Incfile can work for you.`,
   buttons: [
     {
       header: `Corporation State Information`,

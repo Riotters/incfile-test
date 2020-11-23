@@ -130,14 +130,14 @@ const PositiveIncfileReviews = () => (
         </TabsWrapper>
         <PanelsWrapper>
           <Panel>
-            <Paragraph big mixed={true}>
+            <Paragraph big mixed>
               {parse(positiveReview.facebook.text1)}
             </Paragraph>
             <SlideReviews content={positiveReview.facebook.reviews} />
           </Panel>
 
           <Panel>
-            <Paragraph big mixed={true}>
+            <Paragraph big mixed>
               {parse(positiveReview.shopper.text1)}
             </Paragraph>
             <SlideReviews content={positiveReview.shopper.reviews} />
@@ -149,9 +149,11 @@ const PositiveIncfileReviews = () => (
         <CartBlock />
         <RatingBlock />
       </RatingRow>
-      <Paragraph big mixed={true} topMargin="30">
-        {parse(positiveReview.text2)}
-      </Paragraph>
+      {positiveReview.text2 && (
+          <Paragraph big mixed topMargin="30">
+            {parse(positiveReview.text2)}
+          </Paragraph>
+      )}
     </ContentCenter>
   </Wrapper>
 );

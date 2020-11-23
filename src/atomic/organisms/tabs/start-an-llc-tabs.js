@@ -9,6 +9,7 @@ import Tab2SVG from "../../../images/icons/20200406_icon2.inline.svg";
 import Tab3SVG from "../../../images/icons/20200406_icon3.inline.svg";
 import Tab4SVG from "../../../images/icons/20200406_icon4.inline.svg";
 import Tab5SVG from "../../../images/icons/20200406_icon5.inline.svg";
+import CheapLLC from "../../../images/icons/form-an-llc-without-breaking-the-bank.inline.svg";
 import TexasSVG from "../../../images/icons/texas.inline.svg";
 import DelawareSVG from "../../../images/icons/delaware.inline.svg";
 import NevadaSVG from "../../../images/icons/nevada.inline.svg";
@@ -274,7 +275,7 @@ const Tab = ({ children }) => {
   );
 };
 
-const icons = [<Tab1SVG />, <Tab2SVG />, <Tab3SVG />, <Tab4SVG />, <Tab5SVG />];
+const icons = [<Tab1SVG />, <Tab2SVG />, <Tab3SVG />, <Tab4SVG />, <Tab5SVG />, <CheapLLC />];
 const iconsState = [<TexasSVG />, <DelawareSVG />, <NevadaSVG />, <FloridaSVG />];
 
 const CCorpTabs = ({ layout, columns, content }) => (

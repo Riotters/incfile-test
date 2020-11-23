@@ -56,8 +56,12 @@ const ToolLists = styled.div`
         grid-template-columns: 1fr 1fr;
     }
 
-    .card__item{
+    .card__item {
         text-align: left;
+        
+        &:nth-child(4) .top .gatsby-image-wrapper {
+            width: 71px;
+        }
     }
 `
 

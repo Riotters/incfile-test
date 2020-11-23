@@ -26,7 +26,11 @@ const About = () => (
             ovalColor="purple1"
             contentWidth="55"
             contentPaddingTop="0"
-            headlineWidth="700">
+            headlineWidth="700"
+            tabletVariantClass="tablet--shopper"
+            tabletImgPosX={33}
+            tabletImgPosY={-510}
+            tabletImgScale={.8}>
             <h1>{hero.header}</h1>
             <p>{hero.subtitle}</p>
             <p style={{ fontWeight: `bold` }}>{hero.subtitle2}</p>

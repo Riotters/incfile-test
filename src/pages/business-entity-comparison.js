@@ -20,7 +20,7 @@ const ComparisonChart = () => {
     return (
         <Layout>
             <SEO title="Types of Corporations & Business Structures | Entity Chart" description="Confused about what type of corporation is best for you? Compare business entities like LLCs, C corps, S corps, and nonprofits." />
-            <Top imageName="mr-bulb-business-entity-comparison-9338" imageAlt="Mrs Bulb and with checklist" ovalColor="sun">
+            <Top imageName="mr-bulb-business-entity-comparison-9338" imageAlt="Mrs Bulb and with checklist" ovalColor="sun" tabletVariantClass="tablet--shopper" tabletImgPosX={35} tabletImgScale={.9}>
                 <h1>{top.header}</h1>
                 <p>{top.text}</p>
                 <Buttonsbox>
