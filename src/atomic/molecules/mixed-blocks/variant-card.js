@@ -22,7 +22,7 @@ const Wrapper = styled.div`
   border: ${(props) => (props.border ? `solid 1px ${color.grey4}` : "")};
   background-color: ${(props) => (props.color ? props.color : "")};
   border-radius: 5px;
-  
+
   .package-description {
     min-height: 48px;
   }
@@ -144,24 +144,24 @@ const Fee = styled.div`
 `;
 
 const TooltipWrapper = styled.div`
-    .tooltip-content {
-        font-size: 16px;
-        max-width: 350px;
-        padding: 40px;
-        line-height: 24px;
-    }
-    
-    & > div.show {
-        opacity: 1;
-        box-shadow: ${shadow.white2};
-        border-radius: 16px;
-        padding: 0;
-    }
+  .tooltip-content {
+    font-size: 16px;
+    max-width: 350px;
+    padding: 40px;
+    line-height: 24px;
+  }
+
+  & > div.show {
+    opacity: 1;
+    box-shadow: ${shadow.white2};
+    border-radius: 16px;
+    padding: 0;
+  }
 `;
 
 const toolTipTexts = {
-    "Package fee": "<p class='tooltip-content'>The Package Price covers the cost to create, prepare and file all required legal paperwork on your behalf to properly form your new business entity. It also includes the cost for additional services and products in your chosen package.</p>",
-    "State fee": "<p class='tooltip-content'>The State Fee is what your selected state charges to file a new business entity. This amount is pass-through and goes 100% directly to the Secretary of State; Incfile does not keep any part of this fee.</p>"
+  "Package fee": "<p class='tooltip-content'>The Package Price covers the cost to create, prepare and file all required legal paperwork on your behalf to properly form your new business entity. It also includes the cost for additional services and products in your chosen package.</p>",
+  "State fee": "<p class='tooltip-content'>The State Fee is what your selected state charges to file a new business entity. This amount is pass-through and goes 100% directly to the Secretary of State; Incfile does not keep any part of this fee.</p>",
 };
 
 const PricingCard = ({ className, content, image, ...rest }) => {
@@ -170,10 +170,10 @@ const PricingCard = ({ className, content, image, ...rest }) => {
   });
   return (
     <Wrapper className={className} {...rest}>
-        <TooltipWrapper>
-            <ReactTooltip id={"benefitTooltip-" + content.header} />
-        </TooltipWrapper>
-        {content.variant && (
+      <TooltipWrapper>
+        <ReactTooltip id={"benefitTooltip-" + content.header} />
+      </TooltipWrapper>
+      {content.variant && (
         <Box>
           <span>{content.variant}</span>
         </Box>
@@ -181,7 +181,9 @@ const PricingCard = ({ className, content, image, ...rest }) => {
       <Heading size="4" marginBottom="16">
         {content.header}
       </Heading>
-      <Paragraph bottomMargin="8" className="package-description">{content.text}</Paragraph>
+      <Paragraph bottomMargin="8" className="package-description">
+        {content.text}
+      </Paragraph>
       <ImageWrapper>
         <Image filename={image} />
       </ImageWrapper>
@@ -192,7 +194,7 @@ const PricingCard = ({ className, content, image, ...rest }) => {
           <li>
             <Fee>
               <div>
-                <span className="help-mark" data-tip={ toolTipTexts[ fee.text ] } data-html={true} data-type="light" data-for={"benefitTooltip-" + content.header}>
+                <span className="help-mark" data-tip={toolTipTexts[fee.text]} data-html={true} data-type="light" data-for={"benefitTooltip-" + content.header}>
                   <HelpMarkSVG />
                 </span>
                 <span className="text">{fee.text}</span>

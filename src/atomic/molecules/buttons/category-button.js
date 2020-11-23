@@ -5,34 +5,32 @@ import ArrowSVG from "../../../images/arrow.inline.svg";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 
-const TabTitle = ({content, arrow, icon}) => (
-    <ButtonBox>
-        <Icon>
-            {icon}
-        </Icon>
-        <Content>
-            <span>{content.header}</span>
+const TabTitle = ({ content, arrow, icon }) => (
+  <ButtonBox to={content.url}>
+    <Icon>{icon}</Icon>
+    <Content>
+      <span>{content.header}</span>
 
-            {/*{arrow &&*/}
-                {/*<Arrow className="tabArrow">*/}
-                    {/*<ArrowSVG/>*/}
-                {/*</Arrow>*/}
-            {/*}*/}
-        </Content>
-    </ButtonBox>
+      {/*{arrow &&*/}
+      {/*<Arrow className="tabArrow">*/}
+      {/*<ArrowSVG/>*/}
+      {/*</Arrow>*/}
+      {/*}*/}
+    </Content>
+  </ButtonBox>
 );
 
 export default TabTitle;
 
 TabTitle.propTypes = {
-    title: PropTypes.string.isRequired,
-    arrow: PropTypes.bool,
-    SvgIcon: PropTypes.object.isRequired
+  title: PropTypes.string.isRequired,
+  arrow: PropTypes.bool,
+  SvgIcon: PropTypes.object.isRequired,
 };
 
 TabTitle.defaultProps = {
-    arrow: true,
-    SvgIcon: OverviewSVG
+  arrow: true,
+  SvgIcon: OverviewSVG,
 };
 
 const Icon = styled.div`
@@ -48,7 +46,7 @@ const Icon = styled.div`
     width: 80px;
     min-width: 80px;
   }
-`
+`;
 
 const Content = styled.div`
   display: flex;
@@ -88,7 +86,7 @@ const Content = styled.div`
     //   transform: translateX(0);
     // }
   }
-`
+`;
 
 const Arrow = styled.div`
   display: flex;
@@ -104,9 +102,9 @@ const Arrow = styled.div`
       fill: #5088fd;
     }
   }
-`
+`;
 
-const ButtonBox = styled.div`
+const ButtonBox = styled(Link)`
   height: 78px;
   line-height: 78px;
   color: #4e4e4e;
@@ -122,7 +120,8 @@ const ButtonBox = styled.div`
   border: none;
   z-index: 0;
 
-  &.active {
+  &.active,
+  &:hover {
     box-shadow: 0 40px 80px 0 #e6e6e6;
     font-weight: 600;
     z-index: 1;
@@ -132,4 +131,4 @@ const ButtonBox = styled.div`
     //   transform: translateX(0);
     // }
   }
-`
+`;

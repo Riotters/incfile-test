@@ -14,15 +14,15 @@ const Next = styled.section`
 `;
 
 const NextSection = ({ className, content }) => (
-    <Next className={className}>
-        <Oval className="oval" height="720" width="720" top="0" right="0">
-            <OvalSVG />
-        </Oval>
-        <HeadingCenter headline={content.header} headlineWidth="640" />
-        <ContentCenter>
-            <Accordion content={content.faq} curve curveLeftBottom curveColor={color.blue1}/>
-        </ContentCenter>
+  <Next className={className}>
+    <Oval className="oval" height="720" width="720" top="0" right="0">
+      <OvalSVG />
+    </Oval>
+    <HeadingCenter headline={content.header} headlineWidth="640" />
+    <ContentCenter>
+      <Accordion content={content.faq} curve curveLeftBottom curveColor={color.blue1} />
+    </ContentCenter>
   </Next>
-  );
-  
-  export default NextSection;
+);
+
+export default NextSection;
