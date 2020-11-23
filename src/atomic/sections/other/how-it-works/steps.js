@@ -13,15 +13,14 @@ import OvalSVG from "../../../../images/ovals/top-right-transparent-blue2.inline
 import Oval2SVG from "../../../../images/ovals/top-left-transparent-blue2.inline.svg";
 import Oval3SVG from "../../../../images/ovals/top-left-transparent-green3.inline.svg";
 
-import { getFullPricesAndFilings } from '../../../../api/Api';
-
+import { getFullPricesAndFilings } from "../../../../api/Api";
 
 const Steps = styled.section`
   position: relative;
   margin-top: 15px;
   padding-top: 104px;
   padding-bottom: 0;
-  
+
   &::before {
     content: "";
     height: 2385px;
@@ -37,14 +36,15 @@ const Box = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: ${props => props.bottomMargin ? `${props.bottomMargin}px` : ""};
+  margin-bottom: ${(props) => (props.bottomMargin ? `${props.bottomMargin}px` : "")};
 
   span {
     font-size: 24px;
     line-height: 1;
   }
 
-  h3, p {
+  h3,
+  p {
     text-align: center;
   }
 
@@ -65,51 +65,69 @@ const ImageWrapper = styled.div`
 `;
 
 const StepsSection = ({ className, content }) => {
-    const [dataApi, setDataApi] = React.useState({});
+  const [dataApi, setDataApi] = React.useState({});
 
-    React.useEffect(() => {
-        getFullPricesAndFilings('California').then(data => {
-            setDataApi(data);
-        });
-    }, []);
+  React.useEffect(() => {
+    getFullPricesAndFilings("California").then((data) => {
+      setDataApi(data);
+    });
+  }, []);
 
-    return (
-        <Steps className={className}>
-            <Oval className="oval" height="720" width="720" top="13" right="0">
-                <OvalSVG />
-            </Oval>
-            <Oval className="oval" height="570" width="570" top="0" left="0">
-                <Oval2SVG />
-            </Oval>
-            <Oval className="oval" height="420" width="420" bottom="5" left="0">
-                <Oval3SVG />
-            </Oval>
-            <HeadingCenter headline={content.header} text={content.text} headlineWidth="700" bottomMargin="80" />
-            <ContentCenter>
-                <Box bottomMargin="120">
-                    <Circle height="64" width="64" circleColor={color.blue1} iconColor={color.white} bottomMargin="32">1</Circle>
-                    <Heading size="3" bottomMargin="24">{content.list[0].header}</Heading>
-                    <Paragraph big bottomMargin="0">{content.list[0].text}</Paragraph>
-                </Box>
-                <Box bottomMargin="80">
-                    <Circle height="64" width="64" circleColor={color.blue1} iconColor={color.white} bottomMargin="32">2</Circle>
-                    <Heading size="3" bottomMargin="24">{content.list[1].header}</Heading>
-                    <Paragraph big bottomMargin="0">{content.list[1].text}</Paragraph>
-                </Box>
-                
-                <Variants data={dataApi} />
+  return (
+    <Steps className={className}>
+      <Oval className="oval" height="720" width="720" top="13" right="0">
+        <OvalSVG />
+      </Oval>
+      <Oval className="oval" height="570" width="570" top="0" left="0">
+        <Oval2SVG />
+      </Oval>
+      <Oval className="oval" height="420" width="420" bottom="5" left="0">
+        <Oval3SVG />
+      </Oval>
+      <HeadingCenter headline={content.header} text={content.text} headlineWidth="700" bottomMargin="80" />
+      <ContentCenter>
+        <Box bottomMargin="120">
+          <Circle height="64" width="64" circleColor={color.blue1} iconColor={color.white} bottomMargin="32">
+            1
+          </Circle>
+          <Heading size="3" bottomMargin="24">
+            {content.list[0].header}
+          </Heading>
+          <Paragraph big bottomMargin="0">
+            {content.list[0].text}
+          </Paragraph>
+        </Box>
+        <Box bottomMargin="80">
+          <Circle height="64" width="64" circleColor={color.blue1} iconColor={color.white} bottomMargin="32">
+            2
+          </Circle>
+          <Heading size="3" bottomMargin="24">
+            {content.list[1].header}
+          </Heading>
+          <Paragraph big bottomMargin="0">
+            {content.list[1].text}
+          </Paragraph>
+        </Box>
 
-                <Box>
-                    <Circle height="64" width="64" circleColor={color.blue1} iconColor={color.white} bottomMargin="32">3</Circle>
-                    <Heading size="3" bottomMargin="24">{content.list[2].header}</Heading>
-                    <Paragraph big bottomMargin="0">{content.list[2].text}</Paragraph>
-                </Box>
-                <ImageWrapper>
-                    <BlockSVG />
-                </ImageWrapper>
-            </ContentCenter>
-        </Steps>
-    );
+        <Variants data={dataApi} />
+
+        <Box>
+          <Circle height="64" width="64" circleColor={color.blue1} iconColor={color.white} bottomMargin="32">
+            3
+          </Circle>
+          <Heading size="3" bottomMargin="24">
+            {content.list[2].header}
+          </Heading>
+          <Paragraph big bottomMargin="0">
+            {content.list[2].text}
+          </Paragraph>
+        </Box>
+        <ImageWrapper>
+          <BlockSVG />
+        </ImageWrapper>
+      </ContentCenter>
+    </Steps>
+  );
 };
 
 export default StepsSection;

@@ -1118,7 +1118,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `Incfile's Pennsylvania crop service`,
+      text: `Incfile's Pennsylvania CROP service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,

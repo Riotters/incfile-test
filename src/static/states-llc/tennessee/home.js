@@ -953,7 +953,7 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Some states allow you to form your LLC more quickly by paying a rush fee. You can <a href="/state-filing-times/">compare state filing times and fees here.</a>`,
+    content: `Some states allow you to form your LLC more quickly by paying a rush fee. You can <a href="/state-filing-times/">compare state filing times and fees here, including expedited fees for Tennessee.</a>`,
     marginBottom: 24,
   },
   {
@@ -1125,6 +1125,26 @@ export const feesAndRequirments = [
   },
   {
     type: `header`,
+    content: `To Obtain a Assumed Name for Your Tennessee LLC`,
+    size: 4,
+    marginBottom: 16,
+  },
+  {
+    type: `text`,
+    content: `If you want your MS business to trade under a different name, you can file a form with the Tennessee Secretary of State. You will need to pay a Tennessee filing fee. Incfile can file this form on your behalf.`,
+    marginBottom: 16,
+  },
+  {
+    type: `button`,
+    content: {
+      text: `Incfile's Tennessee fictitious name service.`,
+      url: `/fictitious-business-or-trade-name/`,
+    },
+    theme: `primary48`,
+    marginBottom: 32,
+  },
+  {
+    type: `header`,
     content: `To Change the Tennessee Resident Agent for Your Tennessee LLC`,
     size: 4,
     marginBottom: 16,
@@ -1145,27 +1165,7 @@ export const feesAndRequirments = [
   },
   {
     type: `header`,
-    content: `To Obtain a Trade Name for Your Tennessee LLC`,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `If you want your MS business to trade under a different name, you can file a form with the Tennessee Secretary of State. You will need to pay a Tennessee filing fee. Incfile can file this form on your behalf.`,
-    marginBottom: 16,
-  },
-  {
-    type: `button`,
-    content: {
-      text: `Incfile's Tennessee fictitious name service.`,
-      url: `/fictitious-business-or-trade-name/`,
-    },
-    theme: `primary48`,
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `To Reserve a Name`,
+    content: `To Reserve a Name for Your Tennessee LLC`,
     size: 4,
     marginBottom: 16,
   },
@@ -1253,7 +1253,7 @@ export const feesAndRequirments = [
         },
         {
           question: `Who Will I Need to Get Business Licenses and Permits From for My Tennessee LLC?`,
-          answer: `<p>It depends on various factors including:</p></br>
+          answer: `<p>It depends on various factors including:</p>
                   <ul>
                   <li>The type of business you run</li>
                   <li>Where you are located</li>

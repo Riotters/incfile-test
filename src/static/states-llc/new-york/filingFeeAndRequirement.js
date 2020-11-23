@@ -67,6 +67,11 @@ export const filingFeeAndRequirementContent = {
       ],
     },
     {
+      type: `paragraph`,
+      styles: { marginTop: `16px`, },
+      content: `When you incorporate through Incfile, we charge the state fee to you and pay the New York Department of State on your behalf when we file your paperwork. Note that New York State does offer expedited filing for an extra fee.`,
+    },
+    {
       type: `box-cta`,
       color: color.orange3,
       styles: { fontSize: `25px` },
@@ -85,7 +90,7 @@ export const filingFeeAndRequirementContent = {
       styles: { fontSize: `25px` },
       bgImage: [SCN],
       content: {
-        title: `Some states allow you to form your LLC more quickly by paying a rush fee.`,
+        title: `Incfile can help you form your LLC more quickly by paying a rush fee.`,
         button: {
           text: `View Expedited Fees For New York`,
           url: `/state-filing-times/`,
@@ -144,7 +149,7 @@ export const filingFeeAndRequirementContent = {
       content: `Most states require some form of regular reporting with their Department of State. New York requires a biennial LLC report with an associated filing fee. Here are the current biennial filing requirements for New York:`,
     },
     {
-      type: `dynamc_filing_requirement`,
+      type: `dynamic_filing_requirement`,
     },
     {
       type: `box-cta`,
@@ -226,7 +231,7 @@ export const filingFeeAndRequirementContent = {
     {
       type: `heading`,
       size: 2,
-      content: `Operating Agreements for New York LLCs`,
+      content: `Operating Agreement Requirements in New York`,
     },
     {
       type: `paragraph`,

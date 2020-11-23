@@ -87,6 +87,7 @@ export const businessTaxesPageContent = {
     },
     {
       type: `heading`,
+      styles: { marginTop: `48px`, },
       size: 3,
       content: `Georgia Sales Taxes on LLC Sales`,
     },
@@ -203,7 +204,7 @@ export const businessTaxesPageContent = {
       bgImage: [BgBoxTreatAsAnScorp],
       content: {
         title: `Treating your LLC as an S Corp can help you save money.`,
-        subtitle: `you can do this by making an “S Corporation Tax Election” with the IRS using a form known as Form 2553. We can file your Form 2553 with the IRS on your behalf.`,
+        subtitle: `You can do this by making an “S Corporation Tax Election” with the IRS using a form known as Form 2553. We can file your Form 2553 with the IRS on your behalf.`,
         button: {
           text: `Get My LLC Treated As An S Corp`,
           url: `/business-accounting/`,

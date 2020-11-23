@@ -22,10 +22,10 @@ export const about = {
 export const help = {
   header: `Help with trademark registration`,
   header2: `What’s included in the package?`,
-  list: [`A registered trademark with the USPTO`, `A thorough search of existing trademarks`, `Legal counsel from an experienced trademark attorney`, `Handling all correspondence with the USPTO until the name is approved`],
+  list: [`Legal counsel from an experienced trademark attorney`, `A thorough search of existing trademarks`, `The preparing and filing of a trademark application`],
   card: {
     price: `199`,
-    fee: `+ Federal fee`,
+    fee: `+ Federal Filing Fee`,
     button: {
       text: "Order now",
       url: `${process.env.ORDER_URL}/trademark.php`,
