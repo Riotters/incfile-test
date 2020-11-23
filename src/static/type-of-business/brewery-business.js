@@ -113,7 +113,16 @@ export const toolsList = {
     tools: [
         {
             title: "Project Management",
-            tools: ["Asana", "Basecamp", "Trello"]
+            tools: [{
+                url: "https://asana.com/",
+                text: "Asana"
+            }, {
+                url: "https://basecamp.com/",
+                text: "Basecamp"
+            }, {
+                url: "https://trello.com/",
+                text: "Trello"
+            }]
         },
         {
             title: "Productivity",

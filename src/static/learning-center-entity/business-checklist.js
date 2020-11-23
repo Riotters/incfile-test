@@ -484,7 +484,8 @@ export const about = {
     },
     text2: `The majority of larger businesses in the United States are structured as C Corporations, although a C Corp could, theoretically, consist of just one person. 
       The information below will help you decide if a C Corporation structure is right for your business.`,
-    text3: `We’ve even got <a href="/start-a-business/" target="_blank" rel="noopener noreferrer">specialized guides</a> depending on the type of business you’re building.`,
+    text3: "Whether you’re a new entrepreneur or a business veteran, use our start a business checklist to bring your ideas to life.",
+    text4: "We’ve even got <a href='/start-a-business/'>specialized guides</a> depending on the type of business you’re building."
 };
 
 export const help = {

@@ -21,11 +21,7 @@ export const states = {
 export const compare = {
     announcement: {
         content: {
-            text: "The option to expedite your Business filing with the Secretary of State will be presented within the first page of the order process. ",
-            link: {
-                text: "Learn more",
-                url: `${process.env.ORDER_URL}/form-order-now.php`
-            },
+            text: `The option to expedite your Business filing with the Secretary of State will be presented within the first page of the <a href='${process.env.ORDER_URL}/form-order-now.php'>order process</a>.`,
             color: color.blue3
         }
     },

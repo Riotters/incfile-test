@@ -280,7 +280,7 @@ export const namingYourBusiness = [
       text: `Ohio Secretary of State business entity search tool`,
       url: `https://businesssearch.sos.state.oh.us`,
     },
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `header`,

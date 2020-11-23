@@ -61,9 +61,9 @@ const StyledArrowIcon = styled(ArrowIcon)`
 const StatesMap = ({ corporations }) => {
   return (
     <Wrapper>
-      <Curve top="55" right="-5" color={color.blue1}>
-        <CurveSVG />
-      </Curve>
+      {/*<Curve top="55" right="-5" color={color.blue1}>*/}
+        {/*<CurveSVG />*/}
+      {/*</Curve>*/}
       <svg width="962px" height="648px" viewBox="0 0 962 648" version="1.1" xmlns="http://www.w3.org/2000/svg">
         <title>Map</title>
         <g id="Map" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">

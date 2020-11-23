@@ -11,7 +11,7 @@ export const top = {
 
 export const about = {
   tabs: {
-    panels: [`Starting your LLC`, `Who Can Start an LLC?`, `Where to Start Your LLC?`, `When to Form an LLC`, `Responsibilities for an LLC`],
+    panels: [`Starting your LLC`, `Who Can Start an LLC?`, `Where to Start Your LLC?`, `When to Form an LLC`, `Responsibilities for an LLC`, `Create an affordable LLC`],
     content: [
       {
         header: `Starting your Limited Liability Company`,
@@ -125,8 +125,6 @@ export const about = {
             },
           ],
         },
-        header4: `How to Create an LLC without Breaking the Bank`,
-        text4: `Incfile provides a cost effective service to help you create your LLC. We guide you through the process and handle most of the administrative steps, such as filing the articles of organization, on your behalf. Our basic package also provides a free registered agent service for the first year. If you're looking for help to start an LLC, our comprehensive online formation services provide outstanding value. `,
       },
       {
         header: `Who Can Start an LLC?`,
@@ -183,6 +181,10 @@ export const about = {
         },
         text2: `You will also want to explore other common areas when starting a new business such as understanding any rules and regulations pertaining to your industry and getting appropriate insurance in place.`,
       },
+      {
+        header: "How to Create an LLC without Breaking the Bank",
+        text: `Incfile provides a cost effective service to help you create your LLC. We guide you through the process and handle most of the administrative steps, such as filing the articles of organization, on your behalf. Our basic package also provides a free registered agent service for the first year. If you're looking for help to start an LLC, our comprehensive online formation services provide outstanding value. `,
+      }
     ],
   },
 };

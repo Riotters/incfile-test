@@ -20,7 +20,7 @@ export const about = {
 };
 
 export const search = {
-  header: `Use Our Free Business Name Search Tool To Find Out If Your CompaNJ Name Is Available`,
+  header: `Use Our Free Business Name Search Tool To Find Out If Your NJ Company Name Is Available`,
   header2: `We'll Take Care of the Entity Search.`,
   text: `We'll tell you if your business name is available with the New Jersey Division of Corporations. Just fill in your proposed business name, and we'll search the compaNJ registrar for you.`,
   form: {

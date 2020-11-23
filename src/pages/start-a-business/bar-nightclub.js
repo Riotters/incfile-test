@@ -509,7 +509,7 @@ const BarNightclub = () => (
             widthUnit="%"
           >
             <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-              Limited Liability Company or LLC
+              <Link to={process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"}>Limited Liability Company or LLC</Link>
             </Paragraph>
 
             <Paragraph big>The Limited Liability Company (LLC) is ideal for most handyman businesses. An LLC is easy and inexpensive to set up, and it has the least administrative requirements of any formal business entity.</Paragraph>

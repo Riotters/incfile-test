@@ -48,10 +48,14 @@ export const advantages = {
             background: color.orange3
         },
         {
-            header: `<a href="/start-a-business/digital-nomad-business/">Digital nomads</a> and remote work`,
+            header: `Digital nomads and remote work`,
             text: "Traveling and working from other countries is an amazing experience. Now you never worry about missing important mail on the go.",
             image: "digital-nomad-5392",
-            background: color.purple3
+            background: color.purple3,
+            link: {
+                text: "Digital nomads",
+                url: "/start-a-business/digital-nomad-business/"
+            }
         }
     ],
 }

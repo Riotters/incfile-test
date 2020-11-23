@@ -8,6 +8,7 @@ import { getAggregrateReviews } from "../../../api/Api";
 import { formatNumber } from "../../../helpers/utils";
 import { color } from "../../atoms/styles/colors";
 import styled from "styled-components";
+import {Link} from "gatsby";
 
 const RatingBox = styled.a`
   display: flex;
@@ -41,7 +42,7 @@ const TextWrapper = styled.div`
     padding-left: 12px;
 `;
 
-const RatingHeader = styled.p`
+const RatingHeader = styled(Link)`
   font-family: Avenir, sans-serif;
   font-size: 15px;
   font-weight: 900;
@@ -49,6 +50,10 @@ const RatingHeader = styled.p`
   color: #4e4e4e;
   padding-bottom: 2px;
   transition: color 0.3s ease;
+  
+  &:hover {
+    color: ${color.blue1};
+  }
 `;
 
 const CartBlock = () => {

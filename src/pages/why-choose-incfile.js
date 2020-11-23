@@ -26,13 +26,15 @@ const WhyChooseIncfile = () => (
         <Top imageName="hero-why-choose-us"
             imageAlt="why choose incfile"
             imageWidth="330"
+            imageMobileWidth="240"
             imagePositionRight="45%"
+            imageMobilePosition="22%"
             ovalColor="blue"
             headlineWidth="550">
             <h1>{hero.header}</h1>
             <p>{hero.subtitle}</p>
             <Buttonsbox>
-                <Button content={hero.button} theme="primary56" arrow />
+                {/*<Button content={hero.button} theme="primary56" arrow />*/}
             </Buttonsbox>
 
             <RatingRow>

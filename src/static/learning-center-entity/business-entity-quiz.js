@@ -5,7 +5,7 @@ export const top = {
     text: "When you’re deciding to start a business, it’s critical to choose the right business structure or “legal entity.” As company formation specialists, one of the questions we get asked most often is “What is the right type of structure for my new business?” The answer isn’t always easy, because it depends so much on what you want to do with your new venture. That’s why we’ve created an easy-to-use, interactive quiz to suggest the type of legal entity that could work for your new business venture.",
     button: {
         text: "Take the quiz",
-        url: "/"
+        url: "/business-entity-quiz/explain"
     }
 };
 
@@ -29,7 +29,7 @@ export const choose = {
         },
         {
             header: "C - Corporation",
-            text: "Should You Form a Limited Liability Company (LLC)? For over 80% of small businesses, the right choice of business structure is a simple one: the LLC.a",
+            text: "A C Corporation structure is generally better for larger businesses. Is it right for your business?",
             color: color.orange3,
             image: "c-corp-cert-5502",
         },
@@ -46,6 +46,6 @@ export const choose = {
     image: "after-formation-9568",
     button: {
         text: "Take the quiz",
-        url: "/"
+        url: "/business-entity-quiz/explain"
     }
 };

@@ -12,7 +12,11 @@ const Forming = styled.section`
   background-color: ${color.blue3};
   position: relative;
   padding-top: 104px;
-  padding-bottom: 112px;
+  padding-bottom: 56px;
+  
+  @media (min-width: 576px) {
+    padding-bottom: 112px;
+  }
 `;
 
 const FormingSection = ({ className, content, onClick }) => (

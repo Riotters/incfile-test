@@ -15,6 +15,9 @@ import parse from "html-react-parser";
 import Image from '../../../atoms/image/image_nobase64';
 import Whitebox from '../../../atoms/boxes/white-box';
 import ArrowLink from '../../../molecules/buttons/text';
+import {moreInfo} from "../../../../static/learning-center-entity/virtual-mailboxes";
+import Card from "../../../../atomic/molecules/mixed-blocks/top-image-box";
+
 
 const AdvantagesSection = styled.section`
   position: relative;
@@ -106,33 +109,51 @@ const SearchSection = ({ className, content }) => (
             <ContentObject contentWidth="970" contentCenter>
                 <Heading size="2" bottomMargin="62">{content.header2}</Heading>
 
-                <Paragraph big bottomMargin="0">
+                <Paragraph big bottomMargin="104">
                     {content.text2}
                 </Paragraph>
 
-                <CardsWrapper>
-                    <Improvement>
-                        {content.cards2.map(item => (
-                            <Whitebox flex className="improvement__item">
-                                <ImageWrapper background={item.background}>
-                                    <Image filename={item.image} alt={item.title} />
-                                </ImageWrapper>
-                                <Paragraph big mixed={true} style={{  fontWeight: `bold` }} bottomMargin="16">{parse(item.header)}</Paragraph>
-                                <Paragraph mixed={true}>{parse(item.text)}</Paragraph>
-                                {item.link && (
-                                    <ArrowLink bottomMargin="0" content={item.link}/>
-                                )}
-                            </Whitebox>
-                        ))}
-                        <Curve botom="-25" right="-35" color={color.orange2}>
-                            <CurveSVG2 />
-                        </Curve>
-                    </Improvement>
-                </CardsWrapper>
+                <Grid>
+                    {content.cards2.map(item => (
+                        <>
+                            {item.link && (
+                                <Card content={{
+                                    header: item.header,
+                                    text: item.text,
+                                    link: item.link,
+                                }}
+                                      color={item.background} image={item.image} />
+                            )}
+                            {!item.link && (
+                                <Card content={{
+                                    header: item.header,
+                                    text: item.text,
+                                }}
+                                      color={item.background} image={item.image} />
+                            )}
+                        </>
+                    ))}
+                    <Curve top="290" right="-25" color={color.orange2}>
+                        <CurveSVG2 />
+                    </Curve>
+                </Grid>
 
             </ContentObject>
         </InnerSection>
     </AdvantagesSection>
 );
+
+
+const Grid = styled.div`
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 30px;
+  position: relative;
+  width: 100%;
+
+  @media (min-width: 769px) {
+    grid-template-columns: 1fr 1fr;
+  }
+`;
 
 export default SearchSection;

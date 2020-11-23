@@ -1,6 +1,9 @@
 export const top = {
   header: `Sales Tax Calculator`,
-  text: `$0 + State Fee & FREE Registered Agent.`,
+  link: {
+    url: "#sales-calculator",
+    text: "View sales tax calculator"
+  }
 };
 export const about = {
   header:

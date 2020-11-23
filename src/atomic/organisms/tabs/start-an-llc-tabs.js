@@ -367,6 +367,12 @@ const CCorpTabs = ({ layout, columns, content }) => (
                   <Paragraph big>{content.content[4].text2}</Paragraph>
                 </PanelWrapper>
               </Panel>
+              <Panel>
+                <PanelWrapper className="panel6" layout={layout}>
+                  <Heading size="3">{content.content[5].header}</Heading>
+                  <Paragraph big>{content.content[5].text}</Paragraph>
+                </PanelWrapper>
+              </Panel>
             </Collapse>
             {/* </Panels> */}
           </Tabs>

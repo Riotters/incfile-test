@@ -419,7 +419,7 @@ export const namingYourBusiness = [
   },
   {
     type: `text`,
-    content: `More on<a href="/Montana-llc/fees-filing-requirements/">Tennessee Secretary of State business naming rules</a>  `,
+    content: `More on <a href="https://sharetngov.tnsosfiles.com/sos/forms/busname.pdf">Tennessee Secretary of State business naming rules</a>  `,
     marginBottom: 32,
   },
   {

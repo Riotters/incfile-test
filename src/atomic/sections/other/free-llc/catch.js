@@ -39,7 +39,7 @@ const CatchSection = ({ className, content }) => (
       <Paragraph big maxWidth="770" bottomMargin="64">
         {content.text}
       </Paragraph>
-      <Table content={content.table} />
+      {/*<Table content={content.table} />*/}
       <Paragraph big maxWidth="770" topMargin="64">
         {content.text2}
       </Paragraph>

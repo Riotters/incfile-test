@@ -9,9 +9,9 @@ import VisibilitySensor from "../../VisibilitySensor";
 
 const Wrapper = styled.div`
   width: 100%;
-  padding: 75px 0;
+  padding: 35px 0;
   position: relative;
-
+  
   @media (min-width: 769px) {
     padding: 175px 0;
   }

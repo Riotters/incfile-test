@@ -32,7 +32,7 @@ const Cell = styled.div`
         !props.noSeparator &&
         `
   &:not(:last-child) {
-    border-right: 2px solid ${color.grey4};
+    border-right: 1px solid ${color.grey4};
   }
   `};
 `;

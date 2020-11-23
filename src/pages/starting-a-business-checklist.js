@@ -55,8 +55,7 @@ const BusinessChecklist = () => {
         <Heading size={1}>{top.header}</Heading>
         <Paragraph big>{top.text}</Paragraph>
         <Buttonsbox>
-          <Button content={top.buttons[0]} theme="primary56" arrow />
-          <ButtonAction content={top.buttons[1]} theme="secondary56" onClick={popup} marginLG="0 0 0 15px" margin="15px 0 0 0" />
+          <ButtonAction content={top.buttons[1]} theme="secondary56" onClick={popup} margin="15px 0 0 0" />
         </Buttonsbox>
         <RatingRow>
           <CartBlock />

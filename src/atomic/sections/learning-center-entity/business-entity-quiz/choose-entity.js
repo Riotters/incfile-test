@@ -21,6 +21,9 @@ import CurveSVG from "../../../../images/curves/bottom-left-top-right-big.inline
 const Wrapper = styled.section`
    background: linear-gradient(180deg, rgba(255,255,255,0.00) 4%, #FEF6ED 99%);
    position: relative;
+   @media (max-width: 575px) {
+      padding-bottom: 50px;
+   }
    
    .main-top-content p, h1, h2 {
         text-align: center;
@@ -50,16 +53,24 @@ const GridCard = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 48px 40px 40px;
+    padding: 24px 20px 20px;
     box-shadow: ${shadow.white1};
     border-radius: 5px;
     background-color: ${color.white};
     
     p {
         background: ${props => props.color ?? "#fff"};
-        padding: 30px;
+        padding: 15px;
         border-radius: 20px;
         margin-bottom: 0;
+        
+        @media (min-width: 576px) {
+            padding: 30px;
+        }
+    }
+    
+    @media (min-width: 576px) {
+        padding: 48px 40px 40px;
     }
 `;
 
