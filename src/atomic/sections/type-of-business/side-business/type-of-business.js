@@ -44,6 +44,9 @@ const TypeOfBusiness = () => (
                 </AdventagesBox>
             </Service>
         </Container>
+        <TextCenterLayout headlineWidth={770} textWidth={770}
+            text= "If you want to start a successful home-based business, it's important to know what your options are. Here are some of the more popular business ideas."
+        />
     </Wrapper>
 );
 

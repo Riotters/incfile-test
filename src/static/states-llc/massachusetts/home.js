@@ -1340,7 +1340,7 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `Get details on the <a href="https://www.mass.gov/guides/sales-and-use-tax/" target="_blank" rel="noopener noreferrer">Massachusetts sales tax online here.</a>.`,
+    content: `Get details on the <a href="https://www.mass.gov/guides/sales-and-use-tax/" target="_blank" rel="noopener noreferrer">Massachusetts sales tax online here.</a>`,
     marginBottom: 32,
   },
   {
@@ -1450,88 +1450,64 @@ export const businessTaxes = [
     marginBottom: 16,
   },
   {
-    type: `header`,
-    content: `Employer Payroll Tax Withholding for Your Massachusetts LLC `,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `All employers must collect and withhold payroll tax from their employees when they receive their salaries. You would normally withhold 7.65 percent of the taxable salary that you pay to your employees.`,
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `Employer Federal and State Tax Withholding for Your Massachusetts LLC`,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `You may also choose to withhold federal and Massachusetts state income tax on the wages you pay to employees. Speak to your accountant for more information.`,
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `Employees May Need to File Tax Returns`,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `Regardless of whether you withhold federal and Massachusetts state income tax, your employees may need to file their own tax returns.`,
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `Massachusetts LLC Employee Insurance and Other Requirements`,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `You may also need to pay insurance for any employees, like employee compensation insurance or unemployment tax. There will also be other requirements you have for employees.`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `Get more requirements from <a href="https://www.mass.gov/orgs/department-of-labor-standards/" target="_blank" rel="noopener noreferrer">the Massachusetts Department of Labor Standards website.</a>`,
-    marginBottom: 24,
-  },
-  {
-    type: `header`,
-    content: `Other Taxes and Duties for Your Massachusetts LLC`,
-    size: 3,
-    marginBottom: 32,
-  },
-  {
-    type: `text`,
-    content: `Depending on the industry you are in, your Massachusetts LLC may be liable for certain other taxes and duties. For example, if you sell gasoline you may need to pay a tax on any fuel you sell. Likewise, if you import or export goods, you may need to pay certain duties. Speak to your accountant about any other taxes you may need to withhold or pay.`,
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `Estimated Taxes for Your Massachusetts LLC`,
-    size: 3,
-    marginBottom: 32,
-  },
-  {
-    type: `text`,
-    content: `Most Massachusetts LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make.`,
-    marginBottom: 16,
-  },
-  {
-    type: `list-dot`,
+    type: `accordion`,
     content: {
-      header: `The most common types of estimated tax are:`,
-      list: [`Federal income tax`, `Federal self-employment tax`, `Massachusetts state tax`],
+      items: [
+        {
+          question: `Employer Payroll Tax Withholding for Your Massachusetts LLC`,
+          answer: `All employers must collect and withhold payroll tax from their employees when they receive their salaries. You would normally withhold 7.65 percent of the taxable salary that you pay to your employees.`,
+        },
+        {
+          question: `Employer Federal and State Tax Withholding for Your Massachusetts LLC`,
+          answer: `You may also choose to withhold federal and Massachusetts state income tax on the wages you pay to employees. Speak to your accountant for more information.`,
+        },
+        {
+          question: `Employees May Need to File Tax Returns`,
+          answer: `Regardless of whether you withhold federal and Massachusetts state income tax, your employees may need to file their own tax returns.`,
+        },
+        {
+          question: `Massachusetts LLC Employee Insurance and Other Requirements`,
+          answer2: [
+            {
+              type: `paragraph`,
+              content: `You may also need to pay insurance for any employees, like employee compensation insurance or unemployment tax. There will also be other requirements you have for employees.`,
+            },
+            {
+              type: `arrow-links`,
+              content: [
+                {
+                  styles: { marginTop: `24px` },
+                  text: `Get more requirements from the Massachusetts Department of Labor Standards website.`,
+                  url: `https://www.mass.gov/orgs/department-of-labor-standards`,
+                },
+              ],
+            },
+          ],
+        },
+        {
+          question: `Other Taxes and Duties for Your Massachusetts LLC`,
+          answer: `Depending on the industry you are in, your Massachusetts LLC may be liable for certain other taxes and duties. For example, if you sell gasoline you may need to pay a tax on any fuel you sell. Likewise, if you import or export goods, you may need to pay certain duties. Speak to your accountant about any other taxes you may need to withhold or pay.`,
+        },
+        {
+          question: `Estimated Taxes for Your Massachusetts LLC`,
+          answer2: [
+            {
+              type: `paragraph`,
+              content: `Most Massachusetts LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make.`,
+            },
+            {
+              type: `list-dot-without-bg`,
+              color: color.orange3,
+              content: [`Federal income tax`, `Federal self-employment tax`, `Massachusetts state tax`],
+            },
+            {
+              type: `paragraph`,
+              content: `Most Massachusetts LLCs will pay estimated taxes four times a year. Speak to your accountant for more information.`,
+            },
+          ],
+        },
+      ],
     },
-    marginBottom: 24,
-    color: color.green3,
-  },
-  {
-    type: `text`,
-    content: `Most Massachusetts LLCs will pay estimated taxes four times a year. Speak to your accountant for more information.`,
     marginBottom: 32,
   },
   {
