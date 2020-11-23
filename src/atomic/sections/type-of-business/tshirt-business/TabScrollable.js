@@ -60,7 +60,7 @@ const ButtonList = [
     tabId: "registered-agent",
   },
   {
-    title: "Taxes",
+    title: "Business Taxes",
     icon: TaxesColoredIcon,
     tabId: "taxes",
   },
@@ -316,7 +316,7 @@ const TabScrollable = ({ layout, columns }) => {
                       widthUnit="%"
                     >
                       <Paragraph big flex flexAlign={true} style={{ color: color.black, fontWeight: "bold" }} mixed={true}>
-                        Taxes
+                        Business Taxes for a T-Shirt Company
                       </Paragraph>
 
                       <Paragraph big>Taxes are a fact of life. If you’re in business, there are various ways you will need to file and pay them.</Paragraph>
@@ -360,10 +360,7 @@ const TabScrollable = ({ layout, columns }) => {
                       <Paragraph big>There are certain forms and legalities you need to follow to keep your T-shirt business in good standing.</Paragraph>
 
                       <Accordion tab content={MaintainingAccordionContent} />
-
-                      <Paragraph big mixed={true} style={{ marginTop: "48px" }}>
-                        As a rule of thumb, we recommend keeping back around a third of your earnings to pay your taxes. We can even <Link to="/business-accounting/">prepare and file your tax returns for you</Link>.
-                      </Paragraph>
+                      
                     </TextBlockWithImage>
                   </div>
                 );

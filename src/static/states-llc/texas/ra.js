@@ -26,7 +26,7 @@ export const agentPageContent = {
     },
     {
       type: `heading`,
-      size: 2,
+      size: 3,
       content: `Information from the SOS on TX Registered Agent Services`,
     },
     {

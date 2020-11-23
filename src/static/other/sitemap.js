@@ -1007,7 +1007,7 @@ export const list = {
               links: [
                 {
                   text: `How Easy Is Forming an LLC or Corporation`,
-                  url: `/research-topics/business-taxes/sellers-permit/`,
+                  url: `/research-topics/video-library/forming-llc-or-corp/`,
                 },
               ],
             },
@@ -1015,7 +1015,7 @@ export const list = {
               links: [
                 {
                   text: `Protect Your Personal Assets`,
-                  url: `/research-topics/business-taxes/minimizing-tax-expenses/`,
+                  url: `/research-topics/video-library/protect-assets/`,
                 },
               ],
             },
@@ -1023,7 +1023,7 @@ export const list = {
               links: [
                 {
                   text: `Learn How To Save Money With Incfile`,
-                  url: `/research-topics/business-taxes/tax-advantages/`,
+                  url: `/research-topics/video-library/save-with-incfile/`,
                 },
               ],
             },
