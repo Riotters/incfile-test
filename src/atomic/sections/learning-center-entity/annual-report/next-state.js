@@ -16,7 +16,12 @@ import { getAnnualReportDueDate } from "../../../../api/Api";
 
 const NextState = styled.section`
   position: relative;
-  padding: 108px 0;
+  padding: 54px 0;
+  
+  @media (min-width: 576px) {
+    padding: 108px 0;
+  }
+  
   background-color: ${color.orange3};
 `;
 

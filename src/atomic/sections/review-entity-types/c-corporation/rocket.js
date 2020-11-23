@@ -39,7 +39,12 @@ const Rocket = ({ content }) => (
 const Wrapper = styled.div`
   position: relative;
   min-height: 775px;
-  margin-bottom: 50px;
+  margin-bottom: -120px;
+  
+  @media (min-width: 576px) {
+    margin-bottom: 50px;
+  }
+  
   display: flex;
   align-items: center;
 `;
