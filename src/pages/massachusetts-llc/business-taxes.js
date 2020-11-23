@@ -28,7 +28,7 @@ const BusinessTaxesPage = () => {
                 title="Massachusetts Business Taxes & Sales Tax for LLCs"
                 description="Do you have an MA LLC? Learn about the required federal, state, and sales taxes you might need to pay. Read more."
             />
-            <LLCLayout>
+            <LLCLayout data={dataApi}>
                 <LeftTabPages content={tabPages} />
                 <MainPageContent>
                     <ContentMap content={businessTaxes} />
