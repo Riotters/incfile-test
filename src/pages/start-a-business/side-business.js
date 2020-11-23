@@ -212,7 +212,7 @@ const SideBusiness = () => (
 
           <CountingTextBoxed number={6}>
             <Paragraph bottomPadding={0} bottomMargin={0}>
-              Your business model
+              Your online business model
             </Paragraph>
           </CountingTextBoxed>
 
@@ -367,7 +367,7 @@ const SideBusiness = () => (
           </Paragraph>
           <Paragraph big style={{ paddingTop: "48px", paddingBottom: 0 }} mixed={true}>
             In most cases, our recommendation for a side business would be to create an LLC. See our
-            <Link to="/form-an-llc/">complete guide to creating an LLC</Link> to learn everything you need to do, or and have Incfile register your business for you. No matter what state you’re in, we’ve got you covered.
+            <Link to="/form-an-llc/"> complete guide to creating an LLC</Link> to learn everything you need to do, or and have Incfile register your business for you. No matter what state you’re in, we’ve got you covered.
           </Paragraph>
 
           <Button theme="primary48" width="365px" arrow content={{ url: `${process.env.ORDER_URL}/form-order-now.php`, text: `Start your business with us, today!` }} />
