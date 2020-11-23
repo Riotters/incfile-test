@@ -86,11 +86,11 @@ export const startBusiness = {
   text: `We have a full guide to starting a new business in Georgia. Learn about how to start a GA LLC or a GA corporation.`,
   button: {
     text: `GA LLC`,
-    url: `/`,
+    url: `/georgia-llc`,
   },
   button2: {
     text: `GA Corporation`,
-    url: `/`,
+    url: `/georgia-corporation`,
   },
 };
 

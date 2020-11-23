@@ -5,6 +5,19 @@ export const top = {
   text1: `Here at Incfile, we make sure you’ve got access to the information and customer support you need. We make business formation as <a href="/how-it-works/">simple and easy as possible</a>, though we know it’s sometimes a complex subject.`,
   text2: `That’s why we’ve invested in a group of Business Formation Specialists (our customer service team), so you have the information you need to make the best choice for your business. We’re proud that our specialist team generates positive customer reviews, and we and continue to strive to improve our service to you.`,
   text3: `Read on to find out how we’re making it easier for you to start your business.`,
+  header2: `Want to see how Incfile compares to other business formation services? `,
+  link1: {
+    text: "Incfile vs. LegalZoom",
+    url: "/incfile-vs-legalzoom/"
+  },
+  link2: {
+    text: "Incfile vs. ZenBusiness",
+    url: "/incfile-vs-zenbusiness/"
+  },
+  link3: {
+    text: "Incfile vs. Rocket Lawyer",
+    url: "/incfile-vs-rocket-lawyer/"
+  },
 };
 
 export const improvement = {
@@ -14,17 +27,17 @@ export const improvement = {
     {
       title: `We Doubled the Size of Customer Service`,
       desc: `You get fast and easy access to our team of Business Formation Specialists. They can answer your questions about business entities, talk you through how to use all of our services and resolve any issues that might come up.`,
-      image: `we-doubled-the-size-of-customer-service`,
+      image: `we-doubled-the-size-of-customer-service-2772`,
     },
     {
       title: `We Have an Interactive Help Service`,
       desc: `You can get immediate answers from our comprehensive guides. At the bottom right of each screen, you’ll see a blue “Help” button. Click on that, and it will provide you with a search box where you can enter a search term and view our resources on many topics. You can also browse through all of our content in the Learning Center drop down in the top navigation of our website.`,
-      image: `we-have-an-interactive-help-service-02`,
+      image: `we-have-an-interactive-help-service-8232`,
     },
     {
       title: `We Added Live Chat`,
       desc: `You can contact your customer support team in a way that works for you. We know you might be too busy to spend time on the phone and you might not want to wait for an email response. That’s why we now have a fully-featured chat service that connects you directly to our support team, during business hours.`,
-      image: `talk293`,
+      image: `talk-to-incorporation-specialist-not-a-salesperson-1223`,
     },
   ],
 };
@@ -32,7 +45,6 @@ export const improvement = {
 export const positiveReview = {
   header: `Positive Incfile Reviews`,
   text1: `We’re delighted that our clients love using our services. Here’s what people say about Incfile:`,
-  text2: `Finally, the <a href="https://www.bbb.org/us/tx/houston/profile/incorporation/incfilecom-llc-0915-51001358">Better Business Bureau</a> gives us an A+ rating with 92% positive Incfile reviews and a score of 4.89 out of 5.`,
   facebook: {
     text1: `Clients on our <a href="https://www.facebook.com/incfile/">Incfile Facebook page</a> gave us an average rating of <b>4 out of 5</b>, with <br>people saying things like:`,
     reviews: [

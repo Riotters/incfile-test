@@ -22,6 +22,14 @@ import ArrowLink from "../../../molecules/buttons/text";
 
 const Wrapper = styled.div`
   position: relative;
+  
+  .oval {
+    display: none;
+  
+    @media (min-width: 576px) {
+        display: block;
+    }
+  }
 `;
 
 const Row = styled.div`
@@ -32,19 +40,24 @@ const Row = styled.div`
 `;
 
 const Grid = styled.div`
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-column-gap: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
-
-  @media (min-width: 769px) {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
 `;
 
 const Column = styled.div`
   display: flex;
   flex-direction: column;
+  width: 100%;
+  
+  @media (min-width: 768px) {
+    width: 50%;
+  }
+  
+  @media (min-width: 992px) {
+    width: calc(100% / 3);
+  }
 
   a {
     font-size: 16px;

@@ -16,9 +16,9 @@ import { top, fee, start, industry, isCatch } from "../static/other/free-llc";
 const GeneralResearchTopics = () => (
   <Layout>
     <SEO title="Free LLC Filing | Register Your LLC Online for Free" description="Let Incfile take care of the paperwork for you—for free! Form your business today for $0 + your state’s fee. Learn more." />
-    <Top imageName="mrs-bulb-free-llc-5591" imageAlt="Mrs Bulb and with checklist" ovalColor="blue" headlineWidth="800">
+    <Top imageName="mrs-bulb-free-llc-5591" imageAlt="Mrs Bulb and with checklist" ovalColor="blue" headlineWidth="800" tabletVariantClass="tablet--shopper">
       <h1>{top.header}</h1>
-      <RatingRow topMargin="64">
+      <RatingRow topMargin="64" topMarginMD={32}>
         <CartBlock />
         <RatingBlock />
       </RatingRow>

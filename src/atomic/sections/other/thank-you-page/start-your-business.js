@@ -41,6 +41,43 @@ const Wrapper = styled.div`
     }
 `;
 
+const LightBoxModal = styled.div`
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: ${(props) => (props.visible ? "1" : "0")};
+  visibility: ${(props) => (props.visible ? "visible" : "hidden")};
+`;
+
+const LightBoxContent = styled.div`
+ transition: height 0.5s, max-width .5s;
+
+  background-color: #fff;
+  width: 100%;
+  max-width: 960px;
+  position: relative;
+  margin: 0 30px;
+  max-height: 100vh;
+  overflow-y: auto;
+  @media screen and (min-width: 769px) {
+    height: 95vh;
+    padding-top: 0;
+    overflow-y: visible;
+  }
+  
+  &.form-submitted {
+    height: 40vh;
+    max-width: 500px;
+  }
+`;
+
 const StartYourBusinessSection = ({ className, content }) => (
     <Wrapper>
         <Oval className="oval" height="420" width="420" top="0" left="0">

@@ -59,7 +59,11 @@ const TabBox = styled.div`
 
   .accordion-panel {
     box-shadow: ${shadow.white1};
-    overflow: hidden;
+    overflow-y: hidden;
+    
+    @media (max-width: 1094px) {
+      min-width: 1008px;
+    }
   }
 `;
 
@@ -145,6 +149,10 @@ const Button = styled.button`
   }
 `;
 
+const Column = styled.div`
+  min-width: 160px;
+`;
+
 const Content = styled.div`
   display: flex;
   justify-content: space-between;
@@ -209,8 +217,18 @@ const Separator = styled.div`
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 180px 180px 180px 180px;
   grid-gap: 70px;
+  
+  @media (min-width: 992px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  
+  & > div {
+    @media (max-width: 991px) {
+      min-width: 180px;
+    }
+  }
 `;
 
 const cn = (...args) => args.filter(Boolean).join(" ");
@@ -276,10 +294,10 @@ const Accordion = ({ content, curve, curveRight, curveRightBottom, curveLeft, cu
                       {typeof item.answer === "object" ? (
                         <Grid>
                           {item.answer.map((el) => (
-                            <div>
+                            <Column>
                               <Heading size="5">{el.header}</Heading>
                               <Paragraph bottomMargin="0">{el.text}</Paragraph>
-                            </div>
+                            </Column>
                           ))}
                         </Grid>
                       ) : null}
