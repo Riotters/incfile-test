@@ -110,7 +110,7 @@ const HowToGuide = ({ content, data }) => {
       </Heading>
 
       <div id="video">
-        <LightBoxVideo thumbnailVideo="comparison-chart-video-3611" videoID="wGAzGRmy6m8" />
+        <LightBoxVideo thumbnailVideo="tx-llc-video-thumbnail-01" videoID="wGAzGRmy6m8" />
       </div>
 
       {content.mainSteps.navSteps.map((step) => (
