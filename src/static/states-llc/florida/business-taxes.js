@@ -128,6 +128,15 @@ export const businessTaxesPageContent = {
     },
     {
       type: `paragraph`,
+      content: `There are a couple different federal taxes that every LLC will need to pay, including Florida LLCs. These are self-employment tax and federal income tax, which are taxed as “pass-through” income via your tax return forms.`,
+    },
+    {
+      type: `heading`,
+      size: 3,
+      content: `Florida LLC Federal Self-Employment Tax`,
+    },
+    {
+      type: `paragraph`,
       content: `All Florida LLC business members or managers who take profits out of the LLC will need to pay self-employment tax. This tax is also known as FICA, Social Security or Medicare tax. It applies to all the earnings you withdraw from your Florida business. The current self-employment tax rate is 15.3%.`,
     },
     {
@@ -165,7 +174,7 @@ export const businessTaxesPageContent = {
       bgImage: [BgBoxTreatAsAnScorp],
       content: {
         title: `Treating your LLC as an S Corp can help you save money.`,
-        subtitle: `you can do this by making an “S Corporation Tax Election” with the IRS using a form known as Form 2553. We can file your Form 2553 with the IRS on your behalf.`,
+        subtitle: `You can do this by making an “S Corporation Tax Election” with the IRS using a form known as Form 2553. We can file your Form 2553 with the IRS on your behalf.`,
         button: {
           text: `Get My LLC Treated As An S Corp`,
           url: `/business-accounting/`,

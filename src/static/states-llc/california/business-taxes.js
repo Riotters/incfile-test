@@ -92,6 +92,7 @@ export const businessTaxesPageContent = {
 
     {
       type: `heading`,
+      styles: { marginTop: `48px` },
       size: 3,
       content: `California Sales Taxes on LLC Sales`,
     },
@@ -156,7 +157,7 @@ export const businessTaxesPageContent = {
     },
     {
       type: `paragraph`,
-      content: `here are a couple different federal taxes that every LLC will need to pay, including California LLCs. These are self-employment tax and federal income tax, which are taxed as “pass-through” income via your tax return forms.`,
+      content: `There are a couple different federal taxes that every LLC will need to pay, including California LLCs. These are self-employment tax and federal income tax, which are taxed as “pass-through” income via your tax return forms.`,
     },
 
     {
@@ -203,7 +204,7 @@ export const businessTaxesPageContent = {
       bgImage: [BgBoxTreatAsAnScorp],
       content: {
         title: `Treating your LLC as an S Corp can help you save money.`,
-        subtitle: `you can do this by making an “S Corporation Tax Election” with the IRS using a form known as Form 2553. We can file your Form 2553 with the IRS on your behalf.`,
+        subtitle: `You can do this by making an “S Corporation Tax Election” with the IRS using a form known as Form 2553. We can file your Form 2553 with the IRS on your behalf.`,
         bgSize: "",
         button: {
           text: `Get My LLC Treated As An S Corp`,
@@ -288,6 +289,10 @@ export const businessTaxesPageContent = {
                 color: color.orange3,
                 content: [`Federal income tax`, `Federal self-employment tax`, `California state tax`],
               },
+              {
+                type: `paragraph`,
+                content: `Most California LLCs will pay estimated taxes four times a year. Speak to your accountant for more information.`,
+              },
             ],
           },
         ],
@@ -310,7 +315,7 @@ export const businessTaxesPageContent = {
           },
           {
             question: `Does California Have a State Tax?`,
-            answer: `No. California does not have a general state income tax.`,
+            answer: `Yes. California does have a general state income tax. You can find more information above.`,
           },
           {
             question: `What Is the Sales Tax Rate in California?`,

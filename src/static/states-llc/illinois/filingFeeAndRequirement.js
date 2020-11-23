@@ -7,6 +7,7 @@ import BgBoxTradeName from "../../../images/box-cta-trade-name-01.png";
 import BgBoxCGS from "../../../images/box-cta-gsd-01.png";
 import BgBoxRA from "../../../images/icons/states/mrs-bulb-thumb-up-left-color-01.png";
 import BgBoxPaperWork from "../../../images/icons/states/handle-paperwork.inline.png";
+import { size } from "lodash";
 
 export const filingFeeAndRequirementContent = {
   header: {
@@ -54,6 +55,11 @@ export const filingFeeAndRequirementContent = {
       type: `dynamic_ar_box`,
     },
     {
+      type: `paragraph`,
+      styles: { marginTop: `-24px`, fontSize: `12px`, color: `red`, },
+      content: `*includes state online processing fees`,
+    },
+    {
       type: `arrow-links`,
       content: [
         {
@@ -68,6 +74,7 @@ export const filingFeeAndRequirementContent = {
     },
     {
       type: `paragraph`,
+      styles: { marginTop: `16px` },
       content: `When you form your IL LLC through Incfile, we automatically charge you this fee and forward it to the Illinois Secretary of State when we file your incorporation paperwork.`,
     },
     {
@@ -149,6 +156,11 @@ export const filingFeeAndRequirementContent = {
     },
     {
       type: `dynamic_filing_requirement`,
+    },
+    {
+      type: `paragraph`,
+      styles: { marginTop: `-32px`, fontSize: `12px`, color: `red`, },
+      content: `*includes state online processing fees`,
     },
     {
       type: `box-cta`,

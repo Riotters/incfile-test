@@ -24,11 +24,8 @@ const AboutSection = ({ className, content }) => (
     </Oval>
     <ImageContent image="web-address-search">
       <Path content={content.links} />
-      <Heading size={4} bottomMargin="48">
+      <Heading size={3} bottomMargin="48">
         {content.header}
-      </Heading>
-      <Heading size={3} bottomMargin="32">
-        {content.header2}
       </Heading>
       <Paragraph big bottomMargin="16">
         {content.text}
@@ -39,26 +36,29 @@ const AboutSection = ({ className, content }) => (
       <Paragraph big bottomMargin="16">
         {content.text3}
       </Paragraph>
-      <Paragraph big bottomMargin="24">
+      <Paragraph big bottomMargin="16">
         {content.text4}
       </Paragraph>
-      <IconListColorBox content={content.list} color={color.purple3} curve curveColor={color.green2} rounded bottomMargin="24" />
       <Paragraph big bottomMargin="24">
         {content.text5}
       </Paragraph>
+      <IconListColorBox content={content.list} color={color.purple3} curve curveColor={color.green2} rounded bottomMargin="24" />
+      <Paragraph big bottomMargin="24">
+        {content.text6}
+      </Paragraph>
       <IconListColorBox content={content.list2} color={color.orange3} curve curveColor={color.babyblue2} rounded bottomMargin="24" />
       <Paragraph big bottomMargin="48">
-        {content.text6}
+        {content.text7}
       </Paragraph>
       <Heading size={3} bottomMargin="32">
         {content.header3}
       </Heading>
       <Paragraph big bottomMargin="24">
-        {content.text7}
+        {content.text8}
       </Paragraph>
       <IconListColorBox content={content.list3} color={color.babyblue3} curve curveColor={color.red2} rounded bottomMargin="24" />
       <Paragraph big bottomMargin="48">
-        {content.text8}
+        {content.text9}
       </Paragraph>
     </ImageContent>
   </About>

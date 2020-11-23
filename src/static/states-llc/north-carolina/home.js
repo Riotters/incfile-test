@@ -1152,7 +1152,7 @@ export const feesAndRequirments = [
   },
   {
     type: `header`,
-    content: `To Get a Certificate of Good Standing`,
+    content: `To Get a Certificate of Good Standing for Your North Carolina LLC`,
     size: 3,
     marginBottom: 32,
   },

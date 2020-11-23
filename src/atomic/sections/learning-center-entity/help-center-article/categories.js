@@ -37,8 +37,8 @@ const CategoriesSection = ({ className, content }) => (
       <Curve top="-25" left="-29" color={color.blue1}>
         <CurveSVG />
       </Curve>
-      {content.buttons.map((button, i) => (
-        <CategoryButton content={button} icon={icons[i]} />
+      {content.buttons.map((buttons, i) => (
+        <CategoryButton content={buttons} icon={icons[i]} />
       ))}
     </CenterGrid>
   </Categories>
