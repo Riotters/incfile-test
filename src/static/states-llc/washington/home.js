@@ -113,9 +113,14 @@ export const howToGuide = [
     marginBottom: 24,
   },
   {
+    type: `text`,
+    content: `The Secretary of State has plenty of other information on forming and running a business in Washington.`,
+    marginBottom: 24,
+  },
+  {
     type: `list-dot`,
     content: {
-      header: `The Secretary of State has plenty of other information on forming and running a business in Washington. You’ll find other useful information below:`,
+      header: `You’ll find other useful information below:`,
       list: [
         `<a href="https://www.sos.wa.gov/corps/limitedliabilitycompaniesllconlineandpaperregistrations.aspx" target="_blank" rel="noopener noreferrer">Washington Secretary of State for forming and running your LLC</a>`,
         `<a href="https://www.lni.wa.gov/" target="_blank" rel="noopener noreferrer">Washington Division of Labor for employers and hiring</a>`,
@@ -123,7 +128,7 @@ export const howToGuide = [
       ],
     },
     marginBottom: 48,
-    color: color.blue2,
+    color: color.blue3,
     curve: true,
     curveColor: color.red1,
   },
@@ -145,13 +150,18 @@ export const howToGuide = [
     marginBottom: 24,
   },
   {
+    type: `text`,
+    content: `Some states, including Washington, allow certain occupations to form “Professional LLCs.” These types of businesses typically have special requirements and licensing.`,
+    marginBottom: 24,
+  },
+  {
     type: `list-dot`,
     content: {
-      header: `Some states, including Washington, allow certain occupations to form “Professional LLCs.” These types of businesses typically have special requirements and licensing. Here are the occupations that the WA Secretary of State allows to form professional LLCs:`,
+      header: `Here are the occupations that the WA Secretary of State allows to form professional LLCs:`,
       list: [`Attorneys-at-law`, `Physicians`, `Podiatrists`, `Dentists`, `Optometrists`, `Accountants`, `Veterinarians`, `Architects`, `Engeneers`, `Osteopathic physicians and surgeons`, `Chiropractors`, `Psychologists`, `Social workers`, `Acupuncturists`, `Land surveyors`],
     },
     marginBottom: 48,
-    color: color.babyblue3,
+    color: color.green3,
   },
   {
     type: `header`,
@@ -187,30 +197,65 @@ export const howToGuide = [
   {
     type: `header`,
     content: `More Information About Washington LLCs`,
+    size: 3,
     marginBottom: 24,
   },
   {
-    type: `accordion`,
+    type: `text`,
+    content: `You’ll find plenty more insight and guidance on the other pages of this guide, including:`,
+    marginBottom: 32,
+  },
+  {
+    type: `arrow-link`,
     content: {
-      items: [
-        {
-          question: `Naming Your Washington LLC`,
-          answer: `How to search the Washington business registry of the DC Department of Consumer and Regulatory Affairs and find the right name. Includes information on naming rules, fictitious names, reserving a Washington LLC name and more.`,
-        },
-        {
-          question: `Washington Registered Agents for Your LLC`,
-          answer: `How to appoint a Washington Registered Agent to your new LLC or change to a different Registered Agent. Includes information on Registered Agent rules and searching for Washington Registered Agents.`,
-        },
-        {
-          question: `Fees and Requirements for Your Washington LLC`,
-          answer: `How to understand the various fees you’ll need to pay and the requirements you’ll need to meet for both federal and Washington rules. Includes details of Employee Identification Numbers (EINs), Washington DC and federal business licenses, Washington Annual Reports and more.`,
-        },
-        {
-          question: `Federal, State, Sales and Other Taxes for Your Washington DC LLC`,
-          answer: `How to understand the various taxes you will need to pay to the federal and Washington government. Includes details of federal taxes like income and self-employment, and Washington DC taxes like sales tax and income tax.`,
-        },
-      ],
+      text: `Naming Your Washington LLC`,
+      url: `/washington-llc/how-to-name-your-llc/`,
     },
+    marginBottom: 16,
+  },
+  {
+    type: `text`,
+    content: `How to search the Washington business registry of the Secretary of State and find the right name. Includes information on naming rules, fictitious names, reserving a Washington LLC name and more.`,
+    marginBottom: 48,
+  },
+  {
+    type: `arrow-link`,
+    content: {
+      text: `Washington Registered Agents for LLCs`,
+      url: `/washington-llc/registered-agents-washington-llc/`,
+    },
+    marginBottom: 16,
+  },
+  {
+    type: `text`,
+    content: `How to appoint a Registered Agent to your new LLC or change to a different Registered Agent. Includes information on Registered Agent rules and searching forWashington Registered Agents.`,
+    marginBottom: 48,
+  },
+  {
+    type: `arrow-link`,
+    content: {
+      text: `Fees and Requirements for Washington LLCs`,
+      url: `/washington-llc/form-filling-permit-requirements/`,
+    },
+    marginBottom: 16,
+  },
+  {
+    type: `text`,
+    content: `How to understand the various fees you’ll need to pay and the requirements you’ll need to meet for both federal and Washington rules. Includes details of Employer Identification Numbers (EINs), Washington and federal business licenses, annual reports and more.`,
+    marginBottom: 48,
+  },
+  {
+    type: `arrow-link`,
+    content: {
+      text: `Federal, State, Sales and Other Taxes for Your Washington LLC`,
+      url: `/washington-llc/business-taxes/`,
+    },
+    marginBottom: 16,
+  },
+  {
+    type: `text`,
+    content: `How to understand the various taxes you will need to pay to the federal and Washington government. Includes details of federal taxes like income and self-employment, and Washington taxes like sales tax and income tax.`,
+    marginBottom: 48,
   },
 ];
 

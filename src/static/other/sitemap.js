@@ -26,7 +26,7 @@ export const list = {
                 },
                 {
                   text: `Legal Disclaimer`,
-                  url: `/legal-disclaimer/`,
+                  url: `/disclaimer/`,
                 },
                 {
                   text: `Incfile Incorporate`,
@@ -260,7 +260,7 @@ export const list = {
               links: [
                 {
                   text: `Renew Registered Agent`,
-                  url: `/dashboard/`, //file doesn't exist
+                  url: `/`, // dashboard file doesn't exist
                 },
                 {
                   text: `State Filing Times`,
@@ -300,7 +300,7 @@ export const list = {
                 },
                 {
                   text: `Check Order Status`,
-                  url: `/dashboard/`, //file doesn't exist
+                  url: `/`, // dashboard file doesn't exist
                 },
                 {
                   text: `Entity Comparison Chart`,
@@ -706,7 +706,7 @@ export const list = {
               links: [
                 {
                   text: `LLC vs. S Corporation`,
-                  url: `/research-topics/c-corporation-info/llc-vs-s-corporation/`,
+                  url: `/research-topics/s-corporation-info/llc-vs-s-corporation/`,
                 },
                 {
                   text: `What are the Advantages of an S Corporation?`,
