@@ -81,7 +81,7 @@ export const MaintainingAccordionContent = {
             answer: "You will be expected to pay estimated taxes on what you plan to earn in the current business year. You will need to pay estimated taxes in April, June, September and January (of the following year)."
         },
         {
-            question: "Renew Business Permits and Licenses",
+            question: "Prepare Your Taxes",
             answer: "You will need to work with your accountant to prepare all the taxes you need to pay."
         },
         {
@@ -93,7 +93,7 @@ export const MaintainingAccordionContent = {
             answer: "You will need to make payroll and sales tax payments on a regular basis."
         },
         {
-            question: "Prepare Your Taxes",
+            question: "Renew Business Permits and Licenses",
             answer: "Your federal, state, regional and city licenses and permits may need to be renewed on a regular basis, typically once"
         }
     ]
