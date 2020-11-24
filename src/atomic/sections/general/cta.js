@@ -6,6 +6,7 @@ import Button from "../../molecules/buttons/button";
 import MapSVG from "../../../images/map.inline.svg";
 import OvalSVG from "../../../images/oval-yellow-2.inline.svg";
 import VisibilitySensor from "../../VisibilitySensor";
+import VSActionSensor from "react-visibility-sensor";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -92,28 +93,94 @@ const Map = styled.div`
   }
 `;
 
-const Cta = ({ cta }) => (
-  <Wrapper>
-    <Oval>
-      <OvalSVG />
-    </Oval>
-    <Container>
-      <Content>
-        <Map>
-          <MapSVG />
-        </Map>
-        <VisibilitySensor partialVisibility once>
-          {({ isVisible }) => <h2 className={isVisible ? "slideUp enter" : "slideUp"}>{cta ? cta.header : "Choose the right and\u00A0start your business"}</h2>}
-        </VisibilitySensor>
-        <VisibilitySensor partialVisibility once>
-          {({ isVisible }) => <p className={isVisible ? "slideUp enter" : "slideUp"}>$0 + State Fee & FREE Registered Agent for 1st year.</p>}
-        </VisibilitySensor>
-        <VisibilitySensor partialVisibility once>
-          {({ isVisible }) => <Button className={isVisible ? "slideUp enter" : "slideUp"} content={{ text: cta?.button.text ?? `Start Now`, url: `${process.env.ORDER_URL}/form-order-now.php` }} theme="primary56" arrow marginSM="0 auto" />}
-        </VisibilitySensor>
-      </Content>
-    </Container>
-  </Wrapper>
-);
+const Cta = ({ cta, storageKey = false, onViewportEntry = false }) => {
+    const [numFired, setNumFired] = React.useState(0);
+
+    React.useEffect(function () {
+        if (storageKey && window.localStorage.getItem(storageKey) != null) {
+            setNumFired(window.localStorage.getItem(storageKey));
+        }
+    });
+
+    const onChangeHandler = function () {
+        if(!storageKey || typeof onViewportEntry !== "function") return;
+
+        if (numFired === 1)
+            onViewportEntry();
+
+        if (numFired < 2)
+            setNumFired(numFired + 1);
+
+        if (numFired === 2) {
+            if (typeof window !== "undefined")
+                window.localStorage.setItem(storageKey, 2);
+
+            setNumFired(3);
+        }
+    };
+
+    return (
+        <Wrapper>
+            {storageKey && typeof onViewportEntry === "function" && (
+                <VSActionSensor partialVisibility="top" onChange={onChangeHandler}>
+                    <>
+                        <Oval>
+                            <OvalSVG/>
+                        </Oval>
+                        <Container>
+                            <Content>
+                                <Map>
+                                    <MapSVG/>
+                                </Map>
+                                <VisibilitySensor partialVisibility once>
+                                    {({isVisible}) => <h2
+                                        className={isVisible ? "slideUp enter" : "slideUp"}>{cta ? cta.header : "Choose the right and\u00A0start your business"}</h2>}
+                                </VisibilitySensor>
+                                <VisibilitySensor partialVisibility once>
+                                    {({isVisible}) => <p className={isVisible ? "slideUp enter" : "slideUp"}>$0 + State Fee
+                                        & FREE Registered Agent for 1st year.</p>}
+                                </VisibilitySensor>
+                                <VisibilitySensor partialVisibility once>
+                                    {({isVisible}) => <Button className={isVisible ? "slideUp enter" : "slideUp"} content={{
+                                        text: cta?.button.text ?? `Start Now`,
+                                        url: `${process.env.ORDER_URL}/form-order-now.php`
+                                    }} theme="primary56" arrow marginSM="0 auto"/>}
+                                </VisibilitySensor>
+                            </Content>
+                        </Container>
+                    </>
+                </VSActionSensor>
+            )}
+            {(!storageKey || typeof onViewportEntry !== "function") && (
+                <>
+                    <Oval>
+                        <OvalSVG/>
+                    </Oval>
+                    <Container>
+                        <Content>
+                            <Map>
+                                <MapSVG/>
+                            </Map>
+                            <VisibilitySensor partialVisibility once>
+                                {({isVisible}) => <h2
+                                    className={isVisible ? "slideUp enter" : "slideUp"}>{cta ? cta.header : "Choose the right and\u00A0start your business"}</h2>}
+                            </VisibilitySensor>
+                            <VisibilitySensor partialVisibility once>
+                                {({isVisible}) => <p className={isVisible ? "slideUp enter" : "slideUp"}>$0 + State Fee
+                                    & FREE Registered Agent for 1st year.</p>}
+                            </VisibilitySensor>
+                            <VisibilitySensor partialVisibility once>
+                                {({isVisible}) => <Button className={isVisible ? "slideUp enter" : "slideUp"} content={{
+                                    text: cta?.button.text ?? `Start Now`,
+                                    url: `${process.env.ORDER_URL}/form-order-now.php`
+                                }} theme="primary56" arrow marginSM="0 auto"/>}
+                            </VisibilitySensor>
+                        </Content>
+                    </Container>
+                </>
+            )}
+        </Wrapper>
+    );
+};
 
 export default Cta;

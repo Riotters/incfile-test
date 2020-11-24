@@ -105,12 +105,66 @@ const Wrapper = styled.div`
   position: relative;
   padding-top: 80px;
   z-index: 1;
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    align-items: flex-start;
+    overflow: hidden;
+  }
 
   @media (min-width: 992px) {
     flex-direction: row;
     height: ${(props) => (props.heightSM ? props.heightSM : "100vh")};
     max-height: 777px;
     padding-top: 0;
+  }
+  
+  &.tablet--shopper {
+    .top-content {
+      @media (min-width: 768px) and (max-width: 991px) {
+        order: 1;
+        max-width: 50%;
+        margin: 15px 0 0;
+        
+        h1, h2, h3, h4, p {
+          text-align: left;
+        }
+        
+        & > div > div {
+          align-items: flex-start;
+          justify-content: flex-start;
+        }
+      }
+    }
+    
+    .top-image-container {
+      @media (min-width: 768px) and (max-width: 991px) {
+        order: 2;
+        min-height: 100px;
+        overflow: visible;
+        position: relative;
+        
+        .gatsby-image-wrapper {
+          top: ${props => props.tabletImgPosY ?? -440}%;
+          left: ${props => props.tabletImgPosX ?? 25}%;
+          width: 85%;
+          max-width: 664px;
+          position: absolute !important;
+          transform: scale(${props => props.tabletImgScale ?? "1"});
+        }
+      }
+    }
+    
+    .oval {
+      @media (min-width: 768px) and (max-width: 991px) {
+        width: 65%;
+      }
+    }
+    
+    div[class^="top-buttons-box__Wrapper"] {
+      @media (min-width: 768px) and (max-width: 991px) {
+        align-items: flex-start;
+      }
+    }
   }
 `;
 
@@ -239,19 +293,19 @@ const ImageContainer = styled.div`
   }
 `;
 
-const Top = ({ children, imageName, imageAlt, imageWidth, imagePositionRight, imageMobilePosition, contentWidth, headlineWidth, textWidth, ovalColor, imageMobileWidth, ...rest }) => (
-  <Wrapper {...rest}>
+const Top = ({ children, imageName, imageAlt, imageWidth, imagePositionRight, imageMobilePosition, contentWidth, headlineWidth, textWidth, ovalColor, imageMobileWidth, className, tabletVariantClass, tabletImgPosX, tabletImgPosY, tabletImgScale, ...rest }) => (
+  <Wrapper className={className + " " + tabletVariantClass} tabletImgPosX={tabletImgPosX} tabletImgPosY={tabletImgPosY} tabletImgScale={tabletImgScale} {...rest}>
     <VisibilitySensor partialVisibility once>
       {({ isVisible }) => (
-        <Oval className={isVisible ? "scaleUp enter" : "scaleUp"} ovalColor={ovalColor}>
+        <Oval className={(isVisible ? "scaleUp enter" : "scaleUp") + " oval"} ovalColor={ovalColor}>
           <OvalSVG />
         </Oval>
       )}
     </VisibilitySensor>
-    <ImageContainer imageWidth={imageWidth} imagePositionRight={imagePositionRight} imageMobilePosition={imageMobilePosition} imageMobileWidth={imageMobileWidth}>
+    <ImageContainer className="top-image-container" imageWidth={imageWidth} imagePositionRight={imagePositionRight} imageMobilePosition={imageMobilePosition} imageMobileWidth={imageMobileWidth}>
       <Image filename={imageName} alt={imageAlt} />
     </ImageContainer>
-    <Container>
+    <Container className="top-content">
       <Content>
         <VisibilitySensor partialVisibility once>
           {({ isVisible }) => (

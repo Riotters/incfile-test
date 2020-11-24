@@ -18,6 +18,7 @@ import { HomePageContent } from "../../static/states-llc/florida/home";
 import { tabPages, rocket } from "../../static/states-llc/florida/general";
 
 import { getFullPricesAndFilings } from '../../api/Api';
+import { Helmet } from "react-helmet";
 
 const Wrapper = styled.div`
   display: flex;
@@ -69,6 +70,23 @@ function FloridaLLCIndex() {
             </WrapperContent>
 
             <Rocket url="?entityType=LLC&entityState=FL" />
+
+            <Helmet>
+                <script type="application/ld+json">{`
+                {
+                    "@context": "http://schema.org",
+                    "@type": "VideoObject",
+                    "name": "Forming an LLC in Florida by Incfile",
+                    "description": "Florida is home to some of the biggest businesses in America—but is it the best place to form your LLC?   Starting an LLC in Florida means you get the advantages and protections of larger Florida corporations, but with much simpler rules and regulations. Your Florida LLC will:  - Separate your personal assets from business liability or debt - Be easy to maintain and keep compliant  - Pass tax benefits to you   How to Form an LLC in Florida:  1. Gather your members’ info 2. Pick a name that's available in Florida 3. Provide an official address 4. Pick a Florida Registered Agent 5. Get an EIN / federal tax ID number 6. File a Certificate of Formation with the Florida Secretary of State   Here are some additional links you might find useful for your Florida LLC:  https://www.incfile.com/florida-llc/ - Our How To Guide All About Florida LLCs https://www.incfile.com/business-name-search/ - Conduct a business entity search with the Florida Sunbiz / Secretary of State https://www.incfile.com/manage-your-company/registered-agent/ - Get a Florida Registered Agent https://www.incfile.com/manage-your-company/tax-id-ein/ - Get an EIN for your Florida LLC https://www.incfile.com/ - Start an LLC in Florida for Free",
+                    "thumbnailUrl": "https://i.ytimg.com/vi/gXFjp7S_Fsw/default.jpg",
+                    "uploadDate": "2020-07-28T17:42:12Z",
+                    "duration": "PT1M23S",
+                    "embedUrl": "https://www.youtube.com/embed/gXFjp7S_Fsw",
+                    "interactionCount": "34"
+
+                }
+            `}</script>
+            </Helmet>
         </Layout>
     );
 }

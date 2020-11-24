@@ -6,6 +6,10 @@ import Image from "./image";
 const Wrapper = styled.article`
   margin-bottom: 8px;
   height: 275px;
+  
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 
   @media (min-width: 769px) {
     padding: 0 15px;

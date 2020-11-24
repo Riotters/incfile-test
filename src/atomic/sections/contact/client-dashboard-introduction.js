@@ -20,10 +20,10 @@ import Button from "../../molecules/buttons/button";
 
 const Wrapper = styled.section`
   position: relative;
-  padding: 120px 0 64px;
+  padding: 60px 0 64px;
 
   @media (min-width: 992px) {
-    padding: 0 0 64px;
+    padding: 140px 0 64px;
   }
 
   .article {
@@ -110,9 +110,9 @@ const ClientDashboardSection = ({ className, content, isNewSale }) => (
             </a>
           ))}
 
-          <AlignCenter>
-            <Button content={{ text: "Read our blogs", url: "/blog/" }} theme="secondary56" arrow width="250px" />
-          </AlignCenter>
+          {/*<AlignCenter>*/}
+            {/*<Button content={{ text: "Read our blogs", url: "/blog/" }} theme="secondary56" arrow width="250px" />*/}
+          {/*</AlignCenter>*/}
         </div>
       )}
     </ContentCenter>

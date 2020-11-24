@@ -56,8 +56,8 @@ const ListItem = styled(Paragraph)`
 
 const GridTableRow = ({ className, content, header, headerSize, list, columns, textCenter, noSeparator }) => (
     <Wrapper className={className} columns={columns}>
-        {content.map((item) => (
-            <Cell textCenter={textCenter} noSeparator={noSeparator}>
+        {content.map((item, index) => (
+            <Cell textCenter={textCenter} noSeparator={noSeparator} key={index}>
                 {header && (
                     <Heading size={headerSize ? headerSize : "4"} bottomMargin="0">
                         {item}

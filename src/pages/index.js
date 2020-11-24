@@ -16,6 +16,9 @@ import { color } from "../atomic/atoms/styles/colors";
 import Image from "../atomic/atoms/image/image";
 import { getAggregrateReviews } from "../api/Api";
 import { formatNumber } from "../helpers/utils";
+import RatingRow from "../atomic/atoms/boxes/rating-row";
+import CartBlock from "../atomic/molecules/blocks/cart-block";
+import RatingBlock from "../atomic/molecules/blocks/rating-block";
 
 //mrs-review-stars-5481
 
@@ -94,37 +97,10 @@ const HomePageV3 = () => {
         <Buttonsbox>
           <Button content={top.button[0]} theme="primary56" arrow />
         </Buttonsbox>
-        <ItemRow marginTop={32}>
-          <ItemRow align="center">
-            <ImageWrapper width={42} height={46}>
-              <Image filename="verified-cart-6601" />
-            </ImageWrapper>
-            <ItemColumn>
-              <FiveStarRow>
-                <StarSVG />
-                <StarSVG />
-                <StarSVG />
-                <StarSVG />
-                <StarSVG />
-              </FiveStarRow>
-              <div>
-                <strong>{fiveStarsNumber}</strong>
-                <span>&nbsp;ratings</span>
-              </div>
-            </ItemColumn>
-          </ItemRow>
-          <ItemRow align="center">
-            <ImageWrapper width={31} height={45}>
-              <Image filename="bbb-logo-blue-5493" />
-            </ImageWrapper>
-            <ItemColumn align="flex-start">
-              <div>
-                <strong>A+</strong>
-              </div>
-              <div>Rating</div>
-            </ItemColumn>
-          </ItemRow>
-        </ItemRow>
+        <RatingRow>
+          <CartBlock />
+          <RatingBlock />
+        </RatingRow>
       </Top>
       <BusinessFormation content={business_formation} />
       <SetupYourBusiness content={setup} />

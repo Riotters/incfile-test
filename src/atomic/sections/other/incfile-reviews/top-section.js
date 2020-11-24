@@ -13,6 +13,7 @@ import ShapeCurve from "../../../atoms/shapes/curve";
 import RelativeElement from '../../../elements/relative-e';
 import AbsoluteShapCure from '../../../elements/absolute-shape-curve-e';
 import Button from '../../../../components/button';
+import ArrowLink from "../../../molecules/buttons/text";
 
 
 const Wrapper = styled.div`
@@ -50,6 +51,10 @@ const TopSection = ({ content }) => (
                 <Paragraph big mixed={true}>
                     {parse(content.text3)}
                 </Paragraph>
+                <Heading size={4}>{parse(content.header2)}</Heading>
+                <ArrowLink content={content.link1} bottomMargin={8} />
+                <ArrowLink content={content.link2} bottomMargin={8} />
+                <ArrowLink content={content.link3} bottomMargin={24} />
             </RelativeElement>
 
             <Button to={`/reviews/`} theme="primary56" width="300px" arrow margin="15px 0 0 0">See our customer review</Button>

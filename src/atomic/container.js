@@ -31,8 +31,8 @@ const Wrapper = styled.div`
   }
 `;
 
-const Container = ({ children, style, width }) => (
-  <Wrapper style={style} width={width}>
+const Container = ({ children, style, width, className }) => (
+  <Wrapper style={style} width={width} className={className}>
     {children}
   </Wrapper>
 );
