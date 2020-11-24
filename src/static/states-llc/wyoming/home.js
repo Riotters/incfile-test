@@ -1405,89 +1405,66 @@ export const businessTaxes = [
     marginBottom: 32,
   },
   {
-    type: `header`,
-    content: `Employer Payroll Tax Withholding`,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `All employers must collect and withhold payroll tax from their employees when they receive their salaries. You would normally withhold 7.65 percent of the taxable salary that you pay to your employees.`,
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `Employer Federal and State Tax Withholding for Your Wyoming LLC`,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `You may also choose to withhold federal and Wyoming state income tax on the wages you pay to employees. Speak to your accountant for more information.`,
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `Employees May Need to File Tax Returns`,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `Regardless of whether you withhold federal and Wyoming state income tax, your employees may need to file their own tax returns.`,
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `Wyoming LLC Employee Insurance and Other Requirements`,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `You may also need to pay insurance for any employees, like workers compensation insurance or unemployment tax. There will also be other requirements you have for employees.`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `Get more requirements from the <a href="https://www.azica.gov/divisions/labor-department/" target="_blank" rel="noopener noreferrer">Wyoming Labor Department website</a>.`,
-    marginBottom: 48,
-  },
-  {
-    type: `header`,
-    content: `Estimated Taxes for Your Wyoming LLC`,
-    size: 3,
-    marginBottom: 24,
-  },
-  {
-    type: `text`,
-    content: `Most Wyoming LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make.`,
-    marginBottom: 16,
-  },
-  {
-    type: `list-dot`,
+    type: `accordion`,
     content: {
-      header: `The most common types of estimated tax are:`,
-      list: [`Federal income tax`, `Federal self-employment tax`, `Wyoming state tax`],
+      items: [
+        {
+          question: `Wyoming LLC Employer Payroll Tax Withholding`,
+          answer: `All employers must collect and withhold payroll tax from their employees when they receive their salaries. You would normally withhold 7.65 percent of the taxable salary that you pay to your employees.`,
+        },
+        {
+          question: `Employer Federal Tax Withholding for Your Wyoming LLC`,
+          answer: `You may also choose to withhold federal income tax on the wages you pay to employees. Speak to your accountant for more information.`,
+        },
+        {
+          question: `Employees May Need to File Tax Returns`,
+          answer: `Regardless of whether you withhold federal income tax, your employees may need to file their own tax returns.`,
+        },
+        {
+          question: `Wyoming LLC Employee Insurance and Other Requirements`,
+          answer2: [
+            {
+              type: `paragraph`,
+              content: `You may also need to pay insurance for any employees, like employee compensation insurance or unemployment tax. There will also be other requirements you have for employees.`,
+            },
+            {
+              type: `arrow-links`,
+              content: [
+                {
+                  styles: { marginTop: `24px` },
+                  text: `Get more requirements from the Wyoming Department of Workforce Services website.`,
+                  url: `http://www.wyomingworkforce.org/`,
+                },
+              ],
+            },
+          ],
+        },
+        {
+          question: `Other Taxes and Duties for Your Wyoming LLC`,
+          answer: `Depending on the industry you are in, your Wyoming LLC may be liable for certain other taxes and duties. For example, if you sell gasoline you may need to pay a tax on any fuel you sell. Likewise, if you import or export goods, you may need to pay certain duties. Speak to your accountant about any other taxes you may need to withhold or pay.`,
+        },
+        {
+          question: `Estimated Taxes for Your Wyoming LLC`,
+          answer2: [
+            {
+              type: `paragraph`,
+              content: `Most Wyoming LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make.`,
+            },
+            {
+              type: `list-dot-without-bg`,
+              color: color.orange3,
+              header: `The most common types of estimated taxes are:`,
+              content: [`Federal income tax`, `Federal self-employment tax`],
+            },
+            {
+              type: `paragraph`,
+              content: `Most Wyoming LLCs will pay estimated taxes four times a year. Speak to your accountant for more information.`,
+            },
+          ],
+        },
+      ],
     },
-    marginBottom: 16,
-    color: color.green3,
-  },
-  {
-    type: `text`,
-    content: `Most Wyoming LLCs will pay estimated taxes four times a year. Speak to your accountant for more information.`,
-    marginBottom: 48,
-  },
-  {
-    type: `header`,
-    content: `Other Taxes and Duties for Your Wyoming LLC`,
-    size: 3,
-    marginBottom: 24,
-  },
-  {
-    type: `text`,
-    content: `Depending on the industry you are in, your Wyoming LLC may be liable for certain other taxes and duties. For example, if you sell gasoline, you may need to pay a tax on any fuel you sell. Likewise, if you import or export goods, you may need to pay certain duties. Speak to your accountant about any other taxes you may need to withhold or pay.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,
