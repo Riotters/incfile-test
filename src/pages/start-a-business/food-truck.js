@@ -39,7 +39,7 @@ import TextBoxed from "../../atomic/molecules/text-blocks/text-boxed";
 import CkeckText from "../../components/static-check/text-only";
 import OvalSvg from "../../images/ovals/bottom-left-transparent-blue3.inline.svg";
 
-const FoodTruckBusiness = () => (
+const FoodTruck = () => (
   <Layout>
     <SEO title="How to Start a Food Truck Business" description="Starting a food truck can be an excellent introduction to the world of running your own business." />
 
@@ -417,4 +417,4 @@ const Oval = styled.div`
     }
 `;
 
-export default FoodTruckBusiness;
+export default FoodTruck;

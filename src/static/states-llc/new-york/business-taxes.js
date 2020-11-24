@@ -33,7 +33,7 @@ export const businessTaxesPageContent = {
       styles: { marginBottom: `55px` },
       content: [
         `New York LLC owners pay self-employment tax on business profits`,
-        `New York LLC owners pay state tax on any profits, less state allowances or deductions.`,
+        `New York LLC owners pay state tax on any profits, less state allowances or deductions`,
         `All LLC owners pay federal income tax on any profits less federal allowances or deductions`,
         `Some NY LLCs pay New York sales tax on products`,
         `Employers pay payroll tax on any salaries they pay to employees`,
@@ -208,7 +208,7 @@ export const businessTaxesPageContent = {
       bgImage: [BgBoxTreatAsAnScorp],
       content: {
         title: `Treating your LLC as an S Corp can help you save money.`,
-        subtitle: `you can do this by making an “S Corporation Tax Election” with the IRS using a form known as Form 2553. We can file your Form 2553 with the IRS on your behalf.`,
+        subtitle: `You can do this by making an “S Corporation Tax Election” with the IRS using a form known as Form 2553. We can file your Form 2553 with the IRS on your behalf.`,
         button: {
           text: `Get My LLC Treated As An S Corp`,
           url: `/business-accounting/`,
@@ -318,7 +318,7 @@ export const businessTaxesPageContent = {
           },
           {
             question: `Does New York Have a State Tax?`,
-            answer: `Yes. New York does have a general state income tax. You can find more information above`,
+            answer: `Yes. New York does have a general state income tax. You can find more information above.`,
           },
           {
             question: `What Is the Sales Tax Rate in New York?`,

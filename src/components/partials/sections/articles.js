@@ -109,13 +109,13 @@ const responsive = {
     slidesToSlide: 3,
   },
   tablet: {
-    breakpoint: { max: 992, min: 768 },
+    breakpoint: { max: 991, min: 769 },
     items: 2,
     slidesToSlide: 2,
   },
   mobile: {
     breakpoint: { max: 768, min: 0 },
-    items: 0,
+    items: 1,
   },
 }
 
@@ -186,32 +186,32 @@ const Articles = ({ oval }) => (
             </Article>
           </Carousel>
         </CarouselWrapper>
-        <MobileWrapper>
-          <Article img="bike">
-            Here’s Seven Tips to Steer You in the Right Direction.
-          </Article>
-          <Article img="baloons">How to Balance Owning Multiple Businesses.</Article>
-          <Article img="newspaper">
-            Here’s Seven Tips to Steer You in the Right Direction.
-          </Article>
-          <Article img="bike">How to Balance Owning Multiple Businesses.</Article>
-          <Article img="newspaper">
-            Here’s Seven Tips to Steer You in the Right Direction.
-          </Article>
-          <Article img="baloons">How to Balance Owning Multiple Businesses.</Article>
-          <Article img="bike">
-            Here’s Seven Tips to Steer You in the Right Direction.
-          </Article>
-          <Article img="baloons">How to Balance Owning Multiple Businesses.</Article>
-          <Article img="newspaper">
-            Here’s Seven Tips to Steer You in the Right Direction.
-          </Article>
-          <Article img="bike">How to Balance Owning Multiple Businesses.</Article>
-          <Article img="newspaper">
-            Here’s Seven Tips to Steer You in the Right Direction.
-          </Article>
-          <Article img="baloons">How to Balance Owning Multiple Businesses.</Article>
-        </MobileWrapper>
+        {/*<MobileWrapper>*/}
+          {/*<Article img="bike">*/}
+            {/*Here’s Seven Tips to Steer You in the Right Direction.*/}
+          {/*</Article>*/}
+          {/*<Article img="baloons">How to Balance Owning Multiple Businesses.</Article>*/}
+          {/*<Article img="newspaper">*/}
+            {/*Here’s Seven Tips to Steer You in the Right Direction.*/}
+          {/*</Article>*/}
+          {/*<Article img="bike">How to Balance Owning Multiple Businesses.</Article>*/}
+          {/*<Article img="newspaper">*/}
+            {/*Here’s Seven Tips to Steer You in the Right Direction.*/}
+          {/*</Article>*/}
+          {/*<Article img="baloons">How to Balance Owning Multiple Businesses.</Article>*/}
+          {/*<Article img="bike">*/}
+            {/*Here’s Seven Tips to Steer You in the Right Direction.*/}
+          {/*</Article>*/}
+          {/*<Article img="baloons">How to Balance Owning Multiple Businesses.</Article>*/}
+          {/*<Article img="newspaper">*/}
+            {/*Here’s Seven Tips to Steer You in the Right Direction.*/}
+          {/*</Article>*/}
+          {/*<Article img="bike">How to Balance Owning Multiple Businesses.</Article>*/}
+          {/*<Article img="newspaper">*/}
+            {/*Here’s Seven Tips to Steer You in the Right Direction.*/}
+          {/*</Article>*/}
+          {/*<Article img="baloons">How to Balance Owning Multiple Businesses.</Article>*/}
+        {/*</MobileWrapper>*/}
       </Content>
     </Container>
   </Wrapper>

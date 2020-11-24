@@ -1360,7 +1360,7 @@ export const businessTaxes = [
         text: `Employers pay payroll tax on any salaries they pay to employees`,
       },
       {
-        text: `Employees pay federal, state and payroll tax on their earnings.`,
+        text: `Employees pay federal, state and payroll tax on their earnings`,
       },
     ],
     marginBottom: 16,

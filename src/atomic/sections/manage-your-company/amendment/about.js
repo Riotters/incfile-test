@@ -13,7 +13,11 @@ import OvalSVG from "../../../../images/ovals/top-left-transparent-green3.inline
 
 const About = styled.section`
   position: relative;
-  padding-bottom: 64px;
+  padding-bottom: 16px;
+
+  @media (min-width: 576px) {
+    padding-bottom: 64px;
+  }
 
   p {
     color: ${color.grey2};

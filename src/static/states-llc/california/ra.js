@@ -59,7 +59,7 @@ export const agentPageContent = {
     // What a CA Registered Agent Does
     {
       type: `heading`,
-      size: 2,
+      size: 3,
       content: `What a CA Registered Agent Does`,
     },
     {

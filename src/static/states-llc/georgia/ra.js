@@ -31,7 +31,7 @@ export const agentPageContent = {
     },
     {
       type: `heading`,
-      size: 2,
+      size: 3,
       content: `What the Georgia Secretary of State Says About Registered Agents`,
     },
     {
@@ -50,7 +50,7 @@ export const agentPageContent = {
     // Rules for agents
     {
       type: `heading`,
-      size: 2,
+      size: 3,
       content: `Rules for Georgia Registered Agents`,
     },
     {

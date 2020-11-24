@@ -83,7 +83,7 @@ const Price = styled.span`
   font-size: 40px;
   line-height: 48px;
   color: ${color.black};
-  margin-bottom: 24px;
+  margin-bottom: 0;
 `;
 
 const Package = styled(Whitebox)`
@@ -183,6 +183,7 @@ const PricingCard = ({ className, content, image, fullInfo, ...rest }) => (
       <Image filename={image} />
     </ImageWrapper>
     <Price>${content.price}</Price>
+    <Paragraph>One time payment</Paragraph>
     <Button theme="primary48" content={content.button} margin="0 0 32px 0" arrow />
     <ul style={{marginBottom: "48px"}}>
       {content.fees.map((fee) => (

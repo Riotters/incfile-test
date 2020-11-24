@@ -11,8 +11,6 @@ import Cta from "../atomic/sections/general/cta";
 //Texts
 import { top, about, businessStructure, rocket, cta } from "../static/review-entity-types";
 import styled from "styled-components";
-import {ThankYouContent} from "../atomic/partials/thank-you-modal-content";
-import {thanks_form} from "../atomic/organisms/forms/comparison-chart-form";
 import Image from "../atomic/atoms/image/image";
 import {Heading} from "../atomic/atoms/typography/heading";
 import {Paragraph} from "../atomic/atoms/typography/paragraph";
@@ -139,7 +137,7 @@ const ReviewEntityType = () => {
             modalVisible === true)
             return;
 
-        setModalVisible(!modalVisible)
+        setModalVisible(!modalVisible);
     };
 
     let modalClases = ["lightbox-content"];
@@ -159,7 +157,7 @@ const ReviewEntityType = () => {
             <BusinessStructure content={businessStructure}/>
             <Cta cta={cta} storageKey="start-your-company-modal-1" onViewportEntry={() => setModalVisible(true)} />
             <Articles/>
-            <LightBoxModal visible={modalVisible} onClick={() => setModalVisible(false)} className="modal-overlay">
+            <LightBoxModal visible={modalVisible} onClick={(e) => popup(e)} className="modal-overlay">
                 <LightBoxContent style={{pointerEvents: "all"}} class={modalClases.join(" ")}>
                     <Flex>
                         <Column width={35} style={{marginRight: "32px"}} className="image-col">

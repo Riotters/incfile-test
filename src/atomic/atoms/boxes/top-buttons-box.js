@@ -5,6 +5,10 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
+  
+  @media (max-width: 575px) {
+    align-items: center;
+  }
 
   @media (min-width: 576px) {
     align-items: center;
