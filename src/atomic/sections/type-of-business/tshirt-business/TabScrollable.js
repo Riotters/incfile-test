@@ -115,10 +115,9 @@ const TabScrollable = ({ layout, columns }) => {
           </TabsWrapper>
 
           <PanelWrapper>
-            <Heading size={3}>Rules, Regulations and Laws for Your Etsy Business</Heading>
+            <Heading size={3}>Rules, Regulations and Laws for Your T-Shirt Business</Heading>
             <Paragraph big mixed={true}>
-              Of course, along with running a business there are certain rules, regulations and legalities you need to be aware of. <Link to="/business-license-research-package/">We can also help with researching your business licensing needs.</Link> Most Etsy businesses will not have any
-              significant permit and licensing needs beyond the basic licenses we cover below.
+              Of course, along with running a business there are certain rules, regulations and legalities you need to be aware of. <Link to="/business-license-research-package/">We can also help with researching your business licensing needs.</Link> 
             </Paragraph>
 
             <VisibilitySensor partialVisibility minTopValue={0}>
@@ -245,7 +244,7 @@ const TabScrollable = ({ layout, columns }) => {
                         Business Insurance
                       </Paragraph>
 
-                      <Paragraph big>Most Etsy businesses should have business insurance. There are various types:</Paragraph>
+                      <Paragraph big>It’s possible that your business won’t need all of these insurance types, but it is worth reviewing them, just to be sure.</Paragraph>
 
                       <Accordion tab content={BusinessInsuranceAccordionContent} />
                     </TextBlockWithImage>
@@ -280,7 +279,7 @@ const TabScrollable = ({ layout, columns }) => {
                       </Paragraph>
 
                       <Paragraph big mixed={true}>
-                        All businesses need to have a <Link to="/manage-your-company/registered-agent/">Registered Agent</Link>. These are individuals or other businesses that can accept legal documents on behalf of your landscaping company.
+                        All businesses need to have a <Link to="/manage-your-company/registered-agent/">Registered Agent</Link>. These are individuals or other businesses that can accept legal documents on behalf of your T-shirt company.
                       </Paragraph>
                       <Paragraph big>
                         Although you can act as your own registered agent, we recommend using a professional service. It ensures there will always be someone available to receive important legal documentation on your behalf and also removes your name and address from the public record.
@@ -316,7 +315,7 @@ const TabScrollable = ({ layout, columns }) => {
                       widthUnit="%"
                     >
                       <Paragraph big flex flexAlign={true} style={{ color: color.black, fontWeight: "bold" }} mixed={true}>
-                        Taxes
+                        Business Taxes for a T-Shirt Company
                       </Paragraph>
 
                       <Paragraph big>Taxes are a fact of life. If you’re in business, there are various ways you will need to file and pay them.</Paragraph>

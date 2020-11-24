@@ -29,7 +29,7 @@ const FormingSection = ({ className, content, onClick }) => (
             </Paragraph>
 
             <Button content={{ text: `Download our Completed Guide to C Corp`, url: `/` }} onClick={onClick} theme="primary56" margin="72px auto 40px" />
-            <Paragraph big maxWidth="770" style={{ textAlign: "center" }}>
+            <Paragraph big maxWidth={770} style={{ textAlign: "center" }}>
                 From developing your business idea to measuring success, our free guide has
                 all the info you need to get your business off the ground.
             </Paragraph>

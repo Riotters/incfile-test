@@ -124,8 +124,8 @@ const FooterSingle = ({ content }) => {
                     )}
                     {content.list && (
                         <List isOpen={menu}>
-                            {content.list.map(item => (
-                                <li>
+                            {content.list.map((item, index) => (
+                                <li key={index}>
                                     <Link to={item.url}>{item.text}</Link>
                                 </li>
                             ))}

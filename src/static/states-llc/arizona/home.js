@@ -1437,6 +1437,67 @@ export const businessTaxes = [
     marginBottom: 32,
   },
   {
+    type: `accordion`,
+    content: {
+      items: [
+        {
+          question: `Employer Payroll Tax Withholding`,
+          answer: `All employers must collect and withhold payroll tax from their employees when they receive their salaries. You would normally withhold 7.65 percent of the taxable salary that you pay to your employees.`,
+        },
+        {
+          question: `Employer Federal and State Tax Withholding for Your Arizona LLC`,
+          answer: `You may also choose to withhold federal and Arizona state income tax on the wages you pay to employees. Speak to your accountant for more information.`,
+        },
+        {
+          question: `Employees May Need to File Tax Returns`,
+          answer: `Regardless of whether you withhold federal and Arizona state income tax, your employees may need to file their own tax returns.`,
+        },
+        {
+          question: `Arizona LLC Employee Insurance and Other Requirements`,
+          answer2: [
+            {
+              type: `paragraph`,
+              content: `You may also need to pay insurance for any employees, like employee compensation insurance or unemployment tax. There will also be other requirements you have for employees.`,
+            },
+            {
+              type: `arrow-links`,
+              content: [
+                {
+                  styles: { marginTop: `24px` },
+                  text: `Get more requirements from the Arizona Labor Department website.`,
+                  url: `https://www.azica.gov/divisions/labor-department/`,
+                },
+              ],
+            },
+          ],
+        },
+        {
+          question: `Other Taxes and Duties for Your Arizona LLC`,
+          answer: `Depending on the industry you are in, your Arizona LLC may be liable for certain other taxes and duties. For example, if you sell gasoline, you may need to pay a tax on any fuel you sell. Likewise, if you import or export goods, you may need to pay certain duties. Speak to your accountant about any other taxes you may need to withhold or pay.`,
+        },
+        {
+          question: `Estimated Taxes for Your Arizona LLC`,
+          answer2: [
+            {
+              type: `paragraph`,
+              content: `Most Arizona LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make.`,
+            },
+            {
+              type: `list-dot-without-bg`,
+              color: color.orange3,
+              content: [`Federal income tax`, `Federal self-employment tax`, `Arizona state tax`],
+            },
+            {
+              type: `paragraph`,
+              content: `Most Arizona LLCs will pay estimated taxes four times a year. Speak to your accountant for more information.`,
+            },
+          ],
+        },
+      ],
+    },
+    marginBottom: 32,
+  },
+  {
     type: `header`,
     content: `Employer Payroll Tax Withholding`,
     size: 4,

@@ -269,7 +269,7 @@ const Footer = () => {
                         <Arrow>
                             <ArrowSVG />
                         </Arrow>
-                        <Label for="newsletter">Newsletter</Label>
+                        <Label htmlFor="newsletter">Newsletter</Label>
                         <Newsletter
                             className={errors.email ? 'invalid' : ''}
                             placeholder="Your E-mail"
@@ -295,8 +295,8 @@ const Footer = () => {
                     <Curve right="-30" bottom="150">
                         <CurveSVG />
                     </Curve>
-                    {footer.items.map((item) => (
-                        <List content={item} />
+                    {footer.items.map((item, index) => (
+                        <List content={item} key={index} />
                     ))}
                 </Navigation>
                 <Bot>

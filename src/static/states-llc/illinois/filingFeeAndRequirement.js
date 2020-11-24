@@ -7,7 +7,6 @@ import BgBoxTradeName from "../../../images/box-cta-trade-name-01.png";
 import BgBoxCGS from "../../../images/box-cta-gsd-01.png";
 import BgBoxRA from "../../../images/icons/states/mrs-bulb-thumb-up-left-color-01.png";
 import BgBoxPaperWork from "../../../images/icons/states/handle-paperwork.inline.png";
-import { size } from "lodash";
 
 export const filingFeeAndRequirementContent = {
   header: {
