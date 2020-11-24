@@ -31,7 +31,7 @@ export const agentPageContent = {
     },
     {
       type: `heading`,
-      size: 2,
+      size: 3,
       content: `What the Illinois Secretary of State Says About Registered Agents`,
     },
     {
@@ -79,7 +79,7 @@ export const agentPageContent = {
     // What a IL Registered Agent Does
     {
       type: `heading`,
-      size: 2,
+      size: 3,
       content: `What a IL Registered Agent Does`,
     },
     {

@@ -46,7 +46,7 @@ const ConstructionCompany = () => (
 
     <Top ovalColor="blue" imageName="publishing-company-main" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
       <h1>How to Start Publishing Company</h1>
-      <p>Everyone likes traveling — new horizons, beautiful destinations and unique experiences mean we love packing our bags and spending time away from work and home.</p>
+      <p>The world of publishing is changing fast, and if you have an interesting and unique approach, you can create a thriving publishing business.</p>
       <ButtonsBox>
         <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{ url: `${process.env.ORDER_URL}/form-order-now.php`, text: "Start Now" }} />
       </ButtonsBox>
@@ -71,7 +71,7 @@ const ConstructionCompany = () => (
         <CollapseWrapper>
           <PanelWrapper>
             <Paragraph big style={{ marginBottom: "40px" }}>
-              The world of publishing is changing fast, and if you have an interesting and unique approach, you can create a thriving publishing business. Consumers are increasingly moving away from traditional publishing formats like paper books and newspapers and consuming more of their content
+              Consumers are increasingly moving away from traditional publishing formats like paper books and newspapers and consuming more of their content
               digitally. It’s not just the written word either — videos, radio shows, podcasts and other digital media are becoming increasingly popular.
             </Paragraph>
 

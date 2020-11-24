@@ -9,9 +9,6 @@ export const about = {
         url: `/research-topics/general-research`,
       },
     ],
-    
-    // <a href="/" target="_blank" rel="noopener noreferrer nofollow">aaa</a>
-    
     header: `What is a Corporate Seal?`,
     text: `A corporate seal (also known as a company seal) is a special stamp customized to your company. It can be used to emboss particular documents with details about your company. Although company seals are not typically required in most jurisdictions, they can add a level of formality to important company documents.`,
     header2: `What Information Is Included on a Corporate Seal?`,

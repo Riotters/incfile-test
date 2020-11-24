@@ -1447,7 +1447,7 @@ export const businessTaxes = [
   },
   {
     type: `header`,
-    content: `Employee Insurance and Other Requirements`,
+    content: `Maryland LLC Employee Insurance and Other Requirements`,
     size: 4,
     marginBottom: 16,
   },
