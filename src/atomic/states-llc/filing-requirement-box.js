@@ -19,6 +19,10 @@ const Filing = styled.div`
     p:nth-child(4) > strong {
         padding-right: 10px;
     }
+    
+    div.full-width {
+        margin-bottom: 24px;
+    }
 
     h3, h4{
         font-family: Avenir;

@@ -20,6 +20,7 @@ import Circle from "../../../atoms/icons/circle";
 import { shadow } from "../../../atoms/styles/shadows";
 import AssetsSVG from "../../../../images/icons/assets-flag.inline.svg"
 import RevenueSVG from "../../../../images/icons/revenue.inline.svg"
+import { Link } from "gatsby";
 
 const Calculator = styled.div`
   background-color: ${color.blue3};
@@ -273,36 +274,40 @@ const CalculatorSection = ({ content, onSelectState, state, id }) => {
       <ContentCenter>
         <TextCenterLayout headline={content.header} headlineWidth="700" text={content.text} />
         {showResult && !error && (
-            <Whitebox className="calculator-main">
-              <Boxes>
-                <BlueBox className="box box--left">
-                  <AbsoluteCircle imageShadowColor={shadow.green2}>
-                    <Circle circleColor={color.green3} padding={0} height={80} width={80}>
-                      <AssetsSVG />
-                    </Circle>
-                  </AbsoluteCircle>
-                  <Heading size={4} bottomMargin={0}>{state.tax_rate}%</Heading>
-                  <Paragraph mixed>{state.long_name} state tax</Paragraph>
-                </BlueBox>
-                <CircleWhite>
-                  <PlusSVG />
-                </CircleWhite>
-                <YellowBox className="box box--right">
-                  <AbsoluteCircle imageShadowColor={shadow.babyblue2}>
-                    <Circle circleColor={color.blue3} padding={0} height={80} width={80}>
-                      <RevenueSVG />
-                    </Circle>
-                  </AbsoluteCircle>
-                  <Heading size={4} bottomMargin={0}>${typeof inputRevenue.current !== "undefined" && (
-                      formatMoney(inputRevenue.current.value)
-                  )}</Heading>
-                  <Paragraph>Your revenue</Paragraph>
-                </YellowBox>
-              </Boxes>
-              <Heading size={5} bottomMargin={24}>Your total tax amount</Heading>
-              <Heading size={2} bottomMargin={24}>{finalCalculator}</Heading>
-              <Paragraph>Additional municipality taxes may apply</Paragraph>
-            </Whitebox>
+            <>
+              <Whitebox className="calculator-main">
+                <Boxes>
+                  <BlueBox className="box box--left">
+                    <AbsoluteCircle imageShadowColor={shadow.green2}>
+                      <Circle circleColor={color.green3} padding={0} height={80} width={80}>
+                        <AssetsSVG />
+                      </Circle>
+                    </AbsoluteCircle>
+                    <Heading size={4} bottomMargin={0}>{state.tax_rate}%</Heading>
+                    <Paragraph mixed>{state.long_name} state tax</Paragraph>
+                  </BlueBox>
+                  <CircleWhite>
+                    <PlusSVG />
+                  </CircleWhite>
+                  <YellowBox className="box box--right">
+                    <AbsoluteCircle imageShadowColor={shadow.babyblue2}>
+                      <Circle circleColor={color.blue3} padding={0} height={80} width={80}>
+                        <RevenueSVG />
+                      </Circle>
+                    </AbsoluteCircle>
+                    <Heading size={4} bottomMargin={0}>${typeof inputRevenue.current !== "undefined" && (
+                        formatMoney(inputRevenue.current.value)
+                    )}</Heading>
+                    <Paragraph>Your revenue</Paragraph>
+                  </YellowBox>
+                </Boxes>
+                <Heading size={5} bottomMargin={24}>Your total tax amount</Heading>
+                <Heading size={2} bottomMargin={24}>{finalCalculator}</Heading>
+                <Paragraph>Additional municipality taxes may apply</Paragraph>
+              </Whitebox>
+
+              <Paragraph mixed>Visit <Link to={state?.state_site ?? "/"}>{state.long_name} Secretary of State</Link> for more information.</Paragraph>
+            </>
         )}
         {(!showResult || error) && (
             <ImageBoxes>

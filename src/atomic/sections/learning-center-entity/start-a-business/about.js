@@ -9,6 +9,7 @@ import IconSVG from "../../../../images/icons/rocket2.inline.svg";
 import IconTextColorBox from "../../../molecules/text-blocks/icon-h4-text-color";
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-red3.inline.svg";
+import LightBox from "../../../../components/LightBox";
 
 const About = styled.section`
   position: relative;
@@ -36,9 +37,10 @@ const AboutSection = ({ className, content }) => (
         {content.text}
       </Paragraph>
       <IconTextColorBox color={color.green3} Icon={IconSVG} content={content.box} bottomMargin="48" rounded curve />
-      <Paragraph big bottomMargin="0">
+      <Paragraph big bottomMargin="48">
         {content.text2}
       </Paragraph>
+        <LightBox thumbnailVideo="how-to-come-up-with-a-business-idea-9920" videoID="6ItzICKbe_0" />
     </ImageContent>
   </About>
 );

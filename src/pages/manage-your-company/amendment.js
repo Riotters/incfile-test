@@ -7,7 +7,6 @@ import RatingRow from "../../atomic/atoms/boxes/rating-row";
 import CartBlock from "../../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../../atomic/molecules/blocks/rating-block";
 
-
 //Sections
 import Top from "../../atomic/partials/top";
 import About from "../../atomic/sections/manage-your-company/amendment/about";
@@ -22,7 +21,7 @@ import { seo, top, about, requirements, faq } from "../../static/manage-your-com
 const Amendment = () => (
   <Layout>
     <SEO title={seo.title} description={seo.desc} />
-    <Top imageName="mr-amendment-name-change" imageWidth="504" imagePositionRight="50%" imageAlt="Mrs Bulb holding a closed sign" ovalColor="orange">
+    <Top imageName="mr-amendment-name-change" imageWidth="504" imagePositionRight="50%" imageAlt="Mrs Bulb holding a closed sign" ovalColor="orange" imageMobilePosition={0}>
       <h1>{top.header}</h1>
       <Buttonsbox>
         <Button to={`${process.env.ORDER_URL}/amendment.php`} theme="primary56" width="200px" arrow>

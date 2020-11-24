@@ -39,7 +39,7 @@ import CircleWithText from "../../atomic/molecules/blocks/circle-with-text-block
 import CircleSvg from "../../images/circle-graph.inline.svg";
 import TabsOvalSvg from "../../images/ovals/bottom-left-transparent-orange.inline.svg";
 
-const DogWalking = () => (
+const DogWalkingBusiness = () => (
   <Layout>
     <SEO
       title="How to Start a Dog Walking, Pet Sitting or Other Canine Business"
@@ -376,4 +376,4 @@ const TabsOval = styled.div`
   }
 `;
 
-export default DogWalking;
+export default DogWalkingBusiness;

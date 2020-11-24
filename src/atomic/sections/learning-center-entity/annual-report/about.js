@@ -11,7 +11,11 @@ import OvalSVG from "../../../../images/ovals/top-left-transparent-pink.inline.s
 
 const About = styled.section`
   position: relative;
-  padding-bottom: 120px;
+  padding-bottom: 28px;
+  
+  @media (min-width: 576px) {
+    padding-bottom: 120px;
+  }
 
   p {
     color: ${color.grey2};
