@@ -4,6 +4,7 @@ export const states = {
       name: "Alabama",
       url: "https://revenue.alabama.gov/business-license/",
       corporation: "/alabama-corporation/",
+      moreInfoURL: "https://www.sos.alabama.gov/",
     },
     {
       name: "Alaska",
