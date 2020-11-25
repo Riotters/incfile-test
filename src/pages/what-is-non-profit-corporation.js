@@ -53,7 +53,7 @@ const IndexPage = () => {
         </Buttonsbox>
       </Top>
       <About content={about} openModal={popup} />
-      <Rocket search />
+      <Rocket statesDropdown />
       <Faq content={faq} onClick={popup} />
       <Cta cta={cta} />
       <Articles />

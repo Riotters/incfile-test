@@ -231,14 +231,17 @@ export const HomePageContent = {
           {
             text: `Illinois Secretary of State for forming and running your IL LLC`,
             url: `https://www.sos.IL.gov/business-programs`,
+            externalLink: true,
           },
           {
             text: `Illinois Workforce Commission for IL employers and hiring`,
             url: `https://www.dir.IL.gov/dlse/DLSE-FAQs.htm`,
+            externalLink: true,
           },
           {
             text: `Illinois Comptroller for IL taxes`,
             url: `https://www.taxes.IL.gov`,
+            externalLink: true,
           },
         ],
       },

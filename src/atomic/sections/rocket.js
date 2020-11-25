@@ -8,8 +8,9 @@ import { Heading } from "../atoms/typography/heading";
 import { Paragraph } from "../atoms/typography/paragraph";
 import ExternalLink from "../molecules/buttons/external-link";
 import Searchbar from "../../components/searchbar";
+import StatesDropdown from "../molecules/mixed-blocks/states-dropdown";
 
-const Rocket = ({ search, index, url, textButton, text1, text2 }) => (
+const Rocket = ({ search, statesDropdown, index, url, textButton, text1, text2 }) => (
     <Wrapper>
         <Oval>
             <OvalSVG />
@@ -32,6 +33,14 @@ const Rocket = ({ search, index, url, textButton, text1, text2 }) => (
                     </SearchBox>
                 </Content>
             )}
+            {statesDropdown && (
+                <Content>
+                    <SearchBox>
+                        <h2>Learn more about Nonprofits by state.</h2>
+                        <StatesDropdown />
+                    </SearchBox>
+                </Content>
+            )}
 
             {index && (
                 <Content>
@@ -48,7 +57,7 @@ const Rocket = ({ search, index, url, textButton, text1, text2 }) => (
                 </Content>
             )}
 
-            {!search && !index && (
+            {!search && !statesDropdown && !index && (
                 <Content>
                     <Heading size={2} bottomMargin="0"> Launch </Heading>
                     <Heading size={2}>your business with Incfile</Heading>
