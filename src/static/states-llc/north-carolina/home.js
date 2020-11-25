@@ -1445,91 +1445,68 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `If you pay employees, there are some slightly different tax implications. Speak to your accountant to get clear guidance for your own unique situation.`,
-    marginBottom: 16,
-  },
-  {
-    type: `header`,
-    content: `Employer Payroll Tax Withholding`,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `All employers must collect and withhold payroll tax from their employees when they receive their salaries. You would normally withhold 7.65 percent of the taxable salary that you pay to your employees.`,
     marginBottom: 32,
   },
   {
-    type: `header`,
-    content: `Employer Federal and State Tax Withholding `,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `You may also choose to withhold federal and North Carolina state income tax on the wages you pay to employees. Speak to your accountant for more information.`,
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `Employees May Need to File Tax Returns`,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `Regardless of whether you withhold federal and North Carolina state income tax, your employees may need to file their own tax returns.`,
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `North Carolina LLC Employee Insurance and Other Requirements`,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `You may also need to pay insurance for any employees, like workers compensation insurance or unemployment tax. There will also be other requirements you have for employees.`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `Get more requirements from <a href="https://www.labor.nc.gov/" target="_blank" rel="noopener noreferrer"> the North Carolina Department of Labor website.</a>`,
-    marginBottom: 24,
-  },
-  {
-    type: `header`,
-    content: `Other Taxes and Duties for Your North Carolina LLC`,
-    size: 3,
-    marginBottom: 32,
-  },
-  {
-    type: `text`,
-    content: `Depending on the industry you are in, your North Carolina LLC may be liable for certain other taxes and duties. For example, if you sell gasoline you may need to pay a tax on any fuel you sell. Likewise, if you import or export goods you may need to pay certain duties. Speak to your accountant about any other taxes you may need to withhold or pay.`,
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `Estimated Taxes for Your North Carolina LLC`,
-    size: 3,
-    marginBottom: 32,
-  },
-  {
-    type: `text`,
-    content: `Most North Carolina LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make.`,
-    marginBottom: 24,
-  },
-  {
-    type: `list-dot`,
+    type: `accordion`,
     content: {
-      header: `The most common types of estimated tax are:`,
-      list: [`Federal income tax`, `Federal self-employment tax`, `North Carolina state tax`],
+      items: [
+        {
+          question: `Employer Payroll Tax Withholding `,
+          answer: `All employers must collect and withhold payroll tax from their employees when they receive their salaries. You would normally withhold 7.65 percent of the taxable salary that you pay to your employees.`,
+        },
+        {
+          question: `Employer Federal and State Tax Withholding `,
+          answer: `You may also choose to withhold federal and North Carolina state income tax on the wages you pay to employees. Speak to your accountant for more information.`,
+        },
+        {
+          question: `Employees May Need to File Tax Returns`,
+          answer: `Regardless of whether you withhold federal and North Carolina state income tax, your employees may need to file their own tax returns.`,
+        },
+        {
+          question: `North Carolina LLC Employee Insurance and Other Requirements`,
+          answer2: [
+            {
+              type: `paragraph`,
+              content: `You may also need to pay insurance for any employees, like employee compensation insurance or unemployment tax. There will also be other requirements you have for employees.`,
+            },
+            {
+              type: `arrow-links`,
+              content: [
+                {
+                  styles: { marginTop: `24px` },
+                  text: `Get more requirements from the North Carolina Department of Labor website.`,
+                  url: `https://www.labor.nc.gov/`,
+                },
+              ],
+            },
+          ],
+        },
+        {
+          question: `Other Taxes and Duties for Your North Carolina LLC`,
+          answer: `Depending on the industry you are in, your North Carolina LLC may be liable for certain other taxes and duties. For example, if you sell gasoline you may need to pay a tax on any fuel you sell. Likewise, if you import or export goods you may need to pay certain duties. Speak to your accountant about any other taxes you may need to withhold or pay.`,
+        },
+        {
+          question: `Estimated Taxes for Your North Carolina LLC`,
+          answer2: [
+            {
+              type: `paragraph`,
+              content: `Most North Carolina LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make.`,
+            },
+            {
+              type: `list-dot-without-bg`,
+              color: color.orange3,
+              header: `The most common types of estimated taxes are:`,
+              content: [`Federal income tax`, `Federal self-employment tax`, `North Carolina state tax`],
+            },
+            {
+              type: `paragraph`,
+              content: `Most North Carolina LLCs will pay estimated taxes four times a year. Speak to your accountant for more information.`,
+            },
+          ],
+        },
+      ],
     },
-    marginBottom: 24,
-    color: color.purple3,
-  },
-  {
-    type: `text`,
-    content: `Most North Carolina LLCs will pay estimated taxes four times a year. Speak to your accountant for more information.`,
     marginBottom: 32,
   },
   {
