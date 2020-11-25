@@ -13,7 +13,7 @@ import {color} from "../../../atoms/styles/colors";
 
 const Section = styled.section`
   position: relative;
-  padding: 100px 0 0;
+  padding: 50px 0 0;
   
   .oval:not(.small) {
         max-width: 100%;

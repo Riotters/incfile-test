@@ -21,7 +21,7 @@ import { seo, top, about, requirements, faq } from "../../static/manage-your-com
 const Amendment = () => (
   <Layout>
     <SEO title={seo.title} description={seo.desc} />
-    <Top imageName="mr-amendment-name-change" imageWidth="504" imagePositionRight="50%" imageAlt="Mrs Bulb holding a closed sign" ovalColor="orange" imageMobilePosition={0}>
+    <Top imageName="mr-amendment-name-change" imageWidth="948" imagePositionRight="50%" imageAlt="Mrs Bulb holding a closed sign" ovalColor="orange" imageMobilePosition={0} tabletVariantClass="tablet--shopper" tabletImgScale={1} tabletImgPosX={40} tabletImgPosY={-450}>
       <h1>{top.header}</h1>
       <Buttonsbox>
         <Button to={`${process.env.ORDER_URL}/amendment.php`} theme="primary56" width="200px" arrow>

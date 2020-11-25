@@ -14,8 +14,12 @@ import { scrollToElement } from '../../../../helpers/utils';
 
 const About = styled.section`
   position: relative;
-  padding-bottom: 64px;
-
+  padding-bottom: 24px;
+  
+  @media (min-width: 576px) {
+    padding-bottom: 64px;
+  }
+  
   p {
     color: ${color.grey2};
   }
@@ -28,10 +32,9 @@ const AboutSection = ({ className, content }) => (
         </Oval>
         <ImageContent image="business-downloads-tools-about-7291">
             <Heading size={3} bottomMargin="24">{content.header}</Heading>
-            <Paragraph big bottomMargin="40">{content.text}</Paragraph>
-            <IconTextColorBox color={color.blue3} Icon={IconSVG} content={content.box} bottomMargin="48" rounded curve />
-            <Paragraph big bottomMargin="72">{content.text2}</Paragraph>
-            <ArrowLink bottomMargin="72" content={content.link}/>
+            <Paragraph big bottomMargin="32">{content.text}</Paragraph>
+            <Paragraph big bottomMargin="32">{content.text2}</Paragraph>
+            <IconTextColorBox color={color.blue3} Icon={IconSVG} content={content.box} bottomMargin="0" rounded curve />
         </ImageContent>
     </About>
   );

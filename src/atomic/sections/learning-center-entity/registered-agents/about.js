@@ -9,12 +9,15 @@ import IconSVG from "../../../../images/icons/what-is-a-registered-agent.inline.
 import IconTextColorBox from "../../../molecules/text-blocks/icon-h4-text-color";
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-babyblue.inline.svg";
+import LightBox from "../../../../components/LightBox";
+import TopButtonsBox from "../../../atoms/boxes/top-buttons-box";
+import Button from "../../../molecules/buttons/button-action";
 
 const About = styled.section`
   position: relative;
 `;
 
-const AboutSection = ({ className, content }) => (
+const AboutSection = ({ className, content, openHSForm }) => (
   <About className={className}>
     <Oval className="oval" height="570" width="570" y="-40">
       <OvalSVG />
@@ -24,7 +27,11 @@ const AboutSection = ({ className, content }) => (
       <Paragraph big bottomMargin="72">
         {content.text}
       </Paragraph>
-      <IconTextColorBox color={color.blue3} Icon={IconSVG} content={content.box} rounded curve />
+      <IconTextColorBox color={color.blue3} Icon={IconSVG} content={content.box} rounded curve bottomMargin={48} />
+      <LightBox thumbnailVideo="what-is-a-registered-agent-7199" videoID="wSsZAvrT-IU" />
+        <TopButtonsBox style={{ justifyContent: "center" }}>
+            <Button onClick={openHSForm} content={content.button} theme="primary56" arrow margin="48px 0 0" />
+        </TopButtonsBox>
     </ImageContent>
   </About>
 );
