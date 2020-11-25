@@ -19,6 +19,13 @@ import {color} from "../atomic/atoms/styles/colors";
 import Circle from "../atomic/atoms/icons/circle";
 import ExSVG from "../images/icons/icon-status-x.inline.svg";
 
+import Label from "../atomic/molecules/form/label-field-with-child";
+import Input from "../atomic/atoms/inputs/input";
+import { useForm } from "react-hook-form";
+import { validEmail } from "../helpers/form-validate";
+import { postHSForm } from '../api/Api';
+import ExternalLink from "../atomic/molecules/buttons/external-link";
+
 const LightBoxModal = styled.div`
   transition: all .8s;
   position: fixed;
@@ -49,8 +56,8 @@ const LightBoxContent = styled.div`
   pointer-events: all;
   
   @media screen and (min-width: 768px) {
-    max-height: 289px;
-    height: 289px;
+    // max-height: 289px;
+    // height: 289px;
     overflow-y: visible;
   }
   
@@ -129,6 +136,40 @@ const OutsideImage = styled.div`
 const ReviewEntityType = () => {
     const [ modalVisible, setModalVisible ] = React.useState(false);
     const [formSubmitted, setFormSubmitted] = React.useState(false);
+    const [showForm, setShowForm] = React.useState(false);
+    const [submittedData, setSubmittedData] = React.useState({});
+
+    const { register, errors, reset, handleSubmit, formState } = useForm();
+    const { isSubmitting, isSubmitSuccessful } = formState;
+
+    const pageUrl = typeof window !== 'undefined' ? window.location.href : '';
+    const hutk = typeof window !== 'undefined' ? document.cookie.replace(/(?:(?:^|.*;\s*)hubspotutk\s*\=\s*([^;]*).*$)|^.*$/, "$1"): '';
+
+    const handleDownloadFile = data => {
+        const formData = new FormData();
+        formData.set('pageTitle', document.title);
+        formData.set('pageUrl', pageUrl);
+        formData.set('hs_form_id', '3787982/1b3e495d-63a5-401f-9150-904a97c94996');
+        formData.set('hutk', hutk);
+
+        Object.keys(data).forEach(i => {
+            return formData.set(i, data[i]);
+        });
+
+        postHSForm(formData)
+            .then(json => {
+                setSubmittedData(data);
+            });
+        
+        setShowForm(false);
+        setFormSubmitted(true);
+    }
+
+    React.useEffect(() => {
+        if (isSubmitSuccessful) {
+          reset({ ...submittedData });
+        }
+    }, [isSubmitSuccessful, submittedData, reset]);
 
     const popup = (e) => {
         e.preventDefault();
@@ -141,7 +182,7 @@ const ReviewEntityType = () => {
     };
 
     let modalClases = ["lightbox-content"];
-    if (formSubmitted) modalClases.push("form-submitted");
+    //if (formSubmitted) modalClases.push("form-submitted");
 
     return (
         <Layout>
@@ -157,7 +198,7 @@ const ReviewEntityType = () => {
             <BusinessStructure content={businessStructure}/>
             <Cta cta={cta} storageKey="start-your-company-modal-1" onViewportEntry={() => setModalVisible(true)} />
             <Articles/>
-            <LightBoxModal visible={modalVisible} onClick={(e) => popup(e)} className="modal-overlay">
+            <LightBoxModal visible={modalVisible} className="modal-overlay">
                 <LightBoxContent style={{pointerEvents: "all"}} class={modalClases.join(" ")}>
                     <Flex>
                         <Column width={35} style={{marginRight: "32px"}} className="image-col">
@@ -168,9 +209,49 @@ const ReviewEntityType = () => {
                         <Column width={65}>
                             <Heading size={6} bottomMargin={4} className="header-top">DOWNLOAD</Heading>
                             <Heading size={4} bottomMargin={16}>The Complete Business Entity Guide.</Heading>
-                            <Paragraph bottomMargin={32}>We’ll help you choose the right business structure
-                                for your company.</Paragraph>
-                            <Button theme="primary56" arrow onClick={() => setModalVisible(false)}>Download Now</Button>
+
+                            {formSubmitted ? (
+                                <>
+                                    <Paragraph bottomMargin={32}>
+                                        Thanks for downloading The Complete Business Entity Guide. Click below to start your download!
+                                    </Paragraph>
+                                    <ExternalLink
+                                        theme="primary56"
+                                        content={{
+                                            text: `Download`,
+                                            url: `https://f.hubspotusercontent30.net/hubfs/3787982/Incfile%20-%20Comparing%20Business%20Structure.pdf`
+                                        }}
+                                    />
+                                </>
+                            ) : <Paragraph bottomMargin={32}>We’ll help you choose the right business structure for your company.</Paragraph>
+                            }
+                                                        
+                            {showForm && (
+                                <form onSubmit={handleSubmit(handleDownloadFile)}>
+                                    <Label htmlFor="email" content={{ label: `Email` }} bottomMargin="32">
+                                        <Input
+                                            className={errors.email ? 'invalid' : ''}
+                                            type="email"
+                                            name="email"
+                                            id="email"
+                                            inputRef={register({
+                                                required: `Field can't be empty`,
+                                                validate: value => validEmail(value) || `Email is not valid`
+                                            })}
+                                        />
+                                        {errors.email && (
+                                            <span className="error__info">{errors.email.message}</span>
+                                        )}
+                                    </Label>
+
+                                    <Button disabled={isSubmitting} type="submit" content={{text: `Submit`}} theme="primary56" arrow />
+                                </form>
+                            )}
+
+                            {(!showForm && !formSubmitted) && (
+                                <Button content={{ text: `Download Now` }} theme="primary56" arrow onClick={() => setShowForm(true)} />    
+                            )}
+                            
                             <Circle circleColor={color.orange3} width={32} height={32} theme="normal" onClick={() => setModalVisible(false)} className="modal-close">
                                 <ExSVG />
                             </Circle>
