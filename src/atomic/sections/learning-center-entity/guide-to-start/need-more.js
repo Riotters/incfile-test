@@ -35,7 +35,7 @@ const NeedMoreSection = ({ className, content, onClick }) => (
             textWidth="770"
             linkText={content.link.text}
             linkUrl={content.link.url}
-            linkOnClick = {content.link.onClick ?? ''}
+            linkOnClick = {onClick ?? ''}
         />
     </NeedMore>
 );

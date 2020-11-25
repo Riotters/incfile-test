@@ -10,7 +10,12 @@ import OvalSVG from "../../../../images/ovals/top-right-transparent-green2.inlin
 
 const TableOfContent = styled.section`
   position: relative;
-  padding-top: 104px;
+  padding-top: 52px;
+  
+  @media (min-width: 576px) {
+    padding-top: 104px;
+  }
+  
   padding-bottom: 24px;
   background-color: ${color.green3};
 

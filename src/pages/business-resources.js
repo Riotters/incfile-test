@@ -16,6 +16,7 @@ import HSFormModal from "../components/hubspot/standard-post-form-modal";
 
 //Texts
 import { top, about, resources, furtherResources, form, thanks_form } from "../static/learning-center-entity/business-resources";
+import ArrowLink from "../atomic/molecules/buttons/text";
 
 const BusinessResources = () => {
   const [modalVisible, setModalVisible] = React.useState(false);
@@ -61,6 +62,7 @@ const BusinessResources = () => {
       <Top imageName="mr-bulb-business-downloads-tools-7829" imageAlt="Mrs Bulb and with checklist" ovalColor="purple-2" headlineWidth="550">
         <h1>{top.header}</h1>
         <p>{top.text}</p>
+        <ArrowLink bottomMargin="24" content={top.link}/>
         <RatingRow topMargin="0">
           <CartBlock />
           <RatingBlock />

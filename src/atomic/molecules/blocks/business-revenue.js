@@ -44,11 +44,12 @@ const Circle = styled.div`
     position: relative;
     font-size: 28px;
     line-height: 36px;
+    padding-right: 5px;
 
     span {
       position: absolute;
       top: -10px;
-      right: -15px;
+      right: -5px;
       font-family: Avenir, sans-serif;
       font-size: 16px;
       font-weight: 400;

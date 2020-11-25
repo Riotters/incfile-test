@@ -58,7 +58,7 @@ const GuideToStart = () => {
           <RatingBlock />
         </RatingRow>
       </Top>
-      <About content={about} />
+      <About content={about} hsOpenForm={popup} />
       <TableOfContent content={tableOfContent} />
       <NeedMore content={needMore} onClick={popup} />
       <LightBoxModal visible={modalVisible} className="modal-overlay">

@@ -16,6 +16,10 @@ export const about = {
     header: `What Is a Registered Agent?`,
     text: `A Registered Agent is an individual or business that receives important information, official documents and correspondence from the state government, federal governments and other agencies. They forward that information on to your LLC or corporation so you can respond to it appropriately.`,
   },
+  button: {
+    text: "Download our complete guide to Registered Agents",
+    url: "#",
+  }
 };
 
 export const whatAgentDo = {
@@ -51,8 +55,8 @@ export const requirements = {
   header: `What Are the Requirements for a Registered Agent?`,
   text: `Your secretary of state or division of corporations has certain requirements that apply to Registered Agents. Typically, they are:`,
   link: {
-    text: `Learn more`,
-    url: `/manage-your-company/registered-agent/`,
+    text: `Download our complete guide to Registered Agents`,
+    url: `#`,
   },
   list: [
     `If the Registered Agent is an individual, they must reside in the same state where your organization conducts business.`,
@@ -94,7 +98,7 @@ export const faq = {
           },
           {
             text: `formal Registered Agent service,`,
-            url: `/research-topics/registered-agent-help/can-the-registered-agent-be-a-company/`,
+            url: `/research-topics/registered-agent/registered-agent-company/`,
           },
           {
             text: `anyone associated with your business who wants to take on the responsibility can be your Registered Agent. They will need to understand the legal requirements and implications of performing the role. Note that your company cannot act as its own Registered Agent.`,
@@ -201,7 +205,7 @@ export const learnMore = {
           },
           {
             text: `Read more`,
-            url: `/research-topics/registered-agent-help/can-i-act-as-my-own-registered-agent/`,
+            url: `/research-topics/registered-agent/own-registered-agent/`,
           },
         ],
       },
@@ -225,7 +229,7 @@ export const learnMore = {
           },
           {
             text: `Read more`,
-            url: `/research-topics/registered-agent-help/can-the-registered-agent-be-a-company/`,
+            url: `/research-topics/registered-agent/registered-agent-company/`,
           },
         ],
       },
@@ -237,10 +241,20 @@ export const learnMore = {
           },
           {
             text: `Read more`,
-            url: `/research-topics/registered-agent-help/what-happens-if-i-require-the-signature-of-my-registered-agent/`,
+            url: `/research-topics/registered-agent/registered-agent-signature/`,
           },
         ],
       },
     ],
+  },
+};
+
+export const hsForm = {
+  header: `Download our "Complete Guide to Registered Agents".`,
+  text: `Whether you’re thinking about starting your own business or already running one, it’s important to know the rules and requirements regarding Registered Agents.`,
+  hs_form_id: `f8b25ab5-7a9a-4f21-b7db-425ede0e6750`,
+  button: {
+    text: "Download now",
+    url: "/",
   },
 };
