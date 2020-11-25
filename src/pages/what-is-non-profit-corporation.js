@@ -89,7 +89,6 @@ const LightBoxContent = styled.div`
   width: 100%;
   max-width: 750px;
   position: relative;
-  //margin: 0 30px;
   max-height: 100vh;
   overflow-y: auto;
 
@@ -101,7 +100,7 @@ const LightBoxContent = styled.div`
   @media screen and (min-width: 769px) {
     padding-top: 0;
     max-width: 600px;
-    max-height: 80vh;
+    max-height: 90vh;
   }
 `;
 
