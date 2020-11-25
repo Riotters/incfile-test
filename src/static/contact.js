@@ -30,20 +30,20 @@ export const newSales = {
       icon: `newspaper`,
       title: `Understanding the differences between LLC vs. Corporation.`,
       desc: `We'll tackle those questions so you have all the information you need to start an LLC or Corporation.`,
-      url: `/`,
+      url: `/blog/post/incorporation-versus-limited-liability-company/`,
     },
     {
       icon: `wave-01`,
       title: `What is the Best State to Start My LLC?`,
       desc: `Here's our handly guide to choosing the perfect state depending on various legal issues, market demand, taxation rates, job
             markets and more.`,
-      url: `/`,
+      url: `/blog/post/best-state-to-start-llc/`,
     },
     {
       icon: `bike`,
       title: `Are Non-U.S. Residents Allowed to Own a Corporation or LLC?`,
       desc: `Regardless of the industry or nature of business, Incfile can help you form your new business.`,
-      url: `/`,
+      url: `/blog/post/are-non-u-s-residents-allowed-to-own-a-corporation-or-llc/`,
     },
   ],
 };
