@@ -15,7 +15,12 @@ import TextCheck from "../../../molecules/static-check/circle-checkmark-text";
 
 const Requirements = styled.section`
   position: relative;
-  padding-top: 120px;
+  padding-top: 60px;
+  
+  @media (min-width: 576px) {
+    padding-top: 120px;
+  }
+  
   padding-bottom: 64px;
   background-color: #f2f6ff;
 

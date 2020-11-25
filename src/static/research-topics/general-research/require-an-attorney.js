@@ -9,9 +9,6 @@ export const about = {
         url: `/research-topics/general-research`,
       },
     ],
-    
-    // <a href="/" target="_blank" rel="noopener noreferrer nofollow">aaa</a>
-
     header: `Does Forming an LLC (Limited Liability Company) or Corporation Require an Attorney?`,
     box: {
         header: `No, it does not.`,

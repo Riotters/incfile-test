@@ -16,12 +16,12 @@ const WhatAgentDo = styled.section`
   background-color: ${color.babyblue3};
 `;
 
-const WhatAgentDoSection = ({ className, content }) => (
+const WhatAgentDoSection = ({ className, content, openHSForm }) => (
   <WhatAgentDo className={className}>
     <Oval className="oval" height="688" width="688" top="0" left="0">
       <OvalSVG />
     </Oval>
-    <HeadingCenter headline={content.header} text={content.text} linkText={content.link.text} linkUrl={content.link.url} bottomMargin="48" />
+    <HeadingCenter headline={content.header} text={content.text} useButton linkText={content.link.text} linkUrl={content.link.url} linkOnClick={openHSForm} bottomMargin="48" />
     <ContentCenter contentWidth="770">
       <NumericList content={content.list} bottomMargin="0" />
     </ContentCenter>

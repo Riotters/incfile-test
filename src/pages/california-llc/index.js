@@ -14,9 +14,9 @@ import HowToGuide from "../../atomic/states-llc/california/how-to-guide";
 
 // Content
 import { HomePageContent } from "../../static/states-llc/california/home";
-import { tabPages} from "../../static/states-llc/california/general";
+import { tabPages } from "../../static/states-llc/california/general";
 
-import { getFullPricesAndFilings } from '../../api/Api';
+import { getFullPricesAndFilings } from "../../api/Api";
 import { Helmet } from "react-helmet";
 
 const Wrapper = styled.div`
@@ -43,35 +43,35 @@ const Wrapper = styled.div`
 `;
 
 function CaliforniaLLCIndex() {
-    const [dataApi, setDataApi] = React.useState({});
+  const [dataApi, setDataApi] = React.useState({});
 
-    React.useEffect(() => {
-        getFullPricesAndFilings('California').then(data => {
-            setDataApi(data);
-        });
-    }, []);
+  React.useEffect(() => {
+    getFullPricesAndFilings("California").then((data) => {
+      setDataApi(data);
+    });
+  }, []);
 
-    return (
-        <Layout>
-            <SEO title="LLCs in California | Guide to Forming an LLC in California" description="Ready to form your California LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
+  return (
+    <Layout>
+      <SEO title="LLCs in California | Guide to Forming an LLC in California" description="Ready to form your California LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
 
-            <LinearBgHeader imageMapName="tx-map-2x">
-                <HomeHeader content={HomePageContent.header} data={dataApi} />
-            </LinearBgHeader>
+      <LinearBgHeader imageMapName="tx-map-2x">
+        <HomeHeader content={HomePageContent.header} data={dataApi} />
+      </LinearBgHeader>
 
-            <WrapperContent>
-                <Wrapper>
-                    <LeftTabPages content={tabPages} />
-                    <MainPageContent>
-                        <HowToGuide content={HomePageContent.content} data={dataApi} />
-                    </MainPageContent>
-                </Wrapper>
-            </WrapperContent>
+      <WrapperContent>
+        <Wrapper>
+          <LeftTabPages content={tabPages} />
+          <MainPageContent>
+            <HowToGuide content={HomePageContent.content} data={dataApi} />
+          </MainPageContent>
+        </Wrapper>
+      </WrapperContent>
 
-            <Rocket url="?entityType=LLC&entityState=CA" />
+      <Rocket url="?entityType=LLC&entityState=CA" />
 
-            <Helmet>
-                <script type="application/ld+json">{`
+      <Helmet>
+        <script type="application/ld+json">{`
                     {
                         "@context": "http://schema.org",
                         "@type": "VideoObject",
@@ -84,9 +84,9 @@ function CaliforniaLLCIndex() {
                         "interactionCount": "29"
                     }
                 `}</script>
-            </Helmet>
-        </Layout>
-    );
+      </Helmet>
+    </Layout>
+  );
 }
 
 export default CaliforniaLLCIndex;

@@ -97,9 +97,9 @@ const SideBusiness = () => (
           </PanelWrapper>
 
           <PanelWrapper>
-            <Heading size={3}>Helpful software for handyman business owners</Heading>
+            <Heading size={3}>Why You Should Start a New Side Business</Heading>
 
-            <Paragraph big>How successful can you be as a handyman? Let’s dig into the facts and figures.</Paragraph>
+            <Paragraph big>If you’re wondering how viable it is to start a side business in addition to your regular job, here are some statistics to inspire you.</Paragraph>
 
             <BubblesWrapper>
               <Bubbles>

@@ -28,7 +28,7 @@ const FaqSection = ({ className, content }) => (
     <Oval className="oval" height="570" width="570" top="14" left="0">
       <OvalSVG />
     </Oval>
-    <HeadingCenter headline={content.header} headlineWidth="640" text={content.text} textWidth="670" bottomMargin="64" />
+    <HeadingCenter headline={content.header} headlineWidth="640" text={content.text} textWidth="670" bottomMargin="0" bottomMarginLG="-30" />
     <ContentCenter>
       <Accordion content={content.faq} />
     </ContentCenter>

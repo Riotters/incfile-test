@@ -1259,10 +1259,10 @@ export const businessTaxes = [
         text: `Some NC LLCs pay North Carolina sales tax on products`,
       },
       {
-        text: `Employers pay payroll tax on any salaries they pay to employees.`,
+        text: `Employers pay payroll tax on any salaries they pay to employees`,
       },
       {
-        text: `Employees pay federal, state and payroll tax on their earnings.`,
+        text: `Employees pay federal, state and payroll tax on their earnings`,
       },
     ],
     marginBottom: 24,

@@ -9,9 +9,6 @@ export const about = {
         url: `/research-topics/general-research`,
       },
     ],
-    
-    // <a href="/" target="_blank" rel="noopener noreferrer nofollow">aaa</a>
-
   header: `Which entity offers the best tax advantages?`,
   text: `There are two main types of corporations the S-Corporation and the C-Corporation.`,
   text2: `Every corporation is considered a C corp when it is formed with the Secretary of State. The distinction is made on a federal level and processed by the IRS.`,

@@ -183,7 +183,7 @@ export const categories = {
       buttons: [
         {
           header: `Which entity offers the best tax advantages?`,
-          url: `/research-topics/c-corporation-info/which-entity-offers-the-best-tax-advantages/`,
+          url: `/research-topics/business-taxes/tax-advantages/`,
         },
         {
           header: `The benefits of filing a C-corporation`,
@@ -297,15 +297,15 @@ export const categories = {
       buttons: [
         {
           header: `How easy is forming an LLC or Corporation`,
-          url: `/research-topics/business-taxes/sellers-permit/`,
+          url: `/research-topics/video-library/forming-llc-or-corp/`,
         },
         {
           header: `Protect Your Personal Assets`,
-          url: `/research-topics/business-taxes/minimizing-tax-expenses/`,
+          url: `/research-topics/video-library/protect-assets/`,
         },
         {
           header: `Learn How To Save Money With Incfile`,
-          url: `/research-topics/business-taxes/tax-advantages/`,
+          url: `/research-topics/video-library/save-with-incfile/`,
         },
       ],
       link: {

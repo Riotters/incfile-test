@@ -217,7 +217,6 @@ const TshirtBusiness = () => (
               width="100%"
             />
 
-            <Paragraph big>If you can combine these four areas together, you’ll have the perfect ingredients for a successful Etsy business.</Paragraph>
           </PanelWrapper>
 
           <PanelWrapper>
@@ -314,7 +313,7 @@ const TshirtBusiness = () => (
           </TextBlockWithImage>
 
           <TextBlockWithImage width={100} widthUnit="%" SvgImage={InvolvedIcon} imageBackgroundColor={color.red2} imageShadowColor={color.red2}>
-            <Heading size={4}>See if there are any market research reports for T-shirt businesses</Heading>
+            <Heading size={4}>Get involved with business communities and discussion groups</Heading>
             <Paragraph bottomPadding={0} bottomMargin={0}>
               Ask questions about T-shirt businesses. You can find links to some excellent discussion groups later in the article.
             </Paragraph>

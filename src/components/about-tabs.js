@@ -166,7 +166,7 @@ const Content = styled.div`
   span {
     color: inherit;
     font-family: Avenir;
-    font-size: 13px;
+    font-size: 16px;
     white-space: nowrap;
 
     @media (min-width: 769px) {

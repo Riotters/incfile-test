@@ -266,7 +266,7 @@ const ImageContainer = styled.div`
   max-width: ${(props) => (props.imageWidth ? `${props.imageWidth}px` : "950px")};
   width: 100%;
   overflow: hidden;
-
+  
   @media (min-width: 992px) {
     position: absolute;
     top: 50%;

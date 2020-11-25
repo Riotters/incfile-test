@@ -3,6 +3,10 @@ export const top = {
       `Starting a Company?`,
     text: 
       `Get the Business Resources and Tools You Need+`,
+    link: {
+        text: `View our business guides`,
+        url: `#guides-section`,
+    }
 }
 
 export const about = {
@@ -12,16 +16,12 @@ export const about = {
         `You have some great ideas that you’re going to transform into products and services, and starting a business is the first step in making that happen. We know there’s a lot to think about when you’re getting your business off the ground—that’s why we’ve made things easy.`,
     box: {
         header:
-            `You’ll find some of our most popular `,
+            ``,
         text:
-            `business resources and tools below, all designed to take the mystery out of your startup. You can get a super-helpful start your business checklist, a guide to choosing the right business structure, startup resources for popular states and much more.`,
+            `Each of our free resources for starting a business is self-contained and provides practical, easy-to-use information and tools to get you up and running with a minimum of fuss.`,
     },
     text2: 
-        `Each of our free resources for starting a business is self-contained and provides practical, easy-to-use information and tools to get you up and running with a minimum of fuss.`,
-    link: {
-        text: `View our business guides`,
-        url: `/`,
-    }
+        `You’ll find some of our most popular business resources and tools below, all designed to take the mystery out of your startup. You can get a super-helpful start your business checklist, a guide to choosing the right business structure, startup resources for popular states and much more.`,
 }
 
 export const resources = {
@@ -395,7 +395,7 @@ export const furtherResources = {
             text: `State-by-state filing times and prices`,
             link: {
                 text: `Learn more`,
-                url: `/corporation-state-informations/`,
+                url: `/corporation-state-information/`,
             },
         },
         {

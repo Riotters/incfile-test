@@ -15,7 +15,11 @@ import CurveSVG from "../../../../images/curves/bottom-left-top-right.inline.svg
 const HowItWorks = styled.section`
   position: relative;
   background-color: ${color.orange3};
-  padding: 100px 0 120px;
+  padding: 50px 0 60px;
+  
+  @media (min-width: 576px) {
+    padding: 100px 0 120px;
+  }
   
   .oval:not(.small) {
         overflow: hidden;

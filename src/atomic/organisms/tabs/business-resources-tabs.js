@@ -14,14 +14,17 @@ const Wrapper = styled.div`
 const TabsWrapper = styled.div`
   display: flex;
   align-items: center;
-  height: 48px;
   width: 100%;
   max-width: 770px;
-  background-color: ${color.white};
-  box-shadow: ${shadow.white1};
-  border-radius: 24px;
   margin: 0 auto 80px;
   overflow: hidden;
+  
+  @media (min-width: 576px) {
+    background-color: ${color.white};
+    box-shadow: ${shadow.white1};
+    height: 48px;
+    border-radius: 24px;
+  }
 
   button {
     margin-right: 4px;
@@ -56,7 +59,11 @@ const Scroller = styled.div`
   justify-content: flex-start;
   align-items: center;
   overflow-x: scroll;
-  border-radius: 24px;
+  
+  @media (min-width: 576px) {
+    border-radius: 24px;
+  }
+  
   width: 100%;
 
   &::-webkit-scrollbar,
@@ -67,30 +74,52 @@ const Scroller = styled.div`
 
 const Button = styled.button`
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40px;
-  min-width: 252px;
-  background-color: ${color.white};
-  border-radius: 24px;
-  border: none;
   cursor: pointer;
+  justify-content: center;
   transition: background-color 0.3s ease, color 0.2s ease;
-  color: ${color.grey1};
-  font-family: Avenir, sans-serif;
-  font-weight: 400;
+  
+  height: 78px;
+  line-height: 78px;
+  color: #4e4e4e;
+  position: relative;
+  background-color: transparent;
+  overflow: hidden;
+  border: 0;
+  z-index: 0;
+  min-width: 190px;
   font-size: 16px;
-  line-height: 24px;
-  flex-grow: 1;
 
-  &:hover {
-    background-color: ${color.blue3};
+  @media (max-width: 575px) {
+    &.active {
+      z-index: 1;
+      color: ${color.blue1};
+      border-bottom: 2px solid ${color.blue1};
+    }
   }
-
-  &.active {
-    background-color: ${color.blue1};
-    color: ${color.white};
-    font-weight: 900;
+  
+  @media (min-width: 576px) {
+    align-items: center;
+    height: 40px;
+    min-width: 252px;
+    background-color: ${color.white};
+    border-radius: 24px;
+    border: none;
+    color: ${color.grey1};
+    font-family: Avenir, sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    flex-grow: 1;
+    font-size: 16px;
+  
+    &:hover {
+      background-color: ${color.blue3};
+    }
+  
+    &.active {
+      background-color: ${color.blue1};
+      color: ${color.white};
+      font-weight: 900;
+    }
   }
 `;
 

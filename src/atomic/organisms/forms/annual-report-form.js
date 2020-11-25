@@ -192,7 +192,7 @@ const AnnualReportForm = ({ className, content, checkDueDate }) => {
     
                     </Grid>
                 </Label>
-                <Button disabled={isSubmitting} content={content.button} theme="primary56" arrow marginSM="32px auto 0" />
+                <Button disabled={isSubmitting} content={content.button} theme="primary56" arrow margin="17px 0 0" marginSM="32px auto 0" />
             </form>
         </Wrapper>
     );
@@ -207,6 +207,12 @@ const Wrapper = styled(Whitebox)`
   max-width: 570px;
   padding: 40px;
   position: relative;
+  
+  @media (max-width: 575px) {
+    .Dropdown-root {
+        min-width: unset;
+    }
+  }
 
   .curve-shape {
     svg {
@@ -215,12 +221,20 @@ const Wrapper = styled(Whitebox)`
   }
 `;
 const Grid = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 30px;
   width: 100%;
+  
+  @media (min-width: 576px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+  }
 
   .Dropdown-root {
     min-width: 50px;
+    
+    @media (max-width: 575px) {
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
   }
 `;

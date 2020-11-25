@@ -2,10 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import WhiteBoxWithToolsList from "../../molecules/lists/white-box-with-tools-list";
+import {Tools} from "../../../static/tools"
 
-const ToolsList = ({ tools, tab }) => (
+const ToolsList = ({ tools, tab, forcePropsTools = false }) => (
   <ToolsWrapper tab={tab}>
-    {tools.map((item) => (
+    {(forcePropsTools ? tools : Tools).map((item) => (
       <WhiteBoxWithToolsList list={item.tools} title={item.title} />
     ))}
   </ToolsWrapper>

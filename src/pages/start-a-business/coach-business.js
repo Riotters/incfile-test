@@ -22,7 +22,7 @@ import Conclusion from "../../atomic/sections/general/conclusion";
 import { Heading } from "../../atomic/atoms/typography/heading";
 import { Paragraph } from "../../atomic/atoms/typography/paragraph";
 
-const Coach = () => (
+const CoachBusiness = () => (
   <Layout>
     <SEO title="How to Become a Life or Business Coach" description="Becoming a professional coach can be a great way to turn your insight and understanding into practical advice. Learn how with our comprehensive guide." />
 
@@ -79,4 +79,4 @@ const ButtonsBox = styled.div`
   }
 `;
 
-export default Coach;
+export default CoachBusiness;
