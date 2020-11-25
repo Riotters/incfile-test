@@ -18,6 +18,13 @@ const TabsWrapper = styled.div`
   max-width: 770px;
   margin: 0 auto 80px;
   overflow: hidden;
+  
+  @media (min-width: 576px) {
+    background-color: ${color.white};
+    box-shadow: ${shadow.white1};
+    height: 48px;
+    border-radius: 24px;
+  }
 
   button {
     margin-right: 4px;
@@ -52,6 +59,11 @@ const Scroller = styled.div`
   justify-content: flex-start;
   align-items: center;
   overflow-x: scroll;
+  
+  @media (min-width: 576px) {
+    border-radius: 24px;
+  }
+  
   width: 100%;
 
   &::-webkit-scrollbar,
@@ -61,13 +73,14 @@ const Scroller = styled.div`
 `;
 
 const Button = styled.button`
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  transition: background-color 0.3s ease, color 0.2s ease;
+  
   height: 78px;
   line-height: 78px;
   color: #4e4e4e;
-  justify-content: center;
-  transition: box-shadow 0.3s ease;
-  display: flex;
-  cursor: pointer;
   position: relative;
   background-color: transparent;
   overflow: hidden;
@@ -75,29 +88,37 @@ const Button = styled.button`
   z-index: 0;
   min-width: 190px;
   font-size: 16px;
-  
-  @media (min-width: 769px) {
-    border: none;
-    border-radius: 5px;
-    margin-bottom: 7px;
-    box-shadow: 0 20px 30px 0 #e6e6e6;
-  }
 
-  &.active {
-    z-index: 1;
-    color: ${color.blue1};
-    border-bottom: 2px solid ${color.blue1};
-
-    @media (min-width: 769px) {
-      box-shadow: 0 40px 80px 0 #e6e6e6;
-      font-weight: 600;
-      color: #4e4e4e;
-      border: none;
+  @media (max-width: 575px) {
+    &.active {
+      z-index: 1;
+      color: ${color.blue1};
+      border-bottom: 2px solid ${color.blue1};
     }
-
-    .tabArrow {
-      opacity: 1;
-      transform: translateX(0);
+  }
+  
+  @media (min-width: 576px) {
+    align-items: center;
+    height: 40px;
+    min-width: 252px;
+    background-color: ${color.white};
+    border-radius: 24px;
+    border: none;
+    color: ${color.grey1};
+    font-family: Avenir, sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    flex-grow: 1;
+    font-size: 16px;
+  
+    &:hover {
+      background-color: ${color.blue3};
+    }
+  
+    &.active {
+      background-color: ${color.blue1};
+      color: ${color.white};
+      font-weight: 900;
     }
   }
 `;
