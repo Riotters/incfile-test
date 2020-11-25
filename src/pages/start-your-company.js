@@ -25,6 +25,7 @@ import { useForm } from "react-hook-form";
 import { validEmail } from "../helpers/form-validate";
 import { postHSForm } from '../api/Api';
 import ExternalLink from "../atomic/molecules/buttons/external-link";
+import { Helmet } from "react-helmet";
 
 const LightBoxModal = styled.div`
   transition: all .8s;
@@ -259,6 +260,25 @@ const ReviewEntityType = () => {
                     </Flex>
                 </LightBoxContent>
             </LightBoxModal>
+                                
+            <Helmet>
+            <script type="application/ld+json">
+                {`
+                    {
+                        "@context": "http://schema.org",
+                        "@type": "VideoObject",
+                        "name": "Which Business Entity Structure Is Right For You? by Incfile",
+                        "description": "You’ve probably seen LLC, Inc., Co. or Corporation mentioned after a business name—as in Portfolio Coffeehouse LLC, Apple Inc., or Sony Corporation. All of these indicate that these businesses have been “incorporated” and have officially filed their business entity with their state. But which business structure should you choose? What even is the difference between all of these official business types? Let us explain.",
+                        "thumbnailUrl": "https://i.ytimg.com/vi/_u4u3-PQ8a0/default.jpg",
+                        "uploadDate": "2020-05-09T20:42:34Z",
+                        "duration": "PT2M42S",
+                        "embedUrl": "https://www.youtube.com/embed/_u4u3-PQ8a0",
+                        "interactionCount": "13"
+                    }
+                `}
+                </script>
+            </Helmet>
+
         </Layout>
     );
 };
