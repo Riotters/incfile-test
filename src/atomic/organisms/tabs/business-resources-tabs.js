@@ -14,7 +14,6 @@ const Wrapper = styled.div`
 const TabsWrapper = styled.div`
   display: flex;
   align-items: center;
-  height: 48px;
   width: 100%;
   max-width: 770px;
   margin: 0 auto 80px;
@@ -62,12 +61,11 @@ const Scroller = styled.div`
 `;
 
 const Button = styled.button`
-  height:48px;
-  line-height: 48px;
+  height: 78px;
+  line-height: 78px;
   color: #4e4e4e;
   justify-content: center;
   transition: box-shadow 0.3s ease;
-  padding: 0 20px;
   display: flex;
   cursor: pointer;
   position: relative;
@@ -75,7 +73,7 @@ const Button = styled.button`
   overflow: hidden;
   border: 0;
   z-index: 0;
-  min-width: 200px;
+  min-width: 190px;
   font-size: 16px;
   
   @media (min-width: 769px) {
