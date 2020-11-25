@@ -67,18 +67,14 @@ const BoxButtonLinks = styled.div`
   }
 `;
 
-const WhiteBoxColumn = styled(Whitebox)`
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: 576px) {
-    flex-direction: row;
-  }
+const WhiteBoxLink = styled(Whitebox)`
+  align-items: center;
 
   p {
-    &:first-child {
-      font-weight: bold;
-      min-width: 50%;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: ${color.blue1};
     }
   }
 `;
@@ -114,19 +110,19 @@ const HowToGuide = ({ content, data }) => {
       </Heading>
 
       <div id="video">
-        <LightBoxVideo thumbnailVideo="ga-llc-video-thumbnail-01" videoID="teObxHzLcxE" />
+        <LightBoxVideo thumbnailVideo="ga-llc-video-thumbnail-01" videoID="teObxHzLcxE" bottomMargin="32" />
       </div>
 
       {content.mainSteps.navSteps.map((step) => (
         <Link to="/#" onClick={(e) => handleMenuStepClick(step.blockID, e)}>
-          <Whitebox bottomMargin="8px" padding="24px" flex>
+          <WhiteBoxLink bottomMargin="8px" padding="24px" flex>
             <Circle circleColor={color.orange3} iconColor={color.orange1} rightMargin="24" transform="rotate(90deg)" className="circle">
               <ArrowSVG />
             </Circle>
             <Paragraph mixed={true} bottomMargin="0">
               {parse(step.text)}
             </Paragraph>
-          </Whitebox>
+          </WhiteBoxLink>
         </Link>
       ))}
 
@@ -237,12 +233,12 @@ const HowToGuide = ({ content, data }) => {
           {parse(content.mainSteps.step4.text1)}
         </Paragraph>
         <Button content={content.mainSteps.step4.dowload_205_button} theme="secondary56" arrow margin="16px auto 0 0" marginMD="42px auto 42px 0" />
-        <Paragraph big mixed={true}>
-          {parse(content.mainSteps.step4.text2)}
-        </Paragraph>
-        <Paragraph big mixed={true}>
-          {parse(content.mainSteps.step4.text3)}
-        </Paragraph>
+        <ArrowLink url={content.mainSteps.step4.link.url} externalLink={content.mainSteps.step4.link.externalLink}>
+          {content.mainSteps.step4.link.text}
+        </ArrowLink>
+        <ArrowLink url={content.mainSteps.step4.link2.url} externalLink={content.mainSteps.step4.link.externalLink}>
+          {content.mainSteps.step4.link2.text}
+        </ArrowLink>
         <Paragraph big mixed={true}>
           {parse(content.mainSteps.step4.text4)}
         </Paragraph>

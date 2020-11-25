@@ -66,6 +66,18 @@ const BoxButtonLinks = styled.div`
   }
 `;
 
+const WhiteBoxLink = styled(Whitebox)`
+  align-items: center;
+
+  p {
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: ${color.blue1};
+    }
+  }
+`;
+
 const HowToGuide = ({ content, data }) => {
   return (
     <Wrapper>
@@ -97,19 +109,19 @@ const HowToGuide = ({ content, data }) => {
       </Heading>
 
       <div id="video">
-        <LightBoxVideo thumbnailVideo="il-llc-video-thumbnail-01" videoID="Rx9Ns_xqp2A" />
+        <LightBoxVideo thumbnailVideo="il-llc-video-thumbnail-01" videoID="Rx9Ns_xqp2A" bottomMargin="32" />
       </div>
 
       {content.mainSteps.navSteps.map((step) => (
         <Link to="/#" onClick={(e) => handleMenuStepClick(step.blockID, e)}>
-          <Whitebox bottomMargin="8px" padding="24px" flex>
+          <WhiteBoxLink bottomMargin="8px" padding="24px" flex>
             <Circle circleColor={color.orange3} iconColor={color.orange1} rightMargin="24" transform="rotate(90deg)" className="circle">
               <ArrowSVG />
             </Circle>
             <Paragraph mixed={true} bottomMargin="0">
               {parse(step.text)}
             </Paragraph>
-          </Whitebox>
+          </WhiteBoxLink>
         </Link>
       ))}
 
@@ -222,7 +234,7 @@ const HowToGuide = ({ content, data }) => {
         <IconListColorBox color={color.blue3} content={content.mainSteps.step4.lists} rounded />
         <Button content={content.mainSteps.step4.dowload_205_button} theme="secondary56" arrow margin="16px 0 0 0" marginMD="42px 0 42px 0" />
         <Paragraph big mixed={true}>
-          { parse(replaceStr(data.prices?.statefee, `[STATE_FEE]`, content.mainSteps.step4.text2))  }
+          {parse(replaceStr(data.prices?.statefee, `[STATE_FEE]`, content.mainSteps.step4.text2))}
         </Paragraph>
 
         <RelativeElement margin="40px 0">
