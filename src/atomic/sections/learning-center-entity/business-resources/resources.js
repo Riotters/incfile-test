@@ -11,8 +11,12 @@ import OvalSVG from "../../../../images/ovals/top-right-transparent-green2.inlin
 
 const Resources = styled.section`
   position: relative;
-  padding-top: 104px;
+  padding-top: 24px;
   padding-bottom: 104px;
+  
+  @media (min-width: 576px) {
+    padding-top: 104px;
+  }
 
   ul {
     margin-bottom: 0;
@@ -20,11 +24,11 @@ const Resources = styled.section`
 `;
 
 const ResourcesSection = ({ className, content, openModal }) => (
-  <Resources className={className}>
+  <Resources className={className} id="guides-section">
     <Oval width="720" height="720" top="0" right="0">
       <OvalSVG />
     </Oval>
-    <HeadingCenter headline={content.header} headlineWidth="770" bottomMargin="80" />
+    <HeadingCenter headline={content.header} headlineWidth="770" bottomMargin="24" bottomMarginMD={80} />
     <ContentCenter>
         <Tabs content={content.tabs} openModal={openModal} />
     </ContentCenter>

@@ -17,9 +17,6 @@ const TabsWrapper = styled.div`
   height: 48px;
   width: 100%;
   max-width: 770px;
-  background-color: ${color.white};
-  box-shadow: ${shadow.white1};
-  border-radius: 24px;
   margin: 0 auto 80px;
   overflow: hidden;
 
@@ -56,7 +53,6 @@ const Scroller = styled.div`
   justify-content: flex-start;
   align-items: center;
   overflow-x: scroll;
-  border-radius: 24px;
   width: 100%;
 
   &::-webkit-scrollbar,
@@ -66,31 +62,45 @@ const Scroller = styled.div`
 `;
 
 const Button = styled.button`
-  display: flex;
+  height:48px;
+  line-height: 48px;
+  color: #4e4e4e;
   justify-content: center;
-  align-items: center;
-  height: 40px;
-  min-width: 252px;
-  background-color: ${color.white};
-  border-radius: 24px;
-  border: none;
+  transition: box-shadow 0.3s ease;
+  padding: 0 20px;
+  display: flex;
   cursor: pointer;
-  transition: background-color 0.3s ease, color 0.2s ease;
-  color: ${color.grey1};
-  font-family: Avenir, sans-serif;
-  font-weight: 400;
+  position: relative;
+  background-color: transparent;
+  overflow: hidden;
+  border: 0;
+  z-index: 0;
+  min-width: 200px;
   font-size: 16px;
-  line-height: 24px;
-  flex-grow: 1;
-
-  &:hover {
-    background-color: ${color.blue3};
+  
+  @media (min-width: 769px) {
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 7px;
+    box-shadow: 0 20px 30px 0 #e6e6e6;
   }
 
   &.active {
-    background-color: ${color.blue1};
-    color: ${color.white};
-    font-weight: 900;
+    z-index: 1;
+    color: ${color.blue1};
+    border-bottom: 2px solid ${color.blue1};
+
+    @media (min-width: 769px) {
+      box-shadow: 0 40px 80px 0 #e6e6e6;
+      font-weight: 600;
+      color: #4e4e4e;
+      border: none;
+    }
+
+    .tabArrow {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
 `;
 
