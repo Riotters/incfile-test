@@ -851,9 +851,9 @@ export const registeredAgent = [
     content: {
       header: `You might find these resources helpful:`,
       list: [
-        `<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/">The Main Functions of a North Carolina Registered Agent</a>`,
+        `<a href="/research-topics/registered-agent/registered-agent-function">The Main Functions of a North Carolina Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/">Changing Your North Carolina Registered Agent</a>`,
-        `<a href-"/research-topics/registered-agent-help/what-does-a-registered-agent-do/">What a North Carolina Registered Agent Does</a>`,
+        `<a href-"/research-topics/registered-agent/registered-agent-tasks/">What a North Carolina Registered Agent Does</a>`,
       ],
     },
     marginBottom: 48,

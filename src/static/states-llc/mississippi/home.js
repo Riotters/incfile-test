@@ -942,9 +942,9 @@ export const registeredAgent = [
     content: {
       header: `You might find these resources helpful:`,
       list: [
-        `<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/">The Main Functions of a Mississippi Registered Agent</a>`,
+        `<a href="/research-topics/registered-agent/registered-agent-function">The Main Functions of a Mississippi Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Mississippi Registered Agent</a>`,
-        `<a href-"/research-topics/registered-agent-help/what-does-a-registered-agent-do/">What a Mississippi Registered Agent Does</a>`,
+        `<a href-"/research-topics/registered-agent/registered-agent-tasks/">What a Mississippi Registered Agent Does</a>`,
       ],
     },
     marginBottom: 48,
@@ -1364,7 +1364,7 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `Need help? Incfile provides a complete Business Tax Filing service.<a href"/business-accounting/"> Learn more.</a>.`,
+    content: `Need help? Incfile provides a complete Business Tax Filing service.<a href"/business-accounting/"> Learn more</a>.`,
     marginBottom: 32,
   },
   {
@@ -1410,7 +1410,7 @@ export const businessTaxes = [
   },
   {
     type: `header`,
-    content: `Mississippi Business Taxes Payable to the MS Government`,
+    content: `Mississippi Sales Tax, State Tax and Other Taxes for Your MS LLC`,
     size: 3,
     marginBottom: 24,
   },
@@ -1636,7 +1636,7 @@ export const businessTaxes = [
   },
   {
     type: `header`,
-    content: `Employee Insurance and Other Requirements`,
+    content: `Mississippi LLC Employee Insurance and Other Requirements`,
     size: 4,
     marginBottom: 16,
   },

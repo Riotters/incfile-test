@@ -831,9 +831,9 @@ export const registeredAgent = [
     content: {
       header: `You might find these resources helpful:`,
       list: [
-        `<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/" target="_blank">The Main Functions of a Missouri Registered Agent</a>`,
+        `<a href="/research-topics/registered-agent/registered-agent-function" target="_blank">The Main Functions of a Missouri Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/" target="_blank" >Changing Your Missouri Registered Agent</a>`,
-        `<a href="/research-topics/registered-agent-help/what-does-a-registered-agent-do/" target="_blank" >What a Missouri Registered Agent Does</a>`,
+        `<a href="/research-topics/registered-agent/registered-agent-tasks/" target="_blank" >What a Missouri Registered Agent Does</a>`,
       ],
     },
     marginBottom: 0,

@@ -844,9 +844,9 @@ export const registeredAgent = [
     content: {
       header: `You might find these resources helpful:`,
       list: [
-        `<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/">The Main Functions of a Montana Registered Agent</a>`,
+        `<a href="/research-topics/registered-agent/registered-agent-function">The Main Functions of a Montana Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Montana Registered Agent</a>`,
-        `<a href-"/research-topics/registered-agent-help/what-does-a-registered-agent-do/">What a Montana Registered Agent Does</a>`,
+        `<a href-"/research-topics/registered-agent/registered-agent-tasks/">What a Montana Registered Agent Does</a>`,
       ],
     },
     marginBottom: 48,
@@ -1329,9 +1329,10 @@ export const businessTaxes = [
     marginBottom: 32,
   },
   {
-    type: `text`,
+    type: `header`,
     content: `Federal Self-Employment Tax.`,
-    marginBottom: 16,
+    size: 4,
+    marginBottom: 24,
   },
   {
     type: `text`,
@@ -1340,13 +1341,13 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe. Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
+    content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe.`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `The graduated Montana state income tax rate is:`,
+      header: `Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
       list: [`On profits of $30,000, you would pay self-employment tax of $4,590.`, `On profits of $50,000, you would pay self-employment tax of $7,650.`, `On profits of $80,000, you would pay self-employment tax of $12,240.`, `On profits of $100,000, you would pay self-employment tax of $15,300.`],
     },
     marginBottom: 16,
@@ -1386,7 +1387,7 @@ export const businessTaxes = [
   },
   {
     type: `header`,
-    content: `Federal Income Ta`,
+    content: `Federal Income Tax`,
     size: 3,
     marginBottom: 24,
   },

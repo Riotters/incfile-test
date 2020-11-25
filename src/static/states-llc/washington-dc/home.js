@@ -772,9 +772,9 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       list: [
-        `<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/">The Main Functions of a Washington DC Registered Agent</a>`,
+        `<a href="/research-topics/registered-agent/registered-agent-function">The Main Functions of a Washington DC Registered Agent</a>`,
         `<a htef="/manage-your-company/change-of-registered-agent/">Changing Your Washington DC Registered Agent</a>`,
-        `<a href="/research-topics/registered-agent-help/what-does-a-registered-agent-do/">What a Washington DC Registered Agent Does</a>`,
+        `<a href="/research-topics/registered-agent/registered-agent-tasks/">What a Washington DC Registered Agent Does</a>`,
       ],
     },
     marginBottom: 48,

@@ -885,9 +885,9 @@ export const registeredAgent = [
     content: {
       header: `You might find these resources helpful:`,
       list: [
-        `<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/" target="_blank">The Main Functions of a Maine Registered Agent</a>`,
+        `<a href="/research-topics/registered-agent/registered-agent-function" target="_blank">The Main Functions of a Maine Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/" target="_blank" >Changing Your Maine Registered Agent</a>`,
-        `<a href="/research-topics/registered-agent-help/what-does-a-registered-agent-do/" target="_blank" >What a Maine Registered Agent Does</a>`,
+        `<a href="/research-topics/registered-agent/registered-agent-tasks/" target="_blank" >What a Maine Registered Agent Does</a>`,
       ],
     },
     marginBottom: 48,
@@ -1516,6 +1516,17 @@ export const businessTaxes = [
   },
   {
     type: `header`,
+    content: `Employees May Need to File Tax Returns`,
+    size: 4,
+    marginBottom: 16,
+  },
+  {
+    type: `text`,
+    content: `Regardless of whether you withhold federal tax, your employees may need to file their own tax returns.`,
+    marginBottom: 32,
+  },
+  {
+    type: `header`,
     content: `Employee Insurance and Other Requirements`,
     size: 4,
     marginBottom: 16,
@@ -1528,17 +1539,6 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `Get more requirements from the <a href="https://www.maine.gov/labor/" target="_blank" rel="noopener noreferrer">Maine Department of Labor website.</a>`,
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `Employees May Need to File Tax Returns`,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `Regardless of whether you withhold federal tax, your employees may need to file their own tax returns.`,
     marginBottom: 32,
   },
   {

@@ -66,8 +66,8 @@ export const adventages2 = {
 };
 
 export const toolsList = {
-    headlineText: "Useful Online Tools for Your Laundromat Business",
-    description: "Here are some really great online tools for managing your laundromat business. They will reduce the time you spend on administration, help you collaborate with others and free up your time to grow and manage your new venture.",
+    headlineText: "Useful Online Tools for Bakery Owners",
+    description: "Here are some really great online tools for managing your bakery business. They will reduce the time you spend on administration, help you to collaborate with others and free up your time to grow and manage your new venture.",
     tools: [
         {
             title: "Project Management",

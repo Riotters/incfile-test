@@ -834,9 +834,9 @@ export const registeredAgent = [
     content: {
       header: `You might find these resources helpful:`,
       list: [
-        `<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/" target="_blank">The Main Functions of a Kentucky Registered Agent</a>`,
+        `<a href="/research-topics/registered-agent/registered-agent-function" target="_blank">The Main Functions of a Kentucky Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/" target="_blank" >Changing Your Kentucky Registered Agent</a>`,
-        `<a href="/research-topics/registered-agent-help/what-does-a-registered-agent-do/" target="_blank" >What a Kentucky Registered Agent Does</a>`,
+        `<a href="/research-topics/registered-agent/registered-agent-tasks/" target="_blank" >What a Kentucky Registered Agent Does</a>`,
       ],
     },
     marginBottom: 0,
@@ -1428,6 +1428,17 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `If you pay employees, there are some slightly different tax implications. Speak to your accountant to get clear guidance for your own unique situation.`,
+    marginBottom: 32,
+  },
+  {
+    type: `header`,
+    content: `Employer Payroll Tax Withholding for Your Kentucky LLC`,
+    size: 4,
+    marginBottom: 16,
+  },
+  {
+    type: `text`,
+    content: `All employers must collect and withhold payroll tax from their employees when they receive their salaries. You would normally withhold 7.65 percent of the taxable salary that you pay to your employees.`,
     marginBottom: 32,
   },
   {

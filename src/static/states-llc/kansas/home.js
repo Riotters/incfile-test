@@ -946,9 +946,9 @@ export const registeredAgent = [
     content: {
       header: `You might find these resources helpful:`,
       list: [
-        `<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/">The Main Functions of a Kansas Registered Agent</a>`,
+        `<a href="/research-topics/registered-agent/registered-agent-function">The Main Functions of a Kansas Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Kansas Registered Agent</a>`,
-        `<a href-"/research-topics/registered-agent-help/what-does-a-registered-agent-do/">What a Kansas Registered Agent Does</a>`,
+        `<a href-"/research-topics/registered-agent/registered-agent-tasks/">What a Kansas Registered Agent Does</a>`,
       ],
     },
     marginBottom: 48,
@@ -1347,7 +1347,7 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `Need help? Incfile provides a complete Business Tax Filing service.<a href"/business-accounting/"> Learn more.</a>.`,
+    content: `Need help? Incfile provides a complete Business Tax Filing service.<a href"/business-accounting/"> Learn more</a>.`,
     marginBottom: 32,
   },
   {
@@ -1436,7 +1436,7 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `Get more details on the Kansas state tax on on the  <a href="https://www.ksrevenue.org/personal.html" target="_blank" rel="noopener noreferrer"> KS SOS website.</a>.`,
+    content: `Get more details on the Kansas state tax on on the  <a href="https://www.ksrevenue.org/personal.html" target="_blank" rel="noopener noreferrer"> KS SOS website</a>.`,
     marginBottom: 32,
   },
   {
@@ -1556,6 +1556,22 @@ export const businessTaxes = [
     type: `text`,
     content: `Speak to your accountant for more information on reducing your Kansas LLC self-employment tax through an S Corporation tax election.`,
     marginBottom: 32,
+  },
+  {
+    type: `header`,
+    content: `Kansas LLC Federal Income Tax`,
+    size: 4,
+    marginBottom: 24,
+  },
+  {
+    type: `text`,
+    content: `You must also pay regular federal income tax on any earnings you take out of your Kansas LLC. The amount of income tax you pay depends on your earnings, current income tax brackets, deductions and how you file.`,
+    marginBottom: 16,
+  },
+  {
+    type: `text`,
+    content: `You only pay federal income tax on your Kansas LLC profits that you take out of the business, less certain deductions and allowances. This includes your tax-free amount, plus LLC business expenses and other deductions for areas such as healthcare and some retirement plans. Speak to your accountant for more information.`,
+    marginBottom: 48,
   },
   {
     type: `header`,
