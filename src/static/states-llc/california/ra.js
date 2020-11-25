@@ -222,7 +222,7 @@ export const agentPageContent = {
     },
     {
       type: `paragraph`,
-      content: `In some situations, you might want to know the name of the Registered Agent that represents another California LLC. If you do, you can search the business database of the California Secretary of State, as these will often provide details of a specific business’s Registered Agent.`,
+      content: `In some situations, you might want to know the name of the Registered Agent that represents another California LLC. If you do, you can search the <a href="https://businesssearch.sos.ca.gov/" target="_blank" rel="noopener noreferrer">business database</a> of the California Secretary of State, as these will often provide details of a specific business’s Registered Agent.`,
     },
     {
       type: `paragraph`,
@@ -295,7 +295,7 @@ export const agentPageContent = {
       content: [
         {
           text: `The Main Functions of a California Registered Agent`,
-          url: `/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/`,
+          url: `/research-topics/general-research/registered-agent-function/`,
         },
         {
           text: `Changing Your California Registered Agent`,
@@ -303,7 +303,7 @@ export const agentPageContent = {
         },
         {
           text: `What a California Registered Agent Does`,
-          url: `/research-topics/registered-agent-help/what-does-a-registered-agent-do/`,
+          url: `/research-topics/registered-agent/registered-agent-tasks/`,
         },
       ],
     },

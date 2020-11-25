@@ -210,7 +210,7 @@ export const service = {
 };
 
 export const faq = {
-  header: `Common questions about Business Formation Kit`,
+  header: `Commonly Asked Questions for starting an LLC`,
   faq: {
     items: [
       {

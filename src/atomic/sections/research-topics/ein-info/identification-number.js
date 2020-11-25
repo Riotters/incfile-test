@@ -24,10 +24,10 @@ const AboutSection = ({ className, content }) => (
     </Oval>
     <ImageContent image="web-address-search">
       <Path content={content.links} />
-      <Heading size={3} bottomMargin="32">
+      <Heading size={2} style={{ textAlign: "left" }} topMargin="32" bottomMargin="32">
         {content.header}
       </Heading>
-      <Heading size={4} bottomMargin="24">
+      <Heading size={3} bottomMargin="24">
         {content.header2}
       </Heading>
       <Paragraph big bottomMargin="16">
@@ -36,36 +36,36 @@ const AboutSection = ({ className, content }) => (
       <Paragraph big bottomMargin="48">
         {content.text2}
       </Paragraph>
-      <Heading size={4} bottomMargin="24">
+      <Heading size={3} bottomMargin="24">
         {content.header3}
       </Heading>
       <Paragraph big bottomMargin="24">
         {content.text3}
       </Paragraph>
-      <IconListColorBox content={content.list} color={color.orange3} curve curveColor={color.green2} rounded bottomMargin="24" />
-      <Paragraph big bottomMargin="24">
+      <IconListColorBox content={content.list} color={color.yellow2} curve curveColor={color.green2} rounded bottomMargin="32" />
+      <Paragraph big bottomMargin="32">
         {content.text4}
       </Paragraph>
-      <IconListColorBox content={content.list2} color={color.blue3} rounded bottomMargin="24" />
+      <IconListColorBox content={content.list2} color={color.babyblue2} rounded bottomMargin="32" />
       <Paragraph big bottomMargin="16">
         {content.text5}
       </Paragraph>
-      <Paragraph big bottomMargin="24">
+      <Paragraph big bottomMargin="32">
         {content.text6}
       </Paragraph>
-      <IconListColorBox content={content.list3} color={color.yellow3} rounded bottomMargin="24" />
-      <IconListColorBox content={content.list4} color={color.purple3} curve curveColor={color.red2} rounded bottomMargin="24" />
-      <IconListColorBox content={content.list5} color={color.green3} rounded bottomMargin="24" />
+      <IconListColorBox content={content.list3} color={color.orange3} rounded bottomMargin="40" />
+      <IconListColorBox content={content.list4} color={color.blue3} curve curveColor={color.red2} rounded bottomMargin="40" />
+      <IconListColorBox content={content.list5} color={color.green3} rounded bottomMargin="32" />
       <Paragraph big bottomMargin="48">
         {content.text7}
       </Paragraph>
-      <Heading size={4} bottomMargin="24">
+      <Heading size={3} bottomMargin="24">
         {content.header4}
       </Heading>
       <Paragraph big bottomMargin="24">
         {content.text8}
       </Paragraph>
-      <IconListColorBox content={content.list6} color={color.babyblue3} rounded bottomMargin="24" />
+      <IconListColorBox content={content.list6} color={color.purple3} rounded bottomMargin="24" />
       <ArrowLink content={content.link} bottomMargin="48" />
     </ImageContent>
   </About>
