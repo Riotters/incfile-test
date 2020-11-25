@@ -20,7 +20,7 @@ export const about = {
 export const checkType = {
   header: `Check out these types of businesses you could start`,
   tabs: {
-    switchers: ["Types", "Ideas"],
+    switchers: ["Business Types", "Industry"],
     panels: [
       {
         buttons: [
@@ -98,7 +98,7 @@ export const checkType = {
           },
           {
             header: `T-shirt Printing`,
-            url: `/start-a-business/shirt-business/`,
+            url: `/start-a-business/tshirt-business/`,
           },
           {
             header: `Cleaning`,
@@ -113,7 +113,7 @@ export const checkType = {
             url: `/start-a-business/landscaping-business/`,
           },
           {
-            header: `Landromat`,
+            header: `Laundromat`,
             url: `/start-a-business/laundromat-business/`,
           },
           {

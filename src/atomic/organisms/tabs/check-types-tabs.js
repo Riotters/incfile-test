@@ -129,7 +129,7 @@ const Tab = ({ children }) => {
 };
 
 const colors = [color.yellow3, color.blue3, color.purple3, color.orange3, color.babyblue3, color.red3, color.yellow3, color.green3, color.blue3, color.red3, color.purple3, color.purple3, color.yellow3, color.orange3];
-const icons = ["amazon88", "computer-2346", "etsy299", "place038", "bulb385", "buy597", "home294", "case408", "bag5", "cap395 4", "shop459", "buttons695 2", "chart3456", "ok235"];
+const icons = ["amazon88", "computer-2346", "etsy-9940", "place038", "bulb385", "buy597", "home-0092", "case408", "bag5", "cap395 4", "shop459", "buttons695 2", "chart3456", "ok235"];
 
 const colors2 = [
   color.yellow3,
@@ -164,9 +164,9 @@ const colors2 = [
 ];
 const icons2 = [
   "beer-489",
-  "makeup-394",
+  "beauty-salon-7603",
   "waiter-5786",
-  "tshirt472",
+  "t-shirt-printing-5604",
   "cleaning-345",
   "talk293",
   "tree485",
@@ -182,10 +182,10 @@ const icons2 = [
   "palm-204",
   "gym-238",
   "baloon-385",
-  "book-436",
+  "bookstore-6143",
   "food-truck-46",
   "bed-586",
-  "tools384",
+  "handyman-5656",
   "dress-245",
   "truck34",
   "tie486",

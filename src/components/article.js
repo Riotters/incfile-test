@@ -9,6 +9,7 @@ const Wrapper = styled.article`
   
   @media (max-width: 768px) {
     width: 100%;
+    padding: 0 15px;
   }
 
   @media (min-width: 769px) {

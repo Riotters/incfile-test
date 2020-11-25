@@ -14,6 +14,7 @@ import BusinessStructure from "../atomic/sections/learning-center-entity/start-a
 import Rocket from "../atomic/sections/review-entity-types/c-corporation/rocket";
 //Texts
 import { top, about, checkType, businessStructure, launchBusiness } from "../static/learning-center-entity/start-a-business";
+import Articles from "../atomic/sections/articles";
 
 const HelpCenter = () => (
   <Layout>
@@ -35,6 +36,7 @@ const HelpCenter = () => (
     <CheckType content={checkType} />
     <BusinessStructure content={businessStructure} />
     <Rocket content={launchBusiness} />
+    <Articles />
   </Layout>
 );
 
