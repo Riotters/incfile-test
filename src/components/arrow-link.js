@@ -1,8 +1,36 @@
 import React from "react";
+import { Link } from "gatsby";
 import styled from "styled-components";
 import ArrowSVG from "../images/arrow.inline.svg";
 
-const Wrapper = styled.a`
+const Wrapper = styled(Link)`
+  display: flex;
+  align-items: baseline;
+  text-decoration: none;
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  span {
+    transition: color 0.3s ease;
+    font-weight: 600;
+    font-size: ${(props) => (props.fontSize ? props.fontSize : "inherit")};
+  }
+
+  &:hover {
+    color: #fd8550;
+
+    svg {
+      path {
+        fill: #fd8550;
+      }
+    }
+  }
+`;
+
+const WrapperExternal = styled.a`
   display: flex;
   align-items: baseline;
   text-decoration: none;
@@ -46,11 +74,22 @@ const Arrow = styled.div`
 `;
 
 const ArrowLink = ({ children, className, url, externalLink, ...rest }) => (
-  <Wrapper href={url ?? "#"} className={className} target={externalLink ? "_blank" : false} rel={externalLink ? "noopener noreferrer" : false} {...rest}>
-    <Arrow>
-      <ArrowSVG />
-    </Arrow>
-    <span>{children}</span>
-  </Wrapper>
+  <>
+    {!externalLink ? (
+      <Wrapper to={url ?? "/"} className={className} {...rest}>
+        <Arrow>
+          <ArrowSVG />
+        </Arrow>
+        <span>{children}</span>
+      </Wrapper>
+    ) : (
+      <WrapperExternal href={url ?? "#"} className={className} target="_blank" rel="noopener noreferrer" {...rest}>
+        <Arrow>
+          <ArrowSVG />
+        </Arrow>
+        <span>{children}</span>
+      </WrapperExternal>
+    )}
+  </>
 );
 export default ArrowLink;

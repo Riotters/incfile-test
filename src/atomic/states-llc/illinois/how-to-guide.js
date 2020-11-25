@@ -232,7 +232,7 @@ const HowToGuide = ({ content, data }) => {
           {parse(content.mainSteps.step4.text1)}
         </Paragraph>
         <IconListColorBox color={color.blue3} content={content.mainSteps.step4.lists} rounded />
-        <Button content={content.mainSteps.step4.dowload_205_button} theme="secondary56" arrow margin="16px 0 0 0" marginMD="42px 0 42px 0" />
+        <Button content={content.mainSteps.step4.dowload_205_button} theme="secondary56" arrow margin="16px auto 0 0" marginMD="42px auto 42px 0" externalLink />
         <Paragraph big mixed={true}>
           {parse(replaceStr(data.prices?.statefee, `[STATE_FEE]`, content.mainSteps.step4.text2))}
         </Paragraph>
@@ -317,7 +317,7 @@ const HowToGuide = ({ content, data }) => {
 
           {item.type === "arrow-links" &&
             item.content.map((link) => (
-              <ArrowLink url={link.url} style={link.style}>
+              <ArrowLink url={link.url} style={link.style} externalLink={link.externalLink}>
                 {link.text}
               </ArrowLink>
             ))}
