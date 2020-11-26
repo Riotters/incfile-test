@@ -313,7 +313,7 @@ export const agentPageContent = {
       content: [
         {
           text: `The Main Functions of a New York Registered Agent`,
-          url: `/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/`,
+          url: `/research-topics/registered-agent/registered-agent-function`,
         },
         {
           text: `Changing Your New York Registered Agent`,
@@ -321,7 +321,7 @@ export const agentPageContent = {
         },
         {
           text: `What a New York Registered Agent Does`,
-          url: `/research-topics/registered-agent-help/what-does-a-registered-agent-do/`,
+          url: `/research-topics/registered-agent/registered-agent-tasks/`,
         },
       ],
     },

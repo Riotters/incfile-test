@@ -79,7 +79,7 @@ export const startBusiness = {
   text: `Ready to start your business? Incfile will take care of the paperwork for you and file it with the New York Department of State-all for as little as $0 + state fee.`,
   button: {
     text: `Start a NY Business Now`,
-    url: `/`,
+    url: `${process.env.ORDER_URL}/form-order-now.php?entityState=NY`,
   },
 };
 
@@ -94,14 +94,14 @@ export const faq = {
         },
         {
           text: `NY LLC`,
-          url: `/`,
+          url: `/new-york-llc/`,
         },
         {
           text: `or`,
         },
         {
           text: `NY CORPORATION`,
-          url: `/`,
+          url: `/new-york-corporation/`,
         },
         {
           text: `guides for more information.`,
@@ -124,7 +124,7 @@ export const faq = {
         },
         {
           text: `NY Fictitious Business Name`,
-          url: `/`,
+          url: `/fictitious-business-or-trade-name/`,
         },
         {
           text: `with the New York Department of State on your behalf.`,
@@ -139,7 +139,7 @@ export const faq = {
         },
         {
           text: `file an amendment on your behalf,`,
-          url: `/`,
+          url: `/manage-your-company/amendment/`,
         },
         {
           text: `including changing the name of your New York corporation or LLC.`,
@@ -154,7 +154,7 @@ export const faq = {
         },
         {
           text: `We have a complete guide to choosing the right NY business name`,
-          url: `/`,
+          url: `/blog/post/llc-name-search-50-states/`,
         },
         {
           text: `— you'll want to choose a name that will:`,
@@ -171,7 +171,7 @@ export const faq = {
         },
         {
           text: `registering your New York business name as a trademark.`,
-          url: `/`,
+          url: `/trademark-name-search/`,
         },
         {
           text: `Note that filing a fictitious or “doing business as" (DBA) name in New York will not be sufficient to protect it.`,

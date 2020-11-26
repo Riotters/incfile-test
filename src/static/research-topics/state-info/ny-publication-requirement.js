@@ -28,11 +28,11 @@ export const about = {
   text2: `Want to see if your business name is available in New York? `,
   link: {
     text: `Try our free business entity search.`,
-    url: `/entity-search/new-york-entity-search`,
+    url: `/new-york-entity-search/`,
   },
   header3: `Form Your New York LLC`,
   text3: `There’s a formal process to start a business, and
-      <a href="/llc-state-information/new-york-llc/" target="_blank">we have a complete NY LLC</a>
+      <a href="/new-york-llc/" target="_blank">we have a complete NY LLC</a>
       guide that tells you what you need to do. Once your Articles of Organization have been filed, you’ll receive a filing receipt, which you’ll need for the next step.`,
   button: {
     text: `Start a New Tork LLC With Incfile`,

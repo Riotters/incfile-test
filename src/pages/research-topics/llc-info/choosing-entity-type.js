@@ -3,7 +3,7 @@ import Layout from "../../../components/layout";
 import SEO from "../../../components/seo";
 //Sections
 import Top from "../../../atomic/partials/top";
-import About from "../../../atomic/sections/research-topics/llc-info/forming-llc-benefits";
+import About from "../../../atomic/sections/research-topics/llc-info/choosing-entity-type";
 import Related from "../../../atomic/sections/learning-center-entity/help-center-article/related";
 import Categories from "../../../atomic/sections/learning-center-entity/help-center-article/categories";
 import Service from "../../../atomic/sections/learning-center-entity/help-center/service";
@@ -12,7 +12,7 @@ import Rocket from "../../../atomic/sections/review-entity-types/c-corporation/r
 import Searchbar from "../../../atomic/molecules/form/help-center-searchbar";
 //Texts
 import { top, rocket, categories, service, tools } from "../../../static/learning-center-entity/help-center-article";
-import { about, related } from "../../../static/research-topics/llc-info/forming-llc-benefits";
+import { about, related } from "../../../static/research-topics/llc-info/choosing-entity-type";
 
 const HelpCenter = () => (
   <Layout>

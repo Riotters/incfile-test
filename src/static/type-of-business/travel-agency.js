@@ -96,8 +96,8 @@ export const adventages2 = {
 };
 
 export const toolsList = {
-    headlineText: "Useful Online Tools for Your Daycare Business",
-    description: "Here are some really great online tools for managing your daycare business. They will reduce the time you spend on administration, help you to collaborate with others and free up your time to grow and manage your new venture.",
+    headlineText: "Useful Online Tools for Your Travel Agency",
+    description: "Here are some really great online tools for managing your travel agency business. They will reduce the time you spend on administration, help you to collaborate with others and free up your time to grow and manage your new venture.",
     tools: [
         {
             title: "Project Management",
