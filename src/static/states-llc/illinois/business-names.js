@@ -266,7 +266,7 @@ export const businessNamesContent = {
         items: [
           {
             question: `How Do I Search for My Illinois LLC Business Name?`,
-            answer: `Just go to the business name search tool and enter your proposed business name. You can search the register of the Illinois Secretary of State, which will tell you if there are any IL corporations or LLCs with that name.`,
+            answer: `Just go to the <a href="/business-name-search/" target="_blank">business name search tool</a> and enter your proposed business name. You can <a href="https://www.ilsos.gov/corporatellc/" target="_blank" rel="noopener noreferrer">search the register of the Illinois Secretary of State,</a> which will tell you if there are any IL corporations or LLCs with that name.`,
           },
           {
             question: `Are There Any Rules on Naming My Illinois LLC?`,

@@ -9,7 +9,7 @@ import LLCLayout from "../../atomic/partials/states-llc/arizona"
 import ContentMap from "../../atomic/partials/content-map";
 
 // Content
-import { feesAndRequirments } from "../../static/states-llc/north-carolina/home";
+import { top, feesAndRequirments } from "../../static/states-llc/north-carolina/home";
 import { tabPages } from "../../static/states-llc/north-carolina/general";
 import { getFullPricesAndFilings } from '../../api/Api';
 
@@ -27,7 +27,7 @@ const FillingRequirementsPage = () => {
                 title="North Carolina Business Search | How to Name Your NC LLC"
                 description="Learn what you need to know about naming an LLC in North Carolina with Incfile's helpful resources. Pick your perfect business name today!"
             />
-            <LLCLayout data={dataApi}>
+            <LLCLayout data={dataApi} top={top}>
                 <LeftTabPages content={tabPages} />
                 <MainPageContent>
                     <ContentMap content={feesAndRequirments} data={dataApi} />

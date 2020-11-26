@@ -1,6 +1,6 @@
 export const toolsList = {
-    headlineText: "Useful Online Tools for Your Dog Walking or Pet Sitting Business",
-    description: "Here are some really great online tools for managing your dog walking or pet sitting business. They will reduce the time you spend on administration, help you to collaborate with others and free up your time to grow and manage your new venture.",
+    headlineText: "Useful Online Tools for Your Summer Business",
+    description: "Here are some really great online tools for managing your summer business. They will reduce the time you spend on administration, help you to collaborate with others and free up your time to grow and manage your new venture.",
     tools: [
         {
             title: "Project Management",

@@ -17,7 +17,7 @@ const About = styled.section`
 `;
 
 const AboutSection = ({ className, content }) => (
-  <About className={className}>
+  <About className={className} id="answers">
     <Oval className="oval" height="570" width="570" y="-40">
       <OvalSVG />
     </Oval>

@@ -11,7 +11,7 @@ import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-blue3.inline.svg";
 import NumericList from "../../../organisms/lists/numeric-boxed-list";
 import Path from "../../../molecules/blocks/research-topics-path";
-import parse from "html-react-parser"
+import parse from "html-react-parser";
 
 const About = styled.section`
   position: relative;
@@ -19,7 +19,7 @@ const About = styled.section`
 `;
 
 const AboutSection = ({ className, content }) => (
-  <About className={className}>
+  <About className={className} id="answers">
     <Oval className="oval" height="570" width="570" y="-40">
       <OvalSVG />
     </Oval>
@@ -40,18 +40,18 @@ const AboutSection = ({ className, content }) => (
       <Heading size={3} bottomMargin="24">
         {content.header3}
       </Heading>
-      <Paragraph big bottomMargin="24" mixed >
-      {parse(content.text3)}
+      <Paragraph big bottomMargin="24" mixed>
+        {parse(content.text3)}
       </Paragraph>
       <IconListColorBox content={content.list} color={color.orange3} rounded bottomMargin="24" />
-      <Paragraph big bottomMargin="48" mixed >
-      {parse(content.text4)}
+      <Paragraph big bottomMargin="48" mixed>
+        {parse(content.text4)}
       </Paragraph>
       <Heading size={3} bottomMargin="24">
         {content.header4}
       </Heading>
-      <Paragraph big bottomMargin="24" mixed >
-      {parse(content.text5)}
+      <Paragraph big bottomMargin="24" mixed>
+        {parse(content.text5)}
       </Paragraph>
       <IconListColorBox content={content.list2} color={color.green3} rounded bottomMargin="24" />
       <Paragraph big bottomMargin="48">
@@ -60,8 +60,8 @@ const AboutSection = ({ className, content }) => (
       <Heading size={3} bottomMargin="24">
         {content.header5}
       </Heading>
-      <Paragraph big bottomMargin="16" mixed >
-      {parse(content.text7)}
+      <Paragraph big bottomMargin="16" mixed>
+        {parse(content.text7)}
       </Paragraph>
       <Paragraph big bottomMargin="16">
         {content.text8}
@@ -70,8 +70,8 @@ const AboutSection = ({ className, content }) => (
         {content.text9}
       </Paragraph>
       <NumericList content={content.list3} bottomMargin="24" />
-      <Paragraph big bottomMargin="48" mixed >
-      {parse(content.text10)}
+      <Paragraph big bottomMargin="48" mixed>
+        {parse(content.text10)}
       </Paragraph>
       <Heading size={3} bottomMargin="24">
         {content.header6}
@@ -79,15 +79,15 @@ const AboutSection = ({ className, content }) => (
       <Paragraph big bottomMargin="16">
         {content.text11}
       </Paragraph>
-      <Paragraph big bottomMargin="16" mixed >
-      {parse(content.text12)}
+      <Paragraph big bottomMargin="16" mixed>
+        {parse(content.text12)}
       </Paragraph>
       <Paragraph big bottomMargin="16">
         {content.text13}
       </Paragraph>
       <NumericList content={content.list4} bottomMargin="24" />
-      <Paragraph big bottomMargin="48" mixed >
-      {parse(content.text14)}
+      <Paragraph big bottomMargin="48" mixed>
+        {parse(content.text14)}
       </Paragraph>
       <Heading size={3} bottomMargin="24">
         {content.header7}
@@ -101,8 +101,8 @@ const AboutSection = ({ className, content }) => (
       <Paragraph big bottomMargin="16">
         {content.text16}
       </Paragraph>
-      <Paragraph big bottomMargin="48" mixed >
-      {parse(content.text17)}
+      <Paragraph big bottomMargin="48" mixed>
+        {parse(content.text17)}
       </Paragraph>
     </ImageContent>
   </About>

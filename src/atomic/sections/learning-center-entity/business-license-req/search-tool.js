@@ -15,15 +15,34 @@ import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";
 import Whitebox from "../../../atoms/boxes/white-box";
 import { Link } from "gatsby";
+import ArrowLink from "../../../molecules/buttons/text";
+import TopButtonsBox from "../../../atoms/boxes/top-buttons-box";
 
 const SearchTool = styled.div`
-  padding-bottom: 100px;
+  padding-bottom: 0;
   padding-top: 40px;
   position: relative;
   background-image: ${gradient.blue3};
-
+  
+  
   @media (min-width: 769px) {
     padding-top: 100px;
+  }
+  
+  .section-headline {
+    margin-bottom: 32px;
+  }
+  
+  .license-holder {
+    margin-bottom: 48px;
+    padding: 15px;
+  }
+  
+  @media (min-width: 576px) {
+    .license-holder {
+      margin-bottom: 76px;
+      padding: 40px;
+    }
   }
 `;
 
@@ -98,26 +117,85 @@ const LicenseItemWrapper = styled.ul`
 const LicenseItem = styled.li`
   display: flex;
   align-items: center;
-  padding: 20px 0;
-  border-top: 1px solid ${color.grey4};
+  justify-content: center;
+  flex-direction: column;
+  background-color: ${color.orange3};
   font-family: "Avenir", san-serif;
+  margin-bottom: 8px;
+  padding: 12px 24px;
+  
+  @media (min-width: 576px) {
+    padding: 34px 53px;
+    flex-direction: row;
+    justify-content: unset;
+    height: 100px;
+  }
 
   & > p {
     font-size: 20px;
     margin-bottom: 0;
+    font-weight: bold;
+    color: ${color.black};
+    text-align: center;
+    
+    @media (min-width: 576px) {
+      margin-left: 32px;
+      text-align: left;
+    }
   }
 
   &:first-child {
-    border-top: none;
+    border-radius: 24px 24px 0 0;
+  }
+  
+  &:last-child {
+    border-radius: 0 0 24px 24px;
   }
 
   .icon {
     width: 50px;
+    
+    @media (min-width: 576px) {
+      margin-bottom: 0;
+    }
   }
 `;
 
 const Icon = styled.div`
   svg {
+  }
+`;
+
+const StyledParagraph = styled(Paragraph)`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 48px;
+  
+  @media (max-width: 575px) {
+    span:first-child {
+      margin-bottom: 8px;
+    }
+  }
+  
+  @media (min-width: 576px) {
+    justify-content: space-between;
+    align-items: unset;
+    flex-direction: row;
+  }
+  
+  &:first-child {
+    margin-bottom: 40px;
+  }
+  
+  span:first-child {
+    color: ${color.black};
+    font-weight: bold;
+  }
+  
+  span:last-child {
+    color: ${color.grey2};
   }
 `;
 
@@ -157,7 +235,7 @@ const SearchToolSection = ({ content, businessIndustryList }) => {
         <OvalSVG />
       </Oval>
       <ContentCenter>
-        <TextCenterLayout headline={content.header} headlineWidth="850" text={content.text} />
+        <TextCenterLayout headline={content.header} headlineWidth="770" text={content.text} className="section-headline" />
 
         {!showResult ? (
           <>
@@ -176,10 +254,13 @@ const SearchToolSection = ({ content, businessIndustryList }) => {
           </>
         ) : (
           <>
-            <Whitebox padding="35px" bottomMargin="56px">
-              <Paragraph big mixed={true} style={{ fontSize: `28px`, maxWidth: `500px`, margin: `0 auto 52px auto`, textAlign: `center` }}>
-                {parser(`Here are the licenses you will need for your <b>${licenseFound.name}</b> business in <b>${selectedState}</b>...`)}
-              </Paragraph>
+            <Whitebox className="license-holder" style={{maxWidth: "630px"}}>
+              <StyledParagraph big mixed>
+                <span>Your State</span><span>{selectedState}</span>
+              </StyledParagraph>
+              <StyledParagraph big mixed>
+                <span>Your Industry</span><span>{licenseFound.name}</span>
+              </StyledParagraph>
 
               {licenseFound.licenses.length ? (
                 <LicenseItemWrapper>
@@ -196,15 +277,13 @@ const SearchToolSection = ({ content, businessIndustryList }) => {
                 <Paragraph style={{ textAlign: `center` }}>There was no licenses that you needed.</Paragraph>
               )}
 
-              <Link
-                to="#"
-                onClick={(e) => {
+              <TopButtonsBox style={{ justifyContent: "center" }}>
+                <ArrowLink bottomMargin={0} content={{ text: "Search Again", url: "#" }} onClick={(e) => {
                   e.preventDefault();
                   setShowResult(false);
                 }}
-              >
-                Search Again
-              </Link>
+                />
+              </TopButtonsBox>
             </Whitebox>
 
             <TextCenterLayout
@@ -212,7 +291,7 @@ const SearchToolSection = ({ content, businessIndustryList }) => {
               headlineWidth="700"
               text={`Our Business License Research Package offers total peace of mind by having our licensing
                                 specialist conduct the necessary research to determine all of the licenses and permits
-                                required on a city, state, and county level specifically for your business.`}
+                                required on a city, state, and county level specifically for your business.`} style={{marginBottom: "34px"}}
             />
 
             <Button content={{ text: `Do The Research For me`, url: `/business-license-research-package/` }} theme="primary56" width="250px" arrow />

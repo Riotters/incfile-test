@@ -9,7 +9,7 @@ import LLCLayout from "../../atomic/partials/states-llc/arizona"
 import ContentMap from "../../atomic/partials/content-map";
 
 // Content
-import { registeredAgent } from "../../static/states-llc/wyoming/home";
+import { top, registeredAgent } from "../../static/states-llc/wyoming/home";
 import { tabPages } from "../../static/states-llc/wyoming/general";
 import { getFullPricesAndFilings } from '../../api/Api';
 
@@ -27,7 +27,7 @@ const RegisteredAgentPage = () => {
                 title="Wyoming Registered Agents & Your LLC | Statutory Agents in Wyoming"
                 description="Do you need a Registered Agent for your WY LLC? Learn what Registered Agents do and how to get one with Incfile’s helpful guide."
             />
-            <LLCLayout data={dataApi}>
+            <LLCLayout data={dataApi} top={top}>
                 <LeftTabPages content={tabPages} />
                 <MainPageContent>
                     <ContentMap content={registeredAgent} />

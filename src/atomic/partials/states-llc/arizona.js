@@ -13,7 +13,7 @@ import Variants from "../../sections/learning-center-entity/state-information-ca
 import Subscription from "../../sections/learning-center-entity/state-information-california/subscription";
 import Articles from "../../sections/articles";
 // Content
-import { top, compare } from "../../../static/states-llc/arizona/home";
+import { compare } from "../../../static/states-llc/arizona/home";
 import { subscription } from "../../../static/learning-center-entity/state-information-california";
 
 const Wrapper = styled.div`
@@ -47,7 +47,7 @@ const Wrapper = styled.div`
   }
 `;
 
-const LLCLayout = ({ children, data, ongoingFilingRequirement }) => {
+const LLCLayout = ({ children, data, ongoingFilingRequirement, top }) => {
   return (
     <>
       <Top imageName="mr-bulb-state-information-llc-7342" imageAlt="Mrs Bulb and with checklist" ovalColor="purple-2" textWidth="530">

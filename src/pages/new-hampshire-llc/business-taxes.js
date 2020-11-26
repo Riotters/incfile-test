@@ -9,7 +9,7 @@ import LLCLayout from "../../atomic/partials/states-llc/arizona"
 import ContentMap from "../../atomic/partials/content-map";
 
 // Content
-import { businessTaxes } from "../../static/states-llc/new-hampshire/home";
+import { top, businessTaxes } from "../../static/states-llc/new-hampshire/home";
 import { tabPages } from "../../static/states-llc/new-hampshire/general";
 import { getFullPricesAndFilings } from '../../api/Api';
 
@@ -27,7 +27,7 @@ const BusinessTaxesPage = () => {
                 title="New Hampshire Business Taxes  for LLCs"
                 description="Do you have an NH LLC? Learn about the required federal and state taxes you might need to pay. Read more."
             />
-            <LLCLayout data={dataApi}>
+            <LLCLayout data={dataApi} top={top}>
                 <LeftTabPages content={tabPages} />
                 <MainPageContent>
                     <ContentMap content={businessTaxes} />

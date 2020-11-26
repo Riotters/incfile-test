@@ -47,7 +47,7 @@ export const launchBusiness = {
   header: `Launch your business with Incfile`,
   text: `No Contracts. No Surprises. Only $0 + State Fee to Launch Your Business.`,
   button: {
-    text: `launch your business`,
+    text: `Launch your business`,
     url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=NY`,
   },
 };

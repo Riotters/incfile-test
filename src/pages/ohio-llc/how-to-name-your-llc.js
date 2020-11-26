@@ -9,7 +9,7 @@ import LLCLayout from "../../atomic/partials/states-llc/arizona"
 import ContentMap from "../../atomic/partials/content-map";
 
 // Content
-import { namingYourBusiness } from "../../static/states-llc/ohio/home";
+import { top, namingYourBusiness } from "../../static/states-llc/ohio/home";
 import { tabPages } from "../../static/states-llc/ohio/general";
 import { getFullPricesAndFilings } from '../../api/Api';
 
@@ -27,7 +27,7 @@ const BusinessNamesPage = () => {
                 title="OH Business Entity Search | Register a Business Name in OH"
                 description="Learn what you need to know about naming an LLC in Ohio with Incfile’s helpful resources. Pick your perfect business name today!"
             />
-            <LLCLayout data={dataApi}>
+            <LLCLayout data={dataApi} top={top}>
                 <LeftTabPages content={tabPages} />
                 <MainPageContent>
                     <ContentMap content={namingYourBusiness} />

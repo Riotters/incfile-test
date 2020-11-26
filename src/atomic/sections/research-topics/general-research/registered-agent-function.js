@@ -17,12 +17,12 @@ const About = styled.section`
 `;
 
 const AboutSection = ({ className, content }) => (
-  <About className={className}>
+  <About className={className} id="answers">
     <Oval className="oval" height="570" width="570" y="-40">
       <OvalSVG />
     </Oval>
     <ImageContent image="web-address-search">
-    <Path content={content.links} />
+      <Path content={content.links} />
       <Heading size={3} bottomMargin="32">
         {content.header}
       </Heading>

@@ -9,7 +9,7 @@ import LLCLayout from "../../atomic/partials/states-llc/arizona"
 import ContentMap from "../../atomic/partials/content-map";
 
 // Content
-import { feesAndRequirments } from "../../static/states-llc/nebraska/home";
+import { top, feesAndRequirments } from "../../static/states-llc/nebraska/home";
 import { tabPages } from "../../static/states-llc/nebraska/general";
 import { getFullPricesAndFilings } from '../../api/Api';
 
@@ -27,7 +27,7 @@ const FillingRequirementsPage = () => {
                 title="Forms & Filing Requirements for Nebraska LLCs | Incfile.com"
                 description="Make sense of the required forms and filing procedures for your Nebraska LLC with Incfile&#039;s easy-to-use guide."
             />
-            <LLCLayout data={dataApi}>
+            <LLCLayout data={dataApi} top={top}>
                 <LeftTabPages content={tabPages} />
                 <MainPageContent>
                     <ContentMap content={feesAndRequirments} data={dataApi} />
