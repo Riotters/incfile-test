@@ -10,7 +10,7 @@ import ContentMap from "../../atomic/partials/content-map";
 import { getFullPricesAndFilings } from '../../api/Api';
 
 // Content
-import { businessTaxes } from "../../static/states-llc/indiana/home";
+import { top, businessTaxes } from "../../static/states-llc/indiana/home";
 import { tabPages } from "../../static/states-llc/indiana/general";
 
 const BusinessTaxesPage = () => {
@@ -27,7 +27,7 @@ const BusinessTaxesPage = () => {
                 title="Indiana Sales & Business Tax Registration for LLCs"
                 description="Do you have an IN LLC? Learn about the required federal, state and sales taxes you might need to pay. Read more."
             />
-            <LLCLayout data={dataApi}>
+            <LLCLayout data={dataApi} top={top}>
                 <LeftTabPages content={tabPages} />
                 <MainPageContent>
                     <ContentMap content={businessTaxes} data={dataApi} />

@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Container from "../../../container";
 import {shadow} from "../../../atoms/styles/shadows";
 import UsefulTools from "../../../partials/useful-tools";
-import {toolsList} from "../../../../static/type-of-business/online-business";
+import {toolsList} from "../../../../static/type-of-business/with-no-money-business";
 
 const ToolsAndLinks = () => (
     <Wrapper>

@@ -121,6 +121,13 @@ const PanelWrapper = styled.div`
     }
   }
 
+  a {
+    color: ${color.blue1};
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+  }
+
   li {
     font-size: 14px;
     line-height: 19px;
@@ -302,7 +309,7 @@ const AccordionFaq = ({ content, curve, curveRight, curveRightBottom, curveLeft,
 
                           {e.type === "arrow-links" &&
                             e.content.map((link) => (
-                              <ArrowLink url={link.url} style={link.style}>
+                              <ArrowLink url={link.url} style={link.style} externalLink={link.externalLink}>
                                 {parse(link.text)}
                               </ArrowLink>
                             ))}
@@ -314,7 +321,7 @@ const AccordionFaq = ({ content, curve, curveRight, curveRightBottom, curveLeft,
                       ))}
 
                     {item.arrowLink && (
-                      <ArrowLink url={item.arrowLink.url} style={item.arrowLink.styles}>
+                      <ArrowLink url={item.arrowLink.url} style={item.arrowLink.styles} externalLink={item.externalLink}>
                         {item.arrowLink.text}
                       </ArrowLink>
                     )}

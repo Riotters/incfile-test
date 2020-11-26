@@ -132,7 +132,7 @@ const BusinessAccountingForm = ({ className, content }) => {
                     <div class="g-recaptcha" data-sitekey={`${process.env.CAPTCHA_KEY}`}></div>
                 </Grid>
 
-                <Button type="submit" content={{text: isSubmitting ? 'Submitting...' : 'Yes, Contact Me to Learn More'}} theme="primary56" arrow marginSM="32px auto 0" />
+                <Button type="submit" content={{text: isSubmitting ? 'Submitting...' : 'Yes, Contact Me to Learn More'}} theme="primary56" arrow margin="32px 0 0" marginSM="32px auto 0" />
             </Wrapper>
         </>
     );

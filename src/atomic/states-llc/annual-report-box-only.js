@@ -34,4 +34,9 @@ const Wrapper = styled.div`
         background-color: #f2f8f3;
         padding: 8px 25px;
     }
+    
+    @media (max-width: 575px) {
+        width: 100%;
+        overflow-x: auto;
+    }
 `

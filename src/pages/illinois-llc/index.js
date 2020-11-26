@@ -13,7 +13,7 @@ import Rocket from "../../atomic/sections/rocket";
 import HowToGuide from "../../atomic/states-llc/illinois/how-to-guide";
 
 // Content
-import { HomePageContent } from "../../static/states-llc/illinois/home";
+import { top, HomePageContent } from "../../static/states-llc/illinois/home";
 import { tabPages } from "../../static/states-llc/illinois/general";
 
 import { getFullPricesAndFilings } from "../../api/Api";

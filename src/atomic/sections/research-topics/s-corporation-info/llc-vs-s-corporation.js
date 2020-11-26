@@ -25,7 +25,7 @@ const AboutSection = ({ className, content }) => (
     </Oval>
     <ImageContent image="web-address-search">
       <Path content={content.links} />
-      <Heading size={4} bottomMargin="32">
+      <Heading size={2} style={{ textAlign: "left" }} topMargin="32" bottomMargin="32">
         {content.header}
       </Heading>
       <Heading size={4} bottomMargin="24">

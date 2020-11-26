@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import UsefulTools from "../../../partials/useful-tools";
-import {toolsList} from "../../../../static/type-of-business/event-planning";
+import {toolsList} from "../../../../static/type-of-business/record-label";
 import OvalSvg from "../../../../images/ovals/top-left-transparent-pink.inline.svg";
 import OvalSvg2 from "../../../../images/ovals/top-right-transparent-blue2.inline.svg";
 

@@ -269,7 +269,7 @@ export const namingYourBusiness = [
       text: `Oregon Secretary of State business entity search tool`,
       url: `http://egov.sos.state.or.us/br/pkg_web_name_srch_inq.login`,
     },
-    marginBottom: 16,
+    marginBottom: 48,
   },
   {
     type: `header`,
@@ -834,9 +834,9 @@ export const registeredAgent = [
     content: {
       header: `You might find these resources helpful:`,
       list: [
-        `<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/">The Main Functions of a Oregon Registered Agent</a>`,
+        `<a href="/research-topics/registered-agent/registered-agent-function/">The Main Functions of a Oregon Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Oregon Registered Agent</a>`,
-        `<a href-"/research-topics/registered-agent-help/what-does-a-registered-agent-do/">What a Oregon Registered Agent Does</a>`,
+        `<a href-"/research-topics/registered-agent/registered-agent-tasks/">What a Oregon Registered Agent Does</a>`,
       ],
     },
     marginBottom: 48,
@@ -847,7 +847,7 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `Oregon Business Licenses, Fees and Filing Requirements for LLCs`,
-    size: 2,
+    size: 3,
     marginBottom: 24,
   },
   {
@@ -1127,7 +1127,7 @@ export const feesAndRequirments = [
       header: `Areas you might want to file Oregon Articles of Amendment for include:`,
       list: [`Adding, removing or changing a Oregon LLC member or manager`, `Changing the business address of your LLC`, `Altering the stated business activities of your Oregon LLC`],
     },
-    marginBottom: 0,
+    marginBottom: 32,
     color: color.yellow3,
   },
   {
@@ -1251,14 +1251,14 @@ export const businessTaxes = [
         text: `Employers pay payroll tax on any salaries they pay to employees`,
       },
       {
-        text: `Employees pay federal, state and payroll tax on their earnings.`,
+        text: `Employees pay federal, state and payroll tax on their earnings`,
       },
     ],
     marginBottom: 16,
   },
   {
     type: `text`,
-    content: `tems 1, 2 and 3 are taxed as “pass-through” income for any LLC owners, managers or members who receive profits from the business. Any profits are reported on federal and Oregon personal tax returns, and that’s where you will pay those taxes.
+    content: `Items 1, 2 and 3 are taxed as “pass-through” income for any LLC owners, managers or members who receive profits from the business. Any profits are reported on federal and Oregon personal tax returns, and that’s where you will pay those taxes.
     `,
     marginBottom: 32,
   },
@@ -1308,7 +1308,7 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `Unlike many states, Oregon does not charge a sales tax.`,
-    marginBottom: 8,
+    marginBottom: 32,
   },
   {
     type: `header`,
@@ -1324,7 +1324,7 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Oregon LLC Federal Self-Employment Tax`,
-    size: 4,
+    size: 3,
     marginBottom: 24,
   },
   {
@@ -1340,7 +1340,7 @@ export const businessTaxes = [
   {
     type: `list-dot`,
     content: {
-      header: `The graduated Oregon state income tax rate is:`,
+      header: ``,
       list: [`On profits of $30,000, you would pay self-employment tax of $4,590`, `On profits of $70,000, you would pay self-employment tax of $10,710`, `On profits of $100,000, you would pay self-employment tax of $15,300`, `On profits of $140,000, you would pay self-employment tax of $21,420`],
     },
     marginBottom: 16,
@@ -1351,7 +1351,7 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Pay Less Self-Employment Tax by Treating Your Oregon LLC as an S Corporation`,
-    size: 4,
+    size: 3,
     marginBottom: 16,
   },
   {
@@ -1380,7 +1380,7 @@ export const businessTaxes = [
   },
   {
     type: `header`,
-    content: `Federal Income Tax`,
+    content: `Oregon LLC Federal Income Tax`,
     size: 3,
     marginBottom: 24,
   },

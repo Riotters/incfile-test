@@ -88,7 +88,7 @@ const HowToGuide = ({ content }) => {
             </Paragraph>
           )}
 
-          {item.type === "arrow-link" && <ArrowLink content={item.content} bottomMargin={item.marginBottom} />}
+          {item.type === "arrow-link" && <ArrowLink content={item.content} bottomMargin={item.marginBottom} externalLink={item.externalLink} styles={item.styles} />}
 
           {item.type === "list-dot" && <IconListColorBox color={item.color} content={item.content} curve={item.curve} curveColor={item.curveColor} rounded bottomMargin={item.marginBottom} />}
 

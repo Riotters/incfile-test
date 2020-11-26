@@ -116,8 +116,8 @@ export const adventages2 = {
 };
 
 export const toolsList = {
-    headlineText: "Useful Online Tools for Your Brewery Business",
-    description: "Here are some really great online tools for managing your brewery business. They will reduce the time you spend on administration, help you to collaborate with others and free up your time to grow and manage your new venture.",
+    headlineText: "Useful Online Tools for Your Teen Business",
+    description: "Here are some really great online tools for managing your teen business.",
     tools: [
         {
             title: "Project Management",

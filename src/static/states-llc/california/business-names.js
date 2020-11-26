@@ -258,7 +258,7 @@ export const businessNamesContent = {
         items: [
           {
             question: `How Do I Search for My California LLC Business Name?`,
-            answer: `Just go to the business name search tool and enter your proposed business name. You can search the register of the California Secretary of State, which will tell you if there are any CA corporations or LLCs with that name.`,
+            answer: `You can use Incfile’s <a href="/" target="_blank" rel="noopener noreferrer">Business Name Search tool</a> or search the California business registry yourself on the <a href="/" target="_blank" rel="noopener noreferrer">Secretary of State</a> website. Just go to the business name search tool and enter your proposed business name.`,
           },
           {
             question: `Are There Any Rules on Naming My California LLC?`,

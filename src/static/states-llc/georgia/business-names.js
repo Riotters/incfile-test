@@ -211,7 +211,7 @@ export const businessNamesContent = {
     },
     {
       type: `paragraph`,
-      content: `Once you’ve searched for your Georgia business name, checked availability, followed the naming rules and decided whether you need a fictitious name, you can register your LLC name with Georgia. There are a couple of ways to do this.`,
+      content: `Once you’ve <a href="/business-name-search/" target="_blank">searched for your Georgia business name,</a> checked availability, followed the naming rules and decided whether you need a fictitious name, you can register your LLC name with Georgia. There are a couple of ways to do this.`,
     },
     {
       type: `numberBoxList`,
