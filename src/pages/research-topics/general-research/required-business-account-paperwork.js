@@ -16,7 +16,7 @@ import { about, related } from "../../../static/research-topics/general-research
 
 const HelpCenter = () => (
   <Layout>
-    <SEO title="What is the process involved in changing the name of an LLC?" description="Q & A for LLC and other forms of corporations. Learning Center for Incorporating in every state." />    
+    <SEO title="What Do I Need to Open a Business Banking Account? | Incfile" description="If you run certain types of businesses, you will need to have a bank account specifically for your business finances. Learn how to get started." />    
     <Top imageName="mrs-bulb-help-center-article" imageAlt="Mrs Bulb and with checklist" ovalColor="green">
       <h1>{top.header}</h1>
       <p>{top.text}</p>
