@@ -1230,7 +1230,7 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `If you want help with your taxes, Incfile provides a complete <a href"/business-accounting/"> Business Tax Filing service.</a>.`,
+    content: `If you want help with your taxes, Incfile provides a complete <a href="/business-accounting/"> Business Tax Filing service</a>.`,
     marginBottom: 32,
   },
   {
@@ -1276,7 +1276,7 @@ export const businessTaxes = [
   },
   {
     type: `header`,
-    content: `State Taxes in New Mexico`,
+    content: `New Mexico State Tax on Your LLC Earnings`,
     size: 3,
     marginBottom: 24,
   },
@@ -1293,11 +1293,15 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `The New Mexico state tax rate varies between 1.7 percent to 4.9 percent, depending on income.`,
-    marginBottom: 8,
+    marginBottom: 32,
   },
   {
-    type: `text`,
-    content: `<a href="http://www.tax.newmexico.gov/Individuals/personal-income-tax-information.aspx"  target="_blank" rel="noopener noreferrer>Get details on the New Mexico state tax here.</a> `,
+    type: `arrow-link`,
+    content: {
+      text: `Get details on the New Mexico state tax here.`,
+      url: `http://www.tax.newmexico.gov/Individuals/personal-income-tax-information.aspx`,
+      externalLink: true,
+    },
     marginBottom: 32,
   },
   {
@@ -1455,9 +1459,10 @@ export const businessTaxes = [
               type: `arrow-links`,
               content: [
                 {
-                  styles: { marginTop: `24px` },
+                  styles: { marginTop: `24px`, fontSize: "16px" },
                   text: `Get more requirements from the New Mexico Department of Employment and Workforce website.`,
                   url: `https://www.dws.state.nm.us/en-us/`,
+                  externalLink: true,
                 },
               ],
             },
