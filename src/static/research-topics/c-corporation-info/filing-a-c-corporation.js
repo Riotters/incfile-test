@@ -10,11 +10,11 @@ export const about = {
     },
   ],
   header: `The benefits of filing a C-corporation`,
-  text: `Every corporation is considered a C corp when it is formed with the Secretary of State. The distinction is made on a federal level and processed by the IRS.`,
-  text2: `Corporation that want to be taxed a small business corporation file a form with the IRS called Form 2553 and will file their taxes using 1120s tax return. Corporations that do not file this form are taxed as traditional corporations and file the 1120 tax return.`,
-  text3: `A C-corporation file a corporate tax return and will pay taxes on the profits. The post tax income may then be distributed to the corporation shareholders in the the form of dividends. The shareholders are then taxed on dividends, which effectively forces the ownership of a corporation to pay taxes on the same earnings twice- once at the corporate level, and then as individual level. This is what is known as “double taxation.”`,
-  text4: `An S-Corporation is similar to a Limited Liability Company in the sense that the profits of the company flow directly to the shareholders this is known as pass through taxation. The profits of the S – Corporation are distributed proportionally to share percentages.`,
-  text5: `Pass-through taxation allows the profits of the company to flow directly to the ownership and only be taxed once.`,
+  text: `When deciding whether or not to convert a company to a C-corporation, entrepreneurs should consider whether the level of paperwork and taxation structure is the right fit for the business.`,
+  text2: `Incorporation adds legal protections that can help keep personal assets secure and possibly reduce taxes. There are several options, including C-corporations.`,
+  text3: `“Among the different types of business structures available in the U.S., almost all larger corporations with more than 100 shareholders and virtually all publicly traded companies are C corporations,” writes Elizabeth Wasserman for Inc. magazine.`,
+  text4: `LLCs and S-corporations are often more popular among smaller businesses because they don’t mandate regular meetings and normally require less paperwork, Wasserman observes. But, if a business faces financial losses, shareholders may take the hit on their tax returns. This is because both LLCs and S-corporations pass profit and losses to individuals with a stake in the company.`,
+  text5: `Other key benefits of C-corporations include medical reimbursement plans that employees can receive tax-free, added ownership arrangement flexibility for venture capitalists who want to invest in the startup, an easier transition to becoming a public company and the opportunity to collect future expansion earnings at a lower cost.`,
 }
 
 export const related = {

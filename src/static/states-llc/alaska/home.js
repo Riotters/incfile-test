@@ -1445,6 +1445,22 @@ export const businessTaxes = [
   },
   {
     type: `header`,
+    content: `Federal Income Tax`,
+    size: 4,
+    marginBottom: 16,
+  },
+  {
+    type: `text`,
+    content: `You must also pay regular federal income tax on any earnings you take out of your Alaska LLC. The amount of income tax you pay depends on your earnings, current income tax brackets, deductions and how you file.`,
+    marginBottom: 16,
+  },
+  {
+    type: `text`,
+    content: `You only pay federal income tax on your LLC profits that you take out of the business, less certain deductions and allowances. This includes your tax-free amount, plus LLC business expenses and other deductions for areas such as healthcare and some retirement plans. Speak to your accountant for more information.`,
+    marginBottom: 32,
+  },
+  {
+    type: `header`,
     content: `Employee and Employer Taxes for Your Alaska LLC`,
     size: 3,
     marginBottom: 32,

@@ -18,22 +18,18 @@ const About = styled.section`
 `;
 
 const AboutSection = ({ className, content }) => (
-  <About className={className} id="answers">
+  <About className={className}>
     <Oval className="oval" height="570" width="570" y="-40">
       <OvalSVG />
     </Oval>
     <ImageContent image="web-address-search">
       <Path content={content.links} />
-      <Heading size={4} bottomMargin="32">
+      <Heading size={3} bottomMargin="32">
         {content.header}
       </Heading>
       <Paragraph big bottomMargin="16">
         {content.text}
       </Paragraph>
-      <Paragraph big bottomMargin="24">
-        {content.text2}
-      </Paragraph>
-      <IconListColorBox content={content.list} color={color.red2} curve curveColor={color.green2} rounded bottomMargin="48" />
     </ImageContent>
   </About>
 );

@@ -1550,7 +1550,7 @@ export const compare = {
 };
 
 export const requirements = {
-  header: `Fees and requirements in California.`,
+  header: `Fees and requirements in Massachusetts`,
   rows: [
     {
       box: {

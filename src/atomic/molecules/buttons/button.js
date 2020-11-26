@@ -72,6 +72,72 @@ const Wrapper = styled(Link)`
   }
 `;
 
+const WrapperExternal = styled.a`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: ${(props) => (props.height ? props.height : "auto")};
+  width: 100%;
+  background-color: ${(props) => (props.theme === "primary40" || props.theme === "primary48" || props.theme === "primary56" ? color.orange1 : color.white)};
+  border: 2px solid ${color.orange1};
+  border-radius: 50px;
+  color: ${(props) => (props.theme === "primary40" || props.theme === "primary48" || props.theme === "primary56" ? color.white : color.orange1)};
+  font-family: MarkPro;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  padding: ${(props) => (props.padding ? props.padding : props.theme === "primary40" || props.theme === "secondary40" ? "6px 30px" : props.theme === "primary48" || props.theme === "secondary48" ? "10px 38px" : props.theme === "primary56" || props.theme === "secondary56" ? "14px 42px" : "")};
+  margin: ${(props) => (props.margin ? props.margin : "")};
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  @media (min-width: 576px) {
+    width: auto;
+    white-space: ${(props) => (props.wrap ? "" : "nowrap")};
+    max-width: ${(props) => props.width};
+    margin: ${(props) => (props.marginSM ? props.marginSM : "")};
+  }
+
+  @media (min-width: 769px) {
+    margin: ${(props) => (props.marginMD ? props.marginMD : "")};
+  }
+
+  @media (min-width: 992px) {
+    margin: ${(props) => (props.marginLG ? props.marginLG : "")};
+  }
+
+  @media (min-width: 1200px) {
+    margin: ${(props) => (props.marginXL ? props.marginXL : "")};
+  }
+
+  &:hover {
+    background-color: ${(props) => (props.theme === "primary40" || props.theme === "primary48" || props.theme === "primary56" ? color.white : color.orange1)};
+    color: ${(props) => (props.theme === "primary40" || props.theme === "primary48" || props.theme === "primary56" ? color.orange1 : color.white)};
+
+    .arrow1,
+    .arrow2 {
+      transform: translate(3px, -50%);
+    }
+
+    .arrow1 {
+      svg {
+        path {
+          fill: ${(props) => (props.theme === "primary40" || props.theme === "primary48" || props.theme === "primary56" ? color.orange1 : color.white)};
+        }
+      }
+    }
+
+    .arrow2 {
+      svg {
+        path {
+          fill: ${color.white};
+        }
+      }
+    }
+  }
+`;
+
 const Arrow = styled.div`
   display: none;
   align-items: center;
@@ -111,20 +177,56 @@ const Arrow = styled.div`
   }
 `;
 
-const Button = ({ content, id, className, theme, height, width, arrow, arrow2, margin, marginSM, marginMD, marginLG, padding, right, wrap, onClick }) => (
-  <Wrapper id={id} className={className} to={content.url ? content.url : content} height={height} width={width} arrow={arrow} arrow2={arrow2} theme={theme} margin={margin} marginSM={marginSM} marginMD={marginMD} marginLG={marginLG} padding={padding} wrap={wrap} onClick={onClick}>
-    {content.text ? content.text : content}
-    {arrow && (
-      <Arrow className="arrow1" theme={theme} right={right}>
-        <ArrowSVG />
-      </Arrow>
+const Button = ({ content, id, className, theme, height, width, arrow, arrow2, margin, marginSM, marginMD, marginLG, padding, right, wrap, onClick, externalLink }) => (
+  <>
+    {!externalLink ? (
+      <Wrapper id={id} className={className} to={content.url ? content.url : content} height={height} width={width} arrow={arrow} arrow2={arrow2} theme={theme} margin={margin} marginSM={marginSM} marginMD={marginMD} marginLG={marginLG} padding={padding} wrap={wrap} onClick={onClick}>
+        {content.text ? content.text : content}
+        {arrow && (
+          <Arrow className="arrow1" theme={theme} right={right}>
+            <ArrowSVG />
+          </Arrow>
+        )}
+        {arrow2 && (
+          <Arrow className="arrow2">
+            <Arrow2SVG />
+          </Arrow>
+        )}
+      </Wrapper>
+    ) : (
+      <WrapperExternal
+        id={id}
+        className={className}
+        href={content.url ? content.url : content}
+        height={height}
+        width={width}
+        arrow={arrow}
+        arrow2={arrow2}
+        theme={theme}
+        margin={margin}
+        marginSM={marginSM}
+        marginMD={marginMD}
+        marginLG={marginLG}
+        padding={padding}
+        wrap={wrap}
+        onClick={onClick}
+        rel="noopener noreferrer nofollow"
+        target="_blank"
+      >
+        {content.text ? content.text : content}
+        {arrow && (
+          <Arrow className="arrow1" theme={theme} right={right}>
+            <ArrowSVG />
+          </Arrow>
+        )}
+        {arrow2 && (
+          <Arrow className="arrow2">
+            <Arrow2SVG />
+          </Arrow>
+        )}
+      </WrapperExternal>
     )}
-    {arrow2 && (
-      <Arrow className="arrow2">
-        <Arrow2SVG />
-      </Arrow>
-    )}
-  </Wrapper>
+  </>
 );
 
 export default Button;

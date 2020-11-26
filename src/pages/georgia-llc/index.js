@@ -52,27 +52,27 @@ function GeorgiaLLCIndex() {
     });
   }, []);
 
-    return (
-        <Layout>
-            <SEO title="LLCs in Georgia | Guide to Forming an LLC in Georgia" description="Ready to form your Georgia LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
+  return (
+    <Layout>
+      <SEO title="LLCs in Georgia | Guide to Forming an LLC in Georgia" description="Ready to form your Georgia LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
 
-            <LinearBgHeader imageMapName="tx-map-2x">
-                <HomeHeader content={HomePageContent.header} data={dataApi} />
-            </LinearBgHeader>
+      <LinearBgHeader imageMapName="tx-map-2x">
+        <HomeHeader content={HomePageContent.header} data={dataApi} />
+      </LinearBgHeader>
 
-            <WrapperContent>
-                <Wrapper>
-                    <LeftTabPages content={tabPages} />
-                    <MainPageContent>
-                        <HowToGuide content={HomePageContent.content} data={dataApi} />
-                    </MainPageContent>
-                </Wrapper>
-            </WrapperContent>
+      <WrapperContent>
+        <Wrapper>
+          <LeftTabPages content={tabPages} />
+          <MainPageContent>
+            <HowToGuide content={HomePageContent.content} data={dataApi} />
+          </MainPageContent>
+        </Wrapper>
+      </WrapperContent>
 
-            <Rocket url="?entityType=LLC&entityState=GA" />
+      <Rocket url="?entityType=LLC&entityState=GA" />
 
-            <Helmet>
-                <script type="application/ld+json">{`
+      <Helmet>
+        <script type="application/ld+json">{`
                     {
                         "@context": "http://schema.org",
                         "@type": "VideoObject",
@@ -85,9 +85,9 @@ function GeorgiaLLCIndex() {
                         "interactionCount": "9"
                     }
                 `}</script>
-            </Helmet>
-        </Layout>
-    );
+      </Helmet>
+    </Layout>
+  );
 }
 
 export default GeorgiaLLCIndex;

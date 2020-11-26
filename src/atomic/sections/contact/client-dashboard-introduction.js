@@ -29,22 +29,39 @@ const Wrapper = styled.section`
   .article {
     gap: 0 1em;
     padding: 24px;
-    align-items: center;
 
     .gatsby-image-wrapper {
       width: 120px;
       border-radius: 5px;
+      margin-bottom: 16px;
+
+      @media (min-width: 769px) {
+        margin-bottom: 0;
+      }
 
       img {
         max-width: 100%;
         height: auto;
       }
     }
+
+    p {
+    }
   }
 `;
 
 const Content = styled.div`
   flex: 1;
+
+  p {
+    &:last-child {
+      margin-bottom: 16px;
+
+      @media (min-width: 769px) {
+        margin-bottom: 0;
+      }
+    }
+  }
 `;
 
 const IconWrapper = styled.div`
@@ -63,6 +80,16 @@ const AlignCenter = styled.div`
   align-items: center;
   justify-content: center;
   margin: 48px 0;
+`;
+
+const Article = styled(Whitebox)`
+  flex-direction: column;
+  align-items: flex-start;
+
+  @media (min-width: 769px) {
+    flex-direction: row;
+    align-items: center;
+  }
 `;
 
 const ClientDashboardSection = ({ className, content, isNewSale }) => (
@@ -95,23 +122,21 @@ const ClientDashboardSection = ({ className, content, isNewSale }) => (
           </IconWrapper>
           {content.articles.map((item) => (
             <a href={item.url} style={{ width: `100%`, display: `block` }}>
-              <Whitebox className="article" flex bottomMargin="8px">
+              <Article className="article" flex bottomMargin="8px">
                 <Image filename={item.icon} alt="" />
                 <Content>
                   <Paragraph style={{ fontWeight: `bold`, marginBottom: `8px` }}>{item.title}</Paragraph>
-                  <Paragraph mixed={true} style={{ marginBottom: `0` }}>
-                    {item.desc}
-                  </Paragraph>
+                  <Paragraph mixed={true}>{item.desc}</Paragraph>
                 </Content>
                 <Circle circleColor={color.orange3} iconColor={color.orange1} rightMargin="24" transform="rotate(0deg)" className="circle">
                   <ArrowSVG />
                 </Circle>
-              </Whitebox>
+              </Article>
             </a>
           ))}
 
           {/*<AlignCenter>*/}
-            {/*<Button content={{ text: "Read our blogs", url: "/blog/" }} theme="secondary56" arrow width="250px" />*/}
+          {/*<Button content={{ text: "Read our blogs", url: "/blog/" }} theme="secondary56" arrow width="250px" />*/}
           {/*</AlignCenter>*/}
         </div>
       )}

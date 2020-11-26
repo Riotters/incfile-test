@@ -173,16 +173,11 @@ const SupportForm = ({ className, isNewSale, id }) => {
         let email = inputRef.current.value;
         setValidation(false);
 
-        // For testing only:
-        // await (new Promise((accept, reject) => {
-        //     setTimeout(() => {
-        //         accept("A reminder email has been sent to your inbox.");
-        //     }, 2500);
-        // })).then((resp) => {
-        //     setSuccess(resp);
-        // }).catch((reason) => {
-        //     setValidation("Validation error: " + reason);
-        // });
+        if (!validEmail(email)) {
+            setValidation('Email is not valid');
+            inputRef.current.focus();
+            return false;
+        }
 
         await fetch(`${process.env.INCFILE_API_URL}/remind-ordernum/?email=${email}`)
             .then(response => {

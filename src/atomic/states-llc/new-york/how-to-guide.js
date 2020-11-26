@@ -82,6 +82,18 @@ const WhiteBoxColumn = styled(Whitebox)`
   }
 `;
 
+const WhiteBoxLink = styled(Whitebox)`
+  align-items: center;
+
+  p {
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: ${color.blue1};
+    }
+  }
+`;
+
 const HowToGuide = ({ content, data }) => {
   return (
     <Wrapper>
@@ -113,19 +125,19 @@ const HowToGuide = ({ content, data }) => {
       </Heading>
 
       <div id="video">
-        <LightBoxVideo thumbnailVideo="ny-llc-video-thumbnail-01" videoID="8ddZw2R7Hig" />
+        <LightBoxVideo thumbnailVideo="ny-llc-video-thumbnail-01" videoID="8ddZw2R7Hig" bottomMargin="32" />
       </div>
 
       {content.mainSteps.navSteps.map((step) => (
         <Link to="/#" onClick={(e) => handleMenuStepClick(step.blockID, e)}>
-          <Whitebox bottomMargin="8px" padding="24px" flex>
+          <WhiteBoxLink bottomMargin="8px" padding="24px" flex>
             <Circle circleColor={color.orange3} iconColor={color.orange1} rightMargin="24" transform="rotate(90deg)" className="circle">
               <ArrowSVG />
             </Circle>
             <Paragraph mixed={true} bottomMargin="0">
               {parse(step.text)}
             </Paragraph>
-          </Whitebox>
+          </WhiteBoxLink>
         </Link>
       ))}
 

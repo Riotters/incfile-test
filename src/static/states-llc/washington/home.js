@@ -113,9 +113,14 @@ export const howToGuide = [
     marginBottom: 24,
   },
   {
+    type: `text`,
+    content: `The Secretary of State has plenty of other information on forming and running a business in Washington.`,
+    marginBottom: 24,
+  },
+  {
     type: `list-dot`,
     content: {
-      header: `The Secretary of State has plenty of other information on forming and running a business in Washington. You’ll find other useful information below:`,
+      header: `You’ll find other useful information below:`,
       list: [
         `<a href="https://www.sos.wa.gov/corps/limitedliabilitycompaniesllconlineandpaperregistrations.aspx" target="_blank" rel="noopener noreferrer">Washington Secretary of State for forming and running your LLC</a>`,
         `<a href="https://www.lni.wa.gov/" target="_blank" rel="noopener noreferrer">Washington Division of Labor for employers and hiring</a>`,
@@ -123,7 +128,7 @@ export const howToGuide = [
       ],
     },
     marginBottom: 48,
-    color: color.blue2,
+    color: color.blue3,
     curve: true,
     curveColor: color.red1,
   },
@@ -145,13 +150,18 @@ export const howToGuide = [
     marginBottom: 24,
   },
   {
+    type: `text`,
+    content: `Some states, including Washington, allow certain occupations to form “Professional LLCs.” These types of businesses typically have special requirements and licensing.`,
+    marginBottom: 24,
+  },
+  {
     type: `list-dot`,
     content: {
-      header: `Some states, including Washington, allow certain occupations to form “Professional LLCs.” These types of businesses typically have special requirements and licensing. Here are the occupations that the WA Secretary of State allows to form professional LLCs:`,
+      header: `Here are the occupations that the WA Secretary of State allows to form professional LLCs:`,
       list: [`Attorneys-at-law`, `Physicians`, `Podiatrists`, `Dentists`, `Optometrists`, `Accountants`, `Veterinarians`, `Architects`, `Engeneers`, `Osteopathic physicians and surgeons`, `Chiropractors`, `Psychologists`, `Social workers`, `Acupuncturists`, `Land surveyors`],
     },
     marginBottom: 48,
-    color: color.babyblue3,
+    color: color.green3,
   },
   {
     type: `header`,
@@ -187,30 +197,65 @@ export const howToGuide = [
   {
     type: `header`,
     content: `More Information About Washington LLCs`,
+    size: 3,
     marginBottom: 24,
   },
   {
-    type: `accordion`,
+    type: `text`,
+    content: `You’ll find plenty more insight and guidance on the other pages of this guide, including:`,
+    marginBottom: 32,
+  },
+  {
+    type: `arrow-link`,
     content: {
-      items: [
-        {
-          question: `Naming Your Washington LLC`,
-          answer: `How to search the Washington business registry of the DC Department of Consumer and Regulatory Affairs and find the right name. Includes information on naming rules, fictitious names, reserving a Washington LLC name and more.`,
-        },
-        {
-          question: `Washington Registered Agents for Your LLC`,
-          answer: `How to appoint a Washington Registered Agent to your new LLC or change to a different Registered Agent. Includes information on Registered Agent rules and searching for Washington Registered Agents.`,
-        },
-        {
-          question: `Fees and Requirements for Your Washington LLC`,
-          answer: `How to understand the various fees you’ll need to pay and the requirements you’ll need to meet for both federal and Washington rules. Includes details of Employee Identification Numbers (EINs), Washington DC and federal business licenses, Washington Annual Reports and more.`,
-        },
-        {
-          question: `Federal, State, Sales and Other Taxes for Your Washington DC LLC`,
-          answer: `How to understand the various taxes you will need to pay to the federal and Washington government. Includes details of federal taxes like income and self-employment, and Washington DC taxes like sales tax and income tax.`,
-        },
-      ],
+      text: `Naming Your Washington LLC`,
+      url: `/washington-llc/how-to-name-your-llc/`,
     },
+    marginBottom: 16,
+  },
+  {
+    type: `text`,
+    content: `How to search the Washington business registry of the Secretary of State and find the right name. Includes information on naming rules, fictitious names, reserving a Washington LLC name and more.`,
+    marginBottom: 48,
+  },
+  {
+    type: `arrow-link`,
+    content: {
+      text: `Washington Registered Agents for LLCs`,
+      url: `/washington-llc/registered-agents-washington-llc/`,
+    },
+    marginBottom: 16,
+  },
+  {
+    type: `text`,
+    content: `How to appoint a Registered Agent to your new LLC or change to a different Registered Agent. Includes information on Registered Agent rules and searching forWashington Registered Agents.`,
+    marginBottom: 48,
+  },
+  {
+    type: `arrow-link`,
+    content: {
+      text: `Fees and Requirements for Washington LLCs`,
+      url: `/washington-llc/form-filling-permit-requirements/`,
+    },
+    marginBottom: 16,
+  },
+  {
+    type: `text`,
+    content: `How to understand the various fees you’ll need to pay and the requirements you’ll need to meet for both federal and Washington rules. Includes details of Employer Identification Numbers (EINs), Washington and federal business licenses, annual reports and more.`,
+    marginBottom: 48,
+  },
+  {
+    type: `arrow-link`,
+    content: {
+      text: `Federal, State, Sales and Other Taxes for Your Washington LLC`,
+      url: `/washington-llc/business-taxes/`,
+    },
+    marginBottom: 16,
+  },
+  {
+    type: `text`,
+    content: `How to understand the various taxes you will need to pay to the federal and Washington government. Includes details of federal taxes like income and self-employment, and Washington taxes like sales tax and income tax.`,
+    marginBottom: 48,
   },
 ];
 
@@ -1372,103 +1417,66 @@ export const businessTaxes = [
     marginBottom: 32,
   },
   {
-    type: `header`,
-    content: `Employer Payroll Tax withholding for Your Washington LLC `,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `All employers must collect and withhold payroll tax from their employees when they receive their salaries. You normally withhold 7.65 percent of the taxable salary that you pay to your employees.`,
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `Federal Tax Withholding`,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `You may also choose to withhold federal income tax on the wages you pay to employees. Speak to your accountant for more information.`,
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `Employees May Need to File Tax Returns`,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `You may also choose to withhold federal and Washington DC income tax on the wages you pay to employees. Speak to your accountant for more information.`,
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `Employees May Need to File Tax Returns`,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `Regardless of whether you withhold federal and Washington DC income tax, your employees may need to file their own tax returns.`,
-    marginBottom: 48,
-  },
-  {
-    type: `header`,
-    content: `Employee Insurance and Other Requirements`,
-    size: 3,
-    marginBottom: 24,
-  },
-  {
-    type: `text`,
-    content: `You may also need to pay insurance for any employees, like employee compensation insurance or unemployment tax. There will also be other requirements you have for employees.`,
-    marginBottom: 16,
-  },
-  {
-    type: `arrow-link`,
+    type: `accordion`,
     content: {
-      text: `Get more requirements from the Washington Department of Labor &amp; Industries website.`,
-      url: `https://www.lni.wa.gov/`,
+      items: [
+        {
+          question: `Employer Payroll Tax Withholding`,
+          answer: `All employers must collect and withhold payroll tax from their employees when they receive their salaries. You would normally withhold 7.65 percent of the taxable salary that you pay to your employees.`,
+        },
+        {
+          question: `Federal Tax Withholding`,
+          answer: `You may also choose to withhold federal income tax on the wages you pay to employees. Speak to your accountant for more information.`,
+        },
+        {
+          question: `Employees May Need to File Tax Returns`,
+          answer: `Regardless of whether you withhold federal income tax, your employees may need to file their own tax returns.`,
+        },
+        {
+          question: `Employee Insurance and Other Requirements`,
+          answer2: [
+            {
+              type: `paragraph`,
+              content: `You may also need to pay insurance for any employees, like employee compensation insurance or unemployment tax. There will also be other requirements you have for employees.`,
+            },
+            {
+              type: `arrow-links`,
+              content: [
+                {
+                  styles: { marginTop: `24px` },
+                  text: `Get more requirements from the Washington Department of Labor & Industries website.`,
+                  url: `https://www.lni.wa.gov/`,
+                },
+              ],
+            },
+          ],
+        },
+        {
+          question: `Other Taxes and Duties for Your Washington LLC`,
+          answer: `Depending on the industry you are in, your Washington LLC may be liable for certain other taxes and duties. For example, if you sell gasoline you may need to pay a tax on any fuel you sell. Likewise, if you import or export goods you may need to pay certain duties. Speak to your accountant about any other taxes you may need to withhold or pay.`,
+        },
+        {
+          question: `Estimated Taxes for Your Washington LLC`,
+          answer2: [
+            {
+              type: `paragraph`,
+              content: `Most Washington LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make.`,
+            },
+            {
+              type: `list-dot-without-bg`,
+              color: color.orange3,
+              header: `The most common types of estimated taxes are:`,
+              content: [`Federal income tax`, `Federal self-employment tax`],
+            },
+            {
+              type: `paragraph`,
+              content: `Most Washington LLCs will pay estimated taxes four times a year. Speak to your accountant for more information.`,
+            },
+          ],
+        },
+      ],
     },
-    bottomMargin: 48,
-  },
-  {
-    type: `header`,
-    size: 3,
-    content: `Other Taxes and Duties for Your Washington LLC`,
-    marginBottom: 24,
-  },
-  {
-    type: `text`,
-    content: `Depending on the industry you are in, your Washington LLC may be liable for certain other taxes and duties. For example, if you sell gasoline you may need to pay a tax on any fuel you sell. Likewise, if you import or export goods you may need to pay certain duties. Speak to your accountant about any other taxes you may need to withhold or pay.`,
-    marginBottom: 48,
-  },
-  {
-    type: `header`,
-    content: `Estimated Taxes for Your Washington LLC`,
-    size: 3,
-    marginBottom: 24,
-  },
-  {
-    type: `text`,
-    content: `Depending on the industry you are in, your Washington LLC may be liable for certain other taxes and duties. For example, if you sell gasoline you may need to pay a tax on any fuel you sell. Likewise, if you import or export goods you may need to pay certain duties. Speak to your accountant about any other taxes you may need to withhold or pay.`,
-    bottomMargin: 16,
-  },
-  {
-    type: `list-dot`,
-    content: {
-      header: `The most common types of estimated tax are:`,
-      list: [`Federal income tax`, `Federal self-employment tax`, `Washington DC local tax`],
-    },
-    marginBottom: 16,
-    color: color.orange3,
-  },
-  {
-    type: `text`,
-    content: `Most Washington LLCs will pay estimated taxes four times a year. Speak to your accountant for more information.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,

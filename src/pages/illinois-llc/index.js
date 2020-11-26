@@ -16,9 +16,8 @@ import HowToGuide from "../../atomic/states-llc/illinois/how-to-guide";
 import { top, HomePageContent } from "../../static/states-llc/illinois/home";
 import { tabPages } from "../../static/states-llc/illinois/general";
 
-import { getFullPricesAndFilings } from '../../api/Api';
+import { getFullPricesAndFilings } from "../../api/Api";
 import { Helmet } from "react-helmet";
-
 
 const Wrapper = styled.div`
   display: flex;
@@ -44,35 +43,35 @@ const Wrapper = styled.div`
 `;
 
 function IllinoisLLCIndex() {
-    const [dataApi, setDataApi] = React.useState({});
+  const [dataApi, setDataApi] = React.useState({});
 
-    React.useEffect(() => {
-        getFullPricesAndFilings('Illinois').then(data => {
-            setDataApi(data);
-        });
-    }, []);
+  React.useEffect(() => {
+    getFullPricesAndFilings("Illinois").then((data) => {
+      setDataApi(data);
+    });
+  }, []);
 
-    return (
-        <Layout>
-            <SEO title="LLCs in Illinois | Guide to Forming an LLC in Illinois" description="Ready to form your Illinois LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
+  return (
+    <Layout>
+      <SEO title="LLCs in Illinois | Guide to Forming an LLC in Illinois" description="Ready to form your Illinois LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
 
-            <LinearBgHeader imageMapName="tx-map-2x">
-                <HomeHeader content={HomePageContent.header} data={dataApi} />
-            </LinearBgHeader>
+      <LinearBgHeader imageMapName="tx-map-2x">
+        <HomeHeader content={HomePageContent.header} data={dataApi} />
+      </LinearBgHeader>
 
-            <WrapperContent>
-                <Wrapper>
-                    <LeftTabPages content={tabPages} />
-                    <MainPageContent>
-                        <HowToGuide content={HomePageContent.content} data={dataApi} />
-                    </MainPageContent>
-                </Wrapper>
-            </WrapperContent>
+      <WrapperContent>
+        <Wrapper>
+          <LeftTabPages content={tabPages} />
+          <MainPageContent>
+            <HowToGuide content={HomePageContent.content} data={dataApi} />
+          </MainPageContent>
+        </Wrapper>
+      </WrapperContent>
 
-            <Rocket url="?entityType=LLC&entityState=IL" />
+      <Rocket url="?entityType=LLC&entityState=IL" />
 
-            <Helmet>
-                <script type="application/ld+json">{`
+      <Helmet>
+        <script type="application/ld+json">{`
                 {
                     "@context": "http://schema.org",
                     "@type": "VideoObject",
@@ -85,9 +84,9 @@ function IllinoisLLCIndex() {
                     "interactionCount": "4"
                 }
             `}</script>
-            </Helmet>
-        </Layout>
-    );
+      </Helmet>
+    </Layout>
+  );
 }
 
 export default IllinoisLLCIndex;
