@@ -7,26 +7,30 @@ import { glossaryA, glossaryB, glossaryC, glossaryD, glossaryE, glossaryF, gloss
 import { Heading } from "../../atoms/typography/heading";
 
 const Wrapper = styled.section`
-    position: relative;
+  position: relative;
 
-    h3 {
-        width: 100%;
-        text-align: left;
-    }
+  h3 {
+    width: 100%;
+    max-width: 970px;
+    text-align: left;
+  }
 `;
 
 const GlossaryFAQSection = ({ className }) => (
-    <Wrapper className={className}>
-        <Container>
-            <ContentCenter contentWidth={970}>
-                <Heading size="3" bottomMargin="32" style={{textAlign: 'left'}}>A</Heading>
-                <Accordion content={glossaryA} tab maxWidth={970} noAutoWidth />
-                <Heading size="3" bottomMargin="32">B</Heading>
-                <Accordion content={glossaryB} tab maxWidth={970} noAutoWidth />
-
-            </ContentCenter>
-        </Container>
-    </Wrapper>
+  <Wrapper className={className}>
+    <Container>
+      <ContentCenter contentWidth={970}>
+        <Heading size="3" bottomMargin="32" style={{ textAlign: "left" }}>
+          A
+        </Heading>
+        <Accordion content={glossaryA} tab maxWidth={970} noAutoWidth />
+        <Heading size="3" bottomMargin="32">
+          B
+        </Heading>
+        <Accordion content={glossaryB} tab maxWidth={970} noAutoWidth />
+      </ContentCenter>
+    </Container>
+  </Wrapper>
 );
 
 export default GlossaryFAQSection;
