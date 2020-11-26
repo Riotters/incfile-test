@@ -13,7 +13,7 @@ import Rocket from "../../atomic/sections/rocket";
 import HowToGuide from "../../atomic/states-llc/texas/how-to-guide";
 
 // Content
-import { HomePageContent } from "../../static/states-llc/texas/home";
+import { top, HomePageContent } from "../../static/states-llc/texas/home";
 import { tabPages, rocket } from "../../static/states-llc/texas/general";
 
 import { getFullPricesAndFilings } from "../../api/Api";

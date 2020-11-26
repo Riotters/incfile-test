@@ -886,7 +886,7 @@ export const registeredAgent = [
     content: {
       header: `You might find these resources helpful:`,
       list: [
-        `<a href="/research-topics/registered-agent/registered-agent-function">The Main Functions of a Alaska Registered Agent</a>`,
+        `<a href="/research-topics/registered-agent/registered-agent-function/">The Main Functions of a Alaska Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Alaska Registered Agent</a>`,
         `<a href-"/research-topics/registered-agent/registered-agent-tasks/">What a Alaska Registered Agent Does</a>`,
       ],
@@ -1196,7 +1196,7 @@ export const feesAndRequirments = [
       header: `Areas you might want to file Alaska Articles of Amendment for include:`,
       list: [`Adding, removing or changing a Alaska LLC member or manager`, `Changing the business address of your LLC`, `Altering the stated business activities of your Alaska LLC`],
     },
-    marginBottom: 0,
+    marginBottom: 32,
     color: color.yellow3,
   },
   {
@@ -1441,6 +1441,22 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `Speak to your accountant for more information on reducing your Alaska LLC self-employment tax through an S Corporation tax election.`,
+    marginBottom: 32,
+  },
+  {
+    type: `header`,
+    content: `Federal Income Tax`,
+    size: 4,
+    marginBottom: 16,
+  },
+  {
+    type: `text`,
+    content: `You must also pay regular federal income tax on any earnings you take out of your Alaska LLC. The amount of income tax you pay depends on your earnings, current income tax brackets, deductions and how you file.`,
+    marginBottom: 16,
+  },
+  {
+    type: `text`,
+    content: `You only pay federal income tax on your LLC profits that you take out of the business, less certain deductions and allowances. This includes your tax-free amount, plus LLC business expenses and other deductions for areas such as healthcare and some retirement plans. Speak to your accountant for more information.`,
     marginBottom: 32,
   },
   {

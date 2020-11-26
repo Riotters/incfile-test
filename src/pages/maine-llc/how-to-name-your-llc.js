@@ -9,7 +9,7 @@ import LLCLayout from "../../atomic/partials/states-llc/arizona"
 import ContentMap from "../../atomic/partials/content-map";
 
 // Content
-import { namingYourBusiness } from "../../static/states-llc/maine/home";
+import { top, namingYourBusiness } from "../../static/states-llc/maine/home";
 import { tabPages } from "../../static/states-llc/maine/general";
 import { getFullPricesAndFilings } from '../../api/Api';
 
@@ -28,7 +28,7 @@ const BusinessNamesPage = () => {
                 title="Maine Business Entity Searches & Naming Your LLC"
                 description=" Learn what you need to know about naming an LLC in ME with Incfile’s helpful resources. Pick your perfect business name today!"
             />
-            <LLCLayout data={dataApi}>
+            <LLCLayout data={dataApi} top={top}>
                 <LeftTabPages content={tabPages} />
                 <MainPageContent>
                     <ContentMap content={namingYourBusiness} />

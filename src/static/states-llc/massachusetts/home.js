@@ -847,7 +847,7 @@ export const registeredAgent = [
     content: {
       header: `You might find these resources helpful:`,
       list: [
-        `<a href="/research-topics/registered-agent/registered-agent-function">The Main Functions of a Massachusetts Registered Agent</a>`,
+        `<a href="/research-topics/registered-agent/registered-agent-function/">The Main Functions of a Massachusetts Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Massachusetts Registered Agent</a>`,
         `<a href-"/research-topics/registered-agent/registered-agent-tasks/">What a Massachusetts Registered Agent Does</a>`,
       ],
@@ -1550,7 +1550,7 @@ export const compare = {
 };
 
 export const requirements = {
-  header: `Fees and requirements in California.`,
+  header: `Fees and requirements in Massachusetts`,
   rows: [
     {
       box: {

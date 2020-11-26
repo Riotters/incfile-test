@@ -9,7 +9,7 @@ import LLCLayout from "../../atomic/partials/states-llc/arizona"
 import ContentMap from "../../atomic/partials/content-map";
 
 // Content
-import { registeredAgent } from "../../static/states-llc/michigan/home";
+import { top, registeredAgent } from "../../static/states-llc/michigan/home";
 import { tabPages } from "../../static/states-llc/michigan/general";
 import { getFullPricesAndFilings } from '../../api/Api';
 
@@ -27,7 +27,7 @@ const RegisteredAgentPage = () => {
                 title="Michigan Registered Agents & Your LLC"
                 description="Do you need a registered agent for your Michigan LLC? Learn what registered agents do and how to get one with Incfile’s helpful guide."
             />
-            <LLCLayout data={dataApi}>
+            <LLCLayout data={dataApi} top={top}>
                 <LeftTabPages content={tabPages} />
                 <MainPageContent>
                     <ContentMap content={registeredAgent} />

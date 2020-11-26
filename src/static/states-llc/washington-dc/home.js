@@ -772,7 +772,7 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       list: [
-        `<a href="/research-topics/registered-agent/registered-agent-function">The Main Functions of a Washington DC Registered Agent</a>`,
+        `<a href="/research-topics/registered-agent/registered-agent-function/">The Main Functions of a Washington DC Registered Agent</a>`,
         `<a htef="/manage-your-company/change-of-registered-agent/">Changing Your Washington DC Registered Agent</a>`,
         `<a href="/research-topics/registered-agent/registered-agent-tasks/">What a Washington DC Registered Agent Does</a>`,
       ],
@@ -1355,101 +1355,56 @@ export const businessTaxes = [
     marginBottom: 32,
   },
   {
-    type: `header`,
-    content: `Employer Payroll Tax withholding for Your Washington DC LLC `,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `All employers must collect and withhold payroll tax from their employees when they receive their salaries. You normally withhold 7.65 percent of the taxable salary that you pay to your employees.`,
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `Employer Payroll Tax Withholding`,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `All employers must collect and withhold payroll tax from their employees when they receive their salaries. You would normally withhold 7.65 percent of the taxable salary that you pay to your employees.`,
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `Employer Federal and Local Tax Withholding`,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `You may also choose to withhold federal and Washington DC income tax on the wages you pay to employees. Speak to your accountant for more information.`,
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `Employees May Need to File Tax Returns`,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `Regardless of whether you withhold federal and Washington DC income tax, your employees may need to file their own tax returns.`,
-    marginBottom: 48,
-  },
-  {
-    type: `header`,
-    content: `Employee Insurance and Other Requirements`,
-    size: 3,
-    marginBottom: 24,
-  },
-  {
-    type: `text`,
-    content: `You may also need to pay insurance for any employees, like employee compensation insurance or unemployment tax. There will also be other requirements you have for employees.`,
-    marginBottom: 48,
-  },
-  {
-    type: `header`,
-    size: 3,
-    content: `Other Taxes and Duties for Your Washington DC LLC`,
-    marginBottom: 24,
-  },
-  {
-    type: `header`,
-    content: `Estimated Taxes for Your Washington DC LLC`,
-    size: 3,
-    marginBottom: 24,
-  },
-  {
-    type: `text`,
-    content: `Depending on the industry you are in, your Washington DC LLC may be liable for certain other taxes and duties. For example, if you sell gasoline you may need to pay a tax on any fuel you sell. Likewise, if you import or export goods you may need to pay certain duties. Speak to your accountant about any other taxes you may need to withhold or pay.`,
-    marginBottom: 48,
-  },
-  {
-    type: `header`,
-    size: 3,
-    content: `Estimated Taxes for Your Washington DC LLC`,
-    marginBottom: 24,
-  },
-  {
-    type: `text`,
-    content: `Most Washington DC LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make.`,
-    marginBottom: 16,
-  },
-  {
-    type: `list-dot`,
+    type: `accordion`,
     content: {
-      header: `The most common types of estimated tax are:`,
-      list: [`Federal income tax`, `Federal self-employment tax`, `Washington DC local tax`],
+      items: [
+        {
+          question: `Employer Payroll Tax Withholding`,
+          answer: `All employers must collect and withhold payroll tax from their employees when they receive their salaries. You would normally withhold 7.65 percent of the taxable salary that you pay to your employees.`,
+        },
+        {
+          question: `Employer Federal and Local Tax Withholding`,
+          answer: `You may also choose to withhold federal and Washington DC income tax on the wages you pay to employees. Speak to your accountant for more information.`,
+        },
+        {
+          question: `Employees May Need to File Tax Returns`,
+          answer: `Regardless of whether you withhold federal and Washington DC income tax, your employees may need to file their own tax returns.`,
+        },
+        {
+          question: `Employee Insurance and Other Requirements`,
+          answer2: [
+            {
+              type: `paragraph`,
+              content: `You may also need to pay insurance for any employees, like employee compensation insurance or unemployment tax. There will also be other requirements you have for employees.`,
+            },
+          ],
+        },
+        {
+          question: `Other Taxes and Duties for Your Washington DC LLC`,
+          answer: `Depending on the industry you are in, your Washington DC LLC may be liable for certain other taxes and duties. For example, if you sell gasoline you may need to pay a tax on any fuel you sell. Likewise, if you import or export goods you may need to pay certain duties. Speak to your accountant about any other taxes you may need to withhold or pay.`,
+        },
+        {
+          question: `Estimated Taxes for Your Washington DC LLC`,
+          answer2: [
+            {
+              type: `paragraph`,
+              content: `Most Washington DC LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make.`,
+            },
+            {
+              type: `list-dot-without-bg`,
+              color: color.orange3,
+              header: `The most common types of estimated taxes are:`,
+              content: [`Federal income tax`, `Federal self-employment tax`, `Washington DC local tax`],
+            },
+            {
+              type: `paragraph`,
+              content: `Most Washington DC LLCs will pay estimated taxes four times a year. Speak to your accountant for more information.`,
+            },
+          ],
+        },
+      ],
     },
-    marginBottom: 16,
-    color: color.orange3,
-  },
-  {
-    type: `text`,
-    content: `Most Washington DC LLCs will pay estimated taxes four times a year. Speak to your accountant for more information.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,

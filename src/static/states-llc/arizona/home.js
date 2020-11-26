@@ -866,7 +866,7 @@ export const registeredAgent = [
     content: {
       header: `You might find these resources helpful:`,
       list: [
-        `<a href="/research-topics/registered-agent/registered-agent-function">The Main Functions of an Arizona Registered Agent</a>`,
+        `<a href="/research-topics/registered-agent/registered-agent-function/">The Main Functions of an Arizona Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Arizona Registered Agent</a>`,
         `<a href="/research-topics/registered-agent/registered-agent-tasks/">What an Arizona Registered Agent Does</a>`,
       ],
@@ -1615,16 +1615,16 @@ export const compare = {
   table: {
     headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
     rows: [
-        [`Initial Filing Price`, `$0 +\u00a0State\u00a0Fee`, `$79 +\u00a0State\u00a0Fee`, `$49 +\u00a0State\u00a0Fee`],
-        [`File Articles`, `check-green`, `check-green`, `check-green`],
-        [`Name Search`, `check-green`, `check-green`, `check-green`],
-        [`Business Dashboard with Additional Services, Content & Support`, `check-green`, `check-red`, `check-green`],
-        [`Business Tax Consultation`, `check-green`, `check-green`, `check-green`],
-        [`First Year Registered Agent`, `FREE`, `$249`, `check-green`],
-        [`Operating Agreement`, `$40`, `$99`, `check-green`],
-        [`EIN`, `$70`, `$159`, `$70`],
-        [`Business Contract Templates`, `$150`, `$40`, `check-red`],
-        [`Expedited Order`, `(+$50)`, `$350`, `$50`],
+      [`Initial Filing Price`, `$0 +\u00a0State\u00a0Fee`, `$79 +\u00a0State\u00a0Fee`, `$49 +\u00a0State\u00a0Fee`],
+      [`File Articles`, `check-green`, `check-green`, `check-green`],
+      [`Name Search`, `check-green`, `check-green`, `check-green`],
+      [`Business Dashboard with Additional Services, Content & Support`, `check-green`, `check-red`, `check-green`],
+      [`Business Tax Consultation`, `check-green`, `check-green`, `check-green`],
+      [`First Year Registered Agent`, `FREE`, `$249`, `check-green`],
+      [`Operating Agreement`, `$40`, `$99`, `check-green`],
+      [`EIN`, `$70`, `$159`, `$70`],
+      [`Business Contract Templates`, `$150`, `$40`, `check-red`],
+      [`Expedited Order`, `(+$50)`, `$350`, `$50`],
     ],
   },
 };

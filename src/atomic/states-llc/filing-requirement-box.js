@@ -43,12 +43,12 @@ const Filing = styled.div`
         display: flex;
         font-size: 18px;
 
-        strong{
+        strong {
             font-family: Avenir,sans-serif;
             font-size: 16px;
             line-height: 24px;
             margin-bottom: 0px;
-            min-width: 150px;
+            min-width: 100px;
         }
     }
     

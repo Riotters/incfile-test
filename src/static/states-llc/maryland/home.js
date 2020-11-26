@@ -805,7 +805,7 @@ export const registeredAgent = [
     content: {
       header: `You might find these resources helpful:`,
       list: [
-        `<a href="/research-topics/registered-agent/registered-agent-function">The Main Functions of a Maryland Registered Agent</a>`,
+        `<a href="/research-topics/registered-agent/registered-agent-function/">The Main Functions of a Maryland Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Maryland Registered Agent</a>`,
         `<a href-"/research-topics/registered-agent/registered-agent-tasks/">What a Maryland Registered Agent Does</a>`,
       ],
@@ -819,7 +819,7 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `Licenses, Fees and Filing Requirements for Maryland LLCs`,
-    size: 2,
+    size: 3,
     marginBottom: 40,
   },
   {

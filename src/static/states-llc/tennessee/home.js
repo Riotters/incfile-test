@@ -293,7 +293,7 @@ export const namingYourBusiness = [
       text: `Tennessee Secretary of State business entity search tool`,
       url: `https://tnbear.tn.gov/ecommerce/nameavailability.aspx`,
     },
-    marginBottom: 16,
+    marginBottom: 48,
   },
   {
     type: `header`,
@@ -890,7 +890,7 @@ export const registeredAgent = [
     content: {
       header: `You might find these resources helpful:`,
       list: [
-        `<a href="/research-topics/registered-agent/registered-agent-function">The Main Functions of a Tennessee Registered Agent</a>`,
+        `<a href="/research-topics/registered-agent/registered-agent-function/">The Main Functions of a Tennessee Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Tennessee Registered Agent</a>`,
         `<a href-"/research-topics/registered-agent/registered-agent-tasks/">What a Tennessee Registered Agent Does</a>`,
       ],
@@ -1191,7 +1191,7 @@ export const feesAndRequirments = [
       header: `Areas you might want to file Tennessee Articles of Amendment for include:`,
       list: [`Adding, removing or changing a Tennessee LLC member or manager`, `Changing the business address of your LLC`, `Altering the stated business activities of your Tennessee LLC`],
     },
-    marginBottom: 0,
+    marginBottom: 32,
     color: color.yellow3,
   },
   {
@@ -1315,14 +1315,14 @@ export const businessTaxes = [
         text: `Employers pay payroll tax on any salaries they pay to employees`,
       },
       {
-        text: `Employees pay federal, state and payroll tax on their earnings.`,
+        text: `Employees pay federal, state and payroll tax on their earnings`,
       },
     ],
     marginBottom: 16,
   },
   {
     type: `text`,
-    content: `tems 1, 2 and 3 are taxed as “pass-through” income for any LLC owners, managers or members who receive profits from the business. Any profits are reported on federal and Tennessee personal tax returns, and that’s where you will pay those taxes.
+    content: `Items 1, 2 and 3 are taxed as “pass-through” income for any LLC owners, managers or members who receive profits from the business. Any profits are reported on federal and Tennessee personal tax returns, and that’s where you will pay those taxes.
     `,
     marginBottom: 32,
   },
@@ -1335,7 +1335,7 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `Tennessee does not charge a state tax on income, only on dividends. You will need to pay sales tax to the Tennessee Department of Revenue if you sell products.`,
-    marginBottom: 8,
+    marginBottom: 24,
   },
   {
     type: `header`,
@@ -1346,7 +1346,7 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `Tennessee does not charge state income tax on earnings; you will only pay tax on dividend earnings or interest received.`,
-    marginBottom: 8,
+    marginBottom: 24,
   },
   {
     type: `header`,
@@ -1409,8 +1409,9 @@ export const businessTaxes = [
     marginBottom: 32,
   },
   {
-    type: `text`,
+    type: `header`,
     content: `Tennessee LLC Federal Self-Employment Tax`,
+    size: 3,
     marginBottom: 16,
   },
   {
@@ -1472,7 +1473,7 @@ export const businessTaxes = [
   },
   {
     type: `header`,
-    content: `Federal Income Tax`,
+    content: `Tennessee LLC Federal Income Tax`,
     size: 3,
     marginBottom: 24,
   },
@@ -1495,91 +1496,68 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `If you pay employees, there are some slightly different tax implications. Speak to your accountant to get clear guidance for your own unique situation.`,
-    marginBottom: 16,
-  },
-  {
-    type: `header`,
-    content: `Tennessee LLC Employer Payroll Tax Withholding`,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `All employers must collect and withhold payroll tax from their employees when they receive their salaries. You would normally withhold 7.65 percent of the taxable salary that you pay to your employees.`,
     marginBottom: 32,
   },
   {
-    type: `header`,
-    content: `Employer Federal and State Tax Withholding for Your Tennessee LLC`,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `You may also choose to withhold federal and Tennessee state income tax on the wages you pay to employees. Speak to your accountant for more information.`,
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `Employees May Need to File Tax Returns`,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `Regardless of whether you withhold federal tax, your employees may need to file their own tax returns.`,
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `Employee Insurance and Other Requirements`,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `You may also need to pay insurance for any employees, like employee compensation insurance or unemployment tax. There will also be other requirements you have for employees.`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `Get more requirements from the <a href="https://www.tn.gov/workforce.html" target="_blank" rel="noopener noreferrer"> Tennessee Department of Labor and Workforce Development website.</a>`,
-    marginBottom: 24,
-  },
-  {
-    type: `header`,
-    content: `Other Taxes and Duties for Your Tennessee LLC`,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `Depending on the industry you are in, your Tennessee LLC may be liable for certain other taxes and duties. For example, if you sell gasoline you may need to pay a tax on any fuel you sell. Likewise, if you import or export goods you may need to pay certain duties. Speak to your accountant about any other taxes you may need to withhold or pay.`,
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `Estimated Taxes for Your Tennessee LLC`,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `Most Tennessee LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make. `,
-    marginBottom: 16,
-  },
-  {
-    type: `list-dot`,
+    type: `accordion`,
     content: {
-      header: `The most common types of estimated tax are:`,
-      list: [`Federal income tax`, `Federal self-employment tax`],
+      items: [
+        {
+          question: `Employer Payroll Tax Withholding for Your Tennessee LLC `,
+          answer: `All employers must collect and withhold payroll tax from their employees when they receive their salaries. You would normally withhold 7.65 percent of the taxable salary that you pay to your employees.`,
+        },
+        {
+          question: `Employer Federal Tax Withholding for Your Tennessee LLC`,
+          answer: `You may also choose to withhold federal income tax on the wages you pay to employees. Speak to your accountant for more information.`,
+        },
+        {
+          question: `Employees May Need to File Tax Returns`,
+          answer: `Regardless of whether you withhold federal and Tennessee state income tax, your employees may need to file their own tax returns.`,
+        },
+        {
+          question: `Tennessee LLC Employee Insurance and Other Requirements`,
+          answer2: [
+            {
+              type: `paragraph`,
+              content: `You may also need to pay insurance for any employees, like employee compensation insurance or unemployment tax. There will also be other requirements you have for employees.`,
+            },
+            {
+              type: `arrow-links`,
+              content: [
+                {
+                  styles: { marginTop: `24px` },
+                  text: `Get more requirements from the Tennessee Department of Labor and Workforce Development website.`,
+                  url: `https://www.tn.gov/workforce.html`,
+                },
+              ],
+            },
+          ],
+        },
+        {
+          question: `Other Taxes and Duties for Your Tennessee LLC`,
+          answer: `Depending on the industry you are in, your Tennessee LLC may be liable for certain other taxes and duties. For example, if you sell gasoline, you may need to pay a tax on any fuel you sell. Likewise, if you import or export goods, you may need to pay certain duties. Speak to your accountant about any other taxes you may need to withhold or pay.`,
+        },
+        {
+          question: `Estimated Taxes for Your Tennessee LLC`,
+          answer2: [
+            {
+              type: `paragraph`,
+              content: `Most Tennessee LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make.`,
+            },
+            {
+              type: `list-dot-without-bg`,
+              color: color.orange3,
+              header: `The most common types of estimated taxes are:`,
+              content: [`Federal income tax`, `Federal self-employment tax`],
+            },
+            {
+              type: `paragraph`,
+              content: `Most Tennessee LLCs will pay estimated taxes four times a year. Speak to your accountant for more information.`,
+            },
+          ],
+        },
+      ],
     },
-    marginBottom: 24,
-    color: color.purple3,
-  },
-  {
-    type: `text`,
-    content: `Most Tennessee LLCs will pay estimated taxes four times a year. Speak to your accountant for more information.`,
     marginBottom: 32,
   },
   {

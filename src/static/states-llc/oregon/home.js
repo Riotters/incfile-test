@@ -269,7 +269,7 @@ export const namingYourBusiness = [
       text: `Oregon Secretary of State business entity search tool`,
       url: `http://egov.sos.state.or.us/br/pkg_web_name_srch_inq.login`,
     },
-    marginBottom: 16,
+    marginBottom: 48,
   },
   {
     type: `header`,
@@ -834,7 +834,7 @@ export const registeredAgent = [
     content: {
       header: `You might find these resources helpful:`,
       list: [
-        `<a href="/research-topics/registered-agent/registered-agent-function">The Main Functions of a Oregon Registered Agent</a>`,
+        `<a href="/research-topics/registered-agent/registered-agent-function/">The Main Functions of a Oregon Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Oregon Registered Agent</a>`,
         `<a href-"/research-topics/registered-agent/registered-agent-tasks/">What a Oregon Registered Agent Does</a>`,
       ],
@@ -847,7 +847,7 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `Oregon Business Licenses, Fees and Filing Requirements for LLCs`,
-    size: 2,
+    size: 3,
     marginBottom: 24,
   },
   {
@@ -1127,7 +1127,7 @@ export const feesAndRequirments = [
       header: `Areas you might want to file Oregon Articles of Amendment for include:`,
       list: [`Adding, removing or changing a Oregon LLC member or manager`, `Changing the business address of your LLC`, `Altering the stated business activities of your Oregon LLC`],
     },
-    marginBottom: 0,
+    marginBottom: 32,
     color: color.yellow3,
   },
   {
@@ -1403,91 +1403,68 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `If you pay employees, there are some slightly different tax implications. Speak to your accountant to get clear guidance for your own unique situation.`,
-    marginBottom: 16,
-  },
-  {
-    type: `header`,
-    content: `Oregon LLC Employer Payroll Tax Withholding`,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `All employers must collect and withhold payroll tax from their employees when they receive their salaries. You would normally withhold 7.65 percent of the taxable salary that you pay to your employees.`,
     marginBottom: 32,
   },
   {
-    type: `header`,
-    content: `Employer Federal and State Tax Withholding for Your Oregon LLC`,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `You may also choose to withhold federal and Oregon state income tax on the wages you pay to employees. Speak to your accountant for more information.`,
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `Employees May Need to File Tax Returns`,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `Regardless of whether you withhold federal tax, your employees may need to file their own tax returns.`,
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `Employee Insurance and Other Requirements`,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `You may also need to pay insurance for any employees, like employee compensation insurance or unemployment tax. There will also be other requirements you have for employees.`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `Get more requirements from the <a href="https://www.oregon.gov/BOLI/Pages/index.aspx" target="_blank" rel="noopener noreferrer"> Oregon Bureau of Labor and Industries website.</a>`,
-    marginBottom: 24,
-  },
-  {
-    type: `header`,
-    content: `Other Taxes and Duties for Your Oregon LLC`,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `Depending on the industry you are in, your Oregon LLC may be liable for certain other taxes and duties. For example, if you sell gasoline you may need to pay a tax on any fuel you sell. Likewise, if you import or export goods you may need to pay certain duties. Speak to your accountant about any other taxes you may need to withhold or pay.`,
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `Estimated Taxes for Your Oregon LLC`,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `Most Oregon LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make. `,
-    marginBottom: 16,
-  },
-  {
-    type: `list-dot`,
+    type: `accordion`,
     content: {
-      header: `The most common types of estimated tax are:`,
-      list: [`Federal income tax`, `Federal self-employment tax`, `Oregon state tax`],
+      items: [
+        {
+          question: `Employer Payroll Tax Withholding for Your Oregon LLC `,
+          answer: `All employers must collect and withhold payroll tax from their employees when they receive their salaries. You would normally withhold 7.65 percent of the taxable salary that you pay to your employees.`,
+        },
+        {
+          question: `Employer Federal and State Tax Withholding for Your Oregon LLC`,
+          answer: `You may also choose to withhold federal and Oregon state income tax on the wages you pay to employees. Speak to your accountant for more information.`,
+        },
+        {
+          question: `Employees May Need to File Tax Returns`,
+          answer: `Regardless of whether you withhold federal and Oregon state income tax, your employees may need to file their own tax returns.`,
+        },
+        {
+          question: `Oregon LLC Employee Insurance and Other Requirements`,
+          answer2: [
+            {
+              type: `paragraph`,
+              content: `You may also need to pay insurance for any employees, like employee compensation insurance or unemployment tax. There will also be other requirements you have for employees.`,
+            },
+            {
+              type: `arrow-links`,
+              content: [
+                {
+                  styles: { marginTop: `24px` },
+                  text: `Get more requirements from the Oregon Bureau of Labor and Industries website.`,
+                  url: `https://www.oregon.gov/BOLI/Pages/index.aspx`,
+                },
+              ],
+            },
+          ],
+        },
+        {
+          question: `Other Taxes and Duties for Your Oregon LLC`,
+          answer: `Depending on the industry you are in, your Oregon LLC may be liable for certain other taxes and duties. For example, if you sell gasoline you may need to pay a tax on any fuel you sell. Likewise, if you import or export goods, you may need to pay certain duties. Speak to your accountant about any other taxes you may need to withhold or pay.`,
+        },
+        {
+          question: `Estimated Taxes for Your Oregon LLC`,
+          answer2: [
+            {
+              type: `paragraph`,
+              content: `Most Oregon LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make.`,
+            },
+            {
+              type: `list-dot-without-bg`,
+              color: color.orange3,
+              header: `The most common types of estimated taxes are:`,
+              content: [`Federal income tax`, `Federal self-employment tax`, `Oregon state tax`],
+            },
+            {
+              type: `paragraph`,
+              content: `Most Oregon LLCs will pay estimated taxes four times a year. Speak to your accountant for more information.`,
+            },
+          ],
+        },
+      ],
     },
-    marginBottom: 24,
-    color: color.purple3,
-  },
-  {
-    type: `text`,
-    content: `Most Oregon LLCs will pay estimated taxes four times a year. Speak to your accountant for more information.`,
     marginBottom: 32,
   },
   {

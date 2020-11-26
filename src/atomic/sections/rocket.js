@@ -182,7 +182,7 @@ const Moon = styled.div`
   height: 130px;
   width: 81px;
   position: absolute;
-  top: -155px;
+  top: -115px;
   left: 30px;
 
   @media (min-width: 769px) {

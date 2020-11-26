@@ -823,7 +823,7 @@ export const registeredAgent = [
     content: {
       header: `You might find these resources helpful:`,
       list: [
-        `<a href="/research-topics/registered-agent/registered-agent-function" target="_blank">The Main Functions of an Alabama Registered Agent</a>`,
+        `<a href="/research-topics/registered-agent/registered-agent-function/" target="_blank">The Main Functions of an Alabama Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/" target="_blank">Changing Your Alabama Registered Agent</a>`,
         `<a href="/research-topics/registered-agent/registered-agent-tasks/" target="_blank">What an Alabama Registered Agent Does</a>`,
       ],
@@ -1331,13 +1331,24 @@ export const businessTaxes = [
   },
   {
     type: `header`,
+    content: `Sales Tax Rates for Your Alabama LLC`,
+    size: 3,
+    marginBottom: 32,
+  },
+  {
+    type: `text`,
+    content: `Sales tax rates do vary between states, counties and cities. Typically, the state will set a base sales tax rate, then specific counties and cities may levy small additional sales tax amounts on top of that.`,
+    marginBottom: 32,
+  },
+  {
+    type: `header`,
     content: `Federal Taxes for Your Alabama LLC`,
     size: 3,
     marginBottom: 24,
   },
   {
     type: `text`,
-    content: `There are a couple different federal taxes that every LLC will need to pay, including Alabama LLCs. These are self-employment tax and federal income tax, which are taxed as “pass-through” income via your tax return forms`,
+    content: `There are a couple different federal taxes that every LLC will need to pay, including Alabama LLCs. These are self-employment tax and federal income tax, which are taxed as “pass-through” income via your tax return forms.`,
     marginBottom: 32,
   },
   {

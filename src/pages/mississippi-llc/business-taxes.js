@@ -9,7 +9,7 @@ import LLCLayout from "../../atomic/partials/states-llc/arizona"
 import ContentMap from "../../atomic/partials/content-map";
 
 // Content
-import { businessTaxes } from "../../static/states-llc/mississippi/home";
+import { top, businessTaxes } from "../../static/states-llc/mississippi/home";
 import { tabPages } from "../../static/states-llc/mississippi/general";
 import { getFullPricesAndFilings } from '../../api/Api';
 
@@ -27,7 +27,7 @@ const BusinessTaxesPage = () => {
                 title="Mississippi Business & Sales Taxes | Incfile.com"
                 description="Do you have an Mississippi LLC? Learn about the required federal, state, and sales taxes you might need to pay. Read more."
             />
-            <LLCLayout data={dataApi}>
+            <LLCLayout data={dataApi} top={top}>
                 <LeftTabPages content={tabPages} />
                 <MainPageContent>
                     <ContentMap content={businessTaxes} />

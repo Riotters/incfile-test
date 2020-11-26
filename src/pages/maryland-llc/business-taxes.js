@@ -9,7 +9,7 @@ import LLCLayout from "../../atomic/partials/states-llc/arizona"
 import ContentMap from "../../atomic/partials/content-map";
 
 // Content
-import { businessTaxes } from "../../static/states-llc/maryland/home";
+import { top, businessTaxes } from "../../static/states-llc/maryland/home";
 import { tabPages } from "../../static/states-llc/maryland/general";
 import { getFullPricesAndFilings } from '../../api/Api';
 
@@ -28,7 +28,7 @@ const BusinessTaxesPage = () => {
                 title="Maryland Business Taxes & Sales Tax for LLCs"
                 description="Do you have a MD LLC? Learn about the required federal, state and sales taxes you might need to pay. Read more."
             />
-            <LLCLayout data={dataApi}>
+            <LLCLayout data={dataApi} top={top}>
                 <LeftTabPages content={tabPages} />
                 <MainPageContent>
                     <ContentMap content={businessTaxes} />

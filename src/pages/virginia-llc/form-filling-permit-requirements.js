@@ -9,7 +9,7 @@ import LLCLayout from "../../atomic/partials/states-llc/arizona"
 import ContentMap from "../../atomic/partials/content-map";
 
 // Content
-import { feesAndRequirments } from "../../static/states-llc/virginia/home";
+import { top, feesAndRequirments } from "../../static/states-llc/virginia/home";
 import { tabPages } from "../../static/states-llc/virginia/general";
 import { getFullPricesAndFilings } from '../../api/Api';
 
@@ -27,7 +27,7 @@ const FillingRequirementsPage = () => {
                 title="Virginia LLC Business Licenses, Costs & Requirements"
                 description="Make sense of the required forms, fees and filing procedures for your VA LLC with Incfile’s easy-to-use guide. Read more."
             />
-            <LLCLayout data={dataApi}>
+            <LLCLayout data={dataApi} top={top}>
                 <LeftTabPages content={tabPages} />
                 <MainPageContent>
                     <ContentMap content={feesAndRequirments} data={dataApi} />

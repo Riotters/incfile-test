@@ -9,7 +9,7 @@ import LLCLayout from "../../atomic/partials/states-llc/arizona"
 import ContentMap from "../../atomic/partials/content-map";
 
 // Content
-import { feesAndRequirments } from "../../static/states-llc/connecticut/home";
+import { top, feesAndRequirments } from "../../static/states-llc/connecticut/home";
 import { tabPages } from "../../static/states-llc/connecticut/general";
 import { getFullPricesAndFilings } from '../../api/Api';
 
@@ -28,7 +28,7 @@ const FillingRequirementsPage = () => {
                 title="CT Business Licenses, Costs, & Other LLC Requirements"
                 description="Make sense of the required forms, fees, and filing procedures for your Connecticut LLC with Incfile’s easy-to-use guide. Read more."
             />
-            <LLCLayout data={dataApi}>
+            <LLCLayout data={dataApi} top={top}>
                 <LeftTabPages content={tabPages} />
                 <MainPageContent>
                     <ContentMap content={feesAndRequirments} data={dataApi} />

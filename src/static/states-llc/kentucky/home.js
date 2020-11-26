@@ -834,7 +834,7 @@ export const registeredAgent = [
     content: {
       header: `You might find these resources helpful:`,
       list: [
-        `<a href="/research-topics/registered-agent/registered-agent-function" target="_blank">The Main Functions of a Kentucky Registered Agent</a>`,
+        `<a href="/research-topics/registered-agent/registered-agent-function/" target="_blank">The Main Functions of a Kentucky Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/" target="_blank" >Changing Your Kentucky Registered Agent</a>`,
         `<a href="/research-topics/registered-agent/registered-agent-tasks/" target="_blank" >What a Kentucky Registered Agent Does</a>`,
       ],
@@ -848,7 +848,7 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `Kentucky Business Licenses, Fees and Filing Requirements for Your LLC`,
-    size: 2,
+    size: 3,
     marginBottom: 24,
   },
   {
@@ -1431,89 +1431,66 @@ export const businessTaxes = [
     marginBottom: 32,
   },
   {
-    type: `header`,
-    content: `Employer Payroll Tax Withholding for Your Kentucky LLC`,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `All employers must collect and withhold payroll tax from their employees when they receive their salaries. You would normally withhold 7.65 percent of the taxable salary that you pay to your employees.`,
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `Employer Federal and State Tax Withholding for Your Kentucky LLC`,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `You may also choose to withhold federal and Kentucky state income tax on the wages you pay to employees. Speak to your accountant for more information.`,
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `Employees May Need to File Tax Returns`,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `Regardless of whether you withhold federal and Kentucky state income tax, your employees may need to file their own tax returns.`,
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `Kentucky LLC Employee Insurance and Other Requirements`,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `You may also need to pay insurance for any employees, like employee compensation insurance or unemployment tax. There will also be other requirements you have for employees.`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `Get more requirements from the <a href="https://labor.ky.gov/Pages/index.aspx" target="_blank" rel="noopener noreferrer">Kentucky Labor Cabinet website.</a>`,
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `Other Taxes and Duties for Your Kentucky LLC`,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `Depending on the industry you are in, your Kentucky LLC may be liable for certain other taxes and duties. For example, if you sell gasoline you may need to pay a tax on any fuel you sell. Likewise, if you import or export goods you may need to pay certain duties. Speak to your accountant about any other taxes you may need to withhold or pay.`,
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `Estimated Taxes for Your Kentucky LLC`,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `Most Kentucky LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make.`,
-    marginBottom: 16,
-  },
-  {
-    type: `list-dot`,
+    type: `accordion`,
     content: {
-      header: `The most common types of estimated tax are:`,
-      list: [`Federal income tax`, `Federal self-employment tax`, `Kentucky state tax`],
+      items: [
+        {
+          question: `Employer Payroll Tax Withholding for Your Kentucky LLC`,
+          answer: `All employers must collect and withhold payroll tax from their employees when they receive their salaries. You would normally withhold 7.65 percent of the taxable salary that you pay to your employees.`,
+        },
+        {
+          question: `Employer Federal and State Tax Withholding for Your Kentucky LLC`,
+          answer: `You may also choose to withhold federal and Kentucky state income tax on the wages you pay to employees. Speak to your accountant for more information.`,
+        },
+        {
+          question: `Employees May Need to File Tax Returns`,
+          answer: `Regardless of whether you withhold federal and Kentucky state income tax, your employees may need to file their own tax returns.`,
+        },
+        {
+          question: `Kentucky LLC Employee Insurance and Other Requirements`,
+          answer2: [
+            {
+              type: `paragraph`,
+              content: `You may also need to pay insurance for any employees, like employee compensation insurance or unemployment tax. There will also be other requirements you have for employees.`,
+            },
+            {
+              type: `arrow-links`,
+              content: [
+                {
+                  styles: { marginTop: `24px` },
+                  text: `Get more requirements from the Kentucky Labor Cabinet website.`,
+                  url: `https://labor.ky.gov/Pages/index.aspx`,
+                },
+              ],
+            },
+          ],
+        },
+        {
+          question: `Other Taxes and Duties for Your Kentucky LLC`,
+          answer: `Depending on the industry you are in, your Kentucky LLC may be liable for certain other taxes and duties. For example, if you sell gasoline you may need to pay a tax on any fuel you sell. Likewise, if you import or export goods you may need to pay certain duties. Speak to your accountant about any other taxes you may need to withhold or pay.`,
+        },
+        {
+          question: `Estimated Taxes for Your Kentucky LLC`,
+          answer2: [
+            {
+              type: `paragraph`,
+              content: `Most Kentucky LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make. `,
+            },
+            {
+              type: `list-dot-without-bg`,
+              color: color.orange3,
+              header: `The most common types of estimated taxes are:`,
+              content: [`Federal income tax`, `Federal self-employment tax`, `Kentucky state tax`],
+            },
+            {
+              type: `paragraph`,
+              content: `Most Kentucky LLCs will pay estimated taxes four times a year. Speak to your accountant for more information.`,
+            },
+          ],
+        },
+      ],
     },
-    marginBottom: 16,
-    color: color.green3,
-  },
-  {
-    type: `text`,
-    content: `Most Kentucky LLCs will pay estimated taxes four times a year. Speak to your accountant for more information.`,
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: `header`,

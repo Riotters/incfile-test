@@ -9,7 +9,7 @@ import LLCLayout from "../../atomic/partials/states-llc/louisiana";
 import ContentMap from "../../atomic/partials/content-map";
 
 // Content
-import { howToGuide } from "../../static/states-llc/north-dakota/home";
+import { top, howToGuide } from "../../static/states-llc/north-dakota/home";
 import { tabPages } from "../../static/states-llc/north-dakota/general";
 import { getFullPricesAndFilings } from '../../api/Api';
 
@@ -24,7 +24,7 @@ function LLCIndex() {
     return (
         <Layout>
             <SEO title="LLCs in North Dakota | Guide to Forming an LLC in Texas" description="Ready to form your Texas LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
-            <LLCLayout data={dataApi}>
+            <LLCLayout data={dataApi} top={top}>
                 <LeftTabPages content={tabPages} nonDIY />
                 <MainPageContent>
                     <ContentMap content={howToGuide} data={dataApi} />

@@ -15,7 +15,11 @@ import CurveSVG from "../../../../images/curves/top-left-bottom-right-big.inline
 
 const GetFormationKit = styled.section`
   position: relative;
-  padding-top: 75px;
+  padding-top: 48px;
+  
+  @media (min-width: 576px) {
+    padding-top: 75px;
+  }
 
   @media (min-width: 992px) {
     padding-bottom: 64px;
