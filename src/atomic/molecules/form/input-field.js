@@ -13,6 +13,24 @@ const Wrapper = styled.div`
 
     .bottom {
         width: 100%;
+        position: relative;
+    }
+
+    &.dollar__sign{
+        .bottom:before{
+            position: absolute;
+            content: "$";
+            top: 50%;
+            transform: translate(15px,-50%);
+            color: #1D1D1D;
+            font-size: 16px;
+        }
+    }
+
+    &.hide__dollar-sign{
+        .bottom:before{
+            display: none;
+        }
     }
 `
 
