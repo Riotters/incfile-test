@@ -1280,7 +1280,7 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `Get details on the <a href="https://dor.sc.gov/tax/sales-and-use" target="_blank" rel="noopener noreferrer">South Carolina sales and use tax online here.</a>.`,
+    content: `Get details on the <a href="https://dor.sc.gov/tax/sales-and-use" target="_blank" rel="noopener noreferrer">South Carolina sales and use tax online here.</a>`,
     marginBottom: 32,
   },
   {
@@ -1405,8 +1405,7 @@ export const businessTaxes = [
               type: `arrow-links`,
               content: [
                 {
-                  styles: { marginTop: `24px` },
-                  text: `Get more requirements from the South Carolina Department of Employment and Workforce website..`,
+                  text: `Get more requirements from the South Carolina Department of Employment and Workforce website.`,
                   url: `https://dew.sc.gov/`,
                 },
               ],

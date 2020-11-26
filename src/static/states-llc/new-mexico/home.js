@@ -1350,9 +1350,10 @@ export const businessTaxes = [
     marginBottom: 32,
   },
   {
-    type: `text`,
-    content: `Federal Self-Employment Tax.`,
-    marginBottom: 16,
+    type: `header`,
+    content: `Federal Self-Employment Tax`,
+    size: 3,
+    marginBottom: 24,
   },
   {
     type: `text`,

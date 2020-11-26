@@ -14,7 +14,7 @@ export const about = {
     text2: `<p>We’ll walk you through everything you need to do to gather the right information, fill in the correct forms, file your trademark and have it granted. Trademarks are only applicable in the countries where you register them. The information here is based on filing a trademark in the U.S. with the <a href="https://www.uspto.gov/" target="_blank" rel="noopener noreferrer nofollow">United States Patent and Trademark Office</a> (USPTO).</p>`,
     header2: `Decide If You Need to File a Trademark in the First Place`,
     text3: `The term “trademark” is often used as a catch-all phrase for the various ways of protecting your business’s intellectual property. In reality, trademarks are very specific in what they do and do not allow. Before deciding if you need to file a trademark application, it’s worth understanding the type of protection you need.`,
-    list: {
+    list0: {
         header: `Types of Intellectual Property Protection:`,
         list: [
             `<b>Trademark —</b> Protects the brand names and logos you use for your business, products and services. For example, the logo and brand tagline on the “Brilliant Blue Widgets” line of gizmos.`,

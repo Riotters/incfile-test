@@ -155,7 +155,7 @@ const Airbnb = () => (
             <BlueBoxWithAbsoluteText absoluteText="$34B" text="The largest market for Airbnb is in the US, with an economic impact of $34 billion" />
             <BlueBoxWithAbsoluteText absoluteText="500M" text="There have been more than 500 million stays through Airbnb" />
 
-            <CircleWithText textInsideCircle="3.7" textLine="Increase in U.S. bookings year-to-year" withBg={true} SvgChart={CircleSvg} symbol="%" style={{ marginBottom: "72px" }} />
+            <CircleWithText textInsideCircle="45" textLine="Increase in U.S. bookings year-to-year" withBg={true} SvgChart={CircleSvg} symbol="%" style={{ marginBottom: "72px" }} />
 
             <Adventages headline="Half of Airbnb users stay in an Airbnb instead of a hotel" width="100%" />
 
