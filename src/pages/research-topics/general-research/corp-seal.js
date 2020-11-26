@@ -16,7 +16,7 @@ import { about, related } from "../../../static/research-topics/general-research
 
 const HelpCenter = () => (
   <Layout>
-    <SEO title="What is the process involved in changing the name of an LLC?" description="Q & A for LLC and other forms of corporations. Learning Center for Incorporating in every state." />    
+    <SEO title="What is a Corporate Seal or Company Seal? | Incfile" description="Learn about corporate and company seals and stamps, when you might need one, what they’re used for and more." />    
     <Top imageName="mrs-bulb-help-center-article" imageAlt="Mrs Bulb and with checklist" ovalColor="green">
       <h1>{top.header}</h1>
       <p>{top.text}</p>
