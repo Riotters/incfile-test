@@ -9,7 +9,7 @@ import LLCLayout from "../../atomic/partials/states-llc/arizona"
 import ContentMap from "../../atomic/partials/content-map";
 
 // Content
-import { registeredAgent } from "../../static/states-llc/delaware/home";
+import { top, registeredAgent } from "../../static/states-llc/delaware/home";
 import { tabPages } from "../../static/states-llc/delaware/general";
 import { getFullPricesAndFilings } from '../../api/Api';
 
@@ -28,7 +28,7 @@ const RegisteredAgentPage = () => {
                 title="Registered Agents for Your Delaware LLC | Incfile.com"
                 description="Do you need a registered agent for your Delaware LLC? Learn what registered agents do and how to get one with Incfile&#039;s helpful guide."
             />
-            <LLCLayout data={dataApi}>
+            <LLCLayout data={dataApi} top={top}>
                 <LeftTabPages content={tabPages} />
                 <MainPageContent>
                     <ContentMap content={registeredAgent} />

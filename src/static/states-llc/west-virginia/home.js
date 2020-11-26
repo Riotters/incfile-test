@@ -287,7 +287,7 @@ export const namingYourBusiness = [
       text: `West Virginia Secretary of State business entity search tool`,
       url: `http://apps.sos.wv.gov/business/corporations/ target="_blank" rel="noopener noreferrer"`,
     },
-    marginBottom: 32,
+    marginBottom: 48,
   },
   {
     type: `header`,
@@ -884,9 +884,9 @@ export const registeredAgent = [
     content: {
       header: `You might find these resources helpful:`,
       list: [
-        `<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/">The Main Functions of a Delaware Registered Agentt</a>`,
+        `<a href="/research-topics/registered-agent/registered-agent-function/">The Main Functions of a Delaware Registered Agentt</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Delaware Registered Agent</a>`,
-        `<a href-"/research-topics/registered-agent-help/what-does-a-registered-agent-do/">What a Delaware Registered Agent Does</a>`,
+        `<a href-"/research-topics/registered-agent/registered-agent-tasks/">What a Delaware Registered Agent Does</a>`,
       ],
     },
     marginBottom: 48,
@@ -1177,7 +1177,7 @@ export const feesAndRequirments = [
       header: `Areas you might want to file West Virginia Articles of Amendment for include:`,
       list: [`Adding, removing or changing a West Virginia LLC member or manager`, `Changing the business address of your LLC`, `Altering the stated business activities of your West Virginia LLC`],
     },
-    marginBottom: 0,
+    marginBottom: 32,
     color: color.yellow3,
   },
   {

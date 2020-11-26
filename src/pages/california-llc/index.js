@@ -13,7 +13,7 @@ import Rocket from "../../atomic/sections/rocket";
 import HowToGuide from "../../atomic/states-llc/california/how-to-guide";
 
 // Content
-import { HomePageContent } from "../../static/states-llc/california/home";
+import { top, HomePageContent } from "../../static/states-llc/california/home";
 import { tabPages} from "../../static/states-llc/california/general";
 
 import { getFullPricesAndFilings } from '../../api/Api';

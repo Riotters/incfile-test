@@ -9,7 +9,7 @@ import LLCLayout from "../../atomic/partials/states-llc/louisiana";
 import ContentMap from "../../atomic/partials/content-map";
 
 // Content
-import { howToGuide } from "../../static/states-llc/idaho/home";
+import { top, howToGuide } from "../../static/states-llc/idaho/home";
 import { tabPages } from "../../static/states-llc/idaho/general";
 import { getFullPricesAndFilings } from '../../api/Api';
 
@@ -24,7 +24,7 @@ function IdahoIndexPage() {
     return (
         <Layout>
             <SEO title="LLCs in Idaho | Guide to Forming an LLC in Idaho" description="Ready to form your Idaho LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
-            <LLCLayout data={dataApi}>
+            <LLCLayout data={dataApi} top={top}>
                 <LeftTabPages content={tabPages} nonDIY />
                 <MainPageContent>
                     <ContentMap content={howToGuide} data={dataApi} />

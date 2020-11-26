@@ -21,7 +21,7 @@ const Wrapper = styled.div`
 const AccountingAndTaxes = ({ content }) => (
     <Wrapper>
         <ImageContent image="main-header-object-certificate-good-standing-5915">
-            <Heading size={5}>{content.header}</Heading>
+            <Heading size={4}>{content.header}</Heading>
             <Paragraph big bottomMargin={48}>{content.text}</Paragraph>
             <Buttonsbox>
                 <Button onClick={e => scrollToElement(e, 'js-business-tax-signup-form')} content={content.button[0]} theme="primary56" arrow />

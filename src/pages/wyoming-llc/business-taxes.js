@@ -9,7 +9,7 @@ import LLCLayout from "../../atomic/partials/states-llc/arizona"
 import ContentMap from "../../atomic/partials/content-map";
 
 // Content
-import { businessTaxes } from "../../static/states-llc/wyoming/home";
+import { top, businessTaxes } from "../../static/states-llc/wyoming/home";
 import { tabPages } from "../../static/states-llc/wyoming/general";
 import { getFullPricesAndFilings } from '../../api/Api';
 
@@ -27,7 +27,7 @@ const BusinessTaxesPage = () => {
                 title="Wyoming Sales Tax & Business Taxes for LLCs"
                 description="Do you have a WY LLC? Learn about the required federal, state, and sales taxes you might need to pay. Read more."
             />
-            <LLCLayout data={dataApi}>
+            <LLCLayout data={dataApi} top={top}>
                 <LeftTabPages content={tabPages} />
                 <MainPageContent>
                     <ContentMap content={businessTaxes} />

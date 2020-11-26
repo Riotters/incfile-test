@@ -942,9 +942,9 @@ export const registeredAgent = [
     content: {
       header: `You might find these resources helpful:`,
       list: [
-        `<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/">The Main Functions of a Mississippi Registered Agent</a>`,
+        `<a href="/research-topics/registered-agent/registered-agent-function/">The Main Functions of a Mississippi Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Mississippi Registered Agent</a>`,
-        `<a href-"/research-topics/registered-agent-help/what-does-a-registered-agent-do/">What a Mississippi Registered Agent Does</a>`,
+        `<a href-"/research-topics/registered-agent/registered-agent-tasks/">What a Mississippi Registered Agent Does</a>`,
       ],
     },
     marginBottom: 48,
@@ -1273,7 +1273,7 @@ export const feesAndRequirments = [
       header: `Areas you might want to file Mississippi Articles of Amendment for include:`,
       list: [`Adding, removing or changing a Mississippi LLC member or manager`, `Changing the business address of your LLC`, `Altering the stated business activities of your Mississippi LLC`],
     },
-    marginBottom: 0,
+    marginBottom: 32,
     color: color.yellow3,
   },
   {

@@ -9,7 +9,7 @@ import LLCLayout from "../../atomic/partials/states-llc/louisiana";
 import ContentMap from "../../atomic/partials/content-map";
 
 // Content
-import { howToGuide } from "../../static/states-llc/connecticut/home";
+import { top, howToGuide } from "../../static/states-llc/connecticut/home";
 import { tabPages } from "../../static/states-llc/connecticut/general";
 
 import { getFullPricesAndFilings } from '../../api/Api';
@@ -27,7 +27,7 @@ function ConnecticutIndexPage() {
     return (
         <Layout>
             <SEO title="LLCs in Connecticut | Guide to Forming an LLC in Connecticut" description="Ready to form your Connecticut LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
-            <LLCLayout data={dataApi}>
+            <LLCLayout data={dataApi} top={top}>
                 <LeftTabPages content={tabPages} nonDIY />
                 <MainPageContent>
                     <ContentMap content={howToGuide} data={dataApi} />

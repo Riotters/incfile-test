@@ -854,9 +854,9 @@ export const registeredAgent = [
     content: {
       header: `You might find these resources helpful:`,
       list: [
-        `<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/" target="_blank">The Main Functions of a Colorado Registered Agent</a>`,
+        `<a href="/research-topics/registered-agent/registered-agent-function/" target="_blank">The Main Functions of a Colorado Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/" target="_blank" >Changing Your Colorado Registered Agent</a>`,
-        `<a href="/research-topics/registered-agent-help/what-does-a-registered-agent-do/" target="_blank" >What a Colorado Registered Agent Does</a>`,
+        `<a href="/research-topics/registered-agent/registered-agent-tasks/" target="_blank" >What a Colorado Registered Agent Does</a>`,
       ],
     }, //rel="noopener noreferrer"
     marginBottom: 0,
@@ -868,7 +868,7 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `Colorado Business Licenses, Fees and Filing Requirements for Your LLC`,
-    size: 2,
+    size: 3,
     marginBottom: 24,
   },
   {

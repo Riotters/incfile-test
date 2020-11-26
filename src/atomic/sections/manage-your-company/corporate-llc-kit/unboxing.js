@@ -8,7 +8,11 @@ import OvalSVG from "../../../../images/ovals/top-left-transparent-pink.inline.s
 
 const Unboxing = styled.section`
   position: relative;
-  padding: 120px 0 64px;
+  padding: 120px 0 0;
+  
+  @media (min-width: 576px) {
+    padding: 120px 0 64px;
+  }
 
   @media (min-width: 992px) {
     padding: 0 0 64px;
