@@ -14,7 +14,7 @@ import Rocket from "../../atomic/sections/rocket";
 import HowToGuide from "../../atomic/states-llc/georgia/how-to-guide";
 
 // Content
-import { HomePageContent } from "../../static/states-llc/georgia/home";
+import { top, HomePageContent } from "../../static/states-llc/georgia/home";
 import { tabPages, rocket } from "../../static/states-llc/georgia/general";
 
 import { getFullPricesAndFilings } from "../../api/Api";

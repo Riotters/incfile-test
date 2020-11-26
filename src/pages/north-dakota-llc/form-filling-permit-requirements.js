@@ -9,7 +9,7 @@ import LLCLayout from "../../atomic/partials/states-llc/arizona"
 import ContentMap from "../../atomic/partials/content-map";
 
 // Content
-import { feesAndRequirments } from "../../static/states-llc/north-dakota/home";
+import { top, feesAndRequirments } from "../../static/states-llc/north-dakota/home";
 import { tabPages } from "../../static/states-llc/north-dakota/general";
 import { getFullPricesAndFilings } from '../../api/Api';
 
@@ -27,7 +27,7 @@ const FillingRequirementsPage = () => {
                 title="North Dakota Business Licenses & LLC Requirements"
                 description="Make sense of the required forms, fees and filing procedures for your ND LLC with Incfile’s easy-to-use guide. Read more."
             />
-            <LLCLayout data={dataApi}>
+            <LLCLayout data={dataApi} top={top}>
                 <LeftTabPages content={tabPages} />
                 <MainPageContent>
                     <ContentMap content={feesAndRequirments} data={dataApi} />

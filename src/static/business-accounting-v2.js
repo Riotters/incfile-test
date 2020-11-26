@@ -31,15 +31,15 @@ export const cards = [
   },
   {
     circleText: "2",
-    imageName: "ongoing-filling-requirements-9021",
-    header: "Quarterly Bookkeeping",
-    text: "We continuously update your bookkeeping and provide you with financial reports every quarter.",
-  },
-  {
-    circleText: "3",
     imageName: "shield-8931",
     header: "Mobile Account Access",
     text: "Mobile-friendly bookkeeping software allows you \n" + "to handle all of your accounting needs.",
+  },
+  {
+    circleText: "3",
+    imageName: "ongoing-filling-requirements-9021",
+    header: "Quarterly Bookkeeping",
+    text: "We continuously update your bookkeeping and provide you with financial reports every quarter.",
   },
   {
     circleText: "4",
@@ -57,10 +57,10 @@ export const cards = [
 
 export const cards2 = [
   {
-    backgroundColor: color.blue3,
+    backgroundColor: color.orange3,
     title: "Free Tax Consultation",
     content:
-      "Every accounting package includes a free tax consultation. A small business accountant will review your business finances and help you understand where you could be saving money. They will offer practical advice on your expenses, tax commitments and other areas to help you reduce the tax you owe.",
+      "Every accounting package includes a <a href='#js-business-tax-signup-form'>free tax consultation</a>. A small business accountant will review your business finances and help you understand where you could be saving money. They will offer practical advice on your expenses, tax commitments and other areas to help you reduce the tax you owe.",
     imageName: "headphones-helpdesk-service-4597",
   },
   {
@@ -73,7 +73,7 @@ export const cards2 = [
   {
     backgroundColor: color.babyblue3,
     title: "Reconciliation of Business Accounts",
-    content: "Our bookkeepers will reconcile all the transactions in your business bank accounts and your credit card accounts. That means you can track where every dollar is going and match the money you’re actually spending against your reporting and accounting.",
+    content: "Our bookkeepers will reconcile all the transactions in your <a href='https://utility.bankofamerica.com/alliance/?formid=IF1'>business bank accounts</a> and your credit card accounts. That means you can track where every dollar is going and match the money you’re actually spending against your reporting and accounting.",
     imageName: "executive-relationship-and-culture-coaching-2210",
   },
   {

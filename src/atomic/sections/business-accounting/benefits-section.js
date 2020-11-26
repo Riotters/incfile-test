@@ -7,7 +7,12 @@ import InfoCardWithImage from "../../organisms/cards/info-card-with-image";
 
 const Wrapper = styled.div`
     position: relative;
-    padding: 100px 0;
+    padding: 32px 0;
+    
+    @media (min-width: 576px) {
+        padding: 100px 0;
+    }
+    
     background: ${gradient.blue3};
 `;
 

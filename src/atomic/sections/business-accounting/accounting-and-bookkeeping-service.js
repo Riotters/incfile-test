@@ -6,7 +6,11 @@ import ContentCenter from "../../partials/content-center";
 
 const Wrapper = styled.div`
     position: relative;
-    padding: 120px 0 133px;
+    padding: 120px 0 0;
+    
+    @media (min-width: 576px) {
+        padding: 120px 0 133px;
+    }
     
     text-align: center;
 `;
@@ -16,7 +20,7 @@ const AccountingAndBookkeepingService = ({ content }) => (
         <ContentCenter contentWidth={770}>
             <Heading size={2} bottomMargin={49}>{content.header}</Heading>
             <Paragraph big bottomMargin={40}>{content.text}</Paragraph>
-            <Paragraph big>{content.text2}</Paragraph>
+            <Paragraph big bottomMargin={32}>{content.text2}</Paragraph>
         </ContentCenter>
     </Wrapper>
 );

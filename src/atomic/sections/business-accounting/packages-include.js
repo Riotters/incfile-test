@@ -14,7 +14,11 @@ import Adventages from "../../../components/adventages";
 
 const Wrapper = styled.div`
     position: relative;
-    padding: 38px 0 100px;
+    padding: 38px 0 8px;
+    
+    @media (min-width: 576px) {
+        padding: 38px 0 100px;
+    }
 `;
 
 const GridWrapper = styled.div`

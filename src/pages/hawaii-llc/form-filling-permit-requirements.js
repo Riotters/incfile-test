@@ -9,7 +9,7 @@ import LLCLayout from "../../atomic/partials/states-llc/arizona"
 import ContentMap from "../../atomic/partials/content-map";
 
 // Content
-import { feesAndRequirments } from "../../static/states-llc/hawaii/home";
+import { top, feesAndRequirments } from "../../static/states-llc/hawaii/home";
 import { tabPages } from "../../static/states-llc/hawaii/general";
 import { getFullPricesAndFilings } from '../../api/Api';
 
@@ -28,7 +28,7 @@ const FillingRequirementsPage = () => {
                 title="Hawaii Business Licenses, Fees & Other LLC Requirements"
                 description="Make sense of the required forms, costs and filing procedures for your HI LLC with Incfile’s easy-to-use guide. Read more."
             />
-            <LLCLayout data={dataApi}>
+            <LLCLayout data={dataApi} top={top}>
                 <LeftTabPages content={tabPages} />
                 <MainPageContent>
                     <ContentMap content={feesAndRequirments} data={dataApi} />

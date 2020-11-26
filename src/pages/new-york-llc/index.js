@@ -14,7 +14,7 @@ import Rocket from "../../atomic/sections/rocket";
 import HowToGuide from "../../atomic/states-llc/new-york/how-to-guide";
 
 // Content
-import { HomePageContent } from "../../static/states-llc/new-york/home";
+import { top, HomePageContent } from "../../static/states-llc/new-york/home";
 import { tabPages, rocket } from "../../static/states-llc/new-york/general";
 
 import { getFullPricesAndFilings } from "../../api/Api";

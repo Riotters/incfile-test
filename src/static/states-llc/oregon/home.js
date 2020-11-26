@@ -269,7 +269,7 @@ export const namingYourBusiness = [
       text: `Oregon Secretary of State business entity search tool`,
       url: `http://egov.sos.state.or.us/br/pkg_web_name_srch_inq.login`,
     },
-    marginBottom: 16,
+    marginBottom: 48,
   },
   {
     type: `header`,
@@ -834,9 +834,9 @@ export const registeredAgent = [
     content: {
       header: `You might find these resources helpful:`,
       list: [
-        `<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/">The Main Functions of a Oregon Registered Agent</a>`,
+        `<a href="/research-topics/registered-agent/registered-agent-function/">The Main Functions of a Oregon Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Oregon Registered Agent</a>`,
-        `<a href-"/research-topics/registered-agent-help/what-does-a-registered-agent-do/">What a Oregon Registered Agent Does</a>`,
+        `<a href-"/research-topics/registered-agent/registered-agent-tasks/">What a Oregon Registered Agent Does</a>`,
       ],
     },
     marginBottom: 48,
@@ -847,7 +847,7 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `Oregon Business Licenses, Fees and Filing Requirements for LLCs`,
-    size: 2,
+    size: 3,
     marginBottom: 24,
   },
   {
@@ -1127,7 +1127,7 @@ export const feesAndRequirments = [
       header: `Areas you might want to file Oregon Articles of Amendment for include:`,
       list: [`Adding, removing or changing a Oregon LLC member or manager`, `Changing the business address of your LLC`, `Altering the stated business activities of your Oregon LLC`],
     },
-    marginBottom: 0,
+    marginBottom: 32,
     color: color.yellow3,
   },
   {

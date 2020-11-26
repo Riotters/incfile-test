@@ -9,7 +9,7 @@ import LLCLayout from "../../atomic/partials/states-llc/arizona"
 import ContentMap from "../../atomic/partials/content-map";
 
 // Content
-import { namingYourBusiness } from "../../static/states-llc/wyoming/home";
+import { top, namingYourBusiness } from "../../static/states-llc/wyoming/home";
 import { tabPages } from "../../static/states-llc/wyoming/general";
 import { getFullPricesAndFilings } from '../../api/Api';
 
@@ -27,7 +27,7 @@ const BusinessNamesPage = () => {
                 title="WY SOS Business Search | Register an LLC Name in Wyoming"
                 description="Learn what you need to know about naming an LLC in Wyoming with Incfile’s helpful resources. Pick your perfect business name today!"
             />
-            <LLCLayout data={dataApi}>
+            <LLCLayout data={dataApi} top={top}>
                 <LeftTabPages content={tabPages} />
                 <MainPageContent>
                     <ContentMap content={namingYourBusiness} />
