@@ -1491,7 +1491,7 @@ export const businessTaxes = [
       items: [
         {
           question: `Does New Jersey Have Sales Tax?`,
-          answer: `Yes. New Jersey does have a sales tax, which may vary among cities and counties.`,
+          answer: `Yes. New Jersey does have a sales tax, which may vary among cities and counties. You can find more information above.`,
         },
         {
           question: `Does New Jersey Have a State Tax?`,
