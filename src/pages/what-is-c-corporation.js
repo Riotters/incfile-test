@@ -24,59 +24,59 @@ import HSFormModal from "../components/hubspot/standard-post-form-modal";
 import { Helmet } from "react-helmet";
 
 const CCorporation = () => {
-    const [modalVisible, setModalVisible] = React.useState(false);
-    const [formSubmitted, setFormSubmitted] = React.useState(false);
-    const [modalClases, setModalClases] = React.useState(["lightbox-content"]);
+  const [modalVisible, setModalVisible] = React.useState(false);
+  const [formSubmitted, setFormSubmitted] = React.useState(false);
+  const [modalClases, setModalClases] = React.useState(["lightbox-content"]);
 
-    React.useEffect(() => {
-        if (formSubmitted) {
-            setModalClases((modalClases) => [...modalClases, "form-submitted"]);
-        }
-    }, [formSubmitted]);
+  React.useEffect(() => {
+    if (formSubmitted) {
+      setModalClases((modalClases) => [...modalClases, "form-submitted"]);
+    }
+  }, [formSubmitted]);
 
-    const popup = (e) => {
-        e.preventDefault();
+  const popup = (e) => {
+    e.preventDefault();
 
-        if (!e.target.className.includes("modal-overlay") && !e.target.className.includes("modal-close") && modalVisible) return;
+    if (!e.target.className.includes("modal-overlay") && !e.target.className.includes("modal-close") && modalVisible) return;
 
-        setModalVisible(!modalVisible);
-        setFormSubmitted(false);
-    };
+    setModalVisible(!modalVisible);
+    setFormSubmitted(false);
+  };
 
-    const postDownload = (formData) => {
-        setModalVisible(modalVisible);
-        setFormSubmitted(true);
-    };
+  const postDownload = (formData) => {
+    setModalVisible(modalVisible);
+    setFormSubmitted(true);
+  };
 
-    return (
-        <Layout>
-            <SEO title="What is a C Corporation? Your Guide to C Corps | Incfile" description="A C Corporation is one of several ways to legally recognize a business for tax, regulatory and official reasons. See if starting a C Corp is right for you." />
-            <Top imageName="review-entity-type-c-corp" imageAlt="Mrs Bulb and with checklist" ovalColor="green">
-                <h1>{top.header}</h1>
-                <p>{top.text}</p>
-                <Buttonsbox>
-                    <Button content={top.button[0]} theme="primary56" arrow />
-                </Buttonsbox>
-            </Top>
-            <About content={about} />
-            <Adventages content={adventages} />
-            <Disdventages content={disadventages} />
-            <Differences content={differences} />
-            <Requirements content={requirements} />
-            <Rocket content={rocket} />
-            <Forming content={forming} onClick={popup} />
-            <Articles />
-            <Cta cta={cta} />
+  return (
+    <Layout>
+      <SEO title="What is a C Corporation? Your Guide to C Corps | Incfile" description="A C Corporation is one of several ways to legally recognize a business for tax, regulatory and official reasons. See if starting a C Corp is right for you." />
+      <Top imageName="review-entity-type-c-corp" imageAlt="Mrs Bulb and with checklist" ovalColor="green">
+        <h1>{top.header}</h1>
+        <p>{top.text}</p>
+        <Buttonsbox>
+          <Button content={top.button[0]} theme="primary56" arrow />
+        </Buttonsbox>
+      </Top>
+      <About content={about} />
+      <Adventages content={adventages} />
+      <Disdventages content={disadventages} />
+      <Differences content={differences} />
+      <Requirements content={requirements} />
+      <Rocket content={rocket} />
+      <Forming content={forming} onClick={popup} />
+      <Articles />
+      <Cta cta={cta} />
 
-            <LightBoxModal visible={modalVisible} className="modal-overlay">
-                <LightBoxContent style={{ pointerEvents: "all" }} class={modalClases.join(" ")}>
-                    {!formSubmitted && <HSFormModal hs_form_id={hsForm.hs_form_id} content={hsForm} modalExit={popup} postDownloadAction={postDownload} />}
-                    {formSubmitted && <ThankYouContent modalExit={popup} />}
-                </LightBoxContent>
-            </LightBoxModal>
+      <LightBoxModal visible={modalVisible} className="modal-overlay">
+        <LightBoxContent style={{ pointerEvents: "all" }} class={modalClases.join(" ")}>
+          {!formSubmitted && <HSFormModal hs_form_id={hsForm.hs_form_id} content={hsForm} modalExit={popup} postDownloadAction={postDownload} />}
+          {formSubmitted && <ThankYouContent modalExit={popup} />}
+        </LightBoxContent>
+      </LightBoxModal>
 
-            <Helmet>
-                <script type="application/ld+json">{`
+      <Helmet>
+        <script type="application/ld+json">{`
                     "@context": "http://schema.org",
                     "@type": "VideoObject",
                     "name": "What is a C Corporation? by Incfile",
@@ -87,10 +87,9 @@ const CCorporation = () => {
                     "embedUrl": "https://www.youtube.com/embed/BmZ7zyLd710",
                     "interactionCount": "6"
                 `}</script>
-            </Helmet>
-
-        </Layout>
-    );
+      </Helmet>
+    </Layout>
+  );
 };
 
 const LightBoxModal = styled.div`
