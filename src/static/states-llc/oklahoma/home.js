@@ -1526,7 +1526,7 @@ export const businessTaxes = [
       items: [
         {
           question: `Does Oklahoma Have Sales Tax?`,
-          answer: `Yes. Oklahoma does have a sales tax, which may vary among cities and counties. You can find more information abov`,
+          answer: `Yes. Oklahoma does have a sales tax, which may vary among cities and counties. You can find more information above.`,
         },
         {
           question: `Does Oklahoma Have a State Tax?`,
