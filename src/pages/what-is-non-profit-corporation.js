@@ -3,7 +3,8 @@ import styled from "styled-components";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Buttonsbox from "../atomic/atoms/boxes/top-buttons-box";
-import Button from "../atomic/molecules/buttons/button";
+import ExternalLink from "../atomic/molecules/buttons/external-link";
+
 //Sections
 import Top from "../atomic/partials/top";
 import About from "../components/partials/sections/about";
@@ -49,7 +50,7 @@ const IndexPage = () => {
         <h1>{top.header}</h1>
         <p>{top.text}</p>
         <Buttonsbox>
-          <Button content={top.button[0]} theme="primary56" width="280px" arrow />
+          <ExternalLink content={top.button[0]} theme="primary56" width="280px" target="_self" arrow />
         </Buttonsbox>
       </Top>
       <About content={about} openModal={popup} />
@@ -89,7 +90,6 @@ const LightBoxContent = styled.div`
   width: 100%;
   max-width: 750px;
   position: relative;
-  //margin: 0 30px;
   max-height: 100vh;
   overflow-y: auto;
 
@@ -101,7 +101,7 @@ const LightBoxContent = styled.div`
   @media screen and (min-width: 769px) {
     padding-top: 0;
     max-width: 600px;
-    max-height: 80vh;
+    max-height: 90vh;
   }
 `;
 
