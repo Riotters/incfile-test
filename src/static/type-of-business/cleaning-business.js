@@ -49,7 +49,7 @@ export const BusinessInsuranceAccordionContent = {
             question: "Workers compensation insurance",
             answer: [
                 {
-                    text: `Workers’ compensation insurance`,
+                    text: `Workers’ compensation insurance `,
                     url: ``
                 },
                 {

@@ -52,12 +52,12 @@ const SettingBusiness = () => (
 
         <TopImageBox image="side-4" color={color.green3}>
           <h4>Equipment and ingredients</h4>
-          <p>Think about the business processes and software that you’re going to use to run your business efficiently and effectively.</p>
+          <p>Caterers need a lot of upfront capital to invest in equipment, fixtures and furniture. From kitchen equipment to tables, chairs, plates and silverware, you will need to carefully budget everything you spend. Add to that the cost of ingredients, and you must keep a tight rein on expenses.</p>
         </TopImageBox>
 
         <TopImageBox image="software" color={color.blue3}>
           <h4>Software</h4>
-          <p>Your catering business likely needs its own website, and you will also need to develop a local brand, logo and other marketing collateral. You should engage with local marketing firms who understand your immediate marketplace and can provide advice on getting your name out there.</p>
+          <p>There are many software products specifically for caterers that can make managing this business much easier. From taking orders to checks and food preparation to point of sale, the right software will make running a catering company more efficient and cost-effective.</p>
         </TopImageBox>
 
         <TopImageBox image="measuring-business-success" color={color.babyblue3}>

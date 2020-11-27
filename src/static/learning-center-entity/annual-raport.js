@@ -163,7 +163,7 @@ export const faq = {
             text: ` or other `,
           },
           {
-            text: `corporate bylawes`,
+            text: `corporate bylaws`,
             url: `/research-topics/c-corporation-info/what-are-bylaws/`,
           },
         ],
