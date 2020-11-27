@@ -167,7 +167,7 @@ const BusinessStructure = () => (
           <a href="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/" target="_blank" rel="noopener noreferrer">
             we’ve answered them to help you choose the right business structure
           </a>{" "}
-          for your daycare business.
+          for your restaurant business.
         </Paragraph>
         <Paragraph big style={{ paddingTop: "48px", paddingBottom: 0 }} mixed={true}>
           In almost every case, the right business entity for a restaurant is going to be an LLC. It provides you with liability protection, is easy to set up and run, has low administrative overhead and can be tax advantageous. We’ve <Link to="/form-an-llc/">got a complete guide</Link> to

@@ -62,7 +62,7 @@ const BarNightclub = () => (
 
     <Top ovalColor="love" imageName="bar-nightclub-main" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
       <h1>How to Start a Bar or Club Business</h1>
-      <p>If you have some skill with home improvement, DIY or fixing things, then running a home handyman business could be right for you.</p>
+      <p>Opening a bar, nightclub or pub business is a great way to give your customers the perfect place to meet, drink and socialize. The combination of a good location, friendly staff, great selection and the right ambiance can really help set you apart and make your bar successful.</p>
       <ButtonsBox>
         <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{ url: `${process.env.ORDER_URL}/form-order-now.php`, text: "Start Now" }} />
       </ButtonsBox>
@@ -190,7 +190,7 @@ const BarNightclub = () => (
             </div>
 
             <div style={{ marginBottom: "30px" }}>
-              <Adventages headline="The split of alcohol sold tends to be?42% beer, 31% spirits, 10% wine and the remainder as food and non-alcoholic drinks." width="100%" />
+              <Adventages headline="The split of alcohol sold tends to be 42% beer, 31% spirits, 10% wine and the remainder as food and non-alcoholic drinks." width="100%" />
             </div>
 
             <div style={{ marginBottom: "30px" }}>
@@ -293,7 +293,7 @@ const BarNightclub = () => (
             </Colorbox>
 
             <Paragraph big style={{ marginTop: "48px" }}>
-              There are low barriers to entry, meaning new bars and clubs open fairly frequently, so there will always be competition. Margins are slim though, so unless a bar or club is well-managed, that competition may not last for long.
+            Bar and club locations must have proper zoning from local government, and you may face issues with community resistance due to patrons and noise. Additionally, local laws will dictate when you are and are not allowed to be open.
             </Paragraph>
 
             <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: color.black }}>
@@ -583,7 +583,7 @@ const BarNightclub = () => (
             <a href="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/" target="_blank" rel="noopener noreferrer">
               we’ve answered them to help you choose the right business structure
             </a>{" "}
-            for your daycare business.
+            for your bar nightclub business.
           </Paragraph>
           <Paragraph big style={{ paddingTop: "48px", paddingBottom: 0 }} mixed={true}>
             In most cases our recommendation would be to create an LLC. We’ve got a <Link to="/form-an-llc/">complete guide to everything you need to do</Link> and we can set one up for your bar or club business. <Link to="/llc-state-information/">LLC formation does vary from state to state</Link>,

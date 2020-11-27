@@ -166,7 +166,7 @@ const BusinessStructure = () => (
           <a href="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/" target="_blank" rel="noopener noreferrer">
             we’ve answered them to help you choose the right business structure
           </a>{" "}
-          for your daycare business.
+          for your women business.
         </Paragraph>
         <Paragraph big mixed={true}>
           In most cases, our recommendation would be to create an LLC. We’ve <Link to="/form-an-llc/">got a complete guide to everything you need to do</Link>, — and we can even set up your LLC for you
