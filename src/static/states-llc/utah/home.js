@@ -186,7 +186,7 @@ export const howToGuide = [
         {
           question: `Foreign LLCs in Utah`,
           answer: `<p>If your business is already operating in another state and expanding to Utah, you’ll need to form a foreign LLC.</p></br>
-            <a href="/utah-llc/fees-filing-requirements/" target="_blank">More information on Utah filing and licensing requirements here.</a>`,
+            <a href="/utah-llc/fees-filing-requirements/">More information on Utah filing and licensing requirements here.</a>`,
         },
       ],
     },

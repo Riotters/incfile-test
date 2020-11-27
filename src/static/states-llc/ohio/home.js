@@ -166,7 +166,7 @@ export const howToGuide = [
   {
     type: `text`,
     content: `<p>If your business is already operating in another state and expanding to Ohio, you’ll need to form a foreign LLC.</p></br>
-              <p> More information on Ohio <a href="/ohio-llc/fees-filing-requirements/"> filing and licensing requirements here</a> </p>`,
+              <p><a href="/ohio-llc/fees-filing-requirements/">More information on Ohio filing and licensing requirements here.</a></p>`,
     marginBottom: 32,
   },
 
@@ -178,7 +178,7 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `Want to know your next steps after creating a new LLC in Ohio? We’ve got you covered. Here’s our guide to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more. `,
+    content: `Want to know your next steps after creating a new LLC in Ohio? We’ve got you covered. <a href="/after-forming-llc/">Here’s our guide</a> to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more. `,
     marginBottom: 32,
   },
   {

@@ -166,7 +166,7 @@ export const howToGuide = [
             <p><b>Form a Foreign LLC in Colorado</b></p>
             <p>If your business is already operating in another state and expanding to Colorado, you’ll need to form a foreign LLC.</p></br>
             <p>More information on Colorado
-              <a href="/colorado-llc/form-filling-permit-requirements/" target="_blank" >filing and licensing requirements here.</a></p>`,
+              <a href="/colorado-llc/form-filling-permit-requirements/">filing and licensing requirements here.</a></p>`,
         },
         {
           question: `Form a Foreign LLC in California`,
@@ -186,7 +186,7 @@ export const howToGuide = [
   {
     type: `text`,
     content: `Want to know your next steps after creating a new LLC in Colorado? We’ve got you covered.
-      <a href="/after-forming-llc/" target="_blank" >Here’s our guide</a>
+      <a href="/after-forming-llc/">Here’s our guide</a>
       to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more.`,
     marginBottom: 48,
   },
@@ -1330,7 +1330,7 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `Get details on the <a href= "https://www.colorado.gov/tax" target="_blank" rel="noopener noreferrer">Colorado state tax online here</a>.`,
+    content: `Get details on the <a href="https://www.colorado.gov/tax" target="_blank" rel="noopener noreferrer">Colorado state tax online here</a>.`,
     marginBottom: 48,
   },
   {
@@ -1362,7 +1362,7 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `Get details on the <a href= "https://www.colorado.gov/tax" target="_blank" rel="noopener noreferrer">Colorado state tax online here</a>.`,
+    content: `Get details on the <a href="https://www.colorado.gov/tax" target="_blank" rel="noopener noreferrer">Colorado state tax online here</a>.`,
     marginBottom: 48,
   },
   {

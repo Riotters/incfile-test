@@ -67,7 +67,7 @@ export const howToGuide = [
           question: `STEP 2: Search for and Choose a Unique Business Name for Your Washington DC LLC`,
           answer: `<p>You will need a distinctive and original name for your Washington DC LLC that’s not used by any other business in DC. To find out if another company is using your chosen business name, carry out a Washington DC business entity name search on the DC Department of Consumer and Regulatory Affairs website.</p>
                     <p>There are a few rules you’ll need to follow when choosing an LLC name. You can find out more in our guide to searching for and naming your Washington DC LLC.</p>
-                    <p><a href="/washington-dc-llc/how-to-name-your-llc/">Learn about Washington DC LLC business naming rules</a>.</p>`,
+                    <p><a href="/washington-dc-llc/how-to-name-your-llc/">Learn about Washington DC LLC business naming rules.</a></p>`,
         },
         {
           question: `STEP 3: Provide an Official Address for Your DC LLC`,
@@ -151,8 +151,8 @@ export const howToGuide = [
   {
     type: `text`,
     content: `If your business is already operating in another state and expanding to Washington DC, you’ll need to form a foreign LLC.</br>
-        More information on Washington DC <a href="/washington-dc-llc/form-filling-permit-requirements/">filing and licensing requirements here</a>`,
-    marginBottom: 48,
+    <a href="/washington-dc-llc/form-filling-permit-requirements/">More information on Washington DC filing and licensing requirements here</a>`,
+    marginBottom: 40,
   },
   {
     type: `header`,
@@ -162,7 +162,7 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `Want to know your next steps after creating a new LLC in Washington DC? We’ve got you covered. Here’s our guide to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more.`,
+    content: `Want to know your next steps after creating a new LLC in Washington DC? We’ve got you covered. <a href="/after-forming-llc/">Here’s our guide</a> to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more.`,
     marginBottom: 48,
   },
   {

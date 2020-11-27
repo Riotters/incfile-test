@@ -152,7 +152,7 @@ export const howToGuide = [
   {
     type: `text`,
     content: `<p>If your business is already operating in another state and expanding to Alaska, you’ll need to form a foreign LLC.</p></br>
-              <p> More information on Alaska <a href="/alaska-llc/form-filling-permit-requirements/"> filing and licensing requirements here</a> </p>`,
+              <p><a href="/alaska-llc/form-filling-permit-requirements/">More information on Alaska filing and licensing requirements here.</a></p>`,
     marginBottom: 56,
   },
   {
@@ -163,7 +163,7 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `Want to know your next steps after creating a new LLC in Alaska? We’ve got you covered. <a href="/after-forming-llc/"> Here’s our guide</a> to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more.`,
+    content: `Want to know your next steps after creating a new LLC in Alaska? We’ve got you covered. <a href="/after-forming-llc/">Here’s our guide</a> to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more.`,
     marginBottom: 40,
   },
   {

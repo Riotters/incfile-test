@@ -171,8 +171,8 @@ export const howToGuide = [
   {
     type: `text`,
     content: `<p>If your business is already operating in another state and expanding to Kansas, you’ll need to form a foreign LLC.</p></br>
-              <p> More information on Kansas <a href="/kansas-llc/fees-filing-requirements/"> filing and licensing requirements here</a> </p>`,
-    marginBottom: 32,
+              <p><a href="/kansas-llc/fees-filing-requirements/">More information on Kansas filing and licensing requirements here.</a></p>`,
+    marginBottom: 40,
   },
   {
     type: `header`,
@@ -182,7 +182,7 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `Want to know your next steps after creating a new LLC in Kansas? We’ve got you covered. <a href="/after-forming-llc/"> Here’s our guide</a> to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more.`,
+    content: `Want to know your next steps after creating a new LLC in Kansas? We’ve got you covered. <a href="/after-forming-llc/">Here’s our guide</a> to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more.`,
     marginBottom: 32,
   },
   {
@@ -427,7 +427,7 @@ export const namingYourBusiness = [
       list: [
         `<p>If you don’t want to form your LLC right now, you can reserve the business name with the Kansas Division of Corporations. You will need to complete a Business Name Registration form and file it with the AK DOC. You do not need to reserve a name if you are forming your business right away.</p></br>
               <a href="https://www.commerce.Kansas.gov/web/cbpl/Corporations/ReservingRegisteringBusinessName.aspx" target="_blank" rel="noopener noreferrer">Kansas DOC LLC name reservation form</a>`,
-        `<p>If you’re ready to start your LLC, you can formally file your Certificate of Formation with the Kansas DOC, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=KS">let Incfile take care of it for you</a>.</p>`,
+        `<p>If you’re ready to start your LLC, you can formally file your Certificate of Formation with the Kansas DOC, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=KS">let Incfile take care of it for you.</a></p>`,
       ],
     },
     marginBottom: 32,

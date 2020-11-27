@@ -161,7 +161,7 @@ export const howToGuide = [
         {
           question: `Form a Foreign LLC in Arizona`,
           answer: `<p>If your business is already operating in another state and expanding to Arizona, you’ll need to form a foreign LLC.</p></br>
-                   <p>More information on Arizona <a href= "/arizona-llc/form-filling-permit-requirements/"> filing and licensing requirements here</a></p>`,
+                   <p><a href="/arizona-llc/form-filling-permit-requirements/">More information on Arizona filing and licensing requirements here.</a></p>`,
         },
       ],
     },
@@ -175,7 +175,7 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `Want to know your next steps after creating a new LLC in Arizona? We’ve got you covered. <a href= "/after-forming-llc/"> Here’s our guide</a> to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more. `,
+    content: `Want to know your next steps after creating a new LLC in Arizona? We’ve got you covered. <a href="/after-forming-llc/"> Here’s our guide</a> to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more. `,
     marginBottom: 32,
   },
   {
@@ -1308,7 +1308,7 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `Get details on the <a href= "https://azdor.gov/" target="_blank" rel="noopener noreferrer">Arizona state tax online here</a>.`,
+    content: `Get details on the <a href="https://azdor.gov/" target="_blank" rel="noopener noreferrer">Arizona state tax online here</a>.`,
     marginBottom: 32,
   },
   {

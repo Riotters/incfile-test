@@ -210,7 +210,7 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `Details on how to search the Delaware business registry of the DE Division of Corporations using our <a href= "/business-name-search/">business name search tool</a>. This section will help you find the right name and includes information on naming rules, fictitious names, reserving a Delaware LLC name and more.`,
+    content: `Details on how to search the Delaware business registry of the DE Division of Corporations using our <a href="/business-name-search/">business name search tool</a>. This section will help you find the right name and includes information on naming rules, fictitious names, reserving a Delaware LLC name and more.`,
     marginBottom: 32,
   },
   {

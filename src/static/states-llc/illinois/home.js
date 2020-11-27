@@ -210,7 +210,7 @@ export const HomePageContent = {
         type: "arrow-links",
         content: [
           {
-            text: `More information on Illinois filing and licensing requirements ILn be found here.`,
+            text: `More information on Illinois filing and licensing requirements can be found here.`,
             url: `/illinois-llc/fees-filing-requirements/`,
           },
         ],

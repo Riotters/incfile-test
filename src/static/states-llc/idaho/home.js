@@ -178,7 +178,7 @@ export const howToGuide = [
         {
           question: `Foreign LLC in Idaho`,
           answer: `<p>If your business is already operating in another state and expanding to Idaho, you’ll need to form a foreign LLC.</p></br>
-            <p>More information on Idaho <a href="/idaho-llc/form-filling-permit-requirements/" target="_blank">filing and licensing requirements here</a>.</p>`,
+            <p><a href="/idaho-llc/form-filling-permit-requirements/">More information on Idaho filing and licensing requirements here.</a></p>`,
         },
       ],
     },
@@ -193,7 +193,7 @@ export const howToGuide = [
   {
     type: `text`,
     content: `Want to know your next steps after creating a new LLC in Idaho? We’ve got you covered.
-      <a href="/after-forming-llc/" target="_blank" >Here’s our guide</a>
+      <a href="/after-forming-llc/">Here’s our guide</a>
       to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more.`,
     marginBottom: 48,
   },
@@ -1324,7 +1324,7 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `Get details on the <a href= "https://tax.idaho.gov/i-2022.cfm" target="_blank" rel="noopener noreferrer">Idaho state tax online here</a>.`,
+    content: `Get details on the <a href="https://tax.idaho.gov/i-2022.cfm" target="_blank" rel="noopener noreferrer">Idaho state tax online here</a>.`,
     marginBottom: 48,
   },
   {
@@ -1356,7 +1356,7 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `Get details on the <a href= "https://tax.idaho.gov/i-2022.cfm" target="_blank" rel="noopener noreferrer">Idaho state tax online here</a>.`,
+    content: `Get details on the <a href="https://tax.idaho.gov/i-2022.cfm" target="_blank" rel="noopener noreferrer">Idaho state tax online here</a>.`,
     marginBottom: 48,
   },
   {

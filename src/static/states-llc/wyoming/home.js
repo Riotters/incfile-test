@@ -88,7 +88,7 @@ export const howToGuide = [
           answer: `<p>You will need a distinctive and original name for your Wyoming LLC that’s not used by any other business in WY. To find out if another company is using your chosen business name, carry out a Wyoming business entity name search on the WY Secretary of State website.</p></br>
             <p>There are a few rules you’ll need to follow when choosing an LLC name. You can find out more in our guide to searching for and naming your Wyoming LLC.</p></br>
             <p><a href="/wyoming-llc/how-to-name-your-llc/" title="Learn about Wyoming LLC business naming rules">Learn about Wyoming LLC
-            business naming rules</a>.</p>`,
+            business naming rules.</a></p>`,
         },
         {
           question: `STEP 3: Provide an Official Address for Your WY LLC`,
@@ -161,7 +161,7 @@ export const howToGuide = [
         {
           question: `Form a Foreign LLC in Wyoming`,
           answer: `<p>If your business is already operating in another state and expanding to Wyoming, you’ll need to form a foreign LLC.</p></br>
-          <p>More information on Wyoming <a href="/wyoming-llc/form-filling-permit-requirements/">filing and licensing requirements here</a></p>`,
+          <p><a href="/wyoming-llc/form-filling-permit-requirements/">More information on Wyoming filing and licensing requirements here.</a></p>`,
         },
       ],
     },
@@ -175,7 +175,7 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `Want to know your next steps after creating a new LLC in Wyoming? We’ve got you covered. Here’s our guide to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more.`,
+    content: `Want to know your next steps after creating a new LLC in Wyoming? We’ve got you covered. <a href="/after-forming-llc/">Here’s our guide</a> to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more.`,
     marginBottom: 48,
   },
   {
@@ -1276,7 +1276,7 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `Get details on the <a href= "https://azdor.gov/" target="_blank" rel="noopener noreferrer">Wyoming state tax online here</a>.`,
+    content: `Get details on the <a href="https://azdor.gov/" target="_blank" rel="noopener noreferrer">Wyoming state tax online here</a>.`,
     marginBottom: 48,
   },
   {

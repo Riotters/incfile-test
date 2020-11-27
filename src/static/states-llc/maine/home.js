@@ -177,7 +177,7 @@ export const howToGuide = [
         {
           question: `Foreign LLC in Maine`,
           answer: `<p>If your business is already operating in another state and expanding to Maine, you’ll need to form a foreign LLC.</p></br>
-            <p>More information on Maine filing and licensing requirements <a href="/maine-llc/form-filling-permit-requirements/" target="_blank">here.</a>.</p>`,
+            <p><a href="/maine-llc/form-filling-permit-requirements/">More information on Maine filing and licensing requirements here.</a></p>`,
         },
       ],
     },

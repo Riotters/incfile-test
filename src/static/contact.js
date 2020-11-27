@@ -35,7 +35,7 @@ export const newSales = {
     {
       icon: `wave-01`,
       title: `What is the Best State to Start My LLC?`,
-      desc: `Here's our handly guide to choosing the perfect state depending on various legal issues, market demand, taxation rates, job
+      desc: `Here’s our handly guide to choosing the perfect state depending on various legal issues, market demand, taxation rates, job
             markets and more.`,
       url: `/blog/post/best-state-to-start-llc/`,
     },

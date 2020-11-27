@@ -158,7 +158,7 @@ export const howToGuide = [
         {
           question: `Form a Foreign LLC in Pennsylvania`,
           answer: `<p>If your business is already operating in another state and expanding to Pennsylvania, you’ll need to form a foreign LLC.</p></br>
-            <a href="/pennsylvania-llc/form-filling-permit-requirements/" target="_blank">More information on Pennsylvania filing and licensing requirements here</a>`,
+            <a href="/pennsylvania-llc/form-filling-permit-requirements/">More information on Pennsylvania filing and licensing requirements here</a>`,
         },
       ],
     },

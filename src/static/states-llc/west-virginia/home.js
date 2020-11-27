@@ -198,7 +198,7 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `Want to know your next steps after creating a new LLC in West Virginia? We’ve got you covered. Here’s our guide to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more.`,
+    content: `Want to know your next steps after creating a new LLC in West Virginia? We’ve got you covered. <a href="/after-forming-llc/">Here’s our guide</a> to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more.`,
     marginBottom: 32,
   },
   {
@@ -444,7 +444,7 @@ export const namingYourBusiness = [
       list: [
         `<p>If you don’t want to form your West Virginia LLC right now, you can reserve the business name with the West Virginia Secretary of State. You will need to complete an “Application for Name Reservation” and file it with the SOS. You do not need to reserve a name if you are forming your business right away.</p></br>
               <a href="https://sos.wv.gov/FormSearch/Business/Multiple-Company-Types/nr1.pdf" target="_blank" rel="noopener noreferrer">West Virginia SOS LLC name reservation form</a>`,
-        `<p>If you’re ready to start your West Virginia LLC, you can formally file your Articles of Organization with the Secretary of State, or<a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=WV/">let Incfile take care of it for you</a>.</p>`,
+        `<p>If you’re ready to start your West Virginia LLC, you can formally file your Articles of Organization with the Secretary of State, or<a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=WV/">let Incfile take care of it for you.</a></p>`,
       ],
     },
     marginBottom: 32,

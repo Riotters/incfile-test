@@ -151,13 +151,9 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `If your business is already operating in another state and expanding to Nebraska, you’ll need to form a foreign LLC.`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `<a href="/nebraska-llc/form-filling-permit-requirements/">More information on Nebraska filing and licensing requirements here</a>`,
-    marginBottom: 32,
+    content: `If your business is already operating in another state and expanding to Nebraska, you’ll need to form a foreign LLC.<br>
+    <a href="/nebraska-llc/form-filling-permit-requirements/">More information on Nebraska filing and licensing requirements here</a>`,
+    marginBottom: 40,
   },
   {
     type: `header`,
@@ -167,7 +163,7 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `Want to know your next steps after creating a new LLC in Nebraska? We’ve got you covered. <a href="/after-forming-llc/"> Here’s our guide</a> to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more.`,
+    content: `Want to know your next steps after creating a new LLC in Nebraska? We’ve got you covered. <a href="/after-forming-llc/">Here’s our guide</a> to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more.`,
     marginBottom: 32,
   },
   {

@@ -171,7 +171,7 @@ export const howToGuide = [
   {
     type: `text`,
     content: `<p>If your business is already operating in another state and expanding to Montana, you’ll need to form a foreign LLC.</p></br>
-              <p> More information on Montana <a href="/Montana-llc/fees-filing-requirements/"> filing and licensing requirements here</a> </p>`,
+              <p><a href="/Montana-llc/fees-filing-requirements/">More information on Montana filing and licensing requirements here.</a></p>`,
     marginBottom: 32,
   },
 

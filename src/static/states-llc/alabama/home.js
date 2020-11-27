@@ -149,7 +149,7 @@ export const howToGuide = [
           question: `Form a Foreign LLC in Alabama`,
           answer: `If your business is already operating in another state and expanding to Alabama, you’ll need to form a foreign LLC. 
           <br>
-          More information on Alabama filing and licensing requirements here.`,
+          <a href="/alabama-llc/form-filling-permit-requirements/">More information on Alabama filing and licensing requirements here.</a>`,
         },
       ],
     },
@@ -163,7 +163,7 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `Want to know your next steps after creating a new LLC in Alabama? We’ve got you covered. Here’s our guide to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more. 
+    content: `Want to know your next steps after creating a new LLC in Alabama? We’ve got you covered. <a href="/after-forming-llc/">Here’s our guide</a> to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more. 
 
     `,
     marginBottom: 56,

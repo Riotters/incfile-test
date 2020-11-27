@@ -135,7 +135,7 @@ export const howToGuide = [
         {
           question: `Foreign LLC in Michigan`,
           answer: `<p>If your business is already operating in another state and expanding to Michigan, you’ll need to form a foreign LLC.</p></br>
-            <p>Find more information on Michigan filing and licensing requirements <a href="/michigan-llc/form-filling-permit-requirements/" target="_blank">here.</a>.</p>`,
+            <p><a href="/michigan-llc/form-filling-permit-requirements/">Find more information on Michigan filing and licensing requirements here.</a></p>`,
         },
       ],
     },

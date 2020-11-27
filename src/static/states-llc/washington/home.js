@@ -70,7 +70,7 @@ export const howToGuide = [
           question: `STEP 2: Search for and Choose a Unique Business Name for Your Washington  LLC`,
           answer: `<p>You will need a distinctive and original name for your Washington LLC that’s not used by any other business in DC. To find out if another company is using your chosen business name, carry out a Washington business entity name search on the DC Department of Consumer and Regulatory Affairs website.</p>
                     <p>There are a few rules you’ll need to follow when choosing an LLC name. You can find out more in our guide to searching for and naming your Washington LLC.</p>
-                    <p><a href="/washington-dc-llc/how-to-name-your-llc/">Learn about Washington LLC business naming rules</a>.</p>`,
+                    <p><a href="/washington-dc-llc/how-to-name-your-llc/">Learn about Washington LLC business naming rules.</a></p>`,
         },
         {
           question: `STEP 3: Provide an Official Address for Your LLC`,
@@ -191,7 +191,7 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `Want to know your next steps after creating a new LLC in Washington? We’ve got you covered. Here’s our guide to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more.`,
+    content: `Want to know your next steps after creating a new LLC in Washington? We’ve got you covered. <a href="/after-forming-llc/">Here’s our guide</a> to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more.`,
     marginBottom: 48,
   },
   {

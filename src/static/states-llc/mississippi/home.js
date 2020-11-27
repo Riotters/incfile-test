@@ -160,7 +160,7 @@ export const howToGuide = [
   {
     type: `text`,
     content: `<p>If your business is already operating in another state and expanding to Mississippi, you’ll need to form a foreign LLC.</p></br>
-              <p> More information on Mississippi <a href="/Mississippi-llc/fees-filing-requirements/"> filing and licensing requirements here</a> </p>`,
+              <p><a href="/Mississippi-llc/fees-filing-requirements/">More information on Mississippi filing and licensing requirements here.</a></p>`,
     marginBottom: 32,
   },
 
@@ -420,7 +420,7 @@ export const namingYourBusiness = [
       list: [
         `<p>If you don’t want to form your LLC right now, you can reserve the business name with the Mississippi Division of Corporations. You will need to complete a Business Name Registration form and file it with the AK DOC. You do not need to reserve a name if you are forming your business right away.</p></br>
               <a href="https://www.commerce.mississippi.gov/web/cbpl/Corporations/ReservingRegisteringBusinessName.aspx" target="_blank" rel="noopener noreferrer">Mississippi DOC LLC name reservation form</a>`,
-        `<p>If you’re ready to start your LLC, you can formally file your Certificate of Formation with the Mississippi DOC, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MS">let Incfile take care of it for you</a>.</p>`,
+        `<p>If you’re ready to start your LLC, you can formally file your Certificate of Formation with the Mississippi DOC, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MS">let Incfile take care of it for you.</a></p>`,
       ],
     },
     marginBottom: 32,

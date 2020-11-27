@@ -184,7 +184,7 @@ export const howToGuide = [
   {
     type: `text`,
     content: `<p>If your business is already operating in another state and expanding to New Hampshire, you’ll need to form a foreign LLC.</p></br>
-              <p> More information on New Hampshire <a href="/new-hampshire-llc/form-filling-permit-requirements/"> filing and licensing requirements here</a> </p>`,
+              <p><a href="/new-hampshire-llc/form-filling-permit-requirements/">More information on New Hampshire filing and licensing requirements here.</a></p>`,
     marginBottom: 32,
   },
   {
@@ -195,7 +195,7 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `Want to know your next steps after creating a new LLC in New Hampshire? We’ve got you covered. <a href="/after-forming-llc/"> Here’s our guide</a> to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more.`,
+    content: `Want to know your next steps after creating a new LLC in New Hampshire? We’ve got you covered. <a href="/after-forming-llc/">Here’s our guide</a> to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more.`,
     marginBottom: 32,
   },
   {
