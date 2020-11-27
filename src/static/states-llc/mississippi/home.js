@@ -1185,7 +1185,7 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `<a href="/research-topics/llc-info/the-llc-operating-agreement/"> Operating agreement</a>
+    content: `<a href="/research-topics/llc-info/llc-operating-agreement/"> Operating agreement</a>
      is a business document that covers how the business will be run, how managers and members are chosen, rights and duties of members and several other key areas.`,
     marginBottom: 16,
   },

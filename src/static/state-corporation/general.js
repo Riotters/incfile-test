@@ -93,7 +93,7 @@ export const learnMore = {
       },
       {
         header: `Operating Agreement`,
-        url: `/research-topics/llc-info/the-llc-operating-agreement/`,
+        url: `/research-topics/llc-info/llc-operating-agreement/`,
       },
       {
         header: `Members`,

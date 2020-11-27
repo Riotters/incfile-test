@@ -1154,7 +1154,7 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Ohio LLCs aren’t required to have an Operating Agreement, but they are extremely useful for several reasons (<a href="/research-topics/llc-info/the-llc-operating-agreement/">learn about them here</a> ). If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Ohio business. You can choose to make changes to the template based on your unique requirements.`,
+    content: `Ohio LLCs aren’t required to have an Operating Agreement, but they are extremely useful for several reasons (<a href="/research-topics/llc-info/llc-operating-agreement/">learn about them here</a> ). If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Ohio business. You can choose to make changes to the template based on your unique requirements.`,
     marginBottom: 16,
   },
   {
