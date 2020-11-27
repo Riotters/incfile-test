@@ -37,15 +37,17 @@ const Grid = styled.div`
   grid-gap: 30px;
   grid-template-columns: 100%;
   
-  div:first-child {
-    margin-top: 26px;
+  @media (max-width: 991px) {
+    & > div:first-child {
+      margin-top: 26px;
+    }
   }
   
-  @media (min-width: 576px) {
+  @media (min-width: 992px) {
     grid-template-columns: 1fr 1fr;
     
-    div:first-child {
-        margin-top: 0;
+    & > div {
+        margin-top: 26px;
     }
   }
 `;

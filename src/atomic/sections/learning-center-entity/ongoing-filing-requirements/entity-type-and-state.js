@@ -4,7 +4,7 @@ import { color, gradient } from "../../../../components/styles/colors";
 import { states } from "../../../../components/states";
 import Dropdown from "../../../molecules/form/dropdown";
 import ContentCenter from "../../../partials/content-center";
-import TextCenterLayout from "../../../../components/partials/blocks/heading-center";
+import TextCenterLayout from "../../../partials/heading-center";
 import TopImageBox from "../../../../components/top-image-box";
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-right-transparent-orange.inline.svg";

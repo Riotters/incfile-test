@@ -46,7 +46,7 @@ const OrderNow = ({layout, columns}) => (
         </OrderNowWrapper>
 
         <TabScrollableWrapper>
-            <TabScrollable/>
+            <TabScrollable />
         </TabScrollableWrapper>
     </>
 );

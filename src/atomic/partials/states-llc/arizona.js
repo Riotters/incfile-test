@@ -48,6 +48,10 @@ const Wrapper = styled.div`
 `;
 
 const LLCLayout = ({ children, data, ongoingFilingRequirement, top }) => {
+    const getURLParamsOnly = (url) => {
+        return "?" + url.split("?")[1];
+    };
+
   return (
     <>
       <Top imageName="mr-bulb-state-information-llc-7342" imageAlt="Mrs Bulb and with checklist" ovalColor="purple-2" textWidth="530">
@@ -60,7 +64,7 @@ const LLCLayout = ({ children, data, ongoingFilingRequirement, top }) => {
       <WrapperContent>
         <Wrapper>{children}</Wrapper>
       </WrapperContent>
-      <Rocket url="?entityType=LLC&entityState=AZ" />
+      <Rocket url={getURLParamsOnly(top.buttons[0].url)} />
       <Requirements content={ongoingFilingRequirement} data={data} />
       <Variants data={data} />
       <Compare content={compare} />

@@ -131,7 +131,16 @@ const Arrow = styled.div`
   }
 `;
 
-const icons = [<HowToGuideSVG />, <BusinessNamesSVG />, <RASVG />, <FilingFeeSVG />, <BusinessTaxesSVG />, <FaqSVG />, <WhatDoNextSVG />];
+const icons = [
+    <HowToGuideSVG />,
+    <BusinessNamesSVG />,
+    <RASVG />,
+    <FilingFeeSVG />,
+    <BusinessTaxesSVG />,
+    <FaqSVG />,
+    <WhatDoNextSVG />
+];
+
 const icons2 = [<HowToGuideSVG />, <BusinessNamesSVG />, <RASVG />, <FilingFeeSVG />, <BusinessTaxesSVG />, <WhatDoNextSVG />];
 
 const LeftTabPages = ({ layout, columns, content, nonDIY }) => (

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Container from "../../../container";
-import TextCenterLayout from "../../../../components/partials/blocks/heading-center";
+import TextCenterLayout from "../../../partials/heading-center";
 import { Paragraph } from "../../../atoms/typography/paragraph";
 import Adventages from "../../../../components/adventages";
 import { color } from "../../../../components/styles/colors";
