@@ -175,7 +175,7 @@ const BusinessStructure = () => (
           <a href="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/" target="_blank" rel="noopener noreferrer">
             we’ve answered them to help you choose the right business structure
           </a>{" "}
-          for your daycare business.
+          for your teen business.
         </Paragraph>
         <Paragraph big style={{ paddingTop: "48px", paddingBottom: 0 }} mixed={true}>
           In some cases, our recommendation for a teen business would be to create an LLC. We’ve <Link to="/form-an-llc/">got a complete guide to everything you need to do</Link>, and we can even set one up for your business.{" "}
