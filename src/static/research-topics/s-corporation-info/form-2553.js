@@ -5,8 +5,8 @@ export const about = {
       url: `/help-center/`,
     },
     {
-      text: `C Corporation Information`,
-      url: `/research-topics/c-corporation-info`,
+      text: `S Corporation Information`,
+      url: `/research-topics/s-corporation-info`,
     },
   ],
   header: `What is the Form 2553?`,

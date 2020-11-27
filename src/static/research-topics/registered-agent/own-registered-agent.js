@@ -6,7 +6,7 @@ export const about = {
     },
     {
       text: `Registered Agent`,
-      url: `/research-topics/registered-agent`,
+      url: `/research-topics/registered-agent-info-update`,
     },
   ],
   header: `Can I Be My Own Registered Agent?`,
@@ -63,7 +63,7 @@ export const related = {
     },
     {
       header: `Who will be responsible for updating the Registered Agent information with the state?`,
-      url: `/research-topics/registered-agent/registered-agent-info-updat`,
+      url: `/research-topics/registered-agent/registered-agent-info-update`,
     },
     {
       header: `How much will it cost to renew my Registered Agent service?`,

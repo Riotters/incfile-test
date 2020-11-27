@@ -167,7 +167,7 @@ const BusinessStructure = () => (
           <a href="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/" target="_blank" rel="noopener noreferrer">
             we’ve answered them to help you choose the right business structure
           </a>{" "}
-          for your daycare business.
+          for your photography business.
         </Paragraph>
         <Paragraph big style={{ paddingTop: "48px", paddingBottom: 0 }} mixed={true}>
           In most cases our recommendation would be to create an LLC - they are quick to create, easy to manage and relatively inexpensive to run. They also provide you with liability protection and help you get taken more seriously by photography clients.

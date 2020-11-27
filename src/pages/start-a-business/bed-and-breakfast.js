@@ -161,7 +161,6 @@ const BedAndBreakfast = () => (
           <PanelWrapper>
             <Heading size={3}>Why You Should Start a New Bed and Breakfast</Heading>
             <Paragraph big>You might be wondering just how popular bed and breakfasts are. Is it a growing sector, and can you make money running a boutique hotel? The statistics might surprise you.</Paragraph>
-            <Paragraph big>As you can see, there are plenty of opportunities to start up your own bed and breakfast business. We’ll help you be part of that success.</Paragraph>
 
             <BlueBoxWithAbsoluteText absoluteText="17K" text="Number of B&Bs, boutique hotels and inns in the U.S." />
             <BlueBoxWithAbsoluteText absoluteText="5%" text="Growth of the industry every year" />
@@ -176,6 +175,7 @@ const BedAndBreakfast = () => (
             <Adventages headline="The most popular locations for bed and breakfasts (in descending order) are small villages, rural locations and urban vacation spots" width="100%" />
 
             <Adventages headline="Almost three-quarters of boutique hotel owners are couples, and 80 percent of all B&B owners live on the premises of their lodging" width="100%" />
+            <Paragraph big>As you can see, there are plenty of opportunities to start up your own bed and breakfast business. We’ll help you be part of that success.</Paragraph>
           </PanelWrapper>
 
           <PanelWrapper>

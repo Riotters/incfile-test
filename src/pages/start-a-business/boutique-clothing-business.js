@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../../components/layout";
 import Top from "../../atomic/partials/top";
 import SEO from "../../components/seo";
-import Button from "../../components/button";
+import Button from "../../atomic/molecules/buttons/button";
 import RatingRow from "../../atomic/atoms/boxes/rating-row";
 import CartBlock from "../../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../../atomic/molecules/blocks/rating-block";
@@ -15,69 +15,59 @@ import BoutiqueTaxes from "../../atomic/sections/type-of-business/boutique-cloth
 import InsuranceBusinessSection from "../../atomic/sections/type-of-business/boutique-clothing-business/insurance-business";
 import UseFulTools from "../../atomic/sections/type-of-business/boutique-clothing-business/useful-tools";
 import Conclusion from "../../atomic/sections/general/conclusion";
-import BoutiqueClothingTabs
-    from "../../atomic/sections/type-of-business/boutique-clothing-business/boutique-clothing-tabs";
+import BoutiqueClothingTabs from "../../atomic/sections/type-of-business/boutique-clothing-business/boutique-clothing-tabs";
 import TypeOfBusiness from "../../atomic/sections/type-of-business/boutique-clothing-business/type-of-business";
-import BoutiqueBusinessPlan
-    from "../../atomic/sections/type-of-business/boutique-clothing-business/boutique-business-plan";
-import BoutiqueBusinessStructure
-    from "../../atomic/sections/type-of-business/boutique-clothing-business/boutique-business-structure";
-import {Heading} from "../../atomic/atoms/typography/heading";
-import {Paragraph} from "../../atomic/atoms/typography/paragraph";
+import BoutiqueBusinessPlan from "../../atomic/sections/type-of-business/boutique-clothing-business/boutique-business-plan";
+import BoutiqueBusinessStructure from "../../atomic/sections/type-of-business/boutique-clothing-business/boutique-business-structure";
+import { Heading } from "../../atomic/atoms/typography/heading";
+import { Paragraph } from "../../atomic/atoms/typography/paragraph";
 
 const BoutiqueClothingBusiness = () => (
-    <Layout>
-        <SEO title="How to Start a Traditional or Online Boutique Clothing Business"
-             description="Learn all about nonprofit corporations, including the benefits & disadvantages, getting 501c3 status, and what's needed to get your company off the ground."/>
+  <Layout>
+    <SEO title="How to Start a Traditional or Online Boutique Clothing Business" description="Learn all about nonprofit corporations, including the benefits & disadvantages, getting 501c3 status, and what's needed to get your company off the ground." />
 
-        <Top ovalColor="purple" imageName="bouthique-clothing-main" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
-            <h1>How to Start a Traditional or Online Boutique Clothing Business</h1>
-            <p>Fashion and beautiful clothing have always been in demand,
-                and if you have an eye for style, a boutique clothing business
-                could be ideal for you.</p>
-            <ButtonsBox>
-                <Button theme="primary56" marginMD="0 24px 0 0" arrow>
-                    Start Now
-                </Button>
-            </ButtonsBox>
+    <Top ovalColor="purple" imageName="bouthique-clothing-main" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
+      <h1>How to Start a Traditional or Online Boutique Clothing Business</h1>
+      <p>Fashion and beautiful clothing have always been in demand, and if you have an eye for style, a boutique clothing business could be ideal for you.</p>
+      <ButtonsBox>
+        <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{ url: `${process.env.ORDER_URL}/form-order-now.php`, text: "Start Now" }} />
+      </ButtonsBox>
 
-            <RatingRow>
-                <CartBlock/>
-                <RatingBlock/>
-            </RatingRow>
-        </Top>
+      <RatingRow>
+        <CartBlock />
+        <RatingBlock />
+      </RatingRow>
+    </Top>
 
-        <BoutiqueClothingTabs />
+    <BoutiqueClothingTabs />
 
-        <TypeOfBusiness/>
+    <TypeOfBusiness />
 
-        <BlueContainer/>
+    <BlueContainer />
 
-        <BoutiqueBusinessPlan/>
+    <BoutiqueBusinessPlan />
 
-        <BoutiqueBusinessStructure />
+    <BoutiqueBusinessStructure />
 
-        <SettingBusiness/>
+    <SettingBusiness />
 
-        <OrderNow/>
+    <OrderNow />
 
-        <Regulations/>
+    <Regulations />
 
-        <BoutiqueTaxes/>
+    <BoutiqueTaxes />
 
-        <InsuranceBusinessSection/>
+    <InsuranceBusinessSection />
 
-        <UseFulTools/>
+    <UseFulTools />
 
-        <Conclusion to="/" buttonTitle="Start your Boutique Clothing Business with us, today" width="490px">
-            <Heading size={3} style={{fontSize: "48px"}}>
-                Conclusion
-            </Heading>
-            <Paragraph big>
-                With a strong eye for style and good business acumen, you can start a successful retail clothing company. If you can find a great niche, understand your competitors and put together a solid business plan, you will have every chance for success.
-            </Paragraph>
-        </Conclusion>
-    </Layout>
+    <Conclusion to={`${process.env.ORDER_URL}/form-order-now.php`} buttonTitle="Start your Boutique Clothing Business with us, today" width="490px">
+      <Heading size={3} style={{ fontSize: "48px" }}>
+        Conclusion
+      </Heading>
+      <Paragraph big>With a strong eye for style and good business acumen, you can start a successful retail clothing company. If you can find a great niche, understand your competitors and put together a solid business plan, you will have every chance for success.</Paragraph>
+    </Conclusion>
+  </Layout>
 );
 
 const ButtonsBox = styled.div`

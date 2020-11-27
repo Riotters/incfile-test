@@ -46,7 +46,7 @@ const Airbnb = () => (
       <h1>How to Start an Airbnb</h1>
       <p>Airbnb has only been with us since 2008, but over the last few years, it’s turned over half a million people into entrepreneurs.</p>
       <ButtonsBox>
-        <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{ text: `Start Now`, url: `/` }} />
+        <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{ text: `Start Now`, url: `${process.env.ORDER_URL}/form-order-now.php` }} />
       </ButtonsBox>
 
       <RatingRow>

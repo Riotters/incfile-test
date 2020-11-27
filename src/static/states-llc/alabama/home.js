@@ -32,11 +32,6 @@ export const howToGuide = [
     marginBottom: 32,
   },
   {
-    type: `text`,
-    content: `Briefly, the benefits of forming an Alabama LLC include:`,
-    marginBottom: 8,
-  },
-  {
     type: `list-dot`,
     content: {
       header: `Briefly, the benefits of starting an Alabama LLC include:`,

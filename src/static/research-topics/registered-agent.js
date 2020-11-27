@@ -1,12 +1,12 @@
 export const about = {
-    links: [
-      {
-        text: `View All Topics`,
-        url: `/help-center/`,
-      },
-    ],
-    header: `Registered Agent`,
-  }
+  links: [
+    {
+      text: `View All Topics`,
+      url: `/help-center/`,
+    },
+  ],
+  header: `Registered Agent`,
+};
 
 export const related = {
     header: 

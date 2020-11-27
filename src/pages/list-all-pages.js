@@ -325,7 +325,7 @@ const IndexPage = () => (
         <Link to="/research-topics/state-info/publish-inc-notice-georgia">How To Publish Your Notice Of Incorporation In Georgia?</Link>
         <Link to="/research-topics/state-info/ny-publication-requirement">How to Meet New York LLC Publication Requirements?</Link>
 
-        <Link to="/research-topics/registered-agent">Registered Agent</Link>
+        <Link to="/research-topics/registered-agent-info-update">Registered Agent</Link>
         <Link to="/research-topics/registered-agent/own-registered-agent">Can I Be My Own Registered Agent?</Link>
         <Link to="/research-topics/registered-agent/registered-agent-company">Can the registered agent be a company?</Link>
         <Link to="/research-topics/registered-agent/service-cost">How much will it cost to renew my Registered Agent service?</Link>

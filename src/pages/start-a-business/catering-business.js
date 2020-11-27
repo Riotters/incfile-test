@@ -190,7 +190,7 @@ const CateringBusiness = () => (
 
             <Adventages headline="Friendliness" text="It’s not just about the food you prepare, it’s also about how that food is served. Many clients will expect you to provide wait staff and servers, and you will need to ensure they have the right approach and attitude." width="100%" />
 
-            <Adventages headline="Marketing" text="Promoting your beauty salon business against a competitive field; local marketing expertise is essential" width="100%" />
+            <Adventages headline="Marketing" text="Promoting a catering business against a competitive field. Local marketing expertise is essential." width="100%" />
 
             <Adventages headline="Value for money" text="Catering is a competitive business, and profit margins can be slim. You will need a rock-solid understanding of all your costs so you can price your services correctly." width="100%" />
 
@@ -234,7 +234,7 @@ const CateringBusiness = () => (
             <Adventages headline="Business administration" text="Sorting out profits, payroll, financial management, accounting and all the other areas that go into running any successful business." width="100%" />
 
             <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: color.black }}>
-              Is Catering Entrepreneurship for You?
+              What Are the Main Challenges for a Catering Entrepreneur?
             </Paragraph>
 
             <Paragraph big>
@@ -457,36 +457,28 @@ const CateringBusiness = () => (
 
             <Paragraph big>These are the largest and most complex types of businesses and are far more than the average entrepreneur or business owner will need.</Paragraph>
           </TextBlockWithImage>
-
-          <Paragraph big style={{ paddingTop: "48px", paddingBottom: 0 }} mixed={true}>
-            For more information on the advantages and disadvantages of different types of businesses, <Link to="/business-entity-comparison/">please see our in-depth guide</Link>. If you’ve still got questions,{" "}
-            <a href="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/" target="_blank" rel="noopener noreferrer">
-              we’ve answered them to help you choose the right business structure
-            </a>{" "}
-            for your daycare business.
-          </Paragraph>
-          <Paragraph big style={{ paddingTop: "48px", paddingBottom: 0 }} mixed={true}>
-            In most cases our recommendation would be to create an LLC. We have a <Link to="/form-an-llc/">complete guide to everything you need to do</Link>, and we can set one up for your T-shirt business. <Link to="/llc-state-information/">LLC formation does vary from state to state</Link>, but
-            we’ve got you covered, wherever you are.
-          </Paragraph>
-
-          <Button theme="primary48" width="365px" arrow content={{ url: `${process.env.ORDER_URL}/form-order-now.php`, text: `Start your business with us, today!` }} />
         </ImageContent>
       </BusinessOwnerResponsibilities>
 
       <ContentCenter contentWidth={770}>
         <div>
           <Heading size={3} style={{ fontSize: "40px", marginTop: "100px", textAlign: "left" }}>
-            Special Considerations for Setting up a Cleaning Business Entity
+            Special Considerations for Setting up a Catering Business Entity
           </Heading>
 
-          <Paragraph big mixed={true}>
-            For more information on the advantages and disadvantages of different types of businesses, please see our in-depth guide. If you’ve still got questions, we’ve answered them to help you choose the right business structure.
+          <Paragraph big style={{ paddingTop: "48px", paddingBottom: 0 }} mixed={true}>
+            For more information on the advantages and disadvantages of different types of businesses, <Link to="/business-entity-comparison/">please see our in-depth guide</Link>. If you’ve still got questions,{" "}
+            <a href="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/" target="_blank" rel="noopener noreferrer">
+              we’ve answered them to help you choose the right business structure
+            </a>{" "}
+            for your catering business.
           </Paragraph>
-          <Paragraph big mixed={true}>
-            In almost every case, the right business entity for a caterer is going to be an LLC. It provides you with liability protection, is easy to set up and run, has low administrative overhead and can be tax advantageous. We’ve got a complete guide to everything you need to do here, and we can
-            set one up for your catering business. LLC formation does vary from state to state, but we’ve got you covered, wherever you are.
+          <Paragraph big style={{ paddingTop: "48px", paddingBottom: 0 }} mixed={true}>
+            In most cases our recommendation would be to create an LLC. We have a <Link to="/form-an-llc/">complete guide to everything you need to do</Link>, and we can set one up for your catering business. <Link to="/llc-state-information/">LLC formation does vary from state to state</Link>, but
+            we’ve got you covered, wherever you are.
           </Paragraph>
+
+          <Button theme="primary48" width="365px" arrow content={{ url: `${process.env.ORDER_URL}/form-order-now.php`, text: `Start your business with us, today!` }} />
         </div>
       </ContentCenter>
     </OrangeContainer>
