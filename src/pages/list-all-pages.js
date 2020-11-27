@@ -267,6 +267,7 @@ const IndexPage = () => (
         <Link to="/research-topics/llc-info/llc-without-listing-members">Can an LLC be formed without listing the member on the articles of organization?</Link>
         <Link to="/research-topics/llc-info/llc-for-your-entity">Is an LLC the best fit for your entity?</Link>
         <Link to="/research-topics/llc-info/llc-vs-c-corporation">LLC vs. C Corporation</Link>
+        <Link to="/research-topics/llc-info/llc-vs-s-corporation">LLC vs. S Corporation</Link>
         <Link to="/research-topics/llc-info/llcs-vs-c-corporation">LLCs vs C-Corporation: Which Is Best for Your Business?</Link>
         <Link to="/research-topics/llc-info/starting-llc-by-steps">Steps to starting a Limited Liability Company (LLC)</Link>
         <Link to="/research-topics/llc-info/forming-llc-benefits">The Benefits of Forming an LLC</Link>

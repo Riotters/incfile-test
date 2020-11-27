@@ -45,10 +45,6 @@ export const businessTaxesPageContent = {
       content: `Items 1 and 2 are taxed as “pass-through” income for any LLC owners, managers or members who receive profits from the business. Any profits are reported on federal and California personal tax returns and that’s where you will pay those taxes.`,
     },
     {
-      type: `paragraph`,
-      content: `To pay California taxes, you’ll need a California Tax ID. You can apply for this online via the California Comptroller’s website.`,
-    },
-    {
       type: `box-cta`,
       color: color.blue3,
       styles: { fontSize: `25px` },

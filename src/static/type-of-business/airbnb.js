@@ -10,7 +10,7 @@ export const InfoCards = {
             roundBottomLeft: true,
             imageName: "workers-compensation-insurance",
             title: "Workers Compensation Insurance",
-            content: "Workers’ compensation insurance provides coverage for job-related illnesses, disabilities or injuries that affect employees. Regulations for this insurance vary from state to state. It typically covers areas like medical costs, loss of earnings, compensation and retraining"
+            content: "Workers’ compensation insurance provides coverage for job-related illnesses, disabilities or injuries that affect employees. Regulations for this insurance vary from state to state. It typically covers areas like medical costs, loss of earnings, compensation and retraining."
         },
         {
             backgroundColor: color.green3,

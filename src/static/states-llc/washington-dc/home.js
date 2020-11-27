@@ -1243,33 +1243,6 @@ export const businessTaxes = [
   },
   {
     type: `header`,
-    content: `Washington DC State Tax on Your LLC Earnings`,
-    size: 3,
-    marginBottom: 24,
-  },
-  {
-    type: `text`,
-    content: `As a Washington DC business owner, you will need to pay DC state tax on any money you pay to yourself. These earnings flow through to your personal tax return, which is where you will pay Washington DC income tax. You will be taxed at the standard rates for Washington DC state taxes, and you will also get to apply regular allowances and deductions. Any salaried employees will also need to pay personal Washington DC state taxes.`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `Get details on the <a href="https://www.revenue.DC.gov/Pages/FAQS/pcs-taxrates.aspx" target="_blank" rel="noopener noreferrer">Washington DC state tax rates here</a>.`,
-    marginBottom: 48,
-  },
-  {
-    type: `header`,
-    content: `Federal Self-Employment and Income Taxes for Your Washington DC LLC`,
-    size: 3,
-    marginBottom: 24,
-  },
-  {
-    type: `text`,
-    content: `There are a couple different federal taxes that every LLC will need to pay, including Washington DC LLCs. These are self-employment tax and federal income tax, which are taxed as “pass-through” income via your tax return forms.`,
-    marginBottom: 48,
-  },
-  {
-    type: `header`,
     content: `Washington DC LLC Federal Self-Employment Tax`,
     size: 3,
     marginBottom: 24,
@@ -1388,12 +1361,12 @@ export const businessTaxes = [
           answer2: [
             {
               type: `paragraph`,
-              content: `Most Washington DC LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make.`,
+              content: `Most Washington DC LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make. The most common types of estimated taxes are:`,
             },
             {
               type: `list-dot-without-bg`,
               color: color.orange3,
-              header: `The most common types of estimated taxes are:`,
+              header: ``,
               content: [`Federal income tax`, `Federal self-employment tax`, `Washington DC local tax`],
             },
             {

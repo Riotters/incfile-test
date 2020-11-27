@@ -167,7 +167,7 @@ const BeautySalon = () => (
               Key Beauty Salon Business and Background Data and Statistics
             </Paragraph>
 
-            <Paragraph big>It’s important to understand the opportunities in the online T-shirt printing and ecommerce space. Here are the key facts you need to know:</Paragraph>
+            <Paragraph big>Here are some of current statistics that will help you understand the beauty salon industry:</Paragraph>
 
             <BlueBoxWithAbsoluteText absoluteText="$57B" text="Consumers spent in the hair and nail salon industry in 2016" />
             <BlueBoxWithAbsoluteText absoluteText="700K" text="People employed in the industry across the U.S." />

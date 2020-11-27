@@ -20,7 +20,7 @@ import { about, related } from "../../static/research-topics/general-research";
 
 const HelpCenter = () => (
   <Layout>
-    <SEO title="Nonprofit Resources & Articles | Incfile Help Center" description="Starting or running a nonprofit? Find helpful information here, from instructions on officially forming your company to how to pay business taxes. Learn more." />
+    <SEO title="General Articles & Information on Forming an LLC or Corporation" description="Q & A for LLC and other forms of corporations. Learning Center for Incorporating in every state." />
     <Top imageName="mrs-bulb-help-center-article" imageAlt="Mrs Bulb and with checklist" ovalColor="green">
       <h1>{top.header}</h1>
       <p>{top.text}</p>

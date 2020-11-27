@@ -16,7 +16,7 @@ const BusinessOwnerResponsibilities = styled.section`
   margin: 0 auto;
   max-width: 770px;
 
-  h4.title {
+  h3.title {
     font-size: 40px;
     padding-bottom: 56px;
   }
@@ -59,7 +59,7 @@ const BusinessPlan = () => (
     </OvalCenter>
     <Container>
       <BusinessOwnerResponsibilities>
-        <Heading size={4} className="title">
+        <Heading size={3} className="title">
           Your Social Media Influencer Business Needs a Plan
         </Heading>
         <Paragraph big mixed={true}>

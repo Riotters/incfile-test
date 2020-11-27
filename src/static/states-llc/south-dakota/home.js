@@ -1395,7 +1395,7 @@ export const businessTaxes = [
     content: {
       items: [
         {
-          question: `South Dakota LLC Employer Payroll Tax Withholding`,
+          question: `Employee and Employer Taxes for Your South Dakota LLC`,
           answer: `All employers must collect and withhold payroll tax from their employees when they receive their salaries. You would normally withhold 7.65 percent of the taxable salary that you pay to your employees.`,
         },
         {
