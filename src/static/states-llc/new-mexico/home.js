@@ -1316,16 +1316,9 @@ export const businessTaxes = [
     marginBottom: 16,
   },
   {
-    type: `text`,
-    content: `You will typically need to collect New Mexico sales tax on:
-
-    `,
-    marginBottom: 16,
-  },
-  {
     type: `list-dot`,
     content: {
-      header: `The graduated New Mexico state income tax rate is:`,
+      header: `You will typically need to collect New Mexico sales tax on:`,
       list: [`Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`, `Certain services that your business might provide`],
     },
     marginBottom: 16,
@@ -1362,13 +1355,13 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe. Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
+    content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe.`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `The graduated New Mexico state income tax rate is:`,
+      header: `Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
       list: [`On profits of $30,000, you would pay self-employment tax of $4,590.`, `On profits of $60,000, you would pay self-employment tax of $9,180`, `On profits of $90,000, you would pay self-employment tax of $13,770`, `On profits of $140,000, you would pay self-employment tax of $21,420.`],
     },
     marginBottom: 16,
@@ -1424,7 +1417,7 @@ export const businessTaxes = [
   },
   {
     type: `header`,
-    content: `Employee and Employer Taxes for Your New Mexico LLC`,
+    content: `Tax Information for Employers and Employees`,
     size: 3,
     marginBottom: 24,
   },

@@ -132,8 +132,8 @@ export const categories = {
         },
       ],
       link: {
-        text: `see all 18 articles`,
-        url: `/research-topics/general-research/`,
+        text: `see all 17 articles`,
+        url: `/research-topics/general-research-topics/`,
       },
     },
     {
@@ -174,7 +174,7 @@ export const categories = {
         },
       ],
       link: {
-        text: `see all 23 articles`,
+        text: `see all 21 articles`,
         url: `/research-topics/s-corporation-info/`,
       },
     },
@@ -216,8 +216,8 @@ export const categories = {
         },
       ],
       link: {
-        text: `see all 15 articles`,
-        url: `research-topics/nonprofit-info/`,
+        text: `see all 16 articles`,
+        url: `/research-topics/nonprofit-info/`,
       },
     },
     {
@@ -258,7 +258,7 @@ export const categories = {
         },
       ],
       link: {
-        text: `see all 5 articles`,
+        text: `see all 6 articles`,
         url: `/research-topics/business-taxes/`,
       },
     },
@@ -289,7 +289,7 @@ export const categories = {
       ],
       link: {
         text: `see all 2 articles`,
-        url: `/research-topics/individual-state-info/`,
+        url: `/research-topics/state-info/`,
       },
     },
     {
