@@ -211,16 +211,8 @@ export const businessNamesContent = {
       type: `numberBoxList`,
       styles: { marginBottom: `55px` },
       content: [
-        {
-          text: `If you don’t want to form your New York LLC right now, you can reserve the business name with the New York Department of State. You will need to complete an Application for Reservation of Name and file it with the DOS. You do not need to reserve a name if you are forming your business right away.`,
-          button: {
-            text: `New York SOS LLC Name Reservation Form`,
-            theme: `secondary56`,
-            width: `385px`,
-            url: `/https://www.dos.ny.gov/corps/buscorp.html/`,
-          },
-        },
-        `If you’re ready to start your LLC, you can file your Articles of Organization with the New York DOS, or let Incfile take care of it for you for free.`,
+        `If you don’t want to form your New York LLC right now, you can reserve the business name with the New York Department of State. You will need to complete an <a href="https://www.dos.ny.gov/corps/buscorp.html" target="_blank" rel="noopener noreferrer">Application for Reservation of Name</a> and file it with the DOS. You do not need to reserve a name if you are forming your business right away.`,
+        `If you’re ready to start your LLC, you can file your <a href="https://www.businessexpress.ny.gov/app/answers/cms/a_id/2443/kw/domestic%20LLC" target="_blank" rel="noopener noreferrer">Articles of Organization</a> with the New York DOS, or let Incfile take care of it for you for free.`,
       ],
     },
     {

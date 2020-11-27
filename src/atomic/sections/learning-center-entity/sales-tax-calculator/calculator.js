@@ -7,13 +7,12 @@ import Dropdown from "../../../molecules/form/dropdown";
 import ContentCenter from "../../../partials/content-center";
 import TextCenterLayout from "../../../partials/heading-center";
 import TopImageBox from "../../../../components/top-image-box";
-import Button from "../../../molecules/buttons/button";
+import Button from "../../../molecules/buttons/button-action";
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-blue2.inline.svg";
 import { Heading } from "../../../atoms/typography/heading";
 import InputField from "../../../molecules/form/input-field";
 import { Paragraph } from "../../../atoms/typography/paragraph";
-import ArrowLink from "../../../molecules/buttons/text";
 import PlusSVG from "../../../../images/icons/plus.inline.svg";
 import Whitebox from "../../../atoms/boxes/white-box";
 import Circle from "../../../atoms/icons/circle";
@@ -201,135 +200,147 @@ const AbsoluteCircle = styled.div`
 const dropdownOptions = states.state.map((state) => state.name);
 
 const CalculatorSection = ({ content, onSelectState, state, id }) => {
-  const cards = content.cards;
-  const inputRevenue = useRef(0);
-  const [selectedState, setSelectedState] = useState("");
-  const [showResult, setShowResult] = useState(false);
-  const [finalCalculator, setFinalCalculator] = useState(0);
-  const [error, setError] = useState(false);
+    const cards = content.cards;
+    const inputRevenue = useRef(0);
+    const [showResult, setShowResult] = useState(false);
+    const [selectedState, setSelectedState] = useState('');
+    const [finalCalculator, setFinalCalculator] = useState(0);
+    const [error, setError] = useState(false);
+    const [dropDownClasses, setDropDownClasses] = useState(['dropdown', 'dollar__sign', 'hide__dollar-sign']);
 
-  const handleOnChangeState = (option) => {
-    setSelectedState(option.value);
-    onSelectState(option.value);
-  };
+    const handleOnChangeState = (option) => {
+        setSelectedState(option.value);
+        onSelectState(option.value);
+    };
 
-  const calculatorTaxAmount = (e, stateTaxRate) => {
-    e.preventDefault();
-    if(showResult && finalCalculator !== "") {
-      setShowResult(false);
-      setFinalCalculator(0);
-      setSelectedState("");
-      return;
+    const showHideDollarSign = () => {
+        if (inputRevenue.current.value > 0) {
+            setDropDownClasses(['dropdown', 'dollar__sign']);
+        } else {
+            setDropDownClasses(['dropdown', 'dollar__sign', 'hide__dollar-sign']);
+        }
     }
 
-    if (!stateTaxRate) {
-      setShowResult(true);
-      setError("Choose state first");
-      return;
-    }
+    const calculatorTaxAmount = (e, stateTaxRate) => {
+        e.preventDefault();
 
-    if(error) setError(false);
-    let revenue = inputRevenue.current.value;
+        let revenue = inputRevenue?.current?.value;
 
-    if(error && (revenue == null || revenue === 0)) {
-      setError("Fill out your revenue");
-      return;
-    }
-    else {
-      setError(false);
-    }
+        if (showResult && finalCalculator !== "") {
+            setShowResult(false);
+            setFinalCalculator(0);
+            setSelectedState("");
+            return;
+        }
 
-    let taxAmount = (revenue * stateTaxRate) / 100;
+        if (!stateTaxRate) {
+            setError("Choose state first");
+            return;
+        }
+        
+        if (!inputRevenue.current.value) {
+            setError("Fill out your revenue");
+            inputRevenue.current.focus();
+            return;
+        }
+        
+        let taxAmount = (revenue * stateTaxRate) / 100;
+        setError(false);
+        setShowResult(true);
+        setFinalCalculator("$" + formatMoney(taxAmount));
+    };
 
-    setShowResult(true);
-    setFinalCalculator("$" + formatMoney(taxAmount));
-  };
+    const formatMoney = (n, c, d, t) => {
+        var c = isNaN((c = Math.abs(c))) ? 2 : c,
+            d = d == undefined ? "." : d,
+            t = t == undefined ? "," : t,
+            s = n < 0 ? "-" : "",
+            i = String(parseInt((n = Math.abs(Number(n) || 0).toFixed(c)))),
+            j = (j = i.length) > 3 ? j % 3 : 0;
 
-  const formatMoney = (n, c, d, t) => {
-    var c = isNaN((c = Math.abs(c))) ? 2 : c,
-      d = d == undefined ? "." : d,
-      t = t == undefined ? "," : t,
-      s = n < 0 ? "-" : "",
-      i = String(parseInt((n = Math.abs(Number(n) || 0).toFixed(c)))),
-      j = (j = i.length) > 3 ? j % 3 : 0;
+        return (
+            s +
+            (j ? i.substr(0, j) + t : "") +
+            i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) +
+            (c
+                ? d +
+                Math.abs(n - i)
+                    .toFixed(c)
+                    .slice(2)
+                : "")
+        );
+    };
 
     return (
-      s +
-      (j ? i.substr(0, j) + t : "") +
-      i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) +
-      (c
-        ? d +
-          Math.abs(n - i)
-            .toFixed(c)
-            .slice(2)
-        : "")
+        <Calculator id={id}>
+            <Oval height="570" width="570" top="0" left="0">
+                <OvalSVG />
+            </Oval>
+            <ContentCenter>
+                <TextCenterLayout headline={content.header} headlineWidth="700" text={content.text} />
+                {showResult && !error && (
+                    <>
+                        <Whitebox className="calculator-main">
+                            <Boxes>
+                                <BlueBox className="box box--left">
+                                    <AbsoluteCircle imageShadowColor={shadow.green2}>
+                                        <Circle circleColor={color.green3} padding={0} height={80} width={80}>
+                                            <AssetsSVG />
+                                        </Circle>
+                                    </AbsoluteCircle>
+                                    <Heading size={4} bottomMargin={0}>{state.tax_rate}%</Heading>
+                                    <Paragraph mixed>{state.long_name} state tax</Paragraph>
+                                </BlueBox>
+                                <CircleWhite>
+                                    <PlusSVG />
+                                </CircleWhite>
+                                <YellowBox className="box box--right">
+                                    <AbsoluteCircle imageShadowColor={shadow.babyblue2}>
+                                        <Circle circleColor={color.blue3} padding={0} height={80} width={80}>
+                                            <RevenueSVG />
+                                        </Circle>
+                                    </AbsoluteCircle>
+                                    <Heading size={4} bottomMargin={0}>${typeof inputRevenue.current !== "undefined" && (
+                                        formatMoney(inputRevenue.current.value)
+                                    )}</Heading>
+                                    <Paragraph>Your revenue</Paragraph>
+                                </YellowBox>
+                            </Boxes>
+                            <Heading size={5} bottomMargin={24}>Your total tax amount</Heading>
+                            <Heading size={2} bottomMargin={24}>{finalCalculator}</Heading>
+                            <Paragraph>Additional municipality taxes may apply</Paragraph>
+                        </Whitebox>
+
+                        <Paragraph mixed>Visit <Link to={state?.state_site ?? "/"}>{state.long_name} Secretary of State</Link> for more information.</Paragraph>
+                    </>
+                )}
+                {(!showResult || error) && (
+                    <ImageBoxes>
+                        <TopImageBox className="box box--left" image="your-state" color={color.blue3}>
+                            <Heading size={4}>{cards[0]}</Heading>
+                            <Dropdown className="dropdown" placeholder="select" onChange={handleOnChangeState} options={dropdownOptions} />
+                        </TopImageBox>
+                        <TopImageBox className="box box--right" image="forming-a-corporation" color={color.orange3}>
+                            <Heading size={4}>{cards[1]}</Heading>
+                            <InputField
+                                className={dropDownClasses.join(' ')}
+                                placeholder="Enter total revenue from sales"
+                                onChange={showHideDollarSign}
+                                type="number"
+                                inputRef={inputRevenue}
+                            />
+                        </TopImageBox>
+                    </ImageBoxes>
+                )}
+                <Button content={content.button} theme="primary56" margin="0 0 32px 0" arrow onClick={(e) => calculatorTaxAmount(e, state.tax_rate)} />
+                {error && (
+                    <Paragraph big mixed={true} bottomMargin={0}>
+                        {parser(error)}
+                    </Paragraph>
+                )}
+            </ContentCenter>
+        </Calculator>
     );
-  };
-
-  return (
-    <Calculator id={id}>
-      <Oval height="570" width="570" top="0" left="0">
-        <OvalSVG />
-      </Oval>
-      <ContentCenter>
-        <TextCenterLayout headline={content.header} headlineWidth="700" text={content.text} />
-        {showResult && !error && (
-            <>
-              <Whitebox className="calculator-main">
-                <Boxes>
-                  <BlueBox className="box box--left">
-                    <AbsoluteCircle imageShadowColor={shadow.green2}>
-                      <Circle circleColor={color.green3} padding={0} height={80} width={80}>
-                        <AssetsSVG />
-                      </Circle>
-                    </AbsoluteCircle>
-                    <Heading size={4} bottomMargin={0}>{state.tax_rate}%</Heading>
-                    <Paragraph mixed>{state.long_name} state tax</Paragraph>
-                  </BlueBox>
-                  <CircleWhite>
-                    <PlusSVG />
-                  </CircleWhite>
-                  <YellowBox className="box box--right">
-                    <AbsoluteCircle imageShadowColor={shadow.babyblue2}>
-                      <Circle circleColor={color.blue3} padding={0} height={80} width={80}>
-                        <RevenueSVG />
-                      </Circle>
-                    </AbsoluteCircle>
-                    <Heading size={4} bottomMargin={0}>${typeof inputRevenue.current !== "undefined" && (
-                        formatMoney(inputRevenue.current.value)
-                    )}</Heading>
-                    <Paragraph>Your revenue</Paragraph>
-                  </YellowBox>
-                </Boxes>
-                <Heading size={5} bottomMargin={24}>Your total tax amount</Heading>
-                <Heading size={2} bottomMargin={24}>{finalCalculator}</Heading>
-                <Paragraph>Additional municipality taxes may apply</Paragraph>
-              </Whitebox>
-
-              <Paragraph mixed>Visit <Link to={state?.state_site ?? "/"}>{state.long_name} Secretary of State</Link> for more information.</Paragraph>
-            </>
-        )}
-        {(!showResult || error) && (
-            <ImageBoxes>
-              <TopImageBox className="box box--left" image="your-state" color={color.blue3}>
-                <Heading size={4}>{cards[0]}</Heading>
-                <Dropdown className="dropdown" placeholder="select" onChange={handleOnChangeState} options={dropdownOptions} />
-              </TopImageBox>
-              <TopImageBox className="box box--right" image="forming-a-corporation" color={color.orange3}>
-                <Heading size={4}>{cards[1]}</Heading>
-                <InputField className="dropdown" placeholder="Enter total revenue from sales" type="number" inputRef={inputRevenue} />
-              </TopImageBox>
-            </ImageBoxes>
-        )}
-        <Button content={content.button} theme="primary56" margin="0 0 32px 0" arrow onClick={(e) => calculatorTaxAmount(e, state.tax_rate)} />
-        {showResult && error && (
-            <Paragraph big mixed={true} bottomMargin={0}>
-              {parser(error)}
-            </Paragraph>
-        )}
-      </ContentCenter>
-    </Calculator>
-  );
 };
 
 export default CalculatorSection;

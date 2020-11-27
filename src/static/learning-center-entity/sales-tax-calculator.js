@@ -1,13 +1,13 @@
 export const top = {
   header: `Sales Tax Calculator`,
   link: {
-    url: "#sales-calculator",
+    url: "/",
     text: "View sales tax calculator"
   }
 };
 export const about = {
   header:
-  `Quickly calclulate your sales taxes`,
+  `Quickly calculator your sales taxes`,
   text:
   `Need to know what sales tax to charge your customers, or how much state sales tax you should be paying? Our easy-to-use calculator helps you look up the state sales tax rate for your area. Just enter your location below.`,
 };

@@ -23,6 +23,7 @@ import OrderNow from "../../atomic/sections/type-of-business/with-no-money-busin
 import Regulations from "../../atomic/sections/type-of-business/with-no-money-business/regulations";
 import Taxes from "../../atomic/sections/type-of-business/with-no-money-business/taxes";
 import TaxesIntroduce from "../../atomic/sections/type-of-business/with-no-money-business/taxes-introduce";
+import ToolsAndLinks from "../../atomic/sections/type-of-business/with-no-money-business/tools";
 
 const WithNoMoneyBusiness = () => (
     <Layout>
@@ -75,6 +76,8 @@ const WithNoMoneyBusiness = () => (
         <TaxesIntroduce />
 
         <Taxes />
+
+        <ToolsAndLinks />
 
         <Conclusion to="/" buttonTitle="Start your No Money Business with us, today">
             <Heading size={3} style={{fontSize: "48px"}}>

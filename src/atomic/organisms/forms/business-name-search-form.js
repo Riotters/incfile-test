@@ -123,111 +123,111 @@ const BusinessNameSearchForm = ({ className, noMaxWidth, propState, propEntityNa
     setModalVisible(!modalVisible);
   };
 
-  return (
-    <>
-      <form onSubmit={handleSubmit(handleForm)}>
-        <Wrapper className={className} noMaxWidth={noMaxWidth}>
-          {curvePosition === "bottomRight" && (
-            <Curve bottom="-25" right="-29" color={curveColor ?? color.orange1} rotate={curveRotate ?? 0}>
-              <CurveSVG />
-            </Curve>
-          )}
+    return (
+        <>
+            <form onSubmit={handleSubmit(handleForm)}>
+                <Wrapper className={className} noMaxWidth={noMaxWidth}>
+                    {curvePosition === "bottomRight" && (
+                        <Curve bottom="-25" right="-29" color={curveColor ?? color.orange1} rotate={curveRotate ?? 0}>
+                            <CurveSVG />
+                        </Curve>
+                    )}
 
-          {(!curvePosition || curvePosition === "bottomLeft") && (
-            <Curve className="curve-shape" bottom="-25" left="-29" color={curveColor ?? color.orange1}>
-              <CurveSVG />
-            </Curve>
-          )}
+                    {(!curvePosition || curvePosition === "bottomLeft") && (
+                        <Curve className="curve-shape" bottom="-25" left="-29" color={curveColor ?? color.orange1}>
+                            <CurveSVG />
+                        </Curve>
+                    )}
 
-          <Heading size="5" bottomMargin="16">
-            {" "}
+                    <Heading size="5" bottomMargin="16">
+                        {" "}
             Please enter the business name information
           </Heading>
-          <Label htmlFor="entity_name" content={{ label: `Entity Name` }} bottomMargin="24">
-            <Input
-              className={errors.entity_name ? "invalid" : ""}
-              placeholder="Enter your desired company name..."
-              value={propEntityName}
-              name="entity_name"
-              id="entity_name"
-              inputRef={register({
-                required: `Field can't be empty`,
-              })}
-            />
-            {errors.entity_name && <span className="error__info">{errors.entity_name.message}</span>}
-          </Label>
+                    <Label htmlFor="entity_name" content={{ label: `Entity Name` }} bottomMargin="24">
+                        <Input
+                            className={errors.entity_name ? "invalid" : ""}
+                            placeholder="Enter your desired company name..."
+                            value={propEntityName}
+                            name="entity_name"
+                            id="entity_name"
+                            inputRef={register({
+                                required: `Field can't be empty`,
+                            })}
+                        />
+                        {errors.entity_name && <span className="error__info">{errors.entity_name.message}</span>}
+                    </Label>
 
-          <Flex>
-            <Label htmlFor="type" content={{ label: `Entity Type` }} bottomMargin="16" bottomDirection="bottom row">
-              <Radio content="LLC" checked name="entity_type" id="bns-llc" value="LLC" inputRef={register({ required: `Please select Entity Type` })} />
-              <Radio content="Corporation" name="entity_type" id="bns-corp" value="Corporation" inputRef={register({ required: `Please select Entity Type` })} />
-            </Label>
-            <LinkWrapper>
-              <ArrowLink content={{ text: `Not Sure?`, url: `/business-entity-comparison/` }} bottomMargin="0" />
-            </LinkWrapper>
-          </Flex>
-          <Label className={propState ? "hide" : ""} htmlFor="business_name_search_state" content={{ label: `Entity State` }} bottomMargin="32">
-            <Controller
-              control={control}
-              name="business_name_search_state"
-              rules={{ required: `Field can't be empty` }}
-              onFocus={() => stateRef.current?.focus()}
-              render={() => (
-                <Dropdown
-                  inputRef={stateRef}
-                  className={errors.business_name_search_state ? "invalid" : ""}
-                  defaultSelected={businessNameInState}
-                  options={dropdownStates}
-                  onChange={(option) => {
-                    setValue("business_name_search_state", option.value, { shouldValidate: true });
-                  }}
-                  placeholder="Select"
-                />
-              )}
-            />
-            {errors.business_name_search_state && <span className="error__info">{errors.business_name_search_state.message}</span>}
-          </Label>
+                    <Flex>
+                        <Label htmlFor="type" content={{ label: `Entity Type` }} bottomMargin="16" bottomDirection="bottom row">
+                            <Radio content="LLC" checked name="entity_type" id="bns-llc" value="LLC" inputRef={register({ required: `Please select Entity Type` })} />
+                            <Radio content="Corporation" name="entity_type" id="bns-corp" value="Corporation" inputRef={register({ required: `Please select Entity Type` })} />
+                        </Label>
+                        <LinkWrapper>
+                            <ArrowLink content={{ text: `Not Sure?`, url: `/business-entity-comparison/` }} bottomMargin="0" />
+                        </LinkWrapper>
+                    </Flex>
+                    <Label className={propState ? "hide" : ""} htmlFor="business_name_search_state" content={{ label: `Entity State` }} bottomMargin="32">
+                        <Controller
+                            control={control}
+                            name="business_name_search_state"
+                            rules={{ required: `Field can't be empty` }}
+                            onFocus={() => stateRef.current?.focus()}
+                            render={() => (
+                                <Dropdown
+                                    inputRef={stateRef}
+                                    className={errors.business_name_search_state ? "invalid" : ""}
+                                    defaultSelected={businessNameInState}
+                                    options={dropdownStates}
+                                    onChange={(option) => {
+                                        setValue("business_name_search_state", option.value, { shouldValidate: true });
+                                    }}
+                                    placeholder="Select"
+                                />
+                            )}
+                        />
+                        {errors.business_name_search_state && <span className="error__info">{errors.business_name_search_state.message}</span>}
+                    </Label>
 
-          <Heading size="5" bottomMargin="16">
-            {" "}
+                    <Heading size="5" bottomMargin="16">
+                        {" "}
             Let us know where we can let you know if your business name is available
           </Heading>
-          <Grid>
-            <Label htmlFor="first-name" content={{ label: `First Name` }} bottomMargin="32">
-              <Input className={errors.firstname ? "invalid" : ""} name="firstname" id="first-name" inputRef={register({ required: `Field can't be empty` })} />
-              {errors.firstname && <span className="error__info">{errors.firstname.message}</span>}
-            </Label>
-            <Label htmlFor="last-name" content={{ label: `Last Name` }} bottomMargin="32">
-              <Input className={errors.firstname ? "invalid" : ""} name="lastname" id="last-name" inputRef={register({ required: `Field can't be empty` })} />
-              {errors.lastname && <span className="error__info">{errors.lastname.message}</span>}
-            </Label>
-          </Grid>
+                    <Grid>
+                        <Label htmlFor="first-name" content={{ label: `First Name` }} bottomMargin="32">
+                            <Input className={errors.firstname ? "invalid" : ""} name="firstname" id="first-name" inputRef={register({ required: `Field can't be empty` })} />
+                            {errors.firstname && <span className="error__info">{errors.firstname.message}</span>}
+                        </Label>
+                        <Label htmlFor="last-name" content={{ label: `Last Name` }} bottomMargin="32">
+                            <Input className={errors.firstname ? "invalid" : ""} name="lastname" id="last-name" inputRef={register({ required: `Field can't be empty` })} />
+                            {errors.lastname && <span className="error__info">{errors.lastname.message}</span>}
+                        </Label>
+                    </Grid>
 
-          <Label htmlFor="email" content={{ label: `Email` }} bottomMargin="32">
-            <Input
-              className={errors.email ? "invalid" : ""}
-              type="text"
-              name="email"
-              id="email"
-              inputRef={register({
-                required: `Field can't be empty`,
-                validate: (value) => validEmail(value) || `Email is not valid`,
-              })}
-            />
-            {errors.email && <span className="error__info">{errors.email.message}</span>}
-          </Label>
+                    <Label htmlFor="email" content={{ label: `Email` }} bottomMargin="32">
+                        <Input
+                            className={errors.email ? "invalid" : ""}
+                            type="text"
+                            name="email"
+                            id="email"
+                            inputRef={register({
+                                required: `Field can't be empty`,
+                                validate: (value) => validEmail(value) || `Email is not valid`,
+                            })}
+                        />
+                        {errors.email && <span className="error__info">{errors.email.message}</span>}
+                    </Label>
 
-          <Button type="submit" content={{ text: isSubmitting ? `Processing...` : `Check Name Avaliability` }} theme="primary56" marginSM="48px auto 0" />
-        </Wrapper>
-      </form>
+                    <Button type="submit" content={{ text: isSubmitting ? `Processing...` : `Check Name Avaliability` }} theme="primary56" marginSM="48px auto 0" />
+                </Wrapper>
+            </form>
 
-      <LightBoxModal visible={modalVisible} className="modal-overlay">
-        <LightBoxContent style={{ pointerEvents: "all" }} class={modalClases.join(" ")}>
-          <ThankYouContent isBusinesNameSearch={true} modalExit={popup} />
-        </LightBoxContent>
-      </LightBoxModal>
-    </>
-  );
+            <LightBoxModal visible={modalVisible} className="modal-overlay">
+                <LightBoxContent style={{ pointerEvents: "all" }} class={modalClases.join(" ")}>
+                    <ThankYouContent isBusinesNameSearch={true} modalExit={popup} />
+                </LightBoxContent>
+            </LightBoxModal>
+        </>
+    );
 };
 
 export default BusinessNameSearchForm;
@@ -266,7 +266,7 @@ const LightBoxContent = styled.div`
   @media screen and (min-width: 769px) {
     padding-top: 0;
     max-width: 600px;
-    max-height: 80vh;
+    max-height: 90vh;
   }
 
   form {
