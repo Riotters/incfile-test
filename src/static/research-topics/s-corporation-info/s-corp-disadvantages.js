@@ -9,7 +9,7 @@ export const about = {
       url: `/research-topics/s-corporation-info`,
     },
   ],
-  header: `What are the Advantages of an S Corporation?`,
+  header: `What are the Disadvantages of an S Corporation?`,
   text: `More extensive record keeping requirements.`,
   text2: `Corporations typically require more ongoing paperwork than most other business entities in order to stay compliant with the law and maintain their corporate status. This includes holding and documenting annual meetings of shareholders and directors and keeping minutes of important corporate meetings.`,
   list: {

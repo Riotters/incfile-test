@@ -287,7 +287,7 @@ const Bakery = () => (
 
       <Container>
         <CenterBox>
-          <TextCenterLayout headlineWidth={770} headline="Your Bakery Needs a Business Plan" />
+          <TextCenterLayout headlineWidth={770} headline="Validating Your Bakery Business Idea" />
           <Paragraph big>These areas are just starting points — there are many different types of bakery businesses. Once you’ve identified the type of bakery you’d like to run and what you want to sell, you need to validate your business idea.</Paragraph>
           <Paragraph big>Start by checking you have the right skillset. Bakers work long hours and need sufficient technical skill to make great products. You’ll need to deal with employees and customers too, and there’s a lot of planning that goes into running a successful bakery.</Paragraph>
           <Paragraph big>
