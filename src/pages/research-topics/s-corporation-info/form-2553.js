@@ -16,7 +16,7 @@ import Rocket from "../../../atomic/sections/review-entity-types/c-corporation/r
 import Searchbar from "../../../atomic/molecules/form/help-center-searchbar";
 //Texts
 import { top, rocket, categories, service, tools } from "../../../static/learning-center-entity/help-center-article";
-import { about, related } from "../../../static/research-topics/c-corporation-info/form-2553";
+import { about, related } from "../../../static/research-topics/s-corporation-info/form-2553";
 
 const HelpCenter = () => (
   <Layout>

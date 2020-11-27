@@ -48,7 +48,7 @@ export const about = {
   text6: `The biggest difference, and the advantage of being taxed as an S Corporation, is that you won’t pay self-employment or payroll tax on the distributions. This saves you a total of 15.3 percent on what you pay out as a distribution.`,
   button3: {
     text: `S Corp Tax Savings Calculator`,
-    url: `/learning-center-entity/s-corp-tax-calculator`,
+    url: `/s-corporation-tax-calculator/`,
   },
   header6: `Why You Can’t Just Pay Yourself Through S Corporation Distributions`,
   text7: `Since you don’t pay payroll or self-employment tax on profit distributions, you might ask why you don’t just take all the money out as a distribution. The IRS is aware that business owners may try to do this and have rules in place to prevent it. If you breach these rules, you will need to pay penalties, extra taxes and interest.`,

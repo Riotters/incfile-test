@@ -1,10 +1,10 @@
-import React from "react"
-import styled from "styled-components"
-import Container from "../../container"
-import Button from "../../button"
-import MapSVG from "../../../images/map.inline.svg"
-import OvalSVG from "../../../images/oval-yellow-2.inline.svg"
-import VisibilitySensor from "../../VisibilitySensor"
+import React from "react";
+import styled from "styled-components";
+import Container from "../../container";
+import Button from "../../button";
+import MapSVG from "../../../images/map.inline.svg";
+import OvalSVG from "../../../images/oval-yellow-2.inline.svg";
+import VisibilitySensor from "../../VisibilitySensor";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -14,7 +14,7 @@ const Wrapper = styled.div`
   @media (min-width: 769px) {
     padding: 175px 0;
   }
-`
+`;
 
 const Oval = styled.div`
   max-height: 412px;
@@ -46,7 +46,7 @@ const Oval = styled.div`
     -o-transform: scale(-1,1);
     -webkit-transform: scale(-1,1);
     transform: scale(-1,1);
-`
+`;
 
 const Content = styled.div`
   display: flex;
@@ -65,7 +65,7 @@ const Content = styled.div`
     line-height: 1;
     margin-bottom: 32px;
   }
-`
+`;
 
 const Map = styled.div`
   width: 100%;
@@ -89,7 +89,7 @@ const Map = styled.div`
     right: 0;
     bottom: 0;
   }
-`
+`;
 
 const Cta = () => (
   <Wrapper>
@@ -102,28 +102,14 @@ const Cta = () => (
           <MapSVG />
         </Map>
         <VisibilitySensor partialVisibility once>
-          {({ isVisible }) => (
-            <h2 className={isVisible ? "slideUp enter" : "slideUp"}>
-              Choose the right and&nbsp;start your business
-            </h2>
-          )}
+          {({ isVisible }) => <h2 className={isVisible ? "slideUp enter" : "slideUp"}>Choose the right and&nbsp;start your business</h2>}
+        </VisibilitySensor>
+        <VisibilitySensor partialVisibility once>
+          {({ isVisible }) => <p className={isVisible ? "slideUp enter" : "slideUp"}>$0 + State Fee & FREE Registered Agent for 1st year.</p>}
         </VisibilitySensor>
         <VisibilitySensor partialVisibility once>
           {({ isVisible }) => (
-            <p className={isVisible ? "slideUp enter" : "slideUp"}>
-              $0 + State Fee & FREE Registered Agent for 1st year.
-            </p>
-          )}
-        </VisibilitySensor>
-        <VisibilitySensor partialVisibility once>
-          {({ isVisible }) => (
-            <Button
-              className={isVisible ? "slideUp enter" : "slideUp"}
-              theme="full"
-              arrow="yes"
-              padding="16px 47px"
-              margin="0 auto"
-            >
+            <Button className={isVisible ? "slideUp enter" : "slideUp"} theme="full" arrow="yes" padding="16px 47px" margin="0 auto" to={`${process.env.ORDER_URL}/form-order-now.php`}>
               Start Now
             </Button>
           )}
@@ -131,6 +117,6 @@ const Cta = () => (
       </Content>
     </Container>
   </Wrapper>
-)
+);
 
-export default Cta
+export default Cta;
