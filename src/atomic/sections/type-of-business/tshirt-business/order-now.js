@@ -50,7 +50,7 @@ const OrderNow = ({layout, columns}) => (
                 <OvalSvg/>
             </Oval2>
 
-            <TabScrollable/>
+            <TabScrollable />
 
         </TabScrollableWrapper>
     </>

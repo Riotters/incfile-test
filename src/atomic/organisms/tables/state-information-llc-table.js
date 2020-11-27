@@ -10,6 +10,10 @@ const Wrapper = styled.div`
   max-width: 970px;
   position: relative;
   margin-bottom: 56px;
+  
+  @media (max-width: 575px) {
+    min-width: ${props => props.minWidthSM ?? 100}%;
+  }
 
   .table-header,
   .table-row {
@@ -125,8 +129,8 @@ const Wrapper = styled.div`
   }
 `;
 
-const TaxReturnTable = ({ className, content }) => (
-  <Wrapper className={className}>
+const TaxReturnTable = ({ className, content, minWidthSM }) => (
+  <Wrapper className={className} minWidthSM={minWidthSM}>
     <GridTableRow className="table-header" content={content.headers} header />
     {content.rows.map((row) => (
       <GridTableRow className="table-row" content={row} />

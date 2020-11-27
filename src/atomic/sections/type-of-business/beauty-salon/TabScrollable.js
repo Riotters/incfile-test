@@ -81,7 +81,7 @@ const TabScrollable = ({ layout, columns }) => {
   const [isActive, setActive] = useState(0);
 
   const handleClick = (index, elementId) => {
-    setActive(index);
+    // setActive(index);
     let element = document.getElementById(elementId);
 
     if (null !== element) {
@@ -98,7 +98,7 @@ const TabScrollable = ({ layout, columns }) => {
               <Sticky layout={layout} columns={columns}>
                 {ButtonList.map((item, index) => {
                   return (
-                    <Tab key={index} onClick={() => handleClick(index, item.tabId)} className={`accordian-tab${isActive === index ? " active" : ""}`}>
+                    <Tab key={item.tabId} onClick={() => handleClick(index, item.tabId)} className={`accordian-tab`}>
                       <Icon>
                         <item.icon />
                       </Icon>
@@ -127,7 +127,7 @@ const TabScrollable = ({ layout, columns }) => {
             <VisibilitySensor partialVisibility minTopValue={0}>
               {({ isVisible }) => {
                 if (isVisible) {
-                  handleClick(0);
+                  // handleClick(0);
                 }
                 return (
                   <div id={ButtonList[0].tabId}>
@@ -159,7 +159,7 @@ const TabScrollable = ({ layout, columns }) => {
             <VisibilitySensor partialVisibility minTopValue={0}>
               {({ isVisible }) => {
                 if (isVisible) {
-                  handleClick(1);
+                  // handleClick(1);
                 }
                 return (
                   <div id={ButtonList[1].tabId}>
@@ -194,7 +194,7 @@ const TabScrollable = ({ layout, columns }) => {
             <VisibilitySensor partialVisibility minTopValue={0}>
               {({ isVisible }) => {
                 if (isVisible) {
-                  handleClick(2);
+                  // handleClick(2);
                 }
                 return (
                   <div id={ButtonList[2].tabId}>
@@ -232,7 +232,7 @@ const TabScrollable = ({ layout, columns }) => {
             <VisibilitySensor partialVisibility minTopValue={0}>
               {({ isVisible }) => {
                 if (isVisible) {
-                  handleClick(3);
+                  // handleClick(3);
                 }
                 return (
                   <div id={ButtonList[3].tabId}>
@@ -266,10 +266,10 @@ const TabScrollable = ({ layout, columns }) => {
             <VisibilitySensor partialVisibility minTopValue={0}>
               {({ isVisible }) => {
                 if (isVisible) {
-                  handleClick(4);
+                  // handleClick(4);
                 }
                 return (
-                  <div id={ButtonList[5].tabId}>
+                  <div id={ButtonList[4].tabId}>
                     <TextBlockWithImage
                       SvgImage={AgentIcon}
                       textBackgroundColor="transparent"
@@ -306,7 +306,7 @@ const TabScrollable = ({ layout, columns }) => {
             <VisibilitySensor partialVisibility minTopValue={0}>
               {({ isVisible }) => {
                 if (isVisible) {
-                  handleClick(5);
+                  // handleClick(5);
                 }
                 return (
                   <div id={ButtonList[5].tabId}>
@@ -344,7 +344,7 @@ const TabScrollable = ({ layout, columns }) => {
             <VisibilitySensor partialVisibility minTopValue={0}>
               {({ isVisible }) => {
                 if (isVisible) {
-                  handleClick(6);
+                  // handleClick(6);
                 }
                 return (
                   <div id={ButtonList[6].tabId}>
@@ -382,7 +382,7 @@ const TabScrollable = ({ layout, columns }) => {
             <VisibilitySensor partialVisibility minTopValue={0}>
               {({ isVisible }) => {
                 if (isVisible) {
-                  handleClick(7);
+                  // handleClick(7);
                 }
                 return (
                   <div id={ButtonList[7].tabId}>

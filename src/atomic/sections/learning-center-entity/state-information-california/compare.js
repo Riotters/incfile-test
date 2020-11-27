@@ -10,13 +10,20 @@ const Compare = styled.section`
   padding-bottom: 64px;
 `;
 
+const ResponsiveWrapper = styled.div`
+    width: 100%;
+    overflow-x: auto;
+`;
+
 const icons = ["state-filling-times-3050", "starting-a-home-business-3959", "corporation-state-information-3850", "ongoing-filling-requirement-2930", "business-plan-tips-3859", "small-business-workshops-2049", "state-filling-fees", "s-corp-tax-calculator-9404", "entity-comparison-chart-2959"];
 
 const CompareSection = ({ className, content }) => (
   <Compare className={className}>
     <HeadingCenter headline={content.header} headlineWidth="550" text={content.text} bottomMargin="80" />
     <ContentCenter>
-      <Table content={content.table} />
+      <ResponsiveWrapper>
+          <Table content={content.table} minWidthSM={150} />
+      </ResponsiveWrapper>
     </ContentCenter>
   </Compare>
 );

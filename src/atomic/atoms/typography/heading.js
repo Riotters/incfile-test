@@ -7,6 +7,10 @@ const HeadingWrapper = styled.div`
   margin-bottom: ${(props) => (props.bottomMargin ? `${props.bottomMargin}px` : "")};
   padding-bottom: ${(props) => (props.bottomPadding ? `${props.bottomPadding}px` : "")};
   max-width: ${(props) => (props.maxWidth ? `${props.maxWidth}px` : "")};
+  
+  @media (max-width: 575px) {
+    word-break: break-word;
+  }
 `;
 
 export const Heading = ({ size, children, bottomMargin, topMargin, bottomPadding, maxWidth, className, style }) => (

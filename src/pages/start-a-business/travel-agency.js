@@ -1,7 +1,6 @@
 import React from "react";
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
-import Top from "../../components/partials/sections/top";
 import Button from "../../atomic/molecules/buttons/button";
 import RatingRow from "../../atomic/atoms/boxes/rating-row";
 import CartBlock from "../../atomic/molecules/blocks/cart-block";
@@ -40,6 +39,7 @@ import { toolsList } from "../../static/type-of-business/travel-agency";
 import Taxes from "../../atomic/sections/type-of-business/travel-agency/taxes";
 import OvalSvg from "../../images/ovals/bottom-left-transparent-blue3.inline.svg";
 import OvalSvg2 from "../../images/ovals/bottom-left-transparent-orange.inline.svg";
+import Top from "../../atomic/partials/top";
 
 const TravelAgency = () => (
   <Layout>

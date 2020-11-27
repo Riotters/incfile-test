@@ -3,7 +3,7 @@ import styled from "styled-components";
 import InfoCardsSection from "../../../partials/info-cards-section";
 import {InfoCards} from "../../../../static/type-of-business/handyman";
 import {gradient} from "../../../atoms/styles/colors";
-import TextCenterLayout from "../../../../components/partials/blocks/heading-center";
+import TextCenterLayout from "../../../partials/heading-center";
 
 const InsuranceBusiness = () => (
     <Wrapper>

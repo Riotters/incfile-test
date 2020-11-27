@@ -38,54 +38,70 @@ const ButtonList = [
     title: "Local Business License",
     icon: BusinessLicensesColoredIcon,
     tabId: "local-business",
+    selected: false,
   },
   {
     title: "State Business License",
     icon: StateBusinessColoredIcon,
     tabId: "state-business",
+    selected: false,
   },
   {
     title: "Federal Business License",
     icon: FederalBusinessColoredIcon,
     tabId: "federal-business",
+    selected: false,
   },
   {
     title: "Business Insurance",
     icon: BusinessInsuranceColoredIcon,
     tabId: "business-insurance",
+    selected: false,
   },
   {
     title: "Registered Agent",
     icon: AgentColoredIcon,
     tabId: "registered-agent",
+    selected: false,
   },
   {
     title: "Business Taxes",
     icon: TaxesColoredIcon,
     tabId: "taxes",
+    selected: false,
   },
   {
     title: "Maintaining Your Business",
     icon: MaintainingColoredIcon,
     tabId: "maintaining",
+    selected: false,
   },
   {
     title: "Finances",
     icon: CalcColoredIcon,
     tabId: "finance",
+    selected: false,
   },
 ];
 
 const TabScrollable = ({ layout, columns }) => {
-  const [isActive, setActive] = useState(0);
+  const [isActive, setActive] = useState(ButtonList[0].tabId);
 
   const handleClick = (index, elementId) => {
-    setActive(index);
-    let element = document.getElementById(elementId);
+    // setActive(elementId ?? ButtonList[index].tabId);
 
+    let element = document.getElementById(elementId);
     if (null !== element) {
+
       element.scrollIntoView({ behavior: "smooth", block: "start" });
     }
+  };
+
+  const getClassName = (item) => {
+    // if(item.tabId === isActive) return "accordion-tab active";
+    // else {
+      return "accordion-tab";
+    // }
   };
 
   return (
@@ -94,10 +110,10 @@ const TabScrollable = ({ layout, columns }) => {
         <Wrapper layout={layout}>
           <TabsWrapper className="slideUp enter" layout={layout}>
             <StickyContainer>
-              <Sticky layout={layout} columns={columns}>
+              <Sticky layout={layout} columns={columns} id="tab-scrollable">
                 {ButtonList.map((item, index) => {
                   return (
-                    <Tab key={index} onClick={() => handleClick(index, item.tabId)} className={`accordian-tab${isActive === index ? " active" : ""}`}>
+                    <Tab key={item.tabId} onClick={() => handleClick(index, item.tabId)} id={`tab-selector-${item.tabId}`} className={getClassName(item)}>
                       <Icon>
                         <item.icon />
                       </Icon>
@@ -117,13 +133,13 @@ const TabScrollable = ({ layout, columns }) => {
           <PanelWrapper>
             <Heading size={3}>Rules, Regulations and Laws for Your T-Shirt Business</Heading>
             <Paragraph big mixed={true}>
-              Of course, along with running a business there are certain rules, regulations and legalities you need to be aware of. <Link to="/business-license-research-package/">We can also help with researching your business licensing needs.</Link> 
+              Of course, along with running a business there are certain rules, regulations and legalities you need to be aware of. <Link to="/business-license-research-package/">We can also help with researching your business licensing needs.</Link>
             </Paragraph>
 
             <VisibilitySensor partialVisibility minTopValue={0}>
               {({ isVisible }) => {
                 if (isVisible) {
-                  handleClick(0);
+                  // handleClick(0);
                 }
                 return (
                   <div id={ButtonList[0].tabId}>
@@ -155,7 +171,7 @@ const TabScrollable = ({ layout, columns }) => {
             <VisibilitySensor partialVisibility minTopValue={0}>
               {({ isVisible }) => {
                 if (isVisible) {
-                  handleClick(1);
+                  // handleClick(1);
                 }
                 return (
                   <div id={ButtonList[1].tabId}>
@@ -190,7 +206,7 @@ const TabScrollable = ({ layout, columns }) => {
             <VisibilitySensor partialVisibility minTopValue={0}>
               {({ isVisible }) => {
                 if (isVisible) {
-                  handleClick(2);
+                  // handleClick(2);
                 }
                 return (
                   <div id={ButtonList[2].tabId}>
@@ -222,7 +238,7 @@ const TabScrollable = ({ layout, columns }) => {
             <VisibilitySensor partialVisibility minTopValue={0}>
               {({ isVisible }) => {
                 if (isVisible) {
-                  handleClick(3);
+                  // handleClick(3);
                 }
                 return (
                   <div id={ButtonList[3].tabId}>
@@ -256,7 +272,7 @@ const TabScrollable = ({ layout, columns }) => {
             <VisibilitySensor partialVisibility minTopValue={0}>
               {({ isVisible }) => {
                 if (isVisible) {
-                  handleClick(4);
+                  // handleClick(4);
                 }
                 return (
                   <div id={ButtonList[4].tabId}>
@@ -296,7 +312,7 @@ const TabScrollable = ({ layout, columns }) => {
             <VisibilitySensor partialVisibility minTopValue={0}>
               {({ isVisible }) => {
                 if (isVisible) {
-                  handleClick(5);
+                  // handleClick(5);
                 }
                 return (
                   <div id={ButtonList[5].tabId}>
@@ -334,7 +350,7 @@ const TabScrollable = ({ layout, columns }) => {
             <VisibilitySensor partialVisibility minTopValue={0}>
               {({ isVisible }) => {
                 if (isVisible) {
-                  handleClick(6);
+                  // handleClick(6);
                 }
                 return (
                   <div id={ButtonList[6].tabId}>
@@ -359,7 +375,7 @@ const TabScrollable = ({ layout, columns }) => {
                       <Paragraph big>There are certain forms and legalities you need to follow to keep your T-shirt business in good standing.</Paragraph>
 
                       <Accordion tab content={MaintainingAccordionContent} />
-                      
+
                     </TextBlockWithImage>
                   </div>
                 );
@@ -369,7 +385,7 @@ const TabScrollable = ({ layout, columns }) => {
             <VisibilitySensor partialVisibility minTopValue={0}>
               {({ isVisible }) => {
                 if (isVisible) {
-                  handleClick(7);
+                  // handleClick(7);
                 }
                 return (
                   <div id={ButtonList[7].tabId}>
