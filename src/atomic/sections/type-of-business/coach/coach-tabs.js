@@ -311,12 +311,10 @@ const CoachTabs = ({ layout, columns }) => (
                   <PanelWrapper className={isVisible ? "slideUp enter panel1" : "slideUp panel1"} layout={layout}>
                     <Heading size={3}>Starting a Coaching Business</Heading>
                     <Paragraph big>
-                      Many of us are seeking out independent advice on how we can improve our lives or our businesses. If you can provide practical advice and guidance to help people change their perspective or their business practices, you could have the makings of a great coach. Whether you decide
-                      to go into life coaching or executive and business coaching, there are plenty of excellent opportunities in this growing industry.
+                    If you can provide practical advice and guidance to help people change their perspective or their business practices, you could have the makings of a great coach. Whether you decide to go into life coaching or executive and business coaching, there are plenty of excellent opportunities in this growing industry.
                     </Paragraph>
                     <Paragraph big style={{ marginBottom: "50px" }}>
-                      The value of life and business coaches is supported by the statistics. If you know what makes people or organizations tick, you could turn that into pragmatic steps and help people reach their potential. It’s important to set up your life or business coaching company in the
-                      right way.
+                        The value of life and business coaches is supported by the statistics. If you know what makes people or organizations tick, you could turn that into pragmatic steps and help people reach their potential. It’s important to set up your life or business coaching company in the right way.
                     </Paragraph>
 
                     <Colorbox className="box" theme="icon" Icon={MegafonIcon} color={color.green3} curve curveColor={color.green1}>
@@ -396,11 +394,11 @@ const CoachTabs = ({ layout, columns }) => (
                     <Heading size={2} style={{ fontSize: "24px", textAlign: "left" }}>
                       Why You Should Start a New Life Coaching Business
                     </Heading>
+                    <Paragraph big>
+                        Life coaching is about helping people deal with what’s going on in their lives and assisting them in creating a better present and future. It involves a mix of psychology, counseling, interpersonal skills and understanding how you can help a client realize their potential.
+                    </Paragraph>
                     <Paragraph big style={{ marginBottom: "76px" }}>
-                      Life coaching is about helping people deal with what’s going on in their lives and assisting them in creating a better present and future. It involves a mix of psychology, counseling, interpersonal skills and understanding how you can help a client realize their potential.
-                      <br />
-                      <br />
-                      Here are some statistics on the power of life coaching businesses:
+                        Here are some statistics on the power of life coaching businesses:
                     </Paragraph>
 
                     <BlueBoxWithAbsoluteText absoluteText="$10B" text="Generated annual revenue in the U.S., Self-improvement as a whole is a very successful sector." />
@@ -409,10 +407,6 @@ const CoachTabs = ({ layout, columns }) => (
 
                     <div style={{ marginBottom: "30px" }}>
                       <Adventages headline="The main areas that life coaches help with are personal improvement, family and relationships and weight loss and fitness." width="100%" />
-                    </div>
-
-                    <div style={{ marginBottom: "30px" }}>
-                      <Adventages headline="More than two million people stay at an Airbnb on any given day" width="100%" />
                     </div>
 
                     <div style={{ marginBottom: "30px" }}>
@@ -586,10 +580,6 @@ const CoachTabs = ({ layout, columns }) => (
                     </Heading>
 
                     <div style={{ marginBottom: "30px" }}>
-                      <Adventages headline="Properties that match the listings provided by the host" width="100%" />
-                    </div>
-
-                    <div style={{ marginBottom: "30px" }}>
                       <Adventages headline="Dealing with particular issues in their past that are stopping them moving forward" width="100%" />
                     </div>
 
@@ -606,7 +596,7 @@ const CoachTabs = ({ layout, columns }) => (
                     </div>
 
                     <div style={{ marginBottom: "30px" }}>
-                      <Adventages headline="Reassuring them about how you’ve helped previous clients" width="100%" />
+                      <Adventages headline="Practical help for what they specifically need assistance with (family relationships, nutrition, lifestyle or other areas)" width="100%" />
                     </div>
 
                     <Heading size={2} style={{ fontSize: "24px", textAlign: "left" }}>

@@ -1330,18 +1330,18 @@ export const businessTaxes = [
   },
   {
     type: `header`,
-    content: `Federal Self-Employment and Income Taxes for Your Washington LLC`,
+    content: `Federal Self-Employment Tax`,
     size: 3,
     marginBottom: 24,
   },
   {
     type: `text`,
-    content: `All Washington LLC business members or managers who take profits out of the LLC will need to pay self-employment tax. This tax is also known as FICA, Social Security or Medicare tax. It applies to all the earnings you withdraw from your Washington DC business. The current self-employment tax rate is 15.3 percent.`,
+    content: `All LLC business members or managers who take profits out of the LLC will need to pay self-employment tax. This tax is also known as FICA, Social Security or Medicare tax. It applies to all the earnings you withdraw from your Washington business. The current self-employment tax rate is 15.3 percent.`,
     marginBottom: 16,
   },
   {
     type: `text`,
-    content: `You will be able to deduct your business expenses from your income when determining how much self-employment tax you owe. Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
+    content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe. Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
     marginBottom: 16,
   },
   {

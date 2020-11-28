@@ -29,14 +29,9 @@ export const howToGuide = [
     marginBottom: 16,
   },
   {
-    type: `text`,
-    content: `Briefly, the benefits of starting a Kansas LLC include:`,
-    marginBottom: 16,
-  },
-  {
     type: `list-dot`,
     content: {
-      header: ``,
+      header: `Briefly, the benefits of starting a Kansas LLC include:`,
       list: [`Separating and limiting your personal liability from your business liability and debts`, `Quick and simple filing, management, compliance, regulation and administration of your Kansas LLC`, `Easy tax filing and potential advantages for your tax treatment`],
     },
     marginBottom: 48,
@@ -76,7 +71,7 @@ export const howToGuide = [
         },
         {
           question: `STEP 3: Provide an Official Address for Your KS LLC`,
-          answer: `Every Kansas LLC must have a designated street address. That could be your home address (if you’re running the company from your residence), your company’s office building or any physical address of your preference. The address must be inside the state of Kansas, but it cannot be a P.O. Box.`,
+          answer: `Every Kansas LLC must have a designated street address. That could be your home address (if you’re running the company from your residence), your company’s office building or any physical address of your preference. The address must be inside the state of Kansas, but it cannot be a P.O. Box. You can also use a Virtual Mailbox service if you do not have a physical address.`,
         },
         {
           question: `STEP 4: Assign a Kansas Registered Agent`,
@@ -91,7 +86,7 @@ export const howToGuide = [
           answer: `You will need an EIN to identify your business with the IRS. You use this number when filing and paying taxes or when submitting payroll information and payments for your employees. You can obtain one directly from the IRS, or we can get one for you as part of the Kansas LLC business formation process.`,
         },
         {
-          question: `STEP 6: File Articles of Organization with the kansas Division of Corporations`,
+          question: `STEP 6: File Articles of Organization With the Kansas Secretary of State`,
           answer: `<p> Once you've gathered all the information for your LLC, you’ll need to file a formal document with the KS Secretary of State. This document is known as your “Articles of Organization,” and filing the document creates your Kansas LLC. Here’s what is typically included:</p></br>
                    <ul>
                    <li> Your business name and address </li>
@@ -112,13 +107,18 @@ export const howToGuide = [
     marginBottom: 16,
   },
   {
+    type: `text`,
+    content: `The KS Secretary of State has plenty of information on forming and running a business in Kansas. Check out additional resources below.`,
+    marginBottom: 24,
+  },
+  {
     type: `list-dot`,
     content: {
-      header: `The KS Secretary of State has plenty of information on forming and running a business in Kansas. Check out additional resources below.<br>These are all the basic steps for forming an LLC in Kansas. You’ll find other useful information below.`,
+      header: `These are all the basic steps for forming an LLC in Kansas. You’ll find other useful information below.`,
       list: [
         `<a href="https://sos.ks.gov/messages/page404.html" target="_blank" rel="noopener noreferrer">Kansas Secretary of State for forming and running your KS LLC</a>`,
         `<a href="https://www.dol.ks.gov" target="_blank" rel="noopener noreferrer">Kansas Department of Labor for KS employers and hiring</a>`,
-        `<a href="https://www.ksrevenue.org/business.html" target="_blank" rel="noopener noreferrer">Kansas Department of Revenue for KS taxes/a>`,
+        `<a href="https://www.ksrevenue.org/business.html" target="_blank" rel="noopener noreferrer">Kansas Department of Revenue for KS taxes</a>`,
       ],
     },
     marginBottom: 32,
@@ -159,7 +159,7 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `In Kansas certain professions can form “Professional LLCs.” These are companies providing defined, professional services. Kansas does not state the specific professions that can form professional LLCs`,
+    content: `In Kansas certain professions can form “Professional LLCs.” These are companies providing defined, professional services. Kansas does not state the specific professions that can form professional LLCs.`,
     marginBottom: 32,
   },
   {
@@ -188,7 +188,7 @@ export const howToGuide = [
   {
     type: `header`,
     content: `Detailed Information for Your Kansas LLC`,
-    size: 4,
+    size: 3,
     marginBottom: 16,
   },
   {

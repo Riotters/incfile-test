@@ -349,12 +349,6 @@ const BoutiqueClothingTabs = ({ layout, columns }) => (
 
                       <ListBox>
                         <CkeckText>
-                          <Paragraph big>Groups, forums and support for life or business coaching entrepreneurs</Paragraph>
-                        </CkeckText>
-                      </ListBox>
-
-                      <ListBox>
-                        <CkeckText>
                           <Paragraph big>Ideas for the type of boutique clothing business that you could form</Paragraph>
                         </CkeckText>
                       </ListBox>
@@ -362,12 +356,6 @@ const BoutiqueClothingTabs = ({ layout, columns }) => (
                       <ListBox>
                         <CkeckText>
                           <Paragraph big>Helpful software for boutique clothing business owners</Paragraph>
-                        </CkeckText>
-                      </ListBox>
-
-                      <ListBox>
-                        <CkeckText>
-                          <Paragraph big>Business plans for coaching companies</Paragraph>
                         </CkeckText>
                       </ListBox>
 
@@ -395,7 +383,7 @@ const BoutiqueClothingTabs = ({ layout, columns }) => (
                     </Paragraph>
 
                     <BlueBoxWithAbsoluteText absoluteText="$20B" text="Clothing boutiques earn over $20 billion in the U.S. every year" />
-                    <BlueBoxWithAbsoluteText absoluteText="150K" text="There are over 150,000 boutique clothing businesses in the U.S., employing over 500,000 people" />
+                    <BlueBoxWithAbsoluteText absoluteText="150K" text="There are over 150,000 boutique clothing businesses in the U.S., employing over 250.000 people" />
                     <BlueBoxWithAbsoluteText absoluteText="$700K" text="Worldwide revenue for online clothing is expected to rise to over $700 billion by 2022" />
 
                     <CircleWithText style={{ marginBottom: "48px" }} textInsideCircle="9" textLine="Expected revenue growth of Online boutique a year in the U.S." withBg={true} SvgChart={CircleIcon} symbol="%" />

@@ -396,7 +396,9 @@ const BarNightclub = () => (
           </Paragraph>
         </CenterBox>
         <CenterBox>
-          <Heading>Write a Business Plan for Your Bar or Club Business</Heading>
+          <Heading size={3} style={{ fontSize: "40px" }}>
+              Write a Business Plan for Your Bar or Club Business
+          </Heading>
 
           <Paragraph big>Finally, you should put your business plan together. Business plans do vary slightly, but they should cover the following areas:</Paragraph>
 

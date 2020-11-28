@@ -251,7 +251,7 @@ const EventPlanning = () => (
             <div style={{ marginBottom: "10px" }}>
               <TextBoxed>
                 <Paragraph big bottomMargin={0}>
-                  The following skills will be very useful in your role as a party or event planning small business owner.
+                    Expert project management skills since you’ll be managing multiple tasks, deadlines, people and third parties for an extended time
                 </Paragraph>
               </TextBoxed>
             </div>

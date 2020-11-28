@@ -33,10 +33,9 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox image="organization-change-02" color={color.green3}>
-          <h4>Process</h4>
+          <h4>Processes</h4>
           <p>
-            If you’re running a gym, the location will be vital. You’ll need somewhere that’s easily accessible, with enough space for all the equipment you’ll need and classes you want to run. These types of spaces can be hard to find, so engage a commercial real estate agent who can provide
-            options for renting and leasing space. Remember to take into account specialized needs like flooring for classes, reinforced areas for weights and multiple power points for fitness equipment.
+            What business processes are you going to use to run your business efficiently and effectively? You will need to get good financial, client management and work management processes in place. How will you track projects and increase productivity? How will you work with others from afar — what chat client will you use? Does it have a mobile app too?
           </p>
         </TopImageBox>
 

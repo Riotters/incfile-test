@@ -93,19 +93,16 @@ export const howToGuide = [
         },
         {
           question: `STEP 6: File Articles of Organization With the Colorado Secretary of State`,
-          answer: `<p>Once you've gathered all the information for your Colorado LLC, you’ll need to file a formal document with the CO Secretary of State. This document is known as your “Articles of Organization,” and filing the document creates your Colorado LLC. Here’s what is typically included:</p></br>
-          <ul>
-            <li>Your business name and address</li>
-            <li>Details of your Registered Agent</li>
-            <li>Names of managers or members of the LLC at the time of filing</li>
-            <li>Addresses of managers or members of the LLC at the time of filing</li>
-            <li>Name of the incorporator</li>
-            <ul></br>
-            <p>You can file your Colorado LLC Articles of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Colorado. You only need to file your Articles of Organization once. </p></br>`,
-          button: {
-            text: `Form your LLC now`,
-            url: `/`,
-          },
+          answer: `<p>Once you've gathered all the information for your Colorado LLC, you’ll need to file a formal document with the CO Secretary of State. This document is known as your “Articles of Organization,” and filing the document creates your Colorado LLC. Here’s what is typically included:</p>
+            <ul>
+                <li>Your business name and address</li>
+                <li>Details of your Registered Agent</li>
+                <li>Names of managers or members of the LLC at the time of filing</li>
+                <li>Addresses of managers or members of the LLC at the time of filing</li>
+                <li>Name of the incorporator</li>
+            </ul><br>
+            <p>You can file your Colorado LLC Articles of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Colorado. You only need to file your Articles of Organization once.</p></br>
+            <p><a href="/" target="_blank">Form your LLC now</a></p>`,
         },
       ],
     },
@@ -162,16 +159,12 @@ export const howToGuide = [
               <li>Professional Counselors</li>
               <li>Psychologists</li>
               <li>Social Workers</li>
-              <li>Veterinarians</li></br></br>
-            <p><b>Form a Foreign LLC in Colorado</b></p>
-            <p>If your business is already operating in another state and expanding to Colorado, you’ll need to form a foreign LLC.</p></br>
-            <p>More information on Colorado
-              <a href="/colorado-llc/form-filling-permit-requirements/">filing and licensing requirements here.</a></p>`,
+              <li>Veterinarians</li>`,
         },
         {
-          question: `Form a Foreign LLC in California`,
-          answer: `<p>If your business is already operating in another state and expanding to California, you’ll need to form a foreign LLC.</p></br>
-            <p>More information on California filing and licensing requirements here <link ‘to state page once created></p>`,
+          question: `Form a Foreign LLC in Colorado`,
+          answer: `<p>If your business is already operating in another state and expanding to Colorado, you’ll need to form a foreign LLC.</p></br>
+          <p>More information on Colorado <a href="/colorado-llc/form-filling-permit-requirements/">filing and licensing requirements here.</a></p>`,
         },
       ],
     },

@@ -133,61 +133,44 @@ export const howToGuide = [
     marginBottom: 32,
   },
   {
-    type: `header`,
-    content: `Form a Professional Minnesota LLC`,
-    size: 3,
-    marginBottom: 32,
-  },
-  {
-    type: `text`,
-    content: `Some states, including Minnesota, allow certain occupations to form “Professional LLCs.” These types of businesses typically have special requirements and licensing.`,
-    marginBottom: 24,
-  },
-  {
-    type: `list-dot`,
+    type: `accordion`,
+    marginBottom: 48,
     content: {
-      header: `Here are the areas and occupations that the MN Secretary of State allows to form Minnesota professional LLCs:`,
-      list: [
-        `Medicine and surgery`,
-        `Physician Assistant`,
-        `Registered Nurse`,
-        `Chiropractor`,
-        `Optometrist`,
-        `Psychologist`,
-        `Podiatrist`,
-        `Social Worker`,
-        `Marriage and Family Therapist`,
-        `Professional Counsellor`,
-        `Dentist`,
-        `Pharmacist`,
-        `Veterinarian`,
-        `Architect`,
-        `Engineer`,
-        `Surveyor`,
-        `Landscape Architect`,
-        `Geo scientist`,
-        `Interior Designer`,
+      items: [
+        {
+          question: `Form a Professional Minnesota LLC`,
+          answer: `<p>Some states, including Minnesota, allow certain occupations to form “Professional LLCs.” These types of businesses typically have special requirements and licensing.</p></br>
+            <p>Here are the areas and occupations that the MN Secretary of State allows to form Minnesota professional LLCs:</p>
+            <ul>
+            <li>Medicine and surgery</li>
+            <li>Physician Assistant</li>
+            <li>Registered Nurse</li>
+            <li>Chiropractor</li>
+            <li>Optometrist</li>
+            <li>Psychologist</li>
+            <li>Podiatrist</li>
+            <li>Social Worker</li>
+            <li>Marriage and Family Therapist</li>
+            <li>Professional Counsellor</li>
+            <li>Dentist</li>
+            <li>Pharmacist</li>
+            <li>Veterinarian</li>
+            <li>Architect</li>
+            <li>Engineer</li>
+            <li>Surveyor</li>
+            <li>Landscape Architect</li>
+            <li>Geo scientist</li>
+            <li>Interior Designer</li>
+            </ul></br>
+          <p>This is governed under the Professional Firms Act in Minnesota and there are certain requirements you will need to meet to form a professional LLC.</p></br>`,
+        },
+        {
+          question: `Form a Foreign LLC in Minnesota`,
+          answer: `<p>If your business is already operating in another state and expanding to Minnesota, you’ll need to form a foreign LLC.</p></br>
+          <a href="/minnesota-llc/form-filling-permit-requirements/">More information on Minnesota filing and licensing requirements here.</a>`,
+        },
       ],
     },
-    marginBottom: 24,
-    color: color.purple3,
-  },
-  {
-    type: `text`,
-    content: `This is governed under the Professional Firms Act in Minnesota and there are certain requirements you will need to meet to form a professional LLC.`,
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `Form a Foreign LLC in Minnesota`,
-    size: 3,
-    marginBottom: 32,
-  },
-  {
-    type: `text`,
-    content: `<p>If your business is already operating in another state and expanding to Minnesota, you’ll need to form a foreign LLC.</p></br>
-              <p><a href="/minnesota-llc/form-filling-permit-requirements/">More information on Minnesota filing and licensing requirements here.</a></p>`,
-    marginBottom: 32,
   },
   {
     type: `header`,

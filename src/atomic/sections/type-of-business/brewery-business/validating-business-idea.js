@@ -112,10 +112,6 @@ const ValidatingBusinessIdea = () => (
           </AbsoluteCurve>
           <Heading size={3}>Validating Your Brewery Business Idea</Heading>
           <Paragraph big>These areas are just starting points — there are many different types of brewery businesses. Once you’ve identified the areas you’d like to go into, you need to validate your brewery business idea.</Paragraph>
-          <Paragraph big>
-            The thing to learn here is that it’s okay to say “no” to your first, second or third brewery business ideas. Very few entrepreneurs get it right first time. In fact, getting it wrong is often a badge of honor! Still, you don’t want to waste too much time, energy or money on the wrong
-            initiatives, so ask and answer these questions honestly to find the right way forward.
-          </Paragraph>
         </TitleBox>
 
         <GridSectionList>
@@ -140,6 +136,9 @@ const ValidatingBusinessIdea = () => (
             </Paragraph>
           </TextBlockWithImage>
         </GridSectionList>
+        <Paragraph big style={{ justifyContent: "center", width: "100%", maxWidth: "720px", margin: "auto auto 124px auto" }} >
+            The thing to learn here is that it’s okay to say “no” to your first, second or third brewery business ideas. Very few entrepreneurs get it right first time. In fact, getting it wrong is often a badge of honor! Still, you don’t want to waste too much time, energy or money on the wrong initiatives, so ask and answer these questions honestly to find the right way forward.
+        </Paragraph>
       </GridSection>
     </Container>
 

@@ -100,9 +100,7 @@ const ValidatingBusinessIdea = () => (
                             Identify your planning business’ unique selling points (USPs)
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
-                            Decide on the main benefits of your business and how you’re going to communicate them.
-                            Whether that’s because of your niche, experience, skills or services, you will need to set
-                            yourself apart from competitors to attract the right event planning clients.
+                            Decide on the main benefits of your business and how you’re going to communicate them. Whether that’s because of your niche, experience, skills or services, you will need to set yourself apart from competitors to attract the right event planning clients.
                         </Paragraph>
                     </TextBlockWithImage>
 
@@ -112,9 +110,7 @@ const ValidatingBusinessIdea = () => (
                             Look at who your competitors are in the space
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
-                            Decide on the main benefits of your business and how you’re going to communicate them.
-                            Whether that’s because of your niche, experience, skills or services, you will need to set
-                            yourself apart from competitors to attract the right event planning clients.
+                            Having competitors is a good thing as it shows there’s a market, but it’s still vital to find your own space. Look into who the other event and party planners are and the type of clients they have. Try to identify some gaps in the marketplace.
                         </Paragraph>
                     </TextBlockWithImage>
 
