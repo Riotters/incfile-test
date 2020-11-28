@@ -28,7 +28,7 @@ const CoachBusiness = () => (
 
     <Top ovalColor="darkblue" imageName="coach-2" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
       <h1>How to Become a Life or Business Coach</h1>
-      <p>If you can provide practical advice and guidance to help people change their perspective, you could have the makings of a great coach.</p>
+      <p>Many of us are seeking out independent advice on how we can improve our lives or our businesses.</p>
       <ButtonsBox>
         <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{ url: `${process.env.ORDER_URL}/form-order-now.php`, text: "Start Now" }} />
       </ButtonsBox>

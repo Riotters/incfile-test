@@ -32,7 +32,7 @@ const SettingBusiness = () => (
 
         <TopImageBox image="display-ads" color={color.purple3}>
           <h4>Marketing Your Coaching Business</h4>
-          <p>The right software and processes will make running your Airbnb business much easier. See our list of the best apps and software at the end of this guide.</p>
+          <p>Marketing will be a huge part of your coaching business. Naturally, you will need an awesome website, but you'll also need to get branding, newsletters, digital ads, social media accounts and other channels in place.</p>
         </TopImageBox>
 
         <TopImageBox image="software" color={color.blue3}>

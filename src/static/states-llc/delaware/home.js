@@ -19,8 +19,9 @@ export const howToGuide = [
     marginBottom: 40,
   },
   {
-    type: "text",
-    content: '<iframe width="720" height="350" src="https://www.youtube.com/embed/imnAJolDWoU?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>',
+    type: "video",
+    image: 'forming-an-llc-in-delaware-2361',
+    id: `imnAJolDWoU`,
     marginBottom: 40,
   },
   {
@@ -87,10 +88,10 @@ export const howToGuide = [
           question: `STEP 2: Search for and Choose a Unique Business Name for Your Delaware LLC`,
           answer: `<p>You will need a distinctive and original name for your Delaware LLC that’s not used by any other business in DE. This means searching the business registry of the Delaware Division of Corporations. Fortunately, we’ve made that easy with our business search tool. Just enter your proposed business name and we’ll look it up on the registry and let you know if it’s already in use by an LLC or corporation.</p></br>
                    <p>Alternatively, you can visit the Delaware Division of Corporations website and carry out a search. There are a few rules you’ll need to follow when choosing an LLC name. You can find out more in our guide to searching for and naming your Delaware LLC.</p></br>
-                   <a href="/delaware-llc/delaware-business-names/"> Learn about Delaware LLC business naming rules. </a>`,
+                   <a href="/delaware-llc/how-to-name-your-llc/"> Learn about Delaware LLC business naming rules. </a>`,
         },
         {
-          question: `STEP 3: STEP 3: Provide an Official Address for your DE LLC`,
+          question: `STEP 3: Provide an Official Address for your DE LLC`,
           answer: `Every Delaware LLC must have a designated street address. That could be your home address (if you’re running the company from your residence), your company’s office building or any physical address of your preference. The address can be outside the state of Delaware and can be a P.O. Box.`,
         },
         {
@@ -152,42 +153,21 @@ export const howToGuide = [
     marginBottom: 32,
   },
   {
-    type: `header`,
-    content: `Form a Delaware Series LLC`,
-    size: 3,
-    marginBottom: 32,
-  },
-  {
-    type: `text`,
-    content: `In Delaware, you also have the option to set up a “Series LLC” — these are specialized LLCs designed to allow you to manage multiple separate LLCs under one master, umbrella LLC. These can be very useful if you don’t want to set up a separate Delaware LLC for every individual business you run.`,
-    marginBottom: 32,
-  },
-  {
-    type: `arrow-link`,
+    type: `accordion`,
     content: {
-      text: `Decide if a Delaware Series LLC is right for your new business.`,
-      url: `/blog/post/series-llc-why-need-one/`,
+      items: [
+        {
+          question: `Form a Delaware Series LLC`,
+          answer: `<p>In Delaware, you also have the option to set up a “Series LLC” — these are specialized LLCs designed to allow you to manage multiple separate LLCs under one master, umbrella LLC. These can be very useful if you don’t want to set up a separate Delaware LLC for every individual business you run.</p></br>
+          <a href="/blog/post/series-llc-why-need-one/">Decide if a Delaware Series LLC is right for your new business.</a>`,
+        },
+        {
+          question: `Form a Foreign LLC in Delaware`,
+          answer: `<p>If your business is already operating in another state and expanding to Delaware, you’ll need to form a foreign LLC.</p></br>
+                   <a href="/delaware-llc/fees-filing-requirements/">Find more information on Delaware filing and licensing requirements here</a>`,
+        },
+      ],
     },
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `Form a Foreign LLC in Delaware`,
-    size: 3,
-    marginBottom: 32,
-  },
-  {
-    type: `text`,
-    content: `If your business is already operating in another state and expanding to Delaware, you’ll need to form a foreign LLC.`,
-    marginBottom: 24,
-  },
-  {
-    type: `arrow-link`,
-    content: {
-      text: `Find more information on Delaware filing and licensing requirements here`,
-      url: `/delaware-llc/fees-filing-requirements/`,
-    },
-    marginBottom: 32,
   },
   {
     type: `header`,
@@ -204,7 +184,7 @@ export const howToGuide = [
     type: `arrow-link`,
     content: {
       text: `Naming Your Delware LLC`,
-      url: `/delware-llc/how-to-name-your-llc/`,
+      url: `/delaware-llc/how-to-name-your-llc/`,
     },
     marginBottom: 16,
   },
@@ -801,7 +781,7 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `In some situations, you might want to know the name of the Registered Agent that represents another Delaware LLC. If you do, you can search the <a href"https://icis.corp.delaware.gov/ecorp/entitysearch/namesearch.aspx" target="_blank" rel="noopener noreferrer">  business database </a>of the Delaware Division of Corporations, as this will often provide details of a specific business’s Registered Agent.`,
+    content: `In some situations, you might want to know the name of the Registered Agent that represents another Delaware LLC. If you do, you can search the <a href="https://icis.corp.delaware.gov/ecorp/entitysearch/namesearch.aspx" target="_blank" rel="noopener noreferrer">  business database </a>of the Delaware Division of Corporations, as this will often provide details of a specific business’s Registered Agent.`,
     marginBottom: 16,
   },
   {
@@ -901,7 +881,7 @@ export const registeredAgent = [
       list: [
         `<a href="/research-topics/registered-agent/registered-agent-function/">The Main Functions of a Delaware Registered Agentt</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Delaware Registered Agent</a>`,
-        `<a href-"/research-topics/registered-agent/registered-agent-tasks/">What a Delaware Registered Agent Does</a>`,
+        `<a href="/research-topics/registered-agent/registered-agent-tasks/">What a Delaware Registered Agent Does</a>`,
       ],
     },
     marginBottom: 48,
@@ -1262,7 +1242,7 @@ export const feesAndRequirments = [
                   <li>Governing organizations in your industry</li>
                   <li>Federal, state and local regulations</li>
                   </ul></br>
-                  That’s why our <a href-"/business-license-research-package/">business license research package</a> is so useful. It explores all of these areas for you and provides a comprehensive overview of exactly what your Delaware LLC needs to be compliant.`,
+                  That’s why our <a href="/business-license-research-package/">business license research package</a> is so useful. It explores all of these areas for you and provides a comprehensive overview of exactly what your Delaware LLC needs to be compliant.`,
         },
       ],
     },
@@ -1283,7 +1263,7 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `If you want help with your taxes, Incfile provides a complete <a href"/business-accounting/"> Business Tax Filing service</a>.`,
+    content: `If you want help with your taxes, Incfile provides a complete <a href="/business-accounting/"> Business Tax Filing service</a>.`,
     marginBottom: 32,
   },
   {

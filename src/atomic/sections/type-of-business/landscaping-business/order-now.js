@@ -35,7 +35,7 @@ const OrderNow = ({layout, columns}) => (
                     <p>A Clear and Comprehensive Guide to Starting Your Business the Right Way</p>
                     <ButtonsBox>
                         <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{
-                            url: "/learning-center-entity/business-checklist/",
+                            url: "/start-a-business/",
                             text: "Business Checklist"
                         }}/>
                     </ButtonsBox>

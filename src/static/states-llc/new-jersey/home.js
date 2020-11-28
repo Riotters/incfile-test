@@ -34,9 +34,10 @@ export const howToGuide = [
     marginBottom: 16,
   },
   {
-    type: "text", //video
-    content: '<iframe width="720" height="350" src="https://www.youtube.com/watch?v=0sh4OgPJ3kE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>',
-    marginBottom: 24,
+    type: "video",
+    image: 'forming-an-llc-in-new-jersey-8266',
+    id: `0sh4OgPJ3kE`,
+    marginBottom: 40,
   },
   {
     type: `list-dot`,

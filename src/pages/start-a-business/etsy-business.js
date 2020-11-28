@@ -62,7 +62,7 @@ const EtsyBusiness = () => (
 
     <Top ovalColor="yellow" imageName="etsy-bussines" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
       <h1>How to Start an Etsy Business</h1>
-      <p>Etsy has opened up the world of creativity and ecommerce to a whole new generation of entrepreneurs.</p>
+      <p>Etsy has opened up the world of creativity and ecommerce to a whole new generation of entrepreneurs. They make it easy for artisans and crafters to create innovative, curious, beautiful products and share them with the world.</p>
       <ButtonsBox>
         <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{ url: `${process.env.ORDER_URL}/form-order-now.php`, text: "Start Now" }} />
       </ButtonsBox>
@@ -103,8 +103,7 @@ const EtsyBusiness = () => (
               Etsy Business formation guide
             </Heading>
             <Paragraph big>
-              From validating your business and doing the research to filing your paperwork and running your business, this guide will help you out. Read on for some insight into creating your own life or business coaching company and becoming an entrepreneur who helps people make the best of
-              themselves. In this guide we will cover:
+            In this guide we’ll explore everything you need to do to set up your Etsy business and maximize your chances for success. We’ll cover:
             </Paragraph>
 
             <ListWrapper>
@@ -228,18 +227,18 @@ const EtsyBusiness = () => (
               />
             </div>
 
-            <div style={{ marginBottom: "10px" }}>
-              <Adventages
-                headline="Presentation"
-                text="Finding the right niche to grow your business in is essential. Your niche will largely be dictated by your own crafting skills, with the most popular categories being jewelry, stickers, clothing, craft supplies, bridal goods and baby shower decorations."
-                width="100%"
-              />
-            </div>
-
             <div style={{ marginBottom: "48px" }}>
               <Adventages
                 headline="Niche"
                 text="Showcase your products in the best possible way. This means using expert photography, good lighting, great backgrounds and the right categories and keywords. Search is one of the main ways customers find items on Etsy, so ensure your descriptions are keyword rich."
+                width="100%"
+              />
+            </div>
+
+            <div style={{ marginBottom: "10px" }}>
+              <Adventages
+                headline="Presentation"
+                text="Finding the right niche to grow your business in is essential. Your niche will largely be dictated by your own crafting skills, with the most popular categories being jewelry, stickers, clothing, craft supplies, bridal goods and baby shower decorations."
                 width="100%"
               />
             </div>
@@ -517,8 +516,8 @@ const EtsyBusiness = () => (
             width={100}
             widthUnit="%"
           >
-            <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-              Series LLC
+<Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
+              <Link to={process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"}>Series LLC</Link>
             </Paragraph>
 
             <Paragraph big>This is a special type of LLC entity that's only available in certain states. It allows you to create "mini" LLCs, each with their own limited liability and separate assets, under the umbrella of a master LLC.</Paragraph>

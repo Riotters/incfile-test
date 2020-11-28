@@ -1280,6 +1280,7 @@ export const businessTaxes = [
     content: {
       text: `Get details on the Missouri state tax here.`,
       url: `https://dor.mo.gov/personal/`,
+      externalLink: true,
     },
     bottomMargin: 48,
   },
@@ -1314,7 +1315,8 @@ export const businessTaxes = [
     type: `arrow-link`,
     content: {
       text: `Get details on the Missouri sales tax here.`,
-      url: `https://mytax.mo.gov/rptp/portal/home/fileandpaybusinesstaxesonline/!ut/p/z1/jc9LC4JAEADg39LBqzM-Eum2dFAsEhEfzSWUbDXUldX8_S0WdClpLvPgm4EBghyoL-aGF1Mj-qJV_Zmci2mgafh7DDGNbIxUOsWBg3iwIVsA_giGQP_srwBaP58BLcRyce_5aAZeEpvIQpbYKQtUZb_Byo0AiLeifL3L-tJyOZCsbpWspP6QalxP0zDuNNTwKqTeCZ2LWcNvvBbjBPlHwdAlOd637XxkmycYuLyS/dz/d5/L2dBISEvZ0FBIS9nQSEh/`,
+      url: `https://dor.mo.gov/personal/`,
+      externalLink: true,
     },
     bottomMargin: 32,
   },

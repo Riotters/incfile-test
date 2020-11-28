@@ -22,11 +22,6 @@ const TypeOfBusiness = () => (
                 <TextCenterLayout headlineWidth={770} textWidth={770}
                                   headline="What Type of Construction Business Should You Start?"
                                   text="There are several different types of construction business that you can start. Here are some of the more popular options."/>
-
-                <Paragraph big>
-                    There are dozens of other niches including using reclaimed materials, industrial construction,
-                    commercial construction, constructing vacation rentals and much more.
-                </Paragraph>
             </ContentCenter>
 
             <Container>
@@ -47,7 +42,11 @@ const TypeOfBusiness = () => (
                         />
                     ))}
                 </AdventagesBox>
+                <Paragraph big style={{ justifyContent: "center", width: "100%", maxWidth: "770px", margin: "auto" }}>
+                    There are dozens of other niches including using reclaimed materials, industrial construction, commercial construction, constructing vacation rentals and much more.
+                </Paragraph>
             </Container>
+
         </Service>
 
     </Wrapper>

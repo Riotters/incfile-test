@@ -437,7 +437,7 @@ const BeautySalon = () => (
               <Link to={process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"}>Limited Liability Company or LLC</Link>
             </Paragraph>
 
-            <Paragraph big>The most common type of business entity. An LLC is fast, simple and inexpensive to setup and maintain. It protects your personal finances and assets and is a great way to start your real estate</Paragraph>
+            <Paragraph big>The most common type of business entity. An LLC is fast, simple and inexpensive to setup and maintain. It protects your personal finances and assets and is a great way to start your real estate.</Paragraph>
           </TextBlockWithImage>
 
           <TextBlockWithImage
@@ -454,8 +454,8 @@ const BeautySalon = () => (
             width={100}
             widthUnit="%"
           >
-            <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-              Series LLC
+<Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
+              <Link to={process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"}>Series LLC</Link>
             </Paragraph>
 
             <Paragraph big>This is a special type of LLC entity that's only available in certain states. It allows you to create "mini" LLCs, each with their own limited liability and separate assets, under the umbrella of a master LLC.</Paragraph>
@@ -504,15 +504,16 @@ const BeautySalon = () => (
           </TextBlockWithImage>
 
           <Paragraph big style={{ paddingTop: "48px", paddingBottom: 0 }} mixed={true}>
-            If you've still got questions about different types of business entities, check out our
-            <Link to="/business-entity-comparison/">in-depth guide</Link>, or hear our answers to the{" "}
+            For more information on the advantages and disadvantages of different types of businesses,{" "}
+            <Link to="/business-entity-comparison/">please see our in-depth guide on business entities.</Link> If you still have questions,{" "}
             <a href="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/" target="_blank" rel="noopener noreferrer">
-              most common questions
-            </a>{" "}
-            about LLCs vs. corporations.
+                we’ve answered them to help you choose the right business structure.
+            </a>
           </Paragraph>
           <Paragraph big style={{ paddingTop: "48px", paddingBottom: 0 }} mixed={true}>
-            If you're ready to start your Etsy LLC, you can check out our <Link to="/form-an-llc/">LLC formation guide for your state</Link>, or have Incfile take care of all the paperwork for you.
+            In most cases our recommendation would be to create an LLC. We have{" "}
+            <Link to="/form-an-llc/">a complete guide to everything you need to do</Link> and we can set one up for your beauty salon business.{" "}
+            <Link to="/llc-state-information/">LLC formation does vary from state to state,</Link> but we’ve got you covered, wherever you are.
           </Paragraph>
 
           <Button theme="primary48" width="365px" arrow content={{ url: `${process.env.ORDER_URL}/form-order-now.php`, text: `Start your business with us, today!` }} />

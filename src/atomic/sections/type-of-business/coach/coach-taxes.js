@@ -26,10 +26,9 @@ const CoachTaxes = () => (
 
     <Container>
       <TextWrapper>
-        <Paragraph big>
+        <Paragraph mixed big>
           <Curve color={color.babyblue1} style={{ position: "absolute", left: "-29px", top: "-25px", transform: "rotate(-90deg)" }} />
-          Taxes are a fact of life if you’re in business, and there are various ways you will need to file and pay them. This can include self-employment tax, state income tax and federal income tax. Depending on where and how you’re selling products and services, you may also be liable for sales
-          and use tax.
+          Taxes are a fact of life if you’re in business, and there are various ways you will need to file and pay them. This can include self-employment tax, state income tax and federal income tax. Depending on where and how you’re selling products and services, you may also be liable for sales and use tax.
         </Paragraph>
         <Paragraph big mixed>
           As a rule of thumb, we recommend holding back around a third of your earnings to pay your taxes. We can also <Link to="/business-accounting/">prepare and file your tax returns for you.</Link>

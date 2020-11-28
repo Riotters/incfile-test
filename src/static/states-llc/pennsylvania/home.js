@@ -1323,7 +1323,7 @@ export const businessTaxes = [
     type: `arrow-link`,
     content: {
       text: `Get more details on the Pennsylvania state tax here.`,
-      url: `https://www.revenue.pa.gov/Pages/PageNotFoundError.aspx?requestUrl=https://www.revenue.pa.gov/GeneralTaxInformation/Current%20Tax%20Rates/Pages/Personal%20Income%20Tax%20Rates.aspx`,
+      url: `https://www.revenue.pa.gov/GeneralTaxInformation/Tax%20Types%20and%20Information/SUT/Pages/default.aspx`,
     },
     bottomMargin: 48,
   },
@@ -1504,7 +1504,7 @@ export const businessTaxes = [
                 {
                   styles: { marginTop: `24px` },
                   text: `Get more requirements from the Pennsylvania Department of Labor website.`,
-                  url: `https://www.dli.pa.gov/Businesses/Pages/Services-and-Information-for-Employers.aspx`,
+                  url: `https://www.dli.pa.gov/Businesses/Pages/Employer-Services.aspx`,
                 },
               ],
             },

@@ -396,7 +396,9 @@ const BarNightclub = () => (
           </Paragraph>
         </CenterBox>
         <CenterBox>
-          <Heading>Write a Business Plan for Your Bar or Club Business</Heading>
+          <Heading size={3} style={{ fontSize: "40px" }}>
+              Write a Business Plan for Your Bar or Club Business
+          </Heading>
 
           <Paragraph big>Finally, you should put your business plan together. Business plans do vary slightly, but they should cover the following areas:</Paragraph>
 
@@ -530,7 +532,7 @@ const BarNightclub = () => (
             widthUnit="%"
           >
             <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-              Series LLC
+              <Link to={process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"}>Series LLC</Link>
             </Paragraph>
 
             <Paragraph big>This is a special type of LLC entity that's only available in certain states. It allows you to create "mini" LLCs, each with their own limited liability and separate assets, under the umbrella of a master LLC.</Paragraph>
@@ -550,8 +552,8 @@ const BarNightclub = () => (
             width={100}
             widthUnit="%"
           >
-            <Paragraph big flex flexAlign={true} style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-              S Corporation
+            <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
+              <Link to={process.env.ORDER_URL + "/form-order-now.php?entityType=S-Corporation"}>S Corporation</Link>
             </Paragraph>
 
             <Paragraph big>This is a more complex type of business and isn't generally recommended for smaller organization.</Paragraph>
@@ -571,9 +573,10 @@ const BarNightclub = () => (
             width={100}
             widthUnit="%"
           >
-            <Paragraph big flex flexAlign={true} style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-              C Corporation
+            <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
+              <Link to={process.env.ORDER_URL + "/form-order-now.php?entityType=C-Corporation"}>C Corporation</Link>
             </Paragraph>
+
 
             <Paragraph big>These are the largest and most complex types of businesses and are far more than the average entrepreneur or business owner will need.</Paragraph>
           </TextBlockWithImage>

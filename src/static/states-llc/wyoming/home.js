@@ -1026,7 +1026,7 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `An Operating Agreement is extremely useful for several reasons (<a href="research-topics/llc-info/the-llc-operating-agreement/">learn about them here</a>). If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Wyoming business. You can choose to make changes to the template based on your unique requirements. `,
+    content: `An Operating Agreement is extremely useful for several reasons (<a href="/research-topics/llc-info/llc-operating-agreement/">learn about them here</a>). If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Wyoming business. You can choose to make changes to the template based on your unique requirements. `,
     marginBottom: 48,
   },
   {
@@ -1244,13 +1244,13 @@ export const businessTaxes = [
   },
   {
     type: `header`,
-    content: `Wyoming Sales Tax and State Taxes`,
+    content: `Wyoming Taxes Payable to the WY Department of Revenue`,
     size: 3,
     marginBottom: 24,
   },
   {
     type: `text`,
-    content: `There are two main types of tax that you will pay to the Wyoming Department of Revenue: Wyoming state income tax and Wyoming state sales tax.`,
+    content: `There is one main type of tax that certain businesses will pay to the Wyoming Department of Revenue: Wyoming state sales tax.`,
     marginBottom: 48,
   },
   {
@@ -1261,27 +1261,12 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `As an Wyoming business owner, you will need to pay WY state tax on any money you pay to yourself. These earnings flow through to your personal tax return, which is where you will pay Wyoming income tax. You will be taxed at the standard rates for Wyoming state taxes, and you will also get to apply regular allowances and deductions.`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `Any salaried employees will also need to pay personal Wyoming state taxes.`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `The Wyoming state tax rates run between 2.59 percent and 4.54 percent, depending on income. `,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `Get details on the <a href="https://azdor.gov/" target="_blank" rel="noopener noreferrer">Wyoming state tax online here</a>.`,
+    content: `Wyoming does not have a state income tax on earnings, so there is no Wyoming state tax to pay.`,
     marginBottom: 48,
   },
   {
     type: `header`,
-    content: `Wyoming Transaction Privilege Tax (TPT)/Sales Tax Rates on LLC Sales`,
+    content: `Wyoming Sales Taxes on LLC Sales`,
     size: 3,
     marginBottom: 24,
   },
@@ -1313,7 +1298,18 @@ export const businessTaxes = [
   },
   {
     type: `header`,
-    content: `Federal Taxes for Your Wyoming LLC: Self-Employment and Income Taxes`,
+    content: `Wyoming Sales Tax Rates`,
+    size: 3,
+    marginBottom: 24,
+  },
+  {
+    type: `text`,
+    content: `Sales tax rates do vary between states, counties and cities. Typically, the state will set a base sales tax rate, then specific counties and cities may levy small additional sales tax amounts on top of that.`,
+    marginBottom: 48,
+  },
+  {
+    type: `header`,
+    content: `Federal Self-Employment and Income Taxes for Your Wyoming LLC`,
     size: 3,
     marginBottom: 24,
   },
@@ -1482,7 +1478,7 @@ export const businessTaxes = [
         },
         {
           question: `Does Wyoming Have a State Tax?`,
-          answer: `Yes. Wyoming does have a general state income tax. You can find more information above.`,
+          answer: `No. Wyoming does not have a general state income tax. `,
         },
         {
           question: `Do I Need to Pay Estimated Taxes?`,

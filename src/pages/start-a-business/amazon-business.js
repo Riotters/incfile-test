@@ -221,9 +221,7 @@ const AmazonBusiness = () => (
               <Adventages headline="Rewiews" text="Reviews are the lifeblood of ranking your products on the marketplace. Good reviews are essential for getting your products seen and creating trust with other buyers." width="100%" />
             </div>
 
-            <Button to="/" theme="primary56" marginMD="0 170px 0 0" arrow>
-              Download our Guide to Starting an Amazon Business
-            </Button>
+            <Button theme="primary56" marginMD="0 170px 0 0"  arrow content={{ url: `${process.env.ORDER_URL}/form-order-now.php`, text: `Download our Guide to Starting an Amazon Business` }} />
           </PanelWrapper>
 
           <PanelWrapper>
@@ -423,7 +421,7 @@ const AmazonBusiness = () => (
             </Paragraph>
 
             <Paragraph big mixed={true}>
-              Check out our <span className="big blue">additional guidance in understanding if an Amazon business is the right choice for you.</span> If this blog post, we'll help you analyze if your Amazon business idea is a good one, conduct market research and build a business plan.
+              Check out our <a href="/blog/post/fulfillment-by-amazon/">additional guidance in understanding if an Amazon business is the right choice for you.</a> If this blog post, we'll help you analyze if your Amazon business idea is a good one, conduct market research and build a business plan.
             </Paragraph>
           </PanelWrapper>
         </CollapseWrapper>
@@ -449,7 +447,7 @@ const AmazonBusiness = () => (
     </ToolsWrapper>
 
     <div style={{ marginTop: "200px" }}>
-      <Conclusion to="/" buttonTitle="Why delay? Start your Amazon Business with us, today">
+      <Conclusion to={process.env.ORDER_URL + "/form-order-now.php"} buttonTitle="Why delay? Start your Amazon Business with us, today">
         <Heading size={3} style={{ fontSize: "40px" }}>
           Conclusion
         </Heading>

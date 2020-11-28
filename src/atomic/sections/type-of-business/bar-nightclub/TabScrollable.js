@@ -125,7 +125,7 @@ const TabScrollable = ({ layout, columns }) => {
                         </Paragraph>
                         <Paragraph bottomMargin={0} mixed>
                           You can find all the information you need on statewide licenses and permits on the website for your Secretary of State. You can find all those details in our <Link to="/llc-state-information/">state-by-state guides to company formation</Link>. Alternatively, the Small
-                          Business Administration website has a list of licenses and permits by state.
+                          Business Administration website has a <a href="https://www.sba.gov/business-guide/launch-your-business/apply-licenses-permits" target="_blank" rel="noopener noreferrer">list of licenses and permits by state.</a>
                         </Paragraph>
                       </div>
                     </CountingTextBoxed>
@@ -220,39 +220,17 @@ const TabScrollable = ({ layout, columns }) => {
 
                     <CountingTextBoxed number={1}>
                       <div>
-                        <Paragraph
-                          big
-                          style={{
-                            fontFamily: "Avenir",
-                            fontWeight: "900",
-                            color: color.black,
-                            marginBottom: 0,
-                          }}
-                        >
-                          Workers compensation insurance
-                        </Paragraph>
+                      <Paragraph style={{ fontWeight: "bold", marginBottom: 0 }}>Workers compensation insurance</Paragraph>
                         <Paragraph bottomMargin={0} mixed>
-                          <Link to="/blog/post/forming-an-llc-with-employees-means-purchasing-workers-compensation/">This insurance</Link> provides coverage for job-related illnesses, disabilities or injuries that affect employees. Regulations for this insurance vary from state to state. It
-                          typically covers areas like medical costs, loss of earnings, compensation and retraining.
+                          <Link to="/blog/post/forming-an-llc-with-employees-means-purchasing-workers-compensation/">This insurance</Link> provides coverage for job-related illnesses, disabilities or injuries that affect employees. Regulations for this insurance vary from state to state. It typically covers areas like medical costs, loss of earnings, compensation and retraining.
                         </Paragraph>
                       </div>
                     </CountingTextBoxed>
                     <CountingTextBoxed number={2}>
                       <div>
-                        <Paragraph
-                          big
-                          style={{
-                            fontFamily: "Avenir",
-                            fontWeight: "900",
-                            color: color.black,
-                            marginBottom: 0,
-                          }}
-                        >
-                          General liability insurance
-                        </Paragraph>
+                        <Paragraph style={{ fontWeight: "bold", marginBottom: 0 }}>General liability insurance</Paragraph>
                         <Paragraph bottomMargin={0}>
-                          This insurance protects your business from claims due to being sued and other legalities. This may include injury to members of the public, property damage, personal liabilities, legal defense and more. It can help protect your business from financial penalties and
-                          bankruptcy; this will be vital as you will be serving patrons on your premises.
+                          This insurance protects your business from claims due to being sued and other legalities. This may include injury to members of the public, property damage, personal liabilities, legal defense and more. It can help protect your business from financial penalties and bankruptcy; this will be vital as you will be serving patrons on your premises.
                         </Paragraph>
                       </div>
                     </CountingTextBoxed>
@@ -281,7 +259,7 @@ const TabScrollable = ({ layout, columns }) => {
                     </Paragraph>
 
                     <Paragraph big mixed={true}>
-                      When you <Link to={`${process.env.ORDER_URL}/form-order-now.php`}>incorporate through us</Link>, we provide a complete Registered Agent service free for the first year.
+                      When you <Link to={`${process.env.ORDER_URL}/form-order-now.php`}>incorporate through us</Link>, we provide a <Link to="/manage-your-company/registered-agent/">complete Registered Agent service free</Link> for the first year.
                     </Paragraph>
 
                     <Paragraph big mixed={true} style={{ fontFamily: "Avenir", fontWeight: "900", color: color.black }}>

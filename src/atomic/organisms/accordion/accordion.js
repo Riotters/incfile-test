@@ -126,6 +126,20 @@ const PanelWrapper = styled.div`
     font-size: 16px;
     line-height: 24px;
     text-decoration: none;
+
+    &.button {
+        color: ${color.white};
+        background-color: ${color.orange1};
+        border: 2px solid ${color.orange1};
+        border-radius: 50px;
+        padding: 10px 38px;
+        background-color 0.3s ease,color 0.3s ease;
+
+        &:hover {
+            color: ${color.orange1};
+            background-color: ${color.white};
+        }
+    }
   }
 
   li {

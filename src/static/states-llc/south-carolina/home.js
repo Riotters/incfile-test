@@ -792,7 +792,7 @@ export const registeredAgent = [
       list: [
         `<a href="/research-topics/registered-agent/registered-agent-function/">The Main Functions of a South Carolina Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/">Changing Your South Carolina Registered Agent</a>`,
-        `<a href-"/research-topics/registered-agent/registered-agent-tasks/">What a South Carolina Registered Agent Does</a>`,
+        `<a href="/research-topics/registered-agent/registered-agent-tasks/">What a South Carolina Registered Agent Does</a>`,
       ],
     },
     marginBottom: 48,
@@ -1160,7 +1160,7 @@ export const feesAndRequirments = [
                   <li>Governing organizations in your industry</li>
                   <li>Federal, state and local regulations</li>
                   </ul></br>
-                  That’s why our <a href-"/business-license-research-package/">business license research package</a> is so useful. It explores all of these areas for you and provides a comprehensive overview of exactly what your South Carolina LLC needs to be compliant.`,
+                  That’s why our <a href="/business-license-research-package/">business license research package</a> is so useful. It explores all of these areas for you and provides a comprehensive overview of exactly what your South Carolina LLC needs to be compliant.`,
         },
       ],
     },
@@ -1182,7 +1182,7 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `If you want help with your taxes, Incfile provides a complete <a href"/business-accounting/"> Business Tax Filing service</a>.`,
+    content: `If you want help with your taxes, Incfile provides a complete <a href="/business-accounting/"> Business Tax Filing service</a>.`,
     marginBottom: 32,
   },
   {

@@ -138,7 +138,6 @@ const GymPersonalTraining = () => (
 
           <PanelWrapper>
             <Heading size={3}>Why You Should Start a New Bookstore</Heading>
-            <Paragraph big>This might be surprising given the size and influence of Amazon and digital media, but people are moving away from their screens to the comfort of the pages of a good story.</Paragraph>
             <Paragraph big>
               There are some great reasons to start a new bookstore business in the U.S. Aside from giving life to your interest in great writing, it’s also a good opportunity to build a community around literature and make some money. Here are some of the facts around bookshops:
             </Paragraph>
@@ -154,6 +153,8 @@ const GymPersonalTraining = () => (
             <div style={{ marginBottom: "30px" }}>
               <Adventages headline="In 2017, print book sales were up almost 11% from 2013, and sales of printed books have increased every year for the last five years." width="100%" />
             </div>
+
+            <Paragraph big>This might be surprising given the size and influence of Amazon and digital media, but people are moving away from their screens to the comfort of the pages of a good story.</Paragraph>
           </PanelWrapper>
 
           <PanelWrapper>
@@ -385,7 +386,7 @@ const GymPersonalTraining = () => (
 
     <ToolsAndLinks />
 
-    <Conclusion to="/" buttonTitle="Start your Bookstore Business with us, today">
+    <Conclusion to={process.env.ORDER_URL + "/form-order-now.php"} buttonTitle="Start your Bookstore Business with us, today">
       <Heading size={3} style={{ fontSize: "48px" }}>
         Conclusion
       </Heading>
