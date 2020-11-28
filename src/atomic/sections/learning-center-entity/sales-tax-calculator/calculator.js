@@ -99,7 +99,7 @@ const ImageBoxes = styled.div`
   }
 
   .dropdown {
-    max-width: 304px;
+    max-width: 375px;
     margin: 0 auto;
   }
 `;
@@ -234,7 +234,7 @@ const CalculatorSection = ({ content, onSelectState, state, id }) => {
         }
 
         if (!stateTaxRate) {
-            setError("Choose state first");
+            setError("Select State where your business was registered");
             return;
         }
         
@@ -318,7 +318,7 @@ const CalculatorSection = ({ content, onSelectState, state, id }) => {
                     <ImageBoxes>
                         <TopImageBox className="box box--left" image="your-state" color={color.blue3}>
                             <Heading size={4}>{cards[0]}</Heading>
-                            <Dropdown className="dropdown" placeholder="select" onChange={handleOnChangeState} options={dropdownOptions} />
+                            <Dropdown className="dropdown" placeholder="Select where your business was registered" onChange={handleOnChangeState} options={dropdownOptions} />
                         </TopImageBox>
                         <TopImageBox className="box box--right" image="forming-a-corporation" color={color.orange3}>
                             <Heading size={4}>{cards[1]}</Heading>

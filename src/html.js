@@ -32,7 +32,7 @@ export default function HTML(props) {
             <body {...props.bodyAttributes}>
                 {props.preBodyComponents}
 
-                {process.env.ENABLE_GTM&& (
+                {process.env.ENABLE_GTM && (
                     <noscript
                         dangerouslySetInnerHTML={{
                             __html: `

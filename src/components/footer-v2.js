@@ -302,7 +302,7 @@ const Footer = () => {
                 <Bot>
                     <Copyright>
                         © {new Date().getFullYear()}.{` `}Incfile.com{` `}All Rights Reserved.
-          </Copyright>
+                    </Copyright>
                     <Social>
                         <li>
                             <a href="https://facebook.com/incfile" title="Facebook">
