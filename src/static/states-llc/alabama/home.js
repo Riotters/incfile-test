@@ -37,14 +37,14 @@ export const howToGuide = [
       header: `Briefly, the benefits of starting an Alabama LLC include:`,
       list: [`Separating and limiting your personal liability from your business liability and debts`, `Quick and simple filing, management, compliance, regulations and administration of your Alabama LLC`, `Easy tax filing and potential advantages for tax treatment`],
     },
-    marginBottom: 8,
+    marginBottom: 40,
     color: color.yellow3,
     curve: true,
     curveColor: color.red1,
   },
   {
     type: `text`,
-    content: `Learn more about the benefits of the LLC business structure here.`,
+    content: `<a href="/limited-liability-company/">Learn more about the benefits of the LLC business structure here.</a>`,
     marginBottom: 56,
   },
 
@@ -72,9 +72,9 @@ export const howToGuide = [
         },
         {
           question: `STEP 2: Search for and Choose a Unique Business Name for Your Alabama LLC`,
-          answer: `You will need a distinctive and original name for your Alabama LLC that’s not used by any other business in AL. To find out if another company is using your chosen business name, carry out an Alabama business entity name search on the AL Secretary of State website.
-          There are a few rules you’ll need to follow when choosing an LLC name. You can find out more in our guide to searching for and naming your Alabama LLC.         
-          Learn about Alabama LLC business naming rules`,
+          answer: `You will need a distinctive and original name for your Alabama LLC that’s not used by any other business in AL. To find out if another company is using your chosen business name, carry out an Alabama business entity name search on the AL Secretary of State website.<br><br>
+          There are a few rules you’ll need to follow when choosing an LLC name. You can find out more in our guide to searching for and naming your Alabama LLC.<br><br>        
+          <a href="/alabama-llc/how-to-name-your-llc/">Learn about Alabama LLC business naming rules</a>`,
         },
         {
           question: `STEP 3: Provide an Official Address for Your AL LLC`,
@@ -83,12 +83,12 @@ export const howToGuide = [
         {
           question: `STEP 4: Assign a Registered Agent for Your Alabama LLC`,
           answer: `Every AL LLC must have a “Registered Agent” when it is formed. This is an official position; the Registered Agent is someone who receives official legal and tax correspondence and has responsibility for filing reports with the Alabama Secretary of State.
-          <br>
+          <br><br>
           This position can be filled by you, another manager in the business or a dedicated Registered Agent service. Your AL Registered Agent must have a physical street address in Alabama and must be present to receive important documents for your company during business hours. 
-          <br>
+          <br><br>
           At Incfile, all of our packages include an Alabama Registered Agent service that is free for the first year and just $119 per year afterward. We also have a dashboard where you can log in and easily view any document your Registered Agent has received on your behalf. 
-          <br>
-          Learn more about Alabama Registered Agents`,
+          <br><br>
+          <a href="/alabama-llc/registered-agents-alabama-llc/">Learn more about Alabama Registered Agents</a>`,
         },
         {
           question: `STEP 5: Get an Employer Identification Number (EIN) from the Internal Revenue Service`,
@@ -102,7 +102,8 @@ export const howToGuide = [
           <li>Details of your Registered Agent</li>
           <li>Name of the incorporator</li>
           </ol></br>
-          <p>You can file your Alabama LLC Articles of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Alabama. You only need to file your Articles of Organization once.</p>`,
+          <p>You can file your Alabama LLC Articles of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Alabama. You only need to file your Articles of Organization once.</p><br><br>
+          <a class="button" href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AL">Form Your LLC</a>`,
         },
       ],
     },
@@ -119,7 +120,11 @@ export const howToGuide = [
     content: {
       header: `The AL Secretary of State has plenty of information on forming and running a business in Alabama. <br> These are all the basic steps for forming an LLC in Alabama. You’ll find other useful information below.
       `,
-      list: [`Alabama Secretary of State for forming and running your AL LLC`, `Alabama Department of Labor for AL employers and hiring`, `Alabama Department of Revenue for AL taxes`],
+      list: [
+          `<a href="https://www.sos.alabama.gov/business-entities/llcs" target="_blank" rel="noopener noreferrer">Alabama Secretary of State for forming and running your AL LLC</a>`, 
+          `<a href="https://www.labor.alabama.gov/" target="_blank" rel="noopener noreferrer">Alabama Department of Labor for AL employers and hiring</a>`, 
+          `<a href="https://revenue.alabama.gov/" target="_blank" rel="noopener noreferrer">Alabama Department of Revenue for AL taxes</a>`
+        ],
     },
     marginBottom: 45,
     color: color.yellow3,
@@ -142,13 +147,13 @@ export const howToGuide = [
         {
           question: `Form an Alabama Series LLC`,
           answer: `In Alabama, you also have the option to set up a “Series LLC” — these are specialized LLCs designed to allow you to manage multiple separate LLCs under one master umbrella LLC. These can be very useful if you don’t want to set up a separate Alabama LLC for every individual business you run. 
-          <br>
-          Decide if an Alabama Series LLC is right for your new business.`,
+          <br><br>
+          <a href="/blog/post/series-llc-why-need-one/">Decide if an Alabama Series LLC is right for your new business.</a>`,
         },
         {
           question: `Form a Foreign LLC in Alabama`,
           answer: `If your business is already operating in another state and expanding to Alabama, you’ll need to form a foreign LLC. 
-          <br>
+          <br><br>
           <a href="/alabama-llc/form-filling-permit-requirements/">More information on Alabama filing and licensing requirements here.</a>`,
         },
       ],
@@ -1188,7 +1193,7 @@ export const feesAndRequirments = [
                   <li>Governing organizations in your industry</li>
                   <li>Federal, state and local regulations</li>
                   </ul></br>
-                  That’s why our <a href-"/business-license-research-package/">business license research package</a> is so useful. It explores all of these areas for you and provides a comprehensive overview of exactly what your Alabama LLC needs to be compliant.`,
+                  That’s why our <a href="/business-license-research-package/">business license research package</a> is so useful. It explores all of these areas for you and provides a comprehensive overview of exactly what your Alabama LLC needs to be compliant.`,
         },
       ],
     },
@@ -1210,7 +1215,7 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `If you want help with your taxes, Incfile provides a complete <a href"/business-accounting/"> Business Tax Filing service</a>.`,
+    content: `If you want help with your taxes, Incfile provides a complete <a href="/business-accounting/"> Business Tax Filing service</a>.`,
     marginBottom: 32,
   },
   {

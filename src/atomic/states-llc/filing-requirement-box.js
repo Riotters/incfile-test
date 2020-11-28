@@ -41,14 +41,30 @@ const Filing = styled.div`
         padding: 24px;
         margin-bottom: 8px;
         display: flex;
-        font-size: 18px;
+        flex-direction: column;
+        font-size: 16px;
+
+        @media (min-width: 576px) {
+            flex-direction: row;
+        }
+
+        span {
+            display: flex;
+            flex-direction: column;
+
+            @media (min-width: 576px) {
+                flex-direction: row;
+            }
+        }
 
         strong {
+            display: flex;
+            align-items: center;
             font-family: Avenir,sans-serif;
             font-size: 16px;
             line-height: 24px;
             margin-bottom: 0px;
-            min-width: 100px;
+            min-width: 110px;
         }
     }
     

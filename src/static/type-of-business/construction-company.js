@@ -63,7 +63,7 @@ export const adventages2 = {
         {
             circleText: 1,
             headline: "File an Annual Report",
-            text: "Most states require all businesses to file a report once a year. This report has details of any major changes to who owns a business and other major impacts on a business’ legal status. We can file your Annual Report on your behalf.",
+            text: `Most states require all businesses to file a report once a year. This report has details of any major changes to who owns a business and other major impacts on a business’ legal status. <a href="/manage-your-company/annual-report/">We can file your Annual Report on your behalf.</a>`,
             url: "/manage-your-company/annual-report",
             urlText: "Annual Report"
         },

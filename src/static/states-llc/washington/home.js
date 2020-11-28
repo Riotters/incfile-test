@@ -454,7 +454,7 @@ export const namingYourBusiness = [
       list: [
         `If you don’t want to form your LLC right now, you can reserve the business name with the Washington Secretary of State. You will need to complete a Name Reservation form and file it with the WA SOS. You do not need to reserve a name if you are forming your business right away.</br>
             <a href="https://www.sos.wa.gov/_assets/corps/namereservation2010.pdf" target="_blank" rel="noopener noreferrer">Washington SOS LLC name reservation form</a>`,
-        `If you’re ready to start your Washington LLC, you can formally file your Certificate of Formation with the SOS, or <a href"${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&amp;entityState=WA">let Incfile take care of it for you</a>`,
+        `If you’re ready to start your Washington LLC, you can formally file your Certificate of Formation with the SOS, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&amp;entityState=WA">let Incfile take care of it for you</a>`,
       ],
     },
     marginBottom: 32,
@@ -1082,7 +1082,7 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `An Operating Agreement is extremely useful for several reasons (<a href="research-topics/llc-info/the-llc-operating-agreement/">learn about them here</a>). If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Washington business. You can choose to make changes to the template based on your unique requirements. `,
+    content: `An Operating Agreement is extremely useful for several reasons (<a href="/research-topics/llc-info/llc-operating-agreement/">learn about them here</a>). If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Washington business. You can choose to make changes to the template based on your unique requirements. `,
     marginBottom: 48,
   },
   {

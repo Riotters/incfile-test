@@ -40,7 +40,7 @@ const SettingBusiness = () => (
           <p>
             What kind of <Link to="https://utility.bankofamerica.com/alliance/?formid=IF1">bank account</Link> will you get? And how will you pay your business taxes? How do you find the{" "}
             <Link to="http://t.tihop.com/cgi/r?;n=203;c=1666272;s=7273;x=7936;f=201908011042310;u=j;z=TIMESTAMP;src=663024">best business credit card</Link>? These are all important things to consider, so your Amazon business stays in the green.{" "}
-            <Link to="/#">Check out our quick guide to finances and taxes for Amazon sellers</Link>.
+            <Link to="/blog/post/amazon-sellers-finances-taxes/">Check out our quick guide to finances and taxes for Amazon sellers</Link>.
           </p>
         </TopImageBox>
 
