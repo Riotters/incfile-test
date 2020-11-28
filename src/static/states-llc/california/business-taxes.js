@@ -204,7 +204,7 @@ export const businessTaxesPageContent = {
         bgSize: "",
         button: {
           text: `Get My LLC Treated As An S Corp`,
-          url: `/business-accounting/`,
+          url: `/llc-s-corp-election/`,
         },
       },
     },

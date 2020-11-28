@@ -30,7 +30,7 @@ const Rocket = () => (
                 <Paragraph big>
                     There you have it — our complete guide to starting a successful real estate business. We hope this has given you all the information you need to think about, plan, start and manage a successful venture. Remember, we can help you with creating and maintaining your real estate business
                 </Paragraph>
-                <Button theme="primary48" arrow width="max-content" content={{url: "/", text: "Start your Real Estate Business with us, today!"}} />
+                <Button theme="primary48" arrow width="max-content" content={{text: "Start your business with us, today!", url: process.env.ORDER_URL + "/form-order-now.php"}} />
             </Content>
         </Container>
     </Wrapper>

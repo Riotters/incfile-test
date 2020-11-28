@@ -892,7 +892,7 @@ export const registeredAgent = [
       list: [
         `<a href="/research-topics/registered-agent/registered-agent-function/">The Main Functions of a Tennessee Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Tennessee Registered Agent</a>`,
-        `<a href-"/research-topics/registered-agent/registered-agent-tasks/">What a Tennessee Registered Agent Does</a>`,
+        `<a href="/research-topics/registered-agent/registered-agent-tasks/">What a Tennessee Registered Agent Does</a>`,
       ],
     },
     marginBottom: 48,
@@ -1260,7 +1260,7 @@ export const feesAndRequirments = [
                   <li>Governing organizations in your industry</li>
                   <li>Federal, state and local regulations</li>
                   </ul></br>
-                  That’s why our <a href-"/business-license-research-package/">business license research package</a> is so useful. It explores all of these areas for you and provides a comprehensive overview of exactly what your Tennessee LLC needs to be compliant.`,
+                  That’s why our <a href="/business-license-research-package/">business license research package</a> is so useful. It explores all of these areas for you and provides a comprehensive overview of exactly what your Tennessee LLC needs to be compliant.`,
         },
       ],
     },
@@ -1282,7 +1282,7 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `If you want help with your taxes, Incfile provides a complete <a href"/business-accounting/"> Business Tax Filing service.</a>.`,
+    content: `If you want help with your taxes, Incfile provides a complete <a href="/business-accounting/"> Business Tax Filing service</a>.`,
     marginBottom: 32,
   },
   {
@@ -1357,20 +1357,15 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the TN Department of Taxation. Tennessee sales tax is collected at the point of purchase. Tennessee sales tax rates do vary depending on the region, county or city where you are located.`,
-    marginBottom: 8,
-  },
-  {
-    type: `text`,
-    content: `You will typically need to collect Tennessee sales tax on:`,
-    marginBottom: 8,
+    marginBottom: 32,
   },
   {
     type: `list-dot`,
     content: {
-      header: `The graduated Tennessee state income tax rate is:`,
+      header: `You will typically need to collect Tennessee sales tax on:`,
       list: [`angible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`, `Certain services that your Tennessee business might provide`],
     },
-    marginBottom: 16,
+    marginBottom: 40,
     color: color.blue3,
     curve: true,
     curveColor: color.red1,
@@ -1378,7 +1373,16 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `Most states do not levy sales tax on goods that are considered necessities, like food, medications, clothing or gas. `,
-    marginBottom: 8,
+    marginBottom: 32,
+  },
+  {
+    type: `arrow-link`,
+    content: {
+      text: `Get details on the Tennessee sales tax online here.`,
+      url: `https://www.tn.gov/revenue/taxes/sales-and-use-tax.html`,
+      externalLink: true,
+    },
+    marginBottom: 32,
   },
   {
     type: `text`,

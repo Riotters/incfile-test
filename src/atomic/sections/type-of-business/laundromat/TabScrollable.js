@@ -180,7 +180,7 @@ const TabScrollable = ({ layout, columns }) => {
 
                       <Paragraph big mixed={true}>
                         You can find all the information you need about statewide licenses and permits on your state’s Secretary of State website. You can also find those details in our <Link to="/llc-state-information/">state-by-state guides to company formation.</Link> Alternatively, the Small
-                        Business Administration website has a list of licenses and permits by state.
+                        Business Administration website has a <a href="https://www.sba.gov/business-guide/launch-your-business/apply-licenses-permits" target="_blank" rel="noopener noreferrer">list of licenses and permits by state.</a>
                       </Paragraph>
                     </TextBlockWithImage>
                   </div>
@@ -286,7 +286,7 @@ const TabScrollable = ({ layout, columns }) => {
                         Although you can act as your own registered agent, we recommend using a professional service. It ensures there will always be someone available to receive important legal documentation on your behalf and also removes your name and address from the public record.
                       </Paragraph>
                       <Paragraph big mixed={true}>
-                        When you incorporate through us, we provide a complete Registered Agent service free for the first year.
+                        When you incorporate through us, we provide a <Link to="/manage-your-company/registered-agent/">complete Registered Agent service free</Link> for the first year.
                       </Paragraph>
                     </TextBlockWithImage>
                   </div>

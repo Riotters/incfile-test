@@ -25,6 +25,7 @@ import IconChildrenColorBox from "../molecules/text-blocks/icon-h4-children-colo
 import RoundedTopImageBox from "../molecules/mixed-blocks/top-image-box-rounded";
 import AnnualReportBoxOnly from "../states-llc/annual-report-box-only";
 import FilingRequirementBox from "../states-llc/filing-requirement-box";
+import LightBoxVideo from "../../components/LightBox";
 
 const Wrapper = styled.div`
   display: flex;
@@ -161,6 +162,8 @@ const Content = ({ content, data }) => {
           {item.type === "dynamic_ar_box" && <AnnualReportBoxOnly data={data} />}
 
           {item.type === "dynamic_filing_requirement" && <FilingRequirementBox data={data} margin="0 0 42px 0" />}
+
+          {item.type === "video" && <LightBoxVideo thumbnailVideo={item.image} videoID={item.id} bottomMargin={item.marginBottom} />}
         </>
       ))}
     </Wrapper>
