@@ -1351,12 +1351,13 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the WI Department of Revenue. Wisconsin sales tax is collected at the point of purchase. Wisconsin sales tax rates do vary depending on the region, county or city where you are located. You will typically need to collect Wisconsin sales tax on:`,
+    content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the WI Department of Revenue. Wisconsin sales tax is collected at the point of purchase. Wisconsin sales tax rates do vary depending on the region, county or city where you are located.`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
+      header: `You will typically need to collect Wisconsin sales tax on:`,
       list: [`Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`, `Certain services that your Wisconsin business might provide`],
     },
     marginBottom: 16,
@@ -1426,12 +1427,13 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `You will be able to deduct your business expenses from your income when determining how much self-employment tax you owe. Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
+    content: `You will be able to deduct your business expenses from your income when determining how much self-employment tax you owe.`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
+      header: `Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
       list: [
         `On profits of $50,000, you would pay self-employment tax of $7,650.`,
         `On profits of $100,000, you would pay self-employment tax of $15,300.`,

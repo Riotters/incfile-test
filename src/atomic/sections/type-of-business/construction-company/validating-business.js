@@ -109,11 +109,6 @@ const ValidatingBusinessIdea = () => (
                         important to test the marketplace.
                     </Paragraph>
 
-                    <Paragraph big>
-                        Not every idea you have will make it through to becoming a construction business. There are all
-                        sorts of reasons to say “yes” or “no” to specific businesses, so think about what your strengths
-                        and weaknesses are so you can choose a business you’d be great at.
-                    </Paragraph>
                 </TitleBox>
 
                 <GridSectionList>
@@ -147,9 +142,7 @@ const ValidatingBusinessIdea = () => (
                             Talk to clients
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
-                            Speak with potential vacationers to understand what they want from your travel and tourism
-                            services.
-                            Ask about what they need from you to plan the perfect vacation or getaway.
+                            Speak with potential customers to understand what they want from your building company.
                         </Paragraph>
                     </TextBlockWithImage>
 
@@ -165,6 +158,9 @@ const ValidatingBusinessIdea = () => (
                         </Paragraph>
                     </TextBlockWithImage>
                 </GridSectionList>
+                <Paragraph big style={{ justifyContent: "center", width: "100%", maxWidth: "720px", margin: "auto" }} >
+                    Not every idea you have will make it through to becoming a construction business. There are all sorts of reasons to say “yes” or “no” to specific businesses, so think about what your strengths and weaknesses are so you can choose a business you’d be great at.
+                </Paragraph>
             </GridSection>
 
         </Container>

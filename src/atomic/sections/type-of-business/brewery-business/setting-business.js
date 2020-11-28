@@ -51,7 +51,7 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox image="side-4" color={color.green3}>
-          <h4>Equipment for Your Dog Walking or Pet Sitting business</h4>
+          <h4>Brewery Equipment</h4>
           <p>Breweries are extremely reliant on specialized equipment. From brew kettles and mash tuns to barrels and endless amounts of cleaning fluid, this is where the majority of your capital expenditure will be in the early days.</p>
         </TopImageBox>
 

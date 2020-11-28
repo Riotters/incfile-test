@@ -183,7 +183,7 @@ const ConsultingBusiness = () => (
                         <BlueBoxWithAbsoluteText absoluteText="1.4M"
                                                  text="People are employed in the management and technical consulting services in the U.S."/>
                         <BlueBoxWithAbsoluteText absoluteText="$150"
-                                                 text="The typical consulting fee an hour at entry-level and over 0300 an hour for experienced consultants."/>
+                                                 text="The typical consulting fee an hour at entry-level and over 300 an hour for experienced consultants."/>
 
                         <div style={{marginBottom: "30px", marginTop: "48px"}}>
                             <Adventages

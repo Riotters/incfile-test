@@ -15,6 +15,10 @@ import Path from "../../../molecules/blocks/research-topics-path";
 const About = styled.section`
   position: relative;
   padding-bottom: 104px;
+
+  ul {
+      margin-left: -24px;
+  }
 `;
 
 const AboutSection = ({ className, content }) => (
@@ -24,18 +28,13 @@ const AboutSection = ({ className, content }) => (
     </Oval>
     <ImageContent image="web-address-search">
       <Path content={content.links} />
-      <Heading size={3} bottomMargin="32">
+      <Heading size={3} topMargin="8" bottomMargin="40">
         {content.header}
       </Heading>
-      <Paragraph big bottomMargin="24">
-        {content.text}
-      </Paragraph>
-      <IconListColorBox content={content.list} color={color.purple3} curve curveColor={color.green2} rounded bottomMargin="24" />
-      <IconListColorBox content={content.list2} color={color.orange3} curve curveColor={color.green2} rounded bottomMargin="24" />
-      <IconListColorBox content={content.list3} color={color.babyblue3} curve curveColor={color.green2} rounded bottomMargin="24" />
-      <Paragraph big bottomMargin="48">
-        {content.text2}
-      </Paragraph>
+      <IconListColorBox content={content.list} color={color.purple2} rounded bottomMargin="40" />
+      <IconListColorBox content={content.list2} color={color.yellow2} curve curveColor={color.green2} rounded bottomMargin="40" />
+      <IconListColorBox content={content.list3} color={color.babyblue2} rounded bottomMargin="40" />
+      <IconListColorBox content={content.list4} color={color.green2} curve curveColor={color.orange2} rounded bottomMargin="24" />
     </ImageContent>
   </About>
 );

@@ -91,7 +91,7 @@ export const howToGuide = [
                    <a href="/delaware-llc/how-to-name-your-llc/"> Learn about Delaware LLC business naming rules. </a>`,
         },
         {
-          question: `STEP 3: STEP 3: Provide an Official Address for your DE LLC`,
+          question: `STEP 3: Provide an Official Address for your DE LLC`,
           answer: `Every Delaware LLC must have a designated street address. That could be your home address (if you’re running the company from your residence), your company’s office building or any physical address of your preference. The address can be outside the state of Delaware and can be a P.O. Box.`,
         },
         {
@@ -153,42 +153,21 @@ export const howToGuide = [
     marginBottom: 32,
   },
   {
-    type: `header`,
-    content: `Form a Delaware Series LLC`,
-    size: 3,
-    marginBottom: 32,
-  },
-  {
-    type: `text`,
-    content: `In Delaware, you also have the option to set up a “Series LLC” — these are specialized LLCs designed to allow you to manage multiple separate LLCs under one master, umbrella LLC. These can be very useful if you don’t want to set up a separate Delaware LLC for every individual business you run.`,
-    marginBottom: 32,
-  },
-  {
-    type: `arrow-link`,
+    type: `accordion`,
     content: {
-      text: `Decide if a Delaware Series LLC is right for your new business.`,
-      url: `/blog/post/series-llc-why-need-one/`,
+      items: [
+        {
+          question: `Form a Delaware Series LLC`,
+          answer: `<p>In Delaware, you also have the option to set up a “Series LLC” — these are specialized LLCs designed to allow you to manage multiple separate LLCs under one master, umbrella LLC. These can be very useful if you don’t want to set up a separate Delaware LLC for every individual business you run.</p></br>
+          <a href="/blog/post/series-llc-why-need-one/">Decide if a Delaware Series LLC is right for your new business.</a>`,
+        },
+        {
+          question: `Form a Foreign LLC in Delaware`,
+          answer: `<p>If your business is already operating in another state and expanding to Delaware, you’ll need to form a foreign LLC.</p></br>
+                   <a href="/delaware-llc/fees-filing-requirements/">Find more information on Delaware filing and licensing requirements here</a>`,
+        },
+      ],
     },
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `Form a Foreign LLC in Delaware`,
-    size: 3,
-    marginBottom: 32,
-  },
-  {
-    type: `text`,
-    content: `If your business is already operating in another state and expanding to Delaware, you’ll need to form a foreign LLC.`,
-    marginBottom: 24,
-  },
-  {
-    type: `arrow-link`,
-    content: {
-      text: `Find more information on Delaware filing and licensing requirements here`,
-      url: `/delaware-llc/fees-filing-requirements/`,
-    },
-    marginBottom: 32,
   },
   {
     type: `header`,

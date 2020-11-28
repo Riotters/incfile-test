@@ -144,27 +144,21 @@ export const howToGuide = [
     marginBottom: 32,
   },
   {
-    type: `header`,
-    content: `Form a Professional Connecticut LLC`,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `Some states, including Connecticut, allow certain occupations to form “Professional LLCs.” These types of businesses typically have special requirements and licensing. Here are the occupations that the CT Secretary of State allows to form Connecticut professional LLCs: Dentists, naturopaths, chiropractors, physicians and surgeons, physician assistants, doctors of dentistry, physical therapists, occupational therapists, podiatrists, optometrists, nurses, nurse-midwives, veterinarians, pharmacists, architects, professional engineers (or jointly with architects and professional engineers), landscape architects, real estate brokers, insurance producers, certified public accountants and public accountants, land surveyors, psychologists, attorneys-at-law, licensed marital and family therapists, licensed professional counselors, licensed or certified alcohol and drug counselors and licensed clinical social workers.`,
+    type: `accordion`,
+    content: {
+      items: [
+        {
+          question: `Form a Professional Connecticut LLC`,
+          answer: `Some states, including Connecticut, allow certain occupations to form “Professional LLCs.” These types of businesses typically have special requirements and licensing. Here are the occupations that the CT Secretary of State allows to form Connecticut professional LLCs: Dentists, naturopaths, chiropractors, physicians and surgeons, physician assistants, doctors of dentistry, physical therapists, occupational therapists, podiatrists, optometrists, nurses, nurse-midwives, veterinarians, pharmacists, architects, professional engineers (or jointly with architects and professional engineers), landscape architects, real estate brokers, insurance producers, certified public accountants and public accountants, land surveyors, psychologists, attorneys-at-law, licensed marital and family therapists, licensed professional counselors, licensed or certified alcohol and drug counselors and licensed clinical social workers.`,
+        },
+        {
+          question: `Form a Foreign LLC in Connecticut`,
+          answer: `<p>If your business is already operating in another state and expanding to Connecticut, you’ll need to form a foreign LLC.</p></br>
+          <p><a href="/connecticut-llc/form-filling-permit-requirements/">More information on Connecticut filing and licensing requirements here.</a></p>`,
+        },
+      ],
+    },
     marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `Form a Foreign LLC in Connecticut`,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `<p>If your business is already operating in another state and expanding to Connecticut, you’ll need to form a foreign LLC.</p></br>
-              <p><a href="/connecticut-llc/form-filling-permit-requirements/">More information on Connecticut filing and licensing requirements here.</a></p>`,
-    marginBottom: 40,
   },
   {
     type: `header`,

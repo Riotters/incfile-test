@@ -98,9 +98,6 @@ const ValidatingBusinessIdea = () => (
                     <Paragraph big>
                         Remember, the ideas above are just a starting point. You can define and tweak exactly how you’re going to run your bookstore business through conducting your own research.
                     </Paragraph>
-                    <Paragraph big>
-                        The thing to learn here is that it’s okay to say “no” to your first, second or third bookstore business ideas. Very few entrepreneurs get it right first time. In fact, getting it wrong is often a badge of honor! Still, you don’t want to waste too much time, energy or money on the wrong initiatives, so ask and answer these questions honestly to find the right way forward.
-                    </Paragraph>
 
                 </TitleBox>
 
@@ -151,6 +148,9 @@ const ValidatingBusinessIdea = () => (
                     </TextBlockWithImage>
 
                 </GridSectionList>
+                <Paragraph big style={{ justifyContent: "center", width: "100%", maxWidth: "720px", margin: "auto" }} >
+                    The thing to learn here is that it’s okay to say “no” to your first, second or third bookstore business ideas. Very few entrepreneurs get it right first time. In fact, getting it wrong is often a badge of honor! Still, you don’t want to waste too much time, energy or money on the wrong initiatives, so ask and answer these questions honestly to find the right way forward.
+                </Paragraph>
             </GridSection>
 
         </Container>

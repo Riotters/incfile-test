@@ -45,7 +45,7 @@ export const InfoCards = {
             backgroundColor: color.green3,
             imageName: "shield-insurance",
             title: "General Liability Insurance for Your Construction Business",
-            content: "This insurance protects your travel agency from claims due to being sued. This may include injury to members of the public, property damage, personal liabilities, legal defense and more. It can help protect your travel agency business from financial penalties and bankruptcy."
+            content: "This insurance protects your construction business from claims due to being sued. This may include injury to members of the public, property damage, personal liabilities, legal defense and more. It can help protect your business from financial penalties and bankruptcy. This type of insurance could be essential to your construction business as you want to protect anyone visiting a building site and must adhere to strict health and safety standards."
         },
         {
             backgroundColor: color.red3,

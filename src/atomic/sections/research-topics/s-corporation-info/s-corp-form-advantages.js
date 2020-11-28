@@ -25,7 +25,7 @@ const AboutSection = ({ className, content }) => (
     </Oval>
     <ImageContent image="web-address-search">
       <Path content={content.links} />
-      <Heading size={3} bottomMargin="32">
+      <Heading size={3} topMargin="16" bottomMargin="32">
         {content.header}
       </Heading>
       <Paragraph big bottomMargin="16" mixed>

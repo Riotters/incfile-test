@@ -152,8 +152,6 @@ const GymPersonalTraining = () => (
               For example, a digital nomad business might be:
             </Paragraph>
 
-            <Adventages headline="Boutique studios providing specialized fitness and well-being services are becoming increasingly popular" width="100%" />
-
             <Adventages headline="Dropshipping business" text="Where you provide a storefront for people to purchase from you. They make the purchase and your supplier sends it to them directly." width="100%" />
 
             <Adventages headline="Software as a Service (SaaS) company" text="You provide an online application that your customers pay a monthly subscription to use." width="100%" />
@@ -193,7 +191,7 @@ const GymPersonalTraining = () => (
             </Paragraph>
             <Paragraph big>If you want to be successful as a digital nomad, here are the main skills you need to have:</Paragraph>
 
-            <Adventages headline="Excellent interpersonal skills" text="You will need to deal with contractors, local authorities, clients and buyers all the time. Great interpersonal skills and the ability to handle people well are essential." width="100%" />
+            <Adventages headline="A professional expertise/skill" text="The ability to sell your products or services as a digital nomad. We covered this above." width="100%" />
 
             <Adventages headline="Excellent communication skills" text="You need the ability to over-communicate to your clients and keep them happy over email, phone or chat." width="100%" />
 

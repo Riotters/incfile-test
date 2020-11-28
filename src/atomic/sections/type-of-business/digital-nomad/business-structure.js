@@ -182,34 +182,10 @@ const CoachBusinessStructure = () => (
 
         <Heading size={3}>Setting up a Business Entity as a Digital Nomad</Heading>
 
-        <Paragraph big style={{ marginBottom: 0 }}>
+        <Paragraph big mixed style={{ marginBottom: 0 }}>
           As a digital nomad, you will have some unique circumstances for how you're going to setup your business. To start with, we recommend an LLC — the combination of a low administrative overhead and liability protection are great for your peace-of-mind. Secondly, you will probably want to take
           advantage of our <Link to="/manage-your-company/registered-agent">Registered Agent service</Link> - it means there will always be someone available to receive official documents, even if you're out of the country.
         </Paragraph>
-
-        <SpecialBox radiusTop>
-          <Icon>
-            <RegisteredAgentIcon />
-          </Icon>
-          <Text>
-            <Heading size={3} style={{ marginBottom: 0, paddingBottom: "8px" }}>
-              Choose an LLC
-            </Heading>
-            <Paragraph style={{ paddingBottom: 0, marginBottom: 0 }}>Limited Liability Company is the perfect choice for a Digital Nomad</Paragraph>
-          </Text>
-        </SpecialBox>
-
-        <SpecialBox radiusBottom>
-          <Icon>
-            <RegisteredAgentIcon />
-          </Icon>
-          <Text>
-            <Heading size={3} style={{ marginBottom: 0, paddingBottom: "8px" }}>
-              Registered Agent service
-            </Heading>
-            <Paragraph style={{ paddingBottom: 0, marginBottom: 0 }}>Use Incfile’s Registered Agent service so that there’s always someone available to receive official documents, even if you're out of the country</Paragraph>
-          </Text>
-        </SpecialBox>
 
         <Paragraph big style={{ marginTop: "48px" }}>
           Next, you have more choice than most entrepreneurs on which state to from your LLC in. If you're going to be in your home state and running your LLC from there for any period, that's the best place to base it. If not, you can choose to form your LLC almost anywhere. In those cases, forming

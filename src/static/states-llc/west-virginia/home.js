@@ -536,7 +536,6 @@ export const namingYourBusiness = [
     marginBottom: 40,
     color: color.blue3,
   },
-
   {
     type: `arrow-link`,
     content: {
@@ -1295,6 +1294,7 @@ export const businessTaxes = [
       ],
     },
     marginBottom: 16,
+    color: color.orange3,
   },
   {
     type: `text`,
@@ -1320,15 +1320,16 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `The West Virginia state tax rates are between 3 and 6.5 percent, depending on your income.`,
-    marginBottom: 32,
+    marginBottom: 16,
   },
   {
     type: `arrow-link`,
-    content: `Get details on the West Virginia state tax here.`,
-    url: `https://tax.wv.gov/Individuals/Pages/Individuals.aspx`,
-    marginBottom: 16,
+    content: {
+      text: `Get details on the West Virginia state tax here.`,
+      url: `https://tax.wv.gov/Individuals/Pages/Individuals.aspx`,
+    },
+    marginBottom: 32,
   },
-
   {
     type: `header`,
     content: `West Virginia Sales Taxes for LLCs`,
@@ -1341,31 +1342,16 @@ export const businessTaxes = [
     marginBottom: 32,
   },
   {
-    type: `text`,
-    content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the WV Department of Revenue. West Virginia sales tax is collected at the point of purchase. Sales tax rates do vary depending on the region, county or city where you are located.`,
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `Federal Taxes for Your West Virginia LLC: Self-Employment and Income Taxes`,
-    size: 3,
-    marginBottom: 24,
-  },
-  {
-    type: `text`,
-    content: `You will typically need to collect West Virginia sales tax on:`,
-    marginBottom: 32,
-  },
-  {
     type: `list-dot`,
     content: {
-      header: ``,
+      header: `You will typically need to collect West Virginia sales tax on:`,
       list: [
         `Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc. Certain services that your business might provide`,
         `Most states do not levy sales tax on goods that are considered necessities, like food, medications, clothing or gas.`,
       ],
     },
     marginBottom: 16,
+    color: color.babyblue3,
   },
   {
     type: `text`,
@@ -1380,11 +1366,12 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `There are a couple of different federal taxes that every LLC will need to pay, including West Virginia LLCs. These are self-employment tax and federal income tax, which are taxed as “pass-through” income via your tax return forms.`,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Federal Self-Employment Tax`,
+    size: 3,
     marginBottom: 16,
   },
   {
@@ -1545,11 +1532,7 @@ export const businessTaxes = [
           answer: `Yes. West Virginia does have a general state income tax. You can find more information above.`,
         },
         {
-          question: `What Is the Sales Tax Rate in West Virginia?`,
-          answer: `There is no sales tax in West Virginia, so the sales tax rate is zero.`,
-        },
-        {
-          question: `Do I Need to Pay Estimated Taxes??`,
+          question: `Do I Need to Pay Estimated Taxes?`,
           answer: `Yes. In most cases, you must pay estimated taxes on your West Virginia tax, federal income tax and self-employment tax. Speak to your accountant for more information.`,
         },
       ],
