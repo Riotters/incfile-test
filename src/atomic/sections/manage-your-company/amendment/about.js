@@ -39,7 +39,7 @@ const AboutSection = ({ className, content }) => (
             <Paragraph big mixed bottomMargin="72">
             {parse(content.text3)}
             </Paragraph>
-            {/* <IconTextColorBox color={color.orange3} rounded curve curveColor={color.blue1} Icon={IconSVG} content={content.box} bottomMargin="72" rounded curve/> */}
+            <IconTextColorBox color={color.orange3} rounded curve curveColor={color.blue1} Icon={IconSVG} content={content.box} bottomMargin="72" rounded curve/>
         </ImageContent>
     </About>
   );
