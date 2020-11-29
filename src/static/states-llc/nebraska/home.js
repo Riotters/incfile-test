@@ -26,7 +26,7 @@ export const howToGuide = [
   {
     type: `text`,
     content: `For most business owners, the fastest and easiest way to start a business in Nebraska is by creating a Nebraska LLC. A limited liability company (LLC) is a type of business entity that’s ideal for startups and small- to medium-sized businesses. You get the advantages and protections of larger Nebraska corporations but with much simpler rules and regulations.`,
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: `list-dot`,
@@ -109,9 +109,14 @@ export const howToGuide = [
     marginBottom: 32,
   },
   {
+    type: `text`,
+    content: `The NE Secretary of State has plenty of information on forming and running a business in Nebraska.`,
+    marginBottom: 24,
+  },
+  {
     type: `list-dot`,
     content: {
-      header: `The NE Secretary of State has plenty of information on forming and running a business in Nebraska. These are all the basic steps for forming an LLC in Nebraska. You’ll find other useful information below.`,
+      header: `These are all the basic steps for forming an LLC in Nebraska. You’ll find other useful information below.`,
       list: [
         `<a href="https://sos.nebraska.gov/business-services/new-business-information" target="_blank" rel="noopener noreferrer">Nebraska Secretary of State for forming and running your NE LLC</a>`,
         `<a href="https://dol.nebraska.gov/" target="_blank" rel="noopener noreferrer">Nebraska Department of Labor for NE employers and hiring</a>`,
@@ -132,28 +137,23 @@ export const howToGuide = [
     content: `A regular Nebraska LLC is suitable for most business needs, but you also have a few other options to incorporate a special type of LLC.`,
     marginBottom: 32,
   },
+
   {
-    type: `header`,
-    content: `Form a Professional Nebraska LLC`,
-    size: 3,
-    marginBottom: 32,
-  },
-  {
-    type: `text`,
-    content: `Some states, including Nebraska, allow certain occupations to form “Professional LLCs.” These types of businesses typically have special requirements and licensing. Nebraska does not specifically list the occupations that can form professional LLCs.`,
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `Form a Foreign LLC in Nebraska`,
-    size: 3,
-    marginBottom: 32,
-  },
-  {
-    type: `text`,
-    content: `If your business is already operating in another state and expanding to Nebraska, you’ll need to form a foreign LLC.<br>
-    <a href="/nebraska-llc/form-filling-permit-requirements/">More information on Nebraska filing and licensing requirements here</a>`,
-    marginBottom: 40,
+    type: `accordion`,
+    content: {
+      items: [
+        {
+          question: `Form a Professional Nebraska LLC`,
+          answer: `Some states, including Nebraska, allow certain occupations to form “Professional LLCs.” These types of businesses typically have special requirements and licensing. Nebraska does not specifically list the occupations that can form professional LLCs.`,
+        },
+        {
+          question: `Form a Foreign LLC in Nebraska`,
+          answer: `<p>If your business is already operating in another state and expanding to Nebraska, you’ll need to form a foreign LLC.</p><br>
+            <a href="/nebraska-llc/form-filling-permit-requirements/">More information on Nebraska filing and licensing requirements here</a>`,
+        },
+      ],
+    },
+    marginBottom: 48,
   },
   {
     type: `header`,

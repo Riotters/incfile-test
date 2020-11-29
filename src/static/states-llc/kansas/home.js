@@ -408,35 +408,10 @@ export const namingYourBusiness = [
     marginBottom: 48,
     color: color.green3,
   },
-
-  {
-    type: `header`,
-    content: `Business Name Registration for Your Kansas LLC`,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `Once you’ve searched for your Kansas business name, checked availability, followed the naming rules and decided whether you need a fictitious name, you can register your AK LLC name. There are a couple of ways to do this.`,
-    marginBottom: 16,
-  },
-  {
-    type: `list-dot`,
-    content: {
-      header: ``,
-      list: [
-        `<p>If you don’t want to form your LLC right now, you can reserve the business name with the Kansas Division of Corporations. You will need to complete a Business Name Registration form and file it with the AK DOC. You do not need to reserve a name if you are forming your business right away.</p></br>
-              <a href="https://www.commerce.Kansas.gov/web/cbpl/Corporations/ReservingRegisteringBusinessName.aspx" target="_blank" rel="noopener noreferrer">Kansas DOC LLC name reservation form</a>`,
-        `<p>If you’re ready to start your LLC, you can formally file your Certificate of Formation with the Kansas DOC, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=KS">let Incfile take care of it for you.</a></p>`,
-      ],
-    },
-    marginBottom: 32,
-    color: color.purple3,
-  },
   {
     type: `header`,
     content: `Kansas LLC Fictitious Names`,
-    size: 4,
+    size: 3,
     marginBottom: 16,
   },
   {
@@ -451,24 +426,24 @@ export const namingYourBusiness = [
       url: `/fictitious-business-or-trade-name/`,
     },
     theme: `primary48`,
-    marginBottom: 32,
+    marginBottom: 48,
   },
   {
     type: `header`,
     content: `Business Name Registration for Your Kansas LLC`,
-    size: 4,
+    size: 3,
     marginBottom: 16,
   },
   {
     type: `text`,
     content: `Once you’ve searched for your Kansas business name, checked availability, followed the naming rules and decided whether you need a fictitious name, you can register your KS LLC name. There are a couple of ways to do this.`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`<p>If you don’t want to form your LLC right now, you can reserve the business name</p></br>`, `<p>If you’re ready to start your Kansas LLC, you can register it through Incfile`],
+      list: [`If you don’t want to form your LLC right now, you can reserve the business name`, `If you’re ready to start your Kansas LLC, you can register it through Incfile`],
     },
     marginBottom: 32,
     color: color.purple3,

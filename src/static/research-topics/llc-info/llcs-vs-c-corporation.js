@@ -13,7 +13,7 @@ export const about = {
   text: [
     {
       text: `C-Corporations,`,
-      url: `/`,
+      url: `/what-is-c-corporation/`,
     },
     {
       text: `or C-Corps, are the oldest and probably most common type of large domestic company. Many product and services that people come across daily are provided by corporations. When you think about incorporating your small business, this might be the first option that comes to mind.`,
@@ -25,7 +25,7 @@ export const about = {
     },
     {
       text: `Limited Liability Companies,`,
-      url: `/`,
+      url: `/limited-liability-company/`,
     },
     {
       text: `or LLCs, are a newer entity type that offers unique differences that the C-Corporation cannot provide (and vice versa). Here’s what you need to know in order to choose the entity type for your new company.`,

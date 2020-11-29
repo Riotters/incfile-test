@@ -89,8 +89,8 @@ export const InfoCards = {
             roundTopRight: true,
             roundBottomRight: true,
             imageName: "home-and-auto-insurance",
-            title: "Home and Auto Insurance",
-            content: "If you are working from home on the administration of your coaching business or driving a vehicle for work, check whether your existing home and auto policies cover you for work use of your home or car. If not, you should either expand your policy so you’re covered or get dedicated business insurance."
+            title: "Specialized Office and Auto Insurance for Your Moving Business",
+            content: "You will want commercial office and vehicle insurance to cover your assets."
         }
     ]
 };

@@ -75,7 +75,7 @@ export const howToGuide = [
                    <a href="/Montana-llc/how-to-name-your-llc/"> Learn about Montana LLC business naming rules.</a>`,
         },
         {
-          question: `STEP 3: Provide an Official Address for Your MS LLC`,
+          question: `STEP 3: Provide an Official Address for Your MT LLC`,
           answer: `Every Montana LLC must have a designated street address. That could be your home address (if you’re running the company from your residence), your company’s office building or any physical address of your preference. The address must be inside the state of Montana, but it cannot be a P.O. Box.`,
         },
         {
@@ -112,9 +112,14 @@ export const howToGuide = [
     marginBottom: 16,
   },
   {
+    type: `text`,
+    content: `The Montana Secretary of State has plenty of information on forming and running a business in Montana. Check out additional resources below.`,
+    marginBottom: 24,
+  },
+  {
     type: `list-dot`,
     content: {
-      header: `The Montana Secretary of State has plenty of information on forming and running a business in Montana. Check out additional resources below.<br>These are all the basic steps for forming an LLC in Montana. You’ll find other useful information below.`,
+      header: `These are all the basic steps for forming an LLC in Montana. You’ll find other useful information below.`,
       list: [
         `<a href="https://app.mt.gov/businesschecklist" target="_blank" rel="noopener noreferrer">Montana Secretary of State for forming and running your LLC</a>`,
         `<a href="http://dli.mt.gov//" target="_blank" rel="noopener noreferrer">Montana Department of Labor for Montana employers and hiring</a>`,
@@ -172,18 +177,29 @@ export const howToGuide = [
     type: `text`,
     content: `<p>If your business is already operating in another state and expanding to Montana, you’ll need to form a foreign LLC.</p></br>
               <p><a href="/Montana-llc/fees-filing-requirements/">More information on Montana filing and licensing requirements here.</a></p>`,
+    marginBottom: 40,
+  },
+  {
+    type: `header`,
+    content: `What to Do After Forming Your Montana LLC`,
+    size: 3,
+    marginBottom: 16,
+  },
+  {
+    type: `text`,
+    content: `<p>Want to know your next steps after creating a new LLC in Montana? We’ve got you covered. <a href="/after-forming-llc/">Here’s our guide</a> to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more.</p>`,
     marginBottom: 32,
   },
 
   {
     type: `header`,
-    content: `Detailed Information for Your Montana LLC`,
+    content: `Other Information in This Guide`,
     size: 4,
     marginBottom: 16,
   },
   {
     type: `text`,
-    content: `You’ll find plenty more insight and guidance on the other pages of this guide, including`,
+    content: `You’ll find plenty more insight and guidance on the other pages of this guide, including:`,
     marginBottom: 32,
   },
   {

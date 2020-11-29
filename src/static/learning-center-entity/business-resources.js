@@ -2,7 +2,7 @@ export const top = {
     header: 
       `Starting a Company?`,
     text: 
-      `Get the Business Resources and Tools You Need+`,
+      `Get the Business Resources and Tools You Need`,
     link: {
         text: `View our business guides`,
         url: `#guides-section`,

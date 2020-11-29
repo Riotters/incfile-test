@@ -26,29 +26,28 @@ const MainSkils = () => (
                 <TopImageBox image="display-ads" color={color.purple3}>
                     <h4>Marketing skills</h4>
                     <p>
-                        Establish the various software and business processes you need to run your new venture in the most efficient, optimized way.
+                        Branding, local advertising, local search-engine optimization, understanding of local businesses and freelance photography job market.
                     </p>
                 </TopImageBox>
 
                 <TopImageBox image="business-administration" color={color.yellow3}>
                     <h4>Business management skills</h4>
                     <p>
-                        You will likely focus on word of mouth and referral marketing in the beginning since it’s low cost and can create good buzz around your business.
+                        Accounting, financial management, administration and client relationship management.
                     </p>
                 </TopImageBox>
 
                 <TopImageBox image="secondary-photography-skills" color={color.blue3}>
                     <h4>Secondary photography skills</h4>
                     <p>
-                        Get the equipment you need to run your business. Ideally you should already have everything you need, but you might be able to beg, borrow or buy secondhand.
+                        Photo editing and manipulation (like Photoshop), post-production skills, etc.
                     </p>
                 </TopImageBox>
 
                 <TopImageBox image="specialized-photography-skills-2" color={color.red3}>
                     <h4>Specialized photography skills</h4>
                     <p>
-                        You will want extensive training and certification
-                        in your chosen area.
+                        You will want extensive training and certification in your chosen area.
                     </p>
                 </TopImageBox>
 

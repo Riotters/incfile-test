@@ -192,15 +192,7 @@ export const about = {
 export const state = {
   header: `Select the state where you would like to form your LLC.`,
   card: {
-    header: `1. Your State`,
-  },
-  button: {
-    text: `Calculate my sales tax`,
-    url: `/sales-tax-calculator/`,
-  },
-  button2: {
-    text: `Check for another state`,
-    url: `/llc-state-information/`,
+    header: `1. State of Formation`,
   },
 };
 

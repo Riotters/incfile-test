@@ -292,10 +292,6 @@ const Handyman = () => (
               <Paragraph bottomMargin={0}>Some skills in marketing and promotion</Paragraph>
             </TextBoxed>
 
-            <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>You cannot mind dealing with pet toileting and other habits</Paragraph>
-            </TextBoxed>
-
             <Paragraph big style={{ fontWeight: "bold", marginTop: "48px" }}>
               What Your Handyman Customers Are Looking For
             </Paragraph>

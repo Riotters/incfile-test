@@ -54,6 +54,12 @@ const Box = styled.div`
         width: 100%;
         font-size: 16px;
         line-height: 24px;
+
+        a {
+            font-size: inherit;
+            line-height: inherit;
+            font-weight: bold;
+        }
     }
 `
 

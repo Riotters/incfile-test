@@ -6,6 +6,7 @@ import TalkIcon from "../../../../images/icons/talk-to-clients.inline.svg";
 import IdetifyIcon from "../../../../images/icons/identify-your-unique-selling-point.inline.svg"
 import LookIcon from "../../../../images/icons/look-at-who-your-competitors-are-in-the-space.inline.svg"
 import MarketIcon from "../../../../images/icons/understand-your-market.inline.svg"
+import InvolvedIcon from "../../../../images/icons/get-involved-with-business-communities.inline.svg";
 import {color} from "../../../../components/styles/colors";
 import React from "react";
 import styled from "styled-components";
@@ -103,48 +104,19 @@ const ValidatingBusinessIdea = () => (
                         Validating Your Home-Based Business Idea
                     </Heading>
                     <Paragraph big>
-                        The above home business ideas are all great starting points, but you’ll need to build on them to
-                        make the business your own. You have unique skills and insight you can use to create a
-                        home-based business that will really stand out.
+                        The above home business ideas are all great starting points, but you’ll need to build on them to make the business your own. You have unique skills and insight you can use to create a home-based business that will really stand out.
                     </Paragraph>
 
                     <Paragraph big>
-                        Start by determining whether you have the right skillset. For example, if you’re selling
-                        products from home, have you identified the right niche and marketplace? If you’re providing
-                        home-based services, is there a demand for those services in your area?
+                        Start by determining whether you have the right skillset. For example, if you’re selling products from home, have you identified the right niche and marketplace? If you’re providing home-based services, is there a demand for those services in your area?
                     </Paragraph>
 
-                    <Colorbox curveColor={color.green1} color={color.green3} curve theme="icon" Icon={StarIcon}
-                              maxWidth={670}>
-                        <Paragraph big style={{fontWeight: "bold"}}>
-                            Another important area to think about is how much time, effort and energy you have to put
-                            into your side business.
-                        </Paragraph>
-                        <Paragraph bottomMargin={0}>
-                            You need to commit to any venture in order to make it successful. And every side business
-                            will have dozens or hundreds of competitors, sometimes from full-time entrepreneurs.
-                        </Paragraph>
-                    </Colorbox>
-
                     <Paragraph big style={{marginTop: "48px", marginBottom: "48px"}}>
-                        Getting started in a home-based business is easy, but becoming a success is harder. Before
-                        committing too much time, energy and money into your new home-based business, it’s important to
-                        test the marketplace and validate your ideas.
+                        Don’t assume that just because it’s home-based, it’s easy. Every home-based business will have dozens or hundreds of competitors, and you need to stand out, deliver superior products and services and excel in your chosen area.
                     </Paragraph>
 
                     <Paragraph big style={{fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
-                        The thing to learn here is that it’s okay to say “no” to your first, second or third home-based
-                        business ideas.
-                    </Paragraph>
-
-                    <Paragraph big>
-                        Very few entrepreneurs get it right first time. In fact, getting it wrong is often a badge of
-                        honor!
-                    </Paragraph>
-
-                    <Paragraph big>
-                        Still, you don’t want to waste too much time, energy or money on the wrong initiatives, so ask
-                        and answer these questions honestly to find the right way forward.
+                        Getting started in a home-based business is easy, but becoming a success is harder. Before committing too much time, energy and money into your new home-based business, it’s important to test the marketplace and validate your ideas.
                     </Paragraph>
                 </TitleBox>
 
@@ -202,7 +174,25 @@ const ValidatingBusinessIdea = () => (
                         </Paragraph>
                     </TextBlockWithImage>
 
+                    <TextBlockWithImage width={100} widthUnit="%" SvgImage={InvolvedIcon} 
+                                        imageBackgroundColor={color.red2}
+                                        imageShadowColor={color.purple2}>
+                        <Heading size={4}>
+                            Get involved with business communities and discussion groups
+                        </Heading>
+                        <Paragraph bottomPadding={0} bottomMargin={0}>
+                            One of the great things about home-based business is that there are plenty of great communities and discussion groups. Get involved in them and learn the ins and outs of your chosen market before committing.
+                        </Paragraph>
+                    </TextBlockWithImage>
+
                 </GridSectionList>
+
+                <Paragraph big style={{ justifyContent: "center", width: "100%", maxWidth: "720px", margin: "auto auto 24px auto" }}>
+                    The thing to learn here is that it’s okay to say “no” to your first, second or third home-based business ideas. Very few entrepreneurs get it right first time. In fact, getting it wrong is often a badge of honor!
+                </Paragraph>
+                <Paragraph big style={{ justifyContent: "center", width: "100%", maxWidth: "720px", margin: "auto" }}>
+                    Still, you don’t want to waste too much time, energy or money on the wrong initiatives, so ask and answer these questions honestly to find the right way forward.
+                </Paragraph>
             </GridSection>
 
         </Container>

@@ -213,7 +213,7 @@ const TabScrollable = ({ layout, columns }) => {
                         Federal Business Licenses and Permits
                       </Paragraph>
 
-                      <Paragraph big>
+                      <Paragraph mixed big>
                         The Small Business Administration provides{" "}
                         <a href="https://www.sba.gov/business-guide/launch-your-business/apply-licenses-permits" target="_blank" rel="noopener noreferrer">
                           details of any national or federal licenses and permits

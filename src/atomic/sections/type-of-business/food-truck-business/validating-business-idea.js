@@ -112,23 +112,12 @@ const ValidatingBusinessIdea = () => (
                     <AbsoluteCurve>
                         <Curve color={color.blue1}/>
                     </AbsoluteCurve>
-                    <Heading size={3}>Validating Your Daycare Business Idea</Heading>
+                    <Heading size={3}>Validating Your Food Truck Business Idea</Heading>
                     <Paragraph big>
-                        The areas we’ve listed above are just starting points — there are many different types of
-                        daycare businesses. Once you’ve identified specific daycare areas you might like
-                        to go into, you need to validate your daycare business idea.
-                    </Paragraph>
-                    <Paragraph big style={{fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
-                        Remember too that every daycare business will have many competitors.
+                        These ideas are just starting points — you’ll need to do plenty of research to understand your customers and create a food truck experience they’re going to love.
                     </Paragraph>
                     <Paragraph big>
-                        You will need to stand out and offer superior childcare to excel as a daycare business owner.
-                    </Paragraph>
-                    <Paragraph big>
-                        Not every idea you have will make it through to becoming a daycare business. There are all sorts
-                        of reasons to say “yes” or “no” to specific ideas and approaches — think about what your
-                        strengths and weaknesses are so you can choose a type of daycare business that you’d be great
-                        at.
+                        It can be quite expensive to open a food truck business, with estimates of between $50,000 and $100,000 for your startup costs. Before committing too much time, energy and money into your new food truck business, it’s vital to test the marketplace.
                     </Paragraph>
                 </TitleBox>
 
@@ -190,6 +179,9 @@ const ValidatingBusinessIdea = () => (
                     </TextBlockWithImage>
 
                 </GridSectionList>
+                <Paragraph big style={{ justifyContent: "center", width: "100%", maxWidth: "750px", margin: "auto" }}>              
+                    Keep researching and testing until you find the right type of food truck business. It’s fine to say no to the first few ideas, so long as you settle on a niche where there’s a genuine need.
+                </Paragraph>
             </GridSection>
 
         </Container>

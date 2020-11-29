@@ -259,18 +259,13 @@ export const namingYourBusiness = [
   },
   {
     type: `header`,
-    content: `Wisconsin LLC DBA or Trade Names`,
+    content: `Rules on Wisconsin LLC Name Availability`,
     size: 3,
     marginBottom: 24,
   },
   {
     type: `text`,
-    content: `You might choose to do business under a different name from your legal LLC name. In Wisconsin, doing business under a different name is known as a “Trade Name.” You might choose to use a different name from your WI formal LLC name for a variety of reasons.`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `For example, your LLC might be called Wisconsin Travel and Tourism Holding Company LLC and you have a chain called Riverside Rovers. You should file a trade name to let the Wisconsin Department of Financial Institutions know. `,
+    content: `Once you’ve decided on a name for your LLC and checked business name availability, you’ll need to meet the Wisconsin Department of Financial Institutions’s naming rules. These do vary from state to state — we’ve got general naming rules below, as well as naming rules specific to LLC businesses formed in WI.`,
     marginBottom: 48,
   },
   {

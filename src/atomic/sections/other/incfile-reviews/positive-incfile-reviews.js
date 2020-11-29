@@ -125,7 +125,7 @@ const PositiveIncfileReviews = () => (
         <TabsWrapper>
           <Scroller>
             <Tab>Facebook</Tab>
-            <Tab>Shopper Review</Tab>
+            <Tab>Shopper Approved</Tab>
           </Scroller>
         </TabsWrapper>
         <PanelsWrapper>

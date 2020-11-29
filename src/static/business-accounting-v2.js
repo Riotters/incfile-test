@@ -11,7 +11,7 @@ export const accounting = {
   header2: "No risk. No obligation.",
   button: {
     text: "Get a Free Tax Consultation",
-    url: "/",
+    url: "#tax_consulting",
   },
 };
 
@@ -128,17 +128,15 @@ export const ins_and_outs = {
       },
       {
         question: "S Corporation Tax Filing",
-        answer: `If you set up your company to be an S Corporation, or elect to have your LLC file taxes as an S Corporation, this may provide you with some tax advantages to reduce your self-employment tax liability.
-        <br />
-        S Corporations, like LLCs, do not have to pay corporate income tax. Instead, the company’s income gets passed through to the owners and is reported on the company owners’ personal income tax returns.
-        <br />
-        The tax treatment of S Corporations is different from LLCs, in that the company owners can choose to pay the members a salary (subject to payroll taxes) and also assign additional income to be treated as a distribution, which is not subject to payroll or self-employment taxes. This gives the owners some flexibility in how they pay themselves from the company’s profits, as well as reducing payroll taxes.`,
-        list: [
-          `Filing as an S Corporation requires you to <a href="/research-topics/c-corporation-info/form-2553/">file Form 2553: Entity Classification Election.</a>`,
-          `You will also need to file an 1120-S: U.S. Income Tax Return for an S Corporation or an 1120-A, the short version of this form.`,
-          `Review how the S Corporation can considerably reduce your self-employment tax obligations with our <a href="/s-corporation-tax-calculator/">S Corporation
-          Tax Calculator.</a>`,
-        ],
+        answer: `<p>If you set up your company to be an S Corporation, or elect to have your LLC file taxes as an S Corporation, this may provide you with some tax advantages to reduce your self-employment tax liability.</p></br>
+        <p>S Corporations, like LLCs, do not have to pay corporate income tax. Instead, the company’s income gets passed through to the owners and is reported on the company owners’ personal income tax returns.</p></br>
+        <p>The tax treatment of S Corporations is different from LLCs, in that the company owners can choose to pay the members a salary (subject to payroll taxes) and also assign additional income to be treated as a distribution, which is not subject to payroll or self-employment taxes. This gives the owners some flexibility in how they pay themselves from the company’s profits, as well as reducing payroll taxes.</p>
+            <ul>
+            <li>Filing as an S Corporation requires you to <a href="/research-topics/c-corporation-info/form-2553/">file Form 2553: Entity Classification Election.</a></li>
+            <li>You will also need to file an 1120-S: U.S. Income Tax Return for an S Corporation or an 1120-A, the short version of this form.</li>
+            <li>Review how the S Corporation can considerably reduce your self-employment tax obligations with our <a href="/s-corporation-tax-calculator/">S Corporation
+            Tax Calculator.</a></li>
+            </ul>`,
       },
       {
         question: "C Corporation Tax Filing",

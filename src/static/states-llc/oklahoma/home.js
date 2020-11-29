@@ -107,12 +107,17 @@ export const howToGuide = [
     type: `header`,
     content: `Review Information From the Oklahoma Secretary of State`,
     size: 3,
-    marginBottom: 32,
+    marginBottom: 24,
+  },
+  {
+    type: `text`,
+    content: `The Oklahoma Secretary of State has plenty of information on forming and running a business in Oklahoma.`,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
-      header: `The Oklahoma Secretary of State has plenty of information on forming and running a business in Oklahoma. Check out the following resources: `,
+      header: `Check out the following resources: `,
       list: [
         `<a href="https://www.sos.ok.gov/business/default.aspx" target="_blank" rel="noopener noreferrer">Oklahoma Secretary of State for forming and running your OK LLC</a>`,
         `<a href="https://www.ok.gov/odol/" target="_blank" rel="noopener noreferrer">Oklahoma Department of Labor for OK employers and hiring</a>`,
@@ -126,51 +131,35 @@ export const howToGuide = [
     type: `header`,
     content: `Special Types of Oklahoma LLCs`,
     size: 3,
-    marginBottom: 32,
+    marginBottom: 24,
   },
   {
     type: `text`,
     content: `A regular Oklahoma LLC is suitable for most business needs, but you also have a few other options to incorporate a special type of LLC.`,
     marginBottom: 32,
   },
+
   {
-    type: `header`,
-    content: `Form an Oklahoma Series LLC`,
-    size: 3,
-    marginBottom: 32,
-  },
-  {
-    type: `text`,
-    content: `In Oklahoma, you have the option to set up a “Series LLC” — these are specialized LLCs designed to allow you to manage multiple separate LLCs under one master, umbrella LLC. These can be very useful if you don’t want to set up a separate Oklahoma LLC for every individual business you run.`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `<a href="/blog/post/series-llc-why-need-one/"> Decide if an Oklahoma Series LLC is right for your new business.</a>`,
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `Form a Professional Oklahoma LLC`,
-    size: 3,
-    marginBottom: 32,
-  },
-  {
-    type: `text`,
-    content: `Some states, including Oklahoma, allow certain occupations to form “Professional LLCs.” These types of businesses typically have special requirements and licensing. Oklahoma does not specifically list the professions that can create a professional LLC.`,
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `Form a Foreign LLC in Oklahoma`,
-    size: 3,
-    marginBottom: 32,
-  },
-  {
-    type: `text`,
-    content: `<p>If your business is already operating in another state and expanding to Oklahoma, you’ll need to form a foreign LLC.</p></br>
-                <p><a href="/oklahoma-llc/form-filling-permit-requirements/">More information on Oklahoma filing and licensing requirements here.</a></p>`,
-    marginBottom: 40,
+    type: `accordion`,
+    content: {
+      items: [
+        {
+          question: `Form an Oklahoma Series LLC`,
+          answer: `<p>In Oklahoma, you have the option to set up a “Series LLC” — these are specialized LLCs designed to allow you to manage multiple separate LLCs under one master, umbrella LLC. These can be very useful if you don’t want to set up a separate Oklahoma LLC for every individual business you run.</p></br>
+            <a href="/blog/post/series-llc-why-need-one/">Decide if an Oklahoma Series LLC is right for your new business.</a>`,
+        },
+        {
+          question: `Form a Professional Oklahoma LLC`,
+          answer: `Some states, including Oklahoma, allow certain occupations to form “Professional LLCs.” These types of businesses typically have special requirements and licensing. Oklahoma does not specifically list the professions that can create a professional LLC.`,
+        },
+        {
+          question: `Form a Foreign LLC in Oklahoma`,
+          answer: `<p>If your business is already operating in another state and expanding to Oklahoma, you’ll need to form a foreign LLC.</p></br>
+          <p><a href="/oklahoma-llc/form-filling-permit-requirements/">More information on Oklahoma filing and licensing requirements here.</a></p>`,
+        },
+      ],
+    },
+    marginBottom: 48,
   },
   {
     type: `header`,
@@ -181,13 +170,13 @@ export const howToGuide = [
   {
     type: `text`,
     content: `Want to know your next steps after creating a new LLC in Oklahoma? We’ve got you covered. <a href="/after-forming-llc/">Here’s our guide</a> to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more.`,
-    marginBottom: 40,
+    marginBottom: 48,
   },
   {
     type: `header`,
     content: `Detailed Information for Your Oklahoma LLC`,
     size: 3,
-    marginBottom: 32,
+    marginBottom: 24,
   },
   {
     type: `text`,

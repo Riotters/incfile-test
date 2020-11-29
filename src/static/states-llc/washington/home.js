@@ -372,7 +372,7 @@ export const namingYourBusiness = [
   },
   {
     type: `text`,
-    content: `Most areas will not allow you to form LLCs with names that:`,
+    content: `Most states will not allow you to form LLCs with names that:`,
     marginBottom: 16,
   },
   {
@@ -423,17 +423,17 @@ export const namingYourBusiness = [
     marginBottom: 16,
   },
   {
+    type: `text`,
+    content: `For example, your LLC might be called Washington Real Estate Waterside Holding Company LLC and you have a brand called “Seattle Lakefront Properties.” You should file a trade name to let the Washington Secretary of State know. In Washington, you do that through a Business License Application form, or you can have Incfile do it on your behalf through our Assumed Business Name service.`,
+    marginBottom: 16,
+  },
+  {
     type: `button`,
     content: {
       text: `Incfile’s DBA/Trade Name service`,
       url: `/fictitious-business-or-trade-name/`,
     },
     theme: `primary48`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `For example, your LLC might be called Washington Real Estate Waterside Holding Company LLC and you have a brand called “Seattle Lakefront Properties.” You should file a trade name to let the Washington Secretary of State know. In Washington, you do that through a Business License Application form, or you can have Incfile do it on your behalf through our Assumed Business Name service.`,
     marginBottom: 32,
   },
   {

@@ -45,7 +45,7 @@ const SettingBusiness = () => (
           <h4>Finances and Taxes</h4>
           <p>
             You will need a separate business bank account for your bookstore business. You might also want to consider a business credit card. Additionally, you will also need to keep careful bookkeeping records and file business and personal taxes. Here at Incfile we can even{" "}
-            <Link to="/business-accounting/">help you file your taxes</Link>.
+            <Link style={{ fontWeight: "bold" }} to="/business-accounting/">help you file your taxes</Link>.
           </p>
         </TopImageBox>
 
