@@ -166,7 +166,7 @@ export const howToGuide = [
   {
     type: `text`,
     content: `<p>If your business is already operating in another state and expanding to Ohio, you’ll need to form a foreign LLC.</p></br>
-              <p><a href="/ohio-llc/fees-filing-requirements/">More information on Ohio filing and licensing requirements here.</a></p>`,
+              <p><a href="/ohio-llc/form-filling-permit-requirements/">More information on Ohio filing and licensing requirements here.</a></p>`,
     marginBottom: 32,
   },
 
@@ -476,7 +476,7 @@ export const namingYourBusiness = [
       list: [
         `If you don’t want to form your Ohio LLC right now, you can reserve the business name with the Ohio Secretary of State. You will need to complete a <a href="https://www.sos.state.oh.us/globalassets/business/forms/534b.pdf">Name Reservation / Transfer / Cancellation </a> Form and file it with the OH SOS. You do not need to reserve a name if you are forming your business right away."`,
         `If you’re ready to start your LLC, you can formally file your Certificate of Formation with the Ohio SOS, or
-             <a href="/ohio-llc/fees-filing-requirements/"> let Incfile take care of it for you.</a.`,
+             <a href="/ohio-llc/form-filling-permit-requirements/"> let Incfile take care of it for you.</a.`,
       ],
     },
     marginBottom: 48,
@@ -1076,7 +1076,7 @@ export const feesAndRequirments = [
 
   {
     type: `text`,
-    content: `<a href="/ohio-llc/fees-filing-requirements/">Learn about your ongoing Ohio LLC filing requirements</a>
+    content: `<a href="/ohio-llc/form-filling-permit-requirements/">Learn about your ongoing Ohio LLC filing requirements</a>
     and business filing deadlines with our helpful Ohio ongoing filing lookup tool.`,
     marginBottom: 16,
   },

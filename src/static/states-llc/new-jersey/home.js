@@ -81,7 +81,7 @@ export const howToGuide = [
           question: `STEP 2: Search for and Choose a Unique Business Name for Your New Jersey LLC`,
           answer: `<p>You will need a distinctive and original name for your New Jersey LLC that's not used by any other business in NJ. To find out if another company is using your chosen business name, carry out a New Jersey business entity name search on the NJ Division of Revenue and Enterprise Services website.</p></br>
             <p>There are a few rules you'll need to follow when choosing an LLC name. You can find out more in our guide to searching for and naming your New Jersey LLC.</p></br>
-            <p><a href="/new-jersey-llc/new-jersey-business-names/" target="_blank">Learn about New Jersey LLC business naming rules.</a></p>`,
+            <p><a href="/new-jersey-llc/how-to-name-your-llc/" target="_blank">Learn about New Jersey LLC business naming rules.</a></p>`,
         },
         {
           question: `STEP 3: Provide an Official Address for Your NJ LLC`,
@@ -175,7 +175,7 @@ export const howToGuide = [
     type: `arrow-link`,
     content: {
       text: `Naming Your New Jersey LLC`,
-      url: `/new-jersey-llc/new-jersey-business-names/`,
+      url: `/new-jersey-llc/how-to-name-your-llc/`,
     },
     marginBottom: 16,
   },
@@ -201,7 +201,7 @@ export const howToGuide = [
     type: `arrow-link`,
     content: {
       text: `Fees and Requirements for Your New Jersey LLC`,
-      url: `/new-jersey-llc/fees-filing-requirements/`,
+      url: `/new-jersey-llc/form-filling-permit-requirements/`,
     },
     marginBottom: 16,
   },

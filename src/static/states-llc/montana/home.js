@@ -72,7 +72,7 @@ export const howToGuide = [
           question: `STEP 2: Search for and Choose a Unique Business Name for Your Montana LLC`,
           answer: `<p>You will need a distinctive and original name for your Montana LLC that's not used by any other business in MS. To find out if another company is using your chosen business name, carry out a Montana business entity name search on the MT Secretary of State website.</p></br>
                    <p>There are a few rules you'll need to follow when choosing an LLC name. You can find out more in our guide to searching for and naming your Montana LLC.</p></br>
-                   <a href="/Montana-llc/how-to-name-your-llc/"> Learn about Montana LLC business naming rules.</a>`,
+                   <a href="/montana-llc/how-to-name-your-llc/"> Learn about Montana LLC business naming rules.</a>`,
         },
         {
           question: `STEP 3: Provide an Official Address for Your MS LLC`,
@@ -84,7 +84,7 @@ export const howToGuide = [
           <p>This position can be filled by you, another manager in the business or a dedicated Registered Agent service. Your Registered Agent must have a physical street address in Montana and must be present to receive important documents for your company during business hours.</p></br>
           
           <p>At Incfile, all of our packages include a Montana Registered Agent service that is free for the first year and just $119 per year afterward. We also have a dashboard where you can log in and easily view any document your Registered Agent has received on your behalf.</p></br>
-          <a href="/Montana-llc/registered-agents-Montana-llc/">Learn more about Montana Registered Agents.</a>`,
+          <a href="/montana-llc/registered-agents-montana-llc/">Learn more about Montana Registered Agents.</a>`,
         },
         {
           question: `STEP 5: Get an Employer Identification Number (EIN) from the Internal Revenue Service`,
@@ -171,7 +171,7 @@ export const howToGuide = [
   {
     type: `text`,
     content: `<p>If your business is already operating in another state and expanding to Montana, you’ll need to form a foreign LLC.</p></br>
-              <p><a href="/Montana-llc/fees-filing-requirements/">More information on Montana filing and licensing requirements here.</a></p>`,
+              <p><a href="/montana-llc/form-filling-permit-requirements/">More information on Montana filing and licensing requirements here.</a></p>`,
     marginBottom: 32,
   },
 
@@ -190,7 +190,7 @@ export const howToGuide = [
     type: `arrow-link`,
     content: {
       text: `Naming Your Montana LLC`,
-      url: `/Montana-llc/how-to-name-your-llc/`,
+      url: `/montana-llc/how-to-name-your-llc/`,
     },
     marginBottom: 16,
   },
@@ -203,7 +203,7 @@ export const howToGuide = [
     type: `arrow-link`,
     content: {
       text: `Montana  Registered Agents for LLCs`,
-      url: `/Montana-llc/registered-agents-Montana-llc/`,
+      url: `/montana-llc/registered-agents-montana-llc/`,
     },
     marginBottom: 16,
   },
@@ -216,7 +216,7 @@ export const howToGuide = [
     type: `arrow-link`,
     content: {
       text: `Fees and Requirements for Montana LLCs`,
-      url: `/Montana-llc/form-filling-permit-requirements/`,
+      url: `/montana-llc/form-filling-permit-requirements/`,
     },
     marginBottom: 16,
   },
@@ -229,7 +229,7 @@ export const howToGuide = [
     type: `arrow-link`,
     content: {
       text: `Federal, State, Sales and Other Taxes for Your Montana LLC`,
-      url: `/Montana-llc/business-taxes/`,
+      url: `/montana-llc/business-taxes/`,
     },
     marginBottom: 16,
   },
@@ -402,7 +402,7 @@ export const namingYourBusiness = [
       list: [
         `If you don’t want to form your LLC right now, you can reserve the business name with the Montana Secretary of State. You will need to complete an Application for Reservation of Name and file it with the MT SOS. You do not need to reserve a name if you are forming your business right away."`,
         `If you’re ready to start your LLC, you can formally file your Certificate of Formation with the Montana SOS, or
-             <a href="/Montana-llc/fees-filing-requirements/"> let Incfile take care of it for you.</a.`,
+             <a href="/montana-llc/form-filling-permit-requirements/"> let Incfile take care of it for you.</a.`,
       ],
     },
     marginBottom: 48,
@@ -976,7 +976,7 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `<a href="/montana-llc/fees-filing-requirements/">Learn about your ongoing Montana LLC filing requirements</a>
+    content: `<a href="/montana-llc/form-filling-permit-requirements/">Learn about your ongoing Montana LLC filing requirements</a>
     and business filing deadlines with our helpful Montana ongoing filing lookup tool..`,
     marginBottom: 16,
   },

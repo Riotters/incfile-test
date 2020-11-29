@@ -89,7 +89,7 @@ export const howToGuide = [
           <p>This position can be filled by you, another manager in the business or a dedicated Registered Agent service. Your Registered Agent must have a physical street address in Mississippi and must be present to receive important documents for your company during business hours.</p></br>
           
           <p>At Incfile, all of our packages include a Mississippi Registered Agent service that is free for the first year and just $119 per year afterward. We also have a dashboard where you can log in and easily view any document your Registered Agent has received on your behalf.</p></br>
-          <a href="/Mississippi-llc/registered-agents-Mississippi-llc/">Learn more about Mississippi Registered Agents.</a>`,
+          <a href="/mississippi-llc/registered-agents-mississippi-llc/">Learn more about Mississippi Registered Agents.</a>`,
         },
         {
           question: `STEP 5: Get an Employer Identification Number (EIN) from the Internal Revenue Service`,
@@ -160,7 +160,7 @@ export const howToGuide = [
   {
     type: `text`,
     content: `<p>If your business is already operating in another state and expanding to Mississippi, you’ll need to form a foreign LLC.</p></br>
-              <p><a href="/Mississippi-llc/fees-filing-requirements/">More information on Mississippi filing and licensing requirements here.</a></p>`,
+              <p><a href="/mississippi-llc/fees-filing-requirements/">More information on Mississippi filing and licensing requirements here.</a></p>`,
     marginBottom: 32,
   },
 
@@ -179,7 +179,7 @@ export const howToGuide = [
     type: `arrow-link`,
     content: {
       text: `Naming Your Mississippi LLC`,
-      url: `/Mississippi-llc/how-to-name-your-llc/`,
+      url: `/mississippi-llc/how-to-name-your-llc/`,
     },
     marginBottom: 16,
   },
@@ -192,7 +192,7 @@ export const howToGuide = [
     type: `arrow-link`,
     content: {
       text: `Mississippi  Registered Agents for LLCs`,
-      url: `/Mississippi-llc/registered-agents-Mississippi-llc/`,
+      url: `/mississippi-llc/registered-agents-mississippi-llc/`,
     },
     marginBottom: 32,
   },
@@ -205,7 +205,7 @@ export const howToGuide = [
     type: `arrow-link`,
     content: {
       text: `Fees and Requirements for Mississippi LLCs`,
-      url: `/Mississippi-llc/form-filling-permit-requirements/`,
+      url: `/mississippi-llc/form-filling-permit-requirements/`,
     },
     marginBottom: 16,
   },
@@ -218,7 +218,7 @@ export const howToGuide = [
     type: `arrow-link`,
     content: {
       text: `Federal, State, Sales and Other Taxes for Your Mississippi LLC`,
-      url: `/Mississippi-llc/business-taxes/`,
+      url: `/mississippi-llc/business-taxes/`,
     },
     marginBottom: 16,
   },
