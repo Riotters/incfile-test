@@ -1330,7 +1330,7 @@ export const businessTaxes = [
 	},
 	{
 		type: `text`,
-		content: `<a href="https://mtrevenue.gov/taxes/"  target="_blank" rel="noopener noreferrer>Get details on the Montana state tax here.</a> `,
+		content: `<a href="https://mtrevenue.gov/taxes/"  target="_blank" rel="noopener noreferrer">Get details on the Montana state tax here.</a> `,
 		marginBottom: 32,
 	},
 	{

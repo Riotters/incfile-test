@@ -1405,7 +1405,7 @@ export const businessTaxes = [
 	},
 	{
 		type: `text`,
-		content: `<a href="https://www.tn.gov/revenue/taxes/sales-and-use-tax.html"  target="_blank" rel="noopener noreferrer>Get details on the Tennessee sales tax online here.</a> `,
+		content: `<a href="https://www.tn.gov/revenue/taxes/sales-and-use-tax.html"  target="_blank" rel="noopener noreferrer">Get details on the Tennessee sales tax online here.</a> `,
 		marginBottom: 16,
 	},
 	{
