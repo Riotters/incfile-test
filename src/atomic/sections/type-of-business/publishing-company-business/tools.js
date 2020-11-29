@@ -29,7 +29,7 @@ const ToolsAndLinks = () => (
             <LinksContainer>
 
                 <LinkItem>
-                    <PathLink to="International Digital Publishing Forum" textColor={color.blue1}
+                    <PathLink to="http://idpf.org/forums/" textColor={color.blue1}
                               hoverColor={color.orange1} arrowColor={color.blue1}>
                         International Digital Publishing Forum
                     </PathLink>

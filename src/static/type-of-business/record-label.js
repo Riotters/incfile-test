@@ -2,7 +2,7 @@ import {color} from "../../components/styles/colors";
 
 export const InfoCards = {
     title: `Insurance for Your Record Label Business`,
-    description: `Most record label businesses should have comprehensive business insurance. There are various types.`,
+    description: `Most record label businesses should have <a href='https://land.coverwallet.com/incfile'>comprehensive business insurance</a>. There are various types.`,
     items: [
         {
             backgroundColor: color.babyblue3,

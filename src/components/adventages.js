@@ -7,6 +7,8 @@ import ArrowSVG from "../images/arrow.inline.svg";
 import IconCircle from "./icons/circle";
 import Image from "../atomic/atoms/image/image";
 import CloseIcon from "../images/icons/close.inline.svg"
+import {Paragraph} from "../atomic/atoms/typography/paragraph";
+import parse from "html-react-parser"
 
 const Wrapper = styled.div`
     padding-top: 24px;
@@ -152,7 +154,7 @@ const Adventages = ({className, headline, text, colorStroke, circleBackgroundCol
                 }
 
                 {text &&
-                <p>{text}</p>
+                <Paragraph mixed bottomMargin={0}>{parse(text)}</Paragraph>
                 }
 
                 {url &&

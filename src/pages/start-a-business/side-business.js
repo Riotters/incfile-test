@@ -360,7 +360,7 @@ const SideBusiness = () => (
 
           <Paragraph big style={{ paddingTop: "48px", paddingBottom: 0 }} mixed={true}>
             Our <Link to="/business-entity-comparison/">in-depth guide</Link> covers more of the advantages and disadvantages of different types of business entities, and you’ve still got questions, you can read our answers to frequently asked questions on{" "}
-            <a herf="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/" target="_blank" rel="noopener noreferrer">
+            <a href="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/" target="_blank" rel="noopener noreferrer">
               choosing the right business structure
             </a>
             .

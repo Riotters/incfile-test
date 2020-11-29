@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import ArrowLink from "../../arrow-link"
 import VisibilitySensor from "../../VisibilitySensor"
+import parse from "html-react-parser"
 
 const Wrapper = styled.div`
   display: flex;
@@ -42,7 +43,7 @@ const TextCenterLayout = ({className, headline, headlineWidth, text, textWidth, 
             <VisibilitySensor partialVisibility once>
                 {({ isVisible }) => (
                 <p className={isVisible ? "slideUp enter" : "slideUp"}>
-                    {text}
+                    {parse(text)}
                 </p>
                 )}
             </VisibilitySensor>

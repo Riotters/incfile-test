@@ -163,36 +163,35 @@ export const FinancesAccordionContent = {
                 },
                 {
                     text: `QuickBooks,`,
-                    url: `/`
+                    url: `https://quickbooks.intuit.com/`
                 },
                 {
                     text: `FreshBooks,`,
-                    url: `/`
+                    url: `https://www.freshbooks.com/`
                 },
                 {
                     text: `FreeAgent,`,
-                    url: `/`
+                    url: `https://www.freeagent.com/`
                 },
                 {
                     text: `ZipBooks,`,
-                    url: `/`
+                    url: `https://zipbooks.com/`
                 },
                 {
                     text: `Wave Accounting,`,
-                    url: `/`
+                    url: `https://www.waveapps.com/`
                 },
                 {
                     text: `Xero,`,
-                    url: `/`
+                    url: `https://www.xero.com/`
                 },
                 {
                     text: `and`
                 },
                 {
                     text: `Bench.`,
-                    url: `/`
-                }
-            ]
+                    url: `https://bench.co/`
+                }]
         }
     ]
 }
