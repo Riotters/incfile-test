@@ -16,17 +16,16 @@ export const top = {
   }
   
   export const about = {
+    content:{
     header: `Change your LLC or Corporation name, address, and more`,
-    text2: 
-      `When you first filed to become a <a href='/start-your-company/'>legal business entity</a>, part of the process included creating Articles of Incorporation or Articles of Organization. The information that you submitted contained the name of the business, which business structure best suited your needs (such as an <a href="/limited-liability-company/">LLC</a>, <a href="/what-is-s-corporation/">S Corporation</a>, <a href="/what-is-c-corporation/">C Corporation</a> or a <a href="/what-is-non-profit-corporation/">Nonprofit Corporation</a>), the appointed <a href="/manage-your-company/registered-agent/">registered agent's</a> name and contact information, the effective date in which you started the business and the names of the current partners or shareholders.`,
-      text3: 
+    text2: `When you first filed to become a <a href="/start-your-company/">legal business entity</a>, part of the process included creating Articles of Incorporation or Articles of Organization. The information that you submitted contained the name of the business, which business structure best suited your needs (such as an <a href="/limited-liability-company/">LLC</a>, <a href="/what-is-s-corporation/">S Corporation</a>, <a href="/what-is-c-corporation/">C Corporation</a> or a <a href="/what-is-non-profit-corporation/">Nonprofit Corporation</a>), the appointed <a href="/manage-your-company/registered-agent/">registered agent's</a> name and contact information, the effective date in which you started the business and the names of the current partners or shareholders.`,
+    text3: 
       `As time passes and businesses evolve, you may find that you are in a situation where your business name no longer fits the services you provide or perhaps the leadership team of your company is undergoing changes. Any major event that alters the information on your Articles of Incorporation or Articles of Organization needs to be reported to your secretary of state by filing an Articles of Amendment form.`,
     box: {
-      header:
-        `As time passes and businesses evolve, you may find that you are in a situation where your business name no longer fits the services you provide or perhaps the leadership team of your company is undergoing changes.`,
       text:
         `Any major event that alters the information on your Articles of Incorporation or Articles of Organization needs to be reported to your secretary of state by filing an Articles of Amendment form.`,
     },
+   },   
   }
 
   export const requirements = {

@@ -10,6 +10,7 @@ import IconTextColorBox from "../../../molecules/text-blocks/icon-h4-text-color"
 import NumericList from "../../../organisms/lists/numeric-boxed-list";
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-green3.inline.svg";
+import parse from "html-react-parser";
 
 const About = styled.section`
   position: relative;
@@ -31,9 +32,14 @@ const AboutSection = ({ className, content }) => (
         </Oval>
         <ImageContent image="main-header-object-amendment-name-change">
             <Heading size={3} bottomMargin="24">{content.header}</Heading>
-            <Paragraph big bottomMargin="40">{content.text2}</Paragraph>
-            <Paragraph big bottomMargin="72">{content.text3}</Paragraph>
-            <IconTextColorBox color={color.orange3} curveColor={color.blue1} Icon={IconSVG} content={content.box} bottomMargin="72" rounded curve/>
+            {console.log(content)}
+            <Paragraph big mixed bottomMargin="40" >
+            {parse(content.text2)}
+            </Paragraph>
+            <Paragraph big mixed bottomMargin="72">
+            {parse(content.text3)}
+            </Paragraph>
+            {/* <IconTextColorBox color={color.orange3} rounded curve curveColor={color.blue1} Icon={IconSVG} content={content.box} bottomMargin="72" rounded curve/> */}
         </ImageContent>
     </About>
   );
