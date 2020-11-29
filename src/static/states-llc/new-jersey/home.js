@@ -34,9 +34,10 @@ export const howToGuide = [
     marginBottom: 16,
   },
   {
-    type: "text", //video
-    content: '<iframe width="720" height="350" src="https://www.youtube.com/watch?v=0sh4OgPJ3kE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>',
-    marginBottom: 24,
+    type: "video",
+    image: 'forming-an-llc-in-new-jersey-8266',
+    id: `0sh4OgPJ3kE`,
+    marginBottom: 40,
   },
   {
     type: `list-dot`,
@@ -80,7 +81,7 @@ export const howToGuide = [
           question: `STEP 2: Search for and Choose a Unique Business Name for Your New Jersey LLC`,
           answer: `<p>You will need a distinctive and original name for your New Jersey LLC that's not used by any other business in NJ. To find out if another company is using your chosen business name, carry out a New Jersey business entity name search on the NJ Division of Revenue and Enterprise Services website.</p></br>
             <p>There are a few rules you'll need to follow when choosing an LLC name. You can find out more in our guide to searching for and naming your New Jersey LLC.</p></br>
-            <p><a href="/new-jersey-llc/new-jersey-business-names/" target="_blank">Learn about New Jersey LLC business naming rules.</a></p>`,
+            <p><a href="/new-jersey-llc/how-to-name-your-llc/" target="_blank">Learn about New Jersey LLC business naming rules.</a></p>`,
         },
         {
           question: `STEP 3: Provide an Official Address for Your NJ LLC`,
@@ -174,7 +175,7 @@ export const howToGuide = [
     type: `arrow-link`,
     content: {
       text: `Naming Your New Jersey LLC`,
-      url: `/new-jersey-llc/new-jersey-business-names/`,
+      url: `/new-jersey-llc/how-to-name-your-llc/`,
     },
     marginBottom: 16,
   },
@@ -200,7 +201,7 @@ export const howToGuide = [
     type: `arrow-link`,
     content: {
       text: `Fees and Requirements for Your New Jersey LLC`,
-      url: `/new-jersey-llc/fees-filing-requirements/`,
+      url: `/new-jersey-llc/form-filling-permit-requirements/`,
     },
     marginBottom: 16,
   },
@@ -1017,7 +1018,7 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `New Jersey LLCs aren’t required to have an Operating Agreement, but they are extremely useful for several reasons (<a href="/research-topics/llc-info/the-llc-operating-agreement/" target="_blank">learn about them here</a>). If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your New Jersey business. You can choose to make changes to the template based on your unique requirements.`,
+    content: `New Jersey LLCs aren’t required to have an Operating Agreement, but they are extremely useful for several reasons (<a href="/research-topics/llc-info/llc-operating-agreement/" target="_blank">learn about them here</a>). If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your New Jersey business. You can choose to make changes to the template based on your unique requirements.`,
     marginBottom: 48,
   },
   {

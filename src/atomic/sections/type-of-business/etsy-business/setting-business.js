@@ -21,14 +21,10 @@ const SettingBusiness = () => (
 
         <ContentCenter>
             <TextCenterLayout
-                headline="Setting up Your Life or Business Coaching Operations"
+                headline="Setting Up Your Etsy Shop"
                 headlineWidth={770}
                 textWidth={770}
-                text="Once you've legally created your Etsy business, you’ll need to get some other things in place. The most obvious first step is to create your Etsy seller account at etsy.com. Etsy will walk you through creating a seller profile, adding your products, and creating store policies, like those for returns and exchanges and customer service. You'll want to have attractive product photos and descriptive listings to help people find your products."
-            />
-            <TextCenterLayout
-                textWidth={770}
-                text="There are other logistical matters you'll need to consider in order to get your Etsy shop up and running. These include:"
+                text="There are certain forms and legalities you need to follow to keep your Etsy business in good standing."
             />
         </ContentCenter>
 

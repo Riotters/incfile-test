@@ -89,7 +89,7 @@ export const howToGuide = [
           <p>This position can be filled by you, another manager in the business or a dedicated Registered Agent service. Your Registered Agent must have a physical street address in Mississippi and must be present to receive important documents for your company during business hours.</p></br>
           
           <p>At Incfile, all of our packages include a Mississippi Registered Agent service that is free for the first year and just $119 per year afterward. We also have a dashboard where you can log in and easily view any document your Registered Agent has received on your behalf.</p></br>
-          <a href="/Mississippi-llc/registered-agents-Mississippi-llc/">Learn more about Mississippi Registered Agents.</a>`,
+          <a href="/mississippi-llc/registered-agents-mississippi-llc/">Learn more about Mississippi Registered Agents.</a>`,
         },
         {
           question: `STEP 5: Get an Employer Identification Number (EIN) from the Internal Revenue Service`,
@@ -160,7 +160,7 @@ export const howToGuide = [
   {
     type: `text`,
     content: `<p>If your business is already operating in another state and expanding to Mississippi, you’ll need to form a foreign LLC.</p></br>
-              <p> More information on Mississippi <a href="/Mississippi-llc/fees-filing-requirements/"> filing and licensing requirements here</a> </p>`,
+              <p><a href="/mississippi-llc/fees-filing-requirements/">More information on Mississippi filing and licensing requirements here.</a></p>`,
     marginBottom: 32,
   },
 
@@ -179,7 +179,7 @@ export const howToGuide = [
     type: `arrow-link`,
     content: {
       text: `Naming Your Mississippi LLC`,
-      url: `/Mississippi-llc/how-to-name-your-llc/`,
+      url: `/mississippi-llc/how-to-name-your-llc/`,
     },
     marginBottom: 16,
   },
@@ -192,7 +192,7 @@ export const howToGuide = [
     type: `arrow-link`,
     content: {
       text: `Mississippi  Registered Agents for LLCs`,
-      url: `/Mississippi-llc/registered-agents-Mississippi-llc/`,
+      url: `/mississippi-llc/registered-agents-mississippi-llc/`,
     },
     marginBottom: 32,
   },
@@ -205,7 +205,7 @@ export const howToGuide = [
     type: `arrow-link`,
     content: {
       text: `Fees and Requirements for Mississippi LLCs`,
-      url: `/Mississippi-llc/form-filling-permit-requirements/`,
+      url: `/mississippi-llc/form-filling-permit-requirements/`,
     },
     marginBottom: 16,
   },
@@ -218,7 +218,7 @@ export const howToGuide = [
     type: `arrow-link`,
     content: {
       text: `Federal, State, Sales and Other Taxes for Your Mississippi LLC`,
-      url: `/Mississippi-llc/business-taxes/`,
+      url: `/mississippi-llc/business-taxes/`,
     },
     marginBottom: 16,
   },
@@ -420,7 +420,7 @@ export const namingYourBusiness = [
       list: [
         `<p>If you don’t want to form your LLC right now, you can reserve the business name with the Mississippi Division of Corporations. You will need to complete a Business Name Registration form and file it with the AK DOC. You do not need to reserve a name if you are forming your business right away.</p></br>
               <a href="https://www.commerce.mississippi.gov/web/cbpl/Corporations/ReservingRegisteringBusinessName.aspx" target="_blank" rel="noopener noreferrer">Mississippi DOC LLC name reservation form</a>`,
-        `<p>If you’re ready to start your LLC, you can formally file your Certificate of Formation with the Mississippi DOC, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MS">let Incfile take care of it for you</a>.</p>`,
+        `<p>If you’re ready to start your LLC, you can formally file your Certificate of Formation with the Mississippi DOC, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MS">let Incfile take care of it for you.</a></p>`,
       ],
     },
     marginBottom: 32,
@@ -944,7 +944,7 @@ export const registeredAgent = [
       list: [
         `<a href="/research-topics/registered-agent/registered-agent-function/">The Main Functions of a Mississippi Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Mississippi Registered Agent</a>`,
-        `<a href-"/research-topics/registered-agent/registered-agent-tasks/">What a Mississippi Registered Agent Does</a>`,
+        `<a href="/research-topics/registered-agent/registered-agent-tasks/">What a Mississippi Registered Agent Does</a>`,
       ],
     },
     marginBottom: 48,
@@ -1185,7 +1185,7 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `<a href="/research-topics/llc-info/the-llc-operating-agreement/"> Operating agreement</a>
+    content: `<a href="/research-topics/llc-info/llc-operating-agreement/"> Operating agreement</a>
      is a business document that covers how the business will be run, how managers and members are chosen, rights and duties of members and several other key areas.`,
     marginBottom: 16,
   },
@@ -1342,7 +1342,7 @@ export const feesAndRequirments = [
                   <li>Governing organizations in your industry</li>
                   <li>Federal, state and local regulations</li>
                   </ul></br>
-                  That’s why our <a href-"/business-license-research-package/">business license research package</a> is so useful. It explores all of these areas for you and provides a comprehensive overview of exactly what your Mississippi LLC needs to be compliant.`,
+                  That’s why our <a href="/business-license-research-package/">business license research package</a> is so useful. It explores all of these areas for you and provides a comprehensive overview of exactly what your Mississippi LLC needs to be compliant.`,
         },
       ],
     },
@@ -1364,7 +1364,7 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `Need help? Incfile provides a complete Business Tax Filing service.<a href"/business-accounting/"> Learn more.</a>.`,
+    content: `Need help? Incfile provides a complete Business Tax Filing service.<a href="/business-accounting/"> Learn more.</a>.`,
     marginBottom: 32,
   },
   {

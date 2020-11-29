@@ -10,7 +10,7 @@ export const typeBusiness = {
             circleText: 2,
             imageName: "bulding-395",
             headline: "Real estate startup businesses",
-            text: "Dealing with staff, coverage, issues and other people management areas"
+            text: "Capturing and sharing details of property listings, transactions, contracts, funding and similar details"
         },
         {
             circleText: 3,

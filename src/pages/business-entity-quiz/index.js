@@ -1,9 +1,9 @@
 import React from "react";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-import {choose, top} from "../static/learning-center-entity/business-entity-quiz";
-import TopSection from "../atomic/sections/learning-center-entity/business-entity-quiz/top-section";
-import ChooseEntitySection from "../atomic/sections/learning-center-entity/business-entity-quiz/choose-entity";
+import Layout from "../../components/layout";
+import SEO from "../../components/seo";
+import {choose, top} from "../../static/learning-center-entity/business-entity-quiz";
+import TopSection from "../../atomic/sections/learning-center-entity/business-entity-quiz/top-section";
+import ChooseEntitySection from "../../atomic/sections/learning-center-entity/business-entity-quiz/choose-entity";
 
 const BusinessEntityQuiz = () => (
     <Layout>

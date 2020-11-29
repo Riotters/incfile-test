@@ -198,7 +198,7 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `Want to know your next steps after creating a new LLC in West Virginia? We’ve got you covered. Here’s our guide to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more.`,
+    content: `Want to know your next steps after creating a new LLC in West Virginia? We’ve got you covered. <a href="/after-forming-llc/">Here’s our guide</a> to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more.`,
     marginBottom: 32,
   },
   {
@@ -444,7 +444,7 @@ export const namingYourBusiness = [
       list: [
         `<p>If you don’t want to form your West Virginia LLC right now, you can reserve the business name with the West Virginia Secretary of State. You will need to complete an “Application for Name Reservation” and file it with the SOS. You do not need to reserve a name if you are forming your business right away.</p></br>
               <a href="https://sos.wv.gov/FormSearch/Business/Multiple-Company-Types/nr1.pdf" target="_blank" rel="noopener noreferrer">West Virginia SOS LLC name reservation form</a>`,
-        `<p>If you’re ready to start your West Virginia LLC, you can formally file your Articles of Organization with the Secretary of State, or<a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=WV/">let Incfile take care of it for you</a>.</p>`,
+        `<p>If you’re ready to start your West Virginia LLC, you can formally file your Articles of Organization with the Secretary of State, or<a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=WV/">let Incfile take care of it for you.</a></p>`,
       ],
     },
     marginBottom: 32,
@@ -536,7 +536,6 @@ export const namingYourBusiness = [
     marginBottom: 40,
     color: color.blue3,
   },
-
   {
     type: `arrow-link`,
     content: {
@@ -787,7 +786,7 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `In some situations, you might want to know the name of the Registered Agent that represents another West Virginia LLC. If you do, you can search the <a href"https://icis.corp.delaware.gov/ecorp/entitysearch/namesearch.aspx" target="_blank" rel="noopener noreferrer">  business database </a>of the Delaware Division of Corporations, as this will often provide details of a specific business’s Registered Agent.`,
+    content: `In some situations, you might want to know the name of the Registered Agent that represents another West Virginia LLC. If you do, you can search the <a href="https://icis.corp.delaware.gov/ecorp/entitysearch/namesearch.aspx" target="_blank" rel="noopener noreferrer">  business database </a>of the Delaware Division of Corporations, as this will often provide details of a specific business’s Registered Agent.`,
     marginBottom: 16,
   },
   {
@@ -886,7 +885,7 @@ export const registeredAgent = [
       list: [
         `<a href="/research-topics/registered-agent/registered-agent-function/">The Main Functions of a Delaware Registered Agentt</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Delaware Registered Agent</a>`,
-        `<a href-"/research-topics/registered-agent/registered-agent-tasks/">What a Delaware Registered Agent Does</a>`,
+        `<a href="/research-topics/registered-agent/registered-agent-tasks/">What a Delaware Registered Agent Does</a>`,
       ],
     },
     marginBottom: 48,
@@ -1095,7 +1094,7 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `West Virginia LLCs aren’t required to have an Operating Agreement, but they are extremely useful for several reasons (<a href="/research-topics/llc-info/the-llc-operating-agreement/">learn about them here</a>). If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your West Virginia business. You can choose to make changes to the template based on your unique requirements.`,
+    content: `West Virginia LLCs aren’t required to have an Operating Agreement, but they are extremely useful for several reasons (<a href="/research-topics/llc-info/llc-operating-agreement/">learn about them here</a>). If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your West Virginia business. You can choose to make changes to the template based on your unique requirements.`,
     marginBottom: 16,
   },
   {
@@ -1246,7 +1245,7 @@ export const feesAndRequirments = [
                   <li>Governing organizations in your industry</li>
                   <li>Federal, state and local regulations</li>
                   </ul></br>
-                  That’s why our <a href-"/business-license-research-package/">business license research package</a> is so useful. It explores all of these areas for you and provides a comprehensive overview of exactly what your Delaware LLC needs to be compliant.`,
+                  That’s why our <a href="/business-license-research-package/">business license research package</a> is so useful. It explores all of these areas for you and provides a comprehensive overview of exactly what your Delaware LLC needs to be compliant.`,
         },
       ],
     },
@@ -1267,7 +1266,7 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `If you want help with your taxes, Incfile provides a complete <a href"/business-accounting/"> Business Tax Filing service</a>.`,
+    content: `If you want help with your taxes, Incfile provides a complete <a href="/business-accounting/"> Business Tax Filing service</a>.`,
     marginBottom: 32,
   },
   {
@@ -1295,6 +1294,7 @@ export const businessTaxes = [
       ],
     },
     marginBottom: 16,
+    color: color.orange3,
   },
   {
     type: `text`,
@@ -1320,15 +1320,16 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `The West Virginia state tax rates are between 3 and 6.5 percent, depending on your income.`,
-    marginBottom: 32,
+    marginBottom: 16,
   },
   {
     type: `arrow-link`,
-    content: `Get details on the West Virginia state tax here.`,
-    url: `https://tax.wv.gov/Individuals/Pages/Individuals.aspx`,
-    marginBottom: 16,
+    content: {
+      text: `Get details on the West Virginia state tax here.`,
+      url: `https://tax.wv.gov/Individuals/Pages/Individuals.aspx`,
+    },
+    marginBottom: 32,
   },
-
   {
     type: `header`,
     content: `West Virginia Sales Taxes for LLCs`,
@@ -1341,31 +1342,16 @@ export const businessTaxes = [
     marginBottom: 32,
   },
   {
-    type: `text`,
-    content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the WV Department of Revenue. West Virginia sales tax is collected at the point of purchase. Sales tax rates do vary depending on the region, county or city where you are located.`,
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `Federal Taxes for Your West Virginia LLC: Self-Employment and Income Taxes`,
-    size: 3,
-    marginBottom: 24,
-  },
-  {
-    type: `text`,
-    content: `You will typically need to collect West Virginia sales tax on:`,
-    marginBottom: 32,
-  },
-  {
     type: `list-dot`,
     content: {
-      header: ``,
+      header: `You will typically need to collect West Virginia sales tax on:`,
       list: [
         `Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc. Certain services that your business might provide`,
         `Most states do not levy sales tax on goods that are considered necessities, like food, medications, clothing or gas.`,
       ],
     },
     marginBottom: 16,
+    color: color.babyblue3,
   },
   {
     type: `text`,
@@ -1380,11 +1366,12 @@ export const businessTaxes = [
   {
     type: `text`,
     content: `There are a couple of different federal taxes that every LLC will need to pay, including West Virginia LLCs. These are self-employment tax and federal income tax, which are taxed as “pass-through” income via your tax return forms.`,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `header`,
     content: `Federal Self-Employment Tax`,
+    size: 3,
     marginBottom: 16,
   },
   {
@@ -1545,11 +1532,7 @@ export const businessTaxes = [
           answer: `Yes. West Virginia does have a general state income tax. You can find more information above.`,
         },
         {
-          question: `What Is the Sales Tax Rate in West Virginia?`,
-          answer: `There is no sales tax in West Virginia, so the sales tax rate is zero.`,
-        },
-        {
-          question: `Do I Need to Pay Estimated Taxes??`,
+          question: `Do I Need to Pay Estimated Taxes?`,
           answer: `Yes. In most cases, you must pay estimated taxes on your West Virginia tax, federal income tax and self-employment tax. Speak to your accountant for more information.`,
         },
       ],

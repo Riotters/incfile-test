@@ -170,7 +170,7 @@ export const howToGuide = [
   {
     type: `text`,
     content: `<p>If your business is already operating in another state and expanding to Arkansas, you’ll need to form a foreign LLC.</p></br>
-              <p> More information on Arkansas <a href="/arkansas-llc/form-filling-permit-requirements/"> filing and licensing requirements here</a> </p>`,
+              <p><a href="/arkansas-llc/form-filling-permit-requirements/">More information on Arkansas filing and licensing requirements here.</a></p>`,
     marginBottom: 40,
   },
   {
@@ -181,7 +181,7 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `Want to know your next steps after creating a new LLC in Arkansas? We’ve got you covered. <a href="/after-forming-llc/"> Here’s our guide</a> to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more.`,
+    content: `Want to know your next steps after creating a new LLC in Arkansas? We’ve got you covered. <a href="/after-forming-llc/">Here’s our guide</a> to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more.`,
     marginBottom: 40,
   },
   {
@@ -836,7 +836,7 @@ export const registeredAgent = [
       list: [
         `<a href="/research-topics/registered-agent/registered-agent-function/">The Main Functions of a Arkansas Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Arkansas Registered Agent</a>`,
-        `<a href-"/research-topics/registered-agent/registered-agent-tasks/">What a Arkansas Registered Agent Does</a>`,
+        `<a href="/research-topics/registered-agent/registered-agent-tasks/">What a Arkansas Registered Agent Does</a>`,
       ],
     },
     marginBottom: 48,
@@ -1061,7 +1061,7 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Arkansas LLCs aren’t required to have an Operating Agreement, but they are extremely useful for several reasons (<a href="/research-topics/llc-info/the-llc-operating-agreement/">learn about them here</a>). If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Arkansas business. You can choose to make changes to the template based on your unique requirements.`,
+    content: `Arkansas LLCs aren’t required to have an Operating Agreement, but they are extremely useful for several reasons (<a href="/research-topics/llc-info/llc-operating-agreement/">learn about them here</a>). If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Arkansas business. You can choose to make changes to the template based on your unique requirements.`,
     marginBottom: 23,
   },
   {
@@ -1212,7 +1212,7 @@ export const feesAndRequirments = [
                   <li>Governing organizations in your industry</li>
                   <li>Federal, state and local regulations</li>
                   </ul></br>
-                  That’s why our <a href-"/business-license-research-package/">business license research package</a> is so useful. It explores all of these areas for you and provides a comprehensive overview of exactly what your Arkansas LLC needs to be compliant.`,
+                  That’s why our <a href="/business-license-research-package/">business license research package</a> is so useful. It explores all of these areas for you and provides a comprehensive overview of exactly what your Arkansas LLC needs to be compliant.`,
         },
       ],
     },
@@ -1234,7 +1234,7 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `If you want help with your taxes, Incfile provides a complete <a href"/business-accounting/"> Business Tax Filing service</a>.`,
+    content: `If you want help with your taxes, Incfile provides a complete <a href="/business-accounting/"> Business Tax Filing service</a>.`,
     marginBottom: 40,
   },
   {

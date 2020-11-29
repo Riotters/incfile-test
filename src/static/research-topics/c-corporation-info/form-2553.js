@@ -17,7 +17,7 @@ export const about = {
         you need to notify the IRS in advance by filing the appropriate paperwork.
         <a href="https://www.irs.gov/forms-pubs/about-form-2553" rel="noopener noreferrer nofollow" target="_blank">IRS Form 2553,</a>
         “Election By a Small Business Corporation,” is required to be filed with the IRS to switch a C Corporation to S Corporation status for purposes of federal taxation. To understand how much you could save in taxes by forming an S Corporation, check out our
-        <a href="/learning-center-entity/s-corp-tax-calculator" target="_blank">S Corporation Tax Calculator.</a>`,
+        <a href="/s-corporation-tax-calculator/">S Corporation Tax Calculator.</a>`,
   header2: `Why is Form 2553 so Important?`,
   text2: `It helps you reduce your tax liability. Instead of paying a corporate tax rate of up to 35 percent, Form 2553 turns your company into a “pass through entity” for tax purposes. This means the earnings from your company pass through directly to you (the owner) and any other shareholders, and you only have to pay taxes on the income at your own individual income tax rates.`,
   header3: `When is Form 2553 Due?`,

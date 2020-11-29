@@ -157,13 +157,13 @@ export const faq = {
           },
           {
             text: `operating agreement`,
-            url: `/research-topics/llc-info/the-llc-operating-agreement/`,
+            url: `/research-topics/llc-info/llc-operating-agreement/`,
           },
           {
             text: ` or other `,
           },
           {
-            text: `corporate bylawes`,
+            text: `corporate bylaws`,
             url: `/research-topics/c-corporation-info/what-are-bylaws/`,
           },
         ],

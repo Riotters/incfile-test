@@ -499,8 +499,8 @@ const LandscapingBusiness = () => (
             width={100}
             widthUnit="%"
           >
-            <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-              Series LLC
+<Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
+              <Link to={process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"}>Series LLC</Link>
             </Paragraph>
 
             <Paragraph big>This is a special type of LLC entity that's only available in certain states. It allows you to create "mini" LLCs, each with their own limited liability and separate assets, under the umbrella of a master LLC.</Paragraph>
@@ -553,10 +553,10 @@ const LandscapingBusiness = () => (
             <a href="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/" target="_blank" rel="noopener noreferrer">
               we’ve answered them to help you choose the right business structure
             </a>{" "}
-            for your daycare business.
+            for your laundromat business.
           </Paragraph>
           <Paragraph big style={{ paddingTop: "48px", paddingBottom: 0 }} mixed={true}>
-            In most cases our recommendation would be to create an LLC. We have a <Link to="/form-an-llc/">complete guide to everything you need to do</Link>, and we can set one up for your T-shirt business. <Link to="/llc-state-information/">LLC formation does vary from state to state</Link>, but
+            In most cases our recommendation would be to create an LLC. We have a <Link to="/form-an-llc/">complete guide to everything you need to do</Link>, and we can set one up for your laundromat business. <Link to="/llc-state-information/">LLC formation does vary from state to state</Link>, but
             we’ve got you covered, wherever you are.
           </Paragraph>
 

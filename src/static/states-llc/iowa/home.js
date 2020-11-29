@@ -178,14 +178,9 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `If your business is already operating in another state and expanding to Iowa, you’ll need to form a foreign LLC.`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `More information on
-      <a href="/iowa-llc/" target="_blank" >Iowa filing and licensing requirements here.</a>`,
-    marginBottom: 48,
+    content: `If your business is already operating in another state and expanding to Iowa, you’ll need to form a foreign LLC.<br>
+    <a href="/iowa-llc/">More information on Iowa filing and licensing requirements here.</a>`,
+    marginBottom: 40,
   },
   {
     type: `header`,
@@ -196,7 +191,7 @@ export const howToGuide = [
   {
     type: `text`,
     content: `Want to know your next steps after creating a new LLC in Iowa? We’ve got you covered.
-      <a href="/after-forming-llc/" target="_blank" >Here’s our guide</a>
+      <a href="/after-forming-llc/">Here’s our guide</a>
       to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more.`,
     marginBottom: 48,
   },
@@ -1048,7 +1043,7 @@ export const feesAndRequirments = [
   {
     type: `text`,
     content: `An Operating Agreement is extremely useful for several reasons 
-      (<a href="/research-topics/llc-info/the-llc-operating-agreement/" target="_blank">learn about them here</a>).
+      (<a href="/research-topics/llc-info/llc-operating-agreement/" target="_blank">learn about them here</a>).
       If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Iowa business. You can choose to make changes to the template based on your unique requirements.`,
     marginBottom: 48,
   },

@@ -237,7 +237,7 @@ export const RingText2 = {
         },
         {
             color: color.babyblue1,
-            boldText: "1%",
+            boldText: "2%",
             text: "Pies"
         },
     ]

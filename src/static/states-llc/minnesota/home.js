@@ -133,61 +133,44 @@ export const howToGuide = [
     marginBottom: 32,
   },
   {
-    type: `header`,
-    content: `Form a Professional Minnesota LLC`,
-    size: 3,
-    marginBottom: 32,
-  },
-  {
-    type: `text`,
-    content: `Some states, including Minnesota, allow certain occupations to form “Professional LLCs.” These types of businesses typically have special requirements and licensing.`,
-    marginBottom: 24,
-  },
-  {
-    type: `list-dot`,
+    type: `accordion`,
+    marginBottom: 48,
     content: {
-      header: `Here are the areas and occupations that the MN Secretary of State allows to form Minnesota professional LLCs:`,
-      list: [
-        `Medicine and surgery`,
-        `Physician Assistant`,
-        `Registered Nurse`,
-        `Chiropractor`,
-        `Optometrist`,
-        `Psychologist`,
-        `Podiatrist`,
-        `Social Worker`,
-        `Marriage and Family Therapist`,
-        `Professional Counsellor`,
-        `Dentist`,
-        `Pharmacist`,
-        `Veterinarian`,
-        `Architect`,
-        `Engineer`,
-        `Surveyor`,
-        `Landscape Architect`,
-        `Geo scientist`,
-        `Interior Designer`,
+      items: [
+        {
+          question: `Form a Professional Minnesota LLC`,
+          answer: `<p>Some states, including Minnesota, allow certain occupations to form “Professional LLCs.” These types of businesses typically have special requirements and licensing.</p></br>
+            <p>Here are the areas and occupations that the MN Secretary of State allows to form Minnesota professional LLCs:</p>
+            <ul>
+            <li>Medicine and surgery</li>
+            <li>Physician Assistant</li>
+            <li>Registered Nurse</li>
+            <li>Chiropractor</li>
+            <li>Optometrist</li>
+            <li>Psychologist</li>
+            <li>Podiatrist</li>
+            <li>Social Worker</li>
+            <li>Marriage and Family Therapist</li>
+            <li>Professional Counsellor</li>
+            <li>Dentist</li>
+            <li>Pharmacist</li>
+            <li>Veterinarian</li>
+            <li>Architect</li>
+            <li>Engineer</li>
+            <li>Surveyor</li>
+            <li>Landscape Architect</li>
+            <li>Geo scientist</li>
+            <li>Interior Designer</li>
+            </ul></br>
+          <p>This is governed under the Professional Firms Act in Minnesota and there are certain requirements you will need to meet to form a professional LLC.</p></br>`,
+        },
+        {
+          question: `Form a Foreign LLC in Minnesota`,
+          answer: `<p>If your business is already operating in another state and expanding to Minnesota, you’ll need to form a foreign LLC.</p></br>
+          <a href="/minnesota-llc/form-filling-permit-requirements/">More information on Minnesota filing and licensing requirements here.</a>`,
+        },
       ],
     },
-    marginBottom: 24,
-    color: color.purple3,
-  },
-  {
-    type: `text`,
-    content: `This is governed under the Professional Firms Act in Minnesota and there are certain requirements you will need to meet to form a professional LLC.`,
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `Form a Foreign LLC in Minnesota`,
-    size: 3,
-    marginBottom: 32,
-  },
-  {
-    type: `text`,
-    content: `<p>If your business is already operating in another state and expanding to Minnesota, you’ll need to form a foreign LLC.</p></br>
-              <p> More information on Minnesota <a href="/minnesota-llc/form-filling-permit-requirements/"> filing and licensing requirements here</a> </p>`,
-    marginBottom: 32,
   },
   {
     type: `header`,
@@ -197,7 +180,7 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `Want to know your next steps after creating a new LLC in Minnesota? We’ve got you covered. Here’s our guide to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more.`,
+    content: `Want to know your next steps after creating a new LLC in Minnesota? We’ve got you covered. <a href="/after-forming-llc/">Here’s our guide</a> to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more.`,
     marginBottom: 32,
   },
   {
@@ -849,7 +832,7 @@ export const registeredAgent = [
       list: [
         `<a href="/research-topics/registered-agent/registered-agent-function/">The Main Functions of a Minnesota Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Minnesota Registered Agent</a>`,
-        `<a href-"/research-topics/registered-agent/registered-agent-tasks/">What a Minnesota Registered Agent Does</a>`,
+        `<a href="/research-topics/registered-agent/registered-agent-tasks/">What a Minnesota Registered Agent Does</a>`,
       ],
     },
     marginBottom: 48,
@@ -1063,7 +1046,7 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `An Operating Agreement is extremely useful for several reasons (<a href="/research-topics/llc-info/the-llc-operating-agreement/">learn about them here</a>). If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Minnesota business. You can choose to make changes to the template based on your unique requirements.`,
+    content: `An Operating Agreement is extremely useful for several reasons (<a href="/research-topics/llc-info/llc-operating-agreement/">learn about them here</a>). If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Minnesota business. You can choose to make changes to the template based on your unique requirements.`,
     marginBottom: 32,
   },
   {
@@ -1214,7 +1197,7 @@ export const feesAndRequirments = [
                   <li>Governing organizations in your industry</li>
                   <li>Federal, state and local regulations</li>
                   </ul></br>
-                  That’s why our <a href-"/business-license-research-package/">business license research package</a> is so useful. It explores all of these areas for you and provides a comprehensive overview of exactly what your Minnesota LLC needs to be compliant.`,
+                  That’s why our <a href="/business-license-research-package/">business license research package</a> is so useful. It explores all of these areas for you and provides a comprehensive overview of exactly what your Minnesota LLC needs to be compliant.`,
         },
       ],
     },
@@ -1236,7 +1219,7 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `If you want help with your taxes, Incfile provides a complete <a href"/business-accounting/"> Business Tax Filing service</a>.`,
+    content: `If you want help with your taxes, Incfile provides a complete <a href="/business-accounting/"> Business Tax Filing service</a>.`,
     marginBottom: 32,
   },
   {

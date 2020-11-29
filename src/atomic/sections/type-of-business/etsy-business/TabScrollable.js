@@ -185,7 +185,7 @@ const TabScrollable = ({ layout, columns }) => {
 
                       <Paragraph big mixed={true}>
                         You can find all the information you need about statewide licenses and permits on your state’s Secretary of State website. You can also find those details in our <Link to="/llc-state-information/">state-by-state guides to company formation.</Link> Alternatively, the Small
-                        Business Administration website has a list of licenses and permits by state.
+                        Business Administration website has a <a href="https://www.sba.gov/business-guide/launch-your-business/apply-licenses-permits" target="_blank" rel="noopener noreferrer">list of licenses and permits by state.</a>
                       </Paragraph>
                     </TextBlockWithImage>
                   </div>
@@ -291,7 +291,7 @@ const TabScrollable = ({ layout, columns }) => {
                         Although you can act as your own registered agent, we recommend using a professional service. It ensures there will always be someone available to receive important legal documentation on your behalf and also removes your name and address from the public record.
                       </Paragraph>
                       <Paragraph big mixed={true}>
-                        When you <Link to={`${process.env.ORDER_URL}/form-order-now.php`}>incorporate through us</Link>, we provide a complete Registered Agent service free for the first year.
+                        When you <Link to={`${process.env.ORDER_URL}/form-order-now.php`}>incorporate through us</Link>, we provide a <Link to="/manage-your-company/registered-agent/">complete Registered Agent service free</Link> for the first year.
                       </Paragraph>
                     </TextBlockWithImage>
                   </div>
@@ -366,9 +366,6 @@ const TabScrollable = ({ layout, columns }) => {
 
                       <Accordion tab content={MaintainingAccordionContent} />
 
-                      <Paragraph big mixed={true} style={{ marginTop: "48px" }}>
-                        As a rule of thumb, we recommend keeping back around a third of your earnings to pay your taxes. We can even <Link to="/business-accounting/">prepare and file your tax returns for you</Link>.
-                      </Paragraph>
                     </TextBlockWithImage>
                   </div>
                 );

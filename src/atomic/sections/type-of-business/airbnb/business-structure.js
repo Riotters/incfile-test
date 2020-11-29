@@ -79,7 +79,7 @@ const AirBnB1BusinessStructure = () => (
             Sole Proprietorship
           </Paragraph>
 
-          <Paragraph big>This is the "default" business structure and is what your Airbnb business will be if you decide not to create a more formal structure. We don't recommend this type of business as it doesn't give you the legal protections you need</Paragraph>
+          <Paragraph big>This is the "default" business structure and is what your Airbnb business will be if you decide not to create a more formal structure. We don't recommend this type of business as it doesn't give you the legal protections you need.</Paragraph>
         </TextBlockWithImage>
 
         <TextBlockWithImage
@@ -142,7 +142,7 @@ const AirBnB1BusinessStructure = () => (
               <Link to={process.env.ORDER_URL + "/form-order-now.php?entityType=S-Corporation"}>S Corporation</Link>
             </Paragraph>
 
-          <Paragraph big>This is a more complex type of business and isn't generally recommended for smaller organizations, like an Airbnb business</Paragraph>
+          <Paragraph big>This is a more complex type of business and isn't generally recommended for smaller organizations, like an Airbnb business.</Paragraph>
         </TextBlockWithImage>
 
         <TextBlockWithImage
@@ -171,7 +171,7 @@ const AirBnB1BusinessStructure = () => (
           <a href="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/" target="_blank" rel="noopener noreferrer">
             we’ve answered them to help you choose the right business structure
           </a>{" "}
-          for your daycare business.
+          for your airbnb business.
         </Paragraph>
         <Paragraph big mixed={true} style={{ marginBottom: "48px", paddingBottom: 0 }}>
           In most cases, our recommendation for your daycare business would be to create an LLC. We’ve <Link to="/form-an-llc/">got a complete guide</Link> to everything you need to do. <Link to="/llc-state-information/">LLC formation does vary from state to state</Link>, but we’ve got you covered,

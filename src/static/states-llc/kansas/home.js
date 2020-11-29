@@ -29,14 +29,9 @@ export const howToGuide = [
     marginBottom: 16,
   },
   {
-    type: `text`,
-    content: `Briefly, the benefits of starting a Kansas LLC include:`,
-    marginBottom: 16,
-  },
-  {
     type: `list-dot`,
     content: {
-      header: ``,
+      header: `Briefly, the benefits of starting a Kansas LLC include:`,
       list: [`Separating and limiting your personal liability from your business liability and debts`, `Quick and simple filing, management, compliance, regulation and administration of your Kansas LLC`, `Easy tax filing and potential advantages for your tax treatment`],
     },
     marginBottom: 48,
@@ -76,7 +71,7 @@ export const howToGuide = [
         },
         {
           question: `STEP 3: Provide an Official Address for Your KS LLC`,
-          answer: `Every Kansas LLC must have a designated street address. That could be your home address (if you’re running the company from your residence), your company’s office building or any physical address of your preference. The address must be inside the state of Kansas, but it cannot be a P.O. Box.`,
+          answer: `Every Kansas LLC must have a designated street address. That could be your home address (if you’re running the company from your residence), your company’s office building or any physical address of your preference. The address must be inside the state of Kansas, but it cannot be a P.O. Box. You can also use a Virtual Mailbox service if you do not have a physical address.`,
         },
         {
           question: `STEP 4: Assign a Kansas Registered Agent`,
@@ -91,7 +86,7 @@ export const howToGuide = [
           answer: `You will need an EIN to identify your business with the IRS. You use this number when filing and paying taxes or when submitting payroll information and payments for your employees. You can obtain one directly from the IRS, or we can get one for you as part of the Kansas LLC business formation process.`,
         },
         {
-          question: `STEP 6: File Articles of Organization with the kansas Division of Corporations`,
+          question: `STEP 6: File Articles of Organization With the Kansas Secretary of State`,
           answer: `<p> Once you've gathered all the information for your LLC, you’ll need to file a formal document with the KS Secretary of State. This document is known as your “Articles of Organization,” and filing the document creates your Kansas LLC. Here’s what is typically included:</p></br>
                    <ul>
                    <li> Your business name and address </li>
@@ -112,13 +107,18 @@ export const howToGuide = [
     marginBottom: 16,
   },
   {
+    type: `text`,
+    content: `The KS Secretary of State has plenty of information on forming and running a business in Kansas. Check out additional resources below.`,
+    marginBottom: 24,
+  },
+  {
     type: `list-dot`,
     content: {
-      header: `The KS Secretary of State has plenty of information on forming and running a business in Kansas. Check out additional resources below.<br>These are all the basic steps for forming an LLC in Kansas. You’ll find other useful information below.`,
+      header: `These are all the basic steps for forming an LLC in Kansas. You’ll find other useful information below.`,
       list: [
-        `<a href="https://sos.ks.gov/messages/page404.html" target="_blank" rel="noopener noreferrer">Kansas Secretary of State for forming and running your KS LLC</a>`,
-        `<a href="https://www.dol.ks.gov" target="_blank" rel="noopener noreferrer">Kansas Department of Labor for KS employers and hiring</a>`,
-        `<a href="https://www.ksrevenue.org/business.html" target="_blank" rel="noopener noreferrer">Kansas Department of Revenue for KS taxes/a>`,
+        `<a href="https://sos.kansas.gov/business/" target="_blank" rel="noopener noreferrer">Kansas Secretary of State for forming and running your KS LLC</a>`,
+        `<a href="https://www.dol.ks.gov/" target="_blank" rel="noopener noreferrer">Kansas Department of Labor for KS employers and hiring</a>`,
+        `<a href="https://www.ksrevenue.org/business.html" target="_blank" rel="noopener noreferrer">Kansas Department of Revenue for KS taxes</a>`,
       ],
     },
     marginBottom: 32,
@@ -148,7 +148,7 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `<a href="/post/series-llc-why-need-one/" target="_blank">Decide if a Kansas Series LLC is right for your new business.</a>`,
+    content: `<a href="/blog/post/series-llc-why-need-one/">Decide if a Kansas Series LLC is right for your new business.</a>`,
     marginBottom: 32,
   },
   {
@@ -159,7 +159,7 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `In Kansas certain professions can form “Professional LLCs.” These are companies providing defined, professional services. Kansas does not state the specific professions that can form professional LLCs`,
+    content: `In Kansas certain professions can form “Professional LLCs.” These are companies providing defined, professional services. Kansas does not state the specific professions that can form professional LLCs.`,
     marginBottom: 32,
   },
   {
@@ -171,8 +171,8 @@ export const howToGuide = [
   {
     type: `text`,
     content: `<p>If your business is already operating in another state and expanding to Kansas, you’ll need to form a foreign LLC.</p></br>
-              <p> More information on Kansas <a href="/kansas-llc/fees-filing-requirements/"> filing and licensing requirements here</a> </p>`,
-    marginBottom: 32,
+              <p><a href="/kansas-llc/form-filling-permit-requirements/">More information on Kansas filing and licensing requirements here.</a></p>`,
+    marginBottom: 40,
   },
   {
     type: `header`,
@@ -182,13 +182,13 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `Want to know your next steps after creating a new LLC in Kansas? We’ve got you covered. <a href="/after-forming-llc/"> Here’s our guide</a> to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more.`,
+    content: `Want to know your next steps after creating a new LLC in Kansas? We’ve got you covered. <a href="/after-forming-llc/">Here’s our guide</a> to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more.`,
     marginBottom: 32,
   },
   {
     type: `header`,
     content: `Detailed Information for Your Kansas LLC`,
-    size: 4,
+    size: 3,
     marginBottom: 16,
   },
   {
@@ -427,7 +427,7 @@ export const namingYourBusiness = [
       list: [
         `<p>If you don’t want to form your LLC right now, you can reserve the business name with the Kansas Division of Corporations. You will need to complete a Business Name Registration form and file it with the AK DOC. You do not need to reserve a name if you are forming your business right away.</p></br>
               <a href="https://www.commerce.Kansas.gov/web/cbpl/Corporations/ReservingRegisteringBusinessName.aspx" target="_blank" rel="noopener noreferrer">Kansas DOC LLC name reservation form</a>`,
-        `<p>If you’re ready to start your LLC, you can formally file your Certificate of Formation with the Kansas DOC, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=KS">let Incfile take care of it for you</a>.</p>`,
+        `<p>If you’re ready to start your LLC, you can formally file your Certificate of Formation with the Kansas DOC, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=KS">let Incfile take care of it for you.</a></p>`,
       ],
     },
     marginBottom: 32,
@@ -948,7 +948,7 @@ export const registeredAgent = [
       list: [
         `<a href="/research-topics/registered-agent/registered-agent-function/">The Main Functions of a Kansas Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Kansas Registered Agent</a>`,
-        `<a href-"/research-topics/registered-agent/registered-agent-tasks/">What a Kansas Registered Agent Does</a>`,
+        `<a href="/research-topics/registered-agent/registered-agent-tasks/">What a Kansas Registered Agent Does</a>`,
       ],
     },
     marginBottom: 48,
@@ -1188,7 +1188,7 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `<a href="/research-topics/llc-info/the-llc-operating-agreement/"> Operating agreement</a>
+    content: `<a href="/research-topics/llc-info/llc-operating-agreement/"> Operating agreement</a>
      is a business document that covers how the business will be run, how managers and members are chosen, rights and duties of members and several other key areas.`,
     marginBottom: 16,
   },
@@ -1325,7 +1325,7 @@ export const feesAndRequirments = [
                   <li>Governing organizations in your industry</li>
                   <li>Federal, state and local regulations</li>
                   </ul></br>
-                  That’s why our <a href-"/business-license-research-package/">business license research package</a> is so useful. It explores all of these areas for you and provides a comprehensive overview of exactly what your Kansas LLC needs to be compliant.`,
+                  That’s why our <a href="/business-license-research-package/">business license research package</a> is so useful. It explores all of these areas for you and provides a comprehensive overview of exactly what your Kansas LLC needs to be compliant.`,
         },
       ],
     },
@@ -1347,7 +1347,7 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `Need help? Incfile provides a complete Business Tax Filing service.<a href"/business-accounting/"> Learn more.</a>.`,
+    content: `Need help? Incfile provides a complete Business Tax Filing service.<a href="/business-accounting/"> Learn more.</a>.`,
     marginBottom: 32,
   },
   {

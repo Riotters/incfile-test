@@ -111,7 +111,7 @@ const ValidatingBusinessIdea = () => (
                         In short, you need a business plan — here’s how to think about your business idea.
                     </Paragraph>
 
-                    <Heading size={3} style={{fontFamily: "Avenir", fontWeight: "900", color: color.black, marginTop: "100px", fontSize: "40px"}}>
+                    <Heading size={3} style={{ marginTop: "100px" }}>
                         Do Market Research and Validate Your Bar or Club Products and Services
                     </Heading>
 

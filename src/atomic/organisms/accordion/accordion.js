@@ -13,72 +13,91 @@ import { Paragraph } from "../../atoms/typography/paragraph";
 import ArrowSVG from "../../../images/arrow-circle.inline.svg";
 import CurveSVG from "../../../images/orange-curve.inline.svg";
 
-import { Accordion, AccordionItem, AccordionItemHeading, AccordionItemButton, AccordionItemPanel } from "react-accessible-accordion";
+import {
+	Accordion,
+	AccordionItem,
+	AccordionItemHeading,
+	AccordionItemButton,
+	AccordionItemPanel,
+} from "react-accessible-accordion";
 
 const Wrapper = styled.div`
   display: flex;
   width: 100%;
   position: relative;
-  margin-top: ${(props) => (props.topMargin ? `${props.topMargin}px` : props.tab ? "" : "24px")};
-  margin-bottom: ${(props) => (props.bottomMargin ? `${props.bottomMargin}px` : "")};
+  margin-top: ${(props) =>
+		props.topMargin ? `${props.topMargin}px` : props.tab ? "" : "24px"};
+  margin-bottom: ${(props) =>
+		props.bottomMargin ? `${props.bottomMargin}px` : ""};
 
   @media (min-width: 769px) {
-    margin-top: ${(props) => (props.topMargin ? `${props.topMargin}px` : props.tab ? "" : "56px")};
+    margin-top: ${(props) =>
+			props.topMargin ? `${props.topMargin}px` : props.tab ? "" : "56px"};
     ${(props) => (props.noAutoWidth ? "" : "width: auto;")}
     padding: ${(props) => (props.tab ? "" : "25px 29px 0")};
   }
 `;
 
 const Curve = styled.div`
-  display: none;
-  height: 25px;
-  width: 25px;
-  position: absolute;
+	display: none;
+	height: 25px;
+	width: 25px;
+	position: absolute;
 
-  @media (min-width: 769px) {
-    display: block;
-    top: ${(props) => (!props.curveRightBottom && !props.curveLeftBottom ? "0" : "")};
-    left: ${(props) => (props.curveLeft || props.curveLeftBottom ? "0" : "")};
-    right: ${(props) => (props.curveRight || props.curveRightBottom ? "0" : "")};
-    bottom: ${(props) => (props.curveRightBottom || props.curveLeftBottom ? "-25px" : "")};
-    transform: ${(props) => (props.curveRight ? "rotate(90deg)" : props.curveRightBottom ? "scale(-1)" : props.curveLeftBottom ? "rotate(-90deg)" : "")};
-  }
+	@media (min-width: 769px) {
+		display: block;
+		top: ${(props) =>
+			!props.curveRightBottom && !props.curveLeftBottom ? "0" : ""};
+		left: ${(props) => (props.curveLeft || props.curveLeftBottom ? "0" : "")};
+		right: ${(props) =>
+			props.curveRight || props.curveRightBottom ? "0" : ""};
+		bottom: ${(props) =>
+			props.curveRightBottom || props.curveLeftBottom ? "-25px" : ""};
+		transform: ${(props) =>
+			props.curveRight
+				? "rotate(90deg)"
+				: props.curveRightBottom
+				? "scale(-1)"
+				: props.curveLeftBottom
+				? "rotate(-90deg)"
+				: ""};
+	}
 
-  svg {
-    path {
-      fill: ${(props) => (props.curveColor ? props.curveColor : "")};
-    }
-  }
+	svg {
+		path {
+			fill: ${(props) => (props.curveColor ? props.curveColor : "")};
+		}
+	}
 `;
 
 const TabsWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: ${(props) => props.maxWidth ?? "770"}px;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: ${(props) => props.maxWidth ?? "770"}px;
 `;
 
 const TabBox = styled.div`
-  box-shadow: 0 24px 32px 0 rgba(236, 236, 236, 0.5);
-  margin-bottom: 8px;
-  width: 100%;
+	box-shadow: 0 24px 32px 0 rgba(236, 236, 236, 0.5);
+	margin-bottom: 8px;
+	width: 100%;
 
-  .accordion__panel {
-    overflow: hidden;
-    //transition: max-height 0.6s;
-    max-height: 1200px;
-    width: 100%;
-    opacity: 1;
+	.accordion__panel {
+		overflow: hidden;
+		//transition: max-height 0.6s;
+		max-height: 1200px;
+		width: 100%;
+		opacity: 1;
 
-    &[hidden] {
-      //transition: max-height 0.6s, padding-top 0.6s, padding-bottom 0.6s, opacity 0.6s;
-      display: block;
-      max-height: 0;
-      padding-top: 0;
-      padding-bottom: 0;
-      opacity: 0;
-    }
-  }
+		&[hidden] {
+			//transition: max-height 0.6s, padding-top 0.6s, padding-bottom 0.6s, opacity 0.6s;
+			display: block;
+			max-height: 0;
+			padding-top: 0;
+			padding-bottom: 0;
+			opacity: 0;
+		}
+	}
 `;
 
 const PanelWrapper = styled.div`
@@ -126,6 +145,20 @@ const PanelWrapper = styled.div`
     font-size: 16px;
     line-height: 24px;
     text-decoration: none;
+
+    &.button {
+        color: ${color.white};
+        background-color: ${color.orange1};
+        border: 2px solid ${color.orange1};
+        border-radius: 50px;
+        padding: 10px 38px;
+        background-color 0.3s ease,color 0.3s ease;
+
+        &:hover {
+            color: ${color.orange1};
+            background-color: ${color.white};
+        }
+    }
   }
 
   li {
@@ -151,63 +184,63 @@ const PanelWrapper = styled.div`
 `;
 
 const Button = styled.div`
-  min-width: 80px;
-  width: 100%;
-  color: #4e4e4e;
-  align-items: center;
-  background: #fff;
-  display: flex;
-  cursor: pointer;
-  position: relative;
-  border-radius: 5px;
-  overflow: hidden;
-  border: none;
+	min-width: 80px;
+	width: 100%;
+	color: #4e4e4e;
+	align-items: center;
+	background: #fff;
+	display: flex;
+	cursor: pointer;
+	position: relative;
+	border-radius: 5px;
+	overflow: hidden;
+	border: none;
 `;
 
 const Content = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-grow: 1;
-  padding: 16px 40px 16px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-grow: 1;
+	padding: 16px 40px 16px 0;
 
-  span {
-    color: #4e4e4e;
-    font-family: Avenir;
-    font-size: 16px;
-    text-align: left;
-    width: 100%;
-    line-height: 24px;
-  }
+	span {
+		color: #4e4e4e;
+		font-family: Avenir;
+		font-size: 16px;
+		text-align: left;
+		width: 100%;
+		line-height: 24px;
+	}
 `;
 
 const Icon = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 80px;
-  width: 80px;
-  min-height: 80px;
-  min-width: 80px;
-  max-height: 80px;
-  max-width: 80px;
-  opacity: 0.75;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 80px;
+	width: 80px;
+	min-height: 80px;
+	min-width: 80px;
+	max-height: 80px;
+	max-width: 80px;
+	opacity: 0.75;
 
-  svg {
-    transform: rotate(180deg);
-    transition: transform 0.3s ease;
-  }
+	svg {
+		transform: rotate(180deg);
+		transition: transform 0.3s ease;
+	}
 `;
 
 const TabHeading = styled(AccordionItemHeading)`
-  .accordion__button[aria-expanded="true"] {
-    border-radius: 5px 5px 0 0;
-    font-weight: 900;
+	.accordion__button[aria-expanded="true"] {
+		border-radius: 5px 5px 0 0;
+		font-weight: 900;
 
-    svg {
-      transform: rotate(0deg);
-    }
-  }
+		svg {
+			transform: rotate(0deg);
+		}
+	}
 `;
 
 const cn = (...args) => args.filter(Boolean).join(" ");
@@ -223,8 +256,8 @@ const cn = (...args) => args.filter(Boolean).join(" ");
 // };
 
 const panel = {
-  hidden: { height: 0 },
-  visible: { height: "auto" },
+	hidden: { height: 0 },
+	visible: { height: "auto" },
 };
 
 // const Panel = ({ children }) => {
@@ -237,109 +270,166 @@ const panel = {
 //   );
 // };
 
-const AccordionFaq = ({ content, curve, curveRight, curveRightBottom, curveLeft, curveLeftBottom, curveColor, tab, maxWidth, noAutoWidth, topMargin, bottomMargin }) => {
-  return (
-    // <VisibilitySensor partialVisibility once>
-    //   {({ isVisible }) => (
-    <Wrapper
-      //className={isVisible ? "slideUp enter" : "slideUp"}
-      tab={tab}
-      noAutoWidth={noAutoWidth}
-      topMargin={topMargin}
-      bottomMargin={bottomMargin}
-    >
-      {curve && (
-        <Curve curveRight={curveRight} curveRightBottom={curveRightBottom} curveLeft={curveLeft} curveLeftBottom={curveLeftBottom} curveColor={curveColor}>
-          <CurveSVG />
-        </Curve>
-      )}
-      <TabsWrapper maxWidth={maxWidth}>
-        <Accordion allowZeroExpanded={true}>
-          {content.items.map((item) => (
-            <TabBox>
-              <AccordionItem>
-                <TabHeading>
-                  <AccordionItemButton>
-                    <Button className="accordion-tab">
-                      <Icon>
-                        <ArrowSVG />
-                      </Icon>
-                      <Content>
-                        <span>{item.question}</span>
-                      </Content>
-                    </Button>
-                  </AccordionItemButton>
-                </TabHeading>
-                <PanelWrapper className="accordion-panel">
-                  <AccordionItemPanel>
-                    {typeof item.answer === "string" ? (
-                      <Paragraph bottomMargin="0" mixed>
-                        {parse(item.answer)}
-                      </Paragraph>
-                    ) : null}
-                    {typeof item.answer === "object" ? (
-                      <Paragraph bottomMargin="0" mixed>
-                        {item.answer.map((el) => (el.url ? <Link to={el.url}>{` ${parse(el.text)} `}</Link> : parse(el.text)))}
-                      </Paragraph>
-                    ) : null}
+const AccordionFaq = ({
+	content,
+	curve,
+	curveRight,
+	curveRightBottom,
+	curveLeft,
+	curveLeftBottom,
+	curveColor,
+	tab,
+	maxWidth,
+	noAutoWidth,
+	topMargin,
+	bottomMargin,
+}) => {
+	return (
+		// <VisibilitySensor partialVisibility once>
+		//   {({ isVisible }) => (
+		<Wrapper
+			//className={isVisible ? "slideUp enter" : "slideUp"}
+			tab={tab}
+			noAutoWidth={noAutoWidth}
+			topMargin={topMargin}
+			bottomMargin={bottomMargin}
+		>
+			{curve && (
+				<Curve
+					curveRight={curveRight}
+					curveRightBottom={curveRightBottom}
+					curveLeft={curveLeft}
+					curveLeftBottom={curveLeftBottom}
+					curveColor={curveColor}
+				>
+					<CurveSVG />
+				</Curve>
+			)}
+			<TabsWrapper maxWidth={maxWidth}>
+				<Accordion allowZeroExpanded={true}>
+					{content.items.map((item) => (
+						<TabBox>
+							<AccordionItem>
+								<TabHeading>
+									<AccordionItemButton>
+										<Button className="accordion-tab">
+											<Icon>
+												<ArrowSVG />
+											</Icon>
+											<Content>
+												<span>{item.question}</span>
+											</Content>
+										</Button>
+									</AccordionItemButton>
+								</TabHeading>
+								<PanelWrapper className="accordion-panel">
+									<AccordionItemPanel>
+										{typeof item.answer === "string" ? (
+											<Paragraph bottomMargin="0" mixed>
+												{parse(item.answer)}
+											</Paragraph>
+										) : null}
+										{typeof item.answer === "object" ? (
+											<Paragraph bottomMargin="0" mixed>
+												{item.answer.map((el) =>
+													el.url ? (
+														<Link to={el.url}>{` ${parse(el.text)} `}</Link>
+													) : (
+														parse(el.text)
+													)
+												)}
+											</Paragraph>
+										) : null}
 
-                    {item.list && (
-                      <ul>
-                        {item.list.map((listitem) => (
-                          <li>{parse(listitem)}</li>
-                        ))}
-                      </ul>
-                    )}
+										{item.list && (
+											<ul>
+												{item.list.map((listitem) => (
+													<li>{parse(listitem)}</li>
+												))}
+											</ul>
+										)}
 
-                    {typeof item.text === "string" ? (
-                      <Paragraph topMargin="32" bottomMargin="0" mixed>
-                        {parse(item.text)}
-                      </Paragraph>
-                    ) : null}
-                    {typeof item.text === "object" ? (
-                      <Paragraph topMargin="32" bottomMargin="0" mixed>
-                        {item.text.map((el) => (el.url ? <Link to={el.url}>{` ${parse(el.text)} `}</Link> : el.text))}
-                      </Paragraph>
-                    ) : null}
+										{typeof item.text === "string" ? (
+											<Paragraph topMargin="32" bottomMargin="0" mixed>
+												{parse(item.text)}
+											</Paragraph>
+										) : null}
+										{typeof item.text === "object" ? (
+											<Paragraph topMargin="32" bottomMargin="0" mixed>
+												{item.text.map((el) =>
+													el.url ? (
+														<Link to={el.url}>{` ${parse(el.text)} `}</Link>
+													) : (
+														el.text
+													)
+												)}
+											</Paragraph>
+										) : null}
 
-                    {item.answer2 &&
-                      item.answer2.map((e, i) => (
-                        <div>
-                          {e.type === "paragraph" && <Paragraph mixed={true}>{parse(e.content)}</Paragraph>}
+										{item.answer2 &&
+											item.answer2.map((e, i) => (
+												<div>
+													{e.type === "paragraph" && (
+														<Paragraph
+															mixed={true}
+															bottomMargin={e.marginBottom}
+														>
+															{parse(e.content)}
+														</Paragraph>
+													)}
 
-                          {e.type === "arrow-links" &&
-                            e.content.map((link) => (
-                              <ArrowLink url={link.url} style={link.style} externalLink={link.externalLink}>
-                                {parse(link.text)}
-                              </ArrowLink>
-                            ))}
+													{e.type === "arrow-links" &&
+														e.content.map((link) => (
+															<ArrowLink
+																url={link.url}
+																style={link.style}
+																externalLink={link.externalLink}
+															>
+																{parse(link.text)}
+															</ArrowLink>
+														))}
 
-                          {e.type === "list-dot-without-bg" && <ListWithDot color={e.color} content={e.content} />}
+													{e.type === "list-dot-without-bg" && (
+														<ListWithDot color={e.color} content={e.content} />
+													)}
 
-                          {e.type === "button" && <Button content={e.content} theme={e.theme} arrow width="350px" margin="16px 0 0 0" marginMD="42px 0 42px 0" />}
-                        </div>
-                      ))}
+													{e.type === "button" && (
+														<Button
+															content={e.content}
+															theme={e.theme}
+															arrow
+															width="350px"
+															margin="16px 0 0 0"
+															marginMD="42px 0 42px 0"
+														/>
+													)}
+												</div>
+											))}
 
-                    {item.arrowLink && (
-                      <ArrowLink url={item.arrowLink.url} style={item.arrowLink.styles} externalLink={item.externalLink}>
-                        {item.arrowLink.text}
-                      </ArrowLink>
-                    )}
-                  </AccordionItemPanel>
-                </PanelWrapper>
-              </AccordionItem>
-            </TabBox>
-          ))}
-        </Accordion>
-      </TabsWrapper>
-    </Wrapper>
-    //   )}
-    // </VisibilitySensor>
-  );
+										{item.arrowLink && (
+											<ArrowLink
+												url={item.arrowLink.url}
+												style={item.arrowLink.styles}
+												externalLink={item.externalLink}
+											>
+												{item.arrowLink.text}
+											</ArrowLink>
+										)}
+									</AccordionItemPanel>
+								</PanelWrapper>
+							</AccordionItem>
+						</TabBox>
+					))}
+				</Accordion>
+			</TabsWrapper>
+		</Wrapper>
+		//   )}
+		// </VisibilitySensor>
+	);
 };
 
 export default AccordionFaq;
 
 Accordion.propTypes = {
-  bottomMargin: PropTypes.number,
+	bottomMargin: PropTypes.number,
 };

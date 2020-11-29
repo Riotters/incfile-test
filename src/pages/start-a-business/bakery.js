@@ -287,7 +287,7 @@ const Bakery = () => (
 
       <Container>
         <CenterBox>
-          <TextCenterLayout headlineWidth={770} headline="Your Bakery Needs a Business Plan" />
+          <TextCenterLayout headlineWidth={770} headline="Validating Your Bakery Business Idea" />
           <Paragraph big>These areas are just starting points — there are many different types of bakery businesses. Once you’ve identified the type of bakery you’d like to run and what you want to sell, you need to validate your business idea.</Paragraph>
           <Paragraph big>Start by checking you have the right skillset. Bakers work long hours and need sufficient technical skill to make great products. You’ll need to deal with employees and customers too, and there’s a lot of planning that goes into running a successful bakery.</Paragraph>
           <Paragraph big>
@@ -531,10 +531,10 @@ const Bakery = () => (
             <a href="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/" target="_blank" rel="noopener noreferrer">
               we’ve answered them to help you choose the right business structure
             </a>{" "}
-            for your daycare business.
+            for your bakery business.
           </Paragraph>
           <Paragraph big style={{ paddingTop: "48px", paddingBottom: 0 }} mixed={true}>
-            In most cases our recommendation would be to create an LLC. We have a <Link to="/form-an-llc/">complete guide to everything you need to do</Link>, and we can set one up for your T-shirt business. <Link to="/llc-state-information/">LLC formation does vary from state to state</Link>, but
+            In most cases our recommendation would be to create an LLC. We have a <Link to="/form-an-llc/">complete guide to everything you need to do</Link>, and we can set one up for your bakery business. <Link to="/llc-state-information/">LLC formation does vary from state to state</Link>, but
             we’ve got you covered, wherever you are.
           </Paragraph>
 

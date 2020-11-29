@@ -181,7 +181,7 @@ export const howToGuide = [
         {
           question: `Form a Foreign LLC in Kentucky`,
           answer: `<p>If your business is already operating in another state and expanding to Kentucky, you’ll need to form a foreign LLC.</p></br>
-            <p>More information on Kentucky filing and licensing requirements <a href="/kentucky-llc/form-filling-permit-requirements/" target="_blank">here.</a>.</p>`,
+            <p><a href="/kentucky-llc/form-filling-permit-requirements/">More information on Kentucky filing and licensing requirements here.</a></p>`,
         },
       ],
     },
@@ -195,7 +195,7 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `Want to know your next steps after creating a new LLC in Kentucky? We’ve got you covered. Here’s our guide to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more.`,
+    content: `Want to know your next steps after creating a new LLC in Kentucky? We’ve got you covered. <a href="/after-forming-llc/">Here’s our guide</a> to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more.`,
     marginBottom: 32,
   },
   {
@@ -1048,7 +1048,7 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `An Operating Agreement is extremely useful for several reasons (<a href="/research-topics/llc-info/the-llc-operating-agreement/" target="_blank">learn about them here</a>). If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Kentucky business. You can choose to make changes to the template based on your unique requirements.`,
+    content: `An Operating Agreement is extremely useful for several reasons (<a href="/research-topics/llc-info/llc-operating-agreement/" target="_blank">learn about them here</a>). If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Kentucky business. You can choose to make changes to the template based on your unique requirements.`,
     marginBottom: 48,
   },
   {
@@ -1288,7 +1288,7 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `Get details on the <a href= "https://revenue.ky.gov/" target="_blank" rel="noopener noreferrer">Kentucky state tax online here.</a>.`,
+    content: `Get details on the <a href="https://revenue.ky.gov/" target="_blank" rel="noopener noreferrer">Kentucky state tax online here.</a>.`,
     marginBottom: 48,
   },
   {

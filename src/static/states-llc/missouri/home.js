@@ -145,7 +145,7 @@ export const howToGuide = [
         {
           question: `Form a Missouri Series LLC`,
           answer: `<p>In Missouri, you also have the option to set up a “Series LLC” — these are specialized LLCs designed to allow you to manage multiple separate LLCs under one master, umbrella LLC. These can be very useful if you don’t want to set up a separate Missouri LLC for every individual business you run.</p></br>
-            <p><a href="/blog/post/series-llc-why-need-one/" target="_blank">Decide if a Missouri Series LLC is right for your new business.</a></p>`,
+            <p><a href="/blog/post/series-llc-why-need-one/">Decide if a Missouri Series LLC is right for your new business.</a></p>`,
         },
         {
           question: `Form a Professional Missouri LLC`,
@@ -154,7 +154,7 @@ export const howToGuide = [
         {
           question: `Form a Professional Missouri LLC`,
           answer: `<p>If your business is already operating in another state and expanding to Missouri, you’ll need to form a foreign LLC. </p></br>
-          <p><a href="/missouri-llc/form-filling-permit-requirements/" target="_blank">More information on Missouri filing and licensing requirements here.</a></p>`,
+          <p><a href="/missouri-llc/form-filling-permit-requirements/">More information on Missouri filing and licensing requirements here.</a></p>`,
         },
       ],
     },
@@ -169,7 +169,7 @@ export const howToGuide = [
   {
     type: `text`,
     content: `Want to know your next steps after creating a new LLC in Missouri? We’ve got you covered.
-      <a href="/after-forming-llc/" target="_blank">Here’s our guide</a>
+      <a href="/after-forming-llc/">Here’s our guide</a>
       to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more.`,
     marginBottom: 48,
   },
@@ -1026,7 +1026,7 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `An Operating Agreement is extremely useful for several reasons (<a href="/research-topics/llc-info/the-llc-operating-agreement/" target="_blank">learn about them here</a>). If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Missouri business. You can choose to make changes to the template based on your unique requirements.`,
+    content: `An Operating Agreement is extremely useful for several reasons (<a href="/research-topics/llc-info/llc-operating-agreement/" target="_blank">learn about them here</a>). If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Missouri business. You can choose to make changes to the template based on your unique requirements.`,
     marginBottom: 48,
   },
   {
@@ -1280,6 +1280,7 @@ export const businessTaxes = [
     content: {
       text: `Get details on the Missouri state tax here.`,
       url: `https://dor.mo.gov/personal/`,
+      externalLink: true,
     },
     bottomMargin: 48,
   },
@@ -1314,7 +1315,8 @@ export const businessTaxes = [
     type: `arrow-link`,
     content: {
       text: `Get details on the Missouri sales tax here.`,
-      url: `https://mytax.mo.gov/rptp/portal/home/fileandpaybusinesstaxesonline/!ut/p/z1/jc9LC4JAEADg39LBqzM-Eum2dFAsEhEfzSWUbDXUldX8_S0WdClpLvPgm4EBghyoL-aGF1Mj-qJV_Zmci2mgafh7DDGNbIxUOsWBg3iwIVsA_giGQP_srwBaP58BLcRyce_5aAZeEpvIQpbYKQtUZb_Byo0AiLeifL3L-tJyOZCsbpWspP6QalxP0zDuNNTwKqTeCZ2LWcNvvBbjBPlHwdAlOd637XxkmycYuLyS/dz/d5/L2dBISEvZ0FBIS9nQSEh/`,
+      url: `https://dor.mo.gov/personal/`,
+      externalLink: true,
     },
     bottomMargin: 32,
   },

@@ -133,9 +133,8 @@ const CoachBusinessStructure = () => (
           widthUnit="%"
         >
           <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-            Series LLC
-          </Paragraph>
-
+              <Link to={process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"}>Series LLC</Link>
+            </Paragraph>
           <Paragraph big>This is a special type of LLC entity that's only available in certain states. It allows you to create "mini" LLCs, each with their own limited liability and separate assets, under the umbrella of a master LLC.</Paragraph>
         </TextBlockWithImage>
 
@@ -183,34 +182,10 @@ const CoachBusinessStructure = () => (
 
         <Heading size={3}>Setting up a Business Entity as a Digital Nomad</Heading>
 
-        <Paragraph big style={{ marginBottom: 0 }}>
+        <Paragraph big mixed style={{ marginBottom: 0 }}>
           As a digital nomad, you will have some unique circumstances for how you're going to setup your business. To start with, we recommend an LLC — the combination of a low administrative overhead and liability protection are great for your peace-of-mind. Secondly, you will probably want to take
           advantage of our <Link to="/manage-your-company/registered-agent">Registered Agent service</Link> - it means there will always be someone available to receive official documents, even if you're out of the country.
         </Paragraph>
-
-        <SpecialBox radiusTop>
-          <Icon>
-            <RegisteredAgentIcon />
-          </Icon>
-          <Text>
-            <Heading size={3} style={{ marginBottom: 0, paddingBottom: "8px" }}>
-              Choose an LLC
-            </Heading>
-            <Paragraph style={{ paddingBottom: 0, marginBottom: 0 }}>Limited Liability Company is the perfect choice for a Digital Nomad</Paragraph>
-          </Text>
-        </SpecialBox>
-
-        <SpecialBox radiusBottom>
-          <Icon>
-            <RegisteredAgentIcon />
-          </Icon>
-          <Text>
-            <Heading size={3} style={{ marginBottom: 0, paddingBottom: "8px" }}>
-              Registered Agent service
-            </Heading>
-            <Paragraph style={{ paddingBottom: 0, marginBottom: 0 }}>Use Incfile’s Registered Agent service so that there’s always someone available to receive official documents, even if you're out of the country</Paragraph>
-          </Text>
-        </SpecialBox>
 
         <Paragraph big style={{ marginTop: "48px" }}>
           Next, you have more choice than most entrepreneurs on which state to from your LLC in. If you're going to be in your home state and running your LLC from there for any period, that's the best place to base it. If not, you can choose to form your LLC almost anywhere. In those cases, forming
@@ -234,10 +209,10 @@ const CoachBusinessStructure = () => (
           <a href="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/" target="_blank" rel="noopener noreferrer">
             we’ve answered them to help you choose the right business structure
           </a>{" "}
-          for your daycare business.
+          for your digital nomad business.
         </Paragraph>
         <Paragraph big style={{ paddingTop: "48px", paddingBottom: 0 }} mixed={true}>
-          In most cases our recommendation would be to create an LLC. We have a <Link to="/form-an-llc/">complete guide to everything you need to do</Link>, and we can set one up for your T-shirt business. <Link to="/llc-state-information/">LLC formation does vary from state to state</Link>, but
+          In most cases our recommendation would be to create an LLC. We have a <Link to="/form-an-llc/">complete guide to everything you need to do</Link>, and we can set one up for your digital nomad business. <Link to="/llc-state-information/">LLC formation does vary from state to state</Link>, but
           we’ve got you covered, wherever you are.
         </Paragraph>
 

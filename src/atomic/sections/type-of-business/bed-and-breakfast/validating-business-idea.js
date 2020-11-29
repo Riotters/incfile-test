@@ -101,15 +101,10 @@ const ValidatingBusinessIdea = () => (
                     </AbsoluteCurve>
                     <Heading size={3}>Validating Your Bed and Breakfast Business Idea</Heading>
                     <Paragraph big>
-                        These are all great starting points, but you will need to build on them to make the business your own. You have unique skills and insight that you can use to create
-                        a bed and breakfast business that will really stand out.
+                        These are all great starting points, but you will need to build on them to make the business your own. You have unique skills and insight that you can use to create a bed and breakfast business that will really stand out.
                     </Paragraph>
                     <Paragraph big style={{fontWeight: "bold"}}>
                         Getting started in a bed and breakfast business can take a lot of time, effort and money. It’s important to validate your idea and test the marketplace before committing too much.
-                    </Paragraph>
-                    <Paragraph big>
-                        The thing to learn here is that it’s okay to say “no” to your first, second or third bed and breakfast business ideas. Few hospitality entrepreneurs get it right the first time. In fact, getting it wrong is often a badge of honor! Still, you don’t want to waste
-                        too much time, energy or money on the wrong initiatives, so ask and answer these questions honestly to find the right way forward.
                     </Paragraph>
                 </TitleBox>
 
@@ -166,6 +161,9 @@ const ValidatingBusinessIdea = () => (
                         </Paragraph>
                     </TextBlockWithImage>
                 </GridSectionList>
+                <Paragraph big style={{ justifyContent: "center", width: "100%", maxWidth: "720px", margin: "auto" }} >
+                    The thing to learn here is that it’s okay to say “no” to your first, second or third bed and breakfast business ideas. Few hospitality entrepreneurs get it right the first time. In fact, getting it wrong is often a badge of honor! Still, you don’t want to waste too much time, energy or money on the wrong initiatives, so ask and answer these questions honestly to find the right way forward.
+                </Paragraph>
             </GridSection>
 
         </Container>

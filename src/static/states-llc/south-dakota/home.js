@@ -151,7 +151,7 @@ export const howToGuide = [
         {
           question: `Form a Foreign LLC in South Dakota`,
           answer: `<p>If your business is already operating in another state and expanding to South Dakota, you’ll need to form a foreign LLC.</p></br>
-            <a href="/south-dakota-llc/fees-filing-requirements/" target="_blank">More information on South Dakota filing and licensing requirements here.</a>`,
+            <a href="/south-dakota-llc/fees-filing-requirements/">More information on South Dakota filing and licensing requirements here.</a>`,
         },
       ],
     },
@@ -166,7 +166,7 @@ export const howToGuide = [
   {
     type: `text`,
     content: `Want to know your next steps after creating a new LLC in South Dakota? We’ve got you covered.
-      <a href="/after-forming-llc/" target="_blank">Here’s our guide</a>
+      <a href="/after-forming-llc/">Here’s our guide</a>
       to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more.`,
     marginBottom: 48,
   },
@@ -1037,7 +1037,7 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `South Dakota LLCs aren’t required to have an Operating Agreement, but they are extremely useful for several reasons (<a href="/research-topics/llc-info/the-llc-operating-agreement/" target="_blank">learn about them here</a>).  If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your South Dakota business. You can choose to make changes to the template based on your unique requirements.`,
+    content: `South Dakota LLCs aren’t required to have an Operating Agreement, but they are extremely useful for several reasons (<a href="/research-topics/llc-info/llc-operating-agreement/" target="_blank">learn about them here</a>).  If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your South Dakota business. You can choose to make changes to the template based on your unique requirements.`,
     marginBottom: 48,
   },
   {
@@ -1395,7 +1395,7 @@ export const businessTaxes = [
     content: {
       items: [
         {
-          question: `South Dakota LLC Employer Payroll Tax Withholding`,
+          question: `Employee and Employer Taxes for Your South Dakota LLC`,
           answer: `All employers must collect and withhold payroll tax from their employees when they receive their salaries. You would normally withhold 7.65 percent of the taxable salary that you pay to your employees.`,
         },
         {

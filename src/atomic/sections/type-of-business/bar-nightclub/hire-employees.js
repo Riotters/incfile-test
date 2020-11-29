@@ -19,7 +19,7 @@ const HireEmployees = () => (
 
       <Paragraph big>
         Since you won’t be able to run your bar or club solo, you will need to hire employees. Additionally, because bar and server wages are typically very low and supplemented with tips, expect to have a fairly high staff turnover. This could mean you spend a lot of time interviewing and hiring.
-        See our <Link to="/blog/post/avoid-confusion-when-hiring/">10 tips on hiring employees</Link>.
+        See our 10 tips on hiring employees.
       </Paragraph>
       <Paragraph big>
         Your bartenders will be mixing and pouring drinks, which means their speed, efficiency and pour accuracy will all have a direct impact on your profitability. For that reason, it's vital to train your bartenders well. Be aware that both over-pouring and theft can be fairly common in the bar
@@ -57,7 +57,7 @@ const HireEmployees = () => (
         </TopImageBox>
 
         <TopImageBox image="additional-accounting-fees" color={color.red3}>
-          <h4>Make sure your employees can work in the U.S</h4>
+          <h4>Withhold income and payroll taxes</h4>
           <p>You will need to calculate and keep back income tax so you can pay the appropriate bodies. You will also need to pay the employer portion of the payroll tax.</p>
         </TopImageBox>
 

@@ -62,7 +62,7 @@ const BarNightclub = () => (
 
     <Top ovalColor="love" imageName="bar-nightclub-main" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
       <h1>How to Start a Bar or Club Business</h1>
-      <p>If you have some skill with home improvement, DIY or fixing things, then running a home handyman business could be right for you.</p>
+      <p>Opening a bar, nightclub or pub business is a great way to give your customers the perfect place to meet, drink and socialize. The combination of a good location, friendly staff, great selection and the right ambiance can really help set you apart and make your bar successful.</p>
       <ButtonsBox>
         <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{ url: `${process.env.ORDER_URL}/form-order-now.php`, text: "Start Now" }} />
       </ButtonsBox>
@@ -190,7 +190,7 @@ const BarNightclub = () => (
             </div>
 
             <div style={{ marginBottom: "30px" }}>
-              <Adventages headline="The split of alcohol sold tends to be?42% beer, 31% spirits, 10% wine and the remainder as food and non-alcoholic drinks." width="100%" />
+              <Adventages headline="The split of alcohol sold tends to be 42% beer, 31% spirits, 10% wine and the remainder as food and non-alcoholic drinks." width="100%" />
             </div>
 
             <div style={{ marginBottom: "30px" }}>
@@ -293,7 +293,7 @@ const BarNightclub = () => (
             </Colorbox>
 
             <Paragraph big style={{ marginTop: "48px" }}>
-              There are low barriers to entry, meaning new bars and clubs open fairly frequently, so there will always be competition. Margins are slim though, so unless a bar or club is well-managed, that competition may not last for long.
+            Bar and club locations must have proper zoning from local government, and you may face issues with community resistance due to patrons and noise. Additionally, local laws will dictate when you are and are not allowed to be open.
             </Paragraph>
 
             <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: color.black }}>
@@ -396,7 +396,9 @@ const BarNightclub = () => (
           </Paragraph>
         </CenterBox>
         <CenterBox>
-          <Heading>Write a Business Plan for Your Bar or Club Business</Heading>
+          <Heading size={3} style={{ fontSize: "40px" }}>
+              Write a Business Plan for Your Bar or Club Business
+          </Heading>
 
           <Paragraph big>Finally, you should put your business plan together. Business plans do vary slightly, but they should cover the following areas:</Paragraph>
 
@@ -530,7 +532,7 @@ const BarNightclub = () => (
             widthUnit="%"
           >
             <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-              Series LLC
+              <Link to={process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"}>Series LLC</Link>
             </Paragraph>
 
             <Paragraph big>This is a special type of LLC entity that's only available in certain states. It allows you to create "mini" LLCs, each with their own limited liability and separate assets, under the umbrella of a master LLC.</Paragraph>
@@ -550,8 +552,8 @@ const BarNightclub = () => (
             width={100}
             widthUnit="%"
           >
-            <Paragraph big flex flexAlign={true} style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-              S Corporation
+            <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
+              <Link to={process.env.ORDER_URL + "/form-order-now.php?entityType=S-Corporation"}>S Corporation</Link>
             </Paragraph>
 
             <Paragraph big>This is a more complex type of business and isn't generally recommended for smaller organization.</Paragraph>
@@ -571,9 +573,10 @@ const BarNightclub = () => (
             width={100}
             widthUnit="%"
           >
-            <Paragraph big flex flexAlign={true} style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-              C Corporation
+            <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
+              <Link to={process.env.ORDER_URL + "/form-order-now.php?entityType=C-Corporation"}>C Corporation</Link>
             </Paragraph>
+
 
             <Paragraph big>These are the largest and most complex types of businesses and are far more than the average entrepreneur or business owner will need.</Paragraph>
           </TextBlockWithImage>
@@ -583,7 +586,7 @@ const BarNightclub = () => (
             <a href="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/" target="_blank" rel="noopener noreferrer">
               we’ve answered them to help you choose the right business structure
             </a>{" "}
-            for your daycare business.
+            for your bar nightclub business.
           </Paragraph>
           <Paragraph big style={{ paddingTop: "48px", paddingBottom: 0 }} mixed={true}>
             In most cases our recommendation would be to create an LLC. We’ve got a <Link to="/form-an-llc/">complete guide to everything you need to do</Link> and we can set one up for your bar or club business. <Link to="/llc-state-information/">LLC formation does vary from state to state</Link>,

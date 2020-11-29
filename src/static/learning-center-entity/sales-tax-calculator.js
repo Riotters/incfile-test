@@ -14,7 +14,7 @@ export const about = {
 
 export const calculator = {
   header: `Calculate your tax amount`,
-  cards: [`1. Your State`, `2. Total Revenue from Sales`],
+  cards: [`1. State of Formation`, `2. Total Revenue from Sales`],
   button: {
     text: `Calculate my sales tax`,
     url: `/`,

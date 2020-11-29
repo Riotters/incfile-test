@@ -89,13 +89,12 @@ const CleaningBusiness = () => (
 
         <CollapseWrapper>
           <PanelWrapper>
-            <Heading size={3}>Starting a Laundromat business</Heading>
+            <Heading size={3}>Starting a Cleaning Business</Heading>
             <Paragraph big>
-              Cleaning is a service that will always be in demand, and you don't need an enormous amount of capital or any special training to get started. As a business model, cleaning will never be challenged by ecommerce, and the industry is not dominated by any major players.
+              Starting a cleaning business can be an ideal way to begin your journey as an entrepreneur. Although they may seem simple, cleaning businesses have a lot going for them.
             </Paragraph>
             <Paragraph big>
-              Finally, there’s a trend toward buying “experiences” rather than “products,” and the beauty salon fits very neatly into this newway of thinking and purchasing. All that said, starting up a beauty salon business can be tricky. There may be local competition, and you'llneed to invest in
-              finding skilled workers and developing an excellent brand.
+              Cleaning is a service that will always be in demand, and you don't need an enormous amount of capital or any special training to get started. As a business model, cleaning will never be challenged by ecommerce, and the industry is not dominated by any major players.
             </Paragraph>
 
             <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", marginTop: "48px", color: color.black }}>
@@ -183,7 +182,7 @@ const CleaningBusiness = () => (
 
             <BlueBoxWithAbsoluteText absoluteText="875K" text="In the U.S. in 2015, there were 875,000 cleaning businesses employing nearly about 3.5 million people." />
             <BlueBoxWithAbsoluteText absoluteText="$175B" text="People employed in the industry across the U.S." />
-            <BlueBoxWithAbsoluteText absoluteText="4 - 6%" text="Revenue increase by year, while job growth is expected to increase by 0.6 percent a year" />
+            <BlueBoxWithAbsoluteText absoluteText="4 - 6%" text="The industry is growing at a rate of between 4-6 percent a year." />
 
             <ColorFulCircleWithTextAndList style={{ marginBottom: "48px" }} list={RingText.list} title={RingText.title} CircleSVG={RingSvg} withBg={true} />
 
@@ -214,7 +213,7 @@ const CleaningBusiness = () => (
 
             <Adventages headline="Don’t mind staff turnover" text="Cleaning isn’t an extremely well-paid job, so there can be fairly rapid employee turnover." width="100%" />
 
-            <Adventages headline="Marketing" text="Promoting your beauty salon business against a competitive field; local marketing expertise is essential" width="100%" />
+            <Adventages headline="Marketing" text="You will probably need to build a website and have a brand and logo professionally designed. You should also look into local search advertising." width="100%" />
 
             <Adventages headline="Are great at training" text="Your cleaners will need to clean to the very highest quality, so they will need excellent training and materials." width="100%" />
 
@@ -494,8 +493,8 @@ const CleaningBusiness = () => (
             width={100}
             widthUnit="%"
           >
-            <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-              Series LLC
+<Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
+              <Link to={process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"}>Series LLC</Link>
             </Paragraph>
 
             <Paragraph big>This is a special type of LLC entity that's only available in certain states. It allows you to create "mini" LLCs, each with their own limited liability and separate assets, under the umbrella of a master LLC.</Paragraph>
@@ -548,10 +547,10 @@ const CleaningBusiness = () => (
             <a href="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/" target="_blank" rel="noopener noreferrer">
               we’ve answered them to help you choose the right business structure
             </a>{" "}
-            for your daycare business.
+            for your cleaning business.
           </Paragraph>
           <Paragraph big mixed={true} style={{ marginBottom: "56px", paddingBottom: 0 }}>
-            In most cases our recommendation would be to create an LLC. We have a <Link to="/form-an-llc/">complete guide to everything you need to do</Link>, and we can set one up for your T-shirt business. <Link to="/llc-state-information/">LLC formation does vary from state to state</Link>, but
+            In most cases our recommendation would be to create an LLC. We have a <Link to="/form-an-llc/">complete guide to everything you need to do</Link>, and we can set one up for your cleaning business. <Link to="/llc-state-information/">LLC formation does vary from state to state</Link>, but
             we’ve got you covered, wherever you are.
           </Paragraph>
 

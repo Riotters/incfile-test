@@ -7,8 +7,8 @@ import CartBlock from "../../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../../atomic/molecules/blocks/rating-block";
 import Top from "../../atomic/partials/top";
 import styled from "styled-components";
-import {Paragraph} from "../../atomic/atoms/typography/paragraph";
-import {Heading} from "../../atomic/atoms/typography/heading";
+import { Paragraph } from "../../atomic/atoms/typography/paragraph";
+import { Heading } from "../../atomic/atoms/typography/heading";
 import Conclusion from "../../atomic/sections/general/conclusion";
 import BusinessStructure from "../../atomic/sections/type-of-business/photography-business/business-structure";
 import SettingBusiness from "../../atomic/sections/type-of-business/photography-business/setting-business";
@@ -22,68 +22,88 @@ import MainChallenges from "../../atomic/sections/type-of-business/photography-b
 import ToolsAndLinks from "../../atomic/sections/type-of-business/photography-business/tools";
 
 const WithNoMoneyBusiness = () => (
-    <Layout>
-        <SEO title="How to Start a Photography Business"
-             description="For those with a creative eye, a flair for framing and the ability to capture memories, photography can be a great career choice. Whether you’re taking photos yourself, editing photos after they’ve been taken or you’re involved in post production, there are plenty of ways to use your skills."/>
+	<Layout>
+		<SEO
+			title="How to Start a Photography Business"
+			description="For those with a creative eye, a flair for framing and the ability to capture memories, photography can be a great career choice. Whether you’re taking photos yourself, editing photos after they’ve been taken or you’re involved in post production, there are plenty of ways to use your skills."
+		/>
 
-        <Top ovalColor="love" imageName="photography-business-main" imageAlt="Mr Bulb with seedling"
-             headlineWidth={700}>
-            <h1>How to Start a Photography Business</h1>
-            <p>
-                For those with a creative eye, a flair for framing and the ability to capture
-                memories, photography can be a great career choice. Whether you’re
-                taking photos yourself, editing photos after they’ve been taken or you’re involved in post production, there are plenty of ways to use your skills.
-            </p>
-            <ButtonsBox>
-                <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{text: "Start Now", url: "/"}}>
-                    Start Now
-                </Button>
-            </ButtonsBox>
+		<Top
+			ovalColor="love"
+			imageName="photography-business-main"
+			imageAlt="Mr Bulb with seedling"
+			headlineWidth={700}
+		>
+			<h1>How to Start a Photography Business</h1>
+			<p>
+				For those with a creative eye, a flair for framing and the ability to
+				capture memories, photography can be a great career choice. Whether
+				you’re taking photos yourself, editing photos after they’ve been taken
+				or you’re involved in post production, there are plenty of ways to use
+				your skills.
+			</p>
+			<ButtonsBox>
+				<Button
+					theme="primary56"
+					marginMD="0 24px 0 0"
+					arrow
+					content={{
+						url: `${process.env.ORDER_URL}/form-order-now.php`,
+						text: "Start Now",
+					}}
+				/>
+			</ButtonsBox>
 
-            <RatingRow>
-                <CartBlock/>
-                <RatingBlock/>
-            </RatingRow>
-        </Top>
+			<RatingRow>
+				<CartBlock />
+				<RatingBlock />
+			</RatingRow>
+		</Top>
 
-        <PhotographyIntroduce />
+		<PhotographyIntroduce />
 
-        <WorldOfPhotography />
+		<WorldOfPhotography />
 
-        <Statistics />
-        
-        <QuestionToAsk />
+		<Statistics />
 
-        <MainSkils />
+		<QuestionToAsk />
 
-        <MainChallenges />
+		<MainSkils />
 
-        <BusinessStructure />
+		<MainChallenges />
 
-        <SettingBusiness />
+		<BusinessStructure />
 
-        <OrderNow />
+		<SettingBusiness />
 
-        <ToolsAndLinks />
-        
-        <Conclusion to="/" buttonTitle="Start your Photography Business with us, today">
-            <Heading size={3} style={{fontSize: "48px"}}>
-                Conclusion
-            </Heading>
-            <Paragraph big>
-                Running a photography business is a way to bring together art and commerce. You can combine your creative flair with your excellent business sense to create images your clients will love. Start now, and build something beautiful.
-            </Paragraph>
-        </Conclusion>
-    </Layout>
+		<OrderNow />
+
+		<ToolsAndLinks />
+
+		<Conclusion
+			to="/"
+			buttonTitle="Start your Photography Business with us, today"
+		>
+			<Heading size={3} style={{ fontSize: "48px" }}>
+				Conclusion
+			</Heading>
+			<Paragraph big>
+				Running a photography business is a way to bring together art and
+				commerce. You can combine your creative flair with your excellent
+				business sense to create images your clients will love. Start now, and
+				build something beautiful.
+			</Paragraph>
+		</Conclusion>
+	</Layout>
 );
 
 const ButtonsBox = styled.div`
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 
-  @media (min-width: 769px) {
-    flex-direction: row;
-  }
+	@media (min-width: 769px) {
+		flex-direction: row;
+	}
 `;
 
 export default WithNoMoneyBusiness;

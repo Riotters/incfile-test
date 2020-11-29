@@ -100,23 +100,12 @@ const ValidatingBusinessIdea = () => (
 
             <GridSection>
                 <TitleBox>
-                    <Heading size={3}>Validating Your Food Truck Business Idea</Heading>
+                    <Heading size={3}>Validating Your Daycare Business Idea</Heading>
                     <Paragraph big style={{marginBottom: "40px"}}>
-                        The areas we’ve listed above are just starting points — there are many different types of
-                        daycare businesses. Once you’ve identified specific daycare areas you might like
-                        to go into, you need to validate your daycare business idea.
+                    The areas we’ve listed above are just starting points — there are many different types of daycare businesses. Once you’ve identified specific daycare areas you might like to go into, you need to validate your daycare business idea.
                     </Paragraph>
                     <Paragraph big style={{fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
-                        Remember too that every daycare business will have many competitors.
-                    </Paragraph>
-                    <Paragraph big>
-                        You will need to stand out and offer superior childcare to excel as a daycare business owner.
-                    </Paragraph>
-                    <Paragraph big>
-                        Not every idea you have will make it through to becoming a daycare business. There are all sorts
-                        of reasons to say “yes” or “no” to specific ideas and approaches — think about what your
-                        strengths and weaknesses are so you can choose a type of daycare business that you’d be great
-                        at.
+                    Remember too that every daycare business will have many competitors. You will need to stand out and offer superior childcare to excel as a daycare business owner.
                     </Paragraph>
                 </TitleBox>
 
@@ -174,6 +163,9 @@ const ValidatingBusinessIdea = () => (
                     </TextBlockWithImage>
 
                 </GridSectionList>
+                <Paragraph big style={{ justifyContent: "center", width: "100%", maxWidth: "720px", margin: "auto" }} >
+                    Not every idea you have will make it through to becoming a daycare business. There are all sorts of reasons to say “yes” or “no” to specific ideas and approaches — think about what your strengths and weaknesses are so you can choose a type of daycare business that you’d be great at.
+                </Paragraph>
             </GridSection>
 
         </Container>

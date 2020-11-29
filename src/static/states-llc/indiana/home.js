@@ -155,14 +155,9 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `If your business is already operating in another state and expanding to Indiana, you’ll need to form a foreign LLC.`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `More information on Indiana
-      <a href="/indiana-llc/form-filling-permit-requirements/" target="_blank" >filing and licensing requirements here</a>`,
-    marginBottom: 48,
+    content: `If your business is already operating in another state and expanding to Indiana, you’ll need to form a foreign LLC.<br>
+    <a href="/indiana-llc/form-filling-permit-requirements/">More information on Indiana filing and licensing requirements here</a>`,
+    marginBottom: 40,
   },
   {
     type: `header`,
@@ -173,7 +168,7 @@ export const howToGuide = [
   {
     type: `text`,
     content: `Want to know your next steps after creating a new LLC in Indiana? We’ve got you covered.
-      <a href="/after-forming-llc/" target="_blank" >Here’s our guide</a>
+      <a href="/after-forming-llc/">Here’s our guide</a>
       to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more.`,
     marginBottom: 48,
   },
@@ -1045,7 +1040,7 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `An Operating Agreement is extremely useful for several reasons (<a href="/research-topics/llc-info/the-llc-operating-agreement/">learn about them here</a>). If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Indiana business. You can choose to make changes to the template based on your unique requirements.`,
+    content: `An Operating Agreement is extremely useful for several reasons (<a href="/research-topics/llc-info/llc-operating-agreement/">learn about them here</a>). If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Indiana business. You can choose to make changes to the template based on your unique requirements.`,
     marginBottom: 48,
   },
   {
@@ -1305,7 +1300,7 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `Get details on the <a href= "https://www.in.gov/dor/" target="_blank" rel="noopener noreferrer">Indiana state tax here.</a>.`,
+    content: `Get details on the <a href="https://www.in.gov/dor/" target="_blank" rel="noopener noreferrer">Indiana state tax here.</a>.`,
     marginBottom: 48,
   },
   {
@@ -1337,7 +1332,7 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `Get details on the <a href= "https://www.in.gov/dor/3986.htm" target="_blank" rel="noopener noreferrer">Indiana state tax online here</a>.`,
+    content: `Get details on the <a href="https://www.in.gov/dor/3986.htm" target="_blank" rel="noopener noreferrer">Indiana state tax online here</a>.`,
     marginBottom: 32,
   },
   {
