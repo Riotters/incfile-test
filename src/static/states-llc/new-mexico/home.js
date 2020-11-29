@@ -395,18 +395,24 @@ export const namingYourBusiness = [
 	},
 	{
 		type: `header`,
-		content: `Business Name Registration for Your Montana LLC`,
+		content: `Business Name Registration in New Mexico`,
 		size: 3,
 		marginBottom: 16,
+	},
+	{
+		type: `text`,
+		content: `Once you’ve searched for your New Mexico business name, checked availability, followed the naming rules and decided whether you need a fictitious name, you can register your name. There are a couple of ways to do this.`,
+		marginBottom: 32,
 	},
 	{
 		type: `list-dot`,
 		content: {
 			header: ``,
 			list: [
-				`If you don’t want to form your LLC right now, you can reserve the business name with the Montana Secretary of State. You will need to complete an Application for Reservation of Name and file it with the MT SOS. You do not need to reserve a name if you are forming your business right away."`,
-				`If you’re ready to start your LLC, you can formally file your Certificate of Formation with the Montana SOS, or
-             <a href="/montana-llc/form-filling-permit-requirements/"> let Incfile take care of it for you.</a.`,
+				`If you don’t want to form your LLC right now, you can reserve the business name with the New Mexico Secretary of State. You do not need to reserve a name if you are forming your business right away.
+                <br><a href="https://www.sos.state.nm.us/business-services/start-a-business/domestic-nm-llc/#">New Mexico SOS LLC name reservation form</a>`,
+				`If you’re ready to start your LLC, you can formally file your Articles of Organization with the New Mexico SOS, or
+             <a href="/new-mexico-llc/form-filling-permit-requirements/"> let Incfile take care of it for you.</a>.`,
 			],
 		},
 		marginBottom: 48,

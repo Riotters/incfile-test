@@ -398,7 +398,7 @@ export const namingYourBusiness = [
 	{
 		type: `text`,
 		content: `If you’re ready to start your LLC, you can formally file your Certificate of Formation with the Oregon SOS, or
-    <a href="/oregon-llc/form-filling-permit-requirements/"> let Incfile take care of it for you.</a.`,
+    <a href="/oregon-llc/form-filling-permit-requirements/"> let Incfile take care of it for you.</a>.`,
 		marginBottom: 16,
 	},
 	{
