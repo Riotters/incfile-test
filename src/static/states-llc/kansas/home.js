@@ -450,6 +450,7 @@ export const namingYourBusiness = [
 		type: `text`,
 		content: `Once you’ve searched for your Kansas business name, checked availability, followed the naming rules and decided whether you need a fictitious name, you can register your KS LLC name. There are a couple of ways to do this.`,
 		marginBottom: 24,
+
 	},
 	{
 		type: `list-dot`,
@@ -504,7 +505,6 @@ export const namingYourBusiness = [
 	{
 		type: `text`,
 		content: `You might find the following answers useful.
-
     `,
 		marginBottom: 32,
 	},

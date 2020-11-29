@@ -79,7 +79,7 @@ export const howToGuide = [
 					question: `STEP 2: Search for and Choose a Unique Business Name for Your Nevada LLC`,
 					answer: `<p>You will need a distinctive and original name for your Nevada LLC that’s not used by any other business in NV. To find out if another company is using your chosen business name, carry out a Nevada business entity name search on the NV Secretary of State website.</p></br>
             <p>There are a few rules you’ll need to follow when choosing an LLC name. You can find out more in our guide to searching for and naming your Nevada LLC.</p></br>
-            <p><a href="/nevada-llc/how-to-name-your-llc/" target="_blank">Learn about Ohio Nevada business naming rules.</a></p>`,
+            <p><a href="/nevada-llc/how-to-name-your-llc/" target="_blank">Learn about Nevada business naming rules.</a></p>`,
 				},
 				{
 					question: `STEP 3: Provide an Official Address for Your NV LLC`,

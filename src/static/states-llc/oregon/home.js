@@ -71,7 +71,7 @@ export const howToGuide = [
 					question: `STEP 2: Search for and Choose a Unique Business Name for Your Oregon LLC`,
 					answer: `<p>You will need a distinctive and original name for your Oregon LLC that’s not used by any other business in OR. To find out if another company is using your chosen business name, carry out an Oregon business entity name search on the OR Secretary of State website.</p></br>
                    <p>There are a few rules you’ll need to follow when choosing an LLC name. You can find out more in our guide to searching for and naming your Oregon LLC.</p></br>
-                   <a href="/Oregon-llc/how-to-name-your-llc/">Learn about Oregon LLC business naming rules.</a>`,
+                   <a href="/oregon-llc/how-to-name-your-llc/">Learn about Oregon LLC business naming rules.</a>`,
 				},
 				{
 					question: `STEP 3: Provide an Official Address for Your Oregon LLC`,
@@ -81,9 +81,8 @@ export const howToGuide = [
 					question: `STEP 4: Assign a Oregon Registered Agent`,
 					answer: `<p>Every Oregon LLC must have a “Registered Agent.” This is an official position; the Registered Agent is someone who receives official legal and tax correspondence and has responsibility for filing reports with the Oregon Secretary of State.</p></br>
           <p>This position can be filled by you, another manager in the business or a dedicated Registered Agent service. Your Registered Agent must have a physical street address in Oregon and must be present to receive important documents for your company during business hours.</p></br>
-          
           <p>At Incfile, all of our packages include a Oregon Registered Agent service that is free for the first year and just $119 per year afterward. We also have a dashboard where you can log in and easily view any document your Registered Agent has received on your behalf.</p></br>
-          <a href="/Oregon-llc/registered-agents-Oregon-llc/">Learn more about Oregon Registered Agents.</a>`,
+          <a href="/oregon-llc/registered-agents-oregon-llc/">Learn more about Oregon Registered Agents.</a>`,
 				},
 				{
 					question: `STEP 5: Get an Employer Identification Number (EIN) from the Internal Revenue Service`,
@@ -139,7 +138,6 @@ export const howToGuide = [
 		content: `A regular Oregon LLC is suitable for most business needs, but you also have a few other options to incorporate a special type of LLC.`,
 		marginBottom: 32,
 	},
-
 	{
 		type: `accordion`,
 		content: {
@@ -165,13 +163,13 @@ export const howToGuide = [
 	},
 	{
 		type: `text`,
-		content: `Want to know your next steps after creating a new LLC in Oregon? We’ve got you covered. <a href="/after-forming-llc/">Here’s our guide</a> to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more. `,
+		content: `Want to know your next steps after creating a new LLC in Oregon? We’ve got you covered. <a href="/after-forming-llc/">Here’s our guide</a> to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more.`,
 		marginBottom: 48,
 	},
 	{
 		type: `header`,
 		content: `Detailed Information for Your Oregon LLC`,
-		size: 3,
+		size: 4,
 		marginBottom: 16,
 	},
 	{
@@ -183,7 +181,7 @@ export const howToGuide = [
 		type: `arrow-link`,
 		content: {
 			text: `Naming Your Oregon LLC`,
-			url: `/Oregon-llc/how-to-name-your-llc/`,
+			url: `/oregon-llc/how-to-name-your-llc/`,
 		},
 		marginBottom: 16,
 	},
@@ -196,7 +194,7 @@ export const howToGuide = [
 		type: `arrow-link`,
 		content: {
 			text: `Oregon  Registered Agents for LLCs`,
-			url: `/Oregon-llc/registered-agents-Oregon-llc/`,
+			url: `/oregon-llc/registered-agents-oregon-llc/`,
 		},
 		marginBottom: 16,
 	},
@@ -209,7 +207,7 @@ export const howToGuide = [
 		type: `arrow-link`,
 		content: {
 			text: `Fees and Requirements for Oregon LLCs`,
-			url: `/Oregon-llc/form-filling-permit-requirements/`,
+			url: `/oregon-llc/form-filling-permit-requirements/`,
 		},
 		marginBottom: 16,
 	},
@@ -222,7 +220,7 @@ export const howToGuide = [
 		type: `arrow-link`,
 		content: {
 			text: `Federal, State, Sales and Other Taxes for Your Oregon LLC`,
-			url: `/Oregon-llc/business-taxes/`,
+			url: `/oregon-llc/business-taxes/`,
 		},
 		marginBottom: 16,
 	},
@@ -386,7 +384,7 @@ export const namingYourBusiness = [
 	{
 		type: `text`,
 		content: `If you’re ready to start your LLC, you can formally file your Certificate of Formation with the Oregon SOS, or
-    <a href="/Oregon-llc/fees-filing-requirements/"> let Incfile take care of it for you.</a.`,
+    <a href="/oregon-llc/fees-filing-requirements/"> let Incfile take care of it for you.</a.`,
 		marginBottom: 48,
 	},
 	{
@@ -397,9 +395,7 @@ export const namingYourBusiness = [
 	},
 	{
 		type: `text`,
-		content: `You might find the following answers useful.
-
-    `,
+		content: `You might find the following answers useful.`,
 		marginBottom: 32,
 	},
 	{
@@ -963,7 +959,7 @@ export const feesAndRequirments = [
 
 	{
 		type: `text`,
-		content: `<a href="/oregon-llc/fees-filing-requirements/">Learn about your ongoing Oregon LLC filing requirements</a>
+		content: `<a href="/oregon-llc/form-filling-permit-requirements/">Learn about your ongoing Oregon LLC filing requirements</a>
     and business filing deadlines with our helpful Oregon ongoing filing lookup tool..`,
 		marginBottom: 16,
 	},
@@ -1300,7 +1296,7 @@ export const businessTaxes = [
 	},
 	{
 		type: `text`,
-		content: `<a href="https://revenueonline.dor.oregon.gov/tap/_/"  target="_blank" rel="noopener noreferrer>Get details on the Oregon state tax here.</a> `,
+		content: `<a href="https://revenueonline.dor.oregon.gov/tap/_/"  target="_blank" rel="noopener noreferrer">Get details on the Oregon state tax here.</a> `,
 		marginBottom: 32,
 	},
 	{

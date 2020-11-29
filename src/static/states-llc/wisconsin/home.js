@@ -256,8 +256,9 @@ export const namingYourBusiness = [
 	{
 		type: `arrow-link`,
 		content: {
-			text: `Wisconsin Corporation Commission LLC name search tool`,
-			url: `<a href="https://www.wdfi.org/apps/CorpSearch/Search.aspx?">Wisconsin Department of Financial Institutions business name search tool</a>`,
+			text: `Wisconsin Department of Financial Institutions business name search tool`,
+			url: `https://www.wdfi.org/apps/CorpSearch/Search.aspx?`,
+			externalLink: true,
 		},
 		marginBottom: 48,
 	},
@@ -406,8 +407,7 @@ export const namingYourBusiness = [
 	},
 	{
 		type: `header`,
-		content: `Register Your Wisconsin LLC Business Name
-    `,
+		content: `Register Your Wisconsin LLC Business Name`,
 		size: 3,
 		marginBottom: 24,
 	},
@@ -1353,7 +1353,6 @@ export const businessTaxes = [
 		content: `You will first need to obtain a Wisconsin tax ID number to pay taxes to the Department of Revenue. You can do that by registering for<a href="https://www.revenue.wi.gov/Pages/Businesses/New-Business-home.aspx" target="_blank" rel="noopener noreferrer"> Wisconsin business tax</a>.`,
 		marginBottom: 48,
 	},
-
 	{
 		type: `header`,
 		content: `Wisconsin Sales Taxes on LLC Sales`,

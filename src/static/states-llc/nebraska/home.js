@@ -141,7 +141,6 @@ export const howToGuide = [
 		content: `A regular Nebraska LLC is suitable for most business needs, but you also have a few other options to incorporate a special type of LLC.`,
 		marginBottom: 32,
 	},
-
 	{
 		type: `accordion`,
 		content: {

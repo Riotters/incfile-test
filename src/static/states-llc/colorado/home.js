@@ -911,7 +911,7 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Some states allow you to form your LLC more quickly by paying a rush fee. You can <a href="/state-filing-times/">compare state filing times and fees here, including expedited fees for Colorado.</a>.`,
+    content: `Some states allow you to form your LLC more quickly by paying a rush fee. You can <a href="/state-filing-times/">compare state filing times and fees here, including expedited fees for Colorado.</a>`,
     marginBottom: 16,
   },
   {
@@ -985,7 +985,7 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `<a href="/business-filing-deadlines/" target="_blank" >Learn about your ongoing Colorado LLC filing requirements</a>and business filing deadlines with our helpful Colorado ongoing filing lookup tool.`,
+    content: `<a href="/business-filing-deadlines/" target="_blank" >Learn about your ongoing Colorado LLC filing requirements</a> and business filing deadlines with our helpful Colorado ongoing filing lookup tool.`,
     marginBottom: 16,
   },
   {

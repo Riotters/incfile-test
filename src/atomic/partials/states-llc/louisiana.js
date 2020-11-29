@@ -18,63 +18,66 @@ import { rocket } from "../../../static/states-llc/arizona/general";
 import { subscription } from "../../../static/learning-center-entity/state-information-california";
 
 const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 
-  @media (min-width: 769px) {
-    flex-direction: ${(props) => (props.layout !== "grid" ? "row" : "column")};
-  }
+	@media (min-width: 769px) {
+		flex-direction: ${(props) => (props.layout !== "grid" ? "row" : "column")};
+	}
 
-  .accordion-panel {
-    overflow: hidden;
-  }
+	.accordion-panel {
+		overflow: hidden;
+	}
 
-  .ReactCollapse--collapse {
-    width: 100%;
-    transition: height 500ms;
-    margin-left: auto;
+	.ReactCollapse--collapse {
+		width: 100%;
+		transition: height 500ms;
+		margin-left: auto;
 
-    @media (min-width: 769px) {
-      max-width: ${(props) => (props.layout !== "grid" ? "55%" : "")};
-    }
+		@media (min-width: 769px) {
+			max-width: ${(props) => (props.layout !== "grid" ? "55%" : "")};
+		}
 
-    @media (min-width: 1200px) {
-      max-width: ${(props) => (props.layout !== "grid" ? "670px" : "")};
-    }
-  }
+		@media (min-width: 1200px) {
+			max-width: ${(props) => (props.layout !== "grid" ? "670px" : "")};
+		}
+	}
 
-  h2 {
-      text-align: left;
-  }
+	h2 {
+		text-align: left;
+	}
 `;
 
 const LLCLayout = ({ children, data, top }) => {
-    const getURLParamsOnly = (url) => {
-        return "?" + url.split("?")[1];
-    };
+	const getURLParamsOnly = (url) => {
+		return "?" + url.split("?")[1];
+	};
 
-    return (
-        <>
-            <Top imageName="mr-bulb-state-information-llc-7342" imageAlt="Mrs Bulb and with checklist" ovalColor="purple-2" textWidth="530">
-                <h1>{top.header}</h1>
-                <p>{top.text}</p>
-                <Buttonsbox>
-                    <Button content={top.buttons[0]} theme="primary56" arrow />
-                </Buttonsbox>
-            </Top>
-            <WrapperContent>
-                <Wrapper>
-                    {children}
-                </Wrapper>
-            </WrapperContent>
-            <Rocket url={getURLParamsOnly(top.buttons[0].url)} />
-            <Requirements content={requirements} data={data} />
-            <Variants data={data} />
-            <Compare content={compare} data={data} />
-            <Subscription content={subscription} />
-            <Articles />
-        </>
-    );
-}
+	return (
+		<>
+			<Top
+				imageName="mr-bulb-state-information-llc-7342"
+				imageAlt="Mrs Bulb and with checklist"
+				ovalColor="purple-2"
+				textWidth="530"
+			>
+				<h1>{top.header}</h1>
+				<p>{top.text}</p>
+				<Buttonsbox>
+					<Button content={top.buttons[0]} theme="primary56" arrow />
+				</Buttonsbox>
+			</Top>
+			<WrapperContent>
+				<Wrapper>{children}</Wrapper>
+			</WrapperContent>
+			<Rocket url={getURLParamsOnly(top.buttons[0].url)} />
+			<Requirements content={requirements} data={data} />
+			<Variants data={data} />
+			<Compare content={compare} data={data} />
+			<Subscription content={subscription} />
+			<Articles />
+		</>
+	);
+};
 
 export default LLCLayout;

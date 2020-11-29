@@ -83,7 +83,7 @@ export const howToGuide = [
           <p>This position can be filled by you, another manager in the business or a dedicated Registered Agent service. Your Registered Agent must have a physical street address in New Mexico and must be present to receive important documents for your company during business hours.</p></br>
           
           <p>At Incfile, all of our packages include a New Mexico Registered Agent service that is free for the first year and just $119 per year afterward. We also have a dashboard where you can log in and easily view any document your Registered Agent has received on your behalf.</p></br>
-          <a href="/New-Mexico-llc/registered-agents-New-Mexico-llc/">Learn more about New Mexico Registered Agents.</a>`,
+          <a href="/new-mexico-llc/registered-agents-new-mexico-llc/">Learn more about New Mexico Registered Agents.</a>`,
 				},
 				{
 					question: `STEP 5: Get an Employer Identification Number (EIN) from the Internal Revenue Service`,
@@ -159,7 +159,7 @@ export const howToGuide = [
 	},
 	{
 		type: `header`,
-		content: `Detailed Information for Your New Mexico LLC`,
+		content: `Other Information in This Guide`,
 		size: 3,
 		marginBottom: 24,
 	},
@@ -172,7 +172,7 @@ export const howToGuide = [
 		type: `arrow-link`,
 		content: {
 			text: `Naming Your New Mexico LLC`,
-			url: `/New-Mexico-llc/how-to-name-your-llc/`,
+			url: `/new-mexico-llc/how-to-name-your-llc/`,
 		},
 		marginBottom: 16,
 	},
@@ -185,7 +185,7 @@ export const howToGuide = [
 		type: `arrow-link`,
 		content: {
 			text: `New Mexico Registered Agents for LLCs`,
-			url: `/New-Mexico-llc/registered-agents-New-Mexico-llc/`,
+			url: `/new-mexico-llc/registered-agents-new-mexico-llc/`,
 		},
 		marginBottom: 16,
 	},
@@ -198,7 +198,7 @@ export const howToGuide = [
 		type: `arrow-link`,
 		content: {
 			text: `Fees and Requirements for New Mexico LLCs`,
-			url: `/New-Mexico-llc/form-filling-permit-requirements/`,
+			url: `/new-mexico-llc/form-filling-permit-requirements/`,
 		},
 		marginBottom: 16,
 	},
@@ -211,7 +211,7 @@ export const howToGuide = [
 		type: `arrow-link`,
 		content: {
 			text: `Federal, State, Sales and Other Taxes for Your New Mexico LLC`,
-			url: `/Montana-llc/business-taxes/`,
+			url: `/montana-llc/business-taxes/`,
 		},
 		marginBottom: 16,
 	},
@@ -373,18 +373,24 @@ export const namingYourBusiness = [
 	},
 	{
 		type: `header`,
-		content: `Business Name Registration for Your Montana LLC`,
+		content: `Business Name Registration in New Mexico`,
 		size: 3,
 		marginBottom: 16,
+	},
+	{
+		type: `text`,
+		content: `Once you’ve searched for your New Mexico business name, checked availability, followed the naming rules and decided whether you need a fictitious name, you can register your name. There are a couple of ways to do this.`,
+		marginBottom: 32,
 	},
 	{
 		type: `list-dot`,
 		content: {
 			header: ``,
 			list: [
-				`If you don’t want to form your LLC right now, you can reserve the business name with the Montana Secretary of State. You will need to complete an Application for Reservation of Name and file it with the MT SOS. You do not need to reserve a name if you are forming your business right away."`,
-				`If you’re ready to start your LLC, you can formally file your Certificate of Formation with the Montana SOS, or
-             <a href="/Montana-llc/fees-filing-requirements/"> let Incfile take care of it for you.</a.`,
+				`If you don’t want to form your LLC right now, you can reserve the business name with the New Mexico Secretary of State. You do not need to reserve a name if you are forming your business right away.
+                <br><a href="https://www.sos.state.nm.us/business-services/start-a-business/domestic-nm-llc/#">New Mexico SOS LLC name reservation form</a>`,
+				`If you’re ready to start your LLC, you can formally file your Articles of Organization with the New Mexico SOS, or
+             <a href="/new-mexico-llc/form-filling-permit-requirements/"> let Incfile take care of it for you.</a>.`,
 			],
 		},
 		marginBottom: 48,
@@ -952,7 +958,7 @@ export const feesAndRequirments = [
 	},
 	{
 		type: `text`,
-		content: `<a href="/new-mexico-llc/fees-filing-requirements/">Learn about your ongoing New Mexico LLC filing requirements</a>
+		content: `<a href="/new-mexico-llc/form-filling-permit-requirements/">Learn about your ongoing New Mexico LLC filing requirements</a>
     and business filing deadlines with our helpful New Mexico ongoing filing lookup tool..`,
 		marginBottom: 16,
 	},

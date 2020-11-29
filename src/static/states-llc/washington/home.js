@@ -427,8 +427,11 @@ export const namingYourBusiness = [
 	},
 	{
 		type: `arrow-link`,
-		content: `More on Washington Secretary of State business naming rules.`,
-		url: `https://app.leg.wa.gov/RCW/default.aspx?cite=23.95.305`,
+		content: {
+			text: `More on Washington Secretary of State business naming rules.`,
+			url: `https://app.leg.wa.gov/RCW/default.aspx?cite=23.95.305`,
+			externalLink: true,
+		},
 		marginBottom: 32,
 	},
 	{

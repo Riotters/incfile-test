@@ -151,7 +151,7 @@ export const howToGuide = [
 	},
 	{
 		type: `text`,
-		content: `Some states, including Vermont, allow certain occupations to form “Professional LLCs” (called a “PLC”). These types of businesses typically have special requirements and licensing, like those in healthcare or law. Vermont does not specifically list the professions that can form professional LLCs, but you can view more information on <a href="https://sos.vermont.gov/" target="_blank" rel="noopener noreferrer >the Secretary of State website.</a>`,
+		content: `Some states, including Vermont, allow certain occupations to form “Professional LLCs” (called a “PLC”). These types of businesses typically have special requirements and licensing, like those in healthcare or law. Vermont does not specifically list the professions that can form professional LLCs, but you can view more information on <a href="https://sos.vermont.gov/" target="_blank" rel="noopener noreferrer">the Secretary of State website.</a>`,
 		marginBottom: 40,
 	},
 	{
