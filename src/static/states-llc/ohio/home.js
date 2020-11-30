@@ -1417,11 +1417,11 @@ export const businessTaxes = [
 	{
 		type: `text`,
 		content: `The Ohio state tax rates vary between 1.98 percent and 5 percent. `,
-		marginBottom: 8,
+		marginBottom: 32,
 	},
 	{
 		type: `text`,
-		content: `<a href="https://tax.ohio.gov/wps/portal/gov/tax/individual"  target="_blank" rel="noopener noreferrer>Get details on the Ohio state tax here.</a> `,
+		content: `<a href="https://tax.ohio.gov/wps/portal/gov/tax/individual" target="_blank" rel="noopener noreferrer">Get details on the Ohio state tax here.</a> `,
 		marginBottom: 32,
 	},
 	{
@@ -1461,7 +1461,7 @@ export const businessTaxes = [
 	},
 	{
 		type: `text`,
-		content: `<a href="https://tax.ohio.gov/wps/portal/gov/tax/business/ohio-business-taxes/sales-and-use/Sales-Use-Tax"  target="_blank" rel="noopener noreferrer>Get details on the Ohio sales tax online here.</a> `,
+		content: `<a href="https://tax.ohio.gov/wps/portal/gov/tax/business/ohio-business-taxes/sales-and-use/Sales-Use-Tax" target="_blank" rel="noopener noreferrer">Get details on the Ohio sales tax online here.</a> `,
 		marginBottom: 32,
 	},
 	{
